@@ -1,0 +1,2111 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-07-production-compatibility",
+  "status": "frozen-post-canary-batch-07-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "debateNumber": "180",
+  "debateId": "ally-licona-did-jesus-rise-dead-2004",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-07-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "3858a183d4a9575615042c864892ffa369ce33f9468a46e1b23d74983892acae",
+    "calculatedScoresSha256": "9969e3d3d641c04008bc99a9a0a0d4f70bdbc599c76d32afcd68ff716bf1171b",
+    "finalizationAuditSha256": "8bb84beb8c0acbf8bc9dcf5be6f21e29702247646d03f965048fc428f09c691b",
+    "renderingAuditSha256": "eb8c82e4fa06ef86447f11bf98732e154f5628a3e5592ce351d79df8d8794502",
+    "finalCandidateSha256": "e90eccaee3d1aa1e0fe227662d1a8bee58243202195c20df4e428867b353c65a",
+    "eventsPath": ".assessment-cache/captions/eoiScvG3Emo/events.json",
+    "eventsSha256": "374d6541171ca7fb3127b731d895ed03b5158e4520ff8a8db615237917d1febe",
+    "finalJudgmentSha256": "f59c4c23baaa5d5f23d5c82a99c7ade05f7d31563bf458eb6e4be628e2dcb3e0"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "180",
+    "debateId": "ally-licona-did-jesus-rise-dead-2004",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-cumulative-resurrection-inference",
+        "side": "pro",
+        "description": "Establish Jesus's death, the empty tomb, and sincere postmortem appearance claims, then argue that bodily resurrection provides the best cumulative explanation of those historical facts.",
+        "successCriteria": "The route succeeds if the principal facts are historically warranted, their earliest interpretation is bodily, and resurrection explains them more adequately than rescue, survival, visionary, or developmental alternatives.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-historical-establishment",
+          "tier": "motion",
+          "description": "Connect the cumulative best-explanation inference to the conclusion that Jesus physically rose from the dead."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-death-by-crucifixion",
+            "tier": "central",
+            "description": "Establish that Roman crucifixion resulted in Jesus's physical death."
+          },
+          {
+            "bridgeId": "pro-empty-tomb-and-bodily-absence",
+            "tier": "central",
+            "description": "Establish that Jesus was buried and that his body was subsequently absent from the tomb."
+          },
+          {
+            "bridgeId": "pro-postmortem-appearances",
+            "tier": "central",
+            "description": "Establish sincere postmortem appearance claims involving disciples, Paul, and James."
+          },
+          {
+            "bridgeId": "pro-explanatory-superiority",
+            "tier": "central",
+            "description": "Show that bodily resurrection explains the combined facts better than the competing accounts presented."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-early-bodily-tradition",
+            "tier": "subsidiary",
+            "description": "Establish that early creedal and Pauline resurrection language referred to bodily raising rather than only spiritual vindication."
+          },
+          {
+            "bridgeId": "pro-source-coherence",
+            "tier": "subsidiary",
+            "description": "Account for apparent source differences without treating the physical resurrection tradition as a later invention."
+          }
+        ]
+      },
+      {
+        "routeId": "con-bodily-resurrection-not-established",
+        "side": "con",
+        "description": "Contest the death, empty-tomb, and physical-appearance premises while showing that early belief and later narrative development permit survival, rescue, visionary, spiritual-vindication, or underdetermined accounts.",
+        "successCriteria": "The route succeeds if a necessary premise remains historically uncertain or if the evidence does not discriminate sufficiently between bodily resurrection and the available nonresurrection interpretations.",
+        "motionBridge": {
+          "bridgeId": "con-motion-evidential-insufficiency",
+          "tier": "motion",
+          "description": "Connect uncertainty in the premises or inference to the conclusion that physical resurrection is not historically established."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-death-contestation",
+            "tier": "central",
+            "description": "Show that the sources do not establish irreversible physical death on the cross with the certainty required by the resurrection inference."
+          },
+          {
+            "bridgeId": "con-physicality-contestation",
+            "tier": "central",
+            "description": "Show that early resurrection and appearance claims need not describe encounters with Jesus's physically revived body."
+          },
+          {
+            "bridgeId": "con-development-contestation",
+            "tier": "central",
+            "description": "Show that increasingly explicit physical details can be explained by narrative or theological development."
+          },
+          {
+            "bridgeId": "con-alternative-explanations",
+            "tier": "central",
+            "description": "Demonstrate that rescue, survival, visionary experience, spiritual vindication, or uncertainty remain coherent alternatives."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-burden-and-priors",
+            "tier": "subsidiary",
+            "description": "Require the affirmative inference to establish its exceptional conclusion without assuming the theological vindication it seeks to prove."
+          },
+          {
+            "bridgeId": "con-source-layering",
+            "tier": "subsidiary",
+            "description": "Distinguish early Pauline and creedal material from later tomb and appearance narratives when assessing bodily content."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "method-burden-and-best-explanation",
+        "title": "Historical Burden and Best-Explanation Method",
+        "weightPercent": 15,
+        "rationale": "Defines what the affirmative must establish, how cumulative explanatory comparison operates, and whether uncertainty or a coherent alternative is sufficient to defeat the motion."
+      },
+      {
+        "sectionId": "death-by-crucifixion",
+        "title": "Death by Crucifixion",
+        "weightPercent": 25,
+        "rationale": "Addresses the necessary premise that Jesus irreversibly died, including Roman practice, the duration and details of crucifixion, Pilate's conduct, and proposed survival or rescue interpretations."
+      },
+      {
+        "sectionId": "burial-and-empty-tomb",
+        "title": "Burial and the Empty Tomb",
+        "weightPercent": 15,
+        "rationale": "Tests whether bodily absence from a known burial place is historically established and whether early resurrection belief required the original body to leave a tomb."
+      },
+      {
+        "sectionId": "appearances-and-bodily-physicality",
+        "title": "Appearances and Bodily Physicality",
+        "weightPercent": 25,
+        "rationale": "Examines what the disciples, Paul, and James reportedly experienced and whether sincere appearance claims establish encounters with a physically resurrected Jesus rather than visions or spiritual vindication."
+      },
+      {
+        "sectionId": "early-tradition-and-narrative-development",
+        "title": "Early Tradition and Narrative Development",
+        "weightPercent": 20,
+        "rationale": "Evaluates the dating and bodily meaning of creedal and Pauline material, source relationships, Gospel differences, and the claim that explicit physical details intensified over time."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-crucifixion-death-evidence",
+        "sectionId": "death-by-crucifixion",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "constructive",
+        "proposition": "Multiple historical sources, the lethal character of Roman crucifixion and its preceding torture, and medical opinion support the conclusion that Jesus died by crucifixion.",
+        "sourceSpan": {
+          "startEvent": 81,
+          "endEvent": 109,
+          "excerpt": "death by crucifixion first it's multiply attested by even non-Christian sources second our understanding of crucifixion and the tortures that preceded it militate against a person surviving the cross and third is we look and we find that there's the universal um Medical Professional Medical opinion that Jesus died as a result so we can see that the evidence both historical and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly introduces Licona, and the uninterrupted opening statement uses his first-person framing and pro-resurrection case.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-death-by-crucifixion"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move presents three affirmative supports for the indispensable death-by-crucifixion premise and therefore directly develops its assigned case."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The three evidential grounds and the resulting death conclusion are recoverable, with evidential independence and scope left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited convergence strongly supports death, but universal medical opinion and multiple attestation receive compressed defense."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable central bridge that Jesus physically died under Roman crucifixion."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move primarily constructs its own evidential case rather than interpreting a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "Within constructive moves, it supplies a clear, organized contribution to a central route bridge."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly invokes non-Christian attestation, crucifixion lethality, preceding torture, and medical opinion as convergent support for death.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-empty-tomb-three-indicators",
+        "sectionId": "burial-and-empty-tomb",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "constructive",
+        "proposition": "The Jerusalem setting of the burial and resurrection proclamation, the opponents' stolen-body explanation, and the bodily meaning of resurrection support an empty tomb.",
+        "sourceSpan": {
+          "startEvent": 110,
+          "endEvent": 151,
+          "excerpt": "saying that the disciples stole the body this indicates that they couldn't produce it leads us through our third argument for the empty tomb and that is the concept of Resurrection wow okay that doesn't like me oh well um let me go back the the concept of Resurrection in Antiquity was that it was a bodily event and sorry about this yeah I missed it with the anyway we'll move on"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This remains part of Licona's uninterrupted opening statement and is expressly introduced as his second historical fact.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-empty-tomb-and-bodily-absence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move advances the central empty-tomb bridge through the Jerusalem setting, hostile explanation, and asserted bodily semantics of resurrection."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The three-indicator claim is recoverable, but the scope of authorities' access and of bodily resurrection language is only implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The indicators make an empty tomb plausible, but the claim that proclamation was impossible otherwise exceeds the excerpt's defended warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Authorities may have lacked both an identifiable tomb and practical access to a recoverable body.",
+          "decisiveQualification": "The Jerusalem argument requires a known burial location and an available body capable of public production."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central claim that Jesus's body was absent from its burial place."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The move anticipates hostile response but does not address the strongest access and identification qualifications."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The supplied span explicitly presents Jerusalem proclamation and the authorities' ability to produce the body as an empty-tomb argument.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-appearances-friends-and-foes",
+        "sectionId": "appearances-and-bodily-physicality",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "constructive",
+        "proposition": "The disciples and former foes Paul and James sincerely believed that the risen Jesus appeared to them, contributing to a cumulative resurrection explanation of the death, empty tomb, and appearances.",
+        "sourceSpan": {
+          "startEvent": 153,
+          "endEvent": 218,
+          "excerpt": "empty tomb but wait there's more fact number three on a number of occasions we see that the Disciples of Jesus believed that he had been resurrected and had appeared to them and not only was this disciples but it was the foes of Jesus as well let's deal with the first group and that would have to do with the friends of Jesus his disciples this is testified by eyewitnesses who knew the disciples namely Paul"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted pro opening continues through its explicit summary and conclusion immediately before the moderator thanks Licona.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-postmortem-appearances"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move directly develops the appearance bridge by identifying disciples, Paul, and James as sincere appearance claimants in a cumulative case."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The sincere-belief proposition and named groups are clear, while the distinction between belief and event veridicality remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move is appropriately framed around what the claimants believed, rather than treating sincerity alone as certainty of resurrection."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central bridge requiring sincere postmortem appearance claims from friends and former foes."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The excerpt constructs an appearance-claim premise without substantially characterizing an opposing explanation."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "Within constructive moves, it clearly advances a central factual premise with named claimant groups."
+          }
+        },
+        "evidenceBasis": "The excerpt says the disciples believed Jesus appeared and extends the claim to former foes, expressly identifying this as the third fact.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-method-two-necessary-premises-unestablished",
+        "sectionId": "method-burden-and-best-explanation",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "The historical evidence does not establish either Jesus's death on the cross or later encounters with him in physical bodily form, leaving two necessary premises of the bodily-resurrection inference unproved.",
+        "sourceSpan": {
+          "startEvent": 335,
+          "endEvent": 409,
+          "excerpt": "physical bodily form and second I could not be persuaded given the gospel evidence alone that Jesus in fact actually died on the cross now usually if a person lived 2,000 years ago and he's no longer around we assume that he is dead but if someone comes and tells us that a certain person who was executed 2,000 years ago was actually seen alive a few few days later we'll be asking two"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This is the concluding argumentative section of Ally's uninterrupted opening statement, ending with his explicit thanks to the audience.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-evidential-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-crucifixion-death-evidence",
+            "pro-appearances-friends-and-foes"
+          ],
+          "components": [
+            {
+              "componentId": "con-method-two-necessary-premises-unestablished-component-01",
+              "targetMoveId": "pro-crucifixion-death-evidence",
+              "text": "Whether the evidence establishes that Jesus actually died on the cross.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-method-two-necessary-premises-unestablished-component-02",
+              "targetMoveId": "pro-appearances-friends-and-foes",
+              "text": "Whether later encounters were with Jesus in physical bodily form.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly disputes both death and physical bodily encounter premises and states that their failure leaves the bodily-resurrection inference unproved."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two allegedly unproved premises and the claimed consequence for bodily resurrection are expressly identified and bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker frames the point as failure to be persuaded rather than certainty that death or physical encounters did not occur."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The cumulative case may establish death and sincere appearances without each source independently proving bodily resurrection.",
+          "decisiveQualification": "The motion still requires adequate support for actual death and physically bodily postmortem encounters."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The excerpt identifies the evidential gaps but offers little source-level demonstration within this selected move."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "The move expressly connects uncertainty in necessary premises to failure to establish the motion."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move fairly isolates necessary premises, though it compresses how cumulative support might strengthen each premise."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts both decisive premises and explicitly states the consequence for establishment of the motion."
+          }
+        },
+        "evidenceBasis": "The span states that Gospel evidence did not persuade Ally either of physical bodily encounters or of actual death on the cross.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+        "sectionId": "burial-and-empty-tomb",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "An early belief that Jesus was alive with God could express spiritual vindication and therefore does not itself entail bodily revival or discovery of an empty tomb.",
+        "sourceSpan": {
+          "startEvent": 427,
+          "endEvent": 438,
+          "excerpt": "Moses are alive they're Alive With God but the belief that they are alive does not necessitate their bodily Resurrection so it is quite possible that the Disciples of Jesus uh witnessing the crucifixion event later on came to the conclusion for whatever reason that God raised Jesus from the dead and that conclusion does not necessitate finding his tomb empty and knowing that he"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Licona asks how Gospel development affects his earlier evidence, and the ensuing answer directly presents Ally's contrary interpretation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-empty-tomb-and-bodily-absence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-empty-tomb-three-indicators"
+          ],
+          "components": [
+            {
+              "componentId": "con-tomb-spiritual-vindication-needs-no-empty-tomb-component-01",
+              "targetMoveId": "pro-empty-tomb-three-indicators",
+              "text": "Whether early resurrection belief itself entails that Jesus's original tomb was empty.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies an entailment failure: being alive with God can mean spiritual vindication, so resurrection belief alone does not require bodily revival or an empty tomb."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between spiritual vindication and bodily resurrection is clear, and the claim is explicitly one of non-necessity."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move claims only that a spiritual-vindication interpretation is possible and defeats an alleged entailment."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early Jewish resurrection language could ordinarily imply the raising of the deceased person's body.",
+          "decisiveQualification": "Ordinary bodily semantics would support an empty tomb but do not make the inference logically necessary without further evidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central bridge from early belief to bodily absence from a tomb."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly diagnoses the challenged inference and states the defeating consequence for the empty-tomb indicator."
+          }
+        },
+        "evidenceBasis": "The excerpt compares being alive with God to bodily resurrection and explicitly says disciples' belief need not entail finding the tomb empty.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-prepauline-bodily-resurrection",
+        "sectionId": "early-tradition-and-narrative-development",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "Creedal material predating Paul and Paul's resurrection language indicate that the earliest tradition concerned the raising, transformation, and appearance of Jesus's body.",
+        "sourceSpan": {
+          "startEvent": 439,
+          "endEvent": 454,
+          "excerpt": "or rise from the dead on 30 occasions so we have a total of 33 references in the New Testament very early predating the gospels and a number of those predating even Paul that talks about Jesus being dead and raised or resurrection and of course you know as I mentioned the concept of Resurrection the body that was buried is the same body that's raised and was transformed into an"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The response begins with an explicit disagreement and returns to Licona's previously presented creedal evidence and bodily-resurrection definition.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-early-bodily-tradition"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+            "con-method-two-necessary-premises-unestablished"
+          ],
+          "components": [
+            {
+              "componentId": "pro-prepauline-bodily-resurrection-component-01",
+              "targetMoveId": "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+              "text": "Whether the earliest resurrection tradition meant bodily raising rather than merely spiritual vindication.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-prepauline-bodily-resurrection-component-02",
+              "targetMoveId": "con-method-two-necessary-premises-unestablished",
+              "text": "Whether early evidence supports physical bodily resurrection as a necessary affirmative premise.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply answers the semantic and dating challenge by invoking pre-Pauline material and defining resurrection as transformation of the buried body."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The bodily claim is clear, but the scope of the thirty-three references and which specifically predate Paul is not delineated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Early bodily meaning is supported, but numerical references and asserted semantics are not individually demonstrated in the excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early raising language may communicate divine vindication without specifying what happened to the buried body.",
+          "decisiveQualification": "The affirmative must establish that the cited pre-Pauline formulations themselves carry bodily identity and transformation content."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The move names numerous early references but does not identify representative formulations or establish their dating and bodily meaning."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary bridge concerning the bodily meaning of early Pauline and pre-Pauline tradition."
+          },
+          "representationalCharity": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly contacts bodily meaning and early dating, though provenance and semantic warrants remain compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt cites thirty-three early New Testament references and defines resurrection as transformation of the same body that was buried.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-appearances-paul-permits-spiritual-reading",
+        "sectionId": "appearances-and-bodily-physicality",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "Paul includes his own spiritually described appearance in the same list as the earlier appearances, weakening the inference that those earlier reports necessarily concerned physical encounters with Jesus's body.",
+        "sourceSpan": {
+          "startEvent": 454,
+          "endEvent": 470,
+          "excerpt": "of Faith but notice that Paul does not say where he got these from and uh Paul in in adding his own uh self adding himself to the list of people to whom Jesus appeared is adding uh to that list a person to whom Jesus appeared somehow spiritually because in in the Acts of the Apostles where the uh appearance to Paul is described it is not a physical bodily appearance but it is a"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker directly addresses Licona by reference to the creeds and develops Ally's characteristic spiritual-appearance counterargument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-physicality-contestation"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-prepauline-bodily-resurrection",
+            "pro-appearances-friends-and-foes"
+          ],
+          "components": [
+            {
+              "componentId": "con-appearances-paul-permits-spiritual-reading-component-01",
+              "targetMoveId": "pro-prepauline-bodily-resurrection",
+              "text": "Whether the Pauline appearance list necessarily reports bodily encounters of a uniform physical kind.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-appearances-paul-permits-spiritual-reading-component-02",
+              "targetMoveId": "pro-appearances-friends-and-foes",
+              "text": "Whether Paul's inclusion among appearance recipients establishes a physical encounter.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses the uniform-physicality inference as insecure because Paul includes his own spiritually described experience in the same appearance list."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The inferential challenge is clear, although calling the Acts experience spiritual leaves the exact sensory and physical contrast underdefined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The proposition appropriately says Paul's inclusion permits and strengthens a spiritual reading rather than proving all appearances were nonphysical."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul may group appearances by the identity of the appearing Jesus without implying identical phenomenology.",
+          "decisiveQualification": "Common list membership weakens necessity but does not establish that every listed experience had Paul's reported mode."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central contest that early appearance claims need not describe physical bodily encounters."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply fairly targets only the evidential inference from a shared list and does not require every appearance to have identical content."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly identifies the evidential feature that undercuts the claimed necessary physical reading and states its consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt notes Paul's self-inclusion in the appearance list and appeals to Acts as describing his experience as non-bodily.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-earliest-apostolic-resurrection-stratum",
+        "sectionId": "early-tradition-and-narrative-development",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "An early creed, repeated Pauline death-and-resurrection language, and shared apostolic preaching trace belief in Jesus's death and bodily resurrection to the original disciples.",
+        "sourceSpan": {
+          "startEvent": 583,
+          "endEvent": 605,
+          "excerpt": "preaching of the disciples so I mean this is very early tradition and then we have Paul again um he mentions Resurrection or dead and raised 30 times in his writings and then you've also got the the Creed in in Romans 1: 3 and 4 that talks about declared the Son of God with power by his resurrection from the dead so Resurrection is in the earliest strata there is nothing earlier that I mean we can go trace"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator yields the response to Licona, and the uninterrupted first-person defense matches his previously stated early-evidence argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-early-bodily-tradition"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-appearances-paul-permits-spiritual-reading",
+            "con-method-two-necessary-premises-unestablished",
+            "con-tomb-spiritual-vindication-needs-no-empty-tomb"
+          ],
+          "components": [
+            {
+              "componentId": "pro-earliest-apostolic-resurrection-stratum-component-01",
+              "targetMoveId": "con-appearances-paul-permits-spiritual-reading",
+              "text": "Whether resurrection belief and preaching can be traced earlier than Paul's own appearance experience.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-earliest-apostolic-resurrection-stratum-component-02",
+              "targetMoveId": "con-method-two-necessary-premises-unestablished",
+              "text": "Whether the original disciples proclaimed Jesus's death and resurrection.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-earliest-apostolic-resurrection-stratum-component-03",
+              "targetMoveId": "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+              "text": "Whether resurrection belongs to the earliest recoverable apostolic stratum.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply traces creedal and repeated Pauline death-and-raised language to original apostolic preaching, directly answering the claim that Paul's experience controls the tradition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The early-stratum claim is clear, but 'nothing earlier' and the route from shared preaching to bodily content are broadly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited creed and repeated Pauline language support early belief, but exclusive earliest status and bodily meaning are incompletely defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early death-and-raising formulas may predate Paul while remaining nonspecific about physical appearances or an empty tomb.",
+          "decisiveQualification": "Early dating alone does not determine the formulas' bodily content or the phenomenology of reported appearances."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "Specific creedal and Pauline references are named, while provenance, dating, and bodily interpretation are compressed."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary early-bodily-tradition bridge, though bodily meaning is less established than chronology."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It strongly contacts priority and provenance, although it only implicitly answers the distinct question of physical content."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes disciple preaching, repeated Pauline death-and-raised language, and Romans 1:3–4 as the earliest available stratum.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-death-mark-short-duration-pilate-doubt",
+        "sectionId": "death-by-crucifixion",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "The earliest Gospel evidence does not firmly establish death on the cross because Mark depicts an unusually short crucifixion and Pilate's doubt, while the decisive spear wound appears only in the later Gospel of John.",
+        "sourceSpan": {
+          "startEvent": 606,
+          "endEvent": 630,
+          "excerpt": "out uh first notice in Mark's gospel that pilate has a doubt that Jesus actually died and for good reason because crucifixion usually took several days to kill a person and in Mark's gospel Jesus was only on the cross for a few hours and all of the beatings that are are there in Gibson's movie are just imagination because Mark does not give you any of those detail details it is"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ally explicitly begins by saying he has addressed Licona's points and develops his characteristic stratification argument in a continuous turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-death-contestation"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-crucifixion-death-evidence",
+            "pro-earliest-apostolic-resurrection-stratum"
+          ],
+          "components": [
+            {
+              "componentId": "con-death-mark-short-duration-pilate-doubt-component-01",
+              "targetMoveId": "pro-crucifixion-death-evidence",
+              "text": "Whether the Gospel evidence securely establishes death despite the reported short crucifixion duration.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-death-mark-short-duration-pilate-doubt-component-02",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether early death-and-raised tradition independently settles irreversible death on the cross.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly challenges the death premise through Mark's duration and Pilate's doubt, while not addressing the distinct early-creed argument."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The source-layering claim is clear, but the generalization that crucifixion usually took several days lacks stated distributional qualifications."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The details raise uncertainty, though the generalization that crucifixion usually took several days lacks qualification in the excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Severe pre-crucifixion trauma and Roman execution practice could make death within hours historically unsurprising.",
+          "decisiveQualification": "Duration alone is not decisive unless the particular trauma and execution controls are also assessed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "Mark and John provide specific comparative support, while duration baselines and contextual trauma remain insufficiently defended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con bridge contesting whether irreversible death was historically established."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The reply emphasizes ordinary duration but omits the affirmative's strongest trauma and Roman-practice qualification."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "It contacts the decisive death premise with concrete contrary details but leaves other evidential grounds unanswered."
+          }
+        },
+        "evidenceBasis": "The selected span cites Pilate's doubt, a crucifixion lasting only hours in Mark, and contrasts this with John's later spear detail.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-death-johannine-details-scriptural-construction",
+        "sectionId": "death-by-crucifixion",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "John's piercing, unbroken-leg, and related crucifixion details may reflect scriptural and theological construction rather than independent eyewitness evidence establishing the manner and certainty of Jesus's death.",
+        "sourceSpan": {
+          "startEvent": 672,
+          "endEvent": 711,
+          "excerpt": "he says that the details that are given by the uh by the gospel writers should not be taken as actual physical details that occurred but they due they due to a number of factors including imaginative detail added by the evangelists themselves and you mentioned some of them yes they're only in The Gospel according to John not to deny that nails were used in crucifixion but to say"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn opens with Ally disputing Licona's interpretation of Raymond Brown and continues in Ally's recognizable comparative-Gospel argument.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-death-contestation"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-crucifixion-death-evidence",
+            "pro-earliest-apostolic-resurrection-stratum"
+          ],
+          "components": [
+            {
+              "componentId": "con-death-johannine-details-scriptural-construction-component-01",
+              "targetMoveId": "pro-crucifixion-death-evidence",
+              "text": "Whether later physical details independently warrant certainty about Jesus's death by crucifixion.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-death-johannine-details-scriptural-construction-component-02",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether earlier death-and-resurrection formulas establish the disputed Johannine details.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests treating John's physical details as independent evidence, though it does not answer the broader Roman-practice and early-tradition supports."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The construction hypothesis is recoverable, but the phrase 'details' ranges broadly beyond the specifically named Johannine features."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately claims that scriptural or imaginative construction may explain the details, not that construction is certain."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Scriptural resonance and eyewitness preservation can coexist in a narrative containing historically accurate physical details.",
+          "decisiveQualification": "Theological shaping does not by itself show invention; an argument must discriminate shaping from historically interpreted memory."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The construction hypothesis is coherent, but theological correspondence alone does not entail that the reported events were invented."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "Gospel comparison and named details support scrutiny, while the mechanism and evidence of construction remain compressed."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "The move materially supports death contestation by challenging a later source's claimed independent confirmation."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The reply raises construction but does not adequately handle the coexistence of scriptural framing and historical recollection."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "It contacts one evidential strand of the death case while leaving other decisive affirmative strands untouched."
+          }
+        },
+        "evidenceBasis": "The excerpt says certain Gospel details may arise from evangelists' imaginative or theological work and notes their confinement to John.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-development-crucifixion-details-intensify",
+        "sectionId": "early-tradition-and-narrative-development",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "The increasingly severe and explicit crucifixion details across the Gospels indicate narrative evolution, so later physical detail need not preserve eyewitness testimony about Jesus's death and resurrection.",
+        "sourceSpan": {
+          "startEvent": 778,
+          "endEvent": 833,
+          "excerpt": "Cross by himself nobody arrests him nobody can take his life from away from him he gives it up of his own accord he lays it down and he has the authority and power to take it up again a very different Jesus a very different gospel a very different story and you can see the evolution so what you have to deal with is that Evolution and you have to show that the evidence for the actual death and physical bodily resurrection"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ally directly addresses Licona by name and sustains his established evolution argument through comparisons among the canonical Gospels and Gibson's film.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-development-contestation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-earliest-apostolic-resurrection-stratum",
+            "pro-crucifixion-death-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "con-development-crucifixion-details-intensify-component-01",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether later Gospel differences preserve or progressively reshape the physical narrative.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-development-crucifixion-details-intensify-component-02",
+              "targetMoveId": "pro-crucifixion-death-evidence",
+              "text": "Whether increasingly severe crucifixion detail strengthens historical proof of death.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly presents cross-Gospel intensification as narrative evolution and states that the affirmative must account for it before relying on later physical detail."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The developmental thesis is clear, but 'evolution' can denote literary difference, theological shaping, or historical invention without separation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Differences support development, but the inference from intensification to non-eyewitness origin requires a missing material qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later authors may add theological emphasis and narrative detail while preserving an earlier bodily-resurrection core.",
+          "decisiveQualification": "Development in presentation does not itself establish development in the event's essential physical content."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con bridge that explicit physical details may reflect narrative development."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The reply notices differing presentations but does not squarely address preservation of a stable earlier core."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts both source development and death-proof consequences through an explicit comparative challenge."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts Gospel portrayals and labels the differences evolutionary, demanding proof that actual death and bodily resurrection survive that pattern.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-rescue-theory-evidential-deficits",
+        "sectionId": "method-burden-and-best-explanation",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "The rescue theory lacks early evidence, conflicts with the asserted eyewitness testimony, depends on a source written centuries later, and is ad hoc as an explanation of the historical evidence.",
+        "sourceSpan": {
+          "startEvent": 843,
+          "endEvent": 847,
+          "excerpt": "the rescue Theory but there's no evidence for it it's contrary to the eyewitness testimony it's based on a single Source written 600 years after Jesus with no contact with the eyewitness and it's ad hoc that is because it's a supernatural explanation with no evidence that's contrary to the evidence it seems that it was constructed not so much in an attempt to rescue Jesus as it"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Licona explicitly rejects the rescue theory in direct response to Ally and frames the objection from his pro-resurrection evidential position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-alternative-explanations"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-development-crucifixion-details-intensify",
+            "con-method-two-necessary-premises-unestablished",
+            "con-death-mark-short-duration-pilate-doubt"
+          ],
+          "components": [
+            {
+              "componentId": "pro-rescue-theory-evidential-deficits-component-01",
+              "targetMoveId": "con-development-crucifixion-details-intensify",
+              "text": "Whether the proposed rescue alternative has evidential support sufficient to explain the historical data.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-rescue-theory-evidential-deficits-component-02",
+              "targetMoveId": "con-method-two-necessary-premises-unestablished",
+              "text": "Whether a survival or rescue account remains a supported alternative to death and resurrection.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-rescue-theory-evidential-deficits-component-03",
+              "targetMoveId": "con-death-mark-short-duration-pilate-doubt",
+              "text": "Whether doubts about death positively support the particular rescue theory.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly attacks the rescue theory's evidential provenance, compatibility with asserted eyewitness testimony, lateness, and ad hoc structure."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The four evidential deficits are clear, though 'eyewitness testimony' and 'no evidence' require source qualifications left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The late-source and ad hoc objections are forceful, but categorical no-evidence and eyewitness claims are incompletely defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Rescue may be offered as a possibility exposing underdetermination rather than as an independently established historical theory.",
+          "decisiveQualification": "A possibility can challenge certainty without bearing the same explanatory proof burden as a positive best explanation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central con bridge requiring a coherent and evidentially competitive rescue alternative."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The reply treats rescue mainly as a rival explanatory theory and underplays its narrower use as an uncertainty defeater."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It identifies several decisive explanatory deficits and directly states why the proposed alternative should be rejected."
+          }
+        },
+        "evidenceBasis": "The span expressly calls rescue unevidenced, contrary to eyewitness testimony, based on a source six centuries later, and ad hoc.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-pilate-premise-attestation-comparison",
+        "sectionId": "death-by-crucifixion",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "A survival theory cannot securely rely on Pilate's desire to save Jesus because that detail is less historically well attested than Jesus's death by crucifixion.",
+        "sourceSpan": {
+          "startEvent": 919,
+          "endEvent": 933,
+          "excerpt": "accept the death of Jesus because it's so much more it's so much more better attested so if you're going to accept the pilot story then all the more you should accept the story of jesus' death because there's much going for much more going for it if you reject the Jesus death then all the more you should reject the pilot because there's less going for it now you see you I think"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Licona announces comments on Pilate and contrasts Ally's treatment of the Gospels with the conclusions of critical scholars.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-death-contestation"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-death-mark-short-duration-pilate-doubt",
+            "con-development-crucifixion-details-intensify"
+          ],
+          "components": [
+            {
+              "componentId": "pro-pilate-premise-attestation-comparison-component-01",
+              "targetMoveId": "con-death-mark-short-duration-pilate-doubt",
+              "text": "Whether Pilate-related narrative material can support survival while better-attested crucifixion death is rejected.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-pilate-premise-attestation-comparison-component-02",
+              "targetMoveId": "con-development-crucifixion-details-intensify",
+              "text": "Whether critical source skepticism is being applied consistently across premises.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses an attestation inconsistency: a survival account cannot securely retain the weaker Pilate premise while rejecting the allegedly better-attested death premise."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative conditional and its limited target—a Pilate-based survival premise—are expressly and stably stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move makes a bounded comparative-attestation claim and conditions its consequence on accepting or rejecting the Pilate story."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Pilate's surprise at rapid death may be used without alleging that Pilate affirmatively intended a rescue.",
+          "decisiveQualification": "Attacking a desire-to-save premise does not eliminate the narrower evidential force of Pilate's reported doubt."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks a central con death-contestation premise, though only the Pilate-dependent branch."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The comparison is fair against intentional rescue but incompletely handles the narrower rapid-death objection."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It targets the comparative evidential inference explicitly and states the consequence under either acceptance or rejection."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts scholarly rejection of a favorable Pilate narrative with stronger scholarly acceptance and attestation of Jesus's death.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-appearances-paul-and-james-not-physical-proof",
+        "sectionId": "appearances-and-bodily-physicality",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "Paul's luminous experience and James's later leadership do not establish that either man encountered Jesus physically, so their conversions or prominence do not prove a bodily resurrection.",
+        "sourceSpan": {
+          "startEvent": 959,
+          "endEvent": 977,
+          "excerpt": "so that many might be deceived so Paul's testimony that he saw this light cannot be a a full and final convincing argument of a physical nature that Jesus physically bodily rose from the dead second you mentioned James now what has been found in the evolution of the gospels over time is that starting with Mark the family of Jesus had been given a bad rap it's not like in the in"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ally answers Licona's prompts about Paul and James, using Pauline language and Gospel-development claims consistent with his con case.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-physicality-contestation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-appearances-friends-and-foes",
+            "pro-prepauline-bodily-resurrection",
+            "pro-earliest-apostolic-resurrection-stratum"
+          ],
+          "components": [
+            {
+              "componentId": "con-appearances-paul-and-james-not-physical-proof-component-01",
+              "targetMoveId": "pro-appearances-friends-and-foes",
+              "text": "Whether Paul and James supply evidence of physically bodily encounters with the risen Jesus.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-appearances-paul-and-james-not-physical-proof-component-02",
+              "targetMoveId": "pro-prepauline-bodily-resurrection",
+              "text": "Whether Paul's experience gives the appearance tradition specifically physical content.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-appearances-paul-and-james-not-physical-proof-component-03",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether James's later prominence establishes an early physical encounter.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly distinguishes Paul's luminous experience and James's later leadership from proof that either man encountered a physically resurrected body."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition is carefully limited to insufficiency of the two facts as proof of physical encounter."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move properly argues that the examples are not final proof rather than asserting certainty that no physical encounter occurred."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conversion and later leadership can corroborate sincere experience even if they do not disclose its precise physical mode.",
+          "decisiveQualification": "The affirmative appearance premise concerns sincere belief as well as physicality, and these are distinct claims."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central contest that appearance claims do not establish encounters with a physical body."
+          },
+          "representationalCharity": {
+            "value": 79,
+            "rationale": "The reply accurately limits physical proof but somewhat discounts the examples' narrower corroboration of sincere experience."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts both named former-foe examples, though the rendered span develops Paul more fully than James."
+          }
+        },
+        "evidenceBasis": "The excerpt characterizes Paul's experience as light and argues that neither this testimony nor James's later prominence proves physical bodily resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-tomb-swoon-objection-relies-on-later-strata",
+        "sectionId": "burial-and-empty-tomb",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "The sealed-tomb objection to survival combines later empty-tomb traditions with earlier evidence that neither reports an empty tomb nor requires the original body to leave its burial place.",
+        "sourceSpan": {
+          "startEvent": 1087,
+          "endEvent": 1102,
+          "excerpt": "recreated body so the belief that Jesus was raised from from the dead does not necessitate that his tomb must be found empty the idea of the empty tomb that he had to roll this huge Stone back to get out of there and so on after resuscitating are based on information which is there in the later estrata of evidence evidence concerning the empty tomb but if we take the early EST strata"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator directs the question to Ally, and the sustained answer advances his previously stated rescue position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-empty-tomb-and-bodily-absence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-rescue-theory-evidential-deficits",
+            "pro-empty-tomb-three-indicators",
+            "pro-prepauline-bodily-resurrection"
+          ],
+          "components": [
+            {
+              "componentId": "con-tomb-swoon-objection-relies-on-later-strata-component-01",
+              "targetMoveId": "pro-rescue-theory-evidential-deficits",
+              "text": "Whether the sealed-tomb objection fairly applies early evidence against a survival or rescue account.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-tomb-swoon-objection-relies-on-later-strata-component-02",
+              "targetMoveId": "pro-empty-tomb-three-indicators",
+              "text": "Whether early resurrection belief requires the original burial place to become empty.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-tomb-swoon-objection-relies-on-later-strata-component-03",
+              "targetMoveId": "pro-prepauline-bodily-resurrection",
+              "text": "Whether resurrection necessarily preserves and removes the original body.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses the objection as combining later tomb narratives with an early resurrection concept that, on its account, permits a recreated body and no empty tomb."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between original-body departure and recreated-body resurrection is clearly stated as a non-necessity claim."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The argument asserts an available interpretation and source-layering objection, not certainty that the tomb remained occupied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Jewish bodily resurrection may normally preserve identity with the buried body and therefore predict bodily absence.",
+          "decisiveQualification": "A recreated-body model must be historically connected to the earliest Jesus tradition, not merely be conceptually possible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "If early resurrection did not require numerical continuity with the corpse, sealed-tomb escape objections lose their necessity."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central empty-tomb bridge and the use of later tomb details against survival."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The response fairly isolates the chronological and semantic assumptions, though its recreated-body alternative is itself underdocumented."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly identifies the alleged source-layer mismatch and explains why that mismatch defeats the sealed-tomb objection."
+          }
+        },
+        "evidenceBasis": "The span says resurrection can involve a recreated body, need not empty the original tomb, and assigns the stone-and-tomb scenario to later strata.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-method-claimant-bears-proof-burden",
+        "sectionId": "method-burden-and-best-explanation",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "A bodily-resurrection claimant bears the burden of proof, and delayed, selective, increasingly physical New Testament reports do not establish that the earliest resurrection proclamation described a bodily event.",
+        "sourceSpan": {
+          "startEvent": 1223,
+          "endEvent": 1252,
+          "excerpt": "disciples are drunk and then the the the way in which the preaching is delivered they think this makes sense sense this is true let's believe in it so the the story line that is given there does not give us convincing reason for thinking that in the earliest Strat of evidence uh there is uh the proof of the bodily physical resurrection of Jesus from the dead and I think in this"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The question is addressed to Ally, and the answer advances his characteristic burden-of-proof and stratification arguments throughout.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-evidential-insufficiency"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-crucifixion-death-evidence",
+            "pro-empty-tomb-three-indicators",
+            "pro-appearances-friends-and-foes",
+            "pro-prepauline-bodily-resurrection",
+            "pro-earliest-apostolic-resurrection-stratum"
+          ],
+          "components": [
+            {
+              "componentId": "con-method-claimant-bears-proof-burden-component-01",
+              "targetMoveId": "pro-crucifixion-death-evidence",
+              "text": "Whether the affirmative evidence satisfies the claimant's burden to establish bodily resurrection.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-method-claimant-bears-proof-burden-component-02",
+              "targetMoveId": "pro-empty-tomb-three-indicators",
+              "text": "Whether delayed and selective reports establish the empty-tomb component of the claim.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-method-claimant-bears-proof-burden-component-03",
+              "targetMoveId": "pro-appearances-friends-and-foes",
+              "text": "Whether increasingly physical reports establish bodily appearance content.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-method-claimant-bears-proof-burden-component-04",
+              "targetMoveId": "pro-prepauline-bodily-resurrection",
+              "text": "Whether earliest resurrection proclamation itself proves bodily physical resurrection.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-method-claimant-bears-proof-burden-component-05",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether early dating resolves the disputed physical meaning of resurrection.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The reply justifies assessing whether the claimant has established the exceptional bodily proposition, then applies that demand to delayed, selective, increasingly physical reports."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The burden claim and its application to bodily resurrection are clear, bounded, and expressly distinguished from mere possibility."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conclusion is framed as lack of convincing proof from the earliest evidence, appropriately matching an insufficiency case."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A cumulative historical inference may establish the motion probabilistically without a single report explicitly stating every physical detail.",
+          "decisiveQualification": "The proof burden permits cumulative inference but still requires warranted bridges from the evidence to bodily physicality."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It expressly connects unresolved evidential deficiencies and the claimant's burden to non-establishment of the motion."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It preserves the legitimate historical issue and expressly evaluates the affirmative's evidence against the correctly allocated proof burden."
+          }
+        },
+        "evidenceBasis": "The excerpt denies convincing proof in the earliest stratum and situates that failure within the claimant's burden to establish bodily resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-cumulative-explanatory-comparison",
+        "sectionId": "method-burden-and-best-explanation",
+        "side": "pro",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "Bodily resurrection explains the asserted death, empty tomb, and appearance facts, whereas the rescue theory lacks evidence, strains the sources, conflicts with eyewitness testimony, and is ad hoc.",
+        "sourceSpan": {
+          "startEvent": 1385,
+          "endEvent": 1418,
+          "excerpt": "evidence that we've looked at the three facts it easily explains the Jesus death by crucifixion it easily explains the empty tomb it easily explains why a number of people both friend and foe sincerely believed that Jesus had been resurrected and appeared to them moreover it it seems to me that all alternate theories that attempt to explain this data have failed now I'd like to take a moment and look at shabir's rescue Theory"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator introduces Licona's closing statement, and Licona explicitly summarizes his own case while naming and criticizing Ally's alternative.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-historical-establishment"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-method-claimant-bears-proof-burden",
+            "con-method-two-necessary-premises-unestablished",
+            "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+            "con-appearances-paul-and-james-not-physical-proof",
+            "con-development-crucifixion-details-intensify",
+            "con-tomb-swoon-objection-relies-on-later-strata"
+          ],
+          "components": [
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-01",
+              "targetMoveId": "con-method-claimant-bears-proof-burden",
+              "text": "Whether the affirmative can meet its burden through a cumulative best-explanation comparison.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-02",
+              "targetMoveId": "con-method-two-necessary-premises-unestablished",
+              "text": "Whether death, empty tomb, and appearances are sufficiently established as explanatory data.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-03",
+              "targetMoveId": "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+              "text": "Whether bodily resurrection better explains the asserted empty tomb than spiritual vindication.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-04",
+              "targetMoveId": "con-appearances-paul-and-james-not-physical-proof",
+              "text": "Whether bodily resurrection explains sincere friend-and-foe appearance beliefs.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-05",
+              "targetMoveId": "con-development-crucifixion-details-intensify",
+              "text": "Whether narrative development defeats the combined historical facts.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-cumulative-explanatory-comparison-component-06",
+              "targetMoveId": "con-tomb-swoon-objection-relies-on-later-strata",
+              "text": "Whether rescue remains competitive once evidential deficits are considered.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The closing directly compares bodily resurrection with rescue across the three asserted facts, but does not fully answer source-development or physicality objections."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The explanatory claim, data set, and principal rival are clear, though criteria for 'easily explains' and 'failed' remain implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Categorically stating that all alternatives failed exceeds the excerpt's compressed comparison and omits live visionary and developmental qualifications."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con case may seek underdetermination rather than establish rescue as the uniquely best positive explanation.",
+          "decisiveQualification": "Defeating rescue does not by itself resolve spiritual, visionary, developmental, or premise-uncertainty challenges."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The cumulative structure is valid, but explanatory superiority is asserted without explicit criteria or complete rival comparison."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The three facts and rescue deficits are named, yet disputed premises and other serious alternatives are not adequately defended."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "This is the affirmative's express motion-level bridge from the asserted cumulative facts to bodily resurrection."
+          },
+          "representationalCharity": {
+            "value": 59,
+            "rationale": "The closing addresses rescue at length but materially narrows the strongest con case by treating that theory as the main alternative."
+          },
+          "responsiveness": {
+            "value": 74,
+            "rationale": "It contacts the decisive comparative burden and multiple opposing components, while leaving one major source-critical component unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt says resurrection explains death, empty tomb, and sincere appearances, then claims alternatives failed and turns specifically to the rescue theory.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-development-later-gospels-physicalize-tradition",
+        "sectionId": "early-tradition-and-narrative-development",
+        "side": "con",
+        "speaker": "Shabir Ally",
+        "moveKind": "reply",
+        "proposition": "The earliest resurrection proclamation required neither an empty tomb nor a physical body, while the later Gospels progressively physicalized the appearances and amplified the account of Jesus's death.",
+        "sourceSpan": {
+          "startEvent": 1471,
+          "endEvent": 1504,
+          "excerpt": "gospels after Paul had already proclaimed the resurrection of Jesus that the earliest Resurrection proc proclamations did not necessitate a physical bodily Resurrection did not necessitate an empty tomb and that the later gospel writers try to prove that Jesus reappeared to his disciples by improving the story so that in Mark there is no actual appearance in Matthew there is in"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This uninterrupted portion of Ally's closing restates his comparative Gospel analysis and culminates in his proposed rescue-compatible explanation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-evidential-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-cumulative-explanatory-comparison",
+            "pro-empty-tomb-three-indicators",
+            "pro-appearances-friends-and-foes",
+            "pro-prepauline-bodily-resurrection",
+            "pro-earliest-apostolic-resurrection-stratum"
+          ],
+          "components": [
+            {
+              "componentId": "con-development-later-gospels-physicalize-tradition-component-01",
+              "targetMoveId": "pro-cumulative-explanatory-comparison",
+              "text": "Whether the cumulative evidence discriminates bodily resurrection from later narrative physicalization.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-development-later-gospels-physicalize-tradition-component-02",
+              "targetMoveId": "pro-empty-tomb-three-indicators",
+              "text": "Whether the earliest proclamation itself required an empty tomb.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-development-later-gospels-physicalize-tradition-component-03",
+              "targetMoveId": "pro-appearances-friends-and-foes",
+              "text": "Whether early appearance claims already contained the later Gospels' physical detail.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-development-later-gospels-physicalize-tradition-component-04",
+              "targetMoveId": "pro-prepauline-bodily-resurrection",
+              "text": "Whether early resurrection language necessarily meant physical bodily revival.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-development-later-gospels-physicalize-tradition-component-05",
+              "targetMoveId": "pro-earliest-apostolic-resurrection-stratum",
+              "text": "Whether earliest-stratum resurrection belief establishes bodily physical content.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly argues that the cumulative facts do not discriminate adequately because empty-tomb and physical-appearance specificity intensify only in later Gospel narratives."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The chronological thesis is clear, but the characterization of Mark as having no appearance requires qualification about endings and narrative scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The progression supports development, though saying later writers improved the story infers invention more strongly than the excerpt establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later Gospels may make explicit an already bodily early tradition rather than create its physical content.",
+          "decisiveQualification": "Increasing narrative explicitness is compatible with both clarification of tradition and substantive physicalization."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It connects underdetermined early evidence and later physicalization directly to failure to establish the bodily-resurrection motion."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move documents the progression but does not sufficiently discriminate invention from later clarification."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It contacts the closing cumulative inference and clearly states the developmental mechanism said to preserve underdetermination."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes Pauline proclamation from later Gospels and describes a progression from no Markan appearance to increasingly physical later narratives.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains beyond the move ratings, response links, importance, and burden-contact judgments.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No additional completion criterion survives the strict exclusion rule.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No separate debate-wide consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden contact"
+          ],
+          "counterfactual": "Removing the proposed adjustment would not change any independently uncaptured burden bridge."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains beyond the move ratings, response links, importance, and burden-contact judgments.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No additional completion criterion survives the strict exclusion rule.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No separate debate-wide consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden contact"
+          ],
+          "counterfactual": "Removing the proposed adjustment would not change any independently uncaptured burden bridge."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "method-burden-and-best-explanation",
+        "title": "Historical Burden and Best-Explanation Method",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-rescue-theory-evidential-deficits",
+                "importance": 3,
+                "score": 86
+              },
+              {
+                "moveId": "pro-cumulative-explanatory-comparison",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-method-two-necessary-premises-unestablished",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-method-claimant-bears-proof-burden",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "death-by-crucifixion",
+        "title": "Death by Crucifixion",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "pro-crucifixion-death-evidence",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "pro-pilate-premise-attestation-comparison",
+                "importance": 2,
+                "score": 89
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-death-mark-short-duration-pilate-doubt",
+                "importance": 3,
+                "score": 77
+              },
+              {
+                "moveId": "con-death-johannine-details-scriptural-construction",
+                "importance": 2,
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "burial-and-empty-tomb",
+        "title": "Burial and the Empty Tomb",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-empty-tomb-three-indicators",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "con-tomb-spiritual-vindication-needs-no-empty-tomb",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "con-tomb-swoon-objection-relies-on-later-strata",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "appearances-and-bodily-physicality",
+        "title": "Appearances and Bodily Physicality",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-appearances-friends-and-foes",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-appearances-paul-permits-spiritual-reading",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-appearances-paul-and-james-not-physical-proof",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "early-tradition-and-narrative-development",
+        "title": "Early Tradition and Narrative Development",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-prepauline-bodily-resurrection",
+                "importance": 3,
+                "score": 80
+              },
+              {
+                "moveId": "pro-earliest-apostolic-resurrection-stratum",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-development-crucifixion-details-intensify",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "con-development-later-gospels-physicalize-tradition",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 83.05,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      },
+      "con": {
+        "weightedSectionMean": 84.9,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 2
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 18,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
