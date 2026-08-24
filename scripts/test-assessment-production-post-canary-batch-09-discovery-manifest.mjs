@@ -2,6 +2,7 @@
 
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { access, readFile, writeFile } from "node:fs/promises";
 
 import {
@@ -26,6 +27,10 @@ if (shouldWrite) assert(validatedAt && !Number.isNaN(Date.parse(validatedAt)), "
 const ROOT = "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery";
 const MANIFEST = `${ROOT}/execution-preparation-manifest.json`;
 const VALIDATION = `${ROOT}/execution-preparation-validation.json`;
+const DIAGNOSIS = `${ROOT}/preparation-failure-diagnosis.json`;
+const CORRECTION_PLAN = `${ROOT}/preparation-correction-plan.json`;
+const ORIGINAL_TEST_COMMIT = "572fc0b5e965bf8fd6f33b17549b2cf1d279128a";
+const TEST = "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs";
 const REQUIRED_ORDER = ["170", "134", "19", "114", "166", "89", "176", "183", "112", "17"];
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const exists = (file) => access(file).then(() => true, () => false);
@@ -42,6 +47,13 @@ const preparationValidationBytes = await readFile(manifest.preparationValidation
 const preparationValidation = JSON.parse(preparationValidationBytes);
 const standingAuthorization =
   await loadAndValidatePostCanaryBatch09StandingAuthorization();
+const diagnosisBytes = await readFile(DIAGNOSIS);
+const correctionPlan = JSON.parse(await readFile(CORRECTION_PLAN));
+assert.equal(correctionPlan.status, "frozen-batch-09-discovery-overlay-count-test-correction-prepared");
+assert.equal(correctionPlan.diagnosis.sha256, sha256(diagnosisBytes));
+assert.equal(correctionPlan.originalTest.commit, ORIGINAL_TEST_COMMIT);
+assert.equal(correctionPlan.originalTest.sha256, manifest.sourceHashes[TEST]);
+assert.equal(correctionPlan.correctedTest.sha256, sha256(await readFile(TEST)));
 
 assert.equal(manifest.status, "frozen-thirty-one-post-canary-batch-09-discovery-contexts-prepared-not-authorized");
 assert.equal(manifest.discoveryProtocolId, V212_DISCOVERY_PROTOCOL_ID);
@@ -97,7 +109,7 @@ assert.equal(preparationValidation.totals.paidServiceCalls, 0);
 assert.equal(manifest.contexts.length, 31);
 assert.deepEqual(manifest.contexts.map((context) => context.contextIndex), Array.from({ length: 31 }, (_, index) => index));
 assert.deepEqual([...new Set(manifest.contexts.map((context) => context.debateNumber))], REQUIRED_ORDER);
-assert.equal(manifest.contexts.filter((context) => context.sourceChainOverlayApplied).length, 4);
+assert.equal(manifest.contexts.filter((context) => context.sourceChainOverlayApplied).length, 0);
 assert.equal(manifest.executionPolicy.contexts, 31);
 assert.equal(manifest.executionPolicy.attemptsPerContext, 1);
 assert.equal(manifest.executionPolicy.retriesMaximum, 0);
@@ -153,7 +165,10 @@ assert.equal(manifest.compilationPolicy.scoresDerived, false);
 assert.equal(Object.values(manifest.schemaHardening).every((value) => value === true || value === 12), true);
 assert.equal(allLeavesTrue(manifest.stopRules), true);
 for (const [file, digest] of Object.entries(manifest.sourceHashes)) {
-  assert.equal(sha256(await readFile(file)), digest, `${file}: frozen source drift`);
+  const bytes = file === TEST
+    ? execFileSync("git", ["show", `${ORIGINAL_TEST_COMMIT}:${TEST}`])
+    : await readFile(file);
+  assert.equal(sha256(bytes), digest, `${file}: frozen source drift`);
 }
 for (const file of manifest.futureOutputPathsExcludedFromSourceHashes) {
   assert.equal(Object.hasOwn(manifest.sourceHashes, file), false);
