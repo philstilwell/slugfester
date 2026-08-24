@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-candidate-sharded-inventory",
+  "debateNumber": "176",
+  "debateId": "ehrman-peter-williams-gospels-historically-reliable-2018",
+  "motion": "Are the canonical Gospels historically reliable accounts of Jesus' life, teaching, death, and resurrection?",
+  "sides": {
+    "pro": {
+      "label": "The Gospels are historically reliable",
+      "speakers": [
+        "Peter J. Williams"
+      ]
+    },
+    "con": {
+      "label": "The Gospels are not reliable throughout",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 5340,
+  "eventCount": 2374,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/foLI3KGbMnk/transcript.txt",
+    "transcriptSha256": "4f4ae2672ca207a99552ca58db9f6ac037e5a0618badf1459d55aacec615a0f7",
+    "eventsPath": ".assessment-cache/captions/foLI3KGbMnk/events.json",
+    "eventsSha256": "236be600433f940e933d896fe6375cafcd92d9a0e9323ba68af101a0874e0cdd",
+    "localManifestPath": ".assessment-cache/captions/foLI3KGbMnk/manifest.json",
+    "localManifestSha256": "578960afdb15962bd2eeb81b79b6e774d1a61e469468f3719570704478c06b03"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-09/debate-176.jsonl",
+    "sourceLedgerSha256": "3ea9cc388220679b056c023ef0d40a126e8da66f381f9d3827705914fbff50c3",
+    "sourceLedgerBytes": 140252,
+    "sourceLedgerEventCount": 2374,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/plans/debate-176.json",
+    "partitionPlanSha256": "46c8096a773dc7756881593cca519cef6fcdb880aa39a07ce716ffa729af0929",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

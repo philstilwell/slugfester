@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-candidate-sharded-inventory",
+  "debateNumber": "89",
+  "debateId": "bignon-oppy-religious-experience-god-2022",
+  "motion": "Can Bignon's conversion story, religious experience, and supporting arguments rationally support Christian belief, or do rival experiences and naturalist explanations undercut their evidential force?",
+  "sides": {
+    "pro": {
+      "label": "Religious-experience case",
+      "speakers": [
+        "Guillaume Bignon"
+      ]
+    },
+    "con": {
+      "label": "Naturalist caution",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 4656,
+  "eventCount": 2204,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/4KCJXMeM9WQ/transcript.txt",
+    "transcriptSha256": "8614a98bf30e65b929e54576a27d1f3b4b13aa8ec5cd7a7b20b6ea44446e7464",
+    "eventsPath": ".assessment-cache/captions/4KCJXMeM9WQ/events.json",
+    "eventsSha256": "b054514cf5c2115edbbb9ef51e5e57374f5731027867fcc9ea5e534e9587ddfd",
+    "localManifestPath": ".assessment-cache/captions/4KCJXMeM9WQ/manifest.json",
+    "localManifestSha256": "a78b6f597731a5fcd756729422869abd81bc431bba780d7867f61b13917cdc17"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-09/debate-89.jsonl",
+    "sourceLedgerSha256": "1b12f20c8976f3d72341d917b43ca2896635111edc8d85f09a52eae48d1a135f",
+    "sourceLedgerBytes": 123005,
+    "sourceLedgerEventCount": 2204,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/plans/debate-89.json",
+    "partitionPlanSha256": "beee7cec24be25f01f8fcf52201b122306d2bf1ad3e3861b998bdf8204727475",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
