@@ -1,0 +1,743 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "176",
+  "debateId": "ehrman-peter-williams-gospels-historically-reliable-2018",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-historical-trust",
+      "side": "pro",
+      "description": "Establish that the canonical Gospels preserve historically trustworthy accounts by connecting informed provenance, Palestinian contextual knowledge, coherent transmission, and continuity in their presentation of Jesus to a cumulative inference of reliability.",
+      "successCriteria": "The route succeeds if its provenance and internal features provide a warranted connection to early informed tradition, withstand the principal transmission, discrepancy, and developmental objections, and jointly support trust in the accounts covered by the motion.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-reliability",
+        "tier": "motion",
+        "description": "Show that the relevant Gospel accounts collectively warrant historical trust concerning Jesus' life, teaching, death, and resurrection."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-informed-provenance",
+          "tier": "central",
+          "description": "Connect authorship, research, source access, chronology, and Palestinian knowledge to informed and sufficiently early provenance."
+        },
+        {
+          "bridgeId": "pro-central-transmission-integrity",
+          "tier": "central",
+          "description": "Explain why the pattern of contextual detail, names, and literary features favors preserved tradition over substantial alteration."
+        },
+        {
+          "bridgeId": "pro-central-clash-resolution",
+          "tier": "central",
+          "description": "Account for alleged discrepancies and differences in coverage without requiring historical incompatibility or fabrication."
+        },
+        {
+          "bridgeId": "pro-central-portrait-continuity",
+          "tier": "central",
+          "description": "Establish meaningful continuity between earlier Gospel presentations of Jesus and John's distinctive claims and themes."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-method-assumptions",
+          "tier": "subsidiary",
+          "description": "Identify how assumptions about prediction, miracles, or naturalism bear on dating and evaluation of the traditions."
+        },
+        {
+          "bridgeId": "pro-subsidiary-cumulative-convergence",
+          "tier": "subsidiary",
+          "description": "Integrate independent contextual, literary, chronological, and thematic features into the motion-level inference."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-critical-discrimination",
+      "side": "con",
+      "description": "Establish that the canonical Gospels cannot be treated as reliable throughout by connecting delayed and uncertain provenance, mutable oral transmission, substantive narrative tensions, and theological development to the need for claim-by-claim historical discrimination.",
+      "successCriteria": "The route succeeds if the proposed transmission history and specific textual comparisons show that accurate background details can coexist with altered, incompatible, or developed central claims, thereby defeating an inference to reliability across the accounts.",
+      "motionBridge": {
+        "bridgeId": "con-motion-not-reliable-throughout",
+        "tier": "motion",
+        "description": "Show that the canonical accounts contain enough historically consequential alteration or conflict to preclude treating them as reliable throughout."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-provenance-gap",
+          "tier": "central",
+          "description": "Establish the temporal, linguistic, authorial, and source-access gaps between Jesus and the written accounts."
+        },
+        {
+          "bridgeId": "con-central-transmission-change",
+          "tier": "central",
+          "description": "Explain how oral and literary transmission could preserve incidental setting details while changing central stories and teachings."
+        },
+        {
+          "bridgeId": "con-central-textual-conflict",
+          "tier": "central",
+          "description": "Use comparison of parallel accounts to determine whether material differences resist a single factual reconstruction."
+        },
+        {
+          "bridgeId": "con-central-theological-development",
+          "tier": "central",
+          "description": "Trace whether later distinctive claims about Jesus reflect theological development absent from multiple earlier sources."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-evidential-method",
+          "tier": "subsidiary",
+          "description": "Require historical conclusions and proposed harmonizations to remain revisable in light of textual and archaeological evidence."
+        },
+        {
+          "bridgeId": "con-subsidiary-setting-event-distinction",
+          "tier": "subsidiary",
+          "description": "Maintain the distinction between accurate contextual information and the truth of the narratives' central reported events."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-provenance-dating",
+      "title": "Authorship, Dating, and Access to Early Sources",
+      "weightPercent": 20,
+      "rationale": "The temporal distance, identities, research practices, and source access of the Gospel writers determine how directly the written accounts can be connected to informed early testimony."
+    },
+    {
+      "sectionId": "section-contextual-corroboration",
+      "title": "Palestinian Knowledge and Its Evidential Reach",
+      "weightPercent": 22,
+      "rationale": "Geography, customs, measures, language, and personal-name patterns form a major shared clash over whether accurate setting information supports the truth and transmission of central claims."
+    },
+    {
+      "sectionId": "section-transmission-discrepancies",
+      "title": "Oral Transmission, Parallel Accounts, and Discrepancies",
+      "weightPercent": 25,
+      "rationale": "Competing models of preservation and change, tested through parallel narratives and proposed reconciliations, directly bear on whether the accounts can be relied upon across disputed factual reports."
+    },
+    {
+      "sectionId": "section-jesus-portrait-development",
+      "title": "Continuity and Development in the Portrait of Jesus",
+      "weightPercent": 21,
+      "rationale": "Differences between the Synoptic traditions and John concerning Jesus' teaching and divine identity bear on whether consequential material reflects authentic continuity or later theological development."
+    },
+    {
+      "sectionId": "section-method-cumulative-inference",
+      "title": "Historical Method and the Cumulative Reliability Inference",
+      "weightPercent": 12,
+      "rationale": "The treatment of prediction, miracles, prior commitments, textual integrity, and converging features governs how the underlying evidence may be combined into or withheld from a motion-level conclusion."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-transmission-oral-language-gap",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "section-transmission-discrepancies",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The Gospel traditions circulated orally for years, crossed from the Aramaic-speaking setting of Jesus and his disciples into Greek, and were written decades later by Greek-speaking Christians.",
+      "sourceSpan": {
+        "startEvent": 218,
+        "endEvent": 259
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the opening historical question to Ehrman, whose uninterrupted answer occupies this entire source window.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "years before the Gospel writers produced their accounts Jesus and His disciples of course were Aramaic speakers in in Galilee were a rural part of Galilee and the Gospels are written in Greek and so these are these are accounts that've were originally passed around probably in the native language of Palestine but then are they later written some decades later by by Greek speaking Christians and so ultimately they go back to to oral traditions",
+        "characterCount": 446,
+        "tokenCount": 76,
+        "startToken": 191,
+        "endToken": 266,
+        "weightedOverlap": 52,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 12,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-provenance-decades-after-jesus",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "section-provenance-dating",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Mark was probably written around 70, Matthew and Luke in the 80s, and John around 90 or 95, placing the surviving accounts roughly forty to sixty-five years after Jesus's death.",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 299
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman explicitly presents his dating as the mainstream scholarly chronology in a continuous answer to the moderator's question.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "each other and with Mark and so it's usually thought that Matthew Luke came later than Mark and they're normally dated to the eighties 80 85 something like that so 50 55 years after Jesus death and John is almost always seen as the last gospel and usually dated toward the end of the first century say 90 or 95 so maybe 60 65 years after Jesus death so so the time gap between Jesus death and the first accounts",
+        "characterCount": 411,
+        "tokenCount": 80,
+        "startToken": 138,
+        "endToken": 217,
+        "weightedOverlap": 44,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-authorship-local-provenance",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "section-provenance-dating",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "The traditional Gospel names are probably authentic, while the authors' detailed Palestinian knowledge supports composition through informed early sources.",
+      "sourceSpan": {
+        "startEvent": 307,
+        "endEvent": 380
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Williams receives the dating question, contrasts his approach with Ehrman's, and develops one sustained answer until Ehrman begins questioning the archaeology.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "the subject of dating because the way I'd put it is the Gospels don't come with dates on but they do come with names on so you know if we just start with Matthew Mark Luke and John and there there are no yet there aren't early manuscripts without those names on and I don't think it's likely that for Gothel Gospels are each composed anonymously and then got these names on we can",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 3,
+        "endToken": 76,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-prediction-dating",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "section-provenance-dating",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Jesus could genuinely have predicted Jerusalem's fall, so the prediction does not by itself require a post-70 date when considered with other signs of reliability.",
+      "sourceSpan": {
+        "startEvent": 481,
+        "endEvent": 515
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Williams answers the moderator's summary of his earlier dating and then explains his treatment of the Jerusalem prediction without a speaker change.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "have no problem with saying he predicted things I have of course I don't have copies of the Gospels from the it before the year 70 so you know I'm coming it from the point of view of we have these documents which have all these other signs of reliability that I find in that they portray Jesus as predicting the fall of Jerusalem it seems to me to make sense that he predicted the",
+        "characterCount": 380,
+        "tokenCount": 75,
+        "startToken": 181,
+        "endToken": 255,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-provenance-luke-source-access",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "section-provenance-dating",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Luke-Acts is anonymous, and even authorship by a companion of Paul would not show that its author accompanied Jesus or obtained information from Jesus's disciples.",
+      "sourceSpan": {
+        "startEvent": 575,
+        "endEvent": 598
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly asks Ehrman who wrote Luke-Acts, and Ehrman gives the entire ensuing answer before the question is passed to Williams.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "about it and a couple of my books and but we probably don't want to go there now my view is that if it was a companion of Paul that would be somebody was not one of the companions of Jesus Paul himself is not a companion of Jesus and so the issue is where does Luke it is information from right he doesn't say that he got information from the disciples or from anyone else he says",
+        "characterCount": 380,
+        "tokenCount": 78,
+        "startToken": 81,
+        "endToken": 158,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-four-gospels-palestinian-knowledge",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "section-contextual-corroboration",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "The four Gospels' integrated knowledge of Palestinian geography, travel, measures, language, and themes is best explained by preserved tradition rather than later invention.",
+      "sourceSpan": {
+        "startEvent": 676,
+        "endEvent": 741
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Williams to expand his authentication case, and Williams delivers a long uninterrupted argument with several cumulative examples.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "features I can think of for verses in a row so in Luke 16 where you get you know he's get a dry measure and a wet measure and then we get the sons of light as a phrase which is a Palestinian religious phrase and then unrighteous mammon in the next verse and those are four bits of language which I would expect really reflect the the land of Palestine and so if we've got them in a row it's because we actually have the wording somehow preserved",
+        "characterCount": 445,
+        "tokenCount": 89,
+        "startToken": 77,
+        "endToken": 165,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-context-setting-event-distinction",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "section-contextual-corroboration",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Accurate geography, customs, measurements, trees, cities, distances, and personal names do not establish that Luke's central reports about what Jesus said and did are historically correct.",
+      "sourceSpan": {
+        "startEvent": 779,
+        "endEvent": 874
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman begins after the moderator asks whether Williams's details affect his view and sustains the rebuttal through an extended analogy before yielding the floor.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "we want to discuss the reason is because if if Luke is accurate in terms of what trees are in Palestine what customs were followed what measurements were used if he knows what cities were there and what the distances were between them that has no bearing on the question of whether the stories he tells about Jesus are historically right you can read a an article in tomorrow's in",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 146,
+        "endToken": 215,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-context-details-can-survive-alteration",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "section-contextual-corroboration",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Oral transmission can preserve incidental Palestinian details while substantially altering the main story, so contextual accuracy does not by itself establish narrative reliability.",
+      "sourceSpan": {
+        "startEvent": 900,
+        "endEvent": 942
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly disputes the asserted link between preserved details and preserved substance by appealing to the ordinary behavior of oral tradition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "within the stories this is what happens in oral traditions it's not just unusual it's just not the New Testament every oral tradition is like this you get these little details the fact you get the details doesn't mean that the tradition itself is right and it's and when you say that somebody had to do a lot of research and if they got all the trivial stuff they also got the big",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 99,
+        "endToken": 171,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-palestinian-name-patterns",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "section-contextual-corroboration",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Accurate Palestinian personal-name frequencies and appropriate disambiguation of common names indicate a short transmission chain and favor authentic early tradition.",
+      "sourceSpan": {
+        "startEvent": 952,
+        "endEvent": 1017
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Williams invokes research on rapid name corruption, then explains how Gospel name frequencies and qualifiers correspond to evidence from the relevant place and period.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "an oral tradition so if we've got all of the geographical names plausible all of the personal names haven't even talked about that are right for the time and place that suggests that we've not gone through many stages of tradition before we come to that yet can you just explain the personal name sigh because this is another significant area and and so the basic argument is that",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 45,
+        "endToken": 113,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-discrepancy-judas-death-field",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "section-transmission-discrepancies",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The incompatible accounts of Judas's death and acquisition of the field show that related canonical narratives cannot always both be accepted as factual reports.",
+      "sourceSpan": {
+        "startEvent": 1159,
+        "endEvent": 1209
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman contrasts the sequence, purchaser, manner of death, and explanation of the field's name in Matthew and Acts, then states the limited common historical core.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "cannot be right now okay so and before we hear Peter's response to that is the issue then that you know we we we don't know what happened to Judas at all because these accounts as far as you you can I think we can know some things okay I think there really was a Judas I think that he really did betray Jesus to the authorities and I think he probably came to some kind of untimely death",
+        "characterCount": 387,
+        "tokenCount": 79,
+        "startToken": 240,
+        "endToken": 318,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-judas-compatible-sequence",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "section-transmission-discrepancies",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Matthew's report of hanging can supply causal details omitted from Acts' report of a headlong fall, leaving the Judas narratives underdetermined rather than contradictory.",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1260
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Williams focuses on explanatory gaps in Acts, notes that hanging supplies elevation, and sketches ways a body could fall and rupture after the hanging.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "two things as he went through the accounting Acts one is he used the word somehow that Judas somehow and the phrases became headlong well that to me is just crying out for some more details we need to explain we need something like vertical elevation Oh Matthew has vertical elevation because he has to hang himself so I'd want to say that the account in Acts is is crying out for",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 20,
+        "endToken": 91,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-method-evidence-before-theology",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "section-method-cumulative-inference",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Historical inquiry should assess what the evidence supports rather than begin from a theological requirement that Scripture must be correct.",
+      "sourceSpan": {
+        "startEvent": 1406,
+        "endEvent": 1422
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman explicitly distinguishes theological reasoning from historical method and says theological presuppositions must not control the historical outcome.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "theology it's not doing history history has not done history is not done by coming at it with a theological presupposition about what had to happen you look at the evidence and then you see does the evidence move me that way or not you don't approach it by saying this has to be right because I'm saying that that no one who holds to a theological view that say of the authority of Scripture can therefore do proper",
+        "characterCount": 415,
+        "tokenCount": 79,
+        "startToken": 21,
+        "endToken": 99,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-portrait-kingdom-to-divine-identity",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "section-jesus-portrait-development",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The shift from Jesus preaching God's coming kingdom in earlier sources to making explicit claims about his own divine identity in John indicates later theological development.",
+      "sourceSpan": {
+        "startEvent": 1616,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman lays out the relative source chronology, contrasts the characteristic teaching in Mark and Q with John, and explains the difference as evolving Christian belief.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "coming Kingdom he talks about himself who he is and so you get some of the most famous sayings of Jesus the way the truth and the life way the truth and the life no one comes to the Father but by me I am the light of the world I am the bread of life the carpet before Abraham was I am I and the father are one you get all of these claims many of which have a component of divine identity",
+        "characterCount": 387,
+        "tokenCount": 84,
+        "startToken": 475,
+        "endToken": 558,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-mark-exalted-portrait",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "sectionId": "section-jesus-portrait-development",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Mark already portrays Jesus with exalted divine status through scriptural allusions, forgiveness, miracles, and divine actions, challenging a late-development account unique to John.",
+      "sourceSpan": {
+        "startEvent": 1729,
+        "endEvent": 1798
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly challenges the proposed chronology and develops a sustained first-person argument from multiple scenes in Mark.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "in the gospel so I'd want to say that all of these things come together to give you a portrait a very exalted portrait of Jesus so there's a there's a consistency as far as you're concerned between those earlier if you like accounts in mark I think the home question of development you know you've got to say when we lay out sources and we say this comes before this and this what",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 366,
+        "endToken": 439,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-portrait-narrator-versus-self-claims",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-02",
+      "sectionId": "section-jesus-portrait-development",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Mark's narrator may portray Jesus as divine, but Mark and the other earlier sources do not report Jesus making the explicit divine self-claims found in the later Gospel of John.",
+      "sourceSpan": {
+        "startEvent": 1799,
+        "endEvent": 1887
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker corrects Williams's characterization, accepts Mark's divine portrait, and repeatedly distinguishes narration from Jesus' own reported words.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Father but by me these are sayings found in the Gospel of John which you agree is the last of the Gospels those sayings are not found in mark which you agree is in the earlier gospel and they're not only found not in mark they're not found in Luke they're not found in Matthew they're not from Q they're not in any of the early sources where Jesus says these things when you pointed out that in Mark's",
+        "characterCount": 401,
+        "tokenCount": 79,
+        "startToken": 555,
+        "endToken": 633,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-johannine-synoptic-continuity",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-03",
+      "sectionId": "section-jesus-portrait-development",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "John's distinctive self-descriptions have conceptual precedents in Synoptic sayings and narrative roles, while selective coverage can explain their unequal distribution.",
+      "sourceSpan": {
+        "startEvent": 1888,
+        "endEvent": 1912
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly agrees with a limited point, then answers it by pairing Johannine sayings with Synoptic words and narrative roles.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "that but what I want to say is there is precedent for all of the I am saying so for instance Jesus you know I am the bread of life he says in the Synoptics this is my body you know take take this bread he you know he says I am The Good Shepherd in John and then he's portraying himself in stories as basically fulfilling the role of the shepherd he says you know I am the light of",
+        "characterCount": 380,
+        "tokenCount": 81,
+        "startToken": 12,
+        "endToken": 92,
+        "weightedOverlap": 6,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 0,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-tradition-literary-integrity",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-05",
+      "sectionId": "section-transmission-discrepancies",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Traditions unique to individual Gospels are most simply explained as genuine preservation because their literary integrity, scriptural depth, and Palestinian Jewish setting fit an early origin.",
+      "sourceSpan": {
+        "startEvent": 2003,
+        "endEvent": 2034
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly labels his proposal the simplest hypothesis and supports it with named parables, internal integrity, and contextual fit.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "know the the prodigal son I mean there's some genius at an early stage and it makes far more sense to me to say this is Jesus these stories also have huge integrity they have very deep Old Testament references they fit Palestinian Judaism so the simplest hypothesis is to say they come with integrity now one of the things that you know as you hear about oral tradition is I think",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 62,
+        "endToken": 133,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-naturalism-method-bias",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "section-method-cumulative-inference",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "reply",
+      "proposition": "Naturalistic assumptions can classify miraculous traditions as late by default and thereby bias scholarly conclusions about the development of Gospel material.",
+      "sourceSpan": {
+        "startEvent": 2035,
+        "endEvent": 2050
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker directly addresses Ehrman and identifies a specific proposed mechanism by which academic worldview assumptions affect historical judgments.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Jesus in you know University is that there is no input from naturalistic world views as they work in mainstream universities I think there is you know as I know obviously there are Christians working University but I think it does affect those for instance that would mean well any story or saying that involves merit the miraculous is automatically going to be assumed to have been automatically it's it's simply it's it's a question of subtle bias",
+        "characterCount": 449,
+        "tokenCount": 78,
+        "startToken": 21,
+        "endToken": 98,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-method-revisable-historical-beliefs",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-09",
+      "sectionId": "section-method-cumulative-inference",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Historical conclusions should follow the evidence with a willingness to revise foundational beliefs rather than serve primarily to confirm convictions already held.",
+      "sourceSpan": {
+        "startEvent": 2273,
+        "endEvent": 2330
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "In an explicitly invited final statement, the speaker contrasts two approaches to biblical scholarship and describes his own methodological commitment.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "to faith in Jesus that's why I was doing it the other reason to do this kind of study is to decide what you think is right rather than simply confirm that you're already right and that means having an open mind to possibly changing it is very difficult and emotionally stressful to change what you believe about something as fundamental as who Jesus is and what the Bible is it is",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 178,
+        "endToken": 249,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-historical-trust",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-10",
+      "sectionId": "section-method-cumulative-inference",
+      "side": "pro",
+      "speaker": "Peter J. Williams",
+      "moveKind": "constructive",
+      "proposition": "Multiple independent contextual, prophetic, chronological, literary, and ethical features converge on the conclusion that Jesus and the Gospel books about him warrant historical trust.",
+      "sourceSpan": {
+        "startEvent": 2332,
+        "endEvent": 2365
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "In his final statement, the speaker explicitly describes a convergence of considerations and draws a direct conclusion about trusting Jesus and the books about him.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "golden rule sorry no no in your footnote you said he's not you pointed to a Chinese scholar 200 years negative you know there are all these things that are just remarkable in terms of stories credit to Jesus and so I think there's a pattern of of convergence of things that tell you yes this is a a person who can be trusted and books about him that can be trusted so you know I'm",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 167,
+        "endToken": 242,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

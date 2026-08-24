@@ -1,0 +1,618 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "166",
+  "debateId": "craig-atkins-does-god-exist-2011",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-classical-theism-route",
+      "side": "pro",
+      "description": "Establish the motion through a cumulative case in which the universe's beginning requires a transcendent personal cause, objective moral values require a divine foundation, and the historical facts concerning Jesus are best explained by divine resurrection, while answering principal naturalistic objections.",
+      "successCriteria": "The route succeeds if the cosmological, moral, and resurrection inferences jointly warrant a transcendent personal and moral foundation of reality, and if objections from naturalistic explanation, suffering, source reliability, and methodological limits do not defeat those inferences.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-theism",
+        "tier": "motion",
+        "description": "The supported cosmological, moral, and historical conclusions must jointly warrant that God exists as the transcendent personal cause and moral foundation of reality."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-cosmic-beginning",
+          "tier": "central",
+          "description": "The universe must have begun to exist, and its beginning must require a transcendent, immaterial, personal cause rather than emergence from non-being."
+        },
+        {
+          "bridgeId": "pro-central-moral-foundation",
+          "tier": "central",
+          "description": "Objective moral values and duties must be real and must require a transcendent divine foundation that evolutionary or social accounts do not supply."
+        },
+        {
+          "bridgeId": "pro-central-resurrection",
+          "tier": "central",
+          "description": "The historical facts concerning Jesus must be established and divine resurrection must explain them better than the proposed natural alternatives."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-evil-compatibility",
+          "tier": "subsidiary",
+          "description": "The existence of suffering must remain compatible with God through the possibility of morally sufficient reasons for permitting it."
+        },
+        {
+          "bridgeId": "pro-subsidiary-method",
+          "tier": "subsidiary",
+          "description": "Philosophical reasoning must legitimately draw metaphysical consequences from scientifically informed premises without depending on an appeal to unexplained gaps."
+        }
+      ]
+    },
+    {
+      "routeId": "con-scientific-naturalism-route",
+      "side": "con",
+      "description": "Defeat the motion by showing that no observed feature of reality requires God, that naturalistic accounts or open scientific inquiry remain available for cosmic origins, morality, and reported miracles, and that suffering conflicts with the proposed loving deity.",
+      "successCriteria": "The route succeeds if the affirmative inferences fail to establish their divine conclusions because their premises or explanatory bridges remain unsupported, natural alternatives remain viable, and the evidential challenge from suffering is not adequately reconciled with an all-loving God.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-divine-requirement",
+        "tier": "motion",
+        "description": "The motion fails if the universe, morality, and historical reports do not require a transcendent personal and moral foundation and the total evidence supplies no adequate basis for God."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-natural-cosmos",
+          "tier": "central",
+          "description": "Cosmic beginning, physical constants, and apparent order must admit naturalistic possibilities without requiring pre-universe causality, purpose, or a divine creator."
+        },
+        {
+          "bridgeId": "con-central-natural-morality",
+          "tier": "central",
+          "description": "Moral conduct and distinctions must be explicable through biological and social development without requiring a divine source or judge."
+        },
+        {
+          "bridgeId": "con-central-miracle-evidence",
+          "tier": "central",
+          "description": "The resurrection inference must lack sufficiently reliable historical evidence, with ordinary explanations remaining more credible than suspension of natural law."
+        },
+        {
+          "bridgeId": "con-central-suffering",
+          "tier": "central",
+          "description": "Apparently gratuitous innocent suffering must count against the existence of the all-loving God specified by the affirmative position."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-evidential-method",
+          "tier": "subsidiary",
+          "description": "Claims about reality must be constrained by observation and testable theorizing rather than by metaphysical extrapolation or untestable divine intentions."
+        },
+        {
+          "bridgeId": "con-subsidiary-explanatory-parsimony",
+          "tier": "subsidiary",
+          "description": "A divine entity must not be introduced when simpler explanations remain available in principle or scientific inquiry has not exhausted natural accounts."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "cosmic-origin-causality",
+      "title": "Cosmic Origin, Causality, and a Personal First Cause",
+      "weightPercent": 29,
+      "rationale": "This issue contains the principal clash over whether the universe began, whether causality applies to that beginning, whether net-zero or successive-universe accounts alter the origin problem, and whether any required cause is personal and transcendent."
+    },
+    {
+      "sectionId": "objective-morality-grounding",
+      "title": "Objective Morality and Its Foundation",
+      "weightPercent": 22,
+      "rationale": "This issue tests whether objective moral values and duties exist, whether evolutionary and social accounts explain only moral behavior or also binding validity, and whether a transcendent divine foundation is required by the motion."
+    },
+    {
+      "sectionId": "resurrection-miracle-inference",
+      "title": "Resurrection Evidence and Miracle Inference",
+      "weightPercent": 19,
+      "rationale": "This issue addresses whether the empty tomb, reported appearances, and origin of Christian belief are historically established, whether the sources are reliable, and whether divine resurrection is warranted over natural explanations."
+    },
+    {
+      "sectionId": "suffering-divine-goodness",
+      "title": "Suffering and Divine Goodness",
+      "weightPercent": 13,
+      "rationale": "This issue matters because apparently gratuitous innocent suffering is offered as evidence against an all-loving God, while the opposing route requires showing that God could have morally sufficient reasons for permitting it."
+    },
+    {
+      "sectionId": "explanatory-method-naturalism",
+      "title": "Scientific Explanation, Philosophy, and Divine Necessity",
+      "weightPercent": 17,
+      "rationale": "This issue governs whether scientific evidence may support premises with theological consequences, whether metaphysical reasoning legitimately extends beyond empirical inquiry, and whether natural explanation makes God unnecessary without merely appealing to future discovery."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cosmic-finite-past-personal-cause",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "cosmic-origin-causality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist, and its beginning therefore requires an uncaused, timeless, immaterial, transcendent personal cause.",
+      "sourceSpan": {
+        "startEvent": 121,
+        "endEvent": 308
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Craig, and this uninterrupted opening argument precedes the handoff to Atkins.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "argument thus far as follow follow premise one the universe began to exist two if the universe began to exist then the universe has a Transcendent cause from which it follows logically therefore the universe has a Transcendent cause given the truth of the two premises the conclusion necessarily follows now from the very nature of the case this cause must be an uncaused changeless Timeless and immaterial",
+        "characterCount": 406,
+        "tokenCount": 68,
+        "startToken": 967,
+        "endToken": 1034,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-morality-objective-values-divine-ground",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "objective-morality-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values and duties are binding independently of human belief, and their existence requires God as their transcendent foundation.",
+      "sourceSpan": {
+        "startEvent": 309,
+        "endEvent": 393
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Craig's explicitly numbered second argument within his uninterrupted opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "us a Transcendent personal creator of the universe but it doesn't tell us anything about his moral character how can we know that he is good my second argument addresses that question premise one States if God does not exist then objective moral values and duties do not exist now by objective moral values I mean moral values which are valid and binding independently of whether",
+        "characterCount": 379,
+        "tokenCount": 66,
+        "startToken": 15,
+        "endToken": 80,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-historical-facts-inference",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "resurrection-miracle-inference",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The empty tomb, postmortem appearances, and origin of the disciples' resurrection belief are best explained by Jesus's divine resurrection, providing evidence that God exists.",
+      "sourceSpan": {
+        "startEvent": 394,
+        "endEvent": 476
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this his third argument and develops it continuously before summarizing his cumulative case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Divine Miracle on our hands and thus evidence for the existence of God now most people probably think that the resurrection of Jesus is something you just believe in by faith or not but there are actually three facts recognized by the majority of New Testament historians today which I believe are best explained by the resurrection of Jesus fact number one on the Sunday after his crucifixion Jesus tomb was found empty",
+        "characterCount": 420,
+        "tokenCount": 73,
+        "startToken": 152,
+        "endToken": 224,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-method-c004-simpler-natural-explanations",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "explanatory-method-naturalism",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "constructive",
+      "proposition": "No observed feature of reality requires God because simpler explanations, or prospects for simpler explanations, remain available without adding the complex divine hypothesis.",
+      "sourceSpan": {
+        "startEvent": 524,
+        "endEvent": 617
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the floor to Atkins, who states this as the governing thesis of his opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "of comprehension I my argument against God is that there is nothing in the universe that cannot be explained in Prospect at least without invoking that complex hypothesis in other words there are simpler explanations or at least the prospect of simpler explanations for absolutely everything because there are simple explanations or the prospect of them there is no need to burden",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 270,
+        "endToken": 331,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmos-c005-causality-arises-with-universe",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "cosmic-origin-causality",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "An original universe need not have a prior cause because physical laws, including causal relations understood as summaries of observed behavior, arise with the universe itself.",
+      "sourceSpan": {
+        "startEvent": 632,
+        "endEvent": 719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins identifies contingency as his first topic and develops the position continuously through his conclusion about a creator.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "I shall set aside the simpler problem of a daughter universe and consider the formation of an original Universe did that original Universe although perhaps contingent have to be caused you have to realize that physical laws which are summaries of observed Behavior come into existence as a universe comes into existence that includes issues of causality it is naive in the extreme",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 211,
+        "endToken": 273,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-resurrection-c008-no-reliable-miracle",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "resurrection-miracle-inference",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "No reliable divine suspension of natural law has been established, and natural explanations are more credible than resurrection as an account of the reported events.",
+      "sourceSpan": {
+        "startEvent": 782,
+        "endEvent": 817
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins introduces miracles as his fourth topic and directly addresses resurrection claims raised earlier by Craig.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "the perhaps naive but common view that a miracle involves the suspension of natural law miracles of that kind have never ever been observed there is not one atom of reliable evidence that God has ever intervened in the world to suspend his laws that the path to canonization requires Physicians to certify that an event cannot be explained except by God responding to intercession",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 4,
+        "endToken": 68,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-suffering-c009-evil-evidence-against-god",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "suffering-divine-goodness",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "The torment, accident, and disease suffered by innocent people are more simply explained by the absence of an all-loving God and constitute evidence against such a deity.",
+      "sourceSpan": {
+        "startEvent": 818,
+        "endEvent": 833
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins introduces theodicy as a distinct fifth topic and completes the argument before turning to morality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "by natural election has puzzled theologians since the beginning of time and all manner of convoluted explanations have been proposed there is of course an extraordinarily simple explanation there is no all loving God indeed to anyone with an open mind the existence of evil the torment accident and neighbor visit upon the innocent is in fact evidence against the existence of God",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 20,
+        "endToken": 82,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-morality-c010-evolutionary-social-origin",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "objective-morality-grounding",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Moral distinctions emerged through evolutionary history and the human capacity to consider consequences, so morality does not require a divine source or judge.",
+      "sourceSpan": {
+        "startEvent": 834,
+        "endEvent": 864
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins labels morality his sixth and final point, and the delivered lookahead preserves the move through its concluding societal claim.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "morality my sixth and final Point God is commonly presumed to be the Fountain Head of love and as such the source of the distinction between good and evil in my view the distinction has emerged in the course of our evolutionary history but um it is not um it's not just the um consequence of red in tooth and Claw red in tooth and Claw is coed in the milk of human kindness by our emerging ability to consider the consequences",
+        "characterCount": 426,
+        "tokenCount": 82,
+        "startToken": 0,
+        "endToken": 81,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evil-logical-compatibility",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "sectionId": "suffering-divine-goodness",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "God and evil are logically compatible if God could have morally sufficient reasons for permitting the evil found in the world.",
+      "sourceSpan": {
+        "startEvent": 955,
+        "endEvent": 1001
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs within Craig's announced rebuttal and directly addresses Atkins by name throughout the argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God's existence that entails that evil exists here's such a statement God has morally sufficient reasons for permitting the evil in the world as long as that is even possibly true it shows that God and Evil are logically consistent with each other so Dr Atkins would have to show us that it is impossible that God could have morally sufficient reasons for allowing the evil in the world and in so doing he will have taken on a burden",
+        "characterCount": 433,
+        "tokenCount": 80,
+        "startToken": 181,
+        "endToken": 260,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cosmic-nothing-zero-energy-cause",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "cosmic-origin-causality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Nothing has no causal powers, and a zero balance of positive and negative energy neither makes existing reality nothing nor removes the need for a transcendent cause.",
+      "sourceSpan": {
+        "startEvent": 1002,
+        "endEvent": 1126
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator has yielded the rebuttal to Craig, whose first-person argument explicitly names and critiques Professor Atkins.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "is why did the universe come into being why did the universe begin to exist um we're looking for a cause of the universe and what Professor Atkins says in his um book on being is that in fact the universe never really began to exist because nothing exists he says the positive and negative energy in the universe balance each other out and thus on balance there is zero energy and",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 160,
+        "endToken": 231,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmos-c03-infinite-universe-sequence",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "sectionId": "cosmic-origin-causality",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "An infinite sequence of universes cannot be excluded by philosophical or theological examples concerning finite cosmic systems; whether there was a beginning must be decided by evidence.",
+      "sourceSpan": {
+        "startEvent": 1188,
+        "endEvent": 1235
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Atkins's rebuttal, and the passage responds explicitly to examples and claims attributed to Craig.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "solar system it's about 5 billion years we can measure the life of the universe as 3 13.7 billion years years we weren't talking about that at all we were talking about whether the sequence of universes might be infinite and that there was never actually a beginning you cannot argue against that by philosophy you cannot argue against that by theology the only way you can argue about it is by looking at the evidence",
+        "characterCount": 418,
+        "tokenCount": 77,
+        "startToken": 149,
+        "endToken": 225,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-resurrection-c06-extraordinary-evidence-absent",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "sectionId": "resurrection-miracle-inference",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "The resurrection lacks the extraordinary evidence it requires because its Gospel reports are interested political constructions rather than sufficiently reliable historical records.",
+      "sourceSpan": {
+        "startEvent": 1354,
+        "endEvent": 1393
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Atkins announces that he must address resurrection and miracles, then develops the skeptical historical argument in his own rebuttal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "start from a prejudicial point of view that it did occur and then seek to justify it others those who deny the resurrection say this is such an extraordinary event we need real extraordinary evidence to support it and there is no real extraordinary evidence to support it so why should you believe it because you can see that it was invented as a political Manifesto no you cannot",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 190,
+        "endToken": 258,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-morality-evolution-validity-distinction",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "sectionId": "objective-morality-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Evolution may explain contingent moral behavior or preferences, but it cannot ground objectively binding, mind-independent moral values and duties as a transcendent foundation can.",
+      "sourceSpan": {
+        "startEvent": 1492,
+        "endEvent": 1542
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly labels the moral argument, corrects what he calls Atkins's misunderstanding, and restates both premises of his case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Transcendent foundation for objective mind independent moral values and duties moral values and Duties are just the spin-offs of The evolutionary social project or or or program and they have no objective validity if you were to rewind the film of human evolution and shoot it a new a very different type of creature with very different values and duties might well have evolved and it would be guilty of speciesism to claim that our morality",
+        "characterCount": 442,
+        "tokenCount": 77,
+        "startToken": 81,
+        "endToken": 157,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-probability-explanation",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "resurrection-miracle-inference",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "When background evidence and comparative explanatory virtues are considered, divine resurrection is not intrinsically improbable and best explains the relevant historical facts.",
+      "sourceSpan": {
+        "startEvent": 1543,
+        "endEvent": 1608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig transitions to his third argument, names Atkins's Humean objection, and provides a structured two-part response before concluding his rebuttal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "resurrection points to the existence of God and uh shared the empty tomb the appearances and the origin of the Christian faith now Dr Atkins doesn't deny those facts so much as appeal to David hume's argument against miracles to say that it's impossible to prove Miracles using evidence because Miracles are so improbable I have a two-fold response to this first of all David Hume didn't understand the probability",
+        "characterCount": 414,
+        "tokenCount": 71,
+        "startToken": 12,
+        "endToken": 82,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-method-c10-evidence-over-faith",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "sectionId": "explanatory-method-naturalism",
+      "side": "con",
+      "speaker": "Peter Atkins",
+      "moveKind": "reply",
+      "proposition": "Untestable claims grounded in prior faith do not yield genuine explanation, whereas scientific inquiry advances cautiously through collected evidence toward understanding.",
+      "sourceSpan": {
+        "startEvent": 1610,
+        "endEvent": 1646
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Atkins's second rebuttal, and Atkins immediately contrasts Craig's method with his own evidence-guided scientific approach.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "faith and cannot be demonstrated by evidence what I have tried to do this evening is to move show that scientists are mov moving cautiously forwards on the basis of collecting evidence and being guided towards understanding that is the difference if you start from the position of being faithful that is you start from the the the view that God does exist then of course you can explain absolutely everything but how childish the explanations",
+        "characterCount": 442,
+        "tokenCount": 76,
+        "startToken": 67,
+        "endToken": 142,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-method-science-neutral-premise",
+      "qualifiedCandidateId": "chunk-003:chunk-003-c07",
+      "sectionId": "explanatory-method-naturalism",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Scientific evidence may support the religiously neutral premise that the universe began, while philosophical argument draws its theological significance without appealing to a God of the gaps.",
+      "sourceSpan": {
+        "startEvent": 2043,
+        "endEvent": 2064
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig answers the moderator's challenge in the informal discussion and carefully states the limited role he assigns scientific evidence.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "argument leading to a conclusion having theological significance so that premise the universe began to exist is a religiously neutral statement which you can find in any textbook on astronomy and astrophysics it is a statement to which scientific evidence is relevant and that's all my appeal is to uh with respect to science not to appeal to science to prove God or use God to plug up gaps",
+        "characterCount": 390,
+        "tokenCount": 69,
+        "startToken": 78,
+        "endToken": 146,
+        "weightedOverlap": 50,
+        "matchedAnchorTokens": 13,
+        "propositionOverlap": 12,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
