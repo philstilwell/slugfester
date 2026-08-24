@@ -1,0 +1,2416 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+  "status": "frozen-post-canary-batch-08-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "planningOnly": true,
+  "debateNumber": "88",
+  "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-finalization/output-bundle/final-candidates/debate-88.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-08/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-08/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/FUPOouj5jNg/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+    "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+    "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+    "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+    "finalCandidateSha256": "5a65a34c5fa1727489dc541fc04e33f38eb91ab89ff48080a6d658ca964eda98",
+    "eventsPath": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+    "eventsSha256": "998bad52a6fe00822673555b15ed2eef3a46bdcbfa9378a384b2febf5f5a8d3f",
+    "finalJudgmentSha256": "4e07e2a53f73b8613b12a2411b9a1582fe1822bb31bce6b0c4a84df6ac559867"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-08/production-compatibility/output-bundle/staged-ledgers/sechler-dillahunty-perfect-mind-universe-2022.json",
+    "productionLedger": "docs/assessment-ledgers/sechler-dillahunty-perfect-mind-universe-2022.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-08-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+    "status": "frozen-post-canary-batch-08-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 8,
+    "debateNumber": "88",
+    "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+      "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+      "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+      "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+      "finalCandidateSha256": "5a65a34c5fa1727489dc541fc04e33f38eb91ab89ff48080a6d658ca964eda98",
+      "eventsPath": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+      "eventsSha256": "998bad52a6fe00822673555b15ed2eef3a46bdcbfa9378a384b2febf5f5a8d3f",
+      "finalJudgmentSha256": "4e07e2a53f73b8613b12a2411b9a1582fe1822bb31bce6b0c4a84df6ac559867"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "88",
+      "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-comparative-inference",
+          "side": "pro",
+          "description": "Establish perfect-mind theism as the preferable foundational hypothesis by comparing its commitments and its expectations for the observed universe with those of non-theistic and rival-origin hypotheses.",
+          "successCriteria": "The route succeeds if a perfect mind is sufficiently coherent as an origin hypothesis, carries a comparative simplicity advantage, and makes the relevant observations sufficiently more expected to justify preferring it over non-theism.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-preference",
+            "tier": "motion",
+            "description": "Connect comparative simplicity and differential expectedness to the conclusion that a perfect mind created the universe and is favored over non-theism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-foundational-simplicity",
+              "tier": "central",
+              "description": "Show that every worldview bears foundational commitments and that a perfect foundational mind requires fewer or less arbitrary commitments than its competitors."
+            },
+            {
+              "bridgeId": "pro-central-observational-fit",
+              "tier": "central",
+              "description": "Show that moral agency, beauty, fine-tuning, meaning, purpose, and related observations are more probable under a perfect-mind hypothesis than under an indifferent foundation."
+            },
+            {
+              "bridgeId": "pro-central-divine-attribute-connection",
+              "tier": "central",
+              "description": "Supply a principled connection between the attributes of a perfect mind and its expected production of a universe containing the cited observations."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-comparative-standard",
+              "tier": "subsidiary",
+              "description": "Justify comparative support rather than conclusive demonstration as the appropriate epistemic standard for choosing among foundational hypotheses."
+            },
+            {
+              "bridgeId": "pro-subsidiary-counterevidence-accommodation",
+              "tier": "subsidiary",
+              "description": "Explain how hiddenness, suffering, disagreement, and imperfect conditions bear on but do not erase the claimed evidential contribution of favorable observations."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-evidential-skepticism",
+          "side": "con",
+          "description": "Defeat preference for perfect-mind theism by requiring an identifiable creator hypothesis, justified comparative probabilities, and explanatory connections that distinguish it from naturalistic and supernatural rivals.",
+          "successCriteria": "The route succeeds if the perfect-mind hypothesis remains undefined or underdetermined, its likelihood comparisons lack a justified basis, or the complete evidential profile fails to favor it over non-theistic alternatives.",
+          "motionBridge": {
+            "bridgeId": "con-motion-insufficient-inference",
+            "tier": "motion",
+            "description": "Show that compatibility with selected observations does not establish or preferentially support a perfect mind as the creator of the universe."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-identification-causation",
+              "tier": "central",
+              "description": "Require a coherent means to establish that a perfect mind is possible, identifiable, detectable, capable of creation, and causally responsible for this universe."
+            },
+            {
+              "bridgeId": "con-central-probability-comparison",
+              "tier": "central",
+              "description": "Require specified hypotheses and a justified comparison class before assigning greater probability to the observed features under theism than under non-theism."
+            },
+            {
+              "bridgeId": "con-central-explanatory-distinction",
+              "tier": "central",
+              "description": "Require an intelligible account of how or why the proposed mind produces the observations and how that account differs from mere compatibility or accommodation."
+            },
+            {
+              "bridgeId": "con-central-alternative-account",
+              "tier": "central",
+              "description": "Account for the cited observations through interacting, adapted, and fallible agents while testing theism against rival supernatural hypotheses and contrary evidence."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-parsimony",
+              "tier": "subsidiary",
+              "description": "Determine whether introducing a highly capable perfect mind and auxiliary claims is genuinely simpler than withholding that additional ontological commitment."
+            },
+            {
+              "bridgeId": "con-subsidiary-hiddenness-imperfection",
+              "tier": "subsidiary",
+              "description": "Test the expectations of moral perfection against divine hiddenness, moral disagreement, suffering, absent correction, and the universe's imperfect conditions."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-creator-coherence-burden",
+          "title": "Perfect-Mind Coherence, Identification, and Causal Burden",
+          "weightPercent": 22,
+          "rationale": "This issue determines what must be established about a perfect mind before observations can support the claim that such a being exists, created the universe, and is distinguishable from nearby rival origins."
+        },
+        {
+          "sectionId": "section-simplicity-foundations",
+          "title": "Foundational Commitments and Comparative Simplicity",
+          "weightPercent": 19,
+          "rationale": "This issue compares whether theism and non-theism carry equivalent foundational burdens and whether perfection reduces commitments or instead introduces an additional complex, underdetermined entity."
+        },
+        {
+          "sectionId": "section-likelihood-method",
+          "title": "Comparative Likelihood and Evidential Method",
+          "weightPercent": 23,
+          "rationale": "This issue governs whether differential expectedness can provide support without conclusive demonstration and whether the relevant conditional probabilities and comparison classes can be justified."
+        },
+        {
+          "sectionId": "section-explanatory-fit",
+          "title": "Explanatory Power and Rival Accounts of Observed Features",
+          "weightPercent": 21,
+          "rationale": "This issue tests whether moral agency, beauty, fine-tuning, meaning, and purpose receive a distinctive explanatory connection to a perfect mind or are comparably accounted for by agents and rival hypotheses."
+        },
+        {
+          "sectionId": "section-counterevidence-expectations",
+          "title": "Divine Attributes, Hiddenness, and Contrary Expectations",
+          "weightPercent": 15,
+          "rationale": "This issue evaluates how moral perfection and creative intention bear on expected disclosure, moral guidance, suffering, disagreement, and imperfection, including proposed goods served by limited disclosure."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-foundational-simplicity",
+          "sectionId": "section-simplicity-foundations",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "constructive",
+          "proposition": "Perfect-mind theism is simpler than atheism because a perfect foundational mind lacks the arbitrary limits and brute geometric commitments attributed to an atheistic foundation.",
+          "sourceSpan": {
+            "startEvent": 137,
+            "endEvent": 217,
+            "excerpt": "mind I think which is what we know exists I think foundationally so a perfect being is also going to lack arbitrary limits and brute geometric commitments that atheistic foundation probably has to add on so Josh Rasmmanson has a great quote about this where he says that all limits alike have an outside explanation upon which they depend yet the basic features of the foundation by contrast"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator gives Zac the opening, and this uninterrupted first-person presentation explicitly develops his stated simplicity case.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-foundational-simplicity"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Constructive simplicity case comparing the alleged commitments of perfect-mind theism and atheistic foundations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The simplicity thesis is recoverable, but arbitrary limits, geometric commitments, and perfection are not fully specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker uses qualified comparative language, though the stated simplicity advantage exceeds the developed foundation comparison."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable foundational-simplicity bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "No developed opposing interpretation is evaluated in this constructive span."
+            },
+            "responsiveness": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Sechler says a perfect being lacks arbitrary limits and brute geometric commitments that an atheistic foundation would probably add, using that contrast to claim simplicity.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-cumulative-observational-fit",
+          "sectionId": "section-explanatory-fit",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "constructive",
+          "proposition": "Moral agency, moral knowledge, beauty, widespread theistic belief, cosmic fine-tuning, meaning, and purpose are collectively more likely under theism than under non-theism.",
+          "sourceSpan": {
+            "startEvent": 220,
+            "endEvent": 347,
+            "excerpt": "belief in some sort of theism where there is some sort of god or gods seems to be pretty widespread. We could look at the data of like cosmic fine tuning um and say that theism also better explains our sense of meaning and purpose. So long story short there's a bunch of things that are more likely to exist if there is a god rather than if there is not a god. Okay. So again I'm not claiming that atheism cannot explain these facts"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Zac remains the identified opening speaker and presents the argument continuously in first-person terms without a speaker transition.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-observational-fit"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Constructive cumulative case that several observed features are more expected on theism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The cumulative thesis is clear, but the comparison class and the scope of generic theism remain only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move asserts greater likelihood rather than certainty, but the compressed list does not establish each comparative likelihood."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central observational-fit requirement."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The constructive list does not meaningfully test a competing account."
+            },
+            "responsiveness": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Sechler lists widespread theistic belief, cosmic fine-tuning, meaning, and purpose and concludes that many such facts are likelier if God exists.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-creator-identification-causal-burden",
+          "sectionId": "section-creator-coherence-burden",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "The perfect-mind claim lacks usable definitions and identification mechanisms, so its proponent must still establish possibility, creative capacity, and causal responsibility for this universe.",
+          "sourceSpan": {
+            "startEvent": 402,
+            "endEvent": 516,
+            "excerpt": "or a nearly perfect mind or an almost perfect mind or just one perfect measurement short of a perfect mind or an imperfect mind. These are all important questions for this debate because we need a mechanism to identify this. And so what's the mechanism? There's a temptation to say I can do things at my maximum level or I could do things beneath my capacity. A pool hustler comes"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly transfers the response to Matt, whose uninterrupted first-person remarks analyze the wording and burdens of Zac's proposition.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-identification-causation"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-cumulative-observational-fit",
+              "pro-foundational-simplicity"
+            ],
+            "components": [
+              {
+                "componentId": "con-creator-identification-causal-burden-component-01",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "The observations cannot identify a perfect creator without definitions and a mechanism distinguishing that cause.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-creator-identification-causal-burden-component-02",
+                "targetMoveId": "pro-foundational-simplicity",
+                "text": "Calling the foundational mind perfect does not itself establish a coherent or identifiable simple hypothesis.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-creator-identification-causal-burden-component-03",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Possibility, creative capacity, and causal responsibility for this universe must be established before the likelihood claim works.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses missing definition and identification mechanisms and states that these omissions block attribution of the universe to a perfect mind."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The demanded stages—possibility, identification, capacity, and causal responsibility—are clearly separable and consistently stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The necessity concerns evidential burdens for the creator inference, and the speaker appropriately frames limits in terms of available mechanisms."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The pro case may be intended as comparative abductive support rather than direct detection or conclusive identification.",
+            "decisiveQualification": "Comparative support still requires a sufficiently specified hypothesis and some principled connection to causal responsibility for this universe."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central identification-and-causation bridge."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the decisive identification and causal-inference demands and states their defeating consequence for both opening claims."
+            }
+          },
+          "evidenceBasis": "Dillahunty asks for a mechanism distinguishing perfect from nearly perfect minds and presses the need to establish possibility, creative capacity, and responsibility for this universe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-single-universe-origin-underdetermination",
+          "sectionId": "section-creator-coherence-burden",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Evidence confined to one universe cannot identify what lies beyond spacetime or distinguish creation by a perfect mind from natural origins or creation by imperfect minds.",
+          "sourceSpan": {
+            "startEvent": 517,
+            "endEvent": 580,
+            "excerpt": "a position where the god believers have firmly placed their deity beyond our ability to investigate. It's bad enough that spacetime is outside our ability to investigate, but so is, as far as I can tell, a perfect mind. How do you tell the difference between a perfect mind and a mind that's almost perfect? How do you tell when the universe is the result of any mind, let alone a"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt continues his timed response without interruption, using a confined-room analogy to develop an epistemic objection to Zac's creator inference.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-identification-causation"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-cumulative-observational-fit",
+              "pro-foundational-simplicity"
+            ],
+            "components": [
+              {
+                "componentId": "con-single-universe-origin-underdetermination-component-01",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Evidence from one universe cannot distinguish a perfect mind from natural or imperfect-mind origins.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-single-universe-origin-underdetermination-component-02",
+                "targetMoveId": "pro-foundational-simplicity",
+                "text": "An inaccessible foundation cannot be identified as the specifically perfect and comparatively simpler option.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies underdetermination among origin hypotheses and states that confinement to one universe defeats the claimed creator identification."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The epistemic limitation and the rival origins it affects are stated clearly."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker qualifies claims with 'as far as I can tell,' but sometimes moves from limited access toward a stronger inability conclusion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A single observed universe can still discriminate hypotheses through likelihood relations without observing other universes.",
+            "decisiveQualification": "Such discrimination requires independently justified likelihoods and sufficiently specified rival hypotheses."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It strongly supports the central identification-and-causation burden."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The objection fairly preserves the possibility of indirect inference only implicitly and leans heavily on direct investigability."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly contacts the inference from observed universe to perfect creator, though it addresses the simplicity thesis less completely."
+            }
+          },
+          "evidenceBasis": "Dillahunty says spacetime and the proposed perfect mind are outside available investigation and asks how one could distinguish a perfect mind, an almost-perfect mind, or any mind as the universe's source.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-agents-without-theistic-multiplication",
+          "sectionId": "section-simplicity-foundations",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Theism is not demonstrably simpler because it adds an unnecessary entity, while interacting and adapted agents already account for morality, beauty judgments, belief, meaning, and purpose.",
+          "sourceSpan": {
+            "startEvent": 622,
+            "endEvent": 697,
+            "excerpt": "simplicity. It's about multiplying entities unnecessarily. Um and theism has no explanatory power. It doesn't have better explanatory power. I'll get into the how and why of all these in in the discussion, but the key here, I think, uh, is when Zach listed off the list of things that are more likely on theism, it's moral agency, moral knowledge, a good and beautiful world, uh, free agents, theistic belief, fine-tuning, meaning, and purpose"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt explicitly turns to Zac's simplicity and explanatory-power assertions and systematically addresses the list given in the preceding opening.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-foundational-simplicity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-foundational-simplicity",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-agents-without-theistic-multiplication-component-01",
+                "targetMoveId": "pro-foundational-simplicity",
+                "text": "Adding theism is not simpler when interacting agents already account for the cited phenomena without an extra entity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-agents-without-theistic-multiplication-component-02",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Morality, beauty judgments, belief, meaning, and purpose can arise from agents rather than uniquely supporting theism.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly disputes the simplicity comparison and begins an alternative-agent account of the observational list."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The parsimony objection is clear, but the claimed scope of agent explanations across the entire observational list is compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical assertion that theism has no explanatory power is stronger than the brief support supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Theism may posit one simple foundation rather than adding an entity to an otherwise complete agent-based account.",
+            "decisiveQualification": "Entity count alone does not decide simplicity; the content and auxiliary commitments of both foundations must be compared."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central foundational-simplicity bridge."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Both earlier central claims are contacted, though the alternative explanations are announced more than developed in this span."
+            }
+          },
+          "evidenceBasis": "Dillahunty invokes unnecessary multiplication, denies superior theistic explanatory power, and says the listed moral and evaluative phenomena can be addressed through agents.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-rival-origin-comparison",
+          "sectionId": "section-creator-coherence-burden",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Perfect, imperfect, evil, and mindless origin hypotheses should be compared by theoretical virtues, with imperfect-mind alternatives incurring additional complexity relative to a perfect mind.",
+          "sourceSpan": {
+            "startEvent": 786,
+            "endEvent": 818,
+            "excerpt": "imperfect mind. Let's bring the evil mind. Um let's say there's no mind and we need different theories. And I'm going to say like when we compare the theories like whatever we bring out like I think my model is the best theory. Um so maybe like maybe like a less than perfect mind. I would say that's just a more complex hypothesis that's going to hurt take a hit on simplicity um"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Zac resumes after a brief terminology exchange and directly answers Matt's challenge about distinguishing perfect from imperfect creator hypotheses.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-identification-causation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-creator-identification-causal-burden",
+              "con-single-universe-origin-underdetermination",
+              "con-agents-without-theistic-multiplication"
+            ],
+            "components": [
+              {
+                "componentId": "pro-rival-origin-comparison-component-01",
+                "targetMoveId": "con-creator-identification-causal-burden",
+                "text": "Perfect, imperfect, evil, and mindless origins can be distinguished comparatively through theoretical virtues rather than direct detection alone.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-rival-origin-comparison-component-02",
+                "targetMoveId": "con-single-universe-origin-underdetermination",
+                "text": "The availability of rival theories permits comparison even when the origin is not directly observable.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-rival-origin-comparison-component-03",
+                "targetMoveId": "con-agents-without-theistic-multiplication",
+                "text": "A less-than-perfect creator allegedly adds complexity relative to a perfect foundational mind.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the identification and underdetermination demands by proposing comparative theory choice, but it only asserts that imperfection adds complexity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparison proposal is clear, but 'best theory' and the complexity measure remain underspecified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Repeated hedging moderates the claim, though the asserted complexity cost of imperfection lacks a supplied derivation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The skeptical demand is for justified discriminators, not necessarily direct observation of the creator.",
+            "decisiveQualification": "Naming theoretical virtues answers that demand only if their application to the rival origins is defended."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central identification-and-causation burden."
+            },
+            "representationalCharity": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts multiple decisive objections but leaves the criterion and the claimed perfect-mind advantage materially undeveloped."
+            }
+          },
+          "evidenceBasis": "Sechler proposes comparing perfect, imperfect, evil, and mindless origin theories and says a less-than-perfect mind takes a simplicity penalty.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-hidden-omnipotent-box-complexity",
+          "sectionId": "section-simplicity-foundations",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "An untestable entity capable of anything and hidden beyond spacetime is an added complex commitment, not a simple explanation, and it does not uniquely predict observer-relative beauty.",
+          "sourceSpan": {
+            "startEvent": 819,
+            "endEvent": 894,
+            "excerpt": "simple hypothesis at all. That is incredibly complex hypothesis. What you're saying is there's a magical box out there outside of spaceime or wherever you're going to place it. I'm not trying to put words in your mouth. That can do anything and everything. And that becomes the explanation, the best explanation. And if there is a magical box out there, here's what we'd expect. That doesn't make it simpler. It just makes it more hidden"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt takes the next uninterrupted turn, first clarifying hypothesis terminology and then applying his objections to beauty and simplicity through the delivered lookahead.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-foundational-simplicity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-rival-origin-comparison",
+              "pro-foundational-simplicity",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-hidden-omnipotent-box-complexity-component-01",
+                "targetMoveId": "pro-rival-origin-comparison",
+                "text": "A hidden entity able to do anything is not established as the simplest rival and lacks distinctive predictions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-hidden-omnipotent-box-complexity-component-02",
+                "targetMoveId": "pro-foundational-simplicity",
+                "text": "The perfect-mind proposal adds a complex, untestable commitment rather than eliminating complexity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-hidden-omnipotent-box-complexity-component-03",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Observer-relative beauty is not uniquely predicted by an unrestricted hidden cause.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly contests the simplicity metric and predictive distinctiveness used by the pro comparative case."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The objection is recoverable, but 'can do anything,' 'complex,' and 'magical box' blur omnipotence, information content, and testability."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling the hypothesis incredibly complex is categorical despite the absence of an explicit complexity measure."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A perfect mind may be metaphysically simple despite having maximal power and being beyond spacetime.",
+            "decisiveQualification": "Maximal power alone does not entail descriptional complexity, but unrestricted accommodation weakens predictive discrimination unless intentions are specified."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (60 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central foundational-simplicity bridge."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (62 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the central simplicity claim and a key observational example, though the magical-box analogy does not fully model the strongest perfect-mind hypothesis."
+            }
+          },
+          "evidenceBasis": "Dillahunty characterizes the proposal as a hidden box outside spacetime able to do anything and argues that this neither makes the account simple nor yields distinctive expectations.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-moral-agent-expectedness",
+          "sectionId": "section-explanatory-fit",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Embodied conscious moral agents are more probable if a morally perfect mind created the universe than if fundamental reality is indifferent to their existence.",
+          "sourceSpan": {
+            "startEvent": 895,
+            "endEvent": 946,
+            "excerpt": "atheistic theory. So um saying that like a perfect mind created the universe um this being is like perfect. So it's morally perfect. Um, so if it's morally perfect, I would say that he would care about the existence of moral agents. Um, the existence of moral agents would be more likely under this hypothesis than a view of the world where fundamental reality is just indifferent"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn explicitly addresses Matt by name and presents the perfect-mind hypothesis as the speaker's own proposed explanation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-attribute-connection"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-hidden-omnipotent-box-complexity",
+              "con-agents-without-theistic-multiplication",
+              "con-creator-identification-causal-burden"
+            ],
+            "components": [
+              {
+                "componentId": "pro-moral-agent-expectedness-component-01",
+                "targetMoveId": "con-hidden-omnipotent-box-complexity",
+                "text": "Moral perfection supplies at least one attribute-based prediction: a perfect creator would care about moral agents.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-moral-agent-expectedness-component-02",
+                "targetMoveId": "con-agents-without-theistic-multiplication",
+                "text": "An indifferent foundation allegedly makes embodied conscious moral agents less expected than a morally perfect creator does.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-moral-agent-expectedness-component-03",
+                "targetMoveId": "con-creator-identification-causal-burden",
+                "text": "The moral attribute is offered as a principled link between the creator hypothesis and an observable consequence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies an attribute-to-observation bridge and comparative claim, directly addressing lack of predictive content, though not the simplicity objection itself."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The conditional claim is clear and stable; the main omitted qualification concerns other consequences of moral perfection."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The comparative direction is plausible but stated without a model of intentions or the indifferent alternative."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Interacting natural agents can exist under an indifferent foundation, and a morally perfect creator need not choose to create them.",
+            "decisiveQualification": "Possibility under either view is insufficient; the relative likelihood depends on specified intentions and a non-theistic baseline."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central divine-attribute connection."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The response accurately targets the residual existence question while leaving the strength of its comparative prediction underdeveloped."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It contacts the decisive predictive challenge but does not justify the comparative baseline or fully answer the complexity concern."
+            }
+          },
+          "evidenceBasis": "Sechler argues that a morally perfect creator would care about moral agents and that their existence is therefore likelier than under indifferent fundamental reality.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-full-moral-evidential-profile",
+          "sectionId": "section-counterevidence-expectations",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Any prediction of moral agents from a morally perfect creator must be assessed alongside moral disagreement, changing moral views, divine hiddenness, and the absence of corrective moral guidance.",
+          "sourceSpan": {
+            "startEvent": 977,
+            "endEvent": 1003,
+            "excerpt": "perfect understanding of morality? Why wouldn't that god also interact to make sure those agents don't disagree about what moral views are and things like that? We're skipping past all of the problems, all of the things that seem to be um counterindicators and and potentially defeaters for the proposition and focusing only on one simple thing. If God, then people. But that that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted turn follows Zac's confirmation and directly challenges the expected consequences of Zac's morally perfect creator hypothesis.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-hiddenness-imperfection"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-moral-agent-expectedness",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-full-moral-evidential-profile-component-01",
+                "targetMoveId": "pro-moral-agent-expectedness",
+                "text": "The moral-agent prediction is selectively evaluated unless disagreement, moral change, hiddenness, and absent corrective guidance are included.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-full-moral-evidential-profile-component-02",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "The cumulative favorable list omits potentially defeating expectations generated by moral perfection.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses selective evidence and states the defeating consequence: 'if God, then people' cannot establish support without the rest of the moral profile."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The omitted evidence and its bearing on the conditional inference are clearly identified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker frames the points as questions and potential defeaters rather than claiming they conclusively disprove the hypothesis."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The existence of moral agents might provide a small positive increment even if other moral facts count against theism overall.",
+            "decisiveQualification": "A local likelihood contribution is possible, but it must be distinguished from the net evidential force of the full profile."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The anti-selection inference is explicit and consistent, with only a bounded ambiguity between local and net evidential support."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "It names specific contrary observations and explains why they are generated by the same moral-perfection premise."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary hiddenness-and-imperfection bridge."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly attacks the decisive inference and names the omitted counterindicators."
+            }
+          },
+          "evidenceBasis": "Dillahunty asks why a perfect God would not ensure moral understanding and interaction, and charges the pro case with skipping disagreement and other counterindicators.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-counterevidence-increment",
+          "sectionId": "section-counterevidence-expectations",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Even granting suffering, hiddenness, moral disagreement, and moral change as counterevidence, the existence of moral agents can still contribute some evidence for a perfect mind.",
+          "sourceSpan": {
+            "startEvent": 1004,
+            "endEvent": 1035,
+            "excerpt": "existence of God. And I could say like like for now I could say like sure Matt let's just say that like suffering and like changing morality and disagreement let's say these all count against God. All I'm trying to say right now at this point in the context of debate is say like even if it's like really really really really tiny like there is some evidence for God because of moral agents"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker addresses Matt, accepts several named counterconsiderations provisionally, and restates his own limited evidential objective.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-counterevidence-accommodation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-full-moral-evidential-profile"
+            ],
+            "components": [
+              {
+                "componentId": "pro-counterevidence-increment-component-01",
+                "targetMoveId": "con-full-moral-evidential-profile",
+                "text": "Even if the named counterevidence counts against God, moral agents may retain a small positive evidential increment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply concedes the contrary evidence and narrows the claim to a tiny positive increment, but it does not demonstrate the required likelihood inequality."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move repeatedly restricts its conclusion to some possibly tiny evidential contribution."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The very limited asserted force matches the limited support and expressly concedes major counterevidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The con objection concerns the net evidential profile rather than denying that moral agents could supply any local increment.",
+            "decisiveQualification": "A local increment does not establish that the total moral evidence or overall worldview comparison favors theism."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports accommodation of counterevidence at the subsidiary level."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The reply accurately narrows its claim while expressly granting the decisive net-evidence qualification."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It contacts the decisive net-versus-increment distinction, while leaving the central probabilistic warrant unanswered."
+            }
+          },
+          "evidenceBasis": "Sechler grants suffering, changing morality, and disagreement as evidence against God while limiting his claim to a possibly very small positive contribution from moral agents.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-unspecified-likelihood-comparison",
+          "sectionId": "section-likelihood-method",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "The probability of moral agents under generic perfect-mind theism cannot be assessed without specifying the creator's intentions and supplying a justified non-theistic comparison class.",
+          "sourceSpan": {
+            "startEvent": 1111,
+            "endEvent": 1137,
+            "excerpt": "also I don't have any we have one universe and we have one set of facts to assess and what we know is that there are conscious agents. Um I have no way of evaluating whether that's more likely on I mean I need a more specific theism. If your proposition is there is a theistic god that wants to create moral agents, well then yes, it's more likely on that hypothesis um than it is"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response directly answers Zac's probability question and consistently speaks from Matt's skeptical position about available comparative information.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-probability-comparison"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-counterevidence-increment",
+              "pro-moral-agent-expectedness",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-unspecified-likelihood-comparison-component-01",
+                "targetMoveId": "pro-counterevidence-increment",
+                "text": "Even a small positive increment cannot be assessed without specifying divine intentions and the non-theistic comparison class.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-unspecified-likelihood-comparison-component-02",
+                "targetMoveId": "pro-moral-agent-expectedness",
+                "text": "Moral perfection alone does not determine the probability of creating moral agents without a more specific intention claim.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-unspecified-likelihood-comparison-component-03",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Generic theism is too underspecified to ground the broader asserted likelihood comparisons.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies missing hypothesis specification and baseline probability as defects that block the asserted evidential increment."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between generic theism and a creator intending moral agents is precise, as is the baseline objection."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The demand for specified hypotheses and comparison classes is proportionate to a comparative-likelihood assertion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Moral perfection itself may provide qualitative reason to expect concern for moral agents without a detailed intention model.",
+            "decisiveQualification": "Concern does not uniquely fix a decision to create, and qualitative support still requires comparison with a specified alternative."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The argument cleanly distinguishes conditional entailment under a specified intention from unsupported probability under generic theism."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The conceptual likelihood warrant is specific and includes a limiting concession, though it does not offer a formal probability model."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central probability-comparison bridge."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly addresses the decisive probability inference and states exactly what information is missing."
+            }
+          },
+          "evidenceBasis": "Dillahunty says he cannot evaluate the likelihood from one set of facts and distinguishes generic theism from the specific hypothesis of a God who wants moral agents.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-competing-foundations",
+          "sectionId": "section-simplicity-foundations",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Rejecting gods does not eliminate the need for a foundational account of why anything exists, so theism and non-theism should be compared as competing foundational hypotheses.",
+          "sourceSpan": {
+            "startEvent": 1271,
+            "endEvent": 1300,
+            "excerpt": "foundational like initial state. Um, that's going to create everything. Um and like Kenny Pearson in that debate book pushes back and says like hey like this theistic theory um is do a better job explaining these things like you may say like sure there's zero gods and I may say yeah there's one god um but in place of like that question of like explaining like why is there anything"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn contrasts Matt's zero-god stance with Zac's one-god stance and cites a theistic account as the speaker's preferred explanatory competitor.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-foundational-simplicity"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-agents-without-theistic-multiplication",
+              "con-hidden-omnipotent-box-complexity",
+              "con-unspecified-likelihood-comparison"
+            ],
+            "components": [
+              {
+                "componentId": "pro-competing-foundations-component-01",
+                "targetMoveId": "con-agents-without-theistic-multiplication",
+                "text": "Zero gods does not remove the need for a foundational explanation of why anything exists.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-competing-foundations-component-02",
+                "targetMoveId": "con-hidden-omnipotent-box-complexity",
+                "text": "Theistic and non-theistic foundations should be compared rather than treating theism solely as an added entity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-competing-foundations-component-03",
+                "targetMoveId": "con-unspecified-likelihood-comparison",
+                "text": "The move shifts from local likelihoods to comparison of overarching foundational hypotheses.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly challenges the added-entity framing by insisting that both sides bear foundational commitments, but does not supply the promised superior explanation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative-foundation point is clear, but the relevant non-theistic initial state and explanatory criteria are not specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move modestly proposes a comparative framing and does not claim to have completed the comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The skeptical position may withhold commitment rather than posit a single atheistic foundational theory.",
+            "decisiveQualification": "A comparative theistic argument may examine explicit non-theistic rivals, but it cannot assign one unsupported foundation to all non-theism."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central foundational-simplicity comparison."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive parsimony framing but answers only secondarily, not the later demand for specified comparative probabilities."
+            }
+          },
+          "evidenceBasis": "Sechler contrasts zero gods with one God and argues that each position still needs a foundational initial-state account explaining why anything exists.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-comparative-rational-standard",
+          "sectionId": "section-likelihood-method",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Rational belief need not require conclusive demonstration when greater expectedness of observations and comparative simplicity jointly provide reason to prefer theism.",
+          "sourceSpan": {
+            "startEvent": 1404,
+            "endEvent": 1432,
+            "excerpt": "say like God exists, I'm saying like my two simple claims. There's things that have like they're more expected if God exists than if God does not exist and theism simpler than atheism. And those two things are going to push us in favor of theism. And I disagree with those, but like I think if those two claims are true, then we have really good reason to be a theist over um some"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explains why he asked about demonstration and explicitly summarizes his own case as comparative expectation plus theism's simplicity.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-preference"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-unspecified-likelihood-comparison",
+              "con-creator-identification-causal-burden",
+              "con-single-universe-origin-underdetermination",
+              "con-agents-without-theistic-multiplication"
+            ],
+            "components": [
+              {
+                "componentId": "pro-comparative-rational-standard-component-01",
+                "targetMoveId": "con-unspecified-likelihood-comparison",
+                "text": "The appropriate conclusion is comparative rational preference from expectedness and simplicity, not conclusive demonstration.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-comparative-rational-standard-component-02",
+                "targetMoveId": "con-creator-identification-causal-burden",
+                "text": "Direct demonstration is rejected as unnecessarily strong for an abductive worldview comparison.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-comparative-rational-standard-component-03",
+                "targetMoveId": "con-single-universe-origin-underdetermination",
+                "text": "A single universe can still provide comparative evidence if the two likelihood and simplicity premises are true.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-comparative-rational-standard-component-04",
+                "targetMoveId": "con-agents-without-theistic-multiplication",
+                "text": "Theism's alleged simplicity remains one of the two premises supporting preference.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply justifies an abductive replacement standard that preserves the need for comparative support, but it conditionally assumes rather than demonstrates the disputed premises."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conclusion is explicitly conditional on the truth of two identified comparative premises."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The strong rational-preference claim is explicitly conditional rather than presented as already established."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The con challenge may demand justified comparison rather than conclusive demonstration.",
+            "decisiveQualification": "Lowering the standard does not relieve the pro side of supporting the likelihood and simplicity premises."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It expressly connects the two central premises to the motion-level preference conclusion."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The move fairly states its conditional standard, although it only implicitly acknowledges that the con demand can survive within that standard."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It clearly corrects an overly conclusive standard while preserving comparative burdens, though it does not answer the missing-likelihood basis."
+            }
+          },
+          "evidenceBasis": "Sechler disclaims conclusive demonstration and says that greater expectedness plus greater simplicity, if true, provide very good reason to prefer theism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-explanation-requires-understood-mechanism",
+          "sectionId": "section-explanatory-fit",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "A perfect-mind hypothesis does not increase understanding unless it supplies a better-understood mechanism; invoking an undefined supernatural cause merely relocates the unexplained phenomenon.",
+          "sourceSpan": {
+            "startEvent": 1803,
+            "endEvent": 1848,
+            "excerpt": "to that explanation. We explain things in terms of other things that we understood better. At no point can it be considered an explanation to say what's the explanation for this and then appeal to something that we do not understand. You can't say the explanation for this is magic. And so the theistic proposition or the notion that there the hypothesis that there there is a god"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator hands the discussion to Matt, and the uninterrupted first-person argument continues until Zac begins his response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-explanatory-distinction"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-comparative-rational-standard",
+              "pro-competing-foundations",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-explanation-requires-understood-mechanism-component-01",
+                "targetMoveId": "pro-comparative-rational-standard",
+                "text": "Calling theism the better explanation fails unless the proposed cause increases understanding through an intelligible explanatory connection.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-explanation-requires-understood-mechanism-component-02",
+                "targetMoveId": "pro-competing-foundations",
+                "text": "A foundational label does not explain why anything exists if the foundation itself is less understood than the phenomenon.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-explanation-requires-understood-mechanism-component-03",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "An undefined supernatural cause merely relocates rather than explains the listed observations.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses the failure of an unexplained appeal to magic or an undefined supernatural cause to increase understanding."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The intelligibility demand is clear, but the universal claim that explanation must invoke something better understood is somewhat broad."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical rule that explanation cannot appeal to something less understood is too strong for all legitimate theoretical explanation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An explanans can be indirectly supported and explanatorily powerful even when its internal mechanism is not fully understood.",
+            "decisiveQualification": "It must still supply constraints, connections, or predictions that improve understanding rather than merely rename the unknown."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The anti-relabelling point is sound, but the universal premise that explanations must invoke better-understood things is substantially unsupported and overbroad."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central explanatory-distinction bridge."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly attacks the claimed explanatory inference and states the alleged defeating consequence."
+            }
+          },
+          "evidenceBasis": "Dillahunty argues that explanations normally proceed through better-understood things and that appealing to an undefined supernatural or magical source merely moves the unexplained fact.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-top-down-worldview-method",
+          "sectionId": "section-creator-coherence-burden",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Perfect-mind theism should be assessed as a top-down worldview whose overall fit with experienced reality is compared with that of competing overarching theories.",
+          "sourceSpan": {
+            "startEvent": 1849,
+            "endEvent": 1876,
+            "excerpt": "like you're trying to go more bottom up and I'm saying more let's start at the top like we have these different like overarching theories of the world where I'm going to say there's a perfect mind and then there's different theories and I'm saying if you compare the theories starting from the top and going down like I think that theistic theory just best explains everything we"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Zac explicitly distinguishes his comparative, top-down method from Matt's bottom-up approach in a continuous turn.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-explanatory-distinction"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-explanation-requires-understood-mechanism",
+              "con-creator-identification-causal-burden",
+              "con-unspecified-likelihood-comparison",
+              "con-single-universe-origin-underdetermination"
+            ],
+            "components": [
+              {
+                "componentId": "pro-top-down-worldview-method-component-01",
+                "targetMoveId": "con-explanation-requires-understood-mechanism",
+                "text": "The proposed explanatory test is overall top-down worldview fit, not a bottom-up causal mechanism for each observation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-top-down-worldview-method-component-02",
+                "targetMoveId": "con-creator-identification-causal-burden",
+                "text": "Perfect-mind theism is presented as an overarching theory to compare rather than an independently detected entity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-top-down-worldview-method-component-03",
+                "targetMoveId": "con-unspecified-likelihood-comparison",
+                "text": "Comparison of overarching theories is proposed, but the specific probabilities remain unmodeled.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-top-down-worldview-method-component-04",
+                "targetMoveId": "con-single-universe-origin-underdetermination",
+                "text": "Overall experiential fit is offered as a way to compare origins despite direct observational limits.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The move justifies a worldview-level replacement test that preserves explanatory comparison, but it does not show that global fit can dispense with intelligible connecting warrants."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The top-down versus bottom-up distinction is clear, and the speaker explicitly retreats from explaining literally everything."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker corrects 'everything' to a more comparative claim, but superior overall fit is still asserted without criteria."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The mechanism objection need not privilege bottom-up inquiry; it can ask any worldview to provide intelligible links between its foundation and observations.",
+            "decisiveQualification": "Global fit is a legitimate standard only when the connecting relations and rival comparison are specified."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "Whole-worldview comparison is a coherent explanatory method, but the move leaves the bridge from method to theism's superior fit implicit."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the con central explanatory-distinction demand."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It meaningfully reframes the methodological demand but supplies only a general assertion of superior fit."
+            }
+          },
+          "evidenceBasis": "Sechler contrasts top-down overarching theories with a bottom-up approach and says perfect-mind theism has the best overall fit with experienced reality, while qualifying an initial claim to explain everything.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-differential-expectedness",
+          "sectionId": "section-likelihood-method",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Observed facts favor theism when their conditional probability is higher under theism than under atheism, even when atheism remains compatible with those facts.",
+          "sourceSpan": {
+            "startEvent": 2039,
+            "endEvent": 2059,
+            "excerpt": "theism are more likely than the hypothesis of atheism. And when we look at these facts and see they exist since I since we believe that like since I think we can make arguments that there's good reason to think that there's pro the probability of them is higher on theism like since they exist like they're going to be evidence in favor of theism which just pushes us towards that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Zac repeatedly states the comparative-probability principle and its evidential conclusion in an uninterrupted answer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-probability-comparison"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-explanation-requires-understood-mechanism",
+              "con-unspecified-likelihood-comparison",
+              "con-single-universe-origin-underdetermination",
+              "con-agents-without-theistic-multiplication"
+            ],
+            "components": [
+              {
+                "componentId": "pro-differential-expectedness-component-01",
+                "targetMoveId": "con-explanation-requires-understood-mechanism",
+                "text": "Evidence can favor theism through higher conditional expectedness even if atheism remains compatible with the observed facts.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-differential-expectedness-component-02",
+                "targetMoveId": "con-unspecified-likelihood-comparison",
+                "text": "The move states the required comparative-probability form but does not supply the requested non-theistic model.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-differential-expectedness-component-03",
+                "targetMoveId": "con-single-universe-origin-underdetermination",
+                "text": "Observed facts can discriminate hypotheses by likelihood rather than by logical incompatibility.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-differential-expectedness-component-04",
+                "targetMoveId": "con-agents-without-theistic-multiplication",
+                "text": "Compatibility with an agent-based account does not alone eliminate possible differential support.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply correctly identifies differential expectedness as the relevant evidential form, answering compatibility objections, but it does not establish the contested likelihood inequality."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The likelihood principle is clearly stated; the particular facts and hypothesis specifications remain implicit from prior context."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The conditional evidential rule is sound, but the speaker moves toward actual support without supplying the promised probability arguments here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The con position can grant likelihood-ratio reasoning while denying that either conditional probability has been justified.",
+            "decisiveQualification": "Stating the correct evidential form does not establish the likelihood inequality needed to apply it."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (60 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central con probability-comparison burden by stating a comparative evidential rule."
+            },
+            "representationalCharity": {
+              "value": 77,
+              "rationale": "The move fairly frames the dispute probabilistically but insufficiently engages the strongest epistemic objection to application."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive inference form while leaving the primary empirical and modeling demand unanswered."
+            }
+          },
+          "evidenceBasis": "Sechler says facts favor theism when their probability is higher under theism than atheism and treats their existence as evidence once that inequality is accepted.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-no-modeled-nontheistic-probability",
+          "sectionId": "section-likelihood-method",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Greater likelihood under theism has not been established because no non-theistic model was used to estimate the probability of agents and no comparative universes are available for that estimate.",
+          "sourceSpan": {
+            "startEvent": 2150,
+            "endEvent": 2173,
+            "excerpt": "You haven't demonstrated that at all because at no point have you looked at the model that does not have a god and and determined how likely a an agent is under that model. And since we only have the one universe, we we know the probability of it happening is one. We don't have any example of a universe where agents don't exist. And so how do you determine the likelihood of that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt states the probabilistic objection in a continuous turn, contrasting asserted divine expectations with the missing atheistic baseline.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-probability-comparison"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-differential-expectedness",
+              "pro-top-down-worldview-method",
+              "pro-comparative-rational-standard",
+              "pro-moral-agent-expectedness",
+              "pro-cumulative-observational-fit"
+            ],
+            "components": [
+              {
+                "componentId": "con-no-modeled-nontheistic-probability-component-01",
+                "targetMoveId": "pro-differential-expectedness",
+                "text": "The asserted likelihood inequality is unsupported because no non-theistic model was used to estimate the probability of agents.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-modeled-nontheistic-probability-component-02",
+                "targetMoveId": "pro-top-down-worldview-method",
+                "text": "Claiming superior worldview fit does not supply a comparative baseline or modeled likelihood.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-modeled-nontheistic-probability-component-03",
+                "targetMoveId": "pro-comparative-rational-standard",
+                "text": "A comparative rational standard still requires support for its probability premise.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-modeled-nontheistic-probability-component-04",
+                "targetMoveId": "pro-moral-agent-expectedness",
+                "text": "The moral-agent likelihood claim lacks a justified non-theistic denominator.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-modeled-nontheistic-probability-component-05",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "The broader observational package inherits the same missing comparative model.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply explicitly identifies the absent baseline and states that the pro side has therefore not demonstrated greater likelihood."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The missing model, target observation, and comparative consequence are all clearly stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The claim that the inequality was not demonstrated is well supported, but saying the observed event's probability is one conflates observed actuality with the antecedent chance at issue."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Conditional probabilities can sometimes be qualitatively compared from theory without a frequency of universes.",
+            "decisiveQualification": "Qualitative comparison still needs specified models and defended expectation-generating assumptions; repeated universes are not strictly required."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The reply specifically identifies an absent model in the pro presentation, though the ensemble rationale is not itself fully warranted."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central probability-comparison bridge."
+            },
+            "representationalCharity": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly targets the decisive comparative premise and explains the precise modeling omission."
+            }
+          },
+          "evidenceBasis": "Dillahunty says no godless model was examined to determine agent likelihood and challenges how the comparative probability was derived from only one observed universe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-hiddenness-goods",
+          "sectionId": "section-counterevidence-expectations",
+          "side": "pro",
+          "speaker": "Zac Sechler",
+          "moveKind": "reply",
+          "proposition": "Divine hiddenness is compatible with theism if epistemic certainty is not God's goal and limited disclosure enables goods such as seeking, relationship, love, and participation.",
+          "sourceSpan": {
+            "startEvent": 2553,
+            "endEvent": 2576,
+            "excerpt": "like looking at divine hiddenness, I would say that there's certain goods um that come from divine hiddenenness um that would make sense of like divine hiddenenness. like thinking about things like people seeking God is good or people coming together with each other is a good thing. Um and there's questions like is God's goal for us to have epistemic certainty? Um surely not or"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response presents a first-person theistic defense, and its vocabulary and position align with Zac Sechler's perfect-mind case throughout the debate.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-counterevidence-accommodation"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-full-moral-evidential-profile",
+              "con-no-modeled-nontheistic-probability",
+              "con-explanation-requires-understood-mechanism"
+            ],
+            "components": [
+              {
+                "componentId": "pro-hiddenness-goods-component-01",
+                "targetMoveId": "con-full-moral-evidential-profile",
+                "text": "Limited divine disclosure may enable seeking, relationship, love, participation, and other goods.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-hiddenness-goods-component-02",
+                "targetMoveId": "con-no-modeled-nontheistic-probability",
+                "text": "The reply concerns hiddenness goods rather than supplying the requested non-theistic likelihood model.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-hiddenness-goods-component-03",
+                "targetMoveId": "con-explanation-requires-understood-mechanism",
+                "text": "Specific proposed goods provide a possible explanatory connection for hiddenness.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly answers the hiddenness component with proposed goods and a non-certainty goal, but establishes compatibility more than comparative probability."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The proposed goods and limited divine goal are clear, while the amount and distribution of hiddenness remain implicitly qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The response offers possible goods rather than claiming a conclusive theodicy, which fits the limited warrant supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A good God could enable seeking, love, and relationship while providing much clearer evidence and guidance.",
+            "decisiveQualification": "The defense must explain why the observed degree and distribution of ambiguity are needed for the cited goods."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly supports the subsidiary counterevidence-accommodation bridge and ranks high within that tier."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive hiddenness demand but only partially answers because the necessity and proportionality of hiddenness are not defended."
+            }
+          },
+          "evidenceBasis": "Sechler says hiddenness may enable seeking God and people coming together and questions whether epistemic certainty is among God's goals.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-good-god-disclosure-expectation",
+          "sectionId": "section-counterevidence-expectations",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "A morally good God should provide compelling evidence and clear expectations, whereas persistent evidential ambiguity and a model on which belief has no consequence undermine the proposed deity's explanatory role.",
+          "sourceSpan": {
+            "startEvent": 2577,
+            "endEvent": 2606,
+            "excerpt": "an afterlife in the first place, let alone that we know what it is that qualifies or anything else. But if there was a morally good God, um then that morally good God should provide convincing arguments, compelling evidence, should show what it expects of you. So right now um under Zach's model where it makes no difference whether or not I reach a conclusion about the origin of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker refers to Zac's model in the third person and advances the skeptical divine-hiddenness critique characteristic of Matt Dillahunty's position.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-hiddenness-imperfection"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-hiddenness-goods",
+              "pro-counterevidence-increment",
+              "pro-moral-agent-expectedness"
+            ],
+            "components": [
+              {
+                "componentId": "con-good-god-disclosure-expectation-component-01",
+                "targetMoveId": "pro-hiddenness-goods",
+                "text": "A morally good God should provide compelling evidence and clear expectations despite any alleged goods from uncertainty.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-good-god-disclosure-expectation-component-02",
+                "targetMoveId": "pro-counterevidence-increment",
+                "text": "Persistent ambiguity is offered as counterevidence relevant to the full balance rather than merely a conceded background fact.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-good-god-disclosure-expectation-component-03",
+                "targetMoveId": "pro-moral-agent-expectedness",
+                "text": "Moral perfection is said to generate disclosure and guidance expectations, not merely an expectation of moral agents.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly challenges the hiddenness-goods defense with a contrary disclosure expectation and questions the explanatory role of a deity when belief has no consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The disclosure expectation is clear, though compelling evidence and morally good are not further specified in degree."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "A disclosure expectation plausibly follows from moral goodness, but the strength and form of evidence are not uniquely derived."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A good God may value noncoercive seeking, freely formed relationship, or epistemic distance over compelling disclosure.",
+            "decisiveQualification": "Those goods must be shown to require the actual ambiguity and to outweigh the harms of absent guidance."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary hiddenness-and-imperfection bridge at high relevance."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the decisive good-God expectation, though it does not fully compare clearer disclosure with every proposed hiddenness good."
+            }
+          },
+          "evidenceBasis": "Dillahunty argues that a morally good God should provide compelling evidence and state expectations, and that persistent ambiguity weakens the deity's explanatory role.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-agent-interaction-fallibility-account",
+          "sectionId": "section-explanatory-fit",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Moral practices arise when agents share space and regulate interaction, while fallible minds predictably generate ideas about perfect beings, fine-tuning, meaning, and purpose.",
+          "sourceSpan": {
+            "startEvent": 2677,
+            "endEvent": 2698,
+            "excerpt": "moral agents is that we have agents who interact. And as soon as you have two people who have to share space, that brings into it how are they going to act with respect to each other, which encompasses all of morality. Um, and when those are flawed minds, imperfect minds, the notion that they would come up with perfect theistic hypo or hypotheses about a perfect theistic being, uh, and notions like fine-tuning and meaning and purpose"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This continues Matt Dillahunty's uninterrupted closing statement and directly supplies his alternative account of Zac Sechler's cited evidential phenomena.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-alternative-account"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-cumulative-observational-fit",
+              "pro-moral-agent-expectedness",
+              "pro-differential-expectedness",
+              "pro-top-down-worldview-method"
+            ],
+            "components": [
+              {
+                "componentId": "con-agent-interaction-fallibility-account-component-01",
+                "targetMoveId": "pro-cumulative-observational-fit",
+                "text": "Interacting agents generate moral regulation, while fallible minds generate perfect-being and purpose concepts.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-agent-interaction-fallibility-account-component-02",
+                "targetMoveId": "pro-moral-agent-expectedness",
+                "text": "The account explains moral practices conditional on interacting agents but not the ultimate existence of agents.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-agent-interaction-fallibility-account-component-03",
+                "targetMoveId": "pro-differential-expectedness",
+                "text": "A concrete nontheistic rival account weakens the claim of distinctive theistic expectedness.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-agent-interaction-fallibility-account-component-04",
+                "targetMoveId": "pro-top-down-worldview-method",
+                "text": "The alternative covers several observations but does not provide a complete overarching origin worldview.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies a concrete fallible-agent account of morality and belief formation, though it does not fully explain consciousness, fine-tuning, or ultimate origins."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The interaction account is clear, but its extension to fine-tuning, meaning, and purpose is stated more broadly than developed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Interaction plausibly generates moral regulation, but the extension to all listed ideas and judgments is broader than the supplied warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Agent interaction may explain moral practices and belief formation while a perfect creator remains the ultimate reason such agents exist.",
+            "decisiveQualification": "A proximate agent account does not by itself exclude a theistic foundation, but it can reduce the observations' distinctive likelihood advantage."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central alternative-account bridge."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts several decisive observational-fit components but remains partial because major listed phenomena and the origin of agents are compressed."
+            }
+          },
+          "evidenceBasis": "Dillahunty argues that sharing space creates norms of interaction and that imperfect minds predictably generate perfect-being hypotheses and ideas about fine-tuning, meaning, and purpose.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified strengths and omissions are already represented in move ratings, response links, relevance, or section burdens.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require a distinct uncaptured consequence changing completion of a named pro burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No qualifying residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance",
+              "importance and section structure"
+            ],
+            "counterfactual": "Removing the already scored findings leaves no independent change to pro burden completion."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule for an additional con-side adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent residual completion criterion is present beyond the scored con moves and burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any cumulative con consequence is already represented by the individual move judgments and route bridges.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the alleged residual would not independently change completion of a named con burden bridge."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-creator-coherence-burden",
+          "title": "Perfect-Mind Coherence, Identification, and Causal Burden",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "pro-rival-origin-comparison",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-top-down-worldview-method",
+                  "importance": 3,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-creator-identification-causal-burden",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "con-single-universe-origin-underdetermination",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-simplicity-foundations",
+          "title": "Foundational Commitments and Comparative Simplicity",
+          "weightPercent": 19,
+          "sides": {
+            "pro": {
+              "score": 75,
+              "moves": [
+                {
+                  "moveId": "pro-foundational-simplicity",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-competing-foundations",
+                  "importance": 3,
+                  "score": 75
+                }
+              ]
+            },
+            "con": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "con-agents-without-theistic-multiplication",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-hidden-omnipotent-box-complexity",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-likelihood-method",
+          "title": "Comparative Likelihood and Evidential Method",
+          "weightPercent": 23,
+          "sides": {
+            "pro": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "pro-comparative-rational-standard",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "pro-differential-expectedness",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-unspecified-likelihood-comparison",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-no-modeled-nontheistic-probability",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-explanatory-fit",
+          "title": "Explanatory Power and Rival Accounts of Observed Features",
+          "weightPercent": 21,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-cumulative-observational-fit",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-moral-agent-expectedness",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "con-explanation-requires-understood-mechanism",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-agent-interaction-fallibility-account",
+                  "importance": 3,
+                  "score": 79
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-counterevidence-expectations",
+          "title": "Divine Attributes, Hiddenness, and Contrary Expectations",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-counterevidence-increment",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "pro-hiddenness-goods",
+                  "importance": 2,
+                  "score": 71
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-full-moral-evidential-profile",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "con-good-god-disclosure-expectation",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 78.87,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 83.21,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        }
+      },
+      "winner": "con",
+      "winningMargin": 4
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 20,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 128802,
+  "proposedAdapterSha256": "dc27dae99712d5c8a16156b43ac1890fc0a60a5e80859b883a200fc0745c73e5",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "88",
+    "sections": 5,
+    "moves": 20,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+    "adapterSha256": "dc27dae99712d5c8a16156b43ac1890fc0a60a5e80859b883a200fc0745c73e5",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

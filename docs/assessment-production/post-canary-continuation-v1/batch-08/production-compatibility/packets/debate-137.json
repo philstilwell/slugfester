@@ -1,0 +1,2136 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+  "status": "frozen-post-canary-batch-08-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "planningOnly": true,
+  "debateNumber": "137",
+  "debateId": "price-craig-resurrection-historical-analogy-1999",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-finalization/output-bundle/final-candidates/debate-137.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-08/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-08/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/Pba-YNVWaa0/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+    "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+    "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+    "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+    "finalCandidateSha256": "091543623b995bf5582e153d7cff747d21ce9339bbb698013a94461f1aa8bf8d",
+    "eventsPath": ".assessment-cache/captions/Pba-YNVWaa0/events.json",
+    "eventsSha256": "663ea716820801c648f453c2ad3248d6873d479b90fef67d836186941570aedd",
+    "finalJudgmentSha256": "4db775dfd7744925b2005e8f7d3266be5c1525d8ce6babb950c256a43f899544"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-08/production-compatibility/output-bundle/staged-ledgers/price-craig-resurrection-historical-analogy-1999.json",
+    "productionLedger": "docs/assessment-ledgers/price-craig-resurrection-historical-analogy-1999.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-08-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+    "status": "frozen-post-canary-batch-08-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 8,
+    "debateNumber": "137",
+    "debateId": "price-craig-resurrection-historical-analogy-1999",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+      "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+      "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+      "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+      "finalCandidateSha256": "091543623b995bf5582e153d7cff747d21ce9339bbb698013a94461f1aa8bf8d",
+      "eventsPath": ".assessment-cache/captions/Pba-YNVWaa0/events.json",
+      "eventsSha256": "663ea716820801c648f453c2ad3248d6873d479b90fef67d836186941570aedd",
+      "finalJudgmentSha256": "4db775dfd7744925b2005e8f7d3266be5c1525d8ce6babb950c256a43f899544"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-resurrection-case",
+          "side": "pro",
+          "description": "Establish the four claimed historical facts from early Christian materials, connect them as a cumulative evidential set, and show that divine resurrection explains that set more adequately than the proposed literary, visionary, or sociological alternatives.",
+          "successCriteria": "The route succeeds if the sources warrant burial, an empty tomb, postmortem appearances, and the disciples’ resurrection belief, and if God raising Jesus provides the best comparative explanation of those facts despite objections from historical analogy and source criticism.",
+          "motionBridge": {
+            "bridgeId": "bridge-pro-motion",
+            "tier": "motion",
+            "description": "Show that the earliest Christian sources establish all four specified facts and that God raising Jesus best explains their conjunction."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-pro-burial-empty-tomb",
+              "tier": "central",
+              "description": "Establish an identifiable burial and the subsequent discovery of an empty tomb from sufficiently early, independent, and historically credible traditions."
+            },
+            {
+              "bridgeId": "bridge-pro-appearances",
+              "tier": "central",
+              "description": "Establish that individuals and groups experienced appearances of Jesus after his death using authentic early testimony and historically usable narrative sources."
+            },
+            {
+              "bridgeId": "bridge-pro-resurrection-belief",
+              "tier": "central",
+              "description": "Explain why the earliest disciples sincerely adopted a specific resurrection belief despite the crucifixion and the surrounding Jewish expectations."
+            },
+            {
+              "bridgeId": "bridge-pro-best-explanation",
+              "tier": "central",
+              "description": "Demonstrate comparatively that divine resurrection accounts for the combined evidence better than legendary development, cultural borrowing, visions, or belief-preservation mechanisms."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-pro-source-proximity",
+              "tier": "subsidiary",
+              "description": "Defend the authenticity, early dating, and historical admissibility of Pauline traditions and the relevant Gospel materials."
+            },
+            {
+              "bridgeId": "bridge-pro-analogy-rebuttal",
+              "tier": "subsidiary",
+              "description": "Show that proposed pagan and hero-story parallels lack the relevant similarity or causal connection needed to explain the earliest Christian claims."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-historical-analogy-critique",
+          "side": "con",
+          "description": "Deny that the surviving sources warrant the four asserted facts or the resurrection inference by applying historical analogy, literary and textual criticism, and ordinary mechanisms for visionary reports, legendary narratives, and the persistence of religious belief.",
+          "successCriteria": "The route succeeds if material uncertainty remains about one or more foundational facts, or if familiar literary, cultural, visionary, or sociological processes provide sufficient alternatives to prevent divine resurrection from being established as the best historical explanation.",
+          "motionBridge": {
+            "bridgeId": "bridge-con-motion",
+            "tier": "motion",
+            "description": "Show that the earliest sources do not establish the complete factual conjunction or do not make divine resurrection its best historical explanation."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-con-source-historicity",
+              "tier": "central",
+              "description": "Show that the burial, empty-tomb, and appearance materials are literary, redactional, or textually uncertain enough that the asserted events are not established."
+            },
+            {
+              "bridgeId": "bridge-con-historical-analogy",
+              "tier": "central",
+              "description": "Use comparable ancient vanished-body, apotheosis, dying-and-rising, and appearance narratives to support a legendary or hagiographic account of the traditions."
+            },
+            {
+              "bridgeId": "bridge-con-belief-alternatives",
+              "tier": "central",
+              "description": "Provide non-resurrection pathways for exaltation, appearance reports, and continuing faith, including visions, retrojection, syncretism, and cognitive-dissonance reduction."
+            },
+            {
+              "bridgeId": "bridge-con-explanatory-standard",
+              "tier": "central",
+              "description": "Show that invoking divine action does not resolve uncertain historical claims or outperform ordinary explanations under a case-by-case evidential method."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-con-analogy-method",
+              "tier": "subsidiary",
+              "description": "Defend historical ideal-type comparison as requiring meaningful structural similarity rather than exact correspondence or direct literary copying."
+            },
+            {
+              "bridgeId": "bridge-con-testimony-limits",
+              "tier": "subsidiary",
+              "description": "Limit the evidential reach of Pauline authenticity claims, later disciple traditions, scholarly consensus, and extra-biblical notices."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "sources-and-historical-method",
+          "title": "Source Proximity, Textual Integrity, and Historical Method",
+          "weightPercent": 18,
+          "rationale": "The motion depends on whether Pauline and Gospel materials can function as early historical evidence. This section covers their dating, textual integrity, literary character, admissibility, and the role of analogy in evaluating extraordinary ancient claims."
+        },
+        {
+          "sectionId": "burial-and-empty-tomb",
+          "title": "Burial Tradition and the Empty Tomb",
+          "weightPercent": 20,
+          "rationale": "A known burial place and the subsequent absence of Jesus’ body form a linked evidential foundation for the bodily-resurrection case, while source criticism and alternative literary explanations contest whether either event is historically established."
+        },
+        {
+          "sectionId": "postmortem-appearances",
+          "title": "Nature and Historical Status of the Postmortem Appearances",
+          "weightPercent": 20,
+          "rationale": "The reported experiences of individuals and groups are a principal fact asserted by the motion. Their provenance, visionary or bodily character, and relationship to comparable ancient narratives determine what they can establish historically."
+        },
+        {
+          "sectionId": "resurrection-belief-origins",
+          "title": "Origins of the Disciples’ Resurrection Belief",
+          "weightPercent": 22,
+          "rationale": "The debate must explain why resurrection belief arose and persisted among Jesus’ followers. Jewish expectations and claimed transformation bear on one account, while syncretism, belief development, and cognitive dissonance supply competing mechanisms."
+        },
+        {
+          "sectionId": "best-explanation",
+          "title": "Resurrection as the Best Explanation",
+          "weightPercent": 20,
+          "rationale": "Even if some underlying facts are granted, the motion requires a comparative inference to divine resurrection. This section addresses explanatory adequacy, prior probability, the likelihood of the evidence under alternatives, and whether miraculous agency completes that inference."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-burial-joseph-known-tomb",
+          "sectionId": "burial-and-empty-tomb",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Jesus received an honorable burial by Joseph of Arimathea in a known tomb, supported by early Pauline and Markan material and the absence of a rival burial tradition.",
+          "sourceSpan": {
+            "startEvent": 47,
+            "endEvent": 135,
+            "excerpt": "burial story of uh Jesus in the Tomb by Joseph of arthea thank you number two the burial story is part of the Very Old Source material used by Mark in writing his gospel since Mark is the earliest of the gospels his Source material goes even closer back to the events of Jesus life and thus we have very early independent attestation of the burial in both Mark and Paul three as a"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted opening presentation is explicitly introduced as Craig's allotted speech and uses first-person advocacy throughout.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-burial-empty-tomb"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move directly supplies the burial and identifiable-tomb premise using alleged Pauline and Markan proximity plus the absence of a rival tradition."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The burial claim and its sources are recoverable and stable, though the historical confidence appropriate to those sources is only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Multiple stated considerations support probability, but early or independent material does not by itself justify the move's comparatively strong historical confidence."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It occupies the top of the central tier because identifiable burial is an indispensable part of the burial-and-empty-tomb bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move constructs its own burial case and does not meaningfully interpret a developed opposing alternative in this span."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly invokes Mark's very old source, Paul as independent attestation, Joseph of Arimathea, and a known burial tradition.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-empty-tomb-women-early-tradition",
+          "sectionId": "burial-and-empty-tomb",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Women discovered Jesus' tomb empty on the Sunday after the crucifixion, as supported by Pauline implications, early Markan material, narrative simplicity, and an early hostile explanation presupposing a missing body.",
+          "sourceSpan": {
+            "startEvent": 136,
+            "endEvent": 265,
+            "excerpt": "after the crucifixion according to Jewish Reckoning that the women discovered the tomb empty and so naturally the resurrection came to be dated on that day and thus in Paul's information we have two extremely early indications of the fact of the empty tomb thank thank you two the empty tomb story is also part of Mark's Very Old Source material Mark's Source did not end with Jesus burial but with the empty tomb narrative"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The same explicitly identified Craig opening speech continues without an intervening speaker change across this complete numbered argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-burial-empty-tomb"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the empty-tomb half of the central bridge through women discoverers, Pauline implications, Markan material, narrative features, and hostile acknowledgment."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The claimed event and evidential strands are fully recoverable, with only the degree of historical certainty left as an implicit qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The cumulative considerations plausibly support the claim, but their independence and historical force are asserted more confidently than defended."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The several considerations converge coherently, though the inference from narrative and hostile-response features to factuality retains an implicit bridge."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The move offers several concrete source features, but the Pauline implication, Markan antiquity, and hostile tradition require further verification and rival comparison."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The empty tomb is indispensable to the selected central bridge, and this move addresses it directly and extensively."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The span primarily builds a positive empty-tomb case rather than evaluating a developed competing interpretation."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt states that women found the tomb empty, links Sunday dating to Paul's information, and locates the narrative in old Markan source material.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-appearances-individuals-groups",
+          "sectionId": "postmortem-appearances",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Multiple individuals and groups experienced appearances of Jesus alive after his death, as indicated by Paul's early witness list, his acquaintance with participants, and multiple Gospel strands.",
+          "sourceSpan": {
+            "startEvent": 266,
+            "endEvent": 313,
+            "excerpt": "on multiple occasions and under various circumstances different individuals and groups saw appearances of Jesus alive after his death this is a fact which is virtually universally acknowledged by New Testament Scholars today for the following reason overhead please number one the list of eyewitnesses to Jesus resurrection appearances which is quoted by Paul guarantees that such"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig remains the sole speaker in his announced opening presentation and explicitly introduces this material as his third historical fact.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-appearances"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move directly advances the appearances bridge by adducing Paul's witness list, participant acquaintance, individual and group experiences, and Gospel strands."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The claim that individuals and groups experienced appearances is clear, although experience type and source independence are not fully qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Early testimony supports reported experiences, but near-universal scholarly acknowledgment and the stronger experiential implications exceed what is fully defended here."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supplies the central postmortem-appearance premise and therefore sits at the top of its relevance tier."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "No developed rival account is interpreted in this constructive span, so there is no meaningful charity test to apply."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says different individuals and groups saw appearances and cites Paul's quoted eyewitness list and scholarly acknowledgment.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-belief-sudden-jewish-expectations",
+          "sectionId": "resurrection-belief-origins",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "The original disciples suddenly and sincerely believed Jesus had risen despite a crucified messiah's apparent failure, the stigma of divine curse, and Jewish expectation of a general end-time resurrection.",
+          "sourceSpan": {
+            "startEvent": 314,
+            "endEvent": 347,
+            "excerpt": "four the original disciples suddenly and sincerely came to believe that Jesus was risen from the dead despite their having every predisposition to the contrary think of the situation that confronted the disciples following Jesus crucifixion number one their leader was dead and Jewish Messianic expectations had no idea of a messiah who instead of triumphing over Israel's enemies"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted Craig opening identifies this passage as the fourth fact and retains the same first-person argumentative framing.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-resurrection-belief"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move addresses the origin-of-belief bridge by contrasting sincere resurrection belief with crucifixion, curse, messianic disappointment, and Jewish expectations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The central claim is recoverable, but generalizations about Jewish messianic and resurrection expectations are broader than the span expressly qualifies."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The contextual tensions support explanatory pressure, but the uniformity of the disciples' predispositions and Jewish expectations is somewhat overstated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Jewish expectations and disappointed movements could be more diverse and adaptable than the move suggests.",
+            "decisiveQualification": "Diversity does not erase the need to explain this movement's specific early resurrection formulation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly establishes the surprising origin and sincerity of belief that the central resurrection-belief bridge requires."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The move identifies real tensions but compresses the strongest alternative by portraying Jewish predispositions too categorically."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly describes sudden sincere belief despite a dead leader and messianic expectations lacking a defeated, crucified messiah.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-resurrection-best-cumulative-explanation",
+          "sectionId": "best-explanation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "God raising Jesus from the dead best explains the burial, empty tomb, appearances, and origin of resurrection belief because the rejected theft and apparent-death theories do not plausibly explain the cumulative facts.",
+          "sourceSpan": {
+            "startEvent": 392,
+            "endEvent": 420,
+            "excerpt": "not that they have any better explanation to offer uh all of the old theories like the disciples stole the body or Jesus wasn't really dead have been universally rejected by contemporary scholarship the fact is that there just is no plausible naturalistic explanation of these facts those are who are reluctant to infer the resurrection of Jesus as the best explanation because it"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is Craig's explicitly signposted second contention near the close of his uninterrupted and formally introduced opening presentation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move reaches the motion bridge by combining the asserted facts, rejecting theft and apparent-death theories, and inferring divine resurrection as best explanation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The inference and comparison class are recoverable, but the conclusion lacks an explicit condition tying it to the prior establishment of all asserted facts."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Rejecting two old theories and asserting no plausible naturalistic explanation does not supply the full comparative warrant for the strong best-explanation claim."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Naturalistic explanations may work cumulatively or in combination rather than through the two named older theories.",
+            "decisiveQualification": "The move expressly discusses theft and apparent death but does not compare the strongest literary, visionary, or sociological alternatives."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The move relies heavily on asserted scholarly rejection and absence of alternatives without representative evidence or serious comparison of live rivals."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly states and supports the exact motion-level completion condition, giving it maximal relevance within the motion tier."
+            },
+            "representationalCharity": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt says theft and apparent-death theories are rejected, claims no plausible naturalistic account exists, and names resurrection as the best explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-case-by-case-miracle-assessment",
+          "sectionId": "sources-and-historical-method",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Critical historians can assess individual miracle reports without either rejecting every supernatural claim in advance or accepting every reported miracle.",
+          "sourceSpan": {
+            "startEvent": 604,
+            "endEvent": 674,
+            "excerpt": "require acceptance of all biblical Miracles clearly it would and that principle cannot be mere supernaturalism that is openness to the possibility that Miracles can occur one can believe God capable of anything without believing that he actually did everything anybody may say he did one can believe in the possibility of Miracles without believing that every reported Miracle must have occurred no the requisite principle for accepting"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price continues his uninterrupted allotted speech, explicitly discusses Craig and apologists, and maintains the same critical argumentative perspective.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-explanatory-standard"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "pro-resurrection-best-cumulative-explanation"
+            ],
+            "components": [
+              {
+                "componentId": "con-case-by-case-miracle-assessment-component-01",
+                "targetMoveId": "pro-resurrection-best-cumulative-explanation",
+                "text": "Whether resurrection reports satisfy case-specific evidential standards, rather than whether miracles are possible in principle.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The move justifies replacing a blanket supernatural-versus-natural framing with case-by-case assessment, preserving the legitimate demand for evidence while denying automatic acceptance or rejection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction among possibility, general openness, and acceptance of a particular report is explicit and terminologically stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The modest logical claim that possibility does not entail actuality is fully warranted and carefully distinguished from metaphysical denial."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Craig's inference purports to be evidential and case-specific, not a rule accepting every supernatural report.",
+            "decisiveQualification": "Price correctly preserves case-by-case assessment but does not yet engage Craig's actual comparative evidence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The conceptual warrant is strong, but the move supplies no case-specific evidence demonstrating how the distinction resolves the resurrection report."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reframe directly addresses the methodological premise underlying the proposed supernatural inference."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly states that belief in God's capability and miracle possibility does not require accepting everything anyone reports.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-historical-analogy-method",
+          "sectionId": "sources-and-historical-method",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Historical inference depends on analogy between past and present experience, so familiar legendary explanations may be preferred without metaphysically denying miracles.",
+          "sourceSpan": {
+            "startEvent": 675,
+            "endEvent": 727,
+            "excerpt": "historical inference is possible unless the historian assumes a basic analogy of past experience with present experience if we do not Grant this nothing will seem a Miss in believing stories that a turned into a wearwolf or b changed lead into gold hey just because we don't see it happening today doesn't prove it never did one could just as easily accept the historicity of Jack in the beant stalk on the same basis"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted Price speech explicitly introduces the principle of historical analogy and contrasts critical historians with Christian apologists.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-analogy-method"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-resurrection-best-cumulative-explanation"
+            ],
+            "components": [
+              {
+                "componentId": "con-historical-analogy-method-component-01",
+                "targetMoveId": "pro-resurrection-best-cumulative-explanation",
+                "text": "The historical legitimacy of preferring ordinary legendary explanations over an unprecedented supernatural conclusion.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the methodological basis of the best-explanation inference by arguing that historical reasoning requires analogy with experience, though it does not compare the specific resurrection evidence in detail."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The analogy principle is clear, but its unrestricted formulation risks collapsing graded historical analogy into whatever resembles present ordinary experience."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Analogy is indispensable to inference, but the examples risk implying that unusual claims are evidentially equivalent without case-specific comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A resurrection advocate can accept analogical reasoning while claiming unusually strong case-specific evidence for a unique event.",
+            "decisiveQualification": "The move must show why the evidence fails, not merely compare the claim with werewolves or Jack and the Beanstalk."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly defends the subsidiary historical-analogy method and therefore sits at the top of that tier."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The illustrations materially weaken the strongest evidential version of the opposing position by substituting plainly unsupported fantastic stories."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts a decisive methodological premise but leaves the case-specific comparative application incomplete."
+            }
+          },
+          "evidenceBasis": "The excerpt states that historical inference assumes analogy with present experience and illustrates the claim with werewolves, alchemy, and a fairy tale.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-vanished-body-hero-genre",
+          "sectionId": "burial-and-empty-tomb",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "The empty-tomb narrative belongs to a familiar ancient hero-story pattern involving vanished remains, heavenly ascent, appearances, and initial disciple skepticism.",
+          "sourceSpan": {
+            "startEvent": 781,
+            "endEvent": 840,
+            "excerpt": "familiar genres to ancient readers as of course they were Pagan critics hastened to point out the similarities and Christian apologists lamely countered that sat had counterfeited the gospel episodes in advance to throw unbelievers off the track excuse me Contra Dr Craig the empty tomb story is theological through and through if we're truly interested in history how can we dismiss other ancient vanished body and postmortem appearance stories"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price remains the announced speaker and directly contrasts Craig's reading of Mark with ancient biographical parallels cited in his own critique.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-historical-analogy"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-empty-tomb-women-early-tradition",
+              "pro-appearances-individuals-groups"
+            ],
+            "components": [
+              {
+                "componentId": "con-vanished-body-hero-genre-component-01",
+                "targetMoveId": "pro-empty-tomb-women-early-tradition",
+                "text": "Whether the empty-tomb narrative is best treated as historical reporting rather than a theological hero-story form.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-vanished-body-hero-genre-component-02",
+                "targetMoveId": "pro-appearances-individuals-groups",
+                "text": "Whether postmortem appearances participate in the same ancient vanished-body and apotheosis narrative pattern.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly contests historical treatment of the tomb and appearance narratives by locating both in an asserted ancient genre, but it does not establish source dependence or detailed structural correspondence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The genre claim and relevant narrative elements are recoverable, with an implicit rather than explicit limit on what genre resemblance proves."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Ancient parallels can reduce confidence, but the strong genre assignment needs more specific comparative detail than the excerpt supplies."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The narratives may contain theology while still preserving historically grounded burial, tomb, or appearance information.",
+            "decisiveQualification": "Genre resemblance alone neither proves literary dependence nor excludes historically transmitted content."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central historical-analogy bridge against the empty-tomb and appearance components."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The move recognizes Craig's historical reading but treats theological and historical character too nearly as mutually exclusive possibilities."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts both decisive historical claims, while the genre comparison remains more asserted than demonstrated."
+            }
+          },
+          "evidenceBasis": "The excerpt calls the empty-tomb story theological and explicitly invokes other ancient vanished-body and postmortem-appearance stories as comparators.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-belief-pagan-causation-gap",
+          "sectionId": "resurrection-belief-origins",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Greco-Roman hero and dying-god stories do not explain the original disciples' resurrection belief because their categories differ from Jewish resurrection and no plausible causal route to Galilean disciples is shown.",
+          "sourceSpan": {
+            "startEvent": 842,
+            "endEvent": 899,
+            "excerpt": "Traditions is to be found in Greco Roman biography the narratives of Jesus resurrection must therefore be interpreted within a Jewish context what Scholars came to realize is that Pagan mythology is simply the wrong interpretive context for understanding the gospels secondly in any case there is no causal connection between Pagan myths and the origin of the disciples belief you"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker change follows applause after Price's speech, and the new speaker directly attacks Price's use of Talbert and defends Craig's previously stated position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-historical-analogy"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-vanished-body-hero-genre",
+              "con-historical-analogy-method"
+            ],
+            "components": [
+              {
+                "componentId": "pro-belief-pagan-causation-gap-component-01",
+                "targetMoveId": "con-vanished-body-hero-genre",
+                "text": "Whether Greco-Roman hero parallels supply the relevant interpretive category and a causal explanation of the disciples' belief.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-belief-pagan-causation-gap-component-02",
+                "targetMoveId": "con-historical-analogy-method",
+                "text": "Whether structural analogy alone is enough without direct cultural or causal connection to the earliest disciples.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the genre argument by distinguishing Jewish resurrection from pagan categories and demanding a causal route, while only partly answering analogy understood as non-copying comparison."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The Jewish-context and causal-gap objections are clearly recoverable, though their scope is implicitly limited to explaining the earliest disciples."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Category and causal differences are material, but declaring pagan mythology simply wrong exceeds the limited comparison supplied here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Ancient parallels can function as ideal-type comparisons without direct copying or a single traceable causal chain.",
+            "decisiveQualification": "A causal gap defeats borrowing claims more readily than it defeats broader genre or cultural-analogy arguments."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "Different categories and absent causal transmission coherently weaken a borrowing explanation, with a bounded gap regarding noncausal analogy."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The Jewish interpretive context is specifically asserted, but the historical insulation from Greco-Roman culture and detailed category comparison remain compressed."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It attacks the central historical-analogy bridge directly, especially its capacity to explain the origin of belief."
+            },
+            "representationalCharity": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It strongly contacts the causal-borrowing version but only partially addresses the broader analogical genre argument."
+            }
+          },
+          "evidenceBasis": "The excerpt says Greco-Roman biography is the wrong interpretive context, identifies a Jewish context, and denies a causal connection to disciples' belief.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-source-first-corinthians-authenticity",
+          "sectionId": "sources-and-historical-method",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "First Corinthians 15:3–11 is authentic rather than interpolated because all manuscripts contain it, early writers cite it, its vocabulary and pronouns fit the context, and its removal damages Paul's argument.",
+          "sourceSpan": {
+            "startEvent": 902,
+            "endEvent": 1029,
+            "excerpt": "interpolation of a fabrication of a quotation now why would we believe such a complicated uh contrived Theory as opposed to the simple universally accepted view that Paul himself wrote these sentences in terms of the external evidence not a single manuscript of First Corinthians lacks these verses they're all there moreover the situation is even worse than that because these supposedly interpolated"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig identifies Price’s interpolation theory by name and develops a continuous external-and-internal-evidence rebuttal in his own speaking turn.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-source-historicity"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-case-by-case-miracle-assessment",
+              "con-historical-analogy-method"
+            ],
+            "components": [
+              {
+                "componentId": "pro-source-first-corinthians-authenticity-component-01",
+                "targetMoveId": "con-case-by-case-miracle-assessment",
+                "text": "Whether the Pauline appearance material should be assessed through concrete textual evidence rather than general methodological reservations.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-source-first-corinthians-authenticity-component-02",
+                "targetMoveId": "con-historical-analogy-method",
+                "text": "Whether analogy defeats the authenticity and historical usability of First Corinthians 15.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The legal earlier targets do not contain Price's interpolation theory itself; the reply supplies issue-bearing textual evidence but does not contact their decisive methodological demands."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The authenticity claim, passage boundaries, and external and internal evidential categories are clearly and consistently specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The convergence of manuscript, patristic, vocabulary, pronoun, and contextual considerations fits a strong but non-certain authenticity conclusion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The passage may be a composite or interpolated creed despite universal manuscript attestation.",
+            "decisiveQualification": "A late interpolation would need to precede all surviving manuscripts and early citations while also explaining the contextual fit."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central source-historicity challenge to a principal early appearance text."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 66,
+              "rationale": "It is a relevant nonanswer to the exposed targets: valuable source criticism that does not answer their central method claims."
+            }
+          },
+          "evidenceBasis": "The span invokes universal manuscript inclusion, early citations, vocabulary and pronoun continuity, Galatians context, and damage caused by removing the passage.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-corinthians-creed-composite",
+          "sectionId": "postmortem-appearances",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "First Corinthians 15:3–11 is plausibly a later composite creed whose tensions and institutional features weaken its value as early evidence for resurrection appearances.",
+          "sourceSpan": {
+            "startEvent": 1065,
+            "endEvent": 1150,
+            "excerpt": "early as they're supposed to be but it has nothing to do with my view on this uh the uh the idea reasons I find First Corinthians 15 3-11 to be likely an interpolation is for one thing form critically it's it's a Creed uh that seems in fact it's supposed to be by all Scholars admission a composite digest of fragments from creedle and other formulaic statements uh any Creed seems to me to be characteristic of a later"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The post-applause speaker directly states his interpolation theory and answers Craig’s specific textual, historical, and contextual objections.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-source-historicity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-source-first-corinthians-authenticity",
+              "pro-appearances-individuals-groups"
+            ],
+            "components": [
+              {
+                "componentId": "con-corinthians-creed-composite-component-01",
+                "targetMoveId": "pro-source-first-corinthians-authenticity",
+                "text": "Whether First Corinthians 15:3–11 is authentic and internally integrated rather than a later interpolation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-corinthians-creed-composite-component-02",
+                "targetMoveId": "pro-appearances-individuals-groups",
+                "text": "Whether the passage securely supplies early historical evidence for the listed resurrection appearances.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly renews the interpolation case through form-critical composition, tensions, and institutional features, thereby contacting both authenticity and evidential use, though it does not defeat every manuscript and contextual point."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The later-composite hypothesis is recoverable, but the dating implications of creed, formula, and institutional feature remain partly unstable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The form-critical observations make interpolation possible, but creed form and compositeness do not strongly date insertion without further evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Early creed form and universal textual attestation can support authenticity rather than lateness.",
+            "decisiveQualification": "A composite traditional formula can be early and authentically quoted by Paul even if Paul did not compose every phrase."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central source-historicity bridge by challenging the principal early appearance passage."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The move engages Craig's points but underplays the strong alternative that authentic Pauline use and traditional composition are compatible."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts decisive textual and evidential demands but leaves several specific authenticity arguments incompletely answered."
+            }
+          },
+          "evidenceBasis": "The excerpt calls the passage a creed and composite digest of formulaic fragments and associates creed form with a later institutional setting.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-resurrection-belief-retrojection",
+          "sectionId": "resurrection-belief-origins",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Resurrection belief could have arisen by retrojecting an expected future return of Jesus into the past as prior appearances, leaving multiple historical possibilities open.",
+          "sourceSpan": {
+            "startEvent": 1897,
+            "endEvent": 1965,
+            "excerpt": "Jesus is made to say that some standing there will not take death it was already too late to go with the every ey business and eventually as with his messiahship as Raymond Brown also argues the the resurrection was was retroed into the past I wasn't there I don't know that it happened that way I don't know that it happened anyway my point is that there are many possibilities and historical"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price continues his closing statement, proposing a developmental reconstruction of early belief and drawing an explicit methodological conclusion about historical uncertainty.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-belief-alternatives"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-belief-sudden-jewish-expectations",
+              "pro-appearances-individuals-groups"
+            ],
+            "components": [
+              {
+                "componentId": "con-resurrection-belief-retrojection-component-01",
+                "targetMoveId": "pro-belief-sudden-jewish-expectations",
+                "text": "Whether the disciples' resurrection belief requires the proposed sudden event rather than a developmental retrojection process.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-resurrection-belief-retrojection-component-02",
+                "targetMoveId": "pro-appearances-individuals-groups",
+                "text": "Whether appearance traditions could be projected backward from expectation of Jesus' future return.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the causal demand by proposing a developmental pathway from expected return to retrojected appearances, but it offers possibility rather than evidence that this pathway occurred."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Retrojection, its proposed temporal direction, and the limited claim of possibility are all recoverable and explicitly qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Price repeatedly says he does not know whether this occurred and uses the reconstruction only to establish multiple historical possibilities."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The earliest disciples' belief may have followed experiences they interpreted as appearances rather than later retrojection.",
+            "decisiveQualification": "Showing a conceivable development does not establish that it occurred or explain the earliest timing and distribution of reports."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The move offers a plausible reconstruction and one saying tradition, but lacks representative evidence dating the stages or demonstrating retrojection."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It directly supplies an alternative mechanism, while its historical substantiation remains markedly incomplete."
+            }
+          },
+          "evidenceBasis": "The excerpt proposes that an expected return and resurrection were retrojected into the past, while expressly stating that the speaker does not know what happened.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-literary-sources-insufficient",
+          "sectionId": "best-explanation",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Even if a resurrection is conceivable, extant narratives characterized as literary creations do not provide adequate historical evidence for confidence that it occurred.",
+          "sourceSpan": {
+            "startEvent": 2035,
+            "endEvent": 2059,
+            "excerpt": "say that I really do think he's much too CR credulous about narrative as automatically being factual but he certainly could be right about uh Jesus rising from the dead my only point is I do not think that the texts we have are are historical evidence I think they're literary creation so they are not really evidence for the claim though Jesus May well have risen from the dead I"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price directly answers the respondent's consistency challenge and carefully distinguishes metaphysical possibility from what the surviving texts historically warrant.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-con-motion"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-resurrection-best-cumulative-explanation",
+              "pro-burial-joseph-known-tomb",
+              "pro-empty-tomb-women-early-tradition",
+              "pro-appearances-individuals-groups"
+            ],
+            "components": [
+              {
+                "componentId": "con-literary-sources-insufficient-component-01",
+                "targetMoveId": "pro-resurrection-best-cumulative-explanation",
+                "text": "Whether the surviving narratives provide enough historical warrant for confidence in resurrection as the best explanation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-literary-sources-insufficient-component-02",
+                "targetMoveId": "pro-burial-joseph-known-tomb",
+                "text": "Whether narrative assertions are sufficient historical evidence for the burial claim.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-literary-sources-insufficient-component-03",
+                "targetMoveId": "pro-empty-tomb-women-early-tradition",
+                "text": "Whether literary narratives adequately establish the empty-tomb claim.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-literary-sources-insufficient-component-04",
+                "targetMoveId": "pro-appearances-individuals-groups",
+                "text": "Whether literary appearance narratives have adequate historical status.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply distinguishes conceivability from historical warrant and directly denies that the extant literary narratives establish the factual conjunction, although it gives few source-specific demonstrations within this span."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The insufficiency conclusion is explicit, though 'literary' and 'historical evidence' need more precise criteria to avoid an overbroad contrast."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The explicit concession that Craig could be right is well calibrated, although wholesale evidential insufficiency is asserted with limited source-specific defense."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Literary and theological narratives can still contain historically usable testimony and source traditions.",
+            "decisiveQualification": "Literary construction limits evidential weight but does not automatically erase all historical value."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The distinction between conceivable occurrence and inadequate evidence is valid, with a material ambiguity in the literary-versus-historical classification."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "By denying that the sources establish the factual conjunction, it directly supplies the con motion-level completion condition."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The move expressly allows the pro account could be true but insufficiently distinguishes literary construction from total evidential disqualification."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the ultimate evidential demand and several foundational facts, but the supporting source analysis is compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly concedes that resurrection could have occurred while denying that the extant texts provide adequate historical evidence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-source-canonical-documents-admissible",
+          "sectionId": "sources-and-historical-method",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "New Testament writings should be evaluated as separate first-century historical documents rather than collectively disqualified because the church later assembled them into a canon.",
+          "sourceSpan": {
+            "startEvent": 2750,
+            "endEvent": 2813,
+            "excerpt": "talk I'm not treating the New Testament as a book but as what it originally was just a bunch of separate documents written in the Greek Lang language uh letters gospels acts uh coming down out of the first century the church later assembled these documents under one cover and when they did so they took the documents that were the uh earliest and closest to the apostolic uh band"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The question is explicitly addressed to Craig, and the sustained first-person answer restates the method used in his presentation.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-source-historicity"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-literary-sources-insufficient",
+              "con-corinthians-creed-composite"
+            ],
+            "components": [
+              {
+                "componentId": "pro-source-canonical-documents-admissible-component-01",
+                "targetMoveId": "con-literary-sources-insufficient",
+                "text": "Whether later canonical collection disqualifies the component first-century documents from ordinary historical evaluation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-source-canonical-documents-admissible-component-02",
+                "targetMoveId": "con-corinthians-creed-composite",
+                "text": "Whether source criticism must evaluate individual passages rather than dismissing the canonical collection as a unit.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply correctly reframes the canon as separate documents for assessment and contacts one possible basis for exclusion, but it does not answer Price's literary and redactional objections to those documents."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The methodological claim is clear and carefully limited to admissibility and separate assessment, not automatic reliability."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Separate evaluation is warranted, but the assertion that canonical selection captured the earliest and closest sources needs independent support."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Price's objection concerns literary and historical quality, not mere inclusion in a later canon.",
+            "decisiveQualification": "Separate-document admissibility does not answer redactional, legendary, or source-dependence concerns."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "Later collection does not logically erase the documents' individual provenance, though canonical inclusion itself does not confer reliability."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "First-century document types are specifically identified, but the historical claim about selection for apostolic proximity is asserted rather than defended."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly attacks the central source-historicity bridge's broad exclusion of the documents, but not its detailed criticisms."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The move offers a sound methodological correction but only partially represents the strongest version of the source-quality objection."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "This is a partial answer contacting document admissibility while leaving the decisive source-quality criticism substantially unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies letters, Gospels, and Acts as separate Greek first-century documents later assembled into a single canonical cover.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-burial-tomb-source-problems",
+          "sectionId": "burial-and-empty-tomb",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "The burial and empty-tomb accounts are not established facts because their narrative sources are historically problematic and alternative literary explanations remain available.",
+          "sourceSpan": {
+            "startEvent": 3183,
+            "endEvent": 3229,
+            "excerpt": "burial of Jesus I mean it's stated in a narrative source which seems everywhere else to be filled with Marbles and so forth or historical difficulties there and anachronisms there various problems with it it just seems to me that sure a man named Joseph of arthea could have buried Jesus but uh you know there's no particular reason to think so because of the quality of the source the same thing with the empty tomb"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price explicitly turns to points he was accused of neglecting and sequentially addresses Joseph’s burial and the empty tomb.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-source-historicity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-burial-joseph-known-tomb",
+              "pro-empty-tomb-women-early-tradition",
+              "pro-source-canonical-documents-admissible"
+            ],
+            "components": [
+              {
+                "componentId": "con-burial-tomb-source-problems-component-01",
+                "targetMoveId": "pro-burial-joseph-known-tomb",
+                "text": "Whether the quality of the narrative source warrants confidence that Joseph buried Jesus in a known tomb.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-burial-tomb-source-problems-component-02",
+                "targetMoveId": "pro-empty-tomb-women-early-tradition",
+                "text": "Whether the same historically problematic narrative material adequately establishes the empty tomb.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-burial-tomb-source-problems-component-03",
+                "targetMoveId": "pro-source-canonical-documents-admissible",
+                "text": "Whether separate documentary admissibility answers concrete reliability problems within the narratives.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly disputes both burial and empty-tomb facts by citing narrative problems and alternative literary explanations, while offering few specific examples of the alleged anachronisms or source defects."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conclusion and possibility concession are clear, but the transcript's apparent 'marbles' wording and broad historical-problems category reduce terminological precision."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move carefully concedes Joseph could have buried Jesus, but low confidence in both accounts rests on largely unspecified source defects."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Early traditions within a problematic narrative can still preserve a historical burial and empty-tomb report.",
+            "decisiveQualification": "General narrative difficulties do not automatically defeat the specific traditions without showing relevance to them."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central source-historicity bridge against both burial and empty-tomb foundations."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts the decisive factual and source-quality demands but develops its supporting particulars only minimally."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes possible burial from warranted burial and cites narrative marvels, historical difficulties, anachronisms, and source quality.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-gospel-appearances-low-value",
+          "sectionId": "postmortem-appearances",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Gospel appearance accounts have limited historical value because visions of Jesus are common and the narratives contain redactional and legendary material.",
+          "sourceSpan": {
+            "startEvent": 3230,
+            "endEvent": 3239,
+            "excerpt": "people have visions of Jesus all the time as I admit it just seems to me that these things are deposits of redactional and legendary material so that I do not see the gospel texts as good evidence for for appearances that someone had maybe they did see the Risen Jesus maybe Oral Roberts saw him I I don't have any just that it doesn't have much vertical value and finally what"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price introduces appearances as the next disputed fact and states his assessment of the relevant Gospel evidence directly.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-source-historicity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-appearances-individuals-groups",
+              "pro-source-canonical-documents-admissible"
+            ],
+            "components": [
+              {
+                "componentId": "con-gospel-appearances-low-value-component-01",
+                "targetMoveId": "pro-appearances-individuals-groups",
+                "text": "Whether the Gospel texts provide reliable evidence that individuals and groups experienced postmortem appearances.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-gospel-appearances-low-value-component-02",
+                "targetMoveId": "pro-source-canonical-documents-admissible",
+                "text": "Whether individual admissibility of Gospel documents establishes substantial historical value for their appearance narratives.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the appearance-evidence demand through vision frequency and alleged redactional and legendary deposits, but it does not address Paul's early witness list."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The low-value conclusion is recoverable, but 'visions,' appearances, and seeing the risen Jesus are not clearly differentiated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker repeatedly allows that appearances may have occurred, but the low evidential verdict rests on underdeveloped redactional assertions."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The appearance case also rests on Paul's earlier testimony and may preserve experiences beneath later Gospel redaction.",
+            "decisiveQualification": "Legendary development in Gospel narratives does not eliminate the evidential value of every underlying report."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "This partial answer directly contacts Gospel evidential value while leaving the earlier Pauline component of the appearance case unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt says visions of Jesus are common and characterizes the Gospel texts as redactional and legendary material with little evidential value.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-cognitive-dissonance-persistence",
+          "sectionId": "resurrection-belief-origins",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "The Jesus movement's continuation can be explained through cognitive-dissonance reduction and reinterpretation of disconfirmation without positing a resurrection experience.",
+          "sourceSpan": {
+            "startEvent": 3240,
+            "endEvent": 3299,
+            "excerpt": "well uh he didn't really apostasies it was just a fandom or he did but it was an atoning apostasy so that he could Plumb the depths of sin for us so that we wouldn't have to and it was prophesied too do we forget to tell you that and so on and so forth it's it's the same kind of desperate cognitive dissonance reduction strategy many people will fall away like the two guys going"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Price explicitly turns to what transformed the disciples and develops the answer through several comparative religious movements.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-belief-alternatives"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-belief-sudden-jewish-expectations",
+              "pro-resurrection-best-cumulative-explanation"
+            ],
+            "components": [
+              {
+                "componentId": "con-cognitive-dissonance-persistence-component-01",
+                "targetMoveId": "pro-belief-sudden-jewish-expectations",
+                "text": "How a defeated messianic movement could persist and reinterpret disconfirmation without a resurrection event.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-cognitive-dissonance-persistence-component-02",
+                "targetMoveId": "pro-resurrection-best-cumulative-explanation",
+                "text": "Whether ordinary belief-preservation mechanisms provide a rival explanation for continuing faith.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly supplies cognitive-dissonance reduction as a mechanism and uses comparative movements to show persistence after disconfirmation, while not fully explaining appearance reports."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The psychological mechanism and limited target of movement persistence are clear, though applicability to the earliest disciples is implicitly rather than explicitly qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Comparative examples warrant plausibility for persistence through reinterpretation, without establishing that this exact history occurred."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The resurrection case asks why specific bodily-resurrection and appearance beliefs arose, not merely why a disappointed movement survived.",
+            "decisiveQualification": "Cognitive dissonance explains persistence more readily than the detailed content and early testimony of the beliefs."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "Several comparative movements illustrate persistence, but comparability to the earliest Jesus movement is not closely defended."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central belief-alternatives bridge by explaining persistence after crucifixion and apparent disconfirmation."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This partial answer strongly contacts belief persistence and reinterpretation but does not account for every component of the cumulative evidence."
+            }
+          },
+          "evidenceBasis": "The span explicitly labels reinterpretation a cognitive-dissonance reduction strategy and compares other movements that preserved commitment after failed expectations.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-miracle-explanatory-deficit",
+          "sectionId": "best-explanation",
+          "side": "con",
+          "speaker": "Robert Price",
+          "moveKind": "reply",
+          "proposition": "Invoking a miracle does not explain uncertain historical events because it replaces the disputed event with an even less understood causal claim.",
+          "sourceSpan": {
+            "startEvent": 3300,
+            "endEvent": 3308,
+            "excerpt": "explanation and one last thing to invoke a miracle as an explanation that's trying to explain X by double X you know we don't understand what happened here so let's say a miracle did it yeah that's like and we don't know who built the Pyramid so it must have been UFOs oh well thanks we got that one settled you know well anyway that thanks"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is Price’s concluding argumentative point before yielding the floor, expressed through an explicit analogy to a purported explanation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-explanatory-standard"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-resurrection-best-cumulative-explanation",
+              "pro-source-canonical-documents-admissible"
+            ],
+            "components": [
+              {
+                "componentId": "con-miracle-explanatory-deficit-component-01",
+                "targetMoveId": "pro-resurrection-best-cumulative-explanation",
+                "text": "Whether naming miraculous agency genuinely explains the disputed historical facts better than rival accounts.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-miracle-explanatory-deficit-component-02",
+                "targetMoveId": "pro-source-canonical-documents-admissible",
+                "text": "Whether document admissibility resolves the underlying uncertainty that the miracle inference is meant to explain.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the decisive explanatory-adequacy demand by arguing that a miracle label adds an even less understood cause, but it does not compare predictive fit or specific evidence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The explanatory objection is clear, although it implicitly targets bare miracle invocation rather than every developed theistic causal hypothesis."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "A bare miracle label can be explanatorily thin, but the UFO analogy overstates parity with a hypothesis embedded in a broader theistic argument."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A divine-resurrection hypothesis may predict the evidence under a broader theistic context rather than merely label ignorance.",
+            "decisiveQualification": "Explanatory unfamiliarity alone does not show that a hypothesis lacks likelihood, scope, or comparative power."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The objection identifies a genuine deficit in bare labeling, but conflates mechanistic ignorance with total explanatory failure."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central explanatory-standard bridge against the motion's culminating best-explanation inference."
+            },
+            "representationalCharity": {
+              "value": 52,
+              "rationale": "The UFO analogy substantially weakens the strongest opposing account by treating it as an unsupported appeal to an arbitrary unknown cause."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "This partial answer reaches the central explanatory inference while leaving the likelihood and comparative-evidence dimensions untreated."
+            }
+          },
+          "evidenceBasis": "The excerpt says miracle invocation explains an unknown by something still less understood and compares it to attributing pyramid construction to UFOs.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-explanation-likelihood-evidence",
+          "sectionId": "best-explanation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Assessing resurrection requires considering not only prior improbability but also how unlikely the empty tomb, appearances, and disciples' faith would be if no resurrection occurred.",
+          "sourceSpan": {
+            "startEvent": 3373,
+            "endEvent": 3419,
+            "excerpt": "be assessed you need to assess also what is the probability that there would be the evidence of the empty tomb the resurrection appearances and the origin of the disciples faith if this event called the resurrection had not taken place and I think that's extraordinarily improbable that is in effect to say what other explanations of the resur of these these three facts are there"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator directs the question to Craig, and the ensuing uninterrupted first-person response explicitly develops his established resurrection argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-explanatory-standard"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-miracle-explanatory-deficit",
+              "con-literary-sources-insufficient",
+              "con-cognitive-dissonance-persistence"
+            ],
+            "components": [
+              {
+                "componentId": "pro-explanation-likelihood-evidence-component-01",
+                "targetMoveId": "con-miracle-explanatory-deficit",
+                "text": "The objection wrongly treats prior improbability or causal unfamiliarity as sufficient without considering the likelihood of the evidence if no resurrection occurred.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-explanation-likelihood-evidence-component-02",
+                "targetMoveId": "con-literary-sources-insufficient",
+                "text": "Whether the empty tomb, appearances, and faith are sufficiently established to enter the likelihood comparison.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-explanation-likelihood-evidence-component-03",
+                "targetMoveId": "con-cognitive-dissonance-persistence",
+                "text": "Whether cognitive dissonance makes the full conjunction of tomb, appearances, and faith likely without resurrection.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The response expressly diagnoses a missing likelihood term and states its consequence for comparative assessment, but it assumes rather than re-establishes the disputed evidential facts."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The likelihood comparison, evidence conjunction, and no-resurrection condition are explicitly stated and remain stable throughout the move."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Demanding both prior and evidential likelihoods is correct, but calling the no-resurrection evidence extraordinarily improbable is insufficiently demonstrated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Ordinary alternatives may jointly predict some or all reported evidence once source uncertainty and dependence are incorporated.",
+            "decisiveQualification": "A likelihood comparison must include live composite alternatives and uncertainty about whether the asserted evidence occurred."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central con explanatory-standard bridge by identifying a missing component in the miracle objection."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "The move identifies the correct comparative question but understates the opponent's source challenge and does not calculate or defend rival likelihoods."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It provides an explicit diagnostic defeat of the explanatory objection while only partially answering source-warrant and alternative-mechanism components."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly asks how probable the empty tomb, appearances, and disciples' faith would be absent resurrection and calls that conjunction extraordinarily improbable.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named pro burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond the evaluated source facts, replies, and comparative-explanation defects.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden contact",
+              "importance"
+            ],
+            "counterfactual": "Removing any alleged residual would leave burden completion unchanged because its effects are already captured."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named con burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond the evaluated source criticisms, alternatives, replies, and explanatory objections.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden contact",
+              "importance"
+            ],
+            "counterfactual": "Removing any alleged residual would leave burden completion unchanged because its effects are already captured."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "sources-and-historical-method",
+          "title": "Source Proximity, Textual Integrity, and Historical Method",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "pro-source-first-corinthians-authenticity",
+                  "importance": 3,
+                  "score": 85
+                },
+                {
+                  "moveId": "pro-source-canonical-documents-admissible",
+                  "importance": 2,
+                  "score": 79
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-case-by-case-miracle-assessment",
+                  "importance": 2,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-historical-analogy-method",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "burial-and-empty-tomb",
+          "title": "Burial Tradition and the Empty Tomb",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-burial-joseph-known-tomb",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "pro-empty-tomb-women-early-tradition",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "con-vanished-body-hero-genre",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "con-burial-tomb-source-problems",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "postmortem-appearances",
+          "title": "Nature and Historical Status of the Postmortem Appearances",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-appearances-individuals-groups",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "con-corinthians-creed-composite",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-gospel-appearances-low-value",
+                  "importance": 2,
+                  "score": 77
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "resurrection-belief-origins",
+          "title": "Origins of the Disciples’ Resurrection Belief",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-belief-sudden-jewish-expectations",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-belief-pagan-causation-gap",
+                  "importance": 2,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "con-resurrection-belief-retrojection",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-cognitive-dissonance-persistence",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "best-explanation",
+          "title": "Resurrection as the Best Explanation",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-resurrection-best-cumulative-explanation",
+                  "importance": 3,
+                  "score": 76
+                },
+                {
+                  "moveId": "pro-explanation-likelihood-evidence",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            },
+            "con": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "con-literary-sources-insufficient",
+                  "importance": 3,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-miracle-explanatory-deficit",
+                  "importance": 3,
+                  "score": 70
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 82.78,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        },
+        "con": {
+          "weightedSectionMean": 79.82,
+          "burdenCompletionAdjustment": 0,
+          "score": 80
+        }
+      },
+      "winner": "pro",
+      "winningMargin": 3
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 19,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 116222,
+  "proposedAdapterSha256": "03f143afdf4013e8f180b23b4cd410dea8bae78696db673d888884223c9709aa",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "137",
+    "sections": 5,
+    "moves": 19,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+    "adapterSha256": "03f143afdf4013e8f180b23b4cd410dea8bae78696db673d888884223c9709aa",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
