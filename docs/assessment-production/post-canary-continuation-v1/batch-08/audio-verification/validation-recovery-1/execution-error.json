@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0-assessment-production-deterministic-validation-failure",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-1",
+  "status": "batch-08-audio-verification-analysis-validation-failed-preserved",
+  "failedAt": "2026-08-24T03:47:00Z",
+  "command": "node scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs --mode analyze --write",
+  "exitCode": 1,
+  "error": "con-conscious-capacity-grounds-moral-distinctions: segment 33 text invalid",
+  "failureCategory": "deterministic-empty-transcript-segment",
+  "downstreamCostCommandFailure": "audio-verification.json was unavailable because analysis stopped before writing it; this is a consequence of the same root failure",
+  "modelExecutionSha256": "7fef5148923c874872e9521223c9d32cdca34caa70ac23ed996771ddde36d0b0",
+  "executionManifestSha256": "bb5fa2011040e23f8d74a854b6a7c8b8331cd86c525ad2cf1a988b1a5889c809",
+  "transcriptSha256": "5eb1d37866eb01a2801652efa1f987944355465be1e9df252deac45b3b5789b8",
+  "paidCallsAttempted": 6,
+  "paidCallsCompleted": 6,
+  "usageDerivedEstimatedCostUsd": 0.156225,
+  "additionalPaidCalls": 0,
+  "retries": 0,
+  "audioAccessDuringDiagnosis": false,
+  "scoresDerived": 0
+}
