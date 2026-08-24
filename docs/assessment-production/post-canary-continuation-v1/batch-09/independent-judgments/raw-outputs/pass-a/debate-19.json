@@ -1,0 +1,1088 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "19",
+  "debateId": "harris-oconnor-objective-morality-2024",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-conscious-well-being",
+      "side": "pro",
+      "description": "Establish that possible conscious experiences and the causal relations among them are factual features of reality capable of supporting objective distinctions between better and worse ways for conscious beings to live.",
+      "successCriteria": "The route succeeds if facts about consciousness identify genuine differences in well-being, permit discoverable navigation among possible states, and remain normatively significant despite contingent preferences and the first-person character of experience.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-factual-grounding",
+        "tier": "motion",
+        "description": "Show that facts about conscious well-being can ground objective evaluative guidance rather than merely implement independently chosen ends."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-landscape",
+          "tier": "central",
+          "description": "Establish a factual landscape of possible conscious states containing materially better and worse conditions and causal routes between them."
+        },
+        {
+          "bridgeId": "pro-central-preference-assessment",
+          "tier": "central",
+          "description": "Explain why inherited or modifiable preferences do not exhaust the standards by which possible changes in experience are evaluated."
+        },
+        {
+          "bridgeId": "pro-central-objectivity",
+          "tier": "central",
+          "description": "Connect discoverable facts about navigating conscious experience to objectively right and wrong practical directions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-phenomenal-reality",
+          "tier": "subsidiary",
+          "description": "Account for the reality of values instantiated in consciousness despite their essentially first-person mode of appearance."
+        },
+        {
+          "bridgeId": "pro-subsidiary-unknown-goods",
+          "tier": "subsidiary",
+          "description": "Allow for attainable goods that agents may fail to recognize because of empirical cognitive, emotional, or cultural limitations."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-emotivist-instrumentalism",
+      "side": "con",
+      "description": "Establish that ethical language expresses attitudes or directives while science supplies objective information only about how conscious systems can realize ends selected through subjective preferences.",
+      "successCriteria": "The route succeeds if preferences, including higher-order preferences, can explain the selection of ends and if empirical facts can explain effective pursuit of those ends without entailing objective moral truth, obligation, or prescription.",
+      "motionBridge": {
+        "bridgeId": "con-motion-emotive-instrumental-account",
+        "tier": "motion",
+        "description": "Show that emotive expression plus instrumental facts can account for ethical discourse and practical coordination without objective morality."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-expression-report",
+          "tier": "central",
+          "description": "Distinguish expressing an attitude through moral language from reporting a truth-apt fact about possessing that attitude."
+        },
+        {
+          "bridgeId": "con-central-ends-means",
+          "tier": "central",
+          "description": "Separate subjective selection of experiential ends from objective scientific knowledge about the means of attaining them."
+        },
+        {
+          "bridgeId": "con-central-explanatory-sufficiency",
+          "tier": "central",
+          "description": "Explain preference change, cooperation, flourishing, and informed action without introducing objective moral properties or prescriptions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-higher-order-preference",
+          "tier": "subsidiary",
+          "description": "Account for voluntary alteration of preferences through higher-order desires rather than an independent moral standard."
+        },
+        {
+          "bridgeId": "con-subsidiary-system-relative-value",
+          "tier": "subsidiary",
+          "description": "Locate value in the commitments of conscious systems while preserving objective facts about effective action."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-semantic-status",
+      "title": "The semantic status of ethical language",
+      "weightPercent": 18,
+      "rationale": "The dispute requires an account of whether moral utterances state objective propositions, report subjective states, or instead express attitudes and directives."
+    },
+    {
+      "sectionId": "section-landscape-and-instrumental-science",
+      "title": "Experiential landscapes and the ends-means distinction",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether factual knowledge of possible conscious states and causal routes establishes evaluative destinations or only serves antecedently selected ends."
+    },
+    {
+      "sectionId": "section-preference-revision",
+      "title": "Preference revision and higher-order desire",
+      "weightPercent": 19,
+      "rationale": "The treatment of contingent and scientifically alterable preferences determines whether preference change requires a further evaluative standard or remains preference-relative."
+    },
+    {
+      "sectionId": "section-subjective-experience-and-value",
+      "title": "Subjective experience and the reality of value",
+      "weightPercent": 17,
+      "rationale": "The debate turns partly on whether value's first-person manifestation undermines objectivity or identifies a real feature of conscious systems that facts can track."
+    },
+    {
+      "sectionId": "section-practical-sufficiency",
+      "title": "Practical flourishing and objective moral direction",
+      "weightPercent": 22,
+      "rationale": "This issue asks whether a complete practical account of cooperation, discovery, flourishing, misery avoidance, and experiential navigation entails objective moral direction."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-semantic-emotive-directive",
+      "sectionId": "section-semantic-status",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Ethical pronouncements express attitudes or commands rather than truth-apt propositions about objective moral facts.",
+      "sourceSpan": {
+        "startEvent": 0,
+        "endEvent": 23
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The opening uninterrupted turn states the emotivist position in the first person before Harris begins responding.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-emotive-instrumental-account"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive opening states the con side's basic semantic and directive account and therefore has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it directly and clearly establishes a foundational claim required by the con route."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The utterance clearly distinguishes emotive expression and commands from truth-valued moral propositions while marking the view as one to which the speaker is broadly attracted."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents this as a broadly attractive account rather than demonstrated certainty, matching the limited illustrative support supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The examples consistently illustrate the proposed noncognitive semantics, though the move does not yet provide a full argument excluding truth-apt alternatives."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The murder example makes the view intelligible, but no linguistic evidence or serious comparison with competing semantic accounts is supplied."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This directly states the emotive-expression component of the con motion route and is exceptionally central within the motion tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally advances its own semantic thesis and does not materially characterize a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The locked excerpt says ethical pronouncements express emotions, distaste, or commands such as 'don't do that' and consequently lack truth value.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-expression-not-report",
+      "sectionId": "section-semantic-status",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "An emotivist moral utterance expresses a feeling rather than factually reporting that the speaker possesses that feeling.",
+      "sourceSpan": {
+        "startEvent": 29,
+        "endEvent": 43
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly corrects the immediately preceding characterization, and the surrounding exchange cleanly identifies O'Connor as the correcting speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-expression-report"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Although prompted by an intervening characterization, this locked move is treated constructively because no earlier opposing locked move is legally available; it supplies the expression-versus-report distinction.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it precisely supplies the semantic distinction required by the con central bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The contrast between reporting dislike and expressing dislike is explicit, stable, and illustrated by a readily recoverable example."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As an exposition of what the speaker means by emotivism, the firm distinction is proportionate to the definitional and illustrative support given."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An emotivist utterance could be understood as reporting the speaker's attitude.",
+        "decisiveQualification": "A report that the speaker dislikes murder would itself be truth-apt, unlike the expressive utterance under discussion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The report-expression distinction is explicit and internally consistent, and the truth-value consequence follows directly from the stipulated semantic contrast."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The paired paraphrases and 'boo murder' example specifically support the distinction, though broader linguistic evidence remains absent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly completes the central expression-versus-report distinction and sits at the top of the central relevance tier."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The move expressly presents the tempting report interpretation and identifies the truth-aptness distinction that defeats it."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the truth-apt report 'I don't like murder' with expressing dislike through 'boo murder,' which it says has no truth value.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-c003-possible-experience-landscape",
+      "sectionId": "section-landscape-and-instrumental-science",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Possible conscious experiences extend beyond what agents currently prefer or can access, and factual knowledge can identify routes among experientially different states.",
+      "sourceSpan": {
+        "startEvent": 59,
+        "endEvent": 121
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained questioning turn follows O'Connor's preference-based account and develops Harris's characteristic landscape argument through explicit scientific claims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-landscape"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-semantic-emotive-directive",
+          "con-expression-not-report"
+        ],
+        "components": [
+          {
+            "componentId": "pro-c003-possible-experience-landscape-component-01",
+            "targetMoveId": "con-semantic-emotive-directive",
+            "text": "Explain why moral pronouncements are not merely emotive expressions or directives lacking truth value.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-c003-possible-experience-landscape-component-02",
+            "targetMoveId": "con-expression-not-report",
+            "text": "Address the distinction between expressing an attitude and truthfully reporting possession of that attitude.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The landscape claim supplies issue-bearing factual material about possible experiences and routes, but it does not answer the semantic thesis or the expression-versus-report distinction in either earlier con move.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "Within relevant nonanswers, the material advances the larger dispute substantially but leaves both decisive semantic demands uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim concerns possible experiences beyond present access and expressly qualifies access by talent, genes, and current epistemic limitations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modal claim that inaccessible experiences may exist is appropriately qualified by individual capacities and limited knowledge."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from diverse capacities to a wider landscape of possible experience is coherent, with one implicit bridge from individual inaccessibility to systematic navigability."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Genes, talent, and differential access are concrete considerations, but the broader landscape and route-discovery claim compresses an empirical verification step."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly establishes the factual experiential landscape and is highly relevant within the central tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops a positive landscape hypothetical without directly construing or testing the strongest semantic alternative."
+        }
+      },
+      "evidenceBasis": "The locked span points to experiences unavailable to a person because of talent or genes and says the landscape extends beyond what that person currently knows or can know.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-subjective-destination-objective-means",
+      "sectionId": "section-landscape-and-instrumental-science",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Science can identify how to reach a desired experiential peak while the desire to reach that peak remains a subjective preference.",
+      "sourceSpan": {
+        "startEvent": 122,
+        "endEvent": 126
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The concise response accepts the scientific resources just described while restating O'Connor's subjective-preference framework in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-ends-means"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-c003-possible-experience-landscape"
+        ],
+        "components": [
+          {
+            "componentId": "con-subjective-destination-objective-means-component-01",
+            "targetMoveId": "pro-c003-possible-experience-landscape",
+            "text": "Show that a factual landscape and scientific routes select an experiential destination rather than only describing available means.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts scientific navigation while directly distinguishing it from the subjective preference that supplies the destination, contacting the landscape move's evaluative implication.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within full answers, it explicitly contacts the decisive inference from scientific route knowledge to selection of the peak."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "Subjective preference, scientific resources, and the selected peak retain clear and stable roles throughout the concise hypothetical."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Within the stipulated example, the categorical ends-means distinction follows from the expressly stated antecedent subjective preference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Scientific knowledge of the landscape might itself reveal which experiential peak should be pursued.",
+        "decisiveQualification": "The example grants objective route knowledge while denying that such knowledge supplies the initial desire for the peak."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The separation between selecting an end and obtaining objective means to it is explicit, consistent, and directly resolves the immediate inference challenge."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The stipulated case strongly illustrates the conceptual distinction, but it does not independently establish that all evaluative destinations are preference-selected."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The reply directly supplies the con route's indispensable ends-means separation and ranks at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply accepts the strongest factual-navigation element and isolates the remaining evaluative destination question, though it does not examine every realist bridge."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says a subjective preference selects the peak and scientific resources are then used to reach it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-c005-alterable-preference-weights",
+      "sectionId": "section-preference-revision",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Present preference weights arise from unchosen genetic, familial, and cultural causes and could themselves be altered by a mature science of mind, leaving the desirability of such changes open for evaluation.",
+      "sourceSpan": {
+        "startEvent": 127,
+        "endEvent": 144
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris continues the exchange by adding preference malleability to the shared hypothetical and explicitly raises the normative question generated by alteration.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-preference-assessment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-subjective-destination-objective-means"
+        ],
+        "components": [
+          {
+            "componentId": "pro-c005-alterable-preference-weights-component-01",
+            "targetMoveId": "con-subjective-destination-objective-means",
+            "text": "Explain whether subjective destination-setting remains exhaustive when the preferences selecting destinations are themselves causally alterable.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly complicates the con ends-means separation by making the preference weights themselves objects of scientific alteration and subsequent evaluation.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly contacts the premise that subjective preferences can function as fixed selectors of destinations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The causal sources and hypothetical scientific alterability of preferences are explicit; the completed science is clearly presented as a supposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move uses a hypothetical mature science and claims only that preference alteration would become possible, fitting its stated warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Preferences may select ends even if those preferences have unchosen causes.",
+        "decisiveQualification": "The move adds that science could alter the selecting preferences themselves, raising a further question about which alterations to choose."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The causal-malleability challenge is coherent, but a material bridge remains from unchosen or alterable preferences to an independent evaluative standard."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Unchosen genetic, familial, and cultural influences are plausible specific supports, while mature preference engineering remains hypothetical and under-verified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the indispensable pro bridge concerning assessment beyond inherited or modifiable preferences."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "It preserves the preference account's causal possibility while identifying the unresolved selection problem, with only a compressed account of why that problem is normative."
+        }
+      },
+      "evidenceBasis": "The locked excerpt identifies genes, parents, and culture as unchosen causes of preference weights and hypothesizes a completed science able to change those preferences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-higher-order-preference-revision",
+      "sectionId": "section-preference-revision",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Voluntary preference enhancement can be explained by higher-order preferences without introducing moral goodness, obligation, or prescription.",
+      "sourceSpan": {
+        "startEvent": 145,
+        "endEvent": 181
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker rejects the newly introduced evaluative vocabulary and develops a first-person preference-change example consistent with O'Connor's stated framework.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-higher-order-preference"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-c005-alterable-preference-weights"
+        ],
+        "components": [
+          {
+            "componentId": "con-higher-order-preference-revision-component-01",
+            "targetMoveId": "pro-c005-alterable-preference-weights",
+            "text": "Account for choosing preference alterations without relying on an independent evaluative standard beyond preference.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a higher-order preference as the selector of preference change and explicitly denies that moral goodness, prescription, or ought has thereby entered.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within full answers, it squarely contacts the decisive regress or selection concern by naming the higher-order preference mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The speaker consistently distinguishes first-order experiences, second-order preferences, scientific means, and excluded moral prescription."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The claim is confined to showing conceptual space for preference-relative revision, for which the higher-order preference example is adequate."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Selecting improved preferences might require a standard of genuine goodness rather than another preference.",
+        "decisiveQualification": "The example describes voluntary revision driven by a second-order preference and denies that this alone entails moral prescription."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Higher-order desire coherently explains a chosen revision without moral vocabulary, though it leaves a bounded question about conflict or regress among higher orders."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The first-person enhancement example supports conceptual possibility, but broader explanatory sufficiency across conflicted preference structures is not demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly completes the higher-order-preference subsidiary bridge and ranks near the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply addresses the strongest immediate realist interpretation and preserves the key qualification that explaining voluntary revision is not proving all revision preference-relative."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes a second-order preference, continued scientific pursuit of preferred experiences, and the absence of goodness, ought, or moral prescription.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-c007-normative-vocabulary-and-closure",
+      "sectionId": "section-semantic-status",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Refusing the language of should and ought does not establish that nothing evaluative hangs on attainable changes, because failure to recognize how good life could become may reflect empirically identifiable cognitive or cultural closure.",
+      "sourceSpan": {
+        "startEvent": 182,
+        "endEvent": 202
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers O'Connor's denial of moral judgment and reframes ignorance of better possibilities as an empirically describable limitation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-unknown-goods"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-higher-order-preference-revision",
+          "con-semantic-emotive-directive"
+        ],
+        "components": [
+          {
+            "componentId": "pro-c007-normative-vocabulary-and-closure-component-01",
+            "targetMoveId": "con-higher-order-preference-revision",
+            "text": "Address whether a preference-only account fully handles agents who fail to recognize attainable improvements in life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-c007-normative-vocabulary-and-closure-component-02",
+            "targetMoveId": "con-semantic-emotive-directive",
+            "text": "Answer the claim that evaluative language merely expresses attitudes or directives without truth value.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the higher-order account by arguing that empirically explicable closure can hide attainable goods, but it does not directly rebut the earlier semantic theory of moral utterances.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers, it contacts the decisive limitation of the preference account while leaving the separate semantic demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The closure claim is recoverable, but 'how good life could be' and 'anything really hangs on it' leave the evaluative standard partly implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The possibility of unrecognized improvement is plausible, but the suggestion that something evaluative therefore hangs on it slightly outruns the stated bridge."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An agent can acknowledge unknown attainable experiences while maintaining that only actual or higher-order preferences confer value.",
+        "decisiveQualification": "Empirical ignorance explains nonrecognition, but by itself does not establish preference-independent normative significance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The empirical-closure premise is coherent, but the inference from unknown better possibilities to objective evaluative significance leaves a substantial bridge unstated."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The move relies mainly on a hypothetical population and asserted cultural or cognitive closure without specific evidence or comparison with preference-relative explanations."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the unknown-goods subsidiary bridge and is strongly placed within that tier, without reaching motion-level grounding."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The move identifies a genuine limitation of current preference awareness but compresses the opponent's distinction between undiscovered facts and objective prescriptions."
+        }
+      },
+      "evidenceBasis": "The excerpt says people may not know how good life could become after changes to self, thinking, or culture and criticizes refusal to use should or ought language.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-system-relative-value",
+      "sectionId": "section-subjective-experience-and-value",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Conscious systems have subjective values, while objective facts concern how best to achieve what those systems subjectively value.",
+      "sourceSpan": {
+        "startEvent": 220,
+        "endEvent": 225
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly marks the statement as his own view and restates the means-and-ends distinction associated throughout the exchange with O'Connor.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-system-relative-value"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-c007-normative-vocabulary-and-closure"
+        ],
+        "components": [
+          {
+            "componentId": "con-system-relative-value-component-01",
+            "targetMoveId": "pro-c007-normative-vocabulary-and-closure",
+            "text": "Clarify whether objective facts about conscious systems amount to objective value or instead serve values located in those systems.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly clarifies that value remains subjective while objective facts specify how conscious systems can achieve what they value, answering the attempted normative elevation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the decisive conflation between objective system facts and objective evaluative status."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The speaker expressly labels value subjective and distinguishes it from objective facts about systems and effective achievement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The force is appropriate because the move is a clear statement and clarification of the speaker's proposed conceptual framework."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective facts about conscious systems and their attainable states might themselves constitute objective value.",
+        "decisiveQualification": "The reply grants those objective facts but locates value in what the conscious system subjectively values."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The system-relative distinction is explicit and internally consistent, with only a bounded unsupported premise that value must remain preference-dependent."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The conceptual separation is clearly stated, but the claim that value is subjective receives little independent support beyond clarification of the framework."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the system-relative-value subsidiary bridge and ranks at the highest end of that tier."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "It fairly preserves the opponent's factual claims while denying the evaluative inference, though it does not independently defend the final location of value."
+        }
+      },
+      "evidenceBasis": "The locked excerpt labels the value subjective while calling facts about conscious systems and how best to achieve their values objective.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-c009-phenomenal-value-reality",
+      "sectionId": "section-subjective-experience-and-value",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Some realities exist essentially as appearances in consciousness and cannot be conceptually reduced to external physical descriptions, even if they can be correlated with physical states; their first-person character therefore does not make them unreal.",
+      "sourceSpan": {
+        "startEvent": 226,
+        "endEvent": 245
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The immediate rebuttal rejects the alleged deflation and invokes Harris's broader claims about consciousness, phenomenal appearance, and evidential access.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-phenomenal-reality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-system-relative-value"
+        ],
+        "components": [
+          {
+            "componentId": "pro-c009-phenomenal-value-reality-component-01",
+            "targetMoveId": "con-system-relative-value",
+            "text": "Show why the reality of first-person appearances establishes objective value rather than merely real subjective experience.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply establishes that appearances in consciousness may be real and irreducible, but it does not contact the decisive distinction between phenomenal reality and objective evaluative status.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "Within relevant nonanswers, it strongly bears on ontology but leaves the value-status inference demanded by the target unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The irreducibility thesis is recoverable, but the excerpt's broken formulation leaves 'ontological status' and the connection to value only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conceptual-irreducibility claim is stronger than the brief assertion and correlation concession fully warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "First-person value experiences can be ontologically real while their value remains relative to the experiencing system.",
+        "decisiveQualification": "Irreducibility to external description does not itself establish objective normativity or preference-independent value."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The claim that appearances can be real without reduction is coherent, but the material bridge from phenomenal ontology to value reality remains unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move mainly asserts conceptual irreducibility and possible physical correlation without defending either claim or comparing reductionist alternatives."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the phenomenal-reality subsidiary bridge, although its relevance is reduced by the missing connection to evaluative objectivity."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move resists treating experience as unreal but does not preserve the opponent's crucial separation between phenomenal existence and objective evaluative authority."
+        }
+      },
+      "evidenceBasis": "The excerpt says certain things exist as appearances in consciousness, may correlate with physical states, and cannot be conceptually reduced to them.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-practical-account-without-objective-truth",
+      "sectionId": "section-practical-sufficiency",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Preference, cooperation, discovery, and scientifically informed flourishing can form a complete practical account without objective moral truth.",
+      "sourceSpan": {
+        "startEvent": 246,
+        "endEvent": 280
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The extended hypothetical restates O'Connor's first-person worldview and culminates in a direct challenge asking where objective morality enters the picture.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-explanatory-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-c009-phenomenal-value-reality"
+        ],
+        "components": [
+          {
+            "componentId": "con-practical-account-without-objective-truth-component-01",
+            "targetMoveId": "pro-c009-phenomenal-value-reality",
+            "text": "Explain why granting increasingly pleasurable conscious experience still requires objective moral truth rather than a complete preference-based practical story.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The hypothetical grants flourishing and increasing pleasure, then directly challenges where objective moral truth enters, contacting the intended normative consequence of phenomenal reality.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts the inference that real or improved experience requires an objective moral property."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The first-person hypothetical clearly presents a preference-based practical story and explicitly conditions the challenge on alleged objective moral truth."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The hypothetical is offered as a challenge to explanatory necessity, not as certain proof that no objective truth exists."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral truth could exist even if a person can flourish through preference and scientific guidance without invoking it.",
+        "decisiveQualification": "The hypothetical challenges explanatory necessity, not the bare metaphysical possibility of objective moral truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The practical-sufficiency challenge coherently undercuts necessity, though absence from the hypothetical does not by itself establish metaphysical nonexistence."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The extended hypothetical specifically demonstrates conceptual sufficiency, but it cannot alone establish empirical completeness across all moral and cooperative cases."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the con central explanatory-sufficiency bridge and ranks near the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move frames the strongest realist possibility conditionally and appropriately asks what additional explanatory role objective truth performs."
+        }
+      },
+      "evidenceBasis": "The excerpt describes open-minded acceptance of increasingly pleasurable experience as a complete story and asks where objective moral truth would enter that picture.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-c001-objective-experiential-navigation",
+      "sectionId": "section-practical-sufficiency",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Even in simple social conditions, actions open or close possibilities for collaboration and produce discoverably different experiential outcomes, permitting objectively better or worse navigation when better means movement away from the worst possible misery.",
+      "sourceSpan": {
+        "startEvent": 280,
+        "endEvent": 340
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit turn transition and sustained defense of the moral-landscape position identify Sam Harris as the speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-factual-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-practical-account-without-objective-truth",
+          "con-subjective-destination-objective-means",
+          "con-system-relative-value"
+        ],
+        "components": [
+          {
+            "componentId": "pro-c001-objective-experiential-navigation-component-01",
+            "targetMoveId": "con-practical-account-without-objective-truth",
+            "text": "Show what objective evaluative role remains after preference, cooperation, discovery, and instrumental science are granted.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-c001-objective-experiential-navigation-component-02",
+            "targetMoveId": "con-subjective-destination-objective-means",
+            "text": "Explain why better and worse experiential navigation is more than objective means serving a subjectively selected destination.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-c001-objective-experiential-navigation-component-03",
+            "targetMoveId": "con-system-relative-value",
+            "text": "Explain why objective facts about conscious outcomes establish objective value rather than merely system-relative effectiveness.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts practical sufficiency and the ends-means challenge by defining better navigation as movement away from universal worst misery, but it leaves the system-relative status of that definition substantially unanswered.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it contacts the decisive practical and destination components but leaves the distinct system-relative-value demand unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The navigation claim and stipulated meaning of better are explicit, but movement from simple social examples to everyone and objective direction broadens scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conditional definition of better is explicit, yet calling collaborative outcomes objectively better slightly exceeds the support for preference-independent normativity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Collaboration and misery avoidance may be objectively effective only relative to shared or system-level preferences.",
+        "decisiveQualification": "The reply stipulates better as movement away from everyone's worst misery but does not establish that this criterion is objectively prescriptive."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The conditional navigation argument is intelligible, but a material bridge remains from discoverably different outcomes to objectively right practical direction."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Collaboration and misery examples provide concrete support, while the universal worst-misery standard and objective prescription are largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move expressly attempts the pro motion bridge from conscious-outcome facts to objective evaluative guidance and is highly direct within that tier."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "It translates the emotivist vocabulary into experiential outcomes fairly, but it compresses the opponent's decisive distinction between objective effectiveness and objective value."
+        }
+      },
+      "evidenceBasis": "The locked excerpt says conduct can close collaboration, calls alternatives objectively better if better means navigating away from everyone's worst misery, and recasts outcomes as fewer boos and more yums.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the move ratings, response links, relevance findings, and identified inferential gaps.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional burden-completion criterion is established outside the scored locked moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any asserted residual would duplicate the already assessed gap between experiential facts and objective normativity.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual changes no bridge assessment because the relevant consequences are already captured."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the semantic, instrumental, higher-order, and practical claims have each been assessed.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional burden-completion criterion is established outside the scored locked moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any asserted residual would repeat the already assessed limits of the preference-relative explanatory account.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual changes no bridge assessment because the relevant consequences are already captured."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
