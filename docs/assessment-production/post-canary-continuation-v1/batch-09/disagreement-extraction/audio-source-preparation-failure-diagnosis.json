@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-audio-source-preparation-failure-diagnosis",
+  "status": "preserved-batch-09-debate-170-public-source-partial-file-normalization-probe-failure-diagnosed",
+  "batchNumber": 5,
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json",
+    "standingAuthorizationSha256": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "directIncrementalCostUsdMaximum": 0,
+    "diagnosisAuthorized": true,
+    "secondPublicSourceDownloadAttemptAuthorized": true
+  },
+  "failedInvocation": {
+    "command": "node scripts/prepare-assessment-production-post-canary-batch-09-audio-sources.mjs --write",
+    "exitCode": 1,
+    "attemptsAtStage": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "debateNumber": "170",
+    "sourceVideoId": "HoTILnpd3q8",
+    "category": "partial-public-source-normalization-output-rejected-by-ffprobe",
+    "failedFile": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.mp3",
+    "failedFileBytes": 354,
+    "failedFileSha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    "ffprobeExitStatus": 1,
+    "ffprobeErrorMarkers": [
+      "Failed to find two consecutive MPEG audio frames",
+      "Invalid data found when processing input"
+    ],
+    "downloadedIntermediatePreserved": false,
+    "normalizedSourceValid": false,
+    "sourcePreparationRecordWritten": false
+  },
+  "executionFrontier": {
+    "debate170PublicSourceAttemptConsumed": true,
+    "debate170ClipsCreated": 0,
+    "debate19PublicSourceAttemptConsumed": false,
+    "debate19ClipsCreated": 0,
+    "debate183PublicSourceAttemptConsumed": false,
+    "debate183ClipsCreated": 0,
+    "completeSourcesRequired": 3,
+    "completeClipsRequired": 4,
+    "completeSourcesAvailable": 0,
+    "completeClipsAvailable": 0
+  },
+  "preservedFiles": [
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.mp3",
+      "bytes": 354,
+      "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+    }
+  ],
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-item-preparation.json": "99947b786d45d3c0294123115ddde7e9d08adb0717bf9dfda730454ef73e564f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-item-preparation.json": "99947b786d45d3c0294123115ddde7e9d08adb0717bf9dfda730454ef73e564f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "scripts/prepare-assessment-production-post-canary-batch-09-audio-sources.mjs": "89b7c40887579bef59a74fbb89e8f5a4c3bf797c2de8389bcf314c2aee8559de",
+    "scripts/test-assessment-production-post-canary-batch-09-audio-sources.mjs": "40a4c15c16646eee12d989bc47776e48893c6376e75019b4ee4efb4dd7681751",
+    "scripts/diagnose-assessment-production-post-canary-batch-09-audio-source-preparation-failure.mjs": "868eeb4893c10d130cb7dd9d076895570ffdc0eec5816cdedc1c4ac5175f7fb3",
+    "scripts/test-assessment-production-post-canary-batch-09-audio-source-preparation-failure-diagnosis.mjs": "ab353d94de25c282f7c27512a8c62d14f75cde93cab7f463f131ef9243f7b7d8",
+    "scripts/lib/assessment-production-post-canary-batch-09-standing-authorization.mjs": "f838dbc18cf3fb66add5919fff5a6b64083ab6619474349e16644ebc34102db3",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "diagnosis": {
+    "deterministicHarnessOrTransportFailure": true,
+    "sourceIdentityChanged": false,
+    "speakerIdentityChanged": false,
+    "frozenClipWindowsChanged": false,
+    "paidServiceUsed": false,
+    "audioPlayedOrSemanticallyEvaluated": false,
+    "additionalPublicSourceAttemptRequiredForRecovery": true,
+    "additionalAttemptOutsideCurrentOneAttemptSourceBoundary": true
+  },
+  "authorization": {
+    "diagnosisValidation": true,
+    "correctionPreparation": true,
+    "correctionExecution": false,
+    "publicSourceDownload": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextRequiredAction": "prepare-and-hash-lock-one-bounded-batch-09-debate-170-public-source-transport-correction"
+}
