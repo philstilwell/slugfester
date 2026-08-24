@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-inventory-preparation-recovery-1",
+  "status": "batch-08-inventory-preparation-guide-correction-frozen-not-executed",
+  "frozenAt": "2026-08-24T01:48:17Z",
+  "recoveryLevel": 1,
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/preparation-recovery-1/diagnosis.json",
+    "sha256": "6dac80ddc5a90020d9cef69ce935f1688bf361421c67305d68672f44e3912a33"
+  },
+  "correction": {
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/preparation-recovery-1/proposed-candidate-sharded-inventory-guide.md",
+    "sourceSha256": "c0819bf40dae9c6871e7ecafa05bc5dbc354181355f93075a288c1537cd34c5d",
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "targetMustBeAbsentBeforeExecution": true,
+    "writeMode": "byte-for-byte-copy",
+    "writesMaximum": 1
+  },
+  "authenticatedHarness": {
+    "scripts/prepare-assessment-production-post-canary-batch-08-inventory.mjs": "50f224f3e70b77d1aa41ee80a52e1e04b8677035503c52b8da596dc889d63a62",
+    "scripts/run-assessment-production-post-canary-batch-08-inventory-plans.mjs": "2fc0f78adc10d3ceceaea6d479ace17f3727f3d74235bba8101ec6bf5f86beb6"
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9"
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "recursiveCorrectionsUsed": 0,
+    "previewValidationPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "discoveryOutputsChanged": false,
+    "candidateBundlesChanged": false,
+    "sourcePacketsChanged": false,
+    "scoresDerived": false,
+    "productionMutations": false
+  },
+  "nextAction": "activate-and-execute-this-guide-correction-once"
+}
