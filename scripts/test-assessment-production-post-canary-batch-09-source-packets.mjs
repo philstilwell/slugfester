@@ -163,6 +163,10 @@ for (const context of preparation.contexts) {
   assert.equal(packet.modelInputBoundary.legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable, true);
   assert.equal(validateV42219PartitionPlan(plan, fullLedgerBytes).status, "passed");
   assert(plan.chunks.length >= 2);
+  if (context.debateNumber === "19") {
+    assert.equal(plan.limits.contextEventsMaximum, 300);
+    assert.equal(plan.chunks.length, 2);
+  }
   assert.equal(plan.chunks.length, context.chunks.length);
   const rebuilt = buildProductionCanarySourcePacket({
     debate: { ...frozen, sourceEventCount: frozen.eventCount },

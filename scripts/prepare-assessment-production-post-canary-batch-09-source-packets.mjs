@@ -54,6 +54,9 @@ const ACTIVE_CONTROL = "scripts/lib/assessment-production-score-stability-policy
 const ACTIVE_CONTROL_TEST = "scripts/test-assessment-production-score-stability-policy-active.mjs";
 const PREPARATION = `${ROOT}/preparation-manifest.json`;
 const VALIDATION = `${ROOT}/validation.json`;
+const RECOVERY_ROOT = `${BATCH_ROOT}/source-preparation-recovery`;
+const RECOVERY_DIAGNOSIS = `${RECOVERY_ROOT}/failure-diagnosis.json`;
+const RECOVERY_PLAN = `${RECOVERY_ROOT}/correction-plan.json`;
 const SCRIPT = "scripts/prepare-assessment-production-post-canary-batch-09-source-packets.mjs";
 const TEST = "scripts/test-assessment-production-post-canary-batch-09-source-packets.mjs";
 const REQUIRED_ORDER = ["170", "134", "19", "114", "166", "89", "176", "183", "112", "17"];
@@ -82,6 +85,8 @@ const CONTROL_FILES = [
   "scripts/lib/assessment-production-score-stability-v2.1.1-discovery.mjs",
   "scripts/lib/assessment-production-score-stability-v2.1.2-discovery.mjs",
   "scripts/lib/assessment-production-post-canary-batch-09-source-preparation.mjs",
+  RECOVERY_DIAGNOSIS,
+  RECOVERY_PLAN,
   SCRIPT,
   TEST,
 ];
@@ -116,6 +121,8 @@ const continuationPolicy = JSON.parse(controlBytes[CONTINUATION_POLICY]);
 const canaryMaster = JSON.parse(controlBytes[CANARY_MASTER]);
 const discoveryAnalysis = JSON.parse(controlBytes[DISCOVERY_ANALYSIS]);
 const promotion = JSON.parse(controlBytes[PROMOTION]);
+const recoveryDiagnosis = JSON.parse(controlBytes[RECOVERY_DIAGNOSIS]);
+const recoveryPlan = JSON.parse(controlBytes[RECOVERY_PLAN]);
 
 assertV4(
   selection.status === "ninth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
@@ -163,6 +170,19 @@ assertV4(
     discoveryAnalysis.successorContract.automaticSemanticRepair === false,
   "Inherited bounded-end discovery contract drifted"
 );
+assertV4(
+  recoveryDiagnosis.status === "batch-09-source-preparation-preview-failure-diagnosed-single-chunk-transport-shape" &&
+    recoveryDiagnosis.affectedDebate.debateNumber === "19" &&
+    recoveryDiagnosis.findings.singleDefaultChunkProduced === true &&
+    recoveryDiagnosis.findings.noPreparationArtifactWasWritten === true &&
+    recoveryPlan.status === "frozen-batch-09-debate-19-source-partition-correction-prepared" &&
+    recoveryPlan.diagnosis.sha256 === sha256(controlBytes[RECOVERY_DIAGNOSIS]) &&
+    recoveryPlan.correction.debateNumber === "19" &&
+    recoveryPlan.correction.partitionOverrides.contextEventsMaximum === 300 &&
+    recoveryPlan.correctedSources[SCRIPT].sha256 === sha256(controlBytes[SCRIPT]) &&
+    recoveryPlan.correctedSources[TEST].sha256 === sha256(controlBytes[TEST]),
+  "Batch 9 source-partition recovery plan or corrected source authentication failed"
+);
 for (const [file, digest] of Object.entries(selection.sourceHashes)) await verifiedBytes(file, digest, `selection source ${file}`);
 if (shouldWrite) {
   for (const target of [ROOT, CACHE_LEDGER_ROOT, CACHE_PARTITION_ROOT, CACHE_TOKEN_ROOT]) {
@@ -196,14 +216,20 @@ for (const selected of selection.selected) {
     sourceComplexityBand: sourceBand(selected.eventCount),
   };
   const built = buildProductionCanarySourcePacket({ debate, transcriptPath, eventsPath, manifestPath, sourceLedgerPath: fullLedgerPath, transcriptBytes, eventsBytes, manifestBytes });
+  const partitionOverrides = selected.debateNumber === recoveryPlan.correction.debateNumber
+    ? structuredClone(recoveryPlan.correction.partitionOverrides)
+    : {};
   const plan = {
-    ...planV42219Partition(built.sourceLedgerBytes),
+    ...planV42219Partition(built.sourceLedgerBytes, partitionOverrides),
     debateNumber: selected.debateNumber,
     debateId: selected.debateId,
     sourceComplexityBand: debate.sourceComplexityBand,
     transportRoute: "partitioned-bounded-end-discovery",
   };
   validateV42219PartitionPlan(plan, built.sourceLedgerBytes);
+  if (selected.debateNumber === recoveryPlan.correction.debateNumber) {
+    assertV4(plan.chunks.length === 2, "Debate 19 corrected partition must contain exactly two chunks");
+  }
   const planPath = `${ROOT}/plans/debate-${selected.debateNumber}.json`;
   const planBytes = jsonBytes(plan);
   const packet = structuredClone(built.packet);

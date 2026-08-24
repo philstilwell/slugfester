@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-source-preparation-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-source-preparation-recovery",
+  "status": "frozen-batch-09-debate-19-source-partition-correction-prepared",
+  "frozenAt": "2026-08-24T17:12:00Z",
+  "baselineCommit": "21a49059",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation-recovery/failure-diagnosis.json",
+    "sha256": "38cc2f346bce5dbb62509c867eb29d730d473d593767947ee823cfa3d0adcffe"
+  },
+  "correction": {
+    "debateNumber": "19",
+    "classification": "deterministic-execution-harness-transport-shape-correction",
+    "partitionOverrides": {
+      "contextEventsMaximum": 300
+    },
+    "expectedChunks": 2,
+    "reason": "The 379-event source fits one default chunk, while the unchanged shared generalized-partition validator requires at least two. A Debate 19-only 300-event context ceiling deterministically creates two bounded chunks without changing source rows or semantic content."
+  },
+  "preservation": {
+    "sharedValidatorByteIdentical": true,
+    "boundaryContextEventsUnchanged": true,
+    "contextBytesMaximumUnchanged": true,
+    "candidateLimitUnchanged": true,
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "otherNinePartitionPlansUnchangedFromDefault": true,
+    "selectionPacketsSchemasSourcesScoresAndIdentitiesUnchanged": true
+  },
+  "correctedSources": {
+    "scripts/prepare-assessment-production-post-canary-batch-09-source-packets.mjs": {
+      "sha256": "046bb86e25a59ca3284eb5e84206b2646676956dc3e456c48f74dbabc52e8ae8"
+    },
+    "scripts/test-assessment-production-post-canary-batch-09-source-packets.mjs": {
+      "sha256": "ceee262bba640ef49b6d178e903da785ff245317b4c96444360d5d02ab734d58"
+    },
+    "scripts/lib/v42219-generalized-partition.mjs": {
+      "sha256": "f1a2e70a8c4e21b7823d9374bb2e6e4b5fd77f2fe63e98d8378362cfb50a4d6b",
+      "rewriteAuthorized": false
+    }
+  },
+  "executionControls": {
+    "previewAttemptsMaximum": 1,
+    "writeAttemptsMaximum": 1,
+    "ordinaryRetriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "perform-one-corrected-source-preparation-preview-then-freeze-and-validate-source-packets-if-it-passes"
+}
