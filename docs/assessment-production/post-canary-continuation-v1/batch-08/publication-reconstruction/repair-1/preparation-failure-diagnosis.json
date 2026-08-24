@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-repair-preparation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-repair-1",
+  "status": "preserved-batch-08-publication-repair-preparation-missing-local-manual-diagnosed",
+  "diagnosedAt": "2026-08-24T13:09:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-preparation-missing-frozen-local-input",
+    "errorCode": "ENOENT",
+    "missingPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/manual.md",
+    "repairPacketsWritten": 0,
+    "modelContextsExecuted": 0
+  },
+  "boundedCorrection": {
+    "correctionLevel": 1,
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/repair-1/manual.md",
+    "sourceSha256": "5b47ecd7c1e3d114bad445451bb8f76ff115f6eba0f29e3157d16e0e0c7bc647",
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/manual.md",
+    "onlyTransformation": "replace the Batch 7 label with Batch 8",
+    "proposedSha256": "b1597c8dd64f70cb5ad02cf2334fcf7faa1eec0e3d5bbf3f435cc8ef78e469c0",
+    "attemptsMaximum": 1,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-08-publication-repair.mjs": "ed6b0e6bb5cdfaff60763ee1716b881d4058bf495f3d60faa40ce1bdd604c33b",
+    "scripts/lib/assessment-production-post-canary-batch-08-publication-repair.mjs": "5341fa074ae5f64a650fd28c55ac3f354d2aeccdf596690c056260fb99c8ad61"
+  },
+  "nextAuthorizedAction": "write-the-hash-locked-repair-manual-and-run-one-corrected-repair-preparation-preview"
+}
