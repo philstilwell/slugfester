@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-120-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-120-publication-resumption-2-repair-1",
+  "contextIndex": 1,
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "debateNumber": "120",
+  "debateId": "mclatchie-oconnor-christianity-true-2019",
+  "repairType": "novelty-explanation-minimum-words",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-120.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-120.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "aiExtension.pro.premises[3].novelty.explanation"
+    ],
+    "writableFieldCount": 1,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "noveltyExplanationTargetWords": [
+      10,
+      18
+    ],
+    "noveltyExplanationAcceptanceWords": [
+      8,
+      35
+    ],
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 1
+  },
+  "corrections": [
+    {
+      "field": "aiExtension.pro.premises[3].novelty.explanation",
+      "type": "novelty-explanation-minimum-words",
+      "itemId": "ai120-pro-premise-4",
+      "side": "pro",
+      "premiseIndex": 3,
+      "originalExplanation": "Repairs the incomplete slavery and conquest reconciliations.",
+      "originalWords": 7,
+      "itemText": "Defenses of biblical morality must interpret each disputed provision in its full legal and literary context while acknowledging any residual moral cost rather than appealing to context generically.",
+      "classification": "repairs",
+      "sourceMoveIds": [
+        "pro-exodus-injury-protection",
+        "pro-canaanite-evacuation-context",
+        "con-slave-beating-permission"
+      ]
+    }
+  ]
+}
