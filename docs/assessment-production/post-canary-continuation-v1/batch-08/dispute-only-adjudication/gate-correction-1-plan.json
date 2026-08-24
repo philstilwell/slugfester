@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-adjudication-gate-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-dispute-only-adjudication",
+  "status": "frozen-batch-08-adjudication-gate-correction-1-prepared",
+  "frozenAt": "2026-08-24T12:51:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/gate-failure-diagnosis.json",
+    "sha256": "d17c18e6da22414d5f2bf0ade8bb3250bcf06cbff045fdba8570be2db99862ec"
+  },
+  "correction": {
+    "level": 1,
+    "file": "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs",
+    "preimageSha256": "4bf0e31a92f0097a11371145662940f34dc32d25af02b1fb36e3f24d1dec4194",
+    "proposedSha256": "d44d1f5d70fe706c94608b5aa688ee155d863427f494f41a23d74680af75afa0",
+    "exactReplacement": {
+      "from": "assert.equal(analysis.evidenceBoundary.audioTranscriptInputs, 2);",
+      "to": "assert.equal(analysis.evidenceBoundary.audioTranscriptInputs, 6);"
+    },
+    "writableAssertions": 1,
+    "validatorMeaningChanged": false,
+    "protectedEvidenceChanged": false
+  },
+  "executionControls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "modelExecution": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "completeAdjudicationCohortReplayRequired": true
+  },
+  "lockedAcceptedEvidence": {
+    "modelExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/model-execution.json",
+      "sha256": "0c304088c07ae671e3441d0e695f23a3f82f09cb20c275b69358c3e907ce4266"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/analysis.json",
+      "sha256": "23b8eeeea3222b3ebb2e140ae7d0a77eb6d4a3ffeeb92d3115d39ed43820286e"
+    },
+    "validContexts": 10,
+    "disputedMoves": 174,
+    "candidateSelections": 533,
+    "audioTranscriptInputs": 6,
+    "scoresDerived": 0
+  },
+  "nextAuthorizedAction": "apply-exact-one-assertion-correction-and-run-one-complete-adjudication-gate-replay"
+}
