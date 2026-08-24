@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-resumption-2-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-resumption-2",
+  "status": "batch-08-publication-resumption-2-or-cohort-validation-failed",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 5,
+    "contextsPassed": 4,
+    "contextsFailed": 1,
+    "contextsUnattempted": 1,
+    "attempts": 5,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "modelAuthoredScores": 0
+  },
+  "acceptedDebates": [
+    {
+      "debateNumber": "88",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merged/debate-88.json",
+      "outputSha256": "2b5567b41ae7bc1089331a024f46520a19e6d897abc234bf9599d60ce962ee7e",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-88.json",
+      "priorAccepted": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "88",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 945,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "194",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-194.json",
+      "outputSha256": "80e025d34af91b10553a56c3b3c638cb462bc958d219cef82db38b5baa36c7cf",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-194.json",
+      "priorAccepted": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "194",
+        "moves": 17,
+        "critiques": 17,
+        "minimumCritiqueCharacters": 886,
+        "tags": 1,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "137",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-137.json",
+      "outputSha256": "2ceba5d3b3a61415faf603282dce35268bbbbb33b1f04b42eb8494417d3be137",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-137.json",
+      "priorAccepted": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "137",
+        "moves": 19,
+        "critiques": 19,
+        "minimumCritiqueCharacters": 939,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "08",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/repair-1/merged/debate-08.json",
+      "outputSha256": "bb1022006483c6755d3185906d895081fd3254de4e7d7f33d5608c7614a75434",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-08.json",
+      "priorAccepted": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "08",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 935,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    }
+  ],
+  "cohortValidation": {
+    "status": "failed",
+    "debates": 4,
+    "moves": 76,
+    "critiques": 76,
+    "exactSourceQuotes": 8,
+    "overallCommentarySides": 8,
+    "aiExtensionSides": 8,
+    "modelAuthoredScores": 0,
+    "expectedDebateOrder": [
+      "88",
+      "194",
+      "137",
+      "08",
+      "65",
+      "140",
+      "156",
+      "120",
+      "118",
+      "145"
+    ],
+    "immutableScoresChanged": null,
+    "lockedScoresUnchanged": null
+  },
+  "failureMessage": null,
+  "cost": {
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0
+  },
+  "authorization": {
+    "publicationCompilationPreparationAndExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "repairPacketPreparation": false,
+    "correctionModelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-after-failed-batch-08-publication-resumption-2-output"
+}
