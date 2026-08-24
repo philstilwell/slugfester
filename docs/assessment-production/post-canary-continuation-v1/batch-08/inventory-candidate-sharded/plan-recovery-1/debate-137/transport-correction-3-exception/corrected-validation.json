@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-batch-08-debate-137-inventory-plan-transport-final-exception-validation",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-137-inventory-plan-transport-final-exception",
+  "status": "final-exception-corrected-recovery-validation-passed",
+  "validatedAt": "2026-08-24T02:18:04.000Z",
+  "branch": "main",
+  "execution": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/transport-correction-3-exception/execution-record.json",
+  "command": "node scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs validate",
+  "correctedRecoveryValidationPasses": 1,
+  "validation": {
+    "status": "passed-debate-137-recovery-activation-awaiting-model-execution",
+    "contexts": 2,
+    "shards": [
+      "routes",
+      "sections"
+    ],
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true
+    },
+    "attemptsPerContext": 1,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authentication": {
+    "unchangedPreparationManifestAuthenticatesOriginalGitBlob": true,
+    "originalRunnerCommit": "b803526a0ac4784aa1d3c351bc23d9fc7e0aad1d",
+    "originalRunnerSha256": "d366faca1eff97699b6b7703330533ae9d3fc5a5ca357e7728533c0f4c4e2333",
+    "currentRunnerSha256": "7aea5085853e36c82c2870f7ddae92c2c138fd1f459d8916988c5a64612abd3f",
+    "currentActivationSha256": "066a7fe714ff9c2f551647c57edfcae1f7a050dd2fb19f6a2059aa62df65d903",
+    "currentActivationAuthenticatesCurrentRunner": true
+  },
+  "packetsSchemasSourcesCandidatesScoresOrAcceptedPlansChanged": false,
+  "retries": 0,
+  "reruns": 0,
+  "timeoutExtensions": 0,
+  "modelContextsExecutedDuringCorrection": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "execute-two-already-frozen-debate-137-routes-and-sections-contexts-once"
+}

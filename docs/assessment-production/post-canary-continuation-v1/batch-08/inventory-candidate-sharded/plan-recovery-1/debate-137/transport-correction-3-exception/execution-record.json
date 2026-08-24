@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-batch-08-debate-137-inventory-plan-transport-final-exception-execution",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-137-inventory-plan-transport-final-exception",
+  "status": "frozen-final-exception-correction-executed-awaiting-one-recovery-validation-pass",
+  "executedAt": "2026-08-24T02:18:03.000Z",
+  "branch": "main",
+  "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/transport-correction-3-exception/execution-preparation-manifest.json",
+  "preparationSha256": "44714e4fd867d90e891e9fe465167802f759380afc1e18e8bd4f504cc0d40bb0",
+  "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/transport-correction-3-exception/correction-plan.json",
+  "correctionPlanSha256": "ebc609fb4e76509b0ef28a0d09195edad0d71c3c9993f347fb1975a7a0e26d3c",
+  "correctionAttemptCount": 1,
+  "correctedRecoveryValidationPasses": 0,
+  "retries": 0,
+  "reruns": 0,
+  "timeoutExtensions": 0,
+  "preimages": {
+    "scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs": "302e2d05a6b7e98b60c0f216f331c3d7470766c9f13bc034d2237c6c60057b71",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/execution-activation.json": "cbbaf9f309226ec0d70f88bdb4c4b97eb1349f7b3df5437160098bc2d4bc72ff",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/execution-preparation-manifest.json": "b194bde2f8a756f789d178f0bbe346cb802e1e616f04ac21bee26830404a7c8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/transport-correction-2/post-correction-validation-failure.json": "fa66ccbc30624656de4902c0e4e17cb9c464127c7b8df921cea120eb35fa4c57",
+    "git:b803526a0ac4784aa1d3c351bc23d9fc7e0aad1d:scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs": "d366faca1eff97699b6b7703330533ae9d3fc5a5ca357e7728533c0f4c4e2333"
+  },
+  "outputs": {
+    "scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs": "7aea5085853e36c82c2870f7ddae92c2c138fd1f459d8916988c5a64612abd3f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/execution-activation.json": "066a7fe714ff9c2f551647c57edfcae1f7a050dd2fb19f6a2059aa62df65d903"
+  },
+  "originalGitBlobAuthenticationPassed": true,
+  "currentActivationAuthenticationPrepared": true,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "perform-exactly-one-corrected-original-recovery-validation-pass"
+}

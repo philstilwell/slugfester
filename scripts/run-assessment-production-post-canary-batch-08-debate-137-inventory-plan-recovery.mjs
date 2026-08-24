@@ -282,23 +282,17 @@ async function loadPreparation({ requireFutureAbsent = false } = {}) {
     "Debate 137 recovery preparation controls drifted"
   );
   for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-    const bytes = await readFile(file);
     if (file === RUNNER) {
-      const currentSource = bytes.toString("utf8");
-      const currentVersionLiteral = '"codex-cli 0.149.0-alpha.4.1"';
-      const originalVersionLiteral = '"codex-cli 0.148.0-alpha.15"';
-      assertV4(
-        currentSource.split(currentVersionLiteral).length - 1 === 1,
-        "recovery runner preimage reconstruction boundary drifted"
-      );
-      const reconstructedPreimage = Buffer.from(
-        currentSource.replace(currentVersionLiteral, originalVersionLiteral)
+      const originalRunnerBlob = execFileSync(
+        "git",
+        ["show", "b803526a0ac4784aa1d3c351bc23d9fc7e0aad1d:" + RUNNER]
       );
       assertV4(
-        sha256(reconstructedPreimage) === digest,
-        `${file}: reconstructed recovery source preimage drifted`
+        sha256(originalRunnerBlob) === digest,
+        `${file}: preserved Git runner blob does not authenticate the preparation preimage`
       );
     } else {
+      const bytes = await readFile(file);
       assertV4(sha256(bytes) === digest, `${file}: recovery source drifted`);
     }
   }
