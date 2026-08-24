@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-discovery-activation-preflight-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-09-discovery-preparation-recovery",
+  "status": "batch-09-discovery-activation-preflight-third-failure-stopped-source-preimage-rule-missing",
+  "diagnosedAt": "2026-08-24T17:44:00Z",
+  "failedCommand": "node scripts/run-assessment-production-post-canary-batch-09-discovery.mjs preflight",
+  "exitCode": 1,
+  "error": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs: source drifted",
+  "classification": "downstream-execution-runner-missing-frozen-test-preimage-authentication",
+  "authenticatedEvidence": {
+    "executionPreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/execution-preparation-manifest.json",
+      "sha256": "3f7ec36cd2d8f5c95c635b77f9b3babfc4caad2420cf4b816d47048ca9ea3784"
+    },
+    "manifestLockedOriginalTestSha256": "78624075def1bd9e5e459527d040c4a0a4eb2743697b5325d9cfd770288271cb",
+    "reconstructedOriginalTestSha256": "78624075def1bd9e5e459527d040c4a0a4eb2743697b5325d9cfd770288271cb",
+    "acceptedCurrentTestSha256": "cc2cf4c170227f5a7dfbfa2d6511d145fd254c06a885d20967e876f9fed40be0",
+    "recursiveCorrectionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/preparation-correction-2-plan.json",
+      "sha256": "431c74fa8acd8b74ed1cefbb63f89269c3f8218431a1d597b5ad08653c10eb4c"
+    },
+    "runnerSha256": "7b0b5d716d410c4c917e9c18ee223979fff685d060ac8ccab9795958c0c01683"
+  },
+  "findings": {
+    "originalManifestSourceAuthenticationCanPassByCommitPreimage": true,
+    "acceptedCurrentTestCanPassSeparateCorrectionPlanAuthentication": true,
+    "runnerCurrentlyAttemptsDirectCurrentFileAuthentication": true,
+    "sourcePacketOrManifestFailure": false,
+    "validationArtifactPassed": true,
+    "activationWritten": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0
+  },
+  "stopRule": {
+    "thirdFailureSameUnderlyingProblemReached": true,
+    "furtherAutomaticRecoveryAuthorized": false,
+    "newUserApprovalRequired": true
+  },
+  "proposedException": {
+    "scope": "Update only the discovery runner's preparation-source authentication so the manifest-locked original test is reconstructed from commit 572fc0b5e965bf8fd6f33b17549b2cf1d279128a and the accepted current test is separately authenticated through preparation-correction-2-plan.json.",
+    "manifestRewrite": false,
+    "testRewrite": false,
+    "packetSchemaSourceOrModelSettingChange": false,
+    "attemptsMaximum": 1,
+    "ordinaryRetry": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextRequiredAction": "obtain-one-time-third-failure-exception-for-batch-09-discovery-runner-preimage-authentication"
+}
