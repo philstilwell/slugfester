@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-viewport-correction-2-activation",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-recursive-rendering-evidence-diagnostic-correction-authorized",
+  "authorizedAt": "2026-08-24T15:12:23Z",
+  "activationCommit": "0a86cda1342237d3511ae233c702db53e71f72b9",
+  "recoveryLevel": 2,
+  "context": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "authenticatedInputs": {
+    "correctionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-viewport-correction-2/correction-plan.json",
+      "sha256": "c5f84ae36bc77988e2cbb4681700598d6e6b797966919e3db78bffccc1fcee78"
+    },
+    "diagnosis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-viewport-correction-2/diagnosis.json",
+      "sha256": "0cacf2980c04d65a10e399580a8cdfb438711af7d24b29f789a6ce10982c3ee8"
+    },
+    "correctionRunner": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-browser-runner-correction-2.mjs",
+      "sha256": "5f05a75eaeef37bfaee628aca99487c19c109d0e03bfc177fe51e5d3ac05b9d4"
+    },
+    "originalActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/execution-activation.json",
+      "sha256": "5e6a8b6756abbedccb6de9935ba98f961014e249be0f4f95e986c1d0fc4191ae"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/packets/debate-88.json",
+      "sha256": "08fb1c4fcbf63cfda9e5f25baf37085c3ac07f5c553684b415cd774bcf5c9e18"
+    }
+  },
+  "executionControls": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "validatorMeaningChanged": false,
+    "persistRejectedEvidenceOnlyOnFailure": true,
+    "reuseRejectedEvidenceAsAccepted": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-one-recursive-debate-88-desktop-rendering-correction"
+}
