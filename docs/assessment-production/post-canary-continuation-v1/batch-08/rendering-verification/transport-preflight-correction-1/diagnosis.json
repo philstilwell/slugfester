@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-transport-preflight-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-browser-controller-documentation-precondition-diagnosed",
+  "diagnosedAt": "2026-08-24T15:02:15Z",
+  "failedContext": {
+    "debateNumber": "88",
+    "viewportName": "desktop",
+    "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/packets/debate-88.json",
+    "packetSha256": "08fb1c4fcbf63cfda9e5f25baf37085c3ac07f5c553684b415cd774bcf5c9e18"
+  },
+  "classification": "browser-controller-documentation-precondition-rejected-before-first-cdp-command",
+  "preservedError": "Required documentation has not been read: capabilities/tab/cdp",
+  "evidencePersistence": {
+    "result": false,
+    "collapsedScreenshot": false,
+    "openScreenshot": false
+  },
+  "meaning": "The browser controller blocked raw Chrome DevTools access until its packaged capability instructions were read. The runner closed its temporary tab and persisted no viewport evidence, so this is a transport preflight interruption rather than a rendering validation result.",
+  "protectedInputsChanged": false,
+  "paidServicesUsed": false,
+  "directIncrementalCostUsd": 0
+}

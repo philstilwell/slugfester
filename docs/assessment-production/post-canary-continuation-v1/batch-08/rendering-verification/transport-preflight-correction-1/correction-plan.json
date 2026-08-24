@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-transport-preflight-correction-1-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-browser-controller-documentation-precondition-correction-prepared",
+  "frozenAt": "2026-08-24T15:02:15Z",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/transport-preflight-correction-1/diagnosis.json",
+  "correction": {
+    "action": "authenticate the packaged capabilities/tab/cdp guidance as read, then resume only the interrupted Debate 88 desktop viewport under the unchanged frozen runner",
+    "ordinaryRetry": false,
+    "recoveryLevel": 1,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "runnerChanges": 0,
+    "packetChanges": 0,
+    "activationChanges": 0
+  },
+  "authenticatedInputs": {
+    "browserDocumentation": {
+      "identifier": "capabilities/tab/cdp",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "characters": 2232
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/execution-activation.json",
+      "sha256": "5e6a8b6756abbedccb6de9935ba98f961014e249be0f4f95e986c1d0fc4191ae"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/packets/debate-88.json",
+      "sha256": "08fb1c4fcbf63cfda9e5f25baf37085c3ac07f5c553684b415cd774bcf5c9e18"
+    },
+    "runner": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-browser-runner.mjs",
+      "sha256": "cc3d54380fee848cfcfc94953d7301d780547acf00827b47d24488b8998d0ac0"
+    }
+  },
+  "outputPaths": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-collapsed.jpg",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-open.jpg"
+  ],
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "execute-one-browser-controller-documentation-precondition-correction-and-resume-debate-88-desktop"
+}
