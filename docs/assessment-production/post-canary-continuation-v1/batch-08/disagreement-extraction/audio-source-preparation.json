@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-08-decomposed-consensus",
+  "status": "prepared-six-post-canary-batch-08-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "deae8859974c6d80cd9c23acd49633c653027b61",
+  "userAuthorization": {
+    "instruction": "I approve.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "standingAuthorizationSha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sourceAudioFilesAuthorized": 3,
+    "clipsAuthorized": 6,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation.json": "cd6fc5e1cfeae32b40268f61314d3b51107f8ba714e035e8353de9ce95fd82c1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-items.json": "b9802fc5366826131cf0238873ee4978418457a3da312165f89d13d3bde94947",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "scripts/prepare-assessment-production-post-canary-batch-08-audio-sources.mjs": "527e49be454949830a4f44c48de7e7b1e603735ef3e0f659461fdd7821259c02",
+    "scripts/test-assessment-production-post-canary-batch-08-audio-sources.mjs": "b189c217252b207874a68db8705bbe6dcbe847364fcfbfe38d9608c2ba917913",
+    "scripts/prepare-assessment-production-post-canary-batch-08-audio-work-items.mjs": "182d04cfbddc35366d51aeffa867f4d4abdcb91ac64e2628b9ee051f6da3d76c",
+    "scripts/test-assessment-production-post-canary-batch-08-audio-work-items.mjs": "0f9de21ce81158a85568144d330a21de387404e847cf1474b8aefa9efff690b9",
+    "scripts/lib/assessment-production-post-canary-batch-08-audio-work-items.mjs": "6cbd9cc03f7c43d00788c6c254f0a193ce19bb5bad63d3af5f8d2b36a6314a96",
+    "scripts/lib/assessment-production-post-canary-batch-08-standing-authorization.mjs": "4edac4f812f15860515be5a73d097f4f9a34f2043d57bff0f04dff50c6f31b87",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation-recovery-1/preimage-reconstruction-rule.json": "c101fd57809e25e4dfca8432f81bdbea57ec4e44c88c6a5a4eff28dfd02eebec"
+  },
+  "workItemSourceHashesReplayed": 82,
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormat": "bestaudio/best",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "137",
+      "videoId": "Pba-YNVWaa0",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "156",
+      "videoId": "elMi_IzlD40",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "120",
+      "videoId": "woqy13ZkeqM",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "137",
+      "videoId": "Pba-YNVWaa0",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/audio/source.mp3",
+      "sourceAudioSha256": "f421959f18a612c7871433b1def2666ea3f5a1d4d24fa87fd511a23e9b69015f",
+      "durationSeconds": 8830.130813,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "156",
+      "videoId": "elMi_IzlD40",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/audio/source.mp3",
+      "sourceAudioSha256": "06e3123882e45ee6aadc3dcbcd08d37d59a694df93044ff02bedecca7d05cb57",
+      "durationSeconds": 3041.930938,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "120",
+      "videoId": "woqy13ZkeqM",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/audio/source.mp3",
+      "sourceAudioSha256": "8f58ce94400f118551d8ad4cb1ebc8de38b7e127008cd7bd18d5cd2d8073672c",
+      "durationSeconds": 4734.525563,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "sourceVideoId": "Pba-YNVWaa0",
+      "moveId": "con-burial-tomb-source-problems",
+      "expectedSpeaker": "Robert Price",
+      "proposition": "The burial and empty-tomb accounts are not established facts because their narrative sources are historically problematic and alternative literary explanations remain available.",
+      "verificationExcerpt": "burial of Jesus I mean it's stated in a narrative source which seems everywhere else to be filled with Marbles and so forth or historical difficulties there and anachronisms there various problems with it it just seems to me that sure a man named Joseph of arthea could have buried Jesus but uh you know there's no particular reason to think so because of the quality of the source the same thing with the empty tomb",
+      "sourceSpan": {
+        "startEvent": 3183,
+        "endEvent": 3229
+      },
+      "clipWindow": {
+        "startMs": 8128739,
+        "endMs": 8245740,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-burial-tomb-source-problems.mp3",
+      "clipSha256": "61a7ec1df943d6801aa0cd314326ccb58aea1520d6615779808df1e6e9c033d3",
+      "plannedDurationSeconds": 117.001,
+      "durationSeconds": 117.002938,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "sourceVideoId": "Pba-YNVWaa0",
+      "moveId": "con-gospel-appearances-low-value",
+      "expectedSpeaker": "Robert Price",
+      "proposition": "Gospel appearance accounts have limited historical value because visions of Jesus are common and the narratives contain redactional and legendary material.",
+      "verificationExcerpt": "people have visions of Jesus all the time as I admit it just seems to me that these things are deposits of redactional and legendary material so that I do not see the gospel texts as good evidence for for appearances that someone had maybe they did see the Risen Jesus maybe Oral Roberts saw him I I don't have any just that it doesn't have much vertical value and finally what",
+      "sourceSpan": {
+        "startEvent": 3230,
+        "endEvent": 3239
+      },
+      "clipWindow": {
+        "startMs": 8238660,
+        "endMs": 8268819,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-gospel-appearances-low-value.mp3",
+      "clipSha256": "daeda00aa46416b8505b828fa7233e4b5a8ec4d397326a8a924ffc62dd416ba1",
+      "plannedDurationSeconds": 30.159,
+      "durationSeconds": 30.159,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "sourceVideoId": "elMi_IzlD40",
+      "moveId": "con-conscious-capacity-grounds-moral-distinctions",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Secular morality can ground concern in the happiness and suffering of conscious creatures and use differences in experiential and neurological capacity to distinguish the interests of humans, animals, embryos, and fetuses.",
+      "verificationExcerpt": "a concern for the happiness and suffering of other creatures that can feel happiness and suffering in whatever degree and then it becomes relevant to wonder well what degree uh of happiness or suffering is possible in a chicken or in a person or in a a three-day old embryo well this is Peter singer's view uh who loves your book and now Peter so he argues that hey animals suffer",
+      "sourceSpan": {
+        "startEvent": 474,
+        "endEvent": 525
+      },
+      "clipWindow": {
+        "startMs": 1099299,
+        "endMs": 1233780,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conscious-capacity-grounds-moral-distinctions.mp3",
+      "clipSha256": "87494a65b5c5d72955bfa87a87888fa35092db47773304b97d4ce6c6a20499da",
+      "plannedDurationSeconds": 134.481,
+      "durationSeconds": 134.481,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "sourceVideoId": "elMi_IzlD40",
+      "moveId": "con-conception-dogma-obstructs-abortion-inquiry",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Faith-based certainty that a fully formed soul exists at conception polarizes abortion policy and obstructs nuanced discussion of ethically relevant differences across fetal development.",
+      "verificationExcerpt": "faith-based Dogma into this into these questions of policy secular people have been forced not to talk sensibly about the the very real ethical issues that that surround abor so it's religious people's fault that secular people are not sensible because yes that's remarkable that that is that is a first I have to say well Dennis they're so embattled by the dogmatism which which says that at the moment of conception a a soul is fully formed",
+      "sourceSpan": {
+        "startEvent": 530,
+        "endEvent": 547
+      },
+      "clipWindow": {
+        "startMs": 1234500,
+        "endMs": 1289580,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conception-dogma-obstructs-abortion-inquiry.mp3",
+      "clipSha256": "7a963a41f6d8a1b25b2357d84f7493c90616c77f9cd6816ed320eb782a469acc",
+      "plannedDurationSeconds": 55.08,
+      "durationSeconds": 55.08,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "sourceVideoId": "elMi_IzlD40",
+      "moveId": "pro-scripture-character-historical-progress",
+      "expectedSpeaker": "Dennis Prager",
+      "proposition": "The Bible's exceptional moral character supports its divine authorship, and rules that appear primitive in isolation can constitute major moral advances when interpreted within their historical setting.",
+      "verificationExcerpt": "all these injunctions to kill people for working on the Sabbath or to practice slavery well I could I would be happy to explain each one in its turn and in fact have devoted the last 20 years to doing so I mean but so so that for example eye for an eye which is considered by to be primitive I'm sure you're one of them was exact was in fact one of the great moral advancements of",
+      "sourceSpan": {
+        "startEvent": 1121,
+        "endEvent": 1133
+      },
+      "clipWindow": {
+        "startMs": 2641020,
+        "endMs": 2677020,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/pro-scripture-character-historical-progress.mp3",
+      "clipSha256": "53536ba3642f5132546d9a2d5701b8a2a4c33024ea085681d4aaf724573e3b40",
+      "plannedDurationSeconds": 36,
+      "durationSeconds": 36,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "120",
+      "debateId": "mclatchie-oconnor-christianity-true-2019",
+      "sourceVideoId": "woqy13ZkeqM",
+      "moveId": "con-conditional-importance-parity",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "Christianity's supreme importance if true gives no distinctive reason to believe or prioritize it, because competing religions and comprehensive ideologies have the same conditional importance.",
+      "verificationExcerpt": "religion if other religions are true as well then they become the most important thing many people would claim that if we can create a political system that would solve all of our problems then it would be the most important thing so communism is either the most important thing on in the world or it's just nothing it's like it's the same for any ideology like the whole point of",
+      "sourceSpan": {
+        "startEvent": 1928,
+        "endEvent": 1954
+      },
+      "clipWindow": {
+        "startMs": 4157990,
+        "endMs": 4210890,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/clips/con-conditional-importance-parity.mp3",
+      "clipSha256": "b384a565b0e2ff0437feb01672c5f0f8bf84b97aa9345576567150c84c03bda5",
+      "plannedDurationSeconds": 52.9,
+      "durationSeconds": 52.9,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 3,
+    "sourceDownloads": 3,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 3,
+    "clips": 6,
+    "clipMinutes": 7.0937,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-08-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
