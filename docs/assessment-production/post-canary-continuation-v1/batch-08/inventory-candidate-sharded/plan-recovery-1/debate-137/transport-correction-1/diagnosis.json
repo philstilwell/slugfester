@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-batch-08-debate-137-inventory-plan-recovery-transport-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery-transport-correction-1",
+  "status": "pre-model-codex-cli-version-assertion-mismatch-diagnosed",
+  "frozenAt": "2026-08-24T02:08:46.000Z",
+  "checkpointCommit": "928a6ff245d915b7cba68b16f615ee66e462bda6",
+  "branch": "main",
+  "debateNumber": "137",
+  "observedFailure": {
+    "command": "node scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs run",
+    "exitCode": 1,
+    "error": "Codex CLI version drifted",
+    "expectedVersion": "codex-cli 0.148.0-alpha.15",
+    "observedVersion": "codex-cli 0.149.0-alpha.4.1",
+    "modelContextsStarted": 0,
+    "outputFilesWritten": 0,
+    "retries": 0,
+    "timeoutExtensions": 0
+  },
+  "deterministicDiagnosis": {
+    "category": "pre-model-execution-transport-version-assertion-mismatch",
+    "cause": "The recovery runner retained the audited Batch 4 Codex CLI version literal while Batch 8 already uses the current bundled Codex CLI.",
+    "correctedField": "runner Codex CLI version equality literal",
+    "activationCredentialField": "sourceHashes[\"scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs\"]",
+    "validatorMeaningChanged": false,
+    "packetSchemaSourceCandidateOrScoreChanged": false
+  },
+  "evidence": {
+    "runner": "scripts/run-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery.mjs",
+    "runnerSha256": "d366faca1eff97699b6b7703330533ae9d3fc5a5ca357e7728533c0f4c4e2333",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/execution-activation.json",
+    "activationSha256": "3fc7ce7c3bca3d6375dd7d000a3aedf4aef14235898a8eaec07ce45876ffbad8",
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "standingAuthorizationSha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9"
+  },
+  "costs": {
+    "directIncrementalCostUsd": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0
+  },
+  "nextAuthorizedAction": "freeze-one-transport-version-assertion-and-activation-credential-correction"
+}
