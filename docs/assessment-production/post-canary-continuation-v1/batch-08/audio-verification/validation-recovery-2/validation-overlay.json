@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-assessment-production-deterministic-transcript-validation-overlay",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-2",
+  "status": "frozen-batch-08-two-empty-segment-validation-overlay",
+  "target": {
+    "debateNumber": "156",
+    "moveId": "con-conscious-capacity-grounds-moral-distinctions",
+    "transcriptSha256": "5eb1d37866eb01a2801652efa1f987944355465be1e9df252deac45b3b5789b8",
+    "segments": [
+      {
+        "segmentIndex": 33,
+        "segment": {
+          "id": "seg_33",
+          "end": 104.572,
+          "speaker": "Sam Harris",
+          "start": 104.522,
+          "text": "",
+          "type": "transcript.text.segment"
+        }
+      },
+      {
+        "segmentIndex": 52,
+        "segment": {
+          "id": "seg_52",
+          "end": 117.142,
+          "speaker": "Sam Harris",
+          "start": 116.942,
+          "text": "",
+          "type": "transcript.text.segment"
+        }
+      }
+    ]
+  },
+  "rule": "For deterministic validation only, authenticate the original transcript hash and both exact empty segments, clone the transcript in memory, omit the two segments in descending index order, and apply the unchanged validator and thresholds to that copy.",
+  "authenticatedInputs": {
+    "modelExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/model-execution.json",
+      "sha256": "7fef5148923c874872e9521223c9d32cdca34caa70ac23ed996771ddde36d0b0"
+    },
+    "executionManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/execution-manifest.json",
+      "sha256": "bb5fa2011040e23f8d74a854b6a7c8b8331cd86c525ad2cf1a988b1a5889c809"
+    }
+  },
+  "stageAuthentication": {
+    "path": "scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs",
+    "frozenCommit": "4bcee37d6025ad7ad939d7ad9b4568ea31bd498e",
+    "manifestAuthenticatedPreimageSha256": "b51659884ba6f280cee1975b7878e88c156d3d68d20dd18843f7e9e8db52e272",
+    "recoveryOneAcceptedCommit": "a0b71ec7c95f7767c0e0e32065c1453fc7dfbc3a",
+    "recoveryOneStageSha256": "1027a99328eeeaee46ceaa8ef5b8bdfd4f0b26f98b275444874ba3fe77958624",
+    "correctedStageSha256": "738880880d1879da2ac378affbc72f2da73c5857b891bd3e4f775f7a5fe9f739"
+  },
+  "transcriptFilesChanged": false,
+  "validatorThresholdsChanged": false,
+  "semanticContentChanged": false,
+  "paidCallsAuthorized": 0,
+  "modelContextsAuthorized": 0
+}

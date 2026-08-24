@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-2",
+  "status": "batch-08-complete-empty-segment-cohort-inventory-diagnosed",
+  "diagnosedAt": "2026-08-24T03:52:09Z",
+  "failureCategory": "deterministic-transcript-structure-validation-same-underlying-problem",
+  "cause": "The first overlay omitted original segment 33, after which the unchanged validator reached original segment 52 at shifted index 51. A complete structural inventory confirms these are the only two invalid text segments across all six preserved transcripts.",
+  "evidence": {
+    "recoveryOneExecutionPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/execution.json",
+    "recoveryOneExecutionSha256": "8f3bd340492fbdc64f4dfd4f2b3b6844b93aa3721792c7809b7dfc5a5f6eee64",
+    "recoveryOneAnalysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/analysis.json",
+    "recoveryOneAnalysisSha256": "4d14d5a9204b3f642ec58eb817ebc4d13cdf47bf53fc3e23df4b965b029e52e2",
+    "transcriptsChecked": 6,
+    "transcriptsWithInvalidTextSegments": 1,
+    "invalidTextSegments": 2,
+    "originalSegmentIndices": [
+      33,
+      52
+    ]
+  },
+  "correctionBoundary": {
+    "method": "omit exactly the two authenticated empty segments from one in-memory validation copy",
+    "transcriptFilesChanged": false,
+    "modelExecutionChanged": false,
+    "requestsChanged": false,
+    "speakerLabelsChanged": false,
+    "validatorThresholdsChanged": false,
+    "semanticContentChanged": false,
+    "paidCallPermitted": false,
+    "modelExecutionPermitted": false,
+    "completeCohortReplayRequired": true
+  },
+  "standingAuthorizationRecoveryLevel": 2,
+  "furtherRecoveryPermitted": false,
+  "directIncrementalCostUsd": 0
+}

@@ -39,7 +39,7 @@ const expectedMoves = [
   "con-conditional-importance-parity"
 ];
 const toolPath = "scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs";
-const validationRecoveryRoot = `${stageRoot}/validation-recovery-1`;
+const validationRecoveryRoot = `${stageRoot}/validation-recovery-2`;
 const validationOverlayPath = `${validationRecoveryRoot}/validation-overlay.json`;
 const transcribeTool = "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py";
 const executionTools = [
@@ -490,10 +490,16 @@ async function analyze() {
         call.moveId === validationOverlay.target.moveId
       ) {
         assert.equal(result.transcriptSha256, validationOverlay.target.transcriptSha256);
-        const segment = validationTranscript.segments[validationOverlay.target.segmentIndex];
-        assert.deepEqual(segment, validationOverlay.target.segment);
+        for (const targetSegment of validationOverlay.target.segments) {
+          const segment = validationTranscript.segments[targetSegment.segmentIndex];
+          assert.deepEqual(segment, targetSegment.segment);
+        }
         validationTranscript = structuredClone(validationTranscript);
-        validationTranscript.segments.splice(validationOverlay.target.segmentIndex, 1);
+        for (const targetSegment of [...validationOverlay.target.segments].sort(
+          (left, right) => right.segmentIndex - left.segmentIndex
+        )) {
+          validationTranscript.segments.splice(targetSegment.segmentIndex, 1);
+        }
         validationOverlayApplied = true;
         validationOverlaysApplied += 1;
       }
