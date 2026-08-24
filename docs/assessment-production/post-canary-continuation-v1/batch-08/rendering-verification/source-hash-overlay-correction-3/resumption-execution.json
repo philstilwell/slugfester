@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay-resumption-execution",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "nineteen-unattempted-viewports-resumed-and-accepted",
+  "completedAt": "2026-08-24T15:36:35.619Z",
+  "authenticatedCorrection": {
+    "executionActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/execution-activation.json",
+      "sha256": "b509afe909eb7ff4248f1e66d59b34c0c389ee25798e5ca34c77ec97b8c3bae4"
+    },
+    "sourceHashOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/source-hash-overlay.json",
+      "sha256": "1731fa67863c0990f8c39a866309979fa1af58b4ffe1c58e5924ba056b48fbd3"
+    },
+    "acceptedDebate88DesktopExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/execution.json",
+      "sha256": "73df30addcb2a71a8b59a8595d9d3a24b7b47638066a44f6a95726dfcb3fe70c"
+    }
+  },
+  "resumedContexts": [
+    "88:mobile",
+    "194:desktop",
+    "194:mobile",
+    "137:desktop",
+    "137:mobile",
+    "08:desktop",
+    "08:mobile",
+    "65:desktop",
+    "65:mobile",
+    "140:desktop",
+    "140:mobile",
+    "156:desktop",
+    "156:mobile",
+    "120:desktop",
+    "120:mobile",
+    "118:desktop",
+    "118:mobile",
+    "145:desktop",
+    "145:mobile"
+  ],
+  "executionControls": {
+    "contexts": 19,
+    "attempts": 19,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "timeoutMillisecondsPerViewport": 15000,
+    "settleMillisecondsPerViewport": 3000,
+    "frozenOrderPreserved": true,
+    "effectiveSourceHashOverlayAppliedInMemoryOnly": true,
+    "originalRunnerUsedUnchanged": true
+  },
+  "cohortValidation": {
+    "renderingAudit": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-audit.json",
+      "sha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/execution.json",
+      "sha256": "940e01cb1aba00eeb9192d2f2fe926a65d351a20650beb343e62371019eab279"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/analysis.json",
+      "sha256": "efed6810bac99df2ffa14130d6dc036717bb4e056a0c0420e78d4c4ec0e1da66"
+    },
+    "passed": true,
+    "debates": 10,
+    "viewportResults": 20,
+    "screenshots": 40,
+    "requiredBooleanChecksPassed": 760,
+    "requiredBooleanChecksTotal": 760,
+    "runtimeFailures": 0,
+    "protectedMutations": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-batch-08-production-compatibility-staging"
+}
