@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-viewport-correction-2-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-final-evidence-rejection-diagnosed",
+  "diagnosedAt": "2026-08-24T15:11:11Z",
+  "failedContext": {
+    "debateNumber": "88",
+    "viewportName": "desktop",
+    "recoveryLevel": 1,
+    "preservedError": "88: invalid desktop Batch 8 rendering evidence",
+    "officialEvidencePersisted": false
+  },
+  "classification": "generic-final-validator-rejection-with-discarded-in-memory-evidence",
+  "deterministicDiagnostics": {
+    "sameChromiumMajorVersion": true,
+    "pointerCssViewportMatched": true,
+    "keyboardCssViewportMatched": true,
+    "pointerFreshClosed": true,
+    "pointerOpenInteractionPassed": true,
+    "keyboardFreshClosed": true,
+    "keyboardEnterOpenPassed": true,
+    "keyboardSpaceClosePassed": true,
+    "pageContentChecksPassed": 11,
+    "pageContentChecksTotal": 11,
+    "runtimeConsoleFailuresObserved": 0,
+    "collapsedScreenshot": {
+      "format": "JPEG",
+      "pixelWidth": 2880,
+      "pixelHeight": 2000,
+      "signatureHex": "ffd8ffe000104a4649460001",
+      "byteLength": 397369,
+      "uniqueColors": 23952,
+      "entropy": 0.487607
+    },
+    "openScreenshot": {
+      "format": "JPEG",
+      "pixelWidth": 2880,
+      "pixelHeight": 2000,
+      "signatureHex": "ffd8ffe000104a4649460001",
+      "byteLength": 458336,
+      "uniqueColors": 32288,
+      "entropy": 0.56016
+    },
+    "collapsedAndOpenHashesDiffer": true,
+    "keyboardNavigationTransportPassed": true,
+    "staticExactValidatorReplayPassed": true
+  },
+  "rootCause": "The existing wrapper deletes all viewport artifacts when its final combined assertion rejects, so the first correction preserved only a generic error and not the in-memory check map needed to identify a transient or combined-condition failure.",
+  "protectedInputsChanged": false,
+  "validatorMeaningChanged": false,
+  "directIncrementalCostUsd": 0
+}
