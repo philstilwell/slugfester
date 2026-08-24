@@ -1,0 +1,581 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-audio-verification-execution-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-08-decomposed-consensus",
+  "status": "prepared-six-post-canary-batch-08-paid-known-speaker-diarizations-standing-authorization-conditional-activation-ready",
+  "preparedAt": "2026-08-24T03:44:03.809Z",
+  "approvedAt": null,
+  "checkpointCommit": "5c73f82f34cf8f01c0c48fda9ce97900c371ff5a",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "standingAuthorizationSha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 6,
+    "speakerReferencesAuthorizedForPreparation": 6,
+    "conditionalAdvanceApprovalRecorded": true,
+    "audioVerificationExecutionAuthorizedOnlyAfterFrozenEstimateAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "137",
+      "156",
+      "120"
+    ],
+    "frozenTargetClips": 6,
+    "verificationCalls": 6,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 6,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "all-source-rows-have-positive-repository-lexical-token-count",
+      "reason": "All selected canonical source rows contain at least one repository lexical token.",
+      "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": []
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "moveId": "con-burial-tomb-source-problems",
+      "expectedSpeaker": "Robert Price",
+      "proposition": "The burial and empty-tomb accounts are not established facts because their narrative sources are historically problematic and alternative literary explanations remain available.",
+      "verificationExcerpt": "burial of Jesus I mean it's stated in a narrative source which seems everywhere else to be filled with Marbles and so forth or historical difficulties there and anachronisms there various problems with it it just seems to me that sure a man named Joseph of arthea could have buried Jesus but uh you know there's no particular reason to think so because of the quality of the source the same thing with the empty tomb",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-burial-tomb-source-problems.mp3",
+      "clipSha256": "61a7ec1df943d6801aa0cd314326ccb58aea1520d6615779808df1e6e9c033d3",
+      "durationSeconds": 117.002938,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-burial-tomb-source-problems.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/william-lane-craig.mp3",
+          "sha256": "58be76d6af0a7e4760cb6c14ace6a6b98b11389ca7ac478a9689187ee85fb71c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Robert Price",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/robert-price.mp3",
+          "sha256": "a63c414a6a97e69f99f209691155535945328555091845977213cf35ac6259fd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "137",
+      "debateId": "price-craig-resurrection-historical-analogy-1999",
+      "moveId": "con-gospel-appearances-low-value",
+      "expectedSpeaker": "Robert Price",
+      "proposition": "Gospel appearance accounts have limited historical value because visions of Jesus are common and the narratives contain redactional and legendary material.",
+      "verificationExcerpt": "people have visions of Jesus all the time as I admit it just seems to me that these things are deposits of redactional and legendary material so that I do not see the gospel texts as good evidence for for appearances that someone had maybe they did see the Risen Jesus maybe Oral Roberts saw him I I don't have any just that it doesn't have much vertical value and finally what",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-gospel-appearances-low-value.mp3",
+      "clipSha256": "daeda00aa46416b8505b828fa7233e4b5a8ec4d397326a8a924ffc62dd416ba1",
+      "durationSeconds": 30.159,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-gospel-appearances-low-value.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "William Lane Craig",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/william-lane-craig.mp3",
+          "sha256": "58be76d6af0a7e4760cb6c14ace6a6b98b11389ca7ac478a9689187ee85fb71c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Robert Price",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/robert-price.mp3",
+          "sha256": "a63c414a6a97e69f99f209691155535945328555091845977213cf35ac6259fd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "moveId": "con-conscious-capacity-grounds-moral-distinctions",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Secular morality can ground concern in the happiness and suffering of conscious creatures and use differences in experiential and neurological capacity to distinguish the interests of humans, animals, embryos, and fetuses.",
+      "verificationExcerpt": "a concern for the happiness and suffering of other creatures that can feel happiness and suffering in whatever degree and then it becomes relevant to wonder well what degree uh of happiness or suffering is possible in a chicken or in a person or in a a three-day old embryo well this is Peter singer's view uh who loves your book and now Peter so he argues that hey animals suffer",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conscious-capacity-grounds-moral-distinctions.mp3",
+      "clipSha256": "87494a65b5c5d72955bfa87a87888fa35092db47773304b97d4ce6c6a20499da",
+      "durationSeconds": 134.481,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conscious-capacity-grounds-moral-distinctions.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Dennis Prager",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/dennis-prager.mp3",
+          "sha256": "3364c089048b2fca570274250c0c22d3216cb653561dd2a4d71fb6c0e167ce53",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/sam-harris.mp3",
+          "sha256": "15b6d480daa6e58c8c0ed0afcd82c3fee15c0eed274fc36706ef39486655f781",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "moveId": "con-conception-dogma-obstructs-abortion-inquiry",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Faith-based certainty that a fully formed soul exists at conception polarizes abortion policy and obstructs nuanced discussion of ethically relevant differences across fetal development.",
+      "verificationExcerpt": "faith-based Dogma into this into these questions of policy secular people have been forced not to talk sensibly about the the very real ethical issues that that surround abor so it's religious people's fault that secular people are not sensible because yes that's remarkable that that is that is a first I have to say well Dennis they're so embattled by the dogmatism which which says that at the moment of conception a a soul is fully formed",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conception-dogma-obstructs-abortion-inquiry.mp3",
+      "clipSha256": "7a963a41f6d8a1b25b2357d84f7493c90616c77f9cd6816ed320eb782a469acc",
+      "durationSeconds": 55.08,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conception-dogma-obstructs-abortion-inquiry.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Dennis Prager",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/dennis-prager.mp3",
+          "sha256": "3364c089048b2fca570274250c0c22d3216cb653561dd2a4d71fb6c0e167ce53",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/sam-harris.mp3",
+          "sha256": "15b6d480daa6e58c8c0ed0afcd82c3fee15c0eed274fc36706ef39486655f781",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "156",
+      "debateId": "harris-prager-religion-morality-public-reason-2014",
+      "moveId": "pro-scripture-character-historical-progress",
+      "expectedSpeaker": "Dennis Prager",
+      "proposition": "The Bible's exceptional moral character supports its divine authorship, and rules that appear primitive in isolation can constitute major moral advances when interpreted within their historical setting.",
+      "verificationExcerpt": "all these injunctions to kill people for working on the Sabbath or to practice slavery well I could I would be happy to explain each one in its turn and in fact have devoted the last 20 years to doing so I mean but so so that for example eye for an eye which is considered by to be primitive I'm sure you're one of them was exact was in fact one of the great moral advancements of",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/pro-scripture-character-historical-progress.mp3",
+      "clipSha256": "53536ba3642f5132546d9a2d5701b8a2a4c33024ea085681d4aaf724573e3b40",
+      "durationSeconds": 36,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/pro-scripture-character-historical-progress.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Dennis Prager",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/dennis-prager.mp3",
+          "sha256": "3364c089048b2fca570274250c0c22d3216cb653561dd2a4d71fb6c0e167ce53",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/sam-harris.mp3",
+          "sha256": "15b6d480daa6e58c8c0ed0afcd82c3fee15c0eed274fc36706ef39486655f781",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "120",
+      "debateId": "mclatchie-oconnor-christianity-true-2019",
+      "moveId": "con-conditional-importance-parity",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "Christianity's supreme importance if true gives no distinctive reason to believe or prioritize it, because competing religions and comprehensive ideologies have the same conditional importance.",
+      "verificationExcerpt": "religion if other religions are true as well then they become the most important thing many people would claim that if we can create a political system that would solve all of our problems then it would be the most important thing so communism is either the most important thing on in the world or it's just nothing it's like it's the same for any ideology like the whole point of",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/clips/con-conditional-importance-parity.mp3",
+      "clipSha256": "b384a565b0e2ff0437feb01672c5f0f8bf84b97aa9345576567150c84c03bda5",
+      "durationSeconds": 52.9,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/transcripts/con-conditional-importance-parity.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Jonathan McLatchie",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/jonathan-mclatchie.mp3",
+          "sha256": "ceafd4e326c6e9ae9b94889b3c8e70e0a1037b55e4198a7fabffd87541746d8a",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/alex-o-connor.mp3",
+          "sha256": "17f99fc0a5ea3e4bec26651e1b2ca891205be6cdd4cd499b586d3582a80accd5",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "137",
+        "speaker": "William Lane Craig",
+        "selectedMoveId": "pro-empty-tomb-women-early-tradition",
+        "selectedMoveSourceSpan": {
+          "startEvent": 136,
+          "endEvent": 265
+        },
+        "selectedMoveDurationSeconds": 361.121,
+        "startSeconds": 555.88,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/william-lane-craig.mp3",
+        "sha256": "58be76d6af0a7e4760cb6c14ace6a6b98b11389ca7ac478a9689187ee85fb71c"
+      },
+      {
+        "debateNumber": "137",
+        "speaker": "Robert Price",
+        "selectedMoveId": "con-corinthians-creed-composite",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1065,
+          "endEvent": 1150
+        },
+        "selectedMoveDurationSeconds": 201.119,
+        "startSeconds": 3042.999,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/robert-price.mp3",
+        "sha256": "a63c414a6a97e69f99f209691155535945328555091845977213cf35ac6259fd"
+      },
+      {
+        "debateNumber": "156",
+        "speaker": "Dennis Prager",
+        "selectedMoveId": "pro-religious-recognition-islamic-totalitarianism",
+        "selectedMoveSourceSpan": {
+          "startEvent": 72,
+          "endEvent": 95
+        },
+        "selectedMoveDurationSeconds": 60.959,
+        "startSeconds": 206.679,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/dennis-prager.mp3",
+        "sha256": "3364c089048b2fca570274250c0c22d3216cb653561dd2a4d71fb6c0e167ce53"
+      },
+      {
+        "debateNumber": "156",
+        "speaker": "Sam Harris",
+        "selectedMoveId": "con-conscious-capacity-grounds-moral-distinctions",
+        "selectedMoveSourceSpan": {
+          "startEvent": 474,
+          "endEvent": 525
+        },
+        "selectedMoveDurationSeconds": 129.481,
+        "startSeconds": 1162.54,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/sam-harris.mp3",
+        "sha256": "15b6d480daa6e58c8c0ed0afcd82c3fee15c0eed274fc36706ef39486655f781"
+      },
+      {
+        "debateNumber": "120",
+        "speaker": "Jonathan McLatchie",
+        "selectedMoveId": "pro-early-appearance-testimony",
+        "selectedMoveSourceSpan": {
+          "startEvent": 233,
+          "endEvent": 300
+        },
+        "selectedMoveDurationSeconds": 136.53,
+        "startSeconds": 554.585,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/jonathan-mclatchie.mp3",
+        "sha256": "ceafd4e326c6e9ae9b94889b3c8e70e0a1037b55e4198a7fabffd87541746d8a"
+      },
+      {
+        "debateNumber": "120",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-resurrection-extraordinary-evidence",
+        "selectedMoveSourceSpan": {
+          "startEvent": 408,
+          "endEvent": 506
+        },
+        "selectedMoveDurationSeconds": 205.621,
+        "startSeconds": 967.949,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/alex-o-connor.mp3",
+        "sha256": "17f99fc0a5ea3e4bec26651e1b2ca891205be6cdd4cd499b586d3582a80accd5"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 425.622938,
+    "clipMinutes": 7.0937,
+    "durationOnlyPlanningEstimateUsd": 0.0426,
+    "primaryExpectedFutureExecutionCostUsd": 0.1558275,
+    "primaryEstimateBasis": "Batch 2 returned-token usage rates applied to Batch 8 exact clip seconds and six-call count",
+    "maximumConditionallyAuthorizedCostUsd": 1,
+    "projectedUsage": {
+      "audioInputTokens": 7931,
+      "textInputTokens": 684,
+      "outputTokens": 13429,
+      "totalInputTokens": 8615
+    },
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "usageDerivedEstimatedCostUsd": 0.2933175,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    },
+    "officialPricingCheckedAt": "2026-08-22",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "conditionalAdvanceApprovalRecorded": true,
+    "conditionalAdvanceApprovalMaximumUsd": 1,
+    "estimateWithinConditionalApproval": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 6,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "status": "frozen-active-batch-08-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "paidTranscriptionActivation": true,
+    "paidTranscriptionExecution": false,
+    "deterministicAudioAnalysis": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-burial-tomb-source-problems.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-gospel-appearances-low-value.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conscious-capacity-grounds-moral-distinctions.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conception-dogma-obstructs-abortion-inquiry.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/pro-scripture-character-historical-progress.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/transcripts/con-conditional-importance-parity.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/execution-manifest.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-burial-tomb-source-problems.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/transcripts/con-gospel-appearances-low-value.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conscious-capacity-grounds-moral-distinctions.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/con-conception-dogma-obstructs-abortion-inquiry.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/transcripts/pro-scripture-character-historical-progress.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/transcripts/con-conditional-importance-parity.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-source-preparation.json": "e45af5b92eb6bb9f40637e6e9a41baa8f3709236b3bff0ad34a22e9fab40b105",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation.json": "cd6fc5e1cfeae32b40268f61314d3b51107f8ba714e035e8353de9ce95fd82c1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-items.json": "b9802fc5366826131cf0238873ee4978418457a3da312165f89d13d3bde94947",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/independent-judgments/execution-preparation-manifest.json": "dfa7fc3f7fea2569e17a65c75de598833558d4ecce65aaf56fe15d5f1f4e714a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/assessment-production-post-canary-batch-08-standing-authorization.mjs": "4edac4f812f15860515be5a73d097f4f9a34f2043d57bff0f04dff50c6f31b87",
+    "scripts/prepare-assessment-production-post-canary-batch-08-audio-verification.mjs": "27cd073325e4f0ebc31e41382e3bd9e4fcdc0879104f6e937d71d51c33a3d6ec",
+    "scripts/test-assessment-production-post-canary-batch-08-audio-verification-preparation.mjs": "aa0a5c0116e298a370c8ce20074327af046c90c23b051c5d4e8f207ae0cb5d9e",
+    "scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs": "b51659884ba6f280cee1975b7878e88c156d3d68d20dd18843f7e9e8db52e272",
+    "scripts/prepare-assessment-production-post-canary-batch-08-audio-sources.mjs": "527e49be454949830a4f44c48de7e7b1e603735ef3e0f659461fdd7821259c02",
+    "scripts/test-assessment-production-post-canary-batch-08-audio-sources.mjs": "b189c217252b207874a68db8705bbe6dcbe847364fcfbfe38d9608c2ba917913",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/audio/source.mp3": "f421959f18a612c7871433b1def2666ea3f5a1d4d24fa87fd511a23e9b69015f",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/audio/source.mp3": "06e3123882e45ee6aadc3dcbcd08d37d59a694df93044ff02bedecca7d05cb57",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/audio/source.mp3": "8f58ce94400f118551d8ad4cb1ebc8de38b7e127008cd7bd18d5cd2d8073672c",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-burial-tomb-source-problems.mp3": "61a7ec1df943d6801aa0cd314326ccb58aea1520d6615779808df1e6e9c033d3",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/clips/con-gospel-appearances-low-value.mp3": "daeda00aa46416b8505b828fa7233e4b5a8ec4d397326a8a924ffc62dd416ba1",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conscious-capacity-grounds-moral-distinctions.mp3": "87494a65b5c5d72955bfa87a87888fa35092db47773304b97d4ce6c6a20499da",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/con-conception-dogma-obstructs-abortion-inquiry.mp3": "7a963a41f6d8a1b25b2357d84f7493c90616c77f9cd6816ed320eb782a469acc",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/clips/pro-scripture-character-historical-progress.mp3": "53536ba3642f5132546d9a2d5701b8a2a4c33024ea085681d4aaf724573e3b40",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/clips/con-conditional-importance-parity.mp3": "b384a565b0e2ff0437feb01672c5f0f8bf84b97aa9345576567150c84c03bda5",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/william-lane-craig.mp3": "58be76d6af0a7e4760cb6c14ace6a6b98b11389ca7ac478a9689187ee85fb71c",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-137/references/robert-price.mp3": "a63c414a6a97e69f99f209691155535945328555091845977213cf35ac6259fd",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/dennis-prager.mp3": "3364c089048b2fca570274250c0c22d3216cb653561dd2a4d71fb6c0e167ce53",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-156/references/sam-harris.mp3": "15b6d480daa6e58c8c0ed0afcd82c3fee15c0eed274fc36706ef39486655f781",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/jonathan-mclatchie.mp3": "ceafd4e326c6e9ae9b94889b3c8e70e0a1037b55e4198a7fabffd87541746d8a",
+    "output/transcribe/assessment-production-post-canary-batch-08-audio-verification/debate-120/references/alex-o-connor.mp3": "17f99fc0a5ea3e4bec26651e1b2ca891205be6cdd4cd499b586d3582a80accd5"
+  },
+  "nextAuthorizedAction": "activate-and-execute-six-batch-08-paid-audio-verification-calls-under-standing-authorization"
+}
