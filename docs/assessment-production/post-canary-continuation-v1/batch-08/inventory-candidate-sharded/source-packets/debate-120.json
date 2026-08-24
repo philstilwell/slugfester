@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "debateNumber": "120",
+  "debateId": "mclatchie-oconnor-christianity-true-2019",
+  "motion": "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
+  "sides": {
+    "pro": {
+      "label": "Christian evidentialism",
+      "speakers": [
+        "Jonathan McLatchie"
+      ]
+    },
+    "con": {
+      "label": "Skeptical critique",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 4735,
+  "eventCount": 2138,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/woqy13ZkeqM/transcript.txt",
+    "transcriptSha256": "f5d0835a447af6196421c14a1985fd4e034bfdfe07f2865e126c7bf6f46d22f7",
+    "eventsPath": ".assessment-cache/captions/woqy13ZkeqM/events.json",
+    "eventsSha256": "c683442d353bf82a12112272bbc6a58133bac17f97904c9e7ed64079acd41659",
+    "localManifestPath": ".assessment-cache/captions/woqy13ZkeqM/manifest.json",
+    "localManifestSha256": "41fb464a26763718d87fde374921c74b9fc8be154b45d41d9f34cd6dcd6555fd"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-120.jsonl",
+    "sourceLedgerSha256": "cab7741d1ac5950be97c04a74ba5acc2f7fcf3da92bfb5242c1a7c8927773621",
+    "sourceLedgerBytes": 125691,
+    "sourceLedgerEventCount": 2138,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-120.json",
+    "partitionPlanSha256": "913ae8a857968af6a2483ffbf3a0cb0ce90c328328f3af0f800fed95623d5a2d",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

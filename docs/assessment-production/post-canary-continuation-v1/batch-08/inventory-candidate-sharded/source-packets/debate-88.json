@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "debateNumber": "88",
+  "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+  "motion": "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
+  "sides": {
+    "pro": {
+      "label": "Perfect-mind theism",
+      "speakers": [
+        "Zac Sechler"
+      ]
+    },
+    "con": {
+      "label": "Evidential skepticism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 5528,
+  "eventCount": 2750,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/FUPOouj5jNg/transcript.txt",
+    "transcriptSha256": "a5be58d0749c2b8a88f113c19c59c66879e936e8ce7b25aa63aac9f5767e4e99",
+    "eventsPath": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+    "eventsSha256": "998bad52a6fe00822673555b15ed2eef3a46bdcbfa9378a384b2febf5f5a8d3f",
+    "localManifestPath": ".assessment-cache/captions/FUPOouj5jNg/manifest.json",
+    "localManifestSha256": "d304251f5a38c91862a4e58560388e7223aaa0cd9cc121b4d629d30c34760bd0"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-88.jsonl",
+    "sourceLedgerSha256": "ec3d76a642ad481dcb51fd4902c9c4fc9693825ef4a286839dd5ebe1c4bcc6ba",
+    "sourceLedgerBytes": 159910,
+    "sourceLedgerEventCount": 2750,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-88.json",
+    "partitionPlanSha256": "a8f0b914efa3e7c04f112035b6fd84b0fe174ba442cc52b915197d08b8b20664",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

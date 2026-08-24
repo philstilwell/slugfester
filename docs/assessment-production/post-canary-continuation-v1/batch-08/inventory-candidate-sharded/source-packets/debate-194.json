@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "debateNumber": "194",
+  "debateId": "swinburne-millican-does-god-exist-2022",
+  "motion": "Is God the simplest and most probable explanation of the universe and its general features?",
+  "sides": {
+    "pro": {
+      "label": "God is the best explanation",
+      "speakers": [
+        "Richard Swinburne"
+      ]
+    },
+    "con": {
+      "label": "The evidence does not support God",
+      "speakers": [
+        "Peter Millican"
+      ]
+    }
+  },
+  "durationSeconds": 4125,
+  "eventCount": 1626,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/FcNR4vJdcE4/transcript.txt",
+    "transcriptSha256": "4997805a766a635cef97ec4abdec0ef9153bad46a4fbd27624a135a5d41e86eb",
+    "eventsPath": ".assessment-cache/captions/FcNR4vJdcE4/events.json",
+    "eventsSha256": "45172568191d782f01ad715be60670179ff4193526fbdc1a2adc0f51e48414f8",
+    "localManifestPath": ".assessment-cache/captions/FcNR4vJdcE4/manifest.json",
+    "localManifestSha256": "8288792aac5008c22f7301fcf9d9f2213af7196cacaa4a00ce9f37363a6f90dd"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-194.jsonl",
+    "sourceLedgerSha256": "82fe7e0110dbf4a6af1d7dbdd158a898c40f7965fb6008787a7841e71b5964ae",
+    "sourceLedgerBytes": 86135,
+    "sourceLedgerEventCount": 1626,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-194.json",
+    "partitionPlanSha256": "d410b7e725ce387bc9839b105d7b5fc772d9373f69ff6b787af3ef607289fdad",
+    "partitionChunks": 2,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

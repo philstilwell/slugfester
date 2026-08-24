@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "debateNumber": "08",
+  "debateId": "wood-shermer-god-exist-2022",
+  "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
+  "sides": {
+    "pro": {
+      "label": "Theist",
+      "speakers": [
+        "David Wood"
+      ]
+    },
+    "con": {
+      "label": "Skeptic",
+      "speakers": [
+        "Michael Shermer"
+      ]
+    }
+  },
+  "durationSeconds": 8239,
+  "eventCount": 3880,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/xKd2Ht5Bs-k/transcript.txt",
+    "transcriptSha256": "cce3f28a76f92c36937d25e575d9a83e68d3952cd610663451e226ea1bcf08f8",
+    "eventsPath": ".assessment-cache/captions/xKd2Ht5Bs-k/events.json",
+    "eventsSha256": "9345f9195778e89ef8d80c38d5e0484433b9e3d2b6034d1f43e52ddf1b847e51",
+    "localManifestPath": ".assessment-cache/captions/xKd2Ht5Bs-k/manifest.json",
+    "localManifestSha256": "9b679b5ac84cbf51cba952aa10900c167f30d4af59f6af32dde8d5a724749898"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-08.jsonl",
+    "sourceLedgerSha256": "268f549f8604fa3ab57b3ccce290e32cf3e3cc5d222e4509c2af515f632cdd3e",
+    "sourceLedgerBytes": 205124,
+    "sourceLedgerEventCount": 3880,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-08.json",
+    "partitionPlanSha256": "138bc62450ba99dc66b51250bc588e9200c1503e3f65b25f6115f7dcb9ee2131",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

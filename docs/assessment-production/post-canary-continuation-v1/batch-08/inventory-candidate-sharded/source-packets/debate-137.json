@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "debateNumber": "137",
+  "debateId": "price-craig-resurrection-historical-analogy-1999",
+  "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection case",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Historical-analogy critique",
+      "speakers": [
+        "Robert Price"
+      ]
+    }
+  },
+  "durationSeconds": 8830,
+  "eventCount": 3473,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Pba-YNVWaa0/transcript.txt",
+    "transcriptSha256": "5c6b0c10e33d95fe6f6ef67ab716e565349bc0534bbddd62f55ac7c69e5f3079",
+    "eventsPath": ".assessment-cache/captions/Pba-YNVWaa0/events.json",
+    "eventsSha256": "663ea716820801c648f453c2ad3248d6873d479b90fef67d836186941570aedd",
+    "localManifestPath": ".assessment-cache/captions/Pba-YNVWaa0/manifest.json",
+    "localManifestSha256": "f789edfc1a1ebf777e6ae0846098084a78feadd9f902c69fd14d8dd94cb8f7a8"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-137.jsonl",
+    "sourceLedgerSha256": "68dbd5f60070c5e586b3d5c3953cff349bfc510169af0abfcdcec3a3501ac857",
+    "sourceLedgerBytes": 204690,
+    "sourceLedgerEventCount": 3473,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-137.json",
+    "partitionPlanSha256": "6b7cd07443e1edf0fd309b1db8a8327644fec7a2f7711de843c3da586a075f25",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
