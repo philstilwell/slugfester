@@ -59,7 +59,7 @@ assert.equal(manifest.totals.debates, 10);
 assert.equal(manifest.totals.contexts, 10);
 assert.equal(manifest.totals.moves, 182);
 assert.equal(manifest.totals.sections, 51);
-assert.equal(manifest.totals.audioVerifiedMoves, 5);
+assert.equal(manifest.totals.audioVerifiedMoves, 6);
 assert.equal(manifest.totals.modelContextsExecuted, 0);
 assert.equal(manifest.totals.modelAuthoredScores, 0);
 assert.equal(manifest.totals.scorePassesExecutedThisStage, 0);
@@ -225,7 +225,7 @@ for (const context of manifest.contexts) {
 assert.equal(moves, 182);
 assert.equal(sections, 51);
 assert.equal(quoteEligibleMoves, manifest.totals.quoteEligibleMoves);
-assert.equal(audioVerifiedMoves, 5);
+assert.equal(audioVerifiedMoves, 6);
 assert.equal(
   manifest.nextAuthorizedAction,
   "standing-authorization-permits-activation-and-execution-of-the-ten-frozen-batch-08-publication-contexts"

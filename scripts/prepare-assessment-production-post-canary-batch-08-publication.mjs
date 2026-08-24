@@ -415,7 +415,7 @@ assertV4(
   "Batch 8 publication section coverage changed"
 );
 assertV4(
-  contexts.reduce((sum, context) => sum + context.audioVerifiedMoves, 0) === 5,
+  contexts.reduce((sum, context) => sum + context.audioVerifiedMoves, 0) === 6,
   "Batch 8 audio-verification coverage changed"
 );
 assertV4(
