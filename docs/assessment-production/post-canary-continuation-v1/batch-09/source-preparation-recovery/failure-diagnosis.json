@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-source-preparation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-09-source-preparation-recovery",
+  "status": "batch-09-source-preparation-preview-failure-diagnosed-single-chunk-transport-shape",
+  "diagnosedAt": "2026-08-24T17:08:00Z",
+  "baselineCommit": "2c3a6ec05210a10c85c9f2e049a9fe077b260d7b",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-09-source-packets.mjs --frozen-at 2026-08-24T17:05:00Z",
+  "exitCode": 1,
+  "error": {
+    "message": "partition plan must contain more than one chunk",
+    "source": "scripts/lib/v42219-generalized-partition.mjs:111",
+    "classification": "deterministic-execution-harness-transport-shape-failure"
+  },
+  "affectedDebate": {
+    "debateNumber": "19",
+    "debateId": "harris-oconnor-objective-morality-2024",
+    "eventCount": 379,
+    "durationSeconds": 817.72,
+    "eventsSha256": "a6ce10a2f3bfefa0b8114d64064697dc036f3652797d02aa746c53f3be5d755f",
+    "transcriptSha256": "c6dfc1d5caa074a08eb70d5280fee6deae5efadbd32f9706728753a2820a4cc7"
+  },
+  "preservedEvidence": {
+    "selectionSha256": "ea64a9cc994493e1d8fdda9bd18d47f131533609f4df0d6f2f6895665582be4b",
+    "failedPreparationSourceSha256": "8dcd88e4100a902df51a7ee3e92f66cd1bbe6def58fd516100ec0b58790e1033",
+    "failedPreparationTestSha256": "58e99a0c8d5ba36b74e704728dd431baea37f1e08b3474cb935018763438a6d8",
+    "generalizedPartitionValidatorSha256": "f1a2e70a8c4e21b7823d9374bb2e6e4b5fd77f2fe63e98d8378362cfb50a4d6b"
+  },
+  "findings": {
+    "sourceHashFailure": false,
+    "sourceContentFailure": false,
+    "speakerIdentityFailure": false,
+    "scoreBlindnessFailure": false,
+    "singleDefaultChunkProduced": true,
+    "sharedValidatorRequiresAtLeastTwoChunks": true,
+    "noPreparationArtifactWasWritten": true,
+    "noModelExecuted": true,
+    "noPaidServiceUsed": true
+  },
+  "boundedCorrection": {
+    "authorizedByStandingInstruction": true,
+    "scope": "Apply a Debate 19-only partition context-event ceiling that deterministically produces at least two complete source chunks while retaining the shared validator, source rows, boundary size, byte ceiling, schemas, and all other debate plans unchanged.",
+    "sharedValidatorRewriteAuthorized": false,
+    "sourceOrSemanticChangeAuthorized": false,
+    "ordinaryRetry": false,
+    "correctionAttemptsMaximum": 1
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-and-hash-lock-one-batch-09-debate-19-source-partition-correction"
+}
