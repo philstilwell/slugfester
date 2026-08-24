@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-viewport-correction-2-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "recursive-correction-failed-source-hash-map-incomplete",
+  "analyzedAt": "2026-08-24T15:14:15Z",
+  "context": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "evidenceSummary": {
+    "requiredBooleanChecksPassed": 38,
+    "requiredBooleanChecksTotal": 38,
+    "runtimeFailures": 0,
+    "candidateChanged": false,
+    "applicationCodeChanged": false,
+    "stylesheetChanged": false,
+    "productionDataChangedFlag": true
+  },
+  "diagnosis": {
+    "category": "rendering-preparation-source-hash-map-omission",
+    "finding": "The frozen rendering preparation and activation sourceHashes maps omit src/data/debates.js, although the unchanged frozen viewport runner requires that key when computing productionDataChanged.",
+    "observedCurrentSha256": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459",
+    "renderingPreparationCheckpointSha256": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459",
+    "sourceChangedSinceRenderingPreparation": false,
+    "mechanism": "The runner compared the correct current hash with an undefined expected value, which deterministically set productionDataChanged to true even though the file was byte-identical.",
+    "validatorMeaningChanged": false,
+    "candidateOrProductionContentDefect": false
+  },
+  "proposedRecoveryBoundary": {
+    "requiresNewApproval": true,
+    "minimumCorrection": "Add the frozen fa8801ce... hash for src/data/debates.js to a separately authenticated rendering source-hash overlay, without changing the preparation manifest, activation, packet, runner, validator, or production file, then execute Debate 88 desktop once and resume the remaining nineteen unattempted viewports only if it passes.",
+    "ordinaryRetry": false,
+    "thirdCorrectionLevel": true
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "request-new-approval"
+}
