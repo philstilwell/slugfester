@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-1",
+  "status": "batch-08-single-empty-segment-validation-overlay-authorized",
+  "activatedAt": "2026-08-24T03:50:30Z",
+  "checkpointCommit": "de3df0f41249e0f8f1e10ba902291f204e421230",
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/correction-plan.json",
+    "sha256": "5317bafa3f56c547ee073789bf42774dec976180a0f4109de5105f926a38b504"
+  },
+  "validationOverlay": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/validation-overlay.json",
+    "sha256": "f0147d605869e5f839eec570c763cc794ad4056912362416b528f9247bfd603a"
+  },
+  "correctedStageSha256": "1027a99328eeeaee46ceaa8ef5b8bdfd4f0b26f98b275444874ba3fe77958624",
+  "modelExecutionSha256": "7fef5148923c874872e9521223c9d32cdca34caa70ac23ed996771ddde36d0b0",
+  "executionManifestSha256": "bb5fa2011040e23f8d74a854b6a7c8b8331cd86c525ad2cf1a988b1a5889c809",
+  "correctionAttemptsAuthorized": 1,
+  "completeCohortReplaysAuthorized": 1,
+  "ordinaryRetriesAuthorized": 0,
+  "paidCallsAuthorized": 0,
+  "audioAccessAuthorized": false,
+  "modelContextsAuthorized": 0,
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAction": "execute-one-corrected-analysis-pass-and-one-cost-audit-pass"
+}
