@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-adjudication-gate-correction-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-dispute-only-adjudication",
+  "status": "preserved-batch-08-adjudication-gate-correction-1-wrapper-status-failure-diagnosed",
+  "diagnosedAt": "2026-08-24T12:53:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-execution-harness-stale-reporting-label",
+    "runner": "scripts/run-assessment-production-post-canary-batch-08-dispute-adjudication-gate-correction-1.mjs",
+    "line": 80,
+    "expectedStatus": "passed",
+    "actualStatus": "passed-analyzed",
+    "error": "AssertionError: actual passed-analyzed did not equal expected passed"
+  },
+  "diagnosis": {
+    "completeCohortTestPassedBeforeWrapperFailure": true,
+    "wrapperFailedOnlyWhileCheckingTheSuccessfulTestReportingLabel": true,
+    "acceptedModelOutputsChanged": false,
+    "protectedEvidenceChanged": false,
+    "validatorMeaningChanged": false,
+    "partialExecutionRecordWritten": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "recursiveCorrection": {
+    "authorizedByStandingAuthorization": true,
+    "correctionLevel": 2,
+    "finalCorrectionLevelForThisUnderlyingProblem": true,
+    "writableFile": "scripts/run-assessment-production-post-canary-batch-08-dispute-adjudication-gate-correction-1.mjs",
+    "exactReplacement": {
+      "from": "assert.equal(parsedOutput.status, \"passed\");",
+      "to": "assert.equal(parsedOutput.status, \"passed-analyzed\");"
+    },
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "modelExecutionPermitted": false
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-08-dispute-adjudication-gate-correction-1.mjs": "985cdeefa502c83f23a6d683992998b59d4d8b60f9875f059850fa75723d8600",
+    "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs": "d44d1f5d70fe706c94608b5aa688ee155d863427f494f41a23d74680af75afa0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/gate-correction-1-execution-manifest.json": "7a4e99b48d1debe2a42ec698bf621e6081a88850ec16ffb98ef8b1a0943488e6"
+  },
+  "nextAuthorizedAction": "freeze-and-execute-one-final-recursive-wrapper-status-correction"
+}

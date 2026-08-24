@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-adjudication-gate-recursive-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-dispute-only-adjudication",
+  "status": "frozen-batch-08-adjudication-gate-correction-2-prepared",
+  "frozenAt": "2026-08-24T12:53:30Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/gate-correction-1-failure-diagnosis.json",
+  "correction": {
+    "level": 2,
+    "finalCorrectionLevelForThisUnderlyingProblem": true,
+    "file": "scripts/run-assessment-production-post-canary-batch-08-dispute-adjudication-gate-correction-1.mjs",
+    "preimageSha256": "985cdeefa502c83f23a6d683992998b59d4d8b60f9875f059850fa75723d8600",
+    "proposedSha256": "6d6da370c976639e61dfc1da72c084a8b4ec5d08780630cbaad28d75f4511e9b",
+    "exactReplacement": {
+      "from": "assert.equal(parsedOutput.status, \"passed\");",
+      "to": "assert.equal(parsedOutput.status, \"passed-analyzed\");"
+    },
+    "reportingLabelOnly": true,
+    "validatorMeaningChanged": false,
+    "protectedEvidenceChanged": false
+  },
+  "lockedCorrectedTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs",
+    "sha256": "d44d1f5d70fe706c94608b5aa688ee155d863427f494f41a23d74680af75afa0"
+  },
+  "executionControls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "modelExecution": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "apply-the-exact-final-wrapper-status-correction-and-execute-once"
+}
