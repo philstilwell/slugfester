@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-137-inventory-plan-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "status": "debate-137-bounded-first-recovery-passed-complete-ten-plan-cohort-replay-passed",
+  "activation": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/execution-activation.json",
+  "activationSha256": "066a7fe714ff9c2f551647c57edfcae1f7a050dd2fb19f6a2059aa62df65d903",
+  "execution": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/model-execution.json",
+  "executionSha256": "a5d15a046cea73936bcaf71a76d45d4711ab045636a8fcdc23c9608c159f74d8",
+  "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-model-execution.json",
+  "originalExecutionSha256": "2d645f0af43ed6b21f4a3d3ac8f3ee8c650af2dfe0466245ad6ea8a0c794d17d",
+  "shards": [
+    {
+      "shardId": "routes",
+      "writableFields": [
+        "routes"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/outputs/debate-137-routes.json",
+      "outputSha256": "ace3ea71ae5d343487be922c25e4507f163d1f0ef0596565c2c367464a590238",
+      "attemptCount": 1,
+      "accepted": true
+    },
+    {
+      "shardId": "sections",
+      "writableFields": [
+        "sections"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plan-recovery-1/debate-137/outputs/debate-137-sections.json",
+      "outputSha256": "03437ee30119349dad6ff4ca1f18120c8581a62fd6d05198adc1aebcde324b2a",
+      "attemptCount": 1,
+      "accepted": true
+    }
+  ],
+  "merge": {
+    "attempted": true,
+    "passed": true,
+    "mergeRuleCanonicalSha256": "85ab0264e371d8791c686a5d4daf5623e111ffad0a50471e5cec57196b73ef33",
+    "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/inventory-candidate-sharded/plans/debate-137.json",
+    "outputSha256": "69ea55ad06d17026bd17f7802b3c703cdf2dc4f8147452d215e3df80bdc1b978",
+    "canonicalSha256": "4cba44ab8d52cafb3850145e7084f89c600396845f418c09c6534b90df836727",
+    "validation": {
+      "status": "passed",
+      "sections": 5
+    },
+    "validationMessage": null
+  },
+  "cohortReplay": {
+    "debates": [
+      "88",
+      "194",
+      "137",
+      "08",
+      "65",
+      "140",
+      "156",
+      "120",
+      "118",
+      "145"
+    ],
+    "acceptedOriginalPlans": 9,
+    "recoveredPlans": 1,
+    "totalAcceptedPlans": 10,
+    "everyPlanPassedRepositoryValidator": true,
+    "everyCanonicalHashReplayed": true,
+    "nineOriginalAcceptedPlansByteIdentical": true
+  },
+  "recoveryControls": {
+    "boundedFirstRecoveryUsed": true,
+    "minimumFieldDisjointShardCount": 2,
+    "eachOriginalModelWritableFieldAcceptedExactlyOnce": true,
+    "originalFailedPartialOutputReused": false,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "meteredApiCostUsd": 0,
+  "paidServiceCalls": 0,
+  "nextAuthorizedAction": "prepare-freeze-and-activate-twenty-exact-batch-08-side-selector-packets-under-standing-authorization"
+}
