@@ -1,0 +1,2054 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-production-compatibility",
+  "status": "frozen-post-canary-batch-07-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "planningOnly": true,
+  "debateNumber": "121",
+  "debateId": "dawkins-lennox-science-buried-god-2017",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-121.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-07/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-07/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/OVEuQg_Mglw/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "3858a183d4a9575615042c864892ffa369ce33f9468a46e1b23d74983892acae",
+    "calculatedScoresSha256": "9969e3d3d641c04008bc99a9a0a0d4f70bdbc599c76d32afcd68ff716bf1171b",
+    "finalizationAuditSha256": "8bb84beb8c0acbf8bc9dcf5be6f21e29702247646d03f965048fc428f09c691b",
+    "renderingAuditSha256": "eb8c82e4fa06ef86447f11bf98732e154f5628a3e5592ce351d79df8d8794502",
+    "finalCandidateSha256": "1e1182978a4f4b58cb33b7bcf11513bdd97f3a51b880d7816cb865aac9d88a82",
+    "eventsPath": ".assessment-cache/captions/OVEuQg_Mglw/events.json",
+    "eventsSha256": "9630aacf8429d6fc117432969979c19786937b896cbfa21b1645b793e0521ad0",
+    "finalJudgmentSha256": "be5e141ea2c48ff8d513faab4f5a79e59833fdd6e57fdd7c4bb11c41db5060b3"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-07/production-compatibility/output-bundle/staged-ledgers/dawkins-lennox-science-buried-god-2017.json",
+    "productionLedger": "docs/assessment-ledgers/dawkins-lennox-science-buried-god-2017.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-07-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-07-production-compatibility",
+    "status": "frozen-post-canary-batch-07-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 7,
+    "debateNumber": "121",
+    "debateId": "dawkins-lennox-science-buried-god-2017",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-07-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "3858a183d4a9575615042c864892ffa369ce33f9468a46e1b23d74983892acae",
+      "calculatedScoresSha256": "9969e3d3d641c04008bc99a9a0a0d4f70bdbc599c76d32afcd68ff716bf1171b",
+      "finalizationAuditSha256": "8bb84beb8c0acbf8bc9dcf5be6f21e29702247646d03f965048fc428f09c691b",
+      "renderingAuditSha256": "eb8c82e4fa06ef86447f11bf98732e154f5628a3e5592ce351d79df8d8794502",
+      "finalCandidateSha256": "1e1182978a4f4b58cb33b7bcf11513bdd97f3a51b880d7816cb865aac9d88a82",
+      "eventsPath": ".assessment-cache/captions/OVEuQg_Mglw/events.json",
+      "eventsSha256": "9630aacf8429d6fc117432969979c19786937b896cbfa21b1645b793e0521ad0",
+      "finalJudgmentSha256": "be5e141ea2c48ff8d513faab4f5a79e59833fdd6e57fdd7c4bb11c41db5060b3"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "121",
+      "debateId": "dawkins-lennox-science-buried-god-2017",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-christian-theism",
+          "side": "pro",
+          "description": "Establish that scientific explanation and divine agency are compatible, and that a personal creator provides an integrated explanation of rational intelligibility, apparent design, fine-tuning, moral significance, meaning, and the possibility of Christian revelation and miracles.",
+          "successCriteria": "The route succeeds if theism remains compatible with scientific mechanisms, supplies warranted explanatory advantages over impersonal naturalism, and provides a coherent evidential bridge from a creator to the specifically Christian claims of incarnation, resurrection, redemption, and ultimate justice.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-science-compatible-theism",
+            "tier": "motion",
+            "description": "Show that science has not displaced God and that Christian theism can still explain the principal phenomena identified by the motion."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-rational-personal-ground",
+              "tier": "central",
+              "description": "Explain why rational minds, intelligibility, consciousness, and personhood are grounded more adequately in a personal ultimate reality than in mindless processes."
+            },
+            {
+              "bridgeId": "pro-central-order-design-finetuning",
+              "tier": "central",
+              "description": "Connect biological information, cosmic order, and fine-tuning to purposive agency while distinguishing that inference from an appeal to temporary scientific ignorance."
+            },
+            {
+              "bridgeId": "pro-central-agency-miracle-compatibility",
+              "tier": "central",
+              "description": "Distinguish regular natural mechanisms from creator agency so that divine action and miracle claims are conceptually compatible with scientific inquiry."
+            },
+            {
+              "bridgeId": "pro-central-christian-revelation-redemption",
+              "tier": "central",
+              "description": "Provide a warranted transition from generic creator theism to Christian revelation, resurrection, forgiveness, moral accountability, and ultimate justice."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-meaning-hope",
+              "tier": "subsidiary",
+              "description": "Account for objective meaning, enduring hope, and human relational significance without treating their desirability alone as evidence of truth."
+            },
+            {
+              "bridgeId": "pro-subsidiary-explanatory-levels",
+              "tier": "subsidiary",
+              "description": "Clarify how explanations by mechanism and explanations by agency can coexist without assigning the same explanatory task to each."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-scientific-naturalism",
+          "side": "con",
+          "description": "Establish that natural mechanisms and selection effects explain or undercut the cited evidence for God, that positing a conscious creator compounds rather than resolves the explanatory burden, and that meaning and morality do not require Christian theism.",
+          "successCriteria": "The route succeeds if the principal theistic inferences from rationality, design, fine-tuning, miracles, morality, and meaning lack sufficient warrant, while naturalistic accounts remain coherent and the specifically Christian claims require evidence not supplied by their explanatory or emotional appeal.",
+          "motionBridge": {
+            "bridgeId": "con-motion-naturalistic-sufficiency",
+            "tier": "motion",
+            "description": "Show that the phenomena in the motion neither require God nor provide adequate grounds for accepting specifically Christian theism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-evolutionary-explanation",
+              "tier": "central",
+              "description": "Explain apparent biological design and truth-tracking cognition through natural selection without introducing a designing intelligence."
+            },
+            {
+              "bridgeId": "con-central-creator-complexity",
+              "tier": "central",
+              "description": "Show why a conscious creator carries an explanatory burden at least as demanding as the natural phenomena the creator is invoked to explain."
+            },
+            {
+              "bridgeId": "con-central-anthropic-gap-alternatives",
+              "tier": "central",
+              "description": "Use observer selection and naturalistic alternatives to challenge inferences from intelligibility and fine-tuning while separating unanswered questions from evidence for God."
+            },
+            {
+              "bridgeId": "con-central-christian-evidence-burden",
+              "tier": "central",
+              "description": "Require independent evidence for miracles, incarnation, resurrection, and a morally attentive Christian God beyond generic cosmic order or the desirability of religious hope."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-secular-meaning-morality",
+              "tier": "subsidiary",
+              "description": "Supply non-theistic bases for personal purpose and moral consideration, including evolved cognition, chosen projects, and concern for suffering."
+            },
+            {
+              "bridgeId": "con-subsidiary-desire-truth-distinction",
+              "tier": "subsidiary",
+              "description": "Maintain the distinction between whether a belief offers comfort, hope, or justice and whether the belief is evidentially warranted."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-rationality-intelligibility",
+          "title": "Rationality, Minds, and Cosmic Intelligibility",
+          "weightPercent": 20,
+          "rationale": "This issue tests whether rational persons and a lawlike, intelligible universe require grounding in a prior mind or can be accounted for through evolution and observer-selection conditions."
+        },
+        {
+          "sectionId": "section-design-origins-finetuning",
+          "title": "Design, Origins, and Fine-Tuning",
+          "weightPercent": 25,
+          "rationale": "This section contains the principal clash over biological information, apparent design, cosmic beginnings, fine-tuning, creator complexity, anthropic alternatives, and the evidential use of unresolved scientific questions."
+        },
+        {
+          "sectionId": "section-science-agency-miracles",
+          "title": "Scientific Explanation, Divine Agency, and Miracles",
+          "weightPercent": 20,
+          "rationale": "This issue determines whether mechanistic science excludes divine agency and whether alleged special divine acts are coherent exceptions within a regular creation or unsupported violations of scientific expectations."
+        },
+        {
+          "sectionId": "section-christian-revelation-redemption",
+          "title": "Christian Revelation, Resurrection, and Redemption",
+          "weightPercent": 20,
+          "rationale": "The motion concerns Christian theism rather than an unspecified creator, making the bridge from cosmic intelligence to incarnation, resurrection, forgiveness, judgment, and the character of God independently load-bearing."
+        },
+        {
+          "sectionId": "section-meaning-morality-justice",
+          "title": "Meaning, Morality, Hope, and Justice",
+          "weightPercent": 15,
+          "rationale": "This section compares theistic and naturalistic accounts of purpose, moral consideration, human value, hope, and ultimate justice while preserving the distinction between existential desirability and evidential truth."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-design-natural-selection-and-creator-complexity",
+          "sectionId": "section-design-origins-finetuning",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "constructive",
+          "proposition": "Natural selection explains the apparent design of biological organisms without either pure accident or a designer, while positing a designing God introduces a further and harder explanatory problem.",
+          "sourceSpan": {
+            "startEvent": 227,
+            "endEvent": 283,
+            "excerpt": "that that biology which looks so much more obviously designed uh that we we got our fingers burned there. Now, in the case of the cosmos, freak accident or design, the point that I've made over and over again is that even if we don't understand how it came about, it's not helpful to postulate a creator because the creator is the very kind of thing that needs an explanation. And"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Richard answers John's characterization of his position in a continuous turn ending when John begins listing objections.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-evolutionary-explanation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive presentation of the natural-selection explanation and creator-complexity objection, so no earlier opposing move is targeted."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction among accident, design, and natural selection is recoverable, and cosmic ignorance is expressly acknowledged."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Confidence about biological selection is paired with an explicit admission that no comparable cosmic account is yet known."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Theism may posit a necessary, noncomposite creator rather than an evolved complex organism.",
+            "decisiveQualification": "The excerpt does not address whether divine complexity differs categorically from biological complexity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It strongly advances the central evolutionary-explanation bridge and directly addresses apparent biological design."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The complexity objection is substantial but does not examine the strongest nonbiological account of divine simplicity or necessity."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It constructively develops two principal naturalistic route requirements with a clear explanatory contrast."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies natural selection as producing apparent design, denies actual design, and concedes that cosmology lacks an equivalent Darwinian account.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-rationality-evolutionary-defeater",
+          "sectionId": "section-rationality-intelligibility",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "Evolutionary naturalism threatens confidence in human reasoning because survival-oriented, mindless processes do not necessarily select for truth, thereby undermining the rationality presupposed by science.",
+          "sourceSpan": {
+            "startEvent": 284,
+            "endEvent": 320,
+            "excerpt": "evolution has to do with reproductive success and nothing to do with truth. And John Gray, who's also an atheist, I understand, made the point not long ago that uh the problem with uh Darwinism, if you take it in its ultra form, it really undermines the um notion that we can give any credence to what we think. So it seems to me that your atheism undermines the very rationality that I assume and you assume when we go to study the universe"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "John takes the floor after Richard's complexity argument and develops a continuous objection before inviting an answer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-evolutionary-explanation"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-rationality-evolutionary-defeater-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether mindless natural selection can support trustworthy reasoning rather than merely adaptive behavior.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-rationality-evolutionary-defeater-component-02",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether the biological selection account explains apparent organismal design without a designer.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts a foundational epistemic implication of the naturalistic mechanism but does not dispute its direct explanation of apparent biological design."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition is recoverable, but the referenced ultra form of Darwinism and the reach from survival to all reasoning remain partly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move advances a broad self-undermining conclusion without qualifying the difference between adaptive accuracy and abstract reasoning."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Selection may favor generally reliable cognition because accurate beliefs often improve adaptive behavior.",
+            "decisiveQualification": "Adaptive success need not guarantee truth across every abstract or metaphysical domain."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The conditional challenge is intelligible, but it needs a bridge from survival selection to pervasive cognitive unreliability."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "Named outside agreement substitutes for evidence about the relation between adaptive behavior and truth tracking."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly attacks a central evolutionary requirement by challenging the reliability of evolved cognition."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The move preserves a legitimate domain-gap concern but largely presents naturalistic cognition as globally self-defeating."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "It contacts a secondary foundation of the naturalistic case while leaving the move's principal design explanation intact."
+            }
+          },
+          "evidenceBasis": "Lennox invokes survival-oriented evolution and John Gray to argue that atheism undermines the rationality both speakers presuppose in studying the universe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-rationality-evolved-truth-tracking",
+          "sectionId": "section-rationality-intelligibility",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Natural selection can produce truth-tracking cognition because organisms that systematically misperceive consequential features of the real world are less likely to survive and reproduce.",
+          "sourceSpan": {
+            "startEvent": 321,
+            "endEvent": 354,
+            "excerpt": "of survival that it has. It wouldn't survive. I mean truth just means that you're living in the real world and you behave in the real world in such a way as things make sense in the real world. When you see a rock in your way, you don't go charging into it. You die if you did that. If you jumped over a cliff, you die. That's truth. It's perfectly obvious that natural selection"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Richard explicitly announces his answer and explains the survival value of accurate perception until John's next response begins.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-evolutionary-explanation"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-rationality-evolutionary-defeater"
+            ],
+            "components": [
+              {
+                "componentId": "con-rationality-evolved-truth-tracking-component-01",
+                "targetMoveId": "pro-rationality-evolutionary-defeater",
+                "text": "Whether selection for successful behavior can also favor substantially accurate perception of consequential reality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-rationality-evolved-truth-tracking-component-02",
+                "targetMoveId": "pro-rationality-evolutionary-defeater",
+                "text": "Whether evolved cognition is trustworthy in abstract scientific, logical, and metaphysical reasoning.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The rock and cliff examples directly answer the claim that survival has no relation to truth, but they do not establish reliability in remote abstract domains."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The practical-perception thesis is clear, though the definition of truth and its extension to all cognition are somewhat compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The examples strongly warrant practical truth tracking, but 'perfectly obvious' exceeds what they establish about cognition generally."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The defeater principally concerns abstract reasoning, not perception of cliffs and rocks.",
+            "decisiveQualification": "Reliable practical perception may still supply a base from which broader reasoning capacities develop."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adaptive-value inference works for consequential perception, with a material unargued extension to broader reasoning."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The reply directly supports the central evolutionary account of truth-tracking cognition."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "It fairly meets the strongest objection with survival cases but omits an explicit domain limitation on the conclusion."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive survival-versus-truth premise but leaves a material abstract-domain component unanswered."
+            }
+          },
+          "evidenceBasis": "Dawkins argues that organisms misperceiving rocks, cliffs, and other consequential realities would die, so selection favors behavior aligned with the real world.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-agency-mechanism-levels",
+          "sectionId": "section-science-agency-miracles",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "Discovering natural mechanisms does not eliminate God because explanation by a creator as agent operates at a different level from scientific explanation of how natural processes work.",
+          "sourceSpan": {
+            "startEvent": 463,
+            "endEvent": 480,
+            "excerpt": "is a very important point because I detected in in many of your writings that you oppose God and science as explanations. When Newton discovered the law of gravity, he didn't say marvelous. Now I can know how it works. I don't need God. God is an explicator at the level of an agent, not a mechanism. So that we can study mechanisms and biology. The more sophistic s sophisticated"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "John marks the point as important and develops the Newton analogy until Richard begins his superfluous-agent response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-agency-miracle-compatibility"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-agency-mechanism-levels-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether a successful natural mechanism makes creator agency explanatorily unnecessary.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply justifies replacing a same-level rivalry with a mechanism-versus-agent distinction, preserving the issue of what each explanation is meant to explain."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Agent and mechanism explanations are consistently distinguished, with coexistence rather than exclusive explanatory sufficiency implied."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The distinction supports compatibility, but the categorical assignment of God to an agent level receives only the Newton analogy."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Natural mechanisms may make the divine agent explanatorily superfluous even if they do not logically exclude one.",
+            "decisiveQualification": "Compatibility alone does not establish explanatory necessity, probability, or independent evidence for the agent."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central compatibility bridge between scientific mechanism and creator agency."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reframe is explicit and relevant, though it establishes compatibility more fully than any positive explanatory necessity."
+            }
+          },
+          "evidenceBasis": "Lennox uses Newton's discovery of gravity to distinguish scientific accounts of mechanisms from explanations invoking an agent responsible for them.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-dna-information-mind",
+          "sectionId": "section-design-origins-finetuning",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "The information-processing language and digital database of life are more intelligible as products of mind than as products of unguided matter and random natural processes.",
+          "sourceSpan": {
+            "startEvent": 530,
+            "endEvent": 577,
+            "excerpt": "information processing capacity simply came about by the laws of nature and random processes without a mind? Yes. Well, I find that impossible to believe mathematician. I know you do. Um, this is called the argument from personal incredul. But I could just reverse that and says your position is the argument from personal credul. Rationality comes from irrationality. that mind comes from matter. To to to me the biblical"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "John redirects the discussion to cosmic and biological origins and develops the information argument through his explicit appeal to the Logos.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-order-design-finetuning"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity",
+              "con-rationality-evolved-truth-tracking"
+            ],
+            "components": [
+              {
+                "componentId": "pro-dna-information-mind-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether biological information is adequately explained by mindless laws, randomness, and natural selection.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-dna-information-mind-component-02",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether a designing mind creates a still harder explanatory problem.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-dna-information-mind-component-03",
+                "targetMoveId": "con-rationality-evolved-truth-tracking",
+                "text": "Whether selection favors cognition aligned with consequential reality.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply challenges the mindless-origin component through biological information language, but it neither analyzes selection's information-generating role nor answers creator complexity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The mind-versus-matter contrast is clear, but information, randomness, laws, and unguided evolution are not carefully distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Personal disbelief and a broad Logos contrast do not warrant the strong inference from informational vocabulary to mind."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Selection operating on heritable variation can accumulate functional biological information without pure chance assembling the result.",
+            "decisiveQualification": "Such an account still leaves separate origin-of-life and ultimate-rationality questions open."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 64,
+              "rationale": "The inference relies on an analogy between semantic human information and biological function without defending their equivalence."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attempts to connect biological information to purposive agency, a central pro bridge."
+            },
+            "representationalCharity": {
+              "value": 55,
+              "rationale": "The move conflates unguided evolution with random production and does not engage selection as the strongest naturalistic alternative."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "It contacts the design issue but largely asserts a contrary explanation without defeating the stated selection mechanism."
+            }
+          },
+          "evidenceBasis": "Lennox calls a mindless origin of information processing impossible to believe, contrasts rationality from irrationality and mind from matter, and invokes the biblical Logos.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-finetuning-creator-traces",
+          "sectionId": "section-design-origins-finetuning",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "A personal creator would be expected to leave evidential traces, and the universe's mathematical describability, fine-tuning, and sophistication constitute such evidence rather than proof.",
+          "sourceSpan": {
+            "startEvent": 745,
+            "endEvent": 790,
+            "excerpt": "he is personal, then I would expect certain things to follow. one that I would see evidence not proof but evidence in the universe that God existed. I feel I see that in the mathematical describability of the universe in the finetuning of the universe and so on and in the marvelous sophistication of the world. I'd expect to to to see God's traces there. I would also expect that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "John distinguishes two kinds of explanatory gaps and develops his positive expectations under theism before posing a question to Richard.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-order-design-finetuning"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity",
+              "con-rationality-evolved-truth-tracking"
+            ],
+            "components": [
+              {
+                "componentId": "pro-finetuning-creator-traces-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether cosmic order lacks a known Darwinian mechanism and may therefore count as evidence of purposive agency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-finetuning-creator-traces-component-02",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether a personal creator introduces a further and harder explanatory problem.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-finetuning-creator-traces-component-03",
+                "targetMoveId": "con-rationality-evolved-truth-tracking",
+                "text": "Whether selection explains the reliability of evolved cognition.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply offers positive expected traces under personal theism and explicitly treats them as evidence, but does not compare creator complexity or naturalistic alternatives."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The evidential claim is recoverable and carefully distinguished from proof, while the listed traces remain consistently scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker presents an expectation and personal evidential assessment, expressly denying that the observations amount to proof."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central inference from cosmic order and fine-tuning to purposive agency."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The excerpt states a positive theistic expectation without developing a sufficiently specific rival interpretation for a charity test."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the unresolved cosmic-order component with a positive hypothesis while leaving the chief rival-explanation challenge open."
+            }
+          },
+          "evidenceBasis": "Lennox says a personal creator should leave evidence, not proof, and identifies mathematical describability, fine-tuning, and worldly sophistication as traces.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-resurrection-ultimate-justice",
+          "sectionId": "section-meaning-morality-justice",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "In a broken world where much injustice remains uncorrected, the resurrection grounds the rational possibility of ultimate justice that atheism does not provide.",
+          "sourceSpan": {
+            "startEvent": 817,
+            "endEvent": 859,
+            "excerpt": "broken world. I find myself in a world where there's massive injustice, where many people won't get it. We are so privileged. We live in Oxford and so on. We've got enough money to live on, etc., etc. But if there is no God, then there's no ultimate justice. And one of the things that the resurrection transforms for me from pettiness right into center stage is if this is true, then there's real hope that there be a rational"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "John initiates the moral-justice answer and, through brief challenges from Richard, carries the argument to its explicit contrast with atheism.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-meaning-hope"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity",
+              "con-rationality-evolved-truth-tracking"
+            ],
+            "components": [
+              {
+                "componentId": "pro-resurrection-ultimate-justice-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether natural selection explains apparent biological design and whether a creator compounds explanation.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-resurrection-ultimate-justice-component-02",
+                "targetMoveId": "con-rationality-evolved-truth-tracking",
+                "text": "Whether selection can produce practical truth-tracking cognition.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The material bears on the broader worldview comparison through injustice and hope but does not contact either earlier move's decisive evolutionary or complexity demands."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conditional contrast is clear: without God there is no ultimate justice, while resurrection would ground hope if true."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The phrase 'if this is true' appropriately limits the claim to resurrection's implications rather than proving resurrection."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Atheism can permit substantial human justice even while lacking guaranteed cosmic rectification.",
+            "decisiveQualification": "The claim concerns ultimate justice, not whether secular people can pursue local justice."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It strongly supports the subsidiary meaning-and-hope bridge through a conditional account of ultimate justice."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The contrast is fairly confined to final rectification and does not deny naturalistic moral action or partial justice."
+            },
+            "responsiveness": {
+              "value": 54,
+              "rationale": "It is relevant to the debate's worldview stakes but is a nonanswer to the legal earlier opposing moves."
+            }
+          },
+          "evidenceBasis": "Lennox points to massive uncorrected injustice, contrasts atheism's lack of ultimate justice, and conditionally presents resurrection as rational hope for rectification.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-personal-god-self-revelation",
+          "sectionId": "section-christian-revelation-redemption",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "If the creator is personal, divine initiative in revealing God through Christ in an intelligible human form is a coherent way for human persons to know God.",
+          "sourceSpan": {
+            "startEvent": 882,
+            "endEvent": 908,
+            "excerpt": "the fact that the claim of of Christ to be the truth, to be God incarnate, that makes perfect sense to me because if there is a God who invented this wonderful, marvelous universe with all its science and all the rest, then he has taken the initiative in getting to know us and revealing himself to us. And he's revealed himself to us at the level we can understand. We're persons"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The sustained turn follows Dawkins's truth challenge, uses Lennox's first-person theological framing, and ends before Dawkins's response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-christian-revelation-redemption"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-design-natural-selection-and-creator-complexity",
+              "con-rationality-evolved-truth-tracking"
+            ],
+            "components": [
+              {
+                "componentId": "pro-personal-god-self-revelation-component-01",
+                "targetMoveId": "con-design-natural-selection-and-creator-complexity",
+                "text": "Whether natural selection explains biological design and whether a creator adds explanatory difficulty.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-personal-god-self-revelation-component-02",
+                "targetMoveId": "con-rationality-evolved-truth-tracking",
+                "text": "Whether evolution can produce cognition that tracks consequential truths.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply advances the Christian revelation bridge by explaining how a personal creator might communicate, but it does not answer the earlier evolutionary arguments."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The repeated conditional 'if there is a God' clearly bounds the coherence claim about personal self-revelation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The claim is framed as what makes sense conditional on a personal creator, not as independent proof of incarnation."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "Personal self-revelation in humanly intelligible form follows coherently as a possibility, with an evidential transition still missing."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The move asserts Christ's claim and its intelligibility without independent historical evidence for divine self-revelation."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly addresses the central bridge from a personal creator to specifically Christian revelation."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The excerpt primarily supplies a positive conditional account rather than directly characterizing a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 53,
+              "rationale": "It is issue-bearing within the motion yet remains a nonanswer to the exposed earlier opposing targets."
+            }
+          },
+          "evidenceBasis": "Lennox argues that Christ's claim to be incarnate God makes sense if a personal creator initiates relationship and reveals himself at a humanly intelligible level.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-christian-god-cosmic-parochiality-gap",
+          "sectionId": "section-christian-revelation-redemption",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Even if a universe-making intelligence were conceivable, that possibility would not establish the specifically Christian God who monitors private conduct, thoughts, wickedness, and sin.",
+          "sourceSpan": {
+            "startEvent": 921,
+            "endEvent": 951,
+            "excerpt": "and fundamentally incompatible with the sort of God who cares about sin. The sort of God who cares about what what you do with your genitals, the sort of God who who is interested, who has the slightest interest in your private thoughts and wickednesses and things like that. Surely you can see that a God who's grand enough to make the universe is not going to give a tapany cuss"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dawkins explicitly states what might persuade him and contrasts it with the sin-focused God that he rejects as fundamentally incompatible.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-christian-evidence-burden"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-personal-god-self-revelation",
+              "pro-finetuning-creator-traces"
+            ],
+            "components": [
+              {
+                "componentId": "con-christian-god-cosmic-parochiality-gap-component-01",
+                "targetMoveId": "pro-personal-god-self-revelation",
+                "text": "Whether conceiving a personal creator's self-revelation warrants identifying that creator with the specifically Christian God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-christian-god-cosmic-parochiality-gap-component-02",
+                "targetMoveId": "pro-finetuning-creator-traces",
+                "text": "Whether cosmic order and fine-tuning support the specifically Christian divine character.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies the generic-creator-to-Christian-God inference gap and states that cosmic intelligence would not establish concern with sin and private conduct."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move carefully concedes a conceivable universe-making intelligence while denying the stronger specifically Christian conclusion."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The concession is calibrated, but certainty that a cosmic creator would not care about private morality is speculative."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A sufficiently great personal creator could value persons and morality precisely because scale does not limit knowledge or concern.",
+            "decisiveQualification": "Generic cosmic intelligence alone still does not establish this morally attentive Christian character."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (67 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central demand for evidence bridging generic theism to the Christian God."
+            },
+            "representationalCharity": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly defeats the missing transition from universe-maker to the morally attentive God required by Christian claims."
+            }
+          },
+          "evidenceBasis": "Dawkins distinguishes a conceivable universe-making intelligence from a God concerned with sin, private conduct, thoughts, and wickedness, which he calls incompatible with cosmic grandeur.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-christian-miracles-evidence-burden",
+          "sectionId": "section-christian-revelation-redemption",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "The historical existence of Jesus does not establish Christian supernatural claims such as virgin birth, walking on water, or transforming water into wine, which require evidence Dawkins says is absent.",
+          "sourceSpan": {
+            "startEvent": 1100,
+            "endEvent": 1115,
+            "excerpt": "Yes. Now, um, when you look at history, and let's let's leave aside maybe I I I alluded to the possibility that some historians think Jesus never exists. I take that back. Jesus existed. However, if you're going to say that Jesus was born of a virgin, that Jesus walked on water, that he turned water into wine, that is palpably anti-scientific. There is no evidence for that. And"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dawkins accepts Jesus's existence, then clearly distinguishes that historical concession from unevidenced supernatural claims attributed to Jesus.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-christian-evidence-burden"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-personal-god-self-revelation"
+            ],
+            "components": [
+              {
+                "componentId": "con-christian-miracles-evidence-burden-component-01",
+                "targetMoveId": "pro-personal-god-self-revelation",
+                "text": "Whether Christ's historical existence and claimed identity establish supernatural Christian events.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply concedes Jesus's existence, then expressly identifies the failure to bridge that historical fact to virgin birth and miracle claims."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The concession to Jesus's existence and denial of its entailment of particular miracle claims are sharply distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The independent-evidence demand is sound, but 'palpably anti-scientific' and 'no evidence' are broader than the excerpt supports."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Historical testimony could count as evidence for a miracle even when the event lacks an ordinary natural mechanism.",
+            "decisiveQualification": "Extraordinary testimony still requires assessment of independence, reliability, alternatives, and prior probability."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The distinction between historical existence and supernatural attribution is valid, but anti-scientific is insufficiently defined."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "Specific miracle claims are named, yet the categorical absence-of-evidence conclusion is asserted without reviewing the record."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It squarely advances the central burden for independent evidence of specifically Christian supernatural claims."
+            },
+            "representationalCharity": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (60 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly states the unmet evidential demand for the supernatural component, though it does not examine particular historical evidence."
+            }
+          },
+          "evidenceBasis": "Dawkins retracts doubt about Jesus's existence, then denies that this concession establishes virgin birth, walking on water, or transforming water into wine.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-miracles-special-divine-acts",
+          "sectionId": "section-science-agency-miracles",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "Miracles attributed to the creator are special exercises of divine power rather than ordinary natural processes, so their claimed occurrence is not conceptually excluded by scientific study of regular processes.",
+          "sourceSpan": {
+            "startEvent": 1116,
+            "endEvent": 1137,
+            "excerpt": "claimed to be and gave evidence that he was God. When you say it's anti-scientific, I don't think it's anti-scientific at all. Science cannot say that miracles do not occur. I can say they're highly improbable. But nobody is claiming that these things occurred by natural processes. They they occurred because God fed his power in nor did the whole universe uh if we look at it occur in that sense by natural processes. God created and we study"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Lennox invokes Christ as the creator incarnate, distinguishes divine action from natural processes, and explicitly denies the anti-scientific characterization.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-agency-miracle-compatibility"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-christian-miracles-evidence-burden"
+            ],
+            "components": [
+              {
+                "componentId": "pro-miracles-special-divine-acts-component-01",
+                "targetMoveId": "con-christian-miracles-evidence-burden",
+                "text": "Whether miracle claims are conceptually anti-scientific because they do not arise through ordinary natural processes.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-miracles-special-divine-acts-component-02",
+                "targetMoveId": "con-christian-miracles-evidence-burden",
+                "text": "Whether sufficient historical evidence supports the claimed miracles.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the conceptual exclusion claim by distinguishing special agency from regular process, but it leaves the separate evidential burden substantially unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Miracle, natural process, scientific study, and divine power are consistently distinguished, with improbability expressly conceded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The explicit concession of high improbability appropriately limits the conclusion to conceptual scientific compatibility."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Science may not logically exclude miracles yet can render them extremely improbable absent unusually strong evidence.",
+            "decisiveQualification": "Conceptual possibility does not discharge the historical burden for any claimed event."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The conceptual warrant is serviceable, but the assertion that Christ gave evidence of divinity is undeveloped here."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central compatibility bridge between science, regular processes, and special divine action."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive conceptual component while omitting the opponent's independent demand for evidence of actual occurrence."
+            }
+          },
+          "evidenceBasis": "Lennox denies that miracles are anti-scientific, concedes their high improbability, and says they are attributed to divine power rather than natural processes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-meaning-evolved-and-chosen-purpose",
+          "sectionId": "section-meaning-morality-justice",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "constructive",
+          "proposition": "Meaning can arise through evolved brains interpreting the consequences of the world, while people can construct personal purposes without requiring a divinely imposed cosmic purpose.",
+          "sourceSpan": {
+            "startEvent": 1235,
+            "endEvent": 1266,
+            "excerpt": "that human brains appreciate and meaning is something that scientists appreciate in a more sophisticated way. So what is the ultimate meaning of life for you? Uh the ultimate meaning of life depends on what you mean by it obviously um each one of us can make an ultimate meaning. We each one of us can can have a private meaning a purpose in our life um what we hope to achieve in"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The new topic begins after the moderator's transition, and Dawkins develops an evolutionary and individual account before Lennox takes the next turn.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-secular-meaning-morality"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies a secular account in which evolved brains apprehend meaning and individuals choose projects and purposes without imposed cosmic purpose."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The distinction among meaning, private meaning, purpose, and ultimate meaning is only partly stabilized in the short account."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The modest claim that people can make purposes is supported by ordinary agency and does not purport to prove objective cosmic meaning."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary secular-meaning bridge by describing evolved and chosen sources of purpose."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The excerpt offers a constructive secular account and does not meaningfully characterize a developed theistic alternative."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "It constructively addresses personal meaning and purpose, though the distinction between private and ultimate meaning remains compressed."
+            }
+          },
+          "evidenceBasis": "Dawkins links meaning appreciation to human brains and says each person can construct a private purpose through what they hope to achieve.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-personal-ground-meaning-hope",
+          "sectionId": "section-meaning-morality-justice",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "reply",
+          "proposition": "Human consciousness, personhood, relationship, meaning, and enduring hope are more intelligible if ultimate reality is a personal God rather than impersonal matter and energy alone.",
+          "sourceSpan": {
+            "startEvent": 1267,
+            "endEvent": 1323,
+            "excerpt": "consciousness is and so on. I don't begin to see and I don't think scientists begin to see how you can get to something that even understands the concept of meaning. But I can understand it if behind the universe the ultimate reality is not impersonal matter and energy that somehow has produced all this stuff bottom up. I can understand it if it's top down as well as partly bottom up. And that is that there is a God who is personal"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Lennox contrasts bottom-up materialism with a personal divine source and sustains the argument through his concluding question to Dawkins.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-rational-personal-ground"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-meaning-evolved-and-chosen-purpose"
+            ],
+            "components": [
+              {
+                "componentId": "pro-personal-ground-meaning-hope-component-01",
+                "targetMoveId": "con-meaning-evolved-and-chosen-purpose",
+                "text": "Whether evolved brains and individually chosen projects adequately account for human meaning.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly contrasts the secular bottom-up account with a personal ultimate ground and challenges the unexplained emergence of consciousness and meaning."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The bottom-up and top-down alternatives are clear, and the speaker expressly frames the claim as comparative intelligibility."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The acknowledged lack of understanding is appropriate, but greater intelligibility under God remains more asserted than demonstrated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Emergent consciousness and socially constructed meaning may arise from organized matter without being reducible to simple physical vocabulary.",
+            "decisiveQualification": "Naming emergence does not yet explain subjective consciousness or objective normativity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly supports the central personal-ground bridge, although much of its content also concerns subsidiary meaning."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the rival explanation explicitly, though it presses an explanatory gap more than demonstrating the superiority of its alternative."
+            }
+          },
+          "evidenceBasis": "Lennox says current science does not explain consciousness or meaning and argues these are more intelligible if ultimate reality is personal rather than impersonal matter and energy.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-christian-forgiveness-gift",
+          "sectionId": "section-christian-revelation-redemption",
+          "side": "pro",
+          "speaker": "John Lennox",
+          "moveKind": "constructive",
+          "proposition": "Christianity diagnoses humanity's broken relationship with God and offers forgiveness and repair through Christ's death and resurrection as a gift rather than as an achievement of human merit.",
+          "sourceSpan": {
+            "startEvent": 1460,
+            "endEvent": 1505,
+            "excerpt": "moral path to follow which may be excellent. But what Christianity offers me is a radical diagnosis which some people react against the the fact that I find myself disjointed. I find myself I don't even keep my own standards and so on. And I find also that the relationship with God has been broken and there is need for repair. There's need for forgiveness. Now in Christ in his death and resurrection"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "In direct response to the audience question, Lennox explicitly identifies the feature he regards as Christianity's central distinguishing claim.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-christian-revelation-redemption"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move presents Christianity's diagnosis of moral and relational brokenness and its distinctive proposed remedy through Christ as an unearned gift."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Broken relationship, repair, forgiveness, and gift form a stable proposition, with theological presuppositions reasonably apparent."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The description of Christian doctrine is clear, but the diagnosis and supernatural remedy are asserted beyond the personal experience offered."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Other religions and secular traditions can also diagnose moral failure and offer practices of forgiveness or restoration.",
+            "decisiveQualification": "The claimed distinction is salvation through Christ as gift rather than merely a moral path earned by merit."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "Personal moral failure supports the diagnosis only modestly, while Christ's death, resurrection, and divine repair remain unsupported."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central Christian revelation-and-redemption bridge with a specific account of forgiveness."
+            },
+            "representationalCharity": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "It clearly develops the redemption component of the Christian route, though it does not establish the historical premises."
+            }
+          },
+          "evidenceBasis": "Lennox contrasts moral paths with Christianity's diagnosis of failed standards and broken relation to God, followed by repair and forgiveness through Christ's death and resurrection.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-finetuning-anthropic-alternative",
+          "sectionId": "section-design-origins-finetuning",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Fine-tuning does not warrant inferring a conscious designer because the designer would require a larger explanation, while observer selection in a multiverse supplies a naturalistic alternative compatible with our existence.",
+          "sourceSpan": {
+            "startEvent": 1551,
+            "endEvent": 1605,
+            "excerpt": "must have been designed in such a way that they are exactly fine-tuned to bring us into existence. Once again that is a non-exlanation because it leaves open the explanation for the designer. There are many physicists who uh explain that by saying well with the so-called anthropic principle saying that we could only exist in a universe which has the the right laws and the right"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dawkins identifies his uncertainty about the laws, then develops the designer objection, anthropic principle, and multiverse alternative in one uninterrupted answer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-anthropic-gap-alternatives"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-finetuning-creator-traces",
+              "pro-dna-information-mind"
+            ],
+            "components": [
+              {
+                "componentId": "con-finetuning-anthropic-alternative-component-01",
+                "targetMoveId": "pro-finetuning-creator-traces",
+                "text": "Whether fine-tuning warrants a conscious designer rather than merely identifying observer-compatible conditions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-finetuning-anthropic-alternative-component-02",
+                "targetMoveId": "pro-dna-information-mind",
+                "text": "Whether invoking mind resolves rather than relocates the explanatory burden.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly challenges the designer inference as explanatory displacement and supplies anthropic observer selection plus a multiverse as a rival account."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Designer explanation, observer selection, and multiverse are distinct, and uncertainty about the laws is acknowledged."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The multiverse is presented as an available physicists' explanation rather than as established fact, with uncertainty openly stated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A necessary creator might terminate explanation, and fine-tuning could still favor theism over an unverified multiverse.",
+            "decisiveQualification": "Theism must independently justify that termination and compare predictive expectations rather than merely name a designer."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central anthropic-alternatives bridge against the inference from fine-tuning to design."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The reply fairly raises explanatory cost and a live alternative but does not fully engage necessity or comparative priors."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly attacks the decisive inference and offers a relevant alternative, while the alternative's own evidence remains compressed."
+            }
+          },
+          "evidenceBasis": "Dawkins calls design a non-explanation because the designer remains unexplained, then invokes anthropic observer selection and a multiverse as a naturalistic alternative.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-morality-suffering-based-consideration",
+          "sectionId": "section-meaning-morality-justice",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "A secular moral framework can rationally base moral consideration on capacity for suffering rather than species membership alone, making comparisons between humans and other animals philosophically defensible.",
+          "sourceSpan": {
+            "startEvent": 1717,
+            "endEvent": 1727,
+            "excerpt": "people I know. And when he says something like that, it is based upon uh a very rigorous moral philosophic reasoning. He's interested in suffering. And his point is there that a a newborn baby or certainly a a human fetus may be uh less capable of suffering than say a a full-grown pig. uh that seems to me to be an entirely rational point of view, at least an entirely defensible"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage begins immediately after Lennox addresses Dawkins and directly defends the named philosopher challenged in Lennox's closing question.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-secular-meaning-morality"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-personal-ground-meaning-hope"
+            ],
+            "components": [
+              {
+                "componentId": "con-morality-suffering-based-consideration-component-01",
+                "targetMoveId": "pro-personal-ground-meaning-hope",
+                "text": "Whether a personal ultimate reality better grounds meaning, relationship, and enduring hope.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies a secular criterion for moral consideration based on suffering but does not answer the earlier personal-ground argument about meaning and hope."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Capacity for suffering is consistently presented as a defensible consideration rather than the sole exhaustive moral principle."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Calling the position rational and defensible rather than necessary is proportionate to the brief comparative example."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Human moral status may depend on capacities, relationships, kind membership, or future potential in addition to present suffering.",
+            "decisiveQualification": "Present capacity for suffering remains morally relevant even if it is not exhaustive."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The relevant capacities are asserted illustratively, without empirical support or comparison with competing status criteria."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It materially supports the subsidiary secular-morality bridge through a non-species criterion for consideration."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The move defends suffering as rationally relevant but does not address the strongest pluralist account of moral status."
+            },
+            "responsiveness": {
+              "value": 54,
+              "rationale": "It is relevant contrary material for secular value, yet it leaves the selected target's decisive grounding claim uncontacted."
+            }
+          },
+          "evidenceBasis": "Dawkins defends a philosopher's focus on suffering and argues that differences in suffering capacity can make comparisons between a fetus or newborn and a mature pig rationally defensible.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-intelligibility-anthropic-selection",
+          "sectionId": "section-rationality-intelligibility",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "The universe's mathematical intelligibility does not require a divine mind, because creatures capable of evolving, surviving, and asking explanatory questions could exist only in a sufficiently lawful universe.",
+          "sourceSpan": {
+            "startEvent": 1731,
+            "endEvent": 1760,
+            "excerpt": "one of the things that we need to explain. And you think it needs a god in order to explain it. What I would like to know is what would an unintelligible universe look like? How could any creature live as we live? How could any creature have evolved and survived in a universe that didn't have that kind of mathematical intelligibility? It's the anthropic principle again. Just as"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dawkins explicitly identifies Lennox as his interlocutor, revisits the quotation attributed to him, and develops a sustained first-person rebuttal.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-anthropic-gap-alternatives"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-personal-ground-meaning-hope",
+              "pro-finetuning-creator-traces"
+            ],
+            "components": [
+              {
+                "componentId": "con-intelligibility-anthropic-selection-component-01",
+                "targetMoveId": "pro-personal-ground-meaning-hope",
+                "text": "Whether an intelligible universe and evolved inquirers require explanation by a prior personal mind.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-intelligibility-anthropic-selection-component-02",
+                "targetMoveId": "pro-personal-ground-meaning-hope",
+                "text": "Whether consciousness, relationship, enduring hope, and meaning are better grounded in God.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-intelligibility-anthropic-selection-component-03",
+                "targetMoveId": "pro-finetuning-creator-traces",
+                "text": "Whether mathematical describability itself counts as positive evidence of a creator.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the mathematical-intelligibility inference through observer selection, while leaving consciousness, relationship, and hope largely unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The observer-selection claim is recoverable, though 'unintelligible universe' implicitly ranges over lawlessness and uninhabitability."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Observer selection undercuts surprise, but it does not by itself explain why observer-compatible lawful universes exist."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Habitability may require regularity without requiring the unusually deep mathematical discoverability emphasized by the theistic argument.",
+            "decisiveQualification": "Any observers capable of sustained explanation still require substantial regularity and cognitive access."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central anthropic-alternatives bridge against a divine-mind inference from intelligibility."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The move fairly undercuts the inference but leaves the important selection-versus-generation distinction unstated."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It answers the intelligibility component directly but not the broader personal-ground case bundled in the primary target."
+            }
+          },
+          "evidenceBasis": "Dawkins asks how creatures could evolve, survive, and inquire in a universe lacking mathematical intelligibility, and invokes the anthropic principle.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-science-gaps-do-not-license-god",
+          "sectionId": "section-science-agency-miracles",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Unsolved scientific problems do not warrant invoking God, as Darwin's natural explanation of apparent biological design demonstrates that phenomena once treated as magic can yield to persistent natural inquiry.",
+          "sourceSpan": {
+            "startEvent": 1761,
+            "endEvent": 1812,
+            "excerpt": "the complexity of life, the beauty of life, the elegance of life, the apparent design of life looked like magic. And everybody thought it was magic. Everybody thought that God did it. It's so complicated. It's so elegant. Now, that was the really big problem. That's a that was a far bigger problem than the problem of the origin of life, than the problem of the cos of the origin"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted turn continues Dawkins's first-person account of scientific method and invokes Darwin, evolution, and remaining origin problems characteristic of his stated case.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-order-design-finetuning"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-dna-information-mind",
+              "pro-finetuning-creator-traces",
+              "pro-agency-mechanism-levels"
+            ],
+            "components": [
+              {
+                "componentId": "con-science-gaps-do-not-license-god-component-01",
+                "targetMoveId": "pro-dna-information-mind",
+                "text": "Whether unresolved biological complexity or information warrants inferring a designing mind.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-science-gaps-do-not-license-god-component-02",
+                "targetMoveId": "pro-finetuning-creator-traces",
+                "text": "Whether unresolved cosmic origins and fine-tuning warrant treating God as the explanation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-science-gaps-do-not-license-god-component-03",
+                "targetMoveId": "pro-agency-mechanism-levels",
+                "text": "Whether a distinct agency level supplies positive evidence rather than compatibility alone.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply explicitly identifies the gap-to-God inference as unreliable and uses Darwin's successful natural explanation of apparent design as the defeating precedent."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The gaps principle is clear, though calling earlier design explanations 'magic' rhetorically compresses diverse theistic positions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Darwin supplies a strong cautionary precedent, while the move does not claim that every unresolved problem already has a solution."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Theistic arguments may claim positive comparative evidence rather than merely inserting God into an unexplained mechanism.",
+            "decisiveQualification": "Such positive arguments still require defended likelihood comparisons independent of current scientific ignorance."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The established natural-selection example strongly supports methodological caution, though generalization to every open problem is bounded."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central theistic order-and-design bridge by separating unanswered science from evidence for God."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly attacks the inference from unexplained complexity to God and extends the diagnosis to remaining origin questions."
+            }
+          },
+          "evidenceBasis": "Dawkins notes that biological complexity and apparent design once seemed magical, whereas Darwinian evolution supplied a natural explanation, and urges persistence on remaining origin problems.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual requirements for a pro-side adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate residual completion criterion is established beyond the scored moves and burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence remains outside the move-level judgments.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden contacts",
+              "importance values"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any burden's completion because no independent residual exists."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual requirements for a con-side adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate residual completion criterion is established beyond the scored moves and burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence remains outside the move-level judgments.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden contacts",
+              "importance values"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any burden's completion because no independent residual exists."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-rationality-intelligibility",
+          "title": "Rationality, Minds, and Cosmic Intelligibility",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 70,
+              "moves": [
+                {
+                  "moveId": "pro-rationality-evolutionary-defeater",
+                  "importance": 3,
+                  "score": 70
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-rationality-evolved-truth-tracking",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "con-intelligibility-anthropic-selection",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-design-origins-finetuning",
+          "title": "Design, Origins, and Fine-Tuning",
+          "weightPercent": 25,
+          "sides": {
+            "pro": {
+              "score": 74,
+              "moves": [
+                {
+                  "moveId": "pro-dna-information-mind",
+                  "importance": 3,
+                  "score": 68
+                },
+                {
+                  "moveId": "pro-finetuning-creator-traces",
+                  "importance": 3,
+                  "score": 80
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-design-natural-selection-and-creator-complexity",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-finetuning-anthropic-alternative",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-science-agency-miracles",
+          "title": "Scientific Explanation, Divine Agency, and Miracles",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-agency-mechanism-levels",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "pro-miracles-special-divine-acts",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-science-gaps-do-not-license-god",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-christian-revelation-redemption",
+          "title": "Christian Revelation, Resurrection, and Redemption",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "pro-personal-god-self-revelation",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-christian-forgiveness-gift",
+                  "importance": 2,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-christian-god-cosmic-parochiality-gap",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-christian-miracles-evidence-burden",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-meaning-morality-justice",
+          "title": "Meaning, Morality, Hope, and Justice",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-resurrection-ultimate-justice",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-personal-ground-meaning-hope",
+                  "importance": 2,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 75,
+              "moves": [
+                {
+                  "moveId": "con-meaning-evolved-and-chosen-purpose",
+                  "importance": 2,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-morality-suffering-based-consideration",
+                  "importance": 2,
+                  "score": 73
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 76.2,
+          "burdenCompletionAdjustment": 0,
+          "score": 76
+        },
+        "con": {
+          "weightedSectionMean": 82.05,
+          "burdenCompletionAdjustment": 0,
+          "score": 82
+        }
+      },
+      "winner": "con",
+      "winningMargin": 6
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 18,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 108862,
+  "proposedAdapterSha256": "4888f7a4a3336d3198c33f4ca2e278ed0f3112f470349b550095fbffb3e3bd3f",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "121",
+    "sections": 5,
+    "moves": 18,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-07-single-deterministic-score-pass",
+    "adapterSha256": "4888f7a4a3336d3198c33f4ca2e278ed0f3112f470349b550095fbffb3e3bd3f",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
