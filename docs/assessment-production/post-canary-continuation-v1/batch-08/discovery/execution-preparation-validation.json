@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-discovery-execution-preparation-validation",
+  "protocolId": "assessment-production-post-canary-batch-08-discovery",
+  "status": "batch-08-discovery-execution-manifest-validation-passed-frozen-standing-authorization-active",
+  "validatedAt": "2026-08-24T01:27:42Z",
+  "executionPreparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/discovery/execution-preparation-manifest.json",
+    "bytes": 133195,
+    "sha256": "0d5192bb4fb4beadb581414f525450539f1b0bb4ddf4ca44ada1d613784ba0d5",
+    "status": "frozen-thirty-nine-post-canary-batch-08-discovery-contexts-prepared-not-authorized"
+  },
+  "preparationManifestSha256": "de78ff3ada0f347806c46f2d8559e8fee855d28864bd15b1af62ec01bda55de9",
+  "preparationValidationSha256": "fa0daabcea654a897c5a7d1793c25ef10743ef6594b7cc160753098951db36f2",
+  "selectedDebates": [
+    "88",
+    "194",
+    "137",
+    "08",
+    "65",
+    "140",
+    "156",
+    "120",
+    "118",
+    "145"
+  ],
+  "checks": {
+    "exactContextOrderReplayed": true,
+    "exactPreparedInputHashesReplayed": true,
+    "exactPartitionCoverageReplayed": true,
+    "exactTokenCountedLedgersReplayed": true,
+    "exactZeroLexicalTokenRowCompatibilityReplayed": true,
+    "exactChunkSchemasReplayed": true,
+    "copiedInputCeilingReplayed": true,
+    "scoreBlindBoundaryPreserved": true,
+    "modelAndAuthenticationPreserved": true,
+    "isolationPreserved": true,
+    "activeV22PolicyAndRoundedTieRulePreserved": true,
+    "allInheritedStopRulesPreserved": true,
+    "futureOutputsAbsent": true,
+    "zeroCostCapPreserved": true
+  },
+  "totals": {
+    "debates": 10,
+    "contextsPrepared": 39,
+    "modelContextsExecuted": 0,
+    "attempts": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": false,
+    "modelExecution": false,
+    "paidService": false,
+    "inventoryModelExecution": false,
+    "judgmentModelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-batch-08-discovery-execution-activation-under-standing-authorization"
+}
