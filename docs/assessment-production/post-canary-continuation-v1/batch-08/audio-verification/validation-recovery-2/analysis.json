@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-correction-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-2",
+  "status": "batch-08-transcript-structure-correction-accepted-audio-attribution-gate-unresolved",
+  "structuralCorrectionAccepted": true,
+  "completeCohortReplayPassed": true,
+  "transcriptsPreservedByteIdentically": true,
+  "audioVerificationAudit": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/audio-verification.json",
+    "sha256": "4bc49aa75667f52d1c1bd70a478bd874f973362604c2e7c0e4f2dda97b245219",
+    "verified": 3,
+    "unresolved": 3
+  },
+  "audioVerificationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/analysis.json",
+    "sha256": "8b16fe73e5bd366812f6414affccd03726d0b503eb71caa3ae3a29179e888962"
+  },
+  "costControlAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/cost-control-analysis.json",
+    "sha256": "6e198b7eda4331f292f798d1e034472c5c5f838b09ea4bd9af7c1913757c93a3",
+    "planningEstimateUsd": 0.1558275,
+    "usageDerivedEstimatedCostUsd": 0.156225,
+    "approvedMaximumCostUsd": 1,
+    "capExceeded": false
+  },
+  "unresolvedMoves": [
+    "156:con-conscious-capacity-grounds-moral-distinctions",
+    "156:con-conception-dogma-obstructs-abortion-inquiry",
+    "156:pro-scripture-character-historical-progress"
+  ],
+  "failureCategory": "audio-attribution-threshold-unresolved",
+  "furtherTranscriptStructureRecoveryPermitted": false,
+  "downstreamWorkflowBlocked": true,
+  "newApprovalRequired": true,
+  "paidCalls": 0,
+  "modelContexts": 0,
+  "directIncrementalCostUsd": 0,
+  "nextAction": "stop-and-request-approval-for-batch-08-audio-verification-unresolved-result-diagnosis"
+}
