@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-work-item-preparation-recovery-1",
+  "status": "batch-08-audio-work-item-validation-stale-cohort-expectations-diagnosed",
+  "diagnosedAt": "2026-08-24T03:34:45Z",
+  "failureCategory": "deterministic-audio-work-item-validation-harness",
+  "cause": "The new Batch 8 validation harness retained Batch 6's debate list and two expected audio move IDs. The frozen Batch 8 preparation and work-item artifacts correctly contain the ten Batch 8 debates and the exact six-item queue reproduced from accepted independent judgments.",
+  "evidence": {
+    "executionErrorPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation-recovery-1/execution-error.json",
+    "preparationPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation.json",
+    "preparationSha256": "cd6fc5e1cfeae32b40268f61314d3b51107f8ba714e035e8353de9ce95fd82c1",
+    "workItemsPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-items.json",
+    "workItemsSha256": "b9802fc5366826131cf0238873ee4978418457a3da312165f89d13d3bde94947",
+    "validationHarnessPath": "scripts/test-assessment-production-post-canary-batch-08-audio-work-items.mjs",
+    "validationHarnessPreimageSha256": "dea9552c83ba8e6bf01c8d9c26e2dc620d2e0f142c072fe8067033d83852af9e",
+    "frozenMoveCount": 6,
+    "frozenSourceDebates": 3,
+    "staleExpectedMoveCount": 2,
+    "staleExpectedCohort": "Batch 6"
+  },
+  "correctionBoundary": {
+    "writableValidationConstants": [
+      "EXPECTED_DEBATES",
+      "EXPECTED_AUDIO"
+    ],
+    "preimageAuthenticationRequired": true,
+    "preparationManifestChanged": false,
+    "substantiveWorkItemsChanged": false,
+    "sourceHashesChanged": false,
+    "clipWindowsChanged": false,
+    "speakersChanged": false,
+    "audioAccessPermitted": false,
+    "modelExecutionPermitted": false
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "recoveryLevel": 1,
+    "boundedCorrectionAuthorized": true
+  },
+  "directIncrementalCostUsd": 0
+}
