@@ -1,0 +1,298 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-finalization",
+  "status": "staging-only-batch-08-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "debateNumber": "65",
+  "debateId": "donahue-malpass-fine-tuning-god-2026",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-08/deterministic-publication-compilation/compiled/debate-65.json",
+  "compiledInputSha256": "b50030ad9e686e9080bfa39b7ef7b06c42f443db2ef6c648adada62ed95bbb43",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2UtMbB_gazg/transcript.txt",
+    "transcriptSha256": "4081ce49489ec7a77a96c02695cd6efd9cfe60c9c1e114a306a0c97df4f29b39",
+    "eventsPath": ".assessment-cache/captions/2UtMbB_gazg/events.json",
+    "eventsSha256": "40990b53d588dae87d4219e9792dde6e45c1ccd0cbd18cc7103b6420630389f9",
+    "localManifestPath": ".assessment-cache/captions/2UtMbB_gazg/manifest.json",
+    "localManifestSha256": "6527d0ea6bd4e66e4ccc649fbd728be87f721bdabd69ed2d0f06a427b376ca39"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 1,
+  "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d65-ai-pro-thesis",
+        "text": "The AI steelman is that fine-tuning provides defeasible confirmation of perfect-being theism when the datum, rival families, divine motivations, and prior assignments are specified at comparable levels of generality.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-core-fine-tuning-likelihood",
+            "pro-single-universe-comparison-class",
+            "pro-conditional-prior-asymmetry"
+          ],
+          "explanation": "This repairs the live case by integrating its likelihood, comparison-class, and prior claims while explicitly limiting the conclusion to defeasible confirmation."
+        }
+      },
+      "premises": [
+        {
+          "id": "d65-ai-pro-premise-1",
+          "text": "Treat the datum as robust life-permitting sensitivity that persists across serious physical formulations, excluding cases shown to arise merely from an avoidable parameterization or defective theory.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-core-fine-tuning-likelihood",
+              "con-fine-tuning-theory-defect"
+            ],
+            "explanation": "This answers the theory-defect objection by narrowing the evidential datum to fine-tuning that survives appropriate robustness checks."
+          }
+        },
+        {
+          "id": "d65-ai-pro-premise-2",
+          "text": "Compare classical perfect-being theism with a probability-weighted partition of single-universe naturalistic models, assigning overlapping alien, simulation, and disposition hypotheses without double counting.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-single-universe-comparison-class",
+              "con-aggregate-naturalistic-alternatives",
+              "con-full-family-comparison-burden"
+            ],
+            "explanation": "This repairs the comparison-class analysis by replacing universal member-by-member superiority with an explicitly weighted family comparison."
+          }
+        },
+        {
+          "id": "d65-ai-pro-premise-3",
+          "text": "Perfect goodness need not determine one exact universe; it need only supply a stable reason favoring some worlds containing conscious goods, relationships, agency, and moral opportunity.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-core-fine-tuning-likelihood",
+              "pro-goodness-predicts-revelation",
+              "con-indeterminate-divine-choice"
+            ],
+            "explanation": "This extends the goodness argument while answering the objection that uncertainty over exact divine choices eliminates every coarse-grained expectation."
+          }
+        },
+        {
+          "id": "d65-ai-pro-premise-4",
+          "text": "Priors should reflect description length, coherence, ontological commitments, and partition invariance together, preventing either numerous redescriptions or one broad label from manufacturing probability mass.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-conditional-prior-asymmetry",
+              "con-disjunctive-limits-prior",
+              "pro-coherence-versus-modesty",
+              "con-naturalistic-ontological-parsimony"
+            ],
+            "explanation": "This repairs the prior dispute by supplying a common framework that incorporates the strongest considerations raised by both sides."
+          }
+        },
+        {
+          "id": "d65-ai-pro-premise-5",
+          "text": "Simulation and alien hypotheses receive credit only for their net likelihood after accounting for the physical conditions their base realities require and the independent specificity of their agents' intentions.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-simulation-regress-objection",
+              "con-agent-intention-underdetermination"
+            ],
+            "explanation": "This replaces the overstrong regress claim with a conditional accounting rule sensitive to base reality and agent psychology."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d65-ai-pro-conclusion",
+        "text": "If robust fine-tuning remains substantially likelier under the specified goodness-guided theistic model than under the weighted naturalistic family, it provides meaningful but revisable evidence for theism.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-core-fine-tuning-likelihood",
+            "pro-single-universe-comparison-class",
+            "pro-coherence-versus-modesty"
+          ],
+          "explanation": "This preserves the transcript's central confirmation claim while making its conclusion conditional, comparative, and proportionate to the strengthened premises."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d65-ai-pro-argument-1",
+          "title": "Cross-model robustness filter",
+          "text": "Before calculating any religious significance, test whether the alleged life-permitting sensitivity appears across multiple empirically adequate physical formulations and reasonable parameterizations. A pattern that disappears after theoretical reform should carry little weight; a pattern recurring across otherwise competitive models is harder to dismiss as formal bookkeeping. This filter makes the theistic argument more conservative, because it discards fragile examples, yet potentially strengthens the remaining evidence by answering the objection that fine-tuning belongs only to a defective theory.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This is a genuinely new methodological filter for separating robust fine-tuning evidence from artifacts before either worldview receives evidential credit."
+          }
+        },
+        {
+          "id": "d65-ai-pro-argument-2",
+          "title": "Partition-invariant confirmation",
+          "text": "A fair comparison should change little when equivalent hypotheses are redescribed as one broad family or many narrow members. Assign priors through a common complexity language, merge overlapping alternatives, and calculate the naturalistic family likelihood from mutually exclusive components. Then compare that aggregate with a similarly specified theistic model. This approach preserves Malpass's legitimate aggregation demand while blocking arbitrary proliferation, and it gives Donahue a principled route to defend confirmation without claiming that theism must individually outperform every logically imaginable naturalistic refinement.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-aggregate-naturalistic-alternatives",
+              "con-full-family-comparison-burden",
+              "pro-single-universe-comparison-class",
+              "pro-conditional-prior-asymmetry"
+            ],
+            "explanation": "This repairs the transcript's unresolved aggregation problem by proposing a comparison invariant under equivalent repartitioning and redescription."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d65-ai-con-thesis",
+        "text": "The AI steelman is that fine-tuning does not presently provide strong evidence for God because uncertainty about the datum, model partition, priors, and divine choice prevents a stable likelihood advantage.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-full-family-comparison-burden",
+            "con-fine-tuning-theory-defect",
+            "con-indeterminate-divine-choice"
+          ],
+          "explanation": "This integrates the strongest skeptical lines while framing the conclusion as present evidential underdetermination rather than a categorical rejection of theism."
+        }
+      },
+      "premises": [
+        {
+          "id": "d65-ai-con-premise-1",
+          "text": "Only fine-tuning claims robust across empirically adequate theories and parameterizations qualify as stable evidence; theory-relative sensitivity should instead motivate physical model revision.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-fine-tuning-theory-defect"
+            ],
+            "explanation": "This develops the closing theory-defect suggestion into a bounded evidential criterion rather than treating every fine-tuning claim identically."
+          }
+        },
+        {
+          "id": "d65-ai-con-premise-2",
+          "text": "The relevant naturalistic comparator is a mutually exclusive, probability-weighted family containing physical necessity, selection effects, simulation, agency, and other admissible single-universe mechanisms.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-aggregate-naturalistic-alternatives",
+              "con-full-family-comparison-burden"
+            ],
+            "explanation": "This repairs the original examples by requiring principled partitioning, weighting, and avoidance of overlapping probability assignments."
+          }
+        },
+        {
+          "id": "d65-ai-con-premise-3",
+          "text": "Perfect goodness may constrain divine action without selecting embodied moral agents, these constants, this scale, or any sufficiently narrow class of life-permitting outcomes.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-divine-intent-goodness-gap",
+              "con-agent-intention-underdetermination",
+              "con-indeterminate-divine-choice"
+            ],
+            "explanation": "This refines divine-psychology skepticism by granting genuine moral constraints while disputing that they determine the evidentially relevant outcome class."
+          }
+        },
+        {
+          "id": "d65-ai-con-premise-4",
+          "text": "Neither counting disjuncts nor invoking coherence settles prior probability; the comparison requires a shared complexity scheme sensitive to ontology, structure, and redescription.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-disjunctive-limits-prior",
+              "pro-coherence-versus-modesty",
+              "con-naturalistic-ontological-parsimony"
+            ],
+            "explanation": "This corrects the transcript's overstrong disjunct counting while preserving the broader contention that the prior comparison remains unresolved."
+          }
+        },
+        {
+          "id": "d65-ai-con-premise-5",
+          "text": "Compatibility alone does not erase evidence, but flexible alternatives can weaken confirmation when their aggregate prior-weighted likelihood approaches the likelihood assigned by a broadly specified theism.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-persistent-empirical-underdetermination",
+              "pro-empirical-stalking-horse-reductio"
+            ],
+            "explanation": "This directly repairs the ambiguity argument by distinguishing modal compatibility from the comparative likelihood calculation needed for evidential undercutting."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d65-ai-con-conclusion",
+        "text": "Until robust fine-tuning, hypothesis-family weights, and a constrained divine likelihood are jointly established, the evidence supports caution rather than a claim of strong theistic confirmation.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-full-family-comparison-burden",
+            "con-fine-tuning-theory-defect",
+            "con-indeterminate-divine-choice"
+          ],
+          "explanation": "This conclusion proportionately combines the skeptical burdens without claiming that naturalism is proved or that future evidence cannot discriminate."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d65-ai-con-argument-1",
+          "title": "Robustness before explanation",
+          "text": "Explanatory competition should begin only after establishing that the target phenomenon survives changes in physical theory, parameterization, and choice of probability measure. If reasonable formulations relocate or dissolve the sensitivity, assigning it a tiny naturalistic likelihood is premature. This does not assume that every fine-tuning claim is defective; it creates a graduated evidential scale. Stable cross-theory cases receive serious attention, while formulation-dependent cases mainly support further physics. The resulting skepticism is empirical and revisable rather than dependent upon unrestricted speculative alternatives.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a new graduated evidential protocol that ties explanatory urgency to demonstrated robustness across physical representations."
+          }
+        },
+        {
+          "id": "d65-ai-con-argument-2",
+          "title": "Divine choice entropy",
+          "text": "Even if perfect goodness favors valuable creation, many radically different worlds may realize comparable value: embodied or non-embodied minds, different laws, different constants, or no created universe if creation is optional. The relevant theistic likelihood therefore depends on how probability is distributed across a vast goodness-compatible choice set. Unless a principled account concentrates appreciable mass on life-permitting physical universes of the observed kind, goodness alone may yield only a diffuse prediction. This strengthens the divine-psychology objection without claiming that goodness contributes no predictive constraint whatsoever.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-indeterminate-divine-choice",
+              "con-agent-intention-underdetermination",
+              "pro-goodness-predicts-revelation"
+            ],
+            "explanation": "This extends the divine-choice objection by analyzing probability dispersion across many value-compatible outcomes while retaining possible moral constraints."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-24T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "65",
+    "sections": 5,
+    "moves": 16,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
