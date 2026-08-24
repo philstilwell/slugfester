@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-preparation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "preserved-batch-08-publication-preparation-missing-local-manual-diagnosed",
+  "diagnosedAt": "2026-08-24T13:11:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-preparation-missing-frozen-local-input",
+    "errorCode": "ENOENT",
+    "missingPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/manual.md",
+    "preparationArtifactsWritten": 0,
+    "modelContextsExecuted": 0
+  },
+  "diagnosis": {
+    "underlyingProblem": "The Batch 8 preparation script correctly requires a batch-local frozen publication manual, but the new Batch 8 publication root did not yet contain that file.",
+    "contentFailure": false,
+    "sourceFailure": false,
+    "scoreFailure": false,
+    "protectedEvidenceChanged": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "boundedCorrection": {
+    "authorizedByStandingAuthorization": true,
+    "correctionLevel": 1,
+    "createOnlyPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/manual.md",
+    "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/manual.md",
+    "sourceSha256": "14e79b9c8258516bae40cc0a5de42fc15c9fbe2945f091dac8c361b4d4e7a87d",
+    "onlyTransformation": "replace the two Batch 7 labels with Batch 8",
+    "proposedSha256": "502537b7c8e0c8bca8b2fd025d6855428c8a276bd0e501cf4963c864e0344451",
+    "attemptsMaximum": 1,
+    "modelExecutionPermitted": false
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-08-publication.mjs": "b0b11cde7c7aa11d465e6b72ca0231eabde1c08e20fc790a7eac2f6333f87e4d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/continuation-standing-authorization.json": "2313fd2241e5245afab793f93f4c9f7c8a525c5fb614e122ba20904c31bf8d8b"
+  },
+  "nextAuthorizedAction": "create-the-one-hash-locked-batch-08-publication-manual-and-run-one-corrected-preparation-preview"
+}

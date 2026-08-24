@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-preparation-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "frozen-batch-08-publication-preparation-correction-1",
+  "frozenAt": "2026-08-24T13:11:30Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/preparation-failure-diagnosis.json",
+  "correction": {
+    "level": 1,
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/manual.md",
+    "targetMustNotExistBeforeExecution": true,
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/manual.md",
+    "sourceSha256": "14e79b9c8258516bae40cc0a5de42fc15c9fbe2945f091dac8c361b4d4e7a87d",
+    "exactReplacements": [
+      { "from": "# Isolated Batch 7 publication reconstruction manual", "to": "# Isolated Batch 8 publication reconstruction manual" },
+      { "from": "one completed Batch 7 debate assessment", "to": "one completed Batch 8 debate assessment" }
+    ],
+    "proposedSha256": "502537b7c8e0c8bca8b2fd025d6855428c8a276bd0e501cf4963c864e0344451"
+  },
+  "executionControls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "modelExecution": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "write-the-exact-proposed-manual-and-run-the-corrected-preparation-preview-once"
+}
