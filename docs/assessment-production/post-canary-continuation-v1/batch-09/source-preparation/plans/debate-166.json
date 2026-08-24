@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2364,
+  "ledgerBytes": 134652,
+  "ledgerSha256": "e355a7a2f3298cff3f9fe9854ee0925f909ab7c9273003fd364ebb6080752941",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50246,
+      "contextSha256": "54502e7722439deebb5ffaa828373bcfec8c9a2f172795699bef1de9a75aa426"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51448,
+      "contextSha256": "c2efaa324c0c144ba029a1711fa17b346f91885cc4b6c99c2cc648c6a6343562"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2363,
+      "coreEvents": 684,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2363,
+      "contextEvents": 724,
+      "contextBytes": 41469,
+      "contextSha256": "c8e90c1e6e829afea81db96f59fc423123e587cf413d987389c481ebf820af8f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2363,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "166",
+  "debateId": "craig-atkins-does-god-exist-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

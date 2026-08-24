@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2846,
+  "ledgerBytes": 167172,
+  "ledgerSha256": "6689f36f917e6f6e3100e54a89190befff8eaf49e7f3bd457d9aa0f24f3e5afd",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51945,
+      "contextSha256": "93e69545c98065c3d9ef5ec6ca0043104e5bf47d6fccbfd07c4e1e50dba9f280"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53229,
+      "contextSha256": "0785f8504994424fc97dbc125cbcf62e1a56aff179a7a48c7a46e98dbcfbc630"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53433,
+      "contextSha256": "5653b24083a60e03715e0ccb6e957f65a4dbbcd5833547ac755b9cb707e8d2bc"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2845,
+      "coreEvents": 346,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2845,
+      "contextEvents": 386,
+      "contextBytes": 22799,
+      "contextSha256": "883cc4df7bd52f2ac666bdd1bf524ad46827a6ea504e1877f59a0f030eb1e683"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2845,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "17",
+  "debateId": "collins-oconnor-god-existence-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

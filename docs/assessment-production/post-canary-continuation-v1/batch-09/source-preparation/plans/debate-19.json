@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 379,
+  "ledgerBytes": 21400,
+  "ledgerSha256": "1d49a1adf85c028faef25fead4f4d4bf339b62d157940552e34c5d580ca3b17c",
+  "limits": {
+    "contextEventsMaximum": 300,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 259,
+      "coreEvents": 260,
+      "contextStartEvent": 0,
+      "contextEndEvent": 299,
+      "contextEvents": 300,
+      "contextBytes": 16855,
+      "contextSha256": "491defc4f19119466b115141a3d18dd4b0c9cac6965aca581aec315a06391e92"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 260,
+      "coreEndEvent": 378,
+      "coreEvents": 119,
+      "contextStartEvent": 220,
+      "contextEndEvent": 378,
+      "contextEvents": 159,
+      "contextBytes": 9144,
+      "contextSha256": "d11690d017298643730cb5513c4e86a55390c13410a1b093c2986894da8f9d9a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 378,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "19",
+  "debateId": "harris-oconnor-objective-morality-2024",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

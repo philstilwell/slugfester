@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-source-preparation",
+  "debateNumber": "19",
+  "debateId": "harris-oconnor-objective-morality-2024",
+  "motion": "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
+  "sides": {
+    "pro": {
+      "label": "Moral landscape",
+      "speakers": [
+        "Sam Harris"
+      ]
+    },
+    "con": {
+      "label": "Emotivist skepticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 816,
+  "eventCount": 379,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/_pprQXq1eCA/transcript.txt",
+    "transcriptSha256": "c6dfc1d5caa074a08eb70d5280fee6deae5efadbd32f9706728753a2820a4cc7",
+    "eventsPath": ".assessment-cache/captions/_pprQXq1eCA/events.json",
+    "eventsSha256": "a6ce10a2f3bfefa0b8114d64064697dc036f3652797d02aa746c53f3be5d755f",
+    "localManifestPath": ".assessment-cache/captions/_pprQXq1eCA/manifest.json",
+    "localManifestSha256": "0c258af6cdf77859d07fb1a80b25ffe491f28e707f5db780e11d0473151d2c32"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-09/debate-19.jsonl",
+    "sourceLedgerSha256": "1d49a1adf85c028faef25fead4f4d4bf339b62d157940552e34c5d580ca3b17c",
+    "sourceLedgerBytes": 21400,
+    "sourceLedgerEventCount": 379,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/plans/debate-19.json",
+    "partitionPlanSha256": "78b3abbb7405ef7d1d6601d4cb2f011501d1c0145bb89c9f94972763428e303a",
+    "partitionChunks": 2,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

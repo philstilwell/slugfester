@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-source-preparation",
+  "debateNumber": "17",
+  "debateId": "collins-oconnor-god-existence-2024",
+  "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Francis Collins"
+      ]
+    },
+    "con": {
+      "label": "Skeptical agnosticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 6426,
+  "eventCount": 2846,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/fXBGvNc2mvU/transcript.txt",
+    "transcriptSha256": "ecd1f180635870a64e8f324bb2ea556f040c235ba745369e73856bd3d5222a3e",
+    "eventsPath": ".assessment-cache/captions/fXBGvNc2mvU/events.json",
+    "eventsSha256": "ba14e5a774731f274b02161a4f104a56d6634440794eaa4cec99451e48043e77",
+    "localManifestPath": ".assessment-cache/captions/fXBGvNc2mvU/manifest.json",
+    "localManifestSha256": "8588a7df3e4c751d3aa5722db8c5e09e276307e4308201fcddfef2386ad8adfe"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-09/debate-17.jsonl",
+    "sourceLedgerSha256": "6689f36f917e6f6e3100e54a89190befff8eaf49e7f3bd457d9aa0f24f3e5afd",
+    "sourceLedgerBytes": 167172,
+    "sourceLedgerEventCount": 2846,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/plans/debate-17.json",
+    "partitionPlanSha256": "0fd10a22d59553c6e117cbe0a5e5ecd44442902291fa1e0bd51dc5d8316f4f21",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

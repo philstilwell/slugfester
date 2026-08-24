@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2374,
+  "ledgerBytes": 140252,
+  "ledgerSha256": "3ea9cc388220679b056c023ef0d40a126e8da66f381f9d3827705914fbff50c3",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52374,
+      "contextSha256": "e6328c7d5c8c2bb3625c0cbbdb19e49c1129838b5c17a8e152fb85078b717a00"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53643,
+      "contextSha256": "2bc82d9b2e45e88829321f0ca620ffd8f4b6bbe918040425a12a35094220324c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2373,
+      "coreEvents": 694,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2373,
+      "contextEvents": 734,
+      "contextBytes": 43749,
+      "contextSha256": "c2254fae642bbf2ba9649d21b0ed3d69a240bd7ca53deb622a32243f431ae8c6"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2373,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "176",
+  "debateId": "ehrman-peter-williams-gospels-historically-reliable-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

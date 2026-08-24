@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3196,
+  "ledgerBytes": 184219,
+  "ledgerSha256": "0e4cdab3b9da91f4baf4140be4513132da80e0b49ed4c17067dd2299fabb32f8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50968,
+      "contextSha256": "d214ddae1d5c9c2a4ddd57cb3164db37f088e8e452ab6d99b633ec0a04b78f95"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51465,
+      "contextSha256": "61f6d3d379a2e0e87ec737df51dc035f6ab9409f4480a84a5c083be4e999adb9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52762,
+      "contextSha256": "ab317802247126f85fc7bf8826a0b9dea9657072eccd27aab63ece92cedaee9f"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3195,
+      "coreEvents": 696,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3195,
+      "contextEvents": 736,
+      "contextBytes": 42759,
+      "contextSha256": "a5fd02df723296b980750bcee2fdf4868da8a7a589b3c271c330931b496810a7"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3195,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "134",
+  "debateId": "macdonald-carrier-jesus-mythicism-mimesis-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

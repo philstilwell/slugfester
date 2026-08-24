@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-source-preparation",
+  "debateNumber": "183",
+  "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+  "motion": "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
+  "sides": {
+    "pro": {
+      "label": "Robust moral realism vindicates objectivity",
+      "speakers": [
+        "David Enoch"
+      ]
+    },
+    "con": {
+      "label": "Realism does not uniquely settle action",
+      "speakers": [
+        "Justin Clarke-Doane"
+      ]
+    }
+  },
+  "durationSeconds": 4200,
+  "eventCount": 1783,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2WrywAaDvvw/transcript.txt",
+    "transcriptSha256": "b5a77384b189d82e591ed73af99e17bb094587f78aae3fb845e7f0be4d44f0cc",
+    "eventsPath": ".assessment-cache/captions/2WrywAaDvvw/events.json",
+    "eventsSha256": "c9009b36b392b9eac1ada38e92d854a57d8049da4b78db8b899228c597a52765",
+    "localManifestPath": ".assessment-cache/captions/2WrywAaDvvw/manifest.json",
+    "localManifestSha256": "89e4c280748a5120d36b4e70b2ac5fcce6dc6027476462e793c774d175bcdcaf"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-09/debate-183.jsonl",
+    "sourceLedgerSha256": "4dab6b0fb7b72c9008d2cbf54c4fb495e65b8ce6d4a63f7a0b58acf8bf7329f8",
+    "sourceLedgerBytes": 103450,
+    "sourceLedgerEventCount": 1783,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/plans/debate-183.json",
+    "partitionPlanSha256": "8c4c61fc40c00809da1a1af795b24f97414b2a2ba465918cc88a7f9c89202d64",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

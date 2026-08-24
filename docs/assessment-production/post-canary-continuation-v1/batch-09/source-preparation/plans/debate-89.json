@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2204,
+  "ledgerBytes": 123005,
+  "ledgerSha256": "1b12f20c8976f3d72341d917b43ca2896635111edc8d85f09a52eae48d1a135f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49571,
+      "contextSha256": "02835cab10ceddfa6666e833763bae81adc5e3f0a2e779013b77587344934aea"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51156,
+      "contextSha256": "bc7d038649242d7cd009446027f1d3da4abfc9c2c4bf0ff02054c98c684ce772"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2203,
+      "coreEvents": 524,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2203,
+      "contextEvents": 564,
+      "contextBytes": 31466,
+      "contextSha256": "2aa84b7393c1f54ee3b6425af886ef77a8bafbcf1824ca2d17ab502fd9584cd8"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2203,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "89",
+  "debateId": "bignon-oppy-religious-experience-god-2022",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

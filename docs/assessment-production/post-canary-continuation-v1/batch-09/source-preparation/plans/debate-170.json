@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2308,
+  "ledgerBytes": 135464,
+  "ledgerSha256": "3f7a3bfa52123cee9ea85b2e66a2d4bdd4765ad3bf0c01fe890881c64b993b48",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51994,
+      "contextSha256": "926de37164446e58f39decc31c2b77acedb697c98feab99bbcf7fa8f7499d417"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53156,
+      "contextSha256": "fd2f505b42041f2e4324488df19afba6684c8761afe0ba8768cf0a721997af61"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2307,
+      "coreEvents": 628,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2307,
+      "contextEvents": 668,
+      "contextBytes": 39785,
+      "contextSha256": "f269086aa457b7fa87cd93ba1fd34a694d138b250b222788109f828faa316e47"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2307,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

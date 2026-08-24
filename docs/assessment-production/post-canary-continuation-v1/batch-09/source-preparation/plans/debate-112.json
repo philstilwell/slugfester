@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2085,
+  "ledgerBytes": 121168,
+  "ledgerSha256": "95e633d732573b36ac1bdd564e1a4aadfee44048ecb9835ce92758ee2e7b8f89",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51198,
+      "contextSha256": "9c120bec1d627abe94f0d68ecd3e1b84089b9c5808937ca24369f2d036f0a9c7"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53252,
+      "contextSha256": "8155a425d4713c0d62e49b1456ce0b2931eb6ae17b1fe3421512de027234b0a4"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2084,
+      "coreEvents": 405,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2084,
+      "contextEvents": 445,
+      "contextBytes": 26121,
+      "contextSha256": "1eefdd852b98168e303993a99d67d994c8cd4f6ddf8eb0625265b5bdaa52a12d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2084,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "112",
+  "debateId": "copan-woodford-belief-god-reasonable-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
