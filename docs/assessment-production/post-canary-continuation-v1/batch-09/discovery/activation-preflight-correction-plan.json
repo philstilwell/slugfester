@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-discovery-activation-preflight-exception-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-discovery-preparation-recovery",
+  "status": "frozen-final-batch-09-discovery-activation-preflight-exception-prepared",
+  "frozenAt": "2026-08-24T18:02:00Z",
+  "baselineCommit": "1714984cead33e624036f619b127ccab114c49b6",
+  "authorization": {
+    "instruction": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/activation-preflight-exception-instruction.txt",
+    "instructionSha256": "f375e9f08fc77614d716fd2f7dadd966d7deabdad1d8b45325f8c0148626d0c4",
+    "oneTimeThirdFailureException": true
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/activation-preflight-failure-diagnosis.json",
+    "sha256": "64a9a606a2d864871d19ad641087c2dcbe3bd27c86c3561d78ad29c1dfa7fffe"
+  },
+  "executionPreparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/execution-preparation-manifest.json",
+    "sha256": "3f7ec36cd2d8f5c95c635b77f9b3babfc4caad2420cf4b816d47048ca9ea3784",
+    "mustRemainByteIdentical": true
+  },
+  "preparationCorrection2": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/preparation-correction-2-plan.json",
+    "sha256": "431c74fa8acd8b74ed1cefbb63f89269c3f8218431a1d597b5ad08653c10eb4c"
+  },
+  "originalPreparationTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs",
+    "commit": "572fc0b5e965bf8fd6f33b17549b2cf1d279128a",
+    "sha256": "78624075def1bd9e5e459527d040c4a0a4eb2743697b5325d9cfd770288271cb",
+    "reconstructForManifestAuthentication": true
+  },
+  "acceptedCurrentPreparationTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs",
+    "sha256": "cc2cf4c170227f5a7dfbfa2d6511d145fd254c06a885d20967e876f9fed40be0",
+    "authenticateSeparatelyThroughCorrection2": true
+  },
+  "correctedRunner": {
+    "path": "scripts/run-assessment-production-post-canary-batch-09-discovery.mjs",
+    "sha256": "39bed08ebc5993ac2e75e7b7064265f2e907cb040ba6ad8842a353ac8d0c05ff",
+    "onlyBehaviorChange": "Reconstruct the original preparation-test preimage for manifest source authentication and separately authenticate the accepted current test and this correction plan."
+  },
+  "executionControls": {
+    "correctedPreflightAttemptsMaximum": 1,
+    "ordinaryRetriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "furtherRecoveryForThisProblemAuthorized": false,
+    "modelContextsBeforePassingPreflight": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "commit-and-push-the-frozen-correction-then-run-exactly-one-corrected-preflight"
+}

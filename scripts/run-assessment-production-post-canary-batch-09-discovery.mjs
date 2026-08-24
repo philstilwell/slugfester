@@ -40,6 +40,14 @@ const ACTIVATION = `${ROOT}/execution-activation.json`;
 const SCRIPT =
   "scripts/run-assessment-production-post-canary-batch-09-discovery.mjs";
 const VALIDATOR = "scripts/validate-v212-discovery.mjs";
+const PREPARATION_TEST =
+  "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs";
+const ORIGINAL_PREPARATION_TEST_COMMIT =
+  "572fc0b5e965bf8fd6f33b17549b2cf1d279128a";
+const PREPARATION_CORRECTION_2 = `${ROOT}/preparation-correction-2-plan.json`;
+const PREFLIGHT_FAILURE_DIAGNOSIS = `${ROOT}/activation-preflight-failure-diagnosis.json`;
+const PREFLIGHT_EXCEPTION_INSTRUCTION = `${ROOT}/activation-preflight-exception-instruction.txt`;
+const PREFLIGHT_CORRECTION_PLAN = `${ROOT}/activation-preflight-correction-plan.json`;
 const CONTEXTS = 31;
 const DEBATES = ["170", "134", "19", "114", "166", "89", "176", "183", "112", "17"];
 const EXPECTED_PREPARATION_STATUS =
@@ -93,6 +101,32 @@ async function loadAndValidatePreparation({ requireFutureAbsent = false } = {}) 
   const preparation = JSON.parse(bytes);
   const standingAuthorization =
     await loadAndValidatePostCanaryBatch09StandingAuthorization();
+  const [correction2Bytes, diagnosisBytes, instructionBytes, correctionPlanBytes] =
+    await Promise.all([
+      readFile(PREPARATION_CORRECTION_2),
+      readFile(PREFLIGHT_FAILURE_DIAGNOSIS),
+      readFile(PREFLIGHT_EXCEPTION_INSTRUCTION),
+      readFile(PREFLIGHT_CORRECTION_PLAN),
+    ]);
+  const correction2 = JSON.parse(correction2Bytes);
+  const correctionPlan = JSON.parse(correctionPlanBytes);
+  assertV4(
+    correctionPlan.status ===
+        "frozen-final-batch-09-discovery-activation-preflight-exception-prepared" &&
+      correctionPlan.authorization.instructionSha256 === sha256(instructionBytes) &&
+      correctionPlan.diagnosis.sha256 === sha256(diagnosisBytes) &&
+      correctionPlan.preparationCorrection2.sha256 === sha256(correction2Bytes) &&
+      correctionPlan.originalPreparationTest.commit ===
+        ORIGINAL_PREPARATION_TEST_COMMIT &&
+      correctionPlan.originalPreparationTest.sha256 ===
+        preparation.sourceHashes[PREPARATION_TEST] &&
+      correctionPlan.acceptedCurrentPreparationTest.sha256 ===
+        correction2.correctedTest.sha256 &&
+      correctionPlan.acceptedCurrentPreparationTest.sha256 ===
+        sha256(await readFile(PREPARATION_TEST)) &&
+      correctionPlan.correctedRunner.sha256 === sha256(await readFile(SCRIPT)),
+    "Batch 9 discovery activation-preflight exception authentication failed"
+  );
   assertV4(
     preparation.status === EXPECTED_PREPARATION_STATUS &&
       preparation.protocolId ===
@@ -173,7 +207,13 @@ async function loadAndValidatePreparation({ requireFutureAbsent = false } = {}) 
     "Batch 9 frozen discovery preparation is invalid"
   );
   for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-    assertV4(sha256(await readFile(file)) === digest, `${file}: source drifted`);
+    const sourceBytes = file === PREPARATION_TEST
+      ? execFileSync("git", [
+          "show",
+          `${ORIGINAL_PREPARATION_TEST_COMMIT}:${PREPARATION_TEST}`,
+        ])
+      : await readFile(file);
+    assertV4(sha256(sourceBytes) === digest, `${file}: source drifted`);
   }
   if (requireFutureAbsent) {
     for (const future of preparation.futureOutputPathsExcludedFromSourceHashes) {
@@ -274,6 +314,10 @@ async function activate() {
     PREPARATION_VALIDATION,
     SCRIPT,
     VALIDATOR,
+    PREPARATION_CORRECTION_2,
+    PREFLIGHT_FAILURE_DIAGNOSIS,
+    PREFLIGHT_EXCEPTION_INSTRUCTION,
+    PREFLIGHT_CORRECTION_PLAN,
   ];
   const sourceHashes = {};
   for (const file of [...new Set(sourceFiles)].sort()) {
