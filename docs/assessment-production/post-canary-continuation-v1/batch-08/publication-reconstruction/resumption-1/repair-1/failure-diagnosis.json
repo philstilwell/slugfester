@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-08-publication-repair-diagnosis",
+  "status": "frozen-diagnosed-batch-08-debate-08-two-critique-word-overruns",
+  "frozenAt": "2026-08-24T15:30:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "classification": "two-critique-word-boundary-failures-in-complete-rejected-output",
+  "preservedFailure": {
+    "originalAttemptCount": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "acceptedOutput": false,
+    "completeRejectedOutputPreserved": true,
+    "rejectedOutputSha256": "7187e57f625de6ffb6a6f0ebc53e71d40202f386370c9a91f9cd70a3e2824623",
+    "validationMessage": "Error: con-morality-flourishing-reciprocity: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch08PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-08-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption.mjs:256:29)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption.mjs:385:22)\n    at async Promise.all (index 1)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption.mjs:388:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption.mjs:413:24"
+  },
+  "failedFields": [
+    {
+      "moveId": "con-morality-flourishing-reciprocity",
+      "path": "moveProse.con-morality-flourishing-reciprocity.critique",
+      "words": 133,
+      "characters": 1031,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 3
+    },
+    {
+      "moveId": "pro-morality-divine-image-status",
+      "path": "moveProse.pro-morality-divine-image-status.critique",
+      "words": 132,
+      "characters": 987,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 2
+    }
+  ],
+  "failedFieldCount": 2,
+  "excessWordsTotal": 5,
+  "preservedFields": {
+    "moveCount": 20,
+    "repairFields": 2,
+    "validMoveProseEntries": 18,
+    "everyOtherOutputFieldImmutable": true,
+    "acceptedDebate88Preserved": true,
+    "acceptedDebate194Preserved": true,
+    "acceptedDebate137Preserved": true,
+    "sixContextsUnattempted": true
+  },
+  "diagnosticReplay": {
+    "originalOutputModified": false,
+    "persistedCorrectedOutput": false,
+    "hypotheticalWordsRemoved": 5,
+    "result": {
+      "status": "passed",
+      "debateNumber": "08",
+      "moves": 20,
+      "critiques": 20,
+      "minimumCritiqueCharacters": 947,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 2,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "minimumBoundedRepair": {
+    "operation": "one-field-disjoint-publication-repair-packet-with-two-writable-fields",
+    "reasonMinimum": "Two diagnosed writable fields fit the two-field-per-packet ceiling.",
+    "packetCount": 1,
+    "partition": [
+      [
+        "moveProse.con-morality-flourishing-reciprocity.critique",
+        "moveProse.pro-morality-divine-image-status.critique"
+      ]
+    ],
+    "attemptsPerPacket": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveRecoveryMaximum": 1,
+    "mergeRule": "Replace only the two authorized critiques in the complete rejected Debate 08 output, preserve every other field, validate Debate 08, then resume exactly six untouched contexts."
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-08.json": "9a98963e94e578010b0b337cf76e4759597716c9d131ca322476ba8f737dd98e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merged/debate-88.json": "2b5567b41ae7bc1089331a024f46520a19e6d897abc234bf9599d60ce962ee7e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/analysis.json": "65209c6e4aa6e41f85655ded03adc5c0ddb11ee0c8f13db6cd8faa6228ffd047",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/execution-activation.json": "ffffa863bb2badd87deb74d6e643061cebd8210fb426f86214c589f64e746764",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/execution-preparation-manifest.json": "3c2703b378b24666ffd4443edf503313e2e16697122bb63255da8ab982874765",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/model-execution.json": "37012e215ba6ca657c92c921869916f9bf6356b7238e36a1b47af64f0654775e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-08.json": "7187e57f625de6ffb6a6f0ebc53e71d40202f386370c9a91f9cd70a3e2824623",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-137.json": "2ceba5d3b3a61415faf603282dce35268bbbbb33b1f04b42eb8494417d3be137",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-194.json": "80e025d34af91b10553a56c3b3c638cb462bc958d219cef82db38b5baa36c7cf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/provenance/debate-08.json": "6c301939588283555c3a71b6b6d9044e4bd17a9cbbc425d83550b5ec8a0b4768",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/validations/debate-08.json": "206a1d36a36ed869e712a10f4410e4f0f200e182dd57b4a591d8625fd46e4acd"
+  },
+  "directIncrementalCostUsd": 0,
+  "authorization": {
+    "repairPreparation": true,
+    "repairModelExecution": false,
+    "sixContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-one-two-field-debate-08-publication-repair-packet"
+}
