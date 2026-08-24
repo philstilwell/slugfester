@@ -1,0 +1,2035 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+  "status": "frozen-post-canary-batch-08-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "debateNumber": "120",
+  "debateId": "mclatchie-oconnor-christianity-true-2019",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+    "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+    "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+    "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+    "finalCandidateSha256": "c878a15de886c055682c4e1986c73b5629172063684ca1b3305cf06ea440995d",
+    "eventsPath": ".assessment-cache/captions/woqy13ZkeqM/events.json",
+    "eventsSha256": "c683442d353bf82a12112272bbc6a58133bac17f97904c9e7ed64079acd41659",
+    "finalJudgmentSha256": "386bb55da2ed015d94e5db46cafcaa0a5d1042ccc95642e180c57c2462c5bdc5"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "120",
+    "debateId": "mclatchie-oconnor-christianity-true-2019",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-christian-evidentialism",
+        "side": "pro",
+        "description": "Establish Christianity through a cumulative public-evidence case in which historically grounded testimony and its theological setting support Jesus's bodily resurrection, while biblical teaching remains compatible with divine goodness and authority.",
+        "successCriteria": "The route succeeds if the available historical evidence makes bodily resurrection the best explanation, the surrounding theological context connects that event to Jesus's identity and Christian claims, and the principal reliability and moral-authority objections can be reconciled with Christianity.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-christianity-true",
+          "tier": "motion",
+          "description": "Connect the cumulative resurrection, identity, reliability, and moral-authority case to the conclusion that Christianity is true and warrants rational commitment."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-resurrection-evidence",
+            "tier": "central",
+            "description": "Establish historically grounded resurrection appearances and related facts for which bodily resurrection is the best cumulative explanation."
+          },
+          {
+            "bridgeId": "pro-central-source-reliability",
+            "tier": "central",
+            "description": "Establish that the Gospel and apostolic materials are sufficiently early, interlocking, and reliable to support the historical premises."
+          },
+          {
+            "bridgeId": "pro-central-theological-bridge",
+            "tier": "central",
+            "description": "Show that Jesus's scriptural and theological setting raises the resurrection hypothesis's credibility and connects resurrection to his identity and authority."
+          },
+          {
+            "bridgeId": "pro-central-moral-coherence",
+            "tier": "central",
+            "description": "Reconcile challenged biblical laws, narratives, and doctrines with the goodness and moral authority attributed to the Christian God."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-probability-framework",
+            "tier": "subsidiary",
+            "description": "Supply an evidential framework under which sufficiently strong evidence can overcome a low prior probability for a supernatural explanation."
+          },
+          {
+            "bridgeId": "pro-subsidiary-evidential-faith",
+            "tier": "subsidiary",
+            "description": "Explain Christian faith as trust grounded in evidence and prior reasons rather than belief adopted independently of evidence."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-skeptical-critique",
+        "side": "con",
+        "description": "Withhold acceptance of Christianity by challenging the adequacy and independence of its resurrection sources, denying the inference from resurrection to the wider religion, and presenting biblical teaching and Christian doctrine as incompatible with credible moral authority.",
+        "successCriteria": "The route succeeds if the resurrection case does not meet its required evidential burden, if resurrection would not establish Christianity's further identity and authority claims, or if independent moral objections defeat the claimed authority or warranted allegiance of Christianity.",
+        "motionBridge": {
+          "bridgeId": "con-motion-christianity-unestablished",
+          "tier": "motion",
+          "description": "Show that the historical, theological, and moral premises offered do not jointly establish Christianity as true or authoritative."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-resurrection-insufficiency",
+            "tier": "central",
+            "description": "Show that late, disputed, internally divergent, or literarily shaped sources are insufficient to establish an extraordinary bodily resurrection."
+          },
+          {
+            "bridgeId": "con-central-inferential-gap",
+            "tier": "central",
+            "description": "Demonstrate that even a resurrection would not by itself establish Jesus's divinity, moral authority, Christian doctrine, or a duty of allegiance."
+          },
+          {
+            "bridgeId": "con-central-moral-authority",
+            "tier": "central",
+            "description": "Show that challenged biblical laws, narratives, and doctrines conflict with the perfect goodness required for divine moral authority."
+          },
+          {
+            "bridgeId": "con-central-prior-context",
+            "tier": "central",
+            "description": "Challenge prophecy and theological context as independent grounds for raising the prior credibility of Jesus's resurrection."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-martyrdom",
+            "tier": "subsidiary",
+            "description": "Challenge whether the evidence about apostolic suffering and death establishes sincere, recantable testimony to bodily resurrection."
+          },
+          {
+            "bridgeId": "con-subsidiary-suffering",
+            "tier": "subsidiary",
+            "description": "Require an account of morally significant animal suffering that is compatible with the agency and goodness of the Christian God."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-resurrection-evidence",
+        "title": "Resurrection Appearances and Competing Historical Explanations",
+        "weightPercent": 27,
+        "rationale": "The existence, character, and sincerity of reported appearances supply the principal historical basis for resurrection, while the evidential threshold and availability of non-resurrection explanations determine whether that basis can bear the central historical burden."
+      },
+      {
+        "sectionId": "section-gospel-reliability",
+        "title": "Gospel Reliability, Corroboration, and Narrative Construction",
+        "weightPercent": 21,
+        "rationale": "The resurrection inference depends on whether Gospel and apostolic materials function as historically grounded testimony; alleged contradictions, literary parallels, interlocking details, and inductive reliability therefore form a distinct source-level clash."
+      },
+      {
+        "sectionId": "section-probability-theology-bridge",
+        "title": "Prior Probability, Prophecy, and the Bridge to Christianity",
+        "weightPercent": 18,
+        "rationale": "This issue governs both whether a supernatural resurrection can become credible in Jesus's theological setting and whether such an event would establish divinity, doctrinal truth, moral authority, or warranted allegiance to Christianity."
+      },
+      {
+        "sectionId": "section-biblical-moral-authority",
+        "title": "Biblical Teaching, Atonement, and Divine Moral Authority",
+        "weightPercent": 27,
+        "rationale": "Biblical slavery texts, conquest narratives, salvation and atonement doctrines, and the basis of divine-command morality provide an independent motion-level test of whether Christianity can credibly claim a perfectly good and authoritative source."
+      },
+      {
+        "sectionId": "section-suffering-and-rational-commitment",
+        "title": "Suffering, Evidence, and Rational Christian Commitment",
+        "weightPercent": 7,
+        "rationale": "Animal suffering tests the compatibility of Christian theism with divine goodness, while disputes about faith, evidential responsibility, and conditional importance address what would rationally support further inquiry or commitment."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-bayesian-evidence-overcomes-low-prior",
+        "sectionId": "section-probability-theology-bridge",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "constructive",
+        "proposition": "Any logically possible explanation, including divine resurrection, can in principle overcome a low prior probability when supported by sufficiently strong cumulative evidence.",
+        "sourceSpan": {
+          "startEvent": 177,
+          "endEvent": 212,
+          "excerpt": "from the dead I beg to differ with him on this I would contend that any explanation that is logically possible can in principle be confirmed by evidence on into the screen we see what's called Bayes theorem and probability theory and basically the equation that you see on the screen represents the odds form of Bayes theorem which is used in developing what's called a cumulative"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This occurs within Jonathan's uninterrupted opening presentation and explicitly identifies a prior position attributed to his opponent before giving the Bayesian answer.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-probability-framework"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the probability framework under which cumulative evidence can overcome a low prior; it has no earlier opposing target to answer."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The in-principle claim, its logical-possibility condition, and its sufficiently-strong-evidence qualification are all recoverable and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The claim is expressly limited to what evidence can establish in principle and does not assert that the actual resurrection evidence succeeds."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supplies the core rule of the subsidiary probability framework, near the top of that burden tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move states a general Bayesian possibility and does not materially interpret or characterize a developed competing explanation."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly invokes Bayes's theorem and says any logically possible explanation can in principle be confirmed by sufficiently strong cumulative evidence.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-early-appearance-testimony",
+        "sectionId": "section-resurrection-evidence",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "constructive",
+        "proposition": "The early tradition preserved in First Corinthians 15 and reported appearances support the conclusion that the disciples experienced what they interpreted as the risen Jesus.",
+        "sourceSpan": {
+          "startEvent": 233,
+          "endEvent": 300,
+          "excerpt": "Jesus appeared to them as the risen Christ now of course they don't accept that Jesus really did rise from the dead they just believed that the disciples had experiences which they interpreted as appearances of the raised christ his number of reasons for this one is in 1st Corinthians 15 Paul quotes an ancient Creed's he says for I delivered to you as a first importance what he"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator-assigned pro opening continues without a speaker change, and Jonathan cites scholars, Paul, and the Corinthians tradition as components of his case.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-resurrection-evidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move adduces the First Corinthians 15 tradition and reported appearances as premises of the central resurrection-evidence case, without answering an earlier locked objection."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conclusion is carefully limited to experiences interpreted as appearances, and the source and relevant group are identifiable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move distinguishes the disciples' interpreted experiences from the further conclusion that Jesus actually rose, fitting its evidential basis."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The disciples sincerely experienced something they interpreted as Jesus without a bodily resurrection.",
+          "decisiveQualification": "The testimony establishes interpreted experiences more directly than it establishes their supernatural cause."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Early testimony and appearance reports coherently support interpreted experiences, with only the source-to-event reliability bridge compressed."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports an indispensable appearance premise of the central resurrection-evidence burden."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The move explicitly acknowledges that skeptics can accept interpreted experiences while denying that Jesus genuinely rose bodily."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies the tradition quoted by Paul in First Corinthians 15 and distinguishes reported experiences from acceptance of a real resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-varied-appearances-and-sincerity",
+        "sectionId": "section-resurrection-evidence",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "constructive",
+        "proposition": "The reported appearances were prolonged, multisensory, and collective, while the disciples' willingness to suffer supports their sincerity rather than knowing fabrication.",
+        "sourceSpan": {
+          "startEvent": 301,
+          "endEvent": 359,
+          "excerpt": "according to the narratives that we have in the Gospels in Acts and so it was extend across according to acts 140 days so it wasn't just one brief and confusing episode we also have evidences that the disciples who claimed that Jesus had been raised from the dead were at least sincere in that belief and so we have for example the voluntary sufferings their willingness to suffer"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The argument remains part of Jonathan's uninterrupted opening case, with consistent first-person framing and no competing speaker turn in the source window.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-resurrection-evidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move offers duration, sensory variety, collective reports, and voluntary suffering as cumulative support for appearances and sincerity; it has no reply target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The sincerity conclusion is expressly limited, but the extent of the collective and multisensory reports and the class of suffering disciples remain somewhat underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Willingness to suffer reasonably bears on sincerity, but the excerpt gives limited verification of who suffered for recantable appearance testimony."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Sincere disciples could have been mistaken, visionary, or influenced by group expectation rather than fabricating the reports.",
+          "decisiveQualification": "Sincerity defeats knowing fabrication more directly than it defeats nonfraudulent psychological or legendary alternatives."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The Gospel and Acts descriptions are specific, but independence, historical verification, and the circumstances of suffering are materially compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central resurrection case, though some material bears more narrowly on sincerity than resurrection."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move fairly confines suffering to sincerity and does not expressly pretend that sincerity alone establishes bodily resurrection."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt cites Gospel and Acts narratives, a forty-day duration, and disciples' voluntary willingness to suffer as evidence of sincere belief.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-extraordinary-evidence",
+        "sectionId": "section-resurrection-evidence",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The bodily-resurrection case rests chiefly on late biblical writings, whose disputed narratives and limited external support do not meet the evidential burden of such an extraordinary historical claim.",
+        "sourceSpan": {
+          "startEvent": 408,
+          "endEvent": 506,
+          "excerpt": "presented thus far and admittedly we haven't had much time to go through it has been biblical and that's because the only evidence that there is available that can come close to proving the bodily resurrection of Christ is biblical you have the Gospels and you have the epistles there are references it seems in some historical documents such as the writings of Josephus the first"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator introduces Alex immediately before this opening, and the uninterrupted skeptical presentation directly answers the evidential case Jonathan had just delivered.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-resurrection-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-early-appearance-testimony",
+            "pro-varied-appearances-and-sincerity",
+            "pro-bayesian-evidence-overcomes-low-prior"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-extraordinary-evidence-component-01",
+              "targetMoveId": "pro-early-appearance-testimony",
+              "text": "Whether early Pauline tradition and reported appearances provide sufficiently reliable historical evidence for the disciples' claimed experiences.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-resurrection-extraordinary-evidence-component-02",
+              "targetMoveId": "pro-varied-appearances-and-sincerity",
+              "text": "Whether Gospel and Acts reports of varied appearances and apostolic suffering are sufficiently independent and well supported to establish the historical case.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-resurrection-extraordinary-evidence-component-03",
+              "targetMoveId": "pro-bayesian-evidence-overcomes-low-prior",
+              "text": "Whether the actual evidence supplies the extraordinary evidential strength needed to overcome a very low resurrection prior.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the historical-source and evidential-threshold demands by stressing dependence on late, disputed biblical writings and limited external support, although it does not individually assess every appearance tradition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The evidential objection is clear, but terms such as late, disputed, and limited external support cover several sources without full differentiation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker acknowledges limited presentation time, but the broad insufficiency judgment exceeds the excerpt's relatively brief source analysis."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early Christian writings may preserve genuine testimony even if they are included in the biblical canon.",
+          "decisiveQualification": "Canonical status does not itself reduce historical value; dating, dependence, corroboration, and content must be assessed separately."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "Insufficiently supported and disputed sources can fail an extraordinary claim, though biblical provenance alone does not establish insufficiency."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The reply identifies the source pool and limited external evidence, but gives little representative documentation of dating, disputes, or dependence."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden that available resurrection sources are insufficient."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The reply recognizes epistles and some external references but leans too heavily on the biblical label without fully separating the sources."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the decisive evidential sufficiency issue across all three earlier moves but leaves several particular Pauline and sincerity warrants untreated."
+          }
+        },
+        "evidenceBasis": "The excerpt says the case presented is chiefly biblical, identifies Gospels and epistles, and notes only limited external references such as Josephus.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-gospels-mythic-literary-material",
+        "sectionId": "section-gospel-reliability",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Literary parallels and mythic material within the Gospels make their historical content difficult to separate from invention, preventing those texts from securely establishing a bodily resurrection.",
+        "sourceSpan": {
+          "startEvent": 507,
+          "endEvent": 584,
+          "excerpt": "and so on and so on it's very clear that the story is borrowed now does this mean that there's no historical accuracy in the Gospels of course not what it means is that the Gospels are riddled with myth and it's not an easy task to discern what is history and what is not and if the only evidence that we really have for a bodily resurrection comes from within these texts then we"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Alex's uninterrupted opening continues, and he explicitly develops the skeptical source-reliability argument using a named literary comparison and an extended analogy.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-source-reliability"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-varied-appearances-and-sincerity",
+            "pro-early-appearance-testimony"
+          ],
+          "components": [
+            {
+              "componentId": "con-gospels-mythic-literary-material-component-01",
+              "targetMoveId": "pro-varied-appearances-and-sincerity",
+              "text": "Whether Gospel narratives can securely support the reported character and duration of resurrection appearances.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-gospels-mythic-literary-material-component-02",
+              "targetMoveId": "pro-early-appearance-testimony",
+              "text": "Whether literary and mythic shaping undermines all early appearance testimony rather than specifically the Gospel narratives.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply attacks reliance on Gospel narratives by alleging borrowed and mythic material, but it does not directly undermine the distinct First Corinthians tradition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conclusion and scope are clear, but 'riddled with myth' and 'borrowed' cover several possible literary relationships that are not sharply distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The concession that some history remains is appropriate, but the claim of pervasive myth outruns the limited parallel evidence preserved here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Literary parallels can coexist with historically grounded traditions and do not entail wholesale invention.",
+          "decisiveQualification": "The inference requires showing that the relevant resurrection material, not merely some Gospel episodes, is historically compromised."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly attacks the indispensable reliability of Gospel sources and thus sits high in the central tier."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "The reply contacts the decisive Gospel-reliability component while leaving the separate Pauline testimony component substantially unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly infers borrowing, describes the Gospels as containing myth, concedes some historical accuracy, and stresses difficulty separating history from invention.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-inferential-gap",
+        "sectionId": "section-probability-theology-bridge",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Even a demonstrated resurrection would not by itself establish the resurrected person's divinity, moral authority, or otherwise unrelated historical and doctrinal assertions.",
+        "sourceSpan": {
+          "startEvent": 598,
+          "endEvent": 637,
+          "excerpt": "so and this is even if I were to prove that I'd risen from the dead if I say yeah you should use trust my moral claims and you should trust my extraordinary historical claims and truth claims if I claimed that the earth is flat or whatever it may be simply on the basis of the fact that I rose from the dead I don't think you'd be able to convince and that's even if I was able to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The source remains Alex's opening turn, and the move explicitly distinguishes the resurrection premise from the broader theological conclusions attributed to it.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-inferential-gap"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-bayesian-evidence-overcomes-low-prior",
+            "pro-early-appearance-testimony"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-inferential-gap-component-01",
+              "targetMoveId": "pro-bayesian-evidence-overcomes-low-prior",
+              "text": "Whether confirming bodily resurrection would establish the wider divine identity, moral authority, and doctrinal conclusions required by Christianity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-resurrection-inferential-gap-component-02",
+              "targetMoveId": "pro-early-appearance-testimony",
+              "text": "Whether appearance evidence, even if historically successful, supplies the theological bridge from resurrection to Christianity's broader claims.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly grants resurrection for argument's sake, identifies the missing inference to divinity and moral authority, and states that those broader claims would remain unproved."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The hypothetical grant and the limited conclusion are explicit, with divinity, moral authority, and unrelated claims clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a claim about logical insufficiency, the assertion appropriately says resurrection alone does not entail the listed wider conclusions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A resurrection embedded in Jesus's prior teaching and theological context could provide evidence for his authority.",
+          "decisiveQualification": "The event alone is not deductively sufficient, but contextual evidence could create a probabilistic bridge."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly and almost completely states the indispensable central inferential-gap burden."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The hypothetical isolates a genuine gap fairly, although it gives limited attention to a cumulative contextual rather than event-only inference."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly isolates the decisive inferential gap and states the defeating consequence for the motion-level conclusion."
+          }
+        },
+        "evidenceBasis": "The excerpt grants, for argument, proof of rising from the dead and asks why that would validate moral claims or extraordinary unrelated truth claims.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-martyrdom-recantation-gap",
+        "sectionId": "section-resurrection-evidence",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The martyrdom argument does not establish sincere resurrection testimony because the available accounts do not show that the disciples died under circumstances in which recanting would have saved them.",
+        "sourceSpan": {
+          "startEvent": 638,
+          "endEvent": 663,
+          "excerpt": "put to death for their beliefs there are there are two recorded instances of disciples deaths all of the Apostles deaths in the Gospels the first is James brother of John who was put to death by Herod with a sword and I'd ask if there is any not even just extra biblical evidence but even biblical evidence that that could have somehow been avoided had had James recant and had he"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Alex directly addresses Jonathan by name and examines the evidential basis of a specific argument presented during Jonathan's immediately preceding opening speech.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-martyrdom"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-varied-appearances-and-sincerity"
+          ],
+          "components": [
+            {
+              "componentId": "con-martyrdom-recantation-gap-component-01",
+              "targetMoveId": "pro-varied-appearances-and-sincerity",
+              "text": "Whether apostolic suffering establishes sincere resurrection testimony by showing that recantation was available and would have prevented death.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies the missing recantation condition in the suffering-to-sincerity inference and asks whether the cited deaths could have been avoided by denying the claim."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is narrowly limited to whether known death circumstances offered a life-saving opportunity to recant resurrection testimony."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker asks for evidence and limits the criticism to what the available accounts establish rather than denying every apostolic death."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Suffering short of execution can still support sincerity even without a final recantation offer.",
+          "decisiveQualification": "That weaker evidence may support commitment but does not establish the stronger martyrdom-under-recantation argument."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supplies the decisive challenge within the subsidiary martyrdom burden."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it expressly isolates the decisive missing warrant and explains why mere death does not establish recantable testimony."
+          }
+        },
+        "evidenceBasis": "The excerpt discusses James's death by Herod and asks whether any biblical or extrabiblical evidence shows recantation could have avoided it.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-objectionable-biblical-morality",
+        "sectionId": "section-biblical-moral-authority",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Biblical endorsements of slavery, condemnation of homosexuality, and disparagement of women count against Christianity when its claimed objective moral teachings cannot be rendered morally defensible.",
+        "sourceSpan": {
+          "startEvent": 664,
+          "endEvent": 713,
+          "excerpt": "slavery the condemnation historically and in the modern day of homosexuality and the disparagement of women I think that these things should suggest to us that if we find them morally in defensible than we should find indefensible the doctrine from which they spring because of course part of Christianity is an objective moral framework and so if the moral claims are false and so"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This is the concluding portion of Alex's uninterrupted opening presentation, signaled by his remaining-time remarks and followed by audience thanks and moderation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-moral-authority"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-bayesian-evidence-overcomes-low-prior"
+          ],
+          "components": [
+            {
+              "componentId": "con-objectionable-biblical-morality-component-01",
+              "targetMoveId": "pro-bayesian-evidence-overcomes-low-prior",
+              "text": "Whether the cumulative historical case establishes Christianity despite an independent challenge to the claimed objective moral framework.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move introduces a distinct, highly relevant moral-authority objection, but none of the earlier pro moves defended biblical moral teaching, so it does not answer their decisive components."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The conditional moral objection is recoverable, but endorsement, condemnation, disparagement, and Christianity cover diverse texts and traditions."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The conditional inference is plausible, but the broad examples require textual interpretation and moral argument not developed in the excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Challenged biblical texts may admit contextual, progressive, or non-endorsing interpretations.",
+          "decisiveQualification": "Such interpretations must address the actual provisions and cannot rely solely on general moral compatibility."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central con burden challenging biblical moral authority."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 59,
+            "rationale": "Within relevant nonanswers, it contributes a major independent objection to the motion while leaving the selected earlier moves' historical and probabilistic demands uncontacted."
+          }
+        },
+        "evidenceBasis": "The excerpt names slavery, homosexuality, and treatment of women, then links morally indefensible teachings to Christianity's objective-morality claim.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-john-plural-women-reconciliation",
+        "sectionId": "section-gospel-reliability",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Mary Magdalene's statement in John that 'we' do not know where Jesus was laid is consistent with the other Gospels reporting multiple women at the tomb.",
+        "sourceSpan": {
+          "startEvent": 725,
+          "endEvent": 751,
+          "excerpt": "2 Mary Magdalene comes to the disciples Peter and John and she says and they quote so she ran and went to Simon Peter and the other disciple the one whom Jesus loved and said to them they have taken the Lord out of the tomb and we plural do not know what they have laid to him there's that very consistent then with the other Gospels which maintained that there were multiple women"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly hands the discussion to Jonathan, who identifies Alex's earlier contradiction claim and answers it before Alex begins the next turn.",
+        "importance": 1,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-resurrection-extraordinary-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-john-plural-women-reconciliation-component-01",
+              "targetMoveId": "con-resurrection-extraordinary-evidence",
+              "text": "Whether disputed Gospel details undermine the reliability of the resurrection narratives.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the source-consistency concern by using John's plural pronoun to reconcile Mary's singular narrative focus with multiple women in other Gospels."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition is text-specific and limited to consistency between John's plural wording and reports that several women were present."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The text directly supports consistency, and the move does not overclaim that this single reconciliation proves general Gospel reliability."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "John may preserve a narrative focused on Mary without intending to report every companion.",
+          "decisiveQualification": "Either reading removes a strict contradiction but does not independently prove historical reliability."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It directly supports central source reliability, but only through one bounded harmonization."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It fully answers one bounded alleged discrepancy, though it cannot answer the opponent's broader source-adequacy challenge."
+          }
+        },
+        "evidenceBasis": "The excerpt quotes John 20:2 with Mary's plural statement that we do not know where Jesus was laid and compares it with multiple-women accounts.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-undesigned-gospel-coincidences",
+        "sectionId": "section-gospel-reliability",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Interlocking incidental details across the Gospel feeding narratives, including Philip's connection to Bethsaida, are best explained by historically grounded testimony.",
+        "sourceSpan": {
+          "startEvent": 939,
+          "endEvent": 990,
+          "excerpt": "the fact that that Philip is from a town called Bethsaida now and in Luke's Gospel the parallel of the feeding of the 5,000 miracle an independent account we read that under which this is verse 10 on the return the Apostles told him all he had done and he took them and withdrew apart to attend called beside up that details not given in John so let me summarize in Luke you have"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The extended example is delivered by McLatchie during his defense of Gospel complementarity and historical reliability.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-gospels-mythic-literary-material",
+            "con-resurrection-extraordinary-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-undesigned-gospel-coincidences-component-01",
+              "targetMoveId": "con-gospels-mythic-literary-material",
+              "text": "Whether interlocking incidental Gospel details provide positive reason to treat the narratives as historically grounded.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-undesigned-gospel-coincidences-component-02",
+              "targetMoveId": "con-resurrection-extraordinary-evidence",
+              "text": "Whether the Gospel sources have internal corroborative features beyond bare canonical assertion.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move answers source unreliability by offering an interlocking Bethsaida detail across John and Luke as positive evidence of historical grounding."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The Philip-Bethsaida example and proposed historical explanation are recoverable, though the comparative 'best explained' claim carries an implicit independence condition."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The coincidence supports some shared historical grounding, but best explanation is stronger than the excerpt's limited comparison of literary alternatives warrants."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The interlocking detail could arise from literary dependence, shared tradition, geography, or editorial construction.",
+          "decisiveQualification": "Its force depends on independence and on the detail being unlikely under those ordinary alternatives."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies positive corroboration for the central Gospel source-reliability burden."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts a decisive reliability component, but one illustrative coincidence only partially addresses pervasive literary-shaping and independence concerns."
+          }
+        },
+        "evidenceBasis": "The excerpt links John's identification of Philip with Bethsaida to Luke's placement of the feeding near Bethsaida, calling Luke an independent account.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-jesus-theological-prior",
+        "sectionId": "section-probability-theology-bridge",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Jesus's ministry within the theological narrative and culmination of Hebrew Scripture supplies divine motivation for raising him and raises the prior probability of his resurrection.",
+        "sourceSpan": {
+          "startEvent": 1015,
+          "endEvent": 1038,
+          "excerpt": "who is he has a theological backdrop if you will he's surrounded by this theological backdrop we have the the ministry life and resurrection of Christ is the culmination and climax of the Hebrew Scriptures and so we have plausible independent reason to think that God has motivation for raising Jesus from the dead and so I think that the prior probability and or the based on the"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "McLatchie directly introduces and develops this response to the comparison between Jesus and an arbitrary deceased person.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-theological-bridge"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-resurrection-inferential-gap",
+            "con-resurrection-extraordinary-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-jesus-theological-prior-component-01",
+              "targetMoveId": "con-resurrection-inferential-gap",
+              "text": "Whether Jesus should be evaluated like an arbitrary resurrected person or within a theological context capable of supplying divine motivation and significance.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-jesus-theological-prior-component-02",
+              "targetMoveId": "con-resurrection-extraordinary-evidence",
+              "text": "Whether Jesus's theological setting can raise the prior probability assigned to divine resurrection.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The reply justifies replacing the arbitrary-person comparison with a context-sensitive prior based on Jesus's scriptural setting, preserving the demand for a bridge while proposing one."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The motivation and prior-probability claims are clear, though 'culmination' implicitly depends on a contested interpretation of Hebrew Scripture."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move reasonably presents theological context as prior-raising, but calls the reason independent without establishing independence from Gospel construction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The theological narrative may be constructed by Christian authors after belief in Jesus's resurrection arose.",
+          "decisiveQualification": "To raise the prior independently, the relevant expectations must be established without presupposing the Gospel conclusion."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the indispensable central theological bridge from resurrection context to Christian identity claims."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (62 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within justified reframes, it explains why theological context matters and supplies a replacement bridge, but the independence of that context remains underdefended."
+          }
+        },
+        "evidenceBasis": "The excerpt describes Jesus's ministry and resurrection as the culmination of Hebrew Scripture and infers plausible divine motivation for raising him.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-prophecy-circular-construction",
+        "sectionId": "section-probability-theology-bridge",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Claims that Jesus fulfills Hebrew prophecy lack independent evidential force when they assume the biblical conclusion at issue and may reflect Gospel authors constructing fulfillment narratives.",
+        "sourceSpan": {
+          "startEvent": 1040,
+          "endEvent": 1081,
+          "excerpt": "fulfillment of Hebrew prophecy kind of relies on the conclude the very conclusion that you're trying to prove really and so when we study the Hebrew Scriptures for example we see Jesus I think it's clearly foreshadowed in some of the feasts like the Passover for example the slaughtered lamb and the blood that was smeared on the doorpost and the angel of destruction or would pass over these homes and parallels kind of the gospel"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly challenges McLatchie's appeal to Hebrew prophecy and develops the virgin-birth example in his own turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-prior-context"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-jesus-theological-prior",
+            "pro-bayesian-evidence-overcomes-low-prior"
+          ],
+          "components": [
+            {
+              "componentId": "con-prophecy-circular-construction-component-01",
+              "targetMoveId": "pro-jesus-theological-prior",
+              "text": "Whether alleged Hebrew-scriptural fulfillment supplies evidence independent of the Gospel conclusions whose probability it is meant to raise.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-prophecy-circular-construction-component-02",
+              "targetMoveId": "pro-bayesian-evidence-overcomes-low-prior",
+              "text": "Whether the purported prior-raising theological evidence can legitimately function as an independent Bayesian input.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies circularity and possible narrative construction as reasons the proposed theological prior may fail to be independent, and states the resulting loss of evidential force."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition distinguishes lack of independent force from impossibility of fulfillment and presents authorial construction as a possibility rather than certainty."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move uses appropriately qualified language about possible Gospel construction while firmly identifying the logical circularity concern."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some scriptural patterns may predate Christianity and genuinely raise expectations relevant to Jesus.",
+          "decisiveQualification": "Their evidential independence still depends on non-retrospective interpretation and historically reliable fulfillment reporting."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden challenging prophecy as independent prior context."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it directly attacks the claimed independence of the prior-raising evidence and gives the defeating construction alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt says fulfillment reasoning relies on the conclusion being proved and illustrates the issue through Passover imagery and Gospel parallels.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-slave-beating-permission",
+        "sectionId": "section-biblical-moral-authority",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Even a voluntary-servitude interpretation cannot morally justify a biblical rule permitting a master to beat a slave without punishment when the enslaved person survives.",
+        "sourceSpan": {
+          "startEvent": 1396,
+          "endEvent": 1413,
+          "excerpt": "good start if the slave dies is a direct result but they are not to be punished as if the slave recovers after a day or two since the slave is their property few problems first is that even if it's a voluntary servitude contract I don't think it's ever permissible to allow the person in charge of that contract to mercilessly beat a slave as long as they don't die if they get up"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor cites the Exodus rule and immediately states two moral objections to its treatment of an enslaved person.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-moral-authority"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-jesus-theological-prior"
+          ],
+          "components": [
+            {
+              "componentId": "con-slave-beating-permission-component-01",
+              "targetMoveId": "pro-jesus-theological-prior",
+              "text": "Whether a purportedly divinely endorsed scriptural framework can support moral authority despite a rule permitting severe slave beating without punishment when survival follows.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the moral-authority consequence implicit in the pro theological bridge by presenting a specific rule that remains objectionable even under voluntary-servitude framing."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The argument explicitly grants voluntary servitude and targets the surviving-slave punishment provision, keeping its conditional scope clear."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The core moral condemnation is clearly defended, though mercilessly may overstate what the rule itself specifies about degree or intent."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The law may regulate and limit an existing institution rather than morally endorse every beating.",
+          "decisiveQualification": "Regulation does not by itself justify withholding punishment when serious violence leaves the victim alive."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central moral-authority burden with a concrete challenged legal provision."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts a decisive moral-authority implication but does not address the resurrection prior or scriptural-fulfillment premises themselves."
+          }
+        },
+        "evidenceBasis": "The excerpt quotes the rule withholding punishment if the slave recovers after a day or two and argues voluntary servitude cannot justify it.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-exodus-injury-protection",
+        "sectionId": "section-biblical-moral-authority",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Exodus's eye-and-tooth provisions express a wider rule under which a slave subjected to bodily injury was released, imposing a consequence for abusive treatment.",
+        "sourceSpan": {
+          "startEvent": 1414,
+          "endEvent": 1437,
+          "excerpt": "of this slave male or female and destroys it he shall let the slave go free because of his eye if he knocks out the truth of his slave male or a female he shall let the slave go for you because it was to other things literally talking about eyes and teeth but it's it's making a more general point that if someone is abusing his slave and beating him such that he's causing bodily"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "McLatchie answers the Exodus objection by invoking adjacent injury rules and explaining their broader legal significance.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-moral-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-slave-beating-permission",
+            "con-objectionable-biblical-morality"
+          ],
+          "components": [
+            {
+              "componentId": "pro-exodus-injury-protection-component-01",
+              "targetMoveId": "con-slave-beating-permission",
+              "text": "Whether Exodus permits abusive nonfatal beating without meaningful legal consequence for bodily injury to the enslaved person.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-exodus-injury-protection-component-02",
+              "targetMoveId": "con-objectionable-biblical-morality",
+              "text": "Whether biblical slavery regulation contains protective provisions relevant to the broader charge of morally indefensible endorsement.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly supplies adjacent eye-and-tooth release provisions as legal consequences for injury, but it does not show that every beating allowed by the survival rule triggers release."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The quoted eye-and-tooth rule is clear, but extension to bodily injury generally is asserted without specifying its textual or legal boundary."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A broader protective principle is plausible, but the excerpt overstates its reach without establishing the threshold for release in ordinary beatings."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Eye and tooth may be specified triggers rather than examples of every bodily injury.",
+          "decisiveQualification": "Even a general release remedy would not fully answer why some severe beatings receive no punishment if recovery follows."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances central moral coherence by answering a concrete slavery-law objection, albeit incompletely."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The response recognizes abuse but expands the provision and does not squarely confront the opponent's surviving-victim case."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the decisive absence-of-consequence premise while leaving the opponent's broader permission and property objections unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt quotes mandatory release when an owner destroys a slave's eye or knocks out a tooth and treats these as a broader injury rule.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-canaanite-evacuation-context",
+        "sectionId": "section-biblical-moral-authority",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "The Canaanite conquest narratives need not imply wholesale slaughter because biblical material describes prior displacement that substantially depleted the affected population.",
+        "sourceSpan": {
+          "startEvent": 1841,
+          "endEvent": 1856,
+          "excerpt": "as did you I really commend genocide by Paul köppen and Matthew Flanagan very briefly what one thing that's often overlooked on that is that in excess 23 there is actually an evacuation of the Canaanites from their land you can read it for yourself God sends Hornets and angels before the people visual drive a most the Kay night so the numbers are actually substantially depleted"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The answer adopts McLatchie's apologetic position, recommends defenses of the conquest accounts, and precedes Alex's clearly marked disagreement.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-moral-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-objectionable-biblical-morality"
+          ],
+          "components": [
+            {
+              "componentId": "pro-canaanite-evacuation-context-component-01",
+              "targetMoveId": "con-objectionable-biblical-morality",
+              "text": "Whether biblical conquest narratives require interpreting the commanded action as wholesale slaughter of an intact civilian population.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts a decisive interpretive component of the broader biblical-morality objection by offering prior displacement as contrary context, though conquest was not developed in the target excerpt."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The need-not-imply qualification is clear, but evacuation, drive out, and substantially depleted are not sharply distinguished or quantified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Prior displacement is a plausible contextual qualification, though the excerpt does not show how many left or reconcile all destruction language."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Driving out language can coexist with texts describing killing, including noncombatants.",
+          "decisiveQualification": "Population depletion can reduce scale but does not by itself remove every moral concern about conquest commands."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It directly supports central moral coherence, though through one bounded conquest qualification."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "Within partial answers, it supplies relevant textual context against wholesale-slaughter scope but does not address the target's developed slavery, sexuality, or women objections."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes Exodus 23, describing hornets and angels driving Canaanites out, and infers that the affected numbers were substantially depleted.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-retroactive-fall-theodicy",
+        "sectionId": "section-suffering-and-rational-commitment",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Animal suffering may be reconciled with Christianity if the Fall's causal consequences operate retroactively in a world prepared in anticipation of human rebellion.",
+        "sourceSpan": {
+          "startEvent": 1857,
+          "endEvent": 1870,
+          "excerpt": "the end of Christianity argues that actually the fall with respect to his cause and effect relationship is retroactive that is that there's basically he envisions there being two worlds they intersect at the Garden of Eden you have the world that God intended and then outside the Garden of Eden you have the world into which they are banished which is prepared and anticipation of"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The same apologetic answer continues after the conquest discussion and presents a named Christian theodicy before Alex explicitly intervenes to disagree.",
+        "importance": 1,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-suffering"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-objectionable-biblical-morality"
+          ],
+          "components": [
+            {
+              "componentId": "pro-retroactive-fall-theodicy-component-01",
+              "targetMoveId": "con-objectionable-biblical-morality",
+              "text": "Whether challenged biblical moral teachings can be reconciled with the goodness and authority claimed for Christianity.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move supplies a speculative animal-suffering theodicy that bears on divine goodness, but it does not contact the prior move's specific slavery, sexuality, or women objections."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposal is recoverable and explicitly modal, but retroactive causation and the two-world intersection mechanism remain conceptually underdefined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move only presents the model as a possible reconciliation and does not claim that the transcript evidence establishes its truth."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (66 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (52 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move sketches a speculative positive model without materially characterizing or evaluating a developed opposing theodicy."
+          },
+          "responsiveness": {
+            "value": 53,
+            "rationale": "It is relevant contrary material about divine goodness but a nonanswer to the decisive moral-teaching components of its legal earlier target."
+          }
+        },
+        "evidenceBasis": "The excerpt describes a model in which the Fall's causal consequences operate retroactively through worlds intersecting at Eden and prepared for rebellion.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-animal-suffering-theodicy",
+        "sectionId": "section-suffering-and-rational-commitment",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Because animal pain is morally significant, Christianity requires a genuine animal theodicy rather than denying that animal suffering matters or appealing to a false dichotomy about animal experience.",
+        "sourceSpan": {
+          "startEvent": 1874,
+          "endEvent": 1914,
+          "excerpt": "pain it was it was an immeasurably immoral thing to do and I think that anybody who claims that the suffering of animals is is not real and not worth thinking about in an ethical sense is deluding themselves and I think that you you're either gonna have to come up with some kind of theodicy that includes animals I don't think we can just fall back on some idea like Lewis Howes"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker expressly interrupts to disagree, criticizes Christian apologetic alternatives, and argues from Alex's established skeptical moral perspective.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-suffering"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-retroactive-fall-theodicy"
+          ],
+          "components": [
+            {
+              "componentId": "con-animal-suffering-theodicy-component-01",
+              "targetMoveId": "pro-retroactive-fall-theodicy",
+              "text": "Whether the proposed Fall-based model genuinely explains morally significant animal suffering under a good Christian God.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply insists that animal pain remains morally significant and requires a genuine theodicy, directly challenging attempts to dissolve rather than explain the problem."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The requirement is clear and limited to morally significant animal pain under the assumed existence and goodness of the Christian God."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Given the stated Christian assumptions and moral significance of animal pain, requiring some compatible account is proportionate to the argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Animal cognition may differ from human suffering in ways that reduce the theological burden.",
+          "decisiveQualification": "Differences in cognition do not establish absence of morally significant pain or eliminate the need for explanation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "If animals experience morally significant pain and God is perfectly good, a compatibility account is a legitimate explanatory requirement."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly states the completion requirement of the subsidiary animal-suffering burden."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive need-for-explanation component, but does not specifically analyze the retroactive causal mechanism offered by the target."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects dismissal of animal pain, refers to a Lewis-style view, and says Christian theism needs a theodicy that includes animals.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-conditional-importance-parity",
+        "sectionId": "section-suffering-and-rational-commitment",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Christianity's supreme importance if true gives no distinctive reason to believe or prioritize it, because competing religions and comprehensive ideologies have the same conditional importance.",
+        "sourceSpan": {
+          "startEvent": 1928,
+          "endEvent": 1954,
+          "excerpt": "right to point out that Christianity if true is the most important thing in the world that's one of the reasons I study theology because if the things that we're discussing here are true then it's it's something I should be spending all of my time thinking about however the same could be true of any other religion and is true of any other religion if other religions are true as"
+        },
+        "attributionConfidence": "medium",
+        "attributionBasis": "A turn transition is inferred from the change from Christian evidential advocacy to a skeptical comparison with rival religions and political ideologies.",
+        "importance": 1,
+        "burdenContact": null,
+        "response": {
+          "class": "nonanswer",
+          "decisiveTargetIds": [
+            "pro-retroactive-fall-theodicy"
+          ],
+          "components": [
+            {
+              "componentId": "con-conditional-importance-parity-component-01",
+              "targetMoveId": "pro-retroactive-fall-theodicy",
+              "text": "Whether the proposed retroactive Fall model reconciles animal suffering with Christianity.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The parity objection concerns reasons to prioritize Christianity and does not contact the retroactive animal-suffering model exposed as its legal earlier target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional-importance comparison is clear, and the move distinguishes importance-if-true from a distinctive reason to believe or prioritize."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The symmetry point is appropriately categorical: conditional importance alone cannot discriminate among equally conditional comprehensive ideologies."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Christianity's stakes might rationally justify inquiry even without providing evidence that it is true.",
+          "decisiveQualification": "That prudential reason is not distinctive if rival religions and ideologies make comparably comprehensive conditional claims."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 21,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (19 and 23); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 9,
+            "rationale": "The move is a coherent argument on an adjacent commitment issue but is a nonanswer to the selected earlier animal-theodicy move."
+          }
+        },
+        "evidenceBasis": "The excerpt compares Christianity's conditional importance with other religions and political ideologies whose truth would likewise make them supremely important.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-evidential-conception-of-faith",
+        "sectionId": "section-suffering-and-rational-commitment",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Biblical faith is trust grounded in already accepted reasons, testimony, and experience of past faithfulness rather than a method of believing propositions without evidence.",
+        "sourceSpan": {
+          "startEvent": 2020,
+          "endEvent": 2058,
+          "excerpt": "for the conviction of things unseen but if you look at the Hall of Fame in Hebrews 11 what's going on there is that each of the individuals had experience of God's past faithfulness and so they trusted with those future promises that they hadn't yet seen because of the evidence that they had already experienced and so biblical faith I think from beginning to end is an evidential"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker announces a clarification of faith and uses Christian scriptural examples in a sustained apologetic answer attributable to McLatchie.",
+        "importance": 1,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-evidential-faith"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-conditional-importance-parity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evidential-conception-of-faith-component-01",
+              "targetMoveId": "con-conditional-importance-parity",
+              "text": "Whether Christianity's conditional importance gives a distinctive reason to believe it or prioritize investigation over rival ideologies.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply explains biblical faith as evidence-grounded trust, which bears on rational commitment but does not answer the parity argument about which ideology deserves priority."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Faith is explicitly defined as trust concerning unseen promises grounded in already experienced reasons, testimony, and past faithfulness."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The cited Hebrews examples support an evidential strand, but the sweeping 'beginning to end' characterization is broader than the excerpt establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some biblical uses of faith may involve trust under incomplete evidence rather than a uniformly evidential method.",
+          "decisiveQualification": "Incomplete evidence is compatible with evidential grounding, but one chapter cannot establish every biblical use."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Past evidence can coherently warrant trust in future unseen promises without treating faith as belief adopted independently of evidence."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly and substantially advances the subsidiary evidential-faith burden."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (79 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 59,
+            "rationale": "Within relevant nonanswers, it offers a material account of evidential commitment while leaving the target's comparative-priority inference untouched."
+          }
+        },
+        "evidenceBasis": "The excerpt interprets Hebrews 11 figures as trusting future promises because of experienced past faithfulness and concludes that biblical faith is evidential.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide consequence remains uncaptured by the individual move judgments, response links, importance values, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence exists beyond the assessed moves.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance findings"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of already assessed material."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence remains uncaptured by the individual move judgments, response links, importance values, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence exists beyond the assessed moves.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance findings"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of already assessed material."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-resurrection-evidence",
+        "title": "Resurrection Appearances and Competing Historical Explanations",
+        "weightPercent": 27,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-early-appearance-testimony",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "pro-varied-appearances-and-sincerity",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-resurrection-extraordinary-evidence",
+                "importance": 3,
+                "score": 80
+              },
+              {
+                "moveId": "con-martyrdom-recantation-gap",
+                "importance": 2,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-gospel-reliability",
+        "title": "Gospel Reliability, Corroboration, and Narrative Construction",
+        "weightPercent": 21,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-john-plural-women-reconciliation",
+                "importance": 1,
+                "score": 93
+              },
+              {
+                "moveId": "pro-undesigned-gospel-coincidences",
+                "importance": 2,
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-gospels-mythic-literary-material",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-probability-theology-bridge",
+        "title": "Prior Probability, Prophecy, and the Bridge to Christianity",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-bayesian-evidence-overcomes-low-prior",
+                "importance": 2,
+                "score": 86
+              },
+              {
+                "moveId": "pro-jesus-theological-prior",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 91,
+            "moves": [
+              {
+                "moveId": "con-resurrection-inferential-gap",
+                "importance": 3,
+                "score": 92
+              },
+              {
+                "moveId": "con-prophecy-circular-construction",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-biblical-moral-authority",
+        "title": "Biblical Teaching, Atonement, and Divine Moral Authority",
+        "weightPercent": 27,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-exodus-injury-protection",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "pro-canaanite-evacuation-context",
+                "importance": 2,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-objectionable-biblical-morality",
+                "importance": 3,
+                "score": 73
+              },
+              {
+                "moveId": "con-slave-beating-permission",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-suffering-and-rational-commitment",
+        "title": "Suffering, Evidence, and Rational Christian Commitment",
+        "weightPercent": 7,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "pro-retroactive-fall-theodicy",
+                "importance": 1,
+                "score": 65
+              },
+              {
+                "moveId": "pro-evidential-conception-of-faith",
+                "importance": 1,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "con-animal-suffering-theodicy",
+                "importance": 2,
+                "score": 86
+              },
+              {
+                "moveId": "con-conditional-importance-parity",
+                "importance": 1,
+                "score": 64
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 82.7,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      },
+      "con": {
+        "weightedSectionMean": 82.63,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "tie",
+    "winningMargin": 0
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 19,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}

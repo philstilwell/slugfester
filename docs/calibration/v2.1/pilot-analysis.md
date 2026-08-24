@@ -38,10 +38,10 @@ The small pass deltas confirm that the code handles comparison and thresholds co
 | 81 | 73 → 76 | 83 → 84 | con → con | yes |
 | 95 | 78 → 74 | 84 → 83 | con → con | yes |
 | 104 | 77 → 73 | 82 → 82 | con → con | yes |
-| 156 | 69 → 67 | 78 → 77 | con → con | yes |
+| 156 | 67 → 67 | 78 → 77 | con → con | yes |
 | 189 | 77 → 75 | 65 → 78 | pro → con | no |
 
-Across the 20 sampled moves, v2.1 scores averaged **2.55 points lower** than the legacy move scores; mean absolute change was **4.25** points and the range was -13 to +13. Within-pair ordering was stable in **8/10** cases.
+Across the 20 sampled moves, v2.1 scores averaged **2.45 points lower** than the legacy move scores; mean absolute change was **4.15** points and the range was -13 to +13. Within-pair ordering was stable in **8/10** cases.
 
 This comparison is diagnostic, not an apples-to-apples rescore. The pilot scored a bounded 90-word caption excerpt. A legacy move score may have reflected a wider presentation summarized in the scorecard. The largest reductions occurred where a high legacy score depended on technical or methodological development outside the sampled excerpt. The result shows that v2.1 needs an explicit evidence-window rule; it does not show that the legacy debate winner or overall score should change.
 

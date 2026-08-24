@@ -2997,349 +2997,385 @@ export const debates = [
     }
   },
   {
-    id: "wood-shermer-god-exist-2022",
-    number: "08",
-    title: "David Wood vs Michael Shermer: Does God Exist?",
-    label: "Science, morality, and God",
-    date: "2026-05-28",
-    duration: "2 hr 17 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
-    motion:
-      "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
-    summary:
-      "Wood argues science and morality depend on theism; Shermer argues burden, evil, and natural explanation undercut God belief.",
-    sourceNote:
-      "Based on YouTube captions. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "on to God",
-        context:
-          "Wood frames the scientific revolution as flowing from Christian assumptions about intelligibility, human rational capacity, and the goodness of knowledge."
+    "id": "wood-shermer-god-exist-2022",
+    "number": "08",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "David Wood vs Michael Shermer: Does God Exist?",
+    "label": "Science, morality, and God",
+    "date": "2026-08-24",
+    "duration": "2 hr 17 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
+    "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 cce3f28a76f92c36937d25e575d9a83e68d3952cd610663451e226ea1bcf08f8). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.",
+    "quotes": {
+      "pro": {
+        "text": "any sufficiently advanced technology would be indistinguishable from god",
+        "context": "Wood uses the advanced-technology comparison to question whether Shermer's evidential method could ever identify divine agency from finite observable effects."
       },
-      con: {
-        text: "the burden of proof is on David",
-        context:
-          "Shermer treats God as the claim needing evidence, and skepticism as withholding belief rather than proving a rival deity-free theory."
+      "con": {
+        "text": "darwin that gave us a bottom-up mechanism",
+        "context": "Shermer invokes cumulative natural selection as a concrete mechanism explaining why complex biological organs appear purposefully arranged without requiring intelligent design."
       }
     },
-    sides: {
-      pro: {
-        name: "Theist",
-        speaker: "David Wood",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Theist",
+        "speaker": "David Wood",
+        "color": "teal"
       },
-      con: {
-        name: "Skeptic",
-        speaker: "Michael Shermer",
-        color: "coral"
+      "con": {
+        "name": "Skeptic",
+        "speaker": "Michael Shermer",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 65,
-      con: 75
+    "score": {
+      "pro": 73,
+      "con": 80
     },
-    sections: [
+    "sections": [
       {
-        title: "Science's theistic roots",
-        timebox: "00:00-24:30",
-        score: {
-          pro: 66,
-          con: 78
+        "sectionId": "section-science-intelligibility-history",
+        "title": "Scientific Intelligibility, Cognition, and Historical Origins",
+        "timebox": "5:41–74:41",
+        "score": {
+          "pro": 70,
+          "con": 80
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "02:00",
-              role: "Scientific hypothesis",
-              words:
-                "Wood says science depends on intelligibility, human capability, and desirability, all historically grounded in Christian theism.",
-              score: 66,
-              critique:
-                "Wood's opening is ambitious and memorable. He rightly identifies that science assumes an intelligible world, reliable investigators, and the value of inquiry, and he offers a historically concrete reason early modern Christians expected those things. The quotations from Copernicus, Kepler, Boyle, Newton, and others make the case vivid. The weakness is inferential. Showing that Christian beliefs motivated many early scientists does not show that science's success confirms theism as a hypothesis, much less that every scientific test disconfirms atheism. The argument slides from historical origin to epistemic dependence. The score is mixed-positive because the historical observation is real, but the conclusion is much stronger than the warrant.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "Scientific hypothesis shifts from science's working assumptions to the truth of Christian theism."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-science-history-theological-origin",
+              "time": "5:41",
+              "role": "Supporting constructive",
+              "words": "Christian beliefs in an orderly, knowable, and worthwhile creation helped motivate pioneers of modern science, making theology a contributing historical cause rather than an obstacle to inquiry.",
+              "score": 71,
+              "critique": "Strongest feature: The argument identifies a historically relevant connection between theological expectations, prominent Christian investigators, and confidence that nature is orderly, intelligible, and worth sustained investigation. Principal limitation: Its categorical contrast with other civilizations substantially outruns the selected examples because institutional, economic, philosophical, and cross-cultural causes are neither isolated nor comparatively evaluated. Live burden: The historical thesis therefore needs representative evidence showing that Christian commitments contributed distinctively while acknowledging that contribution need imply neither necessity nor unique sufficiency. Locked score: The mixed band reflects a recoverable, pertinent causal proposal with recognizable historical support, yet also materially overstated counterfactual language, missing qualification, compressed rival explanations, and limited charity toward alternative accounts of scientific emergence.",
+              "tags": []
             },
-            con: {
-              time: "23:40",
-              role: "Irrelevance reply",
-              words:
-                "Shermer says the founders' Christianity is historically interesting but irrelevant to whether scientific claims are true.",
-              score: 78,
-              critique:
-                "Shermer's response is strong because it separates motivation from validation. A scientist's religion may explain why he investigated nature, but the resulting physics, astronomy, or biology stands by public evidence that can be tested by Christians, atheists, Buddhists, or anyone else. His comparison to art, music, dog ownership, and political identity is rhetorically loose, but the underlying point is sound: origin stories do not settle truth conditions. The weakness is that he underplays Wood's subtler claim that some worldview assumptions may help make science culturally durable. Even so, Shermer successfully blocks the leap from Christian motivation to scientific confirmation of Christianity, so the score is solidly strong.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-science-universal-reproducibility",
+              "time": "54:09",
+              "role": "Major direct reply",
+              "words": "People across religious cultures reproduce the same physics because nature is publicly knowable, so Christianity is unnecessary for validating contemporary scientific practice.",
+              "score": 73,
+              "critique": "Strongest feature: The reply uses cross-cultural reproducibility to show persuasively that scientific findings remain publicly accessible and testable regardless of an investigator's religious commitments or geographical setting. Principal limitation: It slides from Christianity's evident dispensability for contemporary validation to the different historical proposition that theological attitudes contributed nothing causally to scientific emergence. Live burden: The skeptical response must distinguish current justification from institutional origins and supply comparative historical evidence concerning whether Christian commitments were causally important, incidental, obstructive, or replaceable. Locked score: The mixed band recognizes a clear, well-supported universality argument that materially challenges religious necessity, while reflecting missing scope qualifications, incomplete contact with the narrower causal thesis, overstatement about pioneers' motivations, and limited attention to the possibility of contingent historical contribution without present epistemic dependence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-science-cognitive-reliability",
+              "time": "67:09",
+              "role": "Load-bearing constructive",
+              "words": "Natural selection directly rewards reproductive fitness rather than truth, whereas a rational creator could intend reliable cognitive faculties capable of discovering scientific truths.",
+              "score": 69,
+              "critique": "Strongest feature: The argument exposes a serious explanatory distinction between selection for reproductive success and reliability in abstract, mathematically sophisticated, or evolutionarily novel domains of scientific reasoning. Principal limitation: It moves from selection's immediate fitness criterion toward generalized cognitive distrust without adequately considering accurate environmental representation, cultural correction, instrumentation, and error-sensitive collective methods. Live burden: The theistic case must compare explicit probabilities for reliable cognition under each worldview and explain why divine purposes predict truth-directed faculties despite familiar human biases and systematic error. Locked score: The mixed band reflects central relevance and a meaningful epistemological challenge, but also materially overstated force, unstable scope across cognitive domains, limited empirical warrant, an unsupported conditional from fitness to unreliability, and insufficient engagement with the strongest adaptive truth-tracking account.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-cognition-scientific-success-reliability",
+              "time": "73:52",
+              "role": "Major direct reply",
+              "words": "Improving measurement, successful prediction, and spacecraft navigation demonstrate that evolved and culturally corrected human cognition tracks an external reality with substantial domain-specific reliability.",
+              "score": 85,
+              "critique": "Strongest feature: The reply grounds cognitive reliability in concrete predictive and interventionist success, especially improving measurement and spacecraft navigation, rather than assuming that ordinary perception is globally infallible. Principal limitation: Demonstrating present reliability does not fully explain how survival-directed selection produced it or establish that naturalism predicts abstract scientific cognition better than a theistic competitor. Live burden: The skeptic must connect adaptive representation, cultural accumulation, instrumentation, and institutional correction to these achievements while keeping the inference appropriately domain-specific rather than globally validating every faculty. Locked score: The very strong band reflects excellent coherence, concrete empirical warrant, calibrated acknowledgment of improvement, central relevance, and charitable engagement with fallibility, while preserving a limited gap concerning evolutionary etiology, comparative worldview likelihoods, and cognition beyond demonstrated predictive domains.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Atheism and burden",
-        timebox: "20:00-45:00",
-        score: {
-          pro: 60,
-          con: 80
+        "sectionId": "section-design-origins-natural-mechanisms",
+        "title": "Design, Cosmic Origins, and Natural Mechanisms",
+        "timebox": "47:38–127:09",
+        "score": {
+          "pro": 74,
+          "con": 77
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "41:35",
-              role: "Positive-atheism charge",
-              words:
-                "Wood argues atheism is not mere lack; it commits the skeptic to explaining reality from somewhere other than God.",
-              score: 60,
-              critique:
-                "Wood's burden reply has a fair concern underneath it. If a skeptic offers a complete naturalistic picture, then that picture also needs explanatory resources, and it is legitimate to ask where reason, morality, order, and existence fit. The problem is that he moves too quickly from lack of belief to a full rival worldview. Shermer explicitly distinguishes weak atheism, strong atheism, agnosticism, and skepticism. Treating all of that as naturalism lets Wood demand more than the immediate position has asserted. The vegetarian and podium analogies are lively, but they do not quite match a person withholding belief in a claimed deity. The score is moderate because the challenge matters, but the target shifts.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "Atheism shifts between nonbelief, strong naturalism, and a complete explanatory worldview."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-design-designer-regress-distinction",
+              "time": "47:38",
+              "role": "Supporting reply",
+              "words": "Biological organisms exhibit functionally ordered constituent parts, whereas God is not proposed as a comparable composite organism, so one designer-regress question may not transfer unchanged.",
+              "score": 70,
+              "critique": "Strongest feature: The reply offers a coherent category distinction between organisms whose constituent parts exhibit functional arrangement and a proposed divine designer not characterized as similarly biologically composite. Principal limitation: That distinction blocks only one formulation of regress and does not establish natural unavailability, intentional design, divine agency, or a principled explanatory stopping point superior to alternatives. Live burden: The argument must stabilize its meaning of design and show why a noncomposite agent is independently admissible, evidentially supported, and explanatorily preferable rather than merely exempted from organism-level analysis. Locked score: The mixed band reflects a recoverable and relevant distinction with some logical value, alongside materially overstated biological premises, limited evidence, incomplete contact with the earlier discrimination challenge, and insufficient charity toward the strongest explanatory-regress objection.",
+              "tags": []
             },
-            con: {
-              time: "22:00",
-              role: "Burden discipline",
-              words:
-                "Shermer defines his position as skepticism, says many gods are rejected, and places the proof burden on the theist.",
-              score: 80,
-              critique:
-                "Shermer's burden move is clear and useful. He distinguishes not believing God from proving no God exists, then uses the many-gods point to challenge special confidence in Yahweh rather than generic divinity. That keeps the debate from requiring him to defend a full metaphysical system before Wood has supported the claim on offer. The strongest part is probability discipline: belief should scale with evidence, and the claimant carries the burden. The weakness is that the many-gods line can be glib when Wood is arguing broad theism rather than a detailed Christian doctrine at that stage. Still, the burden clarification is logically important and gives Shermer a strong opening footing.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-design-darwinian-natural-selection",
+              "time": "56:38",
+              "role": "Major direct reply",
+              "words": "Natural selection supplies a cumulative bottom-up mechanism through which simpler structures can become complex, apparently purposeful organs such as eyes and wings without intelligent direction.",
+              "score": 85,
+              "critique": "Strongest feature: The reply supplies a specific, established, bottom-up mechanism for apparent biological purpose and carefully keeps its strongest claim within cumulative change among complex biological organs. Principal limitation: Although it decisively challenges the asserted absence of natural mechanisms, it does not answer the narrower claim that a designer need not possess organism-like arranged constituent parts. Live burden: The naturalistic case should connect variation, selection, inheritance, and relevant examples to any particular design inference while acknowledging that evolutionary success alone does not resolve every cosmic or metaphysical design question. Locked score: The very strong band reflects excellent coherence, matched calibration, substantial warrant, accurate representation, and central relevance, with only bounded responsiveness costs for leaving the distinct regress category and nonbiological forms of design outside its otherwise powerful answer.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-origins-scripture-empirical-inquiry",
+              "time": "111:08",
+              "role": "Supporting reply",
+              "words": "When scripture does not specify nature's mechanisms, Christian creation traditions can treat observation and experiment as necessary means for discovering how the natural order operates.",
+              "score": 77,
+              "critique": "Strongest feature: The reply presents a modest and historically intelligible compatibility thesis in which theological belief motivates observation and experiment rather than dictating the mechanisms that investigators must discover. Principal limitation: This methodological example only indirectly supports reconciliation between biblical creation and modern findings, and it leaves Darwinian details and the legal primary morality target entirely unanswered. Live burden: The theistic case should separate compatibility from confirmation, identify the relevant scriptural interpretation, and demonstrate how empirical results constrain that interpretation rather than being accommodated after discovery. Locked score: The strong band reflects coherent, well-calibrated support for the possibility of Christian empirical inquiry, good central relevance, and respectable historical warrant, while incorporating substantial responsiveness costs, partly unstable broader scope, incomplete evolutionary contact, and no developed consideration of a contrary interpretation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-origins-provisional-cosmology",
+              "time": "125:25",
+              "role": "Supporting reply",
+              "words": "Quantum indeterminacy and possible deeper or eternal physical antecedents leave multiple natural cosmological possibilities open, so current inquiry does not require a divine first cause.",
+              "score": 64,
+              "critique": "Strongest feature: The move appropriately preserves cosmological uncertainty and offers multiple physical possibilities that challenge any claim that current science already requires a single divine-origin explanation. Principal limitation: Apparently uncaused quantum events within an existing physical framework do not straightforwardly answer why any physical reality or laws exist, and their extension to cosmic beginnings remains speculative. Live burden: The skeptical case should separate temporal causation from metaphysical explanation, state the empirical status of each alternative, and show precisely which premise of a first-cause argument is weakened. Locked score: The weak band reflects a substantive, relevant, and reasonably charitable origins argument with calibrated provisional language, but also a complete nonanswer to its legal afterlife target, unstable explanatory scale, limited universe-level warrant, and an unresolved bridge from subatomic indeterminacy to cosmology.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Design, gaps, and regress",
-        timebox: "26:00-01:00:00",
-        score: {
-          pro: 62,
-          con: 77
+        "sectionId": "section-evidence-explanatory-method",
+        "title": "Evidence, Falsifiability, and Explanatory Method",
+        "timebox": "31:56–73:36",
+        "score": {
+          "pro": 78,
+          "con": 84
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "45:35",
-              role: "Not gaps",
-              words:
-                "Wood says he is not arguing from gaps but from the knowledge science has produced and the order science continually confirms.",
-              score: 62,
-              critique:
-                "Wood's reply improves on standard design apologetics by rejecting a simple 'we do not know, therefore God' move. He appeals to known order, mathematical structure, and the Christian expectation that nature is readable, which is more sophisticated than plugging God into isolated mysteries. He also rightly notes that Christian thinkers themselves criticized God-of-the-gaps reasoning. The weakness is that his case still treats scientific success as if it points specifically toward theism rather than toward the reliability of scientific method. Mathematical regularity needs an explanation, but Wood does not show that Christian theism is the best or only explanation. The score is mixed because the correction is valuable, but the positive inference remains thin.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "Order unexplained by naturalism is used to raise theism without enough comparative support."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-method-no-god-of-gaps",
+              "time": "45:41",
+              "role": "Major direct reply",
+              "words": "Theism need not occupy temporary gaps in knowledge because it can seek positive explanation in established facts and the intelligible organization of nature considered comprehensively.",
+              "score": 76,
+              "critique": "Strongest feature: The reply clearly distinguishes inference from temporary ignorance from a proposed explanation grounded in established knowledge and the intelligible order of nature as an integrated whole. Principal limitation: Denying reliance on gaps does not itself provide positive likelihoods, causal specificity, or any observation that discriminates divine agency from natural processes or other possible agents. Live burden: The theistic case must identify the known features doing evidential work and explain why those features are appreciably more expected under theism than under serious alternatives. Locked score: The strong band reflects direct contact with the objection, stable terminology, and an important conceptual clarification, but also an unresolved discriminating-evidence requirement, only implicit explanatory support, slightly overstated self-vindication, and incomplete representation of the skeptic's methodological challenge.",
+              "tags": []
             },
-            con: {
-              time: "26:40",
-              role: "Gap history",
-              words:
-                "Shermer says natural explanations have repeatedly replaced divine explanations, and asks who designed the designer.",
-              score: 77,
-              critique:
-                "Shermer's gap-history argument is strong against many design claims. The Newton solar-system example, Darwinian complexity, and Sagan's dragon all press the same methodological point: unknown mechanisms should not automatically become supernatural evidence. He also raises a fair regress challenge when design is inferred from complexity. The weakness is that Shermer sometimes turns past success into a promissory claim that future gaps will also close. That may be a reasonable research posture, but it is not itself a refutation. He also treats several distinct theistic arguments as if they share the same gap structure. The score is strong because the caution is warranted, but not decisive against every form of theism.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "Past naturalistic success is used to imply future naturalistic closure."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-method-unfalsifiable-god-hypothesis",
+              "time": "31:56",
+              "role": "Load-bearing constructive",
+              "words": "When favorable and unfavorable outcomes alike are accommodated as divine action, the God hypothesis lacks observations that could discriminate it from competing explanations.",
+              "score": 79,
+              "critique": "Strongest feature: The move formulates a decisive methodological demand by asking what conceivable outcome would count against an explanation that absorbs favorable and unfavorable events as confirmation. Principal limitation: Its wording moves too readily from one Christian treatment of evil to the God hypothesis generally, overlooking probabilistic confirmation and indirect testing that need not supply deductive falsification. Live burden: The critique should specify which theistic predictions are under examination and demonstrate that their qualifications genuinely accommodate every relevant observation without comparative evidential cost. Locked score: The strong band recognizes coherent reasoning, direct contact with the falsifiability burden, and an important insulation diagnosis, while reflecting partially unstable scope, slightly overstated necessity, and limited engagement with sophisticated accounts of comparative rather than strictly falsifying evidence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-method-alien-underdetermination",
+              "time": "70:56",
+              "role": "Major direct reply",
+              "words": "If every apparent miracle or designed biological feature can always be redescribed as advanced alien technology, the evidential method risks excluding divine identification by construction.",
+              "score": 80,
+              "critique": "Strongest feature: The reply identifies a valuable symmetry problem: an evidential standard can become insulating if every apparent divine act is automatically reclassified as sufficiently advanced natural agency. Principal limitation: Finite underdetermination does not entail permanent unknowability, and Shermer's cautious request for discrimination need not amount to excluding God definitionally from every possible evidential outcome. Live burden: The theistic response should propose cumulative, agent-specific, or universe-level indicators that could distinguish divine agency from advanced finite agents while explaining why those indicators favor the intended theology. Locked score: The strong band reflects direct and unusually responsive contact with the methodological dispute, coherent qualification about universe-level evidence, and a productive diagnostic challenge, while retaining deductions for hypothetical warrant, slightly overstated unknowability, and an insufficiently charitable characterization of skeptical suspension.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-method-artifact-cosmic-maker-distinction",
+              "time": "57:54",
+              "role": "Major direct reply",
+              "words": "Known artifacts have observable human makers and records, but no comparable evidence establishes a cosmic maker; unresolved origins therefore warrant testable inquiry and suspended judgment.",
+              "score": 89,
+              "critique": "Strongest feature: The reply sharply distinguishes familiar artifacts with observable makers, construction histories, and blueprints from the universe, then couples that distinction with appropriately provisional empirical inquiry. Principal limitation: Direct observation of a maker is not always required for agency inference, so the analogy needs criteria explaining when effects themselves can discriminate intentional production from natural alternatives. Live burden: The skeptical method must permit forensic or historical agency inference in principle while showing that the cited cosmic and biological effects lack the specificity, contrast class, or likelihood advantage required here. Locked score: The very strong band reflects full contact with both analogy and positive-evidence demands, excellent responsiveness, stable scope, matched calibration, and fair uncertainty, with only a bounded omission concerning indirect agency detection and domain-specific biological evidence.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Evil and divine accountability",
-        timebox: "30:00-54:00",
-        score: {
-          pro: 56,
-          con: 83
+        "sectionId": "section-objective-morality",
+        "title": "Objective Morality and Human Moral Status",
+        "timebox": "90:54–131:47",
+        "score": {
+          "pro": 71,
+          "con": 76
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "51:45",
-              role: "Moral-law pivot",
-              words:
-                "Wood says the problem of evil presupposes an objective moral law that atheism cannot ground or apply to God.",
-              score: 56,
-              critique:
-                "Wood's response raises a legitimate metaethical question: if evil is real and God is judged by it, what grounds the standard being invoked? That is a serious challenge to purely subjective or merely evolutionary morality. But as a rebuttal to Shermer's concrete suffering examples, it is incomplete. Even if moral realism ultimately needs a theistic ground, that does not explain why an all-good, all-powerful God permits preventable child deaths, disease, and apparently arbitrary suffering. The move also risks changing the topic from the compatibility of God and evil to the ontology of moral judgment. The score is weak-mixed because the metaethical point matters, but it leaves the evidential problem largely unanswered.",
-              tags: [
-                {
-                  label: "Red herring",
-                  type: "fallacy",
-                  url: fallacy("red-herring"),
-                  context:
-                    "The answer shifts from divine permission of suffering to atheistic moral ontology."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-morality-cause-versus-justification",
+              "time": "90:54",
+              "role": "Load-bearing constructive",
+              "words": "Evolutionary hardwiring and social instruction may explain why people hold moral convictions, but neither causal genealogy alone establishes that the condemned conduct is objectively wrong.",
+              "score": 66,
+              "critique": "Strongest feature: The move articulates the essential distinction between explaining the causal origin of moral convictions and supplying normative reasons that justify judging conduct objectively right or wrong. Principal limitation: It presents hardwiring and social teaching too nearly as exhaustive naturalistic options, overlooking secular accounts based on consistency, reciprocity, interests, agency, impartiality, or flourishing. Live burden: The theistic case must show why those candidate reasons cannot generate obligation and then defend divine grounding without merely relocating the normative question to God's nature, commands, or purposes. Locked score: The mixed band reflects strong internal coherence, vivid illustration, and indispensable relevance to moral grounding, yet also a complete miss of the immediately preceding cognition target, slightly overstated exhaustiveness, limited evidential support, and insufficiently charitable treatment of naturalistic justification.",
+              "tags": []
             },
-            con: {
-              time: "30:00",
-              role: "Preventable suffering",
-              words:
-                "Shermer argues an all-good, all-powerful God is hard to square with preventable deaths, disease, and apparently irrefutable theodicy.",
-              score: 83,
-              critique:
-                "Shermer's problem-of-evil case is emotionally forceful and logically relevant. By focusing on preventable child deaths rather than only human violence, he avoids easy free-will replies and presses divine nonintervention where the suffering appears gratuitous. His 'irrefutable God' point is also strong: if good outcomes credit God and bad outcomes are mystery, the explanation loses testability. The weakness is that he broadens quickly into Christian salvation, prison conversions, and atonement, which can distract from the broader motion of whether God exists. Some claims are more anti-Christian than anti-theistic. Even so, the central argument lands hard because it challenges the coherence and explanatory discipline of theism directly.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-morality-flourishing-reciprocity",
+              "time": "97:58",
+              "role": "Major direct reply",
+              "words": "Sentience, suffering, reciprocity, promise-keeping, cooperation, and flourishing supply secular normative reasons that people can examine and improve through collective moral reasoning.",
+              "score": 79,
+              "critique": "Strongest feature: The reply moves beyond genealogy by presenting suffering, reciprocity, promise-keeping, cooperation, and sentient flourishing as recognizable considerations for criticism, improvement, and practically reasoned moral conduct. Principal limitation: It treats flourishing as foundational without adequately explaining its objectively binding authority, adjudicating conflicts among interests and candidate goods, or distinguishing widespread endorsement from categorical requirement. Live burden: The secular account must construct an explicit normative bridge from shared vulnerability, agency, impartial reasoning, and reciprocal constraint to obligation, while demonstrating nonquestion-begging priority rules for difficult collisions. Locked score: The strong band reflects central relevance, substantial evidential contact, practical support, and generally charitable engagement, tempered by implicit qualification, somewhat overstated authority, and a consequential unresolved metaethical gap.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-morality-divine-image-status",
+              "time": "117:26",
+              "role": "Major direct reply",
+              "words": "Secular appeals to autonomy and flourishing require further normative defense, while creation in God's image offers a proposed basis for distinctive and equal human moral status.",
+              "score": 76,
+              "critique": "Strongest feature: The reply directly challenges flourishing's asserted authority and the justification for distinctive or equal human status within the broader sentient community. Principal limitation: Creation in God's image names a status ground without independently defending that premise, clarifying its normative content, or establishing superiority over plausible secular alternatives. Live burden: The theistic account must connect divine image noncircularly to concrete obligations and explain why sentience, agency, vulnerability, and impartial reasoning cannot ground comparable protections or broader animal concern. Locked score: The strong band reflects central relevance, contact with foundational authority and status questions, and a challenge to secular grounding, tempered by limited positive warrant, missing qualification, incomplete uniqueness, and an oversimplified portrayal of flourishing as human preference.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-morality-empirical-objective-inquiry",
+              "time": "129:24",
+              "role": "Major direct reply",
+              "words": "Empirical social sciences discover real truths about human nature, moral dispositions, and institutions, so rejecting religious moral ontology need not imply wholesale relativism.",
+              "score": 73,
+              "critique": "Strongest feature: The reply correctly shows that rejecting a religious or absolute moral ontology need not eliminate objective empirical knowledge about human nature, behavior, institutions, and social consequences. Principal limitation: Its use of objective shifts between observer-independent descriptive findings and normatively binding moral truths, leaving the essential transition from what is to what ought to be undefended. Live burden: The secular account must add an explicit normative principle, justify that principle without circularity, and explain how empirical discoveries constrain action once values or interests conflict. Locked score: The mixed band reflects useful anti-relativist contact, substantial descriptive evidence, central relevance, and a plausible role for interdisciplinary inquiry, while incorporating materially overstated normative implications, partly unstable terminology, incomplete responsiveness to cause-versus-justification, and limited charity toward the theistic distinction.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Miracle evidence and method",
-        timebox: "01:00:00-01:28:30",
-        score: {
-          pro: 70,
-          con: 72
+        "sectionId": "section-evil-suffering-afterlife",
+        "title": "Evil, Innocent Suffering, and Theistic Coherence",
+        "timebox": "30:08–124:57",
+        "score": {
+          "pro": 72,
+          "con": 85
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "01:10:50",
-              role: "Undetectable-by-method charge",
-              words:
-                "Wood argues Shermer's extraterrestrial alternative makes any possible divine evidence dismissible, so the method cannot find God.",
-              score: 70,
-              critique:
-                "Wood's methodological objection is one of his better rebuttals. If every spectacular sign can be reclassified as advanced aliens, hallucination, or unknown technology, then the skeptic's evidential standard may become impossible to satisfy in principle. That is a fair challenge to Shermer's 'what would count?' posture. The weakness is that Wood does not give a rival method with clear safeguards against false positives. He mainly shows that Shermer's detection standard may be too restrictive, not that theism has met a better one. The score is solid because it exposes a real asymmetry in skeptical criteria, but limited because it does not supply a disciplined positive test for divine agency.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-evil-objective-moral-presupposition",
+              "time": "50:03",
+              "role": "Major direct reply",
+              "words": "Calling God's permission of suffering wrong invokes a moral standard applicable to God, so an atheist critic may owe an account of that standard's objectivity and accessibility.",
+              "score": 68,
+              "critique": "Strongest feature: The reply identifies a genuine metaethical question about the status and accessibility of the moral standard invoked when divine permission of suffering is judged objectively wrong. Principal limitation: It treats the objection principally as an external atheist accusation, although an internal critique can provisionally use the theist's own claim that God is perfectly good. Live burden: The response must address the original evidential tension between preventable innocent suffering, goodness, and power while separately showing why secular moral realism cannot support any external formulation. Locked score: The mixed band reflects high relevance to moral grounding and a clear presuppositional challenge, but also materially overstated necessity, incomplete responsiveness, weak handling of internal critique, and reduced charity in suggesting that atheism must be independently established before the suffering objection can operate.",
+              "tags": []
             },
-            con: {
-              time: "01:03:50",
-              role: "Empirical demand",
-              words:
-                "Shermer says if God reaches into nature, the intervention should produce measurable differences from technology, illusion, or chance.",
-              score: 72,
-              critique:
-                "Shermer's miracle method is sensible at the level of public evidence. If a supernatural agent changes cancers, grows limbs, moves particles, or writes in the sky, then investigators should ask how that differs from natural remission, technology, illusion, or unknown mechanisms. His amputee example usefully demands evidence that would not plausibly happen anyway. The weakness is that his extraterrestrial-technology alternative can become too strong. If any extraordinary sign could always be attributed to advanced beings or trickery, the method may block the very conclusion it asks the evidence to establish. The score is solid because skepticism needs controls, but lower because the standard risks becoming unfalsifiable in the opposite direction.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-evil-preventable-child-suffering",
+              "time": "30:08",
+              "role": "Load-bearing constructive",
+              "words": "The enormous scale of preventable suffering and death among innocent children creates a direct conflict with jointly affirming an all-powerful and wholly good God.",
+              "score": 85,
+              "critique": "Strongest feature: The argument presents the problem of evil with exceptional clarity, joins the familiar divine attributes to concrete preventable child mortality, and directly occupies a central comparative burden. Principal limitation: Its categorical incompatibility leaves implicit the consequential premise that no morally sufficient reason could justify divine permission, rather than distinguishing strict contradiction from powerful evidential tension. Live burden: The skeptical case must compare serious theodicies and explain why unknown-reason possibilities do not adequately reduce the force of the observed scale, innocence, and preventability. Locked score: The very strong band reflects precise structure, substantial empirical support, high relevance, and fair presentation, while reserving limited space for the unstated sufficient-reason premise and the absence of developed comparison with the strongest theistic alternatives.",
+              "tags": []
             }
-          }
-        ]
-      },
-      {
-        title: "Morality and closing claims",
-        timebox: "01:29:00-02:15:00",
-        score: {
-          pro: 72,
-          con: 73
-        },
-        exchanges: [
+          },
           {
-            pro: {
-              time: "01:33:00",
-              role: "Objective grounding",
-              words:
-                "Wood argues atheistic morality reduces to wiring or culture, while humans made in God's image have objective status.",
-              score: 72,
-              critique:
-                "Wood presses the strongest philosophical issue in the late debate. Evolutionary impulses and cultural norms can explain why people hold moral feelings, but explanation is not the same as justification. His sociopath example makes the point vivid: if moral feeling is absent or culture teaches cruelty, what makes the act wrong anyway? The image-of-God answer gives his view a clear ontological anchor. The weakness is that he does not fully explain why being created by God grounds specific moral duties, or how disputed divine commands are adjudicated. The score is solid because he exposes a real gap in Shermer's account, but the theistic grounding claim still needs development.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-evil-afterlife-context",
+              "time": "123:54",
+              "role": "Major direct reply",
+              "words": "If death does not end personal existence, an afterlife could change the total context and finality of earthly harms, giving theism additional resources concerning suffering.",
+              "score": 76,
+              "critique": "Strongest feature: The reply is carefully conditional and identifies a legitimate distinction between severe earthly harm being final and that harm occurring within a larger continuing personal history. Principal limitation: Continued existence neither supplies evidence for the afterlife nor explains why a good and powerful God permitted preventable innocent suffering before any later restoration or compensation. Live burden: The theistic case must distinguish altered total harm from antecedent moral justification and provide independent support for the particular eschatological premise doing the explanatory work. Locked score: The strong band reflects proportionate possibility language, clear relevance, coherent contextual qualification, and fair acknowledgment that death may not be the endpoint, while retaining substantial warrant and responsiveness limitations concerning truth, religious specificity, preventability, sufficient reasons, and the difference between compensation and permission.",
+              "tags": []
             },
-            con: {
-              time: "01:38:20",
-              role: "Human flourishing",
-              words:
-                "Shermer grounds morality in sentient suffering, social cooperation, autonomy, moral progress, and reasoning about human flourishing.",
-              score: 73,
-              critique:
-                "Shermer's moral close is humane and practically persuasive. Love, promise-keeping, reciprocal harm avoidance, social trust, sentient suffering, abolition, torture, interracial marriage, and gay rights all illustrate how moral reasoning can improve human life without waiting for revelation. That gives him real explanatory and motivational resources. The weakness is ontological. Showing that people dislike suffering, cooperate better under rules, and expand moral concern does not by itself show that those norms are objectively binding. His answer often moves from what promotes flourishing to what everyone ought to do. The score is solid because the practical ethic is rich, but not higher because Wood's grounding challenge remains only partly answered.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "Morality shifts between observed flourishing and objective obligation."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-evil-afterlife-evidential-burden",
+              "time": "122:12",
+              "role": "Major direct reply",
+              "words": "An afterlife can answer suffering only if it is true, and numerous incompatible religious accounts increase the proponent's burden to provide specific supporting evidence.",
+              "score": 84,
+              "critique": "Strongest feature: The reply properly separates emotional consolation from truth, keeps the burden on the proponent of a specific afterlife, and invokes religious plurality as an evidential discrimination problem. Principal limitation: It does not address the legal primary divine-image target and could distinguish more carefully between an afterlife offered as established fact and one offered merely as a coherence possibility. Live burden: The skeptic must explain how much independent warrant a coherence defense requires and why competing afterlife accounts undermine rather than simply leave open the relevant generic continuation premise. Locked score: The strong band reflects excellent coherence, matched calibration, explicit uncertainty, substantial warrant, central contact with the evil-coherence bridge, and charitable burden analysis, while incorporating response-class limitations and some underdevelopment of the modest modal defense.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 65,
-        strengths: [
-          "Wood offered a distinctive argument that connected science's intelligibility, human rationality, and the value of knowledge to Christian theistic assumptions.",
-          "He repeatedly pressed Shermer on whether skeptical methods and secular morality can actually ground the confidence they claim.",
-          "His strongest moments came in the methodology and moral-grounding exchanges, where he exposed pressure points in Shermer's framework."
+    "overall": {
+      "pro": {
+        "score": 73,
+        "strengths": [
+          "Distinguished a positive theistic explanation from a simple appeal to temporary gaps in scientific knowledge.",
+          "Exposed symmetrical underdetermination by asking whether advanced-agent explanations could permanently displace divine identification.",
+          "Separated causal accounts of moral belief from the normative justification of moral obligation.",
+          "Qualified the afterlife response as a possible wider context rather than presenting a complete demonstrated theodicy."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "The science argument repeatedly slid from Christian historical motivation to scientific confirmation of theism.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The problem-of-evil reply concentrated on the skeptic's moral ontology without resolving the internal tension among divine goodness, power, and preventable innocent suffering.",
+            "links": []
           },
           {
-            text:
-              "The reply to evil pivoted to atheistic moral ontology before answering the concrete suffering challenge.",
-            links: [
-              {
-                label: "Red herring",
-                url: fallacy("red-herring")
-              }
-            ]
+            "text": "Several constructive claims asserted theism's explanatory advantage without supplying comparative expectations that would discriminate it from naturalistic or other-agent alternatives.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 75,
-        strengths: [
-          "Shermer kept the burden of proof visible and distinguished nonbelief from proving a full rival metaphysical system.",
-          "His problem-of-evil argument and irrefutable-God critique directly challenged the coherence and testability of theistic explanation.",
-          "He gave clear naturalistic alternatives for scientific progress, evolved cognition, and moral development without pretending every gap is already closed."
+      "con": {
+        "score": 80,
+        "strengths": [
+          "Presented large-scale preventable child suffering as a concrete and central evidential challenge to traditional theism.",
+          "Required discriminating evidence and distinguished observable artifact makers from a proposed cosmic maker.",
+          "Supplied Darwinian selection as a specific mechanism for apparent biological design.",
+          "Grounded cognitive reliability in successful measurement, prediction, intervention, and scientific correction.",
+          "Offered secular moral considerations involving suffering, reciprocity, cooperation, and flourishing."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His claim that future science will keep filling gaps sometimes outran the evidence currently available.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The cross-cultural reproducibility reply did not distinguish present scientific validation from the historical causal question about theology's contribution to scientific institutions.",
+            "links": []
           },
           {
-            text:
-              "His weak-atheism framing became less stable when he also made broad naturalistic claims about science, morality, and religion.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The empirical morality argument moved from objective descriptive discoveries to binding normative conclusions without stating the necessary justificatory bridge.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that theism merits comparative support if one disciplined personal-source hypothesis jointly predicts intelligible order, truth-capable minds, objective moral status, and ultimate restoration better than specified naturalistic rivals.",
+          "premises": [
+            "Explanatory comparison should use likelihoods and scope rather than infer God merely because a natural mechanism is presently unknown.",
+            "A rational creator has at least a principled reason to produce stable laws and agents capable of progressively understanding them, although fallibility remains expected.",
+            "If persons possess status grounded in a good personal source, duties concerning equal regard need not reduce to evolved preference or social convention.",
+            "Any appeal to afterlife restoration must be independently supported and can mitigate final harm without, by itself, justifying every instance of permitted suffering."
+          ],
+          "conclusion": "Accordingly, the cumulative facts can provide defeasible comparative support for theism only where its unified expectations outperform articulated alternatives and its account of suffering receives independent moral and evidential support."
+        },
+        "newArguments": [
+          {
+            "title": "Convergence under a personal-source hypothesis",
+            "text": "A cumulative Bayesian case can avoid treating any single mystery as decisive. The relevant question is whether a personal rational source gives a jointly better account of mathematical order, the reach of abstract reasoning, interpersonal normativity, and the expectation that inquiry is valuable. Naturalism can address each datum separately, so theism must earn support through comparative coherence and probability rather than mere breadth. This framework also permits contrary evidence, including cognitive disorder, hiddenness, and suffering, to reduce confidence rather than being absorbed without cost."
+          },
+          {
+            "title": "Restoration constrained by prior justification",
+            "text": "A stronger theodicy should treat restoration and justification as separate requirements. Continued life could change whether earthly loss is irreparable, but perfect goodness would still require a morally sufficient reason for permitting the original harm, appropriate solidarity with sufferers, and restoration that respects rather than instrumentalizes them. The case would then seek independent evidence for the eschatological account and explain why creaturely freedom, stable natural order, or soul-making applies to particular categories of suffering. This does not dissolve the evidential problem, but it makes the response morally structured and testable against its own commitments."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that skeptical naturalism deserves provisional preference because successful public mechanisms explain the relevant phenomena while the proposed theistic account adds insufficient discrimination and faces substantial contrary evidence from suffering.",
+          "premises": [
+            "Explanations gain support by making risky comparative expectations, connecting causes to observations, and surviving reproducible public investigation.",
+            "Natural selection, cultural accumulation, instruments, and corrective institutions jointly explain both apparent biological design and progressively reliable scientific cognition.",
+            "Secular morality can begin from impartial reasons generated by sentience, vulnerability, agency, and reciprocity, with empirical inquiry informing consequences rather than creating normativity alone.",
+            "Extensive preventable innocent suffering is substantially less expected under perfect goodness and unlimited power unless a supported account supplies proportionate morally sufficient reasons."
+          ],
+          "conclusion": "Therefore, withholding belief in the proposed God is proportionate while natural mechanisms retain superior public specification and theism has not offset suffering or underdetermination with sufficiently discriminating evidence."
+        },
+        "newArguments": [
+          {
+            "title": "Explanatory cost and auxiliary flexibility",
+            "text": "A hypothesis loses comparative force when each possible observation can be reconciled through additional intentions that are not independently constrained. Order may be attributed to divine rationality, disorder to creaturely freedom, suffering to unknown goods, and hiddenness to soul-making; each may be coherent individually, but flexibility carries an explanatory cost. The appropriate comparison asks how many independent assumptions each framework needs, what observations it predicts before accommodation, and whether auxiliary claims receive separate support. This criterion improves upon a simple demand for deductive falsifiability and applies equally to naturalistic speculation."
+          },
+          {
+            "title": "Interpersonal reasons as a normative bridge",
+            "text": "A secular moral account can distinguish causes from justification by beginning with the standpoint of agents who are vulnerable to harm, capable of reasons, and dependent on reciprocal social terms. No agent can consistently demand protection for comparable interests while denying every comparable interest of others without a relevant difference. Impartiality and reciprocity therefore constrain conduct, while evidence about suffering and institutions informs how those constraints apply. This does not resolve every metaethical dispute, but it supplies a normative bridge that is more substantial than reporting evolved preferences or social-scientific regularities."
           }
         ]
       }
@@ -23655,345 +23691,359 @@ export const debates = [
     }
   },
   {
-    id: "donahue-malpass-fine-tuning-god-2026",
-    number: "65",
-    title: "Miles K. Donahue vs Alex Malpass: Does Fine-Tuning Point to God?",
-    label: "Fine-tuning priors and naturalism",
-    date: "2026-06-07",
-    duration: "1 hr 21 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=2UtMbB_gazg",
-    motion:
-      "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
-    summary:
-      "Donahue argues that fine-tuning is far more likely on theism than single-universe naturalism; Malpass argues that naturalistic disjunctions, alien and simulation analogies, priors, and religious ambiguity prevent that inference from carrying enough weight.",
-    sourceNote:
-      "Based on YouTube captions on 2026-06-07. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "fine-tuning is strong evidence for theism",
-        context:
-          "Donahue's central claim is comparative: life-permitting constants are much likelier if a perfectly good creator wants moral agents than if single-universe naturalism is true."
+    "id": "donahue-malpass-fine-tuning-god-2026",
+    "number": "65",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Miles K. Donahue vs Alex Malpass: Does Fine-Tuning Point to God?",
+    "label": "Fine-tuning priors and naturalism",
+    "date": "2026-08-24",
+    "duration": "1 hr 21 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2UtMbB_gazg",
+    "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4081ce49489ec7a77a96c02695cd6efd9cfe60c9c1e114a306a0c97df4f29b39). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Donahue defended a theistic likelihood advantage from fine-tuning, while Malpass pressed naturalistic aggregation, uncertain divine psychology, prior ambiguity, and theory-relative alternatives.",
+    "quotes": {
+      "pro": {
+        "text": "Theism, [snorts] by contrast, renders fine-tuning less surprising.",
+        "context": "Donahue introduces the central likelihood contrast after describing life-permitting values as exceptionally improbable under single-universe naturalism."
       },
-      con: {
-        text: "good evidence for intentionality",
-        context:
-          "Malpass grants that striking evidence can support design-like intentionality while denying that it automatically identifies benevolent theism over naturalistic or quasi-naturalistic rivals."
+      "con": {
+        "text": "it's nowhere near as strong evidence of their benevolence",
+        "context": "Malpass distinguishes evidence that a signal was intentionally produced from substantially weaker evidence that its intelligent producer is benevolent."
       }
     },
-    sides: {
-      pro: {
-        name: "Fine-tuning theism",
-        speaker: "Miles K. Donahue",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Fine-tuning theism",
+        "speaker": "Miles K. Donahue",
+        "color": "teal"
       },
-      con: {
-        name: "Naturalistic skepticism",
-        speaker: "Alex Malpass",
-        color: "coral"
+      "con": {
+        "name": "Naturalistic skepticism",
+        "speaker": "Alex Malpass",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 80,
-      con: 84
+    "score": {
+      "pro": 79,
+      "con": 80
     },
-    sections: [
+    "sections": [
       {
-        title: "Fine-tuning as Bayesian evidence",
-        timebox: "00:36-07:00",
-        score: {
-          pro: 82,
-          con: 77
+        "sectionId": "section-likelihood-foundation",
+        "title": "The Fine-Tuning Datum and the Core Likelihood Comparison",
+        "timebox": "0:38–79:37",
+        "score": {
+          "pro": 79,
+          "con": 79
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "00:48",
-              role: "Bayesian fine-tuning case",
-              words:
-                "Donahue says fine-tuning is an established scientific fact, then argues that life-permitting constants are far more likely on theism than on single-universe naturalism.",
-              score: 82,
-              critique:
-                "Donahue's opening is strong because it gives the argument a clear probabilistic structure. He separates the data from the explanatory comparison, defines the relevant naturalism as single-universe naturalism, and explains likelihood with accessible analogies such as tea in a cabin and rocks spelling SOS. That helps the audience see why fine-tuning, if real and rare, could raise the probability of design. The weakness is that several large issues are bracketed: the status of fine-tuning as a property of physics, the choice of probability distribution over constants, and the exclusion of multiverse-style naturalism. The score is high because the case is lucid and relevant, though its force depends on assumptions set aside at the start.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-core-fine-tuning-likelihood",
+              "time": "0:38",
+              "role": "Load-bearing constructive",
+              "words": "Life-permitting parameters are extremely improbable under single-universe naturalism but less surprising if a perfectly good God values conscious moral life, so fine-tuning confirms theism.",
+              "score": 79,
+              "critique": "Strongest feature: The argument establishes the debate's indispensable likelihood comparison, connecting conscious moral value with a perfectly good creator while directly addressing why life-permitting conditions matter evidentially. Principal limitation: Its emphatic naturalistic improbability lacks a defended parameter measure, while the transition from perfect goodness to a materially elevated probability of embodied conscious life remains compressed. Live burden: The case must specify the relevant probability distribution, defend a coarse-grained divine expectation, and compare that expectation against the aggregated admissible single-universe naturalistic hypothesis space. Locked score: The strong/competent band reflects an intelligible, highly relevant Bayesian foundation whose clear comparative direction is constrained by underdeveloped measurement, rival-space analysis, and divine-psychology warrant.",
+              "tags": []
             },
-            con: {
-              time: "07:18",
-              role: "Methodological opening",
-              words:
-                "Malpass says he is building intuitions rather than claiming all the answers, and he will test whether evidence reaches benevolent theism rather than mere intentionality.",
-              score: 77,
-              critique:
-                "Malpass's opening is careful and intellectually honest. He explicitly says he is thinking the issue through, which makes his later analogies feel exploratory rather than evasive. His key distinction, evidence for intentionality versus evidence for benevolent theism, is exactly where the fine-tuning argument needs pressure: even if nature looks arranged, the arranger's identity and motives remain further questions. The weakness is that this opening does not yet answer Donahue's concrete likelihood comparison. It sets up an intuition pump and a strategy, not a full alternative model of the constants. The score is solid because it frames the right diagnostic issue, but lower than Donahue's opening because it is more preparatory than argumentative.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-fine-tuning-theory-defect",
+              "time": "78:13",
+              "role": "Major direct reply",
+              "words": "Some apparent fine-tuning may indicate a defect in the operative physical theory rather than an objective universe-level feature requiring a design explanation.",
+              "score": 79,
+              "critique": "Strongest feature: The move directly challenges the foundational datum by distinguishing fine-tuning as a property of physical theories from fine-tuning as an objective property of the universe. Principal limitation: Its appeal to physicists remains secondhand and loosely bounded to some phenomena, without showing that the specific life-permitting parameters under discussion are artifacts of a defective formalism. Live burden: The objection must identify which fine-tuning cases are theory-relative, explain the diagnostic mechanism, and demonstrate that the central datum lacks robustness across serious physical formulations. Locked score: The strong/competent band recognizes an important, carefully tentative alternative with direct relevance and charitable scope, constrained by limited physics, incomplete case-specific application, and subsidiary rather than comprehensive burden completion.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Intentionality and stalking horses",
-        timebox: "08:00-21:40",
-        score: {
-          pro: 80,
-          con: 85
+        "sectionId": "section-hypothesis-space",
+        "title": "Naturalistic Alternatives and the Relevant Comparison Class",
+        "timebox": "16:11–57:34",
+        "score": {
+          "pro": 78,
+          "con": 83
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "19:32",
-              role: "Proves-too-much rebuttal",
-              words:
-                "Donahue argues that if the stalking-horse reply works against fine-tuning, it works against every possible empirical case for God, making theism empirically unreachable.",
-              score: 80,
-              critique:
-                "Donahue's proves-too-much rebuttal is one of his best strategic moves. Instead of chasing every proposed naturalistic alternative, he asks whether the skeptical method would block any empirical evidence for God, no matter how striking. That reframes the discussion from one fine-tuning case to a broader rule about confirmation. It also forces Malpass to say how much religious ambiguity he is willing to accept. The weakness is that the move can overstate the dialectical cost. A critic might reject some theistic inferences from ambiguous evidence without saying no possible observation could ever favor theism. The score is high because the objection exposes a real burden, but it still needs a sharper line between caution and global skepticism.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-single-universe-comparison-class",
+              "time": "26:20",
+              "role": "Major direct reply",
+              "words": "The comparison concerns classical perfect-being theism and every hypothesis consistent with single-universe naturalism, where the causal natural order exhausts relevant reality.",
+              "score": 82,
+              "critique": "Strongest feature: The move explicitly accepts the demanding comparison, defines single-universe naturalism and classical perfect-being theism, and acknowledges that superiority over every naturalistic version is a strong claim. Principal limitation: Defining both classes answers specification but supplies no demonstration that theism actually exceeds each member or the probability-weighted aggregate of the naturalistic class. Live burden: The defense must explain how heterogeneous naturalistic refinements receive priors and likelihoods, then establish comparative superiority without relying upon the breadth of its definition as evidence. Locked score: The strong/competent band recognizes unusually clear scope, direct responsiveness, and candid burden acceptance, while withholding stronger appraisal because the asserted universal superiority substantially outruns the support presented here.",
+              "tags": []
             },
-            con: {
-              time: "11:32",
-              role: "Intentionality-benevolence distinction",
-              words:
-                "Malpass says a strange signal can be strong evidence for intentionality while still leaving the sender's goodness, target, and motives unclear.",
-              score: 85,
-              critique:
-                "Malpass's intentionality-benevolence distinction is powerful because it accepts the strongest part of design reasoning without granting the full theistic conclusion. The pulsar and alien-signal examples show that apparent order may first support intelligence or agency, while benevolence, worship-worthiness, and divine identity require additional evidence. His escalating cases, from prime-number signals to 'we come in peace,' make the inferential gap intuitive. The weakness is that the analogy is only partial: fine-tuning concerns the existence of life-permitting structure, not a communication event, and theism may claim a broader fit with moral agency. Even so, the score is high because the distinction directly targets the move from designed-looking data to perfect-being theism.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-aggregate-naturalistic-alternatives",
+              "time": "16:11",
+              "role": "Load-bearing constructive",
+              "words": "Advanced aliens, future time travelers, simulators, and related possibilities form a disjunctive naturalistic alternative whose combined probability must be compared against theism.",
+              "score": 81,
+              "critique": "Strongest feature: The move directly broadens the relevant comparison class, supplying concrete naturalistic agency hypotheses and insisting that their combined probability, rather than one austere rival, confront theism. Principal limitation: Merely listing advanced aliens, time travelers, and simulators neither fixes their admissibility boundaries nor establishes individual priors, likelihoods, overlap, or aggregate probability. Live burden: The skeptical case must define a principled hypothesis partition and demonstrate that its probability-weighted disjunction materially reduces the claimed theistic likelihood advantage without double counting possibilities. Locked score: The strong/competent band reflects excellent contact with the central rival-space burden and a coherent aggregation demand, tempered by incomplete probabilistic machinery and only partial accommodation of broadly defined naturalism.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-simulation-regress-objection",
+              "time": "55:32",
+              "role": "Major direct reply",
+              "words": "Simulation does not explain fine-tuning if simulators probably reproduce our basic physical laws, because the same fine-tuning then reappears unexplained within base reality.",
+              "score": 73,
+              "critique": "Strongest feature: The objection supplies a concrete explanatory-regress test for simulation, arguing that reproducing our basic physical laws would relocate fine-tuning to base reality rather than explain it. Principal limitation: The crucial claim that simulators would probably reproduce those laws is unsupported, and saying simulation explains literally nothing exceeds what the conditional regress establishes. Live burden: The reply must show why relevant base-level life-permitting conditions are required, mirrored, or independently fine-tuned across plausible simulator architectures, while addressing naturalistic alternatives beyond simulation. Locked score: The mixed band reflects a clear and potentially important regress objection with direct local responsiveness, offset by speculative simulator psychology, excessive asserted force, and incomplete engagement with the broader alternative family.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-full-family-comparison-burden",
+              "time": "22:20",
+              "role": "Major direct reply",
+              "words": "A consequential fine-tuning case must specify its theistic hypothesis and compare its explanatory performance with the complete admissible naturalistic family, not merely a selected rival.",
+              "score": 84,
+              "critique": "Strongest feature: The reply replaces an overbroad demand for absolutely decisive evidence with a consequential comparative test across specified theistic and naturalistic hypothesis families, preserving the genuine evidential question. Principal limitation: Requiring theism to outperform every admissible naturalistic member is stronger than standard aggregate Bayesian comparison, since a low-prior constituent may fit the evidence exceptionally well without controlling the family likelihood. Live burden: The objection must articulate admissibility, partition, weighting, and aggregation rules that convert full-family comparison into a determinate assessment rather than an indefinitely expandable challenge. Locked score: The upper strong/competent placement reflects exceptionally responsive reframing and central burden contact, constrained by an overstated universal requirement and an incompletely specified probabilistic framework.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Hypothesis space and burden",
-        timebox: "22:00-30:50",
-        score: {
-          pro: 79,
-          con: 84
+        "sectionId": "section-divine-psychology",
+        "title": "Divine Goodness, Agency, and Predictive Expectations",
+        "timebox": "12:16–80:44",
+        "score": {
+          "pro": 85,
+          "con": 81
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "23:08",
-              role: "Naturalism-as-hypothesis defense",
-              words:
-                "Donahue says naturalism can be a well-formed hypothesis if captured as the natural world being all there is, even though it admits many specifications.",
-              score: 79,
-              critique:
-                "Donahue's hypothesis-space defense is useful because it prevents the debate from dissolving into labels. He concedes that naturalism and theism both admit many specifications, but argues that sufficiently general claims can still be compared: the natural world is all there is, or a perfectly good creator exists. That keeps Bayesian comparison possible and prevents Malpass from winning by semantic diffusion alone. The weakness is that Donahue's naturalism remains narrower than many live alternatives, especially once multiverse, simulation, abstract objects, and single-universe restrictions are debated. The score is solid-strong because he preserves the argumentative framework, but the framework still carries contested boundary choices that matter to the final probability.",
-              tags: [
-                {
-                  label: "Scope neglect",
-                  type: "bias",
-                  url: bias("scope-neglect"),
-                  context:
-                    "The comparison narrows naturalism to a particular target, so success against that target can look broader than it is."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-goodness-predicts-revelation",
+              "time": "38:20",
+              "role": "Major direct reply",
+              "words": "Perfect divine goodness gives some reason to expect revealed religion and resurrection in the relevant historical context, unlike generic alienism without additional intentional specificity.",
+              "score": 85,
+              "critique": "Strongest feature: The reply directly answers unknown-intentions skepticism by identifying perfect goodness and historical context as reasons that revelation and resurrection receive greater probability under theism than generic alienism. Principal limitation: The supplied reason remains qualitative and does not establish how much goodness raises the likelihood, whether alternative good disclosures compete, or how the relevant historical evidence should be conditioned. Live burden: The defense must preserve its modest comparative claim while explaining why divine goodness favors some recognizable revelation across the available good-world possibilities rather than leaving outcomes radically diffuse. Locked score: The very strong band reflects precise qualification, excellent responsiveness, and proportionate probabilistic force, with remaining limitations concerning magnitude and the diversity of goodness-consistent divine choices.",
+              "tags": []
             },
-            con: {
-              time: "24:20",
-              role: "Ambition-of-claim challenge",
-              words:
-                "Malpass says it is trivial that some theism beats some naturalism; the serious claim is that a specific theism beats every naturalistic specification or their disjunction.",
-              score: 84,
-              critique:
-                "Malpass's burden challenge is excellent because it clarifies what would make the fine-tuning argument nontrivial. If one compares a friendly version of theism to a weak version of naturalism, the result proves little. Malpass presses for a stronger claim: a well-specified theism must outperform the whole relevant naturalistic field, or at least the best naturalistic competitors. That is exactly the burden Donahue later tries to meet with priors. The weakness is that 'every naturalistic specification' can become too expansive, especially if it includes unconstrained science-fiction possibilities with tiny independent support. The score is high because the challenge disciplines the comparison, but not maximal because it risks making the evidential target slippery.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-divine-intent-goodness-gap",
+              "time": "12:16",
+              "role": "Major direct reply",
+              "words": "Purposive signs may establish intelligent agency much more strongly than benevolent character, because a deceptive agent could produce the same apparently peaceful or beneficial evidence.",
+              "score": 82,
+              "critique": "Strongest feature: The analogy carefully distinguishes evidence for intelligent intentionality from evidence for benevolence, expressly granting some support for goodness while preserving a substantial difference in evidential strength. Principal limitation: It targets inferring character from purposive signs, whereas the opposing likelihood argument stipulates perfect goodness and requires evaluation of what such goodness predicts about creation. Live burden: The reply must connect its deceptive-agent possibility to the stipulated perfect-being hypothesis or independently show why perfect goodness supplies insufficient reason to expect valuable conscious life. Locked score: The strong/competent band recognizes precise qualification, coherent probabilistic reasoning, and charitable engagement, while reflecting that the analogy leaves the decisive goodness-to-creation bridge substantially unanswered.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-indeterminate-divine-choice",
+              "time": "79:36",
+              "role": "Load-bearing constructive",
+              "words": "Even granting a good God, uncertain divine values and reasons may prevent any determinate prediction that God would choose a life-permitting universe or recognizable revelation.",
+              "score": 80,
+              "critique": "Strongest feature: The move directly attacks the central goodness-to-choice bridge, remaining explicitly conditional even after granting divine existence and goodness while emphasizing uncertainty about values, reasons, and resulting actions. Principal limitation: Suggesting that a perfectly good God's values could be completely different insufficiently engages the stipulated moral concept and understates the opponent's coarse-grained, comparative prediction. Live burden: The skeptical case must show that diversity among goodness-consistent worlds disperses probability enough to erase a broad expectation of valuable conscious life, not merely prevent prediction of one exact world. Locked score: The strong/competent band reflects central relevance, explicit epistemic qualification, and sustained direct contact, moderated by overstatement and incomplete treatment of shared tendencies across good-world possibilities.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Resurrection, aliens, and possible evidence",
-        timebox: "31:10-45:50",
-        score: {
-          pro: 81,
-          con: 85
+        "sectionId": "section-priors-simplicity",
+        "title": "Intrinsic Probability, Coherence, Modesty, and Parsimony",
+        "timebox": "46:03–70:09",
+        "score": {
+          "pro": 81,
+          "con": 75
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "31:15",
-              role: "Resurrection evidence analogy",
-              words:
-                "Donahue says witnessing Jesus' resurrection, appearances, and ascension would at least raise the probability of theism over naturalism, so the stalking-horse reply cannot block all evidence.",
-              score: 81,
-              critique:
-                "Donahue's resurrection analogy improves on the sky-writing example because it embeds evidence in a human, historical, and religious context rather than an obviously bizarre spectacle. If one personally observed Jesus crucified, resurrected, interacting with disciples, and ascending, it would be strange to say that theism receives no confirmation at all. That makes the anti-evidence implication of the stalking-horse objection look costly. The weakness is that the analogy imports specifically Christian background assumptions into a debate about fine-tuning. The historical and theological fit is precisely what Malpass challenges with alien or simulation reinterpretations. The score is high because the analogy pressures global skepticism, but its transfer back to cosmic constants remains imperfect.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-conditional-prior-asymmetry",
+              "time": "46:03",
+              "role": "Supporting constructive",
+              "words": "Perfect-being theism occupies a substantial share of general design possibilities, whereas a life-directed augmented-naturalistic hypothesis occupies an extremely small share of general naturalistic possibilities.",
+              "score": 75,
+              "critique": "Strongest feature: The move addresses rival aggregation at the prior level by comparing how specific life-directed refinements allegedly occupy different shares within broader design and naturalistic hypothesis spaces. Principal limitation: General design possibilities, naturalistic possibilities, and their conditional probability shares lack a stable measure, yet the move assigns them a strong asymmetrical ranking without sufficient derivation. Live burden: The defense must provide a non-arbitrary partition and complexity principle explaining why perfect-being theism receives substantial conditional mass while life-inclining naturalism receives exceptionally little. Locked score: The strong/competent threshold reflects direct engagement with an important prior objection and a recoverable conditional structure, limited by undeveloped probability measures, unsupported magnitude, and insufficient treatment of disjunctive prior mass.",
+              "tags": []
             },
-            con: {
-              time: "36:05",
-              role: "Alien reinterpretation reply",
-              words:
-                "Malpass replies that general theism no more directly predicts a resurrection than advanced aliens do, and calling the event religiously infused risks assuming what is at issue.",
-              score: 85,
-              critique:
-                "Malpass's alien reinterpretation is strong because it does not deny that the imagined event is extraordinary. He asks why the extraordinary should be read as benevolent theism rather than powerful, opaque agency, especially when advanced aliens, simulations, or future humans could mimic religious framing. His complaint about 'religiously infused' context is also fair: if the context is already read through Christian assumptions, the inference can become circular. The weakness is that appeals to unknown advanced capacities can become too cheap; almost any observation can be redescribed as alien manipulation if enough mystery is allowed. Still, the score is high because Malpass exposes the gap between astonishing agency and the specific God hypothesis.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "The appeal to unknown alien or future-human capacities can preserve a live alternative by leaning on what we cannot rule out."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-disjunctive-limits-prior",
+              "time": "63:21",
+              "role": "Major direct reply",
+              "words": "A disjunction containing every specifically limited alternative may carry greater total prior probability than one unlimited hypothesis, potentially reversing the claimed simplicity advantage.",
+              "score": 74,
+              "critique": "Strongest feature: The move identifies a legitimate aggregation consideration: the combined prior mass of numerous mutually specified limited alternatives may exceed that assigned to one unlimited perfect-being hypothesis. Principal limitation: The assertion that the alternatives massively swamp the unlimited hypothesis follows neither from their number nor from formal additivity without a normalized measure, stable partition, and complexity treatment. Live burden: The objection must define mutually exclusive alternatives and justify their assigned probability mass while preventing arbitrary redescription from manufacturing either countless disjuncts or one artificially unified competitor. Locked score: The mixed band acknowledges direct engagement with the central prior comparison and a coherent possibility, but reflects unstable hypothesis boundaries, weak warrant, and substantially overstated magnitude.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-coherence-versus-modesty",
+              "time": "64:42",
+              "role": "Major direct reply",
+              "words": "Greater modesty does not by itself make a disjunction of limited alternatives intrinsically likelier than theism, because coherence may carry more prior-probability weight.",
+              "score": 86,
+              "critique": "Strongest feature: The response precisely identifies the omitted comparative factor and advances only the limited conclusion that modesty alone cannot determine intrinsic probability when coherence may point oppositely. Principal limitation: Although it successfully undercuts a one-factor inference, it does not independently establish theism's coherence, quantify its significance, or provide a general rule for balancing prior-making virtues. Live burden: The defense must explain how coherence and modesty enter a probability assignment without treating either consideration as automatically decisive or relying upon an unspecified intuitive ranking. Locked score: The very strong band reflects exceptional precision, calibration, charity, and direct responsiveness, with its remaining limitation appropriately confined to the unresolved magnitude of the competing coherence consideration.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-naturalistic-ontological-parsimony",
+              "time": "69:14",
+              "role": "Major direct reply",
+              "words": "Naturalism's ontological economy may offset theism's advantages in coherence or modesty because theism appears to add supernatural commitments to the natural reality requiring explanation.",
+              "score": 77,
+              "critique": "Strongest feature: The reply provisionally grants the preceding comparison and introduces ontological economy as an independent counterweight, making the prior analysis multidimensional rather than resting exclusively upon modesty. Principal limitation: Its claim that theism posits everything naturalism does plus additional supernatural reality oversimplifies dependence theism and leaves entities, kinds, structures, and explanatory commitments undifferentiated. Live burden: The skeptical case must compare total fundamental commitments under each worldview and explain how ontological parsimony should be balanced against structural simplicity, coherence, modesty, and explanatory reach. Locked score: The strong/competent band reflects relevant counterbalancing, cautious force, and substantial responsiveness, tempered by unstable terminology, a controversial additive premise, and no defended weighting rule among competing theoretical virtues.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Priors and augmented naturalism",
-        timebox: "46:03-56:50",
-        score: {
-          pro: 84,
-          con: 82
+        "sectionId": "section-empirical-discrimination",
+        "title": "Empirical Discrimination and Religious Ambiguity",
+        "timebox": "19:33–55:34",
+        "score": {
+          "pro": 68,
+          "con": 79
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "46:10",
-              role: "Prior-probability asymmetry",
-              words:
-                "Donahue argues that augmented naturalism is an extremely specific low-prior hypothesis, while perfect-being theism has simpler unlimited attributes and a larger share of the design space.",
-              score: 84,
-              critique:
-                "Donahue's prior-probability argument is the most technical and substantive defense of his opening. He does not merely say that augmented naturalism predicts fine-tuning; he argues that it pays for that prediction with an extremely low prior, since any constants could be favored by a tailored natural disposition. By contrast, he claims perfect-being theism is not an arbitrary finite specification because unlimited knowledge, power, and goodness have a kind of simplicity. The weakness is that the simplicity claim remains controversial, and he later concedes naturalism has some general parsimony advantage. The score is strong because the argument directly meets Malpass's stalking horse, though the crucial prior comparison is not demonstrated numerically.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-empirical-stalking-horse-reductio",
+              "time": "19:33",
+              "role": "Major direct reply",
+              "words": "If tailored natural dispositions can answer every observation, the same method appears capable of defeating any possible empirical case for theism, an implausibly sweeping consequence.",
+              "score": 68,
+              "critique": "Strongest feature: The reductio identifies a serious methodological danger in permitting observation-tailored naturalistic alternatives, namely that unrestricted hypothesis manufacture could neutralize empirical discrimination across every proposed theistic case. Principal limitation: It shifts without sufficient argument from evidence being compatible or non-decisive to there being no comparative evidential support whatsoever, thereby overstating the opponent's skeptical conclusion. Live burden: The reply must distinguish strong confirmation from deductive decisiveness and show that the challenged alternatives are admitted without ordinary constraints concerning prior probability, simplicity, and predictive specificity. Locked score: The mixed band reflects direct relevance and an intelligible methodological warning, but also materially overstated scope, incomplete contact with benevolence underdetermination, and insufficient demonstration of unrestricted tailoring.",
+              "tags": []
             },
-            con: {
-              time: "52:42",
-              role: "Design-space boundary objection",
-              words:
-                "Malpass says simulations, advanced agents, and other sci-fi-style naturalisms may belong on the naturalist side, so Donahue's probability space may be divided incorrectly.",
-              score: 82,
-              critique:
-                "Malpass's design-space objection is important because the whole Bayesian result depends on how the alternatives are partitioned. If simulation hypotheses, advanced natural designers, and other science-fiction-like options count as naturalistic rather than supernatural design, then naturalism has more explanatory resources than Donahue's tidy comparison suggests. Malpass also forces Donahue to clarify whether 'design' means any designer or specifically supernatural design. The weakness is that broadening the naturalist side with many imaginative alternatives does not automatically raise its total probability enough; the individual disjuncts may be minuscule. The score is high because the objection catches a real ambiguity in the model, but Donahue has a plausible reply that priors still matter.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-agent-intention-underdetermination",
+              "time": "35:31",
+              "role": "Major direct reply",
+              "words": "General theism predicts a particular resurrection no better than general alienism when both posit powerful agents but leave their relevant intentions substantially unspecified.",
+              "score": 82,
+              "critique": "Strongest feature: The alien comparison sharply isolates the predictive problem facing broad agency hypotheses, showing that power and possible intention alone do not generate an expectation of one particular resurrection. Principal limitation: The comparison underplays how perfect goodness and the historical context might add predictive content unavailable to generic alienism, even without entailing the event or fixing divine intentions completely. Live burden: The skeptical argument must show that these proposed moral and contextual constraints remain too weak to create a meaningful likelihood difference, rather than observing only that neither hypothesis entails resurrection. Locked score: The strong/competent band reflects clear scope, careful conditional reasoning, and direct contact with intention underdetermination, moderated by incomplete treatment of goodness-based prediction.",
+              "tags": []
             }
-          }
-        ]
-      },
-      {
-        title: "Ambiguity, parsimony, and closing limits",
-        timebox: "57:11-1:20:55",
-        score: {
-          pro: 81,
-          con: 86
-        },
-        exchanges: [
+          },
           {
-            pro: {
-              time: "1:08:00",
-              role: "Coherence-over-modesty close",
-              words:
-                "Donahue says theism has coherence even if it is immodest, while augmented naturalism lacks both modesty and coherence, so fine-tuning still favors theism.",
-              score: 81,
-              critique:
-                "Donahue's final probabilistic repair is agile. When Malpass presses Paul Draper-style worries that unlimited perfect-being theism may be swamped by the disjunction of limited-deity options, Donahue retreats to a more modest but still relevant claim: coherence contributes to intrinsic probability, and augmented naturalism has neither coherence nor modesty. His closing electron-generalization example usefully connects this to ordinary scientific preference for uniform laws. The weakness is that the argument becomes increasingly theoretical and underquantified. Donahue concedes uncertainty about how coherence, modesty, and ontological simplicity should be weighted, yet his final confidence still depends on that balance. The score is strong because he adapts well, but the crucial measure problem remains.",
-              tags: []
-            },
-            con: {
-              time: "1:13:12",
-              role: "Religious-ambiguity close",
-              words:
-                "Malpass says a posterior arguments may leave naturalism and theism in an ambiguous gray area because the theoretical virtues are hard to weigh, and fine-tuning may reflect theory limits.",
-              score: 86,
-              critique:
-                "Malpass's ambiguity close is strong because it fits the actual state of the debate. He does not claim a decisive naturalistic victory; he argues that once priors, hypothesis partitions, ontological parsimony, theory-laden fine-tuning, and divine psychology all enter, confidence should drop. His closing point about fine-tuning possibly reflecting flaws in our theories rather than brute properties of the universe is also a useful deflationary reminder. The weakness is that ambiguity can become a comfortable stopping point rather than an argued probability judgment, and Malpass gives less detail on which naturalistic alternative is best. The score is high because he earns much of the caution he recommends, though he leaves the positive naturalist case incomplete.",
-              tags: [
-                {
-                  label: "Ambiguity effect",
-                  type: "bias",
-                  url: bias("ambiguity-effect"),
-                  context:
-                    "The appeal to unsettled theoretical virtues can make withholding judgment attractive even where one side may still have a probabilistic edge."
-                }
-              ]
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-persistent-empirical-underdetermination",
+              "time": "53:17",
+              "role": "Supporting reply",
+              "words": "Broad simulation and science-fiction naturalism can accommodate almost any observation, so empirical evidence may never decisively separate naturalism from theism with complete certainty.",
+              "score": 75,
+              "critique": "Strongest feature: The move carefully limits its conclusion to complete or one-hundred-percent decisiveness, using broad science-fiction compatibility to explain why neither worldview may be deductively selected by an observation. Principal limitation: The opposing challenge concerns whether comparative empirical confirmation remains possible, and persistent compatibility with both worldviews does not itself eliminate substantial likelihood differences or strong evidence. Live burden: The skeptical case must move beyond modal accommodation and show that flexible naturalistic alternatives retain enough prior probability and predictive specificity to undercut the actual likelihood ratio. Locked score: The strong/competent threshold reflects commendable calibration, clear scope, and relevant support for non-decisiveness, while recognizing that the decisive distinction between compatibility and comparative evidential force remains unanswered.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 80,
-        strengths: [
-          "Donahue presented the fine-tuning argument in a clear Bayesian structure and kept returning to likelihoods, priors, and hypothesis comparison.",
-          "He recognized that tailored naturalistic hypotheses can predict the data, then argued that they pay for that fit with low prior probability.",
-          "He adjusted under pressure, conceding naturalism's parsimony advantage and narrowing the claim to a comparison with specific forms of naturalism."
+    "overall": {
+      "pro": {
+        "score": 79,
+        "strengths": [
+          "Established the indispensable Bayesian comparison between life-permitting conditions under single-universe naturalism and perfect-being theism.",
+          "Defined the competing hypothesis classes explicitly and candidly accepted the demanding full-family comparison burden.",
+          "Answered generic-agent underdetermination with a carefully limited appeal to perfect goodness and historical context.",
+          "Correctly showed that modesty alone cannot settle intrinsic probability when coherence remains an unresolved competing consideration."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He narrowed naturalism to single-universe naturalism early, which made the fine-tuning comparison cleaner but less representative of the strongest naturalistic field.",
-            links: [
-              {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
-              }
-            ]
+            "text": "The empirical stalking-horse reductio moved too quickly from absence of decisive proof to absence of any comparative empirical evidence.",
+            "links": []
           },
           {
-            text:
-              "His appeal to fine-tuning as an established fact and to uniform probability over constants carried more weight than the debate itself defended.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The conditional-prior argument assigned sharply unequal probability shares without defending measures over either design space or naturalistic refinements.",
+            "links": []
           },
           {
-            text:
-              "His claim that a perfectly good God would be expected to create moral agents relied on contested divine-psychology assumptions.",
-            links: [
-              {
-                label: "Belief bias",
-                url: bias("belief-bias")
-              }
-            ]
+            "text": "The simulation objection depended on unsupported assumptions about simulator choices and did not address the broader naturalistic alternative family.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 84,
-        strengths: [
-          "Malpass clearly separated evidence for intentional arrangement from evidence for benevolent perfect-being theism.",
-          "He pressed the correct Bayesian burden: compare a specified theism not merely with weak naturalism, but with the strongest relevant naturalistic specifications or disjunctions.",
-          "He maintained epistemic humility while identifying real unresolved issues about priors, simulation hypotheses, theory-laden fine-tuning, and divine psychology."
+      "con": {
+        "score": 80,
+        "strengths": [
+          "Forced attention from one austere naturalistic rival toward the aggregate probability of a broader admissible alternative space.",
+          "Distinguished evidence for intentional agency from evidence for benevolent character with careful probabilistic qualification.",
+          "Reframed empirical disagreement around specified comparative hypothesis families rather than absolute deductive decisiveness.",
+          "Pressed both divine-psychology indeterminacy and the possibility that some apparent fine-tuning diagnoses a defective theory.",
+          "Introduced ontological parsimony as a distinct counterweight to coherence and modesty in the prior comparison."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His alien, time-travel, and simulation alternatives sometimes relied on unknown future capacities rather than independently supported mechanisms.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The full-family burden was sometimes stated as superiority over every member, which is stronger than comparison with a probability-weighted aggregate requires.",
+            "links": []
           },
           {
-            text:
-              "His religious-ambiguity posture risked treating unresolved theoretical weights as a reason to stop before making any comparative probability judgment.",
-            links: [
-              {
-                label: "Ambiguity effect",
-                url: bias("ambiguity-effect")
-              }
-            ]
+            "text": "The disjunctive-limits argument inferred overwhelming prior mass from numerous alternatives without supplying a stable partition or probability measure.",
+            "links": []
           },
           {
-            text:
-              "By expanding naturalism into a large disjunction of possible scenarios, he sometimes made the skeptical target hard to discipline or falsify.",
-            links: [
-              {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
-              }
-            ]
+            "text": "The divine-choice objection understated the possibility of coarse-grained tendencies shared across many worlds consistent with perfect goodness.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that fine-tuning provides defeasible confirmation of perfect-being theism when the datum, rival families, divine motivations, and prior assignments are specified at comparable levels of generality.",
+          "premises": [
+            "Treat the datum as robust life-permitting sensitivity that persists across serious physical formulations, excluding cases shown to arise merely from an avoidable parameterization or defective theory.",
+            "Compare classical perfect-being theism with a probability-weighted partition of single-universe naturalistic models, assigning overlapping alien, simulation, and disposition hypotheses without double counting.",
+            "Perfect goodness need not determine one exact universe; it need only supply a stable reason favoring some worlds containing conscious goods, relationships, agency, and moral opportunity.",
+            "Priors should reflect description length, coherence, ontological commitments, and partition invariance together, preventing either numerous redescriptions or one broad label from manufacturing probability mass.",
+            "Simulation and alien hypotheses receive credit only for their net likelihood after accounting for the physical conditions their base realities require and the independent specificity of their agents' intentions."
+          ],
+          "conclusion": "If robust fine-tuning remains substantially likelier under the specified goodness-guided theistic model than under the weighted naturalistic family, it provides meaningful but revisable evidence for theism."
+        },
+        "newArguments": [
+          {
+            "title": "Cross-model robustness filter",
+            "text": "Before calculating any religious significance, test whether the alleged life-permitting sensitivity appears across multiple empirically adequate physical formulations and reasonable parameterizations. A pattern that disappears after theoretical reform should carry little weight; a pattern recurring across otherwise competitive models is harder to dismiss as formal bookkeeping. This filter makes the theistic argument more conservative, because it discards fragile examples, yet potentially strengthens the remaining evidence by answering the objection that fine-tuning belongs only to a defective theory."
+          },
+          {
+            "title": "Partition-invariant confirmation",
+            "text": "A fair comparison should change little when equivalent hypotheses are redescribed as one broad family or many narrow members. Assign priors through a common complexity language, merge overlapping alternatives, and calculate the naturalistic family likelihood from mutually exclusive components. Then compare that aggregate with a similarly specified theistic model. This approach preserves Malpass's legitimate aggregation demand while blocking arbitrary proliferation, and it gives Donahue a principled route to defend confirmation without claiming that theism must individually outperform every logically imaginable naturalistic refinement."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that fine-tuning does not presently provide strong evidence for God because uncertainty about the datum, model partition, priors, and divine choice prevents a stable likelihood advantage.",
+          "premises": [
+            "Only fine-tuning claims robust across empirically adequate theories and parameterizations qualify as stable evidence; theory-relative sensitivity should instead motivate physical model revision.",
+            "The relevant naturalistic comparator is a mutually exclusive, probability-weighted family containing physical necessity, selection effects, simulation, agency, and other admissible single-universe mechanisms.",
+            "Perfect goodness may constrain divine action without selecting embodied moral agents, these constants, this scale, or any sufficiently narrow class of life-permitting outcomes.",
+            "Neither counting disjuncts nor invoking coherence settles prior probability; the comparison requires a shared complexity scheme sensitive to ontology, structure, and redescription.",
+            "Compatibility alone does not erase evidence, but flexible alternatives can weaken confirmation when their aggregate prior-weighted likelihood approaches the likelihood assigned by a broadly specified theism."
+          ],
+          "conclusion": "Until robust fine-tuning, hypothesis-family weights, and a constrained divine likelihood are jointly established, the evidence supports caution rather than a claim of strong theistic confirmation."
+        },
+        "newArguments": [
+          {
+            "title": "Robustness before explanation",
+            "text": "Explanatory competition should begin only after establishing that the target phenomenon survives changes in physical theory, parameterization, and choice of probability measure. If reasonable formulations relocate or dissolve the sensitivity, assigning it a tiny naturalistic likelihood is premature. This does not assume that every fine-tuning claim is defective; it creates a graduated evidential scale. Stable cross-theory cases receive serious attention, while formulation-dependent cases mainly support further physics. The resulting skepticism is empirical and revisable rather than dependent upon unrestricted speculative alternatives."
+          },
+          {
+            "title": "Divine choice entropy",
+            "text": "Even if perfect goodness favors valuable creation, many radically different worlds may realize comparable value: embodied or non-embodied minds, different laws, different constants, or no created universe if creation is optional. The relevant theistic likelihood therefore depends on how probability is distributed across a vast goodness-compatible choice set. Unless a principled account concentrates appreciable mass on life-permitting physical universes of the observed kind, goodness alone may yield only a diffuse prediction. This strengthens the divine-psychology objection without claiming that goodness contributes no predictive constraint whatsoever."
           }
         ]
       }
@@ -32095,327 +32145,397 @@ export const debates = [
     }
   },
   {
-    id: "sechler-dillahunty-perfect-mind-universe-2022",
-    number: "88",
-    title:
-      "Zac Sechler vs Matt Dillahunty: Did a Perfect Mind Create the Universe?",
-    label: "Perfect mind and explanatory power",
-    topicCategory: "god-theism-atheism",
-    date: "2026-06-24",
-    duration: "1 hr 32 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=FUPOouj5jNg",
-    motion:
-      "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
-    summary:
-      "Sechler argues perfect-mind theism is simpler and explains key features of experience; Dillahunty argues the terms, detection method, and explanatory bridge are missing.",
-    sourceNote:
-      "Based on YouTube captions for the Theology Unleashed upload. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "a perfect mind created the universe",
-        context:
-          "Sechler's core claim is that theism, defined as a perfect mind creating the universe, is the best high-level explanation."
+    "id": "sechler-dillahunty-perfect-mind-universe-2022",
+    "number": "88",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Zac Sechler vs Matt Dillahunty: Did a Perfect Mind Create the Universe?",
+    "label": "Perfect mind and explanatory power",
+    "date": "2026-08-24",
+    "duration": "1 hr 32 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FUPOouj5jNg",
+    "motion": "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a5be58d0749c2b8a88f113c19c59c66879e936e8ce7b25aa63aac9f5767e4e99). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Sechler presents a cumulative perfect-mind inference; Dillahunty answers that unspecified hypotheses, missing likelihood baselines, hiddenness, and rival agent explanations limit its force.",
+    "quotes": {
+      "pro": {
+        "text": "there is some evidence for God because of moral agents",
+        "context": "Sechler narrows the moral-agent argument to a limited positive contribution while expressly allowing substantial contrary evidence."
       },
-      con: {
-        text: "how do we know that a perfect mind is even possible?",
-        context:
-          "Dillahunty's central pressure is that the key explanatory term needs definition, detection, and support before it can explain the universe."
+      "con": {
+        "text": "I need a more specific theism",
+        "context": "Dillahunty argues that generic perfect-mind theism lacks enough intentional detail to generate the asserted comparative likelihood."
       }
     },
-    sides: {
-      pro: {
-        name: "Perfect-mind theism",
-        speaker: "Zac Sechler",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Perfect-mind theism",
+        "speaker": "Zac Sechler",
+        "color": "teal"
       },
-      con: {
-        name: "Evidential skepticism",
-        speaker: "Matt Dillahunty",
-        color: "coral"
+      "con": {
+        "name": "Evidential skepticism",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 71,
-      con: 86
+    "score": {
+      "pro": 79,
+      "con": 83
     },
-    sections: [
+    "sections": [
       {
-        title: "Opening Hypotheses",
-        timebox: "2:21-20:00",
-        score: {
-          pro: 74,
-          con: 86
+        "sectionId": "section-creator-coherence-burden",
+        "title": "Perfect-Mind Coherence, Identification, and Causal Burden",
+        "timebox": "12:35–61:47",
+        "score": {
+          "pro": 80,
+          "con": 88
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "3:28",
-              role: "Theistic hypothesis",
-              words:
-                "Sechler defines God as a perfect mind creating the universe, then argues theism is simpler and has more explanatory power than atheism.",
-              score: 74,
-              critique:
-                "Sechler's opening is clear about method: he is not offering a knockdown syllogism, but a comparative hypothesis. That helps because the motion asks about a perfect mind, not merely generic God-talk. The simplicity/explanatory-power pairing is also a real philosophical strategy, and defining 'atheism' for the argument prevents some avoidable drift. The weakness is that the opening treats perfection as a compact foundation before showing that perfection, mind, and creation are individually coherent and jointly explanatory. Calling theism simpler because it has one foundational commitment risks counting words rather than commitments. The score is mixed-solid because the framework is intelligible, but the key explanatory term remains under-defended.",
-              tags: [
-                {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "Perfection is introduced as the simplifying foundation before its explanatory status is established."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-rival-origin-comparison",
+              "time": "25:32",
+              "role": "Major direct reply",
+              "words": "Perfect, imperfect, evil, and mindless origins can be compared through theoretical virtues, though imperfect creators allegedly carry additional complexity.",
+              "score": 78,
+              "critique": "Strongest feature: The reply appropriately reframes inaccessible origins as competing theories assessable through simplicity and explanatory fit, thereby contacting identification, underdetermination, and unnecessary-multiplication objections together. Principal limitation: It largely asserts that imperfection incurs complexity without defining the relevant metric, explaining why perfection is informationally cheaper, or applying common criteria across every rival. Live burden: The comparative strategy therefore needs transparent theoretical virtues, independently justified weighting, and concrete demonstrations that perfect mentality predicts observations more economically than imperfect, evil, mindless, or naturalistic alternatives. Locked score: The strong band reflects broad responsiveness, probabilistic restraint, and a legitimate theory-choice framework, while acknowledging unstable complexity terminology and missing derivation at exactly the point where the perfect-mind hypothesis is supposed to outperform neighboring explanations.",
+              "tags": []
             },
-            con: {
-              time: "12:11",
-              role: "Definition burden",
-              words:
-                "Dillahunty asks what a perfect mind is, how it could be identified, and whether a perfect being can create imperfection.",
-              score: 86,
-              critique:
-                "Dillahunty's opening response targets the exact burden created by the motion. Rather than objecting to God in general, he asks how one identifies a perfect mind, distinguishes it from an almost perfect or imperfect mind, and infers its product from the universe we observe. The pool-hustler analogy is useful because it challenges the casual assumption that a perfect agent can intentionally make an imperfect world just as imperfect agents can underperform. The limitation is that he does not supply his own positive account of the universe, but he does not need one at this stage. The score is high because the critique makes the central predicate do real work.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-creator-identification-causal-burden",
+              "time": "12:35",
+              "role": "Load-bearing constructive",
+              "words": "Without usable definitions or an identification mechanism, the proponent must establish a perfect mind's possibility, creative capacity, and responsibility for this universe.",
+              "score": 89,
+              "critique": "Strongest feature: The challenge precisely decomposes the creator inference into possibility, identification, creative capacity, and causal responsibility, then explains why observational resemblance alone cannot complete those indispensable inferential transitions. Principal limitation: Its emphasis on an identification mechanism can sound more detection-oriented than comparative abduction necessarily requires, because hypotheses sometimes receive support without direct causal observation. Live burden: The skeptical case must therefore preserve its sharper point: even qualitative comparison requires sufficiently specified rivals, principled expectation-generating connections, and evidence discriminating a perfect creator from neighboring causal candidates. Locked score: The very strong band reflects exceptionally direct burden contact, stable terminology, calibrated necessity, charitable engagement with an abductive interpretation, and a clearly articulated defeating consequence, notwithstanding the remaining ambiguity about how mechanistic identification should operate.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-top-down-worldview-method",
+              "time": "61:02",
+              "role": "Major direct reply",
+              "words": "Perfect-mind theism should be judged as a top-down worldview by its overall experiential fit against competing comprehensive theories.",
+              "score": 82,
+              "critique": "Strongest feature: The methodological reframe legitimately presents perfect-mind theism as a top-down worldview and proposes comparative overall fit rather than demanding isolated bottom-up mechanisms for every observation. Principal limitation: Overall fit remains asserted without operational criteria, dependency controls, rival specifications, or intelligible connections between perfect mentality and the diverse phenomena supposedly unified. Live burden: The approach must demonstrate that worldview-level assessment preserves discriminating warrants and does not permit flexible accommodation of any observation through unspecified intentions. Locked score: The strong band recognizes a clear, qualified, broadly responsive alternative methodology and the explicit retreat from claiming explanation of literally everything, while reserving higher standing because superior global fit remains insufficiently measured, connected, and comparatively demonstrated.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-single-universe-origin-underdetermination",
+              "time": "16:26",
+              "role": "Supporting constructive",
+              "words": "One observed universe cannot by itself distinguish a perfect creator from natural origins, imperfect creators, or other inaccessible causes beyond spacetime.",
+              "score": 87,
+              "critique": "Strongest feature: The objection sharply identifies underdetermination among perfect, imperfect, mindless, and natural origins, connecting restricted observational access to the specific identification demanded by the motion. Principal limitation: Movement from limited investigation toward practical inability occasionally overstates the epistemic consequence, since a single universe could discriminate hypotheses through independently justified likelihood relations. Live burden: The skeptical argument must consequently target absent specifications and unsupported likelihoods, rather than treating repeated universes or direct access beyond spacetime as universally necessary conditions for rational comparison. Locked score: The very strong band reflects excellent relevance, clarity, responsiveness, charitable recognition of abductive alternatives, and disciplined qualification, while reserving some distance because observational uniqueness alone does not establish complete evidential parity among every origin hypothesis.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Agents and Moral Knowledge",
-        timebox: "7:28-35:00",
-        score: {
-          pro: 72,
-          con: 85
+        "sectionId": "section-simplicity-foundations",
+        "title": "Foundational Commitments and Comparative Simplicity",
+        "timebox": "4:24–43:08",
+        "score": {
+          "pro": 75,
+          "con": 77
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "7:28",
-              role: "Moral-agent evidence",
-              words:
-                "Sechler says embodied conscious moral agents, accurate moral knowledge, beauty, freedom, theistic belief, fine-tuning, meaning, and purpose are more expected on theism.",
-              score: 72,
-              critique:
-                "Sechler's evidence list is relevant because it names actual features many theists find significant: conscious agency, moral judgment, beauty, freedom, fine-tuning, and meaning. He also avoids the crude claim that atheism cannot explain any of them, instead arguing that they are more expected on perfect-mind theism. That is a better and more modest form. The weakness is that the list is asserted faster than it is defended. Beauty and meaning are partly observer-relative, moral knowledge is disputed, and fine-tuning needs technical argument. The score is moderate because the evidence categories are serious, but the live case does not yet justify the likelihood comparisons it needs.",
-              tags: [
-                {
-                  label: "Confirmation bias",
-                  type: "bias",
-                  url: bias("confirmation-bias"),
-                  context:
-                    "The selected features are congenial to theism, while contrary expected features are deferred rather than integrated."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-foundational-simplicity",
+              "time": "4:24",
+              "role": "Load-bearing constructive",
+              "words": "A perfect foundational mind may be simpler than an atheistic foundation because perfection excludes arbitrary limits and brute geometric commitments.",
+              "score": 74,
+              "critique": "Strongest feature: The proposal directly establishes a foundational comparison, presenting perfect mentality as theoretically economical because arbitrary limitations and unexplained geometrical commitments allegedly disappear from the ultimate explanatory basis. Principal limitation: Perfection, arbitrariness, limitation, and geometrical commitment remain insufficiently differentiated, while the argument never systematically inventories the corresponding commitments of representative non-theistic foundations. Live burden: The comparison therefore requires independently motivated complexity criteria, explicit rival specifications, and a demonstration that unlimited mentality compresses explanatory information instead of concealing additional intentional structure. Locked score: The mixed band reflects substantial relevance, intelligible probabilistic qualification, and a recoverable simplicity thesis, alongside underdeveloped comparative warrant and significant terminological instability that prevent the claimed advantage from becoming decisively established.",
+              "tags": []
             },
-            con: {
-              time: "20:20",
-              role: "Agent sufficiency",
-              words:
-                "Dillahunty says agents interacting already explains moral opinions, beauty judgments, meaning, purpose, theistic beliefs, and apparent fit to the world.",
-              score: 85,
-              critique:
-                "Dillahunty's agent-sufficiency response is strong because it offers a parsimonious alternative to Sechler's evidence list. If thinking agents evolved within an environment, they would naturally develop moral practices for interaction, aesthetic responses to a livable world, meaning projects, and even mistaken religious explanations. That does not disprove theism, but it blocks the claim that these features obviously lean toward a perfect mind. His best line is that we may be tuned to the world rather than the world tuned for us. The weakness is that he compresses fine-tuning and consciousness into general agent-talk more quickly than those topics deserve. The score is high because the rebuttal directly reduces the explanatory advantage claimed.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-agents-without-theistic-multiplication",
+              "time": "19:50",
+              "role": "Major direct reply",
+              "words": "Theism adds an unnecessary entity, while interacting and adapted agents can account for morality, beauty judgments, belief, meaning, and purpose.",
+              "score": 77,
+              "critique": "Strongest feature: The reply directly confronts both constructive pillars by linking parsimony to unnecessary multiplication and offering interacting agents as a concrete alternative source of moral and evaluative phenomena. Principal limitation: The categorical denial of any theistic explanatory power substantially outruns the abbreviated support, while the agent account is announced across a wider observational package than it actually develops. Live burden: The response must compare description length, auxiliary commitments, ultimate foundations, and phenomenon-specific explanatory success rather than assuming that entity counting or proximate agency automatically settles theoretical simplicity. Locked score: The strong band recognizes excellent responsiveness, clear relevance, and a useful rival framework, but also records material overstatement, compressed scope, and incomplete demonstration that agent-centered explanations cover fine-tuning, consciousness, or foundational existence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-competing-foundations",
+              "time": "42:12",
+              "role": "Major direct reply",
+              "words": "Rejecting gods leaves foundational existence unexplained, so theism and non-theism should be compared as rival accounts rather than treating God as an isolated addition.",
+              "score": 75,
+              "critique": "Strongest feature: The reply usefully challenges the picture of theism as an optional attachment to an otherwise complete ontology, insisting that both positions confront foundational existence and comparative explanation. Principal limitation: It does not identify representative non-theistic foundations, establish that every such view carries equivalent commitments, or supply the promised reason that perfect mentality explains existence better. Live burden: The comparison must evaluate explicit rivals under shared explanatory criteria and avoid assigning one unsupported brute foundation to the entire heterogeneous category of non-theism. Locked score: The strong band acknowledges clear framing, appropriate modesty, direct contact with the multiplication objection, and considerable foundational relevance, while reflecting partial responsiveness and the absence of a developed superiority argument or adequately specified alternative.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-hidden-omnipotent-box-complexity",
+              "time": "26:25",
+              "role": "Major direct reply",
+              "words": "A hidden cause able to accommodate anything is not thereby simple and lacks distinctive predictions about phenomena such as observer-relative beauty.",
+              "score": 76,
+              "critique": "Strongest feature: The objection forcefully distinguishes hiddenness from simplicity and connects unrestricted causal accommodation to weak predictive discrimination, directly challenging both theoretical economy and observational fit. Principal limitation: The magical-box analogy conflates maximal power, descriptional complexity, testability, and unspecified intention, so it does not fully represent the strongest claim that a perfect mind could have compact essential properties. Live burden: The response should measure hypothesis complexity independently of rhetorical unfamiliarity and show how unspecified intentions permit incompatible outcomes without converting omnipotence itself into informational extravagance. Locked score: The strong band credits direct engagement, memorable diagnostic force, and meaningful pressure on predictive distinctiveness, while reflecting categorical complexity language, imperfect representational charity, and the absence of an explicit metric connecting unrestricted capacity with comparative theoretical cost.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Evidence and Explanation",
-        timebox: "25:00-45:00",
-        score: {
-          pro: 69,
-          con: 88
+        "sectionId": "section-likelihood-method",
+        "title": "Comparative Likelihood and Evidential Method",
+        "timebox": "36:24–71:26",
+        "score": {
+          "pro": 83,
+          "con": 88
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "30:05",
-              role: "Likelihood chip",
-              words:
-                "Sechler says moral agents give at least some evidence for God because they are more likely if a morally perfect being wants them.",
-              score: 69,
-              critique:
-                "Sechler's 'evidential chip' move is logically recognizable: if a fact is more likely on one hypothesis than on a rival, it counts in that hypothesis's favor. This is a legitimate Bayesian-style intuition, and he is right that evidence can be incremental rather than decisive. The weakness is in the conditional. He repeatedly moves from 'if a perfect being wants moral agents, moral agents are expected' to 'moral agents support a perfect being,' but the wanting is itself a substantive addition to the hypothesis. The argument also brackets contrary expectations such as hiddenness and moral disagreement. The score is mixed because the evidential form is valid in principle, but the live application is too under-specified.",
-              tags: [
-                {
-                  label: "Special pleading",
-                  type: "fallacy",
-                  url: fallacy("special-pleading"),
-                  context:
-                    "The argument adds God wanting moral agents while treating that expectation as if it came free with perfect-mind theism."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-comparative-rational-standard",
+              "time": "46:25",
+              "role": "Major direct reply",
+              "words": "Rational preference need not await proof if theism makes observations more expected and offers greater simplicity than its competitors.",
+              "score": 89,
+              "critique": "Strongest feature: The reframe correctly separates rational comparative preference from conclusive demonstration and explicitly conditions its conclusion on greater expectedness together with comparative simplicity. Principal limitation: Because those two premises are precisely the disputed propositions, the conditional standard organizes the argument without independently establishing that its antecedent conditions obtain. Live burden: The proponent must retain this proportionate epistemic standard while supplying hypothesis specifications, likelihood connections, complexity criteria, and rival comparisons sufficient to justify actual preference. Locked score: The very strong band reflects exceptional clarity, calibration, logical coherence, and responsiveness to an excessively demanding conception of proof, while recognizing that methodological legitimacy cannot substitute for the substantive evidence required to activate the proposed rational standard.",
+              "tags": []
             },
-            con: {
-              time: "35:05",
-              role: "Butler analogy",
-              words:
-                "Dillahunty says a dead body is consistent with the butler hypothesis, but consistency is not evidence that the butler did it.",
-              score: 88,
-              critique:
-                "Dillahunty's butler analogy is the cleanest argumentative moment in the exchange. It distinguishes a fact needing explanation from evidence that specifically favors one explanation. A dead body is compatible with the butler's guilt, but it does not point to the butler without a link that is more exclusive or discriminating. Applied to theism, moral agents and beauty may be compatible with a perfect mind, but compatibility is weaker than confirmation. The critique lands because Sechler's case often sounds like likelihood language without a demonstrated likelihood ratio. The weakness is that Dillahunty can sound too dismissive of cumulative probabilistic evidence in general. Still, the score is very high because the distinction is central.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-unspecified-likelihood-comparison",
+              "time": "36:24",
+              "role": "Load-bearing constructive",
+              "words": "Generic perfect-mind theism yields no assessable moral-agent probability without specified divine intentions and a justified non-theistic comparison class.",
+              "score": 90,
+              "critique": "Strongest feature: The objection isolates both indispensable sides of the likelihood ratio, demanding a specified divine intentional model and a justified non-theistic baseline rather than merely disputing the observation. Principal limitation: Specification need not produce numerical probabilities, and qualitative theoretical considerations may sometimes support comparative expectations without frequencies or exhaustive causal models. Live burden: The skeptic should therefore require defensible expectation-generating assumptions and appropriately bounded rivals while allowing principled qualitative comparison when direct estimation is unavailable. Locked score: The very strong band reflects outstanding precision, calibration, central burden contact, responsiveness, and charitable formulation of the methodological requirement, with only limited qualification needed concerning how much formal modeling rational comparative support must contain.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-differential-expectedness",
+              "time": "67:01",
+              "role": "Major direct reply",
+              "words": "Facts can support theism when more probable under it than under atheism, even though both hypotheses remain logically compatible with those facts.",
+              "score": 77,
+              "critique": "Strongest feature: The reply accurately states the governing evidential principle that an observation can favor one compatible hypothesis over another whenever their conditional expectations differ. Principal limitation: Correctly describing the likelihood relation does not establish its application, because the relevant theistic intentions, non-theistic baseline, observations, and comparative probabilities remain unsupported. Live burden: The proponent must move from formal possibility to defended inequalities through explicit models, qualitative expectation-generating reasons, and careful treatment of dependence within the observational package. Locked score: The strong band rewards logical clarity, central relevance, and meaningful answers to compatibility and underdetermination objections, while reflecting partial responsiveness and the decisive omission of evidence showing that the claimed differential expectedness actually favors theism.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-no-modeled-nontheistic-probability",
+              "time": "70:26",
+              "role": "Load-bearing constructive",
+              "words": "The claimed likelihood advantage lacks support because no non-theistic agent model or justified comparative baseline was actually examined.",
+              "score": 86,
+              "critique": "Strongest feature: The objection directly identifies the missing denominator in the comparative argument and explains why asserting greater agent probability requires some characterized non-theistic alternative rather than compatibility claims alone. Principal limitation: Saying the observed event has probability one confuses known actuality with antecedent chance, while the absence of multiple universes does not itself preclude qualitative likelihood comparison. Live burden: The skeptical argument should center on unsupported models and expectation-generating assumptions, expressly allowing non-frequency reasoning when sufficiently specified theories justify it. Locked score: The very strong band reflects exceptional responsiveness, precision, relevance, and a decisive diagnosis affecting several pro moves, with a modest reservation for the actuality-probability conflation and the overstated suggestion that comparative universes are methodologically required.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Demonstration and Presuppositions",
-        timebox: "45:00-1:10:00",
-        score: {
-          pro: 68,
-          con: 87
+        "sectionId": "section-explanatory-fit",
+        "title": "Explanatory Power and Rival Accounts of Observed Features",
+        "timebox": "6:55–90:20",
+        "score": {
+          "pro": 78,
+          "con": 78
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "50:58",
-              role: "Other-minds comparison",
-              words:
-                "Sechler asks whether belief in other minds also lacks demonstration, suggesting God need not be demonstrated to be rationally believed.",
-              score: 68,
-              critique:
-                "Sechler's other-minds comparison is a fair attempt to show that rational life includes beliefs not derived from strict proof. Dillahunty grants that hard solipsism has no tidy refutation, so the question exposes a real limit in demands for demonstration. The weakness is that the analogy cuts less deeply than Sechler needs. Belief in other minds is practically unavoidable, constantly reinforced by interaction, and embedded in shared prediction; belief in a perfect creator is not required for ordinary agency in the same way. The move therefore weakens an overstrict evidentialism, but it does not establish Sechler's positive hypothesis. The score is mixed because it finds a pressure point but overextends the comparison.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "The argument treats practical presupposition and optional metaphysical explanation as if they had the same epistemic role."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-cumulative-observational-fit",
+              "time": "6:55",
+              "role": "Load-bearing constructive",
+              "words": "Moral agency, beauty, theistic belief, fine-tuning, meaning, and purpose collectively appear more expected under theism than under non-theism.",
+              "score": 74,
+              "critique": "Strongest feature: The cumulative formulation gives the constructive case considerable breadth, explicitly treating morality, beauty, belief, fine-tuning, meaning, and purpose as mutually reinforcing observations rather than individually conclusive demonstrations. Principal limitation: The compressed enumeration never sufficiently specifies generic theism, representative non-theistic alternatives, evidential independence, or the conditional likelihood associated with each heterogeneous observation. Live burden: The argument consequently needs separately defended expectation-generating connections, careful dependence analysis, and an articulated comparison class before aggregation can legitimately strengthen the proposed inference. Locked score: The mixed band recognizes a coherent, relevant, appropriately probabilistic cumulative strategy with acknowledged compatibility under atheism, while reflecting limited evidential development, unstable comparative scope, and insufficient support for the several likelihood inequalities doing the argumentative work.",
+              "tags": []
             },
-            con: {
-              time: "1:00:15",
-              role: "Explanation demand",
-              words:
-                "Dillahunty says appealing to God adds no new understanding unless it explains how or why, rather than naming a mystery behind the data.",
-              score: 87,
-              critique:
-                "Dillahunty's explanation demand is powerful because it separates psychological satisfaction from explanatory gain. Saying 'God did it' or 'a perfect mind did it' does not clarify mechanism, constraints, intention, or prediction unless the hypothesis yields more than a label. His engine analogy works: naming an engine helps only if one can say what an engine is and how it operates. That directly answers Sechler's claim that theism has explanatory power. The limitation is that not every good explanation must be mechanistic in the scientific sense; personal explanations can be real. But Dillahunty is right that a personal explanation still needs content. The score is high because he keeps explanation from becoming a placeholder.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-explanation-requires-understood-mechanism",
+              "time": "59:14",
+              "role": "Diagnostic challenge",
+              "words": "Invoking an undefined supernatural mind does not increase understanding unless it supplies constraining connections, predictions, or a better-understood explanatory mechanism.",
+              "score": 77,
+              "critique": "Strongest feature: The challenge identifies an important explanatory danger: naming an undefined supernatural cause can relocate ignorance without adding constraints, connections, predictions, or independently testable understanding. Principal limitation: The universal suggestion that explanations must invoke mechanisms better understood than their targets is excessively restrictive, because legitimate theoretical posits may initially be unfamiliar yet systematically explanatory. Live burden: The skeptic should demand comparative understanding gains, constrained consequences, and intelligible links rather than making prior familiarity or fully specified mechanism an absolute prerequisite. Locked score: The strong band credits a relevant and forceful diagnostic objection with substantial contact against unexplained causal labeling, while reflecting overbroad methodological language and incomplete recognition that top-down, unobservable, or less familiar theories can nevertheless improve explanation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-moral-agent-expectedness",
+              "time": "29:26",
+              "role": "Supporting constructive",
+              "words": "Embodied conscious moral agents appear more probable if reality originates in a morally perfect mind than if fundamental reality is indifferent.",
+              "score": 81,
+              "critique": "Strongest feature: The argument supplies an intelligible attribute-to-observation bridge, connecting moral perfection with the expected production of embodied conscious agents and answering the complaint that theism generates no predictions. Principal limitation: It leaves divine intentions, embodiment, alternative goods, and the supposedly indifferent comparison model underspecified, so plausibility of direction substitutes for an actual comparative likelihood analysis. Live burden: The proponent must explain why moral perfection motivates creating agents like these, incorporate contrary moral evidence, and characterize non-theistic foundations without defining them merely through indifference. Locked score: The strong band reflects clear formulation, central relevance, substantial responsiveness, and a plausible comparative intuition, while withholding higher placement because the intentional model, baseline probability, and broader consequences of moral perfection remain insufficiently developed.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-agent-interaction-fallibility-account",
+              "time": "89:27",
+              "role": "Major direct reply",
+              "words": "Interacting agents generate moral regulation, while fallible minds predictably develop perfect-being hypotheses and ideas about fine-tuning, meaning, and purpose.",
+              "score": 79,
+              "critique": "Strongest feature: The response supplies a concrete proximate alternative in which shared space generates interpersonal regulation and fallible cognition generates perfect-being, fine-tuning, meaning, and purpose concepts. Principal limitation: The account explains practices and belief formation more readily than consciousness, agent existence, cosmic parameters, or ultimate origins, while its broader extension remains asserted rather than demonstrated. Live burden: The skeptical side must distinguish explaining observations from explaining beliefs about them and show how a complete non-theistic framework compares with a perfect-mind foundation. Locked score: The strong band recognizes clear relevance, substantial responsiveness, and plausible naturalistic mechanisms that reduce distinctive theistic support, while reflecting incomplete scope, modest overstatement, and the concession that proximate agent explanations do not independently exclude a theistic ultimate cause.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Perfection and Hiddenness",
-        timebox: "1:15:00-1:31:45",
-        score: {
-          pro: 70,
-          con: 84
+        "sectionId": "section-counterevidence-expectations",
+        "title": "Divine Attributes, Hiddenness, and Contrary Expectations",
+        "timebox": "31:55–87:12",
+        "score": {
+          "pro": 77,
+          "con": 84
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "1:17:55",
-              role: "Perfection answer",
-              words:
-                "Sechler says perfection is a fundamental feature connected to goodness, truth, and honesty, though he cannot fully grasp it.",
-              score: 70,
-              critique:
-                "Sechler's Q&A answer about perfection is honest and modest. He does not pretend to possess a complete analysis of perfection, and grounding it in goodness, truth, and honesty gives listeners some orientation. That humility is a strength in a debate where overdefinition would be easy. The weakness is that the motion depends heavily on this term. If perfection is both fundamental and only loosely grasped, then its role in identifying the universe's creator remains unclear. The answer can support religious orientation, but it does not answer Dillahunty's detection challenge. The score is moderate because the reply is philosophically plausible as a starting point, but too thin for the evidential burden.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-counterevidence-increment",
+              "time": "33:01",
+              "role": "Major direct reply",
+              "words": "Even granting suffering, hiddenness, disagreement, and moral change, moral agents may still contribute a small evidential increment toward a perfect mind.",
+              "score": 82,
+              "critique": "Strongest feature: The reply makes an important evidential distinction, expressly conceding suffering, hiddenness, disagreement, and moral change while limiting moral agency to a potentially tiny positive contribution. Principal limitation: Concession and modesty prevent overclaiming but do not demonstrate the necessary likelihood inequality, specify the competing hypotheses, or establish the observation's independence from the acknowledged counterevidence. Live burden: The proponent must calculate or qualitatively justify the local comparison, explain evidential dependence, and avoid implying that one positive increment determines either the total moral profile or worldview balance. Locked score: The strong band rewards excellent calibration, substantial responsiveness, explicit counterevidence recognition, and a logically coherent local claim, while preserving significant reservations about comparative modeling and the unproven direction of the proposed increment.",
+              "tags": []
             },
-            con: {
-              time: "1:25:15",
-              role: "Hiddenness close",
-              words:
-                "Dillahunty says a morally good God should provide convincing arguments, compelling evidence, and clear expectations if belief matters.",
-              score: 84,
-              critique:
-                "Dillahunty's hiddenness close broadens the debate in a relevant way. If a perfect mind is morally good and belief or alignment matters, then widespread sincere nonbelief and moral disagreement are not side issues; they are data any perfect-mind hypothesis must absorb. His line that Sechler's God becomes useless if nothing follows from belief is sharp because it exposes an ambiguity: is this only an origin hypothesis, or a religiously significant God? The weakness is that Sechler could answer by making belief less central or by appealing to goods of seeking, which he gestures toward. The score is strong because Dillahunty turns the perfection claim into testable expectations.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-full-moral-evidential-profile",
+              "time": "31:55",
+              "role": "Major direct reply",
+              "words": "Moral-agent evidence must be weighed with disagreement, changing moral views, hiddenness, suffering, and the absence of corrective divine guidance.",
+              "score": 87,
+              "critique": "Strongest feature: The response identifies selective evidential accounting with exceptional precision, insisting that moral agents be evaluated alongside disagreement, moral change, hiddenness, suffering, and absent corrective guidance. Principal limitation: The broader profile challenges net support but does not establish that every local contribution from moral agency vanishes, because mixed evidence can contain opposing likelihood increments. Live burden: The skeptical case must compare the complete profile under specified hypotheses, distinguish local from aggregate evidential force, and defend how strongly moral perfection predicts clearer guidance or reduced suffering. Locked score: The very strong band reflects decisive contact, excellent calibration, stable scope, charitable recognition of a possible local increment, and a clearly stated consequence for the cumulative inference, with only the quantitative balance remaining unresolved.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-hiddenness-goods",
+              "time": "85:17",
+              "role": "Supporting reply",
+              "words": "Limited divine disclosure may permit seeking, relationship, love, and communal participation if epistemic certainty is not God's overriding purpose.",
+              "score": 71,
+              "critique": "Strongest feature: The response offers specific candidate goods produced by epistemic distance, including seeking, relationship, love, and communal participation, while modestly denying that certainty must be the overriding divine objective. Principal limitation: Establishing compatibility is weaker than establishing comparative expectedness, and the argument never explains why these goods require the observed amount, distribution, persistence, or human cost of ambiguity. Live burden: The defense must compare clearer-disclosure alternatives, identify proportional tradeoffs, and show that the proposed goods cannot be secured with substantially less nonresistant uncertainty or absent guidance. Locked score: The mixed band reflects relevant contact, coherent possibility reasoning, and well-calibrated restraint, alongside incomplete responsiveness, limited evidential warrant, and an unresolved necessity-and-proportionality problem central to the hiddenness objection.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-good-god-disclosure-expectation",
+              "time": "86:00",
+              "role": "Major direct reply",
+              "words": "A morally good God should provide compelling evidence and clear guidance, whereas persistent ambiguity weakens that deity's proposed explanatory role.",
+              "score": 81,
+              "critique": "Strongest feature: The reply converts moral perfection into a concrete contrary expectation, arguing that benevolent concern should produce compelling evidence and understandable guidance rather than persistent consequential ambiguity. Principal limitation: The required strength and form of disclosure are not uniquely derived from goodness, because noncoercive relationship, epistemic development, and other candidate goods could qualify the expectation. Live burden: The skeptical case must compare disclosure levels, demonstrate preventable harms from ambiguity, and explain why clearer guidance would preserve valuable freedom while better fitting moral perfection. Locked score: The strong band reflects direct and comprehensive engagement with hiddenness, counterevidence, and moral-agent expectedness, while retaining measured reservations about unspecified degrees, competing divine aims, and the incompletely defended inference from goodness to compelling disclosure.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 71,
-        strengths: [
-          "Sechler framed the case as a comparative hypothesis, avoiding a brittle deductive proof and explicitly allowing non-theistic explanations to exist.",
-          "He identified several live philosophical data points: conscious moral agents, moral knowledge, beauty, freedom, theistic belief, fine-tuning, meaning, and purpose.",
-          "He kept the tone careful and repeatedly tried to clarify whether small pieces of evidence could rationally favor theism without settling the whole debate."
+    "overall": {
+      "pro": {
+        "score": 79,
+        "strengths": [
+          "Established a coherent comparative framework in which inaccessible origins can still be assessed through theoretical virtues rather than direct observation alone.",
+          "Correctly distinguished differential evidential support from logical incompatibility and from conclusive proof.",
+          "Conceded suffering, disagreement, hiddenness, and moral change while proportionately narrowing the moral-agent claim to a possible local increment.",
+          "Connected moral perfection to moral-agent expectedness and supplied candidate relationship goods addressing divine hiddenness."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He treated the perfect-mind hypothesis as simple before establishing that perfection, mind, and creation are coherent and discriminating explanatory commitments.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The simplicity case never supplied a stable complexity measure showing why perfection is cheaper than imperfect or non-theistic foundations.",
+            "links": []
           },
           {
-            text:
-              "His likelihood language often depended on adding divine intentions, such as wanting moral agents, that were not independently shown to follow from perfection.",
-            links: [
-              {
-                label: "Special pleading",
-                url: fallacy("special-pleading")
-              }
-            ]
+            "text": "The cumulative observational case repeatedly asserted conditional-likelihood advantages without specifying divine intentions, non-theistic baselines, or dependence among observations.",
+            "links": []
           },
           {
-            text:
-              "His selected evidence categories favored theism while hiddenness, suffering, moral disagreement, and imperfect creation were treated as later counter-chips rather than integrated into the same comparison.",
-            links: [
-              {
-                label: "Confirmation bias",
-                url: bias("confirmation-bias")
-              }
-            ]
+            "text": "The hiddenness response established possible compatibility but not why actual ambiguity is necessary or proportionate to the proposed goods.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 86,
-        strengths: [
-          "Dillahunty kept the debate locked onto the exact motion: not generic God, but a perfect mind creating the universe.",
-          "His challenges about defining, detecting, and distinguishing a perfect mind directly targeted the affirmative's central explanatory term.",
-          "The butler analogy and engine analogy clearly separated compatibility, evidence, explanation, and demonstration."
+      "con": {
+        "score": 83,
+        "strengths": [
+          "Decomposed the creator inference into possibility, identification, capacity, and causal responsibility, making the central evidential burden explicit.",
+          "Consistently pressed for specified comparison classes and expectation-generating assumptions behind the claimed likelihood inequalities.",
+          "Expanded the moral evidential profile beyond agent existence to disagreement, change, suffering, hiddenness, and absent corrective guidance.",
+          "Offered concrete agent-interaction and cognitive-fallibility accounts that reduced the observations' claimed distinctiveness under theism."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He sometimes spoke as if only highly discriminating or near-exclusive evidence counts, which risks underweighting legitimate cumulative probabilistic support.",
-            links: [
-              {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
-              }
-            ]
+            "text": "The claim that theism has no explanatory power was substantially stronger than the abbreviated agent-based support established.",
+            "links": []
           },
           {
-            text:
-              "His agent-sufficiency reply compressed consciousness, fine-tuning, and moral realism into ordinary interaction more quickly than those difficult topics allow.",
-            links: [
-              {
-                label: "Ambiguity effect",
-                url: bias("ambiguity-effect")
-              }
-            ]
+            "text": "The magical-box analogy blurred maximal power, informational complexity, testability, and unspecified intention.",
+            "links": []
           },
           {
-            text:
-              "His insistence that God adds no explanation could have distinguished more carefully between poor personal explanations and personal explanations in principle.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The single-universe probability objection conflated observed actuality with antecedent probability and overstated the need for comparative universes.",
+            "links": []
           }
         ]
       }
-    }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that a carefully specified perfect-mind hypothesis can receive modest cumulative support when it economically predicts a structured package of consciousness, moral agency, intelligibility, and purposive experience better than explicit non-theistic rivals.",
+          "premises": [
+            "Define the proposed foundation minimally as necessarily conscious, perfectly rational, morally unsurpassable, and capable of intentional creation, without importing any tradition-specific revelation or auxiliary doctrine.",
+            "Such a mind has intelligible reasons to realize finite conscious agents able to recognize reasons, form relationships, discover regularities, and undertake morally significant cooperation.",
+            "The relevant evidence should be treated as a dependency-aware package, with consciousness, rational intelligibility, moral agency, and purposive experience grouped rather than counted as independent confirmations.",
+            "Comparison should use explicit rivals, such as a brute law-governed foundation and a naturalistic cosmology with emergent agents, while including suffering, disagreement, and hiddenness as negative evidence."
+          ],
+          "conclusion": "If the specified perfect-mind model explains the dependency-adjusted positive package more economically than explicit rivals after contrary evidence is included, modest preference for that model is rationally permissible, though far from conclusive."
+        },
+        "newArguments": [
+          {
+            "title": "Unified normative intelligibility",
+            "text": "A new supporting line concerns the conjunction of rational and moral normativity. Finite agents do not merely behave; they experience some inferences as logically required and some actions as answerable to reasons that transcend immediate preference. A perfectly rational and morally perfect foundation offers a unified source for a reality in which minds can discover both descriptive order and normative standards. This does not prove that those standards are mind-independent or divine, but it creates a focused comparison: whether a purposive mental foundation or an impersonal foundation more naturally anticipates creatures responsive to both truth and moral reasons."
+          },
+          {
+            "title": "Predictive constraint through value",
+            "text": "The perfect-mind hypothesis can gain discrimination only by deriving constraints from perfection rather than treating unlimited power as permission to predict anything. Moral perfection would favor worlds containing worthwhile conscious lives, opportunities for responsible cooperation, stable regularities supporting agency, and avoidable-harm limitations, while counting severe apparently gratuitous suffering and destructive ambiguity against the model. Publishing those expectations before inspecting particular observations would make the hypothesis risk-bearing. The resulting case might lose, but it would answer the unrestricted-accommodation objection by converting divine attributes into defeasible predictions that can be compared with explicit naturalistic alternatives."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that the available observations do not presently justify preference for perfect-mind theism because its attributes, intentions, likelihoods, and complexity remain insufficiently specified relative to developed non-theistic alternatives.",
+          "premises": [
+            "A comparative explanation must specify each hypothesis sufficiently to generate constrained expectations, including how alleged perfection informs intentions, creative choices, disclosure, and permitted suffering.",
+            "Observed agents, morality, meaning, and religious concepts have substantial proximate explanations through evolution, social interaction, cultural transmission, and fallible cognitive pattern formation.",
+            "The evidential comparison must include not only favorable observations but also suffering, moral disagreement, religious diversity, nonresistant uncertainty, and inconsistent alleged guidance.",
+            "Qualitative likelihood reasoning is legitimate without multiple universes, but only when both sides provide explicit models and defensible expectation-generating assumptions instead of treating actuality as antecedent probability."
+          ],
+          "conclusion": "Until perfect-mind theism supplies constrained intentions and performs better against explicit rivals across the complete evidential profile, withholding comparative preference is warranted without claiming that the hypothesis is impossible or meaningless."
+        },
+        "newArguments": [
+          {
+            "title": "Model flexibility penalty",
+            "text": "A new skeptical argument concerns adaptive flexibility. When a hypothesis can explain moral agency through divine goodness, suffering through soul-making, hiddenness through relationship goods, and disagreement through human freedom, each new observation may be accommodated by adding another intention. That flexibility reduces evidential value unless the intentions and tradeoffs were independently specified beforehand. The relevant penalty is not that mentality is inherently complicated; it is that unconstrained auxiliary purposes can fit incompatible outcomes. A fair comparison should therefore count independently motivated predictions more heavily than explanations constructed after the observations are already known."
+          },
+          {
+            "title": "Explanatory level separation",
+            "text": "The debate often moves between ultimate origin and proximate explanation. Even if a perfect mind were the ultimate foundation, social interaction, evolution, and cognition could still explain why humans display morality, beauty judgments, religious belief, meaning, and purpose. Consequently, those observations support theism only if the ultimate hypothesis predicts the relevant proximate processes better than non-theistic foundations do. Merely showing that the observations are compatible with creation does not establish that advantage. Separating explanatory levels prevents either side from treating a successful proximate account as a complete cosmology or an ultimate proposal as an automatic explanation of every intermediate phenomenon."
+          }
+        ]
+      }
+    },
+    "topicCategory": "god-theism-atheism"
   },
   {
     id: "bignon-oppy-religious-experience-god-2022",
@@ -43704,471 +43824,410 @@ export const debates = [
     }
   },
   {
-    id: "hernandez-schieber-god-existence-2023",
-    number: "118",
-    title: "Eric Hernandez vs Justin Schieber: Does God Exist?",
-    label: "Evil, mind, and hiddenness",
-    date: "2026-07-28",
-    duration: "2 hr 18 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
-    motion:
-      "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
-    summary:
-      "Hernandez argues evil, rationality, and the soul presuppose God; Schieber argues naturalism better explains animal suffering, cosmic hostility, hiddenness, and theory simplicity.",
-    sourceNote:
-      "Based on the YouTube transcript for the Eric Hernandez upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "evil becomes an argument not against God but against atheism",
-        context:
-          "Hernandez's central strategy is to turn common atheist evidence, especially evil and rational assessment, into alleged preconditions for theism."
+    "id": "hernandez-schieber-god-existence-2023",
+    "number": "118",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Eric Hernandez vs Justin Schieber: Does God Exist?",
+    "label": "Evil, mind, and hiddenness",
+    "date": "2026-08-24",
+    "duration": "2 hr 18 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
+    "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c1aae59e4251c4458d4a8a1c1229868e90d84a4981d96156c5b925adee3f247b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Hernandez defended theistic grounds for morality, reason, and consciousness; Schieber pressed stronger naturalistic alternatives and evidential challenges from suffering, hostility, and hiddenness.",
+    "quotes": {
+      "pro": {
+        "text": "the best explanation for finite Consciousness is an ultimate Consciousness named God",
+        "context": "Hernandez concludes his comparative reply by presenting an ultimate divine consciousness as a better explanation of finite conscious subjects."
       },
-      con: {
-        text: "there was always a vegetarian option",
-        context:
-          "Schieber's vivid animal-suffering claim is that omnipotent theism had morally better creative alternatives that naturalism did not require."
+      "con": {
+        "text": "evolutionary evils visited upon sentient beings who are not moral agents",
+        "context": "Schieber identifies the nonmoral victims central to his probabilistic argument from the evolutionary history of animal suffering."
       }
     },
-    sides: {
-      pro: {
-        name: "Christian theism",
-        speaker: "Eric Hernandez",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Eric Hernandez",
+        "color": "teal"
       },
-      con: {
-        name: "Atheistic naturalism",
-        speaker: "Justin Schieber",
-        color: "coral"
+      "con": {
+        "name": "Atheistic naturalism",
+        "speaker": "Justin Schieber",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 76,
-      con: 84
+    "score": {
+      "pro": 74,
+      "con": 85
     },
-    sections: [
+    "sections": [
       {
-        title: "Opening Burdens",
-        timebox: "04:42-21:13",
-        score: {
-          pro: 76,
-          con: 82
+        "sectionId": "objective-morality-and-evil",
+        "title": "Objective Morality, Divine Grounding, and Evil",
+        "timebox": "5:36–83:57",
+        "score": {
+          "pro": 73,
+          "con": 80
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "04:42",
-              role: "Exclusion frame",
-              words:
-                "Hernandez says atheism and theism are the only live options, then argues evil, knowledge, rationality, and the soul make atheism false.",
-              score: 76,
-              critique:
-                "Hernandez's opening is organized and strategically bold. He tells the audience exactly how he plans to win: show that atheism cannot account for evil, rationality, and the soul, then infer theism as the remaining option. That gives the debate a clear burden structure and avoids wandering through every argument for God. The weakness is that the setup is brittle. Treating atheism and theism as the only live options, then using broad metaphysical claims to eliminate atheism, risks overlooking non-theistic realism, panpsychism, idealism, deism, or other intermediate positions. The score is solid because the plan is coherent, but it depends heavily on exclusions not yet earned.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-evil-requires-moral-teleology-ground",
+              "time": "5:36",
+              "role": "Load-bearing constructive",
+              "words": "Recognizing evil requires objective moral standards and natural teleology, which atheism allegedly cannot ground, whereas God supplies both foundations.",
+              "score": 74,
+              "critique": "Strongest feature: The argument directly connects the recognition of evil with objective moral standards and purposive natural order, clearly identifying a central explanatory responsibility for any competing worldview. Principal limitation: Its categorical inference leaves irreducible normative truths and nonteleological accounts insufficiently examined, while the meanings of objective authority, natural function, and evil shift across a compressed presentation. Live burden: The case must demonstrate why impersonal moral facts cannot authoritatively bind agents and why evaluating suffering as evil requires intrinsic teleology rather than interests, reasons, or flourishing. Locked score: The mixed band reflects excellent central relevance and a recoverable structure, counterbalanced by materially overstated necessity, limited comparative warrant, unstable scope, and incomplete engagement with serious nontheistic alternatives.",
+              "tags": []
             },
-            con: {
-              time: "20:37",
-              role: "Theory comparison",
-              words:
-                "Schieber says naturalism has qualitative simplicity because theism adds basic agents, novel causation, and basic powers beyond the physical world.",
-              score: 82,
-              critique:
-                "Schieber's theory-comparison opening is strong because it gives the audience a clean standard before presenting evidence. Naturalism's qualitative simplicity is not offered as a final proof; it is a prior consideration that matters if the competing explanations are otherwise close. He then links that framework to specific evidence rather than resting on a slogan. The weakness is that simplicity depends on how naturalism is filled out. Once Schieber accepts irreducible consciousness, moral realism, and perhaps proto-phenomenal properties, the simplicity advantage becomes less obvious than his first definition suggests. The score is high because the method is sound and explicit, but the ontology will need later defense.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-nontheistic-moral-realism",
+              "time": "47:53",
+              "role": "Major direct reply",
+              "words": "Irreducible normative truths can ground objective morality without God, while divine commands and divine-nature theories allegedly invite circularity or subjectivism.",
+              "score": 84,
+              "critique": "Strongest feature: The moral-realist reply supplies a positive nontheistic alternative and presses distinct concerns about divine commands, circular obligation, and grounding goodness in the nature of a particular person. Principal limitation: Calling every person-grounded account subjectivist by definition compresses the strongest essential-nature response, and the separate teleology premise from the opening argument remains substantially unanswered. Live burden: The reply must explain how irreducible normative truths possess authority while distinguishing contingent attitudes from a necessary personal essence and addressing whether moral evaluation presupposes natural purposes. Locked score: The strong band reflects decisive contact with divine necessity, stable presentation, substantial charity, and a coherent alternative, moderated by semantic overstatement, incomplete teleology contact, and limited positive grounding detail.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-personal-transcendent-moral-ground",
+              "time": "82:51",
+              "role": "Major direct reply",
+              "words": "Necessary, eternal, personal moral properties are argued to require a necessary, eternal, personal transcendent being rather than finite persons or impersonal abstractions.",
+              "score": 71,
+              "critique": "Strongest feature: The reply identifies the properties needing explanation as necessary, eternal, and personal, then proposes a necessary, eternal, personal transcendent ground rather than a bearer. Principal limitation: The inference relies heavily on resemblance between moral content and its proposed ground, without showing why personal normative truths require an ontologically personal entity or why abstractions are inadequate. Live burden: The account must explain authority and obligation noncircularly, distinguish essential goodness from preference, and demonstrate that irreducible normative facts cannot possess the relevant necessity and personal-directedness. Locked score: The mixed band reflects a clear central proposal and meaningful contact with rival grounding views, tempered by unsupported transfer from properties to bearer, incomplete response components, and materially overstated explanatory superiority.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-divine-nature-subjectivism",
+              "time": "73:48",
+              "role": "Supporting reply",
+              "words": "Grounding moral value in God's nature allegedly remains subjectivist because God is a person, making goodness dependent upon the nature of one subject.",
+              "score": 73,
+              "critique": "Strongest feature: The reply directly targets divine-nature objectivity by observing that God is a person and by asking whether alignment with one subject's nature genuinely escapes subject dependence. Principal limitation: Its ordinary-person analogy conflates contingent opinions and attitudes with a purportedly necessary, essentially good nature, making the categorical subjectivism classification semantically and metaphysically underdefended. Live burden: The objection must identify which objectionable consequences of subjectivism follow from dependence on a necessary personal essence, rather than treating every form of dependence on a subject alike. Locked score: The mixed band reflects central relevance and full contact with the grounding issue, counterbalanced by materially overstated necessity, unstable terminology, weak comparative warrant, and insufficient charity toward the essential-nature account.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Evil And Animals",
-        timebox: "05:34-41:31",
-        score: {
-          pro: 75,
-          con: 88
+        "sectionId": "knowledge-rationality-and-determination",
+        "title": "Knowledge, Rationality, and Evolutionary Determination",
+        "timebox": "10:31–58:24",
+        "score": {
+          "pro": 74,
+          "con": 85
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "05:34",
-              role: "Evil reversal",
-              words:
-                "Hernandez argues that if evil exists, objective morality and teleology exist, and these require God rather than atheism.",
-              score: 75,
-              critique:
-                "Hernandez's evil reversal is rhetorically effective because it attacks a familiar atheist argument at its presuppositional base. If evil is a real deviation from how things ought to be, then some account of objective value and proper function is needed. His disease and bad-phone examples make the point accessible. The weakness is that he moves too quickly from objective normativity and teleology to God. Non-theistic moral realism, Aristotelian natural teleology, or irreducible normative facts are not refuted merely by saying teleology implies design. The score is solid because the challenge is relevant, but lower because the God-only grounding premise carries nearly all the argumentative weight.",
-              tags: [
-                {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "The argument assumes objective morality and teleology require God before defeating non-theistic realist alternatives."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-evolutionary-defeater-for-cognition",
+              "time": "10:31",
+              "role": "Load-bearing constructive",
+              "words": "Because natural selection rewards adaptive behavior rather than truth itself, naturalism allegedly creates an undercutting defeater for trusting human cognition.",
+              "score": 74,
+              "critique": "Strongest feature: The evolutionary defeater isolates a genuine epistemological tension by distinguishing adaptive behavior from true belief and explaining how selection might preserve survival despite mistaken representations. Principal limitation: It moves too quickly from possible false adaptive beliefs to global cognitive distrust, overlooking that environmentally accurate, content-sensitive mechanisms may improve coordinated behavior across changing conditions. Live burden: The argument must establish low or inscrutable reliability conditional on evolved cognition, rather than merely showing that fitness and truth are conceptually separable or that occasional error is adaptive. Locked score: The mixed band recognizes direct contact with rational confidence and a coherent defeater structure, while reflecting overstated necessity, insufficient probabilistic support, broadened scope, and limited charity toward evolutionary reliability accounts.",
+              "tags": []
             },
-            con: {
-              time: "21:17",
-              role: "Evolutionary evil",
-              words:
-                "Schieber argues predation, parasitism, starvation, and animal suffering among non-moral agents are more expected on naturalism than on theism.",
-              score: 88,
-              critique:
-                "Schieber's evolutionary-evil argument is the strongest evidential case in the debate. He targets suffering among sentient beings who are not moral agents, so standard free-will replies lose much of their reach. His contrast is explicitly probabilistic: naturalism expects fragile, resource-dependent organisms shaped by morally blind evolutionary strategies, while omnipotent theism had many possible ways to create minded life. The weakness is that the argument depends on expectations about perfect divine goodness, and sophisticated theists can contest those expectations with theodicy or skeptical theism. Still, predation, parasitism, and privation are central rather than incidental to biological history. The score is very high because the comparison is clear, cumulative, and hard to domesticate.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-determined-rationality",
+              "time": "53:24",
+              "role": "Supporting reply",
+              "words": "Causal determination need not eliminate rationality because deterministic systems can process reasons, so a belief's causal history alone does not establish irrational acquisition.",
+              "score": 78,
+              "critique": "Strongest feature: The deterministic-computer example directly challenges incompatibility between causation and rational processing, offering an intuitive counterexample and contacting the allegation that determined beliefs cannot be responsibly acquired. Principal limitation: The analogy equivocates between reliable formal computation and the epistemic rationality of a conscious agent possessing beliefs, semantic understanding, reflective responsibility, and sensitivity to reasons. Live burden: The response must establish that deterministic personal cognition tracks reasons as reasons, rather than merely producing correct outputs through causal organization, and must answer the strongest agency-based interpretation. Locked score: The strong band reflects direct relevance, full responsive contact, and a coherent counterexample strategy, tempered by materially overstated certainty, incomplete evidential defense, unstable rationality terminology, and limited representational charity.",
+              "tags": []
             }
           },
           {
-            pro: {
-              time: "40:20",
-              role: "Theodicy menu",
-              words:
-                "Hernandez says theism predicts suffering through free will, soul-building, the fall affecting creation, resurrection, and animal restoration.",
-              score: 74,
-              critique:
-                "Hernandez's theodicy menu shows breadth and familiarity with the literature. Free will, soul-building, fall theology, resurrection, and Trent Dougherty's animal-restoration proposal are all relevant Christian resources, and he is right that theism need not answer suffering with only one device. The weakness is that listing possible theodicies does not show they predict the data better than naturalism. Animal predation, parasitism, and privation require a specific fit, not merely the general expectation that a fallen world contains bad things. Some elements, especially animal deification and retroactive embrace of suffering, are highly speculative in the exchange. The score is mixed-solid because the replies are real, but their evidential support is thin.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "Possible afterlife and fall explanations are used before their probability or fit with animal suffering is established."
-                }
-              ]
-            },
-            con: {
-              time: "24:13",
-              role: "Creative alternative",
-              words:
-                "Schieber says God was not limited to mortal metabolisms that struggle for flesh, since there was always a vegetarian option.",
-              score: 89,
-              critique:
-                "Schieber's vegetarian-option line is vivid because it compresses the divine-design problem into one clear contrast. Naturalism has no moral chooser behind biological systems; theism posits an omnipotent, compassionate chooser who could create conscious life without making some creatures survive by tearing others apart. That directly targets Eric's claim that theism predicts the relevant data at least as well. The weakness is that the phrase can sound glib unless anchored in the broader argument, since ecosystems and creaturely goods are complex. But Schieber supplies that anchor through resource dependence, biological embodiment, and non-moral-agent suffering. The score is very high because the objection stays comparative and identifies a concrete alternative theism must explain away.",
-              tags: []
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-evolutionary-cognitive-reliability",
+              "time": "54:14",
+              "role": "Major direct reply",
+              "words": "Evolution can favor broadly reliable cognition because belief content, neural mechanisms, adaptive behavior, and environmental fit are causally connected rather than independent.",
+              "score": 89,
+              "critique": "Strongest feature: The evolutionary reply directly attacks the behavior-only premise and connects belief content, neural realization, adaptive action, environmental fit, and generally reliable mechanisms without demanding cognitive infallibility. Principal limitation: The account remains programmatic and does not quantify how often fitness favors truth over useful distortion, especially for abstract, social, or metaphysical beliefs distant from immediate survival pressures. Live burden: The reply must show that sufficiently broad content-sensitive reliability is expected under evolution to defeat global inscrutability, while allowing domain-specific biases, error, and adaptive misrepresentation. Locked score: The very strong band reflects precise distinctions, calibrated probabilistic force, comprehensive diagnostic contact, excellent relevance, and charitable acknowledgment of false adaptive beliefs, with only bounded empirical and domain-general support remaining.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Knowledge And Rationality",
-        timebox: "10:31-58:25",
-        score: {
-          pro: 76,
-          con: 84
+        "sectionId": "consciousness-freedom-and-simplicity",
+        "title": "Consciousness, Freedom, and Explanatory Simplicity",
+        "timebox": "15:06–114:07",
+        "score": {
+          "pro": 74,
+          "con": 86
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "10:31",
-              role: "Reliability defeater",
-              words:
-                "Hernandez says unguided selection aims at survival rather than truth, so atheism undercuts trust in rational belief formation.",
-              score: 76,
-              critique:
-                "Hernandez's rationality argument is one of his more philosophically serious moves. The microwave-defeater analogy and Superman example make Plantinga-style worries accessible: if our faculties were selected only for survival, why assume they reliably track truth, especially in abstract metaphysics? That is a legitimate challenge for naturalists who treat cognition as purely adaptive machinery. The weakness is that the argument overstates the gap between survival and truth. Creatures navigating varied environments often benefit from accurate beliefs, and false adaptive stories may fail once they spill into broader behavior. The move also risks self-defeat if theistic belief-forming faculties show similar disagreement. The score is solid because the challenge matters, but it is not a knockout.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-soul-consciousness-libertarian-freedom",
+              "time": "15:06",
+              "role": "Load-bearing constructive",
+              "words": "An immaterial soul is presented as necessary for consciousness, libertarian freedom, moral responsibility, and intellectual integrity, making these capacities evidence for theism.",
+              "score": 66,
+              "critique": "Strongest feature: The soul argument unifies consciousness, alternative possibilities, responsibility, and intellectual integrity within a single personal-agency framework, making its intended explanatory route readily identifiable and centrally relevant. Principal limitation: It bundles several disputed necessities without defending their connecting premises, treating the absence of an immaterial soul as sufficient for eliminating consciousness, freedom, responsibility, and rational standing. Live burden: The argument must separately exclude nonreductive naturalist consciousness, compatibilist reasons-responsiveness, and responsibility grounded in stable agency, rather than assuming that every valuable capacity requires libertarian soul causation. Locked score: The mixed band reflects substantial relevance and a recoverable overarching thesis, but also radically overstated force, thin evidential warrant, unstable terminology, and inadequate engagement with established naturalistic alternatives.",
+              "tags": []
             },
-            con: {
-              time: "55:07",
-              role: "Adaptive reply",
-              words:
-                "Schieber says globally false belief-forming faculties would lose out because belief content, desires, and behavior must fit varied environments.",
-              score: 84,
-              critique:
-                "Schieber's reply is strong because it grants the local point while resisting the global defeater. A single false belief can be adaptive in a contrived case, but a faculty that regularly produces false beliefs must guide agents through many environments, social situations, food searches, and dangers. His alien-food example makes belief content relevant to behavior rather than causally idle. The weakness is that metaphysical and moral beliefs may not be under the same direct survival pressure as ordinary perceptual beliefs, and Schieber later concedes that metaphysical disagreement is widespread. Still, the reply blocks Eric's quick move from possible adaptive falsehoods to general unreliability. The score is high because it answers the mechanism of the defeater.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-consciousness-and-compatibilism",
+              "time": "51:32",
+              "role": "Major direct reply",
+              "words": "Fundamental phenomenal properties can accommodate irreducible consciousness without souls, while compatibilist reasons-responsiveness can preserve meaningful freedom and responsibility under determinism.",
+              "score": 87,
+              "critique": "Strongest feature: The response defeats a necessity claim by presenting coherent naturalistic possibilities for irreducible phenomenal properties, reasons-responsive compatibilist freedom, responsibility, and intellectual integrity without immaterial souls. Principal limitation: These alternatives are outlined rather than fully developed, leaving questions about unified subjects, phenomenal combination, semantic understanding, and the adequacy of compatibilist agency comparatively open. Live burden: The response must demonstrate that fundamental phenomenal properties can compose conscious subjects and that determined reasons-responsiveness preserves the personal responsibility and epistemic agency challenged by the soul account. Locked score: The very strong band reflects comprehensive diagnostic contact, stable distinctions, calibrated possibility claims, and excellent relevance, with remaining limitations confined mainly to evidential elaboration and unresolved metaphysical mechanisms.",
+              "tags": []
             }
           },
           {
-            pro: {
-              time: "1:41:58",
-              role: "Non-rational cause",
-              words:
-                "Hernandez says determined thoughts from non-rational physical causes give reason to doubt rationality, unlike a computer with a rational programmer.",
-              score: 73,
-              critique:
-                "Hernandez's Q&A refinement improves the argument by focusing on non-rational causes rather than mere determinism. If thought is entirely produced by blind processes, he asks, why expect rational insight instead of only causal output? The programmer contrast also explains why a deterministic computer might not threaten rationality in the same way. The weakness is that the objection may confuse a cause's being non-conscious with its products being non-rational. Mathematical calculators, neural networks, and evolved perceptual systems can instantiate rule-governed reliability without each lower-level cause being rational. The score is mixed-solid because the worry is intelligible, but it needs more than a contrast between rational and non-rational sources.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "The argument can shift between non-rational causes and irrational or unreliable cognitive outputs."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-ultimate-mind-explains-finite-consciousness",
+              "time": "113:30",
+              "role": "Major direct reply",
+              "words": "If consciousness is fundamental, an ultimate divine consciousness is presented as a better explanation and predictor of finite minds than unexplained natural mentality.",
+              "score": 81,
+              "critique": "Strongest feature: The ultimate-mind reply accepts consciousness as fundamental and shifts the dispute toward simplicity, explanatory power, and prediction, directly comparing divine consciousness with unexplained phenomenal fundamentals. Principal limitation: Calling God the best explanation remains compressed because no mechanism, independent prediction, or complexity accounting shows why an unlimited personal mind explains finite subjects better than basic mentality. Live burden: The reply must derive distinctive expectations about finite consciousness from theism and show that adding divine agency reduces explanatory cost rather than replacing one fundamental mental fact with a richer one. Locked score: The strong band reflects full responsive contact, stable comparative framing, high relevance, and recognizable explanatory criteria, tempered by slightly overstated superiority and limited supporting warrant.",
+              "tags": []
             },
-            con: {
-              time: "1:44:26",
-              role: "Metaphysics limit",
-              words:
-                "Schieber says human metaphysical belief-forming mechanisms are empirically unreliable, which is a problem for theism as well as naturalism.",
-              score: 81,
-              critique:
-                "Schieber's metaphysics-limit reply is subtle and useful. He admits that abstract metaphysical belief is a harder case for naturalistic reliability than ordinary perception, but then points to a wider datum: humans plainly disagree massively about metaphysics. That fact pressures every worldview that expects reliable access to ultimate reality, not only naturalism. The weakness is that this answer can undercut too much. If metaphysical cognition is broadly unreliable, Schieber's own naturalism, moral realism, and hiddenness judgments may also be weakened. The score is strong because it prevents Eric from isolating the problem on atheism alone, but not higher because it leaves a shared epistemic problem rather than solving the reliability issue.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-motivated-phenomenal-fundamentality",
+              "time": "69:18",
+              "role": "Supporting reply",
+              "words": "Treating phenomenal properties as fundamental is motivated by consciousness's apparent irreducibility and physics's limited description of intrinsic natures, rather than being merely ad hoc.",
+              "score": 84,
+              "critique": "Strongest feature: The response modestly argues that phenomenal fundamentality is evidentially motivated by consciousness's apparent irreducibility and by physical science's limited access to intrinsic natures, rather than merely asserted. Principal limitation: Establishing motivation does not yet provide a composition account, predictive advantage, comparative simplicity, or independent evidence that fundamental phenomenal properties yield unified finite consciousness. Live burden: The view must explain how microphenomenal or protophenomenal features combine, why their distribution produces subjects, and whether this ontology outperforms an ultimate-mind explanation rather than simply relocating mystery. Locked score: The strong band reflects stable scope, proportionate plausibility, excellent diagnostic responsiveness, and a clear subsidiary contribution, moderated by limited evidential development and its deliberately narrower explanatory ambition.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Soul And Consciousness",
-        timebox: "15:01-1:13:04",
-        score: {
-          pro: 79,
-          con: 81
+        "sectionId": "animal-suffering-and-theodicy",
+        "title": "Animal Suffering, Predation, and Theodicy",
+        "timebox": "21:17–135:06",
+        "score": {
+          "pro": 70,
+          "con": 89
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "15:01",
-              role: "Soul inference",
-              words:
-                "Hernandez argues consciousness and libertarian free will require immaterial souls, because thoughts are not identical to brain regions.",
-              score: 78,
-              critique:
-                "Hernandez's soul argument has real intuitive pull. Leibniz's-law contrasts between brain weight, spatial extension, truth value, smell, and taste help show why conscious experience is difficult to reduce to ordinary physical description. He also links libertarian agency to moral responsibility and intellectual integrity, which gives the argument existential bite. The weakness is that the conclusion moves from irreducibility to soul substance too quickly. Property dualism, panpsychism, Russellian monism, neutral monism, and emergentist views are live alternatives, and libertarian free will is asserted rather than defended against compatibilism. The score is solid because consciousness is a serious problem for crude physicalism, but the soul-and-God inference is under-argued.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "The move from hard-to-reduce consciousness to immaterial souls bypasses several non-theistic alternatives."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-theistic-account-of-animal-suffering",
+              "time": "38:22",
+              "role": "Major direct reply",
+              "words": "Theism can accommodate animal suffering through freedom, soul-building, the fall, and restoration, while naturalism faces a prior challenge concerning animal consciousness.",
+              "score": 70,
+              "critique": "Strongest feature: The response offers several theodical resources, including freedom, soul-building, the fall, restoration, and a challenge concerning how naturalism accounts for conscious animal experience. Principal limitation: Listing possible accommodations does not establish that theism predicts the ancient scale, severity, chronology, and organized predatory structure at issue, and human-centered goods are extended without necessary conditions. Live burden: The account must connect each proposed good to nonmoral animals and compare expectedness directly, rather than converting a likelihood challenge into the weaker question whether suffering can coexist with God. Locked score: The mixed band reflects central relevance and genuine explanatory contact, offset by incomplete responsiveness, materially overstated prediction, limited evidence, unstable scope, and insufficient representation of the opponent's comparative burden.",
+              "tags": []
             },
-            con: {
-              time: "51:51",
-              role: "Russellian monism",
-              words:
-                "Schieber says consciousness may be fundamental or proto-phenomenal within the intrinsic nature of physical reality, with no souls required.",
-              score: 82,
-              critique:
-                "Schieber's Russellian-monist response is strong because it does not pretend consciousness is easy. He grants irreducibility, distinguishes physics' relational description from intrinsic nature, and offers a naturalistic family of views where consciousness or proto-consciousness is basic without adding soul substances. That directly blocks Eric's forced choice between reductive physicalism and theism. The weakness is that the view is admitted to be weird and only lightly developed. Fundamental proto-phenomenal properties may preserve naturalism, but they make the simplicity advantage more complicated and need a story about combination into unified experience. The score is high because the reply identifies a serious alternative, but capped because it remains a sketch.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-animal-evolutionary-suffering",
+              "time": "21:17",
+              "role": "Load-bearing constructive",
+              "words": "Millions of years of severe suffering among nonmoral animals are argued to be more probable under indifferent naturalism than perfectly good theism.",
+              "score": 88,
+              "critique": "Strongest feature: The animal-suffering case states a precise comparative probability claim, emphasizes millions of years involving nonmoral creatures, and fairly acknowledges that theism may propose morally sufficient purposes. Principal limitation: The presentation supplies limited detail about priors, the severity distribution, and which naturalistic or theistic variants define the comparison, leaving some evidential magnitude underdeveloped. Live burden: The case must show that structured predation, deprivation, and prolonged suffering remain substantially more expected under indifferent evolution after serious systemic-law, restoration, freedom, and greater-good explanations are considered. Locked score: The very strong band reflects stable scope, proportionate probabilistic force, excellent central relevance, and charitable burden framing, with only bounded needs for fuller empirical documentation and comparative model specification.",
+              "tags": []
             }
           },
           {
-            pro: {
-              time: "1:07:55",
-              role: "Common-ground pressure",
-              words:
-                "Hernandez says if consciousness is fundamental, Christianity already has that in God's mind and explains finite consciousness better.",
-              score: 82,
-              critique:
-                "Hernandez's cross-exam pressure is one of his best live moments. Once Schieber grants irreducible consciousness and some fundamental mental aspect of reality, Eric can fairly ask why this does not lean toward a theistic mind rather than an austere naturalism. That directly attacks Schieber's simplicity advantage and exposes how non-reductive naturalism can look theism-adjacent. The weakness is that resemblance is not identity. Proto-phenomenal properties in fundamental entities are not obviously a personal, omniscient, morally perfect God, and Eric does not bridge that gap in detail. The score is high because he finds a genuine tension in Justin's ontology, but the Christian conclusion still needs more work.",
-              tags: []
-            },
-            con: {
-              time: "1:10:15",
-              role: "Inference restraint",
-              words:
-                "Schieber says irreducible consciousness and physics' limits motivate a strange monist view, but not the full theology Hernandez adds.",
-              score: 80,
-              critique:
-                "Schieber's restraint is valuable because he resists treating every non-physical-sounding posit as a runway to Christian theism. His view is motivated by two limited commitments: consciousness seems undeniable and physics may describe structure rather than intrinsic nature. From there, he says, a weird naturalistic monism may follow, but not divine personality, providence, salvation history, or Christian doctrine. The weakness is that his ontology still incurs theoretical cost, and he does not fully explain why fundamental mind-like reality should count as naturalism rather than a renamed metaphysical ultimate. The score is strong because the burden-control is fair, but Eric still succeeds in narrowing the simplicity gap.",
-              tags: []
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-fall-predation-explanation",
+              "time": "133:05",
+              "role": "Major direct reply",
+              "words": "A fall-based theodicy must cohere with prehistoric evidence and explain why bare theism predicts both a fall and the specific organization of animal predation.",
+              "score": 90,
+              "critique": "Strongest feature: The diagnostic reply separates scientific compatibility, the probability of a fall, and the probability of the specific predatory pattern, directly testing chronology and explanatory expectation. Principal limitation: The excerpt invokes modern scientific findings without documenting them in detail and leaves the relevant baseline of bare theism somewhat underdeveloped for a complete likelihood comparison. Live burden: The response must sustain its prehistoric chronology and structured-predation evidence while addressing science-compatible prehuman, angelic, representative, or nonliteral fall models rather than assuming only one formulation. Locked score: The very strong band reflects exceptional responsiveness, stable precision, matched probabilistic force, concrete central relevance, and charitable recognition of alternatives, with only bounded empirical documentation and baseline specification remaining.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Cosmos And Hiddenness",
-        timebox: "25:42-47:06",
-        score: {
-          pro: 72,
-          con: 85
+        "sectionId": "cosmic-hostility-and-habitability",
+        "title": "Cosmic Hostility, Fine-Tuning, and Habitability",
+        "timebox": "25:42–43:58",
+        "score": {
+          "pro": 83,
+          "con": 80
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "41:50",
-              role: "Fine-tuning reply",
-              words:
-                "Hernandez says cosmic hostility is his weakest argument because life itself needs fine-tuning, vast vacuum, and divine artistry.",
-              score: 74,
-              critique:
-                "Hernandez's cosmic-hostility reply is more effective than a simple 'God can do anything' answer. He points out that life-permitting conditions may require a vast, mostly empty universe, and that a creator might value beauty, discoverability, or artistic scale rather than maximizing habitable volume. That partially answers Schieber's assumption that a loving God would make most physical space hospitable. The weakness is that the reply leans on alternate values without showing they outweigh the mismatch Schieber identifies. Artistic blue in a painting is not obviously parallel to billions of lethal galaxies relative to embodied moral agents. The score is mixed-solid because the response adds context, but it does not neutralize the evidential contrast.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-fine-tuning-emptiness-and-divine-artistry",
+              "time": "41:50",
+              "role": "Supporting reply",
+              "words": "Fine-tuning, habitability-promoting emptiness, and possible divine artistry are offered to resist the claim that cosmic hostility comparatively favors naturalism.",
+              "score": 83,
+              "critique": "Strongest feature: The reply directly contests naturalistic expectations and combines fine-tuning, habitability effects, cosmic emptiness, and possible artistic purpose into a multifaceted response to the hostility argument. Principal limitation: It partly shifts from explaining the proportion of hostile space to explaining whether life arises anywhere, while the artistic-purpose proposal remains speculative and comparatively unmeasured. Live burden: The response must explain why the observed ratio of habitable to inhospitable regions is expected under purposive creation, not merely why vastness and emptiness are compatible with localized life. Locked score: The strong band reflects full contact, useful comparative criteria, coherent habitability considerations, and substantial relevance, moderated by implicit qualification, slightly overstated neutralization, and incomplete warrant for divine artistry.",
+              "tags": []
             },
-            con: {
-              time: "25:42",
-              role: "Cosmic hostility",
-              words:
-                "Schieber argues the universe is nearly everywhere hostile to fragile moral agents, exactly as naturalism predicts and surprisingly unlike value-oriented theism.",
-              score: 82,
-              critique:
-                "Schieber's cosmic-hostility argument is interesting because it shifts from biological history to spatial scale. If moral agents are the highest physical value we know, a value-oriented creator might be expected to make the physical order substantially compatible with their flourishing. Instead, almost every random location is lethal. That fits naturalism's indifference neatly. The weakness is that the inference depends on assuming God would optimize the universe for embodied moral life in the way we expect. Theists can appeal to fine-tuning, discoverability, aesthetic vastness, or other goods. The score is strong because the argument is clear and cumulative, but less powerful than the animal-suffering case overall.",
-              tags: []
-            }
-          },
-          {
-            pro: {
-              time: "44:01",
-              role: "Hiddenness defense",
-              words:
-                "Hernandez says Scripture presents God hiding himself, and hiddenness may be loving because rejected revelation increases punishment.",
-              score: 69,
-              critique:
-                "Hernandez's hiddenness defense is imaginative and theologically textured. He gives scriptural examples of divine hiding and distinguishes belief from saving relationship, which answers a simplistic version of the hiddenness argument. The strongest part is that more revelation can bring more responsibility, so hiddenness might be merciful in some resistant cases. The weakness is that the reply becomes too elastic. If hiddenness toward seekers, future converts, possible apostates, and even rejecters all count as loving, then almost any evidential pattern is made compatible with theism. It also risks portraying clearer divine availability as dangerous rather than loving. The score is below solid because the defense is possible, but it weakens predictive content.",
-              tags: [
-                {
-                  label: "Special pleading",
-                  type: "fallacy",
-                  url: fallacy("special-pleading"),
-                  context:
-                    "Hiddenness is treated as loving across many contrary cases without clear independent constraints."
-                }
-              ]
-            },
-            con: {
-              time: "29:32",
-              role: "Non-resistant unbelief",
-              words:
-                "Schieber argues perfectly loving God would provide sufficient reasons to non-resistant seekers, yet many such people lack belief.",
-              score: 87,
-              critique:
-                "Schieber's hiddenness argument is strong because it connects perfect love to relational availability rather than to mere benevolence. If God wants meaningful relationship with loved persons, then non-resistant seekers should not be unable to believe despite open eyes. His distribution point also broadens the argument from private psychology to public geography and history: monotheism spreads like other cultural ideas. The weakness is that identifying nonresistance is difficult, and theists can argue that relationship readiness involves more than conscious desire for evidence. Even so, the argument poses a clear evidential expectation for perfect-being theism. The score is very high because it combines conceptual clarity with observable distribution patterns.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-cosmic-hostility",
+              "time": "25:42",
+              "role": "Supporting constructive",
+              "words": "The universe's overwhelmingly inhospitable volume is presented as expected under naturalism but surprising if a rational, value-oriented creator prizes embodied moral agency.",
+              "score": 80,
+              "critique": "Strongest feature: The cosmic-hostility argument converts vast inhospitability into a comparative expectation, linking embodied moral agency with value potential and asking what a rational value-oriented creator would likely produce. Principal limitation: It insufficiently defends the assumption that divine value should track the fraction of habitable volume, while concepts such as value orientation and physical potential remain underdefined. Live burden: The argument must establish that alternative values including stable laws, discovery, beauty, cosmic scale, and localized habitability do not adequately explain why overwhelmingly hostile space would be chosen. Locked score: The strong band reflects coherent evidential relevance, stable cosmic scope, and fair attention to purposive creation, tempered by a slightly overstated likelihood claim and incomplete support for maximizing habitability.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Moral Ground And Closing",
-        timebox: "47:59-2:16:38",
-        score: {
-          pro: 75,
-          con: 86
+        "sectionId": "nonresistant-nonbelief-and-divine-love",
+        "title": "Nonresistant Nonbelief and Perfect Divine Love",
+        "timebox": "29:33–99:46",
+        "score": {
+          "pro": 75,
+          "con": 85
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "1:22:54",
-              role: "Personal grounding",
-              words:
-                "Hernandez says necessary, eternal, personal moral properties fit best in God, while brute non-theistic moral facts lose explanatory points.",
-              score: 76,
-              critique:
-                "Hernandez's moral-grounding point has an intuitive advantage. Moral obligations feel addressed to persons and concerned with sentient beings, so a personal ultimate standard can seem more fitting than abstract brute facts. His appeal to God's necessary and unchanging nature also avoids the crudest divine-command voluntarism where goodness depends on arbitrary will. The weakness is that 'personal' does not by itself solve the grounding problem. Schieber's Mackie-style question remains: why is one obligated to obey God's nature or commands unless some normative reason is already in place? The score is solid because Eric improves on simple command theory, but the obligation bridge still needs independent support.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-loving-purposes-for-divine-hiddenness",
+              "time": "43:56",
+              "role": "Major direct reply",
+              "words": "God may remain hidden to limit culpability, prevent aggravated apostasy, or prepare later conversion without abandoning perfect love toward receptive persons.",
+              "score": 75,
+              "critique": "Strongest feature: The hiddenness response presents multiple conditional divine purposes, including limiting culpability, preventing aggravated apostasy, and preparing later conversion, while explicitly considering a person open to belief. Principal limitation: These possibilities are not connected to the geographic and historical distribution of nonbelief, and their applicability to genuinely nonresistant seekers remains insufficiently evidenced and scoped. Live burden: The response must show why withholding sufficient evidence is necessary for the proposed protective goods and how perfect relational love remains expressed toward receptive individuals and populations during prolonged absence. Locked score: The strong band reflects charitable framing, proportionate possibility claims, clear relevance, and meaningful contact with individual hiddenness, tempered by partial responsiveness and limited warrant for the proposed purposes.",
+              "tags": []
             },
-            con: {
-              time: "47:59",
-              role: "Mackie challenge",
-              words:
-                "Schieber says divine commands obligate only if there is already a general obligation to obey God, risking circularity.",
-              score: 85,
-              critique:
-                "Schieber's moral rebuttal is one of his strongest philosophical counters. The Mackie-style challenge asks exactly the right question: if God commands X, why does that make X obligatory unless there is already a reason or obligation to obey God? That exposes a possible circularity in grounding moral obligation directly in divine command or nature. Schieber also notes that non-theistic moral realism can take universality and objectivity seriously without theistic intermediaries. The weakness is that his claim that God-based morality is subjectivist may trade on the word 'subject' too quickly. A necessary divine nature is not identical to a human preference. Still, the score is high because the core circularity challenge lands.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-distributed-nonbelief",
+              "time": "29:33",
+              "role": "Load-bearing constructive",
+              "words": "Sincere and unevenly distributed nonbelief fits natural religious transmission better than a perfectly loving God's universal desire for accessible personal relationship.",
+              "score": 87,
+              "critique": "Strongest feature: The hiddenness argument clearly connects perfect love, accessible relationship, sincere nonresistance, and the cultural distribution of belief within an explicitly probabilistic comparison against natural religious transmission. Principal limitation: Its selected evidence develops divine provision for belief more fully than the distributional data, and the perfect-love premise requires additional defense against temporary protective or developmental hiddenness. Live burden: The argument must show that culpability, apostasy prevention, freedom, and relational formation cannot plausibly justify the actual duration and geographic pattern of nonbelief among genuinely receptive persons. Locked score: The very strong band reflects stable definitions, excellent central relevance, calibrated comparative force, and charitable recognition of theistic alternatives, with remaining work centered on empirical distribution and competing divine purposes.",
+              "tags": []
             }
           },
           {
-            pro: {
-              time: "2:10:12",
-              role: "Final theistic fit",
-              words:
-                "Hernandez closes that theism has better predictability, explanation, and theodicy for consciousness, moral value, and suffering than naturalism.",
-              score: 75,
-              critique:
-                "Hernandez's closing accurately restates his cumulative strategy. He keeps the question on explanatory fit: consciousness, moral values, rationality, and suffering allegedly sit more naturally within theism than within Justin's non-reductive naturalism. That is the right comparative frame. The weakness is that the closing overstates what the exchange established. Justin supplied live non-theistic alternatives for morality, consciousness, and rationality, and Eric's theodicies for animal suffering remained more possible than probable. Saying naturalism has no superiority does not answer the specific evidence from predation, cosmic hostility, and hiddenness. The score is solid because the thesis is coherent, but the final summary does not repair the central evidential losses.",
-              tags: []
-            },
-            con: {
-              time: "2:13:05",
-              role: "Final burden test",
-              words:
-                "Schieber closes that the fall does not predict predation, parasitism, and privation, and soul-building rests on contestable value judgments.",
-              score: 87,
-              critique:
-                "Schieber's closing is strong because it tests Eric's theodicies by predictive fit rather than by mere possibility. If animal suffering predates humans or is built into body plans, then a generic fall story needs mechanisms and probabilities, not just the claim that bad things follow disobedience. His critique of soul-building is also precise: earned virtues may be valuable, but the core value judgment is not demonstrable and may imply odd things about God's ready-made goodness. The weakness is that the closing focuses mostly on the evil side of Eric's case, leaving consciousness and moral realism less fully revisited. Even so, the final burden test is excellent and directly addresses the debate's strongest evidence.",
-              tags: []
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-hiddenness-cooperative-inquiry",
+              "time": "98:15",
+              "role": "Supporting reply",
+              "words": "Cooperative exploration of God's nature could continue after universal belief, so the value of shared inquiry does not itself require uncertainty about divine existence.",
+              "score": 83,
+              "critique": "Strongest feature: The reply draws a distinction between jointly discovering whether God exists and collaboratively exploring an infinite divine nature after belief, directly answering one proposed developmental good. Principal limitation: Its narrow success against cooperative inquiry leaves the separate protective rationales involving culpability, aggravated apostasy, and delayed conversion untouched, so it does not defeat the complete hiddenness response. Live burden: The reply must show either that post-belief inquiry preserves every relevant relational good or that the costs imposed on nonresistant persons outweigh each proposed reason for temporary concealment. Locked score: The strong band reflects precise scope, matched force, excellent conceptual warrant, and decisive contact with one component, moderated only by its explicitly partial reach across the central exchange.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 76,
-        strengths: [
-          "Hernandez gave a clear three-part case and repeatedly kept the debate on comparative explanatory fit.",
-          "His strongest live pressure came from Schieber's acceptance of irreducible consciousness and moral realism, which narrowed naturalism's claimed simplicity advantage.",
-          "He engaged real theodicy literature rather than relying only on a vague free-will defense."
+    "overall": {
+      "pro": {
+        "score": 74,
+        "strengths": [
+          "The theistic case consistently organized morality, cognition, consciousness, and agency around a unified personal-ground explanation.",
+          "The fine-tuning reply directly contacted both naturalistic expectation and the functional significance of cosmic emptiness, producing the strongest pro exchange.",
+          "The ultimate-mind response improved the consciousness comparison by accepting fundamentality and shifting attention toward simplicity, explanation, and prediction.",
+          "The hiddenness response charitably considered an open person and offered several conditional purposes rather than asserting that sincere nonbelief was impossible."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His evil argument assumed that objective morality and teleology require God without defeating non-theistic realist or natural-teleology options.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The soul argument categorically bundled consciousness, freedom, responsibility, and intellectual integrity without separately excluding nonreductive and compatibilist alternatives.",
+            "links": []
           },
           {
-            text:
-              "His hiddenness defense made too many contrary evidential patterns compatible with divine love and mercy.",
-            links: [
-              {
-                label: "Special pleading",
-                url: fallacy("special-pleading")
-              }
-            ]
+            "text": "The animal-suffering response listed possible theodicies but did not explain the ancient scale, chronology, or organized predatory pattern driving the comparative challenge.",
+            "links": []
           },
           {
-            text:
-              "His soul and consciousness argument moved from irreducibility to immaterial souls while bypassing live non-theistic options.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The moral-grounding route repeatedly asserted that nontheistic alternatives were inadequate without fully explaining why irreducible normative facts lack authority or personal-directedness.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 84,
-        strengths: [
-          "Schieber's animal-suffering case was clear, comparative, and hard for generic fall or free-will replies to cover.",
-          "He answered the rationality and soul arguments with specific alternatives rather than merely denying the problems.",
-          "His hiddenness argument combined perfect-love reasoning with public distribution evidence from religious geography and history."
+      "con": {
+        "score": 85,
+        "strengths": [
+          "The animal-suffering case maintained a calibrated probability claim and kept millions of years of suffering among nonmoral creatures at the center.",
+          "The evolutionary cognition reply directly connected content, neural realization, behavior, and environmental fit, answering every decisive component of the defeater.",
+          "The consciousness reply offered distinct alternatives for phenomenal irreducibility and reasons-responsive freedom, appropriately needing only to defeat claimed necessity.",
+          "The hiddenness case combined individual nonresistance with cultural distribution, while the cooperative-inquiry reply isolated one specific weakness in the theistic response.",
+          "The final fall critique distinguished scientific compatibility from predictive probability and demanded explanation of the specific predatory organization."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His naturalism became less simple once it admitted irreducible consciousness, moral realism, and fundamental proto-phenomenal properties.",
-            links: [
+            "text": "The deterministic-computer analogy blurred reliable formal computation with the epistemic rationality, semantic understanding, and responsibility of a conscious believer.",
+            "links": [
               {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
               }
             ]
           },
           {
-            text:
-              "His description of God-grounded morality as subjectivist risked sliding from 'grounded in a subject' to ordinary subjective preference.",
-            links: [
+            "text": "The divine-nature objection treated dependence on any person as subjectivism without adequately distinguishing contingent attitudes from a necessary essential nature.",
+            "links": [
               {
-                label: "Equivocation",
-                url: fallacy("equivocation")
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
               }
             ]
           },
           {
-            text:
-              "His admission that metaphysical belief formation is empirically unreliable can weaken his own metaphysical confidence as well.",
-            links: [
-              {
-                label: "Subjective validation",
-                url: bias("subjective-validation")
-              }
-            ]
+            "text": "The cosmic-hostility argument underdefended why a value-oriented creator should maximize the proportion of habitable volume rather than pursue several potentially competing values.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that Christian theism merits comparative preference only if a necessary personal reality jointly improves the explanation of normativity, rational agency, and consciousness while offering pattern-specific, independently constrained accounts of suffering and hiddenness.",
+          "premises": [
+            "Objective moral reasons include authoritative demands addressed to persons, so a necessarily good personal ground may explain their directed authority more naturally than an ontology containing only impersonal normative propositions.",
+            "Purposive creation gives a nonaccidental place to reason-responsive agents, but this supports theism only comparatively and does not require claiming that evolutionary cognition is generally unreliable.",
+            "If consciousness is irreducible, theism gains explanatory leverage only where an ultimate mind yields expectations about unified finite subjects that bare phenomenal fundamentals leave unspecified.",
+            "Theodicies and hiddenness accounts carry weight only when they predict relevant patterns, respect nonmoral victims and receptive seekers, and are constrained independently of the evidence they explain."
+          ],
+          "conclusion": "Accordingly, Christian theism has a proportionate cumulative case if its personal-ground explanations outperform impersonal rivals and its accounts of suffering and hiddenness meet those independent predictive constraints; the premises establish comparative plausibility, not certainty."
+        },
+        "newArguments": [
+          {
+            "title": "Independent-constraint theodicy",
+            "text": "A stronger theodicy should begin with theological commitments established independently of animal suffering: stable created agency, law-governed ecosystems, divine concern for every sentient creature, and eventual restoration proportionate to each creature's losses. Those commitments would then generate risky expectations about limits, compensation, and the absence of gratuitous excess. The argument would gain support only where the observed pattern fits those expectations better than alternatives do. This method cannot erase the evidential challenge, but it avoids inventing a new permission for every instance after the fact."
+          },
+          {
+            "title": "Second-personal moral authority",
+            "text": "Impersonal moral truths may describe reasons, yet obligations often present themselves as claims that persons can rightfully address to one another. Theism can therefore argue that a necessarily good personal ground explains not merely moral truth but its second-personal authority, without saying abstract truths are impossible. The comparison turns on whether directed accountability is fundamental or reducible to impersonal reasons. Framed this way, the argument answers nontheistic realism at its strongest while accepting that moral facts alone do not deductively establish God."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that atheistic naturalism earns comparative preference when independently motivated naturalistic resources accommodate morality, cognition, consciousness, and agency while suffering, cosmic inhospitability, and distributed nonbelief remain more expected without a perfect creator.",
+          "premises": [
+            "Irreducible normative truths can be treated as objective reasons whose authority depends on their rational force, while no semantic shortcut from God's personhood to subjectivism is required.",
+            "Evolutionary selection can favor broadly accurate, content-sensitive cognition because flexible behavior across novel environments depends on representations that systematically track relevant features, despite predictable local biases.",
+            "Naturalism can preserve consciousness and agency by treating phenomenal character as fundamental and freedom as reasons-responsive control, although composition and personal-level understanding remain substantive research burdens.",
+            "Ancient animal suffering, organized predation, widespread inhospitability, and culturally patterned sincere nonbelief are natural outcomes of indifferent processes but require additional, pattern-specific expectations under perfect-creator hypotheses."
+          ],
+          "conclusion": "Therefore, atheistic naturalism is comparatively favored to the extent that these independently motivated resources remain coherent and the combined evidential pattern requires fewer auxiliary assumptions than perfect-creator alternatives; this remains an evidential judgment rather than a deduction."
+        },
+        "newArguments": [
+          {
+            "title": "Auxiliary-cost convergence",
+            "text": "Each difficult observation can receive a distinct theistic permission: stable laws for predation, artistry for cosmic emptiness, protection for hiddenness, and a fall for biological disorder. The cumulative issue is not whether each permission is possible, but whether their joint addition makes the perfect-creator hypothesis less predictively economical. Naturalism predicts no benevolent coordination across these domains, so their convergence may carry more weight together than separately. This argument requires explicit accounting of shared versus independent auxiliaries and should not simply count explanations by number."
+          },
+          {
+            "title": "Corrective-accessibility test",
+            "text": "A loving deity concerned with relationship need not overwhelm freedom, but should plausibly supply corrective evidence responsive to sincere, sustained inquiry across cultures. That predicts some detectable reduction in nonbelief attributable to openness itself rather than birthplace, inherited tradition, or information access. The naturalistic hypothesis instead expects those social variables to dominate. Comparing the relative influence of receptivity and cultural transmission offers a more discriminating hiddenness test than merely noting that some seekers remain unconvinced, while still allowing the theist to specify protective exceptions beforehand."
           }
         ]
       }
@@ -44553,378 +44612,394 @@ export const debates = [
     }
   },
   {
-    id: "mclatchie-oconnor-christianity-true-2019",
-    number: "120",
-    title: "Jonathan McLatchie vs Alex O'Connor: Is Christianity True?",
-    label: "Resurrection and biblical morality",
-    date: "2026-07-29",
-    duration: "1 hr 19 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=woqy13ZkeqM",
-    motion:
-      "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
-    summary:
-      "McLatchie argues that public evidence for the resurrection and Scripture supports Christian faith; O'Connor argues that the sources are too uncertain and biblical morality undermines Christian authority.",
-    sourceNote:
-      "Based on the YouTube transcript for the Alex O'Connor upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text:
-          "I am a Christian because I am persuaded by the public evidence",
-        context:
-          "McLatchie frames his Christianity as evidential rather than fideistic, with the resurrection as the central public test case."
+    "id": "mclatchie-oconnor-christianity-true-2019",
+    "number": "120",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Jonathan McLatchie vs Alex O'Connor: Is Christianity True?",
+    "label": "Resurrection and biblical morality",
+    "date": "2026-08-24",
+    "duration": "1 hr 19 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=woqy13ZkeqM",
+    "motion": "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f5d0835a447af6196421c14a1985fd4e034bfdfe07f2865e126c7bf6f46d22f7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "McLatchie defended Christianity through resurrection testimony and contextual reconciliation; O'Connor challenged source sufficiency, theological inference, biblical morality, and animal-suffering explanations.",
+    "quotes": {
+      "pro": {
+        "text": "any explanation that is logically possible can in principle be confirmed by evidence",
+        "context": "McLatchie introduces a Bayesian framework under which sufficiently powerful cumulative evidence could overcome an initially low resurrection prior."
       },
-      con: {
-        text: "the resurrection does not automatically prove divinity",
-        context:
-          "O'Connor separates historical resurrection claims from the further claims that Jesus is divine and that biblical morality should be followed."
+      "con": {
+        "text": "simply on the basis of the fact that I rose from the dead",
+        "context": "O'Connor conditionally grants resurrection to isolate the further argument needed for divinity, moral authority, and broader Christian doctrine."
       }
     },
-    sides: {
-      pro: {
-        name: "Christian evidentialism",
-        speaker: "Jonathan McLatchie",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Christian evidentialism",
+        "speaker": "Jonathan McLatchie",
+        "color": "teal"
       },
-      con: {
-        name: "Skeptical critique",
-        speaker: "Alex O'Connor",
-        color: "coral"
+      "con": {
+        "name": "Skeptical critique",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 76,
-      con: 84
+    "score": {
+      "pro": 83,
+      "con": 83
     },
-    sections: [
+    "sections": [
       {
-        title: "Opening Burdens",
-        timebox: "04:03-16:01",
-        score: {
-          pro: 80,
-          con: 83
+        "sectionId": "section-resurrection-evidence",
+        "title": "Resurrection Appearances and Competing Historical Explanations",
+        "timebox": "8:10–23:27",
+        "score": {
+          "pro": 85,
+          "con": 83
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "05:11",
-              role: "Public evidence frame",
-              words:
-                "McLatchie says Christianity should be assessed through public evidence, and that even a low-prior miracle claim can be confirmed with enough evidence.",
-              score: 80,
-              critique:
-                "McLatchie's opening burden is clear and philosophically disciplined. He does not ask the audience to accept Christianity by private experience or institutional authority; he proposes a public-evidence test and explicitly frames miracle reasoning in probabilistic terms. That is a strong start because it identifies what kind of support the resurrection argument must supply. The weakness is that Bayes' theorem does little work until the priors and likelihoods are responsibly estimated, and McLatchie has only minutes to justify those inputs. Saying a low-prior explanation can in principle be confirmed is true, but it does not show that this case reaches that threshold. The score is strong because the method is serious, but the live argument is still promissory.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-early-appearance-testimony",
+              "time": "8:10",
+              "role": "Load-bearing constructive",
+              "words": "Early First Corinthians 15 tradition and appearance reports support that disciples experienced events they interpreted as encounters with the risen Jesus.",
+              "score": 88,
+              "critique": "Strongest feature: The argument cautiously identifies an early Pauline tradition and confines its immediate conclusion to experiences interpreted as appearances, preserving the important distinction between sincere experiential testimony and the further supernatural explanation of that testimony. Principal limitation: The compressed presentation does not sufficiently differentiate the creed's dating, transmission, named witnesses, or evidential relationship to later narratives, leaving substantial historical work between an early report and the underlying experiences it describes. Live burden: McLatchie must establish reliable transmission, clarify which reports are independent, and compare bodily resurrection with sincere visionary, bereavement, expectation, or legendary alternatives rather than treating reported interpretation as causal confirmation. Locked score: The very strong band recognizes precise calibration, central relevance, and charitable acknowledgment of skeptical acceptance, while retaining reservations about the incompletely developed source-to-event reliability bridge.",
+              "tags": []
             },
-            con: {
-              time: "14:34",
-              role: "Evidential threshold",
-              words:
-                "O'Connor says the resurrection case rests on biblical texts written later, so the extraordinary claim needs stronger support than ordinary history.",
-              score: 83,
-              critique:
-                "O'Connor's opening reply is strong because it demands claim-proportional evidence. He distinguishes ordinary historical claims, such as Jesus existing, from the much stronger claim that a dead man rose bodily and thereby grounds Christianity. That keeps the debate from sliding into a vague 'ancient sources exist' standard. He also identifies the narrow evidential base: Gospels and epistles, with disputed external support. The weakness is that he initially compresses a large scholarly landscape into the phrase 'biblical evidence,' which can make all internal testimony sound equally late or unreliable. Still, the burden challenge is central and fair. The score is high because it asks the right question: what would actually be enough?",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-resurrection-extraordinary-evidence",
+              "time": "14:29",
+              "role": "Major direct reply",
+              "words": "Late, disputed biblical writings and limited external support do not adequately establish the extraordinary historical claim of bodily resurrection.",
+              "score": 80,
+              "critique": "Strongest feature: O'Connor directly confronts the evidential threshold by identifying the source pool, its disputed narrative character, and the limited external material, thereby contacting the central appearance, sincerity, and low-prior components of McLatchie's resurrection case. Principal limitation: The broad description of the evidence as biblical risks substituting canonical classification for source criticism, while the excerpt gives insufficiently representative documentation concerning dates, authorship, dependence, corroboration, and the distinct Pauline tradition. Live burden: O'Connor must evaluate individual sources and demonstrate why their particular weaknesses jointly prevent the relevant likelihood ratio, rather than implying that religious inclusion itself diminishes historical value. Locked score: The strong band recognizes high responsiveness and indispensable relevance, moderated by overcompressed sourcing, incomplete differentiation, and limited engagement with several specific appearance and sincerity warrants.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-varied-appearances-and-sincerity",
+              "time": "10:24",
+              "role": "Load-bearing constructive",
+              "words": "Prolonged, collective, and multisensory appearance reports, together with disciples' willingness to suffer, support sincere belief rather than deliberate fabrication.",
+              "score": 82,
+              "critique": "Strongest feature: The cumulative presentation combines duration, sensory variety, collective reports, and voluntary suffering while appropriately using the suffering evidence primarily to support sincerity instead of claiming that commitment alone establishes bodily resurrection. Principal limitation: The transcript compresses crucial questions about narrative independence, historical verification, group psychology, which disciples suffered, what testimony occasioned that suffering, and whether denial would realistically have changed their circumstances. Live burden: McLatchie must document each evidential strand separately and demonstrate that their conjunction discriminates resurrection from sincere mistake, visionary experience, social reinforcement, memory development, or legend rather than merely excluding conscious fabrication. Locked score: The strong band reflects coherent central burden contact and calibrated treatment of sincerity, tempered by materially underdeveloped historical warrants and an incomplete confrontation with nonfraudulent alternatives.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-martyrdom-recantation-gap",
+              "time": "22:20",
+              "role": "Major direct reply",
+              "words": "Known apostolic deaths do not establish recantable resurrection testimony without evidence that denial would have prevented their execution.",
+              "score": 88,
+              "critique": "Strongest feature: O'Connor precisely identifies the missing conditional in the martyrdom inference, asking whether the relevant disciples faced death specifically for resurrection testimony under circumstances where recantation would realistically have secured their survival. Principal limitation: The criticism weakens the strongest execution-based formulation but does not eliminate the more modest evidential relevance of sustained persecution, costly public commitment, or suffering short of death as indicators against conscious fabrication. Live burden: O'Connor must separate poorly attested martyrdom traditions from better evidenced hardship and explain how much sincerity evidence remains after the unavailable-recantation objection is applied. Locked score: The very strong band reflects an exceptionally responsive, narrowly calibrated, and charitable diagnostic challenge that substantially defeats the recantable-martyrdom claim while appropriately leaving weaker commitment evidence available for separate consideration.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Resurrection Testimony",
-        timebox: "08:08-23:09",
-        score: {
-          pro: 80,
-          con: 84
+        "sectionId": "section-gospel-reliability",
+        "title": "Gospel Reliability, Corroboration, and Narrative Construction",
+        "timebox": "17:53–34:16",
+        "score": {
+          "pro": 86,
+          "con": 77
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "08:08",
-              role: "Sincerity and appearances",
-              words:
-                "McLatchie appeals to non-Christian scholars, 1 Corinthians 15, group appearances, physical contact, and martyrdom to argue sincere eyewitness belief.",
-              score: 80,
-              critique:
-                "McLatchie's resurrection case has real cumulative shape. He combines scholarly concessions that disciples experienced something, the early creedal material in 1 Corinthians 15, the Gospel pattern of multisensory appearances, and the costly sincerity of Peter and James. That is stronger than merely saying 'the Bible says so,' because he tries to explain why the resurrection belief arose and persisted. The weakness is that several links remain disputed: whether the detailed Gospel appearances reliably reach eyewitnesses, how strong the martyrdom evidence is, and whether sincerity establishes the content of the experience. Alternative explanations are narrowed but not exhausted. The score is strong because the case is organized and relevant, but not decisive.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-john-plural-women-reconciliation",
+              "time": "25:36",
+              "role": "Supporting reply",
+              "words": "Mary Magdalene's plural statement in John is consistent with other Gospel accounts reporting multiple women at the tomb.",
+              "score": 93,
+              "critique": "Strongest feature: McLatchie offers a sharply bounded textual reconciliation by observing Mary's plural language in John, which directly shows that narrative focus on Mary need not contradict accounts describing several women at the tomb. Principal limitation: Resolving one apparent discrepancy establishes logical compatibility rather than historical accuracy, narrative independence, or the general reliability of the resurrection accounts, so its evidential reach must remain carefully confined. Live burden: McLatchie must demonstrate that comparable tensions admit independently plausible resolutions and then explain why accumulated compatibility provides positive historical corroboration rather than merely showing that harmonization remains possible. Locked score: The very strong band reflects exceptional textual precision, direct responsiveness, strong warrant, and disciplined scope, while its low importance and inability to answer the broader source-adequacy objection appropriately limit its overall argumentative significance.",
+              "tags": []
             },
-            con: {
-              time: "16:01",
-              role: "Source reliability challenge",
-              words:
-                "O'Connor argues that Gospel contradictions, mythic shaping, and weak martyrdom evidence make resurrection testimony too unstable for the claim.",
-              score: 84,
-              critique:
-                "O'Connor's source challenge is powerful because he attacks the reliability of the specific evidential bridge McLatchie needs. If the resurrection case depends on later texts preserving detailed appearances, then contradictions, literary shaping, and unclear martyrdom evidence directly matter. His Alfred Hitchcock analogy usefully tests whether the audience would accept similar testimony for a non-Christian resurrection claim. The weakness is that several examples are uneven. The women-at-the-tomb and Lazarus points require more precision than he initially gives, and mythic parallel claims need careful sourcing. But the larger argument does not depend on each example succeeding. The score is high because he keeps the evidential standard proportionate to the extraordinary claim.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-gospels-mythic-literary-material",
+              "time": "17:53",
+              "role": "Major direct reply",
+              "words": "Literary parallels and mythic Gospel material complicate separating history from invention and weaken those narratives as secure bodily-resurrection evidence.",
+              "score": 77,
+              "critique": "Strongest feature: The argument concedes literary shaping does not erase every historical element, while identifying the methodological difficulty of extracting secure resurrection history from narratives containing proposed borrowing and mythic construction. Principal limitation: Calling the Gospels riddled with myth outruns the limited parallel evidence, and neither establishes that relevant resurrection traditions were invented nor demonstrates that distinct Pauline testimony shares the alleged defect. Live burden: O'Connor must distinguish dependence, typology, shared motifs, and direct borrowing, then connect demonstrated literary construction to the particular appearance claims bearing the central historical burden. Locked score: The strong band reflects substantial source-level relevance, an important concession, and meaningful contact with Gospel-based evidence, while retaining reservations concerning generalized terminology and unanswered early testimony.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-undesigned-gospel-coincidences",
+              "time": "32:34",
+              "role": "Major direct reply",
+              "words": "Incidental interlocking details in the feeding narratives, including Philip's Bethsaida connection, support historically grounded Gospel testimony.",
+              "score": 83,
+              "critique": "Strongest feature: The Philip and Bethsaida example supplies positive source-level evidence rather than merely defending against contradiction, showing how an incidental detail in one narrative can intelligibly illuminate otherwise unexplained content in another. Principal limitation: The claim that historical testimony provides the best explanation depends upon literary independence, shared-source probabilities, geographical knowledge, editorial practices, and the coincidence's rarity, none of which receives adequate comparative treatment in the excerpt. Live burden: McLatchie must establish independence or appropriately model dependence, assemble multiple carefully selected examples, and compare historical memory with shared tradition, authorial construction, and ordinary contextual knowledge. Locked score: The strong band recognizes substantial responsiveness, central corroborative relevance, and a coherent concrete illustration, moderated by slightly overstated explanatory force, limited alternative analysis, and insufficiently demonstrated independence.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "section-probability-theology-bridge",
+        "title": "Prior Probability, Prophecy, and the Bridge to Christianity",
+        "timebox": "6:08–37:18",
+        "score": {
+          "pro": 84,
+          "con": 91
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-bayesian-evidence-overcomes-low-prior",
+              "time": "6:08",
+              "role": "Supporting constructive",
+              "words": "Any logically possible explanation, including divine resurrection, can overcome a low prior when sufficiently strong cumulative evidence favors it.",
+              "score": 86,
+              "critique": "Strongest feature: The carefully qualified Bayesian proposition correctly distinguishes an explanation's initially low probability from its permanent evidential impossibility, thereby supplying a coherent framework for evaluating cumulative resurrection evidence without presuming its eventual adequacy. Principal limitation: The presentation invokes Bayes's theorem abstractly but supplies neither comparative likelihoods nor independence analysis, so the formal vocabulary cannot demonstrate that the historical evidence actually generates the exceptionally substantial evidential ratio required. Live burden: McLatchie still must specify the relevant alternatives, justify evidential dependencies, and show why the complete appearance record is considerably more expected under divine resurrection than under ordinary historical or psychological explanations. Locked score: The very strong band reflects excellent conceptual coherence and disciplined modal qualification, moderated by the framework's subsidiary relevance and its limited quantitative or comparative application.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-resurrection-inferential-gap",
+              "time": "21:05",
+              "role": "Major direct reply",
+              "words": "Even a demonstrated resurrection would not alone establish divinity, moral authority, or otherwise unrelated historical and doctrinal claims.",
+              "score": 92,
+              "critique": "Strongest feature: The hypothetical grant isolates a decisive logical boundary with exceptional clarity: bodily resurrection by itself does not entail divinity, impeccable moral authority, unrelated historical assertions, or the complete doctrinal system needed for the motion. Principal limitation: The formulation principally defeats an event-only inference and gives comparatively little consideration to a cumulative probabilistic bridge incorporating Jesus's antecedent teaching, claimed identity, scriptural context, and the possible purposive significance of the event. Live burden: O'Connor must show either that the broader contextual evidence is independently defective or that, even when combined with resurrection, it remains insufficient to support the specifically Christian conclusions under dispute. Locked score: The very strong band reflects outstanding diagnostic responsiveness, precision, coherence, and motion-level relevance, with only the contextual cumulative alternative preventing a completely decisive assessment.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-jesus-theological-prior",
+              "time": "34:58",
+              "role": "Major direct reply",
+              "words": "Jesus's scriptural and theological setting supplies possible divine motivation for resurrection and raises its prior probability above an arbitrary case.",
+              "score": 82,
+              "critique": "Strongest feature: McLatchie properly reframes the comparison from an arbitrary resurrected person to Jesus within an antecedent theological narrative, offering a plausible route by which context could affect both divine motivation and the event's interpretive significance. Principal limitation: Calling the scriptural backdrop independent is insufficiently defended because Christian authors may have selected, interpreted, or constructed fulfillment material after resurrection belief emerged, making the proposed prior partly dependent upon the evidence being evaluated. Live burden: McLatchie must identify genuinely antecedent expectations, justify their non-retrospective interpretation, and connect them specifically to resurrection, identity, and authority without presupposing Christian conclusions. Locked score: The strong band reflects high responsiveness, clear central relevance, and a justified contextual reframe, tempered by underdeveloped independence, contested scriptural interpretation, and only moderately supported evidential warrant.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-prophecy-circular-construction",
+              "time": "35:51",
+              "role": "Major direct reply",
+              "words": "Prophecy fulfillment lacks independent force when it presupposes Christian conclusions or reflects Gospel authors constructing fulfillment narratives.",
+              "score": 89,
+              "critique": "Strongest feature: O'Connor identifies the precise evidential vulnerability in using fulfillment as prior-raising evidence: retrospective narrative construction or conclusion-dependent interpretation would prevent the scriptural material from functioning as an independent Bayesian input. Principal limitation: The possibility of construction does not itself establish that every proposed pattern is retrospective, and the brief Passover illustration does not comprehensively assess antecedent texts, interpretive history, or historically constrained fulfillment claims. Live burden: O'Connor must distinguish genuinely prior expectations from later typology and demonstrate, claim by claim, where dependence, selective interpretation, or narrative invention defeats independent evidential force. Locked score: The very strong band reflects excellent diagnostic contact, logical coherence, calibration, and charity toward possible antecedent patterns, with remaining uncertainty confined mainly to the historical demonstration required beyond the circularity test.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Gospel Reliability",
-        timebox: "25:48-35:44",
-        score: {
-          pro: 82,
-          con: 78
+        "sectionId": "section-biblical-moral-authority",
+        "title": "Biblical Teaching, Atonement, and Divine Moral Authority",
+        "timebox": "23:22–66:31",
+        "score": {
+          "pro": 80,
+          "con": 82
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "25:48",
-              role: "Contradiction rebuttal",
-              words:
-                "McLatchie says John's plural 'we' fits multiple women, single-source earthquake reports are not contradictions, and undesigned coincidences support historicity.",
-              score: 82,
-              critique:
-                "McLatchie's live rebuttal is one of his best moments. He handles the women-at-the-tomb objection by pointing to Mary's plural 'we' in John, which directly weakens the claim that John excludes other women. He also correctly notes that silence in other sources is not automatically contradiction, and the Philip-Bethsaida undesigned coincidence gives a concrete example of interlocking detail. The weakness is that these wins mostly defend general Gospel credibility, not the resurrection itself. A source can contain historical texture and still embellish a miracle. Even so, McLatchie improves his position by engaging specific objections instead of merely appealing to tradition. The score is high because several local rebuttals land.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-exodus-injury-protection",
+              "time": "48:39",
+              "role": "Major direct reply",
+              "words": "Exodus requires release for injury to an enslaved person's eye or tooth, indicating meaningful consequences for abusive treatment.",
+              "score": 81,
+              "critique": "Strongest feature: McLatchie introduces the adjacent eye-and-tooth release provisions, providing textual evidence that bodily injury could carry legal consequences and complicating claims that abusive treatment was wholly unrestricted. Principal limitation: Extrapolation from specified injuries to a comprehensive rule remains unestablished, while even broader release would not explain why the survival provision withholds punishment in serious cases beneath the asserted threshold. Live burden: McLatchie must justify the provisions' legal scope, reconcile them with the preceding beating rule, and address whether regulation and release are morally adequate under claimed divine perfection. Locked score: The strong band reflects concrete evidence and substantial contact with a central objection, tempered by overextended scope, incomplete statutory reconciliation, and insufficient engagement with the surviving-victim case.",
+              "tags": []
             },
-            con: {
-              time: "28:11",
-              role: "Reasonableness standard",
-              words:
-                "O'Connor concedes some points may not strictly contradict, but says sparse or selective reporting remains weak evidence for a resurrection.",
-              score: 78,
-              critique:
-                "O'Connor's reply is fair where he shifts from strict contradiction to reasonableness. He does not need every example to prove falsehood; he needs to show that the source base is not strong enough for a resurrection inference. That is a more defensible standard, and he openly allows that one women-count point may be less decisive. The weakness is that he sometimes retreats after overstating the initial objection. If a point is introduced as a contradiction and then becomes merely a detail one might expect elsewhere, McLatchie can claim a local victory. The score is solid because O'Connor's broad threshold argument survives, but the specific cross-exam examples lose some force.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-objectionable-biblical-morality",
+              "time": "23:22",
+              "role": "Load-bearing constructive",
+              "words": "Morally indefensible biblical teachings concerning slavery, homosexuality, and women would count against Christianity's claimed objective moral authority.",
+              "score": 73,
+              "critique": "Strongest feature: The move establishes an independent motion-level test by connecting allegedly indefensible teachings to Christianity's claim of objective divine morality, ensuring that historical resurrection evidence does not monopolize the assessment of Christian authority. Principal limitation: The examples remain broad and interpretively heterogeneous, with endorsement, condemnation, disparagement, scripture, tradition, and Christianity insufficiently differentiated and without the textual analysis or normative premises necessary to establish each moral indictment. Live burden: O'Connor must identify representative provisions, defend their interpretation, explain the applicable moral standard, and answer contextual, progressive, regulatory, or non-endorsing readings without assuming that contemporary revulsion completes the argument. Locked score: The mixed band reflects substantial central relevance and a plausible conditional structure, reduced by overbreadth, incomplete evidential development, unstable scope, and limited responsiveness to the preceding historical case.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-canaanite-evacuation-context",
+              "time": "65:57",
+              "role": "Supporting reply",
+              "words": "Prior displacement described in biblical material may have depleted Canaanite populations, qualifying interpretations of wholesale civilian slaughter.",
+              "score": 79,
+              "critique": "Strongest feature: McLatchie offers directly relevant contextual material indicating displacement before conquest, which can qualify the scale and civilian composition assumed by an interpretation of the narratives as straightforward wholesale extermination. Principal limitation: Driving out, evacuation, depletion, and destruction are not equivalent, the excerpt provides no quantitative basis for substantial depletion, and population movement does not reconcile every passage describing killing or morally troubling commands. Live burden: McLatchie must integrate the complete textual vocabulary, establish who remained, explain the status of noncombatants, and show how reduced scale answers rather than merely diminishes the underlying moral-authority objection. Locked score: The strong band recognizes a plausible, explicitly qualified contextual reply with genuine central relevance, moderated by underdeveloped textual synthesis, uncertain magnitude, limited scope, and incomplete engagement with the objection's moral core.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-slave-beating-permission",
+              "time": "48:03",
+              "role": "Major direct reply",
+              "words": "Voluntary servitude cannot justify a rule withholding punishment for beating an enslaved person who survives the resulting injuries.",
+              "score": 90,
+              "critique": "Strongest feature: O'Connor grants the voluntary-servitude framing and still presents a concrete moral objection to withholding punishment when an enslaved person survives severe violence, thereby avoiding dependence upon one contested characterization of the institution. Principal limitation: The word mercilessly may intensify what the cited rule expressly specifies, and the argument could more carefully distinguish civil punishment, release remedies, property compensation, moral permission, and regulation of an existing practice. Live burden: O'Connor must situate the survival provision alongside adjacent injury rules while explaining why any available regulatory or protective context remains inadequate for perfect divine moral authority. Locked score: The very strong band reflects forceful coherence, specificity, responsiveness, evidential grounding, and charitable engagement with the offered reinterpretation, slightly moderated by rhetorical overstatement and unresolved legal-context distinctions.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Prophecy And Priors",
-        timebox: "35:02-38:51",
-        score: {
-          pro: 77,
-          con: 82
+        "sectionId": "section-suffering-and-rational-commitment",
+        "title": "Suffering, Evidence, and Rational Christian Commitment",
+        "timebox": "66:30–75:51",
+        "score": {
+          "pro": 71,
+          "con": 79
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "35:02",
-              role: "Theological backdrop",
-              words:
-                "McLatchie says Jesus is not like Alfred Hitchcock because Hebrew Scripture and messianic expectation raise the prior probability of resurrection.",
-              score: 77,
-              critique:
-                "McLatchie's theological-backdrop move is relevant and partly successful. A resurrection claim attached to Jesus is not evidentially identical to a random celebrity rising, because it comes within a Jewish messianic, prophetic, and theological narrative. That can reasonably affect prior expectations if those background claims are independently supported. The weakness is that independence is exactly the contested point. If New Testament authors shaped stories to match Scripture, or if Christian readings of Hebrew texts are disputed, then the backdrop may be evidence partly manufactured by the tradition under examination. The move risks leaning on the conclusion it is meant to establish. The score is solid-strong because context matters, but the circularity concern is real.",
-              tags: [
-                {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "The resurrection prior is raised by a Christian reading of Scripture before that reading is independently secured."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-retroactive-fall-theodicy",
+              "time": "66:30",
+              "role": "Supporting reply",
+              "words": "A retroactive Fall model may place animal suffering within a world prepared in anticipation of eventual human rebellion.",
+              "score": 65,
+              "critique": "Strongest feature: The proposal is explicitly modal and attempts to preserve a causal connection between human rebellion and prehuman suffering without denying the scientific chronology, thereby presenting a conceivable reconciliation rather than misdescribing the temporal difficulty. Principal limitation: Retroactive causation, intersecting worlds, divine preparation, and moral responsibility remain conceptually underdefined, while the model offers little independent reason for acceptance and risks relocating rather than explaining God's decision to permit animal pain. Live burden: McLatchie must articulate the mechanism, justify its theological and metaphysical plausibility, and explain why anticipated human wrongdoing morally warrants extensive nonhuman suffering before humanity existed. Locked score: The mixed band reflects imaginative possibility and cautious qualification, substantially reduced by speculative warrant, weak responsiveness to the prior moral-teaching exchange, and an unresolved goodness problem.",
+              "tags": []
             },
-            con: {
-              time: "35:52",
-              role: "Circularity warning",
-              words:
-                "O'Connor replies that Bible-confirming-Bible is not enough, and prophecy stories may have been shaped by translation or expectation.",
-              score: 82,
-              critique:
-                "O'Connor's circularity warning is strong because it targets a common apologetic shortcut. If the New Testament both reports the events and interprets them as fulfilling earlier Scripture, then fulfillment cannot simply be treated as independent corroboration. His virgin-birth example, based on disputed translation and possible narrative shaping, gives the concern a concrete mechanism. The weakness is that he sketches the example quickly and does not prove that the resurrection traditions were similarly invented to fit prophecy. Some fulfillment arguments may have more historical independence than others. Still, the methodological warning is important. The score is high because it blocks an easy inflation of prior probability without dismissing all contextual evidence.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-animal-suffering-theodicy",
+              "time": "67:03",
+              "role": "Major direct reply",
+              "words": "Morally significant animal pain requires a genuine Christian theodicy and cannot be dismissed through unsupported claims about animal experience.",
+              "score": 86,
+              "critique": "Strongest feature: O'Connor clearly establishes the explanatory demand: if animals undergo morally significant pain and the Christian God is perfectly good, differences between animal and human cognition cannot simply erase the requirement for a compatibility account. Principal limitation: The response insists upon a genuine theodicy but does not specifically analyze the retroactive causal model offered immediately beforehand, so it identifies the burden more decisively than it defeats that proposed mechanism. Live burden: O'Connor must show where the Fall-based explanation fails, clarify the moral significance of varying animal capacities, and connect the scale and distribution of suffering to the claimed divine attributes. Locked score: The very strong band reflects precise calibration, coherent necessity, strong responsiveness, and appropriate charity, moderated chiefly by incomplete engagement with the target model's distinctive structure.",
+              "tags": []
             }
-          }
-        ]
-      },
-      {
-        title: "Moral Authority",
-        timebox: "39:01-47:58",
-        score: {
-          pro: 70,
-          con: 87
-        },
-        exchanges: [
+          },
           {
-            pro: {
-              time: "39:47",
-              role: "Divine character defense",
-              words:
-                "McLatchie declines the school-shooting hypothetical, says God would not command it, and grounds morality in God's character, conscience, and Scripture.",
-              score: 70,
-              critique:
-                "McLatchie's moral-authority answer preserves orthodox theism: God is just, God is good, and divine commands must be consistent with divine character. That avoids a crude voluntarism where any command becomes good merely because it is commanded. His appeal to conscience and Scripture also explains why he does not treat moral knowledge as only arbitrary decree. The weakness is that refusing the hypothetical leaves O'Connor's dilemma underanswered. If Scripture contains commands or permissions that appear immoral, the audience needs a principled way to tell whether conscience corrects interpretation or must submit to authority. McLatchie says the bar for recognizing a divine command would be high, but that does not solve the textual cases. The score is mixed-solid.",
-              tags: [
-                {
-                  label: "Special pleading",
-                  type: "fallacy",
-                  url: fallacy("special-pleading"),
-                  context:
-                    "The impossible-command hypothetical is ruled out while troubling biblical commands still receive protected authority."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-evidential-conception-of-faith",
+              "time": "74:24",
+              "role": "Supporting reply",
+              "words": "Biblical faith is trust in unseen promises grounded in prior reasons, testimony, and experienced evidence of God's past faithfulness.",
+              "score": 77,
+              "critique": "Strongest feature: McLatchie gives a coherent evidential account of trust, using experienced past faithfulness to explain confidence in unseen future promises and thereby distinguishing biblical faith from proposition adoption without supporting reasons. Principal limitation: The examples from Hebrews support an evidential strand but cannot establish the sweeping characterization of biblical faith from beginning to end, and the response does not address which worldview deserves comparative investigative priority. Live burden: McLatchie must broaden the textual basis, distinguish evidence from incomplete assurance, and answer O'Connor's parity objection by identifying noncircular reasons that differentiate Christianity from rival comprehensive claims. Locked score: The strong band reflects sound conceptual logic, relevant subsidiary burden contact, and substantial textual warrant, tempered by overgeneralization and its failure to contact the decisive comparative-priority component of the immediately preceding argument.",
+              "tags": []
             },
-            con: {
-              time: "39:47",
-              role: "Moral dilemma",
-              words:
-                "O'Connor argues that refusing the hypothetical exposes a dilemma: obey divine commands that appear immoral or appeal to a standard beyond command.",
-              score: 87,
-              critique:
-                "O'Connor's moral dilemma is a sharp pivot from historicity to authority. He does not merely ask whether God exists; he asks why one should trust a religious moral code when it appears to license what conscience condemns. The school-shooting hypothetical is intentionally extreme, but it cleanly separates command from moral recognition: if believers would refuse such a command, then they are using some evaluative standard beyond bare command. The weakness is that the hypothetical can be too alien to McLatchie's view, since classical theism denies that God could command evil. The stronger version comes through later textual examples. Still, the score is very high because the dilemma exposes the pressure point.",
-              tags: []
-            }
-          }
-        ]
-      },
-      {
-        title: "Slavery And Violence",
-        timebox: "48:07-54:22",
-        score: {
-          pro: 64,
-          con: 90
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "47:07",
-              role: "Ancient-context reply",
-              words:
-                "McLatchie says Hebrew slavery must be read as ancient debt servitude with protections, but admits Numbers 31 is a difficult text.",
-              score: 64,
-              critique:
-                "McLatchie's slavery reply has the right first instinct: context matters, and ancient Hebrew servitude is not identical to modern racialized chattel slavery. He also cites protections for bodily injury and eventually admits that Numbers 31 is genuinely difficult. That honesty prevents the answer from becoming glib. The weakness is severe, though. Contextualizing servitude does not morally justify beating a slave with a rod, treating a person as property, or preserving virgin captives after slaughter. When pressed for moral judgment, McLatchie repeatedly explains the system rather than clearly condemning the relevant permission. The score is low-mixed because the contextual distinctions are real, but they do not carry the moral burden.",
-              tags: [
-                {
-                  label: "Special pleading",
-                  type: "fallacy",
-                  url: fallacy("special-pleading"),
-                  context:
-                    "Biblical slavery is insulated by contextual distinctions that do not answer the specific permission to beat or possess people."
-                }
-              ]
-            },
-            con: {
-              time: "48:07",
-              role: "Textual moral indictment",
-              words:
-                "O'Connor quotes Exodus 21 on slave beating and Numbers 31 on virgin captives to argue biblical morality is morally disqualifying.",
-              score: 90,
-              critique:
-                "O'Connor's textual moral indictment is the strongest section of the debate. He moves from abstract hypotheticals to concrete passages and asks for a moral judgment, not merely a description of ancient context. Exodus 21 lets him press whether non-lethal beating should ever be permitted; Numbers 31 lets him press whether divine moral authority can survive commands involving slaughter and captive virgin girls. The strength is that McLatchie ultimately concedes the latter text is difficult and has no satisfying live answer. The weakness is that O'Connor's inference from moral difficulty to Christianity's falsity still needs a full account of revelation, accommodation, and textual corruption. But locally, the exchange is decisive. The score is exceptional.",
-              tags: []
-            }
-          }
-        ]
-      },
-      {
-        title: "Closing And Faith",
-        timebox: "54:45-1:17:52",
-        score: {
-          pro: 76,
-          con: 85
-        },
-        exchanges: [
-          {
-            pro: {
-              time: "54:45",
-              role: "Cumulative closing",
-              words:
-                "McLatchie closes that resurrection evidence can outweigh hard objections, and later says biblical faith is a response to evidence already received.",
-              score: 76,
-              critique:
-                "McLatchie's closing is coherent with his opening. He returns to the resurrection as the central vindication of Jesus and argues that once the gospel is well supported, unresolved difficulties need not defeat it. His Q&A clarification that biblical faith is not belief without evidence, but trust based on evidence already received, is also a helpful correction of a common caricature. The weakness is that the closing largely asks the resurrection case to bear the moral objections rather than answering them. Saying evidence is overwhelming can justify patience with some puzzles, but it cannot make every moral problem secondary. The score is solid because the cumulative strategy is intelligible, but the hardest objections remain under-answered.",
-              tags: []
-            },
-            con: {
-              time: "59:55",
-              role: "Authority rejection",
-              words:
-                "O'Connor closes that even granted resurrection claims would not make him Christian, because biblical authority still looks morally ugly and evidentially unstable.",
-              score: 85,
-              critique:
-                "O'Connor's closing is forceful because it distinguishes evidence for an event from allegiance to a moral authority. Even if one granted an empty tomb or postmortem appearances, he says, that would not automatically make the biblical God worthy of worship or the Bible morally trustworthy. This is responsive to the debate's full title, not merely to resurrection apologetics. The weakness is that the rhetoric becomes prosecutorial, especially in the 'ugly Creator' language, and that can obscure the philosophical question of whether moral outrage itself needs grounding. Still, the closing captures why the moral section changed the debate. The score is very high because it lands on the live unresolved burden.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-conditional-importance-parity",
+              "time": "69:20",
+              "role": "Diagnostic challenge",
+              "words": "Christianity's importance if true does not uniquely prioritize it because rival religions and comprehensive ideologies carry comparable conditional stakes.",
+              "score": 64,
+              "critique": "Strongest feature: O'Connor draws a logically powerful distinction between a proposition's enormous importance conditional upon truth and evidence that discriminates it from rival religions or comprehensive ideologies making similarly consequential claims. Principal limitation: The point concerns comparative priority and prudential inquiry rather than the preceding animal-theodicy exchange, making it a conspicuous nonanswer within the locked response structure despite its standalone coherence. Live burden: O'Connor must clarify whether parity defeats belief, distinctive prioritization, or only an exclusive appeal to stakes, while allowing that several high-stakes possibilities could jointly merit investigation. Locked score: The weak band reflects exceptionally strong logic, warrant, precision, and charity within the local parity argument, but its very low responsiveness and burden relevance sharply constrain performance in the exchange where it legally appears.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 76,
-        strengths: [
-          "McLatchie gave a clear public-evidence framework and built a cumulative resurrection case rather than asking for blind faith.",
-          "He handled several Gospel-detail objections well, especially the plural 'we' in John and the broader point about undesigned coincidences.",
-          "He was candid that Numbers 31 is a difficult text rather than pretending every biblical moral problem has an easy answer."
+    "overall": {
+      "pro": {
+        "score": 83,
+        "strengths": [
+          "The early First Corinthians tradition was carefully limited to experiences interpreted as appearances rather than treated as immediate proof of their supernatural cause.",
+          "The plural wording attributed to Mary provided a precise and effective reconciliation of one alleged tomb-account contradiction.",
+          "The Philip and Bethsaida example supplied positive, concrete source-level corroboration rather than relying exclusively on defensive harmonization.",
+          "The theological-context reply directly addressed why Jesus should not be evaluated as an arbitrary resurrected person.",
+          "The Exodus injury provision and Canaanite displacement material offered relevant textual context for specific moral objections."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His theological backdrop sometimes raised the resurrection prior by leaning on the Christian interpretation that the resurrection was supposed to establish.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The cumulative resurrection case did not fully document source independence or compare its evidence systematically with sincere nonfraudulent alternatives.",
+            "links": []
           },
           {
-            text:
-              "His slavery and war replies used contextual distinctions that did not directly justify the permissions O'Connor quoted.",
-            links: [
-              {
-                label: "Special pleading",
-                url: fallacy("special-pleading")
-              }
-            ]
+            "text": "The theological prior was described as independent without adequately excluding retrospective Christian interpretation or narrative construction.",
+            "links": []
           },
           {
-            text:
-              "His appeal to sincerity and martyrdom sometimes slid from witnesses being sincere to the resurrection content being true.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The slavery-law reconciliation did not establish that eye-and-tooth release governed every severe beating covered by the survival provision.",
+            "links": []
+          },
+          {
+            "text": "The retroactive Fall proposal remained speculative and did not explain why anticipated human rebellion morally warrants prehuman animal suffering.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 84,
-        strengths: [
-          "O'Connor kept the evidential threshold proportional to the extraordinary resurrection and divinity claims.",
-          "His moral cross-examination forced the debate from abstract command theory into concrete passages about slavery and wartime captives.",
-          "He separated resurrection, divinity, and moral authority, preventing one partially successful argument from carrying the whole Christian worldview."
+      "con": {
+        "score": 83,
+        "strengths": [
+          "The resurrection-to-Christianity gap cleanly separated proof of an event from proof of divinity, moral authority, and wider doctrine.",
+          "The martyrdom critique identified the missing evidence that recantation was available and would have prevented execution.",
+          "The prophecy challenge directly tested whether purported fulfillment could function as evidence independent of Christian conclusions.",
+          "The surviving-slave provision supplied a concrete moral-authority objection that remained forceful even after granting voluntary servitude.",
+          "The animal-suffering argument correctly preserved the need for explanation despite possible differences between human and animal cognition."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "Some alleged Gospel contradictions, especially around Lazarus and the women at the tomb, were stated more strongly than the evidence warranted.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The extraordinary-evidence objection leaned too heavily on the sources' biblical classification without sufficiently differentiating their dates, dependence, and historical value.",
+            "links": []
           },
           {
-            text:
-              "The Alfred Hitchcock analogy risked treating Jesus as a generic resurrection claimant while underweighting the role of theological context.",
-            links: [
-              {
-                label: "Base-rate neglect",
-                url: bias("base-rate-neglect")
-              }
-            ]
+            "text": "The claim that the Gospels were pervasively mythic exceeded the limited literary parallels developed and did not directly answer the Pauline tradition.",
+            "links": []
           },
           {
-            text:
-              "His moral critique was stronger as a defeater for biblical authority than as a complete positive metaethical account.",
-            links: [
-              {
-                label: "Red herring",
-                url: fallacy("red-herring")
-              }
-            ]
+            "text": "The broad morality indictment grouped diverse texts and traditions without enough interpretation or explicit normative argument.",
+            "links": []
+          },
+          {
+            "text": "The conditional-importance parity point was logically strong but did not answer the animal-theodicy move exposed as its locked target.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that Christianity becomes reasonable when an independently constrained historical resurrection case is combined with antecedent theological context and a morally serious, non-evasive interpretation of disputed scripture.",
+          "premises": [
+            "Early appearance testimony should be disaggregated by date, source, dependence, witness type, and explanatory target before its cumulative force is assessed.",
+            "Resurrection should be compared with conscious fabrication, individual and collective experiences, memory development, and legendary growth through explicit likelihood judgments rather than canonical labels.",
+            "Only expectations demonstrably antecedent to Christian narration should contribute to the theological prior or interpretation of resurrection.",
+            "Defenses of biblical morality must interpret each disputed provision in its full legal and literary context while acknowledging any residual moral cost rather than appealing to context generically."
+          ],
+          "conclusion": "If these historical, theological, and moral analyses converge without borrowing support from one another circularly, Christianity may be rationally preferred to the examined alternatives, though important interpretive and moral objections would remain."
+        },
+        "newArguments": [
+          {
+            "title": "Adversarial source partition",
+            "text": "Partition the resurrection evidence into minimally dependent clusters before combining it: early Pauline tradition, later narrative detail, hostile or neutral background evidence, and sociological evidence about proclamation and cost. Estimate what each cluster establishes without help from the others, then discount overlap explicitly. This method prevents multiple retellings of one tradition from masquerading as independent confirmation while allowing genuinely separate features to accumulate. A resurrection conclusion gains credibility only if several discounted clusters remain jointly more expected under that hypothesis than under the strongest ordinary alternative."
+          },
+          {
+            "title": "Authority as calibrated corroboration",
+            "text": "A resurrection need not deductively entail every teaching to possess evidential relevance to authority. If Jesus publicly connected his mission, death, anticipated vindication, and moral teaching before the event, then a well-supported resurrection could corroborate that integrated self-understanding. The argument must therefore establish those antecedent connections independently and limit its conclusion to teachings sufficiently linked to the vindication claim. This answers the inferential-gap objection probabilistically while avoiding the claim that an extraordinary event validates unrelated propositions."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that Christianity remains unestablished unless independent historical evidence supports resurrection, contextual evidence validly connects it to Christian authority, and disputed moral teachings survive direct ethical scrutiny.",
+          "premises": [
+            "Canonical status neither discredits nor authenticates a source; dating, provenance, dependence, genre, and corroboration must determine its historical weight.",
+            "Evidence of literary shaping weakens resurrection history only when it is connected specifically to the relevant appearance material and distinguished from ordinary literary presentation of remembered events.",
+            "Even strong resurrection evidence requires separately warranted premises linking the event to Jesus's identity, authority, and the particular doctrines under consideration.",
+            "A perfect-goodness claim is vulnerable when a specific scriptural rule remains morally defective after its strongest contextual and regulatory interpretation is granted."
+          ],
+          "conclusion": "Unless Christianity meets all three burdens with independent and proportionate support, withholding assent remains justified, although that conclusion does not establish that every Christian claim is false."
+        },
+        "newArguments": [
+          {
+            "title": "Cross-tradition evidential symmetry",
+            "text": "Apply the same source rules to Christian miracle reports and comparable claims from other traditions: similar discounts for insider testimony, literary dependence, theological motivation, temporal distance, and missing hostile corroboration. If the Christian case receives more favorable treatment, the difference must be justified by publicly accessible features rather than familiarity or doctrinal commitment. This symmetry test does not assume that every miracle claim is equally credible; it asks whether the method that elevates resurrection would also elevate structurally similar reports that the evaluator rejects."
+          },
+          {
+            "title": "Residual wrong under strongest interpretation",
+            "text": "For each challenged moral text, first grant the most plausible historical, regulatory, and non-endorsing interpretation. Then identify the residual rule or commanded treatment that remains and ask whether a perfectly good legislator had morally preferable feasible alternatives. In the slavery exchange, release for specified injuries may mitigate abuse without explaining why other severe violence attracts no stated punishment when recovery follows. This approach avoids broad accusations and focuses the moral-authority challenge on what contextualization does not remove."
           }
         ]
       }
@@ -51202,262 +51277,374 @@ export const debates = [
     }
   },
   {
-    id: "price-craig-resurrection-historical-analogy-1999",
-    number: "137",
-    assessmentModel: "5.6 Terra Extra High",
-    title: "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?",
-    label: "Resurrection, historical analogy, and evidence",
-    date: "2026-07-31",
-    duration: "2 hr 27 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=Pba-YNVWaa0",
-    motion:
-      "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
-    summary:
-      "Craig argues that four early facts make divine resurrection the best explanation, while Price challenges the sources, historical analogy, and whether a miracle explains anything.",
-    sourceNote:
-      "Based on the YouTube transcript for The Debate It upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "The New Testament documents establish four facts concerning Jesus' fate.",
-        context:
-          "Craig's case first identifies a cumulative historical claim, then argues that divine resurrection best explains it."
+    "id": "price-craig-resurrection-historical-analogy-1999",
+    "number": "137",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?",
+    "label": "Resurrection, historical analogy, and evidence",
+    "date": "2026-08-24",
+    "duration": "2 hr 27 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Pba-YNVWaa0",
+    "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 5c6b0c10e33d95fe6f6ef67ab716e565349bc0534bbddd62f55ac7c69e5f3079). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Craig built a cumulative resurrection case from early sources; Price challenged its historical foundations through analogy, literary criticism, and ordinary belief-forming mechanisms.",
+    "quotes": {
+      "pro": {
+        "text": "different individuals and groups saw appearances of Jesus alive after his death",
+        "context": "Craig presents the reported diversity of recipients as central support for historically significant postmortem experiences."
       },
-      con: {
-        text: "No historical inference is possible unless the historian assumes a basic analogy.",
-        context:
-          "Price argues that miracle traditions must be assessed against ordinary historical experience and comparable narratives."
+      "con": {
+        "text": "one can believe in the possibility of Miracles without believing that every reported Miracle",
+        "context": "Price distinguishes metaphysical openness to miracles from evidential acceptance of any particular ancient report."
       }
     },
-    sides: {
-      pro: {
-        name: "Resurrection case",
-        speaker: "William Lane Craig",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Resurrection case",
+        "speaker": "William Lane Craig",
+        "color": "teal"
       },
-      con: {
-        name: "Historical-analogy critique",
-        speaker: "Robert Price",
-        color: "coral"
+      "con": {
+        "name": "Historical-analogy critique",
+        "speaker": "Robert Price",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 79,
-      con: 74
+    "score": {
+      "pro": 83,
+      "con": 80
     },
-    sections: [
+    "sections": [
       {
-        title: "Consensus and the Four Facts",
-        timebox: "01:27-32:37",
-        score: {
-          pro: 78,
-          con: 70
+        "sectionId": "sources-and-historical-method",
+        "title": "Source Proximity, Textual Integrity, and Historical Method",
+        "timebox": "28:01–120:07",
+        "score": {
+          "pro": 83,
+          "con": 82
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "01:27",
-              role: "Cumulative historical framework",
-              words:
-                "Craig says the New Testament establishes Jesus' burial, empty tomb, postmortem appearances, and the disciples' resurrection belief, and says these claims command broad scholarly support.",
-              score: 78,
-              critique:
-                "Craig starts with a clear, testable structure: identify four historical claims, then ask for their best explanation. That is much better than assuming a miracle and reading the texts backward from it. His appeal to broad scholarly support can legitimately signal that the claims deserve attention, and he goes on to offer reasons for each. The weakness is that consensus language arrives before the detailed case and sometimes carries more rhetorical force than evidential force. Several proposed facts, especially the empty tomb, remain substantially disputed even among nonconfessional scholars. A consensus cannot settle the quality, independence, or interpretation of the sources. The score is strong because the framework is disciplined and relevant, but it needs the subsequent evidence rather than scholars' agreement to bear the argument.",
-              tags: [
-                {
-                  label: "Appeal to authority",
-                  type: "fallacy",
-                  url: fallacy("appeal-to-authority"),
-                  context:
-                    "The stated scholarly majority is used to increase confidence before the underlying source arguments have been assessed in the exchange."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-source-first-corinthians-authenticity",
+              "time": "41:49",
+              "role": "Major direct reply",
+              "words": "Universal manuscript inclusion, early citation, contextual continuity, vocabulary, and pronoun usage strongly support Pauline authorship of First Corinthians 15:3–11 against interpolation.",
+              "score": 85,
+              "critique": "Strongest feature: The response offers convergent external and internal evidence, including universal manuscript presence, early citation, vocabulary, pronoun continuity, and argumentative disruption resulting from excision. Principal limitation: Its impressive authenticity case does not by itself establish every appearance's historicity and only partially contacts the earlier methodological objections concerning analogy and case-specific miraculous inference. Live burden: Craig must connect authentic Pauline use to the tradition's dating, testimonial reliability, experiential content, and comparative explanatory significance without treating textual authenticity as historical verification. Locked score: The very strong band reflects exceptional precision, evidence, calibration, and engagement with interpolation, while acknowledging reduced responsiveness to the legally exposed methodological targets and the remaining distance between authentic text and established event.",
+              "tags": []
             },
-            con: {
-              time: "20:24",
-              role: "Independence-from-consensus objection",
-              words:
-                "Price says that a majority of scholars does not determine truth and urges listeners to examine the historical issues rather than defer to academic consensus.",
-              score: 70,
-              critique:
-                "Price is right that majority agreement does not turn a historical conclusion into a fact. His appeal to independent scrutiny usefully checks a debate style in which named scholars and consensus can become shortcuts for source analysis. He also identifies a fair distinction between asking what most specialists believe and asking why their evidence warrants it. The weakness is that he spends most of this opening attacking Craig's apologetic commitments and alleged motives rather than testing the burial, tomb, appearance, and belief claims one by one. That move may explain why he distrusts Craig, but it does not show that the proposed evidence fails. The score is mixed: the methodological reminder is sound, while its delivery diverts attention from the live historical burden.",
-              tags: [
-                {
-                  label: "Red herring",
-                  type: "fallacy",
-                  url: fallacy("red-herring"),
-                  context:
-                    "The opening shifts from Craig's four historical claims to Craig's religious motivation without yet showing that any particular claim is false or unsupported."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-case-by-case-miracle-assessment",
+              "time": "28:01",
+              "role": "Major direct reply",
+              "words": "Historical assessment can remain open to miraculous possibility while requiring case-specific evidence, because divine capability does not authenticate every reported miracle.",
+              "score": 90,
+              "critique": "Strongest feature: The response cleanly distinguishes metaphysical possibility, divine capability, and historical actuality, preventing either automatic supernatural acceptance or antecedent dismissal from replacing case-specific evidential assessment. Principal limitation: This methodological distinction is exceptionally sound but does not itself determine how Craig's particular cumulative evidence performs, because his stated inference purports to be comparative rather than indiscriminately credulous. Live burden: Price must apply the standard to burial, tomb, appearances, and belief formation, explaining which evidential links fail and why resurrection underperforms identifiable alternatives. Locked score: The very strong band reflects outstanding conceptual precision, calibration, relevance, and charitable reframing, while withholding complete fulfillment because the decisive case-specific evidential comparison remains largely prospective rather than executed.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-source-canonical-documents-admissible",
+              "time": "117:09",
+              "role": "Major direct reply",
+              "words": "New Testament letters, Gospels, and Acts remain individually assessable first-century documents despite their later collection within a single ecclesiastical canon.",
+              "score": 79,
+              "critique": "Strongest feature: The reply correctly separates individual first-century documents from their later canonical collection, preserving ordinary historical assessment rather than permitting collective disqualification by subsequent ecclesiastical status. Principal limitation: Documentary admissibility does not answer Price's stronger redactional, legendary, dependence, or passage-specific objections, and apostolic proximity in canonical selection is asserted without independent substantiation. Live burden: Craig must move from methodological eligibility to differentiated reliability, addressing provenance, genre, transmission, and particular source defects rather than relying on separate-document status alone. Locked score: The strong band rewards clear scope, logical coherence, central relevance, and a useful methodological correction, while reflecting only partial responsiveness, compressed evidence for selection history, and incomplete representation of the opponent's actual source-quality critique.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-historical-analogy-method",
+              "time": "31:19",
+              "role": "Major direct reply",
+              "words": "Historical reasoning relies on analogy with experience, making familiar legendary explanations methodologically preferable to unprecedented claims without requiring a metaphysical denial of miracles.",
+              "score": 77,
+              "critique": "Strongest feature: The response articulates analogy as an indispensable component of historical inference and explains why experiential familiarity appropriately influences assessments of extraordinary ancient narratives without foreclosing metaphysical possibility. Principal limitation: Werewolves, alchemy, and fairy-tale comparisons caricature the evidentially developed resurrection claim, encouraging an insufficiently graduated movement from unusualness toward historical rejection without detailed case comparison. Live burden: The method must specify relevant similarities, accommodate exceptional events supported by unusually strong evidence, and demonstrate why ordinary legendary mechanisms better fit these particular sources. Locked score: The strong band recognizes substantial methodological relevance, clear recoverability, and direct contact with supernatural inference, while reflecting weakened charity, incomplete qualification, and evidential illustrations that outrun the carefully defensible principle.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Historical Analogy and Pagan Parallels",
-        timebox: "30:40-42:10",
-        score: {
-          pro: 79,
-          con: 81
+        "sectionId": "burial-and-empty-tomb",
+        "title": "Burial Tradition and the Empty Tomb",
+        "timebox": "2:08–137:23",
+        "score": {
+          "pro": 84,
+          "con": 80
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "39:12",
-              role: "Contextual disanalogy rebuttal",
-              words:
-                "Craig says the ancient stories Price cites are diverse and lack a causal connection to first-century Palestinian Jewish belief in Jesus' resurrection.",
-              score: 79,
-              critique:
-                "Craig makes the right initial demand of a comparative argument: similar motifs do not establish dependence, and a comparison must respect the Jewish setting of the earliest Jesus movement. His distinctions among crop-cycle myths, apotheosis stories, disappearance tales, and emperor cults prevent the word resurrection from doing all the work. He also reasonably asks what mechanism would make Galilean Jews infer a bodily resurrection from pagan stories they may not have endorsed. The weakness is that he sometimes treats absence of direct borrowing as if it answered Price's broader genre claim. Price need not prove that disciples copied Hercules to argue that vanished-body and appearance stories were recognizable literary patterns. The score is strong because Craig exposes a missing causal bridge, but it only partly addresses the comparative challenge.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-burial-joseph-known-tomb",
+              "time": "2:08",
+              "role": "Load-bearing constructive",
+              "words": "Early Pauline and Markan traditions independently support Joseph of Arimathea's honorable burial of Jesus in an identifiable tomb, with no competing burial tradition presented.",
+              "score": 83,
+              "critique": "Strongest feature: The argument identifies Joseph, an ascertainable tomb, Pauline attestation, and comparatively early Markan material, thereby constructing a concrete historical proposition rather than an indefinite burial possibility. Principal limitation: Early provenance and apparent independence strengthen transmission credentials, yet neither characteristic independently establishes factual accuracy, and the asserted absence of competing tradition receives insufficiently discriminating consideration. Live burden: The case still must demonstrate that Pauline and Markan materials genuinely provide independent, historically reliable access and that alternative burial scenarios inadequately explain the evidentiary record. Locked score: The strong band appropriately reflects excellent central relevance, coherent cumulative organization, and specific source grounding, while retaining meaningful reservations about evidential calibration, implicit uncertainty, and incompletely defended historical confidence.",
+              "tags": []
             },
-            con: {
-              time: "36:39",
-              role: "Genre-and-analogy challenge",
-              words:
-                "Price argues that ancient hero biographies include vanished bodies, postmortem appearances, and initially doubtful followers, so the Gospel resurrection stories may belong to a familiar theological genre.",
-              score: 81,
-              critique:
-                "Price raises a substantial methodological challenge by placing the Gospel narratives beside ancient stories of ascended heroes and postmortem appearances. The comparison does not merely point to a superficial word match; it asks whether an empty body site, an appearance, and initial skepticism can function as established storytelling devices. That is relevant evidence against treating the Gospel form as transparently journalistic. The weakness is calibration. Ancient comparisons differ in date, social setting, narrative purpose, and content, and Price does not show that these particular texts caused or fully explain early Christian belief. Similarity can lower an inference from genre to event without eliminating every historical core. The score is high because the genre question is well aimed, though the conclusion should remain probabilistic rather than categorical.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-vanished-body-hero-genre",
+              "time": "36:11",
+              "role": "Major direct reply",
+              "words": "Ancient vanished-body, heavenly-ascent, appearance, and skeptical-disciple motifs place the empty-tomb narrative within a recognizable theological hero-story pattern rather than straightforward reportage.",
+              "score": 81,
+              "critique": "Strongest feature: The move connects tomb disappearance and postmortem appearances to recognizable ancient narrative patterns, directly challenging an uncomplicated transition from theological storytelling to historical reporting. Principal limitation: Structural resemblance alone neither demonstrates literary dependence nor excludes historically transmitted content, and the asserted genre classification receives insufficient element-by-element comparison, chronology, and causal specification. Live burden: Price must identify diagnostically significant parallels, distinguish broad motifs from close correspondence, and explain why genre formation better predicts the Christian material than historically grounded theological narration. Locked score: The strong band reflects direct contact with two foundational claims, coherent analogical pressure, and genuine source-critical relevance, while retaining reservations about evidential detail, implicit qualification, and an overdrawn opposition between theology and history.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-empty-tomb-women-early-tradition",
+              "time": "6:19",
+              "role": "Load-bearing constructive",
+              "words": "Women discovered Jesus' tomb empty after the crucifixion, supported cumulatively by Pauline implications, early Markan tradition, narrative simplicity, and a hostile missing-body explanation.",
+              "score": 84,
+              "critique": "Strongest feature: The presentation combines women discoverers, Sunday chronology, Pauline implications, early Markan material, narrative characteristics, and hostile acknowledgment into a focused cumulative defense of the empty tomb. Principal limitation: Several considerations may derive from interconnected traditions, while narrative simplicity and an adversarial missing-body explanation require stronger demonstration before functioning as independent historical confirmation. Live burden: The argument must establish the provenance, independence, and diagnostic significance of these strands while comparing literary development and source-critical alternatives with comparable specificity. Locked score: The strong band recognizes unusually direct burden contact, coherent convergence, and multiple identifiable considerations, while preserving substantial caution about implicit qualification, uncertain independence, and confidence extending beyond the demonstrated warrant.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-burial-tomb-source-problems",
+              "time": "135:31",
+              "role": "Major direct reply",
+              "words": "Narrative marvels, anachronisms, historical difficulties, and alternative literary accounts undermine confidence that Joseph's burial and the empty tomb are established facts.",
+              "score": 78,
+              "critique": "Strongest feature: The response directly distinguishes possible burial from warranted burial and applies source-quality concerns to both Joseph's tomb and the ensuing empty-tomb narrative. Principal limitation: Broad references to marvels, anachronisms, and historical problems remain largely unspecified, preventing evaluation of whether those defects actually contaminate the particular traditions under dispute. Live burden: Price must identify relevant examples, trace their relationship to burial and tomb material, and answer the possibility that problematic narratives nevertheless preserve early historically credible traditions. Locked score: The strong band reflects excellent relevance, explicit qualification, and direct engagement with foundational claims, while registering comparatively weak evidential particularity, partly unstable terminology, and an inference from general narrative difficulty that remains stronger than demonstrated.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Paul and the Appearance Tradition",
-        timebox: "41:07-54:47",
-        score: {
-          pro: 86,
-          con: 67
+        "sectionId": "postmortem-appearances",
+        "title": "Nature and Historical Status of the Postmortem Appearances",
+        "timebox": "12:16–137:46",
+        "score": {
+          "pro": 84,
+          "con": 78
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "42:10",
-              role: "Textual-authenticity defense",
-              words:
-                "Craig argues that 1 Corinthians 15:3-11 is present in every manuscript, quoted early, and structurally necessary to Paul's argument for resurrection.",
-              score: 86,
-              critique:
-                "Craig's answer to the interpolation proposal is one of his strongest moves. He gives several independent kinds of pressure: unanimous surviving manuscript evidence, early patristic use, the passage's grammatical connections to its context, and its role in Paul's argument about resurrection. That combination properly places the burden on an excision theory to supply more than discomfort with the result. Craig also distinguishes Paul's revelation language in Galatians from receiving tradition about historical claims, which is a plausible reading. The limitation is that no surviving manuscript reaches the earliest decades, so later unanimity cannot logically rule out an early alteration. Still, Price offers no concrete textual break or transmission evidence. The score is very high because Craig identifies the central evidential asymmetry clearly and directly.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-appearances-individuals-groups",
+              "time": "12:16",
+              "role": "Load-bearing constructive",
+              "words": "Paul's early witness list, acquaintance with participants, and multiple Gospel strands support postmortem appearance experiences reported by different individuals and groups.",
+              "score": 84,
+              "critique": "Strongest feature: The move places an early Pauline witness list, personal acquaintance, recipient diversity, and multiple narrative strands behind a clearly recoverable claim that individuals and groups experienced appearances. Principal limitation: It insufficiently distinguishes reported experience from bodily encounter, and scholarly acknowledgment cannot substitute for demonstrating source independence, experiential character, or the reliability of every listed occurrence. Live burden: The case must clarify precisely what the earliest testimony establishes and show why visionary, communal, literary, or dependent-transmission accounts inadequately explain its distribution. Locked score: The strong band reflects excellent relevance, structured evidential presentation, and substantial historical proximity, while recognizing understated uncertainty, partly unexamined alternatives, and a conclusion somewhat stronger than the supplied warrant.",
+              "tags": []
             },
-            con: {
-              time: "49:06",
-              role: "Interpolation-and-vision alternative",
-              words:
-                "Price treats 1 Corinthians 15:3-11 as a later creed and says that reports of visions, including large groups, do not establish a bodily resurrection.",
-              score: 67,
-              critique:
-                "Price makes two fair cautions. Extant copies are later than Paul, so manuscript unanimity is not absolute proof against interpolation; and an experience reported as a vision does not automatically establish a bodily return from death. His modern vision examples help separate sincerity from verification. The weakness is that his positive interpolation theory is under-argued. Calling a formula a creed does not make it late, and the absence of the five hundred in the Gospels is not good evidence that Paul could not have known the tradition. He also moves too quickly from the possibility of visionary experience to a general explanation of this particular evidence. The score is below solid because the cautions matter, but the proposed textual reconstruction lacks commensurate support.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "The Gospels' omission of the five hundred is used to support the passage's lateness, although an omission does not establish that conclusion."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-corinthians-creed-composite",
+              "time": "49:06",
+              "role": "Major direct reply",
+              "words": "Form-critical tensions and institutional features permit treating First Corinthians 15:3–11 as a later composite creed, weakening its status as early appearance evidence.",
+              "score": 78,
+              "critique": "Strongest feature: The reply directly challenges both Pauline authenticity and historical use by identifying creed form, compositional fragments, textual tensions, and potentially later institutional characteristics within the passage. Principal limitation: Traditional or composite formulation can be early and authentically quoted by Paul, while universal manuscript attestation and contextual integration receive less direct rebuttal than the interpolation hypothesis requires. Live burden: Price must date the alleged insertion, explain its universal transmission and contextual fit, and demonstrate why compositeness indicates lateness rather than early communal preservation. Locked score: The strong band recognizes direct responsiveness, explicit qualification, and relevant form-critical observations, while reflecting unstable dating implications, comparatively limited evidential warrant, and insufficient engagement with the strongest compatibility between early tradition and authentic Pauline incorporation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-gospel-appearances-low-value",
+              "time": "137:21",
+              "role": "Major direct reply",
+              "words": "Common visionary experiences and accumulated redactional or legendary material reduce the Gospel appearance narratives' historical value without excluding every underlying experience.",
+              "score": 77,
+              "critique": "Strongest feature: The response directly contests Gospel evidential value while explicitly allowing that experiences may have occurred, thereby avoiding an unnecessarily absolute denial of postmortem reports. Principal limitation: Assertions of redactional and legendary accumulation receive little demonstration, visions are insufficiently distinguished from claimed appearances, and the earlier Pauline witness material remains substantially unanswered. Live burden: Price must identify specific narrative developments, explain their dating and evidential consequences, and integrate an account of Paul's testimony rather than limiting the critique to later Gospel presentation. Locked score: The strong band recognizes central relevance, explicit uncertainty, and meaningful contact with narrative reliability, while reflecting limited warrant, terminological instability, partial coverage of the pro case, and insufficiently developed source criticism.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Burial, Belief, and Explanation",
-        timebox: "02:25-2:26:04",
-        score: {
-          pro: 80,
-          con: 75
+        "sectionId": "resurrection-belief-origins",
+        "title": "Origins of the Disciples’ Resurrection Belief",
+        "timebox": "14:29–140:10",
+        "score": {
+          "pro": 82,
+          "con": 83
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "02:25",
-              role: "Cumulative evidence and likelihood case",
-              words:
-                "Craig links early burial and tomb traditions, appearance testimony, and transformed belief, then says the relevant question is how likely that evidence would be if God had not raised Jesus.",
-              score: 80,
-              critique:
-                "Craig presents the best version of a cumulative case rather than relying on one Gospel detail. He identifies early Pauline tradition, recurring burial and tomb narratives, appearance testimony, and the need to explain a surprising resurrection conviction among Jews. His closing likelihood question is also useful: a good rival account should address the evidence's alleged pattern, not merely label a miracle unusual. The weakness is that several links are more contested than he lets on. Paul does not explicitly narrate Joseph's tomb or the women, source layers are reconstructed, and transformed conviction establishes sincerity more readily than truth. Natural alternatives may be imperfect without making divine agency more likely. The score is strong for organized cumulative reasoning, with a meaningful discount for disputed warrants and unquantified comparative likelihoods.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-belief-sudden-jewish-expectations",
+              "time": "14:29",
+              "role": "Load-bearing constructive",
+              "words": "The disciples sincerely adopted resurrection belief despite messianic disappointment, crucifixion's stigma, and Jewish expectations locating resurrection generally at history's culmination.",
+              "score": 81,
+              "critique": "Strongest feature: The argument sharply identifies the explanatory discontinuity between a crucified leader, messianic disappointment, perceived divine curse, general resurrection expectations, and the disciples' specific proclamation. Principal limitation: Its characterization of Jewish expectations and unanimous disciple predispositions is excessively uniform, leaving insufficient room for diversity, reinterpretation, adaptation, and uneven development within disappointed religious communities. Live burden: The pro case must preserve the genuine historical surprise while demonstrating that available Jewish categories and ordinary belief-revision mechanisms could not plausibly generate this particular early conviction. Locked score: The strong band rewards central relevance, explanatory clarity, and a meaningful contextual challenge, while registering compressed intellectual history, implicit qualifications, and incomplete engagement with adaptable or developmental alternatives.",
+              "tags": []
             },
-            con: {
-              time: "2:15:42",
-              role: "Legendary-source and explanatory objection",
-              words:
-                "Price says Gospel narratives rich in marvels do not establish Joseph's burial or an empty tomb, and calls a miracle explanation an attempt to explain an unknown by a larger unknown.",
-              score: 75,
-              critique:
-                "Price gives the skeptical alternative real work. He correctly notes that a narrative's assertion of Joseph's burial or a missing body is not self-authenticating, particularly when the same sources contain theological and miraculous material. His challenge to miracle as a completed explanation also presses Craig to justify divine action rather than merely announce it. The weakness is that he often treats a legendary cast as permission to discard every specific tradition, rather than weighing source elements separately. Calling divine agency mysterious does not show it is explanatorily empty if its background premises are true. Price also supplies only broad analogies for the movement's survival, not a detailed reconstruction of the earliest evidence. The score is solid because he identifies important burdens, but his alternative remains incomplete.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-resurrection-belief-retrojection",
+              "time": "81:38",
+              "role": "Major direct reply",
+              "words": "Expectations of Jesus' future return could have been projected backward into prior appearances and resurrection, presenting a developmental alternative without claiming certainty about its occurrence.",
+              "score": 82,
+              "critique": "Strongest feature: The argument explicitly offers a developmental mechanism connecting expected future return with backward projection of resurrection and appearances, while carefully presenting that reconstruction as possibility rather than established history. Principal limitation: A conceivable pathway does not demonstrate actual occurrence, and the move supplies insufficient chronological, textual, or sociological evidence for the proposed stages, timing, and distribution. Live burden: Price must show that retrojection arose early enough, explain the specific appearance traditions and bodily-resurrection content, and outperform interpretations grounded in experiences contemporaries understood as encounters. Locked score: The strong band reflects admirable calibration, substantial responsiveness, coherent possibility generation, and appropriate uncertainty, while preserving a major evidential reservation about whether the hypothetical development explains the available particulars.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-belief-pagan-causation-gap",
+              "time": "39:04",
+              "role": "Major direct reply",
+              "words": "Greco-Roman hero parallels differ from Jewish resurrection categories and lack a demonstrated causal route capable of explaining the earliest Galilean disciples' belief.",
+              "score": 83,
+              "critique": "Strongest feature: The reply distinguishes Jewish resurrection from Greco-Roman hero categories and demands an intelligible transmission pathway, thereby directly testing whether pagan material actually explains the earliest disciples' conviction. Principal limitation: Absence of demonstrated borrowing more decisively weakens direct dependence than broader ideal-type analogy, and describing pagan mythology as simply mistaken exceeds the compressed cultural and conceptual comparison supplied. Live burden: Craig must separate causal-borrowing hypotheses from comparative genre arguments and substantiate both categorical differences and the earliest community's alleged insulation from wider Greco-Roman influences. Locked score: The strong band rewards focused rebuttal, clear causal reasoning, and important pressure on the opponent's central bridge, while recognizing partial responsiveness, limited cultural evidence, and insufficient charity toward noncopying analogical explanations.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-cognitive-dissonance-persistence",
+              "time": "137:44",
+              "role": "Major direct reply",
+              "words": "Comparative cases of disappointed movements show how reinterpretation and cognitive-dissonance reduction can preserve commitment after apparent disconfirmation without requiring resurrection.",
+              "score": 83,
+              "critique": "Strongest feature: The move supplies a recognizable psychological and sociological mechanism for preserving a disappointed movement, supported by comparative examples of reinterpretation after apparent disconfirmation. Principal limitation: Persistence is not equivalent to generating the specific early claims of bodily resurrection and distributed appearances, while comparability between the cited movements and earliest Christianity remains insufficiently defended. Live burden: Price must connect cognitive-dissonance reduction to the content, timing, and testimonial shape of Christian proclamation rather than merely explaining why some adherents continued believing. Locked score: The strong band reflects coherent plausibility, central relevance, calibrated force, and substantial responsiveness to messianic disappointment, while preserving significant reservations about historical specificity, comparative fit, and incomplete coverage of the cumulative appearance evidence.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "best-explanation",
+        "title": "Resurrection as the Best Explanation",
+        "timebox": "18:04–145:01",
+        "score": {
+          "pro": 81,
+          "con": 76
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-resurrection-best-cumulative-explanation",
+              "time": "18:04",
+              "role": "Load-bearing constructive",
+              "words": "Because theft and apparent-death theories fail to explain the asserted burial, empty tomb, appearances, and transformed belief, divine resurrection is offered as their best cumulative explanation.",
+              "score": 76,
+              "critique": "Strongest feature: The move directly reaches the motion by unifying burial, empty tomb, appearances, and resurrection belief under one proposed explanation and contrasting that account with recognizable older alternatives. Principal limitation: Rejecting theft and apparent death does not exhaust serious literary, visionary, sociological, or composite explanations, while scholarly rejection and asserted absence cannot perform the missing comparative analysis. Live burden: The inference must condition explicitly on the underlying facts, specify divine resurrection's predictive advantages, and compare the strongest ordinary alternatives individually and jointly under consistent explanatory criteria. Locked score: The strong band reflects maximal motion relevance and intelligible cumulative structure, but also substantial evidential overstatement, limited representative charity, missing uncertainty, and an inadequately completed best-explanation comparison.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-literary-sources-insufficient",
+              "time": "87:17",
+              "role": "Major direct reply",
+              "words": "The resurrection may be conceivable, yet literary and theologically developed narratives do not supply adequate historical warrant for confidence that the asserted events occurred.",
+              "score": 82,
+              "critique": "Strongest feature: The response carefully separates the conceivable truth of resurrection from whether surviving texts justify historical confidence, directly addressing the motion without relying on metaphysical impossibility. Principal limitation: Calling narratives literary creations does not automatically eliminate historically usable testimony, and the contrast between literary and historical evidence remains insufficiently defined and source-specifically demonstrated. Live burden: Price must identify concrete redactional or legendary features affecting each foundational claim and explain why critical extraction cannot recover credible traditions beneath theological composition. Locked score: The strong band reflects maximal motion relevance, explicit uncertainty, charitable concession, and a valid evidential distinction, while recognizing underdeveloped criteria, comparatively modest supporting evidence, and an overbroad inference from literary construction to historical insufficiency.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-explanation-likelihood-evidence",
+              "time": "143:04",
+              "role": "Major direct reply",
+              "words": "Comparative assessment must consider how probable the empty tomb, appearances, and disciples' faith would be without resurrection, not prior improbability alone.",
+              "score": 86,
+              "critique": "Strongest feature: The response correctly identifies evidential likelihood under nonresurrection as indispensable to comparative inference, preventing prior improbability or causal unfamiliarity from monopolizing the assessment. Principal limitation: Calling the evidence extraordinarily improbable without resurrection remains asserted rather than demonstrated, and the reasoning assumes disputed facts while insufficiently modeling composite ordinary alternatives and source uncertainty. Live burden: Craig must establish the evidentiary conjunction, assign defensible comparative expectations, and examine literary, visionary, and sociological hypotheses singly and jointly under consistent criteria. Locked score: The very strong band reflects exceptional diagnostic clarity, logical coherence, direct relevance, and responsiveness to the explanatory objection, while retaining meaningful reservations about empirical warrant, understated alternatives, and the missing likelihood demonstration.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-miracle-explanatory-deficit",
+              "time": "140:07",
+              "role": "Major direct reply",
+              "words": "A bare miracle attribution replaces one historical uncertainty with a less understood cause, offering no explanatory improvement merely by naming supernatural agency.",
+              "score": 70,
+              "critique": "Strongest feature: The objection identifies a genuine distinction between explaining evidence and merely attaching a supernatural label to uncertainty, directly testing the resurrection hypothesis's claimed explanatory adequacy. Principal limitation: The UFO comparison weakens Craig's developed position and conflates mechanistic unfamiliarity with absence of predictive or comparative power within a broader theistic explanatory framework. Live burden: Price must evaluate likelihood, scope, fit, and prior context rather than assuming that limited causal understanding alone defeats a divine-resurrection hypothesis. Locked score: The mixed band appropriately reflects high central relevance and a legitimate warning against explanatory relabeling, alongside serious shortcomings in charity, evidential comparison, responsiveness to source admissibility, and engagement with the strongest probabilistic formulation of the opposing case.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 79,
-        strengths: [
-          "Craig gives the debate a disciplined evidential architecture, distinguishing the four proposed facts from the separate claim that resurrection best explains them.",
-          "His response to the interpolation of 1 Corinthians 15 is the clearest exchange, combining manuscript, contextual, and argumentative considerations.",
-          "He presses a genuine explanatory question: a rival account must address the rise and shape of early resurrection belief, not merely reject a miracle."
+    "overall": {
+      "pro": {
+        "score": 83,
+        "strengths": [
+          "Built a coherent cumulative route from identifiable burial and empty-tomb traditions through appearances and the origin of resurrection belief.",
+          "Defended First Corinthians 15 with unusually specific external and internal textual considerations.",
+          "Correctly identified evidential likelihood under no resurrection as a necessary component of comparative explanation.",
+          "Pressed the important distinction between direct pagan borrowing and broader resemblance by demanding categorical and causal specificity."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He repeatedly leaned on scholarly consensus and named authorities in ways that risked making agreement carry more weight than the disputed source-level arguments.",
-            links: [
-              {
-                label: "Appeal to authority",
-                url: fallacy("appeal-to-authority")
-              }
-            ]
-          },
-          {
-            text:
-              "His conclusion that natural explanations have failed treated the absence of a decisive rival account as stronger support for divine resurrection than the contested source base justifies.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The culminating best-explanation claim compared mainly theft and apparent death, leaving the strongest literary, visionary, sociological, and composite alternatives insufficiently tested.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 74,
-        strengths: [
-          "Price insists that miracle reports require source criticism and historical comparison, not deference to a text's religious authority or a scholarly majority.",
-          "His genre comparison and vision examples supply real reasons to distinguish narrative form and sincere experience from verified bodily resurrection.",
-          "He raises an important explanatory-standard question by refusing to treat an appeal to miracle as self-interpreting historical evidence."
+      "con": {
+        "score": 80,
+        "strengths": [
+          "Distinguished openness to miracles from acceptance of particular reports with excellent conceptual precision.",
+          "Kept source sufficiency separate from metaphysical possibility and repeatedly acknowledged uncertainty about proposed reconstructions.",
+          "Applied literary, form-critical, analogical, and sociological challenges across every major factual component.",
+          "Offered cognitive-dissonance reduction and retrojection as intelligible alternatives to a simple event-to-belief pathway."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His opening devotes extensive space to Craig's evangelical commitments, which does not directly test the four historical claims under dispute.",
-            links: [
-              {
-                label: "Red herring",
-                url: fallacy("red-herring")
-              }
-            ]
+            "text": "Several central objections relied on broad genre or source-quality assertions without the detailed comparisons needed to establish their application to the particular traditions.",
+            "links": []
           },
           {
-            text:
-              "His interpolation proposal relies heavily on what later sources omit and on a late-creed intuition without supplying proportionate textual evidence.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The UFO and fairy-tale analogies weakened engagement with the strongest probabilistic and evidential formulation of the resurrection case.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that resurrection deserves serious comparative preference if a carefully bounded core of early evidence remains more expected under purposeful divine action than under the strongest combined ordinary alternatives.",
+          "premises": [
+            "Textual authenticity, historical occurrence, and interpretation are separate questions; authentic Pauline testimony establishes early proclamation and reported experiences without automatically proving every narrated event.",
+            "The burial and empty-tomb case should receive only the confidence supported by provenance, independence, named participants, and hostile-response evidence after literary dependence is explicitly discounted.",
+            "Jewish diversity permits adaptation, yet the specific conjunction of a crucified messiah, individual and group appearances, and bodily-resurrection proclamation still requires a historically particular explanation.",
+            "Comparative assessment must evaluate source uncertainty and the joint predictive fit of resurrection, visionary experience, literary development, belief preservation, and mixed explanations rather than eliminating only older single-cause theories.",
+            "If a purposive theistic context is independently reasonable, divine action is not an arbitrary placeholder, although that context cannot substitute for evidence tied specifically to Jesus and the reported aftermath."
+          ],
+          "conclusion": "Accordingly, resurrection may be judged the preferable explanation only conditionally: the early evidentiary core must survive source criticism and exhibit better joint fit than developed composite alternatives within an independently supported theistic context."
+        },
+        "newArguments": [
+          {
+            "title": "Correlated-evidence comparison",
+            "text": "A stronger analysis would model dependence rather than merely count traditions. Pauline testimony, Markan narrative, later Gospel elaboration, and early community belief should be grouped according to plausible transmission relationships. The question then becomes whether the remaining partly independent evidence is more expected under resurrection than under a mixture of bereavement experiences, narrative development, and movement preservation. This approach prevents duplicated traditions from inflating the case while also preventing one literary explanation from automatically dissolving every historically earlier datum."
+          },
+          {
+            "title": "Discriminating explanatory predictions",
+            "text": "The resurrection hypothesis should be evaluated through discriminating predictions rather than causal familiarity alone. A purposive divine act connected to Jesus' mission would make early vindication claims, transformed interpretation of crucifixion, and appearance-centered proclamation more expected, but it would not automatically predict every later narrative detail. Restricting the prediction set guards against using theology to explain anything whatsoever and creates a fair comparison with visionary, legendary, and sociological accounts, each of which must likewise specify what evidence it would and would not anticipate."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that historical confidence in divine resurrection remains unwarranted when uncertain, interdependent literary sources and ordinary belief-forming processes jointly explain the evidentiary record without requiring denial of miracles.",
+          "premises": [
+            "Historical openness to miracles does not reduce the requirement that each reported event receive source-specific assessment using the same standards of provenance, independence, corroboration, and alternative explanation.",
+            "Literary or theological character does not erase historical value, but it lowers confidence when redaction, dependence, symbolic construction, or uncertain dating bears directly on the claimed burial, tomb, or appearances.",
+            "Ancient analogy is evidentially useful only where structural correspondences are identified and alternative genre formation predicts the Christian materials better than historically grounded theological narration.",
+            "Vision, retrojection, and cognitive-dissonance reduction need not reproduce every tradition separately if interacting mechanisms can generate early experiences, reinterpret defeat, preserve commitment, and encourage later narrative elaboration.",
+            "Explanatory comparison should penalize flexibility: a hypothesis able to accommodate any possible evidentiary outcome supplies less discrimination than one specifying which observations would count against it."
+          ],
+          "conclusion": "Therefore, historians may reasonably withhold comparative preference for divine resurrection unless the factual core is independently established and the hypothesis supplies more discriminating evidential expectations than a developed combination of ordinary mechanisms."
+        },
+        "newArguments": [
+          {
+            "title": "Transmission-network alternative",
+            "text": "Instead of proposing a single legend or hallucination, the con case can model a transmission network. Some followers may have had sincere bereavement or visionary experiences; communal interpretation could connect those experiences with scriptural vindication; repeated teaching could standardize witness lists; and narrative authors could later embody the proclamation in tomb and encounter scenes. This model does not establish that every stage occurred, but it yields testable questions about textual dependence, chronological layering, and variation while explaining why sincere testimony and literary development can coexist."
+          },
+          {
+            "title": "Symmetric uncertainty accounting",
+            "text": "A rigorous comparison should propagate uncertainty through the entire cumulative argument. If confidence in burial, tomb discovery, group appearances, or belief timing is less than complete, their conjunction cannot simply be treated as fixed evidence against ordinary alternatives. The same discipline must apply to skeptical mechanisms, whose uncertain stages cannot be declared historical facts either. This symmetry supports a modest conclusion: unresolved source dependence and multiple plausible pathways can prevent comparative establishment of resurrection even when no single ordinary reconstruction is itself demonstrated as the complete history."
           }
         ]
       }
@@ -52090,263 +52277,421 @@ export const debates = [
     }
   },
   {
-    id: "rhodes-dillahunty-evidence-god-2021",
-    number: "140",
-    assessmentModel: "5.6 Terra Extra High",
-    title: "Kenny Rhodes vs Matt Dillahunty: Is There Evidence for God?",
-    label: "Classical theism, essence, and evidence",
-    topicCategory: "cosmological-arguments",
-    date: "2026-07-31",
-    duration: "3 hr 01 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=i0Q_KMN64bk",
-    motion:
-      "Is there good evidence for the existence of the God of classical theism?",
-    summary:
-      "Rhodes argues that composition, essence, and contingent existence require the necessary ground of classical theism; Dillahunty argues that those metaphysical premises are undefended and do not distinguish God from unanswered natural questions.",
-    sourceNote:
-      "Based on the YouTube transcript for the Modern-Day Debate upload. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "There must be one who has given an act of existence to what we see in reality.",
-        context:
-          "Rhodes's case infers a necessary existential ground from the distinction between a thing's nature and its existing."
+    "id": "rhodes-dillahunty-evidence-god-2021",
+    "number": "140",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Kenny Rhodes vs Matt Dillahunty: Is There Evidence for God?",
+    "label": "Classical theism, essence, and evidence",
+    "date": "2026-08-24",
+    "duration": "3 hr 01 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=i0Q_KMN64bk",
+    "motion": "Is there good evidence for the existence of the God of classical theism?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f87cef5fc6a6ce8b83c92b181ad5f6ceee5ef91e869f9dce675d55fb69f4dd21). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Rhodes defended a metaphysical route from finite composition to classical theism; Dillahunty pressed evidential, ontological, agency, identification, and hiddenness objections.",
+    "quotes": {
+      "pro": {
+        "text": "that essence of unicorn has not been composed with an act of existence",
+        "context": "Rhodes uses a conceivable but nonexistent unicorn to distinguish what something is from whether it actually exists."
       },
-      con: {
-        text: "Skepticism is: I will believe those things that are warranted.",
-        context:
-          "Dillahunty asks for a method that identifies God as a supported explanation rather than a label for what remains unknown."
+      "con": {
+        "text": "you're assuming the very thing that you're trying to demonstrate",
+        "context": "Dillahunty argues that the proposed universal link between composition and agency already embeds the intentional composer requiring demonstration."
       }
     },
-    sides: {
-      pro: {
-        name: "Classical-theist grounding",
-        speaker: "Kenny Rhodes",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Classical-theist grounding",
+        "speaker": "Kenny Rhodes",
+        "color": "teal"
       },
-      con: {
-        name: "Skeptical evidentialism",
-        speaker: "Matt Dillahunty",
-        color: "coral"
+      "con": {
+        "name": "Skeptical evidentialism",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 63,
-      con: 85
+    "score": {
+      "pro": 70,
+      "con": 88
     },
-    sections: [
+    "sections": [
       {
-        title: "Existence, Metaphysics, and Evidence",
-        timebox: "09:23-40:45",
-        score: {
-          pro: 68,
-          con: 83
+        "sectionId": "method-and-evidential-standards",
+        "title": "Metaphysical Method and Evidential Standards",
+        "timebox": "8:56–117:12",
+        "score": {
+          "pro": 65,
+          "con": 84
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "09:23",
-              role: "Existential-ground argument",
-              words:
-                "Rhodes says reality's composite beings have existence rather than being existence itself, so multiplicity requires an existential absolute that grounds all that is.",
-              score: 68,
-              critique:
-                "Rhodes presents a recognizable Thomistic strategy: distinguish what a thing is from the fact that it exists, then infer a non-derived source of existence. He appropriately argues that the target is not a laboratory object but a metaphysical explanation of the whole. That keeps the case relevant to ultimate explanation rather than treating God as a missing physical mechanism. The weakness is that its foundational premises arrive as doctrines. He says composed beings cannot account for existence and that multiplicity needs unity, but does not show why the universe cannot be brute, necessary, or explained in another non-theistic way. The conclusion also starts as an impersonal ground but soon receives divine labels. The score is solid-low because the architecture is coherent, yet the inferential bridge is largely promised.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-metaphysical-whole-method",
+              "time": "8:56",
+              "role": "Supporting constructive",
+              "words": "Metaphysical inquiry considers reality as an integrated whole and may address questions about God that examining isolated empirical components cannot resolve by itself.",
+              "score": 66,
+              "critique": "Strongest feature: The methodological proposal directly explains why Rhodes considers comprehensive metaphysical reasoning relevant, and it challenges an exclusively piecemeal evidential framework with an intelligible whole-reality concern. Principal limitation: The crucial vocabulary remains operationally underdeveloped, while the categorical restriction placed upon empirical inquiry receives neither representative support nor a discriminating comparison with integrated scientific explanation. Live burden: The argument must specify what holistic metaphysical access contributes, demonstrate why empirical findings cannot constrain the proposed inference, and distinguish legitimate synthesis from unsupported philosophical assertion. Locked score: The supplied mixed band reflects substantial relevance and recognizable coherence alongside materially overstated necessity, limited evidential warrant, missing qualification, and incomplete engagement with methodological alternatives.",
+              "tags": []
             },
-            con: {
-              time: "19:39",
-              role: "Warrant-before-conclusion challenge",
-              words:
-                "Dillahunty says skepticism seeks warranted beliefs and asks why a desire for an explanation of existence justifies starting with God rather than investigating whatever explanation is available.",
-              score: 83,
-              critique:
-                "Dillahunty usefully separates the understandable desire for an explanation of existence from evidence for a particular theological answer. His receipt example makes the point concrete: ordinary conclusions are supported not only by a story but by background knowledge, independent checks, and ways to investigate error. He also fairly says he would accept God if it emerged as the explanation rather than rule it out beforehand. The limitation is that he sometimes treats empirical investigation as the preferred model without fully explaining how broad metaphysical hypotheses should be compared. An ultimate explanation may be assessed by coherence, scope, and parsimony as well as direct observation. The score is strong because he correctly fixes the burden on Rhodes, though his alternative epistemology remains more cautionary than developed.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-skepticism-truth-seeking-standard",
+              "time": "19:01",
+              "role": "Major direct reply",
+              "words": "Skepticism aims to maximize true beliefs and minimize false ones through sound evidence, including scientific inquiry, rather than dismissing claims simply because they are metaphysical.",
+              "score": 82,
+              "critique": "Strongest feature: Dillahunty provides a clear truth-directed account of skepticism and directly corrects the suggestion that skeptical inquiry simply excludes metaphysical claims through arbitrary methodological restriction. Principal limitation: Invoking scientific and courtroom standards does not fully answer whether piecemeal investigation can resolve questions concerning reality considered comprehensively, and describing evidential standards as solved is overbroad. Live burden: The reply must explain how its methods evaluate distinctively metaphysical premises, while allowing nonempirical reasoning where appropriate and specifying what would count as discriminating support. Locked score: The supplied strong and competent band reflects excellent direct contact, stable formulation, and substantial coherence, tempered by an incomplete response to the whole-versus-parts concern and slight overstatement.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-philosophical-not-piecemeal-empirical",
+              "time": "116:55",
+              "role": "Supporting reply",
+              "words": "The route from a necessary creator to the Christian God is philosophical rather than empirical because examining reality piece by piece cannot determine the whole's ultimate nature.",
+              "score": 64,
+              "critique": "Strongest feature: The reply consistently restates Rhodes's methodological position that questions about ultimate reality may require philosophical synthesis rather than straightforward examination of isolated empirical components. Principal limitation: Calling the route philosophical neither supplies its missing premises nor demonstrates Christian identity, and the response leaves background support, discriminating evidence, and two decisive targets substantially uncontacted. Live burden: Rhodes must present the philosophical derivation, explain how empirical information constrains it, and establish why its conclusion identifies Christianity rather than another ground, agent, or explanatory model. Locked score: The supplied weak band reflects continuing central relevance and a recoverable methodological contrast, outweighed by limited responsiveness, absent evidence, materially overstated exclusion, unstable terminology, and inadequate representation of the evidential challenge.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-background-evidence-standard",
+              "time": "23:03",
+              "role": "Load-bearing constructive",
+              "words": "Every claim requires adequate justification, but familiar propositions inherit extensive background support that extraordinary entity claims do not automatically possess when first proposed.",
+              "score": 86,
+              "critique": "Strongest feature: The comparison between mundane and unfamiliar claims lucidly explains how accumulated background information affects reasonable acceptance without pretending that different propositions require entirely different evidential principles. Principal limitation: The general standard remains illustrative rather than quantitatively specified, and its application to metaphysical claims requires care because relevant support might be conceptual, explanatory, historical, or empirical. Live burden: Dillahunty must connect comparative background plausibility to the particular God claim and identify evidence capable of overcoming its evidential deficit without prejudging admissible philosophical support. Locked score: The supplied very strong band records stable terminology, well-calibrated probability, strong coherence, and direct central relevance, while leaving modest work in applying the principle to the debated metaphysical route.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Essence, Definitions, and Reality",
-        timebox: "40:45-73:45",
-        score: {
-          pro: 58,
-          con: 86
+        "sectionId": "reality-of-essence-and-form",
+        "title": "Essence, Form, Identity, and Abstraction",
+        "timebox": "45:21–69:12",
+        "score": {
+          "pro": 76,
+          "con": 85
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "52:02",
-              role: "Essence-and-existence distinction",
-              words:
-                "Rhodes says definitions track a thing's real essence or nature, and that what a thing is remains distinct from the act by which it exists.",
-              score: 58,
-              critique:
-                "Rhodes identifies a central classical-theist distinction rather than changing topics: a definition of a dodo, person, or pen is meant to concern what the thing is, while existence concerns whether such a nature is instantiated. This can be a serious metaphysical position, and he rightly notes that scientific descriptions do not settle every theory of universals. The weakness is communicative and evidential. Asked what an essence adds beyond an abstract description of stable physical features, he repeatedly answers with essence, nature, or form. That makes the premise difficult to assess and leaves the required ontological status unstated. His criticism of biological classification also arrives without support. The score is weak-to-mixed because the distinction is relevant but never clearly defended in the live exchange.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-persistence-requires-form",
+              "time": "46:18",
+              "role": "Major direct reply",
+              "words": "Personal continuity despite ongoing material change requires a persisting form or essence; otherwise the individual would become wholly different at every successive moment.",
+              "score": 75,
+              "critique": "Strongest feature: The appeal to material replacement, responsibility, and identity over time raises a genuine explanatory challenge for any account that reduces persons to momentary physical descriptions. Principal limitation: Establishing diachronic continuity as a problem does not demonstrate a separate metaphysical form, because causal, biological, psychological, relational, or conventional continuity remain available explanatory candidates. Live burden: Rhodes must show why these alternatives are insufficient, distinguish form from definition or identity criteria, and demonstrate that the proposed essence performs explanatory work beyond redescribing persistence. Locked score: The supplied strong and competent band reflects central relevance and direct contact with the abstraction account, balanced against materially overstated necessity, unstable terminology, limited independent evidence, and insufficient charity toward physicalist continuity.",
+              "tags": []
             },
-            con: {
-              time: "53:00",
-              role: "Nominalist-description challenge",
-              words:
-                "Dillahunty argues that dictionary and scientific definitions describe shared physical features and linguistic use, not a separate immaterial essence that needs an external giver of existence.",
-              score: 86,
-              critique:
-                "Dillahunty's strongest move is methodological: he repeatedly asks what observable or explanatory work essence performs beyond a description of properties, structure, continuity, and shared language. The dodo, pen, and cell examples expose that a classification can be abstract without being a separate entity. His set-theory reply also shows how organisms can share features at different levels without a fixed Platonic form. The weakness is that his nominalism is asserted more than argued. The fact that definitions are language-dependent does not by itself settle whether there are real natural kinds, dispositions, or modal constraints independent of language. Still, Rhodes bears the immediate burden of explaining his stronger ontology, and Dillahunty makes that failure conspicuous. The score is very high for precise, sustained pressure on the disputed premise.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-human-nature-as-abstraction",
+              "time": "45:21",
+              "role": "Major direct reply",
+              "words": "Human nature packages generalized descriptions of physical beings and their behavior rather than identifying an independently existing essence beyond the individuals and actions described.",
+              "score": 85,
+              "critique": "Strongest feature: The abstraction account supplies a concrete rival ontology, explaining shared nature-language without multiplying entities and clarifying the distinction between existing individuals, actions, descriptions, and numerical representations. Principal limitation: Examples of conceptual packaging do not conclusively exclude immanent realism, under which objectively shared structures exist only as instantiated features rather than separately existing abstract objects. Live burden: Dillahunty must explain whether causal, biological, and structural regularities are entirely classification-dependent and why successful generalization provides no support for objective common natures. Locked score: The supplied very strong band reflects direct central relevance, strong responsiveness, stable formulation, and plausible evidential support, moderated by slight overstatement and incomplete engagement with the strongest realist interpretation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-language-signifies-objective-nature",
+              "time": "65:48",
+              "role": "Major direct reply",
+              "words": "Conventional labels and definitions describe rather than create their referents, and Rhodes maintains that this mind-independent reality possesses a nature or essence beyond chosen wording.",
+              "score": 77,
+              "critique": "Strongest feature: Rhodes correctly distinguishes conventional linguistic signs from mind-independent referents, preventing the existence of chosen definitions from being confused with creation of the realities they describe. Principal limitation: Objective objects do not automatically entail objective essences corresponding to classifications, while nature, essence, definition, and reality remain partly interchangeable at the crucial inferential transition. Live burden: The reply must demonstrate which similarities are ontologically privileged, explain why successful reference requires essential structure, and separate modest realism about objects from stronger realism about common natures. Locked score: The supplied strong and competent band acknowledges direct responsiveness, central importance, coherent distinction, and useful clarification, while retaining concerns about overstatement, incomplete warrant, unstable vocabulary, and compressed engagement with conceptualism.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-pen-physical-classification",
+              "time": "67:11",
+              "role": "Major direct reply",
+              "words": "A pen can be recognized through physical properties, intended function, shared language, and learned concepts without demonstrating an additional nonphysical essence beyond those features.",
+              "score": 84,
+              "critique": "Strongest feature: The pen example concretely demonstrates how physical description, function, communication, and similar learned concepts can jointly explain successful identification without visibly requiring an additional nonphysical constituent. Principal limitation: The example does not decide whether organized physical and functional features instantiate an objective kind, and it leaves the separate argument concerning diachronic personal persistence unanswered. Live burden: Dillahunty must distinguish rejection of separable essences from rejection of immanent structure and extend the descriptive account beyond artifacts to natural kinds and continuity through change. Locked score: The supplied strong and competent band reflects precise scope, matched calibration, strong evidence, and direct contact with objective-nature claims, reduced by partial responsiveness to the broader paired challenge.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Composition, Causation, and Agency",
-        timebox: "75:00-85:40",
-        score: {
-          pro: 53,
-          con: 88
+        "sectionId": "essence-existence-and-necessary-ground",
+        "title": "Essence-Existence Composition and the Necessary Ground",
+        "timebox": "14:29–99:26",
+        "score": {
+          "pro": 69,
+          "con": 89
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "76:20",
-              role: "Composer-from-parts inference",
-              words:
-                "Rhodes argues that because a car's parts require a composer, the parts of a person and of the universe likewise require something or someone that put them together.",
-              score: 53,
-              critique:
-                "Rhodes finally states a crisp causal intuition: collections of parts do not explain their own organization, so a composite reality requires a composer. The car example makes his intended dependence relation easy to see, and he tries to broaden the conclusion from human artifacts to time, space, matter, and energy. The weakness is the very analogy carrying the inference. Cars are known products of agents because we have independent evidence of designers, factories, and construction; a universe or organism is not analogous merely because it has distinguishable parts. When challenged, Rhodes says composition is self-evident and that atheism is irrational, rather than supplying the missing rule from parts to intentional assembly. The score is low because the conclusion supplies its key premise instead of establishing it.",
-              tags: [
+            "pro": {
+              "ledgerMoveId": "pro-finite-essence-existence-distinction",
+              "time": "14:29",
+              "role": "Load-bearing constructive",
+              "words": "Finite things display a distinction between what they are and whether they exist, whereas the ultimate ground would unite essence with existence in itself.",
+              "score": 73,
+              "critique": "Strongest feature: The unicorn and dinosaur examples make the difference between conceivability, definition, and actuality readily understandable, thereby presenting the affirmative's central essence-existence premise in accessible form. Principal limitation: A conceptual distinction between describing something and affirming its actuality does not independently establish existence as a metaphysical act composed with an objective essence. Live burden: Rhodes must defend the distinction as mind-independent, clarify the relevant sense of composition, and show why finite actuality requires a source whose essence and existence are identical. Locked score: The supplied mixed band acknowledges strong central relevance, intelligible examples, and coherent direction while preserving the locked concerns about partially unstable terms, overstated necessity, incomplete warrant, and untested alternatives.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-unfalsifiable-necessary-being",
+              "time": "23:48",
+              "role": "Diagnostic challenge",
+              "words": "An unfalsifiable necessary-being conclusion supplies poor evidence when being and necessity enter the reasoning without independent justification or any specified means of critical assessment.",
+              "score": 86,
+              "critique": "Strongest feature: The objection identifies the precise inferential gap between describing finite reality and concluding that a necessary being exists, demanding independent justification for necessity rather than accepting terminology. Principal limitation: Treating empirical falsifiability as broadly decisive risks excluding metaphysical propositions that remain assessable through validity, coherence, explanatory comparison, entailment, or incompatibility with established knowledge. Live burden: The skeptical case should preserve its stronger point by specifying critical tests appropriate to metaphysics and showing that Rhodes's premises lack support even under those standards. Locked score: The supplied very strong band reflects exceptional diagnostic responsiveness, central relevance, precision, and charitable qualification, alongside the locked reservation that unfalsifiability alone was given somewhat excessive evidential significance.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-accidental-existence-entails-per-se",
+              "time": "98:22",
+              "role": "Major direct reply",
+              "words": "If finite beings possess existence only accidentally rather than through themselves, Rhodes argues that their dependent existence logically entails a per-se or self-existent ground.",
+              "score": 64,
+              "critique": "Strongest feature: Rhodes articulates a definite per-accidens-to-per-se principle rather than merely repeating that finite existence needs explanation, and the tallness example makes the scholastic structure understandable. Principal limitation: The analogy transfers from accidental properties inhering in substances to existence itself without showing that existence is the same predicative category or that one self-existent bearer follows. Live burden: The reply must justify treating finite existence as accidental, establish the relevant entailment, exclude dependent existence without such inherence, and connect any per-se ground to uniqueness. Locked score: The supplied weak band reflects high central relevance and recognizable responsiveness, outweighed by radically overstated force, missing qualification, weak independent warrant, category instability, and insufficient treatment of alternatives.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-burnt-wood-analogy-gap",
+              "time": "40:36",
+              "role": "Diagnostic challenge",
+              "words": "Burnt wood supports a fire inference through repeated empirical observation, while no comparable evidence independently establishes essence, existence itself, or a necessary metaphysical ground.",
+              "score": 92,
+              "critique": "Strongest feature: Dillahunty cleanly separates a shared abductive pattern from the independent empirical background that makes fire a credible explanation, thereby identifying the analogy's decisive evidential deficiency. Principal limitation: The response does not fully explore whether metaphysical premises might obtain justification through conceptual analysis rather than through observations resembling the evidence available for combustion. Live burden: The objection should show that alternative philosophical warrants also fail, or explain why the proposed essence-existence categories lack independent credibility under their own appropriate assessment methods. Locked score: The supplied very strong band records excellent precision, calibration, coherence, central relevance, and charitable treatment of the illustrative reading, while retaining a limited opening for a differently supported metaphysical argument.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "composition-causation-and-agency",
+        "title": "Composition, Causation, and the Inference to Agency",
+        "timebox": "12:19–80:27",
+        "score": {
+          "pro": 67,
+          "con": 94
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-multiplicity-requires-unity-ground",
+              "time": "12:19",
+              "role": "Load-bearing constructive",
+              "words": "Composite and multiple features of experienced reality require an ultimate unified ground capable of accounting for multiplicity, which Rhodes identifies with an existential absolute.",
+              "score": 68,
+              "critique": "Strongest feature: This constructive move clearly exposes the central explanatory ambition, connecting experienced composition and multiplicity to a unified ground rather than leaving the affirmative route merely suggestive. Principal limitation: The transition from many organized realities to exactly one ultimate ground is asserted as necessary, while unity, ground, existential absolute, and God remain insufficiently differentiated. Live burden: The reasoning must exclude plural, structural, natural, or non-agent explanations and independently establish why explanatory unification entails an ontologically simple source instead of methodological convenience. Locked score: The supplied mixed band recognizes exceptional centrality and a recoverable inferential direction, yet also records compressed justification, materially overstated necessity, unstable terminology, and minimal comparative evidence.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-artifact-natural-agency-disanalogy",
+              "time": "77:31",
+              "role": "Diagnostic challenge",
+              "words": "Artifacts justify intentional-assembly inferences because their manufacture is independently documented, whereas humans and natural objects lack corresponding evidence that an agent assembled their components.",
+              "score": 93,
+              "critique": "Strongest feature: The reply identifies the independent background knowledge supporting artifact inferences and explains precisely why composition alone cannot transfer that warrant to humans, nature, or the universe. Principal limitation: The empirical disanalogy does not by itself defeat a separately defended metaphysical principle claiming that contingent composition requires an explanatory cause, though it blocks an automatic inference to agency. Live burden: Dillahunty must preserve the distinction between causal dependence and intentional assembly, then assess whether any non-analogical composition principle supports an external ground without presupposing personhood. Locked score: The supplied very strong band reflects outstanding responsiveness, coherence, evidence, central relevance, calibration, and charity, while recognizing that a carefully reformulated non-agent grounding argument would require separate evaluation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-universe-composition-requires-agent",
+              "time": "78:52",
+              "role": "Major direct reply",
+              "words": "Because the universe unifies time, space, matter, and energy as diverse constituents, Rhodes argues that an external ground or agent must have composed it.",
+              "score": 65,
+              "critique": "Strongest feature: The reply directly confronts the agency objection and clearly identifies the universe's diverse constituents as the proposed basis for seeking an explanation beyond their organized conjunction. Principal limitation: The language shifts from ground and something to someone and intentional assembly, while declaring the disputed universal principle nearly self-evident instead of independently supporting it. Live burden: Rhodes must distinguish causal grounding from agency, exclude natural or structural organization, and justify why every relevant composition requires an external intentional composer without relying on artifact-derived intuitions. Locked score: The supplied mixed band reflects high central relevance and direct contact with the objection, constrained by radically overstated necessity, weak warrant, serious inferential instability, and inadequate treatment of non-agent alternatives.",
+              "tags": [
                 {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "The argument treats composite reality as requiring a composer, the very causal rule needed to infer a divine composer from its parts."
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "The inference shifts materially between an explanatory ground, an unspecified something, and an intentional someone who assembled the universe."
                 }
               ]
             },
-            con: {
-              time: "77:40",
-              role: "Artifact-analogy rebuttal",
-              words:
-                "Dillahunty grants that cars are known artifacts but says the universe has no comparable evidence of manufacture, so composition alone cannot establish an intentional composer.",
-              score: 88,
-              critique:
-                "Dillahunty precisely locates the false step in the car comparison. A car's arrangement supports agency because independent background evidence tells us how cars are designed, built, and manufactured. Extending that conclusion to persons, cells, or the universe requires a further argument, not merely the observation that each has parts. His point that an unknown explanation is not automatically an intentional one directly addresses the motion and preserves an appropriate burden of proof. The weakness is that he can sound as though only direct observation of cosmic construction would count. A successful cosmological argument could still supply indirect evidence if its causal principles were independently defended. The score is very high because Rhodes supplies no such defense here, while Dillahunty identifies exactly why the analogy does not transfer.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-composer-inference-circularity",
+              "time": "79:42",
+              "role": "Diagnostic challenge",
+              "words": "The premise that every parts-bearing entity was assembled by an agent embeds the intentional composer being argued for, leaving the composition inference circular and undemonstrated.",
+              "score": 94,
+              "critique": "Strongest feature: Dillahunty pinpoints the immediate structural defect: the universal agency premise already contains the intentional-composer conclusion, so merely observing parts cannot independently demonstrate the disputed agent. Principal limitation: The diagnosis applies decisively to the argument as stated but would not automatically address a reformulated premise concerning non-agent causal dependence or contingent composition. Live burden: The skeptical reply should keep those alternatives distinct, explain what evidence could support causal grounding, and show why no available bridge establishes intention or personhood. Locked score: The supplied very strong band reflects exceptional precision, complete responsiveness, outstanding coherence, strong warrant, central relevance, and careful charity toward possible reformulations while preserving the decisive defect in the actual inference.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "The challenged universal premise assumes intentional assembly for every composition, embedding the agentive conclusion that the argument purports to establish."
+                }
+              ]
             }
           }
         ]
       },
       {
-        title: "Necessary Being and Classical Theism",
-        timebox: "82:20-108:30",
-        score: {
-          pro: 63,
-          con: 78
+        "sectionId": "identifying-classical-theism",
+        "title": "From a Ground of Being to Classical Theism",
+        "timebox": "13:28–110:13",
+        "score": {
+          "pro": 75,
+          "con": 87
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "83:20",
-              role: "Proportionate-causality extension",
-              words:
-                "Rhodes says an effect cannot give what its cause lacks, so consciousness, order, and accidental existence point to a necessary ground that classical theism can identify with God.",
-              score: 63,
-              critique:
-                "Rhodes invokes the principle of proportionate causality to move beyond an abstract ground: a cause must contain, formally, virtually, or eminently, what it produces. This is a recognizable route for arguing that the source of conscious and ordered reality cannot be wholly featureless. He also concedes that moving from generic monotheism to Christian theology requires further work, which is a useful restraint. The weakness is that the key causal vocabulary is not explained in ordinary terms, and no argument is given for treating the ultimate cause as conscious rather than as an impersonal necessary structure. His answer that the one ground is first repeatedly assumes the very necessity at issue. The score is mixed-solid for a legitimate philosophical program, but too compressed to warrant its theological conclusion.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-simple-being-monotheist-identity",
+              "time": "13:28",
+              "role": "Load-bearing constructive",
+              "words": "Classical monotheistic traditions converge upon a uniquely possible simple reality whose essence is existence itself and which transcends the category of finite beings.",
+              "score": 69,
+              "critique": "Strongest feature: The move squarely attempts the indispensable identification bridge, describing simplicity and existence itself as attributes connecting the proposed ultimate ground with classical monotheistic thought. Principal limitation: Cross-tradition convergence does not demonstrate referential identity, unique possibility, agency, or the further characteristics required for classical theism, and several metaphysical expressions remain interchangeable. Live burden: The case must derive uniqueness and relevant divine attributes from defended premises, then explain why Jewish, Christian, Islamic, and Greek formulations identify one reality rather than analogous concepts. Locked score: The supplied mixed band reflects perfect motion-level relevance and a discernible identity thesis, constrained by radically overstated force, missing qualification, limited evidence, and underdeveloped differentiation.",
+              "tags": []
             },
-            con: {
-              time: "101:30",
-              role: "Cause-without-person objection",
-              words:
-                "Dillahunty says a fire has an explanation without requiring a person, so an ultimate explanation cannot be assumed to be an agent; unanswered questions remain reasons to investigate, not evidence for God.",
-              score: 78,
-              critique:
-                "Dillahunty's fire reply neatly distinguishes causation from agency. Observing burned wood licenses an inference to heat or a causal process, but not immediately to a person; lightning, accident, and other routes remain live. That comparison transfers well to the universe because it targets the extra step Rhodes needs, not the weaker claim that reality has some explanation. He also keeps an important asymmetry visible: identifying gaps in present knowledge does not establish the divine alternative. The weakness is that he does not engage the Thomistic claim that the causal principle is not an empirical generalization about fires. If understood as a modal argument, it needs philosophical rebuttal and alternative examples. The score is strong because his rebuttal is accurate and well aimed, though not a complete theory of causation.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-ground-does-not-identify-agent",
+              "time": "35:44",
+              "role": "Diagnostic challenge",
+              "words": "Observed reality and an asserted absolute ground do not independently identify an agent, God, or Trinity, so inquiry cannot responsibly begin by presupposing those conclusions.",
+              "score": 93,
+              "critique": "Strongest feature: This reply isolates the motion-level identification gap with exceptional precision, distinguishing an unknown explanation, an absolute ground, an agent, God, and the Trinity instead of conflating them. Principal limitation: The challenge primarily diagnoses absent discrimination and offers comparatively little positive analysis of which philosophical attributes could legitimately follow from a successfully established necessary ground. Live burden: Dillahunty must continue granting conditional grounding claims while requiring separate premises for agency, mentality, goodness, revelation, and specifically classical-theist identity. Locked score: The supplied very strong band reflects outstanding responsiveness, motion relevance, calibration, coherence, and representational charity, with only limited constructive development beyond the decisive demonstration that the presented observations underdetermine the proposed divine conclusion.",
+              "tags": []
             }
-          }
-        ]
-      },
-      {
-        title: "Revelation, Experience, and Testing",
-        timebox: "108:30-119:30",
-        score: {
-          pro: 66,
-          con: 84
-        },
-        exchanges: [
+          },
           {
-            pro: {
-              time: "109:00",
-              role: "Revelatory-evidence proposal",
-              words:
-                "Rhodes says he would test the historical record of biblical miracles, prophecy, explanatory scope, and his personal experience before treating Christian revelation as divine.",
-              score: 66,
-              critique:
-                "Rhodes improves the discussion by naming possible routes beyond bare metaphysics: historical documents, reported miracles, prophecy, explanatory scope, and lived religious experience. He also admits that personal presence cannot be made empirical evidence and describes suffering as a real pressure on his faith. Those concessions make the position more intellectually human and less insulated. The weakness is that the proposal remains a research agenda rather than evidence presented in this debate. No particular miracle report, prophecy, or historical method is examined, and the personal experience cannot discriminate Christianity from conflicting religious experiences without further public support. The score is solid-low because the answer identifies relevant categories, but it does not yet establish any of them as good evidence for the motion.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-revelation-historical-evidence-tests",
+              "time": "109:02",
+              "role": "Major direct reply",
+              "words": "Purported revelation can be evaluated through historical documents, miracle reports, fulfilled predictions, and explanatory scope regarding origin, meaning, morality, and human destiny.",
+              "score": 83,
+              "critique": "Strongest feature: Rhodes offers publicly discussable criteria for assessing revelation and carefully distinguishes treating biblical texts historically from prematurely attributing divine inspiration, thereby answering concerns about private conviction. Principal limitation: Proposing evaluation criteria does not show that any document, miracle, prediction, or explanatory framework actually satisfies them independently or discriminates divine action from competing explanations. Live burden: The case must present results concerning authenticity, dependence, prediction specificity, miracle reliability, and comparative explanatory success while also addressing why revelation remains ambiguous to sincere inquirers. Locked score: The supplied strong and competent band reflects coherent conditional reasoning, explicit qualification, direct contact, and considerable charity, tempered by limited evidence and the absence of demonstrated test outcomes.",
+              "tags": []
             },
-            con: {
-              time: "113:00",
-              role: "Open-inquiry and resource-allocation reply",
-              words:
-                "Dillahunty says skepticism welcomes investigation but requires demonstrated efficacy before claims such as prayer or paranormal powers receive the same confidence and resources as successful methods.",
-              score: 84,
-              critique:
-                "Dillahunty gives a charitable account of skepticism as calibrated inquiry rather than a refusal to explore. His examples of proposed cancer treatments, paranormal tests, and prayer research explain why finite time and money should track prior success while remaining open to a new demonstration. This directly counters the claim that demanding evidence makes skeptics dogmatic. The weakness is that research prioritization is not identical to truth conditions. A rare historical event or a metaphysical claim might matter even when it cannot compete with medical studies on replication, so the analogy should not become an exclusion rule. The score is strong because it explains practical evidential discipline clearly, but not higher because it does not fully classify the kinds of evidence Rhodes invokes.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-divine-hiddenness-sincere-nonbelief",
+              "time": "85:58",
+              "role": "Supporting constructive",
+              "words": "A sincere nonbeliever would accept a clearly disclosed God, while the apparent absence of unmistakable universal revelation supplies a reason for a divine-hiddenness objection.",
+              "score": 79,
+              "critique": "Strongest feature: The appeal to sincere openness and absent unmistakable disclosure presents an intuitively powerful experiential tension without claiming that nonbelief alone conclusively disproves a deity. Principal limitation: The argument leaves implicit the expectation that the relevant God would prioritize universal unambiguous belief, and it does not compare freedom, relationship, epistemic distance, or other explanations. Live burden: Dillahunty must defend the expected-disclosure premise, distinguish belief from worship, and assess whether apparently reasonable nonbelief is sufficiently widespread and resistant to available evidence. Locked score: The supplied strong and competent band reflects clear formulation, appropriate modesty, subsidiary relevance, and plausible experiential grounding, moderated by underdeveloped divine-intention premises and limited engagement with theistic alternatives.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 63,
-        strengths: [
-          "Rhodes offers a consistent classical-theist framework rather than merely appealing to unexplained science or private conviction.",
-          "He appropriately distinguishes an argument for a generic necessary ground from the further work of identifying a particular revealed tradition.",
-          "His willingness to acknowledge the personal force of suffering and the limits of private experience prevents a wholly dismissive presentation."
+    "overall": {
+      "pro": {
+        "score": 70,
+        "strengths": [
+          "Presented a unified metaphysical route linking finite essence, existence, composition, persistence, and an ultimate ground.",
+          "Made the essence-existence distinction accessible through concrete examples involving unicorns, dinosaurs, and actuality.",
+          "Directly confronted abstraction and linguistic conventionalism by separating chosen descriptions from mind-independent referents.",
+          "Specified historical, predictive, miraculous, and explanatory criteria by which purported revelation could be publicly assessed."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He repeatedly treated the existence of parts, forms, or contingent beings as already establishing a composer, without independently defending that causal rule for nature as a whole.",
-            links: [
+            "text": "The route repeatedly asserted necessity where the supplied examples established, at most, an explanatory question or conceptual distinction.",
+            "links": []
+          },
+          {
+            "text": "The shift from composition or causal grounding to an intentional composer was insufficiently defended and sometimes changed the meaning of the key terms.",
+            "links": [
               {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
               }
             ]
+          },
+          {
+            "text": "The identification of a simple ground with classical monotheism and specifically Christian revelation remained underdeveloped.",
+            "links": []
+          },
+          {
+            "text": "The final methodological reply left the central demands for background support and discriminating identity evidence unanswered.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 85,
-        strengths: [
-          "Dillahunty consistently asks what would distinguish God from an undefined alternative explanation instead of treating uncertainty as a refutation.",
-          "His artifact analogy and definitional questioning expose the unsupported transitions from composition to agency and from essence to reality.",
-          "He explains skepticism as open, proportionate inquiry and fairly states that evidence for God would change his belief."
+      "con": {
+        "score": 88,
+        "strengths": [
+          "Established a clear evidential framework that distinguishes immediate evidence from accumulated background support.",
+          "Repeatedly isolated the gap between an explanatory ground and an agent, God, Trinity, or specifically classical-theist identity.",
+          "Used the artifact-natural disanalogy to show why known manufacture supports agency inferences that composition alone does not.",
+          "Diagnosed the universal composer premise as embedding the agentive conclusion it was offered to demonstrate.",
+          "Offered physical, functional, linguistic, and abstraction-based alternatives to independently existing essences."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He sometimes shifts from a sensible demand for warrant to a preference for empirical replication, leaving it unclear how non-empirical metaphysical arguments could ever be positively evaluated.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The falsifiability objection sometimes treated empirical testability as too broadly determinative of metaphysical evidential value.",
+            "links": []
+          },
+          {
+            "text": "The abstraction account did not fully engage immanent realism, under which common structures are objectively instantiated without existing separately.",
+            "links": []
+          },
+          {
+            "text": "The hiddenness case left its expected-disclosure premise and competing explanations for epistemic distance insufficiently developed.",
+            "links": []
           }
         ]
       }
-    }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The strongest classical-theist case is a cumulative explanatory argument: contingent structured reality supports a necessary noncomposite ground, while separate philosophical and historical arguments must establish agency and classical-theist identity.",
+          "premises": [
+            "Finite concrete beings exhibit dependence through changing organization, limited causal powers, and conditions they do not explain merely by possessing their particular descriptions or structures.",
+            "An explanation of dependent reality as a whole cannot consist only of additional members whose actuality and organization remain dependent in precisely the relevant respect.",
+            "If a terminus of dependence exists, it should be nonderivative in actuality and not composed in a manner requiring the same kind of external unification being explained.",
+            "Agency, intellect, goodness, and religious identity require additional arguments from intelligibility, purposive order, moral experience, or independently assessed revelation; they do not follow from grounding alone."
+          ],
+          "conclusion": "Accordingly, structured contingent reality can provide defeasible philosophical support for a necessary noncomposite ground, while classical theism becomes warranted only if the separate agency and identification arguments also succeed."
+        },
+        "newArguments": [
+          {
+            "title": "Explanatory asymmetry without artifact analogy",
+            "text": "A stronger grounding argument need not compare the cosmos with a manufactured car. It can instead distinguish derivative organization from a condition that is not derivative in the same respect. If every proposed explanation merely adds another structured dependent entity, the original explanatory question reappears unchanged. This does not immediately yield a mind or deity, but it supports investigating whether an ontologically nonderivative terminus better explains why dependent structures are actual at all."
+          },
+          {
+            "title": "Discriminating revelation protocol",
+            "text": "Religious identification should be tested through a preregistered comparative protocol: date alleged predictions before their fulfillment, assess textual independence and transmission, compare miracle reports with base rates and rival causes, and evaluate explanatory scope against competing traditions. Convergence across independent categories would not prove revelation automatically, but it could supply the discriminating bridge missing from an abstract ground. Failed or ambiguous tests would correspondingly weaken the identification claim rather than being insulated by metaphysical language."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The strongest skeptical case grants that metaphysical explanation is legitimate but withholds classical-theist belief until each step from dependence to necessity, agency, and religious identity receives independent, discriminating support.",
+          "premises": [
+            "Conceptual distinctions between essence and existence, or between description and actuality, do not alone establish corresponding metaphysical components in concrete objects.",
+            "Physical, causal, functional, and linguistic accounts explain substantial portions of classification and persistence without requiring a separately demonstrated nonphysical essence.",
+            "Even if dependent reality requires an ultimate explanatory condition, that conclusion does not entail mentality, intention, goodness, personhood, or membership in any religious tradition.",
+            "Reasonable confidence should increase only when evidence favors the proposed explanation over physical, structural, plural, unknown, and rival religious alternatives under comparable standards."
+          ],
+          "conclusion": "Therefore, the presented metaphysical considerations may motivate further inquiry, but they do not presently warrant belief in the God of classical theism without separately successful grounding, agency, and identification arguments."
+        },
+        "newArguments": [
+          {
+            "title": "Bridge-by-bridge Bayesian discrimination",
+            "text": "Treat the case as a sequence of conditional comparisons rather than one sweeping inference. Ask how much more likely finite dependence is under a necessary ground than under brute or structural alternatives; then ask how much more likely agency is given that ground; finally compare particular revelations. Weak likelihood ratios at successive bridges do not become strong through aggregation. This framework accommodates philosophical evidence while exposing exactly where the classical-theist conclusion gains, loses, or fails to gain discriminating support."
+          },
+          {
+            "title": "Expected disclosure as comparative evidence",
+            "text": "Hiddenness becomes stronger when framed comparatively rather than autobiographically. Specify the disclosure expected from a perfectly loving relationship-seeking deity, identify sincere and sustained openness among nonbelievers, and compare that observation with hypotheses predicting ambiguity or silence. The result remains defeasible because freedom, development, and epistemic distance may alter expectations. Nevertheless, those replies must generate clearer predictions than post hoc compatibility if they are to neutralize the evidential force of persistent reasonable nonbelief."
+          }
+        ]
+      }
+    },
+    "topicCategory": "cosmological-arguments"
   },
   {
     "id": "fischer-dillahunty-axiomatic-evidence-god-2020",
@@ -53786,329 +54131,395 @@ export const debates = [
     }
   },
   {
-    id: "dennett-dsouza-god-human-invention-2007",
-    number: "145",
-    assessmentModel: "5.6 Terra Extra High",
-    title: "Daniel Dennett vs Dinesh D'Souza: Is God a Human Invention?",
-    label: "Religion, naturalism, and divine explanation",
-    topicCategory: "god-theism-atheism",
-    date: "2026-07-31",
-    duration: "2 hr 07 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=ocZh8vhz_Hs",
-    motion:
-      "Is God a human invention, or do cosmological fine-tuning, morality, consciousness, and religious experience provide rational support for a real divine creator?",
-    summary:
-      "Dennett explains religion as culturally evolved and defends secular inquiry; D'Souza argues that cosmology, reason, morality, freedom, and Christianity support theism.",
-    sourceNote:
-      "Based on the YouTube transcript for the atheist.archive upload of the moderated Tufts University exchange. The transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "Religions are human inventions.",
-        context:
-          "Dennett's central case treats religious traditions as culturally evolved human products, not communications from a supernatural source."
+    "id": "dennett-dsouza-god-human-invention-2007",
+    "number": "145",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Daniel Dennett vs Dinesh D'Souza: Is God a Human Invention?",
+    "label": "Religion, naturalism, and divine explanation",
+    "date": "2026-08-24",
+    "duration": "2 hr 07 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ocZh8vhz_Hs",
+    "motion": "Is God a human invention, or do cosmological fine-tuning, morality, consciousness, and religious experience provide rational support for a real divine creator?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 56cdc0474e9feebece154804df2a698dd092a212a6a29c073fc8059d80202de7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Dennett advances naturalistic explanations of religion, cosmos, mind, and morality, while D'Souza defends divine reality through conceptual, cosmological, experiential, and moral arguments.",
+    "quotes": {
+      "pro": {
+        "text": "We can study our own consciousness. We can have theories",
+        "context": "Dennett presents shared reports, theoretical inquiry, and investigation of underlying mechanisms as ways to make subjective consciousness scientifically tractable."
       },
-      con: {
-        text: "We are both reasoning in the dark.",
-        context:
-          "D'Souza argues that neither side has decisive proof, so belief in God remains a rationally consequential choice rather than blind faith."
+      "con": {
+        "text": "the evolution of the part in no way refutes the intelligent design of the whole",
+        "context": "D'Souza distinguishes natural development within the universe from the separate question whether the universe as a whole requires an intelligent explanation."
       }
     },
-    sides: {
-      pro: {
-        name: "Religion as human invention",
-        speaker: "Daniel Dennett",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Religion as human invention",
+        "speaker": "Daniel Dennett",
+        "color": "teal"
       },
-      con: {
-        name: "Theistic explanation",
-        speaker: "Dinesh D'Souza",
-        color: "coral"
+      "con": {
+        "name": "Theistic explanation",
+        "speaker": "Dinesh D'Souza",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 79,
-      con: 62
+    "score": {
+      "pro": 80,
+      "con": 75
     },
-    sections: [
+    "sections": [
       {
-        title: "Religious Diversity and Cultural Evolution",
-        timebox: "04:30-46:10",
-        score: {
-          pro: 80,
-          con: 64
+        "sectionId": "religious-concepts-and-human-invention",
+        "title": "Religious Concepts, Cultural Evolution, and Independent Reality",
+        "timebox": "16:00–102:17",
+        "score": {
+          "pro": 81,
+          "con": 88
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "16:05",
-              role: "Cultural-evolution account",
-              words:
-                "Dennett says religions are human productions with evolutionary histories: traditions arise, change, compete, and persist much as languages and other culturally transmitted practices do.",
-              score: 80,
-              critique:
-                "Dennett identifies evidence any account of religion must take seriously: religious traditions are numerous, historically contingent, internally changing, and transmitted through ordinary human institutions. Treating them as culturally evolved products offers a unified explanation for their variation without assuming a single act of deliberate fabrication. The analogy to language is especially useful because it allows human construction without requiring one inventor. The limitation is inferential. Human mediation and cultural evolution explain how people formulate, preserve, and modify religious ideas, but do not by themselves show that no external reality is being imperfectly described. Dennett needs comparative evidence that human invention predicts the relevant religious features better than revelation does. The score is high because the genealogy is illuminating and relevant, though it is not a complete disproof of theism.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-religions-cultural-evolution",
+              "time": "16:00",
+              "role": "Load-bearing constructive",
+              "words": "Religions resemble languages and music as recurrent human cultural productions whose institutions, doctrines, and practices develop collectively and evolve over many generations.",
+              "score": 85,
+              "critique": "Strongest feature: The recurrent proliferation and long cultural development of religions provide a clear, directly relevant foundation for treating traditions as extensively human-shaped phenomena rather than historically fixed deliveries. Principal limitation: Cultural production of institutions and doctrines does not independently establish that every purported supernatural referent is invented, so the analogy needs an explicit concept-referent qualification and broader evidential bridge. Live burden: The argument must distinguish successfully explaining religious transmission, diversification, and institutional adaptation from demonstrating the ontological unreality of whatever those evolving traditions purport to describe. Locked score: The very strong band reflects excellent motion relevance, coherent historical framing, and substantial warrant, while preserving the important limitation that genealogy alone cannot conclusively settle independent reality.",
+              "tags": []
             },
-            con: {
-              time: "44:10",
-              role: "Human-description distinction",
-              words:
-                "D'Souza grants that cultural descriptions of God are substantially human-made, but argues that a reality beyond ordinary empirical reach could still be the object those descriptions imperfectly address.",
-              score: 64,
-              critique:
-                "D'Souza makes the right logical distinction. A concept can be culturally shaped while still referring, however imperfectly, to something real; scientific theories and maps likewise have human histories without their objects becoming inventions. This blocks a simplistic genetic inference from religious diversity to divine nonexistence. The difficulty is that the move remains defensive. Once God is placed beyond decisive empirical reach, cultural variety becomes compatible with nearly any outcome, and the debate needs a discriminating reason to treat one tradition as tracking reality rather than merely reflecting human needs. D'Souza does not yet provide that test. The score is mixed because the distinction is valid and necessary, but it preserves possibility more effectively than it provides positive evidence for theistic reference.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-concepts-disagreement-truth",
+              "time": "92:46",
+              "role": "Major direct reply",
+              "words": "Mutually exclusive religious claims cannot all be correct, but their disagreement alone does not imply that every religion is false or lacks an independent referent.",
+              "score": 81,
+              "critique": "Strongest feature: The scientific-disagreement analogy clearly establishes the narrow logical point that mutually incompatible answers do not entail the absence of any correct answer, directly blocking wholesale rejection from disagreement alone. Principal limitation: Defeating that deductive inference does not address disagreement's probabilistic force, evidential symmetry, cultural dependence, or differences between the verification practices available in science and religion. Live burden: The reply must explain why religious disagreement should not substantially reduce confidence and identify reliable methods for selecting among incompatible traditions rather than merely preserving abstract logical possibility. Locked score: The strong and competent band reflects excellent coherence, careful calibration, stable scope, and meaningful contact with religious diversity, while recognizing that the separate conceptual-development argument and disagreement's evidential consequences remain unresolved.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-god-concept-abstraction",
+              "time": "22:48",
+              "role": "Load-bearing constructive",
+              "words": "Influential concepts of God developed from an anthropomorphic, commanding ruler toward an increasingly abstract ground of being, indicating extensive human theological reconstruction.",
+              "score": 77,
+              "critique": "Strongest feature: The contrast between an anthropomorphic warlord and an increasingly featureless ground of being vividly illustrates how influential theological concepts can undergo recognizable human revision, abstraction, and conceptual reconstruction. Principal limitation: The historical sample is compressed and shifts between changes in a concept and conclusions about its possible object, leaving both representativeness and ontological significance insufficiently demonstrated. Live burden: The argument must establish that the observed abstraction is better explained as invention than refinement, accommodation, or changing interpretation of an independently existing referent. Locked score: The strong and competent band recognizes direct engagement with the motion and an intelligible conceptual history, while retaining substantial reservations about historical breadth, term stability, and the unsupported movement from conceptual evolution to unreality.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-concepts-origin-referent-distinction",
+              "time": "99:59",
+              "role": "Major direct reply",
+              "words": "Explaining the human origin of a concept does not establish that its referent is unreal, just as explaining evolving parts does not settle the universe's ultimate explanation.",
+              "score": 92,
+              "critique": "Strongest feature: The reply precisely distinguishes a concept's human genealogy from its referent's possible reality and directly explains why natural development of parts does not logically settle the origin of the whole. Principal limitation: The secure non-entailment does not erase the possible probabilistic force of genealogy, while the universe-as-artifact analogy cannot independently establish that the whole was intelligently designed. Live burden: The theistic case must move beyond blocking an origin-based inference and supply positive evidence that the evolving God concept successfully refers and that the universe requires intentional explanation. Locked score: The very strong band reflects exceptional motion relevance, comprehensive response contact, stable terminology, strong coherence, and a decisive conceptual distinction, bounded by the argument's deliberately limited non-entailment rather than affirmative proof.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Origins and Fine-Tuning",
-        timebox: "35:15-1:07:35",
-        score: {
-          pro: 77,
-          con: 63
+        "sectionId": "cosmic-origin-and-fine-tuning",
+        "title": "Cosmic Origin, Natural Law, and Fine-Tuning",
+        "timebox": "33:42–57:03",
+        "score": {
+          "pro": 84,
+          "con": 78
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "55:05",
-              role: "Explanatory-burden reply",
-              words:
-                "Dennett says a cosmic beginning and life-permitting constants do not identify God as their cause; anthropic selection and other cosmological possibilities remain live explanatory competitors.",
-              score: 77,
-              critique:
-                "Dennett correctly separates an unexplained cosmological fact from a demonstrated divine cause. A beginning of space-time does not itself tell us what, if anything, caused it, and a life-permitting universe is necessarily the location from which observers like us can notice its parameters. He also resists D'Souza's attempt to present speculative cosmological alternatives as uniquely faith-based while exempting a self-existent creator from comparable scrutiny. The weakness is that Dennett invokes possible alternatives more readily than he assesses their evidential support or the relevant probability comparison. An anthropic observation effect alone does not explain why the constants have their values. The score is strong because it restores burden discipline, but not higher because it leaves the fine-tuning question partly deferred rather than resolved.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-big-bang-not-creator",
+              "time": "54:59",
+              "role": "Major direct reply",
+              "words": "Accepting that spacetime in our universe began with the Big Bang does not establish that God created it, because the proposed creator requires an additional inference.",
+              "score": 87,
+              "critique": "Strongest feature: The reply sharply distinguishes accepting a beginning of spacetime in this universe from accepting the further conclusion that a divine creator caused it, directly exposing the central inferential gap. Principal limitation: Although it notes that introducing God renews explanatory questions, it only briefly addresses the strongest probabilistic version in which a beginning supplies defeasible support for a transcendent cause. Live burden: The response must explain why creator hypotheses lack comparative explanatory advantage, not merely observe that divine creation does not deductively follow from contemporary cosmology. Locked score: The very strong band reflects exceptional responsiveness, precise scope, coherent non-entailment reasoning, and direct pressure on an indispensable bridge, while acknowledging that the broader probabilistic cosmological argument remains only partially answered.",
+              "tags": []
             },
-            con: {
-              time: "36:15",
-              role: "Cosmic-origin and design case",
-              words:
-                "D'Souza argues that the universe's beginning, life-permitting constants, intelligible laws, and human rationality are evidence for an intelligent creator rather than a self-explaining cosmos.",
-              score: 63,
-              critique:
-                "D'Souza puts several central theistic considerations on the table and rightly distinguishes biological evolution from questions about cosmic origins and physical constants. Fine-tuning and intelligibility are legitimate topics for comparative explanation, and he does not present the Big Bang as a formal proof. The weakness is the rapid move from a beginning or an unexplained law to a personal designer. His car and painting analogies depend on independent knowledge of human artifact makers, whereas the universe is the unique case under dispute. Nor does he establish the relevant priors, alternatives, or why an intelligent creator needs less explanation than the cosmos. The score is mixed because the questions are substantial, but the specific Christian-theistic conclusion is asserted more quickly than the evidence warrants.",
-              tags: [
-                {
-                  label: "Argument from ignorance",
-                  type: "fallacy",
-                  url: fallacy("argument-from-ignorance"),
-                  context:
-                    "Unresolved cosmological features are treated as creator evidence before competing explanations are comparatively assessed."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-cosmic-big-bang-beginning",
+              "time": "33:42",
+              "role": "Load-bearing constructive",
+              "words": "A beginning of matter, space, and time under the Big Bang supplies scientific evidence, though not deductive proof, favoring a transcendent divine creator.",
+              "score": 77,
+              "critique": "Strongest feature: The argument clearly identifies the universe's apparent beginning as cosmologically significant and carefully presents that beginning as supportive evidence rather than deductive proof of divine creation. Principal limitation: It compresses a cosmological singularity into an absolute coming-to-be and does not supply the additional premises needed to infer a personal divine creator from a boundary in spacetime. Live burden: The case must justify both the claimed absolute beginning and the comparative explanatory step from that beginning to an agent beyond nature, while addressing nonpersonal or natural alternatives. Locked score: The strong and competent band reflects high central relevance, a recognizable evidential structure, and useful qualification, alongside meaningful uncertainty about cosmological interpretation and an underdeveloped causal identification.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-anthropic-fine-tuning",
+              "time": "56:10",
+              "role": "Major direct reply",
+              "words": "Observers necessarily find themselves under life-compatible conditions, so anthropic selection and possibly varied universes offer alternatives to inferring intelligent design from apparent fine-tuning.",
+              "score": 81,
+              "critique": "Strongest feature: The reply directly answers the design inference with a recognizable observer-selection mechanism and explicitly qualifies the possible existence of other universes rather than presenting the ensemble as established fact. Principal limitation: Observer selection alone does not establish sufficiently varied universes, explain the availability of life-permitting conditions, or justify the overbroad suggestion that observers could exist in no different universe. Live burden: The alternative must provide independent support for the relevant ensemble and show how conditioning on observers changes the comparative evidence between design and nondesign hypotheses. Locked score: The strong and competent band reflects excellent response contact, coherent conditional reasoning, and substantial charity, while preserving a significant warrant limitation concerning the unestablished distribution of universes, laws, and observers.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-cosmic-fine-tuning-design",
+              "time": "37:19",
+              "role": "Load-bearing constructive",
+              "words": "The universe's apparently life-permitting constants call for explanation, and deliberate design may appear simpler than treating their configuration as an unexplained coincidence.",
+              "score": 78,
+              "critique": "Strongest feature: The move isolates apparent life-permitting structure as a legitimate comparative-explanation problem and offers deliberate design as a coherent alternative to an unexplained single-universe coincidence. Principal limitation: Invoking simplicity does not establish comparative probability, especially without specifying the relevant parameter space, likelihoods under design, observer-selection effects, or possible alternative cosmologies. Live burden: The argument must show that a creator predicts the observed constants better than competing hypotheses and that adding a designing intelligence genuinely reduces rather than relocates explanatory complexity. Locked score: The strong and competent band recognizes direct contact with a central cosmological burden, stable presentation, and a plausible design inference, while preserving the material evidential gap created by an unspecified comparison class and unsupported probabilistic assumptions.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Consciousness, Freedom, and Reason",
-        timebox: "41:25-59:20",
-        score: {
-          pro: 72,
-          con: 54
+        "sectionId": "consciousness-reason-and-agency",
+        "title": "Consciousness, Reason, Free Will, and Evolutionary Explanation",
+        "timebox": "46:11–120:53",
+        "score": {
+          "pro": 85,
+          "con": 67
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "58:35",
-              role: "Naturalist research program",
-              words:
-                "Dennett says naturalistic accounts of consciousness, intentionality, and choice are difficult but actively developed, so D'Souza cannot simply declare those phenomena beyond Darwinian or material explanation.",
-              score: 72,
-              critique:
-                "Dennett makes an appropriate burden challenge. Current difficulty in explaining consciousness, intentionality, and agency does not license the conclusion that these phenomena are non-natural or divinely grounded. His appeal to a long-standing research program rightly reminds listeners that a short debate cannot survey the relevant cognitive science and philosophy. The weakness is that the reply leans on the existence of work rather than presenting a concrete explanatory account for the audience to assess. It therefore rebuts D'Souza's certainty more effectively than it explains subjective experience or freedom. The score is solid because it blocks a premature impossibility claim and keeps the inquiry open, but it is not a full positive solution to the mind-body problems D'Souza raises.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-darwinian-mind-explanations",
+              "time": "58:29",
+              "role": "Major direct reply",
+              "words": "Developed Darwinian research on free will, choice, consciousness, and intentionality prevents their naturalistic explanation from being dismissed merely through assertions of impossibility.",
+              "score": 83,
+              "critique": "Strongest feature: The reply directly resists an asserted impossibility, carefully concedes that naturalistic explanations might ultimately fail, and limits its immediate claim to the existence of substantive explanatory work and progress. Principal limitation: Referring to a career of research supplies little accessible evidence within the exchange and does not demonstrate success on subjective consciousness, robust agency, or moral responsibility. Live burden: The response must present enough of the explanatory mechanisms to show that Darwinian accounts illuminate the opponent's hardest targets rather than merely recording confidence that complex answers exist elsewhere. Locked score: The strong and competent band reflects high coherence, calibration, charity, and decisive contact with the impossibility claim, tempered by a substantial evidential shortfall in the presented argument.",
+              "tags": []
             },
-            con: {
-              time: "47:10",
-              role: "Free-will and subjectivity challenge",
-              words:
-                "D'Souza argues that conscious choice, intentionality, moral responsibility, and the ability to deliberate cannot be reduced to neuronal causation without emptying debate and morality of meaning.",
-              score: 54,
-              critique:
-                "D'Souza correctly identifies why consciousness and agency matter. A worldview that cannot account for first-person experience, deliberation, or moral responsibility would face serious costs, and it is fair to ask whether reductive accounts capture those phenomena. But he treats determinism, material explanation, and the denial of meaningful choice as interchangeable. A compatibilist can hold that choices arise through brain processes while still distinguishing reasons-responsive agency from coercion, and moral practices can be justified without uncaused decisions. His claim that Dennett denies consciousness is also a caricature of Dennett's actual theory. The score is low because the problem is real, but the argument turns on an unstable use of free will and an insufficient engagement with the best naturalist response.",
-              tags: [
-                {
-                  label: "Equivocation",
-                  type: "fallacy",
-                  url: fallacy("equivocation"),
-                  context:
-                    "The argument shifts between causal determination, moral responsibility, and meaningful agency as though they were identical."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-mind-consciousness-free-will",
+              "time": "46:11",
+              "role": "Supporting reply",
+              "words": "Consciousness, intentional choice, free agency, and moral responsibility present serious explanatory challenges for accounts that reduce every mental phenomenon to deterministic material processes.",
+              "score": 59,
+              "critique": "Strongest feature: The move identifies consciousness, intentional agency, and responsibility as serious explanatory tests for a wholly deterministic material account, thereby bringing important first-person and normative phenomena into the central dispute. Principal limitation: It bundles distinct problems together, treats microscopic invisibility as evidentially significant, and characterizes Dennett's explanatory position as simple denial or illusion without adequately representing its strongest form. Live burden: The challenge must separately explain why physical or Darwinian accounts fail for consciousness, choice, and responsibility rather than inferring immateriality from current explanatory difficulty or lack of direct observation. Locked score: The weak band reflects central relevance but substantial deficits in coherence, evidential support, response contact, conceptual stability, and charitable representation of the opposing position.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-consciousness-scientific-study",
+              "time": "97:10",
+              "role": "Major direct reply",
+              "words": "Investigators can pool experiential reports, examine subjectivity, formulate public theories, and study underlying mechanisms, making consciousness scientifically tractable despite its first-person character.",
+              "score": 86,
+              "critique": "Strongest feature: The reply explains how pooled reports, public theorizing, and investigation of underlying mechanisms can transform first-person data into scientifically tractable evidence without denying the reality of subjective experience. Principal limitation: Demonstrated tractability and considerable progress do not establish that every phenomenal feature is reducible, so the categorical claim that nothing is irreducible exceeds the evidence presented. Live burden: The account must connect explanatory mechanisms to subjective character and show why successful functional or neural modeling answers rather than bypasses the strongest consciousness challenge. Locked score: The very strong band reflects exceptional response contact, conceptual clarity, coherent methodology, and a charitable incorporation of subjective reports, while retaining the important completion-versus-progress qualification and recognizing that scientific promise is not yet exhaustive explanation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-mind-placebo-bidirectional-causation",
+              "time": "119:38",
+              "role": "Major direct reply",
+              "words": "Placebo effects illustrate that beliefs and expectations can alter bodily processes, challenging an oversimplified picture in which causation runs only from physical states toward conscious experience.",
+              "score": 78,
+              "critique": "Strongest feature: The placebo example supplies a concrete phenomenon showing that beliefs and expectations can participate in bodily causation, directly challenging an oversimplified description of exclusively bottom-up influence. Principal limitation: The argument shifts between psychological organization, consciousness, and nonmaterial substance, although top-down causation can be physically realized and therefore does not establish ontological dualism. Live burden: The reply must discriminate dualist from physicalist explanations of placebo effects and demonstrate that mental causation possesses explanatory independence rather than functioning through embodied mechanisms. Locked score: The strong and competent band reflects high responsiveness, central relevance, and a useful counterexample to simplistic causal language, while retaining important limitations in conceptual stability, evidential detail, representational charity, and the inference from bidirectional description to nonmaterial mind.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Morality, Religion, and Secular Society",
-        timebox: "57:20-1:13:55",
-        score: {
-          pro: 79,
-          con: 57
+        "sectionId": "morality-dignity-and-social-order",
+        "title": "Morality, Human Dignity, and Secular Social Order",
+        "timebox": "67:59–110:06",
+        "score": {
+          "pro": 78,
+          "con": 74
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "68:15",
-              role: "Secular-morality defense",
-              words:
-                "Dennett says atheism does not entail moral nihilism: people can reason together about harm, justice, and workable social principles without receiving moral commands from a deity.",
-              score: 79,
-              critique:
-                "Dennett directly blocks the claim that atheism inherits the crimes of authoritarian regimes or leaves no room for morality. He distinguishes rejecting God from believing that anything is permitted, and his emphasis on open, fact-sensitive public reasoning identifies a familiar secular route to moral deliberation. The historical point that moral interpretations change also usefully challenges the thought that people simply receive a fixed code from God. The weakness is that practical agreement about how to live does not by itself settle deeper questions about moral objectivity, obligation, or why some reasons bind us. Dennett offers a political account of moral practice more than a full metaethical theory. The score is high because it answers the immediate nihilism charge while leaving philosophical foundations open.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-shared-rational-morality",
+              "time": "67:59",
+              "role": "Load-bearing constructive",
+              "words": "Because alleged divine commands reach people through human representatives, communities must evaluate them through shared reasoning and can develop moral judgments without direct supernatural instruction.",
+              "score": 74,
+              "critique": "Strongest feature: The mediation argument effectively shows that alleged divine commands still require human interpretation and evaluation, supporting shared rational deliberation as an unavoidable component of practical moral judgment. Principal limitation: Demonstrating unavoidable human mediation does not establish that divine reality, transcendent authority, or objective moral grounding is unnecessary, and the capacity of collective reasoning is asserted more than demonstrated. Live burden: The secular account must explain how deliberation generates or discovers defensible standards, resolves persistent conflict, and sustains obligations rather than merely filtering claims made by religious representatives. Locked score: The mixed band recognizes coherent central relevance and a useful epistemic challenge to simple command theories, while preserving shortcomings in evidential development, response contact, and the distinction between accessing moral requirements and grounding them.",
+              "tags": []
             },
-            con: {
-              time: "71:15",
-              role: "Christian-inheritance argument",
-              words:
-                "D'Souza argues that secular Western commitments to equality, compassion, and human dignity are inherited from Christianity and may not survive once their religious roots are rejected.",
-              score: 57,
-              critique:
-                "D'Souza raises a worthwhile genealogical question. Modern ideas of equal dignity, abolition, and universal concern have been shaped in part by Christian movements, so secular moral confidence should not erase that historical contribution. His example of Quaker and evangelical abolitionists gives the claim some concrete footing. The weakness is the leap from historical influence to present dependence. Moral traditions can be transformed by many sources, including law, philosophy, democratic struggle, and non-Christian religions, and secular citizens may endorse equality for reasons independent of theology. Selective ancient examples do not show that compassion disappears without God. The score is mixed because the historical reminder is important, but the prediction of moral collapse is insufficiently supported and overlooks competing moral genealogies.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-morality-substantial-altruism",
+              "time": "102:50",
+              "role": "Major direct reply",
+              "words": "Simple reciprocity and kin advantage do not exhaust costly, disinterested morality, leaving room for a moral or spiritual dimension beyond humanity's evolutionarily explained material frame.",
+              "score": 74,
+              "critique": "Strongest feature: The argument concedes meaningful evolutionary success while distinguishing simple reciprocal behavior from costly, disinterested morality, thereby focusing the dispute on a genuinely difficult explanatory target rather than rejecting evolution wholesale. Principal limitation: It narrows naturalistic accounts to reciprocity and kin advantage, provides no representative evidence, and moves too quickly from limitations of simple models to a spiritual dimension. Live burden: The case must engage richer evolutionary, psychological, and cultural explanations of altruism and show why any remaining explanatory deficit positively supports transcendent moral agency. Locked score: The mixed band recognizes central relevance, a useful qualification, and partial contact with naturalistic morality, while retaining reservations about warrant, conceptual definition, representational charity, and the unsupported inference from incomplete explanation to spirituality.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-evolutionary-moral-genesis",
+              "time": "104:39",
+              "role": "Major direct reply",
+              "words": "Evolutionary inquiry may explain morality's causal genesis beyond reciprocity and gene advantage, while normative endorsement remains a separate task for collective political deliberation.",
+              "score": 81,
+              "critique": "Strongest feature: The reply explicitly separates the causal genesis of moral dispositions from their normative endorsement, avoiding the mistake of treating evolutionary explanation as sufficient justification for whichever tendencies humans inherit. Principal limitation: The promise of a complete scientific genealogy is stronger than the presented evidence, which supplies no representative mechanisms or findings concerning substantial altruism and complex moral capacities. Live burden: The account must substantiate explanatory progress beyond reciprocity and genetics while clarifying how political deliberation acquires defensible normative standards rather than merely expressing collective preference. Locked score: The strong and competent band reflects excellent conceptual precision, coherence, calibration, and direct contact with the genesis challenge, tempered by limited evidential presentation and an intentionally unresolved account of objective endorsement.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-morality-christian-roots",
+              "time": "107:59",
+              "role": "Major direct reply",
+              "words": "Secular societies should not assume that equality, dignity, and compassion will remain secure after abandoning the Christian beliefs and institutions that historically helped sustain them.",
+              "score": 74,
+              "critique": "Strongest feature: The roots-and-branches warning directly challenges secular confidence by separating the historical formation and durable cultural support of moral commitments from their abstract availability to rational deliberation. Principal limitation: The broad historical claim supplies neither representative evidence nor adequate qualification and does not establish exclusive Christian authorship, necessary continuing belief, or the predicted return of rejected practices. Live burden: The argument must demonstrate a distinctive causal dependence between theological commitment and sustained equality, dignity, and compassion while addressing plural origins and independent secular justification. Locked score: The mixed band reflects strong responsiveness and central moral relevance, balanced against materially overstated historical conclusions, unstable scope, weak evidential support, and insufficient engagement with the strongest account of secular preservation.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Causation, Creation, and Design",
-        timebox: "1:19:10-1:22:30",
-        score: {
-          pro: 82,
-          con: 56
+        "sectionId": "religious-experience-and-epistemic-standards",
+        "title": "Religious Experience, Cognitive Limits, and Epistemic Standards",
+        "timebox": "75:53–117:34",
+        "score": {
+          "pro": 67,
+          "con": 62
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "81:15",
-              role: "Category-consistency objection",
-              words:
-                "Dennett says D'Souza borrows causal concepts from within nature to demand a creator of nature, then exempts that creator from the same concepts by placing it outside the universe.",
-              score: 82,
-              critique:
-                "Dennett identifies the central pressure on D'Souza's causal argument. If creation and causation draw their content from ordinary relations within the universe, then a claim about an agent wholly outside the universe needs more than a verbal exemption from those relations. His objection does not assume that a transcendent cause is impossible; it asks how the concept remains intelligible once the familiar causal framework is declared inapplicable. That is a strong demand for semantic and explanatory consistency. The limitation is that sophisticated metaphysical accounts distinguish sustaining, efficient, and temporal causes, and Dennett does not examine those options here. Still, D'Souza offers only the novel-author analogy, not such an account. The score is high because the objection precisely exposes the argument's unresolved category shift.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-institutionalized-scientific-doubt",
+              "time": "116:37",
+              "role": "Supporting reply",
+              "words": "Scientific institutions explicitly organize doubt and self-correction, whereas some religious communities discourage believers from seriously investigating whether their inherited faith could be mistaken.",
+              "score": 67,
+              "critique": "Strongest feature: The move identifies institutionalized doubt and self-correction as genuine epistemic advantages and grounds the contrast in the concrete practice of repeatedly asking how one's own conclusions might be mistaken. Principal limitation: It generalizes from an unspecified subset of religious communities and underrepresents traditions that encourage critical examination, while idealizing scientific practice beyond the particular institutional norm described. Live burden: The comparison must specify which institutions and incentives reliably promote correction and show how those differences bear on the truth of religious claims rather than only communal intellectual culture. Locked score: The mixed band recognizes a coherent and relevant epistemic contrast, but preserves substantial limitations in scope, representational charity, evidential breadth, and responsiveness to the earlier historical-dependence and experiential-evidence arguments.",
+              "tags": []
             },
-            con: {
-              time: "79:20",
-              role: "Author-and-novel analogy",
-              words:
-                "D'Souza says the universe resembles a novel whose author stands at a different explanatory level, so physical laws and internal causes need not constrain a supernatural creator of the whole.",
-              score: 56,
-              critique:
-                "D'Souza's author-and-novel analogy gives listeners an intuitive way to distinguish causes inside a system from a possible explanation of the system as a whole. That distinction prevents a crude infinite regress objection from being treated as automatically decisive. But the analogy assumes the relevant conclusion: novels are known artifacts made by authors, while the universe is not known independently to be an artifact. It also does not explain what it means for a non-temporal agent to create or why causal principles apply to the universe but not to God. Declaring God exempt because God is external supplies a label rather than a principled criterion. The score is low because the analogy clarifies a proposal, yet cannot establish its key metaphysical exception.",
-              tags: [
-                {
-                  label: "Special pleading",
-                  type: "fallacy",
-                  url: fallacy("special-pleading"),
-                  context:
-                    "The creator is exempted from the causal demand used to infer a cause for the universe."
-                }
-              ]
+            "con": {
+              "ledgerMoveId": "con-experience-inward-evidence",
+              "time": "75:53",
+              "role": "Supporting reply",
+              "words": "Widespread religious experiences are sincere first-person data deserving explanation and serious consideration, rather than dismissal through isolated analogies with delusion or anomalous perception.",
+              "score": 63,
+              "critique": "Strongest feature: The argument properly insists that widespread, sincere religious experiences are phenomena requiring explanation and cannot be responsibly dismissed merely by citing isolated pathological or anomalous experiences. Principal limitation: The inward-innocence analogy does not establish comparable reliability, while prevalence and subjective vividness leave conflicting interpretations, dependence, and external corroboration entirely unresolved. Live burden: The case must provide criteria distinguishing veridical divine contact from psychological, cultural, or neurological alternatives and explain why divergent religious experiences collectively support a particular supernatural interpretation. Locked score: The weak band reflects legitimate epistemic relevance and a charitable demand to take experience seriously, but also limited response contact, insufficient reliability analysis, unstable categorization of religious experience, and an evidential leap from sincerity to supernatural significance.",
+              "tags": []
             }
-          }
-        ]
-      },
-      {
-        title: "Faith and the Stakes of Belief",
-        timebox: "50:05-2:06:45",
-        score: {
-          pro: 78,
-          con: 49
-        },
-        exchanges: [
+          },
           {
-            pro: {
-              time: "116:20",
-              role: "Fallibilist challenge",
-              words:
-                "Asked what if he is wrong, Dennett says science and scholarship institutionalize that question, whereas many religious communities discourage believers from seriously testing their faith.",
-              score: 78,
-              critique:
-                "Dennett's answer gives a clear epistemic contrast. Intellectual inquiry is strongest when it builds in error detection, criticism, revision, and the willingness to ask whether a cherished conclusion is wrong. That directly challenges any version of faith that treats doubt as disobedience rather than a possible route to correction. The weakness is breadth. Religious communities vary widely, and traditions of negative theology, biblical lament, and philosophical theology have often encouraged searching questions. Dennett's claim works best as a criticism of insulated or authoritarian faith, not religion without qualification. He also does not explain how scientific fallibilism alone settles existential commitments. The score is strong because the norm of self-correction is central and well stated, though its contrast with all religion is overstated.",
-              tags: []
-            },
-            con: {
-              time: "50:30",
-              role: "Pascalian commitment case",
-              words:
-                "D'Souza says life-changing commitments cannot wait for decisive proof and invokes Pascal's wager: choosing God risks little if false but may gain everything if Christianity is true.",
-              score: 49,
-              critique:
-                "D'Souza is right that important human choices often proceed under uncertainty; marriage, vocation, and friendship are not postponed until complete predictive information arrives. That insight gives his appeal to commitment some existential force. The Pascalian inference, however, needs far more than uncertainty. It assumes a particular God rewards belief, that belief can be chosen for prudential reasons, and that the many incompatible religious possibilities do not create symmetrical risks. The discussion's religious diversity makes that omission especially serious. Faith's personal stakes may justify investigation, but they do not establish Christianity's truth or make agnosticism irrational. The score is low because the argument conveys urgency while relying on the very theological payoff structure it needs to substantiate.",
-              tags: [
-                {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "The wager assumes the Christian reward-and-punishment structure that the debate asks listeners to justify."
-                }
-              ]
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-epistemology-subjective-starting-point",
+              "time": "95:14",
+              "role": "Supporting reply",
+              "words": "All access to the external world begins through consciousness, so first-person religious experience should not be excluded solely because its initial mode of access is subjective.",
+              "score": 61,
+              "critique": "Strongest feature: The argument correctly observes that every empirical inquiry is accessed through consciousness and therefore prevents first-person evidence from being excluded solely because its initial presentation is subjective. Principal limitation: A shared subjective access condition does not equalize the evidential support for external objects, other minds, morality, consciousness, and God, each of which permits different corroboration and inference. Live burden: The case must identify comparable reliability checks and explain why religious experience warrants an independent divine referent rather than merely establishing that subjective evidence can sometimes contribute to justified belief. Locked score: The weak band reflects a genuine epistemological insight and direct subsidiary relevance, outweighed by unstable comparisons, missing qualifications, limited earlier response contact, and a materially overstated transition from common access to evidential parity.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 79,
-        strengths: [
-          "Dennett gives a coherent cultural-evolution account of religious diversity and distinguishes human transmission from a single deliberate inventor.",
-          "He consistently presses the difference between an unexplained feature of the universe and evidence for a specified supernatural cause.",
-          "His defense of public reasoning, moral fallibilism, and scientific self-correction gives the secular position positive resources rather than mere disbelief."
+    "overall": {
+      "pro": {
+        "score": 80,
+        "strengths": [
+          "Dennett directly separated a cosmological beginning from divine creation and thereby pressured the central causal bridge without denying the accepted beginning of spacetime.",
+          "His anthropic reply supplied a recognizable alternative to design, while appropriately presenting other universes as possible rather than established within the exchange.",
+          "He explained how pooled reports, theories, and mechanism studies can make subjective consciousness scientifically tractable, directly answering claims of irreducibility.",
+          "His moral-genesis reply carefully separated causal explanation from normative endorsement, preserving an important distinction that strengthened the naturalistic account."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He sometimes treats religion's cultural history, or a pathological regime's cult of personality, as if it largely settles the truth of theism or converts atheistic authoritarianism into religion.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The cultural-evolution and conceptual-abstraction arguments did not fully bridge from demonstrably human formation of religious traditions to the unreality of an independent divine referent.",
+            "links": []
+          },
+          {
+            "text": "Several naturalistic claims relied on asserted research progress or future completeness without presenting enough representative evidence from that work during the exchange.",
+            "links": []
+          },
+          {
+            "text": "The contrast between scientific doubt and religious discouragement generalized too broadly across heterogeneous communities and did not answer the strongest experiential or historical-dependence challenges.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 62,
-        strengths: [
-          "D'Souza correctly separates cultural descriptions of God from the separate question of whether they refer to an independent divine reality.",
-          "He raises genuine explanatory questions about cosmic origins, life-permitting parameters, consciousness, freedom, and the historical roots of moral ideals.",
-          "He concedes that religion is humanly mediated and that his case aims at rational support rather than decisive proof."
+      "con": {
+        "score": 75,
+        "strengths": [
+          "D'Souza's concept-referent distinction directly answered the motion by showing that human conceptual origins do not logically establish an independently unreal object.",
+          "His disagreement analogy correctly blocked the inference that mutually exclusive religious claims must all be false, while keeping the conclusion appropriately limited.",
+          "The cosmological arguments identified the universe's beginning and apparent fine-tuning as serious explanatory questions and offered a coherent cumulative theistic direction.",
+          "The placebo example usefully challenged simplistic one-way causal language by identifying a concrete case in which expectation can influence bodily outcomes."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He repeatedly treats unresolved cosmological and psychological questions as pressure for a creator without supplying the comparative evidence needed to identify that creator.",
-            links: [
-              {
-                label: "Argument from ignorance",
-                url: fallacy("argument-from-ignorance")
-              }
-            ]
+            "text": "The consciousness argument bundled distinct phenomena, relied on microscopic invisibility, and materially weakened the opposing position by treating explanation or illusion language as denial of consciousness.",
+            "links": []
           },
           {
-            text:
-              "He moves between historical influence, moral truth, and a forecast of secular collapse as though Christianity's past contribution establishes its continuing necessity.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The fine-tuning case invoked simplicity without supplying comparative probabilities, a justified parameter space, or sufficient engagement with anthropic and alternative-cosmology explanations.",
+            "links": []
+          },
+          {
+            "text": "The defenses of religious experience did not provide reliability criteria capable of distinguishing divine contact from conflicting psychological, cultural, or neurological interpretations.",
+            "links": []
+          },
+          {
+            "text": "The Christian-roots argument made broad historical and predictive claims without establishing exclusive origins, necessary continuing belief, or the inability of secular institutions to preserve those values.",
+            "links": []
           }
         ]
       }
-    }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The strongest naturalistic case is that human cultural and cognitive processes adequately explain the formation and persistence of religions, while the phenomena cited for theism do not make a divine creator the comparatively preferable explanation.",
+          "premises": [
+            "Religious institutions and concepts display recurrent emergence, cultural inheritance, adaptation, fragmentation, and abstraction, all of which are expected under ordinary human transmission and selection pressures.",
+            "A beginning of spacetime does not identify its explanation, and a creator hypothesis requires independently defended attributes and comparative advantages before it can outperform nonpersonal alternatives.",
+            "Anthropic conditioning lowers the surprise that observers encounter life-compatible conditions, although a complete naturalistic account must separately justify any ensemble and its distribution of laws.",
+            "Conscious reports can become public evidence through structured comparison, prediction, intervention, and mechanistic modeling, so first-person access does not itself establish scientific irreducibility.",
+            "Evolutionary and cultural explanations can address the origins of cooperation and altruism, while normative justification remains a distinct deliberative project constrained by consistency, reciprocity, evidence, and human interests."
+          ],
+          "conclusion": "Accordingly, divine reality is not disproved by human genealogy, but the naturalistic account may be preferred unless theism supplies clearer independent evidence and superior comparative explanations of cosmos, mind, morality, and experience."
+        },
+        "newArguments": [
+          {
+            "title": "Predictive asymmetry test",
+            "text": "Competing explanations should be judged by what observations would be more expected under each. A broadly defined creator can often accommodate almost any constants, conscious architecture, moral history, or pattern of religious experience after the fact. A naturalistic program earns support when specific mechanisms predict interventions, developmental patterns, cultural variation, or neural dependencies that might have been otherwise. This asymmetry does not refute theism, but it gives a principled reason to prefer explanations that expose themselves to discriminating tests and accumulate risky, mechanism-linked successes."
+          },
+          {
+            "title": "Error-correction convergence",
+            "text": "If religious concepts are principally transmitted through human institutions, their reliability should be assessed by the error-correction systems surrounding them. Methods that permit independent replication, adversarial criticism, public revision, and convergence across cultural boundaries have a structural advantage over methods that chiefly preserve inherited testimony or private interpretation. Religious communities can adopt such safeguards, so the point is not categorical dismissal. The argument is instead that confidence should track demonstrated correction and convergence, which strengthens the naturalistic preference where supernatural interpretations remain divergent despite sincere experience."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The strongest theistic case is cumulative and comparative: a transcendent rational ground may jointly explain cosmic existence and order, conscious reason, objective moral obligation, and recurrent religious experience better than treating each as unrelated.",
+          "premises": [
+            "If physical reality has a finite explanatory boundary, seeking a ground not contained within spacetime is reasonable, although identifying that ground as divine requires further argument.",
+            "Life-permitting order can favor design only if theism makes such order less surprising than its rivals after accounting for observer selection, alternative cosmologies, and the complexity attributed to the designer.",
+            "Conscious rational agency presents a distinctive challenge when an account must explain not merely behavior but truth-directed inference, first-person awareness, intentional control, and responsibility together.",
+            "Objective moral obligations, if they genuinely bind independently of preference and power, invite an explanation connecting value, rational authority, personal dignity, and reasons for costly altruism.",
+            "Religious experiences deserve evidential weight only after examining independence, cross-cultural convergence, transformative consequences, alternative causes, and the specificity of the reality they allegedly disclose."
+          ],
+          "conclusion": "Therefore, theism may receive rational support as a unified explanatory hypothesis if its components withstand comparative testing, although human conceptual development and naturalistic progress prevent the cumulative case from becoming a deductive proof."
+        },
+        "newArguments": [
+          {
+            "title": "Explanatory integration",
+            "text": "A cumulative theistic argument can gain force from integration rather than from treating every phenomenon as a separate proof. A rational creator hypothesis predicts an intelligible cosmos, minds capable of reasoning about it, moral agents responsive to reasons, and at least the possibility of experiential awareness of their source. The relevant question is whether this joint pattern is substantially more expected under theism than under a collection of independent naturalistic accounts. The comparison requires explicit probabilities and remains contestable, but integration offers a stronger structure than appealing to isolated gaps."
+          },
+          {
+            "title": "Epistemic fit of reason",
+            "text": "Any worldview must account for the reliability of the reasoning used to affirm it. Theism can argue that minds oriented toward truth are less surprising if rational agency originates in a rational ground, whereas naturalism must connect selection for adaptive behavior with dependable abstract inference far beyond ancestral environments. This does not show that evolution cannot produce reliable cognition, and the theistic account must avoid assuming the rationality it seeks to explain. Still, comparing how each worldview explains general confidence in logic, mathematics, and theoretical reasoning creates a more precise mental argument than appealing to microscopic invisibility."
+          }
+        ]
+      }
+    },
+    "topicCategory": "god-theism-atheism"
   },
   {
     "id": "harris-dennett-free-will-2018",
@@ -57328,231 +57739,336 @@ export const debates = [
     }
   },
   {
-    id: "harris-prager-religion-morality-public-reason-2014",
-    number: "156",
-    assessmentModel: "5.6 Terra Extra High",
-    title: "Sam Harris vs Dennis Prager: Religion, Morality, and Public Reason",
-    label: "Religion, moral reasoning, and social order",
-    topicCategory: "religion-society-public-reason",
-    date: "2026-08-01",
-    duration: "50 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=elMi_IzlD40",
-    motion:
-      "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
-    summary:
-      "Prager defends God as the source of a moral code and argues that secular culture misses major evils; Harris argues that unsupported sacred-text claims divide people and that ethics can be grounded in conscious flourishing.",
-    sourceNote:
-      "Built from YouTube English-original automatic captions for the Hetian Lasater upload. The source repeats discussion material beginning around 32:30, so the assessment maps the unique exchange once. This is a radio discussion rather than a formal timed debate. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "I believe in the divinity of the code.",
-        context:
-          "Prager's case is that human beings need a moral standard grounded beyond changing social preference and supplied by God."
+    "id": "harris-prager-religion-morality-public-reason-2014",
+    "number": "156",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Sam Harris vs Dennis Prager: Religion, Morality, and Public Reason",
+    "label": "Religion, moral reasoning, and social order",
+    "date": "2026-08-24",
+    "duration": "50 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=elMi_IzlD40",
+    "motion": "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4baa3a7255c6b9ffb9a1fb0446f816bd18ab84cbd311c46580c66f225a21f2ed). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Prager defends divine authority through moral durability and historical performance; Harris advances conscious wellbeing, open inquiry, and cooperation while challenging scriptural reliability.",
+    "quotes": {
+      "pro": {
+        "text": "who is more likely to make a good world",
+        "context": "Prager separates evidence for religion from the comparative practical question of which worldview better recognizes evil and supports a good society."
       },
-      con: {
-        text: "There are right and wrong answers to ethical questions.",
-        context:
-          "Harris calls himself an ethical realist while locating moral inquiry in the happiness and suffering of conscious beings rather than revelation."
+      "con": {
+        "text": "there are right and wrong answers to questions about human happiness",
+        "context": "Harris distinguishes ethical realism from pragmatism by locating objective moral answers in the possible experiences of conscious physical systems."
       }
     },
-    sides: {
-      pro: {
-        name: "Divine moral authority",
-        speaker: "Dennis Prager",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "Divine moral authority",
+        "speaker": "Dennis Prager",
+        "color": "teal"
       },
-      con: {
-        name: "Secular ethical realism",
-        speaker: "Sam Harris",
-        color: "coral"
+      "con": {
+        "name": "Secular ethical realism",
+        "speaker": "Sam Harris",
+        "color": "coral"
       }
     },
-    score: {
-      pro: 69,
-      con: 78
+    "score": {
+      "pro": 70,
+      "con": 81
     },
-    sections: [
+    "sections": [
       {
-        title: "Religion, Islam, and moral diagnosis",
-        timebox: "01:35-09:35",
-        score: {
-          pro: 69,
-          con: 78
+        "sectionId": "moral-authority-and-obligation",
+        "title": "Moral Authority and Binding Obligation",
+        "timebox": "13:29–47:21",
+        "score": {
+          "pro": 67,
+          "con": 78
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "03:20",
-              role: "Historical diagnosis",
-              words:
-                "Prager argues that religious Americans recognized the evils of communism and Islamic totalitarianism more clearly than secular liberal culture, so secular ideas have failed a practical moral test.",
-              score: 69,
-              critique:
-                "Prager identifies a serious political question: moral theories should not be judged only by abstract consistency but also by whether they help people identify cruelty, totalitarianism, and threats to human freedom. He also makes a useful distinction between recognizing a threat and agreeing with every religious explanation of it. The weakness is evidential and comparative. The conversation supplies no historical measure of which religious or secular groups diagnosed communism or Islamism best, and it treats highly varied institutions as two unified camps. Even if a religious constituency did better on particular cases, that would not establish that its theology is true or that secular ethical reasoning is incapable of reaching the same judgment. The score is mixed because the practical challenge matters, but the supporting generalization is much too broad.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-divine-authority-murder-prohibition",
+              "time": "13:29",
+              "role": "Major direct reply",
+              "words": "The prohibition against murder remains durable because divine authority secures it, whereas relying on discussion alone places excessive confidence in fallible human nature.",
+              "score": 67,
+              "critique": "Strongest feature: The reply squarely addresses binding obligation by proposing divine authority as a durable foundation for the prohibition against murder and highlighting realistic concern about human fallibility. Principal limitation: It reduces secular morality to neighborly discussion, supplies no historical comparison of durability, and does not explain how conflicting interpretations of divine commands are authoritatively resolved. Live burden: The account must show that divine attribution causes reliable compliance and correct interpretation beyond the effects of empathy, cooperation, institutions, sanctions, evidence, and revisable public reasoning. Locked score: The mixed band reflects indispensable relevance and a clear authority-based contrast, offset materially by unsupported durability, narrowed representation of secular resources, and nonresponse to religiously rationalized lethal violence.",
+              "tags": []
             },
-            con: {
-              time: "04:05",
-              role: "Belief-content reply",
-              words:
-                "Harris agrees that jihadist commitments can be dangerous when people believe martyrdom and paradise are literal, but says every belief should answer to facts rather than to the authority of a sacred book.",
-              score: 78,
-              critique:
-                "Harris gives a strong clarification of his target. He does not deny that Islamist beliefs can motivate violence; instead, he says that their danger follows from taking metaphysical claims literally and that all such claims should be tested against reality. That directly addresses Prager's concern about moral blindness while preserving a shared concern about jihadist violence. The limitation is that Harris moves quickly from the danger of some religious beliefs to the broader claim that revealed-text belief as such is divisive and unsupportable. He does not distinguish sufficiently between interpretations, doctrines, or the many ways believers relate faith to evidence. The score is high because his account links belief content to action clearly, but it is not decisive against religion in general.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-cooperation-grounds-anti-murder-norm",
+              "time": "46:57",
+              "role": "Major direct reply",
+              "words": "Human attachment, cooperation, love, and mutual care provide secular grounds for rejecting murder because those endorsing it cannot participate reliably in flourishing social relationships.",
+              "score": 78,
+              "critique": "Strongest feature: The reply supplies psychologically concrete secular resources through attachment, cooperation, love, and nurturance, showing why endorsement of murder undermines stable and mutually beneficial social relationships. Principal limitation: The account primarily explains convergence, enforcement, and prudential exclusion, leaving categorical obligation, exploitation of outsiders, exceptional circumstances, and conflicts between cooperation and justice incompletely addressed. Live burden: It must connect social viability to genuine moral reasons, explain protections for vulnerable people lacking reciprocal power, and compare institutional durability with divine-authority mechanisms. Locked score: The strong band reflects coherent reasoning, plausible premises, charitable engagement, and direct grounding contact, moderated by limited representative evidence and the unresolved distinction between socially advantageous coordination and universally binding prohibition.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Sacred text and moral evaluation",
-        timebox: "10:00-17:40",
-        score: {
-          pro: 71,
-          con: 79
+        "sectionId": "moral-epistemology-and-realism",
+        "title": "Moral Knowledge and Ethical Realism",
+        "timebox": "6:00–26:37",
+        "score": {
+          "pro": 78,
+          "con": 86
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "10:20",
-              role: "Revelation defense",
-              words:
-                "Prager says creation points to a Creator and scripture is too profound to be merely human; he argues that disputed biblical laws require historical and scholarly interpretation, not isolated reading.",
-              score: 71,
-              critique:
-                "Prager offers a recognizable cumulative defense rather than merely saying that the Bible is true because it says so. His insistence on historical context is fair: laws about retaliation, servitude, warfare, and Sabbath practice should not be evaluated as though every passage were a standalone modern policy. He also identifies a real interpretive burden for critics who quote a text without its genre or setting. The weakness is that profound content and contextual explanation do not establish supernatural authorship. On the most contested examples, he gives confident reconstructions but little textual evidence, and the divine source is still the conclusion in question. The score is solid because interpretive context matters, but lower because the argument does not independently authenticate revelation.",
-              tags: [
-                {
-                  label: "Begging the question",
-                  type: "fallacy",
-                  url: fallacy("begging-the-question"),
-                  context:
-                    "The defense treats scripture as a divinely supplied moral code while the divine authorship and authority of that code are the disputed premises."
-                }
-              ]
+            "pro": {
+              "ledgerMoveId": "pro-practical-worldview-moral-test",
+              "time": "6:00",
+              "role": "Major direct reply",
+              "words": "Evidence for religion and practical moral performance are distinct questions; worldviews should also be compared by their capacity to recognize evil and support good societies.",
+              "score": 78,
+              "critique": "Strongest feature: The reply legitimately distinguishes evidence for religion from comparative moral performance and preserves a consequential question about which worldview better recognizes evil and helps sustain good societies. Principal limitation: The accusation that anti-religious secular institutions failed morally on communism remains historically compressed, broadly categorized, and unsupported by representative comparison with religious institutions or counterexamples. Live burden: The practical test needs explicit criteria, comparable populations, causal attribution, and evidence that religious commitments outperform secular correction mechanisms rather than merely correlating with selected judgments. Locked score: The strong band reflects an effective justified reframe, central burden relevance, and clear conceptual separation, tempered by thin historical warrant and the untouched evidentiary challenge concerning religion.",
+              "tags": []
             },
-            con: {
-              time: "11:35",
-              role: "Authority challenge",
-              words:
-                "Harris says the claim that a book was informed by the Creator needs evidence, and he contrasts biblical moral commands with a secular conversation about cooperation, suffering, and how people can live together.",
-              score: 79,
-              critique:
-                "Harris presses the central epistemic issue well. If moral authority depends on a book's divine source, then competing religions can make parallel claims and the source itself needs independent support. His comparison with the Quran makes that parity problem concrete, and his appeal to cooperation and human consequences offers an alternative way to deliberate. The weakness is that he sometimes relies on sweeping descriptions of biblical violence rather than carefully examining the specific texts and interpretive claims Prager raises. That can make a strong challenge sound like a catalogue of objections. The score is high because Harris targets the authority premise and supplies a public alternative, though the textual case would be stronger with more precision and less compression.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-realist-answers-about-conscious-wellbeing",
+              "time": "25:51",
+              "role": "Load-bearing constructive",
+              "words": "Ethical realism differs from pragmatism because questions about the happiness and suffering of conscious physical systems can possess objectively right and wrong answers.",
+              "score": 86,
+              "critique": "Strongest feature: The reply explicitly distinguishes realism from pragmatism and advances a motion-level thesis that conscious wellbeing permits truth-apt moral answers without supernatural premises or sacred authority. Principal limitation: It asserts objective right and wrong answers while compressing the truth-making bridge, measurement standards, interpersonal comparisons, and procedures for resolving conflicts among dimensions of wellbeing. Live burden: The realist account must explain why experiential facts generate reasons, how inquiry identifies those reasons reliably, and how disagreement or uncertainty affects proportionate moral conclusions. Locked score: The very strong band reflects exceptional motion relevance, diagnostic responsiveness, conceptual clarity, and fair correction of the opposing characterization, with restraint for incomplete metaethical and epistemic development.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Sentience, animals, and moral status",
-        timebox: "18:00-29:10",
-        score: {
-          pro: 74,
-          con: 80
+        "sectionId": "scripture-creator-and-dogma",
+        "title": "Creator, Scripture, and Dogmatic Authority",
+        "timebox": "1:58–48:51",
+        "score": {
+          "pro": 70,
+          "con": 78
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "18:15",
-              role: "Human special-status case",
-              words:
-                "Prager says human life is sacred because people are made in God's image, then challenges secular ethics to explain why a stranger should be saved before a beloved dog or why human embryos deserve special regard.",
-              score: 74,
-              critique:
-                "Prager usefully tests whether moral seriousness requires recognizing differences in status, vulnerability, and obligation rather than simply maximizing any felt preference. His examples force Harris to say why a human stranger, a dog, a fetus, and a suffering adult should be treated differently. That is a relevant pressure on an ethics of sentience. The weakness is that Prager treats the alleged failure of some students or animal-rights advocates as a verdict on secular ethics itself. A surprising survey answer is not a refutation of a philosophical framework, and divine image language names a ground without resolving its boundaries or public justification. The score is solid because the cases expose real tensions, but the empirical and philosophical inference is too quick.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-scripture-character-historical-progress",
+              "time": "44:03",
+              "role": "Major direct reply",
+              "words": "Scripture's moral character may support divine authorship, while apparently primitive rules can represent substantial advances when interpreted relative to their historical circumstances.",
+              "score": 70,
+              "critique": "Strongest feature: The reply appropriately introduces historical context and offers proportional retaliation through eye-for-an-eye as a plausible example of an ancient rule limiting rather than encouraging excessive punishment. Principal limitation: One compressed illustration cannot establish scripture's exceptional overall moral character, and comparative historical improvement does not uniquely support divine authorship over ordinary cultural reform. Live burden: The argument must assess difficult injunctions systematically, identify an independent evaluative standard, compare neighboring legal traditions, and explain why observed progress is better predicted by revelation. Locked score: The mixed band reflects direct contact with scriptural credibility and a relevant contextual qualification, limited by incomplete source development, weak authorship inference, missing open-inquiry response, and insufficient comparative evidence.",
+              "tags": []
             },
-            con: {
-              time: "18:40",
-              role: "Flourishing framework",
-              words:
-                "Harris grounds moral concern in the degrees of happiness and suffering possible for conscious creatures, distinguishing a chicken, a dog, an embryo, and a viable fetus by their capacities and wider human consequences.",
-              score: 80,
-              critique:
-                "Harris gives the discussion's most developed positive ethical framework. By asking what a creature can experience, he explains why equal consideration does not mean treating every organism identically, and he brings consequences for families and society into difficult cases. This is more than a bare appeal to personal taste because it identifies shared facts about pain, autonomy, and flourishing. The limitation is that the framework still needs a fuller account of why its facts generate binding duties, especially when interests conflict or when a person rejects the priority of conscious well-being. His handling of abortion also relies on contested judgments about developmental capacity. The score is high because the principles are clear and practically discriminating, while their deepest normative authority remains underdefended.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-supernatural-scripture-unsupported",
+              "time": "1:58",
+              "role": "Load-bearing constructive",
+              "words": "Supernatural authorship claims about sacred books remain unsupported and dangerously divisive, especially where they impede rational responses to religious extremism.",
+              "score": 75,
+              "critique": "Strongest feature: The constructive clearly identifies supernatural authorship as an evidentiary burden and connects unsupported certainty to consequential social dangers, directly advancing the central dogma-and-harm route. Principal limitation: Its sweeping description of this belief as exceptionally divisive and dangerous lacks comparative documentation, a developed causal mechanism, and careful differentiation among religious communities. Live burden: The argument must establish that supernatural premises independently produce the alleged obstruction, rather than merely accompanying political conflict, institutional failure, or selective interpretations of religious doctrine. Locked score: The strong band reflects excellent relevance and an intelligible challenge, moderated substantially by compressed evidence, overextended causal scope, absent qualification, and limited engagement with competing explanations.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-biblical-theocracy-outgrown",
+              "time": "48:30",
+              "role": "Major direct reply",
+              "words": "The legal worldview across Leviticus and Deuteronomy is violently theocratic rather than timelessly dependable, and subsequent moral progress required societies to outgrow substantial portions of it.",
+              "score": 81,
+              "critique": "Strongest feature: The reply names substantial textual domains rather than an isolated verse and directly challenges both scripture's exceptional moral character and divine authority's alleged reliability concerning killing. Principal limitation: The Taliban comparison and assertion that killing never stops are rhetorically absolute, while the excerpt supplies neither representative textual analysis nor careful differentiation among legal genres. Live burden: The argument must document the relevant pattern, distinguish descriptive history from prescriptions, and show that later moral correction arose independently of internal religious reinterpretation or contextual development. Locked score: The strong band reflects exceptional responsiveness, central relevance, and a coherent contrary historical consequence, tempered by overstatement, compressed textual evidence, and insufficient engagement with the strongest contextual defense.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Moral progress, meaning, and spiritual experience",
-        timebox: "25:20-32:30",
-        score: {
-          pro: 64,
-          con: 77
+        "sectionId": "social-evil-and-historical-record",
+        "title": "Recognizing Social Evil and Testing Worldviews",
+        "timebox": "3:00–9:55",
+        "score": {
+          "pro": 70,
+          "con": 86
         },
-        exchanges: [
+        "exchanges": [
           {
-            pro: {
-              time: "25:25",
-              role: "Consequences warning",
-              words:
-                "Prager argues that a godless moral system produces moral chaos and has historically failed to identify evil, contrasting secular culture with a stable divine code and warning of gulags and Auschwitz.",
-              score: 64,
-              critique:
-                "Prager is right that moral systems have consequences and that believers and nonbelievers alike should reckon honestly with political atrocities. His demand that ethical views work in public life is a proper part of evaluating them. But the inference is too sweeping. Gulags and Auschwitz arose from specific totalitarian ideologies, institutions, and histories; calling them the result of dropping God does not establish the causal link, especially when religious societies have also enabled grave harms. The argument also leaves Harris's actual ethical realism largely unexamined, substituting a broad warning about secular culture for a comparison of principles. The score is limited because the concern about social order is real, but the historical claim is overgeneralized and does not carry the stated conclusion.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-religious-recognition-islamic-totalitarianism",
+              "time": "3:00",
+              "role": "Supporting reply",
+              "words": "Religious Americans may recognize Islamic totalitarian danger more readily than secular academics, suggesting that religiosity can sometimes sharpen identification of grave social evil.",
+              "score": 70,
+              "critique": "Strongest feature: The reply exposes a genuine practical tension by using Harris's acknowledged concern about Islamist totalitarianism to question whether religion necessarily obstructs recognition of religiously motivated danger. Principal limitation: It generalizes from an asserted contrast between selected evangelical leaders and secular academics without representative evidence, stable comparison groups, background rates, or plausible alternative explanations. Live burden: The comparative claim requires evidence that religiosity itself improves threat recognition across relevant populations and that this advantage extends beyond one salient ideological danger. Locked score: The mixed band reflects direct contact with the practical-harm component and reasonable argumentative charity, constrained by weak empirical warrant, shifting categories, and failure to answer supernatural authorship.",
+              "tags": []
             },
-            con: {
-              time: "30:10",
-              role: "Immanent meaning reply",
-              words:
-                "Harris rejects the idea that atheism makes a person meaningless, saying love and self-transcending spiritual experience can be rationally explored without turning them into claims about the universe's metaphysical structure.",
-              score: 77,
-              critique:
-                "Harris answers a common existential challenge without pretending that science makes life emotionally flat. His distinction between having a powerful experience and inferring a cosmic doctrine from it is careful, and his examples of love, attention, and diminished ego offer a genuine account of why secular life can feel meaningful. The weakness is that he changes the subject somewhat from Prager's question about ultimate purpose to the availability of fulfilling experiences. Meaningful states of consciousness do not by themselves answer whether there is an objective purpose, and Harris does not explain why his preferred vocabulary should settle that issue. The score is strong because he rebuts the charge of inevitable nihilism, but lower because the metaphysical question remains open.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-religious-premises-motivate-violence",
+              "time": "3:58",
+              "role": "Major direct reply",
+              "words": "If martyrdom, jihad, and immediate paradise are accepted as true premises, catastrophic violence can become instrumentally rational, explaining religious familiarity with that motivational logic.",
+              "score": 88,
+              "critique": "Strongest feature: The reply conditionally grants specified beliefs and demonstrates how martyrdom, jihad, and immediate paradise can make catastrophic violence instrumentally rational, directly reversing Prager's comparative inference. Principal limitation: Although the internal means-end reasoning is powerful, the excerpt does not establish how frequently militants actually hold these premises or whether additional political causes dominate behavior. Live burden: The argument must connect doctrinal content to real motivational prevalence while distinguishing sincere religious causation from strategic rhetoric, coercion, grievance, identity, and organizational recruitment. Locked score: The very strong band reflects precise conditional reasoning, exceptional responsiveness, and charitable engagement, with remaining restraint arising principally from limited external evidence concerning prevalence and causation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-totalitarian-dogma-not-atheism",
+              "time": "8:42",
+              "role": "Major direct reply",
+              "words": "Communist, Nazi, and Khmer Rouge atrocities are better diagnosed through closed political dogma than atheism, while open-ended rational inquiry provides a general corrective.",
+              "score": 83,
+              "critique": "Strongest feature: The reply directly contests atheism as the operative cause of totalitarian atrocities and supplies closed political dogma as a coherent alternative diagnosis linked to open-ended inquiry. Principal limitation: Its categorical dismissal of atheism exceeds the evidence presented and leaves possible interaction among anti-religious commitments, authoritarian institutions, nationalism, ideology, and coercive political incentives insufficiently examined. Live burden: The diagnosis requires comparative causal evidence showing that epistemic closure explains the relevant violence better than atheism, including cases where either feature appears without the other. Locked score: The strong band reflects excellent diagnostic responsiveness, conceptual clarity, and central relevance, moderated by compressed historical support, broad terminology, and underdeveloped treatment of mixed causal contributions.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "consciousness-life-and-contested-cases",
+        "title": "Consciousness, Human Status, and Contested Cases",
+        "timebox": "10:27–21:27",
+        "score": {
+          "pro": 66,
+          "con": 75
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-persons-existence-design-inference",
+              "time": "10:27",
+              "role": "Major direct reply",
+              "words": "The existence of persons, conversation, and an apparently designed world makes an intentional creator more plausible than interpreting human and cosmic existence as sheer coincidence.",
+              "score": 66,
+              "critique": "Strongest feature: The reply contacts the creator-evidence burden directly by treating personal existence, intelligibility, and apparent design as phenomena that invite an intentional explanation rather than brute coincidence. Principal limitation: It conflates nonintentional natural causation with sheer coincidence, assumes the disputed appearance of design, and offers no comparative account of naturalistic explanations or creator-specific predictions. Live burden: The inference must define design indicators, compare explanatory alternatives, and show why intentional creation better predicts the observed world without presupposing that complex existence requires a designer. Locked score: The mixed band reflects central relevance and a recoverable explanatory proposal, substantially constrained by weak warrant, unstable alternatives, overstated confidence, and incomplete contact with scriptural authorship.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-conscious-capacity-grounds-moral-distinctions",
+              "time": "18:21",
+              "role": "Major direct reply",
+              "words": "Moral concern can rest on conscious creatures' happiness and suffering, with experiential and neurological capacities informing distinctions among humans, animals, embryos, and fetuses.",
+              "score": 82,
+              "critique": "Strongest feature: The reply provides substantive secular criteria through happiness, suffering, and degrees of conscious capacity, enabling morally relevant distinctions across humans, animals, embryos, and fetuses. Principal limitation: It identifies morally significant variables without fully explaining their relative weighting, their relationship to rights, or how uncertainty about consciousness should influence precautionary treatment. Live burden: The account must derive action-guiding principles from capacity evidence, address conflicts among welfare, autonomy, continuity, and potentiality, and demonstrate durability beyond contingent social agreement. Locked score: The strong band reflects coherent grounding, stable scope, explicit qualification, and direct central relevance, while retaining reservations about incomplete normative derivation and the unanswered comparative durability challenge.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-conception-dogma-obstructs-abortion-inquiry",
+              "time": "20:37",
+              "role": "Supporting reply",
+              "words": "Certainty that a fully formed soul exists at conception can polarize abortion policy and obstruct discussion of ethically relevant differences throughout fetal development.",
+              "score": 64,
+              "critique": "Strongest feature: The reply identifies a concrete mechanism by which conception-based certainty can suppress attention to ethically relevant developmental differences and thereby complicate nuanced abortion-policy deliberation. Principal limitation: It attributes secular discourse failures broadly to religious dogmatism without representative evidence, institutional specification, comparative cases, or adequate consideration of nonreligious sources of polarization. Live burden: The causal claim must distinguish obstruction from principled disagreement and show that removing soul-based certainty improves inquiry while still respecting continuity, potentiality, and precautionary concerns. Locked score: The weak band reflects material subsidiary relevance and a recoverable developmental point, outweighed by categorical causal language, limited evidentiary support, and nonresponse to the decisive creator, authority, and worldview-performance arguments.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 69,
-        strengths: [
-          "Prager kept pressing the difference between merely having moral feelings and having a ground for binding moral obligations.",
-          "His examples involving animals, embryos, and personal loyalty forced Harris to apply secular principles to difficult cases rather than leaving them abstract.",
-          "He fairly insisted that political and historical consequences matter when assessing a moral worldview."
+    "overall": {
+      "pro": {
+        "score": 70,
+        "strengths": [
+          "Separated evidentiary support for religion from the distinct comparative question of practical moral performance, preserving an important evaluative issue.",
+          "Placed binding obligation at the center by asking whether secular discussion, institutions, and human preferences can durably sustain prohibitions such as the rule against murder.",
+          "Introduced historical context as a relevant interpretive control, correctly observing that an ancient rule may constitute progress relative to surrounding practices.",
+          "Identified a genuine tension between broad claims that religion obstructs threat recognition and the apparent acuity of some religious observers concerning Islamist totalitarianism."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He often treated God's moral authority and scripture's divine source as established while relying on those very claims to explain why the moral code binds.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The creator argument treated naturalistic causation as sheer coincidence and assumed apparent design without comparing alternative explanations or deriving any bridge to scriptural authorship.",
+            "links": []
+          },
+          {
+            "text": "Broad claims about religious Americans, secular academics, communism, and social evil lacked representative evidence, stable comparison groups, or attention to rival causal explanations.",
+            "links": []
+          },
+          {
+            "text": "The divine-command account caricatured secular grounding as discussion alone and did not address conflicting religious commands, interpretation, institutions, cooperation, or religiously motivated violence.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 78,
-        strengths: [
-          "Harris offered a positive secular ethic based on conscious well-being, suffering, cooperation, autonomy, and the different capacities of living beings.",
-          "He repeatedly separated a moving religious or spiritual experience from evidence that a particular sacred text was dictated by the Creator.",
-          "His best answers focused on public reasons and the need to test competing moral and metaphysical claims rather than simply dismissing religious concern."
+      "con": {
+        "score": 81,
+        "strengths": [
+          "Conditionally reconstructed how martyrdom and paradise beliefs can make lethal action instrumentally rational, directly answering the religious-recognition comparison.",
+          "Distinguished moral realism from pragmatism and located truth-apt ethical inquiry in facts about happiness, suffering, and conscious physical systems.",
+          "Offered conscious capacity and developmental degree as morally relevant criteria across humans, animals, embryos, and fetuses without claiming every boundary was settled.",
+          "Diagnosed epistemic closure rather than atheism alone as the common danger in totalitarian systems and linked correction to open-ended inquiry.",
+          "Supplied attachment, cooperation, love, and nurturance as concrete secular mechanisms supporting convergence against murder and viable social life."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He sometimes calls his flourishing account ethical realism without fully explaining how facts about well-being become objective obligations for someone who rejects that priority.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "Several causal claims about supernatural belief, abortion discourse, and totalitarianism exceeded the comparative evidence presented and underdeveloped plausible mixed causes.",
+            "links": []
+          },
+          {
+            "text": "The wellbeing account asserted objective answers without fully deriving normativity, specifying interpersonal measurement, or resolving conflicts among welfare, rights, autonomy, and uncertainty.",
+            "links": []
+          },
+          {
+            "text": "The biblical-theocracy reply used rhetorically absolute comparisons that outran the limited textual analysis supplied in the selected exchange.",
+            "links": []
           }
         ]
       }
-    }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The strongest religious case is that publicly accountable belief in a transcendent moral source can reinforce objective duties, communal motivation, and institutional self-criticism when scriptural interpretation is disciplined by reason, historical context, and evidence of human flourishing.",
+          "premises": [
+            "If persons possess equal worth that does not depend on power, popularity, productivity, or reciprocal usefulness, a transcendent account can explain why obligations remain binding toward strangers, enemies, and vulnerable people.",
+            "Religious moral reasoning need not treat every inherited interpretation as equally authoritative; textual genre, historical setting, overarching principles, and accumulated moral knowledge can constrain applications and permit correction.",
+            "A credible religious framework should welcome empirical testing of its social consequences, distinguishing the truth of its moral principles from the fallibility, hypocrisy, or institutional misconduct of particular adherents.",
+            "The creator inference gains force only comparatively: intentional explanation should be assessed against naturalistic alternatives using explanatory scope, coherence, simplicity, and predictive consequences, without redefining every nonintentional process as coincidence.",
+            "Religious communities can contribute distinctive practices of repentance, forgiveness, sacrifice, and solidarity, but any comparative advantage must be demonstrated across representative cases and remain answerable to public moral criticism."
+          ],
+          "conclusion": "Therefore, religious belief can plausibly strengthen moral obligation and communal practice when its creator claims are argued comparatively, its interpretations remain corrigible, and its practical advantages survive representative public testing."
+        },
+        "newArguments": [
+          {
+            "title": "Protection beyond reciprocity",
+            "text": "Cooperation can explain why most people reject murder, yet reciprocal advantage alone may inadequately protect infants, severely disabled persons, isolated minorities, or future generations. A transcendent equal-worth principle can treat every person as possessing status that precedes social usefulness and majority recognition. This does not prove a particular revelation, but it identifies a potential explanatory and motivational contribution: duties toward those who cannot reciprocate become applications of an antecedent commitment rather than optional extensions of mutual advantage."
+          },
+          {
+            "title": "Tradition as distributed memory",
+            "text": "A long-lived religious tradition can function as distributed moral memory, preserving warnings, narratives, practices, and institutional lessons beyond an individual's lifespan. Its value would not arise from age or authority alone, and inherited claims would remain open to criticism. The narrower argument is that traditions can retain hard-won insights about temptation, domination, loyalty, repentance, and forgiveness that abstract deliberation may repeatedly rediscover. Comparative evidence would still be needed to determine when such memory helps and when inherited error instead obstructs correction."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The strongest secular case is that objective moral inquiry can begin from publicly examinable facts about conscious experience, agency, cooperation, and harm, then develop corrigible principles through evidence, consistency, and inclusive reasoning without requiring supernatural authorship.",
+          "premises": [
+            "States of extreme suffering, coercion, deprivation, and flourishing differ in publicly investigable ways, and agents already rely on those differences whenever they deliberate about reasons, policies, and treatment of others.",
+            "Consistency requires similarly situated interests to receive similar consideration unless a morally relevant difference can be identified, creating a rational bridge from first-person concern to impartial protection of other conscious beings.",
+            "Cooperation, attachment, and institutions explain how moral norms become motivationally stable, while rights and impartial constraints protect vulnerable people when reciprocity, popularity, or aggregate welfare would otherwise neglect them.",
+            "Open inquiry provides correction mechanisms through transparent evidence, criticism, replication, historical comparison, and policy revision, whereas claims insulated by sacred or political certainty can obstruct detection of error.",
+            "Uncertainty about consciousness, development, and long-term consequences supports graded confidence, precaution, and revisable policy rather than either moral indifference or certainty unsupported by available evidence."
+          ],
+          "conclusion": "Therefore, secular ethical realism can guide objective but revisable moral judgment when experiential evidence is connected to consistency, equal consideration, rights, cooperation, precaution, and institutions designed to expose error."
+        },
+        "newArguments": [
+          {
+            "title": "Convergence under independent scrutiny",
+            "text": "Moral confidence should increase when people with different metaphysical commitments converge after examining shared evidence, hearing affected parties, and applying consistent principles. Such convergence does not mechanically establish truth, but it reduces the likelihood that a conclusion depends entirely on one tradition's disputed authority. The secular framework can therefore use cross-perspective convergence as defeasible evidence while retaining protections for dissenters and minorities. This supplies an epistemic method for moral inquiry without pretending that disagreement disappears or that consensus is automatically correct."
+          },
+          {
+            "title": "Institutional error correction",
+            "text": "Secular morality can be strengthened by designing institutions that make their own mistakes discoverable: publish reasons, measure consequences, invite adversarial criticism, protect dissent, and set revision triggers. The important comparison is not between fallible humans and a perfect abstract authority, but between actual interpretive institutions with different correction mechanisms. Religious and secular communities both contain human interpreters; the framework that exposes claims to broader evidence and structured revision may correct harmful applications more reliably, even while every conclusion remains provisional and open to further scrutiny."
+          }
+        ]
+      }
+    },
+    "topicCategory": "religion-society-public-reason"
   },
   {
     "id": "dillahunty-howitt-christianity-true-2023",
@@ -69781,259 +70297,381 @@ export const debates = [
     "topicCategory": "scripture-jesus-resurrection"
   },
   {
-    id: "swinburne-millican-does-god-exist-2022",
-    number: "194",
-    assessmentModel: "5.6 Terra Extra High",
-    title: "Richard Swinburne vs Peter Millican: Does God Exist?",
-    label: "Simplicity, cosmic order, and evil",
-    topicCategory: "god-theism-atheism",
-    date: "2026-08-01",
-    duration: "1 hr 8 min",
-    youtubeUrl: "https://www.youtube.com/watch?v=FcNR4vJdcE4",
-    motion:
-      "Is God the simplest and most probable explanation of the universe and its general features?",
-    summary:
-      "Swinburne presents one unlimited good person as the simplest explanation of laws, life, and consciousness; Millican challenges that simplicity, its predictive precision, and its fit with suffering.",
-    sourceNote:
-      "Built from the English auto-generated YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
-    scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
-    quotes: {
-      pro: {
-        text: "the simplest and so most probable explanation",
-        context:
-          "Swinburne applies scientific-style explanatory criteria to a divine person who accounts for the universe's most general features."
+    "id": "swinburne-millican-does-god-exist-2022",
+    "number": "194",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "title": "Richard Swinburne vs Peter Millican: Does God Exist?",
+    "label": "Simplicity, cosmic order, and evil",
+    "date": "2026-08-24",
+    "duration": "1 hr 8 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FcNR4vJdcE4",
+    "motion": "Is God the simplest and most probable explanation of the universe and its general features?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4997805a766a635cef97ec4abdec0ef9153bad46a4fbd27624a135a5d41e86eb). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "summary": "Swinburne defended personal explanation, simplicity, freedom, and compensation; Millican pressed predictive specificity, scientific background, divine coherence, embodiment, and victim-centered suffering.",
+    "quotes": {
+      "pro": {
+        "text": "He wants us to choose what is good.",
+        "context": "Swinburne uses freely chosen goodness to explain why a good creator might permit agents to face consequential alternatives."
       },
-      con: {
-        text: "it's so general that it's hard actually to say what would count against it",
-        context:
-          "Millican argues that descriptive economy cannot confer probability when divine purposes flex to accommodate almost any world."
+      "con": {
+        "text": "There are different types of simplicity.",
+        "context": "Millican argues that descriptive, ontological, and computational economy can diverge, complicating any direct inference from simplicity to probability."
       }
     },
-    sides: {
-      pro: {
-        name: "God is the best explanation",
-        speaker: "Richard Swinburne",
-        color: "teal"
+    "sides": {
+      "pro": {
+        "name": "God is the best explanation",
+        "speaker": "Richard Swinburne",
+        "color": "teal"
       },
-      con: {
-        name: "The evidence does not support God",
-        speaker: "Peter Millican",
-        color: "coral"
+      "con": {
+        "name": "The evidence does not support God",
+        "speaker": "Peter Millican",
+        "color": "coral"
       }
     },
-    score: { pro: 87, con: 94 },
-    sections: [
+    "score": {
+      "pro": 81,
+      "con": 88
+    },
+    "sections": [
       {
-        title: "Personal explanation and simplicity",
-        timebox: "2:36-14:28",
-        score: { pro: 93, con: 91 },
-        exchanges: [
+        "sectionId": "section-explanatory-modes",
+        "title": "Personal, physical, and purposive explanation",
+        "timebox": "2:58–44:25",
+        "score": {
+          "pro": 86,
+          "con": 85
+        },
+        "exchanges": [
           {
-            pro: {
-              time: "3:01",
-              role: "Unified personal explanation",
-              words:
-                "Swinburne distinguishes inanimate explanations by prior states and laws from personal explanations by powers, beliefs, and purposes, then proposes one divine person as the ultimate source.",
-              score: 93,
-              critique:
-                "Swinburne builds a clear abductive framework rather than offering a deductive proof. Personal explanation is undeniably part of ordinary inquiry, and his robbery example shows why a unified agent hypothesis can beat a conjunction of disconnected contrivances. Applying shared criteria—expectation of evidence, comparative surprise, simplicity, and background fit—makes theism answerable to familiar reasoning. The leap is from embodied agents whose powers and intentions are independently evidenced to an unobserved cosmic person with unlimited causal reach. Calling that one entity does reduce entity count, but ontological complexity also concerns capacities, cognitive structure, and the mapping from purposes to outcomes. Swinburne needs more than grammatical singularity to show that divine agency is intrinsically simpler than fundamental laws or other ultimate structures. Still, the explanatory proposal is systematic and substantive.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-personal-explanation-as-genuine-mode",
+              "time": "2:58",
+              "role": "Load-bearing constructive",
+              "words": "Purposes, beliefs, and powers provide a genuine personal mode of explanation alongside accounts appealing to earlier physical conditions and natural laws.",
+              "score": 87,
+              "critique": "Strongest feature: The move clearly distinguishes intentional explanation from law-governed physical explanation, illustrates that distinction through ordinary agency, and establishes an indispensable conceptual foundation for the broader theistic inference. Principal limitation: Its familiar hand-action example demonstrates personal explanation among embodied agents but provides no independent warrant for extending that explanatory category to a bodiless creator operating cosmically. Live burden: The argument must establish applicability beyond familiar animate agents while explaining how divine purposes, powers, and actions retain intelligible causal content without ordinary physical mediation. Locked score: The very-strong band reflects exceptional clarity, coherence, recoverability, and central relevance, moderated principally by the undeveloped transition from commonplace intentional action to universe-level personal causation.",
+              "tags": []
             },
-            con: {
-              time: "28:38",
-              role: "False explanatory dichotomy",
-              words:
-                "Millican challenges the personal-inanimate division with purposive algorithms and evolved functions, warning that apparent goal direction need not originate in a conscious agent.",
-              score: 91,
-              critique:
-                "Millican correctly shows that explanatory vocabulary operates at several levels. A chess program's move is intelligible through an algorithm and objective without attributing beliefs to the machine, while biological functions arise through selection. These examples undercut any inference from purposive description directly to a personal source. Swinburne replies that such functions ultimately reduce to causal histories and thus remain inanimate, which preserves his taxonomy if it is stipulated broadly. The exchange is therefore partly classificatory: algorithmic and evolutionary explanations may be higher-level inanimate accounts rather than a genuinely third ultimate kind. Millican's deeper point survives. Because local purpose can emerge without personal intention, the cosmos's intelligibility or life-directed laws do not automatically favor agency. Independent evidence is needed to move from teleological usefulness to a mind.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-purposive-systems-beyond-persons",
+              "time": "28:36",
+              "role": "Major direct reply",
+              "words": "Evolved organisms and algorithmic systems display purposive behavior, challenging any exhaustive division between mechanical processes and explanation through personal agents.",
+              "score": 84,
+              "critique": "Strongest feature: The reply directly contests explanatory exhaustiveness with concrete algorithmic and evolutionary examples, while carefully limiting its conclusion and acknowledging that the narrower personal category may remain legitimate. Principal limitation: Its use of purposive behavior moves between conscious intention and function-like organization, so the examples might represent physical explanation at another level rather than another causal category. Live burden: The objection must distinguish behavioral teleology from an agent's experienced purpose and show why the former creates a genuinely additional explanatory mode instead of redescribing mechanistic processes. Locked score: The strong band rewards excellent responsiveness, relevant counterexamples, calibrated scope, and charitable engagement, moderated by the consequential instability in the central meaning of purposiveness.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-defense-of-personal-causal-category",
+              "time": "41:32",
+              "role": "Major direct reply",
+              "words": "Selection explains biological functions, but purposive action involving beliefs, plans, and powers remains an irreducibly personal form of causal explanation.",
+              "score": 84,
+              "critique": "Strongest feature: The reply usefully separates evolved biological function from conscious purposive action and clarifies why beliefs, plans, and powers contribute explanatory information not supplied by selection alone. Principal limitation: Defending ordinary personal causation does not establish that physical and personal explanation exhaust every causal category or that personal explanation remains irreducible under every explanatory interpretation. Live burden: The defense must distinguish explanatory levels from fundamental causal kinds and justify extending its ordinary-agency model to divine action without relying merely upon categorical assertion. Locked score: The strong band reflects clear clarification, substantial responsiveness, and coherent defense of familiar agency, tempered by overbroad exhaustiveness language, incomplete cosmic applicability, and limited engagement with pluralistic alternatives.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-background-fit-personal-causation",
+              "time": "32:45",
+              "role": "Supporting reply",
+              "words": "Bodiless instantaneous agency departs from observed causation, and science's historical retreat from purposive accounts makes background fit relevant even for cosmic explanation.",
+              "score": 85,
+              "critique": "Strongest feature: The reply sharply distinguishes ordinary embodied agency from universe-wide action by fiat and explains why established causal experience and scientific history remain relevant background considerations. Principal limitation: Historical retreat from earlier purposive theories does not establish that every personal cosmic explanation is defective, especially when the proposed explanandum concerns a potentially unique domain. Live burden: The objection must calibrate how strongly ordinary causal background should constrain ultimate explanation and avoid converting comparative unfamiliarity into an unsupported prohibition against nonphysical agency. Locked score: The very-strong band recognizes direct applicability, disciplined plausibility language, historical support, and charitable treatment of domain uniqueness, while preserving the subsidiary status and nondeductive character of the challenge.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Lawlike order, evolution, and consciousness",
-        timebox: "14:28-19:30",
-        score: { pro: 90, con: 93 },
-        exchanges: [
+        "sectionId": "section-simplicity-probability",
+        "title": "Simplicity as a guide to explanatory probability",
+        "timebox": "7:41–48:07",
+        "score": {
+          "pro": 85,
+          "con": 88
+        },
+        "exchanges": [
           {
-            pro: {
-              time: "15:33",
-              role: "Order-expectation argument",
-              words:
-                "Swinburne argues that a good God has reason to create embodied free agents in a regular world, whereas unguided particles have no reason to obey simple life-permitting laws.",
-              score: 90,
-              critique:
-                "Swinburne connects several data under one intention: agents need bodies, predictable consequences, an evolutionary route, and consciousness, so a good creator would have reason to produce lawlike conditions of this kind. This is better than asserting that order looks designed; it explains why regularity matters morally. The comparison with naturalism is underdeveloped. Saying particles would each 'go their own way' without God presupposes that laws require an external enforcer rather than being brute, necessary, dispositional, or structurally basic. The divine prediction is also broad: innumerable laws and histories could generate agents, and the argument offers no probability measure across either divine choices or natural possibilities. Consciousness creates an explanatory challenge, but claiming physics could not possibly explain it outruns what is shown. The synthesis is elegant, not decisive.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-simplicity-fewer-postulates",
+              "time": "7:41",
+              "role": "Load-bearing constructive",
+              "words": "Explanatory practice favors otherwise adequate hypotheses positing fewer entities, properties, laws, and mathematical complications, as Newtonian gravitation illustrates.",
+              "score": 81,
+              "critique": "Strongest feature: The move supplies concrete scientific content for explanatory economy, identifying entities, properties, laws, and mathematical structure rather than relying upon an undefined rhetorical preference for elegance. Principal limitation: The examples support simplicity as one theoretical virtue but do not establish a unified probability rule when different economies conflict or improved empirical performance requires additional complexity. Live burden: The argument must specify which simplicity measure governs, how competing measures combine, and why that ordering tracks prior probability among hypotheses already satisfying evidential constraints. Locked score: The strong band recognizes substantive illustration, direct central relevance, and coherent explanatory practice, while retaining meaningful reservations about implicit boundaries, probabilistic compression, and insufficiently developed comparison conditions.",
+              "tags": []
             },
-            con: {
-              time: "32:48",
-              role: "Background-fit objection",
-              words:
-                "Millican says a disembodied will acting instantly without mechanism conflicts with all known agency, and the history of science has repeatedly replaced purposive cosmic explanations with physical ones.",
-              score: 93,
-              critique:
-                "Millican identifies a cost hidden by Swinburne's decision to omit background knowledge at the ultimate level. Every observed person acts through a body and causal processes; unlimited disembodied agency is not a modest extrapolation from that class. Scientific history makes promiscuous teleology a known cognitive hazard. Swinburne replies that theoretical physics likewise posits unfamiliar entities when they predict data, so unfamiliarity alone cannot disqualify God. That reply exposes the decisive difference: photons and quantum models earn acceptance through precise, risky predictions, whereas divine purposes are inferred after seeing the world. Millican should not imply that every retreat from local teleology proves there is no ultimate purpose. His narrower conclusion is strong: our background evidence gives no automatic prior advantage to an unmechanized cosmic mind merely because we understand intentional action.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-multiple-simplicity-criteria",
+              "time": "30:11",
+              "role": "Major direct reply",
+              "words": "Descriptive, ontological, and computational simplicity can diverge, while scientific progress sometimes accepts greater complexity for improved explanatory or predictive performance.",
+              "score": 90,
+              "critique": "Strongest feature: The reply separates multiple simplicity criteria and combines that conceptual distinction with scientific cases where increased complexity accompanies better theory, directly restricting an unrestricted simplicity inference. Principal limitation: Demonstrating divergent measures does not show that no principled weighting exists, and the historical observation alone supplies no replacement account of their relationship to probability. Live burden: The challenge must identify which measure is relevant in the theistic comparison or explain why available aggregation rules cannot produce a justified ordering among evidentially adequate hypotheses. Locked score: The very-strong band reflects precise distinctions, matched calibration, strong warrant, charitable qualification, and decisive central contact, with only the unresolved positive aggregation question limiting completeness.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-simplicity-raises-probability-subject-to-data",
+              "time": "44:21",
+              "role": "Major direct reply",
+              "words": "Among hypotheses adequately fitting evidence, greater simplicity raises prior probability, but even a simple proposal must be rejected when predictions conflict with data.",
+              "score": 89,
+              "critique": "Strongest feature: The reply substantially repairs the original formulation by making empirical adequacy a prerequisite for simplicity preference and illustrating why improved predictions can rationally justify a more complex scientific theory. Principal limitation: Restricting the comparison to adequate hypotheses leaves unresolved which simplicity measure determines prior ordering and how adequacy or predictive fit should be evaluated across unlike explanations. Live burden: The argument must operationalize its preferred economy criterion and show that the divine hypothesis satisfies evidential constraints before any simplicity-based prior advantage becomes probatively relevant. Locked score: The very-strong band rewards a well-calibrated concession, precise conditional principle, concrete scientific illustration, and direct response, while preserving the unresolved metric and application problems.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-qualified-infinity-complexity",
+              "time": "36:30",
+              "role": "Major direct reply",
+              "words": "Divine infinity includes qualifications about evil and free actions, while sustaining every particle appears computationally demanding rather than straightforwardly simple.",
+              "score": 85,
+              "critique": "Strongest feature: The reply applies several previously distinguished simplicity criteria to the proposed deity, identifying attribute qualifications and apparent computational demands instead of treating infinity as automatically economical. Principal limitation: Computational workload may not measure intrinsic complexity for a nonphysical agent, and qualified powers can remain concisely specifiable when their restrictions follow from unified principles. Live burden: The criticism must define the applicable complexity metric, count morally or logically grounded qualifications consistently, and separate concise specification from implementation cost without presupposing creaturely computation. Locked score: The very-strong band credits direct central application, recoverable challenges, careful suggestive phrasing, and substantial relevance, moderated by the absence of a fully defended metric for comparing divine and scientific complexity.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Which kind of simplicity predicts?",
-        timebox: "30:13-53:39",
-        score: { pro: 91, con: 96 },
-        exchanges: [
+        "sectionId": "section-prediction-general-features",
+        "title": "Predicting order, life, consciousness, and agency",
+        "timebox": "14:24–53:42",
+        "score": {
+          "pro": 78,
+          "con": 90
+        },
+        "exchanges": [
           {
-            pro: {
-              time: "44:25",
-              role: "Scientific parsimony defense",
-              words:
-                "Swinburne argues that among hypotheses fitting the observations, science must prefer the simplest curve or law or else infinitely many equally compatible extrapolations destroy prediction.",
-              score: 91,
-              critique:
-                "Swinburne is right that a simplicity constraint is indispensable to induction. Finite data permit infinitely many curves, and scientists prefer compact laws until discrepant observations force added terms. His clarification that simplicity is only one criterion answers the fact that theories sometimes grow more complex. Treating unlimited power as zero limits and one person as one entity gives his proposal a compact description. The unresolved issue is which language and simplicity measure are legitimate. 'An omnipotent person wants this world' can be stated briefly while encoding every detail in the desire, just as a short program may call an enormous lookup table. Swinburne narrows God's predicted output to general laws, life, and consciousness, but divine reasons still permit a vast range. Parsimony helps only after comparative likelihoods are disciplined.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-theism-predicts-order-life-consciousness",
+              "time": "14:24",
+              "role": "Load-bearing constructive",
+              "words": "Theism makes orderly laws, evolution, embodied agency, and consciousness probable because a good creator has reasons to produce beings capable of rational action.",
+              "score": 78,
+              "critique": "Strongest feature: The move directly addresses the motion by connecting divine purposes with regular laws, evolutionary development, embodied agency, and consciousness in one ambitious comparative explanatory package. Principal limitation: Its categorical dismissal of physical explanation exceeds the supplied argument, and an unresolved account of consciousness does not independently show that theism predicts the entire package better. Live burden: The case must define relevant alternatives, articulate discriminating likelihoods, and distinguish phenomena already explained through physical or evolutionary mechanisms from any genuinely residual explanatory requirement. Locked score: The strong band acknowledges maximal motion relevance and an intelligible purposive synthesis, while reflecting materially overstated calibration, incomplete comparison, unstable scope, and insufficient engagement with non-theistic explanatory division.",
+              "tags": []
             },
-            con: {
-              time: "31:40",
-              role: "Syntactic-versus-ontological challenge",
-              words:
-                "Millican distinguishes concise description from ontological and computational simplicity, arguing that an unlimited mind sustaining every particle may be easy to name but immensely complex to realize.",
-              score: 96,
-              critique:
-                "Millican delivers the debate's most damaging objection. Simplicity is multidimensional: few words, few entities, few adjustable parameters, and low computational burden can diverge. A single omniscient agent may be concise while containing the dispositions to select and sustain every lawful state. More importantly, theism's predictive likelihood depends on what perfect goodness would choose, and that mapping is not specified enough to generate precise expectations. Millican's comparison with quantum theory emphasizes that empirical accuracy, not strangeness plus brevity, earns explanatory status. His computational language may not apply straightforwardly to a fundamental nonphysical being, and Swinburne can deny that God's knowledge is implemented by sequential calculation. Yet that denial does not establish simplicity. Millican shifts the burden from counting the word 'God' once to measuring the explanatory machinery the hypothesis requires.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-simple-creator-nonspecific",
+              "time": "35:41",
+              "role": "Major direct reply",
+              "words": "A creator hypothesis may be verbally simple yet predict almost anything if its preferences remain unrestricted, unlike Darwinian explanations constrained by physical mechanisms.",
+              "score": 90,
+              "critique": "Strongest feature: The reply cleanly distinguishes concise verbal formulation from explanatory specificity, using unrestricted creator preferences to demonstrate how superficial simplicity can coexist with extremely weak predictive discrimination. Principal limitation: The criticism is decisive only against an unconstrained creator hypothesis; independently justified moral attributes might narrow divine intentions and generate substantive, though nonnumerical, expectations. Live burden: The objection must test the strongest specified divine-character model and show that its constraints still fail to distinguish observed general features from materially different possible worlds. Locked score: The very-strong band reflects excellent conceptual precision, decisive responsiveness, strong comparative relevance, and appropriately bounded calibration, with the remaining task being engagement with principled rather than arbitrary restrictions upon divine purposes.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-generality-lacks-precision",
+              "time": "52:26",
+              "role": "Major direct reply",
+              "words": "Generality and simplicity have limited evidential value when a hypothesis lacks the precise, accurate, and discriminating predictions that justify scientific complexity.",
+              "score": 90,
+              "critique": "Strongest feature: The reply concedes simplicity's relevance among equally accurate and precise hypotheses, then identifies predictive discrimination as the reason scientific complexity can nevertheless earn substantial evidential support. Principal limitation: Theism might generate broad probabilistic expectations without numerical predictions, so scientific precision cannot automatically function as the exclusive standard for every legitimate explanatory hypothesis. Live burden: The challenge must compare likelihood contrasts at an appropriate level, showing that theistic expectations remain insufficiently discriminating even after their intended qualitative and moral constraints are specified. Locked score: The very-strong band reflects exceptional precision, calibrated conditional reasoning, central motion relevance, responsiveness, and charity, with the remaining limitation concerning how cross-domain predictive standards should be normalized.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Freedom and the purpose of natural evil",
-        timebox: "19:30-24:14",
-        score: { pro: 84, con: 94 },
-        exchanges: [
+        "sectionId": "section-divine-coherence-human-nature",
+        "title": "Divine attributes, physical coherence, and human nature",
+        "timebox": "11:06–57:25",
+        "score": {
+          "pro": 79,
+          "con": 86
+        },
+        "exchanges": [
           {
-            pro: {
-              time: "19:53",
-              role: "Soul-making theodicy",
-              words:
-                "Swinburne says significant freedom requires power to harm, while disease and accident give sufferers and others opportunities for courage, compassion, negligence, and character formation.",
-              score: 84,
-              critique:
-                "Swinburne explains why a perfectly safe world might lack morally serious agency. Predictable consequences, vulnerability, and repeated choices allow persons to affect others and form durable character; these goods plausibly justify some risk and hardship. The argument has trouble with distribution and scale. Infants who starve, people annihilated before choosing, and animals suffering without moral comprehension do not themselves receive the cited character-building opportunity. Others can exercise compassion without victims enduring extreme, prolonged, or hidden agony, so the defense needs a reason for the observed quantity and asymmetry. Calling most natural evil useful treats persons partly as instruments for someone else's virtue. Swinburne later adds afterlife compensation, but compensation is not justification and is not independently evidenced by the suffering. The account explains some adversity better than horrific evil.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-good-god-creates-free-rational-agents",
+              "time": "11:06",
+              "role": "Load-bearing constructive",
+              "words": "A perfectly good, powerful creator has reason to make conscious agents capable of serious choices between good and evil instead of programming goodness.",
+              "score": 79,
+              "critique": "Strongest feature: The move offers a coherent moral-purpose bridge from perfect goodness to created rational agency, emphasizing that chosen goodness possesses value unavailable to behavior produced solely through programming. Principal limitation: Establishing some reason for consequential freedom does not determine how much evil, vulnerability, or unequal suffering such freedom requires, nor exclude less destructive arrangements. Live burden: The account must connect valuable agency to the actual severity and distribution of harm while comparing alternative worlds containing meaningful choice with substantially fewer victimizing consequences. Locked score: The strong band reflects clarity, central relevance, and an intelligible freedom rationale, tempered by limited evidential support, implicit proportionality assumptions, and an underdeveloped victim-centered comparison.",
+              "tags": []
             },
-            con: {
-              time: "53:45",
-              role: "Victim-instrumentality objection",
-              words:
-                "Millican argues that starving children and Holocaust victims often lack meaningful agency while being used as opportunities for more powerful people, which is hard to call a great good for them.",
-              score: 94,
-              critique:
-                "Millican focuses the moral objection precisely where generic free-will defenses are weakest. Permission for an oppressor's significant choice does not obviously benefit the victim, and describing involuntary suffering as valuable service risks overriding the person's own ends. His symmetry argument is powerful: if enough auxiliary reasons can reconcile any evil with perfect goodness, analogous stories could reconcile observed good with a malicious creator, erasing evidential discrimination. Swinburne's parental and military analogies fail to cover nonconsensual, disproportionate suffering; parents have limited duties and soldiers can knowingly volunteer, unlike infants or exterminated civilians. Millican could acknowledge more clearly that preventing every harm may undermine stable agency. But he need not establish a painless-world optimum. He shows that Swinburne has not derived this world's extremes from goods that require them.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-divine-time-relativity",
+              "time": "38:00",
+              "role": "Diagnostic challenge",
+              "words": "A temporal deity knowing everything up to a universal present appears difficult to reconcile with relativity's denial of absolute simultaneity.",
+              "score": 85,
+              "critique": "Strongest feature: The move isolates a precise coherence problem between temporally bounded divine foreknowledge and relativity's absence of an absolute universal present, avoiding a vague appeal to scientific incompatibility. Principal limitation: Apparent tension is not contradiction, because a divine temporal model might use localized ordering, invariant causal structure, or another account not requiring privileged simultaneity. Live burden: The challenge must show that the particular divine knowledge claim necessarily invokes a global present and that available relativistic reformulations cannot preserve its intended theological content. Locked score: The very-strong band recognizes precision, disciplined calibration, subsidiary relevance, and clear diagnostic force, while appropriately withholding completeness because the objection identifies an unresolved model requirement rather than demonstrating incoherence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-soul-evolution-brain-fit",
+              "time": "56:02",
+              "role": "Supporting reply",
+              "words": "If an independently created immaterial soul performs human thinking, the evolutionary development and biological cost of enormous brains require further explanation.",
+              "score": 86,
+              "critique": "Strongest feature: The reply frames a concrete conditional compatibility test, asking why costly, gradually evolved brains are necessary if an independently inserted immaterial soul itself performs the relevant thinking. Principal limitation: A dualist may assign the brain indispensable roles in sensation, action, development, memory, or soul-body interaction, possibilities the brief objection does not independently eliminate. Live burden: The theory must explain why those mediating functions require the observed neural scale and evolutionary expense, while the objection must engage its strongest functional account rather than assume redundancy. Locked score: The very-strong band reflects precise conditional formulation, strong evolutionary warrant, calibrated challenge, and effective subsidiary relevance, with incompleteness arising because the targeted pro move does not fully articulate the soul model.",
+              "tags": []
             }
           }
         ]
       },
       {
-        title: "Afterlife compensation and predictive latitude",
-        timebox: "59:28-1:08:02",
-        score: { pro: 80, con: 96 },
-        exchanges: [
+        "sectionId": "section-suffering-compensation",
+        "title": "Suffering, moral freedom, and posthumous compensation",
+        "timebox": "40:27–67:07",
+        "score": {
+          "pro": 78,
+          "con": 91
+        },
+        "exchanges": [
           {
-            pro: {
-              time: "1:02:19",
-              role: "Posthumous-compensation reply",
-              words:
-                "Swinburne says God must give an afterlife to anyone whose earthly life was not worth living, making the person's total existence good and fulfilling the creator's obligation.",
-              score: 80,
-              critique:
-                "Swinburne recognizes cases so dreadful that earthly goods may not outweigh them. Given an omnipotent good creator, compensation and further flourishing would be expected, so the afterlife claim coheres with his broader model and religious belief. But it enters precisely to protect the model from contrary data. Observable suffering is used to infer an unobserved compensating realm, which then neutralizes suffering as evidence against God. A surgeon's painful intervention differs because its necessity and benefit can be independently demonstrated; Swinburne has not shown that victims' agony is necessary for their later good. Moreover, people killed before forming character do not obviously gain the soul-making benefit that justified embodiment. The response maintains consistency but reduces evidential testability and does not make inflicted harm morally permissible by compensation alone.",
-              tags: []
+            "pro": {
+              "ledgerMoveId": "pro-posthumous-compensation-for-sufferers",
+              "time": "62:16",
+              "role": "Major direct reply",
+              "words": "Omnipotence enables posthumous compensation, and creator obligations require an afterlife when necessary to make each sufferer's total life good overall.",
+              "score": 78,
+              "critique": "Strongest feature: The reply directly addresses obligations toward victims rather than appealing only to goods enjoyed by others, and it clearly distinguishes divine ability from the proposed total-life standard. Principal limitation: Omnipotence establishes capacity but not an afterlife, a creator's specific obligation, or the moral adequacy of later welfare for severe and potentially nonfungible deprivation. Live burden: The account must justify its obligation principle and explain how compensation benefits each victim while also showing why permitting the original harm was morally permissible. Locked score: The strong band recognizes direct responsiveness, clear proposition recovery, and central victim-oriented relevance, while reflecting materially overstated necessity, limited independent warrant, underspecified adequacy, and incomplete engagement with lost opportunities.",
+              "tags": []
             },
-            con: {
-              time: "1:04:47",
-              role: "Bad-starter analogy",
-              words:
-                "Millican says a terrible first course gives no evidence that the next must compensate; postulating heaven because earthly life is awful reverses the original appeal from observed goodness to God.",
-              score: 96,
-              critique:
-                "Millican exposes circular pressure. Swinburne begins by claiming this universe is expected under perfect goodness, but when lives appear incompatible with that expectation, he infers an unseen sequel required to repair them. The evidence does not independently favor the sequel; its role is to preserve the hypothesis. Millican also notes an internal mismatch: if embodiment develops moral character, those who die before exercising agency cannot enter a perfected state through the mechanism Swinburne described. His restaurant analogy is sharp but imperfect, since a prior argument for a good host could change expectations about later courses. The decisive point remains comparative: a flexible theism that adds unknown divine reasons and posthumous goods can fit almost any data, weakening the claim that observed phenomena make it probable rather than possible.",
-              tags: []
+            "con": {
+              "ledgerMoveId": "con-suffering-prevents-agency",
+              "time": "40:27",
+              "role": "Major direct reply",
+              "words": "Severe suffering and premature death can deprive victims of the morally significant agency that freedom-based explanations invoke to justify risk and harm.",
+              "score": 92,
+              "critique": "Strongest feature: The reply turns the freedom rationale toward victims whose suffering destroys or prevents their agency, supplying a concrete and morally central counterexample rather than merely emphasizing aggregate pain. Principal limitation: The argument establishes a serious explanatory demand but does not exclude every possible victim-centered justification involving relationships, later goods, or continued personal development. Live burden: The theistic account must explain why deprivation of an individual's agency is permissible for that person, while the objection must evaluate rather than simply anticipate proposed compensating considerations. Locked score: The very-strong band reflects exceptional responsiveness, precision, calibration, relevance, and victim-centered force, with its appropriately bounded conclusion leaving logical space for a sufficiently developed reconciliation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-compensation-cannot-restore-development",
+              "time": "64:46",
+              "role": "Major direct reply",
+              "words": "Later compensation does not restore the embodied opportunity for moral development lost by children killed through starvation, persecution, or other premature death.",
+              "score": 89,
+              "critique": "Strongest feature: The reply identifies a specific nonfungible loss—prematurely denied embodied moral development—and directly connects that deprivation both to compensation and to the original freedom rationale. Principal limitation: Calling posthumous repair logically impossible exceeds the brief argument, because continued development or different goods might still make an entire life worthwhile without restoring history. Live burden: The objection must distinguish making life worthwhile from justifying each deprivation and explain why no later benefit can answer the victim-centered permissibility question, even prospectively. Locked score: The very-strong band reflects outstanding responsiveness, precision, moral relevance, charity, and evidential force, moderated only by the localized overstatement of logical impossibility and acknowledged space for continued development.",
+              "tags": []
             }
           }
         ]
       }
     ],
-    overall: {
-      pro: {
-        score: 87,
-        strengths: [
-          "Swinburne presented a unified abductive case rather than treating order, life, consciousness, and morality as isolated proofs.",
-          "He correctly emphasized that simplicity is indispensable to induction and clarified that empirical fit can override an initially simpler theory.",
-          "His account connected regular natural laws to the possibility of embodied agency and morally significant consequences.",
-          "He addressed evil within the same goodness-and-freedom framework instead of ignoring the strongest contrary evidence."
+    "overall": {
+      "pro": {
+        "score": 81,
+        "strengths": [
+          "Established personal explanation as a coherent and familiar explanatory category through purposes, beliefs, powers, and ordinary intentional action.",
+          "Made simplicity substantive by discussing economy in entities, properties, laws, and mathematical formulation rather than invoking elegance without content.",
+          "Improved the simplicity case under challenge by expressly subordinating theoretical economy to empirical adequacy and predictive fit.",
+          "Connected divine purposes to regular laws, evolution, consciousness, rational agency, consequential freedom, and obligations toward individual sufferers."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "He equated one entity with a simple hypothesis while leaving the unlimited mind's capacities, purposes, and world-selection function largely unmeasured.",
-            links: [
-              {
-                label: "Equivocation",
-                url: fallacy("equivocation")
-              }
-            ]
+            "text": "The comparative prediction for order, life, and consciousness overreached by categorically dismissing physical explanation without defining alternatives or supplying discriminating likelihoods.",
+            "links": []
           },
           {
-            text:
-              "He introduced afterlife compensation to absorb apparently disconfirming suffering, making the hypothesis less vulnerable to the evidence it was meant to explain.",
-            links: [
-              {
-                label: "Special pleading",
-                url: fallacy("special-pleading")
-              }
-            ]
+            "text": "The freedom rationale did not adequately connect valuable agency to the actual severity and unequal distribution of suffering, especially where suffering eliminates agency.",
+            "links": []
+          },
+          {
+            "text": "Posthumous compensation was under-argued: divine capacity does not itself establish an afterlife, a specific obligation, or permission for the original deprivation.",
+            "links": []
           }
         ]
       },
-      con: {
-        score: 94,
-        strengths: [
-          "Millican distinguished descriptive, ontological, and computational simplicity and showed why they need not rank God together.",
-          "He compared divine agency with embodied agents and predictive physical theories, exposing the missing bridge from familiarity to cosmic prior probability.",
-          "His victim-instrumentality objection tested the theodicy against people who receive neither freedom nor character development from their suffering.",
-          "His symmetry and afterlife arguments showed how explanatory latitude can make perfect goodness compatible with any evidence and therefore weakly predictive."
+      "con": {
+        "score": 88,
+        "strengths": [
+          "Distinguished descriptive, ontological, and computational simplicity, then explained why empirical improvement can justify scientifically greater complexity.",
+          "Pressed the crucial difference between concise formulation and predictive specificity, requiring theism to discriminate among possible worlds rather than merely accommodate them.",
+          "Applied scientific background and relativity to precise questions about bodiless causation and temporally bounded divine knowledge without presenting either as deductive disproof.",
+          "Made suffering victim-centered by showing that severe harm and premature death can destroy the agency invoked by the freedom defense.",
+          "Connected immaterial-soul claims to evolutionary history and the biological expense of human brains through a concrete conditional challenge."
         ],
-        blunders: [
+        "blunders": [
           {
-            text:
-              "His appeal to science's retreat from purposive explanation risked generalizing from successful local mechanisms to the absence of any ultimate purpose.",
-            links: [
+            "text": "The purposive-systems objection shifted between conscious purpose and function-like behavior, leaving uncertain whether it identified a new causal mode or another explanatory level.",
+            "links": [
               {
-                label: "Scope neglect",
-                url: bias("scope-neglect")
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
               }
             ]
           },
           {
-            text:
-              "His computational-complexity objection assumed that a fundamental divine mind would implement knowledge through processes comparable to finite computation.",
-            links: [
-              {
-                label: "Begging the question",
-                url: fallacy("begging-the-question")
-              }
-            ]
+            "text": "The computational-complexity objection did not provide a metric showing that implementation demands for physical systems appropriately measure the intrinsic complexity of a divine agent.",
+            "links": []
+          },
+          {
+            "text": "The claim that posthumous repair is logically impossible went beyond the demonstrated point that later goods cannot restore the particular lost earthly opportunity.",
+            "links": []
           }
         ]
       }
-    }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that a carefully specified personal-creator hypothesis may receive cumulative support when simplicity, purposive intelligibility, consciousness, moral agency, and cosmic regularity are assessed together under explicit evidential constraints.",
+          "premises": [
+            "Intentional explanation is indispensable in ordinary reasoning because an agent's goals, information, and capacities can explain action patterns that a bare physical description does not explanatory-select by itself.",
+            "Simplicity should influence prior plausibility only among sufficiently specified hypotheses whose observable implications remain compatible with the evidence and whose complexity is assessed under declared criteria.",
+            "A good creator could have convergent reasons for stable laws, embodied rational agents, discoverable regularities, and environments permitting cooperative action, although those reasons generate ranges rather than precise outcomes.",
+            "Consciousness may remain evidentially relevant if rival hypotheses differ in how naturally they accommodate first-person subjects, even when physical and evolutionary accounts explain embodiment and behavioral capacities.",
+            "Any morally adequate theism must treat severe suffering as genuine counterevidence and require victim-centered reasons, restoration, continuing agency, and constraints preventing appeals to aggregate goods from overriding individuals."
+          ],
+          "conclusion": "Accordingly, theism can remain a serious cumulative explanatory candidate if its divine attributes, simplicity metric, qualitative expectations, and victim-centered moral constraints are independently specified and comparatively tested."
+        },
+        "newArguments": [
+          {
+            "title": "Cross-domain compression test",
+            "text": "A creator hypothesis should be evaluated by whether one independently motivated character description compresses several domains without acquiring separate adjustable clauses for each observation. Stable laws, rational knowers, moral interaction, and consciousness would count together only if the same divine attributes generate them and also exclude meaningful alternatives. This test answers the non-specificity objection by penalizing post hoc preference additions. It also gives the simplicity claim an operational target: not verbal brevity alone, but explanatory compression constrained by observable consequences."
+          },
+          {
+            "title": "Protected agency principle",
+            "text": "A stronger freedom defense would distinguish ordinary risk from agency-annihilating harm. If valuable freedom is the aim, conditions that permanently prevent a person from developing agency require a special justification and cannot be defended merely by another person's choices. Theism could therefore predict moral limits, opportunities for continued development, and direct divine obligations toward each victim. This does not erase the evidential force of suffering, but it converts the reply from generic compensation into a structured principle that can be tested against the hardest cases."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The AI steelman is that theism has not earned comparative preference unless its simplicity measure, causal model, predictive constraints, and moral implications outperform relevant alternatives rather than merely remaining compatible with observed reality.",
+          "premises": [
+            "Descriptive brevity, ontological economy, computational tractability, and parameter economy can rank hypotheses differently, so a simplicity advantage requires a declared metric and principled aggregation rule.",
+            "A personal explanation drawn from embodied agents receives weaker background support when extended to instantaneous bodiless causation unless a connecting model explains the analogy's relevant similarities.",
+            "A hypothesis gains evidential support through observations only when those observations are more expected under it than under relevant rivals, not merely because it can accommodate them afterward.",
+            "Evolutionary and physical explanations already account for substantial portions of order, embodiment, adaptation, and behavior, so remaining explanatory gaps must be isolated rather than credited with the entire package.",
+            "Severe suffering is especially resistant to generic freedom or compensation replies when it predictably destroys the victim's agency, development, relationships, and embodied opportunities."
+          ],
+          "conclusion": "Therefore, withholding comparative preference for theism is warranted until a specified divine hypothesis supplies defensible complexity measures, discriminating expectations, causal coherence, and an adequate victim-centered account of suffering."
+        },
+        "newArguments": [
+          {
+            "title": "Predictive budget requirement",
+            "text": "Grant each hypothesis a limited predictive budget: every independent auxiliary assumption used to fit an observation consumes part of its simplicity advantage. A creator theory that separately adds preferences for laws, life, embodiment, hiddenness, suffering, and an afterlife may be descriptively short while functionally parameter-rich. The comparison should therefore record which outcomes follow from the core hypothesis, which require added moral principles, and which remain unconstrained. This framework turns non-specificity into a transparent accounting problem rather than a dispute over rhetorical elegance."
+          },
+          {
+            "title": "Opportunity-loss evidence",
+            "text": "Harms should be evaluated not only by experienced pain or total lifetime welfare but also by destroyed option sets. Premature death can eliminate education, relationships, moral development, projects, and choices that later benefits cannot make historically available. Even if continued existence becomes good overall, the original deprivation remains evidence requiring an independent permission condition. This strengthens the suffering objection without asserting that restoration is conceptually impossible: the point is that compensation and justification answer different moral questions, and the former does not automatically supply the latter."
+          }
+        ]
+      }
+    },
+    "topicCategory": "god-theism-atheism"
   },
   {
     "id": "russell-copleston-existence-of-god-1948",

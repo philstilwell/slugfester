@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-dependent-pilot-analysis-correction-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-dependent-pilot-analysis-correction",
+  "status": "batch-08-production-publication-accepted-after-dependent-pilot-analysis-correction",
+  "analyzedAt": "2026-08-24T15:52:34.911Z",
+  "execution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/execution.json",
+    "sha256": "b7e8a8b9606b04e31973c749d3c26b5ac0d307341c524fc5d834294535d4e63c",
+    "bytes": 2554
+  },
+  "decision": {
+    "boundedCorrectionPassed": true,
+    "exactTwoDependentWritesPassed": true,
+    "productionTransactionPreserved": true,
+    "all380GeneratedOutputsPreserved": true,
+    "completeRepositoryValidationPassed": true,
+    "completeTransactionAccepted": true,
+    "atomicCommitAndPushAuthorized": true,
+    "retryPerformed": false,
+    "rerunPerformed": false,
+    "productionMutationRerunPerformed": false,
+    "scorePassPerformed": false,
+    "modelExecutionPerformed": false,
+    "paidServiceUsed": false,
+    "nextBatchSelected": false
+  },
+  "totals": {
+    "originalSeoPasses": 1,
+    "deterministicCorrectionPasses": 1,
+    "repositoryValidationRunsInCorrection": 1,
+    "productionMutationReruns": 0,
+    "retries": 0,
+    "reruns": 0,
+    "recursiveCorrections": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "atomic-commit-and-push-complete-validated-batch-08-production-transaction-then-stop-before-batch-9-selection"
+}

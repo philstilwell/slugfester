@@ -1,0 +1,1638 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+  "status": "frozen-post-canary-batch-08-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "debateNumber": "156",
+  "debateId": "harris-prager-religion-morality-public-reason-2014",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+    "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+    "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+    "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+    "finalCandidateSha256": "b06e2fe4d52440db410d79b7275fb180d3ec0cd6c0e1b640ddcb6e241af1a861",
+    "eventsPath": ".assessment-cache/captions/elMi_IzlD40/events.json",
+    "eventsSha256": "0f14b211a991b6497ed952fbac9c026c96a7956a1684581b28921c773c2ca7bd",
+    "finalJudgmentSha256": "f3e686f3ad430e4f2a4e09740e2182b4a57a126f30d5ead92ec9014512326a0f"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "156",
+    "debateId": "harris-prager-religion-morality-public-reason-2014",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-divine-moral-authority-route",
+        "side": "pro",
+        "description": "Establish that religious belief better secures moral knowledge and social judgment by grounding durable duties in divine authority and by showing that religious traditions can identify grave public evils more reliably than secular institutions.",
+        "successCriteria": "The route succeeds if divine authorship is given an adequate basis, transcendent authority explains the stability of binding duties, and the practical record supports religion's comparative capacity to recognize evil and sustain a good society.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-divine-grounding",
+          "tier": "motion",
+          "description": "Show that divine authority provides a firmer basis for moral knowledge and recognition of social evil than secular ethical deliberation provides."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-creator-and-scripture",
+            "tier": "central",
+            "description": "Provide grounds for believing in an intentional creator and for treating sacred teaching as a credible source of moral authority."
+          },
+          {
+            "bridgeId": "pro-central-binding-obligation",
+            "tier": "central",
+            "description": "Explain why divine authority makes core prohibitions binding and durable despite fallible human preferences and disagreement."
+          },
+          {
+            "bridgeId": "pro-central-social-evil-test",
+            "tier": "central",
+            "description": "Show that a worldview's moral adequacy is tested by its capacity to identify major evils and contribute to a good society."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-historical-context",
+            "tier": "subsidiary",
+            "description": "Explain how disputed ancient rules may represent moral advances when interpreted within their historical setting."
+          },
+          {
+            "bridgeId": "pro-subsidiary-religious-discernment",
+            "tier": "subsidiary",
+            "description": "Support the comparative claim that religious communities can recognize ideologically motivated evil that secular institutions overlook."
+          }
+        ]
+      },
+      {
+        "routeId": "con-secular-ethical-realism-route",
+        "side": "con",
+        "description": "Establish that secular ethical realism can guide moral knowledge and progress through evidence about conscious experience, rational inquiry, cooperation, and revisable public reasoning without relying on supernatural authorship or sacred authority.",
+        "successCriteria": "The route succeeds if wellbeing and suffering furnish defensible moral facts, rational inquiry explains moral convergence and correction, and religious dogma is shown to be unnecessary or obstructive in identifying and remedying social evil.",
+        "motionBridge": {
+          "bridgeId": "con-motion-secular-grounding",
+          "tier": "motion",
+          "description": "Show that secular ethical realism can ground moral knowledge and moral progress without supernatural premises or sacred texts."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-conscious-wellbeing",
+            "tier": "central",
+            "description": "Ground moral distinctions in facts about the happiness, suffering, capacities, and relationships of conscious creatures."
+          },
+          {
+            "bridgeId": "con-central-open-inquiry",
+            "tier": "central",
+            "description": "Explain how open-ended rational inquiry can discover, test, and revise moral rules while distinguishing evidence-based realism from pragmatism."
+          },
+          {
+            "bridgeId": "con-central-dogma-and-harm",
+            "tier": "central",
+            "description": "Show how unsupported supernatural or political dogmas can motivate violence and obstruct effective moral judgment."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-cooperation",
+            "tier": "subsidiary",
+            "description": "Explain how attachment, reciprocity, mutual care, and viable social cooperation support prohibitions such as the rule against murder."
+          },
+          {
+            "bridgeId": "con-subsidiary-developmental-distinctions",
+            "tier": "subsidiary",
+            "description": "Show how secular analysis can make morally relevant distinctions among forms and stages of conscious life."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "moral-authority-and-obligation",
+        "title": "Moral Authority and Binding Obligation",
+        "weightPercent": 25,
+        "rationale": "This issue tests whether durable moral duties require divine command or can arise from rationally accessible facts about persons, cooperation, harm, and flourishing."
+      },
+      {
+        "sectionId": "moral-epistemology-and-realism",
+        "title": "Moral Knowledge and Ethical Realism",
+        "weightPercent": 20,
+        "rationale": "The competing burdens require an account of how moral claims become knowable, objective, corrigible, and distinguishable from preference or mere practical success."
+      },
+      {
+        "sectionId": "scripture-creator-and-dogma",
+        "title": "Creator, Scripture, and Dogmatic Authority",
+        "weightPercent": 20,
+        "rationale": "The status of a creator and sacred texts matters because the pro route invokes them as foundations while the con route challenges their evidentiary basis and moral reliability."
+      },
+      {
+        "sectionId": "social-evil-and-historical-record",
+        "title": "Recognizing Social Evil and Testing Worldviews",
+        "weightPercent": 20,
+        "rationale": "The debate uses communism, fascism, religious extremism, and institutional judgment to test which framework better identifies dangerous ideologies and supports moral progress."
+      },
+      {
+        "sectionId": "consciousness-life-and-contested-cases",
+        "title": "Consciousness, Human Status, and Contested Cases",
+        "weightPercent": 15,
+        "rationale": "Disputes involving human uniqueness, animals, embryos, fetuses, suffering, and development test how each framework draws and justifies morally significant boundaries."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-supernatural-scripture-unsupported",
+        "sectionId": "scripture-creator-and-dogma",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "constructive",
+        "proposition": "Claims that sacred books were written or informed by a supernatural creator are unsupported and dangerously divisive, particularly because they obstruct rational responses to religious extremism.",
+        "sourceSpan": {
+          "startEvent": 48,
+          "endEvent": 71,
+          "excerpt": "is this notion that any of our books were written by the creator of the universe or some that they're informed by some Supernatural source is what and I think that is the most divisive and dangerous and ultimately unsupportable Dogma in play at the moment and we're paying a terrible price for it it's a price we're paying uh with respect to the Muslim World which I think you and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Prager directly invites Harris to characterize his view, and Harris delivers the ensuing first-person explanation without attribution ambiguity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-dogma-and-harm"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive challenge to supernatural authorship and its alleged harmful consequences, so no earlier opposing target applies."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The proposition is recoverable, but claims about divisiveness, danger, and the Muslim world broaden beyond the specifically stated supernatural premise."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The excerpt confidently calls the dogma uniquely dangerous and unsupported without supplying comparative evidence for that breadth."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The inference from unsupported supernatural authorship to dangerous divisiveness is intelligible but leaves a material causal bridge underdeveloped."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central dogma-and-harm bridge, though it does not complete the broader secular-grounding route."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is examined closely enough for a meaningful charity test in this constructive span."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "Within constructive moves, it clearly states a central challenge but compresses the evidentiary support for its broad consequences."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly labels supernatural scriptural authorship unsupported, divisive, dangerous, and costly in relation to the Muslim world.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-religious-recognition-islamic-totalitarianism",
+        "sectionId": "social-evil-and-historical-record",
+        "side": "pro",
+        "speaker": "Dennis Prager",
+        "moveKind": "reply",
+        "proposition": "Religious Americans are more likely than secular academics to recognize the threat of Islamic totalitarianism, supporting a comparative claim that religiosity can sharpen rather than impede the identification of grave social evil.",
+        "sourceSpan": {
+          "startEvent": 72,
+          "endEvent": 95,
+          "excerpt": "uh an Evangelical Christian leader than an academic secular Professor to acknowledge the threat emanating from Islam you acknowledge that and so on the greatest moral problem of our day as you see it and that is the threat from Islamic totalitarianism it is religious Americans far more likely to see that danger than secular Americans and I don't think you have an answer to that"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Prager explicitly speaks in the first person, identifies himself among religious Americans, and develops the challenge addressed to Harris.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-religious-discernment"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-supernatural-scripture-unsupported"
+          ],
+          "components": [
+            {
+              "componentId": "pro-religious-recognition-islamic-totalitarianism-component-01",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether religion obstructs recognition of religious extremism and its associated social danger.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-religious-recognition-islamic-totalitarianism-component-02",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether supernatural scriptural claims themselves are evidentially supported.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the claimed practical obstruction by alleging superior religious recognition of Islamic totalitarianism, but it does not answer the unsupported-authorship component."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The comparison is clear, but categories such as evangelical leaders, secular professors, and religious Americans shift without a stated sampling scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A broad comparative likelihood is asserted from an acknowledged example without documentation, base rates, or qualification about populations."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Harris can oppose supernatural dogma while conceding that some religious observers recognize Islamist threats accurately.",
+          "decisiveQualification": "That concession would not establish that religiosity generally improves recognition of social evil."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The population comparison and designation of the greatest moral threat are asserted without representative evidence or rival explanations."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It directly supports religious discernment, a subsidiary bridge, and does so near the upper part of that tier."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "Prager identifies a genuine tension in the practical claim, though he overextends a bounded concession into a broad comparative conclusion."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a partial answer that reaches the decisive practical-harm component while leaving the supernatural-evidence challenge untouched."
+          }
+        },
+        "evidenceBasis": "Prager contrasts evangelical Christian leaders with secular academic professors in recognizing Islamic totalitarianism as a major threat.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-religious-premises-motivate-violence",
+        "sectionId": "social-evil-and-historical-record",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "When martyrdom, jihad, and immediate paradise are accepted as true religious premises, catastrophic violence can be internally rational, and religious believers may recognize that motivational logic particularly clearly.",
+        "sourceSpan": {
+          "startEvent": 96,
+          "endEvent": 128,
+          "excerpt": "Jews as allies not as threats well they know what it's like to be animated by The Logical consequences of certain religious beliefs if you think that martyrdom and Jihad are legitimate metaphysical principles if you think you can get straight to Paradise by dying in the right circumstances dying in defense of the faith uh then it's it's perfectly rational given those beliefs to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris begins with an explicit concession and then explains, in a continuous response, why religious observers recognize the motivating beliefs.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-dogma-and-harm"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-religious-recognition-islamic-totalitarianism"
+          ],
+          "components": [
+            {
+              "componentId": "con-religious-premises-motivate-violence-component-01",
+              "targetMoveId": "pro-religious-recognition-islamic-totalitarianism",
+              "text": "Why religious observers may recognize Islamist totalitarian danger more readily.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-religious-premises-motivate-violence-component-02",
+              "targetMoveId": "pro-religious-recognition-islamic-totalitarianism",
+              "text": "Whether the asserted religious-versus-secular recognition frequency is empirically established.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-religious-premises-motivate-violence-component-03",
+              "targetMoveId": "pro-religious-recognition-islamic-totalitarianism",
+              "text": "Whether recognition of this threat demonstrates religion's broader comparative moral adequacy.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "Harris justifies replacing the inference from recognition to religious moral superiority with an explanation based on familiarity with religious motivation, preserving the recognition issue while defeating its proposed consequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is explicitly conditional on accepting martyrdom, jihad, and paradise premises, keeping its terms and inferential scope stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The strong conclusion is framed conditionally: given the specified metaphysical premises, violent conduct can be instrumentally rational."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious Americans identify a real Islamist threat that secular academics may underestimate.",
+          "decisiveQualification": "Accurate threat recognition does not show that religion is the superior cause when religious premises also explain the threat's motivation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The means-end inference is clear and valid once the stated beliefs about martyrdom and immediate paradise are conditionally granted."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central dogma-and-harm bridge by explaining how religious premises can internally rationalize catastrophic violence."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "Harris grants the recognition point and supplies a stronger competing explanation that directly limits its value for Prager's comparative conclusion."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it explicitly explains the observed recognition while showing why that observation does not support the broader comparative inference."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies martyrdom, jihad, and paradise as premises under which dying in defense of faith becomes instrumentally rational.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-practical-worldview-moral-test",
+        "sectionId": "moral-epistemology-and-realism",
+        "side": "pro",
+        "speaker": "Dennis Prager",
+        "moveKind": "reply",
+        "proposition": "Whether religion has evidentiary support is distinct from the practical moral question of which worldview is more likely to produce a good society, a test on which anti-religious secular institutions allegedly failed by overlooking communism.",
+        "sourceSpan": {
+          "startEvent": 149,
+          "endEvent": 169,
+          "excerpt": "is there evidence for religion is one question I'll be happy to discuss it the second this the question that bothers you and bothers me however more than anything is who is more likely to make a good world and I argue to you that the that the the secular uh uh world uh the anti-religious secular world is a moral failure when it comes to acknowledging evil it failed on communism"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Prager interrupts to distinguish evidentiary questions from social consequences and then expressly states the comparative argument he is advancing.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-social-evil-test"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-supernatural-scripture-unsupported",
+            "con-religious-premises-motivate-violence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-practical-worldview-moral-test-component-01",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether the practical moral performance of a worldview should be assessed separately from evidence for religion.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-practical-worldview-moral-test-component-02",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether supernatural authorship claims are adequately supported by evidence.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-practical-worldview-moral-test-component-03",
+              "targetMoveId": "con-religious-premises-motivate-violence",
+              "text": "Whether specified religious premises can make violent conduct internally rational.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "Prager expressly separates evidentiary support from the preserved practical issue of producing a good society, justifying that replacement demand while leaving the original evidentiary and motivational claims unanswered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The distinction between evidence and practical performance is clear, but good world and anti-religious secular world remain broad and underqualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the anti-religious secular world a moral failure on communism exceeds the single asserted historical comparison supplied here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A worldview may be evidentially unsupported even if some adherents identify particular social evils correctly.",
+          "decisiveQualification": "Practical success is relevant to comparative moral adequacy but cannot substitute for the creator-and-scripture evidentiary burden."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It squarely supports the central social-evil test by proposing practical moral performance as a criterion for worldview assessment."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "Prager fairly distinguishes two questions, but his practical reframe risks sidelining rather than resolving the foundational evidentiary challenge."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "The justified reframe preserves a legitimate comparative moral-performance issue and answers it, though the communism example remains compressed."
+          }
+        },
+        "evidenceBasis": "Prager explicitly distinguishes evidence for religion from producing a good world and cites secular institutions' alleged failure regarding communism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-totalitarian-dogma-not-atheism",
+        "sectionId": "social-evil-and-historical-record",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "Atheism was not the operative cause of communist, Nazi, or Khmer Rouge atrocities; closed political dogma was the common danger, while open-ended rational inquiry offers a general corrective to unjustified belief.",
+        "sourceSpan": {
+          "startEvent": 214,
+          "endEvent": 240,
+          "excerpt": "it is not I'm not conceding that that the best diagnosis of the evils of Communism or Nazism or the camir Rouge is their atheism that was not the problem the problem was another sort of Dogma political Dogma uh which and Dogma in in any context is the problem I'm arguing simply that unjustified belief across the board is a problem that only rational people open to an open-ended"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris rejects the proposed diagnosis, names political dogma as the relevant cause, and answers Prager's direct question about grounding the prohibition on murder.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-open-inquiry"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-practical-worldview-moral-test",
+            "pro-religious-recognition-islamic-totalitarianism"
+          ],
+          "components": [
+            {
+              "componentId": "con-totalitarian-dogma-not-atheism-component-01",
+              "targetMoveId": "pro-practical-worldview-moral-test",
+              "text": "Whether atheism or anti-religious secularism is the operative cause of totalitarian atrocities.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-totalitarian-dogma-not-atheism-component-02",
+              "targetMoveId": "pro-practical-worldview-moral-test",
+              "text": "Whether secular institutions historically failed to recognize communism as evil.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-totalitarian-dogma-not-atheism-component-03",
+              "targetMoveId": "pro-religious-recognition-islamic-totalitarianism",
+              "text": "Whether religious Americans comparatively recognize Islamic totalitarian threats better.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Harris expressly rejects atheism as the diagnosis, identifies closed political dogma as the operative defect, and states open-ended rational inquiry as the corrective consequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The causal contrast is clear, although dogma across the board and rational people are broad terms whose institutional scope is only implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical rejection of atheism as the problem exceeds the excerpt's comparative evidence, though the common-dogma diagnosis is clearly articulated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Atheistic or anti-religious commitments materially caused communist and other totalitarian atrocities.",
+          "decisiveQualification": "Political dogma can coexist with atheism, so correlation alone does not identify atheism as the operative cause."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly supports the central open-inquiry bridge by contrasting closed dogma with revisable rational inquiry as a corrective."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The reply accurately engages the causal alternative and supplies the decisive distinction, though it does not examine mixed causal contributions."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reply explicitly attacks the decisive causal inference and supplies a general alternative diagnosis, placing it high within diagnostic defeats."
+          }
+        },
+        "evidenceBasis": "Harris rejects atheism as the cause of communist, Nazi, and Khmer Rouge evil and instead identifies closed political dogma.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-persons-existence-design-inference",
+        "sectionId": "consciousness-life-and-contested-cases",
+        "side": "pro",
+        "speaker": "Dennis Prager",
+        "moveKind": "reply",
+        "proposition": "The existence of persons capable of conversation, together with the existence and apparent design of the world, makes an intentional creator more plausible than treating human and cosmic existence as sheer coincidence.",
+        "sourceSpan": {
+          "startEvent": 255,
+          "endEvent": 265,
+          "excerpt": "that uh it is it is almost absurd to believe that everything came about on its own so therefore I believe that there is a Creator to me the the notion that you and I are talking and it is a pure coincidence that we exist and that the world exists purely coincidentally is intellectually far more absurd than the believer that creation has a Creator and design as a designer well I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Prager answers Harris's direct question about his belief and supplies a clearly personal, sustained inference from existence and design to a creator.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-creator-and-scripture"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-supernatural-scripture-unsupported",
+            "con-totalitarian-dogma-not-atheism"
+          ],
+          "components": [
+            {
+              "componentId": "pro-persons-existence-design-inference-component-01",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether there are grounds for believing that an intentional creator exists.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-persons-existence-design-inference-component-02",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether any particular sacred book was written or informed by that creator.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-persons-existence-design-inference-component-03",
+              "targetMoveId": "con-totalitarian-dogma-not-atheism",
+              "text": "Whether open-ended inquiry corrects unjustified political or religious belief.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The design inference contacts the creator-evidence component of Harris's challenge, but it gives no bridge from a creator to any sacred text and does not address open inquiry."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The creator inference is recoverable, but coincidence, coming about on its own, creation, and design are treated as interchangeable alternatives."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that non-design is almost absurd sharply exceeds the supplied observation of existence and omits naturalistic alternatives."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Human and cosmic existence may arise through nonintentional natural processes rather than sheer coincidence.",
+          "decisiveQualification": "Rejecting intentional design does not require treating every causal process as an unexplained pure coincidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 52,
+            "rationale": "Existence and apparent design are invoked without defending the design judgment or comparing naturalistic causal explanations."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies purported grounds for an intentional creator, placing it high within the central creator-and-scripture tier."
+          },
+          "representationalCharity": {
+            "value": 57,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (55 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "This partial answer contacts a decisive creator component but leaves the scripture-authorship and dogmatic-harm components unanswered."
+          }
+        },
+        "evidenceBasis": "Prager argues from human conversation, worldly existence, and apparent design to a creator while characterizing coincidence as intellectually absurd.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-divine-authority-murder-prohibition",
+        "sectionId": "moral-authority-and-obligation",
+        "side": "pro",
+        "speaker": "Dennis Prager",
+        "moveKind": "reply",
+        "proposition": "The prohibition on murder remains durable because it rests on divine authority, whereas reliance on discussion alone places unwarranted confidence in fallible human nature.",
+        "sourceSpan": {
+          "startEvent": 342,
+          "endEvent": 350,
+          "excerpt": "right let's go back to do not murder I get do not murder I believe do not murder prevails as an idea because God said it you don't believe you you need a God to say that murder is wrong that discussing it with your neighbor will suffice okay you have much more faith in human nature than I and I believe you're far more irrational in that way I have"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Prager explicitly contrasts his divine-command account with Harris's conversational account and states his judgment about their relative rationality.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-binding-obligation"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-totalitarian-dogma-not-atheism",
+            "con-religious-premises-motivate-violence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-divine-authority-murder-prohibition-component-01",
+              "targetMoveId": "con-totalitarian-dogma-not-atheism",
+              "text": "Whether open-ended rational discussion can ground and preserve the prohibition on murder.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-divine-authority-murder-prohibition-component-02",
+              "targetMoveId": "con-totalitarian-dogma-not-atheism",
+              "text": "Whether political dogma rather than atheism best explains totalitarian atrocities.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-divine-authority-murder-prohibition-component-03",
+              "targetMoveId": "con-religious-premises-motivate-violence",
+              "text": "Whether divine or religious premises can themselves rationalize lethal violence.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Prager directly contests the sufficiency of discussion and proposes divine authority as the durable basis of the anti-murder norm, while leaving the other causal challenges unanswered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The divine-command contrast is clear, but the claim that discussion alone is the secular basis narrows the opposing account without qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The durability of the prohibition is attributed to divine speech with certainty, without historical support or comparison to secular mechanisms."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular anti-murder norms can rest on evidence, cooperation, attachment, institutions, and revisable reasoning rather than discussion alone.",
+          "decisiveQualification": "Rejecting divine command does not entail confidence that an isolated conversation by itself will restrain human nature."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (62 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 50,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (49 and 51); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable central bridge concerning divine authority and the binding durability of core prohibitions."
+          },
+          "representationalCharity": {
+            "value": 55,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (53 and 56); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive grounding component but does not address challenges about conflicting religious commands or political causation."
+          }
+        },
+        "evidenceBasis": "Prager says the murder prohibition prevails because God said it and contrasts this with discussion and confidence in human nature.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-conscious-capacity-grounds-moral-distinctions",
+        "sectionId": "consciousness-life-and-contested-cases",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "Secular morality can ground concern in the happiness and suffering of conscious creatures and use differences in experiential and neurological capacity to distinguish the interests of humans, animals, embryos, and fetuses.",
+        "sourceSpan": {
+          "startEvent": 474,
+          "endEvent": 525,
+          "excerpt": "a concern for the happiness and suffering of other creatures that can feel happiness and suffering in whatever degree and then it becomes relevant to wonder well what degree uh of happiness or suffering is possible in a chicken or in a person or in a a three-day old embryo well this is Peter singer's view uh who loves your book and now Peter so he argues that hey animals suffer"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris answers Prager's challenge directly and repeatedly develops the same capacity-based account despite intervening questions and objections from Prager.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-conscious-wellbeing"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-divine-authority-murder-prohibition",
+            "pro-persons-existence-design-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-conscious-capacity-grounds-moral-distinctions-component-01",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether secular morality has a substantive basis beyond divine command for protecting creatures from harm.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-conscious-capacity-grounds-moral-distinctions-component-02",
+              "targetMoveId": "pro-persons-existence-design-inference",
+              "text": "Whether human persons require an intentional creator to possess special moral significance.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-conscious-capacity-grounds-moral-distinctions-component-03",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether secular grounds make prohibitions as durable as divine authority allegedly does.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Harris supplies happiness, suffering, and conscious capacity as substantive secular grounds and applies them across life forms, but does not establish long-term durability of resulting rules."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The account consistently limits concern to creatures capable of experience and explicitly makes moral weight sensitive to degrees of capacity."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents capacity as morally relevant while acknowledging questions of degree rather than claiming a fully settled boundary."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly and substantially supports the central conscious-wellbeing bridge by grounding distinctions in happiness, suffering, and capacity."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The span primarily develops Harris's positive capacity account and does not characterize a sufficiently developed opposing alternative for charity testing."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive secular-grounding demand directly while leaving the comparative durability claim unresolved."
+          }
+        },
+        "evidenceBasis": "Harris grounds concern in creatures capable of happiness and suffering and treats the degree of such capacity as morally relevant.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-conception-dogma-obstructs-abortion-inquiry",
+        "sectionId": "consciousness-life-and-contested-cases",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "Faith-based certainty that a fully formed soul exists at conception polarizes abortion policy and obstructs nuanced discussion of ethically relevant differences across fetal development.",
+        "sourceSpan": {
+          "startEvent": 530,
+          "endEvent": 547,
+          "excerpt": "faith-based Dogma into this into these questions of policy secular people have been forced not to talk sensibly about the the very real ethical issues that that surround abor so it's religious people's fault that secular people are not sensible because yes that's remarkable that that is that is a first I have to say well Dennis they're so embattled by the dogmatism which which says that at the moment of conception a a soul is fully formed"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris identifies polarization as the explanation and attributes it specifically to conception-based soul dogma in a continuous answer to Prager's challenge.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-developmental-distinctions"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-divine-authority-murder-prohibition",
+            "pro-persons-existence-design-inference",
+            "pro-practical-worldview-moral-test"
+          ],
+          "components": [
+            {
+              "componentId": "con-conception-dogma-obstructs-abortion-inquiry-component-01",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether divine authority is necessary to make core moral prohibitions binding and durable.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-conception-dogma-obstructs-abortion-inquiry-component-02",
+              "targetMoveId": "pro-persons-existence-design-inference",
+              "text": "Whether human existence and apparent design support belief in an intentional creator.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-conception-dogma-obstructs-abortion-inquiry-component-03",
+              "targetMoveId": "pro-practical-worldview-moral-test",
+              "text": "Whether religious and secular worldviews should be compared by their practical moral results.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The abortion example supplies contrary material about dogma obstructing nuanced inquiry, but it does not contact the decisive divine-authority, creator, or comparative-worldview inferences in the legal targets."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The causal thesis is recoverable, but secular people, religious people, and policy discussion are treated broadly without institutional or demographic limits."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical causal attribution of secular discourse failures to religious dogmatism lacks evidence and omits other sources of polarization."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conception-based soul beliefs may express concern for continuous human development rather than simply blocking ethical inquiry.",
+          "decisiveQualification": "Even sincere continuity concerns do not by themselves establish full moral equivalence at every developmental stage."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The asserted effect on policy discourse is not supported with representative examples, comparative cases, or evidence excluding alternative causes."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It materially supports the subsidiary developmental-distinctions bridge by arguing that dogma blocks attention to ethically relevant fetal development."
+          },
+          "representationalCharity": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 54,
+            "rationale": "This is relevant contrary material about dogmatic effects but a nonanswer to the decisive components of the available earlier targets."
+          }
+        },
+        "evidenceBasis": "Harris attributes polarized abortion discourse to certainty that a fully formed soul exists at conception and suppresses developmental distinctions.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-realist-answers-about-conscious-wellbeing",
+        "sectionId": "moral-epistemology-and-realism",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "Ethical realism differs from pragmatism because moral questions can have right and wrong answers grounded in the possible happiness and suffering of conscious physical systems.",
+        "sourceSpan": {
+          "startEvent": 665,
+          "endEvent": 683,
+          "excerpt": "I well realism is quite opposed to pragmatism the issue is that I think there are right and wrong answers to questions about human happiness or about the happiness of of any physical system that's capable of feeling happiness and that's why the P people are clearly diluted by their own dogmas because they're not willing to distinguish between the the possibilities of suffering"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris expressly corrects Prager's characterization of realism, defines his own position, and applies it to failures by both secular activists and religious believers.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-secular-grounding"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-practical-worldview-moral-test",
+            "pro-divine-authority-murder-prohibition",
+            "pro-persons-existence-design-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-realist-answers-about-conscious-wellbeing-component-01",
+              "targetMoveId": "pro-practical-worldview-moral-test",
+              "text": "Whether the secular account is merely pragmatic rather than a form of moral realism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-realist-answers-about-conscious-wellbeing-component-02",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether divine authority is necessary for objectively right answers about murder.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-realist-answers-about-conscious-wellbeing-component-03",
+              "targetMoveId": "pro-persons-existence-design-inference",
+              "text": "Whether an intentional creator is the best explanation of human and cosmic existence.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Harris expressly rejects the pragmatist characterization, states that conscious wellbeing admits right and wrong answers, and thereby offers a nondivine source of objective moral judgment."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The realist proposition and its conscious-system scope are clear, with only an implicit qualification concerning how right answers are discovered."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim of right and wrong answers is clear and bounded, but the excerpt compresses the epistemic warrant for identifying those answers."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A wellbeing-based account may be pragmatic if it only selects socially useful outcomes rather than objective moral truths.",
+          "decisiveQualification": "Harris expressly claims truth-apt right and wrong answers, so usefulness alone does not exhaust the proposed standard."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 99,
+            "rationale": "It directly advances the motion-level secular-grounding bridge by asserting objective moral answers without supernatural premises or sacred texts."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "Harris fairly corrects the label and states a realist thesis, while the strongest objection remains that the truth-making bridge is compressed."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The response directly diagnoses the realism-pragmatism conflation and supplies the defeating consequence, while leaving creator evidence aside."
+          }
+        },
+        "evidenceBasis": "Harris explicitly opposes realism to pragmatism and locates right and wrong answers in happiness and suffering of conscious physical systems.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-scripture-character-historical-progress",
+        "sectionId": "scripture-creator-and-dogma",
+        "side": "pro",
+        "speaker": "Dennis Prager",
+        "moveKind": "reply",
+        "proposition": "The Bible's exceptional moral character supports its divine authorship, and rules that appear primitive in isolation can constitute major moral advances when interpreted within their historical setting.",
+        "sourceSpan": {
+          "startEvent": 1121,
+          "endEvent": 1133,
+          "excerpt": "all these injunctions to kill people for working on the Sabbath or to practice slavery well I could I would be happy to explain each one in its turn and in fact have devoted the last 20 years to doing so I mean but so so that for example eye for an eye which is considered by to be primitive I'm sure you're one of them was exact was in fact one of the great moral advancements of"
+        },
+        "attributionConfidence": "medium",
+        "attributionBasis": "The opening row contains the end of Harris's question and the beginning of Prager's answer, after which Prager develops the scriptural argument through the final row.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-creator-and-scripture"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-supernatural-scripture-unsupported",
+            "con-totalitarian-dogma-not-atheism",
+            "con-conscious-capacity-grounds-moral-distinctions"
+          ],
+          "components": [
+            {
+              "componentId": "pro-scripture-character-historical-progress-component-01",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether scripture's moral character supplies evidence of supernatural or divine authorship.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-scripture-character-historical-progress-component-02",
+              "targetMoveId": "con-supernatural-scripture-unsupported",
+              "text": "Whether scriptural injunctions are dangerous or morally defective when read as authoritative.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-scripture-character-historical-progress-component-03",
+              "targetMoveId": "con-totalitarian-dogma-not-atheism",
+              "text": "Whether open-ended inquiry is superior to dogmatic authority as a corrective mechanism.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-scripture-character-historical-progress-component-04",
+              "targetMoveId": "con-conscious-capacity-grounds-moral-distinctions",
+              "text": "Whether conscious capacity rather than scripture grounds contested moral distinctions.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Prager directly offers scripture's alleged moral character and historical progress as answers to the unsupported and morally defective scripture challenges, while leaving secular-grounding alternatives untouched."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "partial",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Historical-context reasoning is recoverable, but exceptional character and divine authorship are only partly developed in the selected span and remain broad."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "One asserted historical advance cannot by itself sustain the broad inference to exceptional moral character or divine authorship."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Biblical rules can be historical advances relative to their era while still reflecting human moral development rather than divine authorship.",
+          "decisiveQualification": "Comparative historical progress does not uniquely distinguish divine revelation from ordinary cultural reform."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 56,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (55 and 56); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central creator-and-scripture bridge, although much of its developed material also concerns the subsidiary historical-context bridge."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive scripture-credibility component but supplies only one compressed historical illustration and no authorship bridge."
+          }
+        },
+        "evidenceBasis": "Prager offers historical explanation of eye-for-an-eye as moral advancement and presents scriptural moral character as evidence of divine authorship.",
+        "assessmentConfidence": "medium"
+      },
+      {
+        "moveId": "con-cooperation-grounds-anti-murder-norm",
+        "sectionId": "moral-authority-and-obligation",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "Given human attachment, the value placed on cooperation, and the psychological benefits of love and mutual care, societies have secular grounds to reject murder without relying on divine command.",
+        "sourceSpan": {
+          "startEvent": 1208,
+          "endEvent": 1215,
+          "excerpt": "given given human nature given the the Primacy we place on cooperation and and the psychological benefits of of feeling love and nurturance for one's uh fellow human beings the person who thinks murder is right is going to find few people to live happily with him and he's he's either going to killed himself well"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris answers Prager's hypothetical about a person endorsing murder and gives a continuous social and psychological account of why that position fails.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-cooperation"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-divine-authority-murder-prohibition",
+            "pro-practical-worldview-moral-test"
+          ],
+          "components": [
+            {
+              "componentId": "con-cooperation-grounds-anti-murder-norm-component-01",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether secular human nature and social reasoning can ground rejection of murder without divine command.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-cooperation-grounds-anti-murder-norm-component-02",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether the secular prohibition remains as durable as one based on divine authority.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-cooperation-grounds-anti-murder-norm-component-03",
+              "targetMoveId": "pro-practical-worldview-moral-test",
+              "text": "Whether secular social arrangements can contribute to a good and viable society.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Harris directly supplies attachment, cooperation, and psychological benefits as secular grounds against murder, but does not fully answer the comparative durability challenge."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The cooperation account is clear and stable, with an implicit qualification that it explains social rejection rather than categorical normativity alone."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The prediction that a pro-murder person will find few cooperative partners fits the stated human and social premises, subject to an implicit normal-conditions caveat."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Divine command may provide categorical authority beyond the prudential and social costs of murder.",
+          "decisiveQualification": "An account of cooperation can explain convergence and enforcement without fully answering the separate question of categorical obligation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The psychological and cooperative premises are plausible and specific, but the excerpt supplies no representative evidence or treatment of exceptions."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly and directly supports the subsidiary cooperation bridge, placing it at the top of the permitted tier range."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply fairly supplies secular resources and defeats the discussion-only framing, though it does not fully resolve divine-command claims about categorical authority."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive grounding demand explicitly while leaving the historical durability comparison substantially unanswered."
+          }
+        },
+        "evidenceBasis": "Harris appeals to human attachment, cooperation, love, nurturance, and the social isolation facing a person who endorses murder.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-biblical-theocracy-outgrown",
+        "sectionId": "scripture-creator-and-dogma",
+        "side": "con",
+        "speaker": "Sam Harris",
+        "moveKind": "reply",
+        "proposition": "The legal worldview found across Leviticus and Deuteronomy is violently theocratic rather than a dependable timeless moral guide, and later moral progress required societies to outgrow it.",
+        "sourceSpan": {
+          "startEvent": 1250,
+          "endEvent": 1257,
+          "excerpt": "quoting separate passages of the Bible but any one of your listeners who wants to go back and read Leviticus and Deuteronomy will find in there a worldview every bit is Theocratic even more Theocratic than the Taliban under mulah Omar it is PE The Killing never stops now we have outgrown this The"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Harris invites listeners to examine the named biblical legal books and draws an explicit comparative conclusion about their governing worldview and later rejection.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-creator-and-scripture"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-scripture-character-historical-progress",
+            "pro-divine-authority-murder-prohibition"
+          ],
+          "components": [
+            {
+              "componentId": "con-biblical-theocracy-outgrown-component-01",
+              "targetMoveId": "pro-scripture-character-historical-progress",
+              "text": "Whether the biblical legal worldview displays exceptional moral character when read in historical context.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-biblical-theocracy-outgrown-component-02",
+              "targetMoveId": "pro-scripture-character-historical-progress",
+              "text": "Whether contextual moral advances support an inference to divine authorship.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-biblical-theocracy-outgrown-component-03",
+              "targetMoveId": "pro-divine-authority-murder-prohibition",
+              "text": "Whether divine authority reliably secures durable and correct prohibitions on killing.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Harris directly challenges the claimed scriptural character with the legal worldview of Leviticus and Deuteronomy and draws the consequence that later progress required outgrowing it."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The target texts and theocratic criticism are clear, but claims that killing never stops and the worldview exceeds the Taliban broaden rhetorically."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The named books provide a relevant basis, but the absolute and comparative descriptions exceed the limited textual support presented in the excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Harsh biblical laws may represent constrained moral advances within an ancient historical environment.",
+          "decisiveQualification": "Contextual improvement in some rules does not establish the whole legal worldview as timeless or divinely reliable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "If the named legal corpus is pervasively violent and later rejected, that coherently challenges timeless reliability, though the textual generalization is compressed."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central creator-and-scripture bridge by challenging scripture's moral reliability and the inference to divine authority."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The reply engages the legal corpus rather than one isolated verse and preserves the decisive whole-worldview qualification, though its Taliban comparison is polemical."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reply explicitly contacts the decisive scriptural-morality inference with named textual domains and a clear contrary historical consequence."
+          }
+        },
+        "evidenceBasis": "Harris directs listeners to Leviticus and Deuteronomy, characterizes their legal worldview as violently theocratic, and says it was outgrown.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide burden consequence remains outside the move ratings, response links, relevance judgments, and importance assignments.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance",
+            "importance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any burden-completion determination."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual criteria; all identified effects are already represented in move judgments and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No additional completion criterion exists beyond the locked route bridges already assessed.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden-contact judgments"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of the existing move assessments."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "moral-authority-and-obligation",
+        "title": "Moral Authority and Binding Obligation",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 67,
+            "moves": [
+              {
+                "moveId": "pro-divine-authority-murder-prohibition",
+                "importance": 3,
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "con-cooperation-grounds-anti-murder-norm",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-epistemology-and-realism",
+        "title": "Moral Knowledge and Ethical Realism",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-practical-worldview-moral-test",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-realist-answers-about-conscious-wellbeing",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "scripture-creator-and-dogma",
+        "title": "Creator, Scripture, and Dogmatic Authority",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "pro-scripture-character-historical-progress",
+                "importance": 3,
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "con-supernatural-scripture-unsupported",
+                "importance": 3,
+                "score": 75
+              },
+              {
+                "moveId": "con-biblical-theocracy-outgrown",
+                "importance": 3,
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "social-evil-and-historical-record",
+        "title": "Recognizing Social Evil and Testing Worldviews",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "pro-religious-recognition-islamic-totalitarianism",
+                "importance": 2,
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-religious-premises-motivate-violence",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-totalitarian-dogma-not-atheism",
+                "importance": 3,
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "consciousness-life-and-contested-cases",
+        "title": "Consciousness, Human Status, and Contested Cases",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 66,
+            "moves": [
+              {
+                "moveId": "pro-persons-existence-design-inference",
+                "importance": 3,
+                "score": 66
+              }
+            ]
+          },
+          "con": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "con-conscious-capacity-grounds-moral-distinctions",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-conception-dogma-obstructs-abortion-inquiry",
+                "importance": 2,
+                "score": 64
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 70.25,
+        "burdenCompletionAdjustment": 0,
+        "score": 70
+      },
+      "con": {
+        "weightedSectionMean": 80.75,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      }
+    },
+    "winner": "con",
+    "winningMargin": 11
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 13,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}

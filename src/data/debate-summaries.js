@@ -324,11 +324,11 @@ export const debateSummaries = [
     "number": "08",
     "title": "David Wood vs Michael Shermer: Does God Exist?",
     "label": "Science, morality, and God",
-    "date": "2026-05-28",
+    "date": "2026-08-24",
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
     "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
-    "summary": "Wood argues science and morality depend on theism; Shermer argues burden, evil, and natural explanation undercut God belief.",
+    "summary": "Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.",
     "sides": {
       "pro": {
         "name": "Theist",
@@ -342,27 +342,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 65,
-      "con": 75
+      "pro": 73,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Science's theistic roots"
+        "title": "Scientific Intelligibility, Cognition, and Historical Origins"
       },
       {
-        "title": "Atheism and burden"
+        "title": "Design, Cosmic Origins, and Natural Mechanisms"
       },
       {
-        "title": "Design, gaps, and regress"
+        "title": "Evidence, Falsifiability, and Explanatory Method"
       },
       {
-        "title": "Evil and divine accountability"
+        "title": "Objective Morality and Human Moral Status"
       },
       {
-        "title": "Miracle evidence and method"
-      },
-      {
-        "title": "Morality and closing claims"
+        "title": "Evil, Innocent Suffering, and Theistic Coherence"
       }
     ]
   },
@@ -2959,11 +2956,11 @@ export const debateSummaries = [
     "number": "65",
     "title": "Miles K. Donahue vs Alex Malpass: Does Fine-Tuning Point to God?",
     "label": "Fine-tuning priors and naturalism",
-    "date": "2026-06-07",
+    "date": "2026-08-24",
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2UtMbB_gazg",
     "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
-    "summary": "Donahue argues that fine-tuning is far more likely on theism than single-universe naturalism; Malpass argues that naturalistic disjunctions, alien and simulation analogies, priors, and religious ambiguity prevent that inference from carrying enough weight.",
+    "summary": "Donahue defended a theistic likelihood advantage from fine-tuning, while Malpass pressed naturalistic aggregation, uncertain divine psychology, prior ambiguity, and theory-relative alternatives.",
     "sides": {
       "pro": {
         "name": "Fine-tuning theism",
@@ -2977,27 +2974,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 84
+      "pro": 79,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Fine-tuning as Bayesian evidence"
+        "title": "The Fine-Tuning Datum and the Core Likelihood Comparison"
       },
       {
-        "title": "Intentionality and stalking horses"
+        "title": "Naturalistic Alternatives and the Relevant Comparison Class"
       },
       {
-        "title": "Hypothesis space and burden"
+        "title": "Divine Goodness, Agency, and Predictive Expectations"
       },
       {
-        "title": "Resurrection, aliens, and possible evidence"
+        "title": "Intrinsic Probability, Coherence, Modesty, and Parsimony"
       },
       {
-        "title": "Priors and augmented naturalism"
-      },
-      {
-        "title": "Ambiguity, parsimony, and closing limits"
+        "title": "Empirical Discrimination and Religious Ambiguity"
       }
     ]
   },
@@ -4017,11 +4011,11 @@ export const debateSummaries = [
     "number": "88",
     "title": "Zac Sechler vs Matt Dillahunty: Did a Perfect Mind Create the Universe?",
     "label": "Perfect mind and explanatory power",
-    "date": "2026-06-24",
+    "date": "2026-08-24",
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FUPOouj5jNg",
     "motion": "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
-    "summary": "Sechler argues perfect-mind theism is simpler and explains key features of experience; Dillahunty argues the terms, detection method, and explanatory bridge are missing.",
+    "summary": "Sechler presents a cumulative perfect-mind inference; Dillahunty answers that unspecified hypotheses, missing likelihood baselines, hiddenness, and rival agent explanations limit its force.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -4036,24 +4030,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 71,
-      "con": 86
+      "pro": 79,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Opening Hypotheses"
+        "title": "Perfect-Mind Coherence, Identification, and Causal Burden"
       },
       {
-        "title": "Agents and Moral Knowledge"
+        "title": "Foundational Commitments and Comparative Simplicity"
       },
       {
-        "title": "Evidence and Explanation"
+        "title": "Comparative Likelihood and Evidential Method"
       },
       {
-        "title": "Demonstration and Presuppositions"
+        "title": "Explanatory Power and Rival Accounts of Observed Features"
       },
       {
-        "title": "Perfection and Hiddenness"
+        "title": "Divine Attributes, Hiddenness, and Contrary Expectations"
       }
     ]
   },
@@ -5405,11 +5399,11 @@ export const debateSummaries = [
     "number": "118",
     "title": "Eric Hernandez vs Justin Schieber: Does God Exist?",
     "label": "Evil, mind, and hiddenness",
-    "date": "2026-07-28",
+    "date": "2026-08-24",
     "duration": "2 hr 18 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
     "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
-    "summary": "Hernandez argues evil, rationality, and the soul presuppose God; Schieber argues naturalism better explains animal suffering, cosmic hostility, hiddenness, and theory simplicity.",
+    "summary": "Hernandez defended theistic grounds for morality, reason, and consciousness; Schieber pressed stronger naturalistic alternatives and evidential challenges from suffering, hostility, and hiddenness.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5423,27 +5417,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 84
+      "pro": 74,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Objective Morality, Divine Grounding, and Evil"
       },
       {
-        "title": "Evil And Animals"
+        "title": "Knowledge, Rationality, and Evolutionary Determination"
       },
       {
-        "title": "Knowledge And Rationality"
+        "title": "Consciousness, Freedom, and Explanatory Simplicity"
       },
       {
-        "title": "Soul And Consciousness"
+        "title": "Animal Suffering, Predation, and Theodicy"
       },
       {
-        "title": "Cosmos And Hiddenness"
+        "title": "Cosmic Hostility, Fine-Tuning, and Habitability"
       },
       {
-        "title": "Moral Ground And Closing"
+        "title": "Nonresistant Nonbelief and Perfect Divine Love"
       }
     ]
   },
@@ -5502,11 +5496,11 @@ export const debateSummaries = [
     "number": "120",
     "title": "Jonathan McLatchie vs Alex O'Connor: Is Christianity True?",
     "label": "Resurrection and biblical morality",
-    "date": "2026-07-29",
+    "date": "2026-08-24",
     "duration": "1 hr 19 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=woqy13ZkeqM",
     "motion": "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
-    "summary": "McLatchie argues that public evidence for the resurrection and Scripture supports Christian faith; O'Connor argues that the sources are too uncertain and biblical morality undermines Christian authority.",
+    "summary": "McLatchie defended Christianity through resurrection testimony and contextual reconciliation; O'Connor challenged source sufficiency, theological inference, biblical morality, and animal-suffering explanations.",
     "sides": {
       "pro": {
         "name": "Christian evidentialism",
@@ -5520,30 +5514,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 84
+      "pro": 83,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Resurrection Appearances and Competing Historical Explanations"
       },
       {
-        "title": "Resurrection Testimony"
+        "title": "Gospel Reliability, Corroboration, and Narrative Construction"
       },
       {
-        "title": "Gospel Reliability"
+        "title": "Prior Probability, Prophecy, and the Bridge to Christianity"
       },
       {
-        "title": "Prophecy And Priors"
+        "title": "Biblical Teaching, Atonement, and Divine Moral Authority"
       },
       {
-        "title": "Moral Authority"
-      },
-      {
-        "title": "Slavery And Violence"
-      },
-      {
-        "title": "Closing And Faith"
+        "title": "Suffering, Evidence, and Rational Christian Commitment"
       }
     ]
   },
@@ -6308,11 +6296,11 @@ export const debateSummaries = [
     "number": "137",
     "title": "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?",
     "label": "Resurrection, historical analogy, and evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-24",
     "duration": "2 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Pba-YNVWaa0",
     "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
-    "summary": "Craig argues that four early facts make divine resurrection the best explanation, while Price challenges the sources, historical analogy, and whether a miracle explains anything.",
+    "summary": "Craig built a cumulative resurrection case from early sources; Price challenged its historical foundations through analogy, literary criticism, and ordinary belief-forming mechanisms.",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -6326,21 +6314,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 74
+      "pro": 83,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Consensus and the Four Facts"
+        "title": "Source Proximity, Textual Integrity, and Historical Method"
       },
       {
-        "title": "Historical Analogy and Pagan Parallels"
+        "title": "Burial Tradition and the Empty Tomb"
       },
       {
-        "title": "Paul and the Appearance Tradition"
+        "title": "Nature and Historical Status of the Postmortem Appearances"
       },
       {
-        "title": "Burial, Belief, and Explanation"
+        "title": "Origins of the Disciples’ Resurrection Belief"
+      },
+      {
+        "title": "Resurrection as the Best Explanation"
       }
     ]
   },
@@ -6437,11 +6428,11 @@ export const debateSummaries = [
     "number": "140",
     "title": "Kenny Rhodes vs Matt Dillahunty: Is There Evidence for God?",
     "label": "Classical theism, essence, and evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-24",
     "duration": "3 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=i0Q_KMN64bk",
     "motion": "Is there good evidence for the existence of the God of classical theism?",
-    "summary": "Rhodes argues that composition, essence, and contingent existence require the necessary ground of classical theism; Dillahunty argues that those metaphysical premises are undefended and do not distinguish God from unanswered natural questions.",
+    "summary": "Rhodes defended a metaphysical route from finite composition to classical theism; Dillahunty pressed evidential, ontological, agency, identification, and hiddenness objections.",
     "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
@@ -6456,24 +6447,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 63,
-      "con": 85
+      "pro": 70,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Existence, Metaphysics, and Evidence"
+        "title": "Metaphysical Method and Evidential Standards"
       },
       {
-        "title": "Essence, Definitions, and Reality"
+        "title": "Essence, Form, Identity, and Abstraction"
       },
       {
-        "title": "Composition, Causation, and Agency"
+        "title": "Essence-Existence Composition and the Necessary Ground"
       },
       {
-        "title": "Necessary Being and Classical Theism"
+        "title": "Composition, Causation, and the Inference to Agency"
       },
       {
-        "title": "Revelation, Experience, and Testing"
+        "title": "From a Ground of Being to Classical Theism"
       }
     ]
   },
@@ -6665,11 +6656,11 @@ export const debateSummaries = [
     "number": "145",
     "title": "Daniel Dennett vs Dinesh D'Souza: Is God a Human Invention?",
     "label": "Religion, naturalism, and divine explanation",
-    "date": "2026-07-31",
+    "date": "2026-08-24",
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ocZh8vhz_Hs",
     "motion": "Is God a human invention, or do cosmological fine-tuning, morality, consciousness, and religious experience provide rational support for a real divine creator?",
-    "summary": "Dennett explains religion as culturally evolved and defends secular inquiry; D'Souza argues that cosmology, reason, morality, freedom, and Christianity support theism.",
+    "summary": "Dennett advances naturalistic explanations of religion, cosmos, mind, and morality, while D'Souza defends divine reality through conceptual, cosmological, experiential, and moral arguments.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -6684,27 +6675,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 62
+      "pro": 80,
+      "con": 75
     },
     "sections": [
       {
-        "title": "Religious Diversity and Cultural Evolution"
+        "title": "Religious Concepts, Cultural Evolution, and Independent Reality"
       },
       {
-        "title": "Origins and Fine-Tuning"
+        "title": "Cosmic Origin, Natural Law, and Fine-Tuning"
       },
       {
-        "title": "Consciousness, Freedom, and Reason"
+        "title": "Consciousness, Reason, Free Will, and Evolutionary Explanation"
       },
       {
-        "title": "Morality, Religion, and Secular Society"
+        "title": "Morality, Human Dignity, and Secular Social Order"
       },
       {
-        "title": "Causation, Creation, and Design"
-      },
-      {
-        "title": "Faith and the Stakes of Belief"
+        "title": "Religious Experience, Cognitive Limits, and Epistemic Standards"
       }
     ]
   },
@@ -7170,11 +7158,11 @@ export const debateSummaries = [
     "number": "156",
     "title": "Sam Harris vs Dennis Prager: Religion, Morality, and Public Reason",
     "label": "Religion, moral reasoning, and social order",
-    "date": "2026-08-01",
+    "date": "2026-08-24",
     "duration": "50 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=elMi_IzlD40",
     "motion": "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
-    "summary": "Prager defends God as the source of a moral code and argues that secular culture misses major evils; Harris argues that unsupported sacred-text claims divide people and that ethics can be grounded in conscious flourishing.",
+    "summary": "Prager defends divine authority through moral durability and historical performance; Harris advances conscious wellbeing, open inquiry, and cooperation while challenging scriptural reliability.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -7189,21 +7177,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 69,
-      "con": 78
+      "pro": 70,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Religion, Islam, and moral diagnosis"
+        "title": "Moral Authority and Binding Obligation"
       },
       {
-        "title": "Sacred text and moral evaluation"
+        "title": "Moral Knowledge and Ethical Realism"
       },
       {
-        "title": "Sentience, animals, and moral status"
+        "title": "Creator, Scripture, and Dogmatic Authority"
       },
       {
-        "title": "Moral progress, meaning, and spiritual experience"
+        "title": "Recognizing Social Evil and Testing Worldviews"
+      },
+      {
+        "title": "Consciousness, Human Status, and Contested Cases"
       }
     ]
   },
@@ -8865,11 +8856,11 @@ export const debateSummaries = [
     "number": "194",
     "title": "Richard Swinburne vs Peter Millican: Does God Exist?",
     "label": "Simplicity, cosmic order, and evil",
-    "date": "2026-08-01",
+    "date": "2026-08-24",
     "duration": "1 hr 8 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FcNR4vJdcE4",
     "motion": "Is God the simplest and most probable explanation of the universe and its general features?",
-    "summary": "Swinburne presents one unlimited good person as the simplest explanation of laws, life, and consciousness; Millican challenges that simplicity, its predictive precision, and its fit with suffering.",
+    "summary": "Swinburne defended personal explanation, simplicity, freedom, and compensation; Millican pressed predictive specificity, scientific background, divine coherence, embodiment, and victim-centered suffering.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -8884,24 +8875,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 87,
-      "con": 94
+      "pro": 81,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Personal explanation and simplicity"
+        "title": "Personal, physical, and purposive explanation"
       },
       {
-        "title": "Lawlike order, evolution, and consciousness"
+        "title": "Simplicity as a guide to explanatory probability"
       },
       {
-        "title": "Which kind of simplicity predicts?"
+        "title": "Predicting order, life, consciousness, and agency"
       },
       {
-        "title": "Freedom and the purpose of natural evil"
+        "title": "Divine attributes, physical coherence, and human nature"
       },
       {
-        "title": "Afterlife compensation and predictive latitude"
+        "title": "Suffering, moral freedom, and posthumous compensation"
       }
     ]
   },

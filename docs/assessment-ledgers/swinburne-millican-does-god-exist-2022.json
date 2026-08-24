@@ -1,0 +1,1833 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-08-production-compatibility",
+  "status": "frozen-post-canary-batch-08-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "debateNumber": "194",
+  "debateId": "swinburne-millican-does-god-exist-2022",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-08-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "76d4ffd7e53261cf959e5856a7b7611dc3988f43cd6e00eb7aa6de7fd3f83db1",
+    "calculatedScoresSha256": "6248c422a4e6b6cffcfa5a6b51a18ca165b6438a38ab64f489fabeee80a105e7",
+    "finalizationAuditSha256": "9b8d25e18e2528bd8f3d08ee3230f95a527c77570acd2c1ac02d448ba08f8282",
+    "renderingAuditSha256": "9e47e0238b6aed9b1b4ba13d1112e7d541a619e0b891ceeeee94903d6428b6e1",
+    "finalCandidateSha256": "91f9c0b020fae2a3330970b66ab290fd5cf607d66e289c9ebdd5fb576e1407ab",
+    "eventsPath": ".assessment-cache/captions/FcNR4vJdcE4/events.json",
+    "eventsSha256": "45172568191d782f01ad715be60670179ff4193526fbdc1a2adc0f51e48414f8",
+    "finalJudgmentSha256": "510245b61ee66e85b164765f7dc3866d954b5298c8f1687aeef20e37462e8928"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "194",
+    "debateId": "swinburne-millican-does-god-exist-2022",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-theistic-explanation",
+        "side": "pro",
+        "description": "Establish theism as a legitimate personal explanation whose simplicity and divine purposes make the universe's order, consciousness, moral agency, and associated general features more probable than they would be without God.",
+        "successCriteria": "The route succeeds if it supplies a coherent personal-explanation framework, connects simplicity to prior probability, derives relevant expectations from the proposed divine nature, and accounts for apparent counterevidence without losing the comparative explanatory inference.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-comparative-probability",
+          "tier": "motion",
+          "description": "Show that a simple divine-agent hypothesis makes the universe and its general features sufficiently more expected than relevant non-theistic alternatives to count as the most probable explanation."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-personal-causation",
+            "tier": "central",
+            "description": "Establish purposive personal causation as a genuine and applicable explanatory mode alongside explanation through physical states and laws."
+          },
+          {
+            "bridgeId": "pro-central-simplicity-inference",
+            "tier": "central",
+            "description": "Justify simplicity as a basis for assigning prior probability while retaining evidential fit and predictive accuracy as constraints on hypothesis choice."
+          },
+          {
+            "bridgeId": "pro-central-divine-expectations",
+            "tier": "central",
+            "description": "Derive reasons for a perfectly good and powerful God to create an orderly, life-producing universe containing conscious agents with consequential freedom."
+          },
+          {
+            "bridgeId": "pro-central-counterevidence",
+            "tier": "central",
+            "description": "Reconcile grave suffering and other apparent tensions with the proposed divine nature through morally relevant opportunity, obligations toward sufferers, or compensating goods."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-scientific-analogy",
+            "tier": "subsidiary",
+            "description": "Specify how economy in entities, properties, and mathematical structure operates in ordinary explanatory and scientific comparisons."
+          },
+          {
+            "bridgeId": "pro-subsidiary-anthropic-features",
+            "tier": "subsidiary",
+            "description": "Connect regular natural laws and embodied conditions to the possibility of rational consciousness, purposive action, and morally significant choice."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-insufficient-support",
+        "side": "con",
+        "description": "Deny that the proposed divine hypothesis earns the claimed comparative probability by challenging its explanatory category, simplicity, predictive specificity, coherence, and ability to accommodate suffering and human nature.",
+        "successCriteria": "The route succeeds if one or more indispensable links from divine simplicity to explanatory probability fails, or if the hypothesis remains insufficiently discriminating, internally strained, or poorly aligned with major features it is offered to explain.",
+        "motionBridge": {
+          "bridgeId": "con-motion-defeat-comparative-inference",
+          "tier": "motion",
+          "description": "Show that the available general features do not warrant treating God as the simplest and most probable explanation because the proposed comparison lacks a justified or adequately predictive basis."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-explanatory-framework",
+            "tier": "central",
+            "description": "Challenge the exhaustiveness or applicability of the division between inanimate causal explanation and purposive personal explanation."
+          },
+          {
+            "bridgeId": "con-central-simplicity-adequacy",
+            "tier": "central",
+            "description": "Show that competing notions of simplicity can diverge and that an infinite, qualified divine agent may not be simple in the sense relevant to probability."
+          },
+          {
+            "bridgeId": "con-central-predictive-content",
+            "tier": "central",
+            "description": "Require theism to provide discriminating expectations rather than unrestricted compatibility with possible observations or merely general explanatory coverage."
+          },
+          {
+            "bridgeId": "con-central-moral-evidence",
+            "tier": "central",
+            "description": "Test whether the extent and distribution of severe suffering are compatible with the purposes and obligations attributed to a perfectly good and omnipotent creator."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-background-fit",
+            "tier": "subsidiary",
+            "description": "Require the proposed personal cause to address its fit with established causal knowledge, evolutionary explanation, and physical accounts of space and time."
+          },
+          {
+            "bridgeId": "con-subsidiary-human-nature",
+            "tier": "subsidiary",
+            "description": "Examine whether an independently created immaterial component coheres with evolutionary development, embodied cognition, and the biological cost of the human brain."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-explanatory-modes",
+        "title": "Personal, physical, and purposive explanation",
+        "weightPercent": 16,
+        "rationale": "This issue determines whether divine agency belongs to a defensible explanatory category and whether the proposed contrast with physical causation is sufficiently complete to support the wider inference."
+      },
+      {
+        "sectionId": "section-simplicity-probability",
+        "title": "Simplicity as a guide to explanatory probability",
+        "weightPercent": 27,
+        "rationale": "The motion expressly links simplicity with probability, making the meaning, justification, and limits of simplicity central to the comparison between theism and alternative hypotheses."
+      },
+      {
+        "sectionId": "section-prediction-general-features",
+        "title": "Predicting order, life, consciousness, and agency",
+        "weightPercent": 24,
+        "rationale": "This issue tests whether the proposed divine nature generates substantive expectations for the universe's general features and whether those expectations distinguish theism from rival accounts."
+      },
+      {
+        "sectionId": "section-divine-coherence-human-nature",
+        "title": "Divine attributes, physical coherence, and human nature",
+        "weightPercent": 10,
+        "rationale": "Questions about temporality, knowledge, unlimited power, souls, evolution, and embodiment bear on whether the explanatory hypothesis is coherent and appropriately connected to the phenomena invoked."
+      },
+      {
+        "sectionId": "section-suffering-compensation",
+        "title": "Suffering, moral freedom, and posthumous compensation",
+        "weightPercent": 23,
+        "rationale": "Severe and unevenly distributed suffering is major apparent counterevidence to a perfectly good creator, while freedom, victim benefit, and compensation supply the corresponding reconciliatory requirements."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-personal-explanation-as-genuine-mode",
+        "sectionId": "section-explanatory-modes",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "Personal explanation through an animate agent's purposes, beliefs, and powers is a genuine explanatory mode alongside explanation by prior physical states and natural laws.",
+        "sourceSpan": {
+          "startEvent": 68,
+          "endEvent": 97,
+          "excerpt": "of where they were last year and the operation of Newton's laws. But there's a different way in which we explain quite a lot of phenomena and that's what I call personal explanation. We explain various phenomena by the action of a personal or other animate being who has purposes and beliefs about how they can be fulfilled and certain powers. Thus, if I wave my hand and you want"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage is a continuous portion of Swinburne's opening speech and uses his explicit first-person terminology and example.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-personal-causation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Constructive move establishing personal explanation as an explanatory category; no earlier opposing target applies."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The explanatory category and its contrast with physical-law explanation are plainly recoverable and consistently expressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The categorical claim is adequately supported by the familiar structure of intentional action used in the passage."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The distinction is internally consistent and supported by a recognizable action-explanation example; broader applicability is only implicit."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The hand-action example supports the existence of personal explanation, but does not independently establish cosmic applicability."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Directly supplies the indispensable personal-causation bridge at the top of the central tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No meaningful opposing alternative is interpreted in this constructive span."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "A clear constructive foundation within its class, though its applicability beyond familiar agents remains undeveloped."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly defines personal explanation by an animate being's purposes, beliefs, and powers and contrasts it with Newtonian explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-simplicity-fewer-postulates",
+        "sectionId": "section-simplicity-probability",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "Explanatory practice favors hypotheses that posit fewer entities, properties, laws, and mathematical complications, as illustrated by ordinary and scientific comparisons among otherwise viable explanations.",
+        "sourceSpan": {
+          "startEvent": 180,
+          "endEvent": 243,
+          "excerpt": "gravitation was a very simple theory. Had three laws of motion and its law of gravitational attraction. The law of gravitational attraction says bodies are attracted to each other by forces proportional to the product of their masses and inversely proportional to the square of their distance apart. And that by scientific standards is a very simple hypothesis. But there are an infinite number of hypotheses"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This uninterrupted argument remains within Swinburne's opening address and develops his own stated definition and scientific examples.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-simplicity-inference"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Constructive move defining economy across entities, properties, laws, and mathematical form; no earlier opposing target applies."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The economy criterion is clear, but the conditions under which competing kinds of economy govern are only implicitly bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The scientific examples support a preference for economy, but do not by themselves establish a unified probabilistic rule."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Directly addresses the central simplicity-inference requirement and is highly placed within that tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The constructive span does not materially interpret an opposing alternative."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "It gives a substantive simplicity principle and scientific illustration, with the probability bridge compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt presents Newtonian gravitation as simple by scientific standards against indefinitely many more complicated alternatives.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-good-god-creates-free-rational-agents",
+        "sectionId": "section-divine-coherence-human-nature",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "A perfectly good and omnipotent God has reason to create rational conscious beings able to make serious, consequential choices between good and evil rather than beings programmed only to do good.",
+        "sourceSpan": {
+          "startEvent": 267,
+          "endEvent": 320,
+          "excerpt": "God would have a reason for making that because God doesn't want us to be programmed to do what is good. He wants us to choose what is good. And therefore if we have to make serious choices, we must have a choice between good and evil. We have to make serious choices to the world. And he would want to allow us to make serious choices to the world and each other. And so he has a"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Swinburne explicitly labels this as his hypothesis and develops the divine attributes and creative rationale in one continuous passage.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-divine-expectations"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Constructive move deriving a creative reason from perfect goodness and the value of serious free choice; no earlier target applies."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The claim and key terms are clear, but the required extent and distribution of evil are not scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The value of unprogrammed choice supplies a reason, but not by itself the stronger distributional expectation implied."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The inference from valuable serious choice to alternatives between good and evil is coherent, with a bounded unstated proportionality bridge."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The account is principally a moral-purpose assertion and does not compare alternative ways God might secure meaningful agency."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies a central reason for divine creation of consequentially free rational agents."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No opposing interpretation is materially assessed in this constructive move."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt states that God would prefer chosen goodness over programmed goodness and therefore permit serious choices affecting the world and others.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-theism-predicts-order-life-consciousness",
+        "sectionId": "section-prediction-general-features",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "Theism makes an orderly, life-producing universe containing conscious embodied agents probable because regular laws enable agency and evolution, whereas physics alone does not explain why conscious beings exist.",
+        "sourceSpan": {
+          "startEvent": 343,
+          "endEvent": 421,
+          "excerpt": "be the kind of laws which lead to the evolution of us. And my hypothesis is God does produce us and as we know, he produces us by uh producing the laws of evolution which produce us. And uh we are conscious beings and there's nothing in physics which will possibly explain or could possibly explain without bringing in innumerable other categories why that is the case. And so why"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The extended first-person argument occurs wholly within Swinburne's opening speech and culminates in his explicit comparative probability conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-comparative-probability"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Constructive comparative move linking divine purposes to laws, evolution, consciousness, and probability; no earlier opposing target applies."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The prediction is recoverable, but the universal claim about physics and the relevant comparison class lack explicit scope limits."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The divine-purpose reasoning is relevant, but the categorical dismissal of physical explanation and resulting probability claim exceed the supplied comparison."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Physical and evolutionary accounts may explain order and embodiment while leaving consciousness partly unresolved.",
+          "decisiveQualification": "A residual explanatory gap does not alone show that theism makes the entire package most probable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the motion bridge by asserting comparative probability for the universe's central general features."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The move acknowledges evolution but materially underdevelops the strongest non-theistic division of explanatory labor."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (85 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says God produces agents through evolutionary laws, denies that physics can explain consciousness without many categories, and draws a comparative probability conclusion.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-purposive-systems-beyond-persons",
+        "sectionId": "section-explanatory-modes",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "Purposive behavior in evolved organisms and algorithmic systems shows that explanation is not exhaustively divided between mechanical processes and personal agents.",
+        "sourceSpan": {
+          "startEvent": 670,
+          "endEvent": 708,
+          "excerpt": "chess and the fact that it's been following a certain algorithm. Um notice also that one can have inanimate systems have that have evolved in such a way that their behavior is purposive. Animals and plants being obvious cases. In many cases, that behavior can be explained by things like the logic of evolution. So, the idea that that it's all either mechanical or personal um is uh incorrect"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Millican has been formally introduced and explicitly identifies Richard's two explanatory kinds before presenting his objections and examples.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-explanatory-framework"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-personal-explanation-as-genuine-mode"
+          ],
+          "components": [
+            {
+              "componentId": "con-purposive-systems-beyond-persons-component-01",
+              "targetMoveId": "pro-personal-explanation-as-genuine-mode",
+              "text": "Whether physical-law and personal explanations exhaust the relevant kinds of purposive causal explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses the proposed division as non-exhaustive and states that evolved and algorithmic systems exhibit purposive behavior explainable without a personal agent."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The counterclaim is clear, though 'purposive' shifts somewhat between function-like behavior and an agent's conscious purpose."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conclusion is limited to rejecting exhaustiveness, and the speaker notes that Swinburne may accept part of the distinction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Swinburne's category concerns causal explanation by conscious purposes, not every system displaying function-like purposiveness.",
+          "decisiveQualification": "Algorithmic and evolved behavior defeats exhaustiveness only if it constitutes an additional causal explanatory mode rather than physical explanation at another level."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The examples undermine a simple exhaustive dichotomy, though the equivocation between conscious purpose and functional purposiveness weakens the defeat."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Directly supports the central challenge to the explanatory framework's exhaustiveness."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "Millican expressly notes that Swinburne might not object, fairly preserving the narrower force of the criticism."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly attacks the decisive exhaustiveness inference and supplies two counterexample classes."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes chess algorithms, animals, plants, and evolutionary logic before expressly calling the mechanical-or-personal division incorrect.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-multiple-simplicity-criteria",
+        "sectionId": "section-simplicity-probability",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "Simplicity is not a unitary guide to probability because descriptive, ontological, and computational simplicity can diverge, while scientific progress sometimes favors more complex hypotheses.",
+        "sourceSpan": {
+          "startEvent": 709,
+          "endEvent": 772,
+          "excerpt": "science, we've gone from simple hypotheses to more complex ones. A related point is that simple simplicity is actually multifaceted. There are different types of simplicity. Let me just give one example of uh this variety. You can have descriptive or syntactic simplicity or complexity. That is, how concisely can the hypothesis that you're giving be specified? Or there's a different kind of thing, which is ontological"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Millican expressly attributes the emphasis on simplicity to Richard and then supplies a sustained historical and conceptual criticism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-simplicity-adequacy"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-simplicity-fewer-postulates"
+          ],
+          "components": [
+            {
+              "componentId": "con-multiple-simplicity-criteria-component-01",
+              "targetMoveId": "pro-simplicity-fewer-postulates",
+              "text": "Whether simplicity supplies a unitary ordering when descriptive, ontological, and computational measures diverge.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-multiple-simplicity-criteria-component-02",
+              "targetMoveId": "pro-simplicity-fewer-postulates",
+              "text": "Whether scientific movement toward more complex but better-fitting theories limits the stated simplicity preference.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "It identifies two failures in an unrestricted simplicity inference: multiple non-equivalent criteria and historical cases where complexity increases."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Distinct simplicity criteria and the restricted historical claim are clearly separated and scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The examples support the bounded conclusion that simplicity is multifaceted and not invariably preferred."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Simplicity can remain one probabilistic virtue while predictive fit determines which adequate hypotheses are compared.",
+          "decisiveQualification": "Divergent measures still require an account of which simplicity notion is probabilistically relevant."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "Conceptual distinctions and scientific history provide specific support, with the exact prevalence and aggregation issue left open."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It reaches the indispensable central adequacy question for simplicity at the top of its tier."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Both decisive qualifications to the initial simplicity principle are expressly contacted, although no replacement aggregation rule is offered."
+          }
+        },
+        "evidenceBasis": "The excerpt states that science sometimes moves to more complex hypotheses and distinguishes descriptive from ontological simplicity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-background-fit-personal-causation",
+        "sectionId": "section-explanatory-modes",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "Bodiless instantaneous agency is unlike observed causation, and scientific history's retreat from intuitive purposive explanations makes background fit relevant even to a cosmic hypothesis.",
+        "sourceSpan": {
+          "startEvent": 773,
+          "endEvent": 847,
+          "excerpt": "bodies that work by physical action. The idea that there can be a being who just by divine fiat can make things happen across the entire universe instantaneously is radically out of line with our experience. And I want to challenge this move of saying actually fit with background knowledge doesn't matter. I don't think that fits with the history of science. In fact, the history of science has been a long retreat from purposive explanations"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Millican directly reconstructs Richard's background-knowledge position and follows it with an extended objection grounded in experience and scientific history.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-background-fit"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-personal-explanation-as-genuine-mode"
+          ],
+          "components": [
+            {
+              "componentId": "con-background-fit-personal-causation-component-01",
+              "targetMoveId": "pro-personal-explanation-as-genuine-mode",
+              "text": "Whether the proposed personal explanatory mode is applicable to an unembodied cosmic agent given established causal knowledge.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts applicability by contrasting bodiless instantaneous agency with experience and by citing science's retreat from intuitive purposive accounts."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is bounded to background fit and the historical retreat from particular purposive explanations."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move offers background considerations against the analogy without treating historical retreat as a deductive disproof."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Cosmic explanations concern a unique domain where ordinary causal background may have limited authority.",
+          "decisiveQualification": "Domain uniqueness does not make background fit irrelevant; it changes how strongly the mismatch counts."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly occupies the subsidiary background-fit tier but does not itself decide the central existence of personal explanation."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly addresses background fit, though it does not deny that ordinary embodied personal explanation is genuine."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects indifference to background knowledge and cites scientific abandonment of Aristotelian purposive accounts of falling bodies and planetary motion.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-simple-creator-nonspecific",
+        "sectionId": "section-prediction-general-features",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "An unrestricted creator hypothesis can be verbally simple yet explanatorily non-specific, while observed natural purposiveness is explained through Darwinian evolution operating with physical mechanisms.",
+        "sourceSpan": {
+          "startEvent": 848,
+          "endEvent": 866,
+          "excerpt": "creator wanted there to be a cup of water there. That's an example of how you can get a very, very simple explanation, but it's hopeless because it's so non-specific. Okay. Um An observation, of course, we do see a lot of genuine purposiveness in nature, as I've said, uh that's explicable by Darwin, uh which we both accept, um and but that always works in combination with a physical"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage remains in Millican's uninterrupted response and presents an explicit parody followed by his observation about natural purposiveness.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-predictive-content"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-theism-predicts-order-life-consciousness",
+            "pro-simplicity-fewer-postulates"
+          ],
+          "components": [
+            {
+              "componentId": "con-simple-creator-nonspecific-component-01",
+              "targetMoveId": "pro-theism-predicts-order-life-consciousness",
+              "text": "Whether a simple creator hypothesis supplies discriminating expectations rather than accommodating any observed outcome by an unspecified desire.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-simple-creator-nonspecific-component-02",
+              "targetMoveId": "pro-simplicity-fewer-postulates",
+              "text": "Whether verbal brevity can count as explanatory simplicity when it purchases no predictive specificity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The cup-of-water example expressly diagnoses unrestricted creator preference as simple in words but explanatorily hopeless because non-specific."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between verbal simplicity and explanatory specificity is clear and consistently maintained."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The counterexample warrants the bounded conclusion that unrestricted intentions yield weak prediction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A creator's perfect goodness may constrain intentions enough to generate substantive expectations.",
+          "decisiveQualification": "Those moral constraints must be independently specified and shown to discriminate among possible worlds."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central predictive-content bridge at the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly identifies the missing predictive restriction and states why verbal simplicity cannot repair it."
+          }
+        },
+        "evidenceBasis": "The excerpt calls a creator-desire explanation very simple but hopelessly non-specific and contrasts it with Darwinian purposiveness working with physical mechanisms.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-qualified-infinity-complexity",
+        "sectionId": "section-simplicity-probability",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "An infinite divine agent is not straightforwardly simple because its powers have qualifications concerning evil and future free actions, and sustaining every particle implies immense computational capacity.",
+        "sourceSpan": {
+          "startEvent": 868,
+          "endEvent": 899,
+          "excerpt": "one side. The infinite god isn't so simple because it doesn't extend then to being able to do evil. Um it doesn't extend, according to Richard, to knowing the future actions of free agents. Um And also, I would suggest it isn't computationally simple. We're talking here about a being which on Richard's theory maintains in being every single particle in the universe from moment"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move occurs within Millican's uninterrupted opening rebuttal turn and explicitly addresses Swinburne's account of divine infinity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-simplicity-adequacy"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-simplicity-fewer-postulates",
+            "pro-good-god-creates-free-rational-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-qualified-infinity-complexity-component-01",
+              "targetMoveId": "pro-simplicity-fewer-postulates",
+              "text": "Whether an infinite divine agent is simple under the relevant ontological, descriptive, and computational criteria.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-qualified-infinity-complexity-component-02",
+              "targetMoveId": "pro-good-god-creates-free-rational-agents",
+              "text": "Whether qualifications concerning evil and future free actions complicate the proposed divine attributes.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "It directly applies multiple simplicity criteria to the proposed God and identifies qualifications and computational demands that complicate the hypothesis."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The several complexity challenges are recoverable, though computational complexity is applied to an agent without a fully specified metric."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents the computational point as a suggestion and supports the attribute qualifications directly."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Infinite power may be specified by one simple unbounded property, with moral inability and free-action ignorance following from independent principles.",
+          "decisiveQualification": "The simplicity claim must count the qualifying principles and distinguish concise specification from implementation cost."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The challenge coherently separates qualified scope and computational demand, though sustaining particles does not by itself prove descriptive complexity."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Directly supports the central simplicity-adequacy challenge to the divine hypothesis."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It squarely contacts divine simplicity, with some claims about computational burden remaining analogical."
+          }
+        },
+        "evidenceBasis": "The excerpt points to limitations regarding evil and future free actions and to the task of maintaining every particle moment by moment.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-divine-time-relativity",
+        "sectionId": "section-divine-coherence-human-nature",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "A temporal God who knows everything up to a universal present but not future free actions appears incompatible with general relativity's denial of absolute simultaneity.",
+        "sourceSpan": {
+          "startEvent": 908,
+          "endEvent": 931,
+          "excerpt": "the grounds that it doesn't make sense to say that God is simultaneously aware of what is happening in AD 1995 and in 587 BC. But our best theory of space and time, uh general relativity, implies actually that simultaneity is relative. So, um if God knows everything that's happened up until time T, but from time T onwards cannot know the free actions of agents such as ourselves"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The challenge is delivered continuously by Millican during his rebuttal and directly names the commitments he attributes to Swinburne.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-background-fit"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-good-god-creates-free-rational-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-time-relativity-component-01",
+              "targetMoveId": "pro-good-god-creates-free-rational-agents",
+              "text": "Whether a temporal omniscient God can distinguish a universal present from future free actions under relativity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "It identifies the alleged incompatibility between a universal divine time boundary and relativity's denial of absolute simultaneity."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The challenge specifies temporal knowledge, future free actions, and relative simultaneity without material drift."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The wording presents an apparent incompatibility rather than claiming a demonstrated logical contradiction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Divine knowledge might be indexed to a relativistic foliation, proper time, or tenseless spacetime rather than an absolute cosmic present.",
+          "decisiveQualification": "Such a model must preserve the asserted temporal boundary on foreknowledge without reintroducing privileged simultaneity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "General relativity supplies a specific established premise; the attributed temporal model is not developed enough here to close all reconciliations."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It is a strong subsidiary background-fit and coherence challenge rather than direct motion completion."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The objection is fair but leaves several sophisticated reconciliation models unexamined."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "The coherence issue is explicit, though the earlier selected move does not itself fully state the temporal-omniscience theory being attacked."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes relativity of simultaneity against God's knowing all events up to time T while lacking knowledge of later free actions.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-suffering-prevents-agency",
+        "sectionId": "section-suffering-compensation",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "A freedom-based justification does not explain severe suffering and early death that deprive infants and other victims of opportunities to exercise morally significant agency.",
+        "sourceSpan": {
+          "startEvent": 968,
+          "endEvent": 981,
+          "excerpt": "it is a good thing that uh people should have the power to do morally significant things. But how are you going to square that with the fact that in history an awful lot of people have not had much power to do morally significant things because they have they have starved as babies or they've been exterminated by the Nazis and so forth. Uh that seems to me to be hard to explain"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Millican explicitly directs this objection to Swinburne near the end of his uninterrupted opening rebuttal turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-counterevidence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-good-god-creates-free-rational-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-suffering-prevents-agency-component-01",
+              "targetMoveId": "pro-good-god-creates-free-rational-agents",
+              "text": "Whether consequential freedom explains suffering that removes rather than enables a victim's opportunity for moral agency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies victims deprived of agency as a counterexample to the freedom rationale and states that their suffering is therefore hard to explain."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection is specifically limited to victims whose suffering or death prevents meaningful moral action."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move says these cases are hard to explain rather than claiming that all freedom-based defenses are impossible."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Other agents' freedom, collective goods, or posthumous life might provide benefits not exercised by the immediate victim on Earth.",
+          "decisiveQualification": "A perfectly good creator still needs a victim-centered justification for allowing deprivation of that person's agency."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the indispensable central counterevidence bridge through the distribution of severe suffering."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the decisive freedom premise and presents cases where the proposed good is unavailable to the sufferer."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts the claimed good of morally significant power with infants who starve and victims exterminated before exercising such power.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-defense-of-personal-causal-category",
+        "sectionId": "section-explanatory-modes",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "Purposiveness in causal explanation requires a purposive agent: biological functions can be explained through selection, while ordinary goal-directed action exemplifies irreducibly personal causation.",
+        "sourceSpan": {
+          "startEvent": 989,
+          "endEvent": 1051,
+          "excerpt": "and I see it so to fulfill my promises. And we make plans for the near and far future and we do things because we made these plans. So, we obviously direct our lives by purposes and our purposes are guided by our beliefs as to what will be the consequences of the actions for which we have powers. So, I think there aren't any other kinds of explanation of causal explanation that"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move begins with Swinburne's answer to Millican and continues within Swinburne's clearly bounded rebuttal turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-explanatory-framework"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-purposive-systems-beyond-persons"
+          ],
+          "components": [
+            {
+              "componentId": "pro-defense-of-personal-causal-category-component-01",
+              "targetMoveId": "con-purposive-systems-beyond-persons",
+              "text": "Whether evolved functions and algorithms constitute a third causal explanatory category beyond physical and personal explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply distinguishes selection-based biological function from purposive action and reasserts beliefs, plans, and powers as personal causation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The personal category is clear, but the universal claim that no other causal-explanation kinds exist is broader than the developed defense."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The examples support irreducible ordinary agency but do not exhaustively rule out every additional causal category."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Algorithmic and evolutionary explanations may be physically realized yet explanatory at autonomous functional levels.",
+          "decisiveQualification": "Multiple explanatory levels do not necessarily create a distinct fundamental causal mode."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the con side's central explanatory-framework bridge."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the central counterexample and supplies a distinction, though it does not fully analyze algorithmic systems."
+          }
+        },
+        "evidenceBasis": "The excerpt describes plans, purposes, beliefs about consequences, and powers as explanations of ordinary action and concludes against additional causal kinds.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-simplicity-raises-probability-subject-to-data",
+        "sectionId": "section-simplicity-probability",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "Among hypotheses that adequately fit the evidence, greater simplicity raises prior probability, although even a simple hypothesis must be rejected when its predictions conflict with the data.",
+        "sourceSpan": {
+          "startEvent": 1052,
+          "endEvent": 1131,
+          "excerpt": "the Boyle-Charles law, uh PV = KT, was superseded by the van der Waals law in which there were a few more terms. Uh yes, why? Because uh the latter gave a more accurate predictions. So, nevertheless, among hypotheses which do satisfy the first two criteria, scientists always do prefer the simpler one. I illustrated this on the handout I gave you with uh uh a very simple example"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Swinburne develops the point throughout his uninterrupted rebuttal turn while directly answering Millican's scientific counterexamples.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-simplicity-adequacy"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-multiple-simplicity-criteria"
+          ],
+          "components": [
+            {
+              "componentId": "pro-simplicity-raises-probability-subject-to-data-component-01",
+              "targetMoveId": "con-multiple-simplicity-criteria",
+              "text": "Whether scientific acceptance of more complex theories defeats simplicity as a probability guide.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-simplicity-raises-probability-subject-to-data-component-02",
+              "targetMoveId": "con-multiple-simplicity-criteria",
+              "text": "Whether simplicity operates only after predictive adequacy and evidential fit are held suitably fixed.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "It concedes movement to more complex laws when predictions improve and restricts simplicity preference to hypotheses satisfying the evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The domain of the simplicity preference is expressly restricted to hypotheses with adequate evidential satisfaction."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The Boyle–Charles and van der Waals comparison appropriately supports the conditional rather than absolute simplicity claim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Multiple simplicity measures can still diverge even among equally accurate hypotheses.",
+          "decisiveQualification": "The response repairs the fit objection but does not specify which simplicity measure determines the remaining prior ordering."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central simplicity-adequacy challenge and restores a qualified inference."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly answers the scientific-complexity counterexample and states the decisive evidential-fit qualification."
+          }
+        },
+        "evidenceBasis": "The excerpt explains replacement of the simpler Boyle–Charles law by the more accurate van der Waals law, then limits simplicity preference to adequately supported hypotheses.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-generality-lacks-precision",
+        "sectionId": "section-prediction-general-features",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "Theism's generality yields too little precision to share the evidential standing of scientific hypotheses whose unfamiliarity or complexity is justified by accurate, discriminating predictions.",
+        "sourceSpan": {
+          "startEvent": 1232,
+          "endEvent": 1262,
+          "excerpt": "laws that are equally precise and accurate, with equal scope and so on, then obviously you'd prefer the simpler one. Um but simplicity normally goes along uh with less precision, less specificity. And this is clearly true in the case two of the cases you mentioned. Uh so, in the case of quantum mechanics, the supposition of waveicles, or whatever you call them, in quantum quantum electrodynamics, leads to predictions"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move is delivered by Millican after the floor changes to him and explicitly follows up Swinburne's preceding account of simplicity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-predictive-content"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-simplicity-raises-probability-subject-to-data",
+            "pro-theism-predicts-order-life-consciousness"
+          ],
+          "components": [
+            {
+              "componentId": "con-generality-lacks-precision-component-01",
+              "targetMoveId": "pro-simplicity-raises-probability-subject-to-data",
+              "text": "Whether the fit-qualified simplicity rule gives theism sufficiently precise and discriminating predictive content.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-generality-lacks-precision-component-02",
+              "targetMoveId": "pro-theism-predicts-order-life-consciousness",
+              "text": "Whether broad expectations of order and consciousness are precise enough to support comparative probability.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply accepts simplicity among equally precise hypotheses but argues that scientific complexity earns support through accurate predictions that the general theistic hypothesis lacks."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Precision, specificity, accuracy, and equal scope are distinguished consistently and the comparison is expressly conditional."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The claim is calibrated to an evidential disadvantage rather than an assertion that general hypotheses are never explanatory."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may predict broad classes of phenomena probabilistically without numerical precision.",
+          "decisiveQualification": "Broad expectations still need likelihood contrast with relevant alternatives to carry comparative evidential weight."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central predictive-content requirement at the top of its tier."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly contacts the fit qualification and the outstanding demand for discriminating predictions."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes preference for simpler laws when precision, accuracy, and scope are equal, then stresses that simplicity commonly reduces specificity and contrasts this with precise scientific predictions.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-soul-evolution-brain-fit",
+        "sectionId": "section-divine-coherence-human-nature",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "A separately created immaterial soul fits poorly with a long evolutionary history and the development of a resource-intensive human brain if the soul itself performs human thinking.",
+        "sourceSpan": {
+          "startEvent": 1326,
+          "endEvent": 1359,
+          "excerpt": "long physical process of 13.8 billion years, if ultimately the bit that matters just gets put in there by divine fiat, um you know, when a suitable body comes along and the soul gets created. So, there needs to be some story about how the soul and the and the matter fit together that's going to make sense of the the evolution of our enormous brains, and why they are needed if the soul by itself, the immaterial soul, could do the thinking"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The argument remains in Millican's continuous turn and identifies Swinburne's soul theory before drawing its evolutionary consequences.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-human-nature"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-theism-predicts-order-life-consciousness"
+          ],
+          "components": [
+            {
+              "componentId": "con-soul-evolution-brain-fit-component-01",
+              "targetMoveId": "pro-theism-predicts-order-life-consciousness",
+              "text": "Whether the proposed account of consciousness coheres with evolutionary history and the explanatory role of the physical brain.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "It directly demands an account of why costly evolved brains are needed if an independently inserted immaterial soul performs the thinking."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional criticism clearly identifies separate soul creation, thinking, brain cost, and evolutionary development."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move asks for a missing fit story rather than claiming evolution logically excludes an immaterial soul."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The brain may mediate sensory input, action, development, or soul-body interaction even if the soul is the subject of thought.",
+          "decisiveQualification": "The theory must explain why those functions require the observed scale and evolutionary cost of the brain."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly occupies the subsidiary human-nature bridge without directly resolving the broader motion."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "The evolutionary-fit demand is clear and concrete, although the selected pro move does not fully articulate the soul theory challenged."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts 13.8 billion years of physical development with divine insertion of a soul and asks why enormous brains evolved if the soul can think.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-posthumous-compensation-for-sufferers",
+        "sectionId": "section-suffering-compensation",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "God's omnipotence permits posthumous compensation, and God's obligation as creator requires giving sufferers an afterlife when necessary to ensure that each person's total life is good overall.",
+        "sourceSpan": {
+          "startEvent": 1474,
+          "endEvent": 1525,
+          "excerpt": "creator, to give them a life after death. And that follows from his omnipotence that he will be able to do this. And it will be a compensation in the sense that their total life will be a good life. And um uh I think most lives are in themselves on Earth uh worth living and uh on balance. But if there are lives that aren't, and some of the ones you mentioned might be in that category, then God uh God's obligation"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Swinburne advances the argument in his concluding response, with the speaker turn remaining continuous until Millican resumes.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-moral-evidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-suffering-prevents-agency"
+          ],
+          "components": [
+            {
+              "componentId": "pro-posthumous-compensation-for-sufferers-component-01",
+              "targetMoveId": "con-suffering-prevents-agency",
+              "text": "Whether God can meet obligations toward victims whose earthly suffering or premature death deprives them of a good life.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the victim-centered demand by invoking omnipotent posthumous compensation and a creator's obligation to make each total life good overall."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The obligation and total-life standard are clear, while what makes compensation adequate remains materially under-specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Omnipotence supports ability, but the claimed creator obligation and adequacy of total-life compensation require additional moral argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some harms involve non-fungible lost opportunities that later welfare cannot replace.",
+          "decisiveQualification": "Making a total life good overall does not by itself show that permitting each severe earthly deprivation was morally permissible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The afterlife and obligation are asserted theological-moral premises without independent support or comparison to non-compensable loss."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central moral-evidence bridge through a proposed victim-centered reconciliation."
+          },
+          "representationalCharity": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It directly answers what God could owe sufferers, though it does not explain how compensation restores the particular lost agency."
+          }
+        },
+        "evidenceBasis": "The excerpt says omnipotence enables life after death and creator obligation requires it where necessary so that the person's total life is good.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-compensation-cannot-restore-development",
+        "sectionId": "section-suffering-compensation",
+        "side": "con",
+        "speaker": "Peter Millican",
+        "moveKind": "reply",
+        "proposition": "Posthumous compensation neither follows from a terrible earthly life nor restores the lost embodied opportunity of children killed prematurely to develop moral character.",
+        "sourceSpan": {
+          "startEvent": 1531,
+          "endEvent": 1592,
+          "excerpt": "liability for things to go horribly wrong. But the trouble is those starving babies or those who were eliminated in gas chambers when they were still children didn't get the chance to develop that character. So, I don't see how it's possible, logically possible, if you like, for a God to make their lives worthwhile posthumously. Um So, and that seems to me to be a serious moral"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Millican begins a new and clearly attributed turn by identifying Swinburne's immediately preceding life-after-death response as his target.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-moral-evidence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-posthumous-compensation-for-sufferers",
+            "pro-good-god-creates-free-rational-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-compensation-cannot-restore-development-component-01",
+              "targetMoveId": "pro-posthumous-compensation-for-sufferers",
+              "text": "Whether later benefits can compensate for the specific lost opportunity of prematurely killed children to develop moral character.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-compensation-cannot-restore-development-component-02",
+              "targetMoveId": "pro-good-god-creates-free-rational-agents",
+              "text": "Whether the freedom rationale applies to victims prevented from developing consequential agency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies non-restorable developmental opportunity as the defect in total-life compensation and states that later benefit does not show how those earthly lives become worthwhile."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The reply precisely distinguishes compensation, worthwhile life, and irretrievable embodied moral development."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The irreversibility point is strong, though saying posthumous repair is logically impossible goes beyond what the brief argument establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An afterlife might include continued development and goods sufficient to make the whole life worthwhile.",
+          "decisiveQualification": "Continued development would not retroactively supply the particular earthly opportunity or automatically justify its deprivation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central moral-evidence bridge by attacking the principal compensation reply."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the decisive adequacy inference and connects it to the original freedom rationale."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that children killed by starvation or in gas chambers lost the chance to develop character and questions how posthumous benefit could make that loss worthwhile.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains beyond the individual move ratings, response links, importance judgments, and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No independent residual completion criterion is satisfied.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "None beyond consequences already captured at move level.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden contact judgments"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any burden-completion finding independently."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains beyond the individual move ratings, response links, importance judgments, and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No independent residual completion criterion is satisfied.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "None beyond consequences already captured at move level.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden contact judgments"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any burden-completion finding independently."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-explanatory-modes",
+        "title": "Personal, physical, and purposive explanation",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-personal-explanation-as-genuine-mode",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "pro-defense-of-personal-causal-category",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-purposive-systems-beyond-persons",
+                "importance": 2,
+                "score": 84
+              },
+              {
+                "moveId": "con-background-fit-personal-causation",
+                "importance": 2,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-simplicity-probability",
+        "title": "Simplicity as a guide to explanatory probability",
+        "weightPercent": 27,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-simplicity-fewer-postulates",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "pro-simplicity-raises-probability-subject-to-data",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-multiple-simplicity-criteria",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "con-qualified-infinity-complexity",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-prediction-general-features",
+        "title": "Predicting order, life, consciousness, and agency",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-theism-predicts-order-life-consciousness",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-simple-creator-nonspecific",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "con-generality-lacks-precision",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-divine-coherence-human-nature",
+        "title": "Divine attributes, physical coherence, and human nature",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-good-god-creates-free-rational-agents",
+                "importance": 3,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-divine-time-relativity",
+                "importance": 2,
+                "score": 85
+              },
+              {
+                "moveId": "con-soul-evolution-brain-fit",
+                "importance": 2,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-suffering-compensation",
+        "title": "Suffering, moral freedom, and posthumous compensation",
+        "weightPercent": 23,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-posthumous-compensation-for-sufferers",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 91,
+            "moves": [
+              {
+                "moveId": "con-suffering-prevents-agency",
+                "importance": 3,
+                "score": 92
+              },
+              {
+                "moveId": "con-compensation-cannot-restore-development",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.27,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      },
+      "con": {
+        "weightedSectionMean": 88.49,
+        "burdenCompletionAdjustment": 0,
+        "score": 88
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 17,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
