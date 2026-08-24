@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-verification-validation-recovery-1",
+  "status": "batch-08-single-empty-segment-validation-overlay-frozen-not-executed",
+  "frozenAt": "2026-08-24T03:50:03Z",
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "boundedFirstRecoveryAuthorized": true
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/diagnosis.json",
+    "sha256": "cdc745205e409b8e1e32c93bb606e793af906b2b748ed19411e55879d690ca83"
+  },
+  "preservedExecutionError": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/validation-recovery-1/execution-error.json",
+    "sha256": "ba029750ed4d552cca6b597a881d451b9c349c26cca6af17af28465f7c92a991"
+  },
+  "correctedStage": {
+    "path": "scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs",
+    "preimageSha256": "b51659884ba6f280cee1975b7878e88c156d3d68d20dd18843f7e9e8db52e272",
+    "correctedSha256": "1027a99328eeeaee46ceaa8ef5b8bdfd4f0b26f98b275444874ba3fe77958624"
+  },
+  "correctionBoundary": {
+    "validationOverlay": "omit the one authenticated empty segment from an in-memory validation copy",
+    "stageSourceAuthentication": "authenticate the original stage blob against both frozen manifests and separately authenticate the corrected live stage",
+    "transcriptsChanged": false,
+    "modelExecutionChanged": false,
+    "requestsChanged": false,
+    "thresholdsChanged": false,
+    "speakerReferencesChanged": false,
+    "costRecordsChanged": false
+  },
+  "executionPolicy": {
+    "correctionAttempts": 1,
+    "completeSixTranscriptCohortReplays": 1,
+    "ordinaryRetries": 0,
+    "paidCalls": 0,
+    "audioAccess": false,
+    "modelContexts": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "commit-and-push-frozen-correction-then-activate-and-run-one-complete-six-transcript-validation-replay"
+}

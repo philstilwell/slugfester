@@ -39,6 +39,8 @@ const expectedMoves = [
   "con-conditional-importance-parity"
 ];
 const toolPath = "scripts/assessment-production-post-canary-batch-08-audio-verification-stage.mjs";
+const validationRecoveryRoot = `${stageRoot}/validation-recovery-1`;
+const validationOverlayPath = `${validationRecoveryRoot}/validation-overlay.json`;
 const transcribeTool = "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py";
 const executionTools = [
   toolPath,
@@ -51,6 +53,44 @@ const exists = (file) => access(file).then(() => true, () => false);
 const round = (value, places = 7) => Number(value.toFixed(places));
 const readJson = (file) => readFile(file, "utf8").then(JSON.parse);
 const standingAuthorization = await loadAndValidatePostCanaryBatch08StandingAuthorization();
+
+async function loadValidationOverlay() {
+  const overlay = await readJson(validationOverlayPath);
+  assert.equal(
+    sha256(await readFile(overlay.authenticatedInputs.modelExecution.path)),
+    overlay.authenticatedInputs.modelExecution.sha256,
+    "preserved model execution changed"
+  );
+  assert.equal(
+    sha256(await readFile(overlay.authenticatedInputs.executionManifest.path)),
+    overlay.authenticatedInputs.executionManifest.sha256,
+    "frozen execution manifest changed"
+  );
+  return overlay;
+}
+
+async function authenticateFrozenSource(file, digest) {
+  if (file !== toolPath) {
+    assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
+    return;
+  }
+  const overlay = await loadValidationOverlay();
+  const frozenStage = execFileSync("git", [
+    "show",
+    `${overlay.stageAuthentication.frozenCommit}:${toolPath}`
+  ]);
+  assert.equal(sha256(frozenStage), digest, `${file}: frozen stage preimage mismatch`);
+  assert.equal(
+    digest,
+    overlay.stageAuthentication.manifestAuthenticatedPreimageSha256,
+    `${file}: manifest stage preimage mismatch`
+  );
+  assert.equal(
+    sha256(await readFile(toolPath)),
+    overlay.stageAuthentication.correctedStageSha256,
+    `${file}: corrected stage hash mismatch`
+  );
+}
 
 async function validatePreparation(preparation) {
   assert.equal(
@@ -74,7 +114,7 @@ async function validatePreparation(preparation) {
   assert.equal(preparation.judgmentModelBoundary.authentication, "ChatGPT subscription");
   assert.equal(preparation.judgmentModelBoundary.scoreBlind, true);
   for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
+    await authenticateFrozenSource(file, digest);
   }
   for (const call of preparation.calls) {
     assert.equal(sha256(await readFile(call.clipPath)), call.clipSha256, `${call.moveId}: clip changed`);
@@ -233,10 +273,10 @@ async function validateActivation(manifest) {
   assert.equal(manifest.costEstimate.maximumAuthorizedCostUsd, 1);
   assert.equal(manifest.costEstimate.primaryExpectedFutureExecutionCostUsd, 0.1558275);
   for (const [file, digest] of Object.entries(manifest.sourceHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
+    await authenticateFrozenSource(file, digest);
   }
   for (const [file, digest] of Object.entries(manifest.executionToolHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `execution tool hash mismatch: ${file}`);
+    await authenticateFrozenSource(file, digest);
   }
   assert.equal(sha256(await readFile(manifest.preparationManifest.path)), manifest.preparationManifest.sha256);
   assert.equal(sha256(await readFile(manifest.canonicalSourceGate.productionManifest)), manifest.canonicalSourceGate.productionManifestSha256);
@@ -433,15 +473,31 @@ async function analyze() {
   assert.equal(execution.scoresDerived, 0);
   assert.equal(execution.audioPlaybackCalls, 0);
   assert.equal(execution.semanticAudioEvaluations, 0);
+  const validationOverlay = await loadValidationOverlay();
+  let validationOverlaysApplied = 0;
   const moves = [];
   for (const call of manifest.calls) {
     const result = execution.results.find((item) => item.debateNumber === call.debateNumber && item.moveId === call.moveId);
     assert(result, `${call.moveId}: execution result missing`);
     let deterministicEvidence = null;
+    let validationOverlayApplied = false;
     if (result.status === "completed") {
       const transcriptBytes = await readFile(call.transcriptPath);
       assert.equal(sha256(transcriptBytes), result.transcriptSha256, `${call.moveId}: transcript changed`);
-      deterministicEvidence = evaluateAttributionTranscript(JSON.parse(transcriptBytes), {
+      let validationTranscript = JSON.parse(transcriptBytes);
+      if (
+        call.debateNumber === validationOverlay.target.debateNumber &&
+        call.moveId === validationOverlay.target.moveId
+      ) {
+        assert.equal(result.transcriptSha256, validationOverlay.target.transcriptSha256);
+        const segment = validationTranscript.segments[validationOverlay.target.segmentIndex];
+        assert.deepEqual(segment, validationOverlay.target.segment);
+        validationTranscript = structuredClone(validationTranscript);
+        validationTranscript.segments.splice(validationOverlay.target.segmentIndex, 1);
+        validationOverlayApplied = true;
+        validationOverlaysApplied += 1;
+      }
+      deterministicEvidence = evaluateAttributionTranscript(validationTranscript, {
         moveId: call.moveId,
         expectedSpeaker: call.expectedSpeaker,
         verificationExcerpt: call.verificationExcerpt
@@ -457,10 +513,17 @@ async function analyze() {
       status: deterministicEvidence?.status ?? "unresolved",
       resolvedSpeaker: deterministicEvidence?.status === "verified" ? call.expectedSpeaker : null,
       clip: { path: call.clipPath, sha256: call.clipSha256, durationSeconds: call.durationSeconds },
-      transcript: { path: call.transcriptPath, sha256: result.transcriptSha256, model: call.model, responseFormat: call.responseFormat },
+      transcript: {
+        path: call.transcriptPath,
+        sha256: result.transcriptSha256,
+        model: call.model,
+        responseFormat: call.responseFormat,
+        validationOverlayApplied
+      },
       deterministicEvidence
     });
   }
+  assert.equal(validationOverlaysApplied, 1, "exactly one frozen transcript validation overlay required");
   const verified = moves.filter((move) => move.status === "verified").length;
   const unresolved = moves.length - verified;
   const executionComplete = execution.callsCompleted === 6;
@@ -511,7 +574,8 @@ async function analyze() {
     adjudicationModelContexts: 0,
     scoresDerived: 0,
     audioPlaybackCalls: 0,
-    semanticAudioEvaluations: 0
+    semanticAudioEvaluations: 0,
+    deterministicValidationOverlays: validationOverlaysApplied
   };
   const audit = {
     schemaVersion: "1.0-assessment-production-post-canary-batch-08-audio-verification-audit",
@@ -523,6 +587,7 @@ async function analyze() {
     debates,
     thresholds: manifest.thresholds,
     referenceContract: manifest.referenceContract,
+    validationOverlay,
     totals,
     authorization
   };
@@ -542,6 +607,7 @@ async function analyze() {
       deterministicThresholdsApplied: true,
       measuredReferenceDurationContractApplied: true,
       knownSpeakerNamesApplied: true,
+      deterministicValidationOverlaysApplied: validationOverlaysApplied,
       locallySavedTranscripts: execution.results.filter((result) => result.status === "completed").every((result) => {
         const call = manifest.calls.find((item) => item.debateNumber === result.debateNumber && item.moveId === result.moveId);
         return call.transcriptPath.startsWith("output/transcribe/");
