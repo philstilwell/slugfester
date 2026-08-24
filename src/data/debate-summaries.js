@@ -52,11 +52,11 @@ export const debateSummaries = [
     "number": "02",
     "title": "William Lane Craig vs Christopher Hitchens: Does God Exist?",
     "label": "Christian theism and atheism",
-    "date": "2026-05-28",
+    "date": "2026-08-23",
     "duration": "2 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0tYm41hb48o",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, suffering, and religion's record make Christian theism more plausible than atheism?",
-    "summary": "Craig presents a cumulative case for Christian theism; Hitchens argues the evidence is insufficient and religion adds moral and explanatory costs.",
+    "summary": "Craig advances a cumulative Christian case; Hitchens presses evidential burdens, inferential gaps, suffering, religious authority, and secular alternatives with greater consistency.",
     "sides": {
       "pro": {
         "name": "Christian theist",
@@ -70,30 +70,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 74
+      "pro": 78,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Opening burden and standards"
+        "title": "Burden of Proof and Religious Epistemology"
       },
       {
-        "title": "Cosmology and fine-tuning"
+        "title": "Cosmic Origin, Fine-Tuning, and Design"
       },
       {
-        "title": "Evolution and retrospective fit"
+        "title": "Objective Morality and Its Foundation"
       },
       {
-        "title": "Morality and obligation"
+        "title": "Resurrection, Miracles, and the Christian Bridge"
       },
       {
-        "title": "Resurrection and miracles"
+        "title": "Suffering, Evil, and Benevolent Providence"
       },
       {
-        "title": "Religion and moral risk"
-      },
-      {
-        "title": "Suffering and final hope"
+        "title": "Religion's Record, Authority, and Human Meaning"
       }
     ]
   },
@@ -2545,11 +2542,11 @@ export const debateSummaries = [
     "number": "56",
     "title": "Mike Huemer vs Matt Lutz: Is Morality Real?",
     "label": "Moral realism and error theory",
-    "date": "2026-06-03",
+    "date": "2026-08-23",
     "duration": "1 hr 42 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=-w2auo-Y5Wg",
     "motion": "Are there objective moral facts, and can moral knowledge be justified by appearances rather than only by best-explanation evidence?",
-    "summary": "Huemer defends objective moral facts through phenomenal conservatism, ordinary moral judgments, and rationalist a priori knowledge; Lutz argues for moral error theory, Humean reasons, and explanationist epistemology.",
+    "summary": "Huemer defends objective morality through evaluative judgment and defeasible appearances; Lutz counters with desire-based reasons, projectivism, and explanationist standards for knowledge.",
     "sides": {
       "pro": {
         "name": "Moral realism",
@@ -2563,24 +2560,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 79
+      "pro": 88,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Openings and burdens"
+        "title": "Objective Value and the Error-Theoretic Burden"
       },
       {
-        "title": "Humean reasons and self-conception"
+        "title": "Desires, Reasons, and Rational Authority"
       },
       {
-        "title": "Would error theory change life?"
+        "title": "Appearances, Explanation, and Epistemic Foundations"
       },
       {
-        "title": "Explanationism versus intuitionism"
+        "title": "Moral Belief, Emotion, and Projection"
       },
       {
-        "title": "A priori knowledge and morality"
+        "title": "A Priori Knowledge, Concepts, and Analyticity"
       }
     ]
   },
@@ -3566,11 +3563,11 @@ export const debateSummaries = [
     "number": "78",
     "title": "William Albrecht vs Graham Oppy: Resurrection and Ancient Christianity",
     "label": "Resurrection and ancient Christianity",
-    "date": "2026-06-18",
+    "date": "2026-08-23",
     "duration": "1 hr 03 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YzvidaGO3m4",
     "motion": "Do Paul's letters, Gospel transmission, hostile witnesses, and early church structures make the bodily resurrection and Catholic continuity historically credible?",
-    "summary": "Albrecht argues that Paul, early sources, and institutional continuity support bodily resurrection and Catholic orthodoxy; Oppy presses gaps in transmission, diversity, and source survival.",
+    "summary": "Albrecht builds cumulative resurrection and ecclesial-continuity arguments, while Oppy presses visionary alternatives, transmission uncertainty, selective preservation, and early Christian plurality.",
     "sides": {
       "pro": {
         "name": "Catholic resurrection case",
@@ -3584,24 +3581,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 81
+      "pro": 76,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Paul and Bodily Resurrection"
+        "title": "Pauline Evidence for Bodily Resurrection and Appearances"
       },
       {
-        "title": "Sources and Transmission"
+        "title": "Gospel Sources and Textual Transmission"
       },
       {
-        "title": "Orthodoxy Before Nicaea"
+        "title": "Hostile Witnesses and Documentary Preservation"
       },
       {
-        "title": "Hierarchy and Continuity"
+        "title": "Early Orthodoxy, Diversity, and Ecclesial Structure"
       },
       {
-        "title": "Schism and Religious Families"
+        "title": "Apostolic Continuity, Reform, and Later Christian Divisions"
       }
     ]
   },
@@ -3657,11 +3654,11 @@ export const debateSummaries = [
     "number": "80",
     "title": "Josh Rasmussen vs Joe Schmid: The Argument from Limits",
     "label": "Argument from limits",
-    "date": "2026-06-18",
+    "date": "2026-08-23",
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Lt1wN10yOY4",
     "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
-    "summary": "Rasmussen treats arbitrary limits in fundamental reality as theoretical costs pointing toward a perfect or quasi-perfect foundation; Schmid argues that the move remains dependent on wider theory comparison and contested bridge premises.",
+    "summary": "Rasmussen develops arbitrary limits into qualified perfection; Schmid’s holistic, axiological, symmetry, and necessity objections leave the God-like conclusion substantially underdetermined.",
     "sides": {
       "pro": {
         "name": "Limits argument",
@@ -3676,26 +3673,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 84,
-      "con": 88
+      "con": 90
     },
     "sections": [
       {
-        "title": "Tool and Target"
+        "title": "Explanatory Status of Arbitrary Limits"
       },
       {
-        "title": "Limits and Theory Comparison"
+        "title": "Holistic Theory Comparison and Principle Symmetry"
       },
       {
-        "title": "Defaults and Parity"
+        "title": "Foundational Greatness and Value Grounding"
       },
       {
-        "title": "Greatness Bridge"
+        "title": "Explained Limits and Arbitrariness Inheritance"
       },
       {
-        "title": "Perfection and Trinity Pressure"
-      },
-      {
-        "title": "Model Costs and Close"
+        "title": "God-Like Perfection and Divine Models"
       }
     ]
   },
@@ -4571,11 +4565,11 @@ export const debateSummaries = [
     "number": "100",
     "title": "Michael Jones vs Matt Dillahunty: Reason to Believe in God?",
     "label": "Emergent mind and evidential burden",
-    "date": "2026-07-16",
+    "date": "2026-08-23",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yGxSf4zJAso",
     "motion": "Do digital physics, cosmic consciousness, and introspective idealism provide good reasons to believe in a necessary immaterial mind, or do those arguments fail demonstrability, probability, and burden-of-proof standards?",
-    "summary": "Jones argues that mind-like information and consciousness best explain reality; Dillahunty argues that the case labels mysteries, narrows possibilities, and fails to reach probable God.",
+    "summary": "Jones assembled a cumulative idealist explanation, while Dillahunty’s sharper probability, underdetermination, and burden challenges exposed substantial gaps between suggestive evidence and theism.",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -4589,27 +4583,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 84
+      "pro": 73,
+      "con": 91
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Digital Physics, Quantum Measurement, and Observer Dependence"
       },
       {
-        "title": "Mystery And Explanation"
+        "title": "Consciousness, Brain Dependence, and Top-Down Causation"
       },
       {
-        "title": "Consciousness Evidence"
+        "title": "Introspective Idealism and Observer-Independent Physical Reality"
       },
       {
-        "title": "Demonstrability And Idealism"
+        "title": "Abduction, Demonstrability, Probability, and Burden of Proof"
       },
       {
-        "title": "Information And Collapse"
-      },
-      {
-        "title": "God Label And Scope"
+        "title": "From an Unknown Foundation to a Necessary Mind or God"
       }
     ]
   },
@@ -5179,11 +5170,11 @@ export const debateSummaries = [
     "number": "113",
     "title": "Sharon Dirckx vs Stephen Woodford: Why Doesn't God Stop Suffering?",
     "label": "God and suffering",
-    "date": "2026-07-28",
+    "date": "2026-08-23",
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=PQetkofYXvI",
     "motion": "Does the reality of suffering make belief in an all-powerful, all-loving God unreasonable, or does the Christian framework of a broken world, divine presence, justice, and future healing make better sense of it?",
-    "summary": "Dirckx argues Christianity gives suffering moral, emotional, and hopeful meaning; Woodford argues suffering fits naturalism and strains theism.",
+    "summary": "Dirckx defended broken creation, objective dignity, divine solidarity, and restoration; Woodford pressed evidential challenges about permitted suffering, selective healing, and salvation.",
     "sides": {
       "pro": {
         "name": "Christian suffering framework",
@@ -5197,30 +5188,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 82
+      "pro": 79,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Problem Framed"
+        "title": "Suffering, naturalism, and the coherence of a broken creation"
       },
       {
-        "title": "Natural Mechanisms"
+        "title": "Evolution, objective morality, and human dignity"
       },
       {
-        "title": "Moral History"
+        "title": "Divine presence, permitted evil, and future restoration"
       },
       {
-        "title": "Greater Goods"
+        "title": "Unanswered prayer and evidence of divine healing"
       },
       {
-        "title": "Hope And Presence"
-      },
-      {
-        "title": "Prayer And Healing"
-      },
-      {
-        "title": "Hell And Justice"
+        "title": "Judgment, forgiveness, freedom, and sincere unbelief"
       }
     ]
   },
@@ -5567,11 +5552,11 @@ export const debateSummaries = [
     "number": "121",
     "title": "Richard Dawkins vs John Lennox: Has Science Buried God?",
     "label": "Science, miracles, and God",
-    "date": "2026-07-29",
+    "date": "2026-08-23",
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OVEuQg_Mglw",
     "motion": "Has science buried God, or can Christian theism still explain rationality, design, miracles, morality, and fine-tuning?",
-    "summary": "Lennox argues that science points beyond reductionist naturalism to a personal Logos and historical resurrection; Dawkins argues that God is an unnecessary, unexplained, and anti-scientific addition to hard scientific questions.",
+    "summary": "Lennox defended theism's explanatory compatibility and Christian implications; Dawkins more consistently pressed evolutionary alternatives, creator complexity, anthropic selection, and independent evidential burdens.",
     "sides": {
       "pro": {
         "name": "Christian science compatibility",
@@ -5586,29 +5571,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 76,
-      "con": 83
+      "con": 82
     },
     "sections": [
       {
-        "title": "Which God?"
+        "title": "Rationality, Minds, and Cosmic Intelligibility"
       },
       {
-        "title": "Rational Minds"
+        "title": "Design, Origins, and Fine-Tuning"
       },
       {
-        "title": "Design And Mechanism"
+        "title": "Scientific Explanation, Divine Agency, and Miracles"
       },
       {
-        "title": "DNA And Gaps"
+        "title": "Christian Revelation, Resurrection, and Redemption"
       },
       {
-        "title": "Miracles And History"
-      },
-      {
-        "title": "Meaning And Morality"
-      },
-      {
-        "title": "Anthropic Closing"
+        "title": "Meaning, Morality, Hope, and Justice"
       }
     ]
   },
@@ -8247,11 +8226,11 @@ export const debateSummaries = [
     "number": "180",
     "title": "Shabir Ally vs Michael Licona: Did Jesus Rise from the Dead?",
     "label": "The bodily resurrection of Jesus",
-    "date": "2026-08-01",
+    "date": "2026-08-23",
     "duration": "2 hr 36 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=eoiScvG3Emo",
     "motion": "Does the historical evidence establish that Jesus physically rose from the dead?",
-    "summary": "Licona argues that Jesus' death, empty tomb, and appearances are best explained by bodily resurrection; Ally questions the death and physicality claims, proposing Gospel development and possible divine rescue.",
+    "summary": "Licona presented a cumulative bodily-resurrection inference; Ally narrowly prevailed by sustaining uncertainty about death, physical appearances, empty-tomb implications, and narrative development.",
     "sides": {
       "pro": {
         "name": "Jesus bodily rose from the dead",
@@ -8265,24 +8244,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 92,
-      "con": 84
+      "pro": 83,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Historical core and explanatory burden"
+        "title": "Historical Burden and Best-Explanation Method"
       },
       {
-        "title": "Early creeds and a physical body"
+        "title": "Death by Crucifixion"
       },
       {
-        "title": "Crucifixion, death, and survival"
+        "title": "Burial and the Empty Tomb"
       },
       {
-        "title": "Gospel development and physical appearances"
+        "title": "Appearances and Bodily Physicality"
       },
       {
-        "title": "Religious priors and the best explanation"
+        "title": "Early Tradition and Narrative Development"
       }
     ]
   },
@@ -8338,11 +8317,11 @@ export const debateSummaries = [
     "number": "182",
     "title": "James White vs Shabir Ally: Sin and Salvation in the Qur'an and the Bible",
     "label": "Sin, forgiveness, and salvation",
-    "date": "2026-08-01",
+    "date": "2026-08-23",
     "duration": "2 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ee9c45dSHiY",
     "motion": "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
-    "summary": "White argues God's holiness requires justice satisfied by Christ's voluntary substitution, with works following secure salvation; Ally argues God directly forgives repentant people and that Pauline atonement departs from earlier biblical teaching.",
+    "summary": "White grounds forgiveness in Christ’s law-satisfying atonement; Ally defends direct, equitable mercy and accountable deeds while challenging inherited guilt and biblical continuity.",
     "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
@@ -8357,27 +8336,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 91,
-      "con": 88
+      "pro": 79,
+      "con": 79
     },
     "sections": [
       {
-        "title": "Direct forgiveness and moral accounting"
+        "title": "Human Sin, Moral Capacity, and Inherited Condition"
       },
       {
-        "title": "The fall, original sin, and human ability"
+        "title": "Divine Holiness, Justice, and Direct Forgiveness"
       },
       {
-        "title": "Justice, sacrifice, and voluntary substitution"
+        "title": "Christ's Identity, Sacrifice, and the Atonement Mechanism"
       },
       {
-        "title": "Faith, law, and good works"
+        "title": "Grace, Good Deeds, and the Ground of Salvation"
       },
       {
-        "title": "Paul and Gospel development"
-      },
-      {
-        "title": "Scriptural reliability and equal standards"
+        "title": "Scriptural Continuity, Development, and Authority"
       }
     ]
   },
@@ -8844,11 +8820,11 @@ export const debateSummaries = [
     "number": "193",
     "title": "John Dominic Crossan vs Michael Licona: Who Was the Historical Jesus?",
     "label": "Gospels, miracles, identity, and resurrection",
-    "date": "2026-08-01",
+    "date": "2026-08-23",
     "duration": "2 hr 10 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=p_7bQlh8uWc",
     "motion": "What can historians verify about Jesus, and do the sources support his divine identity and bodily resurrection?",
-    "summary": "Crossan reads Jesus through anti-imperial metaphor and communal resurrection; Licona argues that early, eyewitness-rooted sources support Jesus's divine claims, miracles, and bodily resurrection.",
+    "summary": "Crossan defended a kingdom-centered, metaphorical resurrection account, while Licona pressed early-source, divine-identity, and bodily-transformation evidence through disciplined historical distinctions.",
     "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
@@ -8863,24 +8839,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 89,
-      "con": 92
+      "pro": 82,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Historical horizons and interpretive method"
+        "title": "Historical Method and Access to Jesus"
       },
       {
-        "title": "Do the Gospels preserve eyewitness testimony?"
+        "title": "Gospel Witness, Redaction, and Independence"
       },
       {
-        "title": "Jesus's kingdom and divine identity"
+        "title": "Jesus's Kingdom Mission and Divine Identity"
       },
       {
-        "title": "Can historians adjudicate miracle claims?"
+        "title": "Miracles and Extraordinary-Event Inference"
       },
       {
-        "title": "Bodily event or resurrection metaphor?"
+        "title": "Bodily and Metaphorical Resurrection"
       }
     ]
   },
