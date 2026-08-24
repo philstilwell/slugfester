@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-08-debate-08-publication-repair-0",
+  "title": "Batch 8 Debate 08 publication repair packet 0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-08-debate-08-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-08-debate-08-publication-resumption-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "08"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "wood-shermer-god-exist-2022"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "con-morality-flourishing-reciprocity",
+        "pro-morality-divine-image-status"
+      ],
+      "properties": {
+        "con-morality-flourishing-reciprocity": {
+          "type": "string",
+          "minLength": 880
+        },
+        "pro-morality-divine-image-status": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

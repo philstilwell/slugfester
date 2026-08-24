@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-08-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-08-publication-resumption-repair-1",
+  "contextIndex": 0,
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "debateNumber": "08",
+  "debateId": "wood-shermer-god-exist-2022",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-08.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-08.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-morality-flourishing-reciprocity.critique",
+      "moveProse.pro-morality-divine-image-status.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 1
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-morality-flourishing-reciprocity.critique",
+      "moveId": "con-morality-flourishing-reciprocity",
+      "originalCritique": "Strongest feature: The reply advances beyond moral genealogy by offering recognizable reasons involving suffering, reciprocity, promises, cooperation, and sentient flourishing that can guide criticism and moral improvement. Principal limitation: It asserts flourishing as a starting point without fully explaining why that value has objective binding authority or how competing interests and candidate goods should be adjudicated. Live burden: The secular case must formulate an explicit normative bridge from shared vulnerability, agency, and impartial reasons to obligation, then show how it handles conflict without covertly assuming its conclusion. Locked score: The strong band reflects substantial contact with the demand for secular reasons, central relevance, practical evidential support, and generally charitable engagement, while retaining a material metaethical gap concerning authority, implicit qualification, unresolved priority rules, and the distinction between widely endorsed values and categorical requirements.",
+      "originalWords": 133,
+      "originalCharacters": 1031,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-morality-flourishing-reciprocity",
+        "sectionId": "section-objective-morality",
+        "side": "con",
+        "speaker": "Michael Shermer",
+        "moveKind": "reply",
+        "proposition": "Love, promise-keeping, reciprocity, social cooperation, and the survival and flourishing of sentient beings provide secular reasons for binding moral conduct without divine commands.",
+        "importance": 3,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "97:58",
+        "sourceSpan": {
+          "startEvent": 2740,
+          "endEvent": 2797,
+          "startMs": 5878880,
+          "endMs": 5995639
+        },
+        "sourceExcerpt": "wrote about in my book the moral arc is due primarily to humans reasoning their way through finding these moral principles that work based on what based on the survival and flourishing of sentient beings we are sentient beings as jeremy bentham said the question about animal animal rights is not can they think or can they talk but can they suffer the suffering of other sentient",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-secular-morality"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-morality-cause-versus-justification",
+            "pro-science-cognitive-reliability"
+          ],
+          "components": [
+            {
+              "componentId": "con-morality-flourishing-reciprocity-component-01",
+              "targetMoveId": "pro-morality-cause-versus-justification",
+              "text": "Supply secular normative reasons, rather than merely causal origins, for treating conduct as right, wrong, or binding.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-morality-flourishing-reciprocity-component-02",
+              "targetMoveId": "pro-morality-cause-versus-justification",
+              "text": "Explain why survival and flourishing of sentient beings should function as an authoritative moral standard.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-morality-flourishing-reciprocity-component-03",
+              "targetMoveId": "pro-science-cognitive-reliability",
+              "text": "Show how human reasoning can discover and improve moral principles under a naturalistic account.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Shermer moves beyond causal wiring by invoking reciprocity, promise-keeping, suffering, cooperation, and reasoned principles. These are candidate secular reasons, but the foundational authority of flourishing is asserted rather than fully justified.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "This high partial answer contacts the decisive demand for reasons while leaving the metaethical bridge from flourishing facts to binding obligation compressed."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This high partial answer contacts the decisive demand for reasons while leaving the metaethical bridge from flourishing facts to binding obligation compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The secular moral criteria are identifiable and stable, but how they combine or resolve conflicts is left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The examples strongly support practical secular reasons, while objective bindingness requires a further normative bridge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The theistic objection asks why flourishing and reciprocity are obligatory rather than merely widely desired.",
+          "decisiveQualification": "Shared sentience, vulnerability, reasons, and reciprocal constraints can provide more than a causal genealogy even if metaethical grounding remains disputed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central secular-morality bridge through flourishing, reciprocity, and reason."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply squarely supplies normative considerations but only implicitly handles the strongest authority question."
+          }
+        },
+        "evidenceBasis": "The span grounds moral progress in reasoning about principles serving sentient survival and flourishing, including the morally relevant capacity to suffer.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-morality-divine-image-status.critique",
+      "moveId": "pro-morality-divine-image-status",
+      "originalCritique": "Strongest feature: The reply directly presses both the authority of flourishing as an asserted starting point and the basis for assigning distinctive or equal moral status within a wider sentient community. Principal limitation: Invoking creation in God's image supplies a label for status without independently defending the premise, specifying its normative content, or showing unique superiority over secular alternatives. Live burden: The argument must connect divine image to determinate obligations noncircularly and explain why sentience, agency, vulnerability, and impartial reasons cannot ground comparable protections or wider animal concern. Locked score: The strong band reflects high relevance, clear contact with foundational and status questions, and a coherent challenge to secular grounding, while reserving material deductions for limited positive warrant, missing qualification, incomplete uniqueness, and an overly simple portrayal of flourishing as human preference.",
+      "originalWords": 132,
+      "originalCharacters": 987,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-morality-divine-image-status",
+        "sectionId": "section-objective-morality",
+        "side": "pro",
+        "speaker": "David Wood",
+        "moveKind": "reply",
+        "proposition": "Appeals to flourishing and autonomy do not by themselves justify those norms, whereas creation in God's image supplies humans with a distinctive moral status.",
+        "importance": 3,
+        "finalScore": 76,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "117:26",
+        "sourceSpan": {
+          "startEvent": 3312,
+          "endEvent": 3342,
+          "startMs": 7046719,
+          "endMs": 7111920
+        },
+        "sourceExcerpt": "terms of another moral principle which remains undefended apart from just you know sort of again stomping the foot and saying this is the way things are individuals have autonomy over themselves and dr schermer said surviving the surviving and flourishing of sentient beings is is the starting point now why prefer humans in this equation there are many sentient beings apart from",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-moral-grounding"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-morality-flourishing-reciprocity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-morality-divine-image-status-component-01",
+              "targetMoveId": "con-morality-flourishing-reciprocity",
+              "text": "Justify why survival, flourishing, autonomy, or suffering should possess binding normative authority rather than being asserted starting points.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-morality-divine-image-status-component-02",
+              "targetMoveId": "con-morality-flourishing-reciprocity",
+              "text": "Explain why humans receive distinctive or equal moral status within a broader class of sentient beings.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-morality-divine-image-status-component-03",
+              "targetMoveId": "con-morality-flourishing-reciprocity",
+              "text": "Defend creation in God's image as a non-circular and independently warranted ground of moral status.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Wood directly challenges the undefended normative starting point and the preference for humans among sentient beings, then offers divine image as a status ground. The positive grounding premise itself receives little defense.",
+          "responsivenessWithinClass": {
+            "value": 77,
+            "rationale": "This is a high partial answer because it contacts both foundational authority and status, while leaving the positive divine-image warrant underdeveloped."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a high partial answer because it contacts both foundational authority and status, while leaving the positive divine-image warrant underdeveloped."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The contrast is clear, while the content and implications of distinctive divine-image status remain only implicitly specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The secular view needs a normative defense, but the move does not show that divine-image status uniquely or noncircularly supplies it."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular morality can assign equal status through sentience, agency, vulnerability, and impartial reasons rather than species preference.",
+          "decisiveQualification": "The account must explain conflicts among sentient beings and why those properties yield categorical duties."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The reply accurately identifies an asserted starting point, while evidence or argument for divine-image status and its normative consequences is limited."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central theistic moral-grounding bridge and attacks the competing secular bridge."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The move identifies a real status question but frames the secular account as preferring humans more straightforwardly than its sentience criterion requires."
+          }
+        },
+        "evidenceBasis": "The span challenges flourishing and autonomy as undefended principles, asks why humans are preferred among sentient beings, and invokes divine-image status.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
