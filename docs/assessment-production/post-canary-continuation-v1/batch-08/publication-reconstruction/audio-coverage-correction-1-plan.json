@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-audio-coverage-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "frozen-batch-08-publication-audio-coverage-correction-1",
+  "frozenAt": "2026-08-24T13:13:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "correctionLevel": 1,
+  "files": [
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-08-publication.mjs",
+      "preimageSha256": "b0b11cde7c7aa11d465e6b72ca0231eabde1c08e20fc790a7eac2f6333f87e4d",
+      "proposedSha256": "c73c0ead00864c2e729e3c1e19af71a796db0b197d651839743b3db66633dc3c",
+      "replacement": { "from": "context.audioVerifiedMoves, 0) === 5", "to": "context.audioVerifiedMoves, 0) === 6" }
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-08-publication-preparation.mjs",
+      "preimageSha256": "961e9809513631b1fef7a20d89ffca8bdd2ce58e8b8b166f12b50df37eec1537",
+      "proposedSha256": "e33eb4a0b8c4d5ce419f4a5f15e1b8c2892d65eb4e78e8a112a2e22e06235e80",
+      "replacements": [
+        { "from": "manifest.totals.audioVerifiedMoves, 5", "to": "manifest.totals.audioVerifiedMoves, 6" },
+        { "from": "assert.equal(audioVerifiedMoves, 5);", "to": "assert.equal(audioVerifiedMoves, 6);" }
+      ]
+    }
+  ],
+  "controls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "modelExecution": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "acceptedAudioEvidenceImmutable": true
+  },
+  "nextAuthorizedAction": "apply-the-three-count-only-assertion-corrections-and-run-one-corrected-publication-preparation-preview"
+}

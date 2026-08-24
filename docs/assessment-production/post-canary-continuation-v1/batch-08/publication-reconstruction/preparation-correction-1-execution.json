@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-preparation-correction-execution",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "passed-batch-08-publication-local-manual-correction-preview-stopped-at-distinct-audio-coverage-check",
+  "executedAt": "2026-08-24T13:12:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "correction": {
+    "plan": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/preparation-correction-1-plan.json",
+    "planSha256": "f6e9fd80e22ab09fc2785414071a74638b6943d2da3c8478c66477a0be125c5b",
+    "createdManual": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/manual.md",
+    "createdManualSha256": "502537b7c8e0c8bca8b2fd025d6855428c8a276bd0e501cf4963c864e0344451",
+    "manualCorrectionPassed": true
+  },
+  "correctedPreview": {
+    "attempts": 1,
+    "missingManualFailureResolved": true,
+    "stoppedAtDistinctFailure": "Batch 8 audio-verification coverage changed",
+    "preparationArtifactsWritten": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "diagnose-and-freeze-the-distinct-stale-audio-coverage-expectation"
+}

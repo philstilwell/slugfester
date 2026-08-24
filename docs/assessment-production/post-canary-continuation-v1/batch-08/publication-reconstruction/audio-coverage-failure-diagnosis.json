@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-audio-coverage-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "preserved-batch-08-publication-preparation-stale-audio-coverage-expectation-diagnosed",
+  "diagnosedAt": "2026-08-24T13:12:30Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-validation-stale-frozen-count",
+    "actualAudioVerifiedMoves": 6,
+    "staleExpectedAudioVerifiedMoves": 5,
+    "error": "Batch 8 audio-verification coverage changed"
+  },
+  "diagnosis": {
+    "underlyingProblem": "The builder and its directly coupled test retained Batch 7's five-move audio coverage expectation after the Batch 8 accepted audio audit and final ledger correctly froze six moves.",
+    "writableFiles": 2,
+    "writableAssertions": 3,
+    "semanticContentChanged": false,
+    "acceptedAudioEvidenceChanged": false,
+    "scoresChanged": false,
+    "modelContextsExecuted": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-08-publication.mjs": "b0b11cde7c7aa11d465e6b72ca0231eabde1c08e20fc790a7eac2f6333f87e4d",
+    "scripts/test-assessment-production-post-canary-batch-08-publication-preparation.mjs": "961e9809513631b1fef7a20d89ffca8bdd2ce58e8b8b166f12b50df37eec1537",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/manual.md": "502537b7c8e0c8bca8b2fd025d6855428c8a276bd0e501cf4963c864e0344451"
+  },
+  "nextAuthorizedAction": "freeze-and-apply-one-bounded-audio-coverage-count-correction"
+}
