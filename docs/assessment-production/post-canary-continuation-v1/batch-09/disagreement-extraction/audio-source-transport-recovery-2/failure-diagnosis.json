@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-audio-source-transport-recovery-2-failure-diagnosis",
+  "status": "preserved-batch-09-debate-170-progressive-transport-http-403-final-recovery-failure-diagnosed-stop-required",
+  "batchNumber": 9,
+  "failedRecovery": {
+    "plan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-2/correction-plan.json",
+      "sha256": "bee2abdd9a43a3463f52606d4ad05e2bf2dac7fd0edaf71b7a18ee5453ab9fc5"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-2/execution-activation.json",
+      "sha256": "eea86c1faed9c13155564be1c2f684e900e2c59c37f88ff21a8ebc33a2463592"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-2/execution.json",
+      "sha256": "befa7cecbd8cf2d713189e573253d7fd77bc31d7b63683b772fbe26c98fa8e3a"
+    },
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "downloadsCompleted": 0,
+    "sourcesInstalled": 0,
+    "clipsCreated": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "debateNumber": "170",
+    "sourceVideoId": "HoTILnpd3q8",
+    "category": "progressive-youtube-source-transport-http-403-forbidden",
+    "preservedError": "unable to download video data: HTTP Error 403: Forbidden",
+    "transport": "tv-android-vr-web-progressive-webm-http-chunk-transport",
+    "downloadFileCreated": false,
+    "normalizedSourceCreated": false,
+    "sourceInstalled": false,
+    "unattemptedSources": ["19", "183"]
+  },
+  "protectedEvidence": {
+    "path": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.failed-attempt-1.mp3",
+    "bytes": 354,
+    "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    "preservedByteIdentically": true,
+    "failedRecoveryOutputsReused": 0
+  },
+  "recoveryAccounting": {
+    "originalSourceAttempt": {
+      "consumed": true,
+      "outcome": "partial-file-normalization-probe-failure"
+    },
+    "boundedRecovery1": {
+      "consumed": true,
+      "outcome": "requested-hls-format-unavailable"
+    },
+    "recursiveRecovery2": {
+      "consumed": true,
+      "outcome": "http-403-forbidden"
+    },
+    "authorizedRecoveryLevelsRemaining": 0,
+    "thirdFailureOfSameUnderlyingProblem": true
+  },
+  "diagnosis": {
+    "canonicalSourceIdentityChanged": false,
+    "speakerIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "acceptedJudgmentsChanged": false,
+    "scoresChanged": false,
+    "protectedEvidenceChanged": false,
+    "paidServiceUsed": false,
+    "downstreamAudioVerificationBlocked": true,
+    "standingAuthorizationStopRuleTriggered": "thirdFailureOfSameUnderlyingProblemBlocks"
+  },
+  "authorization": {
+    "diagnosisValidationCommitAndPush": true,
+    "furtherSourceAttempt": false,
+    "thirdLevelRecovery": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextRequiredAction": "obtain-explicit-user-authorization-for-any-third-level-debate-170-source-recovery-or-alternative-source-route"
+}
