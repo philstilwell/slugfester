@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-repair-1",
+  "status": "batch-08-debate-88-publication-repair-and-validation-passed-awaiting-nine-context-resumption",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "sources": {
+    "preparationSha256": "fb50ac96c516c2d3568ffc8fefa276630a19c9a32fa9acba123fe52d53674949",
+    "activationSha256": "05d2ff198df71a940ea1d0f7f49ace36123823583ae44fd7c697d8e8d55e5c04",
+    "executionSha256": "7baa1b35d9a4aa44575db36c9c6562670bdeb520ff5a86c2bf8281fb26d513f9"
+  },
+  "gate": {
+    "contextsPlanned": 1,
+    "contextsAttempted": 1,
+    "contextsPassed": 1,
+    "contextsFailed": 0,
+    "contextsUnattempted": 0,
+    "correctedFields": 2,
+    "repairedDebates": 1,
+    "completeDebate88ValidationPassed": true,
+    "completeTenDebateCohortReplayPassed": false,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "immutableFieldsChanged": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "validation": {
+    "status": "passed",
+    "debateNumber": "88",
+    "moves": 20,
+    "critiques": 20,
+    "minimumCritiqueCharacters": 945,
+    "tags": 0,
+    "quoteExactSourceMatches": 2,
+    "overallCommentarySides": 2,
+    "noveltyItems": 16,
+    "introducedItems": 2,
+    "newArguments": 4,
+    "aiExtensionSides": 2,
+    "calculatedScoresAuthoredByModel": 0,
+    "lockedScoresUnchanged": true
+  },
+  "authorizedTransformations": [
+    {
+      "field": "representativeQuotes.pro.text",
+      "contextIndex": 0,
+      "operation": "replace-explicitly-authorized-invalid-field",
+      "before": "it could be a tiny bit of evidence",
+      "after": "there is some evidence for God because of moral agents"
+    },
+    {
+      "field": "representativeQuotes.con.text",
+      "contextIndex": 0,
+      "operation": "replace-explicitly-authorized-invalid-field",
+      "before": "you haven't specified what sort of god",
+      "after": "I need a more specific theism"
+    }
+  ],
+  "failureMessage": null,
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "nineContextResumptionPreparation": true,
+    "nineContextResumptionExecution": false,
+    "publicationCompilationPreparation": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-nine-unattempted-batch-08-publication-resumption-contexts"
+}
