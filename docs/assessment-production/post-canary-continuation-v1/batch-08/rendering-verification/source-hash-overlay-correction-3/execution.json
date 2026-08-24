@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay-correction-3-execution",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "third-level-debate-88-desktop-rendering-correction-passed",
+  "executedAt": "2026-08-24T15:28:55.320Z",
+  "context": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "authenticatedInputs": {
+    "executionActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/execution-activation.json",
+      "sha256": "b509afe909eb7ff4248f1e66d59b34c0c389ee25798e5ca34c77ec97b8c3bae4"
+    },
+    "originalActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/execution-activation.json",
+      "sha256": "5e6a8b6756abbedccb6de9935ba98f961014e249be0f4f95e986c1d0fc4191ae"
+    },
+    "sourceHashOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/source-hash-overlay.json",
+      "sha256": "1731fa67863c0990f8c39a866309979fa1af58b4ffe1c58e5924ba056b48fbd3"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/packets/debate-88.json",
+      "sha256": "08fb1c4fcbf63cfda9e5f25baf37085c3ac07f5c553684b415cd774bcf5c9e18"
+    },
+    "runner": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-browser-runner.mjs",
+      "sha256": "cc3d54380fee848cfcfc94953d7301d780547acf00827b47d24488b8998d0ac0"
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-verification.mjs",
+      "sha256": "e5ad3ca15cf3cc88ac01c3490ed7b663c2e5100fb18edd678e324f859e710fe5"
+    }
+  },
+  "effectiveSourceHashMap": {
+    "construction": "unchanged-original-activation-sourceHashes-plus-one-frozen-overlay-entry-in-memory",
+    "persisted": false,
+    "overlaidPath": "src/data/debates.js",
+    "overlaidSha256": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459"
+  },
+  "attempt": {
+    "attemptNumber": 1,
+    "attemptsMaximum": 1,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "timeoutMilliseconds": 15000,
+    "settleMilliseconds": 3000,
+    "result": "accepted"
+  },
+  "acceptedEvidence": {
+    "result": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop.json",
+      "sha256": "4026b4741b84ea022ff8ce295cc5503b09d394455a261270ff20515ad8c197e6"
+    },
+    "collapsedScreenshot": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-collapsed.jpg",
+      "sha256": "73baed07fb367a503976c2ab41d0f98c09fedce7e322f828d1a8a6639c94a26d"
+    },
+    "openScreenshot": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-open.jpg",
+      "sha256": "f4daf996e80db61c5224a9945d5e9473e7de3b01c42d00f89f08ec643631b6f1"
+    }
+  },
+  "validationSummary": {
+    "status": "passed-rendering-viewport",
+    "requiredBooleanChecksPassed": 38,
+    "requiredBooleanChecksTotal": 38,
+    "runtimeFailures": 0,
+    "protectedMutations": 0,
+    "pointerAndKeyboardChromiumMajor": 151,
+    "pointerAndKeyboardTabsClosed": true
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "freeze-accepted-correction-and-resume-exactly-nineteen-unattempted-viewports"
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay-correction-3-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "third-level-rendering-source-hash-correction-accepted",
+  "analyzedAt": "2026-08-24T15:29:21Z",
+  "context": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "outcome": {
+    "passed": true,
+    "requiredBooleanChecksPassed": 38,
+    "requiredBooleanChecksTotal": 38,
+    "runtimeConsoleErrors": 0,
+    "runtimeConsoleWarnings": 0,
+    "runtimePageErrors": 0,
+    "runtimeFailedRequests": 0,
+    "candidateChanged": false,
+    "productionDataChanged": false,
+    "applicationCodeChanged": false,
+    "stylesheetChanged": false
+  },
+  "finding": "The separately authenticated one-key source-hash overlay corrected only the diagnosed omission. The unchanged runner then accepted the exact Debate 88 desktop viewport without changing validator meaning or protected content.",
+  "controlsObserved": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "originalPreparationByteIdentical": true,
+    "originalActivationByteIdentical": true,
+    "packetByteIdentical": true,
+    "runnerByteIdentical": true,
+    "validatorByteIdentical": true,
+    "productionDataByteIdentical": true,
+    "priorFailureEvidenceByteIdentical": true
+  },
+  "remainingRenderingCohort": {
+    "acceptedViewports": 1,
+    "unattemptedViewports": 19,
+    "resumeOrder": [
+      "88:mobile",
+      "194:desktop",
+      "194:mobile",
+      "137:desktop",
+      "137:mobile",
+      "08:desktop",
+      "08:mobile",
+      "65:desktop",
+      "65:mobile",
+      "140:desktop",
+      "140:mobile",
+      "156:desktop",
+      "156:mobile",
+      "120:desktop",
+      "120:mobile",
+      "118:desktop",
+      "118:mobile",
+      "145:desktop",
+      "145:mobile"
+    ]
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "resume-nineteen-unattempted-viewports-under-existing-batch-08-standing-authorization"
+}
