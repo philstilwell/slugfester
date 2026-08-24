@@ -1,0 +1,2502 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-08-decomposed-consensus",
+  "debateNumber": "65",
+  "debateId": "donahue-malpass-fine-tuning-god-2026",
+  "moveDisputes": [
+    {
+      "moveId": "pro-core-fine-tuning-likelihood",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-divine-intent-goodness-gap",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-intent-goodness-gap-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Perfect goodness supplies a reliable expectation of benevolent, life-directed creative intention.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-intent-goodness-gap-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether perfect divine goodness makes a life-permitting world materially more expected than it is under naturalism.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-divine-intent-goodness-gap-component-02",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether apparent purposive signs can establish intentional agency more securely than benevolent character.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 62
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-divine-psychology"
+              }
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-likelihood-asymmetry"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 90
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-aggregate-naturalistic-alternatives",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-aggregate-naturalistic-alternatives-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Single-universe naturalism makes life-permitting observations extremely improbable relative to theism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggregate-naturalistic-alternatives-component-02",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "The likelihood comparison must use the aggregate probability of admissible naturalistic explanations rather than one austere rival.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-aggregate-naturalistic-alternatives-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether the naturalistic likelihood denominator must aggregate multiple admissible alternatives rather than use one austere hypothesis.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 80
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-empirical-stalking-horse-reductio",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-divine-intent-goodness-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-empirical-stalking-horse-reductio-component-01",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Tailored naturalistic alternatives must be admitted and aggregated whenever they can accommodate the observation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empirical-stalking-horse-reductio-component-02",
+                  "targetMoveId": "con-divine-intent-goodness-gap",
+                  "text": "Naturalistic agency alternatives can persistently weaken empirical identification of a benevolent divine source.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-divine-intent-goodness-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-empirical-stalking-horse-reductio-component-01",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Whether unrestricted tailoring of naturalistic alternatives illegitimately neutralizes every possible item of empirical theistic evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empirical-stalking-horse-reductio-component-02",
+                  "targetMoveId": "con-divine-intent-goodness-gap",
+                  "text": "Whether deceptive-agent possibilities specifically weaken inferences from purposive signs to benevolent character.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 62
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-full-family-comparison-burden",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 19,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood",
+                "pro-empirical-stalking-horse-reductio"
+              ],
+              "components": [
+                {
+                  "componentId": "con-full-family-comparison-burden-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "The stalking-horse method implausibly eliminates every possible empirical comparison between theism and naturalism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-full-family-comparison-burden-component-02",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "A consequential likelihood claim must specify theism and outperform the full admissible naturalistic family.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood",
+                "pro-empirical-stalking-horse-reductio"
+              ],
+              "components": [
+                {
+                  "componentId": "con-full-family-comparison-burden-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "Whether the legitimate evidential demand is comparative performance across specified theistic and naturalistic hypotheses, not absolute empirical decisiveness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-full-family-comparison-burden-component-02",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether the original likelihood comparison covers every admissible naturalistic version and a sufficiently specified theistic hypothesis.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 75
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 65
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-single-universe-comparison-class",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-full-family-comparison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-single-universe-comparison-class-component-01",
+                  "targetMoveId": "con-full-family-comparison-burden",
+                  "text": "The pro side must specify its theistic hypothesis and the complete naturalistic comparison class.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-single-universe-comparison-class-component-02",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "The comparison must encompass the admissible naturalistic alternatives rather than one selected hypothesis.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-full-family-comparison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-single-universe-comparison-class-component-01",
+                  "targetMoveId": "con-full-family-comparison-burden",
+                  "text": "Whether the pro thesis specifies both its theistic hypothesis and the full class of naturalistic hypotheses it claims to outperform.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-single-universe-comparison-class-component-02",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Whether aliens, simulations, and similar alternatives fall inside the stated single-universe naturalistic comparison class.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 80
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 60,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 63
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-agent-intention-underdetermination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-empirical-stalking-horse-reductio",
+                "pro-single-universe-comparison-class"
+              ],
+              "components": [
+                {
+                  "componentId": "con-agent-intention-underdetermination-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "Empirical evidence can meaningfully discriminate theism from broad naturalistic agency alternatives.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-intention-underdetermination-component-02",
+                  "targetMoveId": "pro-single-universe-comparison-class",
+                  "text": "Classical perfect-being theism has enough predictive content to outperform naturalistic alternatives.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-empirical-stalking-horse-reductio",
+                "pro-single-universe-comparison-class"
+              ],
+              "components": [
+                {
+                  "componentId": "con-agent-intention-underdetermination-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "Whether empirical events can favor general theism when the intentions of both divine and naturalistic agents remain unspecified.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-intention-underdetermination-component-02",
+                  "targetMoveId": "pro-single-universe-comparison-class",
+                  "text": "Whether specifying broad worldview classes supplies sufficiently determinate likelihoods for particular intentional events.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 85
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 77
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 68,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-goodness-predicts-revelation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-agent-intention-underdetermination",
+                "con-divine-intent-goodness-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-goodness-predicts-revelation-component-01",
+                  "targetMoveId": "con-agent-intention-underdetermination",
+                  "text": "General theism and general alienism predict a particular resurrection equally poorly because both leave agent intentions unknown.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-goodness-predicts-revelation-component-02",
+                  "targetMoveId": "con-divine-intent-goodness-gap",
+                  "text": "Evidence of intentional agency does not securely identify benevolent purposes.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-agent-intention-underdetermination",
+                "con-divine-intent-goodness-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-goodness-predicts-revelation-component-01",
+                  "targetMoveId": "con-agent-intention-underdetermination",
+                  "text": "Whether perfect divine goodness supplies a non-arbitrary likelihood bridge to revelation and resurrection that generic alien agency lacks.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-goodness-predicts-revelation-component-02",
+                  "targetMoveId": "con-divine-intent-goodness-gap",
+                  "text": "Whether benevolent character can provide predictive content beyond bare intentional agency.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-conditional-prior-asymmetry",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-agent-intention-underdetermination",
+                "con-aggregate-naturalistic-alternatives",
+                "con-full-family-comparison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-01",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "The probabilities of tailored naturalistic alternatives must be aggregated against theism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-02",
+                  "targetMoveId": "con-full-family-comparison-burden",
+                  "text": "The pro case must compare specified theism with the complete admissible naturalistic family.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-03",
+                  "targetMoveId": "con-agent-intention-underdetermination",
+                  "text": "Theistic agency is too unconstrained to enjoy a meaningful likelihood or prior advantage.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-agent-intention-underdetermination",
+                "con-aggregate-naturalistic-alternatives",
+                "con-full-family-comparison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-01",
+                  "targetMoveId": "con-full-family-comparison-burden",
+                  "text": "Whether the full comparison should weight specific augmented-naturalistic rivals by their conditional share within general naturalism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-02",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Whether aggregating life-directed alternatives gives them substantial prior probability within the broader naturalistic family.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-conditional-prior-asymmetry-component-03",
+                  "targetMoveId": "con-agent-intention-underdetermination",
+                  "text": "Whether perfect-being theism has a sufficiently large conditional share within general design possibilities.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 67
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-prior-ambiguity"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-intrinsic-probability"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 57,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 58
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-persistent-empirical-underdetermination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 15,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-empirical-stalking-horse-reductio",
+                "pro-goodness-predicts-revelation",
+                "pro-single-universe-comparison-class"
+              ],
+              "components": [
+                {
+                  "componentId": "con-persistent-empirical-underdetermination-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "It is implausible that broad naturalistic alternatives prevent every possible empirical adjudication between theism and naturalism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-persistent-empirical-underdetermination-component-02",
+                  "targetMoveId": "pro-goodness-predicts-revelation",
+                  "text": "Religious context and divine goodness generate an empirical likelihood advantage over generic naturalistic agents.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-persistent-empirical-underdetermination-component-03",
+                  "targetMoveId": "pro-single-universe-comparison-class",
+                  "text": "A sufficiently specified theism can empirically outperform all single-universe naturalistic alternatives.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 79
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-empirical-stalking-horse-reductio",
+                "pro-single-universe-comparison-class"
+              ],
+              "components": [
+                {
+                  "componentId": "con-persistent-empirical-underdetermination-component-01",
+                  "targetMoveId": "pro-empirical-stalking-horse-reductio",
+                  "text": "Whether broad rival compatibility removes comparative evidential support rather than merely preventing logically decisive proof.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-persistent-empirical-underdetermination-component-02",
+                  "targetMoveId": "pro-single-universe-comparison-class",
+                  "text": "Whether simulation and science-fiction hypotheses fall within a sufficiently broad naturalistic class to remain empirically compatible.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 64
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 73
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-simulation-regress-objection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-persistent-empirical-underdetermination"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-simulation-regress-objection-component-01",
+                  "targetMoveId": "con-persistent-empirical-underdetermination",
+                  "text": "Simulation possibilities can accommodate nearly any observation and thereby sustain empirical underdetermination.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-simulation-regress-objection-component-02",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Simulation belongs in the aggregated naturalistic alternative space that may neutralize theism's advantage.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-aggregate-naturalistic-alternatives",
+                "con-persistent-empirical-underdetermination"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-simulation-regress-objection-component-01",
+                  "targetMoveId": "con-persistent-empirical-underdetermination",
+                  "text": "Whether simulation hypotheses genuinely explain fine-tuning or merely transfer the same explanatory demand to base reality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-simulation-regress-objection-component-02",
+                  "targetMoveId": "con-aggregate-naturalistic-alternatives",
+                  "text": "Whether simulation deserves material weight within the aggregated naturalistic rival family.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-rival-space"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-empirical-ambiguity"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 66,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-disjunctive-limits-prior",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-conditional-prior-asymmetry",
+                "pro-single-universe-comparison-class"
+              ],
+              "components": [
+                {
+                  "componentId": "con-disjunctive-limits-prior-component-01",
+                  "targetMoveId": "pro-conditional-prior-asymmetry",
+                  "text": "Perfect-being theism receives a larger conditional prior than any tailored naturalistic specification because it is simpler.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-disjunctive-limits-prior-component-02",
+                  "targetMoveId": "pro-single-universe-comparison-class",
+                  "text": "Classical unlimited theism has an intrinsic advantage over the broad comparison class.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-conditional-prior-asymmetry"
+              ],
+              "components": [
+                {
+                  "componentId": "con-disjunctive-limits-prior-component-01",
+                  "targetMoveId": "pro-conditional-prior-asymmetry",
+                  "text": "Whether an unlimited perfect-being hypothesis retains a simplicity advantage after all specifically limited alternatives are aggregated.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 57,
+          "candidate2": 59,
+          "roundedMeanAfterAdjudication": 58
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-coherence-versus-modesty",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-disjunctive-limits-prior",
+                "con-full-family-comparison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-coherence-versus-modesty-component-01",
+                  "targetMoveId": "con-disjunctive-limits-prior",
+                  "text": "The aggregate prior of all specifically limited alternatives massively exceeds that of a single unlimited hypothesis.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-coherence-versus-modesty-component-02",
+                  "targetMoveId": "con-full-family-comparison-burden",
+                  "text": "Breadth and modesty of the rival family are sufficient to establish its comparative advantage.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-disjunctive-limits-prior"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-coherence-versus-modesty-component-01",
+                  "targetMoveId": "con-disjunctive-limits-prior",
+                  "text": "Whether the modesty gained by aggregating limited alternatives necessarily outweighs the unlimited hypothesis's claimed coherence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 80
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 71,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-naturalistic-ontological-parsimony",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-coherence-versus-modesty",
+                "pro-conditional-prior-asymmetry"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-ontological-parsimony-component-01",
+                  "targetMoveId": "pro-coherence-versus-modesty",
+                  "text": "Coherence may give perfect-being theism an intrinsic-probability advantage over modest disjunctions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-naturalistic-ontological-parsimony-component-02",
+                  "targetMoveId": "pro-conditional-prior-asymmetry",
+                  "text": "Theism is intrinsically simpler and therefore receives a larger conditional prior.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-coherence-versus-modesty",
+                "pro-conditional-prior-asymmetry"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-ontological-parsimony-component-01",
+                  "targetMoveId": "pro-coherence-versus-modesty",
+                  "text": "Whether ontological parsimony supplies an independent naturalistic prior advantage even if modesty or coherence favors theism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-naturalistic-ontological-parsimony-component-02",
+                  "targetMoveId": "pro-conditional-prior-asymmetry",
+                  "text": "Whether theism's claimed simplicity within design offsets its additional supernatural ontology.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 76
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-prior-ambiguity"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-parsimony-balance"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 65,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 68
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-fine-tuning-theory-defect",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-fine-tuning-theory-defect-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Life-permitting parameter values are an objective, highly improbable datum requiring comparative explanation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood"
+              ],
+              "components": [
+                {
+                  "componentId": "con-fine-tuning-theory-defect-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether apparent fine-tuning is an objective universe-level datum rather than evidence that the operative physical theory is defective.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-indeterminate-divine-choice",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-conditional-prior-asymmetry",
+                "pro-core-fine-tuning-likelihood",
+                "pro-goodness-predicts-revelation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-indeterminate-divine-choice-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Perfect divine goodness supplies a defensible expectation that God would create life-permitting conditions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-indeterminate-divine-choice-component-02",
+                  "targetMoveId": "pro-goodness-predicts-revelation",
+                  "text": "Perfect goodness supplies predictive content concerning revelation and valuable conscious life.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-indeterminate-divine-choice-component-03",
+                  "targetMoveId": "pro-conditional-prior-asymmetry",
+                  "text": "Perfect-being theism is sufficiently specified to receive determinate comparative likelihoods and priors.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-core-fine-tuning-likelihood",
+                "pro-goodness-predicts-revelation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-indeterminate-divine-choice-component-01",
+                  "targetMoveId": "pro-core-fine-tuning-likelihood",
+                  "text": "Whether perfect goodness yields a sufficiently determinate expectation that God would choose a life-permitting universe.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-indeterminate-divine-choice-component-02",
+                  "targetMoveId": "pro-goodness-predicts-revelation",
+                  "text": "Whether calling God good fixes particular values, reasons, and intended actions such as creation or revelation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 68
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-divine-intent-goodness-gap",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-aggregate-naturalistic-alternatives",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-aggregate-naturalistic-alternatives",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-single-universe-comparison-class",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-single-universe-comparison-class",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 60,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "con-agent-intention-underdetermination",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-goodness-predicts-revelation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 80,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-goodness-predicts-revelation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-goodness-predicts-revelation",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-goodness-predicts-revelation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-conditional-prior-asymmetry",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 57,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "pro-simulation-regress-objection",
+      "fieldKey": "representationalCharity",
+      "candidate1": 66,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-disjunctive-limits-prior",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 57,
+      "candidate2": 59,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "con-disjunctive-limits-prior",
+      "fieldKey": "representationalCharity",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-coherence-versus-modesty",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 71,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-naturalistic-ontological-parsimony",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "con-naturalistic-ontological-parsimony",
+      "fieldKey": "representationalCharity",
+      "candidate1": 65,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 68
+    },
+    {
+      "moveId": "con-fine-tuning-theory-defect",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-fine-tuning-theory-defect",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "con-indeterminate-divine-choice",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 68
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contacts",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "65",
+      "moves": 16,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 16,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch08IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
