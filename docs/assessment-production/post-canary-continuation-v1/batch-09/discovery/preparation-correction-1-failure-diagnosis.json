@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-discovery-preparation-correction-1-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-09-discovery-preparation-recovery",
+  "status": "batch-09-discovery-preparation-correction-1-failed-second-stale-reporting-expectation-diagnosed",
+  "diagnosedAt": "2026-08-24T17:35:00Z",
+  "failedCommand": "node scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs --write --validated-at 2026-08-24T17:33:00Z",
+  "exitCode": 1,
+  "failure": {
+    "file": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs",
+    "line": 142,
+    "assertion": "manifest.costEstimate.expectedAggregateModelMinutes",
+    "staleExpected": [40, 75],
+    "frozenActual": [32, 62],
+    "classification": "same-underlying-deterministic-validation-harness-stale-batch-expectation"
+  },
+  "preservation": {
+    "manifestByteIdentical": true,
+    "validationArtifactWritten": false,
+    "firstCorrectionPlanSha256": "d83d197ce7f9d92856fef768cff456532009ef2e5951510748425bf2da186136",
+    "firstCorrectedTestSha256": "234a85c5245a123bad349e8c7979d4b7f7ecd748d4950541907505a5b1691839",
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0
+  },
+  "recursiveCorrection": {
+    "authorized": true,
+    "replaceOnlyExpectedAggregateModelMinutes": true,
+    "expectedValue": [32, 62],
+    "authenticateOriginalManifestTestPreimage": true,
+    "authenticateFirstCorrectedTestPreimageSeparately": true,
+    "authenticateRecursiveCorrectedTestSeparately": true,
+    "attemptsMaximum": 1,
+    "furtherRecoveryAuthorizedForThisProblem": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "freeze-and-run-one-final-recursive-discovery-preparation-test-correction"
+}
