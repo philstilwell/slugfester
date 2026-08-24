@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-candidate-census-plan-analysis",
+  "protocolId": "assessment-production-post-canary-batch-09-candidate-sharded-inventory",
+  "status": "post-canary-batch-09-candidate-census-plan-gate-passed-standing-authorization-active-for-side-packet-preparation",
+  "productionContinuation": true,
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "activation": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plan-execution-activation.json",
+  "activationSha256": "da157898fba5152b5b6e2734fa307a82469356d78574aca15c06229fd1cbbdb7",
+  "execution": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plan-model-execution.json",
+  "executionSha256": "9bcd3d770eab0b1d59d8959dcdf67067416b83c61e224980254c137ffa215246",
+  "plans": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-170.json",
+      "outputSha256": "95540f57a37c00df615847d1a1cdf7059a6aef01feb38775b51efba78f17afa6",
+      "canonicalSha256": "e2276b96b55e0e7f16dea68ecd1c7a9eceedfd588faa84301dd25de1bffac110",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-science-origins-reason",
+        "section-morality-worth-purpose",
+        "section-jesus-resurrection-scripture",
+        "section-suffering-hope-justice",
+        "section-epistemic-explanatory-burden"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "134",
+      "debateId": "macdonald-carrier-jesus-mythicism-mimesis-2025",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-134.json",
+      "outputSha256": "5dc12d3231fcea0446748711df6e7190cae0581b2d43c821b3210d4b3bcef39a",
+      "canonicalSha256": "c12518f65c2e2a01578c5fdd656ccb97cbeffcfd516ee58a7b9b7b07d1a7ae47",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "earliest-pauline-evidence",
+        "early-teaching-traditions",
+        "gospel-literary-development",
+        "josephus-and-james",
+        "later-testimony-and-source-method"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "19",
+      "debateId": "harris-oconnor-objective-morality-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-19.json",
+      "outputSha256": "0f8ff5f1523ba7ba985fb0e1da9cdda0a8bd180d22333642ec9d108d4508b564",
+      "canonicalSha256": "89fd3ff78e672b581d3c001ccb321920dfcab69f3ea14010d125a03ce05ccddc",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-semantic-status",
+        "section-landscape-and-instrumental-science",
+        "section-preference-revision",
+        "section-subjective-experience-and-value",
+        "section-practical-sufficiency"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "114",
+      "debateId": "dirckx-goff-consciousness-points-god-2019",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-114.json",
+      "outputSha256": "fca9b4c20ef5f6f9c6a8d986e82db2c15fa08dc99beee7a90b1b123f1a37e97f",
+      "canonicalSha256": "0fc9a34585b5a44772bd5d3830bc727f76927c1441c7e3c23a22ff6ab1ed1d62",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "materialism-science-and-qualia",
+        "mind-ontologies-and-parsimony",
+        "panpsychism-as-a-positive-framework",
+        "combination-evolution-and-complex-minds",
+        "divine-grounding-and-the-inference-to-god"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "166",
+      "debateId": "craig-atkins-does-god-exist-2011",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-166.json",
+      "outputSha256": "5fd7d65ff7a5b758a021b343829df1e05b82d92b6f8a7491c5040b8eecf8d82c",
+      "canonicalSha256": "8ff307902f01b75e6e9d7cdda2c01eaab1915c2824ddf50069ca8512ca227f6a",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "cosmic-origin-causality",
+        "objective-morality-grounding",
+        "resurrection-miracle-inference",
+        "suffering-divine-goodness",
+        "explanatory-method-naturalism"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "89",
+      "debateId": "bignon-oppy-religious-experience-god-2022",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-89.json",
+      "outputSha256": "1e98c305ad3ad48020aebfeee7107393a3445acf1a9e014667446d0a4405e8f1",
+      "canonicalSha256": "bb5dfde04fd9f8d5dc7888a3696bdc39d331a0f241389d782f9fa9b52865ce28",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-providential-pattern-naturalist-coincidence",
+        "section-rational-standard-cumulative-case",
+        "section-rival-experiences-specificity",
+        "section-historical-intellectual-adjudication",
+        "section-selective-providence-hiddenness"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "176",
+      "debateId": "ehrman-peter-williams-gospels-historically-reliable-2018",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-176.json",
+      "outputSha256": "d671db65132752f896519221e8abfb24e8466263c43813f7669e67a171684033",
+      "canonicalSha256": "8cee8c4a1b8d208c2c978ba03ff21114e129dd69b7ec60001e69f18366ef8115",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-provenance-dating",
+        "section-contextual-corroboration",
+        "section-transmission-discrepancies",
+        "section-jesus-portrait-development",
+        "section-method-cumulative-inference"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-183.json",
+      "outputSha256": "87dab601be61d00f08a79717d0c246d04589aa3b91284714c23efa33ec2652b3",
+      "canonicalSha256": "021337be281cd2cff7ca0925cb8b1cfad1d31887c2639caa474e45eed8202fbb",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "ordinary-objectivity-and-realist-foundation",
+        "rival-packages-and-metaphysical-privilege",
+        "noncognitivism-as-a-comparative-alternative",
+        "first-person-deliberation-and-reflective-cases",
+        "theoretical-costs-anomalies-and-stopping-points"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "112",
+      "debateId": "copan-woodford-belief-god-reasonable-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-112.json",
+      "outputSha256": "fcf0b7d2afc77d2418698f9e9486d9aa9c62351b93bc13c62d89e5120d3fbfb6",
+      "canonicalSha256": "2004a8531a765da5d3490c3277481f7bb04a8d1fb065e54119c53a45b94d9792",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 6,
+      "sectionIds": [
+        "cumulative-standard-and-worldview-scope",
+        "cosmic-origins-and-fine-tuning",
+        "consciousness-and-rationality",
+        "moral-grounding-and-human-dignity",
+        "evil-suffering-and-natural-history",
+        "religious-history-revelation-and-reform"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-17.json",
+      "outputSha256": "3231205a0098dd2f923babc3d027343976e4dcd59b20dd8f8cd8cb2fdbfaaf26",
+      "canonicalSha256": "22e40c6020ae1254a38fc7596c9fb94808551736522a894579e0635bd6404ca1",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "fine-tuning-creation",
+        "suffering-lawful-creation",
+        "resurrection-revelation",
+        "morality-beauty",
+        "cumulative-epistemic-case"
+      ],
+      "weightPercentTotal": 100,
+      "validated": true
+    }
+  ],
+  "audit": {
+    "exactPlanCount": 10,
+    "everyPlanSingleAttempt": true,
+    "everyPlanSchemaAndSemanticValidationPassed": true,
+    "everyPlanCanonicalHashReplayed": true,
+    "everyPlanHasOneRoutePerSide": true,
+    "everyPlanHasFourToSixSections": true,
+    "everyPlanWeightsTotalOneHundred": true,
+    "zeroLexicalTokenSourceRowPreserved": true,
+    "exactSourceRowsInjectedOmittedOrRewritten": false,
+    "candidateSelectionPerformed": false,
+    "exactSidePacketsFrozen": 0,
+    "sideSelectorModelsExecuted": 0,
+    "judgmentModelsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "publicationReconstructionPerformed": false,
+    "productionMutations": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plan-execution-activation.json": "da157898fba5152b5b6e2734fa307a82469356d78574aca15c06229fd1cbbdb7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plan-execution-preparation-manifest.json": "c38e449ee2bae5b0315f94c2547e805c59317e7fb792887519e9449b22f7d3e6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/preparation-manifest.json": "013916d6b38280858bbd9a646d8e938bddb7bb80bf820c96efb25a549d99697b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plan-model-execution.json": "9bcd3d770eab0b1d59d8959dcdf67067416b83c61e224980254c137ffa215246",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-170.json": "95540f57a37c00df615847d1a1cdf7059a6aef01feb38775b51efba78f17afa6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-134.json": "5dc12d3231fcea0446748711df6e7190cae0581b2d43c821b3210d4b3bcef39a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-19.json": "0f8ff5f1523ba7ba985fb0e1da9cdda0a8bd180d22333642ec9d108d4508b564",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-114.json": "fca9b4c20ef5f6f9c6a8d986e82db2c15fa08dc99beee7a90b1b123f1a37e97f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-166.json": "5fd7d65ff7a5b758a021b343829df1e05b82d92b6f8a7491c5040b8eecf8d82c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-89.json": "1e98c305ad3ad48020aebfeee7107393a3445acf1a9e014667446d0a4405e8f1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-176.json": "d671db65132752f896519221e8abfb24e8466263c43813f7669e67a171684033",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-183.json": "87dab601be61d00f08a79717d0c246d04589aa3b91284714c23efa33ec2652b3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-112.json": "fcf0b7d2afc77d2418698f9e9486d9aa9c62351b93bc13c62d89e5120d3fbfb6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/plans/debate-17.json": "3231205a0098dd2f923babc3d027343976e4dcd59b20dd8f8cd8cb2fdbfaaf26"
+  },
+  "totals": {
+    "debates": 10,
+    "planContextsAttempted": 10,
+    "acceptedPlans": 10,
+    "exactSidePacketsFrozen": 0,
+    "modelContextsExecuted": 10,
+    "sideSelectorModelContextsExecuted": 0,
+    "judgmentModelContextsExecuted": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "paidServiceCalls": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "exactSidePacketPreparation": false,
+    "sideSelectorExecutionManifestPreparation": false,
+    "sideSelectorModelExecution": false,
+    "inventoryCompilation": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "unexpectedPaidService": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationPreparation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-activate-twenty-exact-batch-09-side-selector-packets-under-standing-authorization"
+}
