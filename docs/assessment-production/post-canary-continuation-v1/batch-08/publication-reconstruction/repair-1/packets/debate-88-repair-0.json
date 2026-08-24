@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-repair-1",
+  "contextIndex": 0,
+  "packetId": "debate-88-repair-0",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "debateNumber": "88",
+  "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/outputs/debate-88.json",
+    "immutableRejectedOutputSha256": "6c97d25b7063f54dca8e5e8a506dabc235e8dff18e156c660fc6f1eb411fcddb",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-88.json",
+    "publicationPacketSha256": "182faeaf7ca5ff418d5612c67455f7d07f54490c44f6d1969fe454ddf28ae9da"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "representativeQuotes.pro.text",
+      "representativeQuotes.con.text"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "representativeQuotes.pro.text",
+      "type": "representative-quote-exact-source-substring",
+      "side": "pro",
+      "sourceMoveId": "pro-counterevidence-increment",
+      "originalValue": "it could be a tiny bit of evidence",
+      "originalValueSha256": "ce56e54f2b71fb851e9644174e52e9bec83cd13be570f31649511c45265271b8",
+      "lockedMove": {
+        "moveId": "pro-counterevidence-increment",
+        "sectionId": "section-counterevidence-expectations",
+        "side": "pro",
+        "speaker": "Zac Sechler",
+        "moveKind": "reply",
+        "proposition": "Even granting suffering, hiddenness, moral disagreement, and moral change as counterevidence, the existence of moral agents can still contribute some evidence for a perfect mind.",
+        "importance": 2,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "33:01",
+        "sourceSpan": {
+          "startEvent": 1004,
+          "endEvent": 1035,
+          "startMs": 1981519,
+          "endMs": 2035279
+        },
+        "sourceExcerpt": "existence of God. And I could say like like for now I could say like sure Matt let's just say that like suffering and like changing morality and disagreement let's say these all count against God. All I'm trying to say right now at this point in the context of debate is say like even if it's like really really really really tiny like there is some evidence for God because of moral agents",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 390
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-counterevidence-accommodation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-full-moral-evidential-profile"
+          ],
+          "components": [
+            {
+              "componentId": "pro-counterevidence-increment-component-01",
+              "targetMoveId": "con-full-moral-evidential-profile",
+              "text": "Even if the named counterevidence counts against God, moral agents may retain a small positive evidential increment.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply concedes the contrary evidence and narrows the claim to a tiny positive increment, but it does not demonstrate the required likelihood inequality.",
+          "responsivenessWithinClass": {
+            "value": 70,
+            "rationale": "It contacts the decisive net-versus-increment distinction, while leaving the central probabilistic warrant unanswered."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the decisive net-versus-increment distinction, while leaving the central probabilistic warrant unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move repeatedly restricts its conclusion to some possibly tiny evidential contribution."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The very limited asserted force matches the limited support and expressly concedes major counterevidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con objection concerns the net evidential profile rather than denying that moral agents could supply any local increment.",
+          "decisiveQualification": "A local increment does not establish that the total moral evidence or overall worldview comparison favors theism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports accommodation of counterevidence at the subsidiary level."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The reply accurately narrows its claim while expressly granting the decisive net-evidence qualification."
+          }
+        },
+        "evidenceBasis": "Sechler grants suffering, changing morality, and disagreement as evidence against God while limiting his claim to a possibly very small positive contribution from moral agents.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "representativeQuotes.con.text",
+      "type": "representative-quote-exact-source-substring",
+      "side": "con",
+      "sourceMoveId": "con-unspecified-likelihood-comparison",
+      "originalValue": "you haven't specified what sort of god",
+      "originalValueSha256": "404a40e05a0507062b59db5ba8da8a4480d9f0f904a02ef8d61679ae17303202",
+      "lockedMove": {
+        "moveId": "con-unspecified-likelihood-comparison",
+        "sectionId": "section-likelihood-method",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The probability of moral agents under generic perfect-mind theism cannot be assessed without specifying the creator's intentions and supplying a justified non-theistic comparison class.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "36:24",
+        "sourceSpan": {
+          "startEvent": 1111,
+          "endEvent": 1137,
+          "startMs": 2184800,
+          "endMs": 2254160
+        },
+        "sourceExcerpt": "also I don't have any we have one universe and we have one set of facts to assess and what we know is that there are conscious agents. Um I have no way of evaluating whether that's more likely on I mean I need a more specific theism. If your proposition is there is a theistic god that wants to create moral agents, well then yes, it's more likely on that hypothesis um than it is",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-probability-comparison"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-counterevidence-increment",
+            "pro-moral-agent-expectedness",
+            "pro-cumulative-observational-fit"
+          ],
+          "components": [
+            {
+              "componentId": "con-unspecified-likelihood-comparison-component-01",
+              "targetMoveId": "pro-counterevidence-increment",
+              "text": "Even a small positive increment cannot be assessed without specifying divine intentions and the non-theistic comparison class.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-unspecified-likelihood-comparison-component-02",
+              "targetMoveId": "pro-moral-agent-expectedness",
+              "text": "Moral perfection alone does not determine the probability of creating moral agents without a more specific intention claim.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-unspecified-likelihood-comparison-component-03",
+              "targetMoveId": "pro-cumulative-observational-fit",
+              "text": "Generic theism is too underspecified to ground the broader asserted likelihood comparisons.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies missing hypothesis specification and baseline probability as defects that block the asserted evidential increment.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It directly addresses the decisive probability inference and states exactly what information is missing."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly addresses the decisive probability inference and states exactly what information is missing."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between generic theism and a creator intending moral agents is precise, as is the baseline objection."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The demand for specified hypotheses and comparison classes is proportionate to a comparative-likelihood assertion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Moral perfection itself may provide qualitative reason to expect concern for moral agents without a detailed intention model.",
+          "decisiveQualification": "Concern does not uniquely fix a decision to create, and qualitative support still requires comparison with a specified alternative."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The argument cleanly distinguishes conditional entailment under a specified intention from unsupported probability under generic theism."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The conceptual likelihood warrant is specific and includes a limiting concession, though it does not offer a formal probability model."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central probability-comparison bridge."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Dillahunty says he cannot evaluate the likelihood from one set of facts and distinguishes generic theism from the specific hypothesis of a God who wants moral agents.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

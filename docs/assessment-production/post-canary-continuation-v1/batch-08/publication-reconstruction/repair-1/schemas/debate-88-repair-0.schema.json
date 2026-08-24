@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-08-publication-repair-0",
+  "title": "Batch 8 publication repair debate-88-repair-0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "packetId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedFields"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-08-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-08-publication-repair-1"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "packetId": {
+      "type": "string",
+      "const": "debate-88-repair-0"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "88"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "sechler-dillahunty-perfect-mind-universe-2022"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedFields": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "value"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "enum": [
+              "representativeQuotes.pro.text",
+              "representativeQuotes.con.text"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "minLength": 3
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-repair-preparation",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-repair-1",
+  "status": "frozen-one-context-batch-08-publication-repair-prepared-not-activated",
+  "frozenAt": "2026-08-24T13:10:00Z",
+  "checkpointCommit": "a6d5efd63a0a531f6df038edcd02865f3b016d91",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "userAuthorization": {
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sourceSha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/failure-diagnosis.json",
+    "sha256": "58760da339192bbba60e6b632c80ba584333828f02331fe23c4d78bd746562c6",
+    "failedFields": 2,
+    "failedCritiques": 0,
+    "failedQuotes": 2,
+    "rejectedDebates": [
+      "88"
+    ]
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "packetId": "debate-88-repair-0",
+      "debateNumber": "88",
+      "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/packets/debate-88-repair-0.json",
+      "packetSha256": "b1df7d13304fcc2dc3aab39d1ec0137676000519a806ffa3ac2087e93baf8646",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/schemas/debate-88-repair-0.schema.json",
+      "schemaSha256": "5561274cd94850b84e5234ae5c341130f86c715a7050bbb29d3746b2dfb3a5db",
+      "writableFields": [
+        "representativeQuotes.pro.text",
+        "representativeQuotes.con.text"
+      ],
+      "writableFieldCount": 2,
+      "packetBytes": 13722,
+      "schemaBytes": 1792,
+      "copiedInputBytes": 30750,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/outputs/debate-88-repair-0.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/validations/debate-88-repair-0.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/provenance/debate-88-repair-0.json"
+    }
+  ],
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/manual.md",
+    "filesPerContext": [
+      "production-workflow.md",
+      "readiness-workflow.md",
+      "output-contract.md",
+      "manual.md",
+      "packet.json",
+      "schema.json"
+    ]
+  },
+  "repairContract": {
+    "rejectedOutputsAreImmutableBases": true,
+    "acceptedOutputsImmutable": true,
+    "writableFields": 2,
+    "writableFieldsMaximumPerPacket": 2,
+    "fieldDisjoint": true,
+    "eachOriginalFieldAcceptedExactlyOnce": true,
+    "scoresImmutable": true,
+    "sourcesImmutable": true,
+    "identitiesImmutable": true,
+    "allUnlistedFieldsImmutable": true,
+    "completeOneDebateValidationRequired": true,
+    "completeTenDebateCohortReplayRequiredAfterNineContextResumption": true
+  },
+  "isolation": {
+    "freshTemporaryWorkingDirectoryPerContext": true,
+    "freshTemporaryCodexHomePerContext": true,
+    "onlyFrozenInputsCopied": true,
+    "oneDebatePerContext": true,
+    "otherDebateOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "rankingAndWinnerComparisonsUnavailable": true,
+    "scoreFieldsUnavailableAsOutputs": true
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.149.0-alpha.4.1",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true,
+    "isolatedTemporaryWorkingDirectories": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "maximumParallelContexts": 1,
+    "schedulerRamp": [
+      1
+    ],
+    "rampPhases": [
+      {
+        "phase": "operational-canary-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "firstRealContextOperationalCanary": true,
+    "stopBeforeExpansionOnRampFailure": true,
+    "continueIndependentContextsWithinStartedSteadyPhaseAfterFailure": true,
+    "deterministicInputOrder": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "separateActivationRequired": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "packetOrSchemaHashMismatchBlocks": true,
+    "preexistingFutureOutputBlocks": true,
+    "separateActivationRequired": true,
+    "nonSubscriptionAuthenticationBlocks": true,
+    "apiKeyVisibilityBlocks": true,
+    "legacyOrOtherDebateVisibilityBlocks": true,
+    "writableFieldExpansionBlocks": true,
+    "modelAuthoredScoreBlocks": true,
+    "invalidOutputBlocksAtFrozenRampBoundary": true,
+    "timeoutBlocksAtFrozenRampBoundary": true,
+    "automaticRetryBlocks": true,
+    "timeoutExtensionBlocks": true,
+    "ordinaryRetryBlocks": true,
+    "paidServiceBlocks": true,
+    "productionMutationBlocks": true,
+    "nextBatchSelectionBlocks": true
+  },
+  "sourceHashes": {
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/analysis.json": "13e80527c6b14a627ec5139ab6c0ac02e620a92086571b1fbbcfd7440a04434c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/execution-activation.json": "0b370ece1f50629e1d5c32fe886af86bf1a6107ed700ba3dbbc2fce30b7c8ed2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/execution-preparation-manifest.json": "7f9107492dfa6132b1cedafe0f151aa8d0c7b6ea442c3fb81c4b1b211d2155f7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/failure-diagnosis.json": "58760da339192bbba60e6b632c80ba584333828f02331fe23c4d78bd746562c6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/model-execution.json": "1c2d2644feed073c1f1a7eda7f065d37b7be39abbcfc423cb4abf020d39b82eb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/outputs/debate-88.json": "6c97d25b7063f54dca8e5e8a506dabc235e8dff18e156c660fc6f1eb411fcddb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-88.json": "182faeaf7ca5ff418d5612c67455f7d07f54490c44f6d1969fe454ddf28ae9da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/manual.md": "b1597c8dd64f70cb5ad02cf2334fcf7faa1eec0e3d5bbf3f435cc8ef78e469c0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "scripts/activate-assessment-production-post-canary-batch-08-publication-repair.mjs": "041f2f603a73cafc9bd7785bce0c72ec2fb96863c40429bdb42785280cce41c2",
+    "scripts/analyze-assessment-production-post-canary-batch-08-publication-repair.mjs": "fef5dfd0b4bdeeb64bf60f854a7c84b70e11577efb0a24a51901291e9b7b3d9a",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs": "e300714ea30b3056864ada9fb1e03be429465c8fd26aeb4c1fb49055a6d908ff",
+    "scripts/lib/assessment-production-post-canary-batch-08-publication-repair.mjs": "5341fa074ae5f64a650fd28c55ac3f354d2aeccdf596690c056260fb99c8ad61",
+    "scripts/lib/assessment-production-post-canary-batch-08-publication-validation.mjs": "3b1bcbd860812afefb2eabf914aac5c13c327c8f301b5fa3f2dc9041ddefd625",
+    "scripts/lib/assessment-production-post-canary-batch-08-publication.mjs": "f92764fe96d6102e80ffa8631ca07c7f78dc54d4f329dc34d810618f2d73849f",
+    "scripts/lib/assessment-production-post-canary-batch-08-standing-authorization.mjs": "4edac4f812f15860515be5a73d097f4f9a34f2043d57bff0f04dff50c6f31b87",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-post-canary-batch-08-publication-repair.mjs": "ed6b0e6bb5cdfaff60763ee1716b881d4058bf495f3d60faa40ce1bdd604c33b",
+    "scripts/run-assessment-production-post-canary-batch-08-publication-repair.mjs": "66648556ae3ba88add6f2c36348f41fcc69c8e80aee439ab584e0ac6cb4885ce",
+    "scripts/test-assessment-production-post-canary-batch-08-publication-repair-preparation.mjs": "53201992c5bc38e0cafe23acb09342dc5bef00f74c7d9d6433651eee4583a72b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/packets/debate-88-repair-0.json": "b1df7d13304fcc2dc3aab39d1ec0137676000519a806ffa3ac2087e93baf8646",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/schemas/debate-88-repair-0.schema.json": "5561274cd94850b84e5234ae5c341130f86c715a7050bbb29d3746b2dfb3a5db"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merge-audit.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/ten-debate-cohort-replay.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/outputs/debate-88-repair-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/validations/debate-88-repair-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/provenance/debate-88-repair-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merged/debate-88.json"
+  ],
+  "artifacts": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/analysis.json",
+    "mergedRoot": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merged",
+    "completeValidation": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merge-audit.json",
+    "cohortReplay": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/ten-debate-cohort-replay.json"
+  },
+  "authorization": {
+    "repairModelExecution": false,
+    "deterministicOutputValidation": false,
+    "deterministicMergeAndCohortReplay": false,
+    "publicationCompilation": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-exactly-one-frozen-batch-08-two-field-publication-repair-context"
+}
