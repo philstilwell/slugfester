@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-08-audio-resolution-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-08-decomposed-consensus",
-  "status": "frozen-batch-08-audio-resolution-execution-prepared-not-active",
+  "status": "frozen-batch-08-audio-resolution-deterministic-replay-authorized",
   "preparedAt": "2026-08-24T12:23:52Z",
-  "activatedAt": null,
+  "activatedAt": "2026-08-24T12:24:20Z",
   "checkpointCommit": "bf86dc34bfc90a481545a790973309b61410deda",
   "productionCanary": false,
   "batchNumber": 8,
@@ -249,12 +249,26 @@
     "cost": "docs/assessment-production/post-canary-continuation-v1/batch-08/audio-verification/resolution-execution/cost-control-analysis.json"
   },
   "authorization": {
-    "correctionExecution": false,
-    "completeCohortReplay": false,
+    "correctionExecution": true,
+    "completeCohortReplay": true,
     "audioAccess": false,
     "modelOrApiCalls": false,
     "paidServiceUse": false,
     "downstreamAdjudicationPreparation": false
   },
-  "nextAuthorizedAction": "activate-one-frozen-batch-08-deterministic-audio-resolution-pass-under-continuation-standing-authorization"
+  "nextAuthorizedAction": "execute-one-frozen-batch-08-deterministic-audio-resolution-pass-and-complete-six-transcript-replay",
+  "userExecutionAuthorization": {
+    "source": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/continuation-standing-authorization.json",
+      "sha256": "2313fd2241e5245afab793f93f4c9f7c8a525c5fb614e122ba20904c31bf8d8b"
+    },
+    "deterministicCorrectionPasses": 1,
+    "completeSixTranscriptCohortReplays": 1,
+    "attempts": 1,
+    "retries": 0,
+    "audioAccess": false,
+    "modelOrApiCalls": false,
+    "paidServiceUse": false,
+    "directIncrementalCostUsdMaximum": 0
+  }
 }
