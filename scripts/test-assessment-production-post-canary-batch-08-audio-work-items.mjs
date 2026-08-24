@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { readFile, readdir } from "node:fs/promises";
 
@@ -14,21 +15,29 @@ const JUDGMENT_ROOT = `${COHORT_ROOT}/independent-judgments`;
 const ROOT = `${COHORT_ROOT}/disagreement-extraction`;
 const workPath = `${ROOT}/audio-work-items.json`;
 const preparationPath = `${ROOT}/audio-work-item-preparation.json`;
+const TEST =
+  "scripts/test-assessment-production-post-canary-batch-08-audio-work-items.mjs";
+const PREIMAGE_RULE =
+  `${ROOT}/audio-work-item-preparation-recovery-1/preimage-reconstruction-rule.json`;
 const EXPECTED_DEBATES = [
-  "73",
-  "36",
-  "38",
-  "97",
-  "141",
-  "06",
-  "168",
-  "135",
-  "143",
-  "169"
+  "88",
+  "194",
+  "137",
+  "08",
+  "65",
+  "140",
+  "156",
+  "120",
+  "118",
+  "145"
 ];
 const EXPECTED_AUDIO = [
-  "97:con-classical-suppression-and-absorption",
-  "97:pro-secularism-theological-descent"
+  "137:con-burial-tomb-source-problems",
+  "137:con-gospel-appearances-low-value",
+  "156:con-conception-dogma-obstructs-abortion-inquiry",
+  "156:con-conscious-capacity-grounds-moral-distinctions",
+  "156:pro-scripture-character-historical-progress",
+  "120:con-conditional-importance-parity"
 ];
 const sha256 = (value) =>
   createHash("sha256").update(value).digest("hex");
@@ -156,7 +165,23 @@ assert.equal(
   "prepare-local-batch-08-source-audio-and-six-frozen-clips-under-standing-authorization"
 );
 
+const preimageRule = JSON.parse(await readFile(PREIMAGE_RULE, "utf8"));
+assert.equal(preimageRule.testPath, TEST);
+assert.equal(
+  preparation.sourceHashes[TEST],
+  preimageRule.preparationAuthenticatedPreimageSha256
+);
+const frozenTestPreimage = execFileSync(
+  "git",
+  ["show", `${preimageRule.frozenCommit}:${TEST}`]
+);
+assert.equal(
+  sha256(frozenTestPreimage),
+  preimageRule.preparationAuthenticatedPreimageSha256
+);
+assert.equal(sha256(await readFile(TEST)), preimageRule.correctedTestSha256);
 for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
+  if (file === TEST) continue;
   assert.equal(
     sha256(await readFile(file)),
     digest,
@@ -220,6 +245,7 @@ assert.doesNotMatch(
 
 assert.deepEqual((await readdir(ROOT)).sort(), [
   "analysis.json",
+  "audio-work-item-preparation-recovery-1",
   "audio-work-item-preparation.json",
   "audio-work-items.json",
   "disagreements"

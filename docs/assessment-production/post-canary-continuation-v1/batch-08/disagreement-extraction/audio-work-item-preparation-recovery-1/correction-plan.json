@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-work-item-preparation-recovery-1",
+  "status": "batch-08-audio-work-item-validation-harness-correction-frozen-not-executed",
+  "frozenAt": "2026-08-24T03:35:58Z",
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/standing-authorization.json",
+    "sha256": "ae02079b7d456a5d75c554348bbb496c5a7edc57dfb2e40536059d41b5bfccc9",
+    "boundedFirstRecoveryAuthorized": true
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation-recovery-1/diagnosis.json",
+    "sha256": "bf9d18235e82939682dd6e26cd0eca89aaeda50d4c1cd63596e365b54c054b5c"
+  },
+  "preservedExecutionError": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation-recovery-1/execution-error.json",
+    "sha256": "eeeac534033cc02071bbdf6cfb9d95aa0619becc0d7be532195a2e37e17e969e"
+  },
+  "validationHarness": {
+    "path": "scripts/test-assessment-production-post-canary-batch-08-audio-work-items.mjs",
+    "preimageSha256": "dea9552c83ba8e6bf01c8d9c26e2dc620d2e0f142c072fe8067033d83852af9e",
+    "correctedSha256": "0f9de21ce81158a85568144d330a21de387404e847cf1474b8aefa9efff690b9"
+  },
+  "authenticatedInputs": {
+    "preparationPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation.json",
+    "preparationSha256": "cd6fc5e1cfeae32b40268f61314d3b51107f8ba714e035e8353de9ce95fd82c1",
+    "workItemsPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-items.json",
+    "workItemsSha256": "b9802fc5366826131cf0238873ee4978418457a3da312165f89d13d3bde94947",
+    "preimageRulePath": "docs/assessment-production/post-canary-continuation-v1/batch-08/disagreement-extraction/audio-work-item-preparation-recovery-1/preimage-reconstruction-rule.json"
+  },
+  "correctionBoundary": {
+    "expectedDebateList": "replace stale Batch 6 values with the ten frozen Batch 8 debate numbers",
+    "expectedAudioQueue": "replace stale Batch 6 values with the six frozen Batch 8 debate/move pairs",
+    "directoryAllowlist": "include the single recovery-1 audit directory created by the preserved failure",
+    "sourceHashAuthentication": "reconstruct the frozen test preimage and separately authenticate the corrected live test",
+    "preparationManifestChanged": false,
+    "workItemsChanged": false,
+    "sourcesChanged": false,
+    "clipWindowsChanged": false,
+    "speakersChanged": false
+  },
+  "executionPolicy": {
+    "validationPasses": 1,
+    "ordinaryRetries": 0,
+    "reruns": 0,
+    "audioAccess": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "commit-and-push-frozen-correction-then-activate-and-run-one-corrected-validation-pass"
+}

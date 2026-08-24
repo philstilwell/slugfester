@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-assessment-production-validation-preimage-reconstruction-rule",
+  "protocolId": "assessment-production-post-canary-batch-08-audio-work-item-preparation-recovery-1",
+  "status": "frozen-batch-08-audio-work-item-validation-preimage-reconstruction-rule",
+  "testPath": "scripts/test-assessment-production-post-canary-batch-08-audio-work-items.mjs",
+  "frozenCommit": "6d7296f5c24c2de46a83118520d1eb18134f05f6",
+  "preparationAuthenticatedPreimageSha256": "dea9552c83ba8e6bf01c8d9c26e2dc620d2e0f142c072fe8067033d83852af9e",
+  "correctedTestSha256": "0f9de21ce81158a85568144d330a21de387404e847cf1474b8aefa9efff690b9",
+  "rule": "Authenticate the exact original test blob from the preserved failure commit against the unchanged preparation-manifest source hash, then separately authenticate the accepted corrected live test before cohort validation.",
+  "preparationManifestChanged": false,
+  "workItemsChanged": false,
+  "audioAccess": false,
+  "modelContexts": 0,
+  "paidServiceCalls": 0
+}
