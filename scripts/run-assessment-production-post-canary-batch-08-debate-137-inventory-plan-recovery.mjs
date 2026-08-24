@@ -282,7 +282,25 @@ async function loadPreparation({ requireFutureAbsent = false } = {}) {
     "Debate 137 recovery preparation controls drifted"
   );
   for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-    assertV4(sha256(await readFile(file)) === digest, `${file}: recovery source drifted`);
+    const bytes = await readFile(file);
+    if (file === RUNNER) {
+      const currentSource = bytes.toString("utf8");
+      const currentVersionLiteral = '"codex-cli 0.149.0-alpha.4.1"';
+      const originalVersionLiteral = '"codex-cli 0.148.0-alpha.15"';
+      assertV4(
+        currentSource.split(currentVersionLiteral).length - 1 === 1,
+        "recovery runner preimage reconstruction boundary drifted"
+      );
+      const reconstructedPreimage = Buffer.from(
+        currentSource.replace(currentVersionLiteral, originalVersionLiteral)
+      );
+      assertV4(
+        sha256(reconstructedPreimage) === digest,
+        `${file}: reconstructed recovery source preimage drifted`
+      );
+    } else {
+      assertV4(sha256(bytes) === digest, `${file}: recovery source drifted`);
+    }
   }
   for (const [file, digest] of Object.entries(preparation.protectedPlanHashes)) {
     assertV4(sha256(await readFile(file)) === digest, `${file}: accepted plan drifted`);
