@@ -1,0 +1,1777 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "140",
+  "debateId": "rhodes-dillahunty-evidence-god-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-classical-theist-grounding-route",
+      "side": "pro",
+      "description": "Establish that finite, composite beings exhibit real essence, form, and received existence, requiring an external self-existent ground that accounts for their unity, diversity, and actuality and can be identified with the God of classical theism.",
+      "successCriteria": "The route succeeds if objective essences and essence-existence composition are established, the required ground is shown to be necessary and external to contingent reality, and the inference reaches classical theism rather than an unspecified cause.",
+      "motionBridge": {
+        "bridgeId": "pro-ground-to-classical-theism",
+        "tier": "motion",
+        "description": "Show that the necessary self-existent ground inferred from contingent composition possesses the identity required by the God of classical theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-objective-essence",
+          "tier": "central",
+          "description": "Establish that form or essence is an objective feature of beings and is not exhausted by physical description, classification, language, or assigned use."
+        },
+        {
+          "bridgeId": "pro-essence-existence-composition",
+          "tier": "central",
+          "description": "Establish a real distinction in finite beings between what they are and the act by which they exist, requiring an account of their conjunction."
+        },
+        {
+          "bridgeId": "pro-composing-ground",
+          "tier": "central",
+          "description": "Show that the unity of diverse parts and the composition of essence with existence require an external composing ground rather than an unexplained natural arrangement."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-metaphysical-method",
+          "tier": "subsidiary",
+          "description": "Justify metaphysical reasoning about reality as a whole as an appropriate method for reaching conclusions unavailable from piecemeal empirical inquiry alone."
+        },
+        {
+          "bridgeId": "pro-revelation-and-experience",
+          "tier": "subsidiary",
+          "description": "Specify how historical claims, reported miracles, prediction, explanatory scope, and personal experience could support identification of the necessary ground with a revealed God."
+        }
+      ]
+    },
+    {
+      "routeId": "con-skeptical-evidential-route",
+      "side": "con",
+      "description": "Show that the proposed essence, composition, and necessary-ground claims lack independent demonstration and do not discriminate a divine agent from physical, descriptive, unknown, or non-agent explanations, leaving the classical-theist conclusion evidentially unwarranted.",
+      "successCriteria": "The route succeeds if the pro premises remain unsupported or adequately explained without additional metaphysical entities, the inference from grounding to agency or classical theism fails, and revelation or experience does not supply independently sufficient evidence.",
+      "motionBridge": {
+        "bridgeId": "con-no-good-evidence-for-classical-theism",
+        "tier": "motion",
+        "description": "Show that the presented considerations do not provide testable, independently supported, and discriminating evidence for the God of classical theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-evidential-standard",
+          "tier": "central",
+          "description": "Require claims about God and metaphysical entities to receive support proportionate to their background plausibility and capable of distinguishing them from alternatives."
+        },
+        {
+          "bridgeId": "con-descriptive-ontology",
+          "tier": "central",
+          "description": "Account for identity, classification, form, and natural arrangement through physical properties, causal continuity, and human abstractions without positing independently existing essences."
+        },
+        {
+          "bridgeId": "con-agency-gap",
+          "tier": "central",
+          "description": "Show that a need for explanation or causal grounding does not by itself establish intentional composition, a personal agent, or the God of classical theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-neutral-inquiry",
+          "tier": "subsidiary",
+          "description": "Begin from observed beings and acknowledged uncertainty without classifying them as created or placing God among live explanations absent independent support."
+        },
+        {
+          "bridgeId": "con-hiddenness-check",
+          "tier": "subsidiary",
+          "description": "Test claims of revelation and divine presence against sincere nonbelief, conflicting interpretation, and the apparent absence of clear universal disclosure."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "method-and-evidential-standards",
+      "title": "Metaphysical Method and Evidential Standards",
+      "weightPercent": 15,
+      "rationale": "Determines whether reasoning about being as a whole can constitute good evidence and what independent support, testability, background knowledge, or explanatory discrimination the motion requires."
+    },
+    {
+      "sectionId": "reality-of-essence-and-form",
+      "title": "Essence, Form, Identity, and Abstraction",
+      "weightPercent": 20,
+      "rationale": "Addresses whether objective essences or forms exist beyond physical properties, causal continuity, classifications, linguistic concepts, intended functions, and changing material arrangements."
+    },
+    {
+      "sectionId": "essence-existence-and-necessary-ground",
+      "title": "Essence-Existence Composition and the Necessary Ground",
+      "weightPercent": 30,
+      "rationale": "Covers the principal affirmative inference from finite beings whose essence and existence are distinct to a self-existent ground, together with objections to its premises and inferential validity."
+    },
+    {
+      "sectionId": "composition-causation-and-agency",
+      "title": "Composition, Causation, and the Inference to Agency",
+      "weightPercent": 20,
+      "rationale": "Tests whether unity, diversity, parts, and observed effects require an external composer or personal cause, or whether that step assumes agency without discriminating evidence."
+    },
+    {
+      "sectionId": "identifying-classical-theism",
+      "title": "From a Ground of Being to Classical Theism",
+      "weightPercent": 15,
+      "rationale": "Examines whether the proposed necessary ground is adequately identified with the God of classical theism through philosophical identity claims, historical revelation, reported miracles, experience, and the challenge of divine hiddenness."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-metaphysical-whole-method",
+      "sectionId": "method-and-evidential-standards",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "constructive",
+      "proposition": "Metaphysical inquiry into reality as a whole can support conclusions about God that cannot be reached by empirically examining only isolated parts of reality.",
+      "sourceSpan": {
+        "startEvent": 140,
+        "endEvent": 222
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Rhodes the floor, and the uninterrupted opening statement remains his through this window.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-metaphysical-method"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly supplies the affirmative methodological premise that whole-reality inquiry cannot be replaced by isolated empirical examination.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "Within constructive moves, it clearly states the method but offers little defense of why whole-level inference is reliable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The methodological claim is recoverable, but metaphysics, the whole, and isolated examination are not operationally distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that part-based inquiry cannot answer whole-level questions outruns the brief methodological assertion supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conclusion is intelligible, but the move does not establish why examining parts cannot support conclusions about a whole."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The method is asserted with an appeal to whole-versus-part inquiry, without representative support or comparison to rival methods."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary metaphysical-method bridge and sits near the upper end of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own methodological position without engaging a sufficiently developed live alternative interpretation."
+        }
+      },
+      "evidenceBasis": "Rhodes says questions about God and reality as a whole cannot be answered by cutting off and examining only a part of what exists.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-multiplicity-requires-unity-ground",
+      "sectionId": "composition-causation-and-agency",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "constructive",
+      "proposition": "The composite and multiple character of experienced reality requires an ultimate unified ground or existential absolute, which Rhodes identifies as God.",
+      "sourceSpan": {
+        "startEvent": 223,
+        "endEvent": 250
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The claim occurs within Rhodes's continuous opening statement after his methodological discussion of metaphysics.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-composing-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the central affirmative inference from experienced composition and multiplicity to a unified external ground.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "Within constructive moves, it states the central inference clearly but leaves its necessity and externality largely undefended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, although unity, ground, existential absolute, and God shift without adequate differentiation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Necessity is repeatedly asserted, while no argument excludes brute plurality, structural unity, or non-agent alternatives."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 59,
+          "rationale": "The move passes from multiplicity to unity and then to God without defending the decisive necessity and identity bridges."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "Experienced composition is invoked, but the claim that it requires one ultimate ground receives assertion rather than defended warrant."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the indispensable composing-ground bridge and is highly relevant within the central tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The passage primarily presents an affirmative metaphysical inference rather than interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "Rhodes argues that composite beings and multiplicity necessarily lead back to one unified reality capable of grounding all multiplicity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-simple-being-monotheist-identity",
+      "sectionId": "identifying-classical-theism",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "constructive",
+      "proposition": "Classical monotheistic traditions converge on the uniquely possible simple reality whose essence is existence itself and which lies outside the category of finite beings.",
+      "sourceSpan": {
+        "startEvent": 251,
+        "endEvent": 273
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rhodes explicitly introduces a question he has heard Dillahunty ask and answers it during his uninterrupted opening.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-ground-to-classical-theism"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move attempts the motion-level identification of a simple self-existent reality with the referent of classical monotheism.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "Within constructive moves, it reaches the motion bridge but substitutes asserted convergence and unique possibility for a full identification argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The thesis is recoverable, but being outside being, existence itself, simplicity, and monotheistic identity remain partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The uniquely possible identity is stated as necessary without demonstrating uniqueness or the relevant attributes of classical theism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 54,
+          "rationale": "Traditions referring to similar ultimate concepts does not establish that one uniquely possible being exists or has classical-theist identity."
+        },
+        "evidenceWarrant": {
+          "value": 48,
+          "rationale": "Cross-traditional convergence is asserted, but no independent evidence or defended identity criterion supports the motion-level conclusion."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move expressly attempts to identify the inferred ground with classical monotheism and therefore directly contacts the motion bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed rival account is interpreted closely enough in this constructive passage to support a charity test."
+        }
+      },
+      "evidenceBasis": "Rhodes cites Jewish, Christian, Islamic, and Greek convergence on a simple reality outside finite being whose essence is existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-finite-essence-existence-distinction",
+      "sectionId": "essence-existence-and-necessary-ground",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "constructive",
+      "proposition": "Finite things exhibit a real distinction between what they are and their act of existence, whereas the ultimate ground must have essence and existence united.",
+      "sourceSpan": {
+        "startEvent": 274,
+        "endEvent": 340
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This extended argument is delivered continuously by Rhodes and concludes immediately before he ends his opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-essence-existence-composition"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the principal affirmative premise that finite essences receive an act of existence absent from merely conceivable objects.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within constructive moves, the examples make the distinction intelligible, though the claimed real composition remains under-argued."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Essence and existence remain stable enough to recover the argument, with an implicit limitation to finite or contingent things."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples distinguish conception from actuality, but they do not by themselves establish a real metaphysical component or its necessary ground."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The unicorn example supports a conceptual distinction, but the move compresses the bridge from that distinction to real metaphysical composition."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Concrete examples clarify the premise, yet they do not independently verify that existence is an act composed with essence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable essence-existence premise and ranks at the top of the central burden tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move constructs the essence-existence case without presenting a sufficiently developed opposing interpretation for testing."
+        }
+      },
+      "evidenceBasis": "Rhodes contrasts definable but nonexistent unicorns with existing things, saying an essence exists only when composed with an act of existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-skepticism-truth-seeking-standard",
+      "sectionId": "method-and-evidential-standards",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Skepticism seeks to maximize true beliefs and minimize false ones through sound evidence and scientific inquiry, rather than rejecting claims merely because they are metaphysical.",
+      "sourceSpan": {
+        "startEvent": 399,
+        "endEvent": 430
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly transfers the floor to Dillahunty, whose uninterrupted opening statement contains this first substantive rebuttal.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-metaphysical-method"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-metaphysical-whole-method"
+        ],
+        "components": [
+          {
+            "componentId": "con-skepticism-truth-seeking-standard-component-01",
+            "targetMoveId": "pro-metaphysical-whole-method",
+            "text": "The decisive demand is whether skepticism illegitimately excludes metaphysical inquiry merely by restricting itself to isolated empirical parts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty directly denies that skepticism is simple metaphysical rejection and describes it as truth-seeking through science and sound evidential standards.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "This partial answer contacts the characterization of skepticism but does not fully answer the claimed limitation of part-to-whole inquiry."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The aim of skepticism and the inclusion of scientific inquiry among available methods are stated clearly and with bounded scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The methodological aspiration is well matched, although claiming courts and science have solved good-evidence standards is somewhat overstated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Rhodes may be criticizing the limits of piecemeal empiricism rather than claiming skeptics simply reject all metaphysics.",
+        "decisiveQualification": "Defining skepticism as truth-seeking does not establish that its methods can answer every legitimate whole-reality question."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The account of skepticism is internally consistent, though its success against the whole-versus-parts objection is only partial."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Scientific and courtroom practices provide relevant examples, but their transfer to metaphysical questions is not fully defended."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It attacks the subsidiary methodological bridge directly and sits high within that tier, though contact is incomplete."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "Dillahunty fairly corrects the broad characterization, but only partly addresses the strongest methodological version of Rhodes's claim."
+        }
+      },
+      "evidenceBasis": "Dillahunty defines skepticism as maximizing true beliefs and minimizing false ones using scientific inquiry and good evidential standards.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-background-evidence-standard",
+      "sectionId": "method-and-evidential-standards",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Claims require adequate justification, but familiar claims begin with substantial background evidence that unsupported claims about entities such as ghosts do not possess.",
+      "sourceSpan": {
+        "startEvent": 544,
+        "endEvent": 569
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly develops the extraordinary-claims maxim and contrasts mundane laundry claims with ghost reports.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-evidential-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the con evidential standard that acceptance depends on both claim-specific support and accumulated background evidence.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it offers a clear and useful standard with an illustrative contrast, despite limited formal development."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between equal justificatory demands and unequal background support is clearly recoverable and expressly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is presented as a general evidential principle with appropriate qualification about what the familiar maxim originally captures."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction between required evidence and preexisting background support is explicit, consistent, and inferentially useful."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The mundane-versus-ghost contrast supports the principle, though broader base-rate and rival-analysis support remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops the indispensable con evidential-standard bridge and ranks at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive standard does not rely on interpreting a developed opposing alternative or attributed argument."
+        }
+      },
+      "evidenceBasis": "Dillahunty says all claims require justification, while ordinary claims already benefit from extensive background evidence unavailable to ghost claims.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unfalsifiable-necessary-being",
+      "sectionId": "essence-existence-and-necessary-ground",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "An unfalsifiable necessary-being conclusion is not good evidence when notions such as being and necessity are inserted without adequate justification or any possible test.",
+      "sourceSpan": {
+        "startEvent": 570,
+        "endEvent": 629
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty directly criticizes reasoning to a necessary being and then states his criteria for evidence in the same opening.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-essence-existence-composition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-finite-essence-existence-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-unfalsifiable-necessary-being-component-01",
+            "targetMoveId": "pro-finite-essence-existence-distinction",
+            "text": "The decisive demand is whether the essence-existence description justifies inferring a necessary being rather than merely stipulating necessity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty identifies the missing justification for the necessary-being inference and states that unfalsifiability prevents it from serving as good evidence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it explicitly targets the unjustified inference and states the evidential consequence, though falsifiability is briefly defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection distinguishes an unsupported description, an inference to necessity, and the evidential consequence with clear scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The demand for justification matches the source, although unfalsifiability alone is treated too readily as dispositive of evidential value."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A metaphysical necessary-being inference may be deductive and therefore need not be experimentally falsifiable in the ordinary scientific sense.",
+        "decisiveQualification": "Even a deductive metaphysical argument still requires independently defended premises and a valid necessity bridge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The objection coherently identifies an unsupported necessity step, with only a bounded overreach about falsifiability as a universal criterion."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "It accurately identifies absent justification in the presented inference, but gives limited defense of the falsifiability standard for metaphysics."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the principal essence-existence-to-necessity inference and ranks at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The objection preserves the central requirement of justified premises, though it gives insufficient space to nonempirical testing."
+        }
+      },
+      "evidenceBasis": "Dillahunty objects that terms such as being and necessary were inserted without justification and that an untestable conclusion is not good evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ground-does-not-identify-agent",
+      "sectionId": "identifying-classical-theism",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Observed existence and an asserted absolute ground do not themselves provide evidence for an agent, God, or the Trinity, and inquiry should not begin by presupposing those conclusions.",
+      "sourceSpan": {
+        "startEvent": 913,
+        "endEvent": 996
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly contrasts the speaker's open-ended search for an explanation with Rhodes's God-directed approach.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-ground-to-classical-theism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-simple-being-monotheist-identity",
+          "pro-multiplicity-requires-unity-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-ground-does-not-identify-agent-component-01",
+            "targetMoveId": "pro-simple-being-monotheist-identity",
+            "text": "The decisive demand is whether an asserted absolute ground discriminates an agent, God, or Trinity from non-agent and unknown alternatives.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-ground-does-not-identify-agent-component-02",
+            "targetMoveId": "pro-multiplicity-requires-unity-ground",
+            "text": "A secondary demand is whether observed reality independently supports the asserted absolute ground in the first place.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty identifies the nondiscriminating jump from observed reality and an asserted ground to agency and specifically states that God and Trinity remain unsupported.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it expressly identifies the missing identity evidence and gives the defeating motion-level consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection clearly separates observed reality, a ground, an agent, God, and the Trinity rather than collapsing these conclusions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that the supplied observations do not establish these identities fits the stated absence of discriminating evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Rhodes may intend the ground as a metaphysical explanation whose divine attributes are derived in further stages rather than immediately observed.",
+        "decisiveQualification": "Those further derivations must still be supplied before the ground is evidence for an agent or classical theism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The move cleanly distinguishes a possible explanatory ground from the further conclusions of agency, God, and Trinitarian identity."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "It is strongly supported by the demonstrated absence of a discriminating identity step, with only limited alternative comparison needed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the motion-level bridge from an ultimate ground to the God of classical theism."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The objection allows that a ground could be proposed while accurately isolating the still-unmet identity and agency bridge."
+        }
+      },
+      "evidenceBasis": "Dillahunty says the observed world does not itself evidence a Trinity, God, being, or agent-like required ground and warns against presupposing them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-burnt-wood-analogy-gap",
+      "sectionId": "essence-existence-and-necessary-ground",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The burnt-wood inference is supported by repeated empirical evidence for fire, whereas no comparable evidence establishes essence, existence itself, or a required metaphysical ground.",
+      "sourceSpan": {
+        "startEvent": 1053,
+        "endEvent": 1084
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty directly rejects Rhodes's analogy and identifies the missing independent evidence for its metaphysical counterpart.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-essence-existence-composition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-finite-essence-existence-distinction",
+          "pro-multiplicity-requires-unity-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-burnt-wood-analogy-gap-component-01",
+            "targetMoveId": "pro-finite-essence-existence-distinction",
+            "text": "The decisive demand is whether ordinary causal analogy supplies comparable evidence for essence, existence itself, or a metaphysical ground.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-burnt-wood-analogy-gap-component-02",
+            "targetMoveId": "pro-multiplicity-requires-unity-ground",
+            "text": "A related demand is whether the inferred unity ground has empirical support comparable to familiar natural causal explanations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty diagnoses the analogy's missing evidential parity: fire has repeated observation and causal evidence, while the metaphysical entities do not.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, it identifies the precise disanalogy and states why the familiar inference cannot carry the metaphysical conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The compared cases and the claimed evidential difference are clear, stable, and expressly limited to the analogy's warrant."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The strong conclusion that this analogy fails is proportionate to the explicit disparity in independently observed causal evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The burnt-wood case may illustrate a general explanatory pattern rather than claim equal empirical confirmation for metaphysical grounds.",
+        "decisiveQualification": "A shared explanatory form does not transfer warrant unless the relevant causal and ontological similarities are established."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The move explicitly identifies the warrant in the fire case and explains why that warrant is absent from the metaphysical case."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "Repeated observation of combustion is a strong representative basis for the contrast, though the metaphysical rival is treated briefly."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the evidential support for the central essence-existence and grounding inference."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The response recognizes the inferential analogy's intended role while identifying the decisive absence of evidential similarity."
+        }
+      },
+      "evidenceBasis": "Dillahunty contrasts extensive before-and-after evidence for burning with the absence of comparable evidence for essence, existence itself, or a ground.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-human-nature-as-abstraction",
+      "sectionId": "reality-of-essence-and-form",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Human nature and similar general notions package descriptions of physical beings and their behavior rather than naming independently existing essences.",
+      "sourceSpan": {
+        "startEvent": 1186,
+        "endEvent": 1216
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker expressly denies an additional human essence and explains nature, spirit, and number language as descriptive abstraction.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-objective-essence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-finite-essence-existence-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-human-nature-as-abstraction-component-01",
+            "targetMoveId": "pro-finite-essence-existence-distinction",
+            "text": "The decisive demand is whether general nature-language identifies an objective constituent rather than packaging descriptions of physical beings.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty offers a descriptive-abstraction account and states the defeating consequence that the general concept need not exist as an additional essence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it directly supplies a rival ontology and identifies why descriptive language does not establish the proposed entity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between existing beings and abstract descriptions of their behavior is clearly and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The abstraction account is plausible and well illustrated, but the categorical denial of objective natures exceeds the brief semantic examples."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An essence theorist may treat nature as the objective basis of shared capacities rather than as a separately existing universal object.",
+        "decisiveQualification": "The pro side must still show that such a basis is more than a physical or conceptual description."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The abstraction account coherently distinguishes concrete entities and actions from generalized descriptions, with one bounded ontological overreach."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Examples involving behavior and number-language support the descriptive account, but do not decisively exclude every moderate realism."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the objective-essence bridge and offers the route's central descriptive alternative."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response fairly contests reification, though it sometimes treats every realist account as asserting a separately existing abstraction."
+        }
+      },
+      "evidenceBasis": "Dillahunty says human nature packages descriptions of what physical humans do, comparing such abstraction to representing the number two.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-persistence-requires-form",
+      "sectionId": "reality-of-essence-and-form",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "Human continuity through ongoing material change requires a persisting form or essence; otherwise a person would become wholly different at every moment.",
+      "sourceSpan": {
+        "startEvent": 1217,
+        "endEvent": 1303
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rhodes invokes total material replacement, the Ship of Theseus, and responsibility over time to argue for essential continuity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-objective-essence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-human-nature-as-abstraction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-persistence-requires-form-component-01",
+            "targetMoveId": "con-human-nature-as-abstraction",
+            "text": "The decisive demand is whether physical continuity and descriptive abstraction adequately explain personal identity through material change.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes directly challenges the abstraction account by arguing that responsibility and identity across material change require something persistent.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "This partial answer contacts the decisive persistence issue but does not show why causal continuity or changing physical organization is insufficient."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The persistence thesis is recoverable, but form, essence, definition, and personal identity are not kept fully distinct."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Persistence problems motivate an account of continuity, but they do not establish that a nonphysical form is necessary."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A physicalist can ground persistence in causal, structural, biological, and psychological continuity despite material turnover.",
+        "decisiveQualification": "Rhodes must demonstrate why these continuity relations cannot support diachronic identity without an additional essence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The argument exposes a persistence question, but moves from continuity to essence without excluding physical or relational identity criteria."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Material turnover and responsibility are relevant examples, yet neither verifies the claimed metaphysical form as the required explanation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the objective-essence bridge through the central problem of persistence across change."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The response raises a genuine identity problem but omits the strongest physical-continuity answer and treats change as implying total difference."
+        }
+      },
+      "evidenceBasis": "Rhodes invokes material replacement, Ship-of-Theseus concerns, and responsibility through time to argue that a person cannot be wholly new each moment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-language-signifies-objective-nature",
+      "sectionId": "reality-of-essence-and-form",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "Although labels and definitions are conventional, they signify an objective reality whose nature or essence is not created by the chosen language.",
+      "sourceSpan": {
+        "startEvent": 1777,
+        "endEvent": 1815
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rhodes resumes after the moderator's clarification and distinguishes arbitrary words from the realities those words signify.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-objective-essence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-human-nature-as-abstraction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-language-signifies-objective-nature-component-01",
+            "targetMoveId": "con-human-nature-as-abstraction",
+            "text": "The decisive demand is whether conventional descriptions merely package experience or instead refer to an objective nature independent of words.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes directly distinguishes arbitrary labels from the objective reality they purport to describe, contacting the abstraction objection's main issue.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "This partial answer contacts the decisive realist claim but does not establish that the objective referent includes an essence beyond physical reality."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The label-referent distinction is clear, but nature, essence, reality, and definition are used with some unresolved overlap."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Objective referents plainly need not be created by labels, but this does not establish the stronger essentialist ontology implied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The abstraction view can accept objective physical referents while denying that shared definitions reveal additional metaphysical essences.",
+        "decisiveQualification": "Word-independent reality alone therefore does not decide between physical description and objective essence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The conventional-sign-versus-real-referent distinction is sound, but the conclusion that the referent has an objective essence remains underived."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Ordinary reference supports word-independent objects, yet no further evidence distinguishes essential nature from physical properties."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the objective-essence bridge by contesting reduction of nature to conventional definition."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "Rhodes fairly denies linguistic creation of objects but incompletely addresses the stronger abstractionist position available to Dillahunty."
+        }
+      },
+      "evidenceBasis": "Rhodes agrees that definitions describe things but insists that the words signify a real nature or essence not created by the definition.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-pen-physical-classification",
+      "sectionId": "reality-of-essence-and-form",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A pen can be identified through physical properties, function, and shared learned concepts without establishing any additional nonphysical essence.",
+      "sourceSpan": {
+        "startEvent": 1816,
+        "endEvent": 1870
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty develops the pen example and explains recognition through shared language and similar mental concepts.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-objective-essence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-language-signifies-objective-nature",
+          "pro-persistence-requires-form"
+        ],
+        "components": [
+          {
+            "componentId": "con-pen-physical-classification-component-01",
+            "targetMoveId": "pro-language-signifies-objective-nature",
+            "text": "The decisive demand is whether word-independent recognition of a pen establishes a further nonphysical essence beyond its properties and function.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-pen-physical-classification-component-02",
+            "targetMoveId": "pro-persistence-requires-form",
+            "text": "A related demand is whether identification and continuity require an additional form rather than tracked physical and functional features.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty grants describable reality while demanding the allegedly nonphysical remainder, thereby identifying why reference alone does not prove essence.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly isolates the missing ontological evidence and offers physical and conceptual classification as an alternative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The pen example clearly distinguishes physical properties, function, learned concepts, and the proposed additional nonphysical essence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conclusion is appropriately limited to the failure of this example to establish an extra essence, not a universal disproof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An artifact essence may be identified with an objective organization and function rather than a detachable nonphysical property.",
+        "decisiveQualification": "That moderate account still does not establish the stronger metaphysical essence required by the affirmative route."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The move coherently shows that successful identification by properties and shared concepts does not entail an additional nonphysical entity."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The detailed pen inventory supplies representative support, with the remaining gap limited to broader natural-kind generalization."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the objective-essence bridge and strongly supports the competing descriptive-ontology route."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The response fairly asks what explanatory work remains after complete physical and functional description, with only a minor framing omission."
+        }
+      },
+      "evidenceBasis": "Dillahunty lists a pen's physical properties and learned functional classification, then asks what nonphysical feature remains to constitute essence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-artifact-natural-agency-disanalogy",
+      "sectionId": "composition-causation-and-agency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Known artifacts warrant an inference to intentional assembly because their design and manufacture are independently established, but humans and natural objects lack corresponding evidence of assembly by an agent.",
+      "sourceSpan": {
+        "startEvent": 2091,
+        "endEvent": 2134
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty gives an extended contrast between documented artifact manufacture and unsupported inferences about natural entities.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-agency-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-multiplicity-requires-unity-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-artifact-natural-agency-disanalogy-component-01",
+            "targetMoveId": "pro-multiplicity-requires-unity-ground",
+            "text": "The decisive demand is whether composition itself warrants an intentional composer rather than only some explanation of organization.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty diagnoses the missing independent agency evidence by contrasting documented artifact manufacture with natural beings lacking that track record.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within diagnostic defeats, it expressly targets the agency warrant, supplies the decisive disanalogy, and states why the inference fails."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Artifacts, intentional assembly, natural beings, and independent manufacturing evidence are distinctly and consistently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The strong rejection of the artifact analogy matches the explicit absence of comparable independent evidence for natural assembly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The composition argument may invoke a universal metaphysical dependence principle rather than a simple artifact analogy.",
+        "decisiveQualification": "That universal principle requires an independent defense and cannot inherit agency from cases already known to be manufactured."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The argument clearly separates known manufacture from mere complexity and blocks the unsupported transfer of intentional agency."
+        },
+        "evidenceWarrant": {
+          "value": 91,
+          "rationale": "Independent knowledge of artifact design and the lack of comparable natural-manufacture evidence directly support the disanalogy."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central agency-gap bridge and ranks at the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The response handles the strongest available analogy while preserving the possibility of a separately defended dependence argument."
+        }
+      },
+      "evidenceBasis": "Dillahunty says cars warrant design inferences because manufacture is independently documented, whereas humans and natural things lack comparable evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-universe-composition-requires-agent",
+      "sectionId": "composition-causation-and-agency",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "The universe unifies diverse constituents such as time, space, matter, and energy, and this composition requires an external composing ground or agent.",
+      "sourceSpan": {
+        "startEvent": 2135,
+        "endEvent": 2150
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rhodes responds to the artifact comparison by extending the composition principle to reality as a whole.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-agency-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-artifact-natural-agency-disanalogy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-universe-composition-requires-agent-component-01",
+            "targetMoveId": "con-artifact-natural-agency-disanalogy",
+            "text": "The decisive demand is whether natural composition has independent evidence of intentional assembly comparable to known artifacts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes directly answers by universalizing composition to the universe and treating a composer as self-evidently required, but supplies no independent agency evidence.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "This partial answer contacts the decisive composition issue, yet largely restates the disputed inference rather than answering the evidential disanalogy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The conclusion is recoverable, but ground, something, someone, composer, and agent shift at the decisive inferential point."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move calls agency nearly self-evident even though the opponent has just isolated the lack of independent natural-manufacture evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural unity may arise through impersonal laws, causal processes, or structural relations without intentional assembly.",
+        "decisiveQualification": "Rhodes must discriminate an intentional composer from those non-agent accounts rather than define composition as intentional."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 48,
+          "rationale": "The inference from parts to a composer assumes that composition means intentional putting-together, which is the conclusion under dispute."
+        },
+        "evidenceWarrant": {
+          "value": 45,
+          "rationale": "Time, space, matter, and energy are listed, but no evidence establishes their intentional assembly or excludes non-agent organization."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central agency-gap bridge, although its warrant is seriously defective within that tier."
+        },
+        "representationalCharity": {
+          "value": 45,
+          "rationale": "The reply does not seriously engage the strongest non-agent alternative and substantially assumes the disputed agency conclusion."
+        }
+      },
+      "evidenceBasis": "Rhodes says the universe contains time, space, matter, and energy and therefore must have a ground or someone who put it together.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-composer-inference-circularity",
+      "sectionId": "composition-causation-and-agency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Assuming that every parts-bearing entity was assembled by an agent makes the composition argument circular and leaves the existence of an intentional composer undemonstrated.",
+      "sourceSpan": {
+        "startEvent": 2151,
+        "endEvent": 2173
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty immediately identifies the universal-agent premise as the conclusion under dispute and separates explanation from agency.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-composing-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-universe-composition-requires-agent"
+        ],
+        "components": [
+          {
+            "componentId": "con-composer-inference-circularity-component-01",
+            "targetMoveId": "pro-universe-composition-requires-agent",
+            "text": "The decisive demand is whether parts independently imply an intentional composer rather than assuming the universal agency premise.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dillahunty explicitly identifies the universal-agent premise as the desired conclusion and states the defeating consequence that agency remains undemonstrated.",
+        "responsivenessWithinClass": {
+          "value": 98,
+          "rationale": "Within diagnostic defeats, it pinpoints the exact disputed inference and gives the immediate consequence for the composition argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The assumed universal premise, the desired agency conclusion, and the charge of circularity are all clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the explicit claim that every composition requires someone, the diagnosis of assuming the disputed agency premise is proportionate."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Rhodes may regard the composer principle as independently self-evident rather than as a restatement of his conclusion.",
+        "decisiveQualification": "Calling the premise self-evident does not answer the presented natural counterpossibility or independently establish agency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The objection precisely exposes that the universal intentional-composition premise contains the agency conclusion it is offered to prove."
+        },
+        "evidenceWarrant": {
+          "value": 92,
+          "rationale": "The immediately preceding universal-agent claim directly supplies strong textual support for the circularity diagnosis."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central composing-ground bridge at its decisive transition from parts to intentional agency."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The response considers the principle's asserted status while accurately showing that its key content remains the contested conclusion."
+        }
+      },
+      "evidenceBasis": "Dillahunty says excluding every non-agent origin assumes the very divine composer the argument is supposed to demonstrate.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-divine-hiddenness-sincere-nonbelief",
+      "sectionId": "identifying-classical-theism",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "A sincere nonbeliever would accept a clearly revealed God, while God's apparent failure to provide unmistakable universal disclosure supports a divine-hiddenness objection.",
+      "sourceSpan": {
+        "startEvent": 2318,
+        "endEvent": 2347
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty answers a direct question about discovering God and develops the implications of God's apparent failure to reveal itself.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-hiddenness-check"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the con hiddenness check by contrasting sincere willingness to believe with the absence of unmistakable universal disclosure.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within constructive moves, it states a clear evidential tension, though the expected-disclosure premise and possible divine reasons remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Sincere nonbelief and clear disclosure are recoverable, with an implicit condition that a relevant God would desire unambiguous belief."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents hiddenness as a reason for puzzlement and doubt, proportionate to its autobiographical and conditional support."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The tension between sincere receptivity and absent clear revelation is coherent, with one implicit premise about divine disclosure intentions."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Sincere self-report supports the example, but broader representativeness and comparison with proposed reasons for hiddenness are absent."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary hiddenness-check bridge and occupies the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive hiddenness concern does not directly interpret a developed opposing account of why disclosure might remain limited."
+        }
+      },
+      "evidenceBasis": "Dillahunty says he would believe a clearly revealed God and questions why such a God has not disclosed itself unmistakably to everyone.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-accidental-existence-entails-per-se",
+      "sectionId": "essence-existence-and-necessary-ground",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "Because finite beings possess existence accidentally rather than in themselves, their existence logically entails a per-se or self-existent ground.",
+      "sourceSpan": {
+        "startEvent": 2660,
+        "endEvent": 2683
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to Rhodes, and the uninterrupted answer continues until the moderator closes the turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-essence-existence-composition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unfalsifiable-necessary-being"
+        ],
+        "components": [
+          {
+            "componentId": "pro-accidental-existence-entails-per-se-component-01",
+            "targetMoveId": "con-unfalsifiable-necessary-being",
+            "text": "The decisive demand is whether the necessity bridge is independently justified rather than introduced through unsupported terminology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes supplies a per-accidens/per-se principle intended to justify necessity, but its application to existence remains the disputed and undefended step.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This partial answer contacts the decisive necessity demand with a stated principle, yet does not defend treating existence as an accident."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The intended entailment is recoverable, but accidental existence shifts from predication by analogy to a universal ontological status."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The principle is called self-evident and undeniable despite the unsupported transfer from accidental properties such as tallness to existence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection can grant that accidental properties require bearers while denying that contingent existence is a property requiring a self-existent bearer.",
+        "decisiveQualification": "Rhodes must justify both the analogy and the claim that finite things possess existence accidentally in the relevant sense."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 53,
+          "rationale": "The move equivocates between an accidental property inhering in a substance and contingent existence requiring a separate self-existent ground."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "Tallness illustrates property dependence but does not support the central claim that existence is an analogous accidental feature."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attempts to complete the central essence-existence composition bridge and answers the necessity objection."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply provides a recognizable metaphysical principle but does not address the strongest distinction between property-bearers and existential dependence."
+        }
+      },
+      "evidenceBasis": "Rhodes argues that accidental tallness requires a substance and analogously that accidental finite existence necessarily implies per-se existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-revelation-historical-evidence-tests",
+      "sectionId": "identifying-classical-theism",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "A claimed divine revelation can be assessed through historical documents, miracle reports, fulfilled prediction, and explanatory scope concerning origin, meaning, morality, and destiny.",
+      "sourceSpan": {
+        "startEvent": 2934,
+        "endEvent": 2956
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty asks Rhodes how revelation could be recognized, and Rhodes gives the complete answer before the moderator moves to another question.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-revelation-and-experience"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-divine-hiddenness-sincere-nonbelief"
+        ],
+        "components": [
+          {
+            "componentId": "pro-revelation-historical-evidence-tests-component-01",
+            "targetMoveId": "con-divine-hiddenness-sincere-nonbelief",
+            "text": "The decisive demand is whether purported revelation supplies publicly assessable evidence despite sincere nonbelief and unclear disclosure.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes contacts the demand by naming historical documents, prediction, miracles, and explanatory scope as tests, but does not present their results.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "This partial answer contacts the decisive public-evidence issue but offers criteria rather than evidence establishing clear revelation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposal is expressly framed as a method for assessing claimed revelation before attributing inspiration or divine origin."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that revelation can be examined through specified tests fits the procedural evidence actually supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Hiddenness concerns the absence of unmistakable disclosure, not merely whether ambiguous historical claims can be investigated.",
+        "decisiveQualification": "Assessability does not establish that the evidence is strong, independent, or sufficiently clear to answer sincere nonbelief."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The proposed sequence from ordinary historical treatment to testing and only then divine attribution is coherent and appropriately ordered."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Specific verification categories are named, but no documents, fulfilled predictions, miracle evidence, or rival comparisons are actually supplied."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary revelation-and-experience bridge and ranks near the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly preserves public testing but leaves the hiddenness objection's demand for clarity and actual evidential success unanswered."
+        }
+      },
+      "evidenceBasis": "Rhodes proposes first treating biblical texts historically, then checking prediction, miracle claims, and explanatory scope before attributing inspiration.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-philosophical-not-piecemeal-empirical",
+      "sectionId": "method-and-evidential-standards",
+      "side": "pro",
+      "speaker": "Kenny Rhodes",
+      "moveKind": "reply",
+      "proposition": "The inference from a necessary creator to the Christian God is philosophical rather than empirical because piecemeal examination of parts cannot resolve the nature of reality as a whole.",
+      "sourceSpan": {
+        "startEvent": 3155,
+        "endEvent": 3160
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question is explicitly addressed to Rhodes, and the short first-person answer ends before he shifts to explaining his physical condition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-evidential-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-background-evidence-standard",
+          "con-skepticism-truth-seeking-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-philosophical-not-piecemeal-empirical-component-01",
+            "targetMoveId": "con-background-evidence-standard",
+            "text": "The decisive demand is whether the Christian-God inference has adequate independent and background evidence proportionate to its claim.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-philosophical-not-piecemeal-empirical-component-02",
+            "targetMoveId": "con-skepticism-truth-seeking-standard",
+            "text": "A secondary demand is whether nonempirical whole-level inquiry can meet sound truth-seeking and evidential standards.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Rhodes explains why his method is philosophical rather than piecemeal empirical, but does not provide the requested independent support for the Christian identity.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "This relevant nonanswer contacts a secondary methodological issue while leaving the decisive evidential and identification demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The methodological contrast is recoverable, but empirical evidence, philosophical inference, parts, and whole lack clarifying boundaries."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical dismissal of empirical contribution is unsupported and does not calibrate the narrower claim that philosophy may also be necessary."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The evidential standard permits philosophical arguments but asks whether their premises and identity conclusions receive adequate independent support.",
+        "decisiveQualification": "Calling the inference philosophical does not answer that justificatory demand or establish the Christian-God conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The answer states a method distinction but does not derive the Christian identity or explain why empirical information cannot bear on it."
+        },
+        "evidenceWarrant": {
+          "value": 48,
+          "rationale": "No philosophical premises, historical evidence, or discriminating bridge is supplied in this short rejection of empirical evidence."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central con evidential-standard bridge, though it does not answer that bridge's decisive requirement."
+        },
+        "representationalCharity": {
+          "value": 56,
+          "rationale": "The response materially narrows the opposing demand to empirical decomposition and omits its broader concern with justified evidence."
+        }
+      },
+      "evidenceBasis": "Rhodes says he cannot give empirical evidence because examining separated parts cannot explain the nature of reality as a whole.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence changes completion of a named pro burden bridge beyond the individual move judgments already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists outside the scored locked moves and response links.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance and burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any independently established burden completion."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence changes completion of a named con burden bridge beyond the individual move judgments already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists outside the scored locked moves and response links.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance and burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any independently established burden completion."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
