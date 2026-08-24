@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-120-publication-repair-diagnosis",
+  "status": "frozen-diagnosed-batch-08-debate-120-three-field-publication-validation-failure",
+  "frozenAt": "2026-08-24T16:30:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "classification": "two-critique-word-boundary-failures-and-one-short-novelty-explanation-in-complete-rejected-output",
+  "preservedFailure": {
+    "originalAttemptCount": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "acceptedOutput": false,
+    "completeRejectedOutputPreserved": true,
+    "rejectedOutputSha256": "738caecc02c7441cbd67aa884f28c558f4a7a45ed0ce39e3db738b69f01af47a",
+    "validationMessage": "Error: con-gospels-mythic-literary-material: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch08PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-08-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption-2.mjs:114:33)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption-2.mjs:176:22)\n    at async Promise.all (index 0)\n    at async runBounded (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption-2.mjs:181:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-08-publication-resumption-2.mjs:189:24"
+  },
+  "failedFields": [
+    {
+      "type": "critique-word-boundary",
+      "moveId": "con-gospels-mythic-literary-material",
+      "path": "moveProse.con-gospels-mythic-literary-material.critique",
+      "words": 132,
+      "characters": 1051,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 2
+    },
+    {
+      "type": "critique-word-boundary",
+      "moveId": "pro-exodus-injury-protection",
+      "path": "moveProse.pro-exodus-injury-protection.critique",
+      "words": 133,
+      "characters": 1016,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 3
+    },
+    {
+      "type": "novelty-explanation-minimum-words",
+      "path": "aiExtension.pro.premises[3].novelty.explanation",
+      "itemId": "ai120-pro-premise-4",
+      "words": 7,
+      "acceptanceMinimumWords": 8,
+      "originalText": "Repairs the incomplete slavery and conquest reconciliations."
+    }
+  ],
+  "failedFieldCount": 3,
+  "excessWordsTotal": 5,
+  "preservedFields": {
+    "moveCount": 19,
+    "repairFields": 3,
+    "validMoveProseEntries": 17,
+    "everyOtherOutputFieldImmutable": true,
+    "acceptedDebate88Preserved": true,
+    "acceptedDebate194Preserved": true,
+    "acceptedDebate137Preserved": true,
+    "acceptedDebate08Preserved": true,
+    "acceptedDebate65Preserved": true,
+    "acceptedDebate140Preserved": true,
+    "acceptedDebate156Preserved": true,
+    "acceptedDebate118Preserved": true,
+    "oneContextUnattempted": true
+  },
+  "diagnosticReplay": {
+    "originalOutputModified": false,
+    "persistedCorrectedOutput": false,
+    "hypotheticalWordsRemovedFromCritiques": 5,
+    "hypotheticalNoveltyExplanationReplacement": "Repairs the incomplete slavery and conquest reconciliations by identifying their unresolved burdens.",
+    "result": {
+      "status": "passed",
+      "debateNumber": "120",
+      "moves": 19,
+      "critiques": 19,
+      "minimumCritiqueCharacters": 957,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 2,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "minimumBoundedRepair": {
+    "operation": "two-field-disjoint-publication-repair-packets-partitioned-two-plus-one",
+    "reasonMinimum": "Three diagnosed writable fields under the two-field-per-packet ceiling require two packets.",
+    "packetCount": 2,
+    "partition": [
+      [
+        "moveProse.con-gospels-mythic-literary-material.critique",
+        "moveProse.pro-exodus-injury-protection.critique"
+      ],
+      [
+        "aiExtension.pro.premises[3].novelty.explanation"
+      ]
+    ],
+    "attemptsPerPacket": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveRecoveryMaximum": 1,
+    "mergeRule": "Replace only the two authorized critiques and one authorized novelty explanation in the complete rejected Debate 120 output, preserve every other field, validate Debate 120, then resume only untouched Debate 145."
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-120.json": "4023015b9c1bf9e1cd3458a6178dbdbb44b33a89566df1ebf176da5f64f7a530",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/repair-1/merged/debate-88.json": "2b5567b41ae7bc1089331a024f46520a19e6d897abc234bf9599d60ce962ee7e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-137.json": "2ceba5d3b3a61415faf603282dce35268bbbbb33b1f04b42eb8494417d3be137",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/outputs/debate-194.json": "80e025d34af91b10553a56c3b3c638cb462bc958d219cef82db38b5baa36c7cf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-1/repair-1/merged/debate-08.json": "bb1022006483c6755d3185906d895081fd3254de4e7d7f33d5608c7614a75434",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/analysis.json": "924fff62f7789c7ff88df53b99fd85337bb95f75a3867fd0c1326a8ed5e02443",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/execution-activation.json": "fa4e255953d2c4a1471efbd38b4a2ddf7c9670c1484d3f7272380821f7bdd50f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/execution-preparation-manifest.json": "8fbf42b600233ff037bd2e54a688087472b6198d9a27dcfdc50320646ae4b0f1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/model-execution.json": "ce2208749b5f8aca8877b5c5ee92bedfaffd3ccb10eaefe5ce09092448971bc4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-118.json": "7ee5104d3ebe909c6ad5130817d7914cb4666888bf8f92500842d5f8d8ad2b48",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-120.json": "738caecc02c7441cbd67aa884f28c558f4a7a45ed0ce39e3db738b69f01af47a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-140.json": "6a484c1dc91cd94522a41297a3525a65484bfb829ca09f27ecd51eee7954c18d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-156.json": "51d1f565c2876d04c6598b4a6a7f0cbb3435d1d6c2359b96eb7057d844f4ade6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-65.json": "a79a604a4b8ae2dd6990ae22e3d032c718b7699b54c34d200ce42c9b5991c401",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/provenance/debate-120.json": "24e390db6855f228d592631359b16c2f772b3977a706932a4fce482bb584163e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/validations/debate-120.json": "3f0dc4dbfbf2a55818d12e6c6cfab6bcaccd6ac4e996e573fea387ffd8a0c40f"
+  },
+  "directIncrementalCostUsd": 0,
+  "authorization": {
+    "repairPreparation": true,
+    "repairModelExecution": false,
+    "oneContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-two-field-disjoint-debate-120-publication-repair-packets"
+}
