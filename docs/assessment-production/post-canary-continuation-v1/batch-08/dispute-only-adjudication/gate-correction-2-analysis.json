@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-adjudication-gate-recursive-correction-analysis",
+  "protocolId": "assessment-production-post-canary-batch-08-dispute-only-adjudication",
+  "status": "passed-batch-08-adjudication-gate-after-recursive-harness-correction",
+  "analyzedAt": "2026-08-24T12:54:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "recovery": {
+    "underlyingProblem": "stale-audio-input-reporting-expectation-and-directly-coupled-wrapper-reporting-label",
+    "correctionLevelsUsed": 2,
+    "additionalCorrectionLevelsAuthorized": 0,
+    "originalCohortGateCorrectionLevel": 1,
+    "executionWrapperRecursiveCorrectionLevel": 2,
+    "completeCohortReplayPassed": true
+  },
+  "acceptedGate": {
+    "contexts": 10,
+    "validContexts": 10,
+    "invalidContexts": 0,
+    "disputedMoves": 174,
+    "candidateSelections": 533,
+    "audioTranscriptInputs": 6,
+    "scoresDerived": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "preservation": {
+    "acceptedModelOutputsByteIdentical": true,
+    "modelExecutionRecordByteIdentical": true,
+    "adjudicationAnalysisByteIdentical": true,
+    "activationRecordByteIdentical": true,
+    "validatorMeaningChanged": false,
+    "protectedEvidenceChanged": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/gate-correction-1-execution.json": "55931b7d5c5adc752aa3250693d987cd88569b3fd4927fa1f47c3f37523d70dc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/gate-correction-2-plan.json": "10735deb4bc84efabad86a71fc39f26142f4e09c5f2a1175ac450ef86a1b5738",
+    "scripts/run-assessment-production-post-canary-batch-08-dispute-adjudication-gate-correction-1.mjs": "6d6da370c976639e61dfc1da72c084a8b4ec5d08780630cbaad28d75f4511e9b",
+    "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs": "d44d1f5d70fe706c94608b5aa688ee155d863427f494f41a23d74680af75afa0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/model-execution.json": "0c304088c07ae671e3441d0e695f23a3f82f09cb20c275b69358c3e907ce4266",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/analysis.json": "23b8eeeea3222b3ebb2e140ae7d0a77eb6d4a3ffeeb92d3115d39ed43820286e"
+  },
+  "nextAuthorizedAction": "standing-authorization-permits-batch-08-deterministic-final-ledger-assembly"
+}

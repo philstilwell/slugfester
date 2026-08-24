@@ -77,7 +77,7 @@ try {
 }
 
 const parsedOutput = JSON.parse(output);
-assert.equal(parsedOutput.status, "passed");
+assert.equal(parsedOutput.status, "passed-analyzed");
 assert.equal(parsedOutput.validContexts, 10);
 assert.equal(parsedOutput.disputedMovesDecided, 174);
 assert.equal(parsedOutput.candidateSelections, 533);
