@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-adjudication-gate-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-dispute-only-adjudication",
+  "status": "preserved-batch-08-adjudication-gate-stale-audio-input-expectation-diagnosed",
+  "diagnosedAt": "2026-08-24T12:50:00Z",
+  "checkpointCommit": "ea4f6f9630cdc72f4c2892f4f640280c2c060517",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-validation-stale-expectation",
+    "test": "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs",
+    "line": 214,
+    "assertion": "analysis.evidenceBoundary.audioTranscriptInputs",
+    "staleExpectedValue": 2,
+    "frozenActualValue": 6,
+    "error": "AssertionError: 6 !== 2"
+  },
+  "diagnosis": {
+    "underlyingProblem": "The cloned adjudication cohort test retained Batch 7's stale reporting-only audio transcript count even though the authenticated Batch 8 preparation manifest freezes six inputs.",
+    "acceptedModelOutputsValid": true,
+    "modelContextsAttempted": 10,
+    "modelContextsAccepted": 10,
+    "invalidModelContexts": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "protectedEvidenceChanged": false,
+    "validatorMeaningChanged": false
+  },
+  "boundedCorrection": {
+    "authorizedByStandingAuthorization": true,
+    "correctionLevel": 1,
+    "writableFile": "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs",
+    "writableField": "audioTranscriptInputs expected count",
+    "replacement": {
+      "from": 2,
+      "to": 6
+    },
+    "attemptsMaximum": 1,
+    "completeCohortReplayRequired": true,
+    "modelExecutionPermitted": false
+  },
+  "sourceHashes": {
+    "scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs": "4bf0e31a92f0097a11371145662940f34dc32d25af02b1fb36e3f24d1dec4194",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/model-execution.json": "0c304088c07ae671e3441d0e695f23a3f82f09cb20c275b69358c3e907ce4266",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/analysis.json": "23b8eeeea3222b3ebb2e140ae7d0a77eb6d4a3ffeeb92d3115d39ed43820286e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/preparation-manifest.json": "e0a5430d9b9fb4687a972a69236cb324b15c81948e87b301fe61f690b973b13f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/dispute-only-adjudication/execution-activation.json": "054c72fa717501ab7372d369eb8fda24c8cb1457656b7e4d1cddbda74f170d1c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/continuation-standing-authorization.json": "2313fd2241e5245afab793f93f4c9f7c8a525c5fb614e122ba20904c31bf8d8b"
+  },
+  "nextAuthorizedAction": "apply-one-bounded-reporting-only-test-expectation-correction-and-replay-complete-adjudication-cohort-once"
+}
