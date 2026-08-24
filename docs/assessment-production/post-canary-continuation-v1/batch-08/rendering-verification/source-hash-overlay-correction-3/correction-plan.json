@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay-correction-3-plan",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-final-third-level-rendering-source-hash-correction-prepared",
+  "frozenAt": "2026-08-24T15:22:05Z",
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/authorization.txt",
+    "sha256": "c918d43cbc7839826bc436a7f4c6bd8b65705d2bf3541a7e0f31fef16b768940"
+  },
+  "diagnosedFailure": {
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-viewport-correction-2/analysis.json",
+      "sha256": "d16ee0f47e5fc7166f2e5eed9a08106f0873aa00340854dd82d2fe8c58216949"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-viewport-correction-2/execution.json",
+      "sha256": "c220d9df4d591fd064ec8a5063e9c9f42ce1654c8628a221b5e72c2e5f727ce1"
+    },
+    "rejectedEvidence": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-viewport-correction-2/rejected-evidence.json",
+      "sha256": "838013ca29e34a79f8de2defbba15f7850129aebc2dfad71fb6484ac83221f56"
+    }
+  },
+  "correction": {
+    "action": "add the one frozen src/data/debates.js hash to the unchanged activation sourceHashes map in memory before invoking the unchanged frozen rendering runner",
+    "ordinaryRetry": false,
+    "recoveryLevel": 3,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "validatorMeaningChanged": false,
+    "packetChanges": 0,
+    "activationChanges": 0,
+    "preparationChanges": 0,
+    "runnerChanges": 0,
+    "validatorChanges": 0,
+    "productionDataChanges": 0,
+    "priorFailureEvidenceChanges": 0
+  },
+  "authorizedContext": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "authenticatedInputs": {
+    "sourceHashOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/source-hash-overlay.json",
+      "sha256": "1731fa67863c0990f8c39a866309979fa1af58b4ffe1c58e5924ba056b48fbd3"
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/preparation-manifest.json",
+      "sha256": "95ed2057c873bc251a4980412fdb0458da43337ce7d92f7d9ec6137c96dba651"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/execution-activation.json",
+      "sha256": "5e6a8b6756abbedccb6de9935ba98f961014e249be0f4f95e986c1d0fc4191ae"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/packets/debate-88.json",
+      "sha256": "08fb1c4fcbf63cfda9e5f25baf37085c3ac07f5c553684b415cd774bcf5c9e18"
+    },
+    "runner": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-browser-runner.mjs",
+      "sha256": "cc3d54380fee848cfcfc94953d7301d780547acf00827b47d24488b8998d0ac0"
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-08-rendering-verification.mjs",
+      "sha256": "e5ad3ca15cf3cc88ac01c3490ed7b663c2e5100fb18edd678e324f859e710fe5"
+    },
+    "productionData": {
+      "path": "src/data/debates.js",
+      "sha256": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459"
+    },
+    "continuationStandingAuthorization": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/continuation-standing-authorization.json",
+      "sha256": "2313fd2241e5245afab793f93f4c9f7c8a525c5fb614e122ba20904c31bf8d8b"
+    }
+  },
+  "mergeRule": {
+    "baseMap": "the unchanged sourceHashes object in the frozen rendering execution activation",
+    "overlayMap": "the exact one-key sourceHashOverlay object in source-hash-overlay.json",
+    "precondition": "the base map does not contain src/data/debates.js",
+    "result": "a transient effective map containing every base entry unchanged plus the frozen src/data/debates.js entry",
+    "persistEffectiveMap": false
+  },
+  "acceptedOutputPaths": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-collapsed.jpg",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/evidence/debate-88/desktop-open.jpg"
+  ],
+  "failurePolicy": {
+    "stopOnAnyFurtherRenderingFailure": true,
+    "furtherRecoveryAuthorized": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "freeze-one-use-third-level-debate-88-desktop-rendering-activation"
+}

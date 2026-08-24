@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "frozen-third-level-rendering-source-hash-overlay",
+  "frozenAt": "2026-08-24T15:19:45Z",
+  "recoveryLevel": 3,
+  "authorizedContext": {
+    "debateNumber": "88",
+    "viewportName": "desktop"
+  },
+  "sourceHashOverlay": {
+    "src/data/debates.js": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459"
+  },
+  "mergeRule": {
+    "application": "in-memory-only-before-frozen-runner-invocation",
+    "base": "the unchanged sourceHashes map from the frozen Batch 8 rendering activation",
+    "overlayMayAddOnlyMissingKey": "src/data/debates.js",
+    "overlayMayReplaceExistingKey": false,
+    "effectiveMap": "base sourceHashes plus exactly the one frozen overlay entry",
+    "persistenceIntoOriginalPreparationOrActivation": false
+  },
+  "authenticatedSource": {
+    "path": "src/data/debates.js",
+    "sha256": "fa8801ce02ac4776a766bb4401d334d6ac368dfa15d7ac393ec6c5a19a9f2459",
+    "sameSha256AtRenderingPreparationCommit": true,
+    "sourceMutationAuthorized": false
+  },
+  "preservationBoundary": {
+    "preparationManifestWritable": false,
+    "executionActivationWritable": false,
+    "packetsWritable": false,
+    "runnersWritable": false,
+    "validatorWritable": false,
+    "candidatesWritable": false,
+    "productionDataWritable": false,
+    "priorFailureEvidenceWritable": false
+  },
+  "executionControls": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "prepare-and-authenticate-third-level-debate-88-desktop-rendering-correction"
+}

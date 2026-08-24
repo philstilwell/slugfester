@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-rendering-source-hash-overlay-correction-3-preparation-validation",
+  "protocolId": "assessment-production-post-canary-batch-08-rendering-verification",
+  "status": "third-level-rendering-source-hash-overlay-preparation-valid",
+  "validatedAt": "2026-08-24T15:23:19Z",
+  "authenticatedInputs": {
+    "correctionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/correction-plan.json",
+      "sha256": "fa51f5c235b6c20dd2944da2b141002d779f603ba41412aeb5f8d3271a5bf7a8"
+    },
+    "sourceHashOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/source-hash-overlay-correction-3/source-hash-overlay.json",
+      "sha256": "1731fa67863c0990f8c39a866309979fa1af58b4ffe1c58e5924ba056b48fbd3"
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checksPassed": 21,
+    "checksTotal": 21,
+    "overlayHasExactlyOneAuthorizedKey": true,
+    "overlayValueMatchesFrozenSha256": true,
+    "baseActivationOmitsOverlaidKey": true,
+    "productionDataMatchesFrozenOverlay": true,
+    "allProtectedInputHashesMatch": true,
+    "priorFailureEvidenceByteIdentical": true,
+    "officialDebate88DesktopEvidenceAbsent": true,
+    "oneAttemptControlsFrozen": true,
+    "finalRenderingFailureStopRuleFrozen": true
+  },
+  "mutations": {
+    "originalPreparation": false,
+    "originalActivation": false,
+    "packets": false,
+    "runners": false,
+    "validator": false,
+    "candidates": false,
+    "productionData": false,
+    "priorFailureEvidence": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "commit-push-and-activate-one-use-third-level-debate-88-desktop-rendering-correction"
+}
