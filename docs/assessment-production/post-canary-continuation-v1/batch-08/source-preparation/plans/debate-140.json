@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4918,
+  "ledgerBytes": 254384,
+  "ledgerSha256": "111ee25016e7a69dfc3d56db8b0dca57c80fbdcf6cc7df0c392b27569bd3ddfb",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 44751,
+      "contextSha256": "9921f42660522c5850df2209f80c786c4fc099a4e3723334573434b28b21138f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 46967,
+      "contextSha256": "cd35c7f9708fc7d8139a11def52764c17b76520eb56963fc8a6e2bcaa03bb2eb"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 46713,
+      "contextSha256": "68ae1071366c0b5897d4a0c6bfdce683a441ad75f87e652d594778f60a42e566"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 46847,
+      "contextSha256": "6a1333528c5fb311a41c00a03a7e62d744936a3abdcaee7ef0bdaabff5953268"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 46253,
+      "contextSha256": "91e9fd6b5cd02826d3ba6fab887a29ab0c471c456ac0a41ce495e35a6e51962d"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4917,
+      "coreEvents": 778,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4917,
+      "contextEvents": 818,
+      "contextBytes": 43616,
+      "contextSha256": "91f88fdd14af545f8a99cd7fb37ef5db4fdac83cf3c57a696c4b81059479bdf3"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4917,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "140",
+  "debateId": "rhodes-dillahunty-evidence-god-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2750,
+  "ledgerBytes": 159910,
+  "ledgerSha256": "ec3d76a642ad481dcb51fd4902c9c4fc9693825ef4a286839dd5ebe1c4bcc6ba",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52170,
+      "contextSha256": "216a00378b3f4dc58076d1d60e6fae570480cd571289b516fdd2ee939e1fbe61"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52775,
+      "contextSha256": "1699e6f532613c81bf4984b3155c7ce68777d15d502a48a3bd3b9c0fe7172a1e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52124,
+      "contextSha256": "6f66e938b6fe1dd9aa08470205a13dd59d8290445e2e94fe00ce1cf1e673dede"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2749,
+      "coreEvents": 250,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2749,
+      "contextEvents": 290,
+      "contextBytes": 16864,
+      "contextSha256": "c8a0fa133587db81f3f860b12416ad8d22fe20e0e089c55633debd659134fa27"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2749,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "88",
+  "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

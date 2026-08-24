@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-source-preparation",
+  "debateNumber": "118",
+  "debateId": "hernandez-schieber-god-existence-2023",
+  "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Eric Hernandez"
+      ]
+    },
+    "con": {
+      "label": "Atheistic naturalism",
+      "speakers": [
+        "Justin Schieber"
+      ]
+    }
+  },
+  "durationSeconds": 8263,
+  "eventCount": 3542,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/sy1lUHGIQCQ/transcript.txt",
+    "transcriptSha256": "c1aae59e4251c4458d4a8a1c1229868e90d84a4981d96156c5b925adee3f247b",
+    "eventsPath": ".assessment-cache/captions/sy1lUHGIQCQ/events.json",
+    "eventsSha256": "8b83bb5cda771fc1561c8791a66b1f58267d3a8db8df13c3f2b124f21bfc8813",
+    "localManifestPath": ".assessment-cache/captions/sy1lUHGIQCQ/manifest.json",
+    "localManifestSha256": "94097ce6efa07ecd20603a4486515ceebbf9cc779066bb6058bf06a5560e8127"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-118.jsonl",
+    "sourceLedgerSha256": "7e12e9246f47539220b4f993444261ad73873b3ac733225dca9be4cd7b3c6088",
+    "sourceLedgerBytes": 199960,
+    "sourceLedgerEventCount": 3542,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-118.json",
+    "partitionPlanSha256": "0c53780b8cd14a0cf4ab0eaa60cb98ad39ea4ca6b5b12687e8ac921f6a0bbeda",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

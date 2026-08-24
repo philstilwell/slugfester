@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1309,
+  "ledgerBytes": 76796,
+  "ledgerSha256": "fd4b57ff0313c09f341d84b8bec52bd3733b371bf7a6c77c61e17a9d98aa1d59",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52398,
+      "contextSha256": "3e2fc50a2a92a3aa1a7094c18dfc0442632496959d6d8aca0614ca35c8b4cbd0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1308,
+      "coreEvents": 449,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1308,
+      "contextEvents": 489,
+      "contextBytes": 29120,
+      "contextSha256": "050dd13772160b2b6e9060e9c9ed709aeff6bbbc8190587e5cb8746bef00da46"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1308,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "156",
+  "debateId": "harris-prager-religion-morality-public-reason-2014",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-08-source-preparation",
+  "debateNumber": "140",
+  "debateId": "rhodes-dillahunty-evidence-god-2021",
+  "motion": "Is there good evidence for the existence of the God of classical theism?",
+  "sides": {
+    "pro": {
+      "label": "Classical-theist grounding",
+      "speakers": [
+        "Kenny Rhodes"
+      ]
+    },
+    "con": {
+      "label": "Skeptical evidentialism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 10885,
+  "eventCount": 4918,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/i0Q_KMN64bk/transcript.txt",
+    "transcriptSha256": "f87cef5fc6a6ce8b83c92b181ad5f6ceee5ef91e869f9dce675d55fb69f4dd21",
+    "eventsPath": ".assessment-cache/captions/i0Q_KMN64bk/events.json",
+    "eventsSha256": "c7f7dbde59aa234213bfd01725e83d5133c729077ef25fc8a247f614ca03d6e1",
+    "localManifestPath": ".assessment-cache/captions/i0Q_KMN64bk/manifest.json",
+    "localManifestSha256": "b21f1f9af4ecc8de06d0f09823fc4d815f4739233fb579bcea8f594f6dcbe0ea"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-08/debate-140.jsonl",
+    "sourceLedgerSha256": "111ee25016e7a69dfc3d56db8b0dca57c80fbdcf6cc7df0c392b27569bd3ddfb",
+    "sourceLedgerBytes": 254384,
+    "sourceLedgerEventCount": 4918,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-08/source-preparation/plans/debate-140.json",
+    "partitionPlanSha256": "c9c78934dd5a1d6089f3742bb579901635c8cc2d8cadb58a14dc1be486379d52",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

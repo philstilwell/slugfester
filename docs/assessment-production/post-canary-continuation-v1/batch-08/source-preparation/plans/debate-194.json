@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1626,
+  "ledgerBytes": 86135,
+  "ledgerSha256": "82fe7e0110dbf4a6af1d7dbdd158a898c40f7965fb6008787a7841e71b5964ae",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47330,
+      "contextSha256": "a1bf43577fe8b452c495c61ba27bb2564832b288b1960d058f4b804850a0d786"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1625,
+      "coreEvents": 766,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1625,
+      "contextEvents": 806,
+      "contextBytes": 43027,
+      "contextSha256": "5f02d01627eae51826fad1c878a7f4d1a8d8f7f834f9535b0614f77c81c58e58"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1625,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "194",
+  "debateId": "swinburne-millican-does-god-exist-2022",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

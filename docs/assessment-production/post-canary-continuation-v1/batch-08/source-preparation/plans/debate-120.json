@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2138,
+  "ledgerBytes": 125691,
+  "ledgerSha256": "cab7741d1ac5950be97c04a74ba5acc2f7fcf3da92bfb5242c1a7c8927773621",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51955,
+      "contextSha256": "f55b3c30c29265561f04fd7787b21c802f10c3844f04d37b909e028b2fb3946f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53614,
+      "contextSha256": "56c63d00085d9fa07979a85a78ba2bf386c084085a73436d2c7232477a1460a7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2137,
+      "coreEvents": 458,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2137,
+      "contextEvents": 498,
+      "contextBytes": 29634,
+      "contextSha256": "36839cb3a99cf3b57f10a6b88fc83ce6713d535094ace2f704e1f496b3c6caba"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2137,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "120",
+  "debateId": "mclatchie-oconnor-christianity-true-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

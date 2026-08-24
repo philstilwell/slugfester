@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2196,
+  "ledgerBytes": 127784,
+  "ledgerSha256": "45bdd3063f214553ca1867e56eccd7204d9eeef75944dcd99c0dadcbfaa2223f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51489,
+      "contextSha256": "e3d25f470c8e57743d7232de9b904ed32339f4b3cfd1f94c614c75e33d0ec8b7"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52799,
+      "contextSha256": "29fef2a682d0af05638f22bb50dd5c4d515d8c76bf5e6dae100cc7675ac8a209"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2195,
+      "coreEvents": 516,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2195,
+      "contextEvents": 556,
+      "contextBytes": 32843,
+      "contextSha256": "77f509fc14c65f3eee91826203ecaf5c5a2a4a3422efeb8d5c978ce47aeabbac"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2195,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "65",
+  "debateId": "donahue-malpass-fine-tuning-god-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
