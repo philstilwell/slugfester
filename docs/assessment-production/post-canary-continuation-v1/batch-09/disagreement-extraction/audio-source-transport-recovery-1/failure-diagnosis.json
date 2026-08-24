@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-audio-source-transport-recovery-1-failure-diagnosis",
+  "status": "preserved-batch-09-debate-170-hls-format-unavailable-recovery-failure-diagnosed",
+  "batchNumber": 9,
+  "failedRecovery": {
+    "plan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-1/correction-plan.json",
+      "sha256": "c6d1c62bd1c103fbe333861b7febadba1bb4eed37cb4505d0558f08f5fca47e9"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-1/execution-activation.json",
+      "sha256": "aa618afd8b6b22347f95539ff2b43e23c9a439bc1b132cadaab407fd04a753b2"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-1/execution.json",
+      "sha256": "f8b7b6d40ade00ba7a450676fbb1220d70760ceb012e085fe09976477e7b52f2"
+    },
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "downloadsCompleted": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "debateNumber": "170",
+    "sourceVideoId": "HoTILnpd3q8",
+    "category": "requested-hls-format-unavailable-through-frozen-web-safari-client",
+    "preservedError": "Requested format is not available",
+    "transport": "web-safari-hls-manifest-native-segment-transport",
+    "downloadFileCreated": false,
+    "normalizedSourceCreated": false,
+    "sourceInstalled": false,
+    "clipsCreated": 0,
+    "unattemptedSources": ["19", "183"]
+  },
+  "localEvidence": {
+    "captionManifest": {
+      "path": ".assessment-cache/captions/HoTILnpd3q8/manifest.json",
+      "sha256": "c5763d8b9672eee1f1eeef268789ef86ef0a54b2faff179b98a590a2becde517",
+      "title": "Peter Singer vs John Lennox | Is There a God? Debate",
+      "channel": "Larry Alex Taunton",
+      "durationSeconds": 6365
+    },
+    "preservedInvalidOriginalAttempt": {
+      "path": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.failed-attempt-1.mp3",
+      "bytes": 354,
+      "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+    }
+  },
+  "diagnosis": {
+    "hlsRouteUnavailableForThisVideo": true,
+    "canonicalSourceIdentityChanged": false,
+    "speakerIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "protectedEvidenceChanged": false,
+    "failedPartialOutputReusable": false,
+    "minimumRecursiveCorrection": "one direct progressive WebM audio transport using a separately frozen YouTube player client and HTTP chunking, followed by the two still-unattempted original source routes",
+    "recursiveCorrectionLevelsAlreadyUsed": 0,
+    "recursiveCorrectionLevelsRemaining": 1
+  },
+  "authorization": {
+    "standingAuthorizationRecursiveTransportCorrection": true,
+    "correctionPreparation": true,
+    "correctionExecution": false,
+    "ordinaryRetry": false,
+    "mediaPlayback": false,
+    "semanticAudioEvaluation": false,
+    "modelExecution": false,
+    "paidServices": false
+  },
+  "nextAuthorizedAction": "prepare-and-hash-lock-the-final-batch-09-debate-170-progressive-transport-correction"
+}
