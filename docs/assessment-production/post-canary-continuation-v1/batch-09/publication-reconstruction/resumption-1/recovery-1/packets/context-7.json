@@ -1,0 +1,2264 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-timeout-recovery-shard-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1-timeout-recovery-1",
+  "contextIndex": 7,
+  "shardId": "shard-02-con",
+  "side": "con",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "17",
+  "debateId": "collins-oconnor-god-existence-2024",
+  "recoveryType": "minimum-two-side-field-disjoint-publication-resumption",
+  "originalPublicationPacketPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-17.json",
+  "originalFailedPartialOutputReusable": false,
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "includesSummary": false,
+  "moveIds": [
+    "con-agnostic-restraint",
+    "con-christian-moral-conflict",
+    "con-fine-tuning-reversal",
+    "con-constants-omnipotence",
+    "con-evolutionary-suffering",
+    "con-suffering-mystery-symmetry",
+    "con-resurrection-legend-development",
+    "con-private-revelation-limit",
+    "con-beauty-diversity",
+    "con-cumulative-mystery-restraint"
+  ],
+  "writableFields": [
+    "representativeQuotes.con",
+    "moveProse.con-agnostic-restraint",
+    "moveProse.con-christian-moral-conflict",
+    "moveProse.con-fine-tuning-reversal",
+    "moveProse.con-constants-omnipotence",
+    "moveProse.con-evolutionary-suffering",
+    "moveProse.con-suffering-mystery-symmetry",
+    "moveProse.con-resurrection-legend-development",
+    "moveProse.con-private-revelation-limit",
+    "moveProse.con-beauty-diversity",
+    "moveProse.con-cumulative-mystery-restraint",
+    "overallCommentary.con",
+    "aiExtension.con"
+  ],
+  "writableFieldCount": 13,
+  "allOtherFieldsUnavailableAndImmutable": true,
+  "publicationPacket": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-packet",
+    "protocolId": "assessment-production-post-canary-batch-09-publication-reconstruction",
+    "debateNumber": "17",
+    "debateId": "collins-oconnor-god-existence-2024",
+    "productionCanary": false,
+    "stagingOnly": true,
+    "metadata": {
+      "title": "Francis Collins vs Alex O'Connor: Does God Exist?",
+      "label": "Science and faith",
+      "date": "2026-08-25",
+      "duration": "1 hr 47 min",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fXBGvNc2mvU",
+      "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
+      "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 ecd1f180635870a64e8f324bb2ea556f040c235ba745369e73856bd3d5222a3e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+      "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed."
+    },
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Francis Collins",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Skeptical agnosticism",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "routes": [
+      {
+        "routeId": "pro-cumulative-christian-theism",
+        "side": "pro",
+        "description": "Establish Christian theism as more plausible than skeptical agnosticism through a cumulative case from cosmic fine-tuning and origin, objective morality, the resurrection and Christian revelation, and experiences of numinous beauty, while accounting for evolutionary suffering and the absence of coercive proof.",
+        "successCriteria": "The route succeeds if the converging considerations are reasonably explained by a loving, orderly creator and specifically support Christian commitment, with the evidential force of the whole exceeding the skeptical alternatives and the counterevidence from suffering and uncertainty.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-comparative-plausibility",
+          "tier": "motion",
+          "description": "Show that the combined evidence makes Christian theism more plausible than skeptical agnosticism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-creator",
+            "tier": "central",
+            "description": "Connect cosmic existence and life-permitting physical constants to an intelligent, orderly creator rather than an unexplained or multiverse alternative."
+          },
+          {
+            "bridgeId": "pro-central-christian-specificity",
+            "tier": "central",
+            "description": "Connect historical resurrection claims and revelation to Christianity rather than merely generic creator theism."
+          },
+          {
+            "bridgeId": "pro-central-cumulative-force",
+            "tier": "central",
+            "description": "Show that morality and beauty reinforce the scientific and historical considerations as a cumulative case despite uncertainty."
+          },
+          {
+            "bridgeId": "pro-central-suffering-compatibility",
+            "tier": "central",
+            "description": "Explain why evolutionary and physical suffering remain compatible with a loving God who creates through stable natural laws."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-epistemic-standard",
+            "tier": "subsidiary",
+            "description": "Defend rational commitment on substantial but noncoercive evidence rather than requiring mathematical proof."
+          },
+          {
+            "bridgeId": "pro-subsidiary-lawful-means",
+            "tier": "subsidiary",
+            "description": "Explain how divine purposes may operate through physical, evolutionary, and neural mechanisms without competing with them."
+          }
+        ]
+      },
+      {
+        "routeId": "con-skeptical-agnosticism",
+        "side": "con",
+        "description": "Establish skeptical agnosticism as the more warranted position by showing that the concept of God and the proposed evidence underdetermine Christian theism, that fine-tuning admits reversal or alternatives, that resurrection and public-revelation claims lack sufficient historical support, and that extensive suffering weighs against a loving creator.",
+        "successCriteria": "The route succeeds if the named considerations remain mysteries or support multiple explanations rather than preferentially supporting Christianity, especially when the improbability of apparently avoidable suffering under loving-creator theism is included in the comparative assessment.",
+        "motionBridge": {
+          "bridgeId": "con-motion-agnostic-restraint",
+          "tier": "motion",
+          "description": "Show that the total evidence does not warrant preferring Christian theism to skeptical agnosticism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-underdetermination",
+            "tier": "central",
+            "description": "Show that disputed or incomprehensible divine attributes prevent the evidence from identifying the Christian God with adequate confidence."
+          },
+          {
+            "bridgeId": "con-central-fine-tuning-reversal",
+            "tier": "central",
+            "description": "Show that narrow physical constraints may be unexpected under omnipotent creation and do not uniquely favor a creator."
+          },
+          {
+            "bridgeId": "con-central-suffering-counterevidence",
+            "tier": "central",
+            "description": "Show that extensive apparently avoidable evolutionary suffering is more expected under naturalism than under a loving creator."
+          },
+          {
+            "bridgeId": "con-central-christian-evidence",
+            "tier": "central",
+            "description": "Show that source-critical uncertainty and limits on private revelation weaken the move from generic possibility to Christianity."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-alternative-accounts",
+            "tier": "subsidiary",
+            "description": "Preserve naturalistic, evolutionary, legendary-development, and other rival explanations for the cited phenomena."
+          },
+          {
+            "bridgeId": "con-subsidiary-epistemic-modesty",
+            "tier": "subsidiary",
+            "description": "Distinguish acknowledging profound mysteries and existential stakes from claiming that they justify confident belief."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "fine-tuning-creation",
+        "title": "Fine-tuning, cosmic explanation, and divine power",
+        "weightPercent": 24,
+        "rationale": "This issue contains the principal scientific case for an intelligent creator and the central skeptical challenge that physical fine-tuning may constrain or count against an omnipotent God, including multiverse and ultimate-explanation alternatives.",
+        "timebox": "22:39–41:05",
+        "score": {
+          "pro": 81,
+          "con": 89
+        },
+        "displayRows": [
+          {
+            "pro": "pro-fine-tuning-creator-inference",
+            "con": "con-fine-tuning-reversal"
+          },
+          {
+            "pro": "pro-orderly-purposeful-parameters",
+            "con": "con-constants-omnipotence"
+          }
+        ]
+      },
+      {
+        "sectionId": "suffering-lawful-creation",
+        "title": "Evolutionary suffering and orderly creation",
+        "weightPercent": 23,
+        "rationale": "The comparative expectations of naturalism and loving-creator theism turn substantially on animal suffering, predation, extinction, and physical evil, together with the claim that stable natural laws and divine purposes explain their presence.",
+        "timebox": "42:45–55:07",
+        "score": {
+          "pro": 81,
+          "con": 90
+        },
+        "displayRows": [
+          {
+            "pro": "pro-evolutionary-suffering-lawful-plan",
+            "con": "con-evolutionary-suffering"
+          },
+          {
+            "pro": "pro-physical-suffering-stable-laws",
+            "con": "con-suffering-mystery-symmetry"
+          }
+        ]
+      },
+      {
+        "sectionId": "resurrection-revelation",
+        "title": "Resurrection, Christian revelation, and historical warrant",
+        "weightPercent": 22,
+        "rationale": "The resurrection and revelation are required to move the case from generic theism to Christianity, while Gospel source criticism, legendary development, martyrdom claims, Pauline testimony, and the public limits of private experience bear on that move.",
+        "timebox": "60:13–92:47",
+        "score": {
+          "pro": 74,
+          "con": 89
+        },
+        "displayRows": [
+          {
+            "pro": "pro-historical-resurrection-inference",
+            "con": "con-resurrection-legend-development"
+          },
+          {
+            "pro": "pro-holistic-christian-revelation",
+            "con": "con-private-revelation-limit"
+          }
+        ]
+      },
+      {
+        "sectionId": "morality-beauty",
+        "title": "Morality, beauty, and transcendent experience",
+        "weightPercent": 17,
+        "rationale": "Objective moral experience and numinous beauty provide distinct proposed signs of transcendence, while biblical moral concerns, aesthetic diversity, emotional and evolutionary accounts, and skeptical concessions define their comparative evidential reach.",
+        "timebox": "18:41–96:36",
+        "score": {
+          "pro": 75,
+          "con": 86
+        },
+        "displayRows": [
+          {
+            "pro": "pro-transcendent-moral-source",
+            "con": "con-christian-moral-conflict"
+          },
+          {
+            "pro": "pro-numinous-beauty-transcendence",
+            "con": "con-beauty-diversity"
+          }
+        ]
+      },
+      {
+        "sectionId": "cumulative-epistemic-case",
+        "title": "Cumulative evidence, uncertainty, and warranted commitment",
+        "weightPercent": 14,
+        "rationale": "The debate ultimately compares a cumulative rationale for noncoercive Christian commitment with agnostic restraint toward several acknowledged mysteries, making standards of proof, conceptual clarity, combined evidential force, and existential significance burden-relevant.",
+        "timebox": "4:33–103:39",
+        "score": {
+          "pro": 82,
+          "con": 87
+        },
+        "displayRows": [
+          {
+            "pro": "pro-noncoercive-evidence-standard",
+            "con": "con-agnostic-restraint"
+          },
+          {
+            "pro": "pro-convergent-case-for-trust",
+            "con": "con-cumulative-mystery-restraint"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-agnostic-restraint",
+        "sectionId": "cumulative-epistemic-case",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Agnosticism is warranted because God's nonexistence cannot be established, while the observed world still supplies reasons to doubt a traditional creator.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "4:33",
+        "sourceSpan": {
+          "startEvent": 124,
+          "endEvent": 165,
+          "startMs": 273280,
+          "endMs": 367360
+        },
+        "sourceExcerpt": "do you fall on here and for me when observing the world around me I I find so many inexplicable Mysteries so I have to uh die on that fence of agnosticism as I put it before uh but if you ask me to sort of place a bet I think that I'm I'm at least suspicious of the idea that this is compatible with a with a traditional Creator type figure and so I'd sort of fall in that in that",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-agnostic-restraint"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move establishes the con side's governing epistemic position by combining acknowledged uncertainty with affirmative suspicion about a traditional creator.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within constructive moves, it clearly states the principal stance and the observational basis offered for restraint."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it clearly states the principal stance and the observational basis offered for restraint."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The agnostic conclusion, its limited scope, and the distinction between uncertainty and suspicion are expressly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents suspicion and agnosticism rather than certainty, matching the limited observational warrant supplied."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (100 and 99); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is assessed within this short constructive statement of epistemic position."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly places the speaker on the fence of agnosticism while registering suspicion about compatibility with a traditional creator.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-noncoercive-evidence-standard",
+        "sectionId": "cumulative-epistemic-case",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "constructive",
+        "proposition": "God provides evidence sufficient for free personal commitment rather than coercive mathematical proof that would make belief unavoidable.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "12:31",
+        "sourceSpan": {
+          "startEvent": 339,
+          "endEvent": 358,
+          "startMs": 751240,
+          "endMs": 805639
+        },
+        "sourceExcerpt": "belief that's I don't think God intended for us to have proof if there was we would all be running around being good little Believers uh following what is in controvertible evidence that we absolutely have to accept this I think God had in mind something much more interesting and something that called more to us to make a decision uh not to have it forced upon you by some mathematical",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 387
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-epistemic-standard"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move supplies a subsidiary epistemic standard explaining why the proposed evidence need not amount to unavoidable mathematical proof.",
+          "responsivenessWithinClass": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast between evidence and coercive proof is clear, and the theological purpose assigned to that contrast is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker cautiously distinguishes evidence from proof, but the claim about divine intention remains a theological assertion."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move proposes an epistemic standard without evaluating a developed skeptical alternative in the selected span."
+          }
+        },
+        "evidenceBasis": "Collins contrasts his book's evidence-for-belief framing with incontrovertible proof and says unavoidable proof would produce compelled believers.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-convergent-case-for-trust",
+        "sectionId": "cumulative-epistemic-case",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "constructive",
+        "proposition": "The universe's beginning and fine-tuning, objective moral experience, beauty, and the failure of strict atheism jointly make trust in God reasonable.",
+        "importance": 3,
+        "finalScore": 84,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "13:22",
+        "sourceSpan": {
+          "startEvent": 359,
+          "endEvent": 435,
+          "startMs": 802440,
+          "endMs": 1005759
+        },
+        "sourceExcerpt": "of strict atheism really couldn't be sustained I got to that place where I had to decide whether to take the lead there was no going back that had already crumbled behind me the only real alternative was to stay in this awkward uncertain space or to say okay I find it no longer possible to stay there and to resist yeah that's good I trust you God uh to meet me on the other side",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-comparative-plausibility"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move presents the pro side's cumulative route from several considerations to rational personal trust in God.",
+          "responsivenessWithinClass": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The cumulative proposition is recoverable, but how much each consideration contributes and how independence is secured remain unspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move frames trust as a response after atheism became unsustainable for the speaker, while expressly retaining uncertainty."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Remaining indefinitely in an uncertain agnostic position",
+          "decisiveQualification": "The move treats that option as live but personally unstable after the cumulative considerations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the pro motion bridge by presenting the combined evidence as sufficient for trust."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "It recognizes continued uncertainty as an alternative, though it does not deeply compare the independent strength of that option."
+          }
+        },
+        "evidenceBasis": "The locked span and proposition join cosmic origin, fine-tuning, morality, and beauty to the collapse of strict atheism and a decision to trust God.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-christian-moral-conflict",
+        "sectionId": "morality-beauty",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Christianity conflicts with the moral intuitions invoked as evidence for God because biblical treatments of slavery and women generate serious moral objections.",
+        "importance": 2,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "18:41",
+        "sourceSpan": {
+          "startEvent": 490,
+          "endEvent": 547,
+          "startMs": 1121360,
+          "endMs": 1235240
+        },
+        "sourceExcerpt": "good enough evidence to believe in the truth claims of Christianity The crucial parts of the Resurrection uh for example I I that's a sticking point for a lot of people that brings a lot of people to Faith it doesn't do it for me also the moral qualms the same moral intuition that I'm told I'm supposed to rely upon to prove the existence of God is that same moral intuition that",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-cumulative-force"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-convergent-case-for-trust",
+            "pro-noncoercive-evidence-standard"
+          ],
+          "components": [
+            {
+              "componentId": "con-christian-moral-conflict-component-01",
+              "targetMoveId": "pro-convergent-case-for-trust",
+              "text": "Whether moral experience genuinely reinforces the cumulative case for Christian belief.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-christian-moral-conflict-component-02",
+              "targetMoveId": "pro-noncoercive-evidence-standard",
+              "text": "Whether the available evidence is sufficient for specifically Christian commitment.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor directly turns the invoked moral intuition against Christianity by citing biblical treatment of slavery and women, thereby contacting the moral component of Collins's cumulative case and the sufficiency of Christian evidence.",
+          "responsivenessWithinClass": {
+            "value": 75,
+            "rationale": "It contacts a decisive cumulative component but does not answer the scientific, aesthetic, or broader convergence claims."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts a decisive cumulative component but does not answer the scientific, aesthetic, or broader convergence claims."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection is specifically directed to Christianity and identified biblical moral subjects rather than indiscriminately to all theism."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents serious moral qualms rather than a conclusive disproof, though the selected evidence does not develop the textual cases."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Moral intuition may support generic theism even if particular biblical passages remain disputed.",
+          "decisiveQualification": "Christian specificity makes conflicts within Christian scripture relevant to the cumulative inference."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally attacks morality's claimed contribution to the pro cumulative-force bridge."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The objection is live and relevant but omits a decisive source-supported qualification available to the opposing position."
+          }
+        },
+        "evidenceBasis": "O'Connor says the moral intuition offered as evidence for God also produces objections to Christianity, including its treatments of slavery and women.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-fine-tuning-creator-inference",
+        "sectionId": "fine-tuning-creation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "constructive",
+        "proposition": "Life-permitting physical constants require explanation, and an intelligent creator is more plausible than an empirically inaccessible multiverse while also addressing why anything exists.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "22:39",
+        "sourceSpan": {
+          "startEvent": 604,
+          "endEvent": 714,
+          "startMs": 1359440,
+          "endMs": 1626480
+        },
+        "sourceExcerpt": "life or this kind of Earth just anything beyond some particles which hard to me imagine much Intelligence coming out of particles flying apart by themselves so anything that you would call thought seems to require these particular parameters to be set in a very precise way and that seems to cry out for an explanation and again as somebody who also finds Beauty in the equations I find awe in the values of those constants",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 423
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-creator"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move supplies the principal pro scientific inference from life-permitting constants and cosmic existence to an intelligent creator.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within constructive moves, it directly develops a central route and compares the creator hypothesis with a multiverse alternative."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "Within constructive moves, it directly develops a central route and compares the creator hypothesis with a multiverse alternative."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The life-permitting parameter claim, demand for explanation, creator inference, and multiverse comparison are clearly distinguishable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The language of greater plausibility is qualified, but the comparative probability exceeds the support supplied for the relevant priors."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An empirically inaccessible multiverse may explain observed fine-tuning through selection effects.",
+          "decisiveQualification": "The move argues that this alternative lacks empirical access and does not answer why anything exists."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "Specific dependence on precise constants is invoked and a rival is compared, but probability ranges and rival priors are not defended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the indispensable central bridge connecting fine-tuning and existence to a creator."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The rival is recognized but dismissed with insufficient attention to the decisive comparative qualification."
+          }
+        },
+        "evidenceBasis": "Collins describes precise parameters required for complex thought, says they cry out for explanation, and contrasts a creator with an inaccessible multiverse.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-fine-tuning-reversal",
+        "sectionId": "fine-tuning-creation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Fine-tuning may count against creator theism because an unconstrained God should not require life to depend on a narrow physical knife edge or hostile meta-conditions.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "27:40",
+        "sourceSpan": {
+          "startEvent": 733,
+          "endEvent": 873,
+          "startMs": 1660880,
+          "endMs": 1965120
+        },
+        "sourceExcerpt": "force or or in other words when God goes to create the universe is he constrained in the sense that if he wants to create this thought permitting universe that everything has to be so finely balanced in other words I'm not sure why the meta conditions are set up so that everything is on on such a knife edge maybe I can spell it out like this right so imagine I have a friend who",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-fine-tuning-reversal"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-fine-tuning-creator-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-fine-tuning-reversal-component-01",
+              "targetMoveId": "pro-fine-tuning-creator-inference",
+              "text": "Whether narrow life-permitting constants are more expected under an unconstrained intelligent creator.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor expressly diagnoses the creator inference's likelihood problem: an omnipotent creator need not make life depend upon hostile knife-edge meta-conditions, so fine-tuning may be unexpected rather than expected on theism.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It explicitly attacks the decisive comparative inference and states the reversal consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly attacks the decisive comparative inference and states the reversal consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection concerns an unconstrained creator and uses possibility language, keeping its reversal thesis and scope clear."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move says fine-tuning may count against creator theism and does not claim that the reversal conclusively disproves God."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Fine-tuning reflects a creator selecting orderly parameters for embodied intelligent life.",
+          "decisiveQualification": "An omnipotent creator may not be antecedently restricted to the narrow physical route observed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the con central fine-tuning-reversal bridge at nearly the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor emphasizes hostile knife-edge meta-conditions and argues that these are not obviously expected if a creator is unconstrained.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-orderly-purposeful-parameters",
+        "sectionId": "fine-tuning-creation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "reply",
+        "proposition": "God creates through orderly laws, and God's desire for loving relationships guides the selection of physical parameters capable of producing complex creatures.",
+        "importance": 3,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "38:01",
+        "sourceSpan": {
+          "startEvent": 1018,
+          "endEvent": 1057,
+          "startMs": 2281839,
+          "endMs": 2383520
+        },
+        "sourceExcerpt": "goal I don't think that's it's constrained by the fact that God wants to love his creatures that's who he is and if that's the case I don't know that it's constraining him in terms of physics to choose the right parameters to make that happen it's a it's an it's a means to the end the end is What mattered but he couldn't have got that same outcome through different parameters that's the constraint that I'm talking about unless you change the laws",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 84,
+          "characterCount": 450
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-fine-tuning-reversal"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-fine-tuning-reversal"
+          ],
+          "components": [
+            {
+              "componentId": "pro-orderly-purposeful-parameters-component-01",
+              "targetMoveId": "con-fine-tuning-reversal",
+              "text": "Why a powerful God would choose narrow physical parameters rather than create life under different conditions.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Collins answers that orderly physical means serve God's relational goal and treats suitable parameters as means to that end, but he does not fully explain why alternative parameters were unavailable.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "It contacts the decisive purpose question but leaves the omnipotence and alternative-parameters component substantially unanswered."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive purpose question but leaves the omnipotence and alternative-parameters component substantially unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The ends-means distinction is clear, but the claim that love guides parameter choice shifts between divine nature, goal, and physical constraint."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker repeatedly qualifies the account, yet assumes without demonstration that the selected parameters suitably follow from the loving goal."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An omnipotent God could realize loving relationships through materially different constants or laws.",
+          "decisiveQualification": "Calling parameters means to an end does not by itself show that these particular means were necessary or preferable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally attacks the con fine-tuning reversal by offering a purposeful-order account of parameters."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Collins says God's loving goal is not an external physical constraint and describes the chosen parameters as means to that relational end.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-constants-omnipotence",
+        "sectionId": "fine-tuning-creation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Physical constants are not logical necessities, so claiming that God could not produce a life-permitting universe under different constants poses a genuine challenge to divine omnipotence.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "39:41",
+        "sourceSpan": {
+          "startEvent": 1058,
+          "endEvent": 1096,
+          "startMs": 2381200,
+          "endMs": 2465280
+        },
+        "sourceExcerpt": "sided triangles just aren't things and so I totally understand that but if it's well God couldn't create a life permitting Universe in which everything was the same except for gravity being two times as strong he couldn't have done that well I do see that as a challenge to his omnipotence because that doesn't seem like logical contradiction in the same way seems like a physical",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-fine-tuning-reversal"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-orderly-purposeful-parameters",
+            "pro-fine-tuning-creator-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-constants-omnipotence-component-01",
+              "targetMoveId": "pro-orderly-purposeful-parameters",
+              "text": "Whether God's chosen relational end explains or necessitates the specific life-permitting constants.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-constants-omnipotence-component-02",
+              "targetMoveId": "pro-fine-tuning-creator-inference",
+              "text": "Whether the constants support an intelligent creator without creating an omnipotence problem.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor distinguishes logical impossibility from merely different physics and argues that inability to create life with altered gravity would challenge omnipotence.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "It explicitly contacts the modal premise left unresolved by Collins and links it to the fine-tuning inference."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the modal premise left unresolved by Collins and links it to the fine-tuning inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Logical contradiction, physical difference, and the limited omnipotence challenge are cleanly distinguished in the argument."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "O'Connor presents a genuine challenge rather than claiming a decisive contradiction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God cannot make contradictions, and altered constants might prevent embodied intelligent life under the same laws.",
+          "decisiveQualification": "A different gravitational strength is not shown to be logically contradictory, and God may choose different laws or embodiments."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The distinction between logical and merely physical impossibility directly supports the omnipotence objection and answers the preceding means claim."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly and strongly supports the con central fine-tuning-reversal bridge."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor contrasts impossible objects such as one-sided triangles with a universe having stronger gravity, which appears physically different rather than contradictory.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-evolutionary-suffering",
+        "sectionId": "suffering-lawful-creation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Immense and apparently unnecessary evolutionary suffering is expected under atheistic naturalism but surprising under a loving creator intending relationship with human beings.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "42:45",
+        "sourceSpan": {
+          "startEvent": 1141,
+          "endEvent": 1255,
+          "startMs": 2565880,
+          "endMs": 2820359
+        },
+        "sourceExcerpt": "but in terms of the numbers as well even just today the number of animals alive experiencing pain suffering the world is unfathomably huge and so I ask okay what would I expect to see if this was being sort of organized with the intention of bringing about human beings with the intention to enter into a loving relationship with them I don't think I'd expect to see anything like",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-suffering-counterevidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move develops the central comparative argument that vast animal suffering is more expected on naturalism than loving-creator theism.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within constructive moves, it directly states the comparative expectation and names the scale and apparent needless character of suffering."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "Within constructive moves, it directly states the comparative expectation and names the scale and apparent needless character of suffering."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparison is expressly between atheistic naturalism and a loving creator intending human relationship, with apparent rather than certain needlessness."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conclusion is comparative and expectation-based, avoiding the stronger claim that suffering logically excludes a creator."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolutionary suffering may be an unavoidable consequence of a valuable lawful creative process.",
+          "decisiveQualification": "The scale and distribution of suffering still require explanation under an intentionally loving plan."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the indispensable con central suffering-counterevidence bridge."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt emphasizes the unfathomably large number of suffering animals and asks whether that is expected from a creator seeking loving relationship with humans.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-evolutionary-suffering-lawful-plan",
+        "sectionId": "suffering-lawful-creation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "reply",
+        "proposition": "Evolution's suffering is compatible with a God of order because an elegant lawful creative process can be providentially directed without repeated supernatural interventions.",
+        "importance": 3,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "47:00",
+        "sourceSpan": {
+          "startEvent": 1257,
+          "endEvent": 1318,
+          "startMs": 2820359,
+          "endMs": 2978359
+        },
+        "sourceExcerpt": "god of order having put in place natural laws that are going to govern the behavior of matter and energy the idea that a creative process that involved a lot of Supernatural inter positions in that effort uh was not the path that fit together uh with this rigorous sort of scientifically well-designed plan whereas evolution is this incredibly elegant way to achieve those goals yes with a lot of pain and suffering",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 415
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-suffering-counterevidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-evolutionary-suffering"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolutionary-suffering-lawful-plan-component-01",
+              "targetMoveId": "con-evolutionary-suffering",
+              "text": "Whether vast evolutionary suffering is unexpected under a loving creator intending human relationship.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly concedes suffering and explains evolution as an elegant, law-governed process fitting a God of order without repeated supernatural intervention.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "It contacts the decisive compatibility demand but only partially answers why the process required suffering on the observed scale."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive compatibility demand but only partially answers why the process required suffering on the observed scale."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The lawful-plan answer is clear, though 'directed' and the relevant degree of intervention remain underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "It establishes compatibility more readily than comparative expectation or necessity."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A loving creator could use lawful evolution while reducing predation, pain, and extinction.",
+          "decisiveQualification": "General elegance and nonintervention do not establish that the observed quantity of suffering was required."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally attacks the con suffering bridge by presenting suffering within an orderly evolutionary plan."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The move grants pain but does not engage the strongest less-suffering lawful alternative."
+          }
+        },
+        "evidenceBasis": "Collins describes natural laws and evolution as an elegant scientific plan suited to a God of order, while explicitly conceding extensive pain and suffering.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-suffering-mystery-symmetry",
+        "sectionId": "suffering-lawful-creation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Unknown divine reasons for suffering permit an equivalent appeal to unknown natural explanations for fine-tuning, while less agonizing lawful ecosystems show that animal suffering was avoidable.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "49:34",
+        "sourceSpan": {
+          "startEvent": 1319,
+          "endEvent": 1444,
+          "startMs": 2974680,
+          "endMs": 3234359
+        },
+        "sourceExcerpt": "say look I I I don't obviously I don't know why there's so much suffering I can't explain that but I can say that I I I believe in God and I know that even if I don't know what the explanation is I TR that there probably is one I just don't know what it is a lot of people say that and I say okay fine but then if we rewind a moment to find tuning and I say look this is this is a",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 87,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-suffering-counterevidence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-evolutionary-suffering-lawful-plan",
+            "pro-fine-tuning-creator-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-suffering-mystery-symmetry-component-01",
+              "targetMoveId": "pro-evolutionary-suffering-lawful-plan",
+              "text": "Whether appeal to unknown divine purposes adequately answers the evidential force of evolutionary suffering.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-suffering-mystery-symmetry-component-02",
+              "targetMoveId": "pro-fine-tuning-creator-inference",
+              "text": "Whether unexplained fine-tuning can likewise remain an unresolved mystery under naturalism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply diagnoses an asymmetry in tolerating unknown divine reasons while rejecting unknown natural explanations, then adds less-agonizing lawful ecosystems as a defeating alternative.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "It explicitly attacks the prior inference, identifies the symmetry problem, and states why lawful compatibility does not establish necessity."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly attacks the prior inference, identifies the symmetry problem, and states why lawful compatibility does not establish necessity."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Both the epistemic symmetry and the avoidability claim are clearly separated and qualified as challenges rather than demonstrations."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move argues for symmetrical restraint and avoidability without claiming exhaustive knowledge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Unknown divine reasons and lawful regularity may jointly justify trust despite suffering.",
+          "decisiveQualification": "The same tolerance for unknown explanation must be available to natural alternatives, and avoidability remains evidentially relevant."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly reinforces the central con suffering-counterevidence bridge and its comparative logic."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor restates the unknown-divine-reason reply, applies equivalent restraint to fine-tuning, and argues that lawful ecosystems could involve less agonizing predation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-physical-suffering-stable-laws",
+        "sectionId": "suffering-lawful-creation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "reply",
+        "proposition": "Physical suffering follows from stable natural laws, and avoiding it would require continual divine intervention that would compromise God's ordered creation.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "53:51",
+        "sourceSpan": {
+          "startEvent": 1445,
+          "endEvent": 1472,
+          "startMs": 3231119,
+          "endMs": 3307000
+        },
+        "sourceExcerpt": "of physical laws uh an earthquake that kills animals and people because of tectonic plates that are moving around that are part of the way in which the laws of physics apply to our planet many of those were innocent people and animals but they died anyway that in his description as a physicist once again sort of fits this it all comes with the package and unless you want God to",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-suffering-counterevidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-suffering-mystery-symmetry",
+            "con-evolutionary-suffering"
+          ],
+          "components": [
+            {
+              "componentId": "pro-physical-suffering-stable-laws-component-01",
+              "targetMoveId": "con-suffering-mystery-symmetry",
+              "text": "Whether apparently avoidable suffering follows from stable laws rather than an arbitrary divine choice.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-physical-suffering-stable-laws-component-02",
+              "targetMoveId": "con-evolutionary-suffering",
+              "text": "Why innocent animal and human suffering occurs under a loving ordered creation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Collins explains earthquakes and related harms as consequences of stable physical laws and says eliminating them would require continuing intervention, but does not show that all relevant laws or harms are necessary.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "It contacts the stable-law demand with a concrete example while only partially addressing avoidability and comparative expectation."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the stable-law demand with a concrete example while only partially addressing avoidability and comparative expectation."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The earthquake example is clear, but the generalization from tectonics to physical suffering as a package is broad."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Stable laws explain proximate mechanisms, while the stronger claim that avoidance requires continual intervention is insufficiently established."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Stable laws could have different parameters or structures producing fewer catastrophic harms.",
+          "decisiveQualification": "Showing that current tectonics obey laws does not show that every less-harmful lawful world is unavailable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The response addresses intervention within current laws but underdevelops the strongest alternative-law formulation."
+          }
+        },
+        "evidenceBasis": "Collins cites deaths caused by earthquakes and tectonic activity as consequences of physical laws and argues prevention would require recurring intervention.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-historical-resurrection-inference",
+        "sectionId": "resurrection-revelation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "constructive",
+        "proposition": "Historical testimony, the empty tomb, resurrection appearances, and witnesses' costly persistence make Jesus's bodily resurrection the most likely explanation.",
+        "importance": 3,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "60:13",
+        "sourceSpan": {
+          "startEvent": 1611,
+          "endEvent": 1690,
+          "startMs": 3613200,
+          "endMs": 3836760
+        },
+        "sourceExcerpt": "I don't have to explain to God what suffering is like and while it's really horrible because God isn't an observer God's a participant in that that's somehow reassuring and that's not true of all Fai but it's true of my faith and then the resurrection that three days later the tomb was empty the stone had rolled away and that multiple Witnesses saw what appeared to be the Risen",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-christian-specificity"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move supplies the main pro bridge from historical testimony, the empty tomb, appearances, and costly witness persistence to Christian specificity.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The explanatory conclusion and evidence categories are clear; the comparison class behind 'most likely' remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Calling resurrection the most likely explanation exceeds the excerpt's compressed source verification and alternative comparison."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Legend, grief experience, textual development, or an unknown natural event may explain the traditions.",
+          "decisiveQualification": "The move relies on multiple testimony and costly persistence but does not fully compare these rival mechanisms."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "Several specific historical claims are named, yet their independence, dating, martyrdom documentation, and rival explanations remain insufficiently defended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central Christian-specificity bridge required to move from generic theism to Christianity."
+          },
+          "representationalCharity": {
+            "value": 74,
+            "rationale": "Alternative explanations are implicitly recognized, yet their historical base rates and source-critical strengths are not seriously developed."
+          }
+        },
+        "evidenceBasis": "Collins invokes testimony, an empty tomb, appearances, and witnesses' costly persistence, then identifies bodily resurrection as the most likely explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-legend-development",
+        "sectionId": "resurrection-revelation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Resurrection appearances are better explained as legendary development because the earliest form of Mark lacks them and later sources supply increasingly elaborate accounts.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "71:46",
+        "sourceSpan": {
+          "startEvent": 1916,
+          "endEvent": 1963,
+          "startMs": 4306280,
+          "endMs": 4413760
+        },
+        "sourceExcerpt": "account we have is Mark and the earliest versions of Mark doesn't contain or don't contain any post-resurrection appearances at all the story ends with the woman coming to the tomb and the tomb is empty but that's where it ends and as the sources get later so we get Matthew and Luke and John the witnesses increase and the stories become more fanciful and Theological so then you",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-christian-evidence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-historical-resurrection-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-legend-development-component-01",
+              "targetMoveId": "pro-historical-resurrection-inference",
+              "text": "Whether the resurrection-appearance traditions are early, independent evidence best explained by a bodily resurrection.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies chronological literary development from Mark to later Gospels and states the defeating consequence that elaboration better explains the appearances.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It explicitly contacts the historical inference, supplies a source-critical mechanism, and states a rival explanatory consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the historical inference, supplies a source-critical mechanism, and states a rival explanatory consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is specifically about post-resurrection appearances and progressive Gospel elaboration, not the nonexistence of every early belief."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The developmental pattern supports a legendary hypothesis, though calling it better requires comparison with Pauline and other early testimony."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Mark's abrupt ending need not deny appearances, and Pauline testimony predates the Gospels.",
+          "decisiveQualification": "The selected Gospel sequence still raises a source-development problem, but it is not the entire early evidence base."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden of weakening the historical evidence for specifically Christian claims."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply handles Gospel chronology well but omits the strongest qualification from pre-Gospel Pauline testimony."
+          }
+        },
+        "evidenceBasis": "O'Connor notes that the earliest Mark lacks post-resurrection appearances and says later Gospels add witnesses and increasingly elaborate theological narratives.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-transcendent-moral-source",
+        "sectionId": "morality-beauty",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "reply",
+        "proposition": "Cross-cultural recognition of good and evil points beyond evolutionary explanation toward a holy source of goodness and love.",
+        "importance": 2,
+        "finalScore": 72,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "79:23",
+        "sourceSpan": {
+          "startEvent": 2123,
+          "endEvent": 2162,
+          "startMs": 4763560,
+          "endMs": 4866159
+        },
+        "sourceExcerpt": "evolutionary sociobiology kind of Direction and that forced me into this recognition that there is a source there that I can't explain scientifically and if I was looking for a source outside of science it seems like it's a holy source that cares about good and wants me to follow that rule even though I'm pretty lousy at it and that adds a whole another dimension to this mathematical physicist God who now is a god of love and of goodness",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 81,
+          "characterCount": 441
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-cumulative-force"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-christian-moral-conflict",
+            "con-agnostic-restraint"
+          ],
+          "components": [
+            {
+              "componentId": "pro-transcendent-moral-source-component-01",
+              "targetMoveId": "con-christian-moral-conflict",
+              "text": "Whether biblical treatments of slavery and women conflict with the moral intuition invoked for Christianity.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-transcendent-moral-source-component-02",
+              "targetMoveId": "con-agnostic-restraint",
+              "text": "Whether unexplained objective moral experience counts positively toward a transcendent source.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move offers positive moral-source material but does not answer the decisive biblical-conflict objection concerning slavery and women, making it relevant contrary material rather than a direct answer.",
+          "responsivenessWithinClass": {
+            "value": 57,
+            "rationale": "It contacts the general moral-evidence issue but leaves the primary Christian internal-conflict demand unaddressed."
+          },
+          "responsiveness": {
+            "value": 69,
+            "rationale": "It contacts the general moral-evidence issue but leaves the primary Christian internal-conflict demand unaddressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The cross-cultural moral phenomenon and transcendent inference are clear, but the scope of consensus and meaning of goodness remain compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents a personal inference rather than proof, though movement from unexplained morality to a holy loving source is underwarranted."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolutionary and cultural mechanisms may explain widespread moral judgments without a transcendent source.",
+          "decisiveQualification": "Difficulty explaining morality scientifically does not itself identify a holy source of goodness and love."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It centrally supports morality's contribution to the pro cumulative-force bridge, despite not resolving the Christian objection."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The naturalistic alternative is mentioned but dismissed too quickly without its strongest cultural and evolutionary qualifications."
+          }
+        },
+        "evidenceBasis": "Collins says evolutionary sociobiology did not explain the moral phenomenon for him and infers an external holy source concerned with goodness and love.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-holistic-christian-revelation",
+        "sectionId": "resurrection-revelation",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "reply",
+        "proposition": "The New Testament's sweeping portrayal of Jesus and its resurrection case can rationally compel commitment without resolving every textual dispute or attaining proof.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "81:03",
+        "sourceSpan": {
+          "startEvent": 2163,
+          "endEvent": 2213,
+          "startMs": 4863719,
+          "endMs": 5007800
+        },
+        "sourceExcerpt": "New Testament theologians about M and Q and what got added here what got subtracted there um I just have not felt the need for that because what I read through there is actually ringing true to me as something that represents what I think I need to know in big sweeping terms about God and about Jesus I do find it compelling as far as not just the life and the crucifixion but the resurrection",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 394
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-christian-evidence"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-resurrection-legend-development",
+            "con-christian-moral-conflict"
+          ],
+          "components": [
+            {
+              "componentId": "pro-holistic-christian-revelation-component-01",
+              "targetMoveId": "con-resurrection-legend-development",
+              "text": "Whether progressive Gospel elaboration and the earliest Mark undermine bodily-resurrection testimony.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-holistic-christian-revelation-component-02",
+              "targetMoveId": "con-christian-moral-conflict",
+              "text": "Whether unresolved textual and moral disputes defeat a holistic Christian reading.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply explains why Collins finds the New Testament holistically compelling despite source disputes, but it does not answer the specific Mark-to-later-Gospels developmental evidence.",
+          "responsivenessWithinClass": {
+            "value": 50,
+            "rationale": "It is relevant to historical warrant but leaves the decisive source-critical inference and moral-text objections uncontacted."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is relevant to historical warrant but leaves the decisive source-critical inference and moral-text objections uncontacted."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The holistic method is recoverable, but 'ringing true' and 'sweeping terms' provide unstable evidential criteria."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Personal compellingness is accurately reported, but its use as public historical warrant remains somewhat overstated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Source-critical disputes may materially alter the historical reliability of the resurrection narratives.",
+          "decisiveQualification": "A text's holistic resonance does not resolve whether later resurrection details developed over time."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 69,
+            "rationale": "Holistic trust can coexist with unresolved details, but it does not logically defeat the specific legendary-development inference."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Collins says he does not need to resolve M, Q, additions, or subtractions because the New Testament's sweeping portrayal of God, Jesus, and resurrection rings true.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-private-revelation-limit",
+        "sectionId": "resurrection-revelation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Personal revelation could raise an individual's belief in God, but private experience has little force as public evidence and intellectual argument cannot be the only accessible route to faith.",
+        "importance": 3,
+        "finalScore": 91,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "89:59",
+        "sourceSpan": {
+          "startEvent": 2384,
+          "endEvent": 2459,
+          "startMs": 5399679,
+          "endMs": 5567480
+        },
+        "sourceExcerpt": "and I I wouldn't rule it out and I think that one of the most legitimate ways to come to believe in God if not the most legitimate way is through sort of personal experience Revelation it's not the kind of thing that's going to convince another person that's why it's laughed out of the room in debates if you're doing a public debate with somebody like if we were if we were here",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-christian-evidence"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-holistic-christian-revelation",
+            "pro-noncoercive-evidence-standard"
+          ],
+          "components": [
+            {
+              "componentId": "con-private-revelation-limit-component-01",
+              "targetMoveId": "pro-holistic-christian-revelation",
+              "text": "Whether personally compelling Christian revelation supplies adequate public warrant for others.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-private-revelation-limit-component-02",
+              "targetMoveId": "pro-noncoercive-evidence-standard",
+              "text": "Whether accessible faith may rationally rest on noncoercive personal evidence rather than public proof.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply grants that private revelation can justify an individual, then justifies the replacement public-evidence demand because private experience cannot carry the same force for other people.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "It preserves the legitimacy of personal experience while explicitly answering its limited role in public comparative argument."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It preserves the legitimacy of personal experience while explicitly answering its limited role in public comparative argument."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between individual justification, public persuasion, and accessible routes to faith is carefully stated and qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move expressly allows personal revelation to be legitimate while limiting interpersonal force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A genuine private revelation could rationally make God highly probable for its recipient.",
+          "decisiveQualification": "The same experience supplies little intersubjective evidence to someone who did not receive it."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden concerning limits on revelation as public Christian evidence."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor calls personal revelation a legitimate route for an individual while explaining that it cannot be expected to convince another participant in public debate.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-numinous-beauty-transcendence",
+        "sectionId": "morality-beauty",
+        "side": "pro",
+        "speaker": "Francis Collins",
+        "moveKind": "constructive",
+        "proposition": "Experiences of numinous beauty and musical longing can provide fleeting indications of a transcendent reality that ordinary natural description may miss.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "93:20",
+        "sourceSpan": {
+          "startEvent": 2476,
+          "endEvent": 2498,
+          "startMs": 5600320,
+          "endMs": 5664040
+        },
+        "sourceExcerpt": "the numinous um for me oftentimes music the the second movement of Beethoven's Third Symphony the the the the funeral March in that C minor incredibly aching music that brings tears to your eyes even though you didn't expect it and somehow that aching longing comes into mind and you're like there's something here I'm supposed to be part of more often but it's gone about as soon",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-cumulative-force"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move offers numinous musical experience as a distinct, modest contribution to the cumulative transcendent case.",
+          "responsivenessWithinClass": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The experiential claim is clear, but 'numinous' and 'something more' remain intentionally open-textured."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The language of something possibly beyond ordinary description matches the anecdotal and phenomenological warrant provided."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It centrally supports beauty's contribution to the cumulative case, though with limited comparative force."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The constructive experiential report does not itself assess a developed naturalistic or aesthetic alternative explanation."
+          }
+        },
+        "evidenceBasis": "Collins describes unexpected tears and aching longing during Beethoven's Third Symphony as a fleeting experience suggestive of something more.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-beauty-diversity",
+        "sectionId": "morality-beauty",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The diversity of objects and experiences called beautiful makes it difficult to infer a single intrinsic maximum of beauty resembling God.",
+        "importance": 2,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "96:00",
+        "sourceSpan": {
+          "startEvent": 2543,
+          "endEvent": 2560,
+          "startMs": 5760719,
+          "endMs": 5796719
+        },
+        "sourceExcerpt": "question if you look at and and this is why by the way I understand why people use this argument from from beauty to God because like what is this thing that you're longing for well maybe it's something like a some kind of intrinsic maximum of of of beauty I find that quite difficult to cognize I find that difficult to sort of look at a painting and a bit of music and a really good pizza",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 390
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-cumulative-force"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-numinous-beauty-transcendence",
+            "pro-convergent-case-for-trust"
+          ],
+          "components": [
+            {
+              "componentId": "con-beauty-diversity-component-01",
+              "targetMoveId": "pro-numinous-beauty-transcendence",
+              "text": "Whether diverse experiences of beauty support inference to a single transcendent source or maximum.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-beauty-diversity-component-02",
+              "targetMoveId": "pro-convergent-case-for-trust",
+              "text": "Whether beauty materially reinforces the broader cumulative case.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor directly challenges the inference by contrasting paintings, music, and pizza and questioning whether they intelligibly point to one intrinsic maximum resembling God.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It explicitly contacts the unifying inference behind the beauty argument and its cumulative use."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the unifying inference behind the beauty argument and its cumulative use."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection targets a single intrinsic maximum inferred from heterogeneous beautiful objects and clearly limits itself to difficulty of inference."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker says the inference is difficult to cognize rather than claiming aesthetic diversity disproves transcendence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Different beautiful objects may participate analogically in one transcendent source of beauty.",
+          "decisiveQualification": "Heterogeneous experiences do not by themselves reveal a common intrinsic maximum or identify that maximum with God."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The heterogeneity objection coherently undercuts the move from varied beauty experiences to one maximally beautiful divine source."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "Painting, music, and pizza provide clear counterexamples to simple uniformity, though deeper aesthetic theories are not compared."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor acknowledges why beauty prompts transcendence arguments but contrasts painting, music, and pizza to question a single intelligible maximum.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-cumulative-mystery-restraint",
+        "sectionId": "cumulative-epistemic-case",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Fine-tuning, suffering, beauty, and the resurrection remain profound mysteries that do not justify confident conclusions about God's existence.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "102:29",
+        "sourceSpan": {
+          "startEvent": 2724,
+          "endEvent": 2754,
+          "startMs": 6149760,
+          "endMs": 6219560
+        },
+        "sourceExcerpt": "actually just does know a ton about fine tuning he can probably like school both of us fine but but when it comes to those sort of big consequential questions about the existence of God and stuff like that and what beauty really means man like if if somebody professes that kind of confidence on questions like that then I immediately treat them with suspicion maybe that's one of",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-agnostic-restraint"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-convergent-case-for-trust",
+            "pro-fine-tuning-creator-inference",
+            "pro-historical-resurrection-inference",
+            "pro-numinous-beauty-transcendence"
+          ],
+          "components": [
+            {
+              "componentId": "con-cumulative-mystery-restraint-component-01",
+              "targetMoveId": "pro-convergent-case-for-trust",
+              "text": "Whether fine-tuning, suffering, resurrection, and beauty jointly justify confident trust in God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-cumulative-mystery-restraint-component-02",
+              "targetMoveId": "pro-fine-tuning-creator-inference",
+              "text": "Whether acknowledged expertise and mystery permit confidence in the creator inference.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-cumulative-mystery-restraint-component-03",
+              "targetMoveId": "pro-historical-resurrection-inference",
+              "text": "Whether unresolved historical mystery warrants a confident resurrection conclusion.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-cumulative-mystery-restraint-component-04",
+              "targetMoveId": "pro-numinous-beauty-transcendence",
+              "text": "Whether uncertainty about beauty's meaning supports a transcendent conclusion.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply synthesizes the named issues and argues that their unresolved, consequential character supports suspicion of confident theological conclusions and continued restraint.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It directly contacts the cumulative confidence demand across several components, though it summarizes rather than reargues each issue."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly contacts the cumulative confidence demand across several components, though it summarizes rather than reargues each issue."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The restraint conclusion is clear, but the threshold for objectionable confidence is not precisely specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The proposition is itself modest and expressly tied to unresolved mysteries."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Several individually inconclusive considerations may jointly justify trust through cumulative convergence.",
+          "decisiveQualification": "A cumulative case still requires defended direction, independence, and comparative force for its constituent considerations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly supports the con motion bridge by arguing that the total evidence does not warrant preferring Christian theism."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The synthesis recognizes the subjects' significance but compresses the strongest Bayesian rationale for cumulative convergence."
+          }
+        },
+        "evidenceBasis": "O'Connor groups fine-tuning, suffering, beauty, and resurrection as profound unresolved questions and treats professed confidence about them with suspicion.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "calculatedScores": {
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 78.58,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 88.44,
+          "burdenCompletionAdjustment": 0,
+          "score": 88
+        }
+      },
+      "winner": "con",
+      "winningMargin": 9,
+      "scoreProtocolId": "assessment-production-post-canary-batch-09-single-deterministic-score-pass"
+    },
+    "sourceChain": {
+      "transcriptPath": ".assessment-cache/captions/fXBGvNc2mvU/transcript.txt",
+      "transcriptSha256": "ecd1f180635870a64e8f324bb2ea556f040c235ba745369e73856bd3d5222a3e",
+      "eventsPath": ".assessment-cache/captions/fXBGvNc2mvU/events.json",
+      "eventsSha256": "ba14e5a774731f274b02161a4f104a56d6634440794eaa4cec99451e48043e77",
+      "localManifestPath": ".assessment-cache/captions/fXBGvNc2mvU/manifest.json",
+      "localManifestSha256": "8588a7df3e4c751d3aa5722db8c5e09e276307e4308201fcddfef2386ad8adfe"
+    },
+    "publicationBoundary": {
+      "participantJudgmentClosed": true,
+      "participantJudgmentWasScoreBlind": true,
+      "adjudicationClosed": true,
+      "scoresLocked": true,
+      "ownDebateCalculatedScoresAvailableAsImmutableInputs": true,
+      "modelAuthorsNoIdentityStructureMoveOrScoreField": true,
+      "allLockedMovesMustReceiveProse": true,
+      "legacyAssessmentUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "aiExtensionNeverScored": true
+    },
+    "prohibitedInputs": [
+      "legacy scores",
+      "legacy critiques",
+      "legacy tags",
+      "legacy Overall Commentary",
+      "legacy AI Extension",
+      "other debates",
+      "rankings",
+      "winner comparisons"
+    ]
+  }
+}
