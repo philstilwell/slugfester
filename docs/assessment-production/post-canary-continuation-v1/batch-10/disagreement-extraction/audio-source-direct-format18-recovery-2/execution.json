@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-direct-format18-recovery-2-execution",
+  "status": "failed-one-shot-batch-10-audio-source-direct-format18-recovery-2-stop-required",
+  "batchNumber": 10,
+  "planSha256": "d69c31eac8cb4d78dbf40bdfd0ee2beb6f2210a9b51ea18f260d371e45d94889",
+  "activationSha256": "adaccfd37443d6fc71a4cef4a6a642890b99393d56c66dce6919ff3fecff6b0d",
+  "state": {
+    "attempts": 1,
+    "directUrlResolutionCliInvocations": 1,
+    "ffmpegStreamingInvocations": 1,
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "clipsCreated": 0,
+    "completeCohortValidated": false,
+    "failedPartialOutputsReused": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "source-or-validation-failure-during-authorized-direct-format18-recovery-2",
+    "message": "Command failed: /opt/homebrew/bin/ffprobe -v error -select_streams a:0 -show_entries format=duration,bit_rate:stream=channels,sample_rate,bit_rate -of json /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.direct-format18.normalized.mp3\n[mp3 @ 0x8fb02c000] Failed to find two consecutive MPEG audio frames.\n/Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.direct-format18.normalized.mp3: Invalid data found when processing input\n",
+    "stopRequired": true,
+    "furtherOrdinaryAttemptsAuthorized": false
+  },
+  "protectedEvidencePreserved": true,
+  "directIncrementalCostUsd": 0
+}
