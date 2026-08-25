@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-archive-mirror-source-recovery-12-plan",
+  "status": "frozen-one-shot-batch-09-debate-170-canonical-archive-mirror-recovery-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "8e0d6ca3",
+  "userAuthorization": {
+    "instruction": "Do your best to remedy this issue.",
+    "resolvedScope": "use a public non-YouTube mirror of the exact canonical Debate 170 upload after the alternate and browser-session routes failed",
+    "directIncrementalCostUsdMaximum": 0,
+    "publicMirrorMetadataAndOneDownloadAttempt": true,
+    "localFfmpegSourceAndFrozenClipProcessing": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "browserSessionUseAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "judgmentOrScoreChangesAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-browser-session-recovery-11/failure-diagnosis.json": "a26d376bc3f790476878302a921088133e160f4a9021cb49ba5a99801ff4f4a4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-9/failure-diagnosis.json": "43fa79eb80fb81b79e95dedb7984cddd5788b9363023929a3cd344bc221fb05d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/HoTILnpd3q8/manifest.json": "c5763d8b9672eee1f1eeef268789ef86ef0a54b2faff179b98a590a2becde517"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-archive-mirror-source-recovery-12.mjs": "441558437a377539ff932927fc38779be81e2a62f4b1a68933c412a39dfb3abe",
+    "scripts/test-assessment-production-post-canary-batch-09-archive-mirror-source-recovery-12.mjs": "7f95379e2672f046012ea357c2262215208fc5beb46e89a08caee7ab0685f81e"
+  },
+  "archiveMirror": {
+    "provider": "Internet Archive",
+    "metadataEndpoint": "https://archive.org/metadata/youtube-HoTILnpd3q8",
+    "identifier": "youtube-HoTILnpd3q8",
+    "title": "Peter Singer vs John Lennox | Is There a God? Debate",
+    "mediatype": "movies",
+    "canonicalYouTubeVideoId": "HoTILnpd3q8",
+    "fileName": "HoTILnpd3q8.mp4",
+    "fileUrl": "https://archive.org/download/youtube-HoTILnpd3q8/HoTILnpd3q8.mp4",
+    "format": "MPEG4",
+    "source": "original",
+    "fileBytes": 1220045661,
+    "md5": "1dc9c00ced2cb28375c06457222d8f0a",
+    "sha1": "18edc94dab97a981806b343c1a54044ff84e82bf",
+    "crc32": "4aba19b6",
+    "identityRule": "the archive identifier, title, original filename, and embedded eleven-character video id must all match the canonical source before download"
+  },
+  "localPaths": {
+    "partialRawPath": ".assessment-cache/audio-source-mirrors/youtube-HoTILnpd3q8/HoTILnpd3q8.mp4.failed-attempt-1.part",
+    "acceptedRawPath": ".assessment-cache/audio-source-mirrors/youtube-HoTILnpd3q8/HoTILnpd3q8.mp4",
+    "sourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.mp3",
+    "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/clips/pro-suffering-christian-hope-response.mp3"
+  },
+  "localProcessing": {
+    "ffmpegPath": "/opt/homebrew/bin/ffmpeg",
+    "ffprobePath": "/opt/homebrew/bin/ffprobe",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "expectedSourceDurationSeconds": 6365,
+    "sourceDurationToleranceSeconds": 12,
+    "clipStartMs": 4508900,
+    "clipEndMs": 4722770,
+    "expectedClipDurationSeconds": 213.87,
+    "clipDurationToleranceSeconds": 0.25,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false
+  },
+  "executionPolicy": {
+    "metadataRequestsAlreadyCompletedForPreparation": 1,
+    "downloadAttemptsMaximum": 1,
+    "logicalRedirectFollowsMaximum": 1,
+    "initialDownloadTimeoutSeconds": 3600,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "sourcesInstalledMaximum": 1,
+    "clipsCreatedMaximum": 1,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "browserSessionUsesMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "cohortBoundary": {
+    "debate170Only": true,
+    "debates19And183RemainUnattempted": true,
+    "completeThreeSourceFourClipCohortValidationDeferred": true,
+    "canonicalTranscriptPacketsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-archive-mirror-recovery-12/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-archive-mirror-recovery-12/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-archive-mirror-recovery-12/analysis.json"
+  },
+  "nextActionAfterSuccess": "discover-and-freeze-one-public-mirror-route-for-the-untouched-debate-19-source"
+}
