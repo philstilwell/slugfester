@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-audio-verification-21-cost-control-analysis",
+  "status": "batch-09-complete-audio-verification-cost-within-standing-cap",
+  "batchNumber": 9,
+  "pricing": {
+    "input": 2.5,
+    "output": 10
+  },
+  "calls": [
+    {
+      "debateNumber": "183",
+      "moveId": "con-informed-deliberator-method",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-informed-deliberator-method.transcript.json",
+      "transcriptSha256": "2f62798f101cb594a538d32c9f1112dcee638221e9d9e56db2225dbdc5420cd7",
+      "inputTokens": 1166,
+      "audioInputTokens": 1094,
+      "textInputTokens": 72,
+      "outputTokens": 1826,
+      "totalTokens": 2992,
+      "usageDerivedEstimatedCostUsd": 0.021175
+    },
+    {
+      "debateNumber": "183",
+      "moveId": "con-foundational-anomaly-significance",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-foundational-anomaly-significance.transcript.json",
+      "transcriptSha256": "ca562be6bd99feb9ca583fce979be947d191640d55464c7bc3805cc6775a84db",
+      "inputTokens": 6499,
+      "audioInputTokens": 6067,
+      "textInputTokens": 432,
+      "outputTokens": 9665,
+      "totalTokens": 16164,
+      "usageDerivedEstimatedCostUsd": 0.1128975
+    }
+  ],
+  "incrementalTotals": {
+    "inputTokens": 7665,
+    "audioInputTokens": 7161,
+    "textInputTokens": 504,
+    "outputTokens": 11491,
+    "totalTokens": 19156,
+    "usageDerivedEstimatedCostUsd": 0.1340725
+  },
+  "priorBatch9UsageDerivedCostUsd": 0.0907725,
+  "cumulativeBatch9UsageDerivedCostUsd": 0.224845,
+  "maximumAuthorizedCumulativeBatch9CostUsd": 1,
+  "withinAuthorizedCap": true
+}

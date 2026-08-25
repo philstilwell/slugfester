@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-audio-verification-21-model-execution",
+  "status": "batch-09-debate-183-two-audio-verification-calls-completed",
+  "batchNumber": 9,
+  "activationSha256": "fb85fa1ef194529df331bede8551f6285252cab4c141bd37e106b814d6f57095",
+  "executionPolicy": {
+    "sequential": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "requestTimeoutMs": 240000,
+    "stopAfterRequestFailure": true,
+    "stopRemainingCallsAfterUsageDerivedCumulativeCostCapReachedOrExceeded": true,
+    "audioPlaybackCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0.9092275,
+    "cumulativeBatch9CostUsdMaximum": 1
+  },
+  "results": [
+    {
+      "debateNumber": "183",
+      "moveId": "con-informed-deliberator-method",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T03:53:54.199Z",
+      "completedAt": "2026-08-25T03:54:17.691Z",
+      "elapsedMs": 23492,
+      "commandExitCode": 0,
+      "transcriptWritten": true,
+      "transcriptJsonValid": true,
+      "usageValid": true,
+      "transcriptSha256": "2f62798f101cb594a538d32c9f1112dcee638221e9d9e56db2225dbdc5420cd7",
+      "stdoutSha256": "49c935f3fd1b935db754c64421507eb01e2759c9503e7f21384582ee4cc9c687",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 62.12,
+      "usage": {
+        "inputTokens": 1166,
+        "audioInputTokens": 1094,
+        "textInputTokens": 72,
+        "outputTokens": 1826,
+        "totalTokens": 2992
+      },
+      "usageDerivedEstimatedCostUsd": 0.021175,
+      "cumulativeBatch9UsageDerivedEstimatedCostUsd": 0.1119475,
+      "cumulativeCostCapReachedOrExceededAfterCall": false
+    },
+    {
+      "debateNumber": "183",
+      "moveId": "con-foundational-anomaly-significance",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T03:54:17.691Z",
+      "completedAt": "2026-08-25T03:56:02.907Z",
+      "elapsedMs": 105216,
+      "commandExitCode": 0,
+      "transcriptWritten": true,
+      "transcriptJsonValid": true,
+      "usageValid": true,
+      "transcriptSha256": "ca562be6bd99feb9ca583fce979be947d191640d55464c7bc3805cc6775a84db",
+      "stdoutSha256": "4c55efb7d1eb26a3dd3572d70a01a14081627c8b1594734785dd4f9c49289276",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 316.76,
+      "usage": {
+        "inputTokens": 6499,
+        "audioInputTokens": 6067,
+        "textInputTokens": 432,
+        "outputTokens": 9665,
+        "totalTokens": 16164
+      },
+      "usageDerivedEstimatedCostUsd": 0.1128975,
+      "cumulativeBatch9UsageDerivedEstimatedCostUsd": 0.224845,
+      "cumulativeCostCapReachedOrExceededAfterCall": false
+    }
+  ],
+  "totals": {
+    "attemptedCalls": 2,
+    "completedCalls": 2,
+    "skippedCalls": 0,
+    "retries": 0,
+    "priorBatch9UsageDerivedCostUsd": 0.0907725,
+    "incrementalUsageDerivedEstimatedCostUsd": 0.1340725,
+    "cumulativeBatch9UsageDerivedEstimatedCostUsd": 0.224845,
+    "maximumAuthorizedCumulativeBatch9CostUsd": 1
+  }
+}
