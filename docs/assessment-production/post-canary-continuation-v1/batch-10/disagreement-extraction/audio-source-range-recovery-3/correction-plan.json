@@ -1,0 +1,324 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-range-recovery-3-plan",
+  "status": "frozen-one-shot-batch-10-three-source-format139-full-range-recovery-ready",
+  "batchNumber": 10,
+  "checkpointCommit": "8d79016501a49087c7803545324c5208ec3a28a0",
+  "userAuthorization": {
+    "instruction": "I authorize one additional Batch 10 audio-source recovery limited to verified equivalent-source discovery and, if necessary, one range-verified public-source download per remaining video, at $0 direct incremental cost, with no playback, semantic audio evaluation, or automatic retries. The existing sequential transcription estimate of $0.1308768 and $1.00 maximum remain authorized.",
+    "equivalentSourceDiscoveryAuthorized": true,
+    "rangeVerifiedDownloadsAuthorized": 3,
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "automaticRetriesAuthorized": false,
+    "sequentialTranscriptionEstimateUsd": 0.1308768,
+    "sequentialTranscriptionMaximumUsd": 1
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/equivalent-source-discovery.json": "4d97aaf9be140cc18424dfdfd6db2a5691fd9ff692795b7895b8d09c4288a221",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/correction-plan.json": "d69c31eac8cb4d78dbf40bdfd0ee2beb6f2210a9b51ea18f260d371e45d94889",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/execution-activation.json": "adaccfd37443d6fc71a4cef4a6a642890b99393d56c66dce6919ff3fecff6b0d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/execution.json": "a4905a5e7307db560538bf897f9686bdfd5ca03f014fe4aaa80e8ecb3c825c30",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-item-preparation.json": "fdb9e75168387ce77d03d29eee3fc1ad661fb72dd44ba1c1e3c83194dbb036fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-items.json": "a67d390d26c378af9819481c8572774cc01c62a8b6c369b3b937d7dd994f232f",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.failed-attempt-1.mp3": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.direct-format18.normalized.mp3": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+  },
+  "protectedInvalidEvidence": [
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.failed-attempt-1.mp3",
+      "bytes": 354,
+      "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+    },
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.direct-format18.normalized.mp3",
+      "bytes": 354,
+      "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+    }
+  ],
+  "exactCohort": {
+    "sources": [
+      {
+        "debateNumber": "21",
+        "sourceVideoId": "2kZRAOXEFPI",
+        "mode": "accepted-prefix-source",
+        "maximumRequiredEndMs": 4705659,
+        "moveIds": [
+          "con-religious-motivation-and-sanctity",
+          "pro-natural-transcendence-without-supernaturalism"
+        ]
+      },
+      {
+        "debateNumber": "74",
+        "sourceVideoId": "MfCQBynjgnw",
+        "mode": "accepted-prefix-source",
+        "maximumRequiredEndMs": 4907699,
+        "moveIds": [
+          "pro-voluntary-risk-arena"
+        ]
+      },
+      {
+        "debateNumber": "123",
+        "sourceVideoId": "8k9A7d2Wnjk",
+        "mode": "range-verified-format139-once",
+        "maximumRequiredEndMs": 6063219,
+        "moveIds": [
+          "con-involuntary-belief-eternal-stakes",
+          "pro-continuous-providential-opportunity",
+          "pro-suffering-enlarges-receptivity"
+        ]
+      },
+      {
+        "debateNumber": "147",
+        "sourceVideoId": "h-I_9e5qxnc",
+        "mode": "range-verified-format139-once",
+        "maximumRequiredEndMs": 3924700,
+        "moveIds": [
+          "pro-qualia-concept-unsettled",
+          "con-experience-sensitive-religious-belief"
+        ]
+      },
+      {
+        "debateNumber": "130",
+        "sourceVideoId": "0IpKHdVLZb4",
+        "mode": "range-verified-format139-once",
+        "maximumRequiredEndMs": 4048590,
+        "moveIds": [
+          "pro-missing-body-cumulative-significance"
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "debateNumber": "21",
+        "sourceVideoId": "2kZRAOXEFPI",
+        "moveId": "con-religious-motivation-and-sanctity",
+        "expectedSpeaker": "Rabbi David Wolpe",
+        "startMs": 2439859,
+        "endMs": 2538140
+      },
+      {
+        "debateNumber": "21",
+        "sourceVideoId": "2kZRAOXEFPI",
+        "moveId": "pro-natural-transcendence-without-supernaturalism",
+        "expectedSpeaker": "Christopher Hitchens",
+        "startMs": 4624980,
+        "endMs": 4705659
+      },
+      {
+        "debateNumber": "74",
+        "sourceVideoId": "MfCQBynjgnw",
+        "moveId": "pro-voluntary-risk-arena",
+        "expectedSpeaker": "Josh Rasmussen",
+        "startMs": 4695340,
+        "endMs": 4907699
+      },
+      {
+        "debateNumber": "123",
+        "sourceVideoId": "8k9A7d2Wnjk",
+        "moveId": "con-involuntary-belief-eternal-stakes",
+        "expectedSpeaker": "Alex O'Connor",
+        "startMs": 1227780,
+        "endMs": 1424659
+      },
+      {
+        "debateNumber": "123",
+        "sourceVideoId": "8k9A7d2Wnjk",
+        "moveId": "pro-continuous-providential-opportunity",
+        "expectedSpeaker": "Gregory Pine",
+        "startMs": 3349339,
+        "endMs": 3538619
+      },
+      {
+        "debateNumber": "123",
+        "sourceVideoId": "8k9A7d2Wnjk",
+        "moveId": "pro-suffering-enlarges-receptivity",
+        "expectedSpeaker": "Gregory Pine",
+        "startMs": 5975139,
+        "endMs": 6063219
+      },
+      {
+        "debateNumber": "147",
+        "sourceVideoId": "h-I_9e5qxnc",
+        "moveId": "pro-qualia-concept-unsettled",
+        "expectedSpeaker": "Daniel Dennett",
+        "startMs": 1532779,
+        "endMs": 1793820
+      },
+      {
+        "debateNumber": "147",
+        "sourceVideoId": "h-I_9e5qxnc",
+        "moveId": "con-experience-sensitive-religious-belief",
+        "expectedSpeaker": "Philip Clayton",
+        "startMs": 3853700,
+        "endMs": 3924700
+      },
+      {
+        "debateNumber": "130",
+        "sourceVideoId": "0IpKHdVLZb4",
+        "moveId": "pro-missing-body-cumulative-significance",
+        "expectedSpeaker": "Mike Licona",
+        "startMs": 3937420,
+        "endMs": 4048590
+      }
+    ],
+    "sourceCount": 5,
+    "clipCount": 9
+  },
+  "rangeVerifiedSources": [
+    {
+      "debateNumber": "123",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "mode": "range-verified-format139-once",
+      "maximumRequiredEndMs": 6063219,
+      "moveIds": [
+        "con-involuntary-belief-eternal-stakes",
+        "pro-continuous-providential-opportunity",
+        "pro-suffering-enlarges-receptivity"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=8k9A7d2Wnjk",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 37050541,
+      "declaredDurationSeconds": 6076,
+      "directUrlResolutionCliInvocationsMaximum": 1,
+      "logicalPublicSourceDownloadsMaximum": 1,
+      "rangeChunkBytes": 8388608,
+      "rangeHttpGetInvocationsMaximum": 5,
+      "rangeHttpGetTimeoutMs": 180000,
+      "curlRetriesMaximum": 0,
+      "redirectsMaximum": 0
+    },
+    {
+      "debateNumber": "147",
+      "sourceVideoId": "h-I_9e5qxnc",
+      "mode": "range-verified-format139-once",
+      "maximumRequiredEndMs": 3924700,
+      "moveIds": [
+        "pro-qualia-concept-unsettled",
+        "con-experience-sensitive-religious-belief"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=h-I_9e5qxnc",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 24192081,
+      "declaredDurationSeconds": 3967,
+      "directUrlResolutionCliInvocationsMaximum": 1,
+      "logicalPublicSourceDownloadsMaximum": 1,
+      "rangeChunkBytes": 8388608,
+      "rangeHttpGetInvocationsMaximum": 3,
+      "rangeHttpGetTimeoutMs": 180000,
+      "curlRetriesMaximum": 0,
+      "redirectsMaximum": 0
+    },
+    {
+      "debateNumber": "130",
+      "sourceVideoId": "0IpKHdVLZb4",
+      "mode": "range-verified-format139-once",
+      "maximumRequiredEndMs": 4048590,
+      "moveIds": [
+        "pro-missing-body-cumulative-significance"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=0IpKHdVLZb4",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 54678961,
+      "declaredDurationSeconds": 8967,
+      "directUrlResolutionCliInvocationsMaximum": 1,
+      "logicalPublicSourceDownloadsMaximum": 1,
+      "rangeChunkBytes": 8388608,
+      "rangeHttpGetInvocationsMaximum": 7,
+      "rangeHttpGetTimeoutMs": 180000,
+      "curlRetriesMaximum": 0,
+      "redirectsMaximum": 0
+    }
+  ],
+  "acceptedPrefixSources": [
+    {
+      "debateNumber": "21",
+      "sourceVideoId": "2kZRAOXEFPI",
+      "mode": "accepted-prefix-source",
+      "maximumRequiredEndMs": 4705659,
+      "moveIds": [
+        "con-religious-motivation-and-sanctity",
+        "pro-natural-transcendence-without-supernaturalism"
+      ],
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/audio/source.mp3",
+      "bytes": 32945106,
+      "sha256": "cfa98cdbc2ddb0a19410b37a382075a2fea51d35c939d33c6ae1504a23445bc7"
+    },
+    {
+      "debateNumber": "74",
+      "sourceVideoId": "MfCQBynjgnw",
+      "mode": "accepted-prefix-source",
+      "maximumRequiredEndMs": 4907699,
+      "moveIds": [
+        "pro-voluntary-risk-arena"
+      ],
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/audio/source.mp3",
+      "bytes": 42973122,
+      "sha256": "9712859ab078ba2c689c81e18040f972e7a6450480220a0c991f4c7c066eaf72"
+    }
+  ],
+  "transportDiagnosis": {
+    "failedFormatId": "18",
+    "debate123FailedFormat18UrlDeclaredBytes": 2731072,
+    "debate123Format18EstimatedBytes": 139726597,
+    "mismatchProvesMalformedCombinedTransport": true,
+    "selectedFallbackFormatId": "139",
+    "selectedFallbackReasons": [
+      "audio-only-file-preserves-original-youtube-timebase",
+      "declared-byte-length-is-internally-consistent",
+      "duration-covers-every-required-clip",
+      "avoids-malformed-combined-format-18"
+    ]
+  },
+  "mediaEncoding": {
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "clipDurationToleranceSeconds": 0.25
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "directUrlResolutionInvocationsMaximum": 3,
+    "publicSourceDownloadsMaximum": 3,
+    "rangeHttpGetInvocationsMaximum": 15,
+    "curlRetriesMaximum": 0,
+    "downloaderRetriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "audioPlaybackCallsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "scoresDerivedMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnySourceOrValidationFailure": true
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-source-range-recovery-3.mjs": "c9715e4759b0f22d50230da22c29ade312531029529811933058937414c77a64",
+    "scripts/run-assessment-production-post-canary-batch-10-audio-source-range-recovery-3.mjs": "8539cb0474fd932078d439d4c2ef802eab899880e3327d1c31def1627dced974",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-range-recovery-3-preparation.mjs": "eae8c216adfc51fb5f706c13058ec6a4560a8aa6f4df90b9c4cc887321e93a16",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-range-recovery-3-cohort.mjs": "7950c3ed802dd48b34333fd018262a074954bbfa854211f58004211b7bc60942",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-sources.mjs": "48a691794c7aa962acad9c96b378552fc5d485ff92fedbe893cb7b525629f1e3",
+    "scripts/lib/assessment-production-post-canary-batch-10-audio-work-items.mjs": "838a700959c30ead81cd32b3b407b641b26ac9a9a2bccd18549bfac00633a552",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/execution.json",
+    "preparationPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-preparation.json"
+  }
+}
