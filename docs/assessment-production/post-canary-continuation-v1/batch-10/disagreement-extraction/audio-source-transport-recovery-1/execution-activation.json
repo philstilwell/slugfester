@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-transport-recovery-activation",
+  "status": "active-for-exactly-one-batch-10-debate-123-public-source-transport-recovery",
+  "batchNumber": 10,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-transport-recovery-1/correction-plan.json",
+    "sha256": "1559b7297451b76a7479b4f7962935feaeb1f9d739d37d106406e5c8416d590d"
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-preparation-failure-diagnosis.json": "9504945669f2eba48907dd1a7fae38da07b8415263e07edaeb9dd04ed2e78bcd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-item-preparation.json": "fdb9e75168387ce77d03d29eee3fc1ad661fb72dd44ba1c1e3c83194dbb036fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-items.json": "a67d390d26c378af9819481c8572774cc01c62a8b6c369b3b937d7dd994f232f"
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-transport-recovery.mjs": "7371232307264d48e80a785e4e809c88a0350dbaa7f54e5792518fc200bd9995",
+    "scripts/run-assessment-production-post-canary-batch-10-audio-transport-recovery.mjs": "b494d98cf57f5b34a6eab8fabf010744ad336c771298f83ce6b08643bba7c2f3",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-transport-recovery-preparation.mjs": "472af4ec5b7af626831fae7cdc6be7f86a4e9c32067d90e3da50c4ee105e64ab",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-recovery-cohort.mjs": "5b684196a0f46b1406087d5839ba496d034a4376e3cf4a2b2746220d7eb2b5dc",
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-sources.mjs": "b110b7651b32160607381cd20d54992bc543c666ffbb7cc19734e8e36f36ece7",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-sources.mjs": "48a691794c7aa962acad9c96b378552fc5d485ff92fedbe893cb7b525629f1e3",
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-work-items.mjs": "43690240bbf82950b6078a6c9cf665b4b2936105caa947977c3a62c4dd501482",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-work-items.mjs": "7afdaca404a3eca4f5061e227eef5f2c2b761143133ec6e251f764ca7bd4c6f1",
+    "scripts/lib/assessment-production-post-canary-batch-10-audio-work-items.mjs": "838a700959c30ead81cd32b3b407b641b26ac9a9a2bccd18549bfac00633a552",
+    "scripts/lib/assessment-production-post-canary-batch-10-standing-authorization.mjs": "bd4cb3485a88b4b8d70380102772b040011032422775d81f7ff34be2de0cae3c",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "downloaderRetriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "audioPlaybackCallsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "scoresDerivedMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnySourceOrValidationFailure": true
+  },
+  "activatedExecutionMaximum": 1,
+  "directIncrementalCostUsdMaximum": 0
+}
