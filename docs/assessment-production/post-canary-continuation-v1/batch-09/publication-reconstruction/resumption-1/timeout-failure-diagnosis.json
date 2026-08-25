@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-resumption-timeout-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1",
+  "status": "frozen-diagnosed-one-content-timeout-and-three-host-sleep-interrupted-publication-contexts",
+  "diagnosedAt": "2026-08-25T06:20:00Z",
+  "checkpointCommit": "7f33c69bcd78dda11fcea134b9e9ae51bf6972da",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "modelExecutionOccurred": true,
+  "modelContextsAttempted": 9,
+  "modelContextsAccepted": 5,
+  "modelContextsFailed": 4,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "inputs": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/analysis.json",
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json",
+    "validationScript": "scripts/test-assessment-production-post-canary-batch-09-publication-resumption-timeout-diagnosis.mjs"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-preparation-manifest.json": "a6aaad4b15951bb0f962973f62a1b7dc6ab8a3d024540b94350668a89c0916f4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-activation.json": "d8457d7d99f85435a54a50efd4dd52bc1424ef777bdb580b3697d88cb118a765",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/model-execution.json": "e3aee442be4243772d417a04ee1540f8cbb28a4cb05077b37327fff92d123ded",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/analysis.json": "10c812313fe06b1f680dc619dd3b8bdeeb0a6441fc6c4cfcb24cba77da48be97",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "scripts/test-assessment-production-post-canary-batch-09-publication-resumption-timeout-diagnosis.mjs": "6915fe3358e39a04b84180b691eaeafcb1357efc88232093cd0b455688acd51e"
+  },
+  "acceptedContexts": [
+    {
+      "debateNumber": "134",
+      "elapsedMs": 216172
+    },
+    {
+      "debateNumber": "19",
+      "elapsedMs": 159920
+    },
+    {
+      "debateNumber": "114",
+      "elapsedMs": 216372
+    },
+    {
+      "debateNumber": "89",
+      "elapsedMs": 295430
+    },
+    {
+      "debateNumber": "176",
+      "elapsedMs": 220200
+    }
+  ],
+  "failedContexts": [
+    {
+      "debateNumber": "166",
+      "contextIndex": 3,
+      "startedAt": "2026-08-25T04:59:02.532Z",
+      "completedAt": "2026-08-25T05:09:02.547Z",
+      "elapsedMs": 600015,
+      "copiedInputBytes": 191841,
+      "status": "timed-out",
+      "outputWritten": false,
+      "failureClass": "content-generation-timeout-before-host-sleep"
+    },
+    {
+      "debateNumber": "183",
+      "contextIndex": 6,
+      "startedAt": "2026-08-25T05:07:38.193Z",
+      "completedAt": "2026-08-25T05:26:27.935Z",
+      "elapsedMs": 1129742,
+      "copiedInputBytes": 212094,
+      "status": "timed-out",
+      "outputWritten": false,
+      "failureClass": "host-sleep-interrupted-transport",
+      "transportEvidence": "stream disconnected before completion: Connection reset by peer"
+    },
+    {
+      "debateNumber": "112",
+      "contextIndex": 7,
+      "startedAt": "2026-08-25T05:09:02.557Z",
+      "completedAt": "2026-08-25T05:26:27.936Z",
+      "elapsedMs": 1045379,
+      "copiedInputBytes": 226934,
+      "status": "timed-out",
+      "outputWritten": false,
+      "failureClass": "host-sleep-interrupted-transport",
+      "transportEvidence": "stream disconnected before completion: Connection reset by peer"
+    },
+    {
+      "debateNumber": "17",
+      "contextIndex": 8,
+      "startedAt": "2026-08-25T05:26:27.967Z",
+      "completedAt": "2026-08-25T06:09:37.182Z",
+      "elapsedMs": 2589215,
+      "copiedInputBytes": 219397,
+      "status": "timed-out",
+      "outputWritten": false,
+      "failureClass": "host-sleep-interrupted-transport",
+      "transportEvidence": "stream disconnected before completion: idle timeout waiting for websocket"
+    }
+  ],
+  "localPowerEvidence": {
+    "sourceCommand": "pmset -g log",
+    "timezone": "America/New_York",
+    "frozenSelectedEntriesOnly": true,
+    "intervals": [
+      {
+        "state": "sleep",
+        "reason": "Software Sleep pid=402",
+        "startedAt": "2026-08-25T05:10:05Z",
+        "endedAt": "2026-08-25T05:10:35Z"
+      },
+      {
+        "state": "sleep",
+        "reason": "Maintenance Sleep",
+        "startedAt": "2026-08-25T05:11:21Z",
+        "endedAt": "2026-08-25T05:26:23Z"
+      },
+      {
+        "state": "sleep",
+        "reason": "Maintenance Sleep",
+        "startedAt": "2026-08-25T05:27:08Z",
+        "endedAt": "2026-08-25T05:28:58Z"
+      },
+      {
+        "state": "sleep",
+        "reason": "Maintenance Sleep",
+        "startedAt": "2026-08-25T05:29:44Z",
+        "endedAt": "2026-08-25T05:44:46Z"
+      },
+      {
+        "state": "sleep",
+        "reason": "Maintenance Sleep",
+        "startedAt": "2026-08-25T05:45:31Z",
+        "endedAt": "2026-08-25T05:49:56Z"
+      },
+      {
+        "state": "sleep",
+        "reason": "Maintenance Sleep",
+        "startedAt": "2026-08-25T05:50:44Z",
+        "endedAt": "2026-08-25T06:07:01Z"
+      }
+    ],
+    "interpretation": {
+      "debate166CompletedBeforeFirstSleep": true,
+      "debate183OverlappedHostSleep": true,
+      "debate112OverlappedHostSleep": true,
+      "debate17OverlappedRepeatedHostSleep": true,
+      "hostSleepDelayedLocalTimers": true,
+      "hostSleepInvalidatesElapsedTimeAsPureModelComputeTime": true
+    }
+  },
+  "failureClasses": {
+    "contentGenerationTimeout": {
+      "contexts": 1,
+      "debates": [
+        "166"
+      ],
+      "ordinaryRetryPermitted": false,
+      "boundedFieldDisjointShardingWouldRequireNewFrozenCorrection": true
+    },
+    "hostSleepInterruption": {
+      "contexts": 3,
+      "debates": [
+        "183",
+        "112",
+        "17"
+      ],
+      "sharedUnderlyingProblem": "the-host-entered-sleep-repeatedly-during-active-subscription-model-contexts",
+      "ordinaryRetryPermitted": false,
+      "codexTransportReconnectWarningsObserved": 3,
+      "runnerLevelRetries": 0,
+      "recoveryWouldRequireANewFrozenAwake-guarded-field-disjoint-resumption": true
+    }
+  },
+  "stopRuleEvaluation": {
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json",
+    "standingAuthorizationStatus": "frozen-active-batch-09-complete-remaining-workflow-standing-authorization",
+    "stopRule": "thirdFailureOfSameUnderlyingProblemBlocks",
+    "sharedHostSleepFailureCount": 3,
+    "thirdFailureOfSameUnderlyingProblemReached": true,
+    "automaticRecoveryAuthorized": false,
+    "newExplicitApprovalRequired": true
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorized": false,
+    "minimumSafeScope": [
+      "prepare-one-awake-guarded-field-disjoint-resumption-for-debate-166",
+      "prepare-one-awake-guarded-field-disjoint-resumption-each-for-debates-183-112-and-17",
+      "reuse-no-failed-partial-output",
+      "preserve-five-accepted-resumption-outputs-and-accepted-debate-170-output",
+      "one-attempt-per-newly-frozen-shard",
+      "no-retries-or-timeout-extensions",
+      "complete-ten-debate-cohort-replay-after-all-shards-pass"
+    ],
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "recoveryPrepared": false,
+  "modelContextsExecutedDuringDiagnosis": 0,
+  "nextRequiredAction": "obtain-explicit-third-failure-stop-rule-exception-before-any-publication-timeout-recovery"
+}
