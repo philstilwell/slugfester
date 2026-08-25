@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-direct-audio-recovery-8-failure-diagnosis",
+  "status": "preserved-batch-09-debate-170-direct-media-fetch-transport-failure-diagnosed-stop-rule-active",
+  "batchNumber": 9,
+  "debateNumber": "170",
+  "sourceVideoId": "HoTILnpd3q8",
+  "userInstruction": "Continue at your discretion.",
+  "authenticatedEvidence": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-8/correction-plan.json": "cc1f67b7926cd5380df747a227e46293c7afa9858506948187e31c5b2d5a5326",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-8/execution-activation.json": "0852b05ce0f0edb25f649bcbf7d9b3a29a13c6141d77badb5027b1d9a709e686",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-8/execution.json": "32f93d2c657fec838f3296bd17814d961c197ba21aea66b733f4d0465090a4d2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-8/analysis.json": "6d401aa96b41ef8ec7fb8f2f6f12ee5252f6fd6af89e3950b85e496c051c28d4",
+    "scripts/run-assessment-production-post-canary-batch-09-direct-audio-recovery-8.mjs": "be6d3c829e6ed5e1dc18923fdcfa2f9c54bcc383324bee7b1235c050f30d3e57",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-7/format-inventory.json": "46a7bbb70c8032611bb4f44f36561a83475a0b05bbb1538dcd97bbff779fd97c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662"
+  },
+  "preservedInvalidEvidence": {
+    "path": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.failed-attempt-1.mp3",
+    "bytes": 354,
+    "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    "changed": false
+  },
+  "deterministicLocalization": {
+    "configBootstrapGets": 1,
+    "playerMetadataPosts": 1,
+    "mediaDownloadGets": 1,
+    "requestAuditEntries": 0,
+    "sourcesInstalled": 0,
+    "clipsCreated": 0,
+    "runnerMediaFetchLines": "190-195",
+    "firstPostFetchAssertionLine": 196,
+    "observedErrorName": "TypeError",
+    "observedErrorMessage": "fetch failed",
+    "conclusion": "The public configuration and Debate 170 player-metadata stages completed far enough to select a direct audio format. The first media fetch then threw before the runner received an accepted HTTP response or began writing a source file."
+  },
+  "causeBoundary": {
+    "diagnosedCategory": "direct-media-fetch-transport-exception-before-response-acceptance",
+    "underlyingNetworkCausePreserved": false,
+    "redirectRejectionProven": false,
+    "httpStatusAvailable": false,
+    "safeToChangeRedirectPolicyWithoutNewEvidence": false,
+    "reason": "The frozen runner retained only the outer TypeError and message, not error.cause or redirect history, so the preserved evidence cannot distinguish a rejected redirect from another network-layer fetch failure."
+  },
+  "executionBoundary": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "sourceBytesWritten": 0,
+    "sourcesInstalled": 0,
+    "clipsCreated": 0,
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "protectedState": {
+    "sourceIdentityChanged": false,
+    "speakerIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "packetsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false,
+    "rawSignedUrlsPersisted": false,
+    "publicApiKeyPersisted": false
+  },
+  "stopRule": {
+    "standingAuthorizationField": "stopRules.thirdFailureOfSameUnderlyingProblemBlocks",
+    "active": true,
+    "reason": "Debate 170 public-source transport has already exhausted multiple frozen methods. The user's discretionary continuation did not explicitly override the standing third-failure stop rule for another media-fetch recovery.",
+    "correctionPrepared": false,
+    "networkProbeExecuted": false,
+    "newApprovalRequired": true
+  },
+  "minimumApprovalNeeded": "Authorize one final Debate 170 direct-media transport diagnosis/recovery that may preserve error.cause with one credential-omitting metadata-plus-media attempt, change only the media redirect handling if the captured cause proves a redirect rejection, and then resume the two untouched sources and four-clip cohort."
+}
