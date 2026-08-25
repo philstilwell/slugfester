@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-audio-evidence-boundary-correction-1-plan",
+  "status": "frozen-batch-09-debate-183-single-field-audio-evidence-boundary-correction-1-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "4c395ba1",
+  "userAuthorization": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "resolvedScope": "prepare, freeze, activate, and execute exactly one deterministic correction of the Debate 183 con-informed-deliberator-method verification-excerpt boundary, replay the complete four-work-item audio cohort, and resume the Batch 9 standing authorization only after every corrected gate passes",
+    "directIncrementalCostUsdMaximum": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "audioAccessAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/failure-diagnosis.json": "05075c2cfadef9beffbac2a4d95933f2830c7b44cd4b249847720c7c8fbc8416",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/execution-manifest.json": "fb85fa1ef194529df331bede8551f6285252cab4c141bd37e106b814d6f57095",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/audio-verification.json": "12db9faa68677a7283201422f1b9bac54610c86459a935ea518451537a07f750",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/analysis.json": "1ef4855bb8cf536bc3f9a672b9e22a27110e950fc1c4e4bc4ea6eb2624c82ee0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/cost-control-analysis.json": "387e351fe901620ce73e43003f7d15b0f44cc105be02a150f6c92e6cd1ac0dfe",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/audio-verification.json": "239b2d02be7dbc6bd7cf80c01cc2f74942f342f35d2ae35e37ea6ac967c09351",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-informed-deliberator-method.transcript.json": "2f62798f101cb594a538d32c9f1112dcee638221e9d9e56db2225dbdc5420cd7"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-debate-183-audio-evidence-boundary-correction-1.mjs": "519daf3af740da36b61c85dbbe8e29566f3b93246e08ac22879a7bf03e0dadd2",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-audio-evidence-boundary-correction-1.mjs": "8d747ed73c2c79b4996e991430f10b8e77abf564e5f84b13fda52280ce23380f"
+  },
+  "inputs": {
+    "audioVerificationActivationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/execution-manifest.json",
+    "audioVerificationAuditPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/audio-verification.json",
+    "priorAcceptedAuditPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/audio-verification.json",
+    "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-informed-deliberator-method.transcript.json",
+    "transcriptSha256": "2f62798f101cb594a538d32c9f1112dcee638221e9d9e56db2225dbdc5420cd7"
+  },
+  "correction": {
+    "debateNumber": "183",
+    "moveId": "con-informed-deliberator-method",
+    "expectedSpeaker": "Justin Clarke-Doane",
+    "writableFields": 1,
+    "writableField": "verificationExcerpt",
+    "selectionRule": "group preserved diarized segments into contiguous same-speaker blocks; among expected-speaker blocks select the block with the largest longest-common-subsequence token match against the original frozen excerpt, breaking ties by earliest start and then segment-id order; use the exact original excerpt substring spanning the first through last matched original token",
+    "originalVerificationExcerpt": "has never read Ecklund. And >> no, it's not it's not about uh it's not about the the percentage of the population. It's about how central is it to our understanding of what what what goes on when we deliberate. Um yeah. >> Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not um",
+    "originalVerificationExcerptSha256": "9803753abbf82bda485b9ec05e438d9c863c64f56207e6edadd77db905eee450",
+    "selectedSegmentIds": [
+      "seg_14",
+      "seg_15"
+    ],
+    "selectedSegmentStartSeconds": 45.428,
+    "selectedSegmentEndSeconds": 57.378,
+    "selectedOrderedTokenMatchCount": 32,
+    "selectedOriginalTokenSpan": [
+      41,
+      73
+    ],
+    "correctedVerificationExcerpt": "Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not",
+    "correctedVerificationExcerptSha256": "38ead22f5b67f263f973df09ce7bc5c339ccd0e1e24ad1252e49ee97f1f77215",
+    "thresholdsPreserved": {
+      "minimumFullClipExcerptRecall": 0.8,
+      "minimumExpectedSpeakerExcerptRecall": 0.8,
+      "minimumExpectedSpeakerRecallMargin": 0.15,
+      "minimumExpectedSpeakerDurationSeconds": 5
+    },
+    "audioPreserved": true,
+    "transcriptPreserved": true,
+    "validatorPreserved": true,
+    "otherVerificationResultPreserved": true
+  },
+  "cost": {
+    "priorPaidAudioUsageDerivedCostUsd": 0.224845,
+    "correctionDirectIncrementalCostUsdMaximum": 0
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "audioFilesReadMaximum": 0,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "completeAffectedCohortReplayRequired": true,
+    "stopOnAnyFailure": true
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/evidence-boundary-correction-1/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/evidence-boundary-correction-1/execution.json",
+    "cohortReplayPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/evidence-boundary-correction-1/cohort-replay.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/evidence-boundary-correction-1/analysis.json"
+  },
+  "nextActionAfterSuccess": "resume-standing-authorized-batch-09-dispute-only-adjudication-preparation"
+}
