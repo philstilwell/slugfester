@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-manual-redirect-recovery-5-execution",
+  "status": "failed-one-shot-batch-10-audio-source-manual-redirect-recovery-5-stop-required",
+  "batchNumber": 10,
+  "planSha256": "375c44aa8e8df7547ff2dda6674d5bd7920d133b06ed86aa3af6cb8466cc859c",
+  "activationSha256": "f1ab4c83ca0b47965e690e0190ba1498ca4b9b69dda5b44af82bbe2c393f8e6b",
+  "state": {
+    "attempts": 1,
+    "directUrlResolutionCliInvocations": 1,
+    "rangeHttpGetInvocations": 1,
+    "manualHttpRequests": 1,
+    "finalHttp206Responses": 0,
+    "redirectsFollowed": 0,
+    "repeatedByteRanges": 0,
+    "publicSourceDownloads": 1,
+    "localNormalizations": 0,
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "clipsCreated": 0,
+    "completeCohortValidated": false,
+    "failedPartialOutputsReused": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "source-or-validation-failure-during-authorized-manual-redirect-recovery-5",
+    "message": "Command failed: /usr/bin/curl --fail-with-body --silent --show-error --retry 0 --max-redirs 0 --proto =https --max-time 180 --range 0-8388607 --dump-header /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.range-000.hop-0.headers.txt --output /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.range-000.hop-0.body [REDACTED_SIGNED_URL]\ncurl: (22) The requested URL returned error: 403\n",
+    "stopRequired": true,
+    "furtherOrdinaryAttemptsAuthorized": false
+  },
+  "protectedEvidencePreserved": true,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-manual-redirect-recovery-5-failure-diagnosis",
+  "status": "preserved-batch-10-manual-redirect-recovery-5-http-403-stop-diagnosed",
+  "batchNumber": 10,
+  "authenticatedArtifacts": {
+    "plan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-manual-redirect-recovery-5/correction-plan.json",
+      "sha256": "375c44aa8e8df7547ff2dda6674d5bd7920d133b06ed86aa3af6cb8466cc859c"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-manual-redirect-recovery-5/execution-activation.json",
+      "sha256": "f1ab4c83ca0b47965e690e0190ba1498ca4b9b69dda5b44af82bbe2c393f8e6b"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-manual-redirect-recovery-5/execution.json",
+      "sha256": "06f5d8e8e19b58d700af391c01b89949f39ff5cc06004b798822de3202ed29fc"
+    }
+  },
+  "diagnosis": {
+    "category": "fresh-format139-googlevideo-range-request-rejected-http-403-before-redirect",
+    "plainEnglish": "The freshly resolved Debate 123 Google Video address rejected the first planned byte-range request with HTTP 403. It supplied no redirect and no media bytes, so there was no authorized redirect chain to follow.",
+    "exactUnderlyingCauseEstablished": false,
+    "safeConclusion": "The planned direct range transport is not currently accepted by the Google Video endpoint under the frozen request conditions. The evidence does not distinguish among possible server-side authorization, request-header, or signed-address constraints.",
+    "finalHttp206Reached": false,
+    "redirectAvailable": false,
+    "mediaBytesReceived": 0
+  },
+  "executionAudit": {
+    "attempts": 1,
+    "freshUrlResolutions": 1,
+    "logicalByteRangesRequested": 1,
+    "manualHttpRequests": 1,
+    "firstRange": "0-8388607",
+    "httpStatus": 403,
+    "responseContentType": "text/plain",
+    "responseContentLength": 0,
+    "responseServerClass": "gvs",
+    "redirectLocations": 0,
+    "redirectsFollowed": 0,
+    "finalHttp206Responses": 0,
+    "repeatedByteRanges": 0,
+    "automaticRetries": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "localEvidence": [
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.range-000.hop-0.headers.txt",
+      "bytes": 281,
+      "sha256": "87e8592926631a96a5de3fc7e2f2c4c95d55d66f1cf8d77657573983ac6e3c2f",
+      "containsRedirectLocation": false
+    },
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.range-000.hop-0.body",
+      "exists": false,
+      "bytes": 0
+    },
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.m4a",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "security": {
+    "signedMediaUrlPersistedInRepositoryArtifacts": false,
+    "executionFailureUrlRedacted": true,
+    "responseContainedRedirectLocation": false
+  },
+  "authorization": {
+    "oneShotCorrectionConsumed": true,
+    "furtherMediaRequestsAuthorized": false,
+    "automaticRetriesAuthorized": false,
+    "sourceRecoveryCostCapUsd": 0,
+    "sourceRecoveryCostUsd": 0,
+    "sequentialTranscriptionEstimateUsd": 0.1308768,
+    "sequentialTranscriptionMaximumUsd": 1,
+    "transcriptionStarted": false
+  },
+  "disposition": {
+    "batch10Blocked": true,
+    "debates123147130SourceRecoveryComplete": false,
+    "debates147And130NotAttemptedInThisCorrection": true,
+    "partialOutputReusable": false,
+    "requiredAction": "stop-and-preserve-failed-one-shot-correction",
+    "nextActionRequiresNewUserAuthorization": true
+  }
+}
