@@ -1,0 +1,1879 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "74",
+  "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-modal-theistic-defense",
+      "side": "pro",
+      "description": "Defend the evidential force of Grim Reaper paradoxes for causal finitism through a warranted modal-independence principle, while arguing that suffering does not favor indifference once consciousness, background knowledge, human epistemic limits, and morally valuable features of finite life are included.",
+      "successCriteria": "The route succeeds if the modal bridge from a possible infinite causal past to the contradictory arrangement survives the recombination objections, and if the existence and distribution of suffering are shown to be no more expected under indifference than under a suitably specified perfect-being theism.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-dual-defense",
+        "tier": "motion",
+        "description": "Establish both that Grim Reaper reasoning provides support for causal finitism and that suffering does not yield the proposed comparative advantage for indifference over theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-modal-conditional",
+          "tier": "central",
+          "description": "Justify the conditional from a possible infinite causal history, together with independently variable clock settings, to the possibility of the contradictory Grim Reaper configuration."
+        },
+        {
+          "bridgeId": "pro-central-likelihood-background",
+          "tier": "central",
+          "description": "Fix the relevant background knowledge and compare how theism and indifference account for consciousness, suffering generally, and the particular observed forms of suffering."
+        },
+        {
+          "bridgeId": "pro-central-theistic-reasons",
+          "tier": "central",
+          "description": "Show how limited human access to divine reasons and goods involving risk, relationship, growth, and finite agency can make unexplained suffering compatible with the expectations of perfect-being theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-modal-method",
+          "tier": "subsidiary",
+          "description": "Distinguish adjacent-world variation of jointly existing objects from unrestricted infinite recombination and explain why the former retains evidential force."
+        },
+        {
+          "bridgeId": "pro-subsidiary-moral-framework",
+          "tier": "subsidiary",
+          "description": "Supply a morally relevant account of divine permission, including the possible roles of consent, compensation, responsibility, and world-level goods."
+        }
+      ]
+    },
+    {
+      "routeId": "con-minimalist-evidential-critique",
+      "side": "con",
+      "description": "Block the inference from Grim Reaper contradictions to causal finitism by locating the inconsistency in the arrangement rather than the infinite past, while defending the modest likelihood claim that severe apparently gratuitous suffering is more expected under indifference than under bare perfect-being theism.",
+      "successCriteria": "The route succeeds if an infinite causal past need not license the paradoxical recombination and the minimal inconsistency diagnosis is adequate, and if the observed severity and distribution of suffering remain comparatively less expected under theism after the proposed background assumptions and theodicies are examined.",
+      "motionBridge": {
+        "bridgeId": "con-motion-dual-critique",
+        "tier": "motion",
+        "description": "Establish both that Grim Reaper paradoxes do not support causal finitism and that observed suffering supplies comparative evidence favoring indifference over perfect-being theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-unsatisfiable-pair",
+          "tier": "central",
+          "description": "Show that rejecting only the jointly inconsistent Grim Reaper conditions blocks the paradox without requiring rejection of every infinite causal history."
+        },
+        {
+          "bridgeId": "con-central-recombination-limits",
+          "tier": "central",
+          "description": "Demonstrate that infinite recombination and proximity intuitions do not reliably transmit possibility to the paradoxical total configuration."
+        },
+        {
+          "bridgeId": "con-central-suffering-likelihood",
+          "tier": "central",
+          "description": "Show that the severity, apparent gratuity, and unequal distribution of suffering lower its expected probability under bare perfect-being theism relative to indifference."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-parsimony",
+          "tier": "subsidiary",
+          "description": "Explain why the logically minimal inconsistency diagnosis is preferable to adding a substantive causal-finitist restriction when both exclude the paradox."
+        },
+        {
+          "bridgeId": "con-subsidiary-epistemic-discipline",
+          "tier": "subsidiary",
+          "description": "Test whether skeptical-theist and purpose-specific explanations have independent grounding and preserve meaningful confirmation and disconfirmation by worldly evidence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "grim-reaper-inference",
+      "title": "Grim Reaper Contradiction and the Causal-Finitist Inference",
+      "weightPercent": 22,
+      "rationale": "This issue contains the direct motion-level dispute over whether the contradiction warrants rejecting an infinite causal past or only the jointly unsatisfiable features of the proposed arrangement."
+    },
+    {
+      "sectionId": "modal-recombination",
+      "title": "Modal Independence, Recombination, and Possibility",
+      "weightPercent": 20,
+      "rationale": "The causal-finitist argument depends on a defensible transition from possible components or nearby configurations to the possibility of the infinite paradoxical whole."
+    },
+    {
+      "sectionId": "comparative-likelihoods",
+      "title": "Comparative Likelihoods and Evidential Background",
+      "weightPercent": 22,
+      "rationale": "The suffering dispute turns on how theism and indifference predict consciousness, suffering in general, and its specific observed forms once shared background knowledge and auxiliary commitments are fixed."
+    },
+    {
+      "sectionId": "skeptical-theism",
+      "title": "Unknown Reasons, Moral Knowledge, and Evidential Symmetry",
+      "weightPercent": 18,
+      "rationale": "Appeals to cognitive limitation must be weighed against ordinary moral knowledge and the concern that unrestricted unknown-purpose explanations neutralize evidence both against and for divine goodness."
+    },
+    {
+      "sectionId": "theodicy-and-distribution",
+      "title": "Theodicies and the Severity and Distribution of Suffering",
+      "weightPercent": 18,
+      "rationale": "Consent, compensation, finite-agent goods, relationships, and world-level value must address not merely suffering's possibility but its extreme cases, unequal allocation, and apparently better alternatives."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-grim-core-inference",
+      "sectionId": "grim-reaper-inference",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "constructive",
+      "proposition": "If a possible infinite causal past would permit the contradictory Grim Reaper arrangement, the impossibility of that arrangement supports the conclusion that the causal past is finite.",
+      "sourceSpan": {
+        "startEvent": 153,
+        "endEvent": 280
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly gives Josh the floor, and the uninterrupted first-person presentation continues through the argument's conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-modal-conditional"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive states the core conditional contradiction argument and directly advances the central modal bridge, but leaves its disputed possibility conditional for subsequent defense.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it efficiently establishes the central inference while postponing one indispensable modal warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional structure, contradictory consequent, and causal-finitist conclusion are all recoverable and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents the paradox as support through a conditional rather than claiming that the contradiction alone deductively proves finitism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The modus-tollens form is coherent, but the indispensable bridge from an infinite past to the possible arrangement remains materially undefended here."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The contradiction is specifically illustrated, while the fact-dependent modal independence warrant is compressed into the conditional antecedent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "This is highly relevant within the central tier because it states the indispensable modal inference, though it does not complete both motion branches."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The opening construction does not yet engage a developed opposing interpretation requiring a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly identifies the dead/not-dead contradiction and restates the argument from a possible infinite past to the impossible scenario.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-randomized-clock-independence",
+      "sectionId": "modal-recombination",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "constructive",
+      "proposition": "If an infinite past were possible, independently randomized clock settings could realize the Grim Reaper sequence, supporting the disputed possibility conditional.",
+      "sourceSpan": {
+        "startEvent": 281,
+        "endEvent": 348
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Josh continues his initial presentation and directly addresses Alex by name while explaining what changed his assessment of the argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-modal-conditional"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive supplies the main modal-independence warrant by proposing randomized clock settings whose values do not causally constrain one another.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves it materially develops the required bridge, but does not fully establish possibility for the infinite total outcome."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The randomized-clock thesis is clear, but independence among individual settings is not cleanly distinguished from possibility of the infinite total sequence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Repeated seeming-language appropriately moderates the claim, although local independence only partly warrants the global modal conclusion."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The reasoning is intelligible, but a material bridge remains between pairwise clock independence and possibility of the specified infinite configuration."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Randomization supplies a concrete mechanism, yet no defended principle shows that all infinite outcomes inherit the possibility of their local settings."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move squarely supports the central modal conditional and supplies its principal independence rationale."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing alternative is directly characterized in this constructive passage."
+        }
+      },
+      "evidenceBasis": "The excerpt says each clock is randomly set and that one clock's setting will not affect another, then connects this to the infinite sequence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unsatisfiable-pair-diagnosis",
+      "sectionId": "grim-reaper-inference",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Causal finitism is unnecessary because the unsatisfiable-pair diagnosis blocks the paradox by rejecting only the contradictory combination.",
+      "sourceSpan": {
+        "startEvent": 432,
+        "endEvent": 556
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After Josh's brief clarification, Alex resumes the explanation, introduces causal finitism and then explicitly contrasts it with the view he favors.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-unsatisfiable-pair"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-grim-core-inference",
+          "pro-randomized-clock-independence"
+        ],
+        "components": [
+          {
+            "componentId": "con-unsatisfiable-pair-diagnosis-component-01",
+            "targetMoveId": "pro-grim-core-inference",
+            "text": "The contradiction identifies an unsatisfiable conjunction, not the impossibility of every infinite causal past.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unsatisfiable-pair-diagnosis-component-02",
+            "targetMoveId": "pro-randomized-clock-independence",
+            "text": "Independent individual settings do not establish joint satisfiability of the total arrangement.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly locates the failure in the jointly inconsistent conditions and states that causal finitism is therefore unnecessary, contacting both the core inference and its independence support.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the challenged inference and gives the consequence that only the contradictory combination must be rejected."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The unsatisfiable-pair diagnosis and its limited consequence are sharply stated without material scope drift."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Logical incompatibility warrants the necessity claim that the two specified conditions cannot jointly be satisfied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The contradiction might expose a deeper restriction on infinite causal histories rather than merely a defective arrangement.",
+        "decisiveQualification": "That deeper diagnosis needs an additional reason connecting infinitude itself, rather than the conjunction, to the contradiction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The distinction between component possibility and joint satisfiability is explicit, consistent, and directly blocks the overbroad inference."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The formal incompatibility supplies strong support, with only the broader comparative case between diagnoses left for the following move."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "This directly supports the central unsatisfiable-pair bridge and attacks the indispensable causal-finitist inference."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply permits a substantive finitist diagnosis but correctly notes that the contradiction alone underdetermines it."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies two conditions as formally inconsistent and says they cannot be jointly satisfied, limiting the diagnosis to their combination.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-minimal-diagnosis-parsimony",
+      "sectionId": "grim-reaper-inference",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Because both diagnoses exclude the paradox equally well, parsimony favors the logically minimal unsatisfiable-pair account over causal finitism.",
+      "sourceSpan": {
+        "startEvent": 557,
+        "endEvent": 642
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same speaker explicitly compares the two theories' explanatory power and ontological commitments before answering the mysterious-force objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-parsimony"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-grim-core-inference",
+          "pro-randomized-clock-independence"
+        ],
+        "components": [
+          {
+            "componentId": "con-minimal-diagnosis-parsimony-component-01",
+            "targetMoveId": "pro-grim-core-inference",
+            "text": "The paradox's exclusion does not uniquely warrant the more substantive causal-finitist theory.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-minimal-diagnosis-parsimony-component-02",
+            "targetMoveId": "pro-randomized-clock-independence",
+            "text": "Even a modal-independence proposal gains no advantage if both diagnoses exclude the impossible total setup.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply compares explanatory reach and theoretical commitment, arguing that equal exclusion of the paradox favors the logically minimal diagnosis.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full ordinary answers, it explicitly addresses why the paradox does not select causal finitism, though the parsimony norm is briefly defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparison is recoverable as an all-else-equal parsimony argument between two diagnoses of the same paradox."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The all-else-equal framing properly qualifies parsimony as a preference rather than a deductive demonstration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Causal finitism may explain why the conjunction fails rather than merely recording its formal inconsistency.",
+        "decisiveQualification": "That extra explanation must earn its substantive commitments and show an advantage beyond excluding the paradox."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The comparative inference is coherent under its explicit equal-explanatory-power condition, with only a bounded implicit simplicity norm."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The contrast between classical-logical and substantive spacetime commitments supports parsimony, though explanatory equivalence is asserted somewhat compactly."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly advances the subsidiary parsimony bridge but is less direct than the underlying central inconsistency diagnosis."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move fairly allows additional explanatory power to matter while arguing that none has yet been established."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the minimal commitments of classical logic with causal finitism's substantive claims about space and time.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-conditional-inference-defense",
+      "sectionId": "grim-reaper-inference",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "The Grim Reaper paradox supports causal finitism through the form: if an infinite past is possible, the setup is possible; the setup is impossible; therefore an infinite past is impossible.",
+      "sourceSpan": {
+        "startEvent": 721,
+        "endEvent": 846
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Josh acknowledges Alex's paper, develops the time-travel comparison, and explicitly identifies the disputed first premise of the modal argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-modal-conditional"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unsatisfiable-pair-diagnosis",
+          "con-minimal-diagnosis-parsimony"
+        ],
+        "components": [
+          {
+            "componentId": "pro-conditional-inference-defense-component-01",
+            "targetMoveId": "con-unsatisfiable-pair-diagnosis",
+            "text": "The disputed issue is whether an infinite past entails the setup's possibility, not merely whether the setup is contradictory.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-conditional-inference-defense-component-02",
+            "targetMoveId": "con-minimal-diagnosis-parsimony",
+            "text": "A valid modal conditional would give causal finitism explanatory work beyond merely excluding the conjunction.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply correctly isolates the first premise of the modus-tollens argument, but restates rather than independently establishes that contested modal conditional.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive inference explicitly but leaves the opposing demand for a warrant substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The P-to-Q structure, Q's impossibility, and target of disagreement are expressly and consistently identified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The deductive form is necessary if its premises hold, but the presentation gives the contested first premise more force than its supplied warrant earns."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The unsatisfiable-pair diagnosis accepts Q's impossibility while denying that possible infinitude makes Q possible.",
+        "decisiveQualification": "Restating the conditional does not answer the request for a modal principle licensing it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The formal inference is valid and clearly expressed, but its central modal premise remains the very unsupported point under dispute."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The passage specifies the disputed premise without adding representative support or a new warrant sufficient to establish it."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the indispensable central modal conditional even though its performance on that bridge is incomplete."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply accurately locates the opponent's denial but only partially meets its strongest demand for justification."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly gives the if-P-then-Q, not-Q, therefore not-P form and identifies the first premise as the dispute.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rearrangement-can-cross-impossibility",
+      "sectionId": "modal-recombination",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Ordinary rearrangement can cross from possibility into logical impossibility, so recombination intuitions do not by themselves preserve possibility.",
+      "sourceSpan": {
+        "startEvent": 923,
+        "endEvent": 965
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker announces a multipart answer and uses Malpass's bridge reconstruction example to defuse Rasmussen's recombination intuition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-recombination-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-randomized-clock-independence",
+          "pro-conditional-inference-defense"
+        ],
+        "components": [
+          {
+            "componentId": "con-rearrangement-can-cross-impossibility-component-01",
+            "targetMoveId": "pro-randomized-clock-independence",
+            "text": "Rearrangement alone does not preserve possibility because possible components can form an impossible configuration.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rearrangement-can-cross-impossibility-component-02",
+            "targetMoveId": "pro-conditional-inference-defense",
+            "text": "The conditional needs more than a smooth-rearrangement intuition to license the paradoxical total setup.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the failure of unrestricted possibility preservation and uses the bridge-rearrangement example to defeat the underlying intuition.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within diagnostic defeats it contacts the decisive modal warrant and states why rearrangement does not entail possibility preservation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited claim that rearrangement can cross a possibility boundary is clear and appropriately avoids a universal converse."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "A counterexample needs only possibility, and the move does not overstate what the rearrangement analogy establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Changing only intrinsic clock settings within one world may be more modally innocent than assembling arbitrary structures.",
+        "decisiveQualification": "Modal innocence still requires a principle showing that the resulting infinite conjunction is jointly possible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The counterexample coherently defeats the general inference from mere rearrangement to preservation of possibility."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The concrete bridge example supports the limited rebuttal, although its analogy to intrinsic clock variation is not fully defended here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central recombination-limits bridge by attacking a key possibility-preservation intuition."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response reaches the general intuition fairly, though it does not yet fully address the later within-world refinement."
+        }
+      },
+      "evidenceBasis": "The excerpt discusses rebuilding bridges from the same bricks and rejects the claim that moving or rearranging things cannot mark a possibility boundary.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-infinite-recombination-limits",
+      "sectionId": "modal-recombination",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Infinite recombination is epistemically unreliable, normally caveated, and cannot transfer the impossibility of a joint configuration to either component alone.",
+      "sourceSpan": {
+        "startEvent": 1122,
+        "endEvent": 1302
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The extended turn presents Lewisian recombination, its caveats, epistemic humility, and Malpass's unsatisfiable-pair diagnosis in one continuous answer.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-recombination-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-randomized-clock-independence",
+          "pro-conditional-inference-defense"
+        ],
+        "components": [
+          {
+            "componentId": "con-infinite-recombination-limits-component-01",
+            "targetMoveId": "pro-randomized-clock-independence",
+            "text": "Individual possibility and independence cannot transfer possibility to a logically impossible infinite conjunction.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-infinite-recombination-limits-component-02",
+            "targetMoveId": "pro-conditional-inference-defense",
+            "text": "The first conditional premise fails without a justified infinite recombination principle.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the illicit transfer from possible components to their impossible combination and adds epistemic and standard caveats about infinite recombination.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within diagnostic defeats, it explicitly contacts the decisive global inference and explains the defeating consequence for the modal conditional."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction among component possibility, combination, and restrictions on recombination remains stable throughout the stated argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move combines a firm logical point with appropriately qualified epistemic claims about the reliability of infinite recombination."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The relevant operation varies settings of already coexisting clocks rather than importing objects from separate worlds.",
+        "decisiveQualification": "That refinement still needs a reason why infinitely many locally possible variations are jointly compossible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The component-versus-combination distinction is explicit and directly resolves the strongest validity challenge to the opponent's inference."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "Logical structure and recognized caveats strongly support the diagnosis, with only the exact scope of admissible recombination left open."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move reaches the indispensable central bridge and gives its most developed attack on the modal conditional."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response preserves the strongest local-independence idea while correctly isolating its remaining global compossibility burden."
+        }
+      },
+      "evidenceBasis": "The excerpt says that individually possible P and Q can combine impossibly and assigns the failure to combining them rather than either component.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-adjacent-world-clock-variation",
+      "sectionId": "modal-recombination",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "Varying intrinsic settings of clocks that already coexist in one possible world is categorically different from recombining infinitely many objects drawn from separate possible worlds.",
+      "sourceSpan": {
+        "startEvent": 1303,
+        "endEvent": 1433
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker credits Malpass's paper before formulating Rasmussen's refined distinction between two different recombination principles.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-modal-conditional"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-infinite-recombination-limits",
+          "con-rearrangement-can-cross-impossibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-adjacent-world-clock-variation-component-01",
+            "targetMoveId": "con-infinite-recombination-limits",
+            "text": "The relevant demand concerns varying settings of jointly existing clocks, not unrestricted cross-world infinite recombination.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-adjacent-world-clock-variation-component-02",
+            "targetMoveId": "con-rearrangement-can-cross-impossibility",
+            "text": "Intrinsic variation of coexisting clocks is claimed to differ from arbitrary structural rearrangement.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies a narrower modal principle that preserves the legitimate compossibility issue and distinguishes it from the stronger principle criticized by Malpass.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within justified reframes it explicitly preserves the modal issue and supplies a categorical distinction, though the narrower principle remains incompletely warranted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two recombination principles are clearly distinguished by whether objects already coexist in one possible world."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents an intuition and categorical distinction without claiming to have deductively established unlimited joint variation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even jointly existing clocks may have settings that cannot all be varied independently across an infinite array.",
+        "decisiveQualification": "The narrower principle must still establish global compossibility rather than merely local variation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction answers the cross-world objection coherently, with one bounded but important bridge from local variation to infinite joint variation."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The within-world contrast is a meaningful warrant, but its evidential basis remains largely intuitive and does not verify global independence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Although methodologically framed, it directly supplies the central modal conditional's refined defense and thus reaches the central tier."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The opposing caveat remains recognizable, but the reply does not fully resolve its strongest infinite-scope version."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts taking infinitely many items from separate possible worlds with altering settings of clocks already present together.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-suffering-favors-indifference",
+      "sectionId": "comparative-likelihoods",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "constructive",
+      "proposition": "Apparently unnecessary suffering is more expected under indifference than under perfect theism and therefore provides modest evidence favoring indifference.",
+      "sourceSpan": {
+        "startEvent": 1567,
+        "endEvent": 1647
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the explicit topic transition, the speaker presents Malpass's previously identified evidential argument and hands the discussion to Rasmussen.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-suffering-likelihood"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive gives the central comparative-likelihood argument: apparently unnecessary suffering is less expected under perfect theism and therefore modestly favors indifference.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within constructive moves, it clearly states the hypothesis comparison, expectedness difference, and limited evidential conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The evidence, competing hypotheses, direction of likelihood, and modest scope of the conclusion are all recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move expressly describes a simple and modest evidential argument rather than claiming suffering conclusively disproves theism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The likelihood inference is valid and clearly limited, though the classification of suffering as apparently unnecessary carries an implicit evidential premise."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Perfect goodness supplies a specific comparative expectation, but background conditions and rival theistic reasons are not yet examined."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly establishes the central suffering-likelihood bridge, though not the modal half required for motion completion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive introduces its comparison without yet characterizing a developed opposing explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt says unnecessary suffering is less expected under an all-knowing, powerful, loving God and draws a modest evidential comparison with indifference.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-auxiliary-probability-asymmetry",
+      "sectionId": "comparative-likelihoods",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "A consequence entailed by theism does not lower that hypothesis's prior probability, whereas adding conscious sufferers to bare indifference may require an independent probability-lowering auxiliary assumption.",
+      "sourceSpan": {
+        "startEvent": 1842,
+        "endEvent": 1973
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A clear conversational handoff introduces Rasmussen's flashlight principle, which he develops continuously through his comparison of theistic entailments and indifference auxiliaries.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-likelihood-background"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-suffering-favors-indifference"
+        ],
+        "components": [
+          {
+            "componentId": "pro-auxiliary-probability-asymmetry-component-01",
+            "targetMoveId": "con-suffering-favors-indifference",
+            "text": "The likelihood comparison must include the auxiliary assumptions needed for conscious sufferers under each hypothesis.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the background-probability demand by distinguishing entailed theistic consequences from independent auxiliaries added to indifference, but does not establish the relevant priors.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it contacts the decisive comparative framework but leaves the independence and probability of the auxiliaries materially unsupported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The asymmetry is recoverable, but 'auxiliary hypothesis' shifts between entailment and an independent addition, limiting comparability."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly says he could be wrong and offers the asymmetry tentatively, fitting the limited warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Indifference can be conditionalized on the shared background fact that conscious beings exist without treating consciousness as a costly ad hoc auxiliary.",
+        "decisiveQualification": "The probability comparison depends on a consistently specified common background and hypothesis space."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The probability principle is intelligible, but comparing an entailment on one side with an auxiliary on the other risks inconsistent hypothesis specification."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The claimed prior-probability asymmetry is largely asserted and no probability model or independence defense establishes its magnitude."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central background-likelihood bridge by challenging how the rival hypotheses are augmented."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move recognizes background additions but insufficiently handles the strongest shared-background formulation of the opposing argument."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts an addition to indifference that allegedly lowers its prior with a theistic addition said to follow from the hypothesis.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-compensation-does-not-justify-atrocity",
+      "sectionId": "theodicy-and-distribution",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "No quantity of compensating benefit automatically makes deliberately causing or permitting atrocities morally acceptable, because some harms resist an aggregative ledger of goods and evils.",
+      "sourceSpan": {
+        "startEvent": 2044,
+        "endEvent": 2110
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Within Malpass's turn, an explicit pushback launches a new moral argument about compensation and permissibility, concluding with a direct question to Rasmussen.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-framework"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-auxiliary-probability-asymmetry"
+        ],
+        "components": [
+          {
+            "componentId": "con-compensation-does-not-justify-atrocity-component-01",
+            "targetMoveId": "pro-auxiliary-probability-asymmetry",
+            "text": "General probability bookkeeping does not supply a morally adequate reason for permitting extreme suffering.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply redirects from abstract comparative probability to the distinct moral-permission demand and presses whether compensatory goods can justify atrocities; it is issue-bearing but only indirectly answers the targeted probability move.",
+        "responsivenessWithinClass": {
+          "value": 56,
+          "rationale": "Within partial answers, it contacts a secondary implication for theism's likelihood but not the primary auxiliary-probability inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim concerns automatic justification by compensation, not the stronger thesis that compensation can never be morally relevant."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move poses a demanding moral question and resists automatic aggregation without asserting a fully demonstrated absolute prohibition."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compensation may combine with consent, prevention constraints, responsibility, or nonaggregative goods to justify permission.",
+        "decisiveQualification": "Compensation alone does not show why imposing extreme involuntary harm is permissible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The distinction between producing benefits and morally licensing atrocity is coherent, with the underlying nonaggregation principle only partly articulated."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The starvation example sharply tests the moral claim, but the general resistance to aggregation is supported mainly through moral judgment."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly attacks the subsidiary moral-framework bridge through the permissibility of compensation and extreme harms."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The objection leaves room for a richer justification while accurately rejecting an automatic compensatory ledger."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what compensatory goods could make allowing millions of children to starve morally permissible and rejects a simple ledger.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-expected-unknown-divine-reasons",
+      "sectionId": "skeptical-theism",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "Finite thinkers should expect not to know many of an infinite mind's reasons if theism is true, so ignorance of a reason for suffering is only weak evidence against theism.",
+      "sourceSpan": {
+        "startEvent": 2163,
+        "endEvent": 2287
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rasmussen explicitly introduces his marriage-certificate analogy and develops its probabilistic application through his concluding remarks about background knowledge and the broader evidential picture.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-theistic-reasons"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-compensation-does-not-justify-atrocity",
+          "con-suffering-favors-indifference"
+        ],
+        "components": [
+          {
+            "componentId": "pro-expected-unknown-divine-reasons-component-01",
+            "targetMoveId": "con-compensation-does-not-justify-atrocity",
+            "text": "Finite agents' inability to identify a divine reason does not establish that no morally sufficient reason exists.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-expected-unknown-divine-reasons-component-02",
+            "targetMoveId": "con-suffering-favors-indifference",
+            "text": "Expected ignorance weakens the inference from unexplained suffering to comparative evidence against theism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the inference from unknown reasons to evidential force by arguing that epistemic gaps are expected under an infinite mind, but it does not provide the morally sufficient reasons requested.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers it reaches the decisive epistemic inference, while leaving the concrete moral-permission challenge unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion is limited to the evidential weakness of ignorance and does not claim that every suffering has been justified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Expected cognitive gaps plausibly weaken a no-reason inference, but do not alone establish that observed extreme suffering is only weak evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some reasons may be hidden while clear moral cases remain sufficiently understood to support an evidential judgment.",
+        "decisiveQualification": "General cognitive limitation does not show that ignorance is expected for the particular class and severity of harms at issue."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The finite-versus-infinite-mind inference is coherent but leaves a material bridge from some expected ignorance to weak evidence in these cases."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The marriage-certificate analogy illustrates expected gaps, yet supplies little independent support for their frequency or moral relevance."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central theistic-reasons bridge by addressing epistemic access to divine purposes."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply accepts possible evidence from intuitions elsewhere, but this passage underdevelops the opponent's case-specific qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt says an infinite mind should produce blank spots in finite understanding and concludes that such ignorance is not very powerful evidence against theism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-shared-moral-knowledge-limits-skepticism",
+      "sectionId": "skeptical-theism",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Shared moral knowledge in clear cases permits judging that permitting torture is wrong regardless of compensating goods, and many actual sufferings appear relevantly similar to those cases.",
+      "sourceSpan": {
+        "startEvent": 2338,
+        "endEvent": 2407
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass first acknowledges that finite agents may miss some reasons, then marks a contrast and develops his shared-moral-knowledge objection through the end of his turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-theistic-reasons"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-expected-unknown-divine-reasons"
+        ],
+        "components": [
+          {
+            "componentId": "con-shared-moral-knowledge-limits-skepticism-component-01",
+            "targetMoveId": "pro-expected-unknown-divine-reasons",
+            "text": "General expected ignorance does not defeat judgments in clear cases covered by shared moral knowledge.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply grants that some reasons may be unknown, then identifies why that concession does not extend to clear torture-like cases and states the evidential consequence.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats it addresses the strongest skeptical-theist inference, supplies the limiting principle, and applies it to actual suffering."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The clear-case limitation is explicit, though the asserted similarity between torture and many actual sufferings is not finely delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The argument is conditioned on shared ordinary moral knowledge and does not claim infallibility across every difficult case."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Finite agents may possess reliable first-order moral rules while lacking knowledge of overriding divine reasons.",
+        "decisiveQualification": "The skeptical view needs grounds for expecting such overriding reasons in paradigm cases without eroding the shared rules themselves."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The concession-and-limitation structure is explicit and consistently separates local uncertainty from global moral skepticism."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Shared judgment about torture strongly supports the limiting case, though similarity to the full distribution of suffering is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central theistic-reasons bridge by limiting appeals to inaccessible moral purposes."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move grants finite limitations and targets only their unrestricted extension to cases treated as paradigmatically wrong."
+        }
+      },
+      "evidenceBasis": "The excerpt says torturing a child remains wrong regardless of compensatory goods and invokes shared moral knowledge rather than complete moral skepticism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-commonsense-moral-evidence",
+      "sectionId": "skeptical-theism",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "A commonsense intuition that God would have prevented a particular evil can provide reasonable justification even without a stronger supporting philosophical argument.",
+      "sourceSpan": {
+        "startEvent": 2408,
+        "endEvent": 2433
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rasmussen begins a new turn by affirming Malpass's strongest formulation and completes this first point before explicitly introducing his second distinction.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-epistemic-discipline"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-shared-moral-knowledge-limits-skepticism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-commonsense-moral-evidence-component-01",
+            "targetMoveId": "con-shared-moral-knowledge-limits-skepticism",
+            "text": "A commonsense intuition that God would prevent a particular evil can itself justify an evidential judgment.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly affirms the evidential legitimacy of the opponent's commonsense intuition even without a stronger philosophical argument, preserving rather than defeating that challenge.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full ordinary answers it explicitly contacts and substantially concedes the decisive evidential premise while clarifying its justificatory basis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is carefully limited to reasonable justification from a particular intuition, not certainty or universal moral reliability."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The moderate claim that intuition can provide reasonable justification fits the source and acknowledges that further argument may be attempted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Commonsense moral judgment can constitute evidence even if no accessibility principle about divine reasons is independently defended.",
+        "decisiveQualification": "Its evidential force remains defeasible and case-specific rather than conclusive."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The distinction between intuitive justification and a supporting accessibility argument is clear, consistent, and philosophically usable."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The move fairly identifies a source of prima facie justification, though it offers no independent reliability check for the intuition."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly engages the subsidiary epistemic-discipline bridge by preserving commonsense evidence against unrestricted skepticism."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply adopts the strongest reasonable version of the opponent's moral-evidence claim and preserves its limited force."
+        }
+      },
+      "evidenceBasis": "The excerpt says the intuition that God would have prevented an evil may be stronger than a philosophical accessibility argument and can provide reasonable justification.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-voluntary-risk-arena",
+      "sectionId": "theodicy-and-distribution",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "God's creation of an arena may differ morally from wrongdoing within it when embodied beings voluntarily accept risks for opportunities involving growth, love, lessons, and experience.",
+      "sourceSpan": {
+        "startEvent": 2434,
+        "endEvent": 2539
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Rasmussen explicitly announces a second point and sustains the arena, game, voluntary-risk, and contract line through the final delivered context row without a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-framework"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-compensation-does-not-justify-atrocity",
+          "con-shared-moral-knowledge-limits-skepticism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-voluntary-risk-arena-component-01",
+            "targetMoveId": "con-compensation-does-not-justify-atrocity",
+            "text": "Creating a voluntary risk-bearing arena may differ morally from personally committing wrongdoing within it.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-voluntary-risk-arena-component-02",
+            "targetMoveId": "con-shared-moral-knowledge-limits-skepticism",
+            "text": "The argument preserves ordinary prohibitions on wrongdoing while questioning their direct transfer to divine permission.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the moral-permission demand through consent, risk, and arena distinctions, while explicitly disclaiming a complete explanation of actual evil and suffering.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers it contacts the decisive moral distinction but does not show that actual sufferers consented or that extreme risks were permissible."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The arena distinction is clear, but voluntary entry and the class of embodied beings covered are left materially underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker explicitly says this is not an answer to why suffering exists and advances only a possible moral distinction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Many victims, especially children, do not appear to have voluntarily accepted the relevant catastrophic risks.",
+        "decisiveQualification": "The arena defense needs a source of valid consent or another justification for imposing risks on nonconsenting sufferers."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The creator-versus-participant distinction is coherent, but consent and responsibility assumptions leave material gaps in application to actual suffering."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The adventure and contract analogies are suggestive, yet evidence that embodied sufferers voluntarily accepted the relevant risks is absent."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary moral-framework bridge through consent, risk, and divine permission."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move acknowledges incompleteness but does not adequately incorporate the strongest nonconsent qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes voluntary limitation, adventure, risks for lessons and love, and expressly distinguishes personal wrongdoing from allowing an arena.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-unfalsifiability-severs-evidence",
+      "sectionId": "skeptical-theism",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "A theism compatible with every possible observation becomes unfalsifiable and cannot connect worldly events strongly enough to rationally affect belief.",
+      "sourceSpan": {
+        "startEvent": 2836,
+        "endEvent": 2909
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker distinguishes the target from neutral agnosticism, develops an unfalsifiability analogy, and concludes immediately before Rasmussen's acknowledgment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-epistemic-discipline"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-expected-unknown-divine-reasons",
+          "pro-commonsense-moral-evidence",
+          "pro-voluntary-risk-arena"
+        ],
+        "components": [
+          {
+            "componentId": "con-unfalsifiability-severs-evidence-component-01",
+            "targetMoveId": "pro-expected-unknown-divine-reasons",
+            "text": "If unknown reasons accommodate every observation, worldly evidence ceases to connect meaningfully with theism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unfalsifiability-severs-evidence-component-02",
+            "targetMoveId": "pro-commonsense-moral-evidence",
+            "text": "Preserving some intuitive evidence does not cure a framework that can neutralize every adverse observation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unfalsifiability-severs-evidence-component-03",
+            "targetMoveId": "pro-voluntary-risk-arena",
+            "text": "Purpose-specific possibilities need constraints if they are to preserve confirmation and disconfirmation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses unrestricted compatibility as evidentially self-defeating and states that a hypothesis whose gears never connect with observations cannot rationally update belief.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats it identifies the epistemic failure and consequence, though the target's own concessions leave room for a restricted version."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is explicitly conditional on compatibility with every possible observation rather than applied indiscriminately to all theism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the stated universal accommodation condition, the loss of discriminatory evidential connection follows with appropriately limited force."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A theist may allow unknown reasons while still treating some observations as confirming or disconfirming.",
+        "decisiveQualification": "The objection applies only if the unknown-reason policy lacks constraints and accommodates every possible result."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The conditional link from universal accommodation to loss of evidential discrimination is explicit and resolves the main epistemic challenge."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The analogy and confirmation principle strongly support the conditional critique, though actual universal accommodation is not fully demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It reaches the subsidiary epistemic-discipline bridge at its upper end by testing confirmation and falsification constraints."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move distinguishes open-minded constrained theism from the unrestricted evidential insulation it criticizes."
+        }
+      },
+      "evidenceBasis": "The excerpt describes a view so flexible that its gears never connect with events strongly enough to affect belief, despite every outcome passing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unfair-distribution-of-extreme-suffering",
+      "sectionId": "theodicy-and-distribution",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "A world that requires some people to endure extreme deprivation for others' flourishing would distribute suffering unfairly and callously.",
+      "sourceSpan": {
+        "startEvent": 3322,
+        "endEvent": 3360
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins after Alex is directly invited to speak, and the uninterrupted critical argument continues until another participant requests a response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-suffering-likelihood"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-voluntary-risk-arena",
+          "pro-expected-unknown-divine-reasons"
+        ],
+        "components": [
+          {
+            "componentId": "con-unfair-distribution-of-extreme-suffering-component-01",
+            "targetMoveId": "pro-voluntary-risk-arena",
+            "text": "A risk-bearing arena is morally inadequate if severe deprivation is imposed unequally for others' flourishing.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unfair-distribution-of-extreme-suffering-component-02",
+            "targetMoveId": "pro-expected-unknown-divine-reasons",
+            "text": "Unknown purposes do not explain why burdens must fall so extremely and unevenly.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply moves beyond suffering's compatibility with goods and contacts the decisive distributional demand: why particular people bear extreme losses for a world-level arrangement.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full ordinary answers it explicitly presses unequal allocation, though it does not systematically compare every consent or compensation variant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The unfairness proposition is clear, although the hypothetical requirement that someone must lose is not fully bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move argues that the arrangement seems unfair rather than asserting a demonstrated impossibility of any unequal risk distribution."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unequal outcomes might arise from delegated agency rather than a divine requirement that some suffer for others.",
+        "decisiveQualification": "A perfect-being defense must still explain permission of foreseeable extreme deprivation and its unequal incidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The move coherently separates aggregate world goods from fairness to burdened individuals, with one compressed premise about required deprivation."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The distributional example materially supports the critique, though no representative empirical comparison or detailed fairness principle is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central suffering-likelihood bridge by focusing on the observed unequal distribution of severe harm."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The objection allows different causal stories but retains the central distributional burden for divine permission."
+        }
+      },
+      "evidenceBasis": "The excerpt considers a world where not everyone can get what they want and argues that imposing the losses on particular people appears unfair.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-finite-agent-world-goods",
+      "sectionId": "theodicy-and-distribution",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "constructive",
+      "proposition": "A world of diverse finite agents can realize goods of growth, relationship, discovery, risk, delegated responsibility, and collective progress unavailable in a world containing only maximally great beings.",
+      "sourceSpan": {
+        "startEvent": 3427,
+        "endEvent": 3458
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turn management immediately before and after the passage identifies Josh as the participant adding a final substantive point before Alex receives the last word.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-theistic-reasons"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive enumerates goods distinctive of diverse finite agency and supplies a positive reason why a perfect being might create a risky, delegated world.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves it gives a substantive positive account, but does not connect each good to the necessity or distribution of extreme suffering."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The list of finite-agent goods is stable, with an implicit qualification that these goods justify some risk rather than every actual harm."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim that such goods would be missing is plausible, while its relevance to actual suffering requires an implicit limited-scope caveat."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from finite diversity to distinctive goods is coherent, with a bounded implicit bridge from those goods to justified risky creation."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The concrete list supports value distinctiveness, but necessity, proportionality, and connection to extreme suffering remain unverified."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move directly supports the central theistic-reasons bridge by articulating positive goods of finite, delegated agency."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive presents positive world goods without directly characterizing a specific opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt lists growth, relationship, discovery, progress, adventures under risk, and delegated responsibilities as goods absent from another kind of world.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-conscious-suffering-likelihood",
+      "sectionId": "comparative-likelihoods",
+      "side": "pro",
+      "speaker": "Josh Rasmussen",
+      "moveKind": "reply",
+      "proposition": "Without restrictive background assumptions, theism provides resources for conscious, adventuresome life and suffering may therefore be more probable on theism than indifference, although specific suffering and richer background knowledge can reverse the comparison.",
+      "sourceSpan": {
+        "startEvent": 3473,
+        "endEvent": 3517
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly permits Josh one final contribution before Alex's last word, and Alex's response begins immediately after this completed summary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-likelihood-background"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-suffering-favors-indifference",
+          "con-unfair-distribution-of-extreme-suffering",
+          "con-unfalsifiability-severs-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-conscious-suffering-likelihood-component-01",
+            "targetMoveId": "con-suffering-favors-indifference",
+            "text": "The likelihood comparison changes when consciousness and the resources for adventuresome life are included in the evidence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-conscious-suffering-likelihood-component-02",
+            "targetMoveId": "con-unfair-distribution-of-extreme-suffering",
+            "text": "Specific forms and distributions of suffering may reverse the broad comparison.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-conscious-suffering-likelihood-component-03",
+            "targetMoveId": "con-unfalsifiability-severs-evidence",
+            "text": "The explicit possibility of reversal preserves evidential sensitivity to richer observations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes suffering in general from specific suffering under richer background knowledge and concedes that the latter can reverse the likelihood comparison.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full ordinary answers it explicitly contacts the comparative likelihood, background, specificity, and evidential-sensitivity demands."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The passage clearly separates bare suffering from specific suffering and expressly conditions conclusions on background knowledge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The reversal caveat is exemplary, though describing suffering in itself as powerful evidence exceeds the limited support for consciousness under bare indifference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Specific severe and uneven suffering can favor indifference even if consciousness abstractly favors theism.",
+        "decisiveQualification": "The evidential comparison must be conducted at the finest relevant description under shared background knowledge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The coarse-to-fine evidence distinction is coherent and explicitly permits reversal, with a bounded assumption about theism's resources for consciousness."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Theism's purposive resources support the broad claim, but indifference's alleged lack of consciousness-producing resources is insufficiently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central likelihood-background bridge through hypothesis specification, consciousness, and evidence granularity."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply explicitly accepts this strongest qualification and allows it to reverse the broad comparison."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that theism has resources for conscious adventuresome beings, then explicitly says richer background and specific suffering can change the comparison.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-fine-grained-consciousness-evidence",
+      "sectionId": "comparative-likelihoods",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Although consciousness in the abstract may initially appear more likely on theism, its precarious dependence on alterable brain matter fits an accidental natural process better than deliberate divine production.",
+      "sourceSpan": {
+        "startEvent": 3518,
+        "endEvent": 3599
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Josh has just yielded the promised last word to Alex, and the extended first-person response remains continuous through the conclusion of the consciousness example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-likelihood-background"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-conscious-suffering-likelihood",
+          "pro-finite-agent-world-goods"
+        ],
+        "components": [
+          {
+            "componentId": "con-fine-grained-consciousness-evidence-component-01",
+            "targetMoveId": "pro-conscious-suffering-likelihood",
+            "text": "Fine-grained dependence of consciousness on fragile brain matter may fit accidental production better than divine design.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-fine-grained-consciousness-evidence-component-02",
+            "targetMoveId": "pro-finite-agent-world-goods",
+            "text": "General goods of finite consciousness do not settle why consciousness has this precarious physical implementation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply grants the abstract consciousness comparison and then answers it with a finer-grained evidential description focused on alterable neural dependence.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within full ordinary answers it explicitly contacts the central premise, concedes its strongest coarse-grained form, and supplies the decisive qualification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between consciousness abstractly and its particular physical realization is clear, stable, and explicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move says the coarse evidence is plausibly theistic before arguing that wider context can alter its evidential direction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consciousness considered abstractly may be more probable under purposive theism than under indifference.",
+        "decisiveQualification": "Its fragile dependence on brain alterations is additional evidence that must enter the likelihood comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The evidential refinement is explicit, consistent, and avoids denying the conceded abstract likelihood comparison."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Brain dependence supplies a specific observable feature and rival comparison, though the likelihood under deliberate creation remains partly intuitive."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central likelihood-background bridge by refining the consciousness evidence used in the comparison."
+        },
+        "representationalCharity": {
+          "value": 95,
+          "rationale": "The reply expressly grants the opponent's strongest coarse-grained claim and then adds a directly relevant finer-grained qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt introduces wider context for assessing whether consciousness favors theism or indifference, and the locked proposition specifies its precarious brain dependence.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct residual consequence survives outside the move ratings, response links, importance judgments, and burden-contact records.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured debate-wide bridge-completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any cumulative effect is already represented in the individual modal, likelihood, epistemic, and moral judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden-contact codes"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct residual consequence survives outside the move ratings, response links, importance judgments, and burden-contact records.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured debate-wide bridge-completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "Any cumulative effect is already represented in the individual modal, likelihood, epistemic, and distributional judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden-contact codes"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

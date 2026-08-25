@@ -1,0 +1,1864 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "61",
+  "debateId": "scrivener-oconnor-morality-bible-slavery-2026",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-genealogy",
+      "side": "pro",
+      "description": "Establish that the modern West's characteristic commitments to compassion, equality, freedom, consent, and abolition are historically unintelligible without Christianity's doctrines, narratives, communities, and institutions, while allowing that Christian influence need not be exclusive or mechanically deterministic.",
+      "successCriteria": "The route succeeds if it identifies distinctively Christian moral ideas, shows credible mechanisms transmitting them into Western practices and institutions, and explains apparent scriptural, ecclesial, and pre-Christian counterexamples without making every Western outcome Christian by definition.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-indispensable-genealogy",
+        "tier": "motion",
+        "description": "Connect the named modern Western values to an indispensable Christian historical genealogy rather than merely showing temporal coexistence or isolated Christian participation."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-moral-source",
+          "tier": "central",
+          "description": "Identify Christian doctrines and narratives capable of generating universal dignity, concern for the weak, reciprocal obligation, and emancipation."
+        },
+        {
+          "bridgeId": "pro-central-transmission",
+          "tier": "central",
+          "description": "Trace those moral sources through communities, legal concepts, reform movements, and durable institutions into the modern West."
+        },
+        {
+          "bridgeId": "pro-central-counterexamples",
+          "tier": "central",
+          "description": "Account for difficult biblical texts, Christian defenses of hierarchy or slavery, and analogous pre-Christian values while preserving the claimed genealogy."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-causal-standard",
+          "tier": "subsidiary",
+          "description": "Defend a bounded historical standard under which inherited influence can persist despite unbelief, contestation, and later secular reformulations."
+        },
+        {
+          "bridgeId": "pro-subsidiary-alternative-routes",
+          "tier": "subsidiary",
+          "description": "Explain why proposed material, political, or counterfactual alternatives do not eliminate Christianity's contribution to the history that occurred."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-mixed-secular-genealogy",
+      "side": "con",
+      "description": "Establish that the modern Western moral package is better explained by multiple traditions, institutional conflict, material change, oppressed groups' resistance, and secular moral development, while permitting particular and substantial Christian contributions.",
+      "successCriteria": "The route succeeds if it distinguishes Christian contribution from Christian necessity or authorship, supplies credible independent sources and causal mechanisms for the named values, and shows that contrary biblical and Christian precedents limit any uniquely Christian genealogy.",
+      "motionBridge": {
+        "bridgeId": "con-motion-mixed-genealogy",
+        "tier": "motion",
+        "description": "Show that Christianity is one contingent contributor within a mixed genealogy rather than the indispensable source of the named modern Western values."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-independent-analogs",
+          "tier": "central",
+          "description": "Establish that compassion, protection, equality, or related moral practices arose before or outside Christianity in forms relevant to the origin claim."
+        },
+        {
+          "bridgeId": "con-central-social-mechanisms",
+          "tier": "central",
+          "description": "Explain modern rights and reforms through institutional conflict, self-interest, resistance by oppressed groups, technological change, and material conditions."
+        },
+        {
+          "bridgeId": "con-central-internal-counterevidence",
+          "tier": "central",
+          "description": "Use biblical permissions, exclusions, coercive implications, and competing Christian historical practices to test claims of inherent Christian development."
+        },
+        {
+          "bridgeId": "con-central-contribution-distinction",
+          "tier": "central",
+          "description": "Separate Christian participation or institutionalization from authorship, uniqueness, necessity, and completion of modern moral principles."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-falsifiability",
+          "tier": "subsidiary",
+          "description": "Require criteria that distinguish genuine Christian inheritance from retrospective selection of Christian precedents for any eventual Western outcome."
+        },
+        {
+          "bridgeId": "con-subsidiary-modern-package",
+          "tier": "subsidiary",
+          "description": "Test the genealogy against the specific modern meanings of freedom, equal social standing, bodily autonomy, and universal abolition."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-causal-method",
+      "title": "Standards for Historical Moral Genealogy",
+      "weightPercent": 15,
+      "rationale": "The debate depends on what counts as causal inheritance: indispensable influence, unique origin, institutional contribution, or one factor among many. This section covers boundedness, falsifiability, secular reformulation, alternative pathways, and the distinction between actual history and counterfactual development."
+    },
+    {
+      "sectionId": "section-compassion-institutions",
+      "title": "Compassion, the Weak, and Protective Institutions",
+      "weightPercent": 18,
+      "rationale": "Compassion supplies a principal test of whether Christian narrative and worship generated a distinctive concern for vulnerable people and scaled it through hospitals and charity, or instead institutionalized values already present in other traditions."
+    },
+    {
+      "sectionId": "section-rights-equality-freedom",
+      "title": "Rights, Equality, and Freedom",
+      "weightPercent": 25,
+      "rationale": "This section addresses central named and defining Western commitments by testing proposed lines from biblical anthropology, Christian practice, canon law, dissent, and natural rights against founding-era unbelief, exclusion, institutional conflict, and social struggle."
+    },
+    {
+      "sectionId": "section-gender-consent",
+      "title": "Gender Equality, Marriage, and Consent",
+      "weightPercent": 17,
+      "rationale": "Gender equality and bodily autonomy test whether reciprocal Christian teachings and women's early religious roles contain a trajectory toward modern equality and consent, or whether scriptural restrictions and the limits of mutual marital authority require other developments."
+    },
+    {
+      "sectionId": "section-slavery-abolition",
+      "title": "Scripture, Slavery, and Abolition",
+      "weightPercent": 25,
+      "rationale": "Abolition is a major motion-level case because Christian scripture, churches, enslaved believers, and reformers appear within both emancipatory and pro-slavery histories. The issue tests narrative interpretation, textual permission, institutional transformation, political struggle, and causal attribution."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-causal-indispensable-genealogy",
+      "sectionId": "section-causal-method",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "constructive",
+      "proposition": "Modern Western moral developments need not be direct or inevitable products of Christianity, but they remain historically unthinkable without Christianity and its moral intuitions.",
+      "sourceSpan": {
+        "startEvent": 197,
+        "endEvent": 236
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Glen directly, and the sustained first-person answer contrasts his position with Tom Holland's stronger formulation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-indispensable-genealogy"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states Pro's bounded motion-level causal thesis and therefore has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly formulates the governing historical claim and expressly rejects inevitability."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The thesis and its non-inevitability qualification are clear, though historically “unthinkable without” remains somewhat underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The explicit modesty about directness and inevitability helps, but the necessity claim exceeds the evidence supplied here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The bounded claim is internally consistent, with only the bridge from Christian intuitions to historical necessity left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The excerpt asserts indispensable influence but supplies no representative causal comparison or transmission evidence within this move."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the motion bridge requiring an indispensable Christian genealogy."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move primarily defines Pro's thesis rather than interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly replaces an inherent-development thesis with the claim that the developments were unthinkable without Christianity and drew on Christian intuitions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-compassion-crucifixion-reversal",
+      "sectionId": "section-compassion-institutions",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "constructive",
+      "proposition": "The crucifixion reverses natural dominance by depicting the highest sacrificing himself for the weakest, generating a Christian compassion revolution expressed through charity, hospitals, orphan care, and rejection of cruel practices.",
+      "sourceSpan": {
+        "startEvent": 798,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Glen to explain Christian compassion, and Glen's uninterrupted answer extends from the cross through Roman practices to the delivered boundary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-source"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a proposed Christian moral source and institutional consequences without answering an earlier opposing move.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within constructive moves, it presents a vivid source mechanism and several claimed historical manifestations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The crucifixion-reversal thesis is recoverable, but the scope of the claimed compassion revolution and institutional effects is broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples plausibly support influence, but the causal language is stronger than the excerpt's comparative historical warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The reversal-to-compassion inference is intelligible, though the bridge from narrative symbolism to institutional change is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Charity, hospitals, and orphan care are relevant examples, but chronology, representativeness, and rival explanations are not defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central moral-source bridge through a specific Christian narrative and claimed consequences."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing alternative is interpreted or evaluated in this constructive passage."
+        }
+      },
+      "evidenceBasis": "The passage links the highest figure's descent and sacrifice to a compassion revolution expressed in charity, hospitals, and orphan care.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rights-institutional-conflict",
+      "sectionId": "section-rights-equality-freedom",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Religious and expressive freedoms arose through institutional conflict and groups protecting their interests as Christian authority fragmented, rather than as the maturation of an inherent Christian principle.",
+      "sourceSpan": {
+        "startEvent": 1399,
+        "endEvent": 1468
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor explicitly contrasts two historical stories and carries the second through Protestant and American church-state conflicts to a conclusion about rights and self-interest.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-social-mechanisms"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-causal-indispensable-genealogy"
+        ],
+        "components": [
+          {
+            "componentId": "con-rights-institutional-conflict-component-01",
+            "targetMoveId": "pro-causal-indispensable-genealogy",
+            "text": "Whether Christian inheritance is indispensable rather than one historical setting within which rights emerged.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the necessity inference by offering fragmentation, institutional conflict, and group self-protection as an alternative causal mechanism for religious freedom.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly contests the decisive causal inference and supplies an intelligible alternative historical story."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The institutional-conflict account is clear, with an implicit limitation to the freedoms and episodes discussed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The competing explanation is advanced as a historical expectation rather than an exclusive or certain universal account."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian fragmentation could transmit an internal Christian commitment to conscience and religious freedom.",
+        "decisiveQualification": "Institutional conflict and self-interest can still be causal even where the competing groups remain Christian."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The predicted historical patterns follow coherently from the contrast between inherent principle and conflict-generated accommodation."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Protestant fragmentation and American church-state conflict are concrete support, though causal independence from Christian ideas is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances Con's central social-mechanisms bridge through institutional conflict and group interest."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move recognizes the Christian historical sequence but gives limited attention to internal doctrinal contributions within it."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts maturation within church history with freedom asserted against Christian authority as that authority fragmented.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-rights-biblical-anthropology",
+      "sectionId": "section-rights-equality-freedom",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Modern equality and rights arose from biblical ideas about God, creation, souls, and the divine image, while Enlightenment formulations recast that inherited Christian basis as supposedly self-evident.",
+      "sourceSpan": {
+        "startEvent": 1490,
+        "endEvent": 1592
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Scrivener's equality case, and he develops it continuously through Harari, Jefferson, Franklin, Locke, Genesis, rights, and comparative civilizational prevalence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-source"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rights-institutional-conflict"
+        ],
+        "components": [
+          {
+            "componentId": "pro-rights-biblical-anthropology-component-01",
+            "targetMoveId": "con-rights-institutional-conflict",
+            "text": "Whether rights are better explained by institutional conflict than by inherited Christian moral anthropology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers the rival genealogy by locating equality and rights in creation, souls, divine image, and inherited Christian premises later presented as self-evident.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the causal dispute directly, although it does not closely compare the proposed doctrinal route with conflict mechanisms."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The source claim is clear, but “Christian ideas,” “rights,” and the extent of Enlightenment dependence remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The named intellectual lineage offers support, but “smuggled in” overstates dependence without fuller comparison of sources."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Institutional conflict may explain the adoption of rights even if Christian concepts furnished some available vocabulary.",
+        "decisiveQualification": "Conceptual ancestry and the political mechanism producing enforceable freedoms are distinct causal questions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The inference from biblical anthropology to modern rights is intelligible but leaves a material transmission and exclusivity bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Jefferson, Franklin, Locke, Genesis, and the divine image provide specifics, but dependence and rival traditions are not adequately tested."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly contacts the central moral-source bridge by identifying doctrines proposed to generate equality and rights."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move supplies an alternative intellectual source but gives insufficient attention to the opponent's distinct institutional mechanism."
+        }
+      },
+      "evidenceBasis": "The move claims that secular self-evidence recasts an explicitly Christian understanding grounded in God, creation, souls, and divine image.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gender-canonical-restrictions",
+      "sectionId": "section-gender-consent",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Canonical restrictions on women, together with their long exclusionary interpretation in church history, make Christianity a historical support for gender inequality rather than a sufficient source of modern equal standing.",
+      "sourceSpan": {
+        "startEvent": 1789,
+        "endEvent": 1828
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person skeptical stance, defense of Pauline interpolation scholarship, and criticism of the inherited canon clearly identify O'Connor.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-internal-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-rights-biblical-anthropology"
+        ],
+        "components": [
+          {
+            "componentId": "con-gender-canonical-restrictions-component-01",
+            "targetMoveId": "pro-rights-biblical-anthropology",
+            "text": "Whether biblical anthropology supplies a sufficient historical basis for modern equal social standing.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Canonical restrictions and their exclusionary historical interpretation directly test whether the biblical source reliably generated modern equality.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "The move contacts the decisive source-to-outcome inference with concrete internal counterevidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is bounded to gender standing, church office, canonical texts, and their historical interpretation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move poses a measured historical challenge rather than claiming that restrictive texts exhaust Christianity's effects."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Other biblical themes and prominent early Christian women may support an egalitarian trajectory despite restrictive passages.",
+        "decisiveQualification": "The canonical restrictions and their durable exclusionary interpretation remain internal historical counterevidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The longstanding restrictive interpretation validly weakens any simple inference from biblical anthropology to sufficient egalitarian causation."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Canonical office restrictions and their historical interpretation are specific evidence, with only broader representativeness left compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports Con's internal-counterevidence bridge through scriptural restrictions and exclusionary Christian practice."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move allows that Protestants changed practice while fairly insisting that the canonical and historical tension requires explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt cites canonical restrictions on women holding office and asks whether such texts bolstered historical inequality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-women-early-church-suffrage",
+      "sectionId": "section-gender-consent",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Prominent women evangelists, teachers, apostles, and deacons in early Christianity establish a biblical trajectory that helps explain the Western intellectual genealogy of universal suffrage.",
+      "sourceSpan": {
+        "startEvent": 1912,
+        "endEvent": 1930
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The appeal to Acts and Romans, followed by an explicit Christian genealogical conclusion, is Scrivener's direct answer to O'Connor.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gender-canonical-restrictions"
+        ],
+        "components": [
+          {
+            "componentId": "pro-women-early-church-suffrage-component-01",
+            "targetMoveId": "con-gender-canonical-restrictions",
+            "text": "Whether canonical restrictions and exclusionary interpretation make Christianity primarily supportive of gender inequality.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the counterevidence by identifying women as coworkers, apostles, and deacons, then proposes an egalitarian historical trajectory.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It answers with contrary canonical examples but only partially resolves the restrictive texts and long exclusionary reception."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The examples and trajectory are clear, but the leap to the Western genealogy of universal suffrage has broad scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Early prominent women support an egalitarian strand, but do not by themselves warrant the “most obvious explanation” for suffrage."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Restrictive canonical passages and centuries of exclusion may outweigh isolated examples of prominent women.",
+        "decisiveQualification": "The early roles establish a live egalitarian strand but do not erase contrary texts or institutional reception."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "A trajectory is possible, but the inference from early offices to universal suffrage leaves substantial transmission and comparative bridges."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Junia, Phoebe, and other coworkers are specific evidence, but the suffrage conclusion lacks representative historical tracing."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It supports the central transmission bridge by proposing an early-Christian-to-suffrage trajectory, though that trajectory is compressed."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The reply offers genuine counterexamples yet does not squarely address the opponent's strongest historical-interpretive qualification."
+        }
+      },
+      "evidenceBasis": "The move names Junia, Phoebe, and numerous female coworkers before asserting a Christian intellectual genealogy for universal suffrage.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rights-material-struggle",
+      "sectionId": "section-rights-equality-freedom",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Technological change, improved material conditions, and resistance by oppressed people better explain major advances in feminism, abolition, and political rights than the gradual unfolding of long-standing Christian belief.",
+      "sourceSpan": {
+        "startEvent": 1991,
+        "endEvent": 2069
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly develops O'Connor's materialist alternative using feminism, technology, Haiti, Magna Carta, and abolition imagery.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-social-mechanisms"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-women-early-church-suffrage",
+          "pro-rights-biblical-anthropology"
+        ],
+        "components": [
+          {
+            "componentId": "con-rights-material-struggle-component-01",
+            "targetMoveId": "pro-women-early-church-suffrage",
+            "text": "Whether Christianity is the best explanation for the Western intellectual genealogy of universal suffrage and related reforms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rights-material-struggle-component-02",
+            "targetMoveId": "pro-rights-biblical-anthropology",
+            "text": "Whether inherited Christian belief best explains modern equality and political rights.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly offers technological opportunity, material change, and oppressed groups' resistance as rival mechanisms for feminism, abolition, and rights.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It contacts both historical-causal claims and supplies a concrete multi-factor alternative rather than mere denial."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The mechanisms are identifiable, though the relative claim across feminism, abolition, and political rights is broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The material mechanisms are plausible and qualified, but their superiority across several reforms is not fully demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian beliefs may motivate resistance and scientific or institutional developments even when material opportunity enables mobilization.",
+        "decisiveQualification": "Enabling conditions and oppressed-group agency remain causally distinct from the moral vocabulary participants invoke."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The opportunity-and-motivation explanation coherently supplies mechanisms that compete with passive doctrinal unfolding."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Washing machines, protest, Haiti, Magna Carta, and abolition supply examples, but comparative causal weights remain insufficiently verified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and extensively advances Con's central social-mechanisms bridge."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The move acknowledges possible disagreement over deeper causes but underdevelops interaction between Christian ideas and material mechanisms."
+        }
+      },
+      "evidenceBasis": "The passage ties mobilization to technological opportunity and the motivation of people living under oppressive conditions to resist when able.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-rights-canon-law-transmission",
+      "sectionId": "section-rights-equality-freedom",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Medieval canon lawyers transformed Christian obligations toward powerless people into enforceable rights, supplying theological language later developed by natural-rights thinkers.",
+      "sourceSpan": {
+        "startEvent": 2157,
+        "endEvent": 2196
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The historically specific account of canon law, medieval theology, natural law, and rights as protection is Scrivener's invited explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rights-material-struggle",
+          "con-rights-institutional-conflict"
+        ],
+        "components": [
+          {
+            "componentId": "pro-rights-canon-law-transmission-component-01",
+            "targetMoveId": "con-rights-material-struggle",
+            "text": "Whether material opportunity and resistance explain rights better than Christian intellectual and legal transmission.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-rights-canon-law-transmission-component-02",
+            "targetMoveId": "con-rights-institutional-conflict",
+            "text": "Whether institutional conflict rather than Christian legal development supplied enforceable rights.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies a concrete medieval legal transmission mechanism, answering rival social accounts by tracing obligations into entitlements and later rights discourse.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly strengthens the missing transmission link, although it does not compare the relative importance of rival mechanisms."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The period, actors, conceptual transformation, and downstream legal discourse are clearly identified, with bounded implicit qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move makes a focused contribution claim supported by a specific institutional mechanism rather than an exclusive causal assertion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Material struggle and institutional conflict may explain enforcement even if canon lawyers developed relevant concepts.",
+        "decisiveQualification": "Conceptual transmission is a genuine causal contribution without proving exclusive or indispensable authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The transformation of an obligation owed by the powerful into an entitlement held by the powerless is a clear conceptual mechanism."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Canon lawyers, the eleventh and twelfth centuries, sustenance rights, and later natural-rights discourse provide specific historical support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central transmission bridge through legal concepts and institutions."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move fairly complements rather than caricatures rival mechanisms, though their independent importance is not explored."
+        }
+      },
+      "evidenceBasis": "The excerpt describes canon lawyers converting obligations toward poor people into their enforceable entitlement to sustenance in medieval legal discourse.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-compassion-prechristian-analogs",
+      "sectionId": "section-compassion-institutions",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Hammurabi's Code and the Hippocratic tradition supplied pre-Christian protections for the weak and impartial medical care, undermining claims that these compassionate values were uniquely Christian in origin.",
+      "sourceSpan": {
+        "startEvent": 2197,
+        "endEvent": 2279
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The comparative critique of Hammurabi, Gregorian reforms, and the Hippocratic oath is an extended O'Connor response to Scrivener.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-independent-analogs"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-compassion-crucifixion-reversal",
+          "pro-rights-canon-law-transmission"
+        ],
+        "components": [
+          {
+            "componentId": "con-compassion-prechristian-analogs-component-01",
+            "targetMoveId": "pro-compassion-crucifixion-reversal",
+            "text": "Whether compassion and protection of vulnerable people are distinctively Christian in origin.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-compassion-prechristian-analogs-component-02",
+            "targetMoveId": "pro-rights-canon-law-transmission",
+            "text": "Whether protection of the weak and rights discourse originated specifically in Christian legal development.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Hammurabi and Hippocratic practice directly answer the origin claim by presenting earlier protection and impartial-care analogues.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The move contacts the uniqueness premise with named pre-Christian evidence, while leaving institutional scale for later dispute."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The examples are clear, though equivalence between ancient protections and modern compassion or rights is only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The analogues are used to undermine uniqueness, not to claim identity with the full modern institutional package."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity may have uniquely universalized or institutionally scaled earlier scattered practices.",
+        "decisiveQualification": "Earlier relevant analogues still defeat an unqualified claim of Christian authorship of the underlying values."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Relevant earlier analogues logically weaken uniqueness, provided the claimed similarities are sufficiently substantive."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Hammurabi's prologue and Hippocratic impartial care are specific evidence, though comparability and historical continuity remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports Con's central independent-analogs bridge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move preserves room for later Christian institutional contribution while accurately challenging uniqueness of origin."
+        }
+      },
+      "evidenceBasis": "The passage invokes Hammurabi's stated protection of the weak and pre-Christian medical ideals as precedents for compassion and equal treatment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-compassion-institutional-scaling",
+      "sectionId": "section-compassion-institutions",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Christianity distinctively scaled compassion into institutions serving poor and sick people as such, rather than merely restoring enslaved people or soldiers to economic or military usefulness.",
+      "sourceSpan": {
+        "startEvent": 2280,
+        "endEvent": 2315
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The Good Samaritan, common grace, hospitals, and institutional scaling form Scrivener's explicit answer to the pre-Christian examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-compassion-prechristian-analogs"
+        ],
+        "components": [
+          {
+            "componentId": "pro-compassion-institutional-scaling-component-01",
+            "targetMoveId": "con-compassion-prechristian-analogs",
+            "text": "Whether earlier protective and medical analogues defeat a distinctive Christian genealogy of compassion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the analogues' existence but distinguishes isolated or instrumental care from institutions serving poor and sick people as such.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly contacts the analogues and states the decisive institutional-scale distinction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes underlying practices, instrumental treatment, beneficiaries, and institutional scaling."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The institutional distinction is well framed, but unique Christian scaling requires broader comparative historical documentation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Hippocratic and Mesopotamian practices may express genuine compassion even without hospital-scale institutions.",
+        "decisiveQualification": "Value origin and durable institutional scaling are different achievements, and the reply only claims distinctiveness chiefly for scaling."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The origin-versus-scaling distinction is explicit and directly resolves the immediate inference from analogues to institutional equivalence."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The beneficiary distinction is concrete, but uniqueness of Christian institutional scaling lacks broader representative comparison in this excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports Pro's central transmission bridge through durable compassionate institutions."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move grants common grace and earlier knowledge while accurately isolates institutionalization as its narrower claim."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts treatment for economic or military usefulness with institutions serving poor and sick people precisely in their vulnerability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-compassion-institution-origin-distinction",
+      "sectionId": "section-compassion-institutions",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Even if Christianity uniquely developed hospitals, that would establish a significant institutional contribution without establishing Christian authorship of compassion or equal treatment, which had earlier analogues.",
+      "sourceSpan": {
+        "startEvent": 2457,
+        "endEvent": 2492
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The recap of pre-Christian legal and medical examples and the explicit values-versus-institutions distinction identify O'Connor's reply.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-contribution-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-compassion-institutional-scaling",
+          "pro-compassion-crucifixion-reversal"
+        ],
+        "components": [
+          {
+            "componentId": "con-compassion-institution-origin-distinction-component-01",
+            "targetMoveId": "pro-compassion-institutional-scaling",
+            "text": "Whether unique Christian institutional scaling establishes Christian authorship of compassion and equal treatment themselves.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-compassion-institution-origin-distinction-component-02",
+            "targetMoveId": "pro-compassion-crucifixion-reversal",
+            "text": "Whether Christian narrative generated the underlying compassionate values rather than chiefly institutionalizing them.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly grants the hospital claim for argument's sake while separating institutional contribution from authorship of earlier values.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It isolates and answers the decisive inference with a precise concession-and-distinction structure."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction among values, origins, and institutions is explicit, stable, and carefully qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes a bounded inference and expressly concedes significant Christian institutional contribution."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unique hospital development could be a powerful expression and transmission mechanism for Christian compassion.",
+        "decisiveQualification": "Institutional innovation does not itself prove authorship or uniqueness of the underlying value."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The contribution-versus-origin distinction is valid, explicit, and directly addresses the scope of the conclusion warranted."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The inference rests on the already named pre-Christian analogues and a clear conceptual distinction, with minor comparability gaps."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances Con's central contribution-distinction bridge."
+        },
+        "representationalCharity": {
+          "value": 95,
+          "rationale": "The strongest contribution claim is expressly conceded before the narrower origin inference is rejected."
+        }
+      },
+      "evidenceBasis": "The passage concedes possible Christian hospital institutionalization while emphasizing that compassion and equal medical treatment have earlier precedents.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-falsifiability",
+      "sectionId": "section-causal-method",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "A genealogy capable of tracing every possible Western practice to some biblical story or church tradition needs a condition under which the claim of Christian origin would be rejected.",
+      "sourceSpan": {
+        "startEvent": 2684,
+        "endEvent": 2707
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker asks for a falsifying condition and describes the concern that any Western practice can be linked vaguely to scripture or church tradition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-falsifiability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-causal-indispensable-genealogy"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-falsifiability-component-01",
+            "targetMoveId": "pro-causal-indispensable-genealogy",
+            "text": "The claim that modern values are historically unthinkable without Christianity requires a discriminating causal standard.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The move expressly diagnoses that an origin thesis able to accommodate every possible outcome cannot discriminate causal inheritance and demands a falsifying condition.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It identifies the methodological defect, states its consequence, and asks for the exact criterion needed to repair it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The methodological demand and the defect it identifies are explicit and narrowly framed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move asks for a rejection condition rather than asserting that no adequate condition could exist."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A cumulative historical genealogy may be warranted without a single simple falsification test.",
+        "decisiveQualification": "It still needs some discriminating conditions separating genuine inheritance from retrospective association."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The demand follows directly from the risk that an unconstrained genealogy can explain any observed outcome."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The concern is supported by the described ability to invoke some biblical story or tradition for any practice, though examples are compressed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the subsidiary falsifiability bridge by stating its decisive methodological requirement."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move does not demand laboratory falsification; it reasonably requests a historical rejection condition."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what social outcome would disallow or falsify a claimed Christian origin rather than permit another biblical association.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-opposite-outcomes",
+      "sectionId": "section-causal-method",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Because opposite social arrangements, including strong-family and anti-family orders or slavery and abolition, can each be retrospectively justified from the Bible, unconstrained scriptural genealogy cannot discriminate between outcomes.",
+      "sourceSpan": {
+        "startEvent": 3111,
+        "endEvent": 3152
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker describes the argument as an internal critique and uses paired examples involving strong versus weak family obligations and slavery versus abolition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-falsifiability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-causal-indispensable-genealogy",
+          "pro-compassion-institutional-scaling"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-opposite-outcomes-component-01",
+            "targetMoveId": "pro-causal-indispensable-genealogy",
+            "text": "An indispensable genealogy must discriminate Christian causal inheritance from outcomes that Christianity could retrospectively justify either way.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-method-opposite-outcomes-component-02",
+            "targetMoveId": "pro-compassion-institutional-scaling",
+            "text": "Distinctive institutional outcomes require a standard that would not equally Christianize opposite arrangements.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The move diagnoses non-discrimination by showing that opposed family structures and both slavery and abolition can receive retrospective biblical support.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It supplies concrete paired counterexamples and states the defeating consequence for an unconstrained genealogy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The targeted methodology, paired outcomes, and conditional nature of the internal critique are all clear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Concrete opposed outcomes appropriately support the claim that an unconstrained scriptural method lacks discrimination."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A disciplined narrative and institutional genealogy could privilege some biblical themes over contrary proof texts.",
+        "decisiveQualification": "The proponent must state independent criteria for that privileging rather than selecting whichever trajectory prevailed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "If the same method validates opposed outcomes without independent selection criteria, it cannot establish the claimed causal direction."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "Strong-family versus anti-family readings and slavery versus abolition provide concrete internal examples of non-discrimination."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It very strongly supports the subsidiary falsifiability bridge with worked counterexamples."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move targets unconstrained genealogy, not every possible disciplined Christian historical argument."
+        }
+      },
+      "evidenceBasis": "The move pairs contrary family orders and imagines a victorious slave society still invoking the same Bible as causal justification.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-abolition-competing-christian-camps",
+      "sectionId": "section-slavery-abolition",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Any genealogy crediting Christianity for abolition must also explain comparably Christian defenses of slavery, since opposing camps invoked the same God, Bible, and tradition and the American dispute was settled through political violence.",
+      "sourceSpan": {
+        "startEvent": 3257,
+        "endEvent": 3271
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly pairs Christian abolitionism with Christian anti-abolitionism and notes that the American conflict was resolved through physical force.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-internal-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-causal-indispensable-genealogy"
+        ],
+        "components": [
+          {
+            "componentId": "con-abolition-competing-christian-camps-component-01",
+            "targetMoveId": "pro-causal-indispensable-genealogy",
+            "text": "Whether Christian participation in abolition establishes an indispensable emancipatory genealogy despite contrary Christian practice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges selective causal credit by requiring the genealogy to account for comparably Christian pro-slavery mobilization and political violence.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It contacts the central counterexample demand with a concrete symmetry challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The American case, competing camps, shared authorities, and causal implication are all clearly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Shared Christian warrants strongly create an attribution problem, though “just as strong” is not documented in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Abolitionists may have interpreted Christianity more coherently with its central narrative than pro-slavery Christians did.",
+        "decisiveQualification": "That theological ranking requires independent criteria and does not erase the historical strength of Christian pro-slavery practice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "Competing camps invoking the same tradition validly undermine simple attribution from Christian participation to Christian causal ownership."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The shared Bible, God, tradition, and violent resolution are concrete, but comparative strength and wider abolition history remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances Con's central internal-counterevidence bridge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move fairly demands symmetrical historical accounting, though it does not explore principled theological asymmetry."
+        }
+      },
+      "evidenceBasis": "The excerpt says Christian abolitionists and anti-abolitionists appealed to the same authorities and that American resolution came through physical force.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-slavery-christological-narrative",
+      "sectionId": "section-slavery-abolition",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Israel's particular history and difficult laws belong to a biblical narrative culminating in Christ's universal jubilee and the cross's emancipatory meaning, rather than functioning as the tradition's final moral horizon.",
+      "sourceSpan": {
+        "startEvent": 3561,
+        "endEvent": 3635
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn invokes Christ, jubilee, incarnation, and the grand biblical narrative in a sustained statement matching Scrivener's theological position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-counterexamples"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-abolition-competing-christian-camps",
+          "con-method-opposite-outcomes"
+        ],
+        "components": [
+          {
+            "componentId": "pro-slavery-christological-narrative-component-01",
+            "targetMoveId": "con-abolition-competing-christian-camps",
+            "text": "Whether Christian pro-slavery practice defeats the claim that Christianity's governing narrative is emancipatory.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-slavery-christological-narrative-component-02",
+            "targetMoveId": "con-method-opposite-outcomes",
+            "text": "Whether a principled biblical narrative can discriminate emancipatory interpretation from contrary proof-text use.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers both challenges by proposing a canonical hierarchy: difficult laws are swept into a narrative culminating in Christ, jubilee, and liberation.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "It provides a clear interpretive criterion but does not fully explain rival Christians' use of the same canon or historical causal selection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The narrative criterion is recoverable, though “culminates,” “liberate,” and “unique emancipatory movement” remain interpretively broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Christological narrative can support emancipation, but the claimed unique causal birth of abolition exceeds the evidence offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Pro-slavery Christians also understood themselves as reading the same Bible and Christian tradition coherently.",
+        "decisiveQualification": "A Christ-centered canonical hierarchy offers a criterion, but its historical authority and discriminatory application require defense."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The canonical culmination supplies a material bridge, but the move does not fully show why it controls contrary permissions and interpretations."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Jubilee, incarnation, and crucifixion are relevant theological evidence, but unique historical causation and reception are largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports Pro's central counterexamples bridge by integrating difficult texts into an emancipatory narrative."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move responds with a substantive hermeneutic but underaddresses the strongest symmetry and reception-history challenge."
+        }
+      },
+      "evidenceBasis": "The passage says difficult verses are incorporated into a grand narrative culminating in Christ's slave-like death and world liberation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-slavery-biblical-permission",
+      "sectionId": "section-slavery-abolition",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Biblical condemnation of kidnapping does not amount to abolition because authorized capture and ownership remain permitted, while New Testament teaching regulates slavery rather than ending it.",
+      "sourceSpan": {
+        "startEvent": 3752,
+        "endEvent": 3846
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly answers Scrivener's big-picture account and develops O'Connor's distinction between prohibited stealing and biblically authorized taking.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-internal-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-slavery-christological-narrative"
+        ],
+        "components": [
+          {
+            "componentId": "con-slavery-biblical-permission-component-01",
+            "targetMoveId": "pro-slavery-christological-narrative",
+            "text": "Whether Christological culmination adequately accounts for concrete biblical permissions and regulation of slavery.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes prohibited kidnapping from authorized capture and ownership, and contrasts narrative liberation with continued New Testament regulation.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It squarely contacts the decisive textual counterexample and identifies why the narrower prohibition does not establish abolition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinctions among kidnapping, capture, ownership, regulation, and abolition are explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move carefully argues that specific permissions limit the abolition inference without claiming that scripture has no emancipatory resources."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Bible's overarching Christological narrative may undermine slavery gradually even without an immediate legal prohibition.",
+        "decisiveQualification": "A trajectory claim must still account for explicit permissions and regulation that fall short of abolition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The distinction between condemning one acquisition method and abolishing the institution is explicit and logically decisive against that inference."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "Old Testament capture and ownership permissions plus New Testament regulation provide specific internal textual support, with some contextual detail compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and strongly supports Con's central internal-counterevidence bridge."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The move directly engages the strongest narrative response while preserving the narrower force of its textual objection."
+        }
+      },
+      "evidenceBasis": "The move argues that banning kidnapping leaves other authorized means of taking and owning slaves and notes New Testament regulation rather than abolition.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-abolition-historical-transformation",
+      "sectionId": "section-slavery-abolition",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Christianity worked through patient social transformation to dissolve slavery in medieval Christendom and later to defeat its return in the New World.",
+      "sourceSpan": {
+        "startEvent": 4013,
+        "endEvent": 4057
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn rejects O'Connor's demand for explicit apostolic condemnation and states Scrivener's long-term historical causal thesis through an extended analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-slavery-biblical-permission",
+          "con-abolition-competing-christian-camps"
+        ],
+        "components": [
+          {
+            "componentId": "pro-abolition-historical-transformation-component-01",
+            "targetMoveId": "con-slavery-biblical-permission",
+            "text": "Whether the absence of explicit biblical abolition and continued regulation defeats Christianity's historical emancipatory role.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-abolition-historical-transformation-component-02",
+            "targetMoveId": "con-abolition-competing-christian-camps",
+            "text": "Whether Christian pro-slavery history prevents crediting Christianity with abolitionary transformation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply reframes immediate textual prohibition as patient social transformation and claims Christianity dissolved slavery twice in historical practice.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts both objections with a historical mechanism, but the evidence for attribution and the medieval claim is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The long-term transformation thesis is clear, but “Christendom,” “melts away,” and “Christianity has done it” obscure scope and agency."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical twice-accomplished claim exceeds the excerpt's documentation and omits competing causes and forms of servitude."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Medieval decline and modern abolition arose from mixed economic, political, and religious mechanisms.",
+        "decisiveQualification": "Christian participation and temporal sequence do not alone establish that Christianity caused both transformations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Gradual transformation can answer the lack of immediate abolition, but attribution to Christianity requires a material additional bridge."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The claims that slavery melted away and Christianity abolished it twice are asserted without representative historical support or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It materially supports Pro's central transmission bridge through a claimed long-run historical mechanism."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move answers the immediate-prohibition demand but substantially compresses the strongest mixed-causation alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt claims slavery disappeared in Christendom, returned in the New World, and was abolished again through Christianity's patient transformation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-consent-reciprocity-autonomy-distinction",
+      "sectionId": "section-gender-consent",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Christianity contributed historically progressive reciprocity between spouses, but it did not supply the modern principle of individual bodily autonomy and an unconditional right to refuse sex, which required additional influences.",
+      "sourceSpan": {
+        "startEvent": 4240,
+        "endEvent": 4268
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly identifies the passage as a closing summary of his position, and its balanced concession-and-critique structure matches O'Connor's case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-modern-package"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-abolition-historical-transformation",
+          "pro-women-early-church-suffrage"
+        ],
+        "components": [
+          {
+            "componentId": "con-consent-reciprocity-autonomy-distinction-component-01",
+            "targetMoveId": "pro-abolition-historical-transformation",
+            "text": "Whether gradual Christian moral development generally suffices to establish authorship of the modern moral principle reached.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-consent-reciprocity-autonomy-distinction-component-02",
+            "targetMoveId": "pro-women-early-church-suffrage",
+            "text": "Whether an internal Christian trajectory adequately explains modern gender equality and autonomy.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move applies the contribution-versus-completion distinction to marriage, conceding reciprocity while identifying bodily autonomy and unconditional refusal as additional modern principles.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It directly contacts the broader trajectory claim and the gender-equality issue, though the primary chronology link is somewhat indirect."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Reciprocity, bodily autonomy, ownership, and an unconditional right to refuse are expressly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes a carefully bounded mixed-genealogy claim while expressly crediting Christianity's progressive contribution."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mutual marital authority may contain a Christian trajectory toward fully individual consent and bodily autonomy.",
+        "decisiveQualification": "Reciprocity of mutual claims is conceptually different from each spouse's independently retained right to refuse."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The distinction between symmetrical mutual entitlement and individual autonomy is explicit, coherent, and decisive."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The conceptual comparison is well supported by the specified ownership and refusal implications, though outside historical influences are not named."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the subsidiary modern-package bridge by testing Christianity against modern consent's specific content."
+        },
+        "representationalCharity": {
+          "value": 95,
+          "rationale": "The strongest Christian contribution is expressly credited before the remaining conceptual gap is precisely identified."
+        }
+      },
+      "evidenceBasis": "The passage credits Christian reciprocity but distinguishes it from each spouse owning their own body and retaining an unconditional sexual refusal.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-consent-christian-marriage-program",
+      "sectionId": "section-gender-consent",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "Mutual consent governs marital sexuality as well as temporary abstinence, and the wider Christian marriage program transformed Western ideas of individuality and equality in ways that contributed to feminism.",
+      "sourceSpan": {
+        "startEvent": 4269,
+        "endEvent": 4286
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "An explicit opposing turn answers O'Connor's summary and advances Scrivener's characteristic historical-genealogical argument using the surrounding chapter.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consent-reciprocity-autonomy-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-consent-christian-marriage-program-component-01",
+            "targetMoveId": "con-consent-reciprocity-autonomy-distinction",
+            "text": "Whether Christian mutuality stops short of individual bodily autonomy and an unconditional right to refuse sex.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply asserts mutual consent in sexual relations and broadens the causal case to a Christian marriage program shaping individuality, equality, and feminism.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts consent and wider genealogy but does not clearly resolve the opponent's precise reciprocity-versus-autonomy distinction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The marriage-program claim is recoverable, but “consent,” “individual,” and contribution to feminism span distinct meanings and broad effects."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that feminism is unavailable without this program exceeds the cited conceptual and historical support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mutual agreement for particular marital practices can coexist with reciprocal ownership rather than individual bodily autonomy.",
+        "decisiveQualification": "The reply must establish an unconditional individual refusal right, not merely mutual governance or temporary abstinence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The wider marriage-program mechanism is intelligible, but mutuality does not by itself entail the modern autonomy principle being disputed."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Pauline and Matthean material plus Henrich provide relevant support, but the broad effects on individuality, equality, and feminism are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It substantially supports Pro's central transmission bridge through a claimed marriage-and-family institutional program."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move invokes consent but does not adequately preserve the opponent's decisive conceptual distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes the Christian marriage program, Matthew 19, and Henrich to claim transformed ideas of personhood, individuality, equality, and feminism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-causal-actual-history-over-counterfactual",
+      "sectionId": "section-causal-method",
+      "side": "pro",
+      "speaker": "Glen Scrivener",
+      "moveKind": "reply",
+      "proposition": "The claim that modern reforms would have emerged through another route is an untestable counterfactual that cannot displace the intellectual genealogy found in the history that actually occurred.",
+      "sourceSpan": {
+        "startEvent": 4291,
+        "endEvent": 4299
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly challenges the preceding counterfactual and uses the historical-genealogy objection consistently advanced by Scrivener throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-alternative-routes"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consent-reciprocity-autonomy-distinction",
+          "con-rights-material-struggle"
+        ],
+        "components": [
+          {
+            "componentId": "pro-causal-actual-history-over-counterfactual-component-01",
+            "targetMoveId": "con-consent-reciprocity-autonomy-distinction",
+            "text": "Whether additional non-Christian factors were needed to reach modern consent and bodily autonomy.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-causal-actual-history-over-counterfactual-component-02",
+            "targetMoveId": "con-rights-material-struggle",
+            "text": "Whether alternative material routes displace the Christian genealogy found in actual history.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply challenges claims that comparable reforms would arise through another route as untestable counterfactuals and redirects attention to actual intellectual genealogy.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts alternative-route reasoning directly, though it does not answer evidence that additional factors operated in actual history."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between actual genealogy and hypothetical alternative history is clear and explicitly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Counterfactual uncertainty is real, but calling the alternative untestable does not establish Christian indispensability in actual history."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Alternative-route claims can be disciplined by comparative cases and causal mechanisms even though the exact counterfactual is unobservable.",
+        "decisiveQualification": "Counterfactual uncertainty limits necessity claims as much as it limits claims that reform would certainly occur anyway."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The unobservability objection weakens confident alternatives but does not validly establish that the actual route was indispensable."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The move supplies no comparative evidence showing the alternative route unlikely or distinguishing untestable from historically constrained counterfactuals."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly and strongly supports Pro's subsidiary alternative-routes bridge."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The reply identifies genuine uncertainty but treats it asymmetrically and underaddresses evidence of mixed actual causation."
+        }
+      },
+      "evidenceBasis": "The passage calls the claim that reforms would have arrived by another route untestable and insists that only the actual historical genealogy occurred.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility conditions for Pro.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and move-level judgments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion assessment."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility conditions for Con.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and move-level judgments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion assessment."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

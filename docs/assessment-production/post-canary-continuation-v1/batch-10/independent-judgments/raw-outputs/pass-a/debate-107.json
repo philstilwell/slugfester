@@ -1,0 +1,1525 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "107",
+  "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-evidential-christian-theism",
+      "side": "pro",
+      "description": "Establish a cumulative evidential route from the intelligibility of nature and mathematics, historically grounded miracle claims, moral experience, and the Christian treatment of evil toward rationally warranted Christian theism.",
+      "successCriteria": "Show that these considerations jointly fit Christian theism better than agnostic naturalism, while defending evidence-based faith, the coherence of divine action, and grounds for trusting divine goodness despite suffering.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-case",
+        "tier": "motion",
+        "description": "Connect the cumulative force of scientific, mathematical, historical, moral, and existential considerations to an evidence-based commitment to Christian theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-intelligible-order",
+          "tier": "central",
+          "description": "Explain why the intelligibility of nature and the effectiveness of mathematics are expected if a rational divine mind grounds both the cosmos and human reason."
+        },
+        {
+          "bridgeId": "pro-central-evidential-faith",
+          "tier": "central",
+          "description": "Establish that Christian faith can be a reasoned commitment grounded in cumulative historical, experiential, and inferential evidence rather than unsupported assent."
+        },
+        {
+          "bridgeId": "pro-central-miracle-reality",
+          "tier": "central",
+          "description": "Defend the epistemic coherence and historical importance of real divine miracles as signs disclosing the identity and purposes of Christ."
+        },
+        {
+          "bridgeId": "pro-central-evil-and-hope",
+          "tier": "central",
+          "description": "Account for moral evil through significant freedom and connect the cross, resurrection, judgment, and restoration to trust and hope amid suffering."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-science-limits",
+          "tier": "subsidiary",
+          "description": "Distinguish successful methodological naturalism within science from the broader metaphysical claim that naturalism exhausts rational explanation."
+        },
+        {
+          "bridgeId": "pro-subsidiary-narrative-history",
+          "tier": "subsidiary",
+          "description": "Show how the theological meaning of Gospel narratives can depend upon, and be strengthened by, the reality of the events they report."
+        }
+      ]
+    },
+    {
+      "routeId": "con-cautious-agnostic-naturalism",
+      "side": "con",
+      "description": "Establish a cautious nonbelieving route by separating methodological science from theological explanation, distinguishing faith from empirical inference, interpreting miracle narratives without requiring supernatural events, and treating innocent suffering as evidence against confidence in a good God.",
+      "successCriteria": "Show that the offered considerations do not warrant the specifically Christian conclusion because naturalistic inquiry does not require God, religious meaning can remain faith-based or nonliteral, and severe evil resists the proposed account of divine goodness.",
+      "motionBridge": {
+        "bridgeId": "con-motion-underdetermination",
+        "tier": "motion",
+        "description": "Demonstrate that scientific order, religious experience, miracle narratives, and proposed answers to evil underdetermine the move from philosophical possibility to evidence-based Christian faith."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-naturalistic-sufficiency",
+          "tier": "central",
+          "description": "Explain why science may have Christian historical roots yet operate successfully through methodological naturalism without using God as an explanatory component."
+        },
+        {
+          "bridgeId": "con-central-faith-inference-distinction",
+          "tier": "central",
+          "description": "Maintain a distinction between empirically supported scientific inference and the faith commitments through which Christian experience and doctrine are interpreted."
+        },
+        {
+          "bridgeId": "con-central-miracle-meaning",
+          "tier": "central",
+          "description": "Offer an account of Gospel miracle narratives centered on moral, communal, and religious meaning without requiring supernatural violations or physically demonstrated events."
+        },
+        {
+          "bridgeId": "con-central-evidential-evil",
+          "tier": "central",
+          "description": "Show why the scale of innocent suffering and the costs imposed on victims challenge both the free-will defense and an evidential inference to divine goodness."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-design-objections",
+          "tier": "subsidiary",
+          "description": "Test natural-theology inferences by raising questions about the explanatory status of a designer and the evidential significance of defective features in creation."
+        },
+        {
+          "bridgeId": "con-subsidiary-metaphysical-modesty",
+          "tier": "subsidiary",
+          "description": "Allow ultimate metaphysical questions and theological proposals while requiring that they remain distinct from scientific conclusions and open to criticism."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "science-mathematics-and-divine-order",
+      "title": "Science, Mathematics, and the Intelligibility of Nature",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether the historical origins, rational order, and mathematical tractability of science support a divine mind or remain compatible with methodologically naturalistic inquiry."
+    },
+    {
+      "sectionId": "faith-evidence-and-natural-theology",
+      "title": "Faith, Evidence, and Natural-Theology Inference",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether Christian commitment can arise from cumulative publicly assessable reasons or instead depends on a prior framework of faith that organizes experience and interpretation."
+    },
+    {
+      "sectionId": "miracles-history-and-gospel-meaning",
+      "title": "Miracle Claims, Historical Reality, and Gospel Meaning",
+      "weightPercent": 22,
+      "rationale": "This issue addresses whether resurrection and Gospel signs function as coherent historical evidence of Christ or carry their religious significance without literal supernatural occurrence."
+    },
+    {
+      "sectionId": "evil-freedom-and-divine-goodness",
+      "title": "Evil, Human Freedom, and Divine Goodness",
+      "weightPercent": 28,
+      "rationale": "This issue bears directly on whether atrocities and innocent suffering defeat confidence in a good God or can be situated within freedom, divine participation, final justice, and restoration."
+    },
+    {
+      "sectionId": "science-metaphysics-and-explanatory-limits",
+      "title": "Science, Metaphysics, and Explanatory Limits",
+      "weightPercent": 10,
+      "rationale": "This issue clarifies whether science's methodological boundaries leave rational space for theological explanation while avoiding an unwarranted transition from scientific practice to either theism or metaphysical naturalism."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-methodological-naturalism",
+      "sectionId": "science-mathematics-and-divine-order",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "constructive",
+      "proposition": "Christianity helped foster modern science, but successful scientific practice became methodologically naturalistic and no longer required God as an explanatory component.",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 350
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question toward Michael, and the response's autobiographical and philosophical references identify Ruse throughout the turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-naturalistic-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the con route's methodological account of successful scientific practice and does not answer an earlier opposing locked move.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it clearly supplies a central methodological premise with relevant historical framing."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between methodological and metaphysical naturalism makes the claim and its scientific scope explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is confined to scientific practice and does not infer metaphysical naturalism from methodological success."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The historical progression and methodological conclusion are consistent, with only a bounded implicit warrant from utility to adoption."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The machine metaphor, changing scientific practice, and retired-engineer characterization provide specific support, though documentation is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central naturalistic-sufficiency bridge by explaining science's nonuse of God."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops its own methodological account without materially interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "Ruse says God became unhelpful to ordinary scientific work, which proceeded methodologically naturalistically while leaving metaphysical naturalism undecided.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-science-limits-method-metaphysics",
+      "sectionId": "science-metaphysics-and-explanatory-limits",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Science's omission of God from ordinary mechanisms does not establish atheism, because the intelligibility and origins of the universe remain deeper questions and scientism is self-defeating.",
+      "sourceSpan": {
+        "startEvent": 352,
+        "endEvent": 400
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly asks John for his assessment, and the response draws on the speaker's stated work as a pure mathematician.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-science-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-methodological-naturalism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-science-limits-method-metaphysics-component-01",
+            "targetMoveId": "con-methodological-naturalism",
+            "text": "Scientific mechanisms can omit God without settling deeper explanatory or metaphysical questions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the methodological omission identified by Ruse but directly distinguishes it from questions about origins, intelligibility, and metaphysical naturalism.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive method-versus-metaphysics distinction and preserves the legitimate methodological point."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Mechanistic explanation, origins, deeper questions, and scientism are sufficiently differentiated for evaluation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move argues that deeper explanation remains open and presents divine mind as an interpretation rather than a demonstrated necessity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Methodological naturalism concerns scientific practice rather than a proof of atheism.",
+        "decisiveQualification": "Its success still does not itself answer questions about cosmic origins or intelligibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The method-metaphysics distinction is coherent, though the transition from open deeper questions to a divine fingerprint remains partly compressed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The cited intelligibility and origins questions support explanatory openness, but the divine-mind warrant and rival comparison are underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly advances the subsidiary science-limits bridge by separating mechanism from ultimate explanation."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response preserves Ruse's methodological claim while accurately limiting the metaphysical consequence that may be drawn from it."
+        }
+      },
+      "evidenceBasis": "Lennox explicitly asks why science is possible, locates divine explanation outside ordinary mechanisms, and identifies origins as a point where God remains relevant.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mathematics-divine-mind",
+      "sectionId": "science-mathematics-and-divine-order",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "The effectiveness of mathematics in describing the physical universe is expected if a divine mind grounds both cosmic rationality and human rational capacities, but is surprising under naturalism.",
+      "sourceSpan": {
+        "startEvent": 413,
+        "endEvent": 430
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator frames a mathematics question for Lennox, whose answer invokes his discipline and develops the theistic interpretation before the next question.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-intelligible-order"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the pro route's proposed explanation of mathematical effectiveness and does not answer an earlier opposing locked move.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it states a clear central explanatory contrast but compresses the comparative warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The explanatory contrast is recoverable, although the relevant sense of mathematical effectiveness is left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling mathematical effectiveness absolutely unreasonable under naturalism exceeds the brief expectation-based support supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism may treat mathematical effectiveness as a product of selection, abstraction, or model construction.",
+        "decisiveQualification": "The move offers no comparison with those naturalistic accounts before declaring the effectiveness unreasonable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The common-source explanation is intelligible, but the inference needs a comparative bridge showing why naturalism predicts substantially less mathematical fit."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The effectiveness of mathematics and Newton's view are invoked, but no representative evidence or serious naturalistic alternative comparison is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central intelligible-order bridge by connecting cosmic and human rationality to divine mind."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The argument states the theistic expectation clearly but materially weakens the available naturalistic alternative by leaving it unexplored."
+        }
+      },
+      "evidenceBasis": "Lennox contrasts alleged surprise under naturalism with expectation under a God whose mind grounds both the universe and human minds, adding Newton as an example.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-faith-before-design",
+      "sectionId": "faith-evidence-and-natural-theology",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "Christian belief should rest on faith rather than an inference from design, while alleged design raises unresolved questions about the designer and defective features of creation.",
+      "sourceSpan": {
+        "startEvent": 440,
+        "endEvent": 503
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks what Michael makes of Lennox's argument, and the ensuing numbered three-part answer explicitly contrasts Ruse's position with John's.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-faith-inference-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-mathematics-divine-mind"
+        ],
+        "components": [
+          {
+            "componentId": "con-faith-before-design-component-01",
+            "targetMoveId": "pro-mathematics-divine-mind",
+            "text": "Mathematical and apparent design considerations do not by themselves warrant inference to God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-faith-before-design-component-02",
+            "targetMoveId": "pro-mathematics-divine-mind",
+            "text": "A design inference must address questions about the designer and defective features in creation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ruse directly rejects inference from design as the basis of Christian belief and adds challenges concerning the designer and defective creation.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "The decisive inferential demand is contacted, but the reply offers objections without closely analyzing the mathematics-specific expectation claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The faith-versus-design position is clear, but design ranges across mathematics, natural theology, and defective biological features."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Saying Christian belief should be faith-based is stronger than the objections establish, though it is presented as a theological stance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The mathematics argument is an abductive evidential contribution, not a deductive proof from biological perfection.",
+        "decisiveQualification": "Designer questions and defective features can still challenge a cumulative design inference without refuting every mathematical consideration."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The faith-first position and design objections are mutually compatible, but the conclusion that faith should replace inference is not fully derived."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Newman's formulation and the stated objections identify real issues, but defective-design examples and their connection to mathematics are only compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally advances the con faith-inference distinction by denying that design supplies the foundation of Christian belief."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The response raises legitimate objections but partly collapses a mathematics-based expectation argument into a broader and more vulnerable design argument."
+        }
+      },
+      "evidenceBasis": "Ruse invokes Newman's faith-before-design formulation, then asks about the nature of a designer and the evidential force of defective creation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-faith-evidence-created-god",
+      "sectionId": "faith-evidence-and-natural-theology",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Christian faith is an evidence-based commitment rather than a reasonless leap, and asking who created God misconstrues the biblical God as a created entity.",
+      "sourceSpan": {
+        "startEvent": 516,
+        "endEvent": 579
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the three objections to John, and Lennox answers in the first person while explicitly addressing Michael and Dawkins.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evidential-faith"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-faith-before-design"
+        ],
+        "components": [
+          {
+            "componentId": "pro-faith-evidence-created-god-component-01",
+            "targetMoveId": "con-faith-before-design",
+            "text": "Christian faith is an evidence-based commitment rather than belief adopted independently of reasons.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-faith-evidence-created-god-component-02",
+            "targetMoveId": "con-faith-before-design",
+            "text": "Asking who created God misconstrues the biblical God as a created designer.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lennox directly disputes Ruse's faith-versus-evidence framing and answers the designer regress objection by distinguishing an eternal God from created entities.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts two decisive components explicitly, though it does not answer the defective-creation component in the selected span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Evidence-based commitment and the uncreated conception of God are clearly stated and kept conceptually distinct."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conceptual reply to a created God is well fitted, but confidence that Christian faith is evidentially grounded precedes specification of the evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ruse's question may concern the explanatory stopping point rather than literally treating God as created.",
+        "decisiveQualification": "The biblical concept blocks a temporal creator regress but does not alone establish that God is the best ultimate explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinctions between faith and blind assent, proof and evidence, and created entities and God are coherent and directly useful."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The conceptual God reply is defended, but the claim that Christian commitment is evidentially warranted is largely asserted in this selected move."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central evidential-faith bridge by rejecting a reasonless conception of Christian commitment."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response fairly clarifies the Christian concept while leaving a bounded omission concerning the broader explanatory-arbitrariness challenge."
+        }
+      },
+      "evidenceBasis": "Lennox calls his faith an evidence-based commitment, distinguishes evidence from proof, and argues that the biblical God is not a created entity requiring a creator.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-faith-inference-distinction",
+      "sectionId": "faith-evidence-and-natural-theology",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "Evidence may guide a Christian interpretation of experience without proving Christianity, because religious belief arises through faith rather than through scientific-style inferential argument.",
+      "sourceSpan": {
+        "startEvent": 589,
+        "endEvent": 653
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly solicits Michael's response, and the speaker restates Ruse's earlier design-versus-faith distinction through the end of his Damascus example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-faith-inference-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-faith-evidence-created-god"
+        ],
+        "components": [
+          {
+            "componentId": "con-faith-inference-distinction-component-01",
+            "targetMoveId": "pro-faith-evidence-created-god",
+            "text": "Evidence can shape religious interpretation without establishing Christian belief by scientific-style inference.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ruse directly qualifies Lennox's evidence-based account by distinguishing evidence-guided moral and experiential interpretation from inferential proof of Christianity.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The reply explicitly contacts the decisive epistemic distinction, though its alternative account of faith remains only briefly developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes evidence-based interpretation, proof, faith, and scientific-style argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Ruse uses personal and conditional language and does not claim to prove that all Christian belief arises in the described way."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evidence-based Christian commitment need not claim deductive proof or laboratory replication.",
+        "decisiveQualification": "Ruse grants that evidence can guide interpretation while maintaining that the commitment itself includes faith beyond that evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between evidence-guided interpretation and faith commitment is consistent, although the boundary between them remains partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Moral examples and the Damascus illustration clarify the distinction, but they do not establish a general account of religious epistemology."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops the central con bridge separating empirical inference from interpretive faith commitment."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response accurately preserves the evidential element of Lennox's view and identifies the remaining disagreement about inferential reach."
+        }
+      },
+      "evidenceBasis": "Ruse says evidence informs judgments of evil and goodness but does not prove his beliefs, illustrating faith through the Damascus conversion rather than formal argument.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cumulative-christian-evidence",
+      "sectionId": "faith-evidence-and-natural-theology",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Christian commitment rests on cumulative evidence comprising resurrection testimony, intellectual inference, personally testable promises of Christ, and observed transformation in lived experience.",
+      "sourceSpan": {
+        "startEvent": 654,
+        "endEvent": 700
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox interrupts Michael by name and then speaks as a Christian, describing his own testing of Christ's claims before posing a closing challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-cumulative-case"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-faith-inference-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cumulative-christian-evidence-component-01",
+            "targetMoveId": "con-faith-inference-distinction",
+            "text": "Nonlaboratory historical questions can be assessed through inference to the best explanation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-christian-evidence-component-02",
+            "targetMoveId": "con-faith-inference-distinction",
+            "text": "Christian commitment rests on cumulative intellectual, historical, experiential, and transformative evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lennox directly contests the science-versus-faith boundary by invoking historical inference and then identifies multiple kinds of evidence supporting Christian commitment.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "The reply explicitly contacts the decisive inference issue and supplies the requested replacement account of cumulative evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The cumulative character and several distinct evidential categories are stated clearly enough for separate evaluation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cumulative framing is appropriately nondeductive, though the selected evidence does not establish the reliability of every component."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Faith may interpret evidence without being the conclusion of a scientific-style demonstration.",
+        "decisiveQualification": "Historical and personal claims can still be rationally assessed abductively even when laboratory testing and proof are unavailable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The move coherently connects historical abduction and cumulative evidence, with one bounded bridge from diverse evidence to specifically Christian commitment."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Several evidence categories are identified, but their independence, verification, and comparison with rival explanations remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level pro bridge by expressly presenting Christian commitment as the result of cumulative evidence."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response accurately accepts the limits on proof while directly challenging the stronger restriction of rational inference to laboratory science."
+        }
+      },
+      "evidenceBasis": "Lennox invokes inference to the best explanation for past events and describes objective intellectual, resurrection, experiential, and transformational components of his faith.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-spiritual-meaning",
+      "sectionId": "miracles-history-and-gospel-meaning",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "Christian significance need not depend on a physically demonstrated resurrection, because the disciples' transformed conviction that Christ lived can carry the event's spiritual meaning.",
+      "sourceSpan": {
+        "startEvent": 702,
+        "endEvent": 722
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly contrasts his view with John's and self-identifies as a conservative nonbeliever while explaining his spiritual interpretation of resurrection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-miracle-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-christian-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-resurrection-spiritual-meaning-component-01",
+            "targetMoveId": "pro-cumulative-christian-evidence",
+            "text": "The religious significance of resurrection need not depend on proving a physical event.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-spiritual-meaning-component-02",
+            "targetMoveId": "pro-cumulative-christian-evidence",
+            "text": "The disciples' transformed conviction can carry the resurrection's spiritual meaning.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ruse directly challenges the physical-resurrection component of Lennox's cumulative evidence and proposes transformed conviction as the religiously significant alternative.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the historical-necessity issue clearly but does not test the evidential basis for the disciples' transformation or the physical claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Physical occurrence, transformed conviction, and spiritual significance are clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling physical resurrection totally unimportant is stronger than the offered account of spiritual meaning warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Lennox treats physical resurrection as historical evidence essential to claims about Jesus' identity.",
+        "decisiveQualification": "Spiritual transformation may retain religious meaning without supplying the same historical or ontological evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The alternative meaning account is coherent, but transformed conviction does not by itself establish that physical occurrence is evidentially unimportant."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The disciples' transformation is asserted as the meaningful core without documentation or comparison with explanations of that conviction."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops the central con miracle-meaning bridge by separating spiritual significance from supernatural occurrence."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "Ruse recognizes Lennox's historical emphasis but understates the distinct evidential function that a physical resurrection has in Lennox's case."
+        }
+      },
+      "evidenceBasis": "Ruse contrasts Lennox's concern with physical proof against his own view that the disciples' conviction that Christ lived supplies the important spiritual meaning.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cana-real-divine-sign",
+      "sectionId": "miracles-history-and-gospel-meaning",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The Cana account reports an actual divine miracle that adds an event without violating natural law and whose physical occurrence reveals Jesus' identity and redemptive purpose.",
+      "sourceSpan": {
+        "startEvent": 777,
+        "endEvent": 837
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn challenges Michael's selectivity, then adopts Lennox's theistic standpoint and explicitly states belief that Jesus turned water into wine.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-miracle-reality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resurrection-spiritual-meaning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cana-real-divine-sign-component-01",
+            "targetMoveId": "con-resurrection-spiritual-meaning",
+            "text": "A Gospel sign's physical occurrence can be integral to its disclosure of Jesus' identity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cana-real-divine-sign-component-02",
+            "targetMoveId": "con-resurrection-spiritual-meaning",
+            "text": "Divine action may add an event without constituting a violation of natural law.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lennox answers the nonphysical interpretation by affirming a real Cana event, explaining its compatibility with natural law, and linking occurrence to revelatory meaning.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply explicitly contacts both the reality and meaning components, although it shifts from resurrection to another Gospel sign."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claims about a real event, natural law, divine action, and significance are distinctly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conceptual compatibility claim is supported, but certainty that the Cana event occurred exceeds the historical support presented here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Miracle narratives may convey spiritual meaning without requiring literal supernatural occurrence.",
+        "decisiveQualification": "Lennox argues that actual occurrence adds evidential disclosure, while meaning alone does not establish the event's truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Adding an event rather than suspending natural regularities is coherent within theism, though it presupposes the divine agent at issue."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The Gospel wording supports the narrative's intended meaning, but the selected move provides little independent historical warrant for occurrence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central miracle-reality bridge by affirming a real divine sign and its Christological function."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response fairly preserves the meaning-centered alternative and identifies the additional epistemic role claimed for a real event."
+        }
+      },
+      "evidenceBasis": "Lennox cites Cana as a sign producing belief, affirms that water became wine, denies a breach of natural law, and connects the event to Jesus' identity and mission.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-miracle-moral-meaning",
+      "sectionId": "miracles-history-and-gospel-meaning",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "Gospel miracle narratives are better understood through their moral and communal meaning, such as transformative sharing, than as supernatural violations of nature.",
+      "sourceSpan": {
+        "startEvent": 894,
+        "endEvent": 907
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted passage remains within Ruse's established turn and ends immediately before the moderator addresses him directly.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-miracle-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cana-real-divine-sign"
+        ],
+        "components": [
+          {
+            "componentId": "con-miracle-moral-meaning-component-01",
+            "targetMoveId": "pro-cana-real-divine-sign",
+            "text": "Miracle narratives can be explained through transformative moral and communal action rather than supernatural intervention.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Using the feeding narrative, Ruse directly presents ordinary sharing induced by love as an alternative to a supernatural production of food.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It supplies a clear alternative mechanism and meaning, though it addresses a different Gospel miracle from Cana."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The sharing account is clear, but the later secular use of miraculous shifts the term away from supernatural occurrence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The sharing interpretation is asserted as the narrative's explanation without textual or historical evidence sufficient to prefer it."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Gospel account intends a real divine sign whose occurrence grounds its theological meaning.",
+        "decisiveQualification": "A sharing interpretation preserves moral meaning but must separately explain the narrative's presentation as extraordinary provision."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Love-induced sharing could explain provision, but the move gives no bridge from possibility to the preferred interpretation of the text."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The account is substantially speculative and lacks textual details, historical support, or comparison with other naturalistic and supernatural readings."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central con miracle-meaning bridge through a moral and communal interpretation."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The response offers a meaningful naturalistic alternative but omits the decisive narrative features supporting the literal-sign interpretation."
+        }
+      },
+      "evidenceBasis": "Ruse interprets the feeding story as Jesus inspiring those with food to share with those without it and calls that transformation the meaningful miracle.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gospel-meaning-real-events",
+      "sectionId": "miracles-history-and-gospel-meaning",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The Gospel narrative gains evidential and theological power when its meaning rests on real signs that progressively reveal Christ as the Son of God and ground belief in him.",
+      "sourceSpan": {
+        "startEvent": 991,
+        "endEvent": 1016
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following the moderator's invitation for a final comment, Lennox gives a continuous answer that concludes when the moderator closes the topic.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-narrative-history"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-miracle-moral-meaning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-gospel-meaning-real-events-component-01",
+            "targetMoveId": "con-miracle-moral-meaning",
+            "text": "Theological meaning is strengthened when the Gospel narrative rests on an actual event.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-gospel-meaning-real-events-component-02",
+            "targetMoveId": "con-miracle-moral-meaning",
+            "text": "Real signs progressively disclose Christ's identity and provide grounds for belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lennox directly answers the meaning-only interpretation by insisting that truth and underlying reality enhance the narrative's theological and evidential force.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It expressly contacts the decisive reality-versus-meaning issue and states the consequence for belief and Christological disclosure."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Reality, narrative power, progressive revelation, and belief are related in a clearly recoverable proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conditional claim about enhanced meaning is well fitted, but belief in the events' reality is not historically demonstrated here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A nonliteral narrative can retain moral, communal, and religious significance.",
+        "decisiveQualification": "Retained meaning is not equivalent to the historical evidence and identity disclosure Lennox says actual signs provide."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The conditional connection from real signs to enhanced evidential and theological meaning is consistent and explicitly stated."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The narrative's stated function supports the meaning claim, but occurrence and the reliability of the reports remain insufficiently defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly advances the subsidiary narrative-history bridge by connecting theological force to real events."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response accurately grants the question of meaning while identifying what the nonliteral interpretation loses from the opposing evidential case."
+        }
+      },
+      "evidenceBasis": "Lennox says truth rather than preference is decisive, that underlying reality enhances the story, and that observed signs led people to identify Jesus as Messiah and Son of God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cross-resurrection-hope",
+      "sectionId": "evil-freedom-and-divine-goodness",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Atheism removes objective good and evil without removing suffering, whereas the cross depicts divine participation in suffering and the resurrection supplies grounds for hope.",
+      "sourceSpan": {
+        "startEvent": 1034,
+        "endEvent": 1099
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator poses the problem of evil to Lennox, whose extended first-person response runs without a speaker change through its explicit conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evil-and-hope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-miracle-moral-meaning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cross-resurrection-hope-component-01",
+            "targetMoveId": "con-miracle-moral-meaning",
+            "text": "Whether Gospel miracle narratives require supernatural events rather than moral reinterpretation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move turns to suffering, objective morality, the cross, and resurrection hope; these are issue-bearing for the motion but do not answer Ruse's miracle-interpretation demand.",
+        "responsivenessWithinClass": {
+          "value": 49,
+          "rationale": "It is relevant contrary material about resurrection and Christian meaning, but it leaves the selected miracle-interpretation component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The moral and hope claims are recoverable, although atheism is treated broadly without distinguishing its variants."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The hope claim is personally qualified, but the assertion that atheism removes objective morality needs a stated metaethical premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An atheist may defend objective morality or reject that hope is evidence of truth.",
+        "decisiveQualification": "The move's stronger point is that atheism supplies neither divine participation nor resurrection-based restoration, not that every atheist lacks moral realism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Divine participation and resurrection can ground Christian hope, but the objective-morality claim and truth-bearing role of hope need further bridges."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The cross and resurrection doctrines specifically support the Christian response described, while their truth and the claim about atheism remain underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central evil-and-hope bridge by connecting divine participation and resurrection to hope amid suffering."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The response identifies a genuine contrast in existential resources but overgeneralizes the opposing metaethical position."
+        }
+      },
+      "evidenceBasis": "Lennox contrasts atheism's treatment of good and evil with a Christian account in which God participates in suffering at the cross and resurrection grounds hope.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-metaphysical-modesty",
+      "sectionId": "science-metaphysics-and-explanatory-limits",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "constructive",
+      "proposition": "Ultimate questions are genuine but fall outside mechanistic science, so Christian answers are legitimate philosophical proposals while remaining open to theological and philosophical criticism.",
+      "sourceSpan": {
+        "startEvent": 1109,
+        "endEvent": 1150
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Ruse's response, and Ruse develops two explicitly sequenced points before shifting to a distinct objection concerning moral evil.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-metaphysical-modesty"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a con-side boundary between mechanistic science and legitimate but criticizable philosophical or theological answers.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it clearly states both the boundary and the continuing legitimacy of nonscientific inquiry."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Mechanistic science, ultimate questions, legitimate proposals, and philosophical criticism are explicitly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is modestly confined to disciplinary limits and expressly keeps theological answers open to criticism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theological explanations can be rational even when they are not components of mechanistic science.",
+        "decisiveQualification": "Legitimacy as philosophy does not exempt those explanations from evidential and conceptual criticism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "Excluding questions from mechanistic science while allowing philosophical answers is explicit, consistent, and avoids a false scientistic dilemma."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The disciplinary distinction is well articulated, though the exact boundary and standards for assessing ultimate answers are not extensively defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly completes the subsidiary metaphysical-modesty task by allowing ultimate answers while keeping them criticizable."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The move states the strongest reasonable theistic alternative and preserves it while applying the relevant methodological qualification."
+        }
+      },
+      "evidenceBasis": "Ruse says science's exclusion of ultimate questions does not make them unanswerable and explicitly treats Christian answers as legitimate yet open to philosophical and theological criticism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-free-will-victim-cost",
+      "sectionId": "evil-freedom-and-divine-goodness",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "The free-will defense cannot plausibly evidence a good God when a perpetrator's freedom is weighed against the severe suffering and death imposed on innocent victims.",
+      "sourceSpan": {
+        "startEvent": 1151,
+        "endEvent": 1189
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ruse clearly pivots to the problem of evil and sustains the argument until his explicit closing judgment immediately before Lennox responds.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evidential-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cross-resurrection-hope"
+        ],
+        "components": [
+          {
+            "componentId": "con-free-will-victim-cost-component-01",
+            "targetMoveId": "pro-cross-resurrection-hope",
+            "text": "A response to evil must address the severe cost that perpetrators' freedom imposes on innocent victims.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-free-will-victim-cost-component-02",
+            "targetMoveId": "pro-cross-resurrection-hope",
+            "text": "Resurrection hope does not by itself show that permitting such suffering evidences a good God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Ruse directly presses the victim-cost objection against the pro treatment of evil and distinguishes revelatory belief from an evidential inference to divine goodness.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the evidential challenge and identifies a concrete burden left unresolved by the hope-centered answer."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Perpetrator freedom, victim cost, divine goodness, and evidential versus revelatory belief are clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Ruse frames the conclusion as inability to see a plausible evidential balance and expressly allows a different revelation-based commitment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Freedom may be necessary for love, and final restoration may address suffering beyond present life.",
+        "decisiveQualification": "The defense must still justify why protecting perpetrator freedom permits catastrophic uncompensated-looking harm to particular victims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The victim-cost comparison directly challenges the inference from freedom to a good God's permission of severe evil, with no internal inconsistency."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The concrete Himmler, Frank, and Scholl examples strongly instantiate the objection, though a broader treatment of possible justifying goods is absent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central evidential-evil bridge by challenging both free will and inference to divine goodness."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The objection engages the freedom rationale at its strongest while isolating the unresolved distributive cost borne by innocents."
+        }
+      },
+      "evidenceBasis": "Ruse contrasts Himmler's freedom with the suffering and deaths of Anne Frank and Sophie Scholl and argues that revelation differs from evidential progress toward belief in a good God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-prior-goodness-framework",
+      "sectionId": "evil-freedom-and-divine-goodness",
+      "side": "con",
+      "speaker": "Michael Ruse",
+      "moveKind": "reply",
+      "proposition": "The scale of innocent suffering suggests that evil is being interpreted through a prior conviction in God's loving character rather than supplying evidence from which divine goodness is inferred.",
+      "sourceSpan": {
+        "startEvent": 1235,
+        "endEvent": 1254
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ruse resumes with a direct address to Lennox after Lennox's autobiographical passage and continues until the moderator requests a final comment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evidential-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cross-resurrection-hope"
+        ],
+        "components": [
+          {
+            "componentId": "con-prior-goodness-framework-component-01",
+            "targetMoveId": "pro-cross-resurrection-hope",
+            "text": "The pro account may interpret suffering through a prior conviction of divine love rather than infer goodness from suffering-related evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Ruse expressly diagnoses a direction-of-inference problem: prior faith can frame suffering, but that framing cannot simultaneously serve as evidence establishing God's goodness.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly identifies the disputed inferential structure and states why the pro evidence claim would fail if prior goodness does the work."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Prior conviction, interpretive framing, evidential inference, and divine goodness are distinctly and explicitly related."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move conditionally distinguishes a legitimate faith interpretation from the stronger evidential claim it challenges."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A prior theistic belief may be independently evidenced and then legitimately contribute to a cumulative interpretation of evil.",
+        "decisiveQualification": "The treatment of evil itself cannot be counted as independent evidence for goodness if that goodness is assumed in interpreting the evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The circularity-style diagnosis is explicit and consistent, with a clear consequence for claims that suffering supports divine goodness."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The quoted structure of the opposing stance supports the diagnostic concern, though independent pro grounds for divine goodness are not examined."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally advances the evidential-evil bridge by challenging the direction and independence of the pro inference."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move allows prior faith as an interpretive framework while accurately preserving the qualification about evidential independence."
+        }
+      },
+      "evidenceBasis": "Ruse contrasts interpreting evil through an already-given conviction that God is loving with claiming to derive an evidential conclusion about God's goodness from the same material.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-freedom-love-moral-evil",
+      "sectionId": "evil-freedom-and-divine-goodness",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "A world capable of freely chosen love must permit rebellion, while preventing moral evil through complete determinism would eliminate genuinely human relationships.",
+      "sourceSpan": {
+        "startEvent": 1256,
+        "endEvent": 1284
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly grants Lennox the final comment, and Lennox's uninterrupted analogy concludes before the moderator closes the debate segment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evil-and-hope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-free-will-victim-cost",
+          "con-prior-goodness-framework"
+        ],
+        "components": [
+          {
+            "componentId": "pro-freedom-love-moral-evil-component-01",
+            "targetMoveId": "con-free-will-victim-cost",
+            "text": "Preventing all moral evil through determinism would remove the freedom required for genuinely chosen love.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-freedom-love-moral-evil-component-02",
+            "targetMoveId": "con-prior-goodness-framework",
+            "text": "The proposed justification appeals to the value of free persons and loving relationships rather than merely assuming divine goodness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-freedom-love-moral-evil-component-03",
+            "targetMoveId": "con-free-will-victim-cost",
+            "text": "The argument must explain why freedom's value can justify the particular magnitude of harm suffered by victims.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lennox contacts the general free-will demand by comparing freedom with a deterministic robot world, but he does not answer Ruse's decisive proportionality and victim-cost challenge.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This is a partial answer: it supplies the value-of-freedom premise but leaves the severe victim-cost component unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The freedom-love link is clear, but complete determinism is treated as the principal alternative without considering selective prevention."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move overstates the alternatives by suggesting prevention of moral evil requires making everyone entirely deterministic."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God might preserve meaningful freedom while preventing or limiting especially catastrophic harms.",
+        "decisiveQualification": "The robot-world analogy does not show that every degree of intervention would eliminate human freedom or love."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "Freedom plausibly enables love, but the binary choice between catastrophic permission and complete robot determinism is substantially underjustified."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The family analogy illustrates risk in love but does not warrant the scale, distribution, or necessity of permitted atrocity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central evil-and-hope bridge through a free-will account of moral evil and loving relationship."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The response presents the objection as a choice between unrestricted moral risk and total determinism, omitting the strongest selective-intervention alternative."
+        }
+      },
+      "evidenceBasis": "Lennox argues that a fully deterministic robot world would prevent rebellion only by eliminating genuinely human freedom and the capacity for chosen love, illustrated through parenthood.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, relevance judgments, importance values, and section structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual changes no burden completion beyond already recorded judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, relevance judgments, importance values, and section structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual changes no burden completion beyond already recorded judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

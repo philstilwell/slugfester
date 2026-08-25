@@ -1,0 +1,1850 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "21",
+  "debateId": "hitchens-wolpe-great-god-debate-2010",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-atheist-critique-route",
+      "side": "pro",
+      "description": "Establish that religious faith is an unsupported human projection which adds no necessary explanation of existence, freedom, morality, or meaning, and that appeals to divine authority can displace independent reasoning while intensifying coercion and conflict.",
+      "successCriteria": "The route succeeds if natural inquiry and human ethical reflection adequately address the phenomena offered for faith, while religious claims remain evidentially unwarranted or produce authority-dependent harms relevant to the motion.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-bridge",
+        "tier": "motion",
+        "description": "Connect the epistemic, moral, and social critiques to the conclusion that faith replaces reason with projection, authority, or harmful consolation rather than revealing God, moral meaning, and human freedom."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-natural-explanation",
+          "tier": "central",
+          "description": "Show that cosmology, evolution, consciousness, and human experience do not require a personal or interventionist deity as their explanation."
+        },
+        {
+          "bridgeId": "pro-human-morality",
+          "tier": "central",
+          "description": "Show that moral judgment and conduct remain available without faith and require context-sensitive reasoning rather than asserted divine absolutes."
+        },
+        {
+          "bridgeId": "pro-authority-harm",
+          "tier": "central",
+          "description": "Show how scriptural privilege and claims of divine mandate can authorize coercion, institutional abuse, tribal exclusion, or intensified violence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-projection-consolation",
+          "tier": "subsidiary",
+          "description": "Explain religious belief and consolation through human psychological needs while distinguishing emotional usefulness from truth."
+        },
+        {
+          "bridgeId": "pro-natural-freedom-meaning",
+          "tier": "subsidiary",
+          "description": "Provide naturalistic accounts of contingency, transcendence, meaning, and agency sufficient to resist an inference to immaterial divine grounding."
+        }
+      ]
+    },
+    {
+      "routeId": "con-jewish-theism-route",
+      "side": "con",
+      "description": "Establish that faith reasonably discloses a transcendent source of existence, objective goodness, purposeful meaning, and genuine freedom, while an evolving Jewish tradition can orient conduct toward justice without being reduced to its historical abuses.",
+      "successCriteria": "The route succeeds if materialism leaves important features of existence, consciousness, moral obligation, meaning, or agency inadequately grounded, and if religious development and practice answer the claim that faith is inherently irrational or harmful.",
+      "motionBridge": {
+        "bridgeId": "con-motion-bridge",
+        "tier": "motion",
+        "description": "Connect the positive account of transcendence and religious practice to the conclusion that faith can reveal God, moral meaning, and human freedom rather than merely replacing reason."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-transcendent-ground",
+          "tier": "central",
+          "description": "Show why existence, consciousness, love, meaning, or recurrent awareness of God reasonably indicate a transcendent ground beyond material description."
+        },
+        {
+          "bridgeId": "con-objective-morality",
+          "tier": "central",
+          "description": "Show that universally binding moral obligation requires a transcendent foundation while remaining compatible with interpretation and ethical reasoning."
+        },
+        {
+          "bridgeId": "con-immaterial-agency",
+          "tier": "central",
+          "description": "Show that intentional human choice cannot be reduced to genetics, environment, determinism, or randomness and therefore requires an immaterial dimension."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-evolving-tradition",
+          "tier": "subsidiary",
+          "description": "Explain how a humanly transmitted religious tradition can refine inherited teachings while continuing to direct adherents toward justice and character development."
+        },
+        {
+          "bridgeId": "con-community-meaning",
+          "tier": "subsidiary",
+          "description": "Show how religious practice, sanctity, community, and consolation supply purpose and moral motivation without treating practical benefit alone as proof."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "god-evidence-and-natural-explanation",
+      "title": "God, Scientific Inquiry, and Natural Explanation",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether existence, cosmic origins, consciousness, love, and recurrent awareness of God warrant a transcendent personal source, or whether natural explanation, uncertainty, and the distinction between a first cause and a religious deity defeat that inference."
+    },
+    {
+      "sectionId": "freedom-materialism-and-agency",
+      "title": "Human Freedom, Materialism, and Intentional Agency",
+      "weightPercent": 14,
+      "rationale": "The motion expressly concerns human freedom, making it necessary to examine whether genetics and environment exhaust agency, whether contingency or randomness answers determinism, and whether an immaterial ground clarifies intentional choice."
+    },
+    {
+      "sectionId": "moral-grounding-and-ethical-reasoning",
+      "title": "Moral Grounding and Ethical Reasoning",
+      "weightPercent": 22,
+      "rationale": "The competing burdens require comparison between transcendent moral obligation and human ethical reflection, including whether unbelievers possess sufficient moral reasons and whether divine commands secure objectivity or complicate contextual judgment."
+    },
+    {
+      "sectionId": "meaning-sanctity-and-consolation",
+      "title": "Meaning, Sanctity, Mortality, and Consolation",
+      "weightPercent": 16,
+      "rationale": "Claims about purposeful life, transcendent experience, religious motivation, grief, and consolation bear directly on whether faith reveals genuine meaning or projects reassuring interpretations onto natural human experiences."
+    },
+    {
+      "sectionId": "religious-tradition-authority-and-harm",
+      "title": "Religious Tradition, Authority, Reform, and Harm",
+      "weightPercent": 24,
+      "rationale": "This issue joins the dispute over scripture, evolving tradition, charity, institutional authority, proselytism, exclusion, and violence to determine whether religion principally cultivates justice or gives human prejudice and conflict added divine force."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-god-source-relational-ground",
+      "sectionId": "god-evidence-and-natural-explanation",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "constructive",
+      "proposition": "Human limitations constrain descriptions of God, who is best understood as the source of existence, a relational presence, and the ground of purposeful life.",
+      "sourceSpan": {
+        "startEvent": 25,
+        "endEvent": 63
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addresses the Rabbi, and the sustained first-person answer continues until the moderator turns to Hitchens.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-transcendent-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive definition and positive account of God, so it has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly advances a central theistic account, though the explanatory bridge remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable and expressly limited by human understanding, but the shift between someone and something leaves God's nature partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges descriptive limits, although the relational and purposive attributes receive less support than the source-of-existence description."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The definition is internally intelligible, but the move does not supply the bridge from source of existence to relational presence and purpose."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The source offers a theological definition and acknowledgment of limitation, but little independent support for relationship or purposeful alignment."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supplies the proposed transcendent ground, though it does not complete the motion-level contrast."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally states a positive conception of God and does not materially characterize a competing argument."
+        }
+      },
+      "evidenceBasis": "The excerpt defines God as the source of everything, as relational, and as a basis for aligning one's life, while stressing human inability to comprehend the infinite.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-projection-parental-consolation",
+      "sectionId": "meaning-sanctity-and-consolation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religious belief is a human, fear-driven projection that supplies parental consolation and imagined protection rather than establishing the truth of a deity.",
+      "sourceSpan": {
+        "startEvent": 78,
+        "endEvent": 148
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the question to Hitchens, whose distinctive first-person argument runs continuously through the scientific-worldview conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-projection-consolation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive psychological and epistemic critique, so it has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it clearly develops the projection-and-consolation route with an explicit comparative-probability claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The projection claim is clear, but its application to religious belief generally is broad and the distinction between explaining belief and disproving God remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Multiplicity of gods and human fear plausibly support projection, but they do not by themselves establish that all deity belief is projected or false."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God made human beings and religious diversity reflects imperfect human apprehension.",
+        "decisiveQualification": "Religious diversity and psychological need can coexist with a real deity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The inference from many gods and fear to human projection is coherent but leaves the material bridge from psychological origin to religious falsity incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Religious plurality and recognizable needs are relevant evidence, but the move gives no representative comparison with non-projective explanations."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly advances the projection-and-consolation bridge and distinguishes probable human manufacture from divine creation."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move mentions the creation alternative but dismisses it quickly without addressing the possibility of imperfect or culturally varied apprehension."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that humans made many gods and presents this as more probable than one God making humanity, then connects belief with fear.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-intangible-reality-theistic-inference",
+      "sectionId": "god-evidence-and-natural-explanation",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Consciousness, love, meaning, and the existence of anything at all indicate that intangible reality may be fundamental and make belief in God reasonable.",
+      "sourceSpan": {
+        "startEvent": 258,
+        "endEvent": 315
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is followed by Wolpe announcing two approaches, and the same speaker completes both the experiential and scientific strands before yielding.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-transcendent-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-projection-parental-consolation"
+        ],
+        "components": [
+          {
+            "componentId": "con-intangible-reality-theistic-inference-component-01",
+            "targetMoveId": "pro-projection-parental-consolation",
+            "text": "Whether religious belief has rational support beyond its proposed psychological origin in fear and consolation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The appeal to consciousness, love, meaning, and existence offers affirmative grounds for belief and therefore contacts the projection move's decisive implication that belief lacks truth-directed warrant.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive epistemic implication but does not answer the specific evidence from religious plurality and parental fear."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The modal conclusion is recoverable and qualified, but intangible reality ranges across ideas, consciousness, love, meaning, and God without a stable equivalence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents the considerations as making belief reasonable rather than as a demonstration, and expressly accepts that science may not need God."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The reality of intangible phenomena supports resistance to crude materialism, but the bridge from such phenomena to God remains materially underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Familiar experiential examples are identified, but no defended warrant shows why their influence favors theism over natural accounts of mentality."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly advances the transcendent-ground inference using consciousness, meaning, love, and existence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move supplies an alternative positive inference but does not substantially characterize the psychological projection argument itself."
+        }
+      },
+      "evidenceBasis": "The excerpt stresses the profound influence of ideas, love, and consciousness, asks whether the intangible is fully real, and concedes that astronomy need not hypothesize God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-verifiable-natural-cosmology-evolution",
+      "sectionId": "god-evidence-and-natural-explanation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Modern cosmology and evolution offer verifiable natural accounts of existence, while cosmic destruction, biological waste, and extinction count against a providential religious plan.",
+      "sourceSpan": {
+        "startEvent": 316,
+        "endEvent": 386
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wolpe yields the floor, after which Hitchens recommends a physicist, develops the cosmological and evolutionary argument, and concludes with a critique of providence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-natural-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-intangible-reality-theistic-inference",
+          "con-god-source-relational-ground"
+        ],
+        "components": [
+          {
+            "componentId": "pro-verifiable-natural-cosmology-evolution-component-01",
+            "targetMoveId": "con-intangible-reality-theistic-inference",
+            "text": "Whether natural inquiry adequately explains the relevant world and whether observed history supports a providential plan.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-verifiable-natural-cosmology-evolution-component-02",
+            "targetMoveId": "con-god-source-relational-ground",
+            "text": "Whether describing God as the source of existence provides a necessary or well-supported explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies natural cosmological and evolutionary alternatives and uses extinction and destruction against providence, contacting both the explanatory and purposive aspects of the earlier theistic moves.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full answers, it directly addresses natural explanation and providential purpose, though it answers intangible consciousness less fully."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The natural-explanation and anti-providence claims remain distinct and clear, with an express concession that the plan cannot be disproved."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move argues against rather than purports to disprove providence, explicitly acknowledging the logical possibility of a plan while stressing contrary evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Extinction and cosmic destruction could form part of a larger divine plan.",
+        "decisiveQualification": "Logical compatibility alone does not explain why such waste and destruction should increase confidence in providence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Natural accounts and destructive history jointly undermine necessity and providence, with only a bounded gap between scientific explanation and the broader absence of God."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Cosmology, evolution, extinction, and biological waste provide specific support, though the excerpt compresses scientific documentation and rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances natural explanation and attacks the inference to a providential religious source."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move explicitly grants the plan's possibility and then accurately narrows its criticism to the plan's evidential quality."
+        }
+      },
+      "evidenceBasis": "The source invokes modern cosmology and evolution, notes mass extinction and ongoing destruction, and expressly concedes that an atheist cannot prove these are not planned.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-immaterial-agency-free-will",
+      "sectionId": "freedom-materialism-and-agency",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Material causes cannot account for directed human choice, because genetics and environment are given conditions, so free will requires an immaterial dimension grounded in God.",
+      "sourceSpan": {
+        "startEvent": 396,
+        "endEvent": 431
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After a brief exchange, Wolpe begins with a direct rebuttal of Hitchens and develops the first-person free-will challenge until addressing Hitchens at the close.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-immaterial-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-verifiable-natural-cosmology-evolution",
+          "pro-projection-parental-consolation"
+        ],
+        "components": [
+          {
+            "componentId": "con-immaterial-agency-free-will-component-01",
+            "targetMoveId": "pro-verifiable-natural-cosmology-evolution",
+            "text": "Whether verifiable natural cosmology and evolution remove the explanatory need for a providential deity.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-immaterial-agency-free-will-component-02",
+            "targetMoveId": "pro-projection-parental-consolation",
+            "text": "Whether belief in God is better explained as fear-driven parental projection.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The free-will argument is issue-bearing contrary material about materialism but does not answer the decisive cosmological, evolutionary-waste, or projection components of the available earlier moves.",
+        "responsivenessWithinClass": {
+          "value": 53,
+          "rationale": "Within relevant nonanswers, it develops a central contrary consideration but leaves the targeted moves' decisive claims untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, but immaterial shifts from a condition of nonpredetermination to a God-grounded faculty without defining the relation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Given genetics and environment do not exhaust all causal possibilities, the categorical claim that freedom requires immateriality and God exceeds the supplied warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Material agency may emerge from biological systems without being either externally predetermined or random.",
+        "decisiveQualification": "Being caused or physically realized does not by itself entail absence of deliberative control."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The argument poses a real explanatory demand but moves from unchosen conditions to total predetermination and then to God through unsupported conditionals."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "Unchosen genetics and environment are relevant observations, but no evidence establishes causal exhaustiveness, immaterial agency, or divine grounding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly states and defends the con route's indispensable immaterial-agency bridge."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move reduces material alternatives to fixed initial conditions and omits the strongest emergent or compatibilist account of agency."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes that birth, genetics, and environment are unchosen, then concludes that without something immaterial everything is predetermined and free will requires God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolutionary-contingency-against-determinism",
+      "sectionId": "freedom-materialism-and-agency",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Evolution and genetics include contingency and random mutation rather than complete predetermination, so a material account of human origins does not itself eliminate freedom.",
+      "sourceSpan": {
+        "startEvent": 432,
+        "endEvent": 486
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens immediately labels the preceding argument and answers it through a sustained discussion of evolutionary contingency, genetics, medicine, and Genesis.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-immaterial-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-immaterial-agency-free-will"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolutionary-contingency-against-determinism-component-01",
+            "targetMoveId": "con-immaterial-agency-free-will",
+            "text": "Whether material human origins entail complete predetermination and therefore require immaterial God-grounded agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies the premise of complete predetermination by invoking random mutation and evolutionary contingency, but it does not explain how contingency becomes intentional control.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive determinism premise but leaves the separate demand for an account of directed choice unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The limited anti-determinist conclusion is recoverable, but the qualification that contingency does not itself establish free agency remains only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolutionary contingency rebuts a simple predetermined-origin story, but it supplies less warrant for the further suggestion that human freedom survives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Random mutation may defeat strict predetermination without producing intentional freedom.",
+        "decisiveQualification": "Indeterminacy and agency are distinct explanatory requirements."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The inference successfully distinguishes material history from strict predetermination, yet it leaves the central bridge from random contingency to freedom unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Random mutation and natural selection are concrete relevant mechanisms, but the transplant examples do not verify an account of intentional agency."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claim that material origins necessarily eliminate freedom."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move answers determinism but does not fairly develop the opponent's strongest concern about directed choice rather than mere randomness."
+        }
+      },
+      "evidenceBasis": "The source explicitly describes genetics as the result of random mutation and natural selection and invokes biological continuity and DNA knowledge against predetermination.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-judaism-character-and-justice",
+      "sectionId": "religious-tradition-authority-and-harm",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Judaism centrally directs people toward justice, character refinement, and decent treatment despite abuses committed by religious authorities.",
+      "sourceSpan": {
+        "startEvent": 929,
+        "endEvent": 969
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response begins with Wolpe answering the scriptural challenge and continues through his direct accusation of asymmetrical reasoning.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-evolving-tradition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-projection-parental-consolation",
+          "pro-verifiable-natural-cosmology-evolution",
+          "pro-evolutionary-contingency-against-determinism"
+        ],
+        "components": [
+          {
+            "componentId": "con-judaism-character-and-justice-component-01",
+            "targetMoveId": "pro-projection-parental-consolation",
+            "text": "Whether religious belief is a fear-driven projection rather than truth-directed disclosure.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-judaism-character-and-justice-component-02",
+            "targetMoveId": "pro-verifiable-natural-cosmology-evolution",
+            "text": "Whether natural explanation and destructive history undermine providential religion.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-judaism-character-and-justice-component-03",
+            "targetMoveId": "pro-evolutionary-contingency-against-determinism",
+            "text": "Whether material contingency answers the immaterial-agency argument.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The account of Judaism's ethical purpose is relevant to religion's value but does not contact the decisive psychological, scientific, or agency claims in the legal earlier targets.",
+        "responsivenessWithinClass": {
+          "value": 47,
+          "rationale": "Within relevant nonanswers, it offers substantial issue-bearing material about religion's moral orientation but does not answer an available decisive component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The central claim about Judaism is clear and acknowledges abuses, though references to the whole system and repeated goodness broaden the scope materially."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited exegetical purpose supports an ethical orientation, but it is insufficient to establish the dominant effect of an entire diverse tradition."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Ethical teachings coherently support an ethical institutional purpose, but purpose alone does not resolve contrary practice or establish overall effect."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The Talmudic character-refinement theme is specific support, though representative textual and historical comparison is absent."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, it directly advances evolving tradition and moral cultivation but does not reach the broader motion bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move acknowledges abuses generally but does not engage a sufficiently specific earlier locked authority-harm alternative for a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies a long exegetical tradition, cites refinement of character as the purpose of commandments, and describes the framework as directing decent treatment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scriptural-tribal-prejudice-harm",
+      "sectionId": "religious-tradition-authority-and-harm",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Foundational religious laws encode tribal exclusion, violence, slavery, and patriarchy, revealing inherited human prejudices within scripture rather than a uniquely divine moral source.",
+      "sourceSpan": {
+        "startEvent": 971,
+        "endEvent": 1006
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly rejects Wolpe’s characterization of his position and develops an uninterrupted critique of biblical law.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-authority-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-judaism-character-and-justice",
+          "con-god-source-relational-ground"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scriptural-tribal-prejudice-harm-component-01",
+            "targetMoveId": "con-judaism-character-and-justice",
+            "text": "Whether the tradition's claimed orientation toward justice and character withstands the content of foundational religious laws.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scriptural-tribal-prejudice-harm-component-02",
+            "targetMoveId": "con-god-source-relational-ground",
+            "text": "Whether scripture and religious alignment plausibly disclose a purposive divine source.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the ethical-character account by identifying exclusion, slavery, patriarchy, and violence in foundational laws, while also attacking divine authorship.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it directly tests the decisive ethical premise using purported counterexamples from the tradition's foundational materials."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The categories of harm are clear, but the conclusion about foundational religious law broadly lacks an express scope condition distinguishing texts, eras, and traditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited legal features support human historical influence, but the broad inference to scripture generally requires more representative treatment and interpretation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An exegetical tradition can reinterpret inherited texts toward justice and character refinement.",
+        "decisiveQualification": "Reform does not erase the morally defective content or its claimed sacred authority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Morally historical features supply a coherent challenge to uniquely divine authorship, though the inference depends on an implicit expectation about divine revelation."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Specific legal themes provide material support, but textual documentation, representativeness, and interpretive rebuttal remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly advances the authority-harm bridge by connecting sacred law with exclusion and hierarchy."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The reply fairly challenges the content of inherited law but gives limited attention to the opponent's evolutionary and interpretive account."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes commandments as primitive tribal agricultural rules addressed to property holders and servants and highlights the status of women.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolving-self-refining-tradition",
+      "sectionId": "religious-tradition-authority-and-harm",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Religious traditions are humanly transmitted and historically evolving systems capable of refining themselves and discarding inherited moral defects.",
+      "sourceSpan": {
+        "startEvent": 1010,
+        "endEvent": 1032
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wolpe is addressed by name at the transition and answers with a continuous account of scriptural formation and social evolution.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-evolving-tradition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-scriptural-tribal-prejudice-harm"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolving-self-refining-tradition-component-01",
+            "targetMoveId": "pro-scriptural-tribal-prejudice-harm",
+            "text": "Whether inherited scriptural defects establish religion's enduring moral character and negate its capacity to direct justice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts human transmission and historical defects but argues that interpretation and social evolution can refine them, directly contacting the enduring-authority inference.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it directly addresses the historical-defect component and supplies a reform mechanism, though it does not fully answer continuing sacred authority."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The tradition-as-evolving-system proposition is clear, and acknowledgment of human transmission and historical dross makes its qualification explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is limited to traditions being capable of refinement rather than proving that refinement always occurs or validates revelation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Sacralized inherited defects may retain authority despite later reinterpretation.",
+        "decisiveQualification": "Capacity for reform does not establish that harmful texts lack continuing force."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Human transmission and social evolution coherently explain doctrinal refinement, with a bounded gap between capacity to reform and actual moral success."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The general analogy to biological and social evolution is plausible, but the excerpt supplies few concrete cases demonstrating effective self-correction."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it nearly completes the evolving-tradition bridge by explaining how inherited defects may be discarded."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move concedes historical dross and offers a serious reform account, but it underaddresses the residual authority of unreformed sacred texts."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly describes religion as an evolving tradition whose historical dross can be refined alongside broader sociological and ideological change.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-no-unique-religious-moral-capacity",
+      "sectionId": "moral-grounding-and-ethical-reasoning",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Faith confers no unique capacity for moral action because an unbeliever can perform every genuinely good act or ethical statement available to a believer.",
+      "sourceSpan": {
+        "startEvent": 1033,
+        "endEvent": 1056
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens resumes with a direct challenge framed in the first person and ends immediately before Wolpe begins answering it.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-human-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-judaism-character-and-justice",
+          "con-evolving-self-refining-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-no-unique-religious-moral-capacity-component-01",
+            "targetMoveId": "con-judaism-character-and-justice",
+            "text": "Whether religion supplies a distinctive moral capacity or action unavailable without faith.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-no-unique-religious-moral-capacity-component-02",
+            "targetMoveId": "con-evolving-self-refining-tradition",
+            "text": "Whether a refining religious system contributes morally distinctive conduct.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The parity challenge directly tests whether religious orientation or refinement yields any uniquely moral act, though it does not deny that religion may motivate shared acts.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it squarely contacts the uniqueness implication but only partially addresses claims about frequency, motivation, or institutional formation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is narrowly framed as absence of a uniquely available good act, preserving the distinction between capacity and actual motivation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The challenge is logically forceful against unique capacity, but its universal negative is asserted rather than established through a defended exhaustive comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religion may not enable unique acts but may uniquely motivate, organize, or sanctify shared acts.",
+        "decisiveQualification": "Motivational contribution is different from an exclusive moral capacity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The parity test is clear and directly follows if unique moral capacity is claimed, with only a bounded issue about whether the opponent actually claimed exclusivity."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The argument uses a demanding counterexample test rather than empirical support, leaving the universal parity premise materially underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the claim that moral judgment and good conduct remain available without faith."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move accurately targets exclusive capacity, although its rhetoric risks implying that motivational differences are irrelevant to the broader debate."
+        }
+      },
+      "evidenceBasis": "The excerpt challenges the opponent to identify any good act or ethical statement a person of faith can perform that the unbeliever cannot.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-motivation-and-sanctity",
+      "sectionId": "meaning-sanctity-and-consolation",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Religion uniquely motivates practices and experiences of sanctity whose moral and emotional meaning cannot be reproduced by disbelief alone.",
+      "sourceSpan": {
+        "startEvent": 1057,
+        "endEvent": 1100
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wolpe directly answers the ability challenge, then illustrates his distinction through a sustained personal account of religious blessing.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-community-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-no-unique-religious-moral-capacity",
+          "pro-projection-parental-consolation"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-motivation-and-sanctity-component-01",
+            "targetMoveId": "pro-no-unique-religious-moral-capacity",
+            "text": "Whether the absence of uniquely available religious acts exhausts religion's possible moral contribution.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-religious-motivation-and-sanctity-component-02",
+            "targetMoveId": "pro-projection-parental-consolation",
+            "text": "Whether religious practices are merely fear-driven consolation rather than meaningful experiences.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply concedes that unbelievers can perform the acts but reframes the contribution as motivation and sanctified experience, contacting capacity while preserving a distinct practical claim.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it answers the exclusivity challenge by concession and distinction but gives limited evidence for the claimed motivational difference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The motivation thesis is recoverable, but sanctity, moral meaning, and religious motivation blur together, while generally do not is left unbounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The concession that unbelievers can act morally is clear, but the claim that they generally do not without religious motivation lacks comparative evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unbelievers can possess secular motivations and experiences functionally comparable to religious sanctity.",
+        "decisiveQualification": "Religious framing may still alter subjective meaning without creating unique moral capacity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Distinguishing ability from motivation is logically useful, but the move slides between moral action, frequency, felt sanctity, and divine calling."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "Examples of religiously motivated conduct are relevant, yet the comparative generalization about nonbelievers rests substantially on assertion."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, it directly advances religious motivation and sanctity as sources of meaning and practice."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move concedes capacity but dismisses comparable nonreligious motivation too quickly and provides no serious comparison."
+        }
+      },
+      "evidenceBasis": "The excerpt says religion calls people to help others, concedes that nonbelievers can do so, but asserts they generally do not without religious motivation and invokes felt sanctity.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-community-meaning-in-grief",
+      "sectionId": "meaning-sanctity-and-consolation",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Religious community and belief in meaning provide profound, nontrivial consolation amid death and grief, even when that meaning cannot be empirically proved.",
+      "sourceSpan": {
+        "startEvent": 1214,
+        "endEvent": 1244
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wolpe contrasts Hitchens’s temperament with pastoral experience and sustains the response through his explicit acknowledgment of empirical limits.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-community-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-projection-parental-consolation",
+          "pro-no-unique-religious-moral-capacity"
+        ],
+        "components": [
+          {
+            "componentId": "con-community-meaning-in-grief-component-01",
+            "targetMoveId": "pro-projection-parental-consolation",
+            "text": "Whether religious consolation is merely fear-driven illusion rather than a meaningful human response.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-community-meaning-in-grief-component-02",
+            "targetMoveId": "pro-no-unique-religious-moral-capacity",
+            "text": "Whether religion contributes anything significant beyond capacities available to unbelievers.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly defends the depth and practical significance of consolation and community, but it does not answer the projection move's distinct truth-warrant challenge.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it contacts the cheap-or-trivial consolation component but leaves whether consolation evidences truth decisively unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The practical claim about community and experienced meaning is clear, and the inability to prove the underlying meaning is expressly acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately defends experiential significance rather than treating consolation alone as empirical proof of religious truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consolation can be profound and still arise from a false or projected belief.",
+        "decisiveQualification": "Practical depth does not establish the truth of the consoling interpretation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Community and meaning coherently explain nontrivial pastoral value, though emotional depth does not logically rebut the possibility of illusion."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Pastoral grief and communal practice are relevant experiential support, but the move offers no independent verification of objective meaning."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly and strongly advances the community-meaning bridge while respecting empirical limits."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The move answers the charge of triviality but rhetorically blurs that answer with the unaddressed epistemic objection."
+        }
+      },
+      "evidenceBasis": "The excerpt describes religious community and meaningfulness amid short life as profound rather than cheap consolation and invokes the intensity of human anguish.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-mandate-multiplies-conflict",
+      "sectionId": "religious-tradition-authority-and-harm",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religion intensifies ordinary tribal and political conflict by adding claims of divine mandate, thereby multiplying violence and making compromise more difficult.",
+      "sourceSpan": {
+        "startEvent": 1411,
+        "endEvent": 1497
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens begins with his own evolutionary account of violence and develops uninterrupted historical examples until Wolpe’s abolition response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-authority-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolving-self-refining-tradition",
+          "con-judaism-character-and-justice",
+          "con-religious-motivation-and-sanctity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-divine-mandate-multiplies-conflict-component-01",
+            "targetMoveId": "con-evolving-self-refining-tradition",
+            "text": "Whether evolving religious traditions sufficiently neutralize the conflict and coercion produced by claims of divine authority.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-divine-mandate-multiplies-conflict-component-02",
+            "targetMoveId": "con-judaism-character-and-justice",
+            "text": "Whether religion's orientation toward justice outweighs authority-dependent harms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-divine-mandate-multiplies-conflict-component-03",
+            "targetMoveId": "con-religious-motivation-and-sanctity",
+            "text": "Whether religious motivation is reliably beneficial rather than capable of motivating violence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply concedes violence has natural roots but argues divine orders intensify it and uses historical conflict to challenge benign motivation and reform claims.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it directly addresses the practical authority question, though some examples only partially isolate religion's incremental causal effect."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The incremental claim is carefully distinguished from the stronger assertion that religion originates all violence, making its scope explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The Darwinian concession appropriately narrows the claim, but the general multiplication effect requires broader causal comparison than the examples provide."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Many conflicts have secular causes and religious institutions can restrain violence.",
+        "decisiveQualification": "The claim concerns religion's incremental intensification, not sole causation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Adding uncompromisable divine authority can coherently intensify prior conflict, with one bounded empirical bridge concerning how often that mechanism dominates."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Historical references and the divine-order mechanism provide specific support, but causal attribution and representative comparison remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the authority-harm bridge through an explicit mechanism linking divine mandate to intensified violence."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move expressly concedes natural violence and avoids claiming that removing religion would eliminate conflict."
+        }
+      },
+      "evidenceBasis": "The source concedes that violence is not caused solely by religion, then argues that refusing alleged divine orders reduces escalation and invokes twentieth-century religious language.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-shared-yet-contextual-moral-reasoning",
+      "sectionId": "moral-grounding-and-ethical-reasoning",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Reciprocal moral rules recur across societies, but difficult cases remain context-sensitive, and contradictory divine absolutes cannot replace the necessary work of ethical reasoning.",
+      "sourceSpan": {
+        "startEvent": 1840,
+        "endEvent": 1888
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience directs the first part of the morality question to Hitchens, and the ensuing answer expresses his established critique of authority.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-human-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-religious-motivation-and-sanctity",
+          "con-judaism-character-and-justice",
+          "con-community-meaning-in-grief"
+        ],
+        "components": [
+          {
+            "componentId": "pro-shared-yet-contextual-moral-reasoning-component-01",
+            "targetMoveId": "con-religious-motivation-and-sanctity",
+            "text": "Whether divine or religious motivation is needed to furnish substantive moral direction.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-shared-yet-contextual-moral-reasoning-component-02",
+            "targetMoveId": "con-judaism-character-and-justice",
+            "text": "Whether religious tradition uniquely directs decent conduct and justice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-shared-yet-contextual-moral-reasoning-component-03",
+            "targetMoveId": "con-community-meaning-in-grief",
+            "text": "Whether practical religious meaning establishes a superior moral framework.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The recurrence of reciprocal rules supplies nonexclusive moral content, while contextual reasoning challenges reliance on divine absolutes; the grief-and-meaning claim is not answered.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the core moral-direction component but not the experiential community-and-meaning component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The Golden Rule is presented as the nearest rather than a perfect absolute, and the role of context is kept distinct and explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes a measured cross-cultural claim and does not pretend that reciprocity mechanically resolves every difficult case."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective divine standards may coexist with extensive interpretation and contextual reasoning.",
+        "decisiveQualification": "Contradictory claimed absolutes still require independent adjudication."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Shared reciprocity supports nonexclusive moral reasoning, and contextual difficulty coherently explains why asserted absolutes cannot replace deliberation."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The cross-cultural recurrence of reciprocity is specific support, though the generalization and contradictory-command comparison are not fully documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances human moral reasoning as a workable alternative to exclusive divine authority."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move allows for reasoning but could more fully recognize the opponent's claim that religious objectivity need not eliminate interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies reciprocal formulations in Jewish and Confucian sources, notes their broad recurrence, and carefully calls them the nearest available absolute.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-morality-with-reasoning",
+      "sectionId": "moral-grounding-and-ethical-reasoning",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "God grounds real moral right and wrong without eliminating moral reasoning, whereas a purely material account of evolved primates reduces morality to interests and power.",
+      "sourceSpan": {
+        "startEvent": 1890,
+        "endEvent": 1926
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows the portion of the audience question addressed to the rabbi and explicitly states a Jewish theistic account of morality.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-objective-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-shared-yet-contextual-moral-reasoning",
+          "pro-no-unique-religious-moral-capacity"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-morality-with-reasoning-component-01",
+            "targetMoveId": "pro-shared-yet-contextual-moral-reasoning",
+            "text": "Whether contextual ethical reasoning can preserve real right and wrong without a transcendent foundation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-morality-with-reasoning-component-02",
+            "targetMoveId": "pro-no-unique-religious-moral-capacity",
+            "text": "Whether unbelievers' moral capacity makes divine grounding unnecessary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts questioning and interpretation but argues that objective right and wrong require God, directly contacting both contextual reasoning and nonbeliever parity.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it directly addresses the decisive grounding inference while distinguishing moral reasoning from moral ontology."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The grounding contrast is clear, but the claim that evolved primates have no right or wrong overgeneralizes material accounts without qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move asserts that without God morality reduces to power, but it does not rule out secular realist, contractual, or reasons-based alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular moral realism or shared rational interests may support objective norms without God.",
+        "decisiveQualification": "Evolutionary origin does not logically reduce every norm to preference or power."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The distinction between reasoning and grounding is coherent, but the central God-or-power dichotomy is insufficiently supported and materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "Jewish traditions of questioning support compatibility with reasoning, but the exclusive grounding conclusion rests mostly on assertion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly states the con route's indispensable objective-morality bridge and answers the reasoning objection."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The move materially narrows the secular alternative to power and degree, omitting the strongest objective non-theistic accounts."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Talmudic questioning while insisting on real right and wrong, then contrasts divine grounding with evolved primates, degrees of preference, and power.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-creator-regress-and-deism-gap",
+      "sectionId": "god-evidence-and-natural-explanation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Positing a creator for cosmic origins produces an explanatory regress, and even an uncaused first cause would not establish a personal or interventionist religious God.",
+      "sourceSpan": {
+        "startEvent": 1954,
+        "endEvent": 1973
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question is directed to Hitchens, and the moderator's handoff is followed by his characteristic skeptical first-cause response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-transcendent-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-god-source-relational-ground",
+          "con-intangible-reality-theistic-inference"
+        ],
+        "components": [
+          {
+            "componentId": "pro-creator-regress-and-deism-gap-component-01",
+            "targetMoveId": "con-god-source-relational-ground",
+            "text": "Whether calling God the source of existence explains origins and establishes a relational religious deity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-creator-regress-and-deism-gap-component-02",
+            "targetMoveId": "con-intangible-reality-theistic-inference",
+            "text": "Whether evidence for intangible reality establishes the specifically theistic conclusion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies two failures in the theistic inference: an unexplained creator can reproduce the explanatory demand, and a first cause does not entail a personal or interventionist God.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly attacks the decisive explanatory inference and states the limited conclusion that would survive."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The regress objection and the separate deism gap are clearly distinguished, and the possible first cause is expressly conceded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker does not claim to refute an uncaused cause and carefully limits the argument to explanatory insufficiency and religious underdetermination."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God is an eternal necessary source and therefore does not require another creator.",
+        "decisiveQualification": "Even granting an uncaused source does not establish a personal or interventionist religious God."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The two-part argument is explicit and consistent: ordinary creator posits risk regress, while an exempt first cause still underdetermines religious attributes."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The argument is primarily conceptual and well illustrated, though the regress premise would benefit from direct treatment of necessary-being accounts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the transcendent-ground inference at both its explanatory and specifically religious bridges."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The move explicitly grants the strongest first-cause possibility and preserves the independent gap to the richer religious conclusion."
+        }
+      },
+      "evidenceBasis": "The excerpt asks who creates the creator, describes the resulting regress, then expressly grants an uncaused first cause while denying that it entails a religious God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-natural-transcendence-without-supernaturalism",
+      "sectionId": "meaning-sanctity-and-consolation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Experiences of transcendence, ecstasy, beauty, love, and mortality are genuine human phenomena but do not provide warrant for a supernatural realm.",
+      "sourceSpan": {
+        "startEvent": 2002,
+        "endEvent": 2032
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Hitchens whether he is a concealed believer, and Hitchens answers directly in an extended first-person naturalistic account.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-natural-freedom-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-community-meaning-in-grief",
+          "con-intangible-reality-theistic-inference",
+          "con-religious-motivation-and-sanctity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-natural-transcendence-without-supernaturalism-component-01",
+            "targetMoveId": "con-community-meaning-in-grief",
+            "text": "Whether profound experiences of meaning, mortality, and consolation warrant a supernatural interpretation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-natural-transcendence-without-supernaturalism-component-02",
+            "targetMoveId": "con-intangible-reality-theistic-inference",
+            "text": "Whether love, consciousness, and intangible experience support theism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-natural-transcendence-without-supernaturalism-component-03",
+            "targetMoveId": "con-religious-motivation-and-sanctity",
+            "text": "Whether numinous and sanctified experience is uniquely religious.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply affirms the phenomena while denying the supernatural inference, directly separating experiential reality from the proposed religious explanation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the decisive inference while preserving the opponent's strongest claim that the experiences are genuine and profound."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Transcendent, numinous, and ecstatic experience are identified as natural human phenomena, with the supernatural conclusion clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move affirms the experiences rather than denying them and advances a limited underdetermination claim rather than claiming deductive disproof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Profound recurrent numinous experience may disclose a reality beyond material description.",
+        "decisiveQualification": "Experiential depth alone does not distinguish supernatural disclosure from natural human response."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The distinction between genuine experience and supernatural explanation is explicit, consistent, and resolves the main inference without denying the data."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Landscape, music, love, and mortality provide representative natural triggers, though no broader comparative account of experience is developed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly advances natural meaning and attacks religious exclusivity without reaching a motion-level conclusion alone."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move takes the experiences seriously and challenges only the additional supernatural interpretation, preserving the strongest reasonable alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt embraces transcendence, numinous feeling, ecstasy, landscape, music, love, and mortality as genuine features of a natural human life.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-universal-moral-obligation",
+      "sectionId": "moral-grounding-and-ethical-reasoning",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "Nonbelievers can feel compelling reasons to behave morally, but only a transcendent moral order makes goodness universally binding regardless of preference, circumstance, or observation.",
+      "sourceSpan": {
+        "startEvent": 2170,
+        "endEvent": 2198
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The questioner explicitly interrogates the rabbi, and Wolpe begins by distinguishing subjective moral motivation from objective moral authority.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-objective-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-shared-yet-contextual-moral-reasoning",
+          "pro-no-unique-religious-moral-capacity"
+        ],
+        "components": [
+          {
+            "componentId": "con-universal-moral-obligation-component-01",
+            "targetMoveId": "pro-shared-yet-contextual-moral-reasoning",
+            "text": "Whether shared reciprocal norms and contextual reasoning can make moral obligation universally binding.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-universal-moral-obligation-component-02",
+            "targetMoveId": "pro-no-unique-religious-moral-capacity",
+            "text": "Whether nonbelievers' ability and motivation to act morally eliminate the need for transcendent authority.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly concedes nonbelievers' moral reasons but distinguishes subjective motivation from universal authority, directly contacting the grounding component.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly addresses the decisive distinction between possessing moral reasons and grounding universally binding obligation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between actual unbelieving morality and universally binding moral authority is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The concession is well calibrated, but the exclusive claim that transcendence alone yields universal obligation is asserted without excluding secular alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Nonbelievers can have compelling moral reasons and may defend universal norms without divine surveillance.",
+        "decisiveQualification": "Actual moral conduct and objective grounding are different questions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The motivation-grounding distinction is sound, but the move leaves a material bridge from universality to a transcendent source."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The secret-goodness example illustrates the issue but does not establish that non-theistic moral theories cannot generate universal obligations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the objective-morality bridge while answering the nonbeliever-capacity objection."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move explicitly concedes unbelieving morality and fairly isolates its narrower concern about universal normative authority."
+        }
+      },
+      "evidenceBasis": "The excerpt acknowledges compelling nonbelieving reasons and rejects the claim that only believers do good secretly, then distinguishes this from a code coming from beyond.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-divine-freedom-and-intentional-choice",
+      "sectionId": "freedom-materialism-and-agency",
+      "side": "con",
+      "speaker": "Rabbi David Wolpe",
+      "moveKind": "reply",
+      "proposition": "God's freedom does not generate the same regress as human freedom because God is eternal and nonbiological, while randomness cannot explain intentional human choice.",
+      "sourceSpan": {
+        "startEvent": 2279,
+        "endEvent": 2297
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question addresses Wolpe's free-will argument, and the ensuing answer articulates the theistic distinction between God and biological creatures.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-immaterial-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolutionary-contingency-against-determinism",
+          "pro-creator-regress-and-deism-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-divine-freedom-and-intentional-choice-component-01",
+            "targetMoveId": "pro-evolutionary-contingency-against-determinism",
+            "text": "Whether evolutionary randomness and contingency explain intentional human choice rather than merely defeating strict predetermination.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-divine-freedom-and-intentional-choice-component-02",
+            "targetMoveId": "pro-creator-regress-and-deism-gap",
+            "text": "Whether asking what caused God generates a fatal regress for the theistic agency account.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes an eternal nonbiological God from caused creatures and argues that randomness does not supply intentional agency, contacting both earlier objections.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full answers, it directly addresses randomness and regress, though it does not positively explain how divine grounding produces human control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The creature-God distinction and the randomness-intention distinction are separately recoverable and explicitly limited to the religious conception offered."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The regress reply is definitionally qualified, but the further inference that intentional choice requires the divine immaterial account remains underwarranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An eternal God exemption may be stipulative, and natural systems may realize intentional agency without randomness alone explaining it.",
+        "decisiveQualification": "The opponent's randomness point defeats predetermination but does not itself explain intention."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The reply coherently blocks a biological-cause analogy and exposes the randomness-agency gap, but the positive divine explanation remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The conceptual distinctions are relevant, yet no independent evidence shows that an eternal deity exists or grounds human intentional control."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly defends the immaterial-agency bridge against the two principal objections raised."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move accurately identifies the gap between randomness and choice, though it gives limited attention to emergent natural agency."
+        }
+      },
+      "evidenceBasis": "The excerpt denies an analogy between biological creatures and an eternal nonbiological deity and distinguishes the acquisition of divine and human freedom.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing the proposed residual would not alter burden completion because no separate residual exists."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing the proposed residual would not alter burden completion because no separate residual exists."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
