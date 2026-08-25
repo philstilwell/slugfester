@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1555,
+  "ledgerBytes": 89125,
+  "ledgerSha256": "d174ebe651ed60454eda5d87b6243c9e26fef78eba9efdd989b6dc32dffd3503",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51130,
+      "contextSha256": "da94de709bc8fe00a791f71fa4b7027d39196d1f13765d64777eccf904c34b95"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1554,
+      "coreEvents": 695,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1554,
+      "contextEvents": 735,
+      "contextBytes": 42564,
+      "contextSha256": "025d0305c6af84297333e1f1af1ce05bcdc26348d5e046762d09fe1a8c584b46"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1554,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "147",
+  "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

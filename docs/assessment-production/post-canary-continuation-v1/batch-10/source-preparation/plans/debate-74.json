@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3764,
+  "ledgerBytes": 197381,
+  "ledgerSha256": "a40c9e75335a7e17027df3aa57d362e14992b68b0103524de7812670fd39afa6",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45803,
+      "contextSha256": "317c38ee21034cba00102cd920086be440fc02f4d7e967671ae4d9a366ec84db"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47403,
+      "contextSha256": "3bedb66146891e091a7735b7129d74d57858d4afac8b10d41cf2c26a6ef0c8bb"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47346,
+      "contextSha256": "6cc2841d2edb1752e16bd4eb46cd12ae00a8e32df849c05db488256b1ede14f1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 47971,
+      "contextSha256": "8ffafb50a8957fee5df7de4c068ece51365f44ed6351b153a049f7f050fcd0d9"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3763,
+      "coreEvents": 444,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3763,
+      "contextEvents": 484,
+      "contextBytes": 25798,
+      "contextSha256": "59229f540c0239acd7501017eb7c7aaafef613390260532b68175f12a285e7e6"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3763,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "74",
+  "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1296,
+  "ledgerBytes": 75687,
+  "ledgerSha256": "d50d8075ee77fa2742e1e2cb2cac9db7bf6a8d7f5a3cc9f44dcf01c2da1cc1f8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52230,
+      "contextSha256": "05fabf4bebc19df5ae3f67be9bb50efe507f471433aaa2d88fd2d7e7a2d9d682"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1295,
+      "coreEvents": 436,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1295,
+      "contextEvents": 476,
+      "contextBytes": 28123,
+      "contextSha256": "36d0e255da16c578c9cf8c2c513668550c239e0c082b80e53056cc1813f5a395"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1295,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "107",
+  "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

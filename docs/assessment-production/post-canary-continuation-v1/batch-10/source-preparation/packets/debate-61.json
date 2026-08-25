@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-source-preparation",
+  "debateNumber": "61",
+  "debateId": "scrivener-oconnor-morality-bible-slavery-2026",
+  "motion": "Did Christian faith give the modern West its beliefs in kindness, equality, freedom, consent, and abolition, or are those values better explained by mixed traditions, social struggle, and secular moral development?",
+  "sides": {
+    "pro": {
+      "label": "Christian moral genealogy",
+      "speakers": [
+        "Glen Scrivener"
+      ]
+    },
+    "con": {
+      "label": "Secular moral critique",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 9071,
+  "eventCount": 4471,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/-ZnVNM8lkGw/transcript.txt",
+    "transcriptSha256": "20279e3858bcd09e3a8f6b7591abe87a88606d8f43d01f61b17cb6fd099efa57",
+    "eventsPath": ".assessment-cache/captions/-ZnVNM8lkGw/events.json",
+    "eventsSha256": "980ce32c06b754f23f3446e2d381a7fe995f11220c66540379820575b7adae44",
+    "localManifestPath": ".assessment-cache/captions/-ZnVNM8lkGw/manifest.json",
+    "localManifestSha256": "ba8f050836eb279e19d9cc506c88017b4d30ced6f9aa284f464510b509d9e673"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-10/debate-61.jsonl",
+    "sourceLedgerSha256": "8278c08fb73a1f49f0ff23bc09d0f73f4f7f18f2b04ded3a7512a75ff9800941",
+    "sourceLedgerBytes": 260722,
+    "sourceLedgerEventCount": 4471,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/source-preparation/plans/debate-61.json",
+    "partitionPlanSha256": "3c680d620d731ca7ae39489d66e378cba3a93e3b6d8c11bf765f6780a7fd595f",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

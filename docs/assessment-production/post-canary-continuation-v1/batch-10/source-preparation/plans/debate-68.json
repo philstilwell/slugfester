@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 658,
+  "ledgerBytes": 35644,
+  "ledgerSha256": "49ed3726daa760d5f4d0dae5e7e80ce1506b3ce888057111883eea2545823402",
+  "limits": {
+    "contextEventsMaximum": 600,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 559,
+      "coreEvents": 560,
+      "contextStartEvent": 0,
+      "contextEndEvent": 599,
+      "contextEvents": 600,
+      "contextBytes": 32398,
+      "contextSha256": "d375e720ea2ed127404c1cfa941b4f42dd53ed5fde395c1a61e55b881c9aa114"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 560,
+      "coreEndEvent": 657,
+      "coreEvents": 98,
+      "contextStartEvent": 520,
+      "contextEndEvent": 657,
+      "contextEvents": 138,
+      "contextBytes": 7686,
+      "contextSha256": "5510464b17b5918e4b21baa64b5481b3e27f0e2da8316090d44fda8901e5f2f5"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 657,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "68",
+  "debateId": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

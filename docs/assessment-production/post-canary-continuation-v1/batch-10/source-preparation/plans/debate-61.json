@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4471,
+  "ledgerBytes": 260722,
+  "ledgerSha256": "8278c08fb73a1f49f0ff23bc09d0f73f4f7f18f2b04ded3a7512a75ff9800941",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51218,
+      "contextSha256": "7d0b1bc8ff67ad8228d8de713873d9c60ea581802f142380c12f719a31e596e2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52689,
+      "contextSha256": "7e3ac04c9fe84ad533445c54a0617d1f5340ef5aed3b98be9a97b1d518db3eea"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52746,
+      "contextSha256": "ad5abe459533d819a14de52cd6607385548fc92c88c88e9796fd0db465bf1fc1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52727,
+      "contextSha256": "7589244d3bd2aa86db3d423043c869feb209ba5e6e93821255703ed54a72f934"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 52884,
+      "contextSha256": "496e8580d4121843b4869f2b8785267f516c079d71beba3de6ecbc44d694acac"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4470,
+      "coreEvents": 331,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4470,
+      "contextEvents": 371,
+      "contextBytes": 21663,
+      "contextSha256": "8aca4d4a8313a61de8baf0722b4950f969470fe88e487354dddafe1dcfb1a36d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4470,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "61",
+  "debateId": "scrivener-oconnor-morality-bible-slavery-2026",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2706,
+  "ledgerBytes": 159329,
+  "ledgerSha256": "c46bfb1384733ede5b602265d84ecb5c8f9a5af08e6c6bdf2c9377bb79448e7f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52052,
+      "contextSha256": "38527333a8182123023b8f763d9d8782f0aff6693f4ac07062e4105a4cef7a9f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53460,
+      "contextSha256": "c613022d927192dcd9f1ac2881a505f448a02c758e66cd1090cc86df3fbfb36a"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53474,
+      "contextSha256": "68b860e3f80221ba296646145b0106532823735d86ff3f123d4e8df2acd444e3"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2705,
+      "coreEvents": 206,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2705,
+      "contextEvents": 246,
+      "contextBytes": 14476,
+      "contextSha256": "0d8f3d3de705c3695d344fdf9f3bbf1d7ee75c70ffceb4bdab8cb731821a723f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2705,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "123",
+  "debateId": "oconnor-pine-divine-hiddenness-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

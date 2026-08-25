@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3519,
+  "ledgerBytes": 198651,
+  "ledgerSha256": "38e04a47ccbd810ddc9065731ed3ed1164a48220c50eca6b5779fa756582bdb2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51316,
+      "contextSha256": "f40b7854a9c9a6622ec116a997be1b4d43fd3d39f1355537db9f0cf16eeaa8f6"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50592,
+      "contextSha256": "5c9c4fab93acfe9ca70adb83730e4760bd142adab28a62a5d11e88d3e18c91cf"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50334,
+      "contextSha256": "54379508868def7661fee33a9eb53d919be2fa17c464f631d7f52372cdc6f90c"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 51938,
+      "contextSha256": "d633b22caeae95acf3e8f08948fff11c98683185014636c872946c2f996e45d3"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3518,
+      "coreEvents": 199,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3518,
+      "contextEvents": 239,
+      "contextBytes": 12314,
+      "contextSha256": "6c142b1a9e5b518449ca7e1cdb7d7bbac583ba6a19974e3fe95a85052751be4e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3518,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "142",
+  "debateId": "comfort-dillahunty-gospel-atonement-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

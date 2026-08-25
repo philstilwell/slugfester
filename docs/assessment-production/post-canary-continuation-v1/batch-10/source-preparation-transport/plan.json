@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-source-preparation-transport-plan",
+  "protocolId": "assessment-production-post-canary-batch-10-source-preparation-transport",
+  "status": "frozen-batch-10-debate-68-source-partition-transport-plan",
+  "frozenAt": "2026-08-25T16:50:00.000Z",
+  "baselineCommit": "047e7f012eb08cc3b7bd3bf5e4d49ea1d4902752",
+  "classification": "prospective-use-of-proven-deterministic-transport-pattern",
+  "precedent": {
+    "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation-recovery/failure-diagnosis.json",
+    "diagnosisSha256": "38cc2f346bce5dbb62509c867eb29d730d473d593767947ee823cfa3d0adcffe",
+    "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation-recovery/correction-plan.json",
+    "correctionPlanSha256": "c782445e59429ba678d001fa084939c62b0f8dde23f23f40c73f2a24fc075278",
+    "provenFinding": "A source that fits one default partition chunk must receive a debate-specific context-event ceiling that yields at least two chunks while preserving the shared validator and exact source rows."
+  },
+  "correction": {
+    "debateNumber": "68",
+    "debateId": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+    "sourceEvents": 658,
+    "sourceLedgerBytes": 35644,
+    "defaultPreviewResult": "partition plan must contain more than one chunk",
+    "partitionOverrides": {
+      "contextEventsMaximum": 600
+    },
+    "expectedChunks": 2,
+    "reason": "The 658-event source fits one default chunk, while the unchanged shared validator requires more than one. The largest tested whole-hundred ceiling below the source event count yields exactly two bounded chunks and is the minimum frozen transport-only adjustment."
+  },
+  "preservation": {
+    "sharedValidatorByteIdentical": true,
+    "boundaryContextEventsUnchanged": true,
+    "contextBytesMaximumUnchanged": true,
+    "candidateLimitUnchanged": true,
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "otherNinePartitionPlansUseFrozenDefaults": true,
+    "selectionPacketsSchemasSourcesScoresAndIdentitiesUnchanged": true,
+    "modelExecution": false,
+    "paidServiceCalls": 0
+  },
+  "lockedSources": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/selection.json": {
+      "sha256": "200c84c2197a70f1a6c7dba12b733e522421f4e0ba1959175623b0749d72b936"
+    },
+    "scripts/prepare-assessment-production-post-canary-batch-10-source-packets.mjs": {
+      "sha256": "67821effb13fb72a1927557aa2a8e2a0991d2575866ee360fe747ad2dd242315"
+    },
+    "scripts/test-assessment-production-post-canary-batch-10-source-packets.mjs": {
+      "sha256": "e014d60bed2c2df2f50959b8f279dba0dc498cb1a4796ba20865e144e63f63b1"
+    },
+    "scripts/lib/assessment-production-post-canary-batch-10-source-preparation.mjs": {
+      "sha256": "de03d909ff07130fd25ee5d28d2ae74b0fd33f1441a313090a96e00c90e87f4b"
+    }
+  },
+  "executionControls": {
+    "preparationAttemptsMaximum": 1,
+    "validationAttemptsMaximum": 1,
+    "ordinaryRetriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "perform-one-batch-10-score-blind-source-preparation-and-one-deterministic-validation-pass"
+}
