@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-audio-verification-21-execution-manifest",
+  "status": "active-for-exactly-two-batch-09-debate-183-sequential-audio-verification-calls",
+  "activatedAt": "2026-08-25T03:53:44.772Z",
+  "checkpointCommit": "ad56ad3a431287baeb6f16456edcaaf94ee74f15",
+  "batchNumber": 9,
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/execution-preparation-manifest.json",
+    "sha256": "b631241df0deeac756e74a9e5f91b40120e158af2123517810c72f66cc02fab0"
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "moveId": "con-informed-deliberator-method",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "proposition": "The significance of a deliberative problem should be tested through agents who understand it rather than inferred from its absence among an unreflective majority.",
+      "verificationExcerpt": "has never read Ecklund. And >> no, it's not it's not about uh it's not about the the percentage of the population. It's about how central is it to our understanding of what what what goes on when we deliberate. Um yeah. >> Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not um",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-informed-deliberator-method.mp3",
+      "clipSha256": "2c0049bcd3627d4c9d1c878e7f7f2edb2217a411f84ebff444be2eddd0d68b95",
+      "durationSeconds": 62.12,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-informed-deliberator-method.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "David Enoch",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/david-enoch.mp3",
+          "sha256": "931ea30b2d925409775fbafb8e2d057405710a244af48c0f64ca80d16b435f92",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Justin Clarke-Doane",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/justin-clarke-doane.mp3",
+          "sha256": "b1c4efe27f3cf85597710b07e0dfd823d99fc036a45f0eb84ece596ec5cd09fd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "moveId": "con-foundational-anomaly-significance",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "proposition": "Rare and apparently baroque foundational anomalies cannot simply receive negligible weight, because they may reveal a defect that transforms an otherwise successful framework.",
+      "verificationExcerpt": "any fact we can we can always ask ourselves whether to regulate our behavior by consulting it. And that's whether it's normative or non-normative. And if so then there's there's a deliberative distance between knowledge of the normative facts and what to do. So I guess I just wonder let's grant you for the sake of argument that that it's it kind of counts as a rec ordinary mathematician's attitude towards Russell's paradox. This is like a baroque",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-foundational-anomaly-significance.mp3",
+      "clipSha256": "423e5cc44d1cfc285d83a20bdccf29df7a73f9430f25a7046c07099f1c24005e",
+      "durationSeconds": 316.76,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/transcripts/con-foundational-anomaly-significance.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "David Enoch",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/david-enoch.mp3",
+          "sha256": "931ea30b2d925409775fbafb8e2d057405710a244af48c0f64ca80d16b435f92",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Justin Clarke-Doane",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/justin-clarke-doane.mp3",
+          "sha256": "b1c4efe27f3cf85597710b07e0dfd823d99fc036a45f0eb84ece596ec5cd09fd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "clipSeconds": 378.88,
+    "clipMinutes": 6.314667,
+    "durationOnlyPlanningEstimateUsd": 0.037888,
+    "primaryExpectedFutureIncrementalExecutionCostUsd": 0.13776,
+    "priorBatch9UsageDerivedCostUsd": 0.0907725,
+    "projectedCumulativeBatch9CostUsd": 0.2285325,
+    "maximumConditionallyAuthorizedCumulativeBatch9CostUsd": 1,
+    "remainingAuthorizedCostBeforeCallsUsd": 0.9092275,
+    "projectedUsage": {
+      "audioInputTokens": 7060,
+      "textInputTokens": 228,
+      "outputTokens": 11954,
+      "totalInputTokens": 7288
+    },
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "estimateMustBeReportedBeforeFirstCall": true,
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    }
+  },
+  "executionPolicy": {
+    "sequential": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "requestTimeoutMs": 240000,
+    "stopAfterRequestFailure": true,
+    "stopRemainingCallsAfterUsageDerivedCumulativeCostCapReachedOrExceeded": true,
+    "audioPlaybackCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0.9092275,
+    "cumulativeBatch9CostUsdMaximum": 1
+  },
+  "executionToolHashes": {
+    "scripts/assessment-production-post-canary-batch-09-debate-183-audio-verification-stage-21.mjs": "d236dca27ad0fd503946106a739a7522ecf45143425b55b89be9025f4fe1c3c9",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-debate-183-21/cost-control-analysis.json"
+  ]
+}
