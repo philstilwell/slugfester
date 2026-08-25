@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-tiekoetter-proxy-recovery-16-failure-diagnosis",
+  "status": "frozen-batch-09-debate-183-final-public-proxy-transfer-termination-diagnosed-stop-required",
+  "batchNumber": 9,
+  "checkpointCommit": "8e771cc4",
+  "authenticatedRecords": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/recovery-plan.json": "110ba537d396f39aad59dbec26f906cdd4cfb45f7e57bd885e92d7c498321ebc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/execution-activation.json": "bbb1afda7b899960e674c75ccc8dd5675efff515adfc5ba5e8107abced46b15e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/execution.json": "9235fd146c1fc958d0b2a6c96e0470b9c9289c4e85d7ebd310cc4b5dd3da0498",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/analysis.json": "4e4ac7922c219c9675cd88bdc5102fb37fe03fa41a2dbcc4f6d9371b5b02c26a",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-tiekoetter-proxy-recovery-failure-16.mjs": "905c8db3724d8a4aa2692d089c79d914042bad47f862b45cb3f1b56995aee2da"
+  },
+  "records": {
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/analysis.json"
+  },
+  "diagnosis": {
+    "failureCategory": "public-proxy-response-body-terminated-during-first-transfer",
+    "sourceVideoId": "2WrywAaDvvw",
+    "provider": "Invidious Tiekoetter companion",
+    "representationId": "140",
+    "expectedBytes": 67979525,
+    "acceptedBytesBeforeTermination": 257390,
+    "acceptedPercent": 0.378629,
+    "requestReachedResponseBodyStreaming": true,
+    "responseRedirected": false,
+    "completeSourceAccepted": false,
+    "sourceIdentityFailure": false,
+    "audioValidationReached": false,
+    "normalizationReached": false,
+    "clipCreationReached": false,
+    "errorName": "TypeError",
+    "errorMessage": "terminated",
+    "underlyingProblem": "The newly vetted companion proxy began returning the exact hash-locked audio representation, but its response body terminated after 257,390 of 67,979,525 expected bytes. The preserved evidence does not distinguish a companion-side disconnect from an upstream media-fetch disconnect."
+  },
+  "partial": {
+    "path": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/source.attempt-1.part",
+    "bytes": 257390,
+    "sha256": "40b4a8717f25ff49611084b8bae82d7f9335e07d2eb1b2e134ac78eac8055186",
+    "acceptedAsSource": false,
+    "acceptedAsClipInput": false,
+    "preservedForAuditOnly": true
+  },
+  "attemptAccounting": {
+    "authorizedMediaDownloadAttempts": 1,
+    "mediaDownloadAttemptsUsed": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "redirectFollows": 0,
+    "ordinaryRetriesAvailable": 0
+  },
+  "stopRule": {
+    "furtherDebate183SourceRecoveryAuthorized": false,
+    "debate19ContinuationAuthorizedAfterFailure": false,
+    "batch9StandingAuthorizationResumptionAuthorizedAfterFailure": false,
+    "newUserDirectionRequired": true,
+    "reason": "The user explicitly required stopping if the one final proxy attempt failed."
+  },
+  "preservedControls": {
+    "cookiesSent": 0,
+    "accountDataUses": 0,
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "sourcesInstalled": 0,
+    "clipsCreated": 0,
+    "debate19RemainsUnattempted": true,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "nextAuthorizedAction": "stop-and-request-new-user-direction"
+}
