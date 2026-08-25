@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-resumption-activation-preflight-correction-1-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1",
+  "status": "frozen-one-field-activation-preflight-correction-ready",
+  "frozenAt": "2026-08-25T05:01:00Z",
+  "checkpointCommit": "1232ceca80ed611cf92c0605713bac15e4c11ac9",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/activation-preflight-failure-diagnosis.json",
+    "sha256": "45d3b0ae686a2dce49115bb90c2da3e8e64e09f046c98b029dc95f2410898b57",
+    "bytes": 1820
+  },
+  "correction": {
+    "path": "scripts/activate-assessment-production-post-canary-batch-09-publication-resumption.mjs",
+    "oldSha256": "9031cc8005b3dfdba7f9e3a71e8ac6b91f678c3f5c533ee8b5b770efa323580a",
+    "acceptedSha256": "34d0902e4a0b6278b9805bb215f4807846aae9242f83de7fbe7211ff76a4d2e7",
+    "acceptedBytes": 9214,
+    "changedExpectation": {
+      "field": "preparation.batchNumber",
+      "before": 8,
+      "after": 9
+    },
+    "authenticationRule": "authenticate-the-manifest-locked-original-runner-against-old-sha256-and-the-current-runner-against-accepted-sha256"
+  },
+  "executionPolicy": {
+    "correctedActivationPassesMaximum": 1,
+    "modelContextsMaximumBeforeActivationPasses": 0,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "preparationManifestUnchanged": true,
+    "publicationPacketsAndSchemasUnchanged": true,
+    "acceptedDebate170OutputUnchanged": true,
+    "sourcesScoresIdentitiesAndModelSettingsUnchanged": true
+  }
+}

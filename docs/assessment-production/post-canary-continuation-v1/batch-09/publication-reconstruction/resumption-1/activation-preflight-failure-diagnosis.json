@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-resumption-activation-preflight-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1",
+  "status": "diagnosed-stale-batch-number-in-publication-resumption-activation-preflight",
+  "diagnosedAt": "2026-08-25T05:00:00Z",
+  "checkpointCommit": "1232ceca80ed611cf92c0605713bac15e4c11ac9",
+  "failure": {
+    "stage": "publication-resumption-activation-preflight",
+    "message": "the Batch 9 publication resumption is not prepared",
+    "failedSource": "scripts/activate-assessment-production-post-canary-batch-09-publication-resumption.mjs",
+    "failedSourceSha256": "9031cc8005b3dfdba7f9e3a71e8ac6b91f678c3f5c533ee8b5b770efa323580a",
+    "failedSourceBytes": 7480,
+    "preparationManifest": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-preparation-manifest.json",
+    "preparationManifestSha256": "a6aaad4b15951bb0f962973f62a1b7dc6ab8a3d024540b94350668a89c0916f4",
+    "preparationManifestBytes": 64744
+  },
+  "diagnosis": {
+    "category": "deterministic-activation-harness-stale-batch-number-expectation",
+    "expectedByRunner": 8,
+    "frozenBatchNumber": 9,
+    "preparationManifestDefect": false,
+    "packetOrSchemaDefect": false,
+    "sourceScoreOrModelInputDefect": false,
+    "modelExecutionOccurred": false,
+    "paidServiceUsed": false
+  },
+  "boundedCorrection": {
+    "authorizedUnderStandingAuthorization": true,
+    "changeOnlyTheStaleBatchNumberExpectation": true,
+    "authenticateTheManifestLockedOriginalRunnerSeparately": true,
+    "authenticateTheAcceptedCurrentRunnerThroughACorrectionCredential": true,
+    "correctedActivationPassesMaximum": 1,
+    "directIncrementalCostUsdMaximum": 0
+  }
+}
