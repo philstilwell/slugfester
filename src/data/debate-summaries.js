@@ -733,11 +733,11 @@ export const debateSummaries = [
     "number": "17",
     "title": "Francis Collins vs Alex O'Connor: Does God Exist?",
     "label": "Science and faith",
-    "date": "2026-05-28",
+    "date": "2026-08-25",
     "duration": "1 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fXBGvNc2mvU",
     "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
-    "summary": "Collins presents a cumulative Christian case from science, morality, Jesus, and experience; O'Connor accepts mystery but challenges the evidential and moral bridge to Christianity.",
+    "summary": "Collins builds a cumulative Christian case from fine-tuning, morality, resurrection, revelation, and beauty, while answering suffering through orderly creation and noncoercive evidence.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -751,27 +751,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 83
+      "pro": 79,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Evidence and posture"
+        "title": "Fine-tuning, cosmic explanation, and divine power"
       },
       {
-        "title": "Fine tuning"
+        "title": "Evolutionary suffering and orderly creation"
       },
       {
-        "title": "Animal suffering"
+        "title": "Resurrection, Christian revelation, and historical warrant"
       },
       {
-        "title": "Resurrection history"
+        "title": "Morality, beauty, and transcendent experience"
       },
       {
-        "title": "Revelation and experience"
-      },
-      {
-        "title": "Beauty and stakes"
+        "title": "Cumulative evidence, uncertainty, and warranted commitment"
       }
     ]
   },
@@ -827,11 +824,11 @@ export const debateSummaries = [
     "number": "19",
     "title": "Sam Harris vs Alex O'Connor: Objective Morality and Emotivism",
     "label": "Moral landscape and emotivism",
-    "date": "2026-05-29",
+    "date": "2026-08-25",
     "duration": "14 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_pprQXq1eCA",
     "motion": "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
-    "summary": "Harris grounds moral truth in navigable conscious well-being; O'Connor argues this still yields subjective preference plus objective instrumental facts, not moral oughts.",
+    "summary": "Harris grounds evaluative direction in conscious experience, while O'Connor distinguishes subjective destinations from objective means and denies that flourishing requires moral truth.",
     "sides": {
       "pro": {
         "name": "Moral landscape",
@@ -845,21 +842,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 84
+      "pro": 77,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Emotivism and truth value"
+        "title": "The semantic status of ethical language"
       },
       {
-        "title": "Possible experience landscape"
+        "title": "Experiential landscapes and the ends-means distinction"
       },
       {
-        "title": "Changing preferences"
+        "title": "Preference revision and higher-order desire"
       },
       {
-        "title": "Well-being and obligation"
+        "title": "Subjective experience and the reality of value"
+      },
+      {
+        "title": "Practical flourishing and objective moral direction"
       }
     ]
   },
@@ -4056,11 +4056,11 @@ export const debateSummaries = [
     "number": "89",
     "title": "Guillaume Bignon vs Graham Oppy: Religious Experience and the Case for God",
     "label": "Religious experience and rationality",
-    "date": "2026-06-24",
+    "date": "2026-08-25",
     "duration": "1 hr 18 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=4KCJXMeM9WQ",
     "motion": "Can Bignon's conversion story, religious experience, and supporting arguments rationally support Christian belief, or do rival experiences and naturalist explanations undercut their evidential force?",
-    "summary": "Bignon argues his conversion and apologetic reasons make Christianity rational and personally evidential; Oppy grants rational permissibility while challenging the public evidential weight of such experiences.",
+    "summary": "Bignon presents experience, providential convergence, and historical considerations for Christian belief; Oppy counters with symmetry, cultural variation, naturalistic explanation, hiddenness, and evidential caution.",
     "sides": {
       "pro": {
         "name": "Religious-experience case",
@@ -4074,24 +4074,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 84
+      "pro": 82,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Conversion Story Evidence"
+        "title": "Providential pattern or natural coincidence"
       },
       {
-        "title": "Rational Permission"
+        "title": "Personal justification and the cumulative case"
       },
       {
-        "title": "Providence And Plausibility"
+        "title": "Rival religious experiences and Christian specificity"
       },
       {
-        "title": "Religious Diversity"
+        "title": "Historical and intellectual adjudication"
       },
       {
-        "title": "Historical Comparison"
+        "title": "Selective providence and persistent nonbelief"
       }
     ]
   },
@@ -5116,11 +5116,11 @@ export const debateSummaries = [
     "number": "112",
     "title": "Paul Copan vs Stephen Woodford: Is Belief in God Reasonable?",
     "label": "Reasonable belief in God",
-    "date": "2026-07-28",
+    "date": "2026-08-25",
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=qQda8Cywqvo",
     "motion": "Is belief in God reasonable, given cosmology, fine-tuning, consciousness, rationality, morality, evil, religious history, and the record of scientific explanation?",
-    "summary": "Copan argues theism better explains human and cosmic phenomena; Woodford argues naturalism fits science, suffering, and moral progress better.",
+    "summary": "Copan’s cumulative theistic explanation connected cosmology, consciousness, morality, and reform, but underdeveloped rival comparisons and the evidential challenge from suffering.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -5136,26 +5136,26 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 78,
-      "con": 80
+      "con": 81
     },
     "sections": [
       {
-        "title": "Worldview Framing"
+        "title": "Cumulative Inference and the Scope of the Worldview Comparison"
       },
       {
-        "title": "Cosmos And Design"
+        "title": "Cosmic Origins, Scale, and Fine-Tuning"
       },
       {
-        "title": "Mind And Reason"
+        "title": "Consciousness, Rational Faculties, and Naturalistic Commitments"
       },
       {
-        "title": "Morality Grounded"
+        "title": "Objective Morality, Divine Character, and Human Dignity"
       },
       {
-        "title": "Evil And Suffering"
+        "title": "Evil, Suffering, and the Shape of Natural History"
       },
       {
-        "title": "History And Ethics"
+        "title": "Religious Explanation, Revelation, and Moral Reform"
       }
     ]
   },
@@ -5208,11 +5208,11 @@ export const debateSummaries = [
     "number": "114",
     "title": "Sharon Dirckx vs Philip Goff: Does Consciousness Point to God?",
     "label": "Consciousness pointing to God",
-    "date": "2026-07-28",
+    "date": "2026-08-25",
     "duration": "1 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ef2vvT5GfoE",
     "motion": "Does consciousness point beyond materialism to God, or can a non-theistic panpsychist framework explain conscious experience without adding theism?",
-    "summary": "Dirckx argues consciousness fits best in a God-centered account of persons; Goff argues panpsychism answers materialism without pointing to God.",
+    "summary": "Dirckx argues consciousness fits a divine personal ground, while Goff presents panpsychism as a parsimonious alternative and challenges the specifically theistic inference.",
     "sides": {
       "pro": {
         "name": "Theistic consciousness",
@@ -5226,27 +5226,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
-      "con": 84
+      "pro": 79,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Materialism Targeted"
+        "title": "Materialism, neuroscience, and qualitative experience"
       },
       {
-        "title": "Mind And Brain"
+        "title": "Competing mind ontologies and parsimony"
       },
       {
-        "title": "Science And Philosophy"
+        "title": "Panpsychism as a positive account of matter and consciousness"
       },
       {
-        "title": "Emergence And Dualism"
+        "title": "Combination, evolution, and complex conscious subjects"
       },
       {
-        "title": "Panpsychism Tested"
-      },
-      {
-        "title": "God Question"
+        "title": "Divine grounding and the inference to God"
       }
     ]
   },
@@ -6155,11 +6152,11 @@ export const debateSummaries = [
     "number": "134",
     "title": "Dennis R. MacDonald vs Richard Carrier: Did Jesus Exist?",
     "label": "Historical Jesus, mythicism, and mimesis",
-    "date": "2026-07-31",
+    "date": "2026-08-25",
     "duration": "2 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a2sBEFE3etc",
     "motion": "Did Jesus exist as a historical Jewish teacher later mythologized, or did early Christianity begin with a revelatory Christ only later placed in history?",
-    "summary": "MacDonald argues that Q, law reform, Josephus, and mimesis point to a mortal Jesus behind the myths; Carrier argues that Paul and the Gospels fit a revelatory Jesus hypothesis better.",
+    "summary": "MacDonald defended a mortal Jewish teacher later mythologized; Carrier’s revelatory-origin model and challenges to literary and Josephian evidence narrowly prevailed.",
     "sides": {
       "pro": {
         "name": "Historical Jesus mimesis",
@@ -6173,30 +6170,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
+      "pro": 79,
       "con": 81
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Paul, revelation, and traces of an earthly life"
       },
       {
-        "title": "Q and Law Reform"
+        "title": "Q, Jewish teaching, and kingdom traditions"
       },
       {
-        "title": "Mimesis and Mythmaking"
+        "title": "Gospel mythmaking and literary reification"
       },
       {
-        "title": "Paul and Shared Tradition"
+        "title": "Josephus, James, and independent attestation"
       },
       {
-        "title": "Kingdom and Social Identity"
-      },
-      {
-        "title": "Paul's Silence"
-      },
-      {
-        "title": "Josephus and James"
+        "title": "Later testimony, alternative Christians, and evidential method"
       }
     ]
   },
@@ -7602,11 +7593,11 @@ export const debateSummaries = [
     "number": "166",
     "title": "William Lane Craig vs Peter Atkins: Does God Exist?",
     "label": "Theistic arguments and scientific naturalism",
-    "date": "2026-08-01",
+    "date": "2026-08-25",
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ssq-S5M8wsY",
     "motion": "Does God exist as the transcendent personal cause and moral foundation of reality?",
-    "summary": "Craig defends cosmological, moral, and resurrection arguments; Atkins contends that scientific explanation can in principle make the God hypothesis unnecessary.",
+    "summary": "Craig advances cumulative cosmological, moral, and resurrection arguments, then answers naturalistic objections concerning causality, evolution, suffering, miracles, and scientific method.",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -7620,21 +7611,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 88,
-      "con": 61
+      "pro": 83,
+      "con": 73
     },
     "sections": [
       {
-        "title": "A beginning, nothing, and a transcendent cause"
+        "title": "Cosmic Origin, Causality, and a Personal First Cause"
       },
       {
-        "title": "Promised explanations and theoretical simplicity"
+        "title": "Objective Morality and Its Foundation"
       },
       {
-        "title": "Moral behavior or objective moral truth"
+        "title": "Resurrection Evidence and Miracle Inference"
       },
       {
-        "title": "Resurrection evidence and miracle probability"
+        "title": "Suffering and Divine Goodness"
+      },
+      {
+        "title": "Scientific Explanation, Philosophy, and Divine Necessity"
       }
     ]
   },
@@ -7781,11 +7775,11 @@ export const debateSummaries = [
     "number": "170",
     "title": "Peter Singer vs John Lennox: Is There a God?",
     "label": "Reason, morality, suffering, and resurrection",
-    "date": "2026-08-01",
+    "date": "2026-08-25",
     "duration": "1 hr 46 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HoTILnpd3q8",
     "motion": "Given science, human rationality, morality, suffering, and the historical claims about Jesus, is belief in the biblical God rational?",
-    "summary": "Lennox argues that rationality, objective morality, cosmic order, and Jesus' resurrection cohere under Christian theism; Singer argues that evolution, secular ethics, evidential restraint, and undeserved suffering make that God improbable.",
+    "summary": "Lennox presents a cumulative Christian explanation of reason, value, hope, and Jesus; Singer answers with naturalistic alternatives, evidential demands, and suffering.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -7800,21 +7794,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
-      "con": 87
+      "pro": 75,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Reason, science, and design"
+        "title": "Science, Origins, Design, and Rational Mind"
       },
       {
-        "title": "Undeserved suffering"
+        "title": "Objective Morality, Human Worth, and Purpose"
       },
       {
-        "title": "Objective morality and freedom"
+        "title": "Jesus, Resurrection, and Scriptural Reliability"
       },
       {
-        "title": "Resurrection and historical evidence"
+        "title": "Suffering, Hope, Compensation, and Justice"
+      },
+      {
+        "title": "Faith, Cultural Contingency, and Explanatory Burden"
       }
     ]
   },
@@ -8041,11 +8038,11 @@ export const debateSummaries = [
     "number": "176",
     "title": "Bart Ehrman vs Peter J. Williams: Are the Gospels Historically Reliable?",
     "label": "Historical reliability of the Gospels",
-    "date": "2026-08-01",
+    "date": "2026-08-25",
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=foLI3KGbMnk",
     "motion": "Are the canonical Gospels historically reliable accounts of Jesus' life, teaching, death, and resurrection?",
-    "summary": "Williams argues that authorship traditions, local knowledge, names, and converging narrative detail warrant trust; Ehrman argues that anonymous transmission, contradictions, theological development, and oral change prevent blanket reliability.",
+    "summary": "Williams defended cumulative contextual and theological continuity, while Ehrman more successfully separated informed settings from reliable events, highlighting provenance gaps and narrative conflicts.",
     "sides": {
       "pro": {
         "name": "The Gospels are historically reliable",
@@ -8059,24 +8056,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 86,
-      "con": 92
+      "pro": 83,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Authorship, dating, and eyewitness proximity"
+        "title": "Authorship, Dating, and Access to Early Sources"
       },
       {
-        "title": "Names, geography, and local knowledge"
+        "title": "Palestinian Knowledge and Its Evidential Reach"
       },
       {
-        "title": "Contradictions and the death of Judas"
+        "title": "Oral Transmission, Parallel Accounts, and Discrepancies"
       },
       {
-        "title": "Inerrancy and historical method"
+        "title": "Continuity and Development in the Portrait of Jesus"
       },
       {
-        "title": "Christology and oral transmission"
+        "title": "Historical Method and the Cumulative Reliability Inference"
       }
     ]
   },
@@ -8353,11 +8350,11 @@ export const debateSummaries = [
     "number": "183",
     "title": "David Enoch vs Justin Clarke-Doane: Moral Realism and Objectivity",
     "label": "Moral realism and normative objectivity",
-    "date": "2026-08-01",
+    "date": "2026-08-25",
     "duration": "1 hr 10 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2WrywAaDvvw",
     "motion": "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
-    "summary": "Enoch defends robust moral facts as the default explanation of objective practice; Clarke-Doane argues that even privileged facts leave an intelligible question about which normative standard to follow.",
+    "summary": "Enoch grounds moral objectivity in stance-independent facts and ordinary deliberation, while confronting rival-package, noncognitivist, and reflective-anomaly challenges to action guidance.",
     "sides": {
       "pro": {
         "name": "Robust moral realism vindicates objectivity",
@@ -8371,24 +8368,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 89,
-      "con": 93
+      "pro": 84,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Common-sense objectivity and the realist default"
+        "title": "Ordinary objectivity and the realist foundation"
       },
       {
-        "title": "Rival normative packages and the revenge regress"
+        "title": "Rival normative packages and metaphysical privilege"
       },
       {
-        "title": "Can noncognitivism do better?"
+        "title": "Non-cognitivism as a comparative alternative"
       },
       {
-        "title": "Deliberative phenomenology and reflective revision"
+        "title": "First-person deliberation and reflective counterexamples"
       },
       {
-        "title": "Anomalies, contradictions, and theoretical cost"
+        "title": "Theoretical costs, anomalies, and legitimate stopping points"
       }
     ]
   },
