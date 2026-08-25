@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-local-wrapper-source-discovery-recovery-6-analysis",
+  "status": "batch-09-debate-170-zero-playback-local-wrapper-discovery-passed-no-passive-download-route",
+  "batchNumber": 9,
+  "result": {
+    "safetyGatePassed": true,
+    "canonicalEmbedConfigured": true,
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "playerResponseAvailableWithoutInitialization": false,
+    "streamingFormatsAvailableWithoutInitialization": 0,
+    "videoAssetsAvailableWithoutInitialization": 0,
+    "sourceRecovered": false
+  },
+  "diagnosis": {
+    "passiveEmbedDiscoveryExhausted": true,
+    "playbackInitializationWouldViolateFrozenControl": true,
+    "minimumRemainingNonplaybackMethod": "one credential-omitting public YouTube player-metadata request using only the canonical video id and public client configuration",
+    "authenticatedCookieTransmissionRequired": false,
+    "paidServiceRequired": false
+  },
+  "preservedControls": {
+    "sourceIdentityChanged": false,
+    "speakerIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false,
+    "rawSignedUrlsPersisted": false
+  },
+  "authorization": {
+    "userInstruction": "Continue at your discretion.",
+    "preparePublicCredentialOmittingPlayerMetadataRequest": true,
+    "executePublicCredentialOmittingPlayerMetadataRequest": true,
+    "downloadsDuringMetadataRequest": false,
+    "audioPlaybackMaximumSeconds": 0,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-freeze-and-run-one-public-credential-omitting-youtube-player-metadata-request"
+}
