@@ -1,0 +1,631 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-timeout-recovery-correction-1",
+  "status": "frozen-three-repair-plus-five-resumption-contexts-activated",
+  "activatedAt": "2026-08-25T14:05:55Z",
+  "checkpointCommit": "2256b0fcff1cd248359187de6e2fe6124d00cae6",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I authorize one final Batch 9 publication-timeout recursive recovery covering only the five diagnosed overlong critiques in the preserved rejected Debate 166 con and Debate 183 pro shard outputs.",
+    "exactRepairPackets": 3,
+    "repairPartition": [
+      2,
+      2,
+      1
+    ],
+    "exactUnattemptedResumptionContexts": 5,
+    "noFurtherRecovery": true,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/execution-preparation-manifest.json",
+    "sha256": "9134ac18f65394c2978192a6aa2a0391e296fa2c2ef0c954976d82674136c26e"
+  },
+  "preservedParent": {
+    "preparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/execution-preparation-manifest.json",
+      "sha256": "649d8990b62d115b4e9b5f570b7f1c293a5553d0355d3002d091bd007ff699a6"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/execution-activation.json",
+      "sha256": "053f5be2cd772ab506ddd4a34e63cf0aff02e8cc7bf280349bfa0eff9124fd57"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/model-execution.json",
+      "sha256": "a05b39a3cfd1b7173a175241b13234905a141f38d9faf66af7910707e90d8909"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/analysis.json",
+      "sha256": "022317fbf43578697802bc41489cc524d2ece8f6e2f2414e655d7279424f9d65"
+    }
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/failure-diagnosis.json",
+    "sha256": "912d95e801a2a83d84538f9c0e4b5e74d7827b8bddab80b56acb7be95ddfbe62"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "repairContexts": [
+    {
+      "contextIndex": 0,
+      "contextType": "bounded-recursive-critique-repair",
+      "packetIndex": 0,
+      "debateNumber": "166",
+      "debateId": "craig-atkins-does-god-exist-2011",
+      "baseContextIndex": 1,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-0.json",
+      "packetSha256": "fd29c04e5361839df94f1de5d8eaad6c26493de6371616cba035f9ce206572e9",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-0.schema.json",
+      "schemaSha256": "6153edda43839d524c28f787c328a83042589bf6076d2e2dca8654db7689071d",
+      "writableFields": [
+        "moveProse.con-morality-c010-evolutionary-social-origin.critique",
+        "moveProse.con-method-c10-evidence-over-faith.critique"
+      ],
+      "writableFieldCount": 2,
+      "repairOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-0.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-0.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-0.json"
+    },
+    {
+      "contextIndex": 1,
+      "contextType": "bounded-recursive-critique-repair",
+      "packetIndex": 1,
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "baseContextIndex": 2,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-1.json",
+      "packetSha256": "aebe3a385c7149e19111f227be573cf153ce4a86a4e8478309c26a6e301389d3",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-1.schema.json",
+      "schemaSha256": "ffd34f8540d580ca50df68bd44afe09ad4712de3bd52fb490fd2c964dfeba8d1",
+      "writableFields": [
+        "moveProse.pro-deliberative-indispensability.critique",
+        "moveProse.pro-centrality-weighted-theory-cost.critique"
+      ],
+      "writableFieldCount": 2,
+      "repairOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-1.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-1.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-1.json"
+    },
+    {
+      "contextIndex": 2,
+      "contextType": "bounded-recursive-critique-repair",
+      "packetIndex": 2,
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "baseContextIndex": 2,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-2.json",
+      "packetSha256": "f8b25a4fdbb616ef582f0c26b961a8816591d8d369b0346517f7cce163a13cb8",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-2.schema.json",
+      "schemaSha256": "85ca7ff9ba7a4487668b34a6b7ebddb5b8462d487127081c55ef6614a6998ea6",
+      "writableFields": [
+        "moveProse.pro-explanatory-not-contradictory-cost.critique"
+      ],
+      "writableFieldCount": 1,
+      "repairOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-2.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-2.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-2.json"
+    }
+  ],
+  "resumptionContexts": [
+    {
+      "contextIndex": 3,
+      "contextType": "previously-unattempted-field-disjoint-publication-resumption-shard",
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "shardId": "shard-02-con",
+      "side": "con",
+      "includesSummary": false,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-3.json",
+      "packetSha256": "434ce21eb0958eff7ea8bd391e633dda4493295053318258f4b86cf34332bf6a",
+      "packetBytes": 116131,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-3.schema.json",
+      "schemaSha256": "63a237cc51acc64481a83b9a97eb32e1a0320333fd325763c1d5b054b928d546",
+      "schemaBytes": 39633,
+      "moveIds": [
+        "con-objectivity-exceeds-mind-independence",
+        "con-metaphysical-privilege-dilemma",
+        "con-decision-centered-noncognitivism",
+        "con-deflationary-attitude-semantics",
+        "con-reflective-logic-counterexample",
+        "con-informed-deliberator-method",
+        "con-foundational-anomaly-significance",
+        "con-contradictions-as-defeasible-costs"
+      ],
+      "writableFields": [
+        "representativeQuotes.con",
+        "moveProse.con-objectivity-exceeds-mind-independence",
+        "moveProse.con-metaphysical-privilege-dilemma",
+        "moveProse.con-decision-centered-noncognitivism",
+        "moveProse.con-deflationary-attitude-semantics",
+        "moveProse.con-reflective-logic-counterexample",
+        "moveProse.con-informed-deliberator-method",
+        "moveProse.con-foundational-anomaly-significance",
+        "moveProse.con-contradictions-as-defeasible-costs",
+        "overallCommentary.con",
+        "aiExtension.con"
+      ],
+      "writableFieldCount": 11,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-3.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-3.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-3.json",
+      "originalFrozenContextIndex": 3
+    },
+    {
+      "contextIndex": 4,
+      "contextType": "previously-unattempted-field-disjoint-publication-resumption-shard",
+      "debateNumber": "112",
+      "debateId": "copan-woodford-belief-god-reasonable-2024",
+      "shardId": "shard-01-pro-shared",
+      "side": "pro",
+      "includesSummary": true,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-4.json",
+      "packetSha256": "bcdcfb62f620cd845fb2f16822b16bb0f0f393d257a762ebcbb2da5579ce0ea4",
+      "packetBytes": 126391,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-4.schema.json",
+      "schemaSha256": "07fa646492e81d63c85d498689e5865f8844e052dbc7a3fe5ef44fa022036d8a",
+      "schemaBytes": 48304,
+      "moveIds": [
+        "pro-cosmic-transcendent-cause",
+        "pro-life-permitting-fine-tuning",
+        "pro-consciousness-supreme-mind",
+        "pro-truth-directed-rationality",
+        "pro-objective-morality-foundation",
+        "pro-evil-and-defeated-horrors",
+        "pro-cumulative-best-explanation",
+        "pro-representative-naturalism-scope",
+        "pro-divine-character-euthyphro",
+        "pro-women-ministry-context",
+        "pro-jesus-corrective-standard"
+      ],
+      "writableFields": [
+        "summary",
+        "representativeQuotes.pro",
+        "moveProse.pro-cosmic-transcendent-cause",
+        "moveProse.pro-life-permitting-fine-tuning",
+        "moveProse.pro-consciousness-supreme-mind",
+        "moveProse.pro-truth-directed-rationality",
+        "moveProse.pro-objective-morality-foundation",
+        "moveProse.pro-evil-and-defeated-horrors",
+        "moveProse.pro-cumulative-best-explanation",
+        "moveProse.pro-representative-naturalism-scope",
+        "moveProse.pro-divine-character-euthyphro",
+        "moveProse.pro-women-ministry-context",
+        "moveProse.pro-jesus-corrective-standard",
+        "overallCommentary.pro",
+        "aiExtension.pro"
+      ],
+      "writableFieldCount": 15,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-4.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-4.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-4.json",
+      "originalFrozenContextIndex": 4
+    },
+    {
+      "contextIndex": 5,
+      "contextType": "previously-unattempted-field-disjoint-publication-resumption-shard",
+      "debateNumber": "112",
+      "debateId": "copan-woodford-belief-god-reasonable-2024",
+      "shardId": "shard-02-con",
+      "side": "con",
+      "includesSummary": false,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-5.json",
+      "packetSha256": "f58afc20fa32ffdcbb54104d10e7af1ad95187d0dd3a8ba37c57862759fe0a40",
+      "packetBytes": 126246,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-5.schema.json",
+      "schemaSha256": "55a18cb4fc20a84a594c29acb4b2a400cd97d4d5990f0a0b53ea7bd03583e0e9",
+      "schemaBytes": 42612,
+      "moveIds": [
+        "con-natural-history-suffering",
+        "con-theistic-explanatory-track-record",
+        "con-revelation-and-womens-status",
+        "con-cosmic-scale-and-chance",
+        "con-consciousness-naturalism-distinction",
+        "con-diversity-of-naturalist-commitments",
+        "con-euthyphro-and-moral-history",
+        "con-big-bang-and-omnipotence",
+        "con-evolutionary-moral-development"
+      ],
+      "writableFields": [
+        "representativeQuotes.con",
+        "moveProse.con-natural-history-suffering",
+        "moveProse.con-theistic-explanatory-track-record",
+        "moveProse.con-revelation-and-womens-status",
+        "moveProse.con-cosmic-scale-and-chance",
+        "moveProse.con-consciousness-naturalism-distinction",
+        "moveProse.con-diversity-of-naturalist-commitments",
+        "moveProse.con-euthyphro-and-moral-history",
+        "moveProse.con-big-bang-and-omnipotence",
+        "moveProse.con-evolutionary-moral-development",
+        "overallCommentary.con",
+        "aiExtension.con"
+      ],
+      "writableFieldCount": 12,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-5.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-5.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-5.json",
+      "originalFrozenContextIndex": 5
+    },
+    {
+      "contextIndex": 6,
+      "contextType": "previously-unattempted-field-disjoint-publication-resumption-shard",
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "shardId": "shard-01-pro-shared",
+      "side": "pro",
+      "includesSummary": true,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-6.json",
+      "packetSha256": "cce45b337cd5eba0549ec772e5b9566aa15c18dd0b08cc867859444be10b7548",
+      "packetBytes": 118891,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-6.schema.json",
+      "schemaSha256": "e12db17f2e497c1e8206707fccba1edf95b2cc7c70e3f824ff8da5b76407e286",
+      "schemaBytes": 45450,
+      "moveIds": [
+        "pro-noncoercive-evidence-standard",
+        "pro-convergent-case-for-trust",
+        "pro-fine-tuning-creator-inference",
+        "pro-orderly-purposeful-parameters",
+        "pro-evolutionary-suffering-lawful-plan",
+        "pro-physical-suffering-stable-laws",
+        "pro-historical-resurrection-inference",
+        "pro-transcendent-moral-source",
+        "pro-holistic-christian-revelation",
+        "pro-numinous-beauty-transcendence"
+      ],
+      "writableFields": [
+        "summary",
+        "representativeQuotes.pro",
+        "moveProse.pro-noncoercive-evidence-standard",
+        "moveProse.pro-convergent-case-for-trust",
+        "moveProse.pro-fine-tuning-creator-inference",
+        "moveProse.pro-orderly-purposeful-parameters",
+        "moveProse.pro-evolutionary-suffering-lawful-plan",
+        "moveProse.pro-physical-suffering-stable-laws",
+        "moveProse.pro-historical-resurrection-inference",
+        "moveProse.pro-transcendent-moral-source",
+        "moveProse.pro-holistic-christian-revelation",
+        "moveProse.pro-numinous-beauty-transcendence",
+        "overallCommentary.pro",
+        "aiExtension.pro"
+      ],
+      "writableFieldCount": 14,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-6.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-6.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-6.json",
+      "originalFrozenContextIndex": 6
+    },
+    {
+      "contextIndex": 7,
+      "contextType": "previously-unattempted-field-disjoint-publication-resumption-shard",
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "shardId": "shard-02-con",
+      "side": "con",
+      "includesSummary": false,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-7.json",
+      "packetSha256": "1a05dbb6a2eda41c7bebfbc61509515844626e21e3f1b06eda284c375c14e3d8",
+      "packetBytes": 118746,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-7.schema.json",
+      "schemaSha256": "64eec5dd96f4f73c933e1f10571ed05c933ab112b7b3eeddaef77c5a2b75735b",
+      "schemaBytes": 45138,
+      "moveIds": [
+        "con-agnostic-restraint",
+        "con-christian-moral-conflict",
+        "con-fine-tuning-reversal",
+        "con-constants-omnipotence",
+        "con-evolutionary-suffering",
+        "con-suffering-mystery-symmetry",
+        "con-resurrection-legend-development",
+        "con-private-revelation-limit",
+        "con-beauty-diversity",
+        "con-cumulative-mystery-restraint"
+      ],
+      "writableFields": [
+        "representativeQuotes.con",
+        "moveProse.con-agnostic-restraint",
+        "moveProse.con-christian-moral-conflict",
+        "moveProse.con-fine-tuning-reversal",
+        "moveProse.con-constants-omnipotence",
+        "moveProse.con-evolutionary-suffering",
+        "moveProse.con-suffering-mystery-symmetry",
+        "moveProse.con-resurrection-legend-development",
+        "moveProse.con-private-revelation-limit",
+        "moveProse.con-beauty-diversity",
+        "moveProse.con-cumulative-mystery-restraint",
+        "overallCommentary.con",
+        "aiExtension.con"
+      ],
+      "writableFieldCount": 13,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-7.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-7.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-7.json",
+      "originalFrozenContextIndex": 7
+    }
+  ],
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "publicationManual": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/manual.md",
+    "referenceCatalog": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/reference-catalog.json",
+    "parentRecoveryManual": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/manual.md",
+    "repairManual": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/manual.md"
+  },
+  "isolation": {
+    "freshContextPerModelCall": true,
+    "repairContextsExposeAtMostTwoDiagnosedFields": true,
+    "rejectedShardOutputUsedOnlyAsImmutableRepairBase": true,
+    "failedRepairOutputReusable": false,
+    "resumptionContextsUseOnlyOriginalFrozenInputs": true,
+    "participantJudgmentWasScoreBlind": true,
+    "publicationScoreLocked": true,
+    "acceptedCohortOutputsUnavailableToModels": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true
+  },
+  "recoveryContract": {
+    "repairPackets": 3,
+    "repairPartition": [
+      2,
+      2,
+      1
+    ],
+    "repairedCritiques": 5,
+    "preservedAcceptedContextIndexes": [
+      0
+    ],
+    "rejectedBaseContextIndexes": [
+      1,
+      2
+    ],
+    "resumedOriginalContextIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "repairsMustAllPassBeforeResumption": true,
+    "finalMergedDebates": [
+      "166",
+      "183",
+      "112",
+      "17"
+    ],
+    "completeCohortReplayDebates": 10,
+    "completeCohortReplayMoves": 180,
+    "noFurtherRecovery": true
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.149.0-alpha.4.3",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true,
+    "isolatedTemporaryWorkingDirectories": true,
+    "hostAwakeGuard": {
+      "path": "/usr/bin/caffeinate",
+      "sha256": "ef2d405c25a7335ccedf2c1ac7667a3f4a5226dcc1f59668259d43aae59bfbb7",
+      "bytes": 136000,
+      "args": [
+        "-dimsu"
+      ]
+    }
+  },
+  "executionPolicy": {
+    "modelContexts": 8,
+    "repairContexts": 3,
+    "resumptionContexts": 5,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveCorrectionsAfterThisMaximum": 0,
+    "maximumParallelContexts": 2,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "phases": [
+      {
+        "phase": "repair-operational-one",
+        "contextIndexes": [
+          0
+        ],
+        "maximumParallelContexts": 1,
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "repair-ramp-two",
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "maximumParallelContexts": 2,
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "resumption-steady-two",
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "maximumParallelContexts": 2,
+        "expansionRequiresAllValid": false,
+        "failFastNoNewStartsAfterObservedFailure": true
+      }
+    ],
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "separateActivationRequired": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "packetOrSchemaHashMismatchBlocks": true,
+    "repairFailureBlocksResumption": true,
+    "anyFurtherFailedOutputStops": true,
+    "noNewContextStartsAfterObservedFailure": true,
+    "paidServiceBlocks": true,
+    "protectedFieldChangeBlocks": true,
+    "retryBlocks": true,
+    "timeoutExtensionBlocks": true,
+    "furtherRecoveryBlocks": true,
+    "rollbackBlocks": true,
+    "productionMutationBlocks": true,
+    "nextBatchSelectionBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/failure-diagnosis.json": "912d95e801a2a83d84538f9c0e4b5e74d7827b8bddab80b56acb7be95ddfbe62",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/execution-preparation-manifest.json": "649d8990b62d115b4e9b5f570b7f1c293a5553d0355d3002d091bd007ff699a6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/execution-activation.json": "053f5be2cd772ab506ddd4a34e63cf0aff02e8cc7bf280349bfa0eff9124fd57",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/model-execution.json": "a05b39a3cfd1b7173a175241b13234905a141f38d9faf66af7910707e90d8909",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/analysis.json": "022317fbf43578697802bc41489cc524d2ece8f6e2f2414e655d7279424f9d65",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-0.json": "5c3d11642ee9adc51f91b1dd42b6f40145a1b34c3c397eee0d41c0525c1fb69f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-1.json": "e483a7d3fde98ebaf33e3486ed0c6b7d7c510796bce961e97f5e13866fc27112",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-2.json": "fb08bdfd601c77ca2f8440b85982cb865b74179205bf183233771668cc0fd6db",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-0.json": "2d0754f3638e35822654d6a190ea4b3419e89102ce2da1bcc1efaecb93dfbdf7",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/manual.md": "9286c855d531b0d92ee1b7e8a6fac9f99f808713ebff11160a761d2dd1208d36",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/reference-catalog.json": "5bd22cfc280e2f88f3a12c9a2a9687b5ed725a4e231f489659ac30b49f55ad77",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/manual.md": "eff226371ec6ab8c9893e8531f865bed42d07ce3b7b209dd4c07d043a462b87b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/manual.md": "f2f826b45440a89d14126235efcf327543a3e762fd0ab3975d72ffd17900b631",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "scripts/lib/assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery.mjs": "fb8b8433dc813eadfb68f871052e5c861ca4bd35f0f7c39ab597aa07fbcbe175",
+    "scripts/prepare-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery.mjs": "1e2fcb26eea3843e37b29c3bb112b0e632105d89a2146b9400495ba54c1f20f8",
+    "scripts/test-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery-preparation.mjs": "9855660e7ee2f4de367580d9311d89db57c146f75d9db82f6cf366aaa22867a6",
+    "scripts/activate-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery.mjs": "26b799f278ae15d35fe688173120fec44c00626e840edf8950166837d2c4d1ff",
+    "scripts/run-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery.mjs": "94b5f5663f92be9b08946c2e26b2d7b3376fdc4560e1245d6b19327b7a28fd9a",
+    "scripts/analyze-assessment-production-post-canary-batch-09-publication-timeout-recursive-recovery.mjs": "02f21063012cb9a8f61635c6130dab9c8f0a217b6f57ab7413c2ae88a5cd12b9",
+    "scripts/lib/assessment-production-post-canary-batch-09-publication-resumption-timeout-recovery.mjs": "3c5f936d832951df083a167d88a17a7e24cd5cd5634533c28ab2d7f431a1f866",
+    "scripts/lib/assessment-production-post-canary-batch-09-publication.mjs": "812efde65f709f1a3e871a127bf10d3ceb22adf22cb981b6fa7e0121f6decb8c",
+    "scripts/lib/assessment-production-post-canary-batch-09-publication-validation.mjs": "264fede2bfdc262ece3959a69347482d723bb8c2cd156f500834bc8b7fd06072",
+    "scripts/lib/assessment-production-post-canary-batch-09-standing-authorization.mjs": "f838dbc18cf3fb66add5919fff5a6b64083ab6619474349e16644ebc34102db3",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-0.json": "b2a9219c251237a8ad4ab304da9be329580d57bf7426c05570b1f35c8ccaf570",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-1.json": "33133a33d675595111efa9ea62f67c22e3eb6c6d5a270fc45152e7d8182ca269",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-2.json": "131b5817f943d67e0f308bbdae48db62b870bc53b3d94c9cce29e9d15dff0a40",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-3.json": "434ce21eb0958eff7ea8bd391e633dda4493295053318258f4b86cf34332bf6a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-4.json": "bcdcfb62f620cd845fb2f16822b16bb0f0f393d257a762ebcbb2da5579ce0ea4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-5.json": "f58afc20fa32ffdcbb54104d10e7af1ad95187d0dd3a8ba37c57862759fe0a40",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-6.json": "cce45b337cd5eba0549ec772e5b9566aa15c18dd0b08cc867859444be10b7548",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-7.json": "1a05dbb6a2eda41c7bebfbc61509515844626e21e3f1b06eda284c375c14e3d8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-0.schema.json": "9803640c16302380a93bf1efcc3e0631409ceabd1e4f1bbac84de7dcd51796b1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-1.schema.json": "ab0771f1aa83085ee9ddeef0c8d741c6d5c3d63f46bc55a7bd20cd24fd0bc868",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-2.schema.json": "b625df541a58e7ebd3385a82df4644e72e58d5ba8fa1c2574cdeb31f860b4362",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-3.schema.json": "63a237cc51acc64481a83b9a97eb32e1a0320333fd325763c1d5b054b928d546",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-4.schema.json": "07fa646492e81d63c85d498689e5865f8844e052dbc7a3fe5ef44fa022036d8a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-5.schema.json": "55a18cb4fc20a84a594c29acb4b2a400cd97d4d5990f0a0b53ea7bd03583e0e9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-6.schema.json": "e12db17f2e497c1e8206707fccba1edf95b2cc7c70e3f824ff8da5b76407e286",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/schemas/context-7.schema.json": "64eec5dd96f4f73c933e1f10571ed05c933ab112b7b3eeddaef77c5a2b75735b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/merged/debate-170.json": "8e7b603d46a7a3cc05b7045f77d3b90296a5b9795db8c66913e3e373f71768f7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/outputs/debate-134.json": "bc9860dd776eb5b8c97044f60bb05dc48b54c58e50bf77ebf7d0d14e92aa40e5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/outputs/debate-19.json": "25356d3cfc551765123ad851288e5dd4d4db430faed5e389e69209bfc122205a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/outputs/debate-114.json": "6eb6b8215c4653bbc964017b739fd85cb39c85c51b3e55f4d48b92cba8ff7ae4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/outputs/debate-89.json": "69b8e8fd5a380659e5f926688fc40afb68806de07b1d3bec38b5fc5619dccc09",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/outputs/debate-176.json": "e729d1583a5096959c5c13cba766d43765ae2bd3ce5400931e500c708641e52a",
+    "/usr/bin/caffeinate": "ef2d405c25a7335ccedf2c1ac7667a3f4a5226dcc1f59668259d43aae59bfbb7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-0.json": "fd29c04e5361839df94f1de5d8eaad6c26493de6371616cba035f9ce206572e9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-0.schema.json": "6153edda43839d524c28f787c328a83042589bf6076d2e2dca8654db7689071d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-1.json": "aebe3a385c7149e19111f227be573cf153ce4a86a4e8478309c26a6e301389d3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-1.schema.json": "ffd34f8540d580ca50df68bd44afe09ad4712de3bd52fb490fd2c964dfeba8d1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/packets/packet-2.json": "f8b25a4fdbb616ef582f0c26b961a8816591d8d369b0346517f7cce163a13cb8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/schemas/packet-2.schema.json": "85ca7ff9ba7a4487668b34a6b7ebddb5b8462d487127081c55ef6614a6998ea6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/execution-preparation-manifest.json": "9134ac18f65394c2978192a6aa2a0391e296fa2c2ef0c954976d82674136c26e"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shards/context-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shards/context-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shard-validation-context-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shard-validation-context-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repair-merge-audit.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/outputs/packet-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/validations/packet-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/provenance/packet-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-3.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-3.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-3.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-4.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-4.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-4.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-5.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-5.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-5.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-6.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-6.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-6.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-7.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/validations/context-7.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/provenance/context-7.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-166.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/complete-validation-debate-166.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merge-audit-debate-166.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-183.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/complete-validation-debate-183.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merge-audit-debate-183.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-112.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/complete-validation-debate-112.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merge-audit-debate-112.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-17.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/complete-validation-debate-17.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merge-audit-debate-17.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/cohort-replay.json"
+  ],
+  "artifacts": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/analysis.json",
+    "repairedShards": {
+      "1": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shards/context-1.json",
+      "2": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repaired-shards/context-2.json"
+    },
+    "repairMergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/correction-1/repair-merge-audit.json",
+    "cohortReplay": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/cohort-replay.json",
+    "merged": {
+      "17": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-17.json",
+      "112": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-112.json",
+      "166": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-166.json",
+      "183": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/merged/debate-183.json"
+    }
+  },
+  "authorization": {
+    "exactThreeRepairContexts": true,
+    "exactFiveResumptionContextsAfterRepairsPass": true,
+    "modelExecution": true,
+    "deterministicValidationMergeAndCohortReplay": true,
+    "retries": false,
+    "timeoutExtensions": false,
+    "furtherRecovery": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-three-repair-contexts-and-only-after-all-pass-five-unattempted-resumption-contexts"
+}
