@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19-plan",
+  "status": "frozen-one-shot-batch-09-debate-183-tiekoetter-indexed-range-recovery-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "5849cdff",
+  "userAuthorization": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "resolvedScope": "one newly frozen credential-free HTTP byte-range media attempt for the exact Debate 183 source, using the authenticated complete SIDX index in the preserved failed-transfer prefix; if successful, create the two still-required frozen clips and resume the standing-authorized workflow",
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAtThisStageAuthorized": false,
+    "paidServicesAuthorized": false,
+    "cookiesAuthorized": false,
+    "accountDataAuthorized": false,
+    "judgmentOrScoreChangesAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/failure-diagnosis.json": "f053c5624d5d2cbcb8320c8ff2e9c42283e8cf490b8dc366d288ff156d1bd467",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/2WrywAaDvvw/manifest.json": "89e4c280748a5120d36b4e70b2ac5fcce6dc6027476462e793c774d175bcdcaf",
+    ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/source.attempt-1.part": "40b4a8717f25ff49611084b8bae82d7f9335e07d2eb1b2e134ac78eac8055186",
+    ".assessment-cache/proxy-metadata/piped/2WrywAaDvvw/tiekoetter-range-19/watch.html": "a03828a5fc08387b6f13cd5e1439caf2b0c71ff8900d47e28d70d8d50df275c0",
+    ".assessment-cache/proxy-metadata/piped/2WrywAaDvvw/tiekoetter-range-19/manifest.mpd": "03a9c1f6e104e9d8289d643c9c3d2b6e84857a9715b040549a2ef73cffd6c42d",
+    ".assessment-cache/proxy-metadata/piped/2WrywAaDvvw/tiekoetter-range-19/manifest-url.txt": "354d3d925c0dc111850d66fc108a29be32e16dc54c03285b9072a2900575cda6"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19.mjs": "f2a9ccb0378b485ea0e4224d990783afd0a37e887d278bc420801c0ada31c3f4",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19.mjs": "92123d06803fb2183a9650f032fb8583cc0125c758588782a05d097e1d892101"
+  },
+  "source": {
+    "videoId": "2WrywAaDvvw",
+    "title": "Moral Realism Debate: Prof. David Enoch vs Dr. Justin Clarke-Doane",
+    "canonicalVideoUrl": "https://www.youtube.com/watch?v=2WrywAaDvvw",
+    "manifestPresentationDurationSeconds": 4200.332,
+    "audioRepresentationDurationSeconds": 4200.396,
+    "identityRule": "the exact canonical video id, Invidious page title, caption manifest, DASH presentation duration, and selected audio representation must all match"
+  },
+  "proxyRepresentation": {
+    "provider": "Invidious Tiekoetter companion",
+    "companionOrigin": "https://eu-de1.companion.invidious.tiekoetter.com",
+    "adaptationSetId": "0",
+    "representationId": "140",
+    "dynamicRangeCompression": false,
+    "mimeType": "audio/mp4",
+    "codec": "mp4a.40.2",
+    "bandwidthBitsPerSecond": 134242,
+    "expectedFullBytes": 67979525,
+    "durationSeconds": 4200.396,
+    "relativeUrlLength": 2703,
+    "relativeUrlSha256": "7287d8d2b32766b2d6c9c252f75562cd0d9eb61f6c313e44353286187ef80262",
+    "absoluteUrlLength": 2752,
+    "absoluteUrlSha256": "07d1636de022073968a80f7e594d5f3ce7f6530ed4c86237ac7f81814178f3cf",
+    "absoluteUrlReconstructionRule": "decode representation 140 BaseURL from the authenticated manifest and resolve it only against the authenticated Tiekoetter companion origin"
+  },
+  "preservedPrefix": {
+    "path": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/source.attempt-1.part",
+    "bytes": 257390,
+    "sha256": "40b4a8717f25ff49611084b8bae82d7f9335e07d2eb1b2e134ac78eac8055186",
+    "ftypOffset": 0,
+    "ftypBytes": 24,
+    "moovOffset": 24,
+    "moovBytes": 699,
+    "sidxOffset": 723,
+    "sidxBytes": 5084,
+    "initializationBytes": 723,
+    "sidxTimescale": 44100,
+    "sidxReferenceCount": 421,
+    "sidxTotalIndexedBytes": 67973718,
+    "sidxIndexedEndByteInclusive": 67979524,
+    "sidxDurationSeconds": 4200.3969161,
+    "acceptedAsFullSource": false,
+    "useAuthorized": "initialization bytes and the complete deterministic SIDX index only"
+  },
+  "byteRange": {
+    "selectionRule": "include every complete SIDX media reference intersecting the frozen clip union with 2.5 seconds of leading and trailing guard time",
+    "guardedAbsoluteStartSeconds": 3221.64,
+    "guardedAbsoluteEndSeconds": 3648.76,
+    "firstSegmentIndex": 322,
+    "firstSegmentByteStart": 52033693,
+    "firstSegmentStartSeconds": 3215.034920635,
+    "lastSegmentIndex": 365,
+    "lastSegmentByteEndInclusive": 59143476,
+    "lastSegmentEndSeconds": 3654.356462585,
+    "segmentCount": 44,
+    "rangeHeader": "bytes=52033693-59143476",
+    "expectedContentRange": "bytes 52033693-59143476/67979525",
+    "expectedBytes": 7109784,
+    "indexedDurationSeconds": 439.32154195,
+    "allReferencesTypeZero": true,
+    "allReferencesStartWithSap": true
+  },
+  "localPaths": {
+    "rawPartialPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/target-range.attempt-1.part",
+    "rawAcceptedPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/target-range.bin",
+    "reconstructedFragmentPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/target-range.m4a",
+    "boundedNormalizedSourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/target-range.mp3",
+    "clipPaths": [
+      "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-informed-deliberator-method.mp3",
+      "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-foundational-anomaly-significance.mp3"
+    ]
+  },
+  "localProcessing": {
+    "ffmpegPath": "/opt/homebrew/bin/ffmpeg",
+    "ffprobePath": "/opt/homebrew/bin/ffprobe",
+    "reconstructionRule": "prepend exactly the first 723 authenticated ftyp-plus-moov bytes to the exact accepted byte range; do not copy the global SIDX into the bounded media file",
+    "normalizationTimestampRule": "use FFmpeg copyts plus start_at_zero so the bounded source starts at zero without changing media content",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "rangeDurationToleranceSeconds": 0.25,
+    "clips": [
+      {
+        "moveId": "con-informed-deliberator-method",
+        "absoluteStartSeconds": 3224.14,
+        "rangeRelativeStartSeconds": 9.105079365,
+        "expectedClipDurationSeconds": 62.12
+      },
+      {
+        "moveId": "con-foundational-anomaly-significance",
+        "absoluteStartSeconds": 3329.5,
+        "rangeRelativeStartSeconds": 114.465079365,
+        "expectedClipDurationSeconds": 316.76
+      }
+    ],
+    "clipDurationToleranceSeconds": 0.25,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false,
+    "localReconstructionProof": {
+      "performedAgainstPreservedFirstCompleteFragmentOnly": true,
+      "networkRequests": 0,
+      "decodedCodec": "aac",
+      "normalizedCodec": "mp3",
+      "normalizedDurationSeconds": 9.984563,
+      "temporaryFilesRemoved": true
+    }
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "mediaRangeAttemptsMaximum": 1,
+    "requestTimeoutMs": 180000,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "redirectFollowsMaximum": 0,
+    "boundedSourcesInstalledMaximum": 1,
+    "clipsCreatedMaximum": 2,
+    "cookiesSentMaximum": 0,
+    "accountDataUsesMaximum": 0,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "cohortBoundary": {
+    "debate183Only": true,
+    "debate170AcceptedSourceAndClipPreserved": true,
+    "debate19AcceptedSourceAndClipPreserved": true,
+    "completeThreeSourceFourClipCohortValidationDeferred": true,
+    "canonicalTranscriptPacketsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/analysis.json"
+  },
+  "nextActionAfterSuccess": "prepare-validate-freeze-and-report-the-two-call-debate-183-audio-verification-cost-estimate"
+}
