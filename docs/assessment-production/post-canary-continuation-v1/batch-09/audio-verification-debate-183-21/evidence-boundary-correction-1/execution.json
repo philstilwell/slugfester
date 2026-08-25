@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-audio-evidence-boundary-correction-1-execution",
+  "status": "completed-one-batch-09-debate-183-deterministic-audio-evidence-boundary-correction",
+  "batchNumber": 9,
+  "planSha256": "2cf6365921fad8d8c06f4c79f838ca52c801017b21ed615900b10db26e156bfa",
+  "activationSha256": "01cc31381e8fee1513b57b751ede1b550b4089405f5a3073be0e2ff69754b806",
+  "attempts": 1,
+  "correction": {
+    "moveId": "con-informed-deliberator-method",
+    "expectedSpeaker": "Justin Clarke-Doane",
+    "selectedBlock": {
+      "speaker": "Justin Clarke-Doane",
+      "segmentIds": [
+        "seg_14",
+        "seg_15"
+      ],
+      "startSeconds": 45.428,
+      "endSeconds": 57.378,
+      "orderedTokenMatchCount": 32,
+      "originalTokenSpan": [
+        41,
+        73
+      ]
+    },
+    "originalVerificationExcerpt": "has never read Ecklund. And >> no, it's not it's not about uh it's not about the the percentage of the population. It's about how central is it to our understanding of what what what goes on when we deliberate. Um yeah. >> Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not um",
+    "originalVerificationExcerptSha256": "9803753abbf82bda485b9ec05e438d9c863c64f56207e6edadd77db905eee450",
+    "correctedVerificationExcerpt": "Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not",
+    "correctedVerificationExcerptSha256": "38ead22f5b67f263f973df09ce7bc5c339ccd0e1e24ad1252e49ee97f1f77215",
+    "originalVerification": {
+      "status": "unresolved",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "fullClipExcerptRecall": 0.8933333333333333,
+      "expectedSpeakerExcerptRecall": 0.6666666666666666,
+      "highestOtherSpeaker": "David Enoch",
+      "highestOtherSpeakerExcerptRecall": 0.41333333333333333,
+      "expectedSpeakerRecallMargin": 0.2533333333333333,
+      "expectedSpeakerDurationSeconds": 35.9,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": false,
+        "expectedSpeakerRecallDistinct": true,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Justin Clarke-Doane",
+          "segmentCount": 11,
+          "durationSeconds": 35.9,
+          "wordCount": 97,
+          "excerptRecall": 0.6666666666666666
+        },
+        {
+          "speaker": "David Enoch",
+          "segmentCount": 6,
+          "durationSeconds": 17.6,
+          "wordCount": 48,
+          "excerptRecall": 0.41333333333333333
+        }
+      ]
+    },
+    "correctedVerification": {
+      "status": "verified",
+      "expectedSpeaker": "Justin Clarke-Doane",
+      "fullClipExcerptRecall": 0.9696969696969697,
+      "expectedSpeakerExcerptRecall": 0.9696969696969697,
+      "highestOtherSpeaker": "David Enoch",
+      "highestOtherSpeakerExcerptRecall": 0.21212121212121213,
+      "expectedSpeakerRecallMargin": 0.7575757575757576,
+      "expectedSpeakerDurationSeconds": 35.9,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": true,
+        "expectedSpeakerRecallDistinct": true,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Justin Clarke-Doane",
+          "segmentCount": 11,
+          "durationSeconds": 35.9,
+          "wordCount": 97,
+          "excerptRecall": 0.9696969696969697
+        },
+        {
+          "speaker": "David Enoch",
+          "segmentCount": 6,
+          "durationSeconds": 17.6,
+          "wordCount": 48,
+          "excerptRecall": 0.21212121212121213
+        }
+      ]
+    }
+  },
+  "preservedControls": {
+    "audioFilesRead": 0,
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "transcriptChanged": false,
+    "thresholdsChanged": false,
+    "validatorChanged": false,
+    "otherVerificationResultsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  }
+}
