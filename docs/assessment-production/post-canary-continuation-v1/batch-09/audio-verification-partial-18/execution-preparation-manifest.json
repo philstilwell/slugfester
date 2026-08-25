@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-partial-audio-verification-18-execution-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-09-decomposed-consensus",
+  "status": "prepared-two-available-batch-09-paid-known-speaker-diarizations-with-two-debate-183-blockers-conditional-activation-ready",
+  "preparedAt": "2026-08-25T03:30:30.772Z",
+  "checkpointCommit": "4764ec46ed0ecfd8d6b0f9a6b0cd0fd983dff2d9",
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json",
+    "standingAuthorizationSha256": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 2,
+    "conditionalAdvanceApprovalRecorded": true,
+    "executionAuthorizedOnlyAfterFrozenEstimateIsReportedAndAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorizedOnlyThroughFrozenVerificationCalls": true
+  },
+  "scope": {
+    "availableDebates": [
+      "170",
+      "19"
+    ],
+    "frozenTargetClips": 2,
+    "verificationCalls": 2,
+    "sameDebateSpeakerReferences": 4,
+    "blockedDebate": "183",
+    "blockedMoveIds": [
+      "con-informed-deliberator-method",
+      "con-foundational-anomaly-significance"
+    ],
+    "blockerDiagnosisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/failure-diagnosis.json",
+    "blockerDiagnosisSha256": "f053c5624d5d2cbcb8320c8ff2e9c42283e8cf490b8dc366d288ff156d1bd467",
+    "completeFourClipCohort": false,
+    "partialResultsCannotAuthorizeAdjudication": true,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "moveId": "pro-suffering-christian-hope-response",
+      "expectedSpeaker": "John Lennox",
+      "proposition": "Atheism does not eliminate moral or natural suffering but removes hope, while the Christian claim that Jesus is God begins a response to both forms of evil.",
+      "verificationExcerpt": "they say in Ireland about what God might could etc have done or not have done but the fact is we're faced with a world with two ruined cathedrals there's one in Coventry that was ruined by moral evil if you accept that for a moment by bombing there's one in Christchurch that was ruined by a natural disaster those to my mind are symbols of our problem and my response is this yes",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/clips/pro-suffering-christian-hope-response.mp3",
+      "clipSha256": "d0417bfb7ebf746c5a02169313718a7d45c80d7b220c0d0b42e9a25b5a839d9d",
+      "durationSeconds": 213.87,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/transcripts/pro-suffering-christian-hope-response.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "John Lennox",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/john-lennox.mp3",
+          "sha256": "7769d03df606998919ea07270aa15e3ad69085687740c842f93d1758923e83c2",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Peter Singer",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/peter-singer.mp3",
+          "sha256": "b403283d675b79eca5e8687ba6541aa1b96119f988667480b45a9f9e93eacb1e",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "19",
+      "debateId": "harris-oconnor-objective-morality-2024",
+      "moveId": "pro-c009-phenomenal-value-reality",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Some realities exist essentially as appearances in consciousness and cannot be conceptually reduced to external physical descriptions, even if they can be correlated with physical states; their first-person character therefore does not make them unreal.",
+      "verificationExcerpt": "there's there are certain things that only exist as uh appearances in Consciousness right that is that is their ontolog status right there's no um even if we could later correlate them with other states of the physics of things um it is it's just you can't conceptually reduce them you can't there's there's no the the there there is as conscious experiences right and and I would",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/clips/pro-c009-phenomenal-value-reality.mp3",
+      "clipSha256": "70763aeb4b944dc28a403cd973abea3edc547067fa69724b6ed52424d258de4f",
+      "durationSeconds": 56.159,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/transcripts/pro-c009-phenomenal-value-reality.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/sam-harris.mp3",
+          "sha256": "20f03dba100c4afcc0614c23e8326c752967624f1f37a9ff1044db7acc5f15ed",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/alex-o-connor.mp3",
+          "sha256": "b472e79ccc8ddb8c983d9a0c672fec708185b4ec4e7d2143ed2084e566c6de92",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "referencesPerDebate": 2,
+    "references": [
+      {
+        "debateNumber": "170",
+        "speaker": "John Lennox",
+        "selectedMoveId": "pro-reliable-reason-theistic-ground",
+        "selectedMoveSourceSpan": {
+          "startEvent": 175,
+          "endEvent": 282
+        },
+        "selectedMoveDurationSeconds": 280.59,
+        "canonicalStartMs": 684305,
+        "sourceOffsetMs": 0,
+        "sourceStartMs": 684305,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/john-lennox.mp3",
+        "sha256": "7769d03df606998919ea07270aa15e3ad69085687740c842f93d1758923e83c2",
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker"
+      },
+      {
+        "debateNumber": "170",
+        "speaker": "Peter Singer",
+        "selectedMoveId": "con-new-testament-authority-undermined",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2103,
+          "endEvent": 2196
+        },
+        "selectedMoveDurationSeconds": 273.87,
+        "canonicalStartMs": 5859965,
+        "sourceOffsetMs": 0,
+        "sourceStartMs": 5859965,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/peter-singer.mp3",
+        "sha256": "b403283d675b79eca5e8687ba6541aa1b96119f988667480b45a9f9e93eacb1e",
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker"
+      },
+      {
+        "debateNumber": "19",
+        "speaker": "Sam Harris",
+        "selectedMoveId": "pro-c003-possible-experience-landscape",
+        "selectedMoveSourceSpan": {
+          "startEvent": 59,
+          "endEvent": 121
+        },
+        "selectedMoveDurationSeconds": 152.08,
+        "canonicalStartMs": 199960,
+        "sourceOffsetMs": 3168041,
+        "sourceStartMs": 3368001,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/sam-harris.mp3",
+        "sha256": "20f03dba100c4afcc0614c23e8326c752967624f1f37a9ff1044db7acc5f15ed",
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker"
+      },
+      {
+        "debateNumber": "19",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-higher-order-preference-revision",
+        "selectedMoveSourceSpan": {
+          "startEvent": 145,
+          "endEvent": 181
+        },
+        "selectedMoveDurationSeconds": 78.24,
+        "canonicalStartMs": 353840,
+        "sourceOffsetMs": 3168041,
+        "sourceStartMs": 3521881,
+        "requestedDurationSeconds": 8,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/alex-o-connor.mp3",
+        "sha256": "b472e79ccc8ddb8c983d9a0c672fec708185b4ec4e7d2143ed2084e566c6de92",
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "clipSeconds": 270.029,
+    "clipMinutes": 4.500483,
+    "durationOnlyPlanningEstimateUsd": 0.0270029,
+    "primaryExpectedFutureExecutionCostUsd": 0.09835,
+    "maximumConditionallyAuthorizedCostUsd": 1,
+    "projectedUsage": {
+      "audioInputTokens": 5032,
+      "textInputTokens": 228,
+      "outputTokens": 8520,
+      "totalInputTokens": 5260
+    },
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "estimateMustBeReportedBeforeFirstCall": true,
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    }
+  },
+  "executionPolicy": {
+    "sequential": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "requestTimeoutMs": 240000,
+    "stopAfterRequestFailure": true,
+    "stopAfterUsageDerivedCostCapReachedOrExceeded": true,
+    "audioPlaybackCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 1
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/independent-judgments/execution-preparation-manifest.json": "e11f157b580703a6dddebed72f95e146fa23dbc5aeb26a4f501d5eed59315aae",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-archive-mirror-recovery-12/execution.json": "45b5da000e868e17f778cffdfe4681b89997d70959f1942f1b40a50dbddc17a4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-19-official-podcast-recovery-17/execution.json": "710d4e7e9d5b48077d7dae7f18de8ea2d36a48d817d6477c1699e14a3d0b0d7c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-19-official-podcast-recovery-17/recovery-plan.json": "19ab00d75fe7ddad6bf558d6044967f492c155fe60a2da110ca209252ef08c8b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/failure-diagnosis.json": "f053c5624d5d2cbcb8320c8ff2e9c42283e8cf490b8dc366d288ff156d1bd467",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/prepare-assessment-production-post-canary-batch-09-partial-audio-verification-18.mjs": "415f01500d5881aa34451a6e4c2b88dc0b81444cd2e9f5356ca72f055803813c",
+    "scripts/test-assessment-production-post-canary-batch-09-partial-audio-verification-18.mjs": "84c76223c4942b6b14ba78368e16b8708fba03a503f9b90b08e1b45f2d9ee66f",
+    "scripts/assessment-production-post-canary-batch-09-partial-audio-verification-stage-18.mjs": "5ab90f06171980e51dc2997a140660c6662b1f48505f0088a2a85c1f62ea5595",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.mp3": "a85692c8342d602c8229d9140068f0e7109c58ce254afda079192f839460137e",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/clips/pro-suffering-christian-hope-response.mp3": "d0417bfb7ebf746c5a02169313718a7d45c80d7b220c0d0b42e9a25b5a839d9d",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/audio/source.mp3": "dc2b7dfd4617549d4d2229b60b95913872014c7c6a0406c440e6ec494f7a353e",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/clips/pro-c009-phenomenal-value-reality.mp3": "70763aeb4b944dc28a403cd973abea3edc547067fa69724b6ed52424d258de4f",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/john-lennox.mp3": "7769d03df606998919ea07270aa15e3ad69085687740c842f93d1758923e83c2",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/references/peter-singer.mp3": "b403283d675b79eca5e8687ba6541aa1b96119f988667480b45a9f9e93eacb1e",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/sam-harris.mp3": "20f03dba100c4afcc0614c23e8326c752967624f1f37a9ff1044db7acc5f15ed",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/references/alex-o-connor.mp3": "b472e79ccc8ddb8c983d9a0c672fec708185b4ec4e7d2143ed2084e566c6de92"
+  },
+  "outputPaths": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/analysis.json",
+    "cost": "docs/assessment-production/post-canary-continuation-v1/batch-09/audio-verification-partial-18/cost-control-analysis.json"
+  },
+  "nextAuthorizedAction": "report-frozen-estimate-then-activate-and-execute-exactly-two-sequential-calls-if-estimate-does-not-exceed-one-dollar"
+}
