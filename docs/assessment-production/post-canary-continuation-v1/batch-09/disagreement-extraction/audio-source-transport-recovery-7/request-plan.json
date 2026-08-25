@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-public-player-metadata-recovery-7-plan",
+  "status": "frozen-batch-09-debate-170-public-credential-omitting-player-metadata-request-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "ebc75039",
+  "userAuthorization": {
+    "instruction": "Continue at your discretion.",
+    "resolvedAntecedent": "continue the Batch 9 Debate 170 no-playback public-source recovery after passive wrapper discovery found no streaming asset",
+    "directIncrementalCostUsdMaximum": 0,
+    "publicConfigBootstrapGetsMaximum": 1,
+    "publicPlayerMetadataPostsMaximum": 1,
+    "credentialsMode": "omit",
+    "assetDownloadsMaximum": 0,
+    "cookieInspectionMaximum": 0,
+    "cookieExportMaximum": 0,
+    "browserStorageInspectionMaximum": 0,
+    "audioPlaybackMaximumSeconds": 0,
+    "semanticAudioEvaluation": false,
+    "paidServices": false,
+    "modelExecution": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-6/analysis.json": "de9ebae5ae5849d1248bb5e929d38039346784a7a907e4f0577a5a5a8ec4acfb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/HoTILnpd3q8/manifest.json": "c5763d8b9672eee1f1eeef268789ef86ef0a54b2faff179b98a590a2becde517"
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-09-public-player-metadata-recovery-7.mjs": "4acd0da2eb1c8482a6d0a03b091bb1b9994c39c0bf3709d93020c3459239a653",
+    "scripts/test-assessment-production-post-canary-batch-09-public-player-metadata-recovery-7.mjs": "fbe954033b5b0e7b120963e87494e7eb1ef39a078942a2dc6af5261fd3e8e789",
+    "scripts/run-assessment-production-post-canary-batch-09-public-player-metadata-recovery-7.mjs": "3ca9ee753336399e90f1589343274835529e4fddcfa12098f49e5c2d4fa9cafb",
+    "scripts/acquire-youtube-captions.mjs": "d01c3f905526ffb694296891fb9eb738ed1bfe1877c1e08090f5f536a641cfcb"
+  },
+  "publicRequestRoute": {
+    "canonicalVideoId": "HoTILnpd3q8",
+    "configBootstrap": {
+      "method": "GET",
+      "url": "https://www.youtube.com/watch?v=HoTILnpd3q8",
+      "credentials": "omit",
+      "redirect": "error",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36"
+      },
+      "publicApiKeyExtractionPattern": "double-quoted-INNERTUBE_API_KEY-property-value"
+    },
+    "playerMetadata": {
+      "method": "POST",
+      "endpointTemplate": "https://www.youtube.com/youtubei/v1/player?key=<public-api-key>",
+      "credentials": "omit",
+      "redirect": "error",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "context": {
+          "client": {
+            "clientName": "ANDROID",
+            "clientVersion": "20.10.38",
+            "androidSdkVersion": 30,
+            "hl": "en",
+            "gl": "US"
+          }
+        },
+        "videoId": "HoTILnpd3q8",
+        "contentCheckOk": true,
+        "racyCheckOk": true
+      },
+      "payloadSha256": "40351862f2caaec522acd5a029b56e033605fa53fdcf9236ed635720114c73e5"
+    },
+    "exactSequence": [
+      "authenticate-frozen-plan-inputs-and-runner",
+      "send-one-public-credential-omitting-watch-config-get",
+      "extract-public-innertube-api-key-in-process",
+      "send-one-public-credential-omitting-player-metadata-post",
+      "persist-only-response-hash-playability-video-identity-and-sanitized-format-metadata",
+      "discard-public-api-key-and-raw-response-with-process-exit"
+    ]
+  },
+  "sanitizationContract": {
+    "persistedFormatFields": [
+      "itag",
+      "mimeType",
+      "bitrate",
+      "contentLength",
+      "approxDurationMs",
+      "audioQuality",
+      "audioSampleRate",
+      "audioChannels",
+      "width",
+      "height",
+      "qualityLabel",
+      "hasDirectUrl",
+      "hasCipher",
+      "urlSha256"
+    ],
+    "rawSignedUrlsPersisted": false,
+    "rawPlayerResponsePersisted": false,
+    "publicApiKeyPersisted": false,
+    "cookieOrStorageInspection": false
+  },
+  "validation": {
+    "configBootstrapGetsRequired": 1,
+    "playerMetadataPostsRequired": 1,
+    "failOnAnyCredentialTransmission": true,
+    "failOnAnyCookieOrStorageInspection": true,
+    "failOnAnyDownload": true,
+    "failOnAnyPlayback": true,
+    "responseVideoIdMustEqual": "HoTILnpd3q8",
+    "responseLengthSecondsMustEqual": 6365
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-7/execution-activation.json",
+    "outputPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-7/format-inventory.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-7/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-7/analysis.json"
+  },
+  "nextActionAfterPassingDiscovery": "freeze-and-report-sanitized-player-format-inventory-before-any-source-download"
+}
