@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19-runner-correction-1-plan",
+  "status": "frozen-batch-09-debate-183-range-recovery-runner-correction-1-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "7382ac4a",
+  "authorizationBasis": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "resolvedScope": "preserve and correct the deterministic preflight-only runner syntax failure before using the still-unattempted one-shot media range request",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/execution-preflight-failure-diagnosis.json": "48dc7e8b782a18a78b725ecea9913d7b40f8cdd2b219c9e0a6a7b55d5ffda016",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/recovery-plan.json": "388ebb47d6613760ebc5bfb751638d09cc1f187fc88eac919f4e5cce7b084949",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/execution-activation.json": "e513534b29e512182d28f61d9b6b93a9ecb61db21f1e84fd486a2e09f0fe9138",
+    "scripts/run-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19.mjs": "f2a9ccb0378b485ea0e4224d990783afd0a37e887d278bc420801c0ada31c3f4",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19.mjs": "92123d06803fb2183a9650f032fb8583cc0125c758588782a05d097e1d892101"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19-correction-1.mjs": "0a2176663d37553d43aed2d8e699e3723649fcbb6d32740d7381587213d48836",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19-correction-1.mjs": "9874eacaf7a223e958ffa0a8c5dcaa39d7e0cf73df37c3819417580eb0427b68"
+  },
+  "originalRunner": {
+    "path": "scripts/run-assessment-production-post-canary-batch-09-debate-183-tiekoetter-range-recovery-19.mjs",
+    "sha256": "f2a9ccb0378b485ea0e4224d990783afd0a37e887d278bc420801c0ada31c3f4",
+    "preservationRule": "remain byte-identical; reconstruct the corrected runner in an authenticated temporary file only"
+  },
+  "correction": {
+    "failureCategory": "javascript-parse-error-in-reporting-only-object-key",
+    "from": "completeThree-sourceFourClipCohortReady: true",
+    "to": "completeThreeSourceFourClipCohortReady: true",
+    "replacementCount": 1,
+    "reconstructedRunnerSha256": "69c88e21dd7dfe0217ad2174eb593e34529591aa0bb91bd299e2ec440e249efe",
+    "originalRunnerRemainsByteIdentical": true,
+    "frozenPlanAndActivationRemainByteIdentical": true,
+    "substantiveSourceRecoveryLogicChanges": 0,
+    "temporaryRunnerRemovedAfterExecution": true
+  },
+  "executionPolicy": {
+    "mediaRangeAttemptsPreviouslyUsed": 0,
+    "correctedExecutionsMaximum": 1,
+    "mediaRangeAttemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "redirectFollowsMaximum": 0,
+    "cookiesSentMaximum": 0,
+    "accountDataUsesMaximum": 0,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/correction-1-activation.json",
+    "executionAndAnalysisPathsRemainThoseInFrozenRecoveryPlan": true
+  }
+}
