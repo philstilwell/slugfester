@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-invidious-source-recovery-13-failure-diagnosis",
+  "status": "frozen-batch-09-debate-183-high-bitrate-invidious-browser-download-timeout-diagnosed",
+  "batchNumber": 9,
+  "checkpointCommit": "23d4fb12",
+  "authenticatedRecords": {
+    "recoveryPlanSha256": "8d1bf564dec144c9f3be709f4a6439610f4416254fa6c29781bb9126cc2e19f9",
+    "executionActivationSha256": "784fd9a468aa386b63c13d1849d683d6920b43981534afc3e2df1ef999aca636"
+  },
+  "diagnosis": {
+    "failureCategory": "browser-download-event-transport-timeout",
+    "underlyingProblem": "the selected 166.382-kilobit-per-second audio-only proxy route did not emit a browser download event before the browser-control transport's fixed 120-second ceiling",
+    "sourceIdentityValidatedBeforeAttempt": true,
+    "exactFrozenFormatSelectedBeforeAttempt": true,
+    "formSubmissionClickCompleted": true,
+    "downloadEventObserved": false,
+    "localFileObserved": false,
+    "playerRemainedPausedAtZero": true,
+    "youtubeAccountOrBrowserSecretsUsed": false,
+    "protectedEvidenceChanged": false
+  },
+  "boundedRecoveryFinding": {
+    "permittedChange": "replace only the failed 166.382-kilobit-per-second audio-only selection with the page's already-observed 59.142-kilobit-per-second audio-only WebM selection and use the browser media-download transport once",
+    "minimumFormatLabel": "audio/webm @ 59.142k - audio only",
+    "minimumFormatValue": "{\"itag\":249,\"ext\":\"webm\"}",
+    "whyBounded": "the source video, clip windows, speakers, source identity, normalized output format, and every accepted judgment remain unchanged; only the transport payload size is reduced",
+    "ordinaryRetry": false,
+    "newHashLockedCorrectionRequired": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preservedControls": {
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "browserCookiesOrStorageInspected": false,
+    "youtubeAccountDataAccessed": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "nextAuthorizedAction": "prepare-validate-freeze-and-activate-one-bounded-low-bitrate-invidious-media-download-correction"
+}
