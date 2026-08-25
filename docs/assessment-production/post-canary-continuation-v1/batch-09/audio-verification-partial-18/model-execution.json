@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-partial-audio-verification-18-model-execution",
+  "status": "batch-09-two-available-audio-verification-calls-completed",
+  "batchNumber": 9,
+  "activationSha256": "0769cd01a4b9b98aeaa80b331810be0ffaab2c5f8629385a604bf7133f899759",
+  "executionPolicy": {
+    "sequential": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "requestTimeoutMs": 240000,
+    "stopAfterRequestFailure": true,
+    "stopAfterUsageDerivedCostCapReachedOrExceeded": true,
+    "audioPlaybackCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 1
+  },
+  "results": [
+    {
+      "debateNumber": "170",
+      "moveId": "pro-suffering-christian-hope-response",
+      "expectedSpeaker": "John Lennox",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T03:31:13.259Z",
+      "completedAt": "2026-08-25T03:32:25.351Z",
+      "elapsedMs": 72092,
+      "commandExitCode": 0,
+      "transcriptWritten": true,
+      "transcriptJsonValid": true,
+      "usageValid": true,
+      "transcriptSha256": "3676c39936fc6e686b16e7ec3b2e537eb50b446c316045137f73ec583e25e53e",
+      "stdoutSha256": "502e00673e8585f5fe3cf5a19223b419773e3008f8824a2aa9fe57fab6df9406",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 213.87,
+      "usage": {
+        "inputTokens": 3796,
+        "audioInputTokens": 3580,
+        "textInputTokens": 216,
+        "outputTokens": 6164,
+        "totalTokens": 9960
+      },
+      "usageDerivedEstimatedCostUsd": 0.07113,
+      "cumulativeUsageDerivedEstimatedCostUsd": 0.07113,
+      "costCapReachedOrExceededAfterCall": false
+    },
+    {
+      "debateNumber": "19",
+      "moveId": "pro-c009-phenomenal-value-reality",
+      "expectedSpeaker": "Sam Harris",
+      "status": "completed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T03:32:25.351Z",
+      "completedAt": "2026-08-25T03:32:46.471Z",
+      "elapsedMs": 21120,
+      "commandExitCode": 0,
+      "transcriptWritten": true,
+      "transcriptJsonValid": true,
+      "usageValid": true,
+      "transcriptSha256": "61a19defbba7a1c97404c4d4cff6e9dcbc6a1dc89f9e5b858e935769a80187d9",
+      "stdoutSha256": "e1cc24df25b358e9db78a81266db9350f6cc6e74cdcf5d60b7a61c7074d175db",
+      "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+      "failureMessage": null,
+      "durationSeconds": 56.159,
+      "usage": {
+        "inputTokens": 1113,
+        "audioInputTokens": 1041,
+        "textInputTokens": 72,
+        "outputTokens": 1686,
+        "totalTokens": 2799
+      },
+      "usageDerivedEstimatedCostUsd": 0.0196425,
+      "cumulativeUsageDerivedEstimatedCostUsd": 0.0907725,
+      "costCapReachedOrExceededAfterCall": false
+    }
+  ],
+  "totals": {
+    "attemptedCalls": 2,
+    "completedCalls": 2,
+    "skippedCalls": 0,
+    "retries": 0,
+    "usageDerivedEstimatedCostUsd": 0.0907725,
+    "maximumAuthorizedCostUsd": 1
+  }
+}
