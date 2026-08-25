@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-alternate-source-recovery-10-plan",
+  "status": "frozen-one-shot-batch-09-user-supplied-alternate-debate-170-source-and-three-source-recovery-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "4f22d134",
+  "userAuthorization": {
+    "instruction": "Try this Youtube link for the debate: https://www.youtube.com/watch?v=qA7qBtNMayQ. I'm also using a different YouTube account.",
+    "directIncrementalCostUsdMaximum": 0,
+    "alternateDebate170UrlAuthorizedForVerificationAndOneSourceAttempt": true,
+    "resumeUntouchedDebate19And183AfterSuccess": true,
+    "browserSessionIdentifierPersisted": false,
+    "browserSessionInspected": false,
+    "browserSessionUsedByThisPass": false,
+    "credentialsMode": "omit",
+    "retriesMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "judgmentsOrScoresChangeAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-9/failure-diagnosis.json": "43fa79eb80fb81b79e95dedb7984cddd5788b9363023929a3cd344bc221fb05d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-8/correction-plan.json": "cc1f67b7926cd5380df747a227e46293c7afa9858506948187e31c5b2d5a5326",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/qA7qBtNMayQ/manifest.json": "596219f4cadd5f338e23e94fca27200af399714e1a733949b08dd4dceb7d38ef",
+    ".assessment-cache/captions/qA7qBtNMayQ/events.json": "ba03b0c791c57963da0a9df8d682f926729252b8f098dd4ba0f613a2ce88fb6c",
+    ".assessment-cache/captions/qA7qBtNMayQ/transcript.txt": "b320bcf6b3f76da6624ca070b2f38c2f70847975b7c7e9f96d27db629d88e3cf"
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-09-alternate-source-recovery-10.mjs": "2ad5a116cd9141699791e01839b57b64463ec3026289e67f4eb6b47288728e33",
+    "scripts/test-assessment-production-post-canary-batch-09-alternate-source-recovery-10.mjs": "c5481e894a0b04ca227679ded78f48fa940a0373f2f45375db9f67b7ca4c6302",
+    "scripts/run-assessment-production-post-canary-batch-09-alternate-source-recovery-10.mjs": "af1d96395a18574eca5a85173844f8d9fe6af3929f386a2d08966fda4fa61547"
+  },
+  "alternateSourceVerification": {
+    "proposedVideoId": "qA7qBtNMayQ",
+    "proposedUrl": "https://www.youtube.com/watch?v=qA7qBtNMayQ",
+    "title": "Peter Singer vs John Lennox: Is There a God?",
+    "channel": "antipiano",
+    "durationSeconds": 6310,
+    "playabilityStatus": "OK",
+    "publicPlayerResponseSha256": "426c8e31287dab030f52094f7dd83abe3a34388f4e6ec1d6998d4f5d3bad1323",
+    "captionChain": {
+      "manifestPath": ".assessment-cache/captions/qA7qBtNMayQ/manifest.json",
+      "manifestSha256": "596219f4cadd5f338e23e94fca27200af399714e1a733949b08dd4dceb7d38ef",
+      "eventsPath": ".assessment-cache/captions/qA7qBtNMayQ/events.json",
+      "eventsSha256": "ba03b0c791c57963da0a9df8d682f926729252b8f098dd4ba0f613a2ce88fb6c",
+      "transcriptPath": ".assessment-cache/captions/qA7qBtNMayQ/transcript.txt",
+      "transcriptSha256": "b320bcf6b3f76da6624ca070b2f38c2f70847975b7c7e9f96d27db629d88e3cf"
+    },
+    "canonicalComparison": {
+      "canonicalVideoId": "HoTILnpd3q8",
+      "canonicalDurationSeconds": 6365,
+      "durationDifferenceSeconds": -55,
+      "fullClipCanonicalEvents": [
+        1654,
+        1721
+      ],
+      "fullClipAlternateEvents": [
+        1918,
+        2004
+      ],
+      "fullClipCanonicalTokens": 527,
+      "fullClipAlternateTokens": 528,
+      "fullClipLcsTokens": 503,
+      "fullClipLcsOverCanonical": 0.954459,
+      "keyPassageCanonicalEvents": [
+        1687,
+        1698
+      ],
+      "keyPassageAlternateEvents": [
+        1962,
+        1977
+      ],
+      "keyPassageCanonicalTokens": 99,
+      "keyPassageAlternateTokens": 107,
+      "keyPassageLcsTokens": 96,
+      "keyPassageLcsOverCanonical": 0.969697,
+      "sameDebateAndTargetPassageAcceptedForAudioVerificationOnly": true
+    }
+  },
+  "debate170AudioOnlyOverlay": {
+    "canonicalSourceVideoId": "HoTILnpd3q8",
+    "alternateAudioSourceVideoId": "qA7qBtNMayQ",
+    "canonicalClipWindow": {
+      "startMs": 4508900,
+      "endMs": 4722770,
+      "durationMs": 213870
+    },
+    "alternateClipWindow": {
+      "startMs": 4469720,
+      "endMs": 4682720,
+      "durationMs": 213000
+    },
+    "startAnchor": {
+      "canonicalEvent": 1654,
+      "canonicalStartMs": 4508940,
+      "alternateEvent": 1918,
+      "alternateStartMs": 4469760
+    },
+    "endAnchor": {
+      "canonicalNextEvent": 1722,
+      "canonicalNextStartMs": 4723090,
+      "alternateNextEvent": 2005,
+      "alternateNextStartMs": 4683040
+    },
+    "canonicalTranscriptPacketsChanged": false,
+    "canonicalJudgmentEvidenceChanged": false,
+    "alternateUploadUsedOnlyForSpeakerAndWordingAudioVerification": true
+  },
+  "exactCohort": {
+    "sources": [
+      {
+        "debateNumber": "170",
+        "sourceVideoId": "qA7qBtNMayQ",
+        "mode": "user-supplied-alternate-upload-audio-verification-only",
+        "maximumRequiredEndMs": 4722770,
+        "expectedDurationSeconds": 6310,
+        "manifestPath": ".assessment-cache/captions/qA7qBtNMayQ/manifest.json",
+        "manifestSha256": "596219f4cadd5f338e23e94fca27200af399714e1a733949b08dd4dceb7d38ef",
+        "payload": {
+          "context": {
+            "client": {
+              "clientName": "ANDROID",
+              "clientVersion": "20.10.38",
+              "androidSdkVersion": 30,
+              "hl": "en",
+              "gl": "US"
+            }
+          },
+          "videoId": "qA7qBtNMayQ",
+          "contentCheckOk": true,
+          "racyCheckOk": true
+        },
+        "payloadSha256": "3f5b8b6e26a3a4459db900e48917b9ea76ec1bb44e5a5b8508421de8e84bf484",
+        "finalSourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-170/audio/source.mp3",
+        "moveIds": [
+          "pro-suffering-christian-hope-response"
+        ],
+        "canonicalSourceVideoId": "HoTILnpd3q8",
+        "alternateAudioVerificationOnly": true
+      },
+      {
+        "debateNumber": "19",
+        "sourceVideoId": "_pprQXq1eCA",
+        "mode": "unattempted-original-direct-url-route",
+        "maximumRequiredEndMs": 544019,
+        "expectedDurationSeconds": 816,
+        "manifestPath": ".assessment-cache/captions/_pprQXq1eCA/manifest.json",
+        "manifestSha256": "0c258af6cdf77859d07fb1a80b25ffe491f28e707f5db780e11d0473151d2c32",
+        "payload": {
+          "context": {
+            "client": {
+              "clientName": "ANDROID",
+              "clientVersion": "20.10.38",
+              "androidSdkVersion": 30,
+              "hl": "en",
+              "gl": "US"
+            }
+          },
+          "videoId": "_pprQXq1eCA",
+          "contentCheckOk": true,
+          "racyCheckOk": true
+        },
+        "payloadSha256": "2de28c8ee0206e0f9d6add9b7525a0a55c0f7f29f58cb380c77ba375277077b5",
+        "finalSourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/audio/source.mp3",
+        "moveIds": [
+          "pro-c009-phenomenal-value-reality"
+        ]
+      },
+      {
+        "debateNumber": "183",
+        "sourceVideoId": "2WrywAaDvvw",
+        "mode": "unattempted-original-direct-url-route",
+        "maximumRequiredEndMs": 3646260,
+        "expectedDurationSeconds": 4200,
+        "manifestPath": ".assessment-cache/captions/2WrywAaDvvw/manifest.json",
+        "manifestSha256": "89e4c280748a5120d36b4e70b2ac5fcce6dc6027476462e793c774d175bcdcaf",
+        "payload": {
+          "context": {
+            "client": {
+              "clientName": "ANDROID",
+              "clientVersion": "20.10.38",
+              "androidSdkVersion": 30,
+              "hl": "en",
+              "gl": "US"
+            }
+          },
+          "videoId": "2WrywAaDvvw",
+          "contentCheckOk": true,
+          "racyCheckOk": true
+        },
+        "payloadSha256": "4e040b175dbd97e478366ba62db39135073696c7364a0e098ec641c928f735d2",
+        "finalSourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/source.mp3",
+        "moveIds": [
+          "con-informed-deliberator-method",
+          "con-foundational-anomaly-significance"
+        ]
+      }
+    ],
+    "sourceOrder": [
+      "170",
+      "19",
+      "183"
+    ],
+    "clipOrder": [
+      "170:pro-suffering-christian-hope-response",
+      "19:pro-c009-phenomenal-value-reality",
+      "183:con-informed-deliberator-method",
+      "183:con-foundational-anomaly-significance"
+    ],
+    "sourceCount": 3,
+    "clipCount": 4
+  },
+  "publicRequestRoute": {
+    "configBootstrap": {
+      "method": "GET",
+      "url": "https://www.youtube.com/watch?v=qA7qBtNMayQ",
+      "credentials": "omit",
+      "redirect": "error",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36"
+      },
+      "maximumRequests": 1
+    },
+    "playerMetadata": {
+      "method": "POST",
+      "endpointTemplate": "https://www.youtube.com/youtubei/v1/player?key=<public-api-key>",
+      "credentials": "omit",
+      "redirect": "error",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "com.google.android.youtube/20.10.38 (Linux; U; Android 11; en_US)",
+        "x-youtube-client-name": "3",
+        "x-youtube-client-version": "20.10.38",
+        "content-type": "application/json"
+      },
+      "maximumRequests": 3
+    },
+    "mediaDownload": {
+      "method": "GET",
+      "credentials": "omit",
+      "redirect": "follow",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "com.google.android.youtube/20.10.38 (Linux; U; Android 11; en_US)",
+        "x-youtube-client-name": "3",
+        "x-youtube-client-version": "20.10.38",
+        "range": "bytes=0-"
+      },
+      "maximumRequests": 3,
+      "retriesMaximum": 0
+    }
+  },
+  "deterministicFormatSelection": {
+    "eligibleMimePrefix": "audio/",
+    "directUrlRequired": true,
+    "contentLengthRequired": true,
+    "originalTrackRule": "prefer formats with audioTrack.audioIsDefault true; otherwise permit only formats without an explicit false audioIsDefault marker",
+    "qualityRankDescending": [
+      "AUDIO_QUALITY_HIGH",
+      "AUDIO_QUALITY_MEDIUM",
+      "AUDIO_QUALITY_LOW",
+      null
+    ],
+    "tieBreakers": [
+      "bitrate-descending",
+      "contentLength-descending",
+      "itag-ascending",
+      "urlSha256-ascending"
+    ],
+    "selectedFormatsPerSource": 1
+  },
+  "mediaEncoding": {
+    "ffmpegPath": "/opt/homebrew/bin/ffmpeg",
+    "ffmpegVersion": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobePath": "/opt/homebrew/bin/ffprobe",
+    "ffprobeVersion": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "clipDurationToleranceSeconds": 0.25,
+    "fullSourceDurationToleranceSeconds": 12
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "configBootstrapGetsMaximum": 1,
+    "playerMetadataPostsMaximum": 3,
+    "mediaDownloadAttemptsMaximum": 3,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "audioPlaybackCallsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/analysis.json",
+    "preparationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-preparation.json"
+  },
+  "nextActionAfterPassingCohort": "prepare-validate-freeze-and-report-batch-09-four-clip-audio-verification-manifest-and-cost-estimate"
+}
