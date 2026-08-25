@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-resumption-preparation-test-correction-1-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1",
+  "status": "frozen-one-field-preparation-test-correction-ready",
+  "frozenAt": "2026-08-25T04:55:00Z",
+  "checkpointCommit": "32c576d6bc8e7a02704662b9f586379cd6ebd20f",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/preparation-test-failure-diagnosis.json",
+    "sha256": "3e145a0c6be807df68487306407daf7be748cb9091295e35722aa8709c938120",
+    "bytes": 1878
+  },
+  "correction": {
+    "path": "scripts/test-assessment-production-post-canary-batch-09-publication-resumption-preparation.mjs",
+    "oldSha256": "a1fd30a3286ea2322d767b327669558528dd3539b8ad08bd3c23b47e42ec545e",
+    "acceptedSha256": "8fcea601e90a48c4be73c7641253e16b4a4539e817df6e9551ed3ec9c048bbb8",
+    "bytes": 8261,
+    "changedExpectation": {
+      "field": "manifest.batchNumber",
+      "before": 8,
+      "after": 9
+    }
+  },
+  "executionPolicy": {
+    "unacceptedManifestRegenerationsMaximum": 1,
+    "correctedValidationPassesMaximum": 1,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "originalPublicationPacketsUnchanged": true,
+    "originalPublicationSchemasUnchanged": true,
+    "acceptedDebate170OutputUnchanged": true,
+    "sourcesScoresIdentitiesAndModelSettingsUnchanged": true
+  }
+}
