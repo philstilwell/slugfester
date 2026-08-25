@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-local-wrapper-source-discovery-recovery-6-activation",
+  "status": "active-for-exactly-one-local-wrapper-muted-batch-09-debate-170-format-discovery",
+  "batchNumber": 9,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-6/discovery-plan.json",
+    "sha256": "7f784fec67c86d5550fa6f0570a64a4815994d3c955fd34a1dbd9ec15cebdaf4"
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-5/failure-diagnosis.json": "adcbc902683b82731cca52a75b8b732dca6e7412bb294c14ec18a22e3eaa59e9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/HoTILnpd3q8/manifest.json": "c5763d8b9672eee1f1eeef268789ef86ef0a54b2faff179b98a590a2becde517"
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-09-local-wrapper-source-discovery-recovery-6.mjs": "6b95f9974edbc5a36fbc293ca03f4642f620e6bc67a8aea500454615d658176a",
+    "scripts/test-assessment-production-post-canary-batch-09-local-wrapper-source-discovery-recovery-6.mjs": "3a39d3097b991dcf42d56bc77321e1c9b44326623ea899bdff3d1070a981df19",
+    "scripts/fixtures/batch-09-debate-170-muted-embed.html": "0e089edd540447c72d65d959422da5510074f6ae1fb88d79a8d83e0332f3eb6e"
+  },
+  "embedUrl": "https://www.youtube.com/embed/HoTILnpd3q8?autoplay=0&mute=1&playsinline=1&origin=http%3A%2F%2F127.0.0.1%3A43170",
+  "wrapper": {
+    "path": "scripts/fixtures/batch-09-debate-170-muted-embed.html",
+    "sha256": "0e089edd540447c72d65d959422da5510074f6ae1fb88d79a8d83e0332f3eb6e",
+    "url": "http://127.0.0.1:43170/scripts/fixtures/batch-09-debate-170-muted-embed.html",
+    "iframeTitle": "Debate 170 muted source",
+    "iframeAutoplayPermissionGranted": false
+  },
+  "localServer": {
+    "host": "127.0.0.1",
+    "port": 43170,
+    "workingDirectory": ".",
+    "command": [
+      "python3",
+      "-m",
+      "http.server",
+      "43170",
+      "--bind",
+      "127.0.0.1"
+    ]
+  },
+  "playerResponseReadsMaximum": 1,
+  "pageAssetInventoryCallsMaximum": 1,
+  "downloadsMaximum": 0,
+  "audioPlaybackMaximumSeconds": 0,
+  "directIncrementalCostUsdMaximum": 0
+}
