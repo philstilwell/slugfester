@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-youtube-format139-recovery-15-analysis",
+  "status": "batch-09-debate-183-youtube-format139-download-failed-preserved",
+  "batchNumber": 9,
+  "result": {
+    "directSourceAccepted": false,
+    "rawDownloadsCompleted": 0,
+    "preservedFiles": []
+  },
+  "preservedControls": {
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "browserSessionUses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "name": "Error",
+    "message": "Command failed: python3 -m yt_dlp --no-playlist --quiet --no-warnings --no-continue --retries 0 --fragment-retries 0 --extractor-retries 0 --file-access-retries 0 --socket-timeout 60 --extractor-args youtube:player_client=android_vr -f 139 -o /Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/audio-source-mirrors/youtube-direct/2WrywAaDvvw/source.%(ext)s https://www.youtube.com/watch?v=2WrywAaDvvw\nERROR: unable to download video data: HTTP Error 403: Forbidden\n",
+    "code": 1,
+    "stderr": "ERROR: unable to download video data: HTTP Error 403: Forbidden\n"
+  },
+  "nextAuthorizedAction": "stop-and-diagnose-preserved-direct-source-failure"
+}

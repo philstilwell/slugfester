@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-youtube-format139-recovery-15-failure-diagnosis",
+  "status": "frozen-batch-09-debate-183-exact-youtube-direct-source-http-403-failure-diagnosed-stop-required",
+  "batchNumber": 9,
+  "checkpointCommit": "9d925ac2",
+  "authenticatedRecords": {
+    "recoveryPlanSha256": "a9e8bfdaf18825e6c79e0e481f566d1965b3f79cd167696a2b90358cbfaef8d5",
+    "executionActivationSha256": "8106f4d471fcc5b23500e1d94b5f57642b777afeb201dae588e1e2195a2f984e"
+  },
+  "diagnosis": {
+    "failureCategory": "exact-youtube-media-cdn-http-403-forbidden",
+    "sourceVideoId": "2WrywAaDvvw",
+    "formatId": "139",
+    "extractorClient": "android_vr",
+    "metadataAndFormatDiscoverySucceededBeforeFrozenAttempt": true,
+    "mediaDownloadRequestAccepted": false,
+    "httpStatus": 403,
+    "downloadedBytesAccepted": 0,
+    "partialFilesPreserved": 0,
+    "sourceIdentityFailure": false,
+    "audioValidationFailure": false,
+    "youtubeAccountOrBrowserSecretsUsed": false,
+    "protectedEvidenceChanged": false,
+    "underlyingProblem": "YouTube exposes the exact source metadata and format catalog but rejects the credential-free format-139 media request from this environment with HTTP 403"
+  },
+  "routeHistory": {
+    "exactInternetArchiveMirrorFound": false,
+    "invidiousHighBitrateRouteFailed": true,
+    "invidiousLowBitrateCorrectionFailed": true,
+    "directYouTubeFormat139RouteFailed": true,
+    "automaticPublicSourceRoutesExhaustedForCurrentAuthorization": true
+  },
+  "stopRule": {
+    "furtherAutomaticDebate183SourceAttemptAuthorized": false,
+    "ordinaryRetryAuthorized": false,
+    "timeoutExtensionAuthorized": false,
+    "cookieOrBrowserStorageExportAuthorized": false,
+    "paidServiceAuthorized": false,
+    "newUserApprovalRequired": true
+  },
+  "safeRemediesRequiringUserDirection": [
+    {
+      "remedy": "user-provided-local-source",
+      "description": "The user supplies an exact Debate 183 audio or video file; the workflow may hash, probe, normalize, and cut the two frozen clips without playback or semantic evaluation."
+    },
+    {
+      "remedy": "one-new-public-proxy-service",
+      "description": "The user explicitly authorizes one separately frozen attempt through a newly vetted free public conversion or proxy endpoint, with no account data and no retries."
+    },
+    {
+      "remedy": "defer-debate-183-audio-verification",
+      "description": "The user authorizes the workflow to finish the independent Debate 19 source work while Debate 183 remains a preserved audio-source blocker."
+    }
+  ],
+  "preservedControls": {
+    "retries": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "browserSessionUses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "nextAuthorizedAction": "stop-and-request-user-direction-for-debate-183-source-or-explicit-debate-19-only-continuation"
+}
