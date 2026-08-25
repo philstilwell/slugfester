@@ -1,0 +1,3096 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-10-decomposed-consensus",
+  "debateNumber": "123",
+  "debateId": "oconnor-pine-divine-hiddenness-2024",
+  "moveDisputes": [
+    {
+      "moveId": "con-hiddenness-problem-of-evil",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 68
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 78,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-universal-availability-commitment",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-hiddenness-problem-of-evil"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-universal-availability-commitment-component-01",
+                  "targetMoveId": "con-hiddenness-problem-of-evil",
+                  "text": "Whether Catholic theism itself commits God to making salvation and knowledge genuinely available to all persons.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-availability-commitment-component-02",
+                  "targetMoveId": "con-hiddenness-problem-of-evil",
+                  "text": "Whether that commitment explains the experienced absence that constitutes the hiddenness objection.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-hiddenness-problem-of-evil"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-universal-availability-commitment-component-01",
+                  "targetMoveId": "con-hiddenness-problem-of-evil",
+                  "text": "Whether Catholic theism is committed to divine availability despite the alleged experiential evil of hiddenness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-availability-commitment-component-02",
+                  "targetMoveId": "con-hiddenness-problem-of-evil",
+                  "text": "Whether hiddenness actually explains why particular people remain nonbelievers.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-geography-sociological-explanation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-geography-sociological-explanation-component-01",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether asserted universal availability is borne out by the culturally patterned distribution of religious belief.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-geography-sociological-explanation-component-01",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether universal divine availability fits the observed geographic and sociological pattern of religious belief.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-geography-sociological-explanation-component-02",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether sociology explains the distribution better than proactive divine relationship-seeking does.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-gratuitous-differentiated-gifts",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-geography-sociological-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gratuitous-differentiated-gifts-component-01",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether unequal religious and natural distributions must count as injustice or evidence against providence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-gratuitous-differentiated-gifts-component-02",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether differentiated gifts explain the specific geographic tracking and failed access at issue.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-geography-sociological-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gratuitous-differentiated-gifts-component-01",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether unequal geographic and natural conditions can be consistent with a purposive divine distribution of gifts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-gratuitous-differentiated-gifts-component-02",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether differentiated supernatural goods explain the actual sociological distribution better than cultural transmission.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 66
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 66
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 65,
+          "candidate2": 62,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-involuntary-belief-eternal-stakes",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 30,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-gratuitous-differentiated-gifts",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-involuntary-belief-eternal-stakes-component-01",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether nominal universal availability is sufficient when sincere belief is cognitively involuntary and eternal consequences attach.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-involuntary-belief-eternal-stakes-component-02",
+                  "targetMoveId": "pro-gratuitous-differentiated-gifts",
+                  "text": "Whether differentiated gifts can justify unequal cognitive limitations bearing on salvation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-gratuitous-differentiated-gifts",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-involuntary-belief-eternal-stakes-component-01",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether universal availability is sufficient when sincere belief and conviction are not directly voluntary.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-involuntary-belief-eternal-stakes-component-02",
+                  "targetMoveId": "pro-gratuitous-differentiated-gifts",
+                  "text": "Whether differentiated gifts can fairly impose eternal consequences on persons with unequal cognitive access.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 90
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 88
+            },
+            "candidate2": {
+              "value": 76
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 69
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-life-spanning-revelation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-involuntary-belief-eternal-stakes"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-life-spanning-revelation-component-01",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "Whether meaningful agency remains possible despite the acknowledged involuntariness of immediate belief.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-life-spanning-revelation-component-02",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "Whether the life-spanning process guarantees fair opportunity before eternal consequences occur.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-geography-sociological-explanation",
+                "con-hiddenness-problem-of-evil",
+                "con-involuntary-belief-eternal-stakes"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-life-spanning-revelation-component-01",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "How meaningful agency can operate if assent to religious arguments is not directly chosen.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-life-spanning-revelation-component-02",
+                  "targetMoveId": "con-hiddenness-problem-of-evil",
+                  "text": "Why divine hiddenness and sadness may persist during an extended revelatory process.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-life-spanning-revelation-component-03",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "How culturally unequal revelation is accounted for within the life-spanning process.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 86
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-mortal-contingency-interrupted-journey",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-life-spanning-revelation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-mortal-contingency-interrupted-journey-component-01",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether a life-course account can secure opportunity when another person's free act ends the process prematurely.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-life-spanning-revelation",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-mortal-contingency-interrupted-journey-component-01",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether a life-spanning revelatory journey remains adequate when death can interrupt it before conversion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-mortal-contingency-interrupted-journey-component-02",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether salvation is genuinely available to someone whose road to redemption is externally cut short.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 75
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-failed-reciprocal-divine-contact",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-gratuitous-differentiated-gifts",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-failed-reciprocal-divine-contact-component-01",
+                  "targetMoveId": "pro-gratuitous-differentiated-gifts",
+                  "text": "Whether differentiated gifts explain failed reciprocal contact where both God and the sincere seeker allegedly desire relationship.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-failed-reciprocal-divine-contact-component-02",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether proclaimed universal availability matches the experience of active but unsuccessful seeking.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-gratuitous-differentiated-gifts",
+                "pro-life-spanning-revelation",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-failed-reciprocal-divine-contact-component-01",
+                  "targetMoveId": "pro-gratuitous-differentiated-gifts",
+                  "text": "Whether differentiated gifts answer the specific case of mutual desired relationship and God's power to enable conversion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-failed-reciprocal-divine-contact-component-02",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether merely asserting universal availability explains a sincere seeker's continuing inability to contact God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-failed-reciprocal-divine-contact-component-03",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether temporal formation answers a seeker already pursuing conversion to the best of his ability.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 91
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-sufficient-grace-responsible-refusal",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-failed-reciprocal-divine-contact",
+                "con-involuntary-belief-eternal-stakes"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-sufficient-grace-responsible-refusal-component-01",
+                  "targetMoveId": "con-failed-reciprocal-divine-contact",
+                  "text": "Why an actively sincere seeker remains without recognizable reciprocal contact despite divine desire and power.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-sufficient-grace-responsible-refusal-component-02",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "Whether rejection rather than involuntary nonbelief can ground responsibility for damnation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 64
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-failed-reciprocal-divine-contact",
+                "con-involuntary-belief-eternal-stakes",
+                "con-mortal-contingency-interrupted-journey"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-sufficient-grace-responsible-refusal-component-01",
+                  "targetMoveId": "con-failed-reciprocal-divine-contact",
+                  "text": "Whether God withholds what a sincere seeker needs, or instead supplies sufficient graces that can be freely rejected.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-sufficient-grace-responsible-refusal-component-02",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "How free rejection is possible when intellectual conviction is not directly voluntary.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-sufficient-grace-responsible-refusal-component-03",
+                  "targetMoveId": "con-mortal-contingency-interrupted-journey",
+                  "text": "How sufficient grace remains available when another agent abruptly ends a life.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 55,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 57
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 58,
+          "candidate2": 62,
+          "roundedMeanAfterAdjudication": 60
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-irrational-rejection-nonculpable",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-sufficient-grace-responsible-refusal"
+              ],
+              "components": [
+                {
+                  "componentId": "con-irrational-rejection-nonculpable-component-01",
+                  "targetMoveId": "pro-sufficient-grace-responsible-refusal",
+                  "text": "Whether rejection of a fully understood salvific good can be both free and sufficiently culpable.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-life-spanning-revelation",
+                "pro-sufficient-grace-responsible-refusal",
+                "pro-universal-availability-commitment"
+              ],
+              "components": [
+                {
+                  "componentId": "con-irrational-rejection-nonculpable-component-01",
+                  "targetMoveId": "pro-sufficient-grace-responsible-refusal",
+                  "text": "Whether a fully informed free agent can culpably reject salvation in a way sufficient to ground hell.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-irrational-rejection-nonculpable-component-02",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether temporal agency makes irrational or ignorant rejection culpable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-irrational-rejection-nonculpable-component-03",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether nominal availability establishes the informed apprehension needed for responsible refusal.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-finite-disclosure-preserves-refusal",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-irrational-rejection-nonculpable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-finite-disclosure-preserves-refusal-component-01",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether sufficiently compelling disclosure necessarily removes the possibility of voluntary refusal.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-disclosure-preserves-refusal-component-02",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether refusal under finite disclosure is culpable rather than ignorant or cognitively impaired.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-failed-reciprocal-divine-contact",
+                "con-involuntary-belief-eternal-stakes",
+                "con-irrational-rejection-nonculpable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-finite-disclosure-preserves-refusal-component-01",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether compelling evidence of salvation necessarily removes the possibility of voluntary refusal.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-disclosure-preserves-refusal-component-02",
+                  "targetMoveId": "con-involuntary-belief-eternal-stakes",
+                  "text": "Whether faith and evidential conviction are distinguishable noetic acts involving volition.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-disclosure-preserves-refusal-component-03",
+                  "targetMoveId": "con-failed-reciprocal-divine-contact",
+                  "text": "Why God does not provide sufficiently compelling finite disclosure to each sincere seeker.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-universal-grace-differentiated-testimony",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-failed-reciprocal-divine-contact",
+                "con-geography-sociological-explanation",
+                "con-irrational-rejection-nonculpable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-01",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether geographically unequal explicit testimony is compatible with genuinely sufficient grace for everyone.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-02",
+                  "targetMoveId": "con-failed-reciprocal-divine-contact",
+                  "text": "Whether initial natural-law grace explains persistent failed reciprocal contact.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-03",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether profiting from initial grace supplies a culpable and voluntary pathway.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-failed-reciprocal-divine-contact",
+                "con-geography-sociological-explanation",
+                "con-irrational-rejection-nonculpable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-01",
+                  "targetMoveId": "con-geography-sociological-explanation",
+                  "text": "Whether geographic differences defeat universal divine concern or reflect differentiated forms of testimony.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-02",
+                  "targetMoveId": "con-failed-reciprocal-divine-contact",
+                  "text": "Whether every sincere seeker receives grace sufficient for actual conversion and relationship.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-universal-grace-differentiated-testimony-component-03",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether failure to profit from initial grace is knowingly free and culpable.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 61,
+          "candidate2": 60,
+          "roundedMeanAfterAdjudication": 61
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-unequal-cultural-conversion-costs",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-universal-grace-differentiated-testimony"
+              ],
+              "components": [
+                {
+                  "componentId": "con-unequal-cultural-conversion-costs-component-01",
+                  "targetMoveId": "pro-universal-grace-differentiated-testimony",
+                  "text": "Whether differentiated testimony remains genuinely sufficient when cultures impose radically unequal intellectual and social conversion costs.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-gratuitous-differentiated-gifts",
+                "pro-universal-availability-commitment",
+                "pro-universal-grace-differentiated-testimony"
+              ],
+              "components": [
+                {
+                  "componentId": "con-unequal-cultural-conversion-costs-component-01",
+                  "targetMoveId": "pro-universal-grace-differentiated-testimony",
+                  "text": "Whether differentiated testimony leaves people with comparably accessible routes to divine relationship.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-unequal-cultural-conversion-costs-component-02",
+                  "targetMoveId": "pro-gratuitous-differentiated-gifts",
+                  "text": "Whether gratuitous differentiation justifies radically unequal intellectual and social conversion costs.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-unequal-cultural-conversion-costs-component-03",
+                  "targetMoveId": "pro-universal-availability-commitment",
+                  "text": "Whether equal divine concern is consistent with major cross-cultural differences in revelatory impact.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 93,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-contingent-encounter-providence-dilemma",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-life-spanning-revelation",
+                "pro-universal-grace-differentiated-testimony"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingent-encounter-providence-dilemma-component-01",
+                  "targetMoveId": "pro-universal-grace-differentiated-testimony",
+                  "text": "Whether providentially differentiated testimony can depend on contingent encounters without making salvation arbitrary or constraining freedom.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingent-encounter-providence-dilemma-component-02",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether life-course development remains fair when trivial choices redirect decisive encounters.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-life-spanning-revelation",
+                "pro-sufficient-grace-responsible-refusal",
+                "pro-universal-grace-differentiated-testimony"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingent-encounter-providence-dilemma-component-01",
+                  "targetMoveId": "pro-universal-grace-differentiated-testimony",
+                  "text": "Whether historically differentiated opportunities remain fair when conversion turns on arbitrary contingent encounters.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingent-encounter-providence-dilemma-component-02",
+                  "targetMoveId": "pro-life-spanning-revelation",
+                  "text": "Whether a temporal journey becomes salvifically arbitrary when trivial choices redirect decisive encounters.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingent-encounter-providence-dilemma-component-03",
+                  "targetMoveId": "pro-sufficient-grace-responsible-refusal",
+                  "text": "Whether a person's free refusal explains nonconversion when another person's trivial choice controls access.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 77,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-continuous-providential-opportunity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 7,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingent-encounter-providence-dilemma",
+                "con-mortal-contingency-interrupted-journey"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-01",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "Whether providence supplies adequate opportunities continuously without determining creaturely responses.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-02",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "Whether missed or obstructed opportunities remain fair for the affected seeker.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-03",
+                  "targetMoveId": "con-mortal-contingency-interrupted-journey",
+                  "text": "Whether continuous opportunity covers lives interrupted before visible conversion.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingent-encounter-providence-dilemma",
+                "con-irrational-rejection-nonculpable",
+                "con-mortal-contingency-interrupted-journey"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-01",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "Whether providence supplies more than a single arbitrary encounter while preserving obstructive human agency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-02",
+                  "targetMoveId": "con-mortal-contingency-interrupted-journey",
+                  "text": "Whether continuous opportunity remains sufficient when death ends the process.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-continuous-providential-opportunity-component-03",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether fallen obstruction constitutes culpable refusal by the individual nonbeliever.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 64
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 63
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 58,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 58
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-fall-as-loss-of-original-justice",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-contingent-encounter-providence-dilemma"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-fall-as-loss-of-original-justice-component-01",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "How loss of original justice resolves the dilemma between arbitrary encounters and providential determination.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-contingent-encounter-providence-dilemma",
+                "con-irrational-rejection-nonculpable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-fall-as-loss-of-original-justice-component-01",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "Whether original human loss explains the apparent arbitrariness of contingent salvific encounters.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-fall-as-loss-of-original-justice-component-02",
+                  "targetMoveId": "con-irrational-rejection-nonculpable",
+                  "text": "Whether the primordial rejection was sufficiently informed and culpable to ground inherited loss.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 49
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-eden-deception-culpability",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-continuous-providential-opportunity",
+                "pro-fall-as-loss-of-original-justice"
+              ],
+              "components": [
+                {
+                  "componentId": "con-eden-deception-culpability-component-01",
+                  "targetMoveId": "pro-fall-as-loss-of-original-justice",
+                  "text": "Whether the primordial rejection was knowingly and culpably chosen despite deception and undeveloped moral knowledge.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-eden-deception-culpability-component-02",
+                  "targetMoveId": "pro-continuous-providential-opportunity",
+                  "text": "Whether blaming fallen agency is justified if the originating act was itself nonculpable.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-continuous-providential-opportunity",
+                "pro-fall-as-loss-of-original-justice",
+                "pro-sufficient-grace-responsible-refusal"
+              ],
+              "components": [
+                {
+                  "componentId": "con-eden-deception-culpability-component-01",
+                  "targetMoveId": "pro-fall-as-loss-of-original-justice",
+                  "text": "Whether the first humans knowingly and culpably rejected original justice rather than acting under deception and moral ignorance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-eden-deception-culpability-component-02",
+                  "targetMoveId": "pro-continuous-providential-opportunity",
+                  "text": "Whether inherited compromised nature can be blamed on humanity when the originating act was insufficiently culpable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-eden-deception-culpability-component-03",
+                  "targetMoveId": "pro-sufficient-grace-responsible-refusal",
+                  "text": "Whether free rejection is established where knowledge and reasoning are compromised.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-solidarity-loss-and-restoration",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-eden-deception-culpability"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-solidarity-loss-and-restoration-component-01",
+                  "targetMoveId": "con-eden-deception-culpability",
+                  "text": "Whether later persons inherit a corrupt addition or instead share a nature lacking gratuitous gifts that remain recoverable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-solidarity-loss-and-restoration-component-02",
+                  "targetMoveId": "con-eden-deception-culpability",
+                  "text": "Whether Adam and Eve were culpable despite deception and moral unreadiness.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingent-encounter-providence-dilemma",
+                "con-eden-deception-culpability"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-solidarity-loss-and-restoration-component-01",
+                  "targetMoveId": "con-eden-deception-culpability",
+                  "text": "Whether inherited deprivation is arbitrary punishment or the shared loss of gratuitous gifts recoverable through salvation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-solidarity-loss-and-restoration-component-02",
+                  "targetMoveId": "con-eden-deception-culpability",
+                  "text": "Whether Adam and Eve were sufficiently informed and culpable despite deception.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-solidarity-loss-and-restoration-component-03",
+                  "targetMoveId": "con-contingent-encounter-providence-dilemma",
+                  "text": "Whether all later persons actually receive a fair opportunity to recover the lost gifts.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-superior-deceiver-defeats-solidarity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-fall-as-loss-of-original-justice",
+                "pro-solidarity-loss-and-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "con-superior-deceiver-defeats-solidarity-component-01",
+                  "targetMoveId": "pro-solidarity-loss-and-restoration",
+                  "text": "Whether identification with Adam can justify inherited deprivation if the representative act resulted from superior deception.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-superior-deceiver-defeats-solidarity-component-02",
+                  "targetMoveId": "pro-fall-as-loss-of-original-justice",
+                  "text": "Whether the original actor was morally culpable for rejecting the gratuitous gifts.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-continuous-providential-opportunity",
+                "pro-fall-as-loss-of-original-justice",
+                "pro-solidarity-loss-and-restoration"
+              ],
+              "components": [
+                {
+                  "componentId": "con-superior-deceiver-defeats-solidarity-component-01",
+                  "targetMoveId": "pro-solidarity-loss-and-restoration",
+                  "text": "Whether identification with Adam can justify inherited consequences when the originating agent was deceived by a superior intelligence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-superior-deceiver-defeats-solidarity-component-02",
+                  "targetMoveId": "pro-fall-as-loss-of-original-justice",
+                  "text": "Whether primordial rejection remained culpable despite deception.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-superior-deceiver-defeats-solidarity-component-03",
+                  "targetMoveId": "pro-continuous-providential-opportunity",
+                  "text": "Whether later restoration repairs the initial absence of justified culpability.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 83,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-suffering-enlarges-receptivity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "nonanswer",
+              "decisiveTargetIds": [
+                "con-superior-deceiver-defeats-solidarity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-suffering-enlarges-receptivity-component-01",
+                  "targetMoveId": "con-superior-deceiver-defeats-solidarity",
+                  "text": "Whether canonical formation through suffering answers the superior-deception defeater of primordial and inherited culpability.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 30
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-eden-deception-culpability",
+                "con-superior-deceiver-defeats-solidarity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-suffering-enlarges-receptivity-component-01",
+                  "targetMoveId": "con-superior-deceiver-defeats-solidarity",
+                  "text": "Whether canonical formation through questioning answers the culpability and inherited-deprivation problem created by superior deception.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-suffering-enlarges-receptivity-component-02",
+                  "targetMoveId": "con-eden-deception-culpability",
+                  "text": "Whether later revelatory formation establishes the first humans' culpability at the fall.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 43
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 61,
+          "candidate2": 63,
+          "roundedMeanAfterAdjudication": 62
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-hiddenness-problem-of-evil",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 80,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-hiddenness-problem-of-evil",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 68
+    },
+    {
+      "moveId": "con-hiddenness-problem-of-evil",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-hiddenness-problem-of-evil",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-universal-availability-commitment",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-geography-sociological-explanation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-gratuitous-differentiated-gifts",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-gratuitous-differentiated-gifts",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 65,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-gratuitous-differentiated-gifts",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-life-spanning-revelation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-life-spanning-revelation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "con-mortal-contingency-interrupted-journey",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-mortal-contingency-interrupted-journey",
+      "fieldKey": "representationalCharity",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-failed-reciprocal-divine-contact",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-failed-reciprocal-divine-contact",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-failed-reciprocal-divine-contact",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-sufficient-grace-responsible-refusal",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 68,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-sufficient-grace-responsible-refusal",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 55,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 57
+    },
+    {
+      "moveId": "pro-sufficient-grace-responsible-refusal",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-sufficient-grace-responsible-refusal",
+      "fieldKey": "representationalCharity",
+      "candidate1": 58,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "con-irrational-rejection-nonculpable",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-irrational-rejection-nonculpable",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-finite-disclosure-preserves-refusal",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-finite-disclosure-preserves-refusal",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-universal-grace-differentiated-testimony",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-universal-grace-differentiated-testimony",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 61,
+      "candidate2": 60,
+      "roundedMeanAfterAdjudication": 61
+    },
+    {
+      "moveId": "con-unequal-cultural-conversion-costs",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-unequal-cultural-conversion-costs",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 93,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-contingent-encounter-providence-dilemma",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-contingent-encounter-providence-dilemma",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 77,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-contingent-encounter-providence-dilemma",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-continuous-providential-opportunity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-continuous-providential-opportunity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 58,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "pro-continuous-providential-opportunity",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-fall-as-loss-of-original-justice",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-fall-as-loss-of-original-justice",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "con-eden-deception-culpability",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-eden-deception-culpability",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-eden-deception-culpability",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-solidarity-loss-and-restoration",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "pro-solidarity-loss-and-restoration",
+      "fieldKey": "representationalCharity",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "con-superior-deceiver-defeats-solidarity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-superior-deceiver-defeats-solidarity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 83,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-superior-deceiver-defeats-solidarity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "pro-suffering-enlarges-receptivity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-suffering-enlarges-receptivity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 61,
+      "candidate2": 63,
+      "roundedMeanAfterAdjudication": 62
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response-component judgments"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response-component judgments"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [
+    "con-involuntary-belief-eternal-stakes",
+    "pro-continuous-providential-opportunity",
+    "pro-suffering-enlarges-receptivity"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "123",
+      "moves": 20,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 20,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch10IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
