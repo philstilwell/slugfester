@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-recovery-3-equivalent-source-discovery",
+  "status": "completed-batch-10-equivalent-source-discovery-range-verified-original-source-fallback-required",
+  "batchNumber": 10,
+  "checkpointCommit": "d208755eac5ba91c7aff3d0d9b5cd58f4853d975",
+  "userAuthorization": {
+    "instruction": "I authorize one additional Batch 10 audio-source recovery limited to verified equivalent-source discovery and, if necessary, one range-verified public-source download per remaining video, at $0 direct incremental cost, with no playback, semantic audio evaluation, or automatic retries. The existing sequential transcription estimate of $0.1308768 and $1.00 maximum remain authorized.",
+    "equivalentSourceDiscoveryAuthorized": true,
+    "rangeVerifiedDownloadsAuthorized": 3,
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "automaticRetriesAuthorized": false,
+    "sequentialTranscriptionEstimateUsd": 0.1308768,
+    "sequentialTranscriptionMaximumUsd": 1
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-items.json": "a67d390d26c378af9819481c8572774cc01c62a8b6c369b3b937d7dd994f232f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/correction-plan.json": "d69c31eac8cb4d78dbf40bdfd0ee2beb6f2210a9b51ea18f260d371e45d94889",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/execution-activation.json": "adaccfd37443d6fc71a4cef4a6a642890b99393d56c66dce6919ff3fecff6b0d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-direct-format18-recovery-2/execution.json": "a4905a5e7307db560538bf897f9686bdfd5ca03f014fe4aaa80e8ecb3c825c30",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.failed-attempt-1.mp3": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8",
+    ".assessment-cache/captions/h-I_9e5qxnc/manifest.json": "3e50150a9d84a2a4b29eddadb40cfcb3ed4ce7bf5e018a44bab6fed4ba109b7b",
+    ".assessment-cache/captions/0IpKHdVLZb4/manifest.json": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699"
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-source-recovery-3-discovery.mjs": "e3721750e60ac3a0755d0f682483416e922a6e08cfa7b08e9c76cbc9457eba74",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-recovery-3-discovery.mjs": "92b05db706feb587575242a9eef7a4e681a6181b946e44e9620773326895ce1d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "canonicalSources": [
+    {
+      "path": ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json",
+      "sha256": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8",
+      "videoId": "8k9A7d2Wnjk",
+      "title": "The Divine Hiddenness Problem: Why Can't We Find God? Alex O'Connor vs Fr. Gregory Pine",
+      "channel": "Mass of the Ages",
+      "sourceUrl": "https://www.youtube.com/watch?v=8k9A7d2Wnjk"
+    },
+    {
+      "path": ".assessment-cache/captions/h-I_9e5qxnc/manifest.json",
+      "sha256": "3e50150a9d84a2a4b29eddadb40cfcb3ed4ce7bf5e018a44bab6fed4ba109b7b",
+      "videoId": "h-I_9e5qxnc",
+      "title": "Daniel Dennett vs Philip Clayton - philosophy, science, and religion",
+      "channel": "ObjectiveBob",
+      "sourceUrl": "https://www.youtube.com/watch?v=h-I_9e5qxnc"
+    },
+    {
+      "path": ".assessment-cache/captions/0IpKHdVLZb4/manifest.json",
+      "sha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699",
+      "videoId": "0IpKHdVLZb4",
+      "title": "DEBATE: Richard Carrier vs. Mike Licona (2010)",
+      "channel": "Mike Licona",
+      "sourceUrl": "https://www.youtube.com/watch?v=0IpKHdVLZb4"
+    }
+  ],
+  "equivalentSourceCandidates": [
+    {
+      "debateNumber": "123",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "url": "https://pickscribe.com/v/8k9A7d2Wnjk",
+      "identityEvidence": [
+        "matching-video-id",
+        "matching-participants",
+        "matching-transcript"
+      ],
+      "disposition": "rejected-transcript-only-no-independent-media"
+    },
+    {
+      "debateNumber": "147",
+      "sourceVideoId": "h-I_9e5qxnc",
+      "url": "https://www.philipclayton.net/videos",
+      "identityEvidence": [
+        "participant-official-site",
+        "matching-title"
+      ],
+      "disposition": "rejected-embeds-original-youtube-source-no-independent-media"
+    },
+    {
+      "debateNumber": "130",
+      "sourceVideoId": "0IpKHdVLZb4",
+      "url": "https://apologetics315.com/2010/06/michael-licona-vs-richard-carrier-debate-did-jesus-rise-from-the-dead-mp3-audio/",
+      "linkedMediaUrl": "https://www.brianauten.com/Apologetics/debate2-licona-carrier.mp3",
+      "identityEvidence": [
+        "matching-participants",
+        "matching-2010-Washburn-event",
+        "matching-topic",
+        "approximately-matching-duration"
+      ],
+      "observedLinkedMediaResponse": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 1005
+      },
+      "disposition": "rejected-linked-media-is-html-not-audio"
+    }
+  ],
+  "originalSourceFallbacks": [
+    {
+      "debateNumber": "123",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 37050541,
+      "declaredDurationSeconds": 6076,
+      "maximumRequiredEndMs": 6063219
+    },
+    {
+      "debateNumber": "147",
+      "sourceVideoId": "h-I_9e5qxnc",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 24192081,
+      "declaredDurationSeconds": 3967,
+      "maximumRequiredEndMs": 3924700
+    },
+    {
+      "debateNumber": "130",
+      "sourceVideoId": "0IpKHdVLZb4",
+      "formatId": "139",
+      "extension": "m4a",
+      "protocol": "https",
+      "audioCodec": "mp4a.40.5",
+      "declaredBytes": 54678961,
+      "declaredDurationSeconds": 8967,
+      "maximumRequiredEndMs": 4048590
+    }
+  ],
+  "diagnosis": {
+    "failedFormatId": "18",
+    "debate123FailedFormat18UrlDeclaredBytes": 2731072,
+    "debate123Format18EstimatedBytes": 139726597,
+    "mismatchProvesMalformedCombinedTransport": true,
+    "selectedFallbackFormatId": "139",
+    "selectedFallbackReasons": [
+      "audio-only-file-preserves-original-youtube-timebase",
+      "declared-byte-length-is-internally-consistent",
+      "duration-covers-every-required-clip",
+      "avoids-malformed-combined-format-18"
+    ]
+  },
+  "discoveryAudit": {
+    "webSearchQueries": 12,
+    "webPagesOpened": 4,
+    "candidateLinkHeadProbes": 1,
+    "candidateLinkGetProbes": 1,
+    "youtubeMetadataQueries": 6,
+    "publicMediaDownloads": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "freezeRangeVerifiedRecoveryPlan": true,
+    "activateOrExecuteRecovery": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoring": false,
+    "publication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-validate-freeze-commit-and-push-one-shot-batch-10-three-source-format-139-range-verified-recovery-plan"
+}
