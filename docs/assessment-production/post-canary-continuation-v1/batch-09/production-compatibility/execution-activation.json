@@ -1,0 +1,318 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-09-production-compatibility",
+  "status": "post-canary-batch-09-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-25T14:41:57Z",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 9 standing authorization covers activation and exactly one deterministic compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 9 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 10 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/preparation-manifest.json",
+    "sha256": "22d30cbdf54d841d56a7ed69047d17dc67af99775c78a371de545a8552678a3b"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/analysis.json",
+    "sha256": "3602b4b2bcf976242a478dcfc3062da4ac21ee28d775dc809d2d0a130a96599c",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-09-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-09-production-compatibility",
+      "status": "post-canary-batch-09-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 9,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/preparation-manifest.json",
+        "sha256": "22d30cbdf54d841d56a7ed69047d17dc67af99775c78a371de545a8552678a3b"
+      },
+      "finding": {
+        "id": "batch-09-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "batch02RoutePreservationSpecified": true,
+        "batch03RoutePreservationSpecified": true,
+        "batch04RoutePreservationSpecified": true,
+        "batch05RoutePreservationSpecified": true,
+        "batch06RoutePreservationSpecified": true,
+        "batch07RoutePreservationSpecified": true,
+        "batch08RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 51,
+        "moves": 180,
+        "oneSidedDisplayRows": 10,
+        "overallBlunders": 60,
+        "emptyReferenceLinks": 57,
+        "suppliedReferenceLinks": 3,
+        "proposedAdapterBytes": 1085402,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "batch02RouteRegressionBlocks": true,
+        "batch03RouteRegressionBlocks": true,
+        "batch04RouteRegressionBlocks": true,
+        "batch05RouteRegressionBlocks": true,
+        "batch06RouteRegressionBlocks": true,
+        "batch07RouteRegressionBlocks": true,
+        "batch08RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "activate-and-execute-one-batch-09-production-compatibility-pass-under-standing-authorization"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "e73d3a16aa62bb8b3918dbe992a363d029631da8fc54d045f558b7ed60488c85",
+    "proposedSha256": "2f44df8badd0b89b47aefef198e1149fc1e6c8b9febac71b47f31e320a8b3262",
+    "proposedBytes": 52397,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-09-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-09-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-170.json",
+      "sha256": "16aadd948d10a25f98a8f1b29eb34d157d0274160fedc835206dc85cf36d0dcc",
+      "proposedAdapterSha256": "10d4079bb14d66b461883547be4150e2f513abcbfb9f17eb70afe9c201cccb1a",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/singer-lennox-is-there-god-2011.json",
+      "stagedLedgerSha256": "10d4079bb14d66b461883547be4150e2f513abcbfb9f17eb70afe9c201cccb1a",
+      "stagedLedgerBytes": 119306,
+      "productionLedgerPath": "docs/assessment-ledgers/singer-lennox-is-there-god-2011.json"
+    },
+    {
+      "debateNumber": "134",
+      "debateId": "macdonald-carrier-jesus-mythicism-mimesis-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-134.json",
+      "sha256": "d26c7dcad084c576000b25f12a4f3eb544badee800d88ed1179bb4811b4bbb5b",
+      "proposedAdapterSha256": "cdbcf6d7b666aada4fbc95066a2874e1dd86731107721e6140dc3f43f51b4b30",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/macdonald-carrier-jesus-mythicism-mimesis-2025.json",
+      "stagedLedgerSha256": "cdbcf6d7b666aada4fbc95066a2874e1dd86731107721e6140dc3f43f51b4b30",
+      "stagedLedgerBytes": 118579,
+      "productionLedgerPath": "docs/assessment-ledgers/macdonald-carrier-jesus-mythicism-mimesis-2025.json"
+    },
+    {
+      "debateNumber": "19",
+      "debateId": "harris-oconnor-objective-morality-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-19.json",
+      "sha256": "ea7478d2a5e0da575a0d36a31d502322a7acf1c3397a99b0ede91f54627743c9",
+      "proposedAdapterSha256": "82e9c067d8fa13c987817fd546e7432eecc1668978945848b78671827ec98047",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/harris-oconnor-objective-morality-2024.json",
+      "stagedLedgerSha256": "82e9c067d8fa13c987817fd546e7432eecc1668978945848b78671827ec98047",
+      "stagedLedgerBytes": 70103,
+      "productionLedgerPath": "docs/assessment-ledgers/harris-oconnor-objective-morality-2024.json"
+    },
+    {
+      "debateNumber": "114",
+      "debateId": "dirckx-goff-consciousness-points-god-2019",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-114.json",
+      "sha256": "071ed9298286eeda897bbd24a17cea8591b440c391ac2fb2e1b2056891aa5f58",
+      "proposedAdapterSha256": "c0d3e9a8ae394fee8f0757b70f38cfc3887c4be0ce2b127aaff8058f5092c04a",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/dirckx-goff-consciousness-points-god-2019.json",
+      "stagedLedgerSha256": "c0d3e9a8ae394fee8f0757b70f38cfc3887c4be0ce2b127aaff8058f5092c04a",
+      "stagedLedgerBytes": 111980,
+      "productionLedgerPath": "docs/assessment-ledgers/dirckx-goff-consciousness-points-god-2019.json"
+    },
+    {
+      "debateNumber": "166",
+      "debateId": "craig-atkins-does-god-exist-2011",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-166.json",
+      "sha256": "5929f3b3106b250ee1879bcedd91492931809888282d5a59fe270acc4853e6b6",
+      "proposedAdapterSha256": "3922723d41de4d176c502df5aaeba86247d21c2262f0c2ba56a2dd78dce3e4bf",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/craig-atkins-does-god-exist-2011.json",
+      "stagedLedgerSha256": "3922723d41de4d176c502df5aaeba86247d21c2262f0c2ba56a2dd78dce3e4bf",
+      "stagedLedgerBytes": 96850,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-atkins-does-god-exist-2011.json"
+    },
+    {
+      "debateNumber": "89",
+      "debateId": "bignon-oppy-religious-experience-god-2022",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-89.json",
+      "sha256": "65ec598b8974a95697c914220972d754f2f878ee2e094f1ad477c601a35a27ed",
+      "proposedAdapterSha256": "4f548f36b9714cf72c193518cc7040e25f5e6edc307eb6c8241038159a4b2656",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/bignon-oppy-religious-experience-god-2022.json",
+      "stagedLedgerSha256": "4f548f36b9714cf72c193518cc7040e25f5e6edc307eb6c8241038159a4b2656",
+      "stagedLedgerBytes": 103491,
+      "productionLedgerPath": "docs/assessment-ledgers/bignon-oppy-religious-experience-god-2022.json"
+    },
+    {
+      "debateNumber": "176",
+      "debateId": "ehrman-peter-williams-gospels-historically-reliable-2018",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-176.json",
+      "sha256": "6333b951b1f6afba28f1dfde2a3e59d8afc0982f7b11f777cd9c69e016ce4892",
+      "proposedAdapterSha256": "b6a61a5373cd341cbcf5204ff727c57d2a72ab5d4487716dd853153835e3cd2d",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/ehrman-peter-williams-gospels-historically-reliable-2018.json",
+      "stagedLedgerSha256": "b6a61a5373cd341cbcf5204ff727c57d2a72ab5d4487716dd853153835e3cd2d",
+      "stagedLedgerBytes": 116025,
+      "productionLedgerPath": "docs/assessment-ledgers/ehrman-peter-williams-gospels-historically-reliable-2018.json"
+    },
+    {
+      "debateNumber": "183",
+      "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-183.json",
+      "sha256": "82304a8cfdd973e8c5f849ac52c11628685966e72ad3ec0b01be41ff8c23bc1d",
+      "proposedAdapterSha256": "9d5815f510b57976dc1b7a207662e7e256d97c42e7c2c9ec1a3d16a41b427c21",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/enoch-clarke-doane-moral-realism-objectivity-2026.json",
+      "stagedLedgerSha256": "9d5815f510b57976dc1b7a207662e7e256d97c42e7c2c9ec1a3d16a41b427c21",
+      "stagedLedgerBytes": 112331,
+      "productionLedgerPath": "docs/assessment-ledgers/enoch-clarke-doane-moral-realism-objectivity-2026.json"
+    },
+    {
+      "debateNumber": "112",
+      "debateId": "copan-woodford-belief-god-reasonable-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-112.json",
+      "sha256": "4fe862f96585387d862f736cceed39ef080a449039405d25f1040a99521f1f36",
+      "proposedAdapterSha256": "d09b4199af6376d13b34df8f2c60a7ed671ae35d883b578239644a02fa40d252",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/copan-woodford-belief-god-reasonable-2024.json",
+      "stagedLedgerSha256": "d09b4199af6376d13b34df8f2c60a7ed671ae35d883b578239644a02fa40d252",
+      "stagedLedgerBytes": 121951,
+      "productionLedgerPath": "docs/assessment-ledgers/copan-woodford-belief-god-reasonable-2024.json"
+    },
+    {
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/packets/debate-17.json",
+      "sha256": "c933bb317f18789b6420d496b7b5c865fe605303413ab0288d58fdfd8d08375f",
+      "proposedAdapterSha256": "5ec95dc52465072af7e0ebc317273689e04b26bda7abc2c161629096bed72d58",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/output-bundle/staged-ledgers/collins-oconnor-god-existence-2024.json",
+      "stagedLedgerSha256": "5ec95dc52465072af7e0ebc317273689e04b26bda7abc2c161629096bed72d58",
+      "stagedLedgerBytes": 114786,
+      "productionLedgerPath": "docs/assessment-ledgers/collins-oconnor-god-existence-2024.json"
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-09-compatibility.mjs": "fdbb5e4174fcb678b1cd14cee78c4e28584dd76ccc9e9089d31a3bbbac6830b9",
+    "scripts/lib/assessment-production-post-canary-batch-09-compatibility-execution.mjs": "3cf02665f32ad7e3190f1620ac05fba8f22b1b40ffa45ee4c7bba85795499ebe",
+    "scripts/activate-assessment-production-post-canary-batch-09-compatibility.mjs": "1c80579fd9ed8b65b7d816d15f88ebeeb9a7519106915326dfb929542a7f1860",
+    "scripts/test-assessment-production-post-canary-batch-09-compatibility-activation.mjs": "a347fb94fe6d23204686bb2d592a6aed37e194838f9802600c17dddff4d43fcb",
+    "scripts/run-assessment-production-post-canary-batch-09-compatibility.mjs": "367cf2ea04e5faddf675be4825e67d640b07aebef66f4b48006e55337add9a39",
+    "scripts/test-assessment-production-post-canary-batch-09-compatibility-execution.mjs": "2a43a67dfc43a293fb5ad9523636fa160054e0d3c08ac30a2093f3764d80a6bf"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "375bbb2ea491b6ddad2ad2ce65d4e27ac13ca3d40267c4de48203f750eb59879"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 91,
+      "digest": "84e3b3fb3eb43d79f6e08f3b8467e34184c0fdc14f75dddef3e35126c82d587c"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 9 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "Batch 2 route and score replay",
+    "Batch 3 route and score replay",
+    "Batch 4 route and score replay",
+    "Batch 5 route and score replay",
+    "Batch 6 route and score replay",
+    "Batch 7 route and score replay",
+    "Batch 8 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-09-production-compatibility-staging-pass-no-reruns"
+}
