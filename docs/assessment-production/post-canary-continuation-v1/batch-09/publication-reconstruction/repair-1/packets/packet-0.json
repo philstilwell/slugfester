@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-170.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-reliable-reason-theistic-ground.critique",
+      "moveProse.pro-divine-ground-morality-equality.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-reliable-reason-theistic-ground.critique",
+      "moveId": "pro-reliable-reason-theistic-ground",
+      "originalCritique": "Strongest feature: The argument identifies a genuinely important epistemic question about whether evolutionary origins furnish trustworthy cognitive capacities, and it places that issue directly within the theistic explanation of an intelligible world. Principal limitation: It moves from possible divergence between fitness and truth to an expansive claim of inevitable global unreliability, without specifying which naturalistic model generates that defeater or confronting truth-sensitive evolutionary mechanisms. Live burden: The reasoning must establish that adaptive success probably fails to correlate sufficiently with accurate representation, while also explaining why divine creation independently predicts reliable cognition rather than simply assuming the reliability it seeks to ground. Locked score: The mixed band records high central relevance and a recoverable structure, but also materially excessive necessity language, limited evidence, insufficient qualification, and weak engagement with the strongest naturalistic reply.",
+      "originalWords": 132,
+      "originalCharacters": 1043,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-reliable-reason-theistic-ground",
+        "sectionId": "section-science-origins-reason",
+        "side": "pro",
+        "speaker": "John Lennox",
+        "moveKind": "constructive",
+        "proposition": "Unguided naturalism undermines confidence in human reason, whereas creation by an intelligent God explains why minds can reliably comprehend reality.",
+        "importance": 3,
+        "finalScore": 72,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "9:08",
+        "sourceSpan": {
+          "startEvent": 175,
+          "endEvent": 282,
+          "startMs": 548010,
+          "endMs": 828600
+        },
+        "sourceExcerpt": "unguided natural processes then they have given a strong reason to doubt the reliability of human cognitive faculties and therefore inevitably to doubt the validity of any belief that they produce including their atheism their biology and their belief in naturalism would therefore appear to be at war with each other in a conflict that is nothing at all to do with God that is atheism by its reductionism undermines",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 416
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-intelligible-creation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move directly develops the central claim that theism explains reliable cognition while unguided naturalism allegedly undercuts it.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The argument is readily recoverable, but its reference to naturalism and cognitive reliability ranges broadly without specifying which evolutionary accounts trigger the defeater."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that naturalism inevitably undermines all produced beliefs is stronger than the supplied argument, which does not establish global unreliability."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolution may favor generally reliable cognition because accurate representation often improves successful action.",
+          "decisiveQualification": "Fitness and truth can diverge, but divergence does not itself show that global cognitive reliability is unlikely."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (65 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Reliable rational cognition is an indispensable part of the central intelligible-creation bridge, and the move contacts that requirement directly."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The move presses the fitness-versus-truth concern but does not fairly engage the strongest correlation-based naturalistic answer."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly argues that unguided origins give reason to doubt cognitive reliability and therefore naturalism itself, calling reductionist atheism self-undermining.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-divine-ground-morality-equality.critique",
+      "moveId": "pro-divine-ground-morality-equality",
+      "originalCritique": "Strongest feature: The move squarely addresses the central foundation of objective value and equal human standing, offering divine image-bearing as a unified metaphysical explanation rather than treating moral commitments as accidental preferences. Principal limitation: It shifts among morality, equality, freedom, and political atrocity without adequately distinguishing their respective inferences, while the historical illustration cannot establish that rejecting God necessarily destroys value or liberty. Live burden: The argument must explain how divine creation generates binding moral reasons and equal status, then compare that mechanism with secular moral realism instead of treating mindless biological origins as the only available alternative. Locked score: The mixed band reflects unmistakable motion relevance and an intelligible positive proposal, constrained by underdeveloped warrant, unstable conceptual transitions, overstated necessity, and limited charity toward an explicitly available secular grounding account.",
+      "originalWords": 131,
+      "originalCharacters": 1036,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-divine-ground-morality-equality",
+        "sectionId": "section-morality-worth-purpose",
+        "side": "pro",
+        "speaker": "John Lennox",
+        "moveKind": "constructive",
+        "proposition": "Objective moral value and human equality are more coherently grounded in creation in God's image than in unguided naturalism.",
+        "importance": 3,
+        "finalScore": 70,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "13:46",
+        "sourceSpan": {
+          "startEvent": 283,
+          "endEvent": 364,
+          "startMs": 826520,
+          "endMs": 1054230
+        },
+        "sourceExcerpt": "in what she is made in God's image my Russian friends how often have they said to me we thought we could abolish God and retain a value for human beings we couldn't we abolish God would we destroyed millions of human beings I would suggest if you do a wave of God you ultimately do away with human freedom because you are left with a mindless unguided process that somehow through",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-objective-value-purpose"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move advances the central divine-grounding case for equal human value, freedom, and objective moral status.",
+          "responsivenessWithinClass": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Human value, equality, freedom, and objective morality are related but distinct concepts, and the move shifts among them without sufficient qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The assertion that removing God ultimately removes freedom or human value exceeds what the historical illustration and mindless-process contrast establish."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular moral realism can ground equal worth through impartial reasons rather than divine creation.",
+          "decisiveQualification": "Such a view still owes an account of normativity, but its existence blocks the claimed direct entailment from atheism to lost value."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (61 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (55 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly addresses the indispensable central bridge concerning objective morality, equal worth, freedom, and purpose."
+          },
+          "representationalCharity": {
+            "value": 55,
+            "rationale": "The move presents unguided process as the practical alternative but does not address a live secular realist grounding account."
+          }
+        },
+        "evidenceBasis": "The excerpt grounds value in God's image, invokes Russian testimony about abolishing God, and claims unguided process ultimately threatens value and freedom.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

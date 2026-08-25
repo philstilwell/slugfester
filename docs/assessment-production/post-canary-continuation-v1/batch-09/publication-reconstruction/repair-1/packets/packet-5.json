@@ -1,0 +1,274 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "packetIndex": 5,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-170.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-divine-solidarity-eternal-compensation.critique",
+      "moveProse.con-objective-secular-morality.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-divine-solidarity-eternal-compensation.critique",
+      "moveId": "pro-divine-solidarity-eternal-compensation",
+      "originalCritique": "Strongest feature: The response offers a coherent three-part account of Christian hope through divine solidarity, personal restoration, and eternal life, directly addressing whether severe loss must remain the final condition of its victims. Principal limitation: Compensation is insufficiently differentiated from consolation, restoration, outweighing, or justification, and the scriptural illustration does not establish either the metaphysical reality of an afterlife or the moral permissibility of the original suffering. Live burden: The defense must explain why an eventual good could justify divine permission rather than merely improve a victim's later condition, especially for prehuman animals and apparently avoidable natural agony. Locked score: The mixed band records meaningful engagement with compensation and abandonment, alongside considerable relevance and coherent Christian hope, but also overconfident warrant, ambiguous terminology, incomplete response to permission, and dependence on contested scriptural premises.",
+      "originalWords": 133,
+      "originalCharacters": 1038,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-divine-solidarity-eternal-compensation",
+        "sectionId": "section-suffering-hope-justice",
+        "side": "pro",
+        "speaker": "John Lennox",
+        "moveKind": "reply",
+        "proposition": "Christian hope can transcend suffering because God can compensate victims after death, Christ entered suffering, and eternal life without pain is better than extinction.",
+        "importance": 3,
+        "finalScore": 74,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "83:00",
+        "sourceSpan": {
+          "startEvent": 1820,
+          "endEvent": 1870,
+          "startMs": 4980960,
+          "endMs": 5140340
+        },
+        "sourceExcerpt": "Christ talked about what happened to him after death he clearly been a friendless man and yet we are told that in that eternal world which is of course part and parcel of the hope of Christians and I unashamedly believe in it that man found himself in the company of Abraham who is one of the few people described in Scripture as the friend of God and it seems to me that that little cameo shows us that God can compensate",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 422
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-suffering-hope"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-secular-response-to-suffering",
+            "con-natural-suffering-against-god"
+          ],
+          "components": [
+            {
+              "componentId": "pro-divine-solidarity-eternal-compensation-component-01",
+              "targetMoveId": "con-secular-response-to-suffering",
+              "text": "Whether God can meaningfully compensate a person after severe undeserved suffering and death.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-divine-solidarity-eternal-compensation-component-02",
+              "targetMoveId": "con-secular-response-to-suffering",
+              "text": "Whether divine entry into suffering provides solidarity rather than an explanation of permission.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-divine-solidarity-eternal-compensation-component-03",
+              "targetMoveId": "con-secular-response-to-suffering",
+              "text": "Whether eternal painless life is better for the victim than extinction.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-divine-solidarity-eternal-compensation-component-04",
+              "targetMoveId": "con-natural-suffering-against-god",
+              "text": "Why God permitted the original natural and animal suffering.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly defends the coherence of compensation, solidarity, and an eternal good, but still does not explain why the original suffering was permitted.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "This partial answer contacts the decisive compensation challenge while leaving the deeper divine-permission component of the suffering problem unanswered."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This partial answer contacts the decisive compensation challenge while leaving the deeper divine-permission component of the suffering problem unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The three-part hope claim is recoverable, though compensate can mean consolation, restoration, outweighing, or justification, and these are not fully separated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move confidently asserts that God can compensate through eternal life, but the scriptural cameo does not establish the metaphysical or moral conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A later benefit may improve a victim's total life while still failing to justify permitting avoidable extreme suffering.",
+          "decisiveQualification": "Compensation and solidarity therefore answer loss and abandonment more directly than they answer divine permission or justification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central suffering-hope bridge through divine solidarity, compensation, justice, and eternal restoration."
+          },
+          "representationalCharity": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Lennox appeals to Christ's account of a friendless man received with Abraham, asserts divine compensation, and contrasts eternal painless life with extinction.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-objective-secular-morality.critique",
+      "moveId": "con-objective-secular-morality",
+      "originalCritique": "Strongest feature: The move directly answers the claimed necessity of divine grounding by presenting rational impartiality as a secular source of objective reasons and illustrating it with an intuitively powerful asymmetry between amusement and suffering. Principal limitation: Citing an extensive philosophical defense and supplying one example demonstrate serious possibility more readily than they establish a complete metaethical ontology or a comprehensive account of equal human and nonhuman moral status. Live burden: The position must clarify what makes impartial reasons objectively authoritative, how agents gain epistemic access to them, and why those explanations need no further divine foundation. Locked score: The very strong band reflects precise limited force, direct responsiveness, coherent reasoning, representative theoretical support, and charitable acknowledgment of the remaining ontological dispute, with only bounded incompleteness concerning the full metaphysical basis and extension of secular moral equality.",
+      "originalWords": 137,
+      "originalCharacters": 1037,
+      "excessWordsAboveAcceptanceMaximum": 7,
+      "lockedMove": {
+        "moveId": "con-objective-secular-morality",
+        "sectionId": "section-morality-worth-purpose",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Objective moral truths can be grounded in rational impartiality without God, including the judgment that trivial amusement cannot justify imposing substantially greater suffering on another being.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "89:46",
+        "sourceSpan": {
+          "startEvent": 1979,
+          "endEvent": 2016,
+          "startMs": 5386920,
+          "endMs": 5483410
+        },
+        "sourceExcerpt": "moral philosophy to be published for a long time it's a two-volume total of 1,400 pages arguing for the idea of rationally based objective truths and morality and Partha is an atheist it makes no reference to God in this discussion I think it's perfectly possible to say that there are some things that is rational to do that for example causing suffering to others for know let's say for simply for amusement",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 409
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-secular-reason-morality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-divine-ground-morality-equality"
+          ],
+          "components": [
+            {
+              "componentId": "con-objective-secular-morality-component-01",
+              "targetMoveId": "pro-divine-ground-morality-equality",
+              "text": "Whether objective moral truths require grounding in God rather than secular rationality.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Singer directly rejects the alleged dependence on God, cites an extensive atheist defense of objective morality, and supplies an impartial suffering-based example.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "Within full answers, it expressly contacts the divine-dependence premise and presents a secular grounding candidate, though equal status is less developed."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it expressly contacts the divine-dependence premise and presents a secular grounding candidate, though equal status is less developed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Objective truth, rational basis, impartiality, trivial amusement, and substantially greater suffering form a stable and recoverable proposition."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move needs only to establish that secular objective morality is possible, and the cited theory plus example appropriately support that limited force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may claim that rational moral truths still require an ontological divine ground for their authority.",
+          "decisiveQualification": "Showing rational objectivity without reference to God rebuts necessity, even if ultimate metaethical ontology remains disputed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly advances the central secular-reason-and-morality bridge by supplying an objective nondivine moral framework."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Singer cites a 1,400-page atheist defense of rational objective morality and illustrates impartial reasons through the wrongness of causing suffering merely for amusement.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

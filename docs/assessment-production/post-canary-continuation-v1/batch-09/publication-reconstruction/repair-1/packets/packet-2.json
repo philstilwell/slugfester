@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-170.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-faith-needs-evidence.critique",
+      "moveProse.con-cultural-contingency-of-belief.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-faith-needs-evidence.critique",
+      "moveId": "con-faith-needs-evidence",
+      "originalCritique": "Strongest feature: The move articulates a defensible evidentialist standard and vividly illustrates why confidence detached from responsible inquiry can carry serious consequences, making its general epistemic concern relevant to religious commitment. Principal limitation: It defines faith categorically as evidenceless belief, thereby excluding the live Christian understanding of faith as evidence-responsive trust, and it does not examine the actual resurrection evidence offered by its opponent. Live burden: The criticism must distinguish unsupported commitment from allegedly insufficiently supported commitment and then show why the Gospel and resurrection claims fail appropriate historical standards rather than winning through definition. Locked score: The mixed band captures a coherent evidential principle and meaningful practical illustration, but also a materially unstable key term, overstated generalization, limited representational charity, and failure to contact the decisive historical component of the targeted case.",
+      "originalWords": 133,
+      "originalCharacters": 1039,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-faith-needs-evidence",
+        "sectionId": "section-epistemic-explanatory-burden",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Faith cannot replace rational argument or good evidence, and confidence that overrides responsible empirical inquiry can produce serious practical harm.",
+        "importance": 2,
+        "finalScore": 65,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "30:29",
+        "sourceSpan": {
+          "startEvent": 639,
+          "endEvent": 696,
+          "startMs": 1829720,
+          "endMs": 1992260
+        },
+        "sourceExcerpt": "matters is faith but what is faith faith is really just believing in something for which you have neither rational arguments nor good evidence I know that John is a mathematician by training so I'm sure he's familiar with the 19th century mathematician and philosopher William Clifford who wrote a very nice essay about faith using as an analogy a ship owner who was about to send",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-faith-evidence"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-resurrection-biblical-god-bridge"
+          ],
+          "components": [
+            {
+              "componentId": "con-faith-needs-evidence-component-01",
+              "targetMoveId": "pro-resurrection-biblical-god-bridge",
+              "text": "Whether the claimed resurrection has sufficient historical evidence to identify Jesus with the biblical God.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Singer raises the relevant demand that belief require evidence and illustrates dangers of unsupported confidence, but does not assess the resurrection evidence in this selected span.",
+          "responsivenessWithinClass": {
+            "value": 62,
+            "rationale": "Within relevant nonanswers, it strongly bears on evidential standards but leaves the target's decisive historical claim and evidence unexamined."
+          },
+          "responsiveness": {
+            "value": 58,
+            "rationale": "Within relevant nonanswers, it strongly bears on evidential standards but leaves the target's decisive historical claim and evidence unexamined."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "materially-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Faith is defined as belief lacking argument or evidence, although evidence-responsive religious commitment is a live usage that the definition excludes."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical definition of faith and generalized practical warning exceed what the analogy can establish about Christian belief in particular."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Christian faith may mean trust or commitment grounded in evidence rather than belief without evidence.",
+          "decisiveQualification": "Calling a commitment faith does not itself show that its underlying historical evidence is adequate."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The evidentialist principle and harm example cohere, but the stipulated definition of faith risks begging the question against evidence-based commitment."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "The move directly attacks the subsidiary faith-evidence bridge by requiring rational argument and evidence rather than unsupported commitment."
+          },
+          "representationalCharity": {
+            "value": 48,
+            "rationale": "The move materially weakens the live Christian conception by defining faith as evidenceless instead of testing the claimed evidence."
+          }
+        },
+        "evidenceBasis": "Singer defines faith as belief without rational argument or good evidence and invokes Clifford's negligent shipowner analogy to connect irresponsible belief with harm.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-cultural-contingency-of-belief.critique",
+      "moveId": "con-cultural-contingency-of-belief",
+      "originalCritique": "Strongest feature: The move uses cultural variation as a proportionate defeater-demand rather than a genetic disproof, accurately recognizing that inherited belief may remain true while requiring genuinely independent evidential support. Principal limitation: Cultural contingency establishes a need for scrutiny but does not determine whether the particular resurrection, scriptural, or experiential evidence actually satisfies that requirement, leaving the central Christian historical claim substantially unevaluated. Live burden: The argument must specify suitable independence criteria and apply them to the offered evidence while avoiding any inference that culturally transmitted beliefs are false merely because their distribution is socially patterned. Locked score: The strong/competent band reflects careful calibration, stable scope, substantial epistemic relevance, and unusually charitable accommodation of the obvious reply, tempered by limited responsiveness to the decisive evidence and an incomplete transition from sociological pattern to case-specific judgment.",
+      "originalWords": 135,
+      "originalCharacters": 1081,
+      "excessWordsAboveAcceptanceMaximum": 5,
+      "lockedMove": {
+        "moveId": "con-cultural-contingency-of-belief",
+        "sectionId": "section-epistemic-explanatory-burden",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Because religious affiliation strongly tracks upbringing and surrounding culture, inherited belief in the biblical God requires independent evidence capable of overcoming that contingency.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "33:18",
+        "sourceSpan": {
+          "startEvent": 700,
+          "endEvent": 733,
+          "startMs": 1998950,
+          "endMs": 2091320
+        },
+        "sourceExcerpt": "against belief in the God of the Bible the first argument is that although we may live in a society in which most religious believers are Christians or since we're talking about the God of the Bible let's group together Christians and those of the Jewish faith most religious believers come from from here come from one of those two religions and if we want to broaden this to the",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-cultural-epistemology"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-resurrection-biblical-god-bridge"
+          ],
+          "components": [
+            {
+              "componentId": "con-cultural-contingency-of-belief-component-01",
+              "targetMoveId": "pro-resurrection-biblical-god-bridge",
+              "text": "Whether resurrection evidence independently supports the specifically Christian identification of God.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Cultural variation gives a relevant defeater-demand for independent evidence, but the move does not examine whether the resurrection evidence meets that demand.",
+          "responsivenessWithinClass": {
+            "value": 64,
+            "rationale": "Within relevant nonanswers, it raises a substantial epistemic concern while leaving the decisive historical evidence untouched."
+          },
+          "responsiveness": {
+            "value": 59,
+            "rationale": "Within relevant nonanswers, it raises a substantial epistemic concern while leaving the decisive historical evidence untouched."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is recoverable as a defeater requiring independent evidence, rather than as a direct proof that culturally transmitted beliefs are false."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Cultural contingency is used as a reason to demand independent support, not as a categorical disproof of Christianity."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A culturally inherited belief can still be true and rationally sustained by independent evidence.",
+          "decisiveQualification": "The move expressly demands such independent evidence rather than inferring falsity solely from cultural transmission."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The move directly supports the subsidiary cultural-epistemology bridge by explaining why inherited biblical belief needs independent evidential support."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The strongest response is accurately accommodated because cultural contingency is used as an epistemic burden, not a genetic refutation."
+          }
+        },
+        "evidenceBasis": "Singer contrasts locally common Jewish and Christian belief with different religious affiliations elsewhere and uses that variation to motivate an independent-evidence requirement.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-170.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-first-cause-parity.critique",
+      "moveProse.con-evolution-explains-design.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-first-cause-parity.critique",
+      "moveId": "con-first-cause-parity",
+      "originalCritique": "Strongest feature: The reply sharply distinguishes a cosmological beginning from creation out of nothing and exposes the need for a principled explanation if God, but not reality itself, is exempted from ordinary causal demands. Principal limitation: It challenges causal asymmetry more fully than the distinct fine-tuning consideration, and it does not settle whether a necessary creator and an uncreated physical universe possess relevantly comparable explanatory properties. Live burden: The secular case must develop the parity beyond logical possibility by explaining which natural cosmological model is credible and why the proposed necessary-being distinction either fails or adds no explanatory advantage. Locked score: The very strong band reflects precise scope, appropriately modest possibility language, direct contact with an important creator inference, and charitable recognition of the strongest theistic distinction, with only bounded incompleteness concerning fine-tuning and positive cosmology.",
+      "originalWords": 136,
+      "originalCharacters": 1013,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "con-first-cause-parity",
+        "sectionId": "section-science-origins-reason",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Science does not establish creation from nothing, and exempting God from the demand for a cause permits the same possibility for an eternal or uncreated universe.",
+        "importance": 2,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "23:46",
+        "sourceSpan": {
+          "startEvent": 493,
+          "endEvent": 559,
+          "startMs": 1426720,
+          "endMs": 1620459
+        },
+        "sourceExcerpt": "of having been designed by a God let me briefly look at these the first cause argument is sometimes today resurrected as something that is compatible with science because people sometimes say haven't we learned through science that the universe began with a big bang that it began around thirteen billion years ago John I think said that it was created from nothing or he quoted a",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-natural-explanation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-science-fine-tuning-creation"
+          ],
+          "components": [
+            {
+              "componentId": "con-first-cause-parity-component-01",
+              "targetMoveId": "pro-science-fine-tuning-creation",
+              "text": "Whether scientific cosmology warrants inferring a created universe and a rational divine creator.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Singer contacts the creator inference by disputing creation from nothing and arguing that exemption from causal demand can equally be extended to an uncreated universe.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "Within full answers, it directly contests the causal asymmetry underlying a creator inference, though it does not separately answer fine-tuning."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it directly contests the causal asymmetry underlying a creator inference, though it does not separately answer fine-tuning."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between a scientific beginning, creation from nothing, and causal exemption is recoverable and appropriately bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The parity argument is framed as a permitted possibility rather than proof that the universe is eternal or uncreated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may treat God as metaphysically necessary rather than arbitrarily exempting one ordinary entity from causation.",
+          "decisiveQualification": "That reply requires an independently defended necessary-being distinction, which the targeted opening move does not supply."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The parity objection is coherent: if causal explanation is not universal, further argument is needed to privilege an uncaused God over uncaused reality."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "The move centrally supports the natural-explanation route by attacking a creator inference, though it does not directly resolve fine-tuning."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Singer distinguishes the Big Bang from creation out of nothing and argues that allowing an uncaused God opens corresponding logical space for an uncreated universe.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-evolution-explains-design.critique",
+      "moveId": "con-evolution-explains-design",
+      "originalCritique": "Strongest feature: The move supplies a specific, extensively evidenced mechanism for biological complexity, supports it with fossil and genetic considerations, and directly explains why apparent organic design need not independently indicate divine craftsmanship. Principal limitation: Its successful biological explanation does not itself address cosmic fine-tuning, the origin of natural laws, or the compatible possibility that a deity works through evolutionary processes, so its reach must remain carefully delimited. Live burden: The argument must preserve the distinction between defeating a biological design inference and disproving theism, while clarifying why mere compatibility with divine guidance supplies no additional predictive or explanatory evidence. Locked score: The very strong band reflects excellent empirical warrant, precise biological scope, powerful responsiveness, stable terminology, and fair treatment of compatibility, with only the necessary limitation that adjacent cosmological design questions remain outside this move.",
+      "originalWords": 136,
+      "originalCharacters": 1055,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "con-evolution-explains-design",
+        "sectionId": "section-science-origins-reason",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Evolution by natural selection, supported by fossils and shared genetic ancestry, explains apparent biological design without requiring a divine designer.",
+        "importance": 3,
+        "finalScore": 91,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "28:18",
+        "sourceSpan": {
+          "startEvent": 589,
+          "endEvent": 638,
+          "startMs": 1698020,
+          "endMs": 1831220
+        },
+        "sourceExcerpt": "biological relationship with very simple organisms including bacteria with whom we share some genes and then progressively we share more genes with beings more like us until we get up to the great apes to pansies with whom we share something like 98% of our genes so I think evolution is one of the most stirred firmly established scientific theories with a huge amount of evidence for it and we don't therefore need the argument from design",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 77,
+          "characterCount": 441
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-natural-explanation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-science-fine-tuning-creation"
+          ],
+          "components": [
+            {
+              "componentId": "con-evolution-explains-design-component-01",
+              "targetMoveId": "pro-science-fine-tuning-creation",
+              "text": "Whether apparent design in nature requires or significantly supports a divine designer.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move directly supplies natural selection, fossils, and shared genetic ancestry as a natural explanation of biological apparent design without God.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "Within full answers, it directly answers a design demand with a specific mechanism and evidence, though the target also concerns cosmic fine-tuning."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it directly answers a design demand with a specific mechanism and evidence, though the target also concerns cosmic fine-tuning."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is explicitly limited to biological apparent design and identifies evolution, fossils, genetics, and shared ancestry as its basis."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Strong confidence in evolution and its relevance to biological design fits the representative fossil and genetic considerations invoked."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolutionary processes could be the means of divine creation rather than evidence against every form of theism.",
+          "decisiveQualification": "Compatibility with divine guidance does not restore biological apparent design as an independent evidential need for a designer."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly advances the central natural-explanation bridge by explaining biological apparent design without an additional designer inference."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The move appropriately defeats the biological necessity claim without requiring evolution to disprove every compatible theistic view."
+          }
+        },
+        "evidenceBasis": "The excerpt cites gene sharing across organisms, very high genetic similarity with great apes, and the extensive evidential establishment of evolutionary theory.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

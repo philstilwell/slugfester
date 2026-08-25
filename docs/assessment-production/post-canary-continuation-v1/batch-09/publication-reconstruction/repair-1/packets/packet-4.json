@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "packetIndex": 4,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "170",
+  "debateId": "singer-lennox-is-there-god-2011",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/packets/debate-170.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-suffering-christian-hope-response.critique",
+      "moveProse.con-secular-response-to-suffering.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-suffering-christian-hope-response.critique",
+      "moveId": "pro-suffering-christian-hope-response",
+      "originalCritique": "Strongest feature: The move distinguishes moral from natural evil and presents Christian hope through Jesus as an existentially meaningful response, while modestly describing that response as a beginning rather than a completed theodicy. Principal limitation: Consolation and eschatological hope do not yet explain why an omnipotent, knowledgeable, good God permits severe natural and animal suffering, and the mechanism connecting Jesus to that permission question remains unspecified. Live burden: The response must show how divine solidarity, restoration, or broader goods address justification as well as endurance, while acknowledging that secular people can retain practical and interpersonal hope. Locked score: The mixed band reflects relevant distinctions, measured asserted force, and a meaningful Christian contribution, but also partial recoverability, incomplete explanation, limited responsiveness to the decisive compatibility challenge, and an overbroad contrast with allegedly hopeless atheism.",
+      "originalWords": 133,
+      "originalCharacters": 1011,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-suffering-christian-hope-response",
+        "sectionId": "section-suffering-hope-justice",
+        "side": "pro",
+        "speaker": "John Lennox",
+        "moveKind": "reply",
+        "proposition": "Atheism does not eliminate moral or natural suffering but removes hope, while the Christian claim that Jesus is God begins a response to both forms of evil.",
+        "importance": 3,
+        "finalScore": 69,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "75:11",
+        "sourceSpan": {
+          "startEvent": 1655,
+          "endEvent": 1719,
+          "startMs": 4511400,
+          "endMs": 4720270
+        },
+        "sourceExcerpt": "they say in Ireland about what God might could etc have done or not have done but the fact is we're faced with a world with two ruined cathedrals there's one in Coventry that was ruined by moral evil if you accept that for a moment by bombing there's one in Christchurch that was ruined by a natural disaster those to my mind are symbols of our problem and my response is this yes",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": true,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-suffering-hope"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-natural-suffering-against-god"
+          ],
+          "components": [
+            {
+              "componentId": "pro-suffering-christian-hope-response-component-01",
+              "targetMoveId": "con-natural-suffering-against-god",
+              "text": "Why an omniscient, omnipotent, wholly good God permits extensive undeserved natural and animal suffering.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-suffering-christian-hope-response-component-02",
+              "targetMoveId": "con-natural-suffering-against-god",
+              "text": "Whether Christianity offers hope in the presence of moral and natural evil.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The response distinguishes moral and natural evil and introduces Christian hope through Jesus, but it does not explain why the asserted God permits undeserved suffering.",
+          "responsivenessWithinClass": {
+            "value": 66,
+            "rationale": "This relevant nonanswer addresses consolation and identifies both kinds of evil, but leaves the decisive compatibility and permission demand uncontacted."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "This relevant nonanswer addresses consolation and identifies both kinds of evil, but leaves the decisive compatibility and permission demand uncontacted."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "partial",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The hope claim is recoverable, but saying Jesus begins an answer does not specify the mechanism or scope of the proposed theodicy."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Calling the Christ claim the beginning of a response appropriately limits the asserted force given the unresolved permission question."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular people can retain practical, interpersonal, and future-directed hope without believing suffering has an eternal resolution.",
+          "decisiveQualification": "Such finite hope may not promise ultimate compensation, but it is still hope and cannot simply be treated as absent."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "The contrast between extinction and Christian hope is intelligible, but it does not inferentially resolve the compatibility challenge that prompted the response."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The two-cathedral illustration distinguishes moral and natural disaster but provides little warrant for hope or reconciliation with divine attributes."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 54,
+            "rationale": "The assertion that atheism removes hope materially weakens the strongest secular alternative by conflating ultimate redemption with all hope."
+          }
+        },
+        "evidenceBasis": "Lennox contrasts Coventry's destruction by bombing with Christchurch's natural disaster and begins a Christian response centered on Jesus and hope.",
+        "assessmentConfidence": "medium"
+      }
+    },
+    {
+      "field": "moveProse.con-secular-response-to-suffering.critique",
+      "moveId": "con-secular-response-to-suffering",
+      "originalCritique": "Strongest feature: The reply answers every presented component by affirming practical secular hope, questioning whether divine participation explains permission, and showing why later reward need not erase or justify an earlier experience of extreme agony. Principal limitation: Its challenge leaves conceptual room for restoration to transform a person's total life without literally canceling past suffering, and it does not fully distinguish compensation, consolation, defeat of evil, and moral justification. Live burden: The secular case must explain why even transformative restoration would fail to justify avoidable suffering while preserving the difference between rejecting a theodicy and denying every relational benefit of divine solidarity. Locked score: The very strong band reflects exceptional responsiveness, precise distinctions, proportionate calibration, vivid testing cases, and charitable recognition of the strongest afterlife reply, with only limited unresolved conceptual questions about transformation and compensation.",
+      "originalWords": 136,
+      "originalCharacters": 1045,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "con-secular-response-to-suffering",
+        "sectionId": "section-suffering-hope-justice",
+        "side": "con",
+        "speaker": "Peter Singer",
+        "moveKind": "reply",
+        "proposition": "Secular action can reduce suffering and sustain hope, while divine participation, afterlife reward, and eventual compensation do not adequately explain or erase severe human and nonhuman agony.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "79:43",
+        "sourceSpan": {
+          "startEvent": 1742,
+          "endEvent": 1819,
+          "startMs": 4783750,
+          "endMs": 4990010
+        },
+        "sourceExcerpt": "is hope that the world will improve and I certainly have that hope what I don't have I guess is the idea that God is as you said a god of absolute justice and fairness who will somehow compensate for this suffering I don't even really understand how you could make sense of that I mean if suppose that you reward somebody who died a slow and agonizing death from either from human",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-suffering-incompatibility"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-suffering-christian-hope-response"
+          ],
+          "components": [
+            {
+              "componentId": "con-secular-response-to-suffering-component-01",
+              "targetMoveId": "pro-suffering-christian-hope-response",
+              "text": "Whether atheism removes hope and leaves no meaningful response to suffering.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-secular-response-to-suffering-component-02",
+              "targetMoveId": "pro-suffering-christian-hope-response",
+              "text": "Whether divine participation explains why severe suffering occurs.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-secular-response-to-suffering-component-03",
+              "targetMoveId": "pro-suffering-christian-hope-response",
+              "text": "Whether later reward or compensation can erase or justify earlier agony.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply supplies secular action and hope, then directly challenges both divine participation and compensation as answers to the existence and severity of suffering.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "This full answer explicitly contacts each decisive hope, explanation, and compensation component presented by the preceding Christian response."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "This full answer explicitly contacts each decisive hope, explanation, and compensation component presented by the preceding Christian response."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Practical hope, divine solidarity, afterlife compensation, explanation, and erasure are kept distinct and the conclusions remain appropriately bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Singer argues that these responses are inadequate and difficult to understand, not that compensation is formally impossible under every conception."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Afterlife compensation may transform a whole life without literally erasing its suffering, and divine solidarity may provide relational consolation.",
+          "decisiveQualification": "Transformation and consolation still do not explain permission or show that imposing the original agony was justified."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly advances the central suffering-incompatibility bridge by challenging both explanation and proposed Christian remedy."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Singer affirms practical secular hope and action, then uses cases of prolonged torture and agonizing death to question whether later reward can make adequate sense of compensation.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
