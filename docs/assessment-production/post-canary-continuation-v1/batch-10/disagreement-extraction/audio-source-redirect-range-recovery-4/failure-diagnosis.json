@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-redirect-range-recovery-4-failure-diagnosis",
+  "status": "preserved-batch-10-redirect-range-recovery-4-two-redirect-stop-diagnosed",
+  "batchNumber": 10,
+  "checkpointCommit": "b57b8c5bc6ef31196732394bd00960db834a7937",
+  "authenticatedArtifacts": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-redirect-range-recovery-4/correction-plan.json": "b69d57403c10e0735bafe85f7a0d2cb7180742fa00411a5cdf9876a8d1a60cf6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-redirect-range-recovery-4/execution-activation.json": "aadc991ec0367af5a4423bccc0cd9f0527a561bb9d670e3320b2202c4e572a02",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-redirect-range-recovery-4/execution.json": "7d93a67dec971522cf6127462e0660566b5b4d7ada204bb139cb6af04eb4a68b"
+  },
+  "preservedLocalEvidence": {
+    "headersPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.part-000.headers.txt",
+    "headersBytes": 3019,
+    "headersSha256": "3eb3e91af07676fb84cb63c8784d177f9b09d1f0a719af91fab18fa1c9f0a7b3",
+    "partPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.part-000.m4a",
+    "partExists": false,
+    "assembledSourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.m4a",
+    "assembledSourceBytes": 0,
+    "assembledSourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "observedResponseChain": {
+    "statuses": [302, 302],
+    "redirectCountObserved": 2,
+    "locationHostClasses": ["googlevideo.com", "googlevideo.com"],
+    "finalMediaResponseObserved": false,
+    "mediaBytesReceived": 0
+  },
+  "diagnosis": {
+    "category": "source-route-requires-more-than-one-googlevideo-redirect",
+    "rootCause": "The fresh format-139 URL was already on a Google Video host. Curl followed the one authorized redirect, received a second Google Video redirect, and stopped before any media response because the frozen maximum was one.",
+    "sourceIntegrityConclusion": "No audio payload was reached, so the preserved evidence does not show a corrupt source.",
+    "runnerPolicyConclusion": "A one-redirect maximum is insufficient for the currently observed Google Video routing chain.",
+    "failedPartialOutputReusable": false
+  },
+  "executionAudit": {
+    "logicalDownloadsAttempted": 1,
+    "rangeRequestsAttempted": 1,
+    "redirectsAuthorizedPerRange": 1,
+    "redirectsObserved": 2,
+    "mediaBytesReceived": 0,
+    "remainingDebatesAttempted": 0,
+    "repeatedByteRanges": 0,
+    "automaticRetries": 0,
+    "reruns": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "diagnosisComplete": true,
+    "furtherMediaRequests": false,
+    "correctionPreparation": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoring": false,
+    "publication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "requiredNextAuthorization": "Permit a newly frozen one-shot transport correction to follow only HTTPS googlevideo.com redirects until the final HTTP 206 response, with a maximum of three redirects per non-overlapping planned byte range, zero retries, and the existing cost controls."
+}

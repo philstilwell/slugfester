@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-redirect-range-recovery-4-execution",
+  "status": "failed-one-shot-batch-10-audio-source-redirect-range-recovery-4-stop-required",
+  "batchNumber": 10,
+  "planSha256": "b69d57403c10e0735bafe85f7a0d2cb7180742fa00411a5cdf9876a8d1a60cf6",
+  "activationSha256": "aadc991ec0367af5a4423bccc0cd9f0527a561bb9d670e3320b2202c4e572a02",
+  "state": {
+    "attempts": 1,
+    "directUrlResolutionCliInvocations": 1,
+    "rangeHttpGetInvocations": 1,
+    "redirectsFollowed": 0,
+    "repeatedByteRanges": 0,
+    "publicSourceDownloads": 1,
+    "localNormalizations": 0,
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "clipsCreated": 0,
+    "completeCohortValidated": false,
+    "failedPartialOutputsReused": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "source-or-validation-failure-during-authorized-redirect-range-recovery-4",
+    "message": "Command failed: /usr/bin/curl --fail-with-body --silent --show-error --retry 0 --location --max-redirs 1 --proto =https --proto-redir =https --max-time 180 --range 0-8388607 --dump-header /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.part-000.headers.txt --output /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.part-000.m4a https://rr3---sn-xqbxa5c-cvny.googlevideo.com/videoplayback?expire=1787713441&ei=QQOOav69C77gkucPhqiswAc&ip=50.241.65.134&id=o-ADQDA-WZTsY4ItaOfH8X_lolyso4qpo5iDjTEgrLMIW-&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1787691841%2C&mh=Cw&mm=31%2C29&mn=sn-xqbxa5c-cvny%2Csn-ajab55-55&ms=au%2Crdu&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3098750&bui=AR3QkAnuSivd8aOLoHFhTG5uwNg3fFlJdiyS4KHHZX_nvqU565KVKiArJMaUqsCpJdKfNwly3BYFRJPH&spc=KBGBciSDLAbPSuEaJ4ogajiRm6JUbSKHvcNu5D2grA&vprv=1&svpuc=1&xtags=acont%3Doriginal%3Alang%3Den-US&mime=audio%2Fmp4&rqh=1&gir=yes&clen=37050541&dur=6075.965&lmt=1783624576168131&mt=1787691491&fvip=1&keepalive=yes&fexp=51565116%2C52135440&c=ANDROID_VR&txp=5502234&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cxtags%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRAIgfP_QeTC4aKGsG_-SIyosUUUIyIP8CEnRkknt8eE0M78CIGnL_iB1tJIRCwGtRUITv-n43peFDBYo3sB62RjBT1K3&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAPrK3DtcfWpvwC9ph0GJ013J53xsB9lY3NlrQ97zP3jvAiA8sfxvluztxr0E0rU1o7aBVWkQEpWCQMuekQkzeeJ-IQ%3D%3D\ncurl: (47) Maximum (1) redirects followed\n",
+    "stopRequired": true,
+    "furtherOrdinaryAttemptsAuthorized": false
+  },
+  "protectedEvidencePreserved": true,
+  "directIncrementalCostUsd": 0
+}
