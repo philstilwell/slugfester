@@ -1,0 +1,372 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-candidate-census-plan-analysis",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "status": "post-canary-batch-10-candidate-census-plan-gate-passed-standing-authorization-active-for-side-packet-preparation",
+  "productionContinuation": true,
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "originalActivation": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-execution-activation.json",
+  "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-model-execution.json",
+  "recoveryActivation": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/execution-activation.json",
+  "recoveryExecution": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/model-execution.json",
+  "recoveryAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/analysis.json",
+  "plans": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-21.json",
+      "outputSha256": "40417b0c20df9d8e55dc71a2e0c2dc4b4af8a56db4a2b941c849c80ffc06f021",
+      "canonicalSha256": "397ecf1bfa35ae054904d8dc1295e408d1a2ced14fcf5cef1ba157162b82c3a2",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "god-evidence-and-natural-explanation",
+        "freedom-materialism-and-agency",
+        "moral-grounding-and-ethical-reasoning",
+        "meaning-sanctity-and-consolation",
+        "religious-tradition-authority-and-harm"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-74.json",
+      "outputSha256": "cae04993d7d28bf2d3fc9cc0a6fc889e63bd9fbc10100060f543e19052661954",
+      "canonicalSha256": "1cfa82818addd3cc234e8cfa5fb4d9302dc753deb7ff5b476045120f9232b552",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "grim-reaper-inference",
+        "modal-recombination",
+        "comparative-likelihoods",
+        "skeptical-theism",
+        "theodicy-and-distribution"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "107",
+      "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-107.json",
+      "outputSha256": "cb0c7b9aa5ae1e90cdad2f35764c2505caf48a5f581a078ea6588c2dd3ae190e",
+      "canonicalSha256": "96398f88ca1bd26cd1a53a60082937fdf4eb905524f6165eb286322531303c75",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "science-mathematics-and-divine-order",
+        "faith-evidence-and-natural-theology",
+        "miracles-history-and-gospel-meaning",
+        "evil-freedom-and-divine-goodness",
+        "science-metaphysics-and-explanatory-limits"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "142",
+      "debateId": "comfort-dillahunty-gospel-atonement-2020",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-142.json",
+      "outputSha256": "5fc2f3927cef1a6f35c7c4d72f30bd6a265f764af006ad014c5636d6fbc29080",
+      "canonicalSha256": "20ce24539d798aa3e120185b6a59045545359c5957c482b5f255cee198c5d4c0",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-moral-law-sin-accountability",
+        "section-judgment-suffering-divine-goodness",
+        "section-substitutionary-atonement",
+        "section-salvation-conditions-efficacy",
+        "section-evidence-revelation-trust"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-123.json",
+      "outputSha256": "bf708b5175ebdd0d5aeb2ef75c885fe235547a9521230edcf14eb252795e0f3d",
+      "canonicalSha256": "1069ab6959c3e3b1ae1c10c2fe2a1fea1c54644b20884434b073fd53232f91b8",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-hiddenness-sincere-seeking",
+        "section-geography-unequal-access",
+        "section-grace-freedom-hell",
+        "section-providence-contingency-suffering",
+        "section-original-sin-solidarity"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "177",
+      "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-177.json",
+      "outputSha256": "e3a9b13243a1fee1d0248809257b6d2f19ba1e51ab6b813e4de8467b719baa09",
+      "canonicalSha256": "a57f1faa04913d8671965f6578d35e98aae4e299a3cb5484e20ac7df9695d285",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 6,
+      "sectionIds": [
+        "standard-of-confidence",
+        "early-transmission-gap",
+        "reconstruction-method",
+        "witness-abundance",
+        "variant-scale",
+        "consequential-variants"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "bounded-first-recovery-two-field-disjoint-shards",
+      "validated": true
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "68",
+      "debateId": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-68.json",
+      "outputSha256": "a481d3013c2f1378b34a3bb2d4196412004afae63d2ee12b2d172408885542bc",
+      "canonicalSha256": "d9be10d2db3b7be890b3437d9b942477084d9341b509afa2eee417bf2089ffc8",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-public-evidence-and-inference",
+        "section-ontology-information-and-substrate",
+        "section-observers-and-preconscious-development",
+        "section-unobserved-reality-and-interaction",
+        "section-falsifiability-and-parsimony"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-147.json",
+      "outputSha256": "dd01a1136793f1ea107a107a1c4b03ed5c3157f97ba7b1c18aae63684daf7301",
+      "canonicalSha256": "d32c6692ef64532518c094c8bd49638a1a6d99f28ab3e8f83429ef58d83699af",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-explanatory-levels",
+        "section-conscious-personhood",
+        "section-morality-religious-practice",
+        "section-content-epistemic-accountability",
+        "section-ultimate-reality"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "61",
+      "debateId": "scrivener-oconnor-morality-bible-slavery-2026",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-61.json",
+      "outputSha256": "1b8cde3775267bed6544c17fe00fe82f4fae51b3e30168ff0e3ea790c13f2210",
+      "canonicalSha256": "ba8cc85eaf39271fb81b25577ca36b07b5d0cf3a06fa813ceac2b2ac24126002",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-causal-method",
+        "section-compassion-institutions",
+        "section-rights-equality-freedom",
+        "section-gender-consent",
+        "section-slavery-abolition"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-130.json",
+      "outputSha256": "69647501b02cea411845b54141e50174a68293fc49e54f9f36e75b6c0c3e871d",
+      "canonicalSha256": "00401c89d3f91a129c53c397f53dba4994f2d6a4cf77ebde5295da3a21a0adfa",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "historical-method-and-prior-probability",
+        "pauline-testimony-and-bodily-resurrection",
+        "visionary-and-psychological-explanations",
+        "empty-grave-investigation-and-sincerity",
+        "gospel-historical-usability"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    }
+  ],
+  "audit": {
+    "exactPlanCount": 10,
+    "everyAcceptedContextOrShardSingleAttempt": true,
+    "everyPlanSchemaAndSemanticValidationPassed": true,
+    "everyPlanCanonicalHashReplayed": true,
+    "everyPlanHasOneRoutePerSide": true,
+    "everyPlanHasFourToSixSections": true,
+    "everyPlanWeightsTotalOneHundred": true,
+    "boundedFirstRecoveryUsed": true,
+    "recoveredDebate": "177",
+    "minimumFieldDisjointShardCount": 2,
+    "originalFailedPartialOutputReused": false,
+    "nineOriginalAcceptedPlansByteIdentical": true,
+    "sourceRowsInjectedOmittedOrRewritten": false,
+    "candidateSelectionPerformed": false,
+    "exactSidePacketsFrozen": 0,
+    "sideSelectorModelsExecuted": 0,
+    "judgmentModelsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "publicationReconstructionPerformed": false,
+    "productionMutations": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/preparation-manifest.json": "dd818283179bf64adad45a30ea0891dd65f9f772d69fc1deeb72d622a45eca8f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-execution-preparation-manifest.json": "e45f679eb0e9d18ecf83fa8f1d8a44bb45c14a1b8f6dd9c24475cea0036153ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-execution-activation.json": "4f2f791c32aad8ca7ef791e3fec32ba2601772c037b88d740c4172c8b71a1599",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-model-execution.json": "ad947a632600e30dc21c8970c4f90f4003257716f11ad315f2d2370524c7267e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/execution-preparation-manifest.json": "047f099d0e684c5766bde90a0f8ae22ea845a58bc4570af0c2c2ede11cb23427",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/execution-activation.json": "ffee8290930f91d026a14db252583409866a5c99b1b49d0e0b908f2bf0f00463",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/model-execution.json": "28756f7c69386c4070e103e5dcb127a3e4f205b9d347ac262f966c7f8ed8577f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/analysis.json": "559a5086d65f03a4d21c9e790f74e7dee79b8186a6618ac6e3ec62e9dedfb69f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-21.json": "40417b0c20df9d8e55dc71a2e0c2dc4b4af8a56db4a2b941c849c80ffc06f021",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-74.json": "cae04993d7d28bf2d3fc9cc0a6fc889e63bd9fbc10100060f543e19052661954",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-107.json": "cb0c7b9aa5ae1e90cdad2f35764c2505caf48a5f581a078ea6588c2dd3ae190e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-142.json": "5fc2f3927cef1a6f35c7c4d72f30bd6a265f764af006ad014c5636d6fbc29080",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-123.json": "bf708b5175ebdd0d5aeb2ef75c885fe235547a9521230edcf14eb252795e0f3d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-177.json": "e3a9b13243a1fee1d0248809257b6d2f19ba1e51ab6b813e4de8467b719baa09",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-68.json": "a481d3013c2f1378b34a3bb2d4196412004afae63d2ee12b2d172408885542bc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-147.json": "dd01a1136793f1ea107a107a1c4b03ed5c3157f97ba7b1c18aae63684daf7301",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-61.json": "1b8cde3775267bed6544c17fe00fe82f4fae51b3e30168ff0e3ea790c13f2210",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-130.json": "69647501b02cea411845b54141e50174a68293fc49e54f9f36e75b6c0c3e871d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/outputs/debate-177-routes.json": "670005c4d33b843557366c1cc9b915b354130ef9bfecf6e74ec48e6e13b47504",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/outputs/debate-177-sections.json": "8c4131be1055fe94298b94e40e562fac371bd6aec50b71bce40fe9b49b2755f6"
+  },
+  "totals": {
+    "debates": 10,
+    "originalPlanContextsAttempted": 10,
+    "recoveryShardContextsAttempted": 2,
+    "acceptedPlans": 10,
+    "modelContextsExecuted": 12,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "paidServiceCalls": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0
+  },
+  "authorization": {
+    "exactSidePacketPreparation": false,
+    "sideSelectorExecutionManifestPreparation": false,
+    "sideSelectorModelExecution": false,
+    "inventoryCompilation": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrection": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-activate-twenty-exact-batch-10-side-selector-packets-under-standing-authorization"
+}

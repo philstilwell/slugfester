@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-177-inventory-plan-recovery-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "status": "two-debate-177-inventory-plan-recovery-shards-passed-and-merged",
+  "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/execution-activation.json",
+  "activationSha256": "ffee8290930f91d026a14db252583409866a5c99b1b49d0e0b908f2bf0f00463",
+  "gateStartedAt": "2026-08-25T17:31:41.491Z",
+  "gateCompletedAt": "2026-08-25T17:33:04.336Z",
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "contextsUnattempted": 0,
+  "validContexts": 2,
+  "invalidContexts": 0,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrections": 0,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "maximumParallelContextsAllowed": 2,
+  "maximumParallelContextsObserved": 1,
+  "phases": [
+    {
+      "phase": "operational-canary-one",
+      "schedulerMaximum": 1,
+      "shardIdsPlanned": [
+        "routes"
+      ],
+      "shardIdsAttempted": [
+        "routes"
+      ],
+      "startedAt": "2026-08-25T17:31:41.492Z",
+      "completedAt": "2026-08-25T17:32:24.304Z",
+      "passed": true
+    },
+    {
+      "phase": "steady-two",
+      "schedulerMaximum": 2,
+      "effectiveParallelism": 1,
+      "shardIdsPlanned": [
+        "sections"
+      ],
+      "shardIdsAttempted": [
+        "sections"
+      ],
+      "startedAt": "2026-08-25T17:32:24.304Z",
+      "completedAt": "2026-08-25T17:33:04.329Z",
+      "passed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "shardId": "routes",
+      "writableFields": [
+        "routes"
+      ],
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T17:31:41.493Z",
+      "completedAt": "2026-08-25T17:32:24.295Z",
+      "elapsedMs": 42802,
+      "timeoutMsApplied": 600000,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "apiKeysRemoved": true,
+      "scoreBlind": true,
+      "isolatedTemporaryCodexHome": true,
+      "otherShardOutputUnavailable": true,
+      "originalFailedPartialOutputUnavailable": true,
+      "exactCopiedInputFiles": 5,
+      "copiedInputBytes": 44833,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "10e281316a8fa03741aef2473a4b55238a58da20d0705ec0af33b336c8979800",
+      "stderrSha256": "df92f0f3d3cb34c34a7d2052e3d935cabf5f2209e440f9b7598aa21f5bac3a5f",
+      "status": "completed-valid",
+      "accepted": true,
+      "outputWritten": true,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/outputs/debate-177-routes.json",
+      "outputSha256": "670005c4d33b843557366c1cc9b915b354130ef9bfecf6e74ec48e6e13b47504",
+      "validation": {
+        "status": "passed",
+        "field": "routes",
+        "items": 2
+      },
+      "validationMessage": null,
+      "stdoutTail": null,
+      "stderrTail": null
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "sections",
+      "writableFields": [
+        "sections"
+      ],
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-25T17:32:24.305Z",
+      "completedAt": "2026-08-25T17:33:04.321Z",
+      "elapsedMs": 40016,
+      "timeoutMsApplied": 600000,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "apiKeysRemoved": true,
+      "scoreBlind": true,
+      "isolatedTemporaryCodexHome": true,
+      "otherShardOutputUnavailable": true,
+      "originalFailedPartialOutputUnavailable": true,
+      "exactCopiedInputFiles": 5,
+      "copiedInputBytes": 42366,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsd": 0,
+      "stdoutSha256": "8b5c3e5c7c8fdbc97062b7e8901c53abc8bf2fe18854673bbacd63613f85ab68",
+      "stderrSha256": "251ad70f5aaf4f45cfea07b6896d95af05da40a231c7efe6a9552774bd235458",
+      "status": "completed-valid",
+      "accepted": true,
+      "outputWritten": true,
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plan-recovery-1/debate-177/outputs/debate-177-sections.json",
+      "outputSha256": "8c4131be1055fe94298b94e40e562fac371bd6aec50b71bce40fe9b49b2755f6",
+      "validation": {
+        "status": "passed",
+        "field": "sections",
+        "items": 6
+      },
+      "validationMessage": null,
+      "stdoutTail": null,
+      "stderrTail": null
+    }
+  ],
+  "merge": {
+    "attempted": true,
+    "passed": true,
+    "mergeRuleCanonicalSha256": "162402a02025e9f249d7056b06fc58925b0b781627d0ec0c69615d1f6afd12bf",
+    "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-177.json",
+    "outputSha256": "e3a9b13243a1fee1d0248809257b6d2f19ba1e51ab6b813e4de8467b719baa09",
+    "canonicalSha256": "a57f1faa04913d8671965f6578d35e98aae4e299a3cb5484e20ac7df9695d285",
+    "validation": {
+      "status": "passed",
+      "sections": 6
+    },
+    "validationMessage": null
+  },
+  "wallElapsedMs": 82845,
+  "modelWorkElapsedMs": 82818,
+  "authentication": "ChatGPT subscription",
+  "scoreBlind": true,
+  "directIncrementalCostUsd": 0,
+  "meteredApiCostUsd": 0,
+  "paidServiceCalls": 0,
+  "audioCalls": 0,
+  "scoresDerived": 0,
+  "productionMutations": 0,
+  "nextRequiredAction": "replay-complete-ten-plan-cohort-and-analyze"
+}
