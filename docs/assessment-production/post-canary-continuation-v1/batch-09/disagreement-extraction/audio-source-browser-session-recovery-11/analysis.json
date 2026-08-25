@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-browser-session-source-recovery-11-analysis",
+  "status": "batch-09-browser-session-source-recovery-capability-failure-preserved",
+  "batchNumber": 9,
+  "result": {
+    "alternateDebate170AudioSourceAccepted": false,
+    "completeCohortValidated": false,
+    "sourceNetworkRequests": 0,
+    "sourcesInstalled": 0,
+    "clipsCreated": 0,
+    "browserSessionUsedOnlyForSafeBootstrap": true,
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluationPerformed": false
+  },
+  "diagnosis": {
+    "category": "browser-control-capability-mismatch-before-source-access",
+    "plainTextYouTubeBootstrapSucceeded": true,
+    "pageFetchApiAvailable": false,
+    "watchPageRendered": false,
+    "watchHtmlRequested": false,
+    "mediaRequested": false,
+    "minimumDifferentMechanism": "a separately frozen Chrome-supported network or download mechanism that does not use page-level fetch, does not render a watch page, and does not inspect or export browser session data",
+    "ordinaryRetryPermitted": false
+  },
+  "preservedControls": {
+    "canonicalTranscriptPacketsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false,
+    "cookiesOrStorageInspected": false,
+    "browserSessionIdentifierPersisted": false,
+    "accountIdentifierPersisted": false,
+    "rawSignedUrlsPersisted": false,
+    "retries": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "stop-on-browser-session-capability-failure"
+}
