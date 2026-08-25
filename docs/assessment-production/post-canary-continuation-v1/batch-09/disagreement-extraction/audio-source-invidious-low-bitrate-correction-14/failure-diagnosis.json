@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-invidious-low-bitrate-correction-14-failure-diagnosis",
+  "status": "frozen-batch-09-debate-183-invidious-route-exhausted-after-second-transport-ceiling",
+  "batchNumber": 9,
+  "checkpointCommit": "698720b2",
+  "diagnosis": {
+    "failureCategory": "browser-control-execution-ceiling-and-session-reset",
+    "sameUnderlyingProblemAsRecovery13": true,
+    "underlyingProblem": "the public Invidious companion-download flow did not emit and complete a browser download before the fixed control-session ceiling, even after the payload was reduced to the smallest frozen audio-only representation",
+    "sourceIdentityValidatedBeforeAttempt": true,
+    "correctedFormatSelectedBeforeAttempt": true,
+    "formSubmissionClickIssuedOnce": true,
+    "downloadEventObserved": false,
+    "localFileObserved": false,
+    "playerWasPausedAtZeroAtLastAvailableCheck": true,
+    "youtubeAccountOrBrowserSecretsUsed": false,
+    "protectedEvidenceChanged": false
+  },
+  "stopRule": {
+    "invidiousRouteExhausted": true,
+    "furtherInvidiousDownloadAttemptAuthorized": false,
+    "ordinaryRetryAuthorized": false,
+    "timeoutExtensionAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "permittedNextInvestigation": {
+    "scope": "a different public source or independently hosted copy of the exact Debate 183 recording",
+    "sameInvidiousRoute": false,
+    "sourceIdentityMustRemainExact": true,
+    "audioPlaybackOrSemanticEvaluation": false,
+    "modelExecution": false,
+    "paidServices": false
+  },
+  "preservedControls": {
+    "audioPlaybackObservedSeconds": 0,
+    "semanticAudioEvaluationPerformed": false,
+    "browserCookiesOrStorageInspected": false,
+    "youtubeAccountDataAccessed": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "nextAuthorizedAction": "investigate-a-different-free-public-source-for-the-exact-debate-183-recording"
+}
