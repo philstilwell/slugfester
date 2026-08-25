@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-invidious-low-bitrate-correction-14-plan",
+  "status": "frozen-one-shot-batch-09-debate-183-low-bitrate-invidious-transport-correction-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "802b7a03",
+  "userAuthorization": {
+    "instruction": "Do your best to remedy this issue.",
+    "resolvedScope": "perform one bounded transport correction for the preserved Debate 183 public-front-end timeout by selecting the already-observed smaller audio-only representation",
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "youtubeAccountUseAuthorized": false,
+    "browserCookieOrStorageInspectionAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "judgmentOrScoreChangesAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-invidious-recovery-13/failure-diagnosis.json": "a5301b3751cc277e5a632c30b9104ff23c7519ad2e0ddce77d51fa23346006a9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    ".assessment-cache/captions/2WrywAaDvvw/manifest.json": "89e4c280748a5120d36b4e70b2ac5fcce6dc6027476462e793c774d175bcdcaf"
+  },
+  "sourceHashes": {
+    "scripts/finalize-assessment-production-post-canary-batch-09-invidious-low-bitrate-correction-14.mjs": "e05232549f85e9e66c9810c2deb6794b1527853bb2ce2bf3336b07d15c418d18",
+    "scripts/test-assessment-production-post-canary-batch-09-invidious-low-bitrate-correction-14.mjs": "6962502a6df7d23bf79b620bee000ec0d3f8b93479d83b543cc56c942e709e65"
+  },
+  "source": {
+    "videoId": "2WrywAaDvvw",
+    "title": "Moral Realism Debate: Prof. David Enoch vs Dr. Justin Clarke-Doane",
+    "expectedDurationSeconds": 4200,
+    "durationToleranceSeconds": 12,
+    "identityRule": "the page video id, exact title, and caption-manifest identity must all match the frozen Debate 183 source"
+  },
+  "browserRoute": {
+    "provider": "Invidious",
+    "trustedPublicInstance": "invidious.nerdvpn.de",
+    "pageUrl": "https://invidious.nerdvpn.de/watch?v=2WrywAaDvvw&local=true&autoplay=0",
+    "selectedOptionLabel": "audio/webm @ 59.142k - audio only",
+    "selectedOptionValue": "{\"itag\":249,\"ext\":\"webm\"}",
+    "replacedFailedOptionLabel": "audio/webm @ 166.382k - audio only",
+    "playerMustRemainPaused": true,
+    "requiredCurrentTimeSeconds": 0,
+    "downloadMethod": "arm-one-browser-download-event-wait-select-the-exact-low-bitrate-audio-only-option-and-click-the-page-download-button-once",
+    "rawMediaUrlInspection": false,
+    "rawNetworkCommand": false,
+    "youtubeAccountUse": false,
+    "browserCookieInspection": false,
+    "browserCookieExport": false,
+    "browserStorageInspection": false
+  },
+  "boundedCorrection": {
+    "changedField": "browserRoute.selectedOptionLabel-and-corresponding-option-value",
+    "originalValue": "audio/webm @ 166.382k - audio only | {\"itag\":251,\"ext\":\"webm\"}",
+    "correctedValue": "audio/webm @ 59.142k - audio only | {\"itag\":249,\"ext\":\"webm\"}",
+    "sourceVideoChanged": false,
+    "sourceIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "normalizedOutputChanged": false,
+    "acceptedEvidenceChanged": false,
+    "ordinaryRetry": false
+  },
+  "localPaths": {
+    "acceptedRawPath": ".assessment-cache/audio-source-mirrors/invidious-nerdvpn/2WrywAaDvvw/source.webm",
+    "sourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/source.mp3",
+    "clipPaths": [
+      "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-informed-deliberator-method.mp3",
+      "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/clips/con-foundational-anomaly-significance.mp3"
+    ]
+  },
+  "localProcessing": {
+    "ffmpegPath": "/opt/homebrew/bin/ffmpeg",
+    "ffprobePath": "/opt/homebrew/bin/ffprobe",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "expectedSourceDurationSeconds": 4200,
+    "sourceDurationToleranceSeconds": 12,
+    "clips": [
+      { "moveId": "con-informed-deliberator-method", "clipStartMs": 3224140, "clipEndMs": 3286260, "expectedClipDurationSeconds": 62.12 },
+      { "moveId": "con-foundational-anomaly-significance", "clipStartMs": 3329500, "clipEndMs": 3646260, "expectedClipDurationSeconds": 316.76 }
+    ],
+    "clipDurationToleranceSeconds": 0.25,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false
+  },
+  "executionPolicy": {
+    "correctionAttemptsMaximum": 1,
+    "pageNavigationsMaximum": 1,
+    "optionSelectionsMaximum": 1,
+    "downloadButtonClicksMaximum": 1,
+    "downloadAttemptsMaximum": 1,
+    "browserDownloadEventTimeoutMs": 120000,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "sourcesInstalledMaximum": 1,
+    "clipsCreatedMaximum": 2,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "browserCookiesInspectedMaximum": 0,
+    "browserCookiesExportedMaximum": 0,
+    "browserStorageInspectedMaximum": 0,
+    "youtubeAccountIdentifiersReadMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true,
+    "noFurtherRecoveryForThisRouteAfterFailure": true
+  },
+  "cohortBoundary": {
+    "debate183Only": true,
+    "failedHighBitrateAttemptPreserved": true,
+    "debate170AlreadyAcceptedAndUnchanged": true,
+    "debate19RemainsUnattempted": true,
+    "completeThreeSourceFourClipCohortValidationDeferred": true,
+    "canonicalTranscriptPacketsChanged": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-invidious-low-bitrate-correction-14/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-invidious-low-bitrate-correction-14/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-invidious-low-bitrate-correction-14/analysis.json"
+  },
+  "nextActionAfterSuccess": "prepare-freeze-and-run-one-official-podcast-feed-alternate-source-recovery-for-untouched-debate-19"
+}
