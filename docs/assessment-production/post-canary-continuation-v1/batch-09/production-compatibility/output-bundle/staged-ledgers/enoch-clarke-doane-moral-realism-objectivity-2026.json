@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-09-production-compatibility",
+  "status": "frozen-post-canary-batch-09-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "debateNumber": "183",
+  "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-09-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "762f286d074dc3778576f4500ae8590f96bce8ade70467c57bbe23cf646a8c3c",
+    "calculatedScoresSha256": "e617ad602223ef1df5931e425d642bf762dc4881d9944c445b9085ed84361dd0",
+    "finalizationAuditSha256": "0112306c6973f2a5b9a62c29d10375c7b85db9ec7ee54be4def5fb0df9559e12",
+    "renderingAuditSha256": "fc814ffce2101384f910d5f2de65137136cdc698cf247951513fda3e005d1c4e",
+    "finalCandidateSha256": "806dd30712cc68f6871d9ca0c18941803fe3f5bcd13b2e7bd844e3e04ea70c0e",
+    "eventsPath": ".assessment-cache/captions/2WrywAaDvvw/events.json",
+    "eventsSha256": "c9009b36b392b9eac1ada38e92d854a57d8049da4b78db8b899228c597a52765",
+    "finalJudgmentSha256": "4782892dabbf29ac1540cd1aa6bd5d08171a385194b3ac391a9124212710e2b7"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "183",
+    "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-robust-realism-objectivity-route",
+        "side": "pro",
+        "description": "Establish ordinary stance-independent moral objectivity, support an ontology of normative facts through deliberative indispensability, and show that rival-package challenges neither create a genuine deliberative gap nor impose a distinctive comparative liability on realism.",
+        "successCriteria": "The route succeeds if stance-independent normative facts remain a justified account of ordinary moral objectivity, an agent's first-person conclusion about what ought to be done can settle deliberation, and iterative rival-package objections do not supply a burden-defeating reason to reject realism.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-objective-action-guidance",
+          "tier": "motion",
+          "description": "Connect stance-independent normative truth to action by requiring that a first-person conclusion about what ought to be done normally completes deliberation without an additional allegiance decision."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-objectivity-to-realism",
+            "tier": "central",
+            "description": "Explain why ordinary moral claims presuppose independence from preferences and conventions and why this supports realist normative facts."
+          },
+          {
+            "bridgeId": "pro-central-deliberative-indispensability",
+            "tier": "central",
+            "description": "Supply an affirmative basis for normative facts by showing their indispensable role in deliberation and practical reasoning."
+          },
+          {
+            "bridgeId": "pro-central-rival-package-reply",
+            "tier": "central",
+            "description": "Answer the privilege regress by explaining why iteration does not establish a genuine further normative question or a distinctive objection to realism."
+          },
+          {
+            "bridgeId": "pro-central-comparative-explanation",
+            "tier": "central",
+            "description": "Compare theories by their treatment of central deliberative practice while assigning proportionate significance to rare reflective anomalies."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-alternative-costs",
+            "tier": "subsidiary",
+            "description": "Identify the additional commitments required for a non-cognitivist alternative to preserve ordinary claims of moral objectivity."
+          },
+          {
+            "bridgeId": "pro-subsidiary-legitimate-endpoints",
+            "tier": "subsidiary",
+            "description": "Explain when justified confidence can terminate iterative philosophical challenges without requiring persuasion of every skeptical or confused agent."
+          }
+        ]
+      },
+      {
+        "routeId": "con-realist-deliberative-gap-route",
+        "side": "con",
+        "description": "Distinguish mind-independent moral properties from action-settling objectivity, demonstrate that metaphysical privilege cannot determine allegiance among rival normative packages, and develop an attitude-centered alternative that closes the remaining gap between normative representation and decision.",
+        "successCriteria": "The route succeeds if rival stance-independent packages leave an intelligible further question about what to do, neither nonnormative nor normative privilege resolves that question without regress, and an alternative account can connect normative judgment to action more directly than realist facts alone.",
+        "motionBridge": {
+          "bridgeId": "con-motion-realism-does-not-settle-action",
+          "tier": "motion",
+          "description": "Show that the existence and recognition of stance-independent normative facts can leave unresolved which rival normative package an agent should follow in acting."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-privilege-dilemma",
+            "tier": "central",
+            "description": "Establish that nonnormative metaphysical privilege is practically inert while normative privilege recreates the rival-package question at a higher level."
+          },
+          {
+            "bridgeId": "con-central-reflective-counterexamples",
+            "tier": "central",
+            "description": "Use informed reflective disputes to show that knowledge of normative or logical facts need not non-causally settle an agent's deliberation."
+          },
+          {
+            "bridgeId": "con-central-noncognitivist-comparison",
+            "tier": "central",
+            "description": "Explain how deciding, prescribing, or adopting an action-directed attitude can exclude incompatible actions without requiring allegiance among rival truth-apt properties."
+          },
+          {
+            "bridgeId": "con-central-anomaly-significance",
+            "tier": "central",
+            "description": "Defend the evidential importance of foundational anomalies even when they are rare, abstract, or do not amount to a classical contradiction."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-deflationary-semantics",
+            "tier": "subsidiary",
+            "description": "Show how an attitude-centered alternative might avoid dependence on the full semantic machinery associated with standard expressivism."
+          },
+          {
+            "bridgeId": "con-subsidiary-logic-distinctions",
+            "tier": "subsidiary",
+            "description": "Separate denial of true contradictions from questions about legitimate consequence relations and the comparative severity of theoretical costs."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "ordinary-objectivity-and-realist-foundation",
+        "title": "Ordinary objectivity and the realist foundation",
+        "weightPercent": 15,
+        "rationale": "This issue fixes what stance independence amounts to, whether ordinary moral discourse supports robust realist facts, and whether deliberative indispensability supplies an affirmative basis for their ontology."
+      },
+      {
+        "sectionId": "rival-packages-and-metaphysical-privilege",
+        "title": "Rival normative packages and metaphysical privilege",
+        "weightPercent": 30,
+        "rationale": "This is the governing clash over whether metaphysical privilege can identify the action-guiding normative package or instead becomes practically inert or recursively contested."
+      },
+      {
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "title": "Non-cognitivism as a comparative alternative",
+        "weightPercent": 15,
+        "rationale": "This issue tests whether an attitude-centered account can connect normative judgment with decision while still accommodating the ordinary objectivity that motivates realism."
+      },
+      {
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "title": "First-person deliberation and reflective counterexamples",
+        "weightPercent": 20,
+        "rationale": "This issue determines whether concluding that one ought to act normally settles deliberation and whether rare, informed disputes reveal a genuine residual choice among normative standards."
+      },
+      {
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "title": "Theoretical costs, anomalies, and legitimate stopping points",
+        "weightPercent": 20,
+        "rationale": "This issue governs how much weight to assign explanatory anomalies, contradictions, exceptional cases, and iterative skeptical challenges when comparing accounts of normative objectivity."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-ordinary-stance-independence",
+        "sectionId": "ordinary-objectivity-and-realist-foundation",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "constructive",
+        "proposition": "Ordinary moral claims treat wrongness as independent of individual preferences, social conventions, beliefs, and practices.",
+        "sourceSpan": {
+          "startEvent": 36,
+          "endEvent": 67,
+          "excerpt": "we put it in yourface kind of subjectivist relativist views just fail to do justice to our uh to our everyday moral discourse and practice. When we say that say it's wrong to humiliate people, we don't mean anything about social conventions. We don't mean that this depends on whether you like it or not. We don't mean that had we had other beliefs or practices, it would not have"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly hands the opening statement to Enoch, whose uninterrupted first-person presentation continues through this window.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-objectivity-to-realism"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the ordinary-discourse premise that preference, convention, belief, and practice do not determine moral wrongness."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The relevant independence bases are enumerated, and the express caveat prevents the discourse claim from being conflated with a complete realist argument."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move confidently characterizes ordinary moral thought but explicitly limits the conclusion, matching the illustrative support offered."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The humiliation example and discourse distinctions are representative support, though no wider evidence establishes how broadly ordinary speakers share the treatment."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, this directly supplies the ordinary-objectivity premise but stops short of completing the bridge to realist facts."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move develops its own positive premise and does not materially interpret a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it clearly establishes an important premise while expressly acknowledging that it does not yet establish realism."
+          }
+        },
+        "evidenceBasis": "The excerpt denies dependence on liking, social conventions, alternative beliefs, and practices, then distinguishes moral truth from falsity while limiting the conclusion.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-deliberative-indispensability",
+        "sectionId": "ordinary-objectivity-and-realist-foundation",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "constructive",
+        "proposition": "Belief in normative truths and facts is indispensable to deliberation, and that indispensability confers ontological respectability on them.",
+        "sourceSpan": {
+          "startEvent": 100,
+          "endEvent": 122,
+          "excerpt": "analogous ways we have a deliberative project that is just as respectable as the explanatory one. Um there are some things that are indispensable to it and in particular belief in normative truths and facts are indispensable for the derivative project in roughly the same sense that electrons are indispensable for the explanatory project. And so such indispensibility suffices to confer ontological respectability"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Enoch identifies this as his preferred positive argument and develops it continuously until explicitly stopping his opening statement.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-deliberative-indispensability"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the affirmative ontological argument by analogizing practical deliberation with explanatory inquiry and claiming normative facts are indispensable to it."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposition and explanatory analogy are recoverable, but the sense of indispensability sufficient for ontological respectability remains only implicitly bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The asserted sufficiency of indispensability is somewhat stronger than the compressed analogy warrants, although the claim is presented as approximate."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, this is the route's principal affirmative ontological basis and directly addresses the designated indispensability bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is assessed; the move presents a positive indispensability argument."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (83 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt calls deliberation respectable, compares normative facts with electrons in explanatory inquiry, and says their analogous indispensability confers ontological respectability.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-objectivity-exceeds-mind-independence",
+        "sectionId": "ordinary-objectivity-and-realist-foundation",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Securing stance-independent moral properties does not by itself secure the stronger objectivity needed to settle deliberation, because rival convention-independent normative packages may remain available.",
+        "sourceSpan": {
+          "startEvent": 126,
+          "endEvent": 236,
+          "excerpt": "knowledge of the ethical facts as David was just suggesting is supposed to settle deliberation. I'm supposed to figure out what I ought to do to figure out what to do. And the point is that when you reflect back on the moral twin type cases, you can just repeat that style of argument at the level of metaphysical privilege. So, so the the our properties are privileged. The moral"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Clarke-Doane begins after Enoch stops, identifies his own view in the first person, and speaks uninterrupted until he says he rests his case.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-realism-does-not-settle-action"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-deliberative-indispensability",
+            "pro-ordinary-stance-independence"
+          ],
+          "components": [
+            {
+              "componentId": "con-objectivity-exceeds-mind-independence-component-01",
+              "targetMoveId": "pro-deliberative-indispensability",
+              "text": "Whether knowledge of the proposed normative facts actually settles what an agent should do.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-objectivity-exceeds-mind-independence-component-02",
+              "targetMoveId": "pro-ordinary-stance-independence",
+              "text": "Whether independence from preference and convention is sufficient for action-settling objectivity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts both the action-guidance demand implicit in the indispensability claim and the limited reach of ordinary stance independence by introducing rival convention-independent packages."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between mind independence and deliberation-settling objectivity is stable, and the conclusion is explicitly limited to insufficiency by itself."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move advances a defeasible gap argument rather than certainty, and the moral-twin iteration is proportionate support for that challenge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Realist facts may vindicate ordinary mind-independent truth even if further deliberative questions can be formulated.",
+          "decisiveQualification": "The motion requires those facts to settle what agents should do, not merely to secure mind-independent truth."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, the move directly challenges whether stance-independent facts settle action and therefore reaches the route-completion condition."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply preserves the realist's ordinary-objectivity achievement while accurately identifying the stronger action-settling demand at issue."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly attacks the decisive inference from recognizing normative facts to settled deliberation and supplies a rival-package mechanism."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly says ethical knowledge is supposed to settle deliberation and argues that moral-twin reasoning can be repeated at the level of metaphysical privilege.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-generalized-package-challenge",
+        "sectionId": "rival-packages-and-metaphysical-privilege",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "Because the rival-package challenge generalizes across normativity and iterates into apparent unintelligibility, its framing may rest on a false presupposition.",
+        "sourceSpan": {
+          "startEvent": 242,
+          "endEvent": 347,
+          "excerpt": "reason to think that the challenge uh um is misconceived perhaps perhaps uh uh based on a false presupposition. Now it's one thing to say that it's another to pinpoint the false presupposition and I'm not sure that I can do I'm not sure that I can do that. Um, but I would tend to go, I guess, externalist in a way here and just say, you know, so so I'm with Louis on his magic. I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Clarke-Doane explicitly invites David to respond, after which Enoch addresses Justin by name and sustains the response until the next speaker turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-rival-package-reply"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-objectivity-exceeds-mind-independence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-generalized-package-challenge-component-01",
+              "targetMoveId": "con-objectivity-exceeds-mind-independence",
+              "text": "Whether the iterated rival-package question identifies a genuine deliberative gap rather than a defective framing.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests the status of the rival-package demand by arguing that its unrestricted generalization and iteration suggest a false presupposition, but it does not identify that presupposition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The generalization claim is recoverable, but 'false presupposition' and 'pseudo-problem' lack a stable specification; the limitation is candidly explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker repeatedly marks the claim as a suspicion and expressly admits inability to identify the alleged false presupposition."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Iteration may expose a genuine residual choice even if the same challenge applies broadly across normative theories.",
+          "decisiveQualification": "Generality alone does not make a challenge unintelligible or false."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "Generalization can motivate diagnostic suspicion, but the inference from iteration to misconception remains an unsupported conditional without the alleged false premise."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The iteration pattern is relevant evidence, yet the central diagnostic conclusion relies substantially on assertion because no false presupposition is specified."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly addresses the central rival-package bridge despite leaving its decisive explanatory step incomplete."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the decisive framing issue but expressly concedes that the defeating premise cannot be pinpointed."
+          }
+        },
+        "evidenceBasis": "The excerpt calls the challenge possibly misconceived and based on a false presupposition, then explicitly concedes that the speaker cannot pinpoint that presupposition.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-metaphysical-privilege-dilemma",
+        "sectionId": "rival-packages-and-metaphysical-privilege",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Metaphysical privilege cannot settle which normative package to follow: nonnormative privilege is practically inert, while normative privilege recreates the rival-package question at a higher level.",
+        "sourceSpan": {
+          "startEvent": 350,
+          "endEvent": 481,
+          "excerpt": "going to be? So, um there's a million-dollar question of course of even if there is a right way to do that, what in the world that could mean and how that division could fit into anything like the world delivered by science. I mean is this is the is the distinction between privileged and unprivileged is that higher level property something like a a property that you know we can"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The transcript explicitly marks Clarke-Doane taking the floor after thanking David, and he develops the dilemma in a single uninterrupted response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-realism-does-not-settle-action"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-generalized-package-challenge",
+            "pro-deliberative-indispensability"
+          ],
+          "components": [
+            {
+              "componentId": "con-metaphysical-privilege-dilemma-component-01",
+              "targetMoveId": "pro-generalized-package-challenge",
+              "text": "Whether iteration is merely a pseudo-problem or instead survives every proposed account of metaphysical privilege.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-metaphysical-privilege-dilemma-component-02",
+              "targetMoveId": "pro-deliberative-indispensability",
+              "text": "Whether ontological respectability supplies an action-guiding privilege among rival normative packages.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply answers the generalized-challenge response by dividing privilege into nonnormative and normative forms and arguing that neither closes the action-guidance gap."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two horns and their distinct alleged failures are recoverable, while the speculative scientific-fit discussion is presented as a further question."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents a forceful dilemma while acknowledging the open million-dollar question of how the relevant division could be understood."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Normative privilege may be a fundamental endpoint rather than a further item requiring independent action guidance.",
+          "decisiveQualification": "Calling it fundamental does not by itself explain why privilege rather than privilege-star settles allegiance."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The two-horn comparison supplies targeted conceptual support, though the practical inertness and regress claims are not independently verified beyond the constructed cases."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, this is the central mechanism offered to show why realist facts fail to settle which normative package guides action."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly addresses the decisive iteration issue and develops consequences for both horns of the proposed privilege distinction."
+          }
+        },
+        "evidenceBasis": "The source span develops the distinction between privileged and unprivileged properties, questions its fit with a scientific world, and renews the higher-level selection problem.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-normative-metaphysical-privilege",
+        "sectionId": "rival-packages-and-metaphysical-privilege",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "Privilege can be both normative and metaphysical, while asking why privilege rather than privilege-star merely repeats the original pseudo-problem.",
+        "sourceSpan": {
+          "startEvent": 549,
+          "endEvent": 612,
+          "excerpt": "normative uh which does not mean that it's not metaphysical because metaphysics includes normal ity. Um, and the problem on that side according to Justin is well then the problem resurfaces about that why privileges privilege rather than privilege or privilege star or something along these lines and my answer is well it's not exactly that the problem resurfaces it's that the pseudo problem does right so uh so I agree that in a way no progress"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "A clearly marked new Enoch turn announces a direct answer to Justin's challenge and continues through his qualification about non-naturalism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-privilege-dilemma"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-metaphysical-privilege-dilemma",
+            "con-objectivity-exceeds-mind-independence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-normative-metaphysical-privilege-component-01",
+              "targetMoveId": "con-metaphysical-privilege-dilemma",
+              "text": "Whether normative metaphysical privilege triggers a genuine regress or only repeats the original alleged pseudo-problem.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-normative-metaphysical-privilege-component-02",
+              "targetMoveId": "con-objectivity-exceeds-mind-independence",
+              "text": "Whether privileged normative facts can close the purported gap between normative truth and deliberation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly chooses the normative horn and denies that renewed privilege-star questions create genuine progress or a new problem."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The combined normative-metaphysical thesis is clear, but 'pseudo-problem' lacks a stable criterion distinguishing illegitimate repetition from genuine regress."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker acknowledges that no progress is made, but the assertion that the renewed problem is merely pseudo exceeds the explanation supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Privilege-star represents a coherent rival normative standard, so recurrence may be substantive rather than merely verbal.",
+          "decisiveQualification": "A successful dismissal needs a criterion showing why the rival standard fails to generate a legitimate practical question."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central privilege dilemma by selecting and defending its normative horn."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The rival is accurately represented, but its decisive claim to practical intelligibility is answered mainly by the pseudo-problem label."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive horn but largely labels the iteration a pseudo-problem instead of supplying the missing criterion that defeats it."
+          }
+        },
+        "evidenceBasis": "The excerpt says privilege may be normative and metaphysical, restates the privilege-versus-privilege-star objection, and answers that the pseudo-problem rather than a genuine problem resurfaces.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-comparative-alternative-burden",
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "A challenge shared by every remotely plausible metanormative position does not discriminate against realism unless an alternative handles it better overall.",
+        "sourceSpan": {
+          "startEvent": 620,
+          "endEvent": 648,
+          "excerpt": "remotely plausible metaethical positions or metanormative positions then I think we are justified that well that's too strong. then I then I think that this somewhat strengthened the suspicion that the that there's something wrong with the challenge and in particular then of course it doesn't count significantly against any specific medical uh metical position. Um so I would like to hear about the alternative that does better"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Enoch explicitly introduces this as the first of two further points and completes it before announcing the second point in the next row.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-privilege-dilemma"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-metaphysical-privilege-dilemma",
+            "con-objectivity-exceeds-mind-independence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-comparative-alternative-burden-component-01",
+              "targetMoveId": "con-metaphysical-privilege-dilemma",
+              "text": "Whether the privilege challenge discriminates against realism without a comparatively superior alternative.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-comparative-alternative-burden-component-02",
+              "targetMoveId": "con-objectivity-exceeds-mind-independence",
+              "text": "Whether a broadly shared deliberative difficulty alone counts significantly against realism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply justifies a comparative demand: if the difficulty applies to every plausible position, it cannot by itself select against realism and an alternative must demonstrate better overall handling."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative claim is clearly bounded to challenges shared by remotely plausible positions, and the speaker retracts an initially stronger formulation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker retracts an initially stronger formulation and limits the conclusion to strengthened suspicion and reduced discriminatory force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A shared problem can still be a serious objection if no theory solves a requirement imposed by the motion.",
+          "decisiveQualification": "Shared failure removes comparative discrimination but does not establish that the requirement itself is dispensable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly answers the discriminatory-force issue, although it does not itself establish that every plausible alternative shares the problem."
+          }
+        },
+        "evidenceBasis": "The excerpt says a challenge shared by remotely plausible metanormative views counts less against any particular view and explicitly asks for an alternative that performs better.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-limits-of-theoretical-guidance",
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "Metaethical adequacy does not require a theory to persuade every confused or skeptical agent what to do; truth and plausibility remain the relevant constraints.",
+        "sourceSpan": {
+          "startEvent": 652,
+          "endEvent": 689,
+          "excerpt": "an illusion, but now what do I do? Right? Even if I am under an illusion because I've read too much now, now uh uh what do I do? And you still need an answer to this. And what my response to this is frankly this is not my job. So I don't think it's an adequacy constraint on a metaethical theory that it be able to get anyone who is mistaken in any way out of the pit and into the"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Enoch introduces this as his second point, quotes Justin's practical worry, and carries the skepticism analogy through the end of his turn.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-legitimate-endpoints"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-metaphysical-privilege-dilemma",
+            "con-objectivity-exceeds-mind-independence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-limits-of-theoretical-guidance-component-01",
+              "targetMoveId": "con-metaphysical-privilege-dilemma",
+              "text": "Whether metaethical adequacy requires extracting every mistaken or skeptical agent from a residual practical question.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-limits-of-theoretical-guidance-component-02",
+              "targetMoveId": "con-objectivity-exceeds-mind-independence",
+              "text": "Whether any felt residual question must receive direct practical guidance from the theory.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The reply replaces universal skeptic-guidance with the narrower demand that a theory be true and plausible, arguing that correcting every confused agent is not an adequacy condition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The rejected universal demand and the proposed truth-and-plausibility constraint are both recoverable and explicitly scoped to theoretical adequacy."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The limited methodological conclusion fits the skepticism analogy and does not claim that every presented residual question is actually confused."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The opponent's target is an informed idealized agent, not an arbitrarily confused or globally skeptical person.",
+          "decisiveQualification": "A theory may owe an explanation when informed residual deliberation bears directly on its promised action guidance."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The external-world skepticism analogy supports a limit on adequacy demands, but its comparability to first-person normative deliberation is not defended."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "Within the subsidiary tier, it directly supports legitimate stopping points but does not resolve the central action-settling challenge."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "Within justified reframes, it supplies a principled replacement constraint, though it does not fully show that the opponent's informed cases are merely mistaken or confused."
+          }
+        },
+        "evidenceBasis": "The excerpt compares the demand with a skeptic asking what to do under an illusion and says rescuing anyone mistaken in any way is not a metaethical adequacy constraint.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-decision-centered-noncognitivism",
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "An attitude-centered view handles rival normative candidates by identifying what one ought to do with deciding or prescribing action, where choosing one action excludes incompatible alternatives.",
+        "sourceSpan": {
+          "startEvent": 772,
+          "endEvent": 849,
+          "excerpt": "to do for descriptive properties f arguably this problem shows there's also a gap between what I ought to do and what to do in the sense that um we decide before act acting where that's not just the gap that we we have if ocracia is possible um uh you know contra Socrates um okay so um so if the a view identifies the question of what we ought to do with, you know, a decision to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Clarke-Doane explicitly answers Enoch's request for a better view, names noncognitivism, and develops the action-versus-belief rationale to a stated stopping point.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-noncognitivist-comparison"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-comparative-alternative-burden",
+            "pro-limits-of-theoretical-guidance",
+            "pro-normative-metaphysical-privilege"
+          ],
+          "components": [
+            {
+              "componentId": "con-decision-centered-noncognitivism-component-01",
+              "targetMoveId": "pro-comparative-alternative-burden",
+              "text": "Whether an identifiable alternative handles the gap between normative representation and action better than realism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-decision-centered-noncognitivism-component-02",
+              "targetMoveId": "pro-limits-of-theoretical-guidance",
+              "text": "Whether the remaining gap can be closed structurally rather than by persuading every mistaken agent.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-decision-centered-noncognitivism-component-03",
+              "targetMoveId": "pro-normative-metaphysical-privilege",
+              "text": "Whether action can be settled without selecting a privileged truth-apt normative property.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move expressly answers the request for an alternative by proposing decision or prescription as inherently action-excluding attitudes."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The action-centered alternative and exclusion mechanism are recoverable, with only an implicit restriction to sincere first-person practical judgment."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The view is advanced as a plausible proposal with acknowledged complications, rather than as a demonstrated necessary account of normative judgment."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Realism can distinguish settling deliberation from causally guaranteeing action, allowing akrasia without a further normative choice.",
+          "decisiveQualification": "The alternative must outperform that distinction rather than merely build action direction into its stipulated attitude."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, this is the con route's primary comparative account of how normative judgment can directly constrain action."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly supplies the requested comparative mechanism, though the identification of ought-judgment with decision remains compressed."
+          }
+        },
+        "evidenceBasis": "The source span explicitly answers the request for a better view, names noncognitivism, contrasts descriptive representation with deciding, and treats decision as excluding incompatible action.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-noncognitivist-objectivity-costs",
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "To accommodate commonsense moral objectivity, non-cognitivism must assume substantial additional commitments whose plausibility requires comparative assessment.",
+        "sourceSpan": {
+          "startEvent": 938,
+          "endEvent": 981,
+          "excerpt": "further resources and so further commitments right so if the non-cognitivist view after all the challenge we have been discussing here um because of Justin's uh enthusiasm is just one of the disata uh if any right um from a metical theory um assuming we want to accommodate common sense objectivity non-cognitives are going to have to take some more stuff on board and it's not at"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn explicitly refers to Justin in the third person and recalls the speaker's own opening defense of common-sense objectivity.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-noncognitivist-comparison"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-decision-centered-noncognitivism"
+          ],
+          "components": [
+            {
+              "componentId": "pro-noncognitivist-objectivity-costs-component-01",
+              "targetMoveId": "con-decision-centered-noncognitivism",
+              "text": "Whether the action-directed alternative can also accommodate commonsense moral objectivity without costly additional commitments.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly raises the comparative cost omitted from the decision-centered proposal: preserving ordinary objectivity requires further noncognitivist resources whose plausibility must be assessed."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional dependence on wanting commonsense objectivity is explicit, although the referenced additional resources remain unspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conditional is properly stated, but the claim of substantial commitments modestly exceeds the excerpt's undeveloped inventory."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A deflationary noncognitivism may preserve objectivity without standard expressivist semantic machinery.",
+          "decisiveQualification": "Avoiding one semantic package does not show that all objectivity-preserving commitments are costless."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The objection substantially relies on assertion because the source span neither identifies the added resources nor shows why their costs exceed realism's."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the comparative completeness of the proposed noncognitivist account."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply leaves open which resources the alternative may use and appropriately frames their cost as requiring comparative assessment."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the decisive comparative shortcoming but does not specify or evaluate the alleged additional commitments in this span."
+          }
+        },
+        "evidenceBasis": "The excerpt conditions the objection on accommodating commonsense objectivity and says noncognitivists must take further resources and commitments on board for comparative evaluation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-first-person-deliberative-closure",
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "Once an agent deliberating in the first person concludes that an action ought to be done, no further deliberative question normally remains, despite possible akrasia.",
+        "sourceSpan": {
+          "startEvent": 982,
+          "endEvent": 1076,
+          "excerpt": "first person. And another rule of the game is that it's not impossible for different people to have different phenomenologies. But the question now is uh so you're trying to decide whether or not to do something. Um you've come to the conclusion that you ought to do it. Do you still feel the gap? Do you still think of course you know that you may not succeed in doing it. You may be weakquilled. All of that's a given, but is there further"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted turn addresses Justin by name and presents first-person phenomenology as support for the realist response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-objective-action-guidance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-decision-centered-noncognitivism",
+            "con-objectivity-exceeds-mind-independence",
+            "con-metaphysical-privilege-dilemma"
+          ],
+          "components": [
+            {
+              "componentId": "pro-first-person-deliberative-closure-component-01",
+              "targetMoveId": "con-decision-centered-noncognitivism",
+              "text": "Whether concluding in the first person that one ought to act leaves a further deliberative question requiring an additional decision.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-first-person-deliberative-closure-component-02",
+              "targetMoveId": "con-objectivity-exceeds-mind-independence",
+              "text": "Whether knowledge of what ought to be done normally settles first-person deliberation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-first-person-deliberative-closure-component-03",
+              "targetMoveId": "con-metaphysical-privilege-dilemma",
+              "text": "Whether a further allegiance choice normally remains after an agent reaches an ought-conclusion.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly tests the alleged gap from the first-person perspective and distinguishes residual deliberation from mere weakness of will."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The first-person setting, normality restriction, and akrasia qualification clearly delimit the claim and keep deliberative closure distinct from action execution."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents a normal phenomenological claim, explicitly allows different phenomenologies, and acknowledges weakness of will."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Reflective agents may understand the ought-conclusion yet still face a substantive choice between rival standards.",
+          "decisiveQualification": "Ordinary phenomenological closure does not by itself exclude rare informed counterexamples."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, this directly supplies the required connection from an ought-conclusion to completed deliberation."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply expressly permits phenomenological variation, but its positive force remains centered on ordinary cases rather than the strongest reflective cases."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive gap and isolates akrasia, while allowing differing phenomenology rather than claiming universal closure."
+          }
+        },
+        "evidenceBasis": "The excerpt asks whether any further gap remains after a first-person ought-conclusion, explicitly permits different phenomenologies, and distinguishes the question from weakness of will.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-deflationary-attitude-semantics",
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "A deflationary attitude-centered noncognitivism need not inherit the elaborate semantic machinery associated with standard expressivist theories.",
+        "sourceSpan": {
+          "startEvent": 1077,
+          "endEvent": 1130,
+          "excerpt": "semantic machinery that it introduces and I um There's a lot to say about that. Um because uh it might seem given everything I've said that I'm some kind of card carrying non-cognivist and I actually think the non-cognitivist tradition has been largely misguided by focusing so much on semantics. I think that's kind of the wrong approach. If if I were to give you in a in a um uh in a pitch what I believe, it would be deflationism"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker answers David's preceding objection, describes his own preferred view, and is then addressed through David's interjection.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-deflationary-semantics"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-noncognitivist-objectivity-costs"
+          ],
+          "components": [
+            {
+              "componentId": "con-deflationary-attitude-semantics-component-01",
+              "targetMoveId": "pro-noncognitivist-objectivity-costs",
+              "text": "Whether an attitude-centered view must inherit the elaborate semantic commitments and associated costs of standard noncognitivism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly denies that the proposed view carries standard expressivist semantic machinery and offers deflationism as an alternative orientation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The rejection of elaborate semantics is clear, but 'deflationism' is introduced only as a pitch and its operative commitments remain underdefined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents a pitch and acknowledges that much remains to be said, appropriately limiting the force of the proposal."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro objection concerns every extra commitment needed for objectivity, not only standard expressivist semantics.",
+          "decisiveQualification": "Semantic deflation leaves open pragmatic, psychological, and objectivity-preserving theoretical costs."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply fairly addresses a recognizable cost while not pretending that its brief semantic point exhausts the broader comparative burden."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the semantic-cost component but does not explain in the excerpt how deflationism preserves objectivity or compositional practice."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects the noncognitivist tradition's focus on semantic machinery, calls that approach misguided, and identifies the speaker's preferred brief proposal as deflationism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-reflective-logic-counterexample",
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Informed disputes between rival logics show that knowing an inference is valid need not non-causally settle whether the agent should make that inference.",
+        "sourceSpan": {
+          "startEvent": 1131,
+          "endEvent": 1274,
+          "excerpt": "to show that knowledge of the classical validity settles what to infer. it it will in fact lead causally to your inferring that. But if you add the premise that it doesn't say schlogically follow because in the logic of paradox it's invalid you have all of a sudden upset the inference and you know I in in ordinary logic that would be called weakening. You can't make a a valid"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The continuous response explicitly characterizes David's phenomenological reasoning and develops the quantum-logic counterexample against it.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-reflective-counterexamples"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-first-person-deliberative-closure",
+            "pro-limits-of-theoretical-guidance"
+          ],
+          "components": [
+            {
+              "componentId": "con-reflective-logic-counterexample-component-01",
+              "targetMoveId": "pro-first-person-deliberative-closure",
+              "text": "Whether first-person phenomenological closure establishes that normative knowledge non-causally settles deliberation in informed rival-framework cases.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-reflective-logic-counterexample-component-02",
+              "targetMoveId": "pro-limits-of-theoretical-guidance",
+              "text": "Whether the residual question is merely confusion when the agent understands competing logical standards.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly challenges the phenomenological inference through an informed rival-logics case in which knowledge of classical validity coexists with a competing validity assessment."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between causal production of inference and non-causal rational settlement is clear and the claim is limited to informed rival-logic cases."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "A counterexample requires an intelligible possibility rather than prevalence, and the move confines its conclusion accordingly."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Ordinary ought-conclusions normally close deliberation even if exceptional theoretical cases do not.",
+          "decisiveQualification": "A rare counterexample defeats necessity but does not by itself overturn a normality claim."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supplies the con route's informed reflective counterexample to deliberative closure."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly targets the decisive inference and supplies a structured counterexample rather than merely reporting contrary phenomenology."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes causal inference from rational settlement and explains how knowledge of invalidity under a rival logic can upset an inference known to be classically valid.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-centrality-weighted-theory-cost",
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "A theory incurs a smaller cost for an artificial treatment of rare reflective cases than for failing to explain central features of everyday deliberative practice.",
+        "sourceSpan": {
+          "startEvent": 1276,
+          "endEvent": 1346,
+          "excerpt": "cases that are still in need of accommodation, but that it has to accommodate [clears throat] in some weirder way. Maybe we lose some points, but very few. It's not nowhere near the kind of dialectical price that is involved. if you miss a central feature of our practice with with uh with normativity including our deliberative practice. So I want to be clear about what I am and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn responds directly to the preceding unusual-case example and returns to David's stated emphasis on ordinary deliberative phenomenology.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-comparative-explanation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-reflective-logic-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-centrality-weighted-theory-cost-component-01",
+              "targetMoveId": "con-reflective-logic-counterexample",
+              "text": "How much comparative theoretical weight a rare reflective counterexample should receive against successful explanation of ordinary deliberation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply concedes a need to accommodate unusual cases but argues that awkward treatment of them is a smaller cost than missing a central feature of ordinary normative practice."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative cost claim is explicit, distinguishes rare from central phenomena, and acknowledges that the exceptional cases still require accommodation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move concedes lost points for awkward exceptional treatment and claims only a comparatively smaller cost."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A rare foundational case may expose a structural flaw whose importance is not proportional to frequency.",
+          "decisiveQualification": "Centrality must track explanatory significance, not merely prevalence in ordinary practice."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supplies the pro route's comparative method for weighting reflective anomalies."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply acknowledges the case but underdevelops the strongest reason a rare foundational anomaly might deserve disproportionate weight."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it directly addresses the counterexample's comparative consequence while conceding rather than denying the residual anomaly."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes that unusual cases need accommodation, assigns few points to awkward handling of them, and contrasts that cost with missing central normative deliberative practice.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-informed-deliberator-method",
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "The significance of a deliberative problem should be tested through agents who understand it rather than inferred from its absence among an unreflective majority.",
+        "sourceSpan": {
+          "startEvent": 1347,
+          "endEvent": 1370,
+          "excerpt": "has never read Ecklund. And >> no, it's not it's not about uh it's not about the the percentage of the population. It's about how central is it to our understanding of what what what goes on when we deliberate. Um yeah. >> Okay. I mean, if if that's the case, then it seems like the useful people to look at are the people who are aware of the problem and to ask whether or not um"
+        },
+        "attributionConfidence": "medium",
+        "attributionBasis": "The alternating exchange begins with an objection to David's appeal to centrality and presses the relevance of reflective agents who know the problem.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-anomaly-significance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-centrality-weighted-theory-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-informed-deliberator-method-component-01",
+              "targetMoveId": "pro-centrality-weighted-theory-cost",
+              "text": "Whether the significance of the reflective problem should be assessed through informed agents rather than ordinary unreflective prevalence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the proposed weighting method by arguing that agents who understand the problem are the relevant test population for determining whether a deliberative gap persists."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The informed-deliberator proposal is clear, with an implicit requirement that awareness be genuine understanding rather than mere exposure."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move is framed tentatively as what seems useful, which fits the incomplete methodological support available in the short exchange."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Centrality concerns a phenomenon's role in explaining deliberation, not the percentage of agents who notice a philosophical problem.",
+          "decisiveQualification": "Sampling informed agents is relevant only if their responses reveal that explanatory role rather than specialist artifact."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The methodological inference is plausible, but awareness alone does not establish that informed agents are representative of the underlying deliberative phenomenon."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The proposal receives no data or developed selection criterion and is supported mainly by the intuitive relevance of informed participants."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It materially supports the central anomaly-significance bridge by supplying a method for assessing rare informed cases."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the methodological premise but does not establish how informed-agent responses should be measured or weighted."
+          }
+        },
+        "evidenceBasis": "The excerpt contains an alternating exchange in which centrality is distinguished from population percentage and the response proposes examining people aware of the problem.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-foundational-anomaly-significance",
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Rare and apparently baroque foundational anomalies cannot simply receive negligible weight, because they may reveal a defect that transforms an otherwise successful framework.",
+        "sourceSpan": {
+          "startEvent": 1393,
+          "endEvent": 1530,
+          "excerpt": "any fact we can we can always ask ourselves whether to regulate our behavior by consulting it. And that's whether it's normative or non-normative. And if so then there's there's a deliberative distance between knowledge of the normative facts and what to do. So I guess I just wonder let's grant you for the sake of argument that that it's it kind of counts as a rec ordinary mathematician's attitude towards Russell's paradox. This is like a baroque"
+        },
+        "attributionConfidence": "medium",
+        "attributionBasis": "The turn begins by rejecting the Blackburn-style methodology and develops Russell's paradox and scientific revolutions as counteranalogies.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-anomaly-significance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-centrality-weighted-theory-cost",
+            "pro-first-person-deliberative-closure"
+          ],
+          "components": [
+            {
+              "componentId": "con-foundational-anomaly-significance-component-01",
+              "targetMoveId": "pro-centrality-weighted-theory-cost",
+              "text": "Whether rare and baroque foundational anomalies may receive little weight merely because ordinary practice otherwise proceeds successfully.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-foundational-anomaly-significance-component-02",
+              "targetMoveId": "pro-first-person-deliberative-closure",
+              "text": "Whether an agent can always ask whether to regulate behavior by a known normative fact.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly rejects frequency-based discounting through Russell's paradox and scientific-change analogies, while restating the claimed deliberative distance from normative facts to action."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition concerns possible evidential significance rather than guaranteed refutation, and the foundational examples clearly delimit the comparison."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker frames the conclusion as a question and grants the opponent's rarity characterization for argument's sake."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro weighting principle concerns explanatory centrality rather than simple rarity or population prevalence.",
+          "decisiveQualification": "A foundational anomaly can be explanatorily central despite being rare, but that status must be demonstrated in the target domain."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, the move directly supports the claimed theoretical significance of foundational anomalies."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it addresses the decisive weighting inference and supplies concrete foundational analogies with potentially transformative consequences."
+          }
+        },
+        "evidenceBasis": "The source span restates the possible deliberative distance for any consulted fact and invokes Russell's paradox and transformative scientific episodes against dismissing baroque anomalies.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-explanatory-not-contradictory-cost",
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "side": "pro",
+        "speaker": "David Enoch",
+        "moveKind": "reply",
+        "proposition": "The deliberative difficulty presents an explanatory challenge rather than a contradiction, so its theoretical cost varies with the centrality of the phenomenon requiring explanation.",
+        "sourceSpan": {
+          "startEvent": 1531,
+          "endEvent": 1615,
+          "excerpt": "centrality matters. A contradiction is a contradiction and entailing it is a bad news regardless of where it arises. But that you have to be rough around the edges with some of your explanations of some some of the stuff that needs explaining that not all cases of this kind have been created equal. If you have to come up with an with a weird not fully natural explanation of a central feature of the target"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker distinguishes pragmatic from theoretical reactions to Russell and explicitly contrasts the opponent's challenge with an entailed contradiction.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-anomaly-significance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-foundational-anomaly-significance",
+            "con-informed-deliberator-method",
+            "con-reflective-logic-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-explanatory-not-contradictory-cost-component-01",
+              "targetMoveId": "con-foundational-anomaly-significance",
+              "text": "Whether the deliberative anomaly resembles a contradiction with categorical force or an explanatory imperfection whose cost varies by centrality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-explanatory-not-contradictory-cost-component-02",
+              "targetMoveId": "con-informed-deliberator-method",
+              "text": "Whether informed anomalies have equal theoretical force regardless of the phenomenon's centrality to the target practice.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-explanatory-not-contradictory-cost-component-03",
+              "targetMoveId": "con-reflective-logic-counterexample",
+              "text": "Whether a reflective logical case establishes contradiction or instead identifies a localized explanatory challenge.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly classifies the alleged defect as explanatory rather than contradictory and explains why centrality then affects comparative cost."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast between contradiction and explanatory roughness is explicit, and the centrality principle is limited to explanatory rather than logical failure."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move makes a proportionate methodological distinction supported by the different consequence types and does not deny all significance to anomalies."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Nonclassical theories may treat contradictions as defeasible rather than categorically fatal, weakening the proposed contrast.",
+          "decisiveQualification": "Even defeasible contradiction costs can differ in kind or evidential role from localized explanatory awkwardness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The distinction between logical inconsistency and uneven explanatory naturalness is explicit and supports differential weighting with one bounded methodological premise."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The Russell comparison and type-of-failure distinction provide specific conceptual support, though the centrality weights themselves remain undefended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the analogy offered to establish exceptional foundational significance."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly addresses the anomaly's proposed significance and supplies a principled distinction, though the classification itself remains contestable."
+          }
+        },
+        "evidenceBasis": "The excerpt says contradictions are bad regardless of location but explanatory roughness varies with the centrality of the target phenomenon, explicitly distinguishing the two costs.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-contradictions-as-defeasible-costs",
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Contradictions are defeasible theoretical costs rather than categorically decisive failures, placing them on a continuum with other explanatory anomalies.",
+        "sourceSpan": {
+          "startEvent": 1616,
+          "endEvent": 1707,
+          "excerpt": "so I I do want to push back on the alleged contrast between contradictions and let's call them anomalies or something. Uh, you know, puzzles, whatever. Um, you know, one of the I think important developments of the last 50 to 60 years has been the development of parsistent logic. And what that did for our purposes here is to show that contradiction is just another kind of price"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn explicitly pushes back against David's contrast and uses paraconsistent logic and responses to Russell's paradox to develop the objection.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-logic-distinctions"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-explanatory-not-contradictory-cost",
+            "pro-centrality-weighted-theory-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-contradictions-as-defeasible-costs-component-01",
+              "targetMoveId": "pro-explanatory-not-contradictory-cost",
+              "text": "Whether contradictions are categorically unlike explanatory anomalies or instead defeasible theoretical costs on a continuum.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-contradictions-as-defeasible-costs-component-02",
+              "targetMoveId": "pro-centrality-weighted-theory-cost",
+              "text": "Whether even contradiction costs may be comparatively weighed rather than treated as categorically decisive.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly rejects the categorical contrast and invokes paraconsistent logic to support treating contradictions as defeasible costs."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is limited to defeasible theoretical cost rather than harmlessness, and the continuum thesis is clearly distinguished from denying contradiction."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Paraconsistent logic appropriately supports the limited claim that contradiction need not be categorically decisive, not that contradictions lack cost."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Even if contradictions are survivable, they may retain a distinctive logical cost unlike ordinary explanatory awkwardness.",
+          "decisiveQualification": "Defeasibility alone does not establish that all anomalies occupy one homogeneous continuum."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "Paraconsistent logic and responses to Russell provide specific support, with a remaining comparative gap concerning the exact severity of different cost types."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply fairly rejects categorical fatality but somewhat compresses the further step from survivability to a unified continuum of costs."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It explicitly contacts the decisive contrast and supplies a recognizable counterframework, though its applicability to the debated anomaly is compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly pushes back on the contrast, cites the development of paraconsistent logic, and argues that contradiction can be treated as a theoretical price rather than automatic defeat.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains beyond the move ratings, response links, importance judgments, and burden contacts already recorded.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "A separate uncaptured consequence would have to change completion of a named pro bridge.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No qualifying distinct consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden-contact judgments"
+          ],
+          "counterfactual": "Removing the proposed adjustment changes no pro bridge-completion assessment because no separate consequence exists."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, burden relevance, importance, and existing bridge structure.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No independent residual completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible consequence distinct from the judged moves is present.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the alleged residual would not change burden completion independently of the existing judgments."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "ordinary-objectivity-and-realist-foundation",
+        "title": "Ordinary objectivity and the realist foundation",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-ordinary-stance-independence",
+                "importance": 2,
+                "score": 87
+              },
+              {
+                "moveId": "pro-deliberative-indispensability",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 91,
+            "moves": [
+              {
+                "moveId": "con-objectivity-exceeds-mind-independence",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "rival-packages-and-metaphysical-privilege",
+        "title": "Rival normative packages and metaphysical privilege",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-generalized-package-challenge",
+                "importance": 3,
+                "score": 79
+              },
+              {
+                "moveId": "pro-normative-metaphysical-privilege",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-metaphysical-privilege-dilemma",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "noncognitivism-as-a-comparative-alternative",
+        "title": "Non-cognitivism as a comparative alternative",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-comparative-alternative-burden",
+                "importance": 2,
+                "score": 88
+              },
+              {
+                "moveId": "pro-noncognitivist-objectivity-costs",
+                "importance": 2,
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-decision-centered-noncognitivism",
+                "importance": 3,
+                "score": 86
+              },
+              {
+                "moveId": "con-deflationary-attitude-semantics",
+                "importance": 2,
+                "score": 78
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "first-person-deliberation-and-reflective-cases",
+        "title": "First-person deliberation and reflective counterexamples",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "pro-limits-of-theoretical-guidance",
+                "importance": 2,
+                "score": 82
+              },
+              {
+                "moveId": "pro-first-person-deliberative-closure",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-reflective-logic-counterexample",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-informed-deliberator-method",
+                "importance": 2,
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "title": "Theoretical costs, anomalies, and legitimate stopping points",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pro-centrality-weighted-theory-cost",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "pro-explanatory-not-contradictory-cost",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-foundational-anomaly-significance",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-contradictions-as-defeasible-costs",
+                "importance": 2,
+                "score": 85
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 84.05,
+        "burdenCompletionAdjustment": 0,
+        "score": 84
+      },
+      "con": {
+        "weightedSectionMean": 87.7,
+        "burdenCompletionAdjustment": 0,
+        "score": 88
+      }
+    },
+    "winner": "con",
+    "winningMargin": 4
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 18,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
