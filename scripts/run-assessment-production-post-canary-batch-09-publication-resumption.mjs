@@ -24,16 +24,46 @@ import { assertV4 } from "./lib/v4-lean-production.mjs";
 
 const ROOT = POST_CANARY_BATCH_09_PUBLICATION_RESUMPTION_ROOT;
 const ACTIVATION = `${ROOT}/execution-activation.json`;
+const EXECUTION_RUNNER =
+  "scripts/run-assessment-production-post-canary-batch-09-publication-resumption.mjs";
+const ANALYZER =
+  "scripts/analyze-assessment-production-post-canary-batch-09-publication-resumption.mjs";
+const EXECUTION_PREFLIGHT_DIAGNOSIS =
+  `${ROOT}/execution-preflight-failure-diagnosis.json`;
+const EXECUTION_PREFLIGHT_CORRECTION =
+  `${ROOT}/execution-preflight-correction-1-plan.json`;
 const activation = JSON.parse(await readFile(path.resolve(ACTIVATION), "utf8"));
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const exists = (file) =>
   access(path.resolve(file)).then(() => true, () => false);
+const [executionDiagnosisBytes, executionCorrectionBytes] = await Promise.all([
+  readFile(path.resolve(EXECUTION_PREFLIGHT_DIAGNOSIS)),
+  readFile(path.resolve(EXECUTION_PREFLIGHT_CORRECTION))
+]);
+const executionDiagnosis = JSON.parse(executionDiagnosisBytes);
+const executionCorrection = JSON.parse(executionCorrectionBytes);
+assertV4(
+  executionDiagnosis.status ===
+      "diagnosed-stale-batch-number-in-publication-resumption-execution-preflight" &&
+    executionCorrection.status ===
+      "frozen-execution-runner-preflight-correction-ready" &&
+    executionCorrection.diagnosis.sha256 === sha256(executionDiagnosisBytes) &&
+    activation.sourceHashes[EXECUTION_RUNNER] ===
+      executionCorrection.correctedSources.executionRunner.oldSha256 &&
+    activation.sourceHashes[ANALYZER] ===
+      executionCorrection.correctedSources.analyzer.oldSha256 &&
+    sha256(await readFile(path.resolve(EXECUTION_RUNNER))) ===
+      executionCorrection.correctedSources.executionRunner.acceptedSha256 &&
+    sha256(await readFile(path.resolve(ANALYZER))) ===
+      executionCorrection.correctedSources.analyzer.acceptedSha256,
+  "the execution-preflight correction credential changed"
+);
 
 assertV4(
   activation.status ===
       "frozen-nine-untouched-post-canary-batch-09-publication-resumption-contexts-authorized" &&
     activation.productionCanary === false &&
-    activation.batchNumber === 8 &&
+    activation.batchNumber === 9 &&
     activation.contexts?.length === 9 &&
     activation.authorization?.modelContexts === true &&
     activation.authorization?.publicationModelExecution === true &&
@@ -68,6 +98,14 @@ assertV4(
   "the Batch 9 publication resumption controls changed"
 );
 for (const [file, digest] of Object.entries(activation.sourceHashes)) {
+  if (file === EXECUTION_RUNNER || file === ANALYZER) {
+    const correction =
+      file === EXECUTION_RUNNER
+        ? executionCorrection.correctedSources.executionRunner
+        : executionCorrection.correctedSources.analyzer;
+    assertV4(digest === correction.oldSha256, `${file}: frozen preimage changed`);
+    continue;
+  }
   assertV4(
     sha256(await readFile(path.resolve(file))) === digest,
     `resumption source hash mismatch: ${file}`
@@ -482,6 +520,18 @@ const execution = {
   paidServiceCallsThisStage: 0,
   modelAuthoredScores: 0,
   scorePassesExecutedThisStage: 0,
+  executionHarnessCorrection: {
+    diagnosis: EXECUTION_PREFLIGHT_DIAGNOSIS,
+    diagnosisSha256: sha256(executionDiagnosisBytes),
+    plan: EXECUTION_PREFLIGHT_CORRECTION,
+    planSha256: sha256(executionCorrectionBytes),
+    correctedExecutionRunnerSha256:
+      executionCorrection.correctedSources.executionRunner.acceptedSha256,
+    correctedAnalyzerSha256:
+      executionCorrection.correctedSources.analyzer.acceptedSha256,
+    correctedValidationPasses: 1,
+    modelContextsAttemptedBeforeCorrectionPassed: 0
+  },
   authorization: {
     deterministicCohortAnalysis: true,
     retry: false,

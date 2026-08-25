@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-resumption-execution-preflight-correction-1-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-1",
+  "status": "frozen-execution-runner-preflight-correction-ready",
+  "frozenAt": "2026-08-25T05:06:00Z",
+  "checkpointCommit": "c6faccd7053d51f3be3ce109f84cf77cfbc1cf7b",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/execution-preflight-failure-diagnosis.json",
+    "sha256": "ce1be043ac83976309775affb591e4bd84ee5a93ed7b69644e094f53374cebf7",
+    "bytes": 1920
+  },
+  "correctedSources": {
+    "executionRunner": {
+      "path": "scripts/run-assessment-production-post-canary-batch-09-publication-resumption.mjs",
+      "oldSha256": "c1d93b3cab51bc62b594aeb1b989100830c6333b664a4e6ec177d7b3e0c3b607",
+      "acceptedSha256": "3dffc56083a2b44cb23db900cab19528ac39804d99bb27887b198d349722ffcc",
+      "acceptedBytes": 22004,
+      "changedExpectation": {
+        "field": "activation.batchNumber",
+        "before": 8,
+        "after": 9
+      }
+    },
+    "analyzer": {
+      "path": "scripts/analyze-assessment-production-post-canary-batch-09-publication-resumption.mjs",
+      "oldSha256": "2d8352de304dedd50a64b8681513850b1c5d91e9392902b316fa22ff11ae87c1",
+      "acceptedSha256": "74b72069a04f40481ba0b39a2c3b890c56d661cc798202c2cc61f66c124d4eab",
+      "acceptedBytes": 15150,
+      "change": "authenticate-the-immutable-activation-preimages-and-the-accepted-corrected-runner-sources-separately"
+    }
+  },
+  "executionPolicy": {
+    "correctedExecutionPassesMaximum": 1,
+    "attemptsPerModelContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "preparationManifestUnchanged": true,
+    "activationUnchanged": true,
+    "publicationPacketsAndSchemasUnchanged": true,
+    "acceptedDebate170OutputUnchanged": true,
+    "sourcesScoresIdentitiesAndModelSettingsUnchanged": true
+  }
+}

@@ -18,6 +18,14 @@ const PREPARATION = `${ROOT}/execution-preparation-manifest.json`;
 const ACTIVATION = `${ROOT}/execution-activation.json`;
 const EXECUTION = `${ROOT}/model-execution.json`;
 const ANALYSIS = `${ROOT}/analysis.json`;
+const EXECUTION_RUNNER =
+  "scripts/run-assessment-production-post-canary-batch-09-publication-resumption.mjs";
+const ANALYZER =
+  "scripts/analyze-assessment-production-post-canary-batch-09-publication-resumption.mjs";
+const EXECUTION_PREFLIGHT_DIAGNOSIS =
+  `${ROOT}/execution-preflight-failure-diagnosis.json`;
+const EXECUTION_PREFLIGHT_CORRECTION =
+  `${ROOT}/execution-preflight-correction-1-plan.json`;
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const exists = (file) =>
   access(path.resolve(file)).then(() => true, () => false);
@@ -33,6 +41,12 @@ const [preparationBytes, activationBytes, executionBytes] = await Promise.all([
 const preparation = JSON.parse(preparationBytes);
 const activation = JSON.parse(activationBytes);
 const execution = JSON.parse(executionBytes);
+const [executionDiagnosisBytes, executionCorrectionBytes] = await Promise.all([
+  readFile(path.resolve(EXECUTION_PREFLIGHT_DIAGNOSIS)),
+  readFile(path.resolve(EXECUTION_PREFLIGHT_CORRECTION))
+]);
+const executionDiagnosis = JSON.parse(executionDiagnosisBytes);
+const executionCorrection = JSON.parse(executionCorrectionBytes);
 assertV4(
   activation.status ===
       "frozen-nine-untouched-post-canary-batch-09-publication-resumption-contexts-authorized" &&
@@ -54,7 +68,33 @@ assertV4(
     execution.paidServiceCallsThisStage === 0,
   "the Batch 9 publication resumption analysis boundary changed"
 );
+assertV4(
+  executionDiagnosis.status ===
+      "diagnosed-stale-batch-number-in-publication-resumption-execution-preflight" &&
+    executionCorrection.status ===
+      "frozen-execution-runner-preflight-correction-ready" &&
+    executionCorrection.diagnosis.sha256 === sha256(executionDiagnosisBytes) &&
+    activation.sourceHashes[EXECUTION_RUNNER] ===
+      executionCorrection.correctedSources.executionRunner.oldSha256 &&
+    activation.sourceHashes[ANALYZER] ===
+      executionCorrection.correctedSources.analyzer.oldSha256 &&
+    sha256(await readFile(path.resolve(EXECUTION_RUNNER))) ===
+      executionCorrection.correctedSources.executionRunner.acceptedSha256 &&
+    sha256(await readFile(path.resolve(ANALYZER))) ===
+      executionCorrection.correctedSources.analyzer.acceptedSha256 &&
+    execution.executionHarnessCorrection?.planSha256 ===
+      sha256(executionCorrectionBytes),
+  "the execution-preflight correction provenance changed"
+);
 for (const [file, digest] of Object.entries(activation.sourceHashes)) {
+  if (file === EXECUTION_RUNNER || file === ANALYZER) {
+    const correction =
+      file === EXECUTION_RUNNER
+        ? executionCorrection.correctedSources.executionRunner
+        : executionCorrection.correctedSources.analyzer;
+    assertV4(digest === correction.oldSha256, `${file}: frozen preimage changed`);
+    continue;
+  }
   assertV4(
     sha256(await readFile(path.resolve(file))) === digest,
     `resumption analysis source hash mismatch: ${file}`
