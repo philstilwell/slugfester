@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debateNumber": "61",
+  "inventoryPlanCanonicalSha256": "ba8cc85eaf39271fb81b25577ca36b07b5d0cf3a06fa813ceac2b2ac24126002",
+  "sideSelectionSha256": {
+    "pro": "306f1ca56b5248f859af1122b5225dab081aaeb113edf00a45ba301c1bb056ac",
+    "con": "29bfb40fda83d123c49db0078c10a05105aacf3c28b027579738cb7599c99f83"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c001",
+      "side": "pro",
+      "moveId": "pro-causal-indispensable-genealogy",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Scrivener expressly presents this bounded indispensable-influence thesis as his own governing causal standard, so it can independently frame the genealogy case.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
