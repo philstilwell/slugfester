@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-183-speaker-reference-range-20-plan",
+  "status": "frozen-one-shot-batch-09-debate-183-high-attribution-speaker-reference-range-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "d5847d22",
+  "userAuthorization": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "resolvedScope": "one credential-free HTTP byte-range request for a single complete SIDX fragment wholly within an already frozen high-attribution Justin Clarke-Doane move, plus local creation of exactly two same-debate speaker references",
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAtThisStageAuthorized": false,
+    "paidServicesAuthorized": false,
+    "cookiesAuthorized": false,
+    "accountDataAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/execution.json": "bc9abf28e61d718b3e46ca7f3a84870cb724599dc01518fdc8319e37a5d37216",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-tiekoetter-range-recovery-19/analysis.json": "0f302e8282fe986a2f0f0c7812747fd069cc04111e39267db724b11b78577c27",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/inventory-candidate-sharded/locked-inventories/debate-183.json": "6bbbfd450125a6adba47732b342db7997b460be82b7b3fb81ab0f7cbeb9f1020",
+    ".assessment-cache/captions/2WrywAaDvvw/events.json": "c9009b36b392b9eac1ada38e92d854a57d8049da4b78db8b899228c597a52765",
+    ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/source.attempt-1.part": "40b4a8717f25ff49611084b8bae82d7f9335e07d2eb1b2e134ac78eac8055186",
+    ".assessment-cache/proxy-metadata/piped/2WrywAaDvvw/tiekoetter-range-19/manifest.mpd": "03a9c1f6e104e9d8289d643c9c3d2b6e84857a9715b040549a2ef73cffd6c42d",
+    "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/target-range.mp3": "05f4525026b8dc16ccfe20cecee974a1c33066100235819bd5594e4b79ff504b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-debate-183-speaker-reference-range-20.mjs": "5c8dc521e861e260e442a7a93045be5562b4ef5fcbbeef8156358d6a9f16aa7f",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-183-speaker-reference-range-20.mjs": "0ee062fce6708b97edbba368381d68de94207fe8e89d54083bc2f1956a30dc23"
+  },
+  "proxyRepresentation": {
+    "provider": "Invidious Tiekoetter companion",
+    "companionOrigin": "https://eu-de1.companion.invidious.tiekoetter.com",
+    "representationId": "140",
+    "expectedFullBytes": 67979525,
+    "relativeUrlSha256": "7287d8d2b32766b2d6c9c252f75562cd0d9eb61f6c313e44353286187ef80262",
+    "absoluteUrlSha256": "07d1636de022073968a80f7e594d5f3ce7f6530ed4c86237ac7f81814178f3cf"
+  },
+  "initializationBytes": 723,
+  "byteRange": {
+    "selectionRule": "one complete start-with-SAP type-zero SIDX reference wholly contained within the frozen high-attribution con-reflective-logic-counterexample move",
+    "segmentIndex": 286,
+    "absoluteStartSeconds": 2855.590022676,
+    "absoluteEndSeconds": 2865.574603175,
+    "durationSeconds": 9.984580499,
+    "rangeHeader": "bytes=46217270-46378836",
+    "expectedContentRange": "bytes 46217270-46378836/67979525",
+    "expectedBytes": 161567,
+    "referenceType": 0,
+    "startsWithSap": true
+  },
+  "speakerReferences": [
+    {
+      "speaker": "David Enoch",
+      "selectedMoveId": "pro-centrality-weighted-theory-cost",
+      "attributionConfidence": "high",
+      "availableMoveIntersectionAbsoluteSeconds": [3215.034920635, 3228.88],
+      "sourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/target-range.mp3",
+      "sourceStartSeconds": 2.922539683,
+      "requestedDurationSeconds": 8,
+      "outputPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/david-enoch.mp3",
+      "selectionRule": "center-eight-seconds-of-the-available-high-attribution-move-intersection"
+    },
+    {
+      "speaker": "Justin Clarke-Doane",
+      "selectedMoveId": "con-reflective-logic-counterexample",
+      "attributionConfidence": "high",
+      "selectedMoveAbsoluteSeconds": [2677.599, 3049.52],
+      "sourceStartSeconds": 0.992290249,
+      "requestedDurationSeconds": 8,
+      "outputPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/references/justin-clarke-doane.mp3",
+      "selectionRule": "center-eight-seconds-of-one-complete-SAP-fragment-wholly-within-the-high-attribution-move"
+    }
+  ],
+  "localPaths": {
+    "rawPartialPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/speaker-reference-range.attempt-1.part",
+    "rawAcceptedPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/speaker-reference-range.bin",
+    "reconstructedFragmentPath": ".assessment-cache/audio-source-mirrors/tiekoetter/2WrywAaDvvw/speaker-reference-range.m4a",
+    "normalizedFragmentPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-183/audio/speaker-reference-range.mp3"
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "mediaRangeAttemptsMaximum": 1,
+    "requestTimeoutMs": 60000,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "redirectFollowsMaximum": 0,
+    "referencesCreatedMaximum": 2,
+    "cookiesSentMaximum": 0,
+    "accountDataUsesMaximum": 0,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "preservedControls": {
+    "disputedClipsByteIdentical": true,
+    "acceptedTranscriptsByteIdentical": true,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-speaker-reference-range-20/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-speaker-reference-range-20/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-183-speaker-reference-range-20/analysis.json"
+  }
+}
