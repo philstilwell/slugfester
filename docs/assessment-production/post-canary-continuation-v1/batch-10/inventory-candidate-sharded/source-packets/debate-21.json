@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "debateNumber": "21",
+  "debateId": "hitchens-wolpe-great-god-debate-2010",
+  "motion": "Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?",
+  "sides": {
+    "pro": {
+      "label": "Atheist critique",
+      "speakers": [
+        "Christopher Hitchens"
+      ]
+    },
+    "con": {
+      "label": "Jewish theism",
+      "speakers": [
+        "Rabbi David Wolpe"
+      ]
+    }
+  },
+  "durationSeconds": 5491,
+  "eventCount": 2376,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2kZRAOXEFPI/transcript.txt",
+    "transcriptSha256": "dd66c6325eb30a6a30524ec15eef1a9b04e7e20dd4197b66f19ee6dd390cd22a",
+    "eventsPath": ".assessment-cache/captions/2kZRAOXEFPI/events.json",
+    "eventsSha256": "002e1247414cbca863209e5dd43af9aeea17c86e12a9008805bd76be3d8e47e0",
+    "localManifestPath": ".assessment-cache/captions/2kZRAOXEFPI/manifest.json",
+    "localManifestSha256": "1b9ba3e5f33719f0d394584c5df9320ec878a24993d0a46eb444965b9c77e674"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-10/debate-21.jsonl",
+    "sourceLedgerSha256": "5958330ef3a7fd42d2cf80dbf0a9f34395eb64f2e9332776f3954a9bbe2c2013",
+    "sourceLedgerBytes": 139002,
+    "sourceLedgerEventCount": 2376,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/source-preparation/plans/debate-21.json",
+    "partitionPlanSha256": "43c043d3555f2f4327a02916c14dee767922f864aeef51b49310a95284807437",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

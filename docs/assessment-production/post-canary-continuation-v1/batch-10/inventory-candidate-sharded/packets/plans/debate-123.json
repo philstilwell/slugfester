@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-candidate-census-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "stage": "candidate-census-plan",
+  "debateNumber": "123",
+  "debateId": "oconnor-pine-divine-hiddenness-2024",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true
+  },
+  "isolation": {
+    "freshContextRequired": true,
+    "oneDebateOnly": true,
+    "scoreBlind": true,
+    "candidateEvidenceExcerptsUnavailable": true,
+    "candidateSelectionUnavailable": true,
+    "priorAndOtherJudgmentsUnavailable": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "copiedInputs": [
+    {
+      "role": "inventory-source-packet",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/source-packets/debate-123.json",
+      "sha256": "7f82abec29a3b7f5cd16928f74f9bb560b54b6b420cfbca12a0fe2e389eea633",
+      "bytes": 3607
+    },
+    {
+      "role": "complete-candidate-census",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/transports/census/debate-123.json",
+      "sha256": "486e16d411f114c4a5ff38f8ae3011726cf7c4096c1dd99f6e156bcc09dd76ea",
+      "bytes": 24722
+    },
+    {
+      "role": "candidate-sharded-inventory-guide",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "349cdc9a61100757d88658d38ca00cecec138ae1b7bb7ab2a56f5a23ef631d14",
+      "bytes": 5961
+    },
+    {
+      "role": "inventory-manual",
+      "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+      "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+      "bytes": 3432
+    },
+    {
+      "role": "strict-output-schema",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/schemas/plans/debate-123.schema.json",
+      "sha256": "13ab90d8f81c83fa4c07bbf9ab93f038c276f9d8d72e7f8955d8a10abbfef235",
+      "bytes": 4848
+    }
+  ],
+  "copiedInputBytes": 42570,
+  "maximumCopiedInputBytes": 115000,
+  "writableDomains": [
+    "routes",
+    "sections"
+  ],
+  "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/plans/debate-123.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "modelExecutionAuthorized": false
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "debateNumber": "130",
+  "debateId": "licona-carrier-resurrection-history-2010",
+  "motion": "Did Jesus rise from the dead, and does the resurrection hypothesis better explain early Christian testimony than naturalistic alternatives?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection hypothesis",
+      "speakers": [
+        "Mike Licona"
+      ]
+    },
+    "con": {
+      "label": "Natural explanation",
+      "speakers": [
+        "Richard Carrier"
+      ]
+    }
+  },
+  "durationSeconds": 8967,
+  "eventCount": 1571,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/0IpKHdVLZb4/transcript.txt",
+    "transcriptSha256": "4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b",
+    "eventsPath": ".assessment-cache/captions/0IpKHdVLZb4/events.json",
+    "eventsSha256": "cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1",
+    "localManifestPath": ".assessment-cache/captions/0IpKHdVLZb4/manifest.json",
+    "localManifestSha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-10/debate-130.jsonl",
+    "sourceLedgerSha256": "bb2edb34f409f73fa68e9dcc34c8b579c8a43ed0611ac079a5acdab182fdd773",
+    "sourceLedgerBytes": 183625,
+    "sourceLedgerEventCount": 1571,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/source-preparation/plans/debate-130.json",
+    "partitionPlanSha256": "6d52f09a1d33cabe3af0b94bc8e101928d94cb5d1625144c82e6bfeffcb6438e",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

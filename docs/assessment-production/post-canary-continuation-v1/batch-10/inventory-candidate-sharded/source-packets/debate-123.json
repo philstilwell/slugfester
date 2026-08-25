@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-candidate-sharded-inventory",
+  "debateNumber": "123",
+  "debateId": "oconnor-pine-divine-hiddenness-2024",
+  "motion": "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
+  "sides": {
+    "pro": {
+      "label": "Catholic theism",
+      "speakers": [
+        "Gregory Pine"
+      ]
+    },
+    "con": {
+      "label": "Hiddenness skepticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 6076,
+  "eventCount": 2706,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/8k9A7d2Wnjk/transcript.txt",
+    "transcriptSha256": "101756caa31fa6e6f0b1379ed6a2b7dbc1d3e60bcabfc35c8ae5f6de8e8542b3",
+    "eventsPath": ".assessment-cache/captions/8k9A7d2Wnjk/events.json",
+    "eventsSha256": "90bf0fcb19a2107e00e148bbf2685ae08642d1a3bf229544d790b762e2d0ddbe",
+    "localManifestPath": ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json",
+    "localManifestSha256": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-10/debate-123.jsonl",
+    "sourceLedgerSha256": "c46bfb1384733ede5b602265d84ecb5c8f9a5af08e6c6bdf2c9377bb79448e7f",
+    "sourceLedgerBytes": 159329,
+    "sourceLedgerEventCount": 2706,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/source-preparation/plans/debate-123.json",
+    "partitionPlanSha256": "42664efc542fa2865c57ad3a8f6bc2ebfac9edfa4e29adb5914aab0e7ce7919a",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
