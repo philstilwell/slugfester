@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-19-official-podcast-source-recovery-17-plan",
+  "status": "frozen-one-shot-batch-09-debate-19-official-podcast-source-recovery-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "d85abd26",
+  "userAuthorization": {
+    "instruction": "I approve the next section/attempt. Continue as far as you can without needing another approval or confirmation.",
+    "resolvedScope": "proceed with the untouched Debate 19 official-podcast source work while preserving and deferring the exhausted Debate 183 source blocker, then continue only through gates that remain authorized and pass",
+    "supersedesPriorStopOnlyForIndependentDebate19Work": true,
+    "furtherDebate183SourceAttemptAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAtThisStageAuthorized": false,
+    "paidServicesAtThisStageAuthorized": false,
+    "judgmentOrScoreChangesAuthorized": false
+  },
+  "authenticatedInputs": {
+    ".assessment-cache/podcast-metadata/making-sense/rss.xml": "42fba110a1c70d306baec5098631b477d9a694e465e76228819b6ae697a2c12b",
+    ".assessment-cache/captions/_pprQXq1eCA/events.json": "a6ce10a2f3bfefa0b8114d64064697dc036f3652797d02aa746c53f3be5d755f",
+    ".assessment-cache/captions/_pprQXq1eCA/manifest.json": "0c258af6cdf77859d07fb1a80b25ffe491f28e707f5db780e11d0473151d2c32",
+    ".assessment-cache/captions/vEuzo_jUjAc/events.json": "3c76800ad31673cb8ea98538463c776d72e41e41bba5102d497beed9876ce37f",
+    ".assessment-cache/captions/vEuzo_jUjAc/manifest.json": "86caa39b95a6c172a1166f4021c696161266300329013bc2a5ca10183e0a7d02",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-tiekoetter-proxy-recovery-16/failure-diagnosis.json": "f053c5624d5d2cbcb8320c8ff2e9c42283e8cf490b8dc366d288ff156d1bd467"
+  },
+  "sourceHashes": {
+    "scripts/run-assessment-production-post-canary-batch-09-debate-19-official-podcast-source-recovery-17.mjs": "308ff5f05dd29c69c8d1c9b8714199a1495e8f473a890c3b51a841a465732b24",
+    "scripts/test-assessment-production-post-canary-batch-09-debate-19-official-podcast-source-recovery-17.mjs": "727340c31d7bea513962d54b2e2eaf6eb0f28e084d08686d2e196589983eceb2"
+  },
+  "officialPodcast": {
+    "feedUrl": "https://anchor.fm/s/10a220e88/podcast/rss",
+    "rssPath": ".assessment-cache/podcast-metadata/making-sense/rss.xml",
+    "episodeTitle": "#61 Sam Harris - Can Science Determine Moral Values?",
+    "guid": "02951d10-5549-4366-9c34-7e3e7df781e6",
+    "publishedAt": "Sun, 31 Mar 2024 14:27:00 GMT",
+    "episodePage": "https://podcasters.spotify.com/pod/show/alex-oconnor4/episodes/61-Sam-Harris---Can-Science-Determine-Moral-Values-e394lrl",
+    "duration": "02:55:56",
+    "expectedDurationSeconds": 10556,
+    "durationToleranceSeconds": 12,
+    "enclosureUrl": "https://anchor.fm/s/10a220e88/podcast/play/109253941/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-5%2F408715760-44100-2-5c8bb797071d3830.mp3",
+    "enclosureBytes": 211766593,
+    "enclosureType": "audio/mpeg",
+    "identityRule": "the official RSS feed episode title, GUID, duration, enclosure URL, byte count, and accepted MP3 duration must all match"
+  },
+  "deterministicAlignment": {
+    "excerptVideoId": "_pprQXq1eCA",
+    "fullEpisodeVideoId": "vEuzo_jUjAc",
+    "alignmentMethod": "caption-text identity and timestamps only; no audio playback or semantic audio evaluation",
+    "uniqueCaptionAnchors": 20,
+    "anchorRangeExcerptStartMs": [
+      472159,
+      537640
+    ],
+    "fullMinusExcerptOffsetRangeMs": [
+      3249879,
+      3250001
+    ],
+    "medianFullMinusExcerptOffsetMs": 3249960,
+    "youtubeOnlySponsorStartMs": 953920,
+    "youtubeOnlyConversationResumeMs": 1035839,
+    "youtubeOnlySponsorDurationMs": 81919,
+    "podcastMinusExcerptOffsetMs": 3168041,
+    "originalExcerptClipStartMs": 492860,
+    "originalExcerptClipEndMs": 544019,
+    "mappedPodcastClipStartMs": 3660901,
+    "mappedPodcastClipEndMs": 3712060,
+    "additionalAlignmentPaddingBeforeMs": 2500,
+    "additionalAlignmentPaddingAfterMs": 2500,
+    "paddedPodcastClipStartMs": 3658401,
+    "paddedPodcastClipEndMs": 3714560,
+    "paddedPodcastClipDurationMs": 56159,
+    "downstreamRule": "the required audio-verification validator must confirm the frozen expected excerpt and Sam Harris attribution before this clip can resolve the work item"
+  },
+  "localPaths": {
+    "rawPartialPath": ".assessment-cache/audio-source-mirrors/official-podcast/109253941/source.attempt-1.part",
+    "rawAcceptedPath": ".assessment-cache/audio-source-mirrors/official-podcast/109253941/source.mp3",
+    "sourcePath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/audio/source.mp3",
+    "clipPath": "output/transcribe/assessment-production-post-canary-batch-09-audio-verification/debate-19/clips/pro-c009-phenomenal-value-reality.mp3"
+  },
+  "localProcessing": {
+    "ffmpegPath": "/opt/homebrew/bin/ffmpeg",
+    "ffprobePath": "/opt/homebrew/bin/ffprobe",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipChannels": 1,
+    "clipSampleRateHz": 16000,
+    "clipBitrateKbps": 64,
+    "clipDurationToleranceSeconds": 0.25,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "downloadAttemptsMaximum": 1,
+    "requestTimeoutMs": 1800000,
+    "logicalRedirectObservationMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "sourcesInstalledMaximum": 1,
+    "clipsCreatedMaximum": 1,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "cohortBoundary": {
+    "debate19Only": true,
+    "debate170AcceptedSourceAndClipPreserved": true,
+    "debate183FinalSourceFailurePreserved": true,
+    "debate183DeferredNotResolved": true,
+    "availableSourceCountAfterSuccess": 2,
+    "availableClipCountAfterSuccess": 2,
+    "requiredBlockedClipCountAfterSuccess": 2,
+    "completeThreeSourceFourClipCohortValidationDeferred": true,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "productionChanged": false
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-19-official-podcast-recovery-17/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-19-official-podcast-recovery-17/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-debate-19-official-podcast-recovery-17/analysis.json"
+  },
+  "nextActionAfterSuccess": "prepare-validate-freeze-and-report-a-two-available-clip-audio-verification-manifest-while-preserving-the-two-debate-183-blockers"
+}
