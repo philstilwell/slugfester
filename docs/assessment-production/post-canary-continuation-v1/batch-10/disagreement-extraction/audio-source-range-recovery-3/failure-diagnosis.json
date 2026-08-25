@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-range-recovery-3-failure-diagnosis",
+  "status": "preserved-batch-10-range-recovery-3-zero-byte-redirect-stop-diagnosed",
+  "batchNumber": 10,
+  "checkpointCommit": "bb737da1a3b4e6cb202ecdd11bde122a7495b7aa",
+  "authenticatedArtifacts": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/correction-plan.json": "9fa7a8d16c65fe4a68c6f76714dbb021a64cb8151286eada41171e1a615ec0a7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/execution-activation.json": "6620675ba5f2aee211c3b7a2b85cc37c178b0108388c041cf5fcddd27d684d3b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-range-recovery-3/execution.json": "475ed43e3b509c51b5a53c97c3e03c28143dfd804e892df348140532cf27adbc"
+  },
+  "preservedLocalEvidence": {
+    "headersPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.part-000.headers.txt",
+    "headersBytes": 1558,
+    "headersSha256": "7bccae2a6283b0500bfb9abb343bb1acf7d4209849c59fe0e0083b98bd97f2a9",
+    "locationHeaderSha256": "c975cb58e44f07c1ca4645707b3fc986ebec667e54eae3ee1d57646f2b79fac5",
+    "partPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.part-000.m4a",
+    "partBytes": 0,
+    "partSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assembledSourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.m4a",
+    "assembledSourceBytes": 0,
+    "assembledSourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "observedResponse": {
+    "status": 302,
+    "contentLength": 0,
+    "contentType": "text/html",
+    "locationHostClass": "googlevideo.com",
+    "locationItag": "139",
+    "locationDeclaredBytes": 37050541,
+    "mediaBytesReceived": 0
+  },
+  "diagnosis": {
+    "category": "frozen-redirect-policy-prevented-media-host-transfer",
+    "rootCause": "The URL returned by yt-dlp was a Google Video redirector. The frozen runner prohibited redirects and therefore stopped on the HTTP 302 before receiving any media bytes.",
+    "sourceIntegrityConclusion": "The preserved response does not show a corrupt audio-only source; it shows that the media host was never reached.",
+    "runnerPolicyConclusion": "The frozen redirectsMaximum value of zero and curl invocation without redirect following were too restrictive for this source route.",
+    "failedPartialOutputReusable": false
+  },
+  "executionAudit": {
+    "logicalDownloadsAttempted": 1,
+    "rangeRequestsAttempted": 1,
+    "mediaBytesReceived": 0,
+    "remainingDebatesAttempted": 0,
+    "automaticRetries": 0,
+    "reruns": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "diagnosisComplete": true,
+    "furtherMediaRequests": false,
+    "correctionPreparation": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoring": false,
+    "publication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "requiredNextAuthorization": "Permit a newly frozen one-shot transport correction that follows exactly one Google Video redirect per non-overlapping planned byte range, preserves zero retries, and retains the existing $0 source-recovery and $0.1308768 transcription estimates."
+}

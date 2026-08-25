@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-range-recovery-3-execution",
+  "status": "failed-one-shot-batch-10-audio-source-range-recovery-3-stop-required",
+  "batchNumber": 10,
+  "planSha256": "9fa7a8d16c65fe4a68c6f76714dbb021a64cb8151286eada41171e1a615ec0a7",
+  "activationSha256": "6620675ba5f2aee211c3b7a2b85cc37c178b0108388c041cf5fcddd27d684d3b",
+  "state": {
+    "attempts": 1,
+    "directUrlResolutionCliInvocations": 1,
+    "rangeHttpGetInvocations": 1,
+    "publicSourceDownloads": 1,
+    "localNormalizations": 0,
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "clipsCreated": 0,
+    "completeCohortValidated": false,
+    "failedPartialOutputsReused": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "source-or-validation-failure-during-authorized-range-recovery-3",
+    "message": "123: range 0 byte or response-header validation failed",
+    "stopRequired": true,
+    "furtherOrdinaryAttemptsAuthorized": false
+  },
+  "protectedEvidencePreserved": true,
+  "directIncrementalCostUsd": 0
+}
