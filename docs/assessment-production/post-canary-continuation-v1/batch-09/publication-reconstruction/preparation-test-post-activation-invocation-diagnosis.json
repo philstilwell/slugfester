@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-preparation-test-post-activation-invocation-diagnosis",
+  "status": "diagnosed-nongate-post-activation-invocation-of-preparation-only-test",
+  "batchNumber": 9,
+  "diagnosedAt": "2026-08-25T04:30:00Z",
+  "checkpointCommit": "8e00f6c787757eb7972b04d99994e7691b069735",
+  "preservedFailure": {
+    "command": "node scripts/test-assessment-production-post-canary-batch-09-publication-preparation.mjs",
+    "assertion": "execution-activation.json: future output already exists",
+    "expectedByPreparationPhase": false,
+    "observedAfterAuthorizedActivation": true
+  },
+  "diagnosis": {
+    "category": "phase-inappropriate-test-invocation",
+    "explanation": "The test is a preparation-only preactivation test. Its future-output assertion intentionally requires execution-activation.json to be absent. Running it after the separate activation script had successfully created that authorized artifact necessarily fails that preactivation assertion.",
+    "packetFailure": false,
+    "activationFailure": false,
+    "modelFailure": false,
+    "sourceHashFailure": false,
+    "unexpectedValidationCategory": false,
+    "correctionRequired": false,
+    "recoveryAttemptConsumed": false
+  },
+  "authenticatedEvidence": {
+    "preparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/execution-preparation-manifest.json",
+      "sha256": "4586a321fe098a41986c8e1a0aba82c4a9bb68c4e29da9f798a39b62e29b8910"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/execution-activation.json",
+      "sha256": "f538c55f112d202a73f037b789719020819295a405e7b055db079c1a18497f6b",
+      "status": "frozen-ten-post-canary-batch-09-publication-contexts-authorized"
+    },
+    "preparationTest": {
+      "path": "scripts/test-assessment-production-post-canary-batch-09-publication-preparation.mjs",
+      "sha256": "13aa441088cfb5204a1c76526a187a7e4131a4bf60409bb2927e0db06169bb52"
+    },
+    "activationRunner": {
+      "path": "scripts/activate-assessment-production-post-canary-batch-09-publication.mjs",
+      "sha256": "68bfbd855949f9dbbf50973fcd2715836d541835e16eaa623dc7efc7a7539a1e"
+    }
+  },
+  "preservedControls": {
+    "filesChangedByDiagnosis": 1,
+    "packetsChanged": false,
+    "schemasChanged": false,
+    "activationChanged": false,
+    "runnerChanged": false,
+    "testChanged": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "execute-the-ten-frozen-batch-09-publication-contexts-through-the-successfully-authenticated-activation"
+}
