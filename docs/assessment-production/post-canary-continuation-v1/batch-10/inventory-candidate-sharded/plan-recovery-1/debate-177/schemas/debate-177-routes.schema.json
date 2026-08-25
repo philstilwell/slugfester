@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-v4221165-score-blind-candidate-sharded-plan-debate-177-recovery-1-routes",
+  "title": "Slugfester Batch 10 Debate 177 routes recovery shard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "routes"
+  ],
+  "properties": {
+    "routes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "routeId",
+          "side",
+          "description",
+          "successCriteria",
+          "motionBridge",
+          "centralBridges",
+          "subsidiaryBridges"
+        ],
+        "properties": {
+          "routeId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 40,
+            "maxLength": 700
+          },
+          "successCriteria": {
+            "type": "string",
+            "minLength": 40,
+            "maxLength": 700
+          },
+          "motionBridge": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "bridgeId",
+              "tier",
+              "description"
+            ],
+            "properties": {
+              "bridgeId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "tier": {
+                "type": "string",
+                "const": "motion"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 25,
+                "maxLength": 400
+              }
+            }
+          },
+          "centralBridges": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "tier",
+                "description"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "tier": {
+                  "type": "string",
+                  "const": "central"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 25,
+                  "maxLength": 400
+                }
+              }
+            }
+          },
+          "subsidiaryBridges": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bridgeId",
+                "tier",
+                "description"
+              ],
+              "properties": {
+                "bridgeId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "tier": {
+                  "type": "string",
+                  "const": "subsidiary"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 25,
+                  "maxLength": 400
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
