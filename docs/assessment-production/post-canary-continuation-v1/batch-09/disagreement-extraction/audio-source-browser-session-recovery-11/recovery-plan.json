@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-browser-session-source-recovery-11-plan",
+  "status": "frozen-one-shot-batch-09-browser-session-three-source-recovery-ready",
+  "batchNumber": 9,
+  "checkpointCommit": "14f2f0de",
+  "userAuthorization": {
+    "instruction": "Try the user-supplied alternate Debate 170 YouTube upload using the user's different current YouTube account.",
+    "resolvedScope": "one browser-session transport attempt for the verified alternate Debate 170 upload, followed only on success by the already-authorized untouched Debate 19 and Debate 183 sources and four-clip cohort",
+    "directIncrementalCostUsdMaximum": 0,
+    "browserMayNaturallyTransmitExistingSession": true,
+    "cookiesOrStorageMayBeReadOrExported": false,
+    "accountIdentifierMayBePersisted": false,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "judgmentOrScoreChangesAuthorized": false
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/correction-plan.json": "1cb752ac424215381a7cdc8a239ec064985457abe0c8b381d89981491e405e53",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/execution.json": "52d81ec68ed797aec6089098309f096886ac57a8d40f82467917d6402013842c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-alternate-recovery-10/failure-diagnosis.json": "ec8caf4b3b35c8f1600d76a4bd24cf99dac39fd261d7b2947ad783326293cabc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-work-items.json": "19d37b26e25073bd274fea45864c09e4774913d2106bc59191f8c61d5e391d8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662"
+  },
+  "exactCohort": {
+    "sourceOrder": [
+      "170",
+      "19",
+      "183"
+    ],
+    "sourceVideoIds": [
+      "qA7qBtNMayQ",
+      "_pprQXq1eCA",
+      "2WrywAaDvvw"
+    ],
+    "sourceCount": 3,
+    "clipCount": 4,
+    "alternateDebate170AudioVerificationOnly": true,
+    "canonicalTranscriptAndJudgmentEvidencePreserved": true,
+    "clipWindowsAndLocalEncoding": "exactly as hash-locked by audio-source-alternate-recovery-10/correction-plan.json"
+  },
+  "browserRoute": {
+    "browser": "Chrome through the approved Chrome control surface",
+    "safeBootstrapUrl": "https://www.youtube.com/robots.txt",
+    "sameOriginWatchHtmlFetch": {
+      "method": "GET",
+      "renderResponse": false,
+      "credentials": "include",
+      "maximumRequests": 1,
+      "purpose": "obtain an ephemeral public player key and client configuration without loading or playing a watch page"
+    },
+    "playerMetadataFetch": {
+      "method": "POST",
+      "credentials": "include",
+      "maximumRequests": 3,
+      "purpose": "obtain one session-backed player response per exact source"
+    },
+    "mediaFetch": {
+      "method": "GET",
+      "credentials": "include",
+      "redirect": "follow",
+      "maximumRequests": 3,
+      "purpose": "download the selected audio response into an in-memory Blob without media-element attachment or playback"
+    },
+    "privacyBoundary": {
+      "cookiesInspected": 0,
+      "cookiesExported": 0,
+      "browserStorageInspected": 0,
+      "accountIdentifiersRead": 0,
+      "accountIdentifiersPersisted": 0,
+      "rawSignedUrlsPersisted": false,
+      "rawSignedUrlsMayExistOnlyInEphemeralPageMemory": true
+    },
+    "downloadBoundary": {
+      "fixedRawDownloadNames": [
+        "slugfester-b9-d170-session-source.bin",
+        "slugfester-b9-d019-session-source.bin",
+        "slugfester-b9-d183-session-source.bin"
+      ],
+      "downloadedBytesMayBeReadOnlyFromThoseExactFiles": true,
+      "existingDownloadsMayNotBeEnumeratedOrInspected": true,
+      "blobUrlsMustBeRevoked": true,
+      "temporaryTabMustBeClosed": true
+    }
+  },
+  "deterministicFormatSelection": {
+    "eligibleMimePrefix": "audio/",
+    "directUrlRequired": true,
+    "contentLengthRequired": true,
+    "originalTrackRule": "prefer formats with audioTrack.audioIsDefault true; otherwise permit only formats without an explicit false audioIsDefault marker",
+    "qualityRankDescending": [
+      "AUDIO_QUALITY_HIGH",
+      "AUDIO_QUALITY_MEDIUM",
+      "AUDIO_QUALITY_LOW",
+      null
+    ],
+    "tieBreakers": [
+      "bitrate-descending",
+      "contentLength-descending",
+      "itag-ascending",
+      "url-sha256-ascending"
+    ]
+  },
+  "localProcessing": {
+    "resumeOnlyAfterDebate170SourceAccepted": true,
+    "normalizeAndValidateAllThreeSources": true,
+    "createAndValidateExactlyFourFrozenClips": true,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false,
+    "ffmpegAndFfprobeControls": "exactly as hash-locked by audio-source-alternate-recovery-10/correction-plan.json"
+  },
+  "executionPolicy": {
+    "attemptsPerSourceMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "audioPlaybackObservedSecondsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "transcriptionCallsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stopOnAnyFailure": true
+  },
+  "outputs": {
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-browser-session-recovery-11/execution-activation.json",
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-browser-session-recovery-11/execution.json",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-browser-session-recovery-11/analysis.json",
+    "preparationPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-preparation.json"
+  },
+  "nextActionAfterPassingCohort": "prepare-validate-freeze-and-report-batch-09-four-clip-audio-verification-manifest-and-cost-estimate"
+}
