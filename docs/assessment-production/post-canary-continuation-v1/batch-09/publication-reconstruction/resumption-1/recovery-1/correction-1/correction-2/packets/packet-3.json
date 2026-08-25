@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-timeout-recursive-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-resumption-timeout-recovery-correction-1",
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "debateNumber": "183",
+  "debateId": "enoch-clarke-doane-moral-realism-objectivity-2026",
+  "baseContextIndex": 3,
+  "repairType": "terminal-single-field-critique-word-boundary",
+  "immutableRejectedShardOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/outputs/context-3.json",
+  "immutableShardPacket": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/resumption-1/recovery-1/packets/context-3.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "failedRepairOutputReusable": false,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-contradictions-as-defeasible-costs.critique"
+    ],
+    "writableFieldCount": 1,
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-contradictions-as-defeasible-costs.critique",
+      "moveId": "con-contradictions-as-defeasible-costs",
+      "originalCritique": "Strongest feature: The reply directly contests a categorical contrast by invoking paraconsistent logic to show that contradiction can be survivable and defeasible, thereby supporting comparative assessment of logical and explanatory costs rather than treating inconsistency as automatic theoretical defeat. Principal limitation: Survivability does not establish that contradictions and ordinary explanatory awkwardness occupy one homogeneous continuum, because contradictions may retain distinctive inferential consequences even when explosion is blocked. Live burden: The position must provide principled dimensions for comparing heterogeneous costs and explain how those dimensions bear on the specific deliberative anomaly rather than only on abstract logical possibility. Locked score: The very strong band reflects recognizable conceptual support, explicit qualification, strong contact with the opposing distinction, and proportionate force, while compressed applicability and the remaining severity comparison constrain the move's broader contribution.",
+      "originalWords": 131,
+      "originalCharacters": 1059,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-contradictions-as-defeasible-costs",
+        "sectionId": "theoretical-costs-anomalies-and-stopping-points",
+        "side": "con",
+        "speaker": "Justin Clarke-Doane",
+        "moveKind": "reply",
+        "proposition": "Contradictions are defeasible theoretical costs rather than categorically decisive failures, placing them on a continuum with other explanatory anomalies.",
+        "importance": 2,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "63:54",
+        "sourceSpan": {
+          "startEvent": 1616,
+          "endEvent": 1707,
+          "startMs": 3834319,
+          "endMs": 4033760
+        },
+        "sourceExcerpt": "so I I do want to push back on the alleged contrast between contradictions and let's call them anomalies or something. Uh, you know, puzzles, whatever. Um, you know, one of the I think important developments of the last 50 to 60 years has been the development of parsistent logic. And what that did for our purposes here is to show that contradiction is just another kind of price",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-logic-distinctions"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-explanatory-not-contradictory-cost",
+            "pro-centrality-weighted-theory-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-contradictions-as-defeasible-costs-component-01",
+              "targetMoveId": "pro-explanatory-not-contradictory-cost",
+              "text": "Whether contradictions are categorically unlike explanatory anomalies or instead defeasible theoretical costs on a continuum.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-contradictions-as-defeasible-costs-component-02",
+              "targetMoveId": "pro-centrality-weighted-theory-cost",
+              "text": "Whether even contradiction costs may be comparatively weighed rather than treated as categorically decisive.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly rejects the categorical contrast and invokes paraconsistent logic to support treating contradictions as defeasible costs.",
+          "responsivenessWithinClass": {
+            "value": 87,
+            "rationale": "It explicitly contacts the decisive contrast and supplies a recognizable counterframework, though its applicability to the debated anomaly is compressed."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It explicitly contacts the decisive contrast and supplies a recognizable counterframework, though its applicability to the debated anomaly is compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is limited to defeasible theoretical cost rather than harmlessness, and the continuum thesis is clearly distinguished from denying contradiction."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Paraconsistent logic appropriately supports the limited claim that contradiction need not be categorically decisive, not that contradictions lack cost."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Even if contradictions are survivable, they may retain a distinctive logical cost unlike ordinary explanatory awkwardness.",
+          "decisiveQualification": "Defeasibility alone does not establish that all anomalies occupy one homogeneous continuum."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "Paraconsistent logic and responses to Russell provide specific support, with a remaining comparative gap concerning the exact severity of different cost types."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply fairly rejects categorical fatality but somewhat compresses the further step from survivability to a unified continuum of costs."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly pushes back on the contrast, cites the development of paraconsistent logic, and argues that contradiction can be treated as a theoretical price rather than automatic defeat.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
