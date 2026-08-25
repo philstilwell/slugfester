@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-publication-timeout-terminal-continuation-analysis",
+  "protocolId": "assessment-production-post-canary-batch-09-publication-timeout-terminal-continuation",
+  "status": "batch-09-publication-terminal-continuation-and-ten-debate-cohort-replay-passed",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "gate": {
+    "modelContextsPlanned": 4,
+    "modelContextsAttempted": 4,
+    "modelContextsPassed": 4,
+    "modelContextsFailed": 0,
+    "terminalRepairPassed": true,
+    "newlyCorrectedCritiques": 1,
+    "preservedPriorCorrectedCritiques": 5,
+    "resumedContextsPassed": 3,
+    "correctedShardOutputsValidated": 3,
+    "completeRecoveredDebatesValidated": 4,
+    "cohortDebatesValidated": 10,
+    "cohortMovesValidated": 180,
+    "cohortCritiquesValidated": 180,
+    "immutableFieldsChangedOutsideAuthorization": 0,
+    "attempts": 4,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherRecoveryContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "correctedFields": [
+    {
+      "field": "moveProse.con-contradictions-as-defeasible-costs.critique",
+      "words": 118,
+      "characters": 1002,
+      "sentences": 4
+    }
+  ],
+  "totals": {
+    "modelContexts": 4,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "deterministicPublicationCompilation": true,
+    "furtherRecovery": false,
+    "retries": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-09-deterministic-publication-compilation-under-standing-authorization"
+}
