@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "status": "batch-09-debate-170-seven-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-25T04:39:33.958Z",
+  "gateCompletedAt": "2026-08-25T04:42:37.291Z",
+  "contextsPlanned": 7,
+  "contextsAttempted": 7,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 7,
+  "invalidContexts": 0,
+  "attempts": 7,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 183331,
+  "aggregateModelElapsedMs": 312177,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:39:33.960Z",
+      "completedAt": "2026-08-25T04:40:07.864Z",
+      "elapsedMs": 33904,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-reliable-reason-theistic-ground.critique",
+        "moveProse.pro-divine-ground-morality-equality.critique"
+      ],
+      "copiedInputBytes": 31242,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "10a8899294d5d5a4e11917d77b290402a1bd532c123c2593f840cf855d46be94",
+      "stderrSha256": "8383b39fe3a30f0da379560a8d0e71541ee8a0f68062147d954082be7f7d5907",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "25fd59880c0e060e6369856d2137babd44ef660e9db2dfd0300f8f178a0f6cf1",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-reliable-reason-theistic-ground.critique",
+            "words": 118,
+            "characters": 1024,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-divine-ground-morality-equality.critique",
+            "words": 119,
+            "characters": 937,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:40:07.877Z",
+      "completedAt": "2026-08-25T04:40:54.272Z",
+      "elapsedMs": 46395,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-first-cause-parity.critique",
+        "moveProse.con-evolution-explains-design.critique"
+      ],
+      "copiedInputBytes": 31729,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "2d8c789297bb8458217ea7d8b1d96fa079c16bd376e9d791f77afeaaf065c49b",
+      "stderrSha256": "510ad55984ab70ad37f1f84a00b781be023c974e4628b76055fed2655d6afe97",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "12b5f8b0fce333362482dcb09284d5a9bb921e6ac62c477f19c7f25ee1a7bc1f",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-first-cause-parity.critique",
+            "words": 118,
+            "characters": 933,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-evolution-explains-design.critique",
+            "words": 118,
+            "characters": 907,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:40:07.877Z",
+      "completedAt": "2026-08-25T04:40:54.119Z",
+      "elapsedMs": 46242,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-faith-needs-evidence.critique",
+        "moveProse.con-cultural-contingency-of-belief.critique"
+      ],
+      "copiedInputBytes": 31803,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "38f537e17913bea20064b4885526b4e790c1c05d677544ac70e6a28667d58960",
+      "stderrSha256": "b5d97cd6effab33c90d64fbb30eabba6ebbfc72a43f8ee88ad3d3fb1d34cad61",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "4333d9718e8c5790ebbf3fe26de138d9050b24cdb53f0890c3985f6651f54077",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-faith-needs-evidence.critique",
+            "words": 116,
+            "characters": 1033,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-cultural-contingency-of-belief.critique",
+            "words": 116,
+            "characters": 957,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:40:54.283Z",
+      "completedAt": "2026-08-25T04:41:36.407Z",
+      "elapsedMs": 42124,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-resurrection-evidence-insufficient.critique",
+        "moveProse.pro-miracle-natural-law-coherence.critique"
+      ],
+      "copiedInputBytes": 33395,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "30e29f3fdb46154bbb458d2d90407fcf7c549d484fffb976fce7faceda1f00e2",
+      "stderrSha256": "a0587eb19ab16b8cda892418781cc6cad7c899529fbcfa2b71fa68644e0242f2",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "f4a80e902f0c5bb00f7eb4b633e962c890738badc487a49d218ec84f3c66c3c5",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-resurrection-evidence-insufficient.critique",
+            "words": 113,
+            "characters": 1067,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-miracle-natural-law-coherence.critique",
+            "words": 116,
+            "characters": 1031,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:40:54.283Z",
+      "completedAt": "2026-08-25T04:41:38.716Z",
+      "elapsedMs": 44433,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-suffering-christian-hope-response.critique",
+        "moveProse.con-secular-response-to-suffering.critique"
+      ],
+      "copiedInputBytes": 32951,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "437d84163ac3d71016dac065e75587ce32cc513b9424d36339fbd704d116ac55",
+      "stderrSha256": "78c4656e90116a012b9b60d5191a4771191d6b3aa6f081fb1133ec647d99d8c8",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "6ba6a77a8666c5c35af8f7d73f4c673ed8fab4ceef7862318d42156812de5f77",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-suffering-christian-hope-response.critique",
+            "words": 115,
+            "characters": 982,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-secular-response-to-suffering.critique",
+            "words": 117,
+            "characters": 965,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:41:36.418Z",
+      "completedAt": "2026-08-25T04:42:37.281Z",
+      "elapsedMs": 60863,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-divine-solidarity-eternal-compensation.critique",
+        "moveProse.con-objective-secular-morality.critique"
+      ],
+      "copiedInputBytes": 33281,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "e6dccaee8728fce103a08acb795e30388f9c0df786df9a069fc0598706a7a6e4",
+      "stderrSha256": "c4ef1f5818cc6862ac74c39acfaa1b46b0db8fbb6886c529978d4c6158e22757",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "e92e5d5a981ae2a5fb15052cf917db408ac1de314b12be64e1be9bb7cf34d45a",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-divine-solidarity-eternal-compensation.critique",
+            "words": 118,
+            "characters": 1002,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-objective-secular-morality.critique",
+            "words": 117,
+            "characters": 908,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "170",
+      "debateId": "singer-lennox-is-there-god-2011",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-25T04:41:38.727Z",
+      "completedAt": "2026-08-25T04:42:16.943Z",
+      "elapsedMs": 38216,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-self-authored-human-purpose.critique",
+        "moveProse.pro-created-human-worth-purpose.critique"
+      ],
+      "copiedInputBytes": 32012,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "abd5921adaa5d978515d81681bdb0891a9d2e2611e243f28af00b4b7ef5a33e9",
+      "stderrSha256": "2e48d4e7d397bda44d19be799de5687e1695bcb4d2db1dd717b58760131e1477",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "2314c12625a25c10ee48c4158ad8e6bb5223b853e922d2ded49956f0e9252425",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "170",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-self-authored-human-purpose.critique",
+            "words": 116,
+            "characters": 977,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-created-human-worth-purpose.critique",
+            "words": 118,
+            "characters": 906,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingNineContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

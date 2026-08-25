@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-debate-170-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-09-debate-170-publication-repair-1",
+  "status": "batch-09-debate-170-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextsPlanned": 7,
+    "repairContextsAttempted": 7,
+    "repairContextsPassed": 7,
+    "repairContextsFailed": 0,
+    "repairContextsUnattempted": 0,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "moveProse.pro-reliable-reason-theistic-ground.critique",
+        "words": 118,
+        "characters": 1024,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-divine-ground-morality-equality.critique",
+        "words": 119,
+        "characters": 937,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-first-cause-parity.critique",
+        "words": 118,
+        "characters": 933,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-evolution-explains-design.critique",
+        "words": 118,
+        "characters": 907,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-faith-needs-evidence.critique",
+        "words": 116,
+        "characters": 1033,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-cultural-contingency-of-belief.critique",
+        "words": 116,
+        "characters": 957,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-resurrection-evidence-insufficient.critique",
+        "words": 113,
+        "characters": 1067,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-miracle-natural-law-coherence.critique",
+        "words": 116,
+        "characters": 1031,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-suffering-christian-hope-response.critique",
+        "words": 115,
+        "characters": 982,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-secular-response-to-suffering.critique",
+        "words": 117,
+        "characters": 965,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-divine-solidarity-eternal-compensation.critique",
+        "words": 118,
+        "characters": 1002,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-objective-secular-morality.critique",
+        "words": 117,
+        "characters": 908,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-self-authored-human-purpose.critique",
+        "words": 116,
+        "characters": 977,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-created-human-worth-purpose.critique",
+        "words": 118,
+        "characters": 906,
+        "sentences": 4
+      }
+    ],
+    "correctedFieldCount": 14,
+    "movesValidated": 20,
+    "critiquesValidated": 20,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 7,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/outputs/debate-170.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutputs": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-0.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-1.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-2.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-3.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-4.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-5.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/outputs/packet-6.json"
+    ],
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/merged/debate-170.json",
+    "completeValidation": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-09/publication-reconstruction/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 7,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "nineContextResumptionManifestPreparation": true,
+    "nineContextModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-activate-and-execute-the-separate-nine-context-batch-09-publication-resumption-under-standing-authorization"
+}
