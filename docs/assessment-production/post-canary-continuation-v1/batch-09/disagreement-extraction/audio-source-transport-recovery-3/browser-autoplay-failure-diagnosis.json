@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-audio-source-transport-recovery-3-browser-autoplay-failure-diagnosis",
+  "status": "preserved-batch-09-debate-170-authenticated-browser-autoplay-boundary-failure-diagnosed-stop-required",
+  "batchNumber": 9,
+  "checkpointCommit": "a90ed4233486ab6f1b108d867930ae23570fa07a",
+  "userAuthorization": {
+    "approval": "I approve.",
+    "resolvedAntecedent": "the proposed third-level Debate 170 recovery using existing Chrome YouTube authentication, without reading or preserving unrelated browser data, with no audio playback or semantic evaluation",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization.json": "6519cfbd7828584122cca8ce5168b104f41bb256172b1db0073c8133c28de662",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-2/failure-diagnosis.json": "404f8987178b23b6082a378a8542a5cbd10471b4ad95f144330fa2ed850dbaf3"
+  },
+  "executionBoundary": {
+    "browser": "Chrome through the approved browser-control surface",
+    "target": "https://www.youtube.com/watch?v=HoTILnpd3q8",
+    "targetTitle": "Peter Singer vs John Lennox | Is There a God? Debate - YouTube",
+    "cookiesInspected": 0,
+    "cookiesExported": 0,
+    "browserStorageInspected": 0,
+    "downloadsStarted": 0,
+    "downloadsCompleted": 0,
+    "sourceFilesWritten": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "authenticated-youtube-page-autoplay-violated-frozen-no-playback-boundary",
+    "observedPlayerStateOnInitialPageSnapshot": "Pause (k)",
+    "observedPlayerPositionBeforePause": "0:06 / 1:46:04",
+    "maximumObservedAutoplaySeconds": 6,
+    "pauseActionTakenImmediatelyAfterDetection": true,
+    "semanticAudioEvaluationPerformed": false,
+    "temporaryTabClosed": true,
+    "canonicalSourceIdentityChanged": false,
+    "protectedRepositoryEvidenceChanged": false
+  },
+  "diagnosis": {
+    "cause": "the canonical YouTube watch page began playback automatically on navigation before a page-level pause control could be applied",
+    "frozenNoPlaybackControlSatisfied": false,
+    "continuingThisRecoveryAuthorized": false,
+    "browserAuthenticationDataPreservedOutsideChrome": false,
+    "audioSourceRecoveryCompleted": false,
+    "downstreamAudioVerificationBlocked": true
+  },
+  "authorization": {
+    "diagnosisValidationCommitAndPush": true,
+    "furtherBrowserNavigation": false,
+    "furtherSourceAttempt": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextRequiredAction": "obtain-explicit-user-direction-for-a-no-playback-source-supply-or-a-new-recovery-method-that-can-guarantee-playback-is-disabled-before-source-access"
+}
