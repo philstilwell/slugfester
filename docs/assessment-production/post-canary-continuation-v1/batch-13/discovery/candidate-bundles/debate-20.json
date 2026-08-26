@@ -1,0 +1,859 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-bundle",
+  "protocolId": "assessment-production-score-stability-v2.1.2-bounded-end-discovery",
+  "debateNumber": "20",
+  "debateId": "hitchens-hitchens-iraq-god-2008",
+  "completeSourceDiscovery": {
+    "chunks": 4,
+    "everyEventOwnedExactlyOnce": true,
+    "everyCoreReportedComplete": true,
+    "silentDeduplicationPerformed": false,
+    "localTargetIdsModelAuthored": false,
+    "selectedTargetTopologyDeferredToPrimaryA": true,
+    "repositoryDerivedLexicalTokenCounts": true,
+    "modelAuthoredLexicalTokenCounts": false,
+    "modelAuthoredBoundedEndEvents": true,
+    "startDependentLockedLookaheadCapacityStructurallyBounded": true,
+    "minimumLexicalTokens": 12,
+    "boundaryContinuationRule": "a move beginning in lookbehind remains owned by the predecessor chunk"
+  },
+  "candidateCount": 38,
+  "candidates": [
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-01",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "constructive",
+      "proposition": "The Iraq invasion was an arrogant idealist undertaking whose foreseeable human consequences and strategic folly made it wrong.",
+      "sourceSpan": {
+        "startEvent": 110,
+        "endEvent": 233
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Peter the opening Iraq speech, and the uninterrupted first-person argument continues until the next introduction.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is Peter's principal constructive case on the Iraq motion, grounding opposition in experience of warfare, civilian harm, self-righteousness, and failed intervention.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Peter explains his movement from inherited faith in beneficial war toward skepticism, then argues that the invasion embodied unserious militarism, arrogance, and dangerous idealism.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Removing Saddam Hussein was necessary because his regime committed mass atrocities, attacked neighboring states, supported terrorism, and pursued catastrophic weapons capabilities.",
+      "sourceSpan": {
+        "startEvent": 304,
+        "endEvent": 387
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Christopher's Iraq speech, which remains uninterrupted throughout this source window.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This directly supplies the central justification for intervention by presenting Saddam's regime as an extraordinary and continuing threat to Iraqis, neighboring states, and international security.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter's claim that the invasion was an arrogant, mistaken idealist war whose harms were foreseeable."
+      },
+      "contextSummary": "Christopher disputes the standard antiwar account by detailing Saddam's genocidal repression, regional aggression, nuclear ambition, and the need to move Iraq into a post-Saddam era.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "A recovered and federal Iraq could benefit Iraqis while weakening the regional power of the Iranian and Saudi theocracies and improving control of vital oil resources.",
+      "sourceSpan": {
+        "startEvent": 388,
+        "endEvent": 427
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Christopher's uninterrupted Iraq speech and follows his explicit transition to reviewing the intervention's accomplishments.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The argument adds a strategic affirmative rationale beyond regime removal, claiming that Iraq's geography, economy, and position between rival theocracies make its political order consequential.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter's position that the intervention lacked serious justification and reflected destructive idealism."
+      },
+      "contextSummary": "Christopher characterizes Iraq as a strategic keystone and argues that ending a criminal family's control could aid Iraqis, diversify oil power, and constrain neighboring theocracies.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-04",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "The intervention produced concrete gains by prosecuting Saddam's leadership, restoring the southern marshes, securing Kurdish autonomy, and enabling flourishing civil society in northern Iraq.",
+      "sourceSpan": {
+        "startEvent": 428,
+        "endEvent": 462
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted speaker remains Christopher, who introduces additional accomplishments and closes this enumerated portion before shifting to concluding emphasis.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "These claimed results are offered as practical evidence that intervention achieved humanitarian, environmental, judicial, and democratic benefits despite acknowledged failures and costs.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter's assertion that nothing since the invasion demonstrated that the idealist war was justified or successful."
+      },
+      "contextSummary": "Christopher enumerates post-intervention outcomes involving public justice, ecological restoration, Kurdish self-government, commerce, press freedom, democracy, and civil society.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-05",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "The invasion imposed immense financial, human, strategic, and moral costs while empowering Iran and failing any consistent principle for humanitarian intervention.",
+      "sourceSpan": {
+        "startEvent": 478,
+        "endEvent": 547
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the next five-minute turn to Peter, whose uninterrupted response begins its Iraq consequences argument at this point.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is Peter's principal responsive case against the claimed achievements, combining an adverse balance sheet with an inconsistency challenge and firsthand evidence of Iraqi opposition.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher's claim that removing Saddam was a great strategic decision producing humanitarian and democratic achievements."
+      },
+      "contextSummary": "Peter lists fiscal expense, deaths, torture, Iranian influence, lost military capacity, and diminished moral authority, then argues that selective intervention lacks coherence and local legitimacy.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Iraq had forfeited ordinary sovereignty through genocide, prohibited weapons, support for international terrorism, and repeated aggression against neighboring states.",
+      "sourceSpan": {
+        "startEvent": 636,
+        "endEvent": 690
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This occurs in Christopher's uninterrupted rebuttal turn, with explicit engagement of Peter's objection and a numbered statement of four criteria.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The four-part forfeiture standard directly answers the selectivity objection and supplies a general legal-moral framework under which intervention against Iraq is presented as warranted.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter's objection that intervention was inconsistently selective because many other oppressive regimes were not invaded."
+      },
+      "contextSummary": "Christopher identifies four exceptional offenses that can defeat sovereignty, applies all four to Iraq, and argues that implementation failures do not invalidate the delayed removal of Saddam.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-07",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Even if a first cause were plausible, there is no adequate reasoned path from deism to a personal theism that supervises human conduct and answers prayers.",
+      "sourceSpan": {
+        "startEvent": 710,
+        "endEvent": 752
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Christopher for the God proposition, and this uninterrupted opening states his atheist position and deism-theism distinction.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is the foundational epistemic case for the anti-theist side, separating a speculative creator from the much stronger claims required by revealed and personal religion.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher argues that atheism chiefly denies sufficient reason for belief, then maintains that accepting a prime mover would leave the entire case for an interventionist personal deity unproved.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-08",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Belief in an omniscient personal deity is morally repellent because it imagines permanent surveillance, thought control, total ownership, and punishment extending beyond death.",
+      "sourceSpan": {
+        "startEvent": 753,
+        "endEvent": 805
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher remains the uninterrupted speaker and explicitly introduces this as a principal reason he is glad the religious proposition is untrue.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The argument advances the anti-theist case from lack of evidence to moral corruption, portraying divine authority itself as a totalitarian ideal incompatible with liberty and individuality.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher compares divine rule to an inescapable dictatorship, arguing that continuous judgment and posthumous punishment make the religious promise a form of tyranny rather than consolation.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-09",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religion insults human moral integrity by claiming that people cannot recognize or choose right action without permission and instruction from a celestial authority.",
+      "sourceSpan": {
+        "startEvent": 806,
+        "endEvent": 826
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same uninterrupted Christopher speech marks this as his second argument and develops it through a distinct conclusion about human dignity.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly addresses whether religion supplies moral authority, arguing instead that externalizing moral knowledge to divine command abolishes human solidarity, honesty, decency, and dignity.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher contends that humans possess capacities for solidarity, fairness, and moral judgment, and that treating those capacities solely as divine gifts diminishes moral agency and integrity.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-10",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religion was humanity's earliest and least informed explanatory system, but better natural explanations now make its supernatural and totalitarian persistence a danger to civilization.",
+      "sourceSpan": {
+        "startEvent": 827,
+        "endEvent": 869
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher explicitly begins a further pragmatic argument inside the core, and the uninterrupted reasoning reaches its substantive conclusion in the delivered lookahead.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This supplies the historical and pragmatic branch of the anti-theist case, linking religion's origins in ignorance to its present obstruction of scientific knowledge and civilizational progress.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher describes religion as an early attempt at truth, philosophy, morality, and medicine that has been superseded by natural explanations yet still restricts knowledge and progress.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Without transcendent authority, atheism supplies no binding basis for morality, and its comfortable advocates overlook practical social consequences.",
+      "sourceSpan": {
+        "startEvent": 1000,
+        "endEvent": 1060
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Peter the floor at event 934, and the uninterrupted first-person argument remains his through this window.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly advances the con side's central claim that moral obligation requires authority beyond individual preference and links secularization to social disorder.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher Hitchens's claim that believers cannot identify a uniquely religious moral action."
+      },
+      "contextSummary": "Peter answers Christopher's moral challenge by arguing that atheism licenses preference and by presenting violent and permissive social conditions as practical atheism.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Belief in divine order supports self-government, whereas societies that expel God tend to replace divine authority with destructive human deification.",
+      "sourceSpan": {
+        "startEvent": 1061,
+        "endEvent": 1104
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous extension of Peter's allotted rebuttal, marked by his personal comparisons involving Britain and North Korea.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move supplies the positive theistic case for moral order and directly contests the use of North Korea as evidence against religion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher Hitchens's portrayal of North Korea as a religiously structured totalitarian society."
+      },
+      "contextSummary": "Peter argues that an ordered universe warrants seeking transcendent law and portrays North Korea and British decline as consequences of rejecting God.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religiously mandated circumcision and the Abrahamic sacrifice story are serious moral indictments, not trivial subjects made objectionable merely by mockery.",
+      "sourceSpan": {
+        "startEvent": 1163,
+        "endEvent": 1194
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Peter's preceding turn ends at event 1162, after which Christopher explicitly answers the criticism of his treatment of circumcision.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move defends Christopher's argumentative method while grounding his anti-theistic case in concrete harms and demanded submission to divine command.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's charge that Christopher trivializes religion through jokes about circumcision."
+      },
+      "contextSummary": "Christopher responds that genital cutting and Abraham's willingness to sacrifice his son expose real harms and the degrading submission demanded by religion.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Vicarious redemption is immoral because guilt and moral responsibility cannot legitimately be transferred to an innocent sacrificial substitute.",
+      "sourceSpan": {
+        "startEvent": 1195,
+        "endEvent": 1245
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher continues uninterrupted, introduces vicarious redemption as a distinct thesis, and develops it through the end of the audience exchange.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This attacks a foundational Christian account of salvation on moral grounds and supports the pro side's broader claim that religion corrupts moral judgment.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's defense of Christianity as a serious and beneficial source of moral authority."
+      },
+      "contextSummary": "Christopher distinguishes transferable debts or punishments from nontransferable guilt, presenting sacrificial atonement as humiliating both substitute and adherent.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-05",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "The universe's accelerating expansion, impending desolation, and pervasive suffering undermine claims that it reflects competent and benevolent design.",
+      "sourceSpan": {
+        "startEvent": 1246,
+        "endEvent": 1288
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher opens a distinct cosmological answer and retains the floor until his explicit closing thanks immediately before Peter is recalled.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move directly answers the theistic argument from cosmic order and reframes observable cosmology as evidence against an able and benevolent designer.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's argument that cosmic existence and order reasonably point toward an eternal divine law."
+      },
+      "contextSummary": "Christopher answers the question of why anything exists by invoking cosmic expansion and suffering, concluding that alleged design implies incompetence or cruelty.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "The binding of Isaac repudiates human sacrifice rather than recommending it, and Christianity redirects destructive preexisting impulses while offering atonement and hope.",
+      "sourceSpan": {
+        "startEvent": 1289,
+        "endEvent": 1363
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly assigns Peter five minutes, and Peter's sustained rebuttal continues until applause closes his turn.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This provides a direct interpretive defense of a central biblical story and a broader functional defense of Christianity against the charge of sanctifying cruelty.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher Hitchens's presentation of Abraham's willingness to sacrifice Isaac as divinely demanded depravity."
+      },
+      "contextSummary": "Peter argues that the unused knife is the story's point, that Christianity displaced sacrifice, and that Christopher systematically credits religious good elsewhere while blaming religious evil on God.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "The Abrahamic story remains morally degrading because divine approval depends first on a father's demonstrated willingness to kill his child.",
+      "sourceSpan": {
+        "startEvent": 1365,
+        "endEvent": 1388
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After applause Christopher begins a new turn and directly revisits Peter's interpretation of Abraham before shifting to a different moral argument.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move isolates the disputed moral condition within the biblical narrative and preserves the pro side's critique despite Peter's emphasis on the sacrifice being stopped.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's contention that the binding of Isaac teaches the abolition rather than endorsement of child sacrifice."
+      },
+      "contextSummary": "Christopher argues that the story still requires proven willingness to obey a lethal command, making the eventual reprieve compatible with servile submission.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Invoking divine authorization does not cure nihilism or relativism but can grant perpetrators unlimited moral permission and uniquely intensify cruelty.",
+      "sourceSpan": {
+        "startEvent": 1389,
+        "endEvent": 1468
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher explicitly changes to morality, addresses Peter by name, and sustains the argument through his paired moral challenges and conclusion.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This directly resolves the debate's moral-authority question by contrasting ordinary secular moral capacity with the expansive license supplied by claimed divine permission.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's claim that atheism produces nihilism while divine authority grounds stable and universal morality."
+      },
+      "contextSummary": "Christopher separates atheism from nihilism, argues that claims of divine backing facilitate atrocities, and challenges believers to identify uniquely religious moral good.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Human solidarity and ordinary decency arise naturally without religious command, while enlightened self-interest can reinforce concern for other people's welfare.",
+      "sourceSpan": {
+        "startEvent": 1562,
+        "endEvent": 1665
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher restates the audience question in the first person and delivers the full answer until Peter begins a clearly contrasting response.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move supplies a constructive secular account of moral motivation using innate solidarity, scriptural examples, and mutually beneficial concern for welfare.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Answering an audience question, Christopher rejects cultivated selfishness, treats decency as innate, and uses Sinai, the Samaritan, and social welfare examples to connect solidarity with self-interest.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Recognizing moral rules does not explain their authority, and atheists who affirm objective right and wrong are borrowing morality from religion without a secular foundation.",
+      "sourceSpan": {
+        "startEvent": 1666,
+        "endEvent": 1691
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A new contrasting voice introduces two objections immediately after Christopher finishes, and the content matches Peter's established transcendent-authority position.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly challenges the explanatory sufficiency of innate solidarity and restates the con side's foundational claim that objective moral obligation requires religion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher Hitchens's claim that innate human solidarity supplies morality without religious authority."
+      },
+      "contextSummary": "Peter distinguishes knowing a rule from grounding it, argues preference cannot establish objective rightness, and adds that societies abandoning hell create earthly hell.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Objective truth is an indispensable ideal requiring people to revise their views when confronted by contrary facts, whereas religious moral demands create permanent guilt and priestly dependence.",
+      "sourceSpan": {
+        "startEvent": 1706,
+        "endEvent": 1765
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the truth question to Christopher, whose sustained answer is followed by an explicit invitation for Peter to respond.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move supplies Christopher's account of truth and moral reasoning while directly connecting unattainable religious commandments to institutional control by priests.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience question asking whether truth exists and how human beings can determine it."
+      },
+      "contextSummary": "After Peter argues that atheists borrow religious morality, Christopher answers a question about truth and develops an anti-theistic contrast between attainable reciprocity and guilt-producing commandments.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-02",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Tax exemptions and government payments to religious institutions are disguised subsidies that violate church-state separation and allow religion to corrupt democratic politics.",
+      "sourceSpan": {
+        "startEvent": 1780,
+        "endEvent": 1835
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question is directed to Christopher and the answer uses his secular constitutional argument, political examples, and characteristic anti-religious conclusion.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move translates the anti-theistic case into a concrete institutional claim about establishment, public subsidy, constitutional design, and electoral politics.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience question about removing church tax privileges and the resulting effect on separation of church and state."
+      },
+      "contextSummary": "Following the truth discussion, an audience member asks how ending tax privileges for churches would affect church-state separation, prompting a constitutional and political response.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-03",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Because prior American support for Saddam and nonintervention were also imperial policies, the decisive distinction is that the 2003 intervention placed American power on the right side in Iraq.",
+      "sourceSpan": {
+        "startEvent": 1920,
+        "endEvent": 1991
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question explicitly challenges Christopher over his Iraq position, and the first-person answer defends the policy he publicly advocated.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is a direct and extended defense of the Iraq intervention, distinguishing it from earlier American backing of Saddam and from status-quo nonintervention.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The accusation that the United States invasion of Iraq was an imperial adventure comparable to conduct Christopher had previously opposed."
+      },
+      "contextSummary": "An audience member invokes Christopher's history of criticizing empire and George W. Bush's religious certainty to challenge his support for the Iraq invasion.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-04",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Launching an aggressive war is morally and logically different from refraining from war, so describing intervention and nonintervention as equally imperial is casuistry.",
+      "sourceSpan": {
+        "startEvent": 1993,
+        "endEvent": 2003
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response follows Christopher's Iraq defense, returns his earlier charge of casuistry, and is delivered in Peter's opposing argumentative position.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The concise rebuttal directly rejects the central equivalence supporting Christopher's defense and restores aggression as the controlling moral distinction.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher's claim that maintaining Saddam's status quo through nonintervention would have been just as imperial as invading Iraq."
+      },
+      "contextSummary": "Immediately after Christopher argues that both intervention and preservation of Saddam's regime were imperial choices, Peter challenges the equivalence at the heart of that defense.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-05",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Intelligent design deserves fair skeptical consideration because the origins and mechanisms of nature remain open to dispute and Darwinian institutions suppress opposing arguments.",
+      "sourceSpan": {
+        "startEvent": 2071,
+        "endEvent": 2120
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After repeated clarification, Peter directly answers the intelligent-design question and contrasts his uncertainty with Dawkins and Darwinist institutions.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move advances Peter's broader case that secular scientific authority can become dogmatic and that theistic alternatives should not be excluded from discussion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience challenge asking how Peter reconciles fossils with belief and whether intelligent design has intellectual merit."
+      },
+      "contextSummary": "A confused exchange over fossils and a young earth is narrowed to whether intelligent design has merit, after which Peter presents it as a suppressed skeptical current.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Evolution is conclusively established even if its precise mechanisms remain debated, so intelligent design merits no equal standing in science education and subsidized churches should reciprocally teach Darwinism.",
+      "sourceSpan": {
+        "startEvent": 2122,
+        "endEvent": 2177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher takes the floor directly after Peter's intelligent-design defense and answers with molecular, fossil, peer-review, and classroom arguments.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The response contests Peter's epistemic parity between evolution and intelligent design while tying scientific standards back to public subsidy and religious privilege.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter's argument that intelligent design is a legitimate skeptical current suppressed by an intolerant Darwinist establishment."
+      },
+      "contextSummary": "Peter's defense of intelligent design prompts Christopher to distinguish debate over evolutionary mechanisms from denial that evolution occurred and to reject classroom equivalence.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Claims of beneficial religious revelation cannot be credited selectively, because the same asserted divine inspiration also motivates violent acts and leaves the evidentiary balance unchanged.",
+      "sourceSpan": {
+        "startEvent": 2211,
+        "endEvent": 2244
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Peter hands the question to Christopher, who explicitly addresses religious experience through William James and examples of both benign and violent inspiration.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move attacks experiential evidence for religion by requiring symmetrical accounting for revelations that produce admirable conduct and revelations that produce atrocities.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience question whether noble actions following an individual's religious experience should be credited to religion."
+      },
+      "contextSummary": "After the audience question is restated as a challenge about subjective religious experience producing noble conduct, Christopher answers by demanding consistent treatment of all claimed revelations.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-08",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human beings on both sides are capable of wickedness and religion can be dangerously misunderstood, but religious belief has produced more good than harm and abandoning it threatens civilization.",
+      "sourceSpan": {
+        "startEvent": 2245,
+        "endEvent": 2265
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Peter explicitly asks to respond, rejects the preceding formulation, and states the comparative moral claim central to his defense of religious belief.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move concedes wrongdoing by believers while presenting Peter's core affirmative claim that religion is beneficial on balance and socially indispensable.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher's argument that harmful claimed revelations must be charged to religion alongside beneficial religious experiences."
+      },
+      "contextSummary": "Christopher's symmetrical accounting of noble and violent revelations leads Peter to reject blame-trading, concede universal human wickedness, and defend religion's net contribution.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-09",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Twentieth-century totalitarian crimes do not establish that rational atheism causes tyranny because fascism allied with churches and communist regimes reproduced religious structures of worship, credulity, and inherited servility.",
+      "sourceSpan": {
+        "startEvent": 2303,
+        "endEvent": 2459
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Christopher identifies the audience accusation as the question he will answer and gives a sustained first-person rebuttal covering fascist and communist regimes.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The extended response directly addresses the historical case against atheism and reframes totalitarian violence as continuous with religious institutions, habits, and alliances.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience accusation that officially atheist regimes repeatedly committed mass killing and that atheism in government therefore kills without limit."
+      },
+      "contextSummary": "An audience member cites Trotsky, China, and other communist atrocities as proof that political atheism causes unlimited killing, prompting Christopher's historical counterargument.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-10",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "The French Revolutionary Terror and the explicitly anti-religious Soviet system demonstrate that enlightened secular self-conceptions can produce mass persecution, and portraying Soviet ideology as religious evades its avowed atheism.",
+      "sourceSpan": {
+        "startEvent": 2464,
+        "endEvent": 2513
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Peter, who refers to Christopher's preceding answer and contrasts it with his own experience living in the Soviet Union.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The rebuttal directly contests Christopher's reinterpretation of secular totalitarianism and supplies Peter's principal historical evidence that institutional atheism can persecute brutally.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher's claim that fascist and communist totalitarian systems depended on religious alliances or replicated inherited religious patterns rather than rational atheism."
+      },
+      "contextSummary": "After Christopher attributes totalitarianism to church alliances and pseudo-religious habits, Peter calls the answer evasive and cites revolutionary France and Soviet anti-religious persecution.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-01",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Soviet rule retained a pseudo-religious nationalist structure by appropriating Russian Orthodox institutions and traditions.",
+      "sourceSpan": {
+        "startEvent": 2514,
+        "endEvent": 2535
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly answers Peter Hitchens, and its anti-theistic position and first-person challenge align with Christopher Hitchens.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly contests the claimed atheist character of the Soviet regime, a central example in the dispute over religion and political evil.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's claim that the Soviet Union was an atheist regime defined by hostility toward God and religion."
+      },
+      "contextSummary": "Peter had characterized Soviet persecution as decisive proof of an atheist regime; Christopher answers by emphasizing Orthodoxy's recurring alliance with Russian state power.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-02",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "A valid indictment of secular humanism requires an example of a state adopting humanist teachings and consequently descending into tyranny.",
+      "sourceSpan": {
+        "startEvent": 2536,
+        "endEvent": 2544
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted continuation of Christopher Hitchens's answer reiterates his earlier challenge concerning explicitly humanist governments.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The challenge supplies Christopher's principal criterion for distinguishing atrocities committed under secular labels from atrocities caused by humanist ideas.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's use of revolutionary and Soviet atrocities to associate atheism with murderous government."
+      },
+      "contextSummary": "After disputing the Soviet example, Christopher shifts the burden to identifying a government grounded in named humanist thinkers that became tyrannical because of those teachings.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "side": "con",
+      "speaker": "Peter Hitchens",
+      "moveKind": "reply",
+      "proposition": "The Bolshevik regime's deliberate and murderous persecution of religion makes its classification as a religious phenomenon untenable.",
+      "sourceSpan": {
+        "startEvent": 2545,
+        "endEvent": 2558
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the opposing rejoinder to Christopher's challenge, followed by Christopher resuming the anti-clerical counterargument in the next turn.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "It defends the Soviet Union as a genuine counterexample to Christopher's account and preserves Peter's broader claim that atheistic power can generate persecution.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Christopher Hitchens's denial that Soviet rule was genuinely atheist and his demand for a humanist regime that produced tyranny."
+      },
+      "contextSummary": "Peter returns to the Bolsheviks' violent suppression of religious belief and argues that redescribing that persecution as religious depends on ideological credulity.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-04",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Violent de-clericalization commonly reflects the cruelty of an entrenched clerical order and does not constitute a fair test of secular humanist values.",
+      "sourceSpan": {
+        "startEvent": 2559,
+        "endEvent": 2575
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker counters Peter's persecution argument with Christopher Hitchens's characteristic historical comparison and defense of secular humanism.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This supplies a causal alternative for anti-religious violence and argues that transitional conflicts cannot fairly demonstrate the consequences of secular humanist governance.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's argument that Bolshevik persecution of religion demonstrates the murderous character of an atheist regime."
+      },
+      "contextSummary": "Christopher broadens the discussion to historical de-clericalization and attributes its severity partly to the power and abuses of the clerical systems being displaced.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-05",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Vatican-directed celebration of Hitler illustrates institutional Christian accommodation of Nazism without making every believer personally culpable.",
+      "sourceSpan": {
+        "startEvent": 2576,
+        "endEvent": 2583
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same speaker continues through a closing analogy, and the moderator subsequently invites Peter Hitchens to offer a final response.",
+      "loadBearingLevel": "subsidiary",
+      "loadBearingReason": "The example reinforces Christopher's distinction between exposing institutional religious complicity and assigning collective guilt to an individual believer.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Peter Hitchens's effort to connect atheism generally with Soviet crimes while conceding crimes committed by religious institutions."
+      },
+      "contextSummary": "Christopher closes the exchange by invoking church cooperation with Hitler while expressly distinguishing institutional evidence from a personal accusation against Peter.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-06",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religious absolutism prevents an otherwise broadly acceptable territorial compromise between Israeli and Palestinian national movements.",
+      "sourceSpan": {
+        "startEvent": 2609,
+        "endEvent": 2652
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-directed final answer presents Christopher Hitchens's anti-theistic analysis in an extended uninterrupted turn ending with the debate's conclusion.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The example directly advances the motion-level claim that religion corrupts political judgment by converting a negotiable territorial conflict into incompatible divine entitlements.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Answering an audience question about secular responses to fundamentalism, Christopher describes two national claims and a widely supported partition before identifying rival sacred claims as the obstacle.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-07",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Christian apocalyptic support intensifies the conflict by treating Jewish political survival as an instrument for bringing about Armageddon.",
+      "sourceSpan": {
+        "startEvent": 2653,
+        "endEvent": 2676
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous extension of Christopher Hitchens's final answer, identifiable through its explicitly anti-apocalyptic and anti-religious conclusion.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "It extends the conflict example beyond Judaism and Islam to Christianity, supporting the broader thesis that religious eschatology favors catastrophic ends over human coexistence.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher adds American Christian apocalyptic activism to the competing Jewish and Muslim sacred claims and argues that its desired endpoint is destruction rather than settlement.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-004",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-08",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Apocalyptic religious movements actively seek civilization's destruction, making coexistence with them impossible and resistance necessary for survival.",
+      "sourceSpan": {
+        "startEvent": 2677,
+        "endEvent": 2689
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The final argumentative passage completes Christopher Hitchens's answer immediately before the moderator closes question time and thanks both debaters.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is the culminating motion-level inference from the preceding example, presenting destructive eschatology as an inherent civilizational danger rather than a peripheral abuse.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Christopher turns from the specific Middle East example to a general warning that apocalyptic congregations pursue destruction and must be recognized as a threat comparable to totalitarian ideologies.",
+      "candidateConfidence": "high"
+    }
+  ]
+}
