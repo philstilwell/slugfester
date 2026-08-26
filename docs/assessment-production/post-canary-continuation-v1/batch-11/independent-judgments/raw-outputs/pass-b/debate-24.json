@@ -1,0 +1,1836 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "24",
+  "debateId": "hitchens-olasky-religion-grace-2007",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-antitheist-poison-route",
+      "side": "pro",
+      "description": "Establish the anti-theist charge by arguing that religious claims lack adequate evidential foundations and that purported divine authority predictably corrupts moral judgment, personal autonomy, public institutions, and natural explanations.",
+      "successCriteria": "The route succeeds by connecting the falsity or explanatory redundancy of supernatural claims to distinctive mechanisms of harm, while showing that morality, charity, and solidarity remain available without religion and therefore do not offset or validate those mechanisms.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-poison",
+        "tier": "motion",
+        "description": "Show that religion adds false supernatural authority to human affairs and thereby produces pervasive harms without supplying indispensable goods."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-evidence",
+          "tier": "central",
+          "description": "Demonstrate that naturalistic explanations better account for religious diversity, human origins, calamity, and religious texts than supernatural claims do."
+        },
+        {
+          "bridgeId": "pro-central-authority",
+          "tier": "central",
+          "description": "Show how claims of divine authorization insulate coercion, theocracy, violence, bodily regulation, and subordination from ordinary moral correction."
+        },
+        {
+          "bridgeId": "pro-central-secular-sufficiency",
+          "tier": "central",
+          "description": "Establish that innate solidarity and secular agency adequately support morality, charity, courage, and social reform without supernatural motivation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-scripture",
+          "tier": "subsidiary",
+          "description": "Test Christianity's historical and moral credibility through disputed biblical narratives, miracle claims, inherited guilt, and divinely commanded violence."
+        },
+        {
+          "bridgeId": "pro-subsidiary-practical-harms",
+          "tier": "subsidiary",
+          "description": "Use civic, medical, and sectarian consequences to illustrate the practical operation of religious authority and belief."
+        }
+      ]
+    },
+    {
+      "routeId": "con-christian-grace-route",
+      "side": "con",
+      "description": "Defeat the sweeping indictment by presenting Christianity as a historically credible account of creation, fallenness, rescue, grace, and redemption whose adherents and institutions can produce charity, reform, civic goods, and transformed lives.",
+      "successCriteria": "The route succeeds if substantial religious good defeats the universal poison charge and if Christian grace supplies a coherent source of forgiveness and transformation, while objections from religious wrongdoing, secular morality, and disputed history receive burden-relevant answers.",
+      "motionBridge": {
+        "bridgeId": "con-motion-grace",
+        "tier": "motion",
+        "description": "Show that Christianity cannot be wholly poisonous because grace and Christian commitment produce material moral, personal, civic, and charitable goods."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-burden",
+          "tier": "central",
+          "description": "Require the anti-theist charge to account consistently for religious benefits as well as harms rather than defining beneficial conduct as nonreligious by default."
+        },
+        {
+          "bridgeId": "con-central-grace",
+          "tier": "central",
+          "description": "Explain Christianity's core as undeserved rescue and forgiveness capable of sustaining repentance, sacrificial love, and personal transformation."
+        },
+        {
+          "bridgeId": "con-central-credibility",
+          "tier": "central",
+          "description": "Defend the historical and explanatory credibility of Christian belief against claims that scripture, creation, and miracles are merely ignorant inventions."
+        },
+        {
+          "bridgeId": "con-central-public-fruits",
+          "tier": "central",
+          "description": "Connect Christian conviction to durable charitable, reformist, medical, educational, and constitutional contributions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-context",
+          "tier": "subsidiary",
+          "description": "Contextualize difficult biblical violence and distinguish Christianity's central teaching from every act performed under a religious label."
+        },
+        {
+          "bridgeId": "con-subsidiary-secular-counterexamples",
+          "tier": "subsidiary",
+          "description": "Use secular oppression and inherited moral capital to challenge claims that removing religion eliminates poison or fully explains present moral norms."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "scope-causation-and-attribution",
+      "title": "Scope of the Poison Charge and Attribution of Good and Harm",
+      "weightPercent": 20,
+      "rationale": "Defines the motion-level burden and tests how religious motives should be attributed when believers perform charitable acts, commit harms, or participate in conduct also available to nonbelievers."
+    },
+    {
+      "sectionId": "truth-evidence-and-historical-credibility",
+      "title": "Religious Truth, Naturalistic Explanation, and Historical Credibility",
+      "weightPercent": 20,
+      "rationale": "Addresses whether supernatural creation, miracles, and scripture possess credible evidential support or whether evolution, religious diversity, and ordinary causation make divine agency unnecessary."
+    },
+    {
+      "sectionId": "divine-authority-scripture-and-human-freedom",
+      "title": "Divine Authority, Scriptural Morality, and Human Freedom",
+      "weightPercent": 22,
+      "rationale": "Covers the proposed mechanism by which divine commands may authorize coercion, violence, surveillance, and subordination, together with contextual defenses of biblical teaching and conduct."
+    },
+    {
+      "sectionId": "morality-grace-and-transformation",
+      "title": "Secular Morality, Christian Grace, and Personal Transformation",
+      "weightPercent": 23,
+      "rationale": "Tests whether morality and compassion arise independently from human solidarity or depend on common grace and inherited Christian formation, and whether forgiveness produces distinctive reform."
+    },
+    {
+      "sectionId": "charity-institutions-and-social-consequences",
+      "title": "Charity, Civic Institutions, and Social Consequences",
+      "weightPercent": 15,
+      "rationale": "Compares claims about religious service, abolition, education, liberty, medicine, theocracy, sectarian conflict, and secular oppression as practical consequences bearing on the motion."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-natural-origin-of-religion",
+      "sectionId": "truth-evidence-and-historical-credibility",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religious metaphysical claims are false explanations inherited from humanity's fearful and scientifically ignorant infancy rather than demonstrated truths.",
+      "sourceSpan": {
+        "startEvent": 82,
+        "endEvent": 137
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Hitchens the floor, and this passage remains within his uninterrupted opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive opening claim, so no earlier opposing move or reply demand exists for it to answer.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it clearly establishes a central naturalistic explanation, though its historical warrant remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The thesis is recoverable, but the categorical treatment of religious metaphysical claims leaves their full scope and exceptions unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt asserts falsity categorically while supplying a plausible origin story rather than evidence sufficient for every metaphysical claim."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Fear and ignorance can explain belief formation, but the inference from causal genealogy to the falsity of every metaphysical claim remains material."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The psychological and historical account is asserted generally, without representative documentation or comparison against truth-compatible origins of belief."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances naturalistic explanation, though it does not yet connect that explanation fully to the motion-level harm claim."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own genealogy of belief without developing and testing a distinct live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly calls religious metaphysical claims false and locates them in humanity's fearful, explanation-seeking infancy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-warrant-enables-theocracy",
+      "sectionId": "divine-authority-scripture-and-human-freedom",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Alleged divine authority becomes dictatorial temporal power insulated from ordinary challenge, with theocracy illustrating its capacity for cruelty and coercion.",
+      "sourceSpan": {
+        "startEvent": 193,
+        "endEvent": 254
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens remains the sole speaker throughout this opening segment, with no intervening turn or ambiguous attribution.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive opening move supplies an authority-based mechanism of harm and has no earlier opposing demand to answer.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it clearly supplies a central coercion mechanism, with only the generalization beyond its examples left compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The temporal-power claim and insulation mechanism are clear, with an implicit rather than explicit limitation to institutions claiming divine warrant."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The historical mechanism supports a strong risk claim, but the passage does not establish that all divine-authority claims become dictatorial."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The inference from unchallengeable divine authorization to insulated temporal coercion is coherent, with a bounded implicit generalization from historical forms."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Divine-right persecution supplies a concrete historical mechanism, but representativeness and comparison with noncoercive religious authority remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "This reaches the top of the central tier because it directly identifies the route's indispensable divine-authorization mechanism."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed alternative account of religious authority is examined closely enough to activate a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt describes temporal power as dictatorial, absolutist, and closed to ordinary challenge, illustrated through divine-right persecution.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-secular-government-protects-liberty",
+      "sectionId": "charity-institutions-and-social-consequences",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "American liberty depends on separating religion from the state, including freedom from religion, because competing faiths can seek coercive control of public institutions.",
+      "sourceSpan": {
+        "startEvent": 458,
+        "endEvent": 507
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The remarks form the concluding portion of Hitchens's opening statement before his thanks and the moderator's transition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-practical-harms"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive institutional example with no earlier opposing move or decisive reply component available for contact.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it supplies a clear practical illustration, although the broader causal comparison remains only partly developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The separation and liberty proposition is clear; the excerpt implicitly limits the danger to faiths capable of seizing governmental power."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The localized historical example adequately supports the claimed risk of interreligious coercion without requiring categorical universality."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The example coherently connects competing sectarian power with a need for separation, though the nationwide constitutional conclusion is partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The Danbury Congregationalist example is specific, but the move compresses documentation and broader comparison across American institutions."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it is a strong practical illustration of sectarian coercion rather than a complete motion-level demonstration."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt offers an institutional example and does not materially engage a developed contrary account of church-state relations."
+        }
+      },
+      "evidenceBasis": "The passage identifies Congregationalist persecution as a realistic local threat and connects religious rivalry with freedom from religion.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scope-universal-poison-burden",
+      "sectionId": "scope-causation-and-attribution",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Acknowledging religious wrongdoing does not prove that religion poisons everything, because substantial religious good would defeat the charge's universal scope.",
+      "sourceSpan": {
+        "startEvent": 570,
+        "endEvent": 591
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the floor to Olasky, and this passage occurs within his uninterrupted prepared opening response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-poison"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-warrant-enables-theocracy"
+        ],
+        "components": [
+          {
+            "componentId": "con-scope-universal-poison-burden-component-01",
+            "targetMoveId": "pro-divine-warrant-enables-theocracy",
+            "text": "Whether examples of religious coercion establish the universal claim that religion poisons everything.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies universal scope as the failure: acknowledged wrongdoing cannot prove everything is poisoned if substantial religious good exists.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, it explicitly attacks the decisive universal inference and states that any substantial good defeats that formulation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The challenge precisely fixes on the word everything and explicitly distinguishes some religious evil from a universal poison claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker cautiously calls the universal charge improbable and openly allows mixed proportions of religious good and evil."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The poison thesis may mean pervasive corruption rather than literally zero instances of religious good.",
+        "decisiveQualification": "The opponent's repeated wording still creates a burden to explain how admitted religious goods fit the stated universal formulation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "If the asserted charge is genuinely universal, one substantial counterexample defeats it; the only bounded issue is whether the slogan is literal."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The demographic questions and mixed-good possibilities expose the burden, but do not themselves document a representative body of religious good."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Within the motion tier, this directly contests the route-completion condition by attacking the universal scope of the poison charge."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly addresses the express wording, though it does not fully consider a plausible nonliteral account of pervasive poisoning."
+        }
+      },
+      "evidenceBasis": "The excerpt repeats everything, calls that charge hard to prove, and asks whether large religious populations could be wholly bad.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-authority-independence-inspiration-coexistence",
+      "sectionId": "divine-authority-scripture-and-human-freedom",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Religious traditions can foster independent-minded engagement, inspire resistance to injustice, and permit cooperation among different faiths rather than producing only servility and intolerance.",
+      "sourceSpan": {
+        "startEvent": 607,
+        "endEvent": 644
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Olasky identifies claims from Hitchens's book and answers them in sequence during his uninterrupted speaking turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-warrant-enables-theocracy"
+        ],
+        "components": [
+          {
+            "componentId": "con-authority-independence-inspiration-coexistence-component-01",
+            "targetMoveId": "pro-divine-warrant-enables-theocracy",
+            "text": "Whether religious authority necessarily produces servility, intolerance, and resistance to independent moral action.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Examples of religious inspiration against communism and cross-faith engagement contact the claim that divine authority produces only insulated coercion, but do not resolve its risk mechanism.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive exclusivity premise but leaves the proposed insulation mechanism and theocratic cases substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The coexistence proposition is recoverable, although the extent to which the examples represent religious traditions is only implicitly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The examples adequately establish coexistence and inspiration as possibilities, without claiming that religious authority is generally harmless."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine authority can sometimes inspire resistance while still insulating other coercive commands from challenge.",
+        "decisiveQualification": "Positive counterexamples defeat an exclusivity claim but do not defeat the narrower causal-risk argument about unreviewable commands."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The counterexamples coherently refute an exclusively servile account, though possibility of inspiration does not negate the distinct coercion mechanism."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "John Paul II and student engagement are concrete examples, but causal attribution and representativeness are not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, the move directly attacks the authority mechanism but reaches only its asserted exclusivity, not its full causal force."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response avoids treating the opponent as denying every good act, but it only partially addresses the strongest mechanism-based interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt cites biblical inspiration, the Dalai Lama, and John Paul II's role in resistance to Eastern European communism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "sectionId": "truth-evidence-and-historical-credibility",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Categorical dismissal of biblical history is unwarranted because scholarship and archaeological discoveries have supported accounts and peoples once treated as mythical.",
+      "sourceSpan": {
+        "startEvent": 645,
+        "endEvent": 708
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains in Olasky's prepared turn and explicitly addresses Hitchens's published assertions about Exodus and Mosaic writings.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-natural-origin-of-religion"
+        ],
+        "components": [
+          {
+            "componentId": "con-credibility-archaeological-corroboration-component-01",
+            "targetMoveId": "pro-natural-origin-of-religion",
+            "text": "Whether religious accounts may be dismissed categorically as products of ignorant invention without contrary historical evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Archaeological reversals directly contact categorical dismissal of biblical history, but corroboration of some peoples does not establish metaphysical truth or every disputed narrative.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "Within partial answers, it contacts a decisive credibility premise while leaving the broader natural-origin and metaphysical-falsity inference unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully claims that some once-dismissed accounts gained support, rather than asserting that archaeology verifies all biblical claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The evidence fits the limited conclusion that categorical dismissal is unwarranted, not a stronger conclusion that Christianity is proven."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural origins of religion can coexist with accurate incidental references to ancient peoples and places.",
+        "decisiveQualification": "Incidental corroboration weakens categorical historical dismissal but does not establish miracles, revelation, or supernatural explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Prior archaeological error validly cautions against categorical dismissal, with the bounded limitation that partial corroboration cannot validate supernatural claims."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The Hittite example is specific and relevant, but scholarship, dating, and the exact disputed accounts are not documented in depth."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks wholesale naturalistic dismissal but only partially supports Christian historical credibility."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move stays mostly within the limited historical point, although its broader relevance depends on a bridge it does not fully defend."
+        }
+      },
+      "evidenceBasis": "The excerpt states that accounts once deemed mythical gained archaeological support and cites the former scholarly denial of the Hittites.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-charity-costly-christian-adoption",
+      "sectionId": "charity-institutions-and-social-consequences",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Christian conviction motivates costly care for vulnerable children and overseas orphans, including adoption of children with severe medical and social needs.",
+      "sourceSpan": {
+        "startEvent": 735,
+        "endEvent": 842
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Olasky narrates firsthand and reported examples during his uninterrupted turn, explicitly connecting the conduct to Christian belief.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-natural-origin-of-religion"
+        ],
+        "components": [
+          {
+            "componentId": "con-charity-costly-christian-adoption-component-01",
+            "targetMoveId": "pro-natural-origin-of-religion",
+            "text": "Whether religion can produce substantial goods despite the claim that its supernatural explanations are false.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The adoption evidence bears directly on the motion's universal harm claim and supplies religiously attributed good, though it does not answer the truth-focused premise of the selected target.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "Within partial answers, it reaches the motion-relevant consequence but contacts only a secondary implication rather than the target's evidential premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is limited to named costly adoptions and expressly attributes those actions to the participants' Christian beliefs."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "For the reported cases, the conduct and professed motivation support the limited attribution without a claim that all charity is distinctively Christian."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "If sincere Christian conviction motivated costly care, the cases coherently provide counterexamples to a literal wholly-poisonous characterization."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The named family and detailed disabilities provide specific support, though reliance on reported motive and anecdotal selection limits generalization."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Within the motion tier, concrete religiously motivated goods directly bear on whether Christianity can be characterized as wholly poisonous."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents affirmative cases of costly care without developing a competing interpretation sufficiently for a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt details several difficult adoptions by the Cooney family and explicitly reports that they acted because of Christian beliefs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-public-fruits-charity-liberty-press",
+      "sectionId": "charity-institutions-and-social-consequences",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Christian convictions materially contributed to American charitable relief, divided political authority, and the development of freedom of the press.",
+      "sourceSpan": {
+        "startEvent": 955,
+        "endEvent": 1067
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The historical examples form a continuous portion of Olasky's turn, with direct references to Hitchens and his book.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-public-fruits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-secular-government-protects-liberty"
+        ],
+        "components": [
+          {
+            "componentId": "con-public-fruits-charity-liberty-press-component-01",
+            "targetMoveId": "pro-secular-government-protects-liberty",
+            "text": "Whether American liberty is best explained only by separation from religion rather than also by Christian institutional premises.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers a rival Christian causal account of divided authority and press freedom, contacting the institutional explanation while not denying separation's protective role.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the decisive causal account but does not fully compare Christian influence with dissent, pluralism, and secular separation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The asserted contributions are identifiable, but Christianity, American history, and causal contribution cover broad and internally diverse phenomena."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The passage advances a broad causal history from theological sin to divided power without addressing major rival causes or contrary cases."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious pluralism and fear of sectarian control, not Christian doctrine alone, helped generate divided authority and press liberty.",
+        "decisiveQualification": "Christian ideas may be contributing causes without being necessary, sufficient, uniform, or exclusively responsible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Belief in universal sin can support distrust of concentrated power, but the bridge from doctrine to several American institutions is underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Historical claims about charity, divided authority, and press freedom are broad and selectively illustrated without serious alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the indispensable public-fruits bridge, though the causal warrant remains incomplete."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The response recognizes institutional benefits but materially compresses the strongest pluralistic and secular rival causal explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt links universal sin to dispersing political power and contrasts that institutional premise with concentrated caliphal authority.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-charity-does-not-validate-religion",
+      "sectionId": "scope-causation-and-attribution",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religious charity does not validate religion because humane work requires no supernatural motive, while religious identity can also accompany atrocity.",
+      "sourceSpan": {
+        "startEvent": 1204,
+        "endEvent": 1314
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Hitchens's announced response turn, using his Uganda experience to answer Olasky's extensive appeal to Christian charity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-charity-costly-christian-adoption",
+          "con-scope-universal-poison-burden"
+        ],
+        "components": [
+          {
+            "componentId": "pro-charity-does-not-validate-religion-component-01",
+            "targetMoveId": "con-charity-costly-christian-adoption",
+            "text": "Whether religiously motivated charity establishes the truth or moral necessity of religion rather than merely accompanying humane conduct.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-charity-does-not-validate-religion-component-02",
+            "targetMoveId": "con-scope-universal-poison-burden",
+            "text": "Whether admitted charitable conduct defeats the universal poison charge even if supernatural motivation is unnecessary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses that humane work requires no supernatural premise and therefore cannot validate religion, while contrasting religiously labeled charity with atrocity.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the validation inference as invalid, though it only partly answers the narrower counterexample to universal poison."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes validation from motivation and carefully says religious reasons are at best superfluous rather than denying sincere motivation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly softens the claim and adequately supports the limited conclusion that charity alone does not validate religious truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian belief may be causally motivating even if humane action is possible without it.",
+        "decisiveQualification": "Causal motivation can establish a religious good relevant to universal poison without proving supernatural truth or moral indispensability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The non-necessity of supernatural motive validly blocks an indispensability inference, but does not by itself erase religion's causal contribution in particular cases."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The Uganda contrast supplies a salient counterexample structure, though representativeness and the causal comparison remain largely anecdotal."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Within the motion tier, it directly attacks the claim that religious charity defeats the anti-theist route, while preserving a truth-motivation distinction."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The reply fairly allows humane religious work but underplays the distinction between validating truth and defeating a universal harm claim."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that fellow-feeling already requires humane action and says religious motivation is superfluous without denigrating the work.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scope-symmetrical-attribution",
+      "sectionId": "scope-causation-and-attribution",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "An assessment that attributes believers' harms to religion while excluding their religious motives whenever they do good cannot establish that religion is wholly poisonous.",
+      "sourceSpan": {
+        "startEvent": 1536,
+        "endEvent": 1565
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Olasky explicitly returns to the main point and directly characterizes the structure of Hitchens's argument before discussing King.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-charity-does-not-validate-religion"
+        ],
+        "components": [
+          {
+            "componentId": "con-scope-symmetrical-attribution-component-01",
+            "targetMoveId": "pro-charity-does-not-validate-religion",
+            "text": "Whether harms may be attributed to religion while religious motives for good actions are excluded by definition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses asymmetric attribution as the defect and states that counting religious harms but discounting religiously motivated charity cannot prove total poison.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the decisive attribution rule, its asymmetry, and the consequence for the universal conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes bad acts attributed to religion from good acts discounted despite professed religious motives."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Possible mixed proportions are openly acknowledged, fitting the limited claim that an asymmetrical rule cannot establish one hundred percent poison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Good conduct may be multiply realizable and therefore less distinctively religious than harms authorized by specifically religious commands.",
+        "decisiveQualification": "Multiple realizability does not justify automatically denying actual religious motivation or contribution in every favorable case."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "A method that credits religious identity for harms but excludes it for goods is biased unless a principled causal distinction is supplied."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The argument relies mainly on the opponent's stated attribution practice, with sufficient textual support but limited independent causal evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the indispensable burden of consistent attribution across religious benefits and harms."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response captures the opponent's superfluity argument while correctly preserving the need for symmetrical causal attribution."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts counting believers' bad conduct with dismissing charity performed for religious reasons and ties this asymmetry to the everything claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-grace-creation-fall-rescue-redemption",
+      "sectionId": "morality-grace-and-transformation",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "constructive",
+      "proposition": "Christianity is centrally an account of creation, human fallenness, divine rescue, sacrificial love, and promised redemption, with present acts of undeserved kindness offering partial signs of that redemption.",
+      "sourceSpan": {
+        "startEvent": 1566,
+        "endEvent": 1664
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Olasky introduces this as a correction of Hitchens's biblical understanding and gives a continuous theological summary in his own turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive theological account develops the grace route and is not evaluated as a reply despite its placement after earlier exchanges.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it clearly states the route's central creation-fall-rescue-redemption structure and connects it to sacrificial conduct."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The theological sequence and its present glimmers are clearly stated, with explicit acknowledgment that sin and suffering continue."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Calling present kindness glimmers or tastes of redemption appropriately limits the evidential force of the cited conduct."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The sequence from fallenness through undeserved rescue to sacrificial love is internally coherent, though the causal transformation bridge remains partly theological."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The adoption example illustrates sacrificial love, but the divine rescue and promised redemption claims receive no independent evidential defense here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly articulates the indispensable grace bridge and links it to transformation and undeserved kindness."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive account states Christian theology affirmatively without developing a distinct competing interpretation for testing."
+        }
+      },
+      "evidenceBasis": "The excerpt acknowledges continuing sin and suffering while identifying the Cooneys' adoption as self-sacrificial love and a glimpse of redemption.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scripture-amalek-exceptional-warfare",
+      "sectionId": "divine-authority-scripture-and-human-freedom",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "The command against the Amalekites should be understood as an exceptional response to an exceptionally dangerous wartime enemy rather than as a statement of ordinary biblical morality.",
+      "sourceSpan": {
+        "startEvent": 1665,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Olasky expressly takes up Hitchens's Exodus accusation and begins a sustained analogy between the Amalekites and modern total-war dilemmas.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-scripture"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-warrant-enables-theocracy",
+          "pro-charity-does-not-validate-religion"
+        ],
+        "components": [
+          {
+            "componentId": "con-scripture-amalek-exceptional-warfare-component-01",
+            "targetMoveId": "pro-divine-warrant-enables-theocracy",
+            "text": "Whether alleged divine authorization insulates morally objectionable violence from ordinary correction.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-scripture-amalek-exceptional-warfare-component-02",
+            "targetMoveId": "pro-charity-does-not-validate-religion",
+            "text": "Whether examples of religiously associated harm outweigh or negate examples of religious good.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The wartime analogy is relevant to scriptural violence but does not contact the authority-insulation demand; it offers possible necessity without a criterion justifying child killing.",
+        "responsivenessWithinClass": {
+          "value": 49,
+          "rationale": "Within relevant nonanswers, the analogy bears on the issue but leaves the decisive divine-command and civilian-protection challenge unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Exceptional warfare is identifiable, but the relevant similarity between Amalekites, German civilians, and the asserted threat is not stably specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker is cautious, but possibility of hard wartime choices does not supply the missing proportionality or discrimination warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection concerns intentional divinely commanded destruction of children, not merely unavoidable civilian casualties in total war.",
+        "decisiveQualification": "A valid analogy requires evidence of comparable threat, necessity, discrimination, and authority, none of which is established here."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 60,
+          "rationale": "Exceptional threats can alter wartime duties, but the analogy lacks premises establishing comparable necessity or moral authority for extermination."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "The passage relies on rhetorical analogy and speculation, without evidence about the Amalekites or a defended civilian-harm standard."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, it directly attempts contextualization of difficult scripture, although its contextual warrant is weak."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply acknowledges the misery of civilian warfare but materially weakens the objection by substituting a disputed modern-war analogy."
+        }
+      },
+      "evidenceBasis": "The excerpt compares treatment of the Amalekites with Allied destruction of German neighborhoods and openly calls civilian warfare miserable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-undirected-evolution",
+      "sectionId": "truth-evidence-and-historical-credibility",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Evolution is an undirected, pitiless, and contingent process that neither intended humanity nor assigns humanity privileged cosmic importance.",
+      "sourceSpan": {
+        "startEvent": 1866,
+        "endEvent": 1920
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields to Hitchens immediately before this uninterrupted first-person anti-theistic argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-grace-creation-fall-rescue-redemption",
+          "con-credibility-archaeological-corroboration"
+        ],
+        "components": [
+          {
+            "componentId": "pro-undirected-evolution-component-01",
+            "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+            "text": "Whether humanity and creation are best explained as an intended redemptive divine plan rather than an undirected process.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-undirected-evolution-component-02",
+            "targetMoveId": "con-credibility-archaeological-corroboration",
+            "text": "Whether historical corroboration of some biblical details supports supernatural creation or privileged human purpose.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly offers evolutionary contingency against intended creation, but it does not independently exclude divine guidance or address the grace account's moral component.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the central creation-purpose premise while leaving compatibility with divine guidance and redemption unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The undirected and contingent process is clearly described, with an implicit limitation from scientific process to claims of observable purpose."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The passage says the process does not seem selective and uses contingency, fitting a strong but not absolute anti-teleological inference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolutionary contingency may be the means through which a deity creates rather than evidence against all divine purpose.",
+        "decisiveQualification": "Compatibility is possible, but without independent evidence it does not turn an apparently undirected process into evidence of guidance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Contingency and nonselection support lack of evident human-directed purpose, though they do not deductively exclude concealed divine guidance."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Evolution and Gould's contingency example provide relevant scientific support, with the divine-guidance comparison left partly implicit."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it strongly advances naturalistic explanation against intended creation and privileged human purpose."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The argument leaves logical compatibility open while fairly pressing the absence of observable direction or human privilege."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes evolution and natural selection as pitiless, nondiscriminating processes and invokes Gould's contingency account.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-inherited-guilt-and-cosmic-egotism",
+      "sectionId": "morality-grace-and-transformation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Christian redemption combines the humiliation of inherited guilt with the egotistical assurance that the universe and divine plan center on humanity.",
+      "sourceSpan": {
+        "startEvent": 1921,
+        "endEvent": 1996
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Hitchens's uninterrupted turn and uses his characteristic first-person framing of the anti-religious case.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-grace-creation-fall-rescue-redemption"
+        ],
+        "components": [
+          {
+            "componentId": "pro-inherited-guilt-and-cosmic-egotism-component-01",
+            "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+            "text": "Whether the Christian rescue narrative is morally elevating rather than a combination of imposed shame and human-centered reassurance.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly attacks the moral framing of fall and redemption, but it characterizes the doctrine rhetorically without addressing undeserved forgiveness or transformation.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "Within partial answers, it contacts the moral premise of the grace account but leaves its forgiveness and transformative consequence substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The critique is recoverable, but inherited guilt, self-respect, solipsism, and cosmic centrality are rhetorically compressed across differing doctrines."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical psychological description exceeds the excerpt's support and does not distinguish competing Christian accounts of fallenness and redemption."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian fallenness can mean universal moral limitation rather than personal guilt inherited for another's act.",
+        "decisiveQualification": "Even non-inherited accounts may still connect human shame to a cosmic rescue narrative, but they avoid the strongest humiliation charge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The proposed tension between abasement and cosmic privilege is intelligible, but it depends on contestable equivalences and psychological characterizations."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "The move substantially relies on rhetorical assertion about doctrine and psychology rather than textual evidence or alternative doctrinal comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it directly attacks the grace narrative's moral character, though it does not address transformation evidence."
+        },
+        "representationalCharity": {
+          "value": 56,
+          "rationale": "The move materially compresses diverse doctrines into the most humiliating and egotistical formulation without addressing important qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt juxtaposes abolition of self-respect and conviction of wrongdoing with assurance that the universe was designed around humanity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scriptural-child-killing-objection",
+      "sectionId": "divine-authority-scripture-and-human-freedom",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Biblical killing of Egyptian firstborn children and the Amalekites cannot be morally excused by analogies to terrorism or wartime necessity.",
+      "sourceSpan": {
+        "startEvent": 1997,
+        "endEvent": 2023
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains in Hitchens's identified turn and explicitly addresses Olasky's preceding Amalekite and warfare defense.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scripture-amalek-exceptional-warfare"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scriptural-child-killing-objection-component-01",
+            "targetMoveId": "con-scripture-amalek-exceptional-warfare",
+            "text": "Whether exceptional-war analogies morally justify divinely ordered killing of children and noncombatants.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the missing moral justification and presses innocent children as the defeating case, directly challenging the wartime analogy's relevance.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it targets the decisive analogy and states the consequence: innocent children remain unjustified objects of destruction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The objection precisely identifies Egyptian firstborn and Amalekite children as innocent targets requiring moral justification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The force is proportionate to the opponent's failure to supply necessity, culpability, or discrimination for killing children."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Exceptional existential warfare can sometimes foreseeably kill civilians without making their deaths the moral objective.",
+        "decisiveQualification": "The scriptural examples as framed involve commanded destruction, so incidental-casualty analogies require a distinction the defense never supplies."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The innocence challenge directly defeats the analogy absent premises establishing culpability, necessity, or a morally relevant distinction."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The cited scriptural examples are specific and the moral premise is well defined, though fuller textual context is not supplied."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, this is maximally direct opposition to the scriptural-context bridge and its exceptional-war defense."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply squarely addresses the strongest exceptional-war defense and identifies the decisive difference concerning intentional child killing."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what Egyptian firstborn had done and challenges the morality of destroying children for redemption in Canaan.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-religious-credit-pollutes-honesty",
+      "sectionId": "scope-causation-and-attribution",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Calling ordinary honesty a religious duty diminishes its autonomous moral integrity, and isolated charitable acts cannot establish religion as ethically beneficial.",
+      "sourceSpan": {
+        "startEvent": 2090,
+        "endEvent": 2139
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage concludes Hitchens's identified turn and explicitly answers the opponent's use of religious charity and virtue.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scope-symmetrical-attribution",
+          "con-charity-costly-christian-adoption"
+        ],
+        "components": [
+          {
+            "componentId": "pro-religious-credit-pollutes-honesty-component-01",
+            "targetMoveId": "con-scope-symmetrical-attribution",
+            "text": "Whether ordinary virtue should be credited to religion merely because a believer frames it as religious duty.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-religious-credit-pollutes-honesty-component-02",
+            "targetMoveId": "con-charity-costly-christian-adoption",
+            "text": "Whether isolated religiously motivated charitable acts establish religion as a generally beneficial moral influence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both attribution and generalization, arguing that religious labeling diminishes autonomous honesty and that isolated charity proves too little.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers, it contacts the decisive credit inference but does not supply a principled symmetrical causal rule for good and bad conduct."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited insufficiency claim is clear, but pollute the integrity is evaluative and its precise moral mechanism remains underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "It is fair that isolated acts prove little, but saying they prove absolutely nothing overstates their evidential relevance to universal poison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious duty can reinforce rather than replace autonomous reasons for honesty and charity.",
+        "decisiveQualification": "Reinforcement may count as causal benefit without establishing that religion originated the virtue or is generally beneficial."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Isolated cases cannot establish general moral benefit, but religious motivation need not undermine autonomy and may coexist with independent reasons."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The autonomy claim is asserted philosophically and the generalization critique lacks a broader comparison of religious and nonreligious conduct."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within the motion tier, it directly contests whether cited religious virtues establish sufficient good to defeat the poison route."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The move recognizes the need for broader proof but materially weakens the possibility that religious framing genuinely reinforces ordinary virtue."
+        }
+      },
+      "evidenceBasis": "The excerpt calls religious labeling of honesty polluting and argues that isolated charity leaves the broader defense of religion unproved.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-credibility-gospel-witnesses-details",
+      "sectionId": "truth-evidence-and-historical-credibility",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "The Gospels' prominent use of female resurrection witnesses and their precise incidental details count against their being merely late propaganda and support their historical credibility.",
+      "sourceSpan": {
+        "startEvent": 2192,
+        "endEvent": 2250
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is part of Olasky's uninterrupted concluding turn and explicitly introduces the Gospels as the subject of his defense.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-credibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-natural-origin-of-religion",
+          "pro-undirected-evolution"
+        ],
+        "components": [
+          {
+            "componentId": "con-credibility-gospel-witnesses-details-component-01",
+            "targetMoveId": "pro-natural-origin-of-religion",
+            "text": "Whether Christian narratives are merely ignorant or propagandistic inventions rather than historically credible testimony.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-credibility-gospel-witnesses-details-component-02",
+            "targetMoveId": "pro-undirected-evolution",
+            "text": "Whether evolutionary contingency addresses the historical credibility of Gospel resurrection testimony.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Female witnesses and incidental detail directly contact the invention hypothesis, but the move does not establish witness independence, dating, or resurrection truth.",
+        "responsivenessWithinClass": {
+          "value": 71,
+          "rationale": "Within partial answers, it contacts the decisive propaganda premise while leaving alternative literary explanations and miracle verification unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The evidential indicators are clearly identified, with an implicit limitation that they count toward credibility rather than conclusively proving resurrection."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The features provide some evidential weight, but the inference against late propaganda lacks comparison with literary, theological, and source-critical alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A propagandistic or theological narrative can preserve awkward traditions and vivid incidental details for literary or inherited reasons.",
+        "decisiveQualification": "Such alternatives reduce but do not eliminate the evidential value of unexpected witnesses and apparently incidental specificity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Counterproductive witness selection can support authenticity, but the inference is probabilistic and depends on assumptions about authors and audiences."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The cited Gospel features are specific, yet dating, independence, cultural assumptions, and alternative literary explanations remain unsupported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supports Christian historical credibility against the claim of mere invention."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The reply identifies genuine credibility indicators but gives insufficient attention to the strongest nonhistorical explanations for those features."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that female empty-tomb witnesses would be an unlikely propagandistic choice and invokes precise Gospel details.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-grace-forgiveness-and-transformation",
+      "sectionId": "morality-grace-and-transformation",
+      "side": "con",
+      "speaker": "Marvin Olasky",
+      "moveKind": "reply",
+      "proposition": "Christian grace can counter human selfishness because unconditional forgiveness supports moral reform, sustained abolitionism, loving relationships, and personal transformation.",
+      "sourceSpan": {
+        "startEvent": 2347,
+        "endEvent": 2471
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted closing passage belongs to Olasky's introduced turn and repeatedly states Christianity's grace-based antidote proposition in first-person terms.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-grace"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-inherited-guilt-and-cosmic-egotism",
+          "pro-religious-credit-pollutes-honesty"
+        ],
+        "components": [
+          {
+            "componentId": "con-grace-forgiveness-and-transformation-component-01",
+            "targetMoveId": "pro-inherited-guilt-and-cosmic-egotism",
+            "text": "Whether Christian grace is degrading and egotistical rather than liberating and capable of moral transformation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-grace-forgiveness-and-transformation-component-02",
+            "targetMoveId": "pro-religious-credit-pollutes-honesty",
+            "text": "Whether religious framing can genuinely support virtue instead of diminishing autonomous moral integrity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers unconditional forgiveness, abolitionism, and transformation against the degradation critique, but relies on examples without isolating grace's causal contribution.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it contacts the decisive moral consequence and a secondary attribution demand, while leaving inherited guilt largely unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes bargaining religion from Christianity about grace and expressly concedes that Christianity sometimes causes trouble."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The concession is well calibrated, though named transformations alone do not establish grace as their decisive or generally reliable cause."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Forgiveness may liberate some believers while doctrines of guilt burden others, and reform can arise through secular motives.",
+        "decisiveQualification": "Nonreligious alternatives do not erase actual Christian motivation, but they limit claims of necessity, distinctiveness, and general efficacy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Unconditional forgiveness can coherently enable reform and sustained love, though the move compresses the causal bridge from doctrine to outcomes."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Newton and Wilberforce provide concrete historical illustration, but selection, causal independence, and general representativeness remain insufficiently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances grace as a source of forgiveness, reform, and personal transformation."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response fairly concedes Christian trouble and claims contribution rather than perfection, with only causal alternatives underdeveloped."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts bargaining religion with grace, describes forgiveness as liberating, and connects Newton's mentorship with Wilberforce's abolitionism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-faith-obstructs-vaccination",
+      "sectionId": "charity-institutions-and-social-consequences",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Faith-based resistance to vaccination has revived preventable disease, illustrating religion's capacity to obstruct secular humanitarian and medical work.",
+      "sourceSpan": {
+        "startEvent": 2737,
+        "endEvent": 2758
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same Hitchens answer continues through a contemporary polio example and ends immediately before the moderator calls on another audience member.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-practical-harms"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-public-fruits-charity-liberty-press",
+          "con-scope-symmetrical-attribution"
+        ],
+        "components": [
+          {
+            "componentId": "pro-faith-obstructs-vaccination-component-01",
+            "targetMoveId": "con-public-fruits-charity-liberty-press",
+            "text": "Whether religious public fruits should be credited without also accounting for faith-based obstruction of humanitarian medicine.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-faith-obstructs-vaccination-component-02",
+            "targetMoveId": "con-scope-symmetrical-attribution",
+            "text": "Whether attribution should count religiously stated motives symmetrically when they produce practical harm as well as good.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The polio example directly supplies the harmful side of symmetrical attribution and counters an unqualified public-fruits narrative with a concrete medical consequence.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it explicitly contacts the attribution and public-fruits demands through a concrete contrary case, though broader prevalence is unshown."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The practical claim is clear and limited to faith-based vaccination resistance, with causation bounded implicitly to the described outbreak mechanism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The mechanism is strong, but attributing the trans-African spread simply to faith compresses epidemiological and political contributing causes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Vaccination resistance may reflect distrust, politics, or misinformation intertwined with rather than reducible to religion.",
+        "decisiveQualification": "The reported explicit divine prohibition still makes faith an operative cause even if other conditions contributed to transmission."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "If divine prohibitions cause enough refusals to preserve transmission, the example coherently demonstrates a practical religious-authority harm."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The firsthand eradication context and explicit refusal mechanism are specific, but outbreak attribution and scale lack independent documentation."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, this is a maximally direct practical-harm illustration of religious interference with medicine."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The argument preserves a specific faith-based mechanism, although its closing attribution understates likely interacting causes."
+        }
+      },
+      "evidenceBasis": "The excerpt reports religious warnings against child inoculation and explains how a small uninoculated population can allow polio to spread.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolutionary-human-morality",
+      "sectionId": "morality-grace-and-transformation",
+      "side": "pro",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human morality is innate, socially necessary, and evolutionarily grounded, so basic prohibitions against murder, theft, and perjury did not originate in supernatural commands.",
+      "sourceSpan": {
+        "startEvent": 2782,
+        "endEvent": 2817
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Hitchens's answer first, and Hitchens begins a continuous response explicitly framed as an answer owed to Olasky.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-secular-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-grace-forgiveness-and-transformation",
+          "con-grace-creation-fall-rescue-redemption"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolutionary-human-morality-component-01",
+            "targetMoveId": "con-grace-forgiveness-and-transformation",
+            "text": "Whether basic morality requires Christian grace or instead arises from evolved human solidarity and social necessity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evolutionary-human-morality-component-02",
+            "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+            "text": "Whether self-sacrificial moral conduct is intelligible only as a sign of divine rescue and redemption.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly supplies an evolutionary and social account of basic norms, but it does not fully answer forgiveness, exceptional sacrifice, or sustained transformation.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive moral-origin premise while leaving grace's claimed restorative and motivational functions partly unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Basic prohibitions and solidarity are clear, but innate and evolutionarily necessitated morality range across biological disposition, social learning, and normativity."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolutionary sociality plausibly supports basic norms, but saying evolution necessitates the Golden Rule exceeds the argument supplied in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity may not originate basic prohibitions but may deepen, universalize, or motivate costly adherence to them.",
+        "decisiveQualification": "That stronger claim leaves basic moral knowledge independent of revelation, while preserving a possible religious motivational contribution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Social survival and evolved cooperation plausibly explain basic prohibitions, though descriptive evolution alone does not fully ground normative obligation."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Immediate recognition of the Golden Rule and pre-Sinai social survival are plausible illustrations, but empirical evolutionary support is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances secular sufficiency for basic morality and attacks the necessity of supernatural commands."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move correctly separates basic moral knowledge from supernatural command but only partly addresses the strongest formation and motivation account."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds the Golden Rule in solidarity and evolution and argues that murder, theft, and perjury were recognized before Sinai.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already represented in move judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion remains outside the locked move-level assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified beyond effects already assessed.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact judgments"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion finding because no independent residual exists."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already represented in move judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion remains outside the locked move-level assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified beyond effects already assessed.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact judgments"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion finding because no independent residual exists."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
