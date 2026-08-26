@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+  "status": "post-canary-batch-11-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-26T17:02:54Z",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 11 standing authorization covers activation and exactly one deterministic compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 11 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 12 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/preparation-manifest.json",
+    "sha256": "95cf2a17fecf5d3a45e791363f169caadd5641da594ca5b88b38e60074026e08"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/analysis.json",
+    "sha256": "0d46f7b58197224438a91790e939cf1d859c9bb700208bd746f6de21d59b3d1e",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-11-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+      "status": "post-canary-batch-11-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 11,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/preparation-manifest.json",
+        "sha256": "95cf2a17fecf5d3a45e791363f169caadd5641da594ca5b88b38e60074026e08"
+      },
+      "finding": {
+        "id": "batch-11-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "batch02RoutePreservationSpecified": true,
+        "batch03RoutePreservationSpecified": true,
+        "batch04RoutePreservationSpecified": true,
+        "batch05RoutePreservationSpecified": true,
+        "batch06RoutePreservationSpecified": true,
+        "batch07RoutePreservationSpecified": true,
+        "batch08RoutePreservationSpecified": true,
+        "batch09RoutePreservationSpecified": true,
+        "batch10RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 50,
+        "moves": 190,
+        "oneSidedDisplayRows": 6,
+        "overallBlunders": 54,
+        "emptyReferenceLinks": 54,
+        "suppliedReferenceLinks": 0,
+        "proposedAdapterBytes": 1137193,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "batch02RouteRegressionBlocks": true,
+        "batch03RouteRegressionBlocks": true,
+        "batch04RouteRegressionBlocks": true,
+        "batch05RouteRegressionBlocks": true,
+        "batch06RouteRegressionBlocks": true,
+        "batch07RouteRegressionBlocks": true,
+        "batch08RouteRegressionBlocks": true,
+        "batch09RouteRegressionBlocks": true,
+        "batch10RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "activate-and-execute-one-batch-11-production-compatibility-pass-under-standing-authorization"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "314743ee5d2ce211968329c12eb0414a25bc47d18a36329b4fa3e761db19ed38",
+    "proposedSha256": "b3b3194f35441806fea3d244bf274c3d14e3c663aa34aa761b9703fc10c65614",
+    "proposedBytes": 58941,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-11-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-11-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "54",
+      "debateId": "jones-law-christianity-humanism-future-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-54.json",
+      "sha256": "86167dbcf2186eaa822c30d1c909f0cb95720d5425dbabeac5d8502039dc5f9c",
+      "proposedAdapterSha256": "9129b4b040e295469a56449e0ee11901fe82a3b5e16bc2005893b260ef2bf9c7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/jones-law-christianity-humanism-future-2025.json",
+      "stagedLedgerSha256": "9129b4b040e295469a56449e0ee11901fe82a3b5e16bc2005893b260ef2bf9c7",
+      "stagedLedgerBytes": 123035,
+      "productionLedgerPath": "docs/assessment-ledgers/jones-law-christianity-humanism-future-2025.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "01",
+      "debateId": "craig-oconnor-god-debate-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-01.json",
+      "sha256": "fa87ea3ed6f01227c432577157bb28ee93e7a9b18cd5670485898435eacc4c47",
+      "proposedAdapterSha256": "92760202a1af4139aa85a33cfb0faeb5023ba312e7f845f6bb5e46d4bfecf7f7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/craig-oconnor-god-debate-2026.json",
+      "stagedLedgerSha256": "92760202a1af4139aa85a33cfb0faeb5023ba312e7f845f6bb5e46d4bfecf7f7",
+      "stagedLedgerBytes": 106459,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-oconnor-god-debate-2026.json",
+      "productionLedgerBaseline": {
+        "exists": true,
+        "sha256": "cb0f23d5d13737c1284cb9e5cb612372ce8875c56c545c5b444b57177027ff5d"
+      }
+    },
+    {
+      "debateNumber": "82",
+      "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-82.json",
+      "sha256": "a38ce0e0980e2f132ad3a448c068cb53600f5c32404eb8242d095f5ab1e87c2e",
+      "proposedAdapterSha256": "adc20cfe259f5526ceb9a83c067316f73fa38c885784009e96cecc5b91510536",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json",
+      "stagedLedgerSha256": "adc20cfe259f5526ceb9a83c067316f73fa38c885784009e96cecc5b91510536",
+      "stagedLedgerBytes": 108560,
+      "productionLedgerPath": "docs/assessment-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "191",
+      "debateId": "ruse-rana-origin-life-evolution-design-2013",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-191.json",
+      "sha256": "2ccb5a886300fe0b8ab376aaf3af165b1f583ab6494c0d691d7f63a9926801be",
+      "proposedAdapterSha256": "fc5d71ae62898c2b01acc10ad70366b2681e7d886d2971b2e79a282cf4fa5edc",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/ruse-rana-origin-life-evolution-design-2013.json",
+      "stagedLedgerSha256": "fc5d71ae62898c2b01acc10ad70366b2681e7d886d2971b2e79a282cf4fa5edc",
+      "stagedLedgerBytes": 114159,
+      "productionLedgerPath": "docs/assessment-ledgers/ruse-rana-origin-life-evolution-design-2013.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "151",
+      "debateId": "wood-dillahunty-god-secular-humanism-2020",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-151.json",
+      "sha256": "26c85c447181e3bd00a00f6be88e181346d511a1b2f3b2a05b18c075d6910f41",
+      "proposedAdapterSha256": "f754324c26ad3bd17f9a3a904b15a3122c71408d8f0c8ef275291b87409a7b3d",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/wood-dillahunty-god-secular-humanism-2020.json",
+      "stagedLedgerSha256": "f754324c26ad3bd17f9a3a904b15a3122c71408d8f0c8ef275291b87409a7b3d",
+      "stagedLedgerBytes": 120373,
+      "productionLedgerPath": "docs/assessment-ledgers/wood-dillahunty-god-secular-humanism-2020.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-188.json",
+      "sha256": "fe5899742ac81c1a60e10126f644ee34551afc4e87e142be222805f60600c1d0",
+      "proposedAdapterSha256": "a65f3846d1494580bc75ec2c7efee190d0254a240e2a67964f73beda93e3859b",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/kastrup-blackmore-consciousness-idealism-2023.json",
+      "stagedLedgerSha256": "a65f3846d1494580bc75ec2c7efee190d0254a240e2a67964f73beda93e3859b",
+      "stagedLedgerBytes": 101767,
+      "productionLedgerPath": "docs/assessment-ledgers/kastrup-blackmore-consciousness-idealism-2023.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "60",
+      "debateId": "horn-oconnor-jesus-resurrection-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-60.json",
+      "sha256": "4c1deeb8013f4972720b6232d5d10266821a975c22a515e067442bd3acac9653",
+      "proposedAdapterSha256": "8e0a52c11cdb74db7b7d504a6f4cba3d27bc66e967a5278b36e96c422c3c8ff3",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/horn-oconnor-jesus-resurrection-2026.json",
+      "stagedLedgerSha256": "8e0a52c11cdb74db7b7d504a6f4cba3d27bc66e967a5278b36e96c422c3c8ff3",
+      "stagedLedgerBytes": 118786,
+      "productionLedgerPath": "docs/assessment-ledgers/horn-oconnor-jesus-resurrection-2026.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "79",
+      "debateId": "swinburne-oppy-theism-probability-2022",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-79.json",
+      "sha256": "dcd63b7aa3d235fb76bca7dc892eb9be3c2df6a985b964344b1d62a7f42e858d",
+      "proposedAdapterSha256": "b1c18da4cfac88e580964e66053a994f4eccbb9d68efc55a4fe3f1a0e9234011",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/swinburne-oppy-theism-probability-2022.json",
+      "stagedLedgerSha256": "b1c18da4cfac88e580964e66053a994f4eccbb9d68efc55a4fe3f1a0e9234011",
+      "stagedLedgerBytes": 107225,
+      "productionLedgerPath": "docs/assessment-ledgers/swinburne-oppy-theism-probability-2022.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "43",
+      "debateId": "meyer-halper-cosmology-fine-tuning-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-43.json",
+      "sha256": "4ac2f04d04dfe3d189d1bb967d77468c9da1062b8361b8c936d7165522b12553",
+      "proposedAdapterSha256": "ef65e9ddc6a1b6da7ac68daba7b47679729dcad488553467b918dd4309dc9e56",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/meyer-halper-cosmology-fine-tuning-2026.json",
+      "stagedLedgerSha256": "ef65e9ddc6a1b6da7ac68daba7b47679729dcad488553467b918dd4309dc9e56",
+      "stagedLedgerBytes": 116059,
+      "productionLedgerPath": "docs/assessment-ledgers/meyer-halper-cosmology-fine-tuning-2026.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "24",
+      "debateId": "hitchens-olasky-religion-grace-2007",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/packets/debate-24.json",
+      "sha256": "df36cdcaf33089852bff79d1aabb95c564b9ed0e20600db9083f730597ff134d",
+      "proposedAdapterSha256": "1122b3e51e326a0323a9f34deba0815760c5d7b2b6ace40a168caa3735991c56",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/hitchens-olasky-religion-grace-2007.json",
+      "stagedLedgerSha256": "1122b3e51e326a0323a9f34deba0815760c5d7b2b6ace40a168caa3735991c56",
+      "stagedLedgerBytes": 120770,
+      "productionLedgerPath": "docs/assessment-ledgers/hitchens-olasky-religion-grace-2007.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs": "9a5e9c8ffdc3c4781584cab8e6e8be2433ba223b71780baaaf25225c615b4ad3",
+    "scripts/lib/assessment-production-post-canary-batch-11-compatibility-execution.mjs": "029e3fbe6deb72bfe98271894a5c306e4bca338289c38d33b571b223be3d51c3",
+    "scripts/activate-assessment-production-post-canary-batch-11-compatibility.mjs": "af3cbdd3479b78013023ce6f6e5d8b5542ee1fb111a090d6cabb24eb1069e574",
+    "scripts/test-assessment-production-post-canary-batch-11-compatibility-activation.mjs": "023eedb1f5ecdb6456cf359ef87a4f1acd6f107883d58c94e084d8245ce260f7",
+    "scripts/run-assessment-production-post-canary-batch-11-compatibility.mjs": "0818649bf3d13420073e20be013d39d4bf5169f3b89296d635de2dc9e3ec7478",
+    "scripts/test-assessment-production-post-canary-batch-11-compatibility-execution.mjs": "c89afc652002f45bb19d446b54873c39a82e2dcf978f0b0c279972729ad3ccd8"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "5440a84041154f516760745417d1b269114ddb29e8a01c124357f44a4c55460d"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 111,
+      "digest": "b37bc799bcd03b3d8461228d81a4a661cfb72903ddba855bb718a05b46ad811b"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 11 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "Batch 2 route and score replay",
+    "Batch 3 route and score replay",
+    "Batch 4 route and score replay",
+    "Batch 5 route and score replay",
+    "Batch 6 route and score replay",
+    "Batch 7 route and score replay",
+    "Batch 8 route and score replay",
+    "Batch 9 route and score replay",
+    "Batch 10 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-11-production-compatibility-staging-pass-no-reruns"
+}
