@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3101,
+  "ledgerBytes": 168029,
+  "ledgerSha256": "51f1f32da10cbe1479c259ed267307a363a3ed3a9b5c1acfeb9bb665ce667829",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47686,
+      "contextSha256": "652d968ec6e817e8bd542e2b2b9e6527150b619549a2500c14437e6e565ec4d7"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 49239,
+      "contextSha256": "7ed26c688cc07c04ae2605b646b0095f67335e7fe4d93efd8e73fbf54ecab490"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 48678,
+      "contextSha256": "82f31377518d85c480397c860a77eff4a62bb90d7ff2181aac41317ae07284ea"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3100,
+      "coreEvents": 601,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3100,
+      "contextEvents": 641,
+      "contextBytes": 35356,
+      "contextSha256": "60d2b918646dd380d4f50b1b3a30292c7c93add47cf4b0e03d5c04295ef52dcc"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3100,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "24",
+  "debateId": "hitchens-olasky-religion-grace-2007",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

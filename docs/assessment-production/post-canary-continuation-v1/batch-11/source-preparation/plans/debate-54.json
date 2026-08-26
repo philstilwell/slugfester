@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2680,
+  "ledgerBytes": 155734,
+  "ledgerSha256": "10ff2dd6eb2d0b7ef30bd8806b09ba1bbd6a9f8748501d662d14b735c15ac49f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51452,
+      "contextSha256": "9a61fa92ef42c554b69ba495c88299c9f22a6d1fe68c1f0ce4e6a28a7e5c1540"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53007,
+      "contextSha256": "67c3ef8de72a4cf4ef52a3bc4059e3ab150c67e6d1a7bdc7999fa4e30d47c4f9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52375,
+      "contextSha256": "e189c73afa1b618807656ac3144487cc8028e20b19cff2bfcc734785bc87b634"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2679,
+      "coreEvents": 180,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2679,
+      "contextEvents": 220,
+      "contextBytes": 12852,
+      "contextSha256": "f52d3d1aba20935be52ed670e09d2b3c0b26b5889b967b8cd2860a632c022a2a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2679,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "54",
+  "debateId": "jones-law-christianity-humanism-future-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4028,
+  "ledgerBytes": 234617,
+  "ledgerSha256": "2f64de5a6015041dd36c4c5d3ad422130d85df3360324a13d8d42843e5579d3a",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51937,
+      "contextSha256": "1328a84d9fd6d1ec39fe53a484f6753cf88863b981b2a89e3a3b4f6c1294cfb3"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53206,
+      "contextSha256": "8722bbc14d327b7628ec96ce5e718ff3b6082d4f352d5d9a88cdff724af146a3"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52035,
+      "contextSha256": "55d4780d85b1b512889021b2bef88a781c3e03b0b2cd3d644286463030820138"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52372,
+      "contextSha256": "cbb8a454aaaa21aa50a39154d230596314b92120b738f61e20ac4d11e6a71071"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4027,
+      "coreEvents": 708,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4027,
+      "contextEvents": 748,
+      "contextBytes": 43843,
+      "contextSha256": "ec5342c484ee3d211d658ea665f7b720d7b6056329122a49c86972b9f31535a2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4027,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "151",
+  "debateId": "wood-dillahunty-god-secular-humanism-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

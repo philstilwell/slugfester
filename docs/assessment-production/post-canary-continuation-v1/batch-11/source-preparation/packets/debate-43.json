@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-source-preparation",
+  "debateNumber": "43",
+  "debateId": "meyer-halper-cosmology-fine-tuning-2026",
+  "motion": "Does modern cosmology, especially Big Bang evidence and cosmic fine-tuning, make theism or intelligent design a better explanation than naturalistic early-universe models?",
+  "sides": {
+    "pro": {
+      "label": "Design theist",
+      "speakers": [
+        "Stephen Meyer"
+      ]
+    },
+    "con": {
+      "label": "Cosmology skeptic",
+      "speakers": [
+        "Phil Halper"
+      ]
+    }
+  },
+  "durationSeconds": 10686,
+  "eventCount": 4971,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/EsrfL58iLlE/transcript.txt",
+    "transcriptSha256": "15e5b6cc00f3c23e96ed505d788644c714a7494ecec29cd8df48f67ae5fbc1a9",
+    "eventsPath": ".assessment-cache/captions/EsrfL58iLlE/events.json",
+    "eventsSha256": "fa8632d420c36c29d2ed94940a11c122baa94c887187a17b46a69069abbd8bb2",
+    "localManifestPath": ".assessment-cache/captions/EsrfL58iLlE/manifest.json",
+    "localManifestSha256": "91457e9750a53723ed6eec1e30845d7e3a5e9a3b6365d324b55a80172a90b847"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-43.jsonl",
+    "sourceLedgerSha256": "e6dd6ef70fba7d4d7de2983de3c5cae30b745fd1e3b82cd53540f3a3fd6db726",
+    "sourceLedgerBytes": 290835,
+    "sourceLedgerEventCount": 4971,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-43.json",
+    "partitionPlanSha256": "3f3f9491dac5982a593e390614fd2ae051830a00164dedb8c66a79f0e6127bdc",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-source-preparation",
+  "debateNumber": "188",
+  "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+  "motion": "Is consciousness the ontological foundation of reality rather than an emergent property of matter?",
+  "sides": {
+    "pro": {
+      "label": "Consciousness is fundamental",
+      "speakers": [
+        "Bernardo Kastrup"
+      ]
+    },
+    "con": {
+      "label": "Neutral monism is sufficient",
+      "speakers": [
+        "Susan Blackmore"
+      ]
+    }
+  },
+  "durationSeconds": 3578,
+  "eventCount": 1453,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/X4YVgM2HPMk/transcript.txt",
+    "transcriptSha256": "2cdbd056c9b83904fe880ed5bd343e511b5ab1d6f7184d215f1a550cf187c363",
+    "eventsPath": ".assessment-cache/captions/X4YVgM2HPMk/events.json",
+    "eventsSha256": "e716e5b1b3750faa89c2655224fb0ee00825a3062e301997e60aa3182e3d088e",
+    "localManifestPath": ".assessment-cache/captions/X4YVgM2HPMk/manifest.json",
+    "localManifestSha256": "c595130bde31be110b47f8f6006f1d56f3af111cad362bbf2a740524d9230c79"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-188.jsonl",
+    "sourceLedgerSha256": "067b6a8b22dafc5897e50154d1019582135b44f2596c413a3ac8371bfd23ee76",
+    "sourceLedgerBytes": 84564,
+    "sourceLedgerEventCount": 1453,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-188.json",
+    "partitionPlanSha256": "0b42544a90104980c221ca8f638ef1daad6bea11d88f9ba9b3223d2d868256cf",
+    "partitionChunks": 2,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-source-preparation",
+  "debateNumber": "60",
+  "debateId": "horn-oconnor-jesus-resurrection-2026",
+  "motion": "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection case",
+      "speakers": [
+        "Trent Horn"
+      ]
+    },
+    "con": {
+      "label": "Historical skepticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 5346,
+  "eventCount": 2816,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Bu-7IHp3oGQ/transcript.txt",
+    "transcriptSha256": "86d621eddda36c51d2aad36adc336a1d5d7c8860f2c6819b27ebc2cca7a7aa84",
+    "eventsPath": ".assessment-cache/captions/Bu-7IHp3oGQ/events.json",
+    "eventsSha256": "78e300d6d7bc1a9a341023122e59a4ea964cf33544d2bba1d9e2b04fa397e95a",
+    "localManifestPath": ".assessment-cache/captions/Bu-7IHp3oGQ/manifest.json",
+    "localManifestSha256": "be288aca711f25be8b190477ac87b6ff5d834f705cdb3f25579686baf1c7ccd9"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-60.jsonl",
+    "sourceLedgerSha256": "7cd2375a8dfacf668707af4c07a5316501f727cebc918a116439a03de35d7709",
+    "sourceLedgerBytes": 165189,
+    "sourceLedgerEventCount": 2816,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-60.json",
+    "partitionPlanSha256": "805944eb1fd15dba62b678088e4358c3a5d3cb881a3c83d88c01c918439dece4",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

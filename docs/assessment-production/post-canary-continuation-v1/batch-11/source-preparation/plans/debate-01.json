@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3085,
+  "ledgerBytes": 168100,
+  "ledgerSha256": "293f7732769f6f2d2c730155beb4b74a6db4caf7040dfca227dc310e25504a2c",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47097,
+      "contextSha256": "e91bd00a2f6e262599c1ecf61be29c2ea8105934b5635917147abe6cc3addb16"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48872,
+      "contextSha256": "3dcf81a4ee6b0ae2851e74427ffb70df5d08a8ca59da8159ed2da80e0d26e69f"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 49468,
+      "contextSha256": "059df77edc9cbd6f222272e8f60d3f43aaf77207f9e3623b685339054c9993c9"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3084,
+      "coreEvents": 585,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3084,
+      "contextEvents": 625,
+      "contextBytes": 35835,
+      "contextSha256": "52e48ded08adaad100849993aee01ea2b792970e3633e8029d4255ace4a634bf"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3084,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "01",
+  "debateId": "craig-oconnor-god-debate-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

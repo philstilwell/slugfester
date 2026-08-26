@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3047,
+  "ledgerBytes": 191502,
+  "ledgerSha256": "321fc35a5251a552cb1954b4797943a5b19e24258bd2b936ddf9a7e172d15682",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 55245,
+      "contextSha256": "ad57e5179fda5e594d4f3f6352e8631f72f8a45e6cb7a21816e366b48017404f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 57441,
+      "contextSha256": "ab1f82d9db72c1c489049c2ddef68b3fb0c41a8799644e262f051f16ade2b7c1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 57267,
+      "contextSha256": "ded828bee8fe2cf26ee15ef40ed5720320feb18745f165cd933fd851bce74b99"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3046,
+      "coreEvents": 547,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3046,
+      "contextEvents": 587,
+      "contextBytes": 37018,
+      "contextSha256": "cb9bb99c498d93fde1e6d517d37245a78cb0d29caff4e8e67e1b9163c6c9b070"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3046,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "191",
+  "debateId": "ruse-rana-origin-life-evolution-design-2013",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

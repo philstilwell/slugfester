@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-source-preparation",
+  "debateNumber": "79",
+  "debateId": "swinburne-oppy-theism-probability-2022",
+  "motion": "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
+  "sides": {
+    "pro": {
+      "label": "Probabilistic theism",
+      "speakers": [
+        "Richard Swinburne"
+      ]
+    },
+    "con": {
+      "label": "Comparative naturalism",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 5539,
+  "eventCount": 2216,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/hKw3d3qOYSo/transcript.txt",
+    "transcriptSha256": "cd345a9a9eaa5756bce7fbd34ef0f86dff07f50c7ff29db27470de8f34770ee4",
+    "eventsPath": ".assessment-cache/captions/hKw3d3qOYSo/events.json",
+    "eventsSha256": "174b56dcc3305fc9b352932a42d1cf3fea50c0501fb6ca933728a4a445743029",
+    "localManifestPath": ".assessment-cache/captions/hKw3d3qOYSo/manifest.json",
+    "localManifestSha256": "05c5d130a350287f792fbca21f978898fd8395f23bad4459cd970f4848a55752"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-79.jsonl",
+    "sourceLedgerSha256": "036296dd1dce04ed40b2b7e86c43cc24560657f9670d74460c0610517f4ecc9d",
+    "sourceLedgerBytes": 115602,
+    "sourceLedgerEventCount": 2216,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-79.json",
+    "partitionPlanSha256": "b447153d482fd5cdff205ea4e1637965752ee18ec89b967dba67e29b0a90afdf",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

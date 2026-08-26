@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2216,
+  "ledgerBytes": 115602,
+  "ledgerSha256": "036296dd1dce04ed40b2b7e86c43cc24560657f9670d74460c0610517f4ecc9d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45931,
+      "contextSha256": "bf40f52a950e7e88089a36f3445b3a1b8d6c299225a45243bd3117a586b40a5a"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47957,
+      "contextSha256": "66dcc3b6f5d6c2cb077f518e21e8bc7fe3a395af846db452c020d6ff91738ec1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2215,
+      "coreEvents": 536,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2215,
+      "contextEvents": 576,
+      "contextBytes": 30368,
+      "contextSha256": "2030594773372d1460c0e7156d66546e715b230648143410aff80b4798d13fbe"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2215,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "79",
+  "debateId": "swinburne-oppy-theism-probability-2022",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

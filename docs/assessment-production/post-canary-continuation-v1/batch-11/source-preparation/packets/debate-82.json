@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-source-preparation",
+  "debateNumber": "82",
+  "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+  "motion": "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
+  "sides": {
+    "pro": {
+      "label": "Moral anti-realism",
+      "speakers": [
+        "Lance Bush"
+      ]
+    },
+    "con": {
+      "label": "Moral realism",
+      "speakers": [
+        "Derek McAllister"
+      ]
+    }
+  },
+  "durationSeconds": 5193,
+  "eventCount": 2451,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/ya02MOhQMV8/transcript.txt",
+    "transcriptSha256": "59157c64dd34a4413272ae2fa05e2708491b312c258a42470daea82dbb6f1706",
+    "eventsPath": ".assessment-cache/captions/ya02MOhQMV8/events.json",
+    "eventsSha256": "38b7235c036bfd356a804c16ffb2d78c94cd5c8f3b3fbfb8b5a40a4a24c141f4",
+    "localManifestPath": ".assessment-cache/captions/ya02MOhQMV8/manifest.json",
+    "localManifestSha256": "f2ad60dcd9ba41702b02757f131b98aff88d8b5a1f0268d21d188e45c908ff92"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-82.jsonl",
+    "sourceLedgerSha256": "738c0b1add84a0d070a0c1f7dd5118d64043d8a7071cfe79bf0f6a67cc458e16",
+    "sourceLedgerBytes": 144576,
+    "sourceLedgerEventCount": 2451,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-82.json",
+    "partitionPlanSha256": "78bf5e700bb986e6089bc68c670df32f4beb699a238f3774c65e841037bc2f3e",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

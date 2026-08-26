@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2451,
+  "ledgerBytes": 144576,
+  "ledgerSha256": "738c0b1add84a0d070a0c1f7dd5118d64043d8a7071cfe79bf0f6a67cc458e16",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52210,
+      "contextSha256": "4a0ac08ec2d303d360b5f845a23caf394f6b8b1e03b3ea1d021d6be3f85e055e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53514,
+      "contextSha256": "9213457a27db2be9e378da71a0ec1ba6fbf56d6b5bd4db001b78374cd1285a7d"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2450,
+      "coreEvents": 771,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2450,
+      "contextEvents": 811,
+      "contextBytes": 48414,
+      "contextSha256": "af5c4914f574c1ee42fe10f9a5dfb4c55700bda6bc0a3552779d0cac96d401ba"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2450,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "82",
+  "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

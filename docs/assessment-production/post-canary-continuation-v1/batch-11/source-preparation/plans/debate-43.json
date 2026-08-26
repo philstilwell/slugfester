@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4971,
+  "ledgerBytes": 290835,
+  "ledgerSha256": "e6dd6ef70fba7d4d7de2983de3c5cae30b745fd1e3b82cd53540f3a3fd6db726",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51418,
+      "contextSha256": "5aa8e33467d2ca62f8d47138a765818d4fe17863f449b044616327581b9900e0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52990,
+      "contextSha256": "653e115550eabe553bbcd899ac8991d60be9b1351bf4a1fcf26b3208fe24743c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52548,
+      "contextSha256": "084edf0af418ccd38e7fd2c65ba38d465ba8e39eeb38a79f792ec2269052c9fb"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52652,
+      "contextSha256": "6bf1ab038a8326b507568ee3edc5174287014b0bbaf299490bbc473aff779295"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 52789,
+      "contextSha256": "7efc91f50f811ad7bbdf583637a208688ec635e101608b80b2fdb18ac22f2afe"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4970,
+      "coreEvents": 831,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4970,
+      "contextEvents": 871,
+      "contextBytes": 51499,
+      "contextSha256": "1e7660b7ec263d2cd223556da5f9485b28480b7af3724d7dbbbcb03c53203c47"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4970,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "43",
+  "debateId": "meyer-halper-cosmology-fine-tuning-2026",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
