@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-official-ytdlp-recovery-7-execution",
+  "status": "failed-one-shot-batch-10-audio-source-official-ytdlp-recovery-7-stop-required",
+  "batchNumber": 10,
+  "planSha256": "d282b93f7803766a0d972e3457a3df7dbba2a5c4a6927fdf076a9bd7f5882f38",
+  "activationSha256": "30f23018cf5cd2b062aec8467d5eb91345582334185110b6d6f2ccf9f240dcd0",
+  "state": {
+    "attempts": 1,
+    "officialYtDlpNativeInvocations": 1,
+    "officialYtDlpVersion": "2026.08.19",
+    "impersonateTarget": "Chrome-142:Macos-26",
+    "pluginsUsed": 0,
+    "remoteComponentsUsed": 0,
+    "credentialsUsed": 0,
+    "continuedDownloads": 0,
+    "publicSourceDownloads": 1,
+    "localNormalizations": 0,
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "clipsCreated": 0,
+    "completeCohortValidated": false,
+    "failedPartialOutputsReused": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "timeoutExtensions": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "source-or-validation-failure-during-authorized-official-ytdlp-recovery-7",
+    "message": "Command failed: output/tools/yt-dlp-2026.08.19/yt-dlp_macos --ignore-config --no-update --no-plugin-dirs --no-remote-components --js-runtimes node:/opt/homebrew/bin/node --impersonate Chrome-142:Macos-26 --no-cookies --no-cache-dir --no-playlist --quiet --no-warnings --no-progress --no-continue --no-part --no-mtime --retries 0 --fragment-retries 0 --extractor-retries 0 --file-access-retries 0 --concurrent-fragments 1 --socket-timeout 180 -f 139 -o /Users/philstilwell/Documents/SLUGFESTER.com/output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.official-ytdlp7-format139.m4a [REDACTED_SIGNED_URL]\nERROR: [youtube] 8k9A7d2Wnjk: Requested format is not available. Use --list-formats for a list of available formats\n",
+    "stopRequired": true,
+    "furtherOrdinaryAttemptsAuthorized": false
+  },
+  "protectedEvidencePreserved": true,
+  "directIncrementalCostUsd": 0
+}

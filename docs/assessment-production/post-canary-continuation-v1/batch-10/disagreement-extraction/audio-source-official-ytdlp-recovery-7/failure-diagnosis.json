@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-official-ytdlp-recovery-7-failure-diagnosis",
+  "status": "preserved-batch-10-official-ytdlp-recovery-7-format-139-unavailable-stop-diagnosed",
+  "batchNumber": 10,
+  "diagnosedAt": "2026-08-26T00:38:08Z",
+  "authenticatedArtifacts": {
+    "plan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-official-ytdlp-recovery-7/correction-plan.json",
+      "sha256": "d282b93f7803766a0d972e3457a3df7dbba2a5c4a6927fdf076a9bd7f5882f38"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-official-ytdlp-recovery-7/execution-activation.json",
+      "sha256": "30f23018cf5cd2b062aec8467d5eb91345582334185110b6d6f2ccf9f240dcd0"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-official-ytdlp-recovery-7/execution.json",
+      "sha256": "b1a0a18839cfd52cd7c0fa0b455e2e824b23d1be3ee3a095afef16397e822880"
+    }
+  },
+  "diagnosis": {
+    "category": "frozen-format-139-not-available-in-fresh-official-ytdlp-extraction",
+    "plainEnglish": "The verified current official downloader resolved Debate 123 but did not offer the frozen audio-only format 139, so it stopped before creating or downloading a media file.",
+    "exactUnderlyingCauseEstablished": false,
+    "safeInference": "The current extraction result differs from the older format inventory that supplied the frozen format-139 byte count. The preserved failure does not establish whether YouTube changed the formats exposed to this client, whether token enforcement hid the format, or which alternative audio format is currently available.",
+    "frozenFormatId": "139",
+    "mediaFileCreated": false,
+    "mediaBytesReceived": 0,
+    "alternateFormatInventoryRequested": false,
+    "alternateFormatSelected": false
+  },
+  "executionAudit": {
+    "officialYtDlpVersion": "2026.08.19",
+    "officialYtDlpSha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+    "checksumMatched": true,
+    "gpgSignatureVerified": true,
+    "impersonateTarget": "Chrome-142:Macos-26",
+    "officialYtDlpNativeInvocations": 1,
+    "logicalPublicSourceDownloads": 1,
+    "debatesAttempted": [
+      "123"
+    ],
+    "debatesNotAttempted": [
+      "147",
+      "130"
+    ],
+    "acceptedExistingSourcesRevalidated": 2,
+    "sourcesInstalled": 2,
+    "pluginsUsed": 0,
+    "remoteComponentsUsed": 0,
+    "credentialsUsed": 0,
+    "continuedDownloads": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelContexts": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "protectedPriorEvidencePreserved": true
+  },
+  "disposition": {
+    "stopRequired": true,
+    "recovery7Consumed": true,
+    "furtherOrdinaryAttemptsAuthorizedByRecovery7": false,
+    "batch10AudioSourceGatePassed": false,
+    "paidTranscriptionMayBegin": false,
+    "scoresDerived": false,
+    "productionMutated": false,
+    "batch11Selected": false,
+    "nextSafeAction": "obtain-explicit-authorization-for-one-fresh-format-inventory-and-a-new-frozen-format-selection-before-any-further-public-source-transfer"
+  }
+}
