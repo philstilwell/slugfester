@@ -40,15 +40,28 @@
       "Sec-Fetch-Mode",
       "User-Agent"
     ],
-    "requiredHeaderValueHashes": {
+    "observedHeaderValueHashesAtDiagnosis": {
       "Accept": "a75530415514aea5388e6a1d960da0792ce17b8d7dac5759712e22615813e78d",
       "Accept-Language": "63afcacc821798b573ad6c55c8d6f6ae1aeec88f55520d197c7f4abb34c13eb3",
       "Sec-Fetch-Mode": "d0cda6559bb347db706f6fa92a5b2491658e0c1e5bda98bb14e3c8a711b8fa33",
       "User-Agent": "d713dadbf3d0ca255287b277ab4d36ce7d711d34f197e05966270e2160e6da6c"
     },
+    "stableHeaderValuesFrozen": [
+      "Accept",
+      "Accept-Language",
+      "Sec-Fetch-Mode"
+    ],
+    "userAgentValueIsExtractorGeneratedAndMayVary": true,
     "cookiesPresent": false,
     "authorizationHeaderPresent": false,
     "blindRepetitionAllowed": false
+  },
+  "preflightCorrection": {
+    "classification": "ephemeral-extractor-user-agent-value",
+    "mediaRequests": 0,
+    "mediaBytesReceived": 0,
+    "shardAttemptConsumed": false,
+    "exactCorrection": "freeze-public-header-names-and-stable-values-while-recording-the-extractor-generated-user-agent-hash-at-execution"
   },
   "recoveryPlan": {
     "level": 2,

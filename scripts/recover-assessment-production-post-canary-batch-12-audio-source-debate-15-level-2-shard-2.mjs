@@ -237,9 +237,17 @@ async function applyRecovery() {
   assertV4(!(await exists(PARTIAL_DOWNLOAD)), "unverified Debate 15 recovery partial already exists");
 
   const resolved = resolveFreshMedia();
+  const stableHeaderValueHashes = Object.fromEntries(
+    Object.entries(resolved.headerValueHashes).filter(([name]) => name !== "User-Agent")
+  );
+  const expectedStableHeaderValueHashes = Object.fromEntries(
+    Object.entries(preparation.diagnosis.observedHeaderValueHashesAtDiagnosis)
+      .filter(([name]) => name !== "User-Agent")
+  );
   assertV4(
-    JSON.stringify(resolved.headerValueHashes) ===
-      JSON.stringify(preparation.diagnosis.requiredHeaderValueHashes) &&
+    JSON.stringify(stableHeaderValueHashes) ===
+      JSON.stringify(expectedStableHeaderValueHashes) &&
+      preparation.diagnosis.userAgentValueIsExtractorGeneratedAndMayVary === true &&
       resolved.filesize === preparation.diagnosis.resolvedFormatContentLengthBytes,
     "Debate 15 extractor public headers or content length changed"
   );
