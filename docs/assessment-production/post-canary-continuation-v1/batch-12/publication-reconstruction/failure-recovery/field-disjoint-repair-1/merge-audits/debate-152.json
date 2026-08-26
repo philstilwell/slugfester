@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-field-disjoint-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-12-publication-field-disjoint-repair-1",
+  "status": "passed",
+  "debateNumber": "152",
+  "sourceFailedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/outputs/debate-152.json",
+    "sha256": "d7d9ab51c82a92fb477364a0da98470877f616d6af1917330421cd020098eef5",
+    "retainedValidationCleanFieldsDeterministically": true,
+    "rejectedTargetValuesRetained": false
+  },
+  "replacements": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-152-shard-1",
+      "fieldKey": "field_01",
+      "field": "moveProse.con-secular-altruism-c010.critique",
+      "kind": "critique",
+      "originalValueSha256": "7f5436105dbdc4f8d693ed3c6202248f2b8de65a320559edede87dbee8bd5532",
+      "replacementValueSha256": "728b2b0ba33e1e9136899b77d24e1bffcd40d140e21b91758a89dbc2bd617b8c"
+    },
+    {
+      "contextIndex": 0,
+      "shardId": "debate-152-shard-1",
+      "fieldKey": "field_02",
+      "field": "moveProse.pro-service-purpose-flourishing.critique",
+      "kind": "critique",
+      "originalValueSha256": "5d6d9ef0ca1da6cb6d6c61944ccf12020a3fece71fde5ddae8513fa8a5b9330c",
+      "replacementValueSha256": "5972fcc059f022718413a2e6c3b1fe6b2c565b948028ea0ed74416e998ff3769"
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-152-shard-2",
+      "fieldKey": "field_01",
+      "field": "moveProse.pro-hiddenness-unknown-reasons.critique",
+      "kind": "critique",
+      "originalValueSha256": "dcb0176d37823e22e7efcdcdc0dce0d3055bfe9a73383de46f9d90f8acf00e95",
+      "replacementValueSha256": "79b905511791f09d868214ab7379ed020531505e09ae40bf7e46d710777891cf"
+    }
+  ],
+  "correctedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/failure-recovery/field-disjoint-repair-1/corrected/debate-152.json",
+    "sha256": "0ae135dbb51c015eaf82214e5298ea5b66a4e42160cd5c632fc553719d10559a",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "152",
+      "moves": 23,
+      "critiques": 23,
+      "minimumCritiqueCharacters": 979,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 3,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "lockedScoresUnchanged": true,
+  "modelAuthoredScores": 0
+}
