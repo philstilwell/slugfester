@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-repository-dependent-correction-1-activation",
+  "protocolId": "assessment-production-post-canary-batch-11-repository-dependent-correction-1",
+  "status": "frozen-batch-11-repository-dependent-correction-1-activated",
+  "activatedAt": "2026-08-26T17:22:52Z",
+  "batchNumber": 11,
+  "directIncrementalCostCapUsd": 0,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/correction-plan.json",
+    "sha256": "34b734b7b731269420abb13abf57dfdfcf0d36338f3c0aeec2b7ee6fee406f50",
+    "bytes": 103413
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/preparation-analysis.json",
+    "sha256": "3725c2c8916c2f2f64dc3e4c19285ce089f884411b091ba34542147058c11db4",
+    "bytes": 1241
+  },
+  "executionTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-repository-dependent-correction-1.mjs",
+      "sha256": "785d1839cd9550380eb22754b6dc4a5776ea9f45dcef22ec1eb3d85fb7b113cb",
+      "bytes": 6298
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-11-repository-dependent-correction-1.mjs",
+      "sha256": "383567e1daa07a132682bf051fb8bb16a0ba9b4ee072a4f3ebcddb555042672e",
+      "bytes": 11784
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-11-repository-dependent-correction-1-activation.mjs",
+      "sha256": "07c71700c3ca4d63b29c451e5165bcddbb01cf24b85aeb7ddac90b7705b465fb",
+      "bytes": 2441
+    }
+  ],
+  "proposedOutputs": [
+    {
+      "path": "scripts/fixtures/reassessment-scoring-v2-ledger.json",
+      "sha256": "cb0f23d5d13737c1284cb9e5cb612372ce8875c56c545c5b444b57177027ff5d",
+      "bytes": 13723,
+      "role": "stable-legacy-v2-test-fixture"
+    },
+    {
+      "path": "scripts/test-reassessment-scoring.mjs",
+      "sha256": "82fd26a35254deb955d787d528cabca6045ee47b48e2d09a2e42144e59edb3b5",
+      "bytes": 8157,
+      "role": "fixture-backed-test-route"
+    },
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.json",
+      "sha256": "61a3a3a9e32a3c3b1102c4c061d0f9be31328a5a46bd6fe2669c36fb1ff2cf17",
+      "bytes": 11588,
+      "role": "deterministic-pilot-analysis"
+    },
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.md",
+      "sha256": "a0508931fd39f1b4284118602d15f8831a19a175508849bf08fd8b46b6783332",
+      "bytes": 5390,
+      "role": "deterministic-pilot-analysis"
+    }
+  ],
+  "executionDiscipline": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "recursiveCorrections": 0,
+    "completeRepositoryValidationRuns": 1,
+    "productionMutationReruns": 0,
+    "seoGeneratorWriteRuns": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "authorization": {
+    "executionActivation": true,
+    "exactFourDependentWrites": true,
+    "completeRepositoryValidation": true,
+    "atomicCommitAndPush": true,
+    "additionalWrites": false,
+    "productionMutationRerun": false,
+    "seoGeneratorWrite": false,
+    "scorePass": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "outputPaths": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/analysis.json",
+    "seoExecution": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/execution.json",
+    "seoAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/analysis.json"
+  },
+  "nextAuthorizedAction": "execute-one-batch-11-repository-dependent-correction-and-full-validation-pass"
+}
