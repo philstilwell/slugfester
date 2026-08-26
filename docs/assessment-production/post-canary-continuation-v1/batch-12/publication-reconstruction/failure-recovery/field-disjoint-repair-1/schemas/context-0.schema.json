@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-12-field-disjoint-repair-0",
+  "title": "Batch 12 Debate 152 field-disjoint repair debate-152-shard-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "shardId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-12-publication-field-disjoint-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-12-publication-field-disjoint-repair-1"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "152"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "knechtle-aron-ra-god-existence-2023"
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-152-shard-1"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "corrections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_01",
+        "field_02"
+      ],
+      "properties": {
+        "field_01": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_02": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
