@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-finalization",
+  "status": "staging-only-batch-10-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-10/deterministic-publication-compilation/compiled/debate-177.json",
+  "compiledInputSha256": "3a7a37badf1875a8ab57cdce9455a11da19b62a2f157f65821af0bf978368423",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/WRHjZCKRIu4/transcript.txt",
+    "transcriptSha256": "72f9074ca0e9393e177b1a78504e1f75e5dd87aaf1eed9e59614aa5450ea5db4",
+    "eventsPath": ".assessment-cache/captions/WRHjZCKRIu4/events.json",
+    "eventsSha256": "b46241372230333a45dcf8d51d3ce333cdf50a50184705773007a44eccc31d90",
+    "localManifestPath": ".assessment-cache/captions/WRHjZCKRIu4/manifest.json",
+    "localManifestSha256": "1720198ea7bb347bf3286ac118a7b8d73e3771bd4ac326085f6393acd445f96c"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 5,
+  "scoreProtocolId": "assessment-production-post-canary-batch-10-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d177-ai-pro-thesis",
+        "text": "The AI steelman is that textual trust is warranted when multiple partially independent forms of evidence make substantial recovery more probable than relevant alternatives, even though some readings and the exact autograph relationship remain uncertain.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-standard-relative-confidence",
+            "pro-written-branching-checks",
+            "con-ancestral-not-autographic"
+          ],
+          "explanation": "This repairs the undefined trust threshold and expressly incorporates the strongest distinction between ancestral reconstruction and autographic identity."
+        }
+      },
+      "premises": [
+        {
+          "id": "d177-ai-pro-premise-1",
+          "text": "Branching witnesses, versions, patristic citations, and internal scribal patterns can provide convergent constraints whose force depends on genealogy and independence rather than on manuscript quantity alone.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-written-branching-checks",
+              "pro-variants-from-abundance",
+              "con-comparative-abundance-limit"
+            ],
+            "explanation": "This repairs the abundance argument by making independence, genealogy, and convergent evidentiary channels explicit conditions."
+          }
+        },
+        {
+          "id": "d177-ai-pro-premise-2",
+          "text": "The ability to identify conspicuous later additions and classify most differences as accidental is evidence that comparative criticism can detect at least many significant departures within the observable tradition.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-most-variants-insignificant",
+              "pro-meaningful-viable-minority",
+              "con-substantial-later-additions"
+            ],
+            "explanation": "This extends the variant analysis by treating successful detection of major additions as evidence of method performance."
+          }
+        },
+        {
+          "id": "d177-ai-pro-premise-3",
+          "text": "An ancestral text need not be proven identical to an autograph for historically responsible trust if the remaining hypotheses of shared early alteration are constrained and do not dominate the cumulative evidence.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-standard-relative-confidence",
+              "con-ancestral-not-autographic",
+              "con-probability-broad-continuity"
+            ],
+            "explanation": "This directly repairs the missing bridge from ancestral reconstruction to a proportionate probabilistic standard of trust."
+          }
+        },
+        {
+          "id": "d177-ai-pro-premise-4",
+          "text": "Trust should be disaggregated: confidence may be high for broad wording, lower at disclosed disputed readings, and undecided where the evidence cannot discriminate among viable alternatives.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a location-sensitive confidence model rather than forcing one undifferentiated confidence judgment across the entire text."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d177-ai-pro-conclusion",
+        "text": "Accordingly, the surviving evidence can justify qualified trust in substantial New Testament wording while requiring explicit uncertainty at contested readings and withholding certainty about complete autographic identity.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-standard-relative-confidence",
+            "pro-meaningful-viable-minority",
+            "con-ancestral-not-autographic"
+          ],
+          "explanation": "The conclusion repairs overbreadth by limiting trust to substantial recovery and preserving both localized and autographic uncertainty."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d177-ai-pro-argument-1",
+          "title": "Detection as a method check",
+          "text": "Known substantial additions are not only evidence of scribal change; their identification also functions as a limited performance check on textual criticism. When early witnesses, distribution patterns, and internal considerations converge to mark a passage as secondary, the method demonstrates an ability to detect consequential growth rather than merely assuming stability. This does not show that every early alteration is recoverable, but it weakens the claim that the existence of important additions by itself defeats qualified trust in the critically reconstructed text.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-substantial-later-additions",
+              "pro-written-branching-checks",
+              "pro-descendant-comparison-reconstruction"
+            ],
+            "explanation": "This develops a new evidentiary use for admitted additions by connecting their detection to a bounded assessment of reconstructive performance."
+          }
+        },
+        {
+          "id": "d177-ai-pro-argument-2",
+          "title": "Portfolio confidence model",
+          "text": "Textual trust can be modeled as a portfolio of local judgments rather than a single all-or-nothing proposition. Readings supported across early, independent, and geographically dispersed channels receive greater confidence; genealogically dependent or internally ambiguous readings receive less. The aggregate claim of substantial recovery then rests on the distribution of confidence across locations, with disputed passages openly flagged. This model would require transparent criteria and empirical application, but it prevents a small number of difficult readings from automatically determining confidence in every other location.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This is a genuinely new framework that aggregates calibrated local confidence without attributing uniform certainty to the whole text."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d177-ai-con-thesis",
+        "text": "The AI steelman is that substantial reconstruction of the surviving tradition does not alone warrant confidence in authorial wording unless evidence also constrains consequential alterations before the earliest recoverable branching point.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "con-early-gap-lost-copying",
+            "con-ancestral-not-autographic",
+            "con-trust-burden-early-copying"
+          ],
+          "explanation": "This extends the central con route by stating the missing constraint as the decisive condition rather than demanding direct certainty."
+        }
+      },
+      "premises": [
+        {
+          "id": "d177-ai-con-premise-1",
+          "text": "Comparison among descendants can recover their common ancestor while remaining structurally unable to expose a change already present in every descendant before their divergence.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-ancestral-not-autographic",
+              "pro-descendant-comparison-reconstruction"
+            ],
+            "explanation": "This extends the ancestral distinction by identifying the exact class of shared alterations descendant comparison cannot independently reveal."
+          }
+        },
+        {
+          "id": "d177-ai-con-premise-2",
+          "text": "The absence of early copies does not prove corruption, but it widens uncertainty precisely where a consequential alteration could become ancestral to all surviving witness families.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-early-gap-lost-copying",
+              "con-intentional-important-changes"
+            ],
+            "explanation": "This repairs any argument from absence by presenting the gap as uncertainty expansion rather than positive proof of alteration."
+          }
+        },
+        {
+          "id": "d177-ai-con-premise-3",
+          "text": "Observed substantial additions establish that influential textual growth occurred, while their successful detection shows only that some changes after evidentiary branching remain recoverable.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-substantial-later-additions",
+              "pro-written-branching-checks"
+            ],
+            "explanation": "This repairs the additions argument by acknowledging method success and limiting the remaining concern to earlier shared changes."
+          }
+        },
+        {
+          "id": "d177-ai-con-premise-4",
+          "text": "A probabilistic trust claim requires sensitivity analysis showing that reasonable assumptions about undocumented early copying do not materially change the conclusion of substantial authorial recovery.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a formal robustness requirement for evaluating how early-transmission assumptions affect the historical conclusion."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d177-ai-con-conclusion",
+        "text": "Therefore, broad continuity may be historically probable while confidence in substantial autographic recovery remains conditional until the case demonstrates robustness against plausible shared alterations in the undocumented earliest period.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-probability-broad-continuity",
+            "con-trust-burden-early-copying",
+            "pro-standard-relative-confidence"
+          ],
+          "explanation": "This conclusion repairs any slide toward skepticism by conceding continuity and making the remaining reservation explicitly conditional and probabilistic."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d177-ai-con-argument-1",
+          "title": "Shared-error blind spot",
+          "text": "Branching reconstruction is strongest for errors introduced after branches separate, because disagreement among descendants creates information about their ancestor. Its evidentiary leverage is weaker for an alteration already fixed before the surviving branches diverged. The relevant question is therefore not whether comparison works, but where the recoverable branching point lies relative to authorial composition and how much opportunity existed before it. Unless that temporal relationship is constrained, excellent reconstruction of a common ancestor can coexist with unresolved uncertainty about the autograph.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-ancestral-not-autographic",
+              "con-early-gap-lost-copying",
+              "pro-written-branching-checks"
+            ],
+            "explanation": "This extends the central reply by explaining why reconstructive power varies according to when an alteration enters the transmission tree."
+          }
+        },
+        {
+          "id": "d177-ai-con-argument-2",
+          "title": "Robustness under early-change scenarios",
+          "text": "A stronger evaluation would test the pro conclusion across explicit early-transmission scenarios: careful copying with dispersed exemplars, mixed-quality copying with rapid branching, and a bottleneck in which one altered exemplar dominates later witnesses. The point is not to assume the worst scenario, but to ask whether available evidence discriminates among them and whether substantial recovery remains likely across the plausible range. If the conclusion depends heavily on an unverified favorable scenario, the appropriate confidence should remain conditional even while broad continuity is conceded.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces scenario-based sensitivity analysis as affirmative support for a calibrated uncertainty claim rather than relying on missing evidence alone."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-26T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "177",
+    "sections": 6,
+    "moves": 22,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
