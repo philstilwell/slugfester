@@ -1,0 +1,2337 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-10-production-compatibility",
+  "status": "frozen-post-canary-batch-10-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-10-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "64416cd93b17011292da0dbb1e59a0488e148b8dd101346e178fba9102d3f596",
+    "calculatedScoresSha256": "06dac44b312eb305d58532487998ba26f823edd070e69a3bc98c8144592b0a6c",
+    "finalizationAuditSha256": "6a01fa2c8b6713cf129508f59e27b07eaf0a7cef9692486faa8f2f06344c4376",
+    "renderingAuditSha256": "90589d19784d771eccbdb8addc9c7b4987ec879b66afbad1b06f071ac8c55afe",
+    "finalCandidateSha256": "87715f740c9bb679838a8d278d31af2f09d174db2dce3bfb6a02fbbdf187f3dd",
+    "eventsPath": ".assessment-cache/captions/WRHjZCKRIu4/events.json",
+    "eventsSha256": "b46241372230333a45dcf8d51d3ce333cdf50a50184705773007a44eccc31d90",
+    "finalJudgmentSha256": "d39ea19b5c45db3feca1c27403247cfe9f035622a302959c52bd7e1a638d244c"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "177",
+    "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-substantial-recovery",
+        "side": "pro",
+        "description": "Establish that the surviving witness tradition and comparative methods preserve the New Testament's wording to a sufficiently high, historically appropriate degree of probability for the text to be trusted, despite localized uncertainty and the loss of the autographs.",
+        "successCriteria": "The route succeeds if cumulative manuscript evidence and reconstructive method justify substantial recovery under a probabilistic standard, while the remaining meaningful variants are shown to be limited enough that local uncertainty does not defeat trust in the text as a whole.",
+        "motionBridge": {
+          "bridgeId": "bridge-pro-motion-trust",
+          "tier": "motion",
+          "description": "Connect substantial probabilistic recovery, rather than certainty at every disputed reading, to the level of confidence required to trust the New Testament text."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-pro-central-witnesses",
+            "tier": "central",
+            "description": "Show that numerous, early, geographically or genealogically independent manuscripts, versions, and patristic witnesses provide cumulative access to earlier textual states."
+          },
+          {
+            "bridgeId": "bridge-pro-central-method",
+            "tier": "central",
+            "description": "Explain how comparison across branching written witnesses can identify copying errors and reconstruct ancestral wording even when the autographs and earliest copies are unavailable."
+          },
+          {
+            "bridgeId": "bridge-pro-central-variant-scope",
+            "tier": "central",
+            "description": "Establish that most variants are insignificant or readily identifiable and that the smaller set of meaningful viable disputes does not prevent substantial textual recovery."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-pro-subsidiary-early-stability",
+            "tier": "subsidiary",
+            "description": "Supply concrete evidence of careful early transmission or agreement between early witnesses that supports stability before the principal surviving codices."
+          },
+          {
+            "bridgeId": "bridge-pro-subsidiary-historical-standard",
+            "tier": "subsidiary",
+            "description": "Justify probability rather than absolute certainty as the appropriate standard for historical trust and relate the available evidence to ordinary work on ancient texts."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-autographic-uncertainty",
+        "side": "con",
+        "description": "Establish that textual criticism may recover an ancestral form behind the surviving witnesses without providing enough evidence to identify that form confidently with the authors' original wording, making the requested level of textual trust unwarranted.",
+        "successCriteria": "The route succeeds if the undocumented earliest transmission period leaves a material possibility of consequential changes shared by all surviving branches, and if later abundance, reconstructive success, or broad continuity cannot close that evidentiary gap to the autograph.",
+        "motionBridge": {
+          "bridgeId": "bridge-con-motion-confidence-gap",
+          "tier": "motion",
+          "description": "Connect the unresolved gap between the earliest reconstructable text and the authorial wording to the conclusion that confidence sufficient for the motion has not been established."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-con-central-early-gap",
+            "tier": "central",
+            "description": "Show that the loss of the autographs and earliest generations of copies prevents direct testing of copying accuracy during the period most capable of seeding every surviving branch."
+          },
+          {
+            "bridgeId": "bridge-con-central-initial-autograph",
+            "tier": "central",
+            "description": "Maintain the distinction between reconstructing the initial ancestor of extant witnesses and demonstrating that this reconstructed text is identical to the autograph."
+          },
+          {
+            "bridgeId": "bridge-con-central-consequential-change",
+            "tier": "central",
+            "description": "Establish that scribal variation includes intentional, substantial, or interpretively consequential changes, so recoverable broad continuity does not resolve every material uncertainty."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-con-subsidiary-quantity-limits",
+            "tier": "subsidiary",
+            "description": "Explain why the quantity of predominantly later witnesses and the low proportion of significant extant variants do not reveal changes predating the earliest surviving evidence."
+          },
+          {
+            "bridgeId": "bridge-con-subsidiary-burden-standard",
+            "tier": "subsidiary",
+            "description": "Specify why the advocate of trust must provide affirmative evidence of reliable early transmission rather than treat the absence of known total discontinuity as sufficient."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "standard-of-confidence",
+        "title": "The Standard for Recovery and Textual Trust",
+        "weightPercent": 20,
+        "rationale": "This issue defines whether the motion requires autographic certainty or a historically reasonable degree of confidence, and therefore sets the burden against which manuscript evidence and residual uncertainty must be considered."
+      },
+      {
+        "sectionId": "early-transmission-gap",
+        "title": "The Undocumented Earliest Transmission Period",
+        "weightPercent": 25,
+        "rationale": "The central historical dispute concerns whether missing originals and early copies leave an unbridgeable evidentiary gap or whether circulation patterns, early witnesses, versions, and patristic testimony support continuity with authorial wording."
+      },
+      {
+        "sectionId": "reconstruction-method",
+        "title": "Reconstructing Earlier Texts from Surviving Witnesses",
+        "weightPercent": 20,
+        "rationale": "This issue addresses whether comparison among branching manuscript traditions can recover predecessor readings despite accumulated errors, and whether the earliest reconstructable text can be identified with the autograph."
+      },
+      {
+        "sectionId": "witness-abundance",
+        "title": "The Evidentiary Value of Manuscript Abundance and Date",
+        "weightPercent": 12,
+        "rationale": "The number, age, independence, and coverage of surviving witnesses matter to whether the manuscript tradition provides effective cross-checks, while raising the question whether relative abundance establishes original wording."
+      },
+      {
+        "sectionId": "variant-scale",
+        "title": "The Scale and Proportion of Textual Variation",
+        "weightPercent": 11,
+        "rationale": "This issue separates the raw number of variants from the subset that is meaningful and viable, determining what the surviving variation establishes about the stability and recoverability of the text."
+      },
+      {
+        "sectionId": "consequential-variants",
+        "title": "Consequential Variants and the Scope of Trust",
+        "weightPercent": 12,
+        "rationale": "Disputed readings and recognized additions test whether local uncertainty materially limits textual trust, including whether interpretive or doctrinal significance bears on confidence in the New Testament as a whole."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-early-gap-lost-copying",
+        "sectionId": "early-transmission-gap",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Repeated copying before the earliest surviving manuscripts could propagate inherited and new mistakes, while the missing intervening copies prevent direct reconstruction of that earliest transmission history.",
+        "sourceSpan": {
+          "startEvent": 227,
+          "endEvent": 437,
+          "excerpt": "mistakes had crept into the text before we start getting copies there's no way to know because we don't have earlier copies these are the earliest the first complete copy 300 years after how many intervening stages of copying was we don't we simply don't know we can't know because we don't have we don't have the manuscripts to tell us this again is not simply true for the gospel mark it's true for all of the books of the New"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly introduces Bart Ehrman immediately before this uninterrupted first-person opening presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-early-gap"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move directly develops the undocumented-early-copying premise and therefore requires no opposing target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition distinguishes known missing evidence from the possibility of accumulated copying mistakes and confines the claim to the undocumented period."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The missing manuscripts warrant uncertainty about intervening copying, and the speaker expressly says the history is unknown rather than proving corruption."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The inference from missing intervening copies to inability to inspect that transmission history is direct, with only the trust consequence left for later argument."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The dates and absence of intervening witnesses specifically support the evidentiary gap, though no comparative transmission model is developed here."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It squarely supports the central early-gap bridge and occupies the top of that burden-contact tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances its own evidentiary-gap argument without materially characterizing a live opposing interpretation."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt stresses that mistakes predate surviving copies, identifies a roughly three-century gap to a complete copy, and notes missing intervening manuscripts.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-abundance-late-witnesses",
+        "sectionId": "witness-abundance",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "The New Testament's unusually large number of surviving manuscripts does not resolve the absence of the early copies needed to test whether later witnesses preserve the original wording.",
+        "sourceSpan": {
+          "startEvent": 438,
+          "endEvent": 515,
+          "excerpt": "later centuries but we don't have the copies that we want which are the copies from the early centuries what can we say about the ages of these copies well the oldest copy of Mark is p45 which we looked at from the Year 220 we have a fragment of a piece of the New Testament from almost a hundred years earlier maybe a hundred years it's hard to date these things look the way they date manuscripts"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage continues Ehrman's uninterrupted opening statement after his transmission-history explanation.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-quantity-limits"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move explains why predominantly later abundance does not supply the missing early evidence and has no reply target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between many later witnesses and the desired early witnesses is explicit and consistently scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is limited to what manuscript abundance cannot establish, and uncertainty about dating is expressly acknowledged."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary quantity-limits bridge and is especially strong within that supporting tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is assessed; the move principally states a limitation of the available evidence."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts plentiful later manuscripts with the copies wanted from the early centuries and identifies P45 around 220 as the oldest Mark witness discussed.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-variant-scale-uncounted",
+        "sectionId": "variant-scale",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Surviving New Testament manuscripts contain hundreds of thousands of differences, while neither all extant differences nor variations arising before the surviving record can be completely counted.",
+        "sourceSpan": {
+          "startEvent": 516,
+          "endEvent": 576,
+          "excerpt": "text of the New Testament uncertain his supporters pointed out he didn't invent these thirty thousand places he just noted that they exist well that was three hundred years ago and it was based on the study of a hundred manuscripts now we have fifty six hundred manuscripts how many differences do we know about today the reality is nobody knows nobody has been able to count all"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The same identified speaker continues continuously, using John Mill's edition and current manuscript totals as supporting examples.",
+        "importance": 1,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-consequential-change"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move establishes the scale and incomplete countability of textual differences without purporting to answer an earlier opponent."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim that nobody has counted all extant differences is clear, but the extension to unknowable pre-survival variation is only compressed in the excerpt."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The inability to give a complete count is well framed, though categorical language about nobody knowing exceeds the limited counting history supplied."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "John Mill and the expansion from roughly one hundred to thousands of manuscripts provide concrete support, with no counting methodology supplied."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It reaches consequential-change concerns only indirectly, placing it near the lower end of central burden contact."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move reports the scale and counting problem without presenting a substantive alternative account for evaluation."
+          },
+          "responsiveness": {
+            "value": 76,
+            "rationale": "Within constructive moves, it supplies relevant scale evidence but does not itself establish the significance of those differences."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts Mill's thirty thousand noted places from about one hundred manuscripts with roughly fifty-six hundred manuscripts and says all differences remain uncounted.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-variant-scale-most-accidental",
+        "sectionId": "variant-scale",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Most surviving manuscript differences are insignificant accidental mistakes that trained critics can usually recognize, so the material dispute concerns the smaller set of consequential or difficult readings.",
+        "sourceSpan": {
+          "startEvent": 577,
+          "endEvent": 637,
+          "excerpt": "copy the same word twice or the same line twice I don't know many instances of copying a same page twice so these are these are what I would call accidental changes they they are by far the majority of the man use of the variations that we have in our manuscript and the thing is these accidental mistakes are usually pretty easy if either trained they're pretty easy to catch and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ehrman's uninterrupted opening statement explicitly classifies the previously discussed manuscript differences and explains their significance.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-variant-scope"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive classification concedes that most variants are accidental and recognizable while isolating the smaller material category."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim consistently distinguishes the majority of accidental variants from the smaller difficult or important category."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The assertion that accidental errors are usually recognizable is appropriately qualified and supported with ordinary copying examples."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the pro central variant-scope bridge despite being offered by con, and strongly narrows the relevant dispute."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move offers a classification and concession rather than testing a developed opposing interpretation."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies repeated words or lines as accidental changes, calls them the clear majority, and says trained critics usually catch them readily.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-intentional-important-changes",
+        "sectionId": "consequential-variants",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Some scribal changes appear intentional and important, and the lack of witnesses from the earliest period prevents determining how many consequential changes arose there.",
+        "sourceSpan": {
+          "startEvent": 699,
+          "endEvent": 722,
+          "excerpt": "this on purpose probably if not it's just a massive accident but they still are important changes and so we'll look at those before I just want to make one final point that the earliest guides were much worse than the later scribes they certainly made a lot more accidental changes they may have made a lot more intentional changes and there's no way for us to know let me tell you"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ehrman explicitly introduces intentional changes as the next category within his continuous opening argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-consequential-change"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the consequential-change premise through intentional variants and uncertainty in the earliest period."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Intentional and important changes are distinguishable, but 'earliest scribes' and the extent of their inferiority are not sharply delimited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker distinguishes observed important changes from the unknowable possibility that early scribes made more intentional changes."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances an affirmative historical concern and does not substantially interpret an opposing argument."
+          },
+          "responsiveness": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (85 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes important purposeful changes, claims early scribes made more accidental changes, and concedes that their intentional-change rate cannot be known.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-substantial-later-additions",
+        "sectionId": "consequential-variants",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "The woman-taken-in-adultery narrative and Mark's longer ending are substantial, influential passages that entered the tradition later and are absent from the earliest manuscript evidence.",
+        "sourceSpan": {
+          "startEvent": 830,
+          "endEvent": 870,
+          "excerpt": "right chief Jesus was remembering this happened because you can't make a Jesus movie without the woman taken in adultery let the one without sin among you be the first to cast a stone at her it's found in manuscripts of the Gospel of John but it's not originally in the Gospel of John probably because it's not in the earliest manuscripts of John it's a story that was added later"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Ehrman remains the uninterrupted speaker and explicitly identifies both passages as absent from the earliest or best manuscript witnesses.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-consequential-change"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move gives concrete examples of substantial later additions and does not function as a reply to an earlier opposing move."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The named passage, its later-addition status, and the earliest-manuscript qualification are all clearly recoverable and bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker uses 'probably' and ties the conclusion to absence from early witnesses, matching the historical warrant's qualified force."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Absence from the earliest witnesses coherently supports later addition, with a bounded unstated need for broader internal and external evidence."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "A named, influential passage and its early-witness absence provide specific support, though the excerpt does not enumerate the complete witness pattern."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The example directly and strongly establishes that substantial consequential additions occurred within the surviving tradition."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move presents manuscript evidence for named additions without evaluating a competing source-supported explanation."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt names the woman-taken-in-adultery narrative, notes its cultural influence, and states that it is absent from the earliest John manuscripts and was probably added later.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-standard-relative-confidence",
+        "sectionId": "standard-of-confidence",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Textual trust requires relative confidence that the original wording remains locatable in the manuscripts, rather than absolute certainty about every disputed reading.",
+        "sourceSpan": {
+          "startEvent": 1046,
+          "endEvent": 1058,
+          "excerpt": "the text is not the issue rather our disagreement is over two things how significant these textual variants are and whether we can have any confidence about recovering the wording of the original I take the position that we can be relatively confident I believe that the wording of the originals is not lost but can be located in the manuscripts but the question about how certain"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly introduces Wallace, and this passage occurs within his uninterrupted opening presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-trust"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-early-gap-lost-copying"
+          ],
+          "components": [
+            {
+              "componentId": "pro-standard-relative-confidence-component-01",
+              "targetMoveId": "con-early-gap-lost-copying",
+              "text": "The decisive demand is whether missing early copies defeats historically sufficient trust, rather than merely eliminating certainty.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The move justifies replacing absolute certainty with relative confidence while preserving the legitimate question whether original wording remains recoverable; it does not deny the early gap but states the trust standard under which that gap must be assessed."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast with certainty is explicit, but 'relatively confident' is not quantitatively or operationally defined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Relative confidence and locatability are probabilistic claims that appropriately avoid certainty at every disputed location."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The missing earliest copies may prevent direct verification of the autograph.",
+          "decisiveQualification": "That limitation does not automatically establish that historically sufficient relative confidence is impossible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly articulates the motion-level trust bridge and defines the standard controlling the entire dispute."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it expressly identifies the disputed standard and preserves the underlying recovery issue, though it has not yet defended the evidentiary basis."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies significance and recovery confidence as the dispute, claims relative confidence, and explicitly denies that certainty is the governing requirement.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-variants-from-abundance",
+        "sectionId": "variant-scale",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "The raw number of textual variants largely reflects the unusually large manuscript base, which produces both more recorded differences and more evidence for reconstruction.",
+        "sourceSpan": {
+          "startEvent": 1139,
+          "endEvent": 1217,
+          "excerpt": "begin with a number of variants and I want to start with a definition of a textual variant it's any place among the manuscripts in which there is variation in wording including word order omission or addition of words even spelling differences the most trivial changes count and even when all the manuscripts except one say the same thing that lone manuscript readings counts as a"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Wallace remains the sole speaker and explicitly begins his planned treatment of the number of textual variants in this passage.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-variant-scope"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-variant-scale-uncounted",
+            "con-variant-scale-most-accidental"
+          ],
+          "components": [
+            {
+              "componentId": "pro-variants-from-abundance-component-01",
+              "targetMoveId": "con-variant-scale-uncounted",
+              "text": "Whether the enormous and incompletely counted raw variant total itself indicates unrecoverable textual instability.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-variants-from-abundance-component-02",
+              "targetMoveId": "con-variant-scale-most-accidental",
+              "text": "Whether most recorded differences are trivial accidental variations.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Defining every spelling, order, omission, addition, and singular reading as a counted variant directly explains why abundance inflates the raw total, while complementing the opponent's accidental-majority concession."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Variant is operationally defined and the link between manuscript abundance and recorded differences is clearly bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The definitional point matches the evidence, though the claim that abundance improves reconstruction requires an implicit independence and comparison qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An uncounted variant total may still signal extensive transmission instability.",
+          "decisiveQualification": "Raw totals include trivial and isolated readings and therefore do not measure consequential uncertainty directly."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The definition validly undercuts a simple inference from count to significance, with a bounded bridge needed from abundance to reconstructive strength."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It materially supports the central variant-scope bridge by clarifying what the headline total includes."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full ordinary answers, it explicitly contacts the inference from raw variant quantity to instability."
+          }
+        },
+        "evidenceBasis": "The excerpt defines variants broadly to include word order, additions, omissions, spelling, trivial changes, and even a lone dissenting manuscript.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-early-witness-coverage",
+        "sectionId": "witness-abundance",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Numerous New Testament witnesses from the first three centuries collectively preserve extensive textual coverage and compare favorably with the sparse remains of classical authors.",
+        "sourceSpan": {
+          "startEvent": 1245,
+          "endEvent": 1295,
+          "excerpt": "124 manuscripts within 300 years of the composition of the New Testament now most of these are fragmentary but collectively the whole New Testament is found in them multiple times how does the average classical author stack up if we're comparing the same period 300 years after composition the average classical author has no literary remains zero none nada but if we compare all"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted first-person presentation and explicit transition to manuscript dates identify Wallace as the speaker throughout the window.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-witnesses"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-abundance-late-witnesses",
+            "con-early-gap-lost-copying"
+          ],
+          "components": [
+            {
+              "componentId": "pro-early-witness-coverage-component-01",
+              "targetMoveId": "con-abundance-late-witnesses",
+              "text": "Whether the surviving evidence is too late and sparse to provide substantial access to early New Testament wording.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-early-witness-coverage-component-02",
+              "targetMoveId": "con-early-gap-lost-copying",
+              "text": "Whether collective early coverage directly reveals every intervening copying stage.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The 124 witnesses and collective whole-text coverage directly answer the suggestion that useful early evidence is absent, but comparison within three centuries does not reconstruct the missing intervening stages themselves."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The numerical period, fragmentary character, collective coverage, and classical comparison are expressly and consistently bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The witness count and coverage are supported, but 'whole New Testament multiple times' compresses distribution and independence limitations."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Most early witnesses are fragmentary and leave the first copying generations undocumented.",
+          "decisiveQualification": "Collective early coverage supplies evidence despite not directly filling every temporal or textual gap."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The specific count and comparative baseline are concrete, but manuscript independence, distribution, and the coverage calculation are not documented here."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central witnesses bridge with unusually early and extensive cumulative evidence."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive evidentiary-coverage component while leaving the earliest transmission-history demand unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt asserts 124 witnesses within three centuries, acknowledges that most are fragmentary, claims collective whole-text coverage, and contrasts classical remains.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-late-witness-limited-growth",
+        "sectionId": "witness-abundance",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Later New Testament manuscripts add only a limited amount of material to a substantially attested text, unlike many classical works surviving partially or across much larger gaps.",
+        "sourceSpan": {
+          "startEvent": 1296,
+          "endEvent": 1388,
+          "excerpt": "later manuscripts add only 2% material to the text if you can envision and the New Testament is a snow ball rolling down a hill picking up alien elements through the centuries it's remarkable that it only picks up 2% more material over 14 centuries and they don't tell you how this compares to other ancient writers for many important authors we only have partial works live Ian Tacitus were two"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Wallace continues the same uninterrupted presentation, explicitly characterizing what skeptics infer from the dates of surviving manuscripts.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-quantity-limits"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-abundance-late-witnesses",
+            "con-substantial-later-additions"
+          ],
+          "components": [
+            {
+              "componentId": "pro-late-witness-limited-growth-component-01",
+              "targetMoveId": "con-abundance-late-witnesses",
+              "text": "Whether predominantly later manuscripts merely compound distance from the original rather than constrain textual growth.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-late-witness-limited-growth-component-02",
+              "targetMoveId": "con-substantial-later-additions",
+              "text": "Whether particular lengthy later additions nevertheless entered the tradition.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The claimed two-percent later addition directly constrains aggregate growth and qualifies the force of late dating, but it does not deny or individually analyze the known substantial additions."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The two-percent material claim is clear, but its textual base and the relation between material added and readings altered are not specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The striking aggregate inference lacks a stated method for the two-percent measure and does not distinguish additions from substitutions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later stability cannot disclose changes already embedded in every surviving branch.",
+          "decisiveQualification": "Limited later accretion supports continuity only during the observable tradition, not necessarily to the autograph."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It strongly attacks the subsidiary quantity-limits bridge while not resolving the central earliest-period issue."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The move offers relevant continuity evidence but omits the alternative's decisive temporal qualification."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive aggregate-growth component but leaves the particular consequential examples unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt states that later manuscripts add only two percent of material over fourteen centuries and contrasts this preservation with partial classical works.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-most-variants-insignificant",
+        "sectionId": "variant-scale",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "More than ninety-nine percent of textual variants make virtually no difference because many consist of spelling, word-order, inflectional, or otherwise untranslatable differences.",
+        "sourceSpan": {
+          "startEvent": 1440,
+          "endEvent": 1504,
+          "excerpt": "than 99% make virtually no difference at all for example the most common variant involves spelling and this is sorry about that spend a little time to teach to you today [Applause] the absolutely most common textual variant is what's called a movable new that's n at the end of a word when the next word starts with a vowel like our word a book and Apple same kind of principle or"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Wallace explicitly begins his section on the nature of variants and supplies sustained Greek-language examples in his uninterrupted presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-variant-scope"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-variant-scale-uncounted",
+            "con-variant-scale-most-accidental"
+          ],
+          "components": [
+            {
+              "componentId": "pro-most-variants-insignificant-component-01",
+              "targetMoveId": "con-variant-scale-uncounted",
+              "text": "Whether hundreds of thousands of differences imply correspondingly extensive meaningful textual uncertainty.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-most-variants-insignificant-component-02",
+              "targetMoveId": "con-variant-scale-most-accidental",
+              "text": "Whether most variants are accidental and normally insignificant.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The greater-than-ninety-nine-percent classification and spelling example directly answer the significance inference from raw counts and agree with the opponent's majority-accidental concession."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The variant categories are stable, but 'virtually no difference' blends linguistic, interpretive, and translational significance somewhat."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Examples support widespread triviality, although the greater-than-ninety-nine-percent estimate is asserted without a counting method."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Even a tiny percentage of a very large total can leave hundreds of consequential disputes.",
+          "decisiveQualification": "The move establishes the insignificance of the majority but does not eliminate the meaningful minority."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "Concrete Greek spelling and grammatical examples support the category, though the precise percentage lacks methodology in this span."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly and powerfully advances the central variant-scope bridge by classifying almost all recorded differences."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The response accurately limits the raw-count inference, although the strongest minority qualification is developed only in the next move."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive inference by classifying the overwhelming majority of the counted differences."
+          }
+        },
+        "evidenceBasis": "The excerpt says more than ninety-nine percent make virtually no difference and illustrates the most common class with movable-nu spelling variation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-meaningful-viable-minority",
+        "sectionId": "consequential-variants",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Fewer than one percent of variants are both meaningful and viable, although hundreds of disputed passages can still affect interpretation to some degree.",
+        "sourceSpan": {
+          "startEvent": 1507,
+          "endEvent": 1582,
+          "excerpt": "comparison less than one percent of the differences are both meaningful and viable there are still hundreds of texts that are in dispute I don't want to give the impression that textual criticism is merely a mopping up job nowadays that all but a handful of problems have been resolved that's not the case there are hundreds of passages whose interpretation depends to some degree"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker remains Wallace, who introduces the smallest variant category and then qualifies its scale within the same continuous discussion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-variant-scope"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-intentional-important-changes",
+            "con-variant-scale-most-accidental"
+          ],
+          "components": [
+            {
+              "componentId": "pro-meaningful-viable-minority-component-01",
+              "targetMoveId": "con-intentional-important-changes",
+              "text": "Whether a consequential subset of variants remains meaningful, viable, and interpretively material.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-meaningful-viable-minority-component-02",
+              "targetMoveId": "con-variant-scale-most-accidental",
+              "text": "Whether the majority's triviality eliminates serious residual disputes.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move expressly acknowledges hundreds of disputed passages and rejects a mere mopping-up portrayal while bounding them below one percent, contacting both consequentiality and proportion."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Meaningful and viable are used as a defined combined category, and the hundreds-of-passages qualification is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move avoids minimizing the remaining disputes and clearly acknowledges interpretive dependence in hundreds of passages."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A small percentage can still contain many interpretively consequential readings.",
+          "decisiveQualification": "The speaker expressly concedes hundreds of disputed passages and denies that the field is merely cleaning up."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It is at the top of the central tier because it directly defines the residual variant scope central to recovery."
+          },
+          "representationalCharity": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (94 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly accepts the strongest residual-uncertainty component and supplies the limiting classification."
+          }
+        },
+        "evidenceBasis": "The excerpt states that fewer than one percent are meaningful and viable while expressly conceding hundreds of disputed passages affecting interpretation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-core-beliefs-unaffected",
+        "sectionId": "consequential-variants",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "No viable manuscript variant has been shown to place an essential Christian belief expressed elsewhere in the New Testament in jeopardy.",
+        "sourceSpan": {
+          "startEvent": 1583,
+          "endEvent": 1599,
+          "excerpt": "most telling question asked of Bart is this why do you believe that the these core tenets of Christian orthodoxy to be in jeopardy based on the scribal errors you discovered in the biblical manuscripts now Bart's response may surprise you essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament suffice it to say that viable"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Wallace explicitly introduces the theological-beliefs question and attributes the supporting formulation to Ehrman during his uninterrupted speech.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-consequential-change"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-intentional-important-changes",
+            "con-substantial-later-additions"
+          ],
+          "components": [
+            {
+              "componentId": "pro-core-beliefs-unaffected-component-01",
+              "targetMoveId": "con-intentional-important-changes",
+              "text": "The decisive demand is whether important textual changes threaten the trust-relevant content of the New Testament.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-core-beliefs-unaffected-component-02",
+              "targetMoveId": "con-substantial-later-additions",
+              "text": "Substantial later additions may be influential even if no essential belief depends exclusively on them.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The doctrine-focused claim contacts one consequence of important variants but does not answer whether non-doctrinal interpretation or substantial additions matter to textual trust, making it a relevant partial answer."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is carefully limited to essential beliefs and viable variants, though 'essential' is not independently defined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The narrow doctrinal formulation is qualified, but the universal negative relies mainly on attributed authority within this excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Variants can matter historically or interpretively without endangering a core doctrine.",
+          "decisiveQualification": "Doctrinal redundancy answers only one dimension of trust and not the wording question itself."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "Doctrinal redundancy can limit one consequence, but it does not logically establish recovery or textual trust more generally."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It contacts the central consequential-change bridge, but only through the narrower consequence of doctrinal jeopardy."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The move fairly limits its answer to essential beliefs, though its rhetorical setup risks shifting away from the opponent's textual claim."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it contacts a secondary doctrinal consequence but not the broader decisive issue of consequential textual uncertainty."
+          }
+        },
+        "evidenceBasis": "The excerpt frames the question as jeopardy to core orthodoxy and attributes to Ehrman the statement that essential Christian beliefs are unaffected by textual variants.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-written-branching-checks",
+        "sectionId": "early-transmission-gap",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "New Testament copying was not serial degradation because written branches, access to earlier witnesses, patristic commentary, and repeated consultation of originals supplied independent checks.",
+        "sourceSpan": {
+          "startEvent": 1600,
+          "endEvent": 1653,
+          "excerpt": "it right but copying of New Testament manuscripts is hardly like this parlor game first of all the message is passed on in writing not just orally secondly textual critics do not rely on just the last person but can examine the work of several scribes who are closer to the original source third patristic writers are commenting on the text as it's going through its transmission"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Wallace announces his first bottom-line argument and develops the transmission comparison continuously in his own first-person presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-early-gap"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-early-gap-lost-copying",
+            "con-abundance-late-witnesses"
+          ],
+          "components": [
+            {
+              "componentId": "pro-written-branching-checks-component-01",
+              "targetMoveId": "con-early-gap-lost-copying",
+              "text": "The decisive inference treats repeated copying as a serial process in which errors simply accumulate beyond recovery.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-written-branching-checks-component-02",
+              "targetMoveId": "con-abundance-late-witnesses",
+              "text": "The evidentiary value of multiple witnesses depends on their ability to provide cross-checking branches.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The move expressly diagnoses the serial-degradation model as inappropriate because copying is written and branching, critics can consult earlier witnesses, and patristic commentary supplies checks; the consequence is that accumulated errors need not make ancestral wording unrecoverable."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The mechanisms are clearly distinguished, though independence and actual access to originals vary and remain implicit conditions."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move rejects a serial-degradation analogy without claiming that branching checks remove every early uncertainty."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early changes shared by every surviving branch could evade later cross-checks.",
+          "decisiveQualification": "Branching checks defeat inevitable serial degradation but cannot by themselves expose a pre-branch common alteration."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central early-gap inference by explaining why missing links do not entail unreconstructable degradation."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The response accurately defeats pure serial degradation but gives limited attention to the strongest shared-ancestor version of the concern."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it identifies the challenged inference, gives multiple defeating mechanisms, and states their reconstructive consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts manuscript transmission with an oral parlor game, emphasizing written copies, examination of several earlier scribes, and patristic textual commentary.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-p75-vaticanus-ancestor",
+        "sectionId": "early-transmission-gap",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "constructive",
+        "proposition": "The close agreement of Papyrus 75 and Codex Vaticanus, despite neither being copied from the other, supports a shared textual ancestor reaching into the early second century.",
+        "sourceSpan": {
+          "startEvent": 1685,
+          "endEvent": 1700,
+          "excerpt": "papyrus 75 and codex Vaticanus also known as be their agreement is higher than that of any other two early manuscripts P 75 is a hundred to 150 years older than B and yet it is not an ancestor of B and said be copied from an earlier common ancestor that both B and P 75 were related to the combination of both of these manuscripts in a particular reading goes back most likely too early in the second century"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted first-person presentation continues Wallace's named constructive speech and discusses evidence he and Ehrman assess.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-early-stability"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move offers a concrete early-stability case from agreement between P75 and Vaticanus and has no opposing target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The manuscripts, relative dates, non-ancestry, shared ancestor, and probabilistic dating conclusion are clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Most likely appropriately signals uncertainty, but close agreement alone underdetermines the precise date of their common ancestor."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "Non-direct descent plus high agreement supports a common ancestor, though dating that ancestor to the early second century needs further premises."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is exceptionally strong within the subsidiary early-stability tier but does not alone complete the central autograph bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move presents affirmative genealogical evidence without developing a competing interpretation of the manuscript agreement."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (92 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies P75 as substantially earlier than Vaticanus, denies direct descent, notes exceptional agreement, and infers a shared ancestor reaching the early second century.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-original-among-readings",
+        "sectionId": "reconstruction-method",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "constructive",
+        "proposition": "The standard critical Greek text treats the original wording as surviving among extant manuscript readings in virtually every disputed location.",
+        "sourceSpan": {
+          "startEvent": 1701,
+          "endEvent": 1731,
+          "excerpt": "standard Greek New Testament in use today is known as the nestle all on text it not only produces what the editors believe is the wording of the original New Testament but also lists tens of thousands of variants here's a picture of the text they list a hundred and sixteen places where scholars over the centuries have thought that none of the Greek manuscripts have the original"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The same uninterrupted Wallace speech introduces the Nestle-Aland text and identifies conclusions attributed to its editors.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-method"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move advances the reconstruction-method burden by claiming that an extant reading preserves the original at virtually every disputed location."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The standard critical text, manuscript readings, and small exceptional set are recoverable and appropriately scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The very small exceptional set qualifies the claim, though editors' conclusions alone do not fully warrant near-universal originality."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central reconstruction-method bridge by locating the proposed originals within the extant reading set."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move reports the critical edition's practice and exceptional set rather than evaluating a developed opposing account."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt describes the Nestle-Aland text and apparatus and says only 116 locations have drawn proposals that no surviving Greek manuscript preserves the original.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-descendant-comparison-reconstruction",
+        "sectionId": "reconstruction-method",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Comparison among error-filled descendant copies can reconstruct their exemplar, while identifiable incidental errors do not by themselves prevent recovery of an earlier text.",
+        "sourceSpan": {
+          "startEvent": 2222,
+          "endEvent": 2363,
+          "excerpt": "manuscripts in the 3rd century so we have part of a gospel in the fitt in the 4th late 4th century that has the Western text and then we have a Gospels manuscript in the 5th century that's Western that would be the wild copying texts but the Alexandrian manuscripts do not greatly differ from one another as you suggest except in those incidental errors my evidence for this is dr"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator introduces Wallace's concluding response, and the speaker directly addresses Ehrman's account of early scribes and manuscript chaos.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-method"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-early-gap-lost-copying",
+            "con-variant-scale-most-accidental",
+            "con-intentional-important-changes"
+          ],
+          "components": [
+            {
+              "componentId": "pro-descendant-comparison-reconstruction-component-01",
+              "targetMoveId": "con-early-gap-lost-copying",
+              "text": "The decisive demand is whether errors in unavailable intermediate copies prevent reconstruction of an earlier exemplar.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-descendant-comparison-reconstruction-component-02",
+              "targetMoveId": "con-variant-scale-most-accidental",
+              "text": "A related issue is whether identifiable incidental errors impede reconstruction.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-descendant-comparison-reconstruction-component-03",
+              "targetMoveId": "con-intentional-important-changes",
+              "text": "The harder issue of shared intentional changes remains distinct from incidental descendant errors.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly argues that comparing divergent descendants can reconstruct an exemplar and that Alexandrian witnesses do not greatly diverge beyond incidental errors; it leaves common ancestral or intentional changes unresolved."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Exemplar reconstruction is clear, but 'Alexandrian' and 'incidental' carry classification assumptions not fully specified in the excerpt."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Comparative reconstruction is well supported in principle, but the broad stability claim omits independence and shared-error caveats."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "All descendants may share a change introduced before their branching ancestor.",
+          "decisiveQualification": "Comparison can recover a common exemplar without proving that exemplar identical to the autograph."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It squarely advances the central reconstruction-method bridge by explaining recovery despite error-filled descendants."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The move answers reconstruction from error-filled descendants but largely omits the strongest ancestor-versus-autograph qualification."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive reconstruction demand but does not bridge the reconstructed exemplar to the autograph."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts more variable Western witnesses with Alexandrian manuscripts said not to differ greatly except for identifiable incidental errors.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-ancestral-not-autographic",
+        "sectionId": "reconstruction-method",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Textual criticism can reconstruct the earliest text ancestral to the surviving witnesses without thereby establishing that this initial recoverable text is identical to the author's autograph.",
+        "sourceSpan": {
+          "startEvent": 2431,
+          "endEvent": 2462,
+          "excerpt": "two major centers of textual research in Europe one is in Muenster Germany one is in Birmingham England and both of them have gotten away from talking about the original text so what they tend to talk about instead is geez how do you translate it down housecalls text exit exit text it's what they tried it what we try to reconstruct is the text from which the surviving witnesses"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "An audience question addresses Ehrman, and the answer explicitly contrasts his position with Wallace's while discussing current textual-critical terminology.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-initial-autograph"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-descendant-comparison-reconstruction",
+            "pro-original-among-readings"
+          ],
+          "components": [
+            {
+              "componentId": "con-ancestral-not-autographic-component-01",
+              "targetMoveId": "pro-descendant-comparison-reconstruction",
+              "text": "The decisive inference moves from successful reconstruction of a surviving tradition's ancestor to recovery of the author's autograph.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-ancestral-not-autographic-component-02",
+              "targetMoveId": "pro-original-among-readings",
+              "text": "The claim that an original reading survives among extant readings still requires identification of the tradition's ancestor with the autograph.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses the equivocation between the earliest reconstructable ancestor and the original text, notes current scholarly terminology, and states the defeating consequence that reconstruction alone does not prove autographic identity."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between an Ausgangstext-like ancestral text and the author's original is the move's explicit and stable focus."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The logical requirement for an additional autograph-identification warrant is correctly stated without denying reconstructive success."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Comparative criticism can reliably reconstruct the ancestor of the extant witnesses.",
+          "decisiveQualification": "Even full ancestral reconstruction does not, without further evidence, establish identity with the autograph."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 96,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (96 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly completes the central initial-autograph burden by identifying the indispensable inferential gap."
+          },
+          "representationalCharity": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (96 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly isolates the inferential gap and states exactly what successful reconstruction can and cannot establish."
+          }
+        },
+        "evidenceBasis": "The excerpt says major European research centers have moved away from 'original text' terminology and instead reconstruct the text ancestral to surviving witnesses.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-comparative-abundance-limit",
+        "sectionId": "witness-abundance",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Having more New Testament manuscripts than survive for classical works makes comparative reconstruction easier but does not establish possession of the original New Testament text.",
+        "sourceSpan": {
+          "startEvent": 2646,
+          "endEvent": 2686,
+          "excerpt": "that it's absolutely true we have far more manuscripts of the New Testament than we have of Homer or Plato or you Rippa DS or Aeschylus or Sophocles or any of these authors absolutely absolutely true what that mean that does not mean though that that we have the original New Testament what it means is that we have more manuscripts of the New Testament than these other works and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The audience question explicitly addresses Ehrman, and his answer acknowledges and then qualifies Wallace's manuscript comparison.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-witnesses"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-early-witness-coverage",
+            "pro-variants-from-abundance",
+            "pro-late-witness-limited-growth"
+          ],
+          "components": [
+            {
+              "componentId": "con-comparative-abundance-limit-component-01",
+              "targetMoveId": "pro-early-witness-coverage",
+              "text": "The decisive inference treats superiority to classical manuscript survival as evidence that the New Testament original is possessed.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-comparative-abundance-limit-component-02",
+              "targetMoveId": "pro-variants-from-abundance",
+              "text": "More manuscripts can improve comparative reconstruction without independently identifying the autograph.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-comparative-abundance-limit-component-03",
+              "targetMoveId": "pro-late-witness-limited-growth",
+              "text": "Later abundance and limited observed growth remain compatible with an earlier shared change.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply grants the comparative abundance and then expressly identifies why it does not entail possession of the original: quantity improves the comparative evidence base but leaves the autograph-identification question open."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between relative manuscript abundance, easier comparison, and possession of the original is explicit and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The claim is a calibrated logical limitation: comparative abundance does not by itself entail autographic identity."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The New Testament has far more manuscripts than major classical works, improving reconstruction.",
+          "decisiveQualification": "Improved comparative reconstruction does not alone demonstrate that the reconstructed text is the autograph."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 96,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (95 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central witnesses bridge at the point where witness quantity is connected to original wording."
+          },
+          "representationalCharity": {
+            "value": 96,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (96 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it grants the premise, isolates the invalid comparative inference, and states the narrower consequence abundance supports."
+          }
+        },
+        "evidenceBasis": "The excerpt repeatedly grants that New Testament manuscripts far outnumber those for classical authors while denying that this numerical fact establishes the original text.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-probability-broad-continuity",
+        "sectionId": "standard-of-confidence",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Historical probability makes total discontinuity between the surviving Gospel of Mark and Mark's writing unlikely, but it cannot determine exact identity or the extent of their differences.",
+        "sourceSpan": {
+          "startEvent": 2697,
+          "endEvent": 2729,
+          "excerpt": "i I want to say that I am NOT a at the end of the day I'm not a complete skeptic about the New Testament I think historians have to weigh probabilities is it probable that the Gospel of Mark that we have today is completely unlike anything that Mark really really no it's not probable it do we know that it's exactly what Mark wrote no we don't know that either it's we just don't"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator introduces Ehrman's closing statement, and the first-person closing argument continues without a speaker change.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-con-motion-confidence-gap"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-standard-relative-confidence",
+            "pro-written-branching-checks"
+          ],
+          "components": [
+            {
+              "componentId": "con-probability-broad-continuity-component-01",
+              "targetMoveId": "pro-standard-relative-confidence",
+              "text": "Whether a probabilistic rather than certainty standard establishes sufficient confidence in exact or substantial textual continuity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-probability-broad-continuity-component-02",
+              "targetMoveId": "pro-written-branching-checks",
+              "text": "Whether branching checks exclude complete discontinuity while leaving the degree of difference uncertain.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move accepts historical probability and rejects complete discontinuity, but distinguishes that broad continuity from exact identity and from knowledge of the extent of differences."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Complete dissimilarity, exact identity, and unknown extent are clearly separated and confined to the Mark example."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move expressly weighs probabilities, rejects extreme skepticism, and acknowledges the remaining uncertainty without converting it into certainty."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historical probability can justify broad continuity despite the loss of exact certainty.",
+          "decisiveQualification": "Broad continuity leaves the precise extent and location of differences unresolved."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The move consistently occupies the middle ground between total discontinuity and exact identity and states what follows from each."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The calibration is exemplary, but the excerpt supplies little affirmative evidence for the probability of broad continuity."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly supports the motion-level confidence-gap bridge while conceding the strongest broad-continuity point."
+          },
+          "representationalCharity": {
+            "value": 95,
+            "rationale": "The response adopts the strongest probabilistic framing and retains only the qualification that its evidence cannot settle."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the probability standard and identifies both what probability supports and what remains unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly invokes historical probability, rejects the idea that present Mark is wholly unlike Mark's writing, and denies knowledge of exact identity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-trust-burden-early-copying",
+        "sectionId": "standard-of-confidence",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "The advocate of textual trust bears the burden of providing evidence that the first two centuries of copying and the exemplars behind the earliest manuscripts were sufficiently reliable.",
+        "sourceSpan": {
+          "startEvent": 2730,
+          "endEvent": 2767,
+          "excerpt": "he can trust the wait in issues of trust it's the person who says that you can trust who bears the burden of proof how can we know that the earliest copyist in the first 200 years of copying the New Testament were skilled and careful or good at all how do we know that our earliest manuscripts are based on high-quality exemplars in other words that the manuscript is based on the"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This argument continues Ehrman's identified closing statement and uses his bridge analogy to frame the burden of proof.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-burden-standard"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-written-branching-checks",
+            "pro-p75-vaticanus-ancestor",
+            "pro-standard-relative-confidence"
+          ],
+          "components": [
+            {
+              "componentId": "con-trust-burden-early-copying-component-01",
+              "targetMoveId": "pro-written-branching-checks",
+              "text": "Whether the advocate supplied affirmative evidence that first- and second-century copying and exemplars were sufficiently reliable.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-trust-burden-early-copying-component-02",
+              "targetMoveId": "pro-p75-vaticanus-ancestor",
+              "text": "Whether P75 and Vaticanus establish the quality of still earlier exemplars.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-trust-burden-early-copying-component-03",
+              "targetMoveId": "pro-standard-relative-confidence",
+              "text": "Whether defining trust as relative confidence eliminates the need for affirmative early-transmission evidence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly asks for evidence of early scribal skill, care, and exemplar quality and explains why the party asserting trust bears that affirmative burden."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The burden, first-two-century period, copyist quality, and exemplar quality are expressly and consistently identified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Affirmative support is reasonably required, though the bridge analogy risks suggesting that trust bears the entire burden regardless of available comparative evidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Written branching and early agreement provide indirect evidence of reliable preservation.",
+          "decisiveQualification": "Those mechanisms must still show sufficient reliability during the earliest common transmission period."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The missing early evidence motivates the questions, but the move supplies little positive evidence that early copyists or exemplars were actually poor."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly and strongly supports the subsidiary burden-standard bridge, reaching the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full ordinary answers, it explicitly contacts the evidentiary premise behind the pro trust claim and names the missing proof."
+          }
+        },
+        "evidenceBasis": "The excerpt states that the advocate of trust bears the burden and asks what evidence establishes skilled early copyists and high-quality exemplars during the first two centuries.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-historical-probability-standard",
+        "sectionId": "standard-of-confidence",
+        "side": "pro",
+        "speaker": "Daniel B. Wallace",
+        "moveKind": "reply",
+        "proposition": "Historical trust in ancient texts properly rests on probability rather than certainty, because consistently demanding radical certainty would undermine knowledge of ancient literature generally.",
+        "sourceSpan": {
+          "startEvent": 2817,
+          "endEvent": 2841,
+          "excerpt": "of a train and that the person who argues that you need to trust has the burden of proof I would argue that all of us are on the mountain road when it comes to thinking about ancient texts not just the text of the New Testament but all of greco-roman literature and if we are going to be extremely skeptical and say we just don't know then we truly are going back to the dark ages"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator hands the floor to Wallace for his conclusion, and Wallace explicitly answers Ehrman's train illustration.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-trust"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-trust-burden-early-copying",
+            "con-probability-broad-continuity",
+            "con-ancestral-not-autographic"
+          ],
+          "components": [
+            {
+              "componentId": "pro-historical-probability-standard-component-01",
+              "targetMoveId": "con-trust-burden-early-copying",
+              "text": "The decisive demand is what evidentiary standard the advocate of trust must meet for an ancient text.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-historical-probability-standard-component-02",
+              "targetMoveId": "con-probability-broad-continuity",
+              "text": "Both sides accept probability, leaving the question whether broad historical confidence can support trust.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-historical-probability-standard-component-03",
+              "targetMoveId": "con-ancestral-not-autographic",
+              "text": "Ancestral-versus-autographic distinction limits certainty but need not eliminate historically warranted probability.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly answers the proposed burden by placing New Testament trust within ordinary probabilistic historical reasoning and arguing that radical certainty would undermine ancient-text knowledge generally, though it does not quantify the evidence meeting that standard."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Probability and extreme skepticism are clearly contrasted, but the precise threshold for historical trust remains unspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Historical inquiry properly avoids certainty, but the broader-literature analogy does not by itself establish that this text meets the relevant probability threshold."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The advocate of trust bears an affirmative burden concerning unusually early undocumented copying.",
+          "decisiveQualification": "That burden should demand historically reasonable probability, not certainty unavailable for ancient literature generally."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The general historical standard is coherent, but rejecting extreme skepticism does not establish the particular text's required probability."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The appeal to ordinary treatment of Greco-Roman literature supplies a comparison, but no detailed comparability or probability evidence appears here."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly completes the pro motion-level trust bridge by identifying probability as the appropriate standard."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The response fairly rejects certainty but materially weakens the opponent's more calibrated demand for evidence sufficient to establish probability."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the burden and standard, while leaving the case-specific sufficiency assessment dependent on earlier evidence."
+          }
+        },
+        "evidenceBasis": "The excerpt answers the train analogy by placing all ancient texts on the same evidentiary terrain and warning against a certainty demand that would generalize to Greco-Roman literature.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains outside the individual move ratings, response links, importance judgments, and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate burden-completion criterion exists beyond the locked bridges already assessed move by move.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "None beyond consequences already represented in move judgments and response-component findings.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden contact",
+            "importance"
+          ],
+          "counterfactual": "Removing any alleged residual would leave burden completion governed by the same assessed bridge evidence."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, relevance findings, importance judgments, and burden structure.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence exists beyond the judged moves.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of existing judgments."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "standard-of-confidence",
+        "title": "The Standard for Recovery and Textual Trust",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-standard-relative-confidence",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "pro-historical-probability-standard",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "con-probability-broad-continuity",
+                "importance": 3,
+                "score": 93
+              },
+              {
+                "moveId": "con-trust-burden-early-copying",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "early-transmission-gap",
+        "title": "The Undocumented Earliest Transmission Period",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-written-branching-checks",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "pro-p75-vaticanus-ancestor",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-early-gap-lost-copying",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "reconstruction-method",
+        "title": "Reconstructing Earlier Texts from Surviving Witnesses",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-original-among-readings",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "pro-descendant-comparison-reconstruction",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 92,
+            "moves": [
+              {
+                "moveId": "con-ancestral-not-autographic",
+                "importance": 3,
+                "score": 92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "witness-abundance",
+        "title": "The Evidentiary Value of Manuscript Abundance and Date",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-early-witness-coverage",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "pro-late-witness-limited-growth",
+                "importance": 2,
+                "score": 73
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "con-abundance-late-witnesses",
+                "importance": 2,
+                "score": 83
+              },
+              {
+                "moveId": "con-comparative-abundance-limit",
+                "importance": 3,
+                "score": 93
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "variant-scale",
+        "title": "The Scale and Proportion of Textual Variation",
+        "weightPercent": 11,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "pro-variants-from-abundance",
+                "importance": 2,
+                "score": 88
+              },
+              {
+                "moveId": "pro-most-variants-insignificant",
+                "importance": 3,
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-variant-scale-uncounted",
+                "importance": 1,
+                "score": 78
+              },
+              {
+                "moveId": "con-variant-scale-most-accidental",
+                "importance": 2,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "consequential-variants",
+        "title": "Consequential Variants and the Scope of Trust",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-meaningful-viable-minority",
+                "importance": 3,
+                "score": 92
+              },
+              {
+                "moveId": "pro-core-beliefs-unaffected",
+                "importance": 2,
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-intentional-important-changes",
+                "importance": 3,
+                "score": 79
+              },
+              {
+                "moveId": "con-substantial-later-additions",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 83.38,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      },
+      "con": {
+        "weightedSectionMean": 88.31,
+        "burdenCompletionAdjustment": 0,
+        "score": 88
+      }
+    },
+    "winner": "con",
+    "winningMargin": 5
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 22,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
