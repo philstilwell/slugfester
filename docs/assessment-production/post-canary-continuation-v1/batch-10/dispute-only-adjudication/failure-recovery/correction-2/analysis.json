@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2-analysis",
+  "status": "passed-batch-10-debate-74-field-disjoint-adjudication-correction-2-and-merge",
+  "analyzedAt": "2026-08-26T02:00:01.293Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debateNumber": "74",
+  "originalFailure": {
+    "retainedPassedShard01": true,
+    "failedShard02OutputReused": false
+  },
+  "correction": {
+    "contexts": 2,
+    "attempts": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "validContexts": 2,
+    "replacementCandidateSelections": 26,
+    "retainedCandidateSelections": 26,
+    "candidateSelections": 52,
+    "disputedMoves": 19,
+    "burdenAdjustmentDecisions": 2,
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-74.json",
+    "mergedOutputSha256": "2573c501475d590548ff48e235e516981afde68cde4c7ed80632da14a3b3e431",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "74",
+      "disputedMoves": 19,
+      "candidateSelections": 52,
+      "calculatedScores": 0,
+      "scoreDerivationAuthorized": false
+    }
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/execution-activation.json": "34cde599fdc88136f454b95f74d58613f34b11d38d9d5bb375165b96e1fe96b4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/model-execution.json": "efd3de720936e8f5e4ba6ad394c690e69057c9e323a8502cf6d420cb2ee7c2ca",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-74.json": "af2f2e6a9b8998a2dae5540f76d503c62b9eeaebedbef97f55119032945bea0e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-01.json": "912ac5ef0a0dbbdc4652aa7a5ee6b2151bf4e77f3abd9a292dc009da62579750",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-01.json": "6cc0afee91df54eefb99e69057f78affb3b56bfefd0f52e25e7443255c7c360d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-01.json": "00fa92cb79779a90318232c3fa4a06ed56277e14d4e23edb79676cde42b572ce",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-02.json": "77c28f202c6e601e615fcd92e53546cce0b641f2139a7a6dbe681377e4775300"
+  },
+  "protectedBoundary": {
+    "originalPacketPreserved": true,
+    "originalSchemaPreserved": true,
+    "originalValidatorMeaningPreserved": true,
+    "acceptedFieldsChanged": 0,
+    "scoresDerived": 0,
+    "paidServices": 0
+  },
+  "authorization": {
+    "sevenContextResumptionPreparation": true,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "paidServices": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-freeze-seven-unattempted-batch-10-adjudication-resumption-contexts"
+}
