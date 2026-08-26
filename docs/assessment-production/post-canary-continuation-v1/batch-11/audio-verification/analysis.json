@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-audio-verification-analysis",
+  "protocolId": "assessment-production-post-canary-batch-11-decomposed-consensus",
+  "status": "passed-all-two-post-canary-batch-11-confidence-moves-audio-verified",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "gate": {
+    "passed": true,
+    "executionComplete": true,
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "deterministicThresholdsApplied": true,
+    "measuredReferenceDurationContractApplied": true,
+    "knownSpeakerNamesApplied": true,
+    "deterministicValidationOverlaysApplied": 0,
+    "locallySavedTranscripts": true
+  },
+  "costs": {
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "paidDiarizationCallsAttempted": 2,
+    "paidDiarizationCallsCompleted": 2,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 3.1467,
+    "durationOnlyPlanningExposureUsd": 0.0189,
+    "usageDerivedEstimatedCostUsd": 0.06726,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "deterministicValidationOverlays": 0
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/standing-authorization.json",
+    "sha256": "fbb678a76c3771303cf8b24b4185c9a3fa380f0288ba0f5b41f0e02d6bde5261",
+    "status": "frozen-active-batch-11-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-push-batch-11-dispute-only-adjudication-packets-under-standing-authorization"
+}
