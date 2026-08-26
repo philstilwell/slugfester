@@ -1,0 +1,831 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-verification-audit",
+  "protocolId": "assessment-production-post-canary-batch-10-decomposed-consensus",
+  "status": "passed-all-nine-post-canary-batch-10-confidence-moves-audio-verified",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "moves": [
+        {
+          "debateNumber": "21",
+          "debateId": "hitchens-wolpe-great-god-debate-2010",
+          "moveId": "con-religious-motivation-and-sanctity",
+          "expectedSpeaker": "Rabbi David Wolpe",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Rabbi David Wolpe",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/con-religious-motivation-and-sanctity.mp3",
+            "sha256": "075d78b837cfd7862110907b5c14cd417944abd0e769dd68c27c9b2d8f8f5c14",
+            "durationSeconds": 98.282938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/con-religious-motivation-and-sanctity.transcript.json",
+            "sha256": "25165e973281e01f57196aeaac8a2b0a82d9ac918ae00fabf582929184dd9feb",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Rabbi David Wolpe",
+            "fullClipExcerptRecall": 0.958904109589041,
+            "expectedSpeakerExcerptRecall": 0.863013698630137,
+            "highestOtherSpeaker": "Christopher Hitchens",
+            "highestOtherSpeakerExcerptRecall": 0.4246575342465753,
+            "expectedSpeakerRecallMargin": 0.4383561643835617,
+            "expectedSpeakerDurationSeconds": 78.05,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Rabbi David Wolpe",
+                "segmentCount": 31,
+                "durationSeconds": 78.05,
+                "wordCount": 325,
+                "excerptRecall": 0.863013698630137
+              },
+              {
+                "speaker": "Christopher Hitchens",
+                "segmentCount": 23,
+                "durationSeconds": 17.75,
+                "wordCount": 89,
+                "excerptRecall": 0.4246575342465753
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "21",
+          "debateId": "hitchens-wolpe-great-god-debate-2010",
+          "moveId": "pro-natural-transcendence-without-supernaturalism",
+          "expectedSpeaker": "Christopher Hitchens",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Christopher Hitchens",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/pro-natural-transcendence-without-supernaturalism.mp3",
+            "sha256": "c47c549d3948c9c59025c574f7a9d19d220476d52ca3a89581b48276f099fb18",
+            "durationSeconds": 80.679
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/pro-natural-transcendence-without-supernaturalism.transcript.json",
+            "sha256": "42865bb9faa9e24d947c01ea5918af96d75a06f5689fbc2316e34f6ce98ed181",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Christopher Hitchens",
+            "fullClipExcerptRecall": 0.918918918918919,
+            "expectedSpeakerExcerptRecall": 0.918918918918919,
+            "highestOtherSpeaker": "Rabbi David Wolpe",
+            "highestOtherSpeakerExcerptRecall": 0.013513513513513514,
+            "expectedSpeakerRecallMargin": 0.9054054054054055,
+            "expectedSpeakerDurationSeconds": 70.35,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Christopher Hitchens",
+                "segmentCount": 17,
+                "durationSeconds": 70.35,
+                "wordCount": 214,
+                "excerptRecall": 0.918918918918919
+              },
+              {
+                "speaker": "Rabbi David Wolpe",
+                "segmentCount": 4,
+                "durationSeconds": 1.65,
+                "wordCount": 7,
+                "excerptRecall": 0.013513513513513514
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "moves": [
+        {
+          "debateNumber": "74",
+          "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+          "moveId": "pro-voluntary-risk-arena",
+          "expectedSpeaker": "Josh Rasmussen",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Josh Rasmussen",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/clips/pro-voluntary-risk-arena.mp3",
+            "sha256": "5b7c9957b212cfa64f07e767ff594055daa53660874f513a9b2397bf4ef42f2a",
+            "durationSeconds": 212.359
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json",
+            "sha256": "7eb5fd662c671bb419ef6041249119d1b98b6317458b13e3061cfa14431dda6f",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Josh Rasmussen",
+            "fullClipExcerptRecall": 0.9873417721518988,
+            "expectedSpeakerExcerptRecall": 0.9873417721518988,
+            "highestOtherSpeaker": "Alex Malpass",
+            "highestOtherSpeakerExcerptRecall": 0.02531645569620253,
+            "expectedSpeakerRecallMargin": 0.9620253164556962,
+            "expectedSpeakerDurationSeconds": 198.95,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Josh Rasmussen",
+                "segmentCount": 35,
+                "durationSeconds": 198.95,
+                "wordCount": 635,
+                "excerptRecall": 0.9873417721518988
+              },
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 3,
+                "durationSeconds": 1.05,
+                "wordCount": 5,
+                "excerptRecall": 0.02531645569620253
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "moves": [
+        {
+          "debateNumber": "123",
+          "debateId": "oconnor-pine-divine-hiddenness-2024",
+          "moveId": "con-involuntary-belief-eternal-stakes",
+          "expectedSpeaker": "Alex O'Connor",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Alex O'Connor",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/con-involuntary-belief-eternal-stakes.mp3",
+            "sha256": "e085071cf2a474c632e5e2db48b695a0be1f95901b642153d97e26cfa2f40971",
+            "durationSeconds": 196.879
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json",
+            "sha256": "7102ee7cfd66239533023d30e9ef2beb1c2598da074e6dfe01edacfa36c2e7d7",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex O'Connor",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Gregory Pine",
+            "highestOtherSpeakerExcerptRecall": 0.09876543209876543,
+            "expectedSpeakerRecallMargin": 0.9012345679012346,
+            "expectedSpeakerDurationSeconds": 170.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 32,
+                "durationSeconds": 170.9,
+                "wordCount": 540,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Gregory Pine",
+                "segmentCount": 2,
+                "durationSeconds": 8.4,
+                "wordCount": 24,
+                "excerptRecall": 0.09876543209876543
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "123",
+          "debateId": "oconnor-pine-divine-hiddenness-2024",
+          "moveId": "pro-continuous-providential-opportunity",
+          "expectedSpeaker": "Gregory Pine",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Gregory Pine",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-continuous-providential-opportunity.mp3",
+            "sha256": "fe5de55477ed8338c03dc88fa13f5f708544f70c42da5029a725d9bcbfade042",
+            "durationSeconds": 189.28
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json",
+            "sha256": "e9649e0beeccdd5ee26727b09ce1c47427bc9fe4e5400270ac291ad83c859b6e",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Gregory Pine",
+            "fullClipExcerptRecall": 0.9857142857142858,
+            "expectedSpeakerExcerptRecall": 0.9857142857142858,
+            "highestOtherSpeaker": "Alex O'Connor",
+            "highestOtherSpeakerExcerptRecall": 0.07142857142857142,
+            "expectedSpeakerRecallMargin": 0.9142857142857144,
+            "expectedSpeakerDurationSeconds": 171.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Gregory Pine",
+                "segmentCount": 28,
+                "durationSeconds": 171.9,
+                "wordCount": 583,
+                "excerptRecall": 0.9857142857142858
+              },
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 2,
+                "durationSeconds": 8,
+                "wordCount": 24,
+                "excerptRecall": 0.07142857142857142
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "123",
+          "debateId": "oconnor-pine-divine-hiddenness-2024",
+          "moveId": "pro-suffering-enlarges-receptivity",
+          "expectedSpeaker": "Gregory Pine",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Gregory Pine",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-suffering-enlarges-receptivity.mp3",
+            "sha256": "05e8c5b6f916bfc79edef1af0cf0d4e6737a3a0c20373026ceb867fd1b2b6da3",
+            "durationSeconds": 88.08
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json",
+            "sha256": "62d39acf18810f4968f6dcb793cba3bcfd37ffb8c0061139b59489089482f5d8",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Gregory Pine",
+            "fullClipExcerptRecall": 0.9855072463768116,
+            "expectedSpeakerExcerptRecall": 0.9855072463768116,
+            "highestOtherSpeaker": "Alex O'Connor",
+            "highestOtherSpeakerExcerptRecall": 0.07246376811594203,
+            "expectedSpeakerRecallMargin": 0.9130434782608696,
+            "expectedSpeakerDurationSeconds": 74.3,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Gregory Pine",
+                "segmentCount": 9,
+                "durationSeconds": 74.3,
+                "wordCount": 291,
+                "excerptRecall": 0.9855072463768116
+              },
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 3,
+                "durationSeconds": 6.35,
+                "wordCount": 25,
+                "excerptRecall": 0.07246376811594203
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "moves": [
+        {
+          "debateNumber": "147",
+          "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+          "moveId": "pro-qualia-concept-unsettled",
+          "expectedSpeaker": "Daniel Dennett",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Daniel Dennett",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/pro-qualia-concept-unsettled.mp3",
+            "sha256": "0c5b8ae842da8d01747e2f970e19ab4e1dba55ec73af157faf2aa680f3cc43c5",
+            "durationSeconds": 261.041
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json",
+            "sha256": "29d962e15398f734f93b06460cbeafae89515761ae96136cb6f80e816f68ed5a",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Daniel Dennett",
+            "fullClipExcerptRecall": 0.9861111111111112,
+            "expectedSpeakerExcerptRecall": 0.9861111111111112,
+            "highestOtherSpeaker": "B",
+            "highestOtherSpeakerExcerptRecall": 0.027777777777777776,
+            "expectedSpeakerRecallMargin": 0.9583333333333334,
+            "expectedSpeakerDurationSeconds": 220.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Daniel Dennett",
+                "segmentCount": 35,
+                "durationSeconds": 220.6,
+                "wordCount": 659,
+                "excerptRecall": 0.9861111111111112
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 8.1,
+                "wordCount": 19,
+                "excerptRecall": 0.027777777777777776
+              },
+              {
+                "speaker": "Philip Clayton",
+                "segmentCount": 2,
+                "durationSeconds": 0.4,
+                "wordCount": 3,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.1,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "147",
+          "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+          "moveId": "con-experience-sensitive-religious-belief",
+          "expectedSpeaker": "Philip Clayton",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Philip Clayton",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/con-experience-sensitive-religious-belief.mp3",
+            "sha256": "8e6aa16bf00d834d8063e5bb824ef73e826c9c84e43d73f833bc6ce37490227e",
+            "durationSeconds": 71
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json",
+            "sha256": "511d94f8c46252a6d1ca62364c1a272f8251c2d31dea04cda7bf762bda725b15",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Philip Clayton",
+            "fullClipExcerptRecall": 0.9859154929577465,
+            "expectedSpeakerExcerptRecall": 0.9859154929577465,
+            "highestOtherSpeaker": "Daniel Dennett",
+            "highestOtherSpeakerExcerptRecall": 0.08450704225352113,
+            "expectedSpeakerRecallMargin": 0.9014084507042254,
+            "expectedSpeakerDurationSeconds": 60.65,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Philip Clayton",
+                "segmentCount": 12,
+                "durationSeconds": 60.65,
+                "wordCount": 166,
+                "excerptRecall": 0.9859154929577465
+              },
+              {
+                "speaker": "Daniel Dennett",
+                "segmentCount": 1,
+                "durationSeconds": 2.65,
+                "wordCount": 14,
+                "excerptRecall": 0.08450704225352113
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 4.7,
+                "wordCount": 12,
+                "excerptRecall": 0.014084507042253521
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "moves": [
+        {
+          "debateNumber": "130",
+          "debateId": "licona-carrier-resurrection-history-2010",
+          "moveId": "pro-missing-body-cumulative-significance",
+          "expectedSpeaker": "Mike Licona",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Mike Licona",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/clips/pro-missing-body-cumulative-significance.mp3",
+            "sha256": "35f638eb4edfcf02e5200a664826585eeb612b09973a78094f8cf4d2d085279d",
+            "durationSeconds": 111.170938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json",
+            "sha256": "128ed42517de7549a1a64ff48e9144a94d28dee11d1c82663307c50412401b55",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Mike Licona",
+            "fullClipExcerptRecall": 0.9305555555555556,
+            "expectedSpeakerExcerptRecall": 0.8472222222222222,
+            "highestOtherSpeaker": "Richard Carrier",
+            "highestOtherSpeakerExcerptRecall": 0.25,
+            "expectedSpeakerRecallMargin": 0.5972222222222222,
+            "expectedSpeakerDurationSeconds": 89.55,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Mike Licona",
+                "segmentCount": 19,
+                "durationSeconds": 89.55,
+                "wordCount": 254,
+                "excerptRecall": 0.8472222222222222
+              },
+              {
+                "speaker": "Richard Carrier",
+                "segmentCount": 8,
+                "durationSeconds": 9.8,
+                "wordCount": 39,
+                "excerptRecall": 0.25
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "21",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "pro-divine-mandate-multiplies-conflict",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1411,
+          "endEvent": 1497
+        },
+        "selectedMoveDurationSeconds": 199.96,
+        "startSeconds": 3333.819,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/christopher-hitchens.mp3",
+        "sha256": "abb3171f7bceccf43acfc139053721c37079d3d0a3c11a86e52be29e507c3014"
+      },
+      {
+        "debateNumber": "21",
+        "speaker": "Rabbi David Wolpe",
+        "selectedMoveId": "con-intangible-reality-theistic-inference",
+        "selectedMoveSourceSpan": {
+          "startEvent": 258,
+          "endEvent": 315
+        },
+        "selectedMoveDurationSeconds": 155.4,
+        "startSeconds": 681.9,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/rabbi-david-wolpe.mp3",
+        "sha256": "a5a73a5265212ae1899cc8b011c4c9cbe8a82875170be9c0ebb0851b03d02a84"
+      },
+      {
+        "debateNumber": "74",
+        "speaker": "Josh Rasmussen",
+        "selectedMoveId": "pro-auxiliary-probability-asymmetry",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1842,
+          "endEvent": 1973
+        },
+        "selectedMoveDurationSeconds": 271.28,
+        "startSeconds": 3684.52,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/josh-rasmussen.mp3",
+        "sha256": "8acbc74254719102aaab51a9809e2e7ef645f819d49d4a87e5200b077f253aef"
+      },
+      {
+        "debateNumber": "74",
+        "speaker": "Alex Malpass",
+        "selectedMoveId": "con-infinite-recombination-limits",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1122,
+          "endEvent": 1302
+        },
+        "selectedMoveDurationSeconds": 330.8,
+        "startSeconds": 2333.88,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/alex-malpass.mp3",
+        "sha256": "fb786d36f6dde023fe0bab8e7cb7dad2ddc25337820ddaf0e50a4366352f30fe"
+      },
+      {
+        "debateNumber": "123",
+        "speaker": "Gregory Pine",
+        "selectedMoveId": "pro-solidarity-loss-and-restoration",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2034,
+          "endEvent": 2180
+        },
+        "selectedMoveDurationSeconds": 300.4,
+        "startSeconds": 4737.12,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3",
+        "sha256": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345"
+      },
+      {
+        "debateNumber": "123",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-contingent-encounter-providence-dilemma",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1358,
+          "endEvent": 1469
+        },
+        "selectedMoveDurationSeconds": 256.839,
+        "startSeconds": 3222.419,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3",
+        "sha256": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad"
+      },
+      {
+        "debateNumber": "147",
+        "speaker": "Daniel Dennett",
+        "selectedMoveId": "pro-qualia-concept-unsettled",
+        "selectedMoveSourceSpan": {
+          "startEvent": 612,
+          "endEvent": 707
+        },
+        "selectedMoveDurationSeconds": 256.041,
+        "startSeconds": 1659.3,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/daniel-dennett.mp3",
+        "sha256": "60abec0d8c9ac7aaf17150b485bbf624125cc060c09db516bf80eebe0ef0f23c"
+      },
+      {
+        "debateNumber": "147",
+        "speaker": "Philip Clayton",
+        "selectedMoveId": "con-integrated-religious-worldview",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1075,
+          "endEvent": 1117
+        },
+        "selectedMoveDurationSeconds": 111.399,
+        "startSeconds": 2784.86,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/philip-clayton.mp3",
+        "sha256": "dd9723bd614879620823a300ce2e3f28fbbd8df361d11a4ac8be629060c36025"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Mike Licona",
+        "selectedMoveId": "pro-pauline-appearances-bodily-resurrection",
+        "selectedMoveSourceSpan": {
+          "startEvent": 113,
+          "endEvent": 210
+        },
+        "selectedMoveDurationSeconds": 595.8,
+        "startSeconds": 1039.81,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/mike-licona.mp3",
+        "sha256": "11f65672edf4bd7bc7027a2d3219c812917c494ae5db3d7bc75cf5a3db5c4e84"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Richard Carrier",
+        "selectedMoveId": "con-charismatic-hallucinatory-contagion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 952,
+          "endEvent": 1024
+        },
+        "selectedMoveDurationSeconds": 372.5,
+        "startSeconds": 5655.5,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/richard-carrier.mp3",
+        "sha256": "1aa14700df8c058afb9163d55936b76658889946cc93c85ba8af1caf745a6cfa"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 9,
+    "verified": 9,
+    "unresolved": 0,
+    "paidDiarizationCallsAttempted": 9,
+    "paidDiarizationCallsCompleted": 9,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 21.8129,
+    "durationOnlyPlanningExposureUsd": 0.1309,
+    "usageDerivedEstimatedCostUsd": 0.4583625,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "deterministicValidationOverlays": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
