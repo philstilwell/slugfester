@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "debateNumber": "152",
+  "debateId": "knechtle-aron-ra-god-existence-2023",
+  "motion": "Does God exist, and do design, morality, logic, and experience support that conclusion?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Stuart Knechtle"
+      ]
+    },
+    "con": {
+      "label": "Atheistic naturalism",
+      "speakers": [
+        "Aron Ra"
+      ]
+    }
+  },
+  "durationSeconds": 10875,
+  "eventCount": 4653,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/9r_XAIksLdI/transcript.txt",
+    "transcriptSha256": "afb9789743fdea882d2d18591b2504f773f9b0c08df226c2bcbda5de47ec2ed7",
+    "eventsPath": ".assessment-cache/captions/9r_XAIksLdI/events.json",
+    "eventsSha256": "8c3e7c8a52185cadaa1b5d03d50a844dc2dce7ec902054d95efa0aa88c666e33",
+    "localManifestPath": ".assessment-cache/captions/9r_XAIksLdI/manifest.json",
+    "localManifestSha256": "96dfa97128a08b3adeee33d6cfffbe4dcd684d6579a875b14cf9586d8f9f1b6d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-152.jsonl",
+    "sourceLedgerSha256": "6aba46c062d7a7dccb45bba8d8ce83c1b46cfbb0d082494fddb6dda9e4f866eb",
+    "sourceLedgerBytes": 260066,
+    "sourceLedgerEventCount": 4653,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-152.json",
+    "partitionPlanSha256": "ff45c08b5c411711f171f0eb8cd337e0dbaec8699af4f935d4f4653f6886d58a",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

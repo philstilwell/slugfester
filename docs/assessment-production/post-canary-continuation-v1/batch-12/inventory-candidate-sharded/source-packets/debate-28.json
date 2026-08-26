@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "debateNumber": "28",
+  "debateId": "turek-shermer-reality-theism-atheism-2018",
+  "motion": "What best explains reality: theism grounded in God as the cause of creation, reason, information, morality, evil, and science, or skeptical naturalism grounded in evidence and scientific inquiry?",
+  "sides": {
+    "pro": {
+      "label": "Theistic explanation",
+      "speakers": [
+        "Frank Turek"
+      ]
+    },
+    "con": {
+      "label": "Scientific skepticism",
+      "speakers": [
+        "Michael Shermer"
+      ]
+    }
+  },
+  "durationSeconds": 7448,
+  "eventCount": 3109,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/8aZn7XUFSmA/transcript.txt",
+    "transcriptSha256": "a455395707cca2f28fcb5ea108b17957195f839dda8f3a6167238888f47f506d",
+    "eventsPath": ".assessment-cache/captions/8aZn7XUFSmA/events.json",
+    "eventsSha256": "4efbc03fc1ecc0ccd8c5560c5a491cd4344e80853e7e0083e3f39e88ef2914ed",
+    "localManifestPath": ".assessment-cache/captions/8aZn7XUFSmA/manifest.json",
+    "localManifestSha256": "718ccc698ce1e91c31b4c0165cf146ba8ba9527710732b4b555ed6a2e4b9f979"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-28.jsonl",
+    "sourceLedgerSha256": "28c739e1109e27dfede660105287a205bc4ea876614de6595e81bd9288a78835",
+    "sourceLedgerBytes": 183002,
+    "sourceLedgerEventCount": 3109,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-28.json",
+    "partitionPlanSha256": "db7b42f4f7d701e8f42dc577c01ae334774a904e749a12b61687b8685f1ae66c",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

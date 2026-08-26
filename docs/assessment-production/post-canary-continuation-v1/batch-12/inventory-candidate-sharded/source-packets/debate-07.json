@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "debateNumber": "07",
+  "debateId": "wood-oconnor-jesus-claim-god-2025",
+  "motion": "Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?",
+  "sides": {
+    "pro": {
+      "label": "Affirmative",
+      "speakers": [
+        "David Wood"
+      ]
+    },
+    "con": {
+      "label": "Critical reader",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 8549,
+  "eventCount": 3879,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/_hrN4Mn8m1w/transcript.txt",
+    "transcriptSha256": "a796f595cadb72d8b1d674e01ba5cc6d40af9644c2582f0940c6c40bbecc1962",
+    "eventsPath": ".assessment-cache/captions/_hrN4Mn8m1w/events.json",
+    "eventsSha256": "44db9b0c3a85eaee4438213c1ff274ccd551581aaa6ab8c50ae2818d02567e0d",
+    "localManifestPath": ".assessment-cache/captions/_hrN4Mn8m1w/manifest.json",
+    "localManifestSha256": "7d9c02472ede50c67537c5435a7a55dfe7ca64b54c6ddec36716fb6236d75e02"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-07.jsonl",
+    "sourceLedgerSha256": "d5184b71a8d5c69373ce10acf3065b8dcbcce7b4b1ed37b41aa0230a3449d646",
+    "sourceLedgerBytes": 227545,
+    "sourceLedgerEventCount": 3879,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-07.json",
+    "partitionPlanSha256": "235be084c70e188feab69fc252e2477a332c44e589da6957e2d8c85d0e40af29",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
