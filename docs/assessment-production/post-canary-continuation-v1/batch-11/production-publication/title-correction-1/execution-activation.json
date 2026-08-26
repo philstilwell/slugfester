@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-production-title-correction-1-activation",
+  "status": "frozen-batch-11-production-title-correction-1-activated",
+  "activatedAt": "2026-08-26T17:13:02Z",
+  "batchNumber": 11,
+  "directIncrementalCostCapUsd": 0,
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/title-correction-1/preparation.json",
+    "sha256": "a618c15cac3d13c93c5bd276ee3fd7efa0a2d79c08e1cbde2eede0a11944dfea",
+    "bytes": 9458
+  },
+  "executionTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "08e24424081357a80e5571756e2e7cfaa34aef73a0bd1bf1155efd5131d02831",
+      "bytes": 4524
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "1bc47e61204e3c24b12488be1e54d61be8b75e5a7bc0cf8d35ddb7f69560c360",
+      "bytes": 11701
+    }
+  ],
+  "frozenOutputs": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "e6b013d17de300a7d5f94bb78ac318875d2bcb1e240f0ce77b69361aa3e41d0b",
+      "bytes": 6583392
+    },
+    "compatibilityLibrary": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs",
+      "sha256": "8350b45c30b4b34e0267c78020cabcb0baa5de48905ef7860ce19b57368f45a9",
+      "bytes": 8785
+    }
+  },
+  "executionDiscipline": {
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "automaticRepairs": 0,
+    "exactWritableFiles": [
+      "src/data/debates.js",
+      "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs"
+    ],
+    "exactWritableSemanticFields": 1,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "authorization": {
+    "correctionAttempt": true,
+    "productionDebateTitleWrite": true,
+    "exactCompatibilityAliasWrite": true,
+    "scoreChange": false,
+    "ledgerChange": false,
+    "retry": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-batch-11-production-title-correction-1-attempt-no-retries"
+}
