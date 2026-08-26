@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-dependent-check-correction",
+  "protocolId": "assessment-production-post-canary-batch-12-adjudicated-consensus",
+  "status": "passed-exact-deterministic-field-level-correction",
+  "correctedAt": "2026-08-26T21:41:31Z",
+  "correctedChecks": [
+    {
+      "field": "analysis.expectedFinalMoves",
+      "before": 190,
+      "after": 204
+    },
+    {
+      "field": "analysis.expectedRoundedMeanPopulation",
+      "before": 438,
+      "after": 442
+    }
+  ],
+  "reason": "The cloned Batch 11 analysis checks were stale; the Batch 12 values were deterministically measured from the frozen 10-debate ledger.",
+  "finalLedgerSha256": "1124834d66b6a503a835b68d925ee62cd0cedfeb6ebc99ad58b9fdc06219ea70",
+  "analysisSha256": "f77916e5cb976d99aef4696772961a647f3a725165131fe95124cd7ee93ff413",
+  "manifestSha256": "5ddad5a38d8e7228cb2955bbeddc110250a42292159510927ed07ba6ffb04fb2",
+  "ledgerFieldsChanged": 0,
+  "adjudicationSelectionsChanged": 0,
+  "scoreFieldsChanged": 0,
+  "modelCalls": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "validationReplay": {
+    "command": "node scripts/test-assessment-production-post-canary-batch-12-final-ledger.mjs",
+    "status": "passed-frozen",
+    "debates": 10,
+    "finalMoves": 204,
+    "candidateSelections": 528
+  }
+}
