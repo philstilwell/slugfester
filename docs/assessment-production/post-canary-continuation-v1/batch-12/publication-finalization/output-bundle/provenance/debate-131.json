@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-12-publication-finalization",
+  "status": "staging-only-batch-12-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "debateNumber": "131",
+  "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-12/deterministic-publication-compilation/compiled/debate-131.json",
+  "compiledInputSha256": "e28e020fd01b85221c069b9636512c33cea6c6bdcae4c8f41f7f6b70a6d12427",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/bC-Uj92Cpvg/transcript.txt",
+    "transcriptSha256": "639ae30e4c37496786398c44d6bd7ae4b888b323aeac6e89fa3f931665edb169",
+    "eventsPath": ".assessment-cache/captions/bC-Uj92Cpvg/events.json",
+    "eventsSha256": "77a15ae1d157c38a17a55b6592bf8e5c1a8cbc2c0715bc5f4af9bde3586691d5",
+    "localManifestPath": ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json",
+    "localManifestSha256": "a75c3640b76c8f3503e397cf57da0e925b38632a0f739d785b457caac002322a"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 5,
+  "scoreProtocolId": "assessment-production-post-canary-batch-12-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "ai131-pro-thesis",
+        "text": "The strongest historical case is cumulative and modest: Paul's contextualized language, differentiated kinship reference, early movement structure, and later external notices jointly favor a recent earthly Jewish founder without establishing Gospel detail or theology.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-pauline-physical-jewish-jesus",
+            "pro-james-biological-identifier",
+            "pro-hegesippus-family-dynasty",
+            "pro-tacitus-archival-corroboration"
+          ],
+          "explanation": "This repairs categorical formulations by recasting the affirmative case as a modest cumulative inference rather than proof from any single source."
+        }
+      },
+      "premises": [
+        {
+          "id": "ai131-pro-premise-1",
+          "text": "Paul's birth, law, Davidic, crucifixion, burial, and kinship expressions should be interpreted together and within their local contexts, because their cumulative fit with an earthly founder can exceed the force of each expression considered separately.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-pauline-physical-jewish-jesus",
+              "pro-galatians-literal-birth"
+            ],
+            "explanation": "This extends the Pauline argument through explicitly cumulative reasoning while avoiding the claim that one disputed phrase settles location."
+          }
+        },
+        {
+          "id": "ai131-pro-premise-2",
+          "text": "The singular named designation of James has evidentiary value only comparatively, so biological kinship should be favored to the extent that it better explains Paul's differentiating construction than ordinary communal address or an otherwise unattested rank.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-james-biological-identifier",
+              "pro-named-kinship-distinction",
+              "con-james-title-ambiguous",
+              "con-james-fictive-brotherhood"
+            ],
+            "explanation": "This repairs the kinship inference by stating its comparative and probabilistic burden against both ambiguity and fictive-family alternatives."
+          }
+        },
+        {
+          "id": "ai131-pro-premise-3",
+          "text": "Later family traditions and Roman notices can contribute corroboration only after dependence is discounted, so their role should be limited to incremental support rather than treated as independent demonstrations of Jesus's existence.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-hegesippus-family-dynasty",
+              "pro-tacitus-archival-corroboration",
+              "con-late-unsourced-gospels",
+              "con-luke-dependent-historiography"
+            ],
+            "explanation": "This directly repairs overstatements about Hegesippus and Tacitus by assigning them conditional, incremental evidentiary weight."
+          }
+        },
+        {
+          "id": "ai131-pro-premise-4",
+          "text": "Appearance traditions primarily establish early belief and require separate analysis from historicity, because a historical founder may exist even if resurrection experiences were visionary, legendary, ecstatic, or otherwise nonmiraculous.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-paul-conversion-bodily-resurrection",
+              "pro-five-hundred-investigable-witnesses",
+              "con-five-hundred-undescribed-appearance",
+              "con-collective-ecstatic-appearance"
+            ],
+            "explanation": "This repairs the affirmative appearance case by separating evidence for early conviction from evidence for bodily resurrection or founder existence."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "ai131-pro-conclusion",
+        "text": "Taken proportionately, the convergence of contextualized Pauline earthliness, a plausibly biological James designation, and limited later corroboration makes a recent historical founder the better explanation, while leaving many biographical and theological claims undecided.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-pauline-physical-jewish-jesus",
+            "pro-james-biological-identifier",
+            "pro-hegesippus-family-dynasty",
+            "pro-tacitus-archival-corroboration"
+          ],
+          "explanation": "The conclusion repairs stronger live formulations by limiting the result to comparative support for a minimal historical founder."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "ai131-pro-new-1",
+          "title": "Convergence under partial dependence",
+          "text": "Even when sources are not wholly independent, several differently situated traditions can retain limited cumulative value if dependence does not explain every relevant feature. The affirmative should therefore ask whether a purely celestial origin predicts Paul's differentiated James phrase, embodied Davidic language, later family succession claims, and Roman localization as economically as a recent founder does. This is not a multiplication of independent witnesses; it is a comparison of how much special explanation each hypothesis requires across partially connected evidence.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a dependency-aware convergence framework not explicitly developed in the participant moves."
+          }
+        },
+        {
+          "id": "ai131-pro-new-2",
+          "title": "Minimal-founder robustness test",
+          "text": "The affirmative can separate claims into layers and test only the lowest historical layer: a Jewish person associated with the movement, execution, and subsequent revelatory belief. Gospel miracles, precise chronology, empty-tomb narratives, and bodily resurrection need not be established for that model. If negative explanations mainly defeat richer biography while leaving Paul's kinship and embodied-founder language comparatively natural, they may lower confidence in Christian narrative without eliminating the minimal founder who best explains the earliest movement vocabulary.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a layered robustness test that distinguishes minimal historicity from richer narrative and theological claims."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "ai131-con-thesis",
+        "text": "The strongest mythicist case is not that celestial origins are proved, but that the earliest evidence remains compatible with them while later narratives and notices lack enough demonstrated independence to resolve the underdetermination.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-pauline-celestial-embodiment",
+            "con-late-unsourced-gospels",
+            "con-james-title-ambiguous"
+          ],
+          "explanation": "This repairs overreach by framing mythicism as sustained explanatory underdetermination rather than a categorical historical demonstration."
+        }
+      },
+      "premises": [
+        {
+          "id": "ai131-con-premise-1",
+          "text": "Paul's embodied and Davidic language does not by itself locate Jesus on earth, so location must be established from contextual indicators rather than imported from the later Gospel narrative.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-pauline-celestial-embodiment",
+              "con-pauline-allegorical-birth-davidic-flesh"
+            ],
+            "explanation": "This extends Carrier's central compatibility distinction while narrowing the claim to what the Pauline wording does not independently establish."
+          }
+        },
+        {
+          "id": "ai131-con-premise-2",
+          "text": "James's designation cannot bear decisive weight until biological, communal, and honorific uses are compared across the relevant Pauline constructions, because grammatical possibility alone leaves competing interpretations unresolved.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-james-title-ambiguous",
+              "con-james-fictive-brotherhood",
+              "pro-named-kinship-distinction"
+            ],
+            "explanation": "This repairs the James reply by requiring comparative corpus evidence rather than treating preserved ambiguity as a sufficient victory."
+          }
+        },
+        {
+          "id": "ai131-con-premise-3",
+          "text": "Later sources should receive weight claim by claim according to demonstrable access, dependence, genre, and transmission, avoiding both the assumption that historical framing guarantees independence and the opposite assumption that literary theology erases all tradition.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-late-unsourced-gospels",
+              "con-luke-dependent-historiography",
+              "pro-tacitus-archival-corroboration"
+            ],
+            "explanation": "This repairs categorical source criticism by adopting a granular method that also answers the affirmative's strongest qualification."
+          }
+        },
+        {
+          "id": "ai131-con-premise-4",
+          "text": "Appearance reports establish early conviction more securely than their cause, because sparse descriptions permit bodily encounters, ecstatic interpretation, visionary experience, and traditional development without presently decisive discrimination.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-five-hundred-undescribed-appearance",
+              "con-collective-ecstatic-appearance",
+              "pro-five-hundred-investigable-witnesses"
+            ],
+            "explanation": "This repairs causal overconfidence by preserving multiple live mechanisms and limiting the conclusion to underdetermination."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "ai131-con-conclusion",
+        "text": "If Pauline location, James's relationship, later-source independence, and appearance causation all remain materially underdetermined, then a celestial-origin model remains a serious competitor and confidence in a minimal historical founder should be correspondingly restrained.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "con-pauline-celestial-embodiment",
+            "con-james-title-ambiguous",
+            "con-late-unsourced-gospels",
+            "con-five-hundred-undescribed-appearance"
+          ],
+          "explanation": "This extends the negative case through a proportionate conclusion based on combined underdetermination rather than certainty."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "ai131-con-new-1",
+          "title": "Prediction ledger for rival origins",
+          "text": "The negative can improve its case by preregistering qualitative predictions for both hypotheses. A recent obscure founder might predict personal reminiscence, differentiated relatives, geographic anchors, and some mundane biography, but also extensive document loss. A celestial-origin movement might predict scriptural derivation, revelatory authority, sparse earthly detail, and later narrative localization. Each surviving datum should then be assessed for likelihood under both models, with dependence and preservation explicitly included. This avoids treating silence as automatically favorable and converts broad suspicion into a transparent comparative test.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces an explicit rival-predictions framework that was not formulated in the transcript moves."
+          }
+        },
+        {
+          "id": "ai131-con-new-2",
+          "title": "Narrative localization as model cost",
+          "text": "Later specificity should not automatically count as independent corroboration when it may be the very phenomenon requiring explanation. The negative can ask whether names, rulers, places, relatives, and trial scenes accumulate over time in ways expected when communities localize a previously scriptural or celestial figure. Evidence would include chronological stratification and identifiable literary borrowing, while contrary early mundane detail would count against the model. Framed this way, localization is a testable developmental hypothesis rather than an assumption that all concrete narrative material is invented.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a testable diachronic localization argument while specifying evidence that could count both for and against it."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-26T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "131",
+    "sections": 5,
+    "moves": 20,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
