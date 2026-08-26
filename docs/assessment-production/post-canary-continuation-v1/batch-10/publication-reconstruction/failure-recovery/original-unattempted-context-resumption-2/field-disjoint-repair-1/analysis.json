@@ -1,0 +1,762 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-publication-field-disjoint-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-field-disjoint-repair-1",
+  "status": "five-debate-field-disjoint-repair-passed-and-complete-cohort-validated",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-2/field-disjoint-repair-1/execution-preparation-manifest.json",
+    "preparationSha256": "40a634b8f7c6dc39373b4fd1857268b997f8fb2626f71cc30dcfc64619dd10cb",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-2/field-disjoint-repair-1/execution-activation.json",
+    "activationSha256": "43f894d893d08a663392f8f1835ab97e77f4583b5501173f27c8d939e6126199",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-2/field-disjoint-repair-1/model-execution.json",
+    "executionSha256": "ff908b24d01843ab03d577acb07256aa0dc5244090cdcb92dcdce554974ede88"
+  },
+  "execution": {
+    "contextsPlanned": 8,
+    "contextsAttempted": 8,
+    "validContexts": 8,
+    "invalidContexts": 0,
+    "attempts": 8,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 424481,
+    "aggregateModelElapsedMs": 814442
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-123-shard-1",
+      "debateNumber": "123",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "752fd1faaeda1c534aa35017e5b3618b9771a1a70b2508665c0565e4258a7abe",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 0,
+        "debateNumber": "123",
+        "shardId": "debate-123-shard-1",
+        "correctedFields": 5,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-hiddenness-problem-of-evil.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 1024,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-universal-availability-commitment.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 973,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.con-geography-sociological-explanation.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 965,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.pro-gratuitous-differentiated-gifts.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 983,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.con-involuntary-belief-eternal-stakes.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 953,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-123-shard-2",
+      "debateNumber": "123",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "bb4de0edbcd47d45e875415270cf3a21c7b0d140f8b54a60b47f334405d32b16",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 1,
+        "debateNumber": "123",
+        "shardId": "debate-123-shard-2",
+        "correctedFields": 5,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-life-spanning-revelation.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1081,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-mortal-contingency-interrupted-journey.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1020,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.con-failed-reciprocal-divine-contact.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 962,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.pro-finite-disclosure-preserves-refusal.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 914,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.con-eden-deception-culpability.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 999,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-177-shard-1",
+      "debateNumber": "177",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "25da4c9146e1ee2894f2c1c53ee84dbe79d3683ead7876b1129857a43818dd51",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 2,
+        "debateNumber": "177",
+        "shardId": "debate-177-shard-1",
+        "correctedFields": 8,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "representativeQuotes.pro.text",
+            "kind": "quote",
+            "words": 10,
+            "characters": 51,
+            "exactSourceSubstring": true
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-early-gap-lost-copying.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1010,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.con-abundance-late-witnesses.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 921,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.con-variant-scale-uncounted.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 941,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.con-variant-scale-most-accidental.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 938,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_06",
+            "field": "moveProse.con-intentional-important-changes.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 923,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_07",
+            "field": "moveProse.con-substantial-later-additions.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 923,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_08",
+            "field": "moveProse.pro-standard-relative-confidence.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 927,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 3,
+      "shardId": "debate-177-shard-2",
+      "debateNumber": "177",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "aff65f1a34031c45dc778ebcf86fb11b43e1f0a80a406d211a837b2164cbf9ae",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 3,
+        "debateNumber": "177",
+        "shardId": "debate-177-shard-2",
+        "correctedFields": 8,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-variants-from-abundance.critique",
+            "kind": "critique",
+            "words": 112,
+            "characters": 1063,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-early-witness-coverage.critique",
+            "kind": "critique",
+            "words": 112,
+            "characters": 999,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.pro-late-witness-limited-growth.critique",
+            "kind": "critique",
+            "words": 112,
+            "characters": 935,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.pro-meaningful-viable-minority.critique",
+            "kind": "critique",
+            "words": 113,
+            "characters": 978,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.pro-core-beliefs-unaffected.critique",
+            "kind": "critique",
+            "words": 112,
+            "characters": 970,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_06",
+            "field": "moveProse.con-ancestral-not-autographic.critique",
+            "kind": "critique",
+            "words": 113,
+            "characters": 933,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_07",
+            "field": "moveProse.con-trust-burden-early-copying.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 931,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_08",
+            "field": "moveProse.pro-historical-probability-standard.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 960,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 4,
+      "shardId": "debate-68-shard-1",
+      "debateNumber": "68",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "8901a0f9e487f08415503381049736bf299bd62a73c976c7194464d2c964efa9",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 4,
+        "debateNumber": "68",
+        "shardId": "debate-68-shard-1",
+        "correctedFields": 6,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-experiential-bundle-parsimony.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 1020,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-physical-properties-ground-interaction.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 948,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.pro-wavefunction-preobserver-development.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 1020,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.con-offscreen-game-structure-persists.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 946,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.pro-unobserved-informational-interaction.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 999,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_06",
+            "field": "moveProse.con-mind-dependent-stoppage-unfalsifiable.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 974,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 5,
+      "shardId": "debate-147-shard-1",
+      "debateNumber": "147",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "66405e5a66fee4b4911a10b89b681bcced7237aaefeca4c8f19d141dae8ac016",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 5,
+        "debateNumber": "147",
+        "shardId": "debate-147-shard-1",
+        "correctedFields": 9,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-broad-explanatory-pluralism.critique",
+            "kind": "critique",
+            "words": 112,
+            "characters": 1111,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-physical-constraint-higher-level-explanation.critique",
+            "kind": "critique",
+            "words": 111,
+            "characters": 1027,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.con-intentional-causal-realism.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1015,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.pro-intentional-causal-explanation.critique",
+            "kind": "critique",
+            "words": 113,
+            "characters": 1012,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.pro-functional-organization-suffices-for-mind.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1009,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_06",
+            "field": "moveProse.pro-qualia-concept-unsettled.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 1028,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_07",
+            "field": "moveProse.con-subjective-personhood.critique",
+            "kind": "critique",
+            "words": 113,
+            "characters": 988,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_08",
+            "field": "moveProse.pro-benign-religion-cover-problem.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 974,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_09",
+            "field": "moveProse.con-progressive-religion-reason.critique",
+            "kind": "critique",
+            "words": 113,
+            "characters": 998,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 6,
+      "shardId": "debate-147-shard-2",
+      "debateNumber": "147",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "4620746e265a46068ce1f94980853f84b7d6f050976674a30dc6cff81a5143fd",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 6,
+        "debateNumber": "147",
+        "shardId": "debate-147-shard-2",
+        "correctedFields": 8,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-integrated-religious-worldview.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1035,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-mysterious-transcendence-indistinguishable.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 947,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.pro-secular-corrigible-moral-ground.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 926,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_04",
+            "field": "moveProse.con-morality-within-ultimate-worldview.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1009,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_05",
+            "field": "moveProse.pro-nature-as-ultimate-reality.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 917,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_06",
+            "field": "moveProse.con-transcendent-ultimacy.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 933,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_07",
+            "field": "moveProse.pro-ultimate-reality-falsifiability-challenge.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 990,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_08",
+            "field": "moveProse.con-experience-sensitive-religious-belief.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 903,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 7,
+      "shardId": "debate-61-shard-1",
+      "debateNumber": "61",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "0bc44f264fe3a4ea6d42fd0f7108764caf093af8ea89e99a44e6b35bd42f6fc7",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 7,
+        "debateNumber": "61",
+        "shardId": "debate-61-shard-1",
+        "correctedFields": 3,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-rights-material-struggle.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1026,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-compassion-institutional-scaling.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 1045,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_03",
+            "field": "moveProse.pro-causal-actual-history-over-counterfactual.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 960,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    }
+  ],
+  "debateResults": [
+    {
+      "debateNumber": "123",
+      "contextsPlanned": 2,
+      "contextsPassed": 2,
+      "contextsFailed": 0,
+      "writableFields": 10,
+      "correctedFields": 10,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "123",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 914,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "177",
+      "contextsPlanned": 2,
+      "contextsPassed": 2,
+      "contextsFailed": 0,
+      "writableFields": 16,
+      "correctedFields": 16,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "177",
+        "moves": 22,
+        "critiques": 22,
+        "minimumCritiqueCharacters": 921,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "68",
+      "contextsPlanned": 1,
+      "contextsPassed": 1,
+      "contextsFailed": 0,
+      "writableFields": 6,
+      "correctedFields": 6,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "68",
+        "moves": 12,
+        "critiques": 12,
+        "minimumCritiqueCharacters": 946,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "147",
+      "contextsPlanned": 2,
+      "contextsPassed": 2,
+      "contextsFailed": 0,
+      "writableFields": 17,
+      "correctedFields": 17,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "147",
+        "moves": 17,
+        "critiques": 17,
+        "minimumCritiqueCharacters": 903,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "61",
+      "contextsPlanned": 1,
+      "contextsPassed": 1,
+      "contextsFailed": 0,
+      "writableFields": 3,
+      "correctedFields": 3,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "61",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 960,
+        "tags": 3,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    }
+  ],
+  "totals": {
+    "debatesTargeted": 5,
+    "debatesRepaired": 5,
+    "debatesFailed": 0,
+    "critiqueFieldsTargeted": 51,
+    "quoteFieldsTargeted": 1,
+    "writableFieldsTargeted": 52,
+    "correctedFieldsAccepted": 52,
+    "modelContexts": 8,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completeCohortStatus": "post-canary-batch-10-complete-ten-debate-publication-output-gate-passed-after-field-disjoint-repair",
+  "authorization": {
+    "deterministicCompilationPreparation": true,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-10-deterministic-publication-compilation"
+}

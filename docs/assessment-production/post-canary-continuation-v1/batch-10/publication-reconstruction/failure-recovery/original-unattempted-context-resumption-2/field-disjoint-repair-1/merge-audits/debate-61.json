@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-field-disjoint-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-field-disjoint-repair-1",
+  "status": "passed",
+  "debateNumber": "61",
+  "sourceFailedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-61.json",
+    "sha256": "590761674864bc2954c65e5c60947f0d7c9e5038df1816a7f3f7e01b858d7893",
+    "retainedValidationCleanFieldsDeterministically": true,
+    "rejectedTargetValuesRetained": false
+  },
+  "replacements": [
+    {
+      "contextIndex": 7,
+      "shardId": "debate-61-shard-1",
+      "fieldKey": "field_01",
+      "field": "moveProse.con-rights-material-struggle.critique",
+      "kind": "critique",
+      "originalValueSha256": "0d1c6f3ec991dcaa78795d4a9f25b1e9031f2ecfce052acd6b08c795b712fa37",
+      "replacementValueSha256": "02f6e7d0a3d0bf68aef150aa8dcf4bbbd0222d9f51a861aeaa3f88dbf992df4d"
+    },
+    {
+      "contextIndex": 7,
+      "shardId": "debate-61-shard-1",
+      "fieldKey": "field_02",
+      "field": "moveProse.pro-compassion-institutional-scaling.critique",
+      "kind": "critique",
+      "originalValueSha256": "b9073b8d12d393f5d23f32ea1b1b002b8f0cdd2556d4ca0b856f8fcbd700d458",
+      "replacementValueSha256": "24a3dc2a326bc7234999fcf8aa2a07c635fef491a25bea88e18eac0ccc9544a5"
+    },
+    {
+      "contextIndex": 7,
+      "shardId": "debate-61-shard-1",
+      "fieldKey": "field_03",
+      "field": "moveProse.pro-causal-actual-history-over-counterfactual.critique",
+      "kind": "critique",
+      "originalValueSha256": "b57c2c56c8a6600dc185d870dc4a908bdd9eaf874712fcca38469544fe6abf88",
+      "replacementValueSha256": "600d0baf87978aa7d6ae93d92dba788dd94cc3a92366fc8dc615cfc2887b5845"
+    }
+  ],
+  "correctedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-2/field-disjoint-repair-1/corrected/debate-61.json",
+    "sha256": "7cff8720d81ef5f06cd4f24f857f52ed11bea83eb151eec23f1c42845caca914",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "61",
+      "moves": 20,
+      "critiques": 20,
+      "minimumCritiqueCharacters": 960,
+      "tags": 3,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 2,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "lockedScoresUnchanged": true,
+  "modelAuthoredScores": 0
+}
