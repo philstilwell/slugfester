@@ -283,11 +283,11 @@ async function buildArtifacts({ frozenAt, checkpointCommit }) {
       planActivation.status ===
       "frozen-ten-post-canary-batch-12-candidate-census-plan-contexts-authorized" &&
       planExecution.status ===
-        "ten-post-canary-batch-12-candidate-census-plan-contexts-passed" &&
+        "post-canary-batch-12-candidate-census-plan-gate-complete-with-failure" &&
       planExecution.contextsPlanned === 10 &&
       planExecution.contextsAttempted === 10 &&
-      planExecution.validContexts === 10 &&
-      planExecution.invalidContexts === 0 &&
+      planExecution.validContexts === 9 &&
+      planExecution.invalidContexts === 1 &&
       planExecution.attempts === 10 &&
       planExecution.retries === 0 &&
       planExecution.timeoutExtensions === 0 &&
@@ -309,8 +309,12 @@ async function buildArtifacts({ frozenAt, checkpointCommit }) {
       planAnalysis.audit.everyPlanHasOneRoutePerSide === true &&
       planAnalysis.audit.everyPlanHasFourToSixSections === true &&
       planAnalysis.audit.everyPlanWeightsTotalOneHundred === true &&
-      planAnalysis.audit.zeroLexicalTokenSourceRowPreserved === true &&
-      planAnalysis.audit.exactSourceRowsInjectedOmittedOrRewritten === false &&
+      planAnalysis.audit.boundedFirstRecoveryUsed === true &&
+      planAnalysis.audit.recoveredDebate === "28" &&
+      planAnalysis.audit.minimumFieldDisjointShardCount === 2 &&
+      planAnalysis.audit.originalFailedPartialOutputReused === false &&
+      planAnalysis.audit.nineOriginalAcceptedPlansByteIdentical === true &&
+      planAnalysis.audit.sourceRowsInjectedOmittedOrRewritten === false &&
       planAnalysis.audit.exactSidePacketsFrozen === 0 &&
       planAnalysis.audit.sideSelectorModelsExecuted === 0 &&
       planAnalysis.audit.judgmentModelsExecuted === 0 &&

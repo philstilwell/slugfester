@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-chronology-fallback-side-selector-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "sideSelectionProtocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+  "stage": "con-candidate-evidence-selection-with-chronology-fallback",
+  "debateNumber": "119",
+  "debateId": "jones-oconnor-hell-2023",
+  "side": "con",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "isolation": {
+    "freshContextRequired": true,
+    "oneDebateOnly": true,
+    "oneSideOnly": true,
+    "scoreBlind": true,
+    "routesAndSectionsImmutable": true,
+    "otherSideCandidateEvidenceUnavailable": true,
+    "otherSideSelectorOutputUnavailable": true,
+    "plannerExecutionMetadataUnavailable": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "preferredMoveKindRequired": true,
+    "constructiveOrphanFallbackRequired": true,
+    "fallbackConditionRepositoryOwned": true,
+    "priorAndOtherJudgmentsUnavailable": true,
+    "legacyAssessmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "immutablePlanCanonicalSha256": "6e0002cda681c3c0b371323994e2b2d0762ef5b104845c5c4300903af65ae148",
+  "copiedInputs": [
+    {
+      "role": "inventory-source-packet",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/source-packets/debate-119.json",
+      "sha256": "87838f0127de92dd91daf37ba162ec3d797cb20e16011476c8d74053fc48475b",
+      "bytes": 3572
+    },
+    {
+      "role": "immutable-candidate-census-plan",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-119.json",
+      "sha256": "624102ef825f508d39befaa46be025909f1065c755f801af9c784f95f9c5acaa",
+      "canonicalSha256": "6e0002cda681c3c0b371323994e2b2d0762ef5b104845c5c4300903af65ae148",
+      "bytes": 7866
+    },
+    {
+      "role": "con-complete-candidate-evidence-transport",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/transports/sides/debate-119-con.json",
+      "sha256": "8d6facecc980590cc9d03609c329a0a2aaa61c650bb97547d488657961c31fff",
+      "bytes": 16269
+    },
+    {
+      "role": "candidate-sharded-inventory-guide",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "d827d7b128880abaa1bcbe5057fb4acb4ff9f6d5422a148f8d10b0c154a064d9",
+      "bytes": 5937
+    },
+    {
+      "role": "inventory-manual",
+      "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+      "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+      "bytes": 3432
+    },
+    {
+      "role": "strict-output-schema",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/schemas/sides/debate-119-con.schema.json",
+      "sha256": "1564c8b91b02bf5d0fe77723d4e61a13e86172a7ddf991f5fffc7b692284eaa2",
+      "bytes": 6491
+    }
+  ],
+  "copiedInputBytes": 43567,
+  "maximumCopiedInputBytes": 115000,
+  "writableDomains": [
+    "candidateSelections"
+  ],
+  "output": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/side-selections/debate-119-con.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "modelExecutionAuthorized": false
+}
