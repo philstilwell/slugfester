@@ -87,14 +87,14 @@ assert.deepEqual(preparation.acquisitionPolicy.acquisitionFormatByVideo, {
 assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.debateNumber, "15");
 assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.attempts, 1);
 assert.equal(preparation.acquisitionPolicy.boundedRecovery.level, 2);
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardIndex, 2);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardIndex, 3);
 assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardAttempt, 1);
 assert.equal(preparation.acquisitionPolicy.boundedRecovery.formatSelector, "140");
 assert.equal(
   preparation.acquisitionPolicy.boundedRecovery.transport,
-  "complete-sequential-nonoverlapping-byte-ranges"
+  "yt-dlp-single-process-resolution-and-download"
 );
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.repeatedRanges, 0);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.retries, 0);
 assert.equal(
   preparation.acquisitionPolicy.levelOneFailure.status,
   "debate-15-audio-source-recovery-level-1-failed-preserved-level-2-authorized"
@@ -104,6 +104,11 @@ assert.equal(
   "debate-15-audio-source-recovery-level-2-shard-1-http-403-preserved-shard-2-authorized"
 );
 assert.equal(preparation.acquisitionPolicy.levelTwoShardOneFailure.httpStatus, 403);
+assert.equal(
+  preparation.acquisitionPolicy.levelTwoShardTwoFailure.status,
+  "debate-15-audio-source-recovery-level-2-shard-2-http-403-preserved-shard-3-authorized"
+);
+assert.equal(preparation.acquisitionPolicy.levelTwoShardTwoFailure.httpStatus, 403);
 assert.deepEqual(preparation.acquisitionPolicy.redirectPolicy, {
   manual: true,
   httpsOnly: true,
@@ -122,7 +127,7 @@ assert(
   preparation.publicSourceAttemptAudit.every(
     (item) =>
       item.maximumAttempts === 1 &&
-      [1, 4].includes(item.attempt) &&
+      [1, 5].includes(item.attempt) &&
       item.attemptsByShard.length === item.attempt &&
       item.attemptsByShard.every((attempt) => attempt.attempt === 1)
   )
@@ -131,10 +136,10 @@ assert.equal(
   preparation.publicSourceAttemptAudit.reduce((sum, item) => sum + item.attempt, 0),
   preparation.totals.sourceAcquisitionAttempts
 );
-assert.equal(preparation.totals.sourceAcquisitionAttempts, 6);
+assert.equal(preparation.totals.sourceAcquisitionAttempts, 7);
 assert.equal(preparation.totals.sourceDownloads, 3);
-assert.equal(preparation.totals.failedSourceAcquisitionAttempts, 3);
-assert.equal(preparation.totals.recoverySourceAcquisitionAttempts, 3);
+assert.equal(preparation.totals.failedSourceAcquisitionAttempts, 4);
+assert.equal(preparation.totals.recoverySourceAcquisitionAttempts, 4);
 assert.equal(preparation.executionBoundary.audioPlaybackCalls, 0);
 assert.equal(preparation.executionBoundary.semanticAudioEvaluations, 0);
 assert.equal(preparation.executionBoundary.transcriptionCalls, 0);

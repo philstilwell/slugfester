@@ -34,8 +34,10 @@ const partialExecutionPath = `${planRoot}/audio-source-partial-execution-1.json`
 const levelOneFailurePath = `${planRoot}/audio-source-recovery-1-failure.json`;
 const levelTwoShardOneFailurePath =
   `${planRoot}/audio-source-recovery-2-shard-1-failure.json`;
+const levelTwoShardTwoFailurePath =
+  `${planRoot}/audio-source-recovery-2-shard-2-failure.json`;
 const recoveryExecutionPath =
-  `${planRoot}/audio-source-recovery-2-shard-2-debate-15.json`;
+  `${planRoot}/audio-source-recovery-2-shard-3-debate-15.json`;
 const ffmpeg = "/opt/homebrew/bin/ffmpeg";
 const ffprobe = "/opt/homebrew/bin/ffprobe";
 const exists = (file) => access(file).then(() => true, () => false);
@@ -77,6 +79,7 @@ const TOOL_SOURCES = [
   "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15.mjs",
   "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15-level-2.mjs",
   "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15-level-2-shard-2.mjs",
+  "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15-level-2-shard-3.mjs",
   "scripts/prepare-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/test-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/lib/assessment-production-post-canary-batch-12-audio-work-items.mjs",
@@ -112,6 +115,7 @@ const [
   partialExecutionBytes,
   levelOneFailureBytes,
   levelTwoShardOneFailureBytes,
+  levelTwoShardTwoFailureBytes,
   recoveryExecutionBytes
 ] = await Promise.all([
   readFile(workPreparationPath),
@@ -119,6 +123,7 @@ const [
   readFile(partialExecutionPath),
   readFile(levelOneFailurePath),
   readFile(levelTwoShardOneFailurePath),
+  readFile(levelTwoShardTwoFailurePath),
   readFile(recoveryExecutionPath)
 ]);
 const workPreparation = JSON.parse(workPreparationBytes);
@@ -126,6 +131,7 @@ const work = JSON.parse(workBytes);
 const partialExecution = JSON.parse(partialExecutionBytes);
 const levelOneFailure = JSON.parse(levelOneFailureBytes);
 const levelTwoShardOneFailure = JSON.parse(levelTwoShardOneFailureBytes);
+const levelTwoShardTwoFailure = JSON.parse(levelTwoShardTwoFailureBytes);
 const recoveryExecution = JSON.parse(recoveryExecutionBytes);
 
 assertV4(
@@ -167,13 +173,16 @@ assertV4(
     levelTwoShardOneFailure.status ===
       "debate-15-audio-source-recovery-level-2-shard-1-http-403-preserved-shard-2-authorized" &&
     levelTwoShardOneFailure.recoveryPlan.shardIndex === 2 &&
+    levelTwoShardTwoFailure.status ===
+      "debate-15-audio-source-recovery-level-2-shard-2-http-403-preserved-shard-3-authorized" &&
+    levelTwoShardTwoFailure.recoveryPlan.shardIndex === 3 &&
     recoveryExecution.status ===
-      "debate-15-audio-source-recovery-level-2-shard-2-passed" &&
+      "debate-15-audio-source-recovery-level-2-shard-3-passed" &&
     recoveryExecution.recoveryLevel === 2 &&
-    recoveryExecution.shardIndex === 2 &&
+    recoveryExecution.shardIndex === 3 &&
     recoveryExecution.shardAttempt === 1 &&
     recoveryExecution.retries === 0 &&
-    recoveryExecution.freshFormatSelector === SOURCE_FORMATS["5OXPlUCGScY"],
+    recoveryExecution.formatSelector === SOURCE_FORMATS["5OXPlUCGScY"],
   "Batch 12 preserved partial execution or bounded recovery changed"
 );
 for (const [file, digest] of Object.entries(workPreparation.sourceHashes)) {
@@ -188,6 +197,7 @@ const inputHashes = {
   [partialExecutionPath]: sha256(partialExecutionBytes),
   [levelOneFailurePath]: sha256(levelOneFailureBytes),
   [levelTwoShardOneFailurePath]: sha256(levelTwoShardOneFailureBytes),
+  [levelTwoShardTwoFailurePath]: sha256(levelTwoShardTwoFailureBytes),
   [recoveryExecutionPath]: sha256(recoveryExecutionBytes),
   [POST_CANARY_BATCH_12_STANDING_AUTHORIZATION]: standingAuthorization.sha256
 };
@@ -436,9 +446,10 @@ if (!shouldWrite) {
             path: recoveryExecutionPath,
             sha256: sha256(recoveryExecutionBytes),
             level: recoveryExecution.recoveryLevel,
+            shardIndex: recoveryExecution.shardIndex,
             shardAttempt: recoveryExecution.shardAttempt,
-            formatSelector: recoveryExecution.freshFormatSelector,
-            transport: recoveryExecution.transport.method
+            formatSelector: recoveryExecution.formatSelector,
+            transport: recoveryExecution.transport
           },
           normalizeMonoHz: 16000,
           normalizeBitrateKbps: 48,
@@ -485,7 +496,7 @@ for (const [videoId, moves] of grouped) {
   const acquisitionMode = recovered
     ? "downloaded-public-source-after-bounded-field-disjoint-recovery"
     : "downloaded-public-source-preserved-from-partial-execution";
-  const acquisitionAttempts = recovered ? 4 : 1;
+  const acquisitionAttempts = recovered ? 5 : 1;
   const publicSourceAttemptOutcome = recovered
     ? "success-after-bounded-field-disjoint-recovery"
     : "success-preserved-from-partial-execution";
@@ -503,7 +514,8 @@ for (const [videoId, moves] of grouped) {
           { shard: "initial", attempt: 1, outcome: "failed-preserved" },
           { shard: "recovery-1", attempt: 1, outcome: "failed-preserved" },
           { shard: "recovery-2-shard-1", attempt: 1, outcome: "failed-preserved" },
-          { shard: "recovery-2-shard-2", attempt: 1, outcome: "success" }
+          { shard: "recovery-2-shard-2", attempt: 1, outcome: "failed-preserved" },
+          { shard: "recovery-2-shard-3", attempt: 1, outcome: "success" }
         ]
       : [{ shard: "initial", attempt: 1, outcome: "success-preserved" }]
   });
@@ -637,10 +649,9 @@ const preparation = {
       level: recoveryExecution.recoveryLevel,
       shardIndex: recoveryExecution.shardIndex,
       shardAttempt: recoveryExecution.shardAttempt,
-      formatSelector: recoveryExecution.freshFormatSelector,
-      transport: recoveryExecution.transport.method,
-      rangesRequested: recoveryExecution.transport.rangesRequested,
-      repeatedRanges: recoveryExecution.transport.repeatedRanges
+      formatSelector: recoveryExecution.formatSelector,
+      transport: recoveryExecution.transport,
+      retries: recoveryExecution.retries
     },
     levelOneFailure: {
       path: levelOneFailurePath,
@@ -655,6 +666,13 @@ const preparation = {
       status: levelTwoShardOneFailure.status,
       httpStatus: levelTwoShardOneFailure.httpStatus,
       mediaBytesReceived: levelTwoShardOneFailure.mediaBytesReceived
+    },
+    levelTwoShardTwoFailure: {
+      path: levelTwoShardTwoFailurePath,
+      sha256: sha256(levelTwoShardTwoFailureBytes),
+      status: levelTwoShardTwoFailure.status,
+      httpStatus: levelTwoShardTwoFailure.httpStatus,
+      mediaBytesReceived: levelTwoShardTwoFailure.mediaBytesReceived
     },
     normalizedChannels: 1,
     normalizedSampleRateHz: 16000,
@@ -683,8 +701,8 @@ const preparation = {
       (sum, source) => sum + source.publicSourceAcquisitionAttempts,
       0
     ),
-    failedSourceAcquisitionAttempts: 3,
-    recoverySourceAcquisitionAttempts: 3,
+    failedSourceAcquisitionAttempts: 4,
+    recoverySourceAcquisitionAttempts: 4,
     clips: clips.length,
     clipMinutes: Number(
       (clips.reduce((sum, clip) => sum + clip.durationSeconds, 0) / 60).toFixed(4)
