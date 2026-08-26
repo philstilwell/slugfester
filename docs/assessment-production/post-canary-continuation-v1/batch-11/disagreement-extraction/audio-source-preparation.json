@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-11-decomposed-consensus",
+  "status": "prepared-two-post-canary-batch-11-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "c4bc35b0baaad781e1a0613cf16e4c9a7f297762",
+  "userAuthorization": {
+    "instruction": "Continue the SLUGFESTER reassessment campaign with Batch 11. I authorize deterministic selection and the complete reassessment and publication workflow for the next ten eligible dyadic debates; 5.6 Sol/low model work through the ChatGPT subscription and local work are capped at $0 direct incremental cost; conditional sequential gpt-4o-transcribe-diarize audio verification is capped at $1.00 after a frozen estimate; verified $0 source recovery, diagnosed field-disjoint recovery through two levels, deterministic dependent-artifact correction, production mutation, validation, commits, and pushes may proceed without per-stage approval; stop before Batch 12 selection.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/standing-authorization.json",
+    "standingAuthorizationSha256": "fbb678a76c3771303cf8b24b4185c9a3fa380f0288ba0f5b41f0e02d6bde5261",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sourceAudioFilesAuthorized": 2,
+    "clipsAuthorized": 2,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-11/disagreement-extraction/audio-work-item-preparation.json": "e22d146cbad5aed57cd999127d94730cf64c5e5fb9fd66dceb2b43c290e09a86",
+    "docs/assessment-production/post-canary-continuation-v1/batch-11/disagreement-extraction/audio-work-items.json": "878218af3db4be9ee4df300e4dd6c37b04792aaf83c718bbfa253e1205a71c56",
+    "docs/assessment-production/post-canary-continuation-v1/batch-11/disagreement-extraction/audio-source-resolution-recovery-1.json": "1101f9ad834c690fb043ce5bfb97a42762b713a9d58519a747a1e51cb32eec97",
+    "docs/assessment-production/post-canary-continuation-v1/batch-11/standing-authorization.json": "fbb678a76c3771303cf8b24b4185c9a3fa380f0288ba0f5b41f0e02d6bde5261",
+    "scripts/prepare-assessment-production-post-canary-batch-11-audio-sources.mjs": "26b1ee6cf09a0df9dc0078387f49159024a2592bdbec3c9455888d55615c1707",
+    "scripts/test-assessment-production-post-canary-batch-11-audio-sources.mjs": "630c26176eb9a6abeaada8de2d378b35b63b60f299e527679b19d33aa7dbed40",
+    "scripts/prepare-assessment-production-post-canary-batch-11-audio-work-items.mjs": "bcac5c3d50355b3fc90a71c4c044bdc83ac91df0bb843778abae7616e2b1c91a",
+    "scripts/test-assessment-production-post-canary-batch-11-audio-work-items.mjs": "28b7f80f88f04ae9b844cce7a8ea6e9006300b4ccdcd091af8570f267aa2e125",
+    "scripts/lib/assessment-production-post-canary-batch-11-audio-work-items.mjs": "f3ce92d7f27bb8cd4ad1c4a3244c9c2c8ba5805502aad767e97d7eefcb740bf0",
+    "scripts/lib/assessment-production-post-canary-batch-11-standing-authorization.mjs": "6c52f43c6aabe66ab03567f0592915d9ffe887c737329f3b1530ee22647e96fa",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "workItemSourceHashesReplayed": 80,
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "oneFreshMediaUrlResolutionPerMissingVideo": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "plannedRangesPerVideo": [
+      "bytes=0-"
+    ],
+    "nonOverlappingRangesPerVideo": 1,
+    "repeatedRanges": 0,
+    "redirectPolicy": {
+      "manual": true,
+      "httpsOnly": true,
+      "googleVideoDomainOnly": true,
+      "maximumRedirectsPerRange": 3,
+      "requiredFinalStatusCode": 206
+    },
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormatByVideo": {
+      "TAW6-_L4z9M": "18",
+      "X4YVgM2HPMk": "bestaudio/best"
+    },
+    "diagnosedFailedResolution": {
+      "videoId": "TAW6-_L4z9M",
+      "attempts": 1,
+      "freshMediaUrlsResolved": 0,
+      "mediaRequests": 0,
+      "byteRangesRequested": 0
+    },
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "01",
+      "videoId": "TAW6-_L4z9M",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "18",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+        },
+        "contentRange": "bytes 0-293579391/293579392",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 293579392
+      }
+    },
+    {
+      "debateNumber": "188",
+      "videoId": "X4YVgM2HPMk",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "f0760159dc221e6b90a8956f916656ae059555ba79bb07823a17e0a3fba98200"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 2,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "f0760159dc221e6b90a8956f916656ae059555ba79bb07823a17e0a3fba98200"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-t0aekn7e.googlevideo.com",
+            "urlSha256": "82d3e457ea5be5c6d5d0083272dd3cb9b067a9c30bd54b83fa4cbd7d48b9ce65"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr4---sn-vgqsknzl.googlevideo.com",
+            "urlSha256": "426fd368c5b6f891ed47b12ebfbb8760603a552d8644ba3cf00113ca8535c17f"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr4---sn-vgqsknzl.googlevideo.com",
+          "urlSha256": "426fd368c5b6f891ed47b12ebfbb8760603a552d8644ba3cf00113ca8535c17f"
+        },
+        "contentRange": "bytes 0-123665931/123665932",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 123665932
+      }
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "01",
+      "videoId": "TAW6-_L4z9M",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "18",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "2083749937990a45741785e495ab1329ca9e1077170a3f46c8262c979a8999aa"
+        },
+        "contentRange": "bytes 0-293579391/293579392",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 293579392
+      },
+      "formatSelector": "18",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-11-audio-verification/debate-01/audio/source.mp3",
+      "sourceAudioSha256": "6ed44dc4a0b59d7ad1436d70830539768147c7346e480169fcd2aa4f8abf6b9e",
+      "durationSeconds": 6585.272,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "188",
+      "videoId": "X4YVgM2HPMk",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "f0760159dc221e6b90a8956f916656ae059555ba79bb07823a17e0a3fba98200"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 2,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "f0760159dc221e6b90a8956f916656ae059555ba79bb07823a17e0a3fba98200"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-t0aekn7e.googlevideo.com",
+            "urlSha256": "82d3e457ea5be5c6d5d0083272dd3cb9b067a9c30bd54b83fa4cbd7d48b9ce65"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr4---sn-vgqsknzl.googlevideo.com",
+            "urlSha256": "426fd368c5b6f891ed47b12ebfbb8760603a552d8644ba3cf00113ca8535c17f"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr4---sn-vgqsknzl.googlevideo.com",
+          "urlSha256": "426fd368c5b6f891ed47b12ebfbb8760603a552d8644ba3cf00113ca8535c17f"
+        },
+        "contentRange": "bytes 0-123665931/123665932",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 123665932
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-11-audio-verification/debate-188/audio/source.mp3",
+      "sourceAudioSha256": "237db6661a902c6c36a15a51ef4950c9ab15f30b5b3114c187d11415c341c696",
+      "durationSeconds": 3577.475188,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "01",
+      "debateId": "craig-oconnor-god-debate-2026",
+      "sourceVideoId": "TAW6-_L4z9M",
+      "moveId": "con-suffering-christian-specificity",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "Suffering is evidentially relevant to Christian theism because Christianity posits a personally concerned God who acts through resurrection for human salvation, not merely an indifferent first cause.",
+      "verificationExcerpt": "God who supposedly resurrects Jesus from the dead for the purpose, by the way, of human salvation. Meaning that actually, at least in the case of human beings, their mental states do actually matter quite a bit. Which I mean Which means that if there is some unexpected aspect of that mental existence that needs to be explained and is less expected on the hypothesis of theism. Of course, Christian",
+      "sourceSpan": {
+        "startEvent": 2846,
+        "endEvent": 2877
+      },
+      "clipWindow": {
+        "startMs": 6109500,
+        "endMs": 6172540,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-11-audio-verification/debate-01/clips/con-suffering-christian-specificity.mp3",
+      "clipSha256": "2c721779bfd81c5b40c103bdb6c90e371c9bd8a5de34e7d9a055184a369e097f",
+      "plannedDurationSeconds": 63.04,
+      "durationSeconds": 63.04,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "188",
+      "debateId": "kastrup-blackmore-consciousness-idealism-2023",
+      "sourceVideoId": "X4YVgM2HPMk",
+      "moveId": "con-nonspatiotemporal-meditative-experience",
+      "expectedSpeaker": "Susan Blackmore",
+      "proposition": "Meditative states in which experience continues without ordinary spatial or temporal organization provide reason to question whether space and time are fundamental.",
+      "verificationExcerpt": "here at the question of time and space whether they're fundamental and as a reductionist I guess this is very much a question in your mind I'm interested in this from the point of view and I'm going back to the meditation and psychedelic experiences here um I am quite familiar or this thing here or what should be the subject in this is quite familiar with getting into States in",
+      "sourceSpan": {
+        "startEvent": 1294,
+        "endEvent": 1342
+      },
+      "clipWindow": {
+        "startMs": 3193299,
+        "endMs": 3319059,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-11-audio-verification/debate-188/clips/con-nonspatiotemporal-meditative-experience.mp3",
+      "clipSha256": "a2457dc19486ade362f07c7c0277c451cba36fc31f5eaa45ef9203433562d36f",
+      "plannedDurationSeconds": 125.76,
+      "durationSeconds": 125.76,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 2,
+    "sourceDownloads": 2,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 2,
+    "clips": 2,
+    "clipMinutes": 3.1467,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-11-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
