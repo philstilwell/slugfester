@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { access, readFile, writeFile } from "node:fs/promises";
+import { assertV4 } from "./lib/v4-lean-production.mjs";
+
+const shouldWrite = process.argv.includes("--write");
+const index = process.argv.indexOf("--authorized-at");
+const authorizedAt = index >= 0 ? process.argv[index + 1] : null;
+assertV4(authorizedAt && !Number.isNaN(Date.parse(authorizedAt)), "invalid --authorized-at");
+const root = "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2";
+const prepPath = `${root}/execution-preparation-manifest.json`;
+const activationPath = `${root}/execution-activation.json`;
+const exists = (file) => access(file).then(() => true, () => false);
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+assertV4(!(await exists(activationPath)), "correction activation already exists");
+const prepBytes = await readFile(prepPath);
+const prep = JSON.parse(prepBytes);
+assertV4(
+  prep.status === "frozen-two-batch-10-debate-74-field-disjoint-adjudication-correction-2-contexts-prepared" &&
+    prep.contexts.length === 2 &&
+    prep.contexts.reduce((sum, item) => sum + item.candidateSelections, 0) === 26 &&
+    prep.userAuthorization.explicitConBurdenAdjustmentRequired === true &&
+    prep.userAuthorization.failedShard02OutputReusable === false &&
+    prep.executionPolicy.attemptsPerContext === 1 &&
+    prep.executionPolicy.retriesMaximum === 0 &&
+    prep.executionPolicy.timeoutExtensionsMaximum === 0 &&
+    prep.model.slug === "gpt-5.6-sol" && prep.model.reasoningEffort === "low" &&
+    prep.model.authentication === "ChatGPT subscription" && prep.model.scoreBlind === true,
+  "Debate 74 correction-2 is not prepared"
+);
+for (const [file, digest] of Object.entries(prep.sourceHashes))
+  assertV4(sha256(await readFile(file)) === digest, `source drift: ${file}`);
+for (const future of prep.futureOutputPathsExcludedFromSourceHashes)
+  assertV4(!(await exists(future)), `future output exists: ${future}`);
+const activation = {
+  ...prep,
+  schemaVersion: "1.0-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2-activation",
+  status: "frozen-two-batch-10-debate-74-field-disjoint-adjudication-correction-2-contexts-authorized",
+  authorizedAt,
+  checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+  preparationManifest: { path: prepPath, sha256: sha256(prepBytes) },
+  standingAuthorizationSha256:
+    prep.sourceHashes[prep.standingAuthorization],
+  authorization: {
+    executionActivation: false, adjudicationModelContexts: true,
+    deterministicMergeAndValidation: true, judgmentModelContexts: false,
+    paidServices: false, finalLedgerAssembly: false, scoreDerivation: false,
+    productionMutation: false
+  },
+  futureOutputPathsExcludedFromSourceHashes:
+    prep.futureOutputPathsExcludedFromSourceHashes.filter((file) => file !== activationPath),
+  nextAuthorizedAction: "execute-two-debate-74-field-disjoint-correction-2-contexts-once"
+};
+if (shouldWrite) await writeFile(activationPath, `${JSON.stringify(activation, null, 2)}\n`);
+console.log(JSON.stringify({ status: shouldWrite ? "frozen-authorized" : "preview-authorized",
+  contexts: 2, schedulerRamp: [1,2], attemptsPerContext: 1, retriesMaximum: 0,
+  timeoutExtensionsMaximum: 0, model: activation.model,
+  directIncrementalCostUsdMaximum: 0 }, null, 2));
