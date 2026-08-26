@@ -1,0 +1,2097 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-12-production-compatibility",
+  "status": "frozen-post-canary-batch-12-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "debateNumber": "116",
+  "debateId": "bertuzzi-schieber-evil-evidence-2019",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-12-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "1124834d66b6a503a835b68d925ee62cd0cedfeb6ebc99ad58b9fdc06219ea70",
+    "calculatedScoresSha256": "749a60811c016eceecf9bfacdb761eb6a97ca12b14149320acedb23e7dbbc630",
+    "finalizationAuditSha256": "651c89d749b11121138823998223d4afab0c75528bb8ed5772b8b1f4537dc63d",
+    "renderingAuditSha256": "2e374cee4f7b3cf8837d2f8b066c57ba35ba023ab5e30d7495b3756dd3011725",
+    "finalCandidateSha256": "7a130595f1ebf5fc49f0a8e98ab9be0ae978d0b6be2a70638305ed653780a7b8",
+    "eventsPath": ".assessment-cache/captions/huOwbSrl-xw/events.json",
+    "eventsSha256": "5e041b4b863da68323195a71884fe7968a10828183b47a8235febb24ffee4aa6",
+    "finalJudgmentSha256": "f93c418d43129a63b27bd14ff18e3781888fe6e949b0c6c3b9bd30c7884df70e"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "116",
+    "debateId": "bertuzzi-schieber-evil-evidence-2019",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-no-evidence-defense",
+        "side": "pro",
+        "description": "Show that the cited facts about pain, pleasure, languishing, and horrendous evil do not provide comparative evidence for naturalism over theism because the naturalistic likelihood is not established, soul-building can raise their likelihood on theism, or skeptical theism prevents the required likelihood comparison.",
+        "successCriteria": "The route succeeds if at least one global neutralizer defeats the comparative inference: the naturalistic prediction remains unsupported, a sufficiently developed soul-building account makes the data no less expected on theism, or epistemic limits leave the theistic likelihood unavailable for the claimed comparison.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-neutralization",
+          "tier": "motion",
+          "description": "Establish that the total cited suffering data do not warrant a comparative evidential preference for naturalism over theism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-naturalistic-likelihood",
+            "tier": "central",
+            "description": "Require adequate support for the claim that naturalism predicts the observed suffering facts better, rather than merely accommodating their possibility."
+          },
+          {
+            "bridgeId": "pro-soul-building-account",
+            "tier": "central",
+            "description": "Explain how morally significant agency, virtue formation, nonhuman development, and eventual defeat of suffering can make the observed data compatible with theistic purposes."
+          },
+          {
+            "bridgeId": "pro-skeptical-theist-defeater",
+            "tier": "central",
+            "description": "Show that limited access to divine reasons or the total moral structure prevents a warranted estimate of the suffering data's probability on theism."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-background-and-analogy",
+            "tier": "subsidiary",
+            "description": "Test whether the biological analogy and selected evolutionary background information support the asserted naturalistic expectations."
+          },
+          {
+            "bridgeId": "pro-alternative-means-and-aftermath",
+            "tier": "subsidiary",
+            "description": "Address whether less harmful means, afterlife compensation, or the destructive effects of suffering undermine the proposed theistic purposes."
+          }
+        ]
+      },
+      {
+        "routeId": "con-comparative-evil-evidence",
+        "side": "con",
+        "description": "Show that biologically oriented pain and pleasure, widespread sentient languishing, and horrendous evil are collectively more expected on morally indifferent naturalism than on theism, and that neither soul-building nor skeptical theism neutralizes that comparative evidential force.",
+        "successCriteria": "The route succeeds by defending the comparative-likelihood standard, establishing a naturalistic advantage for the principal classes of suffering facts, and showing that soul-building and skeptical-theist replies neither predict the observed distribution nor erase the force of known evidence.",
+        "motionBridge": {
+          "bridgeId": "con-motion-comparative-support",
+          "tier": "motion",
+          "description": "Establish that the total cited suffering data provide comparative evidential support for naturalism over theism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-comparative-framework",
+            "tier": "central",
+            "description": "Defend the principle that evidence favors the hypothesis on which the observed facts are less surprising, without requiring either hypothesis to entail them."
+          },
+          {
+            "bridgeId": "con-three-data-classes",
+            "tier": "central",
+            "description": "Establish a comparative naturalistic advantage for biologically oriented pain and pleasure, sentient languishing, and horrendous evil."
+          },
+          {
+            "bridgeId": "con-theodicy-limits",
+            "tier": "central",
+            "description": "Show that soul-building does not adequately predict the scope, distribution, proportions, or destructive severity of the observed suffering."
+          },
+          {
+            "bridgeId": "con-skepticism-limits",
+            "tier": "central",
+            "description": "Show that uncertainty about unknown divine reasons does not cancel known comparative reasons or prevent naturalism from assigning the data a higher likelihood."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-background-discipline",
+            "tier": "subsidiary",
+            "description": "Specify background knowledge without building the disputed suffering observations into it or requiring an independent complete naturalistic explanation."
+          },
+          {
+            "bridgeId": "con-prevention-alternatives",
+            "tier": "subsidiary",
+            "description": "Explain why less harmful means, divine resources, compensation, or possible afterlives do not by themselves justify or predict the observed harms."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "comparative-likelihood-framework",
+        "title": "Comparative Likelihood and Naturalistic Prediction",
+        "weightPercent": 20,
+        "rationale": "This issue fixes the governing evidential standard and whether analogical reasoning, evolutionary background knowledge, and comparative surprise adequately support a naturalistic likelihood advantage."
+      },
+      {
+        "sectionId": "pain-pleasure-orientation",
+        "title": "Biological Orientation of Pain and Pleasure",
+        "weightPercent": 15,
+        "rationale": "The orientation of pain and pleasure toward biological goals, and its apparent moral randomness, forms an independent evidential comparison that each side must explain under its hypothesis."
+      },
+      {
+        "sectionId": "sentient-languishing",
+        "title": "Sentient Flourishing and Languishing",
+        "weightPercent": 15,
+        "rationale": "The prevalence, distribution, and nonhuman scope of languishing test whether natural processes or theistic purposes better predict the observed proportions of sentient welfare."
+      },
+      {
+        "sectionId": "horrendous-evil",
+        "title": "Horrendous Evil and Divine Prevention",
+        "weightPercent": 18,
+        "rationale": "The severity, morally destructive effects, and apparent preventability of horrendous evil create a distinct comparison involving divine empathy, available alternatives, and indifferent natural processes."
+      },
+      {
+        "sectionId": "soul-building-defense",
+        "title": "Scope and Necessity of Soul-Building",
+        "weightPercent": 17,
+        "rationale": "Soul-building is a principal global neutralizer, so the debate must address its reach across humans and animals, the necessity of actual harms, freedom, afterlife defeat, and any claimed fine-tuning."
+      },
+      {
+        "sectionId": "skeptical-theism",
+        "title": "Skeptical Theism and Unknown Reasons",
+        "weightPercent": 15,
+        "rationale": "The final global issue is whether limited human access to divine reasons makes the theistic likelihood unknowable or whether known comparative evidence remains probative despite that uncertainty."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-pain-biological-orientation",
+        "sectionId": "pain-pleasure-orientation",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "constructive",
+        "proposition": "Pain and pleasure are organized primarily around biological goals and appear morally random, a pattern more expected on naturalism than on morally perfect theism.",
+        "sourceSpan": {
+          "startEvent": 53,
+          "endEvent": 136,
+          "excerpt": "is available to the theists because of the moral significance of pain and pleasure in conjunction with the theists belief in an omnipotent and morally unsurpassable God it would seem we have much more reason on theism than we do on naturalism to expect that these sensations would be finely tuned to primarily guide moral agents toward moral goals rather than mere biological goals"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This occurs within Justin Schieber's uninterrupted opening statement and is explicitly framed as his first argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-three-data-classes"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies one principal data class by contrasting biologically directed sensations with the moral orientation expected from perfect theism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The biological-versus-moral orientation claim and comparative scope are both expressly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The comparative claim is qualified as an expectation, though moral randomness receives limited independent support."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, this directly advances one of the three indispensable suffering-data classes."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move presents its own comparative case and does not meaningfully interpret a live opposing argument."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (92 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts moral guidance expected on theism with sensations primarily guiding biological goals.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-languishing-distribution",
+        "sectionId": "sentient-languishing",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "constructive",
+        "proposition": "Competition, finite resources, and overpopulation systematically leave many sentient beings languishing, and that prevalence and distribution fit indifferent natural processes better than theism.",
+        "sourceSpan": {
+          "startEvent": 137,
+          "endEvent": 200,
+          "excerpt": "could not be better positioned to ensure that sentient beings have good lives by contrast if naturalism is true no such person as God exists so these facts about Faraj and languishing are entirely expected especially in light of our background knowledge about evolutionary processes where overpopulation in the finitude of resources systematically and indifferently drive sentient"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move remains within Justin Schieber's opening statement and is announced as his next distinct argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-three-data-classes"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move identifies competition, finite resources, and overpopulation as mechanisms producing widespread sentient languishing and draws a comparative inference."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The causal factors, sentient scope, and claimed comparative consequence are stated without material instability."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The mechanism fits naturalism plausibly, but the prevalence claim is asserted more strongly than the excerpt documents."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The mechanism is specific and familiar, but proportions and representative empirical support are not developed here."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly supplies the distributional component of the three-data-classes bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is evaluated within this constructive presentation."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly links finite resources and overpopulation to routine languishing under indifferent processes.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-horrendous-evil-surprise",
+        "sectionId": "horrendous-evil",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "constructive",
+        "proposition": "Horrendous evils involving profound suffering, disfigurement, or loss are substantially less surprising under morally indifferent naturalism than under perfectly informed and compassionate theism.",
+        "sourceSpan": {
+          "startEvent": 201,
+          "endEvent": 279,
+          "excerpt": "disfigurement or death of those one loves best the world is filled with such horrendous evils and I choose their tragic existence as the last line of evidence for my opening comments given naturalism it is not at all surprising that some of our behavioral tendencies can lead us in a variety of circumstances to act against each other in horrible ways theism however seems to lead"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This is the third expressly introduced argument in Justin Schieber's continuous opening presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-three-data-classes"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move presents horrendous suffering as another principal data class and compares its surprise under indifferent naturalism and compassionate theism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparative proposition is clear, while the relevant class of horrendous evils has a bounded implicit scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately argues lesser surprise rather than impossibility, with an ordinary implicit background qualification."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly advances the horrendous-evil component of the principal data classes."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances its own evidential comparison without testing a developed opposing account."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies widespread horrendous evils and explains why harmful behavior is unsurprising on naturalism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-comparative-naturalistic-prediction-c004",
+        "sectionId": "comparative-likelihood-framework",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Schieber has not established that naturalism predicts the cited suffering data, because adding evolutionary information to the background either helps both hypotheses or deprives naturalism of explanatory resources.",
+        "sourceSpan": {
+          "startEvent": 403,
+          "endEvent": 477,
+          "excerpt": "listen by itself doesn't have much if any explanatory resources from which to draw is have already shown adding this information to our background knowledge won't help because the more information we include in our background the more probable it is that every hypothesis predicts the data this is a very serious problem for explanatorily impotent hypotheses like naturalism I can"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move is delivered in Cameron Bertuzzi's opening response and is explicitly identified as his first argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-comparative-framework"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-languishing-distribution",
+            "con-pain-biological-orientation",
+            "con-horrendous-evil-surprise"
+          ],
+          "components": [
+            {
+              "componentId": "pro-comparative-naturalistic-prediction-c004-component-01",
+              "targetMoveId": "con-languishing-distribution",
+              "text": "Whether indifferent natural processes actually predict the stated distribution rather than merely accommodate it.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-comparative-naturalistic-prediction-c004-component-02",
+              "targetMoveId": "con-pain-biological-orientation",
+              "text": "Whether evolutionary background independently predicts biologically oriented pain and pleasure.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-comparative-naturalistic-prediction-c004-component-03",
+              "targetMoveId": "con-horrendous-evil-surprise",
+              "text": "Whether naturalism supplies explanatory resources for the horrendous-evil observation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests the shared naturalistic-likelihood premise behind all three opening comparisons by challenging the permissible background and naturalism's explanatory resources."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The background-knowledge objection is recoverable, but prediction and explanatory resources partly shift in function."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the issue a very serious problem is somewhat stronger than the compressed dilemma concerning background information establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Schieber needs only a relative likelihood advantage, not a complete naturalistic explanation.",
+          "decisiveQualification": "Background information still must not entail the disputed observations or be applied asymmetrically."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The background-information dilemma is intelligible, but the claim that added information helps every hypothesis leaves a material bridge."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The move relies mainly on a conceptual assertion about background enrichment without demonstrating its application to each data class."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central comparative framework governing the naturalistic likelihood inference."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it contacts the decisive prediction premise across all three arguments, though not every datum separately."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that richer background makes every hypothesis predict the data and labels naturalism explanatorily impotent.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-languishing-soul-building-c005",
+        "sectionId": "sentient-languishing",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Significant suffering can enable loving virtues, be integrated into an overall good life, and ultimately be defeated, making the relevant suffering data at least as probable on theism as on naturalism.",
+        "sourceSpan": {
+          "startEvent": 478,
+          "endEvent": 621,
+          "excerpt": "date of evil and suffering less surprising on theism than on naturalism I'll be making the more modest claim that it renders the data as probable on theism as on naturalism now I do not intend this presentation to be exhaustive there's so much more that could be said in defense of it nor am i claiming that soul building is the only good or successful theodicy there are others I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Bertuzzi explicitly introduces this as his theodicy and develops it continuously through its stated probabilistic conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-soul-building-account"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-languishing-distribution",
+            "con-horrendous-evil-surprise",
+            "con-pain-biological-orientation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-languishing-soul-building-c005-component-01",
+              "targetMoveId": "con-languishing-distribution",
+              "text": "Whether widespread sentient suffering is less expected on theism given possible soul-building goods.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-languishing-soul-building-c005-component-02",
+              "targetMoveId": "con-horrendous-evil-surprise",
+              "text": "Whether severe suffering can be integrated into and ultimately defeated within a good life.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-languishing-soul-building-c005-component-03",
+              "targetMoveId": "con-pain-biological-orientation",
+              "text": "Whether the biological orientation of sensations is predicted by the proposed theodicy.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move answers the languishing comparison and part of the horrendous-evil comparison with a soul-building account, but it does not answer the distinctive biological-orientation demand."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The modest likelihood conclusion is explicit, but the extension from persons to all relevant sentient beings is unstable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker expressly calls the claim modest and nonexhaustive, though equal likelihood remains underwarranted."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly develops the principal soul-building neutralizer required by the pro route."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "This affirmative theodicy does not materially depend on characterizing an opposing alternative."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive languishing component and a second data class but leaves orientation unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly claims only equal probability and acknowledges that the theodicy presentation is not exhaustive.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-epistemic-chasm-c006",
+        "sectionId": "skeptical-theism",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "The epistemic chasm between humans and divinity leaves us agnostic about the probability of suffering given theism, so even a naturalistic prediction would not establish comparative evidential support for naturalism.",
+        "sourceSpan": {
+          "startEvent": 622,
+          "endEvent": 701,
+          "excerpt": "probability of the data given naturalism and undermine the theodicy have just given does it follow that evil and suffering provides evidence for naturalism over theism no skeptical theism holds that given the epistemic chasm that exists between humans and divinity we should remain agnostic about theism x' ability to predict the data of evil and suffering as an analogy we might"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Bertuzzi announces skeptical theism as his third and final argument and sustains the same position through the closing strategic observation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-skeptical-theist-defeater"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-horrendous-evil-surprise",
+            "con-pain-biological-orientation",
+            "con-languishing-distribution"
+          ],
+          "components": [
+            {
+              "componentId": "pro-epistemic-chasm-c006-component-01",
+              "targetMoveId": "con-horrendous-evil-surprise",
+              "text": "The inference requires an assessable probability of horrendous evil on theism, which the epistemic-chasm claim denies.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-epistemic-chasm-c006-component-02",
+              "targetMoveId": "con-pain-biological-orientation",
+              "text": "The comparative inference requires an assessable theistic likelihood for biologically oriented sensations.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-epistemic-chasm-c006-component-03",
+              "targetMoveId": "con-languishing-distribution",
+              "text": "The comparative inference requires an assessable theistic likelihood for sentient languishing.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly identifies unavailable theistic likelihoods as defeating the comparative inference shared by all three opening arguments and states that naturalistic prediction alone is insufficient."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Agnosticism concerns the probability of the cited suffering data on theism, and the consequence is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The epistemic limitation is explicit, but the categorical no-evidence consequence needs a stronger defense against bounds."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Known divine attributes may still impose comparative likelihood bounds despite unknown reasons.",
+          "decisiveQualification": "Unknown total reasons do not automatically erase every directional constraint supplied by known attributes."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "If the theistic likelihood is wholly unavailable the conclusion follows, but that key conditional remains materially defended by analogy."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly supplies the skeptical-theist defeater identified as a global neutralizer."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move recognizes the comparative demand but does not fully handle the possibility of robust lower-order evidence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the disputed inferential requirement and the claimed defeating consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt states that even naturalistic prediction would not yield evidence if theism's prediction remains unknowable.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-comparative-prediction-standard",
+        "sectionId": "comparative-likelihood-framework",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "For the suffering facts to support naturalism, naturalism need only predict them better than theism does, rather than make them probable in isolation or entail them.",
+        "sourceSpan": {
+          "startEvent": 741,
+          "endEvent": 772,
+          "excerpt": "response to my arguments is an attack on naturalism zhihe bility to predict the three facts around which my arguments are focused but as a quick note I needn't show that naturalism predicts these facts in the sense that it makes them more probable only that it predicts them more than does theism that will suffice so first up the biological utility of pain and pleasure recall my"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Justin Schieber expressly identifies Cameron's first response and then answers its probabilistic standard and compressor analogy.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-comparative-framework"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-comparative-naturalistic-prediction-c004"
+          ],
+          "components": [
+            {
+              "componentId": "con-comparative-prediction-standard-component-01",
+              "targetMoveId": "pro-comparative-naturalistic-prediction-c004",
+              "text": "The objection incorrectly demands that naturalism make the data probable in isolation rather than relatively likelier.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies the disputed evidential standard in Bertuzzi's first response and replaces it with the comparative-likelihood requirement actually needed for evidential support."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The distinction between absolute probability and higher relative likelihood is stated precisely and consistently."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The claimed evidential requirement fits the ordinary likelihood comparison used by the argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Bertuzzi may be challenging any warranted naturalistic likelihood, not demanding probability above one-half.",
+          "decisiveQualification": "His background and explanatory-resource claims still target the basis for the naturalistic likelihood estimate."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The warrant is primarily conceptual and adequately stated, with only the broader background dispute left open."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly defends the governing comparative framework indispensable to the con route."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The correction is fair to the expressed standard, though it does not exhaust the stronger background objection."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it expressly isolates the alleged standard error and states the correct comparative consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt says naturalism need only predict the facts more than theism, not make them probable absolutely.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-background-does-not-entail-data",
+        "sectionId": "comparative-likelihood-framework",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Background commitments to common descent and transgenerational genetic change do not entail the observed flourishing and languishing facts, so those facts remain available for comparative likelihood assessment.",
+        "sourceSpan": {
+          "startEvent": 773,
+          "endEvent": 812,
+          "excerpt": "of complex organisms either is or is the result of transgenerational genetic change but notice that this background knowledge should not be seen to entail the three facts about the flourishing and languishing mentioned in my opening after all if theism is true both common descent and transgenerational the genetic change could be true while it also being true that my three facts"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Schieber acknowledges Bertuzzi's objection to his formulation, corrects it, and reconstructs the flourishing argument in his rebuttal.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-background-discipline"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-comparative-naturalistic-prediction-c004"
+          ],
+          "components": [
+            {
+              "componentId": "con-background-does-not-entail-data-component-01",
+              "targetMoveId": "pro-comparative-naturalistic-prediction-c004",
+              "text": "Whether evolutionary background information improperly includes or entails the observed suffering data.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly answers the background-collapse objection by separating common descent and genetic change from the disputed flourishing and languishing observations."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The background commitments and the observations they do not entail are clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The modal non-entailment claim is supported by the stated compatibility of those commitments with theism."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The objection may concern probabilistic dependence, not strict logical entailment of the data.",
+          "decisiveQualification": "Non-entailment alone does not establish that the background is neutral or independently disciplined."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within subsidiary contact, it strongly addresses the background-discipline bridge supporting the comparative framework."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it expressly addresses the decisive entailment and background-information concern."
+          }
+        },
+        "evidenceBasis": "The excerpt separates common descent and genetic change from the disputed facts and notes their compatibility with theism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-pain-soul-building-mismatch",
+        "sectionId": "pain-pleasure-orientation",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Soul-building theism gives reason to expect pain and pleasure to guide agents toward moral goals, whereas the observed system is deeply biologically oriented and morally random.",
+        "sourceSpan": {
+          "startEvent": 871,
+          "endEvent": 886,
+          "excerpt": "expect pain a pleasure to motivate moral agents toward moral goals like those cameron labels as soul building but that isn't what we see the whole point of this argument is that the systems which govern our experiences of pain and pleasure while clearly deeply oriented toward biological goals also appear morally random and in this light it seems of all theodicies to use against"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The surrounding turn explicitly identifies Cameron's soul-building response and presents Justin's first-person rebuttal to it.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theodicy-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-languishing-soul-building-c005"
+          ],
+          "components": [
+            {
+              "componentId": "con-pain-soul-building-mismatch-component-01",
+              "targetMoveId": "pro-languishing-soul-building-c005",
+              "text": "Whether the soul-building account predicts the observed morally random biological orientation of pain and pleasure.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply tests the offered soul-building rationale against the distinctive pain-and-pleasure data and argues that it predicts moral guidance unlike the observed system."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The expected moral orientation, observed biological orientation, and claimed mismatch are all explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move claims a comparative expectation and appropriately relies on the stated soul-building commitments."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Biologically useful sensations can indirectly support stable agency and later moral development.",
+          "decisiveQualification": "That indirect role does not itself predict the asserted moral randomness or primarily biological tuning."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The internal prediction test is coherent and leaves only a bounded bridge from soul-building to direct moral guidance."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The observed orientation is specifically identified, though its moral randomness and comparative frequency remain lightly documented."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, this directly supports the con claim that the offered theodicy mispredicts the data."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it directly applies the proposed theodicy to the decisive orientation datum and identifies the mismatch."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts soul-building's expected moral motivation with systems deeply oriented toward biological goals.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-soul-building-scope-alternatives",
+        "sectionId": "soul-building-defense",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Human soul-building cannot explain most sentient languishing, and an unlimited God could foster moral transformation through less harmful means such as vivid dreams or visions.",
+        "sourceSpan": {
+          "startEvent": 887,
+          "endEvent": 928,
+          "excerpt": "languishing of specifically humans its complete failure to do so for the vast majority of sentient beings would overwhelm this game in the other direction moreover there are other methods far better methods that God could have used given his unsurpassable empathy mentioned earlier and his unlimited resourcefulness to achieve soul building for example giving persons tragic visions or dreams"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted first-person turn applies Justin's second argument directly to Cameron's stated soul-building theodicy.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theodicy-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-languishing-soul-building-c005"
+          ],
+          "components": [
+            {
+              "componentId": "con-soul-building-scope-alternatives-component-01",
+              "targetMoveId": "pro-languishing-soul-building-c005",
+              "text": "Whether soul-building accounts for nonhuman suffering and whether actual severe harms are necessary means.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move contacts two decisive limitations of the theodicy: its failure to cover most sentient beings and the availability of less harmful transformative means."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Human versus nonhuman scope and the proposed alternative methods are specifically and consistently stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The alternatives are relevant, though describing them as categorically far better compresses possible tradeoffs."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Actual hardship may provide embodied agency, responsibility, and stakes that visions cannot reproduce.",
+          "decisiveQualification": "The defense still must explain why the observed severity and vast nonhuman scope are required."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly attacks the scope and necessity of the principal soul-building account."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The strongest extension is accommodated while its decisive distributional and alternative-means burdens remain identified."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly addresses both scope and necessity components of the proposed soul-building account."
+          }
+        },
+        "evidenceBasis": "The excerpt highlights the account's failure for most sentient beings and proposes visions or dreams as alternatives.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-horrendous-evil-soul-destruction",
+        "sectionId": "horrendous-evil",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Horrendous evils can inflict severe moral injury and destroy rather than build souls, while a perfectly empathic and resourceful God could secure moral growth without permitting them.",
+        "sourceSpan": {
+          "startEvent": 929,
+          "endEvent": 967,
+          "excerpt": "to this argument are not soul building rather they are positively soul destroying persons participating in horrendous evils are as a result of that evil persons who take on board severe moral injury such that it leads them to call into question whether their life is even worth living God being unsurpassable empathic would have full knowledge of acquaintance of the soul crushing"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Justin explicitly turns to horrendous evil and develops the objection through divine empathy, alternative means, and moral justification.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theodicy-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-languishing-soul-building-c005"
+          ],
+          "components": [
+            {
+              "componentId": "con-horrendous-evil-soul-destruction-component-01",
+              "targetMoveId": "pro-languishing-soul-building-c005",
+              "text": "Whether horrendous suffering characteristically builds virtue or instead causes severe moral injury and life destruction.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly contests the theodicy's central beneficial-effect premise by identifying morally destructive outcomes and invoking divine alternatives."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is limited to horrendous evils capable of severe moral injury rather than all suffering."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The modal claim that such evils can destroy rather than build souls fits the examples and qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some persons may eventually transform or integrate even soul-crushing experiences into a good life.",
+          "decisiveQualification": "Possible later transformation does not show that horrendous harm was necessary or initially soul-building."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it strongly attacks whether soul-building predicts the destructive severity of suffering."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it expressly contacts the decisive claim that severe suffering can be integrated into soul-building."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies severe moral injury and describes horrendous evils as soul-destroying rather than soul-building.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-unknown-reasons-tie",
+        "sectionId": "skeptical-theism",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Unknown moral reasons may count against divine permission just as they may count for it, so they do not favor permission and the known comparative reasons retain evidential force.",
+        "sourceSpan": {
+          "startEvent": 968,
+          "endEvent": 1003,
+          "excerpt": "that there may also be good moral reasons beyond our understanding which count against God's permitting them and so without begging the question favor of theism we have no reason at all to think that the pool of unknown reasons as a whole supports the permission of those evils over their prevention in other words the unknown reasons end in a tie and the known reasons which I've"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker explicitly introduces Cameron's third response, skeptical theism, and answers it in a continuous first-person argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-skepticism-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-epistemic-chasm-c006"
+          ],
+          "components": [
+            {
+              "componentId": "con-unknown-reasons-tie-component-01",
+              "targetMoveId": "pro-epistemic-chasm-c006",
+              "text": "Whether unknown divine reasons asymmetrically support permission and thereby cancel known evidence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly argues that unknown reasons may favor prevention as readily as permission, leaving known comparative reasons rather than the unknown pool to decide."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Unknown reasons for and against permission, the resulting tie, and the role of known reasons are explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Symmetry blocks a favorable presumption, though it does not alone establish that known reasons dominate the total likelihood."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Skeptical theism suspends judgment rather than claiming unknown reasons favor divine permission.",
+          "decisiveQualification": "A suspension argument can still challenge whether known reasons are representative of the total reason set."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 71,
+            "rationale": "The symmetry point defeats an asymmetric appeal but does not by itself validate estimates based on known reasons."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, the move directly supports the con bridge limiting skeptical-theist neutralization."
+          },
+          "representationalCharity": {
+            "value": 61,
+            "rationale": "The reply partly treats agnosticism as an appeal to a favorable pool and omits the sampling concern."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it expressly engages the epistemic premise and its claimed evidential consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt argues unknown reasons could oppose permission and therefore cannot be assumed to favor it.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-biological-analogy-challenge-candidate-05",
+        "sectionId": "pain-pleasure-orientation",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "The proposed analogy from the biological role of pain and pleasure does not yield a reliable naturalistic expectation, because alternative assignments of biological and moral roles remain possible and the background knowledge is selectively restricted.",
+        "sourceSpan": {
+          "startEvent": 1004,
+          "endEvent": 1088,
+          "excerpt": "theory other biological systems play biological roles and pain and pleasure play primarily moral roles as far as I can see there's no reason to think this alternative is any less likely on naturalism than Justin's in fact it might even be more likely thus we can put no confidence in Justin's claim about the role of pain and pleasure given naturalism moving on while I'm happy to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "A clear speaker transition introduces Cameron's first-person recap and sustained response to Justin's probabilistic arguments.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-background-and-analogy"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-pain-soul-building-mismatch",
+            "con-pain-biological-orientation",
+            "con-background-does-not-entail-data"
+          ],
+          "components": [
+            {
+              "componentId": "pro-biological-analogy-challenge-candidate-05-component-01",
+              "targetMoveId": "con-pain-soul-building-mismatch",
+              "text": "Whether biological orientation is more expected on naturalism when alternative naturalistic role assignments remain possible.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-biological-analogy-challenge-candidate-05-component-02",
+              "targetMoveId": "con-pain-biological-orientation",
+              "text": "Whether the pain-and-pleasure analogy independently establishes a naturalistic likelihood advantage.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-biological-analogy-challenge-candidate-05-component-03",
+              "targetMoveId": "con-background-does-not-entail-data",
+              "text": "Whether the selected evolutionary background is neutrally and consistently restricted.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests the naturalistic expectation by offering an alternative role assignment and renews the charge that the background restrictions are selective."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The alternative assignment and the limited conclusion that the analogy is unreliable are clearly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move cautiously claims no apparent reason to prefer one assignment, matching its underdetermination argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolutionary selection gives a mechanism favoring biologically useful affective systems over primarily moral ones.",
+          "decisiveQualification": "The challenge must compare mechanism-supported expectations, not merely logically possible role assignments."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it contacts the decisive comparative analogy and background discipline, though its alternative remains schematic."
+          }
+        },
+        "evidenceBasis": "The excerpt offers an alternative naturalistic assignment in which other systems serve biology and affect serves morality.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-horrendous-evil-defeat-candidate-06",
+        "sectionId": "horrendous-evil",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Horrendous evil need not permanently destroy a person's soul because morally significant freedom, possible afterlife development, and the eventual defeat of suffering remain available within a soul-building account.",
+        "sourceSpan": {
+          "startEvent": 1089,
+          "endEvent": 1238,
+          "excerpt": "evidence to support Justin's claim that horrendous evils are actually soul destroying lastly recall that I roughly sketched him a fine-tuning argument from evil might look the number of badness ensembles that are consistent with the fostering of Saints is tiny in comparison to all the kinds of badness ensembles there are naturalism leads us up to chance while if soul building is"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Cameron announces his second argument and systematically addresses Justin's objections concerning each of the three evidential categories.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-soul-building-account"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-horrendous-evil-soul-destruction",
+            "con-soul-building-scope-alternatives",
+            "con-unknown-reasons-tie"
+          ],
+          "components": [
+            {
+              "componentId": "pro-horrendous-evil-defeat-candidate-06-component-01",
+              "targetMoveId": "con-horrendous-evil-soul-destruction",
+              "text": "Whether horrendous evil necessarily destroys souls despite freedom, afterlife development, and eventual defeat.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-horrendous-evil-defeat-candidate-06-component-02",
+              "targetMoveId": "con-soul-building-scope-alternatives",
+              "text": "Whether less harmful means could preserve equivalent freedom and soul-building opportunities.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-horrendous-evil-defeat-candidate-06-component-03",
+              "targetMoveId": "con-unknown-reasons-tie",
+              "text": "Whether unknown reasons leave skeptical-theist agnosticism warranted.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the permanence and destructive-effect component through freedom, afterlife development, and defeat, but it leaves the less-harmful-means demand unanswered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The central modal claim is clear, but defeat, compensation, development, and fine-tuning are compressed into one broad conclusion."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Possibilities of freedom and afterlife recovery do not by themselves warrant the claimed probabilistic fine-tuning conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The objection is that horrendous evil often causes severe injury and is preventable, not that recovery is impossible.",
+          "decisiveQualification": "Possible eventual recovery neither makes the original harm necessary nor predicts its observed incidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly supports the soul-building account against a major destructive-effects objection."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (59 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it reaches the decisive soul-destruction component but omits the independent prevention-alternatives challenge."
+          }
+        },
+        "evidenceBasis": "The excerpt denies actual soul destruction and advances a fine-tuning claim about saint-producing badness ensembles.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-agnosticism-limited-sample-candidate-07",
+        "sectionId": "skeptical-theism",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Skeptical theism does not posit a favorable pool of unknown reasons; it suspends judgment because radically limited and unrepresentative known information cannot warrant confidence about the total probability of suffering on theism.",
+        "sourceSpan": {
+          "startEvent": 1239,
+          "endEvent": 1288,
+          "excerpt": "argument from the skeptical theists agnosticism not good he says that for all we know the pool of unknown reasons might actually vindicate the naturalist so we are justified in using known reasons to assess the probability of evil and suffering given theism first the skeptical theist is not appealing to unknown reasons she is instead saying we just don't have enough information to judge either way we should remain agnostic about"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Cameron explicitly returns to his third argument and uses a population-sampling analogy to answer Justin's tie-breaking proposal.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-skeptical-theist-defeater"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-unknown-reasons-tie"
+          ],
+          "components": [
+            {
+              "componentId": "pro-agnosticism-limited-sample-candidate-07-component-01",
+              "targetMoveId": "con-unknown-reasons-tie",
+              "text": "The tie objection misconstrues skeptical theism as favoring unknown reasons rather than suspending judgment from inadequate sampling.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses the favorable-pool interpretation as mistaken and replaces it with a limited-sample argument for agnosticism about the total theistic likelihood."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between favorable unknown reasons and insufficient representative information is consistently explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Limited sampling warrants caution, though categorical agnosticism requires showing known reasons provide no useful bounds."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Schieber may rely on known directional reasons without claiming they represent the entire unknown pool.",
+          "decisiveQualification": "The sampling challenge still requires a basis for treating known moral information as radically unrepresentative."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly strengthens the skeptical-theist defeater against the tie objection."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it identifies the precise misconstrual and states why the tie response does not defeat agnosticism."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly says skeptical theism appeals to insufficient information rather than favorable unknown reasons.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-afterlife-compensation-insufficient",
+        "sectionId": "soul-building-defense",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Animal afterlife and soul-building narratives do not predict the observed proportions of languishing, while later compensation neither justifies preventable horrendous harm nor removes less harmful transformative alternatives.",
+        "sourceSpan": {
+          "startEvent": 1362,
+          "endEvent": 1432,
+          "excerpt": "about animal heaven can explain the interesting proportions featured in the three main facts about the flourishing and languishing of sentient beings from my opening on this issue Cameron hasn't even broke ground with respect to my comments about how dreams visions and other general forms of religious experience are capable of being morally transformative or soul building Cameron"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Justin explicitly turns to soul-building and develops connected objections to animal heaven, transformative experiences, defeat, compensation, and fine-tuning.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theodicy-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-horrendous-evil-defeat-candidate-06",
+            "pro-languishing-soul-building-c005"
+          ],
+          "components": [
+            {
+              "componentId": "con-afterlife-compensation-insufficient-component-01",
+              "targetMoveId": "pro-horrendous-evil-defeat-candidate-06",
+              "text": "Whether animal afterlife, later defeat, and compensation predict or justify the observed suffering proportions.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-afterlife-compensation-insufficient-component-02",
+              "targetMoveId": "pro-languishing-soul-building-c005",
+              "text": "Whether the theodicy explains the observed distribution of sentient languishing.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move directly answers the afterlife and defeat proposals by separating later benefit from prediction, necessity, justification, and less harmful available means."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Animal scope, observed proportions, compensation, justification, and alternative means are clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move claims insufficiency rather than impossibility, matching its identified unresolved burdens."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Afterlife defeat may integrate suffering into an individual's overall good rather than merely compensate it.",
+          "decisiveQualification": "Integration still must explain necessity, proportional distribution, and the absence of less harmful means."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The distinctions between prediction, compensation, justification, and alternatives are explicit and mutually reinforcing."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly supports the theodicy-limits bridge across scope, proportions, and prevention."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it expressly contacts the decisive distribution, compensation, and alternative-means components."
+          }
+        },
+        "evidenceBasis": "The excerpt says animal heaven does not explain proportions and notes transformative dreams and visions remain unanswered.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-agnostic-theism-relative-likelihood",
+        "sectionId": "skeptical-theism",
+        "side": "con",
+        "speaker": "Justin Schieber",
+        "moveKind": "reply",
+        "proposition": "Even if skeptical theism is agnostic about theism's prediction of evil, naturalism can still receive comparative support by assigning the observed suffering data a higher likelihood.",
+        "sourceSpan": {
+          "startEvent": 1433,
+          "endEvent": 1508,
+          "excerpt": "here Cameron writes skeptical theism holds that we should remain agnostic about theism z' ability to predict the data of evil and suffering that's great but I hope it's clear now though that even if skeptical theism is true with respect to the data skeptical theism performs poorly relative to naturalism which importantly is not agnostic about the data featured in my arguments I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Justin announces a final discussion of skeptical theism and adapts Cameron's sampling analogy into an explicit comparative-likelihood argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-skepticism-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-agnosticism-limited-sample-candidate-07",
+            "pro-epistemic-chasm-c006"
+          ],
+          "components": [
+            {
+              "componentId": "con-agnostic-theism-relative-likelihood-component-01",
+              "targetMoveId": "pro-agnosticism-limited-sample-candidate-07",
+              "text": "Whether agnosticism about theism prevents naturalism from receiving a relative likelihood advantage.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-agnostic-theism-relative-likelihood-component-02",
+              "targetMoveId": "pro-epistemic-chasm-c006",
+              "text": "Whether an unknown theistic likelihood categorically blocks comparative evidential support.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply accepts skeptical-theist agnosticism for argument's sake and argues that naturalism can nevertheless outperform an agnostic theistic assessment in comparative support."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative claim is clear, but performing poorly relative to a known likelihood and unknown likelihood is partly unstable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "A known naturalistic likelihood cannot be shown higher merely because the theistic likelihood is unknown."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Unknown theistic likelihood means the ordering itself is unknown, not that theism receives a middling likelihood.",
+          "decisiveQualification": "Comparative confirmation requires an ordering or defensible bounds, not a score assigned to agnosticism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (57 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly targets whether skeptical theism neutralizes comparative support."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The reply accepts the stated agnosticism but then treats it too much like a determinate inferior likelihood."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it directly contacts the claimed inferential consequence of agnosticism, though its numerical comparison remains compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly grants agnosticism about theism yet claims skeptical theism performs poorly relative to naturalism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-unknown-theistic-likelihood-candidate-001",
+        "sectionId": "comparative-likelihood-framework",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Even if naturalism predicts evil and suffering, that fact does not show that the evidence confirms naturalism over theism when the probability of the same data given theism remains unknown.",
+        "sourceSpan": {
+          "startEvent": 1695,
+          "endEvent": 1729,
+          "excerpt": "evil is likely on naturalism does it therefore follow that the evidence confirms naturalism over theism well if we're agnostic about the probability of evil and suffering given theism that answer is clearly no at best what follows is that naturalism predicts the data and it is unknown whether theism predicts the data Justin's second claim is confused at worst in a non sequitur"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted first-person closing rebuttal is delivered by Cameron Bertuzzi and explicitly defends his skeptical-theist argument against Justin Schieber's objection.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-skeptical-theist-defeater"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-agnostic-theism-relative-likelihood"
+          ],
+          "components": [
+            {
+              "componentId": "pro-unknown-theistic-likelihood-candidate-001-component-01",
+              "targetMoveId": "con-agnostic-theism-relative-likelihood",
+              "text": "The inference from naturalism predicting the data to naturalism being confirmed over a hypothesis with an unknown likelihood.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The move expressly labels the comparative inference a non sequitur and states the consequence that only naturalistic prediction, not superiority over theism, follows."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Known naturalistic prediction, unknown theistic prediction, and the resulting absence of an ordering are explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Given the expressly assumed unknown likelihood, denying a demonstrated comparative ordering is appropriately calibrated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Known divine attributes might supply an upper bound even when the exact theistic likelihood is unknown.",
+          "decisiveQualification": "The targeted argument did not establish such a bound before asserting naturalism's relative advantage."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 95,
+            "rationale": "The reply cleanly distinguishes a known single likelihood from the comparative ordering required for confirmation."
+          },
+          "evidenceWarrant": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (90 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central contact, it directly supplies the skeptical-theist defeater against the final comparative inference."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly isolates the missing likelihood comparison and states exactly what does and does not follow."
+          }
+        },
+        "evidenceBasis": "The excerpt states that naturalism may predict the data while it remains unknown whether theism predicts them.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-joint-soul-building-conclusion-candidate-002",
+        "sectionId": "soul-building-defense",
+        "side": "pro",
+        "speaker": "Cameron Bertuzzi",
+        "moveKind": "reply",
+        "proposition": "Bertuzzi's soul-building arguments, together with his skeptical-theist case for continued agnosticism, are offered jointly as a defense against the probabilistic argument from evil.",
+        "sourceSpan": {
+          "startEvent": 1730,
+          "endEvent": 1740,
+          "excerpt": "my third argument thus remains untouched by Justin in this debate enclosing all three of my arguments are successful the first and second arguments combine to create a powerful case against Justin's probabilistic problem of evil my third argument from sceptical theism has also fared quite well Justin hasn't given the skeptical theas a single reason to abandon her agnosticism I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The closing synthesis uses first-person references to the speaker's three arguments and names Justin as the opponent, consistently identifying Cameron Bertuzzi as the speaker.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-neutralization"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-afterlife-compensation-insufficient",
+            "con-agnostic-theism-relative-likelihood"
+          ],
+          "components": [
+            {
+              "componentId": "pro-joint-soul-building-conclusion-candidate-002-component-01",
+              "targetMoveId": "con-afterlife-compensation-insufficient",
+              "text": "Whether soul-building, afterlife defeat, and compensation predict or justify the observed harms despite alternatives.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-joint-soul-building-conclusion-candidate-002-component-02",
+              "targetMoveId": "con-agnostic-theism-relative-likelihood",
+              "text": "Whether an unknown theistic likelihood can still be comparatively lower than naturalism's likelihood.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The closing synthesis asserts combined success and continued skeptical agnosticism but does not answer the later detailed scope, compensation, or alternative-means objections to soul-building."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The joint-success claim is recoverable, but the basis for combining distinct arguments into a powerful case is unstated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical claim that all arguments succeeded exceeds this closing recap's support and omits remaining objections."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (65 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "The conclusion primarily asserts prior success and nonresponse without supplying new support or addressing later objections."
+          },
+          "relevanceBurden": {
+            "value": 99,
+            "rationale": "Within motion contact, the synthesis expressly claims the combined arguments defeat the probabilistic problem of evil."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The closing synthesis asserts performance but does not develop an interpretation of a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 67,
+            "rationale": "Within relevant nonanswers, it bears on the overall dispute but supplies no new contact with the decisive theodicy objections."
+          }
+        },
+        "evidenceBasis": "The excerpt declares the first two arguments jointly powerful and the skeptical-theist argument untouched.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence remains distinct from the judged moves, response links, relevance, and importance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion remains beyond the locked pro route and its already judged bridges.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified under the strict exclusion rule.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any supposed residual would not change pro burden completion independently of existing judgments."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence remains distinct from the judged moves, response links, relevance, and importance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion remains beyond the locked con route and its already judged bridges.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified under the strict exclusion rule.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any supposed residual would not change con burden completion independently of existing judgments."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "comparative-likelihood-framework",
+        "title": "Comparative Likelihood and Naturalistic Prediction",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-comparative-naturalistic-prediction-c004",
+                "importance": 3,
+                "score": 79
+              },
+              {
+                "moveId": "pro-unknown-theistic-likelihood-candidate-001",
+                "importance": 3,
+                "score": 93
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-comparative-prediction-standard",
+                "importance": 3,
+                "score": 92
+              },
+              {
+                "moveId": "con-background-does-not-entail-data",
+                "importance": 2,
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "pain-pleasure-orientation",
+        "title": "Biological Orientation of Pain and Pleasure",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-biological-analogy-challenge-candidate-05",
+                "importance": 2,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-pain-biological-orientation",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "con-pain-soul-building-mismatch",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "sentient-languishing",
+        "title": "Sentient Flourishing and Languishing",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "pro-languishing-soul-building-c005",
+                "importance": 3,
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-languishing-distribution",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "horrendous-evil",
+        "title": "Horrendous Evil and Divine Prevention",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "pro-horrendous-evil-defeat-candidate-06",
+                "importance": 3,
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-horrendous-evil-surprise",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "con-horrendous-evil-soul-destruction",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "soul-building-defense",
+        "title": "Scope and Necessity of Soul-Building",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "pro-joint-soul-building-conclusion-candidate-002",
+                "importance": 2,
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-soul-building-scope-alternatives",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-afterlife-compensation-insufficient",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "skeptical-theism",
+        "title": "Skeptical Theism and Unknown Reasons",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-epistemic-chasm-c006",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "pro-agnosticism-limited-sample-candidate-07",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-unknown-reasons-tie",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "con-agnostic-theism-relative-likelihood",
+                "importance": 3,
+                "score": 73
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 77.73,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "con": {
+        "weightedSectionMean": 86.61,
+        "burdenCompletionAdjustment": 0,
+        "score": 87
+      }
+    },
+    "winner": "con",
+    "winningMargin": 9
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 19,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
