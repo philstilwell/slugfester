@@ -224,7 +224,18 @@ for (const packetRecord of preparation.artifacts.packets) {
   );
 
   assert.equal(await exists(packet.futurePaths.stagedLedger), false);
-  assert.equal(await exists(packet.futurePaths.productionLedger), false);
+  assert.equal(
+    await exists(packet.futurePaths.productionLedger),
+    packet.productionLedgerBaseline.exists
+  );
+  if (packet.productionLedgerBaseline.exists) {
+    assert.equal(
+      sha256(await readFile(resolve(packet.futurePaths.productionLedger))),
+      packet.productionLedgerBaseline.sha256
+    );
+  } else {
+    assert.equal(packet.productionLedgerBaseline.sha256, null);
+  }
 }
 
 for (const [sourcePath, expectedHash] of Object.entries(

@@ -91,7 +91,16 @@ for (const lock of activation.packetHashes) {
     lock.proposedAdapterSha256
   );
   assert.equal(await exists(lock.stagedLedgerPath), false);
-  assert.equal(await exists(lock.productionLedgerPath), false);
+  assert.equal(
+    await exists(lock.productionLedgerPath),
+    lock.productionLedgerBaseline.exists
+  );
+  if (lock.productionLedgerBaseline.exists) {
+    assert.equal(
+      await fileSha256(lock.productionLedgerPath),
+      lock.productionLedgerBaseline.sha256
+    );
+  }
 }
 
 for (const [toolPath, expectedHash] of Object.entries(

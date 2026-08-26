@@ -137,6 +137,14 @@ for (const record of preparation.artifacts.packets) {
     sha256(adapterBytes) === packet.proposedAdapterSha256,
     `${record.debateNumber}: proposed adapter hash changed`
   );
+  const productionLedgerExists = await exists(packet.futurePaths.productionLedger);
+  assertV4(
+    packet.productionLedgerBaseline?.exists === productionLedgerExists &&
+      (!productionLedgerExists ||
+        (await fileSha256(packet.futurePaths.productionLedger)) ===
+          packet.productionLedgerBaseline.sha256),
+    `${record.debateNumber}: production ledger baseline changed before activation`
+  );
   packetHashes.push({
     debateNumber: record.debateNumber,
     debateId: record.debateId,
@@ -146,7 +154,8 @@ for (const record of preparation.artifacts.packets) {
     stagedLedgerPath: packet.futurePaths.stagedLedger,
     stagedLedgerSha256: packet.proposedAdapterSha256,
     stagedLedgerBytes: Buffer.byteLength(adapterBytes),
-    productionLedgerPath: packet.futurePaths.productionLedger
+    productionLedgerPath: packet.futurePaths.productionLedger,
+    productionLedgerBaseline: packet.productionLedgerBaseline
   });
 }
 assertV4(

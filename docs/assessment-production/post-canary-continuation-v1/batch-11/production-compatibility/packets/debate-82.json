@@ -1,0 +1,2016 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+  "status": "frozen-post-canary-batch-11-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "planningOnly": true,
+  "debateNumber": "82",
+  "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/output-bundle/final-candidates/debate-82.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-11/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-11/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-11/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/ya02MOhQMV8/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "bb4bd463417eba758136779dc2e842fbc271398d0555cbd21ce89560a8d99aa1",
+    "calculatedScoresSha256": "1f7c356a8fd76ab89e3eeef6c71905195805e9e45a3e58f0ceca1971e6d99f26",
+    "finalizationAuditSha256": "91d498c00d5147ddeab1bf6769353fcccffe5548be7ceeff9b17984bbcda9c3a",
+    "renderingAuditSha256": "5155d6bdc4396a6cbea71182fe6cf78435667e2359047d2e1c409f42a354fe6c",
+    "finalCandidateSha256": "8fef6ea9c138a0a1cf942ffcf49d90964b2c7c2cea009fa4601ed8c0305cd897",
+    "eventsPath": ".assessment-cache/captions/ya02MOhQMV8/events.json",
+    "eventsSha256": "38b7235c036bfd356a804c16ffb2d78c94cd5c8f3b3fbfb8b5a40a4a24c141f4",
+    "finalJudgmentSha256": "35617df84be8dea2c270069518558524d6bc0577b9337e2fb82897d8145139c6"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json",
+    "productionLedger": "docs/assessment-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json"
+  },
+  "productionLedgerBaseline": {
+    "exists": false,
+    "sha256": null
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-11-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+    "status": "frozen-post-canary-batch-11-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 11,
+    "debateNumber": "82",
+    "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-11-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "bb4bd463417eba758136779dc2e842fbc271398d0555cbd21ce89560a8d99aa1",
+      "calculatedScoresSha256": "1f7c356a8fd76ab89e3eeef6c71905195805e9e45a3e58f0ceca1971e6d99f26",
+      "finalizationAuditSha256": "91d498c00d5147ddeab1bf6769353fcccffe5548be7ceeff9b17984bbcda9c3a",
+      "renderingAuditSha256": "5155d6bdc4396a6cbea71182fe6cf78435667e2359047d2e1c409f42a354fe6c",
+      "finalCandidateSha256": "8fef6ea9c138a0a1cf942ffcf49d90964b2c7c2cea009fa4601ed8c0305cd897",
+      "eventsPath": ".assessment-cache/captions/ya02MOhQMV8/events.json",
+      "eventsSha256": "38b7235c036bfd356a804c16ffb2d78c94cd5c8f3b3fbfb8b5a40a4a24c141f4",
+      "finalJudgmentSha256": "35617df84be8dea2c270069518558524d6bc0577b9337e2fb82897d8145139c6"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "82",
+      "debateId": "bush-mcallister-moral-anti-realism-realism-2025",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-anti-realist-advantage-rebuttal",
+          "side": "pro",
+          "description": "Establish the anti-realist burden by denying that realism enjoys a defensible common-sense, historical, or semantic presumption and by showing that a substantive anti-realist alternative survives the principal conceptual objections raised against it.",
+          "successCriteria": "The route succeeds if the alleged realist advantages depend on unreliable attribution, contested semantic assumptions, or projection of specialist categories, while anti-realism remains a coherent position with consequences distinguishable from rival relativist accounts.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-no-realist-presumption",
+            "tier": "motion",
+            "description": "Show that common-sense, historical, and semantic considerations do not establish a presumptive advantage for moral realism over anti-realism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-folk-attribution-limits",
+              "tier": "central",
+              "description": "Establish that ordinary or remembered pre-philosophical outlooks cannot reliably be classified using determinate contemporary metaethical categories."
+            },
+            {
+              "bridgeId": "pro-historical-attribution-limits",
+              "tier": "central",
+              "description": "Show that historical convergence claims must overcome projection, translation, source-selection, cultural-contact, and specialist-competence problems."
+            },
+            {
+              "bridgeId": "pro-semantic-coherence-of-alternative",
+              "tier": "central",
+              "description": "Articulate a genuinely metaethical anti-realist alternative whose semantic and practical commitments remain distinct from agent-relative obligation."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-empirical-method-calibration",
+              "tier": "subsidiary",
+              "description": "Specify what surveys, linguistic use, memory, and behavior can establish about moral thought without treating them as direct tests of moral reality."
+            },
+            {
+              "bridgeId": "pro-epistemic-parity",
+              "tier": "subsidiary",
+              "description": "Show that interpretive or epistemic mediation does not uniquely discredit anti-realist positions when comparable access problems arise elsewhere."
+            }
+          ]
+        },
+        {
+          "routeId": "con-realist-presumptive-advantage",
+          "side": "con",
+          "description": "Establish the realist burden by defending common-sense or historical evidence for an objective conception of value and by showing that the proposed anti-realist distinctions do not defeat the resulting realist presumption.",
+          "successCriteria": "The route succeeds if suitably competent pre-philosophical or cross-era sources provide credible evidence of objective-value commitments and if the anti-realist alternative either collapses into a perspectival variant or fails to displace that evidential presumption.",
+          "motionBridge": {
+            "bridgeId": "con-motion-realist-advantage",
+            "tier": "motion",
+            "description": "Show that common-sense, historical, or semantic evidence supplies moral realism with a meaningful presumptive advantage over anti-realism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-competent-common-sense",
+              "tier": "central",
+              "description": "Identify a defensible common-sense evidential population despite the limitations of unreflective street-level surveys and raw response variation."
+            },
+            {
+              "bridgeId": "con-historical-convergence",
+              "tier": "central",
+              "description": "Establish that sufficiently comparable philosophical or intellectual traditions converge on objectively intended value claims despite substantive disagreement."
+            },
+            {
+              "bridgeId": "con-relativist-collapse",
+              "tier": "central",
+              "description": "Show that agent and appraiser relativism share an underlying perspectival structure sufficient to limit the claimed semantic or metaphysical contrast."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-alternative-explanations-of-variation",
+              "tier": "subsidiary",
+              "description": "Account for heterogeneous reports through competence, motivation, ignorance, or other factors that need not undermine an initial realist seeming."
+            },
+            {
+              "bridgeId": "con-first-person-mediation",
+              "tier": "subsidiary",
+              "description": "Explain how an agent's interpretation of external standards bears on the claimed practical separation between relativist positions."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "empirical-semantics-and-metaphysics",
+          "title": "Empirical Semantics and Metaphysical Scope",
+          "weightPercent": 18,
+          "rationale": "The parties must delimit what evidence about linguistic use, psychology, surveys, or behavior can establish about ordinary meaning and whether any such finding bears directly on moral reality."
+        },
+        {
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "title": "Common Sense and Pre-Theoretical Outlooks",
+          "weightPercent": 22,
+          "rationale": "A claimed common-sense advantage depends on identifying competent evidence of pre-theoretical commitments and resolving whether memory, reflection, pragmatic effects, and response variation permit reliable attribution."
+        },
+        {
+          "sectionId": "historical-convergence-and-attribution",
+          "title": "Historical Convergence and Metaethical Attribution",
+          "weightPercent": 26,
+          "rationale": "The historical branch of the motion turns on whether cross-era intellectual traditions provide comparable evidence of objective-value commitments despite projection, translation, source-selection, and cultural-independence concerns."
+        },
+        {
+          "sectionId": "agent-and-appraiser-relativism",
+          "title": "Agent and Appraiser Relativism",
+          "weightPercent": 22,
+          "rationale": "The conceptual viability of the anti-realist alternative depends on whether these forms of relativism differ in semantic, metaphysical, and normative structure or merely redescribe one perspectival position."
+        },
+        {
+          "sectionId": "normative-conflict-and-epistemic-mediation",
+          "title": "Normative Conflict and Epistemic Mediation",
+          "weightPercent": 12,
+          "rationale": "Conflicting standards and first-person interpretation test the practical implications of the relativist distinction and whether access limitations create a distinctive problem for anti-realism."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-empirical-folk-method-tension",
+          "sectionId": "empirical-semantics-and-metaphysics",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "constructive",
+          "proposition": "An empirical metaethical methodology is unstable if it relies on ordinary speakers as evidence about moral language while treating those speakers as confused about the concepts under investigation.",
+          "sourceSpan": {
+            "startEvent": 148,
+            "endEvent": 203,
+            "excerpt": "uh you mentioned something there about methodology that maybe we could start with if you don't mind. Sure. Um you said that of course you're informed by that sort of methological empirical approach uh through psychology to these metaethical issues and you have done a lot of research on what people say about their what they self-report about and in fact um you can say more about"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The surrounding exchange identifies Derek as the questioner addressing Lance directly and presenting the methodological challenge.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "pro-empirical-method-calibration"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive methodological challenge supplies an initial reason to question selective reliance on ordinary speakers; it has no earlier opposing target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The methodological objection is recoverable, although reliance on speakers and treating speakers as confused are somewhat compressed notions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The point is advanced as a methodological question rather than as a demonstrated contradiction, fitting the limited support supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Empirical evidence may concern language use without treating speakers as reliable metaethical theorists.",
+            "decisiveQualification": "The challenge remains only if the methodology actually transfers authority between those distinct evidential roles."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The span states the alleged methodological practice but supplies little specific evidence that the two attitudes are combined inconsistently."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it directly challenges calibration of empirical methods used to attribute ordinary moral concepts."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The objection fairly identifies a possible tension, but the strongest role-differentiated methodology substantially narrows its reach."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "Within constructive moves, it clearly frames a material methodological tension but leaves the alleged inconsistency somewhat compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies empirical psychological research using ordinary self-reports and raises the alleged tension concerning speaker confusion.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-empirical-inquiry-scope",
+          "sectionId": "empirical-semantics-and-metaphysics",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Empirical inquiry can establish what non-philosophers think or mean, but it cannot directly determine whether stance-independent moral facts exist.",
+          "sourceSpan": {
+            "startEvent": 204,
+            "endEvent": 337,
+            "excerpt": "is misguided and that you could go directly to the question the metaphysical questions without looking directly at what people mean. So there there isn't an inconsistency here because when I'm talking about the empirical stuff, I'm only talking about the question what do non- philosophers think or what do moral claims mean? That's a separate question from are there facts of the"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Lance answers Derek's explicit methodological question and develops the distinction continuously until Derek acknowledges it.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-empirical-method-calibration"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-empirical-folk-method-tension"
+            ],
+            "components": [
+              {
+                "componentId": "pro-empirical-inquiry-scope-component-01",
+                "targetMoveId": "con-empirical-folk-method-tension",
+                "text": "Whether empirical evidence about speakers is being mistaken for direct evidence about stance-independent moral facts.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses an equivocation between empirical questions about speakers' thought or meaning and the metaphysical question whether stance-independent facts exist; that distinction defeats the alleged methodological inconsistency."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The reply clearly distinguishes non-philosophers' thought or meaning from the existence of stance-independent moral facts."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The categorical limit applies specifically to direct empirical determination of stance-independent facts and is expressly scoped."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The original challenge may concern reliance on confused speakers even only as evidence of linguistic meaning.",
+            "decisiveQualification": "Evidence about usage need not credit speakers with reliable theoretical analysis of that usage."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it directly specifies the proper evidential scope of empirical metaethical inquiry."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly identifies and resolves the decisive scope confusion underlying the methodological challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly contrasts questions about stance-independent facts with directly empirical questions about what non-philosophers think.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-common-sense-presumption-cost",
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "If realism cannot claim to represent ordinary common sense, it loses a presumptive burden-of-proof advantage rather than direct evidence for its metaphysics.",
+          "sourceSpan": {
+            "startEvent": 354,
+            "endEvent": 379,
+            "excerpt": "presumptive arguments in favor of realism. So this is something that a few people have written about. Neil Sinclair has a great paper. I think it's called facts, values, and presumptions. Um uh and there's a there's a more recent paper looking at certain aspects of our language. One of the the big sort of rhetorical and dialectical feathers in the realist cap is, hey, I've got the common sense default everyday normal view. It's the anti"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Derek's question about what realism would lose by abandoning cognitivist and semantic commitments.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-no-realist-presumption"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-empirical-folk-method-tension"
+            ],
+            "components": [
+              {
+                "componentId": "pro-common-sense-presumption-cost-component-01",
+                "targetMoveId": "con-empirical-folk-method-tension",
+                "text": "What dialectical consequence follows if empirical inquiry fails to establish a determinate ordinary realist outlook.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The move justifies replacing a direct metaphysical demand with the motion-relevant question of presumptive advantage: failure to establish realism as common sense removes a burden-of-proof benefit without proving anti-realism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition sharply distinguishes a presumptive dialectical advantage from direct evidence against realist metaphysics."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The asserted consequence is expressly dialectical and presumptive, matching the cited common-sense argument rather than overstating metaphysical results."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Realism might have independent arguments even if it lacks a common-sense default.",
+            "decisiveQualification": "The move claims only loss of one presumptive advantage, not loss of every realist justification."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly states how failure of common-sense attribution defeats the motion-level claim of a presumptive realist advantage."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "It expressly preserves independent realist evidence and confines its conclusion to the dialectical value of common-sense attribution."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reframe preserves the legitimate evidential issue and states its bounded dialectical consequence with considerable clarity."
+            }
+          },
+          "evidenceBasis": "The excerpt describes the common-sense default as a major realist dialectical advantage and distinguishes that advantage from metaphysical proof.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-informed-prephilosophical-population",
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "Common-sense evidence for realism may be drawn from philosophers' remembered pre-philosophical outlooks rather than from wholly unreflective respondents unfamiliar with metaethical issues.",
+          "sourceSpan": {
+            "startEvent": 383,
+            "endEvent": 442,
+            "excerpt": "So there is common sense and then I think perhaps maybe we should create a new category that says this sort of it should be this pre philosophical common sense. this idea that let's interview and survey philosophers and then ask them what they thought before thinking about philosophy cuz I think even Huer was like yeah when you study a little bit of philos you said this in your"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Derek explicitly develops a proposed alternative category and asks whether it has been recognized in the philosophical literature.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-competent-common-sense"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-common-sense-presumption-cost",
+              "pro-empirical-inquiry-scope"
+            ],
+            "components": [
+              {
+                "componentId": "con-informed-prephilosophical-population-component-01",
+                "targetMoveId": "pro-common-sense-presumption-cost",
+                "text": "Whether a defensible population can still ground a realist common-sense presumption despite problems with unreflective respondents.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-informed-prephilosophical-population-component-02",
+                "targetMoveId": "pro-empirical-inquiry-scope",
+                "text": "Whether empirical inquiry may identify what an informed pre-philosophical population previously believed.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply proposes remembered pre-philosophical outlooks of philosophers as the relevant population, directly attempting to preserve the challenged common-sense presumption."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposed population is clear, but 'pre-philosophical common sense' remains partly unstable between remembered belief and informed competence."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker proposes a possible evidential category rather than asserting that retrospective reports conclusively establish realism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Remembered pre-philosophical outlooks may be reconstructed after philosophical training.",
+            "decisiveQualification": "The proposal needs evidence that retrospective reports preserve rather than recreate earlier commitments."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The population proposal is coherent, but the bridge from later philosophical competence to reliable memory of earlier views is materially undeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly addresses the indispensable realist task of identifying a defensible common-sense evidential population."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The move fairly recognizes the weakness of uninformed polling, though it does not yet address the strongest retrospective objection."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the decisive population problem and offers a concrete replacement, but does not yet establish that retrospective reports are reliable."
+            }
+          },
+          "evidenceBasis": "The excerpt proposes surveying philosophers about their views before studying philosophy and labels this population pre-philosophical common sense.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-variation-alternative-explanations",
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "Variation in reported moral outlooks may reflect incompetence, motivated ignorance, or other human complexities, so street-level surveys need not defeat an individual's initial realist seeming.",
+          "sourceSpan": {
+            "startEvent": 603,
+            "endEvent": 683,
+            "excerpt": "willful ignorance of some sort. they just sort of turn off certain parts. And so if you were ask them uh you have um you know maybe the intellect would ascend but the will is stronger than the intellect and so it'll win out and sort of you know I refuse to acknowledge this or you know human beings are very complex. So so it would it would account for that is to say all this variance"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Derek takes the floor after Lance's methodological discussion and develops several explanations for variance before stating the limited evidential consequence.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-alternative-explanations-of-variation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-common-sense-presumption-cost",
+              "pro-empirical-inquiry-scope"
+            ],
+            "components": [
+              {
+                "componentId": "con-variation-alternative-explanations-component-01",
+                "targetMoveId": "pro-common-sense-presumption-cost",
+                "text": "Whether heterogeneous reports necessarily remove the evidential force of an individual's initial realist seeming.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-variation-alternative-explanations-component-02",
+                "targetMoveId": "pro-empirical-inquiry-scope",
+                "text": "What limited evidential conclusion variation in empirical reports can support.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the variation-based challenge by supplying incompetence, motivation, and ignorance as rival explanations and drawing only the limited conclusion that variation need not defeat an initial seeming."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The limited conclusion is recoverable, though competence and motivated ignorance are used broadly without operational criteria."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents alternative explanations as possibilities that block a decisive inference, matching the speculative support offered."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Variation may genuinely reflect diverse metaethical outlooks rather than ignorance or motivational distortion.",
+            "decisiveQualification": "Merely possible rival explanations do not establish which explanation best fits the observed distribution."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it directly supplies alternative explanations for heterogeneous common-sense reports."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts the decisive issue but offers possibilities rather than a comparative account showing which explanation best fits the variation."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes willful ignorance, motivational conflict, and human complexity to explain variance in reported moral outlooks.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-retrospective-attribution-limits",
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "A pre-theoretical stance on a theoretical metaethical question may be conceptually unstable, and retrospective reports are unreliable because memory can reconstruct or confabulate earlier commitments.",
+          "sourceSpan": {
+            "startEvent": 684,
+            "endEvent": 789,
+            "excerpt": "pre theoretical stance on a theoretical question to me conceptually just doesn't make any sense. Uh but you do have this you have this like epistemic problem. uh and to the the problem is that uh exactly what you said like you know you could ask me what I thought before I started studying any particular philosophical question but I mean one thing that we know from from memory research is how wildly unreliable"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Lance states his own position, develops the memory objection, and then adds structural problems with open-ended and forced-choice surveys.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-folk-attribution-limits"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-informed-prephilosophical-population",
+              "con-variation-alternative-explanations"
+            ],
+            "components": [
+              {
+                "componentId": "pro-retrospective-attribution-limits-component-01",
+                "targetMoveId": "con-informed-prephilosophical-population",
+                "text": "Whether philosophers' retrospective reports can reliably identify determinate pre-philosophical metaethical commitments.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-retrospective-attribution-limits-component-02",
+                "targetMoveId": "con-variation-alternative-explanations",
+                "text": "Whether reports and response variation can be straightforwardly interpreted as evidence of stable earlier commitments.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies conceptual instability and reconstructive memory as reasons the proposed retrospective population cannot satisfy its evidential purpose."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conceptual and epistemic objections are separately recoverable and explicitly limited to retrospective theoretical attribution."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Memory research supports substantial caution, though describing retrospective attribution as broadly unreliable slightly outruns the excerpt's detail."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Carefully designed retrospective questioning might recover broad earlier tendencies despite imperfect episodic memory.",
+            "decisiveQualification": "Such tendencies still may not amount to determinate commitments in contemporary metaethical categories."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The memory objection is strong and explicit; the claim that every pre-theoretical stance on a theoretical question is conceptually incoherent is less fully defended."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Memory research is specifically invoked, but no study or conditions distinguishing reliable from unreliable recall are developed in the excerpt."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It centrally supports the anti-realist burden of showing that remembered pre-philosophical outlooks resist determinate classification."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly attacks both the conceptual status of a pre-theoretical metaethical stance and the reliability of retrospective access."
+            }
+          },
+          "evidenceBasis": "The excerpt calls a pre-theoretical answer to a theoretical question conceptually problematic and invokes reconstructive, unreliable memory.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-language-use-method-dependence",
+          "sectionId": "empirical-semantics-and-metaphysics",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Empirical investigation of moral language presupposes a contestable language-as-use account of meaning rather than a purely external account of linguistic patterns.",
+          "sourceSpan": {
+            "startEvent": 905,
+            "endEvent": 957,
+            "excerpt": "linguistic outputs of their speech patterns. And he likens this to uh Chsky's approach to grammar. And so what we would be looking at are patterns uh speech patterns like we look at what do people generally say within this language. What's the best sort of external account of what's going on whether or not that maps onto any particular psychology that that's going on in anybody's head. Um and so uh that's there are alternative approaches"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The sustained first-person discussion of the dissertation's empirical and metaphilosophical commitments matches Lance Bush's established position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-empirical-method-calibration"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-empirical-folk-method-tension"
+            ],
+            "components": [
+              {
+                "componentId": "pro-language-use-method-dependence-component-01",
+                "targetMoveId": "con-empirical-folk-method-tension",
+                "text": "Whether empirical study of speech can coherently inform moral semantics under an articulated theory of meaning.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the methodological tension by explaining that empirical speech-pattern research operates within a contestable language-as-use framework, rather than functioning as theory-neutral access to meaning."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contrast between language-as-use and external pattern accounts is clear, though the boundary between those descriptions remains compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents method dependence as a philosophical commitment rather than claiming that empirical work uniquely proves the use theory."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "External linguistic patterns may reveal meaning without accepting a strong language-as-use theory.",
+            "decisiveQualification": "The evidential interpretation still depends on some account connecting patterns of use to semantic content."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it materially specifies the theoretical assumptions governing empirical evidence about language."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It directly supplies the missing methodological framework but does not fully compare it with the externalist alternative described."
+            }
+          },
+          "evidenceBasis": "The excerpt discusses speech-pattern evidence, an analogy with approaches to grammar, and whether external patterns map onto speaker psychology.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-cross-tradition-objective-value",
+          "sectionId": "historical-convergence-and-attribution",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "constructive",
+          "proposition": "Historically diverse religious and philosophical traditions often disagreed about substantive norms while sharing an objective conception of value, providing a presumptive historical advantage for realism.",
+          "sourceSpan": {
+            "startEvent": 963,
+            "endEvent": 1058,
+            "excerpt": "look at the whole he wasn't a method metaethicist but if you look at all the traditions throughout the world that they would no matter their disagreement so the riatilian plaintist if you look at religious tradition uh those who believe in the dao the Jews who believe in the law you look at Christians they all held a sort of not he argues who are value objectivism so this would"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker directly addresses Lance and introduces C. S. Lewis's historical convergence case from an explicitly realist perspective.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-historical-convergence"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive historical case advances a central realist bridge by alleging cross-tradition convergence on objective value despite normative disagreement."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The convergence thesis is recoverable, but objective value spans ethics, aesthetics, and religion, and the relevant traditions are broadly grouped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The cited examples make convergence plausible, but broad historical probability exceeds the excerpt's limited comparative documentation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Shared normative language across traditions may not encode contemporary stance-independent moral realism.",
+            "decisiveQualification": "Historical convergence requires translation and category evidence connecting each tradition's claims to objective value in the relevant sense."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central realist historical-convergence bridge and thereby bears strongly on the claimed historical advantage."
+            },
+            "representationalCharity": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "Within constructive moves, it presents a clear historical route and multiple examples, but compresses comparability and independence warrants."
+            }
+          },
+          "evidenceBasis": "The excerpt cites Daoist, Jewish, Christian, Platonist, Aristotelian, and other traditions as sharing value objectivism despite disagreement.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-historical-category-anachronism",
+          "sectionId": "historical-convergence-and-attribution",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Because contemporary metaethical categories are historically recent, projecting them backward risks anachronistically misclassifying earlier thinkers and cultures as realists or anti-realists.",
+          "sourceSpan": {
+            "startEvent": 1059,
+            "endEvent": 1227,
+            "excerpt": "in the past. Now that does not mean I'm saying nobody in the past was a moral realist or a relativist. It does look like some people were. I mean just take the kinds of remarks by like uh what thicus and Plato's Republic or something. It's very hard not to see certain metaethical overtones there that are relevant to and understandable and contemporary uh views. At the same time"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer follows McAllister's direct question and develops Bush's characteristic skepticism about attributing determinate metaethical views.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-historical-attribution-limits"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-cross-tradition-objective-value"
+            ],
+            "components": [
+              {
+                "componentId": "pro-historical-category-anachronism-component-01",
+                "targetMoveId": "con-cross-tradition-objective-value",
+                "text": "Whether historically diverse claims can be classified as instances of the same contemporary realist metaethical category.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies backward projection of recent analytic categories as a defect in the historical-convergence inference while allowing some clear cases."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The risk of anachronistic category projection is clearly stated and expressly qualified by admitting some plausible historical cases."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move asserts a risk rather than universal misclassification and supplies explicit counterexamples and caution."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Some historical texts contain sufficiently explicit commitments to warrant realist classification.",
+            "decisiveQualification": "Local clear cases do not establish broad convergence across unlike traditions and vocabularies."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the indispensable historical-attribution step needed for a broad realist convergence argument."
+            },
+            "representationalCharity": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (95 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly diagnoses the classification premise and states the defeating consequence without claiming that all historical attribution is impossible."
+            }
+          },
+          "evidenceBasis": "The excerpt grants recognizable metaethical overtones in some ancient texts while warning against general backward projection of modern categories.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-recorded-systems-convergence",
+          "sectionId": "historical-convergence-and-attribution",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "Restricting historical evidence to recorded philosophical and intellectual systems still reveals broad convergence toward realist interpretations of value claims despite substantive normative disagreement.",
+          "sourceSpan": {
+            "startEvent": 1240,
+            "endEvent": 1296,
+            "excerpt": "philosophical systems. You see stoicism, Epicurionism. Um and you see this in in the east with uh Hinduism, the Ratah, you see with the Dao, Confucianism. Um that every single one of these systems anyway seemed to be this sort of realist perspective on or assuming some sort of realism with respect to value statements that they weren't just they certainly weren't being subjectivist about"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker responds appreciatively to Lance, then reformulates Lewis's argument from the acknowledged realist side of the exchange.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-historical-convergence"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "pro-historical-category-anachronism"
+            ],
+            "components": [
+              {
+                "componentId": "con-recorded-systems-convergence-component-01",
+                "targetMoveId": "pro-historical-category-anachronism",
+                "text": "Whether recorded philosophical and intellectual systems, rather than undifferentiated populations, exhibit comparable realist commitments.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply narrows the historical evidential demand to recorded systems with articulated value claims, preserving the convergence issue while avoiding attribution to entire populations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The evidential population is narrowed, but 'every single' system and 'realist perspective' remain broad across heterogeneous traditions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The near-universal convergence language substantially outruns a list of traditions without primary documentation or rival interpretation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Recorded systems can use objective-sounding value language without expressing the same stance-independent metaethical thesis.",
+            "decisiveQualification": "Restriction to elite texts improves evidence quality but does not itself establish semantic equivalence across systems."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly advances the central historical-convergence bridge with a more defensible, recorded evidential population."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "The reframe is relevant and justified, but it does not fully answer the remaining translation and category-equivalence challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt lists Stoicism, Epicureanism, Hinduism, Daoism, and Confucianism as recorded systems apparently assuming realism about value.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-cross-cultural-convergence-limits",
+          "sectionId": "historical-convergence-and-attribution",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Translation problems, non-equivalent normative vocabularies, and later cultural contact undermine confident claims that independent traditions converged historically on moral realism.",
+          "sourceSpan": {
+            "startEvent": 1297,
+            "endEvent": 1384,
+            "excerpt": "moral concepts or lex? It's going to depend on the culture. U and I wouldn't I wouldn't even attempt to pronounce the terminology. Uh so I don't know how comfortable I am giving uh specific examples but u you could you could look at papers um from Renatus Bernie Ununis uh and uh he and some other people have a a team of of people doing cross-cultural research today looking at the lexicalization"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker answers the request to assess Lewis's evidence and reiterates Bush's thesis that ordinary people commonly lack metaethical views.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-historical-convergence"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-recorded-systems-convergence",
+              "con-cross-tradition-objective-value"
+            ],
+            "components": [
+              {
+                "componentId": "pro-cross-cultural-convergence-limits-component-01",
+                "targetMoveId": "con-recorded-systems-convergence",
+                "text": "Whether the listed traditions use comparable normative concepts and independently support a shared historical realist interpretation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-cross-cultural-convergence-limits-component-02",
+                "targetMoveId": "con-cross-tradition-objective-value",
+                "text": "Whether broad cross-tradition agreement establishes objective-value convergence despite translation and contact effects.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies translation, lexical non-equivalence, and cultural contact as failures in the convergence inference and states why merely listing traditions cannot establish independent, comparable realist commitments."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The three limitations are separately identifiable and the conclusion is appropriately limited to undermining confident convergence claims."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker explicitly notes discomfort with specific examples and presents the considerations as limits on confidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Specialist textual work might establish local equivalence and independent convergence for particular traditions.",
+            "decisiveQualification": "A set of local successes would still need representative breadth before supporting the universal or broad historical presumption."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly attacks the comparability and independence requirements for historical convergence."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It expressly attacks the decisive comparability and independence demands, though concrete tradition-by-tradition demonstrations are limited."
+            }
+          },
+          "evidenceBasis": "The excerpt discusses culture-dependent moral lexicons, cross-cultural lexicalization research, translation difficulty, and limits on specific examples.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-overlapping-agent-appraiser-roles",
+          "sectionId": "agent-and-appraiser-relativism",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "The distinction between agent and appraiser relativism may be structurally limited because a person can alternate between, and simultaneously occupy, the roles of acting and appraising.",
+          "sourceSpan": {
+            "startEvent": 1658,
+            "endEvent": 1698,
+            "excerpt": "appraiser and some points I will be the agent depending on whether I'm doing an action or not. And if I'm agent most likely I'm going to be also appraising my my taste. And so all that seems to be describing to me is like from whose perspective are we evaluating these things? And that's epistemic more than anything. It's not an onlogical difference. Um, and it doesn't it doesn't seem to really do much for me to to put forth that distinction"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker admits making the omission in his earlier realist teaching video and asks Lance to defend the distinction, identifying Derek McAllister.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-relativist-collapse"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-cross-cultural-convergence-limits"
+            ],
+            "components": [
+              {
+                "componentId": "con-overlapping-agent-appraiser-roles-component-01",
+                "targetMoveId": "pro-cross-cultural-convergence-limits",
+                "text": "Whether perspectival evaluation offers a conceptual route distinct from the preceding historical disagreement.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move begins a new conceptual issue rather than answering the historical limitations; its material is issue-bearing but leaves the legal earlier target's decisive historical demand uncontacted."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The role-overlap claim is clear, but perspective shifts between epistemic standpoint, semantic index, and ontological ground."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Role overlap is established plausibly, but its alleged limitation on the semantic or ontological distinction needs a further bridge."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "One person can occupy both roles while the semantic standards associated with those roles remain distinct.",
+            "decisiveQualification": "Token-level role overlap does not by itself collapse the theories' different truth conditions or normative consequences."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It is relevant to the broader debate's alternative-relativism route but does not answer the selected earlier historical challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that one person acts and appraises, characterizing the remaining difference as perspective and epistemic rather than ontological.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-agent-relativist-conflict",
+          "sectionId": "normative-conflict-and-epistemic-mediation",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Agent relativism generates conflicting obligations when the standards of different agents or cultures authorize incompatible actions and demands.",
+          "sourceSpan": {
+            "startEvent": 1759,
+            "endEvent": 1851,
+            "excerpt": "Uh I'm 100% on the page of realists that criticize that type of relativism. But if you want to try to convert it into a at least somewhat more philosophically resp uh respectful or respectable view um you're going to have uh quite the challenge. So here would be an issue. Uh let's say you're an agent relativist at the individual level and you're acting on your standards and you"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted explanatory turn continues Bush's response and uses wallet-taking and cultural-intervention cases to expose conflicts.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-relativist-collapse"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-overlapping-agent-appraiser-roles"
+            ],
+            "components": [
+              {
+                "componentId": "pro-agent-relativist-conflict-component-01",
+                "targetMoveId": "con-overlapping-agent-appraiser-roles",
+                "text": "Whether role overlap erases the distinctive normative conflicts generated when different agents' standards authorize incompatible demands.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the collapse argument by showing that agent relativism's externally interacting standards generate conflicting obligations, a structural consequence not established merely by noting that people also appraise."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim is explicitly confined to agent relativism and to cases where different standards authorize incompatible actions or demands."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stipulated incompatible standards, conflicting agent-relative obligations follow from the view as characterized."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Agent relativism might specify priority or jurisdiction rules that resolve cross-agent conflicts.",
+            "decisiveQualification": "Such rules would require additional structure not supplied by the simple individual- or culture-relative account under discussion."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly attacks collapse by identifying a distinctive normative structure of agent relativism."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It directly supplies a substantive difference overlooked by the role-overlap argument, though the conflict cases need further formal resolution."
+            }
+          },
+          "evidenceBasis": "The excerpt introduces individual-level agent relativism and signals concrete cases in which acting on different standards creates a challenge.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-appraiser-semantic-contrast",
+          "sectionId": "agent-and-appraiser-relativism",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Appraiser relativism gives moral assertions perspective-indexed descriptive content without imposing the externally generated obligations associated with agent relativism.",
+          "sourceSpan": {
+            "startEvent": 1852,
+            "endEvent": 1914,
+            "excerpt": "that agent relativism has that makes it such a problem. And so when people critique agent relativism, they don't critique it by saying, \"Hey, the semantic thesis is wrong.\" When people make moral claims, they're not attempting to make relative claims. They critique it because of this normative issue that it runs into. But appraiser relativism does not have that issue. So that's"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Bush explicitly contrasts appraiser relativism with the conflict cases he has just developed for agent relativism.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-semantic-coherence-of-alternative"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-overlapping-agent-appraiser-roles"
+            ],
+            "components": [
+              {
+                "componentId": "pro-appraiser-semantic-contrast-component-01",
+                "targetMoveId": "con-overlapping-agent-appraiser-roles",
+                "text": "Whether role overlap eliminates the semantic and normative distinction between agent and appraiser relativism.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies different semantic content and the absence of externally generated obligations as reasons role overlap does not collapse the theories."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Perspective-indexed assertion content and externally generated obligations are clearly separated as distinct theoretical dimensions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Under the definitions developed, appraiser relativism lacks the particular normative conflict attributed to agent relativism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Both theories remain perspectival even if their semantic clauses and practical consequences differ.",
+            "decisiveQualification": "Sharing a perspectival genus does not eliminate a substantive difference in truth conditions or obligations."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "The conceptual contrast is supported by the preceding conflict analysis, though a fully formal semantic account is not given."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central burden of articulating a coherent appraiser-relative alternative distinct from agent relativism."
+            },
+            "representationalCharity": {
+              "value": 93,
+              "rationale": "The reply preserves the shared genus while explaining why the proposed collapse overlooks decisive semantic and normative differences."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly contacts both the semantic and practical dimensions of the collapse claim and states the defeating contrast."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts criticism of agent relativism's normative problem with appraiser relativism's perspective-indexed semantic thesis.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-appraiser-metaethical-status",
+          "sectionId": "agent-and-appraiser-relativism",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Appraiser relativism is a genuine metaethical position with semantic and metaphysical commitments, rather than merely a description of variation among moral practices.",
+          "sourceSpan": {
+            "startEvent": 1957,
+            "endEvent": 2022,
+            "excerpt": "could be an appraiser relativist even if there's one person. There would be no actual descriptive variation. So appraisal relativism ultimately is really just a view about moral semantics and the metaphysical implications of that which puts it squarely in the realm of contemporary analytic metaeththics as a metaethical view because keep in mind that's exactly what error theory"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Bush begins with an explicit clarification and distinguishes descriptive relativism from appraiser relativism's semantic and metaphysical theses.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-semantic-coherence-of-alternative"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-overlapping-agent-appraiser-roles"
+            ],
+            "components": [
+              {
+                "componentId": "pro-appraiser-metaethical-status-component-01",
+                "targetMoveId": "con-overlapping-agent-appraiser-roles",
+                "text": "Whether appraiser relativism is merely a description of varying practices rather than a genuine semantic and metaphysical position.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses the conflation of descriptive variation with appraiser relativism by explaining that the latter can hold even for one person and includes semantic and metaphysical commitments."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move precisely distinguishes descriptive variation from semantic and metaphysical commitments and supplies a clear limiting case."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stated semantic and metaphysical theses, classification as a metaethical position follows without evidential overreach."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Appraiser relativism may still be explanatorily thin even if technically metaethical.",
+            "decisiveQualification": "Explanatory thinness does not reduce a semantic and metaphysical thesis to mere descriptive sociology."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 95,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (95 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly completes a major part of the anti-realist burden to articulate a genuinely metaethical alternative."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "The move answers the strongest classification objection while leaving open separate questions about explanatory value."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly defeats the descriptive-only interpretation through a decisive one-person counterexample and category comparison."
+            }
+          },
+          "evidenceBasis": "The excerpt states that appraiser relativism persists with one person and locates its content in moral semantics and metaphysical implications.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-one-underlying-relativism",
+          "sectionId": "agent-and-appraiser-relativism",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "Even when agent and appraiser relativism are both properly metaethical, they may remain forms of one underlying relativism differentiated chiefly by the perspective from which evaluation occurs.",
+          "sourceSpan": {
+            "startEvent": 2023,
+            "endEvent": 2104,
+            "excerpt": "appraiser versus agent the way I understand it currently anyway. I think it's more having to do although although I acknowledge like I said that it is uh properly understood within that category the way it's been using the way it's been used. I don't I don't see much value in it other than like here's the difference between them. They're both relativism. The only difference between them, it seems to me, is is a perspective"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McAllister explicitly clarifies his earlier wording and develops an extended perspectival analogy before asking whether his interpretation is correct.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-relativist-collapse"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-appraiser-semantic-contrast",
+              "pro-appraiser-metaethical-status",
+              "pro-agent-relativist-conflict"
+            ],
+            "components": [
+              {
+                "componentId": "con-one-underlying-relativism-component-01",
+                "targetMoveId": "pro-appraiser-semantic-contrast",
+                "text": "Whether distinct semantic and normative implementations nevertheless share enough perspective dependence to count as one underlying relativism.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-one-underlying-relativism-component-02",
+                "targetMoveId": "pro-appraiser-metaethical-status",
+                "text": "Whether recognizing appraiser relativism as properly metaethical answers the proposed underlying structural similarity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-one-underlying-relativism-component-03",
+                "targetMoveId": "pro-agent-relativist-conflict",
+                "text": "Whether agent relativism's distinctive conflict consequences prevent a broader perspectival classification.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply concedes appraiser relativism's proper metaethical status and contacts the semantic contrast by proposing a common perspectival genus, but it does not answer the distinctive normative-conflict consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The concessive thesis is recoverable, but 'perspective' remains unstable between semantic index, evaluator role, and epistemic access."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker marks the interpretation as provisional, but the claim of only one relevant difference exceeds the developed analysis."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Theories can share a relativist genus while differing substantively in truth conditions, metaphysics, and obligations.",
+            "decisiveQualification": "A common perspectival feature establishes taxonomy, not theoretical collapse or equivalence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The perspectival analogy supports similarity, yet no semantic or metaphysical analysis shows the stated contrasts are theoretically unimportant."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central realist burden of collapsing the proposed alternatives into one underlying relativism."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive common-structure issue but only partially addresses the semantic, metaphysical, and normative differences supporting the distinction."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly grants proper metaethical classification while arguing that both positions are relativisms differentiated mainly by perspective.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-external-standards-first-person-mediation",
+          "sectionId": "normative-conflict-and-epistemic-mediation",
+          "side": "con",
+          "speaker": "Derek McAllister",
+          "moveKind": "reply",
+          "proposition": "External cultural standards can bind an agent only as the agent understands those standards, so first-person epistemic mediation restores a structural similarity between agent and appraiser relativism.",
+          "sourceSpan": {
+            "startEvent": 2183,
+            "endEvent": 2219,
+            "excerpt": "like in this solopistic scenario. Now he only has to be bound let's say by other cultures moral codes and moral principles based on how he understands them. So that would still be from his own perspective. So that would be again I think that may may be that collapse that I was referring to the idea that he's the appraiser of so in so far as he understands them this specific way"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McAllister acknowledges Bush's explanation and then introduces a distinct epistemic route to his continuing collapse argument.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-first-person-mediation"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-appraiser-semantic-contrast",
+              "pro-appraiser-metaethical-status",
+              "pro-agent-relativist-conflict"
+            ],
+            "components": [
+              {
+                "componentId": "con-external-standards-first-person-mediation-component-01",
+                "targetMoveId": "pro-appraiser-semantic-contrast",
+                "text": "Whether external standards create a practical distinction once an agent can act only through a first-person understanding of them.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-external-standards-first-person-mediation-component-02",
+                "targetMoveId": "pro-appraiser-metaethical-status",
+                "text": "Whether epistemic mediation bears on the claimed semantic or metaphysical distinction.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-external-standards-first-person-mediation-component-03",
+                "targetMoveId": "pro-agent-relativist-conflict",
+                "text": "Whether externally generated conflicting obligations remain distinct despite the agent's mediated access.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the practical contrast by arguing that external standards reach the agent through first-person interpretation, but it does not contact the independent metaethical-status argument."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The epistemic point is clear, though 'from his own perspective' risks sliding between access to a standard and the standard's source."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "First-person mediation is plausible, but the claimed collapse requires more than the acknowledged epistemic access condition."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An externally sourced standard can remain external even though an agent learns or interprets it fallibly.",
+            "decisiveQualification": "Epistemic mediation does not transform the truth-maker or normative source into the agent's own perspective."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (64 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it directly explains how first-person interpretation bears on external agent-relative standards."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive practical component and one conflict component, while leaving the semantic-metaphysical classification component unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that an agent is bound by other cultures' standards only as understood and treats that mediation as a route to collapse.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-epistemic-mediation-parity",
+          "sectionId": "normative-conflict-and-epistemic-mediation",
+          "side": "pro",
+          "speaker": "Lance Bush",
+          "moveKind": "reply",
+          "proposition": "Epistemic mediation is not distinctive to agent relativism and does not make it false, because moral realist views face comparable limitations on access to relevant facts or standards.",
+          "sourceSpan": {
+            "startEvent": 2220,
+            "endEvent": 2302,
+            "excerpt": "direct access to them some types of moral realism are going to get around this they may claim to be directly acquainted with what the moral facts are or they might claim that they're self-evident so they wouldn't have an epistemic problem u but one thing to say about that is uh if agent relativists were correct then you would just have that problem it wouldn't make a position false"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Bush immediately rejects the proposed distinctive problem, compares realism's epistemic access, and warns against consequence-based rejection.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-epistemic-parity"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-external-standards-first-person-mediation",
+              "con-one-underlying-relativism"
+            ],
+            "components": [
+              {
+                "componentId": "pro-epistemic-mediation-parity-component-01",
+                "targetMoveId": "con-external-standards-first-person-mediation",
+                "text": "Whether first-person epistemic access uniquely collapses agent relativism into appraiser relativism or otherwise counts against its truth.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-epistemic-mediation-parity-component-02",
+                "targetMoveId": "con-one-underlying-relativism",
+                "text": "Whether generic perspective dependence eliminates the semantic and normative distinction between the positions.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses the inference's failure by separating epistemic access from truth and showing that comparable access limitations can arise for realism; therefore mediation is neither distinctive nor a collapse argument."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The reply clearly separates truth, epistemic access, and comparative distinctiveness, while expressly allowing realist exceptions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The parity claim is qualified because some realist views invoke acquaintance or self-evidence, and the core non sequitur is firmly supported."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Some realist theories claim direct acquaintance or self-evident access and therefore avoid the parity problem.",
+            "decisiveQualification": "Even where parity fails, mediated access still does not establish that agent relativism is false or identical to appraiser relativism."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The distinction between an epistemic problem and falsity or theoretical identity is explicit and defeats the central inference."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "Concrete realist access alternatives and the general parity comparison are supplied, though the range of realist theories is not exhaustive."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary tier, it directly supports epistemic parity by showing that mediated access is not uniquely anti-realist."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (95 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly identifies the access-versus-truth error and directly supplies the parity consequence that defeats the proposed inference."
+            }
+          },
+          "evidenceBasis": "The excerpt compares realist access problems, grants direct-acquaintance and self-evidence exceptions, and denies that mediation makes a view false.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence survives the strict exclusion rule beyond effects already captured in move judgments and burden relevance.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was established.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not alter burden completion independently of scored moves."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence survives the strict exclusion rule beyond effects already captured in move judgments and burden relevance.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was established.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not alter burden completion independently of scored moves."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "empirical-semantics-and-metaphysics",
+          "title": "Empirical Semantics and Metaphysical Scope",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 85,
+              "moves": [
+                {
+                  "moveId": "pro-empirical-inquiry-scope",
+                  "importance": 2,
+                  "score": 88
+                },
+                {
+                  "moveId": "pro-language-use-method-dependence",
+                  "importance": 2,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 74,
+              "moves": [
+                {
+                  "moveId": "con-empirical-folk-method-tension",
+                  "importance": 2,
+                  "score": 74
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "common-sense-and-pretheoretical-outlooks",
+          "title": "Common Sense and Pre-Theoretical Outlooks",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "pro-common-sense-presumption-cost",
+                  "importance": 3,
+                  "score": 93
+                },
+                {
+                  "moveId": "pro-retrospective-attribution-limits",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-informed-prephilosophical-population",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "con-variation-alternative-explanations",
+                  "importance": 2,
+                  "score": 77
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "historical-convergence-and-attribution",
+          "title": "Historical Convergence and Metaethical Attribution",
+          "weightPercent": 26,
+          "sides": {
+            "pro": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "pro-historical-category-anachronism",
+                  "importance": 3,
+                  "score": 91
+                },
+                {
+                  "moveId": "pro-cross-cultural-convergence-limits",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            },
+            "con": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "con-cross-tradition-objective-value",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-recorded-systems-convergence",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "agent-and-appraiser-relativism",
+          "title": "Agent and Appraiser Relativism",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 93,
+              "moves": [
+                {
+                  "moveId": "pro-appraiser-semantic-contrast",
+                  "importance": 3,
+                  "score": 92
+                },
+                {
+                  "moveId": "pro-appraiser-metaethical-status",
+                  "importance": 3,
+                  "score": 93
+                }
+              ]
+            },
+            "con": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "con-overlapping-agent-appraiser-roles",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-one-underlying-relativism",
+                  "importance": 3,
+                  "score": 75
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "normative-conflict-and-epistemic-mediation",
+          "title": "Normative Conflict and Epistemic Mediation",
+          "weightPercent": 12,
+          "sides": {
+            "pro": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "pro-agent-relativist-conflict",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "pro-epistemic-mediation-parity",
+                  "importance": 2,
+                  "score": 90
+                }
+              ]
+            },
+            "con": {
+              "score": 70,
+              "moves": [
+                {
+                  "moveId": "con-external-standards-first-person-mediation",
+                  "importance": 2,
+                  "score": 70
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 89.64,
+          "burdenCompletionAdjustment": 0,
+          "score": 90
+        },
+        "con": {
+          "weightedSectionMean": 76.1,
+          "burdenCompletionAdjustment": 0,
+          "score": 76
+        }
+      },
+      "winner": "pro",
+      "winningMargin": 14
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 18,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 108560,
+  "proposedAdapterSha256": "adc20cfe259f5526ceb9a83c067316f73fa38c885784009e96cecc5b91510536",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "82",
+    "sections": 5,
+    "moves": 18,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-11-single-deterministic-score-pass",
+    "adapterSha256": "adc20cfe259f5526ceb9a83c067316f73fa38c885784009e96cecc5b91510536",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

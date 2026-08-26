@@ -248,6 +248,13 @@ for (const debateNumber of POST_CANARY_BATCH_11_COMPATIBILITY_ORDER) {
     `${paths.stagedLedgerRoot}/${finalLedgerDebate.debateId}.json`;
   const productionLedgerPath =
     `docs/assessment-ledgers/${finalLedgerDebate.debateId}.json`;
+  const productionLedgerExists = await exists(productionLedgerPath);
+  const productionLedgerBaseline = {
+    exists: productionLedgerExists,
+    sha256: productionLedgerExists
+      ? await fileSha256(productionLedgerPath)
+      : null
+  };
   const candidateBytes = await readFile(resolve(candidatePath));
   const candidate = JSON.parse(candidateBytes);
   const eventsPath = input.sourcePacket.sourceChain.eventsPath;
@@ -299,6 +306,7 @@ for (const debateNumber of POST_CANARY_BATCH_11_COMPATIBILITY_ORDER) {
       stagedLedger: stagedLedgerPath,
       productionLedger: productionLedgerPath
     },
+    productionLedgerBaseline,
     proposedAdapterExactOutput: adapter,
     proposedAdapterBytes: Buffer.byteLength(adapterBytes),
     proposedAdapterSha256: sha256(adapterBytes),
@@ -325,6 +333,7 @@ for (const debateNumber of POST_CANARY_BATCH_11_COMPATIBILITY_ORDER) {
     eventsSha256: sourceLocks.eventsSha256,
     stagedLedgerPath,
     productionLedgerPath,
+    productionLedgerBaseline,
     proposedAdapterBytes: Buffer.byteLength(adapterBytes),
     proposedAdapterSha256: sha256(adapterBytes),
     sections: validation.sections,
@@ -393,7 +402,10 @@ const frozenSourcePaths = [
     ...staticSourcePaths,
     ...packetRecords.flatMap((record) => [
       record.candidatePath,
-      record.eventsPath
+      record.eventsPath,
+      ...(record.productionLedgerBaseline.exists
+        ? [record.productionLedgerPath]
+        : [])
     ])
   ])
 ].sort();
