@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-header-parity-recovery-6-failure-diagnosis",
+  "status": "preserved-batch-10-header-parity-recovery-6-redirect-then-http-403-stop-diagnosed",
+  "batchNumber": 10,
+  "authenticatedArtifacts": {
+    "plan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-header-parity-recovery-6/correction-plan.json",
+      "sha256": "17778d64691c54052fac590d87efd3763911010fc6c73ea4c5f94c7c2f9a1a29"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-header-parity-recovery-6/execution-activation.json",
+      "sha256": "b58f0012fb0ea06c0b51fc2e721d811eaf8f4bf284e674864588a9b0baeb55b8"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-header-parity-recovery-6/execution.json",
+      "sha256": "96929aa0e034805751d04ad64dd4d8c675bfe4dd4e886dc2d7a78088f6fbc5ec"
+    }
+  },
+  "diagnosis": {
+    "category": "header-parity-reached-one-googlevideo-redirect-before-http-403",
+    "plainEnglish": "Adding yt-dlp's four standard request headers allowed Debate 123's first planned range request to reach one Google Video redirect. The redirected Google Video host then returned HTTP 403 with no media bytes and no further redirect.",
+    "exactUnderlyingCauseEstablished": false,
+    "redirectCookieRequired": false,
+    "redirectSetCookieHeadersObserved": 0,
+    "safeInference": "The four standard request headers changed the route but did not satisfy the redirected media host. Current official yt-dlp guidance identifies Proof-of-Origin token enforcement as a plausible cause of Google Video HTTP 403 responses, but the preserved response alone does not prove that cause.",
+    "finalHttp206Reached": false,
+    "mediaBytesReceived": 0
+  },
+  "executionAudit": {
+    "attempts": 1,
+    "freshUrlResolutions": 1,
+    "logicalByteRangesRequested": 1,
+    "manualHttpRequests": 2,
+    "requestHeaderFieldsPerRequest": 4,
+    "firstRange": "0-8388607",
+    "httpStatuses": [302, 403],
+    "redirectsFollowed": 1,
+    "finalHttp206Responses": 0,
+    "repeatedByteRanges": 0,
+    "automaticRetries": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "localEvidence": [
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.range-000.hop-0.headers.txt",
+      "bytes": 385,
+      "sha256": "11eed29f2c03e7f1e002e32bb6d4f223a8c1a96b1806d8b9d3cb6c2989484102",
+      "httpStatus": 302,
+      "redirectLocations": 1,
+      "setCookieHeaders": 0
+    },
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.range-000.hop-1.headers.txt",
+      "bytes": 281,
+      "sha256": "c701d343d822c9ca55f3f7d6316957d7d6017e03afc492b0e8b5544902a45045",
+      "httpStatus": 403,
+      "redirectLocations": 0,
+      "setCookieHeaders": 0
+    },
+    {
+      "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.m4a",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "officialTechnicalReferences": [
+    {
+      "url": "https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide",
+      "finding": "Current yt-dlp guidance states that missing Proof-of-Origin tokens can cause Google Video HTTP 403 responses and recommends a token-provider plugin."
+    },
+    {
+      "url": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19",
+      "finding": "The current official stable release is 2026.08.19; the locally installed package is 2026.03.17."
+    }
+  ],
+  "externalRepositorySecurityGate": {
+    "candidate": "https://github.com/Brainicism/bgutil-ytdlp-pot-provider",
+    "scanner": "https://github.com/philstilwell/SkillSpector",
+    "scannerCommit": "a68496dc9220c78c3daa13cfb2f18036f1a79494",
+    "scannerVersion": "2.3.11",
+    "staticOnly": true,
+    "llmAnalysisUsed": false,
+    "reportSha256": "ba6536feb0faf51dfc3c88eb4388d9bca0e17470b374bf263992cb9bb7fab303",
+    "componentsScanned": 28,
+    "componentsTotal": 28,
+    "findingsAfterFiltering": 49,
+    "riskScore": 100,
+    "riskSeverity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "installed": false,
+    "executed": false,
+    "disposition": "rejected-by-required-security-gate"
+  },
+  "authorization": {
+    "instruction": "Understood. Continue at your discretion.",
+    "oneShotCorrectionConsumed": true,
+    "automaticRetriesAuthorized": false,
+    "sourceRecoveryCostCapUsd": 0,
+    "sourceRecoveryCostUsd": 0,
+    "sequentialTranscriptionEstimateUsd": 0.1308768,
+    "sequentialTranscriptionMaximumUsd": 1,
+    "transcriptionStarted": false
+  },
+  "disposition": {
+    "batch10Blocked": true,
+    "debates147And130NotAttemptedInThisCorrection": true,
+    "partialOutputReusable": false,
+    "requiredAction": "preserve-failed-correction-and-reject-unsafe-plugin-installation",
+    "safeNextCandidate": "checksum-verified-official-yt-dlp-2026.08.19-standalone-one-shot-transport",
+    "directIncrementalCostUsd": 0
+  }
+}
