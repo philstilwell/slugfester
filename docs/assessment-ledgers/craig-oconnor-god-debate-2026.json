@@ -1,483 +1,1935 @@
 {
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+  "status": "frozen-post-canary-batch-11-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "debateNumber": "01",
   "debateId": "craig-oconnor-god-debate-2026",
   "model": "5.6 Sol",
   "rubric": "Slugfester Reassessment Rubric v2",
-  "source": {
-    "primary": "English auto-generated YouTube captions for TAW6-_L4z9M",
-    "crossCheck": "Publicly visible Panpsycast Episode 158 transcript excerpt and episode metadata"
+  "scoreProtocolId": "assessment-production-post-canary-batch-11-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "bb4bd463417eba758136779dc2e842fbc271398d0555cbd21ce89560a8d99aa1",
+    "calculatedScoresSha256": "1f7c356a8fd76ab89e3eeef6c71905195805e9e45a3e58f0ceca1971e6d99f26",
+    "finalizationAuditSha256": "91d498c00d5147ddeab1bf6769353fcccffe5548be7ceeff9b17984bbcda9c3a",
+    "renderingAuditSha256": "5155d6bdc4396a6cbea71182fe6cf78435667e2359047d2e1c409f42a354fe6c",
+    "finalCandidateSha256": "ca9ca01e0698fdd1a567557420f86e2a6d98aefcb97576632aefb1044d481abf",
+    "eventsPath": ".assessment-cache/captions/TAW6-_L4z9M/events.json",
+    "eventsSha256": "72d9e76fd38774ab6721b8f5b0dcd3ce64f59c9d57f2ce06a6dcee4b1a0f5195",
+    "finalJudgmentSha256": "7421457aae32fc05fee9f725ae8c552aa7a54550c1ebc0fcba9d9f4ffddff20f"
   },
-  "sections": [
-    {
-      "title": "Cumulative case and opening burden",
-      "centrality": 3,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-cumulative-case",
-              "dimensions": {
-                "logicalCoherence": 78,
-                "evidenceWarrant": 70,
-                "responsiveness": 78,
-                "relevanceBurden": 83,
-                "precisionClarity": 78,
-                "calibrationCharity": 68
-              },
-              "score": 76
-            },
-            {
-              "id": "pro-resurrection-case",
-              "dimensions": {
-                "logicalCoherence": 76,
-                "evidenceWarrant": 62,
-                "responsiveness": 70,
-                "relevanceBurden": 76,
-                "precisionClarity": 77,
-                "calibrationCharity": 63
-              },
-              "score": 71
-            }
-          ],
-          "coverage": 73,
-          "burdenProgress": 76,
-          "coherence": 76,
-          "moveMean": 73.5,
-          "score": 74
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "01",
+    "debateId": "craig-oconnor-god-debate-2026",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-cumulative-christian-theism-route",
+        "side": "pro",
+        "description": "Establish Christian theism through a cumulative case combining a finite cosmic beginning, cosmic fine-tuning, moral and experiential grounds, the resurrection, and an account of suffering compatible with divine goodness.",
+        "successCriteria": "This route succeeds if the supporting considerations jointly warrant belief in God and Christian theism, while the proposed reasons for permitting suffering prevent animal pain and other evil from defeating that cumulative inference.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-cumulative-warrant",
+          "tier": "motion",
+          "description": "The combined public and experiential grounds must warrant the conclusion that God exists and that Christian theism remains credible."
         },
-        "con": {
-          "moves": [
+        "centralBridges": [
+          {
+            "bridgeId": "pro-cosmic-beginning",
+            "tier": "central",
+            "description": "The philosophical and scientific case must support a finite cosmic past requiring a transcendent cause."
+          },
+          {
+            "bridgeId": "pro-fine-tuning-selection",
+            "tier": "central",
+            "description": "Life-permitting constants must be sufficiently improbable by accident for intelligent selection to provide the better explanation."
+          },
+          {
+            "bridgeId": "pro-christian-identification",
+            "tier": "central",
+            "description": "Resurrection evidence and personal experience must connect generic theistic explanation to specifically Christian belief."
+          },
+          {
+            "bridgeId": "pro-suffering-compatibility",
+            "tier": "central",
+            "description": "Divine goodness and power must remain compatible with evolutionary animal suffering and the wider distribution of evil."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-time-metaphysics",
+            "tier": "subsidiary",
+            "description": "The account of actual infinity and temporal becoming must sustain the claimed asymmetry between a beginningless past and an endless future."
+          },
+          {
+            "bridgeId": "pro-skeptical-theism",
+            "tier": "subsidiary",
+            "description": "Human limits concerning feasible worlds and greater goods must justify withholding the inference that apparently gratuitous suffering is genuinely gratuitous."
+          }
+        ]
+      },
+      {
+        "routeId": "con-evidential-undercutting-route",
+        "side": "con",
+        "description": "Withhold assent from Christian theism by challenging the finite-past and fine-tuning inferences and by arguing that animal suffering, its distribution, and divine involvement are evidence against an all-loving Christian God.",
+        "successCriteria": "This route succeeds if the cosmological or fine-tuning case does not establish its required divine conclusion, or if suffering remains materially less expected under the personally concerned and morally perfect God asserted by Christian theism.",
+        "motionBridge": {
+          "bridgeId": "con-motion-insufficient-warrant",
+          "tier": "motion",
+          "description": "Unresolved inferential gaps and counterevidence must leave the existence of the Christian God insufficiently warranted."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-cosmological-undercutting",
+            "tier": "central",
+            "description": "Scientific uncertainty and disputes about actual infinity, temporal units, and theories of time must undercut the claim that the universe began."
+          },
+          {
+            "bridgeId": "con-fine-tuning-undercutting",
+            "tier": "central",
+            "description": "The fine-tuning inference must fail to show that divine intention explains the life-permitting constants and their hostile background conditions."
+          },
+          {
+            "bridgeId": "con-suffering-evidence",
+            "tier": "central",
+            "description": "Evolutionary animal suffering and its apparently arbitrary distribution must count as evidence against an all-loving and powerful God."
+          },
+          {
+            "bridgeId": "con-christian-specificity",
+            "tier": "central",
+            "description": "The moral character and saving concern attributed to the Christian God must make suffering relevant beyond the existence of an indifferent first cause."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-feasible-alternatives",
+            "tier": "subsidiary",
+            "description": "Coherent alternatives involving non-sentient animals or different creative means must challenge claims that suffering-producing conditions were necessary."
+          },
+          {
+            "bridgeId": "con-moral-intuition-consistency",
+            "tier": "subsidiary",
+            "description": "Appeals to limited moral understanding must remain consistent with reliance on human moral awareness in arguments for objective morality."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "cosmic-beginning-and-time",
+        "title": "Cosmic Beginning, Actual Infinity, and the Nature of Time",
+        "weightPercent": 30,
+        "rationale": "This issue contains the principal clash over whether philosophy, astrophysics, and thermodynamics establish a finite cosmic past, including the actual-infinity and temporal-asymmetry premises needed by the cosmological argument."
+      },
+      {
+        "sectionId": "fine-tuning-and-intelligent-selection",
+        "title": "Cosmic Fine-Tuning and Intelligent Selection",
+        "weightPercent": 15,
+        "rationale": "This issue tests whether life-permitting constants favor intentional selection over accident or brute necessity and whether the background conditions for matter fit the proposed creative intention."
+      },
+      {
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "title": "Animal Suffering, Theodicy, and Feasible Worlds",
+        "weightPercent": 30,
+        "rationale": "This issue addresses whether evolutionary animal suffering is necessary for salvific goods, whether less harmful worlds are feasible, and whether limited human knowledge blocks judgments of gratuitous evil."
+      },
+      {
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "title": "Divine Goodness, Moral Knowledge, and the Distribution of Evil",
+        "weightPercent": 15,
+        "rationale": "This issue connects suffering's severity and distribution to the attributes of the Christian God and tests whether skeptical appeals about divine reasons remain consistent with moral arguments and scriptural claims."
+      },
+      {
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "title": "Christian Identification, Experience, and Cumulative Warrant",
+        "weightPercent": 10,
+        "rationale": "This issue examines the steps from generic creator arguments to Christian theism through resurrection and inward experience, together with the objection that evidence against a saving, personally concerned God remains relevant to the cumulative case."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-resurrection-historical-inference",
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "The resurrection hypothesis best explains four widely accepted historical facts concerning Jesus and thereby supports specifically Christian theism.",
+        "sourceSpan": {
+          "startEvent": 155,
+          "endEvent": 215,
+          "excerpt": "son of man prophesied by the prophet Daniel. And I think that God vindicated those radical personal claims by which he put himself in God's place by raising him from the dead. Now, I realize that most people think that the resurrection of Jesus is something you just believe in by faith or not. But, in fact, there are four well-established historical facts concerning the fate of"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig continues the same uninterrupted answer in the first person, explicitly moving from generic theism to his reasons for Christian theism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-christian-identification"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive move offering resurrection evidence as a bridge from generic theism to specifically Christian belief; it has no earlier opposing target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The best-explanation claim and its four-fact basis are recoverable, though the excerpt leaves the relevant comparison class implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move confidently asserts a best explanation while the supplied evidence only introduces, rather than defends, the four facts and alternatives."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "If the facts are established and resurrection best explains them, the Christian inference is coherent, with the comparative bridge compressed."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly addresses the central requirement of connecting theism to specifically Christian belief through resurrection."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The selected span presents the positive historical case without materially engaging a live alternative interpretation."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it directly advances the Christian-identification bridge through a recognizable historical inference."
+          }
+        },
+        "evidenceBasis": "Craig says God vindicated Jesus by raising him and introduces four well-established historical facts as the resurrection hypothesis's basis.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-experiential-proper-basicality",
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "Personal experience of God can rationally ground Christian belief as properly basic without dependence on philosophical or historical arguments.",
+        "sourceSpan": {
+          "startEvent": 216,
+          "endEvent": 246,
+          "excerpt": "says, \"Have you asked me how I know he lives? He lives within my heart.\" And I think that that is a perfectly valid way. So, even though I am an enthusiastic proponent of evidentiary exterior arguments for the truth of Christian faith, I don't think they're necessary. I think that it's perfectly rational to take belief in Christianity [clears throat] as a properly basic belief grounded in our personal experience of God"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted speaker explicitly contrasts this interior route with the exterior case he has just completed, preserving clear attribution to Craig.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-christian-identification"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies an independent experiential route to rational Christian belief and therefore has no earlier opposing target to answer."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly distinguishes experiential grounding from evidentiary arguments and explicitly states that the latter are unnecessary."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "It claims that experience can rationally ground belief, not that every claimed experience establishes Christianity for all observers."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It directly supports Christian identification, although it functions principally as personal rather than publicly transferable warrant."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No opposing interpretation receives enough treatment in this constructive span to support a meaningful charity test."
+          },
+          "responsiveness": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig explicitly calls Christian belief properly basic when grounded in personal experience of God and says exterior arguments are not necessary.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-big-bang-not-first-moment",
+        "sectionId": "cosmic-beginning-and-time",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Big Bang evidence establishes an early hot, dense state but does not establish an absolute first moment, leaving the universe's alleged finite beginning scientifically uncertain.",
+        "sourceSpan": {
+          "startEvent": 265,
+          "endEvent": 375,
+          "excerpt": "Big Bang is not the first moment of the universe. It is a hot dense state 14 billion years ago. We don't know if or what came before that hot >> [laughter] >> state. It's simply not something that we can measure. So, scientifically, we're not on sort of solid ground. But Dr. Craig is more fond, I think, of putting forward philosophical reasons why the universe must have had a beginning"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator hands the discussion to Alex, whose sustained first-person response identifies Craig by name and continues until Craig briefly answers.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-cosmological-undercutting"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-experiential-proper-basicality"
+          ],
+          "components": [
             {
-              "id": "con-burden-map",
-              "dimensions": {
-                "logicalCoherence": 85,
-                "evidenceWarrant": 78,
-                "responsiveness": 82,
-                "relevanceBurden": 88,
-                "precisionClarity": 86,
-                "calibrationCharity": 85
-              },
-              "score": 84
-            },
-            {
-              "id": "con-big-bang-challenge",
-              "dimensions": {
-                "logicalCoherence": 82,
-                "evidenceWarrant": 73,
-                "responsiveness": 84,
-                "relevanceBurden": 84,
-                "precisionClarity": 81,
-                "calibrationCharity": 76
-              },
-              "score": 80
+              "componentId": "con-big-bang-not-first-moment-component-01",
+              "targetMoveId": "pro-experiential-proper-basicality",
+              "text": "Whether personal experience can independently ground specifically Christian belief without exterior arguments.",
+              "contacted": false,
+              "decisive": true
             }
           ],
-          "coverage": 80,
-          "burdenProgress": 82,
-          "coherence": 84,
-          "moveMean": 82,
-          "score": 82
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move materially challenges the cosmological route, but neither legal earlier opposing locked move presents that route, so it does not contact the selected target's decisive demand."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "It clearly distinguishes evidence for an early hot dense state from evidence for an absolute first temporal moment."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The categorical denial concerns what Big Bang evidence alone establishes, while the broader conclusion is expressly framed as scientific uncertainty."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Big Bang cosmology may support a finite beginning when combined with additional physical or philosophical arguments.",
+          "decisiveQualification": "The move denies only that Big Bang evidence itself establishes an absolute first moment."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The hot-dense-state distinction supplies specific support, though the excerpt does not survey competing cosmological models in depth."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central cosmological-undercutting bridge by challenging the scientific premise of a finite beginning."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "Within relevant nonanswers, it supplies substantial issue-bearing cosmological material despite not answering either legal earlier opposing move."
+          }
+        },
+        "evidenceBasis": "O'Connor distinguishes an early hot, dense spacetime state roughly fourteen billion years ago from an absolute first moment.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-infinite-units-and-presentism",
+        "sectionId": "cosmic-beginning-and-time",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The traversal objection lacks a non-arbitrary unit forming the alleged infinite collection, while presentism makes it unclear why a nonexistent past should count as an actual infinity.",
+        "sourceSpan": {
+          "startEvent": 523,
+          "endEvent": 723,
+          "excerpt": "it seems to me unclear. I mean, that the two assumptions built into that particular point, in other words, are that actual infinities are impossible and that a past infinite universe would count as an actual infinity. Dr. Craig, I also know, is a proponent of the A-theory of time. And there are, broadly speaking, two, but there are more, but people talk about two. There's this A"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor resumes after a short interruption, develops the same objection in the first person, and is explicitly summarized by the moderator afterward.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-cosmological-undercutting"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-experiential-proper-basicality"
+          ],
+          "components": [
+            {
+              "componentId": "con-infinite-units-and-presentism-component-01",
+              "targetMoveId": "pro-experiential-proper-basicality",
+              "text": "Whether personal experience can rationally ground specifically Christian belief as properly basic.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The objections about arbitrary temporal units, actual infinity, and presentism materially bear on cosmology but do not answer the earlier experiential-grounding claim selected from the legal targets."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Both objections are recoverable, but the relation among event units, collections, and actual infinity remains partly compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move chiefly presses uncertainties about unit selection and presentist ontology rather than claiming a conclusive disproof."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Equal conventional intervals can form a countable collection even if the interval choice is arbitrary and past events no longer exist.",
+          "decisiveQualification": "The move presses whether that mathematical description is enough for a metaphysically actual infinity under presentism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks central philosophical supports for a finite past, including actual infinity and the theory of time."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 56,
+            "rationale": "It is a substantial relevant nonanswer within the debate, but it makes no contact with the decisive experiential component of its legal target."
+          }
+        },
+        "evidenceBasis": "O'Connor questions what non-arbitrary unit composes the infinite past and whether nonexistent past events constitute an actual infinity on A-theory.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-successive-actual-infinity",
+        "sectionId": "cosmic-beginning-and-time",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "A beginningless past would require an actual infinity instantiated through successive addition, which cannot be temporally traversed to reach the present.",
+        "sourceSpan": {
+          "startEvent": 741,
+          "endEvent": 846,
+          "excerpt": "things that are traversed?\" And I interjected, \"They're events.\" And in my work, I discuss this. What is an event? It's a type of change. And to make sure that all of the events are actual and equal, we arbitrarily, conventionally specify some chosen event as our standard event, say 1 hour or 1 day. And then we ask, \"How many standard intervals are there in a beginningless past"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator invites Craig to respond, and Craig explicitly addresses Alex while presenting a continuous clarification of his two philosophical arguments.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-cosmological-undercutting"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-infinite-units-and-presentism"
+          ],
+          "components": [
+            {
+              "componentId": "pro-successive-actual-infinity-component-01",
+              "targetMoveId": "con-infinite-units-and-presentism",
+              "text": "Whether arbitrary temporal units and noncoexisting past events prevent a beginningless history from constituting an actual infinity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig directly answers the unit objection with conventional standard intervals and answers noncoexistence by appealing to successive real instantiation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The standard-interval and successive-instantiation claims are clear, but the scope of the asserted traversal impossibility is not fully qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that the answer can only be an actual infinity is supported, but the further impossibility of successive realization needs more defense."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A beginningless series need not be formed by starting from an initial point and completing an infinite traversal.",
+          "decisiveQualification": "Craig treats the series as successively instantiated and argues that reaching the present still requires completion by successive addition."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The conventional-unit answer is coherent, while the bridge from successive instantiation to impossible traversal remains materially contested."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The interval and domino analogies clarify the claim, but no independent defense of the crucial traversal principle is supplied."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central cosmological-undercutting bridge by answering the principal actual-infinity objections."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts both central objections and states why neither blocks the actual-infinity inference."
+          }
+        },
+        "evidenceBasis": "Craig proposes equal conventional intervals, argues a beginningless past contains infinitely many, and says successive instantiation avoids requiring coexistence.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-low-entropy-cosmic-beginning",
+        "sectionId": "cosmic-beginning-and-time",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "The universe's low-entropy condition supports a cosmic beginning because a closed universe with an infinite past should already have reached thermodynamic equilibrium.",
+        "sourceSpan": {
+          "startEvent": 966,
+          "endEvent": 992,
+          "excerpt": "large scale is simply a gigantic closed system because of naturalism, that's all there is and there isn't anything outside of it. So if it were infinite in the past um, its entropy production should have increased and increased and increased so that it would now be in a dark, dilute, uh, and lifeless state. And since we are not in such a state, we know that the universe must have had a beginning in which it was in a low"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig explicitly introduces a second scientific confirmation and carries the thermodynamic argument through the heat-death conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-cosmic-beginning"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive thermodynamic argument independently supports the finite-past premise and has no earlier opposing target assigned for response analysis."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The equilibrium inference is recoverable, but the claim that the universe is a closed system requires model-sensitive scope qualifications."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Low entropy supports a finite usable thermodynamic history under stated assumptions, but the excerpt speaks more broadly than those assumptions warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An eternal cosmology might evade equilibrium through boundary conditions, expansion, fluctuation, or nonstandard thermodynamic structure.",
+          "decisiveQualification": "The argument applies most directly to a closed system with persistent entropy production and no relevant resetting mechanism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central finite-past requirement through an independent thermodynamic consideration."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The move states the closed-system premise but does not engage the strongest model-dependent exceptions to the equilibrium inference."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "Within constructive moves, it supplies a clear scientific route to the cosmic-beginning bridge, with important physical assumptions compressed."
+          }
+        },
+        "evidenceBasis": "Craig invokes large-scale low entropy and argues that an infinitely old closed universe should already have approached thermodynamic equilibrium.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-animal-suffering-theodicy-gap",
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Free will, soul-making, the fall, and higher-order human goods do not explain the immense suffering experienced by non-human animals throughout evolutionary history.",
+        "sourceSpan": {
+          "startEvent": 1688,
+          "endEvent": 1771,
+          "excerpt": "free will the fact that there was a fall the fact that our souls will somehow be developed the fact that higher order goods like bravery and courage, can be achieved. are plausible. But, none of them apply to non-human animals. None of them apply to these animals who, for hundreds of millions of years Yeah. I've written quite a bit on the problem of animal suffering. I know. So"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly gives Alex the floor, and Craig's brief interjections identify the sustained challenge as Alex's argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-suffering-evidence"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-low-entropy-cosmic-beginning"
+          ],
+          "components": [
+            {
+              "componentId": "con-animal-suffering-theodicy-gap-component-01",
+              "targetMoveId": "pro-low-entropy-cosmic-beginning",
+              "text": "Whether low cosmic entropy supports a finite beginning under naturalistic closed-system assumptions.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move strongly advances the suffering issue, but no legal earlier pro move states a theodicy; therefore it cannot contact the selected cosmological target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move specifically distinguishes non-human evolutionary suffering from goods and defenses that apply principally to human agents."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The categorical force is limited to the stated mismatch: the listed human-centered defenses do not themselves explain non-human suffering."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Animal suffering could be indirectly necessary for a world supporting human freedom, soul-making, or other higher-order goods.",
+          "decisiveQualification": "The listed defenses do not yet explain why animals themselves endured immense suffering before human history."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central suffering-evidence bridge by identifying a major gap in standard compatibility explanations."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 58,
+            "rationale": "Within relevant nonanswers, it supplies a decisive new suffering objection even though it answers none of the legal earlier targets."
+          }
+        },
+        "evidenceBasis": "O'Connor grants that free will, the fall, soul-making, bravery, and courage may be plausible, then notes they do not apply to animals.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-evolutionary-salvation-theodicy",
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "An evolutionary world containing extensive animal suffering may be necessary for the optimal number of people freely to attain eternal salvation.",
+        "sourceSpan": {
+          "startEvent": 1892,
+          "endEvent": 1955,
+          "excerpt": "optimal number of people would freely come to embrace God and his salvation and so find eternal life. And that could well be the reason for creating the world with an evolutionary history that involved, as you say, a lot of animal suffering. So the suggestion would be that an animal like a zebra which gets its windpipe caught in the jaws of a lion, which is how they're often predated upon, that no human"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig is addressed by name and supplies a continuous first-person account of God's purpose, salvation, causal sensitivity, and epistemic limits.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-suffering-compatibility"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-animal-suffering-theodicy-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolutionary-salvation-theodicy-component-01",
+              "targetMoveId": "con-animal-suffering-theodicy-gap",
+              "text": "Why extensive evolutionary animal suffering would be permitted when standard human-centered theodicies do not apply directly to animals.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig contacts the decisive demand by proposing that evolutionary history may be causally necessary for maximizing freely saved persons, thereby supplying an indirect human-salvation reason for animal suffering."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposal is recoverable and qualified as epistemic possibility, but optimality and necessity across feasible worlds remain broad."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately says the world may be necessary, though its comparison of salvation with suffering risks minimizing the evidential demand."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God could achieve equal or greater salvation without the same magnitude of animal suffering.",
+          "decisiveQualification": "Craig's answer is that feasible histories may be causally sensitive and this history may optimize free salvation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The proposed compatibility is coherent, but the conditional linking animal suffering to optimal free salvation is largely unsupported."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The central causal and modal claim is speculative and receives no representative evidence or comparison with less harmful worlds."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central suffering-compatibility bridge by offering a morally significant purpose for evolutionary history."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The response accurately addresses the strongest direct-benefit objection by offering an indirect rationale, while leaving necessity underdefended."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it directly proposes a reason addressing the gap, though it does not substantiate the asserted necessity across feasible worlds."
+          }
+        },
+        "evidenceBasis": "Craig says God's purpose is optimal free human salvation and suggests evolutionary history may be necessary within causally sensitive feasible worlds.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-limits-on-gratuitous-evil-inference",
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Human uncertainty about feasible worlds prevents an inference that a morally perfect God lacks sufficient reasons for permitting natural and moral evil.",
+        "sourceSpan": {
+          "startEvent": 1965,
+          "endEvent": 2019,
+          "excerpt": "totally into pure speculation, you know, about worlds operating according to different laws of nature and so forth. We have no idea what that's like. So, remember this is supposed to be an argument for atheism. It's the atheist who's bears the burden of proof of showing that God cannot have morally sufficient reasons for creating a world with an evolutionary history and I think"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig answers in the first person, reiterates his optimal-salvation hypothesis, and explicitly assigns the argumentative burden to the atheist.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-skeptical-theism"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-animal-suffering-theodicy-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-limits-on-gratuitous-evil-inference-component-01",
+              "targetMoveId": "con-animal-suffering-theodicy-gap",
+              "text": "Whether the absence of an identified animal-suffering justification licenses the conclusion that the suffering is gratuitous.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move contacts the inferential demand by arguing that ignorance of feasible worlds blocks the transition from no known sufficient reason to no sufficient reason, though it does not itself provide such a reason."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly limits its conclusion to what human ignorance permits one to infer about feasible worlds and sufficient reasons."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The uncertainty premise is explicit, but saying it prevents the inference altogether is stronger than showing that it weakens the inference."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Observed suffering can be evidence against God without proving that no morally sufficient reason is possible.",
+          "decisiveQualification": "Craig frames the opposing case as bearing the burden to show that God cannot have sufficient reasons."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The epistemic caution is coherent, but the shift from uncertainty to a demanding impossibility burden risks a modal non sequitur."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "Human limits concerning alternative laws and worlds are plausible, but the extent of those limits and their evidential consequence are asserted."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary skeptical-theism bridge by attacking the inference from apparent to genuine gratuitousness."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The response materially strengthens the opponent's evidential claim into a near-deductive impossibility burden and omits its probabilistic form."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "Within full answers, it directly challenges the gratuitousness inference but only indirectly addresses the underlying explanatory demand."
+          }
+        },
+        "evidenceBasis": "Craig calls alternative-world speculation unknowable and says the atheist must show that God cannot have morally sufficient reasons.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-nonsentient-animal-alternative",
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "God could preserve animals' complex behavior and ecological functions without sentience, avoiding animal pain while retaining the relevant evolutionary and environmental outcomes.",
+        "sourceSpan": {
+          "startEvent": 2059,
+          "endEvent": 2093,
+          "excerpt": "mechanically functions in exactly the same way as an animal that has sentience, but is not in fact sentient. It still moves away from certain inputs in the way that, you know, metal can react to environment by rusting. An animal can react to an environment in extremely complex ways just sans consciousness. I mean, I struggle to believe that God can be sat around with his angels saying, \"I want to create an animal that doesn't feel pain"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor proposes the non-sentient-animal alternative and develops it through mechanical environmental reactions and an explicit divine-choice example.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-feasible-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-evolutionary-salvation-theodicy",
+            "pro-limits-on-gratuitous-evil-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-nonsentient-animal-alternative-component-01",
+              "targetMoveId": "pro-evolutionary-salvation-theodicy",
+              "text": "Whether evolutionary and ecological conditions needed for human salvation also require animals to possess painful conscious experience.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-nonsentient-animal-alternative-component-02",
+              "targetMoveId": "pro-limits-on-gratuitous-evil-inference",
+              "text": "Whether a concrete less-harmful alternative can be described despite uncertainty about feasible worlds.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply proposes behaviorally and ecologically equivalent nonsentient animals, directly challenging both sentience's necessity and the claim that alternatives are wholly speculative."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The nonsentient-behavior proposal is clear, but claiming identical function across all relevant evolutionary roles has an implicit feasibility qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A conceptual possibility is appropriately offered, though describing mechanical equivalence understates unresolved feasibility and consciousness-function questions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conscious pain may be functionally integrated with learning, agency, reproduction, and the causal history required for human emergence.",
+          "decisiveQualification": "The proposed alternative assumes those functions could be mechanically duplicated without consciousness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary feasible-alternatives bridge with a concrete and highly pertinent less harmful world."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly identifies the disputed feature and supplies a concrete replacement intended to preserve the relevant outcomes."
+          }
+        },
+        "evidenceBasis": "O'Connor proposes animals that react mechanically and complexly to environmental inputs while lacking consciousness and therefore pain.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-animal-pain-severity-distinction",
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Animal suffering is less severe than human projection suggests because many animals lack the second-order self-awareness that intensifies human pain.",
+        "sourceSpan": {
+          "startEvent": 2188,
+          "endEvent": 2216,
+          "excerpt": "Michael Murray shows in his book Nature Red in Tooth and Claw Tooth and Claw, even sentient animals like sheep and goats and dogs and cats, while they have pain awareness, they do not have that second-order awareness of knowing that they are themselves in pain. Which human beings as self-conscious subjects do. And that makes human pain and suffering qualitatively distinct from animal"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig explicitly requests a response, endorses the questioner's point, cites named sources, and contrasts animal pain awareness with human self-conscious suffering.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-suffering-evidence"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-animal-suffering-theodicy-gap",
+            "con-nonsentient-animal-alternative"
+          ],
+          "components": [
+            {
+              "componentId": "pro-animal-pain-severity-distinction-component-01",
+              "targetMoveId": "con-animal-suffering-theodicy-gap",
+              "text": "Whether animal pain has the same severity and morally salient structure often projected from human suffering.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-animal-pain-severity-distinction-component-02",
+              "targetMoveId": "con-nonsentient-animal-alternative",
+              "text": "Whether removing animal sentience is necessary to avoid the full severity attributed to animal suffering.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig contacts the severity component of the animal-suffering challenge by distinguishing first-order pain awareness from self-conscious suffering, but he does not answer the proposed feasibility of wholly nonsentient animals."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The first-order and second-order distinction is clear, but its extension across sheep, goats, dogs, and cats is broadly scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical denial of second-order awareness across familiar mammals is stronger than the named-authority reference in the excerpt warrants."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "First-order pain may remain intensely bad even without reflective awareness that one is oneself in pain.",
+          "decisiveQualification": "The distinction can reduce some dimensions of suffering without eliminating the morally relevant pain experience."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "A named book is invoked, but the broad empirical claims about animal self-awareness receive no representative support in the excerpt."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It directly attacks a central component of the suffering-evidence bridge by disputing severity."
+          },
+          "representationalCharity": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts a decisive severity component but leaves the concrete nonsentient-alternative demand unanswered."
+          }
+        },
+        "evidenceBasis": "Craig cites Michael Murray and claims common sentient animals feel pain but lack the reflective awareness that intensifies human suffering.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-moral-intuition-consistency",
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Distrusting human moral intuitions when they condemn divine cruelty undermines a moral argument for God that relies on those same intuitions to recognize objective morality.",
+        "sourceSpan": {
+          "startEvent": 2292,
+          "endEvent": 2339,
+          "excerpt": "place. So, maybe you might be quite right to say that I shouldn't be able to take my moral intuitions and trust them and say that they're real and that they're accurate. But if that's the case, then you've undermined one of the reasons why we believe in the existence of God as the grounding of of morality because that relies on the intuition that objective morals exist. And the"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "An audience question is followed by O'Connor's direct answer referencing Craig in the third person and reconstructing Craig's earlier moral argument.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-moral-intuition-consistency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-limits-on-gratuitous-evil-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-moral-intuition-consistency-component-01",
+              "targetMoveId": "pro-limits-on-gratuitous-evil-inference",
+              "text": "Whether human moral limitations can undercut judgments about divine reasons without also undercutting moral awareness used to support theism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly alleges an epistemic inconsistency between distrusting cruelty judgments and trusting intuitions that objective moral values exist."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The consistency objection is clear, though moral intuitions about value existence and about all-things-considered divine reasons are not fully distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The undermining conclusion is forceful, while the move acknowledges the skeptical response but does not fully address different domains of moral judgment."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Skeptical theism concerns knowledge of complex divine reasons, not ordinary knowledge of basic moral truths.",
+          "decisiveQualification": "The move argues that both applications still rely on confidence in human moral cognition and require a principled asymmetry."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The symmetry challenge is coherent, but its conclusion depends on equating two importantly different uses and scopes of moral cognition."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary moral-intuition-consistency bridge and closely targets selective moral skepticism."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move notes the shared appeal to intuition but underdevelops the strongest domain-restricted skeptical-theist distinction."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly identifies the challenged skeptical principle and states its alleged defeating consequence for the moral argument."
+          }
+        },
+        "evidenceBasis": "O'Connor argues that rejecting moral intuitions condemning divine cruelty also weakens reliance on intuition to recognize objective morality.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-fine-tuning-intelligent-selection",
+        "sectionId": "fine-tuning-and-intelligent-selection",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "The extreme improbability of life-permitting constants under accident makes their intentional determination by an intelligent creator more plausible.",
+        "sourceSpan": {
+          "startEvent": 2630,
+          "endEvent": 2656,
+          "excerpt": "and not just life-prohibiting. Uh there wouldn't even be chemistry. There wouldn't even be matter in the absence of this fine-tuning. So, it is next to impossible that all of these life-permitting constants and quantities should fall by accident into the infinitesimal life-permitting range. It is vastly more plausible that there is an intelligent creator of the universe who has"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The answer follows a question addressed to Craig, and its technical fine-tuning formulation is continuous with Craig's stated argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-fine-tuning-selection"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-moral-intuition-consistency"
+          ],
+          "components": [
+            {
+              "componentId": "pro-fine-tuning-intelligent-selection-component-01",
+              "targetMoveId": "con-moral-intuition-consistency",
+              "text": "Whether skeptical treatment of moral intuitions is consistent with using them in an argument for objective morality.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The fine-tuning inference is central issue-bearing material but does not contact the legal earlier target's moral-epistemic consistency demand or any other listed earlier opposing proposition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The accident-versus-intelligence inference is recoverable, but the relevant probability space and comparison class remain unstated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Claims of near impossibility and vastly greater plausibility outrun the excerpt's unstated probability distribution and alternative comparison."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The constants may be brute, necessary, selected anthropically, or sampled through a broader cosmological process.",
+          "decisiveQualification": "The move compares intentional selection primarily with accident and does not evaluate these other live explanations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "Intelligent selection can explain specified conditions, but the inference needs explicit priors and a non-exhaustive alternative comparison."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central fine-tuning-selection bridge and states its intended comparative explanatory conclusion."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "Within relevant nonanswers, it advances a separate central argument strongly but leaves the targeted moral-consistency component wholly unanswered."
+          }
+        },
+        "evidenceBasis": "Craig says matter and chemistry require fine-tuning, calls accidental life-permitting values nearly impossible, and favors an intelligent creator.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-hostile-fine-tuning-meta-conditions",
+        "sectionId": "fine-tuning-and-intelligent-selection",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Although divine will could select physical constants, meta-conditions that make a material world exceptionally difficult to realize create tension with the hypothesis of a creator intending such a world.",
+        "sourceSpan": {
+          "startEvent": 2657,
+          "endEvent": 2688,
+          "excerpt": "meta conditions are set up to make it so difficult to bring about a material world? There's a really interesting argument for Gnosticism in here, by the way, ladies and gentlemen. Which is that the creator of all things doesn't want a material world to exist and so sets up the conditions such that it is infinitesimally difficult. Yeah, I think that's his formulation of the fine-tuning argument. And yet it happens anyway. [snorts] So the intention"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly reconstructs the question, grants the will-based distinction, and then develops his characteristic Gnostic counterpoint.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-fine-tuning-undercutting"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-fine-tuning-intelligent-selection"
+          ],
+          "components": [
+            {
+              "componentId": "con-hostile-fine-tuning-meta-conditions-component-01",
+              "targetMoveId": "pro-fine-tuning-intelligent-selection",
+              "text": "Whether life-permitting constants favor a creator intending a material world when the background conditions make such a world exceptionally difficult.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply grants that divine will could select constants but argues that hostile meta-conditions create contrary evidence about the creator's intention."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The tension claim is recoverable, but 'meta-conditions' is only partly specified and ranges over an unclear physical possibility structure."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents a tension and an interesting alternative formulation, not a conclusive refutation of intelligent selection."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A creator may value a law-governed world in which freely selected constants occupy a narrow life-permitting range.",
+          "decisiveQualification": "The background possibility structure still calls for explanation if it is itself attributed to the creator."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The hostile structure is drawn from the fine-tuning setup, but the Gnostic comparison is speculative and lacks a developed likelihood analysis."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central fine-tuning-undercutting bridge by challenging the background expectation under intelligent intention."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the intelligent-selection inference and introduces a defeating tension at the intention level."
+          }
+        },
+        "evidenceBasis": "O'Connor grants intentional selection of constants, then asks why the meta-conditions make material existence infinitesimally difficult.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-independent-theism-defeats-gratuitousness",
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Strong independent grounds for God's existence support the conclusion that apparently gratuitous suffering serves a greater good unknown to human observers.",
+        "sourceSpan": {
+          "startEvent": 2728,
+          "endEvent": 2759,
+          "excerpt": "suffering does not exist. But then the theist can say, \"We have very good arguments and evidence that God exists. And therefore follows that gratuitous suffering does not exist. That's the logical consequence. And so Dan Howard Snyder in his anthology on the problem of evil says, \"The problem of evil is really only a problem for theists who have lousy grounds for theism. But if"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig asks to comment, endorses the questioner's reasoning, and presents the modus-ponens formulation in his recognizable argumentative framework.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-suffering-compatibility"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-hostile-fine-tuning-meta-conditions",
+            "con-animal-suffering-theodicy-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-independent-theism-defeats-gratuitousness-component-01",
+              "targetMoveId": "con-hostile-fine-tuning-meta-conditions",
+              "text": "Whether hostile fine-tuning background conditions undermine the hypothesis of a creator intending a material world.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-independent-theism-defeats-gratuitousness-component-02",
+              "targetMoveId": "con-animal-suffering-theodicy-gap",
+              "text": "Whether apparently gratuitous animal suffering remains evidentially forceful given independent grounds for theism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move does not answer the selected fine-tuning demand, but it contacts an earlier suffering objection by claiming independent theistic evidence defeats gratuitousness."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The modus-ponens structure is clear, but 'very good arguments and evidence' is underspecified and its independence is not delimited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The logical consequence holds only given a morally perfect God and sufficiently decisive independent grounds, qualifications absent from the assertion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Suffering can lower the probability of a loving God even when other evidence raises it, requiring cumulative updating rather than deduction.",
+          "decisiveQualification": "Independent evidence defeats the objection only if it remains sufficiently strong after the suffering evidence is incorporated."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The modus ponens is formally usable, but it risks circularly treating the disputed morally perfect theism premise as already decisive."
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "The move asserts very good independent evidence without restating or weighing it against the suffering evidence at issue."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It directly supports the central suffering-compatibility bridge by denying that apparently gratuitous suffering is ultimately gratuitous."
+          },
+          "representationalCharity": {
+            "value": 52,
+            "rationale": "The formulation recasts a comparative evidential objection as a binary logical contradiction and omits the cumulative probabilistic alternative."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it contacts a secondary earlier suffering component while leaving the legal primary fine-tuning challenge unanswered."
+          }
+        },
+        "evidenceBasis": "Craig argues that very good independent evidence for God logically entails that apparently gratuitous suffering is not genuinely gratuitous.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-evil-against-loving-god",
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The problem of evil remains evidence against an all-loving God even if it neither refutes every possible creator nor eliminates every independent reason for generic theism.",
+        "sourceSpan": {
+          "startEvent": 2760,
+          "endEvent": 2800,
+          "excerpt": "even fully understand what we mean when we use a word like God. It would depend on what you mean. We've been talking about the Kalam. I found it unsound. That's all. I gave you one reason to suspect that the God that William Lane Craig is suggesting, which is an all-loving God, which by the way many arguments for the existence of God conclude that God must be loving. And so, in the case of those arguments, the problem of evil"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The first-person review of the Kalam case and agnostic position unmistakably identifies O'Connor as the speaker throughout the sustained response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-insufficient-warrant"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-independent-theism-defeats-gratuitousness",
+            "pro-fine-tuning-intelligent-selection"
+          ],
+          "components": [
+            {
+              "componentId": "con-evil-against-loving-god-component-01",
+              "targetMoveId": "pro-independent-theism-defeats-gratuitousness",
+              "text": "Whether independent evidence for generic theism makes the problem of evil evidentially irrelevant.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-evil-against-loving-god-component-02",
+              "targetMoveId": "pro-fine-tuning-intelligent-selection",
+              "text": "Whether defeating one argument or supplying counterevidence requires rejecting every possible creator.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor expressly diagnoses the inference as overbroad: finding Kalam unsound or presenting evil as evidence against an all-loving God need not refute every creator or erase every independent consideration."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move carefully distinguishes generic God concepts, an all-loving God, refuting Kalam, and offering one item of counterevidence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "It presents evil as a reason for suspicion against a loving God while expressly declining a universal creator-refutation claim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Strong independent evidence for a morally perfect God could outweigh, rather than eliminate, the evidence from suffering.",
+          "decisiveQualification": "The move claims continued evidential relevance, not that suffering necessarily defeats the total theistic case."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the motion-level burden that unresolved gaps and suffering leave Christian theism insufficiently warranted."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the generic-creator versus loving-God mismatch and states the limited evidential consequence."
+          }
+        },
+        "evidenceBasis": "O'Connor limits his Kalam conclusion, distinguishes possible creator concepts, and treats evil as evidence specifically against Craig's all-loving God.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-suffering-christian-specificity",
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Suffering is evidentially relevant to Christian theism because Christianity posits a personally concerned God who acts through resurrection for human salvation, not merely an indifferent first cause.",
+        "sourceSpan": {
+          "startEvent": 2846,
+          "endEvent": 2877,
+          "excerpt": "first moment in time due to the impossibility of an actual infinite regress, and then just doesn't give a squat about suffering. If that's the God that you believe in, then then fine. But that's not the God that most people are worshipping in church. That's not the God who supposedly resurrects Jesus from the dead for the purpose, by the way, of human salvation. Meaning that actually, at least in the case of human beings, their mental states"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator grants Alex a reply, and despite interruptions O'Connor continuously contrasts an impersonal creator with the Christian God.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-christian-specificity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-independent-theism-defeats-gratuitousness",
+            "pro-resurrection-historical-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-suffering-christian-specificity-component-01",
+              "targetMoveId": "pro-independent-theism-defeats-gratuitousness",
+              "text": "Whether independent generic theistic evidence answers suffering that is specifically unexpected under a saving and personally concerned Christian God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-suffering-christian-specificity-component-02",
+              "targetMoveId": "pro-resurrection-historical-inference",
+              "text": "Whether resurrection-based Christian identification makes divine concern for human mental states evidentially relevant.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly connects resurrection and salvation claims to personal divine concern, showing why suffering bears on specifically Christian rather than merely generic theism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly limits its comparison to a saving, personally concerned Christian God versus an indifferent creator."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "It says unexpected suffering is less expected on Christian theism, a calibrated comparative claim rather than a deductive disproof."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A saving God may care deeply about humans while permitting suffering for unknown greater goods.",
+          "decisiveQualification": "Such possible reasons do not by themselves remove the initial evidential mismatch between saving concern and unexpected suffering."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The resurrection-to-saving-concern connection supports the comparative expectation claim, with only the likelihood magnitude left implicit."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central Christian-specificity bridge by tying suffering to the attributes asserted in the Christian case."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the specificity gap and connects the relevant Christian commitments to the evidential demand."
+          }
+        },
+        "evidenceBasis": "O'Connor contrasts an indifferent creator with a Christian God who resurrects Jesus for salvation and therefore cares about human mental states.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-arbitrary-suffering-distribution",
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The evidential problem is not merely that suffering exists, but that its severity appears arbitrarily distributed according to birthplace and species.",
+        "sourceSpan": {
+          "startEvent": 2954,
+          "endEvent": 2967,
+          "excerpt": "exists somewhere. If every single person experienced some net level of suffering, then then fine. Maybe there's some sort of universal reason for that. It's the seeming arbitrariness of it. It's the fact that depending on where you're born, depending on what species you're born as, your life will be vastly different. I think that's the point. Is it it's not about the existence"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker explicitly reframes the issue as arbitrariness and is then addressed by name when Craig begins the following response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-suffering-evidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-independent-theism-defeats-gratuitousness",
+            "pro-limits-on-gratuitous-evil-inference"
+          ],
+          "components": [
+            {
+              "componentId": "con-arbitrary-suffering-distribution-component-01",
+              "targetMoveId": "pro-independent-theism-defeats-gratuitousness",
+              "text": "Whether independent theistic grounds adequately explain not merely suffering's existence but its apparently arbitrary distribution by birthplace and species.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-arbitrary-suffering-distribution-component-02",
+              "targetMoveId": "pro-limits-on-gratuitous-evil-inference",
+              "text": "Whether uncertainty about universal reasons addresses sharply unequal suffering across persons and species.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies distribution, rather than bare existence, as the decisive evidential feature and explains why a universal reason would not by itself answer it."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move identifies the relevant feature as seeming arbitrariness and specifies birthplace and species as dimensions of variation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The word 'seeming' appropriately limits the claim to an evidential appearance rather than asserting certainty that no reason exists."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Different suffering levels may track distinct goods, freedoms, laws, histories, or salvation-relevant consequences.",
+          "decisiveQualification": "A general reason for some suffering does not yet explain the observed severity differences across persons and species."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The distinction between explaining some suffering and explaining its unequal distribution is clear and inferentially important."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central suffering-evidence bridge by identifying a feature not answered by a merely universal justification."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly isolates the unanswered distributional component and states its consequence for the prior replies."
+          }
+        },
+        "evidenceBasis": "O'Connor argues that the issue is the seeming arbitrariness of suffering, with radically different lives by birthplace and species.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence satisfies the strict residual conditions beyond the effects already represented in individual judgments.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion remains outside the scored move and response structure.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "section weights"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion independently of existing judgments."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule independently of the move-level judgments and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured con burden-completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct consequence remains outside the scored move judgments.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden-contact judgments"
+          ],
+          "counterfactual": "Removing any alleged residual would leave burden completion unchanged because its effects are already captured."
         }
       }
     },
-    {
-      "title": "Actual infinity and traversal",
-      "centrality": 3,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-two-kalam-supports",
-              "dimensions": {
-                "logicalCoherence": 86,
-                "evidenceWarrant": 78,
-                "responsiveness": 91,
-                "relevanceBurden": 89,
-                "precisionClarity": 87,
-                "calibrationCharity": 82
-              },
-              "score": 86
-            },
-            {
-              "id": "pro-standard-event",
-              "dimensions": {
-                "logicalCoherence": 78,
-                "evidenceWarrant": 70,
-                "responsiveness": 82,
-                "relevanceBurden": 84,
-                "precisionClarity": 75,
-                "calibrationCharity": 73
-              },
-              "score": 77
-            }
-          ],
-          "coverage": 88,
-          "burdenProgress": 85,
-          "coherence": 86,
-          "moveMean": 81.5,
-          "score": 83
-        },
-        "con": {
-          "moves": [
-            {
-              "id": "con-hilbert-rebuttal",
-              "dimensions": {
-                "logicalCoherence": 82,
-                "evidenceWarrant": 74,
-                "responsiveness": 84,
-                "relevanceBurden": 82,
-                "precisionClarity": 84,
-                "calibrationCharity": 72
-              },
-              "score": 80
-            },
-            {
-              "id": "con-unit-challenge",
-              "dimensions": {
-                "logicalCoherence": 80,
-                "evidenceWarrant": 74,
-                "responsiveness": 83,
-                "relevanceBurden": 84,
-                "precisionClarity": 75,
-                "calibrationCharity": 78
-              },
-              "score": 79
-            }
-          ],
-          "coverage": 81,
-          "burdenProgress": 82,
-          "coherence": 78,
-          "moveMean": 79.5,
-          "score": 80
-        }
-      }
-    },
-    {
-      "title": "Cosmology, entropy, and theories of time",
-      "centrality": 3,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-scientific-confirmation",
-              "dimensions": {
-                "logicalCoherence": 78,
-                "evidenceWarrant": 78,
-                "responsiveness": 79,
-                "relevanceBurden": 85,
-                "precisionClarity": 82,
-                "calibrationCharity": 78
-              },
-              "score": 80
-            },
-            {
-              "id": "pro-time-asymmetry",
-              "dimensions": {
-                "logicalCoherence": 84,
-                "evidenceWarrant": 74,
-                "responsiveness": 85,
-                "relevanceBurden": 82,
-                "precisionClarity": 86,
-                "calibrationCharity": 80
-              },
-              "score": 82
-            }
-          ],
-          "coverage": 87,
-          "burdenProgress": 84,
-          "coherence": 86,
-          "moveMean": 81,
-          "score": 82
-        },
-        "con": {
-          "moves": [
-            {
-              "id": "con-relativity-challenge",
-              "dimensions": {
-                "logicalCoherence": 80,
-                "evidenceWarrant": 79,
-                "responsiveness": 83,
-                "relevanceBurden": 80,
-                "precisionClarity": 82,
-                "calibrationCharity": 80
-              },
-              "score": 81
-            },
-            {
-              "id": "con-past-future-symmetry",
-              "dimensions": {
-                "logicalCoherence": 78,
-                "evidenceWarrant": 68,
-                "responsiveness": 87,
-                "relevanceBurden": 83,
-                "precisionClarity": 72,
-                "calibrationCharity": 79
-              },
-              "score": 78
-            }
-          ],
-          "coverage": 82,
-          "burdenProgress": 80,
-          "coherence": 80,
-          "moveMean": 79.5,
-          "score": 80
-        }
-      }
-    },
-    {
-      "title": "Foreknowledge and the endless future",
-      "centrality": 2,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-divine-cognition",
-              "dimensions": {
-                "logicalCoherence": 81,
-                "evidenceWarrant": 68,
-                "responsiveness": 87,
-                "relevanceBurden": 82,
-                "precisionClarity": 83,
-                "calibrationCharity": 77
-              },
-              "score": 80
-            },
-            {
-              "id": "pro-tristram-shandy",
-              "dimensions": {
-                "logicalCoherence": 88,
-                "evidenceWarrant": 78,
-                "responsiveness": 90,
-                "relevanceBurden": 84,
-                "precisionClarity": 86,
-                "calibrationCharity": 82
-              },
-              "score": 85
-            }
-          ],
-          "coverage": 88,
-          "burdenProgress": 84,
-          "coherence": 85,
-          "moveMean": 82.5,
-          "score": 83
-        },
-        "con": {
-          "moves": [
-            {
-              "id": "con-infinite-foreknowledge",
-              "dimensions": {
-                "logicalCoherence": 81,
-                "evidenceWarrant": 74,
-                "responsiveness": 90,
-                "relevanceBurden": 82,
-                "precisionClarity": 78,
-                "calibrationCharity": 82
-              },
-              "score": 81
-            },
-            {
-              "id": "con-truth-reference",
-              "dimensions": {
-                "logicalCoherence": 72,
-                "evidenceWarrant": 68,
-                "responsiveness": 84,
-                "relevanceBurden": 78,
-                "precisionClarity": 62,
-                "calibrationCharity": 78
-              },
-              "score": 74
-            }
-          ],
-          "coverage": 82,
-          "burdenProgress": 80,
-          "coherence": 72,
-          "moveMean": 77.5,
-          "score": 78
-        }
-      }
-    },
-    {
-      "title": "Animal suffering and comparative probability",
-      "centrality": 3,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-fine-tuning-baseline",
-              "dimensions": {
-                "logicalCoherence": 77,
-                "evidenceWarrant": 66,
-                "responsiveness": 54,
-                "relevanceBurden": 62,
-                "precisionClarity": 78,
-                "calibrationCharity": 62
-              },
-              "score": 67
-            },
-            {
-              "id": "pro-salvation-theodicy",
-              "dimensions": {
-                "logicalCoherence": 68,
-                "evidenceWarrant": 52,
-                "responsiveness": 67,
-                "relevanceBurden": 63,
-                "precisionClarity": 73,
-                "calibrationCharity": 58
-              },
-              "score": 63
-            }
-          ],
-          "coverage": 70,
-          "burdenProgress": 64,
-          "coherence": 72,
-          "moveMean": 65,
-          "score": 66
-        },
-        "con": {
-          "moves": [
-            {
-              "id": "con-animal-suffering-isolation",
-              "dimensions": {
-                "logicalCoherence": 88,
-                "evidenceWarrant": 79,
-                "responsiveness": 87,
-                "relevanceBurden": 92,
-                "precisionClarity": 90,
-                "calibrationCharity": 86
-              },
-              "score": 87
-            },
-            {
-              "id": "con-conditional-likelihood",
-              "dimensions": {
-                "logicalCoherence": 85,
-                "evidenceWarrant": 72,
-                "responsiveness": 90,
-                "relevanceBurden": 88,
-                "precisionClarity": 84,
-                "calibrationCharity": 80
-              },
-              "score": 83
-            }
-          ],
-          "coverage": 90,
-          "burdenProgress": 90,
-          "coherence": 87,
-          "moveMean": 85,
-          "score": 86
-        }
-      }
-    },
-    {
-      "title": "Animal consciousness and closing burdens",
-      "centrality": 3,
-      "sides": {
-        "pro": {
-          "moves": [
-            {
-              "id": "pro-second-order-awareness",
-              "dimensions": {
-                "logicalCoherence": 64,
-                "evidenceWarrant": 52,
-                "responsiveness": 68,
-                "relevanceBurden": 60,
-                "precisionClarity": 61,
-                "calibrationCharity": 50
-              },
-              "score": 60
-            },
-            {
-              "id": "pro-total-evidence-close",
-              "dimensions": {
-                "logicalCoherence": 82,
-                "evidenceWarrant": 68,
-                "responsiveness": 80,
-                "relevanceBurden": 82,
-                "precisionClarity": 81,
-                "calibrationCharity": 69
-              },
-              "score": 77
-            },
-            {
-              "id": "pro-interior-witness",
-              "dimensions": {
-                "logicalCoherence": 72,
-                "evidenceWarrant": 48,
-                "responsiveness": 60,
-                "relevanceBurden": 65,
-                "precisionClarity": 76,
-                "calibrationCharity": 60
-              },
-              "score": 63
-            }
-          ],
-          "coverage": 75,
-          "burdenProgress": 67,
-          "coherence": 72,
-          "moveMean": 66.67,
-          "score": 68
-        },
-        "con": {
-          "moves": [
-            {
-              "id": "con-pain-awareness",
-              "dimensions": {
-                "logicalCoherence": 84,
-                "evidenceWarrant": 75,
-                "responsiveness": 92,
-                "relevanceBurden": 86,
-                "precisionClarity": 85,
-                "calibrationCharity": 78
-              },
-              "score": 84
-            },
-            {
-              "id": "con-agnostic-close",
-              "dimensions": {
-                "logicalCoherence": 86,
-                "evidenceWarrant": 80,
-                "responsiveness": 88,
-                "relevanceBurden": 91,
-                "precisionClarity": 90,
-                "calibrationCharity": 92
-              },
-              "score": 87
-            },
-            {
-              "id": "con-arbitrariness-close",
-              "dimensions": {
-                "logicalCoherence": 84,
-                "evidenceWarrant": 75,
-                "responsiveness": 88,
-                "relevanceBurden": 86,
-                "precisionClarity": 87,
-                "calibrationCharity": 86
-              },
-              "score": 84
-            }
-          ],
-          "coverage": 91,
-          "burdenProgress": 91,
-          "coherence": 88,
-          "moveMean": 85,
-          "score": 86
-        }
-      }
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
     }
-  ],
-  "overall": {
-    "pro": {
-      "caseCompletion": 68,
-      "rebuttalResilience": 67,
-      "globalCalibration": 71,
-      "weightedSectionMean": 75.59,
-      "score": 73
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "cosmic-beginning-and-time",
+        "title": "Cosmic Beginning, Actual Infinity, and the Nature of Time",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-successive-actual-infinity",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "pro-low-entropy-cosmic-beginning",
+                "importance": 3,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "con-big-bang-not-first-moment",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-infinite-units-and-presentism",
+                "importance": 3,
+                "score": 74
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "fine-tuning-and-intelligent-selection",
+        "title": "Cosmic Fine-Tuning and Intelligent Selection",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 68,
+            "moves": [
+              {
+                "moveId": "pro-fine-tuning-intelligent-selection",
+                "importance": 3,
+                "score": 68
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-hostile-fine-tuning-meta-conditions",
+                "importance": 2,
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "animal-suffering-and-feasible-worlds",
+        "title": "Animal Suffering, Theodicy, and Feasible Worlds",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "pro-evolutionary-salvation-theodicy",
+                "importance": 3,
+                "score": 78
+              },
+              {
+                "moveId": "pro-animal-pain-severity-distinction",
+                "importance": 2,
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-animal-suffering-theodicy-gap",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-nonsentient-animal-alternative",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-goodness-and-moral-evidence",
+        "title": "Divine Goodness, Moral Knowledge, and the Distribution of Evil",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "pro-limits-on-gratuitous-evil-inference",
+                "importance": 3,
+                "score": 75
+              },
+              {
+                "moveId": "pro-independent-theism-defeats-gratuitousness",
+                "importance": 3,
+                "score": 68
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-moral-intuition-consistency",
+                "importance": 2,
+                "score": 79
+              },
+              {
+                "moveId": "con-arbitrary-suffering-distribution",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "christian-identification-and-cumulative-warrant",
+        "title": "Christian Identification, Experience, and Cumulative Warrant",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-resurrection-historical-inference",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "pro-experiential-proper-basicality",
+                "importance": 2,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 92,
+            "moves": [
+              {
+                "moveId": "con-evil-against-loving-god",
+                "importance": 3,
+                "score": 93
+              },
+              {
+                "moveId": "con-suffering-christian-specificity",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 75.9,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "con": {
+        "weightedSectionMean": 81.65,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
     },
-    "con": {
-      "caseCompletion": 84,
-      "rebuttalResilience": 83,
-      "globalCalibration": 84,
-      "weightedSectionMean": 82.24,
-      "score": 83
-    }
+    "winner": "con",
+    "winningMargin": 6
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 18,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
   }
 }

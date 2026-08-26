@@ -1,0 +1,2160 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+  "status": "frozen-post-canary-batch-11-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "debateNumber": "60",
+  "debateId": "horn-oconnor-jesus-resurrection-2026",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-11-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "bb4bd463417eba758136779dc2e842fbc271398d0555cbd21ce89560a8d99aa1",
+    "calculatedScoresSha256": "1f7c356a8fd76ab89e3eeef6c71905195805e9e45a3e58f0ceca1971e6d99f26",
+    "finalizationAuditSha256": "91d498c00d5147ddeab1bf6769353fcccffe5548be7ceeff9b17984bbcda9c3a",
+    "renderingAuditSha256": "5155d6bdc4396a6cbea71182fe6cf78435667e2359047d2e1c409f42a354fe6c",
+    "finalCandidateSha256": "7ae2e1de4d948c952b11b0c15adfe20596b21b9178337f396b95bcf86a43ce18",
+    "eventsPath": ".assessment-cache/captions/Bu-7IHp3oGQ/events.json",
+    "eventsSha256": "78e300d6d7bc1a9a341023122e59a4ea964cf33544d2bba1d9e2b04fa397e95a",
+    "finalJudgmentSha256": "2074533d8ae3393ccbd4d554a009bfd92dc981ea7d066f719a395f88df7cdb54"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "60",
+    "debateId": "horn-oconnor-jesus-resurrection-2026",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-resurrection-inference",
+        "side": "pro",
+        "description": "Establish a physical resurrection as the historically reasonable explanation of Jesus's death, the early bodily-resurrection proclamation, reported individual and group encounters, and the claimed absence of his body.",
+        "successCriteria": "Connect testimony, bodily continuity, witness conduct, and the tomb into a coherent resurrection explanation while identifying relevant differences from rival miracle traditions and accounting for proposed natural alternatives.",
+        "motionBridge": {
+          "bridgeId": "bridge-pro-motion-historical-reasonableness",
+          "tier": "motion",
+          "description": "Show that the combined historical considerations make Jesus's physical resurrection a reasonable conclusion relative to the alternatives under discussion."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-pro-central-bodily-appearances",
+            "tier": "central",
+            "description": "Establish that the earliest testimony and later narratives concern encounters with the physically continuous, crucified Jesus rather than only visions or disembodied survival."
+          },
+          {
+            "bridgeId": "bridge-pro-central-empty-tomb",
+            "tier": "central",
+            "description": "Establish a historically usable missing-body or empty-tomb datum and explain why reburial, theft, or related burial hypotheses do not exhaust the combined evidence."
+          },
+          {
+            "bridgeId": "bridge-pro-central-testimonial-explanation",
+            "tier": "central",
+            "description": "Connect individual and group encounter reports, conversions, and early proclamation to a single resurrection explanation of the movement's central claim."
+          },
+          {
+            "bridgeId": "bridge-pro-central-rival-discrimination",
+            "tier": "central",
+            "description": "Apply a consistent evidential framework to rival miracle claims while identifying differences relevant to testimony, incentives, expectations, corroboration, and background knowledge."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-pro-subsidiary-sincerity",
+            "tier": "subsidiary",
+            "description": "Use danger, persistence, and costly proclamation to establish informed sincerity without treating suffering by itself as proof of resurrection."
+          },
+          {
+            "bridgeId": "bridge-pro-subsidiary-supernatural-prior",
+            "tier": "subsidiary",
+            "description": "Explain why admitting the possibility of supernatural events does not require endorsing every miracle report or its surrounding religious system."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-historical-skepticism",
+        "side": "con",
+        "description": "Show that the surviving evidence does not warrant concluding that Jesus physically rose because its bodily character, independence, corroboration, and comparative force remain uncertain and plausible alternatives persist.",
+        "successCriteria": "Demonstrate that visionary development, source limitations, natural tomb explanations, and comparable rival testimony prevent the cited considerations from specifically establishing a physical resurrection.",
+        "motionBridge": {
+          "bridgeId": "bridge-con-motion-insufficient-specificity",
+          "tier": "motion",
+          "description": "Show that the historical record does not make a physical resurrection sufficiently specific or warranted among the available explanations."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-con-central-source-ambiguity",
+            "tier": "central",
+            "description": "Establish that Pauline and Gospel materials do not unambiguously preserve firsthand testimony to ordinary physical encounters with the risen Jesus."
+          },
+          {
+            "bridgeId": "bridge-con-central-tomb-alternatives",
+            "tier": "central",
+            "description": "Provide historically plausible burial, reburial, theft, or narrative-development accounts that prevent a missing body from uniquely indicating resurrection."
+          },
+          {
+            "bridgeId": "bridge-con-central-rival-parity",
+            "tier": "central",
+            "description": "Show that comparable miracle and witness traditions create a consistency test that the resurrection evidence must satisfy without selective standards."
+          },
+          {
+            "bridgeId": "bridge-con-central-sincerity-gap",
+            "tier": "central",
+            "description": "Separate sincere belief, persecution, conversion, and visionary experience from firsthand knowledge of a physical resurrection and death specifically for that testimony."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-con-subsidiary-corroboration",
+            "tier": "subsidiary",
+            "description": "Identify the absence or limits of independent, identifiable, and contemporaneous corroboration for the reported postmortem appearances."
+          },
+          {
+            "bridgeId": "bridge-con-subsidiary-burial-plausibility",
+            "tier": "subsidiary",
+            "description": "Test whether the narrated burial authorization, tomb placement, and discovery details fit the relevant historical and narrative circumstances."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-bodily-character-sources",
+        "title": "Bodily Character and Development of the Appearance Traditions",
+        "weightPercent": 24,
+        "rationale": "The motion requires a physical resurrection, so the meaning of Pauline bodily language, Gospel physicality, retained wounds, recognition scenes, and possible visionary development determines what event the sources purport to support."
+      },
+      {
+        "sectionId": "section-appearances-corroboration",
+        "title": "Appearances, Corroboration, and Explanatory Inference",
+        "weightPercent": 22,
+        "rationale": "Individual and group encounter reports, the five hundred, Paul and James, companion corroboration, and the early proclamation form the principal testimonial basis for comparing resurrection with visionary or developmental explanations."
+      },
+      {
+        "sectionId": "section-empty-tomb-burial",
+        "title": "Empty Tomb, Burial History, and Natural Alternatives",
+        "weightPercent": 22,
+        "rationale": "The tomb is the principal proposed link between appearance testimony and a physically absent corpse, making burial plausibility, women witnesses, apologetic features, reburial, theft, and grave-disturbance alternatives burden-relevant."
+      },
+      {
+        "sectionId": "section-rival-miracles",
+        "title": "Rival Miracle Claims and Consistent Evidential Standards",
+        "weightPercent": 17,
+        "rationale": "Mormon witnesses, Brigham Young's reported transfiguration, later Christian miracles, and possible non-Christian wonders test whether the historical criteria used for resurrection testimony distinguish it from structurally similar claims."
+      },
+      {
+        "sectionId": "section-sincerity-martyrdom",
+        "title": "Sincerity, Persecution, and Martyrdom Evidence",
+        "weightPercent": 15,
+        "rationale": "Costly proclamation can bear on witness sincerity, but its force depends on the historical basis for apostolic danger or death and on whether the relevant people possessed firsthand bodily knowledge rather than visionary conviction."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-bodily-inconsistent-physicality",
+        "sectionId": "section-bodily-character-sources",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Pauline and Gospel descriptions combine spiritual language and barrier-crossing or untouchable qualities with touching and eating, leaving the appearances ambiguous as evidence of an ordinary physical body.",
+        "sourceSpan": {
+          "startEvent": 183,
+          "endEvent": 232,
+          "excerpt": "him and can move through walls and how Paul says that flesh and blood can't inherit the the kingdom and and all of this kind of stuff and and uh second Peter talking about how he has this tent of a body that he will one day get rid of as we've seen Christ essentially do. Uh but at the same time you have these I think pmical uh moments of Jesus saying no no no like touch my feet"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator addresses Alex directly, and the ensuing sustained first-person skeptical response is clearly O'Connor's speech.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-ambiguity"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive source-ambiguity argument, so it has no earlier opposing move to answer."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The ambiguity claim is recoverable, though “ordinary physical body” leaves the relevant standard somewhat unsettled."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move argues for ambiguity rather than impossibility and openly recognizes evidence pointing in both directions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A transformed physical body can possess unusual capacities while remaining genuinely embodied.",
+          "decisiveQualification": "Compatibility does not by itself remove the evidential ambiguity created by the mixed descriptions."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The mixed-source features coherently support ambiguity, with only the physicality standard left partly implicit."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "Several textual features are identified, but their dates, genres, and interpretive relationships are compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It bears directly on the central skeptical requirement that the earliest and later sources remain ambiguous about ordinary physical encounters."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts wall-crossing and Pauline flesh-and-blood language with invitations to touch Jesus’s feet.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-rival-mormon-witness-parity",
+        "sectionId": "section-rival-miracles",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Mormon witness traditions present collective testimony, continued attestation after estrangement, persecution, and disputed physical-versus-visionary experience, creating a consistency test for resurrection testimony.",
+        "sourceSpan": {
+          "startEvent": 233,
+          "endEvent": 330,
+          "excerpt": "called for the extermination and expulsion of Mormons. They were chased out of basically every state that they went into. In other words, I'd like to know how we explain that there. Then the eight witnesses who don't witness the angel, but they do witness the golden plates. Eight of them who again, three of those guys also lose touch with the Mormon church, fall out with Joseph"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly introduces Mormonism and develops the comparison continuously in his own voice across the entire source window.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-rival-parity"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive comparison supplies a consistency test and therefore has no earlier reply target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition clearly offers a comparative test rather than claiming complete identity between traditions."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The comparison is advanced as an evidential challenge, with relevant disputes and qualifications acknowledged."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The resurrection tradition may differ materially in incentives, setting, and background historical constraints.",
+          "decisiveQualification": "Those differences must be demonstrated and shown evidentially relevant rather than merely asserted."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The analogy coherently transfers specified testimonial criteria without requiring that the traditions be identical."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move nearly maximizes central-tier relevance by directly constructing the rival-parity test required by the skeptical route."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The source identifies three and eight witnesses, estrangement, continued attestation, persecution, and disputed experience type.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-five-hundred-corroboration-limits",
+        "sectionId": "section-appearances-corroboration",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Reports of Brigham Young's transfiguration contain more identifiable testimonial detail than Paul's unverified report of five hundred witnesses, whose identities, gathering, beliefs, and accessibility remain unknown.",
+        "sourceSpan": {
+          "startEvent": 331,
+          "endEvent": 471,
+          "excerpt": "people seeing quite a miraculous event. Now, you could say, well, that report comes 26 years later. >> Okay. And how much later were Paul's reports? How much later were the gospel reports? Also note that in 1857 which is just 13 years after this event after the transfiguration you have uh Albert Carrington's experience recorded where Carrington says that well well Brigham Young"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted argument is delivered by O'Connor, who names historical Mormon reports and directly compares them with Pauline resurrection testimony.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-corroboration"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive corroboration challenge and therefore does not answer an earlier opposing move."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative proposition and the specific missing information about the five hundred are clearly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The specified verification gaps support skepticism, though relative detail alone does not establish that the Mormon report is evidentially stronger overall."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul’s early report may preserve genuine group testimony even without surviving names or records.",
+          "decisiveQualification": "Early reporting does not supply the identities, independence, or circumstances needed for verification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is at the top of the subsidiary tier because it directly tests independent, identifiable, and contemporaneous corroboration for a major appearance report."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt compares dated Brigham Young reports with Pauline and Gospel timing while the proposition identifies missing witness details.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-bodily-pauline-physicality",
+        "sectionId": "section-bodily-character-sources",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Paul's Jewish framework and transformed-body language support physical resurrection rather than disembodied survival, while embodied Gospel encounters and an empty tomb distinguish resurrection from a vision.",
+        "sourceSpan": {
+          "startEvent": 478,
+          "endEvent": 568,
+          "excerpt": "physical body like eating fish. Showing I'm not a ghost. I'm not a spirit. Uh I am the inauguration of the resurrection which was unheard of for Jews at that time before the end of the world. That's striking that they proclaim Jesus rose. Not just that he was in heaven, not just that he was in Abraham's bosom that he rose. The the reference to Jesus when Paul says flesh and blood cannot inherit the kingdom. He uses that as a semitism, a Jewish"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator requests Horn's response, and Horn then gives a continuous first-person interpretation of Paul and resurrection experience.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-bodily-appearances"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-bodily-inconsistent-physicality"
+          ],
+          "components": [
+            {
+              "componentId": "pro-bodily-pauline-physicality-component-01",
+              "targetMoveId": "con-bodily-inconsistent-physicality",
+              "text": "Explain why Paul's spiritual and flesh-and-blood language does not make the risen body disembodied or evidentially ambiguous.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-bodily-pauline-physicality-component-02",
+              "targetMoveId": "con-bodily-inconsistent-physicality",
+              "text": "Account for the Gospel combination of unusual capacities with touching, eating, and an empty tomb.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly interprets Paul's language through a Jewish transformed-body framework and invokes eating and the empty tomb. It contacts both major components, although the barrier-crossing and untouchability examples receive less explicit reconciliation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The physical-resurrection interpretation is clear and stable, with a bounded implicit qualification that physical identity need not entail ordinary mortal bodily capacities."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited linguistic and narrative considerations strongly favor Horn's reading, but the move understates continuing interpretive uncertainty about Pauline terminology."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul’s transformed spiritual body may remain corporeally ambiguous despite a Jewish resurrection framework.",
+          "decisiveQualification": "Jewish context supports corporeality but does not alone settle every Pauline or Gospel description."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It sits at the top of the central tier because it directly advances the indispensable bodily-appearances bridge."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The reply addresses the strongest semantic alternative directly and supplies the decisive transformed-body qualification, with only limited treatment of all Gospel anomalies."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "This is a full answer within the repository class, but it falls below 90 because one group of cited Gospel tensions is only implicitly resolved."
+          }
+        },
+        "evidenceBasis": "Horn cites eating fish, denial of being a ghost, Jewish resurrection expectations, and a Semitic reading of flesh and blood.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-rivals-supernatural-admissibility",
+        "sectionId": "section-rival-miracles",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Christian theology can admit genuine post-apostolic or non-Christian wonders without thereby endorsing every doctrine of the religion surrounding such an event.",
+        "sourceSpan": {
+          "startEvent": 610,
+          "endEvent": 672,
+          "excerpt": "that God could perform miracles or signs or wonders among non-Christians and that could still be harmonious with Christian theology. Yes. Because God because God loves everybody. So if a if you know a Buddhist prays in the middle of a flood to be saved, God might miraculously save her because he loves that person. He loves her without necessarily endorsing the truth of Buddhism"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Horn explicitly labels the passage as his reply and speaks from a Catholic continuationist position throughout the complete argumentative unit.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-supernatural-prior"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-rival-mormon-witness-parity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-rivals-supernatural-admissibility-component-01",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Whether comparable Mormon witness evidence imposes a consistency test on resurrection testimony.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The theological admissibility of non-Christian wonders is relevant background, but it does not evaluate the Mormon witnesses or answer the parity criteria."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The limited claim that a wonder need not endorse an entire religion is clearly and carefully bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move asserts only theological possibility, and the offered example fits that modest force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A miracle associated with another religion may count as evidence for that religion's truth claims.",
+          "decisiveQualification": "An isolated beneficial intervention need not endorse every doctrine or institutional claim associated with the beneficiary."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The distinction between an event’s occurrence and endorsement of surrounding doctrine is explicit and valid."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is highly relevant within the subsidiary tier because it directly advances the supernatural-prior bridge, despite not resolving central rival parity."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply accurately distinguishes an event's possible occurrence from wholesale doctrinal endorsement and preserves the evidential alternative in qualified form."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "This is a relevant nonanswer within its class because it addresses admissibility without contacting testimonial parity."
+          }
+        },
+        "evidenceBasis": "Horn says God could aid a non-Christian miraculously out of love without thereby affirming Buddhism’s truth.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-rivals-mormon-differences",
+        "sectionId": "section-rival-miracles",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Mormon witness claims are distinguishable from resurrection testimony by prompting and investment among witnesses, Joseph Smith's worldly incentives, possible artifacts or hoaxes, and conflicts with established historical knowledge.",
+        "sourceSpan": {
+          "startEvent": 713,
+          "endEvent": 785,
+          "excerpt": "In 1843, there were people who created a hoax set of plates called the Kinderhook plates. Yes. That Joseph went to went to engage and read. So, those could have been natural artifacts. It could have been hoaxes. I'm not as impressed by that. The three witnesses who saw the angel, when when you look through, there's a lot of discrepancies. It seems like they had to go and Joseph"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Horn enumerates the disanalogies in a continuous response, consistently referring to Mormon witnesses, Joseph Smith, apostles, and Christianity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-rival-discrimination"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-rival-mormon-witness-parity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-rivals-mormon-differences-component-01",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Provide reliability-relevant disanalogies between Mormon witness traditions and resurrection testimony under a consistent evidential standard.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-rivals-mormon-differences-component-02",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Address the force of collective Mormon testimony despite estrangement and continued attestation.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply supplies several proposed disanalogies involving prompting, investment, incentives, possible artifacts or hoaxes, and conflict with background history. It does not squarely answer continued attestation after estrangement."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The disanalogies are recoverable, but the move shifts among three witnesses, plates, Joseph Smith, and broader Mormon historical claims without always delimiting which witness claim each objection affects."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Several differences are plausible, but their comparative magnitude and consistent application are not fully demonstrated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Estranged Mormon witnesses may retain claims despite reduced institutional incentives and thus gain independence.",
+          "decisiveQualification": "Continued attestation does not remove prompting, artifact, or background-knowledge questions, but it remains relevant evidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central pro requirement to discriminate resurrection testimony from structurally similar rival traditions."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a high partial answer because it contacts the decisive comparative demand but leaves an important supporting parity component unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt cites possible natural artifacts, the Kinderhook hoax, discrepancies, and prompting around angelic witness experiences.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-paul-gospel-development",
+        "sectionId": "section-bodily-character-sources",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Paul is unclear about the resurrected body's physicality, while later Gospel appearance accounts become increasingly elaborate and theological rather than supplying an unambiguous early bodily description.",
+        "sourceSpan": {
+          "startEvent": 888,
+          "endEvent": 931,
+          "excerpt": "okay, so so much of this relies upon Paul, who I think is at best unclear about the physicality of Jesus. I mean, like Trent has just defended Paul's use of the word spiritual in a way that would like spiritual body. He also just to be clear you mentioned Philippians I think it's chapter 3 where where Paul says you know we will sort of uh take on a new body just like Christ and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator and interlocutor address Alex by name, and the uninterrupted first-person argument matches his skeptical position throughout the surrounding exchange.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-ambiguity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-bodily-pauline-physicality"
+          ],
+          "components": [
+            {
+              "componentId": "con-paul-gospel-development-component-01",
+              "targetMoveId": "pro-bodily-pauline-physicality",
+              "text": "Show that Paul's transformed-body terminology unambiguously supports corporeal continuity rather than an unclear spiritual mode.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-paul-gospel-development-component-02",
+              "targetMoveId": "pro-bodily-pauline-physicality",
+              "text": "Show that later embodied Gospel scenes independently resolve the ambiguity in Paul's earlier description.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly disputes the clarity of Paul's terminology and argues that later Gospel elaboration does not supply an unambiguous early bodily description. It contacts both components but gives limited source-development support."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between Pauline ambiguity and later Gospel elaboration is clearly recoverable and qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The phrase “at best unclear” signals uncertainty appropriate to the limited textual-development claim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later Gospel details may preserve earlier embodied memories rather than represent theological development.",
+          "decisiveQualification": "Later detail is not automatically invention, but it cannot independently eliminate ambiguity in Paul’s earlier language."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central skeptical source-ambiguity bridge and attacks a principal proposed Pauline resolution."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The reply states Horn's transformed-body reading before explaining why it does not eliminate the earlier source ambiguity."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "This is a full answer within the class, though it remains below 90 because its development inference is more asserted than explicitly demonstrated."
+          }
+        },
+        "evidenceBasis": "O’Connor calls Paul unclear about physicality and contrasts that ambiguity with increasingly elaborate Gospel presentation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-bodily-continuity-wounds",
+        "sectionId": "section-bodily-character-sources",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Paul's bodily terminology indicates corporeality, and Jesus's retained crucifixion wounds identify the risen figure as the same embodied person who was crucified.",
+        "sourceSpan": {
+          "startEvent": 1275,
+          "endEvent": 1298,
+          "excerpt": "that I think it's been poetically put that the only man-made thing in heaven will be the wounds of the crucifixion on Christ. And so I think that that would really stand to yeah that this is how Christ triumphed over death and was able to show yes it is I. It is not someone else. It is not some kind of a duplicate. This is I am the same person body and soul who was crucified who"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Trent explicitly turns to Alex's objection about Paul's bodily language and continues with his own interpretation of the wounds and personal identity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-bodily-appearances"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-bodily-inconsistent-physicality",
+            "con-paul-gospel-development"
+          ],
+          "components": [
+            {
+              "componentId": "pro-bodily-continuity-wounds-component-01",
+              "targetMoveId": "con-bodily-inconsistent-physicality",
+              "text": "Explain why the appearance traditions identify the risen figure as the same embodied Jesus rather than a duplicate or disembodied entity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-bodily-continuity-wounds-component-02",
+              "targetMoveId": "con-paul-gospel-development",
+              "text": "Show that bodily continuity is grounded in the relevant source descriptions rather than merely later theological elaboration.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-bodily-continuity-wounds-component-03",
+              "targetMoveId": "con-bodily-inconsistent-physicality",
+              "text": "Reconcile retained wounds with the spiritual, barrier-crossing, and untouchable features cited against ordinary physicality.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The retained-wounds argument directly contacts personal and bodily continuity, but it does not resolve the full inconsistency objection or establish that the wound tradition is early rather than developed."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The continuity inference is clear, with an implicit limitation that narrated wounds require source reliability."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Wounds would support identity if historical, but the move does not separately defend the narratives’ evidential status."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Retained wounds may be a later literary identity motif rather than independent historical evidence.",
+          "decisiveQualification": "The motif strongly conveys bodily continuity, but its historical force depends on the narrative’s reliability."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly advances the central bodily-appearances bridge by arguing for corporeality and identity continuity."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move strongly addresses what the narratives purport to claim, but it does not fully answer the alternative about the tradition's historical development."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a partial answer that contacts a decisive bodily-continuity component while leaving two important source and property challenges unanswered."
+          }
+        },
+        "evidenceBasis": "Horn argues that the crucifixion wounds show the risen figure is the same person, body and soul, who was crucified.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-appearances-group-source",
+        "sectionId": "section-appearances-corroboration",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Luke's historical reliability and relationship to Paul support reports of group appearances, while the limited period of appearances weighs against uncontrolled visionary enthusiasm.",
+        "sourceSpan": {
+          "startEvent": 1310,
+          "endEvent": 1390,
+          "excerpt": "it comes to let's say okay you're saying well we got Paul he's got the appearances how do we know this wasn't just hallucination that's where I depart from the minifax people and saying I think especially like Luke's description of these group appearances I think Luke is a very reliable source when talking about things uh so for example um just because something's recorded only"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The sustained answer follows Trent's first-person transition to hallucination claims and includes an interlocutor's brief challenge before Trent resumes the same case.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-testimonial-explanation"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-five-hundred-corroboration-limits",
+            "con-paul-gospel-development"
+          ],
+          "components": [
+            {
+              "componentId": "pro-appearances-group-source-component-01",
+              "targetMoveId": "con-five-hundred-corroboration-limits",
+              "text": "Supply identifiable, independent, or otherwise verifiable corroboration for Paul's report that five hundred people saw Jesus.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-appearances-group-source-component-02",
+              "targetMoveId": "con-paul-gospel-development",
+              "text": "Explain why Luke's later group-appearance narratives should be treated as reliable history rather than theological development.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move offers Luke's reliability and connection to Paul as support for group appearances and limits visionary enthusiasm by the finite appearance period. It does not supply the missing verification details for the five hundred."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The argument is clear, but “reliable source” is broad and its domain of application is not fully specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "General confidence in Luke and a limited appearance period do not by themselves establish independent group corroboration or defeat visionary explanations."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Luke may faithfully report a tradition without independently corroborating the underlying group encounter.",
+          "decisiveQualification": "Source competence and Pauline association do not by themselves establish witness independence or event verification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally advances the testimonial-explanation bridge by defending group reports, though it misses the narrower corroboration demand."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 68,
+            "rationale": "This is a relevant nonanswer near the top of that class because it offers adjacent group-source support but leaves the decisive five-hundred demand uncontacted."
+          }
+        },
+        "evidenceBasis": "Horn invokes Luke’s description of group appearances, Luke’s reliability, and the limited period of reported appearances.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-sincerity-informed-danger",
+        "sectionId": "section-sincerity-martyrdom",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Danger faced by informed apostolic proclaimers supports the sincerity of their testimony, while Paul's conversion from hostile persecutor supplies a feature absent from the proposed Mormon parallel.",
+        "sourceSpan": {
+          "startEvent": 1395,
+          "endEvent": 1460,
+          "excerpt": "reward like we might see with someone like Joseph Smith. They do it for the the ferveny of communicating this message. the the risk of martyrdom is something that is an argument for the sincerity of one's testimony. So I believe that the apostles were sincere and Paul was sincere and we don't have a similar in Mormonism a fervent opponent to Mormonism in the in the early Mormon"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker states Trent's previously articulated distinction between dying for error and dying for a known lie, then develops his apostolic comparison after clarification.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-sincerity"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-rival-mormon-witness-parity",
+            "con-five-hundred-corroboration-limits"
+          ],
+          "components": [
+            {
+              "componentId": "pro-sincerity-informed-danger-component-01",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Identify a sincerity- or incentive-relevant difference between early resurrection proclaimers and the proposed Mormon parallel.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-sincerity-informed-danger-component-02",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Address Mormon witnesses who maintained testimony despite estrangement, persecution, or institutional cost.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-sincerity-informed-danger-component-03",
+              "targetMoveId": "con-five-hundred-corroboration-limits",
+              "text": "Provide corroboration that the relevant apostolic proclaimers possessed firsthand knowledge of the reported group event.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts comparative incentives through danger, lack of worldly reward, and Paul's hostile prior position. It does not address estranged Mormon attestation or establish firsthand access for all relevant proclaimers."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The sincerity claim is expressly limited, but the move shifts from apostles generally to Paul specifically without fully specifying which people had what firsthand information."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Danger and hostile prior commitment can support sincerity, but the inference is somewhat stronger than the move's historical specification of danger and knowledge permits."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Mormon witnesses also faced costs and some retained testimony after estrangement.",
+          "decisiveQualification": "Costs can support sincerity on both sides without equalizing prior hostility, incentives, or claim content."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The general danger and incentive claims are plausible but only selectively documented in the presented material."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is highly relevant within the subsidiary sincerity tier because it expressly uses danger only to support informed sincerity."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "This is a partial answer: it contacts a significant comparative component but leaves other decisive parity and knowledge components unanswered."
+          }
+        },
+        "evidenceBasis": "Horn expressly calls martyrdom risk evidence for sincerity and contrasts Paul the former opponent with early Mormonism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-sincerity-apostolic-risk",
+        "sectionId": "section-sincerity-martyrdom",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Early indications of apostolic danger support sincere resurrection testimony without proving resurrection by themselves, and apocryphal reports should be assessed individually rather than accepted or rejected wholesale.",
+        "sourceSpan": {
+          "startEvent": 1600,
+          "endEvent": 1674,
+          "excerpt": "testimony may not be sincere because it's often positively received. You get to be in the news, people get to celebrate you. It's, you know, it's all all well and good in that respect. Uh but what I'm showing is that the the early proclaimers of Jesus's resurrection who would have known whether it really happened or not if they just simply made the whole thing up. Uh so so Paul"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator asks Trent to answer Alex, after which Trent restates his argument, cites early sources, and distinguishes his treatment of apocryphal evidence.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-sincerity"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-paul-gospel-development",
+            "con-rival-mormon-witness-parity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-sincerity-apostolic-risk-component-01",
+              "targetMoveId": "con-paul-gospel-development",
+              "text": "Whether early sources clearly establish physically embodied encounters rather than later narrative development.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-sincerity-apostolic-risk-component-02",
+              "targetMoveId": "con-rival-mormon-witness-parity",
+              "text": "Whether costly testimony distinguishes apostolic witnesses from rival religious witnesses.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move develops sincerity and source treatment but does not answer the primary earlier bodily-source-development challenge available in this span."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim carefully separates sincerity support from proof and rejects wholesale treatment of apocryphal reports."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The limited conclusion is calibrated, though who knew what and which risks are early remains partly assumed."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Persecuted proclaimers may sincerely hold a visionary or inherited belief rather than know a bodily claim.",
+          "decisiveQualification": "Risk supports sincerity only where the person’s knowledge and the threatened testimony are adequately specified."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It strongly advances the subsidiary sincerity bridge while stopping short of making costly proclamation a central resurrection proof."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (77 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "It is a partial answer because it contacts a secondary rival-comparison component but not the primary source ambiguity."
+          }
+        },
+        "evidenceBasis": "Horn distinguishes dying for a known fabrication from sincere proclamation and urges case-by-case treatment of early reports.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-tomb-sober-women",
+        "sectionId": "section-empty-tomb-burial",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "The canonical tomb narratives appear sober compared with later embellishment, while their guards and socially disadvantageous women witnesses support an early historical empty-tomb tradition.",
+        "sourceSpan": {
+          "startEvent": 1682,
+          "endEvent": 1747,
+          "excerpt": "a young man who's described who is assumed to be an angel. So, it's a very sober account. Uh but even if there are angels that are present, they're here. They they inform the women about this. But even the guards themselves, you might, some might say, \"Well, that was an apologetic motif that was invented that still shows an explanation that the tomb was empty.\" I'm not prepared"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted argument precedes the moderator's direct invitation for Alex to answer Trent's women-witnesses argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-empty-tomb"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-paul-gospel-development"
+          ],
+          "components": [
+            {
+              "componentId": "pro-tomb-sober-women-component-01",
+              "targetMoveId": "con-paul-gospel-development",
+              "text": "Whether later narrative elaboration undermines the historical usability of the canonical physical and tomb traditions.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Horn answers the development concern by contrasting the canonical account's relative sobriety with later embellishment and adducing guards and socially disadvantageous women as signs of an early empty-tomb tradition. He does not independently establish every narrated detail."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposition is clear, though “sober” and “socially disadvantageous” require contextual standards not fully specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The features offer some authenticity support, but the inference from apologetic motifs to an empty tomb is too strong."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Women and guards can serve literary or apologetic purposes without preserving an empty-tomb event.",
+          "decisiveQualification": "Potential motif does not prove invention, but neither does an apologetic explanation establish historical emptiness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The argument directly supports the central empty-tomb bridge through the character and witnesses of the discovery narratives."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "Horn expressly entertains an invented apologetic motif, but his conclusion that it still shows emptiness compresses the distinction between narrative presupposition and history."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "The reply contacts the decisive development concern but supplies only a compressed comparative and social-disadvantage warrant."
+          }
+        },
+        "evidenceBasis": "Horn contrasts the canonical account with embellishment, notes women as witnesses, and discusses guards as an empty-tomb explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-postmortem-extrabiblical-gap",
+        "sectionId": "section-appearances-corroboration",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Evidence for Jesus before crucifixion has supportive and hostile extrabiblical corroboration, whereas the reported postmortem appearances, including the five hundred, lack comparable independent corroboration.",
+        "sourceSpan": {
+          "startEvent": 2036,
+          "endEvent": 2125,
+          "excerpt": "those who didn't know Jesus as well, those to be the doubters versus those who knew him very well. >> The only point that I'm making is that I don't know if I would say that about that evidence. I have no idea. But what I'm saying is that when you say that the we have just as good reasons to think that he was alive before the crucifixion as after, I just don't think that's true"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Alex directly rejects Trent's earlier equivalence claim and repeatedly distinguishes pre-crucifixion extrabiblical material from post-resurrection Christian testimony.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-corroboration"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-appearances-group-source"
+          ],
+          "components": [
+            {
+              "componentId": "con-postmortem-extrabiblical-gap-component-01",
+              "targetMoveId": "pro-appearances-group-source",
+              "text": "Whether Luke and early Christian sources provide adequate historical support for group appearances.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O’Connor directly distinguishes pre-crucifixion corroboration from postmortem Christian reports and applies that deficit to the five hundred."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The temporal and source distinction between pre-crucifixion and postmortem evidence is clearly drawn."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The comparative claim is well framed, but saying there is no extrabiblical material compresses questions about later non-Christian references and their evidential relevance."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early Christian testimony can have historical value even without hostile or non-Christian corroboration.",
+          "decisiveQualification": "Its value remains, but it is not equivalent to independent extrabiblical confirmation of the postmortem events."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It reaches the top of the subsidiary corroboration tier by directly challenging independent support for the appearance reports."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts the decisive corroboration inference, though it does not separately refute Luke’s general reliability."
+          }
+        },
+        "evidenceBasis": "O’Connor contrasts supportive and hostile extrabiblical evidence for Jesus’s life with its absence for postmortem appearances.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-appearances-conversions-conduct",
+        "sectionId": "section-appearances-corroboration",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Resurrection provides a unified explanation for the conversions of the previously unbelieving James and hostile Paul and for the apostles' transition from fear to bold proclamation.",
+        "sourceSpan": {
+          "startEvent": 2130,
+          "endEvent": 2138,
+          "excerpt": "if Jesus did not rise from the dead, it becomes much more difficult to explain why James, who didn't believe, converted, why Paul, who was a persecutor, converted, and why all of these scared and frightened apostles boldly proclaim this truth. Uh I I think it it fulfills that explanatory data here very well"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker presents the pro-side explanatory inference in first person, and Alex's next turn directly addresses Trent by name in response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-testimonial-explanation"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-postmortem-extrabiblical-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-appearances-conversions-conduct-component-01",
+              "targetMoveId": "con-postmortem-extrabiblical-gap",
+              "text": "Whether postmortem appearances possess independent extrabiblical corroboration comparable to Jesus’s life.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The conversion-and-conduct inference offers relevant explanatory evidence but does not supply or replace the requested independent corroboration."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposed explanatory data are clearly listed, with alternatives and independence assumptions left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Resurrection could unify the data, but the claim that alternatives are much more difficult is not comparatively demonstrated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conversions and bold conduct can follow sincere visionary experience, social influence, or later narrative framing.",
+          "decisiveQualification": "A unified resurrection account is explanatorily simple, but rival mechanisms require explicit comparative testing."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central testimonial-explanation bridge by offering resurrection as a unified account of conversions and conduct."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The move states the resurrection explanation clearly but largely omits the strongest natural and developmental alternatives."
+          },
+          "responsiveness": {
+            "value": 56,
+            "rationale": "It is strong relevant contrary material, but it remains a nonanswer to the decisive independence demand."
+          }
+        },
+        "evidenceBasis": "Horn cites James’s unbelief, Paul’s persecution, and the apostles’ transition from fear to bold proclamation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-martyrdom-bodily-knowledge-gap",
+        "sectionId": "section-sincerity-martyrdom",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Persecution and martyrdom do not establish bodily resurrection where the clearest cases concern visions or the evidence does not show what the alleged witnesses saw and why they died.",
+        "sourceSpan": {
+          "startEvent": 2151,
+          "endEvent": 2227,
+          "excerpt": "uh how you know the the persecution of the apostles is clear. If you look at Paul's letters, he talks very clearly about the persecutions he he underwent. Certainly so. But remember what Paul saw. Remember the nature of Paul's experience. It's a it's a flash of light. Paul did not meet the bodily resurrected Jesus. And that's the claim that we're discussing whether Jesus bodily"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Alex introduces the distinction after Trent's concession and develops it through Paul, Stephen, Peter and James before restating the required caution.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-sincerity-gap"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-sincerity-apostolic-risk",
+            "pro-appearances-conversions-conduct"
+          ],
+          "components": [
+            {
+              "componentId": "con-martyrdom-bodily-knowledge-gap-component-01",
+              "targetMoveId": "pro-sincerity-apostolic-risk",
+              "text": "Whether apostolic persecution bears on firsthand knowledge of a bodily resurrection rather than sincere visionary conviction.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-martyrdom-bodily-knowledge-gap-component-02",
+              "targetMoveId": "pro-appearances-conversions-conduct",
+              "text": "Whether Paul's conversion and later conduct specifically support a bodily encounter.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor expressly diagnoses the gap: Paul's well-attested persecution can establish commitment, but Paul's described experience is a light rather than meeting the bodily Jesus. He extends the distinction to uncertainty about what other alleged witnesses saw and why they died."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move precisely distinguishes suffering, sincerity, firsthand bodily experience, and reasons for death."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conclusion is appropriately limited to what persecution and martyrdom fail to establish."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Danger can support sincerity even when the precise experience or charge causing death is incompletely documented.",
+          "decisiveQualification": "Sincerity remains relevant, but it cannot establish bodily knowledge without evidence of what was seen and why death occurred."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "Paul, Stephen, Peter, and James provide concrete tests, though each historical record is only summarized."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly supports the central sincerity-gap bridge by separating costly commitment from relevant firsthand bodily knowledge."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The reply directly identifies the inference's missing bodily-knowledge premise and states why persecution cannot supply it."
+          }
+        },
+        "evidenceBasis": "O’Connor contrasts Paul’s light experience with bodily encounter and asks what alleged witnesses saw and why they died.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-reburial-theft-alternatives",
+        "sectionId": "section-empty-tomb-burial",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "A temporarily used emergency tomb followed by proper reburial or grave robbery provides historically plausible natural explanations for an empty tomb without uniquely indicating resurrection.",
+        "sourceSpan": {
+          "startEvent": 2268,
+          "endEvent": 2417,
+          "excerpt": "the tomb was nearby, they put Jesus there? It seems to me that this is like an emergency burial in time for the Sabbath. When does the Sabbath end? It ends on Saturday night. So then the burial party come to this emergency tomb, take the body of Jesus and give it a proper burial. Early that morning when it's still dark, so a few hours later, Mary comes along, sees an empty tomb"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Alex explicitly returns to the empty-tomb question and develops a sustained skeptical scenario until the moderator gives Trent time to answer those claims.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-tomb-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-tomb-sober-women"
+          ],
+          "components": [
+            {
+              "componentId": "con-reburial-theft-alternatives-component-01",
+              "targetMoveId": "pro-tomb-sober-women",
+              "text": "Whether the canonical discovery narrative supports a historically usable empty tomb uniquely pointing toward resurrection.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O’Connor accepts the reported discovery for argument’s sake and supplies reburial and theft explanations for the observed emptiness."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The emergency-tomb, reburial, and robbery hypotheses are separately identifiable and framed as possibilities."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately presents historically possible alternatives rather than claiming either is established."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An honorable tomb placement may have been intended as final, and robbery may fit the burial details poorly.",
+          "decisiveQualification": "Those objections affect probability but do not remove reburial or theft as live explanations requiring comparison."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central tomb-alternatives bridge with concrete reburial and theft hypotheses."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The move develops natural possibilities without claiming certainty and leaves their detailed comparative assessment open."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The move directly contacts the empty-tomb inference with two developed natural alternatives."
+          }
+        },
+        "evidenceBasis": "O’Connor describes temporary Sabbath burial, later proper reburial, Mary’s initial removal inference, and ancient grave theft.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-tomb-alternatives-conjunction",
+        "sectionId": "section-empty-tomb-burial",
+        "side": "pro",
+        "speaker": "Trent Horn",
+        "moveKind": "reply",
+        "proposition": "Non-resurrection accounts require a conjunction of missing-body and appearance hypotheses, while grave robbery fits poorly with preserved burial goods and an intact missing body.",
+        "sourceSpan": {
+          "startEvent": 2429,
+          "endEvent": 2536,
+          "excerpt": "hypotheses that that lowers their probability when you when you do that. So, so you you I would say for people, okay, look at it. Resurrection explains it. What other things do explain it? And you'll start to run into problems of starting to squish and ignore the data or compress it. Uh so, when it comes to like body theft, you're correct. There are inscriptions warning against grave robbery, but grave robbery was primarily about valuables"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "After the moderator requests Trent's response, Trent directly contrasts resurrection with skeptical hypotheses and continues through the delivered discussion of burial plausibility.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-tomb-alternatives"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-reburial-theft-alternatives",
+            "con-martyrdom-bodily-knowledge-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-tomb-alternatives-conjunction-component-01",
+              "targetMoveId": "con-reburial-theft-alternatives",
+              "text": "Whether reburial or theft provides a plausible natural explanation for the empty-tomb evidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-tomb-alternatives-conjunction-component-02",
+              "targetMoveId": "con-martyrdom-bodily-knowledge-gap",
+              "text": "Whether natural accounts can jointly explain both missing-body and appearance testimony.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Horn directly challenges theft and argues that natural accounts must combine separate tomb and appearance hypotheses, though bodily-knowledge details remain unanswered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The conjunction objection and robbery-goods point are clear, with comparative independence assumptions left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Conjunction can lower probability, but only after dependencies and the resurrection hypothesis’s own commitments are assessed."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A natural account may combine dependent mechanisms without an extreme probability penalty.",
+          "decisiveQualification": "Multiple required mechanisms matter, but their dependence and individual plausibility must be estimated rather than assumed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central tomb-alternatives bridge by challenging cumulative fit and the grave-robbery mechanism."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "Horn recognizes alternative families but treats conjunction as more automatically damaging than the argument establishes."
+          },
+          "responsiveness": {
+            "value": 74,
+            "rationale": "This is a high partial answer: it contacts the decisive tomb alternative but not every testimonial component."
+          }
+        },
+        "evidenceBasis": "Horn argues that non-resurrection accounts need both missing-body and appearance mechanisms and notes robbery’s focus on valuables.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-pilate-burial-plausibility",
+        "sectionId": "section-empty-tomb-burial",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The Gospel portrayal of Pilate compassionately authorizing Jesus's burial is historically questionable because other accounts characterize Pilate as a ruthless ruler.",
+        "sourceSpan": {
+          "startEvent": 2537,
+          "endEvent": 2545,
+          "excerpt": "Yeah. I just of course I don't think Pilate like in any story other than the gospels we have we don't get any idea of Pilot as someone who's like a a compassionate man who who obviously cares very much about his wife and and cares about this man Jesus. I think he was a ruthless leader who who couldn't give a a squat about"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn explicitly presents first-person historical skepticism characteristic of O'Connor's position and follows Horn's burial explanation.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-burial-plausibility"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-tomb-alternatives-conjunction"
+          ],
+          "components": [
+            {
+              "componentId": "con-pilate-burial-plausibility-component-01",
+              "targetMoveId": "pro-tomb-alternatives-conjunction",
+              "text": "Whether the narrated burial circumstances provide a secure basis for evaluating later tomb alternatives.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply attacks the prior burial framework by questioning whether the Gospel portrayal of Pilate fits external character evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The historical challenge is clear, though the inference from general ruthlessness to this particular authorization relies on an implicit contextual qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Pilate’s ruthlessness creates tension, but ruthless governance does not exclude pragmatic burial authorization."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Pilate could authorize burial pragmatically or under local pressure without compassion for Jesus.",
+          "decisiveQualification": "The Gospel characterization may still be shaped, but authorization does not require a compassionate disposition."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The character evidence is relevant, but the inference risks treating ruthlessness and burial authorization as incompatible."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The move asserts Pilate's ruthlessness without identifying the comparative accounts or evidence governing burial decisions in this case."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It substantially advances the subsidiary burial-plausibility bridge by questioning a prerequisite to the narrated tomb placement."
+          },
+          "representationalCharity": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (62 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts burial plausibility directly but does not address the conjunction or grave-robbery inference itself."
+          }
+        },
+        "evidenceBasis": "O’Connor contrasts the Gospel portrayal of Pilate with other accounts depicting him as a ruthless ruler.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-defection-testimony-independence",
+        "sectionId": "section-rival-miracles",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "A witness who retains an extraordinary-experience claim while repudiating its associated religious institution may offer unusually independent testimony rather than thereby weakening the claim.",
+        "sourceSpan": {
+          "startEvent": 2573,
+          "endEvent": 2609,
+          "excerpt": "uh it would be one thing for him to say, you know, I think these Catholics are wrong and I don't believe in God and I don't believe in the resurrection of Jesus. It's another thing to say, I think that their religious interpretation is incorrect and it's because of my belief. It's because of the strength of my belief in the original message that I want to be able to say this. I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker develops a skeptical alternative explanation and a hypothetical involving Paul that aligns with O'Connor's comparative argument.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-rival-parity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-rivals-mormon-differences"
+          ],
+          "components": [
+            {
+              "componentId": "con-defection-testimony-independence-component-01",
+              "targetMoveId": "pro-rivals-mormon-differences",
+              "text": "Whether estrangement or defection weakens Mormon witnesses or instead increases their testimonial independence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O’Connor directly reverses Horn’s incentive inference and explains why repudiating an institution while retaining a claim can strengthen independence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition is carefully conditional and does not claim that every defector’s testimony is reliable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents an alternative incentive analysis tentatively and supports it with a clarifying hypothetical."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A defector may retain an experience claim because of prior commitment, face-saving, or continuing social ties.",
+          "decisiveQualification": "Those motives remain possible, but institutional repudiation can reduce the simple loyalty explanation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central rival-parity bridge by defending the comparative force of estranged Mormon witnesses."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The reply expressly identifies and contests the decisive inference about estranged witnesses."
+          }
+        },
+        "evidenceBasis": "O’Connor argues that rejecting a religious institution while retaining the originating experience can reduce loyalty-based explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-firsthand-specific-martyrdom-deficit",
+        "sectionId": "section-sincerity-martyrdom",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The historical case lacks the combined evidence of identifiable firsthand testimony to a bodily risen Jesus and martyrdom specifically for that resurrection testimony rather than for Christian affiliation generally.",
+        "sourceSpan": {
+          "startEvent": 2667,
+          "endEvent": 2722,
+          "excerpt": "speaking, I think that evidence of particular apostles firsthand, if we had firsthand testimony uh to experience of the bodily resurrected Christ and also good evidence that those apostles were persecuted and martyed for that particular belief, not just being a Christian, not just spreading the message of Christ, but specifically the belief in the resurrection, uh who were sort"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The extended first-person answer states O'Connor's evidential standard and explains why the evidence discussed does not meet it.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-sincerity-gap"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-sincerity-apostolic-risk",
+            "pro-sincerity-informed-danger",
+            "pro-appearances-conversions-conduct"
+          ],
+          "components": [
+            {
+              "componentId": "con-firsthand-specific-martyrdom-deficit-component-01",
+              "targetMoveId": "pro-sincerity-apostolic-risk",
+              "text": "Whether early danger and martyrdom evidence concerns informed witnesses who knew a bodily resurrection claim.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-firsthand-specific-martyrdom-deficit-component-02",
+              "targetMoveId": "pro-sincerity-informed-danger",
+              "text": "Whether apostolic risk supports sincerity relevant to the specific resurrection testimony.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-firsthand-specific-martyrdom-deficit-component-03",
+              "targetMoveId": "pro-appearances-conversions-conduct",
+              "text": "Whether conversions and bold proclamation supply firsthand bodily testimony.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O’Connor specifies the combined evidence needed and explains that general Christian persecution does not establish death for firsthand bodily testimony."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The evidential standard distinctly identifies firsthand bodily experience, identifiable apostles, and testimony-specific martyrdom."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move states a deficit in the presented evidence rather than claiming that no relevant evidence could exist."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "General persecution plus early proclamation may cumulatively support sincere apostolic conviction despite incomplete death records.",
+          "decisiveQualification": "Cumulative sincerity support still does not establish firsthand bodily knowledge or death specifically for that claim."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The argument is well fitted to the evidential record discussed, with only the completeness of that record left compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It reaches the top of the central sincerity-gap tier by specifying precisely why the combined martyrdom inference remains incomplete."
+          },
+          "representationalCharity": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The response expressly contacts the precise knowledge, testimony, and cause-of-death links across the sincerity case."
+          }
+        },
+        "evidenceBasis": "O’Connor requires identifiable firsthand bodily testimony plus evidence of martyrdom for that particular claim, not Christian identity generally.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence remains distinct from the move ratings, response links, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion survives the strict exclusion rule.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion independently of scored moves."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence remains distinct from the move ratings, response links, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion survives the strict exclusion rule.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion independently of scored moves."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-bodily-character-sources",
+        "title": "Bodily Character and Development of the Appearance Traditions",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-bodily-pauline-physicality",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "pro-bodily-continuity-wounds",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-bodily-inconsistent-physicality",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "con-paul-gospel-development",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-appearances-corroboration",
+        "title": "Appearances, Corroboration, and Explanatory Inference",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-appearances-group-source",
+                "importance": 3,
+                "score": 73
+              },
+              {
+                "moveId": "pro-appearances-conversions-conduct",
+                "importance": 3,
+                "score": 72
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-five-hundred-corroboration-limits",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "con-postmortem-extrabiblical-gap",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-empty-tomb-burial",
+        "title": "Empty Tomb, Burial History, and Natural Alternatives",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-tomb-sober-women",
+                "importance": 3,
+                "score": 80
+              },
+              {
+                "moveId": "pro-tomb-alternatives-conjunction",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-reburial-theft-alternatives",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-pilate-burial-plausibility",
+                "importance": 2,
+                "score": 73
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-rival-miracles",
+        "title": "Rival Miracle Claims and Consistent Evidential Standards",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-rivals-supernatural-admissibility",
+                "importance": 2,
+                "score": 78
+              },
+              {
+                "moveId": "pro-rivals-mormon-differences",
+                "importance": 3,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-rival-mormon-witness-parity",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "con-defection-testimony-independence",
+                "importance": 2,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-sincerity-martyrdom",
+        "title": "Sincerity, Persecution, and Martyrdom Evidence",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-sincerity-informed-danger",
+                "importance": 2,
+                "score": 77
+              },
+              {
+                "moveId": "pro-sincerity-apostolic-risk",
+                "importance": 2,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 93,
+            "moves": [
+              {
+                "moveId": "con-martyrdom-bodily-knowledge-gap",
+                "importance": 3,
+                "score": 92
+              },
+              {
+                "moveId": "con-firsthand-specific-martyrdom-deficit",
+                "importance": 3,
+                "score": 93
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 78.41,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "con": {
+        "weightedSectionMean": 86.34,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      }
+    },
+    "winner": "con",
+    "winningMargin": 8
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 20,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}

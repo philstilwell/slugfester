@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-production-title-correction-1-execution",
+  "status": "passed-batch-11-production-title-correction-1",
+  "startedAt": "2026-08-26T17:13:18.390Z",
+  "completedAt": "2026-08-26T17:13:18.831Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/title-correction-1/execution-activation.json",
+    "sha256": "18b5dff3875c6f7d8bba137c44a562ca6149c89f1c82c2ffcc1e85de45d2889b",
+    "bytes": 2207
+  },
+  "correction": {
+    "debateNumber": "24",
+    "field": "sections[0].title",
+    "before": "Scope of the Poison Charge and Attribution of Good and Harm",
+    "after": "The Poison Charge and Attribution of Good and Harm",
+    "semanticFieldsChanged": 1,
+    "scoreChanges": 0,
+    "ledgerChanges": 0
+  },
+  "outputs": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "e6b013d17de300a7d5f94bb78ac318875d2bcb1e240f0ce77b69361aa3e41d0b",
+      "bytes": 6583392
+    },
+    "compatibilityLibrary": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs",
+      "sha256": "8350b45c30b4b34e0267c78020cabcb0baa5de48905ef7860ce19b57368f45a9",
+      "bytes": 8785
+    }
+  },
+  "validation": {
+    "routeAndScoreExitCode": 0,
+    "activeScorePolicyExitCode": 0,
+    "scoreSnapshotByteIdentical": true,
+    "allTenProductionLedgersByteIdentical": true
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "automaticRepairs": 0,
+    "semanticFieldsChanged": 1,
+    "writableFiles": 2,
+    "scoreChanges": 0,
+    "ledgerChanges": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "finalize-batch-11-production-publication-and-prepare-generated-seo-correction"
+}

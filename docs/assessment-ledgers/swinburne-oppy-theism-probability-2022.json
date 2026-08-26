@@ -1,0 +1,1953 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-11-production-compatibility",
+  "status": "frozen-post-canary-batch-11-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "debateNumber": "79",
+  "debateId": "swinburne-oppy-theism-probability-2022",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-11-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "bb4bd463417eba758136779dc2e842fbc271398d0555cbd21ce89560a8d99aa1",
+    "calculatedScoresSha256": "1f7c356a8fd76ab89e3eeef6c71905195805e9e45a3e58f0ceca1971e6d99f26",
+    "finalizationAuditSha256": "91d498c00d5147ddeab1bf6769353fcccffe5548be7ceeff9b17984bbcda9c3a",
+    "renderingAuditSha256": "5155d6bdc4396a6cbea71182fe6cf78435667e2359047d2e1c409f42a354fe6c",
+    "finalCandidateSha256": "6785c8b04dff20e1244e049fdc7dbb4139206dc3eee88c421f358c18ff368075",
+    "eventsPath": ".assessment-cache/captions/hKw3d3qOYSo/events.json",
+    "eventsSha256": "174b56dcc3305fc9b352932a42d1cf3fea50c0501fb6ca933728a4a445743029",
+    "finalJudgmentSha256": "34767b9cb9ffdaac8bac3dddb25c7965f8d5b36859a5ce96130bbaec13c26f2d"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "79",
+    "debateId": "swinburne-oppy-theism-probability-2022",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-cumulative-probabilistic-theism",
+        "side": "pro",
+        "description": "Establish that a simple divine agent provides a better cumulative explanation than naturalism of the universe, uniform laws, life-permitting conditions, embodied conscious agents, and the relevant modal structure.",
+        "successCriteria": "The route succeeds if theism has a sufficiently stronger combination of comparative prior simplicity and evidential likelihood across the disputed phenomena to be more probable than naturalism.",
+        "motionBridge": {
+          "bridgeId": "pro-comparative-posterior",
+          "tier": "motion",
+          "description": "Connect the combined prior and likelihood case to the conclusion that theism is more probable than naturalism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-objective-simplicity",
+            "tier": "central",
+            "description": "Supply an objective account of simplicity under which one essentially unlimited divine agent can receive a favorable comparative prior."
+          },
+          {
+            "bridgeId": "pro-cosmic-explanatory-likelihood",
+            "tier": "central",
+            "description": "Show that uniform laws and life-permitting cosmic conditions are more expected given divine reasons than given an uncreated physical reality."
+          },
+          {
+            "bridgeId": "pro-conscious-agency-likelihood",
+            "tier": "central",
+            "description": "Show that embodied conscious agents with morally significant freedom are expected products of divine goodness and resist an equally simple naturalistic explanation."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-scientific-inference-framework",
+            "tier": "subsidiary",
+            "description": "Justify applying predictive fit, comparative likelihood, and simplicity as rational explanatory criteria beyond ordinary scientific cases."
+          },
+          {
+            "bridgeId": "pro-modal-hypothesis-space",
+            "tier": "subsidiary",
+            "description": "Defend a modal framework broad enough to compare the actual universe with alternative possible universes and ultimate explanations."
+          }
+        ]
+      },
+      {
+        "routeId": "con-comparative-naturalist-undercutting",
+        "side": "con",
+        "description": "Prevent theism from gaining a comparative probability advantage by supplying economical naturalistic accounts and challenging the claimed objectivity, likelihood advantage, and modal basis of the theistic comparison.",
+        "successCriteria": "The route succeeds if naturalism remains at least as simple and explanatorily adequate as theism, or if the relevant priors, likelihoods, and modal alternatives do not warrant the claimed comparative probability ordering.",
+        "motionBridge": {
+          "bridgeId": "con-block-comparative-posterior",
+          "tier": "motion",
+          "description": "Connect naturalistic adequacy and underdetermination in the comparison to denial that theism is more probable than naturalism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-naturalistic-cosmic-model",
+            "tier": "central",
+            "description": "Provide a simple naturalistic initial reality and laws capable of explaining subsequent cosmic data without adding a divine agent."
+          },
+          {
+            "bridgeId": "con-contest-theistic-likelihood",
+            "tier": "central",
+            "description": "Challenge whether the observed universe, especially its particular contents and production of humans, is more expected under theism."
+          },
+          {
+            "bridgeId": "con-naturalistic-consciousness",
+            "tier": "central",
+            "description": "Show that consciousness can be accommodated through identity theory or another natural emergence account without a decisive theistic advantage."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-qualitative-bayesian-comparison",
+            "tier": "subsidiary",
+            "description": "Frame the dispute as a comparison of equally detailed rivals across priors and the likelihood of the total partitioned evidence."
+          },
+          {
+            "bridgeId": "con-non-epistemic-modality",
+            "tier": "subsidiary",
+            "description": "Ground modal claims in what exists and must exist rather than in conceivability, rational belief, or measures of ignorance."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "comparative-method-and-priors",
+        "title": "Comparative Method, Simplicity, and Priors",
+        "weightPercent": 25,
+        "rationale": "The probability comparison depends on how explanatory fit and simplicity determine comparative priors, whether qualitative Bayesian dominance is available, and whether adding God unifies data or merely adds complexity."
+      },
+      {
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "title": "Cosmic Origins, Laws, and Fine-Tuning",
+        "weightPercent": 24,
+        "rationale": "The central cosmic clash concerns whether uniform laws and life-permitting conditions favor purposive divine creation or can follow from an economical naturalistic initial state and its dispositions."
+      },
+      {
+        "sectionId": "divine-reasons-and-embodied-agency",
+        "title": "Divine Reasons, Anthropocentrism, and Embodied Agency",
+        "weightPercent": 18,
+        "rationale": "Theism's likelihood claim relies on divine reasons to create finite embodied agents, while the comparison must address alternative creations, anthropocentric selection, and what embodiment contributes to morally significant interaction."
+      },
+      {
+        "sectionId": "consciousness-and-naturalistic-explanation",
+        "title": "Consciousness and Naturalistic Explanation",
+        "weightPercent": 18,
+        "rationale": "Consciousness affects explanatory scope because the dispute tests whether privileged access defeats mind-brain identity and whether nonphysical minds could nevertheless arise within naturalism."
+      },
+      {
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "title": "Modality, Necessity, and Ultimate Explanation",
+        "weightPercent": 15,
+        "rationale": "Accounts of possibility and necessity determine the admissible hypothesis space and whether God, laws, or an initial physical state can function as the ultimate unexplained reality."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-method-predictive-fit-simplicity",
+        "sectionId": "comparative-method-and-priors",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "Evidence favors a hypothesis when the hypothesis makes the evidence reasonably probable, its negation makes that evidence less probable, and the hypothesis itself is simple.",
+        "sourceSpan": {
+          "startEvent": 125,
+          "endEvent": 142,
+          "excerpt": "H makes evidence uh um evidence E makes a hypothesis H uh probable if and only if, firstly, um uh H makes E uh not too improbable. That is to say, if the hypothesis is true, you would expect, with some reasonable probability, uh the evidence. Secondly, if the hypothesis is false, you wouldn't expect the evidence. Not H makes E much less probable. And thirdly, it must be a simple"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This uninterrupted passage continues Swinburne's opening presentation and explicitly enumerates his criteria for probable explanation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-scientific-inference-framework"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move establishes the proposed inference framework by joining predictive fit, comparative likelihood, and simplicity as criteria for explanatory assessment."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The three proposed conditions are enumerated clearly, and the claim is recoverable without a material shift in terminology or scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The probabilistic qualifications are express, although the biconditional formulation compresses important comparative and background assumptions."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move states a positive methodological framework and does not materially characterize a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly requires reasonable expectation of the evidence, lower expectation under not-H, and simplicity of the hypothesis.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-divine-reason-moral-agents",
+        "sectionId": "divine-reasons-and-embodied-agency",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "A perfectly powerful and good God has reason to create embodied conscious agents who can make morally significant free choices between good and evil.",
+        "sourceSpan": {
+          "startEvent": 258,
+          "endEvent": 309,
+          "excerpt": "human beings are a good thing. Uh, we are good things. Um, we have feelings and thoughts and can make a difference to the world and, um, uh, enjoy ourselves and help other people and so on and so forth. But, above all, we have a choice. Choice between doing good and doing evil, making the world different for good or for evil. That is a kind of goodness that even God does not have, for God can do no evil. So, um, God has reason to to create"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage remains within Swinburne's uninterrupted opening case and uses his characteristic first-person development of the God hypothesis.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-conscious-agency-likelihood"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the proposed divine reason for creating conscious agents capable of morally significant choices and effects in the world."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The moral-agent proposition is clear, but the precise transition from goodness to embodiment remains an implicit qualification in this span."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move advances a reason rather than necessity, and its moderate force fits the value-based warrant despite an implicit caveat."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable conscious-agency likelihood bridge by specifying a divine reason for moral agents."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The passage develops a positive divine-reasons claim without presenting a substantive competing account for charitable testing."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt describes conscious human goods, emphasizes free choice between good and evil, and concludes that God has reason to create such beings.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-uniform-life-permitting-laws",
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "Absent divine creation, the universe's uniform simple laws and their capacity to produce human bodies would be extraordinary coincidences among possible law systems.",
+        "sourceSpan": {
+          "startEvent": 310,
+          "endEvent": 347,
+          "excerpt": "are governed by simple laws, uh, why should those laws be such as to lead to the evolution of human bodies? Because most of the possible laws by which the universe might be governed will not have that property. Will not lead to the evolution of human bodies. Um, laws have to have very particular kinds of characteristics in order to do this. Um, uh, they have to be fine-tuned to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This is an uninterrupted continuation of Swinburne's presentation, contrasting the divine explanation with the absence of creation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-cosmic-explanatory-likelihood"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move advances the cosmic likelihood case by arguing that simple, uniform, body-producing laws occupy a special region among possible laws."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The fine-tuning proposition is recoverable, but the scope and distribution of possible law systems are not specified in the selected passage."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the result extraordinary relies on an unstated measure over possible laws and an underdefended focus on human-producing outcomes."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central cosmic explanatory-likelihood bridge through the claimed rarity of life-permitting laws."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The selected span presents the positive fine-tuning contention without developing a source-supported rival interpretation to assess."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says most possible laws would not lead to human bodies and that laws require particular fine-tuned characteristics to do so.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-divine-unlimited-power-simplicity",
+        "sectionId": "comparative-method-and-priors",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "constructive",
+        "proposition": "The God hypothesis is simple because it postulates one being whose essential omnipotence consists in having no limit on power rather than an arbitrary finite limit.",
+        "sourceSpan": {
+          "startEvent": 348,
+          "endEvent": 373,
+          "excerpt": "And finally, of course, God is a very simple being. He is just one being. Uh, he is simple in that the only property necessary for his existence is one property, omnipotence, everlasting omnipotence, that is, essential everlasting omnipotence. Um, and omnipotence is the ability to do everything, which is the having zero limits to his power and zero is a very simple number. Much"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage concludes Swinburne's uninterrupted opening presentation and explicitly announces the basic structure of his argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-objective-simplicity"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies an objective simplicity proposal: one being with an unlimited power property is simpler than a being with an arbitrary finite limit."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The zero-limit account is clear, although treating omnipotence as the sole property necessary for divine existence is only implicitly qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The confident conclusion that God is very simple exceeds the limited support supplied by counting beings and representing power as zero limits."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly addresses the central objective-simplicity bridge on which the favorable theistic prior substantially depends."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move offers a positive account of divine simplicity and does not engage a developed competing account in this passage."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies one being, essential everlasting omnipotence, and zero limits on power as the grounds of divine simplicity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-bayesian-odds-detailed-rivals",
+        "sectionId": "comparative-method-and-priors",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Theism should be assessed through Bayesian odds against an equally detailed naturalistic rival, comparing their priors and likelihoods on the total evidence rather than considering theism in isolation.",
+        "sourceSpan": {
+          "startEvent": 783,
+          "endEvent": 823,
+          "excerpt": "total evidence. So, shouldn't you actually be thinking about a kind of odds version here, where you've got a competing hypothesis. Let's Let's go with Mackie's naturalism as a as the the competing view. We imagine that we elaborate the view and your view to the same level of detail, and then we look to see um how they fare when we sort of plug in the Bayesian formula, so that we've got the theories against which we can assess the likelihoods"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy announces a new framing question and develops it continuously until directly asking Swinburne what he thinks of the proposal.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-qualitative-bayesian-comparison"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-method-predictive-fit-simplicity",
+            "pro-divine-unlimited-power-simplicity"
+          ],
+          "components": [
+            {
+              "componentId": "con-bayesian-odds-detailed-rivals-component-01",
+              "targetMoveId": "pro-method-predictive-fit-simplicity",
+              "text": "Assess explanatory evidence through comparative Bayesian odds between equally detailed rivals on the total evidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-bayesian-odds-detailed-rivals-component-02",
+              "targetMoveId": "pro-divine-unlimited-power-simplicity",
+              "text": "Compare the priors of the fully elaborated theistic and naturalistic hypotheses rather than treating divine simplicity alone.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The move preserves the original concern with priors and likelihoods while justifying a comparative, equally detailed total-evidence formulation that avoids evaluating theism in isolation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The rival hypotheses, equal-detail condition, total evidence, priors, and likelihood comparison are all explicitly identified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The proposal is advanced interrogatively and with explicit methodological conditions, fitting the support supplied in the exchange."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may be assessed by whether it raises the probability of evidence relative to its negation without first specifying one detailed rival.",
+          "decisiveQualification": "A motion comparing theism with naturalism still requires hypotheses elaborated sufficiently to compare priors and total-evidence likelihoods."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The Bayesian comparison is well explained, though the span does not establish how equal detail is operationalized in practice."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary qualitative-Bayesian bridge rather than directly settling which worldview has the higher posterior."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it explicitly replaces an isolated test with a comparative framework while retaining the legitimate evidential issue."
+          }
+        },
+        "evidenceBasis": "Oppy explicitly proposes equally detailed theistic and naturalistic hypotheses assessed by Bayesian odds, priors, likelihoods, and total evidence.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-simple-dispositional-initial-state",
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "A single naturalistic initial singularity characterized by few quantities and an inherent disposition to evolve could explain later particles and complexity without adding God, and may therefore be simpler than theism.",
+        "sourceSpan": {
+          "startEvent": 934,
+          "endEvent": 1036,
+          "excerpt": "explain why it's a toy model. So, let's suppose that the universe starts with singularity. So, there's a Sorry, I can't say again. The universe starts with a singularity. There's an initial point, and it's characterized by a couple of quantities, mass and temperature, and they're both infinite. And the thing has a disposition to evolve. So, the this is what you've got. Now, in that state, there aren't innumerable particles"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator-like transition gives way to Oppy's first-person presentation of his explicitly naturalistic toy cosmological model.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-naturalistic-cosmic-model"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-divine-unlimited-power-simplicity",
+            "pro-uniform-life-permitting-laws"
+          ],
+          "components": [
+            {
+              "componentId": "con-simple-dispositional-initial-state-component-01",
+              "targetMoveId": "pro-divine-unlimited-power-simplicity",
+              "text": "Contest the claimed theistic simplicity advantage with a sparse naturalistic initial reality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-simple-dispositional-initial-state-component-02",
+              "targetMoveId": "pro-uniform-life-permitting-laws",
+              "text": "Explain later particles and complexity through an inherent disposition of the initial state.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The toy singularity contacts both the comparative simplicity claim and the demand for a naturalistic cosmic source, though its disposition is specified only schematically."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The toy-model status and comparative claim are clear, but the content of the inherent disposition remains underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The repeated suppositional framing and toy-model label properly limit the claim to a candidate naturalistic explanation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may remain simpler because a divine reason explains why productive powers obtain, whereas the singularity merely stipulates them.",
+          "decisiveQualification": "The move need only exhibit a comparably economical rival at this stage, but must eventually specify the disposition enough for comparison."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central naturalistic-cosmic-model bridge by specifying an economical initial physical reality."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it directly supplies a rival model but leaves its detailed law-producing disposition substantially compressed."
+          }
+        },
+        "evidenceBasis": "Oppy posits one initial singularity with mass, temperature, and a disposition to evolve, contrasting it with later particle multiplicity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-specific-naturalistic-powers",
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "A physical initial state capable of producing laws, bodies, and conscious agents would require highly specific causal powers, whereas divine goodness supplies a reason for life-producing powers.",
+        "sourceSpan": {
+          "startEvent": 1037,
+          "endEvent": 1068,
+          "excerpt": "us, our bodies. Um and there's a reason, on my hypothesis, why the laws should be like that. That is because we are a good thing. Now, on a naturalistic hypothesis, things don't act because of goodness. We do. That's that's what how humans act. Um so, it is you have to build into the power of this simple initial state um so much um in detail to get this result. Whereas, I don't"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Swinburne explicitly answers the preceding toy model in the first person and contrasts its required powers with his own hypothesis.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-naturalistic-cosmic-model"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-simple-dispositional-initial-state"
+          ],
+          "components": [
+            {
+              "componentId": "pro-specific-naturalistic-powers-component-01",
+              "targetMoveId": "con-simple-dispositional-initial-state",
+              "text": "The model's apparently simple disposition must encode highly specific powers sufficient for laws, bodies, and agents.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies where the toy model allegedly hides its complexity and states that this defeats its claimed simplicity advantage over purposive theism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The contrast between built-in causal detail and a goodness-based reason is clear, but the relevant measure of detail remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The objection plausibly identifies hidden specification, but its confident comparative advantage lacks a defended common complexity measure."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A simple disposition may entail complex later outcomes without encoding each outcome separately.",
+          "decisiveQualification": "The naturalistic model must nevertheless specify a disposition strong enough to yield the relevant laws and agents before simplicity can be compared."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central naturalistic-cosmic-model bridge by disputing the proposed initial state's economy."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the model's decisive simplicity inference and names the alleged concealed-complexity defect."
+          }
+        },
+        "evidenceBasis": "Swinburne says the initial state's power must build in detailed capacities producing laws, bodies, and agents, while goodness explains those outcomes on theism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-necessary-initial-state-and-laws",
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "On an actualist account that does not multiply possibilities beyond those required by actual indeterminism, the initial state and laws are necessary, explaining why those cosmic foundations obtain as they do.",
+        "sourceSpan": {
+          "startEvent": 1069,
+          "endEvent": 1129,
+          "excerpt": "in part, is a consideration about simplicity. You shouldn't multiply possibilities beyond necessity, right? It's a There's [laughter] a kind of It's the the the ontological scruple at at work. But, it's a consequence now of adopting this view that the initial state will be necessary and the laws will be necessary. And so, now we have an explanation for the initial state. Why is"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy introduces his preferred account of ontological modality and repeatedly identifies the position as his own disagreement with Swinburne.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-non-epistemic-modality"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-specific-naturalistic-powers",
+            "pro-uniform-life-permitting-laws"
+          ],
+          "components": [
+            {
+              "componentId": "con-necessary-initial-state-and-laws-component-01",
+              "targetMoveId": "pro-specific-naturalistic-powers",
+              "text": "Reject the assumed space of alternative initial powers by treating the actual initial state and laws as necessary.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-necessary-initial-state-and-laws-component-02",
+              "targetMoveId": "pro-uniform-life-permitting-laws",
+              "text": "Deny the fine-tuning comparison over many possible law systems under an actualist modal account.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The move justifies a modal replacement demand through an ontological economy principle, thereby answering the specificity objection conditional on that account."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional dependence on the actualist account and its consequence for state and laws are clearly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The strong modal conclusion follows only after adopting a controversial actualist account that receives limited defense in the passage."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conceivable alternative initial states and laws may be genuine possibilities requiring comparative explanation.",
+          "decisiveQualification": "Oppy's actualism deliberately rejects those extra possibilities unless actual indeterminism requires them."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary non-epistemic-modality bridge and bears indirectly on the naturalistic cosmic model."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts the decisive possibility-space assumption, but the modal reframe's independent justification remains compressed."
+          }
+        },
+        "evidenceBasis": "Oppy invokes not multiplying possibilities, then states that the initial state and laws are necessary and therefore need no further explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-anthropocentric-selection-objection",
+        "sectionId": "divine-reasons-and-embodied-agency",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "It is gratuitously anthropocentric to treat the universe as arranged for human beings, since its vast numbers of beetles and stars permit equally available descriptions of what it was arranged to produce.",
+        "sourceSpan": {
+          "startEvent": 1215,
+          "endEvent": 1227,
+          "excerpt": "to me a gratuitous assumption to suppose that the universe is set up for us. Right? Even on the earth, there's a lot more different kinds of beetles than there are people. Right? Remember Haldane's biologist's famous remark that the Lord seems to be inordinately fond of beetles. But equally, there's lots more stars. Maybe the universe is set up for stars. Right? They're picking"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy challenges the immediately preceding human-centered explanation using the comparative abundance of beetles and stars as counterexamples.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-contest-theistic-likelihood"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-divine-reason-moral-agents",
+            "pro-uniform-life-permitting-laws",
+            "pro-specific-naturalistic-powers"
+          ],
+          "components": [
+            {
+              "componentId": "con-anthropocentric-selection-objection-component-01",
+              "targetMoveId": "pro-divine-reason-moral-agents",
+              "text": "Challenge the inference from human existence to a divine purpose specifically directed toward producing humans.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-anthropocentric-selection-objection-component-02",
+              "targetMoveId": "pro-uniform-life-permitting-laws",
+              "text": "Contest the selection of human-producing laws as the privileged description of the cosmic outcome.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-anthropocentric-selection-objection-component-03",
+              "targetMoveId": "pro-specific-naturalistic-powers",
+              "text": "Contest treating production of humans as the uniquely salient result needing purposive explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The move identifies selection among equally available descriptions as the defect and states that beetles or stars could be treated as the intended outcome instead."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The charge of gratuitous anthropocentrism and the beetle and star counter-descriptions are explicit and consistently scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The language presents a challenge to privileged description rather than claiming that humans certainly lack explanatory significance."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Humans may be explanatorily salient because conscious moral freedom has distinctive value, not merely because humans are numerous.",
+          "decisiveQualification": "The theistic case must explain why that value makes embodied moral agents sufficiently expected relative to many other divine options."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central challenge to theistic likelihood by attacking the human-centered interpretation of cosmic outcomes."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly identifies anthropocentric selection as the inferential defect and supplies concrete competing descriptions."
+          }
+        },
+        "evidenceBasis": "Oppy calls the human-centered assumption gratuitous and offers the greater variety of beetles and number of stars as alternative apparent targets.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-simple-mind-brain-identity",
+        "sectionId": "consciousness-and-naturalistic-explanation",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Mind-brain identity theory offers an economical naturalistic account of consciousness by identifying organisms' mental states and processes with their physical states and processes.",
+        "sourceSpan": {
+          "startEvent": 1335,
+          "endEvent": 1367,
+          "excerpt": "you you've now brought up consciousness. I mean, and in Is there a God? You dismiss the position that I like with a single sentence saying that it's absolutely unlikely that it would be right. It seems to me that I'm um that that kind of identity theory, the view that um the mental states and processes in organisms are just physical states and processes of those organisms has a"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy explicitly identifies identity theory as the position he favors and asks why its simplicity would not strengthen its explanation of the data.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-naturalistic-consciousness"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-specific-naturalistic-powers",
+            "pro-divine-reason-moral-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-simple-mind-brain-identity-component-01",
+              "targetMoveId": "pro-specific-naturalistic-powers",
+              "text": "Offer an economical naturalistic account of consciousness rather than treating conscious agents as specially encoded outputs.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-simple-mind-brain-identity-component-02",
+              "targetMoveId": "pro-divine-reason-moral-agents",
+              "text": "Contest the need for a distinct theistic explanation of conscious agents by identifying mental and physical processes.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Identity theory directly supplies a simple naturalistic alternative for consciousness, although the selected span states the identity more clearly than it defends it."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Identity theory is explicitly defined as identifying organisms' mental states and processes with their physical states and processes."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Oppy presents identity theory as a favored economical candidate and questions its dismissal rather than asserting its demonstrated truth."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Privileged first-person access may show that mental properties cannot be identical with publicly accessible physical properties.",
+          "decisiveQualification": "Different epistemic access does not by itself establish distinct properties unless identity would require identical modes of access."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The span defines the theory and appeals to simplicity but offers little independent reason to accept the claimed psychophysical identity."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central naturalistic-consciousness bridge by proposing a parsimonious identity account."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move fairly offers the identity thesis as a live simple rival, though it does not yet answer the strongest access-based objection."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it supplies the requested rival account but leaves the central identity warrant largely undeveloped."
+          }
+        },
+        "evidenceBasis": "Oppy explicitly states that mental states and processes in organisms are physical states and processes and presents this as a simple position.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-privileged-access-consciousness",
+        "sectionId": "consciousness-and-naturalistic-explanation",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "Mental properties are not identical with publicly accessible physical properties because subjects have privileged and noncontingent access to their own thoughts, feelings, and experiences.",
+        "sourceSpan": {
+          "startEvent": 1382,
+          "endEvent": 1425,
+          "excerpt": "publicly observable properties, properties which are equally accessible to you and me and everybody else. And we learn what [snorts] fundamentally they are, mass and size and charge and that sort of thing, but they manifest themselves in rather larger conglomerations, but that's what essence they are. Um But our our mental life of thought, feeling intention belief desire, this is we have necessarily experience our own uh desires and thoughts"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "After rejecting identity theory, Swinburne develops the public-versus-private access distinction in sustained first-person examples about his own thoughts.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-naturalistic-consciousness"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-simple-mind-brain-identity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-privileged-access-consciousness-component-01",
+              "targetMoveId": "con-simple-mind-brain-identity",
+              "text": "Identity fails because mental properties involve privileged necessary access unlike publicly accessible physical properties.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies an alleged property mismatch between mental and physical states and draws the defeating consequence that they cannot be identical."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Public accessibility and necessary first-person experience are consistently contrasted, making the anti-identity proposition recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The access asymmetry is clearly described, but the necessary metaphysical nonidentity conclusion requires an additional principle."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "One property can be known through different first-person and third-person modes without ceasing to be one property.",
+          "decisiveQualification": "Swinburne must show that the access difference tracks the essence of the properties rather than merely different epistemic routes."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "Ordinary first-person access supports the contrast, while the stronger nonidentity conclusion lacks a defended anti-identity principle."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central naturalistic-consciousness bridge by contesting mind-brain property identity."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the identity claim's decisive inference and supplies a clear modal-property objection."
+          }
+        },
+        "evidenceBasis": "Swinburne contrasts equally accessible physical properties with subjects' necessary experience of their own thoughts, feelings, intentions, and desires.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-nonphysicalist-natural-emergence",
+        "sectionId": "consciousness-and-naturalistic-explanation",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Even if physicalism about mind is false, naturalism can allow minds to arise from physically complex organisms through a metaphysically natural process without adding enough complexity to make theism inevitably preferable.",
+        "sourceSpan": {
+          "startEvent": 1587,
+          "endEvent": 1607,
+          "excerpt": "make that much difference. Uh I'm bearing in mind what Richard's likely to say what what you would have to think I is that somehow or other you get the production of minds when you've got certain kinds of physically complex organisms by some kind of natural or you know metaphysically natural process. And there are people who hold views like that. Um I think that it's slightly more complicated"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy directly answers an audience question addressed specifically to him and states how rejecting materialism would affect his naturalistic comparison.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-naturalistic-consciousness"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-privileged-access-consciousness",
+            "pro-specific-naturalistic-powers"
+          ],
+          "components": [
+            {
+              "componentId": "con-nonphysicalist-natural-emergence-component-01",
+              "targetMoveId": "pro-privileged-access-consciousness",
+              "text": "Concede for comparison that physicalism may fail while asking whether nonphysical minds can still arise naturally.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-nonphysicalist-natural-emergence-component-02",
+              "targetMoveId": "pro-specific-naturalistic-powers",
+              "text": "Contest the claim that any natural production of consciousness must add enough complexity to favor theism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The move preserves the explanatory question while replacing identity theory with emergent nonphysicalism, explicitly assessing whether the added complexity creates a decisive comparative disadvantage."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional proposal and complexity qualification are explicit, though 'metaphysically natural process' is underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Oppy cautiously claims only that the alternative is available and not obviously complex enough to make theism inevitable."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "If nonphysical minds emerge only under special psychophysical principles, naturalism may acquire substantial additional complexity.",
+          "decisiveQualification": "The move acknowledges some added complexity but denies that its magnitude or comparative effect is yet established."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The existence and simplicity of the proposed emergence process are asserted speculatively without a developed model or independent support."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central naturalistic-consciousness bridge by preserving a naturalistic account after conceding nonphysicalism."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within justified reframes, it directly preserves naturalistic explanation after a physicalist concession, though the emergence process remains schematic."
+          }
+        },
+        "evidenceBasis": "Oppy describes minds arising from complex organisms through a metaphysically natural process and explicitly acknowledges that this view is slightly more complicated.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-general-prediction-embodied-agents",
+        "sectionId": "divine-reasons-and-embodied-agency",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "Theism predicts embodied, conscious, finitely free moral agents in general rather than every human detail, since bodies localize agents and enable morally significant effects on one another.",
+        "sourceSpan": {
+          "startEvent": 1623,
+          "endEvent": 1668,
+          "excerpt": "beings. That is to say beings who are conscious uh have free choices limited free choices between good and evil um limited powers limited knowledge who can improve their powers, improve their knowledge, who can make difference to other people's powers and and knowledge um and um it follows from that that they need bodies because um a body is somewhere that you're pinned down to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Swinburne answers the audience challenge by restating what his divine hypothesis predicts and defining the relevant class of humanly free beings.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-conscious-agency-likelihood"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-anthropocentric-selection-objection",
+            "con-nonphysicalist-natural-emergence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-general-prediction-embodied-agents-component-01",
+              "targetMoveId": "con-anthropocentric-selection-objection",
+              "text": "Replace a prediction of humans in detail with a general prediction of embodied, conscious, finitely free moral agents.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-general-prediction-embodied-agents-component-02",
+              "targetMoveId": "con-nonphysicalist-natural-emergence",
+              "text": "Explain why embodiment has purposive moral significance rather than being merely a substrate from which minds emerge.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The move justifies the broader target by connecting bodies to localization, limited power, and morally significant effects on other agents."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The prediction is expressly limited to a general class characterized by consciousness, finite freedom, limited powers, and bodies."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The embodiment rationale is relevant, but it does not fully establish that a perfect God would probably create this general class."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The universe may still admit many equally available descriptions even if the predicted target is broadened beyond humans.",
+          "decisiveQualification": "A value-based class of embodied moral agents is less anthropocentric, but its expectedness under perfect goodness still needs comparison."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly strengthens the central conscious-agency likelihood bridge by clarifying the predicted class and role of embodiment."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reframe expressly answers the anthropocentric challenge and gives a substantive reason for the replacement prediction."
+          }
+        },
+        "evidenceBasis": "Swinburne predicts conscious beings with limited free choices and powers, then argues that bodies locate them and enable effects on others.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-qualitative-bayesian-dominance",
+        "sectionId": "comparative-method-and-priors",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "A Bayesian comparison can proceed without numerical probabilities when one rival has the higher prior and supplies the better likelihood for every partition of the evidence.",
+        "sourceSpan": {
+          "startEvent": 1783,
+          "endEvent": 1832,
+          "excerpt": "higher prior probability because it's simpler and then you've got a partitioning on the data and on every bit of the data the one that's the more likely one is giving better explanations than the one that isn't. Well now we can just conclude right that the first theory is better than the second one on all of the evidence without numbers coming into it at all. In some sense that's still Bayesian"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The conversational handoff follows Swinburne's answer, and the content is delivered in Oppy's characteristic first-person analytical response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-qualitative-bayesian-comparison"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-method-predictive-fit-simplicity",
+            "pro-divine-unlimited-power-simplicity",
+            "pro-general-prediction-embodied-agents"
+          ],
+          "components": [
+            {
+              "componentId": "con-qualitative-bayesian-dominance-component-01",
+              "targetMoveId": "pro-method-predictive-fit-simplicity",
+              "text": "Show how comparative priors and likelihoods can establish an ordering without assigning numerical probabilities.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-qualitative-bayesian-dominance-component-02",
+              "targetMoveId": "pro-divine-unlimited-power-simplicity",
+              "text": "Require agreement that one fully specified rival has the higher simplicity-based prior before dominance follows.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-qualitative-bayesian-dominance-component-03",
+              "targetMoveId": "pro-general-prediction-embodied-agents",
+              "text": "Treat each partition of the evidence as requiring a comparative likelihood advantage.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The response directly supplies a qualitative Bayesian decision rule: a higher prior plus better likelihood on every evidence partition yields comparative superiority without numbers."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The higher-prior condition, evidence partition, per-part likelihood dominance, and nonnumerical conclusion are explicitly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The conclusion is appropriately categorical because it is conditional on strict prior and likelihood dominance across every evidence partition."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Actual disputes may involve likelihood tradeoffs across evidence partitions rather than uniform dominance by one hypothesis.",
+          "decisiveQualification": "The stated rule applies only when one theory has both the higher prior and better likelihood for every partition."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "Given its explicit dominance premises, the qualitative comparative conclusion follows cleanly without requiring numerical posterior values."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It nearly completes the subsidiary qualitative-Bayesian bridge but does not itself establish the debate's empirical dominance premises."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly states the decisive dominance conditions and their consequence for a comparative assessment."
+          }
+        },
+        "evidenceBasis": "Oppy states that a higher prior and better likelihood on every partition permit concluding that one theory is better on all evidence without numbers.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-conceivability-logical-modality",
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "Metaphysical possibility is ultimately analyzable through logical possibility and the intelligible conceivability of alternative universes.",
+        "sourceSpan": {
+          "startEvent": 1963,
+          "endEvent": 1981,
+          "excerpt": "out. Um I do think that the basic concept of modality is to be analyzed in terms of conceivability. That is to say um there are all sorts of alternative universes which we can understand what it would be like for them to be true and they are logically possible universes and ultimately the notion of metaphysical possibility uh can be analyzed in terms of logical possibility. Um"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator asks for Richard's view of Oppy's modality, and the ensuing first-person answer is explicitly framed as disagreement with Oppy.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-modal-hypothesis-space"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-necessary-initial-state-and-laws"
+          ],
+          "components": [
+            {
+              "componentId": "pro-conceivability-logical-modality-component-01",
+              "targetMoveId": "con-necessary-initial-state-and-laws",
+              "text": "The necessity claim fails if intelligibly conceivable alternative universes count as logically and metaphysically possible.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly rejects the actualist restriction by identifying conceivability and logical possibility as the basis for a broader metaphysical possibility space."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The conclusion is clear, but conceivability, intelligibility, logical possibility, and metaphysical possibility are linked without sufficiently distinguishing them."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The unqualified analysis of metaphysical possibility in logical terms exceeds the support supplied by intelligible alternative-universe examples."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conceivability may measure epistemic access or ignorance rather than what is metaphysically possible.",
+          "decisiveQualification": "The move needs a bridge showing that ideal intelligible conceivability is truth-conducive for metaphysical modality."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "Alternative universes are asserted to be understandable, without a defended warrant that understanding establishes metaphysical possibility."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It directly supports the subsidiary modal-hypothesis-space bridge by defending the availability of alternative possible universes."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts the decisive modal premise, though its own conceivability-to-possibility bridge is asserted more than defended."
+          }
+        },
+        "evidenceBasis": "Swinburne says alternative universes can be understood as logically possible and that metaphysical possibility is ultimately analyzable as logical possibility.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-metaphysical-not-doxastic-modality",
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Metaphysical modality concerns what exists and should not be derived from what a reasonable person can believe, because epistemic ignorance has no metaphysical consequences.",
+        "sourceSpan": {
+          "startEvent": 1985,
+          "endEvent": 2001,
+          "excerpt": "more like doxastic modality. There's the what could a reasonable person reasonably believe? These are just different things. One of them I mean the metaphysical one has to do with what there is. The other one has to do with things like measuring our ignorance. Right? And you shouldn't suppose that there's any metaphysical consequences that attach to our ignorance. Right? So So"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy explicitly requests a brief intervention and contrasts his own position with Richard's immediately preceding account of modality.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-non-epistemic-modality"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-conceivability-logical-modality"
+          ],
+          "components": [
+            {
+              "componentId": "con-metaphysical-not-doxastic-modality-component-01",
+              "targetMoveId": "pro-conceivability-logical-modality",
+              "text": "Reject the inference from reasonable conceivability or belief to metaphysical possibility.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies the alleged category error between what exists and what can reasonably be believed, then states that ignorance carries no metaphysical consequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The contrast between metaphysical and doxastic modality is sharply and consistently drawn."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The category distinction is strong, though not every conceivability theory must reduce possibility to mere ignorance."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Ideal conceivability might be proposed as evidence of possibility rather than as a mere measure of actual ignorance.",
+          "decisiveQualification": "Swinburne's span does not establish the reliability bridge required to turn such conceivability into metaphysical possibility."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary non-epistemic-modality bridge by separating ontology from measures of ignorance."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly isolates the doxastic-to-metaphysical inference and states the defeating consequence."
+          }
+        },
+        "evidenceBasis": "Oppy explicitly contrasts metaphysical modality concerning what exists with doxastic modality concerning reasonable belief and ignorance.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-ontologically-necessary-ultimate",
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "side": "pro",
+        "speaker": "Richard Swinburne",
+        "moveKind": "reply",
+        "proposition": "God is not logically or essence-based necessary, but whichever unexplained ultimate cause exists is ontologically necessary as the final brute fact on which everything else depends.",
+        "sourceSpan": {
+          "startEvent": 2015,
+          "endEvent": 2059,
+          "excerpt": "logically necessary being. But um there must be a sense in which the ultimate cause of things, whether it's God or the universe uh it is the ultimate brute fact of the world. And um it's a not unreasonable notion of necessity to say that what is the ultimate thing on which everything else depends and doesn't have an explanation itself uh not merely we can't explain it, but it doesn't have one, is ontologically"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator directs the question to Swinburne, whose extended first-person answer distinguishes several senses of necessity without a speaker change.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-non-epistemic-modality"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-metaphysical-not-doxastic-modality",
+            "con-necessary-initial-state-and-laws"
+          ],
+          "components": [
+            {
+              "componentId": "pro-ontologically-necessary-ultimate-component-01",
+              "targetMoveId": "con-metaphysical-not-doxastic-modality",
+              "text": "Accept an ontological notion of necessity while distinguishing it from logical or essence-based necessity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-ontologically-necessary-ultimate-component-02",
+              "targetMoveId": "con-necessary-initial-state-and-laws",
+              "text": "Apply ontological necessity to whichever ultimate unexplained cause exists, whether God or universe.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The response preserves Oppy's demand for non-doxastic modality but reframes necessity as the status of an ultimate unexplained dependent base rather than logical inevitability."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The ultimate brute-fact thesis is clear, but calling unexplained ultimacy 'necessity' introduces a partly unstable use of the term."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Dependence and lack of explanation establish ultimacy, but do not without another premise establish metaphysical necessity."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Being unexplained and ultimate may make a fact brute without making it metaphysically necessary.",
+          "decisiveQualification": "Swinburne openly proposes a distinct ontological use of necessity rather than claiming logical or essence-based necessity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 66,
+            "rationale": "The account consistently identifies an ultimate brute fact, but the inference from explanatory finality to necessity is materially unsupported."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "No independent reason is given why lacking an explanation or grounding everything else makes an entity unable not to exist."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The response accurately acknowledges the stronger objection and limits its thesis, though the proposed category may add little beyond ultimacy."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it explicitly preserves the ontological issue and applies the replacement category symmetrically to either ultimate."
+          }
+        },
+        "evidenceBasis": "Swinburne denies logical necessity, then calls whichever ultimate unexplained cause everything depends upon ontologically necessary.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-modal-terminology-convergence",
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Swinburne's ontological necessity closely resembles Oppy's metaphysical necessity and is likewise distinguished from logical necessity, so their modal positions may differ less substantively than their terminology suggests.",
+        "sourceSpan": {
+          "startEvent": 2061,
+          "endEvent": 2067,
+          "excerpt": "Right. So that was just the point I was going to make. Your notion of what you're calling ontological necessity is rather like what I call metaphysical necessity and you distinguished it from logical necessity. So maybe there's not that much difference between us overall"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Oppy explicitly identifies the point he intended to make and compares Swinburne's terminology with his own modal terminology.",
+        "importance": 1,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-non-epistemic-modality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-ontologically-necessary-ultimate"
+          ],
+          "components": [
+            {
+              "componentId": "con-modal-terminology-convergence-component-01",
+              "targetMoveId": "pro-ontologically-necessary-ultimate",
+              "text": "Compare the newly defined ontological necessity with the earlier metaphysical necessity terminology.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contacts the new definition and observes a possible terminological convergence while preserving the logical-necessity distinction."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two terminologies and their common contrast with logical necessity are clearly identified, with convergence cautiously qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The phrases rather like and maybe not that much difference appropriately limit the proposed terminological convergence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Swinburne's ontological necessity may mean ultimate unexplained status, while Oppy's metaphysical necessity means existence in every genuine possibility.",
+          "decisiveQualification": "The shared rejection of logical necessity shows partial convergence but does not establish full extensional equivalence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It supports the subsidiary non-epistemic-modality bridge by clarifying convergence, but does not independently establish the modal theory."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly addresses the selected claim, although it offers diagnosis of convergence rather than a full resolution."
+          }
+        },
+        "evidenceBasis": "Oppy explicitly compares Swinburne's ontological necessity to his metaphysical necessity and notes their shared distinction from logical necessity.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule independently of the move-level ratings and response records.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion beyond effects already captured."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence survives exclusion from the move ratings, response links, relevance findings, and weights.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence remains after ordinary move-level assessment.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any independently established burden completion."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "comparative-method-and-priors",
+        "title": "Comparative Method, Simplicity, and Priors",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-method-predictive-fit-simplicity",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "pro-divine-unlimited-power-simplicity",
+                "importance": 3,
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "con-bayesian-odds-detailed-rivals",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-qualitative-bayesian-dominance",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "cosmic-origins-laws-and-fine-tuning",
+        "title": "Cosmic Origins, Laws, and Fine-Tuning",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-uniform-life-permitting-laws",
+                "importance": 3,
+                "score": 75
+              },
+              {
+                "moveId": "pro-specific-naturalistic-powers",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-simple-dispositional-initial-state",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "con-necessary-initial-state-and-laws",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-reasons-and-embodied-agency",
+        "title": "Divine Reasons, Anthropocentrism, and Embodied Agency",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-divine-reason-moral-agents",
+                "importance": 3,
+                "score": 81
+              },
+              {
+                "moveId": "pro-general-prediction-embodied-agents",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-anthropocentric-selection-objection",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "consciousness-and-naturalistic-explanation",
+        "title": "Consciousness and Naturalistic Explanation",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-privileged-access-consciousness",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-simple-mind-brain-identity",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "con-nonphysicalist-natural-emergence",
+                "importance": 3,
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "modality-necessity-and-ultimate-explanation",
+        "title": "Modality, Necessity, and Ultimate Explanation",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-conceivability-logical-modality",
+                "importance": 2,
+                "score": 73
+              },
+              {
+                "moveId": "pro-ontologically-necessary-ultimate",
+                "importance": 2,
+                "score": 73
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-metaphysical-not-doxastic-modality",
+                "importance": 2,
+                "score": 86
+              },
+              {
+                "moveId": "con-modal-terminology-convergence",
+                "importance": 1,
+                "score": 87
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 79.78,
+        "burdenCompletionAdjustment": 0,
+        "score": 80
+      },
+      "con": {
+        "weightedSectionMean": 84.77,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 5
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 18,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
