@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-21-publication-timeout-recovery-recursive-correction-diagnosis",
+  "status": "diagnosed-one-field-con-shard-word-count-failure",
+  "diagnosedAt": "2026-08-26T02:57:33.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "preservedExecution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/debate-21-timeout-recovery-1/model-execution.json",
+    "sha256": "1b462578b6cf40d8c00815c45e07911a4c6ec30e7cb787f86610d0bf9efa1e72",
+    "contextsPlanned": 2,
+    "contextsAttempted": 2,
+    "validContexts": 1,
+    "invalidContexts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0
+  },
+  "passedShard": {
+    "contextIndex": 0,
+    "side": "pro",
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/debate-21-timeout-recovery-1/outputs/context-0.json",
+    "sha256": "d2e1e680c507d27a73375dd6719fc6eaf936d0fa5966813524b4b6e2eab7ac66",
+    "moves": 9,
+    "critiques": 9,
+    "minimumCritiqueCharacters": 893,
+    "exactSourceQuotes": 1,
+    "overallCommentarySides": 1,
+    "aiExtensionSides": 1,
+    "retentionEligible": true
+  },
+  "failedShard": {
+    "contextIndex": 1,
+    "side": "con",
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/debate-21-timeout-recovery-1/outputs/context-1.json",
+    "sha256": "64dd9b01689fa63b801d059e433ddded02489c9a2fa207660376f16363cf6da2",
+    "failureCategory": "critique-word-count",
+    "failedField": "moveProse.con-judaism-character-and-justice.critique",
+    "observedWords": 131,
+    "acceptedWordsMinimum": 105,
+    "acceptedWordsMaximum": 130,
+    "observedCharacters": 1080,
+    "observedSentences": 4,
+    "orderedLabelsPassed": true,
+    "terminalPunctuationPassed": true,
+    "otherNineCritiquesPassedStructuralAudit": true,
+    "representativeQuoteExactSourceMatchPassed": true,
+    "failedOutputMayNotBeShownToCorrectionModel": true
+  },
+  "boundedCorrectionCandidate": {
+    "recursiveCorrectionLevel": 1,
+    "freshIsolatedContexts": 1,
+    "writableFields": [
+      "moveProse.con-judaism-character-and-justice.critique"
+    ],
+    "writableFieldCount": 1,
+    "repairWritableFieldsMaximum": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "completeDebateValidationAndMergeRequired": true,
+    "nineUnattemptedContextsRemainClosedUntilPassingRecovery": true
+  },
+  "authorization": {
+    "diagnosis": true,
+    "recursiveCorrectionPreparation": false,
+    "recursiveCorrectionModelExecution": false,
+    "unattemptedContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false
+  },
+  "nextRequiredAction": "obtain-explicit-authorization-for-one-field-recursive-publication-correction"
+}

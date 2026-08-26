@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-21-publication-timeout-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-debate-21-timeout-recovery-1",
+  "status": "batch-10-debate-21-publication-timeout-recovery-failed",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "gate": {
+    "contextsPlanned": 2,
+    "contextsAttempted": 2,
+    "contextsPassed": 1,
+    "contextsFailed": 1,
+    "recoveredDebates": 0,
+    "shardsPerDebate": 2,
+    "completeDebatesValidated": 0,
+    "recoveredMoves": 0,
+    "recoveredCritiques": 0,
+    "failedPartialOutputsReused": 0,
+    "originalContentFieldsAcceptedExactlyOnce": false,
+    "fixedFieldsReconstructedDeterministically": false,
+    "hostAwakeGuardAppliedToEveryContext": true,
+    "attempts": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "recoveredDebate": "21",
+  "mergedOutput": null,
+  "unattemptedOriginalContextIndexes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "totals": {
+    "modelContexts": 2,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "nineContextResumptionPreparation": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-on-further-publication-recovery-failure"
+}
