@@ -82,9 +82,18 @@ assert.equal(preparation.acquisitionPolicy.repeatedRanges, 0);
 assert.deepEqual(preparation.acquisitionPolicy.acquisitionFormatByVideo, {
   "9r_XAIksLdI": "bestaudio/best",
   "_hrN4Mn8m1w": "bestaudio/best",
-  "5OXPlUCGScY": "bestaudio/best"
+  "5OXPlUCGScY": "18"
 });
-assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution, null);
+assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.debateNumber, "15");
+assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.attempts, 1);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.level, 1);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardAttempt, 1);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.formatSelector, "18");
+assert.equal(
+  preparation.acquisitionPolicy.boundedRecovery.transport,
+  "complete-sequential-nonoverlapping-byte-ranges"
+);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.repeatedRanges, 0);
 assert.deepEqual(preparation.acquisitionPolicy.redirectPolicy, {
   manual: true,
   httpsOnly: true,
@@ -103,35 +112,19 @@ assert(
   preparation.publicSourceAttemptAudit.every(
     (item) =>
       item.maximumAttempts === 1 &&
-      [0, 1].includes(item.attempt) &&
-      ["success", "not-required-local-source-reused"].includes(item.outcome) &&
-      (item.attempt === 0
-        ? item.transportAudit === null
-        : item.transportAudit.freshUrlResolutionAttempts === 1 &&
-          item.transportAudit.freshMediaUrlsResolved === 1 &&
-          item.transportAudit.plannedRange === "bytes=0-" &&
-          item.transportAudit.rangeRepeated === false &&
-          item.transportAudit.redirectCount >= 0 &&
-          item.transportAudit.redirectCount <= 3 &&
-          item.transportAudit.redirectChain.length ===
-            item.transportAudit.redirectCount + 1 &&
-          item.transportAudit.redirectChain.every(
-            (request) =>
-              request.protocol === "https:" &&
-              (request.hostname === "googlevideo.com" ||
-                request.hostname.endsWith(".googlevideo.com")) &&
-              /^[a-f0-9]{64}$/.test(request.urlSha256)
-          ) &&
-          item.transportAudit.finalStatusCode === 206 &&
-          /^bytes 0-\d+\/(\d+|\*)$/.test(item.transportAudit.contentRange) &&
-          item.transportAudit.bytesDownloaded > 0)
+      [1, 2].includes(item.attempt) &&
+      item.attemptsByShard.length === item.attempt &&
+      item.attemptsByShard.every((attempt) => attempt.attempt === 1)
   )
 );
 assert.equal(
   preparation.publicSourceAttemptAudit.reduce((sum, item) => sum + item.attempt, 0),
   preparation.totals.sourceAcquisitionAttempts
 );
-assert.equal(preparation.totals.sourceAcquisitionAttempts, preparation.totals.sourceDownloads);
+assert.equal(preparation.totals.sourceAcquisitionAttempts, 4);
+assert.equal(preparation.totals.sourceDownloads, 3);
+assert.equal(preparation.totals.failedSourceAcquisitionAttempts, 1);
+assert.equal(preparation.totals.recoverySourceAcquisitionAttempts, 1);
 assert.equal(preparation.executionBoundary.audioPlaybackCalls, 0);
 assert.equal(preparation.executionBoundary.semanticAudioEvaluations, 0);
 assert.equal(preparation.executionBoundary.transcriptionCalls, 0);

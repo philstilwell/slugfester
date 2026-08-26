@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-audio-source-partial-execution",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "partial-source-preparation-failure-preserved-bounded-recovery-authorized",
+  "preservedAt": "2026-08-26T20:11:08Z",
+  "checkpointCommit": "1ee5e9420213c7eda27ac2cece07e5475736f5f4",
+  "plannedSources": 3,
+  "plannedClips": 4,
+  "sourceAcquisitionAttempts": 3,
+  "successfulSources": [
+    {
+      "debateNumber": "152",
+      "videoId": "9r_XAIksLdI",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/audio/source.mp3",
+      "sourceAudioSha256": "1268c7b41d513bdd25b9946b9a3d356bcbd6c9275981e7cbbe9087deb20d04ea",
+      "sourceAudioBytes": 65251794,
+      "clipsPrepared": 1
+    },
+    {
+      "debateNumber": "07",
+      "videoId": "_hrN4Mn8m1w",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/audio/source.mp3",
+      "sourceAudioSha256": "fb04874b652161414ccf66428471626934ff9dae70f3c25e732f59909335bbf2",
+      "sourceAudioBytes": 51297546,
+      "clipsPrepared": 2
+    }
+  ],
+  "successfulClips": [
+    {
+      "debateNumber": "152",
+      "moveId": "pro-evidence-experience-epistemology",
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/clips/pro-evidence-experience-epistemology.mp3",
+      "clipSha256": "618253c663dbfb611d55ac99dccf08a461c9164c4640b8d47a635da3b15e9697",
+      "clipBytes": 183306
+    },
+    {
+      "debateNumber": "07",
+      "moveId": "pro-doubled-kyrios-veiled-claim",
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-doubled-kyrios-veiled-claim.mp3",
+      "clipSha256": "9699e9aa6d6a65ae2aa99270e8dd436efa710d891936be7c2c67265bdefc2150",
+      "clipBytes": 927498
+    },
+    {
+      "debateNumber": "07",
+      "moveId": "pro-synoptic-disclosure-early-christology",
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-synoptic-disclosure-early-christology.mp3",
+      "clipSha256": "e74b870ce3e47938096257dda8252a97dc869d89590576a205d02f08da74d2e6",
+      "clipBytes": 1545258
+    }
+  ],
+  "failure": {
+    "debateNumber": "15",
+    "videoId": "5OXPlUCGScY",
+    "formatSelector": "bestaudio/best",
+    "attempts": 1,
+    "retries": 0,
+    "failedArtifact": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.mp3",
+    "failedArtifactSha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754",
+    "failedArtifactBytes": 354,
+    "diagnosis": "The selected audio-only response was a bounded partial media range. FFmpeg emitted a 354-byte invalid MP3, and ffprobe found no MPEG audio frames.",
+    "errorClass": "partial-media-response-produced-invalid-normalized-audio",
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "formatDiscovery": {
+    "metadataRequests": 1,
+    "mediaRequests": 0,
+    "availableFormats": [
+      {
+        "formatId": "18",
+        "extension": "mp4",
+        "protocol": "https",
+        "audioCodec": "mp4a.40.2",
+        "estimatedSizeMiB": 226.6
+      }
+    ]
+  },
+  "recoveryPlan": {
+    "level": 1,
+    "maximumRecoveryLevels": 2,
+    "shards": 1,
+    "attemptsPerShard": 1,
+    "debateNumber": "15",
+    "fieldDisjointFromFailedAttempt": true,
+    "freshFormatSelector": "18",
+    "freshTransport": "complete-sequential-nonoverlapping-byte-ranges",
+    "retries": 0,
+    "preserveFailedArtifact": true,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "activate-one-debate-15-audio-source-recovery-shard-under-standing-authorization"
+}

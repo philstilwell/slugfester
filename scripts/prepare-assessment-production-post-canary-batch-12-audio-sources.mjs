@@ -30,6 +30,8 @@ const localRoot =
 const workPreparationPath = `${planRoot}/audio-work-item-preparation.json`;
 const workPath = `${planRoot}/audio-work-items.json`;
 const preparationPath = `${planRoot}/audio-source-preparation.json`;
+const partialExecutionPath = `${planRoot}/audio-source-partial-execution-1.json`;
+const recoveryExecutionPath = `${planRoot}/audio-source-recovery-1-debate-15.json`;
 const ffmpeg = "/opt/homebrew/bin/ffmpeg";
 const ffprobe = "/opt/homebrew/bin/ffprobe";
 const exists = (file) => access(file).then(() => true, () => false);
@@ -63,11 +65,12 @@ const EXPECTED_AUDIO = [
 const SOURCE_FORMATS = Object.freeze({
   "9r_XAIksLdI": "bestaudio/best",
   "_hrN4Mn8m1w": "bestaudio/best",
-  "5OXPlUCGScY": "bestaudio/best"
+  "5OXPlUCGScY": "18"
 });
 const TOOL_SOURCES = [
   "scripts/prepare-assessment-production-post-canary-batch-12-audio-sources.mjs",
   "scripts/test-assessment-production-post-canary-batch-12-audio-sources.mjs",
+  "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15.mjs",
   "scripts/prepare-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/test-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/lib/assessment-production-post-canary-batch-12-audio-work-items.mjs",
@@ -97,12 +100,16 @@ const USER_AUTHORIZATION = Object.freeze({
   nextBatchSelectionAuthorized: false
 });
 
-const [workPreparationBytes, workBytes] = await Promise.all([
+const [workPreparationBytes, workBytes, partialExecutionBytes, recoveryExecutionBytes] = await Promise.all([
   readFile(workPreparationPath),
-  readFile(workPath)
+  readFile(workPath),
+  readFile(partialExecutionPath),
+  readFile(recoveryExecutionPath)
 ]);
 const workPreparation = JSON.parse(workPreparationBytes);
 const work = JSON.parse(workBytes);
+const partialExecution = JSON.parse(partialExecutionBytes);
+const recoveryExecution = JSON.parse(recoveryExecutionBytes);
 
 assertV4(
   workPreparation.status ===
@@ -129,6 +136,21 @@ assertV4(
   ) === JSON.stringify([...EXPECTED_AUDIO].sort()),
   "Batch 12 exact four-clip population changed"
 );
+assertV4(
+  partialExecution.status ===
+      "partial-source-preparation-failure-preserved-bounded-recovery-authorized" &&
+    partialExecution.sourceAcquisitionAttempts === 3 &&
+    partialExecution.successfulSources.length === 2 &&
+    partialExecution.successfulClips.length === 3 &&
+    partialExecution.failure.debateNumber === "15" &&
+    partialExecution.failure.attempts === 1 &&
+    recoveryExecution.status ===
+      "debate-15-audio-source-recovery-level-1-passed" &&
+    recoveryExecution.shardAttempt === 1 &&
+    recoveryExecution.retries === 0 &&
+    recoveryExecution.freshFormatSelector === SOURCE_FORMATS["5OXPlUCGScY"],
+  "Batch 12 preserved partial execution or bounded recovery changed"
+);
 for (const [file, digest] of Object.entries(workPreparation.sourceHashes)) {
   assertV4(sha256(await readFile(file)) === digest, `source hash mismatch: ${file}`);
 }
@@ -138,6 +160,8 @@ assertV4(await exists(ffprobe), "ffprobe is unavailable");
 const inputHashes = {
   [workPreparationPath]: sha256(workPreparationBytes),
   [workPath]: sha256(workBytes),
+  [partialExecutionPath]: sha256(partialExecutionBytes),
+  [recoveryExecutionPath]: sha256(recoveryExecutionBytes),
   [POST_CANARY_BATCH_12_STANDING_AUTHORIZATION]: standingAuthorization.sha256
 };
 for (const file of TOOL_SOURCES) inputHashes[file] = sha256(await readFile(file));
@@ -380,7 +404,15 @@ if (!shouldWrite) {
           extractorRetries: 0,
           fileAccessRetries: 0,
           acquisitionFormatByVideo: SOURCE_FORMATS,
-          diagnosedFailedResolution: null,
+          diagnosedFailedResolution: partialExecution.failure,
+          boundedRecovery: {
+            path: recoveryExecutionPath,
+            sha256: sha256(recoveryExecutionBytes),
+            level: recoveryExecution.recoveryLevel,
+            shardAttempt: recoveryExecution.shardAttempt,
+            formatSelector: recoveryExecution.freshFormatSelector,
+            transport: recoveryExecution.transport.method
+          },
           normalizeMonoHz: 16000,
           normalizeBitrateKbps: 48,
           clipBitrateKbps: 64,
@@ -402,8 +434,8 @@ if (!shouldWrite) {
 const sources = [];
 const clips = [];
 const publicSourceAttemptAudit = [];
-let sourceDownloads = 0;
-let existingNormalizedSources = 0;
+const sourceDownloads = 3;
+const existingNormalizedSources = 3;
 
 for (const [videoId, moves] of grouped) {
   const debateNumber = moves[0].debateNumber;
@@ -418,59 +450,19 @@ for (const [videoId, moves] of grouped) {
   await mkdir(audioDirectory, { recursive: true });
   await mkdir(clipDirectory, { recursive: true });
 
-  let acquisitionMode = "existing-normalized-source";
-  let acquisitionAttempts = 0;
-  let publicSourceAttemptOutcome = "not-required-local-source-reused";
-  let transportAudit = null;
-  if (!(await exists(sourceAudio))) {
-    const downloadedPath = path.join(audioDirectory, "source.download.m4a");
-    assertV4(
-      !(await exists(downloadedPath)),
-      `${videoId}: an unverified prior download exists; refusing a new range request`
-    );
-    acquisitionAttempts = 1;
-    try {
-      const formatSelector = SOURCE_FORMATS[videoId];
-      assertV4(formatSelector, `${videoId}: no frozen source format selector`);
-      const resolvedUrl = resolveFreshMediaUrl(videoId, formatSelector);
-      transportAudit = {
-        freshUrlResolutionAttempts: 1,
-        freshMediaUrlsResolved: 1,
-        formatSelector,
-        resolvedUrl: redactedUrlRecord(resolvedUrl),
-        ...(await acquireSingleRange(videoId, resolvedUrl, downloadedPath))
-      };
-    } catch (error) {
-      await unlink(downloadedPath).catch(() => {});
-      throw new Error(
-        `${videoId}: the single authorized public-source acquisition attempt failed`,
-        { cause: error }
-      );
-    }
-    execFileSync(ffmpeg, [
-      "-nostdin",
-      "-hide_banner",
-      "-loglevel",
-      "error",
-      "-y",
-      "-i",
-      downloadedPath,
-      "-vn",
-      "-ac",
-      "1",
-      "-ar",
-      "16000",
-      "-b:a",
-      "48k",
-      sourceAudio
-    ]);
-    await unlink(downloadedPath);
-    acquisitionMode = "downloaded-public-source";
-    publicSourceAttemptOutcome = "success";
-    sourceDownloads += 1;
-  } else {
-    existingNormalizedSources += 1;
-  }
+  assertV4(
+    await exists(sourceAudio),
+    `${videoId}: preserved or recovered source is missing; no further source attempt is authorized`
+  );
+  const recovered = videoId === recoveryExecution.videoId;
+  const acquisitionMode = recovered
+    ? "downloaded-public-source-after-bounded-field-disjoint-recovery"
+    : "downloaded-public-source-preserved-from-partial-execution";
+  const acquisitionAttempts = recovered ? 2 : 1;
+  const publicSourceAttemptOutcome = recovered
+    ? "success-after-bounded-field-disjoint-recovery"
+    : "success-preserved-from-partial-execution";
+  const transportAudit = recovered ? recoveryExecution.transport : null;
 
   publicSourceAttemptAudit.push({
     debateNumber,
@@ -478,7 +470,13 @@ for (const [videoId, moves] of grouped) {
     attempt: acquisitionAttempts,
     maximumAttempts: 1,
     outcome: publicSourceAttemptOutcome,
-    transportAudit
+    transportAudit,
+    attemptsByShard: recovered
+      ? [
+          { shard: "initial", attempt: 1, outcome: "failed-preserved" },
+          { shard: "recovery-1", attempt: 1, outcome: "success" }
+        ]
+      : [{ shard: "initial", attempt: 1, outcome: "success-preserved" }]
   });
   const sourceProbe = probeAudio(sourceAudio);
   const sourceDurationSeconds = sourceProbe.durationSeconds;
@@ -603,7 +601,17 @@ const preparation = {
       fileAccessRetries: 0
     },
     acquisitionFormatByVideo: SOURCE_FORMATS,
-    diagnosedFailedResolution: null,
+    diagnosedFailedResolution: partialExecution.failure,
+    boundedRecovery: {
+      path: recoveryExecutionPath,
+      sha256: sha256(recoveryExecutionBytes),
+      level: recoveryExecution.recoveryLevel,
+      shardAttempt: recoveryExecution.shardAttempt,
+      formatSelector: recoveryExecution.freshFormatSelector,
+      transport: recoveryExecution.transport.method,
+      rangesRequested: recoveryExecution.transport.rangesRequested,
+      repeatedRanges: recoveryExecution.transport.repeatedRanges
+    },
     normalizedChannels: 1,
     normalizedSampleRateHz: 16000,
     normalizedBitrateKbps: 48,
@@ -631,6 +639,8 @@ const preparation = {
       (sum, source) => sum + source.publicSourceAcquisitionAttempts,
       0
     ),
+    failedSourceAcquisitionAttempts: 1,
+    recoverySourceAcquisitionAttempts: 1,
     clips: clips.length,
     clipMinutes: Number(
       (clips.reduce((sum, clip) => sum + clip.durationSeconds, 0) / 60).toFixed(4)
