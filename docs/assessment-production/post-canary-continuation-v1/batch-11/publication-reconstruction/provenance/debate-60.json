@@ -1,58 +1,141 @@
 {
-  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-publication-provenance",
-  "protocolId": "assessment-production-post-canary-batch-11-publication-reconstruction",
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-publication-provenance-after-field-disjoint-repair",
+  "protocolId": "assessment-production-post-canary-batch-11-publication-field-disjoint-repair-1",
   "debateNumber": "60",
   "debateId": "horn-oconnor-jesus-resurrection-2026",
-  "model": {
-    "label": "5.6 Sol",
-    "slug": "gpt-5.6-sol",
-    "reasoningEffort": "low",
-    "authentication": "ChatGPT subscription"
+  "failedOriginalFirstAttempt": {
+    "sourceOutputSha256": "fcec16b6cb6f921ed77ffa0beed9a1e78f9445bc7603df749da1c964d701edf7",
+    "sourceValidationSha256": "df1ae69c38d62805fd7df72e4161ddb310e2de8b459731d4da276764cdea8497",
+    "sourceProvenanceSha256": "91653e9e79171f2494433e16d7a1464ec90bfc3ecd4ac5f5fa89fa9f4019023e",
+    "attemptCount": 1,
+    "retryCount": 0
   },
-  "authentication": "ChatGPT subscription",
-  "reasoningEffort": "low",
-  "attemptCount": 1,
-  "retryCount": 0,
-  "timeoutExtensionCount": 0,
-  "correctionContextCount": 0,
-  "apiKeysRemoved": true,
-  "isolatedTemporaryCodexHome": true,
-  "isolatedTemporaryWorkingDirectory": true,
-  "participantJudgmentWasScoreBlind": true,
-  "ownDebateScoresImmutable": true,
-  "copiedInputs": {
-    "production-workflow.md": {
-      "source": "docs/assessment-production-workflow.md",
-      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"
+  "acceptedRepairContexts": [
+    {
+      "contextIndex": 2,
+      "shardId": "debate-60-shard-1",
+      "outputSha256": "6e2e1bfec14cd33383f5df472a2f6f38c2c69197c5febe572d86aa102883f4b0",
+      "writableFields": [
+        "moveProse.con-rival-mormon-witness-parity.critique",
+        "moveProse.con-five-hundred-corroboration-limits.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "readiness-workflow.md": {
-      "source": "docs/assessment-workflow-v4.2.21.17.41.md",
-      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"
+    {
+      "contextIndex": 3,
+      "shardId": "debate-60-shard-2",
+      "outputSha256": "73a170c84d4011a07038a6ed90deaa5812240a3faadfe84753d208f71c1dce33",
+      "writableFields": [
+        "moveProse.pro-bodily-pauline-physicality.critique",
+        "moveProse.pro-rivals-supernatural-admissibility.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "output-contract.md": {
-      "source": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
-      "sha256": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728"
+    {
+      "contextIndex": 4,
+      "shardId": "debate-60-shard-3",
+      "outputSha256": "ff41b5de056d075274d7325b45ded129dcf5c1c9e8d6fa627efa3f306137a153",
+      "writableFields": [
+        "moveProse.pro-rivals-mormon-differences.critique",
+        "moveProse.con-paul-gospel-development.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "manual.md": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/manual.md",
-      "sha256": "bb471f3d2103cd8b69f9361705b225b1af49277401cbf9a734b44855f7b7ad7b"
+    {
+      "contextIndex": 5,
+      "shardId": "debate-60-shard-4",
+      "outputSha256": "3cdeaabf4dd8c6d3ea8c2b7c9b03c4538818ff00de3dfdc6ba2aa8aadf0bf251",
+      "writableFields": [
+        "moveProse.pro-bodily-continuity-wounds.critique",
+        "moveProse.pro-appearances-group-source.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "reference-catalog.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/reference-catalog.json",
-      "sha256": "5677291411ac9dc643fd0f39cbecadc60eecc3e0ac3c8000768132a8328faee8"
+    {
+      "contextIndex": 6,
+      "shardId": "debate-60-shard-5",
+      "outputSha256": "8e29987163214ca82813130eccafc4ac1e7ebe26a378f3a59058a8c0f32a7abf",
+      "writableFields": [
+        "moveProse.pro-sincerity-informed-danger.critique",
+        "moveProse.pro-sincerity-apostolic-risk.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "packet.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/packets/debate-60.json",
-      "sha256": "4bad14560fa06bd45ec352baf37c8614a5c8c31b0785db001e6138550faa4564"
+    {
+      "contextIndex": 7,
+      "shardId": "debate-60-shard-6",
+      "outputSha256": "a8696eb1e45db056e25de1c6dcf39dbe5ec64c25b42bdf29e35f6f1d5b0229ed",
+      "writableFields": [
+        "moveProse.pro-tomb-sober-women.critique",
+        "moveProse.con-postmortem-extrabiblical-gap.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "schema.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/schemas/debate-60.schema.json",
-      "sha256": "1da878ffb1c7c1bda6e1a0e2c32257fbf16c2ef33e03f0de491d955d7c4f87ec"
+    {
+      "contextIndex": 8,
+      "shardId": "debate-60-shard-7",
+      "outputSha256": "15f15fd638e4a4bc204e4c137a25ca30bb41ea920c8e457d1e62942008c43cc1",
+      "writableFields": [
+        "moveProse.pro-appearances-conversions-conduct.critique",
+        "moveProse.con-martyrdom-bodily-knowledge-gap.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
+    },
+    {
+      "contextIndex": 9,
+      "shardId": "debate-60-shard-8",
+      "outputSha256": "4ae9dac914b4993244f28b1d92efa361c82a15f8963272e3b2c76a8dca71aaab",
+      "writableFields": [
+        "moveProse.con-reburial-theft-alternatives.critique",
+        "moveProse.pro-tomb-alternatives-conjunction.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
+    },
+    {
+      "contextIndex": 10,
+      "shardId": "debate-60-shard-9",
+      "outputSha256": "509c233b111711fa900c17393e56ddc7d11439043c56a1b0dbca68933a9cd2f3",
+      "writableFields": [
+        "moveProse.con-pilate-burial-plausibility.critique",
+        "moveProse.con-defection-testimony-independence.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
+    },
+    {
+      "contextIndex": 11,
+      "shardId": "debate-60-shard-10",
+      "outputSha256": "88f3b608e51954deeb1a5d77228be4499504b7fb641daa17cab17e98136db7fe",
+      "writableFields": [
+        "moveProse.con-firsthand-specific-martyrdom-deficit.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     }
-  },
-  "outputSha256": "fcec16b6cb6f921ed77ffa0beed9a1e78f9445bc7603df749da1c964d701edf7",
+  ],
+  "acceptedOutputSha256": "2810c4cd3187a8dd00a7babfadaac111bb41533e2bf443b2462190d59af145a9",
+  "validationCleanFieldsRetainedDeterministically": true,
+  "rejectedPriorStringsAvailableToRepairModels": false,
+  "lockedScoresUnchanged": true,
   "modelAuthoredScores": 0,
-  "scorePassesExecutedThisStage": 0,
   "meteredApiCostUsd": 0,
-  "paidServiceCallsThisStage": 0
+  "paidServiceCalls": 0
 }

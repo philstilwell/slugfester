@@ -1,0 +1,765 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-publication-field-disjoint-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-11-publication-field-disjoint-repair-1",
+  "status": "four-debate-field-disjoint-repair-passed-and-complete-cohort-validated",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/failure-recovery/field-disjoint-repair-1/execution-preparation-manifest.json",
+    "preparationSha256": "2bc333bd70795393bdb6ea5b2c1acb8f58b1d177b3e6f748377a593203b6efd8",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/failure-recovery/field-disjoint-repair-1/execution-activation.json",
+    "activationSha256": "89a0f9ae52dcf39a2b87a834de8343f5fbd4794ae952d7b219ae2cc8f4d10317",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-reconstruction/failure-recovery/field-disjoint-repair-1/model-execution.json",
+    "executionSha256": "21cd790308cc103c09b0b6ff923b463bfe34d990816d65c9ea6aa05b81d0109d"
+  },
+  "execution": {
+    "contextsPlanned": 18,
+    "contextsAttempted": 18,
+    "validContexts": 18,
+    "invalidContexts": 0,
+    "attempts": 18,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 536333,
+    "aggregateModelElapsedMs": 1019625
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-191-shard-1",
+      "debateNumber": "191",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "b3926fce53a1df3531ab35ee4788e1e7dda905aab2238466e30dd0d931f1eac3",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 0,
+        "debateNumber": "191",
+        "shardId": "debate-191-shard-1",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-methodological-naturalism-exclusion.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 1045,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-151-shard-1",
+      "debateNumber": "151",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "d03554f1f790ef8ac0f41e55841bfb45fb8c2d15511e497a05be86875a53b9a3",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 1,
+        "debateNumber": "151",
+        "shardId": "debate-151-shard-1",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-unavoidable-life-motivation-symmetry.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 893,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-60-shard-1",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "6e2e1bfec14cd33383f5df472a2f6f38c2c69197c5febe572d86aa102883f4b0",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 2,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-1",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-rival-mormon-witness-parity.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 960,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-five-hundred-corroboration-limits.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 1007,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 3,
+      "shardId": "debate-60-shard-2",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "73a170c84d4011a07038a6ed90deaa5812240a3faadfe84753d208f71c1dce33",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 3,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-2",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-bodily-pauline-physicality.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 1086,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-rivals-supernatural-admissibility.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1034,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 4,
+      "shardId": "debate-60-shard-3",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "ff41b5de056d075274d7325b45ded129dcf5c1c9e8d6fa627efa3f306137a153",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 4,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-3",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-rivals-mormon-differences.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1039,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-paul-gospel-development.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 970,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 5,
+      "shardId": "debate-60-shard-4",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "3cdeaabf4dd8c6d3ea8c2b7c9b03c4538818ff00de3dfdc6ba2aa8aadf0bf251",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 5,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-4",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-bodily-continuity-wounds.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 921,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-appearances-group-source.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 933,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 6,
+      "shardId": "debate-60-shard-5",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "8e29987163214ca82813130eccafc4ac1e7ebe26a378f3a59058a8c0f32a7abf",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 6,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-5",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-sincerity-informed-danger.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 944,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-sincerity-apostolic-risk.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 931,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 7,
+      "shardId": "debate-60-shard-6",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "a8696eb1e45db056e25de1c6dcf39dbe5ec64c25b42bdf29e35f6f1d5b0229ed",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 7,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-6",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-tomb-sober-women.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 961,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-postmortem-extrabiblical-gap.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 998,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 8,
+      "shardId": "debate-60-shard-7",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "15f15fd638e4a4bc204e4c137a25ca30bb41ea920c8e457d1e62942008c43cc1",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 8,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-7",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-appearances-conversions-conduct.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 988,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-martyrdom-bodily-knowledge-gap.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 909,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 9,
+      "shardId": "debate-60-shard-8",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "4ae9dac914b4993244f28b1d92efa361c82a15f8963272e3b2c76a8dca71aaab",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 9,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-8",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-reburial-theft-alternatives.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1026,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-tomb-alternatives-conjunction.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 954,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 10,
+      "shardId": "debate-60-shard-9",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "509c233b111711fa900c17393e56ddc7d11439043c56a1b0dbca68933a9cd2f3",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 10,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-9",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-pilate-burial-plausibility.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 1044,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-defection-testimony-independence.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1049,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 11,
+      "shardId": "debate-60-shard-10",
+      "debateNumber": "60",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "88f3b608e51954deeb1a5d77228be4499504b7fb641daa17cab17e98136db7fe",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 11,
+        "debateNumber": "60",
+        "shardId": "debate-60-shard-10",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-firsthand-specific-martyrdom-deficit.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 1043,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 12,
+      "shardId": "debate-43-shard-1",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "af54e133620817bc4ed53ea02674ec3b9114b21ec4acdc815f4c9b1b21309c18",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 12,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-1",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-beginning-transcendent-cause.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 980,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-classical-theorems-quantum-limit.critique",
+            "kind": "critique",
+            "words": 115,
+            "characters": 977,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 13,
+      "shardId": "debate-43-shard-2",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "0e36638468cae830883d4f94c1e16aca883304236f28a9d3cdbcedcd187ba37a",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 13,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-2",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-alternatives-quantum-inputs.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1013,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-alternatives-bgv-costs.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 960,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 14,
+      "shardId": "debate-43-shard-3",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "676709ee5b2fa2b5a6cd4dcaf1f7d4120dcd11a57618b9e6aa4aef879ddc2774",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 14,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-3",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-models-require-tested-predictions.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 1062,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-finetuning-narrow-ranges.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 997,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 15,
+      "shardId": "debate-43-shard-4",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "ad8b0a2a8e725558e96630ffec5eb1aaec97fdb52f36d64f1431ee02a2b186e7",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 15,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-4",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-fine-tuning-measure-unknown.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1002,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-finetuning-contingency-probability.critique",
+            "kind": "critique",
+            "words": 118,
+            "characters": 922,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 16,
+      "shardId": "debate-43-shard-5",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "aacd787887614733a54fbe3c794f8f13d9f20975a9ac15e6e608de27c6a71269",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 16,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-5",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-anthropic-constant-prediction.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1018,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.con-embodied-minds-analogy-limit.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 966,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 17,
+      "shardId": "debate-43-shard-6",
+      "debateNumber": "43",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "b59c3b00f85cc9d05064f53c66c95ad76cb4e893b8f810ef2f6acaaa5edf0d2e",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 17,
+        "debateNumber": "43",
+        "shardId": "debate-43-shard-6",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-divine-intentions-underdetermined.critique",
+            "kind": "critique",
+            "words": 114,
+            "characters": 1002,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    }
+  ],
+  "debateResults": [
+    {
+      "debateNumber": "191",
+      "contextsPlanned": 1,
+      "contextsPassed": 1,
+      "contextsFailed": 0,
+      "writableFields": 1,
+      "correctedFields": 1,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "191",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 992,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "151",
+      "contextsPlanned": 1,
+      "contextsPassed": 1,
+      "contextsFailed": 0,
+      "writableFields": 1,
+      "correctedFields": 1,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "151",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 893,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "60",
+      "contextsPlanned": 10,
+      "contextsPassed": 10,
+      "contextsFailed": 0,
+      "writableFields": 19,
+      "correctedFields": 19,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "60",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 909,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    },
+    {
+      "debateNumber": "43",
+      "contextsPlanned": 6,
+      "contextsPassed": 6,
+      "contextsFailed": 0,
+      "writableFields": 11,
+      "correctedFields": 11,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "43",
+        "moves": 19,
+        "critiques": 19,
+        "minimumCritiqueCharacters": 922,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    }
+  ],
+  "totals": {
+    "debatesTargeted": 4,
+    "debatesRepaired": 4,
+    "debatesFailed": 0,
+    "critiqueFieldsTargeted": 32,
+    "quoteFieldsTargeted": 0,
+    "writableFieldsTargeted": 32,
+    "correctedFieldsAccepted": 32,
+    "modelContexts": 18,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completeCohortStatus": "post-canary-batch-11-complete-ten-debate-publication-output-gate-passed-after-field-disjoint-repair",
+  "authorization": {
+    "deterministicCompilationPreparation": true,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-11-deterministic-publication-compilation"
+}
