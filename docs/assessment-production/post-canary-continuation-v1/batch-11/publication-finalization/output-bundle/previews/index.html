@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Slugfester Batch 11 publication staging preview</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { renderPublicationStagingDebate } from "/src/app.js";
+      const allowedHosts = new Set(["127.0.0.1", "localhost"]);
+      const allowedDebates = new Set(["54","01","82","191","151","188","60","79","43","24"]);
+      const params = new URLSearchParams(window.location.search);
+      const debateNumber = params.get("debate") || "54";
+      if (!allowedHosts.has(window.location.hostname)) {
+        document.querySelector("#app").innerHTML = "<main><h1>Publication staging preview unavailable</h1></main>";
+      } else if (!allowedDebates.has(debateNumber)) {
+        document.querySelector("#app").innerHTML = "<main><h1>Unknown Batch 11 publication-staging debate</h1></main>";
+      } else {
+        const response = await fetch(`../final-candidates/debate-${debateNumber}.json`);
+        if (!response.ok) throw new Error(`Unable to load Debate ${debateNumber} publication candidate`);
+        renderPublicationStagingDebate(await response.json());
+      }
+    </script>
+  </body>
+</html>
