@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-publication-recursive-correction-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-debate-21-recursive-correction-1",
+  "contextIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debateNumber": "21",
+  "debateId": "hitchens-wolpe-great-god-debate-2010",
+  "assessmentModel": "5.6 Sol",
+  "correctionLevel": 1,
+  "correctionType": "one-field-publication-critique-structural-correction",
+  "writableFields": [
+    "moveProse.con-judaism-character-and-justice.critique"
+  ],
+  "writableFieldCount": 1,
+  "allOtherFieldsUnavailableAndImmutable": true,
+  "failedOutputAvailable": false,
+  "failedCritiqueAvailable": false,
+  "participantJudgmentClosed": true,
+  "publicationScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "move": {
+    "moveId": "con-judaism-character-and-justice",
+    "sectionId": "religious-tradition-authority-and-harm",
+    "side": "con",
+    "speaker": "Rabbi David Wolpe",
+    "moveKind": "reply",
+    "proposition": "Judaism centrally directs people toward justice, character refinement, and decent treatment despite abuses committed by religious authorities.",
+    "importance": 3,
+    "finalScore": 72,
+    "scoreBand": "mixed 65–74",
+    "displayTime": "35:54",
+    "sourceSpan": {
+      "startEvent": 929,
+      "endEvent": 969,
+      "startMs": 2154280,
+      "endMs": 2247920
+    },
+    "sourceExcerpt": "Judaism is a long exegetical tradition and it says several times in the talmud that the one purpose of the mitv is lot which means to refine human character it's clear that judism is directed around goodness it's repeated over and over again the whole system and framework of Mez vote are to get people to treat each other decently and if you say what you do that people use Authority governmental Authority religious",
+    "sourceExcerptAudit": {
+      "sourceExact": true,
+      "wholeWordBoundaries": true,
+      "tokenCount": 74,
+      "characterCount": 417
+    },
+    "attributionConfidence": "high",
+    "audioVerified": false,
+    "quoteEligible": true,
+    "burdenContact": {
+      "polarity": "attack",
+      "tier": "central",
+      "bridgeId": "pro-authority-harm"
+    },
+    "response": {
+      "class": "relevant-nonanswer",
+      "decisiveTargetIds": [
+        "pro-projection-parental-consolation",
+        "pro-verifiable-natural-cosmology-evolution"
+      ],
+      "components": [
+        {
+          "componentId": "con-judaism-character-and-justice-component-01",
+          "targetMoveId": "pro-projection-parental-consolation",
+          "text": "The legal earlier demand is whether religion is a fear-driven human projection whose consoling function supplies no truth warrant.",
+          "contacted": false,
+          "decisive": true
+        },
+        {
+          "componentId": "con-judaism-character-and-justice-component-02",
+          "targetMoveId": "pro-verifiable-natural-cosmology-evolution",
+          "text": "A further demand concerns whether natural explanations and destructive history undermine providential religious purpose.",
+          "contacted": false,
+          "decisive": true
+        }
+      ],
+      "rationale": "The claims about Judaism's ethical orientation bear on the motion's assessment of religion, but they do not contact the earlier locked projection or natural-explanation demands.",
+      "responsivenessWithinClass": {
+        "value": 50,
+        "rationale": "Within relevant nonanswers, it supplies substantive contrary material about religious ethics while leaving the available earlier decisive components untouched."
+      },
+      "responsiveness": {
+        "value": 55,
+        "rationale": "Within relevant nonanswers, it supplies substantive contrary material about religious ethics while leaving the available earlier decisive components untouched."
+      }
+    },
+    "precisionFindings": {
+      "propositionRecoverability": "complete",
+      "termStability": "stable",
+      "scopeStability": "partly-unstable",
+      "qualificationExplicitness": "explicit",
+      "rationale": "The central claim about Judaism is clear and acknowledges abuses, though references to the whole system and repeated goodness broaden the scope materially."
+    },
+    "calibrationFindings": {
+      "assertedForce": "strong-probability",
+      "warrantFit": "slightly-overstated",
+      "qualificationStatus": "explicit",
+      "uncertaintyAcknowledged": "no",
+      "rationale": "The cited exegetical purpose supports an ethical orientation, but it is insufficient to establish the dominant effect of an entire diverse tradition."
+    },
+    "charity": {
+      "tested": true,
+      "alternative": "Religious ethical teachings can coexist with authoritative texts and institutions that license serious harm.",
+      "decisiveQualification": "A central aspiration toward goodness does not by itself show that harmful authority is incidental rather than structurally enabled."
+    },
+    "ratings": {
+      "logicalCoherence": {
+        "value": 77,
+        "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+      },
+      "evidenceWarrant": {
+        "value": 69,
+        "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+      },
+      "relevanceBurden": {
+        "value": 86,
+        "rationale": "The move directly attacks the central authority-harm bridge by distinguishing religious purpose from abuse, but does not resolve causal or institutional concerns."
+      },
+      "representationalCharity": {
+        "value": 72,
+        "rationale": "Wolpe acknowledges abuses but answers mainly with beneficial purpose, leaving the structural version of the authority critique underdeveloped."
+      }
+    },
+    "evidenceBasis": "The excerpt identifies a long exegetical tradition, cites refinement of character as the purpose of commandments, and describes the framework as directing decent treatment.",
+    "assessmentConfidence": "high"
+  },
+  "constraints": {
+    "sentenceCount": 4,
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "wordsMinimum": 105,
+    "wordsMaximum": 130,
+    "wordsTargetMinimum": 112,
+    "wordsTargetMaximum": 118,
+    "charactersMinimum": 880,
+    "terminalPunctuationRequired": true,
+    "namedFallacyOrBiasFieldWritable": false
+  }
+}
