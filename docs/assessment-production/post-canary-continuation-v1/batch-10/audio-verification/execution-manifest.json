@@ -1,0 +1,964 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-verification-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-10-decomposed-consensus",
+  "status": "frozen-nine-post-canary-batch-10-paid-known-speaker-diarizations-authorized-under-standing-authorization",
+  "preparedAt": "2026-08-26T00:56:16.495Z",
+  "approvedAt": null,
+  "checkpointCommit": "80eb03b0970978022d7ea599fc366d419403a9a4",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 10 standing-authorization and bounded failure-recovery record covering deterministic selection and the complete reassessment and publication workflow for the next ten eligible debates, with subscription-backed and local direct incremental cost capped at $0 and conditional sequential gpt-4o-transcribe-diarize audio verification capped at a frozen estimate of $1.00.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json",
+    "standingAuthorizationSha256": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 9,
+    "speakerReferencesAuthorizedForPreparation": 10,
+    "conditionalAdvanceApprovalRecorded": true,
+    "audioVerificationExecutionAuthorizedOnlyAfterFrozenEstimateAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "21",
+      "74",
+      "123",
+      "147",
+      "130"
+    ],
+    "frozenTargetClips": 9,
+    "verificationCalls": 9,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 10,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "all-source-rows-have-positive-repository-lexical-token-count",
+      "reason": "All selected canonical source rows contain at least one repository lexical token.",
+      "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": []
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "moveId": "con-religious-motivation-and-sanctity",
+      "expectedSpeaker": "Rabbi David Wolpe",
+      "proposition": "Religion uniquely motivates practices and experiences of sanctity whose moral and emotional meaning cannot be reproduced by disbelief alone.",
+      "verificationExcerpt": "called by a God who tells you to help other human beings I mean all those things are things that religion motivates people to do not that you can't do them but that people generally don't do them if they're not motivated by religion get real I mean pronouncing an incantation yes isn't a moral action not isn't it's only it's only not a moral action if you don't feel sub enous it",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/con-religious-motivation-and-sanctity.mp3",
+      "clipSha256": "075d78b837cfd7862110907b5c14cd417944abd0e769dd68c27c9b2d8f8f5c14",
+      "durationSeconds": 98.282938,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/con-religious-motivation-and-sanctity.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Christopher Hitchens",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/christopher-hitchens.mp3",
+          "sha256": "abb3171f7bceccf43acfc139053721c37079d3d0a3c11a86e52be29e507c3014",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Rabbi David Wolpe",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/rabbi-david-wolpe.mp3",
+          "sha256": "a5a73a5265212ae1899cc8b011c4c9cbe8a82875170be9c0ebb0851b03d02a84",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "moveId": "pro-natural-transcendence-without-supernaturalism",
+      "expectedSpeaker": "Christopher Hitchens",
+      "proposition": "Experiences of transcendence, ecstasy, beauty, love, and mortality are genuine human phenomena but do not provide warrant for a supernatural realm.",
+      "verificationExcerpt": "that the human species mamian primate so on though it unly is and made out of the Dust of exploded sons does have a need for I would say the the Transcendent would one word the numinous um even the ecstatic um wouldn't trust anyone who hadn't felt this and it has obviously to do with landscape light uh music love and I think also a a permanent awareness of the transience of all",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/pro-natural-transcendence-without-supernaturalism.mp3",
+      "clipSha256": "c47c549d3948c9c59025c574f7a9d19d220476d52ca3a89581b48276f099fb18",
+      "durationSeconds": 80.679,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/pro-natural-transcendence-without-supernaturalism.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Christopher Hitchens",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/christopher-hitchens.mp3",
+          "sha256": "abb3171f7bceccf43acfc139053721c37079d3d0a3c11a86e52be29e507c3014",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Rabbi David Wolpe",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/rabbi-david-wolpe.mp3",
+          "sha256": "a5a73a5265212ae1899cc8b011c4c9cbe8a82875170be9c0ebb0851b03d02a84",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "moveId": "pro-voluntary-risk-arena",
+      "expectedSpeaker": "Josh Rasmussen",
+      "proposition": "God's creation of an arena may differ morally from wrongdoing within it when embodied beings voluntarily accept risks for opportunities involving growth, love, lessons, and experience.",
+      "verificationExcerpt": "voluntarily coming into a state of limitation or into a adventure where there's risks for the sake of lessons and love knowing that one of the risks are that you can be removed prematurely um and that's not an answer this isn't to say this is why there's evil and suffering it's just to point out there's a difference between saying oh i shouldn't do that and saying god shouldn't allow any beings to be part of an arena",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/clips/pro-voluntary-risk-arena.mp3",
+      "clipSha256": "5b7c9957b212cfa64f07e767ff594055daa53660874f513a9b2397bf4ef42f2a",
+      "durationSeconds": 212.359,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Josh Rasmussen",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/josh-rasmussen.mp3",
+          "sha256": "8acbc74254719102aaab51a9809e2e7ef645f819d49d4a87e5200b077f253aef",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex Malpass",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/alex-malpass.mp3",
+          "sha256": "fb786d36f6dde023fe0bab8e7cb7dad2ddc25337820ddaf0e50a4366352f30fe",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "moveId": "con-involuntary-belief-eternal-stakes",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "A sincere seeker cannot choose to find religious arguments convincing, so involuntary cognitive limitations cannot fairly ground eternal consequences.",
+      "verificationExcerpt": "find an answer then what I'm looking for I suppose is either an explanation for that an explanation for that experience some kind of second order explanation which makes that not a problem to worry about or itself what I'm doing wrong so as not to experience that that a question that I often ask is what you would do if you woke up tomorrow sort of in my mind as it were you just found yourself convinced that the arguments",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/con-involuntary-belief-eternal-stakes.mp3",
+      "clipSha256": "e085071cf2a474c632e5e2db48b695a0be1f95901b642153d97e26cfa2f40971",
+      "durationSeconds": 196.879,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Gregory Pine",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3",
+          "sha256": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3",
+          "sha256": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "moveId": "pro-continuous-providential-opportunity",
+      "expectedSpeaker": "Gregory Pine",
+      "proposition": "Providence continually supplies opportunities to receive grace, but fallen human agency can obstruct those opportunities because humanity freely lost gifted rectitude rather than because God ceased offering return.",
+      "verificationExcerpt": "state of grace is the is the Christian teaching and that they freely chose against it and that God is Not culpable for our fact of inheriting a what compromised human nature but it's that our human nature was fortified and the to mytic teaching is that you refer to the state of original Justice or rectitude whereby our minds were subordinated to God in Grace our lower powers to",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-continuous-providential-opportunity.mp3",
+      "clipSha256": "fe5de55477ed8338c03dc88fa13f5f708544f70c42da5029a725d9bcbfade042",
+      "durationSeconds": 189.28,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Gregory Pine",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3",
+          "sha256": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3",
+          "sha256": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "moveId": "pro-suffering-enlarges-receptivity",
+      "expectedSpeaker": "Gregory Pine",
+      "proposition": "Read within the larger canonical story, divine questioning and profound suffering can enlarge creaturely receptivity to revelation and prepare persons gradually to perceive and participate in divine glory.",
+      "verificationExcerpt": "final word I might say in reading the scriptures canonically you know the the Old Testament in light of the new I think often of how our Lord adduces questions from the hearts of those with whom he's in conversation especially like in Gospel of John and how some of his most Sublime Revelations are immediately attended upon a question that he has provoked um you know like Philip",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-suffering-enlarges-receptivity.mp3",
+      "clipSha256": "05e8c5b6f916bfc79edef1af0cf0d4e6737a3a0c20373026ceb867fd1b2b6da3",
+      "durationSeconds": 88.08,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Gregory Pine",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3",
+          "sha256": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3",
+          "sha256": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "moveId": "pro-qualia-concept-unsettled",
+      "expectedSpeaker": "Daniel Dennett",
+      "proposition": "The term qualia is too theoretically unsettled to establish irreducible subjective properties without first specifying which account of qualia is intended.",
+      "verificationExcerpt": "it's a subjective it's it's a quality of a subjective experience so the the the smell of pizza the the taste of watermelon that those subjective colors you can get without even looking out into the world um uh uh itches and tingles and weird feelings and so forth those are qualia I mean that's philosophers call those qualia now I have been a Critic of the term qualia for a very",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/pro-qualia-concept-unsettled.mp3",
+      "clipSha256": "0c5b8ae842da8d01747e2f970e19ab4e1dba55ec73af157faf2aa680f3cc43c5",
+      "durationSeconds": 261.041,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/daniel-dennett.mp3",
+          "sha256": "60abec0d8c9ac7aaf17150b485bbf624125cc060c09db516bf80eebe0ef0f23c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Philip Clayton",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/philip-clayton.mp3",
+          "sha256": "dd9723bd614879620823a300ce2e3f28fbbd8df361d11a4ac8be629060c36025",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "moveId": "con-experience-sensitive-religious-belief",
+      "expectedSpeaker": "Philip Clayton",
+      "proposition": "Beliefs about God or a deeper level of reality can change in response to experience, including suffering, and such revision changes what one believes ultimately exists.",
+      "verificationExcerpt": "not only certain functional behaviors in the world it also involves different beliefs about what ultimately exists so if I if you came to believe tomorrow that there really is a subject that has qualia you would hold a different belief about the world than you currently hold if I came to believe that there isn't a God or a deeper level of reality I would hold a different set of",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/con-experience-sensitive-religious-belief.mp3",
+      "clipSha256": "8e6aa16bf00d834d8063e5bb824ef73e826c9c84e43d73f833bc6ce37490227e",
+      "durationSeconds": 71,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/daniel-dennett.mp3",
+          "sha256": "60abec0d8c9ac7aaf17150b485bbf624125cc060c09db516bf80eebe0ef0f23c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Philip Clayton",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/philip-clayton.mp3",
+          "sha256": "dd9723bd614879620823a300ce2e3f28fbbd8df361d11a4ac8be629060c36025",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "moveId": "pro-missing-body-cumulative-significance",
+      "expectedSpeaker": "Mike Licona",
+      "proposition": "A missing body becomes substantially more significant when joined to prior resurrection predictions, reputed miracles, and sincere appearance reports involving friends, foes, individuals, and groups.",
+      "verificationExcerpt": "this okay if they don't go missing or if they go missing we don't assume resurrection agreed but if there's no claims like let's say you know my grandfather died in 1978 if his grave all right look take this David Koresh I lost use my grandfather 1978 my grandfather dies that's a bummer actually know things about the correct story okay he dies and all of a sudden his body turns",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/clips/pro-missing-body-cumulative-significance.mp3",
+      "clipSha256": "35f638eb4edfcf02e5200a664826585eeb612b09973a78094f8cf4d2d085279d",
+      "durationSeconds": 111.170938,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Mike Licona",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/mike-licona.mp3",
+          "sha256": "11f65672edf4bd7bc7027a2d3219c812917c494ae5db3d7bc75cf5a3db5c4e84",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Richard Carrier",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/richard-carrier.mp3",
+          "sha256": "1aa14700df8c058afb9163d55936b76658889946cc93c85ba8af1caf745a6cfa",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "21",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "pro-divine-mandate-multiplies-conflict",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1411,
+          "endEvent": 1497
+        },
+        "selectedMoveDurationSeconds": 199.96,
+        "startSeconds": 3333.819,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/christopher-hitchens.mp3",
+        "sha256": "abb3171f7bceccf43acfc139053721c37079d3d0a3c11a86e52be29e507c3014"
+      },
+      {
+        "debateNumber": "21",
+        "speaker": "Rabbi David Wolpe",
+        "selectedMoveId": "con-intangible-reality-theistic-inference",
+        "selectedMoveSourceSpan": {
+          "startEvent": 258,
+          "endEvent": 315
+        },
+        "selectedMoveDurationSeconds": 155.4,
+        "startSeconds": 681.9,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/rabbi-david-wolpe.mp3",
+        "sha256": "a5a73a5265212ae1899cc8b011c4c9cbe8a82875170be9c0ebb0851b03d02a84"
+      },
+      {
+        "debateNumber": "74",
+        "speaker": "Josh Rasmussen",
+        "selectedMoveId": "pro-auxiliary-probability-asymmetry",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1842,
+          "endEvent": 1973
+        },
+        "selectedMoveDurationSeconds": 271.28,
+        "startSeconds": 3684.52,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/josh-rasmussen.mp3",
+        "sha256": "8acbc74254719102aaab51a9809e2e7ef645f819d49d4a87e5200b077f253aef"
+      },
+      {
+        "debateNumber": "74",
+        "speaker": "Alex Malpass",
+        "selectedMoveId": "con-infinite-recombination-limits",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1122,
+          "endEvent": 1302
+        },
+        "selectedMoveDurationSeconds": 330.8,
+        "startSeconds": 2333.88,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/alex-malpass.mp3",
+        "sha256": "fb786d36f6dde023fe0bab8e7cb7dad2ddc25337820ddaf0e50a4366352f30fe"
+      },
+      {
+        "debateNumber": "123",
+        "speaker": "Gregory Pine",
+        "selectedMoveId": "pro-solidarity-loss-and-restoration",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2034,
+          "endEvent": 2180
+        },
+        "selectedMoveDurationSeconds": 300.4,
+        "startSeconds": 4737.12,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3",
+        "sha256": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345"
+      },
+      {
+        "debateNumber": "123",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-contingent-encounter-providence-dilemma",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1358,
+          "endEvent": 1469
+        },
+        "selectedMoveDurationSeconds": 256.839,
+        "startSeconds": 3222.419,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3",
+        "sha256": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad"
+      },
+      {
+        "debateNumber": "147",
+        "speaker": "Daniel Dennett",
+        "selectedMoveId": "pro-qualia-concept-unsettled",
+        "selectedMoveSourceSpan": {
+          "startEvent": 612,
+          "endEvent": 707
+        },
+        "selectedMoveDurationSeconds": 256.041,
+        "startSeconds": 1659.3,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/daniel-dennett.mp3",
+        "sha256": "60abec0d8c9ac7aaf17150b485bbf624125cc060c09db516bf80eebe0ef0f23c"
+      },
+      {
+        "debateNumber": "147",
+        "speaker": "Philip Clayton",
+        "selectedMoveId": "con-integrated-religious-worldview",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1075,
+          "endEvent": 1117
+        },
+        "selectedMoveDurationSeconds": 111.399,
+        "startSeconds": 2784.86,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/philip-clayton.mp3",
+        "sha256": "dd9723bd614879620823a300ce2e3f28fbbd8df361d11a4ac8be629060c36025"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Mike Licona",
+        "selectedMoveId": "pro-pauline-appearances-bodily-resurrection",
+        "selectedMoveSourceSpan": {
+          "startEvent": 113,
+          "endEvent": 210
+        },
+        "selectedMoveDurationSeconds": 595.8,
+        "startSeconds": 1039.81,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/mike-licona.mp3",
+        "sha256": "11f65672edf4bd7bc7027a2d3219c812917c494ae5db3d7bc75cf5a3db5c4e84"
+      },
+      {
+        "debateNumber": "130",
+        "speaker": "Richard Carrier",
+        "selectedMoveId": "con-charismatic-hallucinatory-contagion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 952,
+          "endEvent": 1024
+        },
+        "selectedMoveDurationSeconds": 372.5,
+        "startSeconds": 5655.5,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/richard-carrier.mp3",
+        "sha256": "1aa14700df8c058afb9163d55936b76658889946cc93c85ba8af1caf745a6cfa"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 1308.771876,
+    "clipMinutes": 21.8129,
+    "durationOnlyPlanningEstimateUsd": 0.1308768,
+    "durationOnlyEstimateAuthorizedByUser": true,
+    "usageDerivedPlanningEstimateUsd": 0.47646,
+    "primaryExpectedFutureExecutionCostUsd": 0.47646,
+    "primaryEstimateBasis": "Batch 2 returned-token usage rates applied to Batch 10 exact clip seconds and nine-call count",
+    "projectedUsage": {
+      "audioInputTokens": 24386,
+      "textInputTokens": 1026,
+      "outputTokens": 41293,
+      "totalInputTokens": 25412
+    },
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "usageDerivedEstimatedCostUsd": 0.2933175,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    },
+    "officialPricingCheckedAt": "2026-08-25",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "conditionalAdvanceApprovalRecorded": true,
+    "conditionalAdvanceApprovalMaximumUsd": 1,
+    "estimateWithinConditionalApproval": true,
+    "maximumAuthorizedCostUsd": 1,
+    "futureCostCapAuthorized": true,
+    "standingAuthorizationActivated": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 9,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json",
+    "sha256": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "status": "frozen-active-batch-10-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "paidTranscriptionActivation": false,
+    "paidTranscriptionExecution": true,
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false,
+    "audioVerificationExecution": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/con-religious-motivation-and-sanctity.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/pro-natural-transcendence-without-supernaturalism.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/con-religious-motivation-and-sanctity.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/transcripts/pro-natural-transcendence-without-supernaturalism.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-preparation.json": "4b6876ce265de5859824ea49c9a0db0adfc6e49ec3554efa07b2ef11ffb0f5f1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-item-preparation.json": "fdb9e75168387ce77d03d29eee3fc1ad661fb72dd44ba1c1e3c83194dbb036fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-items.json": "a67d390d26c378af9819481c8572774cc01c62a8b6c369b3b937d7dd994f232f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/execution-preparation-manifest.json": "31159ac82520c9ecec09b512219eb45c491c4d427870b07dfe9b20dfb162e983",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/assessment-production-post-canary-batch-10-standing-authorization.mjs": "bd4cb3485a88b4b8d70380102772b040011032422775d81f7ff34be2de0cae3c",
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-verification.mjs": "b02ee87cd715f7e9d2f2342a2c6ecda1cad85b11f7be2860504b94dd5d53da1d",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-verification-preparation.mjs": "bcecab868ae8da8600c69bea5c1663d3eb01d36aa20c64ef25d2df33f5cc783b",
+    "scripts/assessment-production-post-canary-batch-10-audio-verification-stage.mjs": "90c9c33771f3f49593fd54656aa5baa3530549f6e2f39fb4685972db90935f42",
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-sources.mjs": "b110b7651b32160607381cd20d54992bc543c666ffbb7cc19734e8e36f36ece7",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-sources.mjs": "48a691794c7aa962acad9c96b378552fc5d485ff92fedbe893cb7b525629f1e3",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/audio/source.mp3": "cfa98cdbc2ddb0a19410b37a382075a2fea51d35c939d33c6ae1504a23445bc7",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/audio/source.mp3": "9712859ab078ba2c689c81e18040f972e7a6450480220a0c991f4c7c066eaf72",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.mp3": "9867e425474070cfc1db1c49e7a9150792837f7029d73a54e5cfbe901adb46b5",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/audio/source.mp3": "dfa132586e27cd639e07ac4a06b95e7f7057f7c7f34ad3615ab868157f2d3652",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/audio/source.mp3": "c78a05903c700dfdf076da4692fc8940a23d40a06c3062feba2b19ac23bd0029",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/con-religious-motivation-and-sanctity.mp3": "075d78b837cfd7862110907b5c14cd417944abd0e769dd68c27c9b2d8f8f5c14",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/pro-natural-transcendence-without-supernaturalism.mp3": "c47c549d3948c9c59025c574f7a9d19d220476d52ca3a89581b48276f099fb18",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/clips/pro-voluntary-risk-arena.mp3": "5b7c9957b212cfa64f07e767ff594055daa53660874f513a9b2397bf4ef42f2a",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/con-involuntary-belief-eternal-stakes.mp3": "e085071cf2a474c632e5e2db48b695a0be1f95901b642153d97e26cfa2f40971",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-continuous-providential-opportunity.mp3": "fe5de55477ed8338c03dc88fa13f5f708544f70c42da5029a725d9bcbfade042",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-suffering-enlarges-receptivity.mp3": "05e8c5b6f916bfc79edef1af0cf0d4e6737a3a0c20373026ceb867fd1b2b6da3",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/pro-qualia-concept-unsettled.mp3": "0c5b8ae842da8d01747e2f970e19ab4e1dba55ec73af157faf2aa680f3cc43c5",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/con-experience-sensitive-religious-belief.mp3": "8e6aa16bf00d834d8063e5bb824ef73e826c9c84e43d73f833bc6ce37490227e",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/clips/pro-missing-body-cumulative-significance.mp3": "35f638eb4edfcf02e5200a664826585eeb612b09973a78094f8cf4d2d085279d",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/christopher-hitchens.mp3": "abb3171f7bceccf43acfc139053721c37079d3d0a3c11a86e52be29e507c3014",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/references/rabbi-david-wolpe.mp3": "a5a73a5265212ae1899cc8b011c4c9cbe8a82875170be9c0ebb0851b03d02a84",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/josh-rasmussen.mp3": "8acbc74254719102aaab51a9809e2e7ef645f819d49d4a87e5200b077f253aef",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/references/alex-malpass.mp3": "fb786d36f6dde023fe0bab8e7cb7dad2ddc25337820ddaf0e50a4366352f30fe",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/gregory-pine.mp3": "de29eb27d9b0a0af1182d66149aa577357b3b1ed053783de975ce8f0273bc345",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/references/alex-o-connor.mp3": "92335b118e403eb176cfa86f3b594ac02943d262cd3856f90a90030c6bf918ad",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/daniel-dennett.mp3": "60abec0d8c9ac7aaf17150b485bbf624125cc060c09db516bf80eebe0ef0f23c",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/references/philip-clayton.mp3": "dd9723bd614879620823a300ce2e3f28fbbd8df361d11a4ac8be629060c36025",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/mike-licona.mp3": "11f65672edf4bd7bc7027a2d3219c812917c494ae5db3d7bc75cf5a3db5c4e84",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/references/richard-carrier.mp3": "1aa14700df8c058afb9163d55936b76658889946cc93c85ba8af1caf745a6cfa"
+  },
+  "nextAuthorizedAction": "execute-exactly-nine-post-canary-batch-10-paid-audio-verification-calls-once-sequentially",
+  "activatedAt": "2026-08-26T00:56:34Z",
+  "userExecutionAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 10 standing-authorization and bounded failure-recovery record covering deterministic selection and the complete reassessment and publication workflow for the next ten eligible debates, with subscription-backed and local direct incremental cost capped at $0 and conditional sequential gpt-4o-transcribe-diarize audio verification capped at a frozen estimate of $1.00.",
+    "standingAuthorizationSha256": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "maximumDirectIncrementalCostUsd": 1,
+    "authorizedDurationOnlyPlanningEstimateUsd": 0.1308768,
+    "frozenUsageDerivedEstimateUsd": 0.47646,
+    "verificationCallsAuthorized": 9,
+    "model": "gpt-4o-transcribe-diarize",
+    "provider": "OpenAI Transcription API",
+    "knownSpeakerReferencesPerCall": 2,
+    "sequentialExecution": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "returnedTokenUsageCostControlRequired": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "deterministicValidationAndCostAnalysisAuthorized": true,
+    "judgmentModelExecutionAuthorized": false,
+    "adjudicationModelExecutionAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/audio-verification/execution-preparation-manifest.json",
+    "sha256": "1249cec6e81b3161772f2d5fd3c9ce29dd95460359c0346f07f74f3f05b0bcb4"
+  },
+  "canonicalSourceGate": {
+    "productionManifest": "docs/assessment-production/manifest-v1.json",
+    "productionManifestSha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "debates": [
+      {
+        "debateNumber": "21",
+        "debateId": "hitchens-wolpe-great-god-debate-2010",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Atheist critique",
+            "speakers": [
+              "Christopher Hitchens"
+            ]
+          },
+          "con": {
+            "label": "Jewish theism",
+            "speakers": [
+              "Rabbi David Wolpe"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/2kZRAOXEFPI/transcript.txt",
+          "transcriptSha256": "dd66c6325eb30a6a30524ec15eef1a9b04e7e20dd4197b66f19ee6dd390cd22a",
+          "events": ".assessment-cache/captions/2kZRAOXEFPI/events.json",
+          "eventsSha256": "002e1247414cbca863209e5dd43af9aeea17c86e12a9008805bd76be3d8e47e0",
+          "manifest": ".assessment-cache/captions/2kZRAOXEFPI/manifest.json",
+          "manifestSha256": "1b9ba3e5f33719f0d394584c5df9320ec878a24993d0a46eb444965b9c77e674",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "74",
+        "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Theistic modal defense",
+            "speakers": [
+              "Josh Rasmussen"
+            ]
+          },
+          "con": {
+            "label": "Analytic evidential critique",
+            "speakers": [
+              "Alex Malpass"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/MfCQBynjgnw/transcript.txt",
+          "transcriptSha256": "88721d75da20612089e12a3de192e6e406293be51f7a65b950c0c69cef48862e",
+          "events": ".assessment-cache/captions/MfCQBynjgnw/events.json",
+          "eventsSha256": "be1b087c6aeaf046939dee6b057c058711d04d7dae7fa915e369f12195c4d177",
+          "manifest": ".assessment-cache/captions/MfCQBynjgnw/manifest.json",
+          "manifestSha256": "17e5bcaf7279a2495da2cf23d71f80c32249231bc3c70c4913632a259824df4e",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "123",
+        "debateId": "oconnor-pine-divine-hiddenness-2024",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Catholic theism",
+            "speakers": [
+              "Gregory Pine"
+            ]
+          },
+          "con": {
+            "label": "Hiddenness skepticism",
+            "speakers": [
+              "Alex O'Connor"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/8k9A7d2Wnjk/transcript.txt",
+          "transcriptSha256": "101756caa31fa6e6f0b1379ed6a2b7dbc1d3e60bcabfc35c8ae5f6de8e8542b3",
+          "events": ".assessment-cache/captions/8k9A7d2Wnjk/events.json",
+          "eventsSha256": "90bf0fcb19a2107e00e148bbf2685ae08642d1a3bf229544d790b762e2d0ddbe",
+          "manifest": ".assessment-cache/captions/8k9A7d2Wnjk/manifest.json",
+          "manifestSha256": "d719d588b98cc5b7f070b02e97be28a0a21b6511a1578606cff71ae47054a8b8",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "147",
+        "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Naturalist inquiry",
+            "speakers": [
+              "Daniel Dennett"
+            ]
+          },
+          "con": {
+            "label": "Religious ultimacy",
+            "speakers": [
+              "Philip Clayton"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/h-I_9e5qxnc/transcript.txt",
+          "transcriptSha256": "66e0597e7e73f496bc0734d20c54df96ad026ec4ad3755088060d801fcbf86c0",
+          "events": ".assessment-cache/captions/h-I_9e5qxnc/events.json",
+          "eventsSha256": "3275181a293d7e3ce8381ed92c8ea38328192d713e045f0b7f55869fca842c52",
+          "manifest": ".assessment-cache/captions/h-I_9e5qxnc/manifest.json",
+          "manifestSha256": "3e50150a9d84a2a4b29eddadb40cfcb3ed4ce7bf5e018a44bab6fed4ba109b7b",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "130",
+        "debateId": "licona-carrier-resurrection-history-2010",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Resurrection hypothesis",
+            "speakers": [
+              "Mike Licona"
+            ]
+          },
+          "con": {
+            "label": "Natural explanation",
+            "speakers": [
+              "Richard Carrier"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/0IpKHdVLZb4/transcript.txt",
+          "transcriptSha256": "4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b",
+          "events": ".assessment-cache/captions/0IpKHdVLZb4/events.json",
+          "eventsSha256": "cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1",
+          "manifest": ".assessment-cache/captions/0IpKHdVLZb4/manifest.json",
+          "manifestSha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      }
+    ],
+    "transcriptHashesVerified": 5,
+    "eventHashesVerified": 5,
+    "manifestHashesVerified": 5,
+    "dyadicDebatesVerified": 5
+  },
+  "executionToolHashes": {
+    "scripts/assessment-production-post-canary-batch-10-audio-verification-stage.mjs": "90c9c33771f3f49593fd54656aa5baa3530549f6e2f39fb4685972db90935f42",
+    "scripts/lib/assessment-production-post-canary-batch-10-standing-authorization.mjs": "bd4cb3485a88b4b8d70380102772b040011032422775d81f7ff34be2de0cae3c",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  }
+}
