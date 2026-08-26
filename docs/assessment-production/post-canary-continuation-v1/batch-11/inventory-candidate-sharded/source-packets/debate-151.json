@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-candidate-sharded-inventory",
+  "debateNumber": "151",
+  "debateId": "wood-dillahunty-god-secular-humanism-2020",
+  "motion": "Which gives a better foundation for ethics: God or secular humanism?",
+  "sides": {
+    "pro": {
+      "label": "Theistic moral realism",
+      "speakers": [
+        "David Wood"
+      ]
+    },
+    "con": {
+      "label": "Secular humanism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 8473,
+  "eventCount": 4028,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/u2SjOn8arv8/transcript.txt",
+    "transcriptSha256": "5732abec025b423e6b2bbf339e470a3fefa89d3835a94bd013e2fc290a51e9ce",
+    "eventsPath": ".assessment-cache/captions/u2SjOn8arv8/events.json",
+    "eventsSha256": "5d0751f803d0e8e18368723cbeb5180b2dd5d4959b39ea87409374086c4e589a",
+    "localManifestPath": ".assessment-cache/captions/u2SjOn8arv8/manifest.json",
+    "localManifestSha256": "ceb9ed93f9940c13954417d81321466571c61ff8c93bc5a9ec4c6304ae4a70a2"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-151.jsonl",
+    "sourceLedgerSha256": "2f64de5a6015041dd36c4c5d3ad422130d85df3360324a13d8d42843e5579d3a",
+    "sourceLedgerBytes": 234617,
+    "sourceLedgerEventCount": 4028,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-151.json",
+    "partitionPlanSha256": "ae6ed13758d7ffd47d8d02f48715faa382e8c62b194aab37e444b1cc41a21577",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

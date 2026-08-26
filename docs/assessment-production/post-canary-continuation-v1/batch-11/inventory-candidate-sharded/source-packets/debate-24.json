@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-candidate-sharded-inventory",
+  "debateNumber": "24",
+  "debateId": "hitchens-olasky-religion-grace-2007",
+  "motion": "Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?",
+  "sides": {
+    "pro": {
+      "label": "Anti-theist critique",
+      "speakers": [
+        "Christopher Hitchens"
+      ]
+    },
+    "con": {
+      "label": "Christian grace",
+      "speakers": [
+        "Marvin Olasky"
+      ]
+    }
+  },
+  "durationSeconds": 5802,
+  "eventCount": 3101,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/lcHMSNiI97w/transcript.txt",
+    "transcriptSha256": "d11cf3db576f4b633734e73076112c51b9d18b7ed88825a6a970fdbd3b5902f8",
+    "eventsPath": ".assessment-cache/captions/lcHMSNiI97w/events.json",
+    "eventsSha256": "94e6969daeffacaf14ac41f87988388c0779d0a59d6a228d038bf237e5cc9412",
+    "localManifestPath": ".assessment-cache/captions/lcHMSNiI97w/manifest.json",
+    "localManifestSha256": "4c3141189942f8e02abd70722f0c718eb93c98a5dd3b48b8117ef6808a5be165"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-11/debate-24.jsonl",
+    "sourceLedgerSha256": "51f1f32da10cbe1479c259ed267307a363a3ed3a9b5c1acfeb9bb665ce667829",
+    "sourceLedgerBytes": 168029,
+    "sourceLedgerEventCount": 3101,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-11/source-preparation/plans/debate-24.json",
+    "partitionPlanSha256": "4cb426a1446c3fc88bf3d6dc287156252f48c5e11ed12a216d29cd446a7f7294",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
