@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-dispute-only-adjudication-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-10-dispute-only-adjudication",
+  "status": "batch-10-debate-74-adjudication-correction-gate-complete-with-failure",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "gateStartedAt": "2026-08-26T01:25:47.356Z",
+  "gateCompletedAt": "2026-08-26T01:29:21.946Z",
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "unattemptedContextIndexes": [],
+  "validContexts": 1,
+  "invalidContexts": 1,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "corrections": 0,
+  "maximumObservedConcurrency": 1,
+  "wallElapsedMs": 214589,
+  "aggregateModelElapsedMs": 214502,
+  "meanElapsedMs": 107251,
+  "rampPhases": [
+    {
+      "phase": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 2,
+      "contextIndexes": [
+        1
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-26T01:25:47.358Z",
+      "completedAt": "2026-08-26T01:27:37.874Z",
+      "elapsedMs": 110516,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 195670,
+      "audioTranscriptInputs": [],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "04b7b4c15354be063c7f2d10d849f55c2e2deee3437ae6740b71ca5c671a51f3",
+      "stderrSha256": "10ceb6ee8e09a461ca9ac79a50de07668e51442e6543864a82dd477c2f89ec11",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "6cc0afee91df54eefb99e69057f78affb3b56bfefd0f52e25e7443255c7c360d",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "74",
+        "disputedMoves": 9,
+        "candidateSelections": 26,
+        "calculatedScores": 0,
+        "scoreDerivationAuthorized": false
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-26T01:27:37.888Z",
+      "completedAt": "2026-08-26T01:29:21.874Z",
+      "elapsedMs": 103986,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 237434,
+      "audioTranscriptInputs": [
+        "audio-transcript-pro-voluntary-risk-arena.json"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "cbe870a8cf95f4d2987ebda3061572711aa7b1fea7c04bf537114944e544bbc3",
+      "stderrSha256": "84d3d51a36097aec18d1f75612447cb92b5f06b164f2e54008c1625e334ad041",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "c2da17eeab883a53eebddde13d28a6e00937df1553c78434ae3c7a5e82da5319",
+      "validationSummary": null,
+      "validationMessage": "Error: burden adjustment decision count mismatch\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV4221175AdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4221175-decomposed-adjudication.mjs:207:3)\n    at validateV42211728AdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42211728-hard-route-adjudication.mjs:52:10)\n    at validatePostCanaryBatch10DisputeAdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-10-dispute-adjudication.mjs:91:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-debate-74-adjudication-correction.mjs:264:22)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-debate-74-adjudication-correction.mjs:331:22)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-debate-74-adjudication-correction.mjs:334:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-debate-74-adjudication-correction.mjs:364:24"
+    }
+  ],
+  "adjudicationModelContexts": 2,
+  "judgmentModelContexts": 0,
+  "paidServiceCalls": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "directIncrementalCostUsd": 0,
+  "scoresDerived": 0,
+  "publicationReconstructions": 0,
+  "productionMutations": 0,
+  "nextBatchSelections": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "correctionModelExecution": false,
+    "judgmentModelExecution": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
