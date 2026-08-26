@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-local-runner-correction",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "status": "exact-pre-execution-codex-cli-version-guard-correction-passed",
+  "correctedAt": "2026-08-26T18:44:21Z",
+  "checkpointCommit": "6d75e134df9eb48bb6a58968d255bd816221a820",
+  "scope": "Debate 28 inventory-plan recovery runner only",
+  "diagnosis": {
+    "classification": "stale-local-runner-version-literal",
+    "modelContextsStarted": 0,
+    "modelAttemptsConsumed": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "observedCodexCliVersion": "codex-cli 0.150.0-alpha.8",
+    "staleExpectedCodexCliVersion": "codex-cli 0.149.0-alpha.4.3",
+    "currentBatch12PlannerRunnerAlreadyFrozeObservedVersion": true
+  },
+  "correction": {
+    "runner": "scripts/run-assessment-production-post-canary-batch-12-debate-28-inventory-plan-recovery.mjs",
+    "runnerSha256Before": "2f3f4d723d6a33a1d7a881ccf185482db804bddf5f2573441f0a49debf310c9e",
+    "runnerSha256After": "b8c3d555b50e891d425273f7c319a1fcdcbf4df75a3adff6191c6e1a386dd599",
+    "preparationSha256Before": "15d700785666980463210a74573ae8f8a58cba8a032e88ad5e4f2467e5e69254",
+    "preparationSha256After": "948f7d416d6d377e0a70e0c905f3310b01fb94e13106ea588b9c17b9f118f9f7",
+    "activationSha256Before": "55accffe59135c90352cdcaab4de270f59fec85232d60d60aa538d4b97dcb3e0",
+    "activationSha256After": "91ff6984a0b508b0bb5ef17b78ece407773a8b9d597770ec7dc5b9c1df1633e5",
+    "changedSemanticFields": [],
+    "changedModelInputs": [],
+    "changedRecoveryShardSchemas": [],
+    "changedRecoveryShardPackets": [],
+    "changedTimeouts": [],
+    "changedAttemptLimits": [],
+    "changedCostLimits": [],
+    "activationSourceHashesReplayedAfterCorrection": true
+  },
+  "authorization": {
+    "exactDeterministicDerivedArtifactCorrection": true,
+    "modelExecution": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "furtherRecoveryLevelConsumed": false,
+    "productionMutation": false
+  },
+  "nextRequiredAction": "commit-corrected-runner-boundary-then-run-the-two-already-authorized-shards-once"
+}

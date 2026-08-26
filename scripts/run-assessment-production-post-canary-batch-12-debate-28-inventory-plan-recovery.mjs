@@ -511,7 +511,7 @@ async function execute() {
   const codex = "/Applications/ChatGPT.app/Contents/Resources/codex";
   assertV4(
     execFileSync(codex, ["--version"], { encoding: "utf8" }).trim() ===
-      "codex-cli 0.149.0-alpha.4.3",
+      "codex-cli 0.150.0-alpha.8",
     "Codex CLI version drifted"
   );
   const authSource = path.join(os.homedir(), ".codex", "auth.json");
