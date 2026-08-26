@@ -1,0 +1,2734 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-11-decomposed-consensus",
+  "debateNumber": "24",
+  "debateId": "hitchens-olasky-religion-grace-2007",
+  "moveDisputes": [
+    {
+      "moveId": "pro-natural-origin-of-religion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 58
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 73
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-divine-warrant-enables-theocracy",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 90,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-scope-universal-poison-burden",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-divine-warrant-enables-theocracy",
+                "pro-natural-origin-of-religion",
+                "pro-secular-government-protects-liberty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-universal-poison-burden-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether the categorical poison conclusion follows despite substantial religious good.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-universal-poison-burden-component-02",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether examples of coercive religious authority establish that religion poisons everything.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-universal-poison-burden-component-03",
+                  "targetMoveId": "pro-secular-government-protects-liberty",
+                  "text": "Whether religious conflict and separation establish a universally poisonous religious contribution.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-divine-warrant-enables-theocracy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-universal-poison-burden-component-01",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether examples of religious coercion establish the universal claim that religion poisons everything.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-authority-independence-inspiration-coexistence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-warrant-enables-theocracy",
+                "pro-secular-government-protects-liberty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-authority-independence-inspiration-coexistence-component-01",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether religious authority produces only servility, coercion, and intolerance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-authority-independence-inspiration-coexistence-component-02",
+                  "targetMoveId": "pro-secular-government-protects-liberty",
+                  "text": "Whether differing faiths are incapable of coexistence without secular suppression.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-warrant-enables-theocracy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-authority-independence-inspiration-coexistence-component-01",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether religious authority necessarily produces servility, intolerance, and resistance to independent moral action.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 79,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-credibility-archaeological-corroboration-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether categorical dismissal of religious history is justified by its alleged ignorant origins.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-credibility-archaeological-corroboration-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether religious accounts may be dismissed categorically as products of ignorant invention without contrary historical evidence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-charity-costly-christian-adoption",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-charity-costly-christian-adoption-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether false or unnecessary religious belief can nevertheless produce substantial countervailing good.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-charity-costly-christian-adoption-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether religion can produce substantial goods despite the claim that its supernatural explanations are false.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 86
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-public-fruits-charity-liberty-press",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-warrant-enables-theocracy",
+                "pro-secular-government-protects-liberty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-public-fruits-charity-liberty-press-component-01",
+                  "targetMoveId": "pro-secular-government-protects-liberty",
+                  "text": "Whether American liberty is attributable only to keeping religion out of government.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-public-fruits-charity-liberty-press-component-02",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether Christian premises necessarily favor concentrated religious and political authority.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-secular-government-protects-liberty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-public-fruits-charity-liberty-press-component-01",
+                  "targetMoveId": "pro-secular-government-protects-liberty",
+                  "text": "Whether American liberty is best explained only by separation from religion rather than also by Christian institutional premises.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 68,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-charity-does-not-validate-religion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-charity-costly-christian-adoption",
+                "con-public-fruits-charity-liberty-press",
+                "con-scope-universal-poison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-charity-does-not-validate-religion-component-01",
+                  "targetMoveId": "con-charity-costly-christian-adoption",
+                  "text": "Whether charitable conduct validates religion or requires a supernatural motive.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-charity-does-not-validate-religion-component-02",
+                  "targetMoveId": "con-scope-universal-poison-burden",
+                  "text": "Whether substantial religiously attributed good defeats the poison charge.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-charity-does-not-validate-religion-component-03",
+                  "targetMoveId": "con-public-fruits-charity-liberty-press",
+                  "text": "Whether claimed Christian public fruits establish the truth or necessity of religion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-charity-costly-christian-adoption",
+                "con-scope-universal-poison-burden"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-charity-does-not-validate-religion-component-01",
+                  "targetMoveId": "con-charity-costly-christian-adoption",
+                  "text": "Whether religiously motivated charity establishes the truth or moral necessity of religion rather than merely accompanying humane conduct.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-charity-does-not-validate-religion-component-02",
+                  "targetMoveId": "con-scope-universal-poison-burden",
+                  "text": "Whether admitted charitable conduct defeats the universal poison charge even if supernatural motivation is unnecessary.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 81
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-scope-symmetrical-attribution",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-charity-does-not-validate-religion",
+                "pro-divine-warrant-enables-theocracy",
+                "pro-natural-origin-of-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-symmetrical-attribution-component-01",
+                  "targetMoveId": "pro-charity-does-not-validate-religion",
+                  "text": "Whether the attribution rule treats religious motives symmetrically for harms and goods.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-symmetrical-attribution-component-02",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether alleged falsity permits excluding all beneficial religious motivation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-symmetrical-attribution-component-03",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether harms attributed to religion require the same causal standard as goods.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-charity-does-not-validate-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-symmetrical-attribution-component-01",
+                  "targetMoveId": "pro-charity-does-not-validate-religion",
+                  "text": "Whether harms may be attributed to religion while religious motives for good actions are excluded by definition.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-grace-creation-fall-rescue-redemption",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 67,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 91,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-scripture-amalek-exceptional-warfare",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 15,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-charity-does-not-validate-religion",
+                "pro-divine-warrant-enables-theocracy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scripture-amalek-exceptional-warfare-component-01",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether divinely authorized violence is insulated from ordinary moral challenge.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scripture-amalek-exceptional-warfare-component-02",
+                  "targetMoveId": "pro-charity-does-not-validate-religion",
+                  "text": "Whether religious atrocity can be weighed without attention to exceptional wartime context.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 64
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-charity-does-not-validate-religion",
+                "pro-divine-warrant-enables-theocracy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scripture-amalek-exceptional-warfare-component-01",
+                  "targetMoveId": "pro-divine-warrant-enables-theocracy",
+                  "text": "Whether alleged divine authorization insulates morally objectionable violence from ordinary correction.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scripture-amalek-exceptional-warfare-component-02",
+                  "targetMoveId": "pro-charity-does-not-validate-religion",
+                  "text": "Whether examples of religiously associated harm outweigh or negate examples of religious good.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 49
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 58
+            },
+            "candidate2": {
+              "value": 52
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-context"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-scripture"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 62,
+          "candidate2": 60,
+          "roundedMeanAfterAdjudication": 61
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 57,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 58
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-undirected-evolution",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-credibility-archaeological-corroboration",
+                "con-grace-creation-fall-rescue-redemption"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-undirected-evolution-component-01",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether creation and redemption credibly place humanity within an intended divine plan.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-undirected-evolution-component-02",
+                  "targetMoveId": "con-credibility-archaeological-corroboration",
+                  "text": "Whether ordinary historical corroboration supports a divinely directed account of human origins.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-credibility-archaeological-corroboration",
+                "con-grace-creation-fall-rescue-redemption"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-undirected-evolution-component-01",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether humanity and creation are best explained as an intended redemptive divine plan rather than an undirected process.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-undirected-evolution-component-02",
+                  "targetMoveId": "con-credibility-archaeological-corroboration",
+                  "text": "Whether historical corroboration of some biblical details supports supernatural creation or privileged human purpose.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 83
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 85
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-inherited-guilt-and-cosmic-egotism",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-grace-creation-fall-rescue-redemption",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-inherited-guilt-and-cosmic-egotism-component-01",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether the redemption account is morally elevating rather than humiliating and anthropocentric.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-inherited-guilt-and-cosmic-egotism-component-02",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether the theological account's moral costs should enter the attribution balance.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-grace-creation-fall-rescue-redemption"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-inherited-guilt-and-cosmic-egotism-component-01",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether the Christian rescue narrative is morally elevating rather than a combination of imposed shame and human-centered reassurance.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 65,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 55,
+          "candidate2": 52,
+          "roundedMeanAfterAdjudication": 54
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 52,
+          "candidate2": 56,
+          "roundedMeanAfterAdjudication": 54
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scriptural-child-killing-objection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-grace-creation-fall-rescue-redemption",
+                "con-scripture-amalek-exceptional-warfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scriptural-child-killing-objection-component-01",
+                  "targetMoveId": "con-scripture-amalek-exceptional-warfare",
+                  "text": "Whether exceptional wartime danger morally excuses divinely commanded killing of children.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scriptural-child-killing-objection-component-02",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether child destruction coheres with the asserted loving redemption account.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-scripture-amalek-exceptional-warfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scriptural-child-killing-objection-component-01",
+                  "targetMoveId": "con-scripture-amalek-exceptional-warfare",
+                  "text": "Whether exceptional-war analogies morally justify divinely ordered killing of children and noncombatants.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-religious-credit-pollutes-honesty",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-charity-costly-christian-adoption",
+                "con-public-fruits-charity-liberty-press",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-religious-credit-pollutes-honesty-component-01",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether stated religious motivation warrants crediting religion with ordinary moral conduct.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-religious-credit-pollutes-honesty-component-02",
+                  "targetMoveId": "con-charity-costly-christian-adoption",
+                  "text": "Whether isolated charitable conduct establishes religion as morally beneficial.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-religious-credit-pollutes-honesty-component-03",
+                  "targetMoveId": "con-public-fruits-charity-liberty-press",
+                  "text": "Whether selected beneficial outcomes complete a moral defense of religion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-charity-costly-christian-adoption",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-religious-credit-pollutes-honesty-component-01",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether ordinary virtue should be credited to religion merely because a believer frames it as religious duty.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-religious-credit-pollutes-honesty-component-02",
+                  "targetMoveId": "con-charity-costly-christian-adoption",
+                  "text": "Whether isolated religiously motivated charitable acts establish religion as a generally beneficial moral influence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-burden"
+              }
+            },
+            "candidate2": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "con-motion-grace"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 70,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 60,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 59
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 59,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 62
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-credibility-gospel-witnesses-details",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion",
+                "pro-undirected-evolution"
+              ],
+              "components": [
+                {
+                  "componentId": "con-credibility-gospel-witnesses-details-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether Christian texts are merely ignorant or propagandistic inventions without credibility markers.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-credibility-gospel-witnesses-details-component-02",
+                  "targetMoveId": "pro-undirected-evolution",
+                  "text": "Whether evolutionary naturalism resolves the historical credibility of resurrection testimony.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-natural-origin-of-religion",
+                "pro-undirected-evolution"
+              ],
+              "components": [
+                {
+                  "componentId": "con-credibility-gospel-witnesses-details-component-01",
+                  "targetMoveId": "pro-natural-origin-of-religion",
+                  "text": "Whether Christian narratives are merely ignorant or propagandistic inventions rather than historically credible testimony.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-credibility-gospel-witnesses-details-component-02",
+                  "targetMoveId": "pro-undirected-evolution",
+                  "text": "Whether evolutionary contingency addresses the historical credibility of Gospel resurrection testimony.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 78,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-grace-forgiveness-and-transformation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-charity-does-not-validate-religion",
+                "pro-inherited-guilt-and-cosmic-egotism",
+                "pro-religious-credit-pollutes-honesty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-grace-forgiveness-and-transformation-component-01",
+                  "targetMoveId": "pro-inherited-guilt-and-cosmic-egotism",
+                  "text": "Whether Christian grace humiliates persons or instead liberates them through unconditional forgiveness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grace-forgiveness-and-transformation-component-02",
+                  "targetMoveId": "pro-religious-credit-pollutes-honesty",
+                  "text": "Whether Christian motivation can contribute distinctively to sustained moral reform.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grace-forgiveness-and-transformation-component-03",
+                  "targetMoveId": "pro-charity-does-not-validate-religion",
+                  "text": "Whether supernatural belief can motivate costly good without functioning as a bargain.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-inherited-guilt-and-cosmic-egotism",
+                "pro-religious-credit-pollutes-honesty"
+              ],
+              "components": [
+                {
+                  "componentId": "con-grace-forgiveness-and-transformation-component-01",
+                  "targetMoveId": "pro-inherited-guilt-and-cosmic-egotism",
+                  "text": "Whether Christian grace is degrading and egotistical rather than liberating and capable of moral transformation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grace-forgiveness-and-transformation-component-02",
+                  "targetMoveId": "pro-religious-credit-pollutes-honesty",
+                  "text": "Whether religious framing can genuinely support virtue instead of diminishing autonomous moral integrity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-faith-obstructs-vaccination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-charity-costly-christian-adoption",
+                "con-public-fruits-charity-liberty-press",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-faith-obstructs-vaccination-component-01",
+                  "targetMoveId": "con-public-fruits-charity-liberty-press",
+                  "text": "Whether religious public service claims must also account for faith-based medical obstruction.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-faith-obstructs-vaccination-component-02",
+                  "targetMoveId": "con-charity-costly-christian-adoption",
+                  "text": "Whether charitable credit can be assessed without corresponding religiously motivated medical harms.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-faith-obstructs-vaccination-component-03",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether symmetrical attribution includes explicit faith-based resistance to vaccination.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-public-fruits-charity-liberty-press",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-faith-obstructs-vaccination-component-01",
+                  "targetMoveId": "con-public-fruits-charity-liberty-press",
+                  "text": "Whether religious public fruits should be credited without also accounting for faith-based obstruction of humanitarian medicine.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-faith-obstructs-vaccination-component-02",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether attribution should count religiously stated motives symmetrically when they produce practical harm as well as good.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 76
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 83,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-evolutionary-human-morality",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-grace-creation-fall-rescue-redemption",
+                "con-grace-forgiveness-and-transformation",
+                "con-scope-symmetrical-attribution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-evolutionary-human-morality-component-01",
+                  "targetMoveId": "con-grace-forgiveness-and-transformation",
+                  "text": "Whether basic human morality requires Christian grace or supernatural command.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evolutionary-human-morality-component-02",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether morality depends on the Christian creation-fall-rescue account.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evolutionary-human-morality-component-03",
+                  "targetMoveId": "con-scope-symmetrical-attribution",
+                  "text": "Whether ordinary moral conduct should be attributed principally to religion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-grace-creation-fall-rescue-redemption",
+                "con-grace-forgiveness-and-transformation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-evolutionary-human-morality-component-01",
+                  "targetMoveId": "con-grace-forgiveness-and-transformation",
+                  "text": "Whether basic morality requires Christian grace or instead arises from evolved human solidarity and social necessity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evolutionary-human-morality-component-02",
+                  "targetMoveId": "con-grace-creation-fall-rescue-redemption",
+                  "text": "Whether self-sacrificial moral conduct is intelligible only as a sign of divine rescue and redemption.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 80,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-natural-origin-of-religion",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-divine-warrant-enables-theocracy",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-divine-warrant-enables-theocracy",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-divine-warrant-enables-theocracy",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 90,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-secular-government-protects-liberty",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-secular-government-protects-liberty",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-scope-universal-poison-burden",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-scope-universal-poison-burden",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-authority-independence-inspiration-coexistence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-authority-independence-inspiration-coexistence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-authority-independence-inspiration-coexistence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 79,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-credibility-archaeological-corroboration",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-charity-costly-christian-adoption",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-charity-costly-christian-adoption",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-public-fruits-charity-liberty-press",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 74,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-public-fruits-charity-liberty-press",
+      "fieldKey": "representationalCharity",
+      "candidate1": 68,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-charity-does-not-validate-religion",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-charity-does-not-validate-religion",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-scope-symmetrical-attribution",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-scope-symmetrical-attribution",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-grace-creation-fall-rescue-redemption",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-grace-creation-fall-rescue-redemption",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 67,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-grace-creation-fall-rescue-redemption",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 91,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-scripture-amalek-exceptional-warfare",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 62,
+      "candidate2": 60,
+      "roundedMeanAfterAdjudication": 61
+    },
+    {
+      "moveId": "con-scripture-amalek-exceptional-warfare",
+      "fieldKey": "representationalCharity",
+      "candidate1": 57,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "pro-undirected-evolution",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-inherited-guilt-and-cosmic-egotism",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 65,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-inherited-guilt-and-cosmic-egotism",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 55,
+      "candidate2": 52,
+      "roundedMeanAfterAdjudication": 54
+    },
+    {
+      "moveId": "pro-inherited-guilt-and-cosmic-egotism",
+      "fieldKey": "representationalCharity",
+      "candidate1": 52,
+      "candidate2": 56,
+      "roundedMeanAfterAdjudication": 54
+    },
+    {
+      "moveId": "pro-scriptural-child-killing-objection",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-scriptural-child-killing-objection",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "pro-religious-credit-pollutes-honesty",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 70,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-religious-credit-pollutes-honesty",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 60,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 59
+    },
+    {
+      "moveId": "pro-religious-credit-pollutes-honesty",
+      "fieldKey": "representationalCharity",
+      "candidate1": 59,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "con-credibility-gospel-witnesses-details",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-credibility-gospel-witnesses-details",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-credibility-gospel-witnesses-details",
+      "fieldKey": "representationalCharity",
+      "candidate1": 78,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-grace-forgiveness-and-transformation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-grace-forgiveness-and-transformation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "pro-faith-obstructs-vaccination",
+      "fieldKey": "representationalCharity",
+      "candidate1": 83,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-evolutionary-human-morality",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-evolutionary-human-morality",
+      "fieldKey": "representationalCharity",
+      "candidate1": 80,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "24",
+      "moves": 20,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 20,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch11IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
