@@ -26,7 +26,7 @@ export function compilePostCanaryBatch10PublicationStagingRecord({ output, packe
   });
   compiled.stagingAudit.protocolId = POST_CANARY_BATCH_10_PUBLICATION_COMPILATION_PROTOCOL_ID;
   compiled.stagingAudit.productionCanary = false;
-  compiled.stagingAudit.batchNumber = 9;
+  compiled.stagingAudit.batchNumber = 10;
   return compiled;
 }
 
@@ -41,7 +41,7 @@ export function validatePostCanaryBatch10CompiledStagingRecord({ compiled, outpu
     compiled.assessmentModel === "5.6 Sol" &&
     compiled.assessmentRubric === "Slugfester Reassessment Rubric v2" &&
     compiled.stagingAudit.protocolId === POST_CANARY_BATCH_10_PUBLICATION_COMPILATION_PROTOCOL_ID &&
-    compiled.stagingAudit.productionCanary === false && compiled.stagingAudit.batchNumber === 9 &&
+    compiled.stagingAudit.productionCanary === false && compiled.stagingAudit.batchNumber === 10 &&
     compiled.stagingAudit.displayContract.byline === POST_CANARY_BATCH_10_PUBLICATION_BYLINE &&
     compiled.stagingAudit.displayContract.defaultCollapsed === true &&
     compiled.stagingAudit.productionMutationPerformed === false &&
