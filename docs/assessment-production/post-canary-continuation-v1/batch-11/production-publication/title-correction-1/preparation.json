@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-production-title-correction-1-preparation",
+  "status": "frozen-batch-11-production-title-correction-1-prepared",
+  "frozenAt": "2026-08-26T17:12:25Z",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "directIncrementalCostCapUsd": 0,
+  "diagnosedFailure": {
+    "validatorExitCode": 1,
+    "issueCount": 1,
+    "path": "debates.23.sections.0.title",
+    "message": "must contain no more than 10 words"
+  },
+  "correction": {
+    "debateNumber": "24",
+    "debateId": "hitchens-olasky-religion-grace-2007",
+    "sectionId": "scope-causation-and-attribution",
+    "field": "sections[0].title",
+    "before": "Scope of the Poison Charge and Attribution of Good and Harm",
+    "after": "The Poison Charge and Attribution of Good and Harm",
+    "beforeWords": 11,
+    "afterWords": 9,
+    "semanticFieldsChanged": 1,
+    "scoreChanges": 0,
+    "ledgerChanges": 0
+  },
+  "inputs": {
+    "mutationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/mutation-manifest.json",
+      "sha256": "51ff3c4078b7227fa1348abbd9c7cee502f2cd80b46a1156b480eed9ff5a95a1",
+      "bytes": 48451
+    },
+    "publicationActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/execution-activation.json",
+      "sha256": "f6eca7ec7e6b3f22ff19c93dee3b8ccc7b55b60cced10309bdc080361069181a",
+      "bytes": 7866
+    },
+    "compatibilityActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/execution-activation.json",
+      "sha256": "34a39c484bdc8dece0c6946b4ddb6caaf540b540be6e6d6f3a3704dfbc32fbec",
+      "bytes": 18949
+    },
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "f1db769a4fe2dbfb9cd424decdd06741250b96c0d6b9ad9ab4a8693c3ed0a6e8",
+      "bytes": 6583401
+    },
+    "compatibilityLibrary": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs",
+      "sha256": "9a5e9c8ffdc3c4781584cab8e6e8be2433ba223b71780baaaf25225c615b4ad3",
+      "bytes": 8129
+    },
+    "productionLedgerOutputs": [
+      {
+        "debateNumber": "54",
+        "path": "docs/assessment-ledgers/jones-law-christianity-humanism-future-2025.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/jones-law-christianity-humanism-future-2025.json",
+        "sha256": "9129b4b040e295469a56449e0ee11901fe82a3b5e16bc2005893b260ef2bf9c7",
+        "bytes": 123035
+      },
+      {
+        "debateNumber": "01",
+        "path": "docs/assessment-ledgers/craig-oconnor-god-debate-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/craig-oconnor-god-debate-2026.json",
+        "sha256": "92760202a1af4139aa85a33cfb0faeb5023ba312e7f845f6bb5e46d4bfecf7f7",
+        "bytes": 106459
+      },
+      {
+        "debateNumber": "82",
+        "path": "docs/assessment-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/bush-mcallister-moral-anti-realism-realism-2025.json",
+        "sha256": "adc20cfe259f5526ceb9a83c067316f73fa38c885784009e96cecc5b91510536",
+        "bytes": 108560
+      },
+      {
+        "debateNumber": "191",
+        "path": "docs/assessment-ledgers/ruse-rana-origin-life-evolution-design-2013.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/ruse-rana-origin-life-evolution-design-2013.json",
+        "sha256": "fc5d71ae62898c2b01acc10ad70366b2681e7d886d2971b2e79a282cf4fa5edc",
+        "bytes": 114159
+      },
+      {
+        "debateNumber": "151",
+        "path": "docs/assessment-ledgers/wood-dillahunty-god-secular-humanism-2020.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/wood-dillahunty-god-secular-humanism-2020.json",
+        "sha256": "f754324c26ad3bd17f9a3a904b15a3122c71408d8f0c8ef275291b87409a7b3d",
+        "bytes": 120373
+      },
+      {
+        "debateNumber": "188",
+        "path": "docs/assessment-ledgers/kastrup-blackmore-consciousness-idealism-2023.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/kastrup-blackmore-consciousness-idealism-2023.json",
+        "sha256": "a65f3846d1494580bc75ec2c7efee190d0254a240e2a67964f73beda93e3859b",
+        "bytes": 101767
+      },
+      {
+        "debateNumber": "60",
+        "path": "docs/assessment-ledgers/horn-oconnor-jesus-resurrection-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/horn-oconnor-jesus-resurrection-2026.json",
+        "sha256": "8e0a52c11cdb74db7b7d504a6f4cba3d27bc66e967a5278b36e96c422c3c8ff3",
+        "bytes": 118786
+      },
+      {
+        "debateNumber": "79",
+        "path": "docs/assessment-ledgers/swinburne-oppy-theism-probability-2022.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/swinburne-oppy-theism-probability-2022.json",
+        "sha256": "b1c18da4cfac88e580964e66053a994f4eccbb9d68efc55a4fe3f1a0e9234011",
+        "bytes": 107225
+      },
+      {
+        "debateNumber": "43",
+        "path": "docs/assessment-ledgers/meyer-halper-cosmology-fine-tuning-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/meyer-halper-cosmology-fine-tuning-2026.json",
+        "sha256": "ef65e9ddc6a1b6da7ac68daba7b47679729dcad488553467b918dd4309dc9e56",
+        "bytes": 116059
+      },
+      {
+        "debateNumber": "24",
+        "path": "docs/assessment-ledgers/hitchens-olasky-religion-grace-2007.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/output-bundle/staged-ledgers/hitchens-olasky-religion-grace-2007.json",
+        "sha256": "1122b3e51e326a0323a9f34deba0815760c5d7b2b6ace40a168caa3735991c56",
+        "bytes": 120770
+      }
+    ]
+  },
+  "proposedOutputs": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "e6b013d17de300a7d5f94bb78ac318875d2bcb1e240f0ce77b69361aa3e41d0b",
+      "bytes": 6583392
+    },
+    "compatibilityLibrary": {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs",
+      "sha256": "8350b45c30b4b34e0267c78020cabcb0baa5de48905ef7860ce19b57368f45a9",
+      "bytes": 8785
+    }
+  },
+  "scoreSnapshot": {
+    "overall": {
+      "pro": 80,
+      "con": 82
+    },
+    "section": {
+      "pro": 82,
+      "con": 91
+    },
+    "moves": [
+      {
+        "ledgerMoveId": "pro-charity-does-not-validate-religion",
+        "score": 87
+      },
+      {
+        "ledgerMoveId": "con-scope-universal-poison-burden",
+        "score": 91
+      },
+      {
+        "ledgerMoveId": "pro-religious-credit-pollutes-honesty",
+        "score": 75
+      },
+      {
+        "ledgerMoveId": "con-scope-symmetrical-attribution",
+        "score": 91
+      }
+    ]
+  },
+  "preparationTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "08e24424081357a80e5571756e2e7cfaa34aef73a0bd1bf1155efd5131d02831",
+      "bytes": 4524
+    },
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "b51dca2a5de4e5ef547312adf4dfa34a1470856efbc01292ce492e8eb8c4c619",
+      "bytes": 10010
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-11-production-title-correction-1-preparation.mjs",
+      "sha256": "d2b49b7cf89bee5ff636f9aea363b8a4d3f69eece2b7a35e02fd046c35c112b8",
+      "bytes": 3451
+    },
+    {
+      "path": "scripts/activate-assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "2a4b7ede5f74cb822971c7618cbc3042bf26b446dc626d8691e55add91d5e073",
+      "bytes": 4776
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-11-production-title-correction-1.mjs",
+      "sha256": "1bc47e61204e3c24b12488be1e54d61be8b75e5a7bc0cf8d35ddb7f69560c360",
+      "bytes": 11701
+    }
+  ],
+  "executionDiscipline": {
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "automaticRepairs": 0,
+    "exactWritableFiles": [
+      "src/data/debates.js",
+      "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs"
+    ],
+    "exactWritableSemanticFields": 1,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "authorization": {
+    "boundedFailureRecovery": true,
+    "titleCorrection": true,
+    "compatibilityAliasCorrection": true,
+    "scoreChange": false,
+    "ledgerChange": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-and-execute-one-batch-11-production-title-correction-1-attempt"
+}

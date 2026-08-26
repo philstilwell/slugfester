@@ -89,12 +89,16 @@ assertV4(
   "the exact activated Batch 11 production mutation must exist before correction"
 );
 
-const lockedCompatibilityLibrary = mutationManifest.preparationTools.find(
-  (item) => item.path === paths.compatibilityLibrary
+const compatibilityActivation = await readJson(
+  mutationManifest.compatibilityAcceptance.activation.path
 );
+const lockedCompatibilityLibrarySha256 =
+  compatibilityActivation.executionToolHashes?.[
+    paths.compatibilityLibrary
+  ];
 assertV4(
-  lockedCompatibilityLibrary &&
-    sha256(libraryBytes) === lockedCompatibilityLibrary.sha256,
+  lockedCompatibilityLibrarySha256 &&
+    sha256(libraryBytes) === lockedCompatibilityLibrarySha256,
   "Batch 11 compatibility library changed before title correction"
 );
 for (const output of publicationActivation.frozenOutput.productionLedgerOutputs) {
@@ -195,6 +199,9 @@ const preparation = {
   inputs: {
     mutationManifest: await lockFile(paths.mutationManifest),
     publicationActivation: await lockFile(paths.publicationActivation),
+    compatibilityActivation: await lockFile(
+      mutationManifest.compatibilityAcceptance.activation.path
+    ),
     productionDebates: lockBytes(paths.productionDebates, debatesBytes),
     compatibilityLibrary: lockBytes(paths.compatibilityLibrary, libraryBytes),
     productionLedgerOutputs:

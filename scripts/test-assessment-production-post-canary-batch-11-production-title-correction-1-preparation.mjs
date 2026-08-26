@@ -45,6 +45,7 @@ assert.equal(preparation.authorization.paidServices, false);
 for (const lock of [
   preparation.inputs.mutationManifest,
   preparation.inputs.publicationActivation,
+  preparation.inputs.compatibilityActivation,
   preparation.inputs.productionDebates,
   preparation.inputs.compatibilityLibrary,
   ...preparation.preparationTools
