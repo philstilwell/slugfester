@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-107-correction-transport-diagnosis",
+  "status": "diagnosed-response-schema-rejected-before-model-output",
+  "diagnosedAt": "2026-08-26T03:57:38.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "preservedExecution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-correction-1/model-execution.json",
+    "sha256": "61ced15d3043c3c6514bda5ec98cbde3dab7d4f4b8ea2ba6ccf0d804d7cc0e02",
+    "status": "result-missing",
+    "elapsedMs": 2240,
+    "commandExitCode": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrections": 0
+  },
+  "failure": {
+    "stage": "provider-response-schema-validation",
+    "httpStatus": 400,
+    "providerErrorCode": "invalid_json_schema",
+    "providerMessage": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'corrections'), array schema items is not an object.",
+    "schemaPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-correction-1/schema.json",
+    "schemaSha256": "c116f49bee49e2d84fdf0c02c197d6663ca0c18275d8d4d57892511a0bd70652",
+    "cause": "The tuple-array schema used prefixItems with items set to false; the subscription structured-output endpoint requires an object-valued items schema for arrays.",
+    "modelOutputGenerated": false,
+    "correctionTextGenerated": false,
+    "outputFileWritten": false,
+    "mergePerformed": false,
+    "baseDebate107OutputMutated": false
+  },
+  "preservedContent": {
+    "debate107FailedPublicationOutput": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-107.json",
+      "sha256": "34759e458fe1e98dfe301c1f9f9466e622f182831a428901de94e3909ca4d896",
+      "unchanged": true
+    },
+    "passedDebate74Output": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-74.json",
+      "sha256": "45bff8531cfa7581a0ea4dd155add961e5e429fd626e54f7736f86dc15813dac",
+      "retained": true
+    },
+    "passedDebate142Output": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-142.json",
+      "sha256": "f44282f4d6003dbfb9b454458793302641681b03533a68835cbf087a740c3020",
+      "retained": true
+    }
+  },
+  "unattemptedContexts": {
+    "originalContextIndexes": [4, 5, 6, 7, 8, 9],
+    "debates": ["123", "177", "68", "147", "61", "130"],
+    "remainClosed": true
+  },
+  "boundedTransportCorrectionCandidate": {
+    "freshIsolatedContexts": 1,
+    "sameThreeWritableFields": [
+      "aiExtension.pro.premises[0].novelty.explanation",
+      "aiExtension.pro.premises[2].novelty.explanation",
+      "aiExtension.pro.premises[4].novelty.explanation"
+    ],
+    "schemaCorrection": "Replace the unsupported tuple-array response shape with an object containing three fixed named explanation properties.",
+    "modelInputsOtherwiseUnchanged": true,
+    "failedPublicationOutputAvailableToModel": false,
+    "rejectedExplanationsAvailableToModel": false,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "completeDebate107ValidationRequired": true,
+    "sixUnattemptedContextsRemainClosedUntilPassingCorrection": true
+  },
+  "authorization": {
+    "diagnosis": true,
+    "newTransportCorrectionPreparation": false,
+    "newTransportCorrectionModelExecution": false,
+    "sixContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextRequiredAction": "obtain-explicit-authorization-for-one-new-schema-corrected-three-field-debate-107-context"
+}
