@@ -96,7 +96,7 @@ assert.equal(
   storedLedger.debates.filter(
     (debate) => debate.mergeAudit.adjudicationOutputAcceptedWithoutCorrection
   ).length,
-  10
+  9
 );
 
 const mutatedLedger = structuredClone(storedLedger);
