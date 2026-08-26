@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-field-disjoint-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-12-publication-field-disjoint-repair-2-continuation",
+  "status": "passed",
+  "debateNumber": "07",
+  "sourceFailedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/outputs/debate-07.json",
+    "sha256": "dca211fa210e793a021e0bbaddeed40d964f2172d6bd98fe520fe30d74ed2d50",
+    "retainedValidationCleanFieldsDeterministically": true,
+    "rejectedTargetValuesRetained": false
+  },
+  "replacements": [
+    {
+      "contextIndex": 10,
+      "shardId": "debate-07-shard-1",
+      "fieldKey": "field_01",
+      "field": "aiExtension.con.premises.0.novelty.explanation",
+      "kind": "novelty",
+      "originalValueSha256": "638075d64551a8a5ec85214ba55ddbb7d1b5d8f50d90823ea44d4486c665586e",
+      "replacementValueSha256": "2d545a42accda7e8cdae79dd4d505e811cee06420441e5eb737378725a888bb2"
+    }
+  ],
+  "correctedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-2/field-disjoint-repair-2-continuation/corrected/debate-07.json",
+    "sha256": "694c7a966afe3d3ea58b2282239e3f3ef833d7cabbcc43dc1574453d6772def6",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "07",
+      "moves": 20,
+      "critiques": 20,
+      "minimumCritiqueCharacters": 883,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "lockedScoresUnchanged": true,
+  "modelAuthoredScores": 0
+}
