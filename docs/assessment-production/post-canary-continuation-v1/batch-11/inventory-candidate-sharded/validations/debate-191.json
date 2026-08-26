@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-11-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "debateNumber": "191",
+  "inventoryPlanCanonicalSha256": "ff0f6702cac0dea456820d4a0930784603a26f6ee2554342785470c6ba3c86b5",
+  "sideSelectionSha256": {
+    "pro": "6bdbb5184f40ce30adbedd4412dcd8644f0c0ae7592a98ce93e8b19f93ce7091",
+    "con": "e57108aa52f3edc7ecbc3e8a9d11d76487ef4bde744136de8ef0305fa298175c"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c007",
+      "side": "pro",
+      "moveId": "pro-flagellar-exaptation",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without a retained prior flagellum objection, the comparative variation and component reuse provide affirmative evidence of evolutionary assembly.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
