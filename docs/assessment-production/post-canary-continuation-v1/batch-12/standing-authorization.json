@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-standing-authorization",
+  "protocolId": "assessment-production-post-canary-batch-12-standing-authorization",
+  "status": "frozen-active-batch-12-complete-remaining-workflow-standing-authorization",
+  "authorizedAt": "2026-08-26T17:41:42Z",
+  "sourcePacketCommit": "217343109d51642a35516bef7911f3487e867899",
+  "checkpointCommit": "217343109d51642a35516bef7911f3487e867899",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "stagingOnly": true,
+  "selectedDebates": [
+    "152",
+    "28",
+    "119",
+    "116",
+    "131",
+    "07",
+    "33",
+    "15",
+    "29",
+    "11"
+  ],
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/selection.json",
+    "sha256": "fb6b1c8d341b49c0a63352c27d31e585fb2dba5a98c3052be4816d99093bbe10",
+    "bytes": 31881,
+    "status": "twelfth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "sourcePreparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/preparation-manifest.json",
+    "sha256": "1f9fb2674fe74d74bbf6e16bab0c8a23c3118ab78bc2f9a7ca196a2c7de6ec7c",
+    "bytes": 102273,
+    "status": "post-canary-batch-12-ten-complete-score-blind-source-packets-prepared-awaiting-validation",
+    "frozenDiscoveryContexts": 44
+  },
+  "sourceValidation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/validation.json",
+    "sha256": "0771264eda719ea93c5fd8cf8976fa6d27d9f1a6d69b82d1ba7126bce63a3840",
+    "bytes": 2651,
+    "status": "post-canary-batch-12-score-blind-source-packet-validation-passed-frozen-under-standing-authorization"
+  },
+  "userAuthorization": {
+    "instruction": "Continue the SLUGFESTER reassessment campaign with Batch 12. I authorize deterministic selection and the complete reassessment and publication workflow for the next ten eligible, previously unpublished dyadic debates; 5.6 Sol/low work through the ChatGPT subscription and local work are capped at $0 direct incremental cost; conditional sequential gpt-4o-transcribe-diarize audio verification is capped at $1.00 total after a frozen estimate is reported and may then proceed without waiting; use one paid attempt per clip and no paid retries; verified $0 source recovery, diagnosed minimum fresh field-disjoint recovery shards with one attempt per shard and at most two recovery levels, exact deterministic dependent-artifact correction, production mutation, complete validation, commits, and pushes may proceed automatically across successful gates; fetch before every push, never force-push, verify local and remote commit equality, close temporary browser sessions and servers, and stop before Batch 13 selection.",
+    "resolvedAntecedent": "The attached Batch 12 request authorizes deterministic selection and the complete reassessment, recovery, publication, validation, commit, and push workflow.",
+    "scopeInterpretation": "Create and use a complete-workflow Batch 12 standing authorization for the ten frozen selections, beginning with the separately frozen score-blind source packets, including bounded diagnosed recovery and production publication, while preserving the established campaign controls and stopping before Batch 13 selection.",
+    "directIncrementalCostUsdMaximumForSubscriptionAndLocalWork": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "supersedesPerStageUserApprovalPausesWithinFrozenScope": true,
+    "preservesAllContentValidationCostAndFailureStops": true
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "authorizedSequence": [
+    "forty-four-frozen-score-blind-discovery-contexts",
+    "candidate-census-planning-and-candidate-sharded-side-selection",
+    "two-isolated-independent-judgments-per-debate",
+    "deterministic-disagreement-extraction",
+    "local-audio-source-and-clip-preparation",
+    "audio-verification-manifest-cost-estimation-and-conditional-execution",
+    "dispute-only-adjudication-and-bounded-deterministic-corrections",
+    "final-ledger-assembly-and-one-deterministic-score-pass",
+    "score-locked-publication-reconstruction-and-bounded-repairs",
+    "deterministic-compilation-finalization-and-rendering-verification",
+    "compatibility-staging-production-publication-generated-seo-and-dependent-artifact-correction"
+  ],
+  "executionControls": {
+    "everyContextEnumeratedAndHashLockedBeforeExecution": true,
+    "freshIsolatedContextRequired": true,
+    "attemptsPerContextOrPass": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "automaticRepairsMaximum": 0,
+    "rollbacksMaximum": 0,
+    "repairWritableFieldsMaximumPerPacket": 2,
+    "scorePassesMaximum": 1,
+    "modelAuthoredScoresAllowed": false,
+    "roundedIntegerScoreTiesPermitted": true,
+    "failedPartialOutputReusable": false,
+    "eachOriginalFieldAcceptedExactlyOnce": true,
+    "separateFrozenActivationArtifactRequired": true,
+    "automaticContinuationOnlyAfterPassingGate": true
+  },
+  "stageConcurrency": {
+    "discovery": 4,
+    "inventory": 2,
+    "judgments": 2,
+    "audio": 1,
+    "adjudication": 2,
+    "publication": 2
+  },
+  "schedulerRamps": {
+    "discovery": [
+      1,
+      2,
+      4
+    ],
+    "inventory": [
+      1,
+      2
+    ],
+    "judgments": [
+      1,
+      2
+    ],
+    "audioVerification": [
+      1
+    ],
+    "adjudication": [
+      1,
+      2
+    ],
+    "publication": [
+      1,
+      2
+    ]
+  },
+  "costBoundary": {
+    "authentication": "ChatGPT subscription",
+    "subscriptionAndLocalDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "publicSourceRecoveryDirectIncrementalCostUsdMaximum": 0,
+    "audioEstimateMustBeFrozenAndReportedBeforeFirstCall": true,
+    "audioSequentialExecutionRequired": true,
+    "audioAttemptsPerClip": 1,
+    "audioRetriesMaximum": 0,
+    "stopAfterRequestFailureOrUsageDerivedCapExceedance": true
+  },
+  "sourceRecoveryControls": {
+    "verifiedEquivalentSourceDiscoveryAllowed": true,
+    "publicSourceAcquisitionsMaximumPerVideo": 1,
+    "freshMediaUrlResolutionsMaximumPerVideo": 1,
+    "redirectsMaximumPerNonOverlappingRange": 3,
+    "httpsRedirectsOnly": true,
+    "redirectDestinationHostSuffix": "googlevideo.com",
+    "finalMediaResponseStatus": 206,
+    "repeatedByteRangesAllowed": false,
+    "automaticTransportRetriesMaximum": 0,
+    "purchasesAllowed": false,
+    "playbackDuringSourceRecoveryAllowed": false,
+    "semanticAudioEvaluationDuringSourceRecoveryAllowed": false
+  },
+  "recoveryControls": {
+    "boundedFirstRecoveryAuthorized": true,
+    "recoveryAttemptsPerFailedContextMaximum": 2,
+    "recoveryLevelsMaximum": 2,
+    "ordinaryRetriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveCorrectionsMaximum": 1,
+    "failedPartialOutputReusable": false,
+    "diagnosisUsesOnlyPreservedRecordsAndLocalEvidence": true,
+    "correctedContextAndMergeRuleHashLockRequired": true,
+    "unattemptedContextResumptionPermitted": true,
+    "validationOverlayMustPreserveOriginalEvidence": true,
+    "fieldDisjointShardingPermitted": true,
+    "minimumShardCountRequired": true,
+    "eachOriginalFieldAcceptedExactlyOnce": true,
+    "completeAffectedCohortReplayRequired": true,
+    "resumeStandingAuthorizationAfterPassingRecovery": true
+  },
+  "authorization": {
+    "sourcePacketPreparation": true,
+    "verifiedPublicSourceRecovery": true,
+    "discoveryModelExecution": true,
+    "inventoryPreparationAndModelExecution": true,
+    "independentJudgmentPreparationAndModelExecution": true,
+    "disagreementExtraction": true,
+    "localAudioPreparation": true,
+    "conditionalPaidAudioVerification": true,
+    "adjudicationPreparationAndModelExecution": true,
+    "boundedCorrections": true,
+    "finalLedgerAssembly": true,
+    "singleScorePass": true,
+    "publicationPreparationAndModelExecution": true,
+    "boundedPublicationRepairs": true,
+    "deterministicCompilation": true,
+    "publicationFinalization": true,
+    "renderingVerification": true,
+    "compatibilityStaging": true,
+    "productionMutation": true,
+    "generatedSeoCorrection": true,
+    "dependentArtifactCorrection": true,
+    "completeRepositoryValidation": true,
+    "commitAndPushPassingCheckpoints": true,
+    "nextBatchSelection": false
+  },
+  "gitControls": {
+    "fetchBeforePushRequired": true,
+    "cleanConflictFreeRebaseOntoOriginMainAuthorized": true,
+    "forcePushAllowed": false,
+    "localRemoteCommitEqualityVerificationRequired": true
+  },
+  "stopRules": {
+    "paidServiceEstimateAboveOneDollarBlocks": true,
+    "actualPaidServiceCostAboveOneDollarBlocks": true,
+    "outsideBatchTwelveDebateBlocks": true,
+    "unfrozenSourceScoreIdentityReferenceValidatorOrAcceptedFieldChangeBlocks": true,
+    "thirdFailureOfSameUnderlyingProblemBlocks": true,
+    "moreThanTwoRecoveryLevelsBlocks": true,
+    "failedSecondBoundedCorrectionBlocks": true,
+    "unexpectedValidationCategoryBlocks": true,
+    "ordinaryRetryRerunTimeoutExtensionRollbackOrManualScoreAdjustmentBlocks": true,
+    "productionMutationDifferentFromFrozenManifestBlocks": true,
+    "batchThirteenSelectionBlocks": true,
+    "actionOutsideAuthorizationBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/selection-analysis.json": "d5c63707d0fbad57754ca79c766d45116462b6aacff67da4fad248307726d70d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/selection.json": "fb6b1c8d341b49c0a63352c27d31e585fb2dba5a98c3052be4816d99093bbe10",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/preparation-manifest.json": "1f9fb2674fe74d74bbf6e16bab0c8a23c3118ab78bc2f9a7ca196a2c7de6ec7c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/validation.json": "0771264eda719ea93c5fd8cf8976fa6d27d9f1a6d69b82d1ba7126bce63a3840",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization-instruction.txt": "d353dd995536d6a60d273ee83517ac55780bcddef9704e72023a32b30369371a",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/score-stability-policy-v2.2-proposal.md": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/lib/assessment-production-post-canary-batch-12-standing-authorization.mjs": "07516216c018db56affd8f52970e47603cd0438d1d3dd3c385b035de83481f9b",
+    "scripts/lib/assessment-production-score-stability-policy-active.mjs": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+    "scripts/prepare-assessment-production-post-canary-batch-12-standing-authorization.mjs": "0f9130e4bcb44576a74835a2c825b0b22da4163db1545908121df6d9b1d7d3ad",
+    "scripts/test-assessment-production-post-canary-batch-12-standing-authorization.mjs": "302bf6aebaf9c092fab955942d59a2724f70faf3c280915b24671d1a831e32e3",
+    "scripts/test-assessment-production-score-stability-policy-active.mjs": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1"
+  },
+  "futureArtifactsExcludedFromSourceHashes": {
+    "discoveryExecution": "docs/assessment-production/post-canary-continuation-v1/batch-12/discovery/execution-manifest.json",
+    "batchCompletion": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-publication/generated-seo-correction/analysis.json"
+  },
+  "nextAuthorizedAction": "prepare-validate-freeze-commit-and-push-batch-12-discovery-execution-manifest"
+}
