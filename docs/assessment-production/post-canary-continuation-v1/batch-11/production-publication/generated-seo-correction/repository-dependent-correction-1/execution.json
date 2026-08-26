@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-repository-dependent-correction-1-execution",
+  "protocolId": "assessment-production-post-canary-batch-11-repository-dependent-correction-1",
+  "status": "passed-batch-11-repository-dependent-correction-1",
+  "startedAt": "2026-08-26T17:23:14.217Z",
+  "completedAt": "2026-08-26T17:23:20.313Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/production-publication/generated-seo-correction/repository-dependent-correction-1/execution-activation.json",
+    "sha256": "d097a35dbc7d6c1aed810ea7e663c69eda33535d6030e5384e9942c67fc5d011",
+    "bytes": 4289
+  },
+  "writes": {
+    "exactFiles": [
+      {
+        "path": "scripts/fixtures/reassessment-scoring-v2-ledger.json",
+        "sha256": "cb0f23d5d13737c1284cb9e5cb612372ce8875c56c545c5b444b57177027ff5d",
+        "bytes": 13723
+      },
+      {
+        "path": "scripts/test-reassessment-scoring.mjs",
+        "sha256": "82fd26a35254deb955d787d528cabca6045ee47b48e2d09a2e42144e59edb3b5",
+        "bytes": 8157
+      },
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.json",
+        "sha256": "61a3a3a9e32a3c3b1102c4c061d0f9be31328a5a46bd6fe2669c36fb1ff2cf17",
+        "bytes": 11588
+      },
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.md",
+        "sha256": "a0508931fd39f1b4284118602d15f8831a19a175508849bf08fd8b46b6783332",
+        "bytes": 5390
+      }
+    ],
+    "scoringFixtureFiles": 2,
+    "calibrationAnalysisFiles": 2,
+    "otherPathsPreserved": true
+  },
+  "validation": {
+    "command": "npm run check",
+    "runs": 1,
+    "startedAt": "2026-08-26T17:23:14.416Z",
+    "completedAt": "2026-08-26T17:23:20.287Z",
+    "exitCode": 0,
+    "stdoutSha256": "537e26fdcf032194405aa228f02112cb7a8e8259f6dddf4707a0a49766b41716",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "completeRepositoryRegressionPassed": true
+  },
+  "protected": {
+    "productionMutationPreserved": true,
+    "allTenProductionLedgersPreserved": true,
+    "all380GeneratedOutputsPreserved": true,
+    "twelveBatch11GeneratedWritesPreserved": true,
+    "scoreChanges": 0,
+    "ledgerChanges": 0
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "recursiveCorrections": 0,
+    "dependentWrites": 4,
+    "completeRepositoryValidationRuns": 1,
+    "productionMutationReruns": 0,
+    "seoGeneratorWriteRuns": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "finalize-batch-11-generated-seo-transaction-and-commit-push"
+}

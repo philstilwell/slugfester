@@ -220,7 +220,7 @@ assert.throws(
 );
 
 const v2Source = await readFile(
-  new URL("../docs/assessment-ledgers/craig-oconnor-god-debate-2026.json", import.meta.url),
+  new URL("./fixtures/reassessment-scoring-v2-ledger.json", import.meta.url),
   "utf8"
 );
 assert.equal(

@@ -39,12 +39,12 @@
     "interpretation": "The deltas show deterministic threshold handling and procedural repeatability. They cannot establish inter-rater reliability because both passes shared one model context."
   },
   "legacyBenchmarkComparison": {
-    "meanChange": -2.4,
-    "meanAbsoluteChange": 4.1,
+    "meanChange": -2.6,
+    "meanAbsoluteChange": 4.3,
     "minimumChange": -13,
     "maximumChange": 13,
-    "stableWithinPairOrdering": "8/10",
-    "stableWithinPairOrderingRate": 0.8,
+    "stableWithinPairOrdering": "7/10",
+    "stableWithinPairOrderingRate": 0.7,
     "interpretation": "The v2.1 sample averaged lower because it scored only the exact captured excerpt under tighter anchors, whereas a legacy move summary may reflect a broader passage. This is evidence of granularity sensitivity, not a valid estimate of full-debate score change or winner stability."
   },
   "tagReview": {
@@ -86,22 +86,22 @@
           "passA": 75,
           "passB": 77,
           "final": 76,
-          "legacyBenchmarkMove": 76,
-          "changeFromLegacyBenchmarkMove": 0,
+          "legacyBenchmarkMove": 82,
+          "changeFromLegacyBenchmarkMove": -6,
           "adjudicated": false
         },
         "con": {
           "passA": 77,
           "passB": 79,
           "final": 78,
-          "legacyBenchmarkMove": 84,
-          "changeFromLegacyBenchmarkMove": -6,
+          "legacyBenchmarkMove": 82,
+          "changeFromLegacyBenchmarkMove": -4,
           "adjudicated": false
         }
       },
-      "legacyBenchmarkOrdering": "con",
+      "legacyBenchmarkOrdering": "tie",
       "v21BenchmarkOrdering": "con",
-      "orderingStable": true
+      "orderingStable": false
     },
     {
       "debateNumber": "03",

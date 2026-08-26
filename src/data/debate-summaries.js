@@ -5,11 +5,11 @@ export const debateSummaries = [
     "number": "01",
     "title": "Alex O'Connor vs William Lane Craig: Does God Exist?",
     "label": "Christian theism and suffering",
-    "date": "2026-08-02",
+    "date": "2026-08-26",
     "duration": "1 hr 49 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TAW6-_L4z9M",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
-    "summary": "Craig defends a cumulative Christian case and the Kalam; O'Connor challenges its cosmology, temporal asymmetry, and treatment of animal suffering.",
+    "summary": "Craig presented a cumulative Christian case, while O'Connor's calibrated challenges concerning fine-tuning, animal suffering, and Christian specificity proved especially effective.",
     "sides": {
       "pro": {
         "name": "Theist",
@@ -23,27 +23,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 73,
-      "con": 83
+      "pro": 76,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Cumulative case and opening burden"
+        "title": "Cosmic Beginning, Actual Infinity, and the Nature of Time"
       },
       {
-        "title": "Actual infinity and traversal"
+        "title": "Cosmic Fine-Tuning and Intelligent Selection"
       },
       {
-        "title": "Cosmology, entropy, and theories of time"
+        "title": "Animal Suffering, Theodicy, and Feasible Worlds"
       },
       {
-        "title": "Foreknowledge and the endless future"
+        "title": "Divine Goodness, Moral Knowledge, and the Distribution of Evil"
       },
       {
-        "title": "Animal suffering and comparative probability"
-      },
-      {
-        "title": "Animal consciousness and closing burdens"
+        "title": "Christian Identification, Experience, and Cumulative Warrant"
       }
     ]
   },
@@ -1052,11 +1049,11 @@ export const debateSummaries = [
     "number": "24",
     "title": "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality",
     "label": "Religion, grace, and secular morality",
-    "date": "2026-05-30",
+    "date": "2026-08-26",
     "duration": "1 hr 37 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=lcHMSNiI97w",
     "motion": "Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?",
-    "summary": "Hitchens argues religion is man-made authority and moral poison; Olasky answers that Christianity produces grace, charity, reform, and personal transformation.",
+    "summary": "Hitchens attacks supernatural authority and religious morality; Olasky counters through Christianity's grace, charitable fruits, historical credibility, and challenges to universal condemnation.",
     "sides": {
       "pro": {
         "name": "Anti-theist critique",
@@ -1070,27 +1067,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 79
+      "pro": 80,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Metaphysics and authority"
+        "title": "The Poison Charge and Attribution of Good and Harm"
       },
       {
-        "title": "Charity and evidence"
+        "title": "Religious Truth, Naturalistic Explanation, and Historical Credibility"
       },
       {
-        "title": "Scripture and violence"
+        "title": "Divine Authority, Scriptural Morality, and Human Freedom"
       },
       {
-        "title": "Design and miracles"
+        "title": "Secular Morality, Christian Grace, and Personal Transformation"
       },
       {
-        "title": "Grace and regimes"
-      },
-      {
-        "title": "Morality and pluralism"
+        "title": "Charity, Civic Institutions, and Social Consequences"
       }
     ]
   },
@@ -1920,11 +1914,11 @@ export const debateSummaries = [
     "number": "43",
     "title": "Stephen Meyer vs Phil Halper: The Big Bang and Fine-Tuning",
     "label": "Big Bang fine-tuning and design",
-    "date": "2026-06-01",
+    "date": "2026-08-26",
     "duration": "2 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EsrfL58iLlE",
     "motion": "Does modern cosmology, especially Big Bang evidence and cosmic fine-tuning, make theism or intelligent design a better explanation than naturalistic early-universe models?",
-    "summary": "Meyer argues that a beginning, fine-tuning, and information inputs point to a transcendent mind; Halper argues that early-universe physics remains underdetermined and God lacks testable content.",
+    "summary": "Meyer defended cosmic beginnings and fine-tuning as design evidence; Halper more successfully emphasized theorem limits, unknown probabilities, testability, and underdetermined divine intentions.",
     "sides": {
       "pro": {
         "name": "Design theist",
@@ -1938,27 +1932,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 83
+      "pro": 79,
+      "con": 90
     },
     "sections": [
       {
-        "title": "Opening frames"
+        "title": "Scientific and Theological Standards of Inquiry"
       },
       {
-        "title": "Science and religion"
+        "title": "Evidence for a Cosmic Beginning"
       },
       {
-        "title": "Big Bang beginning"
+        "title": "Early-Universe Models, Theorem Scope, and Uncertainty"
       },
       {
-        "title": "Alternative cosmologies"
+        "title": "Reality and Probability of Cosmic Fine-Tuning"
       },
       {
-        "title": "Fine-tuning evidence"
-      },
-      {
-        "title": "Multiverse and mind"
+        "title": "Design, Multiverse, Agency, and Predictive Expectations"
       }
     ]
   },
@@ -2436,11 +2427,11 @@ export const debateSummaries = [
     "number": "54",
     "title": "Michael Jones vs Stephen Law: Christianity vs Humanism",
     "label": "Christianity, humanism, and social future",
-    "date": "2026-06-01",
+    "date": "2026-08-26",
     "duration": "1 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_UOwOCGIPzQ",
     "motion": "Does Christianity or humanism offer a brighter future for humanity, especially for moral formation, social health, human rights, truth, and pluralistic freedom?",
-    "summary": "Jones argues Christian belief and institutions best sustain human rights, meaning, charity, fertility, and Western social goods; Law argues humanism can preserve morality and pluralism without building society on disputed Christian claims.",
+    "summary": "Law’s comparative, neutrality, and evidential challenges outweighed Jones’s stronger pluralism case and qualified historical, social, scientific, and theological defenses.",
     "sides": {
       "pro": {
         "name": "Christianity offers the brighter future",
@@ -2454,30 +2445,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 82
+      "pro": 72,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Opening definitions"
+        "title": "Moral foundations, human dignity, and historical inheritance"
       },
       {
-        "title": "Truth and usefulness"
+        "title": "Christian truth, evidence, suffering, and human agency"
       },
       {
-        "title": "Data and moral foundations"
+        "title": "Social health, motivation, and generational sustainability"
       },
       {
-        "title": "Truth of Christianity"
+        "title": "Equal rights, political secularism, and conscience"
       },
       {
-        "title": "Fine-tuning and suffering"
-      },
-      {
-        "title": "Rights and pluralism"
-      },
-      {
-        "title": "Future and science"
+        "title": "Science, institutional autonomy, and intellectual progress"
       }
     ]
   },
@@ -2712,11 +2697,11 @@ export const debateSummaries = [
     "number": "60",
     "title": "Trent Horn vs Alex O'Connor: Did Jesus Rise From the Dead?",
     "label": "Resurrection witnesses and rival miracles",
-    "date": "2026-06-04",
+    "date": "2026-08-26",
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Bu-7IHp3oGQ",
     "motion": "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
-    "summary": "Horn says resurrection best explains early testimony, the empty tomb, group appearances, and later miracles; O'Connor says the evidence is ambiguous and paralleled by other religious claims.",
+    "summary": "Horn defended bodily continuity, appearances, sincerity, and the empty tomb, while O'Connor pressed source ambiguity, rival-testimony parity, corroboration deficits, and natural alternatives.",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -2730,30 +2715,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 83
+      "pro": 78,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Rival miracles and standards"
+        "title": "Bodily Character and Development of the Appearance Traditions"
       },
       {
-        "title": "Paul and physical resurrection"
+        "title": "Appearances, Corroboration, and Explanatory Inference"
       },
       {
-        "title": "Transfiguration and gospel development"
+        "title": "Empty Tomb, Burial History, and Natural Alternatives"
       },
       {
-        "title": "Persecution and sincerity"
+        "title": "Rival Miracle Claims and Consistent Evidential Standards"
       },
       {
-        "title": "Women and the empty tomb"
-      },
-      {
-        "title": "Alternative explanations"
-      },
-      {
-        "title": "Final standards"
+        "title": "Sincerity, Persecution, and Martyrdom Evidence"
       }
     ]
   },
@@ -3580,11 +3559,11 @@ export const debateSummaries = [
     "number": "79",
     "title": "Richard Swinburne vs Graham Oppy: Is Theism Probable?",
     "label": "Probability of theism",
-    "date": "2026-06-18",
+    "date": "2026-08-26",
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=hKw3d3qOYSo",
     "motion": "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
-    "summary": "Swinburne argues that a simple omnipotent God best explains the universe, laws, life, and consciousness; Oppy argues that naturalistic theory comparison can be simpler and no less explanatory.",
+    "summary": "Swinburne advances a cumulative theistic explanation, while Oppy answers with economical naturalistic alternatives and sharper comparative, anthropocentric, consciousness, and modal challenges.",
     "sides": {
       "pro": {
         "name": "Probabilistic theism",
@@ -3598,27 +3577,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 84
+      "pro": 80,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Cumulative Explanation"
+        "title": "Comparative Method, Simplicity, and Priors"
       },
       {
-        "title": "Fine-Tuning and Judgment"
+        "title": "Cosmic Origins, Laws, and Fine-Tuning"
       },
       {
-        "title": "Bayesian Rival Theories"
+        "title": "Divine Reasons, Anthropocentrism, and Embodied Agency"
       },
       {
-        "title": "Modality and Human Significance"
+        "title": "Consciousness and Naturalistic Explanation"
       },
       {
-        "title": "Consciousness and Identity"
-      },
-      {
-        "title": "Priors and Simplicity"
+        "title": "Modality, Necessity, and Ultimate Explanation"
       }
     ]
   },
@@ -3716,11 +3692,11 @@ export const debateSummaries = [
     "number": "82",
     "title": "Lance Bush vs Derek McAllister: Moral Anti-Realism vs Realism",
     "label": "Metaethical anti-realism and realism",
-    "date": "2026-06-21",
+    "date": "2026-08-26",
     "duration": "1 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ya02MOhQMV8",
     "motion": "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
-    "summary": "Bush argues that realist-friendly claims about folk morality, common sense, and relativism often outrun the evidence; McAllister presses whether realism still has pre-philosophical, historical, and practical support.",
+    "summary": "Bush systematically challenges realist presumptions from common sense, history, and semantics, while McAllister offers competent but insufficiently documented convergence and perspectival-collapse arguments.",
     "sides": {
       "pro": {
         "name": "Moral anti-realism",
@@ -3734,27 +3710,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 87,
-      "con": 82
+      "pro": 90,
+      "con": 76
     },
     "sections": [
       {
-        "title": "Method and Semantics"
+        "title": "Empirical Semantics and Metaphysical Scope"
       },
       {
-        "title": "Common Sense and Burden"
+        "title": "Common Sense and Pre-Theoretical Outlooks"
       },
       {
-        "title": "Access to Folk Views"
+        "title": "Historical Convergence and Metaethical Attribution"
       },
       {
-        "title": "Historical Convergence"
+        "title": "Agent and Appraiser Relativism"
       },
       {
-        "title": "Expert Consensus and Relativism"
-      },
-      {
-        "title": "Agent and Appraiser Views"
+        "title": "Normative Conflict and Epistemic Mediation"
       }
     ]
   },
@@ -6877,11 +6850,11 @@ export const debateSummaries = [
     "number": "151",
     "title": "David Wood vs Matt Dillahunty: God or Secular Humanism?",
     "label": "Moral obligation and human flourishing",
-    "date": "2026-07-31",
+    "date": "2026-08-26",
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=u2SjOn8arv8",
     "motion": "Which gives a better foundation for ethics: God or secular humanism?",
-    "summary": "Wood argues that a creator God makes moral duties objectively real; Dillahunty argues that secular humanism offers a revisable, evidence-led ethical practice without requiring categorical moral facts.",
+    "summary": "Wood pressed categorical obligation and transcendent worth, while Dillahunty more effectively defended revisable secular ethics and exposed gaps in divine grounding.",
     "sides": {
       "pro": {
         "name": "Theistic moral realism",
@@ -6895,24 +6868,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 61,
-      "con": 87
+      "pro": 79,
+      "con": 84
     },
     "sections": [
       {
-        "title": "What Counts as a Moral Foundation"
+        "title": "Objective Morality and Divine Grounding"
       },
       {
-        "title": "Conditional Obligations and the Personal Case"
+        "title": "Flourishing, Consequences, and Binding Obligation"
       },
       {
-        "title": "Human Fallibility and Social Learning"
+        "title": "Human Value, Rights, and Cooperation"
       },
       {
-        "title": "Image of God and the Cost of Vagueness"
+        "title": "Moral Knowledge, Disagreement, and Correction"
       },
       {
-        "title": "Altruism, Moral Progress, and the Closing"
+        "title": "Motivation, Atrocity, and Practical Application"
       }
     ]
   },
@@ -8539,11 +8512,11 @@ export const debateSummaries = [
     "number": "188",
     "title": "Bernardo Kastrup vs Susan Blackmore: What Is Consciousness?",
     "label": "Analytic idealism, neutral monism, and the self-model",
-    "date": "2026-08-01",
+    "date": "2026-08-26",
     "duration": "59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=X4YVgM2HPMk",
     "motion": "Is consciousness the ontological foundation of reality rather than an emergent property of matter?",
-    "summary": "Kastrup argues that consciousness is the sole fundamental category and that brains and bodies represent dissociated mental processes; Blackmore rejects materialist emergence but presses a neutral-monist account built from representation without a persisting self.",
+    "summary": "Kastrup grounds reality in consciousness, while Blackmore argues that neutral representation better exposes idealism's unresolved structure, boundaries, and causal differentiation.",
     "sides": {
       "pro": {
         "name": "Consciousness is fundamental",
@@ -8557,27 +8530,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 90,
-      "con": 92
+      "pro": 83,
+      "con": 86
     },
     "sections": [
       {
-        "title": "What should reduction reduce to?"
+        "title": "Ontological Starting Point and the Emergence Gap"
       },
       {
-        "title": "A world outside individual minds"
+        "title": "Objective Reality, Boundaries, and Natural Order"
       },
       {
-        "title": "Dissociation, life, and causal structure"
+        "title": "Representation, Self-Models, and Phenomenal Character"
       },
       {
-        "title": "The self-model and the illusion regress"
+        "title": "Integrated Information and Causal Existence"
       },
       {
-        "title": "Distributed experience and IIT"
-      },
-      {
-        "title": "Consciousness beyond space and time"
+        "title": "Universal Subjectivity, Differentiation, and Nonspatiotemporal Structure"
       }
     ]
   },
@@ -8679,11 +8649,11 @@ export const debateSummaries = [
     "number": "191",
     "title": "Michael Ruse vs Fuz Rana: Evolution or Design at Life's Origin?",
     "label": "Origin of life and cellular design",
-    "date": "2026-08-01",
+    "date": "2026-08-26",
     "duration": "2 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2CnZ3n8I5b8",
     "motion": "Are natural processes sufficient to explain the origin of life and the complexity of the cell?",
-    "summary": "Ruse defends a naturalistic research program informed by evolutionary success, while Rana argues that failures in prebiotic chemistry, researcher intervention, and cellular information point to intelligent agency.",
+    "summary": "Ruse defended cumulative chemical and evolutionary explanations, while Rana pressed chemical constraints, cellular integration, testability, and positive indicators of intelligent agency.",
     "topicCategory": "science-design",
     "sides": {
       "pro": {
@@ -8698,24 +8668,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 87,
-      "con": 86
+      "pro": 82,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Competing explanatory models"
+        "title": "Prebiotic Pathways and Chemical Constraints"
       },
       {
-        "title": "Replicators, metabolism, and membranes"
+        "title": "Explanatory Method and the Agency Inference"
       },
       {
-        "title": "Laboratory intervention and design inference"
+        "title": "Biological Information and Minimal Cellular Requirements"
       },
       {
-        "title": "Methodological naturalism and Genesis"
+        "title": "Evolutionary Origins of Cellular Complexity"
       },
       {
-        "title": "Information, minimal complexity, and bad design"
+        "title": "Natural Law, Intervention, and Design Objections"
       }
     ]
   },
