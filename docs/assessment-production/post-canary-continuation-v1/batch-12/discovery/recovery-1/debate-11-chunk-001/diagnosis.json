@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-discovery-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-12-debate-11-chunk-001-discovery-recovery-1",
+  "status": "batch-12-discovery-single-timeout-diagnosed-minimum-two-shard-recovery-required",
+  "diagnosedAt": "2026-08-26T18:22:51Z",
+  "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-12/discovery/model-execution.json",
+  "originalExecutionSha256": "166e8e1a9419bd3f4bf3f9768d53cca8b3381d8f805a6fdf17fc5f86a6c7a443",
+  "failure": {
+    "contextIndex": 41,
+    "debateNumber": "11",
+    "chunkId": "chunk-001",
+    "classification": "whole-context-five-minute-timeout-no-model-output",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "timeoutExtensions": 0,
+    "failedPartialOutputAvailable": false,
+    "failedPartialOutputReusable": false
+  },
+  "finding": "The final discovery context exhausted the frozen five-minute limit without a result file. The source and schema hashes remained valid; splitting its owned event range into two equal, fresh, non-overlapping cores is the minimum bounded recovery that reduces per-context work while preserving every source event exactly once.",
+  "nextAuthorizedAction": "freeze-minimum-two-shard-level-1-recovery-plan"
+}

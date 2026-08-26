@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-discovery-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-12-debate-11-chunk-001-discovery-recovery-1",
+  "status": "frozen-batch-12-debate-11-chunk-001-level-1-discovery-recovery-plan",
+  "recoveryLevel": 1,
+  "failedContextIndex": 41,
+  "minimumFreshShardCount": 2,
+  "fieldDisjointAxis": "owned-core-event-range",
+  "originalOwnedCore": [
+    0,
+    859
+  ],
+  "shards": [
+    {
+      "shardId": "recovery-a",
+      "candidatePrefix": "recovery-a-",
+      "ownedCore": [
+        0,
+        429
+      ],
+      "deliveredContext": [
+        0,
+        469
+      ],
+      "candidatesMaximum": 5
+    },
+    {
+      "shardId": "recovery-b",
+      "candidatePrefix": "recovery-b-",
+      "ownedCore": [
+        430,
+        859
+      ],
+      "deliveredContext": [
+        390,
+        899
+      ],
+      "candidatesMaximum": 5
+    }
+  ],
+  "mergeRule": {
+    "id": "batch-12-debate-11-chunk-001-event-disjoint-merge-v1",
+    "candidateIdsMustCarryShardPrefix": true,
+    "candidatesSortedByStartEndAndId": true,
+    "combinedCandidatesMaximum": 10,
+    "eachOriginalCoreEventAcceptedExactlyOnce": true,
+    "otherFortyThreeOriginalOutputsPreservedByteIdentical": true,
+    "failedPartialOutputUsed": false
+  },
+  "attemptsPerShard": 1,
+  "retriesMaximum": 0,
+  "timeoutExtensionsMaximum": 0,
+  "furtherRecoveryLevelsMaximum": 1,
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "prepare-and-freeze-level-1-recovery-shards"
+}
