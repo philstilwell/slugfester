@@ -40,7 +40,7 @@ assert.equal(preparation.totals.audioVerificationCompleted, 0);
 assert.equal(preparation.totals.modelContexts, 0);
 assert.equal(preparation.totals.meteredModelApiCostUsd, 0);
 assert.equal(preparation.totals.directIncrementalCostUsd, 0);
-assert.equal(preparation.totals.audioFilesPlayed, 0);
+assert.equal(preparation.totals.audioFilesPlayed, 1);
 assert.equal(preparation.totals.semanticAudioEvaluations, 0);
 assert.equal(preparation.totals.retries, 0);
 assert.equal(preparation.totals.timeoutExtensions, 0);
@@ -69,7 +69,7 @@ assert.equal(
 assert.equal(preparation.userAuthorization.sourceAudioFilesAuthorized, 3);
 assert.equal(preparation.userAuthorization.clipsAuthorized, 4);
 assert.equal(preparation.userAuthorization.directIncrementalCostUsdMaximum, 0);
-assert.equal(preparation.userAuthorization.audioPlaybackAuthorized, false);
+assert.equal(preparation.userAuthorization.audioPlaybackAuthorized, true);
 assert.equal(preparation.userAuthorization.semanticAudioEvaluationAuthorized, false);
 assert.equal(preparation.acquisitionPolicy.maximumPublicSourceAttempts, 1);
 assert.equal(
@@ -86,13 +86,22 @@ assert.deepEqual(preparation.acquisitionPolicy.acquisitionFormatByVideo, {
 });
 assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.debateNumber, "15");
 assert.equal(preparation.acquisitionPolicy.diagnosedFailedResolution.attempts, 1);
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.level, 2);
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardIndex, 3);
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.shardAttempt, 1);
-assert.equal(preparation.acquisitionPolicy.boundedRecovery.formatSelector, "140");
+assert.equal(
+  preparation.acquisitionPolicy.boundedRecovery.classification,
+  "new-authority-successor-after-exhausted-public-recovery"
+);
+assert.equal(
+  preparation.acquisitionPolicy.boundedRecovery.publicRecoveryLevelsRemainExhausted,
+  2
+);
+assert.equal(preparation.acquisitionPolicy.boundedRecovery.successorAttempt, 1);
+assert.equal(
+  preparation.acquisitionPolicy.boundedRecovery.formatSelector,
+  "authenticated-live-player-decoded-opus"
+);
 assert.equal(
   preparation.acquisitionPolicy.boundedRecovery.transport,
-  "yt-dlp-single-process-resolution-and-download"
+  "Chrome live-player HTMLMediaElement captureStream to MediaRecorder Opus"
 );
 assert.equal(preparation.acquisitionPolicy.boundedRecovery.retries, 0);
 assert.equal(
@@ -127,7 +136,7 @@ assert(
   preparation.publicSourceAttemptAudit.every(
     (item) =>
       item.maximumAttempts === 1 &&
-      [1, 5].includes(item.attempt) &&
+      [1, 6].includes(item.attempt) &&
       item.attemptsByShard.length === item.attempt &&
       item.attemptsByShard.every((attempt) => attempt.attempt === 1)
   )
@@ -136,11 +145,12 @@ assert.equal(
   preparation.publicSourceAttemptAudit.reduce((sum, item) => sum + item.attempt, 0),
   preparation.totals.sourceAcquisitionAttempts
 );
-assert.equal(preparation.totals.sourceAcquisitionAttempts, 7);
+assert.equal(preparation.totals.sourceAcquisitionAttempts, 8);
 assert.equal(preparation.totals.sourceDownloads, 3);
-assert.equal(preparation.totals.failedSourceAcquisitionAttempts, 4);
-assert.equal(preparation.totals.recoverySourceAcquisitionAttempts, 4);
-assert.equal(preparation.executionBoundary.audioPlaybackCalls, 0);
+assert.equal(preparation.totals.failedSourceAcquisitionAttempts, 5);
+assert.equal(preparation.totals.recoverySourceAcquisitionAttempts, 5);
+assert.equal(preparation.executionBoundary.audioPlaybackCalls, 1);
+assert.equal(preparation.executionBoundary.authenticatedBrowserAudioCaptureCalls, 1);
 assert.equal(preparation.executionBoundary.semanticAudioEvaluations, 0);
 assert.equal(preparation.executionBoundary.transcriptionCalls, 0);
 assert.equal(preparation.executionBoundary.modelOrApiCalls, 0);

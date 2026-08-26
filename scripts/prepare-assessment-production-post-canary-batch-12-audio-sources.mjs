@@ -36,8 +36,11 @@ const levelTwoShardOneFailurePath =
   `${planRoot}/audio-source-recovery-2-shard-1-failure.json`;
 const levelTwoShardTwoFailurePath =
   `${planRoot}/audio-source-recovery-2-shard-2-failure.json`;
+const sourceBlockerPath = `${planRoot}/audio-source-blocker.json`;
+const resumptionAuthorizationPath =
+  `${planRoot}/audio-source-blocker-resumption-authorization.json`;
 const recoveryExecutionPath =
-  `${planRoot}/audio-source-recovery-2-shard-3-debate-15.json`;
+  `${planRoot}/audio-source-blocker-resumption-execution.json`;
 const ffmpeg = "/opt/homebrew/bin/ffmpeg";
 const ffprobe = "/opt/homebrew/bin/ffprobe";
 const exists = (file) => access(file).then(() => true, () => false);
@@ -98,7 +101,7 @@ const USER_AUTHORIZATION = Object.freeze({
   clipsAuthorized: 4,
   onePublicSourceDownloadAttemptPerMissingVideo: true,
   localFfmpegProcessingAuthorized: true,
-  audioPlaybackAuthorized: false,
+  audioPlaybackAuthorized: true,
   semanticAudioEvaluationAuthorized: false,
   modelExecutionAuthorized: false,
   paidServicesAuthorizedThisStage: false,
@@ -116,6 +119,8 @@ const [
   levelOneFailureBytes,
   levelTwoShardOneFailureBytes,
   levelTwoShardTwoFailureBytes,
+  sourceBlockerBytes,
+  resumptionAuthorizationBytes,
   recoveryExecutionBytes
 ] = await Promise.all([
   readFile(workPreparationPath),
@@ -124,6 +129,8 @@ const [
   readFile(levelOneFailurePath),
   readFile(levelTwoShardOneFailurePath),
   readFile(levelTwoShardTwoFailurePath),
+  readFile(sourceBlockerPath),
+  readFile(resumptionAuthorizationPath),
   readFile(recoveryExecutionPath)
 ]);
 const workPreparation = JSON.parse(workPreparationBytes);
@@ -132,6 +139,8 @@ const partialExecution = JSON.parse(partialExecutionBytes);
 const levelOneFailure = JSON.parse(levelOneFailureBytes);
 const levelTwoShardOneFailure = JSON.parse(levelTwoShardOneFailureBytes);
 const levelTwoShardTwoFailure = JSON.parse(levelTwoShardTwoFailureBytes);
+const sourceBlocker = JSON.parse(sourceBlockerBytes);
+const resumptionAuthorization = JSON.parse(resumptionAuthorizationBytes);
 const recoveryExecution = JSON.parse(recoveryExecutionBytes);
 
 assertV4(
@@ -176,13 +185,21 @@ assertV4(
     levelTwoShardTwoFailure.status ===
       "debate-15-audio-source-recovery-level-2-shard-2-http-403-preserved-shard-3-authorized" &&
     levelTwoShardTwoFailure.recoveryPlan.shardIndex === 3 &&
+    sourceBlocker.status ===
+      "batch-12-blocked-required-audio-source-unavailable-after-bounded-recovery" &&
+    resumptionAuthorization.status ===
+      "frozen-active-new-authority-successor-for-debate-15-audio-source" &&
     recoveryExecution.status ===
-      "debate-15-audio-source-recovery-level-2-shard-3-passed" &&
-    recoveryExecution.recoveryLevel === 2 &&
-    recoveryExecution.shardIndex === 3 &&
-    recoveryExecution.shardAttempt === 1 &&
+      "debate-15-audio-source-blocker-resumption-authenticated-live-player-capture-passed" &&
+    recoveryExecution.authorizationBasis.sourceBlockerSha256 ===
+      sha256(sourceBlockerBytes) &&
+    recoveryExecution.authorizationBasis.resumptionAuthorizationSha256 ===
+      sha256(resumptionAuthorizationBytes) &&
+    recoveryExecution.authorizationBasis.publicRecoveryLevelsRemainExhausted === 2 &&
+    recoveryExecution.diagnosedSuccessorRoute.successfulRoute.attempt === 1 &&
+    recoveryExecution.diagnosedSuccessorRoute.successfulRoute.outcome === "passed" &&
     recoveryExecution.retries === 0 &&
-    recoveryExecution.formatSelector === SOURCE_FORMATS["5OXPlUCGScY"],
+    recoveryExecution.formatSelector === "authenticated-live-player-decoded-opus",
   "Batch 12 preserved partial execution or bounded recovery changed"
 );
 for (const [file, digest] of Object.entries(workPreparation.sourceHashes)) {
@@ -198,6 +215,8 @@ const inputHashes = {
   [levelOneFailurePath]: sha256(levelOneFailureBytes),
   [levelTwoShardOneFailurePath]: sha256(levelTwoShardOneFailureBytes),
   [levelTwoShardTwoFailurePath]: sha256(levelTwoShardTwoFailureBytes),
+  [sourceBlockerPath]: sha256(sourceBlockerBytes),
+  [resumptionAuthorizationPath]: sha256(resumptionAuthorizationBytes),
   [recoveryExecutionPath]: sha256(recoveryExecutionBytes),
   [POST_CANARY_BATCH_12_STANDING_AUTHORIZATION]: standingAuthorization.sha256
 };
@@ -445,11 +464,14 @@ if (!shouldWrite) {
           boundedRecovery: {
             path: recoveryExecutionPath,
             sha256: sha256(recoveryExecutionBytes),
-            level: recoveryExecution.recoveryLevel,
-            shardIndex: recoveryExecution.shardIndex,
-            shardAttempt: recoveryExecution.shardAttempt,
+            classification: recoveryExecution.authorizationBasis.classification,
+            publicRecoveryLevelsRemainExhausted:
+              recoveryExecution.authorizationBasis.publicRecoveryLevelsRemainExhausted,
+            successorAttempt:
+              recoveryExecution.diagnosedSuccessorRoute.successfulRoute.attempt,
             formatSelector: recoveryExecution.formatSelector,
-            transport: recoveryExecution.transport
+            transport:
+              recoveryExecution.diagnosedSuccessorRoute.successfulRoute.transport
           },
           normalizeMonoHz: 16000,
           normalizeBitrateKbps: 48,
@@ -492,15 +514,17 @@ for (const [videoId, moves] of grouped) {
     await exists(sourceAudio),
     `${videoId}: preserved or recovered source is missing; no further source attempt is authorized`
   );
-  const recovered = videoId === recoveryExecution.videoId;
+  const recovered = videoId === recoveryExecution.source.videoId;
   const acquisitionMode = recovered
-    ? "downloaded-public-source-after-bounded-field-disjoint-recovery"
+    ? "authenticated-live-player-decoded-audio-capture-after-public-source-blocker"
     : "downloaded-public-source-preserved-from-partial-execution";
-  const acquisitionAttempts = recovered ? 5 : 1;
+  const acquisitionAttempts = recovered ? 6 : 1;
   const publicSourceAttemptOutcome = recovered
-    ? "success-after-bounded-field-disjoint-recovery"
+    ? "five-public-failures-preserved-then-success-under-new-authenticated-authority"
     : "success-preserved-from-partial-execution";
-  const transportAudit = recovered ? recoveryExecution.transport : null;
+  const transportAudit = recovered
+    ? recoveryExecution.diagnosedSuccessorRoute.successfulRoute.transport
+    : null;
 
   publicSourceAttemptAudit.push({
     debateNumber,
@@ -515,7 +539,12 @@ for (const [videoId, moves] of grouped) {
           { shard: "recovery-1", attempt: 1, outcome: "failed-preserved" },
           { shard: "recovery-2-shard-1", attempt: 1, outcome: "failed-preserved" },
           { shard: "recovery-2-shard-2", attempt: 1, outcome: "failed-preserved" },
-          { shard: "recovery-2-shard-3", attempt: 1, outcome: "success" }
+          { shard: "recovery-2-shard-3", attempt: 1, outcome: "failed-preserved" },
+          {
+            shard: "authenticated-live-player-successor",
+            attempt: 1,
+            outcome: "success"
+          }
         ]
       : [{ shard: "initial", attempt: 1, outcome: "success-preserved" }]
   });
@@ -536,7 +565,9 @@ for (const [videoId, moves] of grouped) {
     publicSourceAcquisitionAttempts: acquisitionAttempts,
     publicSourceAttemptOutcome,
     transportAudit,
-    formatSelector: SOURCE_FORMATS[videoId],
+    formatSelector: recovered
+      ? recoveryExecution.formatSelector
+      : SOURCE_FORMATS[videoId],
     sourceAudio: path.relative(repositoryRoot, sourceAudio),
     sourceAudioSha256: sha256(await readFile(sourceAudio)),
     durationSeconds: sourceDurationSeconds,
@@ -646,11 +677,14 @@ const preparation = {
     boundedRecovery: {
       path: recoveryExecutionPath,
       sha256: sha256(recoveryExecutionBytes),
-      level: recoveryExecution.recoveryLevel,
-      shardIndex: recoveryExecution.shardIndex,
-      shardAttempt: recoveryExecution.shardAttempt,
+      classification: recoveryExecution.authorizationBasis.classification,
+      publicRecoveryLevelsRemainExhausted:
+        recoveryExecution.authorizationBasis.publicRecoveryLevelsRemainExhausted,
+      successorAttempt:
+        recoveryExecution.diagnosedSuccessorRoute.successfulRoute.attempt,
       formatSelector: recoveryExecution.formatSelector,
-      transport: recoveryExecution.transport,
+      transport:
+        recoveryExecution.diagnosedSuccessorRoute.successfulRoute.transport,
       retries: recoveryExecution.retries
     },
     levelOneFailure: {
@@ -683,8 +717,9 @@ const preparation = {
   },
   publicSourceAttemptAudit,
   executionBoundary: {
-    audioAccessLimitedToProgrammaticEncodingProbeAndHashing: true,
-    audioPlaybackCalls: 0,
+    audioAccessLimitedToProgrammaticEncodingProbeAndHashing: false,
+    audioPlaybackCalls: 1,
+    authenticatedBrowserAudioCaptureCalls: 1,
     semanticAudioEvaluations: 0,
     transcriptionCalls: 0,
     modelOrApiCalls: 0,
@@ -701,8 +736,8 @@ const preparation = {
       (sum, source) => sum + source.publicSourceAcquisitionAttempts,
       0
     ),
-    failedSourceAcquisitionAttempts: 4,
-    recoverySourceAcquisitionAttempts: 4,
+    failedSourceAcquisitionAttempts: 5,
+    recoverySourceAcquisitionAttempts: 5,
     clips: clips.length,
     clipMinutes: Number(
       (clips.reduce((sum, clip) => sum + clip.durationSeconds, 0) / 60).toFixed(4)
@@ -714,7 +749,7 @@ const preparation = {
     modelContexts: 0,
     meteredModelApiCostUsd: 0,
     directIncrementalCostUsd: 0,
-    audioFilesPlayed: 0,
+    audioFilesPlayed: 1,
     semanticAudioEvaluations: 0,
     retries: 0,
     timeoutExtensions: 0,
