@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3183,
+  "ledgerBytes": 178794,
+  "ledgerSha256": "9bfa5472c8001dac475ff19cbfb3dd2d5d2dc2214cf3f9ca461d6c794324b8f4",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49377,
+      "contextSha256": "a0d7307dc0e851c971d0375d015e4c9c59db20e2c9eeaa878530800ce711578f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50776,
+      "contextSha256": "d80e90a2f6c128578ef3882b39f366cf103af4db151528f7c1fadf7d752175bd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51213,
+      "contextSha256": "0e14a973518cbbf557da20767b2ba139eb6b86860fa62b48fc47df844efdce52"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3182,
+      "coreEvents": 683,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3182,
+      "contextEvents": 723,
+      "contextBytes": 41085,
+      "contextSha256": "b3b61cefe6cc61cab1708096b016c11d40f17d8b59f8f6cae585a1f402120e70"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3182,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "34",
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

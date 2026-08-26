@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-source-preparation",
+  "debateNumber": "117",
+  "debateId": "bertuzzi-oconnor-contingency-argument-2018",
+  "motion": "Does the contingency argument show that contingent reality requires a necessary foundation identifiable as God, or can determinism, composition worries, and a necessary-universe option block the inference?",
+  "sides": {
+    "pro": {
+      "label": "Theistic contingency",
+      "speakers": [
+        "Cameron Bertuzzi"
+      ]
+    },
+    "con": {
+      "label": "Atheist burden critique",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 4046,
+  "eventCount": 1889,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/DGpkGRoLBQ8/transcript.txt",
+    "transcriptSha256": "0f3f9239ce10166641c1aa88b71f5ba86eedd3a83db3776681fe2d71de6ccf43",
+    "eventsPath": ".assessment-cache/captions/DGpkGRoLBQ8/events.json",
+    "eventsSha256": "900b0a3a00934a54703561974d5023595eedc337b33fc4d52deaf535e1b474f6",
+    "localManifestPath": ".assessment-cache/captions/DGpkGRoLBQ8/manifest.json",
+    "localManifestSha256": "821355c50c93f10d47100985dc33d7b3b03e945c4b991377abb774fb3829d421"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-13/debate-117.jsonl",
+    "sourceLedgerSha256": "19f496c2a4e113e08976d5138a72722a32d4fbab20df08e0459f4025e7c63ce0",
+    "sourceLedgerBytes": 111033,
+    "sourceLedgerEventCount": 1889,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/source-preparation/plans/debate-117.json",
+    "partitionPlanSha256": "a57dac9eea185c81595a47c5b6e2c7060440279312cff355cb52cb8a523858ba",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

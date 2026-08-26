@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-source-preparation",
+  "debateNumber": "34",
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "motion": "Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
+  "sides": {
+    "pro": {
+      "label": "Consciousness fundamental",
+      "speakers": [
+        "Philip Goff"
+      ]
+    },
+    "con": {
+      "label": "Physicalist emergence",
+      "speakers": [
+        "Sean Carroll"
+      ]
+    }
+  },
+  "durationSeconds": 7125,
+  "eventCount": 3183,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/rCPCyri1rXU/transcript.txt",
+    "transcriptSha256": "bbc9a6ad1f61f7ad057aa019ebf502db05b153ce053a362b00e612591a02415d",
+    "eventsPath": ".assessment-cache/captions/rCPCyri1rXU/events.json",
+    "eventsSha256": "f468cadf2b3b7cb5dd6decac42cb3b0ddf55a6747a0866713722f39b99a3de4f",
+    "localManifestPath": ".assessment-cache/captions/rCPCyri1rXU/manifest.json",
+    "localManifestSha256": "44b7957f0ac40c7dda0f3ef104c91ba0296c5f3870c9fac8e8b76dc5e5a554fc"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-13/debate-34.jsonl",
+    "sourceLedgerSha256": "9bfa5472c8001dac475ff19cbfb3dd2d5d2dc2214cf3f9ca461d6c794324b8f4",
+    "sourceLedgerBytes": 178794,
+    "sourceLedgerEventCount": 3183,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/source-preparation/plans/debate-34.json",
+    "partitionPlanSha256": "8afc1dbbbe122a674c74032dd25f56588f272ebaf725dd6d20e20c8cc4b9c7b2",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

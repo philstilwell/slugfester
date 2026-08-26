@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1889,
+  "ledgerBytes": 111033,
+  "ledgerSha256": "19f496c2a4e113e08976d5138a72722a32d4fbab20df08e0459f4025e7c63ce0",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52219,
+      "contextSha256": "7b6f36d455a2b1bbf0040a1a3f16c1947f0d1cbb5e89b58190328473e3cc1cae"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53533,
+      "contextSha256": "3ab62b4c4f83cd4df2a7db8aae179f0d39729d48b389b04735b070a6fb8aea2c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1888,
+      "coreEvents": 209,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1888,
+      "contextEvents": 249,
+      "contextBytes": 14774,
+      "contextSha256": "5422fffd87099ca4bcc054c14a360e6f9d8be925d1c104a81f9dcb07df5183db"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1888,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "117",
+  "debateId": "bertuzzi-oconnor-contingency-argument-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

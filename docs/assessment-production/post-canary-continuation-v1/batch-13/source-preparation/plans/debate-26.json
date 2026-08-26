@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3321,
+  "ledgerBytes": 194124,
+  "ledgerSha256": "92a95b09bf3d9bf8776a0b718c3b9f777e905147b43545d7612600f7974b1a63",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51529,
+      "contextSha256": "9ba62700462386aa163c55c5caf93cc7326a6de3a9efc776243aa0764d8aef44"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53349,
+      "contextSha256": "11b22cfdafd79a5e07170e158e71d7876094aac21c71f39d96d40693ab5b5619"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52978,
+      "contextSha256": "f94de29b658ac85b48e20e9a31a84d37582fa94e52be9142d9e20a3a1f55b50a"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3320,
+      "coreEvents": 821,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3320,
+      "contextEvents": 861,
+      "contextBytes": 50288,
+      "contextSha256": "b88c343599e325b5b133d0f0c6713f2ca78109c3102eb587def937663fa9f3ea"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3320,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "26",
+  "debateId": "turek-hitchens-reality-theism-atheism-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3494,
+  "ledgerBytes": 204803,
+  "ledgerSha256": "b4f80b6c39cf45aad6a1f69cca6cfc1cbdbe75e32286c93fb981976e092b7f42",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51735,
+      "contextSha256": "7de4a08c9c683ac45ef15c4376b961d75b440e8603791276839bc27cd8f22923"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52676,
+      "contextSha256": "de953d29581887f958b4a32e74e950b4827ed9cad5a11c62bf0ac7e39b4279e8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53282,
+      "contextSha256": "77a4bbf5749cdd40798069dc7407f84d9bf8f8a53bbbd5f69b88da48296428d6"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53502,
+      "contextSha256": "79f97a1dabb2297c9f3a39358e7aedef222dfb3934626481324770e3da4bfd95"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3493,
+      "coreEvents": 174,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3493,
+      "contextEvents": 214,
+      "contextBytes": 12496,
+      "contextSha256": "eb9f099ed9e7f8b7fc984953d4519dabcee3f9fdf043c801f446fb38f478e320"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3493,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "30",
+  "debateId": "lowder-turek-naturalism-theism-2016",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

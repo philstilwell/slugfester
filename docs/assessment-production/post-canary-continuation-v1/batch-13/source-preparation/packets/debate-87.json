@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-source-preparation",
+  "debateNumber": "87",
+  "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+  "motion": "Does the historical evidence make Jesus' resurrection more probable than competing hypotheses?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection historicity",
+      "speakers": [
+        "Than Christopoulos"
+      ]
+    },
+    "con": {
+      "label": "Skeptical naturalism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 9255,
+  "eventCount": 3805,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/OSQWIWY9gYg/transcript.txt",
+    "transcriptSha256": "3df21bd2a939628959ba159727213ed4d05b28dbcd67c6c9972631a15814dc88",
+    "eventsPath": ".assessment-cache/captions/OSQWIWY9gYg/events.json",
+    "eventsSha256": "6cc143b39100c2fc2055c1a8d2f53e6f6ecefc69768088f2e202e65d166e9955",
+    "localManifestPath": ".assessment-cache/captions/OSQWIWY9gYg/manifest.json",
+    "localManifestSha256": "fb3db5065f3eb1efba40e3d6f7c7a15bafb05c3853f69fe661302649fbca5edd"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-13/debate-87.jsonl",
+    "sourceLedgerSha256": "ae5172fff5a07c5e9386ab67af6ec79206794d5a8af041a5cb036d2ef10ae59a",
+    "sourceLedgerBytes": 219411,
+    "sourceLedgerEventCount": 3805,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/source-preparation/plans/debate-87.json",
+    "partitionPlanSha256": "b53899f7c3b844af1d78ab856c77b838073c26493ad8062c2828ffbe0307c562",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

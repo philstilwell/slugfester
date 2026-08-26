@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3704,
+  "ledgerBytes": 190681,
+  "ledgerSha256": "80e76cc215456783381c7d8ff5496cad74e151cad5cbba31d55b837a9a69314b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45145,
+      "contextSha256": "bd68d0488f058ad485680b09539bee1a76efac7c2ee2ac8a3b339ba284a33382"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 46239,
+      "contextSha256": "1ccf54b020b7e5dc3a6f971c5eee0ae8e29d0fb01d59e712adff520cf520a066"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 46796,
+      "contextSha256": "4906cf0b270f30eaba3ede0a5cb915d805fed7e2ca289d4f46a35f63b05f8226"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 46812,
+      "contextSha256": "001582d990afc78e24fbcb6b9ddc756349ba8db761948b0c31e8cfc254d137b6"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3703,
+      "coreEvents": 384,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3703,
+      "contextEvents": 424,
+      "contextBytes": 22472,
+      "contextSha256": "41805a5b01bc6be179e448e40dc85b7b3448fa0a4594227534b23e78162c9375"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3703,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "190",
+  "debateId": "huemer-oppy-souls-personal-identity-2022",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

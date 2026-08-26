@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-source-preparation",
+  "debateNumber": "30",
+  "debateId": "lowder-turek-naturalism-theism-2016",
+  "motion": "What better explains reality: naturalism, where the physical explains the mental, or theism, where God grounds creation, reason, information, morality, evil, and science?",
+  "sides": {
+    "pro": {
+      "label": "Naturalism explains reality",
+      "speakers": [
+        "Jeffery Jay Lowder"
+      ]
+    },
+    "con": {
+      "label": "Theism explains reality",
+      "speakers": [
+        "Frank Turek"
+      ]
+    }
+  },
+  "durationSeconds": 7970,
+  "eventCount": 3494,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/ENZYEPpR2Jc/transcript.txt",
+    "transcriptSha256": "57c77f162289e998552abd0fe1eb236e303c543d1e914883782808b7ae1795dd",
+    "eventsPath": ".assessment-cache/captions/ENZYEPpR2Jc/events.json",
+    "eventsSha256": "68879e9558c98b4def46c10f8318623273aeb6c30c30761852404f51b2d259f6",
+    "localManifestPath": ".assessment-cache/captions/ENZYEPpR2Jc/manifest.json",
+    "localManifestSha256": "2aa21a5d33529d9392cb0902910f6382dbece87dd56b0bd9aac20f23ff2d7feb"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-13/debate-30.jsonl",
+    "sourceLedgerSha256": "b4f80b6c39cf45aad6a1f69cca6cfc1cbdbe75e32286c93fb981976e092b7f42",
+    "sourceLedgerBytes": 204803,
+    "sourceLedgerEventCount": 3494,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/source-preparation/plans/debate-30.json",
+    "partitionPlanSha256": "f489fb6c1d6be322b62bdd09636fd637cadbea2d9f5613bd2f4316d64ce496c0",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

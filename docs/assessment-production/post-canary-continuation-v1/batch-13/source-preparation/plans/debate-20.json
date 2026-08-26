@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2726,
+  "ledgerBytes": 156840,
+  "ledgerSha256": "bb991fa42ff2c859f0e49475816d3c084dd602a1ca30088de2e1707d85192401",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51031,
+      "contextSha256": "aba8f5c6a271be439a9d8ed7695c69d7e826677f9a9e0e178b447fc32a90ecf8"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52030,
+      "contextSha256": "c73dbc5ab2ce5bd4b4152b27ee40cda1a2606484b9efa848e06879abbfb44722"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52340,
+      "contextSha256": "f4ca69f0613b7cb7bb06590914996f0e95e44ff157fa090e7de45bcf0c0f4e18"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2725,
+      "coreEvents": 226,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2725,
+      "contextEvents": 266,
+      "contextBytes": 15324,
+      "contextSha256": "762dfc9fe35a96c913d543c4435c857f51711b91ce91853b6effa5a0dbeec087"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2725,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "20",
+  "debateId": "hitchens-hitchens-iraq-god-2008",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
