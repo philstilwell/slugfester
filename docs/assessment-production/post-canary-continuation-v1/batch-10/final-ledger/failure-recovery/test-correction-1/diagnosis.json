@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-final-ledger-test-failure-diagnosis",
+  "status": "diagnosed-test-only-correction-count-expectation-mismatch",
+  "diagnosedAt": "2026-08-26T02:25:31.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "failure": {
+    "stage": "post-assembly-ledger-test",
+    "message": "Expected values to be strictly equal: 9 !== 10",
+    "cause": "The copied test expected ten adjudication outputs without correction, but Debate 74 was corrected and the valid Batch 10 count is nine.",
+    "ledgerValidationPassed": true,
+    "scorePassExecuted": false,
+    "scoresDerived": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "preservedArtifacts": {
+    "manifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/final-ledger/failure-recovery/test-correction-1/pre-test-correction-final-ledger-manifest.json",
+      "sha256": "492c1f78650a493eaf16a8bf2cb11f17081ed165902d2250c2246f18ebe73001"
+    },
+    "ledger": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/final-ledger/failure-recovery/test-correction-1/pre-test-correction-final-ledger.json",
+      "sha256": "64416cd93b17011292da0dbb1e59a0488e148b8dd101346e178fba9102d3f596"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/final-ledger/failure-recovery/test-correction-1/pre-test-correction-analysis.json",
+      "sha256": "d0c8efe647874970c901f994a4eec5f054618dbb404ff5f53bcba62bcd307a29"
+    }
+  },
+  "correction": {
+    "commit": "a9e27fae",
+    "correctedExpectation": "acceptedAdjudicationOutputsWithoutCorrection === 9",
+    "ledgerLogicChanged": false,
+    "refreezeRequiredBecauseTestIsHashLocked": true
+  },
+  "authorization": {
+    "deterministicTestCorrection": true,
+    "finalLedgerRefreeze": true,
+    "modelExecution": false,
+    "scoreDerivation": false,
+    "paidServices": false
+  },
+  "nextAuthorizedAction": "refreeze-reassemble-and-retest-batch-10-final-ledger"
+}
