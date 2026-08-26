@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-source-preparation",
+  "debateNumber": "131",
+  "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+  "motion": "Did Jesus exist as a historical person, or did early Christian belief begin with a celestial or mythic Christ later placed in history?",
+  "sides": {
+    "pro": {
+      "label": "Historicity defense",
+      "speakers": [
+        "Stephen Boyce"
+      ]
+    },
+    "con": {
+      "label": "Mythicist challenge",
+      "speakers": [
+        "Richard Carrier"
+      ]
+    }
+  },
+  "durationSeconds": 10464,
+  "eventCount": 5034,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/bC-Uj92Cpvg/transcript.txt",
+    "transcriptSha256": "639ae30e4c37496786398c44d6bd7ae4b888b323aeac6e89fa3f931665edb169",
+    "eventsPath": ".assessment-cache/captions/bC-Uj92Cpvg/events.json",
+    "eventsSha256": "77a15ae1d157c38a17a55b6592bf8e5c1a8cbc2c0715bc5f4af9bde3586691d5",
+    "localManifestPath": ".assessment-cache/captions/bC-Uj92Cpvg/manifest.json",
+    "localManifestSha256": "a75c3640b76c8f3503e397cf57da0e925b38632a0f739d785b457caac002322a"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-131.jsonl",
+    "sourceLedgerSha256": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+    "sourceLedgerBytes": 294323,
+    "sourceLedgerEventCount": 5034,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-131.json",
+    "partitionPlanSha256": "020eff14b6e2a4a673489c84823f5b244dc3331571aea2329c9a49cb1317a20a",
+    "partitionChunks": 7,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

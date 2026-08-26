@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-source-preparation",
+  "debateNumber": "33",
+  "debateId": "craig-carroll-god-cosmology-2014",
+  "motion": "Does contemporary cosmology make God's existence more probable, or do naturalistic cosmological models better explain the universe without theism?",
+  "sides": {
+    "pro": {
+      "label": "Theistic cosmology",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Naturalistic cosmology",
+      "speakers": [
+        "Sean Carroll"
+      ]
+    }
+  },
+  "durationSeconds": 8161,
+  "eventCount": 3323,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/X0qKZqPy9T8/transcript.txt",
+    "transcriptSha256": "6c42c1f5c963872256e3a4c1e208af2a8ff39c5669cd648d96d7e2e2468420ab",
+    "eventsPath": ".assessment-cache/captions/X0qKZqPy9T8/events.json",
+    "eventsSha256": "52edd5a7fa39cd7a016df91b5385df3ff9a303a1163ee2dddc8a893422474cde",
+    "localManifestPath": ".assessment-cache/captions/X0qKZqPy9T8/manifest.json",
+    "localManifestSha256": "262dbeb63b4affc161d1a2db8d73b49dca689ce52e75680ab57788b75c95fdc0"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-33.jsonl",
+    "sourceLedgerSha256": "9c99be3a34c5b930c7a03069ed902e14a15463b945b219d98bcc6e8a350ec4eb",
+    "sourceLedgerBytes": 194197,
+    "sourceLedgerEventCount": 3323,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-33.json",
+    "partitionPlanSha256": "734910ad650bf326aca10dfa00c1fca92bad76465acf2e1a32dae8958a848a73",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

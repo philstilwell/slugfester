@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2206,
+  "ledgerBytes": 124099,
+  "ledgerSha256": "5cc3bb4cfddc400d803cf14e252ac7a76e753aee40c48668198efa6eefd8123b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49464,
+      "contextSha256": "2abf66a9b60073a74d557be884a10719d898e68568f1e8085d6aad1e2a348203"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51479,
+      "contextSha256": "9eb46ef6f770901c0612d8df8334b497a0f992fa14d06241e538509367b7f626"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2205,
+      "coreEvents": 526,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2205,
+      "contextEvents": 566,
+      "contextBytes": 32220,
+      "contextSha256": "94a9a9eaefff993262e1252f1f7a4e60cb577f110abba46486765a27872a6e0f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2205,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "119",
+  "debateId": "jones-oconnor-hell-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

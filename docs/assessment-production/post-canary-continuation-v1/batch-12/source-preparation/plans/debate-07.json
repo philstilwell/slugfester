@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3879,
+  "ledgerBytes": 227545,
+  "ledgerSha256": "d5184b71a8d5c69373ce10acf3065b8dcbcce7b4b1ed37b41aa0230a3449d646",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51115,
+      "contextSha256": "1b89b4e1fac95dbb5e140742a09c2b040fffda08e4d1b20aadefadd48f31a7a9"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52658,
+      "contextSha256": "9d45898fb2163f030a47f44ee729eaa5e7199301eb077d0e18ab89f8b91922f1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53394,
+      "contextSha256": "bcd214967ba65dc30788e722e4e079e58948c90d0bb6a3fd53cf7e990c3e6d6e"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53716,
+      "contextSha256": "4a3eeea170715322411bc95ec32ca35ab523cbc154fb1b281eb93f4c4f6437a9"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3878,
+      "coreEvents": 559,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3878,
+      "contextEvents": 599,
+      "contextBytes": 35655,
+      "contextSha256": "3bf20313123585cafc1e3ec5382035ccbd7f700fbba24bee2e11de1ec826c16c"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3878,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "07",
+  "debateId": "wood-oconnor-jesus-claim-god-2025",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

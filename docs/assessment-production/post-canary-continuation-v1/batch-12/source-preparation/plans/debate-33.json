@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3323,
+  "ledgerBytes": 194197,
+  "ledgerSha256": "9c99be3a34c5b930c7a03069ed902e14a15463b945b219d98bcc6e8a350ec4eb",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51418,
+      "contextSha256": "21eebb340a17341e8e65ef9aef9cfddcd6cdd434d74e401da00a8e62de5d9740"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53273,
+      "contextSha256": "4a477559bbb80a3a05328c3a8f2298ee6753db57f46a66ea9dec0a9e0610fbcd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52969,
+      "contextSha256": "9f3e109eefb5edd671e6b8a883903cfd1e8d57a4192dd2628297e59f2a2ce071"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3322,
+      "coreEvents": 823,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3322,
+      "contextEvents": 863,
+      "contextBytes": 50684,
+      "contextSha256": "c2dd0a2a4a6a66dcdf1988d866019f2e5dfcfce0d546e6929dac62cd43b897ec"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3322,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "33",
+  "debateId": "craig-carroll-god-cosmology-2014",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

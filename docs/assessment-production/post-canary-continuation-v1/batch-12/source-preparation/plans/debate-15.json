@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2633,
+  "ledgerBytes": 152225,
+  "ledgerSha256": "7c1679421980de3decf1b58065f3963e318ff8c6d32149a31b42d635cae99dfb",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51057,
+      "contextSha256": "ad2e7aecaa600807c28d702ffbd6147ab398d48b11df6fbcece85fd769b1c03d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52651,
+      "contextSha256": "fabb4ee08f0cf6b5d806344df1f85be259e6327f1cde4228710dd90250513083"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52487,
+      "contextSha256": "ba4e9e4ccb14cbdf87a2fbd52bfa06fe338d18466d80306f7c8f896381d3eeec"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2632,
+      "coreEvents": 133,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2632,
+      "contextEvents": 173,
+      "contextBytes": 10116,
+      "contextSha256": "558149741ca6d02bc05d89c2e64c3a36d6c2933576c42736c93f88a46a9c8ed7"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2632,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "15",
+  "debateId": "hitchens-lennox-is-god-great-2017",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

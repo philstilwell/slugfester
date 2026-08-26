@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-source-preparation",
+  "debateNumber": "119",
+  "debateId": "jones-oconnor-hell-2023",
+  "motion": "Can the Christian doctrine of hell be morally justified as self-chosen exile, sanctifying grace, and possible annihilation rather than external torture?",
+  "sides": {
+    "pro": {
+      "label": "Christian hell defense",
+      "speakers": [
+        "Michael Jones"
+      ]
+    },
+    "con": {
+      "label": "Skeptical moral critique",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 4247,
+  "eventCount": 2206,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/kOzmwGmiDHQ/transcript.txt",
+    "transcriptSha256": "55f777de7ee9687846e33c0316ae1ec11f674fe0bd2032ec9c325c747b6b07f9",
+    "eventsPath": ".assessment-cache/captions/kOzmwGmiDHQ/events.json",
+    "eventsSha256": "aadc72b9bf3340960539bc8dc1466ded6dd0976a9249ba9b97457668e392ce11",
+    "localManifestPath": ".assessment-cache/captions/kOzmwGmiDHQ/manifest.json",
+    "localManifestSha256": "6a54eb6129fe20556dda454bc8b27fe81ca4a76b4b1459f96913c6927fec6187"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-119.jsonl",
+    "sourceLedgerSha256": "5cc3bb4cfddc400d803cf14e252ac7a76e753aee40c48668198efa6eefd8123b",
+    "sourceLedgerBytes": 124099,
+    "sourceLedgerEventCount": 2206,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-119.json",
+    "partitionPlanSha256": "bde9d1c53ab9623064b372317fff35ee6502e0596c8b55036b54ab3255829d36",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

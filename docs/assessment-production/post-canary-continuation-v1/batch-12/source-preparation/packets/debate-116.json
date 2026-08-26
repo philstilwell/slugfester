@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-source-preparation",
+  "debateNumber": "116",
+  "debateId": "bertuzzi-schieber-evil-evidence-2019",
+  "motion": "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
+  "sides": {
+    "pro": {
+      "label": "Theistic no-evidence defense",
+      "speakers": [
+        "Cameron Bertuzzi"
+      ]
+    },
+    "con": {
+      "label": "Draperian evil evidence",
+      "speakers": [
+        "Justin Schieber"
+      ]
+    }
+  },
+  "durationSeconds": 3902,
+  "eventCount": 1745,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/huOwbSrl-xw/transcript.txt",
+    "transcriptSha256": "34a10ce656e6f6f6516b9beb00039d5d0bf53872056a5514ca25145d3e5d8ace",
+    "eventsPath": ".assessment-cache/captions/huOwbSrl-xw/events.json",
+    "eventsSha256": "5e041b4b863da68323195a71884fe7968a10828183b47a8235febb24ffee4aa6",
+    "localManifestPath": ".assessment-cache/captions/huOwbSrl-xw/manifest.json",
+    "localManifestSha256": "0bcbcb4f738d5b723f805bd97fdbaa2296e32335f8c08fc7d0bd88be1324fc1d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-116.jsonl",
+    "sourceLedgerSha256": "c3a96a8ba5da489c57ca8f1e1f7ae454483afe64c652bed3ad7256dc367c9d18",
+    "sourceLedgerBytes": 101301,
+    "sourceLedgerEventCount": 1745,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-116.json",
+    "partitionPlanSha256": "c525a964fa74add27677044c59300d1e7dc08749f839d813c502c7ebb6ebad1b",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

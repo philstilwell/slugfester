@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3391,
+  "ledgerBytes": 199184,
+  "ledgerSha256": "4dd63afeeb16041ccc9837152d7ed712367a13dc01c9d4768a35282dc12302de",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51993,
+      "contextSha256": "d87817aa3e34a8ccc3e58051dcc1055c5407a848d75b0f9f97cc7b388b5f4019"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52663,
+      "contextSha256": "da5504fa58be9143c0f0d2dd93f23c5d271072da1a41da927e1f75e61932a21c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53522,
+      "contextSha256": "4dd0bd172836f3632354715d114953019738919fc1d042438f57e4eb4ee77a58"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53198,
+      "contextSha256": "aeeb1ed1d57d3a928828f83436eb9f4f3532e5e7e0f715344930d21954af2519"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3390,
+      "coreEvents": 71,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3390,
+      "contextEvents": 111,
+      "contextBytes": 6563,
+      "contextSha256": "bd015dbaa0860d6e62b8a17fc25e418978500b1457a05c2bc4c11cea8e37888e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3390,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "29",
+  "debateId": "turek-silverman-reality-theism-atheism-2013",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2527,
+  "ledgerBytes": 137628,
+  "ledgerSha256": "7f63949acecdd70e459ea9fc0551bec98e2a8bc7cf0c7bc548c5d629dd767ed8",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48507,
+      "contextSha256": "df5842227fa6ce042906c9b8e7d1371a840723280c5279d07983e44ee9848aae"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48952,
+      "contextSha256": "848a84059c34d24866d799cf41d7686ba50e780db3c48d101c382be8e834452b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2526,
+      "coreEvents": 847,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2526,
+      "contextEvents": 887,
+      "contextBytes": 49099,
+      "contextSha256": "3f690b1e4264c200df6d868afd8f0119b38fae418019e1f44ad2ff45c0943e27"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2526,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "11",
+  "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

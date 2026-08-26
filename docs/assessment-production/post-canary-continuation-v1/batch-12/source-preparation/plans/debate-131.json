@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 5034,
+  "ledgerBytes": 294323,
+  "ledgerSha256": "88ebdce99a0fdd22a481e3dcaaea4c4fef61e01f9f4a41144913fa9e6fe0b3aa",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52519,
+      "contextSha256": "01193fde7be6337c44af8fa29dc3934d4f80c906bae9063517430f67e53afcd7"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53486,
+      "contextSha256": "f3543f02e6a1b052abc9c1a2e9ceb31bd6b3b1dee6b42e646edf27c0e343879b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52251,
+      "contextSha256": "e30b349116f97b4a71b5efd469a8a2f82508855dd74b89d720fc4084c17ac323"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52452,
+      "contextSha256": "2d4a6c8194fe980696f64a9a85f4d79be006d01402f7b24e2b494b9f42138464"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 52716,
+      "contextSha256": "4f0cc25d723323f30b56975758645534f1470e28de849d1e04e36c90215558c1"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4959,
+      "coreEvents": 820,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4999,
+      "contextEvents": 900,
+      "contextBytes": 52746,
+      "contextSha256": "1e5093667dba359dd1063dd01ff1b984e6a11402faa05ea871dc01bc268bfeb7"
+    },
+    {
+      "chunkId": "chunk-007",
+      "coreStartEvent": 4960,
+      "coreEndEvent": 5033,
+      "coreEvents": 74,
+      "contextStartEvent": 4920,
+      "contextEndEvent": 5033,
+      "contextEvents": 114,
+      "contextBytes": 6449,
+      "contextSha256": "449730c360cafba4fd72b51e5ffba1f603eecfa8f18bfb9070ab77a7636ac562"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 5033,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "131",
+  "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

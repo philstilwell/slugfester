@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-source-preparation",
+  "debateNumber": "11",
+  "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+  "motion": "Can belief in a loving, powerful God survive the scale of suffering and evil in the world?",
+  "sides": {
+    "pro": {
+      "label": "Theistic answer",
+      "speakers": [
+        "Dinesh D'Souza"
+      ]
+    },
+    "con": {
+      "label": "Skeptical challenge",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 5725,
+  "eventCount": 2527,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/XtWjEjdYvLA/transcript.txt",
+    "transcriptSha256": "446d6e0f8c20c0ab51759a7f479ee0e06266ded13aadba702a5b4728ad6a05e2",
+    "eventsPath": ".assessment-cache/captions/XtWjEjdYvLA/events.json",
+    "eventsSha256": "771484f78a7789818d46fb6c74f791031c7b3dbad9ce378c6b6bb931820ba33e",
+    "localManifestPath": ".assessment-cache/captions/XtWjEjdYvLA/manifest.json",
+    "localManifestSha256": "17b27b1665fa51670614bd9b2536f50611ec6c7b4223aa1e91e8f64b12cf9edb"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-12/debate-11.jsonl",
+    "sourceLedgerSha256": "7f63949acecdd70e459ea9fc0551bec98e2a8bc7cf0c7bc548c5d629dd767ed8",
+    "sourceLedgerBytes": 137628,
+    "sourceLedgerEventCount": 2527,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/source-preparation/plans/debate-11.json",
+    "partitionPlanSha256": "482edb20c2064fd6ce72c35252902c4e49079fee6c9eddda23c86cf0ee9b7ffc",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}
