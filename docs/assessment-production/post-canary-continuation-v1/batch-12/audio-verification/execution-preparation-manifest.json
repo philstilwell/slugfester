@@ -1,0 +1,521 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-audio-verification-execution-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "prepared-four-post-canary-batch-12-paid-known-speaker-diarizations-standing-authorization-conditional-activation-ready",
+  "preparedAt": "2026-08-26T21:03:18.323Z",
+  "approvedAt": null,
+  "checkpointCommit": "02909a8f303f2365893d53cfd7058645fb57de46",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "Continue the SLUGFESTER reassessment campaign with Batch 12. I authorize deterministic selection and the complete reassessment and publication workflow for the next ten eligible, previously unpublished dyadic debates; 5.6 Sol/low work through the ChatGPT subscription and local work are capped at $0 direct incremental cost; conditional sequential gpt-4o-transcribe-diarize audio verification is capped at $1.00 total after a frozen estimate is reported and may then proceed without waiting; use one paid attempt per clip and no paid retries; verified $0 source recovery, diagnosed minimum fresh field-disjoint recovery shards with one attempt per shard and at most two recovery levels, exact deterministic dependent-artifact correction, production mutation, complete validation, commits, and pushes may proceed automatically across successful gates; fetch before every push, never force-push, verify local and remote commit equality, close temporary browser sessions and servers, and stop before Batch 13 selection.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json",
+    "standingAuthorizationSha256": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 4,
+    "speakerReferencesAuthorizedForPreparation": 6,
+    "conditionalAdvanceApprovalRecorded": true,
+    "audioVerificationExecutionAuthorizedOnlyAfterFrozenEstimateAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "152",
+      "07",
+      "15"
+    ],
+    "frozenTargetClips": 4,
+    "verificationCalls": 4,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 6,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "all-source-rows-have-positive-repository-lexical-token-count",
+      "reason": "All selected canonical source rows contain at least one repository lexical token.",
+      "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": []
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "moveId": "pro-evidence-experience-epistemology",
+      "expectedSpeaker": "Stuart Knechtle",
+      "proposition": "Evidence can establish the reliability of Christian theism, while personal experience supplies the certainty involved in committed belief.",
+      "verificationExcerpt": "what we're talking about right now in debating the existence of God I think the evidence or lack of evidence that I'm giving I hope you take one percent away that can get you to reliability but it's only experience that gets you to",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/clips/pro-evidence-experience-epistemology.mp3",
+      "clipSha256": "618253c663dbfb611d55ac99dccf08a461c9164c4640b8d47a635da3b15e9697",
+      "durationSeconds": 22.76,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/transcripts/pro-evidence-experience-epistemology.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Stuart Knechtle",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/stuart-knechtle.mp3",
+          "sha256": "d9d7573811a0d8c3ea614ffca31c20be4ddc5db1c81004830e24aecd8de790db",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Aron Ra",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/aron-ra.mp3",
+          "sha256": "c8d21745bf624b6b1d863749b93ebbf0e19ddadc9e24356030456f43540e0892",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "07",
+      "debateId": "wood-oconnor-jesus-claim-god-2025",
+      "moveId": "pro-doubled-kyrios-veiled-claim",
+      "expectedSpeaker": "David Wood",
+      "proposition": "Jesus's use of the Septuagint's doubled Kyrios formula points to Yahweh and, alongside the shared conclusions of followers and enemies, supports an intentionally veiled but genuine divine claim.",
+      "verificationExcerpt": "from Isaiah. As for curios curios um Alex says well well what would they be using? They would be using the Septuagent the Greek translation. Yeah. And they went to a passage they they they used the formulation curios curios which is specifically referring to Yahweh. That's what Jesus uses. He's quoting curios curios. He's calling himself curios curios. The only other use of that",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-doubled-kyrios-veiled-claim.mp3",
+      "clipSha256": "9699e9aa6d6a65ae2aa99270e8dd436efa710d891936be7c2c67265bdefc2150",
+      "durationSeconds": 115.801,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-doubled-kyrios-veiled-claim.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "David Wood",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/david-wood.mp3",
+          "sha256": "f7d8e3bee9e1ce74b2bafed8ba2ed55f56b8c957a1981c0260f4efcec4a90f0c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/alex-o-connor.mp3",
+          "sha256": "5f509e845269c6b72ff57f205ae4d107cde44f3379b77581e87b8981530a239d",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "07",
+      "debateId": "wood-oconnor-jesus-claim-god-2025",
+      "moveId": "pro-synoptic-disclosure-early-christology",
+      "expectedSpeaker": "David Wood",
+      "proposition": "Different authorial emphases explain the Synoptics' omission of Johannine-style sayings, while Mark's progressive disclosure and Paul's early material show that divine christology was neither uniquely Johannine nor necessarily late.",
+      "verificationExcerpt": "late. It's the latest source. You can't trust that. It's uh clearly made up later and so on.\" And so you say, \"Okay, let me just go with the earliest material. Go Q Mark and Paul.\" And then it's what what about John? That's uh very interesting. So I can't quote John, but they can quote John. These are these are uh these are awesome times. Um uh one I I think the I think the uh I think the synoptic gospel writers are focusing on different",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-synoptic-disclosure-early-christology.mp3",
+      "clipSha256": "e74b870ce3e47938096257dda8252a97dc869d89590576a205d02f08da74d2e6",
+      "durationSeconds": 193,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-synoptic-disclosure-early-christology.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "David Wood",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/david-wood.mp3",
+          "sha256": "f7d8e3bee9e1ce74b2bafed8ba2ed55f56b8c957a1981c0260f4efcec4a90f0c",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/alex-o-connor.mp3",
+          "sha256": "5f509e845269c6b72ff57f205ae4d107cde44f3379b77581e87b8981530a239d",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "15",
+      "debateId": "hitchens-lennox-is-god-great-2017",
+      "moveId": "con-natural-inquiry-falsifiability",
+      "expectedSpeaker": "Christopher Hitchens",
+      "proposition": "Naturalistic explanations answer to physical and biological evidence and possible falsification, whereas theistic faith specifies no evidence that would disconfirm it.",
+      "verificationExcerpt": "the debate uh we don't have a word adist though I think we should I would say I was an adist as well as an atheist I don't believe there was a prime mover I don't believe there was a first cause of a Divine kind I think we have better and further and brighter explanations for the origins of things than the idea of a supernatural first cause but some also would say we don't even",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/clips/con-natural-inquiry-falsifiability.mp3",
+      "clipSha256": "ea69fcad6967a0f84050c73d70fe998cc898eb41219da8e1effe49bacbf4095f",
+      "durationSeconds": 138.68,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/transcripts/con-natural-inquiry-falsifiability.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "John Lennox",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.mp3",
+          "sha256": "2b674f25c4e0065740d001bffd9bd49a9f5c0f5164d688031982ea9a53ea4471",
+          "actualDurationSeconds": 7.992
+        },
+        {
+          "speaker": "Christopher Hitchens",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/christopher-hitchens.mp3",
+          "sha256": "4889c19c8d5df0867588fe48760bbf4b682689a23fcc0941131dada817e1743e",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "152",
+        "speaker": "Stuart Knechtle",
+        "selectedMoveId": "pro-jesus-cross-identification",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1140,
+          "endEvent": 1221
+        },
+        "selectedMoveDurationSeconds": 188.6,
+        "startSeconds": 2696.46,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": false,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/audio/source.mp3",
+        "inputStartSeconds": 2696.46,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/stuart-knechtle.mp3",
+        "sha256": "d9d7573811a0d8c3ea614ffca31c20be4ddc5db1c81004830e24aecd8de790db"
+      },
+      {
+        "debateNumber": "152",
+        "speaker": "Aron Ra",
+        "selectedMoveId": "con-scripture-afterlife-03",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1027,
+          "endEvent": 1139
+        },
+        "selectedMoveDurationSeconds": 249.441,
+        "startSeconds": 2476.559,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": false,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/audio/source.mp3",
+        "inputStartSeconds": 2476.559,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/aron-ra.mp3",
+        "sha256": "c8d21745bf624b6b1d863749b93ebbf0e19ddadc9e24356030456f43540e0892"
+      },
+      {
+        "debateNumber": "07",
+        "speaker": "David Wood",
+        "selectedMoveId": "pro-two-powers-scriptural-framework",
+        "selectedMoveSourceSpan": {
+          "startEvent": 157,
+          "endEvent": 294
+        },
+        "selectedMoveDurationSeconds": 344.08,
+        "startSeconds": 585.64,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": false,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/audio/source.mp3",
+        "inputStartSeconds": 585.64,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/david-wood.mp3",
+        "sha256": "f7d8e3bee9e1ce74b2bafed8ba2ed55f56b8c957a1981c0260f4efcec4a90f0c"
+      },
+      {
+        "debateNumber": "07",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-divine-name-bearing-agency",
+        "selectedMoveSourceSpan": {
+          "startEvent": 787,
+          "endEvent": 899
+        },
+        "selectedMoveDurationSeconds": 273.76,
+        "startSeconds": 2018.08,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": false,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/audio/source.mp3",
+        "inputStartSeconds": 2018.08,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/alex-o-connor.mp3",
+        "sha256": "5f509e845269c6b72ff57f205ae4d107cde44f3379b77581e87b8981530a239d"
+      },
+      {
+        "debateNumber": "15",
+        "speaker": "John Lennox",
+        "selectedMoveId": "pro-mechanism-and-creator-are-complementary",
+        "selectedMoveSourceSpan": {
+          "startEvent": 640,
+          "endEvent": 729
+        },
+        "selectedMoveDurationSeconds": 248.441,
+        "startSeconds": 1727.139,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": true,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.capture.webm",
+        "inputStartSeconds": 0.999,
+        "actualDurationSeconds": 7.992,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.mp3",
+        "sha256": "2b674f25c4e0065740d001bffd9bd49a9f5c0f5164d688031982ea9a53ea4471"
+      },
+      {
+        "debateNumber": "15",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "con-natural-inquiry-falsifiability",
+        "selectedMoveSourceSpan": {
+          "startEvent": 451,
+          "endEvent": 508
+        },
+        "selectedMoveDurationSeconds": 133.68,
+        "startSeconds": 1173.48,
+        "requestedDurationSeconds": 8,
+        "supplementalCapturedSource": false,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "inputPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.mp3",
+        "inputStartSeconds": 1173.48,
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/christopher-hitchens.mp3",
+        "sha256": "4889c19c8d5df0867588fe48760bbf4b682689a23fcc0941131dada817e1743e"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 470.241,
+    "clipMinutes": 7.8374,
+    "durationOnlyPlanningEstimateUsd": 0.0470241,
+    "durationOnlyEstimateAuthorizedByUser": true,
+    "usageDerivedPlanningEstimateUsd": 0.171415,
+    "primaryExpectedFutureExecutionCostUsd": 0.171415,
+    "primaryEstimateBasis": "Batch 2 returned-token usage rates applied to Batch 12 exact clip seconds and four-call count",
+    "maximumConditionallyAuthorizedCostUsd": 1,
+    "projectedUsage": {
+      "audioInputTokens": 8762,
+      "textInputTokens": 456,
+      "outputTokens": 14837,
+      "totalInputTokens": 9218
+    },
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "usageDerivedEstimatedCostUsd": 0.2933175,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    },
+    "officialPricingCheckedAt": "2026-08-26",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "conditionalAdvanceApprovalRecorded": true,
+    "conditionalAdvanceApprovalMaximumUsd": 1,
+    "estimateWithinConditionalApproval": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 4,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json",
+    "sha256": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+    "status": "frozen-active-batch-12-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "paidTranscriptionActivation": true,
+    "paidTranscriptionExecution": false,
+    "deterministicAudioAnalysis": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/transcripts/pro-evidence-experience-epistemology.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-doubled-kyrios-veiled-claim.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-synoptic-disclosure-early-christology.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/transcripts/con-natural-inquiry-falsifiability.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/execution-manifest.json",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/transcripts/pro-evidence-experience-epistemology.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-doubled-kyrios-veiled-claim.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/transcripts/pro-synoptic-disclosure-early-christology.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/transcripts/con-natural-inquiry-falsifiability.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-preparation.json": "3651074f0344b051ab88706e6a89bb817ecf9a1310e8a7c897f862c0d180e1bf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-work-item-preparation.json": "c2d6bcc924e084d2162365b2bcbd13c96b95d73a0e0e1647c84b173c9b956336",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-work-items.json": "155fb4c4b406d6323223853ff5e0fae464eba0e9bf4389c9375b848e4e56a5f9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/execution-preparation-manifest.json": "d96eab6298d434a17cac6fd49df178e2037a35d6c98d3bebc9dc29b5acebade4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/reference-source-preparation.json": "4c7e51cde2fac5c330e47565fd97426c957798635c6f667db35d47694778a4cb",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.capture.webm": "888fbbc7820c16f11ce463068200462c6f10dd7a02d7c6c138c0466c53f49f7c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/assessment-production-post-canary-batch-12-standing-authorization.mjs": "07516216c018db56affd8f52970e47603cd0438d1d3dd3c385b035de83481f9b",
+    "scripts/prepare-assessment-production-post-canary-batch-12-audio-verification.mjs": "d8b0cb7dfd69935161b69eb923f1fee88e3ff5ef75fb60763147efe7b2e6088b",
+    "scripts/test-assessment-production-post-canary-batch-12-audio-verification-preparation.mjs": "912b8238865741bec94d18d1cd576d7225f78c0c08040fcc29722c0c3dd24bfd",
+    "scripts/assessment-production-post-canary-batch-12-audio-verification-stage.mjs": "06d0b3d50f22db4d295207c37b324fbf51a570a614e7eb8e95545dd08aeb4214",
+    "scripts/prepare-assessment-production-post-canary-batch-12-audio-sources.mjs": "5c5175cad9b011ff335c3b2194fb5e9028d9a15d806f5f4ae90257ba97c5ef74",
+    "scripts/test-assessment-production-post-canary-batch-12-audio-sources.mjs": "468027127f724c8dde1a55e7c2572e89d93f2e0abb6423349344d9861569b572",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/audio/source.mp3": "1268c7b41d513bdd25b9946b9a3d356bcbd6c9275981e7cbbe9087deb20d04ea",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/audio/source.mp3": "fb04874b652161414ccf66428471626934ff9dae70f3c25e732f59909335bbf2",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.mp3": "ab6e96996db58f2d1d3b480a71679525c362fda7acccd61b2614b5c27266c398",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/clips/pro-evidence-experience-epistemology.mp3": "618253c663dbfb611d55ac99dccf08a461c9164c4640b8d47a635da3b15e9697",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-doubled-kyrios-veiled-claim.mp3": "9699e9aa6d6a65ae2aa99270e8dd436efa710d891936be7c2c67265bdefc2150",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/clips/pro-synoptic-disclosure-early-christology.mp3": "e74b870ce3e47938096257dda8252a97dc869d89590576a205d02f08da74d2e6",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/clips/con-natural-inquiry-falsifiability.mp3": "ea69fcad6967a0f84050c73d70fe998cc898eb41219da8e1effe49bacbf4095f",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/stuart-knechtle.mp3": "d9d7573811a0d8c3ea614ffca31c20be4ddc5db1c81004830e24aecd8de790db",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-152/references/aron-ra.mp3": "c8d21745bf624b6b1d863749b93ebbf0e19ddadc9e24356030456f43540e0892",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/david-wood.mp3": "f7d8e3bee9e1ce74b2bafed8ba2ed55f56b8c957a1981c0260f4efcec4a90f0c",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-07/references/alex-o-connor.mp3": "5f509e845269c6b72ff57f205ae4d107cde44f3379b77581e87b8981530a239d",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.mp3": "2b674f25c4e0065740d001bffd9bd49a9f5c0f5164d688031982ea9a53ea4471",
+    "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/christopher-hitchens.mp3": "4889c19c8d5df0867588fe48760bbf4b682689a23fcc0941131dada817e1743e"
+  },
+  "nextAuthorizedAction": "activate-and-execute-four-batch-12-paid-audio-verification-calls-under-standing-authorization"
+}

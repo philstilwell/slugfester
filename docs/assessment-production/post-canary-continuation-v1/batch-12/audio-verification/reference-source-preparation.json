@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-audio-reference-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "passed-one-supplemental-same-debate-speaker-reference-source",
+  "preparedAt": "2026-08-26T21:01:31Z",
+  "checkpointCommit": "02909a8f303f2365893d53cfd7058645fb57de46",
+  "authorizationBasis": {
+    "userInstruction": "Continue at your discretion.",
+    "standingAuthorizationCoversSourcePreparationAndRequiredAudioVerification": true,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "need": {
+    "debateNumber": "15",
+    "speaker": "John Lennox",
+    "reason": "The bounded recovered source contains the disputed Hitchens window but not the selected same-debate Lennox voice-reference window.",
+    "paidTargetPopulationChanged": false
+  },
+  "selection": {
+    "moveId": "pro-mechanism-and-creator-are-complementary",
+    "moveStartMs": 1606919,
+    "moveEndMs": 1855360,
+    "moveDurationMs": 248441,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+    "referenceStartSeconds": 1727.14,
+    "referenceDurationSeconds": 8,
+    "captureStartSeconds": 1726.14,
+    "capturePlannedDurationSeconds": 10
+  },
+  "failedAttempt": {
+    "attempt": 1,
+    "status": "failed-stale-initial-player-seek-preserved",
+    "requestedStartSeconds": 1726.14,
+    "actualStartSeconds": 1228.205038,
+    "actualStopSeconds": 1238.118759,
+    "artifact": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.failed-capture-1.webm",
+    "bytes": 160805,
+    "sha256": "249ca237fc0c6990a4e102cfb4db467bac54a4f34f6e20dbfc93d75cf200d631",
+    "diagnosis": "The page emitted a seeked event for its restored playback position before the requested seek completed."
+  },
+  "successfulRecovery": {
+    "attempt": 1,
+    "retries": 0,
+    "fieldDisjointCorrection": "require-the-current-playback-position-to-match-the-requested-start-before-recording",
+    "actualStartSeconds": 1726.14,
+    "actualStopSeconds": 1736.061672,
+    "decodedDurationSeconds": 9.952,
+    "artifact": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/references/john-lennox.capture.webm",
+    "bytes": 160805,
+    "sha256": "888fbbc7820c16f11ce463068200462c6f10dd7a02d7c6c138c0466c53f49f7c",
+    "codec": "opus",
+    "sampleRateHz": 48000,
+    "channels": 2,
+    "meanVolumeDb": -21.9,
+    "peakVolumeDb": -1.4,
+    "semanticAudioEvaluation": false,
+    "status": "passed"
+  },
+  "browserCleanup": {
+    "temporaryTabClosed": true,
+    "inMemoryBlobReleased": true
+  },
+  "nextAuthorizedAction": "freeze-batch-12-audio-verification-preparation-and-paid-cost-estimate"
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-dependent-hash-correction",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "passed-exact-deterministic-field-level-correction",
+  "correctedAt": "2026-08-26T21:05:57Z",
+  "artifact": "docs/assessment-production/post-canary-continuation-v1/batch-12/audio-verification/execution-preparation-manifest.json",
+  "artifactSha256AfterCorrection": "73ee23944d1f7e1ca9050c2baecf4da587791bee1fd81009fc717d9c860c2e60",
+  "fields": [
+    {
+      "field": "sourceHashes.scripts/test-assessment-production-post-canary-batch-12-audio-verification-preparation.mjs",
+      "before": "3cc90a8f4c1768a9064e935708bf64da0814e5c58a98d5e0d57e55fa33ad9d89",
+      "after": "912b8238865741bec94d18d1cd576d7225f78c0c08040fcc29722c0c3dd24bfd"
+    },
+    {
+      "field": "sourceHashes.scripts/assessment-production-post-canary-batch-12-audio-verification-stage.mjs",
+      "before": "9ada4dbd3e2549a81b1fb6dd5f4285d7139f1b3b8ba2a4a2b333d9b4d33e6100",
+      "after": "06d0b3d50f22db4d295207c37b324fbf51a570a614e7eb8e95545dd08aeb4214"
+    }
+  ],
+  "reason": "The newly cloned Batch 12 validation and stage runners were finished after the immutable preparation manifest was assembled; only their frozen source hashes changed.",
+  "callPopulationChanged": false,
+  "clipPopulationChanged": false,
+  "costEstimateChanged": false,
+  "scoreFieldsChanged": 0,
+  "modelCalls": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "validationReplay": [
+    {
+      "command": "node scripts/test-assessment-production-post-canary-batch-12-audio-verification-preparation.mjs",
+      "status": "passed-preactivation"
+    },
+    {
+      "command": "node scripts/assessment-production-post-canary-batch-12-audio-verification-stage.mjs --mode test",
+      "status": "passed-preactivation"
+    }
+  ]
+}
