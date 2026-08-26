@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-audio-source-blocker-resumption-authorization",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "frozen-active-new-authority-successor-for-debate-15-audio-source",
+  "authorizedAt": "2026-08-26T20:33:22Z",
+  "checkpointCommit": "1550bfedcd2e325602d07e2c3549a144eb47ad7c",
+  "sourceBlocker": "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-blocker.json",
+  "userAuthorization": {
+    "instruction": "Continue at your discretion.",
+    "interpretation": "The user authorizes selection of the safest viable continuation among the two routes stated in the blocker report, including the authenticated browser-cookie source route.",
+    "directIncrementalCostUsdMaximum": 0,
+    "paidAudioAuthorizationUnchangedMaximumUsd": 1
+  },
+  "successorClassification": {
+    "type": "new-authority-after-substantive-blocker",
+    "notAnAdditionalPublicRecoveryLevel": true,
+    "publicRecoveryLevelsRemainExhausted": 2,
+    "publicRecoveryArtifactsImmutable": true
+  },
+  "scope": {
+    "debateNumber": "15",
+    "videoId": "5OXPlUCGScY",
+    "sourceUrl": "https://www.youtube.com/watch?v=5OXPlUCGScY",
+    "browser": "Chrome",
+    "cookieAccess": "yt-dlp-in-process-browser-cookie-read-only",
+    "cookieValuesMayBePrinted": false,
+    "cookieValuesMayBePersisted": false,
+    "cookieDatabaseMayBeMutated": false,
+    "browserUiMayBeControlled": false,
+    "browserTabsMayBeOpened": false,
+    "otherSitesMayBeAccessed": false,
+    "otherVideosMayBeAccessed": false
+  },
+  "stageOne": {
+    "operation": "authenticated-format-metadata-discovery",
+    "mediaDownload": false,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "cookiesLogged": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "conditionalStageTwo": {
+    "operation": "freeze-one-exact-authenticated-download-route-after-successful-metadata-discovery",
+    "authorized": true,
+    "downloadAttemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "cookiesLogged": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "downstreamBoundaries": {
+    "audioVerificationBeforeAdjudication": true,
+    "paidCostEstimateBeforeFirstPaidCall": true,
+    "onePaidAttemptPerClip": true,
+    "paidRetriesMaximum": 0,
+    "scoresBeforeAdjudication": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "commit-push-then-run-one-authenticated-debate-15-format-metadata-discovery"
+}
