@@ -77,6 +77,17 @@ assert.equal(
 assert.deepEqual(preparation.acquisitionPolicy.plannedRangesPerVideo, ["bytes=0-"]);
 assert.equal(preparation.acquisitionPolicy.nonOverlappingRangesPerVideo, 1);
 assert.equal(preparation.acquisitionPolicy.repeatedRanges, 0);
+assert.deepEqual(preparation.acquisitionPolicy.acquisitionFormatByVideo, {
+  "TAW6-_L4z9M": "18",
+  "X4YVgM2HPMk": "bestaudio/best"
+});
+assert.deepEqual(preparation.acquisitionPolicy.diagnosedFailedResolution, {
+  videoId: "TAW6-_L4z9M",
+  attempts: 1,
+  freshMediaUrlsResolved: 0,
+  mediaRequests: 0,
+  byteRangesRequested: 0
+});
 assert.deepEqual(preparation.acquisitionPolicy.redirectPolicy, {
   manual: true,
   httpsOnly: true,
@@ -100,6 +111,7 @@ assert(
       (item.attempt === 0
         ? item.transportAudit === null
         : item.transportAudit.freshUrlResolutionAttempts === 1 &&
+          item.transportAudit.freshMediaUrlsResolved === 1 &&
           item.transportAudit.plannedRange === "bytes=0-" &&
           item.transportAudit.rangeRepeated === false &&
           item.transportAudit.redirectCount >= 0 &&

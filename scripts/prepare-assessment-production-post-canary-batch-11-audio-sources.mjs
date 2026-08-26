@@ -30,6 +30,7 @@ const localRoot =
 const workPreparationPath = `${planRoot}/audio-work-item-preparation.json`;
 const workPath = `${planRoot}/audio-work-items.json`;
 const preparationPath = `${planRoot}/audio-source-preparation.json`;
+const resolutionRecoveryPath = `${planRoot}/audio-source-resolution-recovery-1.json`;
 const ffmpeg = "/opt/homebrew/bin/ffmpeg";
 const ffprobe = "/opt/homebrew/bin/ffprobe";
 const exists = (file) => access(file).then(() => true, () => false);
@@ -58,6 +59,10 @@ const EXPECTED_AUDIO = [
   "01:con-suffering-christian-specificity",
   "188:con-nonspatiotemporal-meditative-experience"
 ];
+const SOURCE_FORMATS = Object.freeze({
+  "TAW6-_L4z9M": "18",
+  "X4YVgM2HPMk": "bestaudio/best"
+});
 const TOOL_SOURCES = [
   "scripts/prepare-assessment-production-post-canary-batch-11-audio-sources.mjs",
   "scripts/test-assessment-production-post-canary-batch-11-audio-sources.mjs",
@@ -90,12 +95,14 @@ const USER_AUTHORIZATION = Object.freeze({
   nextBatchSelectionAuthorized: false
 });
 
-const [workPreparationBytes, workBytes] = await Promise.all([
+const [workPreparationBytes, workBytes, resolutionRecoveryBytes] = await Promise.all([
   readFile(workPreparationPath),
-  readFile(workPath)
+  readFile(workPath),
+  readFile(resolutionRecoveryPath)
 ]);
 const workPreparation = JSON.parse(workPreparationBytes);
 const work = JSON.parse(workBytes);
+const resolutionRecovery = JSON.parse(resolutionRecoveryBytes);
 
 assertV4(
   workPreparation.status ===
@@ -122,6 +129,21 @@ assertV4(
   ) === JSON.stringify([...EXPECTED_AUDIO].sort()),
   "Batch 11 exact two-clip population changed"
 );
+assertV4(
+  resolutionRecovery.status ===
+      "diagnosed-no-media-url-resolved-no-media-range-requested" &&
+    resolutionRecovery.videoId === "TAW6-_L4z9M" &&
+    resolutionRecovery.failedResolution.attempts === 1 &&
+    resolutionRecovery.failedResolution.freshMediaUrlsResolved === 0 &&
+    resolutionRecovery.failedResolution.mediaRequests === 0 &&
+    resolutionRecovery.failedResolution.byteRangesRequested === 0 &&
+    resolutionRecovery.verifiedEquivalentSourceDiscovery.availableMediaFormats.some(
+      (format) => format.formatId === "18" && format.protocol === "https"
+    ) &&
+    resolutionRecovery.boundedCorrection.formatSelector ===
+      SOURCE_FORMATS["TAW6-_L4z9M"],
+  "Batch 11 Debate 01 source-resolution diagnosis changed"
+);
 for (const [file, digest] of Object.entries(workPreparation.sourceHashes)) {
   assertV4(sha256(await readFile(file)) === digest, `source hash mismatch: ${file}`);
 }
@@ -131,6 +153,7 @@ assertV4(await exists(ffprobe), "ffprobe is unavailable");
 const inputHashes = {
   [workPreparationPath]: sha256(workPreparationBytes),
   [workPath]: sha256(workBytes),
+  [resolutionRecoveryPath]: sha256(resolutionRecoveryBytes),
   [POST_CANARY_BATCH_11_STANDING_AUTHORIZATION]: standingAuthorization.sha256
 };
 for (const file of TOOL_SOURCES) inputHashes[file] = sha256(await readFile(file));
@@ -172,7 +195,7 @@ const probeAudio = (file) => {
     measuredBitRateBps: Number(stream.bit_rate ?? probed.format?.bit_rate)
   };
 };
-const resolveFreshMediaUrl = (videoId) => {
+const resolveFreshMediaUrl = (videoId, formatSelector) => {
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
   const output = execFileSync(
     "python3",
@@ -193,7 +216,7 @@ const resolveFreshMediaUrl = (videoId) => {
       "--extractor-args",
       "youtube:player_client=android,web",
       "-f",
-      "140/bestaudio[ext=m4a]",
+      formatSelector,
       "--get-url",
       videoUrl
     ],
@@ -338,6 +361,7 @@ const plannedSources = [...grouped].map(([videoId, moves]) => {
     ),
     sourceAudio:
       `${localRoot}/debate-${debateNumber}/audio/source.mp3`,
+    formatSelector: SOURCE_FORMATS[videoId],
     existingNormalizedSource: false
   };
 });
@@ -371,7 +395,16 @@ if (!shouldWrite) {
           fragmentRetries: 0,
           extractorRetries: 0,
           fileAccessRetries: 0,
-          acquisitionFormat: "140/bestaudio[ext=m4a]",
+          acquisitionFormatByVideo: SOURCE_FORMATS,
+          diagnosedFailedResolution: {
+            videoId: resolutionRecovery.videoId,
+            attempts: resolutionRecovery.failedResolution.attempts,
+            freshMediaUrlsResolved:
+              resolutionRecovery.failedResolution.freshMediaUrlsResolved,
+            mediaRequests: resolutionRecovery.failedResolution.mediaRequests,
+            byteRangesRequested:
+              resolutionRecovery.failedResolution.byteRangesRequested
+          },
           normalizeMonoHz: 16000,
           normalizeBitrateKbps: 48,
           clipBitrateKbps: 64,
@@ -421,9 +454,13 @@ for (const [videoId, moves] of grouped) {
     );
     acquisitionAttempts = 1;
     try {
-      const resolvedUrl = resolveFreshMediaUrl(videoId);
+      const formatSelector = SOURCE_FORMATS[videoId];
+      assertV4(formatSelector, `${videoId}: no frozen source format selector`);
+      const resolvedUrl = resolveFreshMediaUrl(videoId, formatSelector);
       transportAudit = {
         freshUrlResolutionAttempts: 1,
+        freshMediaUrlsResolved: 1,
+        formatSelector,
         resolvedUrl: redactedUrlRecord(resolvedUrl),
         ...(await acquireSingleRange(videoId, resolvedUrl, downloadedPath))
       };
@@ -484,6 +521,7 @@ for (const [videoId, moves] of grouped) {
     publicSourceAcquisitionAttempts: acquisitionAttempts,
     publicSourceAttemptOutcome,
     transportAudit,
+    formatSelector: SOURCE_FORMATS[videoId],
     sourceAudio: path.relative(repositoryRoot, sourceAudio),
     sourceAudioSha256: sha256(await readFile(sourceAudio)),
     durationSeconds: sourceDurationSeconds,
@@ -588,7 +626,16 @@ const preparation = {
       extractorRetries: 0,
       fileAccessRetries: 0
     },
-    acquisitionFormat: "140/bestaudio[ext=m4a]",
+    acquisitionFormatByVideo: SOURCE_FORMATS,
+    diagnosedFailedResolution: {
+      videoId: resolutionRecovery.videoId,
+      attempts: resolutionRecovery.failedResolution.attempts,
+      freshMediaUrlsResolved:
+        resolutionRecovery.failedResolution.freshMediaUrlsResolved,
+      mediaRequests: resolutionRecovery.failedResolution.mediaRequests,
+      byteRangesRequested:
+        resolutionRecovery.failedResolution.byteRangesRequested
+    },
     normalizedChannels: 1,
     normalizedSampleRateHz: 16000,
     normalizedBitrateKbps: 48,

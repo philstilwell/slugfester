@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-audio-source-resolution-recovery",
+  "status": "diagnosed-no-media-url-resolved-no-media-range-requested",
+  "batchNumber": 11,
+  "debateNumber": "01",
+  "videoId": "TAW6-_L4z9M",
+  "failedResolution": {
+    "attempts": 1,
+    "formatSelector": "140/bestaudio[ext=m4a]",
+    "outcome": "requested-format-not-available",
+    "freshMediaUrlsResolved": 0,
+    "mediaRequests": 0,
+    "byteRangesRequested": 0,
+    "bytesDownloaded": 0,
+    "automaticRetries": 0
+  },
+  "verifiedEquivalentSourceDiscovery": {
+    "attempts": 1,
+    "automaticRetries": 0,
+    "availableMediaFormats": [
+      {
+        "formatId": "18",
+        "container": "mp4",
+        "protocol": "https",
+        "audioCodec": "mp4a.40.2",
+        "videoCodec": "avc1.42001E"
+      }
+    ]
+  },
+  "diagnosis": "The source currently exposes only muxed HTTPS format 18; the frozen audio-only selector could not resolve a URL.",
+  "boundedCorrection": {
+    "formatSelector": "18",
+    "freshMediaUrlsToResolve": 1,
+    "plannedByteRanges": [
+      "bytes=0-"
+    ],
+    "repeatedByteRanges": 0,
+    "automaticRetries": 0
+  },
+  "authorizationBoundary": {
+    "directIncrementalCostUsd": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "paidServiceCalls": 0
+  }
+}
