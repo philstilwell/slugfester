@@ -21,7 +21,7 @@ assertV4(
   manifest.status ===
       "frozen-post-canary-batch-10-single-deterministic-score-pass-authorized" &&
     !manifest.productionCanary &&
-    manifest.batchNumber === 9 &&
+    manifest.batchNumber === 10 &&
     manifest.stagingOnly &&
     !manifest.developmentValidationOnly &&
     manifest.activePolicyControl.version === "v2.2" &&

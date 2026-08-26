@@ -65,7 +65,7 @@ const validation = validatePostCanaryBatch10Scores(
 assertV4(
   scores.schemaVersion === POST_CANARY_BATCH_10_CALCULATED_SCORES_VERSION &&
     !scores.productionCanary &&
-    scores.batchNumber === 9 &&
+    scores.batchNumber === 10 &&
     scores.stagingOnly &&
     !scores.developmentValidationOnly &&
     scores.formulaBoundary.scoringPasses === 1 &&

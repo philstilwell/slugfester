@@ -118,7 +118,7 @@ export function derivePostCanaryBatch10Scores(
   assertV4(
     ledger?.status ===
         "passed-post-canary-batch-10-deterministic-final-ledger-assembly" &&
-      ledger.batchNumber === 9 &&
+      ledger.batchNumber === 10 &&
       ledger.audit.finalRawJudgments === 10 &&
       ledger.audit.calculatedScores === 0 &&
       ledger.authorization.scoreDerivation === false,

@@ -21,7 +21,7 @@ assertV4(
   manifest.status ===
       "frozen-ten-debate-post-canary-batch-10-deterministic-final-ledger-assembly" &&
     !manifest.productionCanary &&
-    manifest.batchNumber === 9 &&
+    manifest.batchNumber === 10 &&
     manifest.stagingOnly &&
     !manifest.developmentValidationOnly &&
     manifest.authorization.finalLedgerAssembly &&
