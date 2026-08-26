@@ -1,0 +1,2235 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-production-compatibility",
+  "status": "frozen-post-canary-batch-12-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "planningOnly": true,
+  "debateNumber": "33",
+  "debateId": "craig-carroll-god-cosmology-2014",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-33.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-12/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-12/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-12/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/X0qKZqPy9T8/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "1124834d66b6a503a835b68d925ee62cd0cedfeb6ebc99ad58b9fdc06219ea70",
+    "calculatedScoresSha256": "749a60811c016eceecf9bfacdb761eb6a97ca12b14149320acedb23e7dbbc630",
+    "finalizationAuditSha256": "651c89d749b11121138823998223d4afab0c75528bb8ed5772b8b1f4537dc63d",
+    "renderingAuditSha256": "2e374cee4f7b3cf8837d2f8b066c57ba35ba023ab5e30d7495b3756dd3011725",
+    "finalCandidateSha256": "aa527a309a1bdae199a6a5d245cd951cb314a5043635de4709d573c1d4233457",
+    "eventsPath": ".assessment-cache/captions/X0qKZqPy9T8/events.json",
+    "eventsSha256": "52edd5a7fa39cd7a016df91b5385df3ff9a303a1163ee2dddc8a893422474cde",
+    "finalJudgmentSha256": "4c0f12c98c2925970c92ad4e42ba922ea22c6102010c3bac177cea29ae6cc41a"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/craig-carroll-god-cosmology-2014.json",
+    "productionLedger": "docs/assessment-ledgers/craig-carroll-god-cosmology-2014.json"
+  },
+  "productionLedgerBaseline": {
+    "exists": false,
+    "sha256": null
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-12-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-12-production-compatibility",
+    "status": "frozen-post-canary-batch-12-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 12,
+    "debateNumber": "33",
+    "debateId": "craig-carroll-god-cosmology-2014",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-12-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "1124834d66b6a503a835b68d925ee62cd0cedfeb6ebc99ad58b9fdc06219ea70",
+      "calculatedScoresSha256": "749a60811c016eceecf9bfacdb761eb6a97ca12b14149320acedb23e7dbbc630",
+      "finalizationAuditSha256": "651c89d749b11121138823998223d4afab0c75528bb8ed5772b8b1f4537dc63d",
+      "renderingAuditSha256": "2e374cee4f7b3cf8837d2f8b066c57ba35ba023ab5e30d7495b3756dd3011725",
+      "finalCandidateSha256": "aa527a309a1bdae199a6a5d245cd951cb314a5043635de4709d573c1d4233457",
+      "eventsPath": ".assessment-cache/captions/X0qKZqPy9T8/events.json",
+      "eventsSha256": "52edd5a7fa39cd7a016df91b5385df3ff9a303a1163ee2dddc8a893422474cde",
+      "finalJudgmentSha256": "4c0f12c98c2925970c92ad4e42ba922ea22c6102010c3bac177cea29ae6cc41a"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "33",
+      "debateId": "craig-carroll-god-cosmology-2014",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-theistic-cosmology",
+          "side": "pro",
+          "description": "Establish that contemporary cosmology supports neutral premises concerning a finite cosmic past and fine-tuned initial conditions, then connect those premises through causal and design reasoning to a transcendent personal creator.",
+          "successCriteria": "The route succeeds if cosmological evidence makes a beginning and purposive fine-tuning sufficiently credible, naturalistic alternatives do not remove their explanatory force, and the resulting causal and design inferences make God's existence more probable.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-cosmology-confirms-theism",
+            "tier": "motion",
+            "description": "Show that the relevant cosmological evidence raises the probability of a transcendent creator and designer."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-cosmic-beginning",
+              "tier": "central",
+              "description": "Establish that expansion, thermodynamics, and the limits of proposed eternal models favor an ultimate cosmic beginning."
+            },
+            {
+              "bridgeId": "pro-central-transcendent-cause",
+              "tier": "central",
+              "description": "Establish that a universe beginning to exist requires a cause beyond physical spacetime and that personal agency can account for a finite effect."
+            },
+            {
+              "bridgeId": "pro-central-fine-tuning-design",
+              "tier": "central",
+              "description": "Establish that life-permitting constants and low initial entropy are improbable without design and are more expected under theism."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-eternal-model-objections",
+              "tier": "subsidiary",
+              "description": "Identify theoretical, thermodynamic, and observer-typicality difficulties confronting beginningless or multiverse alternatives."
+            },
+            {
+              "bridgeId": "pro-subsidiary-methodological-scope",
+              "tier": "subsidiary",
+              "description": "Maintain the distinction between cosmology supplying neutral premises and philosophical arguments drawing the theistic conclusion."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-naturalistic-cosmology",
+          "side": "con",
+          "description": "Establish that self-contained naturalistic cosmological models can account for a finite or eternal universe, while theistic explanations lack constrained observational expectations and add no required explanatory element.",
+          "successCriteria": "The route succeeds if neither a cosmic boundary nor fine-tuning requires a transcendent agent, viable naturalistic models remain available, and comparative explanatory standards favor constrained, self-contained accounts over an underdetermined theistic explanation.",
+          "motionBridge": {
+            "bridgeId": "con-motion-naturalistic-explanation",
+            "tier": "motion",
+            "description": "Show that naturalistic cosmological models explain the universe without making God's existence more probable."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-models-and-beginnings",
+              "tier": "central",
+              "description": "Establish that singularity results do not prove an absolute beginning and that coherent finite or eternal models need no external cause."
+            },
+            {
+              "bridgeId": "con-central-causation-limits",
+              "tier": "central",
+              "description": "Establish that causal concepts grounded within spacetime need not apply to the universe as a whole or to a first temporal boundary."
+            },
+            {
+              "bridgeId": "con-central-fine-tuning-alternatives",
+              "tier": "central",
+              "description": "Establish that fine-tuning probabilities are measure-dependent and that naturalistic principles or multiverse models can address observed conditions."
+            },
+            {
+              "bridgeId": "con-central-predictive-comparison",
+              "tier": "central",
+              "description": "Require competing explanations to generate constrained expectations and show how self-contained naturalism can meet that requirement."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-entropy-observers",
+              "tier": "subsidiary",
+              "description": "Treat low entropy and observer typicality as model-dependent research problems rather than direct evidence of divine design."
+            },
+            {
+              "bridgeId": "con-subsidiary-parsimony",
+              "tier": "subsidiary",
+              "description": "Apply parsimony and explanatory self-containment when an invisible creator adds no distinct observational consequences."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-cosmic-beginning",
+          "title": "Cosmic Beginning and Eternal Models",
+          "weightPercent": 24,
+          "rationale": "Whether contemporary expansion results, singularity theorems, thermodynamics, and quantum cosmologies favor an ultimate beginning is a principal empirical premise in the cosmological argument."
+        },
+        {
+          "sectionId": "section-causation-first-moment",
+          "title": "Causation, Time, and a First Moment",
+          "weightPercent": 22,
+          "rationale": "The inference from a temporal boundary to a transcendent personal cause depends on whether causation applies to the universe and how temporal becoming and first moments are understood."
+        },
+        {
+          "sectionId": "section-fine-tuning-probability",
+          "title": "Fine-Tuning and Cosmological Probability",
+          "weightPercent": 20,
+          "rationale": "The design inference requires defensible probability measures, genuinely restricted life-permitting conditions, and a justified comparison of those observations under theism and naturalism."
+        },
+        {
+          "sectionId": "section-entropy-multiverse",
+          "title": "Low Entropy, Multiverses, and Observer Typicality",
+          "weightPercent": 18,
+          "rationale": "Low initial entropy and the prevalence of ordinary observers test whether multiverse or equilibrium models provide an adequate naturalistic alternative to purposive design."
+        },
+        {
+          "sectionId": "section-explanatory-standards",
+          "title": "Explanatory Scope and Predictive Standards",
+          "weightPercent": 16,
+          "rationale": "The motion-level comparison depends on whether theism functions as an evidential conclusion from neutral premises and whether either worldview supplies constrained, parsimonious observational expectations."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-cosmology-neutral-premises",
+          "sectionId": "section-explanatory-standards",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Contemporary cosmology provides evidence for religiously neutral premises in philosophical arguments whose conclusions have theological significance.",
+          "sourceSpan": {
+            "startEvent": 185,
+            "endEvent": 220,
+            "excerpt": "the existence of God there is no God of the gaps reasoning here rather I'm saying that contemporary cosmology provides significant evidence in support of premises in philosophical Arguments for conclusions having theological significance for example the key premise in the ancient cam cosmological argument that the Universe began to exist is a religiously neutral statement which"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage occurs within Craig's uninterrupted opening statement and explicitly announces the thesis and argumentative structure he will defend.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-methodological-scope"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move defines a methodological role for cosmology: evidence supports neutral premises while philosophical inferences supply the theological conclusion."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between religiously neutral premises and theological conclusions is express, stable, and readily recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The methodological distinction is well stated, but significant evidential support remains a thesis whose force depends on later arguments."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The methodological distinction is internally consistent, with only the later evidential and inferential bridges left to be supplied."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The excerpt gives a clear argumentative framework but only an announced example rather than developed representative support."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary methodological tier, it directly defines how cosmology is claimed to bear on theological conclusions."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move principally states Craig's own methodological position and does not materially characterize a live opposing interpretation."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly rejects God-of-the-gaps reasoning and says cosmology supports premises in philosophical arguments with theological conclusions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-expansion-finite-past",
+          "sectionId": "section-cosmic-beginning",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Expansion evidence and the limits of classical and quantum cosmological regimes make it more likely than not that the universe began to exist.",
+          "sourceSpan": {
+            "startEvent": 221,
+            "endEvent": 376,
+            "excerpt": "have contended all along that the evidence makes it more likely than not that the Universe began to exist consider first evidence from the expansion of the universe the standard Big Bang cosmogonic model implies that the universe is not infinite in the past but had an absolute beginning a finite time ago although advances in astrophysical cosmology have forced various revisions"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig presents the Kalam argument and then develops its empirical beginning premise continuously through discussion of expansion and quantum gravity.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-cosmic-beginning"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move advances the finite-past premise through expansion evidence and claimed limits of classical and quantum cosmological descriptions."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The probabilistic conclusion is explicit, and the universe-beginning claim is presented as more likely than not rather than certain."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The cited formulation expressly acknowledges uncertainty and limits the conclusion to comparative likelihood rather than proof."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A past boundary of an inflationary or classical regime need not be an absolute beginning of all physical reality.",
+            "decisiveQualification": "The argument must extend beyond the domain and assumptions of particular expansion or singularity results."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "It invokes relevant expansion and quantum-cosmology considerations with explicit expert uncertainty, leaving one important theorem-scope gap."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central beginning tier, this is direct support for the indispensable claim that the universe probably has a finite past."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The move considers classical and quantum regimes and stays probabilistic, but the excerpt compresses the strongest domain-limit objection."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt quotes a qualified assessment that a beginning is more likely and explicitly introduces expansion evidence as support.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-thermodynamic-beginning",
+          "sectionId": "section-cosmic-beginning",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "The second law of thermodynamics supports a temporal beginning, while eternal fluctuation cosmologies face unitarity, generalized-second-law, and Boltzmann-brain problems.",
+          "sourceSpan": {
+            "startEvent": 377,
+            "endEvent": 474,
+            "excerpt": "of beginning in time would wall reports that his results require only certain basic concepts so that it is reasonable to believe that the results will hold in a complete complete theory of quantum gravity thus we have good evidence both from the expansion of the universe and from the second law of Thermodynamics that the universe is not past Eternal but had a temporal beginning"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted passage is Craig's second evidential case for the Kalam premise and includes his explicit criticisms of Carroll's cosmological proposal.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-cosmic-beginning"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move offers thermodynamic evidence for a temporal beginning and supplements it with objections to eternal fluctuation models."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The central thermodynamic proposition and named objections are recoverable, but their dependence on particular model assumptions is only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move claims good evidence from thermodynamics, but the excerpt does not expressly delimit model-dependent exceptions or boundary assumptions."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An eternal non-equilibrium model may have entropy growth without a global equilibrium past or a temporal beginning.",
+            "decisiveQualification": "Thermodynamic reasoning requires model-specific assumptions about available states, measures, and global evolution."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central beginning tier, the second-law argument directly supports an ultimate temporal beginning."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "Craig identifies concrete technical vulnerabilities rather than dismissing eternal models wholesale, though the strongest model-dependent qualifications receive limited development."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly combines expansion and the second law as good evidence against a past-eternal universe and for a temporal beginning.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-fine-tuning-design",
+          "sectionId": "section-fine-tuning-probability",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Cosmic fine-tuning is better explained by design because physical necessity lacks support and chance-based multiverse accounts make ordinary embodied observers comparatively improbable.",
+          "sourceSpan": {
+            "startEvent": 475,
+            "endEvent": 569,
+            "excerpt": "Observer exists indeed the opposite appears to be true most observable worlds will be boltzman brain worlds since since we are presumably not boltzman brains that fact strongly disconfirms a naturalistic world Ensemble or Multiverse hypothesis it seems then that the fine-tuning is not plausibly due to physical necessity or chance therefore we ought to prefer the hypothesis of design"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly turns to his teleological argument and develops its necessity, chance, multiverse, and observer-selection components without a speaker change.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-fine-tuning-design"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move compares necessity, chance, multiverse observer typicality, and design to support the central design inference."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative conclusion is clear, but the relevant multiverse class and probability measure are not fully scoped in the proposition."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The observer argument supports criticism of some ensembles, but the broad preference for design outruns the excerpt’s measure-dependent comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Some multiverse models suppress Boltzmann brains and produce testable observer ratios under non-arbitrary measures.",
+            "decisiveQualification": "The design inference must compare viable model-specific measures rather than treat every world ensemble as observer-dominated."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Eliminating necessity and chance can support design, but the probability framework and exhaustiveness of the alternatives contain material implicit bridges."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The move supplies a concrete observer-typicality consideration, while measure choice and representative multiverse comparisons remain underdeveloped."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central fine-tuning tier, it directly argues that design better explains the relevant cosmological conditions."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "The move recognizes observer selection as the key issue but generalizes the Boltzmann-brain objection beyond the demonstrated model class."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt says Boltzmann-brain worlds dominate the proposed ensemble and concludes that necessity and chance are implausible relative to design.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-causation-models-not-transcendent-causes",
+          "sectionId": "section-causation-first-moment",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Modern physics does not require a transcendent cause, because a complete mathematical cosmological model can describe a universe with a beginning without positing anything external.",
+          "sourceSpan": {
+            "startEvent": 649,
+            "endEvent": 708,
+            "excerpt": "you should be asking is what is the best model of the universe that science can come up with by a model I mean a formal mathematical system that purports to match on to what we observe so if you want to know whether something is possible in cosmology or physics you ask can I build a model can I build a model where the universe had a beginning but did not have a cause the answer"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll explicitly challenges Craig's causal premise and supports that challenge with modern physical methodology and a self-contained no-boundary model.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-transcendent-cause"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-expansion-finite-past",
+              "pro-cosmology-neutral-premises"
+            ],
+            "components": [
+              {
+                "componentId": "con-causation-models-not-transcendent-causes-component-01",
+                "targetMoveId": "pro-expansion-finite-past",
+                "text": "A finite beginning does not by itself require a transcendent cause, because a complete model can include a boundary without an external entity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-causation-models-not-transcendent-causes-component-02",
+                "targetMoveId": "pro-cosmology-neutral-premises",
+                "text": "The proposed methodological route adds metaphysical causal baggage after the neutral cosmological description.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll expressly identifies the inference from a cosmological beginning to an external cause as the mistake and gives the defeating consequence: physical possibility is assessed through complete mathematical models."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The model-based criterion and rejection of a required external cause are explicit and consistently scoped to physical cosmology."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The claim that this is the correct fundamental methodology is stronger than the excerpt’s demonstration, though the possibility claim is supported."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A complete physical description may still leave a metaphysical explanation of why that model obtains.",
+            "decisiveQualification": "Physical self-containment does not by itself prove metaphysical explanatory completeness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central transcendent-cause tier, it directly attacks the claim that a cosmic beginning requires an external cause."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "Carroll targets the need for the added cause rather than alleging that Craig presents God as an ordinary physical mechanism, with only a minor rhetorical overstatement."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, the move explicitly contacts the causal inference and replaces asserted external causation with a stated model-based possibility criterion."
+            }
+          },
+          "evidenceBasis": "The excerpt rejects adding transcendent causes and defines a cosmological model as a mathematical system matched to observation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-beginning-models-and-theorem-limits",
+          "sectionId": "section-cosmic-beginning",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Whether the universe is eternal must be decided through viable cosmological models, and neither abstract beginning principles nor the Borde-Guth-Vilenkin result establishes a universally finite past.",
+          "sourceSpan": {
+            "startEvent": 709,
+            "endEvent": 767,
+            "excerpt": "model is the right idea we hope that someday we get there but we don't claim that we are there yet so whether or not the universe can be Eternal does not come down to a conversation about abstract principles it comes down to a conversation about building models and seeing which one provides the best account for what we see the universe to be doing so I'd like to talk about the bour Guth Val Lenin theorem"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll develops a continuous response about eternal models, the limited scope of the cited singularity theorem, and a contrasting quantum-eternity result.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-cosmic-beginning"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-expansion-finite-past",
+              "pro-thermodynamic-beginning"
+            ],
+            "components": [
+              {
+                "componentId": "con-beginning-models-and-theorem-limits-component-01",
+                "targetMoveId": "pro-expansion-finite-past",
+                "text": "The Borde-Guth-Vilenkin result has limited assumptions and does not establish that every viable cosmology has an absolute beginning.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-beginning-models-and-theorem-limits-component-02",
+                "targetMoveId": "pro-thermodynamic-beginning",
+                "text": "Whether an eternal universe is viable must be resolved by constructing and comparing complete models rather than by abstract principles alone.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll directly diagnoses overextension from theorem-level results to a universal finite past and states that viable-model comparison, including quantum alternatives, is the appropriate test."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between theorem scope, abstract principles, and viable cosmological models is explicit and stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The reply does not claim a settled eternal model; it limits itself to denying that the cited result universally establishes finitude."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Convergent evidence from several incomplete regimes may still make a beginning more probable without proving it.",
+            "decisiveQualification": "Failure of a universal theorem does not eliminate a cumulative probabilistic argument for a beginning."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central beginning tier, it directly attacks the use of singularity results to establish an absolute finite past."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The reply accurately challenges universal entailment, though it gives less attention to the opponent’s explicitly probabilistic cumulative claim."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts both the theorem inference and the governing evidential method, while supplying a contrasting model result."
+            }
+          },
+          "evidenceBasis": "The excerpt says eternity is decided by building models and explicitly turns to the limited Borde-Guth-Vilenkin theorem.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-low-entropy-open-naturalistic-problem",
+          "sectionId": "section-entropy-multiverse",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "The early universe's unexplained low entropy is an open cosmological problem rather than evidence for God, and a naturalistic boundary principle or non-equilibrium eternal model may explain it.",
+          "sourceSpan": {
+            "startEvent": 768,
+            "endEvent": 794,
+            "excerpt": "an argument that we can't figure it out there's more than one possibility maybe there is a principle like Steven Hawking would say that puts the early Universe in a low entropy state or maybe there is no high entropy state in my model of an eternal Universe the reason why our universe is always changing is because the universe always can change there is no equilibrium for it to"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll explicitly turns to Craig's thermodynamic argument and offers multiple naturalistic possibilities while describing the issue as unresolved cosmology.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-entropy-observers"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-thermodynamic-beginning",
+              "pro-fine-tuning-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-low-entropy-open-naturalistic-problem-component-01",
+                "targetMoveId": "pro-thermodynamic-beginning",
+                "text": "Low initial entropy is an unresolved boundary-condition problem, not by itself proof that naturalistic cosmology cannot explain the universe.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-low-entropy-open-naturalistic-problem-component-02",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "Possible naturalistic principles or non-equilibrium models prevent the unexplained low-entropy condition from directly establishing design.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the evidential use of low entropy and supplies two naturalistic possibilities, but it does not establish that either possibility actually explains the observed condition."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The issue is expressly characterized as unresolved, and the proposed naturalistic mechanisms are clearly presented as possibilities."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The reply carefully claims only that multiple naturalistic possibilities remain and acknowledges that low entropy is unexplained."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The argument can be comparative rather than a claim that naturalistic explanation is impossible.",
+            "decisiveQualification": "An open naturalistic problem may still provide differential evidence if theism predicts low entropy better."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The move directly addresses entropy and observer research as a subsidiary burden and sits at the top of that tier."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "Carroll's God-of-the-gaps label understates Craig's comparative claim, although the response then addresses the legitimate evidential issue with concrete alternatives."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "Within partial answers, it contacts the decisive inference from unexplained entropy to design while leaving the positive adequacy of its proposed alternatives unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt acknowledges ignorance about early low entropy, denies that ignorance proves failure, and names boundary-principle and eternal-model possibilities.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-eternal-model-technical-coherence",
+          "sectionId": "section-cosmic-beginning",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Carroll's eternal model remains coherent because its evolution is unitary, a cited baby-universe statement concerns black holes rather than cosmology, and its thermodynamic minimum is not a temporal beginning.",
+          "sourceSpan": {
+            "startEvent": 795,
+            "endEvent": 837,
+            "excerpt": "in my model unitarity is the whole point there's a quantum mechanical wave function that describes the evolution of the Universe from One Piece into multiple pieces and that evolution is p is perfectly unitary he quotes Steven Hawking backsliding in his statement about baby universes but that was in the context of black holes that had nothing to do with cosmology that quote was"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage is an explicit sequence of Carroll's direct corrections to Craig's claims about unitarity, contextual relevance, and thermodynamic beginnings.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-cosmic-beginning"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-thermodynamic-beginning"
+            ],
+            "components": [
+              {
+                "componentId": "con-eternal-model-technical-coherence-component-01",
+                "targetMoveId": "pro-thermodynamic-beginning",
+                "text": "The unitarity objection fails because the model's quantum wave function evolves unitarily even as one region develops into multiple regions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-eternal-model-technical-coherence-component-02",
+                "targetMoveId": "pro-thermodynamic-beginning",
+                "text": "The cited baby-universe statement concerned black holes rather than cosmology, so it does not support the asserted cosmological objection.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-eternal-model-technical-coherence-component-03",
+                "targetMoveId": "pro-thermodynamic-beginning",
+                "text": "A thermodynamic minimum in the model is not a first temporal moment and therefore does not establish a beginning.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll explicitly identifies three alleged technical errors and gives the consequence for each: the cited objections do not show that his eternal model is incoherent or temporally finite."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Each correction has a distinct target and scope, with the black-hole context and entropy-minimum distinction explicitly stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The categorical corrections concern the defined properties and context of Carroll’s own model rather than speculative cosmological conclusions."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Even unitary evolution with an entropy minimum may face other thermodynamic or observer-typicality objections.",
+            "decisiveQualification": "Correcting these three claims does not establish that the model is empirically adequate or free of all objections."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The corrections are explicit, mutually consistent, and directly remove the stated technical objections without an evident inferential gap."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The reply gives model-specific facts and contextual correction, though the excerpt cannot independently document the full formal construction."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central beginning tier, preserving a coherent eternal model directly attacks the claim that all viable models require a beginning."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, the response expressly contacts every identified technical objection with a specific correction and its inferential consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt states that the model’s wave-function evolution is unitary and that the quoted baby-universe statement concerned black holes, not cosmology.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-parameter-sensitivity-not-life-impossibility",
+          "sectionId": "section-fine-tuning-probability",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Sensitivity of familiar local conditions to changes in physical parameters does not establish that every form of life or information processing would be impossible under different conditions.",
+          "sourceSpan": {
+            "startEvent": 867,
+            "endEvent": 906,
+            "excerpt": "is certainly true that if you change the parameters of nature our local conditions that we observe around us would change by a lot I grant that quickly I do not grant that therefore life could not exist I will start granting that once someone tells me the conditions under which life can exist what is the definition of life for example if it's just information processing thinking"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted passage remains within Carroll's opening presentation and uses explicit first-person framing for his first objection.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-fine-tuning-design"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-parameter-sensitivity-not-life-impossibility-component-01",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "Large changes to familiar local conditions do not establish that all life or information processing is impossible under altered parameters.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll identifies the unsupported bridge from parameter sensitivity to universal life impossibility and states that a defensible definition and conditions for life are required before granting it."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The concession about local changes and denial about all possible life are sharply distinguished, with information processing offered as an example."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The reply does not assert that other life exists; it withholds the stronger conclusion pending a defensible account of life’s conditions."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Fine-tuning arguments may concern complex embodied observers under known stable physics rather than every conceivable information processor.",
+            "decisiveQualification": "A broader definition of life is relevant only if the alternative structures are physically coherent and observer-capable."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central fine-tuning tier, it attacks an indispensable premise connecting parameter sensitivity to narrow life-permitting ranges."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it explicitly contacts the decisive biological possibility inference, although it does not offer a positive theory of life across parameter space."
+            }
+          },
+          "evidenceBasis": "The excerpt grants large changes in local conditions but expressly denies that this establishes life’s impossibility without defining life’s requirements.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-rigorous-measures-can-remove-tuning",
+          "sectionId": "section-fine-tuning-probability",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Alleged fine-tuning can disappear under rigorous physical analysis, as the supposedly improbable early expansion rate is generic rather than exceptional under the relevant general-relativistic measure.",
+          "sourceSpan": {
+            "startEvent": 927,
+            "endEvent": 952,
+            "excerpt": "naive estimate back of the envelope pencil and paper you would do but in this case you can do better you can go into the equations of general relativity and there is a correct rigorous derivation of the probability and when you ask the same question using the correct equations you find that the probability is one all but a set of measure zero of early Universe cosmologies have the right expansion rate"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll explicitly announces his third point and develops one technical example without any speaker change or attribution ambiguity.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-fine-tuning-design"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-rigorous-measures-can-remove-tuning-component-01",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "A claimed improbable expansion rate is not fine-tuned under the relevant general-relativistic measure, where the long-lived rate is generic.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll diagnoses a naive probability estimate and supplies the defeating consequence of a formal measure calculation: all but a measure-zero set has the relevant expansion behavior."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument is explicitly scoped to the early expansion-rate example and contrasts a naive estimate with a specified general-relativistic measure result."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The measure-zero conclusion is forceful and specific, but the excerpt does not defend why this measure is uniquely appropriate for the evidential question."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Different physically motivated measures or conditionalizations can yield different typicality judgments in cosmology.",
+            "decisiveQualification": "A rigorous calculation removes tuning only if the selected measure is justified for the relevant possibility space."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The counterexample coherently undermines one naive tuning estimate, while generalization from one measure and example remains limited."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central fine-tuning bridge, but its scope to one example places it below the broadest central attacks."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "Carroll targets a specific example and does not infer that every alleged instance of fine-tuning is thereby eliminated."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it directly challenges one concrete fine-tuning example with an asserted rigorous derivation, while not resolving every other parameter claim."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts a naive estimate with a claimed general-relativistic probability derivation under which the desired expansion rate has probability one.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-multiverse-predictions-and-observer-tests",
+          "sectionId": "section-entropy-multiverse",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "A multiverse can follow from a simple physical theory, generate probabilistic predictions, and avoid domination by Boltzmann brains in viable models whose observer ratios are empirically discriminating.",
+          "sourceSpan": {
+            "startEvent": 953,
+            "endEvent": 1008,
+            "excerpt": "says that there's a definite history of the Multiverse and you can make predictions different Multiverse models will have different ratios of ordinary observers to random observers that's a good thing that helps us distinguish between viable models of the Multiverse and nonviable models and there are plenty of viable models where the boltzman brain or random fluctuations do not"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is Carroll's explicitly numbered fourth objection, followed continuously by his explanation of multiverse prediction and random-observer frequencies.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-fine-tuning-alternatives"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-multiverse-predictions-and-observer-tests-component-01",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "Multiverse models need not be dominated by Boltzmann brains because different theories yield testable ratios and viable ordinary-observer-dominant cases.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-multiverse-predictions-and-observer-tests-component-02",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "A multiverse may follow from a simple physical theory rather than being an independently complicated explanatory addition.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll identifies the universal observer-typicality objection as model-dependent and states the defeating consequence that observer ratios distinguish viable from nonviable multiverse theories."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim is expressly limited to viable models and probabilistic observer ratios rather than asserted for every multiverse."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The reply claims that viable countermodels exist and treats observer ratios as discriminating tests rather than guaranteeing one final theory."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A specific proposed eternal multiverse may still produce Boltzmann brains even if other multiverse models avoid them.",
+            "decisiveQualification": "Existence of viable alternatives does not by itself vindicate the particular model under criticism."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The response gives a concrete empirical discriminator and asserts viable countermodels, but does not document their dynamics or measures in detail."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central fine-tuning-alternatives tier, it directly defends multiverse explanation against observer-typicality criticism."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it expressly contacts complexity, prediction, and Boltzmann-brain components, while leaving the detailed measures of viable models unstated."
+            }
+          },
+          "evidenceBasis": "The excerpt says different multiverse models predict different ordinary-to-random observer ratios and that viable non-dominated models exist.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-theism-lacks-distinctive-expectations",
+          "sectionId": "section-explanatory-standards",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Theism lacks predictive force when flexible post hoc explanations can accommodate observations that repeatedly resemble naturalistic expectations rather than distinctive expectations generated by divine design.",
+          "sourceSpan": {
+            "startEvent": 1025,
+            "endEvent": 1163,
+            "excerpt": "we like to tell about ourselves in fact I would argue that the failure of theism to explain the fine-tuning of the universe is paradigmatic it helps understand the other ways in which theism fails to be a better Theory than naturalism what you should be doing over and over again is comparing the predictions or expectations under theism to under naturalism you find that over and"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll labels this his fifth and most important point and sustains the same comparative-prediction argument through the end of his speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-predictive-comparison"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-design",
+              "pro-cosmology-neutral-premises"
+            ],
+            "components": [
+              {
+                "componentId": "con-theism-lacks-distinctive-expectations-component-01",
+                "targetMoveId": "pro-fine-tuning-design",
+                "text": "Design lacks comparative force unless theism generates constrained expectations that differ from observations already accommodated by naturalistic mechanisms.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-theism-lacks-distinctive-expectations-component-02",
+                "targetMoveId": "pro-cosmology-neutral-premises",
+                "text": "Moving from neutral premises to a theological conclusion still requires comparative likelihoods rather than mere compatibility with divine choice.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll diagnoses unconstrained post hoc accommodation as the defect in the design inference and gives the consequence that observed fine-tuning cannot favor theism without distinctive expectations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The demand for distinctive expectations and the cited over-tuning observations are clear, stable, and explicitly comparative."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Flexible divine intentions do weaken prediction, but the claim that observations repeatedly favor naturalism requires more explicit naturalistic likelihoods."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Theism may predict broad purposive order and discoverability without predicting exact parameter values.",
+            "decisiveQualification": "Broad expectations can carry evidence if they are more probable under theism, even when they are not precise numerical predictions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "Requiring differential expectations is a coherent challenge to comparative explanation, though broad qualitative likelihoods are not fully excluded."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central predictive-comparison tier, it directly articulates and applies the indispensable standard of distinctive expectations."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The response considers design-motivated expectations but fairly insists on comparative constraint; it leaves somewhat compressed the possibility of principled broad theistic predictions."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts the comparative inference and develops multiple observational examples showing why mere theistic compatibility is insufficient."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts theism and naturalism using excess low entropy and other parameter observations that allegedly lack a distinctive theistic prediction.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-low-entropy-discoverable-order",
+          "sectionId": "section-entropy-multiverse",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Low initial entropy is genuine fine-tuning that multiverse models do not adequately explain, whereas theism can connect it to an orderly and scientifically discoverable creation.",
+          "sourceSpan": {
+            "startEvent": 1348,
+            "endEvent": 1442,
+            "excerpt": "Multiverse hypothesis is incomprehensibly improbable the evidence is strongly disconfirmatory of the world Ensemble hypothesis now Dr Carol says that theism does no better though in this Regard in accounting for the low entropy condition of the universe for why he asks did God make the entropy of the universe so unnecessarily low in order to create us well I have two responses to this first it is no part of the fine-tuning"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly turns to his second argument, develops the fine-tuning and Boltzmann-brain replies, and closes with a summary affirming theism.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-entropy-observers"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-theism-lacks-distinctive-expectations",
+              "con-low-entropy-open-naturalistic-problem",
+              "con-multiverse-predictions-and-observer-tests"
+            ],
+            "components": [
+              {
+                "componentId": "pro-low-entropy-discoverable-order-component-01",
+                "targetMoveId": "con-theism-lacks-distinctive-expectations",
+                "text": "Theism can connect low entropy with an orderly and scientifically discoverable creation even if the exact entropy value was not necessary for life.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-low-entropy-discoverable-order-component-02",
+                "targetMoveId": "con-low-entropy-open-naturalistic-problem",
+                "text": "Calling low entropy an open problem does not remove its status as a genuine fine-tuned boundary condition requiring comparison.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-low-entropy-discoverable-order-component-03",
+                "targetMoveId": "con-multiverse-predictions-and-observer-tests",
+                "text": "Multiverse accounts remain vulnerable when their observer measure makes the observed ordinary low-entropy world extraordinarily improbable.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig contacts Carroll's low-entropy and predictive demands with a theistic order rationale and multiverse typicality critique, but does not derive a constrained probability for the exact observed entropy."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Low entropy and discoverability are clear, but the scope of the claimed connection between them and divine purpose is underdefined."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The multiverse disconfirmation claim is strong while measure disputes remain, and discoverable order is offered without a developed likelihood comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A viable multiverse can have model-specific measures that suppress Boltzmann brains and treat low entropy as a boundary-law problem.",
+            "decisiveQualification": "The objection must be established for the viable model class rather than inferred from some equilibrium ensembles."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Discoverable order can supplement a theistic explanation, but the bridge from exceptionally low entropy to that purpose is materially implicit."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary entropy-observer tier, it directly contests naturalistic treatment of low entropy and observer typicality."
+            },
+            "representationalCharity": {
+              "value": 76,
+              "rationale": "Craig squarely acknowledges Carroll's excess-order objection but offers a broad discoverability rationale without fully meeting the demand for constrained comparative expectations."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it contacts the decisive comparative component and two related objections, while leaving the quantitative theistic likelihood and model-specific measures unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt calls multiverse observer evidence strongly disconfirmatory and begins two responses to why a creator would choose unnecessarily low entropy.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-causal-language-does-not-scale-to-cosmos",
+          "sectionId": "section-causation-first-moment",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Causal language grounded in laws, temporal order, and the thermodynamic arrow within the universe does not justify demanding an external cause for the universe or total reality as a whole.",
+          "sourceSpan": {
+            "startEvent": 1445,
+            "endEvent": 1515,
+            "excerpt": "us to speak the language of causes and effects are completely absent when we talk about the universe as a whole we don't think that our universe is part of a bigger Ensemble that o that obeys laws even if it's part of the Multiverse the Multiverse is not part of a bigger Ensemble that obeys laws therefore nothing gives us the right to demand some kind of external cause the idea"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carroll begins his next speech by restating his major points and then develops a continuous philosophical analysis of when causal explanation is warranted.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-causation-limits"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-expansion-finite-past",
+              "pro-cosmology-neutral-premises"
+            ],
+            "components": [
+              {
+                "componentId": "con-causal-language-does-not-scale-to-cosmos-component-01",
+                "targetMoveId": "pro-expansion-finite-past",
+                "text": "A temporal boundary does not license extrapolating ordinary causal language beyond the laws and temporal relations within the universe.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-causal-language-does-not-scale-to-cosmos-component-02",
+                "targetMoveId": "pro-cosmology-neutral-premises",
+                "text": "The philosophical causal inference requires an additional scale-independent warrant not supplied by neutral cosmological premises.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll diagnoses the missing scale bridge from intracosmic causal practice to total reality and states that, absent encompassing laws or temporal structure, no external-cause demand follows."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contrast between subsystems governed by larger laws and total reality lacking a larger ensemble is explicit and stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The denial of a right to demand an external cause is well supported as a burden critique, though absence of familiar causal conditions does not prove inapplicability."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A metaphysical causal principle may apply independently of temporal laws or an embedding physical ensemble.",
+            "decisiveQualification": "Defeating physical extrapolation does not by itself defeat a non-empirical principle that being cannot arise uncaused."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central causation-limits tier, it directly supports the claim that ordinary causal concepts need not apply to total reality."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "Carroll recognizes the philosophical character of the demand and attacks its warrant, though his emphasis on physical causal conditions does not exhaust every metaphysical account."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts the decisive causal warrant and identifies the conditions whose absence blocks extrapolation to the cosmos as a whole."
+            }
+          },
+          "evidenceBasis": "The excerpt says the laws and larger-system conditions licensing causes are absent for the universe or multiverse as a whole.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-theism-not-scientific-competitor",
+          "sectionId": "section-explanatory-standards",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "God is not proposed as a scientific theory competing with cosmological models; those models instead support neutral premises from which philosophical arguments infer a creator and designer.",
+          "sourceSpan": {
+            "startEvent": 1758,
+            "endEvent": 1781,
+            "excerpt": "is a Creator and designer of the universe Dr Carol's complaints about theism not making predictions would be only important if I were offering some sort of theistic theory of the world but I'm not doing so I am simply appealing to the cosmological evidence in support of these theologically neutral premises that go to deductively imply the existence of a Creator and designer now"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Craig's closing statement, and Craig expressly distinguishes his philosophical arguments from a competing scientific theory of the world.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-predictive-comparison"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-theism-lacks-distinctive-expectations",
+              "con-causation-models-not-transcendent-causes"
+            ],
+            "components": [
+              {
+                "componentId": "pro-theism-not-scientific-competitor-component-01",
+                "targetMoveId": "con-theism-lacks-distinctive-expectations",
+                "text": "The relevant demand is whether cosmology supports neutral premises in deductive philosophical arguments, not whether God functions as a rival physical model.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-theism-not-scientific-competitor-component-02",
+                "targetMoveId": "con-causation-models-not-transcendent-causes",
+                "text": "A complete scientific model does not by itself answer the separate philosophical inference from a beginning to a creator.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "Craig justifies a replacement demand by distinguishing scientific model competition from philosophical premise support, preserving the evidential issue while denying that identical predictive standards automatically apply."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between a scientific theory and a philosophical inference from scientific premises is express and consistently maintained."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The methodological distinction is well supported, but saying predictive complaints matter only for a theistic world-theory understates their relevance to comparative probability."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Even a philosophical inference must compare how expected the evidence is under theism and naturalism.",
+            "decisiveQualification": "Not being a scientific theory does not exempt theism from evidential likelihood or explanatory-content questions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The excerpt clearly establishes Craig’s intended argument form, but does not itself demonstrate that its cosmological premises warrant the conclusions."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central predictive-comparison tier, it directly challenges the standard Carroll applies to the proposed theistic inference."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within justified reframes, the move clearly explains the methodological distinction, but only partially preserves Carroll's legitimate comparative-probability challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt says Craig is not offering a theistic scientific theory but using cosmological evidence for neutral premises in deductive philosophical arguments.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-causal-principle",
+          "sectionId": "section-causation-first-moment",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Whatever begins to exist requires a cause because being cannot arise from nonbeing, uncaused emergence would not discriminate among possible objects, and experience supports causation.",
+          "sourceSpan": {
+            "startEvent": 1782,
+            "endEvent": 1833,
+            "excerpt": "came into existence there is a Transcendent cause that brought the universe into being and honestly I'm quite astonished that he would think the universe can literally pop into being out of nothing let me just give three Arguments for why there must be a cause first of all it seems to me a metaphysical first principle that being doesn't come from nonbeing that things don't just"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly announces three arguments for the causal premise and develops each before charging that exempting the universe would undermine cosmogonic inquiry.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-causation-limits"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-causal-language-does-not-scale-to-cosmos",
+              "con-causation-models-not-transcendent-causes"
+            ],
+            "components": [
+              {
+                "componentId": "pro-causal-principle-component-01",
+                "targetMoveId": "con-causal-language-does-not-scale-to-cosmos",
+                "text": "The causal principle is defended as metaphysical rather than merely extrapolated from temporal regularities within the universe.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-causal-principle-component-02",
+                "targetMoveId": "con-causation-models-not-transcendent-causes",
+                "text": "A self-contained mathematical description does not explain how concrete being could arise without any cause.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig contacts the applicability challenge with three stated reasons for a causal principle, but the reasons do not fully establish that the principle applies unchanged to spacetime's first boundary."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The causal proposition is clear, but phrases such as arising from nothing can shift between absence of material antecedents and absence of any cause, while cosmic scope is implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The arguments give intuitive support, but they do not establish with necessity that every possible beginning has an external cause."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A first physical state may be described by a complete law without literally emerging from a prior state of nothingness.",
+            "decisiveQualification": "A boundary without an earlier state is not equivalent to an event of something popping into being from nothing."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central causation-limits tier, it directly attacks the denial that causal demands apply to a cosmic beginning."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it reaches the decisive metaphysical-warrant component and supplies several arguments, while leaving the cosmological scope bridge incompletely defended."
+            }
+          },
+          "evidenceBasis": "The excerpt announces three arguments, beginning with the principle that being does not come from nonbeing and the objection to uncaused emergence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-multiverse-boltzmann-brains",
+          "sectionId": "section-entropy-multiverse",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "A multiverse does not resolve observer typicality because de Sitter descendants and regions unsuitable for ordinary life can still produce Boltzmann brains without ordinary observers.",
+          "sourceSpan": {
+            "startEvent": 1901,
+            "endEvent": 1917,
+            "excerpt": "two reasons why boltzman brains would dominate first because on his Multiverse model in the long run every baby Universe becomes a de space and will be dominated by boltzman brains secondly because in all of the other worlds that are not fine-tuned there just aren't any ordinary observers but there will be thermal fluctuations that produce boltzman brains and so he's the one who has to justify some non-standard measure of probability"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly returns to the Boltzmann-brain objection and gives two stated reasons that such observers would dominate Carroll's multiverse proposal.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-entropy-observers"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-multiverse-predictions-and-observer-tests"
+            ],
+            "components": [
+              {
+                "componentId": "pro-multiverse-boltzmann-brains-component-01",
+                "targetMoveId": "con-multiverse-predictions-and-observer-tests",
+                "text": "Carroll's proposed cosmology remains vulnerable because its de Sitter descendants and non-life-permitting regions can generate Boltzmann brains without ordinary observers.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-multiverse-boltzmann-brains-component-02",
+                "targetMoveId": "con-multiverse-predictions-and-observer-tests",
+                "text": "Carroll must justify a nonstandard probability measure that prevents random observers from dominating the ensemble.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig directly contacts the claimed availability of viable observer measures with two model-focused reasons for random-observer domination, but does not establish the full measure calculation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The two sources of Boltzmann brains and the disputed probability-measure requirement are distinctly and explicitly stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The objections are model-specific, but domination in the long run still depends on decay rates, cutoff choices, and measures not resolved here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Vacuum decay or a justified cosmological measure may prevent random observers from dominating the relevant predictions.",
+            "decisiveQualification": "Raw long-run production does not determine observational probability until the model’s measure and decay dynamics are specified."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary entropy-observer tier, it directly challenges the claimed viability of multiverse observer predictions."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The reply expressly raises measure justification but treats domination as established before the competing measure and dynamics are fully evaluated."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it reaches the decisive typicality component and identifies concrete mechanisms, while leaving Carroll's claim about alternative viable models incompletely answered."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies de Sitter descendants and non-fine-tuned worlds as Boltzmann-brain sources and demands justification for a different probability measure.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-simultaneous-divine-causation",
+          "sectionId": "section-causation-first-moment",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "A cause need not temporally precede its effect: creation can coincide with the universe's first moment, with God timeless without creation and temporal from creation onward.",
+          "sourceSpan": {
+            "startEvent": 2499,
+            "endEvent": 2532,
+            "excerpt": "God is timeless without creation and he is in time from the moment of creation on the exercise of causal Power by which God brings the universe into being marks God's entrance as it were into time in virtue of his causal relationship with the effect that he brings about so I don't think causes do need to precede their effects temporally they can be simultaneous with them and in"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig begins the answer at the final owned-core event and continues through the delivered lookahead, explicitly presenting simultaneous causation and his account of divine temporality.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-causation-limits"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-causal-language-does-not-scale-to-cosmos",
+              "con-causation-models-not-transcendent-causes"
+            ],
+            "components": [
+              {
+                "componentId": "pro-simultaneous-divine-causation-component-01",
+                "targetMoveId": "con-causal-language-does-not-scale-to-cosmos",
+                "text": "Causation need not require temporal precedence because a cause and effect may be simultaneous at the universe's first moment.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-simultaneous-divine-causation-component-02",
+                "targetMoveId": "con-causation-models-not-transcendent-causes",
+                "text": "God can be timeless without creation and enter temporal relations through the simultaneous exercise of causal power.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig contacts the first-moment objection by supplying a coherent temporal model of simultaneous causation, though he does not independently establish the existence or necessity of the divine cause."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Simultaneous causation, timelessness without creation, and temporality from creation onward are explicitly distinguished and consistently related."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The move needs to establish conceptual coherence rather than empirical probability, and its simultaneous-causation account fits that limited force."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "If time begins with creation, changing from timeless to temporal may itself presuppose a before-and-after relation.",
+            "decisiveQualification": "Relational change at the first moment needs an atemporal account that does not covertly introduce prior time."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "A clear conceptual model and familiar simultaneous-causation relation are supplied, but no further defense of divine relational change is given."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central causation-limits tier, it directly attacks a key coherence objection to causation at the first moment."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The reply squarely addresses temporal precedence but leaves a bounded question about how the asserted divine transition is represented without prior time."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it directly resolves the temporal-precedence component but leaves Carroll's broader applicability and explanatory-necessity objections outstanding."
+            }
+          },
+          "evidenceBasis": "The excerpt says causes can be simultaneous with effects and describes God as timeless without creation and temporal from creation onward.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-parsimony-favors-self-contained-model",
+          "sectionId": "section-explanatory-standards",
+          "side": "con",
+          "speaker": "Sean Carroll",
+          "moveKind": "reply",
+          "proposition": "Although an invisible creator remains logically conceivable, a naturalistic model that fits the observations with fewer additions and greater self-containment is explanatorily preferable by ordinary scientific and philosophical standards.",
+          "sourceSpan": {
+            "startEvent": 3018,
+            "endEvent": 3056,
+            "excerpt": "invisible and the universe runs by purely naturalistic principles in that case I'm not saying that it is logically impossible or even that it is illegitimate to conceive of that possibility I just say it gets you nothing by all of the conventional standards of scientific or even philosophical explanation if I have two possible models that fit what we observe about the universe and one of them has less stuff less ideas is more self"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The question explicitly addresses Carroll and asks for his response to adding God outside a naturalistic model; the answer matches that request.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-naturalistic-explanation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-theism-not-scientific-competitor",
+              "pro-causal-principle"
+            ],
+            "components": [
+              {
+                "componentId": "con-parsimony-favors-self-contained-model-component-01",
+                "targetMoveId": "pro-theism-not-scientific-competitor",
+                "text": "Even if God is not a competing scientific mechanism, adding an observationally idle creator remains relevant to comparative philosophical explanation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-parsimony-favors-self-contained-model-component-02",
+                "targetMoveId": "pro-causal-principle",
+                "text": "A naturalistic model fitting the data with fewer additions is preferable unless the proposed cause supplies explanatory consequences.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Carroll contacts Craig's methodological distinction by applying parsimony to scientific and philosophical models alike, while conceding that an invisible creator remains logically conceivable."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Logical possibility is expressly distinguished from explanatory preference, and the stated comparison assumes equal fit to observations."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The conclusion is comparative rather than an impossibility claim, and it explicitly allows the legitimacy and conceivability of theism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A creator may unify why the laws, initial conditions, and existence of the model obtain rather than merely add an idle entity.",
+            "decisiveQualification": "Parsimony counts explanatory principles as well as entities and must be weighed against any genuine unification or likelihood gain."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (99 and 100); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The move concedes the legitimacy and logical possibility of theism while fairly arguing that unarticulated extra explanatory benefits do not defeat parsimony."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it explicitly addresses the reframe and explains why comparative explanatory standards still apply beyond strict scientific theory competition."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes that an invisible creator is logically conceivable but prefers the model with fewer additions and greater self-containment.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-conceptual-fine-tuning-probability",
+          "sectionId": "section-fine-tuning-probability",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Fine-tuning probabilities can be assessed across a conceptual space of possible constants and quantities without requiring multiple universes to exist in actuality.",
+          "sourceSpan": {
+            "startEvent": 3257,
+            "endEvent": 3285,
+            "excerpt": "objection to fine-tuning because what we can do is simply conceptualize a multitude of universes um by varying these constants and quantities and seeing what would result so for example the physicist John Barrow gives the following illustration he says put a red dot on a piece of paper and let that be our universe now alter slightly one of the constants or quantities that will make a new universe if it's life"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer follows clarification that the audience member is asking about fine-tuning and uses Craig's illustrative possible-universe argument.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-fine-tuning-alternatives"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-parsimony-favors-self-contained-model",
+              "con-parameter-sensitivity-not-life-impossibility",
+              "con-rigorous-measures-can-remove-tuning"
+            ],
+            "components": [
+              {
+                "componentId": "pro-conceptual-fine-tuning-probability-component-01",
+                "targetMoveId": "con-parsimony-favors-self-contained-model",
+                "text": "Fine-tuning evidence can be evaluated over conceptual alternatives without adding an actually existing ensemble of universes to the ontology.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-conceptual-fine-tuning-probability-component-02",
+                "targetMoveId": "con-parameter-sensitivity-not-life-impossibility",
+                "text": "Varying constants in conceptual models allows investigation of which neighboring possibilities retain life-permitting conditions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-conceptual-fine-tuning-probability-component-03",
+                "targetMoveId": "con-rigorous-measures-can-remove-tuning",
+                "text": "Conceptual variation addresses the legitimacy of possible-universe comparison but does not itself select a rigorous probability measure.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig contacts the demand for an actual ensemble and the use of parameter variation, but does not answer the decisive measure problem raised by Carroll's rigorous-probability objection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Conceptual variation and actual multiplicity are clearly distinguished, though the probabilistic status of the resulting space remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Conceptualization is sufficient for counterfactual comparison, but not by itself for normalized probabilities or typicality claims."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The objection concerns the absence of a justified measure, not an inability to imagine alternative parameter values.",
+            "decisiveQualification": "A conceptual space supports sensitivity analysis but requires an additional measure before probabilistic fine-tuning follows."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "Counterfactual variation coherently avoids requiring actual universes, but the inference from possibility space to probability is materially incomplete."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Within the central fine-tuning-alternatives tier, it attacks a material objection to assessing possible constants, though not the measure problem."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The response fairly answers an actuality objection but materially misses the strongest measure-based version of the probability challenge."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it contacts a secondary ontological component and a sensitivity method, while leaving the decisive probability-measure component uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt describes conceptualizing many universes by varying constants and quantities and observing whether the resulting possibilities permit life.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence survives exclusion from the move ratings, response links, importance judgments, and burden contacts already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified beyond the locked pro bridge requirements.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence remains after ordinary move-level capture.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing any proposed residual would not alter burden completion independently of the recorded move judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct con-side debate-wide consequence remains outside the move-level ratings, response links, relevance judgments, importance, and locked section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named con burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response components",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded move judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-cosmic-beginning",
+          "title": "Cosmic Beginning and Eternal Models",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "pro-expansion-finite-past",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "pro-thermodynamic-beginning",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 93,
+              "moves": [
+                {
+                  "moveId": "con-beginning-models-and-theorem-limits",
+                  "importance": 3,
+                  "score": 92
+                },
+                {
+                  "moveId": "con-eternal-model-technical-coherence",
+                  "importance": 3,
+                  "score": 93
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-causation-first-moment",
+          "title": "Causation, Time, and a First Moment",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-causal-principle",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "pro-simultaneous-divine-causation",
+                  "importance": 2,
+                  "score": 87
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-causation-models-not-transcendent-causes",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-causal-language-does-not-scale-to-cosmos",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-fine-tuning-probability",
+          "title": "Fine-Tuning and Cosmological Probability",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-fine-tuning-design",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-conceptual-fine-tuning-probability",
+                  "importance": 2,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-parameter-sensitivity-not-life-impossibility",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-rigorous-measures-can-remove-tuning",
+                  "importance": 3,
+                  "score": 88
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-entropy-multiverse",
+          "title": "Low Entropy, Multiverses, and Observer Typicality",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-low-entropy-discoverable-order",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "pro-multiverse-boltzmann-brains",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "con-low-entropy-open-naturalistic-problem",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-multiverse-predictions-and-observer-tests",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-explanatory-standards",
+          "title": "Explanatory Scope and Predictive Standards",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-cosmology-neutral-premises",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "pro-theism-not-scientific-competitor",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            },
+            "con": {
+              "score": 91,
+              "moves": [
+                {
+                  "moveId": "con-theism-lacks-distinctive-expectations",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "con-parsimony-favors-self-contained-model",
+                  "importance": 3,
+                  "score": 92
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 82.5,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        },
+        "con": {
+          "weightedSectionMean": 89.92,
+          "burdenCompletionAdjustment": 0,
+          "score": 90
+        }
+      },
+      "winner": "con",
+      "winningMargin": 7
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 20,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 122537,
+  "proposedAdapterSha256": "8477edcf38f471674ae7a8a59b8dc7e108006bcd80120cca6960ffe356cffb6c",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "33",
+    "sections": 5,
+    "moves": 20,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-12-single-deterministic-score-pass",
+    "adapterSha256": "8477edcf38f471674ae7a8a59b8dc7e108006bcd80120cca6960ffe356cffb6c",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

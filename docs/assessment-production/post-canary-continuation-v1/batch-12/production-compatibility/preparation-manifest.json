@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-compatibility-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-12-production-compatibility",
+  "status": "post-canary-batch-12-compatibility-plan-prepared-and-frozen",
+  "frozenAt": "2026-08-26T22:55:28Z",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "planningOnly": true,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "Use the frozen Batch 12 standing authorization for deterministic compatibility staging.",
+    "scopeInterpretation": "Prepare, validate, freeze, commit, and push the Batch 12 production-compatibility plan; later activation and one staging pass are already covered by the standing authorization. Do not publish production ledgers, mutate production, run models, use paid services, or select Batch 13."
+  },
+  "scope": {
+    "finding": "batch-12-site-ledger-adapter-and-validator-route",
+    "description": "Freeze the exact Batch 12 ledger adapters and schema-specific validator route without applying them to the active validator or production data."
+  },
+  "invariants": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "displayedRubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-12-single-deterministic-score-pass",
+    "chatGptSubscriptionAuthenticationPreserved": true,
+    "isolatedModelPassesPreserved": true,
+    "scoreBlindnessOfCompletedModelPassesPreserved": true,
+    "integerRoundedTiesAllowed": true,
+    "oneCompletedScorePassOnly": true,
+    "scoreRerunAllowed": false,
+    "modelExecutionAllowed": false,
+    "paidServiceAllowed": false,
+    "proseRewriteAllowed": false,
+    "scoreChangeAllowed": false,
+    "attributionChangeAllowed": false,
+    "optionalReferenceBehaviorChangeAllowed": false
+  },
+  "proposedValidatorRoute": {
+    "activeFile": "scripts/validate-debates.mjs",
+    "currentValidatorSha256": "b3b3194f35441806fea3d244bf274c3d14e3c663aa34aa761b9703fc10c65614",
+    "newSchemaVersion": "1.0-assessment-production-post-canary-batch-12-site-ledger-adapter",
+    "existingCheckpointSchemaVersion": "1.0-production-checkpoint-v2.2-site-ledger-adapter",
+    "exactRoute": "When a production ledger uses the Batch 12 adapter schema, load the Batch 12 packet and activation from the frozen Batch 12 compatibility root, verify their hashes, and replay the adapter with the Batch 12 validator. Keep the checkpoint and Batch 1–11 adapters on their existing roots, credentials, and validators, and keep legacy Rubric v2 and v2.1 ledgers on their existing calculators.",
+    "oneSidedDisplayRows": "Treat all twelve authenticated adjudicated-consensus adapter schemas as requiring ledgerMoveId and permitting a section exchange with only one side populated.",
+    "activationRequirements": [
+      "activation status is post-canary-batch-12-compatibility-execution-authorized-and-frozen",
+      "activation authorizes compatibility execution, validator migration, and staging-ledger writes",
+      "packet path, packet SHA-256, proposed adapter SHA-256, and staged ledger SHA-256 all match",
+      "adapter source locks and deterministic score replay pass"
+    ],
+    "unchangedBehavior": [
+      "the checkpoint v2.2 adapter route and hashes remain valid",
+      "the Batch 1 adapter route, correction-1 credential, packets, and hashes remain valid",
+      "the Batch 2 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 3 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 4 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 5 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 6 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 7 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 8 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 9 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 10 adapter route, credential, packets, and hashes remain valid",
+      "the Batch 11 adapter route, credential, packets, and hashes remain valid",
+      "legacy Rubric v2 and v2.1 calculations remain unchanged",
+      "empty Overall Commentary reference arrays remain valid",
+      "every supplied LogFall or CogBias reference keeps full validation",
+      "all model, rubric, score protocol, move ID, section, and displayed-score checks remain active"
+    ],
+    "plannedStagingOutputs": [
+      {
+        "debateNumber": "152",
+        "debateId": "knechtle-aron-ra-god-existence-2023",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/knechtle-aron-ra-god-existence-2023.json",
+        "sha256": "adfd1e0238350577b197610ab0ccaa605a225ec47dc939d0f9bdb4544464d90d",
+        "bytes": 131102
+      },
+      {
+        "debateNumber": "28",
+        "debateId": "turek-shermer-reality-theism-atheism-2018",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/turek-shermer-reality-theism-atheism-2018.json",
+        "sha256": "ce55f10698e88cc7df3928ea4d65d73bc37a2c79c0207a529f9a86ae63d22add",
+        "bytes": 136744
+      },
+      {
+        "debateNumber": "119",
+        "debateId": "jones-oconnor-hell-2023",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/jones-oconnor-hell-2023.json",
+        "sha256": "6ddbad42745a0766395968c2ce606157f1f3d5d8e9c5bceb25d78466f04452b7",
+        "bytes": 113878
+      },
+      {
+        "debateNumber": "116",
+        "debateId": "bertuzzi-schieber-evil-evidence-2019",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/bertuzzi-schieber-evil-evidence-2019.json",
+        "sha256": "f3e8ff6492c43e39ae04f8b34f10d5cf04f6912170cfef8233c10ae21cdc4e8c",
+        "bytes": 111223
+      },
+      {
+        "debateNumber": "131",
+        "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/boyce-carrier-historical-jesus-mythicism-2022.json",
+        "sha256": "ae51f4699c540c9d17eba84873ffc59cf080538239bc50b3769697d382c0e69d",
+        "bytes": 110553
+      },
+      {
+        "debateNumber": "07",
+        "debateId": "wood-oconnor-jesus-claim-god-2025",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/wood-oconnor-jesus-claim-god-2025.json",
+        "sha256": "0f3f7f3cf6209ace0440b5f23c476202a9b29f545027c97de8bb493cde909592",
+        "bytes": 120175
+      },
+      {
+        "debateNumber": "33",
+        "debateId": "craig-carroll-god-cosmology-2014",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/craig-carroll-god-cosmology-2014.json",
+        "sha256": "8477edcf38f471674ae7a8a59b8dc7e108006bcd80120cca6960ffe356cffb6c",
+        "bytes": 122537
+      },
+      {
+        "debateNumber": "15",
+        "debateId": "hitchens-lennox-is-god-great-2017",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/hitchens-lennox-is-god-great-2017.json",
+        "sha256": "7a10454245181ac69e8a39fa6da353d48ab66a67e521207d226ed189a12bbf5c",
+        "bytes": 137935
+      },
+      {
+        "debateNumber": "29",
+        "debateId": "turek-silverman-reality-theism-atheism-2013",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/turek-silverman-reality-theism-atheism-2013.json",
+        "sha256": "ecf93773fa62d159aee744e72b3b53cb5a2ac1dc3fb0551f6546ba6997a2e962",
+        "bytes": 111717
+      },
+      {
+        "debateNumber": "11",
+        "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/staged-ledgers/dsouza-ehrman-god-suffering-evil-2025.json",
+        "sha256": "0e8aee6d0c4def1d97adc3b9c691691d6f41575b3751882dba21f24a910bb027",
+        "bytes": 101494
+      }
+    ]
+  },
+  "stagedExecutionPlan": [
+    {
+      "stage": 1,
+      "name": "separate-execution-activation",
+      "allowedWrites": [
+        "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/execution-activation.json"
+      ],
+      "productionMutation": false
+    },
+    {
+      "stage": 2,
+      "name": "one-deterministic-compatibility-staging-pass",
+      "passLimit": 1,
+      "rerunsAllowed": false,
+      "allowedWrites": [
+        "scripts/validate-debates.mjs",
+        "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/output-bundle/**",
+        "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/execution.json",
+        "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/analysis.json"
+      ],
+      "actions": [
+        "wire the schema-specific Batch 12 adapter route",
+        "materialize the ten exact staged adapters from the frozen packets",
+        "run positive, negative, canary-regression, legacy-regression, full-site, and deterministic-replay tests"
+      ],
+      "forbiddenWrites": [
+        "docs/assessment-ledgers/**",
+        "src/data/debates.js",
+        "src/data/references.js"
+      ],
+      "modelExecution": false,
+      "paidServices": false,
+      "productionMutation": false
+    },
+    {
+      "stage": 3,
+      "name": "separate-production-publication-plan",
+      "authorizationRequiredAfterCompatibilityPass": true,
+      "proposedFutureWrites": [
+        "src/data/debates.js",
+        "docs/assessment-ledgers/knechtle-aron-ra-god-existence-2023.json",
+        "docs/assessment-ledgers/turek-shermer-reality-theism-atheism-2018.json",
+        "docs/assessment-ledgers/jones-oconnor-hell-2023.json",
+        "docs/assessment-ledgers/bertuzzi-schieber-evil-evidence-2019.json",
+        "docs/assessment-ledgers/boyce-carrier-historical-jesus-mythicism-2022.json",
+        "docs/assessment-ledgers/wood-oconnor-jesus-claim-god-2025.json",
+        "docs/assessment-ledgers/craig-carroll-god-cosmology-2014.json",
+        "docs/assessment-ledgers/hitchens-lennox-is-god-great-2017.json",
+        "docs/assessment-ledgers/turek-silverman-reality-theism-atheism-2013.json",
+        "docs/assessment-ledgers/dsouza-ehrman-god-suffering-evil-2025.json"
+      ],
+      "productionMutationPerformedNow": false
+    }
+  ],
+  "mandatoryExecutionTests": {
+    "positive": [
+      "all ten Batch 12 adapters reproduce all 204 locked move scores, 54 section scores per side, and 20 overall scores",
+      "all ten final candidates match ledgerMoveId, section order, model, rubric, and score protocol",
+      "all 10 one-sided display rows pass through the authenticated Batch 12 adapter route",
+      "all 59 empty Overall Commentary reference arrays pass without synthesized links",
+      "all 4 supplied reference links retain their exact validation behavior",
+      "all ten checkpoint v2.2 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 1 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 2 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 3 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 4 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 5 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 6 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 7 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 8 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 9 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 10 adapters retain their existing activation, packet, and score replays",
+      "all ten Batch 11 adapters retain their existing activation, packet, and score replays",
+      "legacy Rubric v2 and v2.1 ledgers retain their existing results"
+    ],
+    "negative": [
+      "tampered scoring dimension fails",
+      "tampered move importance fails",
+      "tampered move ID or order fails",
+      "tampered move, section, or overall score fails",
+      "tampered source lock, packet hash, adapter hash, or activation fails",
+      "a Batch 12 adapter routed through the checkpoint or Batch 1–11 roots fails",
+      "malformed, unknown, or wrong-host supplied reference fails"
+    ],
+    "repository": [
+      "node scripts/validate-debates.mjs",
+      "npm run check"
+    ],
+    "deterministicReplayRequired": true,
+    "onePassOnly": true
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/preparation-manifest.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/analysis.json",
+    "futureActivation": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/execution-activation.json",
+    "futureExecution": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/execution.json",
+    "packets": [
+      {
+        "debateNumber": "152",
+        "debateId": "knechtle-aron-ra-god-existence-2023",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-152.json",
+        "sha256": "56e517c2f832de6a65a640688f96b5626579d181b5c2a3815d07674585e555da",
+        "proposedAdapterSha256": "adfd1e0238350577b197610ab0ccaa605a225ec47dc939d0f9bdb4544464d90d"
+      },
+      {
+        "debateNumber": "28",
+        "debateId": "turek-shermer-reality-theism-atheism-2018",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-28.json",
+        "sha256": "5d1b0ad68cf7174afea2266ee830aea609841773fb888d151931b04414fd32fb",
+        "proposedAdapterSha256": "ce55f10698e88cc7df3928ea4d65d73bc37a2c79c0207a529f9a86ae63d22add"
+      },
+      {
+        "debateNumber": "119",
+        "debateId": "jones-oconnor-hell-2023",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-119.json",
+        "sha256": "f288b165e1999a937cf2908014fc77f6bb0f46cec48bb7bfb1ba403366ae9027",
+        "proposedAdapterSha256": "6ddbad42745a0766395968c2ce606157f1f3d5d8e9c5bceb25d78466f04452b7"
+      },
+      {
+        "debateNumber": "116",
+        "debateId": "bertuzzi-schieber-evil-evidence-2019",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-116.json",
+        "sha256": "2ba447297ec81bcf74d7c46e3d11a9588062534bd0be853cc58445b21b38b48f",
+        "proposedAdapterSha256": "f3e8ff6492c43e39ae04f8b34f10d5cf04f6912170cfef8233c10ae21cdc4e8c"
+      },
+      {
+        "debateNumber": "131",
+        "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-131.json",
+        "sha256": "2f96f381c5f802feb7a52b4a689c3ed504c78c597cd66ac7ae35d5e85f7fa726",
+        "proposedAdapterSha256": "ae51f4699c540c9d17eba84873ffc59cf080538239bc50b3769697d382c0e69d"
+      },
+      {
+        "debateNumber": "07",
+        "debateId": "wood-oconnor-jesus-claim-god-2025",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-07.json",
+        "sha256": "0902a65d4c37d96e05c7b025a061f33bd38b4fd6bb0477c7b1056484f7e01724",
+        "proposedAdapterSha256": "0f3f7f3cf6209ace0440b5f23c476202a9b29f545027c97de8bb493cde909592"
+      },
+      {
+        "debateNumber": "33",
+        "debateId": "craig-carroll-god-cosmology-2014",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-33.json",
+        "sha256": "b9645c0f4992aace5d1e3e09f71204c473cc8b2d4aa6f89145a9cc9bae8d1480",
+        "proposedAdapterSha256": "8477edcf38f471674ae7a8a59b8dc7e108006bcd80120cca6960ffe356cffb6c"
+      },
+      {
+        "debateNumber": "15",
+        "debateId": "hitchens-lennox-is-god-great-2017",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-15.json",
+        "sha256": "974c0cbd66e2228f4c354867f5b0c5190000c96679f90e186031768de3052063",
+        "proposedAdapterSha256": "7a10454245181ac69e8a39fa6da353d48ab66a67e521207d226ed189a12bbf5c"
+      },
+      {
+        "debateNumber": "29",
+        "debateId": "turek-silverman-reality-theism-atheism-2013",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-29.json",
+        "sha256": "9c2d9ea58e0c424ef2c2dfe4090fa9699f9bf40daaa2c6028a87a82bbc5a6d47",
+        "proposedAdapterSha256": "ecf93773fa62d159aee744e72b3b53cb5a2ac1dc3fb0551f6546ba6997a2e962"
+      },
+      {
+        "debateNumber": "11",
+        "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/production-compatibility/packets/debate-11.json",
+        "sha256": "25dfb38819f8f03fbf87d24b5115ec341959bf81bb051db199c7e16a44e0e974",
+        "proposedAdapterSha256": "0e8aee6d0c4def1d97adc3b9c691691d6f41575b3751882dba21f24a910bb027"
+      }
+    ]
+  },
+  "frozenSources": {
+    ".assessment-cache/captions/5OXPlUCGScY/events.json": "b70325c3ef72427a79aca6aee9945f61a8d1987b145d6e324287cae86552cf9a",
+    ".assessment-cache/captions/8aZn7XUFSmA/events.json": "4efbc03fc1ecc0ccd8c5560c5a491cd4344e80853e7e0083e3f39e88ef2914ed",
+    ".assessment-cache/captions/9r_XAIksLdI/events.json": "8c3e7c8a52185cadaa1b5d03d50a844dc2dce7ec902054d95efa0aa88c666e33",
+    ".assessment-cache/captions/RzP07nEwNP8/events.json": "1ee54eb85a6cec5c75b40c9ec562039358761beffd5cef0051a3ff02bda8ccc2",
+    ".assessment-cache/captions/X0qKZqPy9T8/events.json": "52edd5a7fa39cd7a016df91b5385df3ff9a303a1163ee2dddc8a893422474cde",
+    ".assessment-cache/captions/XtWjEjdYvLA/events.json": "771484f78a7789818d46fb6c74f791031c7b3dbad9ce378c6b6bb931820ba33e",
+    ".assessment-cache/captions/_hrN4Mn8m1w/events.json": "44db9b0c3a85eaee4438213c1ff274ccd551581aaa6ab8c50ae2818d02567e0d",
+    ".assessment-cache/captions/bC-Uj92Cpvg/events.json": "77a15ae1d157c38a17a55b6592bf8e5c1a8cbc2c0715bc5f4af9bde3586691d5",
+    ".assessment-cache/captions/huOwbSrl-xw/events.json": "5e041b4b863da68323195a71884fe7968a10828183b47a8235febb24ffee4aa6",
+    ".assessment-cache/captions/kOzmwGmiDHQ/events.json": "aadc72b9bf3340960539bc8dc1466ded6dd0976a9249ba9b97457668e392ce11",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/execution-activation.json": "31fd15c130bcfc36c84ad6fb3609c1aa59f889fe4eedefb51dc4209b48fcdcef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/execution-activation.json": "b61d5c8f3a5ff7baa1bc3edbf07769728ccdfaddd2d88eeaac5686b47e384d6f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/execution-activation.json": "9bf487c6b9204894434b33345058d13fbf8fe62748ceaf5148a9629b52110e42",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/execution-activation.json": "367a12e14e2ad1582ded06292a2e86a7b63b9c386594a44ec6daf7a34347045d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/execution-activation.json": "c34116ebfb10e11ed320771ef672279fba3fbf458af5b0c2cc06663ebec95da8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/production-compatibility/execution-activation.json": "b5de14c06b8256b0e600e01a6f55de386190964f618678717bdebd774e10f539",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/production-compatibility/execution-activation.json": "005bad5fe6fa6bf60487199f78615f1e2efb71b6143dbaa07ebc5af39578f64e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/production-compatibility/execution-activation.json": "cc00afd352f7d09bbf6367ba31ed2c3dda46781ffb254d66ce25c7de56ad3fee",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/production-compatibility/execution-activation.json": "f01f15fbf17dabb74c032605f902ffaa43272db5cbb30bca7252841974337469",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/production-compatibility/execution-activation.json": "323544be9df395814ae2634936928085cb4b6cca6ece2eca04522f123905c8cb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-11/production-compatibility/execution-activation.json": "34a39c484bdc8dece0c6946b4ddb6caaf540b540be6e6d6f3a3704dfbc32fbec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/final-ledger/final-ledger.json": "1124834d66b6a503a835b68d925ee62cd0cedfeb6ebc99ad58b9fdc06219ea70",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/compatibility-analysis.json": "7850c482b28af8848468dbce16123a00201747ea4557cac3c69a6615431b3bb8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/finalization-audit.json": "651c89d749b11121138823998223d4afab0c75528bb8ed5772b8b1f4537dc63d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-07.json": "ed0b9e114e3b9eca027fa67209a7663f74e0a7130c78104efeff653cb6211416",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-11.json": "e18cf3c5475cf15df8a339c6a964d447c922b46301ae1835cef6ab53344e4005",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-116.json": "7a130595f1ebf5fc49f0a8e98ab9be0ae978d0b6be2a70638305ed653780a7b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-119.json": "46b36514a07be94b48d93905c6bf843f794eed98b4d791ad36c5efe308956f49",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-131.json": "3caca05c684c2f1f0956f52c851c5107735d9bc2dcdc8779e7e2d7c5686aa95d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-15.json": "8dec48a08e743c6e749a71f8cb93e5f28cc04d8adb48389a834874dc38c08df1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-152.json": "8662e2051f9db2d26b9475ae6ac38c3986ff5f9919dbaa57c45c3616ea72212e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-28.json": "a5dfd1583d1bf9af3c0a2b26acad0813ca769d7debb0d399bb9a201e4fcca2fe",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-29.json": "7d370a2f288c945adf0bddfc529501b8219963b22f68ff4be71376db9a0cf19d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-finalization/output-bundle/final-candidates/debate-33.json": "aa527a309a1bdae199a6a5d245cd951cb314a5043635de4709d573c1d4233457",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/rendering-verification/analysis.json": "eb0c1fcbda51f181e456938667996fd6daa229ec2e7b63d3047e067bd2153415",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/rendering-verification/rendering-audit.json": "2e374cee4f7b3cf8837d2f8b066c57ba35ba023ab5e30d7495b3756dd3011725",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/score-pass/calculated-scores.json": "749a60811c016eceecf9bfacdb761eb6a97ca12b14149320acedb23e7dbbc630",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs": "871a21a8bb7cf72e694797297f871acf6a26832f9b7c9ab5ef9afff6b5db117c",
+    "scripts/lib/assessment-production-post-canary-batch-01-compatibility.mjs": "f53342db03deef4ed0f9c574b7c5870157191e6d5188ae2c901beacc96592b12",
+    "scripts/lib/assessment-production-post-canary-batch-02-compatibility.mjs": "6e7ccec5fb136df0768d98dd6079735a1f3ef1248289699257bcadeb1f3f3d2c",
+    "scripts/lib/assessment-production-post-canary-batch-03-compatibility.mjs": "eae223002367f5ea1e9340e694ca64dc0b010c9eb24d075a5e842af602b4763c",
+    "scripts/lib/assessment-production-post-canary-batch-04-compatibility.mjs": "1eccec91ce42645266ab73648e65843bc4608912dc64c5f040a2c9481f20e86b",
+    "scripts/lib/assessment-production-post-canary-batch-05-compatibility.mjs": "6685b68d56b87d2dc490fa3dfdd0b541771007b923fcf982dc3e3106c5417628",
+    "scripts/lib/assessment-production-post-canary-batch-06-compatibility.mjs": "96f657ffe6cb49ef9202d18130e728467ec0037a341b2ea6b52785c70ddd74a7",
+    "scripts/lib/assessment-production-post-canary-batch-07-compatibility.mjs": "f8ef4b19aec3f234ae99e28c1e4d70b14c572334aac769a871739473a8e5d0ab",
+    "scripts/lib/assessment-production-post-canary-batch-08-compatibility.mjs": "9c4b561884cad3f371136cb834af742f71a3668fad698fb8f849faded4812f13",
+    "scripts/lib/assessment-production-post-canary-batch-09-compatibility.mjs": "fdbb5e4174fcb678b1cd14cee78c4e28584dd76ccc9e9089d31a3bbbac6830b9",
+    "scripts/lib/assessment-production-post-canary-batch-10-compatibility.mjs": "1bb9994d95ea4e0cde91327dbead4e93287d980d603a28a6e8d00f5ec7374eab",
+    "scripts/lib/assessment-production-post-canary-batch-11-compatibility.mjs": "8350b45c30b4b34e0267c78020cabcb0baa5de48905ef7860ce19b57368f45a9",
+    "scripts/lib/assessment-production-post-canary-batch-12-compatibility.mjs": "3fb68c049e609625539d4a4baa5141c7f740bbd2ce8adaafa7d78c9a8d67718b",
+    "scripts/lib/assessment-production-post-canary-batch-12-final-ledger.mjs": "341afc85eb11f6386dc4fb4544ab4a9a693198110f4431e07ab9a6da35d32d08",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/prepare-assessment-production-post-canary-batch-12-compatibility.mjs": "92423b3d2c5adfb61d95c4c882e0341aa4c8eb80e5ce5eaf74fd16d4d11f1d3c",
+    "scripts/test-assessment-production-post-canary-batch-12-compatibility-preparation.mjs": "f27f6a2fb2f967e32cc22944faddbf281003f9f50f227809ceabee5cc9854f49",
+    "scripts/validate-debates.mjs": "b3b3194f35441806fea3d244bf274c3d14e3c663aa34aa761b9703fc10c65614",
+    "src/data/debates.js": "e6b013d17de300a7d5f94bb78ac318875d2bcb1e240f0ce77b69361aa3e41d0b",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+  },
+  "totals": {
+    "debates": 10,
+    "planPackets": 10,
+    "sections": 54,
+    "moves": 204,
+    "oneSidedDisplayRows": 10,
+    "overallBlunders": 63,
+    "emptyReferenceLinks": 59,
+    "suppliedReferenceLinks": 4,
+    "proposedAdapterBytes": 1197358,
+    "repositoryScoreReplays": 10,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionMutations": 0
+  },
+  "authorization": {
+    "compatibilityPlanPreparation": true,
+    "compatibilityExecutionActivation": false,
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "separateExecutionApprovalRequired": true,
+    "exactlyOneDeterministicStagingPassIfApproved": true,
+    "rerunForbidden": true,
+    "sourceHashMismatchBlocks": true,
+    "packetHashMismatchBlocks": true,
+    "adapterHashMismatchBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "testFailureBlocks": true,
+    "checkpointRouteRegressionBlocks": true,
+    "batch01RouteRegressionBlocks": true,
+    "batch02RouteRegressionBlocks": true,
+    "batch03RouteRegressionBlocks": true,
+    "batch04RouteRegressionBlocks": true,
+    "batch05RouteRegressionBlocks": true,
+    "batch06RouteRegressionBlocks": true,
+    "batch07RouteRegressionBlocks": true,
+    "batch08RouteRegressionBlocks": true,
+    "batch09RouteRegressionBlocks": true,
+    "batch10RouteRegressionBlocks": true,
+    "batch11RouteRegressionBlocks": true,
+    "legacyRouteRegressionBlocks": true,
+    "suppliedReferenceValidationWeakeningForbidden": true,
+    "optionalReferenceBehaviorChangeForbidden": true,
+    "rubricRelabelingForbidden": true,
+    "modelRelabelingForbidden": true,
+    "scoreProtocolRelabelingForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "attributionChangeForbidden": true,
+    "scoreRerunForbidden": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "productionLedgerPublicationForbidden": true,
+    "productionMutationForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "activate-and-execute-one-batch-12-production-compatibility-pass-under-standing-authorization"
+}
