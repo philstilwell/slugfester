@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-dispute-only-adjudication-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-10-dispute-only-adjudication",
+  "status": "post-canary-batch-10-dispute-only-adjudication-gate-complete-with-failure",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "gateStartedAt": "2026-08-26T01:12:12.498Z",
+  "gateCompletedAt": "2026-08-26T01:19:49.541Z",
+  "contextsPlanned": 10,
+  "contextsAttempted": 3,
+  "unattemptedContextIndexes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validContexts": 2,
+  "invalidContexts": 1,
+  "attempts": 3,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "corrections": 0,
+  "maximumObservedConcurrency": 2,
+  "wallElapsedMs": 457042,
+  "aggregateModelElapsedMs": 616047,
+  "meanElapsedMs": 205349,
+  "rampPhases": [
+    {
+      "phase": 1,
+      "name": "operational-one",
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 2,
+      "name": "ramp-two",
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        2
+      ],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 3,
+      "name": "steady-two",
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-26T01:12:12.500Z",
+      "completedAt": "2026-08-26T01:14:47.338Z",
+      "elapsedMs": 154838,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 272026,
+      "audioTranscriptInputs": [
+        "audio-transcript-con-religious-motivation-and-sanctity.json",
+        "audio-transcript-pro-natural-transcendence-without-supernaturalism.json"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "9fbfe7a2642b6031a5c7543ed9ca724b4ed442060512f279ab6bcf577417f295",
+      "stderrSha256": "e4d82661459b09683c3f4d5f0093991570b436acd5f8534b6554bae9930c4eca",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "2f3a09660b99ebf0da51d35cdeac245e7c743da40a6fa2671bffea0eac1e4e6b",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "21",
+        "disputedMoves": 18,
+        "candidateSelections": 44,
+        "calculatedScores": 0,
+        "scoreDerivationAuthorized": false
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-26T01:14:47.355Z",
+      "completedAt": "2026-08-26T01:19:49.522Z",
+      "elapsedMs": 302167,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 396456,
+      "audioTranscriptInputs": [
+        "audio-transcript-pro-voluntary-risk-arena.json"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "c7e936000fcb0a9e5f402d37e03d80f2f4c92e627f926db419fb1bef0f6854d7",
+      "stderrSha256": "82b3857963c2e08d132c3989bab47612b0029d2b261c55c2d927d0c91d92d239",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "eb351da5ebc6a0d02a413458f44d0b54128ea5c674b3fbb32257613e768803a2",
+      "validationSummary": null,
+      "validationMessage": "Error: burden adjustment decision count mismatch\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateV4221175AdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4221175-decomposed-adjudication.mjs:207:3)\n    at validateV42211728AdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v42211728-hard-route-adjudication.mjs:52:10)\n    at validatePostCanaryBatch10DisputeAdjudicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-10-dispute-adjudication.mjs:91:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-dispute-adjudication.mjs:256:22)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-dispute-adjudication.mjs:323:22)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-dispute-adjudication.mjs:326:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-10-dispute-adjudication.mjs:356:24"
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "107",
+      "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-26T01:14:47.355Z",
+      "completedAt": "2026-08-26T01:17:26.397Z",
+      "elapsedMs": 159042,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 220486,
+      "audioTranscriptInputs": [],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "2b36a01bf978344eeca29c52409745099451aa382cf3220ff4fb5f5393b22525",
+      "stderrSha256": "67cc6a94ef0dedefb4665d664da8fb110a23b12c29c5ee2ac7b6cf8e14c1eda9",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "9dc9f4bcb6968c5c7679c2c11dcef35024522dc1a106ffa1b704ff9e1147eddf",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "107",
+        "disputedMoves": 16,
+        "candidateSelections": 49,
+        "calculatedScores": 0,
+        "scoreDerivationAuthorized": false
+      },
+      "validationMessage": null
+    }
+  ],
+  "adjudicationModelContexts": 3,
+  "judgmentModelContexts": 0,
+  "paidServiceCalls": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "directIncrementalCostUsd": 0,
+  "scoresDerived": 0,
+  "publicationReconstructions": 0,
+  "productionMutations": 0,
+  "nextBatchSelections": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "correctionModelExecution": false,
+    "judgmentModelExecution": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
