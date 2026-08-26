@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "116",
+  "debateId": "bertuzzi-schieber-evil-evidence-2019",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-no-evidence-defense",
+      "side": "pro",
+      "description": "Show that the cited facts about pain, pleasure, languishing, and horrendous evil do not provide comparative evidence for naturalism over theism because the naturalistic likelihood is not established, soul-building can raise their likelihood on theism, or skeptical theism prevents the required likelihood comparison.",
+      "successCriteria": "The route succeeds if at least one global neutralizer defeats the comparative inference: the naturalistic prediction remains unsupported, a sufficiently developed soul-building account makes the data no less expected on theism, or epistemic limits leave the theistic likelihood unavailable for the claimed comparison.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-neutralization",
+        "tier": "motion",
+        "description": "Establish that the total cited suffering data do not warrant a comparative evidential preference for naturalism over theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-naturalistic-likelihood",
+          "tier": "central",
+          "description": "Require adequate support for the claim that naturalism predicts the observed suffering facts better, rather than merely accommodating their possibility."
+        },
+        {
+          "bridgeId": "pro-soul-building-account",
+          "tier": "central",
+          "description": "Explain how morally significant agency, virtue formation, nonhuman development, and eventual defeat of suffering can make the observed data compatible with theistic purposes."
+        },
+        {
+          "bridgeId": "pro-skeptical-theist-defeater",
+          "tier": "central",
+          "description": "Show that limited access to divine reasons or the total moral structure prevents a warranted estimate of the suffering data's probability on theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-background-and-analogy",
+          "tier": "subsidiary",
+          "description": "Test whether the biological analogy and selected evolutionary background information support the asserted naturalistic expectations."
+        },
+        {
+          "bridgeId": "pro-alternative-means-and-aftermath",
+          "tier": "subsidiary",
+          "description": "Address whether less harmful means, afterlife compensation, or the destructive effects of suffering undermine the proposed theistic purposes."
+        }
+      ]
+    },
+    {
+      "routeId": "con-comparative-evil-evidence",
+      "side": "con",
+      "description": "Show that biologically oriented pain and pleasure, widespread sentient languishing, and horrendous evil are collectively more expected on morally indifferent naturalism than on theism, and that neither soul-building nor skeptical theism neutralizes that comparative evidential force.",
+      "successCriteria": "The route succeeds by defending the comparative-likelihood standard, establishing a naturalistic advantage for the principal classes of suffering facts, and showing that soul-building and skeptical-theist replies neither predict the observed distribution nor erase the force of known evidence.",
+      "motionBridge": {
+        "bridgeId": "con-motion-comparative-support",
+        "tier": "motion",
+        "description": "Establish that the total cited suffering data provide comparative evidential support for naturalism over theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-comparative-framework",
+          "tier": "central",
+          "description": "Defend the principle that evidence favors the hypothesis on which the observed facts are less surprising, without requiring either hypothesis to entail them."
+        },
+        {
+          "bridgeId": "con-three-data-classes",
+          "tier": "central",
+          "description": "Establish a comparative naturalistic advantage for biologically oriented pain and pleasure, sentient languishing, and horrendous evil."
+        },
+        {
+          "bridgeId": "con-theodicy-limits",
+          "tier": "central",
+          "description": "Show that soul-building does not adequately predict the scope, distribution, proportions, or destructive severity of the observed suffering."
+        },
+        {
+          "bridgeId": "con-skepticism-limits",
+          "tier": "central",
+          "description": "Show that uncertainty about unknown divine reasons does not cancel known comparative reasons or prevent naturalism from assigning the data a higher likelihood."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-background-discipline",
+          "tier": "subsidiary",
+          "description": "Specify background knowledge without building the disputed suffering observations into it or requiring an independent complete naturalistic explanation."
+        },
+        {
+          "bridgeId": "con-prevention-alternatives",
+          "tier": "subsidiary",
+          "description": "Explain why less harmful means, divine resources, compensation, or possible afterlives do not by themselves justify or predict the observed harms."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "comparative-likelihood-framework",
+      "title": "Comparative Likelihood and Naturalistic Prediction",
+      "weightPercent": 20,
+      "rationale": "This issue fixes the governing evidential standard and whether analogical reasoning, evolutionary background knowledge, and comparative surprise adequately support a naturalistic likelihood advantage."
+    },
+    {
+      "sectionId": "pain-pleasure-orientation",
+      "title": "Biological Orientation of Pain and Pleasure",
+      "weightPercent": 15,
+      "rationale": "The orientation of pain and pleasure toward biological goals, and its apparent moral randomness, forms an independent evidential comparison that each side must explain under its hypothesis."
+    },
+    {
+      "sectionId": "sentient-languishing",
+      "title": "Sentient Flourishing and Languishing",
+      "weightPercent": 15,
+      "rationale": "The prevalence, distribution, and nonhuman scope of languishing test whether natural processes or theistic purposes better predict the observed proportions of sentient welfare."
+    },
+    {
+      "sectionId": "horrendous-evil",
+      "title": "Horrendous Evil and Divine Prevention",
+      "weightPercent": 18,
+      "rationale": "The severity, morally destructive effects, and apparent preventability of horrendous evil create a distinct comparison involving divine empathy, available alternatives, and indifferent natural processes."
+    },
+    {
+      "sectionId": "soul-building-defense",
+      "title": "Scope and Necessity of Soul-Building",
+      "weightPercent": 17,
+      "rationale": "Soul-building is a principal global neutralizer, so the debate must address its reach across humans and animals, the necessity of actual harms, freedom, afterlife defeat, and any claimed fine-tuning."
+    },
+    {
+      "sectionId": "skeptical-theism",
+      "title": "Skeptical Theism and Unknown Reasons",
+      "weightPercent": 15,
+      "rationale": "The final global issue is whether limited human access to divine reasons makes the theistic likelihood unknowable or whether known comparative evidence remains probative despite that uncertainty."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c004": {
+        "sectionId": "comparative-likelihood-framework",
+        "moveId": "pro-comparative-naturalistic-prediction-c004",
+        "moveKind": "reply",
+        "proposition": "Schieber has not established that naturalism predicts the cited suffering data, because adding evolutionary information to the background either helps both hypotheses or deprives naturalism of explanatory resources."
+      },
+      "chunk-001:c005": {
+        "sectionId": "sentient-languishing",
+        "moveId": "pro-languishing-soul-building-c005",
+        "moveKind": "reply",
+        "proposition": "Significant suffering can enable loving virtues, be integrated into an overall good life, and ultimately be defeated, making the relevant suffering data at least as probable on theism as on naturalism."
+      },
+      "chunk-001:c006": {
+        "sectionId": "skeptical-theism",
+        "moveId": "pro-epistemic-chasm-c006",
+        "moveKind": "reply",
+        "proposition": "The epistemic chasm between humans and divinity leaves us agnostic about the probability of suffering given theism, so even a naturalistic prediction would not establish comparative evidential support for naturalism."
+      },
+      "chunk-002:chunk-002-candidate-05": {
+        "sectionId": "pain-pleasure-orientation",
+        "moveId": "pro-biological-analogy-challenge-candidate-05",
+        "moveKind": "reply",
+        "proposition": "The proposed analogy from the biological role of pain and pleasure does not yield a reliable naturalistic expectation, because alternative assignments of biological and moral roles remain possible and the background knowledge is selectively restricted."
+      },
+      "chunk-002:chunk-002-candidate-06": {
+        "sectionId": "horrendous-evil",
+        "moveId": "pro-horrendous-evil-defeat-candidate-06",
+        "moveKind": "reply",
+        "proposition": "Horrendous evil need not permanently destroy a person's soul because morally significant freedom, possible afterlife development, and the eventual defeat of suffering remain available within a soul-building account."
+      },
+      "chunk-002:chunk-002-candidate-07": {
+        "sectionId": "skeptical-theism",
+        "moveId": "pro-agnosticism-limited-sample-candidate-07",
+        "moveKind": "reply",
+        "proposition": "Skeptical theism does not posit a favorable pool of unknown reasons; it suspends judgment because radically limited and unrepresentative known information cannot warrant confidence about the total probability of suffering on theism."
+      },
+      "chunk-003:chunk-003-candidate-001": {
+        "sectionId": "comparative-likelihood-framework",
+        "moveId": "pro-unknown-theistic-likelihood-candidate-001",
+        "moveKind": "reply",
+        "proposition": "Even if naturalism predicts evil and suffering, that fact does not show that the evidence confirms naturalism over theism when the probability of the same data given theism remains unknown."
+      },
+      "chunk-003:chunk-003-candidate-002": {
+        "sectionId": "soul-building-defense",
+        "moveId": "pro-joint-soul-building-conclusion-candidate-002",
+        "moveKind": "reply",
+        "proposition": "Bertuzzi's soul-building arguments, together with his skeptical-theist case for continued agnosticism, are offered jointly as a defense against the probabilistic argument from evil."
+      }
+    },
+    "con": {
+      "chunk-001:c001": {
+        "sectionId": "pain-pleasure-orientation",
+        "moveId": "con-pain-biological-orientation",
+        "moveKind": "constructive",
+        "proposition": "Pain and pleasure are organized primarily around biological goals and appear morally random, a pattern more expected on naturalism than on morally perfect theism."
+      },
+      "chunk-001:c002": {
+        "sectionId": "sentient-languishing",
+        "moveId": "con-languishing-distribution",
+        "moveKind": "constructive",
+        "proposition": "Competition, finite resources, and overpopulation systematically leave many sentient beings languishing, and that prevalence and distribution fit indifferent natural processes better than theism."
+      },
+      "chunk-001:c003": {
+        "sectionId": "horrendous-evil",
+        "moveId": "con-horrendous-evil-surprise",
+        "moveKind": "constructive",
+        "proposition": "Horrendous evils involving profound suffering, disfigurement, or loss are substantially less surprising under morally indifferent naturalism than under perfectly informed and compassionate theism."
+      },
+      "chunk-001:c007": {
+        "sectionId": "comparative-likelihood-framework",
+        "moveId": "con-comparative-prediction-standard",
+        "moveKind": "reply",
+        "proposition": "For the suffering facts to support naturalism, naturalism need only predict them better than theism does, rather than make them probable in isolation or entail them."
+      },
+      "chunk-001:c008": {
+        "sectionId": "comparative-likelihood-framework",
+        "moveId": "con-background-does-not-entail-data",
+        "moveKind": "reply",
+        "proposition": "Background commitments to common descent and transgenerational genetic change do not entail the observed flourishing and languishing facts, so those facts remain available for comparative likelihood assessment."
+      },
+      "chunk-001:c009": null,
+      "chunk-002:chunk-002-candidate-01": {
+        "sectionId": "pain-pleasure-orientation",
+        "moveId": "con-pain-soul-building-mismatch",
+        "moveKind": "reply",
+        "proposition": "Soul-building theism gives reason to expect pain and pleasure to guide agents toward moral goals, whereas the observed system is deeply biologically oriented and morally random."
+      },
+      "chunk-002:chunk-002-candidate-02": {
+        "sectionId": "soul-building-defense",
+        "moveId": "con-soul-building-scope-alternatives",
+        "moveKind": "reply",
+        "proposition": "Human soul-building cannot explain most sentient languishing, and an unlimited God could foster moral transformation through less harmful means such as vivid dreams or visions."
+      },
+      "chunk-002:chunk-002-candidate-03": {
+        "sectionId": "horrendous-evil",
+        "moveId": "con-horrendous-evil-soul-destruction",
+        "moveKind": "reply",
+        "proposition": "Horrendous evils can inflict severe moral injury and destroy rather than build souls, while a perfectly empathic and resourceful God could secure moral growth without permitting them."
+      },
+      "chunk-002:chunk-002-candidate-04": {
+        "sectionId": "skeptical-theism",
+        "moveId": "con-unknown-reasons-tie",
+        "moveKind": "reply",
+        "proposition": "Unknown moral reasons may count against divine permission just as they may count for it, so they do not favor permission and the known comparative reasons retain evidential force."
+      },
+      "chunk-002:chunk-002-candidate-08": null,
+      "chunk-002:chunk-002-candidate-09": {
+        "sectionId": "soul-building-defense",
+        "moveId": "con-afterlife-compensation-insufficient",
+        "moveKind": "reply",
+        "proposition": "Animal afterlife and soul-building narratives do not predict the observed proportions of languishing, while later compensation neither justifies preventable horrendous harm nor removes less harmful transformative alternatives."
+      },
+      "chunk-002:chunk-002-candidate-10": {
+        "sectionId": "skeptical-theism",
+        "moveId": "con-agnostic-theism-relative-likelihood",
+        "moveKind": "reply",
+        "proposition": "Even if skeptical theism is agnostic about theism's prediction of evil, naturalism can still receive comparative support by assigning the observed suffering data a higher likelihood."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

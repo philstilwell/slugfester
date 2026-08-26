@@ -1,0 +1,839 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "15",
+  "debateId": "hitchens-lennox-is-god-great-2017",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-christian-theism",
+      "side": "pro",
+      "description": "Establish Christian theism as the more adequate account of cosmic intelligibility, rational knowledge, objective morality, human dignity, and enduring hope, while connecting those explanatory claims to the character and revelation of the Christian God.",
+      "successCriteria": "The route succeeds if its general theistic explanations remain coherent under naturalistic objections, its specifically Christian claims have an adequate epistemic bridge, and its account of divine greatness addresses evil, coercion, and religious wrongdoing.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-greatness-and-explanatory-adequacy",
+        "tier": "motion",
+        "description": "Show that the Christian God is worthy of the motion's greatness claim and that Christian theism jointly explains the motion's scientific, moral, dignitary, and hopeful dimensions better than anti-theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-intelligible-creation",
+          "tier": "central",
+          "description": "Account for cosmic order, biological information, and trustworthy rational inquiry through an intelligent creator without treating scientific mechanisms as competing creator explanations."
+        },
+        {
+          "bridgeId": "pro-central-objective-value",
+          "tier": "central",
+          "description": "Ground objective moral obligation and distinctive human worth in God rather than in wholly blind natural processes."
+        },
+        {
+          "bridgeId": "pro-central-christian-revelation",
+          "tier": "central",
+          "description": "Supply a warranted transition from general creator claims to Christianity through claims about Jesus, revelation, resurrection, and atonement."
+        },
+        {
+          "bridgeId": "pro-central-divine-character",
+          "tier": "central",
+          "description": "Reconcile divine greatness with suffering, judgment, freedom, and allegations that supernatural authority is intrinsically tyrannical."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-doctrine-and-abuse",
+          "tier": "subsidiary",
+          "description": "Distinguish conduct that follows Christian teaching from violence or oppression committed by professed adherents contrary to that teaching."
+        },
+        {
+          "bridgeId": "pro-subsidiary-civilizational-fruits",
+          "tier": "subsidiary",
+          "description": "Relate Christian commitments to liberty, conscience, rights, education, and reform without making historical association substitute for the central truth claims."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-anti-theism",
+      "side": "con",
+      "description": "Defeat the claimed explanatory and moral advantages of Christian theism by advancing naturalistic and secular alternatives, challenging the evidential bridge to revelation, and arguing that the proposed divine rule is neither necessary nor worthy of worship.",
+      "successCriteria": "The route succeeds if natural and human explanations cover the motion's principal domains without God, specifically Christian claims remain insufficiently warranted, and suffering, authority, atonement, or religion's effects defeat the attribution of divine greatness.",
+      "motionBridge": {
+        "bridgeId": "con-motion-anti-theistic-sufficiency",
+        "tier": "motion",
+        "description": "Show that Christian theism neither provides the better explanation across the motion's domains nor establishes a God whose character and governance satisfy the claim of greatness."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-natural-explanation",
+          "tier": "central",
+          "description": "Defend evidence-responsive natural inquiry and show that adding divine agency does not improve explanations of cosmic or biological phenomena."
+        },
+        {
+          "bridgeId": "con-central-secular-value",
+          "tier": "central",
+          "description": "Explain morality, solidarity, dignity, meaning, and hope through human social, evolutionary, intellectual, and cultural resources without supernatural premises."
+        },
+        {
+          "bridgeId": "con-central-revelation-challenge",
+          "tier": "central",
+          "description": "Require adequate evidence for knowledge of divine intentions and contest the historical, prophetic, and miraculous basis of specifically Christian revelation."
+        },
+        {
+          "bridgeId": "con-central-indictment-of-rule",
+          "tier": "central",
+          "description": "Show how suffering, surveillance, punishment, coercion, or vicarious redemption conflicts with the asserted goodness and greatness of the Christian God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-religious-causation",
+          "tier": "subsidiary",
+          "description": "Establish whether religious violence and oppression arise from supernatural doctrines themselves rather than merely from their misuse."
+        },
+        {
+          "bridgeId": "con-subsidiary-history-and-reform",
+          "tier": "subsidiary",
+          "description": "Test claims of Christian moral or political progress against religious complicity, nonreligious reform, and competing explanations of totalitarianism."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-science-and-natural-explanation",
+      "title": "Cosmic Intelligibility, Biology, and Natural Explanation",
+      "weightPercent": 19,
+      "rationale": "This issue tests the motion's science dimension by comparing creator-based explanations of order, intelligibility, and biological information with naturalistic standards of evidence and explanatory sufficiency."
+    },
+    {
+      "sectionId": "section-reason-revelation-and-christian-warrant",
+      "title": "Reason, Revelation, and the Warrant for Christianity",
+      "weightPercent": 18,
+      "rationale": "The motion concerns Christian theism rather than an unspecified first cause, making the epistemic transition from cosmic order to divine intentions, Jesus's identity, miracles, prophecy, and resurrection indispensable."
+    },
+    {
+      "sectionId": "section-morality-and-objective-obligation",
+      "title": "Morality, Objective Obligation, and Atonement",
+      "weightPercent": 18,
+      "rationale": "This section addresses whether God is required to ground moral truth and responsibility, whether secular accounts can sustain moral judgment, and whether distinctively Christian sacrifice coheres morally."
+    },
+    {
+      "sectionId": "section-dignity-meaning-and-hope",
+      "title": "Human Dignity, Meaning, Solidarity, and Hope",
+      "weightPercent": 16,
+      "rationale": "The issue directly covers three named burdens by testing divine-image and ultimate-hope accounts against evolutionary, social, cultural, and secular accounts of human worth and purpose."
+    },
+    {
+      "sectionId": "section-divine-greatness-suffering-and-authority",
+      "title": "Divine Greatness, Suffering, Freedom, and Authority",
+      "weightPercent": 17,
+      "rationale": "Because the motion expressly asks whether God is great, the implications of natural evil, judgment, omniscience, freedom, redemption, and divine governance form a distinct motion-level clash."
+    },
+    {
+      "sectionId": "section-religion-violence-and-social-consequences",
+      "title": "Religion, Violence, Liberty, and Historical Consequences",
+      "weightPercent": 12,
+      "rationale": "This issue tests whether coercion and social harm follow from Christian or supernatural commitments and how claims about rights, reform, slavery, fascism, and totalitarianism bear on religion's consequences."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-deism-does-not-warrant-revelation",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+      "sectionId": "section-reason-revelation-and-christian-warrant",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Even granting a deistic first cause does not establish knowledge of a deity's will, commands, intentions, or specifically Christian revelation.",
+      "sourceSpan": {
+        "startEvent": 352,
+        "endEvent": 450
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens remains the sole opening speaker throughout this continuous first-person discussion of deism, theism, and religious knowledge claims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "were true or otherwise and I think I'd have to begin with a distinction between theism and deism even Thomas aquinas's uh famous five proofs of the existence of God for example are strictly speaking hardly theological at all they're essentially only deistic they are about first causes or uncaused potential or latent causes they derive the idea of a Creator from various gaps and",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 68,
+        "endToken": 132,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-natural-inquiry-falsifiability",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "sectionId": "section-science-and-natural-explanation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Naturalistic explanations answer to physical and biological evidence and possible falsification, whereas theistic faith specifies no evidence that would disconfirm it.",
+      "sourceSpan": {
+        "startEvent": 451,
+        "endEvent": 508
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person opening remains Hitchens's, with explicit contrasts between his evidential commitments and those he assigns to theists.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "the debate uh we don't have a word adist though I think we should I would say I was an adist as well as an atheist I don't believe there was a prime mover I don't believe there was a first cause of a Divine kind I think we have better and further and brighter explanations for the origins of things than the idea of a supernatural first cause but some also would say we don't even",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 5,
+        "endToken": 81,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-suffering-indicts-designer",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-04",
+      "sectionId": "section-divine-greatness-suffering-and-authority",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Extinction, evolutionary suffering, prolonged human misery, and belated redemptive intervention portray the proposed designer as cruel, incompetent, and unworthy of worship.",
+      "sourceSpan": {
+        "startEvent": 532,
+        "endEvent": 608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding continuous portion of Hitchens's assigned opening statement, ending immediately before applause and Lennox's introduction.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "such a crummy designer most of his Creations die off and the rest suffer miserably and and the Redemptive offers just don't somehow take of being cruel and capricious and bungling and and incompetent why and callous uh as a father and so since this is as far as I can get now I have to tell you why I don't think the idea of an eternal father is a good one in any case when I next",
+        "characterCount": 380,
+        "tokenCount": 78,
+        "startToken": 446,
+        "endToken": 523,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-religious-abuse-does-not-refute-god",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-05",
+      "sectionId": "section-religion-violence-and-social-consequences",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Evils committed by professed believers do not disprove God's greatness, just as destructive abuses of scientific knowledge do not disprove the value of science.",
+      "sourceSpan": {
+        "startEvent": 619,
+        "endEvent": 640
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox has just taken the floor, names Hitchens's claims directly, and delivers this comparison in an uninterrupted first-person opening response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "greatness of God and the inexcusable evil that has been done by those professing his name and so I do not deduce that God Is Not Great and that religion poisons everything after all if I fail to distinguish between the genius of Einstein and the abuse of his science to create weapons of mass destruction I might be tempted to say science is not great and Technology poisons everything what is more as I look back at the evils of atheist regimes",
+        "characterCount": 445,
+        "tokenCount": 83,
+        "startToken": 33,
+        "endToken": 115,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-mechanism-and-creator-are-complementary",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "sectionId": "section-science-and-natural-explanation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Scientific laws describe how an ordered universe operates but do not create it or eliminate a creator as an explanation of why it exists and is intelligible.",
+      "sourceSpan": {
+        "startEvent": 640,
+        "endEvent": 729
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous opening statement is Lennox's, and he explicitly identifies and answers Hitchens's claim concerning microscopes, telescopes, and religious explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "science are mutually exclusive explanations of the universe is as wrong as saying that internal combustion and Henry Ford are mutually exclusive explanations of the automobile they are complimentary explanations one explains how it works the other why it exists to think that as the reach of our instruments increases the greatness of God the Creator somehow diminished is to make the mistake of confusing mechanism with agency",
+        "characterCount": 427,
+        "tokenCount": 68,
+        "startToken": 109,
+        "endToken": 176,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-divine-image-freedom-and-ultimate-hope",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-08",
+      "sectionId": "section-dignity-meaning-and-hope",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "Science cannot settle questions of meaning and value, while creation in God's image supplies human nobility and freedom and avoids the absence of ultimate hope attributed to blind processes.",
+      "sourceSpan": {
+        "startEvent": 800,
+        "endEvent": 824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous thematic transition within Lennox's opening statement, delivered in his first-person argument without any intervening speaker.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "value for human beings but we found we couldn't do away with the greatness of God ladies and gentlemen and you can do away with the nobility of human beings owed with all the potential of hearts and Minds made in God's image you also do away with their freedom you are left with a Mindless unguided procet that somehow threw humans up at its endless Lottery to exist without ultimate hope for a tiny moment only to be crushed by the same blind",
+        "characterCount": 443,
+        "tokenCount": 84,
+        "startToken": 76,
+        "endToken": 159,
+        "weightedOverlap": 44,
+        "matchedAnchorTokens": 13,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-standard-for-moral-indictment",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-10",
+      "sectionId": "section-morality-and-objective-obligation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Calling God tyrannical or morally bad presupposes a moral standard beyond limited human convention, which blind and unguided evolutionary processes cannot themselves supply.",
+      "sourceSpan": {
+        "startEvent": 844,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox explicitly addresses Hitchens by name and continues the same uninterrupted opening argument through the final delivered boundary-context row.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God Is Not Great is a moral statement to say he's not he's tyrannical is a moral statement and that must be based on some moral standard otherwise you couldn't distinguish evil from its opposite but if there is no Eternal base for values external to humanity how can Mr hitson or anyone else's standards be anything but limited human conventions ultimately meaningless products of a blind andu guided evolutionary",
+        "characterCount": 413,
+        "tokenCount": 70,
+        "startToken": 79,
+        "endToken": 148,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmos-undermines-human-design",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "section-science-and-natural-explanation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Cosmic expansion, eventual destruction, pervasive emptiness, and humanity's minute vulnerability undermine the claim that the universe was purposefully designed for human redemption.",
+      "sourceSpan": {
+        "startEvent": 1011,
+        "endEvent": 1109
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly shifts to cosmology and sustains the argument through its concluding rejection of a religious explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "claim the credit for the nothingness and who went to all this trouble this fantastic explosion of of of of nothingness these infinite spaces of nothingness uh and with the with the with the destiny of Destruction written in every Galaxy um in order to create this one privileged planet with this one very shivering uncertain vulnerable primate species on it that's only been here for 100,000 suffering years and has only been offered Redemption",
+        "characterCount": 444,
+        "tokenCount": 76,
+        "startToken": 489,
+        "endToken": 564,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-omniscient-rule-as-dictatorship",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "section-divine-greatness-suffering-and-authority",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Rule by an eternal omniscient father would be an inescapable dictatorship that surveils thought, creates morally defective humans, and threatens punishment for that defect.",
+      "sourceSpan": {
+        "startEvent": 1110,
+        "endEvent": 1195
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same uninterrupted Hitchens turn develops the paternal analogy into surveillance, thought control, inherited defect, and earthly religious power.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "things are attributable to an eternal father who is unknowable except by those who claim as Dr LX does sources of information denied to me and many other people what would it mean at the minimum it would mean we were living under an unalterable unchallengeable dictatorship which might or might not be benign we have no Assurance it would be benign in my view benign dictatorships",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 188,
+        "endToken": 254,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-faith-no-unique-moral-act",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "section-morality-and-objective-obligation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Faith supplies no uniquely good action unavailable to nonbelievers, while religious commitment can uniquely motivate grave harms performed specifically because of faith.",
+      "sourceSpan": {
+        "startEvent": 1197,
+        "endEvent": 1240
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces a response to Lennox on morality and frames two sustained challenges before closing his allotted turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "not yet had an answer to it and there must be a good answer if they are to make the claim that Faith licenses morality and ethics and then my second question coroller question much easier please think of a wicked action done by someone purely because they are a person of Faith think of an evil thing said or an evil thing done that is only done because the person is is religious",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 195,
+        "endToken": 268,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-incarnation-resurrection-evidential-bridge",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "section-reason-revelation-and-christian-warrant",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Confidence about God need not be arrogant certainty when grounded in disclosed evidence, and Christianity centrally depends on evidence that Jesus revealed God as incarnate and rose from death.",
+      "sourceSpan": {
+        "startEvent": 1322,
+        "endEvent": 1357
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Within Lennox's uninterrupted rebuttal, the first-person argument explicitly centers revelation and culminates in the resurrection claim.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "arrogance it's a question simply of accepting things for which there is evidence so I would zero in to the central claim of Christianity which is this that God became human the word became flesh and as a scientist I want to say that my response to that is is there any evidence for it that Jesus is who whom he claimed to be he claimed to be revealing God and if Christopher Hitchens for example reveal something about",
+        "characterCount": 418,
+        "tokenCount": 79,
+        "startToken": 57,
+        "endToken": 135,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-shared-morality-and-unique-self-sacrifice",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "section-morality-and-objective-obligation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Atheists and Christians can both recognize and perform good because every person bears God's image, while Christ's self-sacrificial death is the distinctively Christian moral act.",
+      "sourceSpan": {
+        "startEvent": 1427,
+        "endEvent": 1469
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox explicitly takes up Hitchens's moral challenge and carries the answer through the closing completion of his speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a person is an atheist or a Christian or anything else they are made in the image of God and therefore they are moral beings therefore they're capable of seeing good and doing good and sometimes my atheist friends could put me to shame so there is that basic moral compass which makes Mr hitch's Question a little bit um beside the point but if I were going to answer his question",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 76,
+        "endToken": 147,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-supernatural-belief-causes-coercion",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "section-religion-violence-and-social-consequences",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religious violence and coercion can follow directly from supernatural belief and submission to a divine dictatorship rather than being merely accidental abuses of religion.",
+      "sourceSpan": {
+        "startEvent": 1523,
+        "endEvent": 1536
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After clarifying his main objection, Hitchens expressly distinguishes intrinsic religious consequences from merely nominal misconduct.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "in the name of as you put it religion I think you were trying to be generous to me I do insist that this kind of bad behavior is innate in religion is part of religion itself it's not an abuse of it or something undertaken in the name of it's a direct consequence of the willingness to believe in the Supernatural and the willingness to believe in a in a supernatural dictatorship",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 29,
+        "endToken": 101,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-christian-violence-as-doctrinal-perversion",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "section-religion-violence-and-social-consequences",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Violence committed in Christ's name is a perversion rather than an expression of Christianity because Christ prohibited taking up the sword and declared his kingdom nonworldly.",
+      "sourceSpan": {
+        "startEvent": 1537,
+        "endEvent": 1552
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker change is clear, and Lennox's answer consistently contrasts Christ's commands with the conduct of nominal adherents.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "of behavior savior he told his followers not to take up the sword why because his kingdom was not of this world so people who behave like that in the Name of Christ aren't followers of Christ they're disobeying him and I would want to argue that as we look at his character and his attitude this kind of evil behavior is not endemic to Christianity it's endemic in caricatures and",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 37,
+        "endToken": 107,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-gospel-prophecy-warrant-challenge",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "section-reason-revelation-and-christian-warrant",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "The Gospel case for Jesus is weakened by narratives shaped to fulfill known prophecy and by nearer Jewish authorities' rejection of the asserted messianic claim.",
+      "sourceSpan": {
+        "startEvent": 1642,
+        "endEvent": 1714
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens begins a new response after Lennox's evidence claim and sustains one historical-textual critique through the delivered lookahead conclusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "so that the the conditions of Prophecy fulfillment can be met but there's a much Graver problem even than that naivity um which is that these these prophecies are of a Jewish Messiah to come and the Jewish religious authorities of the time considered and who were the the nearest much closer to being eyewitnesses if the story is true at all much closer than the authors of any of",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 167,
+        "endToken": 236,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-jesus-divinity-and-prophetic-warrant",
+      "qualifiedCandidateId": "chunk-003:c003-01",
+      "sectionId": "section-reason-revelation-and-christian-warrant",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Jesus claimed divinity, and historically embedded prophecy concerning the promised sacrifice for sin supports the specifically Christian identification of him with God's revelation.",
+      "sourceSpan": {
+        "startEvent": 1728,
+        "endEvent": 1774
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Lennox to respond, and the uninterrupted first-person defense matches his Christian-theist position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Bronze Age Superstition you'd be better to get it right because one of your statements there is just false Jesus claimed to be God and they stoned him why did they Stone him because you being a man make yourself God the notion that he never claimed to be God is simply false and you say prophecy is irrelevant and Superstition and all of that one of the things that I find very interesting about the Christian",
+        "characterCount": 409,
+        "tokenCount": 77,
+        "startToken": 11,
+        "endToken": 87,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-secular-solidarity-and-love",
+      "qualifiedCandidateId": "chunk-003:c003-03",
+      "sectionId": "section-dignity-meaning-and-hope",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Human concern, solidarity, duty, affection, and love can arise from evolutionary survival and durable social bonds without requiring belief in God.",
+      "sourceSpan": {
+        "startEvent": 1906,
+        "endEvent": 1961
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Hitchens by name, and the sustained first-person naturalistic account is continuous until the handoff to Lennox.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "some Force to it if we didn't have human solidarity if we didn't realize that we are brothers and sisters one with another that we have responsibilities duties to one another that these are not merely uh reciprocal in evolutionary terms in other words you be nice to me I'll look out for you but they can involve real ties real bonds of affection friendship even love if we didn't",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 174,
+        "endToken": 243,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-divine-image-grounds-unique-human-worth",
+      "qualifiedCandidateId": "chunk-003:c003-04",
+      "sectionId": "section-dignity-meaning-and-hope",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Creation in God's image rationally grounds the unique value of human beings, whereas an evolutionary account alone can permit conclusions that assign newborn humans no greater value than other animals.",
+      "sourceSpan": {
+        "startEvent": 1963,
+        "endEvent": 2013
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names John at the handoff, and the ensuing Christian argument is delivered continuously in Lennox's first-person voice.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "feelings and morality within us I don't think that's the issue because my Christian faith guarantees those uh to Christopher Hitchens as it does to me the problem is the rational justification of this against the view of someone like singer who is taking his extrapolations From Evolution to a logical conclusion and ending up with views that a newborn baby is of no more value than a dog a chimp or h a pig and other words devaluing human beings",
+        "characterCount": 446,
+        "tokenCount": 81,
+        "startToken": 23,
+        "endToken": 103,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-dna-information-inference-to-intelligence",
+      "qualifiedCandidateId": "chunk-003:c003-06",
+      "sectionId": "section-science-and-natural-explanation",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "Observable variation through natural selection should be distinguished from unguided origins, because the language-like information in DNA supports an inference to intelligence.",
+      "sourceSpan": {
+        "startEvent": 2076,
+        "endEvent": 2112
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to John, and the response explicitly identifies the speaker as a scientist and mathematician defending intelligent causation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "natural selection produces variation and so on then that's not a particularly controversial thing we can observe if you mean by Evolution uh the notion that by unguided Mindless processes life originally arose and comes to be what it is I myself as a scientist find that unconvincing and I find it unconvincing as a mathematician particularly because at the heart of Life there is the datab base of DNA",
+        "characterCount": 402,
+        "tokenCount": 70,
+        "startToken": 49,
+        "endToken": 118,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-secular-meaning-and-transcendence",
+      "qualifiedCandidateId": "chunk-003:c003-07",
+      "sectionId": "section-dignity-meaning-and-hope",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "After leaving theism, people can retain morality and responsibility while finding consolation, beauty, wonder, and transcendence in literature, philosophy, and science.",
+      "sourceSpan": {
+        "startEvent": 2171,
+        "endEvent": 2214
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly addresses the question to Christopher, and the uninterrupted answer advances his secular cultural and moral outlook.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "cultural question that remains I think is this how are people going to live when they've given up the Supernatural and the superstitious aren we still going to need I would say we are still going to need the numinous and the transcendent that's that's innate in us too as is reason as is morality and so the great struggle is going to be how how we find consolation and and beauty",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 103,
+        "endToken": 174,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-divine-christ-self-sacrifice-and-greatness",
+      "qualifiedCandidateId": "chunk-003:c003-08",
+      "sectionId": "section-divine-greatness-suffering-and-authority",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Because Christ is divine rather than merely human, his voluntary sacrificial death can coherently provide forgiveness and protective love and ground the claim that God is immeasurably great.",
+      "sourceSpan": {
+        "startEvent": 2384,
+        "endEvent": 2430
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage remains within Lennox's announced closing remarks and directly names Hitchens before defending Christ in distinctly Christian-theist terms.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "hittin who can forgive sins they said but God alone but that is exactly the issue if Jesus is merely a man like all others then of course it's outrageous but he isn't he is man but he never was merely man and that's why his death is utterly unique and why Millions throughout history and in our world today find peace and forgiveness in his name at lunchtime Mr Hitchin told us he",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 90,
+        "endToken": 163,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-vicarious-redemption-moral-objection",
+      "qualifiedCandidateId": "chunk-003:c003-09",
+      "sectionId": "section-morality-and-objective-obligation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Divine self-sacrifice does not establish a uniquely Christian morality because it presupposes exceptional divine status and leaves the morality of vicarious redemption unresolved.",
+      "sourceSpan": {
+        "startEvent": 2431,
+        "endEvent": 2463
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage begins with Hitchens's announced closing remarks and explicitly addresses Lennox's earlier attempted answer to Hitchens's moral challenge.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "consolation offered in that form I still have unanswered questions challenges to myself that I feel I must deal with to my question uh can of could have a moral action be performed by a Believer and not performed by me Dr LX you will have noticed uh said um there's a moral action that a Believer could perform that I couldn't and that was to offer myself as a sacrifice for the Redemption",
+        "characterCount": 389,
+        "tokenCount": 74,
+        "startToken": 59,
+        "endToken": 132,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-slavery-and-nonreligious-reform",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "sectionId": "section-religion-violence-and-social-consequences",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Christian abolitionism does not make Christianity the source of moral progress because Christianity long justified slavery and opposition also arose outside the faith.",
+      "sourceSpan": {
+        "startEvent": 2576,
+        "endEvent": 2614
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly marks this as his closing point and sustains the argument until his concluding thanks.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Christianity I'll make this I have to make this my closing point in his campaign against slavery he should have been because it was about time that there was a Christian who said that this trade had gone on long enough and any Christian should have felt responsible for saying so because for the entire period of its existence slavery and the slave trade had been Justified directly",
+        "characterCount": 382,
+        "tokenCount": 68,
+        "startToken": 7,
+        "endToken": 74,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

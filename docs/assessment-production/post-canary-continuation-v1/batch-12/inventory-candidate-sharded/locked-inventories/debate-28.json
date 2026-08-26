@@ -1,0 +1,869 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "28",
+  "debateId": "turek-shermer-reality-theism-atheism-2018",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-theistic-explanatory-route",
+      "side": "pro",
+      "description": "Establish a cumulative inference from the existence and character of physical reality, rationality, biological information, moral obligation, evil, and scientific order to a transcendent, intelligent, personal, morally perfect, and sustaining divine cause.",
+      "successCriteria": "Show that the cited features require or are better accounted for by the attributes of a theistic God, that skeptical naturalism does not supply adequate grounding for those features, and that the cumulative explanation remains coherent under objections from suffering and scientific alternatives.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-theism-best-explains-reality",
+        "tier": "motion",
+        "description": "Connect the cumulative explanatory force of creation, reason, information, morality, evil, and science to the conclusion that God is the best overall explanation of reality."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-transcendent-cause",
+          "tier": "central",
+          "description": "Establish that the beginning, composition, and fine-tuned conditions of physical reality require a cause transcending space, time, and matter and possessing sufficient power and intelligence."
+        },
+        {
+          "bridgeId": "pro-central-rational-informational-order",
+          "tier": "central",
+          "description": "Explain why reliable reason, law-governed natural order, and message-like biological information require an intelligent source rather than being adequately grounded in unguided material processes."
+        },
+        {
+          "bridgeId": "pro-central-objective-morality",
+          "tier": "central",
+          "description": "Establish that objective moral truths and obligations require an external, unchanging standard grounded in a personal divine nature rather than solely in human preference or social development."
+        },
+        {
+          "bridgeId": "pro-central-evil-and-justice",
+          "tier": "central",
+          "description": "Reconcile suffering and wrongdoing with the proposed divine attributes while explaining how recognition of evil and the demand for ultimate justice depend on objective goodness."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-naturalistic-origin-gaps",
+          "tier": "subsidiary",
+          "description": "Show that evolutionary mechanisms operating on existing life do not by themselves explain the origin of replication, genetic coding, epigenetic organization, or the first living system."
+        },
+        {
+          "bridgeId": "pro-subsidiary-cumulative-identification",
+          "tier": "subsidiary",
+          "description": "Demonstrate that the attributes inferred across the separate explanatory domains converge on one coherent theistic cause rather than an unrelated collection of causes."
+        }
+      ]
+    },
+    {
+      "routeId": "con-scientific-skeptical-route",
+      "side": "con",
+      "description": "Defend evidence-sensitive suspension of theistic belief and present scientific inquiry, natural mechanisms, emergent human capacities, and human-centered ethics as sufficient methods and resources for explaining the relevant features of reality.",
+      "successCriteria": "Establish a public and testable evidential standard, show that invoking God does not add a supported mechanism or discriminating prediction, provide naturalistic accounts where the theistic case alleges explanatory dependence, and identify observations that burden the proposed divine explanation.",
+      "motionBridge": {
+        "bridgeId": "con-motion-skepticism-best-explains-reality",
+        "tier": "motion",
+        "description": "Connect testable, revisable, and publicly checkable inquiry to the conclusion that skeptical naturalism is warranted over an insufficiently evidenced theistic explanation."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-evidential-standard",
+          "tier": "central",
+          "description": "Establish that explanatory claims require publicly assessable evidence, mechanisms, and exposure to possible disconfirmation rather than belief, private experience, or appeals to unresolved gaps."
+        },
+        {
+          "bridgeId": "con-central-natural-processes",
+          "tier": "central",
+          "description": "Show that physical, evolutionary, and emergent processes can account for biological information, complexity, thought, choice, and rational practice without requiring a supernatural source."
+        },
+        {
+          "bridgeId": "con-central-naturalistic-morality-meaning",
+          "tier": "central",
+          "description": "Ground moral judgment, objective standards, purpose, and progress in shared human nature, harm reduction, empathy, reciprocity, relationships, social learning, and revisable institutions."
+        },
+        {
+          "bridgeId": "con-central-evil-disconfirmation",
+          "tier": "central",
+          "description": "Show that extensive preventable suffering and an inhospitable cosmic history create evidential difficulty for an all-knowing, all-powerful, wholly good, human-directed creator."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-religious-discrimination",
+          "tier": "subsidiary",
+          "description": "Require a reliable evidential procedure for distinguishing Christianity or theism from incompatible religious alternatives and inherited or experiential commitments."
+        },
+        {
+          "bridgeId": "con-subsidiary-self-correction-and-bias",
+          "tier": "subsidiary",
+          "description": "Explain how organized criticism, replication, and attention to selection effects make scientific inquiry capable of correcting cognitive biases behind apparent design, providence, and miracles."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "explanatory-standards",
+      "title": "Evidence, Testability, and Explanatory Adequacy",
+      "weightPercent": 19,
+      "rationale": "This issue establishes what must count as an explanation of reality, including the roles of causal inference, mechanisms, testability, cumulative argument, skeptical withholding of belief, and scientific self-correction."
+    },
+    {
+      "sectionId": "cosmic-origin-design",
+      "title": "Cosmic Origins, Fine-Tuning, and Transcendent Causation",
+      "weightPercent": 18,
+      "rationale": "This section addresses whether the universe’s beginning, physical conditions, and apparent order warrant a transcendent intelligent cause or remain open to naturalistic alternatives and non-purposeful cosmic history."
+    },
+    {
+      "sectionId": "life-information-evolution",
+      "title": "Biological Information, Life’s Origin, and Evolution",
+      "weightPercent": 17,
+      "rationale": "This issue joins the inference from genetic and organismal information to intelligence with disputes over evolutionary mechanisms, genomic history, thermodynamics, abiogenesis, replication, and biological organization."
+    },
+    {
+      "sectionId": "reason-scientific-order",
+      "title": "Reason, Mind, Freedom, and the Order Presupposed by Science",
+      "weightPercent": 14,
+      "rationale": "This section concerns whether rational thought, volition, and stable natural order require a divine rational ground or can arise and remain trustworthy within physical and emergent naturalistic accounts."
+    },
+    {
+      "sectionId": "morality-meaning-justice",
+      "title": "Moral Grounding, Human Meaning, and Justice",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether objective moral duties, human purpose, and ultimate justice require God’s nature and judgment or can be grounded in human nature, empathy, social development, relationships, and institutions."
+    },
+    {
+      "sectionId": "evil-purpose-religious-truth",
+      "title": "Evil, Divine Purpose, and Competing Religious Claims",
+      "weightPercent": 12,
+      "rationale": "This section addresses whether suffering and religious diversity fit a purposeful, good God and a specifically Christian account, or instead support evidential skepticism about providence, revelation, miracles, and exclusive truth claims."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cosmic-beginning-fine-tuning-cause",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-01",
+      "sectionId": "cosmic-origin-design",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "The universe's beginning and extreme fine-tuning are better explained by a powerful, intelligent, spaceless, timeless, and immaterial creator than by unguided chance.",
+      "sourceSpan": {
+        "startEvent": 197,
+        "endEvent": 301
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This uninterrupted passage occurs within Frank Turek's opening statement and uses his first-person framing throughout.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "beginning out of nothing as even many atheists are now admitting then whatever created space matter in time can't be made a space matter in time in other words the cause must be spaceless timeless immaterial powerful moral well we'll get to that in a minute personal and intelligent now when you think of a being with those qualities who do you think of that's what we mean by God",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 640,
+        "endToken": 709,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-reason-materialism-trust-defeat",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+      "sectionId": "reason-scientific-order",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Materialist atheism undermines confidence in rational thought because physically determined brain reactions provide no basis for trusting beliefs as true.",
+      "sourceSpan": {
+        "startEvent": 302,
+        "endEvent": 356
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains inside Turek's uninterrupted opening and explicitly identifies Shermer's materialism before presenting Turek's objection.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "atheism were true we couldn't even be able to reason because if we're just moist robots we're not reasoning we're just reacting and a former evolutionist or a gentleman wasn't evolutionist and realized the problem with his worldview Haldane put it this way he said this if my mental processes are determined wholly by the motions of atoms in my brain I have no reason to suppose that my beliefs",
+        "characterCount": 394,
+        "tokenCount": 70,
+        "startToken": 182,
+        "endToken": 251,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-life-dna-message-intelligence",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "sectionId": "life-information-evolution",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "The ordered, message-like information in DNA is positive evidence of an intelligent mind because messages and programs arise from intelligent sources.",
+      "sourceSpan": {
+        "startEvent": 357,
+        "endEvent": 415
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the third explicitly enumerated argument in Turek's continuous opening statement, delivered before the transition to morality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "intelligent being mom or if you're walking along the beach and you see in the sand john loves Mary right down here in Santa Cruz what are you gonna say the waves did that crabs came out of the water and made that message no you're gonna say that had to be the product of a mind because you know and all your prior experiences that messages only come from minds they don't come from blind natural laws",
+        "characterCount": 400,
+        "tokenCount": 78,
+        "startToken": 99,
+        "endToken": 176,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-morality-external-divine-standard",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-04",
+      "sectionId": "morality-meaning-justice",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Objective moral comparisons require a standard beyond humanity, and God's unchanging nature supplies the external standard by which people and actions are judged.",
+      "sourceSpan": {
+        "startEvent": 416,
+        "endEvent": 450
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly announces his fourth effect and continues Turek's opening argument without any intervening speaker transition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "real map than is map B in other words there's an external reference to which we can measure both maps that that standard is what we can do to figure out which map is closer to the truth well that's exactly what we do when we compare mother Teresa and Hitler mother Teresa wasn't the standard Hitler wasn't the standard there's a standard beyond both of them by which we measure both of them and that standard is God's nature",
+        "characterCount": 424,
+        "tokenCount": 80,
+        "startToken": 156,
+        "endToken": 235,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evil-presupposes-good-and-justice",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-05",
+      "sectionId": "evil-purpose-religious-truth",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "The recognition of evil and injustice presupposes objective good and justice, which ultimately depend on God rather than merely conflicting human opinions.",
+      "sourceSpan": {
+        "startEvent": 489,
+        "endEvent": 581
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person account and sustained argument continue within Turek's allotted opening, before his explicit transition to science.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "be justice or I should say there can't be injustice unless there's justice in fact CS Lewis put it best he said evil requires good and good requires God he says as an atheist my argument against God was that the universe seemed so cruel and on just but how had I got this idea of just and unjust a man does not call line crooked unless he has some idea of a straight line what was",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 343,
+        "endToken": 419,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-science-stable-order-intellect",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "sectionId": "reason-scientific-order",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Science depends on stable, goal-directed natural order, and that order is best explained by an external directing intellect rather than randomness.",
+      "sourceSpan": {
+        "startEvent": 582,
+        "endEvent": 643
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek explicitly marks the transition to his final effect, science, and remains the sole speaker through the concluding cited observation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "goal-directed why is nature that way for example why do the planets reliably go around the Sun why don't they go in herky-jerky movements or random movements you say frankerz there's a law like gravity I know but why is there a law like gravity and why is it so precise and consistent it appears to be the product of a mind not randomness in order to do science you need consistent natural laws",
+        "characterCount": 394,
+        "tokenCount": 76,
+        "startToken": 49,
+        "endToken": 124,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-theistic-identification",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-07",
+      "sectionId": "explanatory-standards",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Creation, reason, information, morality, evil, and science cumulatively identify a powerful, rational, intelligent, morally perfect, personal, and sustaining theistic God.",
+      "sourceSpan": {
+        "startEvent": 644,
+        "endEvent": 674
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage is Turek's explicit synthesis of the six preceding arguments immediately before promotional and closing remarks.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "evil and science what did they tell us well I think when you break these down you get the attributes of what we call God from creation we know that the cause is immaterial timeless and spaceless he's also extremely powerful to create out of nothing from reason we know this being is rational from information we know he's extremely intelligent and has purpose from morality we know he's absolutely morally perfect and also personal",
+        "characterCount": 431,
+        "tokenCount": 75,
+        "startToken": 6,
+        "endToken": 80,
+        "weightedOverlap": 56,
+        "matchedAnchorTokens": 15,
+        "propositionOverlap": 13,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-morality-harm-empathy-reciprocity",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-08",
+      "sectionId": "morality-meaning-justice",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Atheists can condemn child abuse for natural, human-centered reasons including harm, lasting psychological damage, empathy, and reciprocity without invoking God.",
+      "sourceSpan": {
+        "startEvent": 700,
+        "endEvent": 716
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows the moderator's transfer of the floor to Michael Shermer and is delivered in his uninterrupted opening statement.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God can you think of any reasons why sexually molesting a child is wrong okay can you think of any reasons why it would be bad really most of you can't think of any reason why this is wrong of course you can all right full stop that's good enough it's wrong because of all the reasons you're thinking of right now harm to a sentient being long term destruction of their psychological",
+        "characterCount": 383,
+        "tokenCount": 73,
+        "startToken": 18,
+        "endToken": 90,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-evidence-sensitive-atheism",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-09",
+      "sectionId": "explanatory-standards",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "constructive",
+      "proposition": "A defensible atheism withholds belief in God until sufficient evidence appears rather than claiming certainty that no God exists.",
+      "sourceSpan": {
+        "startEvent": 737,
+        "endEvent": 782
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer explicitly defines agnosticism and weak versus strong atheism during his uninterrupted opening statement after recounting his background.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "atheism strong atheist say I believe there is no God we Kathy assay I don't believe in God slight difference I don't think the first one is is this tenable a position I don't know that there is no God I'm not sure how you would prove it would be difficult to prove a negative in that sense prove that something doesn't exist but the null hypothesis in science that is I withhold judgment or I withhold belief until sufficient evidence",
+        "characterCount": 434,
+        "tokenCount": 81,
+        "startToken": 160,
+        "endToken": 240,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-god-claim-needs-mechanism",
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-10",
+      "sectionId": "explanatory-standards",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Neither bare theistic belief nor saying that God caused an unexplained phenomenon constitutes an explanation unless it supplies evidence and a mechanism for how the result occurs.",
+      "sourceSpan": {
+        "startEvent": 783,
+        "endEvent": 845
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer delivers the full passage continuously, explicitly reframing the debate and then scrutinizing the explanatory content of Turek's God hypothesis.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "life to humans but even that just saying well my explanation of X whatever it is planets gravity the universe something rather than nothing morality consciousness you know God did it that's not an explanation those are just words you're just plugging words into the blank the gap anymore then like people I deal with that or believe in psychic power astrology ESP telepathy and so",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 298,
+        "endToken": 363,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-reason-science-as-practices",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "reason-scientific-order",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Science and reason are practices used to investigate questions, so invoking reason to deny their autonomy is self-undermining.",
+      "sourceSpan": {
+        "startEvent": 895,
+        "endEvent": 912
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer expressly addresses Frank's earlier claims and develops the point continuously in his own opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "questions so the moment you say that theism explained science that you're treating it like it's a thing like a reason is this thing sitting up there that needed to be created it's not it's more about think of it as a verb more than a noun it's it's something we do and the moment you open your mouth to make the argument that reason and science can't stand on its own you've lost the argument you've just used",
+        "characterCount": 409,
+        "tokenCount": 79,
+        "startToken": 24,
+        "endToken": 102,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-preventable-suffering-divine-tension",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "sectionId": "evil-purpose-religious-truth",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Preventable childhood suffering is causally tractable through science but difficult to reconcile with an all-knowing, all-powerful, wholly good God.",
+      "sourceSpan": {
+        "startEvent": 916,
+        "endEvent": 945
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is a continuous segment of Shermer's presentation, with first-person framing and a direct challenge to theistic explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "all preventable causes preventable tragedies we know the causes of them we can eliminate the causes if we have the right science and technology we have the right science and technology medicine the delivery to these poor countries is the difficult part what's religions explanation how would theism explain this and we get things like well this is part of God's plan or you know God",
+        "characterCount": 382,
+        "tokenCount": 66,
+        "startToken": 91,
+        "endToken": 156,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-emergent-mind-and-volition",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "sectionId": "reason-scientific-order",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Human thought, choice, and volition can emerge at higher explanatory levels without being invalidated by their underlying physical composition.",
+      "sourceSpan": {
+        "startEvent": 1191,
+        "endEvent": 1249
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer gives the sustained answer following Turek's displayed question, using examples of emergence, explanatory levels, and degrees of freedom.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "and neutrons of the atom you don't it's a higher level explanation yeah much like we talked about emergent properties how do you get democracy out of atoms we don't you don't use physics to explain democracy you use political science so we're what we're talking about here is kind of different levels explanatory levels which is one reason why we have different fields of study to",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 50,
+        "endToken": 116,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-genomic-evolutionary-history",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "life-information-evolution",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Viral and Neanderthal contributions to the human genome undermine claims of perfect engineered DNA and favor an evolutionary history over purposeful coding.",
+      "sourceSpan": {
+        "startEvent": 1551,
+        "endEvent": 1579
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer answers Turek's coding question with specific genomic examples and then rejects the computer-program description as an explanatory metaphor.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "perfect there's not a single what no there could be mutations in it it's not not just mutations 8% of our DNA is viral DNA this is called lateral gene transfer it was discovered in the 60s and 70s there's a new book out called the tangled web tangled tree David qualm and I just had him on my podcast last week he talks about all the new research on this eight since the human genome",
+        "characterCount": 383,
+        "tokenCount": 76,
+        "startToken": 16,
+        "endToken": 91,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cosmic-uncomposed-ultimate-composer",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "sectionId": "cosmic-origin-design",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Material composition requires an external composer that cannot itself be composed, yielding one immaterial, spaceless, timeless being of pure actuality.",
+      "sourceSpan": {
+        "startEvent": 1608,
+        "endEvent": 1624
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek introduces the composition argument in response to Shermer's questions and develops its regress-stopping conclusion without changing advocates.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "external force now the force that composes the universe and composes matter can't be composed itself because then that being would need a composer as well yeah so what you're getting back to is an immaterial spaceless timeless composer that is pure actuality no potentiality that being is is isn't composed at all it's spaceless timeless any material who created only be one of the timeless bean if you're timeless do you have a beginning",
+        "characterCount": 438,
+        "tokenCount": 75,
+        "startToken": 26,
+        "endToken": 100,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 10,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmic-delay-against-human-purpose",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-02",
+      "sectionId": "cosmic-origin-design",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "The enormous delay before human life and Christianity is difficult to reconcile with a universe purposefully designed for humanity.",
+      "sourceSpan": {
+        "startEvent": 1776,
+        "endEvent": 1809
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker challenges Frank's design account, uses skeptical humor, and frames the objection through cosmic and Christian chronology.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "universe is 13.8 billion years old and humans are roughly about a hundred thousand years old Christianity began about 2,000 years ago what was God doing that 99.9 9% of all that time what you know if this is all beautifully designed and elegantly and teleological and purposeful and it's all here for us so that we would be here boom here we are why the thirteen point seven eight",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 21,
+        "endToken": 93,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-religious-diversity-nonconvergence",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-04",
+      "sectionId": "evil-purpose-religious-truth",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Persistent religious diversity without evidential convergence undermines confidence that Christianity is uniquely true.",
+      "sourceSpan": {
+        "startEvent": 1900,
+        "endEvent": 1939
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker addresses the Christian claimant, contrasts multiple religions, and explicitly uses scientific convergence as the skeptical comparison.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "the TV show the real theory one out because there was more evidence for it or you know just pick any scientific debate think it's kind of scattered shot for a few decades and then it starts to narrowly focus and then there's a convergence and a consensus that's the one these other ones are probably not true the thing that's curious to me about religion is that you get this sort",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 172,
+        "endToken": 243,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-religious-truth-cumulative-resurrection-case",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-05",
+      "sectionId": "evil-purpose-religious-truth",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Christianity is supported by a cumulative case for truth, God, miracles, and reliable resurrection testimony.",
+      "sourceSpan": {
+        "startEvent": 1940,
+        "endEvent": 1959
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker lays out Turek's recognizable cumulative apologetic sequence and concludes from Jesus's resurrection to divine authority.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a freewill involved in fact the way I show that Christianity is true I go through the evidence that truth exists God exists miracles are possible and the New Testament documents are telling us the truth about the resurrection because if Jesus rose from the dead then whatever he teaches is true because he's God so I I just have a personal policy if somebody rises from the dead I",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 66,
+        "endToken": 135,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-open-systems-information-gains",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-07",
+      "sectionId": "life-information-evolution",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Evolution is compatible with thermodynamics because Earth is an open system receiving energy, and genomic information gains are empirically traceable.",
+      "sourceSpan": {
+        "startEvent": 2170,
+        "endEvent": 2260
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer is directed to a question for Shermer and develops his scientific account using thermodynamics, evolution, genomics, and endosymbiosis.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "because the the second law of thermodynamics only applies to closed systems in which the sources of energy are fixed and then they run down in an open system like the Sun providing energy to us or in the case a smaller fraction of our energy comes from the core of the earth that's energy put into the system you put energy in the system it drives complexity so for example you can",
+        "characterCount": 381,
+        "tokenCount": 73,
+        "startToken": 19,
+        "endToken": 91,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-life-origin-epigenetic-information-gap",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-08",
+      "sectionId": "life-information-evolution",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Natural processes do not explain life's origin or new body plans because DNA alone lacks the required epigenetic information.",
+      "sourceSpan": {
+        "startEvent": 2261,
+        "endEvent": 2300
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly concedes part of Michael's answer before advancing Turek's intelligent-design objections concerning life and body plans.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "we come back and you go yeah of course course science can explain it I'm talking about this gap right because we're God the reason is because natural laws have not demonstrated the ability to create new body plants that's the problem body plans actually had we have positive evidence that body plants include an epigenetic information and and more DNA are required which means you",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 190,
+        "endToken": 255,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-relational-human-purpose",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-09",
+      "sectionId": "morality-meaning-justice",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Human purpose and moral concern remain valuable products of relationships and lived experience without supernatural validation or an afterlife.",
+      "sourceSpan": {
+        "startEvent": 2408,
+        "endEvent": 2446
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response follows a question addressed to Shermer and presents his characteristic naturalistic account of meaning, relationships, and goodness.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a certain level of analysis but we're so much more than that you know we're capable of all these just amazing things including finding purpose and meaning in life through each other it doesn't matter if there's a hereafter we live here and now we care about each other we love each other we we have purpose in interacting with each other that's very human and that's very valuable",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 166,
+        "endToken": 234,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-morality-knowledge-grounding-distinction",
+      "qualifiedCandidateId": "chunk-004:c004-03",
+      "sectionId": "morality-meaning-justice",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Natural moral knowledge concerns how people recognize right and wrong, but an external divine standard is required to ground moral goodness itself.",
+      "sourceSpan": {
+        "startEvent": 2606,
+        "endEvent": 2619
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek explicitly names Michael and contrasts epistemology with ontology in a clearly identifiable response to Shermer's answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "know something's right or wrong ontology is the study of the actual standard known as goodness where is that standard and I think what he's doing is he's making the mistake again of assuming that the standard is merely in our hearts and it's not Journal to us if it's not external to us there's no way to say that the Jew that the Nazis at the nürnberg trials for killing the Jews",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 22,
+        "endToken": 95,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-selection-bias-apparent-providence",
+      "qualifiedCandidateId": "chunk-004:c004-05",
+      "sectionId": "cosmic-origin-design",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Extremely improbable personal outcomes and apparent miracles are expected under large numbers of opportunities and are exaggerated by hindsight and selection bias.",
+      "sourceSpan": {
+        "startEvent": 2768,
+        "endEvent": 2819
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the probability question to Shermer, whose lottery and prediction examples form one sustained explanatory answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "large numbers somebody's got to win the lottery by the hindsight bias whoever one thinks it's unbelievable it's a miracle that we're forgetting the other boxes of all the people who bought tickets that didn't win people that and so on it's it's like it's inevitable that if you have that many opportunities something is going to happen like that okay so like in in terms of like miracles",
+        "characterCount": 387,
+        "tokenCount": 69,
+        "startToken": 97,
+        "endToken": 165,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-naturalism-explanatory-deficit",
+      "qualifiedCandidateId": "chunk-004:c004-09",
+      "sectionId": "explanatory-standards",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Naturalism supplies no adequate positive cause for creation, design, laws, information, freedom, morality, or rationality, whereas their combined features indicate an infinite personal creator.",
+      "sourceSpan": {
+        "startEvent": 2985,
+        "endEvent": 3015
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The closing statement is explicitly addressed to Turek, who summarizes his causal case and directly names Michael's allegedly incomplete alternative.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "is creation without a creator design without a designer laws without a lawgiver programs without a programmer freedom without free will because we're just molecules in motion order without an order or morality from molecules and rationality from randomness I think the evidence shows that there has to be a spaceless timeless immaterial powerful moral personal intelligent creator",
+        "characterCount": 380,
+        "tokenCount": 58,
+        "startToken": 116,
+        "endToken": 173,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
