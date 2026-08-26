@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection-analysis",
+  "protocolId": "assessment-production-post-canary-batch-12",
+  "status": "twelfth-post-canary-batch-selection-analysis-passed-awaiting-standing-authorization",
+  "analyzedAt": "2026-08-26T17:39:01Z",
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/selection.json",
+    "bytes": 31881,
+    "sha256": "fb6b1c8d341b49c0a63352c27d31e585fb2dba5a98c3052be4816d99093bbe10",
+    "status": "twelfth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "priorBatchPublication": {
+    "batchNumber": 11,
+    "atomicCommit": "defff0c14dc7bcaec481a58d207e6b9f445402a4",
+    "completionExecutionSha256": "38e51d02fe386426c543174b42e51be7698356bcde472058bc1598849d56ea85",
+    "completionAnalysisSha256": "9a022464ce27fd7d28df8c2fa34c458cef20cd93b273b260e8bb85998d874bab",
+    "accepted": true
+  },
+  "selectedDebates": [
+    {
+      "debateNumber": "152",
+      "debateId": "knechtle-aron-ra-god-existence-2023",
+      "rankOrdinal": 111,
+      "rankSha256": "ba90a39148e30726c28b5738a5aea7d6a67ec773ab5cee946ef0ef1a3db7f009"
+    },
+    {
+      "debateNumber": "28",
+      "debateId": "turek-shermer-reality-theism-atheism-2018",
+      "rankOrdinal": 112,
+      "rankSha256": "bbf73564946b7439e41eca3ded8377bae8e0c3119fa3fadce7d5bcd622e1360e"
+    },
+    {
+      "debateNumber": "119",
+      "debateId": "jones-oconnor-hell-2023",
+      "rankOrdinal": 113,
+      "rankSha256": "bc568d5f69778b9d1af77ad8529cdfe8ceca713121b9bba60e21330303609495"
+    },
+    {
+      "debateNumber": "116",
+      "debateId": "bertuzzi-schieber-evil-evidence-2019",
+      "rankOrdinal": 114,
+      "rankSha256": "bd93aa75f1b2c48a2d19ebb5eea980dd5e24989a12d941a86fe71d8b2da33136"
+    },
+    {
+      "debateNumber": "131",
+      "debateId": "boyce-carrier-historical-jesus-mythicism-2022",
+      "rankOrdinal": 115,
+      "rankSha256": "c1a50932efce3611e4cf87d470c357485ef0d5021b6df87069ac6776e7da751b"
+    },
+    {
+      "debateNumber": "07",
+      "debateId": "wood-oconnor-jesus-claim-god-2025",
+      "rankOrdinal": 116,
+      "rankSha256": "c22ed54deb8ccf624ab0d512519205dfa449e4122137b29795aacdeccd6d665e"
+    },
+    {
+      "debateNumber": "33",
+      "debateId": "craig-carroll-god-cosmology-2014",
+      "rankOrdinal": 117,
+      "rankSha256": "c2323b6b9fb8fcd5432e86dc491434d29571b6bcb5b5cc850f567f8635962e3d"
+    },
+    {
+      "debateNumber": "15",
+      "debateId": "hitchens-lennox-is-god-great-2017",
+      "rankOrdinal": 118,
+      "rankSha256": "c390b37d4fa2fb423b2e5e9096e2b2675f1f12beecaefd062ef003807715a204"
+    },
+    {
+      "debateNumber": "29",
+      "debateId": "turek-silverman-reality-theism-atheism-2013",
+      "rankOrdinal": 119,
+      "rankSha256": "c3d1bdad071c60299a75ec0749c4f831d70bbfcd3bf467ebec1ea25171c0fd67"
+    },
+    {
+      "debateNumber": "11",
+      "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+      "rankOrdinal": 120,
+      "rankSha256": "c7a51113797923a21c494462335b159630c00d7f480dd8c2f6df32f12bf7e2c5"
+    }
+  ],
+  "finding": "Successful Batch 11 production publication was authenticated at the pushed atomic commit. The immutable campaign rank then selected ordinals 111 through 120 as ten unique pending dyadic debates, and all thirty effective source files and ten canonical event chains passed without replacement.",
+  "decision": {
+    "priorBatchPublicationPrerequisitePassed": true,
+    "deterministicSelectionPassed": true,
+    "selectedSourceGatePassed": true,
+    "replacementsUsed": 0,
+    "sourcePacketPreparationAttempted": false,
+    "modelExecutionAttempted": false,
+    "paidServiceUsed": false,
+    "productionMutationAttempted": false,
+    "nextBatchSelectionAttempted": false
+  },
+  "nextAuthorizedAction": "prepare-batch-12-standing-authorization-and-source-packets-under-user-authorization"
+}
