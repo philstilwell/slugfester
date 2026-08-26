@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-failure-diagnosis",
+  "status": "blocked-batch-10-debate-74-bounded-correction-repeated-burden-decision-omission",
+  "diagnosedAt": "2026-08-26T01:31:24.828Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debateNumber": "74",
+  "repeatedFailure": {
+    "underlyingProblem": "model-omitted-required-burden-adjustment-decision-array-entry",
+    "firstOccurrenceRequiredEntries": 2,
+    "firstOccurrenceReturnedEntries": 0,
+    "correctionOccurrenceRequiredEntries": 1,
+    "correctionOccurrenceReturnedEntries": 0,
+    "correctionShard": "shard-02",
+    "correctionMoveDecisionsReturned": 10,
+    "correctionCandidateSelectionsRequired": 26,
+    "commandExitCode": 0,
+    "timedOut": false,
+    "attemptCount": 1,
+    "retryCount": 0,
+    "failedCorrectionOutputReusableUnderStandingAuthorization": false,
+    "additionalValidationDefectsExposed": 0
+  },
+  "preservedPassingEvidence": {
+    "originalGateAcceptedDebates": [
+      "21",
+      "107"
+    ],
+    "correctionShard01Passed": true,
+    "correctionShard01CandidateSelections": 26,
+    "automaticMergePermitted": false,
+    "unattemptedOriginalContextIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "standingAuthorizationDisposition": {
+    "boundedCorrectionUsed": true,
+    "recursiveCorrectionsMaximum": 1,
+    "failedSecondBoundedCorrectionBlocks": true,
+    "automaticContinuationAllowed": false,
+    "additionalModelExecutionAuthorized": false,
+    "resumptionAuthorizedNow": false,
+    "newUserAuthorizationRequired": true,
+    "directIncrementalCostUsd": 0
+  },
+  "safestProposedRecovery": {
+    "operation": "one-new-two-shard-field-disjoint-correction-for-the-failed-shard-02-boundary",
+    "failedShard02FieldsReusable": false,
+    "shardA": "nine of the ten failed-shard move decisions, with no burden adjustment",
+    "shardB": "the remaining one move decision plus the required con burden-adjustment decision",
+    "attempts": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0,
+    "promptMustExplicitlyEnumerateRequiredBurdenAdjustmentEntry": true,
+    "resumeSevenUnattemptedContextsOnlyAfterFullDebate74MergeReplayPasses": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/debate-74-validation-failure-diagnosis.json": "c6bfd43e1a82dd98c3ee858d5c482b9098627017de20693e7c4d1b5cc1f77a2a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-preparation-manifest.json": "6048a9e047e982658baea8908fd9fb0cb11430ec5fa3f57af877ed9fe0ae553f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-execution-activation.json": "16a6fab63bb3de42df60ea479c41a58eaa2b501e6267cbe5959a8edeadc82116",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-model-execution.json": "6a8488eceeb2b2b0c48116bb4025e57b9592f2e3650823ff5652652d171bcda6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-01.json": "912ac5ef0a0dbbdc4652aa7a5ee6b2151bf4e77f3abd9a292dc009da62579750",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-01.json": "6cc0afee91df54eefb99e69057f78affb3b56bfefd0f52e25e7443255c7c360d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-02.json": "200bdbb01ac011875eb9496875b14320f3c0f9f162462fee9ee2147cf29088b6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-02.json": "c2da17eeab883a53eebddde13d28a6e00937df1553c78434ae3c7a5e82da5319",
+    "scripts/diagnose-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-failure.mjs": "4baf8e498ab6c01df1c8d24f57ad54f28aa955523aefe20e96234a1ffbab8d33"
+  },
+  "authorization": {
+    "additionalCorrectionPreparation": false,
+    "additionalCorrectionModelExecution": false,
+    "adjudicationResumption": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "nextRequiredAction": "obtain-explicit-user-authorization-for-one-additional-two-shard-debate-74-correction"
+}
