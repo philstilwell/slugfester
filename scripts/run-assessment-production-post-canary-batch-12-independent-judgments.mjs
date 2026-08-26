@@ -39,7 +39,7 @@ assertV4(
       "frozen-twenty-post-canary-batch-12-independent-judgment-contexts-authorized" &&
     activation.developmentValidationOnly === false &&
     activation.productionCanary === false &&
-    activation.batchNumber === 11 &&
+    activation.batchNumber === 12 &&
     activation.stagingOnly === true &&
     activation.model.label === "5.6 Sol" &&
     activation.model.slug === "gpt-5.6-sol" &&
@@ -455,7 +455,7 @@ const execution = {
     : "post-canary-batch-12-independent-judgment-gate-complete-with-failure",
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   gateStartedAt,
   gateCompletedAt: new Date().toISOString(),

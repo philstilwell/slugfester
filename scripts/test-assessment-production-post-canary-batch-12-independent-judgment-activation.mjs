@@ -64,7 +64,7 @@ assert.equal(
 );
 assert.equal(activation.developmentValidationOnly, false);
 assert.equal(activation.productionCanary, false);
-assert.equal(activation.batchNumber, 11);
+assert.equal(activation.batchNumber, 12);
 assert.equal(activation.stagingOnly, true);
 assert.equal(
   activation.userAuthorization.standingAuthorization,

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-independent-judgment-identity-correction",
+  "protocolId": "assessment-production-post-canary-batch-12-independent-judgments",
+  "status": "exact-batch-number-identity-correction-passed-complete-judgment-gate-replay-passed",
+  "correctedAt": "2026-08-26T20:03:09.373Z",
+  "diagnosis": {
+    "classification": "stale-cloned-derived-metadata-field",
+    "staleField": "batchNumber",
+    "staleValue": 11,
+    "correctedValue": 12,
+    "affectedSubstantiveModelInputs": 0,
+    "affectedModelJudgmentBytes": 0,
+    "modelContextsExecutedForCorrection": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "scope": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/preparation-manifest.json",
+    "executionPreparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/model-execution.json",
+    "validationsRegenerated": 20,
+    "analysisRegenerated": "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/analysis.json",
+    "postExecutionTestsReplayed": [
+      "scripts/test-assessment-production-post-canary-batch-12-independent-judgment-activation.mjs"
+    ],
+    "preExecutionTestsNotReplayedAfterOutputsExisted": [
+      "scripts/test-assessment-production-post-canary-batch-12-independent-judgment-preparation.mjs",
+      "scripts/test-assessment-production-post-canary-batch-12-independent-judgment-manifest.mjs"
+    ]
+  },
+  "before": {
+    "preparationSha256": "dccf6b73bb406b596992934e8cf8f69ee36ac59accf8f67dad5c8c3f894287db",
+    "executionPreparationSha256": "df8576267bc86e509719f8f43c03b4c5d5ed0d56a2c752e230edb3dc6943787d",
+    "activationSha256": "b36d909d6117b5fcfa093310491e2df42a8b4f2d469c5dedcd46496370eb9734",
+    "executionSha256": "9191ff4e3adb86c3b389a07189d56a8e15f4f12cb76a41c8397ef707faa53f68",
+    "judgmentHashes": {
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-152.json": "a25f4168260fd1fe23ee6d86a317685e2c23948f6544ca6de60c961cec5af8b3",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-152.json": "a1efcefdf39fc80b2da348105e9f2f1b6bbb0b93434c39e5ae7632e2ba208f87",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-28.json": "4c199653cee3fbc02a5b5775dd97962bce41c7625f6557d43b73c050acd44df8",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-28.json": "e1971e1789b53024776f00bddc086c8f6c6ed41450ff83a56266c74bfea90d90",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-119.json": "8b5ab13aaba595a2234e4b1285fd3565257e8098c7181b97c066d0baee52972b",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-119.json": "3d5df0e2290102def9ca7f58ca342dc4942ecf217bf3bf5a1d82dec174cb9e3c",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-116.json": "4e969e325db3eb86e185decafbbb4f05872b37c608b221dc63b432a0d892fcc1",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-116.json": "e99c461e84923b97788e5b757453161ea1a88ced1aa10266c77bf2adf92352a7",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-131.json": "f08094cfd424e0d54ff76dc708f62b6414f747f5d7ab4b987f86c3a3609c5a9e",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-131.json": "884c61b4aac8aaa13e825776101d8952bab2ed43bd46e8029109e2c96399e82b",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-07.json": "28cb449ef0522e40deb5b9404766eed0fcbc308cd198a9161e70e40be02beaa3",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-07.json": "a19480822c2c9ada10b3f1fcc945453d84349c7e229dd68895cf37283de956db",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-33.json": "e3213cf5642a6ae697e4ec35959df11d3eb061d52bb65e3ae14f4bd26677537c",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-33.json": "385ac24c9568241e70e9b5969fa148943d5921208c7e1022c998f4c84bb784b9",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-15.json": "256ce44675d6790cf6fc74d51b7971891336a625f835ff1bf50a1f134180126a",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-15.json": "b02eba477e8330f52f2493a62491773fac48ab43a912b24a543204a066465be9",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-29.json": "6b76acb5c5de97c167cc427f29a917a3e696f4a89ee91e472654efe37ed62467",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-29.json": "3abf49d94d45b8715225dc43c97a78db781e8a0c8e21f99b8638617d479ab81f",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-11.json": "f22b5d37f51c5d981e323ee64e53297944e756ce437c786924ecae5839c87c09",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-11.json": "b3c10368e32aeeed3325a736b927b1c62a578c124709116d07153b8e63aac27a"
+    }
+  },
+  "after": {
+    "preparationSha256": "77e708e9be9796810553da552f830023ce7c62479f74eccfc119bc96e98ff109",
+    "executionPreparationSha256": "d96eab6298d434a17cac6fd49df178e2037a35d6c98d3bebc9dc29b5acebade4",
+    "activationSha256": "94735c78ee6e3edecc31b884a8b7879ac588c37b4ca5a188336e72a60d0e7392",
+    "executionSha256": "98455b1f5ed901de31bdcdec11712f4c077d87cfa1bf72f771c8ba62139ced12",
+    "analysisSha256": "942fd2f52e1454a744718e9d7b6fb2ad3b17647714c6bfbea63248aaa95d0c14",
+    "judgmentHashes": {
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-152.json": "a25f4168260fd1fe23ee6d86a317685e2c23948f6544ca6de60c961cec5af8b3",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-152.json": "a1efcefdf39fc80b2da348105e9f2f1b6bbb0b93434c39e5ae7632e2ba208f87",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-28.json": "4c199653cee3fbc02a5b5775dd97962bce41c7625f6557d43b73c050acd44df8",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-28.json": "e1971e1789b53024776f00bddc086c8f6c6ed41450ff83a56266c74bfea90d90",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-119.json": "8b5ab13aaba595a2234e4b1285fd3565257e8098c7181b97c066d0baee52972b",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-119.json": "3d5df0e2290102def9ca7f58ca342dc4942ecf217bf3bf5a1d82dec174cb9e3c",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-116.json": "4e969e325db3eb86e185decafbbb4f05872b37c608b221dc63b432a0d892fcc1",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-116.json": "e99c461e84923b97788e5b757453161ea1a88ced1aa10266c77bf2adf92352a7",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-131.json": "f08094cfd424e0d54ff76dc708f62b6414f747f5d7ab4b987f86c3a3609c5a9e",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-131.json": "884c61b4aac8aaa13e825776101d8952bab2ed43bd46e8029109e2c96399e82b",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-07.json": "28cb449ef0522e40deb5b9404766eed0fcbc308cd198a9161e70e40be02beaa3",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-07.json": "a19480822c2c9ada10b3f1fcc945453d84349c7e229dd68895cf37283de956db",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-33.json": "e3213cf5642a6ae697e4ec35959df11d3eb061d52bb65e3ae14f4bd26677537c",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-33.json": "385ac24c9568241e70e9b5969fa148943d5921208c7e1022c998f4c84bb784b9",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-15.json": "256ce44675d6790cf6fc74d51b7971891336a625f835ff1bf50a1f134180126a",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-15.json": "b02eba477e8330f52f2493a62491773fac48ab43a912b24a543204a066465be9",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-29.json": "6b76acb5c5de97c167cc427f29a917a3e696f4a89ee91e472654efe37ed62467",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-29.json": "3abf49d94d45b8715225dc43c97a78db781e8a0c8e21f99b8638617d479ab81f",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-a/debate-11.json": "f22b5d37f51c5d981e323ee64e53297944e756ce437c786924ecae5839c87c09",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/independent-judgments/judgments/pass-b/debate-11.json": "b3c10368e32aeeed3325a736b927b1c62a578c124709116d07153b8e63aac27a"
+    }
+  },
+  "invariants": {
+    "modelJudgmentBytesPreservedByteIdentical": true,
+    "modelInputsChanged": false,
+    "judgmentsChanged": false,
+    "ratingsChanged": false,
+    "scoresDerived": 0,
+    "semanticRepairs": 0,
+    "allTwentyValidationsReplayed": true,
+    "completePairedJudgmentGateReplayed": true,
+    "preExecutionTestTimingBoundaryPreserved": true
+  },
+  "nextAuthorizedAction": "extract-freeze-and-analyze-batch-12-disagreements-under-standing-authorization"
+}

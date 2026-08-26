@@ -1,0 +1,1614 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "11",
+  "debateId": "dsouza-ehrman-god-suffering-evil-2025",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-theistic-reconciliation-route",
+      "side": "pro",
+      "description": "Reconcile a loving and powerful God with suffering by identifying morally sufficient reasons for permitting evil, limits on human inference from unexplained suffering, and the roles of freedom, stable natural order, and religiously grounded moral response.",
+      "successCriteria": "Establish that suffering does not defeat theistic belief if divine permission can be coherently connected to morally significant freedom, life-supporting regularities, limited human knowledge, and a constructive account of humanity's obligations toward sufferers.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-survivability-bridge",
+        "tier": "motion",
+        "description": "Show that the scale of suffering remains logically and evidentially compatible with a loving, powerful God when permission can serve morally sufficient purposes."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-epistemic-limits-bridge",
+          "tier": "central",
+          "description": "Show that inability to identify God's reason for a particular instance of suffering does not establish that no sufficient reason exists."
+        },
+        {
+          "bridgeId": "pro-freedom-and-moral-evil-bridge",
+          "tier": "central",
+          "description": "Explain why morally significant human freedom can require permitting consequential choices, including choices that produce grave moral evil."
+        },
+        {
+          "bridgeId": "pro-lawful-creation-bridge",
+          "tier": "central",
+          "description": "Explain why stable, life-supporting natural conditions can entail dangerous processes and why routine intervention could compromise consequential agency."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-fall-and-autonomy-bridge",
+          "tier": "subsidiary",
+          "description": "Connect humanity's demand for autonomy with a world in which freedom operates through stable consequences and exposure to suffering."
+        },
+        {
+          "bridgeId": "pro-compassion-and-practice-bridge",
+          "tier": "subsidiary",
+          "description": "Account for how theistic belief can widen moral concern and motivate practical service to people experiencing suffering."
+        }
+      ]
+    },
+    {
+      "routeId": "con-skeptical-incompatibility-route",
+      "side": "con",
+      "description": "Challenge the survival of belief by arguing that immense innocent suffering, inconsistent or inadequate explanations, and the absence of expected divine intervention make the world unlike one governed by an all-loving and all-powerful God.",
+      "successCriteria": "Establish that the quantity, distribution, and apparent preventability of suffering remain insufficiently explained by freedom, natural-law necessity, or mystery, while conflicting with scriptural expectations of compassionate divine intervention.",
+      "motionBridge": {
+        "bridgeId": "con-motion-evidential-challenge-bridge",
+        "tier": "motion",
+        "description": "Show that pervasive, apparently preventable suffering counts strongly against the existence of the loving, powerful, interventionist God under discussion."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-innocent-suffering-bridge",
+          "tier": "central",
+          "description": "Demonstrate that innocent and extreme suffering resists explanations based on punishment, deserved consequences, or morally proportionate outcomes."
+        },
+        {
+          "bridgeId": "con-intervention-discrepancy-bridge",
+          "tier": "central",
+          "description": "Establish a discrepancy between scriptural portrayals of divine rescue and healing and the apparent absence of comparable intervention amid present suffering."
+        },
+        {
+          "bridgeId": "con-theodicy-adequacy-bridge",
+          "tier": "central",
+          "description": "Test whether appeals to freedom, natural necessity, or human ignorance actually explain the scale and distribution of suffering without internal inconsistency."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-scriptural-plurality-bridge",
+          "tier": "subsidiary",
+          "description": "Show that divergent biblical explanations complicate any claim that scripture supplies a unified and adequate account of suffering."
+        },
+        {
+          "bridgeId": "con-secular-response-bridge",
+          "tier": "subsidiary",
+          "description": "Provide a non-theistic basis for compassion, consolation, and practical efforts to reduce suffering without treating those responses as evidence for God."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "divine-attributes-and-intervention",
+      "title": "Divine Love, Power, and Expected Intervention",
+      "weightPercent": 30,
+      "rationale": "This is the motion-level clash over whether massive, apparently preventable suffering is compatible with divine love and power, especially where scripture depicts an active God who intervenes."
+    },
+    {
+      "sectionId": "epistemic-limits-and-scriptural-explanations",
+      "title": "Epistemic Limits and Scriptural Explanations",
+      "weightPercent": 18,
+      "rationale": "This issue tests whether limited human understanding and biblical treatments of suffering preserve possible divine reasons or instead leave incompatible and inadequate explanations."
+    },
+    {
+      "sectionId": "freedom-and-moral-evil",
+      "title": "Human Freedom and Moral Evil",
+      "weightPercent": 18,
+      "rationale": "This issue addresses whether morally significant freedom supplies a sufficient reason to permit atrocities and whether extreme human wrongdoing fits either theistic or naturalistic explanation."
+    },
+    {
+      "sectionId": "natural-law-and-life-supporting-conditions",
+      "title": "Natural Law, Fine-Tuning, and Natural Suffering",
+      "weightPercent": 22,
+      "rationale": "This issue examines whether dangerous natural processes are necessary features of a stable, life-supporting universe or conditions an omnipotent creator could have arranged differently."
+    },
+    {
+      "sectionId": "meaning-compassion-and-practical-response",
+      "title": "Meaning, Compassion, and Responses to Suffering",
+      "weightPercent": 12,
+      "rationale": "This issue concerns whether religious belief distinctively explains or enlarges concern for sufferers, and whether secular accounts can ground compassion and practical relief independently."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-divine-triad-tension",
+      "sectionId": "divine-attributes-and-intervention",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Affirming that God is all-loving and all-powerful while suffering exists creates the traditional philosophical tension at the center of the problem of suffering.",
+      "sourceSpan": {
+        "startEvent": 246,
+        "endEvent": 271
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduced Ehrman before the uninterrupted opening statement containing this argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-evidential-challenge-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively identifies the motion-level tension among divine love, divine power, and existing suffering.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly frames the central evidential conflict that the skeptical route must establish."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The traditional tension is clearly recoverable, though the exact logical or evidential formulation remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The phrasing presents an apparent tension rather than claiming a formally demonstrated contradiction."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The triad supplies a coherent challenge, with the incompatibility bridge left boundedly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The move accurately identifies the traditional structure but does not yet substantiate the suffering premise in detail."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly establishes the motion-level conflict underlying the skeptical evidential route."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move introduces the problem and does not materially interpret a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly places divine love, divine power, and suffering together and says their conjunction appears contradictory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-punishment-account-innocence",
+      "sectionId": "epistemic-limits-and-scriptural-explanations",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The Bible's recurring prophetic claim that suffering punishes sin is difficult to reconcile with cases in which those who suffer are innocent.",
+      "sourceSpan": {
+        "startEvent": 354,
+        "endEvent": 382
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The argument occurs within Ehrman's continuous opening statement after his survey of biblical responses begins.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-innocent-suffering-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively attacks punishment-based explanations by contrasting them with innocent suffering.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly advances the innocent-suffering bridge through a clear scriptural explanatory conflict."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The punishment account is clear, but the breadth of its recurrence across scripture is only generally bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The recurring-account claim is plausible, though the excerpt does not document its scriptural breadth or exceptions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The prophetic punishment account may address collective covenantal suffering rather than every innocent individual's suffering.",
+        "decisiveQualification": "Even that narrower reading does not explain innocent individuals caught in the stated suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Innocent suffering is a clear counterpressure against an unqualified punishment-for-sin explanation."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The excerpt describes the recurring account but supplies no representative innocent case or textual comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central burden concerning innocent and disproportionate suffering."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move targets a genuine recurring account without requiring that it be scripture's sole explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt states that God punishes sin until repentance and characterizes this account as recurring throughout both testaments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-job-denial-not-explanation",
+      "sectionId": "epistemic-limits-and-scriptural-explanations",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Most of Job supplies no intelligible explanation for innocent suffering and instead denies that the sufferer has standing to question God.",
+      "sourceSpan": {
+        "startEvent": 425,
+        "endEvent": 453
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman explicitly distinguishes this portion of Job while continuing the same uninterrupted opening presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-scriptural-plurality-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively argues that Job offers a rebuke of questioning rather than an intelligible causal explanation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It materially advances the scriptural-plurality issue by distinguishing denial of standing from explanation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The criticism of God's speeches is clear, but the claim about most of Job compresses the book's broader literary structure."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited speech supports the interpretation, but the broader claim about what Job supplies needs textual qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God's speeches may offer an epistemic explanation by emphasizing Job's limited perspective rather than merely silencing him.",
+        "decisiveQualification": "Epistemic limitation still does not identify a reason for Job's particular suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The distinction between denying standing and explaining suffering is coherent and materially important."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The quoted divine challenge supports the reading, though the characterization of most of Job is underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary burden concerning divergent and inadequate scriptural explanations."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move recognizes the speech's challenge to questioning but understates its possible epistemic function."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes God's challenge to Job's standing and concludes that Job has no right even to ask why he suffers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-preventable-suffering-intervention-gap",
+      "sectionId": "divine-attributes-and-intervention",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The immense scale of preventable suffering undermines belief in the biblical God who is said to answer prayer, suspend natural laws, and intervene for people in need.",
+      "sourceSpan": {
+        "startEvent": 517,
+        "endEvent": 586
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker develops one continuous first-person argument during Ehrman's opening statement, with no intervening speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-evidential-challenge-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively combines quantified suffering with the biblical expectation of answered prayer and divine intervention.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It directly develops the decisive motion-level discrepancy between immense suffering and an interventionist God."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition, relevant conception of God, and focus on apparently preventable suffering are all clearly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The evidence is offered as a forceful challenge rather than a deductive proof of divine nonexistence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A theist may affirm selective intervention while denying that God promises to prevent all grave suffering.",
+        "decisiveQualification": "Selectivity still requires an account of why intervention is absent amid the massive stated need."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The expected-intervention discrepancy is explicit and directly tied to the scale of preventable suffering."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Concrete mortality examples support scale, with one bounded gap concerning verification and representativeness of the figures."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This is direct and highly developed contact with the skeptical motion-completion condition."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move targets the narrower interventionist conception and preserves the live question about selective rescue."
+        }
+      },
+      "evidenceBasis": "The excerpt gives recurring death rates, asks why God does not intervene or answer prayer, and invokes biblical suspension of natural laws.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-morally-sufficient-reason-premise",
+      "sectionId": "divine-attributes-and-intervention",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "God's power, love, and the existence of suffering are inconsistent only if one additionally assumes that God could have no morally sufficient reason to permit suffering.",
+      "sourceSpan": {
+        "startEvent": 689,
+        "endEvent": 740
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs continuously within D'Souza's opening statement and explicitly frames the philosophical structure he attributes to the dispute.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-survivability-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-divine-triad-tension",
+          "con-preventable-suffering-intervention-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-morally-sufficient-reason-premise-component-01",
+            "targetMoveId": "con-divine-triad-tension",
+            "text": "Whether divine love, divine power, and suffering are inconsistent without an additional no-sufficient-reason premise.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-morally-sufficient-reason-premise-component-02",
+            "targetMoveId": "con-preventable-suffering-intervention-gap",
+            "text": "Whether the amount of suffering can remain compatible with a morally sufficient reason for permission.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses a hidden premise in the alleged inconsistency and states that a possible sufficient reason defeats the deductive form, while also extending the question to suffering's amount.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts and diagnoses the decisive inference, though possibility alone does not resolve the evidential challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The hidden premise, conditional consequence, and extension to the amount of suffering are expressly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The reply appropriately claims only that a possible sufficient reason blocks the asserted inconsistency."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptical challenge may be evidential rather than a deductive assertion that no possible reason exists.",
+        "decisiveQualification": "Blocking contradiction does not show that the observed scale of suffering is probable under theism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The hidden-premise diagnosis is explicit and valid as a response to a deductive inconsistency claim."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The conceptual warrant is sound, but no actual morally sufficient reason is supplied within this move."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the pro motion bridge by contesting the alleged incompatibility."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply accurately defeats the strict inconsistency form but only briefly acknowledges the stronger evidential version."
+        }
+      },
+      "evidenceBasis": "The excerpt names the hidden premise, explains when the syllogism would be watertight, and reframes it as a question about possible justification.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-job-limited-human-knowledge",
+      "sectionId": "epistemic-limits-and-scriptural-explanations",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Job teaches that human inability to discern a reason for suffering does not establish that no reason exists, because human knowledge is radically limited.",
+      "sourceSpan": {
+        "startEvent": 741,
+        "endEvent": 827
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza explicitly engages Ehrman's interpretation of Job and sustains the same epistemic argument throughout the identified passage.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-epistemic-limits-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-job-denial-not-explanation",
+          "con-punishment-account-innocence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-job-limited-human-knowledge-component-01",
+            "targetMoveId": "con-job-denial-not-explanation",
+            "text": "Whether God's challenge to Job merely denies standing or establishes a relevant limitation on human inference.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-job-limited-human-knowledge-component-02",
+            "targetMoveId": "con-punishment-account-innocence",
+            "text": "Whether inability to identify a reason for innocent suffering establishes that no reason exists.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly offers an epistemic interpretation of God's speech and identifies the invalid inference from not seeing a reason to there being no reason, but it does not provide the particular reason.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly diagnoses the inference challenged by the Job move while acknowledging the limits of the resulting defense."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The local-versus-divine knowledge distinction and the limited conclusion drawn from it are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker repeatedly qualifies the interpretation and claims an epistemic limitation rather than knowledge of God's reason."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Job speeches can be read as denying the sufferer's standing without furnishing an explanation.",
+        "decisiveQualification": "Even on the epistemic reading, limited knowledge establishes possibility, not a positive explanation of the suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference from limited perspective to withholding a no-reason conclusion is coherent, with a bounded skeptical-theism bridge."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Job's speech supports the interpretive claim, though the move does not independently establish the relevant divine reasons."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It nearly maximizes central-tier contact with the epistemic-limits completion requirement."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply fairly confronts the denial reading and supplies a strong alternative while leaving its decisive limitation intact."
+        }
+      },
+      "evidenceBasis": "The excerpt interprets God's questions as contrasting local human knowledge with a divine perspective and rejects inference from unseen reasons to no reasons.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-freedom-permits-moral-evil",
+      "sectionId": "freedom-and-moral-evil",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Moral atrocities result from human misuse of freedom, and preventing them categorically would require God to block the freedom integral to human moral choice.",
+      "sourceSpan": {
+        "startEvent": 834,
+        "endEvent": 889
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted passage remains in D'Souza's opening statement, distinguishes categories of suffering, and develops the moral-evil branch through its conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-freedom-and-moral-evil-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-preventable-suffering-intervention-gap",
+          "con-divine-triad-tension"
+        ],
+        "components": [
+          {
+            "componentId": "pro-freedom-permits-moral-evil-component-01",
+            "targetMoveId": "con-preventable-suffering-intervention-gap",
+            "text": "Why God does not prevent grave suffering produced through deliberate human wrongdoing.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-freedom-permits-moral-evil-component-02",
+            "targetMoveId": "con-divine-triad-tension",
+            "text": "Whether divine prevention of every atrocity is compatible with morally consequential human freedom.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts moral evil by assigning atrocities to human choices and arguing that categorical prevention would block significant freedom, but it does not answer natural suffering or selective intervention.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive moral-evil component but leaves other major components of the intervention challenge unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The freedom argument is clear, though the conditions under which intervention would actually destroy freedom remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Freedom plausibly explains permission of some moral evil, but categorical nonprevention is asserted more broadly than defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God could preserve general freedom while selectively preventing the worst consequences or rescuing victims.",
+        "decisiveQualification": "The reply does not show that such selective intervention would eliminate morally significant choice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The freedom-to-consequences bridge is intelligible, but it leaves the selective-prevention alternative materially open."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The move relies mainly on conceptual assertion and examples of atrocity without comparing intervention alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central pro bridge concerning consequential moral freedom."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "It fairly assigns agency to perpetrators but omits the strongest selective-intervention qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes moral evil from natural suffering, cites the Holocaust and serial killers, and redirects responsibility toward human action.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-tectonics-supports-habitable-earth",
+      "sectionId": "natural-law-and-life-supporting-conditions",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "constructive",
+      "proposition": "Earthquakes arise from plate tectonics, a planetary system that is also essential to terrestrial life and its sustaining conditions.",
+      "sourceSpan": {
+        "startEvent": 928,
+        "endEvent": 992
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dinesh D'Souza develops the scientific plate-tectonics argument continuously in his opening presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-lawful-creation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively links earthquake-producing plate tectonics to biodiversity, climatic stability, and terrestrial habitability.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly supplies a concrete natural-process example for the lawful-creation bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The habitability claim is clear, but terms such as essential and absence of life require narrower scientific qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt moves from substantial life-supporting roles to necessity for any human life without defending that modal strength."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Plate tectonics may strongly support Earth's long-term habitability without being the only possible life-supporting planetary system.",
+        "decisiveQualification": "That weaker claim does not establish that an omnipotent creator had to permit earthquake hazards."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The benefit-cost connection is relevant, but the inference from actual benefits to necessary dangerous tectonics is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Several scientific functions and unnamed scholars are asserted without representative evidence or alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly contacts the central lawful-creation bridge through a concrete dangerous natural process."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move presents genuine benefits but does not address the strongest alternative planetary arrangements."
+        }
+      },
+      "evidenceBasis": "The excerpt attributes biodiversity, temperature regulation, and protection from lethal exposure to tectonics and invokes scholarly support for its necessity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-lawful-fine-tuned-human-world",
+      "sectionId": "natural-law-and-life-supporting-conditions",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "constructive",
+      "proposition": "A lawful universe capable of producing human beings requires finely calibrated conditions whose alteration would yield no human life or a different outcome.",
+      "sourceSpan": {
+        "startEvent": 996,
+        "endEvent": 1131
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The full argument and its concluding application are presented by Dinesh D'Souza without a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-lawful-creation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructively argues that stable, calibrated natural conditions are required for a universe containing human beings.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It supplies the broad natural-law framework needed by the central lawful-creation route."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The lawful-world claim is recoverable, but fine-tuning and alteration range over physical constants and outcomes without clear bounds."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move treats actual calibration as the way to obtain human life without comparing other possible laws or divine arrangements."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Actual constants may be necessary for life under our laws while other laws could support embodied intelligent life.",
+        "decisiveQualification": "The move does not establish necessity across possible lawful creations available to an omnipotent creator."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The move coherently links calibration to life under actual laws but equivocates toward necessity across possible worlds."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The dial analogy and appeal to modern science compress the central scientific and modal warrants."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It squarely supports the central burden concerning stable life-supporting natural conditions."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "It presents the actual-law fine-tuning case but omits the decisive modal qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt says altering the relevant settings yields no universe or life and concludes that science identifies God's way to design a lawful human world.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-human-agency-does-not-remove-intervention-burden",
+      "sectionId": "freedom-and-moral-evil",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Even when human perpetrators cause atrocities, the Christian portrayal of God as intervening to resolve suffering leaves an unresolved question about divine nonintervention.",
+      "sourceSpan": {
+        "startEvent": 1170,
+        "endEvent": 1178
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bart Ehrman states the Christian-intervention challenge directly in his uninterrupted rebuttal turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-freedom-and-moral-evil-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-freedom-permits-moral-evil",
+          "pro-morally-sufficient-reason-premise"
+        ],
+        "components": [
+          {
+            "componentId": "con-human-agency-does-not-remove-intervention-burden-component-01",
+            "targetMoveId": "pro-freedom-permits-moral-evil",
+            "text": "Whether assigning atrocities to human agents answers the separate question of divine nonintervention.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-human-agency-does-not-remove-intervention-burden-component-02",
+            "targetMoveId": "pro-morally-sufficient-reason-premise",
+            "text": "Whether a morally sufficient permission account must address the Christian expectation of intervention.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes perpetrator responsibility from God's alleged practice of intervention and presses the unresolved selective-rescue demand, though it does not show that intervention is promised in every case.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts the decisive omission in the freedom reply but leaves the scope of expected intervention underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The intervention burden is clear, though the phrase Christian point of view generalizes across diverse doctrines."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move is calibrated as an unresolved challenge rather than a conclusive disproof of the freedom defense."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity may teach selective providential intervention rather than elimination of suffering generally.",
+        "decisiveQualification": "Selective intervention still leaves the contrast between biblical rescues and current nonintervention requiring explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between human causation and divine capacity to intervene is valid and directly exposes an omitted question."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Biblical intervention is invoked specifically, but the universalized description of Christian teaching is not documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central freedom-and-moral-evil bridge at its intervention premise."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply preserves its discrepancy argument under a narrower doctrine, despite initially stating the doctrine broadly."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether the Christian God intervenes to resolve suffering and contrasts biblical intervention with its apparent absence today.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-actual-laws-not-necessary-laws",
+      "sectionId": "natural-law-and-life-supporting-conditions",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Describing the universe's existing laws and Earth's tectonic conditions does not establish that an omnipotent creator could not have produced life under different conditions.",
+      "sourceSpan": {
+        "startEvent": 1183,
+        "endEvent": 1255
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bart Ehrman develops the objection throughout his rebuttal, with no competing speaker attribution in the window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-lawful-creation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-lawful-fine-tuned-human-world",
+          "pro-tectonics-supports-habitable-earth"
+        ],
+        "components": [
+          {
+            "componentId": "con-actual-laws-not-necessary-laws-component-01",
+            "targetMoveId": "pro-lawful-fine-tuned-human-world",
+            "text": "Whether describing life under the actual laws establishes that those laws were necessary for divine creation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-actual-laws-not-necessary-laws-component-02",
+            "targetMoveId": "pro-tectonics-supports-habitable-earth",
+            "text": "Whether the actual benefits of plate tectonics establish that a creator had to use tectonics.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses the inference from actual conditions to necessary conditions and states that an omnipotent creator could face a broader possibility space, defeating the claimed necessity unless further defended.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the decisive modal inference in both natural-law moves and states its defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The actual-versus-necessary distinction and its application to both tectonics and fine-tuning are clearly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The objection claims only that alternatives remain possible and that the pro necessity inference is unestablished."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro case may claim necessity only conditional on the actual laws and on specifically human life.",
+        "decisiveQualification": "That conditional necessity does not answer what laws an omnipotent creator could have selected."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The modal criticism is explicit, consistent, and directly defeats the inference from actuality to necessity."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual objection is well warranted, with one bounded gap concerning positive evidence for viable alternative laws."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It maximally attacks the central lawful-creation bridge within the permitted central tier."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply addresses the strongest conditional reading and identifies why it remains insufficient for the divine modality at issue."
+        }
+      },
+      "evidenceBasis": "The excerpt asks who created the laws and tectonic requirement, then accuses the argument of inferring that the world must be this way because it is.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-selective-miracles-stable-laws",
+      "sectionId": "divine-attributes-and-intervention",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Biblical miracles serve selective spiritual purposes, while stable natural regularities are required for free action to have predictable and educative consequences.",
+      "sourceSpan": {
+        "startEvent": 1335,
+        "endEvent": 1411
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dinesh D'Souza presents both the account of miracles and the freedom-based need for regularity in one continuous turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-evidential-challenge-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-preventable-suffering-intervention-gap",
+          "con-human-agency-does-not-remove-intervention-burden",
+          "con-actual-laws-not-necessary-laws"
+        ],
+        "components": [
+          {
+            "componentId": "pro-selective-miracles-stable-laws-component-01",
+            "targetMoveId": "con-preventable-suffering-intervention-gap",
+            "text": "Why an interventionist God would ordinarily permit stable laws to operate amid preventable suffering.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-selective-miracles-stable-laws-component-02",
+            "targetMoveId": "con-human-agency-does-not-remove-intervention-burden",
+            "text": "Whether predictable consequences supply a reason against routine divine intervention in human actions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-selective-miracles-stable-laws-component-03",
+            "targetMoveId": "con-actual-laws-not-necessary-laws",
+            "text": "Whether some stable lawfulness, rather than these exact laws, is needed for consequential agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the intervention demand by distinguishing selective miracles from routine regularity and connects predictable consequences to free agency, but it does not justify the actual selection or distribution of miracles.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It reaches the decisive stable-law component while leaving selective rescue and alternative-law questions materially open."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The regularity argument is clear, but selective spiritual purposes and the permissible frequency of intervention remain underspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Predictability plausibly supports agency, but the move overextends this to the observed level of nonintervention without a selection rule."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Rare prevention of catastrophic harms could preserve predictable laws and meaningful agency.",
+        "decisiveQualification": "The reply does not show why selective protective intervention would destabilize ordinary causal expectations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Stable consequences are coherently connected to agency, but the selective-intervention bridge remains materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Illustrative hypotheticals support predictability, while claims about miracle purposes and intervention frequency remain asserted."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly attacks the skeptical motion challenge by supplying a reason for stable nonintervention."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "It fairly answers demands for constant suspension but omits the strongest limited-intervention alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts a lawless universe with predictable consequences and argues that such regularity is necessary for free action.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-consolation-not-explanatory-truth",
+      "sectionId": "meaning-compassion-and-practical-response",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The consolation that sufferers derive from religious belief does not establish that the belief is true or provide an intellectually adequate explanation of suffering.",
+      "sourceSpan": {
+        "startEvent": 1773,
+        "endEvent": 1817
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question names Bart, and the first-person response distinguishes his unbelief from alienation before developing the oncologist analogy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-secular-response-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-morally-sufficient-reason-premise",
+          "pro-selective-miracles-stable-laws"
+        ],
+        "components": [
+          {
+            "componentId": "con-consolation-not-explanatory-truth-component-01",
+            "targetMoveId": "pro-morally-sufficient-reason-premise",
+            "text": "Whether the pro side has established an intellectually adequate reason for permitting suffering.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-consolation-not-explanatory-truth-component-02",
+            "targetMoveId": "pro-selective-miracles-stable-laws",
+            "text": "Whether stable-law and freedom considerations explain suffering rather than merely console believers.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move correctly separates consolation from truth, but the selected span does not analyze the actual sufficient-reason or stable-law warrants advanced earlier, so it remains relevant contrary material rather than an answer.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "It bears on explanatory adequacy but does not contact the decisive premises of the earlier pro arguments."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction among comfort, truth, and intellectual explanation is expressly and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that consolation does not entail truth is conceptually warranted and needs no uncertainty caveat."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A religious response may be offered as both consolation and an independently warranted explanation.",
+        "decisiveQualification": "The consoling effect alone supplies no evidence for the explanatory claims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The nonentailment from psychological consolation to truth and explanation is explicit and valid."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The claim is primarily conceptual and is adequately supported by the clear distinction and analogy described."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary secular-response burden while not resolving central theodicy warrants."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move carefully limits its criticism to the invalid inference from solace to truth or adequacy."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says that finding solace does not make belief true and distinguishes comfort from an intellectually adequate explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-secular-concern-and-finite-suffering",
+      "sectionId": "meaning-compassion-and-practical-response",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Concern for suffering does not require belief in God, while human evolutionary finitude in a harsh world helps explain why suffering occurs without invoking divine agency.",
+      "sourceSpan": {
+        "startEvent": 1865,
+        "endEvent": 1892
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question is expressly directed to Bart Ehrman, and the answer uses first-person statements about humanity, anger, and Darwinian evolution.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-secular-response-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-selective-miracles-stable-laws",
+          "pro-morally-sufficient-reason-premise"
+        ],
+        "components": [
+          {
+            "componentId": "con-secular-concern-and-finite-suffering-component-01",
+            "targetMoveId": "pro-selective-miracles-stable-laws",
+            "text": "Whether stable laws and selective miracles provide a sufficient explanation of suffering.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-secular-concern-and-finite-suffering-component-02",
+            "targetMoveId": "pro-morally-sufficient-reason-premise",
+            "text": "Whether finite human and evolutionary explanations undercut the need for a divine permission account.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a secular basis for concern and gestures toward evolutionary finitude, but it does not engage the decisive stable-law or morally sufficient reason inferences in the earlier pro moves.",
+        "responsivenessWithinClass": {
+          "value": 53,
+          "rationale": "It is issue-bearing contrary material but leaves the earlier pro explanatory components uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Secular concern is clearly defended, while the evolutionary explanation of suffering is broad and only briefly delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents human solidarity and evolutionary finitude as available explanations rather than exhaustive demonstrations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A theist can agree that nonbelievers genuinely care while claiming Christianity historically widened that concern.",
+        "decisiveQualification": "Present secular moral concern does not by itself settle its historical genealogy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between caring about suffering and believing in God is clear, with the evolutionary extension less developed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Human solidarity is plausibly grounded, but the evolutionary account is asserted without a developed causal warrant."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It closely fulfills the subsidiary burden of providing a non-theistic basis for concern and response."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move rebuts the necessity of present belief without overclaiming that religious history had no influence."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds concern in shared humanity and denies that belief in God is required to regard suffering as morally troubling.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christian-universalized-moral-concern",
+      "sectionId": "meaning-compassion-and-practical-response",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Christianity historically extended moral obligation beyond family and neighbors, producing a broad revulsion against distant suffering even among Western atheists.",
+      "sourceSpan": {
+        "startEvent": 1960,
+        "endEvent": 2028
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza responds in the first person, contrasts Christian-rooted Western relief efforts with other moral cosmologies, and develops concentric obligations.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-compassion-and-practice-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-secular-concern-and-finite-suffering",
+          "con-consolation-not-explanatory-truth"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-universalized-moral-concern-component-01",
+            "targetMoveId": "con-secular-concern-and-finite-suffering",
+            "text": "Whether present secular concern is independent of Christianity's historical widening of moral obligation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-universalized-moral-concern-component-02",
+            "targetMoveId": "con-consolation-not-explanatory-truth",
+            "text": "Whether Christianity's moral influence establishes the truth or explanatory adequacy of Christian belief.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the secular-concern claim by conceding concern among atheists but attributing its universalized form to Christian history; it does not answer the distinct truth-versus-consolation demand.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "It contacts the decisive genealogy component but leaves the separate explanatory-truth objection unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The historical thesis is recoverable, but Western, other cultures, and broad revulsion are insufficiently delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The counterfactual claim that broad concern would not exist without Christianity exceeds the comparative evidence supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular universal concern may derive from multiple religious, philosophical, political, and evolutionary sources.",
+        "decisiveQualification": "Christianity can be historically influential without being necessary or uniquely sufficient."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Historical influence could explain inherited norms, but the inference to counterfactual necessity is insufficiently supported."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "The broad cross-cultural and counterfactual historical claims rest substantially on assertion and selective contrast."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary pro burden concerning widened moral concern."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The move acknowledges atheist concern but materially compresses the strongest multicausal historical alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt attributes Western revulsion against distant suffering, including among atheists, to Christendom's historical moral cosmology.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fall-autonomy-consequential-freedom",
+      "sectionId": "freedom-and-moral-evil",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "The Fall explains a lawful world of consequential freedom because humanity chose autonomy from God and would choose that kind of world again.",
+      "sourceSpan": {
+        "startEvent": 2153,
+        "endEvent": 2206
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A question asks D'Souza about the doctrine of the Fall, and his sustained answer presents Eden, human choice, freedom, consequences, and redemption.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-fall-and-autonomy-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-actual-laws-not-necessary-laws",
+          "con-human-agency-does-not-remove-intervention-burden",
+          "con-preventable-suffering-intervention-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-fall-autonomy-consequential-freedom-component-01",
+            "targetMoveId": "con-actual-laws-not-necessary-laws",
+            "text": "Why a consequentially lawful world would be appropriate once humanity chooses autonomy from God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-fall-autonomy-consequential-freedom-component-02",
+            "targetMoveId": "con-human-agency-does-not-remove-intervention-burden",
+            "text": "Whether consequential freedom supplies a reason for divine restraint after human autonomous choices.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-fall-autonomy-consequential-freedom-component-03",
+            "targetMoveId": "con-preventable-suffering-intervention-gap",
+            "text": "Whether humanity's demand for autonomy explains the scale and distribution of preventable suffering.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explains why the Fall narrative calls for a lawful world with consequences and therefore contacts the lawfulness demand, but it does not establish why these laws or this scale of suffering are necessary.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the consequential-law component while leaving the decisive alternative-laws and scale components unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Fall-to-autonomy argument is clear, but claims about what humanity collectively chose or would choose again are loosely scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The narrative supports an internal theological account, but collective consent and the required world conditions are not independently warranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Autonomy may require consequences without requiring inherited exposure to every natural hazard or another person's atrocity.",
+        "decisiveQualification": "The move does not show proportionality between chosen autonomy and the world's suffering distribution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The narrative links autonomy, lawfulness, and consequences, but collective choice and proportionality remain material bridges."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The argument depends on a theological narrative and speculative claim about what humanity collectively wants."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It nearly maximizes subsidiary-tier contact with the fall-and-autonomy bridge."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "It presents the strongest consequential-freedom reading but omits the decisive proportionality and collective-responsibility qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt says humanity chose its own way and that this demand for freedom requires a lawful world in which actions have consequences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christian-compassion-and-service",
+      "sectionId": "meaning-compassion-and-practical-response",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Christian belief expands compassion, motivates extraordinary service to sufferers, and calls believers to imitate Christ while working with atheists to improve the world.",
+      "sourceSpan": {
+        "startEvent": 2394,
+        "endEvent": 2500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is D'Souza's closing statement, identifiable through its defense of Christianity, Mother Teresa example, and final summary of the Christian response.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-compassion-and-practice-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-secular-concern-and-finite-suffering",
+          "con-consolation-not-explanatory-truth",
+          "con-preventable-suffering-intervention-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-compassion-and-service-component-01",
+            "targetMoveId": "con-secular-concern-and-finite-suffering",
+            "text": "Whether Christian belief can distinctively motivate broad compassion and practical service despite secular concern.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-compassion-and-service-component-02",
+            "targetMoveId": "con-consolation-not-explanatory-truth",
+            "text": "Whether practical Christian response establishes the truth or explanatory adequacy of Christian belief.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-compassion-and-service-component-03",
+            "targetMoveId": "con-preventable-suffering-intervention-gap",
+            "text": "Whether human service answers the separate discrepancy concerning expected divine intervention.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the practical-response component by describing Christian imitation and cooperation with atheists, but it does not answer the distinct truth question or the burden concerning divine nonintervention.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It contacts an important practical component while leaving the earlier explanatory and intervention demands unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The call to compassionate service is clear, while claims about Christianity's expansion and secular fraying remain broadly scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Christian teachings plausibly motivate service, but claims of distinctive expansion and secular moral erosion are weakly qualified."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Atheists and adherents of other traditions can sustain extraordinary compassion without Christian motivation.",
+        "decisiveQualification": "Christianity may be one powerful motivation without being uniquely necessary for service."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The practical injunction follows coherently from imitation of Christ, with distinctiveness claims less fully connected."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The service claim has an illustrative religious example, but broad historical and secular-fraying claims lack comparison."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly and strongly supports the subsidiary burden concerning compassion and practical service."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The explicit invitation to work with atheists fairly recognizes secular service, though distinctiveness remains overstated."
+        }
+      },
+      "evidenceBasis": "The excerpt presents imitation of Christ through suffering and service as the Christian response and expressly endorses cooperation with atheists.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence qualifies for adjustment.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence qualifies for adjustment.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

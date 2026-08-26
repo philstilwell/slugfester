@@ -461,7 +461,7 @@ const preparation = {
   checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   AIOnly: true,
   userAuthorization: {

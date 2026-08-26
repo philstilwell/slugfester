@@ -24,7 +24,7 @@ assertV4(
       "frozen-twenty-post-canary-batch-12-independent-judgment-contexts-authorized" &&
     activation.developmentValidationOnly === false &&
     activation.productionCanary === false &&
-    activation.batchNumber === 11 &&
+    activation.batchNumber === 12 &&
     activation.authorization.deterministicAnalysis === true &&
     activation.authorization.disagreementExtraction === false &&
     activation.authorization.audioVerification === false &&
@@ -200,7 +200,7 @@ const analysis = {
     : "post-canary-batch-12-independent-judgment-gate-failed-analysis-only",
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   AIOnly: true,
   activePolicy: structuredClone(activation.activePolicy),

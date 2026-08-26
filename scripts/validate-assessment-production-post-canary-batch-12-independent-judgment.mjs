@@ -21,7 +21,7 @@ assertV4(
       "twenty-post-canary-batch-12-independent-judgment-contexts-prepared-and-frozen" &&
     preparation.developmentValidationOnly === false &&
     preparation.productionCanary === false &&
-    preparation.batchNumber === 11 &&
+    preparation.batchNumber === 12 &&
     preparation.stagingOnly === true &&
     preparation.model.label === "5.6 Sol" &&
     preparation.model.slug === "gpt-5.6-sol" &&
@@ -130,7 +130,7 @@ const summary = {
   status: "passed",
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   debateNumber,
   reviewerPass,

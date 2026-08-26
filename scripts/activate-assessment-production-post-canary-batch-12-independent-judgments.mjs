@@ -58,7 +58,7 @@ assertV4(
       "frozen-twenty-post-canary-batch-12-independent-judgment-contexts-prepared-not-authorized" &&
     preparation.developmentValidationOnly === false &&
     preparation.productionCanary === false &&
-    preparation.batchNumber === 11 &&
+    preparation.batchNumber === 12 &&
     preparation.stagingOnly === true &&
     preparation.contexts.length === 20 &&
     preparation.model.label === "5.6 Sol" &&
@@ -189,7 +189,7 @@ const activation = {
   }).trim(),
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   AIOnly: true,
   userAuthorization: {

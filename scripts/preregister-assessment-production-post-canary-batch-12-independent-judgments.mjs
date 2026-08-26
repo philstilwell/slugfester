@@ -88,7 +88,7 @@ assertV4(
       "twenty-post-canary-batch-12-independent-judgment-contexts-prepared-and-frozen" &&
     preparation.developmentValidationOnly === false &&
     preparation.productionCanary === false &&
-    preparation.batchNumber === 11 &&
+    preparation.batchNumber === 12 &&
     preparation.stagingOnly === true &&
     preparation.contexts.length === 20 &&
     preparation.totals.debates === 10 &&
@@ -346,7 +346,7 @@ const manifest = {
   }).trim(),
   developmentValidationOnly: false,
   productionCanary: false,
-  batchNumber: 11,
+  batchNumber: 12,
   stagingOnly: true,
   AIOnly: true,
   userAuthorization: structuredClone(preparation.userAuthorization),

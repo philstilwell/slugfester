@@ -53,7 +53,7 @@ assert.equal(
 );
 assert.equal(manifest.developmentValidationOnly, false);
 assert.equal(manifest.productionCanary, false);
-assert.equal(manifest.batchNumber, 11);
+assert.equal(manifest.batchNumber, 12);
 assert.equal(manifest.stagingOnly, true);
 assert.equal(manifest.activePolicy.version, "v2.2");
 assert.equal(

@@ -44,7 +44,7 @@ assert.equal(
 );
 assert.equal(preparation.developmentValidationOnly, false);
 assert.equal(preparation.productionCanary, false);
-assert.equal(preparation.batchNumber, 11);
+assert.equal(preparation.batchNumber, 12);
 assert.equal(preparation.stagingOnly, true);
 assert.equal(preparation.AIOnly, true);
 assert.equal(preparation.userAuthorization.directIncrementalCostUsdMaximum, 0);
