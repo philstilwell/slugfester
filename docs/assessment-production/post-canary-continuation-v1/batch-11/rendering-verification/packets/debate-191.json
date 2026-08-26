@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-rendering-packet",
+  "protocolId": "assessment-production-post-canary-batch-11-rendering-verification",
+  "status": "frozen-batch-11-rendering-verification-packet",
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "debateNumber": "191",
+  "debateId": "ruse-rana-origin-life-evolution-design-2013",
+  "candidate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/output-bundle/final-candidates/debate-191.json",
+    "sha256": "d8cc993481285180b15a62baee190e1772b1f075264337be22a3ed9a4925dcd5",
+    "scores": {
+      "pro": 82,
+      "con": 81
+    },
+    "sections": 5,
+    "moves": 20,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/output-bundle/provenance/debate-191.json",
+    "sha256": "555e36d338908ad45f2c905e94dea8e9353155246cac0859becb1851cefa7d08",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preview": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/output-bundle/rendering-preview/index.html",
+    "sha256": "e7c146a105af32cfe25a68a7ff5f841e25746a90a3518b7269ed442a7ae37fba",
+    "url": "http://127.0.0.1:4207/docs/assessment-production/post-canary-continuation-v1/batch-11/publication-finalization/output-bundle/rendering-preview/index.html?debate=191",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBanner": "Publication staging preview: validated post-canary Batch 11 candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "prohibitedText": [
+      "unassailable"
+    ],
+    "nativeElement": "details",
+    "defaultCollapsed": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-11/rendering-verification/evidence/debate-191/desktop.json",
+        "collapsedScreenshot": "output/playwright/batch-11-rendering/debate-191/desktop-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-11-rendering/debate-191/desktop-open.jpg"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-11/rendering-verification/evidence/debate-191/mobile.json",
+        "collapsedScreenshot": "output/playwright/batch-11-rendering/debate-191/mobile-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-11-rendering/debate-191/mobile-open.jpg"
+      }
+    }
+  },
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "runnerPolicy": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch11-rendering",
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "screenshotFormat": "jpeg",
+    "screenshotQuality": 85,
+    "screenshotFullPage": false,
+    "interactionOrder": [
+      "observe-default-collapsed-state",
+      "capture-collapsed-screenshot",
+      "open-native-summary-with-pointer",
+      "capture-open-screenshot",
+      "close-with-pointer",
+      "focus-native-summary",
+      "open-with-enter",
+      "close-with-space"
+    ]
+  },
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "nextBatchSelectionWritable": false
+  }
+}
