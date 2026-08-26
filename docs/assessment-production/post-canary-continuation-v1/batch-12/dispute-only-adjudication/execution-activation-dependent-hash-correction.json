@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-dependent-hash-correction",
+  "protocolId": "assessment-production-post-canary-batch-12-dispute-only-adjudication",
+  "status": "passed-exact-deterministic-field-level-correction",
+  "correctedAt": "2026-08-26T21:31:46Z",
+  "artifact": "docs/assessment-production/post-canary-continuation-v1/batch-12/dispute-only-adjudication/execution-activation.json",
+  "artifactSha256AfterCorrection": "e05475081f4c7339cf4d8de28efc54fa00f38a492466c2266721a5e7e2abecae",
+  "fields": [
+    "sourceHashes.scripts/test-assessment-production-post-canary-batch-12-dispute-adjudication-gate.mjs",
+    "executionToolHashes.scripts/test-assessment-production-post-canary-batch-12-dispute-adjudication-gate.mjs"
+  ],
+  "before": "0ce00ebf7d616600911cff883205eed3845c62585771af1fc1bbcabc23b9f494",
+  "after": "a640f3f1851a6fcda8384951369d6465e39a2eb4d4f4d45ae7121cc6b31bcf27",
+  "reason": "The gate test's stale Batch 11 expectation of two audio transcript inputs was corrected to the measured Batch 12 packet count of three.",
+  "modelOutputFieldsChanged": 0,
+  "candidateSelectionsChanged": 0,
+  "scoreFieldsChanged": 0,
+  "modelCalls": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "analysisSha256": "6de451ff8b15cca17d0706b5b20ed138372297ecb0f6dc4470c65d186fa87154",
+  "validationReplay": {
+    "command": "node scripts/test-assessment-production-post-canary-batch-12-dispute-adjudication-gate.mjs",
+    "status": "passed-analyzed",
+    "validContexts": 10,
+    "disputedMovesDecided": 196,
+    "candidateSelections": 528
+  }
+}
