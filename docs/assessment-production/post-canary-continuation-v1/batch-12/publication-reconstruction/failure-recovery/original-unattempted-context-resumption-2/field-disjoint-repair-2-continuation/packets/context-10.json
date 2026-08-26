@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-publication-field-disjoint-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-12-publication-field-disjoint-repair-2-continuation",
+  "contextIndex": 10,
+  "shardId": "debate-07-shard-1",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "stagingOnly": true,
+  "debateNumber": "07",
+  "debateId": "wood-oconnor-jesus-claim-god-2025",
+  "assessmentModel": "5.6 Sol",
+  "correctionType": "user-authorized-multi-field-field-disjoint-publication-repair",
+  "writableFieldCount": 1,
+  "writableFields": [
+    "aiExtension.con.premises.0.novelty.explanation"
+  ],
+  "targets": [
+    {
+      "kind": "novelty",
+      "field": "aiExtension.con.premises.0.novelty.explanation",
+      "side": "con",
+      "slot": "premises",
+      "index": 0,
+      "itemId": "ai07-con-premise-motion-specificity",
+      "itemText": "Evidence that an author or early community regarded Jesus highly is historically relevant but does not itself answer the narrower question of what Jesus personally claimed.",
+      "classification": "extends",
+      "sourceMoveIds": [
+        "con-pauline-self-claim-distinction"
+      ],
+      "originalWords": 6,
+      "originalCharacters": 66,
+      "originalValueSha256": "638075d64551a8a5ec85214ba55ddbb7d1b5d8f50d90823ea44d4486c665586e",
+      "fieldKey": "field_01"
+    }
+  ],
+  "rejectedPriorStringsAvailable": false,
+  "failedPublicationOutputAvailable": false,
+  "allOtherFieldsUnavailableAndImmutable": true,
+  "participantJudgmentClosed": true,
+  "publicationScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "critiqueSentenceCount": 4,
+    "critiqueOrderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueWordsMinimum": 105,
+    "critiqueWordsMaximum": 130,
+    "critiqueWordsTargetMinimum": 112,
+    "critiqueWordsTargetMaximum": 118,
+    "critiqueCharactersMinimum": 880,
+    "terminalPunctuationRequired": true,
+    "quoteWordsMinimum": 3,
+    "quoteWordsMaximum": 18,
+    "quoteExactContiguousSourceSubstringRequired": true,
+    "noveltyExplanationWordsMinimum": 8,
+    "namedFallacyOrBiasFieldsWritable": false
+  }
+}
