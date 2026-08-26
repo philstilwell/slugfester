@@ -32,7 +32,10 @@ const workPath = `${planRoot}/audio-work-items.json`;
 const preparationPath = `${planRoot}/audio-source-preparation.json`;
 const partialExecutionPath = `${planRoot}/audio-source-partial-execution-1.json`;
 const levelOneFailurePath = `${planRoot}/audio-source-recovery-1-failure.json`;
-const recoveryExecutionPath = `${planRoot}/audio-source-recovery-2-debate-15.json`;
+const levelTwoShardOneFailurePath =
+  `${planRoot}/audio-source-recovery-2-shard-1-failure.json`;
+const recoveryExecutionPath =
+  `${planRoot}/audio-source-recovery-2-shard-2-debate-15.json`;
 const ffmpeg = "/opt/homebrew/bin/ffmpeg";
 const ffprobe = "/opt/homebrew/bin/ffprobe";
 const exists = (file) => access(file).then(() => true, () => false);
@@ -73,6 +76,7 @@ const TOOL_SOURCES = [
   "scripts/test-assessment-production-post-canary-batch-12-audio-sources.mjs",
   "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15.mjs",
   "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15-level-2.mjs",
+  "scripts/recover-assessment-production-post-canary-batch-12-audio-source-debate-15-level-2-shard-2.mjs",
   "scripts/prepare-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/test-assessment-production-post-canary-batch-12-audio-work-items.mjs",
   "scripts/lib/assessment-production-post-canary-batch-12-audio-work-items.mjs",
@@ -107,18 +111,21 @@ const [
   workBytes,
   partialExecutionBytes,
   levelOneFailureBytes,
+  levelTwoShardOneFailureBytes,
   recoveryExecutionBytes
 ] = await Promise.all([
   readFile(workPreparationPath),
   readFile(workPath),
   readFile(partialExecutionPath),
   readFile(levelOneFailurePath),
+  readFile(levelTwoShardOneFailurePath),
   readFile(recoveryExecutionPath)
 ]);
 const workPreparation = JSON.parse(workPreparationBytes);
 const work = JSON.parse(workBytes);
 const partialExecution = JSON.parse(partialExecutionBytes);
 const levelOneFailure = JSON.parse(levelOneFailureBytes);
+const levelTwoShardOneFailure = JSON.parse(levelTwoShardOneFailureBytes);
 const recoveryExecution = JSON.parse(recoveryExecutionBytes);
 
 assertV4(
@@ -157,9 +164,13 @@ assertV4(
     levelOneFailure.status ===
       "debate-15-audio-source-recovery-level-1-failed-preserved-level-2-authorized" &&
     levelOneFailure.recoveryPlan.level === 2 &&
+    levelTwoShardOneFailure.status ===
+      "debate-15-audio-source-recovery-level-2-shard-1-http-403-preserved-shard-2-authorized" &&
+    levelTwoShardOneFailure.recoveryPlan.shardIndex === 2 &&
     recoveryExecution.status ===
-      "debate-15-audio-source-recovery-level-2-passed" &&
+      "debate-15-audio-source-recovery-level-2-shard-2-passed" &&
     recoveryExecution.recoveryLevel === 2 &&
+    recoveryExecution.shardIndex === 2 &&
     recoveryExecution.shardAttempt === 1 &&
     recoveryExecution.retries === 0 &&
     recoveryExecution.freshFormatSelector === SOURCE_FORMATS["5OXPlUCGScY"],
@@ -176,6 +187,7 @@ const inputHashes = {
   [workPath]: sha256(workBytes),
   [partialExecutionPath]: sha256(partialExecutionBytes),
   [levelOneFailurePath]: sha256(levelOneFailureBytes),
+  [levelTwoShardOneFailurePath]: sha256(levelTwoShardOneFailureBytes),
   [recoveryExecutionPath]: sha256(recoveryExecutionBytes),
   [POST_CANARY_BATCH_12_STANDING_AUTHORIZATION]: standingAuthorization.sha256
 };
@@ -473,7 +485,7 @@ for (const [videoId, moves] of grouped) {
   const acquisitionMode = recovered
     ? "downloaded-public-source-after-bounded-field-disjoint-recovery"
     : "downloaded-public-source-preserved-from-partial-execution";
-  const acquisitionAttempts = recovered ? 3 : 1;
+  const acquisitionAttempts = recovered ? 4 : 1;
   const publicSourceAttemptOutcome = recovered
     ? "success-after-bounded-field-disjoint-recovery"
     : "success-preserved-from-partial-execution";
@@ -490,7 +502,8 @@ for (const [videoId, moves] of grouped) {
       ? [
           { shard: "initial", attempt: 1, outcome: "failed-preserved" },
           { shard: "recovery-1", attempt: 1, outcome: "failed-preserved" },
-          { shard: "recovery-2", attempt: 1, outcome: "success" }
+          { shard: "recovery-2-shard-1", attempt: 1, outcome: "failed-preserved" },
+          { shard: "recovery-2-shard-2", attempt: 1, outcome: "success" }
         ]
       : [{ shard: "initial", attempt: 1, outcome: "success-preserved" }]
   });
@@ -622,6 +635,7 @@ const preparation = {
       path: recoveryExecutionPath,
       sha256: sha256(recoveryExecutionBytes),
       level: recoveryExecution.recoveryLevel,
+      shardIndex: recoveryExecution.shardIndex,
       shardAttempt: recoveryExecution.shardAttempt,
       formatSelector: recoveryExecution.freshFormatSelector,
       transport: recoveryExecution.transport.method,
@@ -634,6 +648,13 @@ const preparation = {
       status: levelOneFailure.status,
       preservedDownloadedArtifact:
         levelOneFailure.preservedDownloadedArtifact.path
+    },
+    levelTwoShardOneFailure: {
+      path: levelTwoShardOneFailurePath,
+      sha256: sha256(levelTwoShardOneFailureBytes),
+      status: levelTwoShardOneFailure.status,
+      httpStatus: levelTwoShardOneFailure.httpStatus,
+      mediaBytesReceived: levelTwoShardOneFailure.mediaBytesReceived
     },
     normalizedChannels: 1,
     normalizedSampleRateHz: 16000,
@@ -662,8 +683,8 @@ const preparation = {
       (sum, source) => sum + source.publicSourceAcquisitionAttempts,
       0
     ),
-    failedSourceAcquisitionAttempts: 2,
-    recoverySourceAcquisitionAttempts: 2,
+    failedSourceAcquisitionAttempts: 3,
+    recoverySourceAcquisitionAttempts: 3,
     clips: clips.length,
     clipMinutes: Number(
       (clips.reduce((sum, clip) => sum + clip.durationSeconds, 0) / 60).toFixed(4)
