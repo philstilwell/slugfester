@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2-preparation",
+  "protocolId": "assessment-production-post-canary-batch-10-dispute-only-adjudication",
+  "status": "frozen-two-batch-10-debate-74-field-disjoint-adjudication-correction-2-contexts-prepared",
+  "frozenAt": "2026-08-26T01:56:45.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-failure-diagnosis.json",
+  "userAuthorization": {
+    "instruction": "I authorize one additional Debate 74 correction using two fresh, field-disjoint shards covering all 26 choices from failed shard 2. Retain passed shard 1, reuse none of failed shard 2, explicitly require the con burden-adjustment decision, and allow one attempt per shard with no retries or timeout extensions, using 5.6 Sol/low through the ChatGPT subscription at $0 direct incremental cost. After validation and merge, resume only the seven unattempted Batch 10 contexts.",
+    "retainedPassedShard01": true,
+    "failedShard02OutputReusable": false,
+    "contexts": 2,
+    "candidateSelections": 26,
+    "explicitConBurdenAdjustmentRequired": true,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "sevenContextResumptionAuthorizedAfterPassingMerge": true
+  },
+  "predecessor": {
+    "retainedShard01Packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-01.json",
+    "retainedShard01PacketSha256": "912ac5ef0a0dbbdc4652aa7a5ee6b2151bf4e77f3abd9a292dc009da62579750",
+    "retainedShard01Output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-01.json",
+    "retainedShard01OutputSha256": "6cc0afee91df54eefb99e69057f78affb3b56bfefd0f52e25e7443255c7c360d",
+    "retainedShard01CandidateSelections": 26,
+    "failedShard02Packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-02.json",
+    "failedShard02PacketSha256": "200bdbb01ac011875eb9496875b14320f3c0f9f162462fee9ee2147cf29088b6",
+    "failedShard02Output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-02.json",
+    "failedShard02OutputSha256": "c2da17eeab883a53eebddde13d28a6e00937df1553c78434ae3c7a5e82da5319",
+    "failedShard02OutputReusable": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "decomposedRubric": "docs/reassessment-rubric-v4.0.md",
+    "derivedFindingsRubric": "docs/reassessment-rubric-v4.0.1.md",
+    "boundedInventoryRubric": "docs/reassessment-rubric-v4.1.md",
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "adjudicationWorkflow": "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "shard-01",
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/packets/debate-74-shard-01.json",
+      "packetSha256": "6aec7aba5e90a38bfbab1e29d7c9589bee5c7e259a0cb6a3cb545071d737e510",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-01.json",
+      "disputedMoves": 9,
+      "burdenAdjustmentDisputes": 0,
+      "candidateSelections": 24,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "pro-voluntary-risk-arena",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json",
+          "modelInputFile": "audio-transcript-pro-voluntary-risk-arena.json",
+          "sha256": "7eb5fd662c671bb419ef6041249119d1b98b6317458b13e3061cfa14431dda6f"
+        }
+      ],
+      "packetBytes": 169749,
+      "copiedInputBytes": 219498,
+      "moveIds": [
+        "pro-randomized-clock-independence",
+        "pro-conditional-inference-defense",
+        "pro-adjacent-world-clock-variation",
+        "pro-auxiliary-probability-asymmetry",
+        "pro-expected-unknown-divine-reasons",
+        "pro-commonsense-moral-evidence",
+        "pro-voluntary-risk-arena",
+        "con-unfair-distribution-of-extreme-suffering",
+        "con-fine-grained-consciousness-evidence"
+      ],
+      "burdenAdjustmentSides": []
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "shard-02",
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/packets/debate-74-shard-02.json",
+      "packetSha256": "9756939544ad0eda8425f0cfa4860e6ca927bb3a8e4d862bd374eaa3831bdeec",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-02.json",
+      "disputedMoves": 1,
+      "burdenAdjustmentDisputes": 1,
+      "candidateSelections": 2,
+      "audioTranscriptInputs": [],
+      "packetBytes": 18808,
+      "copiedInputBytes": 54582,
+      "moveIds": [
+        "con-minimal-diagnosis-parsimony"
+      ],
+      "burdenAdjustmentSides": [
+        "con"
+      ]
+    }
+  ],
+  "mergePlan": {
+    "originalPacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-74.json",
+    "originalPacketSha256": "af2f2e6a9b8998a2dae5540f76d503c62b9eeaebedbef97f55119032945bea0e",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-74.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/analysis.json",
+    "originalMoveOrder": [
+      "pro-grim-core-inference",
+      "pro-randomized-clock-independence",
+      "con-unsatisfiable-pair-diagnosis",
+      "con-minimal-diagnosis-parsimony",
+      "pro-conditional-inference-defense",
+      "con-rearrangement-can-cross-impossibility",
+      "con-infinite-recombination-limits",
+      "pro-adjacent-world-clock-variation",
+      "pro-auxiliary-probability-asymmetry",
+      "con-compensation-does-not-justify-atrocity",
+      "pro-expected-unknown-divine-reasons",
+      "con-shared-moral-knowledge-limits-skepticism",
+      "pro-commonsense-moral-evidence",
+      "pro-voluntary-risk-arena",
+      "con-unfalsifiability-severs-evidence",
+      "con-unfair-distribution-of-extreme-suffering",
+      "pro-finite-agent-world-goods",
+      "pro-conscious-suffering-likelihood",
+      "con-fine-grained-consciousness-evidence"
+    ],
+    "originalBurdenOrder": [
+      "pro",
+      "con"
+    ],
+    "retainedCandidateSelections": 26,
+    "replacementCandidateSelections": 26,
+    "requiredCandidateSelections": 52,
+    "everyOriginalFieldAcceptedExactlyOnce": true,
+    "validateMergedOutputAgainstOriginalPacket": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "rampPhases": [
+      {
+        "phase": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": 2,
+        "contextIndexes": [
+          1
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "terminateIsolatedProcessGroupAtFrozenTimeout": true,
+    "failedPartialOutputReusable": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/model-execution.json",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-74.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-failure-diagnosis.json": "3b43099f081ff6c6af473ed9a916d7bea4b88327a2bb46b39d0b3baa7df1bdbe",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/execution-activation.json": "6ae156ef6120422c4f633dd3dba0dd38b5a18af20a2be0dfe2dc928976bbb89c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-74.json": "af2f2e6a9b8998a2dae5540f76d503c62b9eeaebedbef97f55119032945bea0e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-preparation-manifest.json": "6048a9e047e982658baea8908fd9fb0cb11430ec5fa3f57af877ed9fe0ae553f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-execution-activation.json": "16a6fab63bb3de42df60ea479c41a58eaa2b501e6267cbe5959a8edeadc82116",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-model-execution.json": "6a8488eceeb2b2b0c48116bb4025e57b9592f2e3650823ff5652652d171bcda6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-01.json": "912ac5ef0a0dbbdc4652aa7a5ee6b2151bf4e77f3abd9a292dc009da62579750",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-01.json": "6cc0afee91df54eefb99e69057f78affb3b56bfefd0f52e25e7443255c7c360d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/packets/debate-74-shard-02.json": "200bdbb01ac011875eb9496875b14320f3c0f9f162462fee9ee2147cf29088b6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/outputs/debate-74-shard-02.json": "c2da17eeab883a53eebddde13d28a6e00937df1553c78434ae3c7a5e82da5319",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/adjudication.schema.json": "1bdaa741d80e4097e0238432ee354cb74d015c219dd7809d5e84d2a8af7548c6",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md": "7ea2da737b26349826c3e8ff595f41524afd1f4b23294f3783923946601fee0c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md": "afe02e43ab72c1af4104730e1097bc2fb783c2dd7ab803d3efeb5a61efe4f0d1",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/lib/v42211728-hard-route-adjudication.mjs": "53d850f6d25f5b1d71f7be6c81ad4c642c13bad204a5c01947e89b3410dbb388",
+    "scripts/lib/assessment-production-post-canary-batch-10-dispute-adjudication.mjs": "7065e036d86be194ca811a32b7537b22d5149b832ec7d1f8901c26d094daaae2",
+    "scripts/diagnose-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-failure.mjs": "4baf8e498ab6c01df1c8d24f57ad54f28aa955523aefe20e96234a1ffbab8d33",
+    "scripts/prepare-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2.mjs": "31b29e1e3c2c319f3f116789b781957cccd4d8b6e5f3c0942f24e098b900e896",
+    "scripts/activate-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2.mjs": "74705a97f005ad1590d3704a819292b1f626aae48240abc6a9dd8fba21595caf",
+    "scripts/run-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2.mjs": "0279a166acbe47b9a11db77f17e6905f4cab6a4194c6746d1ada758e1e8844ff",
+    "scripts/merge-assessment-production-post-canary-batch-10-debate-74-adjudication-correction-2.mjs": "4168a90bc57c8969df364f397407b2247cbd5cd0fde3b09f8ad930dc1c15bb3c",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/transcripts/pro-voluntary-risk-arena.transcript.json": "7eb5fd662c671bb419ef6041249119d1b98b6317458b13e3061cfa14431dda6f"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-01.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/outputs/debate-74-shard-02.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/analysis.json"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "adjudicationModelContexts": false,
+    "deterministicMergeAndValidation": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "activate-two-frozen-debate-74-adjudication-correction-2-shards"
+}
