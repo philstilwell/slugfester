@@ -274,11 +274,11 @@ export const debateSummaries = [
     "number": "07",
     "title": "David Wood vs Alex O'Connor: Did Jesus Claim to Be God?",
     "label": "New Testament christology",
-    "date": "2026-05-28",
+    "date": "2026-08-26",
     "duration": "2 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_hrN4Mn8m1w",
     "motion": "Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?",
-    "summary": "Wood argues Jesus identified with divine authority; O'Connor argues the texts more plausibly show delegated, name-bearing agency.",
+    "summary": "Wood built a cumulative divine-identity case, while O'Connor more consistently showed that agency, delegation, and later devotion underdetermine Jesus's personal self-claim.",
     "sides": {
       "pro": {
         "name": "Affirmative",
@@ -292,27 +292,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 81
+      "pro": 83,
+      "con": 90
     },
     "sections": [
       {
-        "title": "Two powers and shared unity"
+        "title": "Two powers, divine name-bearing, and Jewish agency"
       },
       {
-        "title": "Divine name and angelic agency"
+        "title": "Jesus's sayings, titles, and scriptural allusions"
       },
       {
-        "title": "Divine prerogatives"
+        "title": "Divine prerogatives, dependence, and delegated authority"
       },
       {
-        "title": "Worship and reverence"
+        "title": "Worship, early devotion, and hostile reactions"
       },
       {
-        "title": "Daniel 7 and blasphemy"
-      },
-      {
-        "title": "Early christology and closing tests"
+        "title": "Historical self-claim and christological development"
       }
     ]
   },
@@ -453,11 +450,11 @@ export const debateSummaries = [
     "number": "11",
     "title": "Dinesh D'Souza vs Bart Ehrman: God, Suffering, and Evil",
     "label": "Problem of evil",
-    "date": "2026-05-28",
+    "date": "2026-08-26",
     "duration": "1 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=XtWjEjdYvLA",
     "motion": "Can belief in a loving, powerful God survive the scale of suffering and evil in the world?",
-    "summary": "Ehrman argues suffering undermines biblical theism; D'Souza argues God may have morally sufficient reasons for permitting it.",
+    "summary": "D'Souza defended theistic compatibility through epistemic limits, freedom, and natural order; Ehrman pressed suffering's scale, preventability, and unexplained intervention gap.",
     "sides": {
       "pro": {
         "name": "Theistic answer",
@@ -471,30 +468,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 71,
-      "con": 82
+      "pro": 79,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Problem framed"
+        "title": "Divine Love, Power, and Expected Intervention"
       },
       {
-        "title": "Biblical answers and Job"
+        "title": "Epistemic Limits and Scriptural Explanations"
       },
       {
-        "title": "Moral evil and intervention"
+        "title": "Human Freedom and Moral Evil"
       },
       {
-        "title": "Natural suffering"
+        "title": "Natural Law, Fine-Tuning, and Natural Suffering"
       },
       {
-        "title": "Laws and miracles"
-      },
-      {
-        "title": "Compassion and culture"
-      },
-      {
-        "title": "Fall and close"
+        "title": "Meaning, Compassion, and Responses to Suffering"
       }
     ]
   },
@@ -636,11 +627,11 @@ export const debateSummaries = [
     "number": "15",
     "title": "Christopher Hitchens vs John Lennox: Is God Great?",
     "label": "God and anti-theism",
-    "date": "2026-05-28",
+    "date": "2026-08-26",
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5OXPlUCGScY",
     "motion": "Is God great, and does Christian theism better explain science, morality, dignity, and hope than Hitchens's anti-theistic critique?",
-    "summary": "Lennox argues God grounds science, morality, dignity, and Christian hope; Hitchens argues theism is unsupported, authoritarian, and morally compromised by suffering and religious history.",
+    "summary": "Lennox defended Christian explanatory foundations and redemptive hope; Hitchens pressed stronger challenges concerning revelation, secular value, suffering, authority, and historical complicity.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -654,27 +645,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 82
+      "pro": 77,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Science and agency"
+        "title": "Cosmic Intelligibility, Biology, and Natural Explanation"
       },
       {
-        "title": "Cosmic scale"
+        "title": "Reason, Revelation, and the Warrant for Christianity"
       },
       {
-        "title": "Morality and rationality"
+        "title": "Morality, Objective Obligation, and Atonement"
       },
       {
-        "title": "Divine government"
+        "title": "Human Dignity, Meaning, Solidarity, and Hope"
       },
       {
-        "title": "Jesus and miracles"
+        "title": "Divine Greatness, Suffering, Freedom, and Authority"
       },
       {
-        "title": "Dignity and history"
+        "title": "Religion, Violence, Liberty, and Historical Consequences"
       }
     ]
   },
@@ -1228,11 +1219,11 @@ export const debateSummaries = [
     "number": "28",
     "title": "Frank Turek vs Michael Shermer: What Best Explains Reality?",
     "label": "Reality, evidence, and skepticism",
-    "date": "2026-05-30",
+    "date": "2026-08-26",
     "duration": "2 hr 4 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8aZn7XUFSmA",
     "motion": "What best explains reality: theism grounded in God as the cause of creation, reason, information, morality, evil, and science, or skeptical naturalism grounded in evidence and scientific inquiry?",
-    "summary": "Turek builds a cumulative CRIMES case for theism; Shermer argues that science, reciprocal morality, and falsifiability explain reality better than a gap-filling God hypothesis.",
+    "summary": "Turek advances a cumulative theistic explanation, while Shermer's calibrated skepticism, natural mechanisms, and evidential challenges more completely answer the debate's central burdens.",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -1246,27 +1237,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 85
+      "pro": 72,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Creation and explanation"
+        "title": "Evidence, Testability, and Explanatory Adequacy"
       },
       {
-        "title": "Reason and laws"
+        "title": "Cosmic Origins, Fine-Tuning, and Transcendent Causation"
       },
       {
-        "title": "DNA and information"
+        "title": "Biological Information, Life’s Origin, and Evolution"
       },
       {
-        "title": "Morality and justice"
+        "title": "Reason, Mind, Freedom, and the Order Presupposed by Science"
       },
       {
-        "title": "Suffering and falsifiability"
+        "title": "Moral Grounding, Human Meaning, and Justice"
       },
       {
-        "title": "Religion and closing"
+        "title": "Evil, Divine Purpose, and Competing Religious Claims"
       }
     ]
   },
@@ -1275,11 +1266,11 @@ export const debateSummaries = [
     "number": "29",
     "title": "Frank Turek vs David Silverman: Which Better Explains Reality?",
     "label": "Reality and moral responsibility",
-    "date": "2026-05-30",
+    "date": "2026-08-26",
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=RzP07nEwNP8",
     "motion": "Which better explains reality: theism, with God as the ground of creation, reason, information, morality, evil, and science, or atheism, with natural inquiry and human responsibility?",
-    "summary": "Turek argues that immaterial features of reality require theism; Silverman argues that atheism is the honest stance because science learns while religion fills gaps and revises after the fact.",
+    "summary": "Turek advances cumulative theistic explanations, while Silverman emphasizes natural processes, evidential restraint, human responsibility, and tensions between divine attributes and suffering.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -1294,27 +1285,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 82
+      "pro": 77,
+      "con": 78
     },
     "sections": [
       {
-        "title": "Cosmos and cause"
+        "title": "Cosmic origin, fine-tuning, and supernatural inference"
       },
       {
-        "title": "Design and fit"
+        "title": "Reason, biological information, evolution, and science"
       },
       {
-        "title": "Information and evolution"
+        "title": "Moral standards, empathy, and human responsibility"
       },
       {
-        "title": "Morality and objectivity"
+        "title": "Evil, suffering, freedom, and divine attributes"
       },
       {
-        "title": "Evil and free will"
-      },
-      {
-        "title": "Science and closing burdens"
+        "title": "Comparative explanation, falsifiability, and epistemic method"
       }
     ]
   },
@@ -1458,11 +1446,11 @@ export const debateSummaries = [
     "number": "33",
     "title": "William Lane Craig vs Sean Carroll: God and Cosmology",
     "label": "God and cosmological models",
-    "date": "2026-05-30",
+    "date": "2026-08-26",
     "duration": "2 hr 16 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=X0qKZqPy9T8",
     "motion": "Does contemporary cosmology make God's existence more probable, or do naturalistic cosmological models better explain the universe without theism?",
-    "summary": "Craig argues that cosmology supports the Kalam and fine-tuning arguments for a creator and designer; Carroll argues that naturalism supplies better model-based explanations and that theism lacks predictive discipline.",
+    "summary": "Craig argued that cosmic beginnings and fine-tuning favor theism; Carroll countered that self-contained models, measure sensitivity, and predictive discipline favor naturalism.",
     "sides": {
       "pro": {
         "name": "Theistic cosmology",
@@ -1476,27 +1464,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 88
+      "pro": 83,
+      "con": 90
     },
     "sections": [
       {
-        "title": "Framing the debate"
+        "title": "Cosmic Beginning and Eternal Models"
       },
       {
-        "title": "Cause and first moment"
+        "title": "Causation, Time, and a First Moment"
       },
       {
-        "title": "Beginning theorems and eternal models"
+        "title": "Fine-Tuning and Cosmological Probability"
       },
       {
-        "title": "Entropy and Boltzmann brains"
+        "title": "Low Entropy, Multiverses, and Observer Typicality"
       },
       {
-        "title": "Fine-tuning and multiverse"
-      },
-      {
-        "title": "Predictive standards"
+        "title": "Explanatory Scope and Predictive Standards"
       }
     ]
   },
@@ -5251,11 +5236,11 @@ export const debateSummaries = [
     "number": "116",
     "title": "Cameron Bertuzzi vs Justin Schieber: The Problem of Evil",
     "label": "Evil as evidence",
-    "date": "2026-07-28",
+    "date": "2026-08-26",
     "duration": "1 hr 05 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=huOwbSrl-xw",
     "motion": "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
-    "summary": "Schieber argues suffering favors naturalism over theism; Bertuzzi argues naturalism does not predict the data and that soul-building or skeptical theism blocks the inference.",
+    "summary": "Schieber's comparative suffering case prevailed overall, while Bertuzzi's likelihood objection and limited-information defense exposed a serious weakness in the final skeptical-theism reply.",
     "sides": {
       "pro": {
         "name": "Theistic no-evidence defense",
@@ -5269,30 +5254,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
-      "con": 84
+      "pro": 78,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Burden Framed"
+        "title": "Comparative Likelihood and Naturalistic Prediction"
       },
       {
-        "title": "Pain And Pleasure"
+        "title": "Biological Orientation of Pain and Pleasure"
       },
       {
-        "title": "Languishing And Horror"
+        "title": "Sentient Flourishing and Languishing"
       },
       {
-        "title": "Soul Building"
+        "title": "Horrendous Evil and Divine Prevention"
       },
       {
-        "title": "Skeptical Theism"
+        "title": "Scope and Necessity of Soul-Building"
       },
       {
-        "title": "Fine-Tuning Evil"
-      },
-      {
-        "title": "Closing Burdens"
+        "title": "Skeptical Theism and Unknown Reasons"
       }
     ]
   },
@@ -5392,11 +5374,11 @@ export const debateSummaries = [
     "number": "119",
     "title": "Michael Jones vs Alex O'Connor: Does God Send People to Hell?",
     "label": "Hell, self-exile, and grace",
-    "date": "2026-07-29",
+    "date": "2026-08-26",
     "duration": "1 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kOzmwGmiDHQ",
     "motion": "Can the Christian doctrine of hell be morally justified as self-chosen exile, sanctifying grace, and possible annihilation rather than external torture?",
-    "summary": "Jones defends a C.S. Lewis-style view of hell as self-exile and resisted grace; O'Connor argues that belief formation, misinformation, and divine love make continued hell morally unstable.",
+    "summary": "Jones defends hell through self-chosen degeneration, corrective grace, open escape, and possible annihilation; O'Connor challenges agency, proportionality, misinformation, universalism, and atonement.",
     "sides": {
       "pro": {
         "name": "Christian hell defense",
@@ -5410,30 +5392,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 85
+      "pro": 80,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Doctrine And Stakes"
+        "title": "Nature and authorship of hellish suffering"
       },
       {
-        "title": "Desert And Information"
+        "title": "Agency, information, and culpable rejection"
       },
       {
-        "title": "Motivated Belief"
+        "title": "Duration, escape, annihilation, and proportionality"
       },
       {
-        "title": "Self-Exile And Deadline"
+        "title": "Grace, painful sanctification, and universalism"
       },
       {
-        "title": "Torment And Vengeance"
-      },
-      {
-        "title": "Addiction And Universalism"
-      },
-      {
-        "title": "Atonement Price"
+        "title": "Atonement and the basis of rescue"
       }
     ]
   },
@@ -5945,11 +5921,11 @@ export const debateSummaries = [
     "number": "131",
     "title": "Stephen Boyce vs Richard Carrier: Did Jesus Exist?",
     "label": "Historical Jesus and mythicism",
-    "date": "2026-07-30",
+    "date": "2026-08-26",
     "duration": "2 hr 54 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=bC-Uj92Cpvg",
     "motion": "Did Jesus exist as a historical person, or did early Christian belief begin with a celestial or mythic Christ later placed in history?",
-    "summary": "Boyce argues that Paul, James, external references, and family traditions point to a real first-century Jesus; Carrier argues that the earliest data are ambiguous, revelation-driven, and later mythicized.",
+    "summary": "Boyce defended an earthly historical Jesus through Paul, kinship, and corroboration; Carrier pressed celestial compatibility, source dependence, ambiguity, and alternative appearance explanations.",
     "sides": {
       "pro": {
         "name": "Historicity defense",
@@ -5963,30 +5939,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
+      "pro": 78,
       "con": 83
     },
     "sections": [
       {
-        "title": "Paul's Baseline Evidence"
+        "title": "Pauline embodiment, birth, ancestry, death, and burial"
       },
       {
-        "title": "James and Brother Language"
+        "title": "James and the meaning of brother of the Lord"
       },
       {
-        "title": "Gospels and Narrative Independence"
+        "title": "Independence and reliability of later corroboration"
       },
       {
-        "title": "Tacitus and Later Sources"
+        "title": "Resurrection appearances, conversion, and early movement origins"
       },
       {
-        "title": "Paul, Acts, and Persecution"
-      },
-      {
-        "title": "Witnesses and Resurrection Memory"
-      },
-      {
-        "title": "Probability and Messianic Scripture"
+        "title": "Comparative mythic models and documentary expectations"
       }
     ]
   },
@@ -6894,11 +6864,11 @@ export const debateSummaries = [
     "number": "152",
     "title": "Stuart Knechtle vs Aron Ra: Does God Exist?",
     "label": "Design, logic, and God",
-    "date": "2026-07-31",
+    "date": "2026-08-26",
     "duration": "3 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9r_XAIksLdI",
     "motion": "Does God exist, and do design, morality, logic, and experience support that conclusion?",
-    "summary": "Knechtle presents a cumulative Christian-theistic case from design, morality, and reason; Ra defends atheistic naturalism by challenging its evidential and explanatory steps.",
+    "summary": "Knechtle advances cumulative theistic arguments from order, reason, morality, and Jesus; Aron Ra counters through evidential standards, natural explanations, and religious unreliability.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -6913,27 +6883,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 52,
-      "con": 65
+      "pro": 71,
+      "con": 78
     },
     "sections": [
       {
-        "title": "Evidence, Science, and Design"
+        "title": "Evidence, Burden, and Methodological Naturalism"
       },
       {
-        "title": "Morality, Altruism, and Humanism"
+        "title": "Cosmic Origin, Physical Order, and Design"
       },
       {
-        "title": "Biological Complexity and Evolution"
+        "title": "Biological Complexity, Evolution, and Intelligent Design"
       },
       {
-        "title": "Christianity, Scripture, and Divine Character"
+        "title": "Logic, Mathematics, and Rational Order"
       },
       {
-        "title": "Logic, Mathematics, and Divine Mind"
+        "title": "Morality, Human Value, Purpose, and Altruism"
       },
       {
-        "title": "Purpose, Objectivity, and Burden"
+        "title": "Christian Revelation, Religious Experience, and Hiddenness"
       }
     ]
   },
