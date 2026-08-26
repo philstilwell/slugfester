@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-rendering-packet",
+  "protocolId": "assessment-production-post-canary-batch-10-rendering-verification",
+  "status": "frozen-batch-10-rendering-verification-packet",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "debateNumber": "130",
+  "debateId": "licona-carrier-resurrection-history-2010",
+  "candidate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-finalization/output-bundle/final-candidates/debate-130.json",
+    "sha256": "0f46ca53da7883247e7954f985eddfe48788d0b789a59ecef39d671ec1a735b8",
+    "scores": {
+      "pro": 80,
+      "con": 83
+    },
+    "sections": 5,
+    "moves": 16,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-finalization/output-bundle/provenance/debate-130.json",
+    "sha256": "3d9dafbeee79cb469f72dc33eb2bf0f9dd2e560a0b8680192e1bcb2b99cc9036",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preview": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-finalization/output-bundle/rendering-preview/index.html",
+    "sha256": "4dd62061faf153a9932fef13bd981966fe76c8bceb08484777c04c945d735799",
+    "url": "http://127.0.0.1:4206/docs/assessment-production/post-canary-continuation-v1/batch-10/publication-finalization/output-bundle/rendering-preview/index.html?debate=130",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBanner": "Publication staging preview: validated post-canary Batch 10 candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "prohibitedText": [
+      "unassailable"
+    ],
+    "nativeElement": "details",
+    "defaultCollapsed": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-10/rendering-verification/evidence/debate-130/desktop.json",
+        "collapsedScreenshot": "output/playwright/batch-10-rendering/debate-130/desktop-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-10-rendering/debate-130/desktop-open.jpg"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-10/rendering-verification/evidence/debate-130/mobile.json",
+        "collapsedScreenshot": "output/playwright/batch-10-rendering/debate-130/mobile-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-10-rendering/debate-130/mobile-open.jpg"
+      }
+    }
+  },
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "runnerPolicy": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch10-rendering",
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "screenshotFormat": "jpeg",
+    "screenshotQuality": 85,
+    "screenshotFullPage": false,
+    "interactionOrder": [
+      "observe-default-collapsed-state",
+      "capture-collapsed-screenshot",
+      "open-native-summary-with-pointer",
+      "capture-open-screenshot",
+      "close-with-pointer",
+      "focus-native-summary",
+      "open-with-enter",
+      "close-with-space"
+    ]
+  },
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "nextBatchSelectionWritable": false
+  }
+}
