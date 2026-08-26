@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-publication-field-disjoint-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-12-publication-field-disjoint-repair-2",
+  "status": "debate-28-field-disjoint-repair-level-2-passed-awaiting-eight-context-resumption",
+  "productionCanary": false,
+  "batchNumber": 12,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/field-disjoint-repair-2/execution-preparation-manifest.json",
+    "preparationSha256": "c4abea7106a7a7249921b0b217b0f73e144d043d1cfb0444c6453c89fa3bf2d8",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/field-disjoint-repair-2/execution-activation.json",
+    "activationSha256": "d9040e1b7b4e6edb8753e1aec932f819fe3931e6a10be91e60fd16ed230c2d84",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-12/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/field-disjoint-repair-2/model-execution.json",
+    "executionSha256": "4faa62da72bafb0c7e33eec45ce6e6f553dc3ff9f653f0df93152dd51805f40c"
+  },
+  "execution": {
+    "contextsPlanned": 1,
+    "contextsAttempted": 1,
+    "validContexts": 1,
+    "invalidContexts": 0,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumObservedConcurrency": 1,
+    "wallElapsedMs": 39228,
+    "aggregateModelElapsedMs": 39215
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-28-shard-1",
+      "debateNumber": "28",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "23f33d57495962ee9cd1db2d015e12880787a7b00fbe603c6eb5fe6a69e5a2f9",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 0,
+        "debateNumber": "28",
+        "shardId": "debate-28-shard-1",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-evidence-sensitive-atheism.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 1025,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    }
+  ],
+  "debateResults": [
+    {
+      "debateNumber": "28",
+      "contextsPlanned": 1,
+      "contextsPassed": 1,
+      "contextsFailed": 0,
+      "writableFields": 1,
+      "correctedFields": 1,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "28",
+        "moves": 24,
+        "critiques": 24,
+        "minimumCritiqueCharacters": 950,
+        "tags": 3,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    }
+  ],
+  "totals": {
+    "debatesTargeted": 1,
+    "debatesRepaired": 1,
+    "debatesFailed": 0,
+    "critiqueFieldsTargeted": 1,
+    "quoteFieldsTargeted": 0,
+    "writableFieldsTargeted": 1,
+    "correctedFieldsAccepted": 1,
+    "modelContexts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completeCohortStatus": null,
+  "authorization": {
+    "eightContextResumptionPreparation": true,
+    "deterministicCompilationPreparation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-eight-original-unattempted-batch-12-publication-contexts"
+}
