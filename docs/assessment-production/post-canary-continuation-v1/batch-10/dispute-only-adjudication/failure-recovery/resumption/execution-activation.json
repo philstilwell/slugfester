@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-dispute-only-adjudication-resumption-activation",
+  "protocolId": "assessment-production-post-canary-batch-10-dispute-only-adjudication",
+  "status": "frozen-seven-post-canary-batch-10-dispute-only-adjudication-resumption-contexts-authorized",
+  "frozenAt": "2026-08-26T02:06:41.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "acceptedCorrection": {
+    "debateNumber": "74",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/analysis.json",
+    "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-74.json",
+    "outputSha256": "2573c501475d590548ff48e235e516981afde68cde4c7ed80632da14a3b3e431",
+    "disputedMoves": 19,
+    "candidateSelections": 52,
+    "retainedPassedCorrectionShard01": true,
+    "failedCorrectionShard02Reused": false,
+    "correction2Contexts": 2
+  },
+  "originalFailure": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/model-execution.json",
+    "unattemptedContextIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "resumeOnlyUnattempted": true
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "decomposedRubric": "docs/reassessment-rubric-v4.0.md",
+    "derivedFindingsRubric": "docs/reassessment-rubric-v4.0.1.md",
+    "boundedInventoryRubric": "docs/reassessment-rubric-v4.1.md",
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "adjudicationWorkflow": "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "142",
+      "debateId": "comfort-dillahunty-gospel-atonement-2020",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-142.json",
+      "packetSha256": "bc1207b32af14319419075526afc1e38874640874d4168209ea22d992aff13d5",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-142.json",
+      "provenanceSha256": "7de4bdd7c7e5395b27cc971219cb6f9817548143b6dd341344b92fc6eff3300c",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-142.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-142.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-142.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-142.json",
+      "originalEvents": ".assessment-cache/captions/cRCbvfyiu0s/events.json",
+      "disputedMoves": 20,
+      "candidateSelections": 52,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 201607,
+      "copiedInputBytes": 237381,
+      "originalContextIndex": 3
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-123.json",
+      "packetSha256": "2113c817e01edcce204d7ecbc65936e9e1f5e5ab91d875a090191ada00a0ae4d",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-123.json",
+      "provenanceSha256": "27566fc40848e7e6602e7252fba4677d908337d3d292126252a14b8890255146",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-123.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-123.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-123.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-123.json",
+      "originalEvents": ".assessment-cache/captions/8k9A7d2Wnjk/events.json",
+      "disputedMoves": 20,
+      "candidateSelections": 51,
+      "audioVerifiedMoves": 3,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "con-involuntary-belief-eternal-stakes",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json",
+          "modelInputFile": "audio-transcript-con-involuntary-belief-eternal-stakes.json",
+          "sha256": "7102ee7cfd66239533023d30e9ef2beb1c2598da074e6dfe01edacfa36c2e7d7"
+        },
+        {
+          "moveId": "pro-continuous-providential-opportunity",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json",
+          "modelInputFile": "audio-transcript-pro-continuous-providential-opportunity.json",
+          "sha256": "e9649e0beeccdd5ee26727b09ce1c47427bc9fe4e5400270ac291ad83c859b6e"
+        },
+        {
+          "moveId": "pro-suffering-enlarges-receptivity",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json",
+          "modelInputFile": "audio-transcript-pro-suffering-enlarges-receptivity.json",
+          "sha256": "62d39acf18810f4968f6dcb793cba3bcfd37ffb8c0061139b59489089482f5d8"
+        }
+      ],
+      "packetBytes": 332313,
+      "copiedInputBytes": 398243,
+      "originalContextIndex": 4
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "177",
+      "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-177.json",
+      "packetSha256": "8609ee6c38167d588102b4adadefdf1af80c27b1a0c4c80ed72f546855668c6e",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-177.json",
+      "provenanceSha256": "29ff9e9e8f686e4e465856cf84a5335ad5e347ff13fdfc4f66e2ae2700e94247",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-177.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-177.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-177.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-177.json",
+      "originalEvents": ".assessment-cache/captions/WRHjZCKRIu4/events.json",
+      "disputedMoves": 21,
+      "candidateSelections": 50,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 285861,
+      "copiedInputBytes": 321635,
+      "originalContextIndex": 5
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "68",
+      "debateId": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-68.json",
+      "packetSha256": "2ab4272e893f6c929c93e2a569c7027a22d96cd3595895e49fe056dad1e4bb4c",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-68.json",
+      "provenanceSha256": "f28d3fbbf78eacdca74036115b0e99b995c42a7f78cef3ea65230a6b415c9dcc",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-68.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-68.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-68.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-68.json",
+      "originalEvents": ".assessment-cache/captions/6CLpuRu7R9o/events.json",
+      "disputedMoves": 11,
+      "candidateSelections": 32,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 105120,
+      "copiedInputBytes": 140894,
+      "originalContextIndex": 6
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-147.json",
+      "packetSha256": "ed0b03b5f1b965f4ca81364894319ac35f48cdd11138fa45f44fe33d12920e63",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-147.json",
+      "provenanceSha256": "e99e4e778e62aa27b9760217668bc73f6a8e697c9f8a67634581ac20cc218979",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-147.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-147.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-147.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-147.json",
+      "originalEvents": ".assessment-cache/captions/h-I_9e5qxnc/events.json",
+      "disputedMoves": 16,
+      "candidateSelections": 57,
+      "audioVerifiedMoves": 2,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "pro-qualia-concept-unsettled",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json",
+          "modelInputFile": "audio-transcript-pro-qualia-concept-unsettled.json",
+          "sha256": "29d962e15398f734f93b06460cbeafae89515761ae96136cb6f80e816f68ed5a"
+        },
+        {
+          "moveId": "con-experience-sensitive-religious-belief",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json",
+          "modelInputFile": "audio-transcript-con-experience-sensitive-religious-belief.json",
+          "sha256": "511d94f8c46252a6d1ca62364c1a272f8251c2d31dea04cda7bf762bda725b15"
+        }
+      ],
+      "packetBytes": 178635,
+      "copiedInputBytes": 233992,
+      "originalContextIndex": 7
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "61",
+      "debateId": "scrivener-oconnor-morality-bible-slavery-2026",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-61.json",
+      "packetSha256": "6fd827b9066608ca16ec152a70f035028b57d3933d13da4dec8f975f543bb0f5",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-61.json",
+      "provenanceSha256": "2235f42f6e709699b751f2de3ac182405d315d056b26d0380d808b6fb645eb5e",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-61.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-61.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-61.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-61.json",
+      "originalEvents": ".assessment-cache/captions/-ZnVNM8lkGw/events.json",
+      "disputedMoves": 20,
+      "candidateSelections": 45,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 253719,
+      "copiedInputBytes": 289493,
+      "originalContextIndex": 8
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-130.json",
+      "packetSha256": "dddd946cee50224974d305d87715c36937001b63ba559ad2dab86da31f77b2bb",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/provenance/debate-130.json",
+      "provenanceSha256": "735e54280d83fb6b44abad5b64141dd7c36b5c5ac071574385f343810534ff92",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-130.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/disagreements/debate-130.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-10/inventory-candidate-sharded/locked-inventories/debate-130.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-10/independent-judgments/source-packets/debate-130.json",
+      "originalEvents": ".assessment-cache/captions/0IpKHdVLZb4/events.json",
+      "disputedMoves": 16,
+      "candidateSelections": 51,
+      "audioVerifiedMoves": 1,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "pro-missing-body-cumulative-significance",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json",
+          "modelInputFile": "audio-transcript-pro-missing-body-cumulative-significance.json",
+          "sha256": "128ed42517de7549a1a64ff48e9144a94d28dee11d1c82663307c50412401b55"
+        }
+      ],
+      "packetBytes": 205078,
+      "copiedInputBytes": 249227,
+      "originalContextIndex": 9
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 7,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "rampPhases": [
+      {
+        "phase": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": 3,
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "terminateIsolatedProcessGroupAtFrozenTimeout": true
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/resumption/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/resumption/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/resumption/model-execution.json",
+    "cohortAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/cohort-analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/execution-activation.json": "6ae156ef6120422c4f633dd3dba0dd38b5a18af20a2be0dfe2dc928976bbb89c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/model-execution.json": "7346fb86252323111dea769ab6e862e80b1084bd438a8cd4497136e3e98172a4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/correction-2/analysis.json": "69eea3384b3e49ddca96fb60f2185d6b1e56f9c0d237e9f98f94829fd7e0955e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-74.json": "2573c501475d590548ff48e235e516981afde68cde4c7ed80632da14a3b3e431",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-74.json": "af2f2e6a9b8998a2dae5540f76d503c62b9eeaebedbef97f55119032945bea0e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-21.json": "2f3a09660b99ebf0da51d35cdeac245e7c743da40a6fa2671bffea0eac1e4e6b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-21.json": "2f7e75ef472eb53ec46b92ae0871adfd032f2da59755f6098dae94c6b256355d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-107.json": "9dc9f4bcb6968c5c7679c2c11dcef35024522dc1a106ffa1b704ff9e1147eddf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-107.json": "3455cdbe870c123a96074ab53ee2a91496cf6e5e54df5154be4146ad2fbeac7d",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md": "7ea2da737b26349826c3e8ff595f41524afd1f4b23294f3783923946601fee0c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md": "afe02e43ab72c1af4104730e1097bc2fb783c2dd7ab803d3efeb5a61efe4f0d1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/adjudication.schema.json": "1bdaa741d80e4097e0238432ee354cb74d015c219dd7809d5e84d2a8af7548c6",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/lib/v42211728-hard-route-adjudication.mjs": "53d850f6d25f5b1d71f7be6c81ad4c642c13bad204a5c01947e89b3410dbb388",
+    "scripts/lib/assessment-production-post-canary-batch-10-dispute-adjudication.mjs": "7065e036d86be194ca811a32b7537b22d5149b832ec7d1f8901c26d094daaae2",
+    "scripts/prepare-assessment-production-post-canary-batch-10-dispute-adjudication-resumption.mjs": "0cc02c93e36d7a56b779f1c46011dc8bcd391841a871944f3b3331efd4fef5c0",
+    "scripts/activate-assessment-production-post-canary-batch-10-dispute-adjudication-resumption.mjs": "0232b05dc9a76e3bea55c6ac237957922585de5ea43b14fbc972acf6671ab3ca",
+    "scripts/run-assessment-production-post-canary-batch-10-dispute-adjudication-resumption.mjs": "3dadeb923929e085df486f75882469ce3f0f40f6b735be969c71655566943e90",
+    "scripts/replay-assessment-production-post-canary-batch-10-complete-adjudication-cohort.mjs": "73b3b680033812653c5dc0045bbaed115aa12527a2f8beb6e5ec944f875b6596",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-142.json": "bc1207b32af14319419075526afc1e38874640874d4168209ea22d992aff13d5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-123.json": "2113c817e01edcce204d7ecbc65936e9e1f5e5ab91d875a090191ada00a0ae4d",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/con-involuntary-belief-eternal-stakes.transcript.json": "7102ee7cfd66239533023d30e9ef2beb1c2598da074e6dfe01edacfa36c2e7d7",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-continuous-providential-opportunity.transcript.json": "e9649e0beeccdd5ee26727b09ce1c47427bc9fe4e5400270ac291ad83c859b6e",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/transcripts/pro-suffering-enlarges-receptivity.transcript.json": "62d39acf18810f4968f6dcb793cba3bcfd37ffb8c0061139b59489089482f5d8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-177.json": "8609ee6c38167d588102b4adadefdf1af80c27b1a0c4c80ed72f546855668c6e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-68.json": "2ab4272e893f6c929c93e2a569c7027a22d96cd3595895e49fe056dad1e4bb4c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-147.json": "ed0b03b5f1b965f4ca81364894319ac35f48cdd11138fa45f44fe33d12920e63",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/pro-qualia-concept-unsettled.transcript.json": "29d962e15398f734f93b06460cbeafae89515761ae96136cb6f80e816f68ed5a",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/transcripts/con-experience-sensitive-religious-belief.transcript.json": "511d94f8c46252a6d1ca62364c1a272f8251c2d31dea04cda7bf762bda725b15",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-61.json": "6fd827b9066608ca16ec152a70f035028b57d3933d13da4dec8f975f543bb0f5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/packets/debate-130.json": "dddd946cee50224974d305d87715c36937001b63ba559ad2dab86da31f77b2bb",
+    "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/transcripts/pro-missing-body-cumulative-significance.transcript.json": "128ed42517de7549a1a64ff48e9144a94d28dee11d1c82663307c50412401b55"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/resumption/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/cohort-analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-142.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-123.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-177.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-68.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-147.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-61.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/outputs/debate-130.json"
+  ],
+  "authorization": {
+    "executionActivation": false,
+    "adjudicationModelContexts": true,
+    "deterministicValidationAndCohortReplay": true,
+    "judgmentModelContexts": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-seven-unattempted-batch-10-adjudication-contexts-once",
+  "authorizedAt": "2026-08-26T02:06:54.000Z",
+  "checkpointCommit": "a14208d1679af7a99ada675e18f9a218a99b7451",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/dispute-only-adjudication/failure-recovery/resumption/execution-preparation-manifest.json",
+    "sha256": "5e03aa16f34d445fe2551cdfa4b6ca6087822805c035a6f2824d292d755a6150"
+  }
+}
