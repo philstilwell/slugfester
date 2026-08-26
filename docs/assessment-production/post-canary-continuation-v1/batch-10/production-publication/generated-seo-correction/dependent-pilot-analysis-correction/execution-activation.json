@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-dependent-pilot-analysis-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-10-dependent-pilot-analysis-correction",
+  "status": "frozen-batch-10-dependent-pilot-analysis-correction-activated",
+  "activatedAt": "2026-08-26T13:06:44Z",
+  "batchNumber": 10,
+  "directIncrementalCostCapUsd": 0,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/correction-plan.json",
+    "sha256": "8adaa88005ed411eebf361888febc89f941e29a445fbeecf024a2da18e5ddb7e",
+    "bytes": 104482
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/preparation-analysis.json",
+    "sha256": "77d9b615cdc6f79f7c95687c3bb2c5d23623e521a3b5111f9c788d832f93a872",
+    "bytes": 1217
+  },
+  "correctionContract": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "dependentGeneratorRuns": 1,
+    "completeRepositoryValidationRuns": 1,
+    "productionMutationReruns": 0,
+    "seoGeneratorWriteRuns": 0,
+    "scorePasses": 0,
+    "writablePathsMaximum": 2,
+    "writablePaths": [
+      "docs/calibration/v2.1/pilot-analysis.json",
+      "docs/calibration/v2.1/pilot-analysis.md"
+    ],
+    "preserveOtherPaths": true,
+    "completeValidationCommand": "npm run check"
+  },
+  "proposedOutputs": [
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.json",
+      "sha256": "2441fc25a686af2a90fae22ef29eacb80692b300287f5f559ceb61e8f383e2fe",
+      "bytes": 11586
+    },
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.md",
+      "sha256": "dc624ead79f2c251a4244f349a372ba2a3ccc225a45bced87281dcc91ad232d3",
+      "bytes": 5391
+    }
+  ],
+  "authorization": {
+    "boundedDeterministicCorrectionExecution": true,
+    "exactTwoDependentWrites": true,
+    "oneCompleteRepositoryValidation": true,
+    "productionMutationRerun": false,
+    "seoGeneratorWrite": false,
+    "scorePass": false,
+    "modelExecution": false,
+    "paidServiceUse": false,
+    "nextBatchSelection": false
+  },
+  "outputPaths": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/analysis.json"
+  },
+  "nextAuthorizedAction": "execute-one-batch-10-dependent-pilot-analysis-correction-no-retries"
+}

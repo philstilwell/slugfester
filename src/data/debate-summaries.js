@@ -916,11 +916,11 @@ export const debateSummaries = [
     "number": "21",
     "title": "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate",
     "label": "God, meaning, and faith",
-    "date": "2026-05-30",
+    "date": "2026-08-26",
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2kZRAOXEFPI",
     "motion": "Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?",
-    "summary": "Hitchens treats God as human projection and religious authority as dangerous; Wolpe defends God as the source of meaning, freedom, goodness, and moral order.",
+    "summary": "Hitchens challenges faith through natural explanation, secular morality, scriptural harm, and natural transcendence, while granting uncertainty where atheism cannot conclusively disprove theological possibilities.",
     "sides": {
       "pro": {
         "name": "Atheist critique",
@@ -934,30 +934,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 81
+      "pro": 85,
+      "con": 76
     },
     "sections": [
       {
-        "title": "God definition and origin"
+        "title": "God, Scientific Inquiry, and Natural Explanation"
       },
       {
-        "title": "Mystery and materialism"
+        "title": "Human Freedom, Materialism, and Intentional Agency"
       },
       {
-        "title": "Free will and science"
+        "title": "Moral Grounding and Ethical Reasoning"
       },
       {
-        "title": "Goodness and consolation"
+        "title": "Meaning, Sanctity, Mortality, and Consolation"
       },
       {
-        "title": "Violence and religion"
-      },
-      {
-        "title": "Community and utility"
-      },
-      {
-        "title": "Morality and final truth"
+        "title": "Religious Tradition, Authority, Reform, and Harm"
       }
     ]
   },
@@ -2768,11 +2762,11 @@ export const debateSummaries = [
     "number": "61",
     "title": "Glen Scrivener vs Alex O'Connor: Morality, Freedom, Slavery, and the Bible",
     "label": "Biblical slavery and moral inheritance",
-    "date": "2026-06-06",
+    "date": "2026-08-26",
     "duration": "2 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=-ZnVNM8lkGw",
     "motion": "Did Christian faith give the modern West its beliefs in kindness, equality, freedom, consent, and abolition, or are those values better explained by mixed traditions, social struggle, and secular moral development?",
-    "summary": "Scrivener argues modern moral instincts are unthinkable without Christian formation; O'Connor argues the inheritance is mixed, biblically troubling, and not uniquely Christian.",
+    "summary": "Scrivener traces Western morality through Christian narratives and institutions, while O'Connor argues that mixed traditions, material struggle, and internal counterevidence better explain it.",
     "sides": {
       "pro": {
         "name": "Christian moral genealogy",
@@ -2786,30 +2780,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 84
+      "pro": 81,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Thesis and first definitions"
+        "title": "Standards for Historical Moral Genealogy"
       },
       {
-        "title": "Compassion and the cross"
+        "title": "Compassion, the Weak, and Protective Institutions"
       },
       {
-        "title": "Equality, rights, and women"
+        "title": "Rights, Equality, and Freedom"
       },
       {
-        "title": "Institutionalization and falsifiability"
+        "title": "Gender Equality, Marriage, and Consent"
       },
       {
-        "title": "Emotivism and moral grounding"
-      },
-      {
-        "title": "Biblical slavery and abolition"
-      },
-      {
-        "title": "Consent and thesis precision"
+        "title": "Scripture, Slavery, and Abolition"
       }
     ]
   },
@@ -3088,11 +3076,11 @@ export const debateSummaries = [
     "number": "68",
     "title": "Michael Jones vs Matt Dillahunty: Quantum Idealism and Demonstrability",
     "label": "Quantum idealism and demonstrability",
-    "date": "2026-06-08",
+    "date": "2026-08-26",
     "duration": "22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=6CLpuRu7R9o",
     "motion": "Does quantum mechanics and idealism provide good reason to treat consciousness or a divine mind as fundamental, or does the claim fail public demonstrability and physical-interaction tests?",
-    "summary": "Jones argues that mental information and observer-dependent quantum collapse make idealism the best explanation; Dillahunty presses for detectable manifestations and mind-independent physical interactions.",
+    "summary": "Jones offered an informational idealist account of quantum observation, while Dillahunty pressed stronger public-demonstrability, causal-interaction, preconscious-development, and discriminating-testability objections.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -3108,26 +3096,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 69,
-      "con": 87
+      "con": 86
     },
     "sections": [
       {
-        "title": "Demonstrability and inference"
+        "title": "Public Evidence and Explanatory Inference"
       },
       {
-        "title": "Evidence and physical anchors"
+        "title": "Information, Experience, and Material Substrate"
       },
       {
-        "title": "Wetness and interaction"
+        "title": "Observer Dependence and Preconscious Development"
       },
       {
-        "title": "Information and parsimony"
+        "title": "Unobserved Reality and Physical Interaction"
       },
       {
-        "title": "Collapse and evolution"
-      },
-      {
-        "title": "No minds and falsifiability"
+        "title": "Falsifiability and Ontological Parsimony"
       }
     ]
   },
@@ -3366,11 +3351,11 @@ export const debateSummaries = [
     "number": "74",
     "title": "Josh Rasmussen vs Alex Malpass: Suffering, Theism, and Causal Finitism",
     "label": "Suffering, theism, and causal finitude",
-    "date": "2026-06-18",
+    "date": "2026-08-26",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=MfCQBynjgnw",
     "motion": "Do Grim Reaper-style paradoxes support causal finitism, and does the existence and distribution of suffering favor theism or the hypothesis of indifference?",
-    "summary": "Rasmussen defends modal-independence intuitions and theistic resources for hidden goods; Malpass argues that unsatisfiable-pair diagnosis and ordinary moral knowledge undercut those moves.",
+    "summary": "Rasmussen defends causal finitude and theistic expectations; Malpass challenges modal recombination and argues that suffering's severity and distribution favor indifference.",
     "sides": {
       "pro": {
         "name": "Theistic modal defense",
@@ -3384,30 +3369,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 83,
-      "con": 87
+      "pro": 82,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Grim Reaper setup"
+        "title": "Grim Reaper Contradiction and the Causal-Finitist Inference"
       },
       {
-        "title": "Ontology and diagnosis"
+        "title": "Modal Independence, Recombination, and Possibility"
       },
       {
-        "title": "Recombination and independence"
+        "title": "Comparative Likelihoods and Evidential Background"
       },
       {
-        "title": "Suffering as evidence"
+        "title": "Unknown Reasons, Moral Knowledge, and Evidential Symmetry"
       },
       {
-        "title": "Hidden reasons"
-      },
-      {
-        "title": "Contract and arena"
-      },
-      {
-        "title": "Background and balance"
+        "title": "Theodicies and the Severity and Distribution of Suffering"
       }
     ]
   },
@@ -4877,11 +4856,11 @@ export const debateSummaries = [
     "number": "107",
     "title": "John Lennox vs Michael Ruse: Science, Faith, and the Evidence for God",
     "label": "Science, faith, and divine evidence",
-    "date": "2026-07-25",
+    "date": "2026-08-26",
     "duration": "58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yrnXdzQRISM",
     "motion": "Do science, mathematics, miracle claims, moral experience, and the problem of evil support an evidence-based Christian faith or a more cautious agnostic naturalism?",
-    "summary": "Lennox defends Christian faith as evidence-based commitment grounded in rational order, resurrection, miracles, and hope; Ruse grants science's Christian history and metaphysical seriousness while resisting natural theology and literal miracle evidence.",
+    "summary": "Lennox defended cumulative Christian evidence, while Ruse separated faith from inference and pressed a particularly effective challenge from innocent suffering.",
     "sides": {
       "pro": {
         "name": "Evidential Christian theism",
@@ -4896,26 +4875,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 79,
-      "con": 81
+      "con": 85
     },
     "sections": [
       {
-        "title": "Worldviews And Science"
+        "title": "Science, Mathematics, and the Intelligibility of Nature"
       },
       {
-        "title": "Scientism And Mathematics"
+        "title": "Faith, Evidence, and Natural-Theology Inference"
       },
       {
-        "title": "Evidence-Based Faith"
+        "title": "Miracle Claims, Historical Reality, and Gospel Meaning"
       },
       {
-        "title": "Resurrection And Miracles"
+        "title": "Evil, Human Freedom, and Divine Goodness"
       },
       {
-        "title": "Pre-Scientific Claims"
-      },
-      {
-        "title": "Evil And Hope"
+        "title": "Science, Metaphysics, and Explanatory Limits"
       }
     ]
   },
@@ -5625,11 +5601,11 @@ export const debateSummaries = [
     "number": "123",
     "title": "Gregory Pine vs Alex O'Connor: The Divine Hiddenness Problem",
     "label": "Divine hiddenness and seeking",
-    "date": "2026-07-29",
+    "date": "2026-08-26",
     "duration": "1 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8k9A7d2Wnjk",
     "motion": "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
-    "summary": "Pine argues that God's self-disclosure is mediated through grace, history, creation, and patient formation; O'Connor argues that sincere seeking, religious geography, hell, and inherited fallenness make theism look arbitrary and unfair.",
+    "summary": "O'Connor presses sincere nonbelief, unequal access, culpability, and inherited deprivation; Pine answers through universal grace, temporal formation, providence, and recoverable gratuitous gifts.",
     "sides": {
       "pro": {
         "name": "Catholic theism",
@@ -5643,30 +5619,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 86
+      "pro": 74,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Hiddenness Framed"
+        "title": "Divine Hiddenness and Sincere Seeking"
       },
       {
-        "title": "Fairness And Glory"
+        "title": "Religious Geography, Unequal Access, and Fairness"
       },
       {
-        "title": "Sincere Seekers"
+        "title": "Grace, Responsible Refusal, and Hell"
       },
       {
-        "title": "Predilection And Hell"
+        "title": "Providence, Mortal Contingency, and Transformative Suffering"
       },
       {
-        "title": "Geography And Providence"
-      },
-      {
-        "title": "Fall And Inheritance"
-      },
-      {
-        "title": "Seeking And Job"
+        "title": "Original Sin, Deception, Solidarity, and Restoration"
       }
     ]
   },
@@ -5958,11 +5928,11 @@ export const debateSummaries = [
     "number": "130",
     "title": "Mike Licona vs Richard Carrier: Did Jesus Rise From the Dead?",
     "label": "Resurrection evidence and natural explanations",
-    "date": "2026-07-30",
+    "date": "2026-08-26",
     "duration": "2 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0IpKHdVLZb4",
     "motion": "Did Jesus rise from the dead, and does the resurrection hypothesis better explain early Christian testimony than naturalistic alternatives?",
-    "summary": "Licona argues that Paul's early testimony and appearance traditions make bodily resurrection the best historical explanation; Carrier argues that visions, legendary development, and prior probability make natural explanations stronger.",
+    "summary": "Licona argued resurrection best explains early testimony; Carrier countered that prior probability, visionary mechanisms, and source limitations preserve stronger natural explanations.",
     "sides": {
       "pro": {
         "name": "Resurrection hypothesis",
@@ -5976,30 +5946,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 82
+      "pro": 80,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Historical Method and Priors"
+        "title": "Historical Method, Reference Classes, and Prior Probability"
       },
       {
-        "title": "Paul and Early Tradition"
+        "title": "Pauline Testimony and the Bodily Character of Resurrection"
       },
       {
-        "title": "Miracle Parallels and Culture"
+        "title": "Visionary, Psychological, and Social-Contagion Explanations"
       },
       {
-        "title": "Psychology and Group Experience"
+        "title": "Empty Grave, Investigation, and Proclaimer Sincerity"
       },
       {
-        "title": "Worldview and Hiddenness"
-      },
-      {
-        "title": "Reference Class and Closing"
-      },
-      {
-        "title": "Gospels and Audience Testing"
+        "title": "Historical Usability of the Gospel Narratives"
       }
     ]
   },
@@ -6509,11 +6473,11 @@ export const debateSummaries = [
     "number": "142",
     "title": "Ray Comfort vs Matt Dillahunty: Does the Gospel Make Sense?",
     "label": "Gospel atonement and moral responsibility",
-    "date": "2026-07-31",
+    "date": "2026-08-26",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=cRCbvfyiu0s",
     "motion": "Does the Christian gospel's account of sin, atonement, and salvation make moral and explanatory sense?",
-    "summary": "Comfort defends the gospel as just payment for real moral guilt and personal revelation; Dillahunty argues that inherited sin, divine foreknowledge, substitution, and faith without evidence make the system incoherent.",
+    "summary": "Comfort defended guilt, substitution, and faith-based salvation; Dillahunty pressed stronger challenges concerning responsibility, atonement, evidential method, and testability.",
     "sides": {
       "pro": {
         "name": "Evangelical atonement",
@@ -6527,27 +6491,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 40,
-      "con": 88
+      "pro": 68,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Law, Sin, and Atonement"
+        "title": "Moral law, sin, and personal accountability"
       },
       {
-        "title": "Conscience and Moral Culpability"
+        "title": "Judgment, suffering, and divine goodness"
       },
       {
-        "title": "Foreknowledge, Choice, and Atheism"
+        "title": "Necessity and moral logic of substitutionary atonement"
       },
       {
-        "title": "Creation, Design, and Evolution"
+        "title": "Conditions and efficacy of salvation"
       },
       {
-        "title": "Relationship, Scripture, and Revelation"
-      },
-      {
-        "title": "Faith, Axioms, and Evidential Trust"
+        "title": "Evidence, revelation, and warranted trust"
       }
     ]
   },
@@ -6737,11 +6698,11 @@ export const debateSummaries = [
     "number": "147",
     "title": "Daniel Dennett vs Philip Clayton: Naturalism and Ultimate Reality",
     "label": "Naturalism, mind, and ultimate reality",
-    "date": "2026-07-31",
+    "date": "2026-08-26",
     "duration": "1 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=h-I_9e5qxnc",
     "motion": "Does naturalism fully explain mind, intentionality, morality, and reality, or does a religious account of ultimate reality offer an additional explanatory framework?",
-    "summary": "Dennett defends a naturalistic account of intentionality, morality, and inquiry; Clayton argues that mental causation, ultimate reality, and reflective religion exceed what natural science alone can settle.",
+    "summary": "Dennett defends naturalistic explanations and epistemic accountability, while Clayton argues for subjective realism, religious integration, and a deeper ultimate reality.",
     "sides": {
       "pro": {
         "name": "Naturalist inquiry",
@@ -6755,27 +6716,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 74
+      "pro": 85,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Naturalism and Explanatory Stances"
+        "title": "Physical Constraint and Higher-Level Causation"
       },
       {
-        "title": "Mental Causation and Real Patterns"
+        "title": "Subjective Experience, Mental Reality, and Personhood"
       },
       {
-        "title": "Qualia and Conscious Agency"
+        "title": "Moral Grounding and the Public Role of Religion"
       },
       {
-        "title": "Religious Criticism and Reform"
+        "title": "Content and Epistemic Accountability of Religious Claims"
       },
       {
-        "title": "Morality, Community, and Religion"
-      },
-      {
-        "title": "Ultimate Reality and Revisability"
+        "title": "Nature, Transcendence, and Ultimate Reality"
       }
     ]
   },
@@ -8082,11 +8040,11 @@ export const debateSummaries = [
     "number": "177",
     "title": "Bart Ehrman vs Daniel B. Wallace: Can We Trust the Text of the New Testament?",
     "label": "New Testament textual reconstruction",
-    "date": "2026-08-01",
+    "date": "2026-08-26",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WRHjZCKRIu4",
     "motion": "Can textual criticism recover the wording of the original New Testament with enough confidence for the text to be trusted?",
-    "summary": "Wallace argues that abundant, diverse witnesses preserve the autographic wording in nearly all places; Ehrman argues that the poorly attested earliest transmission prevents confidence that the reconstructed initial text is original.",
+    "summary": "Wallace defended probabilistic textual recovery through abundant branching witnesses; Ehrman conceded broad continuity but showed that reconstructing their ancestor does not establish autographic identity.",
     "sides": {
       "pro": {
         "name": "The text is substantially recoverable",
@@ -8100,24 +8058,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 93,
-      "con": 91
+      "pro": 83,
+      "con": 88
     },
     "sections": [
       {
-        "title": "The early copying gap"
+        "title": "The Standard for Recovery and Textual Trust"
       },
       {
-        "title": "Variant counts and manuscript abundance"
+        "title": "The Undocumented Earliest Transmission Period"
       },
       {
-        "title": "Meaningful variants and historical significance"
+        "title": "Reconstructing Earlier Texts from Surviving Witnesses"
       },
       {
-        "title": "Initial text versus authorial autograph"
+        "title": "The Evidentiary Value of Manuscript Abundance and Date"
       },
       {
-        "title": "Early scribes, control, and the burden of trust"
+        "title": "The Scale and Proportion of Textual Variation"
+      },
+      {
+        "title": "Consequential Variants and the Scope of Trust"
       }
     ]
   },

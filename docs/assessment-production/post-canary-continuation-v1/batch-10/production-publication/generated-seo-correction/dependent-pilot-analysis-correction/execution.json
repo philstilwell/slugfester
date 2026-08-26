@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-dependent-pilot-analysis-correction-execution",
+  "protocolId": "assessment-production-post-canary-batch-10-dependent-pilot-analysis-correction",
+  "status": "passed-complete-batch-10-production-transaction-after-dependent-pilot-analysis-correction",
+  "startedAt": "2026-08-26T13:06:57.277Z",
+  "completedAt": "2026-08-26T13:07:03.708Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/production-publication/generated-seo-correction/dependent-pilot-analysis-correction/execution-activation.json",
+    "sha256": "fed500cacbe57dbc4e2e8d0ea056111ebe30b75e741c02e5a9ad96aad8d47ca9",
+    "bytes": 2968
+  },
+  "correction": {
+    "attempts": 1,
+    "dependentGeneratorRuns": 1,
+    "exactWrites": [
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.json",
+        "sha256": "2441fc25a686af2a90fae22ef29eacb80692b300287f5f559ceb61e8f383e2fe",
+        "bytes": 11586
+      },
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.md",
+        "sha256": "dc624ead79f2c251a4244f349a372ba2a3ccc225a45bced87281dcc91ad232d3",
+        "bytes": 5391
+      }
+    ],
+    "jsonLeafChanges": 6,
+    "productionMutationReruns": 0,
+    "seoGeneratorWriteRuns": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "validation": {
+    "command": "npm run check",
+    "runs": 1,
+    "startedAt": "2026-08-26T13:06:57.427Z",
+    "completedAt": "2026-08-26T13:07:03.680Z",
+    "exitCode": 0,
+    "stdoutSha256": "537e26fdcf032194405aa228f02112cb7a8e8259f6dddf4707a0a49766b41716",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "completeRepositoryRegressionPassed": true
+  },
+  "acceptedTransaction": {
+    "productionDebates": 10,
+    "productionLedgers": 10,
+    "generatedSeoWrites": 12,
+    "unchangedGeneratedSeoOutputs": 368,
+    "dependentPilotAnalysisWrites": 2,
+    "referencesByteIdentical": true,
+    "validatorByteIdentical": true,
+    "seoGeneratorByteIdentical": true
+  },
+  "totals": {
+    "originalSeoPasses": 1,
+    "deterministicCorrectionPasses": 1,
+    "repositoryValidationRunsInCorrection": 1,
+    "productionMutationReruns": 0,
+    "retries": 0,
+    "reruns": 0,
+    "recursiveCorrections": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "atomic-commit-and-push-complete-validated-batch-10-production-transaction-then-stop-before-batch-11-selection"
+}
