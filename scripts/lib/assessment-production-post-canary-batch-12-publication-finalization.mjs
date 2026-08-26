@@ -19,7 +19,7 @@ export function buildPostCanaryBatch12PublicationFinalization({ compiled, compil
   const compilationValidation = validatePostCanaryBatch12CompiledStagingRecord({
     compiled, output, packet, identity });
   assertV4(compiled.stagingAudit?.protocolId === POST_CANARY_BATCH_12_PUBLICATION_COMPILATION_PROTOCOL_ID &&
-    compiled.stagingAudit.productionCanary === false && compiled.stagingAudit.batchNumber === 11 &&
+    compiled.stagingAudit.productionCanary === false && compiled.stagingAudit.batchNumber === 12 &&
     compiled.stagingAudit.stagingOnly === true && compiled.stagingAudit.productionMutationPerformed === false &&
     compiled.stagingAudit.displayContract.byline === POST_CANARY_BATCH_12_PUBLICATION_BYLINE &&
     compiled.stagingAudit.displayContract.defaultCollapsed === true,
