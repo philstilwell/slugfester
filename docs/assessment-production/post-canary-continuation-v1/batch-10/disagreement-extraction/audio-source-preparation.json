@@ -1,0 +1,709 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-10-decomposed-consensus",
+  "status": "prepared-nine-post-canary-batch-10-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "4bd0c57b8907a47f16016afce9572b97fa54d0e2",
+  "userAuthorization": {
+    "instruction": "I authorize that.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json",
+    "standingAuthorizationSha256": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sequentialTranscriptionEstimateUsd": 0.1308768,
+    "sourceAudioFilesAuthorized": 5,
+    "clipsAuthorized": 9,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/standing-authorization.json": "f00e066bc8d16634d2f6702531c45be2fb36600e0f13f803b47b593e5cb3374d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-item-preparation.json": "fdb9e75168387ce77d03d29eee3fc1ad661fb72dd44ba1c1e3c83194dbb036fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-work-items.json": "a67d390d26c378af9819481c8572774cc01c62a8b6c369b3b937d7dd994f232f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-bestaudio-recovery-8/correction-plan.json": "439c325e5c1b4607b9bd5d5fcb72e3489f8b8f7c0e97b4cdd35fa806453e0288",
+    "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-bestaudio-recovery-8/execution-activation.json": "cf345cfc99dc4a4df3d8cf9c6f925d3aa528e7c4b801f04959bc397121f67a09",
+    "scripts/prepare-assessment-production-post-canary-batch-10-audio-source-bestaudio-recovery-8.mjs": "a7acb9ef0eb75d79c6e3329eb8fbd0da4986e4e98d87dd42a1bcc226b210d97b",
+    "scripts/run-assessment-production-post-canary-batch-10-audio-source-bestaudio-recovery-8.mjs": "dd170bd586e4aee73d0679263e1726d4e70128f829d36fcc459f8f19cd5e1388",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-bestaudio-recovery-8-preparation.mjs": "c547f9f25ee15bc2bdc2c0e0b2a59dee4081cefef7e399eedf88126e2732323d",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-source-bestaudio-recovery-8-cohort.mjs": "b3d9e7ce8726df33c991e169648543694ac71b3726dd1cd3fc2ececfe72babdc",
+    "scripts/test-assessment-production-post-canary-batch-10-audio-sources.mjs": "48a691794c7aa962acad9c96b378552fc5d485ff92fedbe893cb7b525629f1e3",
+    "scripts/lib/assessment-production-post-canary-batch-10-audio-work-items.mjs": "838a700959c30ead81cd32b3b407b641b26ac9a9a2bccd18549bfac00633a552",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "workItemSourceHashesReplayed": 86,
+  "recovery": {
+    "planPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-bestaudio-recovery-8/correction-plan.json",
+    "planSha256": "439c325e5c1b4607b9bd5d5fcb72e3489f8b8f7c0e97b4cdd35fa806453e0288",
+    "activationPath": "docs/assessment-production/post-canary-continuation-v1/batch-10/disagreement-extraction/audio-source-bestaudio-recovery-8/execution-activation.json",
+    "activationSha256": "cf345cfc99dc4a4df3d8cf9c6f925d3aa528e7c4b801f04959bc397121f67a09",
+    "preservedInvalidEvidence": [
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.failed-attempt-1.mp3",
+        "bytes": 354,
+        "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.direct-format18.normalized.mp3",
+        "bytes": 354,
+        "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.part-000.headers.txt",
+        "bytes": 1558,
+        "sha256": "7bccae2a6283b0500bfb9abb343bb1acf7d4209849c59fe0e0083b98bd97f2a9"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.part-000.m4a",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.range-format139.m4a",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.part-000.headers.txt",
+        "bytes": 3019,
+        "sha256": "3eb3e91af07676fb84cb63c8784d177f9b09d1f0a719af91fab18fa1c9f0a7b3"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.redirect-range4-format139.m4a",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.m4a",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.manual-redirect5-format139.range-000.hop-0.headers.txt",
+        "bytes": 281,
+        "sha256": "87e8592926631a96a5de3fc7e2f2c4c95d55d66f1cf8d77657573983ac6e3c2f"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.m4a",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.range-000.hop-0.headers.txt",
+        "bytes": 385,
+        "sha256": "11eed29f2c03e7f1e002e32bb6d4f223a8c1a96b1806d8b9d3cb6c2989484102"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.header-parity6-format139.range-000.hop-1.headers.txt",
+        "bytes": 281,
+        "sha256": "c701d343d822c9ca55f3f7d6316957d7d6017e03afc492b0e8b5544902a45045"
+      }
+    ],
+    "failedPartialOutputsReused": 0,
+    "acceptedPrefixOutputsRevalidated": 2,
+    "additionalUserAuthorizedRecoveryUsed": true,
+    "officialYtDlpCurrentBestAudioDownloads": 3,
+    "officialYtDlpNativeInvocations": 3,
+    "runtimeFormatSelections": 3,
+    "separateFormatInventoryInvocations": 0,
+    "officialYtDlpVersion": "2026.08.19",
+    "officialYtDlpSha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+    "impersonateTarget": "Chrome-142:Macos-26",
+    "pluginsUsed": 0,
+    "remoteComponentsUsed": 0,
+    "credentialsUsed": 0,
+    "continuedDownloads": 0
+  },
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormat": "frozen-youtube-current-bestaudio-selector-official-ytdlp-2026-08-19-native-chrome-impersonation",
+    "officialTool": {
+      "releaseTag": "2026.08.19",
+      "path": "output/tools/yt-dlp-2026.08.19/yt-dlp_macos",
+      "sha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+      "checksumMatched": true,
+      "gpgSignatureVerified": true,
+      "impersonateTarget": "Chrome-142:Macos-26"
+    },
+    "runtimeFormatSelector": "bestaudio",
+    "separateFormatInventory": false,
+    "audioOnlyRequired": true,
+    "positiveByteCountRequired": true,
+    "plugins": false,
+    "remoteComponents": false,
+    "credentials": false,
+    "continuation": false,
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "21",
+      "videoId": "2kZRAOXEFPI",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "74",
+      "videoId": "MfCQBynjgnw",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "123",
+      "videoId": "8k9A7d2Wnjk",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "147",
+      "videoId": "h-I_9e5qxnc",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    },
+    {
+      "debateNumber": "130",
+      "videoId": "0IpKHdVLZb4",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.08.19"
+  },
+  "sources": [
+    {
+      "debateNumber": "21",
+      "videoId": "2kZRAOXEFPI",
+      "acquisitionMode": "downloaded-public-source-original-route-accepted-prefix",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/audio/source.mp3",
+      "sourceAudioSha256": "cfa98cdbc2ddb0a19410b37a382075a2fea51d35c939d33c6ae1504a23445bc7",
+      "durationSeconds": 5490.706563,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "74",
+      "videoId": "MfCQBynjgnw",
+      "acquisitionMode": "downloaded-public-source-original-route-accepted-prefix",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/audio/source.mp3",
+      "sourceAudioSha256": "9712859ab078ba2c689c81e18040f972e7a6450480220a0c991f4c7c066eaf72",
+      "durationSeconds": 7162.0325,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "123",
+      "videoId": "8k9A7d2Wnjk",
+      "acquisitionMode": "downloaded-public-source-current-bestaudio-official-ytdlp-2026-08-19-native-chrome-impersonation",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceFormatSelector": "bestaudio",
+      "sourceFormatId": "251-6",
+      "sourceProtocol": "https",
+      "sourceExtension": "webm",
+      "sourceAudioCodec": "opus",
+      "officialYtDlpVersion": "2026.08.19",
+      "officialYtDlpSha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+      "impersonateTarget": "Chrome-142:Macos-26",
+      "pluginsUsed": false,
+      "remoteComponentsUsed": false,
+      "credentialsUsed": false,
+      "continuationUsed": false,
+      "downloadedSourceBytes": 87007150,
+      "downloadedSource": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.bestaudio8.webm",
+      "downloadedSourceSha256": "08bc87562028bf6dd73254254214c2f6d625035c3fc6d4ac6eef0679296c2b45",
+      "downloadedDurationSeconds": 6075.861,
+      "downloadedAudioStreamCount": 1,
+      "downloadedVideoStreamCount": 0,
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/audio/source.mp3",
+      "sourceAudioSha256": "9867e425474070cfc1db1c49e7a9150792837f7029d73a54e5cfbe901adb46b5",
+      "durationSeconds": 6075.84,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "147",
+      "videoId": "h-I_9e5qxnc",
+      "acquisitionMode": "downloaded-public-source-current-bestaudio-official-ytdlp-2026-08-19-native-chrome-impersonation",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceFormatSelector": "bestaudio",
+      "sourceFormatId": "251-16",
+      "sourceProtocol": "https",
+      "sourceExtension": "webm",
+      "sourceAudioCodec": "opus",
+      "officialYtDlpVersion": "2026.08.19",
+      "officialYtDlpSha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+      "impersonateTarget": "Chrome-142:Macos-26",
+      "pluginsUsed": false,
+      "remoteComponentsUsed": false,
+      "credentialsUsed": false,
+      "continuationUsed": false,
+      "downloadedSourceBytes": 45663666,
+      "downloadedSource": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/audio/source.bestaudio8.webm",
+      "downloadedSourceSha256": "608eba30c822c2a14fe91deb9b96b71a45966c96d3c6b17ba64ce3bdba7ad01b",
+      "downloadedDurationSeconds": 3967.121,
+      "downloadedAudioStreamCount": 1,
+      "downloadedVideoStreamCount": 0,
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/audio/source.mp3",
+      "sourceAudioSha256": "dfa132586e27cd639e07ac4a06b95e7f7057f7c7f34ad3615ab868157f2d3652",
+      "durationSeconds": 3967.106063,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "130",
+      "videoId": "0IpKHdVLZb4",
+      "acquisitionMode": "downloaded-public-source-current-bestaudio-official-ytdlp-2026-08-19-native-chrome-impersonation",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceFormatSelector": "bestaudio",
+      "sourceFormatId": "251",
+      "sourceProtocol": "https",
+      "sourceExtension": "webm",
+      "sourceAudioCodec": "opus",
+      "officialYtDlpVersion": "2026.08.19",
+      "officialYtDlpSha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+      "impersonateTarget": "Chrome-142:Macos-26",
+      "pluginsUsed": false,
+      "remoteComponentsUsed": false,
+      "credentialsUsed": false,
+      "continuationUsed": false,
+      "downloadedSourceBytes": 118038431,
+      "downloadedSource": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/audio/source.bestaudio8.webm",
+      "downloadedSourceSha256": "9fe551f165465887059d385a52e816b38abf6fc654dfe977adbb4989660eb6ca",
+      "downloadedDurationSeconds": 8966.841,
+      "downloadedAudioStreamCount": 1,
+      "downloadedVideoStreamCount": 0,
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/audio/source.mp3",
+      "sourceAudioSha256": "c78a05903c700dfdf076da4692fc8940a23d40a06c3062feba2b19ac23bd0029",
+      "durationSeconds": 8966.815063,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "sourceVideoId": "2kZRAOXEFPI",
+      "moveId": "con-religious-motivation-and-sanctity",
+      "expectedSpeaker": "Rabbi David Wolpe",
+      "proposition": "Religion uniquely motivates practices and experiences of sanctity whose moral and emotional meaning cannot be reproduced by disbelief alone.",
+      "verificationExcerpt": "called by a God who tells you to help other human beings I mean all those things are things that religion motivates people to do not that you can't do them but that people generally don't do them if they're not motivated by religion get real I mean pronouncing an incantation yes isn't a moral action not isn't it's only it's only not a moral action if you don't feel sub enous it",
+      "sourceSpan": {
+        "startEvent": 1057,
+        "endEvent": 1100
+      },
+      "clipWindow": {
+        "startMs": 2439859,
+        "endMs": 2538140,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/con-religious-motivation-and-sanctity.mp3",
+      "clipSha256": "075d78b837cfd7862110907b5c14cd417944abd0e769dd68c27c9b2d8f8f5c14",
+      "plannedDurationSeconds": 98.281,
+      "durationSeconds": 98.282938,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "sourceVideoId": "2kZRAOXEFPI",
+      "moveId": "pro-natural-transcendence-without-supernaturalism",
+      "expectedSpeaker": "Christopher Hitchens",
+      "proposition": "Experiences of transcendence, ecstasy, beauty, love, and mortality are genuine human phenomena but do not provide warrant for a supernatural realm.",
+      "verificationExcerpt": "that the human species mamian primate so on though it unly is and made out of the Dust of exploded sons does have a need for I would say the the Transcendent would one word the numinous um even the ecstatic um wouldn't trust anyone who hadn't felt this and it has obviously to do with landscape light uh music love and I think also a a permanent awareness of the transience of all",
+      "sourceSpan": {
+        "startEvent": 2002,
+        "endEvent": 2032
+      },
+      "clipWindow": {
+        "startMs": 4624980,
+        "endMs": 4705659,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-21/clips/pro-natural-transcendence-without-supernaturalism.mp3",
+      "clipSha256": "c47c549d3948c9c59025c574f7a9d19d220476d52ca3a89581b48276f099fb18",
+      "plannedDurationSeconds": 80.679,
+      "durationSeconds": 80.679,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "74",
+      "debateId": "rasmussen-malpass-suffering-causal-finitism-2021",
+      "sourceVideoId": "MfCQBynjgnw",
+      "moveId": "pro-voluntary-risk-arena",
+      "expectedSpeaker": "Josh Rasmussen",
+      "proposition": "God's creation of an arena may differ morally from wrongdoing within it when embodied beings voluntarily accept risks for opportunities involving growth, love, lessons, and experience.",
+      "verificationExcerpt": "voluntarily coming into a state of limitation or into a adventure where there's risks for the sake of lessons and love knowing that one of the risks are that you can be removed prematurely um and that's not an answer this isn't to say this is why there's evil and suffering it's just to point out there's a difference between saying oh i shouldn't do that and saying god shouldn't allow any beings to be part of an arena",
+      "sourceSpan": {
+        "startEvent": 2434,
+        "endEvent": 2539
+      },
+      "clipWindow": {
+        "startMs": 4695340,
+        "endMs": 4907699,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-74/clips/pro-voluntary-risk-arena.mp3",
+      "clipSha256": "5b7c9957b212cfa64f07e767ff594055daa53660874f513a9b2397bf4ef42f2a",
+      "plannedDurationSeconds": 212.359,
+      "durationSeconds": 212.359,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "moveId": "con-involuntary-belief-eternal-stakes",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "A sincere seeker cannot choose to find religious arguments convincing, so involuntary cognitive limitations cannot fairly ground eternal consequences.",
+      "verificationExcerpt": "find an answer then what I'm looking for I suppose is either an explanation for that an explanation for that experience some kind of second order explanation which makes that not a problem to worry about or itself what I'm doing wrong so as not to experience that that a question that I often ask is what you would do if you woke up tomorrow sort of in my mind as it were you just found yourself convinced that the arguments",
+      "sourceSpan": {
+        "startEvent": 533,
+        "endEvent": 610
+      },
+      "clipWindow": {
+        "startMs": 1227780,
+        "endMs": 1424659,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/con-involuntary-belief-eternal-stakes.mp3",
+      "clipSha256": "e085071cf2a474c632e5e2db48b695a0be1f95901b642153d97e26cfa2f40971",
+      "plannedDurationSeconds": 196.879,
+      "durationSeconds": 196.879,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "moveId": "pro-continuous-providential-opportunity",
+      "expectedSpeaker": "Gregory Pine",
+      "proposition": "Providence continually supplies opportunities to receive grace, but fallen human agency can obstruct those opportunities because humanity freely lost gifted rectitude rather than because God ceased offering return.",
+      "verificationExcerpt": "state of grace is the is the Christian teaching and that they freely chose against it and that God is Not culpable for our fact of inheriting a what compromised human nature but it's that our human nature was fortified and the to mytic teaching is that you refer to the state of original Justice or rectitude whereby our minds were subordinated to God in Grace our lower powers to",
+      "sourceSpan": {
+        "startEvent": 1470,
+        "endEvent": 1549
+      },
+      "clipWindow": {
+        "startMs": 3349339,
+        "endMs": 3538619,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-continuous-providential-opportunity.mp3",
+      "clipSha256": "fe5de55477ed8338c03dc88fa13f5f708544f70c42da5029a725d9bcbfade042",
+      "plannedDurationSeconds": 189.28,
+      "durationSeconds": 189.28,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "123",
+      "debateId": "oconnor-pine-divine-hiddenness-2024",
+      "sourceVideoId": "8k9A7d2Wnjk",
+      "moveId": "pro-suffering-enlarges-receptivity",
+      "expectedSpeaker": "Gregory Pine",
+      "proposition": "Read within the larger canonical story, divine questioning and profound suffering can enlarge creaturely receptivity to revelation and prepare persons gradually to perceive and participate in divine glory.",
+      "verificationExcerpt": "final word I might say in reading the scriptures canonically you know the the Old Testament in light of the new I think often of how our Lord adduces questions from the hearts of those with whom he's in conversation especially like in Gospel of John and how some of his most Sublime Revelations are immediately attended upon a question that he has provoked um you know like Philip",
+      "sourceSpan": {
+        "startEvent": 2662,
+        "endEvent": 2699
+      },
+      "clipWindow": {
+        "startMs": 5975139,
+        "endMs": 6063219,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-123/clips/pro-suffering-enlarges-receptivity.mp3",
+      "clipSha256": "05e8c5b6f916bfc79edef1af0cf0d4e6737a3a0c20373026ceb867fd1b2b6da3",
+      "plannedDurationSeconds": 88.08,
+      "durationSeconds": 88.08,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "sourceVideoId": "h-I_9e5qxnc",
+      "moveId": "pro-qualia-concept-unsettled",
+      "expectedSpeaker": "Daniel Dennett",
+      "proposition": "The term qualia is too theoretically unsettled to establish irreducible subjective properties without first specifying which account of qualia is intended.",
+      "verificationExcerpt": "it's a subjective it's it's a quality of a subjective experience so the the the smell of pizza the the taste of watermelon that those subjective colors you can get without even looking out into the world um uh uh itches and tingles and weird feelings and so forth those are qualia I mean that's philosophers call those qualia now I have been a Critic of the term qualia for a very",
+      "sourceSpan": {
+        "startEvent": 612,
+        "endEvent": 707
+      },
+      "clipWindow": {
+        "startMs": 1532779,
+        "endMs": 1793820,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/pro-qualia-concept-unsettled.mp3",
+      "clipSha256": "0c5b8ae842da8d01747e2f970e19ab4e1dba55ec73af157faf2aa680f3cc43c5",
+      "plannedDurationSeconds": 261.041,
+      "durationSeconds": 261.041,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "147",
+      "debateId": "dennett-clayton-naturalism-ultimate-reality-2012",
+      "sourceVideoId": "h-I_9e5qxnc",
+      "moveId": "con-experience-sensitive-religious-belief",
+      "expectedSpeaker": "Philip Clayton",
+      "proposition": "Beliefs about God or a deeper level of reality can change in response to experience, including suffering, and such revision changes what one believes ultimately exists.",
+      "verificationExcerpt": "not only certain functional behaviors in the world it also involves different beliefs about what ultimately exists so if I if you came to believe tomorrow that there really is a subject that has qualia you would hold a different belief about the world than you currently hold if I came to believe that there isn't a God or a deeper level of reality I would hold a different set of",
+      "sourceSpan": {
+        "startEvent": 1517,
+        "endEvent": 1541
+      },
+      "clipWindow": {
+        "startMs": 3853700,
+        "endMs": 3924700,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-147/clips/con-experience-sensitive-religious-belief.mp3",
+      "clipSha256": "8e6aa16bf00d834d8063e5bb824ef73e826c9c84e43d73f833bc6ce37490227e",
+      "plannedDurationSeconds": 71,
+      "durationSeconds": 71,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "130",
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "sourceVideoId": "0IpKHdVLZb4",
+      "moveId": "pro-missing-body-cumulative-significance",
+      "expectedSpeaker": "Mike Licona",
+      "proposition": "A missing body becomes substantially more significant when joined to prior resurrection predictions, reputed miracles, and sincere appearance reports involving friends, foes, individuals, and groups.",
+      "verificationExcerpt": "this okay if they don't go missing or if they go missing we don't assume resurrection agreed but if there's no claims like let's say you know my grandfather died in 1978 if his grave all right look take this David Koresh I lost use my grandfather 1978 my grandfather dies that's a bummer actually know things about the correct story okay he dies and all of a sudden his body turns",
+      "sourceSpan": {
+        "startEvent": 685,
+        "endEvent": 698
+      },
+      "clipWindow": {
+        "startMs": 3937420,
+        "endMs": 4048590,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-10-audio-verification/debate-130/clips/pro-missing-body-cumulative-significance.mp3",
+      "clipSha256": "35f638eb4edfcf02e5200a664826585eeb612b09973a78094f8cf4d2d085279d",
+      "plannedDurationSeconds": 111.17,
+      "durationSeconds": 111.170938,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 5,
+    "sourceDownloads": 5,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 5,
+    "clips": 9,
+    "clipMinutes": 21.8129,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-10-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
