@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-discovery-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-12-debate-11-chunk-001-discovery-recovery-1",
+  "status": "two-fresh-event-disjoint-debate-11-chunk-001-discovery-recovery-shards-passed",
+  "startedAt": "2026-08-26T18:23:29.951Z",
+  "completedAt": "2026-08-26T18:24:30.589Z",
+  "wallElapsedMs": 60636,
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "validContexts": 2,
+  "invalidContexts": 0,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recoveryLevel": 1,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true
+  },
+  "results": [
+    {
+      "contextIndex": 0,
+      "shardId": "recovery-a",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-26T18:23:29.953Z",
+      "completedAt": "2026-08-26T18:24:22.306Z",
+      "elapsedMs": 52353,
+      "timeoutMsApplied": 300000,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "scoreBlind": true,
+      "meteredApiCostUsd": 0,
+      "stdoutSha256": "792c46cdbbcc28318f3b3cbf3c69d5773647c80439de372dd94d11bcb5f0daa5",
+      "stderrSha256": "e82b63cb2ad0ffd7c2ff9495af5c641816d5137ac77e569e56268251e7e83e9e",
+      "status": "completed-valid",
+      "accepted": true,
+      "outputWritten": true,
+      "outputSha256": "d1927e21cbda32d108b401a288cee95f36fff945d7aea368b42c25a9d4cf3b56",
+      "candidates": 5,
+      "validationSummary": {
+        "status": "passed",
+        "chunkId": "chunk-001",
+        "candidates": 5,
+        "exactSourceSlice": true,
+        "scoresDerived": 0,
+        "schemaVersion": "1.0-score-stability-v2.1.2-score-blind-chunk-discovery",
+        "protocolId": "assessment-production-score-stability-v2.1.2-bounded-end-discovery",
+        "localTargetIdsModelAuthored": false,
+        "primaryAOwnsSelectedTargetTopology": true,
+        "derivedWindows": [
+          {
+            "candidateId": "recovery-a-001",
+            "startEvent": 246,
+            "endEvent": 271,
+            "repositoryDerivedLexicalTokens": 158,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-a-002",
+            "startEvent": 354,
+            "endEvent": 382,
+            "repositoryDerivedLexicalTokens": 192,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-a-003",
+            "startEvent": 386,
+            "endEvent": 401,
+            "repositoryDerivedLexicalTokens": 103,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-a-004",
+            "startEvent": 404,
+            "endEvent": 424,
+            "repositoryDerivedLexicalTokens": 133,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-a-005",
+            "startEvent": 425,
+            "endEvent": 453,
+            "repositoryDerivedLexicalTokens": 208,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          }
+        ],
+        "repositoryDerivedLexicalTokenCounts": true,
+        "modelAuthoredLexicalTokenCounts": false,
+        "modelAuthoredBoundedEndEvents": true,
+        "startDependentLockedLookaheadCapacityStructurallyBounded": true,
+        "minimumLexicalTokens": 12
+      }
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "recovery-b",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-26T18:23:29.953Z",
+      "completedAt": "2026-08-26T18:24:30.578Z",
+      "elapsedMs": 60625,
+      "timeoutMsApplied": 300000,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "scoreBlind": true,
+      "meteredApiCostUsd": 0,
+      "stdoutSha256": "0f2dc4447bb5bede00308891c82bb597700818e052127d7859a379876f6ef2c9",
+      "stderrSha256": "1fd5d60ee48dae8f9a760bea54f0b31b5b7e7cbd0f4bb2f2699d44becfeb1b93",
+      "status": "completed-valid",
+      "accepted": true,
+      "outputWritten": true,
+      "outputSha256": "338b511ec31665541f6ffb9329091a4d7e4d5e47da0f5c5157082ce838cc7943",
+      "candidates": 5,
+      "validationSummary": {
+        "status": "passed",
+        "chunkId": "chunk-001",
+        "candidates": 5,
+        "exactSourceSlice": true,
+        "scoresDerived": 0,
+        "schemaVersion": "1.0-score-stability-v2.1.2-score-blind-chunk-discovery",
+        "protocolId": "assessment-production-score-stability-v2.1.2-bounded-end-discovery",
+        "localTargetIdsModelAuthored": false,
+        "primaryAOwnsSelectedTargetTopology": true,
+        "derivedWindows": [
+          {
+            "candidateId": "recovery-b-001",
+            "startEvent": 450,
+            "endEvent": 476,
+            "repositoryDerivedLexicalTokens": 175,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-b-002",
+            "startEvent": 517,
+            "endEvent": 586,
+            "repositoryDerivedLexicalTokens": 411,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-b-003",
+            "startEvent": 689,
+            "endEvent": 740,
+            "repositoryDerivedLexicalTokens": 278,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-b-004",
+            "startEvent": 741,
+            "endEvent": 827,
+            "repositoryDerivedLexicalTokens": 526,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          },
+          {
+            "candidateId": "recovery-b-005",
+            "startEvent": 834,
+            "endEvent": 889,
+            "repositoryDerivedLexicalTokens": 317,
+            "minimumLexicalTokens": 12,
+            "modelAuthoredLexicalTokenCount": false,
+            "endBoundedByLockedContext": true
+          }
+        ],
+        "repositoryDerivedLexicalTokenCounts": true,
+        "modelAuthoredLexicalTokenCounts": false,
+        "modelAuthoredBoundedEndEvents": true,
+        "startDependentLockedLookaheadCapacityStructurallyBounded": true,
+        "minimumLexicalTokens": 12
+      }
+    }
+  ],
+  "totals": {
+    "modelContextsExecuted": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0
+  },
+  "authorization": {
+    "deterministicMerge": true,
+    "cohortAnalysis": true,
+    "furtherRecovery": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  }
+}
