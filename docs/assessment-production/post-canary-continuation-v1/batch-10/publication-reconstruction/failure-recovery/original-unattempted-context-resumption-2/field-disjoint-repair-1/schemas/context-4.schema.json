@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-10-field-disjoint-repair-4",
+  "title": "Batch 10 Debate 68 field-disjoint repair debate-68-shard-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "shardId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-10-publication-field-disjoint-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-10-publication-field-disjoint-repair-1"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 4
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "68"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "jones-dillahunty-quantum-idealism-demonstrability-2026"
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-68-shard-1"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "corrections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_01",
+        "field_02",
+        "field_03",
+        "field_04",
+        "field_05",
+        "field_06"
+      ],
+      "properties": {
+        "field_01": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_02": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_03": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_04": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_05": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_06": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

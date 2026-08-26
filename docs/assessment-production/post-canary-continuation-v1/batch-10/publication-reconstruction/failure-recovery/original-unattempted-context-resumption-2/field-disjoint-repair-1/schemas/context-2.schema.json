@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-10-field-disjoint-repair-2",
+  "title": "Batch 10 Debate 177 field-disjoint repair debate-177-shard-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "shardId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-10-publication-field-disjoint-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-10-publication-field-disjoint-repair-1"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 2
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "177"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "ehrman-wallace-trust-text-new-testament-2011"
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-177-shard-1"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "corrections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_01",
+        "field_02",
+        "field_03",
+        "field_04",
+        "field_05",
+        "field_06",
+        "field_07",
+        "field_08"
+      ],
+      "properties": {
+        "field_01": {
+          "type": "string",
+          "minLength": 3
+        },
+        "field_02": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_03": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_04": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_05": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_06": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_07": {
+          "type": "string",
+          "minLength": 880
+        },
+        "field_08": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
