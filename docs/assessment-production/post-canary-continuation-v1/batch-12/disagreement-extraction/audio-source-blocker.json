@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-audio-source-blocker",
+  "protocolId": "assessment-production-post-canary-batch-12-decomposed-consensus",
+  "status": "batch-12-blocked-required-audio-source-unavailable-after-bounded-recovery",
+  "blockedAt": "2026-08-26T20:28:06Z",
+  "checkpointCommit": "43e89bfd12f2cd81d3e13b83d8e864bfe309c9aa",
+  "substantiveBlocker": {
+    "workflowRule": "A missing source or unresolved audio trigger blocks that debate or batch.",
+    "debateNumber": "15",
+    "videoId": "5OXPlUCGScY",
+    "moveId": "con-natural-inquiry-falsifiability",
+    "expectedSpeaker": "Christopher Hitchens",
+    "requiredClipWindow": {
+      "startMs": 1108140,
+      "endMs": 1246820,
+      "paddingMs": 2500
+    },
+    "audioVerificationRequiredBeforeAdjudication": true,
+    "sourceAudioAvailable": false,
+    "clipPrepared": false,
+    "audioVerificationCompleted": false
+  },
+  "completedAudioPreparation": {
+    "sources": 2,
+    "clips": 3,
+    "queuedMoves": [
+      "152:pro-evidence-experience-epistemology",
+      "07:pro-doubled-kyrios-veiled-claim",
+      "07:pro-synoptic-disclosure-early-christology"
+    ]
+  },
+  "attemptAccounting": {
+    "initialSourceShards": 3,
+    "recoveryLevelsUsed": 2,
+    "recoveryLevelMaximum": 2,
+    "recoveryShardsUsed": 4,
+    "attemptsPerShard": 1,
+    "totalSourceAcquisitionAttempts": 7,
+    "successfulSourceAcquisitions": 2,
+    "failedSourceAcquisitionAttempts": 5,
+    "retries": 0,
+    "blindRepetitions": 0
+  },
+  "debate15AttemptHistory": [
+    {
+      "stage": "initial",
+      "formatSelector": "bestaudio/best",
+      "result": "partial-media-response-produced-invalid-normalized-audio"
+    },
+    {
+      "stage": "recovery-level-1",
+      "formatSelector": "18",
+      "result": "complete-declared-object-contained-header-without-usable-audio"
+    },
+    {
+      "stage": "recovery-level-2-shard-1",
+      "formatSelector": "140",
+      "transport": "manual-node-https-without-extractor-headers",
+      "result": "http-403-zero-bytes"
+    },
+    {
+      "stage": "recovery-level-2-shard-2",
+      "formatSelector": "140",
+      "transport": "manual-node-https-with-extractor-public-headers",
+      "result": "http-403-zero-bytes"
+    },
+    {
+      "stage": "recovery-level-2-shard-3",
+      "formatSelector": "140",
+      "transport": "yt-dlp-single-process-resolution-and-download",
+      "result": "http-403-zero-bytes"
+    }
+  ],
+  "preservedEvidence": {
+    "records": {
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-partial-execution-1.json": "c0b394ceeaa7c6e32cde58b36c806136544da683ef931cd625856aed816546a2",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-recovery-1-failure.json": "ba01de253ca8cb297b854fc67a37295c4bb80ff9bf9f61f8125d57b9965ad031",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-recovery-2-shard-1-failure.json": "a4026a9819fdc8f9050e5fb04cfcf70e7439a660f8647031002d941829ed4c7f",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/disagreement-extraction/audio-source-recovery-2-shard-2-failure.json": "0fd6da83fb09c686dc728de0cfaa57f01287f6af13df23164ef90476cb7c8f24"
+    },
+    "localFailureArtifacts": [
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.failed-attempt-1.mp3",
+        "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.recovery-attempt-1.partial.mp4",
+        "sha256": "1c53cd91eba9ddcb9010ea1a466c2645450a923b216d84d07df89f545d290b5a"
+      },
+      {
+        "path": "output/transcribe/assessment-production-post-canary-batch-12-audio-verification/debate-15/audio/source.failed-recovery-1.mp3",
+        "sha256": "87965bd54bc175f5645aa773bd5a0a98c396524a0dd0c4e94463828c11ed2754"
+      }
+    ]
+  },
+  "stageTotals": {
+    "modelContexts": 20,
+    "acceptedIndependentJudgments": 20,
+    "disagreementsExtracted": 196,
+    "audioMovesRequired": 4,
+    "audioMovesVerified": 0,
+    "paidTranscriptionCalls": 0,
+    "paidServiceCalls": 0,
+    "transcriptionCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "adjudicationContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "validation": {
+    "independentJudgmentActivationReplay": "passed",
+    "disagreementGateAtFreeze": "passed",
+    "audioWorkItemGateAtFreeze": "passed",
+    "blockerRecordSourceHashReplay": "passed",
+    "preservedLocalFailureArtifactHashReplay": "passed",
+    "gitDiffCheck": "passed",
+    "lateStageDirectorySnapshotTests": {
+      "status": "not-applicable-after-later-stage-artifacts-exist",
+      "substantiveAssertionFailures": 0,
+      "timingOnlyAssertion": "The disagreement and audio-work-item tests require future output files to be absent; the recovery and blocker records now intentionally exist."
+    }
+  },
+  "prohibitedContinuation": [
+    "audio-verification-execution",
+    "dispute-adjudication",
+    "final-ledger-assembly",
+    "score-pass",
+    "publication-reconstruction",
+    "production-publication",
+    "batch-13-selection"
+  ],
+  "newAuthorityOrExternalStateRequired": [
+    "a user-supplied audio file covering Debate 15 from 1108.140 through 1246.820 seconds",
+    "or explicit authorization to use an authenticated browser-cookie source route"
+  ],
+  "nextAuthorizedAction": "stop-and-report-substantive-required-audio-source-blocker"
+}
