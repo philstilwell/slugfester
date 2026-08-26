@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-11-debate-60-pass-b-judgment-recovery-correction-plan",
+  "status": "minimum-two-field-disjoint-recovery-shards-frozen",
+  "recoveryLevel": 1,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-11/independent-judgments/recovery-1/debate-60-pass-b/diagnosis.json",
+  "diagnosisSha256": "78e9f164de3e4f1e40b37893efd1f879e22058ba907d17ba24e92a1f20577dd3",
+  "mergeRule": {
+    "ruleId": "batch-11-debate-60-pass-b-judgment-recovery-1-field-disjoint-merge-v1",
+    "repositoryOwnedFields": [
+      "schemaVersion",
+      "protocolId",
+      "debateNumber",
+      "debateId",
+      "reviewerRole",
+      "assessmentModel",
+      "calibrationOnly",
+      "lockedInventorySha256",
+      "isolation",
+      "audit"
+    ],
+    "acceptedModelFields": {
+      "moves-1": [
+        "con-bodily-inconsistent-physicality",
+        "con-rival-mormon-witness-parity",
+        "con-five-hundred-corroboration-limits",
+        "pro-bodily-pauline-physicality",
+        "pro-rivals-supernatural-admissibility",
+        "pro-rivals-mormon-differences",
+        "con-paul-gospel-development",
+        "pro-bodily-continuity-wounds",
+        "pro-appearances-group-source",
+        "pro-sincerity-informed-danger"
+      ],
+      "moves-2-burden": [
+        "pro-sincerity-apostolic-risk",
+        "pro-tomb-sober-women",
+        "con-postmortem-extrabiblical-gap",
+        "pro-appearances-conversions-conduct",
+        "con-martyrdom-bodily-knowledge-gap",
+        "con-reburial-theft-alternatives",
+        "pro-tomb-alternatives-conjunction",
+        "con-pilate-burial-plausibility",
+        "con-defection-testimony-independence",
+        "con-firsthand-specific-martyrdom-deficit",
+        "burdenCompletionAdjustment"
+      ]
+    },
+    "acceptedFieldOverlap": [],
+    "originalFailedPartialOutputReusable": false,
+    "originalFailedOutputUsedAsSubstantiveInput": false,
+    "eachOriginalModelWritableFieldAcceptedExactlyOnce": true,
+    "completeMergedJudgmentValidator": "scripts/validate-assessment-production-post-canary-batch-11-independent-judgment.mjs",
+    "completeTwentyContextCohortReplayRequired": true
+  },
+  "mergeRuleCanonicalSha256": "c5687cb721f50105721f10ffe894f6a5ac088098484c9cf89e1f313a0360ba6f",
+  "contexts": [
+    {
+      "shardId": "moves-1",
+      "assignedMoveIds": [
+        "con-bodily-inconsistent-physicality",
+        "con-rival-mormon-witness-parity",
+        "con-five-hundred-corroboration-limits",
+        "pro-bodily-pauline-physicality",
+        "pro-rivals-supernatural-admissibility",
+        "pro-rivals-mormon-differences",
+        "con-paul-gospel-development",
+        "pro-bodily-continuity-wounds",
+        "pro-appearances-group-source",
+        "pro-sincerity-informed-danger"
+      ],
+      "burdenCompletionAdjustmentAssigned": false
+    },
+    {
+      "shardId": "moves-2-burden",
+      "assignedMoveIds": [
+        "pro-sincerity-apostolic-risk",
+        "pro-tomb-sober-women",
+        "con-postmortem-extrabiblical-gap",
+        "pro-appearances-conversions-conduct",
+        "con-martyrdom-bodily-knowledge-gap",
+        "con-reburial-theft-alternatives",
+        "pro-tomb-alternatives-conjunction",
+        "con-pilate-burial-plausibility",
+        "con-defection-testimony-independence",
+        "con-firsthand-specific-martyrdom-deficit"
+      ],
+      "burdenCompletionAdjustmentAssigned": true
+    }
+  ],
+  "directIncrementalCostUsdMaximum": 0,
+  "attemptsPerShard": 1,
+  "retriesMaximum": 0,
+  "timeoutExtensionsMaximum": 0
+}
