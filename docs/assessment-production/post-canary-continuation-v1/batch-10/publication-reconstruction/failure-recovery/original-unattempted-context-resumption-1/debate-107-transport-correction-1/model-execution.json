@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-publication-debate-107-transport-correction-execution",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-debate-107-transport-correction-1",
+  "status": "completed-valid",
+  "gateAcceptancePassed": true,
+  "outputWritten": true,
+  "outputSha256": "24045243c157de34a928fdb127d8d57a8efe940ad83384de2af121e17ebb49a2",
+  "validationWritten": true,
+  "validationSha256": "beeee9ea4f66c9c6f8c402bf8dc7740969a4dc9d8aa41ad8210773e8e7dca1d0",
+  "provenanceWritten": true,
+  "provenanceSha256": "f92b6dc38e8d5581d0acf4aa8839574aed013cbe2b030ef1e63fbf1dd832f466",
+  "validationSummary": {
+    "status": "passed",
+    "debateNumber": "107",
+    "correctedFields": 3,
+    "fieldValidations": [
+      {
+        "itemId": "d107-ai-pro-premise-1",
+        "field": "aiExtension.pro.premises[0].novelty.explanation",
+        "words": 16,
+        "characters": 139
+      },
+      {
+        "itemId": "d107-ai-pro-premise-3",
+        "field": "aiExtension.pro.premises[2].novelty.explanation",
+        "words": 16,
+        "characters": 141
+      },
+      {
+        "itemId": "d107-ai-pro-premise-5",
+        "field": "aiExtension.pro.premises[4].novelty.explanation",
+        "words": 16,
+        "characters": 146
+      }
+    ],
+    "modelAuthoredScores": 0
+  },
+  "validationMessage": null,
+  "contextIndex": 0,
+  "contextType": "schema-corrected-three-field-ai-extension-novelty-explanation-correction",
+  "debateNumber": "107",
+  "debateId": "lennox-ruse-science-faith-evidence-god-2018",
+  "model": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "writableFields": [
+    "aiExtension.pro.premises[0].novelty.explanation",
+    "aiExtension.pro.premises[2].novelty.explanation",
+    "aiExtension.pro.premises[4].novelty.explanation"
+  ],
+  "newContextNotAutomaticRetry": true,
+  "priorTransportOutputReused": false,
+  "attemptCount": 1,
+  "retryCount": 0,
+  "timeoutExtensionCount": 0,
+  "furtherCorrectionContextCount": 0,
+  "startedAt": "2026-08-26T04:12:02.145Z",
+  "completedAt": "2026-08-26T04:12:18.706Z",
+  "elapsedMs": 16560,
+  "timedOut": false,
+  "commandExitCode": 0,
+  "terminationSignal": null,
+  "apiKeysRemoved": true,
+  "isolatedTemporaryCodexHome": true,
+  "isolatedTemporaryWorkingDirectory": true,
+  "hostAwakeGuardApplied": true,
+  "failedPublicationOutputAvailableToModel": false,
+  "rejectedExplanationsAvailableToModel": false,
+  "modelAuthoredScores": 0,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "stdoutSha256": "1800c2711a54fe1529cfff51b6cfc4af34747ac62e8feaeb3d5218695f0cce07",
+  "stderrSha256": "37ef2abb248672bf0b7d10543a3c7d1336cdb14ee32b0bda6e986e3f0431b7f6",
+  "nextRequiredAction": "deterministically-replace-three-fields-and-revalidate-complete-debate-107"
+}

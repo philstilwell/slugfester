@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-debate-107-transport-correction-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-debate-107-transport-correction-1",
+  "status": "passed",
+  "debateNumber": "107",
+  "sourceFailedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-107.json",
+    "sha256": "34759e458fe1e98dfe301c1f9f9466e622f182831a428901de94e3909ca4d896",
+    "retainedValidationCleanFieldsDeterministically": true,
+    "rejectedExplanationsRetained": false
+  },
+  "failedTransportCorrection": {
+    "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-correction-1/transport-diagnosis.json",
+    "diagnosisSha256": "65af891db3cd4dfc812f9f7da888663a0bdea4317b6c0fd2843ec48a89ce1ea4",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-correction-1/model-execution.json",
+    "executionSha256": "61ced15d3043c3c6514bda5ec98cbde3dab7d4f4b8ea2ba6ccf0d804d7cc0e02",
+    "modelOutputGenerated": false,
+    "outputReused": false
+  },
+  "acceptedCorrection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-transport-correction-1/output.json",
+    "sha256": "24045243c157de34a928fdb127d8d57a8efe940ad83384de2af121e17ebb49a2",
+    "failedPublicationOutputShownToModel": false,
+    "rejectedExplanationsShownToModel": false,
+    "replacements": [
+      {
+        "itemId": "d107-ai-pro-premise-1",
+        "field": "aiExtension.pro.premises[0].novelty.explanation",
+        "originalExplanationSha256": "9b0839e2149946a5bc01bc9b71a689c1738ae7515ae1177082fb63cf31181f78",
+        "replacementExplanationSha256": "0613f52bd9167798235abf76cd0bf8e003d12fbf3e5fdb05dc92bea9b1cb5623"
+      },
+      {
+        "itemId": "d107-ai-pro-premise-3",
+        "field": "aiExtension.pro.premises[2].novelty.explanation",
+        "originalExplanationSha256": "c0c0a337a285e9622b7649f015534e6cf124fb12fe5abf0cbf83fe474127b542",
+        "replacementExplanationSha256": "66e3a74729a0b519df6a2813a252b0fa15f5ed0d9abdfbdea6ecf1f2790885fd"
+      },
+      {
+        "itemId": "d107-ai-pro-premise-5",
+        "field": "aiExtension.pro.premises[4].novelty.explanation",
+        "originalExplanationSha256": "40ca87a23dd49acd3f3986115638b768e43f349c576f03a13c986c6cfbce7370",
+        "replacementExplanationSha256": "00d894a8d0308f13b15a7d4feb430288d6ebff35c42f656bf54ccfbf0c425255"
+      }
+    ]
+  },
+  "correctedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-1/debate-107-transport-correction-1/corrected-debate-107.json",
+    "sha256": "1eddfdcffc08344b613c4662f99d01be758b01e0c80363f7d09b035269d3749c",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "107",
+      "moves": 16,
+      "critiques": 16,
+      "minimumCritiqueCharacters": 944,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "acceptedBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-10/publication-reconstruction/outputs/debate-107.json",
+  "lockedScoresUnchanged": true,
+  "modelAuthoredScores": 0
+}

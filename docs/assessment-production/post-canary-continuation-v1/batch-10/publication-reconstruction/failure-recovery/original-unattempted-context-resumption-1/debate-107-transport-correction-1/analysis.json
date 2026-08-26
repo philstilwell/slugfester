@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-publication-debate-107-transport-correction-analysis",
+  "protocolId": "assessment-production-post-canary-batch-10-publication-debate-107-transport-correction-1",
+  "status": "batch-10-debate-107-schema-corrected-three-field-publication-correction-passed-awaiting-six-context-resumption",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "gate": {
+    "contextsPlanned": 1,
+    "contextsAttempted": 1,
+    "contextsPassed": 1,
+    "contextsFailed": 0,
+    "writableFields": 3,
+    "correctedFields": 3,
+    "schemaCorrectionApplied": true,
+    "priorTransportAttemptProducedModelOutput": false,
+    "priorTransportOutputReused": false,
+    "passedDebates74And142Retained": true,
+    "validationCleanDebate107FieldsRetainedDeterministically": true,
+    "rejectedExplanationsRetained": false,
+    "failedPublicationOutputShownToCorrectionModel": false,
+    "completeDebate107Validated": true,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrections": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "correctionValidation": {
+    "status": "passed",
+    "debateNumber": "107",
+    "correctedFields": 3,
+    "fieldValidations": [
+      {
+        "itemId": "d107-ai-pro-premise-1",
+        "field": "aiExtension.pro.premises[0].novelty.explanation",
+        "words": 16,
+        "characters": 139
+      },
+      {
+        "itemId": "d107-ai-pro-premise-3",
+        "field": "aiExtension.pro.premises[2].novelty.explanation",
+        "words": 16,
+        "characters": 141
+      },
+      {
+        "itemId": "d107-ai-pro-premise-5",
+        "field": "aiExtension.pro.premises[4].novelty.explanation",
+        "words": 16,
+        "characters": 146
+      }
+    ],
+    "modelAuthoredScores": 0
+  },
+  "completeDebateValidation": {
+    "status": "passed",
+    "debateNumber": "107",
+    "moves": 16,
+    "critiques": 16,
+    "minimumCritiqueCharacters": 944,
+    "tags": 0,
+    "quoteExactSourceMatches": 2,
+    "overallCommentarySides": 2,
+    "noveltyItems": 18,
+    "introducedItems": 4,
+    "newArguments": 4,
+    "aiExtensionSides": 2,
+    "calculatedScoresAuthoredByModel": 0,
+    "lockedScoresUnchanged": true
+  },
+  "failureMessage": null,
+  "unattemptedOriginalContextIndexes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "unattemptedDebates": [
+    "123",
+    "177",
+    "68",
+    "147",
+    "61",
+    "130"
+  ],
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "sixContextResumptionPreparation": true,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-run-only-six-original-unattempted-batch-10-publication-contexts"
+}
