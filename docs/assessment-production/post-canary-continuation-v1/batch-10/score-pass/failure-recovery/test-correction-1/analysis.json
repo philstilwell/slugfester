@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-10-score-pass-test-correction-analysis",
+  "status": "passed-score-artifact-with-post-pass-test-only-batch-number-correction",
+  "analyzedAt": "2026-08-26T02:29:57.000Z",
+  "productionCanary": false,
+  "batchNumber": 10,
+  "stagingOnly": true,
+  "failure": {
+    "stage": "post-score-pass-test",
+    "message": "Expected values to be strictly equal: 10 !== 9",
+    "cause": "The hash-locked copied test expected preparation.batchNumber to equal 9 instead of 10.",
+    "scoreDerivationFailed": false,
+    "formalScoreValidationPassed": true,
+    "scoreAnalysisGatePassed": true,
+    "scorePassesExecuted": 1,
+    "scoreRerunsExecuted": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "frozenOriginalTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-10-score-pass-gate.mjs",
+    "sha256": "e93776e7ab44150fec9263994e9711c765b3670fb375efdb7f21ff4bd398211b",
+    "preservedUnchanged": true
+  },
+  "correctionTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-10-score-pass-gate-correction-1.mjs",
+    "sha256": "fcb2627df353dd79db718bf0cfb0c840bb261345eac474f4516e7b9245678de7",
+    "onlyChangedExpectation": "preparation.batchNumber === 10",
+    "status": "passed-analyzed"
+  },
+  "authenticatedArtifacts": {
+    "preparationManifestSha256": "0b59c8be8d1c0a3b4d3dfe767e445d069e37b31d7ff179d33897660ccf8ed968",
+    "activationManifestSha256": "5288fde51a69c630d4930f1b164ca14287bd73ada53541f3e1a2132e9df60efb",
+    "calculatedScoresSha256": "06dac44b312eb305d58532487998ba26f823edd070e69a3bc98c8144592b0a6c",
+    "scoreAnalysisSha256": "bb9cbc54b21ff70e2364c2e778abaac5784590111d0f6846d3e03dbcdc183d85"
+  },
+  "scoreGate": {
+    "status": "post-canary-batch-10-score-stability-gate-passed",
+    "debates": 10,
+    "finalSides": 20,
+    "scorePasses": 1,
+    "scoreRerunAuthorized": false,
+    "winnerStabilityPassed": true,
+    "numericStabilityPassed": true
+  },
+  "authorization": {
+    "publicationPacketPreparation": true,
+    "scoreRerun": false,
+    "modelExecution": false,
+    "paidServices": false
+  },
+  "nextAuthorizedAction": "prepare-batch-10-publication-reconstruction"
+}
