@@ -72,4 +72,4 @@ assert.equal(Buffer.byteLength(proposed), activation.frozenOutput.proposedBytes)
 assert.equal(await exists(activation.outputPaths.execution), false);
 assert.equal(await exists(activation.outputPaths.analysis), false);
 
-console.log(JSON.stringify({ status: "passed", activatedMutationPasses: 1, exactProductionWrites: 12 }, null, 2));
+console.log(JSON.stringify({ status: "passed", activatedMutationPasses: 1, exactProductionWrites: 11 }, null, 2));

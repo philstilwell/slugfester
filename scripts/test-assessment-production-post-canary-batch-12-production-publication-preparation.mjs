@@ -46,6 +46,7 @@ assert.equal(manifest.executionContract.mutationPasses, 1);
 assert.equal(manifest.executionContract.retriesMaximum, 0);
 assert.equal(manifest.executionContract.rerunsMaximum, 0);
 assert.equal(manifest.executionContract.generatedDerivativeWrites, 0);
+assert.equal(manifest.executionContract.exactProductionWrites.length, 11);
 assert.equal(manifest.authorization.mutationManifestPreparation, true);
 assert.equal(manifest.authorization.executionActivation, false);
 assert.equal(manifest.authorization.productionMutation, false);
@@ -97,6 +98,7 @@ assert.equal(
 assert.equal(analysis.status, "batch-12-production-publication-mutation-manifest-freeze-passed");
 assert.equal(analysis.manifest.sha256, sha256(serializedJson(manifest)));
 assert.equal(analysis.checks.productionMutationPerformed, false);
+assert.equal(analysis.totals.productionWritesPrepared, 11);
 assert.equal(await exists(`${POST_CANARY_BATCH_12_PRODUCTION_PUBLICATION_ROOT}/execution-activation.json`), false);
 assert.equal(await exists(`${POST_CANARY_BATCH_12_PRODUCTION_PUBLICATION_ROOT}/execution.json`), false);
 

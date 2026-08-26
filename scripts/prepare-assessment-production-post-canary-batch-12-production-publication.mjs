@@ -302,7 +302,7 @@ const analysis = {
     referencesLocked: true,
     productionMutationPerformed: false
   },
-  totals: { debates: 10, productionWritesPrepared: 12, scorePasses: 0, modelContexts: 0, paidServiceCalls: 0, directIncrementalCostUsd: 0 },
+  totals: { debates: 10, productionWritesPrepared: 11, scorePasses: 0, modelContexts: 0, paidServiceCalls: 0, directIncrementalCostUsd: 0 },
   nextAuthorizedAction: manifest.nextAuthorizedAction
 };
 
