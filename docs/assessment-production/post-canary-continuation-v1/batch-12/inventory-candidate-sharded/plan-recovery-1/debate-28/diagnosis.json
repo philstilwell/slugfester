@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-debate-28-inventory-plan-timeout-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "status": "preserved-debate-28-candidate-census-plan-timeout-diagnosed-no-output-accepted",
+  "frozenAt": "2026-08-26T18:41:54Z",
+  "checkpointCommit": "f22241ad908de5c41d157caf3836df2c392dfa29",
+  "branch": "main",
+  "debateNumber": "28",
+  "debateId": "turek-shermer-reality-theism-atheism-2018",
+  "evidence": {
+    "originalPreparation": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-execution-preparation-manifest.json",
+    "originalPreparationSha256": "deb3e067ede4e50ca97f0206b150d4123b3c9d3b81c3035eac4192fcb9378f3b",
+    "originalActivation": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-execution-activation.json",
+    "originalActivationSha256": "cb0718cb31a353a148ae9395e3622e4bb00c79412040cade35c97f13832f9e8a",
+    "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-model-execution.json",
+    "originalExecutionSha256": "85aabcae667c449a1f7d99f6c7cb4ceeac200b5b2d39a807eaf3cbcf10586ca0",
+    "originalPacket": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/packets/plans/debate-28.json",
+    "originalPacketSha256": "bac42b1a1ae4dbca7d30db111bc32693460a7cfaea5bc474dbefe4637ea7cf05",
+    "originalSchema": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/schemas/plans/debate-28.schema.json",
+    "originalSchemaSha256": "d0fdfd1652f31c1988bdfe128b69c082b34b8cb5df7263bb40bae5b116a990ed"
+  },
+  "observedFailure": {
+    "contextIndex": 1,
+    "attemptCount": 1,
+    "timeoutMsApplied": 600000,
+    "elapsedMs": 600015,
+    "status": "timed-out",
+    "timedOut": true,
+    "terminationSignal": "SIGTERM",
+    "commandExitCode": null,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "86721aa210d7bb265bd3331e31fc2fb293afd79c0b48142aacb93868afe957d5",
+    "resultFileProduced": false,
+    "outputWritten": false,
+    "accepted": false
+  },
+  "deterministicDiagnosis": {
+    "category": "model-context-timeout-without-result",
+    "transportStarted": true,
+    "responseSchemaRejected": false,
+    "deterministicValidatorReached": false,
+    "partialOutputAvailableForAcceptance": false,
+    "retryPermitted": false,
+    "timeoutExtensionPermitted": false,
+    "minimumFieldDisjointShardCount": 2,
+    "shardFields": [
+      "routes",
+      "sections"
+    ],
+    "rationale": "The original schema has exactly two model-writable top-level domains, routes and sections. Two shards are therefore the minimum field-disjoint partition that assigns each original writable field exactly once."
+  },
+  "preservedAcceptedCohort": {
+    "acceptedPlans": 9,
+    "acceptedPlanFiles": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-152.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-119.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-116.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-131.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-07.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-33.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-15.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-29.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-11.json"
+    ],
+    "acceptedPlansMustRemainByteIdentical": true
+  },
+  "costs": {
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0,
+    "paidServiceCalls": 0
+  },
+  "nextAuthorizedAction": "freeze-two-minimum-field-disjoint-debate-28-replacement-contexts"
+}

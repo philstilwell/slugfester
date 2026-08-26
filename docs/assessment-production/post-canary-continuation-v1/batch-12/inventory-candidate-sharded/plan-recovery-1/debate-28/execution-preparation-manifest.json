@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-debate-28-inventory-plan-recovery-execution-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "status": "two-frozen-debate-28-inventory-plan-recovery-shards-prepared-not-activated",
+  "frozenAt": "2026-08-26T18:41:54Z",
+  "checkpointCommit": "f22241ad908de5c41d157caf3836df2c392dfa29",
+  "branch": "main",
+  "debateNumber": "28",
+  "debateId": "turek-shermer-reality-theism-atheism-2018",
+  "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json",
+  "standingAuthorizationSha256": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/diagnosis.json",
+  "diagnosisSha256": "9a6f573c70e2346202df18f17c9d4555c53bdcd34e6b41e7567e7cd87bb62bfd",
+  "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/correction-plan.json",
+  "correctionPlanSha256": "fa49937dd677117e2f0e5d6312a1693eac8827dba9082d74d5e8cf95577ae5f8",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "exactContextOrder": [
+      "routes",
+      "sections"
+    ],
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "effectiveMaximumParallelContexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "absoluteStageTimeoutMs": 1500000,
+    "phaseMustPassBeforeExpansion": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "separateActivationRequired": true,
+    "abortBeforeStartingAdditionalContextOnAnyFailure": true
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "routes",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-routes.json",
+      "packetSha256": "4338ea743d8e18525bc33a2d75b451c7dd3410b1e60dea3eb40fdf38e6adf5c3",
+      "packetBytes": 3144,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-routes.schema.json",
+      "schemaSha256": "ada32bc86970e8c85f12e35207ab9f91730d24adcef7c191180f40936db0960d",
+      "schemaBytes": 3641,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/source-packets/debate-28.json",
+          "sha256": "7b37e455f508f2564ddfb9d48dece6933303b3e8f8a271476e301810ec7fc650",
+          "bytes": 3625
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/transports/census/debate-28.json",
+          "sha256": "853fb71c6269a623053d617e1310138058bdaa8a63ad66fa7ec7d27e28426c9e",
+          "bytes": 28538
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "d827d7b128880abaa1bcbe5057fb4acb4ff9f6d5422a148f8d10b0c154a064d9",
+          "bytes": 5937
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-routes.schema.json",
+          "sha256": "ada32bc86970e8c85f12e35207ab9f91730d24adcef7c191180f40936db0960d",
+          "bytes": 3641
+        }
+      ],
+      "copiedInputBytes": 45173,
+      "writableFields": [
+        "routes"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-routes.json"
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "sections",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-sections.json",
+      "packetSha256": "2cecd4f4e28c1b78928f81318c591d3f1f7db6f4cbaf58006b63c51b75d0af5b",
+      "packetBytes": 3154,
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-sections.schema.json",
+      "schemaSha256": "23528179bc77e0578ad5724b98caf9743889aef575cf7936ab1d3b5feb5d8cba",
+      "schemaBytes": 1174,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/source-packets/debate-28.json",
+          "sha256": "7b37e455f508f2564ddfb9d48dece6933303b3e8f8a271476e301810ec7fc650",
+          "bytes": 3625
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/transports/census/debate-28.json",
+          "sha256": "853fb71c6269a623053d617e1310138058bdaa8a63ad66fa7ec7d27e28426c9e",
+          "bytes": 28538
+        },
+        {
+          "role": "candidate-sharded-inventory-guide",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+          "sha256": "d827d7b128880abaa1bcbe5057fb4acb4ff9f6d5422a148f8d10b0c154a064d9",
+          "bytes": 5937
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-sections.schema.json",
+          "sha256": "23528179bc77e0578ad5724b98caf9743889aef575cf7936ab1d3b5feb5d8cba",
+          "bytes": 1174
+        }
+      ],
+      "copiedInputBytes": 42706,
+      "writableFields": [
+        "sections"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-sections.json"
+    }
+  ],
+  "mergeRule": {
+    "ruleId": "batch-12-debate-28-plan-recovery-1-field-disjoint-merge-v1",
+    "repositoryOwnedFields": [
+      "schemaVersion",
+      "protocolId",
+      "debateNumber",
+      "debateId",
+      "reviewerRole",
+      "assessmentModel",
+      "calibrationOnly",
+      "candidateCensusCanonicalSha256",
+      "fullCandidateTransportCanonicalSha256",
+      "isolation",
+      "audit"
+    ],
+    "acceptedModelFields": {
+      "routes": "routes-shard-only",
+      "sections": "sections-shard-only"
+    },
+    "acceptedFieldOverlap": [],
+    "originalFailedPartialOutputReusable": false,
+    "originalFailedOutputUsedAsSubstantiveInput": false,
+    "eachOriginalModelWritableFieldAcceptedExactlyOnce": true,
+    "outputPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-28.json",
+    "completeMergedPlanValidator": "scripts/lib/assessment-production-score-stability-v2-inventory-candidate-sharded.mjs",
+    "completeTenPlanCohortReplayRequired": true
+  },
+  "mergeRuleCanonicalSha256": "92a3e2d1c18f611c982611a416ed748ab90427eeedba60860e70ea2a8fb9abb4",
+  "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-28.json",
+  "cohortAnalysisOutput": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-analysis.json",
+  "protectedPlanHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-152.json": "5fd2fe8446fed7e8baa1a422bffe98b416fda9fa567378471bc99dc32341e619",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-119.json": "624102ef825f508d39befaa46be025909f1065c755f801af9c784f95f9c5acaa",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-116.json": "5791efb78d851f8628c82d56bf6bc896b02d60154bdc2abe1031e96c86cfeaa8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-131.json": "543c3bfd6e7b51b00f9f149cb772e68e3a6cddec43cd807599f1b741ca017736",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-07.json": "679281733a2e1eb312bedb984e5ae3ad614d4ddd248f30fa618402209d07d37f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-33.json": "0e6a6e8c81b6ed2f3c19f222bd058031ef8433a77d4b9915109b964b3c0cd224",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-15.json": "2965faa0b5bc6e35991da5ac76b0af9671f3dc10892a284e3c88035972b72055",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-29.json": "4f93021cb06ceede340f179febd82e0a7004071dc742bbc5816a462258c36e9e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-11.json": "030957bd00169db9f6e70dd23412094391080f44fb2d3f6ce380405f04171a37"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/candidate-sharded-inventory-guide.md": "d827d7b128880abaa1bcbe5057fb4acb4ff9f6d5422a148f8d10b0c154a064d9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/packets/plans/debate-28.json": "bac42b1a1ae4dbca7d30db111bc32693460a7cfaea5bc474dbefe4637ea7cf05",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-execution-activation.json": "cb0718cb31a353a148ae9395e3622e4bb00c79412040cade35c97f13832f9e8a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-execution-preparation-manifest.json": "deb3e067ede4e50ca97f0206b150d4123b3c9d3b81c3035eac4192fcb9378f3b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-model-execution.json": "85aabcae667c449a1f7d99f6c7cb4ceeac200b5b2d39a807eaf3cbcf10586ca0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/correction-plan.json": "fa49937dd677117e2f0e5d6312a1693eac8827dba9082d74d5e8cf95577ae5f8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/diagnosis.json": "9a6f573c70e2346202df18f17c9d4555c53bdcd34e6b41e7567e7cd87bb62bfd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-routes.json": "4338ea743d8e18525bc33a2d75b451c7dd3410b1e60dea3eb40fdf38e6adf5c3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-sections.json": "2cecd4f4e28c1b78928f81318c591d3f1f7db6f4cbaf58006b63c51b75d0af5b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-routes.schema.json": "ada32bc86970e8c85f12e35207ab9f91730d24adcef7c191180f40936db0960d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-sections.schema.json": "23528179bc77e0578ad5724b98caf9743889aef575cf7936ab1d3b5feb5d8cba",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-07.json": "679281733a2e1eb312bedb984e5ae3ad614d4ddd248f30fa618402209d07d37f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-11.json": "030957bd00169db9f6e70dd23412094391080f44fb2d3f6ce380405f04171a37",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-116.json": "5791efb78d851f8628c82d56bf6bc896b02d60154bdc2abe1031e96c86cfeaa8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-119.json": "624102ef825f508d39befaa46be025909f1065c755f801af9c784f95f9c5acaa",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-131.json": "543c3bfd6e7b51b00f9f149cb772e68e3a6cddec43cd807599f1b741ca017736",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-15.json": "2965faa0b5bc6e35991da5ac76b0af9671f3dc10892a284e3c88035972b72055",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-152.json": "5fd2fe8446fed7e8baa1a422bffe98b416fda9fa567378471bc99dc32341e619",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-29.json": "4f93021cb06ceede340f179febd82e0a7004071dc742bbc5816a462258c36e9e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-33.json": "0e6a6e8c81b6ed2f3c19f222bd058031ef8433a77d4b9915109b964b3c0cd224",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/preparation-manifest.json": "c675fc5027c46c99aa66b821270cff650c067859f34bd4f5a8cafa9d785f98ad",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/schemas/compiler/debate-28.schema.json": "982b192bf3446b40200cf4f514574f2d3f0190e539e8ac39b804595dad246a65",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/schemas/plans/debate-28.schema.json": "d0fdfd1652f31c1988bdfe128b69c082b34b8cb5df7263bb40bae5b116a990ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/source-packets/debate-28.json": "7b37e455f508f2564ddfb9d48dece6933303b3e8f8a271476e301810ec7fc650",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/transports/census/debate-28.json": "853fb71c6269a623053d617e1310138058bdaa8a63ad66fa7ec7d27e28426c9e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/transports/full/debate-28.json": "9f490a40aeccd748c5d8a82ca52353a5d96083e16f6f8199b68fe2d35dfa8a75",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+    "scripts/lib/assessment-production-post-canary-batch-12-standing-authorization.mjs": "07516216c018db56affd8f52970e47603cd0438d1d3dd3c385b035de83481f9b",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-candidate-sharded.mjs": "184e2662ca8ca4f9a37177cd8a01abfadaff07b20068207e5b3b75a1e8c89515",
+    "scripts/prepare-assessment-production-post-canary-batch-12-debate-28-inventory-plan-recovery.mjs": "9d858ad13ff4276551eb378ffe3138d45919c97cb63bad4b4db206e80b5a40e1",
+    "scripts/run-assessment-production-post-canary-batch-12-debate-28-inventory-plan-recovery.mjs": "2f3f4d723d6a33a1d7a881ccf185482db804bddf5f2573441f0a49debf310c9e"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-routes.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-sections.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-28.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-analysis.json"
+  ],
+  "acceptancePolicy": {
+    "bothShardsMustPassOnFirstAttempt": true,
+    "eachShardWritesExactlyOneDisjointField": true,
+    "failedOriginalOutputUnavailable": true,
+    "mergeIsDeterministic": true,
+    "mergedPlanMustPassRepositoryValidator": true,
+    "completeTenPlanCohortReplayRequired": true,
+    "nineAcceptedPlansMustRemainByteIdentical": true
+  },
+  "authorization": {
+    "modelExecution": false,
+    "deterministicMerge": false,
+    "cohortReplay": false,
+    "sidePacketPreparation": false,
+    "retries": false,
+    "timeoutExtensions": false,
+    "recursiveCorrection": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "meteredApiCostUsdMaximum": 0,
+  "nextRequiredAction": "separately-activate-two-frozen-debate-28-inventory-plan-recovery-shards"
+}

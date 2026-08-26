@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-12-debate-28-inventory-plan-recovery-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-12-candidate-sharded-inventory",
+  "status": "two-minimum-field-disjoint-debate-28-inventory-plan-recovery-contexts-frozen-not-activated",
+  "frozenAt": "2026-08-26T18:41:54Z",
+  "checkpointCommit": "f22241ad908de5c41d157caf3836df2c392dfa29",
+  "branch": "main",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/diagnosis.json",
+  "diagnosisSha256": "9a6f573c70e2346202df18f17c9d4555c53bdcd34e6b41e7567e7cd87bb62bfd",
+  "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-12/standing-authorization.json",
+  "standingAuthorizationSha256": "3548c713c2349d872e459ad8c611b25b646613703ab128d806d2f78491541b85",
+  "recoveryAttempt": 1,
+  "recoveryAttemptsMaximum": 2,
+  "originalContextRetry": false,
+  "originalTimeoutExtended": false,
+  "originalFailedPartialOutputReusable": false,
+  "minimumShardCount": 2,
+  "shards": [
+    {
+      "contextIndex": 0,
+      "shardId": "routes",
+      "writableFields": [
+        "routes"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-routes.json",
+      "packetSha256": "4338ea743d8e18525bc33a2d75b451c7dd3410b1e60dea3eb40fdf38e6adf5c3",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-routes.schema.json",
+      "schemaSha256": "ada32bc86970e8c85f12e35207ab9f91730d24adcef7c191180f40936db0960d",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-routes.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutMs": 600000,
+      "timeoutExtensions": 0
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "sections",
+      "writableFields": [
+        "sections"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/packets/debate-28-sections.json",
+      "packetSha256": "2cecd4f4e28c1b78928f81318c591d3f1f7db6f4cbaf58006b63c51b75d0af5b",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/schemas/debate-28-sections.schema.json",
+      "schemaSha256": "23528179bc77e0578ad5724b98caf9743889aef575cf7936ab1d3b5feb5d8cba",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plan-recovery-1/debate-28/outputs/debate-28-sections.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutMs": 600000,
+      "timeoutExtensions": 0
+    }
+  ],
+  "scheduler": {
+    "frozenInventoryRamp": [
+      1,
+      2
+    ],
+    "operationalCanaryShard": "routes",
+    "remainingShardAfterCanary": "sections",
+    "maximumParallelContexts": 2,
+    "effectiveMaximumParallelContexts": 1,
+    "phaseMustPassBeforeExpansion": true
+  },
+  "mergeRule": {
+    "ruleId": "batch-12-debate-28-plan-recovery-1-field-disjoint-merge-v1",
+    "repositoryOwnedFields": [
+      "schemaVersion",
+      "protocolId",
+      "debateNumber",
+      "debateId",
+      "reviewerRole",
+      "assessmentModel",
+      "calibrationOnly",
+      "candidateCensusCanonicalSha256",
+      "fullCandidateTransportCanonicalSha256",
+      "isolation",
+      "audit"
+    ],
+    "acceptedModelFields": {
+      "routes": "routes-shard-only",
+      "sections": "sections-shard-only"
+    },
+    "acceptedFieldOverlap": [],
+    "originalFailedPartialOutputReusable": false,
+    "originalFailedOutputUsedAsSubstantiveInput": false,
+    "eachOriginalModelWritableFieldAcceptedExactlyOnce": true,
+    "outputPath": "docs/assessment-production/post-canary-continuation-v1/batch-12/inventory-candidate-sharded/plans/debate-28.json",
+    "completeMergedPlanValidator": "scripts/lib/assessment-production-score-stability-v2-inventory-candidate-sharded.mjs",
+    "completeTenPlanCohortReplayRequired": true
+  },
+  "mergeRuleCanonicalSha256": "92a3e2d1c18f611c982611a416ed748ab90427eeedba60860e70ea2a8fb9abb4",
+  "validation": {
+    "eachShardMustMatchItsStrictSchema": true,
+    "completeMergedPlanMustPassRepositoryValidator": true,
+    "completeTenPlanCohortReplayRequired": true,
+    "nineAcceptedPlansMustRemainByteIdentical": true
+  },
+  "stopRules": {
+    "thirdFailureOfSameUnderlyingProblemBlocks": true,
+    "failedSecondBoundedCorrectionBlocks": true,
+    "moreThanTwoRecoveryLevelsBlocks": true,
+    "retryBlocks": true,
+    "timeoutExtensionBlocks": true,
+    "failedPartialOutputReuseBlocks": true,
+    "protectedAcceptedPlanHashDriftBlocks": true,
+    "unexpectedValidationCategoryBlocks": true,
+    "paidServiceBlocks": true
+  },
+  "costBoundary": {
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "paidServiceCallsMaximum": 0
+  }
+}
