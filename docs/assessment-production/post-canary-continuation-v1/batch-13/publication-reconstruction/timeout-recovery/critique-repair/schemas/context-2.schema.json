@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b13-debate87-critique-repair-2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 2
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "87"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "christopoulos-dillahunty-resurrection-historical-event-2024"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "pro-incarnation-context-and-resurrection-prior"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "pro-new-testament-reliability-foundation"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
