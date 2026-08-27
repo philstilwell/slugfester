@@ -55,7 +55,7 @@ const PLAN_RUNNER =
 const PROTOCOL_ID =
   "assessment-production-post-canary-batch-15-candidate-sharded-inventory";
 const DEBATES = ["39", "48", "23", "162", "86", "159", "128", "98", "155", "178"];
-const EXPECTED_CANDIDATES = 317;
+const EXPECTED_CANDIDATES = 378;
 const REMOVED_API_ENVIRONMENT_VARIABLES = [
   "OPENAI_API_KEY",
   "OPENAI_ORG_ID",
@@ -238,8 +238,8 @@ async function buildArtifacts({ frozenAt, checkpointCommit }) {
       JSON.stringify(sourcePreparation.selectedDebates) === JSON.stringify(DEBATES) &&
       sourcePreparation.contexts.length === 10 &&
       sourcePreparation.totals.candidates === EXPECTED_CANDIDATES &&
-      sourcePreparation.totals.proCandidates === 158 &&
-      sourcePreparation.totals.conCandidates === 159 &&
+      sourcePreparation.totals.proCandidates === 186 &&
+      sourcePreparation.totals.conCandidates === 192 &&
       sourcePreparation.sourceCompatibility.status ===
         "all-source-rows-have-positive-repository-lexical-token-count" &&
       sourcePreparation.sourceCompatibility.sourceRowsInjected === 0 &&
@@ -1181,4 +1181,3 @@ else {
     "usage: prepare-assessment-production-post-canary-batch-15-inventory-side-packets.mjs <prepare|validate>"
   );
 }
-
