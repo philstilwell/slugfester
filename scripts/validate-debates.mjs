@@ -73,6 +73,11 @@ import {
   POST_CANARY_BATCH_12_SITE_LEDGER_ADAPTER_VERSION,
   validatePostCanaryBatch12SiteLedgerAdapter
 } from "./lib/assessment-production-post-canary-batch-12-compatibility.mjs";
+import {
+  POST_CANARY_BATCH_13_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch13SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-13-compatibility.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -178,7 +183,8 @@ export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
     schemaVersion === POST_CANARY_BATCH_09_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_10_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_11_SITE_LEDGER_ADAPTER_VERSION ||
-    schemaVersion === POST_CANARY_BATCH_12_SITE_LEDGER_ADAPTER_VERSION
+    schemaVersion === POST_CANARY_BATCH_12_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION
   );
 }
 
@@ -1167,6 +1173,87 @@ export function validatePostCanaryBatch12LedgerAdapterRoute({
   return validation;
 }
 
+export function validatePostCanaryBatch13LedgerAdapterRouteLocks({
+  debate,
+  ledgerText,
+  packetPath,
+  packetText,
+  packet,
+  activation,
+  preparationText
+}) {
+  const packetLock = activation.packetHashes?.find(
+    (item) => item.debateNumber === debate.number
+  );
+  if (
+    activation.status !==
+      "post-canary-batch-13-compatibility-execution-authorized-and-frozen" ||
+    !activation.authorization?.compatibilityExecution ||
+    !activation.authorization?.validatorMigration ||
+    !activation.authorization?.stagingLedgerWrite ||
+    sha256(preparationText) !== activation.preparation?.sha256 ||
+    !packetLock ||
+    packetLock.path !== packetPath ||
+    packetLock.debateId !== debate.id ||
+    sha256(packetText) !== packetLock.sha256 ||
+    packet.debateNumber !== debate.number ||
+    packet.debateId !== debate.id ||
+    packet.futurePaths?.stagedLedger !== packetLock.stagedLedgerPath ||
+    packet.futurePaths?.productionLedger !== packetLock.productionLedgerPath ||
+    packetLock.productionLedgerPath !==
+      `docs/assessment-ledgers/${debate.id}.json` ||
+    packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+    packetLock.stagedLedgerSha256 !== packetLock.proposedAdapterSha256 ||
+    sha256(ledgerText) !== packetLock.stagedLedgerSha256
+  ) {
+    throw new Error(
+      "Batch 13 adapter, packet, or activation differs from its frozen route"
+    );
+  }
+  return packetLock;
+}
+
+export function validatePostCanaryBatch13LedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const packetPath =
+    `${POST_CANARY_BATCH_13_COMPATIBILITY_ROOT}/packets/debate-${debate.number}.json`;
+  const activationPath =
+    `${POST_CANARY_BATCH_13_COMPATIBILITY_ROOT}/execution-activation.json`;
+  const packetText = readFileSync(
+    new URL(`../${packetPath}`, import.meta.url),
+    "utf8"
+  );
+  const packet = JSON.parse(packetText);
+  const activation = JSON.parse(
+    readFileSync(new URL(`../${activationPath}`, import.meta.url), "utf8")
+  );
+  const preparationText = readFileSync(
+    new URL(`../${activation.preparation?.path}`, import.meta.url),
+    "utf8"
+  );
+  validatePostCanaryBatch13LedgerAdapterRouteLocks({
+    debate,
+    ledgerText,
+    packetPath,
+    packetText,
+    packet,
+    activation,
+    preparationText
+  });
+  const validation = validatePostCanaryBatch13SiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    expectedSourceLocks: packet.sourceLocks
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("Batch 13 production assessments require an AI Extension");
+  }
+  return validation;
+}
+
 function validateReassessmentLedger(debate, path) {
   const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
@@ -1460,6 +1547,24 @@ function validateReassessmentLedger(debate, path) {
       addError(
         [...path, "assessmentRubric"],
         `Batch 12 ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
+  if (
+    ledger.schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION
+  ) {
+    try {
+      validatePostCanaryBatch13LedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `Batch 13 ledger validation failed: ${error.message}`
       );
     }
     return;
