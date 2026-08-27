@@ -1,0 +1,1733 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "37",
+  "debateId": "ehrman-bass-resurrection-history-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-cumulative-resurrection-route",
+      "side": "pro",
+      "description": "Build a cumulative historical inference from early resurrection testimony, the unexpected individual-resurrection claim, Christianity's worldwide expansion, and later cross-cultural visions to Jesus's historical resurrection.",
+      "successCriteria": "The route succeeds if the relevant phenomena are historically supported, resist the principal ordinary and comparative explanations, and jointly make an actual resurrection a plausible explanation of the motion's full evidential pattern.",
+      "motionBridge": {
+        "bridgeId": "pro-cumulative-pattern-to-resurrection",
+        "tier": "motion",
+        "description": "Show why the combined pattern of early appearances, unexpected messianic interpretation, worldwide expansion, and later visions points to Jesus actually rising from the dead."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-early-appearances",
+          "tier": "central",
+          "description": "Establish that early and multiple appearance testimony provides historically significant support for encounters with the risen Jesus."
+        },
+        {
+          "bridgeId": "pro-unexpected-resurrection-claim",
+          "tier": "central",
+          "description": "Show that available Jewish expectations do not adequately explain the emergence of the claim that one crucified Messiah had already bodily risen."
+        },
+        {
+          "bridgeId": "pro-expansion-and-fulfilled-mission",
+          "tier": "central",
+          "description": "Connect Christianity's exceptional expansion and fulfillment of Jesus's stated worldwide mission to the continuing activity of the risen Jesus."
+        },
+        {
+          "bridgeId": "pro-later-cross-cultural-visions",
+          "tier": "central",
+          "description": "Show that recurring visions of Jesus, especially among non-Christians who convert, are distinctive evidence of continuing risen activity."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-comparative-testimony-distinctions",
+          "tier": "subsidiary",
+          "description": "Identify relevant differences between the resurrection evidence and allegedly comparable testimony from other religious traditions."
+        },
+        {
+          "bridgeId": "pro-cumulative-not-single-fact",
+          "tier": "subsidiary",
+          "description": "Explain why each evidential line contributes as part of a cumulative case even if no single line independently establishes resurrection."
+        }
+      ]
+    },
+    {
+      "routeId": "con-historical-underdetermination-route",
+      "side": "con",
+      "description": "Show that critical historical inquiry cannot infer a physical resurrection from indirect appearance reports, psychologically and socially explicable belief formation, religious growth, or recurring vision traditions.",
+      "successCriteria": "The route succeeds if the offered phenomena remain compatible with ordinary testimonial, perceptual, psychological, social, or comparative religious explanations, leaving resurrection insufficiently established as a historical conclusion.",
+      "motionBridge": {
+        "bridgeId": "con-evidence-to-historical-insufficiency",
+        "tier": "motion",
+        "description": "Show that the admissible historical evidence does not overcome ordinary explanations or the probability problem posed by an otherwise unprecedented return from death."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-source-and-testimony-limits",
+          "tier": "central",
+          "description": "Establish that most named appearance claims are indirectly reported and must be tested by the same reliability standards applied to comparable religious testimony."
+        },
+        {
+          "bridgeId": "con-natural-belief-formation",
+          "tier": "central",
+          "description": "Explain how perceived postmortem experiences, prior knowledge, psychology, Jewish afterlife concepts, and social reinforcement could generate resurrection belief."
+        },
+        {
+          "bridgeId": "con-growth-nondiagnostic",
+          "tier": "central",
+          "description": "Show that Christianity's influence and expansion demonstrate conviction or institutional success without identifying a miraculous historical cause."
+        },
+        {
+          "bridgeId": "con-visions-nondiagnostic",
+          "tier": "central",
+          "description": "Show that dreams and later visions neither establish the reality of their objects nor uniquely distinguish Christianity from other religious traditions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-comparative-religious-claims",
+          "tier": "subsidiary",
+          "description": "Use structurally comparable witness, miracle, growth, and vision traditions to test whether the affirmative applies its evidential criteria impartially."
+        },
+        {
+          "bridgeId": "con-history-and-theology-boundary",
+          "tier": "subsidiary",
+          "description": "Maintain the distinction between theological interpretation and the source criticism and probability judgments required for a historical conclusion."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "early-appearance-testimony",
+      "title": "Early Appearance Testimony and Source Reliability",
+      "weightPercent": 22,
+      "rationale": "This issue tests the historical basis of the earliest appearance claims, including direct versus indirect testimony, multiplicity, accessibility, and consistent treatment of comparable religious witnesses."
+    },
+    {
+      "sectionId": "unexpected-resurrection-belief",
+      "title": "Unexpected Messianic Claim and Formation of Resurrection Belief",
+      "weightPercent": 20,
+      "rationale": "This issue addresses whether an individual risen Messiah was too unexpected to arise naturally or could emerge from visionary experiences, Jewish afterlife concepts, and communal reinforcement."
+    },
+    {
+      "sectionId": "ordinary-explanations-and-historical-probability",
+      "title": "Ordinary Explanations and Historical Probability",
+      "weightPercent": 22,
+      "rationale": "This issue examines bereavement experiences, mistaken perception, Paul's conversion, cumulative inference, physical regularities, and the evidential standard for establishing resurrection historically."
+    },
+    {
+      "sectionId": "christian-expansion-and-influence",
+      "title": "Christianity's Expansion, Influence, and Fulfilled Mission",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether Christianity's worldwide growth and Jesus's exceptional influence support continuing risen activity or merely record the later success of a religious movement."
+    },
+    {
+      "sectionId": "later-visions-and-comparative-religion",
+      "title": "Later Visions and Comparative Religious Experience",
+      "weightPercent": 16,
+      "rationale": "This issue tests whether cross-cultural visions of Jesus provide distinctive continuing evidence or remain nondiagnostic alongside dreams, healings, and vision traditions found in other religions."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-early-pauline-bedrock-sources",
+      "sectionId": "early-appearance-testimony",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "constructive",
+      "proposition": "Early Pauline material transmits traditions about Jesus's crucifixion, resurrection claims, and appearances that Bass treats as bedrock sources for a cumulative historical case.",
+      "sourceSpan": {
+        "startEvent": 117,
+        "endEvent": 182
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the positive case to Justin Bass, who then presents his book's bedrock framework continuously.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-early-appearances"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move introduces the early Pauline traditions that form the source foundation of the affirmative appearance case.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it directly establishes a major evidentiary foundation, though several warrants remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Pauline-source proposition is recoverable and stable, with the historical force of the term bedrock left implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Early transmission supports historical significance, but describing the material as bedrock slightly exceeds the source defense supplied here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from early Pauline transmission to a historically relevant evidentiary base is coherent, with reliability largely implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move specifically identifies Pauline tradition and First Corinthians 15, but compresses dating, transmission, and reliability warrants."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central early-appearances bridge by identifying the principal early textual source and its contents."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally constructs its own source framework and does not meaningfully evaluate a live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt names crucifixion, the resurrection claim, appearances, and First Corinthians 15 as an early tradition and bedrock source.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-multiple-appearance-testimony",
+      "sectionId": "early-appearance-testimony",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "constructive",
+      "proposition": "The reported appearances provide cumulative testimony for resurrection because they include multiple claims presented as early and historically accessible evidence.",
+      "sourceSpan": {
+        "startEvent": 238,
+        "endEvent": 299
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Justin about the appearances, and Bass answers at length using Paul and the appearance tradition as his evidence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-early-appearances"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents reported appearances, especially Paul's hostile-background experience, as cumulative historical testimony.",
+        "responsivenessWithinClass": {
+          "value": 81,
+          "rationale": "Within constructive moves, it supplies a concrete appearance example but only partially develops multiplicity and accessibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The cumulative-testimony claim is clear, though the excerpt moves from Paul's case toward broader appearances without specifying their scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Paul's reported experience supports an evidentiary contribution, but broader testimonial force requires source and independence qualifications."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Paul's prior hostility can make his experience evidentially notable, although the bridge from experience to resurrection remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The excerpt gives a concrete Pauline example but does not substantiate the breadth, independence, or accessibility of multiple reports."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the indispensable early-appearance bridge through an asserted early and personally costly appearance report."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected move advances affirmative evidence without sustained treatment of a developed alternative account."
+        }
+      },
+      "evidenceBasis": "Bass says Paul could present his own appearance experience and former belief that Jesus was cursed as evidence for resurrection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-indirect-appearance-sources",
+      "sectionId": "early-appearance-testimony",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Only Paul's experience is directly self-attested, while the other named appearance reports rest on indirect sources requiring ordinary historical reliability analysis.",
+      "sourceSpan": {
+        "startEvent": 341,
+        "endEvent": 391
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Bart Ehrman's degree of agreement, and Ehrman answers by distinguishing Paul's testimony from reports about other alleged witnesses.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-source-and-testimony-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-multiple-appearance-testimony",
+          "pro-early-pauline-bedrock-sources"
+        ],
+        "components": [
+          {
+            "componentId": "con-indirect-appearance-sources-component-01",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether the reported multiple appearances constitute sufficiently direct and reliable historical testimony.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-indirect-appearance-sources-component-02",
+            "targetMoveId": "pro-early-pauline-bedrock-sources",
+            "text": "Whether calling the early Christian reports bedrock adequately accounts for ordinary source criticism and comparative testimony.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the testimonial premise by distinguishing Paul's self-report from indirect reports and requiring comparison with analogous religious claims.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full ordinary answers, it directly challenges source status and comparative reliability, though it does not analyze every named report."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between Paul's self-attestation and indirect reports is clear, scoped, and expressly connected to historical evaluation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The reply makes a limited source-critical claim rather than denying all experiences, and explicitly allows reported experiences in many traditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The early Christian appearance reports may still carry cumulative force even when most are transmitted indirectly.",
+        "decisiveQualification": "Indirect transmission requires reliability and comparative analysis before the reports can support resurrection."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The distinction between direct and indirect attestation coherently limits what the reports establish without denying that experiences occurred."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Paul's unique direct self-report and the existence of analogous religious reports provide specific support, with detailed comparisons omitted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central source-and-testimony bridge by directly attacking the status of the claimed appearance evidence."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply concedes that people may have experiences while fairly isolating the unresolved source and comparison problem."
+        }
+      },
+      "evidenceBasis": "Ehrman distinguishes Paul's own testimony from other reports and asks whether Christian claims are evaluated alongside other religious reports.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-impartial-source-standards",
+      "sectionId": "early-appearance-testimony",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Historical inquiry cannot privilege Christian appearance sources while rejecting comparable non-Christian eyewitness claims that satisfy the same proposed testimonial criteria.",
+      "sourceSpan": {
+        "startEvent": 524,
+        "endEvent": 566
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "Ehrman controls the main argumentative thread while Bass briefly interjects about authorship and the number of Christian sources.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-source-and-testimony-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-early-pauline-bedrock-sources",
+          "pro-multiple-appearance-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-impartial-source-standards-component-01",
+            "targetMoveId": "pro-early-pauline-bedrock-sources",
+            "text": "Whether agreement with Christian sources can substitute for impartial historical evaluation of their reliability.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-impartial-source-standards-component-02",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether appearance testimony satisfies the same reliability standards applied to comparable non-Christian sources.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies selective acceptance as the defect in the evidentiary method and states that historians must evaluate agreeing and disagreeing sources impartially.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the methodological failure and its consequence for both early-source and testimonial claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The methodological proposition and its application to sources agreeing with the advocate are explicit and consistently framed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The requirement of impartial source evaluation is appropriately stated as a methodological necessity rather than a factual certainty about outcomes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian sources might be accepted because they possess relevant features beyond merely agreeing with Christian belief.",
+        "decisiveQualification": "Those distinguishing reliability features must be demonstrated under standards also applied to contrary and comparative sources."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The inference that source agreement alone cannot establish reliability is explicit, consistent, and directly defeats selective source treatment."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The methodological warrant is strong, but the selected evidence does not provide detailed side-by-side source comparisons."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It reaches the top of the central tier by directly supplying the impartial reliability standard required for source evaluation."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly demands neutral criteria, though it frames the affirmative method somewhat broadly without cataloguing possible distinctions."
+        }
+      },
+      "evidenceBasis": "Ehrman states that historians evaluate sources rather than prove faith and criticizes accepting sources simply because they agree with the advocate.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-vision-and-reinforcement-pathway",
+      "sectionId": "unexpected-resurrection-belief",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Unexpected resurrection belief could arise from initial experiences interpreted as sightings of Jesus and then spread through subsequent communal claims and social reinforcement without an actual resurrection.",
+      "sourceSpan": {
+        "startEvent": 779,
+        "endEvent": 817
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator clarifies Bass's unexpectedness argument, Ehrman explicitly accepts the clarification and presents his alternative account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-natural-belief-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-early-pauline-bedrock-sources",
+          "pro-multiple-appearance-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-vision-and-reinforcement-pathway-component-01",
+            "targetMoveId": "pro-early-pauline-bedrock-sources",
+            "text": "Whether an unexpected resurrection claim requires an actual resurrection rather than interpreted experiences and later claims.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-vision-and-reinforcement-pathway-component-02",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether reported appearances can originate in sincere perceived experiences without verifying the reality of the perceived object.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the claim's unexpectedness but supplies perceived sightings and subsequent claims as an ordinary pathway to resurrection belief.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full ordinary answers, it directly addresses unexpectedness and appearance sincerity, while leaving social reinforcement details compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed pathway is clearly framed as a possible reconstruction, and uncertainty about who experienced what is expressly acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move advances an ordinary possibility rather than claiming a demonstrated reconstruction and openly identifies evidentiary uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The followers' lack of prior expectation may make their resurrection conclusion difficult to explain naturally.",
+        "decisiveQualification": "Unexpected beliefs can nevertheless follow sincerely interpreted experiences and subsequent communal claims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The pathway from perceived encounters to sincere claims is coherent, though the mechanism of wider reinforcement is only outlined."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Concessions concerning Peter, Mary, and Paul anchor the account, but psychological and social mechanisms lack detailed documentation here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central natural-belief-formation bridge by explaining how unexpected belief could follow perceived experiences."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply expressly accepts the strongest unexpectedness premise before explaining why it does not require the miraculous conclusion."
+        }
+      },
+      "evidenceBasis": "Ehrman says Peter and Mary probably and Paul certainly thought they saw Jesus, while noting uncertainty about others and later claims.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-apocalyptic-embodied-inference",
+      "sectionId": "unexpected-resurrection-belief",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Apocalyptic Jewish beliefs about embodied afterlife explain why followers who thought they saw Jesus alive could infer that God had bodily raised him.",
+      "sourceSpan": {
+        "startEvent": 824,
+        "endEvent": 856
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator prompts the historical reconstruction, and Ehrman gives a sustained explanation grounded in the followers' prior apocalyptic Jewish worldview.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-natural-belief-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-early-pauline-bedrock-sources",
+          "pro-multiple-appearance-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-apocalyptic-embodied-inference-component-01",
+            "targetMoveId": "pro-early-pauline-bedrock-sources",
+            "text": "Whether Jewish conceptual resources could convert a perceived postmortem encounter into a bodily-resurrection conclusion.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-apocalyptic-embodied-inference-component-02",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether appearance experiences themselves distinguish bodily resurrection from culturally shaped interpretation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the inference from unexpected appearances to resurrection by identifying an apocalyptic Jewish embodied-afterlife framework for interpretation.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full ordinary answers, it supplies the key cultural bridge but states Jewish belief more uniformly than the issue warrants."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The embodied-inference proposition is recoverable, but broad statements about apocalyptic Jews obscure diversity in Jewish afterlife beliefs."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cultural inference is plausible, but categorical claims that these Jews could imagine only embodied afterlife overstate the support presented."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An immediate individual resurrection still differed from the expected general resurrection at history's end.",
+        "decisiveQualification": "Existing embodied-afterlife categories could shape interpretation without independently predicting the timing or individual form."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Prior embodied expectations can explain an embodied interpretation, but they do not fully bridge to an already-risen individual Messiah."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move invokes a relevant apocalyptic framework but supports its categorical account and applicability with assertion rather than representative evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central natural-belief-formation bridge by supplying the cultural premise needed for bodily interpretation."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply identifies relevant conceptual resources but omits the decisive distinction between general end-time and immediate individual resurrection."
+        }
+      },
+      "evidenceBasis": "Ehrman argues that apocalyptic Jews treated afterlife as embodied because body and soul were one, shaping how sightings would be understood.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-immediate-resurrection-unexpected",
+      "sectionId": "unexpected-resurrection-belief",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "reply",
+      "proposition": "Jewish categories permitted exalted heavenly existence followed by resurrection at the end, but did not naturally yield the claim that Jesus had already risen bodily.",
+      "sourceSpan": {
+        "startEvent": 859,
+        "endEvent": 881
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests a quick response, and Bass presents the Jewish alternatives before directly challenging Ehrman's reconstruction of innovation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-unexpected-resurrection-claim"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-apocalyptic-embodied-inference",
+          "con-vision-and-reinforcement-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "pro-immediate-resurrection-unexpected-component-01",
+            "targetMoveId": "con-apocalyptic-embodied-inference",
+            "text": "Whether general embodied-afterlife categories explain the innovative claim that Jesus had already risen bodily.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-immediate-resurrection-unexpected-component-02",
+            "targetMoveId": "con-vision-and-reinforcement-pathway",
+            "text": "Whether interpreted experiences and communal claims sufficiently explain the timing and individual form of the resurrection belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes heavenly survival and final resurrection from the early Christian assertion that Jesus's resurrection had already occurred.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full ordinary answers, it explicitly contacts the decisive timing and category gap in the skeptical reconstruction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast among heavenly survival, final resurrection, and an immediate resurrection is clearly recoverable and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that the immediate-resurrection category was innovative is proportionate to the contrast the move expressly supplies."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Apocalyptic embodied-afterlife beliefs could influence followers who thought they encountered Jesus after death.",
+        "decisiveQualification": "Those beliefs still ordinarily located resurrection at the end rather than in one Messiah immediately after death."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The distinction directly exposes a material gap between generic embodied afterlife and the immediate individual-resurrection conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Maccabean heavenly survival and final-resurrection categories are concrete support, though broader Jewish diversity is not documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central unexpected-resurrection bridge by specifying what the available categories allegedly failed to predict."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply grants the relevant Jewish categories and isolates the specific timing distinction they do not by themselves explain."
+        }
+      },
+      "evidenceBasis": "Bass contrasts exalted heavenly survival and resurrection at the final resurrection with the Christian claim that Jesus had risen already.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-underdetermined-postmortem-experiences",
+      "sectionId": "ordinary-explanations-and-historical-probability",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Reports of postmortem appearances do not disclose what most witnesses actually experienced and therefore remain compatible with multiple ordinary explanations.",
+      "sourceSpan": {
+        "startEvent": 1003,
+        "endEvent": 1047
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly solicits Ehrman's account, and the sustained first-person answer matches his previously stated skeptical position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-evidence-to-historical-insufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-multiple-appearance-testimony",
+          "pro-immediate-resurrection-unexpected"
+        ],
+        "components": [
+          {
+            "componentId": "con-underdetermined-postmortem-experiences-component-01",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether the appearance reports reveal sufficiently specific experiences to discriminate resurrection from ordinary alternatives.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-underdetermined-postmortem-experiences-component-02",
+            "targetMoveId": "pro-immediate-resurrection-unexpected",
+            "text": "Whether the unexpected interpretation identifies what occurred rather than merely recording what followers concluded.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that sparse and mostly indirect experiential descriptions leave multiple historical options open despite sincere conclusions.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full ordinary answers, it contacts the central discriminating-evidence demand and explains the consequence of missing descriptions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The underdetermination claim is carefully limited to what can be known in most cases and identifies Paul's testimony as an exception."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately emphasizes unavailable information and multiple options rather than asserting a particular natural explanation as certain."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Early, sincere, and multiple claims may cumulatively favor resurrection even when experiential detail is sparse.",
+        "decisiveQualification": "Without direct descriptions from most named witnesses, the reports cannot reliably discriminate among competing causes."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The inference from absent direct experiential descriptions to historical underdetermination is explicit, bounded, and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The contrast between Paul's self-report and other indirect reports specifically supports the claim, though alternatives are not systematically compared."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the motion-level insufficiency bridge by explaining why the appearance evidence cannot select resurrection over ordinary options."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply allows that experiences may have occurred while focusing fairly on their limited capacity to identify the cause."
+        }
+      },
+      "evidenceBasis": "Ehrman says historians can usually offer only options because witnesses do not describe what they saw and only Paul personally reports seeing Jesus.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-paul-hostile-vision-challenge",
+      "sectionId": "ordinary-explanations-and-historical-probability",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "reply",
+      "proposition": "An ordinary bereavement-vision explanation does not readily account for Paul, an enemy of the Christian movement, experiencing Jesus and converting.",
+      "sourceSpan": {
+        "startEvent": 1056,
+        "endEvent": 1075
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly challenges Bart's recurring-vision analogy and presses him for a documented case involving an enemy apparition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-natural-belief-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-underdetermined-postmortem-experiences",
+          "con-vision-and-reinforcement-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "pro-paul-hostile-vision-challenge-component-01",
+            "targetMoveId": "con-underdetermined-postmortem-experiences",
+            "text": "Whether an ordinary vision account readily covers an alleged enemy of the deceased person's movement.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-paul-hostile-vision-challenge-component-02",
+            "targetMoveId": "con-vision-and-reinforcement-pathway",
+            "text": "Whether Paul's prior hostility materially weakens the proposed perceived-sighting pathway.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The challenge contacts a particular ordinary explanation by demanding a comparable hostile-recipient apparition and highlighting Paul's prior opposition.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "Within partial answers, it contacts a distinctive Pauline component but does not resolve the wider underdetermination of other appearances."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The challenge is recoverable, though calling Paul an enemy apparition compresses possible guilt, prior knowledge, and degrees of hostility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "As a request for a comparator rather than a categorical refutation, the asserted force fits the limited support in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Guilt or other psychological conditions can sometimes produce visions involving an antagonized person.",
+        "decisiveQualification": "The applicability of those mechanisms to Paul requires evidence rather than mere general possibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Paul's hostility is relevant to some bereavement models, but excluding one familiar pathway does not defeat all ordinary experiential explanations."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Paul's hostile posture is a concrete feature, yet the move offers no comparative psychological evidence and meets an immediate counterexample claim."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks the natural-belief-formation bridge, but only through the narrower and atypical Pauline case."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly presses for an applicable example, although the interlocutor immediately identifies psychological literature and guilt as possibilities."
+        }
+      },
+      "evidenceBasis": "Bass asks for an example of someone projecting an enemy apparition; the exchange immediately raises guilt and psychological vision literature.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-physical-regularity-probability",
+      "sectionId": "ordinary-explanations-and-historical-probability",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Historical probability favors familiar mistaken perception or testimony over a uniquely reported event that conflicts with consistently observed physical regularities.",
+      "sourceSpan": {
+        "startEvent": 1181,
+        "endEvent": 1225
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker states his disbelief in resurrection, invokes physical law, and then explicitly frames the issue through historians' probability judgments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-evidence-to-historical-insufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-paul-hostile-vision-challenge",
+          "pro-multiple-appearance-testimony",
+          "pro-immediate-resurrection-unexpected"
+        ],
+        "components": [
+          {
+            "componentId": "con-physical-regularity-probability-component-01",
+            "targetMoveId": "pro-paul-hostile-vision-challenge",
+            "text": "Whether difficulty specifying Paul's ordinary experience makes resurrection the historically most probable explanation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-physical-regularity-probability-component-02",
+            "targetMoveId": "pro-multiple-appearance-testimony",
+            "text": "Whether limited appearance testimony overcomes the prior evidential weight of consistently observed physical regularities.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-physical-regularity-probability-component-03",
+            "targetMoveId": "pro-immediate-resurrection-unexpected",
+            "text": "Whether an innovative conclusion can establish a physically unprecedented event as historically probable.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the probability inversion in treating limited testimony as making a singular violation of physical regularity the most probable event.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats, it explicitly states the inferential defect and the historical-probability consequence across the affirmative evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The probability argument is clear, though calling resurrection a violation of a law of physics imports a contestable characterization."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Observed regularity strongly grounds skepticism, but the absolute 13.8-billion-year formulation exceeds what historical observation alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A singular divine action need not be an ordinary repeatable physical event and could be inferred from unusually strong evidence.",
+        "decisiveQualification": "The offered testimony must still be strong enough to overcome the extremely adverse prior regularity, which this reply denies."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The comparative-probability inference is strong and explicit, with a bounded ambiguity about whether miracles violate or supersede physical laws."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Uniform observed mortality supplies a powerful base-rate warrant, though the cosmic-duration claim and precise comparison are not defended."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level historical-insufficiency bridge by framing the decisive comparative-probability requirement."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply reaches the strongest evidentiary issue but characterizes the theological claim primarily as a physical-law violation."
+        }
+      },
+      "evidenceBasis": "Ehrman contrasts appearance testimony with the claim of a physical-law violation never otherwise observed across cosmic history.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-appearances-fit-cumulative-case",
+      "sectionId": "ordinary-explanations-and-historical-probability",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "reply",
+      "proposition": "The appearance evidence is consistent with Jesus having risen and contributes to a broader cumulative case rather than being offered as the sole proof of resurrection.",
+      "sourceSpan": {
+        "startEvent": 1250,
+        "endEvent": 1265
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker distinguishes the appearance material from additional forthcoming evidence and cites Ehrman's own treatment of the evidentiary fit.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-cumulative-not-single-fact"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-physical-regularity-probability",
+          "con-underdetermined-postmortem-experiences"
+        ],
+        "components": [
+          {
+            "componentId": "pro-appearances-fit-cumulative-case-component-01",
+            "targetMoveId": "con-physical-regularity-probability",
+            "text": "Whether appearance evidence must independently establish resurrection rather than contribute to a cumulative inference.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-appearances-fit-cumulative-case-component-02",
+            "targetMoveId": "con-underdetermined-postmortem-experiences",
+            "text": "Whether evidence consistent with resurrection retains some cumulative relevance despite underdetermination in isolation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply limits the evidentiary claim to consistency and cumulative contribution, but does not answer the probability comparison or show discriminating force.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "Within partial answers, it contacts the single-fact standard but leaves the decisive comparative likelihood and alternative-explanation demand unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly limits appearances to one line in a broader case and describes their support as consistency rather than proof."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that appearances are consistent with resurrection and not the only evidence fits the limited warrant supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consistency alone provides little support when many ordinary explanations also fit the appearance reports.",
+        "decisiveQualification": "A cumulative case needs comparative or independent evidential contribution, not merely compatibility with its conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "A cumulative case can contain individually insufficient evidence, but the move leaves each appearance's incremental evidential contribution unexplained."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The cited consistency claim supports compatibility only; it supplies no likelihood comparison showing that appearances favor resurrection."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary cumulative-not-single-fact bridge, while stopping short of the motion-level probability requirement."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move fairly rejects a single-fact standard but does not engage the strongest objection that nondiscriminating consistency adds little."
+        }
+      },
+      "evidenceBasis": "Bass expressly says appearances are not the only evidence and invokes Ehrman's statement that the evidence is consistent with resurrection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-singular-worldwide-worship-anomaly",
+      "sectionId": "christian-expansion-and-influence",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "reply",
+      "proposition": "Jesus's singular worldwide worship as Lord and God is an extraordinary historical anomaly that Bass offers as relevant context for assessing the singular resurrection claim.",
+      "sourceSpan": {
+        "startEvent": 1440,
+        "endEvent": 1500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bass takes the floor after the moderator's invitation, repeatedly identifies the worship of Jesus as his anomaly, and links it to resurrection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-expansion-and-fulfilled-mission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-physical-regularity-probability",
+          "con-underdetermined-postmortem-experiences"
+        ],
+        "components": [
+          {
+            "componentId": "pro-singular-worldwide-worship-anomaly-component-01",
+            "targetMoveId": "con-physical-regularity-probability",
+            "text": "Whether worldwide worship supplies evidence capable of overcoming the historical prior against physical resurrection.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-singular-worldwide-worship-anomaly-component-02",
+            "targetMoveId": "con-underdetermined-postmortem-experiences",
+            "text": "Whether later influence identifies what the earliest alleged witnesses experienced.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The anomaly is relevant to the broader motion but does not contact the decisive probability comparison or show why worship diagnoses resurrection rather than later success.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "Within relevant nonanswers, it adds issue-bearing historical context but does not answer the targeted evidentiary or probability demands."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The worldwide-worship anomaly is clear, but singularity across all human history and its relevant comparison class remain insufficiently bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Exceptional influence is asserted as resurrection-relevant without a defended causal bridge or adequate comparison with other globally revered figures."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The move shifts from exceptional worship to relevance for resurrection without explaining why cultural influence identifies a miraculous cause."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "Billions worshipping Jesus is offered as a broad fact, but uniqueness, comparison class, and causal significance are unsupported."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It contacts the central expansion-and-mission route through worldwide worship, but only weakly connects that phenomenon to resurrection."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt primarily asserts an anomaly and does not meaningfully develop or evaluate the strongest rival explanation of religious success."
+        }
+      },
+      "evidenceBasis": "Bass calls Jesus uniquely worshipped by billions as Lord and God and presents this worldwide status as an extraordinary anomaly.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-conviction-not-miracle",
+      "sectionId": "christian-expansion-and-influence",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "The number of people convinced by a resurrection claim demonstrates widespread conviction but does not establish the truth of the alleged miracle.",
+      "sourceSpan": {
+        "startEvent": 1551,
+        "endEvent": 1560
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly distinguishes evidence that people became convinced from evidence that God actually intervened, matching Ehrman's response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-growth-nondiagnostic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-singular-worldwide-worship-anomaly",
+          "pro-appearances-fit-cumulative-case"
+        ],
+        "components": [
+          {
+            "componentId": "con-conviction-not-miracle-component-01",
+            "targetMoveId": "pro-singular-worldwide-worship-anomaly",
+            "text": "Whether widespread conviction and worship establish the truth of the resurrection miracle that produced them.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conviction-not-miracle-component-02",
+            "targetMoveId": "pro-appearances-fit-cumulative-case",
+            "text": "Whether later conviction supplies an independent causal line rather than merely recording acceptance of the claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the inference from widespread conviction to miracle as invalid and states the limited consequence that growth shows belief, not divine intervention.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "Within diagnostic defeats, it explicitly isolates the premise, identifies the inferential failure, and states exactly what the evidence can establish."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between evidence of conviction and evidence of the claimed miracle is explicit, stable, and narrowly scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The logical limit on what numbers convinced can establish is appropriately firm and does not require speculative uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Exceptional scale of worship may be one cumulative fact rather than a deductive proof of resurrection.",
+        "decisiveQualification": "Its evidential contribution still requires a causal warrant distinguishing truth from ordinary mechanisms of mass conviction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The distinction between widespread belief and the truth of its supernatural object is explicit, valid, and decisive against the stated inference."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The logical evidentiary distinction is largely self-supporting, with the existence of other causes of conviction appropriately noted but not elaborated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central growth-nondiagnostic bridge by specifying what widespread adherence can and cannot establish."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply fairly states the inferential limit, though its use of prove somewhat compresses the affirmative's cumulative framing."
+        }
+      },
+      "evidenceBasis": "Ehrman states that many believers show that people became convinced, not that God intervened or the resurrection occurred.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-growth-nondiagnostic-comparison",
+      "sectionId": "christian-expansion-and-influence",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Christianity's early growth rate is naturally reproducible, as comparable religious growth demonstrates, and therefore does not identify a miraculous origin.",
+      "sourceSpan": {
+        "startEvent": 1570,
+        "endEvent": 1611
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman introduces the numerical comparison with Mormon growth and expressly concludes that growth does not indicate miraculous beginnings.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-growth-nondiagnostic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-singular-worldwide-worship-anomaly",
+          "pro-appearances-fit-cumulative-case"
+        ],
+        "components": [
+          {
+            "componentId": "con-growth-nondiagnostic-comparison-component-01",
+            "targetMoveId": "pro-singular-worldwide-worship-anomaly",
+            "text": "Whether exceptional Christian expansion and adherence uniquely indicate a miraculous beginning.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-growth-nondiagnostic-comparison-component-02",
+            "targetMoveId": "pro-appearances-fit-cumulative-case",
+            "text": "Whether growth adds independent diagnostic force to the cumulative resurrection case.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply uses comparable Mormon growth and an extrapolation of Christian growth to show that expansion rates are reproducible and nondiagnostic.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full ordinary answers, it contacts the causal-growth inference with a concrete comparison and states the evidentiary consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is clearly limited to growth rate and believer numbers as indicators of miraculous origins."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conclusion that growth alone is nondiagnostic is proportionate to the comparative example and explicit limitation of scope."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity's long-term worldwide influence may be more exceptional than a short-term comparison of growth rates.",
+        "decisiveQualification": "Even exceptional scale needs a causal bridge before it identifies resurrection rather than ordinary institutional success."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "A naturally reproducible growth rate directly undercuts the inference that growth rate identifies a miraculous origin."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The Mormon comparison and growth extrapolation provide concrete support, though the exact comparative data are not documented in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It reaches the top of the central growth-nondiagnostic tier by directly comparing religious expansion and drawing the appropriate limitation."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly challenges growth as such, though the Mormon comparison does not fully match the affirmative's long-duration worldwide anomaly."
+        }
+      },
+      "evidenceBasis": "Ehrman compares Mormon and Christian growth and argues that rate or number of converts does not indicate miraculous beginnings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-worldwide-mission-fulfilled",
+      "sectionId": "christian-expansion-and-influence",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "constructive",
+      "proposition": "Christianity's worldwide expansion fulfills the objective attributed to the risen Jesus and therefore supports Bass's claim that Jesus continued directing the church.",
+      "sourceSpan": {
+        "startEvent": 1690,
+        "endEvent": 1732
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields to Justin, and the sustained first-person presentation matches Justin's resurrection defense throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-expansion-and-fulfilled-mission"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move links worldwide Christian expansion with an objective attributed to Jesus and infers continuing direction by the risen Jesus.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within constructive moves, it targets a central route but leaves attribution, causal exclusivity, and fulfillment warrants substantially compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The mission-fulfillment proposition is recoverable, but what Jesus historically wanted and what counts as fulfillment remain partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Worldwide expansion is real issue-bearing evidence, but the inference to continuing risen direction lacks source and rival-cause qualifications."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The inference from later fulfillment of an attributed objective to continuing supernatural direction requires an undeveloped causal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The move gestures to New Testament statements and expansion but does not establish historical attribution or exclude ordinary growth mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central expansion-and-fulfilled-mission bridge by connecting global spread to the attributed mission."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected constructive span acknowledges disagreement over risen-Jesus sayings but does not evaluate a developed alternative explanation."
+        }
+      },
+      "evidenceBasis": "Bass introduces worldwide mission as a fourth bedrock fact and acknowledges dispute about whether the risen Jesus spoke the relevant sayings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cross-cultural-jesus-visions",
+      "sectionId": "later-visions-and-comparative-religion",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "constructive",
+      "proposition": "Recurring visions of Jesus across cultures and centuries, including reports involving non-Christians who convert, provide an additional line of evidence for continuing risen activity.",
+      "sourceSpan": {
+        "startEvent": 1985,
+        "endEvent": 2078
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Justin's next line of evidence, and Justin identifies his own research project before presenting the sustained argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-later-cross-cultural-visions"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents recurring cross-cultural visions, especially conversion reports among non-Christians, as evidence of continuing risen activity.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within constructive moves, it supplies a relevant distinctive feature but relies on broad reports without representative verification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposition is clear, though the frequency, geographic scope, and meaning of non-Christian remain insufficiently bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Bass frames visions as another evidentiary line and anticipates comparison, but inferring continuing activity exceeds the verification supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Other religions also contain visions, dreams, and conversion experiences involving their sacred figures.",
+        "decisiveQualification": "Cross-tradition visions leading non-Christians toward Jesus are alleged to be a distinguishing subset requiring specific comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Cross-cultural conversion reports could be evidentially relevant, but the inference from reported visions to an objectively active Jesus remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The move refers generally to research and recurring reports without representative cases, verification methods, base rates, or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central later-visions bridge by identifying non-Christian conversion reports as the claimed distinctive phenomenon."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move anticipates the comparative objection and identifies a potentially relevant distinction, though it does not yet substantiate it."
+        }
+      },
+      "evidenceBasis": "Bass calls later visions another evidence line, says unbelievers experience them, and connects them to Jesus seeking and saving the lost.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-dreams-and-comparative-visions",
+      "sectionId": "later-visions-and-comparative-religion",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Dreams do not establish that their perceived objects are real, and comparable vision and healing traditions outside Christianity prevent later Jesus visions from being uniquely diagnostic.",
+      "sourceSpan": {
+        "startEvent": 2080,
+        "endEvent": 2147
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Justin addresses Bart by name before the reply, and the response's skeptical treatment of dreams and ancient cult testimony clearly belongs to Bart.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-visions-nondiagnostic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cross-cultural-jesus-visions",
+          "pro-worldwide-mission-fulfilled"
+        ],
+        "components": [
+          {
+            "componentId": "con-dreams-and-comparative-visions-component-01",
+            "targetMoveId": "pro-cross-cultural-jesus-visions",
+            "text": "Whether later dreams and visions establish the reality and continuing activity of their perceived object.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-dreams-and-comparative-visions-component-02",
+            "targetMoveId": "pro-worldwide-mission-fulfilled",
+            "text": "Whether cross-cultural religious experience uniquely corroborates fulfillment through the activity of the risen Jesus.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both object-reality and uniqueness by separating experiences from their truth and adducing non-Christian vision and healing traditions.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full ordinary answers, it directly addresses the decisive diagnostic demands, though the comparative examples are only briefly developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between having a dream and establishing its object's reality is stable, with the comparative claim explicitly limited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The reply appropriately denies uniqueness and diagnostic sufficiency without claiming that no reported experience occurred."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Cross-cultural Jesus visions among people outside Christianity may differ from experiences within an inherited religious tradition.",
+        "decisiveQualification": "The truth inference still requires reliable comparative evidence, since visions and healings occur across traditions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The inference that an experience does not by itself verify its object is explicit and the comparative evidence directly challenges uniqueness."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Asclepius and other religious traditions provide concrete comparison, though frequency and structural similarity are not systematically documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central visions-nondiagnostic bridge by challenging both object reality and Christian uniqueness."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply squarely addresses general visions and comparative traditions but does not fully isolate the affirmative's cross-tradition conversion subset."
+        }
+      },
+      "evidenceBasis": "Ehrman distinguishes dreams from real objects and invokes Asclepius and other religious vision and healing traditions as comparisons.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-visions-cross-religious-distinction",
+      "sectionId": "later-visions-and-comparative-religion",
+      "side": "pro",
+      "speaker": "Justin Bass",
+      "moveKind": "reply",
+      "proposition": "Reports of people from other religious backgrounds seeing Jesus and moving toward Christianity distinguish the offered phenomenon from ordinary visions occurring within a person's own tradition.",
+      "sourceSpan": {
+        "startEvent": 2252,
+        "endEvent": 2277
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator frames this as Justin's attempted historical connection, after which Justin contrasts visions across named religious traditions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-visions-nondiagnostic"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-dreams-and-comparative-visions",
+          "con-growth-nondiagnostic-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "pro-visions-cross-religious-distinction-component-01",
+            "targetMoveId": "con-dreams-and-comparative-visions",
+            "text": "Whether the relevant Jesus reports differ from ordinary visions occurring within a person's existing religious tradition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-visions-cross-religious-distinction-component-02",
+            "targetMoveId": "con-growth-nondiagnostic-comparison",
+            "text": "Whether conversion across religious boundaries supplies a distinction beyond the mere growth of a successful movement.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies cross-religious direction and conversion as the proposed distinction, but supports its claimed asymmetry mainly through assertion and searchability.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within full ordinary answers, it explicitly contacts the comparative premise but provides limited evidence that the asserted asymmetry actually holds."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposed distinction is recoverable, but sweeping claims about what does not happen across religions lack defined populations and scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical cross-religious asymmetry substantially exceeds the anecdotal and Google-search-level support identified in the selected evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Visions across traditions may also cross religious boundaries or contribute to conversion without verifying supernatural objects.",
+        "decisiveQualification": "The claimed asymmetry must be established through representative comparative evidence rather than isolated or searchable reports."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Cross-boundary direction would be a relevant distinction, but the inference depends on an unestablished categorical asymmetry across religions."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "Broad negative claims about Muhammad visions and other religions rest substantially on assertion and suggested internet searching, not representative comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks the visions-nondiagnostic bridge by proposing a specific cross-religious distinction, despite weak substantiation."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply recognizes within-tradition visions but materially understates the live possibility of cross-boundary reports in other traditions."
+        }
+      },
+      "evidenceBasis": "Bass concedes within-religion visions but asserts that people from other worldviews see Jesus while reciprocal cross-religious patterns do not occur.",
+      "assessmentConfidence": "medium"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct affirmative debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion changes completion of an affirmative burden bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified beyond the locked move assessments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any affirmative bridge-completion judgment."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct skeptical debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion changes completion of a skeptical burden bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified beyond the locked move assessments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any skeptical bridge-completion judgment."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

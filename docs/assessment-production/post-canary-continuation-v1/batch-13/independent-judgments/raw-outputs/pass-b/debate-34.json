@@ -1,0 +1,1757 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "34",
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-consciousness-fundamental-route",
+      "side": "pro",
+      "description": "Establish first-person qualitative consciousness as irreducible data, show that quantitative physical descriptions cannot intelligibly derive its character, and present a consciousness-first ontology capable of grounding physical structure while remaining compatible with established empirical findings.",
+      "successCriteria": "The route succeeds if the explanatory limits attributed to physicalism support treating consciousness as fundamental and if the proposed consciousness-first account integrates qualitative experience with physical structure without forfeiting the relevant scientific constraints.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-consciousness-first-completion",
+        "tier": "motion",
+        "description": "Connect physicalism's alleged inability to derive qualitative experience with a positive account on which consciousness grounds the physical structure described by science."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-first-person-data",
+          "tier": "central",
+          "description": "Establish conscious experience as independently known evidence that a complete theory of reality must accommodate."
+        },
+        {
+          "bridgeId": "pro-central-qualitative-explanatory-gap",
+          "tier": "central",
+          "description": "Show why quantitative neural and physical descriptions do not by themselves make qualitative character intelligible."
+        },
+        {
+          "bridgeId": "pro-central-russellian-grounding",
+          "tier": "central",
+          "description": "Explain how a conscious intrinsic basis could realize the mathematical and relational structure identified by physics."
+        },
+        {
+          "bridgeId": "pro-central-comparative-unification",
+          "tier": "central",
+          "description": "Show why empirical equivalence permits comparison by simplicity and explanatory coverage, including both experience and physical structure."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-causal-relevance",
+          "tier": "subsidiary",
+          "description": "Preserve a causal or realizing role for consciousness against zombie-based and empirical-inertness objections."
+        },
+        {
+          "bridgeId": "pro-subsidiary-combination-and-physics",
+          "tier": "subsidiary",
+          "description": "Address compatibility with established physics and the challenge of combining simple conscious entities into unified subjects."
+        }
+      ]
+    },
+    {
+      "routeId": "con-physicalist-emergence-route",
+      "side": "con",
+      "description": "Defend consciousness as a real higher-level feature instantiated by physical organization, specify a multilevel empirical explanation connecting brain states, experience, behavior, and dynamics, and show why adding fundamental consciousness does not improve on the constrained physical account.",
+      "successCriteria": "The route succeeds if higher-level physical description can account for conscious experience without new fundamental ontology and if consciousness-first alternatives either conflict with established physical constraints or fail to add explanatory and causal consequences.",
+      "motionBridge": {
+        "bridgeId": "con-motion-physicalist-completion",
+        "tier": "motion",
+        "description": "Connect weak emergence and multilevel physical explanation to a complete account of consciousness that requires no additional fundamental conscious entities."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-higher-level-description",
+          "tier": "central",
+          "description": "Establish that conscious concepts can be valid higher-level descriptions of systems wholly constituted by physical processes."
+        },
+        {
+          "bridgeId": "con-central-multilevel-explanation",
+          "tier": "central",
+          "description": "Specify how mappings among physical states, experience, behavior, and dynamics could constitute an explanation of consciousness."
+        },
+        {
+          "bridgeId": "con-central-core-physics-constraint",
+          "tier": "central",
+          "description": "Use the tested physical account of human-scale interactions to constrain proposals that add or alter fundamental ontology."
+        },
+        {
+          "bridgeId": "con-central-panpsychism-dilemma",
+          "tier": "central",
+          "description": "Require a consciousness-first theory either to identify consequential changes to physics or explain what unchanged fundamental consciousness adds."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-private-data",
+          "tier": "subsidiary",
+          "description": "Show that private qualitative evidence can be included within broad empirical inquiry without establishing nonphysical fundamentals."
+        },
+        {
+          "bridgeId": "con-subsidiary-behavioral-causation",
+          "tier": "subsidiary",
+          "description": "Relate consciousness to physical organization and behavior while addressing zombie and causal-irrelevance arguments."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "qualitative-experience-and-physical-explanation",
+      "title": "Qualitative Experience and the Scope of Physical Explanation",
+      "weightPercent": 25,
+      "rationale": "This issue tests the central physicalist burden: whether quantitative neural descriptions and multilevel mappings can explain what experience is like, including the knowledge argument and the claimed explanatory gap."
+    },
+    {
+      "sectionId": "emergence-and-consciousness-first-grounding",
+      "title": "Emergence versus Consciousness-First Grounding",
+      "weightPercent": 25,
+      "rationale": "This issue compares the rival motion-level accounts: consciousness as a higher-level physical description and consciousness as the intrinsic basis that realizes physical structure."
+    },
+    {
+      "sectionId": "empirical-constraints-and-theoretical-consequences",
+      "title": "Empirical Constraints and Theoretical Consequences",
+      "weightPercent": 20,
+      "rationale": "This issue determines how each ontology relates to established physics and whether preserving or changing physical dynamics supplies explanatory, causal, or testable consequences."
+    },
+    {
+      "sectionId": "first-person-data-and-method",
+      "title": "First-Person Data and the Method of Inquiry",
+      "weightPercent": 18,
+      "rationale": "This issue addresses whether private conscious awareness requires philosophical synthesis beyond physical science or can be incorporated within an appropriately broad empirical method."
+    },
+    {
+      "sectionId": "causation-zombies-and-combination",
+      "title": "Causation, Zombies, and the Unity of Consciousness",
+      "weightPercent": 12,
+      "rationale": "This issue covers supporting burdens concerning consciousness's role in behavior, the implications of physically identical duplicates, multiple realization, and the formation of unified subjects from simpler conscious bases."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-private-consciousness-data",
+      "sectionId": "first-person-data-and-method",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "constructive",
+      "proposition": "Immediate awareness of conscious experience supplies private data that an adequate theory of reality must explain alongside public scientific data.",
+      "sourceSpan": {
+        "startEvent": 92,
+        "endEvent": 122
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Goff, and this uninterrupted opening presentation remains in his voice.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-first-person-data"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive opening claim and therefore has no earlier opposing target; it establishes the private-data premise directly.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it clearly and efficiently establishes the evidential premise assigned to this span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between private and public data is recoverable, stable, and expressly limited to what an adequate theory must accommodate."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The necessity claim is limited to adequate theories accounting for real experience, a conclusion supported by the stated immediate-awareness premise."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "Immediate awareness supplies the evidence and the adequacy requirement follows through a clear explanatory-demand bridge."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The first-person example specifically supports the existence of private experiential evidence, though the adequacy norm is chiefly philosophical."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly establishes the indispensable first-person-data bridge for the consciousness-first route."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own evidential premise without interpreting or rejecting a meaningful opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly calls pain real, identifies immediate awareness as private data, and requires adequate theories to address both private and public data.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-empirical-equivalence-of-ontologies",
+      "sectionId": "empirical-constraints-and-theoretical-consequences",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "constructive",
+      "proposition": "Physicalism, panpsychism, and dualism can interpret the same consciousness correlations, so experiments establishing those correlations do not alone settle the mind-body problem.",
+      "sourceSpan": {
+        "startEvent": 183,
+        "endEvent": 250
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Goff's explicitly introduced opening statement without any speaker transition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-comparative-unification"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target and supplies a comparative premise about what correlation evidence can discriminate.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it clearly identifies the evidential neutrality premise, though it does not yet complete the comparative inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is expressly restricted to correlation evidence not settling the mind-body problem by itself."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The claim is appropriately limited to underdetermination by shared correlations rather than certainty that all possible evidence is neutral."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "If rival ontologies accommodate the same correlations, those correlations alone cannot discriminate among them; that inference is valid."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Integrated-information correlation is a concrete illustration, but representative equivalence across the named ontologies remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, this materially supports comparison by explanatory coverage once direct empirical discrimination is unavailable."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing interpretation is assessed; the move states an underdetermination claim about common evidence."
+        }
+      },
+      "evidenceBasis": "The excerpt says the scientific correlation data are neutral among mind-body possibilities and illustrates this with integrated information theory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-quantitative-qualitative-mismatch",
+      "sectionId": "qualitative-experience-and-physical-explanation",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "constructive",
+      "proposition": "Physicalism cannot explain qualitative consciousness because the quantitative vocabulary of physical science cannot articulate qualities such as experienced redness.",
+      "sourceSpan": {
+        "startEvent": 296,
+        "endEvent": 365
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-designated Goff presentation continues uninterrupted as he applies his announced explanatory criterion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-qualitative-explanatory-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target and directly formulates the qualitative explanatory-gap premise.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it states the route's decisive explanatory challenge with clear examples and an explicit contrast."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The quantitative-versus-qualitative contrast is clear, but the relevant sense of explanation and the scope of physical vocabulary remain partly implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conceptual mismatch supports an explanatory challenge, but the categorical inability claim exceeds what the vocabulary contrast alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Physicalism may explain qualities through higher-level identities or mappings without reproducing qualitative vocabulary at the fundamental level.",
+        "decisiveQualification": "Such compatibility still leaves disputed whether the mapping makes intrinsic qualitative character intelligible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The contrast creates a material explanatory challenge, but the bridge from different descriptive vocabularies to impossibility of explanation remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Coffee, mint, and redness concretely illustrate qualitative character, while the exclusion of higher-level physical explanation lacks further support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly supplies the principal qualitative-gap bridge required by the pro route."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move targets explanation rather than denying correlations, but it only implicitly accommodates the strongest higher-level physicalist alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly contrasts the purely quantitative vocabulary of physical science with experienced qualities such as smell, taste, and deep red.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-conscious-realizers-of-physical-structure",
+      "sectionId": "emergence-and-consciousness-first-grounding",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "constructive",
+      "proposition": "Because physics specifies mathematical and relational structure rather than intrinsic nature, networks of simple conscious entities could realize that structure and ground the physical world.",
+      "sourceSpan": {
+        "startEvent": 459,
+        "endEvent": 544
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Goff explicitly presents the Russell-inspired panpsychist account during his uninterrupted allotted opening remarks.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-russellian-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target and presents the positive Russellian grounding mechanism for the pro route.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it gives a recognizable realization proposal, although the transition from possible realizers to explanatory grounding is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposal is recoverable and modal, but simple conscious entities, realization, and intrinsic nature are not fully specified in the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modal claim that conscious networks could realize the required structure appropriately matches the limited structural argument supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The structural-realization inference is coherent, but the warrant that conscious entities can instantiate the complete required structure remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The Russellian structural premise is stated and connected to a model, but no specific demonstration of the proposed conscious realization is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly advances the indispensable positive grounding bridge rather than merely criticizing physicalism."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span constructs a positive ontology and does not substantially interpret a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says physics can arise from anything with the right mathematical structure and proposes interacting simple conscious entities as its realizers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-weak-emergence-levels",
+      "sectionId": "emergence-and-consciousness-first-grounding",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Weak emergence allows consciousness to be a valid higher-level description of the same physical reality described microscopically by quantum fields and biologically by neurons.",
+      "sourceSpan": {
+        "startEvent": 616,
+        "endEvent": 726
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is an uninterrupted portion of Carroll's opening presentation following his explicit introduction and microphone check.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-higher-level-description"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-quantitative-qualitative-mismatch"
+        ],
+        "components": [
+          {
+            "componentId": "con-weak-emergence-levels-component-01",
+            "targetMoveId": "pro-quantitative-qualitative-mismatch",
+            "text": "Explain how quantitative physical descriptions can account for qualitative character rather than merely coexist with higher-level vocabulary.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The hierarchy of quantum, biological, and conscious descriptions bears on the issue, but validity at multiple levels does not answer the decisive intelligibility demand.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "Within relevant nonanswers, this supplies substantial contrary framework material but leaves the decisive qualitative-explanation component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Weak emergence and descriptive levels are used consistently, with an implicit restriction to descriptions of the same underlying physical system."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move establishes the availability and validity of higher-level description without claiming that this alone completes explanation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The multilevel-description analogy coherently supports weak emergence, with only the instantiation bridge from neural organization to consciousness left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Quantum-field and neuronal levels provide concrete support, but conscious-level validity is asserted by analogy rather than independently demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly advances the higher-level-description bridge central to physicalist emergence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move mainly develops a physicalist framework and does not expressly reconstruct the strongest qualitative-gap alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies quantum-field and neuronal descriptions as valid levels and says physicalism treats consciousness in the same multilevel manner.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mary-distinct-brain-state",
+      "sectionId": "qualitative-experience-and-physical-explanation",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Mary's first experience of red is compatible with physicalism because seeing red produces a physical brain state distinct from merely reading physical descriptions of red.",
+      "sourceSpan": {
+        "startEvent": 800,
+        "endEvent": 860
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carroll introduces and analyzes the named Mary thought experiment within his uninterrupted opposing presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-qualitative-explanatory-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-quantitative-qualitative-mismatch"
+        ],
+        "components": [
+          {
+            "componentId": "con-mary-distinct-brain-state-component-01",
+            "targetMoveId": "pro-quantitative-qualitative-mismatch",
+            "text": "Show why acquiring experiential knowledge cannot be accommodated by a wholly physical change in Mary's brain state.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the claimed inference by distinguishing reading descriptions from entering the physical state produced by seeing red, but it does not fully answer whether new propositional information is gained.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive physicalist-compatibility component but leaves the information-versus-acquaintance bridge insufficiently defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The brain-state distinction and compatibility conclusion are clear, with the type of knowledge Mary gains left implicitly characterized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "A distinct physical brain state is appropriately offered as a compatibility account rather than as a conclusive disproof of every knowledge argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mary may enter a new physical state yet also acquire previously unavailable propositional knowledge about qualitative essence.",
+        "decisiveQualification": "The distinct-state account must explain why the new epistemic achievement does not reveal a nonphysical fact."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Different physical states can ground different epistemic capacities, but compatibility does not by itself show that all relevant information was previously possessed."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The thought experiment supports the distinct-state distinction, though the central epistemic warrant remains asserted rather than independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly attacks a prominent route to the qualitative explanatory-gap conclusion."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply recognizes that Mary learns something, but it does not fully engage the strongest claim about the informational content of that learning."
+        }
+      },
+      "evidenceBasis": "The span recounts Mary's complete physical learning and first red experience, with the larger stated move distinguishing reading from the physical state of seeing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-core-physics-constraint",
+      "sectionId": "empirical-constraints-and-theoretical-consequences",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "constructive",
+      "proposition": "Established particle physics tightly constrains every interaction relevant to biology, thought, and consciousness despite acknowledged gaps elsewhere in science.",
+      "sourceSpan": {
+        "startEvent": 861,
+        "endEvent": 959
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted passage belongs to Carroll's opening presentation and expresses his physicalist case in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-core-physics-constraint"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive move with no earlier opposing target; it establishes the empirical constraint used against additions to fundamental ontology.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it states a specific and consequential scientific constraint, while its extension to every consciousness proposal requires later argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly restricted to interactions relevant at biological scales and acknowledges that the core theory may fail outside its tested domain."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The strong constraint is paired with acknowledged limits and quantitative upper bounds on undiscovered interactions relevant to biology."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Quantitative limits on new particles and forces coherently constrain proposed interactions, with ontology beyond causal interaction not yet excluded."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The move invokes quantitative experimental limits and carefully bounds their biological relevance, though the underlying plot is not reproduced in detail."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly establishes the core-physics constraint indispensable to the con route."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents a constructive empirical constraint rather than evaluating a developed opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes quantitative limits on unobserved particles and forces and says permitted interactions are too weak to matter for biology, thought, or consciousness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-panpsychism-core-theory-dilemma",
+      "sectionId": "empirical-constraints-and-theoretical-consequences",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Any specific panpsychist theory must state whether it changes the tested core physical theory, with either answer carrying a distinct explanatory and empirical burden.",
+      "sourceSpan": {
+        "startEvent": 960,
+        "endEvent": 1048
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carroll explicitly formulates the dilemma, addresses panpsychists, and develops the branch on which known physics must be modified.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-panpsychism-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-conscious-realizers-of-physical-structure"
+        ],
+        "components": [
+          {
+            "componentId": "con-panpsychism-core-theory-dilemma-component-01",
+            "targetMoveId": "pro-conscious-realizers-of-physical-structure",
+            "text": "Specify whether conscious realizers alter tested physical behavior or leave the core physical dynamics unchanged.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-panpsychism-core-theory-dilemma-component-02",
+            "targetMoveId": "pro-conscious-realizers-of-physical-structure",
+            "text": "Explain the theoretical contribution of fundamental consciousness if all established dynamics and predictions remain unchanged.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The dilemma directly imposes both consequential branches on the proposed conscious realizers, although it does not itself show that neither branch can be satisfied.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts the realization proposal's physical-consequence requirement and states the burden attached to each exhaustive branch."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two branches and their application to specific panpsychist theories are expressly stated and consistently scoped to the tested core theory."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "For a specified theory, changing or not changing the relevant physical behavior is an exhaustive logical division, while burdens remain branch-specific."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Russellian panpsychism may preserve equations while adding an intrinsic realization account rather than a new dynamical interaction.",
+        "decisiveQualification": "Preserved dynamics do not remove the demand to identify what explanatory work the added intrinsic ontology performs."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The change-or-no-change division is exhaustive for physical behavior and the distinct burdens follow coherently, without yet proving either branch fatal."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The dilemma is primarily logical and inherits the preceding empirical core-theory support; its claim about explanatory payoff remains argumentative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly articulates the panpsychism dilemma central to the con route."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The dilemma allows an unchanged-physics branch and asks what it adds, fairly preserving the strongest non-dynamical interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly divides specific panpsychist theories into those changing known particle behavior and those leaving the core theory intact.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unchanged-dynamics-causal-inertness",
+      "sectionId": "causation-zombies-and-combination",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Panpsychism that leaves physical dynamics unchanged adds nothing to physical explanation and risks making consciousness causally irrelevant to behavior.",
+      "sourceSpan": {
+        "startEvent": 1049,
+        "endEvent": 1131
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous first-person argument is Carroll's second branch of the dilemma and includes his discussion of philosophical zombies and behavior.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-panpsychism-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-conscious-realizers-of-physical-structure"
+        ],
+        "components": [
+          {
+            "componentId": "con-unchanged-dynamics-causal-inertness-component-01",
+            "targetMoveId": "pro-conscious-realizers-of-physical-structure",
+            "text": "Explain what conscious realizers add to physical explanation when their presence leaves all physical dynamics unchanged.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unchanged-dynamics-causal-inertness-component-02",
+            "targetMoveId": "pro-conscious-realizers-of-physical-structure",
+            "text": "Preserve a role for consciousness in producing or realizing behavior rather than rendering it causally irrelevant.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly presses explanatory addition and behavioral relevance against unchanged dynamics, though it does not distinguish causal production from metaphysical realization.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts both decisive demands, but its inference from unchanged dynamics to causal irrelevance remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The challenge is recoverable, but adding to understanding, affecting behavior, and causal relevance are not sharply distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Unchanged dynamics clearly motivates an explanatory challenge, but causal irrelevance does not automatically follow if consciousness is identified with a realizer."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consciousness may realize physical dynamics without supplying an additional force or altering any behavioral prediction.",
+        "decisiveQualification": "A realization claim still must explain why conscious rather than nonconscious intrinsic bases matter theoretically."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "No new dynamical effect supports the empirical-inertness concern, but the move leaves a material bridge from unchanged equations to causal irrelevance."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "The core-theory background supports unchanged behavioral dynamics, while the broader conclusion about explanatory uselessness is largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly develops the second branch of the central panpsychism dilemma."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The move recognizes the unchanged-dynamics option but substantially compresses the strongest identity or realization response to causal inertness."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what unchanged panpsychism contributes to physical understanding and links that branch to zombies and whether consciousness affects behavior.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-zombie-multiple-realization",
+      "sectionId": "causation-zombies-and-combination",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "A physically structured zombie possibility does not make consciousness causally idle because the same physical or computational structure can be realized by conscious or nonconscious bases.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1379
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Goff directly names Carroll's zombie argument and answers it through an extended hardware-and-software realization analogy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-causal-relevance"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unchanged-dynamics-causal-inertness"
+        ],
+        "components": [
+          {
+            "componentId": "pro-zombie-multiple-realization-component-01",
+            "targetMoveId": "con-unchanged-dynamics-causal-inertness",
+            "text": "Show how consciousness can remain a realizer of behaviorally relevant structure despite the possibility of structurally identical nonconscious realizers.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-zombie-multiple-realization-component-02",
+            "targetMoveId": "con-unchanged-dynamics-causal-inertness",
+            "text": "Explain why unchanged physical or computational structure does not make the conscious basis explanatorily idle.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The hardware-software analogy directly distinguishes structure from its conscious realization and thereby contacts both causal-idleness and zombie demands, though the analogy does not establish metaphysical possibility.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it explicitly addresses the causal-inertness inference with a realization model but leaves the key multiple-realization premise underdefended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The software, hardware, structure, and realization roles remain stable, and the conclusion is framed as a modal possibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The analogy supports the limited possibility that identical structure can have distinct realizers without claiming empirical confirmation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "If physical duplicates fix every relevant realizer fact, a supposedly nonconscious duplicate may be incoherent rather than an alternative implementation.",
+        "decisiveQualification": "The software analogy alone does not show that consciousness can vary while complete physical realization remains fixed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Multiple realization would block the causal-idleness inference, but the analogy leaves a material warrant that conscious and nonconscious bases can realize identical total physics."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The hardware-software analogy is concrete but remains speculative evidence for the metaphysical multiple-realization premise."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports causal relevance against the zombie-based objection."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply fairly targets causal idleness but understates the physicalist claim that total physical duplication fixes consciousness itself."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies physics with software-like mathematical structure and consciousness with hardware that realizes it, while allowing other possible realizers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-weak-panpsychism-preserves-physics",
+      "sectionId": "empirical-constraints-and-theoretical-consequences",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "Weak-emergent panpsychism can preserve established physical equations and predictions while positing a deeper conscious basis that realizes their structure.",
+      "sourceSpan": {
+        "startEvent": 1380,
+        "endEvent": 1448
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Goff explicitly addresses the alleged clash with the core theory and distinguishes physics-changing from physics-preserving versions of both positions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-panpsychism-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-panpsychism-core-theory-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "pro-weak-panpsychism-preserves-physics-component-01",
+            "targetMoveId": "con-panpsychism-core-theory-dilemma",
+            "text": "Identify which branch weak panpsychism occupies and whether it preserves established equations and empirical predictions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-weak-panpsychism-preserves-physics-component-02",
+            "targetMoveId": "con-panpsychism-core-theory-dilemma",
+            "text": "Explain what a deeper conscious basis contributes when the physical equations remain unchanged.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply squarely selects the unchanged-physics branch and distinguishes weak from strong emergence, but it does not fully answer the second branch's explanatory-value demand.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive compatibility component while leaving the additional explanatory-contribution component unanswered in this span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Weak and strong panpsychism are expressly distinguished, and preservation is scoped to established equations and predictions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims only that a weak version can preserve physics and explicitly acknowledges physics-modifying strong versions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The dilemma permits preserving physics but then asks what explanatory work the conscious basis adds.",
+        "decisiveQualification": "Compatibility with established predictions answers only one branch and does not itself establish explanatory improvement."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "A deeper realization basis can coherently preserve equations, but the move does not yet demonstrate the promised positive explanatory role."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The weak-versus-strong distinction supports compatibility conceptually, while detailed verification against the core theory remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claim that the core-theory dilemma defeats physics-preserving panpsychism."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response accurately distinguishes the dilemma's branches, though its selected span postpones the strongest unchanged-physics challenge."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes strong panpsychism that modifies physics from weak panpsychism and explicitly begins a direct answer to the core-theory question.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-private-data-within-science",
+      "sectionId": "first-person-data-and-method",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Science may use private as well as public data and seeks the empirically best account compatible with the full body of available evidence.",
+      "sourceSpan": {
+        "startEvent": 1794,
+        "endEvent": 1812
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carroll explicitly frames the passage as a correction to Goff's characterization of Galileo and the scope and methods of science.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-private-data"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-private-consciousness-data"
+        ],
+        "components": [
+          {
+            "componentId": "con-private-data-within-science-component-01",
+            "targetMoveId": "pro-private-consciousness-data",
+            "text": "Accept private experiential evidence as genuine data rather than excluding it from disciplined empirical inquiry.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-private-data-within-science-component-02",
+            "targetMoveId": "pro-private-consciousness-data",
+            "text": "Show that including private data in science suffices for an adequate theory of reality to explain experience.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly accepts private experience as scientific data and broadens the method, but it does not show that inclusion alone satisfies the pro move's explanatory adequacy demand.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the methodological exclusion issue but leaves the decisive adequacy-of-explanation component unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Private and public data are used consistently, and science is expressly characterized as seeking the best account compatible with all data."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The methodological claim that science should use all available data matches the broad conception of empirical inquiry expressly defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Goff's point is not merely that science excludes private data, but that physical description fails to explain qualitative character.",
+        "decisiveQualification": "Methodological inclusion does not by itself supply the requested explanatory bridge between physical and experiential facts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Including private experience among evidence coherently rebuts a narrow exclusion claim, though it does not entail physicalist explanatory sufficiency."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The methodological principle is clear and inclusive, but its effectiveness against the substantive explanatory gap is not independently supported."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports incorporating private evidence into broad empirical inquiry."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply fairly accepts the data but narrows the opposing demand toward scientific admissibility and omits its strongest explanatory component."
+        }
+      },
+      "evidenceBasis": "The excerpt says experiences and thoughts are fully part of science and defines science as finding the best understanding compatible with private and public data.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-multilevel-explanatory-mapping",
+      "sectionId": "emergence-and-consciousness-first-grounding",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "A complete multilevel mapping among physical states, conscious experiences, behavior, and dynamics would constitute an explanation of consciousness.",
+      "sourceSpan": {
+        "startEvent": 1814,
+        "endEvent": 1894
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted passage is Carroll's first-person account of scientific explanation using theoretical unobservables and compatible higher-level descriptions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-multilevel-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-quantitative-qualitative-mismatch"
+        ],
+        "components": [
+          {
+            "componentId": "con-multilevel-explanatory-mapping-component-01",
+            "targetMoveId": "pro-quantitative-qualitative-mismatch",
+            "text": "State what additional explanatory achievement beyond reliable physical-experiential mapping the qualitative-gap objection requires.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-multilevel-explanatory-mapping-component-02",
+            "targetMoveId": "pro-quantitative-qualitative-mismatch",
+            "text": "Connect physical states to experience, behavior, other brain states, dynamics, and prediction in a unified account.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply specifies an unusually complete mapping and directly contests the pro standard of explanation, but it poses rather than resolves whether such mapping captures intrinsic qualitative character.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within partial answers, it contacts the decisive explanatory-standard issue and supplies the requested mappings, while leaving the intrinsic-character objection unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The hypothetical completeness conditions are clearly enumerated, and the speaker explicitly acknowledges that no such map currently exists."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move frames explanatory sufficiency as a question and expressly acknowledges the hypothetical theory's current absence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even a perfect predictive map may leave unexplained why a physical state has this intrinsic qualitative character.",
+        "decisiveQualification": "Predictive and relational completeness is not automatically identical to intelligibility of qualitative essence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The specified mappings plausibly constitute a powerful multilevel explanation, though the bridge from relational completeness to qualitative explanation remains contested."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The hypothetical is detailed and verification conditions are explicit, but no actual complete mapping is offered and the sufficiency warrant remains philosophical."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly formulates the multilevel-explanation bridge central to the physicalist route."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The reply presents the strongest multilevel physicalist account and squarely raises the standard dispute, but does not settle the residual intrinsic-character qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt specifies a perfectly reliable brain-experience map combined with behavior, dynamics, prediction, and a complete scientific theory, while admitting it is hypothetical.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mary-new-experiential-information",
+      "sectionId": "qualitative-experience-and-physical-explanation",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "Mary's acquisition of knowledge about what seeing red is like indicates that even complete neuroscientific information omits something about the essential nature of color experience.",
+      "sourceSpan": {
+        "startEvent": 1967,
+        "endEvent": 2027
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker is introduced as Philip and directly restates the knowledge argument while answering Carroll's immediately preceding criticism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-multilevel-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-mary-distinct-brain-state"
+        ],
+        "components": [
+          {
+            "componentId": "pro-mary-new-experiential-information-component-01",
+            "targetMoveId": "con-mary-distinct-brain-state",
+            "text": "Show that merely entering a new physical brain state answers the knowledge argument's claim about previously unavailable information.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses that the objection concerns knowledge and essential information rather than whether experience involves a new brain state, and states that complete neuroscience should already contain all relevant information under materialism.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the missed epistemic premise and states the consequence for the physicalist response."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Complete neuroscientific information, new learning, and essential nature are clearly distinguished and consistently scoped to the conditional on materialism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conditional is clearly stated, but the premise that physicalism entails prior possession of every relevant mode of information remains disputed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Physicalism may distinguish propositional physical facts from acquaintance or abilities acquired only by undergoing the relevant brain state.",
+        "decisiveQualification": "The knowledge argument must establish that Mary's gain is new factive information rather than a new mode of access or capacity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "If complete physical information includes all essential information, Mary's new factive knowledge creates the stated problem, but that antecedent bridge remains material."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The thought experiment specifically supports an epistemic contrast, while the classification of the gain as new essential information is not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the multilevel physicalist claim that a new brain state resolves the explanatory issue."
+        },
+        "representationalCharity": {
+          "value": 77,
+          "rationale": "The response accurately identifies its intended epistemic target but does not engage the strongest ability or acquaintance interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says the knowledge argument concerns information, not how a brain state is produced, and conditions its conclusion on Mary's complete neuroscience.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-consciousness-first-unification",
+      "sectionId": "emergence-and-consciousness-first-grounding",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "A Russellian construction can explain physical structure through underlying facts about consciousness, yielding a unified theory grounded in one fundamental kind of reality.",
+      "sourceSpan": {
+        "startEvent": 2032,
+        "endEvent": 2062
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Goff explicitly clarifies what he regards as panpsychism's explanatory advantage and describes its proposed direction of reduction.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-physicalist-completion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-multilevel-explanatory-mapping",
+          "con-panpsychism-core-theory-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "pro-consciousness-first-unification-component-01",
+            "targetMoveId": "con-multilevel-explanatory-mapping",
+            "text": "Provide an explanatory alternative that relates conscious and physical reality rather than stopping at correlations and predictive mappings.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-consciousness-first-unification-component-02",
+            "targetMoveId": "con-panpsychism-core-theory-dilemma",
+            "text": "Identify what consciousness-first ontology adds if it preserves the relational structure described by physics.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The Russellian construction supplies a rival reductive direction and a claimed unifying payoff, contacting both explanatory mapping and added-value demands, although the construction is only sketched.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts the central explanatory demand and states a positive consequence, but compresses the formal construction and realization warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The unification proposal is recoverable, but accounting for physics, logical construction, and one kind of stuff are not fully specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move is mainly modal, but saying the construction is known to work overstates what the compressed Ramsey-sentence reference establishes here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A complete multilevel physical map might already unify experience and behavior without reducing physical structure to consciousness.",
+        "decisiveQualification": "The consciousness-first construction must show explanatory improvement rather than merely reverse the direction of grounding."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Grounding relational physics in conscious intrinsic facts could yield monistic unification, but the formal and metaphysical realization bridges remain compressed."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Russellian and Ramsey-sentence references identify a method, yet the span provides no detailed construction demonstrating the claimed reduction."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Within the motion tier, it directly connects the explanatory-gap case to a positive consciousness-first account of physical structure."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The reply gives a genuine rival model but does not fully compare its unifying gain with the strongest multilevel physicalist account."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes accounting for physical reality through underlying facts about consciousness, invokes a logical construction, and claims a one-kind ontology covering experience and physics.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-integrating-private-and-physical-knowledge",
+      "sectionId": "first-person-data-and-method",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "Because consciousness is privately known rather than publicly observed, an adequate inquiry must explain how conscious and physical reality fit together rather than stop at experimental observables.",
+      "sourceSpan": {
+        "startEvent": 2063,
+        "endEvent": 2114
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Goff contrasts consciousness with other scientific unobservables and develops his own requirement for unifying private experience with physical knowledge.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-physicalist-completion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-multilevel-explanatory-mapping",
+          "con-private-data-within-science"
+        ],
+        "components": [
+          {
+            "componentId": "pro-integrating-private-and-physical-knowledge-component-01",
+            "targetMoveId": "con-multilevel-explanatory-mapping",
+            "text": "Explain how a complete causal and predictive map answers how privately known consciousness and publicly known physical reality fit together.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-integrating-private-and-physical-knowledge-component-02",
+            "targetMoveId": "con-private-data-within-science",
+            "text": "Distinguish admitting private evidence into inquiry from explaining its relation to physical knowledge.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly states the residual integration question left by complete neuroscience and distinguishes it from merely admitting private evidence, though it asserts that the question lies outside science.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts the decisive explanatory-sufficiency premise and clearly states the unresolved replacement demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Private knowledge, physical knowledge, causal neuroscience, and the remaining fit question are explicitly and consistently distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The residual question is clearly motivated, but the categorical claim that it is not scientific depends on a contested boundary of science."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Science may include private evidence and regard a complete multilevel causal map as the relevant account of how the domains fit.",
+        "decisiveQualification": "The pro challenge asks whether such mapping explains intrinsic qualitative identity rather than only systematic relations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "A complete causal map can coherently leave a further identity or grounding question, although the claim that this must be extra-scientific is underargued."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The contrast between modes of knowledge specifically motivates the integration demand, but no independent evidence establishes that neuroscience cannot answer it."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within the motion tier, it directly argues that physicalist mapping remains incomplete and states the consciousness-first route's integration requirement."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The response accurately distinguishes methodological inclusion from explanatory integration and identifies the strongest remaining qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt says complete neuroscience of causal roles would still leave unanswered how privately known consciousness and differently known physical reality fit together.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-physical-duplicate-conscious",
+      "sectionId": "causation-zombies-and-combination",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "A physically and behaviorally identical duplicate would be equally conscious because consciousness is a higher-level concept instantiated by its physical organization.",
+      "sourceSpan": {
+        "startEvent": 2393,
+        "endEvent": 2438
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Carroll answers an audience challenge in the first person and explicitly states his position on physical duplicates, zombies, and higher-level consciousness.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-behavioral-causation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-zombie-multiple-realization"
+        ],
+        "components": [
+          {
+            "componentId": "con-physical-duplicate-conscious-component-01",
+            "targetMoveId": "pro-zombie-multiple-realization",
+            "text": "Establish that a total physical duplicate could differ in consciousness despite instantiating exactly the same higher-level physical organization.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly rejects the conceivability premise by defining consciousness as a higher-level concept instantiated by the duplicated organization and states that the duplicate must therefore be equally conscious.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the disputed duplication premise and states the consequence that the alleged zombie is conscious."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Physical and behavioral identity, the duplicate, and higher-level consciousness are consistently specified down to atomic organization."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Necessity follows on the speaker's higher-level conception, but that conception is asserted rather than shown to exclude every metaphysical zombie possibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro view treats identical physical structure as multiply realizable by conscious or nonconscious intrinsic bases.",
+        "decisiveQualification": "Carroll's conclusion requires total physical duplication to include every fact relevant to the higher-level conscious property."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "If consciousness is wholly instantiated by higher-level physical organization, identical organization entails consciousness; the disputed instantiation premise remains explicit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The duplicate case cleanly illustrates the entailment, but empirical or independent support for the constitutive higher-level premise is limited."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports the physicalist behavioral-causation bridge against zombie multiple realization."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply directly addresses the strongest zombie formulation, though it largely rests on the physicalist instantiation thesis under dispute."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects atom-for-atom behavioral zombies and says an identical copy is equally conscious because consciousness is a human-level concept.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-red-relational-answer",
+      "sectionId": "qualitative-experience-and-physical-explanation",
+      "side": "con",
+      "speaker": "Sean Carroll",
+      "moveKind": "reply",
+      "proposition": "Neither physicalism nor panpsychism supplies more than relational and behavioral answers about the intrinsic character of seeing red.",
+      "sourceSpan": {
+        "startEvent": 2637,
+        "endEvent": 2660
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator yields to Sean, whose answer directly challenges the audience member's Fred example before Philip responds.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-qualitative-explanatory-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-quantitative-qualitative-mismatch",
+          "pro-mary-new-experiential-information"
+        ],
+        "components": [
+          {
+            "componentId": "con-red-relational-answer-component-01",
+            "targetMoveId": "pro-quantitative-qualitative-mismatch",
+            "text": "Specify a nonrelational answer to what experienced redness is that panpsychism can provide but physicalism cannot.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-red-relational-answer-component-02",
+            "targetMoveId": "pro-mary-new-experiential-information",
+            "text": "Show that the demanded intrinsic information can be articulated rather than only acquired through having the experience.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses the requested nonrelational articulation as unavailable to either ontology and states that only relational answers are intelligible, though this limitation is asserted rather than demonstrated.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within diagnostic defeats, it explicitly challenges the explanatory demand itself and applies the consequence symmetrically to both positions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The question, relational answers, and symmetry between physicalism and panpsychism are clearly recoverable and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The rhetorical inability to envision another answer supports skepticism but not the stronger implication that no nonrelational explanation is possible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Panpsychism may identify redness with an intrinsic conscious quality even if that quality cannot be verbally conveyed to someone lacking it.",
+        "decisiveQualification": "Incommunicability does not by itself show that an ontology lacks an intrinsic identity claim or explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Symmetric inability would weaken the comparative objection, but the inference from limits on verbal answers to limits on ontology remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The Fred exchange motivates the communication problem, while the universal restriction to relational answers rests mainly on assertion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claimed asymmetry underlying the qualitative explanatory gap."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The reply fairly presses a symmetric articulation problem but materially compresses the strongest acquaintance-based panpsychist answer."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what Fred could report about seeing red and argues that neither panpsychism nor physicalism can provide more than relational answers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-combination-problem-contained",
+      "sectionId": "causation-zombies-and-combination",
+      "side": "pro",
+      "speaker": "Philip Goff",
+      "moveKind": "reply",
+      "proposition": "The combination problem is a major but comparatively young challenge for panpsychism, and it is separable from the view's monistic claim that physical reality is grounded in consciousness.",
+      "sourceSpan": {
+        "startEvent": 2865,
+        "endEvent": 2931
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Philip resumes after Sean's brief aside, explicitly identifies the combination problem, and develops a sustained defense of pansychism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-panpsychism-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-panpsychism-core-theory-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "pro-combination-problem-contained-component-01",
+            "targetMoveId": "con-panpsychism-core-theory-dilemma",
+            "text": "Explain what physics-preserving panpsychism adds despite unresolved questions about how simple conscious entities form unified subjects.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-combination-problem-contained-component-02",
+            "targetMoveId": "con-panpsychism-core-theory-dilemma",
+            "text": "Acknowledge whether the combination problem remains a substantial burden for a complete consciousness-first theory.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply acknowledges the combination problem while separating it from the claimed monistic grounding benefit, thereby contacting both residual burden and added-value demands, though it does not solve combination.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within full answers, it clearly addresses the objection's scope and preserves a stated benefit, but offers containment rather than resolution."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The combination problem and the independent monistic-grounding claim are expressly separated, with the problem acknowledged as serious."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move modestly claims separability and continuing theoretical attraction rather than claiming that the combination problem has been solved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Without an account of subject combination, the proposed simple conscious realizers may fail to ground unified human consciousness.",
+        "decisiveQualification": "Separating monistic attraction from combination does not complete the route's burden to explain unified subjects."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "A theory can retain monistic grounding benefits while facing an independent combination problem, although route completion still requires addressing that problem."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The conceptual separation is clear, but the claim that grounding is unaffected receives no detailed account of how unified consciousness emerges."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it attacks the claim that an unresolved subsidiary problem eliminates the consciousness-first theory's explanatory addition."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The response acknowledges the objection as major and preserves its force while arguing only that a distinct theoretical benefit remains."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says physical reality can still bottom out in consciousness and that this monistic benefit is distinct from the combination problem.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule independently of the move ratings and response records.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct unscored debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion beyond effects already recorded."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule independently of the move ratings and response records.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct unscored debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion beyond effects already recorded."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

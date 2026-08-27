@@ -1,0 +1,1881 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "190",
+  "debateId": "huemer-oppy-souls-personal-identity-2022",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-nonphysical-subject-survival-route",
+      "side": "pro",
+      "description": "Establish that consciousness, intentionality, agency, and personal identity cannot be exhausted by physical descriptions, then identify a single nonphysical subject capable of persisting independently of its present body and entering later embodiment.",
+      "successCriteria": "The route succeeds if the mental features and identity conditions require a nonphysical bearer, bodily dependence is compatible with that bearer's continued existence, and a coherent mechanism or argument supports survival beyond bodily death.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-nonphysical-survivor",
+        "tier": "motion",
+        "description": "Show that a conscious person includes one nonphysical subject whose identity can continue after the present organism dies."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-mental-nonphysicality",
+          "tier": "central",
+          "description": "Establish that phenomenal character or intrinsic intentionality is not captured by an exclusively physical inventory."
+        },
+        {
+          "bridgeId": "pro-central-subject-from-properties",
+          "tier": "central",
+          "description": "Connect irreducible mental properties to a single subject that bears and unifies the person's mental states."
+        },
+        {
+          "bridgeId": "pro-central-personal-persistence",
+          "tier": "central",
+          "description": "Supply identity conditions under which that subject can remain the same person across bodily discontinuity or renewed embodiment."
+        },
+        {
+          "bridgeId": "pro-central-survival-possibility",
+          "tier": "central",
+          "description": "Explain why dependence of embodied capacities on the brain does not entail destruction of the subject when the brain ceases functioning."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-agency",
+          "tier": "subsidiary",
+          "description": "Use reason-responsive agency or freedom to reinforce the distinction between mentality and bottom-up physical causation."
+        },
+        {
+          "bridgeId": "pro-subsidiary-cosmological-support",
+          "tier": "subsidiary",
+          "description": "Provide cosmological or probabilistic support for recurrence or another opportunity for postmortem embodiment."
+        }
+      ]
+    },
+    {
+      "routeId": "con-natural-organism-route",
+      "side": "con",
+      "description": "Account for consciousness, intentionality, agency, and personal unity as properties or activities of natural organisms at appropriate explanatory scales, while challenging any inference from mental distinctiveness to a separable enduring substance.",
+      "successCriteria": "The route succeeds if naturalistic organism-level explanations accommodate the cited mental phenomena, brain dependence undermines an independently functioning bearer, and the proposed identity or cosmological grounds for postmortem survival are not required.",
+      "motionBridge": {
+        "bridgeId": "con-motion-organismic-person",
+        "tier": "motion",
+        "description": "Show that the conscious person is a natural organism and that no independently surviving nonphysical subject is needed."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-multiscale-naturalism",
+          "tier": "central",
+          "description": "Explain mental properties at the organismic scale without reducing them to microphysical vocabulary or adding another substance."
+        },
+        {
+          "bridgeId": "con-central-phenomenal-functional-account",
+          "tier": "central",
+          "description": "Give physicalist-compatible accounts of phenomenal knowledge, intentional attitudes, and unified consciousness."
+        },
+        {
+          "bridgeId": "con-central-brain-dependence",
+          "tier": "central",
+          "description": "Use the systematic dependence of mental capacities on brain states and integrity to oppose separable personal existence."
+        },
+        {
+          "bridgeId": "con-central-survival-underdetermination",
+          "tier": "central",
+          "description": "Challenge the identity conditions and cosmological premises offered to support recurrence or postmortem persistence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-natural-agency",
+          "tier": "subsidiary",
+          "description": "Preserve deliberation and reason-responsive action through compatibilist or higher-scale causal explanation."
+        },
+        {
+          "bridgeId": "con-subsidiary-embodiment-thresholds",
+          "tier": "subsidiary",
+          "description": "Relate the onset and loss of conscious capacities to the presence of suitable neural organization."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "phenomenal-consciousness-and-physical-explanation",
+      "title": "Phenomenal consciousness and physical explanation",
+      "weightPercent": 24,
+      "rationale": "The status of qualia and phenomenal knowledge determines whether first-person experience supplies evidence for facts or properties beyond a natural physical account."
+    },
+    {
+      "sectionId": "mental-causation-intentionality-and-agency",
+      "title": "Intentionality, mental causation, and agency",
+      "weightPercent": 17,
+      "rationale": "Competing accounts of aboutness, reason-responsive action, and higher-level causation test whether mental activity requires a nonphysical source or fits an organismic framework."
+    },
+    {
+      "sectionId": "nonphysical-properties-subjects-and-personal-identity",
+      "title": "From nonphysical properties to subjects and personal identity",
+      "weightPercent": 24,
+      "rationale": "The motion concerns substances rather than merely unusual properties, making the inference to a unified subject and its criteria of persistence an indispensable burden."
+    },
+    {
+      "sectionId": "cosmology-recurrence-and-postmortem-survival",
+      "title": "Cosmology, recurrence, and postmortem survival",
+      "weightPercent": 20,
+      "rationale": "The temporal probability argument, recurrence mechanism, and rival cosmological models bear on whether personal existence can recur after bodily death."
+    },
+    {
+      "sectionId": "brain-dependence-embodiment-and-disembodied-capacity",
+      "title": "Brain dependence, embodiment, and disembodied capacity",
+      "weightPercent": 15,
+      "rationale": "Evidence concerning brain impairment, suitable neural conditions, and the capacities of a disembodied subject bears directly on separability and survival."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-qualia-explanandum",
+      "sectionId": "phenomenal-consciousness-and-physical-explanation",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Qualia resist physical reduction because their felt first-person character is itself the phenomenon requiring explanation, unlike the mental effects of externally reduced phenomena such as heat.",
+      "sourceSpan": {
+        "startEvent": 155,
+        "endEvent": 246
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly addresses Huemer, and the uninterrupted answer presents his stated argument from qualia.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-mental-nonphysicality"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents the first-person character of qualia as an explanandum that an exclusively physical inventory must capture.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It directly develops a central nonphysicality consideration, though the reduction-resistance inference remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The qualia claim and heat contrast are recoverable, with resistance to reduction functioning as an implicit rather than absolute conclusion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The source presents explanatory difficulty rather than a demonstrative refutation, matching the intuitive support actually supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The contrast identifies a coherent explanatory demand, but the bridge from first-person character to failed physical reduction is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The bat-style experiential contrast and heat comparison support the explanandum, but rival physical explanations are not seriously compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central bridge concerning whether phenomenal character is captured physically."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No sufficiently developed rival interpretation is evaluated within this constructive span."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes first-person experience, the need for similar experience to understand it, and difficulty explaining qualia physically.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mary-state-acquaintance",
+      "sectionId": "phenomenal-consciousness-and-physical-explanation",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Mary's acquisition of experiential knowledge is compatible with identity theory because fully knowing certain physical brain states may require occupying those states.",
+      "sourceSpan": {
+        "startEvent": 252,
+        "endEvent": 393
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator turns directly to Oppy, whose extended answer identifies his identity theory and applies it to the Mary case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-phenomenal-functional-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-qualia-explanandum"
+        ],
+        "components": [
+          {
+            "componentId": "con-mary-state-acquaintance-component-01",
+            "targetMoveId": "pro-qualia-explanandum",
+            "text": "It contacts the demand that physicalism explain privileged first-person access to qualitative experience.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers a physicalist-compatible explanation: complete acquaintance with some brain states may require occupying them, so experiential novelty need not imply nonphysical facts.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the central first-person-access challenge with a clear identity-theoretic alternative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The restricted claim about fully knowing certain brain states is clear and explicitly modal rather than universal."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The proposal is advanced as a live compatibility account, and its limited evidential force is appropriately signaled."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Experiential knowledge reveals a nonphysical qualitative fact absent from physical knowledge.",
+        "decisiveQualification": "The physicalist can distinguish knowing descriptions of a state from fully knowing it by occupying it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The state-acquaintance distinction coherently blocks the immediate inference to nonphysical facts, with one implicit account of full knowledge."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The brain-state proposal is relevant and specific, but the claim that occupation is required is not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports a central physicalist-compatible account of phenomenal knowledge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply takes the experiential novelty seriously and answers it without reducing it merely to a verbal confusion."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies perceptual states with brain states and asks whether their experiential dimension can be fully known only by being in them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scale-specific-natural-properties",
+      "sectionId": "phenomenal-consciousness-and-physical-explanation",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Reality contains scale-specific properties that cannot be defined from lower-scale properties, without making the lower scale metaphysically privileged or abandoning naturalism.",
+      "sourceSpan": {
+        "startEvent": 530,
+        "endEvent": 632
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Oppy announces that he will explain his own view and delivers a sustained first-person account of properties across physical scales.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-multiscale-naturalism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-qualia-explanandum"
+        ],
+        "components": [
+          {
+            "componentId": "con-scale-specific-natural-properties-component-01",
+            "targetMoveId": "pro-qualia-explanandum",
+            "text": "It replaces microphysical definability with natural explanation at the scale where qualitative properties occur.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies a multiscale naturalist demand: failure of lower-scale definition need not imply nonphysicality because natural properties may be autonomous at higher scales.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "The reframe preserves the explanatory issue and directly denies that irreducibility to lower-scale vocabulary establishes nonnatural properties."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Scale, lower-scale definability, autonomy, and naturalism remain distinguishable and the claim is explicitly generalized across scales."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The multiscale account is offered as a defensible naturalist framework rather than as a completed derivation of consciousness."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "If qualitative properties cannot be reduced to microphysical properties, they are nonphysical.",
+        "decisiveQualification": "Non-definability from a lower scale can indicate scale autonomy without placing the property outside nature."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The distinction between scale autonomy and metaphysical privilege is clear, though its application to qualia retains an implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Chemical and other scale examples support the framework, but its success for phenomenal properties is not specifically demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central multiscale-naturalism bridge at a high position within that tier."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply preserves the irreducibility intuition while disputing the inference from irreducibility to metaphysical nonphysicality."
+        }
+      },
+      "evidenceBasis": "The excerpt asserts that chemical and other scale-specific properties may be autonomous from lower-scale definition without leaving naturalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mary-new-qualitative-fact",
+      "sectionId": "phenomenal-consciousness-and-physical-explanation",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Mary gains propositional knowledge of a determinate qualitative property, not merely an ability, because seeing red rules out alternative ways that the experience could have felt.",
+      "sourceSpan": {
+        "startEvent": 750,
+        "endEvent": 772
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly solicits Huemer's response, and Huemer directly contrasts his fact-based interpretation with Oppy's skills account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-phenomenal-functional-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-mary-state-acquaintance",
+          "con-scale-specific-natural-properties"
+        ],
+        "components": [
+          {
+            "componentId": "pro-mary-new-qualitative-fact-component-01",
+            "targetMoveId": "con-mary-state-acquaintance",
+            "text": "It directly disputes that Mary's novelty is exhausted by ability or state acquaintance.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-mary-new-qualitative-fact-component-02",
+            "targetMoveId": "con-scale-specific-natural-properties",
+            "text": "It supplies a determinate qualitative fact but does not directly refute the scale-specific naturalist classification of that fact.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply argues that seeing red eliminates qualitative possibilities and therefore supplies propositional knowledge, directly contacting the acquaintance account but not the separate multiscale-naturalist ontology.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "It contacts the decisive Mary component clearly while leaving the independent scale-specific naturalist response unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The fact claimed, its qualitative alternatives, and the evidential elimination relation are stated with stable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Ruling out qualitative possibilities supports new propositional discrimination, but does not by itself establish that the fact is nonphysical."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mary acquires only an ability or acquaintance by entering the relevant physical state.",
+        "decisiveQualification": "Her experience also discriminates among ways the qualitative character could have been."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The possibility-elimination argument coherently supports new propositional knowledge, though the route to nonphysicality remains unstated."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The determinate red-experience example supports the epistemic claim, but competing modes-of-presentation accounts are not resolved."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central phenomenal-functional account through the Mary case."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The reply fairly identifies what the acquaintance view captures and adds a specific propositional-content challenge."
+        }
+      },
+      "evidenceBasis": "The excerpt says Mary learns that seeing red is like this because her first experience rules out alternative qualitative characters.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-property-to-substance-route",
+      "sectionId": "nonphysical-properties-subjects-and-personal-identity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Qualia and intentionality support property dualism, while the problem of personal identity provides the further route from nonphysical properties to substance dualism.",
+      "sourceSpan": {
+        "startEvent": 977,
+        "endEvent": 1011
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the intentionality question to Huemer, and the uninterrupted answer develops his stated dualist argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-subject-from-properties"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move identifies personal identity as the required bridge from allegedly nonphysical mental properties to a substance bearing them.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It correctly identifies the indispensable bridge but supplies little of the personal-identity argument needed to complete it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Property dualism, substance dualism, and the proposed personal-identity bridge are distinguishable and cautiously stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move acknowledges that a further argument is required, though saying the remaining step is not far understates its burden."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The route is intelligible, but the crucial inference from irreducible properties to one substance is asserted rather than supplied."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move relies on prior qualia and intentionality claims and provides no developed identity evidence within this span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the indispensable central bridge from mental properties to a unified subject."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span announces a route rather than engaging a developed competing interpretation of that route."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly separates property dualism from substance dualism and says personal identity is needed to connect them.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-intrinsic-intentionality",
+      "sectionId": "mental-causation-intentionality-and-agency",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Tree rings have no intrinsic aboutness; they function as evidence only because observers interpret them through mental states that represent the tree's age.",
+      "sourceSpan": {
+        "startEvent": 1049,
+        "endEvent": 1062
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The exchange directly follows a challenge posed to Huemer, and his answer distinguishes intrinsic from derivative intentionality.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-mental-nonphysicality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scale-specific-natural-properties"
+        ],
+        "components": [
+          {
+            "componentId": "pro-intrinsic-intentionality-component-01",
+            "targetMoveId": "con-scale-specific-natural-properties",
+            "text": "It challenges a naturalized example of aboutness by distinguishing intrinsic representation from observer-derived evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that tree rings possess only derivative intentionality because mental interpreters, rather than the rings themselves, represent the tree's age.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It explicitly contacts the naturalized-aboutness example and identifies the precise intrinsic-versus-derivative distinction at issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "Intrinsic and derivative intentionality are used consistently, and the claim is restricted to the tree-ring example."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The interpretive account is presented with modest language and is adequately fitted to the illustrative case."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Tree rings are about a tree's age because they reliably carry information about it.",
+        "decisiveQualification": "Reliability as evidence may depend on an interpreting mental state and therefore establish only derivative aboutness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The distinction is coherently applied, though the general conclusion that only mentality has intrinsic aboutness remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The tree-ring analysis is a clear example, but one example does not exclude all naturalistic accounts of intrinsic content."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It materially supports mental nonphysicality, though intentionality is only one part of that central bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply recognizes the informational relation and fairly explains why it may not amount to intrinsic intentionality."
+        }
+      },
+      "evidenceBasis": "The excerpt says rings are merely evidence and that the observer's mental state, not the rings, represents the tree's age.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-functional-intentionality",
+      "sectionId": "mental-causation-intentionality-and-agency",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Functionalist accounts can explain intentional attitudes within identity theory, making intentionality less troublesome for physicalism than consciousness or qualia.",
+      "sourceSpan": {
+        "startEvent": 1065,
+        "endEvent": 1090
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the discussion to Oppy, whose answer contrasts physicalist treatments of intentionality with the harder qualia problem.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-phenomenal-functional-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-intrinsic-intentionality"
+        ],
+        "components": [
+          {
+            "componentId": "con-functional-intentionality-component-01",
+            "targetMoveId": "pro-intrinsic-intentionality",
+            "text": "It answers the aboutness challenge by invoking functionalist accounts of beliefs, desires, and intentional attitudes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly supplies a physicalist-compatible family of accounts for intentional attitudes, while conceding that consciousness and qualia present a harder problem.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the intentionality demand clearly, although it cites the functionalist option more than it develops its mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is carefully restricted to intentional attitudes and explicitly distinguishes them from consciousness and qualia."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Functionalism is presented as a reasonable account rather than a conclusive solution, appropriately matching the abbreviated warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Intrinsic aboutness cannot be derived from nonintentional physical relations.",
+        "decisiveQualification": "Functional roles may constitute belief and desire content even if qualia remain independently difficult."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Functionalism is a coherent possible answer, but the bridge from functional role to genuinely intrinsic content is not developed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The move identifies a recognized explanatory structure but gives no representative functional analysis or comparison with the derivative-content objection."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly supports the central physicalist-compatible account of intentional attitudes."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response targets the strongest intentionality concern while expressly avoiding an overbroad claim about phenomenal consciousness."
+        }
+      },
+      "evidenceBasis": "The excerpt says identity theorists can also be functionalists and obtain a reasonable account of beliefs, desires, and aboutness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-compatibilist-agency",
+      "sectionId": "mental-causation-intentionality-and-agency",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Macroscopic indeterminacy does not yield libertarian freedom, while action from normally acquired beliefs and desires without defeating interference supplies sufficient compatibilist freedom.",
+      "sourceSpan": {
+        "startEvent": 1216,
+        "endEvent": 1315
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly asks Oppy for his response, and the sustained answer states both his indeterminist cosmology and compatibilist account of agency.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-natural-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-property-to-substance-route"
+        ],
+        "components": [
+          {
+            "componentId": "con-compatibilist-agency-component-01",
+            "targetMoveId": "pro-property-to-substance-route",
+            "text": "It contests the need for an extra substance by offering organism-level compatibilist conditions for free action.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply rejects libertarian freedom as unnecessary and substitutes action from normally acquired beliefs and desires without defeating interference as sufficient freedom.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It contacts the agency-based pressure on physicalism, although it does not directly address the separate property-to-substance identity bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Libertarian and compatibilist freedom are kept distinct, and the proposed sufficient conditions are reasonably clear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents an inclined compatibilist position and does not claim that the short account settles every freedom dispute."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Genuine freedom requires the ability to do otherwise in a libertarian sense.",
+        "decisiveQualification": "Reason-guided action without abnormal interference may satisfy the practical freedom condition even under physical causation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The compatibilist criterion is internally coherent, though its sufficiency rather than merely stipulative adequacy is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The beliefs-and-desires account is specific but receives little support against manipulation or sourcehood objections."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary natural-agency bridge within that tier."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply states the libertarian demand before offering a substantive compatibilist replacement rather than caricaturing it."
+        }
+      },
+      "evidenceBasis": "The excerpt denies strong libertarian freedom and defines free action through normally acquired beliefs and desires without interfering defeat.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-no-extra-mental-substance",
+      "sectionId": "nonphysical-properties-subjects-and-personal-identity",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Emergent or downward-causal organization does not establish substance dualism because higher-scale events remain events occurring in the brain, without an additional mental substance.",
+      "sourceSpan": {
+        "startEvent": 1426,
+        "endEvent": 1434
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Oppy answers the suggestion that dualists would claim victory and explicitly distinguishes the emergent story from the existence of mental substances.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-subject-from-properties"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-property-to-substance-route"
+        ],
+        "components": [
+          {
+            "componentId": "con-no-extra-mental-substance-component-01",
+            "targetMoveId": "pro-property-to-substance-route",
+            "text": "It identifies that higher-scale or downward causation does not entail an additional substance bearing mental events.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses the inference failure: all cited higher-scale activity may remain brain activity, so emergence alone supplies no premise establishing another mental substance.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly attacks the decisive property-to-substance inference and states the consequence for substance dualism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The distinction between higher-scale brain events and an additional mental substance is concise and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that the described emergence story does not itself establish another substance follows from the absent premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Downward-causal or emergent mental organization indicates a distinct mental substance.",
+        "decisiveQualification": "Distinct causal organization can consist entirely in events occurring in the brain without a second bearer."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference diagnosis is clear and valid, with only the broader positive organismic ontology left outside this short span."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The warrant is conceptual and directly tied to the described story, though no detailed emergent model is provided."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central bridge from nonphysical properties or causation to a separate subject."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply grants higher-scale organization and targets only the unsupported ontological inference to an extra substance."
+        }
+      },
+      "evidenceBasis": "The excerpt says no mental substance appears in the proposed story because human-scale events remain events happening in the brain.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-infinite-time-reincarnation-dilemma",
+      "sectionId": "cosmology-recurrence-and-postmortem-survival",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "If time is infinite in both directions and each person lives only once, the probability of being alive now is zero; therefore reincarnation occurs or the infinite-past assumption is false.",
+      "sourceSpan": {
+        "startEvent": 1681,
+        "endEvent": 1713
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly invites Huemer to present his argument, and the ensuing uninterrupted answer uses his stated assumptions and conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-cosmological-support"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move uses an infinite-past sampling argument to support recurrence, while allowing rejection of the infinite-past premise as the alternative.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It supplies a clear dilemma relevant to cosmological support, but its probability measure and link to personal recurrence remain underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The assumptions and dilemma are explicit, but the reference class and probability of being alive at a specific time are not fully fixed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The zero-probability conclusion depends on an unstated sampling measure, so the dilemma is stronger than the supplied warrant supports."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person can live once in an infinite past and future without being randomly sampled from all times.",
+        "decisiveQualification": "The zero-probability inference requires a justified temporal self-location measure rather than infinity alone."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 59,
+          "rationale": "The dilemma is intelligible, but the unsupported uniform-sampling premise creates a substantial gap in the zero-probability inference."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The fact of present existence is invoked, but neither the temporal measure nor recurrence mechanism is independently supported."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary cosmological bridge and sits near the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The argument states its temporal alternatives but omits the strongest measure-theoretic qualification to its probability premise."
+        }
+      },
+      "evidenceBasis": "The excerpt assumes infinite past and future time, single lives, and infers that the chance of being alive specifically now would be zero.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-finite-past-no-recurrence",
+      "sectionId": "cosmology-recurrence-and-postmortem-survival",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Contemporary cosmology makes a finite past and infinite future more plausible than an infinite past, while expansion and entropy considerations also undermine cosmic recurrence.",
+      "sourceSpan": {
+        "startEvent": 1863,
+        "endEvent": 1925
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly contrasts Huemer's temporal view with the view favored by physics and supplies cosmological and entropy-based considerations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-cosmological-support"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-infinite-time-reincarnation-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "con-finite-past-no-recurrence-component-01",
+            "targetMoveId": "pro-infinite-time-reincarnation-dilemma",
+            "text": "It rejects the dilemma's infinite-past premise by appealing to a finite-past, infinite-future cosmology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly selects and supports the dilemma's permitted alternative, adding expansion and entropy considerations against recurrent cosmic conditions.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the vulnerable cosmological premise and also addresses the recurrence assumption underlying the proposed support."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Finite past, infinite future, recurrence, expansion, and entropy are clearly separated and comparatively qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The view is presented as more plausible under contemporary physics, not as metaphysically certain."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Time is infinite in both directions, activating the reincarnation dilemma.",
+        "decisiveQualification": "A finite-past cosmology avoids the dilemma, and recurrence requires further physical conditions not supplied by infinity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Rejecting the infinite-past premise coherently blocks the dilemma, with the empirical cosmology warrant appropriately separated."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Contemporary cosmology, expansion, and entropy are specific supports, though documentation and rival-model comparison remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary cosmological-support bridge at the top of its tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply addresses both temporal extent and recurrence rather than treating the argument as depending on only one premise."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the infinite-past view with a physics-favored finite past and separately raises expansion, entropy, and recurrence concerns.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-expanding-heat-death",
+      "sectionId": "cosmology-recurrence-and-postmortem-survival",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Standard projections of an eternally expanding universe imply eventual proton and black-hole decay followed only by sparse radiation, so stars, people, and recurrent conditions never return.",
+      "sourceSpan": {
+        "startEvent": 1951,
+        "endEvent": 1979
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker answers Huemer's finite-cycling premise and describes the long-term cosmological future presented as the serious physical projection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-cosmological-support"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-infinite-time-reincarnation-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "con-expanding-heat-death-component-01",
+            "targetMoveId": "pro-infinite-time-reincarnation-dilemma",
+            "text": "It challenges the recurrence route by describing an expanding future in which complex conditions never return.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies the physical recurrence premise through a concrete heat-death projection involving proton decay, black-hole decay, and sparse radiation.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the recurrence mechanism, although it does not independently address the argument's self-location probability premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The projection is clearly restricted to standard eternally expanding cosmology and distinguishes its successive future stages."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The standard projection supports a strong expectation, though categorical language about nonreturn exceeds the excerpt's compressed model comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Infinite future duration makes repeated stars, organisms, or personal conditions inevitable.",
+        "decisiveQualification": "Under continuing expansion and heat death, unlimited duration need not regenerate low-entropy complex structures."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The heat-death sequence coherently undermines recurrence conditional on the projected cosmology, with that condition clearly identifiable."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Specific decay stages provide representative support, but alternative cosmological models and fluctuation possibilities are not compared."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary cosmological-support bridge with a concrete nonrecurrence model."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply directly addresses the intuitive infinity-to-recurrence inference with a physically specified countermodel."
+        }
+      },
+      "evidenceBasis": "The excerpt describes black-hole decay, continuing expansion, sparse radiation, and the nonreturn of protons, stars, and people.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-reason-responsive-mental-causation",
+      "sectionId": "mental-causation-intentionality-and-agency",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Blind bottom-up physical causes cannot ground free will because they do not respond to reasons, whereas causation by a higher-level mental subject can make conduct reason-responsive.",
+      "sourceSpan": {
+        "startEvent": 2517,
+        "endEvent": 2570
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the question to Huemer, and the ensuing first-person answer restates and develops Huemer's earlier free-will argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-compatibilist-agency",
+          "con-no-extra-mental-substance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-reason-responsive-mental-causation-component-01",
+            "targetMoveId": "con-compatibilist-agency",
+            "text": "It disputes that action caused by physical beliefs and desires is sufficiently reason-responsive for genuine freedom.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-reason-responsive-mental-causation-component-02",
+            "targetMoveId": "con-no-extra-mental-substance",
+            "text": "It proposes higher-level mental causation but does not establish that its higher-level cause is an additional substance.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the compatibilist agency criterion by contrasting blind bottom-up causes with reason-responsive mental causation, but it leaves the no-extra-substance diagnosis unresolved.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It directly contacts the agency component while failing to answer the distinct demand for an inference to another substance."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contrast is recoverable, but 'respond to reasons' shifts between causes possessing reasons and behavior tracking reasons."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Claiming that only a higher-level mental cause permits freedom exceeds the argument because physical systems may implement reason sensitivity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Physical belief-desire processes can implement sensitivity to reasons without causes themselves having reasons.",
+        "decisiveQualification": "The reply treats bottom-up causes as blind but does not exclude higher-scale physical reason responsiveness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The argument equivocates between a cause having reasons and a system responding to reasons, leaving the exclusivity inference unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The blind-cause characterization is asserted and does not compare compatibilist models of higher-scale physical control."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary agency bridge, though it does not complete a substance inference."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The physicalist alternative is materially weakened by moving from nonconscious microcauses to the absence of organism-level reason tracking."
+        }
+      },
+      "evidenceBasis": "The excerpt calls physical causes blind and nonresponsive to reasons, then claims freedom requires causation by the higher-level mental thing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resemblance-cross-species-gap",
+      "sectionId": "nonphysical-properties-subjects-and-personal-identity",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "A resemblance-based account of personal identity does not readily support reincarnation as an animal because an animal would not be a qualitative duplicate of the person.",
+      "sourceSpan": {
+        "startEvent": 2702,
+        "endEvent": 2715
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly challenges Huemer's reincarnation proposal by invoking the resemblance and duplication conditions from Huemer's own personal-identity argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-personal-persistence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-infinite-time-reincarnation-dilemma",
+          "pro-reason-responsive-mental-causation"
+        ],
+        "components": [
+          {
+            "componentId": "con-resemblance-cross-species-gap-component-01",
+            "targetMoveId": "pro-infinite-time-reincarnation-dilemma",
+            "text": "It challenges the personal-identity consequence by showing that recurrence alone does not identify a later animal as the same person.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resemblance-cross-species-gap-component-02",
+            "targetMoveId": "pro-reason-responsive-mental-causation",
+            "text": "The cross-species resemblance objection does not contact the separate reason-responsive causation argument.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly raises a missing identity condition for animal reincarnation: a dog or other animal would not be the qualitative duplicate required by the resemblance account.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "It contacts the decisive personal-identity limitation of the recurrence proposal, while leaving the agency move outside its scope."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Resemblance, qualitative duplication, and cross-species reincarnation are clearly distinguished and the objection is cautiously framed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is limited to a prima facie gap in the resemblance account and matches the illustrative support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A future animal could be the same person through sufficient resemblance or qualitative duplication.",
+        "decisiveQualification": "Large cross-species differences make the required duplicate relation unclear without an independent soul-identity criterion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The objection coherently exposes a mismatch between duplication-based identity and cross-species embodiment, subject to further identity criteria."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The dog comparison is apt, but the exact resemblance threshold and full personal-identity theory are not developed."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central personal-persistence bridge through a concrete identity-condition gap."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply uses the proponent's resemblance condition and identifies a specific case where its application becomes difficult."
+        }
+      },
+      "evidenceBasis": "The excerpt says qualitative duplication matters to the identity account and observes that a dog is not sufficiently similar to the person.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-soul-reembodiment-alternative",
+      "sectionId": "cosmology-recurrence-and-postmortem-survival",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Reincarnation need not depend on eternal recurrence or qualitative duplication, because unknown conditions might instead cause an enduring soul to enter another living organism.",
+      "sourceSpan": {
+        "startEvent": 2722,
+        "endEvent": 2759
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer recounts in the first person how multiverse duplication inspired his argument and then distinguishes that route from an alternative involving a persisting soul.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-survival-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resemblance-cross-species-gap",
+          "con-expanding-heat-death"
+        ],
+        "components": [
+          {
+            "componentId": "pro-soul-reembodiment-alternative-component-01",
+            "targetMoveId": "con-resemblance-cross-species-gap",
+            "text": "It replaces duplicate-based recurrence with persistence of one soul through embodiment in another organism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-soul-reembodiment-alternative-component-02",
+            "targetMoveId": "con-expanding-heat-death",
+            "text": "It explains why cosmic recurrence is unnecessary but supplies no positive reembodiment mechanism beyond unknown conditions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies separating soul reembodiment from qualitative duplication and eternal recurrence, preserving the survival question through identity of an enduring soul.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It answers the duplicate and recurrence objections at the level of possibility, but the replacement mechanism is explicitly unknown."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternative is clearly modal and distinguishes an enduring soul route from recurrence and duplicate-based routes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Unknown embodiment conditions are offered only as a possibility, which matches the very limited warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Without recurrence or a qualitative duplicate, no later organism satisfies the proposed identity relation.",
+        "decisiveQualification": "Identity could instead be secured by numerical persistence of one soul, if such a soul and embodiment conditions exist."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The alternative is logically possible, but it presupposes the enduring soul whose identity and attachment mechanism require support."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "The proposed unknown conditions are speculative and provide no evidence that reembodiment actually occurs or is physically available."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central survival-underdetermination bridge by supplying an alternative identity route, albeit weakly warranted."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly isolates the duplication objection and provides a coherent conditional alternative, while acknowledging its unknown conditions."
+        }
+      },
+      "evidenceBasis": "The excerpt says eternal recurrence is not essential and suggests that unknown conditions might cause an existing soul to enter a living thing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-single-mental-subject",
+      "sectionId": "nonphysical-properties-subjects-and-personal-identity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "A soul is the single subject bearing all of a person's rational thoughts, sensations, and emotions, rather than an additional rational entity distinct from the ordinary subject of experience.",
+      "sourceSpan": {
+        "startEvent": 2789,
+        "endEvent": 2809
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Huemer by name, and Huemer answers by explicitly defining what he means by a soul and applying that definition to rational thought, sensation, and emotion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-subject-from-properties"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-no-extra-mental-substance",
+          "con-resemblance-cross-species-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-single-mental-subject-component-01",
+            "targetMoveId": "con-no-extra-mental-substance",
+            "text": "It identifies the soul with the ordinary unified subject rather than positing a second rational subject.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-single-mental-subject-component-02",
+            "targetMoveId": "con-resemblance-cross-species-gap",
+            "text": "Defining one current subject does not answer the cross-species persistence or resemblance condition.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply clarifies what the alleged substance is by unifying rational thought, sensation, and emotion in one subject, but it does not establish that this subject is nonphysical or persists.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts the bearer question but leaves the decisive extra-substance inference and persistence challenge substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The soul is consistently defined as the single subject of the person's diverse mental states."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Unity of ordinary experience supports one subject, but confidently labeling that subject a soul does not establish its nonphysical nature."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "One organism or brain can be the unified subject without an additional soul.",
+        "decisiveQualification": "Phenomenal unity identifies a bearer but does not by itself determine whether that bearer is physical or nonphysical."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The unity claim is coherent, but the inference from one subject of experience to one nonphysical substance remains materially missing."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Shared ownership of thoughts, sensations, and emotions supports unity, not the further ontological classification asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central subject-from-properties bridge, though it does not complete that bridge."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The clarification avoids a two-subject caricature, yet omits the strongest organismic interpretation of the same unity evidence."
+        }
+      },
+      "evidenceBasis": "The excerpt defines the soul as the same single subject that has rational thoughts, sensations, emotions, and other mental states.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-eternal-soul-embodiment-conditions",
+      "sectionId": "brain-dependence-embodiment-and-disembodied-capacity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Souls have always existed rather than emerging through evolution, but a soul can inhabit an organism only when suitable physical conditions, such as a brain capable of supporting intelligence, arise.",
+      "sourceSpan": {
+        "startEvent": 3255,
+        "endEvent": 3297
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Huemer to clarify his answer, and Huemer states both the eternal existence of souls and the bodily conditions required for embodied life.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-survival-possibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resemblance-cross-species-gap",
+          "con-no-extra-mental-substance",
+          "con-expanding-heat-death"
+        ],
+        "components": [
+          {
+            "componentId": "pro-eternal-soul-embodiment-conditions-component-01",
+            "targetMoveId": "con-resemblance-cross-species-gap",
+            "text": "It supplies a soul-based embodiment condition that does not require qualitative duplication across organisms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-eternal-soul-embodiment-conditions-component-02",
+            "targetMoveId": "con-no-extra-mental-substance",
+            "text": "It asserts preexisting souls but does not answer the demand for evidence of an additional nonphysical bearer.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-eternal-soul-embodiment-conditions-component-03",
+            "targetMoveId": "con-expanding-heat-death",
+            "text": "It makes embodiment depend on suitable brains but does not answer whether future suitable organisms will exist.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply gives a conditional account of when an eternal soul may inhabit an organism, contacting embodiment compatibility but not evidencing eternal souls or future opportunities.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "It contacts a secondary embodiment component while leaving the decisive existence and future-survival premises unsupported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Eternal existence, inhabitation, suitable physical conditions, and brain-supported intelligence are distinguishable and openly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The embodiment conditions are appropriately tentative, but the claim that souls have always existed lacks corresponding support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Subjects arise only when suitable neural organization develops.",
+        "decisiveQualification": "The proposed soul may preexist while lacking embodiment, but no independent criterion distinguishes this from later subject emergence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Preexistence plus conditional embodiment is internally possible, but no rule connects a particular soul to a particular suitable brain."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "Brain suitability is observationally motivated, while eternal preexistence and inhabitation remain unsupported assertions."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly supports the central survival-possibility bridge by separating existence from operative embodiment."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply recognizes the neural threshold but does not fully confront the naturalist inference from that threshold to subject onset."
+        }
+      },
+      "evidenceBasis": "The excerpt says a soul can inhabit only suitable organisms and identifies brains capable of supporting intelligence as a probable condition.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-survival-without-operative-capacity",
+      "sectionId": "brain-dependence-embodiment-and-disembodied-capacity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "A disembodied soul may survive bodily death while being unable to think or act, because brain damage impairs human capacities and death destroys the entire brain that supports them.",
+      "sourceSpan": {
+        "startEvent": 3304,
+        "endEvent": 3313
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The follow-up question asks Huemer whether disembodied persons can think, and his answer appeals directly to the observed dependence of reasoning and other capacities on the brain.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-survival-possibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-no-extra-mental-substance",
+          "con-expanding-heat-death",
+          "con-resemblance-cross-species-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-survival-without-operative-capacity-component-01",
+            "targetMoveId": "con-no-extra-mental-substance",
+            "text": "It distinguishes continued existence of the subject from its ability to think or act without a functioning brain.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-survival-without-operative-capacity-component-02",
+            "targetMoveId": "con-expanding-heat-death",
+            "text": "The dependence claim does not answer whether any later embodiment opportunity will occur.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-survival-without-operative-capacity-component-03",
+            "targetMoveId": "con-resemblance-cross-species-gap",
+            "text": "Survival without activity does not supply identity conditions for later cross-species embodiment.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the brain-dependence challenge by conceding loss of every operative capacity while preserving bare survival, but it offers no independent reason for the surviving bearer.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It directly answers the capacity question but only partially answers the deeper inference from total brain dependence to subject destruction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Survival, thinking, acting, impairment, and brain destruction are kept distinct, with epistemic limitation expressly acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move says only that an inactive survivor may exist, appropriately matching the absence of evidence for postmortem operation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "If every mental capacity disappears with the brain, the person or subject also ceases to exist.",
+        "decisiveQualification": "Loss of all operations does not logically entail destruction of a bearer, although it leaves the bearer's survival evidentially unsupported."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The capacity-existence distinction is valid, but preserving a wholly inactive subject requires an unprovided individuation and existence warrant."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "Brain-damage evidence supports incapacity after brain destruction, not the additional conclusion that an inactive soul remains."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central bridge concerning whether brain dependence entails destruction of the subject."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply fairly concedes the full dependence evidence and isolates the modal gap between incapacity and nonexistence."
+        }
+      },
+      "evidenceBasis": "The excerpt infers from pervasive brain-damage impairment that destruction of the whole brain would leave the postmortem subject doing nothing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-brain-damage-dependence",
+      "sectionId": "brain-dependence-embodiment-and-disembodied-capacity",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Pervasive impairment from brain damage supports the conclusion that human capacities depend on the brain rather than an independently functioning soul.",
+      "sourceSpan": {
+        "startEvent": 3322,
+        "endEvent": 3335
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly continues Oppy's brain-dependence response and contrasts people with the preceding Iron Man analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-brain-dependence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-survival-without-operative-capacity",
+          "pro-eternal-soul-embodiment-conditions",
+          "pro-single-mental-subject"
+        ],
+        "components": [
+          {
+            "componentId": "con-brain-damage-dependence-component-01",
+            "targetMoveId": "pro-survival-without-operative-capacity",
+            "text": "It presses the systematic dependence of human capacities on brain integrity against an independently functioning soul.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-brain-damage-dependence-component-02",
+            "targetMoveId": "pro-eternal-soul-embodiment-conditions",
+            "text": "The evidence supports neural dependence but does not directly decide whether a nonoperative soul preexists or survives.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-brain-damage-dependence-component-03",
+            "targetMoveId": "pro-single-mental-subject",
+            "text": "It bears on the subject's physical basis but does not analyze the unity-of-subject argument itself.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly reinforces capacity dependence through brain-damage evidence, but it does not close the proponent's distinction between losing operation and losing existence.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the central empirical premise strongly while leaving the bare-survival modal possibility unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The dependence claim is clear, but the suggestion that everything people do is impairable is broad and explicitly acknowledged as assumed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Brain-damage patterns strongly support operational dependence, but extending them to every capacity or the nonexistence of a soul needs qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A soul may survive while all of its capacities require a functioning brain.",
+        "decisiveQualification": "Brain damage establishes dependence of capacities more directly than it establishes destruction of an otherwise inactive bearer."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inductive dependence inference is coherent, though it does not deductively refute a wholly nonoperative surviving subject."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Brain-damage cases are directly relevant empirical support, but systematic scope and the ontological conclusion remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central brain-dependence bridge at a high position within the tier."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply engages the dependence evidence but does not unfairly claim direct observation of postmortem nonexistence."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes evidence that brain damage impairs what people do and contrasts humans with a fictional being independently complete without equipment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-fetal-neural-threshold",
+      "sectionId": "brain-dependence-embodiment-and-disembodied-capacity",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Evidence linking relevant mental states to brain activity makes it reasonable to deny that a soul is attached to a fetus before the requisite neural activity develops.",
+      "sourceSpan": {
+        "startEvent": 3485,
+        "endEvent": 3504
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the fetal-development question to Oppy, whose answer invokes empirical brain and mental-state correlations.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-embodiment-thresholds"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-eternal-soul-embodiment-conditions",
+          "pro-survival-without-operative-capacity"
+        ],
+        "components": [
+          {
+            "componentId": "con-fetal-neural-threshold-component-01",
+            "targetMoveId": "pro-eternal-soul-embodiment-conditions",
+            "text": "It uses the absence of requisite fetal neural activity to challenge attachment of a soul before suitable brain organization.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-fetal-neural-threshold-component-02",
+            "targetMoveId": "pro-survival-without-operative-capacity",
+            "text": "The fetal onset evidence is relevant to dependence but does not directly address postmortem inactive survival.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly applies brain–mental-state evidence to the claimed embodiment threshold, while leaving the exact developmental point and bare preexisting-soul possibility open.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the embodiment-condition component clearly but does not decide whether an inactive, unattached, or preexisting soul exists."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Relevant neural activity, fetal stage, soul attachment, and uncertainty about the exact threshold are clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Correlation supports confidence about absence of relevant mentality, but denial of soul attachment adds an ontological step not independently defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A soul can exist or be attached before the brain supports observable mental activity.",
+        "decisiveQualification": "The evidence strongly bears on operative mental states but does not directly detect or exclude a wholly inactive soul."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The threshold inference is coherent for operative mentality, but the additional conclusion about soul attachment requires a bridge."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Brain–mental-state correlations are relevant support, while the exact threshold and ontological interpretation remain underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary embodiment-threshold bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply uses the empirical threshold fairly, though it moves somewhat quickly from mental inactivity to absence of attachment."
+        }
+      },
+      "evidenceBasis": "The excerpt cites extensive brain-activity and mental-state information, denies early fetal soul attachment, and leaves the exact neural threshold unsettled.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move judgments, response links, importance assignments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "moveJudgments",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion status."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move judgments, response links, importance assignments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "moveJudgments",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion status."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
