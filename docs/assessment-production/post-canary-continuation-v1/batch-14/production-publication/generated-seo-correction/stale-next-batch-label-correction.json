@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-stale-next-batch-label-correction",
+  "protocolId": "assessment-production-post-canary-batch-14-generated-seo-correction",
+  "status": "exact-derived-control-label-correction-passed",
+  "correctedAt": "2026-08-27T22:27:48Z",
+  "diagnosis": "The Batch 14 runner inherited the prior batch's next-selection offset during deterministic script adaptation, so its successful output named Batch 14 instead of Batch 15 as the forbidden next selection.",
+  "fields": [
+    "execution.json.nextAuthorizedAction",
+    "analysis.json.nextAuthorizedAction"
+  ],
+  "before": "atomic-commit-and-push-complete-validated-batch-14-production-transaction-then-stop-before-batch-14-selection",
+  "after": "atomic-commit-and-push-complete-validated-batch-14-production-transaction-then-stop-before-batch-15-selection",
+  "scope": {
+    "productionContentChanged": false,
+    "validationResultChanged": false,
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "nextBatchSelected": false
+  }
+}

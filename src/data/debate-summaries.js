@@ -494,11 +494,11 @@ export const debateSummaries = [
     "number": "12",
     "title": "Joel Settecase vs Tom Jump: Is There Evidence for God?",
     "label": "Evidence and presuppositions",
-    "date": "2026-05-28",
+    "date": "2026-08-27",
     "duration": "1 hr 05 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=XLcRd3RjdjA",
     "motion": "Does evidence for God exist, or are logic, mathematics, and intelligibility better explained without Christian theism?",
-    "summary": "Settecase argues intelligibility presupposes Christian theism; Jump argues experience, logic, and mathematics require no God.",
+    "summary": "Settecase exposed gaps between self-certainty and universal necessity, while Jump effectively separated objective relations from descriptions and challenged divine sustenance.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -512,27 +512,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 68,
+      "pro": 84,
       "con": 78
     },
     "sections": [
       {
-        "title": "Opening foundations"
+        "title": "Self-Experience and the Epistemic Starting Point"
       },
       {
-        "title": "Mathematics as language"
+        "title": "From Identity to Modal and Temporal Necessity"
       },
       {
-        "title": "Cogito and scope"
+        "title": "Necessary Truths, Descriptions, and Ontology"
       },
       {
-        "title": "Presuppositions disputed"
+        "title": "Presuppositions and the Intelligibility of Evidence"
       },
       {
-        "title": "Necessary truths and God"
-      },
-      {
-        "title": "Materialism and evidence"
+        "title": "Reality's Persistence and the Creator–Creation Distinction"
       }
     ]
   },
@@ -2353,11 +2350,11 @@ export const debateSummaries = [
     "number": "53",
     "title": "Alex O'Connor vs Dinesh D'Souza: Is the Bible True?",
     "label": "Bible truth and moral authority",
-    "date": "2026-06-01",
+    "date": "2026-08-27",
     "duration": "1 hr 56 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UMKkX8qRHsw",
     "motion": "Is the Bible true in historical, moral, allegorical, theological, and revelatory senses, or do contradictions and morally troubling texts undermine its truth claims?",
-    "summary": "D'Souza defends the Bible as revelation interpreted through Christian tradition; O'Connor argues that internal tensions, historical shaping, conquest, and slavery undercut its truth claims.",
+    "summary": "O'Connor pressed concrete historical and moral counterexamples, while D'Souza defended genre-sensitive revelation, cumulative testimony, moral development, and Christianity's beneficial interpretive traditions.",
     "sides": {
       "pro": {
         "name": "Bible as true revelation",
@@ -2371,30 +2368,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 71,
-      "con": 86
+      "pro": 76,
+      "con": 91
     },
     "sections": [
       {
-        "title": "Truth and revelation"
+        "title": "Standards of Truth, Genre, and Revelation"
       },
       {
-        "title": "Genre and infancy narratives"
+        "title": "Gospel Historicity, Contradictions, and Transmission"
       },
       {
-        "title": "Gospel contradictions"
+        "title": "Cosmology, Archaeological Corroboration, and Miracles"
       },
       {
-        "title": "Genesis and cosmology"
+        "title": "Divine Violence and Biblical Moral Authority"
       },
       {
-        "title": "Archaeology and history"
-      },
-      {
-        "title": "Miracles and faith"
-      },
-      {
-        "title": "Conquest and slavery"
+        "title": "Slavery, Moral Development, and Abolitionist Reception"
       }
     ]
   },
@@ -2447,11 +2438,11 @@ export const debateSummaries = [
     "number": "55",
     "title": "William Lane Craig vs Alex Malpass: Can Something Come From Nothing?",
     "label": "Kalam, nothing, and infinity",
-    "date": "2026-06-02",
+    "date": "2026-08-27",
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=zQBY5K-Ns2Y",
     "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
-    "summary": "Craig defends the Kalam through metaphysical causation, actual-infinity paradoxes, and a personal first cause; Malpass presses grammar, domain shift, set theory, and undercutting alternatives.",
+    "summary": "Craig defended causal necessity, finite-past paradoxes, and personal agency; Malpass more successfully exposed categorical causal gaps, coherent infinities, and underdetermined creator attributes.",
     "sides": {
       "pro": {
         "name": "Kalam defender",
@@ -2465,27 +2456,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 84
+      "pro": 75,
+      "con": 91
     },
     "sections": [
       {
-        "title": "Premise one and ordinary beginnings"
+        "title": "Causal Principle, Material Beginning, and Nothing"
       },
       {
-        "title": "Nothing and causal powers"
+        "title": "Concrete Actual Infinities and Metaphysical Impossibility"
       },
       {
-        "title": "Actual infinities and intuition"
+        "title": "Successive Formation and a Beginningless Past"
       },
       {
-        "title": "Infinite subtraction and checkouts"
+        "title": "Power and the Structure of the First Cause"
       },
       {
-        "title": "Successive addition and countdowns"
-      },
-      {
-        "title": "From first cause to personal creator"
+        "title": "Personhood, Indeterminism, and Timeless Consciousness"
       }
     ]
   },
@@ -2538,11 +2526,11 @@ export const debateSummaries = [
     "number": "57",
     "title": "Glen Scrivener vs Matt Dillahunty: Can Atheism Deliver a Better World?",
     "label": "Atheism and Christian moral inheritance",
-    "date": "2026-06-03",
+    "date": "2026-08-27",
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=B3-sjyDYO2I",
     "motion": "Can atheism or secular humanism provide a better moral foundation for society than Christianity?",
-    "summary": "Scrivener argues that Christian revelation uniquely grounds universal human dignity and the protection of the weak; Dillahunty argues that secular humanism can keep useful moral insights without religious truth claims.",
+    "summary": "Scrivener grounds dignity and obligation in Christianity; Dillahunty distinguishes atheism from secular humanism and advances a corrigible, human-centered moral foundation.",
     "sides": {
       "pro": {
         "name": "Christian moral foundation",
@@ -2556,27 +2544,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 81
+      "pro": 77,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Atheism as movement"
+        "title": "Foundation, Truth, and Moral Objectivity"
       },
       {
-        "title": "Religion's public benefits"
+        "title": "Human Dignity and the Moral Circle"
       },
       {
-        "title": "Truth, utility, and deconversion"
+        "title": "Community, Transcendence, and Social Flourishing"
       },
       {
-        "title": "Christianity and humanism"
+        "title": "Moral Inheritance, Revision, and Social Consequences"
       },
       {
-        "title": "Foundations and human dignity"
-      },
-      {
-        "title": "Hard cases and moral force"
+        "title": "Atheism, Secular Humanism, and Public Practice"
       }
     ]
   },
@@ -3076,11 +3061,11 @@ export const debateSummaries = [
     "number": "69",
     "title": "Mike Winger vs Matt Dillahunty: Is Belief in the Resurrection Unreasonable?",
     "label": "Resurrection burden and history",
-    "date": "2026-06-08",
+    "date": "2026-08-27",
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Z2FGgkubhZM",
     "motion": "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
-    "summary": "Winger builds a cumulative historical case from non-miraculous facts and explanatory scope; Dillahunty argues that the evidence remains testimonial and insufficient for a supernatural resurrection.",
+    "summary": "Winger builds a cumulative historical case for resurrection, while Dillahunty argues that transmitted reports and unresolved causal gaps justify withholding belief.",
     "sides": {
       "pro": {
         "name": "Resurrection defense",
@@ -3094,27 +3079,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 84
+      "pro": 80,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Historical-facts frame"
+        "title": "Historical facts and source reliability"
       },
       {
-        "title": "Empty tomb and corroboration"
+        "title": "Testimony, sincerity, and corroboration"
       },
       {
-        "title": "Appearances, sincerity, and Paul"
+        "title": "Resurrection and rival explanations"
       },
       {
-        "title": "Alternative explanations"
+        "title": "Event evidence and supernatural causation"
       },
       {
-        "title": "Scripture reliability and source handling"
+        "title": "Extraordinary claims and evidential burden"
       },
       {
-        "title": "Extraordinary evidence and closure"
+        "title": "Reasonable belief and suspension of judgment"
       }
     ]
   },
@@ -4755,11 +4740,11 @@ export const debateSummaries = [
     "number": "106",
     "title": "Jordan Peterson vs Susan Blackmore: Do We Need God to Make Sense of Life?",
     "label": "God, archetypes, and memes",
-    "date": "2026-07-24",
+    "date": "2026-08-27",
     "duration": "47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=syP-OtdCIho",
     "motion": "Do humans need God, religious stories, or religiously inherited values to make sense of life, meaning, morality, suffering, and action?",
-    "summary": "Peterson defends God-language, biblical stories, archetypes, and the Logos as deep structures of meaning; Blackmore argues that atheists can explain religion memetically and live meaningfully through naturalism, Buddhism, gratitude, and constructed purposes.",
+    "summary": "Peterson grounds meaning in enacted religious inheritance, while Blackmore offers evolutionary, contemplative, and social counterexamples to claims of religious necessity.",
     "sides": {
       "pro": {
         "name": "Religious pragmatism",
@@ -4774,26 +4759,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 74,
-      "con": 81
+      "con": 85
     },
     "sections": [
       {
-        "title": "Belief And Ethics"
+        "title": "Belief, conduct, and the functional meaning of God"
       },
       {
-        "title": "Memes And Archetypes"
+        "title": "Secular ethics, stable societies, and religious inheritance"
       },
       {
-        "title": "Bible And Suffering"
+        "title": "Evolutionary archetypes, memes, and religious persistence"
       },
       {
-        "title": "Secular Societies"
+        "title": "Religious and secular responses to tragedy and ultimate meaning"
       },
       {
-        "title": "Gratitude And Meaning"
-      },
-      {
-        "title": "Atheism And Logos"
+        "title": "Secular gratitude and the construction of higher meaning"
       }
     ]
   },
@@ -4938,11 +4920,11 @@ export const debateSummaries = [
     "number": "110",
     "title": "James Tour vs Sy Garte: Evolution, Agency, and Christian Faith",
     "label": "Evolution, agency, and Christian faith",
-    "date": "2026-07-27",
+    "date": "2026-08-27",
     "duration": "1 hr 13 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=cqfPJQg8m5U",
     "motion": "Can Christian faith be reconciled with evolutionary theory by emphasizing agency, cognition, and natural genetic engineering, or do unresolved mechanisms in origins, body plans, fossils, and human uniqueness make evolutionary confidence overreach?",
-    "summary": "Tour presses mechanism-level doubts about evolutionary claims; Garte defends a theistic evolutionary synthesis that welcomes agency, new biology, and Christian humility.",
+    "summary": "Tour demands mechanisms for major transitions, while Garte defends a bounded evolutionary framework compatible with Christian unity, agency research, and acknowledged uncertainty.",
     "sides": {
       "pro": {
         "name": "Mechanism-first skepticism",
@@ -4956,30 +4938,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 82
+      "pro": 79,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Church Unity"
+        "title": "Agency, Cognition, and Genome-Directed Adaptation"
       },
       {
-        "title": "Agency And Purpose"
+        "title": "Causal Mechanisms and Confidence in the Evolutionary Framework"
       },
       {
-        "title": "Human Uniqueness"
+        "title": "Body Plans, Genome Duplication, and Extrapolation Across Scale"
       },
       {
-        "title": "Fossils And Timelines"
+        "title": "Origins, Human Uniqueness, and the Limits of Evolution's Domain"
       },
       {
-        "title": "Body Plans"
-      },
-      {
-        "title": "Genome Duplication"
-      },
-      {
-        "title": "Science And Faith"
+        "title": "Scriptural Interpretation, Christian Fellowship, and Scientific Vocation"
       }
     ]
   },
@@ -5994,11 +5970,11 @@ export const debateSummaries = [
     "number": "133",
     "title": "Nathan Hawkins vs Joe Folley: Free Will, Compatibilism, and Idealism",
     "label": "Free will, agency, and idealism",
-    "date": "2026-07-31",
+    "date": "2026-08-27",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OSXawgwSZQs",
     "motion": "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
-    "summary": "Hawkins defends libertarian agency and non-reductive idealism; Folley presses compatibilist, naturalist, and pragmatist questions about what freedom, truth, and inquiry actually do.",
+    "summary": "Hawkins defended libertarian idealism through normativity and experiential completeness, while Folley’s modal distinctions and disciplined pragmatism applied stronger comparative pressure.",
     "sides": {
       "pro": {
         "name": "Libertarian idealism",
@@ -6012,30 +5988,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
+      "pro": 77,
       "con": 85
     },
     "sections": [
       {
-        "title": "Mapping Freedom"
+        "title": "Determinism, Alternative Possibilities, and Sourcehood"
       },
       {
-        "title": "Determinism and Normativity"
+        "title": "Normative Reasoning and Practical Freedom"
       },
       {
-        "title": "Causation and Laws"
+        "title": "Naturalism, Reduction, and Experience"
       },
       {
-        "title": "Could Have Done Otherwise"
+        "title": "Idealist Truth, Feeling, and Perceptual Structure"
       },
       {
-        "title": "Compatibilist Responsibility"
-      },
-      {
-        "title": "Bradleyan Idealism"
-      },
-      {
-        "title": "The Absolute and Standards"
+        "title": "The Absolute, Inquiry, and Pragmatic Standards"
       }
     ]
   },
@@ -7212,11 +7182,11 @@ export const debateSummaries = [
     "number": "160",
     "title": "Steven Pinker vs Ross Douthat: Do We Need God?",
     "label": "Religion, secularism, and human flourishing",
-    "date": "2026-08-01",
+    "date": "2026-08-27",
     "duration": "0 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=3jWCLONu7DM",
     "motion": "Are people and societies better off with belief in God, or can secular reason and institutions provide morality, purpose, and social cooperation more effectively?",
-    "summary": "Douthat defends theism as a source of purpose and moral authority; Pinker defends secular reason, institutions, and human flourishing.",
+    "summary": "Douthat defended transcendent foundations for morality and meaning, while Pinker argued that secular reason, reciprocity, and institutions adequately support flourishing and progress.",
     "sides": {
       "pro": {
         "name": "Theistic case",
@@ -7230,21 +7200,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 72,
-      "con": 78
+      "pro": 80,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Purpose, progress, and common goods"
+        "title": "Foundations of morality, obligation, and equal worth"
       },
       {
-        "title": "Secularization, institutions, and tribalism"
+        "title": "Community, welfare, and institutional cooperation"
       },
       {
-        "title": "Morality, rights, and public reasons"
+        "title": "Reason, religious truth, and naturalistic explanation"
       },
       {
-        "title": "AI, consciousness, and worldviews"
+        "title": "Historical violence, institutional failure, and moral progress"
+      },
+      {
+        "title": "Purpose, human significance, and confidence in the future"
       }
     ]
   },
@@ -8419,11 +8392,11 @@ export const debateSummaries = [
     "number": "187",
     "title": "Keith Ward vs Daniel Dennett: Are We More Than Matter?",
     "label": "Mind, consciousness, purpose, and free will",
-    "date": "2026-08-01",
+    "date": "2026-08-27",
     "duration": "1 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mongL_2KMGg",
     "motion": "Are consciousness, personal identity, purpose, value, and free agency irreducible to the physical world?",
-    "summary": "Ward argues from first-person experience, a nonphysical subject, objective value, and libertarian agency toward idealism and God; Dennett explains minds through embodied information, evolution, predictive control, and emergent levels.",
+    "summary": "Ward defends irreducible consciousness, value, identity, and agency; Dennett answers through evolved computation, higher-level explanation, emergent purpose, and compatibilist control.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -8438,27 +8411,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 89,
-      "con": 94
+      "pro": 76,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Experience first, or brain first?"
+        "title": "Consciousness and Physical Description"
       },
       {
-        "title": "The hard problem and philosophical zombies"
+        "title": "Personal Identity, the Self, and Continuity"
       },
       {
-        "title": "The self, memory, and embodied information"
+        "title": "Purpose, Intentionality, and Future Direction"
       },
       {
-        "title": "Can purpose and value emerge?"
+        "title": "Value, Meaning, and Higher-Level Explanation"
       },
       {
-        "title": "Does God ground moral obligation?"
+        "title": "Freedom, Agency, and Responsibility"
       },
       {
-        "title": "Alternative possibilities and rational agency"
+        "title": "Reduction, Causation, and Explanatory Scope"
       }
     ]
   },
