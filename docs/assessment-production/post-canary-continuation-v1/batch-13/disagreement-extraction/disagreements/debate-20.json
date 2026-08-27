@@ -1,0 +1,3346 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-13-decomposed-consensus",
+  "debateNumber": "20",
+  "debateId": "hitchens-hitchens-iraq-god-2008",
+  "moveDisputes": [
+    {
+      "moveId": "con-iraq-idealist-aggression",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 7,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 46,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-war-presumption"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-iraq-regime-extraordinary-threat",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-regime-extraordinary-threat-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether the invasion had grounds sufficiently exceptional to rebut the charge of reckless idealist aggression.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-regime-extraordinary-threat-component-02",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether foreseeable strategic disaster outweighed the case for removing Saddam Hussein's regime.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-regime-extraordinary-threat-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether the invasion had sufficiently exceptional grounds to overcome the charge of reckless idealist aggression.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-regime-extraordinary-threat-component-02",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether the claimed grounds answer the forecast that intervention would end in strategic disaster.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-iraq-exception"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-iraq-regional-strategic-gains",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-regional-strategic-gains-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether the invasion's foreseeable folly made launching the war unjustified at the time.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 52
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-regional-strategic-gains-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether intervention offered strategic ends capable of rebutting the claim that it was simply foreseeable imperial folly.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-regional-strategic-gains-component-02",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether those prospective regional benefits outweighed foreseeable military and human costs.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 43,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-iraq-balance"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 65,
+          "candidate2": 63,
+          "roundedMeanAfterAdjudication": 64
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-iraq-realized-humanitarian-gains",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 19,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-realized-humanitarian-gains-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether initiating the invasion was foreseeably foolish and lacked adequate ex ante grounds.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 55
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-realized-humanitarian-gains-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether post-intervention outcomes included concrete gains inconsistent with the claim that nothing subsequent vindicated the undertaking.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-realized-humanitarian-gains-component-02",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether the cited gains outweighed the invasion's complete human, strategic, and fiscal costs.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 85
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 45,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-iraq-balance"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 77,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-iraq-adverse-balance-sheet",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-iraq-realized-humanitarian-gains",
+                "pro-iraq-regime-extraordinary-threat",
+                "pro-iraq-regional-strategic-gains"
+              ],
+              "components": [
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-01",
+                  "targetMoveId": "pro-iraq-regional-strategic-gains",
+                  "text": "Whether intervention actually improved the regional strategic balance rather than empowering Iranian influence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-02",
+                  "targetMoveId": "pro-iraq-realized-humanitarian-gains",
+                  "text": "Whether localized humanitarian gains outweigh the invasion's aggregate human, military, fiscal, and moral costs.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-03",
+                  "targetMoveId": "pro-iraq-regime-extraordinary-threat",
+                  "text": "Whether regime wrongdoing supplied a consistent principle sufficient to justify this intervention.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-iraq-realized-humanitarian-gains",
+                "pro-iraq-regime-extraordinary-threat",
+                "pro-iraq-regional-strategic-gains"
+              ],
+              "components": [
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-01",
+                  "targetMoveId": "pro-iraq-regional-strategic-gains",
+                  "text": "Whether the invasion's regional and strategic results support the claimed benefits rather than strengthening Iranian power and weakening intervention capacity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-02",
+                  "targetMoveId": "pro-iraq-realized-humanitarian-gains",
+                  "text": "Whether localized humanitarian gains offset deaths, torture, fiscal costs, and loss of moral authority.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-iraq-adverse-balance-sheet-component-03",
+                  "targetMoveId": "pro-iraq-regime-extraordinary-threat",
+                  "text": "Whether an extraordinary regime threat alone establishes a consistent and proportionate humanitarian-intervention principle.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-consequence-balance"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 83
+            },
+            "candidate2": {
+              "value": 90
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-iraq-sovereignty-forfeiture-standard",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-iraq-adverse-balance-sheet",
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-sovereignty-forfeiture-standard-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "The assumption that ordinary sovereignty and restraint remained controlling despite Iraq's specified treaty and atrocity violations.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-sovereignty-forfeiture-standard-component-02",
+                  "targetMoveId": "con-iraq-adverse-balance-sheet",
+                  "text": "Whether adverse consequences alone defeat intervention once a sovereignty-forfeiture standard is satisfied.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-iraq-adverse-balance-sheet",
+                "con-iraq-idealist-aggression"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-iraq-sovereignty-forfeiture-standard-component-01",
+                  "targetMoveId": "con-iraq-idealist-aggression",
+                  "text": "Whether principled exceptions existed that could overcome sovereignty and the presumption against the invasion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-iraq-sovereignty-forfeiture-standard-component-02",
+                  "targetMoveId": "con-iraq-adverse-balance-sheet",
+                  "text": "Whether satisfying sovereignty-forfeiture criteria establishes that intervention's overall consequences were favorable.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 87
+            },
+            "candidate2": {
+              "value": 79
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-iraq-exception"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 88
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-deism-theism-evidentiary-gap",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 40,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-theistic-warrant"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-innate-moral-integrity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 46,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-secular-morality"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 62,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 63
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-atheism-no-binding-authority",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-deism-theism-evidentiary-gap",
+                "pro-innate-moral-integrity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-atheism-no-binding-authority-component-01",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether recognizing or choosing right action supplies a binding authority rather than merely a human preference.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-atheism-no-binding-authority-component-02",
+                  "targetMoveId": "pro-deism-theism-evidentiary-gap",
+                  "text": "Whether cosmic contingency and order provide reason to posit transcendent moral authority.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-deism-theism-evidentiary-gap",
+                "pro-innate-moral-integrity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-atheism-no-binding-authority-component-01",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether recognizing or choosing right action supplies a binding authority that obligates conduct rather than merely expressing preference.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-atheism-no-binding-authority-component-02",
+                  "targetMoveId": "pro-deism-theism-evidentiary-gap",
+                  "text": "Whether a personal deity has been established from cosmic origin or order.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-transcendent-ground"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 59,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 58
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 58,
+          "candidate2": 55,
+          "roundedMeanAfterAdjudication": 57
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-divine-order-self-government",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-deism-theism-evidentiary-gap",
+                "pro-innate-moral-integrity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-order-self-government-component-01",
+                  "targetMoveId": "pro-deism-theism-evidentiary-gap",
+                  "text": "Whether cosmic order and origin provide any reasonable basis for seeking a transcendent governing law.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-divine-order-self-government-component-02",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether human self-government can remain stable after divine authority is excluded.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-deism-theism-evidentiary-gap",
+                "pro-innate-moral-integrity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-order-self-government-component-01",
+                  "targetMoveId": "pro-deism-theism-evidentiary-gap",
+                  "text": "Whether observable origin, order, or eternal law provides a reasonable path toward seeking a divine source and governing norm.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-divine-order-self-government-component-02",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether human moral integrity alone can safely replace transcendent authority in political self-government.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 39,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-transcendent-ground"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 81
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 65
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-vicarious-redemption-responsibility",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-vicarious-redemption-responsibility-component-01",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "Whether theistic authority reliably secures moral responsibility rather than permitting responsibility to be transferred.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-vicarious-redemption-responsibility-component-02",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether governance by divine law produces a morally superior account of guilt and accountability.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-vicarious-redemption-responsibility-component-01",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether submission to divine order reliably supplies sound moral authority when doctrine permits transferred guilt or responsibility.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-vicarious-redemption-responsibility-component-02",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "Whether secular morality lacks any binding account of personal responsibility.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 42,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-religious-corruption"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 54,
+          "candidate2": 56,
+          "roundedMeanAfterAdjudication": 55
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-design-suffering-cosmology",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-design-suffering-cosmology-component-01",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether observable cosmic order supports inference to competent and benevolent divine governance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-design-suffering-cosmology-component-02",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "Whether suffering bears on the existence of binding moral authority.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-design-suffering-cosmology-component-01",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether cosmic order reasonably indicates a competent and morally authoritative designer despite pervasive suffering and eventual desolation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-design-suffering-cosmology-component-02",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "Whether the existence of suffering establishes a secular source of binding moral obligation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 38,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-theistic-warrant"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 71,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 60,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 59
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-isaac-sacrifice-repudiated",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "pro-design-suffering-cosmology",
+                "pro-innate-moral-integrity",
+                "pro-vicarious-redemption-responsibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-isaac-sacrifice-repudiated-component-01",
+                  "targetMoveId": "pro-vicarious-redemption-responsibility",
+                  "text": "Whether sacrifice doctrine transfers guilt immorally or instead supplies reconciliation and hope while preserving responsibility.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-isaac-sacrifice-repudiated-component-02",
+                  "targetMoveId": "pro-design-suffering-cosmology",
+                  "text": "Whether Christianity redirects preexisting destructive impulses rather than causing the suffering under discussion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-isaac-sacrifice-repudiated-component-03",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether religious teaching necessarily denies ordinary human moral integrity.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-design-suffering-cosmology",
+                "pro-vicarious-redemption-responsibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-isaac-sacrifice-repudiated-component-01",
+                  "targetMoveId": "pro-vicarious-redemption-responsibility",
+                  "text": "Whether sacrificial atonement merely transfers guilt immorally or can redirect destructive impulses and offer hope after grievous wrongdoing.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-isaac-sacrifice-repudiated-component-02",
+                  "targetMoveId": "pro-design-suffering-cosmology",
+                  "text": "Whether suffering and cruelty count against competent benevolent divine design.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 39,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-scriptural-interpretation"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-divine-authorization-moral-license",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government",
+                "con-isaac-sacrifice-repudiated"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-01",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "The premise that invoking divine authority eliminates nihilism or relativism and thereby secures moral restraint.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-02",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether governing by asserted divine law reliably prevents destructive human absolutism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-03",
+                  "targetMoveId": "con-isaac-sacrifice-repudiated",
+                  "text": "Whether religious redirection generally restrains preexisting destructive impulses.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-atheism-no-binding-authority",
+                "con-divine-order-self-government",
+                "con-isaac-sacrifice-repudiated"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-01",
+                  "targetMoveId": "con-divine-order-self-government",
+                  "text": "Whether locating authority in God restrains destructive rulers or can instead authorize unlimited cruelty and violence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-02",
+                  "targetMoveId": "con-atheism-no-binding-authority",
+                  "text": "Whether divine authority uniquely solves nihilism and relativism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-authorization-moral-license-component-03",
+                  "targetMoveId": "con-isaac-sacrifice-repudiated",
+                  "text": "Whether redirective interpretations of sacrifice prevent religious authority from licensing harm.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-religious-corruption"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 83
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 71,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-solidarity-secular-motivation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": false,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 76
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 47,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-secular-morality"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 85,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 88
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-objective-morality-borrowed-ground",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-divine-authorization-moral-license",
+                "pro-innate-moral-integrity",
+                "pro-solidarity-secular-motivation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-01",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether natural solidarity and decency establish authoritative moral rules rather than merely motivational tendencies.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-02",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether innate recognition of right and wrong supplies its own objective foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-03",
+                  "targetMoveId": "pro-divine-authorization-moral-license",
+                  "text": "Whether religious grounding remains authoritative despite dangerous claims of divine permission.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-deism-theism-evidentiary-gap",
+                "pro-innate-moral-integrity",
+                "pro-solidarity-secular-motivation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-01",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether solidarity and ordinary moral recognition establish authoritative objective rules rather than merely motivating preferred conduct.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-02",
+                  "targetMoveId": "pro-innate-moral-integrity",
+                  "text": "Whether innate recognition of right and wrong supplies the authority of the rules recognized.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-morality-borrowed-ground-component-03",
+                  "targetMoveId": "pro-deism-theism-evidentiary-gap",
+                  "text": "Whether the religious source allegedly borrowed has itself been independently established.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-transcendent-ground"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 63,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 57,
+          "candidate2": 55,
+          "roundedMeanAfterAdjudication": 56
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 55,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 56
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-aggression-restraint-distinction",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-iraq-realized-humanitarian-gains",
+                "pro-iraq-regime-extraordinary-threat",
+                "pro-iraq-regional-strategic-gains",
+                "pro-iraq-sovereignty-forfeiture-standard"
+              ],
+              "components": [
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-01",
+                  "targetMoveId": "pro-iraq-sovereignty-forfeiture-standard",
+                  "text": "The inference that establishing sovereignty forfeiture eliminates the aggressor's distinct burden before launching war.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-02",
+                  "targetMoveId": "pro-iraq-regime-extraordinary-threat",
+                  "text": "Whether extraordinary regime conduct makes intervention and nonintervention morally equivalent choices.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-03",
+                  "targetMoveId": "pro-iraq-regional-strategic-gains",
+                  "text": "Whether prospective gains can erase the logical distinction between action and restraint.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-04",
+                  "targetMoveId": "pro-iraq-realized-humanitarian-gains",
+                  "text": "Whether realized benefits retroactively remove the initiating aggressor's burden.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-iraq-regime-extraordinary-threat",
+                "pro-iraq-regional-strategic-gains",
+                "pro-iraq-sovereignty-forfeiture-standard"
+              ],
+              "components": [
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-01",
+                  "targetMoveId": "pro-iraq-sovereignty-forfeiture-standard",
+                  "text": "Whether enumerated sovereignty violations eliminate the morally distinct burden borne by the party initiating aggressive war.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-02",
+                  "targetMoveId": "pro-iraq-regime-extraordinary-threat",
+                  "text": "Whether an atrocious regime makes intervention and nonintervention morally equivalent choices.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-aggression-restraint-distinction-component-03",
+                  "targetMoveId": "pro-iraq-regional-strategic-gains",
+                  "text": "Whether prospective benefits alone discharge the aggressor's distinct justificatory burden.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 48,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-war-presumption"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 82
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-religion-net-civilizational-function",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-divine-authorization-moral-license",
+                "pro-solidarity-secular-motivation",
+                "pro-vicarious-redemption-responsibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-01",
+                  "targetMoveId": "pro-divine-authorization-moral-license",
+                  "text": "Whether religious misuse establishes that religion is net corrupting rather than a dangerous human misunderstanding.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-02",
+                  "targetMoveId": "pro-vicarious-redemption-responsibility",
+                  "text": "Whether contested doctrine negates religion's broader moral and civilizational functions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-03",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether secular solidarity can replace religion's claimed civilizational role without substantial loss.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-authorization-moral-license",
+                "pro-solidarity-secular-motivation",
+                "pro-vicarious-redemption-responsibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-01",
+                  "targetMoveId": "pro-divine-authorization-moral-license",
+                  "text": "Whether religious misuse and authorization mechanisms establish that religious belief is harmful on balance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-02",
+                  "targetMoveId": "pro-vicarious-redemption-responsibility",
+                  "text": "Whether disputed doctrines negate religion's broader restorative or civilizational functions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-religion-net-civilizational-function-component-03",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether secular moral motivation shows that abandoning religious belief has no civilizational cost.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 46,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-religious-net-function"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 64
+            },
+            "candidate2": {
+              "value": 83
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 54,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 56
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-totalitarianism-religious-continuities",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-aggression-restraint-distinction",
+                "con-objective-morality-borrowed-ground",
+                "con-religion-net-civilizational-function"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-01",
+                  "targetMoveId": "con-religion-net-civilizational-function",
+                  "text": "The inference that secular totalitarian examples establish religion's superior net civilizational function.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-02",
+                  "targetMoveId": "con-aggression-restraint-distinction",
+                  "text": "Whether political tyranny bears on the distinct burden governing aggressive war.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-03",
+                  "targetMoveId": "con-objective-morality-borrowed-ground",
+                  "text": "Whether atheist regimes show secular morality lacks an independent foundation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-aggression-restraint-distinction",
+                "con-objective-morality-borrowed-ground",
+                "con-religion-net-civilizational-function"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-01",
+                  "targetMoveId": "con-religion-net-civilizational-function",
+                  "text": "Whether twentieth-century tyranny supports religion's protective net function when fascist and communist systems retained religious alliances or structures.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-02",
+                  "targetMoveId": "con-objective-morality-borrowed-ground",
+                  "text": "Whether secular humanism necessarily borrows religious moral foundations.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-totalitarianism-religious-continuities-component-03",
+                  "targetMoveId": "con-aggression-restraint-distinction",
+                  "text": "Whether aggression bears a distinct justificatory burden.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 39,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-causal-comparison"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 69,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 63,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 58,
+          "candidate2": 54,
+          "roundedMeanAfterAdjudication": 56
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-secular-terror-soviet-persecution",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-divine-authorization-moral-license",
+                "pro-solidarity-secular-motivation",
+                "pro-totalitarianism-religious-continuities"
+              ],
+              "components": [
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-01",
+                  "targetMoveId": "pro-totalitarianism-religious-continuities",
+                  "text": "The attempt to redescribe avowed anti-religious Soviet persecution as religious because it shared structural features.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-02",
+                  "targetMoveId": "pro-divine-authorization-moral-license",
+                  "text": "Whether secular ideological authorization can also license cruelty and absolutism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-03",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether humanist moral motivation prevents secular state persecution.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-divine-authorization-moral-license",
+                "pro-solidarity-secular-motivation",
+                "pro-totalitarianism-religious-continuities"
+              ],
+              "components": [
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-01",
+                  "targetMoveId": "pro-totalitarianism-religious-continuities",
+                  "text": "Whether avowedly secular revolutionary and Soviet persecution may be redescribed as religious merely because it exhibits worship-like structures.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-02",
+                  "targetMoveId": "pro-divine-authorization-moral-license",
+                  "text": "Whether divine authorization can independently license cruelty.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-secular-terror-soviet-persecution-component-03",
+                  "targetMoveId": "pro-solidarity-secular-motivation",
+                  "text": "Whether humanist solidarity reliably prevents secular political persecution.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 40,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-secular-counterexamples"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-humanism-causal-test",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-objective-morality-borrowed-ground",
+                "con-religion-net-civilizational-function",
+                "con-secular-terror-soviet-persecution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humanism-causal-test-component-01",
+                  "targetMoveId": "con-secular-terror-soviet-persecution",
+                  "text": "Whether secular atrocities indict humanism only when humanist teachings, rather than a secular label, causally produce tyranny.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humanism-causal-test-component-02",
+                  "targetMoveId": "con-religion-net-civilizational-function",
+                  "text": "Whether secular counterexamples establish religion's superior net civilizational record.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humanism-causal-test-component-03",
+                  "targetMoveId": "con-objective-morality-borrowed-ground",
+                  "text": "Whether humanist thinkers supply an independent moral tradition rather than borrowed religious rules.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-religion-net-civilizational-function",
+                "con-secular-terror-soviet-persecution"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humanism-causal-test-component-01",
+                  "targetMoveId": "con-secular-terror-soviet-persecution",
+                  "text": "Whether secular atrocities indict humanism without showing that a state adopted humanist teachings and became tyrannical because of them.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humanism-causal-test-component-02",
+                  "targetMoveId": "con-religion-net-civilizational-function",
+                  "text": "Whether religious belief's asserted net benefit follows from secular regimes committing atrocities.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 40,
+              "burdenContact": null
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-causal-comparison"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 89
+            },
+            "candidate2": {
+              "value": 82
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-iraq-idealist-aggression",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-iraq-regime-extraordinary-threat",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-iraq-regime-extraordinary-threat",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-iraq-regional-strategic-gains",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-iraq-regional-strategic-gains",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 65,
+      "candidate2": 63,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-iraq-realized-humanitarian-gains",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-iraq-realized-humanitarian-gains",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 77,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-iraq-adverse-balance-sheet",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-iraq-adverse-balance-sheet",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-iraq-sovereignty-forfeiture-standard",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-deism-theism-evidentiary-gap",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "pro-deism-theism-evidentiary-gap",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-innate-moral-integrity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-innate-moral-integrity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-innate-moral-integrity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 62,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "con-atheism-no-binding-authority",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 59,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "con-atheism-no-binding-authority",
+      "fieldKey": "representationalCharity",
+      "candidate1": 58,
+      "candidate2": 55,
+      "roundedMeanAfterAdjudication": 57
+    },
+    {
+      "moveId": "con-divine-order-self-government",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-vicarious-redemption-responsibility",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-vicarious-redemption-responsibility",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-vicarious-redemption-responsibility",
+      "fieldKey": "representationalCharity",
+      "candidate1": 54,
+      "candidate2": 56,
+      "roundedMeanAfterAdjudication": 55
+    },
+    {
+      "moveId": "pro-design-suffering-cosmology",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 71,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-design-suffering-cosmology",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-design-suffering-cosmology",
+      "fieldKey": "representationalCharity",
+      "candidate1": 60,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 59
+    },
+    {
+      "moveId": "con-isaac-sacrifice-repudiated",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-isaac-sacrifice-repudiated",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-isaac-sacrifice-repudiated",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-divine-authorization-moral-license",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-divine-authorization-moral-license",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 71,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-solidarity-secular-motivation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-solidarity-secular-motivation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-solidarity-secular-motivation",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 85,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-objective-morality-borrowed-ground",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 63,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "con-objective-morality-borrowed-ground",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 57,
+      "candidate2": 55,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "con-objective-morality-borrowed-ground",
+      "fieldKey": "representationalCharity",
+      "candidate1": 55,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "con-aggression-restraint-distinction",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-aggression-restraint-distinction",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-religion-net-civilizational-function",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 54,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "pro-totalitarianism-religious-continuities",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 69,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-totalitarianism-religious-continuities",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 63,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "pro-totalitarianism-religious-continuities",
+      "fieldKey": "representationalCharity",
+      "candidate1": 58,
+      "candidate2": 54,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "con-secular-terror-soviet-persecution",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "20",
+      "moves": 21,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 21,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch13IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
