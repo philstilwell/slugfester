@@ -1,0 +1,1215 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-verification-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-14-decomposed-consensus",
+  "status": "frozen-twelve-post-canary-batch-14-paid-known-speaker-diarizations-authorized-under-standing-authorization",
+  "preparedAt": "2026-08-27T18:16:52.645Z",
+  "approvedAt": null,
+  "checkpointCommit": "45adc4d78ff3782eef22da5941cb7f431a59e9ac",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "Thank you. Let's proceed.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization.json",
+    "standingAuthorizationSha256": "5d10c0a2bc3e1e93f1657b87f56afa4de5828c2c588ae527401e04ad98f6b222",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 12,
+    "speakerReferencesAuthorizedForPreparation": 14,
+    "conditionalAdvanceApprovalRecorded": true,
+    "audioVerificationExecutionAuthorizedOnlyAfterFrozenEstimateAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "53",
+      "110",
+      "133",
+      "12",
+      "187",
+      "106",
+      "57"
+    ],
+    "frozenTargetClips": 12,
+    "verificationCalls": 12,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 14,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "all-source-rows-have-positive-repository-lexical-token-count",
+      "reason": "All selected canonical source rows contain at least one repository lexical token.",
+      "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": []
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "53",
+      "debateId": "oconnor-dsouza-bible-true-2024",
+      "moveId": "pro-ancient-historical-reporting-standard",
+      "expectedSpeaker": "Dinesh D'Souza",
+      "proposition": "Ancient Gospel historicity should be judged by the standards of human historical reporting, under which non-eyewitness writers can gather testimony reliably and minor itinerary discrepancies need not defeat a text's purpose.",
+      "verificationExcerpt": "in fact the most reliable account of the Peloponnesian War that historians it is That's not to say that it is reliable, though. No, it is What I'm trying to say is that when you're when you're talking about historicity and you're talking about historicity now in the ancient world, you have to recognize that these people are not These people are not approaching it with as modern",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/clips/pro-ancient-historical-reporting-standard.mp3",
+      "clipSha256": "65e57ced6629cf4d7c62b0c6b18d7c1c15158e5a3f0927dfedda53bf89248e3f",
+      "durationSeconds": 83.4,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/transcripts/pro-ancient-historical-reporting-standard.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Dinesh D'Souza",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/dinesh-d-souza.mp3",
+          "sha256": "434b8b220f2859c173a70bd03142b1b460b9e5c3c2f1da2b218c5c2389741867",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/alex-o-connor.mp3",
+          "sha256": "22a6739db3edac2c00e6b6b15abce1e6e0efe80f8db717daa9ec7c0a17ea4939",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "110",
+      "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+      "moveId": "pro-prebiotic-sugar-pathway-limit",
+      "expectedSpeaker": "James Tour",
+      "proposition": "Loss of a proposed prebiotic route to sugars is a major origin-of-life setback because ribose and related sugars are required for pathways toward RNA and DNA.",
+      "verificationExcerpt": "reaction synthesis of sugar which was I did see that basic I mean and this changes everything and and and now there's no more route to making sugars >> that's a very big deal people okay well one paper no this was the way to make sugars there's no more sugars being made you can't get ribos you can't get nuclear You can't get DNA, you can't get RNA. That's a big setback for origin of life",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/clips/pro-prebiotic-sugar-pathway-limit.mp3",
+      "clipSha256": "28732a590e49006c97b0c5d8d483bb6cdbdb49698f848e05bea7626b27b92e78",
+      "durationSeconds": 64.839,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/transcripts/pro-prebiotic-sugar-pathway-limit.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "James Tour",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/james-tour.mp3",
+          "sha256": "8deb8dd2a81db84f0260f3a290cb3eac6588385085c582b5a3cb9d69dc7b9491",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sy Garte",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/sy-garte.mp3",
+          "sha256": "b0b8fa1eb31393003e52f3f57881a6035e99d7889c205ceb564a36ca2a1212ee",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "moveId": "con-noncausal-compatibilist-basis",
+      "expectedSpeaker": "Joe Folley",
+      "proposition": "Non-causal determinism provides a basis for compatibilism because complete predictability need not amount to causal puppeteering or compulsion.",
+      "verificationExcerpt": "kind of non-causal determinist picture. So actually, you know, I I've over the years come to see that actually, you know, there's non-causal determinism um seems to me to be to be a little bit stronger than causal determinism. Not least because uh yeah, not not least because I think it kind of gets at what we want, which is which to me I think I think the thing that people find",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/clips/con-noncausal-compatibilist-basis.mp3",
+      "clipSha256": "af8f29a5acc79283aeca9420fbc1d81935bcb243d56cdde9310bc9cbea2c97ba",
+      "durationSeconds": 93.401,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-noncausal-compatibilist-basis.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Nathan Hawkins",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/nathan-hawkins.mp3",
+          "sha256": "188e6252b23552ee39df12b617733e46efd7284d61b7cfebb9a2c1bb9d6ee179",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Joe Folley",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/joe-folley.mp3",
+          "sha256": "bd7b21fe27d225ec267bae3dbd8dd5201e14bb13ada847677d851bb2aa0287c0",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "133",
+      "debateId": "hawkins-folley-free-will-idealism-2026",
+      "moveId": "con-perceptual-categorization-pressure",
+      "expectedSpeaker": "Joe Folley",
+      "proposition": "Although idealism need not imply voluntary control over reality, Bradley's unstructured felt real is pressured by the categorization already built into accessible perception.",
+      "verificationExcerpt": "thinks of idealism they think of ideas and I can actually control my ideas quite you know that they're in my kind of immediate valition um in a way that like my experience clearly isn't. I think an interesting uh one one question I suppose I' I'd have regarding Bradley's view is that I I suppose I'm a little bit uh concerned that this kind of butting up against the real the kind",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/clips/con-perceptual-categorization-pressure.mp3",
+      "clipSha256": "dea74468f2dbe4dc4b907b5fc1526c1486c23fba6feb0c01b1596fedf80a7a48",
+      "durationSeconds": 170.44,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-perceptual-categorization-pressure.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Nathan Hawkins",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/nathan-hawkins.mp3",
+          "sha256": "188e6252b23552ee39df12b617733e46efd7284d61b7cfebb9a2c1bb9d6ee179",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Joe Folley",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/joe-folley.mp3",
+          "sha256": "bd7b21fe27d225ec267bae3dbd8dd5201e14bb13ada847677d851bb2aa0287c0",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "12",
+      "debateId": "settecase-jump-evidence-for-god-2025",
+      "moveId": "con-reality-identity-through-time",
+      "expectedSpeaker": "Tom Jump",
+      "proposition": "Nothing, including time or change, can make reality cease to be reality, so identity necessarily holds at every point in the past and future.",
+      "verificationExcerpt": "that premise? I'm I'm I'm missing something. What is your really spell it out? >> Reality can't under any conditions not be reality, which includes time. Therefore, in all points in time, in the future and past, reality cannot be reality. >> Cannot not be reality. >> That's your conclusion. >> Well, that's that's a full argument. So, premise one, >> nothing can make reality not",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/clips/con-reality-identity-through-time.mp3",
+      "clipSha256": "98519ff1e0117642512fec9516762ec1a7fef654a966fb5f6287c4c31cdf7cbd",
+      "durationSeconds": 72.84,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Joel Settecase",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/joel-settecase.mp3",
+          "sha256": "3415d98689483450f45517f710fc35b37eb2f3af0b91efb1caa19ba68319a714",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/tom-jump.mp3",
+          "sha256": "13d82ec8b895f66b058a5908dd91c84cdcc1a93be6f9d840113546f3427969d7",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "moveId": "con-hard-problem-vitalism-analogy",
+      "expectedSpeaker": "Daniel Dennett",
+      "proposition": "Positing consciousness beyond observable cognitive capacities repeats the discarded vitalist demand for an extra property beyond the processes that constitute life.",
+      "verificationExcerpt": "the Chalmers and I'm Keith here on it on his own expression there they're remaking the vitalist mistake and now they simply moved up a notch and they say there's an extra soup song of something which is consciousness which has nothing and Thomas is very clear about this has nothing to do with all the things that I study about consciousness I've nothing to do with the ability to",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/con-hard-problem-vitalism-analogy.mp3",
+      "clipSha256": "fa8543ed9b4eb96aef01bdbf0011c671c8de01fa96f5765acc2f03a0b5b48711",
+      "durationSeconds": 184.73,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-hard-problem-vitalism-analogy.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Keith Ward",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3",
+          "sha256": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3",
+          "sha256": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "moveId": "pro-objective-value-beyond-catalogue",
+      "expectedSpeaker": "Keith Ward",
+      "proposition": "Objective moral obligations are discovered rather than invented, and their connection to purpose and agency places value outside an exhaustive physical catalogue.",
+      "verificationExcerpt": "moral obligations on people whether or not they think there are and that is a truth about the universe and does this can this only make sense in the personal identity the idea that we are a person who has as well yes it is it's nighttime and is not in a sense just to a value is not a part of a physical catalogue of things and it correlates with a purpose purpose is to obtain any value so that correlates with agency",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/pro-objective-value-beyond-catalogue.mp3",
+      "clipSha256": "25c00ac5c2c1f341ddf432d27409db82455daaff2a6bbd0bd642eed5114f0363",
+      "durationSeconds": 138.22,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-objective-value-beyond-catalogue.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Keith Ward",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3",
+          "sha256": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3",
+          "sha256": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "moveId": "con-mortality-vulnerability-personhood",
+      "expectedSpeaker": "Daniel Dennett",
+      "proposition": "Reproducibility and practical immortality alter the force of promises, threats, and punishment, showing that ordinary moral personhood depends materially on mortality and vulnerability.",
+      "verificationExcerpt": "immortality and though your sort of information without any oh you gotta have it on a hard drive you're gonna have a hard drive that's it look this is a really important moral point I think you should never make a you should never sign a contract with the robot because you know where it's acting on it so not as a surrogate for my videos because robots aren't people they aren't fragile they aren't mortal",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/con-mortality-vulnerability-personhood.mp3",
+      "clipSha256": "e8d909276d866fa30a5e0f8df9cfe405b803ed137d6ad4ac82458f4b9c611199",
+      "durationSeconds": 96.62,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-mortality-vulnerability-personhood.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Keith Ward",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3",
+          "sha256": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3",
+          "sha256": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "moveId": "pro-encoding-insufficient-for-survival",
+      "expectedSpeaker": "Keith Ward",
+      "proposition": "Possessing an informational encoding is insufficient for continued personal existence because stored structure must be concretely realized before the conscious or meaningful entity exists.",
+      "verificationExcerpt": "that they would be yes if you have Beethoven's symphonies on digital things with strings of notes and ones and you say well there's the information so it so Beethoven's Symphony is immortal well you'd need to have the kids turn it in something that somebody could hear",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/pro-encoding-insufficient-for-survival.mp3",
+      "clipSha256": "c8290f8bb85e3cf81bfe2d86450896ce76c3a8b50d11f2495ed2ecf1defcc9b5",
+      "durationSeconds": 25.88,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-encoding-insufficient-for-survival.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Keith Ward",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3",
+          "sha256": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Daniel Dennett",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3",
+          "sha256": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "106",
+      "debateId": "peterson-blackmore-god-meaning-life-2018",
+      "moveId": "pro-highest-value-functions-as-god",
+      "expectedSpeaker": "Jordan Peterson",
+      "proposition": "Every agent needs a hierarchy of values in order to act, and whatever occupies its highest position serves the functional role of God.",
+      "verificationExcerpt": "societies essentially work quite well is because they act out a judeo-christian ethic and one that's essentially predicated it's predicated on utmost regard for the sovereignty of the individual so the individual is sovereign in relationship to the state which is a remarkable idea and one that's fundamentally religious and it's in its in its essence in my motive mode of thinking and that's also predicated on honest speech",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/clips/pro-highest-value-functions-as-god.mp3",
+      "clipSha256": "8c0a1ca0546f482f93182ba1c99e06feab80b6213ff2ed6e7a98b3d1e0387e56",
+      "durationSeconds": 64.07,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/pro-highest-value-functions-as-god.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Jordan Peterson",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/jordan-peterson.mp3",
+          "sha256": "3d483b69ce9a92f2e52a6ae4b6d748d72aa220342ffae1ed8d34117780680e49",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Susan Blackmore",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/susan-blackmore.mp3",
+          "sha256": "6a3cda971d5704f0984c40dba4abc7d29869970f603304e8d84a3561bd90990b",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "106",
+      "debateId": "peterson-blackmore-god-meaning-life-2018",
+      "moveId": "con-atheist-conduct-not-implicit-religion",
+      "expectedSpeaker": "Susan Blackmore",
+      "proposition": "Redefining a self-identified atheist as religious because she writes and behaves prosocially disregards her stated belief and leaves her nonviolent moral conduct unexplained on secular terms.",
+      "verificationExcerpt": "don't you think it's kind of offensive to say to me that that I'm not an atheist when I am I why don't you answer me this question why do you think I don't go around murdering people why do you think I go around trying to be I",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/clips/con-atheist-conduct-not-implicit-religion.mp3",
+      "clipSha256": "773a7bd94ff34b764c50583dd1f23031b58f31a0c27fce8610a69d22b662c305",
+      "durationSeconds": 26.31,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/con-atheist-conduct-not-implicit-religion.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Jordan Peterson",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/jordan-peterson.mp3",
+          "sha256": "3d483b69ce9a92f2e52a6ae4b6d748d72aa220342ffae1ed8d34117780680e49",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Susan Blackmore",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/susan-blackmore.mp3",
+          "sha256": "6a3cda971d5704f0984c40dba4abc7d29869970f603304e8d84a3561bd90990b",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "57",
+      "debateId": "scrivener-dillahunty-atheism-morality-2020",
+      "moveId": "con-corrigible-wellbeing-moral-circle",
+      "expectedSpeaker": "Matt Dillahunty",
+      "proposition": "Consequences for shared well-being make oppressive and exclusionary systems morally assessable even though secular judgments remain corrigible and may later prove mistaken.",
+      "verificationExcerpt": "evolution does it's not like ooh me he-man you weak I'm gonna kill you type thing maybe you know for example sickle cell anemia provides protection against certain things and so while it may be under certain circumstances there's a reason why animals develop camouflage and other changes but slime of wine young female is it wrong for you know I'm sorry to invoke Godwin's law even though",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/clips/con-corrigible-wellbeing-moral-circle.mp3",
+      "clipSha256": "adba67964e1a3eb359fa5fe0db95089874a125a883c9db090e34e870c2f15df9",
+      "durationSeconds": 159,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/transcripts/con-corrigible-wellbeing-moral-circle.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Glen Scrivener",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/glen-scrivener.mp3",
+          "sha256": "b0155fc25d3d8a8e0d9aa70c79269d35df6e5de851fdfdb2e7ea372d5d05e3e4",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/matt-dillahunty.mp3",
+          "sha256": "2237b193e2617c2f1fbb07e1d81c37eb5bb958a26d3d1ec42d7e34abed3b3e1f",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "53",
+        "speaker": "Dinesh D'Souza",
+        "selectedMoveId": "pro-revelation-beyond-reasons-limits",
+        "selectedMoveSourceSpan": {
+          "startEvent": 948,
+          "endEvent": 1068
+        },
+        "selectedMoveDurationSeconds": 287.12,
+        "startSeconds": 2073.44,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/dinesh-d-souza.mp3",
+        "sha256": "434b8b220f2859c173a70bd03142b1b460b9e5c3c2f1da2b218c5c2389741867"
+      },
+      {
+        "debateNumber": "53",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-conquest-genocide-moral-truth",
+        "selectedMoveSourceSpan": {
+          "startEvent": 493,
+          "endEvent": 568
+        },
+        "selectedMoveDurationSeconds": 139.6,
+        "startSeconds": 1051.32,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/alex-o-connor.mp3",
+        "sha256": "22a6739db3edac2c00e6b6b15abce1e6e0efe80f8db717daa9ec7c0a17ea4939"
+      },
+      {
+        "debateNumber": "110",
+        "speaker": "James Tour",
+        "selectedMoveId": "pro-origins-disagreement-nonsalvific",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1634,
+          "endEvent": 1678
+        },
+        "selectedMoveDurationSeconds": 106.319,
+        "startSeconds": 4055.079,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/james-tour.mp3",
+        "sha256": "8deb8dd2a81db84f0260f3a290cb3eac6588385085c582b5a3cb9d69dc7b9491"
+      },
+      {
+        "debateNumber": "110",
+        "speaker": "Sy Garte",
+        "selectedMoveId": "con-human-genetic-story-limits",
+        "selectedMoveSourceSpan": {
+          "startEvent": 782,
+          "endEvent": 882
+        },
+        "selectedMoveDurationSeconds": 243.681,
+        "startSeconds": 2021.36,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/sy-garte.mp3",
+        "sha256": "b0b8fa1eb31393003e52f3f57881a6035e99d7889c205ceb564a36ca2a1212ee"
+      },
+      {
+        "debateNumber": "133",
+        "speaker": "Nathan Hawkins",
+        "selectedMoveId": "pro-idealist-science-without-exhaustion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2023,
+          "endEvent": 2175
+        },
+        "selectedMoveDurationSeconds": 351.6,
+        "startSeconds": 4564.84,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/nathan-hawkins.mp3",
+        "sha256": "188e6252b23552ee39df12b617733e46efd7284d61b7cfebb9a2c1bb9d6ee179"
+      },
+      {
+        "debateNumber": "133",
+        "speaker": "Joe Folley",
+        "selectedMoveId": "con-functional-practical-freedom",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1775,
+          "endEvent": 1892
+        },
+        "selectedMoveDurationSeconds": 229.121,
+        "startSeconds": 4005.919,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/joe-folley.mp3",
+        "sha256": "bd7b21fe27d225ec267bae3dbd8dd5201e14bb13ada847677d851bb2aa0287c0"
+      },
+      {
+        "debateNumber": "12",
+        "speaker": "Joel Settecase",
+        "selectedMoveId": "pro-necessary-truths-absolute-mind",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1183,
+          "endEvent": 1264
+        },
+        "selectedMoveDurationSeconds": 157.92,
+        "startSeconds": 2462.24,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/joel-settecase.mp3",
+        "sha256": "3415d98689483450f45517f710fc35b37eb2f3af0b91efb1caa19ba68319a714"
+      },
+      {
+        "debateNumber": "12",
+        "speaker": "Tom Jump",
+        "selectedMoveId": "con-relations-without-descriptive-languages",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1265,
+          "endEvent": 1372
+        },
+        "selectedMoveDurationSeconds": 198.4,
+        "startSeconds": 2638.08,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/tom-jump.mp3",
+        "sha256": "13d82ec8b895f66b058a5908dd91c84cdcc1a93be6f9d840113546f3427969d7"
+      },
+      {
+        "debateNumber": "187",
+        "speaker": "Keith Ward",
+        "selectedMoveId": "pro-experience-beyond-physical-description",
+        "selectedMoveSourceSpan": {
+          "startEvent": 378,
+          "endEvent": 444
+        },
+        "selectedMoveDurationSeconds": 174.8,
+        "startSeconds": 1059.04,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3",
+        "sha256": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d"
+      },
+      {
+        "debateNumber": "187",
+        "speaker": "Daniel Dennett",
+        "selectedMoveId": "con-constructed-discoverable-values",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1009,
+          "endEvent": 1090
+        },
+        "selectedMoveDurationSeconds": 253.61,
+        "startSeconds": 2803.845,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3",
+        "sha256": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca"
+      },
+      {
+        "debateNumber": "106",
+        "speaker": "Jordan Peterson",
+        "selectedMoveId": "pro-archetypes-deeper-than-memes",
+        "selectedMoveSourceSpan": {
+          "startEvent": 292,
+          "endEvent": 365
+        },
+        "selectedMoveDurationSeconds": 154.23,
+        "startSeconds": 698.195,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/jordan-peterson.mp3",
+        "sha256": "3d483b69ce9a92f2e52a6ae4b6d748d72aa220342ffae1ed8d34117780680e49"
+      },
+      {
+        "debateNumber": "106",
+        "speaker": "Susan Blackmore",
+        "selectedMoveId": "con-functioning-secular-societies-counterexample",
+        "selectedMoveSourceSpan": {
+          "startEvent": 619,
+          "endEvent": 668
+        },
+        "selectedMoveDurationSeconds": 110.88,
+        "startSeconds": 1390.85,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/susan-blackmore.mp3",
+        "sha256": "6a3cda971d5704f0984c40dba4abc7d29869970f603304e8d84a3561bd90990b"
+      },
+      {
+        "debateNumber": "57",
+        "speaker": "Glen Scrivener",
+        "selectedMoveId": "pro-practice-grounded-in-truth",
+        "selectedMoveSourceSpan": {
+          "startEvent": 931,
+          "endEvent": 984
+        },
+        "selectedMoveDurationSeconds": 133.29,
+        "startSeconds": 2095.805,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/glen-scrivener.mp3",
+        "sha256": "b0155fc25d3d8a8e0d9aa70c79269d35df6e5de851fdfdb2e7ea372d5d05e3e4"
+      },
+      {
+        "debateNumber": "57",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-comparative-corrigible-humanism",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1469,
+          "endEvent": 1556
+        },
+        "selectedMoveDurationSeconds": 194.581,
+        "startSeconds": 3347.59,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/matt-dillahunty.mp3",
+        "sha256": "2237b193e2617c2f1fbb07e1d81c37eb5bb958a26d3d1ec42d7e34abed3b3e1f"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 1179.75,
+    "clipMinutes": 19.6625,
+    "durationOnlyPlanningEstimateUsd": 0.117975,
+    "durationOnlyEstimateAuthorizedByUser": true,
+    "usageDerivedPlanningEstimateUsd": 0.430595,
+    "primaryExpectedFutureExecutionCostUsd": 0.430595,
+    "primaryEstimateBasis": "Batch 2 returned-token usage rates applied to Batch 14 exact clip seconds and twelve-call count",
+    "projectedUsage": {
+      "audioInputTokens": 21982,
+      "textInputTokens": 1368,
+      "outputTokens": 37222,
+      "totalInputTokens": 23350
+    },
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "usageDerivedEstimatedCostUsd": 0.2933175,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    },
+    "officialPricingCheckedAt": "2026-08-26",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "conditionalAdvanceApprovalRecorded": true,
+    "conditionalAdvanceApprovalMaximumUsd": 1,
+    "estimateWithinConditionalApproval": true,
+    "maximumAuthorizedCostUsd": 1,
+    "futureCostCapAuthorized": true,
+    "standingAuthorizationActivated": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 12,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization.json",
+    "sha256": "5d10c0a2bc3e1e93f1657b87f56afa4de5828c2c588ae527401e04ad98f6b222",
+    "status": "frozen-active-batch-14-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "paidTranscriptionActivation": false,
+    "paidTranscriptionExecution": true,
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false,
+    "audioVerificationExecution": true
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/transcripts/pro-ancient-historical-reporting-standard.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/transcripts/pro-prebiotic-sugar-pathway-limit.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-noncausal-compatibilist-basis.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-perceptual-categorization-pressure.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-hard-problem-vitalism-analogy.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-objective-value-beyond-catalogue.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-mortality-vulnerability-personhood.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-encoding-insufficient-for-survival.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/pro-highest-value-functions-as-god.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/con-atheist-conduct-not-implicit-religion.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/transcripts/con-corrigible-wellbeing-moral-circle.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/transcripts/pro-ancient-historical-reporting-standard.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/transcripts/pro-prebiotic-sugar-pathway-limit.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-noncausal-compatibilist-basis.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/transcripts/con-perceptual-categorization-pressure.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-hard-problem-vitalism-analogy.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-objective-value-beyond-catalogue.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-mortality-vulnerability-personhood.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/pro-encoding-insufficient-for-survival.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/pro-highest-value-functions-as-god.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/transcripts/con-atheist-conduct-not-implicit-religion.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/transcripts/con-corrigible-wellbeing-moral-circle.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/disagreement-extraction/audio-source-preparation.json": "6e8baa45dbf58bc87ff2905959de30bf80d9fc4c4414777665be24fc9d6b2bd8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/disagreement-extraction/audio-work-item-preparation.json": "7f1c3e047b4eb97b966f438ea559ec54a36eba9389e9176dfe4ee8e91498025f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/disagreement-extraction/audio-work-items.json": "486204f021f89277ed7dbbd7fec3eb1ba2a9cbb89845db6e2df3371c9e4c46f2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/independent-judgments/execution-preparation-manifest.json": "843ac18b13b39dd913cacac9810deec99bbb4bd8c9c2d3fc376447b8a55d5b57",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization.json": "5d10c0a2bc3e1e93f1657b87f56afa4de5828c2c588ae527401e04ad98f6b222",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/assessment-production-post-canary-batch-14-standing-authorization.mjs": "e77112aac069c10911490f292e231d0f02a7d90be888dfc41300b53283daa21b",
+    "scripts/prepare-assessment-production-post-canary-batch-14-audio-verification.mjs": "229c1f3141f4b033d160fcc442cc7d0d7043af5921ec2b88578c26405ae629c5",
+    "scripts/test-assessment-production-post-canary-batch-14-audio-verification-preparation.mjs": "a0feec8387ffaadc234a39e6f2ddd2d699684d39c2af24ef7d8b1136f02fc03e",
+    "scripts/assessment-production-post-canary-batch-14-audio-verification-stage.mjs": "71c9f0a1ee7db0d2944ed00aa68bed3078da613f6081b9eb689c6949fae02f4b",
+    "scripts/prepare-assessment-production-post-canary-batch-14-audio-sources.mjs": "4be05fd00cd234d922d642f7796a0e14dba60118e3a095d0fbf5d32e5cc4e759",
+    "scripts/test-assessment-production-post-canary-batch-14-audio-sources.mjs": "ad4fc18133f321ab75ad4dcff42733166e0202c91a69ae3f391b77e1d70bbbee",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/audio/source.mp3": "a5334887108fde4bcd31b48b311b7674e417c23d573140cc86e8fe71fdc5e984",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/audio/source.mp3": "d2642d5464feb128eb3c052d75577a41eb00a02a75a0aca95769eaf5fd0e3780",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/audio/source.mp3": "03ec06d3eaa6845deb5cce1f3161a676c5f8e87566a9921ed509a8c76ff7b4ea",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/audio/source.mp3": "da8d2dfe98a55cf8252d120bb6afe6859e5c68f3fbdbd1749f16e5519d1e5674",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/audio/source.mp3": "2ec2c9a826f1bd3d1cb9aee207a8ee430927da80a3fc2ac8fe5fab7ebc4c62c1",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/audio/source.mp3": "10e90dd3dd2e94110ea742d34152014aae4cf39bd601010b8cdf4777edd34e5b",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/audio/source.mp3": "887f0e6baa0fb2f364247a0226ca6ecef064ba5eb9e436dec00d9c2871f43105",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/clips/pro-ancient-historical-reporting-standard.mp3": "65e57ced6629cf4d7c62b0c6b18d7c1c15158e5a3f0927dfedda53bf89248e3f",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/clips/pro-prebiotic-sugar-pathway-limit.mp3": "28732a590e49006c97b0c5d8d483bb6cdbdb49698f848e05bea7626b27b92e78",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/clips/con-noncausal-compatibilist-basis.mp3": "af8f29a5acc79283aeca9420fbc1d81935bcb243d56cdde9310bc9cbea2c97ba",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/clips/con-perceptual-categorization-pressure.mp3": "dea74468f2dbe4dc4b907b5fc1526c1486c23fba6feb0c01b1596fedf80a7a48",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/clips/con-reality-identity-through-time.mp3": "98519ff1e0117642512fec9516762ec1a7fef654a966fb5f6287c4c31cdf7cbd",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/con-hard-problem-vitalism-analogy.mp3": "fa8543ed9b4eb96aef01bdbf0011c671c8de01fa96f5765acc2f03a0b5b48711",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/pro-objective-value-beyond-catalogue.mp3": "25c00ac5c2c1f341ddf432d27409db82455daaff2a6bbd0bd642eed5114f0363",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/con-mortality-vulnerability-personhood.mp3": "e8d909276d866fa30a5e0f8df9cfe405b803ed137d6ad4ac82458f4b9c611199",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/clips/pro-encoding-insufficient-for-survival.mp3": "c8290f8bb85e3cf81bfe2d86450896ce76c3a8b50d11f2495ed2ecf1defcc9b5",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/clips/pro-highest-value-functions-as-god.mp3": "8c0a1ca0546f482f93182ba1c99e06feab80b6213ff2ed6e7a98b3d1e0387e56",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/clips/con-atheist-conduct-not-implicit-religion.mp3": "773a7bd94ff34b764c50583dd1f23031b58f31a0c27fce8610a69d22b662c305",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/clips/con-corrigible-wellbeing-moral-circle.mp3": "adba67964e1a3eb359fa5fe0db95089874a125a883c9db090e34e870c2f15df9",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/dinesh-d-souza.mp3": "434b8b220f2859c173a70bd03142b1b460b9e5c3c2f1da2b218c5c2389741867",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-53/references/alex-o-connor.mp3": "22a6739db3edac2c00e6b6b15abce1e6e0efe80f8db717daa9ec7c0a17ea4939",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/james-tour.mp3": "8deb8dd2a81db84f0260f3a290cb3eac6588385085c582b5a3cb9d69dc7b9491",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-110/references/sy-garte.mp3": "b0b8fa1eb31393003e52f3f57881a6035e99d7889c205ceb564a36ca2a1212ee",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/nathan-hawkins.mp3": "188e6252b23552ee39df12b617733e46efd7284d61b7cfebb9a2c1bb9d6ee179",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-133/references/joe-folley.mp3": "bd7b21fe27d225ec267bae3dbd8dd5201e14bb13ada847677d851bb2aa0287c0",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/joel-settecase.mp3": "3415d98689483450f45517f710fc35b37eb2f3af0b91efb1caa19ba68319a714",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/references/tom-jump.mp3": "13d82ec8b895f66b058a5908dd91c84cdcc1a93be6f9d840113546f3427969d7",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/keith-ward.mp3": "f27beedd88a2a5f05dd543b7598f84222c52bbc00c68aeb2b0fd2e6d3741998d",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/references/daniel-dennett.mp3": "adf0f0c92980f89bb1d6ed4776a921df18bf94aa45a97a65e688b65dd20e29ca",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/jordan-peterson.mp3": "3d483b69ce9a92f2e52a6ae4b6d748d72aa220342ffae1ed8d34117780680e49",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-106/references/susan-blackmore.mp3": "6a3cda971d5704f0984c40dba4abc7d29869970f603304e8d84a3561bd90990b",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/glen-scrivener.mp3": "b0155fc25d3d8a8e0d9aa70c79269d35df6e5de851fdfdb2e7ea372d5d05e3e4",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-57/references/matt-dillahunty.mp3": "2237b193e2617c2f1fbb07e1d81c37eb5bb958a26d3d1ec42d7e34abed3b3e1f"
+  },
+  "nextAuthorizedAction": "execute-exactly-twelve-post-canary-batch-14-paid-audio-verification-calls-once-sequentially",
+  "activatedAt": "2026-08-27T18:17:19Z",
+  "userExecutionAuthorization": {
+    "instruction": "Thank you. Let's proceed.",
+    "standingAuthorizationSha256": "5d10c0a2bc3e1e93f1657b87f56afa4de5828c2c588ae527401e04ad98f6b222",
+    "maximumDirectIncrementalCostUsd": 1,
+    "authorizedDurationOnlyPlanningEstimateUsd": 0.117975,
+    "frozenUsageDerivedEstimateUsd": 0.430595,
+    "verificationCallsAuthorized": 12,
+    "model": "gpt-4o-transcribe-diarize",
+    "provider": "OpenAI Transcription API",
+    "knownSpeakerReferencesPerCall": 2,
+    "sequentialExecution": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "returnedTokenUsageCostControlRequired": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "deterministicValidationAndCostAnalysisAuthorized": true,
+    "judgmentModelExecutionAuthorized": false,
+    "adjudicationModelExecutionAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/execution-preparation-manifest.json",
+    "sha256": "210b42fb41d3e739994bcaa11a8748bb8f5464790927fca0f561486aba51cfe6"
+  },
+  "canonicalSourceGate": {
+    "productionManifest": "docs/assessment-production/manifest-v1.json",
+    "productionManifestSha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "debates": [
+      {
+        "debateNumber": "53",
+        "debateId": "oconnor-dsouza-bible-true-2024",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Bible as true revelation",
+            "speakers": [
+              "Dinesh D'Souza"
+            ]
+          },
+          "con": {
+            "label": "Biblical skepticism",
+            "speakers": [
+              "Alex O'Connor"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/UMKkX8qRHsw/transcript.txt",
+          "transcriptSha256": "37c7f623340f7de14e1c23ac9ae897d13b0092e1a89147d49f06345b7a6e1e7f",
+          "events": ".assessment-cache/captions/UMKkX8qRHsw/events.json",
+          "eventsSha256": "17729a451af0759cefe0575df6bfbc24c81620423bc69b7d1f0ae4c5b8d80d09",
+          "manifest": ".assessment-cache/captions/UMKkX8qRHsw/manifest.json",
+          "manifestSha256": "92aa39e31ab4ef9e0af599d0a27eb07021b26e53af84c14d02b623556034d43d",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "110",
+        "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Mechanism-first skepticism",
+            "speakers": [
+              "James Tour"
+            ]
+          },
+          "con": {
+            "label": "Theistic evolutionary synthesis",
+            "speakers": [
+              "Sy Garte"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/cqfPJQg8m5U/transcript.txt",
+          "transcriptSha256": "e033b685544b92d6e6a02651003c69d024794cce6ea3ef2c0cda79cc37eff9b0",
+          "events": ".assessment-cache/captions/cqfPJQg8m5U/events.json",
+          "eventsSha256": "45354df60693ecf8f7ebd91dc8de16e5fa9debd9e3c905e9515f35d3a4b9a5f6",
+          "manifest": ".assessment-cache/captions/cqfPJQg8m5U/manifest.json",
+          "manifestSha256": "ed96d12a8f572d28c3e3c025d6efbdb49c275d4f192ff88c74f452556cccc315",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "133",
+        "debateId": "hawkins-folley-free-will-idealism-2026",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Libertarian idealism",
+            "speakers": [
+              "Nathan Hawkins"
+            ]
+          },
+          "con": {
+            "label": "Compatibilist pragmatism",
+            "speakers": [
+              "Joe Folley"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/OSXawgwSZQs/transcript.txt",
+          "transcriptSha256": "983dfe6da87ddc08124eec2f136b7822b786e544d8bdb6d961eb477cd770bcfa",
+          "events": ".assessment-cache/captions/OSXawgwSZQs/events.json",
+          "eventsSha256": "7d0f72e27b04551be2534d73b2d9ed6ed48273d1b931b42b7ba9ed942f79f1ef",
+          "manifest": ".assessment-cache/captions/OSXawgwSZQs/manifest.json",
+          "manifestSha256": "aaa76757a46dfb2dcf1ac1e31831265ce6bf97aded8dc43abc49f2692ceaf36d",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "12",
+        "debateId": "settecase-jump-evidence-for-god-2025",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Christian theism",
+            "speakers": [
+              "Joel Settecase"
+            ]
+          },
+          "con": {
+            "label": "Atheist naturalism",
+            "speakers": [
+              "Tom Jump"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/XLcRd3RjdjA/transcript.txt",
+          "transcriptSha256": "a67873e1fd6bf024ba07a25763792fe4205172a0709ff743eab4c411b3719c5a",
+          "events": ".assessment-cache/captions/XLcRd3RjdjA/events.json",
+          "eventsSha256": "4e58d7b5bc7b77a2e688e927d1a352af2b119c2da7290bcae68182419da1f134",
+          "manifest": ".assessment-cache/captions/XLcRd3RjdjA/manifest.json",
+          "manifestSha256": "f2fe6c5350c4d314f3651d36fd9b9ba8c6a8d79cbeb164272af1a10142d00582",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "187",
+        "debateId": "ward-dennett-more-than-matter-2019",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Persons are irreducible to matter",
+            "speakers": [
+              "Keith Ward"
+            ]
+          },
+          "con": {
+            "label": "Naturalism can explain persons",
+            "speakers": [
+              "Daniel Dennett"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/mongL_2KMGg/transcript.txt",
+          "transcriptSha256": "b96548a0ebacc82e318b58ec0851c90668838ccf3b6cdd47fe749740c83a29fb",
+          "events": ".assessment-cache/captions/mongL_2KMGg/events.json",
+          "eventsSha256": "581845df55c0e65b22af2e55fc5643297c582e4c44d6998ea82c1e6523011d91",
+          "manifest": ".assessment-cache/captions/mongL_2KMGg/manifest.json",
+          "manifestSha256": "ae38d275b9c48707a1762b5db21b103d5ff53d4941446330296e67f1e3965d8c",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "106",
+        "debateId": "peterson-blackmore-god-meaning-life-2018",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Religious pragmatism",
+            "speakers": [
+              "Jordan Peterson"
+            ]
+          },
+          "con": {
+            "label": "Memetic atheism",
+            "speakers": [
+              "Susan Blackmore"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/syP-OtdCIho/transcript.txt",
+          "transcriptSha256": "b21279cda82aac5f84e301abdc9cc195d4ccee839f8c1cd67e6a3c8bd14853c4",
+          "events": ".assessment-cache/captions/syP-OtdCIho/events.json",
+          "eventsSha256": "8ac35238e98a91431ac176b88955bd922cdc4e3613d95c99938e999ad070f991",
+          "manifest": ".assessment-cache/captions/syP-OtdCIho/manifest.json",
+          "manifestSha256": "434bb8fb0a72aea3e0c7918541ab361923dc0e2460672c804e30292e84e27acc",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "57",
+        "debateId": "scrivener-dillahunty-atheism-morality-2020",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Christian moral foundation",
+            "speakers": [
+              "Glen Scrivener"
+            ]
+          },
+          "con": {
+            "label": "Secular humanism",
+            "speakers": [
+              "Matt Dillahunty"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/B3-sjyDYO2I/transcript.txt",
+          "transcriptSha256": "6b5c816624fe110fdc2a593929bb8ebbfddd248e5f806bdfa464c87490d5b748",
+          "events": ".assessment-cache/captions/B3-sjyDYO2I/events.json",
+          "eventsSha256": "e0b9114fda0df3b7feef56d81243c803aa978454a7defaa127c50aefb98b21b6",
+          "manifest": ".assessment-cache/captions/B3-sjyDYO2I/manifest.json",
+          "manifestSha256": "e4d37e8dac6a81ae1213262a7f855dea0b60af265056ec46e8bbf9e9e5af3fa2",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      }
+    ],
+    "transcriptHashesVerified": 7,
+    "eventHashesVerified": 7,
+    "manifestHashesVerified": 7,
+    "dyadicDebatesVerified": 7
+  },
+  "executionToolHashes": {
+    "scripts/assessment-production-post-canary-batch-14-audio-verification-stage.mjs": "71c9f0a1ee7db0d2944ed00aa68bed3078da613f6081b9eb689c6949fae02f4b",
+    "scripts/lib/assessment-production-post-canary-batch-14-standing-authorization.mjs": "e77112aac069c10911490f292e231d0f02a7d90be888dfc41300b53283daa21b",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  }
+}
