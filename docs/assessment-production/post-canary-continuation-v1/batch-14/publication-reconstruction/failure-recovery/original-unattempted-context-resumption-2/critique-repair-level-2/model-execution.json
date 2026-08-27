@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-critique-recovery-level-2-execution",
+  "protocolId": "assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2",
+  "status": "three-atomic-critique-batch-14-publication-recovery-level-2-execution-passed",
+  "startedAt": "2026-08-27T20:09:37.773Z",
+  "completedAt": "2026-08-27T20:11:06.423Z",
+  "elapsedMs": 88649,
+  "contextsAttempted": 3,
+  "validContexts": 3,
+  "invalidContexts": 0,
+  "attempts": 3,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "results": [
+    {
+      "contextIndex": 0,
+      "moveIds": [
+        "con-propositions-versus-reality"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T20:09:37.774Z",
+      "completedAt": "2026-08-27T20:10:26.905Z",
+      "elapsedMs": 49131,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "96c8c70dff3b678951b4d7395cccfaa5a48c08586976e754d5cfb3e74adba323",
+      "stderrSha256": "fc0ae247fdd28e2a0a3b049897e67717af3a6471d5946219c1cb32edfb3595f1",
+      "stderrTail": "on” left implicitly linguistic.\"\n        },\n        \"calibrationFindings\": {\n          \"assertedForce\": \"certainty\",\n          \"warrantFit\": \"slightly-overstated\",\n          \"qualificationStatus\": \"implicit\",\n          \"uncertaintyAcknowledged\": \"no\",\n          \"rationale\": \"The analogy supports mind-dependent expression, but certainty that propositions exist nowhere assumes a contested linguistic conception.\"\n        },\n        \"charity\": {\n          \"tested\": true,\n          \"alternative\": \"A proposition may mean abstract truth-content rather than the written or spoken sentence expressing it.\",\n          \"decisiveQualification\": \"The tree-word analogy establishes mind-dependence of expressions, not necessarily of abstract contents.\"\n        },\n        \"ratings\": {\n          \"logicalCoherence\": {\n            \"value\": 76,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"evidenceWarrant\": {\n            \"value\": 72,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 70); their difference did not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"relevanceBurden\": {\n            \"value\": 87,\n            \"rationale\": \"It directly advances the central non-theistic distinction between descriptive language and objective ontology.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 66,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 67); their difference did not meet a semantic or magnitude dispute trigger.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt compares “A equals A” with the word “tree,” distinguishing the objective referent from a sentence that allegedly exists only in minds.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Logical sentences are mind-dependent descriptions, whereas the realities they describe exist objectively; accurate reference therefore need not require transcendent propositions or a divine mind.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n      74    1809 schema.json\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-debate12-critique-repair-level-2-0\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 0\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"12\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"settecase-jump-evidence-for-god-2025\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"maxItems\": 1,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-propositions-versus-reality\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\",\"contextIndex\":0,\"debateNumber\":\"12\",\"debateId\":\"settecase-jump-evidence-for-god-2025\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"con-propositions-versus-reality\",\"critique\":\"Strongest feature: Jump distinguishes reality from mind-dependent sentences, using tree analogy to explain how descriptions represent objective conditions without transcendent existence, thereby answering Settecase’s connective-principle challenge through an ontological reframe. Principal limitation: Equating propositions with sentences remains undefended, because linguistic dependence establishes neither the nonexistence of abstract truth-contents nor the subjectivity of modal relations, so the analogy understates a charitable interpretation. Live burden: Jump must substantiate his linguistic account while explaining how logical necessity, normativity, and counterfactual validity emerge from mind-dependent formulations without conflating expressions, contents, and realities. Locked score: Exceptional responsiveness and burden contact support the competent band, while overstated certainty, implicit qualification, moderate warrant, and limited representational charity appropriately constrain the assessment to 81.\"}]}\ntokens used\n21,271",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "05d83d4350e57128e6f1d69832ced0884b45d9a71fd4fa5b7f8a02ee7bee7c87",
+      "critiqueValidations": [
+        {
+          "moveId": "con-propositions-versus-reality",
+          "words": 116,
+          "characters": 1027,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 1,
+      "moveIds": [
+        "con-reality-identity-through-time"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T20:09:37.774Z",
+      "completedAt": "2026-08-27T20:10:27.298Z",
+      "elapsedMs": 49524,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "da340ff66acfe7c413cbaa35d2c19944f926811dd43b0e66967b2c5431f1d217",
+      "stderrSha256": "3f17331a9fe0bd28a4c1a99166a14216708bba32d7935009cd874149ce4b3ed8",
+      "stderrTail": "     \"qualificationExplicitness\": \"missing\",\n          \"rationale\": \"The temporal identity thesis is recoverable, although the excerpt briefly says “cannot be reality” where context requires “cannot not be reality.”\"\n        },\n        \"calibrationFindings\": {\n          \"assertedForce\": \"necessity\",\n          \"warrantFit\": \"slightly-overstated\",\n          \"qualificationStatus\": \"missing\",\n          \"uncertaintyAcknowledged\": \"no\",\n          \"rationale\": \"Identity supports a necessary synchronic claim, but extension across time is asserted with an insufficiently defended scope condition.\"\n        },\n        \"charity\": {\n          \"tested\": true,\n          \"alternative\": \"Reality’s continued identity may be a tautological truth that explains nothing about persistence or particular structures.\",\n          \"decisiveQualification\": \"The reply establishes identity under every condition, not the persistence of any particular entity or arrangement.\"\n        },\n        \"ratings\": {\n          \"logicalCoherence\": {\n            \"value\": 71,\n            \"rationale\": \"The argument is intelligible, but “nothing can make reality not reality” substantially restates rather than independently supports temporal invariance.\"\n          },\n          \"evidenceWarrant\": {\n            \"value\": 69,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"relevanceBurden\": {\n            \"value\": 87,\n            \"rationale\": \"It directly supports the central non-theistic bridge concerning reality’s identity through time and changing conditions.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 78,\n            \"rationale\": \"The move answers the identity question fairly but does not incorporate the strongest limitation on its explanatory reach.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt says reality cannot under any conditions fail to be reality, explicitly includes time, and presents this as a full argument.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"No condition, including temporal change, can make reality cease being reality, so identity applies throughout every point in the past and future.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-debate12-critique-repair-level-2-1\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 1\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"12\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"settecase-jump-evidence-for-god-2025\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"maxItems\": 1,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-reality-identity-through-time\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\",\"contextIndex\":1,\"debateNumber\":\"12\",\"debateId\":\"settecase-jump-evidence-for-god-2025\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27\",\"corrections\":[{\"moveId\":\"con-reality-identity-through-time\",\"critique\":\"Strongest feature: Jump supplies the requested connective principle directly, characterizing reality’s unconditional self-identity as temporally invariant and thereby confronting the central modal burden with an intelligible universal answer. Principal limitation: The premise remains substantially reiterative: reality’s inability to cease being reality does not independently explain why synchronic identity entails diachronic persistence, while absent qualification leaves particular entities, structures, arrangements, and transformations unsupported. Live burden: The reply must differentiate necessary identity from an explanatorily consequential persistence account, then substantiate its inference across past and future conditions without equivocating between reality collectively and its mutable constituents. Locked score: The strong/competent result reflects excellent burden contact and completeness, tempered by overstated necessity, limited warrant, unstable temporal scope, and unacknowledged explanatory restriction.\"}]}\ntokens used\n21,874",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "505de47b77dee656ebf89c3b17eb64d10f785dc311e636bc2a08bc03f142d9cb",
+      "critiqueValidations": [
+        {
+          "moveId": "con-reality-identity-through-time",
+          "words": 118,
+          "characters": 1033,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 2,
+      "moveIds": [
+        "con-thinker-capable-of-error"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T20:10:27.304Z",
+      "completedAt": "2026-08-27T20:11:06.413Z",
+      "elapsedMs": 39109,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "4fd61918a546d2e36c7b74204ccfa69dd61aefc55019760696b3febe985a8f6f",
+      "stderrSha256": "d25ca0ce16caa63e47bb3f728b7a02ea9939bfc6945464bdcae4b2e76e8b3e20",
+      "stderrTail": "   \"rationale\": \"Within relevant nonanswers, it bears on epistemic foundations but leaves every decisive grounding and modal component uncontacted.\"\n          }\n        },\n        \"precisionFindings\": {\n          \"propositionRecoverability\": \"partial\",\n          \"termStability\": \"partly-unstable\",\n          \"scopeStability\": \"materially-unstable\",\n          \"qualificationExplicitness\": \"missing\",\n          \"rationale\": \"The first-person premise is recoverable, but “gives me all of that” leaves the conclusion’s content and scope unspecified.\"\n        },\n        \"calibrationFindings\": {\n          \"assertedForce\": \"certainty\",\n          \"warrantFit\": \"radically-overstated\",\n          \"qualificationStatus\": \"missing\",\n          \"uncertaintyAcknowledged\": \"no\",\n          \"rationale\": \"The excerpt claims complete success from the inability to err about existence without restating or defending the intervening bridges.\"\n        },\n        \"charity\": {\n          \"tested\": false,\n          \"alternative\": \"\",\n          \"decisiveQualification\": \"\"\n        },\n        \"ratings\": {\n          \"logicalCoherence\": {\n            \"value\": 55,\n            \"rationale\": \"The narrow self-existence premise is coherent, but the conclusion that it supplies the entire epistemic framework is an unsupported non sequitur.\"\n          },\n          \"evidenceWarrant\": {\n            \"value\": 51,\n            \"rationale\": \"Performative self-certainty supports existence of a thinker, while no evidence or warrant supports the unspecified broader claim “all of that.”\"\n          },\n          \"relevanceBurden\": {\n            \"value\": 86,\n            \"rationale\": \"It directly reiterates the central non-theistic self-experience bridge, although with little development.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 75,\n            \"rationale\": \"The brief reply reiterates its own premise without interpreting or materially engaging an opposing alternative.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt says inability to believe one exists and be wrong “gives me all of that,” but supplies no further derivation or modal bridge.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Supporting reply\",\n        \"words\": \"The undeniable existence of a thinker who can otherwise be mistaken allegedly supplies the entire non-theistic epistemic basis required for knowledge and intelligibility.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n    1806 schema.json\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-debate12-critique-repair-level-2-2\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 2\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"12\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"settecase-jump-evidence-for-god-2025\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"maxItems\": 1,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-thinker-capable-of-error\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2\",\"contextIndex\":2,\"debateNumber\":\"12\",\"debateId\":\"settecase-jump-evidence-for-god-2025\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"con-thinker-capable-of-error\",\"critique\":\"Strongest feature: The reply identifies indubitable first-person awareness of existing as a mistake-capable thinker, presenting a coherent, relevant non-theistic epistemic foothold rather than presupposing the disputed theistic framework. Principal limitation: Its assertion that this certainty “gives me all of that” leaves the conclusion unspecified and provides no bridge from self-existence to knowledge, intelligibility, universal or modal scope, or the necessary-versus-contingent grounding distinction. Live burden: The reply must articulate connective principles showing how localized self-certainty generates the preconditions claimed, while explaining why those principles require neither divine grounding nor metaphysical commitments. Locked score: The weak-band result reflects central relevance and a defensible foundational intuition, outweighed by unstable scope, missing qualifications, overstated certainty, and noncontact with every decisive challenge.\"}]}\ntokens used\n20,954",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "8991f74b50fb1967da6aec1fd8865c94ad407af3c3df7861fa3ee0d6ed9d0c19",
+      "critiqueValidations": [
+        {
+          "moveId": "con-thinker-capable-of-error",
+          "words": 117,
+          "characters": 970,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    }
+  ],
+  "authorization": {
+    "analysis": true,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
