@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-field-disjoint-repair-activation",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1",
+  "status": "frozen-one-context-two-field-batch-13-debate-20-publication-repair-activated",
+  "checkpointCommit": "015f5ab64b0a124dc4201e8687f069aac96ddb91",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "source": "Batch 13 complete-workflow standing authorization",
+    "resolvedScope": "one fresh isolated field-disjoint shard correcting exactly two rejected Debate 20 critiques while retaining every validation-clean field",
+    "workflowException": null,
+    "contexts": 1,
+    "writableFields": 2,
+    "writableFieldsMaximumPerPacket": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-20-shard-1",
+      "debateNumber": "20",
+      "debateId": "hitchens-hitchens-iraq-god-2008",
+      "writableFields": [
+        "moveProse.con-atheism-no-binding-authority.critique",
+        "moveProse.con-objective-morality-borrowed-ground.critique"
+      ],
+      "writableFieldCount": 2,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/packets/context-0.json",
+      "packetSha256": "920f6659b4f37c44cabe205d993d3163fc925f43b3d369aadf407cc83a4085c1",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/schemas/context-0.schema.json",
+      "schemaSha256": "0a62161b09c597529ee9e7292ccaa8a1704a8642f4b4e5d189d5a46f96b2251d",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/outputs/context-0.json",
+      "validation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/validations/context-0.json",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/provenance/context-0.json"
+    }
+  ],
+  "diagnosis": {
+    "status": "deterministically-confirmed-two-critique-failures",
+    "debates": [
+      {
+        "debateNumber": "20",
+        "invalidCritiques": [
+          {
+            "moveId": "con-atheism-no-binding-authority",
+            "field": "moveProse.con-atheism-no-binding-authority.critique",
+            "words": 132,
+            "characters": 1010
+          },
+          {
+            "moveId": "con-objective-morality-borrowed-ground",
+            "field": "moveProse.con-objective-morality-borrowed-ground.critique",
+            "words": 131,
+            "characters": 989
+          }
+        ],
+        "invalidQuotes": [],
+        "nonTargetStructuralAudit": {
+          "status": "passed",
+          "debateNumber": "20",
+          "moves": 21,
+          "critiques": 21,
+          "minimumCritiqueCharacters": 974,
+          "tags": 7,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 16,
+          "introducedItems": 3,
+          "newArguments": 4,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        }
+      }
+    ],
+    "totals": {
+      "debates": 1,
+      "invalidCritiques": 2,
+      "invalidQuotes": 0,
+      "writableFields": 2
+    },
+    "everyNonTargetFieldStructurallyValidated": true,
+    "temporaryStandInsWrittenOrRetained": false
+  },
+  "diagnosticStandIn": {
+    "source": "validation-clean-critique-from-the-same-preserved-Debate-20-output",
+    "persistedAsCorrection": false
+  },
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "repairManual": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/manual.md",
+    "filesPerContext": [
+      "production-workflow.md",
+      "readiness-workflow.md",
+      "output-contract.md",
+      "repair-manual.md",
+      "packet.json",
+      "schema.json"
+    ]
+  },
+  "isolation": {
+    "oneDebatePerContext": true,
+    "freshContextPerShard": true,
+    "onlyFrozenInputsAvailable": true,
+    "failedPublicationOutputsUnavailable": true,
+    "rejectedPriorStringsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "rankingsAndWinnerComparisonsUnavailable": true,
+    "participantJudgmentClosed": true,
+    "scoresRepositoryOwnedAndImmutable": true,
+    "allNonTargetFieldsUnavailableAndImmutable": true,
+    "fieldDisjointAcrossShards": true
+  },
+  "retentionContract": {
+    "acceptedOriginalDebatesRetained": 0,
+    "validationCleanFieldsRetainedDeterministically": true,
+    "rejectedPriorStringsRetained": false,
+    "eachTargetFieldReplacedAtMostOnce": true,
+    "completeDebateValidationRequiredAfterMerge": true,
+    "completeTenDebateCohortReplayDeferredUntilSixUnattemptedContextsComplete": true
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.150.0-alpha.8",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true,
+    "isolatedTemporaryWorkingDirectories": true,
+    "hostAwakeGuard": {
+      "path": "/usr/bin/caffeinate",
+      "sha256": "ef2d405c25a7335ccedf2c1ac7667a3f4a5226dcc1f59668259d43aae59bfbb7",
+      "args": [
+        "-dimsu"
+      ]
+    }
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "maximumParallelContexts": 1,
+    "schedulerRamp": [
+      1
+    ],
+    "continueIndependentFrozenShardsAfterFailure": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "separateActivationRequired": true
+  },
+  "stopRules": {
+    "stopOnSourceHashMismatch": true,
+    "noAutomaticRetry": true,
+    "noTimeoutExtension": true,
+    "noFurtherAutomaticCorrection": true,
+    "noPaidServices": true,
+    "noProductionMutationUntilEveryDebatePasses": true,
+    "stopBeforeBatch14": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/execution-preparation-manifest.json": "39bb97726aa4fe455826cf01d9dee3cd9dd9bc7e3e067ada7a6c970d68801547",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/execution-activation.json": "e0b30ca51a526f13fe225706d6259b6792500a6c62aed28ab198de46c9f23a28",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/model-execution.json": "7a67da0afbf10e40bd8f06e2fd82806cdbb8a379ccafc522499f3d551ccbcded",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/analysis.json": "354a65cbfd26efb62ac763c019cbee81f94c5d9a98083833ca2a2efd77bf057e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-failure-analysis.json": "1439e83f3ddd9812d7124f96c977a5ddb2c6383b640ec75aeb4e7e3766951074",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/outputs/debate-20.json": "c93ef3c145ba8d2474d5240e1309319f31ac8d6f84171b8ea0019d348097e561",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/packets/debate-20.json": "2bc6b908e52c11a392523d0942cdfc7bcf9e119514702119f6f23a57865898b2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/validations/debate-20.json": "d620a8c22986702e424c743fb012d964f173402e789eececff58c36bfea275c4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/provenance/debate-20.json": "2581f4996ef2b0af7b9f4230c508d881efb0010065b32549e0ae49f7593da85c",
+    "scripts/lib/assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1.mjs": "66e7b4ff74538a3bec4fa48663b71441746502c59ef945a854866557010b2654",
+    "scripts/prepare-assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1.mjs": "1022465b3a8b39e8ccdb5e4963e60401d55d19c174ccce08a7c6f80f2dac975d",
+    "scripts/activate-assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1.mjs": "b4814270ccf92a4f3bc709d16a9c847a711ddc25f53945d0d50c0097b7042f2a",
+    "scripts/run-assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1.mjs": "fb062d35e2dd6252185d9108ccdfb6ee5222bafb084cdf9d35cd7c37c4cc5107",
+    "scripts/analyze-assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1.mjs": "b0369b656b57eaceeb43d2df6019020ce5ce6007990b4d18c21f50c797d1cd60",
+    "scripts/lib/assessment-production-post-canary-batch-13-publication-validation.mjs": "75d12ebafae9cb3606d20aa6bf5765b582e0e0bd5fb29f5117388d18bf93ba7a",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs": "e300714ea30b3056864ada9fb1e03be429465c8fd26aeb4c1fb49055a6d908ff",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+    "/usr/bin/caffeinate": "ef2d405c25a7335ccedf2c1ac7667a3f4a5226dcc1f59668259d43aae59bfbb7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/manual.md": "b23c5f7d0326edcd68dbc1d2dca48131a9e0f86358bed6524f0b07fb84193cb2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/packets/context-0.json": "920f6659b4f37c44cabe205d993d3163fc925f43b3d369aadf407cc83a4085c1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/schemas/context-0.schema.json": "0a62161b09c597529ee9e7292ccaa8a1704a8642f4b4e5d189d5a46f96b2251d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/execution-preparation-manifest.json": "555b25a49ae3845c0bf4d3fc6c29109f12c12a25cf7ede06e8abcda2a4c38f2c"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/complete-cohort-analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/outputs/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/validations/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/provenance/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/corrected/debate-20.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/complete-validations/debate-20.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/merge-audits/debate-20.json"
+  ],
+  "artifacts": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/analysis.json",
+    "completeCohortAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/complete-cohort-analysis.json"
+  },
+  "totals": {
+    "debates": 1,
+    "contexts": 1,
+    "critiqueFields": 2,
+    "quoteFields": 0,
+    "writableFields": 2,
+    "modelContextsExecuted": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCallsThisStage": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "preparation": false,
+    "activation": false,
+    "modelExecution": true,
+    "deterministicValidationMergeAndCohortReplay": true,
+    "retries": false,
+    "timeoutExtensions": false,
+    "furtherCorrections": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-only-one-frozen-debate-20-field-disjoint-repair-context",
+  "activatedAt": "2026-08-27T04:05:14.000Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/debate-20-field-disjoint-repair-1/execution-preparation-manifest.json",
+    "sha256": "555b25a49ae3845c0bf4d3fc6c29109f12c12a25cf7ede06e8abcda2a4c38f2c"
+  }
+}
