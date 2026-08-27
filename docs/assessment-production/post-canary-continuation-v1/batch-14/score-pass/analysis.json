@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-score-analysis",
+  "protocolId": "assessment-production-post-canary-batch-14-adjudicated-consensus",
+  "status": "post-canary-batch-14-score-stability-gate-passed",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "resultIntegrity": {
+    "activeV22PolicyAppliedProspectively": true,
+    "everyIntegerRoundedTieAccepted": true,
+    "agreedInitialTieDirectionUnconstrained": true,
+    "disagreedInitialWinnerDirectionUnconstrained": true,
+    "unroundedDirectionDiagnosticOnly": true,
+    "publishedOppositeSideReversalRejected": true,
+    "singleDeterministicScoringPass": true,
+    "scoresDerivedAfterLedgerLock": true,
+    "postResultTuningPerformed": false,
+    "automaticRerunPerformed": false,
+    "productionScoresUsedForAcceptance": false,
+    "deterministicScoreReplayPassed": true
+  },
+  "validation": {
+    "status": "passed",
+    "debates": 10,
+    "finalSides": 20,
+    "scoringPasses": 1,
+    "activePolicyVersion": "v2.2",
+    "allowedIntegerRoundedTieCollapses": [],
+    "allowedAgreedInitialTieDrifts": [],
+    "publishedOppositeSideReversals": [],
+    "numericPassed": true,
+    "winnerStabilityPassed": true,
+    "acceptancePassed": true
+  },
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "53",
+        "side": "pro",
+        "passA": 75,
+        "passB": 76,
+        "final": 76,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "53",
+        "side": "con",
+        "passA": 91,
+        "passB": 91,
+        "final": 91,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "69",
+        "side": "pro",
+        "passA": 81,
+        "passB": 81,
+        "final": 80,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "69",
+        "side": "con",
+        "passA": 87,
+        "passB": 85,
+        "final": 86,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "110",
+        "side": "pro",
+        "passA": 79,
+        "passB": 80,
+        "final": 79,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "110",
+        "side": "con",
+        "passA": 80,
+        "passB": 79,
+        "final": 80,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "133",
+        "side": "pro",
+        "passA": 78,
+        "passB": 76,
+        "final": 77,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "133",
+        "side": "con",
+        "passA": 86,
+        "passB": 82,
+        "final": 85,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 3,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "12",
+        "side": "pro",
+        "passA": 85,
+        "passB": 84,
+        "final": 84,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "12",
+        "side": "con",
+        "passA": 79,
+        "passB": 78,
+        "final": 78,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "187",
+        "side": "pro",
+        "passA": 76,
+        "passB": 76,
+        "final": 76,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "187",
+        "side": "con",
+        "passA": 81,
+        "passB": 82,
+        "final": 83,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "160",
+        "side": "pro",
+        "passA": 81,
+        "passB": 80,
+        "final": 80,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "160",
+        "side": "con",
+        "passA": 87,
+        "passB": 81,
+        "final": 85,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 4,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "55",
+        "side": "pro",
+        "passA": 73,
+        "passB": 78,
+        "final": 75,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 3,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "55",
+        "side": "con",
+        "passA": 91,
+        "passB": 90,
+        "final": 91,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "106",
+        "side": "pro",
+        "passA": 74,
+        "passB": 74,
+        "final": 74,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "106",
+        "side": "con",
+        "passA": 84,
+        "passB": 86,
+        "final": 85,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "57",
+        "side": "pro",
+        "passA": 76,
+        "passB": 75,
+        "final": 77,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "57",
+        "side": "con",
+        "passA": 88,
+        "passB": 85,
+        "final": 86,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "meanAbsoluteDistanceToInitialPasses": 0.97,
+    "maximumAbsoluteDistanceToEitherInitialPass": 4,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "policyVersion": "v2.2",
+    "policyPath": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+    "numericPassed": true,
+    "winnerStability": {
+      "rows": [
+        {
+          "debateNumber": "53",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 75.9,
+            "con": 90.8
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "69",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 79.94,
+            "con": 86.42
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "110",
+          "initialWinnersAgree": false,
+          "initialWinner": null,
+          "agreedWinningSide": null,
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 79.14,
+            "con": 80.03
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "133",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 77.35,
+            "con": 85.4
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "12",
+          "initialWinnersAgree": true,
+          "initialWinner": "pro",
+          "agreedWinningSide": "pro",
+          "finalRoundedWinner": "pro",
+          "finalAdjustedTotals": {
+            "pro": 84.14,
+            "con": 78.42
+          },
+          "finalUnroundedDirection": "pro",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "187",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 76.38,
+            "con": 82.71
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "160",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 80.35,
+            "con": 85.45
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "55",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 75.45,
+            "con": 90.71
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "106",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 74.19,
+            "con": 85.05
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "57",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 76.6,
+            "con": 85.6
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        }
+      ],
+      "agreedWinningSideDebates": 9,
+      "agreedWinningSidesPreserved": 9,
+      "agreedInitialTieDebates": 0,
+      "allowedIntegerRoundedTieCollapses": [],
+      "allowedAgreedInitialTieDrifts": [],
+      "publishedOppositeSideReversals": [],
+      "unroundedOppositeSideDirections": [],
+      "passed": true
+    },
+    "integerRoundedTieCollapseAllowed": true,
+    "agreedInitialTieDirectionUnconstrained": true,
+    "disagreedInitialWinnerDirectionUnconstrained": true,
+    "unroundedDirectionDiagnosticOnly": true,
+    "acceptancePassed": true
+  },
+  "productionReferenceDiagnostic": {
+    "winnerMatches": 9,
+    "debates": 10,
+    "signedSideDeltas": [
+      5,
+      5,
+      5,
+      2,
+      1,
+      -2,
+      -7,
+      0,
+      16,
+      0,
+      -13,
+      -11,
+      8,
+      7,
+      -1,
+      7,
+      0,
+      4,
+      1,
+      5
+    ],
+    "meanSignedSideDelta": 1.6,
+    "diagnosticNotGold": true
+  },
+  "totals": {
+    "debates": 10,
+    "finalSides": 20,
+    "scoringPasses": 1,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "publicationPacketPreparation": false,
+    "publicationModelExecution": false,
+    "scoreRerun": false,
+    "paidServices": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "standing-authorization-permits-batch-14-publication-packet-preparation"
+}
