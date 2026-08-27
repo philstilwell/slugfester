@@ -1,0 +1,2543 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-14-production-compatibility",
+  "status": "frozen-post-canary-batch-14-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "debateNumber": "69",
+  "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-14-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "7baf4fe24a7ecc4cb27390cc8e13f48732a0df57f5fdf903d50e900e6908c7ee",
+    "calculatedScoresSha256": "ed8f078eeea49799f702da06e80ddccaa08a233bcb6f8f09c256e45b4294762b",
+    "finalizationAuditSha256": "c98c2842130d84d4bfd0f40bd2c807ffbd269f1a0b3fbe7ef50281b8eab65943",
+    "renderingAuditSha256": "27fdcdd165acf77fe8ee5d567c47ff2b3dc536ff3dc77fbf2a1db338c1851928",
+    "finalCandidateSha256": "f7c4dd90452dcd06a656b6acc796640551c3c172ba2f8af4414b794662903f0d",
+    "eventsPath": ".assessment-cache/captions/Z2FGgkubhZM/events.json",
+    "eventsSha256": "941e1ae0222952d24c83d6a8ef26e83c49be5c95c1de28036db7ba89f6ea481a",
+    "finalJudgmentSha256": "56277d32bb797fcfdcdd8c88cf513f6a6533ddec99253d069caf3b1ef5b8af07"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "69",
+    "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-cumulative-historical-inference",
+        "side": "pro",
+        "description": "Establish that belief in Jesus' resurrection is reasonable through a cumulative historical inference from Jesus' death, the reported empty tomb and appearances, witness transformations, early proclamation, and comparison with rival explanations.",
+        "successCriteria": "The route succeeds if its principal historical claims are adequately supported, bodily resurrection explains their conjunction better than the live alternatives, and the evidential standard permits supernatural causation to be inferred without first assuming it.",
+        "motionBridge": {
+          "bridgeId": "pro-reasonable-resurrection-belief",
+          "tier": "motion",
+          "description": "Connect the cumulative historical and explanatory case to the conclusion that belief in Jesus' bodily resurrection is epistemically reasonable."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-establish-historical-data",
+            "tier": "central",
+            "description": "Establish the material historical data concerning death, burial or the empty tomb, reported appearances, conversions, and early resurrection proclamation."
+          },
+          {
+            "bridgeId": "pro-compare-explanations",
+            "tier": "central",
+            "description": "Show that bodily resurrection has greater explanatory scope and power than conspiracy, hallucination, legend, error, or combinations of natural alternatives."
+          },
+          {
+            "bridgeId": "pro-identify-divine-causation",
+            "tier": "central",
+            "description": "Show that the event's religious context and the failure of competing explanations warrant identifying the resurrection as divine action."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-corroborate-sources",
+            "tier": "subsidiary",
+            "description": "Support the historical sources through their asserted earliness, multiplicity, local detail, cultural fit, archaeology, and relevant scholarly agreement."
+          },
+          {
+            "bridgeId": "pro-defend-evidential-standard",
+            "tier": "subsidiary",
+            "description": "Defend ordinary cumulative historical reasoning against standards alleged to exclude extraordinary conclusions categorically or generate an evidential regress."
+          }
+        ]
+      },
+      {
+        "routeId": "con-insufficient-warrant",
+        "side": "con",
+        "description": "Establish that belief in Jesus' resurrection is unreasonable because transmitted reports, disputed historical premises, and background compatibility do not provide sufficient warrant for either the event or its supernatural cause.",
+        "successCriteria": "The route succeeds if the available sources do not adequately establish the material premises, ordinary explanations or unresolved uncertainty remain live, or the evidence fails to meet the burden appropriate to an extraordinary supernatural conclusion.",
+        "motionBridge": {
+          "bridgeId": "con-withhold-resurrection-belief",
+          "tier": "motion",
+          "description": "Connect the insufficiency and underdetermination of the available evidence to withholding belief in bodily resurrection as the reasonable position."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-test-source-sufficiency",
+            "tier": "central",
+            "description": "Show that late, dependent, disputed, or second- and third-hand reports cannot securely establish the proposed resurrection facts."
+          },
+          {
+            "bridgeId": "con-preserve-underdetermination",
+            "tier": "central",
+            "description": "Show that sincerity, movement growth, accurate background details, and reported experiences remain compatible with legend, error, transmission, or unknown causes."
+          },
+          {
+            "bridgeId": "con-require-causal-warrant",
+            "tier": "central",
+            "description": "Require evidence not only that an unusual event occurred but also that resurrection was possible and that supernatural or divine causation produced it."
+          },
+          {
+            "bridgeId": "con-apply-proportionate-burden",
+            "tier": "central",
+            "description": "Apply an evidential burden proportionate to the extraordinariness and low background plausibility of bodily resurrection."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-distinguish-claims-from-support",
+            "tier": "subsidiary",
+            "description": "Distinguish reports, sincere beliefs, and incidental historical accuracy from independent support for the resurrection proposition itself."
+          },
+          {
+            "bridgeId": "con-defend-suspension",
+            "tier": "subsidiary",
+            "description": "Defend suspension of judgment without requiring a complete rival reconstruction or a claim that resurrection is impossible."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "historical-fact-foundation",
+        "title": "Historical facts and source reliability",
+        "weightPercent": 24,
+        "rationale": "The cumulative inference depends on whether death, burial, the empty tomb, appearances, conversions, and early proclamation are established by sufficiently early, independent, consistent, and reliable sources."
+      },
+      {
+        "sectionId": "testimony-and-corroboration",
+        "title": "Testimony, sincerity, and corroboration",
+        "weightPercent": 16,
+        "rationale": "The parties dispute what reported experiences, costly commitment, local knowledge, archaeology, and accurate background details can establish about the central resurrection claims."
+      },
+      {
+        "sectionId": "rival-explanations",
+        "title": "Resurrection and rival explanations",
+        "weightPercent": 22,
+        "rationale": "The motion turns substantially on whether resurrection explains the proposed historical data better than legend, deception, hallucination, error, transmission, combined alternatives, or unresolved uncertainty."
+      },
+      {
+        "sectionId": "supernatural-causation",
+        "title": "Event evidence and supernatural causation",
+        "weightPercent": 16,
+        "rationale": "Evidence for an unusual return to life and evidence that God caused a bodily resurrection are distinct inferential questions whose connection is necessary to the motion."
+      },
+      {
+        "sectionId": "evidential-burden",
+        "title": "Extraordinary claims and evidential burden",
+        "weightPercent": 14,
+        "rationale": "The appropriate relationship among prior plausibility, extraordinary claims, proportional evidence, and historical inference determines what support reasonable belief requires."
+      },
+      {
+        "sectionId": "reasonableness-and-suspension",
+        "title": "Reasonable belief and suspension of judgment",
+        "weightPercent": 8,
+        "rationale": "The ultimate burden requires deciding whether the cumulative case warrants belief or whether remaining evidential uncertainty makes suspension of judgment the justified motion-level conclusion."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-cumulative-reasonableness-method",
+        "sectionId": "reasonableness-and-suspension",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Belief in Jesus' resurrection can be reasonable when likely historical facts are established and competing explanations of those facts are compared cumulatively.",
+        "sourceSpan": {
+          "startEvent": 168,
+          "endEvent": 204,
+          "excerpt": "that's what I'm planning to present today. So, I'm going to give a two-part case for the resurrection of Christ, why I think it's reasonable to believe Jesus rose, based upon um like I said, two parts. The first part is facts of history. So, these are like things that we can say very likely did happen in the first century. In fact, when I say facts, that's what I mean. I I mean"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike begins his uninterrupted opening statement at event 155 and explicitly presents this two-part case in the first person.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-reasonable-resurrection-belief"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move defines the two-stage cumulative method used to connect historical premises and explanatory comparison to reasonable belief."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two-part method and its probabilistic historical threshold are clearly recoverable and consistently scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "It claims that belief can be reasonable under stated conditions, rather than claiming the method already proves resurrection."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It expressly connects the entire cumulative route to the motion-level reasonableness conclusion."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move presents a positive framework without materially characterizing a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly announces a two-part case based on likely first-century facts and a subsequent explanatory comparison.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-roman-crucifixion-death",
+        "sectionId": "historical-fact-foundation",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Jesus' death by Roman crucifixion under Pontius Pilate is a securely supported historical foundation for assessing the resurrection claim.",
+        "sourceSpan": {
+          "startEvent": 237,
+          "endEvent": 249,
+          "excerpt": "crucifixion. Uh Bart Ehrman, the atheist, he says this is one of the most certain facts of history, that Jesus was crucified on the orders of Roman prefect of Judea, Pontius Pilate. He offers 11 independent sources, independent sources that support the death of Christ in this fashion. Um I could quote atheist after atheist that actually support this idea, who are historians and"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator has yielded the floor to Mike, who labels this the first fact and supports it by invoking historical sources and scholarly testimony.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-establish-historical-data"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies the death premise required before a bodily resurrection inference can be considered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The claimed event, agent, and official context are clear, though the precise independence standard is compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The confidence broadly fits the cited consensus claim, but source independence and the eleven-source count are not defended here."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Death by crucifixion is an indispensable component of the central historical-data bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No meaningful rival interpretation is developed in this constructive span."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "Within constructive moves, it directly establishes a necessary historical datum with named scholarly support."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies Roman crucifixion under Pilate, invokes Bart Ehrman, and asserts eleven independent supporting sources.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-burial-empty-tomb",
+        "sectionId": "historical-fact-foundation",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Jesus was probably buried in a private tomb later found empty, supported by considerations including multiple attestation, women witnesses, Joseph of Arimathea, and archaeology.",
+        "sourceSpan": {
+          "startEvent": 266,
+          "endEvent": 386,
+          "excerpt": "third fact is that he was buried, most likely in a private tomb. This is connected to the fourth fact, which is that Jesus' tomb was found empty soon after his entombment. Now, of all the facts I'm going to share with you guys, these two, the entombment and the empty tomb, are the least supported by scholars. So, I'm I'm putting that out there, right? About 75% of scholars will"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike explicitly introduces burial and the empty tomb as his third and fourth facts, then supplies six consecutive supporting considerations and a conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-establish-historical-data"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supplies burial and empty-tomb premises central to the proposed bodily-resurrection inference."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The probability claim and its several supporting considerations are identifiable and appropriately qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The probabilistic framing is suitable, but attestation independence and the women-witness inference receive compressed treatment."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The considerations are cumulatively relevant, although none alone entails burial in a private tomb or discovery empty."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "Multiple attestation, Joseph, women witnesses, and archaeology are specific support, but key reliability warrants remain compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Burial and an empty tomb are major components of the central historical-data bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances positive historical considerations without a developed competing account to test charitably."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The locked span develops women witnesses, Joseph of Arimathea, multiple attestation, and archaeological considerations for burial and emptiness.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-appearance-experiences",
+        "sectionId": "rival-explanations",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Individual and group experiences understood as appearances of the risen Jesus form historical data that ordinary hallucination does not adequately explain.",
+        "sourceSpan": {
+          "startEvent": 391,
+          "endEvent": 439,
+          "excerpt": "in a group. They all seemed to be seeing it, and it convinced them that Jesus rose. Gerd Lüdemann, who's an atheist and a lead critic of the resurrection, he says, \"It may be taken as historically certain that Peter and the disciples had experiences after Jesus' death in which Jesus appeared to them as the risen Christ.\" Mike Licona says this conclusion about the appearances is"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike identifies this as his fifth historical fact and develops it continuously through named accounts, scholarly consensus claims, and the hallucination inference.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-compare-explanations"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move presents appearance experiences as data and uses their individual and group character against a simple hallucination account."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move distinguishes experiences interpreted as appearances from the further resurrection conclusion and identifies its rival target."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Confidence that experiences occurred has named support, while the inadequacy of hallucination is less fully demonstrated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The witnesses had individual or socially reinforced experiences without an external risen body.",
+          "decisiveQualification": "Group reports require source and phenomenological scrutiny before ordinary hallucination is excluded."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Reported experiences are relevant data, but the bridge from group reports to failure of hallucination remains partly implicit."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports resurrection's comparative explanatory power against a named natural rival."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "It notes groups but does not fully address whether the source evidence independently establishes simultaneous shared perception."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt describes individual and group experiences and quotes Lüdemann treating post-death appearance experiences as historically certain.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-disciple-sincerity-transformation",
+        "sectionId": "testimony-and-corroboration",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "The disciples' transformed lives and willingness to endure persecution support the inference that they sincerely believed they had encountered the risen Jesus.",
+        "sourceSpan": {
+          "startEvent": 441,
+          "endEvent": 496,
+          "excerpt": "disciples' lives were thoroughly transformed. These appearances, they transformed their lives, even being willing to die for the belief that they had seen the risen Christ and he'd he'd physically risen from the dead. Again, this is actually not controversial. Persecution in the early church is attested to by multiple sources, Christian and non-Christian, and we have especially strong historical support for Peter, James, and Paul"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike continues his opening, introduces transformation as the next fact, and resumes the same argument after a brief technical interruption about his slides.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-establish-historical-data"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move supports sincere belief through transformation, persecution, and named early adherents."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The sincerity inference is recoverable, but the span shifts between broad disciples and especially supported named individuals."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Costly commitment supports sincerity, though the broad willingness-to-die formulation exceeds the specifically named support."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "Multiple-source and named-person support is asserted, but the evidence for the broader disciple group is compressed."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "Sincerity and transformation materially contribute to the central historical-data bridge."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move argues for sincerity and does not meaningfully characterize an opposing explanation."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt cites transformed lives, persecution, and especially Peter, James, and Paul as support for sincere resurrection belief.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-religious-context-divine-cause",
+        "sectionId": "supernatural-causation",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Jesus' religious, miraculous, and prophetic context indicates that, if he rose, the event is best understood as an act of God.",
+        "sourceSpan": {
+          "startEvent": 550,
+          "endEvent": 580,
+          "excerpt": "the New Testament. It's um it's remarkable. And the special the specific points of these prophecies relate to the confirmed facts of history, the death of Christ. So, what I'm saying here is if you're going to say, \"Okay, fine. Jesus rose, but don't tell me God did it.\" I'm going to tell you the religious context in which Jesus died and rose indicates that it was God who did it"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike introduces religious significance as his tenth fact and expressly draws the inference that the context identifies God as the resurrection's cause.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-identify-divine-causation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move attempts the necessary bridge from an unusual return to life to specifically divine action."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional claim is clear, but religious context, miracle, and prophecy are grouped without a stable evidential distinction."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The if-he-rose qualification is explicit, but contextual fit alone does not strongly identify God as the cause."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Jesus returned to life through an unknown cause not identifiable as divine action.",
+          "decisiveQualification": "Religious context can favor an interpretation without independently identifying the causal mechanism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly addresses the indispensable central bridge identifying divine causation."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The move notices the causal challenge but treats contextual fit as more discriminating than the excerpt demonstrates."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "Within constructive moves, it expressly addresses causal identification rather than leaving divine agency assumed."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that the religious and prophetic context surrounding Jesus indicates God caused the event if resurrection occurred.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-resurrection-best-explanation",
+        "sectionId": "rival-explanations",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "constructive",
+        "proposition": "Resurrection explains the cumulative historical data better than conspiracy, hallucination, legend, or combinations of those natural rival explanations.",
+        "sourceSpan": {
+          "startEvent": 641,
+          "endEvent": 725,
+          "excerpt": "around the story are confirmed. The resurrection explains it, but then what about alternate explanations? How about conspiracy? Some people put up conspiracy as a possible explanation. I I don't think that conspiracy works because it as you can see on your screen here, it simply um or you will see I keep having it lose lose my uh I apologize for that. I did test this. I promise"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike explicitly shifts from listing facts to asking for their best explanation and consecutively evaluates the resurrection and several named alternatives.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-compare-explanations"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move performs the central explanatory comparison between resurrection and several named natural alternatives."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparative conclusion and named rivals are recoverable, though the criteria for 'better' remain partly implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The conclusion is stronger than the excerpt's compressed dismissal of separate and combined natural alternatives warrants."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A combination of error, legend, altered transmission, and sincere experiences explains different portions of the data.",
+          "decisiveQualification": "A combined rival may sacrifice simplicity while avoiding commitment to an otherwise unsupported resurrection mechanism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "This is direct, high-position contact with the central explanation-comparison bridge."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "Named rivals are considered, but their strongest combined forms and evidential tradeoffs are treated too briefly."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The locked span announces best-explanation analysis and addresses conspiracy, hallucination, legend, and combinations as alternatives.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-testimony-claims-not-supernatural-proof",
+        "sectionId": "testimony-and-corroboration",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Sincere testimony can support that an extraordinary experience was reported without sufficiently establishing that its supernatural interpretation is true.",
+        "sourceSpan": {
+          "startEvent": 865,
+          "endEvent": 896,
+          "excerpt": "virtually everything that he was talking about at some level is the claim and not the evidence for it. Right up to the end where he says, \"Oh, well, you know, this is the evidence for the resurrection.\" No, these are the claims about a resurrection. The evidence for the resurrection is something else other than a whole bunch of people say it they saw it happen or had an experience"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted opening turn is explicitly handed to Matt immediately before the core, and the first-person family example remains within that turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-distinguish-claims-from-support"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-disciple-sincerity-transformation",
+            "pro-appearance-experiences"
+          ],
+          "components": [
+            {
+              "componentId": "con-testimony-claims-not-supernatural-proof-component-01",
+              "targetMoveId": "pro-disciple-sincerity-transformation",
+              "text": "Transformation and costly sincerity establish belief or experience, not the truth of the supernatural interpretation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-testimony-claims-not-supernatural-proof-component-02",
+              "targetMoveId": "pro-appearance-experiences",
+              "text": "Reports that appearances occurred must be distinguished from independent evidence that resurrection caused them.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The move expressly diagnoses the inference from sincere reports or experiences to supernatural truth and states that reports remain claims needing further evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Claims, testimony, experience, and supernatural truth are consistently distinguished throughout the move."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The limited necessity claim—that testimony alone does not prove its supernatural interpretation—fits the stated distinction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Sincere testimony is cumulative evidence rather than a standalone deductive proof of resurrection.",
+          "decisiveQualification": "Its evidential value remains limited without independent support connecting the experience to an external risen body."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The conceptual warrant is strong, though the reply does not quantify how much cumulative evidential weight testimony retains."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary bridge distinguishing claims and sincerity from proof."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The move preserves the limited value of testimony and targets only the stronger supernatural inference."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts and defeats the decisive testimony-to-truth inference while preserving the limited evidential value of sincerity."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly says the reports are claims about resurrection and distinguishes those claims from evidence establishing resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-supernatural-candidate-needs-support",
+        "sectionId": "supernatural-causation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Resurrection cannot serve as the best explanation unless the possibility of supernatural interaction is supported rather than exempted from ordinary evidential standards.",
+        "sourceSpan": {
+          "startEvent": 927,
+          "endEvent": 954,
+          "excerpt": "cannot occur. It's simply we don't have evidence for that. When I say something like in order to to reach to the supernatural as a potential explanation, you would first have to show that the supernatural is real and can interact with reality. I'm talking about just having a sound epistemology. It's not the fault of sound epistemology that claims about the supernatural are unable to meet those standards"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker remains Matt throughout the con opening and frames the passage in his established skeptical vocabulary of evidence, possibility, and special pleading.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-require-causal-warrant"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-resurrection-best-explanation",
+            "pro-religious-context-divine-cause"
+          ],
+          "components": [
+            {
+              "componentId": "con-supernatural-candidate-needs-support-component-01",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether resurrection is an eligible best-explanation candidate without support that supernatural interaction is possible.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-supernatural-candidate-needs-support-component-02",
+              "targetMoveId": "pro-religious-context-divine-cause",
+              "text": "Whether religious context supplies evidence that a supernatural cause can interact with reality.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly imposes an eligibility condition on the proposed supernatural explanation and denies that contextual labeling substitutes for evidence of possible interaction."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The demand is clear, but 'supernatural is real' and 'can interact' compress distinct modal and causal questions."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Some causal warrant is necessary, but demanding prior proof of the supernatural may set the threshold too categorically."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A well-supported event could itself contribute evidence for a previously uncertain supernatural causal category.",
+          "decisiveQualification": "The event evidence must still discriminate supernatural causation from unknown natural causation rather than merely assume the label."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The need for causal warrant is coherent, while the prior-demonstration requirement risks an unsupported sequencing condition."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The epistemic demand is reasoned but not supported by a developed account of possibility evidence or candidate thresholds."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central requirement for warranted causal identification."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply preserves the causal-warrant problem but underplays the possibility of event evidence and causal evidence developing jointly."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It squarely contacts the decisive candidate-eligibility issue, though it does not specify what evidence would satisfy the demand."
+          }
+        },
+        "evidenceBasis": "The excerpt requires evidence that the supernatural is real and interacts with reality before treating it as an explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-known-natural-causes-outrank-resurrection",
+        "sectionId": "rival-explanations",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Known sources of false reports, including deception, legend, error, and exaggeration, remain better-grounded candidates than an unsupported resurrection mechanism.",
+        "sourceSpan": {
+          "startEvent": 1025,
+          "endEvent": 1064,
+          "excerpt": "viable candidate explanation. We put together all the facts. You list the candidate explanations for this and that's all you get to pull from. Because if the candidate explanations are conspiracies, which we know occur, legend, which we know occurs, mistakes, which we know occur, uh exaggerations, which we know occur, and all these other things, and then resurrection, something we have zero supporting evidence"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This is still Matt's uninterrupted opening, with first-person methodological language and an explicit appeal to Hume consistent with the surrounding con argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-compare-explanations"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-resurrection-best-explanation",
+            "pro-religious-context-divine-cause"
+          ],
+          "components": [
+            {
+              "componentId": "con-known-natural-causes-outrank-resurrection-component-01",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether resurrection outranks known mechanisms producing false or exaggerated reports.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-known-natural-causes-outrank-resurrection-component-02",
+              "targetMoveId": "pro-religious-context-divine-cause",
+              "text": "Whether labeling God special establishes a viable causal mechanism rather than special pleading.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly challenges resurrection's comparative eligibility by contrasting it with known report-generating mechanisms and demanding demonstration of viability."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparison is recoverable, but 'magic' rhetorically merges divine agency with an unspecified mechanism."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Known error mechanisms deserve prior weight, but the move does not compare their fit to each proposed datum in detail."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Resurrection is proposed as a specific personal cause inferred from the conjunction of data, not as generic magic.",
+          "decisiveQualification": "Specific labeling does not remove the need to show viability and comparative explanatory advantage."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central claim that resurrection is the superior explanation."
+          },
+          "representationalCharity": {
+            "value": 74,
+            "rationale": "The move recognizes comparative viability but does not fully weigh explanatory scope against prior plausibility."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts the best-explanation comparison, though the excerpt develops the natural candidates less fully than the objection to resurrection."
+          }
+        },
+        "evidenceBasis": "The span contrasts a supernatural mechanism with known sources of false reports and demands evidence that resurrection is viable.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-late-dependent-sources-undermine-facts",
+        "sectionId": "historical-fact-foundation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Noncontemporary and source-dependent accounts with unresolved inconsistencies do not securely convert the proposed minimal-facts list into established historical facts.",
+        "sourceSpan": {
+          "startEvent": 1279,
+          "endEvent": 1375,
+          "excerpt": "so, we've got this weird single case of special pleading. Now, there's people who would list all the evidence. Gary Habermas is famous for the minimal facts approach, and I I would argue that Mike presented a a version of the minimal facts approach with essentially 12 facts instead of five. So, I I don't know if this meets the threshold of a of a novel approach. Uh and actually"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The con opening continues without interruption, and Matt explicitly names Michael, Gary Habermas, the minimal-facts approach, and his own predebate stipulations.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-test-source-sufficiency"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-burial-empty-tomb",
+            "pro-appearance-experiences",
+            "pro-roman-crucifixion-death"
+          ],
+          "components": [
+            {
+              "componentId": "con-late-dependent-sources-undermine-facts-component-01",
+              "targetMoveId": "pro-burial-empty-tomb",
+              "text": "Late, dependent, and inconsistent accounts do not securely establish burial and empty-tomb facts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-late-dependent-sources-undermine-facts-component-02",
+              "targetMoveId": "pro-appearance-experiences",
+              "text": "The same source-quality problems weaken the asserted historical status of appearance reports.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-late-dependent-sources-undermine-facts-component-03",
+              "targetMoveId": "pro-roman-crucifixion-death",
+              "text": "The general source objection reaches the proposed fact list but gives little crucifixion-specific analysis.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move attacks the source foundations of the minimal-facts-style case, but its selected excerpt provides limited item-by-item documentation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The source critique is clear, though its broad conclusion sometimes ranges across premises with different evidential support."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move argues that the facts are not securely established, a force proportionate to the stated dependence and inconsistency concerns."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Late sources may preserve earlier traditions and can retain historical value despite literary dependence.",
+          "decisiveQualification": "Their value still depends on tracing early material and avoiding double-counting dependent attestations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "It identifies dependence, noncontemporaneity, and inconsistency but gives limited representative source analysis in the locked span."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central bridge testing whether the historical sources securely establish the data."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive source-sufficiency issue while only partially applying it to the particular historical claims."
+          }
+        },
+        "evidenceBasis": "The locked span discusses the minimal-facts presentation while challenging noncontemporary accounts, dependence, and unresolved inconsistencies.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-elimination-does-not-establish-resurrection",
+        "sectionId": "rival-explanations",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Rejecting selected natural alternatives does not establish resurrection when information is incomplete and unknown possibilities remain, so insufficient evidence warrants uncertainty.",
+        "sourceSpan": {
+          "startEvent": 1477,
+          "endEvent": 1558,
+          "excerpt": "of the information. And for me, it's not that I'm saying the resurrection ever occurred. I'm saying it is absolutely not reasonable to believe that the resurrection occurred because there is insufficient evidence for it, for anything like it. You have to assume all sorts of Well, you have to assume a god who can do anything. You have to assume a a model that makes no sense. You"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This passage forms the closing sequence of Matt's opening, ending immediately before the moderator announces the transition to dialogue and summarizes his conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-withhold-resurrection-belief"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-resurrection-best-explanation",
+            "pro-cumulative-reasonableness-method"
+          ],
+          "components": [
+            {
+              "componentId": "con-elimination-does-not-establish-resurrection-component-01",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether eliminating selected rivals establishes resurrection as the best explanation under incomplete information.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-elimination-does-not-establish-resurrection-component-02",
+              "targetMoveId": "pro-cumulative-reasonableness-method",
+              "text": "Whether cumulative comparison warrants belief when relevant information and possible explanations remain unknown.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses the inference from rejected options to resurrection as unreliable under incomplete information and states uncertainty and nonacceptance as the consequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move carefully distinguishes denying occurrence from denying that current evidence makes belief reasonable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The underdetermination point is strong, although 'absolutely not reasonable' is firmer than the illustrative argument alone establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Inference to the best explanation need not exhaust every logically possible alternative.",
+          "decisiveQualification": "It must still compare the strongest live alternatives and justify the proposed candidate despite acknowledged informational gaps."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The distinction between eliminating selected options and establishing a conclusion is explicit and logically well supported."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly connects evidential underdetermination to the motion-level conclusion that belief should be withheld."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly identifies the failure in eliminative reasoning and gives a clear motion-level defeating consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt uses an incomplete-information illustration and expressly concludes that insufficient evidence does not warrant resurrection belief.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-local-detail-corroboration",
+        "sectionId": "testimony-and-corroboration",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "reply",
+        "proposition": "Detailed knowledge of Palestinian institutions, geography, and customs cumulatively corroborates the historical reliability of the Gospel reporting.",
+        "sourceSpan": {
+          "startEvent": 1693,
+          "endEvent": 1723,
+          "excerpt": "tombs, details about the debates between the Pharisees and Sadducees, details like in John, it records that um there was a sycamore tree in Jericho, and those trees didn't didn't even grow outside of Palestine in the area where they're where it's thought John was written. Like, how did they know Zacchaeus climbed a sycamore tree? Like, these are confirmatory details saying that"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn advances the resurrection defender's case, directly addresses Matt, and is followed by Matt's explicit skeptical rebuttal.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-corroborate-sources"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-late-dependent-sources-undermine-facts",
+            "con-testimony-claims-not-supernatural-proof"
+          ],
+          "components": [
+            {
+              "componentId": "pro-local-detail-corroboration-component-01",
+              "targetMoveId": "con-late-dependent-sources-undermine-facts",
+              "text": "Accurate Palestinian institutions, geography, and customs provide cumulative corroboration of Gospel historical knowledge.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-local-detail-corroboration-component-02",
+              "targetMoveId": "con-testimony-claims-not-supernatural-proof",
+              "text": "Incidental accuracy can make a source more credible but does not independently prove resurrection.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts general source reliability through local detail but does not answer the distinction between incidental accuracy and supernatural truth."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Local corroboration is clear, but the passage slides from accurate detail to broad historical reliability without a scope limit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Local knowledge supports provenance or familiarity but does not strongly verify the central resurrection narrative."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A source can preserve accurate local detail while remaining mistaken, legendary, or dependent concerning its central claim.",
+          "decisiveQualification": "Incidental corroboration increases some source confidence without transferring automatically to extraordinary content."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "Local detail is relevant corroboration, but the move substantially compresses the bridge to general Gospel reliability."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary corroboration bridge, near the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (60 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "It partially answers source reliability while leaving the decisive central-claim corroboration demand uncontacted."
+          }
+        },
+        "evidenceBasis": "The excerpt cites knowledge of Zacchaeus, Palestinian institutions, geography, and customs as cumulative confirmatory details.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-two-part-standard-defense",
+        "sectionId": "evidential-burden",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "reply",
+        "proposition": "A case combining reasonably established nonmiraculous historical facts with resurrection as their best explanation need not prove its conclusion before its supporting evidence is considered.",
+        "sourceSpan": {
+          "startEvent": 1789,
+          "endEvent": 1810,
+          "excerpt": "two-part case, right? My one part is, \"Hey, we have these non-miraculous, reasonably believable facts of history.\" And then, the second case The second part is, \"And I think the resurrection best explains it.\" So, you seem to be arguing against both sides. One side is you're arguing against the evidence itself, in which case I'm trying to say, \"Generalities don't do it. We need"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker identifies his own two-part case and directly characterizes Matt's epistemic objection as circular, clearly marking Mike's turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-defend-evidential-standard"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-supernatural-candidate-needs-support",
+            "con-known-natural-causes-outrank-resurrection"
+          ],
+          "components": [
+            {
+              "componentId": "pro-two-part-standard-defense-component-01",
+              "targetMoveId": "con-supernatural-candidate-needs-support",
+              "text": "The proper demand is first to assess ordinary historical facts and then compare resurrection as an explanation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-two-part-standard-defense-component-02",
+              "targetMoveId": "con-known-natural-causes-outrank-resurrection",
+              "text": "Case-specific comparison is required rather than rejecting resurrection through generalities alone.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The reply justifies separating premise assessment from explanatory comparison and preserves the opponent's legitimate demand for supporting evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two parts, their order, and the distinction between premise criticism and explanatory criticism are clearly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The limited claim that evidence may be assessed before its conclusion is proved is appropriately categorical."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The skeptical demand concerns adequate warrant for supernatural candidacy, not proof of the final conclusion in advance.",
+          "decisiveQualification": "That demand can be preserved at the explanatory stage without blocking assessment of ordinary historical premises."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is very strong contact within the subsidiary evidential-standard bridge."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It offers a relevant replacement demand, though it does not itself complete the evidential comparison."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly separates reasonably believable nonmiraculous facts from the later claim that resurrection best explains them.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-unmet-burden-permits-nonacceptance",
+        "sectionId": "reasonableness-and-suspension",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Concluding that resurrection has not met its burden is compatible with leaving its occurrence possible and does not assume that supernatural events cannot occur.",
+        "sourceSpan": {
+          "startEvent": 1811,
+          "endEvent": 1827,
+          "excerpt": "sir. Circular reasoning is when the conclusion is entailed in the premise. And my conclusion is not the resurrection didn't occur or that supernatural can't occur. My conclusion is that the resurrection hasn't met its burden of proof. And the fact that it can't do that or seems to be unable to do that is not circular, and it's not a problem for epistemology. It's a problem for"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The direct correction of Mike's circularity charge and the first-person statement of the skeptical conclusion identify Matt's responsive turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-withhold-resurrection-belief"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-two-part-standard-defense"
+          ],
+          "components": [
+            {
+              "componentId": "con-unmet-burden-permits-nonacceptance-component-01",
+              "targetMoveId": "pro-two-part-standard-defense",
+              "text": "Whether withholding belief for an unmet burden circularly assumes that resurrection or the supernatural cannot occur.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply defines circularity, denies that its conclusion entails impossibility, and states that an unmet burden supports nonacceptance rather than denial."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Occurrence, possibility, burden satisfaction, and nonacceptance are sharply and consistently distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conceptual claim about nonacceptance follows from the stated burden without asserting that resurrection is impossible."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro objection may target an evidential standard that functionally excludes supernatural explanations rather than formal circularity.",
+          "decisiveQualification": "That broader objection requires showing exclusion; it does not make simple burden-based nonacceptance circular."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 96,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (95 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly supports the motion-level bridge from unmet warrant to withholding resurrection belief."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It expressly answers the circularity charge at its decisive premise and gives the exact skeptical conclusion."
+          }
+        },
+        "evidenceBasis": "The excerpt defines circular reasoning and explicitly says the conclusion is unmet burden, not impossibility or nonoccurrence.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-no-contemporary-crucifixion-verification",
+        "sectionId": "historical-fact-foundation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The reported crucifixion lacks contemporary verification, while the absence of independent reports for associated conspicuous events weakens confidence in the narrative source.",
+        "sourceSpan": {
+          "startEvent": 1851,
+          "endEvent": 1872,
+          "excerpt": "contemporary accounts. We don't see the sort of things that we would expect. We don't see you know, the Romans reporting on you know, it's not like we found a document that shows hey, here's the date we crucified Yeshua Ben Joseph. That that just doesn't exist. We don't we don't tend to hear about anybody else who saw zombies rise up and march on Jerusalem when when the crucifixion"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The skeptical first-person assessment follows Mike's request for agreement and invokes Matt's recurring source-verification and independent-attestation standards.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-test-source-sufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-roman-crucifixion-death",
+            "pro-local-detail-corroboration"
+          ],
+          "components": [
+            {
+              "componentId": "con-no-contemporary-crucifixion-verification-component-01",
+              "targetMoveId": "pro-roman-crucifixion-death",
+              "text": "Whether contemporary or independent evidence verifies Jesus' reported crucifixion and associated narrative claims.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-no-contemporary-crucifixion-verification-component-02",
+              "targetMoveId": "pro-local-detail-corroboration",
+              "text": "Whether incidental narrative detail overcomes the absence of expected independent reports for conspicuous events.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests verification of the crucifixion account and appeals to missing contemporary and expected independent reporting."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The contemporary-account point is clear, but 'storybook whose veracity cannot be verified' ranges beyond the evidence discussed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Absence of contemporary verification lowers confidence but does not alone warrant the broad unverifiability characterization."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Ancient events can be historically well supported by later sources, especially when multiple and independently grounded.",
+          "decisiveQualification": "The pro side must still demonstrate actual independence and explain missing expected contemporary corroboration."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The absence-of-expected-evidence inference is coherent but needs an explicit expectation and preservation-rate warrant."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "Specific absences are identified, while the probability of surviving Roman or contemporary documentation is not established."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central source-sufficiency bridge regarding a foundational historical datum."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The reply preserves a legitimate verification demand but gives insufficient weight to ordinary historical reliance on later sources."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the claimed historical foundation, although it does not engage the specifically cited later sources or consensus evidence."
+          }
+        },
+        "evidenceBasis": "The excerpt denies contemporary accounts and points to the absence of expected Roman and independent reporting.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-bodily-resurrection-meaning",
+        "sectionId": "supernatural-causation",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "reply",
+        "proposition": "Paul's language and relevant Jewish historical concepts indicate that the earliest resurrection claim concerned Jesus' bodily resurrection rather than a merely spectral experience.",
+        "sourceSpan": {
+          "startEvent": 2057,
+          "endEvent": 2087,
+          "excerpt": "word study on on what Paul was talking about here when he says Jesus was raised when Jesus was resurrected. And there's no way around it. They believed that it was a bodily resurrection that had occurred. And anybody anybody saying Let me finish this, please. Anybody saying that the Jewish mentality would have been okay with thinking someone had been resurrected when they had merely"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn presents Pauline passages and a scholarly word study for the pro position before Matt objects that Mike is defending an unasserted target.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-distinguish-claims-from-support"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-unmet-burden-permits-nonacceptance",
+            "con-testimony-claims-not-supernatural-proof"
+          ],
+          "components": [
+            {
+              "componentId": "pro-bodily-resurrection-meaning-component-01",
+              "targetMoveId": "con-unmet-burden-permits-nonacceptance",
+              "text": "The decisive demand concerns evidential sufficiency, not whether Paul and early Jews meant bodily resurrection.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-bodily-resurrection-meaning-component-02",
+              "targetMoveId": "con-testimony-claims-not-supernatural-proof",
+              "text": "Clarifying the content of belief does not establish that the believed bodily event occurred.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move supplies relevant semantic and historical material but does not contact the opponent's decisive truth-and-support distinction."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The claim about bodily meaning is clear, though the evidence base for a uniform Jewish mentality is compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "'No way around it' overstates what the excerpt's limited word-study and cultural generalization can establish."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Pauline resurrection language might permit a transformed spiritual body without implying an ordinary resuscitated corpse.",
+          "decisiveQualification": "The relevant Jewish and Pauline usage still concerns embodied resurrection, though the nature of that body requires qualification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "Pauline language and a scholarly word study provide support, but competing interpretations are not examined in depth."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It materially attacks the subsidiary distinction between the content of claims and support for their truth."
+          },
+          "representationalCharity": {
+            "value": 54,
+            "rationale": "The reply defends meaning against an opponent whose decisive objection concerns truth and evidential support."
+          },
+          "responsiveness": {
+            "value": 54,
+            "rationale": "It is issue-bearing contrary material but remains a relevant nonanswer to the evidential-sufficiency demand."
+          }
+        },
+        "evidenceBasis": "The span invokes Pauline wording, a word study, and Jewish concepts to argue that the earliest claim concerned bodily resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-paul-third-party-appearance-reports",
+        "sectionId": "testimony-and-corroboration",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Paul's third-party reports of appearances do not establish that the named witnesses personally attested as claimed or that a resurrection actually occurred.",
+        "sourceSpan": {
+          "startEvent": 2199,
+          "endEvent": 2227,
+          "excerpt": "I did, we still have this problem of how do we establish that it's true just because somebody believed it. This is why it doesn't matter to me whether someone is convinced that Paul thought of Jesus as an actual physical resurrection or a spiritual one because what Paul believes is completely irrelevant to what is actually reasonable to believe and what is supported by evidence"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker resumes the answer interrupted by the Paul discussion and explicitly contrasts what Saul believed with what is true or evidentially supported.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-test-source-sufficiency"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-bodily-resurrection-meaning",
+            "pro-appearance-experiences"
+          ],
+          "components": [
+            {
+              "componentId": "con-paul-third-party-appearance-reports-component-01",
+              "targetMoveId": "pro-bodily-resurrection-meaning",
+              "text": "Whether establishing Paul's bodily meaning establishes that the reported resurrection actually happened.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-paul-third-party-appearance-reports-component-02",
+              "targetMoveId": "pro-appearance-experiences",
+              "text": "Whether Paul's third-party list establishes personal witness attestation and the truth of the appearances.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies the shift from what Paul believed or meant to what evidence establishes as true, and states that third-party reporting does not close that gap."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Paul's belief, third-party reporting, witness attestation, and event truth are clearly differentiated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The limited claim that belief content alone does not establish truth is fully proportionate to the warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul's early report may provide some evidence of an established appearance tradition even without direct witness statements.",
+          "decisiveQualification": "Its weight depends on Paul's access, source chain, and whether the named witnesses personally confirmed the report."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central test of whether appearance sources securely establish the proposed data."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It expressly diagnoses the belief-to-truth inference and applies the consequence to Paul's reported witnesses."
+          }
+        },
+        "evidenceBasis": "The excerpt says Paul's belief about bodily or spiritual resurrection is distinct from what is actually true and evidentially supported.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-event-confirmation-not-divine-cause",
+        "sectionId": "supernatural-causation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Even direct confirmation that Jesus returned to life would not by itself identify either a supernatural mechanism or divine agency as the cause.",
+        "sourceSpan": {
+          "startEvent": 2515,
+          "endEvent": 2547,
+          "excerpt": "I believe that Jesus was now alive again? Yes. And that was the thing that I was going to conclude my my opening with was even if we established the resurrection we still don't know why or how it happened. That is an explanation that has to come secondary. That this you're right this does get to the core here because if if Jesus had done the things that I said would be the best"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The exchange explicitly identifies Matt as the respondent, and the sustained first-person answer is distinguishable from Mike's preceding hypothetical.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-require-causal-warrant"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-religious-context-divine-cause",
+            "pro-resurrection-best-explanation"
+          ],
+          "components": [
+            {
+              "componentId": "con-event-confirmation-not-divine-cause-component-01",
+              "targetMoveId": "pro-religious-context-divine-cause",
+              "text": "Whether confirming that Jesus returned to life identifies God or a supernatural mechanism as the cause.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-event-confirmation-not-divine-cause-component-02",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether the event description itself supplies the secondary causal explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly concedes that direct evidence could establish Jesus alive again while diagnosing the further inference to why or how it happened as separate."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Event confirmation, mechanism, and agency are explicitly separated and consistently maintained."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The need for an additional causal inference is correctly categorical while the actual cause remains open."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious context can make divine agency more probable after an independently confirmed return to life.",
+          "decisiveQualification": "Contextual probability still requires comparison with alternative causes and does not follow from event confirmation alone."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 97,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (96 and 97); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 90,
+            "rationale": "The conceptual warrant is complete for the limited conclusion that event confirmation alone underdetermines its cause."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It is direct top-range contact with the central causal-warrant bridge."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly isolates the event-versus-cause inference and states the exact consequence for divine identification."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes that specified observations could establish Jesus alive again while denying they establish why or how.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-extraordinary-resurrection-needs-sufficient-support",
+        "sectionId": "evidential-burden",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Bodily resurrection is an extraordinary claim whose lack of physical, contemporary, and possibility-establishing evidence leaves the available support insufficient.",
+        "sourceSpan": {
+          "startEvent": 2572,
+          "endEvent": 2642,
+          "excerpt": "claim is not extraordinary. It is extraordinary claims that require extraordinary evidence and the notion that this person was raised from the dead is absolutely extraordinary and there is no physical evidence for it there is no contemporary evidence for it there's no evidence that this is even possible and yet you just want to dismiss it as if Matt Matt won't accept evidence. No Matt won't accept insufficient"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Matt explicitly rejects Mike's characterization of his position and continues in a sustained first-person explanation of his evidential standard.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-apply-proportionate-burden"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-two-part-standard-defense",
+            "pro-resurrection-best-explanation",
+            "pro-bodily-resurrection-meaning"
+          ],
+          "components": [
+            {
+              "componentId": "con-extraordinary-resurrection-needs-sufficient-support-component-01",
+              "targetMoveId": "pro-two-part-standard-defense",
+              "text": "Whether the two-part case supplies support proportionate to bodily resurrection's extraordinariness.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-extraordinary-resurrection-needs-sufficient-support-component-02",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether resurrection has sufficient physical, contemporary, and possibility-establishing evidence to be accepted.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-extraordinary-resurrection-needs-sufficient-support-component-03",
+              "targetMoveId": "pro-bodily-resurrection-meaning",
+              "text": "Whether clarity that the claim is bodily increases rather than removes its evidential burden.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly assesses the sufficiency of the evidence offered for the bodily claim and identifies three alleged deficits rather than rejecting evidence categorically."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "'Extraordinary' is not quantitatively defined, but the alleged missing support and insufficiency conclusion are explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The insufficiency claim is supportable, but requiring physical or contemporary evidence as such is not fully defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historical testimony and cumulative explanatory fit are genuine evidence even when physical and contemporary evidence is absent.",
+          "decisiveQualification": "Their existence does not settle whether their quality and quantity overcome the extraordinary claim's burden."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "Concrete evidential categories are identified, but their absence and required threshold are asserted more than defended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central bridge applying a proportionate evidential burden."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The reply correctly focuses on sufficiency but its repeated 'no evidence' language understates the strongest cumulative case."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts the proportional-support demand clearly, though it does not define a precise sufficiency threshold."
+          }
+        },
+        "evidenceBasis": "The span calls bodily resurrection extraordinary and identifies absent physical, contemporary, and possibility-establishing support.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-extraordinary-evidence-regress",
+        "sectionId": "evidential-burden",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "reply",
+        "proposition": "A categorical demand for extraordinary evidence risks an evidential regress because each extraordinary item of support can itself be treated as another claim requiring further support.",
+        "sourceSpan": {
+          "startEvent": 2645,
+          "endEvent": 2671,
+          "excerpt": "to prove it. Whatever evidence I I I offer that's extraordinary will in itself be a claim that's extraordinary. To which you can respond I won't believe that until you have more extraordinary evidence. Well if I do bring that well that's also extraordinary which you don't believe unless you have extraordinary evidence and this just circularly goes on forever ruling out ordinary"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Mike introduces the familiar extraordinary-evidence maxim, labels it circular, and develops the regress objection before yielding to Matt's response.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-apply-proportionate-burden"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-extraordinary-resurrection-needs-sufficient-support",
+            "con-supernatural-candidate-needs-support"
+          ],
+          "components": [
+            {
+              "componentId": "pro-extraordinary-evidence-regress-component-01",
+              "targetMoveId": "con-extraordinary-resurrection-needs-sufficient-support",
+              "text": "Whether requiring extraordinary evidence entails an endless demand for further extraordinary support.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-extraordinary-evidence-regress-component-02",
+              "targetMoveId": "con-supernatural-candidate-needs-support",
+              "text": "Whether preliminary support requirements categorically prevent supernatural explanations from entering consideration.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses a literal categorical formulation as generating regress and states that it would exclude ordinary evidence from ever supporting an extraordinary conclusion."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The regress conditional is clear, but 'extraordinary evidence' shifts between unusual evidence and especially strong evidence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Regress follows only from a literal recursive demand, not from the proportional-evidence principle the opponent later states."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Extraordinary evidence means sufficiently strong evidence, not an extraordinary claim that recursively requires new support.",
+          "decisiveQualification": "Under that interpretation the regress disappears, though a usable strength threshold must still be defended."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 62,
+            "rationale": "The regress is valid under its stated interpretation, but that interpretation equivocates between evidential strength and extraordinary content."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The conceptual scenario is intelligible, though no evidence shows the opponent must apply the maxim recursively in that way."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central proportional-burden bridge despite its defective interpretation."
+          },
+          "representationalCharity": {
+            "value": 55,
+            "rationale": "The reply targets a weaker literal reading and omits the decisive proportional-strength interpretation."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly attacks a possible inference in the maxim, though it depends on interpreting 'extraordinary evidence' as another unsupported extraordinary claim."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that each extraordinary supporting item could itself trigger a further demand, producing an endless regress.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-support-scales-with-extraordinariness",
+        "sectionId": "evidential-burden",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The quantity and quality of evidence required for warranted belief should scale with a claim's extraordinariness and overcome well-supported conflicting background beliefs.",
+        "sourceSpan": {
+          "startEvent": 2718,
+          "endEvent": 2764,
+          "excerpt": "this in fact a winning lottery ticket and I get paid because that is an event that is more extraordinary than having a losing lottery ticket. All the all that claim is saying is that the the quantity and quality of evidence for a claim is dependent on how extraordinary that claim is. If you say I I just got a pet puppy I need nothing more than your word because as I pointed out"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Matt resumes the lottery comparison, contrasts mundane and resurrection claims, and states the consequence for his broader evidential commitments.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-apply-proportionate-burden"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-extraordinary-evidence-regress",
+            "pro-two-part-standard-defense"
+          ],
+          "components": [
+            {
+              "componentId": "con-support-scales-with-extraordinariness-component-01",
+              "targetMoveId": "pro-extraordinary-evidence-regress",
+              "text": "Extraordinary evidence denotes quantity and quality scaled to the claim, not endlessly miraculous supporting claims.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-support-scales-with-extraordinariness-component-02",
+              "targetMoveId": "pro-two-part-standard-defense",
+              "text": "Ordinary facts may be considered while their aggregate support must overcome conflicting background evidence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The lottery and puppy comparisons expressly clarify the proportional standard and thereby remove the regress-generating interpretation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Quantity, quality, extraordinariness, and conflicting background beliefs are used consistently and with clear comparative scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move states a proportional norm and illustrates it without claiming a mechanically fixed threshold."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Ordinary evidence can cumulatively become sufficiently strong for an extraordinary conclusion.",
+          "decisiveQualification": "The standard concerns total evidential strength, not whether each item is itself unusual or extraordinary."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly and strongly supports the central proportionate-burden bridge."
+          },
+          "representationalCharity": {
+            "value": 94,
+            "rationale": "The response squarely accepts cumulative ordinary evidence in principle while preserving the proportional burden."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly diagnoses the equivocation behind the regress and states the replacement evidential relationship."
+          }
+        },
+        "evidenceBasis": "The excerpt defines the maxim in terms of evidence quantity and quality and illustrates it through lottery-ticket and puppy claims.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-evidential-deficits-warrant-suspension",
+        "sectionId": "reasonableness-and-suspension",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Unresolved textual problems and the absence of evidence beyond resurrection reports make suspension of judgment more reasonable than accepting resurrection as an explanation.",
+        "sourceSpan": {
+          "startEvent": 3431,
+          "endEvent": 3447,
+          "excerpt": "problems. I didn't raise them in my opening because I was trying to talk about what would make it reasonable. But I think that these things add to the notion that it is in fact unreasonable to accept this along with the fact that we have zero evidence re-physical evidence anything beyond reports of a resurrection actually occurring and therefore I cannot consider the candidate explanation"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "This conclusion remains in Matt Dillahunty's uninterrupted closing turn and is explicitly framed as the skeptical position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-withhold-resurrection-belief"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-resurrection-best-explanation",
+            "pro-cumulative-reasonableness-method",
+            "pro-local-detail-corroboration"
+          ],
+          "components": [
+            {
+              "componentId": "con-evidential-deficits-warrant-suspension-component-01",
+              "targetMoveId": "pro-resurrection-best-explanation",
+              "text": "Whether unresolved textual problems and report-only evidence warrant accepting resurrection as the best explanation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-evidential-deficits-warrant-suspension-component-02",
+              "targetMoveId": "pro-cumulative-reasonableness-method",
+              "text": "Whether the cumulative case overcomes the residual uncertainty needed for reasonable belief.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-evidential-deficits-warrant-suspension-component-03",
+              "targetMoveId": "pro-local-detail-corroboration",
+              "text": "Whether corroborating details overcome unresolved textual problems affecting the central claims.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The closing reply aggregates identified textual and evidential deficits and expressly connects them to suspension rather than acceptance of resurrection."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The suspension conclusion is clear, though 'zero evidence' again narrows and broadens between physical evidence and all nonreport evidence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Suspension is calibrated to unresolved deficits, while the absolute evidential phrasing is slightly excessive."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Reports, early traditions, and contextual corroboration provide cumulative evidence even without surviving physical evidence.",
+          "decisiveQualification": "Their cumulative existence does not establish that source dependence, textual issues, and causal underdetermination are overcome."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It expressly connects residual evidential uncertainty to the motion-level withholding conclusion."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The conclusion fairly focuses on sufficiency, though the phrasing understates the positive evidence offered."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly reaches the motion conclusion and identifies the deficits said to prevent burden completion."
+          }
+        },
+        "evidenceBasis": "The closing excerpt cites unresolved textual problems and the absence of physical evidence beyond resurrection reports as grounds for nonacceptance.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-modern-investigability",
+        "sectionId": "reasonableness-and-suspension",
+        "side": "pro",
+        "speaker": "Mike Winger",
+        "moveKind": "reply",
+        "proposition": "First-century evidence supports resurrection belief, while accumulated historical research enables present investigators to assess the events surrounding Jesus' death and claimed resurrection thoughtfully.",
+        "sourceSpan": {
+          "startEvent": 3585,
+          "endEvent": 3596,
+          "excerpt": "evidence from the first century supports the idea that Jesus rose and not only can we investigate it now in the 21st century, but we can investigate it better than anyone else because of the gathering of the data and because of all the historical research that's gone into it. So, we're in a really good place to reflect thoughtfully on the events around the death and resurrection"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The claim is delivered continuously by Mike Winger near the end of his closing statement before he transitions into personal exhortation.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-reasonable-resurrection-belief"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-evidential-deficits-warrant-suspension",
+            "con-no-contemporary-crucifixion-verification"
+          ],
+          "components": [
+            {
+              "componentId": "pro-modern-investigability-component-01",
+              "targetMoveId": "con-evidential-deficits-warrant-suspension",
+              "text": "Accumulated first-century data and later historical research permit thoughtful modern investigation rather than categorical agnosticism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-modern-investigability-component-02",
+              "targetMoveId": "con-no-contemporary-crucifixion-verification",
+              "text": "Modern investigation can assess surviving ancient evidence despite lack of direct contemporary access.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts claims of noninvestigability and suspension, but asserts that the gathered research supports resurrection without showing how it cures the named deficits."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Modern investigability is clear, but 'better than anyone else' overgeneralizes across access, preservation, and research quality."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Accumulated research aids assessment, but the claim that current investigators are uniquely best placed is insufficiently supported."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historical research permits meaningful investigation while still leaving the central event and cause underdetermined.",
+          "decisiveQualification": "Investigability establishes the possibility of assessment, not that the available evidence warrants resurrection belief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 99,
+            "rationale": "It expressly reconnects historical assessment to the pro motion-level claim of reasonable belief."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It partially answers investigability while leaving evidential sufficiency and specific textual problems largely unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt claims first-century evidence supports resurrection and that accumulated data and historical research enable modern investigation.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide consequence remains outside the locked move ratings, response links, importance judgments, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence survives the strict exclusion rule.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of already judged moves."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence remains outside the locked move ratings, response links, importance judgments, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence survives the strict exclusion rule.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of already judged moves."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "historical-fact-foundation",
+        "title": "Historical facts and source reliability",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-roman-crucifixion-death",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "pro-burial-empty-tomb",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "con-late-dependent-sources-undermine-facts",
+                "importance": 3,
+                "score": 79
+              },
+              {
+                "moveId": "con-no-contemporary-crucifixion-verification",
+                "importance": 2,
+                "score": 79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "testimony-and-corroboration",
+        "title": "Testimony, sincerity, and corroboration",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "pro-disciple-sincerity-transformation",
+                "importance": 2,
+                "score": 82
+              },
+              {
+                "moveId": "pro-local-detail-corroboration",
+                "importance": 2,
+                "score": 68
+              }
+            ]
+          },
+          "con": {
+            "score": 91,
+            "moves": [
+              {
+                "moveId": "con-testimony-claims-not-supernatural-proof",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-paul-third-party-appearance-reports",
+                "importance": 3,
+                "score": 92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "rival-explanations",
+        "title": "Resurrection and rival explanations",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-appearance-experiences",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "pro-resurrection-best-explanation",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-known-natural-causes-outrank-resurrection",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-elimination-does-not-establish-resurrection",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "supernatural-causation",
+        "title": "Event evidence and supernatural causation",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-religious-context-divine-cause",
+                "importance": 3,
+                "score": 75
+              },
+              {
+                "moveId": "pro-bodily-resurrection-meaning",
+                "importance": 2,
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-supernatural-candidate-needs-support",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-event-confirmation-not-divine-cause",
+                "importance": 3,
+                "score": 94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evidential-burden",
+        "title": "Extraordinary claims and evidential burden",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-two-part-standard-defense",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "pro-extraordinary-evidence-regress",
+                "importance": 2,
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-extraordinary-resurrection-needs-sufficient-support",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "con-support-scales-with-extraordinariness",
+                "importance": 3,
+                "score": 93
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "reasonableness-and-suspension",
+        "title": "Reasonable belief and suspension of judgment",
+        "weightPercent": 8,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-cumulative-reasonableness-method",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "pro-modern-investigability",
+                "importance": 2,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 92,
+            "moves": [
+              {
+                "moveId": "con-unmet-burden-permits-nonacceptance",
+                "importance": 3,
+                "score": 95
+              },
+              {
+                "moveId": "con-evidential-deficits-warrant-suspension",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 79.94,
+        "burdenCompletionAdjustment": 0,
+        "score": 80
+      },
+      "con": {
+        "weightedSectionMean": 86.42,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      }
+    },
+    "winner": "con",
+    "winningMargin": 6
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 24,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
