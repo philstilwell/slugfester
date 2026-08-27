@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-timeout-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-timeout-field-disjoint-recovery",
+  "status": "frozen-three-context-debate-87-field-disjoint-timeout-recovery-authorized",
+  "frozenAt": "2026-08-27T03:20:00.000Z",
+  "checkpointCommit": "f453a153392ca0a611e91cd625f1971df3060544",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "originalFailure": {
+    "debateNumber": "87",
+    "originalContextIndex": 2,
+    "status": "timed-out",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "outputWritten": false,
+    "partialOutputReusable": false
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-87-shard-1",
+      "debateNumber": "87",
+      "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+      "writableFields": [
+        "moveProse"
+      ],
+      "writableFieldCount": 1,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-0.json",
+      "packetSha256": "2bafe20b69c15259b28c77ffd13e41607c2732bb11d77e58b8c321b81b1e2b06",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-0.schema.json",
+      "schemaSha256": "4843f038d92bd9528a826ea54379396b6f874fcf214b9ae09addc7953efbde56",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-0.json",
+      "packetBytes": 112480,
+      "schemaBytes": 47880
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-87-shard-2",
+      "debateNumber": "87",
+      "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+      "writableFields": [
+        "summary",
+        "representativeQuotes"
+      ],
+      "writableFieldCount": 2,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-1.json",
+      "packetSha256": "50e860cf67509b11e5032a1ca9f8e38681a70fd7fe0c042cf790282ad0aa5fbc",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-1.schema.json",
+      "schemaSha256": "c347426c3708f9b03f47f0bd1b308289fc42877db5ea8fba46fbec042890fe5c",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-1.json",
+      "packetBytes": 112506,
+      "schemaBytes": 3543
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-87-shard-3",
+      "debateNumber": "87",
+      "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+      "writableFields": [
+        "overallCommentary",
+        "aiExtension"
+      ],
+      "writableFieldCount": 2,
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-2.json",
+      "packetSha256": "106fbe4522b0ea3f4e0cfaf47d193d49d0b473ba068dcddc7999f3eddf8ab5f4",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-2.schema.json",
+      "schemaSha256": "c6fbda190b24c6b5c88573ed94bf6bb17ddbc0f49d6441f2f814baab715c8522",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-2.json",
+      "packetBytes": 112507,
+      "schemaBytes": 31404
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 3,
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsMaximumPerPacket": 2,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/execution-preparation-manifest.json": "4b114738e6721474cf1143cb6b8b6fb538dcd8b93e0b9b7646fe1bfee6ec684c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/execution-activation.json": "ed975057bc532ce5b646d5e0b36eab1e1d92af2dccbf432e1c33d90dca4a6c3b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/model-execution.json": "ede681da022b8835d9abe029b8e366163f4864ec9791b454e1940eb69ab4b847",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/analysis.json": "ec6bdfc0a4e02a9df42812b9f2076c1321e77c74e896c51ea57237781d60c98c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/packets/debate-87.json": "3753dd6e0d6c40bfcb7327cd3488c059b988e9d67aec4d3f19cf1b35d00b6396",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/schemas/debate-87.schema.json": "233564a0dc59719197f623c7bc8b1518a2d81c0a2068544f39b55d35e937135f",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/manual.md": "2234aeb2236d7f450613eff63e16a4fc0f7fc6f87876208488f2fa6ca53560b5",
+    "scripts/assessment-production-post-canary-batch-13-publication-timeout-recovery.mjs": "b538c79b0a0c84c03e85d42876abce14eb097a3255188fd78b3b0fb2403b5bf6",
+    "scripts/lib/assessment-production-post-canary-batch-13-publication-validation.mjs": "75d12ebafae9cb3606d20aa6bf5765b582e0e0bd5fb29f5117388d18bf93ba7a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-0.json": "2bafe20b69c15259b28c77ffd13e41607c2732bb11d77e58b8c321b81b1e2b06",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-0.schema.json": "4843f038d92bd9528a826ea54379396b6f874fcf214b9ae09addc7953efbde56",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-1.json": "50e860cf67509b11e5032a1ca9f8e38681a70fd7fe0c042cf790282ad0aa5fbc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-1.schema.json": "c347426c3708f9b03f47f0bd1b308289fc42877db5ea8fba46fbec042890fe5c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/packets/context-2.json": "106fbe4522b0ea3f4e0cfaf47d193d49d0b473ba068dcddc7999f3eddf8ab5f4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/schemas/context-2.schema.json": "c6fbda190b24c6b5c88573ed94bf6bb17ddbc0f49d6441f2f814baab715c8522"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/outputs/debate-87.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/validations/debate-87.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/provenance/debate-87.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/outputs/context-2.json"
+  ],
+  "authorization": {
+    "preparation": true,
+    "activation": true,
+    "modelExecution": true,
+    "deterministicMergeAndValidation": true,
+    "retries": false,
+    "paidServices": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-three-field-disjoint-debate-87-publication-recovery-contexts-once",
+  "activatedAt": "2026-08-27T03:25:00.000Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/timeout-recovery/execution-preparation-manifest.json",
+    "sha256": "f5bfd7cd29e96a1ed079a23bb6b26c1727f52ed6074f6343d5f8739af60be7e7"
+  }
+}
