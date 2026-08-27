@@ -1,0 +1,692 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-13-decomposed-consensus",
+  "status": "prepared-eight-post-canary-batch-13-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "4fd5b86d8c0cf708ba795f840b31ec334b64e10d",
+  "userAuthorization": {
+    "instruction": "Continue Batch 13 at your discretion.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/standing-authorization.json",
+    "standingAuthorizationSha256": "e602a0464130d3ef15c10f340deca6f4420b2fb72cee01738a2a1ad02af842f0",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sourceAudioFilesAuthorized": 3,
+    "clipsAuthorized": 8,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/disagreement-extraction/audio-work-item-preparation.json": "341ffe1fe25a8774c1a97107ee15004b46c69db753dace8f1c50ac8bf068255b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/disagreement-extraction/audio-work-items.json": "51a0358d93263758cecffc8efba583886d9d36e65992d2926ff60b2427cc6e65",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/standing-authorization.json": "e602a0464130d3ef15c10f340deca6f4420b2fb72cee01738a2a1ad02af842f0",
+    "scripts/prepare-assessment-production-post-canary-batch-13-audio-sources.mjs": "b2d3053192227d092022197dc09da6ba4566ee0dcc3aa3406feb43e8ac5b3d32",
+    "scripts/test-assessment-production-post-canary-batch-13-audio-sources.mjs": "1d94d6d37f4c7b95786db9983937d6d2b5de196554672649dad0875318b65830",
+    "scripts/prepare-assessment-production-post-canary-batch-13-audio-work-items.mjs": "1c1e72db9fd1d2a248b9a223ffa220e87e3e96e7c0b86dac9b27cc8ac6d0323c",
+    "scripts/test-assessment-production-post-canary-batch-13-audio-work-items.mjs": "8672d6e3f89e18845ab473c0f97bebc8917ff55434a2edbc3d45fa5b50d913f3",
+    "scripts/lib/assessment-production-post-canary-batch-13-audio-work-items.mjs": "ef83d4f726b67d20e83f3242bdbc18b3d4c89ed0b6752271df3f2b2a654b4c01",
+    "scripts/lib/assessment-production-post-canary-batch-13-standing-authorization.mjs": "e4f5dbc7616342a4efcbd04d1cfe2b20c3bf1c68a3f9d15282451fef5f316fc8",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "workItemSourceHashesReplayed": 82,
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "oneFreshMediaUrlResolutionPerMissingVideo": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "plannedRangesPerVideo": [
+      "bytes=0-"
+    ],
+    "nonOverlappingRangesPerVideo": 1,
+    "repeatedRanges": 0,
+    "redirectPolicy": {
+      "manual": true,
+      "httpsOnly": true,
+      "googleVideoDomainOnly": true,
+      "maximumRedirectsPerRange": 3,
+      "requiredFinalStatusCode": 206
+    },
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormatByVideo": {
+      "4qpwVLLebng": "bestaudio/best",
+      "LVUQAVQS1-U": "bestaudio/best",
+      "KvGdllx9pJU": "bestaudio/best"
+    },
+    "diagnosedFailedResolution": null,
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "70",
+      "videoId": "4qpwVLLebng",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "07d1c6ada57eb793a561c4ca13751547da16d7a305c57ae06cb8567af90c3bc6"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 1,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "07d1c6ada57eb793a561c4ca13751547da16d7a305c57ae06cb8567af90c3bc6"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr5---sn-ab5sznz6.googlevideo.com",
+            "urlSha256": "f735c3a02ad1dbfdfcb53f14e34aa3a073807e97447ab20d2149be0cc43bd8b1"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr5---sn-ab5sznz6.googlevideo.com",
+          "urlSha256": "f735c3a02ad1dbfdfcb53f14e34aa3a073807e97447ab20d2149be0cc43bd8b1"
+        },
+        "contentRange": "bytes 0-240014559/240014560",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 240014560
+      }
+    },
+    {
+      "debateNumber": "37",
+      "videoId": "LVUQAVQS1-U",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "bc4e1a95d3bfcfc9f1d82911348cbbab69bc82fd16786272b3162c421db6d54e"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 1,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "bc4e1a95d3bfcfc9f1d82911348cbbab69bc82fd16786272b3162c421db6d54e"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr3---sn-ab5l6nry.googlevideo.com",
+            "urlSha256": "ec486d057efc595fdfeb7adddd56959755d13b329fdff067313f7c5a5c1903f5"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-ab5l6nry.googlevideo.com",
+          "urlSha256": "ec486d057efc595fdfeb7adddd56959755d13b329fdff067313f7c5a5c1903f5"
+        },
+        "contentRange": "bytes 0-114984898/114984899",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 114984899
+      }
+    },
+    {
+      "debateNumber": "111",
+      "videoId": "KvGdllx9pJU",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+            "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+        },
+        "contentRange": "bytes 0-185466992/185466993",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 185466993
+      }
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "70",
+      "videoId": "4qpwVLLebng",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "07d1c6ada57eb793a561c4ca13751547da16d7a305c57ae06cb8567af90c3bc6"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 1,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "07d1c6ada57eb793a561c4ca13751547da16d7a305c57ae06cb8567af90c3bc6"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr5---sn-ab5sznz6.googlevideo.com",
+            "urlSha256": "f735c3a02ad1dbfdfcb53f14e34aa3a073807e97447ab20d2149be0cc43bd8b1"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr5---sn-ab5sznz6.googlevideo.com",
+          "urlSha256": "f735c3a02ad1dbfdfcb53f14e34aa3a073807e97447ab20d2149be0cc43bd8b1"
+        },
+        "contentRange": "bytes 0-240014559/240014560",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 240014560
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-70/audio/source.mp3",
+      "sourceAudioSha256": "0a56ef0a8233235dc76934287c6cc527fbe2c5b1f63b1aa0daca12f1c58163f7",
+      "durationSeconds": 5287.323,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "37",
+      "videoId": "LVUQAVQS1-U",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "bc4e1a95d3bfcfc9f1d82911348cbbab69bc82fd16786272b3162c421db6d54e"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 1,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "bc4e1a95d3bfcfc9f1d82911348cbbab69bc82fd16786272b3162c421db6d54e"
+          },
+          {
+            "protocol": "https:",
+            "hostname": "rr3---sn-ab5l6nry.googlevideo.com",
+            "urlSha256": "ec486d057efc595fdfeb7adddd56959755d13b329fdff067313f7c5a5c1903f5"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-ab5l6nry.googlevideo.com",
+          "urlSha256": "ec486d057efc595fdfeb7adddd56959755d13b329fdff067313f7c5a5c1903f5"
+        },
+        "contentRange": "bytes 0-114984898/114984899",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 114984899
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/audio/source.mp3",
+      "sourceAudioSha256": "d7c6abf8942d922bfdec3b39181e7002a39cd46587a2a00f1eaa468f85e863ca",
+      "durationSeconds": 4622.69825,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "111",
+      "videoId": "KvGdllx9pJU",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+            "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "ffd3d46eb59539b9910f6d6ceebc6a318bfaeb93f4e39857fbbee107d5bae7d6"
+        },
+        "contentRange": "bytes 0-185466992/185466993",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 185466993
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/audio/source.mp3",
+      "sourceAudioSha256": "94a577f6608462bb26bd92c0fdd2a02770f8bf5349cfbf02fe11f6b321ef066a",
+      "durationSeconds": 7215.252625,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "70",
+      "debateId": "malpass-anderson-logic-god-2021",
+      "sourceVideoId": "4qpwVLLebng",
+      "moveId": "con-shared-liability-neutrality",
+      "expectedSpeaker": "Alex Malpass",
+      "proposition": "A paradox that afflicts both divine conceptualism and Platonist realism cannot discriminate between them and therefore supplies no comparative support for either account.",
+      "verificationExcerpt": "trouble if you if that was part of the set up, but of course you're not. So, I mean, is this a problem for maybe it's a problem for any realist account of propositions that uh allows the types of constructions you get in naive set theory. Um and if so, it would be it would afflict the Platonist who who would make that type of move as well as the theist one. So, sometimes when we're doing these types of weighing uh big big theories",
+      "sourceSpan": {
+        "startEvent": 2005,
+        "endEvent": 2033
+      },
+      "clipWindow": {
+        "startMs": 4116140,
+        "endMs": 4178620,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-70/clips/con-shared-liability-neutrality.mp3",
+      "clipSha256": "f23054501379a0b5b90801d1b064a890a96442a46e73e3df08f44a8e39da5188",
+      "plannedDurationSeconds": 62.48,
+      "durationSeconds": 62.48,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "sourceVideoId": "LVUQAVQS1-U",
+      "moveId": "con-impartial-source-standards",
+      "expectedSpeaker": "Bart Ehrman",
+      "proposition": "Historical inquiry cannot privilege Christian appearance sources while rejecting comparable non-Christian eyewitness claims that satisfy the same proposed testimonial criteria.",
+      "verificationExcerpt": "we're not It's not we're not trying to back up our faith. We're not trying to prove that we're right about something. Historians don't do that. Historians try to figure out what happened in the past and they evaluate their sources. So what I'm saying is if you're going to take the sources that agree with you and you say say they're probably right but because they agree with you",
+      "sourceSpan": {
+        "startEvent": 524,
+        "endEvent": 566
+      },
+      "clipWindow": {
+        "startMs": 985380,
+        "endMs": 1070660,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/clips/con-impartial-source-standards.mp3",
+      "clipSha256": "8540681e3eb90d6d25bd4c48d97c6bae3326dc2bc9e722475348599172400f20",
+      "plannedDurationSeconds": 85.28,
+      "durationSeconds": 85.28,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "sourceVideoId": "LVUQAVQS1-U",
+      "moveId": "pro-paul-hostile-vision-challenge",
+      "expectedSpeaker": "Justin Bass",
+      "proposition": "An ordinary bereavement-vision explanation does not readily account for Paul, an enemy of the Christian movement, experiencing Jesus and converting.",
+      "verificationExcerpt": "I'll just add, you know, Bart says this is happening all the time. Where does someone project an enemy apparition? What what example do you have? It happens sometimes. If you feel guilty, for example, if you feel guilty about what you've done to somebody leading to your death. Um well, if you read the psychological literature on uh visions, you actually find a good bit of it. I",
+      "sourceSpan": {
+        "startEvent": 1056,
+        "endEvent": 1075
+      },
+      "clipWindow": {
+        "startMs": 1960180,
+        "endMs": 1996780,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/clips/pro-paul-hostile-vision-challenge.mp3",
+      "clipSha256": "9a844f5e0211aafcc078a33c7b44e232c5ae5ec52b859a5633d8a61068bd059d",
+      "plannedDurationSeconds": 36.6,
+      "durationSeconds": 36.6,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "sourceVideoId": "LVUQAVQS1-U",
+      "moveId": "pro-visions-cross-religious-distinction",
+      "expectedSpeaker": "Justin Bass",
+      "proposition": "Reports of people from other religious backgrounds seeing Jesus and moving toward Christianity distinguish the offered phenomenon from ordinary visions occurring within a person's own tradition.",
+      "verificationExcerpt": "Christianity. People from other world views and aren't having visions of the Prophet Muhammad here in the UK. They're not having visions of know if that's true or People I'll say it this way. People of their own religions, they do have visions. But, what But, across the the the way, that doesn't happen. And it's amazing. I mean, you can even You can even go to Google and search",
+      "sourceSpan": {
+        "startEvent": 2252,
+        "endEvent": 2277
+      },
+      "clipWindow": {
+        "startMs": 4108140,
+        "endMs": 4162339,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/clips/pro-visions-cross-religious-distinction.mp3",
+      "clipSha256": "959748fd8a2b26ff3cd663ac676ea5661a2e80fc24bfe65c83f864f75283d155",
+      "plannedDurationSeconds": 54.199,
+      "durationSeconds": 54.199,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "sourceVideoId": "KvGdllx9pJU",
+      "moveId": "con-functional-mixed-linkage-rna",
+      "expectedSpeaker": "Dave Farina",
+      "proposition": "RNA containing mixed two-prime–five-prime and three-prime–five-prime linkages can retain catalytic behavior, so perfect linkage selectivity is not required for functional prebiotic RNA.",
+      "verificationExcerpt": "some research on this yeah I know and Jack sosick even says he cannot get it functional art except for tolerance for non-inheritable two five how much tolerance how much Marilla night Clay is 30 to 70 what's the first word in that paper functional so we're talking about rnas that still have catalytic Behavior despite having a mixture of two five and three prime his amount of two",
+      "sourceSpan": {
+        "startEvent": 1085,
+        "endEvent": 1113
+      },
+      "clipWindow": {
+        "startMs": 2679400,
+        "endMs": 2754819,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/clips/con-functional-mixed-linkage-rna.mp3",
+      "clipSha256": "5433055f5565f893b87a365e83fb065e9c5becb9f7e8e3424a95b5490f073541",
+      "plannedDurationSeconds": 75.419,
+      "durationSeconds": 75.419,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "sourceVideoId": "KvGdllx9pJU",
+      "moveId": "pro-first-ribozyme-and-replication-gap",
+      "expectedSpeaker": "James Tour",
+      "proposition": "Reported ribozyme systems neither explain how the first functional ribozyme arose nor establish unrestricted self-replication without organized enzymes, energy inputs, or prepared starting materials.",
+      "verificationExcerpt": "not no it is not it no nobody has ever okay copied more than 10 without an engine but I don't believe no but it is yeah so uh let's see we've got a lot of these uh or are they okay well I already showed them [Music] yeah self-sustained replication of an RNA enzyme cross-replicating RNA enzymes complete undergo signs how much was replicated how much was replicated how much James",
+      "sourceSpan": {
+        "startEvent": 2146,
+        "endEvent": 2215
+      },
+      "clipWindow": {
+        "startMs": 5238440,
+        "endMs": 5436760,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/clips/pro-first-ribozyme-and-replication-gap.mp3",
+      "clipSha256": "a19b712cd98891390c3d00ec7e220ec8e06a8d73347107621af765153e30e18b",
+      "plannedDurationSeconds": 198.32,
+      "durationSeconds": 198.32,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "sourceVideoId": "KvGdllx9pJU",
+      "moveId": "con-joyce-self-replicating-ribozyme",
+      "expectedSpeaker": "Dave Farina",
+      "proposition": "Gerald Joyce demonstrated a fully self-replicating ribozyme in 2002, providing an experimental instance of RNA-based self-replication.",
+      "verificationExcerpt": "quick response that's on clueless the first fully self-replicating ribosome was done in 2002 by Gerald Joyce this is not new chemistry it's not true yeah",
+      "sourceSpan": {
+        "startEvent": 2496,
+        "endEvent": 2499
+      },
+      "clipWindow": {
+        "startMs": 6119000,
+        "endMs": 6138719,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/clips/con-joyce-self-replicating-ribozyme.mp3",
+      "clipSha256": "260584feaae46e7be5911836d27e5ad48178e92ea2d22ed73fb5003437824e5b",
+      "plannedDurationSeconds": 19.719,
+      "durationSeconds": 19.719,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "sourceVideoId": "KvGdllx9pJU",
+      "moveId": "pro-surface-stability-reaction-incompatibility",
+      "expectedSpeaker": "James Tour",
+      "proposition": "Stabilizing RNA on a mineral surface does not by itself solve the pathway because material preserved outside water is not undergoing the aqueous reactions the scenario requires.",
+      "verificationExcerpt": "be there next question no that is on a surface that is not in water it's not doing any reactions eight hours in water that's it no no",
+      "sourceSpan": {
+        "startEvent": 2731,
+        "endEvent": 2734
+      },
+      "clipWindow": {
+        "startMs": 6669080,
+        "endMs": 6690280,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/clips/pro-surface-stability-reaction-incompatibility.mp3",
+      "clipSha256": "48de60e89a004853478766880b84ebc670439820055220420e508790f09bb3ca",
+      "plannedDurationSeconds": 21.2,
+      "durationSeconds": 21.2,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 3,
+    "sourceDownloads": 3,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 3,
+    "clips": 8,
+    "clipMinutes": 9.2203,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-13-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
