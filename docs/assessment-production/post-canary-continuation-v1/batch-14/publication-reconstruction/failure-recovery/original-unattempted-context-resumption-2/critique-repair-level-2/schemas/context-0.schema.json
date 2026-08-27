@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b14-debate12-critique-repair-level-2-0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-recovery-level-2-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-14-publication-resumption-2-debate-12-critique-field-disjoint-recovery-level-2"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "12"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "settecase-jump-evidence-for-god-2025"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "con-propositions-versus-reality"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
