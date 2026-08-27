@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-13-production-compatibility",
+  "status": "post-canary-batch-13-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-27T05:13:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 13 standing authorization covers activation and exactly one deterministic compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 13 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 14 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/preparation-manifest.json",
+    "sha256": "e7977ad53a4387e85b293fc77ad098730ba22d889e76b84ff40ad3d60b82f888"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/analysis.json",
+    "sha256": "7c55163959a0262c8cd5b189c58621f28c75113aa8ce409fa6ffff45efed49ba",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-13-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-13-production-compatibility",
+      "status": "post-canary-batch-13-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 13,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/preparation-manifest.json",
+        "sha256": "e7977ad53a4387e85b293fc77ad098730ba22d889e76b84ff40ad3d60b82f888"
+      },
+      "finding": {
+        "id": "batch-13-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "batch02RoutePreservationSpecified": true,
+        "batch03RoutePreservationSpecified": true,
+        "batch04RoutePreservationSpecified": true,
+        "batch05RoutePreservationSpecified": true,
+        "batch06RoutePreservationSpecified": true,
+        "batch07RoutePreservationSpecified": true,
+        "batch08RoutePreservationSpecified": true,
+        "batch09RoutePreservationSpecified": true,
+        "batch10RoutePreservationSpecified": true,
+        "batch11RoutePreservationSpecified": true,
+        "batch12RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 53,
+        "moves": 199,
+        "oneSidedDisplayRows": 13,
+        "overallBlunders": 52,
+        "emptyReferenceLinks": 44,
+        "suppliedReferenceLinks": 8,
+        "proposedAdapterBytes": 1173987,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "batch02RouteRegressionBlocks": true,
+        "batch03RouteRegressionBlocks": true,
+        "batch04RouteRegressionBlocks": true,
+        "batch05RouteRegressionBlocks": true,
+        "batch06RouteRegressionBlocks": true,
+        "batch07RouteRegressionBlocks": true,
+        "batch08RouteRegressionBlocks": true,
+        "batch09RouteRegressionBlocks": true,
+        "batch10RouteRegressionBlocks": true,
+        "batch11RouteRegressionBlocks": true,
+        "batch12RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "activate-and-execute-one-batch-13-production-compatibility-pass-under-standing-authorization"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "8f80eb4bb606fe95d5f77abfc8a81181afabc0ea119f1fc5460ffefb9cc269d0",
+    "proposedSha256": "24e9414f7f212ed1f5c981f21f2f1a27abda40751928f2d46a0078dac32fe849",
+    "proposedBytes": 65485,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-13-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-13-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "26",
+      "debateId": "turek-hitchens-reality-theism-atheism-2011",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-26.json",
+      "sha256": "f787a8b0e4af0fc7826631312fb95b357d637f333c8514386dfacf641ff39c14",
+      "proposedAdapterSha256": "5193569b3aa04fa8023e4607b04cafe5f5fd0e0e6ef2ff905a833d234c4a7956",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/turek-hitchens-reality-theism-atheism-2011.json",
+      "stagedLedgerSha256": "5193569b3aa04fa8023e4607b04cafe5f5fd0e0e6ef2ff905a833d234c4a7956",
+      "stagedLedgerBytes": 112213,
+      "productionLedgerPath": "docs/assessment-ledgers/turek-hitchens-reality-theism-atheism-2011.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "190",
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-190.json",
+      "sha256": "a5c65b92ae4fd929fecba633bc6eea1c00f33893813e9efc6889101a25c0e4f3",
+      "proposedAdapterSha256": "7f80168c19624f1b85066d4a2413f1401bfa0e56cf554ee8cf5094db85a45a44",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/huemer-oppy-souls-personal-identity-2022.json",
+      "stagedLedgerSha256": "7f80168c19624f1b85066d4a2413f1401bfa0e56cf554ee8cf5094db85a45a44",
+      "stagedLedgerBytes": 115235,
+      "productionLedgerPath": "docs/assessment-ledgers/huemer-oppy-souls-personal-identity-2022.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "87",
+      "debateId": "christopoulos-dillahunty-resurrection-historical-event-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-87.json",
+      "sha256": "add81c1ac205ef0356ed42cadc328f10366cf66dcaa094a3e1c7b43ff242d355",
+      "proposedAdapterSha256": "1298e2e87275bb5e329b9cecb09e41bb10f2a8821839d0fffe7082c486a4d320",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/christopoulos-dillahunty-resurrection-historical-event-2024.json",
+      "stagedLedgerSha256": "1298e2e87275bb5e329b9cecb09e41bb10f2a8821839d0fffe7082c486a4d320",
+      "stagedLedgerBytes": 109467,
+      "productionLedgerPath": "docs/assessment-ledgers/christopoulos-dillahunty-resurrection-historical-event-2024.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "20",
+      "debateId": "hitchens-hitchens-iraq-god-2008",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-20.json",
+      "sha256": "abe47df3e423d445d5618a7c0648e80eca6ff0f081010414cd4efdbf72d15a18",
+      "proposedAdapterSha256": "989b8865a3563ac41887b116f20e3f219f70c88111534bfda1b50e9fd2259c4c",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/hitchens-hitchens-iraq-god-2008.json",
+      "stagedLedgerSha256": "989b8865a3563ac41887b116f20e3f219f70c88111534bfda1b50e9fd2259c4c",
+      "stagedLedgerBytes": 125900,
+      "productionLedgerPath": "docs/assessment-ledgers/hitchens-hitchens-iraq-god-2008.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "70",
+      "debateId": "malpass-anderson-logic-god-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-70.json",
+      "sha256": "3ee5a69cfc60804b97932de2f82bdd3ebddbacf71c4f85b2985b54d021cc38f8",
+      "proposedAdapterSha256": "bfbbb6967cebaee76be346b0784619e02dceba643f3fa131b46fde5c826c4f5e",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/malpass-anderson-logic-god-2021.json",
+      "stagedLedgerSha256": "bfbbb6967cebaee76be346b0784619e02dceba643f3fa131b46fde5c826c4f5e",
+      "stagedLedgerBytes": 108715,
+      "productionLedgerPath": "docs/assessment-ledgers/malpass-anderson-logic-god-2021.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "30",
+      "debateId": "lowder-turek-naturalism-theism-2016",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-30.json",
+      "sha256": "8301d61766c34f1fb632f554244543e44ceb6c2bd270f5aae95e3bb163d3b5bc",
+      "proposedAdapterSha256": "776e315dddc6980dc79e11a49dee13c404e65bf3d88e39e698b8226a37a22e92",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/lowder-turek-naturalism-theism-2016.json",
+      "stagedLedgerSha256": "776e315dddc6980dc79e11a49dee13c404e65bf3d88e39e698b8226a37a22e92",
+      "stagedLedgerBytes": 126602,
+      "productionLedgerPath": "docs/assessment-ledgers/lowder-turek-naturalism-theism-2016.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-37.json",
+      "sha256": "1a5ebab9509b0fc5a8d74cd6c008cce317c59a78c79e05168632d72d37a8b8a3",
+      "proposedAdapterSha256": "71b4178f16bd88d604a9c88d2878dac68604c2d619322acba1dee9fdc95f26df",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/ehrman-bass-resurrection-history-2023.json",
+      "stagedLedgerSha256": "71b4178f16bd88d604a9c88d2878dac68604c2d619322acba1dee9fdc95f26df",
+      "stagedLedgerBytes": 110835,
+      "productionLedgerPath": "docs/assessment-ledgers/ehrman-bass-resurrection-history-2023.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "117",
+      "debateId": "bertuzzi-oconnor-contingency-argument-2018",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-117.json",
+      "sha256": "769982aa34204df61c685a963201536fa64338fb9af50e05867cdf03c415f74b",
+      "proposedAdapterSha256": "c6b00bb9e27708cfac7586eea5fa58dc54685849320a2d1317997ba392be292a",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/bertuzzi-oconnor-contingency-argument-2018.json",
+      "stagedLedgerSha256": "c6b00bb9e27708cfac7586eea5fa58dc54685849320a2d1317997ba392be292a",
+      "stagedLedgerBytes": 118687,
+      "productionLedgerPath": "docs/assessment-ledgers/bertuzzi-oconnor-contingency-argument-2018.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-111.json",
+      "sha256": "008e6e1cdd96f60e834eff91ec87958b9d8eb774787d71ed11bb1220a99ed1ff",
+      "proposedAdapterSha256": "5b8e3f96b325ce1f0e6d953b18006a1e810b6d844dbc9f7e0673e97365b40ac1",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/tour-farina-origin-life-cluelessness-2023.json",
+      "stagedLedgerSha256": "5b8e3f96b325ce1f0e6d953b18006a1e810b6d844dbc9f7e0673e97365b40ac1",
+      "stagedLedgerBytes": 131134,
+      "productionLedgerPath": "docs/assessment-ledgers/tour-farina-origin-life-cluelessness-2023.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "34",
+      "debateId": "goff-carroll-consciousness-fundamental-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/packets/debate-34.json",
+      "sha256": "665803c33998fadd3ab93c2cd4b4a95aa8b971a45f4531645dcba30c6c2b411b",
+      "proposedAdapterSha256": "4e2d305293b43d49ec91581fc8b8cad52eedb3f6ab950e195a8cd8cde3f6b554",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/production-compatibility/output-bundle/staged-ledgers/goff-carroll-consciousness-fundamental-2023.json",
+      "stagedLedgerSha256": "4e2d305293b43d49ec91581fc8b8cad52eedb3f6ab950e195a8cd8cde3f6b554",
+      "stagedLedgerBytes": 115199,
+      "productionLedgerPath": "docs/assessment-ledgers/goff-carroll-consciousness-fundamental-2023.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-13-compatibility.mjs": "10d86957a7f9806904f4ad584cfde5bb8582727836da3809537708d5ab6a3a18",
+    "scripts/lib/assessment-production-post-canary-batch-13-compatibility-execution.mjs": "5ddca25d697ec57b6a4562c39fb85852b3c115340f64e107205cab97d424a2d4",
+    "scripts/activate-assessment-production-post-canary-batch-13-compatibility.mjs": "6f19d089e515470487c25d68404c4eb799fa733527ac4b3537b5b831d2a7454c",
+    "scripts/test-assessment-production-post-canary-batch-13-compatibility-activation.mjs": "5a9c4a47ba663e201b00cb3c3bdff0dd5d911b58fa223b769e657d670da25f54",
+    "scripts/run-assessment-production-post-canary-batch-13-compatibility.mjs": "d4d8f23f881da149fcc1b7a66c08abf533ee14c32cd2797ee45bd54df35d29ae",
+    "scripts/test-assessment-production-post-canary-batch-13-compatibility-execution.mjs": "ae0fde297229b270fab0259a9b9fde5d03c0454ced2b8710d1e2e2761a70271a"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "0e157788dc889b26effd8491c22d9292d8b42d26af85d675846510f10f3adb67"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 130,
+      "digest": "40ba2b010fde9745285df960f3b0de1795fb73efcbe1ead183871be9b742e6d2"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 13 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "Batch 2 route and score replay",
+    "Batch 3 route and score replay",
+    "Batch 4 route and score replay",
+    "Batch 5 route and score replay",
+    "Batch 6 route and score replay",
+    "Batch 7 route and score replay",
+    "Batch 8 route and score replay",
+    "Batch 9 route and score replay",
+    "Batch 12 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-13-production-compatibility-staging-pass-no-reruns"
+}
