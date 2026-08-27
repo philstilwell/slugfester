@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-candidate-sharded-inventory",
+  "debateNumber": "53",
+  "debateId": "oconnor-dsouza-bible-true-2024",
+  "motion": "Is the Bible true in historical, moral, allegorical, theological, and revelatory senses, or do contradictions and morally troubling texts undermine its truth claims?",
+  "sides": {
+    "pro": {
+      "label": "Bible as true revelation",
+      "speakers": [
+        "Dinesh D'Souza"
+      ]
+    },
+    "con": {
+      "label": "Biblical skepticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 6983,
+  "eventCount": 3546,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/UMKkX8qRHsw/transcript.txt",
+    "transcriptSha256": "37c7f623340f7de14e1c23ac9ae897d13b0092e1a89147d49f06345b7a6e1e7f",
+    "eventsPath": ".assessment-cache/captions/UMKkX8qRHsw/events.json",
+    "eventsSha256": "17729a451af0759cefe0575df6bfbc24c81620423bc69b7d1f0ae4c5b8d80d09",
+    "localManifestPath": ".assessment-cache/captions/UMKkX8qRHsw/manifest.json",
+    "localManifestSha256": "92aa39e31ab4ef9e0af599d0a27eb07021b26e53af84c14d02b623556034d43d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-14/debate-53.jsonl",
+    "sourceLedgerSha256": "d788d77cf986f730218ee6fa0443b262306d978372b7d53531a21575e487f2ff",
+    "sourceLedgerBytes": 195757,
+    "sourceLedgerEventCount": 3546,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/source-preparation/plans/debate-53.json",
+    "partitionPlanSha256": "51a3fe6181878b60cb1f9a1441f2a837fca73e88617482886fddf2235f5dfc7d",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

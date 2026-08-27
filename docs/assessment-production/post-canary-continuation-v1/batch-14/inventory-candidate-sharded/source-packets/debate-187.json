@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-candidate-sharded-inventory",
+  "debateNumber": "187",
+  "debateId": "ward-dennett-more-than-matter-2019",
+  "motion": "Are consciousness, personal identity, purpose, value, and free agency irreducible to the physical world?",
+  "sides": {
+    "pro": {
+      "label": "Persons are irreducible to matter",
+      "speakers": [
+        "Keith Ward"
+      ]
+    },
+    "con": {
+      "label": "Naturalism can explain persons",
+      "speakers": [
+        "Daniel Dennett"
+      ]
+    }
+  },
+  "durationSeconds": 4999,
+  "eventCount": 1837,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/mongL_2KMGg/transcript.txt",
+    "transcriptSha256": "b96548a0ebacc82e318b58ec0851c90668838ccf3b6cdd47fe749740c83a29fb",
+    "eventsPath": ".assessment-cache/captions/mongL_2KMGg/events.json",
+    "eventsSha256": "581845df55c0e65b22af2e55fc5643297c582e4c44d6998ea82c1e6523011d91",
+    "localManifestPath": ".assessment-cache/captions/mongL_2KMGg/manifest.json",
+    "localManifestSha256": "ae38d275b9c48707a1762b5db21b103d5ff53d4941446330296e67f1e3965d8c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-14/debate-187.jsonl",
+    "sourceLedgerSha256": "d8dd656af9c727d35a683e0a068bb8f4d9e6dd45288f22c1fc84d5c3fd919146",
+    "sourceLedgerBytes": 107896,
+    "sourceLedgerEventCount": 1837,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/source-preparation/plans/debate-187.json",
+    "partitionPlanSha256": "75a0e1dfc3cad053ed7b9f35e164aa01c8117e9ef6bca74b02fdba8658938a47",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

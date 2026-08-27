@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-candidate-sharded-inventory",
+  "debateNumber": "69",
+  "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+  "motion": "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection defense",
+      "speakers": [
+        "Mike Winger"
+      ]
+    },
+    "con": {
+      "label": "Skeptical burden test",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7070,
+  "eventCount": 3621,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Z2FGgkubhZM/transcript.txt",
+    "transcriptSha256": "7d1e6eadea23cdf2ba29a36698557e56cf88f1e250db71b1b94de5a09a71c236",
+    "eventsPath": ".assessment-cache/captions/Z2FGgkubhZM/events.json",
+    "eventsSha256": "941e1ae0222952d24c83d6a8ef26e83c49be5c95c1de28036db7ba89f6ea481a",
+    "localManifestPath": ".assessment-cache/captions/Z2FGgkubhZM/manifest.json",
+    "localManifestSha256": "87510006cb61336620b1dc8cf6668b9fa0f3a127e979a675bef7b35413441d1d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-14/debate-69.jsonl",
+    "sourceLedgerSha256": "4358813ea790052f549c969632c486c6302a6868119cb68c3f5ee2fb93bd331a",
+    "sourceLedgerBytes": 205223,
+    "sourceLedgerEventCount": 3621,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/source-preparation/plans/debate-69.json",
+    "partitionPlanSha256": "6441ee4c8e0a83472cb4e13303be04807d5ecf57aa0612e23468baf7c1627e7f",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
