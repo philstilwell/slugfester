@@ -175,16 +175,7 @@ assert.equal(activation.acceptanceContract.modelAuthoredScoresMaximum, 0);
 assert.equal(activation.acceptanceContract.scoresDerived, 0);
 assert.deepEqual(
   activation.audioPolicy.pendingAttributionVerificationMoves,
-  [
-    {
-      debateNumber: "39",
-      moveId: "pro-ancient-historical-reporting-standard",
-    },
-    {
-      debateNumber: "187",
-      moveId: "pro-encoding-insufficient-for-survival",
-    },
-  ]
+  []
 );
 assert.equal(allBooleanLeavesTrue(activation.stopRules), true);
 for (const key of [
