@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-field-disjoint-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-34-publication-field-disjoint-repair-1",
+  "contextIndex": 3,
+  "shardId": "debate-34-shard-4",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "debateNumber": "34",
+  "debateId": "goff-carroll-consciousness-fundamental-2023",
+  "assessmentModel": "5.6 Sol",
+  "correctionType": "user-authorized-multi-field-field-disjoint-publication-repair",
+  "writableFieldCount": 2,
+  "writableFields": [
+    "moveProse.con-private-data-within-science.critique",
+    "moveProse.pro-integrating-private-and-physical-knowledge.critique"
+  ],
+  "targets": [
+    {
+      "kind": "critique",
+      "field": "moveProse.con-private-data-within-science.critique",
+      "moveId": "con-private-data-within-science",
+      "move": {
+        "moveId": "con-private-data-within-science",
+        "sectionId": "first-person-data-and-method",
+        "side": "con",
+        "speaker": "Sean Carroll",
+        "moveKind": "reply",
+        "proposition": "Science may use private as well as public data and seeks the empirically best account compatible with the full body of available evidence.",
+        "importance": 2,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "67:06",
+        "sourceSpan": {
+          "startEvent": 1794,
+          "endEvent": 1812,
+          "startMs": 4026599,
+          "endMs": 4069380
+        },
+        "sourceExcerpt": "experience and understanding of science I think that the data that we have from thinking about things from experiencing them or a hundred percent of science I think that science is just about all the data that we have private or public it's about getting the best possible understanding that is compatible with all the data we have and judging the possible understandings empirically",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 64,
+          "characterCount": 383
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-private-data"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-private-consciousness-data"
+          ],
+          "components": [
+            {
+              "componentId": "con-private-data-within-science-component-01",
+              "targetMoveId": "pro-private-consciousness-data",
+              "text": "Accept private experiential evidence as genuine data rather than excluding it from disciplined empirical inquiry.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-private-data-within-science-component-02",
+              "targetMoveId": "pro-private-consciousness-data",
+              "text": "Show that including private data in science suffices for an adequate theory of reality to explain experience.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly accepts private experience as scientific data and broadens the method, but it does not show that inclusion alone satisfies the pro move's explanatory adequacy demand.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "Within partial answers, it contacts the methodological exclusion issue but leaves the decisive adequacy-of-explanation component unresolved."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the methodological exclusion issue but leaves the decisive adequacy-of-explanation component unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Private and public data remain clearly distinguished while both are included in the stated scope of science."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The inclusive methodological proposal is clear, though calling all experiential thinking one hundred percent science is somewhat broader than defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Private awareness differs epistemically from publicly reproducible scientific observation.",
+          "decisiveQualification": "That difference need not exclude private reports or experience from a broader evidence-sensitive scientific account."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary private-data bridge and ranks at the top of that subsidiary tier."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The reply fairly accepts the data but narrows the opposing demand toward scientific admissibility and omits its strongest explanatory component."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects a purely quantitative conception of science and says thinking and experience supply data, private or public, for the best compatible understanding.",
+        "assessmentConfidence": "high"
+      },
+      "originalWords": 132,
+      "originalCharacters": 1103,
+      "originalValueSha256": "d89c9a1e72f714a3066800350ff97a07afae53ca4d3126454af169be69fd3b78",
+      "fieldKey": "field_01"
+    },
+    {
+      "kind": "critique",
+      "field": "moveProse.pro-integrating-private-and-physical-knowledge.critique",
+      "moveId": "pro-integrating-private-and-physical-knowledge",
+      "move": {
+        "moveId": "pro-integrating-private-and-physical-knowledge",
+        "sectionId": "first-person-data-and-method",
+        "side": "pro",
+        "speaker": "Philip Goff",
+        "moveKind": "reply",
+        "proposition": "Because consciousness is privately known rather than publicly observed, an adequate inquiry must explain how conscious and physical reality fit together rather than stop at experimental observables.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "76:54",
+        "sourceSpan": {
+          "startEvent": 2063,
+          "endEvent": 2114,
+          "startMs": 4614060,
+          "endMs": 4727040
+        },
+        "sourceExcerpt": "explain so that's what we're trying to do yes so that's why I think just getting the complete Neuroscience of the causal role of Consciousness and so on it wouldn't be enough because we still haven't answered that question how do Consciousness in the physical world Consciousness that we know about in one way physical reality known about another how do they fit together that is a",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "motion",
+          "bridgeId": "con-motion-physicalist-completion"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-multilevel-explanatory-mapping",
+            "con-private-data-within-science",
+            "con-weak-emergence-levels"
+          ],
+          "components": [
+            {
+              "componentId": "pro-integrating-private-and-physical-knowledge-component-01",
+              "targetMoveId": "con-multilevel-explanatory-mapping",
+              "text": "Whether complete neuroscience of causal roles and mappings exhausts the explanatory question about consciousness.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-integrating-private-and-physical-knowledge-component-02",
+              "targetMoveId": "con-private-data-within-science",
+              "text": "Whether including private data within science resolves how privately known consciousness relates to publicly known physical reality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-integrating-private-and-physical-knowledge-component-03",
+              "targetMoveId": "con-weak-emergence-levels",
+              "text": "Whether labeling consciousness a higher-level description explains how the two epistemic standpoints fit together.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply accepts causal neuroscience yet explicitly identifies the remaining integration question between privately known consciousness and physically known reality.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It fully contacts the claimed sufficiency of mapping and clearly states the residual explanatory demand."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It fully contacts the claimed sufficiency of mapping and clearly states the residual explanatory demand."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast between private knowledge of consciousness and another mode of knowing physical reality is consistently stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The remaining integration question is genuine, though saying complete neuroscience cannot answer it presupposes a narrower conception of science."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Broad science can include private reports and regard complete multilevel mapping as the sought integration.",
+          "decisiveQualification": "Inclusion and mapping may still leave unanswered why or how qualitative and physical descriptions concern one reality."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The distinction between causal-role completion and epistemic-metaphysical integration is coherent and expressly developed."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (100 and 99); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt grants complete neuroscience of consciousness's causal role for argument's sake, then asks how privately known consciousness and differently known physical reality fit together.",
+        "assessmentConfidence": "high"
+      },
+      "originalWords": 132,
+      "originalCharacters": 1147,
+      "originalValueSha256": "ea58d2f46aec07bedde17904106b8724e975090f50aea1c580017661106f2609",
+      "fieldKey": "field_02"
+    }
+  ],
+  "rejectedPriorStringsAvailable": false,
+  "failedPublicationOutputAvailable": false,
+  "allOtherFieldsUnavailableAndImmutable": true,
+  "participantJudgmentClosed": true,
+  "publicationScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "critiqueSentenceCount": 4,
+    "critiqueOrderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueWordsMinimum": 105,
+    "critiqueWordsMaximum": 130,
+    "critiqueWordsTargetMinimum": 112,
+    "critiqueWordsTargetMaximum": 118,
+    "critiqueCharactersMinimum": 880,
+    "terminalPunctuationRequired": true,
+    "quoteWordsMinimum": 3,
+    "quoteWordsMaximum": 18,
+    "quoteExactContiguousSourceSubstringRequired": true,
+    "namedFallacyOrBiasFieldsWritable": false
+  }
+}
