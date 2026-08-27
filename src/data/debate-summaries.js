@@ -856,11 +856,11 @@ export const debateSummaries = [
     "number": "20",
     "title": "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority",
     "label": "Iraq, God, and moral authority",
-    "date": "2026-05-30",
+    "date": "2026-08-27",
     "duration": "2 hr 02 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ngjQs_QjSwc",
     "motion": "Was the invasion of Iraq defensible, and does religion supply or corrupt moral authority?",
-    "summary": "Christopher defends Iraq intervention and attacks religion as totalitarian; Peter condemns the war and argues belief anchors moral order against secular collapse.",
+    "summary": "Christopher Hitchens defends intervention and secular morality; Peter Hitchens challenges Iraq's consequences and argues that binding moral authority requires transcendence.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -875,27 +875,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 79
+      "pro": 79,
+      "con": 77
     },
     "sections": [
       {
-        "title": "War and moral seriousness"
+        "title": "Sovereignty, Aggression, and the Case for Intervention"
       },
       {
-        "title": "Costs and sovereignty"
+        "title": "Consequences and Strategic Balance in Iraq"
       },
       {
-        "title": "God and authority"
+        "title": "From Cosmic Order to Divine Moral Authority"
       },
       {
-        "title": "Sacrifice and moral harm"
+        "title": "Secular Moral Agency and Transcendent Obligation"
       },
       {
-        "title": "Secular morality and truth"
+        "title": "Religious Command, Redemption, and Practical Harm"
       },
       {
-        "title": "Science and secular regimes"
+        "title": "Religion, Atheism, and Political Tyranny"
       }
     ]
   },
@@ -1128,11 +1128,11 @@ export const debateSummaries = [
     "number": "26",
     "title": "Frank Turek vs Christopher Hitchens: What Best Explains Reality?",
     "label": "Reality, theism, and atheism",
-    "date": "2026-05-30",
+    "date": "2026-08-27",
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uDCDTaKfzXU",
     "motion": "What best explains reality: theism, with a personal creator and revelation, or atheism, with no supernatural dimension?",
-    "summary": "Turek argues that cosmology, fine-tuning, DNA, morality, logic, and Jesus point to theism; Hitchens argues that natural explanation, religious diversity, and moral independence undercut the leap to Christianity.",
+    "summary": "Turek advances a cumulative theistic explanation, while Hitchens more consistently supplies calibrated naturalistic alternatives and challenges the inferential bridges to design and revelation.",
     "sides": {
       "pro": {
         "name": "Theism explains reality",
@@ -1146,27 +1146,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 84
+      "pro": 74,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Cosmos and first cause"
+        "title": "Cosmic Origin and the Necessity of a Creator"
       },
       {
-        "title": "Order and design"
+        "title": "Fine-Tuning, Biological Information, and Natural Order"
       },
       {
-        "title": "DNA and complexity"
+        "title": "Objective Morality, Divine Authority, and Human Solidarity"
       },
       {
-        "title": "Morality and human solidarity"
+        "title": "Reason, Truth, and Experience under Naturalism"
       },
       {
-        "title": "Miracles and revelation"
-      },
-      {
-        "title": "Burden and worldview"
+        "title": "Revelation, Miracles, and the Human Origins of Religion"
       }
     ]
   },
@@ -1311,11 +1308,11 @@ export const debateSummaries = [
     "number": "30",
     "title": "Jeffery Jay Lowder vs Frank Turek: Naturalism or Theism?",
     "label": "Naturalism and explanatory balance",
-    "date": "2026-05-30",
+    "date": "2026-08-27",
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ENZYEPpR2Jc",
     "motion": "What better explains reality: naturalism, where the physical explains the mental, or theism, where God grounds creation, reason, information, morality, evil, and science?",
-    "summary": "Lowder argues that naturalism has better prior simplicity and evidential accuracy; Turek argues that naturalism borrows the immaterial realities needed for reason, morality, information, and science.",
+    "summary": "Lowder's calibrated comparative case consistently outperformed Turek's cumulative theistic inferences, especially concerning embodied minds, suffering, hiddenness, and naturalistic cognitive reliability.",
     "sides": {
       "pro": {
         "name": "Naturalism explains reality",
@@ -1329,27 +1326,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 86,
-      "con": 81
+      "pro": 85,
+      "con": 70
     },
     "sections": [
       {
-        "title": "Explanatory frame"
+        "title": "Worldview Scope, Intrinsic Probability, and Comparative Method"
       },
       {
-        "title": "Cosmos and fine-tuning"
+        "title": "Cosmic Existence, Contingency, Order, and Fine-Tuning"
       },
       {
-        "title": "Mind, reason, and science"
+        "title": "Evolution, Biological Information, and Life's History"
       },
       {
-        "title": "Information and evolution"
+        "title": "Embodied Mind, Rational Reliability, and Scientific Knowledge"
       },
       {
-        "title": "Morality and evil"
+        "title": "Objective Morality, Suffering, and Moral Agency"
       },
       {
-        "title": "Hiddenness and closing burdens"
+        "title": "Divine Hiddenness and Overall Explanatory Balance"
       }
     ]
   },
@@ -1490,11 +1487,11 @@ export const debateSummaries = [
     "number": "34",
     "title": "Philip Goff vs Sean Carroll: Is Consciousness Fundamental?",
     "label": "Consciousness and physicalism",
-    "date": "2026-05-30",
+    "date": "2026-08-27",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rCPCyri1rXU",
     "motion": "Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
-    "summary": "Goff argues that private conscious data, the hard problem, and Russellian panpsychism make consciousness fundamental; Carroll argues that weak emergence, the core theory, and explanatory discipline favor physicalism.",
+    "summary": "Goff defended consciousness-first metaphysics from private experience and explanatory gaps; Carroll answered through multilevel emergence, empirical constraints, and comparative challenges.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -1509,27 +1506,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 87
+      "pro": 84,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Data and method"
+        "title": "Qualitative Experience and the Scope of Physical Explanation"
       },
       {
-        "title": "Hard problem and Mary"
+        "title": "Emergence versus Consciousness-First Grounding"
       },
       {
-        "title": "Russellian panpsychism and the core theory"
+        "title": "Empirical Constraints and Theoretical Consequences"
       },
       {
-        "title": "Zombies and behavior"
+        "title": "First-Person Data and the Method of Inquiry"
       },
       {
-        "title": "Science, scientism, and explanation"
-      },
-      {
-        "title": "Combination problem and future bets"
+        "title": "Causation, Zombies, and the Unity of Consciousness"
       }
     ]
   },
@@ -1629,11 +1623,11 @@ export const debateSummaries = [
     "number": "37",
     "title": "Bart Ehrman vs Justin Bass: Did Jesus of Nazareth Rise From the Dead?",
     "label": "Resurrection and historical method",
-    "date": "2026-05-31",
+    "date": "2026-08-27",
     "duration": "1 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=LVUQAVQS1-U",
     "motion": "Did Jesus of Nazareth historically rise from the dead, and do the early resurrection appearances, the unexpected messianic claim, Christianity's spread, and later visions make that explanation plausible?",
-    "summary": "Bass builds a cumulative resurrection case from bedrock facts and Christian expansion; Ehrman tests each step against source criticism, comparative miracle claims, and historical probability.",
+    "summary": "Bass builds a cumulative resurrection case from appearances, unexpected belief, expansion, and visions; Ehrman answers through source criticism, ordinary alternatives, and comparative evidence.",
     "sides": {
       "pro": {
         "name": "Resurrection defender",
@@ -1647,27 +1641,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 86
+      "pro": 78,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Bedrock facts and sources"
+        "title": "Early Appearance Testimony and Source Reliability"
       },
       {
-        "title": "Parallels and unexpectedness"
+        "title": "Unexpected Messianic Claim and Formation of Resurrection Belief"
       },
       {
-        "title": "Paul and miracle probability"
+        "title": "Ordinary Explanations and Historical Probability"
       },
       {
-        "title": "Comparative miracle claims"
+        "title": "Christianity's Expansion, Influence, and Fulfilled Mission"
       },
       {
-        "title": "Christianity's rise and reach"
-      },
-      {
-        "title": "Visions and closing standards"
+        "title": "Later Visions and Comparative Religious Experience"
       }
     ]
   },
@@ -3132,11 +3123,11 @@ export const debateSummaries = [
     "number": "70",
     "title": "Alex Malpass vs James Anderson: Does Logic Prove God?",
     "label": "Logic and divine conceptualism",
-    "date": "2026-06-09",
+    "date": "2026-08-27",
     "duration": "1 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=4qpwVLLebng",
     "motion": "Does the existence of necessary truths or laws of logic support a necessarily existing divine mind, or can propositions be explained without God?",
-    "summary": "Anderson defends necessary truths as divine thoughts; Malpass grants realism about propositions but challenges the modal, intentional, and self-content steps.",
+    "summary": "Anderson argues necessary propositions are best grounded in divine thoughts; Malpass defends nonmental propositions while challenging conceptualism's coherence and comparative advantage.",
     "sides": {
       "pro": {
         "name": "Divine conceptualism",
@@ -3150,27 +3141,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 88
+      "pro": 86,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Argument from necessary truths"
+        "title": "Necessary truths and the operative modality"
       },
       {
-        "title": "Necessity and conceivability"
+        "title": "Reality, objectivity, and shareability of propositions"
       },
       {
-        "title": "Intentionality of propositions"
+        "title": "Whether propositional intentionality requires mentality"
       },
       {
-        "title": "Platonism and shareability"
+        "title": "Coherence of divine thoughts as propositional contents"
       },
       {
-        "title": "Self-reflexive thought dilemma"
-      },
-      {
-        "title": "Q&A and comparison"
+        "title": "Divine conceptualism and Platonism compared"
       }
     ]
   },
@@ -3904,11 +3892,11 @@ export const debateSummaries = [
     "number": "87",
     "title": "Than Christopoulos vs Matt Dillahunty: Is the Resurrection a Historical Event?",
     "label": "Resurrection probability and source reliability",
-    "date": "2026-06-24",
+    "date": "2026-08-27",
     "duration": "2 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OSQWIWY9gYg",
     "motion": "Does the historical evidence make Jesus' resurrection more probable than competing hypotheses?",
-    "summary": "Christopoulos argues Bayesian comparison and New Testament testimony favor resurrection; Dillahunty argues the sources, priors, and missing independent controls leave the claim unproved.",
+    "summary": "Christopoulos presented a cumulative probabilistic resurrection case, while Dillahunty’s source challenges and distinctions between sincerity, likelihood, and warranted belief preserved rational uncertainty.",
     "sides": {
       "pro": {
         "name": "Resurrection historicity",
@@ -3922,24 +3910,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 84
+      "pro": 79,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Priors and Evidence"
+        "title": "Probability Method, Priors, and Rational Uncertainty"
       },
       {
-        "title": "Source Reliability"
+        "title": "Source Reliability, Independence, and Transmission"
       },
       {
-        "title": "Empty Tomb and Appearances"
+        "title": "Death, Burial, and Empty-Tomb Foundations"
       },
       {
-        "title": "Method and Hiddenness"
+        "title": "Appearances, Memory, Sincerity, and Transformation"
       },
       {
-        "title": "Modern Miracles and Closure"
+        "title": "Competing Explanations and Supernatural Context"
       }
     ]
   },
@@ -5000,11 +4988,11 @@ export const debateSummaries = [
     "number": "111",
     "title": "Dave Farina vs James Tour: Are We Clueless About the Origin of Life?",
     "label": "Origin of life cluelessness",
-    "date": "2026-07-28",
+    "date": "2026-08-27",
     "duration": "2 hr 00 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=KvGdllx9pJU",
     "motion": "Are scientists currently clueless about the origin of life, or do prebiotic chemistry, ribozyme research, and systems chemistry already provide viable pathways toward abiogenesis?",
-    "summary": "Tour argues origin-of-life research lacks a valid chemical pathway to life; Farina argues the field has many plausible, evidence-backed routes.",
+    "summary": "Tour pressed unresolved selectivity, replication, information, and integration barriers; Farina answered with experimental component mechanisms while distinguishing incomplete reconstruction from scientific cluelessness.",
     "sides": {
       "pro": {
         "name": "Cluelessness thesis",
@@ -5018,30 +5006,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 74
+      "pro": 80,
+      "con": 79
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Meaning and Evidentiary Standard of Cluelessness"
       },
       {
-        "title": "Peptide Formation"
+        "title": "Prebiotic Synthesis, Selectivity, and Environmental Plausibility"
       },
       {
-        "title": "RNA Linkages"
+        "title": "RNA Function, Replication, and Biological Information"
       },
       {
-        "title": "Sugars And Polysaccharides"
+        "title": "Polymer Stability, Mineral Surfaces, and Reaction Compatibility"
       },
       {
-        "title": "Chirality Routes"
+        "title": "Systems Integration and Gradual Protocell Pathways"
       },
       {
-        "title": "Information And Ribozymes"
-      },
-      {
-        "title": "Q And A Burdens"
+        "title": "Scientific Interpretation and Epistemic Scope"
       }
     ]
   },
@@ -5283,11 +5268,11 @@ export const debateSummaries = [
     "number": "117",
     "title": "Alex O'Connor vs Cameron Bertuzzi: Something From Nothing?",
     "label": "Contingency and nothingness",
-    "date": "2026-07-28",
+    "date": "2026-08-27",
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=DGpkGRoLBQ8",
     "motion": "Does the contingency argument show that contingent reality requires a necessary foundation identifiable as God, or can determinism, composition worries, and a necessary-universe option block the inference?",
-    "summary": "Bertuzzi argues contingent reality needs a necessary foundation pointing toward God; O'Connor challenges contingency, composition, and the leap from necessary reality to divine personhood.",
+    "summary": "Bertuzzi defends an external necessary foundation, while O'Connor presses modal, compositional, symmetry, and underdetermination objections against identifying that foundation as God.",
     "sides": {
       "pro": {
         "name": "Theistic contingency",
@@ -5301,24 +5286,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 82
+      "pro": 81,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Stage One Framed"
+        "title": "Contingency, Determinism, and Necessity"
       },
       {
-        "title": "Determinism And Contingency"
+        "title": "Explanatory Principle and Legitimate Stopping Points"
       },
       {
-        "title": "Plurality And Composition"
+        "title": "Plurality, Composition, and External Explanation"
       },
       {
-        "title": "Necessary Universe Option"
+        "title": "Necessary Being or Necessary Universe"
       },
       {
-        "title": "Perfect Being And Closing"
+        "title": "Identification with God and Explanatory Virtues"
       }
     ]
   },
@@ -8571,11 +8556,11 @@ export const debateSummaries = [
     "number": "190",
     "title": "Michael Huemer vs Graham Oppy: Do Souls Exist?",
     "label": "Mind, souls, and personal identity",
-    "date": "2026-08-01",
+    "date": "2026-08-27",
     "duration": "2 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=gxSi0htNihk",
     "motion": "Do conscious persons possess nonphysical mental substances that can survive bodily death?",
-    "summary": "Huemer argues that qualia, intentionality, agency, and identity support nonphysical souls and possible reincarnation; Oppy defends a naturalistic identity theory with irreducible properties at different physical scales.",
+    "summary": "Huemer argues that irreducible mentality requires a surviving soul, while Oppy offers multiscale naturalism, brain dependence, and cosmological objections to that inference.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -8590,27 +8575,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 87,
-      "con": 92
+      "pro": 76,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Qualia and Mary's new knowledge"
+        "title": "Phenomenal consciousness and physical explanation"
       },
       {
-        "title": "Identity theory across physical scales"
+        "title": "Intentionality, mental causation, and agency"
       },
       {
-        "title": "Intentionality and the location of thought"
+        "title": "From nonphysical properties to subjects and personal identity"
       },
       {
-        "title": "Free will and downward causation"
+        "title": "Cosmology, recurrence, and postmortem survival"
       },
       {
-        "title": "Infinite time and reincarnation"
-      },
-      {
-        "title": "Religious and ethical stakes"
+        "title": "Brain dependence, embodiment, and disembodied capacity"
       }
     ]
   },
