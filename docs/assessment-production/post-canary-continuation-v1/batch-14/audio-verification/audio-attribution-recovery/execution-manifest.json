@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-attribution-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-14-audio-attribution-recovery",
+  "status": "frozen-one-batch-14-audio-attribution-recovery-context-active",
+  "activatedAt": "2026-08-27T18:31:19Z",
+  "checkpointCommit": "2f5b6ecafe644630563e7d1b88c4a05e643761c1",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-successor-authorization.json",
+    "sha256": "e0ce8bac6d77fa76039e479b0cbd6d5cd5215d6fa82b9924ed821d8e4c827cfc"
+  },
+  "workflow": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-workflow.md",
+  "manual": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-manual.md",
+  "contexts": [
+    {
+      "debateNumber": "12",
+      "debateId": "settecase-jump-evidence-for-god-2025",
+      "moveIds": [
+        "con-reality-identity-through-time"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/packets/debate-12.json",
+      "packetSha256": "754cc54ec9c853c5494e764ccefdb13753e904d2c03646a0380585445b1cbab8",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/schemas/debate-12.schema.json",
+      "schemaSha256": "b5ff990d41793d74aba17383020fa70ff7bd7e77de40bf1a3467d4d9dbf01766",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "con-reality-identity-through-time",
+          "path": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+          "sha256": "cfc81f08f76ed60bff76dfa0b44e6317d181b6ae44a008354c0e4befb985d72a"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/outputs/debate-12.json",
+      "copiedInputBytes": 22231
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "concurrency": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stderrTailRecordedOnFailure": true
+  },
+  "authorizationFlags": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "deterministicAnalysis": true,
+    "retry": false,
+    "paidTranscription": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "artifacts": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/analysis.json",
+    "combinedAudioGate": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/combined-audio-verification.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/combined-audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/outputs/debate-12.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-successor-authorization.json": "e0ce8bac6d77fa76039e479b0cbd6d5cd5215d6fa82b9924ed821d8e4c827cfc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/preparation-manifest.json": "dcd4a589436effc73d0978e0192a7e2417846f7a3d87f323e3712d9f11eb9942",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-workflow.md": "c0335b1461b06509111fd4c55851b99f6ffc8beb951d94a4bcfc81ef7ddcc5cc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-manual.md": "699e7a8540387075fc69fa761ca046a1d235f4439b0b73eb9a082d9648d69a13",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/packets/debate-12.json": "754cc54ec9c853c5494e764ccefdb13753e904d2c03646a0380585445b1cbab8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/schemas/debate-12.schema.json": "b5ff990d41793d74aba17383020fa70ff7bd7e77de40bf1a3467d4d9dbf01766",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json": "cfc81f08f76ed60bff76dfa0b44e6317d181b6ae44a008354c0e4befb985d72a",
+    "scripts/lib/assessment-production-post-canary-batch-14-audio-attribution.mjs": "61dade86f3719174080eddfc3f739d68da5dd6c86e7a6a9894773f53c7a60203",
+    "scripts/prepare-assessment-production-post-canary-batch-14-audio-attribution.mjs": "6d0308ad9e57188fcd6b5e5edc3d148014a7594a30ed862671fe869a174cd7d0",
+    "scripts/test-assessment-production-post-canary-batch-14-audio-attribution.mjs": "cb51400a2d9edde23caea0b7ecbc8909da3ebf618df664aaa902acec77e356e2",
+    "scripts/activate-assessment-production-post-canary-batch-14-audio-attribution.mjs": "28f0820a3423c169967e69f703d71b50c7437f1a5b24198f9dc314c5dd3c397c",
+    "scripts/run-assessment-production-post-canary-batch-14-audio-attribution.mjs": "1a0c7248a2189d69919d1eac76c2123057e02c49b1d3d2417bfc106f00d9f0cb",
+    "scripts/analyze-assessment-production-post-canary-batch-14-audio-attribution.mjs": "5df33e14c83ac5ac021925ff2866707341f2edf7f8d06dd93f6f1bd59c83650d"
+  }
+}
