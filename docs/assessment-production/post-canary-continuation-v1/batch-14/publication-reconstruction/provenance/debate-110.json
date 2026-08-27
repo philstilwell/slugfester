@@ -1,55 +1,26 @@
 {
-  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-resumption-provenance",
-  "protocolId": "assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-1",
-  "originalContextIndex": 2,
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-recovery-provenance",
+  "protocolId": "assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-level-2",
   "debateNumber": "110",
-  "debateId": "tour-garte-evolution-agency-christian-faith-2025",
-  "model": {
-    "label": "5.6 Sol",
-    "slug": "gpt-5.6-sol",
-    "reasoningEffort": "low",
-    "authentication": "ChatGPT subscription"
+  "originalFailure": {
+    "status": "output-validation-failed",
+    "originalOutputPreserved": true
   },
-  "authentication": "ChatGPT subscription",
-  "originalFirstAttempt": true,
-  "priorAttemptCount": 0,
-  "attemptCount": 1,
-  "retryCount": 0,
-  "timeoutExtensionCount": 0,
-  "correctionContextCount": 0,
-  "hostAwakeGuardApplied": true,
-  "copiedInputs": {
-    "production-workflow.md": {
-      "source": "docs/assessment-production-workflow.md",
-      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"
-    },
-    "readiness-workflow.md": {
-      "source": "docs/assessment-workflow-v4.2.21.17.41.md",
-      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"
-    },
-    "output-contract.md": {
-      "source": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
-      "sha256": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728"
-    },
-    "manual.md": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/manual.md",
-      "sha256": "202e8394f218ba00f074216bedb6b869a4095a3d018c4e29337de1431ff25e06"
-    },
-    "reference-catalog.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/reference-catalog.json",
-      "sha256": "edfb962ff81a60d7400680105bd262a8670fac846d24148506abde9664bde2a4"
-    },
-    "packet.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/packets/debate-110.json",
-      "sha256": "2573c6b7224c96d3caaa95aa32eb105da7b6bce59228d1f41ca6a158da902d16"
-    },
-    "schema.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/schemas/debate-110.schema.json",
-      "sha256": "95e53b6ded68aa62d5f3652556b7897b3825816ab8cbe72b2d5b2683f68116ff"
-    }
+  "recoveryLevel1": {
+    "contexts": 1,
+    "acceptedCritiques": 1,
+    "failedAtomicContextIndexes": []
   },
-  "outputSha256": "327815cc0d398bc74be4f7d0363de0e2665ba760f896163e9c539b6fad7820d7",
-  "modelAuthoredScores": 0,
-  "meteredApiCostUsd": 0,
-  "paidServiceCallsThisStage": 0
+  "recoveryLevel2": {
+    "contexts": 0,
+    "acceptedCritiques": 0,
+    "eachUnavailableFieldAcceptedExactlyOnce": true
+  },
+  "merge": {
+    "acceptedCompanionFieldsChanged": false,
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "modelAuthoredScores": 0,
+    "completeValidationPassed": true
+  }
 }
