@@ -245,7 +245,7 @@ const selection = {
   },
   priorBatchPublicationPrerequisite: {
     required: true,
-    batchNumber: 13,
+    batchNumber: 14,
     selection: { path: PRIOR_SELECTION, bytes: controlBytes[PRIOR_SELECTION].byteLength, sha256: sha256(controlBytes[PRIOR_SELECTION]), status: priorSelection.status },
     completionExecution: { path: PRIOR_COMPLETION_EXECUTION, bytes: controlBytes[PRIOR_COMPLETION_EXECUTION].byteLength, sha256: sha256(controlBytes[PRIOR_COMPLETION_EXECUTION]), status: priorCompletionExecution.status },
     completionAnalysis: { path: PRIOR_COMPLETION_ANALYSIS, bytes: controlBytes[PRIOR_COMPLETION_ANALYSIS].byteLength, sha256: sha256(controlBytes[PRIOR_COMPLETION_ANALYSIS]), status: priorCompletionAnalysis.status },
@@ -374,7 +374,7 @@ const analysis = {
   analyzedAt: frozenAt,
   selection: { path: SELECTION, bytes: selectionBytes.byteLength, sha256: sha256(selectionBytes), status: selection.status },
   priorBatchPublication: {
-    batchNumber: 13,
+    batchNumber: 14,
     atomicCommit: PRIOR_COMPLETION_COMMIT,
     completionExecutionSha256: sha256(controlBytes[PRIOR_COMPLETION_EXECUTION]),
     completionAnalysisSha256: sha256(controlBytes[PRIOR_COMPLETION_ANALYSIS]),
