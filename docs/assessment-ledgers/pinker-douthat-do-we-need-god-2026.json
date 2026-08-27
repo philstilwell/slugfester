@@ -1,0 +1,1886 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-14-production-compatibility",
+  "status": "frozen-post-canary-batch-14-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "debateNumber": "160",
+  "debateId": "pinker-douthat-do-we-need-god-2026",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-14-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "7baf4fe24a7ecc4cb27390cc8e13f48732a0df57f5fdf903d50e900e6908c7ee",
+    "calculatedScoresSha256": "ed8f078eeea49799f702da06e80ddccaa08a233bcb6f8f09c256e45b4294762b",
+    "finalizationAuditSha256": "c98c2842130d84d4bfd0f40bd2c807ffbd269f1a0b3fbe7ef50281b8eab65943",
+    "renderingAuditSha256": "27fdcdd165acf77fe8ee5d567c47ff2b3dc536ff3dc77fbf2a1db338c1851928",
+    "finalCandidateSha256": "5aae3aa71dd4997e0b6aa68dd6c87642844c8e6f6f8f064f8efc333037f325a6",
+    "eventsPath": ".assessment-cache/captions/3jWCLONu7DM/events.json",
+    "eventsSha256": "137c5e480e232b3d1814f635e515b2fd6fe1bc0870122655f9d4c2ddfaf52bb6",
+    "finalJudgmentSha256": "182aa06be4533567c6d50bac9a88ca1128a1f9524efc109768713ba02fbfeba0"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "160",
+    "debateId": "pinker-douthat-do-we-need-god-2026",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-theistic-necessity",
+        "side": "pro",
+        "description": "Establish that belief in God supplies truth-grounded moral authority, purpose, human significance, and durable social commitments that secular reason and institutions cannot fully reproduce.",
+        "successCriteria": "Connect a credible transcendent account of reality to distinctive moral and social benefits, while showing that secular substitutes leave material gaps in obligation, meaning, solidarity, or confidence in humanity's future.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-better-off-with-god",
+          "tier": "motion",
+          "description": "Show that the distinctive truth, moral, purposive, and communal functions of belief in God make people and societies better off overall."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-transcendent-morality",
+            "tier": "central",
+            "description": "Establish that morality requires a standard beyond prevailing consensus or self-interest to ground equal worth, prophetic criticism, and restraint of power."
+          },
+          {
+            "bridgeId": "pro-central-purpose-and-significance",
+            "tier": "central",
+            "description": "Establish that a divinely ordered reality provides warranted purpose, human significance, and confidence in a shared future beyond material utility."
+          },
+          {
+            "bridgeId": "pro-central-durable-religious-order",
+            "tier": "central",
+            "description": "Establish that religious belief sustains forms of community and institutional commitment that secular civic or governmental substitutes do not fully preserve."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-rational-religious-belief",
+            "tier": "subsidiary",
+            "description": "Explain why inherited belief, religious disagreement, and scientific revision do not preclude rational commitment to fundamental religious truth claims."
+          },
+          {
+            "bridgeId": "pro-subsidiary-naturalism-limits",
+            "tier": "subsidiary",
+            "description": "Identify limits or tensions in naturalistic accounts of reason, consciousness, moral knowledge, and humanity's distinctive intellectual capacities."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-secular-sufficiency",
+        "side": "con",
+        "description": "Establish that reason centered on human flourishing can ground morality, knowledge, purpose, and cooperation, while secular institutions can preserve beneficial social practices without theological commitments.",
+        "successCriteria": "Provide workable secular foundations for moral obligation and reliable knowledge, connect them to effective institutions and historical progress, and show that religion's beneficial components are separable from disputed doctrines.",
+        "motionBridge": {
+          "bridgeId": "con-motion-secular-reason-suffices",
+          "tier": "motion",
+          "description": "Show that secular reason and institutions can provide morality, purpose, knowledge, and social cooperation at least as effectively without requiring belief in God."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-secular-morality",
+            "tier": "central",
+            "description": "Ground moral duties and equal rights in impartial consistency, reciprocal concern, conscious interests, agency, and the shared gains from cooperative conduct."
+          },
+          {
+            "bridgeId": "con-central-empirical-knowledge",
+            "tier": "central",
+            "description": "Establish empirical testing, correction, and information-processing explanations as sufficient foundations for reliable knowledge without supernatural premises."
+          },
+          {
+            "bridgeId": "con-central-secular-institutions",
+            "tier": "central",
+            "description": "Establish that public welfare, civic association, democracy, and universal human-rights institutions can deliver cooperation and moral progress at broad scale."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-disaggregate-religion",
+            "tier": "subsidiary",
+            "description": "Separate religion's community, ritual, music, and fellowship from theological, repressive, or obsolete claims so beneficial practices can be retained selectively."
+          },
+          {
+            "bridgeId": "con-subsidiary-causal-scrutiny",
+            "tier": "subsidiary",
+            "description": "Require causal evidence before attributing well-being, cohesion, polarization, or historical violence to either religious belief or secularization."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-moral-foundations",
+        "title": "Foundations of morality, obligation, and equal worth",
+        "weightPercent": 26,
+        "rationale": "The motion centrally turns on whether transcendent authority is needed to justify duties, protect equal human value, criticize accepted injustice, and restrain conduct that benefits powerful actors."
+      },
+      {
+        "sectionId": "section-community-institutions",
+        "title": "Community, welfare, and institutional cooperation",
+        "weightPercent": 21,
+        "rationale": "This issue tests whether religion provides distinctive and durable social attachment or whether civic organizations, public programs, and selectively preserved communal practices can perform the relevant functions."
+      },
+      {
+        "sectionId": "section-knowledge-truth",
+        "title": "Reason, religious truth, and naturalistic explanation",
+        "weightPercent": 20,
+        "rationale": "Competing accounts of reliable knowledge determine whether belief in God is rationally warranted and whether evolution, scientific correction, cognition, and consciousness can be explained within a secular framework."
+      },
+      {
+        "sectionId": "section-history-progress",
+        "title": "Historical violence, institutional failure, and moral progress",
+        "weightPercent": 18,
+        "rationale": "Claims about totalitarianism, religious complicity, institutional recovery, democracy, and human rights bear on which worldview can support stable improvement rather than merely inherit or cause social failures."
+      },
+      {
+        "sectionId": "section-purpose-human-significance",
+        "title": "Purpose, human significance, and confidence in the future",
+        "weightPercent": 15,
+        "rationale": "The debate also requires comparing the resources of theistic and secular worldviews for sustaining personal meaning, human distinctiveness, social hope, and commitment to future generations."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-purpose-reality-grounded-significance",
+        "sectionId": "section-purpose-human-significance",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "constructive",
+        "proposition": "Belief in God roots morality, human value, reason, and purpose in fundamental realities about the universe, while religious decline contributes to polarization and purposelessness.",
+        "sourceSpan": {
+          "startEvent": 116,
+          "endEvent": 222,
+          "excerpt": "is that it's not good for the United States or any other culture to turn away from God because God pretty self-evidently exists. It's good for human beings and human cultures to be rooted in fundamental realities about the universe. Here I agree profoundly with Dr. Pinker's view that science and reason are incredibly important ways of illuminating reality. But I think when that"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly gives Douthat the floor, and he delivers an uninterrupted opening argument through his concluding thanks.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-better-off-with-god"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This opening constructively states the theistic route by connecting God to morality, value, reason, purpose, and claimed social consequences; it has no earlier opposing target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The main thesis is recoverable, but “fundamental realities,” cultural benefit, polarization, and purposelessness cover several distinct causal and metaphysical claims without stable limits."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling God's existence self-evident and linking religious decline to broad social maladies asserts substantially more than the excerpt's compressed support establishes."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The route is intelligible, but it compresses the bridges from God's existence to grounded values and from religious decline to contemporary social outcomes."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, the move expressly advances the overall claim that cultures are better off when rooted in belief in God."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The opening presents its positive worldview rather than developing a meaningful competing interpretation that can be tested for charitable treatment."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it supplies a broad, clearly organized route touching several indispensable motion-level functions."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly calls God self-evidently real, treats rootedness in that reality as good, and links the claim to morality, reason, purpose, and culture.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-purpose-common-human-mission",
+        "sectionId": "section-purpose-human-significance",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Shared human interests provide a common mission in which science, knowledge, and reason are applied to reduce suffering, enhance flourishing, and achieve measurable human progress without reliance on God.",
+        "sourceSpan": {
+          "startEvent": 226,
+          "endEvent": 319,
+          "excerpt": "free inquiry. This gives us a common mission to apply science and knowledge to reduce suffering and enhance flourishing. We know this can make us better off because it has made us better off. We have doubled our lifespans, decimated poverty, and slashed the toll from crime, war, and accidents. No thanks to God, nor to an indifferent universe, but rather to human reason applied"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator names Pinker and reverses the opening question; Pinker then gives a sustained answer ending with an explicit conclusion and thanks.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-secular-reason-suffices"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-purpose-reality-grounded-significance"
+          ],
+          "components": [
+            {
+              "componentId": "con-purpose-common-human-mission-component-01",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether purpose and a shared human mission require grounding in God rather than common human interests.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-purpose-common-human-mission-component-02",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether secular reason can generate measurable improvements in suffering, flourishing, and social progress.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-purpose-common-human-mission-component-03",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether secular resources fully answer the opening claim about objective human value and fundamental reality.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly offers common human interests and demonstrated progress as a secular source of mission, but it does not fully answer the distinct metaphysical grounding claim about objective value."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The secular mission and outcome test are clear, though the broad attribution of multiple historical gains to human reason leaves institutional and causal scope partly compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited trends support substantial progress, but “no thanks to God” and the general causal attribution exceed what those aggregate examples alone establish."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God may ground objective purpose even if secular practices also improve material welfare.",
+          "decisiveQualification": "Material progress alone does not settle whether purpose must be metaphysically grounded."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "Specific trends in lifespan, poverty, crime, war, and accidents provide relevant support, but attribution and rival explanations are not defended in detail."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, the move directly argues that secular reason can supply purpose and measurable welfare without belief in God."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a strong partial answer because it contacts the decisive practical-purpose component while leaving the distinct reality-grounding component unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies a common secular mission and cites lifespan, poverty, crime, war, and accident trends as evidence of reason applied to flourishing.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-community-fellowship-not-faith",
+        "sectionId": "section-community-institutions",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "The positive outcomes associated with religious observance may arise from fellowship rather than faith, so societies can preserve community and social engagement through secular civic institutions without retaining theology.",
+        "sourceSpan": {
+          "startEvent": 336,
+          "endEvent": 414,
+          "excerpt": "who've been schlepped to services and to the church affairs, they're just as happy, they have just as many positive outcomes. So, a way to sum up that research is it's not the faith, it's the fellowship. So, I agree that we need more community and social engagements. And in the past, those tended to be bundled with religion, but that's not going to work going forward. The train"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator directs the correlation question to Pinker, who answers continuously until the moderator turns to Douthat for the same question.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-durable-religious-order"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-purpose-reality-grounded-significance"
+          ],
+          "components": [
+            {
+              "componentId": "con-community-fellowship-not-faith-component-01",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether beneficial social outcomes attributed to religion are caused distinctively by faith in God.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses a confound in religion-outcome claims—fellowship rather than faith—and states the consequence that secular civic association can retain the benefit."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The faith-versus-fellowship distinction is stable, but the research population and the feasibility of secular replacement are not fully scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited comparison supports fellowship as an explanation, while the prediction that religious bundling will not work going forward is less fully warranted."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious doctrine may strengthen or stabilize fellowship even if attendance supplies the immediate measured association.",
+          "decisiveQualification": "The cited comparison challenges independent faith effects but does not establish equal durability of every secular substitute."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "A relevant research result is described, yet study design, representativeness, selection effects, and evidence for future secular substitution remain compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the claim that durable religious belief distinctively supplies indispensable communal benefits."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it identifies the disputed causal premise and explains why the claimed benefit need not establish theological necessity."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts nonbelieving participants with believers, reports comparable outcomes, and explicitly concludes that fellowship rather than faith may drive the association.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-community-durable-faith",
+        "sectionId": "section-community-institutions",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Secularization accompanies wider institutional disaffiliation, anomie, and despair, whereas durable religious faith can combine pluralism with purpose and confidence in humanity's future.",
+        "sourceSpan": {
+          "startEvent": 423,
+          "endEvent": 508,
+          "excerpt": "There are also serious downsides to religious indifference, which are often manifested in anomie, drift, and despair. And it is simply the case that if you look across the developed world today, there is a strong correlation between secularization and a kind of loss of faith in human purpose and the human future, manifested most starkly in the declining birth rates that make it"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator explicitly hands the same question to Douthat, whose extended response continues without a speaker change until audience questions begin.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-durable-religious-order"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-community-fellowship-not-faith",
+            "con-purpose-common-human-mission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-community-durable-faith-component-01",
+              "targetMoveId": "con-community-fellowship-not-faith",
+              "text": "Whether secular fellowship can replace the durable purpose and social attachment historically bundled with religious faith.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-community-durable-faith-component-02",
+              "targetMoveId": "con-purpose-common-human-mission",
+              "text": "Whether secular human progress supplies durable confidence in human purpose and the future.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-community-durable-faith-component-03",
+              "targetMoveId": "con-community-fellowship-not-faith",
+              "text": "Whether observed secularization itself causes disaffiliation, anomie, despair, and declining birth rates.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply challenges replacement by associating secularization with institutional loss and diminished future confidence, but it does not establish the causal mechanism or isolate faith from confounders."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The claim is recoverable, but durable faith, loss of purpose, and developed-world secularization cover heterogeneous phenomena with only implicit qualifications."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A broad cross-national correlation and fertility proxy are used to support causal and interpretive claims without acknowledging major rival explanations."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secularization may coincide with disaffiliation while secular civic institutions can still replace particular communal functions.",
+          "decisiveQualification": "Correlation with anomie or fertility does not show that faith itself is the missing causal factor."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances the claim that religious commitment sustains community and social confidence better than secular substitutes."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The reply recognizes the substitution thesis but materially compresses its strongest causal qualification and treats association as evidence of religious durability."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive durability issue but only partially answers the empirical separability claim because correlation and causal identification remain unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly associates secularization with anomie, drift, despair, loss of purpose, and declining birth rates, presenting these as costs of religious indifference.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-knowledge-inherited-belief",
+        "sectionId": "section-knowledge-truth",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "The inherited character of religious belief does not by itself discredit it, because other fundamental commitments are also inherited and rational agents can critically examine them.",
+        "sourceSpan": {
+          "startEvent": 525,
+          "endEvent": 581,
+          "excerpt": "that people hold dear and that people base their lives and convictions upon and those include fundamental political beliefs, belief in democracy and human rights. They include sort of interpersonal beliefs, beliefs about the nature of sex or romantic love that might guide your dating life. All of these beliefs are inherited, right? And part of being a rational and serious human"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Douthat begins immediately after an audience question addressed to the religious side and provides the full answer until Pinker's intervention.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-rational-religious-belief"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-community-fellowship-not-faith",
+            "con-purpose-common-human-mission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-knowledge-inherited-belief-component-01",
+              "targetMoveId": "con-community-fellowship-not-faith",
+              "text": "The implicit inference that inherited or socially bundled religious commitments are discredited merely by their cultural transmission.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-knowledge-inherited-belief-component-02",
+              "targetMoveId": "con-purpose-common-human-mission",
+              "text": "Whether rationally held secular commitments are also inherited and subsequently open to critical examination.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses inheritance as a nondiscriminating objection because political, interpersonal, and moral commitments are likewise inherited, then preserves critical examination as the relevant test."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The limited proposition—that inheritance alone does not discredit a belief—is clear, stable, and qualified by the requirement of subsequent rational examination."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The modest conclusion that inheritance alone does not discredit a belief is proportionate to the cross-domain comparison and explicit critical-examination condition."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Inherited religious beliefs may be unusually insulated from correction even if many other beliefs are also inherited.",
+          "decisiveQualification": "Shared inheritance defeats only an automatic objection, not concerns about later evidence or revision."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within diagnostic replies, it clearly identifies the defective inheritance inference and states the defeating comparison, though the selected target raised it only indirectly."
+          }
+        },
+        "evidenceBasis": "The excerpt lists democracy, human rights, sex, and romantic love as inherited commitments and distinguishes inheritance from a rational agent's later scrutiny.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-knowledge-empirical-correction",
+        "sectionId": "section-knowledge-truth",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Because evolved human cognition does not intuit hidden truths such as DNA, the Big Bang, or tectonic plates, reliable knowledge depends on empirical verification, scientific testing, and trial-and-error correction.",
+        "sourceSpan": {
+          "startEvent": 598,
+          "endEvent": 630,
+          "excerpt": "the actual truths of, you know, DNA, the Big Bang, tectonic plates, uh, people don't have a an innate faculty for divining those truths. They get it through the scientific method, empirical verification, trial and error, and most people, most of the time, can't divine those truths, precisely because we weren't, uh, selected to, uh, appreciate, uh, hidden, uh, uh, laws of nature"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The exchange identifies Pinker's evolutionary account, and after clarifying his use of design terminology he develops the point through the end of the response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-empirical-knowledge"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-knowledge-inherited-belief",
+            "pro-purpose-reality-grounded-significance"
+          ],
+          "components": [
+            {
+              "componentId": "con-knowledge-empirical-correction-component-01",
+              "targetMoveId": "pro-knowledge-inherited-belief",
+              "text": "Whether critical examination can render inherited commitments reliable without an independent corrective method.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-knowledge-empirical-correction-component-02",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether human reason requires or evidences a divine grounding rather than evolved and empirical correction.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply explains that evolved intuition does not reveal hidden scientific truths and identifies empirical verification, testing, and correction as the reliability mechanism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between evolved intuitive capacities and method-mediated knowledge is clear, with concrete examples fixing the intended scope to hidden empirical truths."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is appropriately limited to truths for which unaided intuition is unreliable, and the examples fit the stated corrective role of science."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Inherited beliefs can still be rational when critically examined using evidence and argument.",
+          "decisiveQualification": "The need for empirical correction does not itself disprove every nonempirical or religious claim."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "DNA, cosmology, and plate tectonics are specific representative examples, with only a bounded gap concerning the broader reach beyond empirical inquiry."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly establishes empirical testing and correction as foundations for reliable secular knowledge."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply fairly identifies a reliability gap but leaves room for the bounded distinction between empirical claims and other categories of belief."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly supplies the missing epistemic mechanism and challenges reliance on intuitive or inherited access to hidden truths."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts unaided human intuition with discoveries such as DNA, the Big Bang, and tectonic plates, then names verification and trial and error.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-institutions-public-welfare-scale",
+        "sectionId": "section-community-institutions",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Government can perform welfare and justice functions at a scale unavailable to private religious charities, and public social spending has consequently contributed to a substantial decline in American poverty.",
+        "sourceSpan": {
+          "startEvent": 656,
+          "endEvent": 687,
+          "excerpt": "functions of religion, such as, uh, with criminal justice, such as social welfare. And is that a good thing? Absolutely, it's a good thing because there's simply no comparison between the scale of what a government can do and what the the scale of any private charities including religious charities can do. As a result of um uh government uh social spending, there's been a massive decline in American poverty"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Pinker explicitly separates the government portion of the moderator's question and develops it until the moderator redirects the discussion toward political tribalism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-secular-institutions"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-community-durable-faith"
+          ],
+          "components": [
+            {
+              "componentId": "con-institutions-public-welfare-scale-component-01",
+              "targetMoveId": "pro-community-durable-faith",
+              "text": "Whether religious institutions provide social functions that secular public institutions cannot adequately replace at scale.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly compares governmental and religious-charity scale, identifies welfare and justice functions, and cites poverty decline as the claimed public result."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The scale comparison and welfare claim are clear, though “massive decline” and government's causal share are not temporally or methodologically delimited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Government's greater aggregate scale is well matched to the institutional claim, but the categorical comparison and poverty attribution require additional qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious institutions may deliver relational or local benefits that aggregate government spending does not reproduce.",
+          "decisiveQualification": "Greater scale establishes capacity for broad welfare, not equivalence across every communal function."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supports secular institutions as capable of delivering welfare and justice functions at broad scale."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply fairly answers public-welfare capacity but only implicitly preserves the distinction between aggregate provision and relational community."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it expressly contacts institutional substitution and offers a concrete scale mechanism plus an outcome claim."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly compares government with private religious charity, names criminal justice and welfare, and attributes declining poverty to public social spending.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-history-conflict-not-uniquely-religious",
+        "sectionId": "section-history-progress",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Religion is not uniquely responsible for tribal conflict because wars commonly concern land, power, and resources, and modern fascist and communist ideologies also produced ruinous wars.",
+        "sourceSpan": {
+          "startEvent": 731,
+          "endEvent": 757,
+          "excerpt": "been fought over much more basic differences over land and, you know, power and sort of secular material concerns, resources, and so on. And if you go forward to the 20th century, it is obviously the case that the most ruinous wars were occasioned by fascism and Soviet communism, which were, again, su- sort of quasi-religious substitutes for um for sort of religious views about"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Douthat takes the floor after Pinker's polarization claim and presents a continuous historical counterargument until the moderator introduces the next question.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-causal-scrutiny"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-purpose-common-human-mission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-history-conflict-not-uniquely-religious-component-01",
+              "targetMoveId": "con-purpose-common-human-mission",
+              "text": "Whether secular reason has a uniquely favorable historical record relative to religion in organizing common human purposes.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply rejects unique religious causation by pointing to material motives and destructive modern secular ideologies, but it does not defeat the positive secular-progress evidence itself."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The non-uniqueness proposition is clear, but most terrible wars and quasi-religious substitutes are broad and partly unstable historical categories."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Sweeping claims about most wars and the ideological character of fascism and communism are asserted from selected examples without causal qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious identity can intensify conflict even where land, power, and resources are also involved.",
+          "decisiveQualification": "Multiple material causes do not eliminate religion as a contributing or amplifying cause."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The examples undermine uniqueness, but treating fascism and communism as both secular and quasi-religious introduces ambiguity into the comparative inference."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "Land, power, resources, fascism, and communism are relevant examples, but representativeness and causal comparison are asserted rather than demonstrated."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "Within the subsidiary tier, it materially supports causal scrutiny of claims attributing historical violence uniquely to religion."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The rebuttal correctly targets uniqueness, although it does not fully engage the stronger comparative-amplification version of the concern."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "Within relevant nonanswers and partial replies, it bears on comparative historical causation without directly answering the earlier welfare-and-purpose mechanism."
+          }
+        },
+        "evidenceBasis": "The excerpt attributes many wars to land, power, and resources and cites fascism and Soviet communism as causes of especially ruinous modern conflicts.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-history-totalitarianism-irrational",
+        "sectionId": "section-history-progress",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Nazism and Marxism do not demonstrate the failure of reason because their false, unfalsifiable, and destructive doctrines are condemnable by rational inquiry joined with concern for human well-being.",
+        "sourceSpan": {
+          "startEvent": 824,
+          "endEvent": 866,
+          "excerpt": "20th century due to Nazism were not because Nazism was rational, quite the opposite. It had a number of obviously mistaken and monstrous beliefs, and it is by the lights of rationality combined with um uh concern with human well-being that we can judge it as having been a disaster. I I don't think that our problem now is that we have too much empathy. I think that the the uh uh"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "After a short clarification with the audience questioner, Pinker gives a sustained answer extending through his rational defense of empathy and compassion.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-causal-scrutiny"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-history-conflict-not-uniquely-religious"
+          ],
+          "components": [
+            {
+              "componentId": "con-history-totalitarianism-irrational-component-01",
+              "targetMoveId": "pro-history-conflict-not-uniquely-religious",
+              "text": "Whether fascist and communist atrocities demonstrate that secular reason itself produces ruinous conflict.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses the inference as invalid because Nazi doctrines were false and irrational, then states rationality plus concern for welfare as the standard of condemnation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move consistently distinguishes ideological secularism from rationality and specifies the combined evaluative standard of evidence and human well-being."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The categorical claim is appropriately confined to whether plainly false, unfalsifiable, destructive doctrines instantiate rational inquiry rather than secularism generally."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular movements can become dogmatic and destructive even without claiming to embody genuine rationality.",
+          "decisiveQualification": "That institutional risk remains, but it does not establish that rational standards license their false doctrines."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it strongly advances causal scrutiny by rejecting attribution of totalitarian atrocities to reason merely because regimes were nonreligious."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it directly identifies the equivocation between secular ideology and rational inquiry and gives the defeating consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt characterizes Nazi beliefs as mistaken and monstrous and explicitly invokes rationality combined with concern for well-being as the basis for judgment.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-history-nazism-pagan-aims",
+        "sectionId": "section-history-progress",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Institutional Christian complicity with Nazism does not establish Nazism as a Christian project because its animating commitments and ultimate aims were pagan and anti-Christian.",
+        "sourceSpan": {
+          "startEvent": 885,
+          "endEvent": 904,
+          "excerpt": "are separate These are separate questions though. I want to Nazism was was not a secular ideology. That much is true. And Christian churches in various situations made a lot of very unwise and morally disastrous deals with Nazism. That said, the animating theology of Nazism was pagan and I would say satanic. And Hitler's ultimate goal, which you can read about in his table talk"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn directly answers Pinker's remarks about Nazi religious affiliations and advances Douthat's characteristic theistic argument.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-causal-scrutiny"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-history-totalitarianism-irrational"
+          ],
+          "components": [
+            {
+              "componentId": "pro-history-nazism-pagan-aims-component-01",
+              "targetMoveId": "con-history-totalitarianism-irrational",
+              "text": "Whether Nazi institutional ties to Christianity make Nazism evidence against Christianity or religious belief.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply concedes Christian institutional complicity but distinguishes that fact from Nazism's animating commitments and ultimate anti-Christian aims."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The complicity-versus-project distinction is clear, but “pagan” and especially “satanic” are evaluative theological labels with unstable analytic content."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical characterization of Nazism's animating theology and Hitler's ultimate goal rests on a brief assertion and contested historical material."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Christian institutions and inherited antisemitism may have materially enabled Nazism even if Nazi ultimate aims were anti-Christian.",
+          "decisiveQualification": "Enablement and ideological identity are separate questions, and the move concedes only the former."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The reply squarely acknowledges disastrous Christian deals while preserving the decisive distinction between complicity and the regime's ultimate project."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly separates complicity from ideological identity and states why the former does not settle the latter."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes morally disastrous Christian accommodations, then characterizes Nazism's animating theology as pagan and invokes Hitler's reported ultimate goals.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-history-universal-rights-progress",
+        "sectionId": "section-history-progress",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "The postwar influence of the Universal Declaration of Human Rights on national constitutions, together with the longer rise of democracy and universal secular values, demonstrates the capacity of secular institutions to support moral progress.",
+        "sourceSpan": {
+          "startEvent": 916,
+          "endEvent": 943,
+          "excerpt": "He had to be something. Now, um we've seen since then a an uneven rise in democracy, drooping somewhat in the last 10 or 15 years, but the um the Universal Declaration of Human Rights was the basis for a dozens of national constitutions. But if you look at the overall trend since since 1945, there has certainly has been a rise of uh democracy and um universal secular values"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Pinker begins the historical response and continues it after brief interruptions concerning a drafter's Catholic identity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-secular-institutions"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-history-nazism-pagan-aims",
+            "pro-history-conflict-not-uniquely-religious"
+          ],
+          "components": [
+            {
+              "componentId": "con-history-universal-rights-progress-component-01",
+              "targetMoveId": "pro-history-nazism-pagan-aims",
+              "text": "Whether postwar moral recovery required specifically Christian commitments rather than universal secular institutions.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-history-universal-rights-progress-component-02",
+              "targetMoveId": "pro-history-conflict-not-uniquely-religious",
+              "text": "Whether secular political development can support durable progress despite destructive secular ideologies.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply points to the Universal Declaration's constitutional influence and the postwar rise of democracy and universal secular values as positive institutional evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The historical trend and institutional mechanism are recoverable, but “universal secular values” remains broad; the move expressly notes unevenness and recent decline."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move acknowledges uneven democratic progress and recent backsliding, fitting its evidence to a trend claim rather than asserting uninterrupted improvement."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious thinkers and traditions may have contributed materially to universal-rights language and postwar institutions.",
+          "decisiveQualification": "Mixed intellectual origins do not prevent the resulting rights framework from functioning as a universal public institution."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supports the capacity of secular public institutions to promote rights and democratic moral progress."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it supplies a concrete postwar counterexample, though it does not fully resolve the religious contribution to the declaration's origins."
+          }
+        },
+        "evidenceBasis": "The excerpt cites the Universal Declaration as a basis for numerous constitutions and explicitly qualifies the postwar rise of democracy as uneven and recently drooping.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-community-failure-and-recovery",
+        "sectionId": "section-community-institutions",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Recurring cruelty, scandal, laxity, and politicization do not settle religion's institutional value because biblical religion anticipates cycles of apostasy, disaster, and restoration.",
+        "sourceSpan": {
+          "startEvent": 953,
+          "endEvent": 1009,
+          "excerpt": "totally to the spirit of the age, so that no one has a reason to go to church. Sometimes by having scandals. Sometimes by getting enmeshed with politics. Institutional religion is always failing. And then it's always recovering, right? And one of the useful things about being a Christian, though this also applies to our elder brothers in faith, the Jews, is that this is clearly"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator yields the floor to Douthat, whose first-person Christian framing and scriptural examples identify the speaker clearly.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-durable-religious-order"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-history-universal-rights-progress",
+            "con-community-fellowship-not-faith",
+            "con-institutions-public-welfare-scale"
+          ],
+          "components": [
+            {
+              "componentId": "pro-community-failure-and-recovery-component-01",
+              "targetMoveId": "con-history-universal-rights-progress",
+              "text": "Whether secular democracy and universal-rights institutions provide evidence of durable moral and institutional progress.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-community-failure-and-recovery-component-02",
+              "targetMoveId": "con-community-fellowship-not-faith",
+              "text": "Whether recurring religious institutional failure defeats the value or durability of religion itself.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-community-failure-and-recovery-component-03",
+              "targetMoveId": "con-institutions-public-welfare-scale",
+              "text": "Whether government can provide welfare functions at greater scale than religious charity.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply provides a theology of religious failure and recovery, which answers a broader institutional objection but does not contact the primary historical evidence about secular rights progress."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The cycle-of-failure-and-restoration claim is clear, though “always recovering” generalizes across institutions and periods without explicit scope limits."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Biblical recurrence supports an internal expectation of restoration but does not warrant the categorical empirical claim that institutional religion always recovers."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Recurring scandals and politicization may reveal structural defects rather than temporary apostasy.",
+          "decisiveQualification": "A tradition's narrative resources for repentance do not demonstrate that actual institutional recovery will occur."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "Biblical cycles and listed failure modes illustrate the framework, while the general recovery claim lacks representative historical comparison or outcome evidence."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 69,
+            "rationale": "It is a relevant nonanswer to the primary target while contacting a secondary issue about whether recurring religious failure is necessarily terminal."
+          }
+        },
+        "evidenceBasis": "The excerpt lists laxity, scandal, and politicization, then invokes the biblical pattern of apostasy, disaster, and restoration to interpret institutional recurrence.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-morality-impartial-reciprocity",
+        "sectionId": "section-moral-foundations",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Secular moral duties follow from recognizing that one's interests are not uniquely privileged, consistently accepting for oneself the protections demanded from others, and sustaining mutually beneficial norms against harm and neglect.",
+        "sourceSpan": {
+          "startEvent": 1019,
+          "endEvent": 1071,
+          "excerpt": "think of plenty of secular reasons to do it. Namely, I would not want to be left to starve or drown or die of lack of blood. I would not want to be the victim of murder or rape or robbery. There's nothing special about me, and therefore what I demand of everyone else, I have to accept for myself. Both for sheer consistency, for my identity as a moral person in negotiations with"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Pinker answers in his own secular framework, explicitly concluding that God is unnecessary to the moral reasoning he describes.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-secular-morality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-purpose-reality-grounded-significance"
+          ],
+          "components": [
+            {
+              "componentId": "con-morality-impartial-reciprocity-component-01",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether moral obligation requires God as its grounding source rather than secular consistency and reciprocal concern.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly supplies a secular derivation: equal standing defeats special pleading, consistency universalizes demanded protections, and reciprocity supports cooperative norms."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly distinguishes consistency, equal standing, moral identity, and reciprocal negotiation, with concrete harms fixing the scope of the duties claimed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Given equal standing and reciprocal moral practice, the rejection of self-exemption follows with force proportionate to the stated premises."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Consistency can constrain agents only after they already accept equal moral standing and reasons to care about others.",
+          "decisiveQualification": "The move supplies a secular derivation of reciprocity but does not fully ground why every powerful amoral agent must accept its premises."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "Concrete cases of starvation, violence, and predation illustrate the universalization test, though empirical compliance and hard counteragents are not examined."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly grounds secular moral duties in impartial consistency, reciprocal concern, and cooperative protection."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The argument fairly addresses divine necessity while leaving visible the strongest metaethical qualification about motivation and premise acceptance."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the need-for-God premise and provides a worked alternative account of duties against serious harms."
+          }
+        },
+        "evidenceBasis": "The excerpt lists harms the speaker would reject for himself and argues that nothing makes his interests special, requiring consistent reciprocal acceptance of norms.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-morality-transcendent-standard",
+        "sectionId": "section-moral-foundations",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Religion supplies a moral standard outside prevailing social norms, enabling prophetic criticism of accepted injustice and giving powerful beneficiaries reasons to restrain exploitation.",
+        "sourceSpan": {
+          "startEvent": 1073,
+          "endEvent": 1149,
+          "excerpt": "some kind of moral code with some of the practical benefits that Dr. Pinker mentioned. People like to live under orderly conditions. Yes, where they're not randomly killed on the street. Yes, that's absolutely true. So, what does religion add to that? Well, first, it adds a point of reference that is outside the norms of your particular society, right? A reason to stand outside"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Douthat explicitly contrasts what religion adds with Pinker's preceding account and uses historical and metaphysical arguments associated with his side.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-transcendent-morality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-morality-impartial-reciprocity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-morality-transcendent-standard-component-01",
+              "targetMoveId": "con-morality-impartial-reciprocity",
+              "text": "Whether impartial reciprocity adequately grounds criticism of accepted injustice and restraint by powerful beneficiaries.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply concedes practical mutual benefits but identifies two alleged residual needs: an external standpoint for prophetic criticism and reasons binding advantaged exploiters."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly distinguishes orderly mutual benefit from external moral criticism and from obligations applying against the interests of powerful actors."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The identified challenge is strong, but the conclusion that religion supplies the required binding standard is asserted more fully than its truth or accessibility is defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular impartiality can criticize prevailing norms and deny that power creates moral privilege.",
+          "decisiveQualification": "The remaining challenge is explaining the categorical authority and motivation of that impartial standpoint."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The distinction between prudential order and categorical criticism is explicit and important, with the bridge from an external standard to religion left partly implicit."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances transcendent morality as necessary for prophetic criticism, equal worth, and restraint of power."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The reply fairly grants secular order and reciprocity but gives limited treatment to stronger secular external-standard alternatives."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the secular account's decisive premises and isolates specific cases where mutual advantage may be insufficient."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes orderly conditions and practical benefits, then explicitly asks what religion adds and identifies a point of reference outside prevailing norms.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-truth-fundamental-religious-claims",
+        "sectionId": "section-knowledge-truth",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Religions may revise secondary interpretations in light of science, but warranted commitment ultimately depends on the truth of their fundamental and potentially falsifiable claims.",
+        "sourceSpan": {
+          "startEvent": 1206,
+          "endEvent": 1246,
+          "excerpt": "claims that are fundamental and certain things that are secondary and a religion where secondary issues are challenged or complicated by scientific findings or public argument can survive. But if Dr. Pinker and I could take a time machine back to 1st century Judaea and observe that the empty tomb was not empty and that there was some purely naturalistic explanation for what happened at Easter, then my Christian faith"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Douthat speaks explicitly as a Christian, distinguishes Genesis interpretation from the resurrection, and describes what would defeat his own faith.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-rational-religious-belief"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-knowledge-empirical-correction"
+          ],
+          "components": [
+            {
+              "componentId": "pro-truth-fundamental-religious-claims-component-01",
+              "targetMoveId": "con-knowledge-empirical-correction",
+              "text": "Whether religious belief can remain rationally corrigible under scientific testing and contrary evidence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply distinguishes revisable secondary interpretations from fundamental truth claims and gives a clear hypothetical observation that would defeat Christianity."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The fundamental-versus-secondary distinction and the resurrection counterfactual make the proposition, scope, and evidentiary qualification unusually clear."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move does not claim the fundamental event is proven here; it states the conditional evidentiary structure and expressly acknowledges a defeating possibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religions may protect core claims by revising peripheral interpretations whenever evidence conflicts.",
+          "decisiveQualification": "The resurrection counterfactual supplies a genuine core-level defeater, though practical access to decisive historical evidence remains difficult."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it very directly supports rational religious belief by explaining correction, revision, and potential falsification."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts falsifiability and correction by stating both what may be revised and what evidence would overturn the core commitment."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes fundamental claims from secondary interpretations and states that observing a naturally explained nonempty tomb would defeat Christian faith.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-knowledge-information-processing",
+        "sectionId": "section-knowledge-truth",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "The creation of artificial intelligence in silicon supports the view that intelligence depends on algorithms and information processing rather than an immaterial substance, weakening an inference from human cognition to God.",
+        "sourceSpan": {
+          "startEvent": 1290,
+          "endEvent": 1329,
+          "excerpt": "human intelligence is proof of the existence of God is quite gratuitous. Uh particularly and if anything, the ability to create artificial intelligence out of silicon shows that intelligence does not depend on some immaterial substance. It depends on information processing. It depends on algorithms. This has been the dominant theory within cognitive science of what makes humans"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Pinker explicitly challenges Douthat's design inference and develops the cognitive-scientific account of algorithms and information processing.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-naturalism-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-truth-fundamental-religious-claims",
+            "pro-purpose-reality-grounded-significance"
+          ],
+          "components": [
+            {
+              "componentId": "con-knowledge-information-processing-component-01",
+              "targetMoveId": "pro-truth-fundamental-religious-claims",
+              "text": "Whether human intelligence or cognition supplies positive evidence for an immaterial substance or God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-knowledge-information-processing-component-02",
+              "targetMoveId": "pro-purpose-reality-grounded-significance",
+              "text": "Whether reason must be grounded in a divine reality rather than natural information processing.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly challenges the design inference and offers artificial intelligence in silicon as contrary evidence for algorithmic, material information processing."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The algorithmic claim is clear, but intelligence and immaterial substance cover contested phenomena, especially consciousness rather than task competence alone."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Silicon computation weakens a simple immaterial-substance inference, but it does not by itself settle consciousness or every aspect of human intelligence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Human consciousness, intentionality, or rational normativity may remain unexplained even if some intelligent performance is algorithmic.",
+          "decisiveQualification": "Artificial intelligence challenges necessity of immaterial substance for performance but does not fully resolve consciousness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the inference from intelligence to God and supplies a concrete naturalistic countermodel."
+          }
+        },
+        "evidenceBasis": "The excerpt calls the inference from human intelligence to God gratuitous and cites silicon AI, algorithms, and information processing as a competing explanation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-morality-agency-equal-rights",
+        "sectionId": "section-moral-foundations",
+        "side": "con",
+        "speaker": "Steven Pinker",
+        "moveKind": "reply",
+        "proposition": "Consciousness and agency provide secular grounds for equal human rights, leaving no defensible basis for exploiting or discriminating against women and requiring contrary religious or cultural dogmas to be discarded.",
+        "sourceSpan": {
+          "startEvent": 1469,
+          "endEvent": 1482,
+          "excerpt": "it, one has to set aside various religious dogmas and simply reason your way to what does confer human rights, such as consciousness, such as agency, and in doing that, one comes to the conclusion that there are simply no defensible grounds for discriminating against or exploiting women. One has to slough off the religious dogma that got in the way of that or the cultural dogma"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Pinker answers the moderator's question and uses his established secular criteria of consciousness, agency, rights, and rational justification.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-secular-morality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-morality-transcendent-standard"
+          ],
+          "components": [
+            {
+              "componentId": "con-morality-agency-equal-rights-component-01",
+              "targetMoveId": "pro-morality-transcendent-standard",
+              "text": "Whether equal rights require a religiously transcendent standard rather than secular criteria of consciousness and agency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply supplies consciousness and agency as secular grounds for rights and argues that religious or cultural dogmas permitting exploitation must yield to those reasons."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The rights criteria and conclusion regarding women are clear, though the threshold and relationship between consciousness, agency, and equal status remain implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The anti-discrimination conclusion is strongly supported within the stated moral framework, while the sufficiency and extension of consciousness and agency need qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Religious doctrines can ground equal dignity and have also motivated resistance to exploitation.",
+          "decisiveQualification": "Some religious or cultural dogmas have opposed equality, but that does not characterize every religious account of dignity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "Equal consciousness and agency provide a coherent anti-discrimination basis, though the move leaves the ultimate norm linking those properties to equal rights implicit."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly grounds equal rights and duties in secular agency and consciousness rather than theological authority."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The reply targets obstructive dogmas fairly but compresses reformist religious alternatives and difficult applications of its secular criteria."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it expressly contacts equal worth and discrimination, offering an alternative criterion and a practical defeating consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt names consciousness and agency as rights-conferring features and concludes that no defensible basis remains for exploiting or discriminating against women.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule independently of the individual move ratings, response links, importance judgments, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured pro burden-completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence remains after ordinary move-level assessment.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the alleged residual would not change burden completion beyond effects already represented in move judgments."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule independently of the individual move ratings, response links, importance judgments, and burden relevance findings.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured con burden-completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence remains after ordinary move-level assessment.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the alleged residual would not change burden completion beyond effects already represented in move judgments."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-moral-foundations",
+        "title": "Foundations of morality, obligation, and equal worth",
+        "weightPercent": 26,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "pro-morality-transcendent-standard",
+                "importance": 3,
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-morality-impartial-reciprocity",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-morality-agency-equal-rights",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-community-institutions",
+        "title": "Community, welfare, and institutional cooperation",
+        "weightPercent": 21,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "pro-community-durable-faith",
+                "importance": 3,
+                "score": 72
+              },
+              {
+                "moveId": "pro-community-failure-and-recovery",
+                "importance": 2,
+                "score": 72
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-community-fellowship-not-faith",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "con-institutions-public-welfare-scale",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-knowledge-truth",
+        "title": "Reason, religious truth, and naturalistic explanation",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-knowledge-inherited-belief",
+                "importance": 2,
+                "score": 85
+              },
+              {
+                "moveId": "pro-truth-fundamental-religious-claims",
+                "importance": 2,
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-knowledge-empirical-correction",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "con-knowledge-information-processing",
+                "importance": 3,
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-history-progress",
+        "title": "Historical violence, institutional failure, and moral progress",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-history-conflict-not-uniquely-religious",
+                "importance": 2,
+                "score": 74
+              },
+              {
+                "moveId": "pro-history-nazism-pagan-aims",
+                "importance": 2,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-history-totalitarianism-irrational",
+                "importance": 2,
+                "score": 87
+              },
+              {
+                "moveId": "con-history-universal-rights-progress",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-purpose-human-significance",
+        "title": "Purpose, human significance, and confidence in the future",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-purpose-reality-grounded-significance",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-purpose-common-human-mission",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 80.35,
+        "burdenCompletionAdjustment": 0,
+        "score": 80
+      },
+      "con": {
+        "weightedSectionMean": 85.45,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 5
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 17,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
