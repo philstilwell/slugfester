@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2428,
+  "ledgerBytes": 143403,
+  "ledgerSha256": "59337de36780314c1451b34df74188c0739e58675075b38bae21d2e8fe5224d4",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52271,
+      "contextSha256": "6fb9460fb5f69ddc80d89a81066d5f0c243b9c2ad90f7fb7491940be36e012e2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53629,
+      "contextSha256": "6d83b2b18bb31021b55ec6c7f6a00f91943e6a843b1a611abe0f335e804db3a8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2427,
+      "coreEvents": 748,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2427,
+      "contextEvents": 788,
+      "contextBytes": 47002,
+      "contextSha256": "7168dcbcd907b10fc401e0f7039e8018afdec5ff45beebc4989c10c5f9cb29dc"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2427,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "57",
+  "debateId": "scrivener-dillahunty-atheism-morality-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

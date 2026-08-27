@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-source-preparation",
+  "debateNumber": "133",
+  "debateId": "hawkins-folley-free-will-idealism-2026",
+  "motion": "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
+  "sides": {
+    "pro": {
+      "label": "Libertarian idealism",
+      "speakers": [
+        "Nathan Hawkins"
+      ]
+    },
+    "con": {
+      "label": "Compatibilist pragmatism",
+      "speakers": [
+        "Joe Folley"
+      ]
+    }
+  },
+  "durationSeconds": 7175,
+  "eventCount": 3276,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/OSXawgwSZQs/transcript.txt",
+    "transcriptSha256": "983dfe6da87ddc08124eec2f136b7822b786e544d8bdb6d961eb477cd770bcfa",
+    "eventsPath": ".assessment-cache/captions/OSXawgwSZQs/events.json",
+    "eventsSha256": "7d0f72e27b04551be2534d73b2d9ed6ed48273d1b931b42b7ba9ed942f79f1ef",
+    "localManifestPath": ".assessment-cache/captions/OSXawgwSZQs/manifest.json",
+    "localManifestSha256": "aaa76757a46dfb2dcf1ac1e31831265ce6bf97aded8dc43abc49f2692ceaf36d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-14/debate-133.jsonl",
+    "sourceLedgerSha256": "41acaf596a69aae2e36249763bd49e23deabc45d762801bc8ebc871f0384f2be",
+    "sourceLedgerBytes": 191353,
+    "sourceLedgerEventCount": 3276,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/source-preparation/plans/debate-133.json",
+    "partitionPlanSha256": "9c005aaaf58b7da0ab06e74f5eaefc22a03ec022b5b33a3cee3cada8f49b72a2",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1798,
+  "ledgerBytes": 101305,
+  "ledgerSha256": "51b532b0204c62056e98e73f853f473655ec739fb9d27af8223b15e1989a70c7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50055,
+      "contextSha256": "74fbc85c278b62ad47337b0761d15d8f0b4cf9e86c7a427a3d9b61ab18eec23a"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51173,
+      "contextSha256": "f6712317e377d52348d893257b1c719582064873e38e04b70de015efe124b644"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1797,
+      "coreEvents": 118,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1797,
+      "contextEvents": 158,
+      "contextBytes": 9104,
+      "contextSha256": "f542f3f0435c58f27b404ef34b11091efee70845ed8444e2efbd7a5ced31d792"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1797,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "110",
+  "debateId": "tour-garte-evolution-agency-christian-faith-2025",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

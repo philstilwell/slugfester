@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-source-preparation",
+  "debateNumber": "55",
+  "debateId": "craig-malpass-kalam-nothing-2026",
+  "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+  "sides": {
+    "pro": {
+      "label": "Kalam defender",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Kalam critic",
+      "speakers": [
+        "Alex Malpass"
+      ]
+    }
+  },
+  "durationSeconds": 5355,
+  "eventCount": 2471,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+    "transcriptSha256": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+    "eventsPath": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+    "eventsSha256": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+    "localManifestPath": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+    "localManifestSha256": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-14/debate-55.jsonl",
+    "sourceLedgerSha256": "08526df514b464df4497899f29154735e637953eeceeb47bae11c8c04a523091",
+    "sourceLedgerBytes": 134313,
+    "sourceLedgerEventCount": 2471,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/source-preparation/plans/debate-55.json",
+    "partitionPlanSha256": "7ecded6c6cd7379875dd6b22a5cb7220c1a4fd8d39a096fe32eaa946fb623b0e",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

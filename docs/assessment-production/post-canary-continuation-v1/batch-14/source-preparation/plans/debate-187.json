@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1837,
+  "ledgerBytes": 107896,
+  "ledgerSha256": "d8dd656af9c727d35a683e0a068bb8f4d9e6dd45288f22c1fc84d5c3fd919146",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52292,
+      "contextSha256": "e6e30c75ad7aeaefb6577269005e7edbe714fe0098cd5132925f43672463d3ea"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53359,
+      "contextSha256": "15d9b32f6f1ef1b922884b0d7e1a3776da6928a75c276c39cf1a0216f962c02f"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1836,
+      "coreEvents": 157,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1836,
+      "contextEvents": 197,
+      "contextBytes": 11657,
+      "contextSha256": "e06df72197fcf9877a1cad9adc453c8bce9ab9ead25aaaa315c306ca754ce301"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1836,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "187",
+  "debateId": "ward-dennett-more-than-matter-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

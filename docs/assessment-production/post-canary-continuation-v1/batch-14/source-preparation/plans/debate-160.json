@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1544,
+  "ledgerBytes": 85344,
+  "ledgerSha256": "8705a04d25c480cdd61bf1db03a2d39b6f83750d4c76ca6fb69e03766537c3e9",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49246,
+      "contextSha256": "401d75a0cb4114d2bc75b1b475851517862e4bbcba3566995cbc6129dbc8c10f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1543,
+      "coreEvents": 684,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1543,
+      "contextEvents": 724,
+      "contextBytes": 40495,
+      "contextSha256": "e6d6844e7e34ca47932c58a0a26272ad74c188e57f107e7b9a6cae843ff34a88"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1543,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "160",
+  "debateId": "pinker-douthat-do-we-need-god-2026",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

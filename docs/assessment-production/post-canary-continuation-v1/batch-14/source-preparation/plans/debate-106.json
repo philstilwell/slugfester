@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1295,
+  "ledgerBytes": 75754,
+  "ledgerSha256": "01a6c9358fd363b29f992e7e535d59b05c8a236c6653d0426d2e75221c61988a",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52287,
+      "contextSha256": "b3e34646e943c3114a5f88cced60f7fa4a6a9bb9383f30d2ad27990445816ff0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1294,
+      "coreEvents": 435,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1294,
+      "contextEvents": 475,
+      "contextBytes": 28178,
+      "contextSha256": "16f9247d751ae10a4e460245e5995678eab6d0c66bde666a965e1a178bcafdd2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1294,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "106",
+  "debateId": "peterson-blackmore-god-meaning-life-2018",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

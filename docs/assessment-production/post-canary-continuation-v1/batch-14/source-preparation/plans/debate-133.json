@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3276,
+  "ledgerBytes": 191353,
+  "ledgerSha256": "41acaf596a69aae2e36249763bd49e23deabc45d762801bc8ebc871f0384f2be",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51566,
+      "contextSha256": "67dbc2c8aea63d8279283427965e363993dd9188613d29cb3a251f970116e2c1"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52951,
+      "contextSha256": "ae31d045bb61463358b5840c5c948ceb0ea9419acef8f9df6f383ce16e1d8160"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53190,
+      "contextSha256": "db93f81768e3a75114c4875a6ed2f12798e8f4951f4dbb25cb04fa76a4e57ccd"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3275,
+      "coreEvents": 776,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3275,
+      "contextEvents": 816,
+      "contextBytes": 47819,
+      "contextSha256": "0edf596dc673c32e8c859c426ba19bb1d4a3eddd7b387daed5de940afab11d90"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3275,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "133",
+  "debateId": "hawkins-folley-free-will-idealism-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

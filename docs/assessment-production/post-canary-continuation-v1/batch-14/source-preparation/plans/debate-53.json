@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3546,
+  "ledgerBytes": 195757,
+  "ledgerSha256": "d788d77cf986f730218ee6fa0443b262306d978372b7d53531a21575e487f2ff",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47990,
+      "contextSha256": "c03831d73c99c050a31a1c4a3018b36f9442c7007c950dff36d6d1025b717c5e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48491,
+      "contextSha256": "506626cbc544a2db8b6643881f5c67a66588b4e636d52217b360d01c163ae4e2"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50424,
+      "contextSha256": "326b7fae34d52da503eea105ffa8b5065df6a67a526964871d70ef54540d0e17"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 51243,
+      "contextSha256": "0f45272358eef524b1c1dae5aaabe10254921157f3186d4a0c3f033835cd526d"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3545,
+      "coreEvents": 226,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3545,
+      "contextEvents": 266,
+      "contextBytes": 14966,
+      "contextSha256": "80db509d554471f6e1e153ab42cc067513e7a88454e85df58c92d779534aa256"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3545,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "53",
+  "debateId": "oconnor-dsouza-bible-true-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1916,
+  "ledgerBytes": 106602,
+  "ledgerSha256": "e3778e89881434846dc3a9b8ef58e5f22b4e533828d3dfdb8bf78eb00a688116",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48998,
+      "contextSha256": "e7be9523ce9a57a34c43f341666dd0f6d86cdb1641f233aebafd7cf4633ba80b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50853,
+      "contextSha256": "cb5c603971f32dad0c1029a53373f30a30f7f35bef84e3e103ff46ea7c5ff700"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1915,
+      "coreEvents": 236,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1915,
+      "contextEvents": 276,
+      "contextBytes": 15379,
+      "contextSha256": "a5822f48590dcc9176ddc3d20277e742bae0f96e941b39db9a23787ea1265de6"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1915,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "12",
+  "debateId": "settecase-jump-evidence-for-god-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
