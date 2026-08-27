@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-independent-judgment-analysis",
+  "protocolId": "assessment-production-post-canary-batch-15-independent-judgments",
+  "status": "post-canary-batch-15-independent-judgment-gate-failed-analysis-only",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "execution": {
+    "contextsPlanned": 20,
+    "contextsAttempted": 3,
+    "contextsUnattempted": 17,
+    "validContexts": 2,
+    "invalidContexts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "rampPhases": [
+      {
+        "phase": "operational-canary-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-27T23:37:56.850Z",
+        "completedAt": "2026-08-27T23:42:20.623Z",
+        "attemptedContextIndexes": [
+          0
+        ],
+        "validContextIndexes": [
+          0
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "ramp-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-27T23:42:20.623Z",
+        "completedAt": "2026-08-27T23:57:20.622Z",
+        "attemptedContextIndexes": [
+          1,
+          2
+        ],
+        "validContextIndexes": [
+          2
+        ],
+        "passed": false,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "steady-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "expansionRequiresAllValid": false,
+        "startedAt": null,
+        "completedAt": null,
+        "attemptedContextIndexes": [],
+        "validContextIndexes": [],
+        "passed": false,
+        "skippedBecausePriorRampFailed": true
+      }
+    ],
+    "maximumParallelContextsObserved": 2,
+    "wallElapsedMs": 1163772,
+    "modelWorkElapsedMs": 1361739,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "39",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 263312,
+      "moves": 23,
+      "judgmentSha256": "436a945f89f872ce81140225ed338cad92e7c78219763dc8ee0c2f08b7356fab",
+      "rawOutputSha256": "0bff5a18bd24a6fcd001358f35e7486d26eb843552ba8d812a8e49056be89130",
+      "lockedInventorySha256": "8c3e6a588397b631d063d790192479feff8a92b6a175bfbb0721ac8b15dc587d",
+      "mediumConfidenceMoves": [
+        "pro-exodus-minimal-migration"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "pro-exodus-minimal-migration"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "39",
+      "reviewerPass": "B",
+      "accepted": false,
+      "status": "timed-out",
+      "elapsedMs": 899990,
+      "failure": "timeout"
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "48",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 198437,
+      "moves": 15,
+      "judgmentSha256": "4cf3ee8b7e6d42fb2afd5f4e32189d1c30eb6f7c9a4d2c780047015102d73ee6",
+      "rawOutputSha256": "e438baa265db04b35a2fecb7e252a5642ea9530449c83e6764ab941a582e940c",
+      "lockedInventorySha256": "8cf1231de39bedef983e0b3a37614343bbf42e8eb6bcc1e8133eab4656c880e8",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    }
+  ],
+  "pairs": [
+    {
+      "debateNumber": "39",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [
+        "pro-exodus-minimal-migration"
+      ],
+      "audioVerificationMoveIds": [
+        "pro-exodus-minimal-migration"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "48",
+      "contexts": 1,
+      "passes": [
+        "A"
+      ],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "23",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "162",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "86",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "159",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "128",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "98",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "155",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "178",
+      "contexts": 0,
+      "passes": [],
+      "bothAccepted": false,
+      "separateOutputHashes": false,
+      "sameLockedInventory": false,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    }
+  ],
+  "acceptance": {
+    "twentyValidContexts": false,
+    "sameLockedInventoryEveryPair": false,
+    "separatePassOutputEveryPair": false,
+    "preparedSourceHashReplays": 2,
+    "unchangedV4220ValidatorPasses": 2,
+    "canonicalEventProjectionReplays": 2,
+    "semanticRepairs": 0,
+    "modelAuthoredScores": 0,
+    "scores": 0,
+    "passed": false
+  },
+  "audioPolicy": {
+    "selectedBelowHighAttributionMoveRequiresVerification": true,
+    "mediumConfidenceAlwaysRequiresVerification": true,
+    "queue": [
+      {
+        "debateNumber": "39",
+        "moveId": "pro-exodus-minimal-migration",
+        "requiredBeforeAdjudication": true
+      }
+    ],
+    "queueCompiledDeterministicallyWithoutAudioAccess": true,
+    "audioCallsThisStage": 0
+  },
+  "totals": {
+    "debates": 10,
+    "contexts": 3,
+    "uniqueMoves": 191,
+    "movesJudgedAcrossPasses": 38,
+    "pendingAudioVerificationMoves": 1,
+    "modelContextsExecuted": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "disagreementFieldsExtracted": 0,
+    "audioCalls": 0,
+    "adjudicationModelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0,
+    "publicationModelContexts": 0,
+    "productionMutations": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "independentJudgmentModelExecution": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "unexpectedPaidService": false,
+    "adjudicationPreparation": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-post-canary-batch-15-independent-judgment-gate-for-audit"
+}

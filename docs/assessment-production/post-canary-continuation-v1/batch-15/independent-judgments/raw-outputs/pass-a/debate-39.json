@@ -1,0 +1,2178 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "39",
+  "debateId": "lambert-jones-christian-faith-skepticism-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-rational-christian-belief",
+      "side": "pro",
+      "description": "Establish that Christian belief can remain rational when treated as an evidence-sensitive cumulative worldview whose historical, textual, philosophical, and moral components are assessed together rather than as isolated claims requiring certainty.",
+      "successCriteria": "The route succeeds if it supplies a coherent evidential account of faith, a cumulative basis for the resurrection and Christian distinctiveness, a qualified model of scriptural reliability, and morally relevant explanations of hiddenness, judgment, and sincere nonbelief.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-sustainable-cumulative-case",
+        "tier": "motion",
+        "description": "Show that the combined Christian account has sufficient evidential and explanatory support to remain rationally sustainable amid the specified skeptical challenges."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-evidential-faith",
+          "tier": "central",
+          "description": "Define faith as evidence-grounded trust under uncertainty and explain why contrary possibilities do not by themselves make that trust irrational."
+        },
+        {
+          "bridgeId": "bridge-pro-central-resurrection-case",
+          "tier": "central",
+          "description": "Provide a cumulative historical case for resurrection that compares testimony, textual reliability, relevant historical considerations, and alternative explanations."
+        },
+        {
+          "bridgeId": "bridge-pro-central-scripture-model",
+          "tier": "central",
+          "description": "Defend a model in which culturally situated, composite, and fallible human transmission can still preserve evidentially and theologically relevant scriptural meaning."
+        },
+        {
+          "bridgeId": "bridge-pro-central-hiddenness-judgment",
+          "tier": "central",
+          "description": "Explain why limited divine disclosure and present religious commitment can serve moral transformation while judgment remains compatible with sincere evidential limitations."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-historical-particulars",
+          "tier": "subsidiary",
+          "description": "Show how qualified historical claims about the Exodus and Jesus can survive objections based on archaeology, ancient conventions, and literary dependence."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-comparative-religion",
+          "tier": "subsidiary",
+          "description": "Distinguish Christianity from rival traditions and alleged parallels through case-specific comparison rather than assuming either uniqueness or parity."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-skeptical-evidential-challenge",
+      "side": "con",
+      "description": "Establish that withholding Christian belief is rational because the available disclosure, testimony, textual record, historical support, and moral account do not adequately distinguish Christianity from naturalistic explanations or competing traditions.",
+      "successCriteria": "The route succeeds if ordinary evidential expectations, sincere nonbelief, scriptural development, historical uncertainty, religious diversity, and alternative explanations jointly undercut the warrant claimed for distinctively Christian conclusions.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-insufficient-distinguishing-warrant",
+        "tier": "motion",
+        "description": "Show that the available evidence does not sufficiently distinguish Christian supernatural claims from error, cultural development, or rival religious claims."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-faith-hiddenness",
+          "tier": "central",
+          "description": "Argue that evidence-based belief requires clearer disclosure than sincere nonbelievers presently receive and that biblical models do not resolve this disparity."
+        },
+        {
+          "bridgeId": "bridge-con-central-resurrection-testimony",
+          "tier": "central",
+          "description": "Show why ancient resurrection testimony and related historical claims require stronger support before overcoming ordinary experience and alternative explanations."
+        },
+        {
+          "bridgeId": "bridge-con-central-scriptural-development",
+          "tier": "central",
+          "description": "Explain how textual variation, internal diversity, literary reuse, discrepancies, and culturally situated authorship weaken claims of reliable divine communication."
+        },
+        {
+          "bridgeId": "bridge-con-central-moral-sincere-nonbelief",
+          "tier": "central",
+          "description": "Press whether hell, postmortem opportunity, and the asserted present necessity of belief coherently address sincere skepticism and limited evidence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-exodus-history",
+          "tier": "subsidiary",
+          "description": "Use population, archaeological, and interpretive difficulties in the Exodus traditions to test their historical and religious evidential force."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-pluralism-experience",
+          "tier": "subsidiary",
+          "description": "Use competing religions, recurring supernatural motifs, and naturalistic accounts of religious experience to challenge Christian epistemic privilege."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-faith-hiddenness-disclosure",
+      "title": "Evidential Faith, Divine Hiddenness, and Adequate Disclosure",
+      "weightPercent": 18,
+      "rationale": "This issue tests the governing conception of rational faith and whether testimonial or prior evidence can justify trust when sincere nonbelievers lack the clearer disclosure they regard as necessary."
+    },
+    {
+      "sectionId": "section-hell-sincere-nonbelief",
+      "title": "Hell, Sincere Nonbelief, and the Present Value of Commitment",
+      "weightPercent": 12,
+      "rationale": "This issue bears on whether Christian belief offers a coherent moral account of judgment, freely chosen separation, postmortem recognition, and the significance of commitment during earthly life."
+    },
+    {
+      "sectionId": "section-resurrection-historical-evidence",
+      "title": "Resurrection Testimony and Cumulative Historical Evidence",
+      "weightPercent": 24,
+      "rationale": "The resurrection is a central distinctively Christian claim, making the adequacy of testimony, burial and empty-tomb considerations, document reliability, ordinary expectations, and rival explanations indispensable."
+    },
+    {
+      "sectionId": "section-scripture-reliability-composition",
+      "title": "Biblical Reliability, Human Composition, and Literary Development",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether textual variants, discrepancies, composite authorship, apostolic disagreement, and literary reuse are compatible with scripture functioning as reliable evidence and divine communication."
+    },
+    {
+      "sectionId": "section-exodus-archaeology-history",
+      "title": "Exodus Historicity, Archaeology, and Ancient Conventions",
+      "weightPercent": 10,
+      "rationale": "The dispute over a minimal migration, population figures, conquest traditions, archaeological absence, and ancient numerical conventions provides a focused test of biblical historical reasoning."
+    },
+    {
+      "sectionId": "section-pluralism-parallels-experience",
+      "title": "Religious Pluralism, Ancient Parallels, and Religious Experience",
+      "weightPercent": 16,
+      "rationale": "This issue tests whether Christianity can be non-question-beggingly distinguished from rival scriptures, recurring supernatural traditions, alleged literary parallels, and naturalistic explanations of spiritual experience."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-sincere-skeptic-hell",
+      "sectionId": "section-hell-sincere-nonbelief",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "constructive",
+      "proposition": "Condemning a sincere former Christian who remains open to God but finds the available evidence implausible would make hell difficult to reconcile with morally responsible nonbelief.",
+      "sourceSpan": {
+        "startEvent": 175,
+        "endEvent": 204
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert identifies himself as an atheist and former fundamentalist before posing the direct challenge about his own fate.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-moral-sincere-nonbelief"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly raises the moral compatibility of hell with sincere, evidence-sensitive nonbelief and therefore establishes a central challenge.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It clearly formulates the personal and moral problem that the opposing account must answer."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable as a qualified challenge concerning a sincere former believer, not all unbelievers."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents his own case conditionally and asks about its consequence without claiming universal certainty."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The conditional inference from sincere evidential limitation to a moral difficulty for condemnation is clear and bounded."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The first-person history supports sincerity and openness, though the broader moral warrant remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly contacts the central burden concerning hell, sincere skepticism, and morally responsible judgment."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally presents a first-person moral challenge and does not substantially interpret a developed opposing argument."
+        }
+      },
+      "evidenceBasis": "Lambert identifies as an atheist and former fundamentalist, remains open to God, denies finding the evidence plausible, and asks whether he goes to hell.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hell-chosen-separation",
+      "sectionId": "section-hell-sincere-nonbelief",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Hell is not merely punishment imposed when earthly time expires but a persistently chosen identity grounded in something other than God.",
+      "sourceSpan": {
+        "startEvent": 205,
+        "endEvent": 241
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones answers Lambert's personal question in the first person and explicitly presents the account as his own view of hell.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-moral-sincere-nonbelief"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-sincere-skeptic-hell"
+        ],
+        "components": [
+          {
+            "componentId": "pro-hell-chosen-separation-component-01",
+            "targetMoveId": "con-sincere-skeptic-hell",
+            "text": "Whether hell condemns a sincere skeptic merely because earthly time expires.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hell-chosen-separation-component-02",
+            "targetMoveId": "con-sincere-skeptic-hell",
+            "text": "Whether Lambert's evidential sincerity is compatible with a freely chosen separation from God.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply rejects an automatic deadline model and supplies a chosen-identity account of hell, but it does not explain why this sincere skeptic's nonbelief constitutes that choice.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the punishment model decisively but leaves the sincerity-to-voluntary-separation bridge unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The chosen-identity thesis is clear, although the operative meaning of freely chosen remains underexplained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones explicitly marks this as his worldview and rejects a necessary last earthly choice without claiming demonstration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic's nonbelief may be involuntary rather than a chosen identity opposed to God.",
+        "decisiveQualification": "The reply must connect sincere evidential nonbelief to voluntary separation, not merely redefine hell."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The alternative conception is internally usable, but the inference from nonbelief to persistent chosen identity is missing."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The account is mainly asserted and attributed to a theological formulation without supporting the crucial voluntariness warrant."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central moral-sincere-nonbelief burden by revising the operative conception of hell."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The account softens the deadline model fairly but omits the strongest qualification concerning involuntary sincere disbelief."
+        }
+      },
+      "evidenceBasis": "Jones says death is not necessarily the last choice and describes hell as a freely chosen identity built on something besides God continuing forever.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-postmortem-recognition-present-belief",
+      "sectionId": "section-hell-sincere-nonbelief",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "If recognition and a choice for God remain possible after death, the necessity of present Christian belief is unclear, particularly when leaving belief has produced a freer and happier life.",
+      "sourceSpan": {
+        "startEvent": 331,
+        "endEvent": 361
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert frames the conditional objection from his own present circumstances and directly asks why belief is required now.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-moral-sincere-nonbelief"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-hell-chosen-separation"
+        ],
+        "components": [
+          {
+            "componentId": "con-postmortem-recognition-present-belief-component-01",
+            "targetMoveId": "pro-hell-chosen-separation",
+            "text": "If choice remains after death, why present Christian belief is necessary now.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-postmortem-recognition-present-belief-component-02",
+            "targetMoveId": "pro-hell-chosen-separation",
+            "text": "Whether present happiness after leaving Christianity bears on a supposedly freely chosen hell identity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The conditional objection directly tests the consequence of postmortem choice and adds personal evidence that current nonbelief has not produced obvious self-destruction.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly identifies and presses the central implication of allowing meaningful recognition and choice after death."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional scope and the distinction between present belief and postmortem recognition are expressly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert frames the point as a conditional question and qualifies the autobiographical happiness claim appropriately."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Present belief could matter for transformation even if a later choice remains possible.",
+        "decisiveQualification": "The chosen-separation account still owes an explanation of the distinctive value or necessity of belief now."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The conditional consequence follows clearly, while happiness is used as supporting pressure rather than a complete refutation."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The autobiographical evidence supports the local claim, though happiness alone cannot establish ultimate fulfillment."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central burden about present commitment, postmortem opportunity, and sincere nonbelief."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply preserves the opponent's postmortem possibility while accurately deriving the unresolved present-belief question."
+        }
+      },
+      "evidenceBasis": "Lambert accepts Jones's account conditionally, asks why belief is needed now, and reports greater freedom and happiness after leaving fundamentalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hell-present-sanctification",
+      "sectionId": "section-hell-sincere-nonbelief",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Union with God matters in earthly life because human fulfillment and durable identity require sanctification rather than maximizing present happiness.",
+      "sourceSpan": {
+        "startEvent": 367,
+        "endEvent": 453
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones begins with an explicit response and develops a sustained Christian account of present heaven, sanctification, and identity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-hiddenness-judgment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-postmortem-recognition-present-belief",
+          "con-sincere-skeptic-hell"
+        ],
+        "components": [
+          {
+            "componentId": "pro-hell-present-sanctification-component-01",
+            "targetMoveId": "con-postmortem-recognition-present-belief",
+            "text": "Why union with God and Christian commitment matter during earthly life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hell-present-sanctification-component-02",
+            "targetMoveId": "con-postmortem-recognition-present-belief",
+            "text": "Whether Lambert's present happiness after leaving belief shows that present commitment lacks value.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hell-present-sanctification-component-03",
+            "targetMoveId": "con-sincere-skeptic-hell",
+            "text": "Whether sincere evidential nonbelief itself warrants condemnation or a hell identity.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a transformation-and-identity reason for present union with God and challenges happiness as the relevant standard, but does not resolve sincere involuntary nonbelief.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It answers the present-value component well while leaving the original moral status of sincere skepticism unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The fulfillment and sanctification thesis is recoverable, though heaven-now and hell-now operate somewhat metaphorically."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The reply strongly asserts true fulfillment through God, while its support is primarily theological analogy and assertion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A nonbeliever's flourishing may be genuine rather than merely superficial happiness.",
+        "decisiveQualification": "The reply needs grounds for treating sanctification as fulfillment beyond restating the Christian account."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The identity-development answer is coherent, but its conclusion depends on an underdefended account of objective fulfillment."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Literary and theological formulations illustrate the view but do not independently establish the asserted fulfillment standard."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central hiddenness-and-judgment bridge by explaining the claimed present value of commitment."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "It distinguishes happiness from fulfillment but does not fully address the strongest evidentially sincere flourishing case."
+        }
+      },
+      "evidenceBasis": "Jones says people are already oriented toward heaven or hell, identifies heaven with being with God, and treats sanctification as formation of durable identity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-biblical-faith-contrary-evidence",
+      "sectionId": "section-faith-hiddenness-disclosure",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "constructive",
+      "proposition": "Hebrews 11 and the blessing of belief without sight portray biblical faith as trust maintained despite contrary appearances rather than confidence proportioned to supporting evidence.",
+      "sourceSpan": {
+        "startEvent": 648,
+        "endEvent": 686
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert introduces faith as the topic, cites Hebrews and John, and explicitly advances the skeptical interpretation in his own voice.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-evidential-faith"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move challenges the debate's governing account of rational faith by interpreting biblical examples as trust maintained contrary to appearances.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It establishes a clear central textual challenge concerning whether faith is genuinely evidence-proportioned."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The textual thesis is recoverable, but evidence, contrary evidence, and contrary appearances are not sharply distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Lambert calls the interpretation evident while the excerpt supplies a characterization more than a complete textual demonstration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Biblical faith may be trust based on prior evidence despite temporarily contrary appearances.",
+        "decisiveQualification": "Contrary appearances do not entail absence of prior supporting evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The argument is intelligible, but it partly equivocates between evidence against a promise and conditions testing prior trust."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Hebrews and John are specifically invoked, though the decisive passages and rival contextual reading remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro burden to define faith as evidence-grounded trust under uncertainty."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move identifies genuine textual pressure but compresses the strongest distinction between prior warrant and present adversity."
+        }
+      },
+      "evidenceBasis": "Lambert invokes Hebrews 11, the Thomas blessing, and Joshua Bowen's formulation that biblical faith is belief against or contrary to evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-faith-prior-evidence",
+      "sectionId": "section-faith-hiddenness-disclosure",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "The Thomas and Abraham narratives portray faith as trust grounded in prior testimony, an inspectable tomb, and divine promise rather than belief without evidence.",
+      "sourceSpan": {
+        "startEvent": 688,
+        "endEvent": 738
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones explicitly announces a response using the two examples Lambert raised and develops both examples at length.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-evidential-faith"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-biblical-faith-contrary-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-faith-prior-evidence-component-01",
+            "targetMoveId": "con-biblical-faith-contrary-evidence",
+            "text": "Whether Thomas and Abraham exemplify belief without or against evidence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-faith-prior-evidence-component-02",
+            "targetMoveId": "con-biblical-faith-contrary-evidence",
+            "text": "Whether contrary appearances erase prior testimonial, physical, or promissory evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Jones expressly disputes the skeptical inference, identifies prior testimony, an inspectable empty tomb, and divine promise, and concludes that the examples concern trust beyond demanded evidence rather than without evidence.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It directly diagnoses the evidence-versus-demand-for-more-evidence conflation and applies that diagnosis to both named examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The reply consistently distinguishes no evidence from prior evidence judged sufficient despite continuing doubt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The textual response is specific, though calling the evidence sufficient and Thomas stubborn goes beyond what is established here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Prior testimony can exist while still being too weak to justify a resurrection belief.",
+        "decisiveQualification": "Showing some evidence does not by itself show that the evidence was sufficient."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The distinction between absence of evidence and refusal to trust prior evidence is explicit and coherently applied."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Specific narrative features support the reading, but tomb accessibility and sufficiency receive limited independent defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central account of faith as evidence-grounded trust under uncertainty."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "Jones answers the no-evidence reading strongly but understates the live dispute over evidential sufficiency."
+        }
+      },
+      "evidenceBasis": "Jones cites eyewitness testimony from Thomas's companions, an empty tomb he says Thomas could inspect, and Abraham's prior divine promise before the test.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-competing-scriptures-privilege",
+      "sectionId": "section-pluralism-parallels-experience",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Christian confidence requires a non-question-begging reason to privilege Christian scripture and belief over Vedic writings and the competing sacred commitments of other religions.",
+      "sourceSpan": {
+        "startEvent": 1020,
+        "endEvent": 1047
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person skeptical framing compares Christianity with Vedic religion and culminates in a direct question addressed by name to Michael Jones.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-pluralism-experience"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-faith-prior-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-competing-scriptures-privilege-component-01",
+            "targetMoveId": "pro-faith-prior-evidence",
+            "text": "Why comparable evidential trust should privilege Christian sources over competing sacred writings.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The pluralism challenge is materially related to evidential faith but does not rebut the earlier narrative interpretation; it instead introduces the distinct comparative-religion demand.",
+        "responsivenessWithinClass": {
+          "value": 60,
+          "rationale": "It is a strong relevant nonanswer to the faith-text reply because it changes from internal interpretation to comparative privilege."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative demand is clear and framed as a request for a non-question-begging distinction among religious claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move asks what distinguishes Christian belief rather than asserting that every competing religion is evidentially equal."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity could be privileged by comparative evidence rather than by assuming its scripture.",
+        "decisiveQualification": "The question expressly invites such evidence and does not deny that a distinction may exist."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The parity challenge follows coherently from the existence of competing scriptures and confidence claims."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Vedic writings provide a concrete comparator, though no detailed evidential parity analysis is supplied."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary pluralism burden by demanding case-independent comparative justification."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The strongest evidential-comparison alternative is preserved as precisely the answer the move requests."
+        }
+      },
+      "evidenceBasis": "Lambert compares his former Christian confidence with other faiths and specifically asks what makes Vedic writings invalid while Christianity is true.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-pluralism-worldview-comparison",
+      "sectionId": "section-pluralism-parallels-experience",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Christianity may be defended as the most likely worldview while divine judgment accounts for the information actually available to people without exposure to Christ.",
+      "sourceSpan": {
+        "startEvent": 1048,
+        "endEvent": 1106
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response directly answers Lambert's pluralism question, defends Christianity in first-person terms, and develops Jones's scriptural account of inclusive judgment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-comparative-religion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-competing-scriptures-privilege"
+        ],
+        "components": [
+          {
+            "componentId": "pro-pluralism-worldview-comparison-component-01",
+            "targetMoveId": "con-competing-scriptures-privilege",
+            "text": "Whether Christianity can be defended through public comparison rather than assumed privilege.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-pluralism-worldview-comparison-component-02",
+            "targetMoveId": "con-competing-scriptures-privilege",
+            "text": "What specific evidence distinguishes Christianity from Vedic writings and other religions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Jones answers that worldviews should face debate and public scrutiny and adds inclusive judgment, but he does not supply the requested case-specific reason Christianity fares better.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts the governing comparative method but leaves the decisive requested comparison substantially unperformed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The method and inclusive-judgment qualification are clear, though the proposition combines epistemic and soteriological claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Christianity is framed as the worldview judged most likely, but the excerpt does not provide the comparative evidence supporting that judgment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic requests reasons Christianity wins comparison, not permission to hold a worldview.",
+        "decisiveQualification": "Public scrutiny is a method and does not itself establish Christian comparative superiority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The public-comparison principle is coherent, but it does not entail the asserted likelihood of Christianity."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "No concrete comparison with Vedic or other religious evidence is supplied in the selected span."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It supports the comparative-religion subsidiary bridge, though only at a general methodological level."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "Jones fairly accepts comparative scrutiny but answers a weaker methodological question instead of the strongest evidential demand."
+        }
+      },
+      "evidenceBasis": "Jones says everyone adopts the worldview judged most likely, calls for debate and public scrutiny, and says divine judgment accounts for available information.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-apostolic-disagreement-reliability",
+      "sectionId": "section-scripture-reliability-composition",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Conflicts among early Christian authorities over circumcision, Torah, and Gentile obligations weaken confidence that Paul and the disciples reliably communicate a unified divine message.",
+      "sourceSpan": {
+        "startEvent": 1265,
+        "endEvent": 1287
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly identifies the claim as arising from his own research and cites Paul's confrontation with Peter before presenting the skeptical trust objection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-scriptural-development"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-pluralism-worldview-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "con-apostolic-disagreement-reliability-component-01",
+            "targetMoveId": "pro-pluralism-worldview-comparison",
+            "text": "Whether public worldview comparison establishes Christianity as more likely than rivals.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move introduces concrete internal Christian disagreement relevant to overall reliability, but it does not directly assess the preceding pluralism method or inclusive-judgment claim.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "It is issue-bearing contrary evidence about Christianity while remaining a nonanswer to the immediately available comparative claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The reliability challenge and examples are clear, though the exact kind of unity divine communication would require is implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples warrant a reliability question, but the move sometimes treats visible disagreement as broadly detrimental without qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Authoritative messengers can disagree or develop doctrine without destroying the core message.",
+        "decisiveQualification": "The objection must show that these disputes concern the reliability standard actually claimed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Disagreement provides a reasonable defeater to simple uniformity, though not automatically to every qualified reliability model."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Circumcision, Torah, Gentile obligations, and Paul's confrontation with Peter provide several concrete supporting examples."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central scriptural-development burden by challenging unified authoritative communication."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move identifies serious disputes but does not fully distinguish core-message reliability from administrative or developmental disagreement."
+        }
+      },
+      "evidenceBasis": "Lambert cites competing Christ followers over circumcision and Paul confronting Peter, then asks how Paul or the disciples can be trusted amid such disputes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ancient-testimony-resurrection",
+      "sectionId": "section-resurrection-historical-evidence",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Ancient texts and reports about believers' deaths do not by themselves establish that Jesus rose from the dead, and Christian confidence may instead depend on subjective religious experience.",
+      "sourceSpan": {
+        "startEvent": 1319,
+        "endEvent": 1366
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker contrasts his evidential standards with Jones's, addresses Jones personally, and explicitly offers a skeptical interpretation of Jones's confidence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-resurrection-testimony"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-pluralism-worldview-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "con-ancient-testimony-resurrection-component-01",
+            "targetMoveId": "pro-pluralism-worldview-comparison",
+            "text": "Whether public comparison provides adequate grounds for Christian confidence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies a related skeptical demand about resurrection texts and subjective experience but does not answer the earlier general method or inclusive-judgment component.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "It is a relevant nonanswer that sharpens the evidential challenge without directly engaging the preceding claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The insufficiency claim is recoverable and expressly limited to texts and death reports not establishing resurrection by themselves."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert labels the experiential diagnosis as deliberate psychoanalysis and frames the evidential conclusion as a question."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Jones's confidence may rest on a cumulative historical case rather than subjective experience or texts alone.",
+        "decisiveQualification": "The move acknowledges that it is diagnosing confidence and asks for the missing evidential account."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The conclusion that texts and sincerity alone do not establish resurrection is valid and appropriately limited."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move identifies the evidential gap but offers little detailed analysis of the relevant texts or reports."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central skeptical burden requiring stronger resurrection testimony and alternative comparison."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The cumulative alternative remains live, although the psychological framing temporarily centers a weaker account of Jones's position."
+        }
+      },
+      "evidenceBasis": "Lambert distinguishes reports and texts from proof of resurrection, expressly flags his subjective-experience diagnosis as psychoanalysis, and asks why such texts suffice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-method",
+      "sectionId": "section-resurrection-historical-evidence",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "The rational case for Christianity proceeds cumulatively from philosophical theism through New Testament reliability and burial evidence before reaching resurrection.",
+      "sourceSpan": {
+        "startEvent": 1411,
+        "endEvent": 1449
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person explanation identifies the speaker as a classical apologist and lays out Jones's stated sequence for arguing toward Christian belief.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-resurrection-case"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ancient-testimony-resurrection"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-cumulative-method-component-01",
+            "targetMoveId": "con-ancient-testimony-resurrection",
+            "text": "Whether resurrection confidence rests merely on isolated texts, martyrdom reports, or subjective experience.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-cumulative-method-component-02",
+            "targetMoveId": "con-ancient-testimony-resurrection",
+            "text": "What broader evidential method can rationally reach the resurrection conclusion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Jones rejects the isolated minimal-facts demand and justifies a broader sequence from theism through document reliability and burial evidence, preserving the legitimate need for adequate evidence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly corrects the isolated-evidence framing and states a relevant replacement method, though it does not yet execute the case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Jones clearly distinguishes his cumulative method from minimal facts and specifies the intended argumentative sequence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The asserted need for a broader evidential picture fits the methodological point and does not itself claim resurrection is proved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic can still ask whether each cumulative component is strong and sufficiently independent.",
+        "decisiveQualification": "A sound method does not substitute for executing and defending its component warrants."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The cumulative sequence is explicit and avoids inferring resurrection from a single disputed fact."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move states the needed evidence categories but does not yet supply or defend their contents."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro resurrection bridge by specifying the required cumulative historical method."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "Jones fairly preserves the demand for evidence and strengthens its form, while leaving component adequacy for later argument."
+        }
+      },
+      "evidenceBasis": "Jones rejects a minimal-facts approach based only on Paul's experience and crucifixion, requiring theism, New Testament reliability, burial, and further evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-comparative-evidence",
+      "sectionId": "section-resurrection-historical-evidence",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Resurrection is supported through cumulative comparison of the empty tomb, women discoverers, transformed proclamation, limited persecution evidence, and rival explanatory hypotheses.",
+      "sourceSpan": {
+        "startEvent": 1568,
+        "endEvent": 1628
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers Lambert's request for Jones's confidence basis and presents a first-person synthesis consistent with Jones's previously stated apologetic method.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-resurrection-case"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ancient-testimony-resurrection",
+          "con-apostolic-disagreement-reliability"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-comparative-evidence-component-01",
+            "targetMoveId": "con-ancient-testimony-resurrection",
+            "text": "What evidence beyond bare ancient testimony supports resurrection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-comparative-evidence-component-02",
+            "targetMoveId": "con-ancient-testimony-resurrection",
+            "text": "Whether rival naturalistic explanations are comparatively weaker.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-comparative-evidence-component-03",
+            "targetMoveId": "con-apostolic-disagreement-reliability",
+            "text": "Whether early Christian disagreement undermines the reliability of the relevant testimony.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies several historical considerations and invokes rival-hypothesis comparison, while candidly limiting persecution evidence, but does not resolve the independent reliability objection.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It answers the principal demand with a cumulative list and comparative method, though several evidential warrants remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The evidential components and the limitation concerning martyrdom or persecution are stated with useful specificity."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones advocates resurrection comparatively while expressly conceding that persecution evidence is insufficient for stronger martyrdom claims."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Empty-tomb and transformation data may admit ordinary literary, legendary, or psychological explanations.",
+        "decisiveQualification": "Listing data does not establish their independence, reliability, or superiority over specific rivals."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Cumulative explanatory comparison is coherent, with one material bridge from listed considerations to best explanation compressed."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Several specific considerations are named and one limitation conceded, but documentation and serious rival testing remain incomplete."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It reaches the indispensable central resurrection burden by offering the debate's main historical evidential synthesis."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The reply recognizes rival comparison but does not develop the strongest naturalistic alternatives enough to resolve them."
+        }
+      },
+      "evidenceBasis": "Jones cites the empty tomb, women discoverers, Jerusalem proclamation, transformed disciples, bounded persecution evidence, and comparative explanatory hypotheses.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-loving-god-adequate-disclosure",
+      "sectionId": "section-faith-hiddenness-disclosure",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "A loving God who wants everyone to know the truth should provide sincere nonbelievers with sufficient disclosure rather than remain hidden from them.",
+      "sourceSpan": {
+        "startEvent": 1767,
+        "endEvent": 1803
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host frames the challenge through his own family history, former belief, present uncertainty, and direct first-person questioning.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-faith-hiddenness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-comparative-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-loving-god-adequate-disclosure-component-01",
+            "targetMoveId": "pro-resurrection-comparative-evidence",
+            "text": "Whether the listed historical considerations make resurrection the best explanation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The hiddenness objection is central to the motion and related to evidential sufficiency, but it does not engage the historical resurrection evidence or its rival comparison.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "It is a substantial relevant nonanswer that shifts from historical inference to equitable divine disclosure."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The loving-God conditional, sincere-nonbeliever scope, and demand for sufficient disclosure are clearly identifiable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert asks why God would hide and cautiously characterizes the anticipated coercion answer without asserting certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Overwhelming disclosure might impair authentic moral response without eliminating resistance.",
+        "decisiveQualification": "The objection requests sufficient disclosure, not necessarily coercive or irresistible manifestation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The tension between universal loving intent and sincere lack of adequate disclosure is clearly and conditionally framed."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The first-person sincere-nonbelief case grounds the challenge, though the universal divine-intention premise remains theological."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central faith-hiddenness burden concerning sincere nonbelief and adequate disclosure."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "Lambert explicitly avoids attributing the coercion answer too strongly and preserves the distinction between sufficiency and compulsion."
+        }
+      },
+      "evidenceBasis": "Lambert asks why a God who wants everyone to reach truth remains hidden and distinguishes his request from a possibly coercive manifestation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hiddenness-moral-transformation",
+      "sectionId": "section-faith-hiddenness-disclosure",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Divine hiddenness can serve moral transformation because bare awareness of God's existence would not itself produce proper perception, love, or allegiance.",
+      "sourceSpan": {
+        "startEvent": 1804,
+        "endEvent": 1902
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response is introduced as Jones's prior divine-hiddenness argument and develops his characteristic Christian account using literary and biblical examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-hiddenness-judgment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-loving-god-adequate-disclosure"
+        ],
+        "components": [
+          {
+            "componentId": "pro-hiddenness-moral-transformation-component-01",
+            "targetMoveId": "con-loving-god-adequate-disclosure",
+            "text": "Why God might limit disclosure despite wanting human beings to know the truth.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hiddenness-moral-transformation-component-02",
+            "targetMoveId": "con-loving-god-adequate-disclosure",
+            "text": "Whether sincere nonbelievers presently possess disclosure sufficient for responsible relationship.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply gives a moral-transformation reason why bare awareness may be insufficient or counterproductive, but it does not show that existing disclosure is adequate for sincere seekers.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the principal why-hidden question while leaving the equitable-sufficiency component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The transformation thesis is clear, though having faces and proper perception function as underexplained metaphors."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones offers hiddenness as a possible moral explanation rather than claiming that the literary examples demonstrate necessity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Clearer evidence could enable relationship without coercing love or allegiance.",
+        "decisiveQualification": "Bare awareness is not identical to the sufficient noncoercive disclosure requested by the skeptic."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The distinction between awareness and transformed allegiance is sound, but it does not entail the degree of hiddenness observed."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Literary and biblical illustrations make the possibility intelligible but provide limited evidence for the explanatory claim."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central hiddenness-and-judgment bridge by proposing a moral purpose for limited disclosure."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply answers an irresistible-manifestation version more fully than the strongest request for sufficient noncoercive evidence."
+        }
+      },
+      "evidenceBasis": "Jones invokes C. S. Lewis's transformed myth and argues that seeing or knowing God exists would not itself create proper perception, love, or allegiance.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scripture-fallible-authors",
+      "sectionId": "section-scripture-reliability-composition",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Divine inspiration can work through fallible human authors because ancient oral cultures prioritized preservation of the message over exact verbal replication.",
+      "sourceSpan": {
+        "startEvent": 2200,
+        "endEvent": 2227
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones explicitly presents this as his explanation to Christians and develops the analogy of God accomplishing purposes through imperfect human agents.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-scripture-model"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-apostolic-disagreement-reliability",
+          "con-loving-god-adequate-disclosure"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scripture-fallible-authors-component-01",
+            "targetMoveId": "con-apostolic-disagreement-reliability",
+            "text": "Whether substantive apostolic conflicts undermine a unified reliable divine message.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scripture-fallible-authors-component-02",
+            "targetMoveId": "con-loving-god-adequate-disclosure",
+            "text": "Whether culturally mediated fallible communication provides sincere seekers adequate disclosure.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The fallible-author model is relevant to scriptural reliability but does not address the specific circumcision and Torah disagreements or explain their compatibility with unity.",
+        "responsivenessWithinClass": {
+          "value": 63,
+          "rationale": "It is a relevant nonanswer offering a general transmission model without contacting the decisive disagreement evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between exact verbal perfection and successful preservation of message is clearly and explicitly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones argues compatibility rather than guaranteed accuracy and openly allows mistakes by imperfect human authors."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fallible mediation may distort theological meaning as well as exact wording.",
+        "decisiveQualification": "The model needs criteria showing which message survived and how that preservation is verified."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Divine use of fallible agents is logically compatible with preserved meaning, though no preservation mechanism is established."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Oral-cultural priorities and an agent analogy support possibility, but reliable message preservation is substantially asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central scriptural-model burden by articulating qualified inspiration through fallible authors."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply fairly concedes fallibility but does not fully handle the strongest concern about meaning-level distortion."
+        }
+      },
+      "evidenceBasis": "Jones concedes mistakes, says God can use imperfect people, and argues oral cultures prioritized communicating the message rather than exact verbal replication.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-naturalistic-religious-experience",
+      "sectionId": "section-pluralism-parallels-experience",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Experiences interpreted as spiritual gifts can result from group priming, emotional reinforcement, psychological need, and later theological rationalization rather than supernatural activity.",
+      "sourceSpan": {
+        "startEvent": 2334,
+        "endEvent": 2399
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert announces his own response and recounts his former Pentecostal practice, emotional reactions, later reinterpretations, and current skeptical conclusion in detail.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-pluralism-experience"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-hiddenness-moral-transformation",
+          "pro-scripture-fallible-authors"
+        ],
+        "components": [
+          {
+            "componentId": "con-naturalistic-religious-experience-component-01",
+            "targetMoveId": "pro-hiddenness-moral-transformation",
+            "text": "Whether hiddenness specifically facilitates moral transformation and authentic allegiance.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-naturalistic-religious-experience-component-02",
+            "targetMoveId": "pro-scripture-fallible-authors",
+            "text": "Whether fallible oral transmission can preserve reliable divine meaning.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The experiential naturalization is relevant to Christian warrant generally but does not address hiddenness's proposed function or the intervening scripture-transmission claim.",
+        "responsivenessWithinClass": {
+          "value": 56,
+          "rationale": "It supplies important contrary material while remaining a nonanswer to the legal earlier claims it could target."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move is limited to experiences such as practiced spiritual gifts and identifies several concrete naturalistic mechanisms."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert presents natural mechanisms as a plausible explanation grounded in his experience rather than as universal disproof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some prompted or psychologically reinforced experiences could coexist with genuinely supernatural experiences.",
+        "decisiveQualification": "A natural account of this episode does not exclude every supernatural experience."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Group priming, rehearsal, emotion, and reinterpretation form a coherent alternative explanation of the described experience."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The detailed firsthand sequence supports the local explanation, though generalization beyond the episode remains limited."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary pluralism-and-experience burden by supplying a concrete naturalistic alternative."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move stays largely case-specific and does not overstate the autobiographical explanation as a universal defeater."
+        }
+      },
+      "evidenceBasis": "Lambert recounts being prompted to speak in tongues, practicing under group expectations, emotional reinforcement, psychological need, and later theological reinterpretation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-exodus-minimal-migration",
+      "sectionId": "section-exodus-archaeology-history",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "A historically modest, naturalistic Exodus remains plausible where Israel's inherited textual tradition and compatible archaeology support migration from Egypt into Canaan.",
+      "sourceSpan": {
+        "startEvent": 2522,
+        "endEvent": 2608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Lambert's invitation to discuss Hendel and is delivered continuously by Jones until Lambert begins his archaeological objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-historical-particulars"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-naturalistic-religious-experience"
+        ],
+        "components": [
+          {
+            "componentId": "pro-exodus-minimal-migration-component-01",
+            "targetMoveId": "con-naturalistic-religious-experience",
+            "text": "Whether naturalistic mechanisms adequately explain experiences interpreted as supernatural gifts.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move changes to Exodus historicity and supplies no component-level response to the preceding religious-experience account, even though both fit the broader worldview debate.",
+        "responsivenessWithinClass": {
+          "value": 20,
+          "rationale": "It is a nonanswer because it neither disputes nor reframes any decisive component of the experience explanation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The modest-migration thesis is qualified, though compatible archaeology and a bunch of Semites remain insufficiently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones advances a possible naturalistic historical core and marks several details speculatively rather than claiming certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A small migration may be possible while providing little support for the canonical Exodus or divine action.",
+        "decisiveQualification": "Compatibility and textual inheritance do not establish occurrence or theological significance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "A smaller naturalistic migration is coherent, but the move compresses the bridge from possibility to evidential plausibility."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Textual tradition and compatible archaeology are invoked generally without enough representative detail or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary historical-particulars bridge by defending a qualified Exodus core."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The modest hypothesis avoids a maximal target but does not fully distinguish bare possibility from historical support."
+        }
+      },
+      "evidenceBasis": "Jones proposes Semites in Avaris, a mixed group, natural events later interpreted as plagues, ancestry in Canaan, inherited texts, and compatible archaeology.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-exodus-scale-archaeology",
+      "sectionId": "section-exodus-archaeology-history",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "The enormous biblical population figures and limited archaeological confirmation make the Exodus account difficult to trust as reliable evidence of divine action, even if its numbers are treated as hyperbole.",
+      "sourceSpan": {
+        "startEvent": 2684,
+        "endEvent": 2721
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert introduces the Exodus population issue, develops the numerical comparison, and closes by questioning why the account should be trusted.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-exodus-history"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-exodus-minimal-migration"
+        ],
+        "components": [
+          {
+            "componentId": "con-exodus-scale-archaeology-component-01",
+            "targetMoveId": "pro-exodus-minimal-migration",
+            "text": "Whether a modest Exodus remains evidentially credible despite the canonical account's scale.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-exodus-scale-archaeology-component-02",
+            "targetMoveId": "pro-exodus-minimal-migration",
+            "text": "Whether inherited textual tradition and compatible archaeology positively support migration from Egypt.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Lambert directly challenges trust in the proposed historical core by invoking extreme population figures and weak archaeological confirmation, even while acknowledging Jones's hyperbolic reading.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It contacts both the scale qualification and the claimed evidential support, though the archaeological details remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move expressly grants a nonliteral-number reading and asks whether the remaining account is evidentially trustworthy."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The archaeological conclusion is stated as evidence not being strong rather than as a categorical proof of no migration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ancient numerical hyperbole and a small migrant group could explain the absence of maximal archaeological traces.",
+        "decisiveQualification": "The objection asks what positive reason remains for trusting the account after those concessions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Large narrative inflation and limited confirmation reasonably reduce trust, without being treated as deductive disproof."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The population problem and archaeological scarcity are concrete, though the selected evidence provides limited documentation."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary skeptical Exodus burden by testing scale, archaeology, and religious evidential force."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "Lambert explicitly grants Jones's hyperbole view and directs the challenge toward residual evidential support."
+        }
+      },
+      "evidenceBasis": "Lambert acknowledges Jones treats the population numbers as hyperbolic, questions whether that is sufficient, and characterizes archaeological confirmation as weak rather than decisive.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-exodus-ancient-numbers",
+      "sectionId": "section-exodus-archaeology-history",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Exodus population figures should be interpreted through ancient numerical conventions rather than a modern choice between exact literal quantities and wholesale figurative reading.",
+      "sourceSpan": {
+        "startEvent": 2722,
+        "endEvent": 2774
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones takes the floor immediately after Lambert's population objection and sustains the cultural-context response through a modern metaphor analogy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-historical-particulars"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-exodus-scale-archaeology"
+        ],
+        "components": [
+          {
+            "componentId": "pro-exodus-ancient-numbers-component-01",
+            "targetMoveId": "con-exodus-scale-archaeology",
+            "text": "Whether enormous Exodus numbers should reduce trust in the historical account.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-exodus-ancient-numbers-component-02",
+            "targetMoveId": "con-exodus-scale-archaeology",
+            "text": "Whether limited archaeological confirmation remains problematic after ancient-number interpretation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Jones directly contests the modern literal-versus-figurative assumption by appealing to ancient numerical practice, but he does not answer the independent archaeological-evidence component.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the decisive numerical component while leaving the separate lack-of-confirmation demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The methodological claim is clear and limited to interpreting pre-exilic numerical usage within ancient culture."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones qualifies the view as what he thinks, but supplies little direct evidence for the asserted ancient convention."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even nonliteral ancient numbers may preserve an exaggerated scale that still creates historical difficulties.",
+        "decisiveQualification": "Rejecting exact modern quantities does not determine the intended magnitude or solve archaeological absence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The cultural-context reframe is coherent and avoids a literal-or-wholly-figurative dilemma, with application details compressed."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "A modern metaphor analogy illustrates the method, but specific ancient numerical evidence is not presented here."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary historical-particulars bridge by addressing ancient numerical conventions."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The reply correctly resists a false binary but does not fully confront the strongest scale-and-archaeology version."
+        }
+      },
+      "evidenceBasis": "Jones compares mixed literal and figurative modern expressions with ancient usage and denies that pre-exilic authors necessarily intended exact modern quantities.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-pluralism-case-specific-comparison",
+      "sectionId": "section-pluralism-parallels-experience",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Superficial mythic similarities may arise coincidentally, so religious claims require case-specific assessment, with resurrection evidence compared against simpler naturalistic explanations.",
+      "sourceSpan": {
+        "startEvent": 2955,
+        "endEvent": 3015
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones begins with a direct negative answer to Lambert's question, gives a cross-cultural coincidence analogy, and concludes by contrasting case-specific explanations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-comparative-religion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-exodus-scale-archaeology"
+        ],
+        "components": [
+          {
+            "componentId": "pro-pluralism-case-specific-comparison-component-01",
+            "targetMoveId": "con-exodus-scale-archaeology",
+            "text": "Whether Exodus scale and archaeology undermine trust in that historical account.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move develops a comparative-religion method and resurrection application, but it does not respond to the immediately earlier Exodus evidence or numerical objection.",
+        "responsivenessWithinClass": {
+          "value": 54,
+          "rationale": "It is relevant to the motion yet remains a nonanswer to the legal opposing move selected as target."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between superficial parallels and case-specific explanatory comparison is clearly recoverable and qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones acknowledges possible future rival cases, but his resurrection preference is supported only by an abbreviated comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A rival tradition might also offer a cumulative case rather than rely on superficial similarity.",
+        "decisiveQualification": "Jones expressly allows that possibility and says it would require comparable case-specific evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Case-specific comparison is a sound method, though the conclusion favoring resurrection needs the omitted detailed comparison."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Parsimony and plausibility are named, but rival hypotheses and alleged parallels are not examined in representative detail."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It reaches the top of the subsidiary comparative-religion tier by specifying the required comparative method."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply fairly states the strongest rival methodology, although its claim that he has not seen success is lightly supported."
+        }
+      },
+      "evidenceBasis": "Jones says superficial similarities can be coincidental, invokes parsimony and plausibility, favors resurrection comparatively, and allows that a comparable rival case would matter.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scripture-human-cultural-development",
+      "sectionId": "section-scripture-reliability-composition",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Biblical narratives are more plausibly understood as culturally situated human traditions transmitted orally and in writing than as purely divine, inerrant, and infallible communication.",
+      "sourceSpan": {
+        "startEvent": 3670,
+        "endEvent": 3700
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert addresses Jones directly, contrasts their outlooks, and explains his own human-origin interpretation of scripture.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-scriptural-development"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-scripture-fallible-authors"
+        ],
+        "components": [
+          {
+            "componentId": "con-scripture-human-cultural-development-component-01",
+            "targetMoveId": "pro-scripture-fallible-authors",
+            "text": "Whether fallible human transmission can still preserve a divinely intended scriptural message.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-scripture-human-cultural-development-component-02",
+            "targetMoveId": "pro-scripture-fallible-authors",
+            "text": "What evidence distinguishes successful divine use of authors from ordinary cultural development.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move does not directly disprove compatibility, but it contacts the evidential distinction by presenting ordinary cultural transmission as a more plausible explanation of the same human features.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts a secondary evidential component while leaving the logical compatibility claim itself substantially intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The human-cultural account is clearly contrasted with the speaker's former purely divine, inerrant, and infallible model."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert frames the human account as what he finds more plausible, though the excerpt does not conduct a full comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Cultural and oral development can be the human means through which divine meaning is conveyed.",
+        "decisiveQualification": "Human cultural features alone do not exclude divine use; they require a comparative explanatory argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Ordinary cultural development coherently explains the cited features, though it does not logically exclude divine mediation."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Oral transmission, writing, ancestry, and cultural situation are concrete mechanisms, but comparative support is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central scriptural-development burden by offering a unified human-origin explanation."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move contrasts explanations without caricature but does not fully answer the compatibility model Jones actually offered."
+        }
+      },
+      "evidenceBasis": "Lambert describes narratives shaped by cultural situation, ancestral oral transmission, and later writing, contrasting this with his former purely divine inerrant model.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scripture-meaning-over-exactness",
+      "sectionId": "section-scripture-reliability-composition",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "moveKind": "reply",
+      "proposition": "Numerical and narrative discrepancies need not defeat biblical theology because ancient authors prioritized culturally transmitted meaning rather than modern standards of exactness.",
+      "sourceSpan": {
+        "startEvent": 3705,
+        "endEvent": 3755
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Jones answers Lambert's direct question about mistakes and consistently describes his own rejection of modern inerrancy terminology.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-scripture-model"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scripture-human-cultural-development"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scripture-meaning-over-exactness-component-01",
+            "targetMoveId": "con-scripture-human-cultural-development",
+            "text": "Whether human cultural development and discrepancies defeat scriptural theological reliability.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scripture-meaning-over-exactness-component-02",
+            "targetMoveId": "con-scripture-human-cultural-development",
+            "text": "How preserved theological meaning can be identified and verified despite discrepancies.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Jones directly rejects modern inerrancy and argues that discrepancies need not defeat ancient meaning, but he does not provide criteria demonstrating which meaning remains reliable.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the consequence of discrepancies while leaving the verification and comparative-explanation demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The rejection of modern exactness is explicit, though meaning and theology remain broad and partly unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Jones clearly limits his claim by rejecting inerrancy, but the harmlessness of discrepancies receives little demonstrated support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some discrepancies may affect intended meaning or theological reliability rather than mere modern exactness.",
+        "decisiveQualification": "A qualified model must distinguish harmless variation from meaning-level conflict."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Ancient communicative standards can coherently differ from modern exactness, but preserved theology does not follow automatically."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The cultural-context explanation is plausible but lacks representative discrepancy analysis and preservation criteria."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central scriptural-model burden by defending meaning without exact verbal or numerical consistency."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply fairly abandons a brittle inerrancy target but does not fully address the strongest developmental objection."
+        }
+      },
+      "evidenceBasis": "Jones rejects contemporary inerrancy terminology, says discrepancies are not inherently problematic, and attributes different writing expectations to ancient authors and audiences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-ordinary-rival-testimony",
+      "sectionId": "section-resurrection-historical-evidence",
+      "side": "con",
+      "speaker": "Derek Lambert",
+      "moveKind": "reply",
+      "proposition": "Resurrection testimony is insufficient without a cumulative reason to prefer it over the ordinary expectation that death is final and over competing testimony from other religions.",
+      "sourceSpan": {
+        "startEvent": 3929,
+        "endEvent": 3958
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lambert explicitly builds his final question from Jones's account of claims as evidence and states his comparative objection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-resurrection-testimony"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-comparative-evidence",
+          "pro-resurrection-cumulative-method",
+          "pro-pluralism-case-specific-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "con-resurrection-ordinary-rival-testimony-component-01",
+            "targetMoveId": "pro-resurrection-comparative-evidence",
+            "text": "Whether the cumulative resurrection data outperform ordinary and rival religious explanations.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-ordinary-rival-testimony-component-02",
+            "targetMoveId": "pro-resurrection-cumulative-method",
+            "text": "Whether a cumulative method has supplied reasons to prefer resurrection over ordinary finality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-ordinary-rival-testimony-component-03",
+            "targetMoveId": "pro-pluralism-case-specific-comparison",
+            "text": "Whether case-specific comparison has distinguished Christian testimony from rival religious testimony.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move squarely restates the unresolved ordinary-expectation and rival-testimony demands, but it does not directly analyze the earlier listed empty-tomb and transformation evidence component by component.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts important comparative components but leaves the principal historical-data inference largely unexamined."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The demand distinguishes assumed sincere testimony from adequate reasons to prefer its supernatural content over alternatives."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Lambert grants for argument that real people believed the claim and asks why their testimony should be preferred."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian resurrection testimony may be embedded in a stronger cumulative case than rival testimony.",
+        "decisiveQualification": "The move expressly asks for that cumulative distinction rather than assuming all testimony is equal."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The need to compare testimony against ordinary expectations and rival claims follows directly from the supernatural conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Ordinary finality and competing religious testimony are concrete defeaters, though they are not developed into detailed rival cases."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central resurrection-testimony burden by demanding comparative warrant for the decisive supernatural inference."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The strongest comparative-evidence alternative is preserved and made the central unanswered demand."
+        }
+      },
+      "evidenceBasis": "Lambert grants that real people may sincerely have believed Jesus rose, then asks why their testimony is trusted over ordinary death expectations and claims involving Muhammad or other gods.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side consequence survives the strict exclusion rule beyond matters already captured in move ratings, response links, importance, and burden relevance.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side consequence survives the strict exclusion rule beyond matters already captured in move ratings, response links, importance, and burden relevance.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
