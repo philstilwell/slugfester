@@ -1,55 +1,81 @@
 {
-  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-resumption-provenance",
-  "protocolId": "assessment-production-post-canary-batch-13-publication-original-unattempted-context-resumption-4",
-  "originalContextIndex": 9,
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-provenance-after-field-disjoint-repair",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-34-publication-field-disjoint-repair-1",
   "debateNumber": "34",
   "debateId": "goff-carroll-consciousness-fundamental-2023",
-  "model": {
-    "label": "5.6 Sol",
-    "slug": "gpt-5.6-sol",
-    "reasoningEffort": "low",
-    "authentication": "ChatGPT subscription"
+  "failedOriginalFirstAttempt": {
+    "sourceOutputSha256": "cac460ce1f6b2fa0acc3084696839dfb4344d0be51e1fd12fbb5c316ef8ac086",
+    "sourceValidationSha256": "0438e23ea41363ba3e19a6b95d75df7b6497b22f5fd64a66980076f2966eaaac",
+    "sourceProvenanceSha256": "f11a388b5be233b0ad4591ef8dbd561ee4c752630151ebd61c9f9b0afa5d7a3c",
+    "attemptCount": 1,
+    "retryCount": 0
   },
-  "authentication": "ChatGPT subscription",
-  "originalFirstAttempt": true,
-  "priorAttemptCount": 0,
-  "attemptCount": 1,
-  "retryCount": 0,
-  "timeoutExtensionCount": 0,
-  "correctionContextCount": 0,
-  "hostAwakeGuardApplied": true,
-  "copiedInputs": {
-    "production-workflow.md": {
-      "source": "docs/assessment-production-workflow.md",
-      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"
+  "acceptedRepairContexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-34-shard-1",
+      "outputSha256": "2f3bf2094cfaa1ea71d3d5bbfc3d99bb822671c91717a71b63f1daaa2eb4ec2b",
+      "writableFields": [
+        "moveProse.pro-quantitative-qualitative-mismatch.critique",
+        "moveProse.pro-conscious-realizers-of-physical-structure.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "readiness-workflow.md": {
-      "source": "docs/assessment-workflow-v4.2.21.17.41.md",
-      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"
+    {
+      "contextIndex": 1,
+      "shardId": "debate-34-shard-2",
+      "outputSha256": "5117a9c84e6e730266e7474bdaae80be32f0456f796bc259657e10a6b55ad33e",
+      "writableFields": [
+        "moveProse.con-weak-emergence-levels.critique",
+        "moveProse.con-mary-distinct-brain-state.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "output-contract.md": {
-      "source": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
-      "sha256": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728"
+    {
+      "contextIndex": 2,
+      "shardId": "debate-34-shard-3",
+      "outputSha256": "038d7bc52b6bc097ba1e8eca577f3b82312b0461ad7aa480b770d1593afed90d",
+      "writableFields": [
+        "moveProse.pro-zombie-multiple-realization.critique",
+        "moveProse.pro-weak-panpsychism-preserves-physics.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "manual.md": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/manual.md",
-      "sha256": "1d073477a4e31700aa968979def66e6bf67880eec8957808e8abb137497dd5b8"
+    {
+      "contextIndex": 3,
+      "shardId": "debate-34-shard-4",
+      "outputSha256": "f0911d41a12abe9e9a1a4f03296a694c894025c3e5451ec8ebd1d730b260c1a7",
+      "writableFields": [
+        "moveProse.con-private-data-within-science.critique",
+        "moveProse.pro-integrating-private-and-physical-knowledge.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     },
-    "reference-catalog.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/reference-catalog.json",
-      "sha256": "3b8e1b78612213decb2bcbf64bcc970a17a6ce84ff7d59794b6c0f1c4cbd4b99"
-    },
-    "packet.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/packets/debate-34.json",
-      "sha256": "838c17f82530d6c6f4c30fe9d53d0fcbc4c29d6d6d9af91bd538990d325cb1b5"
-    },
-    "schema.json": {
-      "source": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/schemas/debate-34.schema.json",
-      "sha256": "d113767810d63f7ffa213ab7a6045de2845c11361cb43330a6b79c20233a620c"
+    {
+      "contextIndex": 4,
+      "shardId": "debate-34-shard-5",
+      "outputSha256": "f4cf35e45e4efa56b5ccaaa81f4d1ef84b15d82b054f3d498924ea8ef01467b9",
+      "writableFields": [
+        "moveProse.pro-combination-problem-contained.critique"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0
     }
-  },
-  "outputSha256": "cac460ce1f6b2fa0acc3084696839dfb4344d0be51e1fd12fbb5c316ef8ac086",
+  ],
+  "acceptedOutputSha256": "e6f42fa657605d83e55ceb54bbc898e771bb3340bd6f43693ba55e5de870f803",
+  "validationCleanFieldsRetainedDeterministically": true,
+  "rejectedPriorStringsAvailableToRepairModels": false,
+  "lockedScoresUnchanged": true,
   "modelAuthoredScores": 0,
   "meteredApiCostUsd": 0,
-  "paidServiceCallsThisStage": 0
+  "paidServiceCalls": 0
 }
