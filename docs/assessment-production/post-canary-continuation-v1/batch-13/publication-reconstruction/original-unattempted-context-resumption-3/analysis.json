@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-original-unattempted-context-resumption-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-original-unattempted-context-resumption-3",
+  "status": "five-context-publication-resumption-failed",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-3/execution-preparation-manifest.json",
+    "preparationSha256": "7f25cbdf3672bc824267c7d72facf71871c523af0a38bb4cb598c1cac4827aff",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-3/execution-activation.json",
+    "activationSha256": "0507c8dfdeb49234aafdfda61d1954938898302a54b6ef2b6db779902cc98c89",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-3/model-execution.json",
+    "executionSha256": "d82a8f4059f7c7e3951342485e06f414e3661a632b529a14bc0bc2cfc0926fde"
+  },
+  "execution": {
+    "contextsPlanned": 5,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 4,
+    "validContexts": 0,
+    "invalidContexts": 1,
+    "originalContextIndexes": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 1,
+    "wallElapsedMs": 214746,
+    "aggregateModelElapsedMs": 214730,
+    "hostAwakeGuardAppliedToEveryAttempt": true
+  },
+  "validationReplay": [
+    {
+      "originalContextIndex": 5,
+      "debateNumber": "30",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "totals": {
+    "debates": 5,
+    "lockedMoves": 102,
+    "critiques": 0,
+    "exactSourceQuotes": 0,
+    "overallCommentarySides": 0,
+    "aiExtensionSides": 0,
+    "modelContexts": 1,
+    "originalFirstAttempts": 1,
+    "retries": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "completeCohortReplay": false,
+    "publicationCompilationPreparation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-no-automatic-retry-timeout-extension-or-correction"
+}
