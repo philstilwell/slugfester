@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-attribution-successor-authorization",
+  "protocolId": "assessment-production-post-canary-batch-14-audio-attribution-recovery",
+  "status": "frozen-active-batch-14-audio-attribution-recovery-level-2-successor-authorization",
+  "authorizedAt": "2026-08-27T18:30:54Z",
+  "checkpointCommit": "e9c2403d001347edd14afc11d160b957b26ef6a4",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "Thank you. Let's proceed.",
+    "instructionPath": "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization-instruction.txt",
+    "instructionSha256": "ba2b8e45b2fd72525ce1631e80e713181324df0828112118a051e1610d0f0732",
+    "scopeInterpretation": "Resume the blocked Batch 14 workflow using the smallest zero-cost, evidence-limited recovery that can resolve the one preserved audio-attribution decision, then continue automatically through the already authorized complete workflow."
+  },
+  "preservedPriorGate": {
+    "verified": 11,
+    "unresolved": 1,
+    "paidCallsCompleted": 12,
+    "paidRetries": 0,
+    "usageDerivedEstimatedCostUsd": 0.422005,
+    "originalEvidenceErasedOrReclassified": false
+  },
+  "recovery": {
+    "level": 2,
+    "contexts": 1,
+    "debates": [
+      "12"
+    ],
+    "decisions": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "paidTranscriptionCalls": 0,
+    "paidRetries": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsdMaximum": 0
+    },
+    "transcriptMutationAllowed": false,
+    "thresholdChangeAllowed": false,
+    "rawSpeakerRelabelingAllowed": false,
+    "manualOverrideAllowed": false,
+    "unresolvedDecisionBlocks": true
+  },
+  "authorization": {
+    "packetPreparation": true,
+    "modelExecutionAfterSeparateActivation": true,
+    "deterministicValidation": true,
+    "combinedAudioGateAssembly": true,
+    "resumeStandingAuthorizationAfterPassingGate": true,
+    "paidTranscription": false,
+    "retry": false,
+    "scoreDerivationBeforeResolvedAudio": false,
+    "nextBatchSelection": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization-instruction.txt": "ba2b8e45b2fd72525ce1631e80e713181324df0828112118a051e1610d0f0732",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-workflow.md": "c0335b1461b06509111fd4c55851b99f6ffc8beb951d94a4bcfc81ef7ddcc5cc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-manual.md": "699e7a8540387075fc69fa761ca046a1d235f4439b0b73eb9a082d9648d69a13",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization.json": "5d10c0a2bc3e1e93f1657b87f56afa4de5828c2c588ae527401e04ad98f6b222",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/selection.json": "d8fa58a80632e5289c46755fd48489d98c8dbd88148a5dd8dbcaf0a5fcbe4406",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/disagreement-extraction/audio-work-items.json": "486204f021f89277ed7dbbd7fec3eb1ba2a9cbb89845db6e2df3371c9e4c46f2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-verification.json": "64eaf414e56efd4b7ca0a09285c0bde1869391415c5a6a131847a411c5fd5ae0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/analysis.json": "18d6297a130f5fbc5b010b6a860a097a2810d25aa5e645533132c3b7f46c5a9a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/cost-control-analysis.json": "59eb1f03b8b4104b0c2c81a1a67e585242fc8709daeb831fc33ae433599364ac",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/validation-overlay-preparation.json": "ae382eacb25e956a09b3a1f99809f7e888c76ea52b6f3dd4c73e4603ec015fc1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/validation-overlay-execution.json": "072d8b1c9dc2c29ee3eed436c62d0208303527c8ac8db519a977ae8fa6522a9c",
+    "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json": "cfc81f08f76ed60bff76dfa0b44e6317d181b6ae44a008354c0e4befb985d72a"
+  },
+  "nextAuthorizedAction": "prepare-validate-commit-and-push-one-frozen-batch-14-audio-attribution-recovery-context"
+}

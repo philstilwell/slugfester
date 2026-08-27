@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-attribution-preparation",
+  "protocolId": "assessment-production-post-canary-batch-14-audio-attribution-recovery",
+  "status": "prepared-one-batch-14-audio-attribution-recovery-context-not-active",
+  "preparedAt": "2026-08-27T18:30:54Z",
+  "checkpointCommit": "e9c2403d001347edd14afc11d160b957b26ef6a4",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-successor-authorization.json",
+    "sha256": "e0ce8bac6d77fa76039e479b0cbd6d5cd5215d6fa82b9924ed821d8e4c827cfc"
+  },
+  "workflow": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-workflow.md",
+  "manual": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery-manual.md",
+  "contexts": [
+    {
+      "debateNumber": "12",
+      "debateId": "settecase-jump-evidence-for-god-2025",
+      "moveIds": [
+        "con-reality-identity-through-time"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/packets/debate-12.json",
+      "packetSha256": "754cc54ec9c853c5494e764ccefdb13753e904d2c03646a0380585445b1cbab8",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/schemas/debate-12.schema.json",
+      "schemaSha256": "b5ff990d41793d74aba17383020fa70ff7bd7e77de40bf1a3467d4d9dbf01766",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "con-reality-identity-through-time",
+          "path": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+          "sha256": "cfc81f08f76ed60bff76dfa0b44e6317d181b6ae44a008354c0e4befb985d72a"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/outputs/debate-12.json"
+    }
+  ],
+  "executionPolicy": {
+    "concurrency": 1,
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "APIKeysRemoved": true,
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "modelExecutionAuthorizedThisStage": false,
+  "futureArtifacts": {
+    "executionManifest": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/analysis.json",
+    "combinedAudioGate": "docs/assessment-production/post-canary-continuation-v1/batch-14/audio-verification/audio-attribution-recovery/combined-audio-verification.json"
+  }
+}

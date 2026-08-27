@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-audio-attribution-recovery",
+  "debateNumber": "12",
+  "debateId": "settecase-jump-evidence-for-god-2025",
+  "speakerRoster": {
+    "pro": "Joel Settecase",
+    "con": "Tom Jump",
+    "substantiveSpeakerCount": 2
+  },
+  "moves": [
+    {
+      "moveId": "con-reality-identity-through-time",
+      "expectedSpeaker": "Tom Jump",
+      "proposition": "Nothing, including time or change, can make reality cease to be reality, so identity necessarily holds at every point in the past and future.",
+      "sourceSpan": {
+        "startEvent": 841,
+        "endEvent": 869
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "Tom Jump",
+        "fullClipExcerptRecall": 0.9672131147540983,
+        "expectedSpeakerExcerptRecall": 0.7540983606557377,
+        "highestOtherSpeaker": "Joel Settecase",
+        "highestOtherSpeakerExcerptRecall": 0.4426229508196721,
+        "expectedSpeakerRecallMargin": 0.31147540983606553,
+        "expectedSpeakerDurationSeconds": 29.8,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": true,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "Tom Jump",
+            "segmentCount": 19,
+            "durationSeconds": 29.8,
+            "wordCount": 105,
+            "excerptRecall": 0.7540983606557377
+          },
+          {
+            "speaker": "Joel Settecase",
+            "segmentCount": 24,
+            "durationSeconds": 30.6,
+            "wordCount": 82,
+            "excerptRecall": 0.4426229508196721
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-12/transcripts/con-reality-identity-through-time.transcript.json",
+      "diarizedTranscriptSha256": "cfc81f08f76ed60bff76dfa0b44e6317d181b6ae44a008354c0e4befb985d72a",
+      "validationOverlayApplied": false
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptsRequired": true,
+    "lockedPropositionsAndSpansVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "genericLabelsRequireDialogueAndRosterIdentityResolution": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}
