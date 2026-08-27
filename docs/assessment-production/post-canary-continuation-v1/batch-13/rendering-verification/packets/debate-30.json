@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-rendering-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-rendering-verification",
+  "status": "frozen-batch-13-rendering-verification-packet",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "debateNumber": "30",
+  "debateId": "lowder-turek-naturalism-theism-2016",
+  "candidate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-finalization/output-bundle/final-candidates/debate-30.json",
+    "sha256": "880f550a35353c4b9fe49dd0f6a5ddf084f761dff8e8471c2639d122043d67bf",
+    "scores": {
+      "pro": 85,
+      "con": 70
+    },
+    "sections": 6,
+    "moves": 23,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-finalization/output-bundle/provenance/debate-30.json",
+    "sha256": "7dc4e443abb91463efc9777b31552d24703e599ac6a17babda6b412cff1b1650",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preview": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-finalization/output-bundle/rendering-preview/index.html",
+    "sha256": "362dd87fb35a0fabae0401a32a156d58de1789d34f5b8b020e4f59f2acc0f454",
+    "url": "http://127.0.0.1:4209/docs/assessment-production/post-canary-continuation-v1/batch-13/publication-finalization/output-bundle/rendering-preview/index.html?debate=30",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBanner": "Publication staging preview: validated post-canary Batch 13 candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "prohibitedText": [
+      "unassailable"
+    ],
+    "nativeElement": "details",
+    "defaultCollapsed": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-13/rendering-verification/evidence/debate-30/desktop.json",
+        "collapsedScreenshot": "output/playwright/batch-13-rendering/debate-30/desktop-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-13-rendering/debate-30/desktop-open.jpg"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-13/rendering-verification/evidence/debate-30/mobile.json",
+        "collapsedScreenshot": "output/playwright/batch-13-rendering/debate-30/mobile-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-13-rendering/debate-30/mobile-open.jpg"
+      }
+    }
+  },
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "runnerPolicy": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch13-rendering",
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "screenshotFormat": "jpeg",
+    "screenshotQuality": 85,
+    "screenshotFullPage": false,
+    "interactionOrder": [
+      "observe-default-collapsed-state",
+      "capture-collapsed-screenshot",
+      "open-native-summary-with-pointer",
+      "capture-open-screenshot",
+      "close-with-pointer",
+      "focus-native-summary",
+      "open-with-enter",
+      "close-with-space"
+    ]
+  },
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "nextBatchSelectionWritable": false
+  }
+}

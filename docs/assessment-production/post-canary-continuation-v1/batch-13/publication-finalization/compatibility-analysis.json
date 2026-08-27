@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-finalization-compatibility-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-finalization",
+  "status": "batch-13-production-compatibility-boundary-recorded",
+  "analyzedAt": "2026-08-27T04:57:25Z",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "findings": [
+    {
+      "id": "batch-13-site-ledger-adapter-and-validator-route",
+      "description": "The live validator requires a separately frozen authenticated Batch 13 adapter route before production mutation.",
+      "blocksFinalizationStaging": false,
+      "blocksRenderingVerification": false,
+      "blocksProductionMutation": true
+    }
+  ],
+  "authorization": {
+    "compatibilityPlanPreparation": true,
+    "validatorMigration": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
