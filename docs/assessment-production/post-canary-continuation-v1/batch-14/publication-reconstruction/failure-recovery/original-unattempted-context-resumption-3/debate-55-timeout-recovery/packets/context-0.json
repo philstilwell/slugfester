@@ -1,0 +1,1914 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-timeout-recovery-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-publication-timeout-field-disjoint-recovery",
+  "shardId": "debate-55-shard-1",
+  "debateNumber": "55",
+  "debateId": "craig-malpass-kalam-nothing-2026",
+  "assessmentModel": "5.6 Sol",
+  "writableFields": [
+    "moveProse"
+  ],
+  "writableFieldCount": 1,
+  "originalTimedOutOutputAvailable": false,
+  "rejectedPriorStringsAvailable": false,
+  "allOtherPublicationFieldsUnavailableAndImmutable": true,
+  "participantJudgmentClosed": true,
+  "publicationScoreLocked": true,
+  "originalPublicationPacket": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-packet",
+    "protocolId": "assessment-production-post-canary-batch-14-publication-reconstruction",
+    "debateNumber": "55",
+    "debateId": "craig-malpass-kalam-nothing-2026",
+    "productionCanary": false,
+    "stagingOnly": true,
+    "metadata": {
+      "title": "William Lane Craig vs Alex Malpass: Can Something Come From Nothing?",
+      "label": "Kalam, nothing, and infinity",
+      "date": "2026-08-27",
+      "duration": "1 hr 29 min",
+      "youtubeUrl": "https://www.youtube.com/watch?v=zQBY5K-Ns2Y",
+      "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
+      "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+      "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed."
+    },
+    "sides": {
+      "pro": {
+        "name": "Kalam defender",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Kalam critic",
+        "speaker": "Alex Malpass",
+        "color": "coral"
+      }
+    },
+    "routes": [
+      {
+        "routeId": "pro-kalam-defense-route",
+        "side": "pro",
+        "description": "Establish the Kalam conclusion by defending a cause for anything that begins, showing that a concrete infinite past and its successive formation are impossible, and connecting the universe's finite beginning to a transcendent personal cause.",
+        "successCriteria": "The route succeeds if the causal principle applies to the universe, the philosophical arguments establish a finite past, and conceptual analysis supports a first cause with the power and agency required to originate a temporal universe.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-kalam-completion",
+          "tier": "motion",
+          "description": "Connect the defended causal premise and finite-past premise to a caused beginning of the universe and then to a personal creator."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-causal-principle",
+            "tier": "central",
+            "description": "Require a noncircular justification for applying the principle that whatever begins to exist has a cause to an absolute cosmic beginning."
+          },
+          {
+            "bridgeId": "pro-central-finite-past",
+            "tier": "central",
+            "description": "Require the actual-infinite and successive-addition arguments to exclude a beginningless sequence of past events."
+          },
+          {
+            "bridgeId": "pro-central-personal-cause",
+            "tier": "central",
+            "description": "Require the inferred first cause to account for a finite temporal effect in a way that supports power, transcendence, and personal agency."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-nothing-language",
+            "tier": "subsidiary",
+            "description": "Distinguish the absence of anything from an entity called nothing while preserving the claimed need for a cause without a material source."
+          },
+          {
+            "bridgeId": "pro-subsidiary-infinite-paradoxes",
+            "tier": "subsidiary",
+            "description": "Use part-whole, subtraction, countdown, and non-well-founded sequence cases to support the premises excluding an infinite past."
+          }
+        ]
+      },
+      {
+        "routeId": "con-kalam-critique-route",
+        "side": "con",
+        "description": "Block the Kalam conclusion by challenging the extension of ordinary causal reasoning to all material reality, preserving the coherence of a beginningless past, and showing that a first cause would not by itself entail a powerful timeless personal creator.",
+        "successCriteria": "The route succeeds if a material beginning is not shown to require a cause, the arguments against an actual or successively realized infinite past remain inconclusive, or the inferred cause lacks a warranted path to the creator attributes stated in the motion.",
+        "motionBridge": {
+          "bridgeId": "con-motion-kalam-gap",
+          "tier": "motion",
+          "description": "Connect failures in either Kalam premise or in the conceptual analysis of a first cause to the motion's complete conjunctive claim."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-causal-generalization",
+            "tier": "central",
+            "description": "Require independent support for extending causal judgments about rearrangements of prior material to the categorically different beginning of all material reality."
+          },
+          {
+            "bridgeId": "con-central-infinite-past-coherence",
+            "tier": "central",
+            "description": "Require the alleged absurdities and formation objections to establish impossibility rather than merely counterintuitive features of infinite collections or histories."
+          },
+          {
+            "bridgeId": "con-central-creator-inference",
+            "tier": "central",
+            "description": "Require the first-cause conclusion to exclude weaker, mediated, impersonal, indeterministic, or nonconscious alternatives."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-nonreification",
+            "tier": "subsidiary",
+            "description": "Prevent grammatical references to nothing from supplying an entity, nature, power, or discriminatory capacity that could support the causal premise."
+          },
+          {
+            "bridgeId": "con-subsidiary-local-explanation",
+            "tier": "subsidiary",
+            "description": "Test whether local predecessor and rate facts can explain stages of a beginningless sequence without an unrestricted principle of sufficient reason."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "causation-and-nothing",
+        "title": "Causal Principle, Material Beginning, and Nothing",
+        "weightPercent": 24,
+        "rationale": "This issue determines whether ordinary caused beginnings support a universal causal premise and whether an absolute material beginning requires a cause without reifying nothing.",
+        "timebox": "5:14–20:22",
+        "score": {
+          "pro": 74,
+          "con": 93
+        },
+        "displayRows": [
+          {
+            "pro": "pro-causal-principle-from-nonbeing",
+            "con": "con-causal-material-beginning-distinction"
+          },
+          {
+            "pro": "pro-nothing-means-not-anything",
+            "con": "con-no-prior-powers-circularity"
+          }
+        ]
+      },
+      {
+        "sectionId": "actual-infinite",
+        "title": "Concrete Actual Infinities and Metaphysical Impossibility",
+        "weightPercent": 20,
+        "rationale": "This issue covers whether Hilbert-style part-whole and subtraction cases establish that a concrete actual infinite is impossible rather than merely unusual.",
+        "timebox": "32:33–52:00",
+        "score": {
+          "pro": 76,
+          "con": 93
+        },
+        "displayRows": [
+          {
+            "pro": "pro-concrete-infinite-metaphysical-impossibility",
+            "con": "con-infinite-part-whole-context"
+          },
+          {
+            "pro": "pro-hilbert-hotel-subtraction",
+            "con": "con-transfinite-subtraction-complement"
+          }
+        ]
+      },
+      {
+        "sectionId": "successive-past",
+        "title": "Successive Formation and a Beginningless Past",
+        "weightPercent": 22,
+        "rationale": "This issue tests the independent route from successive addition, countdown timing, local explanation, and non-well-founded sequences to a finite past.",
+        "timebox": "56:25–75:14",
+        "score": {
+          "pro": 75,
+          "con": 91
+        },
+        "displayRows": [
+          {
+            "pro": "pro-successive-addition-impossibility",
+            "con": "con-beginningless-endless-asymmetry"
+          },
+          {
+            "pro": "pro-grim-reaper-descending-series",
+            "con": "con-countdown-local-explanation"
+          }
+        ]
+      },
+      {
+        "sectionId": "first-cause-attributes",
+        "title": "Power and the Structure of the First Cause",
+        "weightPercent": 15,
+        "rationale": "This issue determines whether the universe's magnitude and the termination of intermediate causal chains warrant the claimed power and ultimacy of its first cause.",
+        "timebox": "76:43–79:36",
+        "score": {
+          "pro": 77,
+          "con": 87
+        },
+        "displayRows": [
+          {
+            "pro": "pro-powerful-absolute-first-creator",
+            "con": "con-weak-initiator-mediated-causation"
+          }
+        ]
+      },
+      {
+        "sectionId": "personal-creator",
+        "title": "Personhood, Indeterminism, and Timeless Consciousness",
+        "weightPercent": 19,
+        "rationale": "This issue addresses whether a finite temporal effect specifically requires personal agency and whether timeless changeless personhood is coherent relative to impersonal alternatives.",
+        "timebox": "82:49–87:28",
+        "score": {
+          "pro": 76,
+          "con": 88
+        },
+        "displayRows": [
+          {
+            "pro": "pro-personal-nonphysical-explanation",
+            "con": "con-impersonal-indeterministic-cause"
+          },
+          {
+            "pro": null,
+            "con": "con-dynamic-consciousness-objection"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-causal-principle-from-nonbeing",
+        "sectionId": "causation-and-nothing",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "Whatever begins to exist requires a cause because being cannot arise from nonbeing without something that brings it into existence.",
+        "importance": 3,
+        "finalScore": 73,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "5:14",
+        "sourceSpan": {
+          "startEvent": 127,
+          "endEvent": 157,
+          "startMs": 314120,
+          "endMs": 404360
+        },
+        "sourceExcerpt": "argument and not really interested in finding out the truth about reality. Now since then I have attempted to articulate three arguments in support of the first premise that unpack it a little bit more but still basically rooted in this metaphysical intuition that out of nothing nothing comes and therefore something comes into being there surely has to be a cause that brings it",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-causal-principle"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move supplies the stated metaphysical intuition offered as independent support for the Kalam causal premise.",
+          "responsivenessWithinClass": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The causal claim is recoverable, but the transition from nonbeing to every beginning lacks an explicit scope or modal qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A metaphysical intuition is presented as requiring a cause without sufficient acknowledgment that its universal necessity is disputed."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable causal-principle bridge and occupies the top of the central-contact tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances its own intuition and does not materially characterize a developed opposing alternative."
+          }
+        },
+        "evidenceBasis": "Craig explicitly roots the first premise in the intuition that nothing comes from nothing and infers that a cause must bring an entity into being.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-causal-material-beginning-distinction",
+        "sectionId": "causation-and-nothing",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "Ordinary caused beginnings involve rearrangements of prior material and therefore do not establish that the categorically different beginning of all material reality would require a cause.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "7:22",
+        "sourceSpan": {
+          "startEvent": 177,
+          "endEvent": 268,
+          "startMs": 442800,
+          "endMs": 653800
+        },
+        "sourceExcerpt": "a difference in kind between the humdrum beginnings of things that we see every day and beginning of the universe, which must be in fact different from that. So, I want to brush away all of this consideration of bicycles and and root beer and Beethoven because they're pickwickish in prior sense, right? They're not the metaphysical introduction of material on the stage of reality",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-causal-generalization"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-causal-principle-from-nonbeing"
+          ],
+          "components": [
+            {
+              "componentId": "con-causal-material-beginning-distinction-component-01",
+              "targetMoveId": "pro-causal-principle-from-nonbeing",
+              "text": "Whether examples of ordinary beginnings warrant the universal causal premise for the beginning of all material reality.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass diagnoses a category difference: familiar beginnings rearrange material and therefore cannot by themselves support a cause for material reality's first appearance.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "It expressly identifies the evidential generalization at issue and states why the offered class of examples fails to establish it."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It expressly identifies the evidential generalization at issue and states why the offered class of examples fails to establish it."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast between ordinary material rearrangement and the introduction of all material reality is explicit and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move claims an evidential gap rather than proving that an absolute beginning is uncaused."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Ordinary beginnings might support a broader causal intuition rather than constitute a strict inductive proof.",
+          "decisiveQualification": "Those cases still presuppose prior material and therefore leave the categorical extension independently unsupported."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The bicycle and similar cases specifically illustrate the prior-material feature, with only a bounded gap about other possible warrants."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the con side's indispensable challenge to extending ordinary causal judgments to cosmic origination."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass contrasts bicycles and other humdrum beginnings with the metaphysical introduction of material onto the stage of reality.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-nothing-means-not-anything",
+        "sectionId": "causation-and-nothing",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Nothing means not anything rather than an entity, so saying that the universe came from nothing denies a material source without eliminating the need for a cause.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "17:11",
+        "sourceSpan": {
+          "startEvent": 456,
+          "endEvent": 503,
+          "startMs": 1031720,
+          "endMs": 1147880
+        },
+        "sourceExcerpt": "cause something?\" But if we apply the paraphrase correctly, that means something like everything has some causal power. And now that doesn't do the job of motivating how something could come out of nothing, right? >> Well, I I think it does. Again, if we as long as we understand this is a façon de parler, that we're saying that if the universe came into being but did not do so out of anything",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 395
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-nothing-language"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-causal-material-beginning-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "pro-nothing-means-not-anything-component-01",
+              "targetMoveId": "con-causal-material-beginning-distinction",
+              "text": "Whether denying a prior material source improperly treats nothing as an entity or removes the asserted need for a cause.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-nothing-means-not-anything-component-02",
+              "targetMoveId": "con-causal-material-beginning-distinction",
+              "text": "Whether the material-rearrangement distinction supplies an independent reason for the universal causal premise.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig clarifies the nonreifying paraphrase of nothing and preserves his distinction between material source and cause, but does not justify the causal generalization independently.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "The decisive linguistic component is contacted, while the opponent's broader demand for an independent causal warrant remains unanswered."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "The decisive linguistic component is contacted, while the opponent's broader demand for an independent causal warrant remains unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The phrase 'from nothing' is expressly paraphrased as not coming from anything, keeping entity and absence language distinct."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The paraphrase succeeds linguistically, but its claimed help for the causal premise goes somewhat beyond what clarification alone warrants."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The critic can accept that nothing is not an entity while still denying that an absolute beginning requires a cause.",
+          "decisiveQualification": "Nonreification preserves conceptual grammar but does not independently establish the causal necessity in dispute."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "Craig handles the linguistic concern fairly but compresses the stronger epistemic objection."
+          }
+        },
+        "evidenceBasis": "Craig calls nothing-language a façon de parler and says the universe did not come into being out of anything, distinguishing a source from a cause.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-no-prior-powers-circularity",
+        "sectionId": "causation-and-nothing",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "The absence of prior causal powers does not explain why a substance cannot begin without a cause, so citing that absence cannot noncircularly establish the causal premise.",
+        "importance": 3,
+        "finalScore": 93,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "19:06",
+        "sourceSpan": {
+          "startEvent": 504,
+          "endEvent": 543,
+          "startMs": 1146720,
+          "endMs": 1222040
+        },
+        "sourceExcerpt": "explain why a substance has to have a a cause for its beginning. If I'm genuinely wondering why, it doesn't help me to say that. >> anything prior to the beginning of the universe, then it follows that there are not any causal powers. >> Yes, it does. But what if I was one What if I was wondering why a substance couldn't begin without a cause? Then it would be no help to say, \"Well, because there was nothing",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 411
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-causal-generalization"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-causal-principle-from-nonbeing",
+            "pro-nothing-means-not-anything"
+          ],
+          "components": [
+            {
+              "componentId": "con-no-prior-powers-circularity-component-01",
+              "targetMoveId": "pro-causal-principle-from-nonbeing",
+              "text": "Appealing to the absence of prior causal powers presupposes rather than explains why a substance cannot begin uncaused.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-no-prior-powers-circularity-component-02",
+              "targetMoveId": "pro-nothing-means-not-anything",
+              "text": "The quantificational paraphrase of nothing does not supply the missing reason that a beginning must have a cause.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass expressly identifies the explanatory circularity and states that the absence of prior powers fails to answer the causal-premise question.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It directly diagnoses the central warrant failure and applies it to both earlier formulations."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly diagnoses the central warrant failure and applies it to both earlier formulations."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between absence of prior powers and a reason excluding uncaused beginnings is expressed precisely and consistently."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move establishes an explanatory insufficiency without claiming that uncaused beginnings actually occur."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The absence of prior powers may be offered as clarification of what an uncaused beginning entails rather than as a full proof.",
+          "decisiveQualification": "If used to establish the causal premise, that clarification still supplies no noncircular reason why the entailment is impossible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (89 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden requiring independent justification for the causal generalization."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass explicitly agrees that nothing prior has causal powers, then asks why a substance nevertheless could not begin without a cause.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-concrete-infinite-metaphysical-impossibility",
+        "sectionId": "actual-infinite",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "Concrete actual infinities are metaphysically impossible because cases such as Benardete's book and Hilbert's Hotel yield consequences Craig regards as intolerably absurd.",
+        "importance": 3,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "32:33",
+        "sourceSpan": {
+          "startEvent": 877,
+          "endEvent": 942,
+          "startMs": 1953600,
+          "endMs": 2124000
+        },
+        "sourceExcerpt": "actual infinite number of things, it would result in all sorts of situations that I think are metaphysically impossible. Granted, there is no strict logical contradiction. Infinite set theory is a well-developed uh and for all appearances consistent branch of mathematics, uh but the claim is that this is metaphysically impossible. And one great illustration of this is Benardete's book. Um Jose Benardete",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 64,
+          "characterCount": 406
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-finite-past"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move advances the actual-infinite route by distinguishing mathematical consistency from alleged metaphysical impossibility and introducing paradox cases.",
+          "responsivenessWithinClass": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (75 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (75 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Craig explicitly limits the claim to concrete metaphysical possibility and concedes the consistency of mathematical infinite-set theory."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The mathematical concession is careful, but the excerpt's appeal to intolerable situations does not yet warrant metaphysical impossibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Actual infinities may be mathematically consistent and merely counterintuitive when instantiated rather than metaphysically impossible.",
+          "decisiveQualification": "Craig acknowledges consistency but treats the concrete consequences as an additional metaphysical test."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "Mathematical consistency and metaphysical impossibility are compatibly distinguished, but the governing impossibility criterion is a material missing bridge."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "Named cases provide specific illustration, yet the excerpt largely asserts that their consequences are metaphysically intolerable."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable finite-past bridge by attacking the metaphysical possibility of concrete actual infinities."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig concedes that infinite-set theory appears consistent while asserting concrete instantiation is metaphysically impossible and naming Benardete and Hilbert cases.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-infinite-part-whole-context",
+        "sectionId": "actual-infinite",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "Finite-world intuitions do not establish the impossibility of actual infinities because infinite collections can consistently be equinumerous with proper subsets even though finite collections cannot.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "38:36",
+        "sourceSpan": {
+          "startEvent": 1035,
+          "endEvent": 1097,
+          "startMs": 2316720,
+          "endMs": 2438080
+        },
+        "sourceExcerpt": "part. That's sometimes called Euclid's maximum. >> Right? >> Yes. >> But in the infinite case, as Galileo showed, that you can it just fails, right? There are just as many even numbers as there are natural numbers. So, those two those two um concepts kind of overlap in the infinite case. You can have proper parts that are equinumerous to the whole. Um and that's just, you know, tough. That's what it's like. You can't just take your intuitions",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 77,
+          "characterCount": 446
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-infinite-past-coherence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-concrete-infinite-metaphysical-impossibility"
+          ],
+          "components": [
+            {
+              "componentId": "con-infinite-part-whole-context-component-01",
+              "targetMoveId": "pro-concrete-infinite-metaphysical-impossibility",
+              "text": "Finite part-whole intuitions do not defeat actual infinities when consistent equinumerosity principles govern infinite sets.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass identifies competing intuitions and explains why treating an infinite collection like a finite hotel begs the disputed context.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "It expressly attacks the inference from counterintuitive part-whole behavior to impossibility."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It expressly attacks the inference from counterintuitive part-whole behavior to impossibility."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Finite and infinite domains, proper subsets, one-to-one correspondence, and equinumerosity remain clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move denies that the examples establish impossibility without asserting that concrete actual infinities exist."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The defender may treat proper-subset equinumerosity as metaphysically absurd despite its mathematical consistency.",
+          "decisiveQualification": "That judgment needs an independent metaphysical principle rather than the finite intuition whose extension is disputed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The competing-intuitions analysis consistently explains why a finite part-whole principle does not automatically govern infinite collections."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con bridge requiring impossibility rather than mere counterintuitiveness."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass contrasts Humean one-to-one equinumerosity with the finite proper-part intuition and locates their conflict specifically in infinite settings.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-hilbert-hotel-subtraction",
+        "sectionId": "actual-infinite",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Hilbert's Hotel makes a concrete actual infinity implausible because subtracting equally infinite groups from identical populations can leave zero, finitely many, or infinitely many occupants.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "47:37",
+        "sourceSpan": {
+          "startEvent": 1299,
+          "endEvent": 1335,
+          "startMs": 2857400,
+          "endMs": 2959080
+        },
+        "sourceExcerpt": "Hilbert's hotel? If all of the odd-numbered guests check out, then an infinite number of people have left the hotel. And so, infinity minus infinity is infinity. But, if all the guests in rooms 4, 5, 6, and so on, leave the hotel, then an infinite number of people have left the hotel, but three still remain. So, infinity minus infinity is three. And you can get any number from zero",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 384
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-infinite-paradoxes"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-infinite-part-whole-context"
+          ],
+          "components": [
+            {
+              "componentId": "pro-hilbert-hotel-subtraction-component-01",
+              "targetMoveId": "con-infinite-part-whole-context",
+              "text": "Whether the varying remainders produced by removing equally infinite groups provide a metaphysical reason to reject concrete infinities.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig answers with explicit checkout cases yielding different finite or infinite remainders, but does not establish why context-dependent complements constitute contradiction.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "The central challenge is contacted through a concrete case, though the response remains partial because the impossibility criterion is not defended."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "The central challenge is contacted through a concrete case, though the response remains partial because the impossibility criterion is not defended."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The hotel cases are clear, but ordinary subtraction notation is used across cardinal and set-difference contexts without explicit stabilization."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The examples support counterintuitiveness, but calling them an implausibility argument needs a qualification about the operation being modeled."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Different removals from equinumerous infinite populations can consistently leave different relative complements.",
+          "decisiveQualification": "Craig's objection concerns concrete metaphysical intelligibility, not a formal contradiction in Cantorian arithmetic."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is highly relevant to the subsidiary infinite-paradoxes bridge but does not independently establish the central finite-past claim."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move fairly presents the concrete intuition but omits the decisive formal distinction governing the opponent's strongest answer."
+          }
+        },
+        "evidenceBasis": "Craig compares removal of odd-numbered guests with removal of guests in rooms four onward and highlights their different remainders.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-transfinite-subtraction-complement",
+        "sectionId": "actual-infinite",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "Hilbert's Hotel subtraction cases yield no contradiction because standard Cantorian transfinite arithmetic lacks the assumed infinity-subtraction operation, while relative complements consistently represent each checkout case.",
+        "importance": 3,
+        "finalScore": 94,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "49:16",
+        "sourceSpan": {
+          "startEvent": 1336,
+          "endEvent": 1419,
+          "startMs": 2956760,
+          "endMs": 3120680
+        },
+        "sourceExcerpt": "infinity equals three is uh I actually maybe there are there are various different versions of transfinite arithmetic. I think Conway's got one which does have subtraction. But putting that to one side, seems to me the easiest way, if you want a formal way a formal theory in which to describe those guests leaving Hilbert's Hotel, you just need to appeal to the notion of the relative",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 385
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-infinite-past-coherence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-hilbert-hotel-subtraction",
+            "pro-concrete-infinite-metaphysical-impossibility"
+          ],
+          "components": [
+            {
+              "componentId": "con-transfinite-subtraction-complement-component-01",
+              "targetMoveId": "pro-hilbert-hotel-subtraction",
+              "text": "The checkout cases are consistent relative-complement operations, not contradictory instances of a single infinity-minus-infinity result.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-transfinite-subtraction-complement-component-02",
+              "targetMoveId": "pro-concrete-infinite-metaphysical-impossibility",
+              "text": "Consistent formal representation defeats the claim that the subtraction cases establish metaphysical impossibility by contradiction.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass identifies the arithmetic-category error, supplies relative complements as the proper representation, and states the defeating consequence.",
+          "responsivenessWithinClass": {
+            "value": 96,
+            "rationale": "It explicitly resolves the decisive technical demand and connects the resolution to the impossibility inference."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly resolves the decisive technical demand and connects the resolution to the impossibility inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Cantorian arithmetic, alternative systems, subtraction, and relative complement are carefully distinguished and appropriately scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The qualification about alternative transfinite systems is acknowledged while the limited Cantorian diagnosis remains fully warranted."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The hotel argument may target metaphysical absurdity rather than claim a formal Cantorian contradiction.",
+          "decisiveQualification": "Once each checkout is represented by its actual relative complement, differing remainders cease to be an inconsistency and require another metaphysical premise."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 96,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (95 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central coherence bridge by defeating a principal alleged absurdity of actual infinities."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass notes that standard transfinite arithmetic lacks the assumed subtraction and explains that relative complements formally represent the departing guests.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-successive-addition-impossibility",
+        "sectionId": "successive-past",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "An actual infinite cannot be formed by successive addition, whether a process begins and counts upward without end or is beginningless and terminates at the present.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "56:25",
+        "sourceSpan": {
+          "startEvent": 1546,
+          "endEvent": 1565,
+          "startMs": 3385640,
+          "endMs": 3446480
+        },
+        "sourceExcerpt": "time because I think it's impossible for an actual infinite to be formed by successive addition uh in that way. Um And this would be the case whether you one begins at a point and tries to reach infinity by successive addition or one never begins but counts down from infinity to ending at the present. Either one of these seems to be an an impossible task for forming an actually",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-finite-past"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move states the successive-addition argument and extends it from a begun upward process to a beginningless past ending now.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The claim is clear, but 'formed' and 'counts down from infinity' ambiguously import a starting condition into a beginningless history."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Impossibility is asserted for both structures although the supplied warrant straightforwardly applies only to a process with a beginning."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A beginningless sequence is not formed from a first stage and therefore need not complete an endless upward task.",
+          "decisiveQualification": "Craig needs an independent reason why terminating at the present nonetheless constitutes formation of an infinite by succession."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (59 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable finite-past bridge through an independent successive-formation argument."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig says successive formation is impossible both when counting upward from a beginning and when never beginning but ending at the present.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-beginningless-endless-asymmetry",
+        "sectionId": "successive-past",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "Failure to reach the endpoint of an endless upward count does not show that a beginningless countdown cannot reach its endpoint, because only the latter sequence has an endpoint to reach.",
+        "importance": 3,
+        "finalScore": 93,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "57:23",
+        "sourceSpan": {
+          "startEvent": 1566,
+          "endEvent": 1655,
+          "startMs": 3443440,
+          "endMs": 3623360
+        },
+        "sourceExcerpt": "get you to think that the backwards count from infinity is impossible. But I think that all of those arguments sort of there's a logical gap between the two, right? The difference there's an asymmetry between counting up, right? Which is I can't get to the end of the endless, but the countdown I can get to the end of the beginningless. Right? Because the beginningless thing has",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-infinite-past-coherence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-successive-addition-impossibility"
+          ],
+          "components": [
+            {
+              "componentId": "con-beginningless-endless-asymmetry-component-01",
+              "targetMoveId": "pro-successive-addition-impossibility",
+              "text": "An endless forward count lacks an endpoint, whereas a beginningless countdown has a terminal point, so the alleged symmetry fails.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass explicitly identifies the logical gap between the two series and states why failure in the forward case does not transfer to the beginningless case.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "It directly diagnoses the central inference and supplies the relevant structural distinction."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly diagnoses the central inference and supplies the relevant structural distinction."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Endless, beginningless, upward count, countdown, and endpoint are consistently distinguished throughout the objection."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The categorical conclusion concerns a logical non-entailment supported directly by the structural distinction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The defender may argue that both histories require infinitely many successive transitions before the relevant stage.",
+          "decisiveQualification": "Shared infinite cardinality does not erase the difference between lacking a last stage and lacking a first stage."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 95,
+            "rationale": "The endpoint asymmetry directly invalidates the analogy without assuming that every beginningless sequence is metaphysically possible."
+          },
+          "evidenceWarrant": {
+            "value": 89,
+            "rationale": "The structural comparison itself strongly warrants the limited conclusion, though it does not settle every separate formation objection."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con bridge by defeating the principal analogy behind the successive-addition argument."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass states that an upward count cannot reach the end of the endless, while a beginningless countdown can have an endpoint.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-countdown-local-explanation",
+        "sectionId": "successive-past",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "A counter's fixed rate and immediately preceding number provide legitimate local explanations of each stage, while demanding an ultimate explanation requires a stronger and disputable principle of sufficient reason.",
+        "importance": 2,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "68:25",
+        "sourceSpan": {
+          "startEvent": 1886,
+          "endEvent": 1963,
+          "startMs": 4105920,
+          "endMs": 4250040
+        },
+        "sourceExcerpt": "not an ultimate explanation. And you could say, \"Well, why was he counting two yesterday?\" And I'll say, \"Well, cuz he was counting three the day before that.\" Okay, so I can give partial explanations. It seems like when the bar has been lowered down to the Graham Oppy uh version of the principle of sufficient reason, it's quite easy to meet, actually. So, uh you won't like the",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-local-explanation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-successive-addition-impossibility"
+          ],
+          "components": [
+            {
+              "componentId": "con-countdown-local-explanation-component-01",
+              "targetMoveId": "pro-successive-addition-impossibility",
+              "text": "Whether each stage of a beginningless countdown can be explained without a first stage or unrestricted ultimate explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass supplies predecessor and fixed-rate explanations for individual stages and identifies the stronger sufficient-reason principle needed to demand an ultimate explanation.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "It explicitly contacts the local-explanation demand, though it addresses explanatory adequacy rather than every modal formation objection."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the local-explanation demand, though it addresses explanatory adequacy rather than every modal formation objection."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Local, partial, and ultimate explanations are expressly distinguished, and the claimed explanatory scope is appropriately limited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The cautious claim that local explanations are legitimate and easy under a weaker PSR matches the argument offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A defender may demand an explanation of the entire sequence rather than merely each predecessor relation.",
+          "decisiveQualification": "That demand requires a stronger global sufficient-reason principle not supplied by the local formation objection."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It occupies the top of the subsidiary tier by directly supporting the designated local-explanation bridge."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass explains a stage by the immediately prior number and counting rate, then distinguishes these partial explanations from an ultimate one.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-grim-reaper-descending-series",
+        "sectionId": "successive-past",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "An infinitely descending successive process generates contradiction in the Grim Reaper case, where the victim cannot survive past midnight although no reaper can be the killer.",
+        "importance": 3,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "73:58",
+        "sourceSpan": {
+          "startEvent": 2055,
+          "endEvent": 2083,
+          "startMs": 4438280,
+          "endMs": 4514480
+        },
+        "sourceExcerpt": "dead at 12:15 if you're alive then. But then there's another Grim Reaper who's a who will strike you dead at 12:07 uh point 30 if you're still alive then, ad infinitum. And what the paradox implies is that you cannot live past midnight and yet no Grim Reaper can strike you down. So that here you have an actual logical contradiction from this attempt to successively go through a",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-infinite-past-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-countdown-local-explanation",
+            "con-beginningless-endless-asymmetry"
+          ],
+          "components": [
+            {
+              "componentId": "pro-grim-reaper-descending-series-component-01",
+              "targetMoveId": "con-countdown-local-explanation",
+              "text": "A locally specified infinitely descending causal schedule can generate a global contradiction despite each event's local rule.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-grim-reaper-descending-series-component-02",
+              "targetMoveId": "con-beginningless-endless-asymmetry",
+              "text": "The Grim Reaper construction supplies a distinct contradiction-based challenge to certain descending beginningless series.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig gives a concrete case in which local scheduling conditions jointly imply death without any possible killer, although transfer from that case to every infinite past remains unstated.",
+          "responsivenessWithinClass": {
+            "value": 78,
+            "rationale": "It contacts the local-explanation defense decisively for the constructed case but only partially answers the general beginningless-history claim."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts the local-explanation defense decisively for the constructed case but only partially answers the general beginningless-history claim."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The paradox is clear, but the scope from the specially structured schedule to successive infinite histories generally is implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The contradiction is well supported within the stipulated case, but broader language risks extending it beyond the construction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The contradiction may arise from the Reapers' lethal conditional arrangement rather than from beginningless succession itself.",
+          "decisiveQualification": "A transfer argument is needed to show that an ordinary past sequence instantiates the paradox-producing causal structure."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The stipulated case yields the stated contradiction, though the bridge to beginningless successive histories generally is materially compressed."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The stipulated times and lethal conditions specifically support the case-level contradiction, while the broader transfer warrant is missing."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It centrally attacks the con coherence burden, though less directly than objections aimed at ordinary beginningless histories."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move presents the strongest local contradiction but does not address the restricted-scope interpretation."
+          }
+        },
+        "evidenceBasis": "Craig describes Reapers scheduled at successively earlier times and derives that the victim cannot survive although no individual Reaper kills him.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-weak-initiator-mediated-causation",
+        "sectionId": "first-cause-attributes",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "The universe's magnitude does not entail an enormously powerful first cause because a comparatively weak initiator could produce stronger intermediaries whose causal sequence culminates in a vast effect.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "76:43",
+        "sourceSpan": {
+          "startEvent": 2132,
+          "endEvent": 2185,
+          "startMs": 4603120,
+          "endMs": 4710560
+        },
+        "sourceExcerpt": "not very much power kicks off something that goes on to be quite powerful. So, um it this is a bit of an abstract way of thinking about it, but the you know, the Neoplatonists think about some kind of one the the one which emanates a demiurge that has something like a bit more causal power and a bit more freedom, it which itself emanates a a secondary demiurge that can do a bit",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-creator-inference"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-grim-reaper-descending-series"
+          ],
+          "components": [
+            {
+              "componentId": "con-weak-initiator-mediated-causation-component-01",
+              "targetMoveId": "pro-grim-reaper-descending-series",
+              "text": "Whether excluding an infinite regress would also establish that the first member must itself possess the power of the final effect.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move does not answer the Grim Reaper paradox itself, but diagnoses a later creator-attribute inference by presenting a weak initiator and stronger intermediaries.",
+          "responsivenessWithinClass": {
+            "value": 55,
+            "rationale": "It is issue-bearing contrary material rather than an answer to the legal earlier target's decisive paradox component."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "It is issue-bearing contrary material rather than an answer to the legal earlier target's decisive paradox component."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Weak initiator, stronger intermediary, and large final effect are distinguished clearly, with the example presented as a possibility claim."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The imaginative countermodel is appropriately offered only to block entailment, not to establish its own probability."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The defender may mean total originating power rather than direct production of the final effect.",
+          "decisiveQualification": "A mediated chain still shows that effect magnitude alone does not locate equivalent power in its first initiator."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden to preserve weaker and mediated alternatives to the creator inference."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The countermodel fairly targets the magnitude inference while leaving open independent arguments for first-cause power."
+          }
+        },
+        "evidenceBasis": "Malpass imagines something with little power initiating a sequence that produces more powerful intermediaries and ultimately a vast effect.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-powerful-absolute-first-creator",
+        "sectionId": "first-cause-attributes",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "A cause able to bring the universe into being without a material source is enormously powerful, and any series of intermediate causes must terminate in an absolute first creator.",
+        "importance": 3,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "78:28",
+        "sourceSpan": {
+          "startEvent": 2186,
+          "endEvent": 2212,
+          "startMs": 4708400,
+          "endMs": 4776600
+        },
+        "sourceExcerpt": "committing myself to that, but it does seem to me has to be enormously powerful. Remember this series of demiurges or intermediate causes cannot be infinite in the past. Has to lead back to a first being that is the absolute creator of everything else that follows. And so I think that gives good grounds for thinking that it's plausible that the cause of the origin of the universe",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 382
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-personal-cause"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-weak-initiator-mediated-causation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-powerful-absolute-first-creator-component-01",
+              "targetMoveId": "con-weak-initiator-mediated-causation",
+              "text": "Whether a weak initiator and stronger intermediate causes can avoid an absolute first cause with enormous creative power.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig argues that intermediaries cannot regress infinitely and therefore terminate in an absolute creator, while also appealing to creation without material as evidence of power.",
+          "responsivenessWithinClass": {
+            "value": 77,
+            "rationale": "The regress component is contacted, but the weak-initiator possibility is not fully defeated because termination alone does not establish amplified power."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "The regress component is contacted, but the weak-initiator possibility is not fully defeated because termination alone does not establish amplified power."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Absolute first creator is clear enough, but the standard for enormously powerful shifts between originating without material and downstream causal responsibility."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Craig explicitly frames the power conclusion as plausible, though the first-cause termination does not by itself establish enormous power."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A finite chain could terminate in a weak initiator whose stronger intermediaries directly produce the universe.",
+          "decisiveQualification": "Craig excludes an infinite regress but needs an additional argument that the terminus creates or empowers every later cause."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "Regress termination supports a first member, but the transition to absolute creator and enormous power contains substantial unsupported bridges."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "Creation without material and regress termination are relevant considerations, yet neither is developed enough to exclude mediated amplification."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central personal-cause bridge concerning power, transcendence, and ultimacy."
+          },
+          "representationalCharity": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig says intermediate demiurges cannot extend infinitely into the past and must lead to an absolute first creator, which he calls enormously powerful.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-impersonal-indeterministic-cause",
+        "sectionId": "personal-creator",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "A first cause need not be personal because an impersonal indeterministic cause could actualize at one time without antecedent determining conditions, providing the same timing flexibility attributed to libertarian choice.",
+        "importance": 3,
+        "finalScore": 91,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "82:49",
+        "sourceSpan": {
+          "startEvent": 2299,
+          "endEvent": 2351,
+          "startMs": 4969920,
+          "endMs": 5082880
+        },
+        "sourceExcerpt": "choice on a kind of strong libertarian view, possibly stronger view than than maybe you take, but looks quite like uh indeterministic mechanistic causation anyway. So, the two things sort of very similar-looking and I'm not sure why I'm I'm compelled to believe in the personal option when the indeterministic causation option looks basically just the same except without the personal aspect to it, sort of impersonal",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 417
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-creator-inference"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-powerful-absolute-first-creator"
+          ],
+          "components": [
+            {
+              "componentId": "con-impersonal-indeterministic-cause-component-01",
+              "targetMoveId": "pro-powerful-absolute-first-creator",
+              "text": "Power and causal firstness do not establish personality when an impersonal indeterministic first cause offers the same timing flexibility.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass identifies the unexcluded impersonal alternative and explains that indeterminism can perform the timing role assigned to libertarian choice.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "It directly attacks the inference from first cause to personal agency with a structurally matched alternative."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly attacks the inference from first cause to personal agency with a structurally matched alternative."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is expressly modal and comparative, distinguishing personal libertarian choice from impersonal indeterministic causation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Malpass cautiously offers a possible rival and says he is not compelled, which exactly matches the defeater-level warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Personal agency may possess explanatory features beyond mere indeterministic timing flexibility.",
+          "decisiveQualification": "Unless those further features are independently defended, timing alone does not discriminate between the two causes."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden to preserve impersonal and indeterministic alternatives."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass compares strong libertarian choice with indeterministic mechanistic causation and questions why the otherwise similar personal option is compulsory.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-personal-nonphysical-explanation",
+        "sectionId": "personal-creator",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Because the initial state is nonphysical and no plausible impersonal indeterministic account explains a universe arising only finitely long ago, a personal explanation is appropriate.",
+        "importance": 3,
+        "finalScore": 76,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "84:40",
+        "sourceSpan": {
+          "startEvent": 2352,
+          "endEvent": 2377,
+          "startMs": 5080720,
+          "endMs": 5146720
+        },
+        "sourceExcerpt": "plausible account of that sort of impersonal indeterministic causation of the universe. We're talking about a non-physical state of affairs uh and therefore, I think the appropriate category would be a personal explanation because appeal to things like quantum indeterminacy and so forth isn't going to get you the origin of the universe just 13.8 billion years ago if there's any",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-personal-cause"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-impersonal-indeterministic-cause"
+          ],
+          "components": [
+            {
+              "componentId": "pro-personal-nonphysical-explanation-component-01",
+              "targetMoveId": "con-impersonal-indeterministic-cause",
+              "text": "The proposed impersonal alternative lacks a plausible nonphysical model explaining why the universe begins only finitely long ago.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig directly challenges the alternative's plausibility and distinguishes it from physical quantum cases, but largely infers personality from the absence of a supplied rival mechanism.",
+          "responsivenessWithinClass": {
+            "value": 82,
+            "rationale": "It explicitly contacts the decisive alternative, with a material residual burden to justify the personal category positively."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It explicitly contacts the decisive alternative, with a material residual burden to justify the personal category positively."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The nonphysical domain, finite timing demand, and comparative conclusion are identifiable and cautiously phrased."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The personal account is framed as appropriate rather than certain, but absence of a supplied rival model only weakly supports preference."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A nonphysical impersonal cause could be fundamentally indeterministic without resembling physical quantum processes.",
+          "decisiveQualification": "Rejecting physical quantum examples does not by itself exclude a sui generis nonphysical impersonal alternative."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 62,
+            "rationale": "The move presents a coherent personal hypothesis, but the inference from nonphysicality and finite timing to personhood is a substantial non sequitur."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "It relies mainly on lack of a plausible impersonal account and an inapplicable quantum comparison rather than serious rival analysis."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable central bridge from first cause to personal agency."
+          },
+          "representationalCharity": {
+            "value": 59,
+            "rationale": "The reply narrows the rival to familiar physical indeterminacy and omits the decisive qualification that the proposed cause is nonphysical."
+          }
+        },
+        "evidenceBasis": "Craig emphasizes a nonphysical initial state, rejects quantum indeterminacy as an explanation of finite cosmic origin, and selects a personal category.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-dynamic-consciousness-objection",
+        "sectionId": "personal-creator",
+        "side": "con",
+        "speaker": "Alex Malpass",
+        "moveKind": "reply",
+        "proposition": "A timeless personal creator is doubtful because consciousness appears essentially dynamic, making it unclear how a wholly changeless disembodied mind could remain conscious rather than lack experience.",
+        "importance": 3,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "85:51",
+        "sourceSpan": {
+          "startEvent": 2382,
+          "endEvent": 2429,
+          "startMs": 5151000,
+          "endMs": 5248400
+        },
+        "sourceExcerpt": "mind that's completely disembodied and changeless. >> Yes. >> And um it's not quite so clear to me that that's unproblematic, right? Like I think um I have this idea that I can tell through my own direct acquaintance with my consciousness, like what it's like to be conscious, that it's dynamic. It's essentially dynamic, it seems to me. That you know, for instance, if I fall into a completely dreamless sleep",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 410
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-creator-inference"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-personal-nonphysical-explanation"
+          ],
+          "components": [
+            {
+              "componentId": "con-dynamic-consciousness-objection-component-01",
+              "targetMoveId": "pro-personal-nonphysical-explanation",
+              "text": "Whether a timeless, changeless, disembodied personal cause can coherently possess the consciousness required by the proposed explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Malpass directly challenges the coherence of timeless personhood by appealing to apparent dynamism in conscious experience and the absence of experience in dreamless sleep.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "It contacts the decisive consciousness requirement explicitly, although the introspective warrant remains defeasible rather than diagnostic."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It contacts the decisive consciousness requirement explicitly, although the introspective warrant remains defeasible rather than diagnostic."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection is recoverable and explicitly tentative, but dynamic consciousness and changelessness are not fully analyzed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Phrases such as 'not quite clear' and 'seems to me' appropriately match the limited introspective evidence offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A timeless mind might possess an atemporal unified awareness rather than temporally changing experiences.",
+          "decisiveQualification": "The defender must explain how such awareness remains recognizably conscious despite lacking the dynamism apparent in familiar consciousness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con burden by challenging the coherence of the personal nonphysical alternative."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Malpass invokes direct acquaintance with consciousness as dynamic and contrasts it with dreamless sleep to question changeless disembodied awareness.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "calculatedScores": {
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 75.45,
+          "burdenCompletionAdjustment": 0,
+          "score": 75
+        },
+        "con": {
+          "weightedSectionMean": 90.71,
+          "burdenCompletionAdjustment": 0,
+          "score": 91
+        }
+      },
+      "winner": "con",
+      "winningMargin": 16,
+      "scoreProtocolId": "assessment-production-post-canary-batch-14-single-deterministic-score-pass"
+    },
+    "sourceChain": {
+      "transcriptPath": ".assessment-cache/captions/zQBY5K-Ns2Y/transcript.txt",
+      "transcriptSha256": "305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2",
+      "eventsPath": ".assessment-cache/captions/zQBY5K-Ns2Y/events.json",
+      "eventsSha256": "d09e63acc41236158b808b6242c871428a467697fba1f2454cfac143c185aa3f",
+      "localManifestPath": ".assessment-cache/captions/zQBY5K-Ns2Y/manifest.json",
+      "localManifestSha256": "73f97e374fa98f388528e03ed39e1272f77c9fec6cee46345fdfba9c3177c099"
+    },
+    "publicationBoundary": {
+      "participantJudgmentClosed": true,
+      "participantJudgmentWasScoreBlind": true,
+      "adjudicationClosed": true,
+      "scoresLocked": true,
+      "ownDebateCalculatedScoresAvailableAsImmutableInputs": true,
+      "modelAuthorsNoIdentityStructureMoveOrScoreField": true,
+      "allLockedMovesMustReceiveProse": true,
+      "legacyAssessmentUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "aiExtensionNeverScored": true
+    },
+    "prohibitedInputs": [
+      "legacy scores",
+      "legacy critiques",
+      "legacy tags",
+      "legacy Overall Commentary",
+      "legacy AI Extension",
+      "other debates",
+      "rankings",
+      "winner comparisons"
+    ]
+  }
+}

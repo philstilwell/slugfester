@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b14-debate55-publication-timeout-recovery-2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "summary",
+    "representativeQuotes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-14-publication-timeout-recovery-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-14-publication-timeout-field-disjoint-recovery"
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-55-shard-2"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "55"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-kalam-nothing-2026"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "representativeQuotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "pro-causal-principle-from-nonbeing",
+                "pro-nothing-means-not-anything",
+                "pro-concrete-infinite-metaphysical-impossibility",
+                "pro-hilbert-hotel-subtraction",
+                "pro-successive-addition-impossibility",
+                "pro-grim-reaper-descending-series",
+                "pro-powerful-absolute-first-creator",
+                "pro-personal-nonphysical-explanation"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "con-causal-material-beginning-distinction",
+                "con-no-prior-powers-circularity",
+                "con-infinite-part-whole-context",
+                "con-transfinite-subtraction-complement",
+                "con-beginningless-endless-asymmetry",
+                "con-countdown-local-explanation",
+                "con-weak-initiator-mediated-causation",
+                "con-impersonal-indeterministic-cause",
+                "con-dynamic-consciousness-objection"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        }
+      }
+    }
+  }
+}
