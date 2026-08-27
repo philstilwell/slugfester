@@ -1,0 +1,158 @@
+#!/usr/bin/env node
+
+import assert from "node:assert/strict";
+import { execFileSync, spawn } from "node:child_process";
+import { createHash } from "node:crypto";
+import { access, copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+
+import { validatePostCanaryBatch14PublicationOutput } from "./lib/assessment-production-post-canary-batch-14-publication-validation.mjs";
+
+const PUBLICATION_ROOT = "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction";
+const ROOT = `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-4`;
+const PROTOCOL_ID = "assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-4";
+const ORIGINAL_CONTEXT_INDEXES = [8, 9];
+const DEBATES = ["106", "57"];
+const ACCEPTED_DEBATES = ["53", "69", "110", "133", "12", "187", "160", "55"];
+const CAFFEINATE = "/usr/bin/caffeinate";
+const SCRIPT = "scripts/assessment-production-post-canary-batch-14-publication-resumption-4.mjs";
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+const pretty = (value) => `${JSON.stringify(value, null, 2)}\n`;
+const readJson = (file) => readFile(path.resolve(file), "utf8").then(JSON.parse);
+const exists = (file) => access(path.resolve(file)).then(() => true, () => false);
+const mode = process.argv.find((arg) => ["--prepare", "--activate", "--run", "--analyze"].includes(arg));
+assert(mode, "one mode is required");
+const shouldWrite = process.argv.includes("--write");
+const atIndex = process.argv.indexOf("--at");
+const at = atIndex >= 0 ? process.argv[atIndex + 1] : null;
+if (["--prepare", "--activate"].includes(mode)) assert(at && !Number.isNaN(Date.parse(at)), "--at requires an ISO timestamp");
+
+const files = {
+  originalPreparation: `${PUBLICATION_ROOT}/execution-preparation-manifest.json`,
+  originalActivation: `${PUBLICATION_ROOT}/execution-activation.json`,
+  originalExecution: `${PUBLICATION_ROOT}/model-execution.json`,
+  originalAnalysis: `${PUBLICATION_ROOT}/analysis.json`,
+  resumption1Execution: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-1/model-execution.json`,
+  resumption1Analysis: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-1/analysis.json`,
+  resumption2Execution: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-2/model-execution.json`,
+  resumption2Analysis: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-2/analysis.json`,
+  resumption3Execution: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-3/model-execution.json`,
+  resumption3Analysis: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-3/analysis.json`,
+  debate53Recovery: `${PUBLICATION_ROOT}/failure-recovery/critique-repair-level-2/analysis.json`,
+  debates110And133Recovery: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-1/critique-repair-level-2/analysis.json`,
+  debate12Recovery: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-2/critique-repair-level-2/analysis.json`,
+  debate55Recovery: `${PUBLICATION_ROOT}/failure-recovery/original-unattempted-context-resumption-3/debate-55-timeout-recovery/critique-repair-level-2/exceptional-atomic-recovery/analysis.json`,
+  standingAuthorization: "docs/assessment-production/post-canary-continuation-v1/batch-14/standing-authorization.json",
+  scoreOutput: "docs/assessment-production/post-canary-continuation-v1/batch-14/score-pass/calculated-scores.json",
+  preparation: `${ROOT}/execution-preparation-manifest.json`,
+  activation: `${ROOT}/execution-activation.json`,
+  execution: `${ROOT}/model-execution.json`,
+  analysis: `${ROOT}/analysis.json`,
+  completeCohort: `${ROOT}/complete-cohort-analysis.json`
+};
+
+function invoke(command, args, options, timeoutMs) {
+  return new Promise((resolve) => {
+    const child = spawn(CAFFEINATE, ["-dimsu", command, ...args], { ...options, detached: true, stdio: ["ignore", "pipe", "pipe"] });
+    let stdout = ""; let stderr = ""; let timedOut = false; let forceTimer = null;
+    child.stdout.on("data", (chunk) => { stdout += chunk; }); child.stderr.on("data", (chunk) => { stderr += chunk; });
+    const terminate = (signal) => { try { process.kill(-child.pid, signal); } catch { child.kill(signal); } };
+    const timer = setTimeout(() => { timedOut = true; terminate("SIGTERM"); forceTimer = setTimeout(() => terminate("SIGKILL"), 5000); }, timeoutMs);
+    child.on("error", (error) => { clearTimeout(timer); if (forceTimer) clearTimeout(forceTimer); resolve({ code: null, signal: null, stdout, stderr, timedOut, error }); });
+    child.on("close", (code, signal) => { clearTimeout(timer); if (forceTimer) clearTimeout(forceTimer); resolve({ code, signal, stdout, stderr, timedOut, error: null }); });
+  });
+}
+
+if (mode === "--prepare") {
+  const statePaths = [files.originalPreparation, files.originalActivation, files.originalExecution, files.originalAnalysis, files.resumption1Execution, files.resumption1Analysis, files.resumption2Execution, files.resumption2Analysis, files.resumption3Execution, files.resumption3Analysis, files.debate53Recovery, files.debates110And133Recovery, files.debate12Recovery, files.debate55Recovery, files.standingAuthorization, files.scoreOutput];
+  const state = Object.fromEntries(await Promise.all(statePaths.map(async (file) => [file, await readJson(file)])));
+  const originalPreparation = state[files.originalPreparation]; const originalExecution = state[files.originalExecution];
+  assert.equal(originalPreparation.contexts.length, 10); assert.equal(originalExecution.status, "post-canary-batch-14-publication-gate-complete-with-failure");
+  assert.deepEqual(originalExecution.unattemptedContextIndexes, [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  assert.equal(state[files.resumption1Execution].status, "nine-context-publication-resumption-stopped-with-failure"); assert.deepEqual(state[files.resumption1Execution].unattemptedOriginalContextIndexes, [4, 5, 6, 7, 8, 9]);
+  assert.equal(state[files.resumption2Execution].status, "six-context-publication-resumption-stopped-with-failure"); assert.deepEqual(state[files.resumption2Execution].unattemptedOriginalContextIndexes, [5, 6, 7, 8, 9]);
+  assert.equal(state[files.resumption3Execution].status, "five-context-publication-resumption-stopped-with-failure"); assert.deepEqual(state[files.resumption3Execution].unattemptedOriginalContextIndexes, ORIGINAL_CONTEXT_INDEXES);
+  assert.equal(state[files.debate53Recovery].status, "debate-53-two-level-field-disjoint-publication-recovery-passed-awaiting-nine-context-resumption");
+  assert.equal(state[files.debates110And133Recovery].status, "debates-110-and-133-two-level-field-disjoint-publication-recovery-passed-awaiting-six-context-resumption");
+  assert.equal(state[files.debate12Recovery].status, "debate-12-two-level-field-disjoint-publication-recovery-passed-awaiting-five-context-resumption");
+  assert.equal(state[files.debate55Recovery].status, "debate-55-exceptional-third-level-atomic-shard-recovery-passed-awaiting-two-context-resumption"); assert.equal(state[files.debate55Recovery].scorePassRerun, false);
+  const scores = state[files.scoreOutput]; assert.equal(scores.status, "post-canary-batch-14-single-score-pass-stability-gate-passed"); assert.equal(scores.totals.scoringPasses, 1);
+  const contexts = ORIGINAL_CONTEXT_INDEXES.map((originalContextIndex, resumptionIndex) => {
+    const original = originalPreparation.contexts[originalContextIndex];
+    assert.equal(original.contextIndex, originalContextIndex); assert.equal(original.debateNumber, DEBATES[resumptionIndex]);
+    return { ...structuredClone(original), resumptionIndex, originalContextIndex, priorAttemptCount: 0, thisIsOriginalFirstAttempt: true };
+  });
+  assert.equal(contexts.reduce((sum, item) => sum + item.moves, 0), 37); assert.equal(contexts.reduce((sum, item) => sum + item.sections, 0), 10); assert.equal(contexts.reduce((sum, item) => sum + item.audioVerifiedMoves, 0), 3);
+  for (const context of contexts) { assert(!(await exists(context.rawOutput)), `Debate ${context.debateNumber} output exists`); assert(!(await exists(context.validation)), `Debate ${context.debateNumber} validation exists`); assert(!(await exists(context.provenance)), `Debate ${context.debateNumber} provenance exists`); }
+  const acceptedEvidence = [];
+  for (const debateNumber of ACCEPTED_DEBATES) {
+    const output = `${PUBLICATION_ROOT}/outputs/debate-${debateNumber}.json`; const packet = `${PUBLICATION_ROOT}/packets/debate-${debateNumber}.json`; const validationRecord = `${PUBLICATION_ROOT}/validations/debate-${debateNumber}.json`; const provenance = `${PUBLICATION_ROOT}/provenance/debate-${debateNumber}.json`;
+    assert.equal(validatePostCanaryBatch14PublicationOutput(await readJson(output), await readJson(packet)).status, "passed"); acceptedEvidence.push(output, packet, validationRecord, provenance);
+  }
+  const sourcePaths = [...statePaths, ...acceptedEvidence, originalPreparation.modelInputs.productionWorkflow, originalPreparation.modelInputs.readinessWorkflow, originalPreparation.modelInputs.outputContract, originalPreparation.modelInputs.manual, originalPreparation.modelInputs.referenceCatalog, ...contexts.flatMap((item) => [item.packet, item.schema]), SCRIPT, "scripts/lib/assessment-production-post-canary-batch-14-publication-validation.mjs", "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs", "scripts/lib/v388-reconstruction.mjs", "scripts/lib/v4-lean-production.mjs", "src/data/references.js", CAFFEINATE];
+  const sourceHashes = {}; for (const file of [...new Set(sourcePaths)]) sourceHashes[file] = sha256(await readFile(path.resolve(file)));
+  const futureOutputs = [files.activation, files.execution, files.analysis, files.completeCohort, ...contexts.flatMap((item) => [item.rawOutput, item.validation, item.provenance])];
+  for (const future of futureOutputs) assert(!(await exists(future)), `future output exists: ${future}`);
+  const manifest = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-preparation", protocolId: PROTOCOL_ID, status: "frozen-two-original-unattempted-batch-14-publication-contexts-prepared-not-activated", frozenAt: at, checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(), productionCanary: false, batchNumber: 14, stagingOnly: true, model: originalPreparation.model, modelInputs: originalPreparation.modelInputs, executionEnvironment: { ...originalPreparation.executionEnvironment, hostAwakeGuard: { path: CAFFEINATE, args: ["-dimsu"] } }, executionPolicy: { contexts: 2, attemptsPerContext: 1, retriesMaximum: 0, correctionContextsMaximum: 0, timeoutMsPerContext: 600000, timeoutExtensionsMaximum: 0, maximumParallelContexts: 1, schedulerRamp: [1, 1], stopOnFailure: true, directIncrementalCostUsdMaximum: 0, paidServices: false, removedEnvironmentVariables: originalPreparation.executionPolicy.removedEnvironmentVariables }, contexts, totals: { debates: 2, contexts: 2, moves: 37, sections: 10, audioVerifiedMoves: 3, modelContextsExecuted: 0, modelAuthoredScores: 0, scorePassesExecutedThisStage: 0, paidServiceCallsThisStage: 0, directIncrementalCostUsd: 0 }, acceptedPriorDebates: ACCEPTED_DEBATES, sourceHashes, futureOutputs, authorization: { preparation: true, activation: true, modelExecution: false, deterministicValidationAndCompleteCohortReplay: false, retries: false, corrections: false, scorePass: false, productionMutation: false, nextBatchSelection: false }, nextAuthorizedAction: "activate-two-original-unattempted-publication-contexts" };
+  if (shouldWrite) { await mkdir(path.resolve(ROOT), { recursive: true }); await writeFile(files.preparation, pretty(manifest)); }
+  console.log(pretty({ status: shouldWrite ? manifest.status : "preview", originalContextIndexes: ORIGINAL_CONTEXT_INDEXES, debates: DEBATES, contexts: 2, moves: 37, attemptsMaximum: 2, retriesMaximum: 0, directIncrementalCostUsdMaximum: 0 })); process.exit(0);
+}
+
+if (mode === "--activate") {
+  const preparationBytes = await readFile(files.preparation); const preparation = JSON.parse(preparationBytes);
+  assert.equal(preparation.status, "frozen-two-original-unattempted-batch-14-publication-contexts-prepared-not-activated"); assert.equal(preparation.contexts.length, 2); assert.deepEqual(preparation.contexts.map((item) => item.originalContextIndex), ORIGINAL_CONTEXT_INDEXES); assert.deepEqual(preparation.contexts.map((item) => item.debateNumber), DEBATES); assert(!(await exists(files.activation)), "activation exists");
+  for (const [file, digest] of Object.entries(preparation.sourceHashes)) assert.equal(sha256(await readFile(path.resolve(file))), digest, `source changed: ${file}`);
+  const activation = { ...preparation, schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-activation", status: "frozen-two-original-unattempted-batch-14-publication-contexts-activated", activatedAt: at, checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(), preparation: { path: files.preparation, sha256: sha256(preparationBytes) }, sourceHashes: { ...preparation.sourceHashes, [files.preparation]: sha256(preparationBytes) }, futureOutputs: preparation.futureOutputs.filter((file) => file !== files.activation), authorization: { ...preparation.authorization, preparation: false, activation: false, modelExecution: true, deterministicValidationAndCompleteCohortReplay: true }, nextAuthorizedAction: "execute-only-two-frozen-original-unattempted-publication-contexts" }; delete activation.frozenAt;
+  if (shouldWrite) await writeFile(files.activation, pretty(activation));
+  console.log(pretty({ status: shouldWrite ? activation.status : "preview", originalContextIndexes: ORIGINAL_CONTEXT_INDEXES, debates: DEBATES, contextsAuthorized: 2, schedulerRamp: [1, 1], attemptsPerContext: 1, retriesMaximum: 0, directIncrementalCostUsdMaximum: 0 })); process.exit(0);
+}
+
+if (mode === "--run") {
+  const activation = await readJson(files.activation);
+  assert.equal(activation.status, "frozen-two-original-unattempted-batch-14-publication-contexts-activated"); assert.equal(activation.authorization.modelExecution, true); assert.equal(activation.contexts.length, 2); assert.deepEqual(activation.contexts.map((item) => item.originalContextIndex), ORIGINAL_CONTEXT_INDEXES);
+  for (const [file, digest] of Object.entries(activation.sourceHashes)) assert.equal(sha256(await readFile(path.resolve(file))), digest, `source changed: ${file}`);
+  for (const future of activation.futureOutputs) assert(!(await exists(future)), `future output exists: ${future}`);
+  const codex = activation.executionEnvironment.codexPath; const authSource = path.join(os.homedir(), ".codex", "auth.json"); await access(codex); await access(CAFFEINATE); await access(authSource);
+  async function runContext(context) {
+    const temp = await mkdtemp(path.join(os.tmpdir(), `batch-14-publication-resumption-${context.debateNumber}-`)); const codexTaskHome = await mkdtemp(path.join(os.tmpdir(), `batch-14-publication-resumption-home-${context.debateNumber}-`)); const startedAt = new Date().toISOString(); const started = Date.now();
+    try {
+      const copies = [[activation.modelInputs.productionWorkflow, "production-workflow.md"], [activation.modelInputs.readinessWorkflow, "readiness-workflow.md"], [activation.modelInputs.outputContract, "output-contract.md"], [activation.modelInputs.manual, "manual.md"], [activation.modelInputs.referenceCatalog, "reference-catalog.json"], [context.packet, "packet.json"], [context.schema, "schema.json"]];
+      for (const [source, target] of copies) await copyFile(path.resolve(source), path.join(temp, target)); await copyFile(authSource, path.join(codexTaskHome, "auth.json"));
+      const environment = { ...process.env, CODEX_HOME: codexTaskHome }; for (const key of activation.executionPolicy.removedEnvironmentVariables) delete environment[key];
+      const prompt = ["Read production-workflow.md, readiness-workflow.md, output-contract.md, manual.md, reference-catalog.json, packet.json, and schema.json completely and no other files.", `Act only as the isolated publication editor for Debate ${context.debateNumber}.`, "This is the original first attempt for this debate, not a retry. Participant judgment, adjudication, move selection, and every score are closed and repository-owned; participant judgment was score-blind.", "Author exactly the schema fields: an 18–28 word summary; source-exact representative quotes targeting 6–14 words; prose for every locked move; Overall Commentary; optional material-only local reference tags; and a balanced, separately disclosed AI Extension with globally unique item IDs and complete novelty mappings.", "Write every critique in exactly four ordered labeled sentences, target 112–118 words, stay within 105–130 words, use at least 880 characters, and end every sentence with terminal punctuation.", "Before returning, count and verify every critique's four sentences, word range, minimum character count, ordered labels, and terminal punctuation; verify both representative quotes are exact contiguous source substrings.", "Never infer, emit, recalculate, or suggest changing a score; never change identity, structure, move selection, or source evidence; never consult legacy assessment material, any accepted prior Batch 14 output, other debates, rankings, winners, or another model context; never attribute AI material to a participant.", "Use no CJK, Hangul, Kana, or replacement characters and no prohibited rational-invulnerability language.", "Return exactly one schema-conforming JSON object and nothing else."].join(" ");
+      process.stdout.write(`[batch-14-publication-resumption-4] starting original index ${context.originalContextIndex} Debate ${context.debateNumber}\n`);
+      const invocation = await invoke(codex, ["exec", "--ephemeral", "--skip-git-repo-check", "--ignore-user-config", "--ignore-rules", "--model", activation.model.slug, "-c", `model_reasoning_effort=\"${activation.model.reasoningEffort}\"`, "--disable", "plugins", "--disable", "remote_plugin", "--disable", "skill_search", "--disable", "apps", "--disable", "memories", "--disable", "multi_agent", "--disable", "browser_use", "--disable", "computer_use", "--disable", "workspace_dependencies", "--sandbox", "read-only", "--output-schema", "schema.json", "--output-last-message", "result.json", prompt], { cwd: temp, env: environment }, activation.executionPolicy.timeoutMsPerContext);
+      const resultPath = path.join(temp, "result.json"); const resultExists = await exists(resultPath);
+      const base = { resumptionIndex: context.resumptionIndex, originalContextIndex: context.originalContextIndex, debateNumber: context.debateNumber, debateId: context.debateId, model: activation.model.label, reasoningEffort: activation.model.reasoningEffort, authentication: "ChatGPT subscription", originalFirstAttempt: true, priorAttemptCount: 0, attemptCount: 1, retryCount: 0, timeoutExtensionCount: 0, correctionContextCount: 0, startedAt, completedAt: new Date().toISOString(), elapsedMs: Date.now() - started, timedOut: invocation.timedOut, commandExitCode: invocation.code, terminationSignal: invocation.signal, apiKeysRemoved: true, isolatedTemporaryCodexHome: true, isolatedTemporaryWorkingDirectory: true, hostAwakeGuardApplied: true, participantJudgmentWasScoreBlind: true, ownDebateScoresImmutable: true, meteredApiCostUsd: 0, paidServiceCallsThisStage: 0, modelAuthoredScores: 0, scorePassesExecutedThisStage: 0, stdoutSha256: sha256(invocation.stdout), stderrSha256: sha256(invocation.stderr) };
+      if (invocation.error || invocation.timedOut || invocation.code !== 0 || invocation.signal !== null || !resultExists) return { ...base, status: invocation.timedOut ? "timed-out" : !resultExists ? "result-missing" : "transport-failed", gateAcceptancePassed: false, outputWritten: false, validationWritten: false, provenanceWritten: false, failureMessage: `${invocation.error?.stack ?? ""}\n${invocation.stdout}\n${invocation.stderr}`.trim().slice(-10000) };
+      const resultBytes = await readFile(resultPath); await mkdir(path.dirname(path.resolve(context.rawOutput)), { recursive: true }); await writeFile(context.rawOutput, resultBytes);
+      let validationSummary = null; let validationMessage = null; try { validationSummary = validatePostCanaryBatch14PublicationOutput(JSON.parse(resultBytes), await readJson(context.packet)); } catch (error) { validationMessage = String(error?.stack ?? error).slice(-10000); }
+      const accepted = validationSummary?.status === "passed";
+      const validation = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-resumption-validation", protocolId: activation.protocolId, status: accepted ? "passed" : "failed", originalContextIndex: context.originalContextIndex, debateNumber: context.debateNumber, debateId: context.debateId, outputSha256: sha256(resultBytes), validationSummary, validationMessage, modelAuthoredScores: 0, lockedScoresUnchanged: accepted ? true : null };
+      const provenance = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-resumption-provenance", protocolId: activation.protocolId, originalContextIndex: context.originalContextIndex, debateNumber: context.debateNumber, debateId: context.debateId, model: activation.model, authentication: "ChatGPT subscription", originalFirstAttempt: true, priorAttemptCount: 0, attemptCount: 1, retryCount: 0, timeoutExtensionCount: 0, correctionContextCount: 0, hostAwakeGuardApplied: true, copiedInputs: Object.fromEntries(copies.map(([source, target]) => [target, { source, sha256: activation.sourceHashes[source] }])), outputSha256: sha256(resultBytes), modelAuthoredScores: 0, meteredApiCostUsd: 0, paidServiceCallsThisStage: 0 };
+      const validationBytes = Buffer.from(pretty(validation)); const provenanceBytes = Buffer.from(pretty(provenance)); await mkdir(path.dirname(path.resolve(context.validation)), { recursive: true }); await mkdir(path.dirname(path.resolve(context.provenance)), { recursive: true }); await writeFile(context.validation, validationBytes); await writeFile(context.provenance, provenanceBytes);
+      return { ...base, status: accepted ? "completed-valid" : "output-validation-failed", gateAcceptancePassed: accepted, outputWritten: true, validationWritten: true, provenanceWritten: true, outputSha256: sha256(resultBytes), validationSha256: sha256(validationBytes), provenanceSha256: sha256(provenanceBytes), validationSummary, validationMessage };
+    } finally { await rm(temp, { recursive: true, force: true }); await rm(codexTaskHome, { recursive: true, force: true }); }
+  }
+  const startedAt = new Date().toISOString(); const started = Date.now(); const results = [];
+  for (const context of activation.contexts) { const result = await runContext(context); results.push(result); if (!result.gateAcceptancePassed) break; }
+  const validContexts = results.filter((item) => item.gateAcceptancePassed).length; const passed = results.length === 2 && validContexts === 2;
+  const execution = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-execution", protocolId: activation.protocolId, status: passed ? "two-original-unattempted-batch-14-publication-contexts-passed" : "two-context-publication-resumption-stopped-with-failure", productionCanary: false, batchNumber: 14, stagingOnly: true, startedAt, completedAt: new Date().toISOString(), wallElapsedMs: Date.now() - started, contextsPlanned: 2, contextsAttempted: results.length, contextsUnattempted: 2 - results.length, validContexts, invalidContexts: results.length - validContexts, attempts: results.length, retries: 0, timeoutExtensions: 0, correctionContexts: 0, originalFirstAttemptsOnly: true, meteredApiCostUsd: 0, paidServiceCallsThisStage: 0, modelAuthoredScores: 0, scorePassesExecutedThisStage: 0, results, unattemptedOriginalContextIndexes: ORIGINAL_CONTEXT_INDEXES.slice(results.length), authorization: { analysis: true, retries: false, corrections: false, scorePass: false, paidServices: false, productionMutation: false, nextBatchSelection: false } };
+  await writeFile(files.execution, pretty(execution)); console.log(pretty({ status: execution.status, contextsAttempted: execution.contextsAttempted, validContexts, invalidContexts: execution.invalidContexts, contextsUnattempted: execution.contextsUnattempted, elapsedMinutes: Number((execution.wallElapsedMs / 60000).toFixed(2)), attempts: execution.attempts, retries: 0, directIncrementalCostUsd: 0 })); assert(passed, "two-context publication resumption failed"); process.exit(0);
+}
+
+if (mode === "--analyze") {
+  const [preparationBytes, activationBytes, executionBytes] = await Promise.all([files.preparation, files.activation, files.execution].map((file) => readFile(path.resolve(file)))); const preparation = JSON.parse(preparationBytes); const activation = JSON.parse(activationBytes); const execution = JSON.parse(executionBytes);
+  assert.equal(execution.status, "two-original-unattempted-batch-14-publication-contexts-passed"); assert.equal(execution.contextsAttempted, 2); assert.equal(execution.validContexts, 2); assert.equal(execution.retries, 0);
+  for (const [file, digest] of Object.entries(activation.sourceHashes)) assert.equal(sha256(await readFile(path.resolve(file))), digest, `source changed: ${file}`);
+  const replayed = [];
+  for (const result of execution.results) { const context = activation.contexts.find((item) => item.originalContextIndex === result.originalContextIndex); const [outputBytes, packetBytes, validationBytes, provenanceBytes] = await Promise.all([context.rawOutput, context.packet, context.validation, context.provenance].map((file) => readFile(path.resolve(file)))); assert.equal(sha256(outputBytes), result.outputSha256); assert.equal(sha256(validationBytes), result.validationSha256); assert.equal(sha256(provenanceBytes), result.provenanceSha256); const validation = validatePostCanaryBatch14PublicationOutput(JSON.parse(outputBytes), JSON.parse(packetBytes)); const validationRecord = JSON.parse(validationBytes); const provenance = JSON.parse(provenanceBytes); assert.equal(validation.status, "passed"); assert.equal(validationRecord.status, "passed"); assert.equal(provenance.originalFirstAttempt, true); assert.equal(provenance.retryCount, 0); replayed.push({ originalContextIndex: result.originalContextIndex, debateNumber: result.debateNumber, status: result.status, gateAcceptancePassed: true, validationReplayed: true, outputSha256: result.outputSha256, validation }); }
+  const analysis = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-analysis", protocolId: activation.protocolId, status: "two-original-unattempted-batch-14-publication-contexts-passed", productionCanary: false, batchNumber: 14, stagingOnly: true, sources: { preparation: files.preparation, preparationSha256: sha256(preparationBytes), activation: files.activation, activationSha256: sha256(activationBytes), execution: files.execution, executionSha256: sha256(executionBytes) }, execution: { contextsPlanned: 2, contextsAttempted: 2, contextsUnattempted: 0, validContexts: 2, invalidContexts: 0, originalContextIndexes: ORIGINAL_CONTEXT_INDEXES, attempts: 2, retries: 0, timeoutExtensions: 0, correctionContexts: 0, schedulerRamp: [1, 1], wallElapsedMs: execution.wallElapsedMs, hostAwakeGuardAppliedToEveryAttempt: true }, validationReplay: replayed, totals: { debates: 2, lockedMoves: 37, critiques: replayed.reduce((sum, item) => sum + item.validation.critiques, 0), exactSourceQuotes: replayed.reduce((sum, item) => sum + item.validation.quoteExactSourceMatches, 0), overallCommentarySides: replayed.reduce((sum, item) => sum + item.validation.overallCommentarySides, 0), aiExtensionSides: replayed.reduce((sum, item) => sum + item.validation.aiExtensionSides, 0), modelContexts: 2, originalFirstAttempts: 2, retries: 0, modelAuthoredScores: 0, paidServiceCalls: 0, directIncrementalCostUsd: 0 }, authorization: { completeCohortReplay: true, publicationCompilationPreparation: false, publicationFinalization: false, renderingVerification: false, paidServices: false, productionMutation: false, nextBatchSelection: false }, nextAuthorizedAction: "deterministically-replay-complete-ten-debate-publication-cohort" };
+  const allDebates = [...ACCEPTED_DEBATES, ...DEBATES]; const completeReplay = [];
+  for (const debateNumber of allDebates) { const outputPath = `${PUBLICATION_ROOT}/outputs/debate-${debateNumber}.json`; const packetPath = `${PUBLICATION_ROOT}/packets/debate-${debateNumber}.json`; const outputBytes = await readFile(outputPath); const packetBytes = await readFile(packetPath); const validation = validatePostCanaryBatch14PublicationOutput(JSON.parse(outputBytes), JSON.parse(packetBytes)); assert.equal(validation.status, "passed"); completeReplay.push({ debateNumber, output: outputPath, outputSha256: sha256(outputBytes), packet: packetPath, packetSha256: sha256(packetBytes), source: ["106", "57"].includes(debateNumber) ? "original-first-attempt-two-context-resumption" : debateNumber === "55" ? "accepted-exceptional-third-level-atomic-shard-recovery" : ["187", "160", "69"].includes(debateNumber) ? "accepted-original-first-attempt" : "accepted-bounded-field-disjoint-recovery", validation }); }
+  assert.equal(completeReplay.length, 10); assert.equal(completeReplay.reduce((sum, item) => sum + item.validation.moves, 0), 190); assert.equal(completeReplay.reduce((sum, item) => sum + item.validation.critiques, 0), 190); assert.equal(completeReplay.reduce((sum, item) => sum + item.validation.quoteExactSourceMatches, 0), 20); assert.equal(completeReplay.reduce((sum, item) => sum + item.validation.overallCommentarySides, 0), 20); assert.equal(completeReplay.reduce((sum, item) => sum + item.validation.aiExtensionSides, 0), 20);
+  const completeCohort = { schemaVersion: "1.0-assessment-production-post-canary-batch-14-complete-publication-cohort-analysis-after-recovery", protocolId: activation.protocolId, status: "post-canary-batch-14-complete-ten-debate-publication-output-gate-passed-after-recovery", productionCanary: false, batchNumber: 14, stagingOnly: true, debates: allDebates, validationReplay: completeReplay, totals: { debates: 10, lockedMoves: 190, critiques: 190, exactSourceQuotes: 20, overallCommentarySides: 20, aiExtensionSides: 20, originalPublicationAttempts: 10, scorePasses: 1, scorePassReruns: 0, modelAuthoredScores: 0, paidServiceCallsThisStage: 0, directIncrementalCostUsdThisStage: 0 }, authorization: { publicationCompilationPreparation: true, publicationFinalization: false, renderingVerification: false, paidServices: false, productionMutation: false, nextBatchSelection: false }, nextAuthorizedAction: "prepare-deterministic-publication-compilation" };
+  if (shouldWrite) { await writeFile(files.analysis, pretty(analysis)); await writeFile(files.completeCohort, pretty(completeCohort)); }
+  console.log(pretty({ status: completeCohort.status, debates: 10, moves: 190, critiques: 190, exactSourceQuotes: 20, overallCommentarySides: 20, aiExtensionSides: 20, scorePassReruns: 0, directIncrementalCostUsd: 0, nextAuthorizedAction: completeCohort.nextAuthorizedAction }));
+}
