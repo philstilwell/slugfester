@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-audio-validation-failure",
+  "protocolId": "assessment-production-post-canary-batch-14-decomposed-consensus",
+  "status": "batch-14-audio-validation-failure-preserved-bounded-overlay-recovery-level-1-authorized",
+  "recordedAt": "2026-08-27T18:27:35.251Z",
+  "batchNumber": 14,
+  "failure": {
+    "analyzer": "scripts/assessment-production-post-canary-batch-14-audio-verification-stage.mjs",
+    "errorMessage": "con-mortality-vulnerability-personhood: segment 36 text invalid",
+    "classification": "completed-transport-with-response-schema-invalid-empty-segment-text",
+    "paidCallsCompleted": 12,
+    "paidRetries": 0,
+    "usageDerivedEstimatedCostUsd": 0.422005,
+    "emptyProviderSegments": 1,
+    "affectedTranscripts": 1
+  },
+  "targets": [
+    {
+      "callIndex": 7,
+      "debateNumber": "187",
+      "debateId": "ward-dennett-more-than-matter-2019",
+      "moveId": "con-mortality-vulnerability-personhood",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-14-audio-verification/debate-187/transcripts/con-mortality-vulnerability-personhood.transcript.json",
+      "transcriptSha256": "48a670b150bfcb34bcc73a17f333037482bb5d2886cf3f37533122a0221c77de",
+      "segmentIndex": 36,
+      "segmentId": "seg_36",
+      "segmentType": "transcript.text.segment",
+      "speaker": "Daniel Dennett",
+      "start": 86.868,
+      "end": 86.91799999999999,
+      "text": ""
+    }
+  ],
+  "preservation": {
+    "paidOutputsPreservedByteIdentically": true,
+    "transcriptMutationAuthorized": false,
+    "paidRetryAuthorized": false,
+    "thresholdChangeAuthorized": false,
+    "speakerRelabelingAuthorized": false
+  }
+}
