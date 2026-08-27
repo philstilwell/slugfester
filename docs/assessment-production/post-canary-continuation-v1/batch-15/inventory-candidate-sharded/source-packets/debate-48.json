@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-candidate-sharded-inventory",
+  "debateNumber": "48",
+  "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+  "motion": "Does Christian theism better account for hiddenness, evil, consciousness, morality, and moral progress than agnostic or naturalistic alternatives?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Glen Scrivener"
+      ]
+    },
+    "con": {
+      "label": "Agnostic philosophy",
+      "speakers": [
+        "Joe Folley"
+      ]
+    }
+  },
+  "durationSeconds": 4875,
+  "eventCount": 2305,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/6BzHMdTeQww/transcript.txt",
+    "transcriptSha256": "2e24c6a348b1afcbda41cdb12f175c05dbcf8277ed752d1387d1275a6076da6a",
+    "eventsPath": ".assessment-cache/captions/6BzHMdTeQww/events.json",
+    "eventsSha256": "5dd1b4f41936758ef3355e95ff2c6072761f0a8adbd7f2360d06642fd08a2d76",
+    "localManifestPath": ".assessment-cache/captions/6BzHMdTeQww/manifest.json",
+    "localManifestSha256": "59354c2a038e8073e98854e0330d2a379d4532ebbde677cfd6b476cdf78e3a25"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-48.jsonl",
+    "sourceLedgerSha256": "63d2104e5f9f98e9a6f601c2023ec5f8026e63f2fe7a4b28a7e87e9aa50e81d6",
+    "sourceLedgerBytes": 132796,
+    "sourceLedgerEventCount": 2305,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-48.json",
+    "partitionPlanSha256": "1deda56436f0af5c6c897cd2c8da3540b65b959d8938cab6af8fb1311634b415",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

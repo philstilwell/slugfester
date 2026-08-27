@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-candidate-sharded-inventory",
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025",
+  "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
+  "sides": {
+    "pro": {
+      "label": "Traditional authorship",
+      "speakers": [
+        "Michael Licona"
+      ]
+    },
+    "con": {
+      "label": "Anonymous later authorship",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 8426,
+  "eventCount": 1286,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/xTCPigOQabY/transcript.txt",
+    "transcriptSha256": "fa5c936c4dfaeb55945ec642dd411730c7fd20647b0ee432b0b4620c0642c4dc",
+    "eventsPath": ".assessment-cache/captions/xTCPigOQabY/events.json",
+    "eventsSha256": "261aa1d1a56ecdb7a56bb5bd16a3ab7d88e3d744b31fa75e5e2334a451925dcd",
+    "localManifestPath": ".assessment-cache/captions/xTCPigOQabY/manifest.json",
+    "localManifestSha256": "60db7566cc5831a01a1ea2a25e4ca7b0532d20a97c932746240db2b01c92bb29"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-178.jsonl",
+    "sourceLedgerSha256": "25f61fc81cca5b829997619688d7a7729a4945f334291d4027397497f8a55ad7",
+    "sourceLedgerBytes": 148739,
+    "sourceLedgerEventCount": 1286,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-178.json",
+    "partitionPlanSha256": "0541c33d4aba1d012b3a657899be67c1da2074cf1d95b8f2fd3206274d9c9e0c",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

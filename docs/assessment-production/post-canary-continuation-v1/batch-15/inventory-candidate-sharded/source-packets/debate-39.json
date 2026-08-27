@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-candidate-sharded-inventory",
+  "debateNumber": "39",
+  "debateId": "lambert-jones-christian-faith-skepticism-2021",
+  "motion": "Can Christian belief be rationally sustained amid skeptical challenges about faith, hell, resurrection evidence, biblical reliability, religious experience, the Exodus, and parallels with other ancient traditions?",
+  "sides": {
+    "pro": {
+      "label": "Believer",
+      "speakers": [
+        "Michael Jones"
+      ]
+    },
+    "con": {
+      "label": "Non-believer",
+      "speakers": [
+        "Derek Lambert"
+      ]
+    }
+  },
+  "durationSeconds": 7865,
+  "eventCount": 4103,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/SEZu7Ej2SzU/transcript.txt",
+    "transcriptSha256": "eb43de886944ec03c2a717b5a076cd76c7661165921b07921db4dbfcef4a1afe",
+    "eventsPath": ".assessment-cache/captions/SEZu7Ej2SzU/events.json",
+    "eventsSha256": "52510a95a48a9c64a47d5eb7873615de6779b3468888f5a41d876675aa2bfb28",
+    "localManifestPath": ".assessment-cache/captions/SEZu7Ej2SzU/manifest.json",
+    "localManifestSha256": "4d0aaae6f9d9d6b2a9f83bff78e543fb110e4e7f0d386ffb10603ce081620fd1"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-39.jsonl",
+    "sourceLedgerSha256": "e2534bad811c1b704efb7d26bfe632505fe04fc65c341992f0a4e034ea0b4218",
+    "sourceLedgerBytes": 229279,
+    "sourceLedgerEventCount": 4103,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-39.json",
+    "partitionPlanSha256": "0b1e1b16f19c8c672e7e4c927fecddd60f7ee2d740235f4c0e3d4425b19187fb",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

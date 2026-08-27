@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-candidate-sharded-inventory",
+  "debateNumber": "98",
+  "debateId": "craig-grayling-evil-god-reasonable-2011",
+  "motion": "Is belief in God reasonable in light of tsunamis, childhood cancer, moral evil, and the apparent harshness of the natural world?",
+  "sides": {
+    "pro": {
+      "label": "Theistic reasonableness",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Secular objection",
+      "speakers": [
+        "A. C. Grayling"
+      ]
+    }
+  },
+  "durationSeconds": 6491,
+  "eventCount": 2591,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Vs7ArUMuQyg/transcript.txt",
+    "transcriptSha256": "65a12e70a66800ec441b5db26ac55eb81a6c6fcb583c77d685819198657ca114",
+    "eventsPath": ".assessment-cache/captions/Vs7ArUMuQyg/events.json",
+    "eventsSha256": "5b256a80e69d20d47b6631fddd7edd8cb53895ef92a1ca0bde1b6059d702e2a8",
+    "localManifestPath": ".assessment-cache/captions/Vs7ArUMuQyg/manifest.json",
+    "localManifestSha256": "c87354b841c0b01aa6b955e8c5c5123a77c2269d5b8dfaf0b1dcb347b73bca06"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-98.jsonl",
+    "sourceLedgerSha256": "5f8b61c7d37e07db629143add4493d5bf903131d8718c4dd5775f118cab15888",
+    "sourceLedgerBytes": 151906,
+    "sourceLedgerEventCount": 2591,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-98.json",
+    "partitionPlanSha256": "93d4fe2b3f260ceadfe2f724dbbd44809279a5e08f58cfe4c586ef49f97502b0",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
