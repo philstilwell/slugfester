@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-original-unattempted-context-resumption-execution",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-original-unattempted-context-resumption-2",
+  "status": "six-context-publication-resumption-stopped-with-failure",
+  "gateStartedAt": "2026-08-27T04:11:58.949Z",
+  "gateCompletedAt": "2026-08-27T04:14:44.618Z",
+  "contextsPlanned": 6,
+  "contextsAttempted": 1,
+  "contextsUnattempted": 5,
+  "unattemptedOriginalContextIndexes": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "correctionContexts": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "phaseRecords": [
+    {
+      "phase": "operational-one",
+      "maximumParallelContexts": 1,
+      "originalContextIndexes": [
+        4
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedOriginalContextIndexes": [
+        4
+      ],
+      "validOriginalContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "originalContextIndexes": [
+        5,
+        6
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedOriginalContextIndexes": [],
+      "validOriginalContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "originalContextIndexes": [
+        7,
+        8,
+        9
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedOriginalContextIndexes": [],
+      "validOriginalContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "wallElapsedMs": 165668,
+  "aggregateModelElapsedMs": 165652,
+  "results": [
+    {
+      "resumptionIndex": 0,
+      "originalContextIndex": 4,
+      "debateNumber": "70",
+      "debateId": "malpass-anderson-logic-god-2021",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "originalFirstAttempt": true,
+      "priorAttemptCount": 0,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "correctionContextCount": 0,
+      "startedAt": "2026-08-27T04:11:58.950Z",
+      "completedAt": "2026-08-27T04:14:44.602Z",
+      "elapsedMs": 165652,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "hostAwakeGuardApplied": true,
+      "participantJudgmentWasScoreBlind": true,
+      "ownDebateScoresImmutable": true,
+      "copiedInputBytes": 208427,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "f365346f4d259aec6ceae21145ba2c1cd462a2821193fdb8038bebeb46e8b7eb",
+      "stderrSha256": "fa0b47152d5bcf7148b431da0ab2c36c12f04980463ac85300ad22ede2861a1c",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "de86165dd0afd887589c1ba229c98dcad1b715b92a480c8254d7533ba80b2f2a",
+      "validationWritten": true,
+      "validationSha256": "6fbb8b93ebf210f05bbbfa1eb630e74a7abdff2dc8cae6549556c572d5fd2630",
+      "provenanceWritten": true,
+      "provenanceSha256": "160bc1de2809f77b1b8f3f54035badd58929f1d1285bac1f39eaed806c4185f2",
+      "validationSummary": null,
+      "validationMessage": "Error: pro-thin-necessary-truth-start: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch13PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-13-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-13-publication-resumption-2.mjs:172:29)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-13-publication-resumption-2.mjs:278:41)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-13-publication-resumption-2.mjs:280:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-13-publication-resumption-2.mjs:294:24"
+    }
+  ],
+  "originalFirstAttemptsOnly": true,
+  "hostAwakeGuardAppliedToEveryAttempt": true,
+  "participantJudgmentWasScoreBlind": true,
+  "ownDebateScoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "nextRequiredAction": "stop-no-automatic-retry-timeout-extension-or-correction"
+}

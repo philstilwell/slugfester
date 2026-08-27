@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-debate-70-publication-failure-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-70-publication-field-disjoint-repair-1",
+  "status": "debate-70-publication-failure-diagnosed-awaiting-field-disjoint-repair-1",
+  "debateNumber": "70",
+  "sources": {
+    "output": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/outputs/debate-70.json",
+      "sha256": "de86165dd0afd887589c1ba229c98dcad1b715b92a480c8254d7533ba80b2f2a"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/packets/debate-70.json",
+      "sha256": "997209f102d9a8af00b4b1c11a2ffd4d129146ba83f52bc0a547f1931d9cc0c0"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-2/model-execution.json",
+      "sha256": "4480b194c8b45fb94bda1e88460c04c49d96b529c19c44f43a4b5eb7a6d986e8"
+    },
+    "failedValidation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/validations/debate-70.json",
+      "sha256": "6fbb8b93ebf210f05bbbfa1eb630e74a7abdff2dc8cae6549556c572d5fd2630"
+    }
+  },
+  "diagnosis": {
+    "invalidCritiques": [
+      {
+        "moveId": "pro-thin-necessary-truth-start",
+        "field": "moveProse.pro-thin-necessary-truth-start.critique",
+        "words": 131,
+        "characters": 1019,
+        "defects": [
+          "words:131"
+        ],
+        "originalValueSha256": "74715713875bab1a11cedeec3ecf11cec77e1099c51ba3c4d8e51d3762446d89"
+      },
+      {
+        "moveId": "pro-divine-thoughts-constitute-content",
+        "field": "moveProse.pro-divine-thoughts-constitute-content.critique",
+        "words": 131,
+        "characters": 1018,
+        "defects": [
+          "words:131"
+        ],
+        "originalValueSha256": "fc8c2a740bcb2ed77a06db55cb607bfad891b293904862f20137d71795fccebf"
+      },
+      {
+        "moveId": "con-contentless-divine-thought-tension",
+        "field": "moveProse.con-contentless-divine-thought-tension.critique",
+        "words": 131,
+        "characters": 1038,
+        "defects": [
+          "words:131"
+        ],
+        "originalValueSha256": "9c52f3aef1fe023f8162e88b0680420fee6014b548189f4c7045f5914d7251b1"
+      },
+      {
+        "moveId": "pro-divine-human-intentional-continuity",
+        "field": "moveProse.pro-divine-human-intentional-continuity.critique",
+        "words": 132,
+        "characters": 1024,
+        "defects": [
+          "words:132"
+        ],
+        "originalValueSha256": "bc16abd5f1e95b31edb1bfa9e230b9a49ee58ae988fa29e504b8695ab91ef10f"
+      },
+      {
+        "moveId": "pro-dual-impulse-comparative-case",
+        "field": "moveProse.pro-dual-impulse-comparative-case.critique",
+        "words": 132,
+        "characters": 1032,
+        "defects": [
+          "words:132"
+        ],
+        "originalValueSha256": "2bb4ecfb91e163c2db40bcee9f8c7a709bad72e13e9c0321288c696ea26a3a82"
+      }
+    ],
+    "invalidQuotes": [],
+    "invalidCritiqueCount": 5,
+    "invalidQuoteCount": 0,
+    "allOtherFieldsStructurallyValid": true,
+    "nonTargetValidation": {
+      "status": "passed",
+      "debateNumber": "70",
+      "moves": 18,
+      "critiques": 18,
+      "minimumCritiqueCharacters": 994,
+      "tags": 1,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    },
+    "temporaryStandInsPersisted": false
+  },
+  "preservation": {
+    "failedOutputPreserved": true,
+    "unattemptedOriginalContextIndexes": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scorePassRerun": false,
+    "calculatedScoresChanged": false
+  },
+  "authorization": {
+    "fieldDisjointRepairLevel1Preparation": true,
+    "attemptsPerShard": 1,
+    "retries": false,
+    "writableFieldsMaximumPerShard": 2,
+    "resumeSixOriginalUnattemptedContextsAfterPassingRepair": true,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-minimum-field-disjoint-debate-70-publication-repair-shards"
+}
