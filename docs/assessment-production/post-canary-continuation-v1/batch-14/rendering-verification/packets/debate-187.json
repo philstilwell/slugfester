@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-rendering-packet",
+  "protocolId": "assessment-production-post-canary-batch-14-rendering-verification",
+  "status": "frozen-batch-14-rendering-verification-packet",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "debateNumber": "187",
+  "debateId": "ward-dennett-more-than-matter-2019",
+  "candidate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-finalization/output-bundle/final-candidates/debate-187.json",
+    "sha256": "f7c50a22bdf2a9dcba7738d966cab224b10e5e37417036bd3829fc0b04ef4a5c",
+    "scores": {
+      "pro": 76,
+      "con": 83
+    },
+    "sections": 6,
+    "moves": 23,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-finalization/output-bundle/provenance/debate-187.json",
+    "sha256": "b864c1e841d6a4aaa8f9657027608fa9e4f9ddc4b9fe88ed2fc6c8e501535aa1",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preview": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-finalization/output-bundle/rendering-preview/index.html",
+    "sha256": "9cdd232ef64e80fca7026ffd9e82e3038f0a44ee5c213b534acf5ed934124c8d",
+    "url": "http://127.0.0.1:4210/docs/assessment-production/post-canary-continuation-v1/batch-14/publication-finalization/output-bundle/rendering-preview/index.html?debate=187",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBanner": "Publication staging preview: validated post-canary Batch 14 candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "prohibitedText": [
+      "unassailable"
+    ],
+    "nativeElement": "details",
+    "defaultCollapsed": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-14/rendering-verification/evidence/debate-187/desktop.json",
+        "collapsedScreenshot": "output/playwright/batch-14-rendering/debate-187/desktop-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-14-rendering/debate-187/desktop-open.jpg"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-14/rendering-verification/evidence/debate-187/mobile.json",
+        "collapsedScreenshot": "output/playwright/batch-14-rendering/debate-187/mobile-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-14-rendering/debate-187/mobile-open.jpg"
+      }
+    }
+  },
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "runnerPolicy": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch14-rendering",
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "screenshotFormat": "jpeg",
+    "screenshotQuality": 85,
+    "screenshotFullPage": false,
+    "interactionOrder": [
+      "observe-default-collapsed-state",
+      "capture-collapsed-screenshot",
+      "open-native-summary-with-pointer",
+      "capture-open-screenshot",
+      "close-with-pointer",
+      "focus-native-summary",
+      "open-with-enter",
+      "close-with-space"
+    ]
+  },
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "nextBatchSelectionWritable": false
+  }
+}
