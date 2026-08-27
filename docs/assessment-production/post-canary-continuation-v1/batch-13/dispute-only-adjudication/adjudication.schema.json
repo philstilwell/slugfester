@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-assessment-production-post-canary-batch-13-dispute-only-adjudication",
+  "title": "Slugfester post-canary Batch 13 dispute-only adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "isolation",
+    "moveDecisions",
+    "burdenAdjustmentDecisions",
+    "audit",
+    "productionCanary",
+    "batchNumber",
+    "stagingOnly",
+    "developmentValidationOnly"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-13-dispute-only-adjudication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-13-dispute-only-adjudication"
+    },
+    "debateNumber": {
+      "type": "string",
+      "minLength": 1
+    },
+    "debateId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "isolated-disputed-fields-only-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateOrderingAnonymous",
+        "passIdentitiesUnavailable",
+        "initialRationalesUnavailable",
+        "nondisputedFieldsUnavailable",
+        "fullInitialOutputsUnavailable",
+        "legacyAssessmentsUnavailable",
+        "calculatedScoresUnavailable",
+        "winnerLabelsUnavailable",
+        "publicationProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "candidateOrderingAnonymous": {
+          "type": "boolean",
+          "const": true
+        },
+        "passIdentitiesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "initialRationalesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "nondisputedFieldsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "fullInitialOutputsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedScoresUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "winnerLabelsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "publicationProseUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "moveDecisions": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "importancePairChoice",
+          "attributionPairChoice",
+          "responsePairChoice",
+          "charityPairChoice",
+          "assessmentConfidencePairChoice",
+          "scoringFieldChoices",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "importancePairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "attributionPairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "responsePairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "charityPairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "assessmentConfidencePairChoice": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "scoringFieldChoices": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 6,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "fieldKey",
+                "choice"
+              ],
+              "properties": {
+                "fieldKey": {
+                  "type": "string",
+                  "enum": [
+                    "logicalCoherence",
+                    "evidenceWarrant",
+                    "relevanceBurden",
+                    "representationalCharity",
+                    "precisionClarity",
+                    "epistemicCalibration"
+                  ]
+                },
+                "choice": {
+                  "type": "integer",
+                  "enum": [
+                    1,
+                    2
+                  ]
+                }
+              }
+            }
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          }
+        }
+      }
+    },
+    "burdenAdjustmentDecisions": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "choice",
+          "rationale"
+        ],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "choice": {
+            "type": "integer",
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 40
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allDisputedMovesDecidedOnce",
+        "onlyCandidateValuesSelected",
+        "dependencyPairsKeptIndivisible",
+        "nondisputedFieldsUntouched",
+        "calculatedScoresAbsent",
+        "publicationProseAbsent"
+      ],
+      "properties": {
+        "allDisputedMovesDecidedOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "onlyCandidateValuesSelected": {
+          "type": "boolean",
+          "const": true
+        },
+        "dependencyPairsKeptIndivisible": {
+          "type": "boolean",
+          "const": true
+        },
+        "nondisputedFieldsUntouched": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedScoresAbsent": {
+          "type": "boolean",
+          "const": true
+        },
+        "publicationProseAbsent": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "batchNumber": {
+      "type": "integer",
+      "const": 13
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "developmentValidationOnly": {
+      "type": "boolean",
+      "const": false
+    }
+  }
+}
