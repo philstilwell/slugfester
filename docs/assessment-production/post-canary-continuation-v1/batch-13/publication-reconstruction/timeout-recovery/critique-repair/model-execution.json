@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery",
+  "status": "batch-13-publication-critique-recovery-level-2-execution-failed",
+  "startedAt": "2026-08-27T03:06:29.825Z",
+  "completedAt": "2026-08-27T03:11:15.649Z",
+  "elapsedMs": 285823,
+  "contextsAttempted": 10,
+  "validContexts": 8,
+  "invalidContexts": 2,
+  "attempts": 10,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "results": [
+    {
+      "contextIndex": 0,
+      "moveIds": [
+        "pro-probability-prior-and-likelihood-framework",
+        "pro-testimony-as-miracle-evidence"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:06:29.826Z",
+      "completedAt": "2026-08-27T03:07:15.030Z",
+      "elapsedMs": 45204,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "42acf02032f55381dbd8eca8d93c81a100a8dd2526b84190906dbea6a0de903e",
+      "stderrSha256": "54573c51b5af11c5546a3707d24ab33d6f5ba29f711c1f9996665967c4a5613d",
+      "stderrTail": "        \"value\": 86,\n            \"rationale\": \"The move supports the central source foundation, but only at the general level of testimonial admissibility.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 75,\n            \"rationale\": \"No developed opposing interpretation is characterized; the move principally advances a positive epistemic premise.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt invokes testimony as an indispensable source of ordinary knowledge and infers that it can be miracle evidence.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Supporting constructive\",\n        \"words\": \"Testimony can provide evidence for a miracle because testimonial knowledge is generally indispensable and a sufficiently reliable report can increase a hypothesis’s probability.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n      93    2291 schema.json\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-0\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 0\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-probability-prior-and-likelihood-framework\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-testimony-as-miracle-evidence\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":0,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26\",\"corrections\":[{\"moveId\":\"pro-probability-prior-and-likelihood-framework\",\"critique\":\"Strongest feature: The framework integrates antecedent plausibility with comparative evidential likelihood, explaining that improbable hypotheses require correspondingly stronger discriminating evidence while preserving sensitivity to alternative prior assignments. Principal limitation: Its methodological clarity precedes rather than supplies defensible numerical priors, justified likelihood ratios, or comparisons with consequential nonresurrection hypotheses, so application remains unfinished. Live burden: The constructive must operationalize this framework using historically warranted inputs and demonstrate that the cited evidence is more expected under resurrection than under sufficiently developed competing explanations. Locked score: The very strong 90 appropriately reflects exceptional motion-level relevance, stable terminology, explicit qualification, and impressive coherence, while retaining a measured deduction because evidential warrant remains framework-level and representational charity is not substantively tested.\"},{\"moveId\":\"pro-testimony-as-miracle-evidence\",\"critique\":\"Strongest feature: The move establishes a modest epistemic threshold: testimony is not automatically disqualified from evidential consideration because its event is miraculous, and reliable reporting can increase a hypothesis's probability. Principal limitation: The inference from testimony's indispensability in ordinary knowledge to its usefulness for extraordinary claims leaves reliability conditions implicit: independence, transmission integrity, incentive, corroboration, genre, and the comparative probability of error. Live burden: The constructive must identify which resurrection reports satisfy those conditions and show that their testimonial profile favors resurrection over mistaken, legendary, coordinated, or naturalistic explanations. Locked score: The strong/competent 79 fits the move's coherent possibility claim, relevance, and stable proposition, while recognizing general testimonial admissibility, partly unstable scope, implicit qualification, and limited source-specific warrant.\"}]}\ntokens used\n21,929",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "6d81ff26c96adaff14154f1ab686a15fc3b243903314774a67383f655b6a1e02",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-probability-prior-and-likelihood-framework",
+          "words": 116,
+          "characters": 1042,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-testimony-as-miracle-evidence",
+          "words": 118,
+          "characters": 1007,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 1,
+      "moveIds": [
+        "pro-comparative-likelihood-ratio",
+        "pro-natural-regularity-miracle-context"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:06:29.826Z",
+      "completedAt": "2026-08-27T03:07:31.234Z",
+      "elapsedMs": 61408,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsd": 0,
+      "status": "output-validation-failed",
+      "outputWritten": false,
+      "gateAcceptancePassed": false,
+      "validationMessage": "AssertionError [ERR_ASSERTION]: pro-natural-regularity-miracle-context: critique word count 133\n    at validateCritique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:43:3)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:113:342\n    at Array.map (<anonymous>)\n    at execute (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:113:301)\n    at async Promise.all (index 1)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:119:90"
+    },
+    {
+      "contextIndex": 2,
+      "moveIds": [
+        "pro-incarnation-context-and-resurrection-prior",
+        "pro-new-testament-reliability-foundation"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:07:31.241Z",
+      "completedAt": "2026-08-27T03:08:39.896Z",
+      "elapsedMs": 68654,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "3b7c0fa7da8b2b410fc72e05375e16585d5a559636d807fee416cb5f99065309",
+      "stderrSha256": "9a3fcd15e6a536e9feff6342666f46ec9aaf90692f67cf6a41e76599335c0b3d",
+      "stderrTail": "resentationalCharity\": {\n            \"value\": 75,\n            \"rationale\": \"The move develops affirmative source indicators without a sufficiently detailed competing interpretation to test for charity.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt claims internal historical texture, reliable eyewitness testimony, historical intention, and external confirmations support access to original accounts.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Load-bearing constructive\",\n        \"words\": \"Internal historical texture, authorship traditions, firsthand narrative indicators, external confirmations, and regionally accurate names jointly support reliable access to early resurrection testimony.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n      93    2298 schema.json\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-2\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 2\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-incarnation-context-and-resurrection-prior\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-new-testament-reliability-foundation\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\n2026-08-27T03:07:57.762844Z  WARN codex_sandboxing::violation: recorded sandbox violation: resource=filesystem backend=seatbelt reason=operation_not_permitted path=unknown\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":2,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26\",\"corrections\":[{\"moveId\":\"pro-incarnation-context-and-resurrection-prior\",\"critique\":\"Strongest feature: Its conditional reasoning links God’s possible existence, fitting incarnational purposes, and miraculous authentication to the modest conclusion that resurrection need not have a prohibitive prior, preserving uncertainty while supporting the subsidiary prior-context burden. Principal limitation: Possibility supplies no appreciable probability for incarnation or resurrection, while the proposed divine purposes and modest conditional likelihood remain broadly characterized rather than independently warranted. Live burden: The argument must justify why those divine purposes are probable given God, and why resurrection would authenticate them, before this background can improve the hypothesis’s prior probability. Locked score: The strong/competent 77 reflects coherent, cautious, relevant framing and explicit qualification, tempered by weaker evidential warrant, partly unstable scope, and compression of the divine-purpose challenge.\"},{\"moveId\":\"pro-new-testament-reliability-foundation\",\"critique\":\"Strongest feature: The cumulative foundation engages the central source burden by combining historical texture, authorship traditions, firsthand narrative indicators, external confirmations, and accurate names into a case for access to early resurrection testimony. Principal limitation: Reliability and eyewitness texture extend too broadly across distinct documents, while examples, independence, disputed authorship, transmission gaps, and source-specific verification receive insufficient qualification or development. Live burden: The case must show which texts preserve early or firsthand information, how the indicators support them, and why competing historical explanations do not equally explain those features. Locked score: The strong/competent 80 recognizes exceptional relevance, constructive responsiveness, and concrete evidential categories, while discounting overstated force, implicit qualification, underdeveloped counterinterpretations, and moderate warrant for generalized reliability.\"}]}\ntokens used\n26,157",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "8158c78d07edcbd08d2aa461bbbbc700111ce50a9f39dc3bdbf5a0d6447d2bba",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-incarnation-context-and-resurrection-prior",
+          "words": 118,
+          "characters": 960,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-new-testament-reliability-foundation",
+          "words": 117,
+          "characters": 1007,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 3,
+      "moveIds": [
+        "pro-known-burial-and-empty-tomb",
+        "pro-diverse-multimodal-appearances"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:07:31.242Z",
+      "completedAt": "2026-08-27T03:08:23.845Z",
+      "elapsedMs": 52603,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "35ffaad8b30e3deb59957cc11851aa863fc530aa0ebce05456481cee7e2a24b9",
+      "stderrSha256": "72392bc2756ee9d1aeb5ad3dba570ae04bf5e5fed8de9afd024b983b7332ec27",
+      "stderrTail": "ispute trigger.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt describes rare polymodal experiences across witnesses and forty days, emphasizing uniformity and lack of resurrection expectation.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Load-bearing constructive\",\n        \"words\": \"Numerous witnesses reportedly experienced diverse, detailed, multimodal encounters across many occasions, placing substantial pressure on collusion and uniform shared-hallucination explanations.\",\n        \"tags\": [\n          {\n            \"label\": \"Scope neglect\",\n            \"type\": \"bias\",\n            \"slug\": \"scope-neglect\",\n            \"context\": \"The comparison concentrates on one uniform shared hallucination while underexamining a broader collection of heterogeneous natural and transmission-based explanations.\"\n          }\n        ]\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-3\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 3\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-known-burial-and-empty-tomb\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-diverse-multimodal-appearances\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":3,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-known-burial-and-empty-tomb\",\"critique\":\"Strongest feature: The argument connects identifiable burial circumstances, nonproduction of the body, multiple testimony, adversarial acknowledgment, and culturally disadvantageous female discoverers, making the empty-tomb inference directly relevant and cumulatively substantial. Principal limitation: Those categories remain insufficiently differentiated, because narrative multiplicity does not establish independence, silence about producing a body is not independent confirmation, and women witnesses require historically specific qualification. Live burden: The proponent must demonstrate that the burial location was public, attestations derive from meaningfully separate evidential streams, and early-tradition development cannot explain the surviving narratives without an independently verified empty tomb. Locked score: The strong/competent 78 appropriately recognizes coherent, load-bearing cumulative support while discounting implicit qualifications, overstated force, incomplete alternative-testing, and comparatively weaker evidential warrant.\"},{\"moveId\":\"pro-diverse-multimodal-appearances\",\"critique\":\"Strongest feature: The argument assembles distributed, detailed, multimodal appearance reports and emphasizes divergent witnesses, shared activities, and absent resurrection expectation, pressuring simplistic collusion or an identical collective-hallucination scenario. Principal limitation: Rejecting a uniform hallucination does not address heterogeneous experiences, misperception, reconstructive memory, legendary development, testimonial dependence, or transmission processes, while independence and firsthand access remain undocumented. Live burden: The proponent must establish which reports are independent, how sensory particulars were preserved, and why the evidence discriminates resurrection from interacting natural explanations rather than merely defeating an unusually narrow rival. Locked score: The mixed 72 reflects excellent central relevance and responsiveness but weaker coherence, evidential verification, qualification, scope control, and charitable engagement with the strongest alternative family.\"}]}\ntokens used\n23,947",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "faea942b80e09e4fb47f4db72800cc96b63b67642cd6c7cd519b77e705c53853",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-known-burial-and-empty-tomb",
+          "words": 117,
+          "characters": 1060,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-diverse-multimodal-appearances",
+          "words": 116,
+          "characters": 1022,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 4,
+      "moveIds": [
+        "pro-conversion-and-costly-witness-conduct",
+        "con-source-account-disparities"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:08:39.907Z",
+      "completedAt": "2026-08-27T03:09:34.816Z",
+      "elapsedMs": 54909,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "f28149165c6122f76390185f9450213113fc6cc187fd2b4f839a7c21d9ac5019",
+      "stderrSha256": "b6787f99d1534d28a4e287a3c08b98e1274533a06f3d7c719e3a76ae9895e309",
+      "stderrTail": "\"representationalCharity\": {\n            \"value\": 72,\n            \"rationale\": \"The elephant analogy is acknowledged, but the reply does not analyze particular disparities before emphasizing divine inspiration.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt concedes ordinary perspectival differences but argues that unresolved variation is more serious if the narratives are divinely inspired evidence.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Unresolved differences among the resurrection narratives reduce their reliability, particularly when those accounts are presented as divinely inspired evidence for a uniquely important event.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-4\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 4\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-conversion-and-costly-witness-conduct\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-source-account-disparities\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":4,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-conversion-and-costly-witness-conduct\",\"critique\":\"Strongest feature: The argument connects Paul’s reversal and costly perseverance under hostility with authentic conviction, making deliberate fabrication less persuasive while reinforcing the subsidiary memory-and-sincerity bridge through conduct. Principal limitation: It generalizes unspecified witnesses, suffering, and firsthand access, then moves from sincerity toward experiential verification without identifying who encountered what, endured which consequences, or possessed independent knowledge. Live burden: The affirmative must establish particularized witnesses and traceable experiences while excluding sincere mistake, inherited testimony, reinforcement, and inaccurate transmission as plausible explanations for sacrificial commitment. Locked score: The mixed 74 appropriately recognizes coherent, relevant probability support and constructive responsiveness, yet preserves deductions for overbroad scope, missing qualification, evidentiary specification, and the distinction between sincerely maintaining resurrection belief and independently demonstrating historical truth.\"},{\"moveId\":\"con-source-account-disparities\",\"critique\":\"Strongest feature: The reply contests the affirmative’s source-reliability foundation by identifying narrative variations and explaining why unresolved divergence becomes consequential when accounts are presented as divinely inspired testimony about an important historical occurrence. Principal limitation: It aggregates disparities without demonstrating which examples are contradictions, centrally significant, or resistant to harmonization, and insufficiently distinguishes standards for inspiration claims from ordinary historical reliability. Live burden: The negative must analyze particular discrepancies, establish their seriousness, and show that peripheral perspectival variation cannot explain them before inferring substantial unreliability from their cumulative presence. Locked score: The strong 79 reflects direct burden contact and effective responsiveness, alongside probabilistic relevance, while withholding a higher evaluation because evidentiary development, qualification, scope stability, and charitable engagement with independent-but-variable testimony remain materially incomplete.\"}]}\ntokens used\n23,389",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "535588cb4154017042bb91939c476166da5f009e4feefad728d3976093e491a6",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-conversion-and-costly-witness-conduct",
+          "words": 121,
+          "characters": 1091,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-source-account-disparities",
+          "words": 124,
+          "characters": 1108,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 5,
+      "moveIds": [
+        "con-source-corroboration-deficit",
+        "con-death-confirmation-required"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:08:39.907Z",
+      "completedAt": "2026-08-27T03:09:40.833Z",
+      "elapsedMs": 60926,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "2ee7748908e599a8957250be3fcd171dfd16b094414ef6f1f3344956bd2e9325",
+      "stderrSha256": "f2f3871b2bb8acaa84e7ffd4ab21bb42caaadf482e1ea44ae4f33cf333a4b634",
+      "stderrTail": "core-data bridge at the indispensable first step of the claimed death-burial sequence.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 69,\n            \"rationale\": \"The reply identifies the true prerequisite but characterizes the available narrative as propaganda without assessing possible converging indicators.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt invokes premature-burial error and argues that resurrection requires confirmation of death beyond a biased narrative source.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Before resurrection can be inferred, Jesus’s actual death must be historically established through evidence adequate to exclude mistaken determination or premature burial.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-5\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 5\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-source-corroboration-deficit\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-death-confirmation-required\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\n2026-08-27T03:09:06.091636Z  WARN codex_sandboxing::violation: recorded sandbox violation: resource=filesystem backend=seatbelt reason=operation_not_permitted path=unknown\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":5,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26\",\"corrections\":[{\"moveId\":\"con-source-corroboration-deficit\",\"critique\":\"Strongest feature: The reply directly confronts the affirmative’s evidentiary foundation, specifically identifying unconfirmed primary provenance, absent contemporary corroboration, and limited investigability, while contacting the New Testament reliability claim and the appeal to testimonial miracle evidence. Principal limitation: Its categorical language converts an insufficiency objection into assertions of evidential absence, without distinguishing testimony from indirect historical evidence, surveying sources, or defending why its corroborative standard is necessary. Live burden: The negative must establish that the traditions lack historical value under an articulated standard, while addressing claimed eyewitness access, early testimony, and external confirmation charitably. Locked score: The strong/competent 79 reflects relevance and responsiveness, but overstated calibration, incomplete qualification, and weak evidentiary warrant constrain the coherent challenge.\"},{\"moveId\":\"con-death-confirmation-required\",\"critique\":\"Strongest feature: The reply isolates an indispensable prerequisite for resurrection—actual death—and challenges whether the affirmative’s burial-and-empty-tomb sequence establishes that prerequisite enough to exclude mistaken determination or premature burial, making its burden contact precise and consequential. Principal limitation: Calling the narrative propaganda discounts converging contextual and medical indicators without examining them, while the demand for confirmation risks suggesting forensic verification where ancient-history reasoning depends upon testimony and inference. Live burden: The negative must explain what degree of independent confirmation historical inquiry requires, then demonstrate why the narrative and contextual considerations remain inadequate under that standard. Locked score: The very strong 85 reflects necessity, formulation, coherence, and responsiveness, with evidentiary development and representational charity remaining the constraints.\"}]}\ntokens used\n22,420",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "d169ac02bd78db77b38868a59bcb1195078de615bdee9f8357b7fc71305e532f",
+      "critiqueValidations": [
+        {
+          "moveId": "con-source-corroboration-deficit",
+          "words": 115,
+          "characters": 985,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-death-confirmation-required",
+          "words": 115,
+          "characters": 985,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 6,
+      "moveIds": [
+        "con-sincerity-transmission-limits",
+        "con-empty-tomb-unconfirmed"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:09:40.843Z",
+      "completedAt": "2026-08-27T03:10:14.329Z",
+      "elapsedMs": 33486,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsd": 0,
+      "status": "output-validation-failed",
+      "outputWritten": false,
+      "gateAcceptancePassed": false,
+      "validationMessage": "AssertionError [ERR_ASSERTION]: con-sincerity-transmission-limits: critique word count 138\n    at validateCritique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:43:3)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:113:342\n    at Array.map (<anonymous>)\n    at execute (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:113:301)\n    at async Promise.all (index 0)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-13-publication-critique-recovery.mjs:119:90"
+    },
+    {
+      "contextIndex": 7,
+      "moveIds": [
+        "con-conditional-probability-direction",
+        "con-costly-commitment-not-truth"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:09:40.843Z",
+      "completedAt": "2026-08-27T03:10:17.416Z",
+      "elapsedMs": 36573,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "28cb4c0bcf46cb792f40e6a40d362321440eedcaedcafd9d22fedbdfb96f1768",
+      "stderrSha256": "9b6b061bfb35a6542f19c4b9097acc03bc34f07ccda216468804555275c8cb9f",
+      "stderrTail": "d not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"relevanceBurden\": {\n            \"value\": 87,\n            \"rationale\": \"It directly supports the central inference-limits bridge by defeating the move from costly commitment to historical truth.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 96,\n            \"rationale\": \"The reply grants the strongest legitimate sincerity inference and then accurately identifies its decisive limitation.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt states that sincere people can be wrong and notes that many have fought or died for false or harmful beliefs.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Diagnostic challenge\",\n        \"words\": \"Willingness to endure persecution or death can support sincerity and commitment, but neither property makes the underlying resurrection belief historically true.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-7\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 7\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-conditional-probability-direction\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-costly-commitment-not-truth\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":7,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"con-conditional-probability-direction\",\"critique\":\"Strongest feature: The reply precisely distinguishes likelihood of testimony conditional on resurrection from resurrection's posterior probability conditional on testimony, directly contacting the affirmative's motion-level probabilistic bridge and explaining the diagnostic consequence. Principal limitation: Although the warning identifies an invalid inferential direction, it does not demonstrate that the affirmative actually reverses the conditionals, because that framework expressly invokes prior probabilities, comparative likelihoods, and alternatives. Live burden: The negative must therefore show that the offered priors, rival explanations, or likelihood ratios remain insufficient, while the affirmative must establish that its evidential comparison yields a warranted posterior rather than merely expected reporting. Locked score: The strong 94-point result reflects exceptional relevance, responsiveness, coherence, terminology, explicit qualification, and calibrated non-overclaiming, with the charity limitation preventing a conclusive evaluation.\"},{\"moveId\":\"con-costly-commitment-not-truth\",\"critique\":\"Strongest feature: The reply grants the strongest legitimate inference from costly conduct—sincerity and commitment—then sharply separates those psychological properties from historical truth, directly defeating the proposed evidential transition without denying that sacrifice can count against deliberate fabrication. Principal limitation: Although conviction does not entail truth, the affirmative can use costly conduct more modestly to compare sincere experience with conscious deception, so the reply does not determine whether testimony originated in accurate perception, memory distortion, or sincere mistake. Live burden: The affirmative must connect commitment to reliable knowledge and exclude error, while the negative must preserve the concession that costly behavior can update sincerity even though it cannot authenticate resurrection. Locked score: The 94-point result reflects coherence and responsiveness.\"}]}\ntokens used\n20,128",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "47b53f912d917905aeaea3b4063ed48053bbf89932cec563c06f45a4ebb07431",
+      "critiqueValidations": [
+        {
+          "moveId": "con-conditional-probability-direction",
+          "words": 124,
+          "characters": 1064,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-costly-commitment-not-truth",
+          "words": 118,
+          "characters": 923,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 8,
+      "moveIds": [
+        "con-divine-action-expectations",
+        "con-alternatives-burden-preserved"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:10:17.428Z",
+      "completedAt": "2026-08-27T03:11:15.642Z",
+      "elapsedMs": 58214,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "fdd47c176837ac8a921dc8462b11fb0e40188773dbf6c9576de4fe4d8b68770d",
+      "stderrSha256": "682df4a669433064988797fd1023134911a342d13f6dda429c8cd0f6640d581a",
+      "stderrTail": "ions.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 87,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt analogizes failure to prove guilt with failure to establish a natural alternative and reiterates doubts about biblical accuracy.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Defeating one natural explanation does not establish resurrection; the affirmative must still warrant its historical data, priors, and comparative likelihoods.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-8\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 8\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-divine-action-expectations\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-alternatives-burden-preserved\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\n2026-08-27T03:10:43.454118Z  WARN codex_sandboxing::violation: recorded sandbox violation: resource=filesystem backend=seatbelt reason=operation_not_permitted path=unknown\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":8,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26T23:10:43-04:00\",\"corrections\":[{\"moveId\":\"con-divine-action-expectations\",\"critique\":\"Strongest feature: Dillahunty isolates the missing inferential bridge: even granting that a perfect God might fittingly incarnate, that premise alone does not make resurrection probable, and he directly tests the affirmative’s authentication rationale. Principal limitation: His categorical phrasing understates Christopoulos’s claim that resurrection could authenticate incarnation, while objections about obscure testimony and sacrificial suffering remain comparatively undeveloped and lack an articulated account of what perfect divine action predicts. Live burden: The affirmative must independently warrant why this divine purpose and these means raise the conditional prior, while the negative must defend competing expectations rather than merely find the strategy puzzling. Locked score: The strong/competent 76 fits the probability objection whose burden contact is moderated by incomplete engagement, implicit qualification, and underdeveloped warrant for broader divine-choice criticism.\"},{\"moveId\":\"con-alternatives-burden-preserved\",\"critique\":\"Strongest feature: Dillahunty cleanly preserves the affirmative burden by distinguishing failure of a selected natural explanation from positive support for resurrection, then connecting that distinction to disputed biblical reliability, priors, and likelihood comparisons. Principal limitation: The courtroom analogy is illuminating but imperfect because comparative historical inference can favor the best hypothesis without excluding every rival, and the reply does not fully analyze whether the proposed comparison is exhaustive or evidentially discriminating. Live burden: Christopoulos must warrant the underlying data and show that resurrection predicts them better on defensible priors, while Dillahunty need not establish a replacement history but should engage any genuinely comprehensive comparison. Locked score: The 93 reflects exceptional responsiveness, motion-level relevance, precision, restraint, and coherent burden placement, with modest evidential and charitable limits.\"}]}\ntokens used\n22,803",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "59e27325e29ecbf55132631a6d51d4e0e60b8352d254dcb66c8f18223fc090a0",
+      "critiqueValidations": [
+        {
+          "moveId": "con-divine-action-expectations",
+          "words": 126,
+          "characters": 998,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-alternatives-burden-preserved",
+          "words": 125,
+          "characters": 991,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 9,
+      "moveIds": [
+        "con-rational-uncertainty-option"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T03:10:17.428Z",
+      "completedAt": "2026-08-27T03:10:55.201Z",
+      "elapsedMs": 37773,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "786336e4d107e5ee9cfa865af79c55c429483bcdb0c849dee4a5eec92b1edc70",
+      "stderrSha256": "06d5661b9917b9fb120fb601bddc872885138d28de4cf2bca8b858eb9f9493c1",
+      "stderrTail": "plicit threshold-style qualification.\"\n        },\n        \"calibrationFindings\": {\n          \"assertedForce\": \"possibility\",\n          \"warrantFit\": \"matched\",\n          \"qualificationStatus\": \"explicit\",\n          \"uncertaintyAcknowledged\": \"yes\",\n          \"rationale\": \"The conclusion is properly permissive: uncertainty may be rational when evidence is insufficient, rather than uncertainty being mandatory in every exhaustive comparison.\"\n        },\n        \"charity\": {\n          \"tested\": true,\n          \"alternative\": \"A probability distribution can rationally rank exhaustive hypotheses even when no member exceeds one-half, and action may favor the largest member.\",\n          \"decisiveQualification\": \"Ranking or action preference does not necessarily warrant belief that the largest member occurred, especially when assignments are poorly grounded.\"\n        },\n        \"ratings\": {\n          \"logicalCoherence\": {\n            \"value\": 93,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"evidenceWarrant\": {\n            \"value\": 86,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger.\"\n          },\n          \"relevanceBurden\": {\n            \"value\": 100,\n            \"rationale\": \"It directly completes the con motion-level withholding rationale and strongly supports the central uncertainty-option bridge.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 89,\n            \"rationale\": \"The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger.\"\n          }\n        },\n        \"evidenceBasis\": \"The excerpt states that exhaustive options can coexist with insufficient data and that the rational conclusion may therefore be that the event is unknown.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Diagnostic challenge\",\n        \"words\": \"An exhaustive hypothesis set does not require belief in its largest member when probability assignments remain poorly grounded or every option lacks sufficient evidential support.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b13-debate87-critique-repair-9\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 9\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"87\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"christopoulos-dillahunty-resurrection-historical-event-2024\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"maxItems\": 1,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-rational-uncertainty-option\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-13-publication-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-13-publication-critique-field-disjoint-recovery\",\"contextIndex\":9,\"debateNumber\":\"87\",\"debateId\":\"christopoulos-dillahunty-resurrection-historical-event-2024\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-26T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"con-rational-uncertainty-option\",\"critique\":\"Strongest feature: Dillahunty separates logical exhaustiveness, comparative ranking, and sufficient epistemic warrant, explaining why the highest-ranked hypothesis need not become justified belief when probability assignments remain evidentially underdetermined. Principal limitation: The threshold reference clarifies permissible suspension, but it could distinguish explicitly between belief, credence, and action-guiding choice, since comparative ranking may remain consequential without establishing what historically occurred. Live burden: The pro case must demonstrate not merely that resurrection compares favorably with alternatives, but that its priors and likelihood judgments are reliably grounded and strong enough to overcome rational noncommitment. Locked score: The very strong 94 reflects motion-level relevance, decisive responsiveness, stable qualification, coherent uncertainty calibration, and substantial charity, while modest evidential-warrant and representational limits prevent perfection.\"}]}\ntokens used\n21,348",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "bec96a4cd87307222db1116e45077b127b5b60c00bc80d6a2a4602e9bd43bc86",
+      "critiqueValidations": [
+        {
+          "moveId": "con-rational-uncertainty-option",
+          "words": 117,
+          "characters": 1014,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    }
+  ],
+  "authorization": {
+    "analysis": false,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

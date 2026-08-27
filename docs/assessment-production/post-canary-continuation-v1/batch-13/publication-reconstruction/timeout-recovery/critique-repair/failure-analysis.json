@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "slugfester-post-canary-batch-13-publication-critique-recovery-level-2-failure-analysis",
+  "status": "batch-13-halted-at-substantive-publication-recovery-blocker",
+  "analyzedAt": "2026-08-27T03:11:15.649Z",
+  "failedGate": "Debate 87 publication critique recovery level 2",
+  "recoveryPolicy": {
+    "recoveryLevelsAuthorized": 2,
+    "recoveryLevelExecuted": 2,
+    "additionalRecoveryAuthorized": false,
+    "attemptsPerShardMaximum": 1,
+    "retriesUsed": 0
+  },
+  "executionSummary": {
+    "contextsAttempted": 10,
+    "validContexts": 8,
+    "invalidContexts": 2,
+    "attempts": 10,
+    "elapsedMs": 285823,
+    "directIncrementalCostUsd": 0,
+    "paidServiceCalls": 0
+  },
+  "failures": [
+    {
+      "contextIndex": 1,
+      "moveId": "pro-natural-regularity-miracle-context",
+      "field": "critique",
+      "contract": "105–130 words",
+      "observedWordCount": 133,
+      "status": "output-validation-failed"
+    },
+    {
+      "contextIndex": 6,
+      "moveId": "con-sincerity-transmission-limits",
+      "field": "critique",
+      "contract": "105–130 words",
+      "observedWordCount": 138,
+      "status": "output-validation-failed"
+    }
+  ],
+  "preservation": {
+    "executionRecordPreserved": true,
+    "eightValidShardOutputsPreserved": true,
+    "invalidOutputsNotAcceptedOrPublished": true,
+    "scorePassRerun": false,
+    "calculatedScoresChanged": false
+  },
+  "decision": {
+    "continueBatch13": false,
+    "selectBatch14": false,
+    "reason": "The frozen workflow permits at most two recovery levels. Both have been consumed for Debate 87 publication reconstruction, and two final critique shards remain outside the publication contract. A retry, rewrite, deterministic shortening, or additional shard would constitute an unauthorized third recovery action."
+  }
+}
