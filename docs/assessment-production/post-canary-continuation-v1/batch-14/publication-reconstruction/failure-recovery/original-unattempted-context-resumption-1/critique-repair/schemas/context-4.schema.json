@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b14-133-critique-repair-4",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 4
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "133"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hawkins-folley-free-will-idealism-2026"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "con-noncausal-compatibilist-basis"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "con-functional-practical-freedom"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
