@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-failure-diagnosis",
+  "status": "debate-53-eleven-critique-fields-failed-all-other-publication-fields-valid",
+  "diagnosedAt": "2026-08-27T19:04:27Z",
+  "batchNumber": 14,
+  "debateNumber": "53",
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "preservedEvidence": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/model-execution.json",
+    "executionSha256": "f6e0ab9cbbc9669c5d0c2205fe4ea8c16b1c32f7f491c3be5a77ca13614a9fb0",
+    "output": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/outputs/debate-53.json",
+    "outputSha256": "45f68c2e877fc223b38b3ef05754ba175f1afca96cd4c169b8abbf56eace73e1",
+    "packet": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/packets/debate-53.json",
+    "packetSha256": "a3bb41fbae9fe786fab0add92c4238608da201191f85791549fa2b779bec06b8",
+    "validation": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/validations/debate-53.json",
+    "validationSha256": "3a6f7c088dceb4d98e0be7d68889f05b25ee6496ff57fffa4f8b978ac1a8440c"
+  },
+  "diagnosis": {
+    "moves": 20,
+    "invalidCritiqueCount": 11,
+    "invalidCritiques": [
+      {
+        "moveId": "con-conquest-genocide-moral-truth",
+        "words": 133,
+        "characters": 1014,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "con-gospel-concrete-contradictions",
+        "words": 134,
+        "characters": 1084,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "con-gospel-editing-transmission",
+        "words": 132,
+        "characters": 1027,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "pro-ancient-historical-reporting-standard",
+        "words": 131,
+        "characters": 1045,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "pro-biblical-archaeological-guidance",
+        "words": 132,
+        "characters": 1088,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "con-miracle-possibility-not-evidence",
+        "words": 136,
+        "characters": 1064,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "pro-biblical-moral-development",
+        "words": 131,
+        "characters": 1023,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "con-slave-law-moral-omission",
+        "words": 132,
+        "characters": 959,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "pro-christian-abolitionist-reception",
+        "words": 134,
+        "characters": 1058,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "pro-exodus-abolitionist-use",
+        "words": 134,
+        "characters": 1086,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      },
+      {
+        "moveId": "con-scriptural-slavery-instability",
+        "words": 131,
+        "characters": 1045,
+        "sentences": 4,
+        "violations": [
+          "word-count"
+        ]
+      }
+    ],
+    "allOtherFieldsStructurallyValid": true,
+    "surrogateValidationWasInMemoryOnly": true,
+    "acceptedFieldsChanged": false,
+    "scoresChanged": false,
+    "scorePassRerun": false
+  },
+  "recoveryPlan": {
+    "freshIsolatedFieldDisjointShards": 6,
+    "maximumWritableCritiquesPerShard": 2,
+    "attemptsPerShard": 1,
+    "retriesMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "levelOneFieldDisjointRecoveryPreparation": true,
+    "modelExecution": false,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-six-field-disjoint-debate-53-critique-recovery-shards"
+}
