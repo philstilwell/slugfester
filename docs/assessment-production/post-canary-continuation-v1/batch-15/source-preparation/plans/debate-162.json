@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2076,
+  "ledgerBytes": 120546,
+  "ledgerSha256": "b78abc3ad4a9128c99a6bfb855665f38dbe303fd35378b47118449888bf4dc4b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51521,
+      "contextSha256": "9e634cae1280643b56e03576942c496bb9bcf230b768c76ac6786302494781bc"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52762,
+      "contextSha256": "5361e716ba052aff741f1e6e4daf2a20d0a822cc7667a846bd693b942512d89b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2075,
+      "coreEvents": 396,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2075,
+      "contextEvents": 436,
+      "contextBytes": 25609,
+      "contextSha256": "3f77f2ac5164ec501ba6d5eab80d9cde4d0a413e8e126cb354c62fffc2b730a0"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2075,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "162",
+  "debateId": "craig-kagan-god-morality-2009",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

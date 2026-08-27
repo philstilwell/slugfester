@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3040,
+  "ledgerBytes": 178801,
+  "ledgerSha256": "d6135aff73d945a7433ca2ab3dceb2a802244a8ecb9f4b41bf4b243c5cde247d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51944,
+      "contextSha256": "a5f5adcc368f0109eab3c9c77f91d368b4befe70de1139eba8fcf7c9cac589ab"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53316,
+      "contextSha256": "f86e4d6f1b3b3563040956c7f9bc1b48473a77f158ef7b15ec98c74deae2965e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53437,
+      "contextSha256": "3013c8c1678a43b30a8e6a34390e7523b2fa352b7b373b8b65a35a219c7023b6"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3039,
+      "coreEvents": 540,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3039,
+      "contextEvents": 580,
+      "contextBytes": 34253,
+      "contextSha256": "bbe694b6f15e76d890e37e2d6ad2c0ef3b22206c38cb497451b5b9eb99fc48e1"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3039,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "155",
+  "debateId": "turek-shermer-morality-god-science-2015",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

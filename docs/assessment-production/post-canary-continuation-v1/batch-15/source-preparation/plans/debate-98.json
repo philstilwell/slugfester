@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2591,
+  "ledgerBytes": 151906,
+  "ledgerSha256": "5f8b61c7d37e07db629143add4493d5bf903131d8718c4dd5775f118cab15888",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51804,
+      "contextSha256": "b2f6c53b075a091630a5da5283be33aa14f40006d4bf28cce874b3b586c5c413"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53389,
+      "contextSha256": "502e12bc6830c97f0537505c8887e59fa5bbd093dbd0fd4913f850103c7a49fd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53275,
+      "contextSha256": "3cf0edc507c9bbb5432df94fb7915f1142d0e86797e1d4562940e76d34a95297"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2590,
+      "coreEvents": 91,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2590,
+      "contextEvents": 131,
+      "contextBytes": 7732,
+      "contextSha256": "17bb00330e63be5678ce51a7d61ccd04ded04cd0687f53d842198716e7c8a5da"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2590,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "98",
+  "debateId": "craig-grayling-evil-god-reasonable-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

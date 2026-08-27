@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-source-preparation",
+  "debateNumber": "159",
+  "debateId": "wood-aron-ra-naturalism-2023",
+  "motion": "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
+  "sides": {
+    "pro": {
+      "label": "Cognitive-reliability critique",
+      "speakers": [
+        "David Wood"
+      ]
+    },
+    "con": {
+      "label": "Evidence-centered naturalism",
+      "speakers": [
+        "Aron Ra"
+      ]
+    }
+  },
+  "durationSeconds": 6705,
+  "eventCount": 2993,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/dto5DQ7GBEQ/transcript.txt",
+    "transcriptSha256": "8373539ba45cf996f7c8b9237627a5287df64c6a99afd50f32f296f51622a996",
+    "eventsPath": ".assessment-cache/captions/dto5DQ7GBEQ/events.json",
+    "eventsSha256": "78125b95d4721d2176fa6fd2a629f26d2cf34b58b74488438cc4ae30fefd88e2",
+    "localManifestPath": ".assessment-cache/captions/dto5DQ7GBEQ/manifest.json",
+    "localManifestSha256": "3e2e2230a271b84b73c12cb96a22186d79e3683fe887f253594d5fbfe308d069"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-159.jsonl",
+    "sourceLedgerSha256": "e1d023e5084555427920c6eb9d0ebd184256e2a4c9b7bda6725adc8a49e4fd73",
+    "sourceLedgerBytes": 175466,
+    "sourceLedgerEventCount": 2993,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-159.json",
+    "partitionPlanSha256": "7ddd029851247fa258403deb0a96fe8b40c260ceef12375152735549a6faad4b",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

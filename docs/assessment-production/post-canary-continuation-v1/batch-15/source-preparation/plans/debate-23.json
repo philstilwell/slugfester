@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2936,
+  "ledgerBytes": 161561,
+  "ledgerSha256": "c93f6654898be309e4b71258fdbc9dffd3fe20471b0b9329c9944c8006e85bf7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47913,
+      "contextSha256": "a650a0e492ec3ed469570202d1244cffbeaf310aaffe954ad3e297038026e2c4"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 49665,
+      "contextSha256": "c7971615d501971956aed5cab429738be4381f8aa667506d1c887b5a0818dd81"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50620,
+      "contextSha256": "6f66bd2246423ab9932db2d7f0df91198bd5c4bb8e4e5959e9d33e0a85670df1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2935,
+      "coreEvents": 436,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2935,
+      "contextEvents": 476,
+      "contextBytes": 26455,
+      "contextSha256": "536aa7c08606d90f49493892f2968f92f5357facc35f54fa1b309444c52ba39b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2935,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "23",
+  "debateId": "oconnor-biddle-objective-morality-2024",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

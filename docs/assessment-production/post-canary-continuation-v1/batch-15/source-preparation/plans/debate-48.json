@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2305,
+  "ledgerBytes": 132796,
+  "ledgerSha256": "63d2104e5f9f98e9a6f601c2023ec5f8026e63f2fe7a4b28a7e87e9aa50e81d6",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50979,
+      "contextSha256": "c9c2cd1f9ae74c72593d2f0ddafef4e3677c9f254899fa4550fe60e9b5f13fd8"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52489,
+      "contextSha256": "823b77b5d1f3ea34b1d4e3c49d7f7dcd3261adff0e2fa36f05c676479a5b847e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2304,
+      "coreEvents": 625,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2304,
+      "contextEvents": 665,
+      "contextBytes": 38398,
+      "contextSha256": "68a282e857cf2dc194ad6b223005123fa5d76e622e67bacf4f830b2f7610ae78"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2304,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "48",
+  "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

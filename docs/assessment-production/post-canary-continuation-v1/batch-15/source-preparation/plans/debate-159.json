@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2993,
+  "ledgerBytes": 175466,
+  "ledgerSha256": "e1d023e5084555427920c6eb9d0ebd184256e2a4c9b7bda6725adc8a49e4fd73",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51428,
+      "contextSha256": "f118f024571b117f6365c33e43fe0972a5fcf943760d64d0e6effb4db77e012f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52819,
+      "contextSha256": "30144e9cdeeb6b0e3f93ba192ecf9b0bdf5d6e15eda24a7e6b615464599e40f5"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53678,
+      "contextSha256": "94bf9f5d889f5b81633d4774c7bfb2ead9d6fa8e89f3499516cedc1fb5da82c9"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2992,
+      "coreEvents": 493,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2992,
+      "contextEvents": 533,
+      "contextBytes": 31814,
+      "contextSha256": "d87aba25b92a5094e55aee0b3ed0babd1d8b00a85b70c25340c71fb686932739"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2992,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "159",
+  "debateId": "wood-aron-ra-naturalism-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

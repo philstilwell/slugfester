@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-source-preparation",
+  "debateNumber": "128",
+  "debateId": "craig-law-evil-god-challenge-2011",
+  "motion": "Does God exist, and do Craig's cumulative arguments overcome Law's evidential problem of evil and evil-God symmetry challenge?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Evil-God challenge",
+      "speakers": [
+        "Stephen Law"
+      ]
+    }
+  },
+  "durationSeconds": 7057,
+  "eventCount": 2765,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/APfd7B3CEhI/transcript.txt",
+    "transcriptSha256": "6ef17f6e86a8e63f34888dde8f17057bcad975d90d6ffa8010b8e3aa3006a9bb",
+    "eventsPath": ".assessment-cache/captions/APfd7B3CEhI/events.json",
+    "eventsSha256": "b8020271645019b729638d69c305a03ffd2dd570b50ca31a4a30d01179a90ef5",
+    "localManifestPath": ".assessment-cache/captions/APfd7B3CEhI/manifest.json",
+    "localManifestSha256": "de8f537eabe10e544ce75f59903a23c06ec0b795b0eec504b11555a4c74c12ff"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-15/debate-128.jsonl",
+    "sourceLedgerSha256": "34bb715be3c14ef294e1ef3c6d7468d4528a6c8181a24fcad92de98d98ae130d",
+    "sourceLedgerBytes": 160755,
+    "sourceLedgerEventCount": 2765,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/source-preparation/plans/debate-128.json",
+    "partitionPlanSha256": "db4beb9f13f9b0b189682001cb1bd13b6c1bd4ca3d139d9a22340fc39e206dff",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4043,
+  "ledgerBytes": 217881,
+  "ledgerSha256": "38cc0bf9536f92406a13005e6694487f01af6ee3882cc01b9eed3af088fa2ad2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47330,
+      "contextSha256": "32c824ce8c8c38d9a99158b4a675c2ce64eba28b9636af9e4484208180a3a794"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 49047,
+      "contextSha256": "551a01a9a72c7e7415542a4d5053092e141369a794b95cc6d5b45944ce3e2e72"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 48124,
+      "contextSha256": "82ac4576d72b5503cf8e193117623ac5f5a897ee0227395fe3cc16110715aa1a"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 49710,
+      "contextSha256": "307abfd21f169a8fdf4a11b32e5e1f0c3ac09f7f92b74755f53695bc651acc74"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4042,
+      "coreEvents": 723,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4042,
+      "contextEvents": 763,
+      "contextBytes": 40997,
+      "contextSha256": "7349d9f665081eca1901454d5f0a53053a9a60c057a882627ee2092dfa11e94b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4042,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "86",
+  "debateId": "egnor-dillahunty-god-existence-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
