@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-14-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "debateNumber": "12",
+  "inventoryPlanCanonicalSha256": "9f9e087fbb3f68ca1b8e5a841443a97db7534f820672919e3a6eada2845cb013",
+  "sideSelectionSha256": {
+    "pro": "ebd78b3ae36234d554cb8b533f773ab0796e13b4af95dbfe35b114e8988b17a1",
+    "con": "6165b1684f332fd43c23b4b88f0d5e313fe007458cc275c691de3f6c68cf9208"
+  },
+  "sections": 5,
+  "moves": 18,
+  "proMoves": 8,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-02",
+      "side": "con",
+      "moveId": "con-direct-experience-derived-formalisms",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Independently of any prior opposing move, this states Tom's positive account of direct experience as epistemically prior to derived logical and mathematical descriptions.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "side": "con",
+      "moveId": "con-identity-arithmetic-without-god",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Without an earlier opposing move, the claim still constructively advances a modal basis for identity and arithmetic that is independent of divine existence.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-05",
+      "side": "con",
+      "moveId": "con-self-validating-existence",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The proposition independently presents Tom's foundational inference from indubitable self-existence to logical and mathematical descriptions applicable beyond the individual thinker.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 3,
+  "nominatedCandidates": 18,
+  "retainedCandidates": 18,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

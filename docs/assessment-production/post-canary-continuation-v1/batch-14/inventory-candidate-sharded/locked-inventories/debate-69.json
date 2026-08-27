@@ -1,0 +1,864 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "69",
+  "debateId": "winger-dillahunty-resurrection-unreasonable-2019",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-cumulative-historical-inference",
+      "side": "pro",
+      "description": "Establish that belief in Jesus' resurrection is reasonable through a cumulative historical inference from Jesus' death, the reported empty tomb and appearances, witness transformations, early proclamation, and comparison with rival explanations.",
+      "successCriteria": "The route succeeds if its principal historical claims are adequately supported, bodily resurrection explains their conjunction better than the live alternatives, and the evidential standard permits supernatural causation to be inferred without first assuming it.",
+      "motionBridge": {
+        "bridgeId": "pro-reasonable-resurrection-belief",
+        "tier": "motion",
+        "description": "Connect the cumulative historical and explanatory case to the conclusion that belief in Jesus' bodily resurrection is epistemically reasonable."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-establish-historical-data",
+          "tier": "central",
+          "description": "Establish the material historical data concerning death, burial or the empty tomb, reported appearances, conversions, and early resurrection proclamation."
+        },
+        {
+          "bridgeId": "pro-compare-explanations",
+          "tier": "central",
+          "description": "Show that bodily resurrection has greater explanatory scope and power than conspiracy, hallucination, legend, error, or combinations of natural alternatives."
+        },
+        {
+          "bridgeId": "pro-identify-divine-causation",
+          "tier": "central",
+          "description": "Show that the event's religious context and the failure of competing explanations warrant identifying the resurrection as divine action."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-corroborate-sources",
+          "tier": "subsidiary",
+          "description": "Support the historical sources through their asserted earliness, multiplicity, local detail, cultural fit, archaeology, and relevant scholarly agreement."
+        },
+        {
+          "bridgeId": "pro-defend-evidential-standard",
+          "tier": "subsidiary",
+          "description": "Defend ordinary cumulative historical reasoning against standards alleged to exclude extraordinary conclusions categorically or generate an evidential regress."
+        }
+      ]
+    },
+    {
+      "routeId": "con-insufficient-warrant",
+      "side": "con",
+      "description": "Establish that belief in Jesus' resurrection is unreasonable because transmitted reports, disputed historical premises, and background compatibility do not provide sufficient warrant for either the event or its supernatural cause.",
+      "successCriteria": "The route succeeds if the available sources do not adequately establish the material premises, ordinary explanations or unresolved uncertainty remain live, or the evidence fails to meet the burden appropriate to an extraordinary supernatural conclusion.",
+      "motionBridge": {
+        "bridgeId": "con-withhold-resurrection-belief",
+        "tier": "motion",
+        "description": "Connect the insufficiency and underdetermination of the available evidence to withholding belief in bodily resurrection as the reasonable position."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-test-source-sufficiency",
+          "tier": "central",
+          "description": "Show that late, dependent, disputed, or second- and third-hand reports cannot securely establish the proposed resurrection facts."
+        },
+        {
+          "bridgeId": "con-preserve-underdetermination",
+          "tier": "central",
+          "description": "Show that sincerity, movement growth, accurate background details, and reported experiences remain compatible with legend, error, transmission, or unknown causes."
+        },
+        {
+          "bridgeId": "con-require-causal-warrant",
+          "tier": "central",
+          "description": "Require evidence not only that an unusual event occurred but also that resurrection was possible and that supernatural or divine causation produced it."
+        },
+        {
+          "bridgeId": "con-apply-proportionate-burden",
+          "tier": "central",
+          "description": "Apply an evidential burden proportionate to the extraordinariness and low background plausibility of bodily resurrection."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-distinguish-claims-from-support",
+          "tier": "subsidiary",
+          "description": "Distinguish reports, sincere beliefs, and incidental historical accuracy from independent support for the resurrection proposition itself."
+        },
+        {
+          "bridgeId": "con-defend-suspension",
+          "tier": "subsidiary",
+          "description": "Defend suspension of judgment without requiring a complete rival reconstruction or a claim that resurrection is impossible."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-fact-foundation",
+      "title": "Historical facts and source reliability",
+      "weightPercent": 24,
+      "rationale": "The cumulative inference depends on whether death, burial, the empty tomb, appearances, conversions, and early proclamation are established by sufficiently early, independent, consistent, and reliable sources."
+    },
+    {
+      "sectionId": "testimony-and-corroboration",
+      "title": "Testimony, sincerity, and corroboration",
+      "weightPercent": 16,
+      "rationale": "The parties dispute what reported experiences, costly commitment, local knowledge, archaeology, and accurate background details can establish about the central resurrection claims."
+    },
+    {
+      "sectionId": "rival-explanations",
+      "title": "Resurrection and rival explanations",
+      "weightPercent": 22,
+      "rationale": "The motion turns substantially on whether resurrection explains the proposed historical data better than legend, deception, hallucination, error, transmission, combined alternatives, or unresolved uncertainty."
+    },
+    {
+      "sectionId": "supernatural-causation",
+      "title": "Event evidence and supernatural causation",
+      "weightPercent": 16,
+      "rationale": "Evidence for an unusual return to life and evidence that God caused a bodily resurrection are distinct inferential questions whose connection is necessary to the motion."
+    },
+    {
+      "sectionId": "evidential-burden",
+      "title": "Extraordinary claims and evidential burden",
+      "weightPercent": 14,
+      "rationale": "The appropriate relationship among prior plausibility, extraordinary claims, proportional evidence, and historical inference determines what support reasonable belief requires."
+    },
+    {
+      "sectionId": "reasonableness-and-suspension",
+      "title": "Reasonable belief and suspension of judgment",
+      "weightPercent": 8,
+      "rationale": "The ultimate burden requires deciding whether the cumulative case warrants belief or whether remaining evidential uncertainty makes suspension of judgment the justified motion-level conclusion."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cumulative-reasonableness-method",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "reasonableness-and-suspension",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Belief in Jesus' resurrection can be reasonable when likely historical facts are established and competing explanations of those facts are compared cumulatively.",
+      "sourceSpan": {
+        "startEvent": 168,
+        "endEvent": 204
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike begins his uninterrupted opening statement at event 155 and explicitly presents this two-part case in the first person.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "that's what I'm planning to present today. So, I'm going to give a two-part case for the resurrection of Christ, why I think it's reasonable to believe Jesus rose, based upon um like I said, two parts. The first part is facts of history. So, these are like things that we can say very likely did happen in the first century. In fact, when I say facts, that's what I mean. I I mean",
+        "characterCount": 380,
+        "tokenCount": 75,
+        "startToken": 113,
+        "endToken": 187,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-roman-crucifixion-death",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "historical-fact-foundation",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Jesus' death by Roman crucifixion under Pontius Pilate is a securely supported historical foundation for assessing the resurrection claim.",
+      "sourceSpan": {
+        "startEvent": 237,
+        "endEvent": 249
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator has yielded the floor to Mike, who labels this the first fact and supports it by invoking historical sources and scholarly testimony.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Like this. Okay, so the first fact is that Jesus died by Roman crucifixion. Uh Bart Ehrman, the atheist, he says this is one of the most certain facts of history, that Jesus was crucified on the orders of Roman prefect of Judea, Pontius Pilate. He offers 11 independent sources, independent sources that support the death of Christ in this fashion. Um I could quote atheist after",
+        "characterCount": 379,
+        "tokenCount": 67,
+        "startToken": 0,
+        "endToken": 66,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-burial-empty-tomb",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "historical-fact-foundation",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Jesus was probably buried in a private tomb later found empty, supported by considerations including multiple attestation, women witnesses, Joseph of Arimathea, and archaeology.",
+      "sourceSpan": {
+        "startEvent": 266,
+        "endEvent": 386
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike explicitly introduces burial and the empty tomb as his third and fourth facts, then supplies six consecutive supporting considerations and a conclusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "they had to include them in the story of the empty tomb. Richard Bauckham's done really great work in his book Jesus and the eyewitnesses on this as well that helps support the eyewitness account of the women. Number five, Joseph of Arimathea seems historical. Joseph of Arimathea is the guy who buried Jesus. He put him in the tomb. He He's a member of the Sanhedrin, so he would",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 426,
+        "endToken": 495,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-appearance-experiences",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "rival-explanations",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Individual and group experiences understood as appearances of the risen Jesus form historical data that ordinary hallucination does not adequately explain.",
+      "sourceSpan": {
+        "startEvent": 391,
+        "endEvent": 439
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike identifies this as his fifth historical fact and develops it continuously through named accounts, scholarly consensus claims, and the hallucination inference.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "in a group. They all seemed to be seeing it, and it convinced them that Jesus rose. Gerd Lüdemann, who's an atheist and a lead critic of the resurrection, he says, \"It may be taken as historically certain that Peter and the disciples had experiences after Jesus' death in which Jesus appeared to them as the risen Christ.\" Mike Licona says this conclusion about the appearances is",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 160,
+        "endToken": 227,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-disciple-sincerity-transformation",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "testimony-and-corroboration",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "The disciples' transformed lives and willingness to endure persecution support the inference that they sincerely believed they had encountered the risen Jesus.",
+      "sourceSpan": {
+        "startEvent": 441,
+        "endEvent": 496
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike continues his opening, introduces transformation as the next fact, and resumes the same argument after a brief technical interruption about his slides.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "disciples' lives were thoroughly transformed. These appearances, they transformed their lives, even being willing to die for the belief that they had seen the risen Christ and he'd he'd physically risen from the dead. Again, this is actually not controversial. Persecution in the early church is attested to by multiple sources, Christian and non-Christian, and we have especially strong historical support for Peter, James, and Paul",
+        "characterCount": 433,
+        "tokenCount": 67,
+        "startToken": 6,
+        "endToken": 72,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-religious-context-divine-cause",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "supernatural-causation",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Jesus' religious, miraculous, and prophetic context indicates that, if he rose, the event is best understood as an act of God.",
+      "sourceSpan": {
+        "startEvent": 550,
+        "endEvent": 580
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike introduces religious significance as his tenth fact and expressly draws the inference that the context identifies God as the resurrection's cause.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "the New Testament. It's um it's remarkable. And the special the specific points of these prophecies relate to the confirmed facts of history, the death of Christ. So, what I'm saying here is if you're going to say, \"Okay, fine. Jesus rose, but don't tell me God did it.\" I'm going to tell you the religious context in which Jesus died and rose indicates that it was God who did it",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 115,
+        "endToken": 185,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-best-explanation",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "rival-explanations",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "constructive",
+      "proposition": "Resurrection explains the cumulative historical data better than conspiracy, hallucination, legend, or combinations of those natural rival explanations.",
+      "sourceSpan": {
+        "startEvent": 641,
+        "endEvent": 725
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike explicitly shifts from listing facts to asking for their best explanation and consecutively evaluates the resurrection and several named alternatives.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "around the story are confirmed. The resurrection explains it, but then what about alternate explanations? How about conspiracy? Some people put up conspiracy as a possible explanation. I I don't think that conspiracy works because it as you can see on your screen here, it simply um or you will see I keep having it lose lose my uh I apologize for that. I did test this. I promise",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 68,
+        "endToken": 136,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-testimony-claims-not-supernatural-proof",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "testimony-and-corroboration",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Sincere testimony can support that an extraordinary experience was reported without sufficiently establishing that its supernatural interpretation is true.",
+      "sourceSpan": {
+        "startEvent": 865,
+        "endEvent": 896
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening turn is explicitly handed to Matt immediately before the core, and the first-person family example remains within that turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "virtually everything that he was talking about at some level is the claim and not the evidence for it. Right up to the end where he says, \"Oh, well, you know, this is the evidence for the resurrection.\" No, these are the claims about a resurrection. The evidence for the resurrection is something else other than a whole bunch of people say it they saw it happen or had an experience",
+        "characterCount": 383,
+        "tokenCount": 71,
+        "startToken": 146,
+        "endToken": 216,
+        "weightedOverlap": 6,
+        "matchedAnchorTokens": 2,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-supernatural-candidate-needs-support",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "supernatural-causation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Resurrection cannot serve as the best explanation unless the possibility of supernatural interaction is supported rather than exempted from ordinary evidential standards.",
+      "sourceSpan": {
+        "startEvent": 927,
+        "endEvent": 954
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Matt throughout the con opening and frames the passage in his established skeptical vocabulary of evidence, possibility, and special pleading.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "cannot occur. It's simply we don't have evidence for that. When I say something like in order to to reach to the supernatural as a potential explanation, you would first have to show that the supernatural is real and can interact with reality. I'm talking about just having a sound epistemology. It's not the fault of sound epistemology that claims about the supernatural are unable to meet those standards",
+        "characterCount": 406,
+        "tokenCount": 69,
+        "startToken": 103,
+        "endToken": 171,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-known-natural-causes-outrank-resurrection",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "rival-explanations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Known sources of false reports, including deception, legend, error, and exaggeration, remain better-grounded candidates than an unsupported resurrection mechanism.",
+      "sourceSpan": {
+        "startEvent": 1025,
+        "endEvent": 1064
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is still Matt's uninterrupted opening, with first-person methodological language and an explicit appeal to Hume consistent with the surrounding con argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "known mechanism to support this? Claiming that magic did it, that uh oh, well, Jesus was special or God is special and God is able to you know, ex- exempt things from what we understand to be the the laws of reality and these limitations. Call it magic or or whatever you want. Uh it's a case of special pleading and you would need to demonstrate that this is an actual viable candidate",
+        "characterCount": 386,
+        "tokenCount": 73,
+        "startToken": 3,
+        "endToken": 75,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-late-dependent-sources-undermine-facts",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "historical-fact-foundation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Noncontemporary and source-dependent accounts with unresolved inconsistencies do not securely convert the proposed minimal-facts list into established historical facts.",
+      "sourceSpan": {
+        "startEvent": 1279,
+        "endEvent": 1375
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The con opening continues without interruption, and Matt explicitly names Michael, Gary Habermas, the minimal-facts approach, and his own predebate stipulations.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "so, we've got this weird single case of special pleading. Now, there's people who would list all the evidence. Gary Habermas is famous for the minimal facts approach, and I I would argue that Mike presented a a version of the minimal facts approach with essentially 12 facts instead of five. So, I I don't know if this meets the threshold of a of a novel approach. Uh and actually",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 97,
+        "endToken": 166,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-elimination-does-not-establish-resurrection",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "rival-explanations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Rejecting selected natural alternatives does not establish resurrection when information is incomplete and unknown possibilities remain, so insufficient evidence warrants uncertainty.",
+      "sourceSpan": {
+        "startEvent": 1477,
+        "endEvent": 1558
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage forms the closing sequence of Matt's opening, ending immediately before the moderator announces the transition to dialogue and summarizes his conclusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "limited information they have, makes it incredibly reasonable to presume that the 10th one that I'm going to give them is more than likely correct. And yet, it's not. These are coin tosses. And it's because you don't have all of the information. And for me, it's not that I'm saying the resurrection ever occurred. I'm saying it is absolutely not reasonable to believe that the resurrection occurred because there is insufficient evidence",
+        "characterCount": 438,
+        "tokenCount": 73,
+        "startToken": 312,
+        "endToken": 384,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-local-detail-corroboration",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "sectionId": "testimony-and-corroboration",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "reply",
+      "proposition": "Detailed knowledge of Palestinian institutions, geography, and customs cumulatively corroborates the historical reliability of the Gospel reporting.",
+      "sourceSpan": {
+        "startEvent": 1693,
+        "endEvent": 1723
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn advances the resurrection defender's case, directly addresses Matt, and is followed by Matt's explicit skeptical rebuttal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "it's thought John was written. Like, how did they know Zacchaeus climbed a sycamore tree? Like, these are confirmatory details saying that, \"Hey, this stuff, when you put it all together, there's a reason why, Matt, historians are would would roll their eyes at this at the stuff that you're saying about how Oh, those are just claims. They don't count. Um rather, they're they're",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 130,
+        "endToken": 194,
+        "weightedOverlap": 8,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 0,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-two-part-standard-defense",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-03",
+      "sectionId": "evidential-burden",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "reply",
+      "proposition": "A case combining reasonably established nonmiraculous historical facts with resurrection as their best explanation need not prove its conclusion before its supporting evidence is considered.",
+      "sourceSpan": {
+        "startEvent": 1789,
+        "endEvent": 1810
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker identifies his own two-part case and directly characterizes Matt's epistemic objection as circular, clearly marking Mike's turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "two-part case, right? My one part is, \"Hey, we have these non-miraculous, reasonably believable facts of history.\" And then, the second case The second part is, \"And I think the resurrection best explains it.\" So, you seem to be arguing against both sides. One side is you're arguing against the evidence itself, in which case I'm trying to say, \"Generalities don't do it. We need",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 6,
+        "endToken": 72,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-unmet-burden-permits-nonacceptance",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-04",
+      "sectionId": "reasonableness-and-suspension",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Concluding that resurrection has not met its burden is compatible with leaving its occurrence possible and does not assume that supernatural events cannot occur.",
+      "sourceSpan": {
+        "startEvent": 1811,
+        "endEvent": 1827
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The direct correction of Mike's circularity charge and the first-person statement of the skeptical conclusion identify Matt's responsive turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "sir. Circular reasoning is when the conclusion is entailed in the premise. And my conclusion is not the resurrection didn't occur or that supernatural can't occur. My conclusion is that the resurrection hasn't met its burden of proof. And the fact that it can't do that or seems to be unable to do that is not circular, and it's not a problem for epistemology. It's a problem for",
+        "characterCount": 379,
+        "tokenCount": 68,
+        "startToken": 0,
+        "endToken": 67,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-no-contemporary-crucifixion-verification",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-05",
+      "sectionId": "historical-fact-foundation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The reported crucifixion lacks contemporary verification, while the absence of independent reports for associated conspicuous events weakens confidence in the narrative source.",
+      "sourceSpan": {
+        "startEvent": 1851,
+        "endEvent": 1872
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The skeptical first-person assessment follows Mike's request for agreement and invokes Matt's recurring source-verification and independent-attestation standards.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "no idea. To me, this is largely a story book that whose veracity cannot be verified. I don't have any way to investigate this. There are no contemporary accounts, not even not even in the Bible, there aren't contemporary accounts. We don't see the sort of things that we would expect. We don't see you know, the Romans reporting on you know, it's not like we found a document that",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 0,
+        "endToken": 69,
+        "weightedOverlap": 8,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-bodily-resurrection-meaning",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "supernatural-causation",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "reply",
+      "proposition": "Paul's language and relevant Jewish historical concepts indicate that the earliest resurrection claim concerned Jesus' bodily resurrection rather than a merely spectral experience.",
+      "sourceSpan": {
+        "startEvent": 2057,
+        "endEvent": 2087
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn presents Pauline passages and a scholarly word study for the pro position before Matt objects that Mike is defending an unasserted target.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "study on on what Paul was talking about here when he says Jesus was raised when Jesus was resurrected. And there's no way around it. They believed that it was a bodily resurrection that had occurred. And anybody anybody saying Let me finish this, please. Anybody saying that the Jewish mentality would have been okay with thinking someone had been resurrected when they had merely",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 116,
+        "endToken": 180,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-paul-third-party-appearance-reports",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "sectionId": "testimony-and-corroboration",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Paul's third-party reports of appearances do not establish that the named witnesses personally attested as claimed or that a resurrection actually occurred.",
+      "sourceSpan": {
+        "startEvent": 2199,
+        "endEvent": 2227
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker resumes the answer interrupted by the Paul discussion and explicitly contrasts what Saul believed with what is true or evidentially supported.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "I did, we still have this problem of how do we establish that it's true just because somebody believed it. This is why it doesn't matter to me whether someone is convinced that Paul thought of Jesus as an actual physical resurrection or a spiritual one because what Paul believes is completely irrelevant to what is actually reasonable to believe and what is supported by evidence",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 120,
+        "endToken": 185,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-event-confirmation-not-divine-cause",
+      "qualifiedCandidateId": "chunk-004:c004-01",
+      "sectionId": "supernatural-causation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Even direct confirmation that Jesus returned to life would not by itself identify either a supernatural mechanism or divine agency as the cause.",
+      "sourceSpan": {
+        "startEvent": 2515,
+        "endEvent": 2547
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The exchange explicitly identifies Matt as the respondent, and the sustained first-person answer is distinguishable from Mike's preceding hypothetical.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "I believe that Jesus was now alive again? Yes. And that was the thing that I was going to conclude my my opening with was even if we established the resurrection we still don't know why or how it happened. That is an explanation that has to come secondary. That this you're right this does get to the core here because if if Jesus had done the things that I said would be the best",
+        "characterCount": 380,
+        "tokenCount": 75,
+        "startToken": 3,
+        "endToken": 77,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-extraordinary-resurrection-needs-sufficient-support",
+      "qualifiedCandidateId": "chunk-004:c004-02",
+      "sectionId": "evidential-burden",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Bodily resurrection is an extraordinary claim whose lack of physical, contemporary, and possibility-establishing evidence leaves the available support insufficient.",
+      "sourceSpan": {
+        "startEvent": 2572,
+        "endEvent": 2642
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly rejects Mike's characterization of his position and continues in a sustained first-person explanation of his evidential standard.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "claim is not extraordinary. It is extraordinary claims that require extraordinary evidence and the notion that this person was raised from the dead is absolutely extraordinary and there is no physical evidence for it there is no contemporary evidence for it there's no evidence that this is even possible and yet you just want to dismiss it as if Matt Matt won't accept evidence. No Matt won't accept insufficient",
+        "characterCount": 413,
+        "tokenCount": 69,
+        "startToken": 380,
+        "endToken": 448,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-extraordinary-evidence-regress",
+      "qualifiedCandidateId": "chunk-004:c004-03",
+      "sectionId": "evidential-burden",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "reply",
+      "proposition": "A categorical demand for extraordinary evidence risks an evidential regress because each extraordinary item of support can itself be treated as another claim requiring further support.",
+      "sourceSpan": {
+        "startEvent": 2645,
+        "endEvent": 2671
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Mike introduces the familiar extraordinary-evidence maxim, labels it circular, and develops the regress objection before yielding to Matt's response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "itself be a claim that's extraordinary. To which you can respond I won't believe that until you have more extraordinary evidence. Well if I do bring that well that's also extraordinary which you don't believe unless you have extraordinary evidence and this just circularly goes on forever ruling out ordinary evidence for hypothetical extraordinary evidence that can never pass never even enter",
+        "characterCount": 394,
+        "tokenCount": 62,
+        "startToken": 101,
+        "endToken": 162,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-support-scales-with-extraordinariness",
+      "qualifiedCandidateId": "chunk-004:c004-05",
+      "sectionId": "evidential-burden",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The quantity and quality of evidence required for warranted belief should scale with a claim's extraordinariness and overcome well-supported conflicting background beliefs.",
+      "sourceSpan": {
+        "startEvent": 2718,
+        "endEvent": 2764
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt resumes the lottery comparison, contrasts mundane and resurrection claims, and states the consequence for his broader evidential commitments.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "this in fact a winning lottery ticket and I get paid because that is an event that is more extraordinary than having a losing lottery ticket. All the all that claim is saying is that the the quantity and quality of evidence for a claim is dependent on how extraordinary that claim is. If you say I I just got a pet puppy I need nothing more than your word because as I pointed out",
+        "characterCount": 380,
+        "tokenCount": 75,
+        "startToken": 53,
+        "endToken": 127,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-evidential-deficits-warrant-suspension",
+      "qualifiedCandidateId": "chunk-005:chunk005-candidate-04",
+      "sectionId": "reasonableness-and-suspension",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Unresolved textual problems and the absence of evidence beyond resurrection reports make suspension of judgment more reasonable than accepting resurrection as an explanation.",
+      "sourceSpan": {
+        "startEvent": 3431,
+        "endEvent": 3447
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This conclusion remains in Matt Dillahunty's uninterrupted closing turn and is explicitly framed as the skeptical position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "real problems. I didn't raise them in my opening because I was trying to talk about what would make it reasonable. But I think that these things add to the notion that it is in fact unreasonable to accept this along with the fact that we have zero evidence re-physical evidence anything beyond reports of a resurrection actually occurring and therefore I cannot consider the candidate explanation",
+        "characterCount": 396,
+        "tokenCount": 68,
+        "startToken": 3,
+        "endToken": 70,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-modern-investigability",
+      "qualifiedCandidateId": "chunk-005:chunk005-candidate-10",
+      "sectionId": "reasonableness-and-suspension",
+      "side": "pro",
+      "speaker": "Mike Winger",
+      "moveKind": "reply",
+      "proposition": "First-century evidence supports resurrection belief, while accumulated historical research enables present investigators to assess the events surrounding Jesus' death and claimed resurrection thoughtfully.",
+      "sourceSpan": {
+        "startEvent": 3585,
+        "endEvent": 3596
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The claim is delivered continuously by Mike Winger near the end of his closing statement before he transitions into personal exhortation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "evidence from the first century supports the idea that Jesus rose and not only can we investigate it now in the 21st century, but we can investigate it better than anyone else because of the gathering of the data and because of all the historical research that's gone into it. So, we're in a really good place to reflect thoughtfully on the events around the death and resurrection",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 5,
+        "endToken": 72,
+        "weightedOverlap": 46,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 11,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
