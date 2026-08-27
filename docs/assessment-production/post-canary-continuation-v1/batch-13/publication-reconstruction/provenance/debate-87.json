@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-debate-87-exceptional-recovery-provenance",
+  "protocolId": "assessment-production-post-canary-batch-13-publication-exceptional-atomic-shard-recovery",
+  "debateNumber": "87",
+  "originalFailure": {
+    "status": "timed-out",
+    "partialOutputReused": false
+  },
+  "recoveryLevel1": {
+    "contexts": 3,
+    "acceptedNonCritiqueFields": true
+  },
+  "recoveryLevel2": {
+    "contexts": 10,
+    "acceptedContexts": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "acceptedCritiques": 15,
+    "failedAtomicContextIndexes": [
+      1,
+      6
+    ]
+  },
+  "exceptionalRecoveryLevel3": {
+    "contexts": 2,
+    "acceptedCritiques": 4,
+    "recoveredDiscardedCompanionFields": true,
+    "eachUnavailableFieldAcceptedExactlyOnce": true
+  },
+  "merge": {
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "lockedScores": {
+      "pro": 79,
+      "con": 88
+    },
+    "modelAuthoredScores": 0,
+    "completeValidationPassed": true
+  }
+}
