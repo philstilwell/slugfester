@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-traditional-authority",
+      "side": "pro",
+      "description": "Establish that the canonical Gospels are best connected to Matthew, Mark, Luke, and John through converging early attribution, text-specific internal features, and historically plausible forms of source use or authorized collaboration.",
+      "successCriteria": "The route succeeds if the attribution tradition and internal indicators jointly identify the traditional figures or their authority more plausibly than a later naming process, while accounting for anonymity, Greek literary composition, source dependence, and oral transmission.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-traditional-authorship",
+        "tier": "motion",
+        "description": "Connect each canonical Gospel to its traditional namesake as writer, source, or authorizing authority in the sense required by the motion."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-external-attestation",
+          "tier": "central",
+          "description": "Show that the timing, distribution, consistency, and content of early testimony preserve genuine authorship information rather than a dependent later convention."
+        },
+        {
+          "bridgeId": "pro-central-internal-identification",
+          "tier": "central",
+          "description": "Show that salient textual features independently fit the proposed Matthean, Petrine-Markan, Lukan, and Johannine connections."
+        },
+        {
+          "bridgeId": "pro-central-mediated-composition",
+          "tier": "central",
+          "description": "Show that differences in education and language are compatible with traditional authority through source use, assistants, or collaborative literary production."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-anonymity-conventions",
+          "tier": "subsidiary",
+          "description": "Explain why formally unnamed narratives or third-person narration do not sever an otherwise supported connection to traditional authors."
+        },
+        {
+          "bridgeId": "pro-subsidiary-transmission-proximity",
+          "tier": "subsidiary",
+          "description": "Explain how oral circulation, literary dependence, and selective narration can remain closely grounded in apostolic testimony."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-anonymous-later-authorship",
+      "side": "con",
+      "description": "Establish that the canonical texts do not supply adequate identifications of Matthew, Mark, Luke, or John and that their literary characteristics and attribution history are better explained by anonymous educated authors and later church naming.",
+      "successCriteria": "The route succeeds if the evidence fails to connect the canonical texts to the traditional figures or their authorization, while anonymous circulation, educational mismatch, and the emergence and propagation of later names provide a coherent alternative account.",
+      "motionBridge": {
+        "bridgeId": "con-motion-anonymous-authorship",
+        "tier": "motion",
+        "description": "Show that neither direct composition nor authorization by the four traditional figures is adequately established for the canonical Gospels."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-attribution-chronology",
+          "tier": "central",
+          "description": "Show that securely identifiable traditional names arise too late or dependently to establish knowledge of original authorship."
+        },
+        {
+          "bridgeId": "con-central-literary-capacity",
+          "tier": "central",
+          "description": "Show that the language, education, and compositional demands of the texts conflict with authorship by the traditional Galilean disciples."
+        },
+        {
+          "bridgeId": "con-central-internal-underdetermination",
+          "tier": "central",
+          "description": "Show that first-person passages, eyewitness claims, narrative details, and conventional author labels do not identify the traditional figures."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-naming-mechanism",
+          "tier": "subsidiary",
+          "description": "Provide a historically coherent reason authoritative communities could assign and then preserve apostolically useful names."
+        },
+        {
+          "bridgeId": "con-subsidiary-secretarial-limits",
+          "tier": "subsidiary",
+          "description": "Distinguish attested dictation or letter-writing assistance from independent composition of lengthy literary narratives for an illiterate authority."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-external-attestation",
+      "title": "Timing, independence, and reach of external attribution",
+      "weightPercent": 27,
+      "rationale": "The historical value of Papias, Justin, Irenaeus, and other witnesses is a principal test of whether the traditional names preserve early authorship knowledge or reflect a later dependent convention."
+    },
+    {
+      "sectionId": "section-literacy-collaboration",
+      "title": "Literacy, language, and mediated composition",
+      "weightPercent": 25,
+      "rationale": "The motion turns partly on whether the traditional figures could compose the Greek narratives themselves or exercise authorship authority through assistants, sources, and collaborative production."
+    },
+    {
+      "sectionId": "section-internal-identification",
+      "title": "Internal textual indicators of authorial identity",
+      "weightPercent": 22,
+      "rationale": "Travel narration, eyewitness claims, disciple rosters, Petrine features, and Matthean characteristics matter insofar as they identify particular authors rather than merely remaining compatible with them."
+    },
+    {
+      "sectionId": "section-anonymity-naming",
+      "title": "Anonymous circulation and the formation of Gospel names",
+      "weightPercent": 16,
+      "rationale": "Ancient naming conventions and the proposed second-century attribution process determine whether initial anonymity is neutral or supports an alternative explanation for later unanimity."
+    },
+    {
+      "sectionId": "section-sources-transmission",
+      "title": "Source dependence, oral transmission, and apostolic proximity",
+      "weightPercent": 10,
+      "rationale": "Synoptic borrowing, oral tradition, selective biography, and unwitnessed material bear on whether the texts remained sufficiently grounded in the named disciples or their immediate circles."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": {
+        "sectionId": "section-external-attestation",
+        "moveId": "pro-external-diverse-early-testimony",
+        "moveKind": "constructive",
+        "proposition": "Six early witnesses from geographically diverse Christian regions agree on the traditional Gospel attributions, supporting preservation of genuine authorship information."
+      },
+      "chunk-001:c002": null,
+      "chunk-001:c003": {
+        "sectionId": "section-internal-identification",
+        "moveId": "pro-internal-luke-acts-we-passages",
+        "moveKind": "constructive",
+        "proposition": "The detailed first-person plural travel passages in Acts indicate participation by a companion of Paul, and the external attribution makes Luke the most reasonable identification."
+      },
+      "chunk-001:c004": {
+        "sectionId": "section-internal-identification",
+        "moveId": "pro-internal-john-beloved-disciple",
+        "moveKind": "constructive",
+        "proposition": "The Fourth Gospel's eyewitness claim, disciple roster, and distinction of Peter and James from the beloved disciple make John son of Zebedee the best-fitting identification."
+      },
+      "chunk-001:c005": {
+        "sectionId": "section-literacy-collaboration",
+        "moveId": "pro-mediated-matthean-composition",
+        "moveKind": "constructive",
+        "proposition": "Matthew likely shaped or authorized the surviving Greek Gospel with assistance, sources, and substantial additional material even if his earlier Semitic composition was lost."
+      },
+      "chunk-001:c009": {
+        "sectionId": "section-literacy-collaboration",
+        "moveId": "pro-literate-collaborators",
+        "moveKind": "reply",
+        "proposition": "The disciples' limited literacy does not exclude their authority behind the Gospels because willing literate collaborators could have written narratives grounded in their testimony."
+      },
+      "chunk-002:c002-01": null,
+      "chunk-002:c002-03": {
+        "sectionId": "section-anonymity-naming",
+        "moveId": "pro-obscure-names-against-invention",
+        "moveKind": "reply",
+        "proposition": "A deliberate attribution scheme would more plausibly choose prestigious eyewitnesses than the comparatively less marketable non-eyewitness figures Mark and Luke."
+      },
+      "chunk-002:c002-07": {
+        "sectionId": "section-anonymity-naming",
+        "moveId": "pro-biographical-anonymity-and-early-names",
+        "moveKind": "reply",
+        "proposition": "Formal anonymity was common in ancient biography, while Papias and Justin provide early evidence consistent with knowledge of traditional Gospel connections before Irenaeus."
+      },
+      "chunk-002:c002-09": {
+        "sectionId": "section-external-attestation",
+        "moveId": "pro-convergent-attribution-synthesis",
+        "moveKind": "reply",
+        "proposition": "Geographically diverse, uncontested early testimony converges with fitting internal features to make the traditional Gospel attributions a natural historical conclusion."
+      },
+      "chunk-003:c003-03": null,
+      "chunk-003:c003-05": {
+        "sectionId": "section-sources-transmission",
+        "moveId": "pro-selective-petrine-biography",
+        "moveKind": "reply",
+        "proposition": "Papias's statement that Mark recorded everything remembered from Peter is reasonably read as hyperbole, since historians and biographers selectively include source material."
+      },
+      "chunk-003:c003-06": {
+        "sectionId": "section-sources-transmission",
+        "moveId": "pro-synoptic-sources-and-assistance",
+        "moveKind": "reply",
+        "proposition": "Synoptic verbal agreement fits traditional authority because Matthew and Luke could use Mark and other reliable written sources, with Greek-language collaborators assisting Matthew."
+      },
+      "chunk-003:c003-08": null
+    },
+    "con": {
+      "chunk-001:c006": {
+        "sectionId": "section-external-attestation",
+        "moveId": "con-external-late-secure-attribution",
+        "moveKind": "constructive",
+        "proposition": "The canonical Gospels initially circulated without attached author names, while securely identifiable attributions to Matthew, Mark, Luke, and John appear only about a century later."
+      },
+      "chunk-001:c007": {
+        "sectionId": "section-literacy-collaboration",
+        "moveId": "con-literacy-greek-composition-mismatch",
+        "moveKind": "constructive",
+        "proposition": "The traditional Galilean disciples lacked the elite education and Greek compositional training required to produce the canonical Gospels' sophisticated literary narratives."
+      },
+      "chunk-001:c008": {
+        "sectionId": "section-anonymity-naming",
+        "moveId": "con-naming-authority-mechanism",
+        "moveKind": "constructive",
+        "proposition": "Churches could have assigned authoritative names to anonymous Gospels when rival named writings emerged, choosing two disciples and two associates of leading apostles as natural legitimating figures."
+      },
+      "chunk-001:c010": null,
+      "chunk-002:c002-02": {
+        "sectionId": "section-internal-identification",
+        "moveId": "con-internal-matthew-luke-underdetermination",
+        "moveKind": "reply",
+        "proposition": "Matthew's detached third-person call narrative does not read as authorial self-reference, while the unnamed first-person narrator in Acts establishes no identification of that narrator as Luke."
+      },
+      "chunk-002:c002-04": {
+        "sectionId": "section-anonymity-naming",
+        "moveId": "con-mark-luke-natural-authority-names",
+        "moveKind": "reply",
+        "proposition": "Mark and Luke were plausible attribution choices because their traditional associations with Peter and Paul allowed the four Gospel names collectively to represent apostolic witness."
+      },
+      "chunk-002:c002-05": {
+        "sectionId": "section-external-attestation",
+        "moveId": "con-unanimity-not-authenticity",
+        "moveKind": "reply",
+        "proposition": "Stable and unanimous later attribution does not establish authentic authorship, because anonymous works such as Barnabas and Second Clement retained conventional names now rejected as historically accurate."
+      },
+      "chunk-002:c002-06": null,
+      "chunk-002:c002-08": {
+        "sectionId": "section-internal-identification",
+        "moveId": "con-internal-details-do-not-identify",
+        "moveKind": "reply",
+        "proposition": "Narrative details associated with Peter or John remain compatible with several origins and do not identify those figures as authors; John 21 even distinguishes the witness from the narrating group."
+      },
+      "chunk-002:c002-10": null,
+      "chunk-003:c003-01": {
+        "sectionId": "section-literacy-collaboration",
+        "moveId": "con-secretarial-practice-limited",
+        "moveKind": "reply",
+        "proposition": "Ancient secretarial evidence for dictated, short, formulaic letters does not establish independent secretarial composition of lengthy prose narratives with plot, characterization, themes, and emphasis."
+      },
+      "chunk-003:c003-02": null,
+      "chunk-003:c003-04": null,
+      "chunk-003:c003-07": null,
+      "chunk-003:c003-09": {
+        "sectionId": "section-sources-transmission",
+        "moveId": "con-reliability-not-author-identification",
+        "moveKind": "reply",
+        "proposition": "The possible reliability of Gospel traditions does not identify Matthew or John as authors or authorities, and substantially later attribution cannot substitute for evidence connecting those figures to the texts."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

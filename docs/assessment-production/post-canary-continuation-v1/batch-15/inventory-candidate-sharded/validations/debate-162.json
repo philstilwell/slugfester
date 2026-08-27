@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-15-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 11,
+  "stagingOnly": true,
+  "debateNumber": "162",
+  "inventoryPlanCanonicalSha256": "db71a57c825c4c25893f152aafcab8456344760000fc5722af59f25180459604",
+  "sideSelectionSha256": {
+    "pro": "93873829408aa9b36f620714cff4d98eb911a93cd4d007c159e17a0be56d8eb1",
+    "con": "0e095118c183ac4421fba72639d107681d46bdc13d9dfb2c104d9bbf148140b5"
+  },
+  "sections": 6,
+  "moves": 20,
+  "proMoves": 8,
+  "conMoves": 12,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "side": "con",
+      "moveId": "con-categorical-objective-reasons",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without an earlier retained objection, the source positively defines objective morality through universal, overriding reasons independent of preferences.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "side": "con",
+      "moveId": "con-no-personal-lawgiver-required",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The source-grounded analogy independently supports the proposition that genuine requirements can exist without being issued by a person.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
