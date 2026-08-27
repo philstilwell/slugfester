@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-field-disjoint-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-70-publication-field-disjoint-repair-1",
+  "status": "debate-70-field-disjoint-repair-1-passed-awaiting-five-context-resumption",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-2/debate-70-field-disjoint-repair-1/execution-preparation-manifest.json",
+    "preparationSha256": "478acad6e4aa948c2a37e0817e7348fc216943acb0d39fd9235b017d2616c1f8",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-2/debate-70-field-disjoint-repair-1/execution-activation.json",
+    "activationSha256": "8b10395dc12704622202bdeb28fbaac9e019ad2684100e7bec9f9f0d3c62e62a",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-2/debate-70-field-disjoint-repair-1/model-execution.json",
+    "executionSha256": "ae70b00f94a152e14d2eabf28e74ddf347a3f7b56f74fc9699bdda1707a36407"
+  },
+  "execution": {
+    "contextsPlanned": 3,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "invalidContexts": 0,
+    "attempts": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 91917,
+    "aggregateModelElapsedMs": 119935
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-70-shard-1",
+      "debateNumber": "70",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "1a7807f3834958ac1fb70619a19b49e88df3fdcffc52a47c2a7e4e8df35b1c81",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 0,
+        "debateNumber": "70",
+        "shardId": "debate-70-shard-1",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-thin-necessary-truth-start.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 938,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-divine-thoughts-constitute-content.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 915,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-70-shard-2",
+      "debateNumber": "70",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "427c9d29ff9c8176f9fff43416943bd38f7299344485f20e2eb7fdb182c46b5d",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 1,
+        "debateNumber": "70",
+        "shardId": "debate-70-shard-2",
+        "correctedFields": 2,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.con-contentless-divine-thought-tension.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 1010,
+            "sentences": 4
+          },
+          {
+            "fieldKey": "field_02",
+            "field": "moveProse.pro-divine-human-intentional-continuity.critique",
+            "kind": "critique",
+            "words": 117,
+            "characters": 926,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-70-shard-3",
+      "debateNumber": "70",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "b8413e18cdf606aafef7ff5ea5b24981f7e6e2bf4ae626f1ed06b7a925887c7b",
+      "validation": {
+        "status": "passed",
+        "contextIndex": 2,
+        "debateNumber": "70",
+        "shardId": "debate-70-shard-3",
+        "correctedFields": 1,
+        "fieldValidations": [
+          {
+            "fieldKey": "field_01",
+            "field": "moveProse.pro-dual-impulse-comparative-case.critique",
+            "kind": "critique",
+            "words": 116,
+            "characters": 1052,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      }
+    }
+  ],
+  "debateResults": [
+    {
+      "debateNumber": "70",
+      "contextsPlanned": 3,
+      "contextsPassed": 3,
+      "contextsFailed": 0,
+      "writableFields": 5,
+      "correctedFields": 5,
+      "completeDebateValidated": true,
+      "completeValidation": {
+        "status": "passed",
+        "debateNumber": "70",
+        "moves": 18,
+        "critiques": 18,
+        "minimumCritiqueCharacters": 915,
+        "tags": 1,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "failureMessage": null,
+      "status": "passed"
+    }
+  ],
+  "totals": {
+    "debatesTargeted": 1,
+    "debatesRepaired": 1,
+    "debatesFailed": 0,
+    "critiqueFieldsTargeted": 5,
+    "quoteFieldsTargeted": 0,
+    "writableFieldsTargeted": 5,
+    "correctedFieldsAccepted": 5,
+    "modelContexts": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completeCohortStatus": null,
+  "authorization": {
+    "fiveContextResumptionPreparation": true,
+    "deterministicCompilationPreparation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-five-original-unattempted-batch-13-publication-contexts"
+}
