@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-rendering-controller-startup-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-14-rendering-verification",
+  "status": "diagnosed-controller-session-not-open-before-viewport-execution",
+  "diagnosedAt": "2026-08-27T22:19:13Z",
+  "batchNumber": 14,
+  "failure": {
+    "command": "node scripts/run-assessment-production-post-canary-batch-14-rendering-verification.mjs",
+    "message": "The browser 'batch14-rendering' is not open, please run open first",
+    "controller": "playwright-cli",
+    "sessionName": "batch14-rendering"
+  },
+  "impact": {
+    "viewportAttempts": 0,
+    "screenshotsAccepted": 0,
+    "evidenceAccepted": 0,
+    "productionMutationPerformed": false
+  },
+  "correction": {
+    "action": "Open the already-frozen named Playwright session at about:blank, take the required initial snapshot, then execute the frozen viewport plan.",
+    "newViewportAttempt": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "changedFrozenSource": false
+  },
+  "authorization": {
+    "controllerStartupCorrection": true,
+    "viewportAttemptsRemainOnePerViewport": true,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
+
