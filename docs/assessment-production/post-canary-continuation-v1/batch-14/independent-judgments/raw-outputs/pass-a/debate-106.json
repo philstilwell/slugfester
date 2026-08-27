@@ -1,0 +1,1606 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "106",
+  "debateId": "peterson-blackmore-god-meaning-life-2018",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-religious-pragmatism-route",
+      "side": "pro",
+      "description": "Establish that action necessarily expresses a highest-order value structure, that the West's operative structure is substantially inherited through religious narratives and institutions, and that this inheritance supplies indispensable resources for morality, meaning, suffering, and social coordination.",
+      "successCriteria": "Show that secular professions and practices do not constitute a self-sufficient replacement because coherent conduct, durable ethics, and tragedy-sustaining meaning continue to depend on functions performed by God, religious stories, or religiously inherited values.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-necessity",
+        "tier": "motion",
+        "description": "Connect the unavoidable requirements of coherent action, moral order, and meaning under suffering to God, religious narrative, or inherited religious values."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-functional-god",
+          "tier": "central",
+          "description": "Establish that conduct embodies a hierarchy of values whose highest commitment performs the functional role attributed to God."
+        },
+        {
+          "bridgeId": "pro-central-inherited-ethics",
+          "tier": "central",
+          "description": "Explain why secular morality and institutions remain dependent on inherited commitments such as individual sovereignty and truthful speech."
+        },
+        {
+          "bridgeId": "pro-central-tragedy-meaning",
+          "tier": "central",
+          "description": "Show why religious narratives provide meaning capable of organizing action through unavoidable tragedy and human malevolence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-evolutionary-depth",
+          "tier": "subsidiary",
+          "description": "Ground religious archetypes and ethical patterns in culturally and biologically deep structures of adaptive conduct."
+        },
+        {
+          "bridgeId": "pro-subsidiary-removal-risk",
+          "tier": "subsidiary",
+          "description": "Account for the vacuum and destabilizing substitutes that may follow removal of inherited religious foundations."
+        }
+      ]
+    },
+    {
+      "routeId": "con-secular-evolutionary-route",
+      "side": "con",
+      "description": "Establish that biological and memetic evolution can explain religion, morality, and higher meanings without divine grounding, while secular reflection, contemplative practice, and ordinary social life can sustain motivation, gratitude, ethical conduct, and acceptance of suffering.",
+      "successCriteria": "Provide a sufficient secular account of meaning and morality, distinguish religious usefulness from religious necessity or divine truth, and show that functioning persons and societies can relinquish God without the predicted collapse into nihilism or disorder.",
+      "motionBridge": {
+        "bridgeId": "con-motion-secular-sufficiency",
+        "tier": "motion",
+        "description": "Demonstrate that humans can make sense of action, morality, suffering, and meaning through secular evolutionary, cultural, and experiential resources."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-evolutionary-explanation",
+          "tier": "central",
+          "description": "Explain religious persistence and higher meaning through distinct biological and cultural replication processes without requiring divine causation."
+        },
+        {
+          "bridgeId": "con-central-secular-practice",
+          "tier": "central",
+          "description": "Show how secular reflection, meditation, evolved motivation, and social life can support gratitude, ethical conduct, and purposeful action."
+        },
+        {
+          "bridgeId": "con-central-necessity-counterexample",
+          "tier": "central",
+          "description": "Use secular persons and societies as counterexamples to claims that abandoning God necessarily produces moral or social collapse."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-use-truth-distinction",
+          "tier": "subsidiary",
+          "description": "Separate the practical wisdom or social benefits of religious traditions from claims of divine causation, guilt, or necessity."
+        },
+        {
+          "bridgeId": "con-subsidiary-atheist-self-understanding",
+          "tier": "subsidiary",
+          "description": "Require an explanation of prosocial atheist conduct that does not redefine all moral behavior as implicitly religious."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "functional-belief-and-god",
+      "title": "Belief, conduct, and the functional meaning of God",
+      "weightPercent": 21,
+      "rationale": "This issue determines whether every coherent value hierarchy is properly understood as religious and whether moral atheist conduct confirms that thesis or supplies a secular counterexample."
+    },
+    {
+      "sectionId": "secular-ethics-and-religious-inheritance",
+      "title": "Secular ethics, stable societies, and religious inheritance",
+      "weightPercent": 24,
+      "rationale": "The necessity claim turns substantially on whether morality and stable institutions can stand independently or remain downstream of inherited religious commitments and vulnerable when those foundations recede."
+    },
+    {
+      "sectionId": "evolutionary-archetypes-and-memetic-culture",
+      "title": "Evolutionary archetypes, memes, and religious persistence",
+      "weightPercent": 16,
+      "rationale": "Competing biological and cultural explanations bear on whether religious patterns encode indispensable realities of successful conduct or persist as historically contingent, independently copied complexes."
+    },
+    {
+      "sectionId": "tragedy-sustaining-meaning",
+      "title": "Religious and secular responses to tragedy and ultimate meaning",
+      "weightPercent": 23,
+      "rationale": "Because the motion expressly concerns suffering and life's meaning, this section tests whether religious stories uniquely sustain action through tragedy or whether acceptance of cosmic pointlessness remains compatible with positive living."
+    },
+    {
+      "sectionId": "secular-gratitude-and-higher-meaning",
+      "title": "Secular gratitude and the construction of higher meaning",
+      "weightPercent": 16,
+      "rationale": "This issue examines whether gratitude and coordinated higher-order meaning require an implicit divine object or can emerge through contemplative practice, evolved needs, and memetic cultural construction."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-belief-manifested-in-conduct",
+      "sectionId": "functional-belief-and-god",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "constructive",
+      "proposition": "Religious belief is manifested primarily in conduct rather than being transparently established by a person's verbal profession or self-reported opinion.",
+      "sourceSpan": {
+        "startEvent": 59,
+        "endEvent": 105
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addresses Jordan, whose uninterrupted first-person answer continues through the window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-functional-god"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive definition of belief through enacted conduct, so no earlier opposing move supplies a response target.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it clearly establishes a foundational premise for the functional account of God."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conduct-versus-profession distinction is recoverable, but the operative meaning of belief remains only partly fixed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker openly questions what belief means, though the priority assigned to conduct exceeds the excerpt's demonstration."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The inference from ambiguity in verbal profession to the evidential priority of conduct leaves a material bridge implicit."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The excerpt supplies conceptual reflection but no representative evidence that conduct generally reveals religious belief more reliably."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central functional-God bridge by relocating belief from profession to enacted value commitments."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops its own account of belief and does not meaningfully assess a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt repeatedly questions the self-explanatory character of belief and frames conduct as the relevant manifestation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-thin-secular-ethic-insufficient",
+      "sectionId": "secular-ethics-and-religious-inheritance",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "constructive",
+      "proposition": "An ethic built chiefly from measurable well-being or compassion is too thin to ground the institutions and long-term demands of a complex society.",
+      "sourceSpan": {
+        "startEvent": 145,
+        "endEvent": 214
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Jordan's explanation, and the sustained response uses his first-person references to Harris and psychological research.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-inherited-ethics"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move argues that compassion and measurable well-being cannot independently ground complex institutions and long-term obligations.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it directly supplies a major premise of the inherited-ethics route, albeit with compressed support."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conclusion is clear, but thin ethic, complex society, and the range of compassion-based ethics remain under-specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A broad societal insufficiency claim is advanced from a narrow personality-trait account without comparing richer secular ethics."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular ethics can integrate compassion with justice, autonomy, reciprocity, and institutional knowledge.",
+        "decisiveQualification": "The criticized view need not treat compassion as its sole or exhaustive foundation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "The move shifts from limits of agreeableness to insufficiency of secular ethics without establishing that the latter rests chiefly on the former."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "A personality association and developmental assertion do not adequately warrant the conclusion about grounding an entire complex society."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses whether secular morality can independently support institutions, an indispensable inherited-ethics step."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "Reducing the relevant secular alternative largely to agreeableness omits its strongest multi-principle and institutional form."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies compassion with agreeableness and calls it a poor medium-to-long-term foundation for complex society.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religion-meme-complex-effects",
+      "sectionId": "evolutionary-archetypes-and-memetic-culture",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "constructive",
+      "proposition": "Religions persist as meme complexes partly because they contain personally and socially beneficial elements, even though their effects may be harmful on balance.",
+      "sourceSpan": {
+        "startEvent": 264,
+        "endEvent": 290
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Susan whether she retains the virus-of-the-mind view, and she answers continuously in the first person.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evolutionary-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move explains religious persistence through meme-complex benefits while distinguishing persistence from net social value.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it provides a useful evolutionary-cultural premise but only sketches the causal replication mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The mixed-effects proposition is clear and expressly qualified, though world-level and society-level comparisons remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker qualifies her position and acknowledges benefits, but the net-harm and societal-correlation claims are lightly supported here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Beneficial components coherently explain persistence without entailing that the whole complex is beneficial on balance."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The excerpt invokes personal and social patterns but does not document representativeness, causal direction, or important rivals."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally advances a cultural-evolution explanation of religious persistence without requiring divine causation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents a qualified constructive account rather than evaluating a sufficiently developed opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly combines a net-negative assessment with the claim that religions require positive components to thrive.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-archetypes-deeper-than-memes",
+      "sectionId": "evolutionary-archetypes-and-memetic-culture",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "reply",
+      "proposition": "Religious archetypes represent biologically selected patterns of successful conduct and therefore have deeper adaptive roots than ideas casually copied between people.",
+      "sourceSpan": {
+        "startEvent": 292,
+        "endEvent": 365
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly asks Jordan about meme theory, after which he defines archetypes and develops the dominance-hierarchy example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-evolutionary-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-religion-meme-complex-effects"
+        ],
+        "components": [
+          {
+            "componentId": "pro-archetypes-deeper-than-memes-component-01",
+            "targetMoveId": "con-religion-meme-complex-effects",
+            "text": "Whether religious persistence and content can be explained primarily as culturally copied meme complexes.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-archetypes-deeper-than-memes-component-02",
+            "targetMoveId": "con-religion-meme-complex-effects",
+            "text": "Whether beneficial religious elements can arise from patterns deeper than interpersonal cultural copying.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response contacts the cultural-copying explanation by proposing biologically selected, cross-hierarchy patterns of successful conduct as a deeper source.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it reaches the decisive explanatory component but does not refute cultural copying or its independent effects."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contrast is recoverable, but archetype, deeper, and the set of all dominance hierarchies carry unstable explanatory scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker uses some caution, yet moves from an adaptive hierarchy example to a broad religious-archetype conclusion too quickly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Memetic copying can operate on culturally expressed material whose psychological predispositions also have biological roots.",
+        "decisiveQualification": "Biological depth and cultural replication are compatible rather than mutually exclusive explanations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The existence of biologically selected dispositions does not by itself show that religious representations are not also culturally replicated memes."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The dominance-hierarchy example is asserted as representative of religious archetypes without comparative or empirical support in the span."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "As an attack, it directly challenges the central sufficiency of the con side's cultural-evolution explanation."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply fairly identifies a deeper causal layer but treats that layer as more defeating of memetics than the compatibility permits."
+        }
+      },
+      "evidenceBasis": "The excerpt links successful movement across dominance hierarchies to religiously represented ethical conduct and denies casual copying suffices.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-memes-distinct-second-replicator",
+      "sectionId": "evolutionary-archetypes-and-memetic-culture",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Copied ideas constitute a second replicator that produces cultural evolution and therefore remain explanatorily distinct from biologically evolved archetypes and predispositions.",
+      "sourceSpan": {
+        "startEvent": 366,
+        "endEvent": 401
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Susan explicitly announces her response about memes and archetypes and then gives the standard copying-based definition of memes.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evolutionary-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-archetypes-deeper-than-memes"
+        ],
+        "components": [
+          {
+            "componentId": "con-memes-distinct-second-replicator-component-01",
+            "targetMoveId": "pro-archetypes-deeper-than-memes",
+            "text": "Whether biological archetypes displace memes as an explanation of culturally transmitted religious material.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-memes-distinct-second-replicator-component-02",
+            "targetMoveId": "pro-archetypes-deeper-than-memes",
+            "text": "Whether copied cultural variants constitute a causally distinct replication process layered upon genes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes genetic copying from imitation-based cultural copying and explains why archetypal predispositions do not eliminate memetic evolution.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly contacts the decisive inference that biological depth excludes a distinct cultural replicator."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "Genes, memes, copying processes, and the claimed origin of culture are consistently distinguished throughout the selected evidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The replicator distinction fits the explanation, though the sweeping rarity claim about other species is not supported in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Biologically evolved archetypes may strongly constrain which cultural variants can arise and persist.",
+        "decisiveQualification": "Such constraint does not erase the separate copying process by which cultural variants spread."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Distinct copying mechanisms coherently support distinct evolutionary processes while remaining compatible with biological predispositions."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The mechanism is clearly specified, but the excerpt supplies no concrete transmission comparison or verification of replicator dynamics."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supplies the central bridge requiring a distinct cultural replication account of religion and higher meaning."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply preserves the biological layer while accurately explaining why it does not subsume cultural replication."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts chemical genetic copying with imitation and interaction-based meme copying and links the latter to culture.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-biblical-stories-answer-tragedy",
+      "sectionId": "tragedy-sustaining-meaning",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "constructive",
+      "proposition": "Biblical stories were formulated as culturally and biologically deep responses to life's tragic conditions and the human capacity for malevolence.",
+      "sourceSpan": {
+        "startEvent": 452,
+        "endEvent": 514
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Jordan why biblical material anchors his practical work, and Jordan supplies a sustained first-person explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-tragedy-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move locates biblical stories as deep cultural responses to tragedy and malevolence while cautiously withholding guaranteed success.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it directly develops the tragedy-meaning bridge and includes an important limitation on efficacy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The origin-and-function claim is clear, and the speaker expressly distinguishes formulation as a response from successful antidotal efficacy."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Explicit caution about success is well calibrated, though the asserted deep reason for formulation remains insufficiently demonstrated."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "It consistently distinguishes explanatory purpose from efficacy, with only the cultural-and-biological depth bridge left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Personal interpretive experience and an asserted historical function do not establish why the stories were formulated across traditions."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable claim that religious narratives address tragedy and human malevolence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move constructs an account of biblical narrative formation without assessing a developed competing account in the span."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies tragedy and malevolence as the stories' deep formative problem and explicitly denies guaranteed antidotal success.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-wisdom-not-divine-causation",
+      "sectionId": "secular-ethics-and-religious-inheritance",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "The practical wisdom of biblical stories does not justify shifting from evolutionary explanations of suffering to implications of divine causation or deserved suffering.",
+      "sourceSpan": {
+        "startEvent": 531,
+        "endEvent": 570
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Susan's reaction to the book, and her first-person critique directly addresses Jordan and his treatment of childbirth.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-use-truth-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-biblical-stories-answer-tragedy"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-wisdom-not-divine-causation-component-01",
+            "targetMoveId": "pro-biblical-stories-answer-tragedy",
+            "text": "Whether biblical responses to suffering warrant implications of divine causation or deserved suffering.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-religious-wisdom-not-divine-causation-component-02",
+            "targetMoveId": "pro-biblical-stories-answer-tragedy",
+            "text": "Whether practical narrative depth can be accepted while retaining an evolutionary explanation of painful childbirth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts that stories may contain wisdom but challenges a perceived shift from evolutionary explanation to divine imposition in the Adam and Eve account.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the causation-versus-wisdom issue but not the broader claim that stories respond deeply to tragedy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alleged implication is clearly identified and expressly called unstated, but its scope beyond the childbirth example is uncertain."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker carefully labels divine causation as an implication to the reader rather than an explicit claim by the opponent."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Adam and Eve story may symbolically describe suffering without offering a competing biological cause.",
+        "decisiveQualification": "The excerpted criticism acknowledges the implication is unstated but does not resolve this symbolic reading."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "If the text implies divine causation, tension with the evolutionary account follows, but the crucial interpretive premise remains contestable."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "A specific childbirth passage supports the criticism, though the relevant wider textual context and symbolic alternative are not compared."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary distinction between religious usefulness and claims of divine causation or guilt."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply identifies a real ambiguity yet insufficiently accommodates the strongest nonliteral interpretation of the narrative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts evolved childbirth pain with an allegedly implied claim that God imposed women's suffering.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-removing-foundations-creates-vacuum",
+      "sectionId": "secular-ethics-and-religious-inheritance",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "reply",
+      "proposition": "Because biblical texts are foundational cultural structures, removing their inherited authority creates a vacuum vulnerable to nihilism and totalitarian substitutes.",
+      "sourceSpan": {
+        "startEvent": 571,
+        "endEvent": 618
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns Susan's criticism over to Jordan, whose answer invokes his Genesis lectures and Nietzsche throughout.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-removal-risk"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-religious-wisdom-not-divine-causation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-removing-foundations-creates-vacuum-component-01",
+            "targetMoveId": "con-religious-wisdom-not-divine-causation",
+            "text": "Whether accepting biblical wisdom justifies an implication of divine causation for suffering.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-removing-foundations-creates-vacuum-component-02",
+            "targetMoveId": "con-religious-wisdom-not-divine-causation",
+            "text": "Whether biblical texts can be culturally foundational even if a literal divine-causation reading is rejected.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response pivots to the danger of removing foundational texts; that is issue-bearing but does not answer the specific causation tension raised about childbirth.",
+        "responsivenessWithinClass": {
+          "value": 65,
+          "rationale": "Within partial answers, it contacts only the secondary foundational-status issue and leaves the decisive causation criticism unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The vacuum thesis is recoverable, but foundational, removal, nihilism, and substitute mechanisms remain broadly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The broad vulnerability claim is asserted through Nietzschean framing without conditions separating different secular transitions or outcomes."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "Foundational cultural status does not alone establish that removal produces a vacuum or that nihilistic substitutes will occupy it."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "Appeal to Nietzsche and asserted foundational status supply little specific evidence for the predicted social causal sequence."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly reaches the subsidiary removal-risk bridge and is positioned near the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move largely bypasses the preceding causation criticism and does not develop a sufficiently explicit alternative interpretation to test."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly calls biblical texts foundational and invokes Nietzsche's death-of-God diagnosis as the framing for removal risk.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-functioning-secular-societies-counterexample",
+      "sectionId": "secular-ethics-and-religious-inheritance",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Functioning secular societies and correlations between greater professed religiosity and social dysfunction undermine the claim that abandoning God necessarily produces moral or social collapse.",
+      "sourceSpan": {
+        "startEvent": 619,
+        "endEvent": 668
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Susan directly challenges the preceding Nietzschean account and cites cross-society and cross-state patterns while Jordan briefly interjects.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-necessity-counterexample"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-removing-foundations-creates-vacuum"
+        ],
+        "components": [
+          {
+            "componentId": "con-functioning-secular-societies-counterexample-component-01",
+            "targetMoveId": "pro-removing-foundations-creates-vacuum",
+            "text": "Whether abandoning inherited religious foundations predictably produces nihilism, disorder, or totalitarian substitution.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-functioning-secular-societies-counterexample-component-02",
+            "targetMoveId": "pro-removing-foundations-creates-vacuum",
+            "text": "Whether cross-society and cross-state social outcomes fit the predicted relationship between religiosity and stability.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly tests the predicted collapse against purported secular-society functionality and inverse correlations between religiosity and social health.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the predictive premise and presents an empirical pattern claimed to run against it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The counterexample structure is clear, though most dysfunctional, religious, and secular societies require operational and geographic qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The correlations plausibly undermine necessity, but causal and comparative language is somewhat stronger than the presented support permits."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular societies may function by retaining inherited religious norms after explicit belief declines.",
+        "decisiveQualification": "Current secular functionality alone may not establish long-run independence from inherited ethical structures."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Genuine functioning secular cases undermine a necessary-collapse claim, although correlations alone do not settle inherited causation."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Specific outcome categories and comparative levels are named, but sources, controls, time lags, and causal rivals are absent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It very strongly supplies the central necessity-counterexample bridge through direct social and institutional counterexamples."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The reply offers a serious empirical challenge but does not address the opponent's strongest inheritance-and-lag explanation."
+        }
+      },
+      "evidenceBasis": "The excerpt cites societies and American states where greater professed belief allegedly correlates with several dysfunction measures.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-highest-value-functions-as-god",
+      "sectionId": "functional-belief-and-god",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "constructive",
+      "proposition": "Every agent needs a hierarchy of values in order to act, and whatever occupies its highest position serves the functional role of God.",
+      "sourceSpan": {
+        "startEvent": 676,
+        "endEvent": 704
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator summarizes Susan's secular-society challenge, Jordan begins an explicit answer and develops the inherited-ethic claim.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-functional-god"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Although chronologically prompted by a secular-society challenge, the locked move is constructive and establishes the functional-God and inherited-ethic premises.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it supplies a route-defining account linking operative values, individual sovereignty, and honest speech."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The locked proposition is only partly visible in the excerpt, which focuses more directly on inherited Judeo-Christian social ethics."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The universal functional identification of highest value with God lacks a limiting criterion distinguishing religious from secular commitments."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "Calling every highest value God risks definitional equivocation unless the specifically religious functional properties are independently established."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The social examples assert Judeo-Christian inheritance but do not establish the universal hierarchy claim or exclusive religious origin."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is virtually identical to the central functional-God bridge and therefore sits at the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "As locked, the move presents a constructive functional definition rather than explicitly comparing a developed opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The selected evidence grounds social functionality in Judeo-Christian commitments to individual sovereignty and honest speech.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-secular-meditative-gratitude",
+      "sectionId": "secular-gratitude-and-higher-meaning",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Gratitude can arise through secular reflection, meditation, and attention to the consequences of different ways of confronting the world without being directed toward God.",
+      "sourceSpan": {
+        "startEvent": 861,
+        "endEvent": 892
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person account follows the prior speaker's challenge and matches Blackmore's stated secular outlook.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-secular-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-highest-value-functions-as-god"
+        ],
+        "components": [
+          {
+            "componentId": "con-secular-meditative-gratitude-component-01",
+            "targetMoveId": "pro-highest-value-functions-as-god",
+            "text": "Whether gratitude and value-laden conduct require a functional divine object or religious highest commitment.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-secular-meditative-gratitude-component-02",
+            "targetMoveId": "pro-highest-value-functions-as-god",
+            "text": "Whether secular contemplative practice can independently generate grateful orientation and constructive conduct.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The first-person meditation account directly presents gratitude without God as an experiential counterexample to the functional-religious characterization.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts the decisive necessity claim, though a personal case cannot resolve every functional redefinition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is limited to an experiential route to gratitude and explicitly distinguishes that feeling from gratitude toward God."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "A modest existential counterexample is supported by the speaker's own described practice without being generalized beyond what it shows."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Undirected gratitude may still occupy a God-like functional position within an agent's hierarchy.",
+        "decisiveQualification": "That functional relabeling does not show the experience is consciously directed toward a divine being."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "A described instance of gratitude without an intended divine recipient coherently defeats a claim requiring conscious God-directed gratitude."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Long personal practice supports possibility, but the causal role of meditation and general applicability remain anecdotal and unverified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central secular-practice bridge by connecting meditation and reflection with gratitude and orientation."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly contests direction toward God, though it does not fully answer the opponent's broader functional rather than conscious definition."
+        }
+      },
+      "evidenceBasis": "The excerpt links thirty years of meditation and observation of inner consequences to gratitude expressly described as not toward God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gratitude-has-functional-divine-object",
+      "sectionId": "secular-gratitude-and-higher-meaning",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "reply",
+      "proposition": "Even apparently undirected gratitude is oriented toward something that occupies the functional place of God within a person's psychological hierarchy.",
+      "sourceSpan": {
+        "startEvent": 893,
+        "endEvent": 907
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage directly questions Blackmore's account and uses Peterson's characteristic functional definition of God within psychological hierarchy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-secular-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-secular-meditative-gratitude"
+        ],
+        "components": [
+          {
+            "componentId": "pro-gratitude-has-functional-divine-object-component-01",
+            "targetMoveId": "con-secular-meditative-gratitude",
+            "text": "Whether secular gratitude can genuinely lack an object occupying the functional place attributed to God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-gratitude-has-functional-divine-object-component-02",
+            "targetMoveId": "con-secular-meditative-gratitude",
+            "text": "Whether phenomenological absence of a particular recipient settles the structure of the underlying psychological hierarchy.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that gratitude must be toward something and reclassifies its diffuse object as functionally equivalent to God.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within full answers, it explicitly contacts the claimed absence of a divine object, though mainly through definitional reclassification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "materially-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is recoverable, but equivalent of God lacks criteria independent of whatever diffuse object gratitude happens to have."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "From gratitude having some orientation, the reply too strongly concludes that its object necessarily has a God-equivalent hierarchical role."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Gratitude may be a diffuse appreciative state without a personal, ultimate, or hierarchically supreme recipient.",
+        "decisiveQualification": "Intentional orientation toward something does not establish that the object functions as God."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 56,
+          "rationale": "The inference equivocates between gratitude having intentional content and that content occupying the highest God-like position in a hierarchy."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "No psychological evidence or independent functional criterion supports the asserted equivalence between diffuse gratitude and God."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central secular-practice claim that gratitude can be sustained without a functional divine object."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The response restates the secular position but omits its decisive distinction between having content and having a supreme divine object."
+        }
+      },
+      "evidenceBasis": "The excerpt insists gratitude is felt toward something and labels even diffuse nothingness as a psychological equivalent of God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-meaning-sustains-through-tragedy",
+      "sectionId": "tragedy-sustaining-meaning",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "reply",
+      "proposition": "Humans seek meaning deep enough to sustain them through tragedy rather than pursuing happiness as their ultimate aim.",
+      "sourceSpan": {
+        "startEvent": 930,
+        "endEvent": 938
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The direct disagreement with the preceding happiness claim is voiced in Peterson's established argument about meaning and tragic suffering.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-tragedy-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-secular-meditative-gratitude"
+        ],
+        "components": [
+          {
+            "componentId": "pro-meaning-sustains-through-tragedy-component-01",
+            "targetMoveId": "con-secular-meditative-gratitude",
+            "text": "Whether secular reflection and meditation can support gratitude without God.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-meaning-sustains-through-tragedy-component-02",
+            "targetMoveId": "con-secular-meditative-gratitude",
+            "text": "Whether positive affect or happiness is sufficient as the ultimate orientation of human action.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move advances a distinct tragedy-sustaining meaning claim but does not answer the earlier account of secular meditative gratitude.",
+        "responsivenessWithinClass": {
+          "value": 50,
+          "rationale": "Within relevant nonanswers, it bears on secular meaning broadly but leaves the decisive gratitude and meditation components untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The happiness-versus-meaning contrast is clear, but the universal scope of what humans seek is only implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The universal motivational contrast is asserted without evidence distinguishing people, circumstances, or overlapping aims."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Tragedy plausibly motivates a need for durable meaning, but the inference to a general human aim and religious relevance remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The claim about what humans fundamentally seek is presented as assertion without representative psychological or experiential comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central tragedy-meaning requirement that meaning must organize action through severe suffering."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move asserts a positive motivational thesis and does not sufficiently develop an opposing happiness-centered account for testing."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly rejects happiness as the primary human aim and substitutes meaning capable of sustaining people through tragedy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-positive-life-without-ultimate-purpose",
+      "sectionId": "tragedy-sustaining-meaning",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Accepting the ultimate meaninglessness and emptiness of existence is compatible with ordinary motivation and can support a positive way of living because evolved creatures continue to have needs and act.",
+      "sourceSpan": {
+        "startEvent": 939,
+        "endEvent": 987
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The extended first-person explanation, including the classroom thought experiment, expresses Blackmore's avowed naturalistic and nihilistic position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-secular-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-meaning-sustains-through-tragedy"
+        ],
+        "components": [
+          {
+            "componentId": "con-positive-life-without-ultimate-purpose-component-01",
+            "targetMoveId": "pro-meaning-sustains-through-tragedy",
+            "text": "Whether humans require ultimate, tragedy-sustaining meaning in order to remain motivated and live positively.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-positive-life-without-ultimate-purpose-component-02",
+            "targetMoveId": "pro-meaning-sustains-through-tragedy",
+            "text": "Whether evolved needs continue to generate ordinary action after ultimate cosmic meaning is rejected.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that evolved creatures continue acting and can live positively while accepting ultimate meaninglessness and emptiness.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts the necessity inference and supplies both experiential and motivational counterconsiderations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between ultimate meaninglessness and continuing local motivation is stable and clearly stated as compatibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The compatibility claim needs only a credible possible mode of life, and the personal account is appropriately limited for that purpose."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Meaning may be required specifically during catastrophic suffering even if ordinary motivation persists without cosmic purpose.",
+        "decisiveQualification": "Routine evolved activity does not by itself establish resilience under the strongest forms of tragedy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Evolved needs and ordinary activity coherently show compatibility with rejected ultimate purpose, though tragedy-resilience is less established."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The classroom thought experiment and personal experience establish plausibility but provide limited support across people or severe suffering."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the motion-level secular-sufficiency condition by asserting positive purposeful life without ultimate religious meaning."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The reply accurately challenges universal necessity but under-addresses the opponent's strongest tragedy-specific qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt describes continued ordinary activity by evolved creatures and calls acceptance of ultimate emptiness a positive way of living.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-coordination-generates-higher-meaning",
+      "sectionId": "secular-gratitude-and-higher-meaning",
+      "side": "pro",
+      "speaker": "Jordan Peterson",
+      "moveKind": "reply",
+      "proposition": "Coordinating multiple bodily needs across time and with other people generates higher-order meanings from proximal purposes rather than leaving action ultimately meaningless.",
+      "sourceSpan": {
+        "startEvent": 999,
+        "endEvent": 1028
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The systematic account of integrated needs and higher meanings continues Peterson's direct challenge to Blackmore's interpretation of ordinary action.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-secular-sufficiency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-positive-life-without-ultimate-purpose"
+        ],
+        "components": [
+          {
+            "componentId": "pro-coordination-generates-higher-meaning-component-01",
+            "targetMoveId": "con-positive-life-without-ultimate-purpose",
+            "text": "Whether ordinary evolved needs leave action ultimately meaningless despite continuing to motivate local behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-coordination-generates-higher-meaning-component-02",
+            "targetMoveId": "con-positive-life-without-ultimate-purpose",
+            "text": "Whether coordinating needs across time and with others generates genuinely higher-order meanings from proximal purposes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly argues that integrating needs across time and social coordination produces higher meanings rather than merely unexplained activity.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it explicitly contacts the local-to-higher-meaning inference but does not establish that generated meaning is ultimate or religious."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The coordination mechanism is clear, but higher meaning remains insufficiently distinguished from complex or temporally extended purpose."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The emergence claim is plausible, though it does not fully warrant the stronger suggestion that ultimate meaninglessness has been overcome."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Local and higher-order purposes can emerge while existence remains meaningless in an ultimate cosmic sense.",
+        "decisiveQualification": "Increasing integration or scale does not alone change local purpose into ultimate purpose."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Coordination plausibly creates higher-order goals, but the bridge from hierarchical complexity to non-arbitrary or ultimate meaning remains open."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The argument supplies a mechanism-like description but no examples or evidence that coordination yields the relevant kind of meaning."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly attacks motion-level secular sufficiency by contesting the conclusion that coordinated action remains ultimately meaningless."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The reply explains emergent higher organization but insufficiently preserves the opponent's decisive local-versus-ultimate distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt describes integrating bodily needs across time and among people, then infers that higher meanings arise from proximal meanings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-memetically-constructed-higher-meaning",
+      "sectionId": "secular-gratitude-and-higher-meaning",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Higher meanings are culturally constructed through memetic evolution in language, culture, and argument layered upon biological dispositions rather than requiring religious or divine grounding.",
+      "sourceSpan": {
+        "startEvent": 1030,
+        "endEvent": 1041
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response explicitly explains construction through language, culture, argument, biology, genes, and memes in Blackmore's established framework.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evolutionary-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-coordination-generates-higher-meaning"
+        ],
+        "components": [
+          {
+            "componentId": "con-memetically-constructed-higher-meaning-component-01",
+            "targetMoveId": "pro-coordination-generates-higher-meaning",
+            "text": "Whether higher meanings emerging from coordinated purposes require religious grounding rather than cultural construction.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-memetically-constructed-higher-meaning-component-02",
+            "targetMoveId": "pro-coordination-generates-higher-meaning",
+            "text": "Whether biological dispositions and memetic layers jointly explain the formation of higher-order meanings.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts biological starting conditions and identifies language, culture, and argument as memetic processes that construct higher meanings.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it directly contacts the origin of higher meanings, though it states rather than demonstrates the cultural mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The layered genes-and-memes explanation is recoverable and consistently distinguishes biology from culture throughout the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The layered account is plausible, but explanatory sufficiency is asserted without tracing a concrete higher meaning through transmission."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Social coordination may generate higher meanings through constraints not reducible to copied cultural variants.",
+        "decisiveQualification": "Memetic construction can explain cultural content without excluding emergent coordination dynamics."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Layering cultural replication on biological predispositions coherently explains construction without requiring the biological layer to disappear."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Language, culture, and argument are plausible mechanisms, but no concrete replication history or alternative comparison is offered."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central evolutionary-explanation bridge by applying the gene-meme distinction to higher meaning."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The response fairly incorporates biology and social culture but gives limited attention to the opponent's distinct coordination mechanism."
+        }
+      },
+      "evidenceBasis": "The excerpt says biology supplies the starting point while memes in language, culture, and argument build upon it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-atheist-conduct-not-implicit-religion",
+      "sectionId": "functional-belief-and-god",
+      "side": "con",
+      "speaker": "Susan Blackmore",
+      "moveKind": "reply",
+      "proposition": "Redefining a self-identified atheist as religious because she writes and behaves prosocially disregards her stated belief and leaves her nonviolent moral conduct unexplained on secular terms.",
+      "sourceSpan": {
+        "startEvent": 1134,
+        "endEvent": 1139
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person objection is addressed directly to Peterson and plainly comes from Blackmore in response to his characterization of her life.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-atheist-self-understanding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-highest-value-functions-as-god",
+          "pro-belief-manifested-in-conduct"
+        ],
+        "components": [
+          {
+            "componentId": "con-atheist-conduct-not-implicit-religion-component-01",
+            "targetMoveId": "pro-highest-value-functions-as-god",
+            "text": "Whether prosocial atheist conduct may be reclassified as implicitly religious under a functional definition of God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-atheist-conduct-not-implicit-religion-component-02",
+            "targetMoveId": "pro-belief-manifested-in-conduct",
+            "text": "Whether conduct should override a person's explicit self-description when attributing religious belief.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-atheist-conduct-not-implicit-religion-component-03",
+            "targetMoveId": "pro-highest-value-functions-as-god",
+            "text": "Whether the functional account explains why a professed atheist behaves morally rather than merely renaming that behavior.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The objection directly challenges both the attributional redefinition and its failure to provide a noncircular explanation of prosocial atheist conduct.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the decisive definitional and explanatory premises through a direct personal counterexample."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The objection clearly distinguishes atheist self-identification, moral behavior, and the demand for a secular explanation of that behavior."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move poses a focused explanatory challenge rather than claiming to have established a complete secular moral theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The functional thesis concerns enacted highest commitments rather than conscious assent or denominational identity.",
+        "decisiveQualification": "Even on that reading, labeling all prosocial conduct religious risks circularity and leaves causal explanation unresolved."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "If all moral conduct automatically counts as religious, atheist conduct cannot independently confirm the definition without circular reasoning."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The speaker supplies a concrete personal counterexample, though the excerpt ends before giving a positive secular causal account."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It sits at the top of the subsidiary atheist-self-understanding tier by directly demanding a non-redefinitional explanation."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The objection preserves the functional reading while accurately isolating its attributional and explanatory vulnerability."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects denial of the speaker's atheism and asks why she remains nonviolent and attempts prosocial conduct.",
+      "assessmentConfidence": "medium"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already move-level matters.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and move-level evaluations.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the residual adjustment would not change any assessed burden-completion judgment."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already move-level matters.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and move-level evaluations.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the residual adjustment would not change any assessed burden-completion judgment."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
