@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-audio-attribution-recovery",
+  "debateNumber": "37",
+  "debateId": "ehrman-bass-resurrection-history-2023",
+  "speakerRoster": {
+    "pro": "Justin Bass",
+    "con": "Bart Ehrman",
+    "substantiveSpeakerCount": 2
+  },
+  "moves": [
+    {
+      "moveId": "pro-paul-hostile-vision-challenge",
+      "expectedSpeaker": "Justin Bass",
+      "proposition": "An ordinary bereavement-vision explanation does not readily account for Paul, an enemy of the Christian movement, experiencing Jesus and converting.",
+      "sourceSpan": {
+        "startEvent": 1056,
+        "endEvent": 1075
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "Justin Bass",
+        "fullClipExcerptRecall": 0.9420289855072463,
+        "expectedSpeakerExcerptRecall": 0.43478260869565216,
+        "highestOtherSpeaker": "Bart Ehrman",
+        "highestOtherSpeakerExcerptRecall": 0.6666666666666666,
+        "expectedSpeakerRecallMargin": -0.23188405797101447,
+        "expectedSpeakerDurationSeconds": 13.9,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": false,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "Bart Ehrman",
+            "segmentCount": 18,
+            "durationSeconds": 19.3,
+            "wordCount": 91,
+            "excerptRecall": 0.6666666666666666
+          },
+          {
+            "speaker": "Justin Bass",
+            "segmentCount": 17,
+            "durationSeconds": 13.9,
+            "wordCount": 62,
+            "excerptRecall": 0.43478260869565216
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-paul-hostile-vision-challenge.transcript.json",
+      "diarizedTranscriptSha256": "d2e971e9d9b0232d347cf0a972e5aad77da7880b065c4c7f3d4c881a3ec295ac",
+      "validationOverlayApplied": true
+    },
+    {
+      "moveId": "pro-visions-cross-religious-distinction",
+      "expectedSpeaker": "Justin Bass",
+      "proposition": "Reports of people from other religious backgrounds seeing Jesus and moving toward Christianity distinguish the offered phenomenon from ordinary visions occurring within a person's own tradition.",
+      "sourceSpan": {
+        "startEvent": 2252,
+        "endEvent": 2277
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "Justin Bass",
+        "fullClipExcerptRecall": 0.9857142857142858,
+        "expectedSpeakerExcerptRecall": 0,
+        "highestOtherSpeaker": "B",
+        "highestOtherSpeakerExcerptRecall": 0.8142857142857143,
+        "expectedSpeakerRecallMargin": -0.8142857142857143,
+        "expectedSpeakerDurationSeconds": 0,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": false,
+          "expectedSpeakerDurationSufficient": false
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "B",
+            "segmentCount": 14,
+            "durationSeconds": 25.9,
+            "wordCount": 102,
+            "excerptRecall": 0.8142857142857143
+          },
+          {
+            "speaker": "A",
+            "segmentCount": 2,
+            "durationSeconds": 18.25,
+            "wordCount": 56,
+            "excerptRecall": 0.4714285714285714
+          },
+          {
+            "speaker": "Bart Ehrman",
+            "segmentCount": 11,
+            "durationSeconds": 8.95,
+            "wordCount": 51,
+            "excerptRecall": 0.2
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-visions-cross-religious-distinction.transcript.json",
+      "diarizedTranscriptSha256": "392ffbe06213c6a9ea5fcda2c568cc09051a91170b91ac8ca2e17d83aaa54652",
+      "validationOverlayApplied": false
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptsRequired": true,
+    "lockedPropositionsAndSpansVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "genericLabelsRequireDialogueAndRosterIdentityResolution": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}

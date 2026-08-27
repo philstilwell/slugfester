@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-audio-attribution-successor-authorization",
+  "protocolId": "assessment-production-post-canary-batch-13-audio-attribution-recovery",
+  "status": "frozen-active-batch-13-audio-attribution-recovery-level-2-successor-authorization",
+  "authorizedAt": "2026-08-27T02:00:00.000Z",
+  "checkpointCommit": "efd552c765280ef5b61e21b1622ad7a3cd4cade5",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I authorize/approve of all actions necessary to get the job done.",
+    "instructionPath": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-instruction.txt",
+    "instructionSha256": "fc6cb963f3f7a3796aa54c6eaff724b0835a9d2ab05cf4a83065e83de1a30425",
+    "scopeInterpretation": "Resume the blocked Batch 13 workflow using the smallest zero-cost, evidence-limited recovery that can resolve the six preserved audio-attribution decisions, then continue automatically through the already authorized complete workflow."
+  },
+  "preservedPriorGate": {
+    "verified": 2,
+    "unresolved": 6,
+    "paidCallsCompleted": 8,
+    "paidRetries": 0,
+    "usageDerivedEstimatedCostUsd": 0.21423,
+    "originalEvidenceErasedOrReclassified": false
+  },
+  "recovery": {
+    "level": 2,
+    "contexts": 2,
+    "debates": [
+      "37",
+      "111"
+    ],
+    "decisions": 6,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "paidTranscriptionCalls": 0,
+    "paidRetries": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsdMaximum": 0
+    },
+    "transcriptMutationAllowed": false,
+    "thresholdChangeAllowed": false,
+    "rawSpeakerRelabelingAllowed": false,
+    "manualOverrideAllowed": false,
+    "unresolvedDecisionBlocks": true
+  },
+  "authorization": {
+    "packetPreparation": true,
+    "modelExecutionAfterSeparateActivation": true,
+    "deterministicValidation": true,
+    "combinedAudioGateAssembly": true,
+    "resumeStandingAuthorizationAfterPassingGate": true,
+    "paidTranscription": false,
+    "retry": false,
+    "scoreDerivationBeforeResolvedAudio": false,
+    "nextBatchSelection": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-instruction.txt": "fc6cb963f3f7a3796aa54c6eaff724b0835a9d2ab05cf4a83065e83de1a30425",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-workflow.md": "269bec823f6c8323ebd2d8c463b231e0442303d91c5cba69f41e304db3c4e135",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-manual.md": "58bf6c6c83165c4e7b09b229513464ebdcf8d8ebc231e0351fce770543e389f5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/standing-authorization.json": "e602a0464130d3ef15c10f340deca6f4420b2fb72cee01738a2a1ad02af842f0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/selection.json": "fa42a22d7b527a49b383084ab55daf6c1f3d9e654f9146f648d4c7983b18d8e8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/disagreement-extraction/audio-work-items.json": "51a0358d93263758cecffc8efba583886d9d36e65992d2926ff60b2427cc6e65",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-verification.json": "5b2a099414428446db96d3222984b60ceb3636e668fcc4795edc5c592344e5c5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/analysis.json": "970dc917f0904dc203ef175bb8cb3587c1a06e00b3d76bf2007fb9aedd7e8588",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/cost-control-analysis.json": "f7d37b7ee4ea0fe181334181c862433fbc7bdd0c25ca7d60f6dc35c0ea37a8a9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/validation-overlay-preparation.json": "8f207903c0ddbff960f89a3ce3453bdda13aadf89347fe91940dc250d3eb4bd4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/validation-overlay-execution.json": "334ea1d76143246442b8368955fa98e867f09261ec64f025d9a37fdcb09514ba",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-paul-hostile-vision-challenge.transcript.json": "d2e971e9d9b0232d347cf0a972e5aad77da7880b065c4c7f3d4c881a3ec295ac",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-visions-cross-religious-distinction.transcript.json": "392ffbe06213c6a9ea5fcda2c568cc09051a91170b91ac8ca2e17d83aaa54652",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/con-functional-mixed-linkage-rna.transcript.json": "3577191733a3a7aeb73eddb4c90b04ca081d09c0a44ca219a626e4408abeee93",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/pro-first-ribozyme-and-replication-gap.transcript.json": "c4d0f1a1557f056d277a761e03bf903ab7eba8a8483f092843f1ac34e8d015bd",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/con-joyce-self-replicating-ribozyme.transcript.json": "7f47a01438c2fe5fec2539668438fe0c2a45392dca91716d0815c7e86a270961",
+    "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/pro-surface-stability-reaction-incompatibility.transcript.json": "8a5d65da2b11fdc70ce5921bbe69a9773ff319e09685c971c2e00e961e178ae3"
+  },
+  "nextAuthorizedAction": "prepare-validate-commit-and-push-two-frozen-batch-13-audio-attribution-recovery-contexts"
+}

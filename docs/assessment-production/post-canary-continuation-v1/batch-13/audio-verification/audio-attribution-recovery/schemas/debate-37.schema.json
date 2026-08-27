@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-13-audio-attribution-37",
+  "title": "Slugfester Batch 13 isolated audio-attribution recovery for Debate 37",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "isolation",
+    "adjudications",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-13-audio-attribution-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-13-audio-attribution-recovery"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "37"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "ehrman-bass-resurrection-history-2023"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "isolated-audio-attribution-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ratingsUnavailable",
+        "scoresUnavailable",
+        "legacyUnavailable",
+        "otherDebatesUnavailable",
+        "publicationProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "ratingsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "publicationProseUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "adjudications": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "expectedSpeaker",
+              "status",
+              "authoringSpeaker",
+              "corePropositionAuthoredByExpectedSpeaker",
+              "mixedSpeakerSpan",
+              "identityResolution",
+              "evidenceSegmentIndexes",
+              "confidence",
+              "rationale"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "pro-paul-hostile-vision-challenge"
+              },
+              "expectedSpeaker": {
+                "type": "string",
+                "const": "Justin Bass"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "unresolved"
+                ]
+              },
+              "authoringSpeaker": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "corePropositionAuthoredByExpectedSpeaker": {
+                "type": "boolean"
+              },
+              "mixedSpeakerSpan": {
+                "type": "boolean"
+              },
+              "identityResolution": {
+                "type": "string",
+                "enum": [
+                  "named-label",
+                  "generic-label-dialogue-mapping",
+                  "unresolved"
+                ]
+              },
+              "evidenceSegmentIndexes": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 20,
+                "maxLength": 1600
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "expectedSpeaker",
+              "status",
+              "authoringSpeaker",
+              "corePropositionAuthoredByExpectedSpeaker",
+              "mixedSpeakerSpan",
+              "identityResolution",
+              "evidenceSegmentIndexes",
+              "confidence",
+              "rationale"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "const": "pro-visions-cross-religious-distinction"
+              },
+              "expectedSpeaker": {
+                "type": "string",
+                "const": "Justin Bass"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "unresolved"
+                ]
+              },
+              "authoringSpeaker": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "corePropositionAuthoredByExpectedSpeaker": {
+                "type": "boolean"
+              },
+              "mixedSpeakerSpan": {
+                "type": "boolean"
+              },
+              "identityResolution": {
+                "type": "string",
+                "enum": [
+                  "named-label",
+                  "generic-label-dialogue-mapping",
+                  "unresolved"
+                ]
+              },
+              "evidenceSegmentIndexes": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 20,
+                "maxLength": 1600
+              }
+            }
+          }
+        ]
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allDisputedMovesReviewed",
+        "rawAudioDerivedSegmentsNotAltered",
+        "calculatedScoreFieldsEmitted",
+        "thresholdRelaxationUsed",
+        "speakerRelabelingUsed",
+        "manualOverrideUsed",
+        "paidTranscriptionUsed"
+      ],
+      "properties": {
+        "allDisputedMovesReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "rawAudioDerivedSegmentsNotAltered": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedScoreFieldsEmitted": {
+          "type": "boolean",
+          "const": false
+        },
+        "thresholdRelaxationUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "speakerRelabelingUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "manualOverrideUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "paidTranscriptionUsed": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

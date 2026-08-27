@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-audio-attribution-preparation",
+  "protocolId": "assessment-production-post-canary-batch-13-audio-attribution-recovery",
+  "status": "prepared-two-batch-13-audio-attribution-recovery-contexts-not-active",
+  "preparedAt": "2026-08-27T02:00:00.000Z",
+  "checkpointCommit": "efd552c765280ef5b61e21b1622ad7a3cd4cade5",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-successor-authorization.json",
+    "sha256": "6c70c341bfc826810135da680c97e59bf689e8778d3291b477453a9e9acc1aa7"
+  },
+  "workflow": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-workflow.md",
+  "manual": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery-manual.md",
+  "contexts": [
+    {
+      "debateNumber": "37",
+      "debateId": "ehrman-bass-resurrection-history-2023",
+      "moveIds": [
+        "pro-paul-hostile-vision-challenge",
+        "pro-visions-cross-religious-distinction"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/packets/debate-37.json",
+      "packetSha256": "7212d7544625a6d762db1a936db1a8e5ed1b1ad129c9c23b9fcadcc5a146ce0a",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/schemas/debate-37.schema.json",
+      "schemaSha256": "57ccc4e6dd4916d692f677544f3253cbcac03b2d38f6d2d284bcc4b4ca0612d0",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "pro-paul-hostile-vision-challenge",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-paul-hostile-vision-challenge.transcript.json",
+          "sha256": "d2e971e9d9b0232d347cf0a972e5aad77da7880b065c4c7f3d4c881a3ec295ac"
+        },
+        {
+          "moveId": "pro-visions-cross-religious-distinction",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-37/transcripts/pro-visions-cross-religious-distinction.transcript.json",
+          "sha256": "392ffbe06213c6a9ea5fcda2c568cc09051a91170b91ac8ca2e17d83aaa54652"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/outputs/debate-37.json"
+    },
+    {
+      "debateNumber": "111",
+      "debateId": "tour-farina-origin-life-cluelessness-2023",
+      "moveIds": [
+        "con-functional-mixed-linkage-rna",
+        "pro-first-ribozyme-and-replication-gap",
+        "con-joyce-self-replicating-ribozyme",
+        "pro-surface-stability-reaction-incompatibility"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/packets/debate-111.json",
+      "packetSha256": "ea1db559fea62c76bb4c43a629581640223bbe1516600b50d619246d0705fdc7",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/schemas/debate-111.schema.json",
+      "schemaSha256": "9e1607adfcc2336f689cbf6f7c8683a5b644085849ec8f5219bd3f84b3442c4d",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "con-functional-mixed-linkage-rna",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/con-functional-mixed-linkage-rna.transcript.json",
+          "sha256": "3577191733a3a7aeb73eddb4c90b04ca081d09c0a44ca219a626e4408abeee93"
+        },
+        {
+          "moveId": "pro-first-ribozyme-and-replication-gap",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/pro-first-ribozyme-and-replication-gap.transcript.json",
+          "sha256": "c4d0f1a1557f056d277a761e03bf903ab7eba8a8483f092843f1ac34e8d015bd"
+        },
+        {
+          "moveId": "con-joyce-self-replicating-ribozyme",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/con-joyce-self-replicating-ribozyme.transcript.json",
+          "sha256": "7f47a01438c2fe5fec2539668438fe0c2a45392dca91716d0815c7e86a270961"
+        },
+        {
+          "moveId": "pro-surface-stability-reaction-incompatibility",
+          "path": "output/transcribe/assessment-production-post-canary-batch-13-audio-verification/debate-111/transcripts/pro-surface-stability-reaction-incompatibility.transcript.json",
+          "sha256": "8a5d65da2b11fdc70ce5921bbe69a9773ff319e09685c971c2e00e961e178ae3"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/outputs/debate-111.json"
+    }
+  ],
+  "executionPolicy": {
+    "concurrency": 2,
+    "contexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "APIKeysRemoved": true,
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "modelExecutionAuthorizedThisStage": false,
+  "futureArtifacts": {
+    "executionManifest": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/analysis.json",
+    "combinedAudioGate": "docs/assessment-production/post-canary-continuation-v1/batch-13/audio-verification/audio-attribution-recovery/combined-audio-verification.json"
+  }
+}
