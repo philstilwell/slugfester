@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-analysis",
+  "protocolId": "assessment-production-post-canary-batch-14-publication-original-unattempted-context-resumption-3",
+  "status": "five-context-publication-resumption-failed",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-3/execution-preparation-manifest.json",
+    "preparationSha256": "aefc4196b026b705393ffbc9456e22debbe3680e124b4da61da7f02f818d0263",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-3/execution-activation.json",
+    "activationSha256": "1bc56fc998bab1ca62c95349fec6fcbc28dd2257a22975d60cb990055e1149c1",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-3/model-execution.json",
+    "executionSha256": "416d38d4f687f22e65cfe1d28c3d7e9c8a2f1a516dd6c8a917cea7e0ed0ffe7a"
+  },
+  "execution": {
+    "contextsPlanned": 5,
+    "contextsAttempted": 3,
+    "contextsUnattempted": 2,
+    "validContexts": 2,
+    "invalidContexts": 1,
+    "originalContextIndexes": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "attempts": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 844269,
+    "aggregateModelElapsedMs": 1203199,
+    "hostAwakeGuardAppliedToEveryAttempt": true
+  },
+  "validationReplay": [
+    {
+      "originalContextIndex": 5,
+      "debateNumber": "187",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "de356fbbcfa747426c5e82ab101a63ed5358dab059d17545416f0a040607b616",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "187",
+        "moves": 23,
+        "critiques": 23,
+        "minimumCritiqueCharacters": 884,
+        "tags": 3,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "originalContextIndex": 6,
+      "debateNumber": "160",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "3c7cebd2280ee60ebc8b12cd1c4ee5422141a7673df5a8d3eadc8ab3a64f25f5",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "160",
+        "moves": 17,
+        "critiques": 17,
+        "minimumCritiqueCharacters": 980,
+        "tags": 1,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "originalContextIndex": 7,
+      "debateNumber": "55",
+      "status": "timed-out",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "totals": {
+    "debates": 5,
+    "lockedMoves": 94,
+    "critiques": 40,
+    "exactSourceQuotes": 4,
+    "overallCommentarySides": 4,
+    "aiExtensionSides": 4,
+    "modelContexts": 3,
+    "originalFirstAttempts": 3,
+    "retries": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "completeCohortReplay": false,
+    "publicationCompilationPreparation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-no-automatic-retry-timeout-extension-or-correction"
+}
