@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-production-publication-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-14-production-publication",
+  "status": "frozen-batch-14-production-publication-mutation-pass-activated",
+  "activatedAt": "2026-08-27T22:25:46Z",
+  "productionCanary": false,
+  "batchNumber": 14,
+  "directIncrementalCostCapUsd": 0,
+  "manifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-publication/mutation-manifest.json",
+    "sha256": "051889703aff1a0ebf189f7703a94d3dbd3099da7be7235afb18beeff7881f89",
+    "bytes": 54786
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-publication/preparation-analysis.json",
+    "sha256": "99bb4e9cba67599a8d133c59263a9da6c688d04d7980571004c8468a6f70ecd1",
+    "bytes": 1161
+  },
+  "executionTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-14-production-publication.mjs",
+      "sha256": "06a76f1e84ff15b5aeb7a8f02d9d4ce024d12e12ca205ee804b201764a01f73c",
+      "bytes": 5243
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-14-production-publication.mjs",
+      "sha256": "f74d0ec96ae038fe0f3ee845b8af819413560e29dddb19e5e43393e7cff4cae8",
+      "bytes": 10606
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-14-production-publication-activation.mjs",
+      "sha256": "6c1fa807a4f8d64032265887a4b5a0ce8b2949187a30f675502d996e2abeca56",
+      "bytes": 3966
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "cd07dd3627b38a8215d0532f0c1413e76b1a58eb723c276df5421782ceb4d2a7",
+      "bytes": 68757
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    }
+  ],
+  "frozenOutput": {
+    "productionDebatesPath": "src/data/debates.js",
+    "proposedSha256": "d727d50e6167d2d8162cc0ef0c438b8c20a1d2e5f83b0879a2c8b73e3b896141",
+    "proposedBytes": 7198555,
+    "changedDebateNumbers": [
+      "53",
+      "69",
+      "110",
+      "133",
+      "12",
+      "187",
+      "160",
+      "55",
+      "106",
+      "57"
+    ],
+    "productionLedgerOutputs": [
+      {
+        "debateNumber": "53",
+        "path": "docs/assessment-ledgers/oconnor-dsouza-bible-true-2024.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/oconnor-dsouza-bible-true-2024.json",
+        "sha256": "7e266b59d821494a26f1c37497b5fb48ad8825bf6d67986a1590de07a327aea8",
+        "bytes": 112529
+      },
+      {
+        "debateNumber": "69",
+        "path": "docs/assessment-ledgers/winger-dillahunty-resurrection-unreasonable-2019.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/winger-dillahunty-resurrection-unreasonable-2019.json",
+        "sha256": "fe24054cb6e77fb4e55403a5880f39a14c3eb8c4f6cc7cf769789a2b8646beb8",
+        "bytes": 136210
+      },
+      {
+        "debateNumber": "110",
+        "path": "docs/assessment-ledgers/tour-garte-evolution-agency-christian-faith-2025.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/tour-garte-evolution-agency-christian-faith-2025.json",
+        "sha256": "3428668ea660f47a5e7e20c7bbf28abcd57bfab8e3adeee5d5b7297bae2fa7df",
+        "bytes": 95139
+      },
+      {
+        "debateNumber": "133",
+        "path": "docs/assessment-ledgers/hawkins-folley-free-will-idealism-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/hawkins-folley-free-will-idealism-2026.json",
+        "sha256": "05097b9c50fbc0b852547879c772aa748fcce343db560650c53ae4dd6e4585a8",
+        "bytes": 106238
+      },
+      {
+        "debateNumber": "12",
+        "path": "docs/assessment-ledgers/settecase-jump-evidence-for-god-2025.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/settecase-jump-evidence-for-god-2025.json",
+        "sha256": "fb41f40683af11c8bc76c70e037cffa0067d3f39ec5a02d930aa574adfb8bd11",
+        "bytes": 109470
+      },
+      {
+        "debateNumber": "187",
+        "path": "docs/assessment-ledgers/ward-dennett-more-than-matter-2019.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/ward-dennett-more-than-matter-2019.json",
+        "sha256": "ef99cf02f410b72554b4913158bac1d8d82a69f709cda907645b960634525a0e",
+        "bytes": 138416
+      },
+      {
+        "debateNumber": "160",
+        "path": "docs/assessment-ledgers/pinker-douthat-do-we-need-god-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/pinker-douthat-do-we-need-god-2026.json",
+        "sha256": "5a79e0010ec480f39d883e192a8720a5c5c77f7c4fe64cda7f0d5555256467a2",
+        "bytes": 106040
+      },
+      {
+        "debateNumber": "55",
+        "path": "docs/assessment-ledgers/craig-malpass-kalam-nothing-2026.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/craig-malpass-kalam-nothing-2026.json",
+        "sha256": "a0dd05f538be88bc678832ec16fc14a54e2ce78f0c0ae173d0c3bb2ab84bad06",
+        "bytes": 99463
+      },
+      {
+        "debateNumber": "106",
+        "path": "docs/assessment-ledgers/peterson-blackmore-god-meaning-life-2018.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/peterson-blackmore-god-meaning-life-2018.json",
+        "sha256": "d14c85c07d3bb80ef7f401fe5c6d70cba787f0e207de778d06f64b69b42d946d",
+        "bytes": 100648
+      },
+      {
+        "debateNumber": "57",
+        "path": "docs/assessment-ledgers/scrivener-dillahunty-atheism-morality-2020.json",
+        "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-compatibility/output-bundle/staged-ledgers/scrivener-dillahunty-atheism-morality-2020.json",
+        "sha256": "2a37fb2fcbbbba086d9c874a16bdf7e8574fae5054e8e8cd83d625a52c88608f",
+        "bytes": 129158
+      }
+    ],
+    "referencesSha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+  },
+  "executionDiscipline": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbacks": 0,
+    "scorePasses": 0,
+    "models": 0,
+    "paidServices": 0,
+    "generatedDerivativeWrites": 0,
+    "stopAfterEvidenceFreeze": true
+  },
+  "outputPaths": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-publication/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/production-publication/analysis.json"
+  },
+  "authorization": {
+    "executionActivation": true,
+    "productionLedgerPublication": true,
+    "productionMutation": true,
+    "validatorRewrite": false,
+    "candidateRewrite": false,
+    "stagedLedgerRewrite": false,
+    "compatibilityEvidenceRewrite": false,
+    "referenceRewrite": false,
+    "generatedDerivativeMutation": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-14-production-publication-mutation-pass-no-reruns"
+}
