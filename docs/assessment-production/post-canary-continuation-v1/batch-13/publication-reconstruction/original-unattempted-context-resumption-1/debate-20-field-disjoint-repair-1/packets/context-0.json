@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-publication-field-disjoint-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1",
+  "contextIndex": 0,
+  "shardId": "debate-20-shard-1",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "debateNumber": "20",
+  "debateId": "hitchens-hitchens-iraq-god-2008",
+  "assessmentModel": "5.6 Sol",
+  "correctionType": "user-authorized-multi-field-field-disjoint-publication-repair",
+  "writableFieldCount": 2,
+  "writableFields": [
+    "moveProse.con-atheism-no-binding-authority.critique",
+    "moveProse.con-objective-morality-borrowed-ground.critique"
+  ],
+  "targets": [
+    {
+      "kind": "critique",
+      "field": "moveProse.con-atheism-no-binding-authority.critique",
+      "moveId": "con-atheism-no-binding-authority",
+      "move": {
+        "moveId": "con-atheism-no-binding-authority",
+        "sectionId": "section-moral-grounding",
+        "side": "con",
+        "speaker": "Peter Hitchens",
+        "moveKind": "reply",
+        "proposition": "Without transcendent authority, atheism provides no binding reason why moral requirements must govern conduct rather than remain matters of individual preference.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "45:56",
+        "sourceSpan": {
+          "startEvent": 1000,
+          "endEvent": 1060,
+          "startMs": 2756000,
+          "endMs": 2908640
+        },
+        "sourceExcerpt": "that which you say you believe, if you think that there is no authority, if you think that we are the products of random chaos, if there is no reason for the existence of the universe apart from a series of accidents, then you may behave exactly as you wish. Now in the case of Christopher and his uh ally and colleague Professor Dawkins, I refer to this as luxury atheism. I know",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-transcendent-ground"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-innate-moral-integrity",
+            "pro-deism-theism-evidentiary-gap"
+          ],
+          "components": [
+            {
+              "componentId": "con-atheism-no-binding-authority-component-01",
+              "targetMoveId": "pro-innate-moral-integrity",
+              "text": "Whether recognizing or choosing right action supplies a binding authority rather than merely a human preference.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-atheism-no-binding-authority-component-02",
+              "targetMoveId": "pro-deism-theism-evidentiary-gap",
+              "text": "Whether cosmic contingency and order provide reason to posit transcendent moral authority.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly distinguishes moral recognition from binding obligation, but its appeal to cosmic randomness does not answer the deism-to-theism evidentiary gap.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "It contacts the decisive authority component while leaving the distinct evidentiary bridge to a personal deity unresolved."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive authority component while leaving the distinct evidentiary bridge to a personal deity unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Binding authority is clear, but atheism, randomness, and behaving as one wishes are treated too broadly."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that atheism permits any conduct is stronger than the supplied premise about absent transcendent authority establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular agents may ground obligations in reasons, welfare, reciprocity, or objective moral facts.",
+          "decisiveQualification": "The reply does not explain why all such secular grounds reduce to optional preference."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 61,
+            "rationale": "The move identifies a genuine grounding problem but moves too quickly from no divine authority to unrestricted conduct."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly advances the central con burden concerning transcendent moral authority."
+          },
+          "representationalCharity": {
+            "value": 57,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that without authority in an accidental universe a person may behave exactly as desired.",
+        "assessmentConfidence": "high"
+      },
+      "originalWords": 132,
+      "originalCharacters": 1010,
+      "originalValueSha256": "fff018b08409e49fb59c3c3ce3e6c536d7cda752089e4c9c7c45c798be1e740f",
+      "fieldKey": "field_01"
+    },
+    {
+      "kind": "critique",
+      "field": "moveProse.con-objective-morality-borrowed-ground.critique",
+      "moveId": "con-objective-morality-borrowed-ground",
+      "move": {
+        "moveId": "con-objective-morality-borrowed-ground",
+        "sectionId": "section-moral-grounding",
+        "side": "con",
+        "speaker": "Peter Hitchens",
+        "moveKind": "reply",
+        "proposition": "Recognizing moral rules does not establish their authority, so atheists who affirm objective right and wrong rely on a religious moral inheritance without supplying an equivalent secular foundation.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "75:05",
+        "sourceSpan": {
+          "startEvent": 1666,
+          "endEvent": 1691,
+          "startMs": 4505880,
+          "endMs": 4569679
+        },
+        "sourceExcerpt": "suppose that any action is right apart from that which suits you? There is none. And and and you and you can have none. You may borrow with pleasure uh the morality of the religious if you wish to do so, but to pretend that by doing so you're not borrowing it is an untruth. And I I really it's it's amazing how difficult it is to get atheists to understand this very simple point",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-transcendent-ground"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-solidarity-secular-motivation",
+            "pro-innate-moral-integrity",
+            "pro-divine-authorization-moral-license"
+          ],
+          "components": [
+            {
+              "componentId": "con-objective-morality-borrowed-ground-component-01",
+              "targetMoveId": "pro-solidarity-secular-motivation",
+              "text": "Whether natural solidarity and decency establish authoritative moral rules rather than merely motivational tendencies.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-objective-morality-borrowed-ground-component-02",
+              "targetMoveId": "pro-innate-moral-integrity",
+              "text": "Whether innate recognition of right and wrong supplies its own objective foundation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-objective-morality-borrowed-ground-component-03",
+              "targetMoveId": "pro-divine-authorization-moral-license",
+              "text": "Whether religious grounding remains authoritative despite dangerous claims of divine permission.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly distinguishes recognizing or borrowing moral rules from grounding their authority, but does not answer the corruption objection.",
+          "responsivenessWithinClass": {
+            "value": 77,
+            "rationale": "It contacts the decisive grounding component in both secular moves while leaving the opposing divine-license challenge untouched."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive grounding component in both secular moves while leaving the opposing divine-license challenge untouched."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The grounding challenge is clear, but borrowing, religious inheritance, and objective morality are insufficiently distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that atheist morality necessarily borrows from religion excludes independent secular foundations without demonstrating their failure."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular moral realism or reason-based ethics may affirm objective duties without historical or logical dependence on religion.",
+          "decisiveQualification": "The reply does not distinguish cultural inheritance from justificatory dependence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (63 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 56,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly advances the central transcendent-ground burden by challenging secular accounts of objective authority."
+          },
+          "representationalCharity": {
+            "value": 56,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (55 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says atheists who retain moral rules are borrowing religious capital while denying that dependence.",
+        "assessmentConfidence": "high"
+      },
+      "originalWords": 131,
+      "originalCharacters": 989,
+      "originalValueSha256": "390c76ab1ef67d04c4685a1c90d5500bfec0c89e9bdb13dbe8bf721cdb2f9ea2",
+      "fieldKey": "field_02"
+    }
+  ],
+  "rejectedPriorStringsAvailable": false,
+  "failedPublicationOutputAvailable": false,
+  "allOtherFieldsUnavailableAndImmutable": true,
+  "participantJudgmentClosed": true,
+  "publicationScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "critiqueSentenceCount": 4,
+    "critiqueOrderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueWordsMinimum": 105,
+    "critiqueWordsMaximum": 130,
+    "critiqueWordsTargetMinimum": 112,
+    "critiqueWordsTargetMaximum": 118,
+    "critiqueCharactersMinimum": 880,
+    "terminalPunctuationRequired": true,
+    "quoteWordsMinimum": 3,
+    "quoteWordsMaximum": 18,
+    "quoteExactContiguousSourceSubstringRequired": true,
+    "namedFallacyOrBiasFieldsWritable": false
+  }
+}
