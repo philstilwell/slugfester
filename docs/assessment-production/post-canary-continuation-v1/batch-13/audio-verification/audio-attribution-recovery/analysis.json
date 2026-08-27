@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-audio-attribution-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-audio-attribution-recovery",
+  "status": "batch-13-audio-attribution-recovery-passed",
+  "productionCanary": false,
+  "batchNumber": 13,
+  "stagingOnly": true,
+  "preservedOriginalGate": {
+    "status": "post-canary-batch-13-audio-verification-unresolved-after-empty-segment-overlays",
+    "passed": false,
+    "verified": 2,
+    "unresolved": 6,
+    "erasedOrReclassified": false
+  },
+  "validation": {
+    "contexts": [
+      {
+        "status": "passed",
+        "debateNumber": "37",
+        "decisions": [
+          {
+            "moveId": "pro-paul-hostile-vision-challenge",
+            "status": "verified",
+            "citedSegments": 5,
+            "namedExpectedSegmentsCited": 5,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          },
+          {
+            "moveId": "pro-visions-cross-religious-distinction",
+            "status": "verified",
+            "citedSegments": 8,
+            "namedExpectedSegmentsCited": 0,
+            "genericSegmentsCited": 8,
+            "identityResolution": "generic-label-dialogue-mapping"
+          }
+        ],
+        "verified": 2,
+        "unresolved": 0,
+        "calculatedFields": 0
+      },
+      {
+        "status": "passed",
+        "debateNumber": "111",
+        "decisions": [
+          {
+            "moveId": "con-functional-mixed-linkage-rna",
+            "status": "verified",
+            "citedSegments": 7,
+            "namedExpectedSegmentsCited": 7,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          },
+          {
+            "moveId": "pro-first-ribozyme-and-replication-gap",
+            "status": "verified",
+            "citedSegments": 8,
+            "namedExpectedSegmentsCited": 8,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          },
+          {
+            "moveId": "con-joyce-self-replicating-ribozyme",
+            "status": "verified",
+            "citedSegments": 1,
+            "namedExpectedSegmentsCited": 1,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          },
+          {
+            "moveId": "pro-surface-stability-reaction-incompatibility",
+            "status": "verified",
+            "citedSegments": 8,
+            "namedExpectedSegmentsCited": 8,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          }
+        ],
+        "verified": 4,
+        "unresolved": 0,
+        "calculatedFields": 0
+      }
+    ],
+    "verified": 6,
+    "unresolved": 0
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 8,
+    "deterministicallyVerified": 2,
+    "attributionAdjudicatedVerified": 6,
+    "verified": 8,
+    "unresolved": 0,
+    "verificationRate": 1,
+    "paidDiarizationCallsCompleted": 8,
+    "paidDiarizationRetries": 0,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalDirectIncrementalCostUsd": 0,
+    "usageDerivedEstimatedPaidDiarizationCostUsd": 0.21423,
+    "scoresDerived": 0
+  },
+  "costs": {
+    "originalUsageDerivedEstimatedPaidDiarizationCostUsd": 0.21423,
+    "originalMaximumAuthorizedUsd": 1,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalDirectIncrementalCostUsd": 0,
+    "modelAuthentication": "ChatGPT subscription"
+  },
+  "scoreBlindness": {
+    "ratingsAccessed": false,
+    "scoresAccessed": false,
+    "legacyAssessmentsAccessed": false,
+    "otherDebatesAccessed": false,
+    "publicationProseAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disputeAdjudicationPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
