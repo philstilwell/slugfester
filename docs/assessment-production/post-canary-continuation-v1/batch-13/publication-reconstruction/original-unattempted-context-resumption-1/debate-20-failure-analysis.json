@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-13-debate-20-publication-failure-analysis",
+  "protocolId": "assessment-production-post-canary-batch-13-debate-20-publication-field-disjoint-repair-1",
+  "status": "debate-20-publication-failure-diagnosed-awaiting-field-disjoint-repair-1",
+  "debateNumber": "20",
+  "sources": {
+    "output": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/outputs/debate-20.json",
+      "sha256": "c93ef3c145ba8d2474d5240e1309319f31ac8d6f84171b8ea0019d348097e561"
+    },
+    "packet": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/packets/debate-20.json",
+      "sha256": "2bc6b908e52c11a392523d0942cdfc7bcf9e119514702119f6f23a57865898b2"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/original-unattempted-context-resumption-1/model-execution.json",
+      "sha256": "7a67da0afbf10e40bd8f06e2fd82806cdbb8a379ccafc522499f3d551ccbcded"
+    },
+    "failedValidation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-13/publication-reconstruction/validations/debate-20.json",
+      "sha256": "d620a8c22986702e424c743fb012d964f173402e789eececff58c36bfea275c4"
+    }
+  },
+  "diagnosis": {
+    "invalidCritiques": [
+      {
+        "moveId": "con-atheism-no-binding-authority",
+        "field": "moveProse.con-atheism-no-binding-authority.critique",
+        "words": 132,
+        "characters": 1010,
+        "defects": [
+          "words:132"
+        ],
+        "originalValueSha256": "fff018b08409e49fb59c3c3ce3e6c536d7cda752089e4c9c7c45c798be1e740f"
+      },
+      {
+        "moveId": "con-objective-morality-borrowed-ground",
+        "field": "moveProse.con-objective-morality-borrowed-ground.critique",
+        "words": 131,
+        "characters": 989,
+        "defects": [
+          "words:131"
+        ],
+        "originalValueSha256": "390c76ab1ef67d04c4685a1c90d5500bfec0c89e9bdb13dbe8bf721cdb2f9ea2"
+      }
+    ],
+    "invalidQuotes": [],
+    "invalidCritiqueCount": 2,
+    "invalidQuoteCount": 0,
+    "allOtherFieldsStructurallyValid": true,
+    "nonTargetValidation": {
+      "status": "passed",
+      "debateNumber": "20",
+      "moves": 21,
+      "critiques": 21,
+      "minimumCritiqueCharacters": 974,
+      "tags": 7,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 3,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    },
+    "temporaryStandInsPersisted": false
+  },
+  "preservation": {
+    "failedOutputPreserved": true,
+    "unattemptedOriginalContextIndexes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scorePassRerun": false,
+    "calculatedScoresChanged": false
+  },
+  "authorization": {
+    "fieldDisjointRepairLevel1Preparation": true,
+    "attemptsPerShard": 1,
+    "retries": false,
+    "writableFieldsMaximumPerShard": 2,
+    "resumeSixOriginalUnattemptedContextsAfterPassingRepair": true,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-minimum-field-disjoint-debate-20-publication-repair-shards"
+}
