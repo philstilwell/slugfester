@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-resumption-3-debate-55-timeout-diagnosis",
+  "status": "debate-55-original-publication-first-attempt-timed-out-without-output",
+  "diagnosedAt": "2026-08-27T20:31:43Z",
+  "batchNumber": 14,
+  "debateNumber": "55",
+  "originalContextIndex": 7,
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "preservedEvidence": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-3/model-execution.json",
+    "executionSha256": "416d38d4f687f22e65cfe1d28c3d7e9c8a2f1a516dd6c8a917cea7e0ed0ffe7a",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/failure-recovery/original-unattempted-context-resumption-3/analysis.json",
+    "analysisSha256": "f762594c7c06d5330e278c5e164c989239bf7051e2fd09ee29b9a4b8bc443d8b",
+    "packet": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/packets/debate-55.json",
+    "packetSha256": "524d0d2acce5888ab046e5267722e053f23238321374ac603bdbb1bf079c758a",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-14/publication-reconstruction/schemas/debate-55.schema.json",
+    "schemaSha256": "85f11947eac1069bc1629187184df420a3230cd0d6fe344fb3f0c1486b843ccf"
+  },
+  "diagnosis": {
+    "failureType": "bounded-timeout",
+    "elapsedMs": 599991,
+    "timeoutMs": 600000,
+    "terminationSignal": "SIGTERM",
+    "outputWritten": false,
+    "partialOutputReusable": false,
+    "sourceOrSchemaDriftDetected": false,
+    "acceptedDebatesRetained": [
+      "187",
+      "160"
+    ],
+    "untouchedOriginalContextIndexes": [
+      8,
+      9
+    ],
+    "scoresChanged": false,
+    "scorePassRerun": false
+  },
+  "recoveryPlan": {
+    "freshIsolatedFieldDisjointShards": 3,
+    "topLevelWritableFieldGroups": [
+      [
+        "moveProse"
+      ],
+      [
+        "summary",
+        "representativeQuotes"
+      ],
+      [
+        "overallCommentary",
+        "aiExtension"
+      ]
+    ],
+    "maximumWritableTopLevelFieldsPerShard": 2,
+    "attemptsPerShard": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "recoveryLevelOnePreparation": true,
+    "additionalWholeDebateAttempt": false,
+    "modelExecution": false,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-three-field-disjoint-debate-55-timeout-recovery-shards"
+}
