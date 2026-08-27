@@ -175,7 +175,16 @@ assert.equal(activation.acceptanceContract.modelAuthoredScoresMaximum, 0);
 assert.equal(activation.acceptanceContract.scoresDerived, 0);
 assert.deepEqual(
   activation.audioPolicy.pendingAttributionVerificationMoves,
-  []
+  [
+    {
+      debateNumber: "70",
+      moveId: "con-shared-liability-neutrality",
+    },
+    {
+      debateNumber: "37",
+      moveId: "con-impartial-source-standards",
+    },
+  ]
 );
 assert.equal(allBooleanLeavesTrue(activation.stopRules), true);
 for (const key of [
