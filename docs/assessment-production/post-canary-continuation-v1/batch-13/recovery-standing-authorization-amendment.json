@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-atomic-shard-preservation-gap-standing-authorization",
+  "protocolId": "assessment-production-atomic-shard-preservation-gap-standing-authorization",
+  "status": "frozen-active-standing-authorization-for-current-and-future-similar-blocks",
+  "authorizedAt": "2026-08-27T03:43:26.000Z",
+  "userInstruction": "I am setting a standing authorization for this and future similar block encounters.",
+  "resolvedScope": {
+    "trigger": "A multi-field model shard fails atomically and the runner does not preserve otherwise potentially valid companion fields, leaving every field in that shard unavailable for deterministic merge.",
+    "authorizedRecovery": "Recover every unavailable field from each affected failed shard, including named validation failures and discarded companion fields.",
+    "minimumFreshFieldDisjointShardsRequired": true,
+    "writableFieldsMaximumPerShard": 2,
+    "attemptsPerShardMaximum": 1,
+    "retriesMaximum": 0,
+    "additionalRecoveryAfterThisAttempt": false,
+    "failedEvidenceMustRemainPreserved": true,
+    "acceptedFieldsMustRemainImmutable": true,
+    "scorePassRerunAllowed": false,
+    "calculatedScoreChangesAllowed": false,
+    "automaticContinuationAfterPassingGate": true
+  },
+  "batch13Application": {
+    "debateNumber": "87",
+    "exceptionalRecoveryLevel": 3,
+    "shards": [
+      {
+        "sourceFailedContextIndex": 1,
+        "moveIds": [
+          "pro-comparative-likelihood-ratio",
+          "pro-natural-regularity-miracle-context"
+        ]
+      },
+      {
+        "sourceFailedContextIndex": 6,
+        "moveIds": [
+          "con-sincerity-transmission-limits",
+          "con-empty-tomb-unconfirmed"
+        ]
+      }
+    ],
+    "shardCount": 2,
+    "writableCritiques": 4,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "futureSimilarityBoundary": {
+    "sameFailureMechanismRequired": true,
+    "scopeExpansionBeyondDiscardedCompanionFieldsAllowed": false,
+    "ordinaryContentValidationFailureCovered": false,
+    "transportRetryCovered": false,
+    "scoreOrIdentityRepairCovered": false,
+    "newPaidServiceCovered": false
+  }
+}
