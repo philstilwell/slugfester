@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery",
+  "status": "batch-14-publication-resumption-1-critique-recovery-level-1-execution-failed",
+  "startedAt": "2026-08-27T19:33:25.972Z",
+  "completedAt": "2026-08-27T19:46:46.153Z",
+  "elapsedMs": 800179,
+  "contextsAttempted": 10,
+  "validContexts": 8,
+  "invalidContexts": 2,
+  "attempts": 10,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "110",
+      "moveIds": [
+        "pro-prebiotic-sugar-pathway-limit"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:33:25.974Z",
+      "completedAt": "2026-08-27T19:34:07.102Z",
+      "elapsedMs": 41128,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "e9b9f2447aeee88a988a440c9b3b109edb063d16057459d1f75d4a1ba8d1c2c6",
+      "stderrSha256": "866fd3260323287c7c3553c38a94e60f7031d755a47957c86339d18d15048518",
+      "stderrTail": "\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-110-critique-repair-0\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 0\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"110\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"tour-garte-evolution-agency-christian-faith-2025\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"maxItems\": 1,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-prebiotic-sugar-pathway-limit\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\nexec\n/bin/zsh -lc \"s='Strongest feature: Tour correctly identifies ribose-related sugar availability as a consequential biochemical prerequisite for plausible pathways toward RNA and DNA, converting an abstract origins dispute into a concrete dependency whose experimental fragility deserves serious evidential attention. Principal limitation: His categorical progression from the reported failure of one proposed synthesis to “no more route” overgeneralizes substantially, because the excerpt neither documents the referenced paper nor comparatively excludes alternative prebiotic syntheses, later refinements, or chemically distinct replacement mechanisms. Live burden: Tour must establish that the invalidated pathway was uniquely indispensable, while Garte must identify a condition-relevant alternative that plausibly produces and incorporates ribose rather than merely appealing to presently undiscovered chemistry. Locked score: The move remains highly relevant and usefully specific about molecular requirements, yet its unsupported universality, absent uncertainty qualification, incomplete evidentiary comparison, and failure to engage Garte’s domain and framework distinctions appropriately constrain its overall force.'; printf '%s' \\\"\"'$s\" | wc -w -m' in /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/slugfester-b14-pub-110-c-0-BEf1ay\n succeeded in 0ms:\n     146    1208\n\nexec\n/bin/zsh -lc \"s='Strongest feature: Tour identifies ribose-related sugar availability as a consequential prerequisite for plausible RNA and DNA pathways, turning an abstract origins dispute into a concrete biochemical dependency deserving evidential attention. Principal limitation: His progression from one proposed synthesis failing to “no more route” overgeneralizes substantially, because the excerpt neither documents the referenced paper nor comparatively excludes alternative prebiotic syntheses, refinements, or chemically distinct replacement mechanisms. Live burden: Tour must establish that the invalidated pathway was uniquely indispensable, while Garte must identify a condition-relevant alternative plausibly producing and incorporating ribose rather than merely appealing to undiscovered chemistry. Locked score: The move remains highly relevant and usefully specific about molecular requirements, yet its unsupported universality, missing uncertainty qualification, incomplete evidentiary comparison, and failure to engage Garte’s domain and framework distinctions appropriately constrain its force.'; printf '%s' \\\"\"'$s\" | wc -w -m' in /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/slugfester-b14-pub-110-c-0-BEf1ay\n succeeded in 0ms:\n     132    1098\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":0,\"debateNumber\":\"110\",\"debateId\":\"tour-garte-evolution-agency-christian-faith-2025\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-prebiotic-sugar-pathway-limit\",\"critique\":\"Strongest feature: Tour identifies ribose-related sugar availability as a prerequisite for RNA and DNA pathways, turning an abstract origins dispute into a concrete biochemical dependency. Principal limitation: His progression from one proposed synthesis failing to “no more route” overgeneralizes, because the excerpt neither documents the paper nor excludes alternative prebiotic syntheses, refinements, or replacement mechanisms. Live burden: Tour must establish that the invalidated pathway was indispensable, while Garte must identify an alternative plausibly producing and incorporating ribose rather than appealing to undiscovered chemistry. Locked score: The move remains highly relevant and specific about molecular requirements, yet its unsupported universality, missing uncertainty qualification, incomplete evidentiary comparison, and failure to engage Garte’s domain and framework distinctions constrain its force.\"}]}\ntokens used\n20,967",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "c73272fe8aad568dd7e501e6ba9873af37f8ca94e1afa89e12c53b0f4d6ad86b",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-prebiotic-sugar-pathway-limit",
+          "words": 117,
+          "characters": 927,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-normativity-causal-determinism-self-defeat",
+        "pro-normativity-objective-logical-standards"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:33:25.974Z",
+      "completedAt": "2026-08-27T19:36:22.421Z",
+      "elapsedMs": 176447,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "2f1785320fe924d65dad9b377abc32a557239869cc891cb2a872efc0c870638c",
+      "stderrSha256": "4b56996536a6580d1fe5de060834adc5ffdcf48dddc1214744f9f219493eff13",
+      "stderrTail": "ally interpret a live opposing alternative.\"\n          }\n        },\n        \"evidenceBasis\": \"Hawkins says actual human reasoning must be distinguished from logical principles and that truth relations independent of human psychology set reasoning's success criteria.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Load-bearing constructive\",\n        \"words\": \"Logical and mathematical relations establish standards independent of individual psychology, preserving an objective difference between valid inference and the patterns of thought people are causally disposed to follow.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-1\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 1\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-normativity-causal-determinism-self-defeat\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-normativity-objective-logical-standards\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\n2026-08-27T19:36:10.905841Z  WARN codex_sandboxing::violation: recorded sandbox violation: resource=filesystem backend=seatbelt reason=operation_not_permitted path=unknown\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":1,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T12:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-normativity-causal-determinism-self-defeat\",\"critique\":\"Strongest feature: Hawkins identifies a genuinely consequential distinction between norm-governed correctness and merely occurring cognition, then connects determinism’s credibility to whether rational endorsement can survive comprehensive causal explanation. Principal limitation: The argument moves from beliefs being causally produced to their being incapable of truth-sensitive, standards-responsive justification, without establishing that deterministic mechanisms cannot reliably instantiate logical sensitivity, evidential discrimination, or counterfactual responsiveness. Live burden: He must demonstrate an incompatibility between causal realization and normative answerability, addressing the determinist’s strongest charitable alternative that caused inferential processes can nevertheless track truth and adjust systematically to reasons. Locked score: The mixed result appropriately reflects a centrally relevant self-defeat challenge whose philosophical importance and clear burden contact exceed the developed support for its decisive bridging premise.\"},{\"moveId\":\"pro-normativity-objective-logical-standards\",\"critique\":\"Strongest feature: Hawkins clearly separates psychologically prevalent reasoning from objectively correct inference, giving the pro case a positive account of logical success criteria instead of relying exclusively on a negative self-defeat objection. Principal limitation: The passage plausibly establishes standards independent of individual dispositions, yet it advances the stronger metaphysical conclusion that logical and mathematical relations are mind-independent without defending why intersubjective, constitutivist, or otherwise non-realist accounts cannot preserve normativity. Live burden: He must justify that transition from non-reducibility to actual psychology toward robust mind-independence, while explaining how abstract truth relations normatively govern concrete agents rather than merely describing valid formal relationships. Locked score: The strong result fits a precise, highly relevant constructive contribution, moderated by an evidential gap at the bounded bridge between objective correctness and the particular metaphysics asserted.\"}]}\ntokens used\n20,762",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "72121cde3d948aa62ea5335e929a9231ad1740956b8c0a8f2ded998dd45cc5d3",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-normativity-causal-determinism-self-defeat",
+          "words": 121,
+          "characters": 1067,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-normativity-objective-logical-standards",
+          "words": 130,
+          "characters": 1064,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-determinism-time-symmetry-no-forcing",
+        "con-noncausal-determinism-branching-pressure"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:36:22.428Z",
+      "completedAt": "2026-08-27T19:38:35.371Z",
+      "elapsedMs": 132943,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "6db81cf6883f715358e65727a2f9a9f14885464494782140db68c6fffdac802c",
+      "stderrSha256": "0152b8c1d6b3e7b76f2afcc77f16f0557b53b86f384907a7cbec855a65186663",
+      "stderrTail": "\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-noncausal-determinism-branching-pressure\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\n2026-08-27T19:36:53.736171Z  WARN codex_sandboxing::violation: recorded sandbox violation: resource=filesystem backend=seatbelt reason=operation_not_permitted path=unknown\nexec\n/bin/zsh -lc \"python3 -c 'import sys;[(print(len(x),len(x.split()),x.count(\\\".\\\"))) for x in sys.argv[1:]]' 'Strongest feature: Hawkins separates bidirectional mathematical recoverability from temporally privileged causal necessitation, using reversibility to expose equivocation between equations interrelating complete states and earlier conditions coercively producing deliberative outcomes. Principal limitation: Time symmetry removes an intrinsic temporal orientation yet remains compatible with laws and boundary conditions uniquely correlating every state, so rejecting forward-directed forcing does not establish alternative continuations, agent sourcehood, or indeterministic choice. Live burden: He must demonstrate why identical total physical conditions permit multiple genuinely available futures, or explain why libertarian responsibility needs sourcehood without branching, while distinguishing metaphysical possibility from unpredictability, ignorance, and reversible calculation. Locked score: Its central relevance and illuminating conceptual distinction therefore coexist with underqualified generalization, slightly overstated warrant, partly unstable scope, and an implicit bridge from nonprivileged causal direction to freedom.' 'Strongest feature: Folley precisely grants the distinction between causal necessitation and mathematical determination, then shows that uniquely fixed continuations can still eliminate the branching alternatives targeted by libertarian freedom, making the reply exceptionally direct, charitable, and burden-responsive. Principal limitation: Perfect predictability risks sounding epistemic unless grounded in ontological uniqueness, and the objection reaches only libertarian theories requiring multiple continuations from exactly the same complete state and laws, not every sourcehood-centered account. Live burden: He must defend why fixed-law, fixed-state uniqueness obtains rather than merely predictability, and establish that Hawkins’s responsibility criterion requires objective branching instead of irreducible authorship compatible with a single continuation. Locked score: The explicit qualifications, stable terminology, coherent conditional structure, and decisive contact justify the very strong result, while comparatively thinner support for the uniqueness premise keeps evidential warrant below the reply’s outstanding responsiveness.'\" in /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/slugfester-b14-pub-133-c-2-iYxSTp\n succeeded in 0ms:\n1140 128 4\n1149 137 4\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":2,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27\",\"corrections\":[{\"moveId\":\"pro-determinism-time-symmetry-no-forcing\",\"critique\":\"Strongest feature: Hawkins separates bidirectional mathematical recoverability from temporally privileged causal necessitation, using reversibility to expose equivocation between equations interrelating complete states and earlier conditions coercively producing deliberative outcomes. Principal limitation: Time symmetry removes an intrinsic temporal orientation yet remains compatible with laws and boundary conditions uniquely correlating every state, so rejecting forward-directed forcing does not establish alternative continuations, agent sourcehood, or indeterministic choice. Live burden: He must demonstrate why identical total physical conditions permit multiple genuinely available futures, or explain why libertarian responsibility needs sourcehood without branching, while distinguishing metaphysical possibility from unpredictability, ignorance, and reversible calculation. Locked score: Its central relevance and illuminating conceptual distinction therefore coexist with underqualified generalization, slightly overstated warrant, partly unstable scope, and an implicit bridge from nonprivileged causal direction to freedom.\"},{\"moveId\":\"con-noncausal-determinism-branching-pressure\",\"critique\":\"Strongest feature: Folley precisely grants the distinction between causal necessitation and mathematical determination, then shows that uniquely fixed continuations can still eliminate the branching alternatives targeted by libertarian freedom, making the reply direct, charitable, and burden-responsive. Principal limitation: Perfect predictability risks sounding epistemic unless grounded in ontological uniqueness, and the objection reaches only libertarian theories requiring multiple continuations from the same state and laws, not every sourcehood-centered account. Live burden: He must defend why fixed-law, fixed-state uniqueness obtains, and establish that Hawkins’s responsibility criterion requires objective branching instead of irreducible authorship compatible with a single continuation. Locked score: The explicit qualifications, stable terminology, coherent conditional structure, and decisive contact justify the very strong result, while comparatively thinner support for the uniqueness premise keeps evidential warrant below the reply’s outstanding responsiveness.\"}]}\ntokens used\n22,709",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "42201b2da96fb1db1c5663d53312102b4ca06d1963759443505370319d2249ae",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-determinism-time-symmetry-no-forcing",
+          "words": 128,
+          "characters": 1140,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-noncausal-determinism-branching-pressure",
+          "words": 130,
+          "characters": 1084,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-sourcehood-without-branching-future",
+        "con-modal-scope-fixed-past-distinction"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:36:22.428Z",
+      "completedAt": "2026-08-27T19:36:55.823Z",
+      "elapsedMs": 33395,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsd": 0,
+      "status": "output-validation-failed",
+      "outputWritten": false,
+      "gateAcceptancePassed": false,
+      "validationMessage": "AssertionError [ERR_ASSERTION]: pro-sourcehood-without-branching-future: critique word count 134\n    at validateCritique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:64:3)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:131:399\n    at Array.map (<anonymous>)\n    at execute (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:131:358)\n    at async Promise.all (index 1)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:137:90"
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "133",
+      "moveIds": [
+        "con-noncausal-compatibilist-basis",
+        "con-functional-practical-freedom"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:38:35.379Z",
+      "completedAt": "2026-08-27T19:39:23.003Z",
+      "elapsedMs": 47624,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "429cc5b529916298016db7abcdbf92838f98541a46051e98b6f6f1e41e638abc",
+      "stderrSha256": "6e8f6c686123bc1bb9730de4a52c8fbd315fd86c58390e111c2489c27a12f069",
+      "stderrTail": "epresentationalCharity\": {\n            \"value\": 78,\n            \"rationale\": \"The move develops the practical alternative strongly but does not fully address the metaphysical insufficiency objection.\"\n          }\n        },\n        \"evidenceBasis\": \"Folley asks what free will does and argues that it structures prediction, coercion distinctions, incentives, praise, and blame even in deterministic societies.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Load-bearing constructive\",\n        \"words\": \"Freedom is functionally expressed through distinctions governing prediction, coercion, incentives, praise, and blame, all of which retain action-guiding significance within a deterministically organized society.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-4\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 4\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-noncausal-compatibilist-basis\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-functional-practical-freedom\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":4,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"con-noncausal-compatibilist-basis\",\"critique\":\"Strongest feature: Folley identifies a significant distinction between exhaustive predictability and causal puppeteering, opening a coherent compatibilist route that preserves deliberative agency without requiring indeterministic interruption or mysterious self-origination. Principal limitation: Removing causal compulsion does not independently establish authorship, reasons-responsiveness, alternative-sensitive control, or another positive condition sufficient for freedom, while the supposedly stronger status of non-causal determinism receives intuitive rather than discriminating argumentative support. Live burden: Folley must specify how non-causally determined deliberation belongs to the agent, explain why predictable decisions retain normatively relevant control, and distinguish this account from an equally predictable process that merely simulates autonomous evaluation. Locked score: The mixed evaluation appropriately recognizes a centrally relevant, cautiously calibrated conceptual opening while retaining substantial deductions for unstable terminology, compressed inferential bridging, and limited evidential development.\"},{\"moveId\":\"con-functional-practical-freedom\",\"critique\":\"Strongest feature: Folley offers a practical functional analysis, connecting freedom discourse to prediction, coercion-sensitive distinctions, incentives, praise, and blame, while showing why these practices remain intelligible and action-guiding in a deterministic society. Principal limitation: The argument moves too quickly from the functions of freedom concepts to freedom itself, because usefulness can explain why communities preserve responsibility language without demonstrating that agents possess authorship or control. Live burden: Folley must defend that constitutive bridge, distinguish legitimate responsibility from merely efficient behavioral management, and answer the libertarian who accepts those benefits while denying that functional success establishes sourcehood. Locked score: The strong evaluation fits the move’s exceptional burden relevance, concrete thought-experimental support, and disciplined plausibility claim, while preserving deductions for the unresolved function-to-constitution inference and incomplete comparison with rival accounts.\"}]}\ntokens used\n22,391",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "01d41b2dbb8ead040142c4020f4454938716f82533f43cb14b200c50a61a8e8a",
+      "critiqueValidations": [
+        {
+          "moveId": "con-noncausal-compatibilist-basis",
+          "words": 127,
+          "characters": 1143,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-functional-practical-freedom",
+          "words": 128,
+          "characters": 1073,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-idealist-science-without-exhaustion",
+        "pro-feeling-volition-beyond-intellectual-system"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:38:35.379Z",
+      "completedAt": "2026-08-27T19:39:03.354Z",
+      "elapsedMs": 27975,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "10b75167c398341ab5307ad22040164f94bb5622461e3803e6d04f50e0c47b6f",
+      "stderrSha256": "72b799931d322afc5adbd9f4efeecf168a3d195815574232f84d45ed8271c332",
+      "stderrTail": "      \"representationalCharity\": {\n            \"value\": 69,\n            \"rationale\": \"The move treats scientific abstraction as significant but does not fully engage the methodological-versus-metaphysical distinction.\"\n          }\n        },\n        \"evidenceBasis\": \"Hawkins argues that science is an intellectual abstraction which leaves agential, ethical, aesthetic, pleasurable, and volitional value untouched by design.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Load-bearing constructive\",\n        \"words\": \"Feeling and volition precede reflective systematization, while scientific inquiry deliberately abstracts from agential, ethical, and aesthetic value, indicating that intellectual description does not exhaust reality.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-5\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 5\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-idealist-science-without-exhaustion\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-feeling-volition-beyond-intellectual-system\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":5,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27\",\"corrections\":[{\"moveId\":\"pro-idealist-science-without-exhaustion\",\"critique\":\"Strongest feature: Hawkins clearly distinguishes accepting scientific truth from granting science exhaustive metaphysical authority, then specifies agential, moral, aesthetic, religious, and felt experience as domains any comprehensive worldview must coherently accommodate. Principal limitation: This breadth establishes an intelligible adequacy criterion but neither demonstrates that compatibilist pragmatism cannot recognize those domains as real nor establishes Bradleyan idealism as uniquely necessary for their integration. Live burden: He must directly confront the noncausal compatibilist basis, explain why practical freedom remains incomplete without idealist metaphysics, and derive that conclusion rather than relying upon science’s deliberate abstraction from evaluative experience. Locked score: The strong central relevance, explicit qualifications, stable scope, and recoverable proposition justify the competent assessment, while indirect responsiveness, underdeveloped alternatives, and only moderately secured warrant appropriately prevent a higher evaluation.\"},{\"moveId\":\"pro-feeling-volition-beyond-intellectual-system\",\"critique\":\"Strongest feature: Hawkins identifies feeling, volition, ethical significance, aesthetic value, and pleasure as concrete dimensions that reflective intellectual systems may abstract from, thereby placing the idealist-completeness burden squarely at the exchange’s center. Principal limitation: The argument moves too quickly from methodological abstraction to metaphysical incompleteness, grouping several partly unstable concepts without showing that scientific naturalism categorically cannot investigate or accommodate agency and value. Live burden: He must distinguish precedence in experience from ontological priority, clarify the relationships among feeling, volition, and value, and establish why deliberate scientific selectivity supports idealism instead of merely describing specialized inquiry. Locked score: Exceptional relevance and concrete examples support the competent result, whereas the unsupported conditional, missing qualification, materially overstated necessity, and incomplete engagement with the methodological alternative appropriately constrain the evaluation.\"}]}\ntokens used\n30,501",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "6f46da64ff011e1c88198c89a90acf767fd48e21428ac9cd46acf0135abb5758",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-idealist-science-without-exhaustion",
+          "words": 127,
+          "characters": 1080,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-feeling-volition-beyond-intellectual-system",
+          "words": 127,
+          "characters": 1089,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "133",
+      "moveIds": [
+        "con-naturalistic-experience-centered-idealism",
+        "con-perceptual-categorization-pressure"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:39:23.013Z",
+      "completedAt": "2026-08-27T19:40:08.286Z",
+      "elapsedMs": 45273,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "5286545941270f6d43e44fa5a7403fa1feba89efc9d41fe69fd1fa97e35000c2",
+      "stderrSha256": "2bb56e0d4602a5211a42be8391adc6554cf006756dde2de0e1d7a703db2db70a",
+      "stderrTail": "            \"rationale\": \"The move grants idealism's non-voluntarist form and targets the strongest residual epistemic problem without caricature.\"\n          }\n        },\n        \"evidenceBasis\": \"Folley rejects the idea that idealism implies voluntary control and asks how Bradley's felt real can be accessed when perception already categorizes experience.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Diagnostic challenge\",\n        \"words\": \"Idealism need not imply voluntary control over experience, yet Bradley's inaccessible unstructured feeling faces epistemic pressure because reflective perception already presents experience through categories and distinctions.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-6\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 6\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-naturalistic-experience-centered-idealism\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-perceptual-categorization-pressure\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":6,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27\",\"corrections\":[{\"moveId\":\"con-naturalistic-experience-centered-idealism\",\"critique\":\"Strongest feature: Folley articulates a naturalistically respectable, experience-centered idealism that distinguishes methodological attention to experience from extravagant mental-substance ontology, while treating physical objects as explanatorily productive models rather than metaphysically exhaustive furniture. Principal limitation: The formulation leaves “idealism” oscillating between an epistemological orientation and an ontological commitment, and consequently underexplains whether experiential modeling can accommodate value, volition, normativity, and Hawkins’s non-intellectual feeling without redescribing or marginalizing them. Live burden: Folley must specify the metaphysical implications of experience-first inquiry and demonstrate that its naturalistic conceptual resources genuinely integrate those resistant dimensions, rather than merely permitting nonexhaustive science or declining mysterious substance. Locked score: This is a highly responsive, coherent central reply whose careful plausibility-level calibration and direct contact with both targeted claims outweigh its terminological instability and comparatively schematic warrant.\"},{\"moveId\":\"con-perceptual-categorization-pressure\",\"critique\":\"Strongest feature: Folley concedes that idealism does not entail voluntary control of reality, then isolates a precise epistemic difficulty: reflective perception arrives already categorized, whereas Bradley’s foundational felt real is characterized as antecedently unstructured. Principal limitation: The challenge rests on phenomenological assertion, without establishing that categorization conditions every evidential route or that reflective inaccessibility disqualifies a transcendental, rather than observational, foundation. Live burden: Folley must explain why structure in accessible perception undermines warranted inference to precognitive feeling, while Hawkins must identify a non-question-begging basis for attributing structurelessness and foundational significance to something unavailable as a reflective object. Locked score: The measured interrogative force, explicit concession, strong logical organization, and charitable targeting justify a strong assessment, although limited defense of universality and subsidiary burden contact constrain the result.\"}]}\ntokens used\n22,460",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "28f3fca6ef392254680524bf6b1eead42cb1881a317233526b60ad13bda651a5",
+      "critiqueValidations": [
+        {
+          "moveId": "con-naturalistic-experience-centered-idealism",
+          "words": 129,
+          "characters": 1162,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-perceptual-categorization-pressure",
+          "words": 127,
+          "characters": 1075,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-idealist-truth-constrained-by-reality",
+        "pro-precognitive-feeling-and-structured-absolute"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:39:23.013Z",
+      "completedAt": "2026-08-27T19:46:03.022Z",
+      "elapsedMs": 400009,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "26653cfac91e80392f3610769f62b9d03d12ea34e989119ad803272d9a24a8a4",
+      "stderrSha256": "b3d3c45752ff91b3fbde66981fe9dac020c6e6e01be0b4448feb0920db42f8ce",
+      "stderrTail": "t centrally supports idealist completeness by integrating feeling with thought and volition.\"\n          },\n          \"representationalCharity\": {\n            \"value\": 80,\n            \"rationale\": \"The objection is squarely acknowledged, but the decisive warrant is answered mainly by restating Bradley's theory.\"\n          }\n        },\n        \"evidenceBasis\": \"Hawkins concedes that raw precognitive feeling is never encountered in judgment but says it remains the foundation of thought and is integrated with volition in the absolute.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Reflective agents never recover wholly unstructured experience, yet precognitive feeling remains thought's foundation and is ultimately integrated with thought and volition within the absolute.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-7\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 7\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-idealist-truth-constrained-by-reality\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-precognitive-feeling-and-structured-absolute\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":7,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-idealist-truth-constrained-by-reality\",\"critique\":\"Strongest feature: Hawkins rejects voluntarist caricature by identifying three constraints—practical operation, felt encounter with reality, and intellectual satisfaction—while presenting Bradley's position as pragmatism supplemented by further requirements. Principal limitation: the reply enumerates constraints without validating them, because neither felt encounter nor intellectual satisfaction is sufficiently individuated as a truth-condition, and operational success could characterize coherent misconception. Live burden: Hawkins must explain how conceptually mediated feeling reliably discriminates reality-responsive judgment from durable error, especially when categorization structures reflective encounters and satisfaction may reward internal consistency rather than correspondence. Locked score: the engagement, qualification, and appeal to practical failure support the recorded assessment, while the unresolved epistemic-access difficulty and underdeveloped independence of the proposed constraints appropriately limit its evidential force.\"},{\"moveId\":\"pro-precognitive-feeling-and-structured-absolute\",\"critique\":\"Strongest feature: Hawkins concedes that reflective judgment never recovers wholly unstructured experience, but distinguishes inaccessible precognitive feeling from its foundational role and integration with thought and volition in the absolute. Principal limitation: the explanation leaps from phenomenological inaccessibility to metaphysical indispensability, leaving “foundation,” “persistence,” and “integration” insufficiently stabilized, without independently warranting the posit beneath categorized experience. Live burden: Hawkins must show how an epistemically unavailable stratum is responsibly inferred, how it constrains conceptual judgment, and why absolute integration explains rather than abstractly redescribes Bradley's system. Locked score: the candid concession, central relevance, and accurate contact with the categorization objection justify the recorded strength, while the unsupported foundational inference and shifting explanatory scope properly restrain the evidential assessment.\"}]}\ntokens used\n36,039",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "464308e26d27585ede8f3a23ac06a30930efdf6c5cebf6be382ab48ccd895c7b",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-idealist-truth-constrained-by-reality",
+          "words": 118,
+          "characters": 1058,
+          "sentences": 4
+        },
+        {
+          "moveId": "pro-precognitive-feeling-and-structured-absolute",
+          "words": 117,
+          "characters": 1008,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "133",
+      "moveIds": [
+        "con-absolute-regulative-or-real",
+        "pro-normative-inquiry-real-absolute"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:46:03.028Z",
+      "completedAt": "2026-08-27T19:46:30.008Z",
+      "elapsedMs": 26981,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsd": 0,
+      "status": "output-validation-failed",
+      "outputWritten": false,
+      "gateAcceptancePassed": false,
+      "validationMessage": "AssertionError [ERR_ASSERTION]: pro-normative-inquiry-real-absolute: critique word count 131\n    at validateCritique (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:64:3)\n    at file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:131:399\n    at Array.map (<anonymous>)\n    at execute (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:131:358)\n    at async Promise.all (index 0)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery.mjs:137:90"
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "133",
+      "moveIds": [
+        "pro-inquiry-joins-knower-and-known",
+        "con-pragmatic-admission-standards"
+      ],
+      "attemptCount": 1,
+      "retryCount": 0,
+      "startedAt": "2026-08-27T19:46:03.028Z",
+      "completedAt": "2026-08-27T19:46:46.144Z",
+      "elapsedMs": 43116,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "transportClassification": "clean",
+      "recoverableStreamEvents": 0,
+      "stdoutSha256": "eee05db022bf114593312c4879b21ed36f05f5fdb67c2c7cd20b7566281c2634",
+      "stderrSha256": "19507e392bdba628281d5bf62bdfe53f19b504ce5142d4c4291737760820b524",
+      "stderrTail": "    \"value\": 84,\n            \"rationale\": \"The move does not caricature idealism as a free-for-all; it frames unrestricted admission as one risk and acknowledges the shared need for standards.\"\n          }\n        },\n        \"evidenceBasis\": \"Folley rejects both scientistic exclusion and metaphysical free-for-all, says standards are necessary, and tentatively favors the pragmatic maxim while stressing the difficulty.\",\n        \"assessmentConfidence\": \"high\"\n      },\n      \"immutablePublicationFields\": {\n        \"role\": \"Major direct reply\",\n        \"words\": \"Anti-reductionism needs pragmatic admission standards that avoid both scientistic exclusion and unrestricted metaphysical permissiveness, although selecting and operationalizing those standards remains genuinely difficult.\",\n        \"tags\": []\n      },\n      \"rejectedPriorCritiqueAvailable\": false\n    }\n  ],\n  \"allOtherFieldsUnavailableAndImmutable\": true,\n  \"participantJudgmentClosed\": true,\n  \"publicationScoreLocked\": true\n}\n{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"slugfester-b14-133-critique-repair-9\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"schemaVersion\",\n    \"protocolId\",\n    \"contextIndex\",\n    \"debateNumber\",\n    \"debateId\",\n    \"assessmentModel\",\n    \"completedAt\",\n    \"corrections\"\n  ],\n  \"properties\": {\n    \"schemaVersion\": {\n      \"type\": \"string\",\n      \"const\": \"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\"\n    },\n    \"protocolId\": {\n      \"type\": \"string\",\n      \"const\": \"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\"\n    },\n    \"contextIndex\": {\n      \"type\": \"integer\",\n      \"const\": 9\n    },\n    \"debateNumber\": {\n      \"type\": \"string\",\n      \"const\": \"133\"\n    },\n    \"debateId\": {\n      \"type\": \"string\",\n      \"const\": \"hawkins-folley-free-will-idealism-2026\"\n    },\n    \"assessmentModel\": {\n      \"type\": \"string\",\n      \"const\": \"5.6 Sol\"\n    },\n    \"completedAt\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"corrections\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"maxItems\": 2,\n      \"items\": {\n        \"anyOf\": [\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"pro-inquiry-joins-knower-and-known\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          },\n          {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\n              \"moveId\",\n              \"critique\"\n            ],\n            \"properties\": {\n              \"moveId\": {\n                \"type\": \"string\",\n                \"const\": \"con-pragmatic-admission-standards\"\n              },\n              \"critique\": {\n                \"type\": \"string\",\n                \"minLength\": 880,\n                \"maxLength\": 1800\n              }\n            }\n          }\n        ]\n      }\n    }\n  }\n}\n\ncodex\n{\"schemaVersion\":\"1.0-assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery-output\",\"protocolId\":\"assessment-production-post-canary-batch-14-publication-resumption-1-critique-recovery\",\"contextIndex\":9,\"debateNumber\":\"133\",\"debateId\":\"hawkins-folley-free-will-idealism-2026\",\"assessmentModel\":\"5.6 Sol\",\"completedAt\":\"2026-08-27T00:00:00-04:00\",\"corrections\":[{\"moveId\":\"pro-inquiry-joins-knower-and-known\",\"critique\":\"Strongest feature: Hawkins directly answers the regulative-or-real challenge by presenting inquiry as an experientially integrated relationship in which knower and known reciprocally interact, thereby explaining why understanding can intelligibly possess direction rather than confront an intrinsically inaccessible reality. Principal limitation: The argument insufficiently differentiates epistemic interaction, metaphysical unity, progressive intelligibility, and actual attainability, so movement toward improved understanding does not distinctively establish Bradleyan idealism or a completed absolute. Live burden: Hawkins must demonstrate why fallible pragmatic engagement with independently existing reality cannot supply comparable direction, and why reciprocal influence entails ontological inclusion instead of ordinary cognition. Locked score: The strong burden contact and highly responsive idealist explanation justify the recorded strong performance, while slightly overstated warrant, partly unstable terminology, and an underdeveloped inference from direction to terminus constrain its force.\"},{\"moveId\":\"con-pragmatic-admission-standards\",\"critique\":\"Strongest feature: Folley charitably accepts the anti-reductionist motivation while identifying the decisive comparative problem: metaphysical inquiry needs discriminating admission standards that exclude neither legitimate nonscientific understanding nor intellectual discipline, and his tentative pragmatic maxim appropriately acknowledges uncertainty. Principal limitation: Although the proposal names both dangers, it does not operationalize pragmatic admissibility or explain which consequences distinguish a warranted substantive absolute from an imaginatively permissible construction. Live burden: Folley must specify assessable criteria, show how they adjudicate Bradleyan claims without covert scientism, and establish why normative direction supports only a regulative ideal rather than metaphysical completion. Locked score: The exceptionally direct burden contact, stable framing, explicit qualification, and charitable representation support the recorded very strong performance, while limited evidential development prevents the standard from becoming a decisive refutation.\"}]}\ntokens used\n21,448",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "4440793853ed0e47bd2a713d8477f0784cc9b32456292d0fd35098a348ba4fb9",
+      "critiqueValidations": [
+        {
+          "moveId": "pro-inquiry-joins-knower-and-known",
+          "words": 130,
+          "characters": 1108,
+          "sentences": 4
+        },
+        {
+          "moveId": "con-pragmatic-admission-standards",
+          "words": 127,
+          "characters": 1089,
+          "sentences": 4
+        }
+      ],
+      "gateAcceptancePassed": true
+    }
+  ],
+  "authorization": {
+    "analysis": false,
+    "retries": false,
+    "furtherRecoveryLevel": true,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
