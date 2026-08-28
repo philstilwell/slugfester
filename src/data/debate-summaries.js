@@ -671,11 +671,11 @@ export const debateSummaries = [
     "number": "16",
     "title": "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate",
     "label": "Faith and civilization",
-    "date": "2026-05-28",
+    "date": "2026-08-28",
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=DBsHdHMvucs",
     "motion": "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
-    "summary": "Hirsi Ali defends Christianity as personally transformative and civilizationally necessary; Dawkins grants cultural value but insists Christianity's truth claims remain false.",
+    "summary": "Hirsi Ali defended Christian renewal through personal transformation and civilizational need; Dawkins separated those benefits from supernatural truth and challenged religious moral authority.",
     "sides": {
       "pro": {
         "name": "Christian renewal",
@@ -689,27 +689,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 83
+      "pro": 74,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Conversion and doctrine"
+        "title": "Personal experience and conversion"
       },
       {
-        "title": "Sin and redemption"
+        "title": "Supernatural truth and practical benefit"
       },
       {
-        "title": "Truth and utility"
+        "title": "Christian moral character and religious distinction"
       },
       {
-        "title": "Cultural inheritance"
+        "title": "Moral formation and secular alternatives"
       },
       {
-        "title": "Christianity and Islam"
-      },
-      {
-        "title": "Islamism and response"
+        "title": "Civilizational defense and ideological resistance"
       }
     ]
   },
@@ -1796,11 +1793,11 @@ export const debateSummaries = [
     "number": "41",
     "title": "Michael Huemer vs Lance Bush: Do Objective Moral Facts Exist?",
     "label": "Objective moral facts and intuitionism",
-    "date": "2026-05-31",
+    "date": "2026-08-28",
     "duration": "2 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Cc16nceSWiU",
     "motion": "Do objective moral facts exist, and can ethical intuitionism establish moral realism against anti-realist quietism, folk metaethical indeterminacy, and language-use objections?",
-    "summary": "Huemer defends objective moral facts from common moral judgments, Frege-Geach style semantics, and phenomenal conservatism; Bush argues that realist conclusions rest on contested intuitions, semantic assumptions, and normative entanglement.",
+    "summary": "Huemer defended attitude-independent morality through semantic tests and intellectual appearances; Bush countered with contextual quietism, folk indeterminacy, and challenges to intuition’s public authority.",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1814,27 +1811,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
+      "pro": 85,
       "con": 83
     },
     "sections": [
       {
-        "title": "Opening case and alternative frame"
+        "title": "Objective moral truth and the anti-realist alternatives"
       },
       {
-        "title": "Common sense and normative entanglement"
+        "title": "Moral language, contextual use, and quietism"
       },
       {
-        "title": "Intuitions, surveys, and expertise"
+        "title": "Intuition, intellectual appearances, and philosophical method"
       },
       {
-        "title": "Meaning, pragmatics, and analytic method"
+        "title": "Common sense, empirical evidence, and folk metaethics"
       },
       {
-        "title": "Culture, concepts, and thin normativity"
-      },
-      {
-        "title": "Authority, consequences, and closing burdens"
+        "title": "Normative authority, motivation, and practical significance"
       }
     ]
   },
@@ -3367,11 +3361,11 @@ export const debateSummaries = [
     "number": "76",
     "title": "William Lane Craig vs Graham Oppy: Does Math Point to God?",
     "label": "Mathematics and theism",
-    "date": "2026-06-18",
+    "date": "2026-08-28",
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8WE1y00bwCU",
     "motion": "Does the surprising applicability of mathematics to the physical world support theism better than naturalism?",
-    "summary": "Craig argues mathematical applicability cries out for a theistic explanation; Oppy challenges the surprise premise and offers a naturalistic necessity account.",
+    "summary": "Craig argues that mathematics’ predictive applicability favors intentional divine ordering; Oppy challenges the datum and offers naturalistic necessity, structural, and selection-based alternatives.",
     "sides": {
       "pro": {
         "name": "Theistic mathematical explanation",
@@ -3385,30 +3379,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 83,
-      "con": 87
+      "pro": 81,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Wigner's puzzle"
+        "title": "Unexpectedness and the Development of Mathematics"
       },
       {
-        "title": "Mathematical practice"
+        "title": "Truth, Approximation, and Physical Structure"
       },
       {
-        "title": "Applicability and laws"
+        "title": "Instantiation and Nonphysical Mathematical Resources"
       },
       {
-        "title": "Theistic explanation"
+        "title": "Failed Applications and Selection Effects"
       },
       {
-        "title": "Success and selection"
+        "title": "Naturalistic Necessity and Modal Contingency"
       },
       {
-        "title": "Naturalistic necessity"
-      },
-      {
-        "title": "Brute contingency"
+        "title": "Divine Freedom and Explanatory Depth"
       }
     ]
   },
@@ -4090,11 +4081,11 @@ export const debateSummaries = [
     "number": "92",
     "title": "William Lane Craig vs Alex Malpass: Did the Universe Begin to Exist?",
     "label": "Kalam beginning and temporal infinity",
-    "date": "2026-06-25",
+    "date": "2026-08-28",
     "duration": "2 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uWo9qU2dhpQ",
     "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
-    "summary": "Craig defends the Kalam's second premise through actual-infinity and successive-addition arguments; Malpass presses future-symmetry, tense, and quantifier objections.",
+    "summary": "Craig defended actual-infinity, temporal-asymmetry, and successive-addition arguments; Malpass more effectively challenged their modal warrant, tense symmetry, quantification, and paradox-based support.",
     "sides": {
       "pro": {
         "name": "Kalam beginning case",
@@ -4108,27 +4099,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 84
+      "pro": 79,
+      "con": 90
     },
     "sections": [
       {
-        "title": "Actual Infinite"
+        "title": "Do actual-infinity scenarios establish metaphysical impossibility?"
       },
       {
-        "title": "Future Symmetry"
+        "title": "Can the past and future be treated asymmetrically?"
       },
       {
-        "title": "Successive Addition"
+        "title": "Can successive addition yield or traverse an infinite series?"
       },
       {
-        "title": "Every And All"
+        "title": "Does the every-versus-all distinction resolve the counting dispute?"
       },
       {
-        "title": "Countdown And PSR"
-      },
-      {
-        "title": "Q and A Close"
+        "title": "Do countdown and causal paradoxes exclude a beginningless past?"
       }
     ]
   },
@@ -4813,11 +4801,11 @@ export const debateSummaries = [
     "number": "108",
     "title": "Keith Ward vs Michael Ruse: Mind, Consciousness, and God",
     "label": "Mind, consciousness, and God",
-    "date": "2026-07-25",
+    "date": "2026-08-28",
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=nOy29aP7wDc",
     "motion": "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
-    "summary": "Ward treats mind, religious experience, morality, and freedom as openings toward a divine mind; Ruse grants deep mystery while resisting the slide from mystery to God.",
+    "summary": "Ward presents a cumulative mind-first theism, while Ruse argues that shared mysteries and experiences remain naturally explicable and metaphysically underdetermined.",
     "sides": {
       "pro": {
         "name": "Mind-first theism",
@@ -4831,27 +4819,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
+      "pro": 80,
       "con": 82
     },
     "sections": [
       {
-        "title": "Consciousness Mystery"
+        "title": "Consciousness and the relation between mind and matter"
       },
       {
-        "title": "Idealism And Common Sense"
+        "title": "Bodiless mind, personal identity, and the divine ground"
       },
       {
-        "title": "Near Death And Soul"
+        "title": "Religious experience and evolutionary explanation"
       },
       {
-        "title": "Religious Experience"
+        "title": "Moral experience and objective obligation"
       },
       {
-        "title": "Morality And Evolution"
-      },
-      {
-        "title": "Freedom And Laws"
+        "title": "Freedom, purpose, and the interpretation of cosmic mystery"
       }
     ]
   },
@@ -6216,11 +6201,11 @@ export const debateSummaries = [
     "number": "139",
     "title": "Matthew Adelstein vs Matt Dillahunty: Should We Believe in God?",
     "label": "Theism, fine-tuning, and anthropic evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-28",
     "duration": "1 hr 54 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=vHxAw5-RXIw",
     "motion": "Should we believe in an all-knowing, all-powerful, morally perfect being?",
-    "summary": "Adelstein argues that simplicity, fine-tuning, consciousness, and anthropic evidence favor a perfect God; Dillahunty challenges the evidence threshold, divine attributes, hiddenness, and the inference from compatibility to design.",
+    "summary": "Adelstein presented a cumulative Bayesian case for theism, while Dillahunty more consistently exposed underdetermined likelihoods, divine motives, and omnimax identification.",
     "sides": {
       "pro": {
         "name": "Theistic evidential case",
@@ -6234,24 +6219,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 82
+      "pro": 81,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Bayesian Framing and Evidence"
+        "title": "Evidential Standards and Bayesian Support"
       },
       {
-        "title": "Simplicity and Maximal Attributes"
+        "title": "Theistic Prior and the Omnimax Attribute Bridge"
       },
       {
-        "title": "Fine-Tuning and Design Signals"
+        "title": "Fine-Tuning, Design, and Observer Selection"
       },
       {
-        "title": "Anthropic Evidence and Creation"
+        "title": "Consciousness, Observer Existence, and Divine Motivation"
       },
       {
-        "title": "Hiddenness, Uncertainty, and Closing Standards"
+        "title": "Divine Hiddenness and the Observed World's Fit"
       }
     ]
   },
@@ -6438,11 +6423,11 @@ export const debateSummaries = [
     "number": "144",
     "title": "Alvin Plantinga vs Daniel Dennett: Science, Religion, and Evolution",
     "label": "Evolution, naturalism, and divine design",
-    "date": "2026-07-31",
+    "date": "2026-08-28",
     "duration": "1 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=f06J2R4MwGA",
     "motion": "Are evolutionary science and theistic religion compatible, and does naturalism plus evolution undercut trust in human cognition?",
-    "summary": "Plantinga defends the compatibility of evolution and theism while challenging naturalist cognition; Dennett defends natural selection as a sufficient design explanation and a source of corrigible truth-tracking.",
+    "summary": "Plantinga establishes evolutionary compatibility with divine guidance, while Dennett separates possibility from evidence and offers a narrowly stronger naturalistic account of cognitive reliability.",
     "sides": {
       "pro": {
         "name": "Theistic compatibility",
@@ -6456,27 +6441,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 68,
-      "con": 82
+      "pro": 83,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Guided Evolution and Compatibility"
+        "title": "Evolutionary Mechanisms, Guidance, and Randomness"
       },
       {
-        "title": "Design and Biological Complexity"
+        "title": "Logical Compatibility Versus Evidential Support"
       },
       {
-        "title": "Suffering, Simplicity, and Warrant"
+        "title": "Scientific Method, Naturalism, and Theistic Warrant"
       },
       {
-        "title": "Naturalism and Scientific Method"
+        "title": "Evolutionary Selection and Cognitive Reliability"
       },
       {
-        "title": "The Evolutionary Argument Against Naturalism"
-      },
-      {
-        "title": "Truth Tracking and Mental Content"
+        "title": "Epistemic Defeaters, Scientific Correction, and Self-Defeat"
       }
     ]
   },
@@ -7205,11 +7187,11 @@ export const debateSummaries = [
     "number": "161",
     "title": "William Lane Craig vs Peter Millican: Does God Exist?",
     "label": "God and skeptical empiricism",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "2 hr 19 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9JVRy7bR7zI",
     "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
-    "summary": "Craig presents a five-part cumulative case for Christian theism; Millican challenges its priors, causal assumptions, probability claims, moral ontology, and historical evidence.",
+    "summary": "Craig presented a cumulative Christian case; Millican’s calibrated challenges stressed underdetermination, alternative explanations, evidential reliability, suffering, and sincere nonbelief.",
     "sides": {
       "pro": {
         "name": "Christian theist",
@@ -7224,26 +7206,26 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 75,
-      "con": 82
+      "con": 87
     },
     "sections": [
       {
-        "title": "Burden, priors, and religious diversity"
+        "title": "Burden, Religious Diversity, and Epistemic Method"
       },
       {
-        "title": "Causation and the beginning of the universe"
+        "title": "Cosmic Beginning, Causation, and a Personal Creator"
       },
       {
-        "title": "Actual infinity and subtraction"
+        "title": "Fine-Tuning, Design, and Alternative Explanations"
       },
       {
-        "title": "Fine-tuning and cosmic design"
+        "title": "Objective Morality and Divine Grounding"
       },
       {
-        "title": "Objective morality and divine grounding"
+        "title": "Resurrection Evidence and Religious Experience"
       },
       {
-        "title": "Resurrection, experience, and hiddenness"
+        "title": "Evil, Suffering, and Divine Hiddenness"
       }
     ]
   },
@@ -7300,11 +7282,11 @@ export const debateSummaries = [
     "number": "163",
     "title": "William Lane Craig vs Paul Draper: The Existence of God",
     "label": "God and comparative evidence",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=lK3jVNbG2-s",
     "motion": "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
-    "summary": "Craig presents five arguments for Christian theism; Draper compares how probable seven features of the world are under theism and naturalism while defending agnosticism.",
+    "summary": "Craig advances a cumulative Christian case, while Draper’s disciplined comparative-likelihood framework more effectively integrates evolution, suffering, hiddenness, and qualified replies.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -7319,27 +7301,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 68,
-      "con": 88
+      "pro": 78,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Cumulative cases and comparative likelihood"
+        "title": "Comparative probability and the cumulative burden"
       },
       {
-        "title": "Cosmic beginning and fine-tuning"
+        "title": "Cosmic origin, fine-tuning, and design"
       },
       {
-        "title": "Brains, evolution, and intelligent design"
+        "title": "Evolution, consciousness, and biological order"
       },
       {
-        "title": "Moral realism and moral fruits"
+        "title": "Morality, value, and human conduct"
       },
       {
-        "title": "Resurrection, revelation, and experience"
+        "title": "Jesus, revelation, and religious experience"
       },
       {
-        "title": "Pain, tragedy, and divine hiddenness"
+        "title": "Suffering, divine comfort, and hiddenness"
       }
     ]
   },
@@ -7348,11 +7330,11 @@ export const debateSummaries = [
     "number": "164",
     "title": "William Lane Craig vs Erik Wielenberg: God and Morality",
     "label": "Moral realism and divine authority",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xHhmuqBW6Dw",
     "motion": "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
-    "summary": "Craig defends God as the concrete paradigm of value and ultimate commander; Wielenberg argues that moral features and reasons are fundamental elements of reality requiring no divine foundation.",
+    "summary": "Craig defended divine nature and commands as morality’s foundation; Wielenberg answered with irreducible normativity, explanatory parity, and sharper replies on agency.",
     "sides": {
       "pro": {
         "name": "Theistic moral grounding",
@@ -7366,21 +7348,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 71,
-      "con": 87
+      "pro": 80,
+      "con": 84
     },
     "sections": [
       {
-        "title": "God's nature or fundamental moral facts"
+        "title": "Ultimate Ground of Moral Value"
       },
       {
-        "title": "Platonism, supervenience, and explanatory parity"
+        "title": "Constitution and Scope of Objective Duty"
       },
       {
-        "title": "Commands, wrongness, and moral awareness"
+        "title": "Metaphysical Relations and Explanatory Ultimates"
       },
       {
-        "title": "Freedom, supererogation, and moral knowledge"
+        "title": "Universality, Accountability, and the Purpose of Commands"
+      },
+      {
+        "title": "Moral Agency and Moral Knowledge"
       }
     ]
   },
