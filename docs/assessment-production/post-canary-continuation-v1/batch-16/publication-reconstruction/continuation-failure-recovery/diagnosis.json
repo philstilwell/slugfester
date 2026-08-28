@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-continuation-failure-diagnosis",
+  "status": "batch-16-publication-continuation-six-field-failures-diagnosed",
+  "diagnosedAt": "2026-08-28T14:19:35.276Z",
+  "checkpointCommit": "683ee430dba819549313b5c74e89f7069edc0328",
+  "batchNumber": 16,
+  "failedDebates": [
+    "108",
+    "164"
+  ],
+  "failures": [
+    {
+      "debateNumber": "108",
+      "kind": "representative-quote-text",
+      "field": "representativeQuotes.con.text",
+      "side": "con",
+      "sourceMoveId": "con-shared-mysteries-divergent-interpretations",
+      "failure": "not-an-exact-source-substring",
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "debateNumber": "164",
+      "kind": "critique",
+      "field": "moveProse.pro-abstract-ontology-objection.critique",
+      "moveId": "pro-abstract-ontology-objection",
+      "defects": [
+        "word-count"
+      ],
+      "observedWords": 132,
+      "observedCharacters": 1051,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "debateNumber": "164",
+      "kind": "critique",
+      "field": "moveProse.con-irreducible-intrinsic-value.critique",
+      "moveId": "con-irreducible-intrinsic-value",
+      "defects": [
+        "word-count"
+      ],
+      "observedWords": 131,
+      "observedCharacters": 1031,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "debateNumber": "164",
+      "kind": "critique",
+      "field": "moveProse.con-explanatory-parity.critique",
+      "moveId": "con-explanatory-parity",
+      "defects": [
+        "word-count"
+      ],
+      "observedWords": 133,
+      "observedCharacters": 1083,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "debateNumber": "164",
+      "kind": "critique",
+      "field": "moveProse.con-mental-causation-under-closure.critique",
+      "moveId": "con-mental-causation-under-closure",
+      "defects": [
+        "word-count"
+      ],
+      "observedWords": 137,
+      "observedCharacters": 1072,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "debateNumber": "164",
+      "kind": "critique",
+      "field": "moveProse.con-supererogation-permission.critique",
+      "moveId": "con-supererogation-permission",
+      "defects": [
+        "word-count"
+      ],
+      "observedWords": 131,
+      "observedCharacters": 1080,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    }
+  ],
+  "unattemptedContextIndexes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "totals": {
+    "failedDebates": 2,
+    "invalidFields": 6,
+    "invalidCritiques": 5,
+    "invalidQuoteTexts": 1,
+    "otherFieldsDeterministicallyValid": true
+  },
+  "diagnosisMethod": {
+    "everyCritiqueContractChecked": true,
+    "bothQuoteContractsChecked": true,
+    "nonTargetFieldsReplayedWithInMemoryDiagnosticSubstitution": true,
+    "diagnosticSubstitutionPersisted": false,
+    "originalOutputsAltered": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/model-execution-continuation.json": "858fbcfcc16fb3e4a6860f8cb76465ddaeec017375d20a15d6834a8fb358a03a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-analysis.json": "2382aad1c51beb851ea2eff86f6fc9e7fd5ed119abd27748ed84a5b06a44f0a3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-108.json": "825997f57d4d01e9bebb6137e0c843cc7823e34044bfa240ec7ec24096900831",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-108.json": "98844e9152dcee4aa0358e093ababe5abedfc92f56b1a0a33dab9cab0bfd6141",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-108.json": "3651d869dbe55f046a8532a01fdd94c5d26717bf461d70f869d70ec4451a5606",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-108.json": "6e2c11e445bfbc44989689ab13335f301698f470e4006440ac5d04ef9eae4ea0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json": "cb75352df2fe389f0dcd566169989c08adb0394b27f1a7c9dfb52bfa5f59fb3b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-164.json": "1ccadbbb500c16a25b67ec1a3142521a45481887158e81699a9c0308081105bc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-164.json": "407c75400d720ac27c5a46ed9db0f4626b9654fa197ca497ced14f67211c2096",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-164.json": "d6cfb221971aa404c8f6c5c43194bd504e781a96f764ad015fa27bdaf23b1ecd"
+  },
+  "authorization": {
+    "recoveryLevel1Preparation": true,
+    "minimumFreshFieldDisjointShards": true,
+    "attemptsPerShard": 1,
+    "retries": false,
+    "continueUnattemptedContextsAfterRecovery": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-six-fresh-one-field-batch-16-publication-continuation-recovery-level-1-shards"
+}
