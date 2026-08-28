@@ -990,11 +990,11 @@ export const debateSummaries = [
     "number": "23",
     "title": "Alex O'Connor vs Craig Biddle: Is Morality Objective?",
     "label": "Objectivist morality and emotivism",
-    "date": "2026-05-30",
+    "date": "2026-08-28",
     "duration": "1 hr 33 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=A4JGJRmldQE",
     "motion": "Is morality objectively grounded in the factual requirements of human life, or are moral claims expressions of emotion without truth value?",
-    "summary": "Biddle grounds objective morality in life-serving values and rational egoism; O'Connor argues moral language expresses emotion rather than objective truth.",
+    "summary": "Biddle grounds objective morality in life and flourishing; O'Connor argues that conditional valuation cannot establish objective duties, especially toward other people and animals.",
     "sides": {
       "pro": {
         "name": "Objectivist morality",
@@ -1008,27 +1008,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 84
+      "pro": 82,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Emotivism and life"
+        "title": "Moral Meaning, Emotion, and Objective Reference"
       },
       {
-        "title": "Thought experiments"
+        "title": "Life, Choice, and the Foundation of Value"
       },
       {
-        "title": "Animals and life reverence"
+        "title": "From Life Facts to Oughts and Flourishing"
       },
       {
-        "title": "Rights and psychopaths"
+        "title": "Rational Egoism, Rights, and Moral Agency"
       },
       {
-        "title": "Emotion and rationality"
-      },
-      {
-        "title": "Q and A pressure"
+        "title": "Animals, Harm, and Practical Boundaries"
       }
     ]
   },
@@ -1708,11 +1705,11 @@ export const debateSummaries = [
     "number": "39",
     "title": "Derek Lambert vs Michael Jones: Atheist and Christian Discussion",
     "label": "Christian faith and skeptical inquiry",
-    "date": "2026-05-31",
+    "date": "2026-08-28",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=SEZu7Ej2SzU",
     "motion": "Can Christian belief be rationally sustained amid skeptical challenges about faith, hell, resurrection evidence, biblical reliability, religious experience, the Exodus, and parallels with other ancient traditions?",
-    "summary": "Jones defends a cumulative, flexible Christian account; Lambert presses skeptical challenges from deconversion, hiddenness, testimony, textual complexity, archaeology, and comparative religion.",
+    "summary": "Jones defended Christianity through cumulative evidence and qualified theology; Lambert pressed disclosure, comparative testimony, scriptural development, sincere nonbelief, and historical insufficiency.",
     "sides": {
       "pro": {
         "name": "Believer",
@@ -1726,27 +1723,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 82
+      "pro": 79,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Hell, hiddenness, and deconversion"
+        "title": "Evidential Faith, Divine Hiddenness, and Adequate Disclosure"
       },
       {
-        "title": "Faith and evidence"
+        "title": "Hell, Sincere Nonbelief, and the Present Value of Commitment"
       },
       {
-        "title": "Early Christianity and resurrection"
+        "title": "Resurrection Testimony and Cumulative Historical Evidence"
       },
       {
-        "title": "Text, inerrancy, and spiritual gifts"
+        "title": "Biblical Reliability, Human Composition, and Literary Development"
       },
       {
-        "title": "Exodus and biblical history"
+        "title": "Exodus Historicity, Archaeology, and Ancient Conventions"
       },
       {
-        "title": "Mythicism, parallels, and messy sources"
+        "title": "Religious Pluralism, Ancient Parallels, and Religious Experience"
       }
     ]
   },
@@ -2117,11 +2114,11 @@ export const debateSummaries = [
     "number": "48",
     "title": "Glen Scrivener vs Joe Folley: Morality, Evil, Consciousness, and Christian Narrative",
     "label": "Hiddenness, evil, and moral narrative",
-    "date": "2026-06-01",
+    "date": "2026-08-28",
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=6BzHMdTeQww",
     "motion": "Does Christian theism better account for hiddenness, evil, consciousness, morality, and moral progress than agnostic or naturalistic alternatives?",
-    "summary": "Scrivener grounds moral seriousness and progress in the crucified Christ; Folley grants theism's attractions while pressing hiddenness, evil, and criteria for development.",
+    "summary": "Folley pressed cumulative evidential and methodological objections, while Scrivener offered an integrated Christian narrative whose strongest replies remained partly underdeveloped.",
     "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
@@ -2136,27 +2133,21 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 82
+      "pro": 74,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Hiddenness and relationship"
+        "title": "Hiddenness, Consciousness, and Divine Encounter"
       },
       {
-        "title": "Divine encounter and resistance"
+        "title": "Evil, Suffering, and Divine Inscrutability"
       },
       {
-        "title": "Evil, Job, and the cross"
+        "title": "Objective Morality, Obligation, and Motivation"
       },
       {
-        "title": "Moral grounding and motivation"
-      },
-      {
-        "title": "Human rights and sacred narrative"
-      },
-      {
-        "title": "Dominion and moral development"
+        "title": "Human Dignity, Narrative, and Moral Progress"
       }
     ]
   },
@@ -3829,11 +3820,11 @@ export const debateSummaries = [
     "number": "86",
     "title": "Michael Egnor vs Matt Dillahunty: Does God Exist?",
     "label": "Thomism, hiddenness, and morality",
-    "date": "2026-06-24",
+    "date": "2026-08-28",
     "duration": "2 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yahf0t5mK5g",
     "motion": "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
-    "summary": "Egnor defends God through Thomistic, moral, and scientific inferences; Dillahunty argues the case is undefined, unfalsifiable, under-evidenced, and weakened by hiddenness.",
+    "summary": "Egnor developed cumulative Thomistic, natural-order, and moral arguments, while Dillahunty more effectively defended evidential restraint and exposed unsupported transitions to God.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -3848,27 +3839,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 73,
-      "con": 84
+      "pro": 71,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Burden of Proof, Definition, and Rational Nonbelief"
       },
       {
-        "title": "Hiddenness and Definition"
+        "title": "Thomistic Change, Causation, and Necessary Foundation"
       },
       {
-        "title": "Aquinas and Causation"
+        "title": "Natural Order and the Method of Extranatural Inference"
       },
       {
-        "title": "Science and Supernature"
+        "title": "Objective Morality and Divine Grounding"
       },
       {
-        "title": "Moral Law"
-      },
-      {
-        "title": "Atheism and Closing"
+        "title": "Divine Hiddenness, Religious Knowledge, and Evil"
       }
     ]
   },
@@ -4378,11 +4366,11 @@ export const debateSummaries = [
     "number": "98",
     "title": "William Lane Craig vs A. C. Grayling: Is Belief in God Reasonable in Light of Evil?",
     "label": "Evil and divine reasonableness",
-    "date": "2026-07-16",
+    "date": "2026-08-28",
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Vs7ArUMuQyg",
     "motion": "Is belief in God reasonable in light of tsunamis, childhood cancer, moral evil, and the apparent harshness of the natural world?",
-    "summary": "Craig argues that evil does not defeat theism; Grayling argues that observed suffering makes an interested, loving, powerful deity unreasonable to believe in.",
+    "summary": "Craig defends theistic reasonableness through freedom, epistemic restraint, and total evidence; Grayling presses suffering, better-world feasibility, ordinary moral knowledge, and secular morality.",
     "sides": {
       "pro": {
         "name": "Theistic reasonableness",
@@ -4396,27 +4384,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 77
+      "pro": 84,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Opening Burden"
+        "title": "Logical Compatibility, Freedom, and Better Possible Worlds"
       },
       {
-        "title": "Feasible Worlds"
+        "title": "Evidential Evil, Unknown Reasons, and Human Moral Knowledge"
       },
       {
-        "title": "Hidden Reasons"
+        "title": "Divine Purposes, Salvation, and Eternal Recompense"
       },
       {
-        "title": "Burden And Freedom"
+        "title": "Divine Attributes, the Actual World, and Total Evidence"
       },
       {
-        "title": "Moral Objectivity"
-      },
-      {
-        "title": "Providence And Closure"
+        "title": "Objective Morality and the Foundation of Judgments About Evil"
       }
     ]
   },
@@ -5743,11 +5728,11 @@ export const debateSummaries = [
     "number": "128",
     "title": "William Lane Craig vs Stephen Law: Does God Exist?",
     "label": "Evil God challenge and theism",
-    "date": "2026-07-30",
+    "date": "2026-08-28",
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=APfd7B3CEhI",
     "motion": "Does God exist, and do Craig's cumulative arguments overcome Law's evidential problem of evil and evil-God symmetry challenge?",
-    "summary": "Craig builds a cumulative case from cosmic origin, moral objectivity, and Jesus' resurrection; Law argues that overwhelming suffering makes a good God no more defensible than an evil God once mirrored defenses are allowed.",
+    "summary": "Craig’s cumulative creator, morality, and resurrection case met Law’s stronger suffering evidence and evil-God symmetry challenge, which remained insufficiently distinguished by providential skepticism.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5761,30 +5746,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 81
+      "pro": 76,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Cumulative Case and Evil"
+        "title": "Cosmological Cause and the Creator's Moral Character"
       },
       {
-        "title": "Evil-God Symmetry"
+        "title": "Objective Morality and Its Proposed Divine Foundation"
       },
       {
-        "title": "Moral Evil and Animal Pain"
+        "title": "Resurrection Evidence and Christian Identification"
       },
       {
-        "title": "Moral Objectivity"
+        "title": "Suffering, Feasible Worlds, and Morally Sufficient Reasons"
       },
       {
-        "title": "Resurrection Reports"
-      },
-      {
-        "title": "Creator and Moral Character"
-      },
-      {
-        "title": "Q&A Grounding and Ignorance"
+        "title": "Evil-God Symmetry and Observational Inference"
       }
     ]
   },
@@ -6958,11 +6937,11 @@ export const debateSummaries = [
     "number": "155",
     "title": "Frank Turek vs Michael Shermer: Is Morality Better Explained by God or Science?",
     "label": "Moral objectivity and divine grounding",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HKKofNwvt1k",
     "motion": "Is objective morality better explained by God as its personal ground, or by science, evolution, and human flourishing?",
-    "summary": "Turek argues that binding moral duties require God as their transcendent source; Shermer argues that evolved empathy, individual rights, and evidence about flourishing offer a public moral framework without revelation.",
+    "summary": "Turek pressed divine grounding and the is-ought gap; Shermer answered through sentient flourishing, autonomy, evolved capacities, and challenges about religious reliability.",
     "sides": {
       "pro": {
         "name": "Theistic moral grounding",
@@ -6976,27 +6955,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 72,
-      "con": 78
+      "pro": 76,
+      "con": 79
     },
     "sections": [
       {
-        "title": "What an objective morality requires"
+        "title": "The Ground of Objective Standards and Duties"
       },
       {
-        "title": "Evolution, empathy, and moral authority"
+        "title": "Evolution, Flourishing, and the Is–Ought Bridge"
       },
       {
-        "title": "Genocide and the dissenter"
+        "title": "Divine Authority, Revelation, and Moral Knowledge"
       },
       {
-        "title": "Reason, materialism, and trust"
+        "title": "Reason, Agency, and the Nature of Persons"
       },
       {
-        "title": "Scripture, slavery, and moral revision"
-      },
-      {
-        "title": "Dilemmas and closing positions"
+        "title": "Moral Progress, Rights, and Difficult Applications"
       }
     ]
   },
@@ -7141,11 +7117,11 @@ export const debateSummaries = [
     "number": "159",
     "title": "David Wood vs Aron Ra: Is Naturalism True?",
     "label": "Naturalism, evolution, and rationality",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "1 hr 52 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=dto5DQ7GBEQ",
     "motion": "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
-    "summary": "Wood argues that evolved naturalistic cognition cannot justify confidence in naturalism; Aron Ra says repeatable public evidence supports the natural world while supernatural claims remain unverified.",
+    "summary": "Wood challenges naturalism's warrant for abstract cognition; Aron Ra defends provisional, publicly corrected inquiry while requiring objective evidence for supernatural additions.",
     "sides": {
       "pro": {
         "name": "Cognitive-reliability critique",
@@ -7159,21 +7135,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 61,
-      "con": 74
+      "pro": 81,
+      "con": 79
     },
     "sections": [
       {
-        "title": "Defining naturalism and assigning the burden"
+        "title": "Naturalism's Definition and Burden of Proof"
       },
       {
-        "title": "Evolution, survival, and cognitive reliability"
+        "title": "Physical Causation, Determinism, and Rational Agency"
       },
       {
-        "title": "Experience, evidence, and supernatural alternatives"
+        "title": "Evolutionary Fitness and Truth-Tracking Cognition"
       },
       {
-        "title": "Determinism, emergence, and rational limits"
+        "title": "Objective Evidence, Experience, and Cognitive Correction"
+      },
+      {
+        "title": "Falsifiability and Evidence Beyond Nature"
       }
     ]
   },
@@ -7273,11 +7252,11 @@ export const debateSummaries = [
     "number": "162",
     "title": "William Lane Craig vs Shelly Kagan: Is God Necessary for Morality?",
     "label": "Moral grounding and ultimate accountability",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Rm2wShHJ2iA",
     "motion": "Is God necessary for objective moral values, duties, human significance, and accountability, or can a secular moral realism provide an adequate foundation?",
-    "summary": "Craig argues that morality requires God's nature, commands, and final judgment; Kagan offers secular accounts based on harm, categorical reasons, rational agreement, and present human significance.",
+    "summary": "Kagan's secular realism answers Craig's grounding challenge most effectively on finite significance and prudential conflict, while Craig presses a substantial explanatory-value objection.",
     "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
@@ -7292,27 +7271,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 67,
-      "con": 87
+      "pro": 76,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Objective morality and the harm standard"
+        "title": "Objective Value and Intrinsic Human Worth"
       },
       {
-        "title": "Categorical reasons and rational agreement"
+        "title": "Moral Duty, Categorical Reasons, and Lawgiving"
       },
       {
-        "title": "Do moral requirements require a lawgiver?"
+        "title": "Rational Agency and Naturalistic Grounding"
       },
       {
-        "title": "Human worth, rationality, and animals"
+        "title": "Finite Life, Extinction, and Moral Significance"
       },
       {
-        "title": "Determinism and moral agency"
+        "title": "Accountability, Salvation, and Prudential Conflict"
       },
       {
-        "title": "Accountability and cosmic significance"
+        "title": "Moral Knowledge, Progress, and Practical Application"
       }
     ]
   },
@@ -7988,11 +7967,11 @@ export const debateSummaries = [
     "number": "178",
     "title": "Bart Ehrman vs Michael Licona: Who Wrote the Gospels?",
     "label": "Authorship of the canonical Gospels",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "2 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xTCPigOQabY",
     "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
-    "summary": "Licona combines early church testimony with internal fit for traditional authorship; Ehrman argues that anonymous Greek works received names later and that the proposed apostolic authors lacked the required education.",
+    "summary": "Licona defended traditional Gospel authority through convergent testimony and collaboration; Ehrman prevailed by separating compatibility and reliability from identity-specific authorship evidence.",
     "sides": {
       "pro": {
         "name": "Traditional authorship",
@@ -8006,24 +7985,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 89,
-      "con": 92
+      "pro": 81,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Papias, Justin, and Irenaeus"
+        "title": "Timing, independence, and reach of external attribution"
       },
       {
-        "title": "Anonymous texts, titles, and rival names"
+        "title": "Literacy, language, and mediated composition"
       },
       {
-        "title": "Education, Greek composition, and secretaries"
+        "title": "Internal textual indicators of authorial identity"
       },
       {
-        "title": "Internal fingerprints in Mark, Luke, John, and Matthew"
+        "title": "Anonymous circulation and the formation of Gospel names"
       },
       {
-        "title": "Synoptic dependence and Matthew's authorship"
+        "title": "Source dependence, oral transmission, and apostolic proximity"
       }
     ]
   },
