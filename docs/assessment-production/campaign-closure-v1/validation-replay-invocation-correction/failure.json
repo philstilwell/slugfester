@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-validation-replay-invocation-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-validation-replay-invocation-correction",
+  "status": "preserved-low-level-validator-invocation-usage-failure",
+  "occurredAt": "2026-08-28T19:59:00Z",
+  "exitCode": 1,
+  "passedBeforeFailure": [
+    "scripts/test-assessment-production-checkpoint-v2.2-selection-recovery.mjs"
+  ],
+  "failedCommand": "node scripts/validate-assessment-production-checkpoint-v2.2-independent-judgment.mjs",
+  "message": "usage: validate-assessment-production-checkpoint-v2.2-independent-judgment.mjs JUDGMENT PREPARATION DEBATE PASS [--write]",
+  "diagnosis": "The command invoked a low-level single-judgment validator without the four frozen context arguments. This was a command-usage error, not a judgment or evidence validation failure.",
+  "correction": {
+    "recordedAt": "2026-08-28T20:00:19Z",
+    "action": "Use each cohort's high-level read-only analysis and gate scripts, which resolve and validate the frozen context paths internally.",
+    "immutableEvidenceDiverged": false,
+    "repositoryFilesWrittenByFailedCommand": 0,
+    "scorePassRerun": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

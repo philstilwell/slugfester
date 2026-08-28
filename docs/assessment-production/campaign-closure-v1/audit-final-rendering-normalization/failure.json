@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-exceptional-final-rendering-normalization-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-final-rendering-normalization",
+  "status": "preserved-final-rendering-normalization-attempt-failed-on-overflow-check-key-alias",
+  "occurredAt": "2026-08-28T19:40:00Z",
+  "authorization": "docs/assessment-production/campaign-closure-v1/audit-final-rendering-normalization/authorization.json",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "authorizedChanges": {
+    "batch10Through17ScreenshotRootsAdded": true,
+    "missingHorizontalOverflowAggregateDerivationAdded": true,
+    "frozenEvidenceChanged": false
+  },
+  "failure": {
+    "name": "AssertionError",
+    "message": "derived horizontal-overflow failure count was 20 instead of 0",
+    "firstAffectedAudit": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/rendering-audit.json",
+    "cause": "The derived reader checked only the newer noHorizontalOverflow key. Two hundred historical viewport records, including all 80 records for Batches 6–9, use horizontalOverflowAbsent=true; the other 148 use noHorizontalOverflow=true.",
+    "immutableEvidenceDiverged": false,
+    "closureArtifactsWrittenBeforeFailure": 0
+  },
+  "exhaustiveDiagnosis": {
+    "horizontalOverflowAbsentTrueEvidenceFiles": 200,
+    "noHorizontalOverflowTrueEvidenceFiles": 148,
+    "unknownOverflowCheckShapes": 0,
+    "falseOverflowChecks": 0,
+    "minimumCorrection": "Treat either frozen boolean alias as the same passing horizontal-overflow check.",
+    "otherRemainingAuditDifferences": 0
+  },
+  "recoveryBoundary": {
+    "correctionRetryApplied": false,
+    "newAuthorityRequired": "one retry limited solely to accepting the two diagnosed frozen horizontal-overflow boolean aliases",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "renderingEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

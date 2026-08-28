@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-exceptional-screenshot-metadata-recovery-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-screenshot-metadata-recovery",
+  "status": "preserved-screenshot-metadata-normalization-attempt-failed-on-separate-audit-summary-omission",
+  "occurredAt": "2026-08-28T19:37:00Z",
+  "authorization": "docs/assessment-production/campaign-closure-v1/audit-screenshot-metadata-recovery/authorization.json",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "authorizedScreenshotMetadataNormalization": {
+    "applied": true,
+    "historicalTransportMetadataScreenshots": 400,
+    "directMetadataScreenshots": 296,
+    "unknownMetadataShapes": 0
+  },
+  "newFailure": {
+    "name": "AssertionError",
+    "message": "undefined !== 0 for rendering-audit totals.horizontalOverflowFailures",
+    "firstAffectedAudit": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/rendering-audit.json",
+    "affectedFinalAudits": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/rendering-audit.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/rendering-audit.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-08/rendering-verification/rendering-audit.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-09/rendering-verification/rendering-audit.json"
+    ],
+    "cause": "These four intermediate-schema final audits record runtimeFailures but omit the aggregate horizontalOverflowFailures field. Their 80 underlying viewport evidence files each retain a passing noHorizontalOverflow check.",
+    "withinScreenshotMetadataOnlyAuthorization": false,
+    "immutableEvidenceDiverged": false,
+    "closureArtifactsWrittenBeforeFailure": 0
+  },
+  "recoveryBoundary": {
+    "additionalCorrectionApplied": false,
+    "newAuthorityRequired": "one exceptional audit-tool recovery limited solely to deriving a missing aggregate horizontal-overflow total from the complete frozen viewport checks",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "renderingEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

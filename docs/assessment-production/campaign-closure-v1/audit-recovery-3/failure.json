@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-exceptional-audit-recovery-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-audit-recovery-3",
+  "status": "preserved-exceptional-runtime-normalization-attempt-failed-on-separate-screenshot-metadata-schema",
+  "occurredAt": "2026-08-28T19:34:00Z",
+  "authorization": "docs/assessment-production/campaign-closure-v1/audit-recovery-3/authorization.json",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "authorizedRuntimeNormalization": {
+    "applied": true,
+    "historicalRuntimeCountsEvidenceFiles": 200,
+    "laterRuntimeArrayEvidenceFiles": 148,
+    "runtimeFailuresFound": 0
+  },
+  "newFailure": {
+    "name": "AssertionError",
+    "message": "JPEG width 2880 did not match an undefined direct width field",
+    "firstAffectedEvidence": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/evidence/debate-50/desktop.json",
+    "cause": "Four hundred older screenshot records store expected pixels under screenshots.*.transport.pixelWidth and pixelHeight; 296 newer records use screenshots.*.width and height. The JPEG hash and parsed 2880x2000 dimensions match the older frozen transport metadata.",
+    "withinRuntimeOnlyAuthorization": false,
+    "immutableEvidenceDiverged": false,
+    "closureArtifactsWrittenBeforeFailure": 0
+  },
+  "recoveryBoundary": {
+    "additionalCorrectionApplied": false,
+    "newAuthorityRequired": "one exceptional audit-tool recovery limited solely to normalizing the two frozen screenshot-dimension metadata shapes",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "renderingEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

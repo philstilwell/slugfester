@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-audit-recovery-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-audit-recovery-2",
+  "status": "preserved-second-audit-run-ledger-path-schema-failure",
+  "occurredAt": "not captured by command runner",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "failure": {
+    "name": "TypeError",
+    "message": "Cannot read properties of undefined (reading 'path')",
+    "cause": "Batch 1 and Batch 2 froze the future production ledger target under futureProductionLedgerPath, whereas the checkpoint used productionLedger.path and later batches used productionLedgerPath.",
+    "immutableEvidenceDiverged": false,
+    "artifactWritesBeforeFailure": 0
+  },
+  "diagnosedCorrection": {
+    "level": 2,
+    "minimumChange": "Resolve the three historical publication-lock field names without changing any frozen record, then require the resolved production ledger to be a byte-identical copy of its staged ledger.",
+    "furtherRecoveryAuthorized": false,
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

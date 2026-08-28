@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-final-read-only-diagnosis",
+  "protocolId": "assessment-production-campaign-closure-v1-final-read-only-diagnosis",
+  "status": "remaining-audit-tool-differences-fully-diagnosed-read-only-simulation-passed-after-two-projected-normalizations",
+  "recordedAt": "2026-08-28T19:38:35Z",
+  "writesToFrozenEvidence": 0,
+  "diagnosedDifferences": [
+    {
+      "kind": "missing-rendering-audit-aggregate",
+      "affectedBatches": [6, 7, 8, 9],
+      "missingField": "totals.horizontalOverflowFailures",
+      "deterministicEvidence": "All 80 associated viewport evidence files have checks.noHorizontalOverflow=true; the other 14 final audits explicitly report zero aggregate failures.",
+      "projectedCorrection": "When the aggregate field is absent, derive the zero-failure result from every associated frozen viewport check instead of treating absence as a failure count."
+    },
+    {
+      "kind": "incomplete-retained-screenshot-root-list",
+      "observedCount": 492,
+      "verifiedCount": 732,
+      "cause": "The audit checker listed output/playwright roots only for Batches 16 and 17, but Batches 10–15 also retain their required screenshots there.",
+      "deterministicEvidence": "Required passing screenshots comprise 400 documentation-tree JPEGs and 296 output/playwright JPEGs; 36 additional checkpoint remedy-v6 JPEGs preserve a partial failure.",
+      "projectedCorrection": "Inventory output/playwright/batch-10-rendering through batch-17-rendering, preserving the existing documentation-tree inventory."
+    }
+  ],
+  "completeReadOnlySimulation": {
+    "status": "passed",
+    "reassessedDebates": 174,
+    "productionLedgers": 174,
+    "renderingDebates": 174,
+    "renderingViewports": 348,
+    "requiredPassingScreenshots": 696,
+    "retainedRenderingScreenshots": 732,
+    "preservedPartialFailureScreenshots": 36,
+    "requiredAudioMoves": 99,
+    "verifiedAudioMoves": 99,
+    "paidAttempts": 101,
+    "completedPaidCalls": 100,
+    "consolidatedRecordedEstimateUsd": 3.6544575,
+    "exceptionalThirdLevelCampaignUses": 2,
+    "unauthorizedFourthLevelCampaignUses": 0,
+    "additionalDifferencesFound": 0
+  },
+  "authorityBoundary": {
+    "correctionsApplied": false,
+    "newAuthorityRequired": true,
+    "requestedScope": "one final exceptional audit-tool correction limited to the missing horizontal-overflow aggregate and the complete Batch 10–17 retained-screenshot root list",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "renderingEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

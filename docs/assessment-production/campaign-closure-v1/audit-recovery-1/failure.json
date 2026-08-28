@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-audit-recovery-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-audit-recovery-1",
+  "status": "preserved-first-audit-run-schema-assumption-failure",
+  "occurredAt": "not captured by command runner",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "failure": {
+    "name": "AssertionError",
+    "message": "checkpoint: final-ledger manifest hash changed",
+    "cause": "The closure checker initially assumed finalLedgerManifest.artifacts.finalLedger was a hash-bearing object. The frozen checkpoint and batch manifests use a path string there; the immutable ledger hash is independently locked by the calculated-score artifact and the manifest source hash chain.",
+    "immutableEvidenceDiverged": false,
+    "artifactWritesBeforeFailure": 0
+  },
+  "diagnosedCorrection": {
+    "level": 1,
+    "minimumChange": "Accept the historical string path shape while continuing to verify the ledger SHA-256 against calculatedScores.sources.finalLedgerSha256 and every frozen final-ledger source reference.",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

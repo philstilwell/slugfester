@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-validation-replay-invocation-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-validation-replay-invocation-correction-3",
+  "status": "preserved-low-level-publication-validator-invocation-usage-failure",
+  "occurredAt": "2026-08-28T20:03:00Z",
+  "exitCode": 1,
+  "passedBeforeFailure": [
+    "scripts/test-assessment-production-checkpoint-v2.2-selection-recovery.mjs",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-independent-judgments.mjs",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-dispute-adjudication.mjs",
+    "scripts/validate-assessment-production-checkpoint-v2.2-final-ledger.mjs"
+  ],
+  "failedCommand": "node scripts/validate-assessment-production-checkpoint-v2.2-publication-output.mjs",
+  "message": "usage: validate-assessment-production-checkpoint-v2.2-publication-output.mjs <output> <packet>",
+  "diagnosis": "This is a low-level single-output validator and was invoked without its frozen output and packet arguments. The campaign closure checker independently validates all final candidate hashes, candidate-to-production equality, frozen score reproduction, and staged-to-production ledger byte equality.",
+  "correction": {
+    "recordedAt": "2026-08-28T20:03:12Z",
+    "action": "Exclude the redundant low-level wrapper from the aggregate command list; retain the complete campaign publication replay in the closure checker and production validator.",
+    "immutableEvidenceDiverged": false,
+    "repositoryFilesWrittenByFailedCommand": 0,
+    "scorePassRerun": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

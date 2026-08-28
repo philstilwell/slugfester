@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-stale-adjudication-analyzer-diagnosis",
+  "protocolId": "assessment-production-campaign-closure-v1-stale-adjudication-analyzer-diagnosis",
+  "status": "preserved-historical-attempt-analyzer-failure",
+  "occurredAt": "2026-08-28T20:07:50Z",
+  "failedCommand": "node scripts/analyze-assessment-production-post-canary-batch-08-dispute-adjudication.mjs",
+  "exitCode": 1,
+  "message": "source hash mismatch during Batch 8 adjudication analysis: scripts/test-assessment-production-post-canary-batch-08-dispute-adjudication-gate.mjs",
+  "diagnosis": {
+    "recordedAt": "2026-08-28T20:08:12Z",
+    "cause": "Historical adjudication analyzers describe and replay the original attempt at that stage. Several correctly report preserved failed attempts, and the Batch 8 analyzer additionally freezes a validator source hash that changed during its authorized gate correction. They are not accepted-output validators after recovery and publication.",
+    "otherHistoricalAttemptStatusesObserved": [
+      "post-canary-batch-01-dispute-only-adjudication-gate-failed-validation",
+      "post-canary-batch-03-dispute-only-adjudication-gate-failed-validation",
+      "post-canary-batch-04-dispute-only-adjudication-gate-failed-validation"
+    ],
+    "acceptedFinalLedgerChanged": false,
+    "classification": "inapplicable-post-recovery-attempt-analyzer"
+  },
+  "closureHandling": {
+    "historicalAttemptAnalyzersExcluded": true,
+    "acceptedRecoveryBoundByFinalLedgerHashes": true,
+    "allFinalLedgersValidatedSeparately": true,
+    "completeCampaignLedgerReplayPerformedBy": "scripts/audit-assessment-production-campaign-closure.mjs",
+    "analyzerSourceChanged": false,
+    "historicalEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

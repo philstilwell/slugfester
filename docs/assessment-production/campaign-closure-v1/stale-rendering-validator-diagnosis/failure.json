@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-stale-rendering-validator-diagnosis",
+  "protocolId": "assessment-production-campaign-closure-v1-stale-rendering-validator-diagnosis",
+  "status": "preserved-post-publication-activated-source-hash-failure",
+  "occurredAt": "2026-08-28T20:04:58Z",
+  "failedCommand": "node scripts/validate-assessment-production-checkpoint-v2.2-rendering-verification-remedy-v9-evidence.mjs",
+  "exitCode": 1,
+  "message": "activated source hash mismatch: src/styles.css",
+  "diagnosis": {
+    "recordedAt": "2026-08-28T20:05:20Z",
+    "cause": "The historical standalone rendering validator requires every mutable application and validation source file to retain its checkpoint-era activation hash. Later authorized batches necessarily changed src/styles.css, src/data/debates.js, and scripts/validate-debates.mjs, so that pre-execution activation condition is no longer applicable after campaign publication.",
+    "mismatchedMutableSources": [
+      "src/styles.css",
+      "src/data/debates.js",
+      "scripts/validate-debates.mjs"
+    ],
+    "retainedEvidenceChanged": false,
+    "retainedScreenshotChanged": false,
+    "classification": "inapplicable-post-publication-activation-wrapper"
+  },
+  "closureHandling": {
+    "standaloneActivationWrapperExcluded": true,
+    "completeRenderingEvidenceReplayedBy": "scripts/audit-assessment-production-campaign-closure.mjs",
+    "passingDebates": 174,
+    "passingViewportRecords": 348,
+    "passingScreenshots": 696,
+    "screenshotHashesVerified": 696,
+    "screenshotDimensionsVerified": 696,
+    "screenshotByteLengthsVerified": 696,
+    "validatorSourceChanged": false,
+    "historicalEvidenceChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

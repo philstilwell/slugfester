@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-audit-recovery-limit-blocker",
+  "protocolId": "assessment-production-campaign-closure-v1-audit-recovery-limit-blocker",
+  "status": "preserved-third-run-rendering-schema-failure-no-third-recovery-applied",
+  "occurredAt": "not captured by command runner",
+  "command": "node scripts/audit-assessment-production-campaign-closure.mjs --write",
+  "exitCode": 1,
+  "failure": {
+    "name": "TypeError",
+    "message": "Cannot read properties of undefined (reading 'length')",
+    "location": "rendering runtime error-array verification",
+    "firstAffectedEvidence": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/evidence/debate-50/desktop.json",
+    "cause": "The checkpoint rendering evidence stores zero error counts under runtime.counts and per-phase arrays under runtime.phases.*.details. Later batches store top-level runtime arrays. The frozen evidence itself reports zero errors and remains hash-consistent.",
+    "immutableEvidenceDiverged": false,
+    "artifactWritesBeforeFailure": 0
+  },
+  "recoveryLimit": {
+    "ordinaryLevelsAuthorized": 2,
+    "ordinaryLevelsAlreadyUsed": 2,
+    "thirdRecoveryApplied": false,
+    "authorityRequired": "one exceptional third audit-tool recovery limited to normalizing the frozen checkpoint and batch rendering runtime schemas",
+    "authorityReceived": true,
+    "authorizationRecord": "docs/assessment-production/campaign-closure-v1/audit-recovery-3/authorization.json"
+  },
+  "proposedMinimumCorrection": {
+    "description": "Read zero runtime failures from either the historical runtime.counts shape or the later top-level runtime arrays, without changing any rendering evidence.",
+    "scorePassRerun": false,
+    "judgmentsChanged": false,
+    "scoresChanged": false,
+    "publicationProseChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-validation-summary",
+  "protocolId": "assessment-production-campaign-closure-v1",
+  "status": "passed-applicable-post-publication-validation",
+  "validatedAt": "2026-08-28T20:11:27Z",
+  "applicableAcceptedOutputGates": {
+    "commandsPassed": 38,
+    "checkpointSelectionRecovery": 1,
+    "independentJudgmentAnalyses": 18,
+    "disputeAdjudicationAnalyses": 1,
+    "finalLedgerValidators": 18,
+    "cohortsCovered": 18,
+    "debatesCovered": 174
+  },
+  "productionAndRepository": {
+    "completeRepositorySuite": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    "productionDebateValidator": {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "debates": 195,
+      "status": "passed"
+    },
+    "generatedPageComparison": {
+      "command": "node scripts/generate-seo-pages.mjs --check",
+      "exitCode": 0,
+      "files": 380,
+      "status": "passed"
+    },
+    "transcriptCorpus": {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "debates": 195,
+      "available": 195,
+      "localHashesChecked": 195,
+      "status": "passed"
+    }
+  },
+  "closureReplay": {
+    "command": "npm run assessment:campaign:closure:check",
+    "status": "passed-after-final-manifest-regeneration",
+    "reassessments": 174,
+    "productionLedgers": 174,
+    "passingScreenshots": 696,
+    "verifiedAudioMoves": 99
+  },
+  "postPublicationWrapperDiagnoses": [
+    "stale-score-validator-diagnosis/failure.json",
+    "stale-rendering-validator-diagnosis/failure.json",
+    "stale-selection-validator-diagnosis/failure.json",
+    "stale-adjudication-analyzer-diagnosis/failure.json",
+    "stale-compatibility-validator-diagnosis/failure.json"
+  ],
+  "qualification": "Historical preparation, activation, protected-prestate, original-attempt, and diagnostic-reference wrappers are not applicable after authorized recovery and publication. Their representative failures are preserved. Accepted-output validators and the campaign closure replay validate the final immutable evidence without changing historical artifacts."
+}

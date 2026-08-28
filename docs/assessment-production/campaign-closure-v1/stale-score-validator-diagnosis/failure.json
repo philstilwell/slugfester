@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-stale-score-validator-diagnosis",
+  "protocolId": "assessment-production-campaign-closure-v1-stale-score-validator-diagnosis",
+  "status": "preserved-post-publication-diagnostic-reference-validator-failure",
+  "occurredAt": "2026-08-28T20:01:00Z",
+  "failedCommand": "node scripts/validate-assessment-production-checkpoint-v2.2-scores.mjs",
+  "exitCode": 1,
+  "message": "production-checkpoint v2.2 calculated scores differ from deterministic replay",
+  "diagnosis": {
+    "recordedAt": "2026-08-28T20:02:33Z",
+    "cause": "The historical standalone validator imports current src/data/debates.js scores as productionReferenceDiagnosticOnly inputs. That was valid before publication, but after publication those fields are the frozen final scores rather than the pre-reassessment diagnostic baseline embedded in calculated-scores.json.",
+    "calculatedScoreArtifactHashChanged": false,
+    "finalLedgerHashChanged": false,
+    "publishedMoveScoresDifferFromFrozenFinal": false,
+    "publishedSectionScoresDifferFromFrozenFinal": false,
+    "publishedOverallScoresDifferFromFrozenFinal": false,
+    "productionValidatorPassed": true,
+    "classification": "inapplicable-post-publication-diagnostic-wrapper"
+  },
+  "closureHandling": {
+    "standaloneDiagnosticWrapperExcluded": true,
+    "frozenScoreCoreReplayedBy": [
+      "scripts/validate-debates.mjs",
+      "scripts/audit-assessment-production-campaign-closure.mjs"
+    ],
+    "validatorSourceChanged": false,
+    "scorePassRerun": false,
+    "scoresChanged": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

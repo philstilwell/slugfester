@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0-assessment-production-campaign-closure-validation-replay-invocation-failure",
+  "protocolId": "assessment-production-campaign-closure-v1-validation-replay-invocation-correction-2",
+  "status": "preserved-pre-execution-guard-invoked-against-completed-campaign",
+  "occurredAt": "2026-08-28T20:00:00Z",
+  "exitCode": 1,
+  "passedBeforeFailure": [
+    "scripts/test-assessment-production-checkpoint-v2.2-selection-recovery.mjs"
+  ],
+  "failedCommand": "node scripts/test-assessment-production-checkpoint-v2.2-independent-judgment-manifest.mjs",
+  "message": "future output already exists",
+  "diagnosis": "This preparation-stage guard intentionally requires future judgment outputs to be absent. It is inapplicable after successful execution and publication; its failure confirms that the completed outputs exist, not that they are invalid.",
+  "correction": {
+    "recordedAt": "2026-08-28T20:00:56Z",
+    "action": "Exclude preparation and pre-execution guards from closure replay. Run accepted-output analysis, final-ledger, calculated-score, publication, rendering, compatibility, production, generated-page, transcript, and repository validators.",
+    "immutableEvidenceDiverged": false,
+    "repositoryFilesWrittenByFailedCommand": 0,
+    "scorePassRerun": false,
+    "paidCalls": 0,
+    "directIncrementalCostUsd": 0
+  }
+}
