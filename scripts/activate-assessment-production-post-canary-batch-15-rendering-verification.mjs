@@ -51,7 +51,7 @@ const activation = {
   authorizedAt,
   activationCommit,
   productionCanary: false,
-  batchNumber: 14,
+  batchNumber: 15,
   stagingOnly: true,
   preparation: { path: PREPARATION, sha256: preparationSha256 },
   executionNavigation: { algorithm: "sha256-utf8-canonical-json",
@@ -89,5 +89,4 @@ console.log(JSON.stringify({ status: activation.status, debates: 10,
   attemptsPerViewport: 1, retriesMaximum: 0,
   directIncrementalCostUsd: 0,
   nextAuthorizedAction: activation.nextAuthorizedAction }, null, 2));
-
 

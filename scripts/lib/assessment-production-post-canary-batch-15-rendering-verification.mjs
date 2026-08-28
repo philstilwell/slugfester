@@ -84,7 +84,7 @@ export function buildPostCanaryBatch15RenderingPacket({
     protocolId: POST_CANARY_BATCH_15_RENDERING_PROTOCOL_ID,
     status: "frozen-batch-15-rendering-verification-packet",
     productionCanary: false,
-    batchNumber: 14,
+    batchNumber: 15,
     stagingOnly: true,
     debateNumber: auditRow.debateNumber,
     debateId: auditRow.debateId,
@@ -172,7 +172,7 @@ export function validatePostCanaryBatch15RenderingPacket(packet) {
     "1.0-assessment-production-post-canary-batch-15-rendering-packet" &&
     packet.protocolId === POST_CANARY_BATCH_15_RENDERING_PROTOCOL_ID &&
     packet.status === "frozen-batch-15-rendering-verification-packet" &&
-    packet.batchNumber === 14 && packet.productionCanary === false &&
+    packet.batchNumber === 15 && packet.productionCanary === false &&
     packet.stagingOnly === true &&
     POST_CANARY_BATCH_15_RENDERING_ORDER.includes(packet.debateNumber) &&
     packet.preview.url.startsWith(`http://127.0.0.1:${POST_CANARY_BATCH_15_RENDERING_PORT}/`) &&
@@ -230,5 +230,4 @@ export function validatePostCanaryBatch15RenderingEvidence({ packet, viewportNam
   `${packet.debateNumber}/${viewportName}: invalid rendering evidence`);
   return evidence;
 }
-
 

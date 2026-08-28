@@ -91,7 +91,7 @@ const compatibility = {
   status: "batch-15-production-compatibility-boundary-recorded",
   analyzedAt: frozenAt,
   productionCanary: false,
-  batchNumber: 14,
+  batchNumber: 15,
   stagingOnly: true,
   findings: [{
     id: "batch-15-site-ledger-adapter-and-validator-route",
@@ -166,7 +166,7 @@ const manifest = {
   frozenAt,
   checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
   productionCanary: false,
-  batchNumber: 14,
+  batchNumber: 15,
   stagingOnly: true,
   userAuthorization: {
     standingAuthorization: POST_CANARY_BATCH_15_STANDING_AUTHORIZATION,
@@ -256,5 +256,4 @@ console.log(JSON.stringify({ status: manifest.status, debates: 10,
   attemptsPerViewport: 1, retriesMaximum: 0,
   directIncrementalCostUsd: 0,
   nextAuthorizedAction: manifest.nextAuthorizedAction }, null, 2));
-
 

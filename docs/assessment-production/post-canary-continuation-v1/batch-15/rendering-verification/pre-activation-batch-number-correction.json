@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-pre-activation-correction",
+  "status": "corrected-before-rendering-activation",
+  "correctedAt": "2026-08-28T02:42:34Z",
+  "batchNumber": 15,
+  "diagnosis": "The Batch 14 precedent clone retained numeric batchNumber values of 14 even though all textual identifiers and paths were Batch 15.",
+  "correction": {
+    "method": "exact-deterministic-field-correction",
+    "oldValue": 14,
+    "newValue": 15,
+    "controllerAndFrozenArtifactFieldsCorrected": 18,
+    "packetHashesReanchored": 10,
+    "sourceHashesReanchored": 5
+  },
+  "executionBoundary": {
+    "renderingActivationWritten": false,
+    "browserControllerStarted": false,
+    "renderingViewportAttempted": false,
+    "viewportRetryConsumed": false,
+    "scorePassRerun": false,
+    "calculatedScoresChanged": false,
+    "acceptedPublicationFieldsChanged": false,
+    "nextBatchSelected": false
+  },
+  "directIncrementalCostUsd": 0
+}
+
