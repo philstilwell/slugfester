@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-rendering-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-rendering-verification",
+  "status": "frozen-batch-16-rendering-verification-packet",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "debateNumber": "41",
+  "debateId": "huemer-bush-objective-moral-facts-2024",
+  "candidate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/final-candidates/debate-41.json",
+    "sha256": "cc3b88f1d658006bd7f0f10032578606c586db47f04f1b156338257ed126f1aa",
+    "scores": {
+      "pro": 85,
+      "con": 83
+    },
+    "sections": 5,
+    "moves": 20,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/provenance/debate-41.json",
+    "sha256": "1098cc6a9bc254c2d98a938121ba63e5bf15d80a1e7aebcde061d178cf6a9195",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preview": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/rendering-preview/index.html",
+    "sha256": "987612770996d238425c25f0e34b1be92f07aa6343bc4aca26fe420571d792e1",
+    "url": "http://127.0.0.1:4212/docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/rendering-preview/index.html?debate=41",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBanner": "Publication staging preview: validated post-canary Batch 16 candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "prohibitedText": [
+      "unassailable"
+    ],
+    "nativeElement": "details",
+    "defaultCollapsed": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-16/rendering-verification/evidence/debate-41/desktop.json",
+        "collapsedScreenshot": "output/playwright/batch-16-rendering/debate-41/desktop-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-16-rendering/debate-41/desktop-open.jpg"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/post-canary-continuation-v1/batch-16/rendering-verification/evidence/debate-41/mobile.json",
+        "collapsedScreenshot": "output/playwright/batch-16-rendering/debate-41/mobile-collapsed.jpg",
+        "openScreenshot": "output/playwright/batch-16-rendering/debate-41/mobile-open.jpg"
+      }
+    }
+  },
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "runnerPolicy": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch16-rendering",
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "screenshotFormat": "jpeg",
+    "screenshotQuality": 85,
+    "screenshotFullPage": false,
+    "interactionOrder": [
+      "observe-default-collapsed-state",
+      "capture-collapsed-screenshot",
+      "open-native-summary-with-pointer",
+      "capture-open-screenshot",
+      "close-with-pointer",
+      "focus-native-summary",
+      "open-with-enter",
+      "close-with-space"
+    ]
+  },
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "nextBatchSelectionWritable": false
+  }
+}
