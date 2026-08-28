@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-final-seven-level-2-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-final-seven-level-2-one-field-recovery",
+  "status": "frozen-one-field-batch-16-publication-final-seven-recovery-level-2-authorized",
+  "frozenAt": "2026-08-28T14:53:22Z",
+  "checkpointCommit": "d3b28c24d70f2bedddeeb0562e2b24d0ca5089ee",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "recoveryLevel": 2,
+  "recoveryLevelsMaximum": 2,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-92-pro-eternal-countdown-earlier-completion-critique-recovery-2",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "moveId": "pro-eternal-countdown-earlier-completion",
+      "writableField": "moveProse.pro-eternal-countdown-earlier-completion.critique",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/packets/context-0.json",
+      "packetSha256": "3a4c5448cc15aae73993642e8412bed59f52e771f947ec73046503788b52f523",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/schemas/context-0.schema.json",
+      "schemaSha256": "bbb7a19da94852b2f4995161cd460159d16d43432acca6feb52c4aeaa9669d23",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/outputs/context-0.json"
+    }
+  ],
+  "levelOneAcceptedContexts": 7,
+  "executionPolicy": {
+    "contexts": 1,
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsPerPacket": 1,
+    "preserveRawResultBeforeValidation": true,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/diagnosis.json": "673efd1a5f40d4bf23e3e3df3648d41e5c9692ee075a50fbdd974b88f79a2007",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json": "5cd55aa6bb13b9167576ec328e7af4d3fbc6d50371be844bd296bb6d4bc14f60",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-92.json": "a2c2e66b1eb80a8913170f538534ca92ebe5b9b5adb3c893d86487248868675a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-92.json": "fa765dbd598cf74c10001ca734ba76a6cc873be15d623fd0aa95a93efb09a928",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-92.json": "3a7360297cd3401cd4e3bd02dc9db21af2c344a811d9b05337d712386214707b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/execution-activation.json": "e8bfb3f8d10678a44bfba85db045da380224f65b24a7d5f3f7356040f66e091d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/model-execution.json": "05d6d8b5725cda0ef923570ef4715ec2ff4d020a4aa9ec2d87687fe90c6b9aee",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/analysis.json": "9265a30d5e73a1eb48f8d1633a79a14ee74d6d091b20c47534478d405ca2f58d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-0.json": "0ad2d3a250329a0ab3469227b5b554ce64a30b5dff2193350149c3670b7b47df",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-1.json": "bf69d8b5c5b85a9bebc35145a6cb8e56525cb9a44350d4ce60249a575cee5759",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-2.json": "f6adcddbf2739a2f71c178ee6222237a0b7f0d314a6be3cd834603192e022549",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-3.json": "574600d483f217e8f86d8a97f07d8e59af42a607eb5d77b009c5f21d28e341cc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-4.json": "a3f4571f03035e56fb9621ca84aa1f6f46a754d592e6b8f8dfa5bfe2cdb39d0f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-6.json": "ff4e670b93c42f5c1d528be3dba9dac1da8f0b394012fef2d5465d3f70f1d512",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-7.json": "273c3e743c7d261d3c8a3a6494f55cc73117237a2d45cc34617d58391235a413",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-8.json": "7da3cd13a766d24c2bf34a5ced00e7144f98829540e50e3bf2af7d6cc4ba852b",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/manual.md": "fde00976e1db034d1c3fa1a557c8eeec11661b273ad740a52fb28ba4881619f4",
+    "scripts/assessment-production-post-canary-batch-16-publication-final-seven-level-2-recovery.mjs": "ec97fc25306d98afa2a613cefee070c7efe64b4d1b600f37abe929f6b89a5dcb",
+    "scripts/lib/assessment-production-post-canary-batch-16-publication-validation.mjs": "39cd35fc82d3b6c9f501d2b8cb703c2b5e3b3c9005bbf0698274958fbffac0bd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/packets/context-0.json": "3a4c5448cc15aae73993642e8412bed59f52e771f947ec73046503788b52f523",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/schemas/context-0.schema.json": "bbb7a19da94852b2f4995161cd460159d16d43432acca6feb52c4aeaa9669d23"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/outputs/context-0.json"
+  ],
+  "authorization": {
+    "preparation": true,
+    "activation": true,
+    "modelExecution": true,
+    "deterministicMergeAndValidation": true,
+    "retries": false,
+    "furtherOrdinaryRecoveryLevel": false,
+    "exceptionalThirdLevelForAtomicCompanionLossOnly": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-fresh-one-field-batch-16-publication-final-seven-recovery-level-2-context-once",
+  "activatedAt": "2026-08-28T14:53:33Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-2/execution-preparation-manifest.json",
+    "sha256": "6825fe2e61bd6b95821893afc0398c578355cc4e7659591359ab87a9fba9ce43"
+  }
+}
