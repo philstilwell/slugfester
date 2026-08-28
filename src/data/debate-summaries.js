@@ -1922,11 +1922,11 @@ export const debateSummaries = [
     "number": "44",
     "title": "Alex O'Connor vs Craig Biddle: Free Will - Do You Have It?",
     "label": "Free will and agent causation",
-    "date": "2026-06-01",
+    "date": "2026-08-28",
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=G17N2CgrXXU",
     "motion": "Do human beings have free will, either as ultimate control over action or as a volitional capacity to focus and use reason?",
-    "summary": "Biddle defends free will as the choice to focus and use reason; O'Connor argues that choices are governed by causes, desires, or randomness outside ultimate control.",
+    "summary": "Biddle locates freedom in regulating rational attention; O'Connor argues that introspection, desire, and agent causation never escape determination or randomness.",
     "sides": {
       "pro": {
         "name": "Free-will defender",
@@ -1940,27 +1940,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 84
+      "pro": 77,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Opening dilemma and focus"
+        "title": "The Scope and Locus of the Claimed Freedom"
       },
       {
-        "title": "Introspection and method"
+        "title": "Causation, Randomness, and Agent Authorship"
       },
       {
-        "title": "Desire and reason"
+        "title": "Introspection, Experience, and Evidence of Control"
       },
       {
-        "title": "Agent causation"
+        "title": "Reason, Desire, and the Mechanics of Deliberation"
       },
       {
-        "title": "Could have done otherwise"
-      },
-      {
-        "title": "Q&A stress tests"
+        "title": "Consciousness, Constraints, and Applied Choice"
       }
     ]
   },
@@ -2731,11 +2728,11 @@ export const debateSummaries = [
     "number": "62",
     "title": "Jonathan Pageau vs Joe Folley: Genesis, Jesus, Science, and Faith",
     "label": "Patterns, Logos, and secular meaning",
-    "date": "2026-06-06",
+    "date": "2026-08-28",
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fJ05WWnyj2g",
     "motion": "Do patterns, symbolism, Genesis, resurrection, worship, and social meaning point toward God as Logos, or can they be explained by human cognition, pragmatic abstraction, and bottom-up social life?",
-    "summary": "Pageau argues patterns, Genesis, resurrection, and worship disclose Logos; Folley grants their pragmatic and literary value while keeping ontology bottom-up and evidence-sensitive.",
+    "summary": "Pageau connected purposive patterns, scripture, resurrection, and worship to Logos; Folley consistently separated their usefulness and structural reality from supernatural conclusions.",
     "sides": {
       "pro": {
         "name": "Symbolic theism",
@@ -2749,27 +2746,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 83
+      "pro": 76,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Patterns and ontological levels"
+        "title": "Patterns, Higher-Order Wholes, and the Inference to Logos"
       },
       {
-        "title": "Genesis, analogy, and science"
+        "title": "Perception, Abstraction, and the Scope of Scientific Explanation"
       },
       {
-        "title": "Resurrection and historical weight"
+        "title": "Genesis, Symbolic Truth, and Historical Reference"
       },
       {
-        "title": "Perceiver and world"
+        "title": "Resurrection, Personal Identity, and Pattern Persistence"
       },
       {
-        "title": "Minds, gods, and universals"
-      },
-      {
-        "title": "Worship and shared purpose"
+        "title": "Worship, Value Hierarchies, and Social Meaning"
       }
     ]
   },
@@ -3408,11 +3402,11 @@ export const debateSummaries = [
     "number": "77",
     "title": "Ed Feser vs Graham Oppy: Are There Any Good Arguments for God?",
     "label": "Argument standards and Aristotelian proof",
-    "date": "2026-06-18",
+    "date": "2026-08-28",
     "duration": "2 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=m-80lQOlNOs",
     "motion": "Are there good arguments for God, and does Feser's Aristotelian proof survive Oppy's theory-comparison and persistence objections?",
-    "summary": "Feser defends formal theistic proofs as summaries of deeper metaphysical reasoning; Oppy argues that theory comparison, not standalone arguments, carries the real epistemic burden.",
+    "summary": "Feser defends audience-sensitive argument, contemporaneous actualization, and a divine terminus; Oppy emphasizes global theory comparison, default persistence, and a physical explanatory bottom.",
     "sides": {
       "pro": {
         "name": "Aristotelian theist",
@@ -3426,27 +3420,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 86
+      "pro": 86,
+      "con": 81
     },
     "sections": [
       {
-        "title": "What Arguments Do"
+        "title": "Argument Standards, Audiences, and Rational Force"
       },
       {
-        "title": "Theory Comparison"
+        "title": "Particular Arguments and Global Theory Comparison"
       },
       {
-        "title": "Proofs as Summaries"
+        "title": "Actualization, Persistence, and Noninterference"
       },
       {
-        "title": "Real Debate"
+        "title": "Microstructure and Contemporaneous Explanatory Dependence"
       },
       {
-        "title": "Potential and Actuality"
-      },
-      {
-        "title": "Bottom Level"
+        "title": "Ultimate Physical Level or Purely Actual Terminus"
       }
     ]
   },
@@ -7643,11 +7634,11 @@ export const debateSummaries = [
     "number": "171",
     "title": "Christopher Hitchens vs Tony Blair: Is Religion a Force for Good in the World?",
     "label": "Religion's social benefits and harms",
-    "date": "2026-08-01",
+    "date": "2026-08-28",
     "duration": "1 hr 45 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=nbEyhU-L3iE",
     "motion": "On balance, is religion a force for good in the world?",
-    "summary": "Blair argues that faith inspires extraordinary service, reconciliation, and moral obligation despite abuse; Hitchens argues that those goods are available without religion while supernatural authority adds distinctive harms.",
+    "summary": "Blair emphasized faith-inspired service, reconciliation, pluralism, and purpose; Hitchens countered with doctrinal harm, sacred conflict, secular alternatives, and stricter causal comparison.",
     "sides": {
       "pro": {
         "name": "Religion is a force for good",
@@ -7661,21 +7652,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 92
+      "pro": 83,
+      "con": 85
     },
     "sections": [
       {
-        "title": "How to judge religion's net effect"
+        "title": "Net Balance, Causal Attribution, and Secular Alternatives"
       },
       {
-        "title": "Charity, poverty, and public health"
+        "title": "Service, Welfare, and Human Solidarity"
       },
       {
-        "title": "Conflict, identity, and peacemaking"
+        "title": "Conflict, Peace, and Reconciliation"
       },
       {
-        "title": "Pluralism, education, and moral motivation"
+        "title": "Sacred Authority, Freedom, and Pluralism"
+      },
+      {
+        "title": "Scripture, Reason, and Correctability"
+      },
+      {
+        "title": "Meaning, Transcendence, and Moral Agency"
       }
     ]
   },

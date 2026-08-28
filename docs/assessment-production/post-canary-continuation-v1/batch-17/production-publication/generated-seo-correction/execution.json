@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-generated-seo-correction-execution",
+  "protocolId": "assessment-production-post-canary-batch-17-generated-seo-derivative-correction",
+  "status": "passed-complete-batch-17-transaction-ready-for-atomic-commit",
+  "startedAt": "2026-08-28T18:11:09.148Z",
+  "completedAt": "2026-08-28T18:11:14.742Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-publication/generated-seo-correction/execution-activation.json",
+    "sha256": "db8918e1abb35d50edb8ecee24f571c9209b2063368c51d33e24c7201cfb9690",
+    "bytes": 5733
+  },
+  "isolatedGeneration": {
+    "runs": 1,
+    "outputs": 380,
+    "pathSetSha256": "7fd647637250021c4c4a9e53907777144e5eb4531a3a5bd4ec9eb158f96ac27b",
+    "inventorySha256": "d0523f5f3318c4a9e4e4328e9f9cba7d71c0382677ee34be9a0f4610c9eda678",
+    "temporaryFilesCleaned": true
+  },
+  "writes": {
+    "exactGeneratedFiles": [
+      {
+        "path": "debate/feser-oppy-arguments-for-god-2020/index.html",
+        "sha256": "433233ac9ba6c9945f671d8d29306f1403714a6a4d74d1f2175656895fd4e167",
+        "bytes": 7044
+      },
+      {
+        "path": "debate/hitchens-blair-religion-force-good-2010/index.html",
+        "sha256": "e00ac4a62fe795211b5eb033a0d65b7922bd50312c478e602ec6355864860653",
+        "bytes": 7145
+      },
+      {
+        "path": "debate/oconnor-biddle-free-will-2025/index.html",
+        "sha256": "4a7f8726d5735c889e657e3fb5025e0f7222502063aa908c0570e667db8e7189",
+        "bytes": 6976
+      },
+      {
+        "path": "debate/pageau-folley-logos-meaning-resurrection-2026/index.html",
+        "sha256": "44e4dded836458a262496013179fceb6c82e754662858cfc9a81933c2a659153",
+        "bytes": 7191
+      },
+      {
+        "path": "sitemap.xml",
+        "sha256": "a9fdd17fa87b0371893db16b3d66de1e972f296d7e1c5d4ce867b6533f68455a",
+        "bytes": 47971
+      },
+      {
+        "path": "src/data/debate-summaries.js",
+        "sha256": "1a9cff2a0d77303c7def5b2c0df65499bc09482d1eda9c2636642f5b5a5b5686",
+        "bytes": 294713
+      }
+    ],
+    "changedFiles": 6,
+    "unchangedGeneratedFiles": 374,
+    "otherGeneratedOutputsPreserved": true
+  },
+  "validation": {
+    "command": "npm run check",
+    "runs": 1,
+    "startedAt": "2026-08-28T18:11:09.415Z",
+    "completedAt": "2026-08-28T18:11:14.739Z",
+    "exitCode": 0,
+    "stdoutSha256": "537e26fdcf032194405aa228f02112cb7a8e8259f6dddf4707a0a49766b41716",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "generatedSeoFilesValidated": 380,
+    "completeRepositoryRegressionPassed": true
+  },
+  "productionTransaction": {
+    "debatesPublished": 4,
+    "productionLedgerFiles": 4,
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "0dc21f0333ed1fe4a5972e076aa8e703ed85a05f5a8fe9a8dec9b3c27fb8146e",
+      "bytes": 7686660
+    },
+    "productionLedgers": [
+      {
+        "path": "docs/assessment-ledgers/feser-oppy-arguments-for-god-2020.json",
+        "sha256": "729ac78bc62930a2ee2b7484e2c00abb3efb3b75b4c0eb0960a034df36975c7f",
+        "bytes": 105746
+      },
+      {
+        "path": "docs/assessment-ledgers/oconnor-biddle-free-will-2025.json",
+        "sha256": "fb36aac82682b7209ea84e5784a38dc4180d66249fcd27c28e71150ded5d6655",
+        "bytes": 115245
+      },
+      {
+        "path": "docs/assessment-ledgers/hitchens-blair-religion-force-good-2010.json",
+        "sha256": "d45ff95f9ad59ed8d8764ebd893c4af18f819b5fb91358509c4beaa1337404d2",
+        "bytes": 130216
+      },
+      {
+        "path": "docs/assessment-ledgers/pageau-folley-logos-meaning-resurrection-2026.json",
+        "sha256": "4d799df76b438f99722ef64fd4c54a9e071056e10759e3548f619401b18d45cf",
+        "bytes": 117525
+      }
+    ],
+    "referencesByteIdentical": true,
+    "validatorByteIdentical": true,
+    "generatorByteIdentical": true
+  },
+  "totals": {
+    "isolatedGeneratorRuns": 1,
+    "repositoryValidationRuns": 1,
+    "generatedDerivativeWrites": 6,
+    "unchangedGeneratedOutputs": 374,
+    "productionMutationReruns": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbacks": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "atomic-commit-and-push-complete-validated-batch-17-production-transaction-then-stop-before-batch-18-selection"
+}
