@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-final-seven-level-1-recovery-preparation",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-final-seven-level-1-one-field-recovery",
+  "status": "frozen-nine-one-field-batch-16-publication-final-seven-recovery-level-1-prepared-not-activated",
+  "frozenAt": "2026-08-28T14:47:23Z",
+  "checkpointCommit": "348296d7f84befb69706380c105d262c51b0877f",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-92-representative-quote-context-0-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "representative-quote-context",
+      "field": "representativeQuotes.pro.context",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "representative-quote-context",
+        "field": "representativeQuotes.pro.context",
+        "side": "pro",
+        "sourceMoveId": "pro-actual-infinity-principal-argument",
+        "observedWords": 11,
+        "failure": "context-outside-12-55-words",
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-0.json",
+      "packetSha256": "b64a8047e4226c88627e09e59a0db1fcaadff1665595fd79e9dc8d1070c6ec4d",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-0.schema.json",
+      "schemaSha256": "bec6be771baf0afc8e102855ab480e3c908fb777111f562d0b01a3f662bbe9ed",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-0.json"
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-92-representative-quote-context-1-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "representative-quote-context",
+      "field": "representativeQuotes.con.context",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "representative-quote-context",
+        "field": "representativeQuotes.con.context",
+        "side": "con",
+        "sourceMoveId": "con-modal-strangeness-no-contradiction",
+        "observedWords": 11,
+        "failure": "context-outside-12-55-words",
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-1.json",
+      "packetSha256": "9a3ad498869c2bdcb6e09b3471005cf055f48b7a4624db877824c5b42fa55360",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-1.schema.json",
+      "schemaSha256": "6fbfc7e0d76c3ca3bd3d8d51b313195810369d4d39c3d42b79779b96739ce356",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-1.json"
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-92-critique-2-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.con-mirror-past-against-future.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.con-mirror-past-against-future.critique",
+        "moveId": "con-mirror-past-against-future",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 131,
+        "observedCharacters": 961,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-2.json",
+      "packetSha256": "2d1b768d29ff71caf28db29d29a958f394c740e12b9eb9d7a22b7860ed6be6b1",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-2.schema.json",
+      "schemaSha256": "780bed7fb3549b0ddadd91df916cb60dfc92f3858afac24dd8fefb595513a936",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-2.json"
+    },
+    {
+      "contextIndex": 3,
+      "shardId": "debate-92-critique-3-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.con-every-all-case-specific.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.con-every-all-case-specific.critique",
+        "moveId": "con-every-all-case-specific",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 136,
+        "observedCharacters": 1027,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-3.json",
+      "packetSha256": "4cc243511409b89980d25d521778e70eeefd61c78f7f0675d0579ed2987d54e6",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-3.schema.json",
+      "schemaSha256": "f63b9310b5dea7b234a5fe5289c548839707fbf0a3a1b16c6ae79df5f12387c8",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-3.json"
+    },
+    {
+      "contextIndex": 4,
+      "shardId": "debate-92-critique-4-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.pro-potential-cannot-become-actual.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.pro-potential-cannot-become-actual.critique",
+        "moveId": "pro-potential-cannot-become-actual",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 134,
+        "observedCharacters": 992,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-4.json",
+      "packetSha256": "0e2d1f4cf13c41c097ae42327f539e150d8fadebe72bc177d9c50dd2150a26ad",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-4.schema.json",
+      "schemaSha256": "fe75fc2e016185821091f81dc694c488778d05f4525dd029ac483546af12ff0d",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-4.json"
+    },
+    {
+      "contextIndex": 5,
+      "shardId": "debate-92-critique-5-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.pro-eternal-countdown-earlier-completion.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.pro-eternal-countdown-earlier-completion.critique",
+        "moveId": "pro-eternal-countdown-earlier-completion",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 133,
+        "observedCharacters": 1062,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-5.json",
+      "packetSha256": "45c7e96e5909935c9b63e949797204e56940f5fd52fcaf1983ebf21650256136",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-5.schema.json",
+      "schemaSha256": "3646480c177dfe8a89f796f67fce4122e9cee19f7614e79f345904205883bc33",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-5.json"
+    },
+    {
+      "contextIndex": 6,
+      "shardId": "debate-92-critique-6-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.con-countdown-necessity-not-sufficiency.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.con-countdown-necessity-not-sufficiency.critique",
+        "moveId": "con-countdown-necessity-not-sufficiency",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 132,
+        "observedCharacters": 1002,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-6.json",
+      "packetSha256": "9db9eeeffba0f1b8e1afe6c2fa9d71a51b2510e1588a8f624f0277d5cd4783f9",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-6.schema.json",
+      "schemaSha256": "fe98e75523afb08ef75d200b481f30a228070824ffa3f02da472c7f485d9782c",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-6.json"
+    },
+    {
+      "contextIndex": 7,
+      "shardId": "debate-92-critique-7-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.con-local-countdown-explanation.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.con-local-countdown-explanation.critique",
+        "moveId": "con-local-countdown-explanation",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 132,
+        "observedCharacters": 1009,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-7.json",
+      "packetSha256": "eff6cf44a54d371ed66a23ba2c98b4b121dee8462c2290ce873504a842a3b545",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-7.schema.json",
+      "schemaSha256": "0b93a8cd57be601604d8f491f89dde7d7607105e5e01facc388601345e3f0930",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-7.json"
+    },
+    {
+      "contextIndex": 8,
+      "shardId": "debate-92-critique-8-recovery-1",
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "kind": "critique",
+      "field": "moveProse.pro-member-whole-quantifier-warning.critique",
+      "failure": {
+        "debateNumber": "92",
+        "kind": "critique",
+        "field": "moveProse.pro-member-whole-quantifier-warning.critique",
+        "moveId": "pro-member-whole-quantifier-warning",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 131,
+        "observedCharacters": 962,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-8.json",
+      "packetSha256": "c20370eb5beb882971676550c17b637b8ba0bec1404cbe0f795085b8bd50abed",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-8.schema.json",
+      "schemaSha256": "bf176a1c8ea10e3f202d0c44b2bec1f8aef6341390641107613fa964706e6483",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-8.json"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 9,
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsPerPacket": 1,
+    "preserveRawResultBeforeValidation": true,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/diagnosis.json": "6045f2c8802dae576b28ec29845cd4f2002bfcc541c7a5e2ac52bb0908bca29e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-execution-activation.json": "4d34bb0492982399c79d5cf4deaeb0ddc1176847a80767811d0c069df6e2ef38",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/model-execution-final-seven.json": "0e2e6b506cc5cd7767de1524c0373c864f6db1734371e4f13439524b041355d8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-analysis.json": "0e5abc470e861205060fd6f74ad3fd989b7b4dbd30a3545e1198e7374d46e863",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/manual.md": "9fb5fc2c9c916b7501b6d9486a9ea4df106b15960e09220b08fd9ccea62554b8",
+    "scripts/assessment-production-post-canary-batch-16-publication-final-seven-level-1-recovery.mjs": "3e4f1d8d8f3e728d1fc35294d99895e62959acfa4d6ec6cbee7bd1e90732e553",
+    "scripts/lib/assessment-production-post-canary-batch-16-publication-validation.mjs": "39cd35fc82d3b6c9f501d2b8cb703c2b5e3b3c9005bbf0698274958fbffac0bd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-92.json": "5cd55aa6bb13b9167576ec328e7af4d3fbc6d50371be844bd296bb6d4bc14f60",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-92.json": "a2c2e66b1eb80a8913170f538534ca92ebe5b9b5adb3c893d86487248868675a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-92.json": "fa765dbd598cf74c10001ca734ba76a6cc873be15d623fd0aa95a93efb09a928",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-92.json": "3a7360297cd3401cd4e3bd02dc9db21af2c344a811d9b05337d712386214707b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-0.json": "b64a8047e4226c88627e09e59a0db1fcaadff1665595fd79e9dc8d1070c6ec4d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-0.schema.json": "bec6be771baf0afc8e102855ab480e3c908fb777111f562d0b01a3f662bbe9ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-1.json": "9a3ad498869c2bdcb6e09b3471005cf055f48b7a4624db877824c5b42fa55360",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-1.schema.json": "6fbfc7e0d76c3ca3bd3d8d51b313195810369d4d39c3d42b79779b96739ce356",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-2.json": "2d1b768d29ff71caf28db29d29a958f394c740e12b9eb9d7a22b7860ed6be6b1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-2.schema.json": "780bed7fb3549b0ddadd91df916cb60dfc92f3858afac24dd8fefb595513a936",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-3.json": "4cc243511409b89980d25d521778e70eeefd61c78f7f0675d0579ed2987d54e6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-3.schema.json": "f63b9310b5dea7b234a5fe5289c548839707fbf0a3a1b16c6ae79df5f12387c8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-4.json": "0e2d1f4cf13c41c097ae42327f539e150d8fadebe72bc177d9c50dd2150a26ad",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-4.schema.json": "fe75fc2e016185821091f81dc694c488778d05f4525dd029ac483546af12ff0d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-5.json": "45c7e96e5909935c9b63e949797204e56940f5fd52fcaf1983ebf21650256136",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-5.schema.json": "3646480c177dfe8a89f796f67fce4122e9cee19f7614e79f345904205883bc33",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-6.json": "9db9eeeffba0f1b8e1afe6c2fa9d71a51b2510e1588a8f624f0277d5cd4783f9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-6.schema.json": "fe98e75523afb08ef75d200b481f30a228070824ffa3f02da472c7f485d9782c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-7.json": "eff6cf44a54d371ed66a23ba2c98b4b121dee8462c2290ce873504a842a3b545",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-7.schema.json": "0b93a8cd57be601604d8f491f89dde7d7607105e5e01facc388601345e3f0930",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/packets/context-8.json": "c20370eb5beb882971676550c17b637b8ba0bec1404cbe0f795085b8bd50abed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/schemas/context-8.schema.json": "bf176a1c8ea10e3f202d0c44b2bec1f8aef6341390641107613fa964706e6483"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-3.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-4.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-5.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-6.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-7.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/final-seven-failure-recovery/level-1/outputs/context-8.json"
+  ],
+  "authorization": {
+    "activation": true,
+    "modelExecution": false,
+    "deterministicMergeAndValidation": false,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-nine-fresh-one-field-batch-16-publication-final-seven-recovery-level-1-contexts"
+}

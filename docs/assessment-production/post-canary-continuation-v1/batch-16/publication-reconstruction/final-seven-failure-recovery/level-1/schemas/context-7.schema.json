@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-16-debate-92-critique-7-recovery-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correction"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-16-publication-final-seven-one-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-16-publication-final-seven-level-1-one-field-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 7
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-92-critique-7-recovery-1"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "92"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-malpass-universe-begin-exist-2020"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "text"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "const": "moveProse.con-local-countdown-explanation.critique"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 880,
+          "maxLength": 1800
+        }
+      }
+    }
+  }
+}
