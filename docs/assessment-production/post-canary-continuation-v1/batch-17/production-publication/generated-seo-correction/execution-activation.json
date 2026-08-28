@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-generated-seo-correction-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-17-generated-seo-derivative-correction",
+  "status": "frozen-batch-17-generated-seo-correction-pass-activated",
+  "activatedAt": "2026-08-28T18:10:58Z",
+  "productionCanary": false,
+  "batchNumber": 17,
+  "directIncrementalCostCapUsd": 0,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-publication/generated-seo-correction/correction-plan.json",
+    "sha256": "d7846e33549fc18ba6291d00cf25afb26efe827037c7eccd5c338678843613d5",
+    "bytes": 140366
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-publication/generated-seo-correction/preparation-analysis.json",
+    "sha256": "98656c0721ad362fe3cf146570fd66ddbfa6a019befdc9abb2d1a711cc0180b5",
+    "bytes": 1160
+  },
+  "executionTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-17-generated-seo-correction.mjs",
+      "sha256": "904bbec2f705fa3815cbdb387a784a6a8a381a3784ab95fb7a9ff3d6fb2355ef",
+      "bytes": 3368
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-17-generated-seo-correction.mjs",
+      "sha256": "cac5a3e2084544162630dd132c23d983a6810b6517ade50c411482a304fe667d",
+      "bytes": 8984
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-17-generated-seo-correction-activation.mjs",
+      "sha256": "e78d4ea3ec5ec5b777af8ccaae9a993899b2a9a77cc1a70d46895d4c81b6d65a",
+      "bytes": 3251
+    },
+    {
+      "path": "scripts/generate-seo-pages.mjs",
+      "sha256": "8ed300943f4d15db89128a39d664be51b9b48dc610c92ec4d8c57065f597fe2f",
+      "bytes": 12276
+    }
+  ],
+  "frozenEnumeration": {
+    "outputCount": 380,
+    "pathSetSha256": "7fd647637250021c4c4a9e53907777144e5eb4531a3a5bd4ec9eb158f96ac27b",
+    "inventorySha256": "d0523f5f3318c4a9e4e4328e9f9cba7d71c0382677ee34be9a0f4610c9eda678",
+    "proposedWritePaths": [
+      "debate/feser-oppy-arguments-for-god-2020/index.html",
+      "debate/hitchens-blair-religion-force-good-2010/index.html",
+      "debate/oconnor-biddle-free-will-2025/index.html",
+      "debate/pageau-folley-logos-meaning-resurrection-2026/index.html",
+      "sitemap.xml",
+      "src/data/debate-summaries.js"
+    ],
+    "proposedWrites": [
+      {
+        "path": "debate/feser-oppy-arguments-for-god-2020/index.html",
+        "baselineSha256": "b6aab3ecbb112a83558fe19f437c7522d7624b1ebdd5cf931105d05538a821b4",
+        "baselineBytes": 7021,
+        "proposedSha256": "433233ac9ba6c9945f671d8d29306f1403714a6a4d74d1f2175656895fd4e167",
+        "proposedBytes": 7044,
+        "changed": true
+      },
+      {
+        "path": "debate/hitchens-blair-religion-force-good-2010/index.html",
+        "baselineSha256": "8bbb945aa6f7f60ce1c9e9027221cca9d511edbff2d90e484c26b1bf159408ad",
+        "baselineBytes": 7165,
+        "proposedSha256": "e00ac4a62fe795211b5eb033a0d65b7922bd50312c478e602ec6355864860653",
+        "proposedBytes": 7145,
+        "changed": true
+      },
+      {
+        "path": "debate/oconnor-biddle-free-will-2025/index.html",
+        "baselineSha256": "3cd0d4c5bcb850fb89c64bf5e1cd5556a2ea1eb45cc6cb59547fd05f796c7cdc",
+        "baselineBytes": 6964,
+        "proposedSha256": "4a7f8726d5735c889e657e3fb5025e0f7222502063aa908c0570e667db8e7189",
+        "proposedBytes": 6976,
+        "changed": true
+      },
+      {
+        "path": "debate/pageau-folley-logos-meaning-resurrection-2026/index.html",
+        "baselineSha256": "8315b780faf29e38deede7acebeff85ec4708f3981e36b347a6ddb5897883723",
+        "baselineBytes": 7184,
+        "proposedSha256": "44e4dded836458a262496013179fceb6c82e754662858cfc9a81933c2a659153",
+        "proposedBytes": 7191,
+        "changed": true
+      },
+      {
+        "path": "sitemap.xml",
+        "baselineSha256": "928efff56cd32a5bfa1372ec821fd42479311a604f54c3820974bff0957d7f9f",
+        "baselineBytes": 47971,
+        "proposedSha256": "a9fdd17fa87b0371893db16b3d66de1e972f296d7e1c5d4ce867b6533f68455a",
+        "proposedBytes": 47971,
+        "changed": true
+      },
+      {
+        "path": "src/data/debate-summaries.js",
+        "baselineSha256": "5f036c9d44bf78b92c6bdec808c07044f42c28e4d1cfa96fa7ddecfeaa4ec0fb",
+        "baselineBytes": 294301,
+        "proposedSha256": "1a9cff2a0d77303c7def5b2c0df65499bc09482d1eda9c2636642f5b5a5b5686",
+        "proposedBytes": 294713,
+        "changed": true
+      }
+    ]
+  },
+  "executionDiscipline": {
+    "isolatedGeneratorRuns": 1,
+    "generatorAttempts": 1,
+    "repositoryValidationRuns": 1,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "productionMutationReruns": 0,
+    "rollbacks": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "authorization": {
+    "executionActivation": true,
+    "isolatedGeneratorExecution": true,
+    "exactSixGeneratedDerivativeWrites": true,
+    "completeRepositoryValidation": true,
+    "atomicTransactionCommitAndPush": true,
+    "additionalGeneratedWrites": false,
+    "productionMutationRerun": false,
+    "rollback": false,
+    "scorePass": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "outputPaths": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-publication/generated-seo-correction/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-publication/generated-seo-correction/analysis.json"
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-17-generated-seo-correction-and-validation-pass-no-reruns"
+}
