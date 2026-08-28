@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-batch-16-independent-judgment-preparation-failure",
+  "status": "preserved-pre-model-inherited-move-count-mismatch-corrected",
+  "occurredAt": "2026-08-28T04:02:00.622Z",
+  "stage": "independent-judgment-packet-validation",
+  "failedCommand": "node scripts/test-assessment-production-post-canary-batch-16-independent-judgment-preparation.mjs",
+  "error": "Expected values to be strictly equal: 194 !== 191",
+  "diagnosis": "The Batch 16 packet builder correctly froze 194 unique locked moves, but four cloned validators and controllers retained Batch 15's 191-move total.",
+  "correction": {
+    "kind": "exact-deterministic-controller-boundary-correction",
+    "previousUniqueMoves": 191,
+    "correctedUniqueMoves": 194,
+    "movesJudgedAcrossPasses": 388,
+    "filesCorrected": 4,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "acceptedFieldChanged": false,
+    "scorePassRun": false
+  }
+}
