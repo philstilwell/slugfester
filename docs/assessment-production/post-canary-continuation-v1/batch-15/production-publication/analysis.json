@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-production-publication-analysis",
+  "protocolId": "assessment-production-post-canary-batch-15-production-publication",
+  "status": "batch-15-production-publication-mutation-passed-pending-generated-derivative-correction",
+  "analyzedAt": "2026-08-28T02:52:35.642Z",
+  "execution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/execution.json",
+    "sha256": "f15403c5c37e8588434ff3b1245040d7a8bded7c1a532cd3c2f577d30139051b",
+    "bytes": 5681
+  },
+  "decision": {
+    "exactMutationAuthenticated": true,
+    "tenRecordsReplaced": true,
+    "tenLedgersPublishedByteForByte": true,
+    "unrelatedProductionPreserved": true,
+    "referencesPreserved": true,
+    "routeAndScoreValidationPassed": true,
+    "activeScorePolicyPassed": true,
+    "generatedDerivativesKnownStaleAndNotYetWritten": true,
+    "completeRepositoryValidationPending": true,
+    "atomicTransactionCommitPending": true
+  },
+  "totals": {
+    "mutationPasses": 1,
+    "productionDebatesFiles": 1,
+    "productionLedgerFiles": 10,
+    "changedDebateRecords": 10,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbacks": 0,
+    "generatedDerivativeWrites": 0
+  },
+  "authorization": {
+    "isolatedGeneratedDerivativePlanPreparation": true,
+    "additionalProductionMutation": false,
+    "scorePass": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-isolated-batch-15-generated-seo-derivative-correction-under-standing-authorization"
+}

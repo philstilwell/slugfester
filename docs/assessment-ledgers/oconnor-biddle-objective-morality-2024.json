@@ -1,0 +1,2187 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-15-production-compatibility",
+  "status": "frozen-post-canary-batch-15-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "debateNumber": "23",
+  "debateId": "oconnor-biddle-objective-morality-2024",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-15-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "3f956d905b468a2ee85acd77c4a1e7e000733bd4190017722e1be1740ab93892",
+    "calculatedScoresSha256": "025cf15d78a635df365592df1c7ca9ea47736e719f5ad34d8a35c6bd43bfc2e8",
+    "finalizationAuditSha256": "a1428d54d07fe01b2b48d6560545048614305a43c08439ddbf09b852b644350a",
+    "renderingAuditSha256": "5ca03c6fab2ea762e88e28dec4ccccea5290f3159d0d21afde046ca5b2d93943",
+    "finalCandidateSha256": "64303fbf2bcce39c827b987603379e3511dcf4e7e6241bbb2a796d9ba3dbdb55",
+    "eventsPath": ".assessment-cache/captions/A4JGJRmldQE/events.json",
+    "eventsSha256": "3079267e44c54084f1daf5c3a90db86c101d79096ce3ea4cbad62676cd69b9ff",
+    "finalJudgmentSha256": "92a5c564fdce8d3d611b57d37fb4f03d969ef83242788fd8d5b9dbc7ef18c3ce"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "23",
+    "debateId": "oconnor-biddle-objective-morality-2024",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-life-grounded-objectivity",
+        "side": "pro",
+        "description": "Establish that evaluative and moral concepts arise from factual requirements faced by living, choosing human beings, and that those requirements support objective guidance for flourishing and social conduct.",
+        "successCriteria": "The route succeeds if it identifies life-relevant facts as the referents and standard of evaluation, explains how those facts guide volitional human action, and derives non-arbitrary principles for individual and interpersonal conduct.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-life-to-objective-morality",
+          "tier": "motion",
+          "description": "Connect the factual requirements of human life to truth-apt standards governing choices, actions, and character."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-factual-basis-of-value",
+            "tier": "central",
+            "description": "Explain why living organisms' conditional requirements create the factual basis and practical need for evaluative concepts."
+          },
+          {
+            "bridgeId": "pro-central-normative-guidance",
+            "tier": "central",
+            "description": "Show how a human choice to live makes facts about survival and flourishing action-guiding without treating value as an intrinsic property."
+          },
+          {
+            "bridgeId": "pro-central-rights-and-social-principles",
+            "tier": "central",
+            "description": "Derive rights and constraints on force from human rational agency and each person's need to act on independent judgment."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-emotion-and-cognition",
+            "tier": "subsidiary",
+            "description": "Distinguish emotions accompanying evaluation from the cognitive identification of life-supporting or life-destructive facts."
+          },
+          {
+            "bridgeId": "pro-subsidiary-hard-case-coherence",
+            "tier": "subsidiary",
+            "description": "Apply the life-based standard consistently across immortality, psychopath, animal-treatment, and consent cases."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-emotivist-challenge",
+        "side": "con",
+        "description": "Establish that moral utterances express non-truth-apt emotional attitudes and that factual descriptions of life, agency, or flourishing do not themselves supply objective oughtness or binding interpersonal duties.",
+        "successCriteria": "The route succeeds if it provides a coherent emotivist account of moral language and experience while showing that the proposed life standard cannot non-circularly bridge facts to objective norms or explain its disputed applications.",
+        "motionBridge": {
+          "bridgeId": "con-motion-emotivism-over-objectivity",
+          "tier": "motion",
+          "description": "Account for moral claims as emotive expressions while denying that life-related facts constitute objective moral properties or truth conditions."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-semantic-ontological-account",
+            "tier": "central",
+            "description": "Specify what moral predicates express and require the objectivist alternative to identify the alleged objective oughtness."
+          },
+          {
+            "bridgeId": "con-central-fact-norm-gap",
+            "tier": "central",
+            "description": "Show why a pre-moral choice to live or a factual description of flourishing cannot generate objective normative authority."
+          },
+          {
+            "bridgeId": "con-central-interpersonal-counterexamples",
+            "tier": "central",
+            "description": "Test whether actor-centered life and flourishing can justify rights or condemn advantageous harm without assuming the disputed morality."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-emotivist-practical-coherence",
+            "tier": "subsidiary",
+            "description": "Explain how emotive advocacy, rational inference, and useful rights conventions can function without objective moral truth."
+          },
+          {
+            "bridgeId": "con-subsidiary-boundary-cases",
+            "tier": "subsidiary",
+            "description": "Use immortality, atypical agents, and animal treatment to test the scope and consistency of the life-based account."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "title": "Moral Meaning, Emotion, and Objective Reference",
+        "weightPercent": 22,
+        "rationale": "This issue defines the motion-level disagreement over whether moral predicates report life-relevant facts or express attitudes without truth conditions, and it fixes what either side must explain about moral language and cognition."
+      },
+      {
+        "sectionId": "section-life-as-value-foundation",
+        "title": "Life, Choice, and the Foundation of Value",
+        "weightPercent": 25,
+        "rationale": "This issue covers the proposed dependence of value on living action and the choice to remain alive, together with the challenge that a conditional or pre-moral choice cannot establish objective value."
+      },
+      {
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "title": "From Life Facts to Oughts and Flourishing",
+        "weightPercent": 21,
+        "rationale": "This issue tests the central inferential bridge from biological and human facts to action-guiding oughts, including whether flourishing clarifies the standard or expands it beyond survival without an objective warrant."
+      },
+      {
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "title": "Rational Egoism, Rights, and Moral Agency",
+        "weightPercent": 21,
+        "rationale": "This issue addresses whether a life-centered ethic can derive interpersonal rights and constraints on advantageous harm, and whether psychopath and abnormal-agent cases expose circularity or legitimate limits on moral concepts."
+      },
+      {
+        "sectionId": "section-animals-and-practical-boundaries",
+        "title": "Animals, Harm, and Practical Boundaries",
+        "weightPercent": 11,
+        "rationale": "This issue examines whether the competing accounts consistently explain concern for suffering, condemnation of gratuitous harm, differences between human and animal status, and permissibility claims about animal use."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-emotivist-meaning",
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "Emotivism treats ethical statements as expressions of non-propositional emotion rather than truth-apt reports about either objective facts or a speaker's preferences.",
+        "sourceSpan": {
+          "startEvent": 38,
+          "endEvent": 114,
+          "excerpt": "truth that says things are true or false dependent on mental states. Things are true because you want them to be true or in some way dependent on your desires or values or something like this. Um I broadly subscribe to an ethical view called emotivism, which doesn't quite say this. What it says is that ethical statements are expressions of emotion. So, when you make an ethical statement"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The sustained opening turn presents the emotivist position associated with Alex O'Connor and contrasts it explicitly with subjectivism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-emotivism-over-objectivity"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive statement of emotivism, so no earlier opposing move supplies a response demand; it directly establishes the con motion account."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between non-propositional emotional expression and truth-apt subjectivism is explicit and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move defines the speaker's adopted metaethical view rather than making a contingent empirical prediction."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The view is explicitly differentiated from subjectivism and its semantic claim is internally consistent."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the con motion bridge by specifying the proposed meaning of ethical statements."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing interpretation is assessed in this introductory statement of the speaker's own position."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly contrasts subjectivist truth conditions with emotivism's treatment of ethical statements as emotional expressions.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-objective-oughtness-burden",
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "constructive",
+        "proposition": "A materialist moral objectivist must identify what objective oughtness is and explain where it exists or originates if it is not an emotion.",
+        "sourceSpan": {
+          "startEvent": 185,
+          "endEvent": 213,
+          "excerpt": "ought, called should, called good, that somewhere exists, maybe immaterially. That's a problem if you're a materialist. If you do If you only believe in material things, you don't really have that option available to you. It has to be somewhere in this room or somewhere in this earth. There's this thing in the universe called good and bad. And all I'm asking is firstly, what is that thing if not just an emotion"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly introduces this as his principal challenge to an objectivist and completes it before yielding the floor.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-semantic-ontological-account"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move states a central ontological and explanatory demand that the objectivist account must answer."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The demand is recoverable, but treating existence as requiring a location leaves 'objective oughtness' partly unstable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "An account of oughtness is necessary, but the suggestion that material reality requires simple spatial location overstates the burden."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Objective oughtness may be a relation, function, or higher-level natural fact rather than a discrete object.",
+          "decisiveQualification": "A materialist objectivist still owes an account of that relation's normative authority and truth conditions."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It reaches the indispensable con semantic and ontological bridge by demanding an account of objective oughtness."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it sharply identifies the requested explanandum, although its spatial framing is compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt asks what good or ought is if not emotion and where it originates under a materialist ontology.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-life-living-organisms-found-value",
+        "sectionId": "section-life-as-value-foundation",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "constructive",
+        "proposition": "Because only living organisms pursue values to preserve their existence, life is the ultimate factual foundation of value and evaluative concepts.",
+        "sourceSpan": {
+          "startEvent": 266,
+          "endEvent": 352,
+          "excerpt": "life is gone. And she identifies that this is the very foundation that gives rise to the possibility of and the need of values. A thing can't go after values unless it's alive. And if it is to remain alive, it must go after values. In identifying this fact, Rand has demonstrated that life is the root, the ultimate foundation of the concept of value and of all evaluative concepts"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Biddle develops the life-based derivation continuously, using organisms and their goal-directed activity as the central examples.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-factual-basis-of-value"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is the foundational pro constructive move, identifying living goal-directed activity as the factual source of evaluative concepts without targeting an earlier objection."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim concerns the foundation and practical need for value concepts, not an unexplained intrinsic property of life."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The excerpt supports life's necessity for organismic value pursuit, but calls it the foundation of all evaluation with limited rival comparison."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "Organismic dependence supplies concrete support, but the universal claim about all evaluative concepts receives limited independent defense."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central factual-basis bridge by explaining why living requirements generate evaluative concepts."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move develops its own biological foundation and does not materially interpret an opposing alternative."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that only living things pursue values and that continued existence requires value-directed activity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-oughts-guide-volitional-life",
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "For volitional human beings, oughts identify life-supporting actions, while chosen values and virtues organize the rational pursuit of continued life and flourishing.",
+        "sourceSpan": {
+          "startEvent": 353,
+          "endEvent": 411,
+          "excerpt": "So, we need guidance in how to use our our faculty of thinking, our our rational faculty, so that we can live. So, once she has designed or or derived this principle that the the factual requirements of human life constitute the standard of moral value. Now, life is the standard for any living thing, but for human beings because we have free will, moral values are chosen values"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The same pro turn explicitly moves from the biological basis of value to human choice, rational guidance, moral values, and virtues.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-normative-guidance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-objective-oughtness-burden"
+          ],
+          "components": [
+            {
+              "componentId": "pro-oughts-guide-volitional-life-component-01",
+              "targetMoveId": "con-objective-oughtness-burden",
+              "text": "Explain what objective oughtness is and how it arises within a materialist account rather than from emotion.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move contacts the demand by construing oughts as rational guidance identifying factual life requirements for volitional agents, though it does not fully explain categorical authority."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Oughts and chosen values are intelligible, but the scope shifts between continued life, flourishing, and moral guidance."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The practical need for guidance is supported, but its identification with moral oughtness needs a further normative qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con demand concerns normative authority, not merely whether factual information can instrumentally guide chosen goals.",
+          "decisiveQualification": "Life requirements explain hypothetical guidance but do not by themselves establish an unconditional moral ought."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "Facts about volition and survival support instrumental guidance, while the distinct moral warrant remains compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central normative-guidance bridge by explaining the action-guiding role assigned to oughts."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply fairly supplies a naturalistic alternative, while only partially addressing the strongest authority-based version of the challenge."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive demand and gives a substantive naturalistic account, but leaves the fact-to-authority bridge underdeveloped."
+          }
+        },
+        "evidenceBasis": "The excerpt says humans need rational guidance to live and identifies factual human-life requirements as the moral standard.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-objectivity-mind-fact-relation",
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Moral objectivity consists in a cognitive relation to life-relevant facts, and evaluative concepts lose their basis when severed from the life conditions that make them necessary.",
+        "sourceSpan": {
+          "startEvent": 425,
+          "endEvent": 494,
+          "excerpt": "And she says, \"The proper way to use the concept of objective is that the objective is the connection between the mind in here and a fact out there.\" And in this case, what she's saying is, \"We are recognizing the fact that it is only life that makes the concept of values possible or necessary.\" And then she makes this final point, \"To use evaluative terms detached from life is"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Biddle directly addresses the outstanding concern about oughtness through Rand's subjective-intrinsic-objective trichotomy and its conceptual consequence.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-life-to-objective-morality"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-objective-oughtness-burden",
+            "con-emotivist-meaning"
+          ],
+          "components": [
+            {
+              "componentId": "pro-objectivity-mind-fact-relation-component-01",
+              "targetMoveId": "con-objective-oughtness-burden",
+              "text": "Identify what objective goodness is within a materialist account and explain its source.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-objectivity-mind-fact-relation-component-02",
+              "targetMoveId": "con-emotivist-meaning",
+              "text": "Address the claim that ethical statements express emotion rather than truth-apt factual cognition.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply answers both demands by construing objectivity as a mind-fact cognitive relation grounded in life conditions, although normative authority remains compressed."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The mind-fact relation is recoverable, but 'objective' alternates between epistemic relation and moral status without full separation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The conceptual proposal is clear, but asserting life as the exclusive basis of evaluative terms lacks full rival comparison."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Emotivism can accept cognition about life facts while denying that moral predicates report those facts.",
+          "decisiveQualification": "Showing a mind-fact relation does not alone show that moral language has those facts as truth conditions."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The relational conception avoids treating value as a separate object, but it incompletely bridges factual cognition to moral objectivity."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 99,
+            "rationale": "It directly advances the motion bridge by explaining the claimed relation between life facts and objective evaluation."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It directly contacts the central ontological and semantic demands, with one important explanatory bridge left implicit."
+          }
+        },
+        "evidenceBasis": "The excerpt defines objective as a connection between mind and fact and says life makes evaluative concepts necessary.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-immortality-counterexample",
+        "sectionId": "section-life-as-value-foundation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "If immortal volitional people could still care about one another and suffer, ethics would remain applicable despite the complete absence of possible death.",
+        "sourceSpan": {
+          "startEvent": 495,
+          "endEvent": 537,
+          "excerpt": "for a moment the sort of physical restrictions on this, the heat death of the universe. There's probably some way to imagine avoiding this inevitability. These people live forever. They're not going to die. Perhaps they're transported to some afterlife where they get to live forever in the New Jerusalem. Does ethics cease to exist? Does it no longer matter how I treat my fellow"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly tests Biddle's stated restriction of ethics to mortal life with a developed immortality counterexample.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-hard-case-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-life-living-organisms-found-value",
+            "pro-oughts-guide-volitional-life"
+          ],
+          "components": [
+            {
+              "componentId": "con-immortality-counterexample-component-01",
+              "targetMoveId": "pro-life-living-organisms-found-value",
+              "text": "Show that life's mortality and preservation requirements are necessary for evaluative and ethical concepts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-immortality-counterexample-component-02",
+              "targetMoveId": "pro-oughts-guide-volitional-life",
+              "text": "Show that life-supporting guidance exhausts ethical relevance for volitional agents.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The hypothetical directly tests whether ethics would disappear when death is impossible while suffering and interpersonal concern remain."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The stipulated immortality, continuing suffering, and interpersonal treatment conditions make the counterexample's scope explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move needs only a coherent possibility to test the necessity claim and expressly presents the scenario hypothetically."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The life standard may concern flourishing and functioning rather than merely avoidance of biological death.",
+          "decisiveQualification": "Immortal agents could still face suffering and impaired functioning, so life-relevant conditions might persist."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The counterexample coherently separates mortality from suffering and concern, challenging an overly narrow necessity claim."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "As a modal counterexample it is specifically stipulated, though it does not defeat every broader account of living flourishing."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The case fairly pressures a death-centered formulation while leaving room for the stronger flourishing-based account."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive necessity claim through a clear counterexample, though the hypothetical's conditions invite refinement."
+          }
+        },
+        "evidenceBasis": "The excerpt imagines people who cannot die yet remain fellow creatures whose treatment appears ethically significant.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-animal-torture-counterexample",
+        "sectionId": "section-animals-and-practical-boundaries",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "A survival-based egoistic ethic appears unable to condemn recreational animal torture when the act neither threatens the torturer's survival nor frustrates that person's preferences.",
+        "sourceSpan": {
+          "startEvent": 823,
+          "endEvent": 863,
+          "excerpt": "mean, for example, I want to know how your egoistic ethic, your rational egoism, that that you derive from objectivism and Ayn Rand, that the rational thing to do, and indeed the ethical thing to do, therefore the thing you're mandated to do, is whatever's going to help your survival as a creature. I want to know where something intuitively unethical like uh torturing an animal"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor introduces the objection as a direct question about rational egoism and develops the animal-torture case through the end of his turn.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-hard-case-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-oughts-guide-volitional-life",
+            "pro-life-living-organisms-found-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-animal-torture-counterexample-component-01",
+              "targetMoveId": "pro-oughts-guide-volitional-life",
+              "text": "Explain how actor-centered life-supporting oughts condemn gratuitous animal torture that does not impair the actor's survival.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-animal-torture-counterexample-component-02",
+              "targetMoveId": "pro-life-living-organisms-found-value",
+              "text": "Explain the normative significance of animal life within the proposed factual foundation of value.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly tests the scope of rational egoism using a stipulated act that benefits neither survival nor frustrated preferences."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The case specifies gratuitous torture, absence of survival cost, and absence of frustrated actor preference."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move says the ethic appears unable to condemn the conduct and appropriately invites an account rather than asserting impossibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An egoist may argue that cruelty damages character, practical rationality, or a general life-promoting disposition.",
+          "decisiveQualification": "The hypothetical stipulates no relevant survival or preference cost, requiring an independent connection to those alleged harms."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly attacks the subsidiary hard-case bridge through a concrete animal-treatment application."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive application demand and isolates the apparent gap with a concrete counterexample."
+          }
+        },
+        "evidenceBasis": "The excerpt asks how rational egoism condemns animal torture when morality is described as whatever supports the actor's survival.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-animal-abuse-anti-life",
+        "sectionId": "section-animals-and-practical-boundaries",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Gratuitous animal abuse is immoral because life supplies a standard of value beyond humans, and purposeless destruction manifests contempt for life.",
+        "sourceSpan": {
+          "startEvent": 864,
+          "endEvent": 914,
+          "excerpt": "it's a good question. I don't think it's an intuitive issue. I think it's it's just a matter of fact that it is profoundly immoral to torture an animal for no good reason. Um, so I mean, you know, I'm I'm not against eating animals. I am against unnecessarily putting any animal through pain. So, um, and the reason is for the same reason that I hold life as the standard of value"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The response follows O'Connor's animal-abuse question, and the sustained explanation is delivered by Biddle apart from brief acknowledgments.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-hard-case-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-animal-torture-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-animal-abuse-anti-life-component-01",
+              "targetMoveId": "con-animal-torture-counterexample",
+              "text": "Explain why gratuitous animal torture is wrong despite lacking an obvious survival cost to the torturer.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The response condemns unnecessary suffering by extending the life standard beyond humans and characterizing purposeless destruction as anti-life."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The condemnation is clear, but the movement between biological value, moral wrongness, and nonmoral wrongness destabilizes the key term."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical condemnation is stronger than the supplied bridge from life as a standard to other-regarding duties."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The counterexample asks for an egoistic reason binding a torturer whose own life and preferences are unaffected.",
+          "decisiveQualification": "General respect for life cannot answer that demand unless its contribution to the actor's flourishing is independently shown."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (62 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It supports the subsidiary hard-case bridge by applying the life standard to gratuitous animal harm."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The answer addresses the act but weakens the strongest stipulated version by relying on an asserted anti-life disposition."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive case and states a principle, but does not fully connect contempt for life to the actor's flourishing."
+          }
+        },
+        "evidenceBasis": "The excerpt opposes unnecessary animal pain and extends life's evaluative role to flowers and dogs, but supplies no further egoistic bridge.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-life-value-circularity",
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Appealing to contempt for life assumes the disputed value of life and therefore argues circularly against someone who does not already share that valuation.",
+        "sourceSpan": {
+          "startEvent": 1088,
+          "endEvent": 1123,
+          "excerpt": "Yeah, um it seems to me, if I may, that this is arguing in a circle though, unfortunately, because when Well, I'm asking you to justify your view that life has an has has value, that that that life is the value-giving thing in the universe. If there can be such thing as a value, life is where it comes from. And I say, \"Well, if that's the case, then what is the person who kicks"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly labels the preceding justification circular and develops the objection through the flower-kicking example despite brief interruptions.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-normative-guidance"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-animal-abuse-anti-life",
+            "pro-life-living-organisms-found-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-life-value-circularity-component-01",
+              "targetMoveId": "pro-animal-abuse-anti-life",
+              "text": "Derive animal-abuse wrongness from contempt for life without assuming life's disputed moral value.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-life-value-circularity-component-02",
+              "targetMoveId": "pro-life-living-organisms-found-value",
+              "text": "Establish life's status as value-giving rather than presupposing that status in its applications.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses circularity: contempt for life cannot justify life's value against someone who disputes that very valuation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The circularity allegation identifies the disputed premise and confines the objection to using that premise as justification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker frames the diagnosis as how the argument seems and supports it by restating the circular dependence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro claim may be conceptual: life grounds the possibility of value rather than possessing intrinsic value.",
+          "decisiveQualification": "That conceptual dependence alone does not establish a reason to respect every life or condemn purposeless destruction."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The immediate wording about contempt for life provides specific support for the circularity diagnosis, with a bounded wider-account caveat."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central pro normative-guidance bridge by challenging its non-circular justificatory basis."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly identifies the failing premise and states why the proposed application cannot supply the requested justification."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly says the response argues in a circle because it invokes life's value while that value is being challenged.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-choice-to-live-precedes-value",
+        "sectionId": "section-life-as-value-foundation",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Life is not intrinsically valuable; a person's choice to remain alive logically precedes evaluation and creates the need for values and action.",
+        "sourceSpan": {
+          "startEvent": 1125,
+          "endEvent": 1182,
+          "excerpt": "values. It's only the choice to live that makes valuing possible. So, if I said, \"I don't want to live anymore,\" but then my next question was, you know, what should I go after? What should I value? You would look at me like I was crazy. Well, if you don't want to live, you don't need anything. So, the point here is simply that in terms of logical dependence, the choice to remain alive precedes any evaluation"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Biddle marks a clarification and gives an extended first-person account of how choosing continued existence grounds the need for valuation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-normative-guidance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-life-value-circularity",
+            "con-objective-oughtness-burden"
+          ],
+          "components": [
+            {
+              "componentId": "pro-choice-to-live-precedes-value-component-01",
+              "targetMoveId": "con-life-value-circularity",
+              "text": "Explain how life grounds valuation without presupposing that life is intrinsically morally valuable.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-choice-to-live-precedes-value-component-02",
+              "targetMoveId": "con-objective-oughtness-burden",
+              "text": "Explain the source and logical status of life-based oughts.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the circularity challenge by denying intrinsic value and locating valuation after a pre-evaluative choice to live, while leaving objectivity conditional."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The logical ordering among choosing life, needing values, and evaluating actions is stated clearly and consistently."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Given the stated conditional framework, rejecting continued life removes the practical need to select life-serving values."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The circularity objection may target moral authority, not the narrower conceptual possibility of valuation.",
+          "decisiveQualification": "A pre-moral choice can explain conditional practical reasons without establishing an objective reason to make that choice."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The practical dependence is illustrated directly, although its generality beyond the first-person choice is not fully established."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central normative-guidance bridge by explaining the conditional origin of value and action."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It directly answers the intrinsic-value version of circularity but does not fully answer whether the resulting norms are objective."
+          }
+        },
+        "evidenceBasis": "The excerpt states that only the choice to live makes valuing necessary and that this choice logically precedes evaluation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-premoral-choice-gap",
+        "sectionId": "section-life-as-value-foundation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "A pre-moral choice to live cannot supply objective normativity, because an objective requirement to remain alive must be independently established or the resulting moral system remains conditional on a nonobjective choice.",
+        "sourceSpan": {
+          "startEvent": 1224,
+          "endEvent": 1265,
+          "excerpt": "would you claim that it's objectively the right decision to stay alive? Right? If that's that's the case, then Yeah, yeah. So, this No, I I hold that it is both the the choice to remain in existence, to to living, is both in in a technical sense pre-moral and even pre-rational. And the reason that it's pre-moral is because you don't need values until you've made the choice. And"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor introduces several objections, then persistently questions whether objectivity can enter through the choice between living and dying.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-fact-norm-gap"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-choice-to-live-precedes-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-premoral-choice-gap-component-01",
+              "targetMoveId": "pro-choice-to-live-precedes-value",
+              "text": "Show how a pre-moral choice to live can yield objective rather than merely conditional normativity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly identifies the unresolved dilemma: either remaining alive is independently objectively required or subsequent norms depend on a nonobjective choice."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction among pre-moral choice, conditional reasons, and objective reasons is explicit and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "For an objective conclusion, the objection correctly requires either objective support for the choice or another binding bridge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro account may seek objective hypothetical imperatives conditional on choosing life, not a categorical duty to live.",
+          "decisiveQualification": "That interpretation preserves factual guidance but narrows the claimed objective morality to agents sharing the condition."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the con central fact-norm-gap bridge by exposing the conditionality of the proposed oughts."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The objection accurately grants the conditional account and isolates the remaining categorical or motion-level limitation."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the decisive inferential gap and states both alternatives that the pro account must resolve."
+          }
+        },
+        "evidenceBasis": "The excerpt asks whether remaining alive is objectively right after the pro speaker calls that choice pre-moral and pre-rational.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-human-life-generates-rights",
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "The requirements of human life support universal moral principles, including individual rights, because each person's life is their own and requires action on personal judgment.",
+        "sourceSpan": {
+          "startEvent": 1266,
+          "endEvent": 1303,
+          "excerpt": "human beings have a certain nature. Uh-huh. I of course want to live my life and have a beautiful life, but I don't own her life or his life or your life. Your life belongs to you. So, this is This is where where just as the requirements of life give rise to the principles of morality, one of the principles of morality that gives rise to a proper political system is the moral principle of individual rights"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Biddle answers directly with the Frederick Douglass slavery example and develops the classification-based principle culminating in individual rights.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-rights-and-social-principles"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-premoral-choice-gap",
+            "con-life-value-circularity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-human-life-generates-rights-component-01",
+              "targetMoveId": "con-premoral-choice-gap",
+              "text": "Explain how life-based principles extend beyond one chooser to universal interpersonal constraints.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-human-life-generates-rights-component-02",
+              "targetMoveId": "con-life-value-circularity",
+              "text": "Provide a non-intrinsic route from human-life requirements to moral principles.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply extends the account to shared human nature, separate lives, personal judgment, and rights, but the derivation from those facts remains compressed."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposed progression from human nature to self-ownership and rights is clear, though the ownership premise remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Universal human requirements support general principles, but the asserted derivation of rights needs an additional interpersonal warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con objection permits universal facts while denying that they generate binding duties from a pre-moral choice.",
+          "decisiveQualification": "Saying each life belongs to its person asserts a normative premise not derived from those universal facts."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 65,
+            "rationale": "The account identifies relevant facts, but the inference from separate lives to ownership and enforceable rights remains substantial."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "Human nature and independent lives are asserted as support, with little defense of the self-ownership bridge."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central rights-and-social-principles bridge by proposing a derivation of individual rights."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The reply recognizes the interpersonal concern but does not fully preserve the strongest fact-norm formulation of the objection."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the interpersonal consequence of the gap but only partially addresses the underlying objective-authority challenge."
+          }
+        },
+        "evidenceBasis": "The excerpt moves from universal human nature and each person's separate life to morality and individual rights.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-advantageous-murder-counterexample",
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "A murderer who values his own life and genuinely benefits from killing an innocent person is a counterexample to grounding moral obligation solely in the actor's life and flourishing.",
+        "sourceSpan": {
+          "startEvent": 1336,
+          "endEvent": 1370,
+          "excerpt": "moral act and the person upon whom the act is being committed. So suppose a a not suicide murderer just a murderer decides to kill somebody. Yeah. And they say well I I I value my own life. I value my own flourishing and maybe they And and suppose you know it were actually the case that given the intricacies of their life it would be better for their life. It would be better for their flourishing if this innocent"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly separates the actor from the victim and constructs the hypothetical through repeated clarification after Biddle questions its realism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-interpersonal-counterexamples"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-human-life-generates-rights",
+            "pro-choice-to-live-precedes-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-advantageous-murder-counterexample-component-01",
+              "targetMoveId": "pro-human-life-generates-rights",
+              "text": "Show why another person's rights bind an actor when violating them genuinely advances the actor's own flourishing.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-advantageous-murder-counterexample-component-02",
+              "targetMoveId": "pro-choice-to-live-precedes-value",
+              "text": "Show that choosing one's own life generates constraints protecting another person's life.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The stipulated beneficial murder directly tests whether actor-centered flourishing yields an exceptionless prohibition protecting an innocent person's separate life."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The hypothetical clearly stipulates innocence, genuine benefit, the actor's commitment to life, and interpersonal separation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The hypothetical is expressly stipulated and appropriately offered as a possible counterexample to a universal derivation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro account may deny that murder can genuinely promote long-term rational flourishing because force undermines human social conditions.",
+          "decisiveQualification": "The hypothetical stipulates genuine all-things-considered benefit, so a universal principle must address that possibility rather than ordinary consequences."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central interpersonal-counterexamples bridge by testing rights against advantageous harm."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly isolates the actor-beneficiary issue and removes ordinary prudential costs to test the proposed rights derivation."
+          }
+        },
+        "evidenceBasis": "The excerpt stipulates an innocent victim and a murderer whose own life and flourishing genuinely improve through killing.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-rights-presupposition",
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Invoking rights to constrain rational egoism presupposes the objective moral properties under dispute and does not explain why an egoist should care about another person's rights.",
+        "sourceSpan": {
+          "startEvent": 1549,
+          "endEvent": 1571,
+          "excerpt": "that you know, the the sort of grounding of ethics is is rational egoism. Um however, you know, the rational egoist isn't blind to things like the rights that another person has. Well, why why would the rational egoist care about the rights of another person? Well, what are these rights? If If ethics is just about me and my sort of rational prolonging of my prospects of survival"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor directly identifies rights as the allegedly assumed premise and follows Biddle's brief denials with a focused question about their egoistic basis.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-interpersonal-counterexamples"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-human-life-generates-rights",
+            "pro-choice-to-live-precedes-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-rights-presupposition-component-01",
+              "targetMoveId": "pro-human-life-generates-rights",
+              "text": "Derive individual rights from life requirements rather than assuming the disputed moral status of other persons.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-rights-presupposition-component-02",
+              "targetMoveId": "pro-choice-to-live-precedes-value",
+              "text": "Explain why an egoist's choice of personal life creates reasons to respect another person's rights.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly diagnoses rights as an assumed normative premise and states that invoking them does not explain their authority for the egoist."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection distinguishes possessing rights from explaining why those rights bind an egoistic actor."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately frames its conclusion as a focused explanatory challenge supported by the preceding rights invocation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Rights may summarize factual conditions of mutually beneficial freedom rather than primitive moral properties.",
+          "decisiveQualification": "The account must still explain why an advantaged violator is bound when mutual benefit or prudential cost is stipulated away."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The inference correctly distinguishes naming a constraint from deriving its binding force within rational egoism."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central interpersonal-counterexamples bridge by challenging the derivation and authority of rights."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly identifies the alleged presupposition and states the defeating consequence for the rights-based answer."
+          }
+        },
+        "evidenceBasis": "The excerpt asks what rights are and why a rational egoist concerned with personal survival should care about another's rights.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-rights-protect-rational-freedom",
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Individual rights recognize the factual human need for freedom to act on rational judgment, while rights violators may forfeit freedom needed to threaten others.",
+        "sourceSpan": {
+          "startEvent": 1713,
+          "endEvent": 1775,
+          "excerpt": "a right is simply the recognition of this fact that human beings need freedom from force in order to live and we enforce that. Why? Because we the whole purpose of moral principles and in my view of proper political principles is to enable human beings to live as independent agents without being coerced or killed or raped or you know, whatever by other people. So, that's rights"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The exchange explicitly gives Biddle the floor to define rights, and the sustained answer presents his stated Objectivist position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-rights-and-social-principles"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-rights-presupposition",
+            "con-advantageous-murder-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-rights-protect-rational-freedom-component-01",
+              "targetMoveId": "con-rights-presupposition",
+              "text": "Explain what rights are and why their constraints arise from human life rather than being presupposed moral properties.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-rights-protect-rational-freedom-component-02",
+              "targetMoveId": "con-advantageous-murder-counterexample",
+              "text": "Explain why force remains impermissible when a particular violator might personally benefit from it.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The response defines rights functionally through humans' need for freedom from force, contacting the presupposition demand but not the stipulated advantageous-violator case."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Rights, freedom from force, independent agency, and forfeiture by violators are stated with stable scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Freedom is strongly connected to rational agency, but universal enforceable rights require more than a general functional need."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con objection challenges binding authority in exceptional cases, not the general usefulness of noncoercive institutions.",
+          "decisiveQualification": "A social function does not alone show why every advantaged violator has a moral duty to comply."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central rights bridge by defining rights through factual requirements of rational freedom."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It answers what rights recognize and their general purpose, while leaving one decisive exceptional-agent component unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt defines a right as recognition that humans need freedom from force to live as independent agents.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-emotions-not-moral-knowledge",
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Emotions register a person's values but are not instruments of knowledge; rational inquiry identifies life as the objective standard of moral value.",
+        "sourceSpan": {
+          "startEvent": 1860,
+          "endEvent": 1884,
+          "excerpt": "values, and that's their that's their role in human life. They're not our means of knowledge, and they're certainly not our means of telling us what is good and bad, right and wrong. Our means of understanding what's good and bad, right and wrong is our rational faculty through which we say, \"Why do we even need such terms?\" And then, if we continue asking that question, we get down to the fact that life is the standard of value"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The first answer to the audience question expressly identifies Objectivism and develops its account of emotion, reason, and the standard of life.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "motion",
+          "bridgeId": "con-motion-emotivism-over-objectivity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-emotivist-meaning",
+            "con-objective-oughtness-burden"
+          ],
+          "components": [
+            {
+              "componentId": "pro-emotions-not-moral-knowledge-component-01",
+              "targetMoveId": "con-emotivist-meaning",
+              "text": "Address the emotivist claim that moral judgments are expressions of emotion rather than cognitive knowledge.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-emotions-not-moral-knowledge-component-02",
+              "targetMoveId": "con-objective-oughtness-burden",
+              "text": "Identify the cognitive route by which moral goodness is understood.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly distinguishes emotions from cognition and identifies rational inquiry into life's requirements as the alternative epistemic route."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinct roles assigned to emotion, reason, moral knowledge, and life's standard are plainly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The emotion-reason distinction is clear, but life's status as the objective standard is asserted with limited added warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Emotivism is a semantic account of ethical utterances and need not claim emotions are instruments of factual knowledge.",
+          "decisiveQualification": "Showing that reason discovers life facts does not by itself refute the claim that moral utterances express attitudes."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It attacks the con motion bridge directly by opposing the emotive account with a cognitive life-fact account."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the semantic and epistemic issue, though it does not fully rebut noncognitivist analysis of utterances."
+          }
+        },
+        "evidenceBasis": "The excerpt says emotions reflect values but are not means of knowledge, while reason identifies life as the standard.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-emotive-boundary-explanation",
+        "sectionId": "section-animals-and-practical-boundaries",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Emotivism explains differential concern for animals through emotional resemblance and attachment more naturally than a rational-egoist derivation does.",
+        "sourceSpan": {
+          "startEvent": 1894,
+          "endEvent": 1945,
+          "excerpt": "and less moral to kill, it seems to make sense of that. Another slightly um uh uncomfortable example of emotivism, but I think unfortunately the best one is the incest taboo that exists in almost every single society we've ever discovered. People think it's immoral, and it's quite entertaining watching rational moralists do one of two things. Either try to jump through hoops to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly introduces the point as his response and contrasts an emotivist framework with Objectivism using developed examples.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-boundary-cases"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-emotions-not-moral-knowledge",
+            "pro-animal-abuse-anti-life"
+          ],
+          "components": [
+            {
+              "componentId": "con-emotive-boundary-explanation-component-01",
+              "targetMoveId": "pro-emotions-not-moral-knowledge",
+              "text": "Explain moral-pattern differences without treating rational cognition as identifying objective moral facts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-emotive-boundary-explanation-component-02",
+              "targetMoveId": "pro-animal-abuse-anti-life",
+              "text": "Explain differential emotional concern for animals and other living beings.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply offers emotional resemblance, attachment, and taboo formation as explanations for variable moral concern and contrasts them with rationalist derivation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparative explanation is clear, but the move shifts from animal resemblance to incest taboo without fully fixing scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents emotivism as seeming to explain boundaries and acknowledges the examples' uncomfortable character."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A rational account may treat emotional resemblance as causal psychology while still evaluating resulting attitudes by life-relevant reasons.",
+          "decisiveQualification": "Emotivism's psychological naturalness does not establish that rational evaluation adds no explanatory or normative work."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The explanatory link from resemblance and attachment to differential attitudes is coherent, with a bounded semantic gap."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "Concrete patterns support plausibility, but representative evidence and comparison with rationalist alternatives are compressed."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the con subsidiary boundary-case bridge through an emotive account of differential concern."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The examples fairly pressure rationalist explanations, while the move only partly addresses their strongest possible qualifications."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the practical explanatory challenge with examples, though it does not fully answer the epistemic objection."
+          }
+        },
+        "evidenceBasis": "The excerpt claims emotivism makes sense of graded concern and illustrates emotionally grounded boundaries with a widespread taboo.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-life-means-human-flourishing",
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "Human life as the standard of value means flourishing through the full exercise of human capacities, not mere biological survival, and is more fundamental than happiness.",
+        "sourceSpan": {
+          "startEvent": 2201,
+          "endEvent": 2240,
+          "excerpt": "I agree with her that human life the idea that human life is the standard of value does not mean mere survival. It means uh survival qua man as she put it which means given the full capacities of man. It means essentially flourishing. And she even said that uh that uh life and happiness are in effect two sides of the same coin, right? They're they're they're two uh perspectives"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The question is directed to Craig and invokes Rand; the answer expressly states Rand's position and Biddle's agreement with it.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-normative-guidance"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-premoral-choice-gap",
+            "con-immortality-counterexample",
+            "con-advantageous-murder-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-life-means-human-flourishing-component-01",
+              "targetMoveId": "con-premoral-choice-gap",
+              "text": "Clarify the content of the life standard whose action-guiding and objective status is disputed.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-life-means-human-flourishing-component-02",
+              "targetMoveId": "con-immortality-counterexample",
+              "text": "Explain whether the standard concerns mere avoidance of death or richer human functioning.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-life-means-human-flourishing-component-03",
+              "targetMoveId": "con-advantageous-murder-counterexample",
+              "text": "Specify flourishing rather than immediate survival as the relevant actor-centered standard.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply clarifies that human life means full-capacity flourishing rather than bare survival, contacting several scope objections without resolving objective authority."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast with mere survival and the reference to full human capacities make the intended scope explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The semantic clarification is supported as the adopted view, but equivalence among life, flourishing, and happiness is compressed."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Earlier objections targeted biological survival because the account repeatedly appealed to continued existence and life preservation.",
+          "decisiveQualification": "Broadening life to flourishing is legitimate only if the broader standard receives an independent and non-circular specification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The clarification coherently broadens life to full human functioning, though flourishing's substantive criteria remain compressed."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central normative-guidance bridge by specifying the human-life end that oughts guide."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It fully clarifies the intended standard but only partially answers the decisive normative and interpersonal objections."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly says human life does not mean mere survival but survival qua human capacities, essentially flourishing.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-flourishing-semantic-inadequacy",
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Human life or flourishing does not adequately define moral goodness because it omits familiar ethical concern for other people and animals.",
+        "sourceSpan": {
+          "startEvent": 2372,
+          "endEvent": 2428,
+          "excerpt": "you know, I I understand and accept the terms but don't think the thing that it's attaching itself to exists. I just think that the thing it's attaching itself to, which would be something like human life, or maybe in some circumstances it seems human flourishing, is not a good definition of what morality is, and it doesn't capture what people are really talking about when they"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The question asks Alex what evidence would persuade him, and his sustained answer identifies definitional and existential requirements before applying them to rational egoism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-semantic-ontological-account"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-life-means-human-flourishing",
+            "pro-human-life-generates-rights",
+            "pro-animal-abuse-anti-life"
+          ],
+          "components": [
+            {
+              "componentId": "con-flourishing-semantic-inadequacy-component-01",
+              "targetMoveId": "pro-life-means-human-flourishing",
+              "text": "Show that human flourishing adequately captures the meaning and domain of moral goodness.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-flourishing-semantic-inadequacy-component-02",
+              "targetMoveId": "pro-human-life-generates-rights",
+              "text": "Show that the proposed definition captures familiar concern for other persons.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-flourishing-semantic-inadequacy-component-03",
+              "targetMoveId": "pro-animal-abuse-anti-life",
+              "text": "Show that the definition captures familiar moral concern for animals.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly rejects flourishing as semantically adequate and identifies omitted interpersonal and animal concerns as the decisive mismatch."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move distinguishes understanding the proposed referent from accepting it as an adequate definition of morality."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is presented as the speaker's considered semantic judgment rather than as a demonstrated universal linguistic fact."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Human flourishing may include social relationships, benevolence, and principled treatment of animals rather than narrow self-preservation.",
+          "decisiveQualification": "The account must derive those inclusions rather than importing familiar moral concern into an otherwise actor-centered standard."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "People and animals are concrete counterdomains, though claims about ordinary moral meaning lack representative linguistic evidence."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly supports the central semantic account by testing whether flourishing supplies adequate moral truth conditions."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the proposed definition and gives concrete domains that the speaker says it fails to capture."
+          }
+        },
+        "evidenceBasis": "The excerpt accepts the proposed terms but denies that human life or flourishing captures what people mean by morality.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-biological-versus-moral-values",
+        "sectionId": "section-animals-and-practical-boundaries",
+        "side": "pro",
+        "speaker": "Craig Biddle",
+        "moveKind": "reply",
+        "proposition": "General biological values differ from moral values, which arise within the sphere of human choice; valuing animal life therefore does not entail granting animals human rights.",
+        "sourceSpan": {
+          "startEvent": 2537,
+          "endEvent": 2580,
+          "excerpt": "moral values which only come in the sphere of human choice. Human values are chosen and we don't have automatic values. We have to decide what we're going to go after and that's why we need to think about it and use our reason to understand which values are good for our life and which are not. That's what morality is. It's the science that works on that project. So, um animals just simply don't have rights"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig directly answers the audience member's follow-up and continues the same account of values, morality, rights, and animals.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-hard-case-coherence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-flourishing-semantic-inadequacy",
+            "con-emotive-boundary-explanation",
+            "con-animal-torture-counterexample"
+          ],
+          "components": [
+            {
+              "componentId": "pro-biological-versus-moral-values-component-01",
+              "targetMoveId": "con-flourishing-semantic-inadequacy",
+              "text": "Explain how the account distinguishes concern for animal life from specifically human moral status and rights.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-biological-versus-moral-values-component-02",
+              "targetMoveId": "con-emotive-boundary-explanation",
+              "text": "Provide a rational rather than purely emotive account of differing moral treatment across species.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-biological-versus-moral-values-component-03",
+              "targetMoveId": "con-animal-torture-counterexample",
+              "text": "Explain why animals can matter without possessing human rights.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The response distinguishes general biological values from choice-dependent moral values and uses that distinction to explain concern without animal rights."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Biological value, moral value, human choice, and rights are expressly distinguished with stable domains."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Choice plausibly differentiates moral agency, but it does not by itself entail that animals possess no rights or protections."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Animals could lack moral agency yet retain rights or claims grounded in sentience, interests, or vulnerability.",
+          "decisiveQualification": "Distinguishing chosen moral values from biological values does not independently exclude patient-based rights."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It supports the subsidiary hard-case bridge by clarifying biological, moral, human, and animal domains."
+          },
+          "representationalCharity": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It explicitly contacts the boundary issue and clarifies status, though it does not fully justify the denial of all animal rights."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes general biological value from choice-dependent human morality and concludes that animals do not have rights.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, relevance findings, and importance judgments.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct uncaptured consequence is present.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing any alleged residual would not change burden completion independently of existing judgments."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility requirements for the con side.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate residual completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct consequence beyond the move-level judgments is identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance and burden-contact judgments"
+          ],
+          "counterfactual": "Removing the alleged residual would not change burden completion independently of already judged moves."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-moral-meaning-and-objectivity",
+        "title": "Moral Meaning, Emotion, and Objective Reference",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-objectivity-mind-fact-relation",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "pro-emotions-not-moral-knowledge",
+                "importance": 2,
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-emotivist-meaning",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "con-objective-oughtness-burden",
+                "importance": 3,
+                "score": 79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-life-as-value-foundation",
+        "title": "Life, Choice, and the Foundation of Value",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-life-living-organisms-found-value",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "pro-choice-to-live-precedes-value",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-immortality-counterexample",
+                "importance": 2,
+                "score": 86
+              },
+              {
+                "moveId": "con-premoral-choice-gap",
+                "importance": 3,
+                "score": 93
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-facts-to-ought-and-flourishing",
+        "title": "From Life Facts to Oughts and Flourishing",
+        "weightPercent": 21,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-oughts-guide-volitional-life",
+                "importance": 3,
+                "score": 80
+              },
+              {
+                "moveId": "pro-life-means-human-flourishing",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-life-value-circularity",
+                "importance": 3,
+                "score": 91
+              },
+              {
+                "moveId": "con-flourishing-semantic-inadequacy",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-egoism-rights-and-moral-agency",
+        "title": "Rational Egoism, Rights, and Moral Agency",
+        "weightPercent": 21,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-human-life-generates-rights",
+                "importance": 3,
+                "score": 76
+              },
+              {
+                "moveId": "pro-rights-protect-rational-freedom",
+                "importance": 3,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 92,
+            "moves": [
+              {
+                "moveId": "con-advantageous-murder-counterexample",
+                "importance": 3,
+                "score": 91
+              },
+              {
+                "moveId": "con-rights-presupposition",
+                "importance": 3,
+                "score": 92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-animals-and-practical-boundaries",
+        "title": "Animals, Harm, and Practical Boundaries",
+        "weightPercent": 11,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "pro-animal-abuse-anti-life",
+                "importance": 2,
+                "score": 70
+              },
+              {
+                "moveId": "pro-biological-versus-moral-values",
+                "importance": 2,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-animal-torture-counterexample",
+                "importance": 2,
+                "score": 87
+              },
+              {
+                "moveId": "con-emotive-boundary-explanation",
+                "importance": 2,
+                "score": 81
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.82,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      },
+      "con": {
+        "weightedSectionMean": 88.66,
+        "burdenCompletionAdjustment": 0,
+        "score": 89
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 20,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
