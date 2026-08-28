@@ -41,7 +41,7 @@ const [analysisBytes, compilationBytes, auditBytes, identityBytes] = await Promi
 const analysis = JSON.parse(analysisBytes); const compilation = JSON.parse(compilationBytes);
 const compilationAudit = JSON.parse(auditBytes); const identity = JSON.parse(identityBytes);
 assertV4(analysis.status === "four-debate-batch-17-deterministic-publication-compilation-passed" &&
-  analysis.gate?.compiledRecordsPassed === 10 && analysis.gate?.moves === 79 &&
+  analysis.gate?.compiledRecordsPassed === 4 && analysis.gate?.moves === 79 &&
   compilationAudit.status === "passed" && compilationAudit.totals?.moves === 79 &&
   canonicalJson(compilation.explicitOrder) === canonicalJson(POST_CANARY_BATCH_17_PUBLICATION_FINALIZATION_ORDER),
 "the accepted Batch 17 compilation changed");
@@ -118,4 +118,3 @@ if (shouldWrite) { await mkdir(path.dirname(path.resolve(MANIFEST)), { recursive
 console.log(JSON.stringify({ status: manifest.status, debates: 4, moves: 79,
   deterministicFinalizationPassesMaximum: 1, rerunsMaximum: 0, modelContexts: 0,
   directIncrementalCostUsd: 0, nextAuthorizedAction: manifest.nextAuthorizedAction }, null, 2));
-

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-finalization-preparation-control-failure",
+  "status": "preserved-stale-short-batch-compiled-record-count-control-failure",
+  "stage": "publication-finalization-preparation",
+  "failureOccurredBeforeAnyPreparationArtifactWasWritten": true,
+  "observedError": "the accepted Batch 17 compilation changed",
+  "diagnosis": {
+    "field": "compiledRecordsPassed",
+    "staleExpectedValue": 10,
+    "correctFrozenShortBatchValue": 4,
+    "authoritativeEvidence": "deterministic publication compilation analysis and audit"
+  },
+  "correctionBoundary": {
+    "controlCountOnly": true,
+    "compiledRecordsChanged": false,
+    "acceptedFieldsChanged": false,
+    "calculatedScoresChanged": false,
+    "scorePassRerun": false
+  }
+}
