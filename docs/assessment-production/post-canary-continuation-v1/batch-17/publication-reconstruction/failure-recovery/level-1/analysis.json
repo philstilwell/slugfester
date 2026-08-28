@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-continuation-level-1-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-17-publication-continuation-level-1-one-field-recovery",
+  "status": "batch-17-publication-level-1-one-field-recovery-passed",
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "originalFailuresPreserved": true,
+  "contexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "repairedValidationFields": 1,
+  "recoveredDebates": [
+    "171"
+  ],
+  "validationResults": [
+    {
+      "debateNumber": "171",
+      "contexts": 1,
+      "repairedFields": [
+        "moveProse.con-religious-commitments-material-harms.critique"
+      ],
+      "validation": {
+        "status": "passed",
+        "debateNumber": "171",
+        "moves": 22,
+        "critiques": 22,
+        "minimumCritiqueCharacters": 891,
+        "tags": 2,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    }
+  ],
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "continueUnattemptedInitialPublicationContexts": false,
+    "deterministicCohortFinalization": true,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "finalize-and-validate-the-complete-four-debate-batch-17-publication-cohort"
+}

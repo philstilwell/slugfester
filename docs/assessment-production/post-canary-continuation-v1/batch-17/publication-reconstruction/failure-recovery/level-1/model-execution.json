@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-continuation-level-1-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-17-publication-continuation-level-1-one-field-recovery",
+  "status": "one-field-batch-17-publication-recovery-level-1-execution-passed",
+  "startedAt": "2026-08-28T17:53:12.367Z",
+  "completedAt": "2026-08-28T17:53:40.462Z",
+  "elapsedMs": 28095,
+  "contextsAttempted": 1,
+  "validContexts": 1,
+  "invalidContexts": 0,
+  "attempts": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "results": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-171-critique-0-recovery-1",
+      "debateNumber": "171",
+      "kind": "critique",
+      "field": "moveProse.con-religious-commitments-material-harms.critique",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-28T17:53:12.368Z",
+      "completedAt": "2026-08-28T17:53:40.450Z",
+      "elapsedMs": 28082,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "stdoutSha256": "db29b9802e492b956eaf95e4d3020b4b0c513b75a2381f652d5fa6903597e163",
+      "stderrSha256": "38bc46d6da6fef72b42479fa5bd8c5a675c6fe56ed7525e082c690725ccb7d90",
+      "directIncrementalCostUsd": 0,
+      "status": "completed-valid",
+      "outputWritten": true,
+      "outputSha256": "47755d77c03eba1e111ce9cc53354314b360392f1ee69f5e1211af2fc8df46a5",
+      "validation": {
+        "kind": "critique",
+        "words": 122,
+        "characters": 1090,
+        "sentences": 4
+      },
+      "gateAcceptancePassed": true
+    }
+  ],
+  "authorization": {
+    "analysis": true,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "paidServices": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
