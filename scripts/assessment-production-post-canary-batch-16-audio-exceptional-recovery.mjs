@@ -232,8 +232,8 @@ async function prepare() {
   console.log(JSON.stringify({ status: shouldWrite ? preparation.status : "preview", calls: 4, primaryEstimateUsd, cumulativePrimaryEstimateUsd: primaryCumulativeEstimateUsd, longestFallbackEstimateUsd, worstCaseCumulativeEstimateUsd, capUsd, withinCap: true, scoresDerived: 0 }, null, 2));
 }
 
-async function validatePreparation(preparation) {
-  assert.equal(preparation.status, "prepared-four-batch-16-exceptional-paid-audio-recovery-calls-not-active");
+async function validatePreparation(preparation, expectedStatus = "prepared-four-batch-16-exceptional-paid-audio-recovery-calls-not-active") {
+  assert.equal(preparation.status, expectedStatus);
   assert.deepEqual(preparation.calls.map((call) => call.moveId), primaryMoveIds);
   assert.equal(preparation.costEstimate.worstCaseCumulativeEstimateUsd, worstCaseCumulativeEstimateUsd);
   assert.equal(preparation.costEstimate.withinCap, true);
@@ -268,7 +268,7 @@ async function activate() {
 
 async function validateActivation(manifest) {
   assert.equal(manifest.status, "frozen-four-batch-16-exceptional-paid-audio-recovery-calls-active");
-  await validatePreparation(manifest);
+  await validatePreparation(manifest, "frozen-four-batch-16-exceptional-paid-audio-recovery-calls-active");
   assert.equal(sha256(await readFile(manifest.preparationManifest.path)), manifest.preparationManifest.sha256);
   assert.equal(sha256(await readFile(manifest.authorization.path)), manifest.authorization.sha256);
   assert.equal(sha256(await readFile(manifest.executionTool.path)), manifest.executionTool.sha256);
