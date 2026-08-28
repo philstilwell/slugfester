@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-continuation-level-1-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-continuation-level-1-one-field-recovery",
+  "status": "batch-16-publication-continuation-level-1-one-field-recovery-passed",
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "originalFailuresPreserved": true,
+  "contexts": 6,
+  "attempts": 6,
+  "retries": 0,
+  "repairedValidationFields": 6,
+  "recoveredDebates": [
+    "108",
+    "164"
+  ],
+  "validationResults": [
+    {
+      "debateNumber": "108",
+      "contexts": 1,
+      "repairedFields": [
+        "representativeQuotes.con.text"
+      ],
+      "validation": {
+        "status": "passed",
+        "debateNumber": "108",
+        "moves": 16,
+        "critiques": 16,
+        "minimumCritiqueCharacters": 905,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 6,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "164",
+      "contexts": 5,
+      "repairedFields": [
+        "moveProse.pro-abstract-ontology-objection.critique",
+        "moveProse.con-irreducible-intrinsic-value.critique",
+        "moveProse.con-explanatory-parity.critique",
+        "moveProse.con-mental-causation-under-closure.critique",
+        "moveProse.con-supererogation-permission.critique"
+      ],
+      "validation": {
+        "status": "passed",
+        "debateNumber": "164",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 961,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    }
+  ],
+  "directIncrementalCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "continueUnattemptedInitialPublicationContexts": true,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "freeze-and-execute-the-seven-previously-unattempted-batch-16-publication-contexts"
+}
