@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-level-1-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-level-1-one-field-recovery",
+  "status": "batch-16-publication-level-1-recovery-gate-failed",
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "originalFailurePreserved": true,
+  "contexts": 9,
+  "attempts": 9,
+  "retries": 0,
+  "validContexts": 7,
+  "invalidContexts": 2,
+  "failedFields": [
+    "moveProse.con-abrahamic-similarity-and-christian-doctrinal-decline.critique",
+    "moveProse.con-church-organization-does-not-establish-moral-fitness.critique"
+  ],
+  "failurePreservation": {
+    "executionRecordsPreserved": true,
+    "validationMessagesPreserved": true,
+    "stdoutAndStderrHashesPreserved": true,
+    "rejectedTemporaryResultStringsPreserved": false,
+    "limitation": "The level-1 controller validated before copying result.json out of each isolated temporary directory, so the two rejected overlong strings were removed with those directories. Their field identities, observed word counts, validation traces, timing, and transport hashes remain preserved. No rejected string is reusable by level 2."
+  },
+  "directIncrementalCostUsd": 0,
+  "authorization": {
+    "recoveryLevel2Preparation": true,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-minimum-fresh-field-disjoint-batch-16-publication-recovery-level-2-shards"
+}
