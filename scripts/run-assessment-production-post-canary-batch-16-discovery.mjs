@@ -136,7 +136,7 @@ async function loadAndValidatePreparation({ requireFutureAbsent = false } = {}) 
       preparation.executionPolicy.timeoutMsPerContext === 300000 &&
       preparation.executionPolicy.timeoutExtensionsMaximum === 0 &&
       preparation.executionPolicy.absoluteGateTimeoutMs === 7200000 &&
-      preparation.executionPolicy.copiedInputBytesMaximum === 82209 &&
+      preparation.executionPolicy.copiedInputBytesMaximum === 66002 &&
       preparation.executionPolicy.maximumParallelContexts === 4 &&
       JSON.stringify(preparation.executionPolicy.schedulerRamp) ===
         JSON.stringify([1, 2, 4]) &&
@@ -146,7 +146,7 @@ async function loadAndValidatePreparation({ requireFutureAbsent = false } = {}) 
       preparation.executionPolicy.transcriptionCostUsdMaximum === 0 &&
       preparation.executionPolicy.separateActivationRequired === true &&
       preparation.copiedInputBoundary.frozenObservedCopiedInputBytesMaximum ===
-        82209 &&
+        66002 &&
       preparation.copiedInputBoundary.sourceOrPacketTruncationAllowed === false &&
       preparation.copiedInputBoundary.semanticRepartitionAllowed === false &&
       preparation.isolation.exactCopiedFilesPerContext === 4 &&
@@ -425,7 +425,7 @@ async function loadAndValidateActivation() {
       activation.executionPolicy.attemptsPerContext === 1 &&
       activation.executionPolicy.retriesMaximum === 0 &&
       activation.executionPolicy.timeoutExtensionsMaximum === 0 &&
-      activation.executionPolicy.copiedInputBytesMaximum === 82209 &&
+      activation.executionPolicy.copiedInputBytesMaximum === 66002 &&
       activation.executionPolicy.maximumParallelContexts === 4 &&
       JSON.stringify(activation.executionPolicy.schedulerRamp) ===
         JSON.stringify([1, 2, 4]) &&

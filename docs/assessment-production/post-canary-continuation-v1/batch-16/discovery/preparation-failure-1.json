@@ -94,5 +94,33 @@
       "acceptedFieldChanged": false,
       "scorePassRun": false
     }
+  },
+  "executionPreflightCheck": {
+    "status": "preserved-pre-model-execution-preflight-boundary-mismatch-corrected",
+    "error": "Batch 16 frozen discovery preparation is invalid",
+    "diagnosis": "The execution controller retained Batch 15's 82209-byte copied-input boundary in three preflight and activation assertions.",
+    "correction": {
+      "kind": "exact-deterministic-controller-boundary-correction",
+      "previousCopiedInputBytesMaximum": 82209,
+      "correctedCopiedInputBytesMaximum": 66002,
+      "assertionsCorrected": 3,
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "activationInvocationCheck": {
+    "status": "preserved-pre-model-command-invocation-error-corrected",
+    "error": "--activated-at requires an ISO timestamp",
+    "diagnosis": "The first activation command omitted the controller's required activation timestamp argument. It wrote no activation artifact and executed no model.",
+    "correction": {
+      "kind": "command-argument-correction",
+      "activationArtifactWrittenByFailedInvocation": false,
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "retryOfModelContext": false,
+      "scorePassRun": false
+    }
   }
 }
