@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-compatibility-activation-preview-controller-failure",
+  "status": "preserved-nonwriting-controller-mode-failure",
+  "stage": "production-compatibility-activation",
+  "observedError": "stored Batch 17 compatibility activation differs from deterministic replay",
+  "diagnosis": "Without --write, this controller validates an already stored activation rather than previewing a new one.",
+  "stateWrittenByFailedInvocation": false,
+  "compatibilityPassAttempted": false,
+  "recovery": "Run the unchanged controller once with --write under the standing authorization, then validate the resulting activation.",
+  "validActivationWrittenAfterDiagnosis": true,
+  "calculatedScoresChanged": false,
+  "scorePassRerun": false,
+  "nextBatchSelection": false
+}
