@@ -2563,9 +2563,13 @@ function renderLogicalExtension(debate) {
   if (!debate.logicalExtension) return "";
 
   const model = assessmentModelFor(debate);
+  const colorSampleClass =
+    debate.id === "jones-carrier-god-existence-2025"
+      ? " logical-extension-editorial-blue"
+      : "";
 
   return `
-    <section class="logical-extension" aria-labelledby="ai-extension-heading">
+    <section class="logical-extension${colorSampleClass}" aria-labelledby="ai-extension-heading">
       <div class="section-heading logical-extension-heading">
         <div>
           <p class="eyebrow">AI contribution</p>

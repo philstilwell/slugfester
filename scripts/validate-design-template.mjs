@@ -121,6 +121,7 @@ requireIncludes("app timestamp links", app, "renderTimestampLink(argument.time")
 requireIncludes("app guide", app, "◉ Deeper critiques");
 requireIncludes("app argument columns", app, "side-${sideKey}");
 requireExcludes("app argument placeholders", app, 'class="argument empty"');
+requireIncludes("app Debate 14 AI color sample", app, "logical-extension-editorial-blue");
 requireIncludes("app reference route", app, "referencePathRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
@@ -241,6 +242,11 @@ requireIncludes(
   ".argument.side-pro,\n  .argument.side-con {\n    grid-column: 1;"
 );
 requireIncludes("argument cards", styles, "min-height: 0;");
+requireIncludes(
+  "Debate 14 AI color sample",
+  styles,
+  ".logical-extension.logical-extension-editorial-blue"
+);
 requireIncludes("accessibility", styles, ".skip-link");
 requireIncludes("accessibility", styles, "@media (prefers-reduced-motion: reduce)");
 requireIncludes("performance", styles, "content-visibility: auto;");
