@@ -1,0 +1,1995 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+  "status": "frozen-post-canary-batch-16-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "debateNumber": "144",
+  "debateId": "plantinga-dennett-evolution-naturalism-2018",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+    "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+    "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+    "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+    "finalCandidateSha256": "2414709278d5f3df8b8b711bf9cd4495bb8c5824756eaf256874fc37766c9700",
+    "eventsPath": ".assessment-cache/captions/f06J2R4MwGA/events.json",
+    "eventsSha256": "aee6eb72b7be34b2624bacd44b894cece83f5e1b6c65e5bff30dbb1aeca865f2",
+    "finalJudgmentSha256": "72e049de451624777fe145cf7b3c41142fd3c1bac576e7986ffd38a6abb38bf8"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "144",
+    "debateId": "plantinga-dennett-evolution-naturalism-2018",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-theistic-compatibility-and-naturalist-self-defeat",
+        "side": "pro",
+        "description": "Establish that evolutionary mechanisms do not entail unguidedness or exclude divine intention, then argue that naturalism combined with evolution creates an internal epistemic problem concerning trust in cognition.",
+        "successCriteria": "The route succeeds if the compatibility distinction survives evidential objections and if the account of selection, mental content, and conditional cognitive reliability supports the claimed self-defeat of naturalism plus evolution.",
+        "motionBridge": {
+          "bridgeId": "bridge-pro-motion-compatibility-reversal",
+          "tier": "motion",
+          "description": "Connect the compatibility of theistic guidance with evolutionary science to the claim that the deeper epistemic conflict instead concerns naturalism plus evolution."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-pro-central-science-metaphysics-distinction",
+            "tier": "central",
+            "description": "Show that evolutionary concepts such as random mutation and contingency do not themselves entail metaphysical unguidedness or the denial of design."
+          },
+          {
+            "bridgeId": "bridge-pro-central-adaptation-truth-gap",
+            "tier": "central",
+            "description": "Establish that selection for adaptive neurophysiology and behavior does not by itself ensure the truth of associated propositional content."
+          },
+          {
+            "bridgeId": "bridge-pro-central-defeater-inference",
+            "tier": "central",
+            "description": "Explain why low conditional confidence in cognitive reliability would generate an undefeated defeater extending to belief in naturalism and evolution themselves."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-pro-subsidiary-theistic-warrant",
+            "tier": "subsidiary",
+            "description": "Explain why scientific counterevidence or the bare availability of unguided explanations need not by itself eliminate rational warrant for theistic belief."
+          },
+          {
+            "bridgeId": "bridge-pro-subsidiary-methodological-distinction",
+            "tier": "subsidiary",
+            "description": "Distinguish the methods used in scientific investigation from a metaphysical commitment that no divine cause exists."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-naturalist-explanation-and-cognitive-reliability",
+        "side": "con",
+        "description": "Grant the logical possibility of intervention while denying that compatibility supplies evidential support, then provide an evolutionary and scientific account of truth-tracking cognition that blocks the self-defeat argument.",
+        "successCriteria": "The route succeeds if logical compatibility is separated from warranted explanation and if naturalistic evolution, cultural representation, and corrective inquiry can account for sufficiently reliable cognition without a divine guarantee.",
+        "motionBridge": {
+          "bridgeId": "bridge-con-motion-naturalist-coherence",
+          "tier": "motion",
+          "description": "Connect the evidential adequacy of naturalistic explanation with a non-self-defeating account of evolved and scientifically corrected cognition."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-con-central-possibility-evidence-distinction",
+            "tier": "central",
+            "description": "Show that an intelligent cause remaining logically possible does not supply evidence that evolutionary outcomes were intelligently guided."
+          },
+          {
+            "bridgeId": "bridge-con-central-evolved-truth-tracking",
+            "tier": "central",
+            "description": "Explain how adaptive cognitive systems can depend causally on tracking relevant features of the world and eliminating recurrent errors."
+          },
+          {
+            "bridgeId": "bridge-con-central-epistemic-bootstrapping",
+            "tier": "central",
+            "description": "Account for increasing reliability through language, representation, measurement, engineering, and iterative scientific correction."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-con-subsidiary-scientific-method",
+            "tier": "subsidiary",
+            "description": "Clarify the role of naturalistic inquiry in testing design claims and comparing them with explanations grounded in observable processes."
+          },
+          {
+            "bridgeId": "bridge-con-subsidiary-religious-belief-explanation",
+            "tier": "subsidiary",
+            "description": "Provide a natural account of how religious beliefs can arise and persist without treating their prevalence as evidence of their truth."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "title": "Evolutionary Mechanisms, Guidance, and Randomness",
+        "weightPercent": 20,
+        "rationale": "This issue determines whether mutation, selection, contingency, and common ancestry are logically compatible with intentional divine creation or instead support only unguided causal accounts."
+      },
+      {
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "title": "Logical Compatibility Versus Evidential Support",
+        "weightPercent": 18,
+        "rationale": "The debate turns in part on whether showing that guidance cannot be excluded establishes only possibility or also supplies an epistemically relevant basis for a theistic interpretation."
+      },
+      {
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "title": "Scientific Method, Naturalism, and Theistic Warrant",
+        "weightPercent": 14,
+        "rationale": "This section addresses whether scientific practice presupposes metaphysical naturalism and whether scientific evidence can undermine the rational standing of theistic belief."
+      },
+      {
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "title": "Evolutionary Selection and Cognitive Reliability",
+        "weightPercent": 28,
+        "rationale": "This is the principal clash over whether selection for adaptive physiology and behavior can produce truth-tracking beliefs or leaves belief content insufficiently connected to truth."
+      },
+      {
+        "sectionId": "section-defeaters-correction-and-self-defeat",
+        "title": "Epistemic Defeaters, Scientific Correction, and Self-Defeat",
+        "weightPercent": 20,
+        "rationale": "This issue tests the inference from conditional doubts about cognitive origins to a defeater for naturalism and evolution against accounts of representational and scientific self-correction."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-guided-darwinian-creation",
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "Darwinian evolution is compatible with divine guidance because God could intend and orchestrate the evolutionary production of rational creatures bearing the divine image.",
+        "sourceSpan": {
+          "startEvent": 180,
+          "endEvent": 209,
+          "excerpt": "image. This requires that God intended to create creatures of a certain kind and planned that there be creatures of that kind, rational creatures with a moral sense and the capacity to know and love him. It It It It requires that God intended to create creatures of such a kind and then acted in such a way as to accomplish this intention. This claim is clearly consistent with evolution"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage continues Plantinga's announced first section and uses explicitly theistic premises characteristic of his stated position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-compatibility-reversal"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move directly states the route's compatibility thesis and supplies divine intention as the proposition joining theism with evolutionary production."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is recoverable as logical compatibility, with divine intention clearly distinguished from an empirical assertion about intervention."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The modal compatibility claim is asserted at the force supported by the proposed jointly possible theistic account."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Divine intention coherently supplies a possible bridge, though the orchestration mechanism remains deliberately unspecified."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "The move directly advances the motion-level compatibility-reversal bridge at its central point."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move presents its positive compatibility account without materially interpreting a live opposing alternative."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says creation requires God to intend and plan rational creatures with moral and religious capacities.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-biological-randomness-distinction",
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "Biological randomness means that mutations are not correlated with an organism's adaptive needs, which is compatible with those mutations being intended and caused by God.",
+        "sourceSpan": {
+          "startEvent": 270,
+          "endEvent": 325,
+          "excerpt": "occurring to an organism is random just as neither the organism nor its environment contains a mechanism or process or organ that causes adaptive mutations to occur. But clearly a mutation could be both random in that sense and also intended and indeed caused by God. Hence the randomness involved in Darwinism does not imply that the process is not divinely they The fact that it"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage is part of Plantinga's continuous address and explicitly draws its conclusion in terms of divine design and guidance.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-science-metaphysics-distinction"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move defines biological randomness and uses that definition to separate adaptive non-correlation from metaphysical chance or unguidedness."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Randomness is expressly limited to non-correlation between mutation production and an organism's adaptive needs."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The definition supports compatibility with intention without being presented as proof that divine causation occurred."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Biological randomness may be understood as evidence favoring an unguided process.",
+          "decisiveQualification": "Evidential favoring would still not make adaptive non-correlation logically entail metaphysical unguidedness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central science-versus-metaphysics distinction and reaches the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The move fairly limits its conclusion to what the biological definition does not entail, leaving evidential questions open."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt quotes Mayr defining random mutation as lacking correlation with adaptive needs, not as occurring without any intending cause.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-guidance-no-added-ontological-cost",
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "Within a theistic framework that already includes God, guided evolution adds no further entity and therefore gains no decisive simplicity disadvantage relative to unguided evolution.",
+        "sourceSpan": {
+          "startEvent": 638,
+          "endEvent": 821,
+          "excerpt": "to G, it is inferior to G in that the relevant likelihood is lower. But again, the real point lies in a different direction. Theistic noetic structure already, of course, includes the existence of God. Relative to that noetic structure, therefore, there is no additional optimistic cost in the hypothesis of guided evolution. As an analogy, suppose we land a spaceship on a planet"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The continuous Plantinga lecture introduces the final announced objection and repeatedly frames the response from the theist's existing commitments.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-science-metaphysics-distinction"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move answers a simplicity objection from within a theistic noetic structure, arguing that guidance adds no new entity once God is included."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The internal-framework qualification is explicit, but the kind of simplicity or cost being compared is not fully stabilized."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Conditional on an existing theistic noetic structure, the asserted absence of an additional entity follows as framed."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Guided evolution may remain explanatorily more complex even when God is already believed to exist.",
+          "decisiveQualification": "Entity count within a prior framework does not exhaust every evidential or explanatory simplicity consideration."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It advances the science-metaphysics distinction, though less directly than the explicit arguments about randomness and guidance."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "Within constructive moves, it gives a clear framework-relative simplicity answer but does not establish comparative evidence."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly says theistic noetic structure already includes God and guided evolution therefore adds no further ontological cost within it.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-evidence-warrant-distinction",
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "Even scientific evidence for unguided evolution would not by itself establish atheism or defeat the rationality and intrinsic warrant of theistic belief.",
+        "sourceSpan": {
+          "startEvent": 827,
+          "endEvent": 890,
+          "excerpt": "scientific evidence or otherwise for theism. But second and more important, as I mentioned, if the evidence is true, it is likely that it has its own intrinsic and basic source of warrant, something like the senses of an octopus proposed by John Calvin or the natural but confused knowledge of God proposed by Thomas Aquinas. If so, the warrant for theistic belief doesn't depend on the state of current science"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The move begins within Plantinga's uninterrupted lecture and explicitly extends his case to a hypothetical future formulation of evolutionary theory.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-theistic-warrant"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move distinguishes scientific counterevidence from the total warrant of theistic belief and proposes an intrinsic basic source of warrant."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional and defeasible form is clear: scientific evidence alone need not eliminate independently grounded warrant."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Conditional phrases such as 'if' and 'likely' appropriately limit the proposed basic-warrant consequence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Strong scientific counterevidence can defeat a belief even if that belief began with basic warrant.",
+          "decisiveQualification": "Independent basic warrant is not automatically indefeasible and must be weighed against the force of counterevidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary theistic-warrant bridge and occupies the upper part of that tier."
+          },
+          "representationalCharity": {
+            "value": 76,
+            "rationale": "The move recognizes possible scientific evidence but does not fully address when such evidence would override basic warrant."
+          },
+          "responsiveness": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes Calvin and Aquinas as models of intrinsic basic warrant independent of the current state of science.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-basic-theistic-warrant",
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "Scientific evidence against theism would neither establish theism's falsity nor necessarily defeat the rationality and warrant of basic theistic belief.",
+        "sourceSpan": {
+          "startEvent": 864,
+          "endEvent": 917,
+          "excerpt": "settle the issue. Suppose there is scientific evidence against theism. It doesn't follow that theism is false or that theists have to appeal for their beliefs or that theistic beliefs is irrational or is in some other way problematic. Perhaps there's also scientific evidence or otherwise for theism. But second and more important, as I mentioned, if the evidence is true, it is likely that it has its own intrinsic and basic source of warrant"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted first-person argument remains within Plantinga's opening presentation before Dennett is introduced.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-theistic-warrant"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move argues that evidence against theism does not deductively settle falsity, irrationality, or defeat when other evidence or basic warrant may remain."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Words such as does not follow, perhaps, and if explicitly preserve the claim's conditional and nondeductive scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move asserts only that counterevidence need not settle the issue, which matches the possibilities it supplies."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Scientific evidence could be sufficiently strong to defeat otherwise basic theistic warrant.",
+          "decisiveQualification": "The mere nonentailment of falsity does not show that actual counterevidence lacks defeating force."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "The move materially advances the subsidiary warrant bridge without resolving the evidential balance."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The alternative is acknowledged in general, though its potentially decisive evidential strength is not analyzed."
+          },
+          "responsiveness": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt states that scientific evidence against theism does not entail falsity or irrationality and identifies possible contrary evidence and basic warrant.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-naturalism-evolution-self-defeat",
+        "sectionId": "section-defeaters-correction-and-self-defeat",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "If naturalism and evolution make cognitive reliability unlikely, accepting that conjunction defeats confidence in cognition and thereby defeats every cognitively produced belief, including naturalism and evolution themselves.",
+        "sourceSpan": {
+          "startEvent": 965,
+          "endEvent": 987,
+          "excerpt": "low. Second premise, one who accepts N and E and sees that one is true has a defeater for R. Third premise, this defeater can't be itself defeated. Uh fourth premise, one who has a defeater a defeater for R has a defeater for any belief he takes to be produced by our cognitive faculties including N and E itself. Therefore, fifth, therefore, conclusion five, um N and E can N and E is self"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Plantinga expressly enumerates the premises and conclusion of his evolutionary argument against naturalism in his own presentation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-compatibility-reversal"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move lays out the complete defeater sequence from low conditional reliability through defeat of cognition to defeat of naturalism and evolution themselves."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The argument's conditional structure and its variables for naturalism, evolution, and reliability are expressly enumerated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The conclusion follows if all premises hold, but the undefeated-defeater premise is stated rather than defended in this span."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The conditional structure is explicit and consistent, though the transitions to a defeater and its undefeated status require defense."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly connects compatibility reversal and naturalist self-defeat at the motion level."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "This span presents the positive premise sequence without developing a competing reliability or correction account."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (92 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt lists low reliability, a defeater for reliability, indefeasibility, extension to all faculty-produced beliefs, and self-defeat.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-adaptation-truth-content-gap",
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "On materialist accounts of belief, evolution selects adaptive neurophysiology and behavior rather than true propositional content, so naturalism and evolution do not make cognitive reliability probable.",
+        "sourceSpan": {
+          "startEvent": 990,
+          "endEvent": 1168,
+          "excerpt": "neurophysiology producing that behavior is also adaptive. The natural selection doesn't give a fig about true belief just as such. It rewards adaptive behavior and punishes maladaptive behavior, but it doesn't care about the truth of a belief. As Patricia Churchland says, quote, \"Truth, whatever that is, definitely takes the hindmost.\" So, choose any particular belief B held by"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The extended technical analysis is continuously delivered by Plantinga and develops the first premise he had just identified as needing defense.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-adaptation-truth-gap"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move develops the central claim that selection directly rewards adaptive neurophysiology and behavior rather than propositional truth as such."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move limits the argument to materialist accounts and distinguishes physiology, behavior, content, and truth consistently."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Direct selection for adaptive behavior is supported, but the stronger probability conclusion about global reliability needs additional assumptions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Adaptive behavior can depend causally on sufficiently accurate representation even if selection does not value truth intrinsically.",
+          "decisiveQualification": "Indirect selection for truth-correlated content may narrow the gap between selected physiology and cognitive reliability."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "Evolutionary selection for adaptive outcomes is well motivated, while the content-probability conclusion remains largely philosophical assertion."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central adaptation-truth-gap bridge and reaches its indispensable inferential step."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "Within constructive moves, it directly develops the route's central adaptation-to-content gap with a specified materialist setting."
+          }
+        },
+        "evidenceBasis": "The excerpt says selection rewards adaptive behavior and its neurophysiology and does not care about true belief merely as such.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-undefeated-cognitive-defeater",
+        "sectionId": "section-defeaters-correction-and-self-defeat",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "constructive",
+        "proposition": "A defeater for cognitive reliability cannot be repaired without epistemic circularity, so it extends to naturalism and evolution and makes their conjunction irrational to accept.",
+        "sourceSpan": {
+          "startEvent": 1169,
+          "endEvent": 1211,
+          "excerpt": "for R has a defeater for any belief she takes to be produced by her cognitive faculties, including of course N and E itself. Hence one who accepts N and E and sees the truth of that first premise has a defeater for N and E. N and E therefore is self-defeating and cannot rationally be accepted. If so however, there is a conflict between naturalism and evolution. Their conjunction"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Plantinga completes his announced premise sequence and explicitly identifies the resulting conflict between evolution and naturalism.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-defeater-inference"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move completes the claimed extension from a defeater for reliability to every faculty-produced belief, including naturalism and evolution."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The subject, defeater, affected belief class, and conditional dependence on the first premise are all recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The extension is asserted categorically once the premises are accepted, but possible noncircular defeaters are not examined here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evidence-sensitive correction may restore local or global reliability without simply presupposing every challenged faculty.",
+          "decisiveQualification": "The argument must exclude discriminating, externally constrained, or comparatively supported repair rather than merely label repair circular."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central defeater-inference bridge at its final indispensable step."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move recognizes the circularity concern, although it does not fully distinguish vicious from unavoidable epistemic dependence."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "Within constructive moves, it clearly states the defeater consequence but compresses the argument against possible defeat-repair."
+          }
+        },
+        "evidenceBasis": "The excerpt extends a reliability defeater to every cognitive-faculty product, expressly including naturalism and evolution, and calls the conjunction self-defeating.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-observational-underdetermination-of-intervention",
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Evolutionary theory cannot demonstrate the absence of intelligent intervention because products of artificial and natural processes may be observationally indistinguishable.",
+        "sourceSpan": {
+          "startEvent": 1250,
+          "endEvent": 1441,
+          "excerpt": "so-called junk DNA of our of our of our genomes, this would not necessarily It wouldn't show that natural selection was not the answer because we could have been tampered with by intergalactic intelligences of an entirely non-supernatural sort uh many years ago. So, I agree with Alvin that contemporary evolutionary theory can't demonstrate the absence of intelligent design. Any"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dennett has been formally introduced and develops the point through his Martian-biologist examples and examples of misleading apparent design.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-science-metaphysics-distinction"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-biological-randomness-distinction",
+            "pro-guided-darwinian-creation"
+          ],
+          "components": [
+            {
+              "componentId": "con-observational-underdetermination-of-intervention-component-01",
+              "targetMoveId": "pro-biological-randomness-distinction",
+              "text": "Whether evolutionary evidence can exclude an intending or intelligent cause behind mutation and selection.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-observational-underdetermination-of-intervention-component-02",
+              "targetMoveId": "pro-guided-darwinian-creation",
+              "text": "Whether the observable evolutionary process remains compatible with intelligent guidance.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Dennett explicitly concedes that evolutionary theory cannot demonstrate the absence of intelligent design and uses observationally indistinguishable tampering to explain why."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conclusion is narrowly stated as observational underdetermination, not as evidence that intervention occurred."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The reply is carefully limited to observational underdetermination and does not infer evidence for actual design."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro claim establishes compatibility but need not allege empirical detectability of guidance.",
+          "decisiveQualification": "Conceding nondemonstrability supports compatibility while leaving evidential support for guidance entirely open."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "Observational equivalence validly supports the inability to infer the categorical absence of intervention."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central claim that science-metaphysics distinctions alone establish a pro advantage."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The reply accurately concedes the strongest bounded pro claim and preserves the distinct evidential question."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "This is a full and explicit answer to the bounded compatibility and exclusion demand."
+          }
+        },
+        "evidenceBasis": "The excerpt says contemporary evolutionary theory cannot demonstrate absence of intelligent design because evolutionary history could have been tampered with.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-consistency-does-not-supply-evidence",
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Bare consistency with evolutionary biology gives designer hypotheses no evidential support, and unsupported possibilities need not receive epistemic credibility merely because they remain possible.",
+        "sourceSpan": {
+          "startEvent": 1442,
+          "endEvent": 1547,
+          "excerpt": "designer or intelligent designers from another galaxy or another dimension fiddled with our evolutionary prehistory or salted Earth with life forms or even arranged for the constants of physics to take on their particular local values will find their fantasy consistent with contemporary evolutionary biology. So, I can consistently concede that point to Albert at this point. There's not a shred of evidence"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dennett directly addresses Plantinga and contrasts logical consistency with evidence and warranted public epistemic respect throughout the passage.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-possibility-evidence-distinction"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-guided-darwinian-creation",
+            "pro-guidance-no-added-ontological-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-consistency-does-not-supply-evidence-component-01",
+              "targetMoveId": "pro-guided-darwinian-creation",
+              "text": "Whether a possible reconciliation supplies epistemic support for guided evolution.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-consistency-does-not-supply-evidence-component-02",
+              "targetMoveId": "pro-guidance-no-added-ontological-cost",
+              "text": "Whether internal consistency or absence of added entity cost favors guidance evidentially.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply expressly identifies the inference from compatibility to evidential credibility as invalid and states that consistency alone supplies no support."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Consistency, evidence, and epistemic credibility remain distinct, and the conclusion is confined to evidential support."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The logical point is strong, but 'not a shred of evidence' exceeds what bare consistency alone can establish about all evidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro compatibility argument may seek only logical consistency rather than positive evidence for guidance.",
+          "decisiveQualification": "If compatibility alone is the stated burden, the evidential criticism limits rather than refutes that conclusion."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central possibility-evidence distinction at the highest part of that tier."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it squarely identifies the possibility-to-evidence failure and states its consequence for designer hypotheses."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes consistency between designer scenarios and evolutionary biology, then emphasizes that this supplies no positive evidence for them.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-evolution-compatible-with-determinism",
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Evolution does not require metaphysical indeterminism because deterministic evolutionary models successfully employ pseudorandom mutation and natural selection.",
+        "sourceSpan": {
+          "startEvent": 1627,
+          "endEvent": 1665,
+          "excerpt": "does natural selection. Okay. And so Alvin is right about that. Um Evolution can occur just fine in a deterministic world as thousands of deterministic computer models of evolution demonstrate on a daily basis. They're all deterministic. They rely on pseudo random number generators as the source of their so-called random mutations. So indeterminism is indeed a red herring both"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dennett expressly concedes Plantinga's point about randomness and supports it with the example of deterministic computer models of evolution.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-science-metaphysics-distinction"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-biological-randomness-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "con-evolution-compatible-with-determinism-component-01",
+              "targetMoveId": "pro-biological-randomness-distinction",
+              "text": "Whether evolutionary randomness requires indeterminism or metaphysical chance.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Dennett expressly agrees that indeterminism is unnecessary and supports the point with deterministic evolutionary computer models using pseudorandom mutation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Determinism, pseudorandom generation, mutation, and evolutionary modeling are consistently distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The existence of successful deterministic evolutionary models is sufficient for the bounded compatibility conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro distinction concerns divine intention, not merely whether evolution can be deterministic.",
+          "decisiveQualification": "Deterministic compatibility confirms the randomness distinction but does not decide whether a divine intention exists."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The computer-model example is specific and representative for logical compatibility, though not evidence about actual cosmic determinism."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It materially contacts the central metaphysical-randomness bridge, principally by conceding and clarifying it."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The reply fully and explicitly contacts the randomness demand with a concrete supporting example."
+          }
+        },
+        "evidenceBasis": "The excerpt cites deterministic evolutionary computer models employing pseudorandom number generators and concludes that indeterminism is a red herring.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-possibility-is-not-actual-causation",
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Showing that an outcome could have an intelligent cause does not show that it did, just as evidence for natural causes can leave murder logically possible without supporting it.",
+        "sourceSpan": {
+          "startEvent": 1666,
+          "endEvent": 1719,
+          "excerpt": "all the houses in the neighborhood. Many similar items were jiggled off shelves and tables in the neighborhood that day. There's no evidence that Tom was anywhere nearby. No sign of breaking and entering. No fingerprints. No DNA, etc. In all likelihood, says the defense, Fred's death was by natural causes, not a murder, not a death with an intending and intelligent author. Well"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dennett announces his third response and begins a sustained parallel story contrasting causal possibility with evidence for an intentional explanation.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-possibility-evidence-distinction"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-guided-darwinian-creation",
+            "pro-guidance-no-added-ontological-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-possibility-is-not-actual-causation-component-01",
+              "targetMoveId": "pro-guided-darwinian-creation",
+              "text": "Whether possible intelligent causation establishes actual divine guidance.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-possibility-is-not-actual-causation-component-02",
+              "targetMoveId": "pro-guidance-no-added-ontological-cost",
+              "text": "Whether compatibility or internal theoretical availability supplies evidence of actual guidance.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply diagnoses the modal-to-actual inference as invalid and uses the death analogy to show that logical possibility need not carry evidential weight."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Logical possibility, likelihood, evidence, natural cause, and intending cause remain separately recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The negative logical claim is fully warranted: possible intelligent causation does not by itself entail actual intelligent causation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro argument may assert compatibility only, not actual divine causation.",
+          "decisiveQualification": "The analogy defeats an actuality inference but leaves the narrower logical compatibility claim intact."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly completes the central possibility-versus-evidence distinction."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the decisive possibility-versus-actuality error and explains the evidential consequence."
+          }
+        },
+        "evidenceBasis": "The excerpt lists evidence supporting natural death while observing that murder remains possible, separating possibility from supported actual causation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-naturalistic-standards-for-design-science",
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Defending Behe's work as science while rejecting naturalism is methodologically unstable because scientific assessment depends on naturalistic inquiry and rebuttal by scientific evidence.",
+        "sourceSpan": {
+          "startEvent": 1745,
+          "endEvent": 1774,
+          "excerpt": "much maligned Michael Behe, he needs to make his peace with naturalism. Now Alvin called Behe's work serious and quantitative. Um I beg to disagree. It is neither serious nor quantitative. It is uh a transparent concoction of bad science and bad rhetoric and has been extremely patiently and well rebutted by well-regarded scientists. Now Behe's so-called scientific work has been"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage remains within Dennett's uninterrupted address and explicitly refers to Plantinga and Behe in the third person.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-scientific-method"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-evidence-warrant-distinction",
+            "pro-basic-theistic-warrant"
+          ],
+          "components": [
+            {
+              "componentId": "con-naturalistic-standards-for-design-science-component-01",
+              "targetMoveId": "pro-evidence-warrant-distinction",
+              "text": "Whether scientific counterevidence necessarily defeats the rational warrant of theistic belief.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-naturalistic-standards-for-design-science-component-02",
+              "targetMoveId": "pro-basic-theistic-warrant",
+              "text": "Whether basic theistic warrant can survive scientific counterevidence.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The criticism of Behe and defense of naturalistic scientific assessment bear on methodology, but they do not answer the decisive basic-warrant claim."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "Naturalism shifts between scientific method and metaphysical outlook, while the sweeping appraisal of Behe lacks a clear scope qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the work neither serious nor quantitative relies on reported authority and rhetoric without presenting the rebutting evidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A critic of metaphysical naturalism may consistently accept naturalistic methods for assessing empirical design claims.",
+          "decisiveQualification": "Methodological naturalism does not by itself require peace with metaphysical naturalism."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (62 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 53,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (52 and 54); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The reply materially compresses the distinction between scientific method and metaphysical commitment."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "Within relevant nonanswers, it supplies material methodological contrary evidence but leaves the targeted epistemic demand unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt calls Behe's work bad science and says respected scientists rebutted it, while arguing that scientific advocacy requires naturalistic standards.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-evolved-systems-systematically-track-truth",
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Naturalism plus evolution need not make cognition unreliable because evolution can produce syntactic systems whose usefulness depends on systematically tracking truth.",
+        "sourceSpan": {
+          "startEvent": 1966,
+          "endEvent": 2026,
+          "excerpt": "directly and aptly to meaning. But what it can do is what evolution can do is design what I call syntactic engines that track truth systematically. Consider hand calculators. It would be perfectly possible to make a hand calculator that got the answers all wrong. Wouldn't be much of a market for them. So, similarly, there isn't much of a market for low-reliability cognitive devices in in the biosphere. So, after Descartes, we don't need"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dennett announces the final issue, restates Plantinga's first premise, and gives his own sustained objection in the same speaking turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-evolved-truth-tracking"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-adaptation-truth-content-gap",
+            "pro-naturalism-evolution-self-defeat"
+          ],
+          "components": [
+            {
+              "componentId": "con-evolved-systems-systematically-track-truth-component-01",
+              "targetMoveId": "pro-adaptation-truth-content-gap",
+              "text": "Whether adaptive usefulness can depend systematically on tracking truth.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-evolved-systems-systematically-track-truth-component-02",
+              "targetMoveId": "pro-naturalism-evolution-self-defeat",
+              "text": "Whether evolution and naturalism make cognitive reliability sufficiently doubtful for self-defeat.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly contests the adaptation-truth gap by proposing syntactic engines whose market or biological usefulness depends on reliable outputs."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Systematic truth-tracking is clear, but the scope from calculators to evolved cognition and diverse belief domains is implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The existence claim is appropriately modal, but the extension from calculators to evolved cognition needs an implicit qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Selection can favor behavior while leaving propositional content false or indeterminate.",
+          "decisiveQualification": "A successful reply must explain why adaptive operation depends on truth-linked representation rather than behavior alone."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "Usefulness can require reliable outputs, but the calculator-to-evolved-semantic-belief analogy leaves a material bridge."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The calculator example is specific and illuminating, yet it supplies no representative biological or cognitive evidence."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central evolved-truth-tracking bridge at its principal clash."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The reply addresses the strongest indirect-selection concern, though it does not fully bridge syntax, semantics, and global reliability."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it contacts the decisive truth-tracking premise, though the calculator analogy leaves biological content mechanisms compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt proposes evolved syntactic engines that track truth and compares unreliable cognition to commercially useless unreliable calculators.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-reliability-through-cultural-bootstrapping",
+        "sectionId": "section-defeaters-correction-and-self-defeat",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Language, representation, approximation, and science permit continued bootstrapping toward cognitive reliability without requiring a divine guarantee of trustworthy faculties.",
+        "sourceSpan": {
+          "startEvent": 2033,
+          "endEvent": 2109,
+          "excerpt": "reliability apparently indefinitely. So, in other words, the ideal of the perfectly straight line doesn't uh what Plato might have called the form of the straight was in fact it arrived at by approximation both of the artifacts and of the idea itself. We can have bootstrapping. We don't need God from on high to tell us that our cognitive faculties are good. The form of the truth has a similar history. Science"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage continues Dennett's uninterrupted closing argument and uses first-person framing before drawing an explicit naturalist conclusion.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-epistemic-bootstrapping"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-undefeated-cognitive-defeater",
+            "pro-naturalism-evolution-self-defeat"
+          ],
+          "components": [
+            {
+              "componentId": "con-reliability-through-cultural-bootstrapping-component-01",
+              "targetMoveId": "pro-undefeated-cognitive-defeater",
+              "text": "Whether cognition can improve reliability without circular appeal to a divine guarantee.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-reliability-through-cultural-bootstrapping-component-02",
+              "targetMoveId": "pro-naturalism-evolution-self-defeat",
+              "text": "Whether correction can block the alleged global defeater for evolved cognition.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly offers approximation, representation, and science as a corrective process capable of increasing reliability without divine certification."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Bootstrapping and approximation are stable, but apparently indefinitely leaves the scope of achievable reliability unclear."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The proposal is framed as a possible continuing process, with approximation explicitly acknowledging fallibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Scientific correction may be epistemically circular if the reliability of all cognitive faculties is already defeated.",
+          "decisiveQualification": "External measurement and error correction must be shown to provide discriminating support rather than merely reuse defeated faculties."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central epistemic-bootstrapping bridge and attacks undefeated self-defeat."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply offers a serious corrective alternative but leaves the anti-circularity qualification less explicit than required."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it contacts the correction demand but does not fully answer the charge that all checking presupposes disputed faculties."
+          }
+        },
+        "evidenceBasis": "The excerpt describes approximation and continued bootstrapping, concluding that no divine guarantee is required for improving cognitive reliability.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-compatibility-possibility-clarification",
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "reply",
+        "proposition": "To establish compatibility between theism and Darwinism, it is enough to identify a possible supplementary proposition joining them; doing so does not assert that divine intervention actually occurred.",
+        "sourceSpan": {
+          "startEvent": 2163,
+          "endEvent": 2238,
+          "excerpt": "thought that um, God guided and orchestrated or rather my claim that it's possible that God could have guided and orchestrated the course of evolution. I wanted to argue that uh, theism and Darwinism are compatible. I wanted to do so by providing some third proposition R such that it's pretty clear that uh, theism and Darwinism and R are all compatible for which it would follow"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator yields to Plantinga, who then describes his own compatibility argument and Dennett's Superman comparison in the first person.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-possibility-evidence-distinction"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-possibility-is-not-actual-causation",
+            "con-consistency-does-not-supply-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-compatibility-possibility-clarification-component-01",
+              "targetMoveId": "con-possibility-is-not-actual-causation",
+              "text": "Whether the relevant burden is actual divine causation or only logical compatibility between theism and Darwinism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-compatibility-possibility-clarification-component-02",
+              "targetMoveId": "con-consistency-does-not-supply-evidence",
+              "text": "Whether a compatibility argument is committed to offering positive evidence for actual guidance.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "Plantinga justifies replacing an actuality or evidential demand with the motion's narrower compatibility demand and explains why a possible joining proposition is sufficient for that purpose."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Possible conjunction, commitment, compatibility, and actual intervention are expressly separated despite transcript disfluency."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move asserts only what its modal construction establishes and expressly denies the stronger actuality commitment."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con objections address evidential support and actual causation rather than denying bare compatibility.",
+          "decisiveQualification": "Clarifying the modal burden answers those objections only insofar as the debate demand is compatibility, not evidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central con possibility-evidence demand by clarifying the bounded pro burden."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The reply accurately narrows its own conclusion and does not claim that the con evidential distinction is false."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The justified reframe preserves the legitimate modal issue and explicitly answers the replacement demand."
+          }
+        },
+        "evidenceBasis": "The excerpt explains that a possible third proposition can make theism and Darwinism jointly possible without committing Plantinga to its actuality.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-selection-behavior-belief-distinction",
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "side": "pro",
+        "speaker": "Alvin Plantinga",
+        "moveKind": "reply",
+        "proposition": "Natural selection can favor adaptive neurophysiology and effective behavior without favoring the truth of beliefs produced by that same underlying physiology.",
+        "sourceSpan": {
+          "startEvent": 2471,
+          "endEvent": 2509,
+          "excerpt": "belief. Maybe the frog also has beliefs. Maybe those are the same physiology that produces this adaptive behavior also produces beliefs. But, does it matter whether the beliefs produced are true? Seems to me doesn't. Suppose the frog is Who knows what this frog is thinking as it does that? Maybe it's not thinking anything. What counts is or is the adaptivity of the neurophysiology"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Following an audience question directed to Plantinga, the answer uses Plantinga's characteristic frog example and continues through the locked lookahead.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-evolved-truth-tracking"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-evolved-systems-systematically-track-truth",
+            "con-reliability-through-cultural-bootstrapping"
+          ],
+          "components": [
+            {
+              "componentId": "pro-selection-behavior-belief-distinction-component-01",
+              "targetMoveId": "con-evolved-systems-systematically-track-truth",
+              "text": "Whether adaptive success of cognition requires the truth of the beliefs associated with adaptive neurophysiology.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-selection-behavior-belief-distinction-component-02",
+              "targetMoveId": "con-reliability-through-cultural-bootstrapping",
+              "text": "Whether later cognitive correction establishes that selection initially favors true belief content.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The frog example directly contacts the truth-tracking premise by separating adaptive physiology and behavior from whatever belief content the same physiology may produce."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The frog example makes the distinction recoverable, but its generalization to human propositional cognition is not fully scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker acknowledges uncertainty about frog belief, but generalizes from a simple behavior without a broader causal analysis."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Adaptive behavior may depend on belief-like representations being systematically accurate about relevant environmental features.",
+          "decisiveQualification": "Showing that false content is conceivable does not show that reliable content lacks an indirect selective advantage."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central evolved-truth-tracking bridge at the physiology-content connection."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The reply identifies the direct-selection gap but leaves the strongest indirect truth-tracking explanation unresolved."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "It contacts the decisive direct-selection component but does not answer cultural correction or indirect truth dependence."
+          }
+        },
+        "evidenceBasis": "The excerpt says the same adaptive frog physiology might produce beliefs whose truth is irrelevant to the behavior's adaptiveness.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-adaptation-requires-causal-truth-tracking",
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "Evolution can build cognitive systems whose continued adaptive functioning depends on causally tracking relevant truths, just as functional wings must actually enable effective flight.",
+        "sourceSpan": {
+          "startEvent": 2648,
+          "endEvent": 2714,
+          "excerpt": "But the claim that systems can't be designed to track truth and that are causally designed to track truth, uh everything in cognitive science and in evolutionary biology suggests strongly that that's exactly what has happened. That evolution has created these things where there is indeed causal relation between truth and those states and that the states that there are there are"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker explicitly identifies Alvin's premise and contrasts it with a career-long naturalistic account, while the ensuing analogy matches Dennett's stated position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-adaptation-truth-gap"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-selection-behavior-belief-distinction",
+            "pro-adaptation-truth-content-gap"
+          ],
+          "components": [
+            {
+              "componentId": "con-adaptation-requires-causal-truth-tracking-component-01",
+              "targetMoveId": "pro-selection-behavior-belief-distinction",
+              "text": "Whether adaptive cognitive functioning can be independent of causally tracking relevant truths.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-adaptation-requires-causal-truth-tracking-component-02",
+              "targetMoveId": "pro-adaptation-truth-content-gap",
+              "text": "Whether selection for adaptive function leaves truth wholly disconnected from cognitive success.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Dennett expressly identifies the alleged independence as the failure and states the defeating consequence: evolved cognitive systems can be causally designed to track truth."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is confined to relevant truths on which continued adaptive functioning depends, rather than perfect global accuracy."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The causal account is plausible, but the sweeping appeal to everything in two sciences exceeds the evidence displayed."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Adaptive physiology may produce effective behavior while associated propositional content remains false.",
+          "decisiveQualification": "The con account must show that relevant content itself, not merely subpersonal sensitivity, enters the adaptive causal chain."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The functional analogy and scientific appeal support plausibility, but representative cognitive evidence is not presented."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central adaptation-truth-gap bridge at its decisive causal premise."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply squarely addresses the indirect-selection objection, though it does not establish how broadly the mediation holds."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reply explicitly contacts the decisive causal inference, though its empirical defense remains compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that cognitive systems can be causally designed to track truth and claims cognitive science and evolutionary biology support that result.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-natural-explanation-of-religious-belief",
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "side": "con",
+        "speaker": "Daniel Dennett",
+        "moveKind": "reply",
+        "proposition": "A predictive natural-scientific explanation of how belief in God arises and persists without being true undercuts any presumption that its prevalence supports its truth.",
+        "sourceSpan": {
+          "startEvent": 2855,
+          "endEvent": 2882,
+          "excerpt": "natural sciences can provide us with a very compelling explanation of why and how people came to believe in God, which does not at all suppose that it would it would be a true belief, but if we can if we can diagnose the ideology of belief in God, uh, and even make predictions about how and why this would be the case and how it would work, then we have undercut the presumption"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The final question is expressly directed to Dan, and the answer presents a naturalistic case grounded in scientific explanation of religious belief before the moderator closes.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-religious-belief-explanation"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-basic-theistic-warrant",
+            "pro-evidence-warrant-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "con-natural-explanation-of-religious-belief-component-01",
+              "targetMoveId": "pro-basic-theistic-warrant",
+              "text": "Whether basic theistic belief retains warrant despite a natural causal explanation.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-natural-explanation-of-religious-belief-component-02",
+              "targetMoveId": "pro-evidence-warrant-distinction",
+              "text": "Whether scientific explanation of belief formation defeats an alleged intrinsic warrant source.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "A natural genealogy of religious belief bears on warrant, but the reply does not explain why causal explanation defeats basic warrant or establishes unreliability."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The causal-genealogical claim is clear, but undercutting the presumption is not scoped to a specified presumption or evidential baseline."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The conditional if-we-can formulation appropriately limits the undercutting conclusion, though the target presumption is implicit."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A natural explanation of belief formation can coexist with the belief's truth and with independent epistemic warrant.",
+          "decisiveQualification": "Genealogical explanation undercuts truth only if the process is shown insensitive to truth or defeats the claimed warrant source."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The proposed explanation and predictions are asserted rather than presented, leaving the undercutting conclusion weakly supported."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary natural-explanation bridge near the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The reply acknowledges that the explanation need not suppose truth but omits the decisive independence-of-warrant qualification."
+          },
+          "responsiveness": {
+            "value": 58,
+            "rationale": "Within relevant nonanswers, it supplies a potentially significant genealogy but leaves the decisive epistemic bridge unargued."
+          }
+        },
+        "evidenceBasis": "The excerpt proposes a predictive natural-scientific genealogy of belief in God that does not assume truth and would undercut a prevalence-based presumption.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains after the move ratings, response links, importance judgments, and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No independent residual completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "All identified consequences are captured in individual move judgments.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden contact",
+            "importance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion independently."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence remains after the move ratings, response links, importance judgments, and burden contacts.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No independent residual completion criterion is established.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "All identified consequences are captured in individual move judgments.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden contact",
+            "importance"
+          ],
+          "counterfactual": "Removing the proposed residual would not change burden completion independently."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-evolution-guidance-and-randomness",
+        "title": "Evolutionary Mechanisms, Guidance, and Randomness",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "pro-guided-darwinian-creation",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "pro-biological-randomness-distinction",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          },
+          "con": {
+            "score": 92,
+            "moves": [
+              {
+                "moveId": "con-observational-underdetermination-of-intervention",
+                "importance": 2,
+                "score": 91
+              },
+              {
+                "moveId": "con-evolution-compatible-with-determinism",
+                "importance": 2,
+                "score": 92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-compatibility-versus-evidential-support",
+        "title": "Logical Compatibility Versus Evidential Support",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pro-guidance-no-added-ontological-cost",
+                "importance": 2,
+                "score": 81
+              },
+              {
+                "moveId": "pro-compatibility-possibility-clarification",
+                "importance": 3,
+                "score": 92
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-consistency-does-not-supply-evidence",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-possibility-is-not-actual-causation",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-science-naturalism-and-theistic-warrant",
+        "title": "Scientific Method, Naturalism, and Theistic Warrant",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-evidence-warrant-distinction",
+                "importance": 2,
+                "score": 79
+              },
+              {
+                "moveId": "pro-basic-theistic-warrant",
+                "importance": 2,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 64,
+            "moves": [
+              {
+                "moveId": "con-naturalistic-standards-for-design-science",
+                "importance": 2,
+                "score": 62
+              },
+              {
+                "moveId": "con-natural-explanation-of-religious-belief",
+                "importance": 2,
+                "score": 65
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-evolution-and-cognitive-reliability",
+        "title": "Evolutionary Selection and Cognitive Reliability",
+        "weightPercent": 28,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-adaptation-truth-content-gap",
+                "importance": 3,
+                "score": 80
+              },
+              {
+                "moveId": "pro-selection-behavior-belief-distinction",
+                "importance": 3,
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-evolved-systems-systematically-track-truth",
+                "importance": 3,
+                "score": 83
+              },
+              {
+                "moveId": "con-adaptation-requires-causal-truth-tracking",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-defeaters-correction-and-self-defeat",
+        "title": "Epistemic Defeaters, Scientific Correction, and Self-Defeat",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-naturalism-evolution-self-defeat",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "pro-undefeated-cognitive-defeater",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-reliability-through-cultural-bootstrapping",
+                "importance": 3,
+                "score": 82
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 82.86,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      },
+      "con": {
+        "weightedSectionMean": 83.76,
+        "burdenCompletionAdjustment": 0,
+        "score": 84
+      }
+    },
+    "winner": "con",
+    "winningMargin": 1
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 19,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
