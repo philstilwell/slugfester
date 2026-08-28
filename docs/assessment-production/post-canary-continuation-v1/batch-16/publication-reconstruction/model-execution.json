@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-reconstruction",
+  "status": "post-canary-batch-16-publication-gate-complete-with-failure",
+  "gateStartedAt": "2026-08-28T13:52:07.571Z",
+  "gateCompletedAt": "2026-08-28T13:55:33.202Z",
+  "contextsPlanned": 10,
+  "contextsAttempted": 1,
+  "contextsUnattempted": 9,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "correctionContexts": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 205630,
+  "aggregateModelElapsedMs": 205616,
+  "meanElapsedMs": 205616,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "correctionContextCount": 0,
+      "startedAt": "2026-08-28T13:52:07.572Z",
+      "completedAt": "2026-08-28T13:55:33.188Z",
+      "elapsedMs": 205616,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "ownDebateScoresImmutable": true,
+      "copiedInputBytes": 208142,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "894c235ae2e8fa4474ab4304c2174e225b1bb2f3e7d081bdf99b2349c4413d3a",
+      "stderrSha256": "cb36ffb9dd1bf34a5d960a22c53cd4828aeef2a486d5ac63f076f1cd7ee98782",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "0dce18f13622abf3906990282b9f20aaaef73683037ea3ce47a85ebf3fa8ffbc",
+      "validationWritten": true,
+      "validationSha256": "930c695ccb793057727a94ec941b6b90fb7a1762e214b105071b1104a2923293",
+      "provenanceWritten": true,
+      "provenanceSha256": "3bcfcb6873dbc700632f44735a9e00c7282dfd419793e0d758881c7fc7568401",
+      "validationSummary": null,
+      "validationMessage": "Error: con-personal-recovery-does-not-establish-christianity: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch16PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-16-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-16-publication.mjs:272:29)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-16-publication.mjs:398:22)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-16-publication.mjs:401:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-16-publication.mjs:426:24"
+    }
+  ],
+  "participantJudgmentWasScoreBlind": true,
+  "ownDebateScoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "repairPacketPreparation": false,
+    "correctionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

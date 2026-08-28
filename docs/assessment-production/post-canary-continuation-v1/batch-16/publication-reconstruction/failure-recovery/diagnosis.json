@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-failure-diagnosis",
+  "status": "batch-16-publication-canary-nine-critique-fields-failed",
+  "diagnosedAt": "2026-08-28T13:57:41.569Z",
+  "checkpointCommit": "e5729e7643d563b2209ce5bb95c09f69a323cef7",
+  "batchNumber": 16,
+  "debateNumber": "16",
+  "sourceFailure": {
+    "status": "output-validation-failed",
+    "attemptedContexts": 1,
+    "unattemptedContextIndexes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "priorAttemptPreserved": true,
+    "retries": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failedCritiques": [
+    {
+      "moveId": "con-personal-recovery-does-not-establish-christianity",
+      "field": "moveProse.con-personal-recovery-does-not-establish-christianity.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 131,
+      "observedCharacters": 1019,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "con-benefit-does-not-make-existential-claims-true",
+      "field": "moveProse.con-benefit-does-not-make-existential-claims-true.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 133,
+      "observedCharacters": 1025,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "con-abrahamic-similarity-and-christian-doctrinal-decline",
+      "field": "moveProse.con-abrahamic-similarity-and-christian-doctrinal-decline.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 131,
+      "observedCharacters": 1062,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "pro-scriptural-and-exemplar-distinction",
+      "field": "moveProse.pro-scriptural-and-exemplar-distinction.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 133,
+      "observedCharacters": 1056,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "con-church-organization-does-not-establish-moral-fitness",
+      "field": "moveProse.con-church-organization-does-not-establish-moral-fitness.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 131,
+      "observedCharacters": 1040,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "pro-criticism-requires-viable-replacement",
+      "field": "moveProse.pro-criticism-requires-viable-replacement.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 132,
+      "observedCharacters": 1074,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "pro-affirmative-belief-against-islamist-recruitment",
+      "field": "moveProse.pro-affirmative-belief-against-islamist-recruitment.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 132,
+      "observedCharacters": 1049,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "pro-confident-inheritance-and-active-countermessage",
+      "field": "moveProse.pro-confident-inheritance-and-active-countermessage.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 132,
+      "observedCharacters": 1067,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    },
+    {
+      "moveId": "con-enlightened-rationality-against-ideological-virus",
+      "field": "moveProse.con-enlightened-rationality-against-ideological-virus.critique",
+      "failures": [
+        "word-count"
+      ],
+      "observedWords": 134,
+      "observedCharacters": 1141,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    }
+  ],
+  "totals": {
+    "invalidFields": 9,
+    "validCompanionCritiques": 8,
+    "otherTopLevelFieldsDeterministicallyValid": true
+  },
+  "diagnosisMethod": {
+    "everyCritiqueContractChecked": true,
+    "nonCritiqueFieldsReplayedWithInMemoryDiagnosticSubstitution": true,
+    "diagnosticSubstitutionPersisted": false,
+    "originalOutputAltered": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/model-execution.json": "e51c046f60e81839833060093d04464b8a7197032cc21c208b487301e5db2fe7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/analysis.json": "16924567a9a273b80f55567cccd972d0c33612521f314ddf4755ad419504258a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-16.json": "4d3684f345594eb66daf9095b89af94fb8cf95a1befdba86300823950b6e0f46",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-16.json": "0dce18f13622abf3906990282b9f20aaaef73683037ea3ce47a85ebf3fa8ffbc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-16.json": "930c695ccb793057727a94ec941b6b90fb7a1762e214b105071b1104a2923293",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-16.json": "3bcfcb6873dbc700632f44735a9e00c7282dfd419793e0d758881c7fc7568401"
+  },
+  "authorization": {
+    "minimumFreshFieldDisjointRecoveryShards": true,
+    "recoveryLevel": 1,
+    "attemptsPerShard": 1,
+    "retries": false,
+    "continueUnattemptedInitialContextsAfterRecovery": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-nine-fresh-one-field-batch-16-publication-recovery-shards"
+}
