@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-preparation-test-failure",
+  "status": "preserved-corrected-before-model-execution",
+  "batchNumber": 17,
+  "cause": "The adapted preparation test retained Batch 15's 51-section total, seven-context steady-phase index generator, and ten-context time estimate after Batch 17 was shortened to 21 sections and four contexts.",
+  "effect": {
+    "packetPreparationPassed": true,
+    "modelContextsExecuted": 0,
+    "publicationOutputsCreated": 0,
+    "acceptedFieldsChanged": false,
+    "scoresChanged": false
+  },
+  "correction": {
+    "sections": 21,
+    "steadyPhaseContextIndexes": [3],
+    "expectedParallelWallMinutes": [10, 20],
+    "expectedAggregateModelMinutes": [17, 28],
+    "type": "exact-derived-control-repair"
+  }
+}
