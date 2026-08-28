@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-publication-timeout-recovery-provenance",
+  "protocolId": "assessment-production-post-canary-batch-15-publication-level-1-field-disjoint-recovery",
+  "debateNumber": "128",
+  "sourceFailure": {
+    "status": "timed-out",
+    "originalOutputAvailable": false,
+    "partialOutputReused": false
+  },
+  "shards": [
+    {
+      "contextIndex": 14,
+      "writableFields": [
+        "moveProse"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/failure-recovery/level-1/outputs/context-14.json",
+      "outputSha256": "94522b10a5f3a3bd9938a008d910f1f3517147f083a8687ff933535218ff5565"
+    },
+    {
+      "contextIndex": 15,
+      "writableFields": [
+        "summary",
+        "representativeQuotes"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/failure-recovery/level-1/outputs/context-15.json",
+      "outputSha256": "9e32d08e3b516caea3505e7f244c09413e7ed187daa7035ec4b1d919cc9d3db7"
+    },
+    {
+      "contextIndex": 16,
+      "writableFields": [
+        "overallCommentary",
+        "aiExtension"
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/failure-recovery/level-1/outputs/context-16.json",
+      "outputSha256": "b790aa637f7a5fa8ae8ddb6b57581327d53a0a01787068f37a4ec2c7d8a6cb9b"
+    }
+  ],
+  "merge": {
+    "eachTopLevelWritableFieldAcceptedExactlyOnce": true,
+    "nonModelIdentityAndAuditFieldsFilledFromFrozenSchemaConstants": true,
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "fullValidationPassed": true
+  }
+}
