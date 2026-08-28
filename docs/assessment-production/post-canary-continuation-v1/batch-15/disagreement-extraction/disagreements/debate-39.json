@@ -1,0 +1,3572 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-15-decomposed-consensus",
+  "debateNumber": "39",
+  "debateId": "lambert-jones-christian-faith-skepticism-2021",
+  "moveDisputes": [
+    {
+      "moveId": "con-sincere-skeptic-hell",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 89,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-hell-chosen-separation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-sincere-skeptic-hell"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hell-chosen-separation-component-01",
+                  "targetMoveId": "con-sincere-skeptic-hell",
+                  "text": "Whether hell condemns a sincere skeptic merely because earthly time expires.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hell-chosen-separation-component-02",
+                  "targetMoveId": "con-sincere-skeptic-hell",
+                  "text": "Whether Lambert's evidential sincerity is compatible with a freely chosen separation from God.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-sincere-skeptic-hell"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hell-chosen-separation-component-01",
+                  "targetMoveId": "con-sincere-skeptic-hell",
+                  "text": "Whether hell condemns a sincere evidence-sensitive nonbeliever merely because earthly time expires.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "bridge-con-central-moral-sincere-nonbelief"
+              }
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-pro-central-hiddenness-judgment"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-postmortem-recognition-present-belief",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-hell-chosen-separation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-postmortem-recognition-present-belief-component-01",
+                  "targetMoveId": "pro-hell-chosen-separation",
+                  "text": "If choice remains after death, why present Christian belief is necessary now.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-postmortem-recognition-present-belief-component-02",
+                  "targetMoveId": "pro-hell-chosen-separation",
+                  "text": "Whether present happiness after leaving Christianity bears on a supposedly freely chosen hell identity.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-hell-chosen-separation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-postmortem-recognition-present-belief-component-01",
+                  "targetMoveId": "pro-hell-chosen-separation",
+                  "text": "If choice remains possible after death, what present belief contributes or why it is presently necessary.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-hell-present-sanctification",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-postmortem-recognition-present-belief",
+                "con-sincere-skeptic-hell"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hell-present-sanctification-component-01",
+                  "targetMoveId": "con-postmortem-recognition-present-belief",
+                  "text": "Why union with God and Christian commitment matter during earthly life.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hell-present-sanctification-component-02",
+                  "targetMoveId": "con-postmortem-recognition-present-belief",
+                  "text": "Whether Lambert's present happiness after leaving belief shows that present commitment lacks value.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hell-present-sanctification-component-03",
+                  "targetMoveId": "con-sincere-skeptic-hell",
+                  "text": "Whether sincere evidential nonbelief itself warrants condemnation or a hell identity.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-postmortem-recognition-present-belief",
+                "con-sincere-skeptic-hell"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hell-present-sanctification-component-01",
+                  "targetMoveId": "con-postmortem-recognition-present-belief",
+                  "text": "Why union with God and belief matter during earthly life despite reported present happiness without Christianity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hell-present-sanctification-component-02",
+                  "targetMoveId": "con-sincere-skeptic-hell",
+                  "text": "How judgment relates to the sincere skeptic's evidential condition rather than only to present spiritual formation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 87
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 67,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-biblical-faith-contrary-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 62,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-faith-prior-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-biblical-faith-contrary-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-faith-prior-evidence-component-01",
+                  "targetMoveId": "con-biblical-faith-contrary-evidence",
+                  "text": "Whether Thomas and Abraham exemplify belief without or against evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-faith-prior-evidence-component-02",
+                  "targetMoveId": "con-biblical-faith-contrary-evidence",
+                  "text": "Whether contrary appearances erase prior testimonial, physical, or promissory evidence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-biblical-faith-contrary-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-faith-prior-evidence-component-01",
+                  "targetMoveId": "con-biblical-faith-contrary-evidence",
+                  "text": "The inference from lack of direct sight or contrary appearances to biblical belief without supporting evidence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-competing-scriptures-privilege",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-faith-prior-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-competing-scriptures-privilege-component-01",
+                  "targetMoveId": "pro-faith-prior-evidence",
+                  "text": "Why comparable evidential trust should privilege Christian sources over competing sacred writings.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 60
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-faith-prior-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-competing-scriptures-privilege-component-01",
+                  "targetMoveId": "pro-faith-prior-evidence",
+                  "text": "Whether the Christian examples provide a non-question-begging basis for privileging Christian sources over competing sacred traditions.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 56
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-pluralism-worldview-comparison",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-competing-scriptures-privilege"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-pluralism-worldview-comparison-component-01",
+                  "targetMoveId": "con-competing-scriptures-privilege",
+                  "text": "Whether Christianity can be defended through public comparison rather than assumed privilege.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-pluralism-worldview-comparison-component-02",
+                  "targetMoveId": "con-competing-scriptures-privilege",
+                  "text": "What specific evidence distinguishes Christianity from Vedic writings and other religions.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-competing-scriptures-privilege"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-pluralism-worldview-comparison-component-01",
+                  "targetMoveId": "con-competing-scriptures-privilege",
+                  "text": "A non-question-begging, case-specific reason to prefer Christianity over Vedic and other religious commitments.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 61,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 60
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 65,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 65
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-apostolic-disagreement-reliability",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-pluralism-worldview-comparison"
+              ],
+              "components": [
+                {
+                  "componentId": "con-apostolic-disagreement-reliability-component-01",
+                  "targetMoveId": "pro-pluralism-worldview-comparison",
+                  "text": "Whether public worldview comparison establishes Christianity as more likely than rivals.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-faith-prior-evidence",
+                "pro-pluralism-worldview-comparison"
+              ],
+              "components": [
+                {
+                  "componentId": "con-apostolic-disagreement-reliability-component-01",
+                  "targetMoveId": "pro-faith-prior-evidence",
+                  "text": "Whether apostolic testimony can supply reliable prior evidence when early Christian authorities visibly disagreed.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-apostolic-disagreement-reliability-component-02",
+                  "targetMoveId": "pro-pluralism-worldview-comparison",
+                  "text": "Whether Christianity survives public scrutiny better than competing worldviews.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 69
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 75
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 70,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-ancient-testimony-resurrection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-pluralism-worldview-comparison"
+              ],
+              "components": [
+                {
+                  "componentId": "con-ancient-testimony-resurrection-component-01",
+                  "targetMoveId": "pro-pluralism-worldview-comparison",
+                  "text": "Whether public comparison provides adequate grounds for Christian confidence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 61
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-faith-prior-evidence",
+                "pro-pluralism-worldview-comparison"
+              ],
+              "components": [
+                {
+                  "componentId": "con-ancient-testimony-resurrection-component-01",
+                  "targetMoveId": "pro-faith-prior-evidence",
+                  "text": "Whether ancient testimony and textual reports are sufficient evidence for confidence that Jesus actually rose.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-ancient-testimony-resurrection-component-02",
+                  "targetMoveId": "pro-pluralism-worldview-comparison",
+                  "text": "Whether Christian resurrection confidence is better grounded than the supernatural claims of rival religions.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 84
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-method",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-ancient-testimony-resurrection"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-resurrection-cumulative-method-component-01",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "Whether resurrection confidence rests merely on isolated texts, martyrdom reports, or subjective experience.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-cumulative-method-component-02",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "What broader evidential method can rationally reach the resurrection conclusion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-ancient-testimony-resurrection",
+                "con-apostolic-disagreement-reliability",
+                "con-biblical-faith-contrary-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-resurrection-cumulative-method-component-01",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "Whether isolated texts or minimal facts are sufficient to warrant confidence in resurrection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-cumulative-method-component-02",
+                  "targetMoveId": "con-biblical-faith-contrary-evidence",
+                  "text": "Whether Christian belief is maintained without a broader evidential foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-cumulative-method-component-03",
+                  "targetMoveId": "con-apostolic-disagreement-reliability",
+                  "text": "Whether New Testament reliability can withstand source-level difficulties.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-resurrection-comparative-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-ancient-testimony-resurrection",
+                "con-apostolic-disagreement-reliability"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-01",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "What evidence beyond bare ancient testimony supports resurrection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-02",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "Whether rival naturalistic explanations are comparatively weaker.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-03",
+                  "targetMoveId": "con-apostolic-disagreement-reliability",
+                  "text": "Whether early Christian disagreement undermines the reliability of the relevant testimony.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-ancient-testimony-resurrection",
+                "con-apostolic-disagreement-reliability",
+                "con-competing-scriptures-privilege"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-01",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "Whether resurrection confidence rests on more than ancient texts and subjective religious experience.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-02",
+                  "targetMoveId": "con-apostolic-disagreement-reliability",
+                  "text": "Whether early Christian disagreement defeats the reliability of resurrection proclamation.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-resurrection-comparative-evidence-component-03",
+                  "targetMoveId": "con-competing-scriptures-privilege",
+                  "text": "Whether resurrection evidence distinguishes Christianity from rival sacred claims.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 85
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-loving-god-adequate-disclosure",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-resurrection-comparative-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-loving-god-adequate-disclosure-component-01",
+                  "targetMoveId": "pro-resurrection-comparative-evidence",
+                  "text": "Whether the listed historical considerations make resurrection the best explanation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 55
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-faith-prior-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-loving-god-adequate-disclosure-component-01",
+                  "targetMoveId": "pro-faith-prior-evidence",
+                  "text": "Whether the claimed prior evidence constitutes adequate disclosure for sincere nonbelievers.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 87
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-hiddenness-moral-transformation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-loving-god-adequate-disclosure"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hiddenness-moral-transformation-component-01",
+                  "targetMoveId": "con-loving-god-adequate-disclosure",
+                  "text": "Why God might limit disclosure despite wanting human beings to know the truth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hiddenness-moral-transformation-component-02",
+                  "targetMoveId": "con-loving-god-adequate-disclosure",
+                  "text": "Whether sincere nonbelievers presently possess disclosure sufficient for responsible relationship.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-loving-god-adequate-disclosure"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hiddenness-moral-transformation-component-01",
+                  "targetMoveId": "con-loving-god-adequate-disclosure",
+                  "text": "Why a loving God might permissibly withhold clearer disclosure from sincere nonbelievers.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 68,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scripture-fallible-authors",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-apostolic-disagreement-reliability",
+                "con-loving-god-adequate-disclosure"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scripture-fallible-authors-component-01",
+                  "targetMoveId": "con-apostolic-disagreement-reliability",
+                  "text": "Whether substantive apostolic conflicts undermine a unified reliable divine message.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scripture-fallible-authors-component-02",
+                  "targetMoveId": "con-loving-god-adequate-disclosure",
+                  "text": "Whether culturally mediated fallible communication provides sincere seekers adequate disclosure.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 63
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-apostolic-disagreement-reliability"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scripture-fallible-authors-component-01",
+                  "targetMoveId": "con-apostolic-disagreement-reliability",
+                  "text": "How substantive conflicts among early Christian authorities remain compatible with a reliably unified divine message.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 63
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 64
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-naturalistic-religious-experience",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-hiddenness-moral-transformation",
+                "pro-scripture-fallible-authors"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-religious-experience-component-01",
+                  "targetMoveId": "pro-hiddenness-moral-transformation",
+                  "text": "Whether hiddenness specifically facilitates moral transformation and authentic allegiance.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-naturalistic-religious-experience-component-02",
+                  "targetMoveId": "pro-scripture-fallible-authors",
+                  "text": "Whether fallible oral transmission can preserve reliable divine meaning.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 56
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-pluralism-worldview-comparison"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-religious-experience-component-01",
+                  "targetMoveId": "pro-pluralism-worldview-comparison",
+                  "text": "The comparative reason for treating Christian religious experience as evidentially distinctive rather than naturally produced.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 55
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 85
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-exodus-minimal-migration",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "nonanswer",
+              "decisiveTargetIds": [
+                "con-naturalistic-religious-experience"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-exodus-minimal-migration-component-01",
+                  "targetMoveId": "con-naturalistic-religious-experience",
+                  "text": "Whether naturalistic mechanisms adequately explain experiences interpreted as supernatural gifts.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 20
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "nonanswer",
+              "decisiveTargetIds": [
+                "con-ancient-testimony-resurrection"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-exodus-minimal-migration-component-01",
+                  "targetMoveId": "con-ancient-testimony-resurrection",
+                  "text": "Why inherited ancient texts should be sufficient evidence for an extraordinary historical or supernatural conclusion.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 25
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "medium"
+          },
+          "candidate2": {
+            "assessmentConfidence": "high"
+          }
+        },
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-exodus-scale-archaeology",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-exodus-minimal-migration"
+              ],
+              "components": [
+                {
+                  "componentId": "con-exodus-scale-archaeology-component-01",
+                  "targetMoveId": "pro-exodus-minimal-migration",
+                  "text": "Whether a modest Exodus remains evidentially credible despite the canonical account's scale.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-exodus-scale-archaeology-component-02",
+                  "targetMoveId": "pro-exodus-minimal-migration",
+                  "text": "Whether inherited textual tradition and compatible archaeology positively support migration from Egypt.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-exodus-minimal-migration"
+              ],
+              "components": [
+                {
+                  "componentId": "con-exodus-scale-archaeology-component-01",
+                  "targetMoveId": "pro-exodus-minimal-migration",
+                  "text": "Whether a modest migration reconstruction has enough archaeological and textual support to count as a trustworthy historical core.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 75
+            },
+            "candidate2": {
+              "value": 69
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 88
+            },
+            "candidate2": {
+              "value": 79
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-exodus-ancient-numbers",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-exodus-scale-archaeology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-exodus-ancient-numbers-component-01",
+                  "targetMoveId": "con-exodus-scale-archaeology",
+                  "text": "Whether enormous Exodus numbers should reduce trust in the historical account.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-exodus-ancient-numbers-component-02",
+                  "targetMoveId": "con-exodus-scale-archaeology",
+                  "text": "Whether limited archaeological confirmation remains problematic after ancient-number interpretation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-exodus-scale-archaeology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-exodus-ancient-numbers-component-01",
+                  "targetMoveId": "con-exodus-scale-archaeology",
+                  "text": "Whether the enormous population figures should undermine trust when read under appropriate ancient numerical conventions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-exodus-ancient-numbers-component-02",
+                  "targetMoveId": "con-exodus-scale-archaeology",
+                  "text": "Whether limited archaeological confirmation independently undermines the proposed historical core.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 60
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 73,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-pluralism-case-specific-comparison",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 23,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-exodus-scale-archaeology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-pluralism-case-specific-comparison-component-01",
+                  "targetMoveId": "con-exodus-scale-archaeology",
+                  "text": "Whether Exodus scale and archaeology undermine trust in that historical account.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 54
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-competing-scriptures-privilege",
+                "con-naturalistic-religious-experience"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-pluralism-case-specific-comparison-component-01",
+                  "targetMoveId": "con-competing-scriptures-privilege",
+                  "text": "What non-question-begging method can distinguish Christian claims from competing religious stories and commitments.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-pluralism-case-specific-comparison-component-02",
+                  "targetMoveId": "con-naturalistic-religious-experience",
+                  "text": "Whether group priming and psychological mechanisms explain specific Christian religious experiences.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-scripture-human-cultural-development",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-scripture-fallible-authors"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scripture-human-cultural-development-component-01",
+                  "targetMoveId": "pro-scripture-fallible-authors",
+                  "text": "Whether fallible human transmission can still preserve a divinely intended scriptural message.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scripture-human-cultural-development-component-02",
+                  "targetMoveId": "pro-scripture-fallible-authors",
+                  "text": "What evidence distinguishes successful divine use of authors from ordinary cultural development.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-scripture-fallible-authors"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scripture-human-cultural-development-component-01",
+                  "targetMoveId": "pro-scripture-fallible-authors",
+                  "text": "Whether culturally situated and fallible human transmission is adequately explained by divine inspiration rather than ordinary human development.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 66
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 64
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scripture-meaning-over-exactness",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-scripture-human-cultural-development"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scripture-meaning-over-exactness-component-01",
+                  "targetMoveId": "con-scripture-human-cultural-development",
+                  "text": "Whether human cultural development and discrepancies defeat scriptural theological reliability.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scripture-meaning-over-exactness-component-02",
+                  "targetMoveId": "con-scripture-human-cultural-development",
+                  "text": "How preserved theological meaning can be identified and verified despite discrepancies.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-scripture-human-cultural-development"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scripture-meaning-over-exactness-component-01",
+                  "targetMoveId": "con-scripture-human-cultural-development",
+                  "text": "Whether culturally situated human composition defeats scripture's capacity to convey theologically relevant meaning.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 70,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 68
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-resurrection-ordinary-rival-testimony",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-pluralism-case-specific-comparison",
+                "pro-resurrection-comparative-evidence",
+                "pro-resurrection-cumulative-method"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-ordinary-rival-testimony-component-01",
+                  "targetMoveId": "pro-resurrection-comparative-evidence",
+                  "text": "Whether the cumulative resurrection data outperform ordinary and rival religious explanations.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-resurrection-ordinary-rival-testimony-component-02",
+                  "targetMoveId": "pro-resurrection-cumulative-method",
+                  "text": "Whether a cumulative method has supplied reasons to prefer resurrection over ordinary finality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-resurrection-ordinary-rival-testimony-component-03",
+                  "targetMoveId": "pro-pluralism-case-specific-comparison",
+                  "text": "Whether case-specific comparison has distinguished Christian testimony from rival religious testimony.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-resurrection-comparative-evidence",
+                "pro-resurrection-cumulative-method"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-ordinary-rival-testimony-component-01",
+                  "targetMoveId": "pro-resurrection-comparative-evidence",
+                  "text": "Why the cited resurrection testimony and cumulative facts should be preferred over ordinary death-finality expectations and rival religious testimony.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-resurrection-ordinary-rival-testimony-component-02",
+                  "targetMoveId": "pro-resurrection-cumulative-method",
+                  "text": "Whether the announced cumulative method actually supplies a comparative reason to privilege resurrection testimony.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 92
+            },
+            "candidate2": {
+              "value": 85
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-sincere-skeptic-hell",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-sincere-skeptic-hell",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 89,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-hell-chosen-separation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-hell-chosen-separation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-postmortem-recognition-present-belief",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-postmortem-recognition-present-belief",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-hell-present-sanctification",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-hell-present-sanctification",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 67,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "con-biblical-faith-contrary-evidence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-biblical-faith-contrary-evidence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 62,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "pro-faith-prior-evidence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-faith-prior-evidence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 78,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-competing-scriptures-privilege",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-competing-scriptures-privilege",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-competing-scriptures-privilege",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "pro-pluralism-worldview-comparison",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-pluralism-worldview-comparison",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 61,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "pro-pluralism-worldview-comparison",
+      "fieldKey": "representationalCharity",
+      "candidate1": 65,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "con-apostolic-disagreement-reliability",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-apostolic-disagreement-reliability",
+      "fieldKey": "representationalCharity",
+      "candidate1": 70,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-ancient-testimony-resurrection",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-method",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-method",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-method",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-resurrection-comparative-evidence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-loving-god-adequate-disclosure",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-hiddenness-moral-transformation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-hiddenness-moral-transformation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-hiddenness-moral-transformation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 68,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-naturalistic-religious-experience",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-exodus-minimal-migration",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-exodus-minimal-migration",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-exodus-ancient-numbers",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-exodus-ancient-numbers",
+      "fieldKey": "representationalCharity",
+      "candidate1": 73,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-pluralism-case-specific-comparison",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-pluralism-case-specific-comparison",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-pluralism-case-specific-comparison",
+      "fieldKey": "representationalCharity",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-scripture-human-cultural-development",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-scripture-meaning-over-exactness",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-scripture-meaning-over-exactness",
+      "fieldKey": "representationalCharity",
+      "candidate1": 70,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 68
+    },
+    {
+      "moveId": "con-resurrection-ordinary-rival-testimony",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-resurrection-ordinary-rival-testimony",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 74
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [
+    "pro-exodus-minimal-migration"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "39",
+      "moves": 23,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 23,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch15IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
