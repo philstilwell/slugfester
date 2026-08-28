@@ -1,0 +1,2392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-post-canary-batch-16-publication-16",
+  "title": "Slugfester post-canary Batch 16 publication Debate 16",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "completedAt",
+    "summary",
+    "representativeQuotes",
+    "moveProse",
+    "overallCommentary",
+    "aiExtension",
+    "displayContract",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-16-publication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-16-publication-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "16"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hirsi-ali-dawkins-god-debate-2024"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "representativeQuotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "pro-experiential-crisis-prayer-recovery",
+                "pro-chosen-faith-personal-and-civilizational-planes",
+                "pro-christian-love-redemption-and-distinction",
+                "pro-public-christian-decline-moral-vacuum",
+                "pro-scriptural-and-exemplar-distinction",
+                "pro-inheritance-without-humanist-substitute",
+                "pro-criticism-requires-viable-replacement",
+                "pro-affirmative-belief-against-islamist-recruitment",
+                "pro-confident-inheritance-and-active-countermessage"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "con-personal-recovery-does-not-establish-christianity",
+                "con-inherited-sin-and-vicarious-punishment-objection",
+                "con-supernatural-creator-is-universe-defining-claim",
+                "con-benefit-does-not-make-existential-claims-true",
+                "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                "con-secular-moral-philosophy-supplies-judgment-standard",
+                "con-church-organization-does-not-establish-moral-fitness",
+                "con-enlightened-rationality-against-ideological-virus"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        }
+      }
+    },
+    "moveProse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-experiential-crisis-prayer-recovery",
+        "con-personal-recovery-does-not-establish-christianity",
+        "pro-chosen-faith-personal-and-civilizational-planes",
+        "con-inherited-sin-and-vicarious-punishment-objection",
+        "pro-christian-love-redemption-and-distinction",
+        "pro-public-christian-decline-moral-vacuum",
+        "con-supernatural-creator-is-universe-defining-claim",
+        "con-benefit-does-not-make-existential-claims-true",
+        "con-abrahamic-similarity-and-christian-doctrinal-decline",
+        "con-secular-moral-philosophy-supplies-judgment-standard",
+        "pro-scriptural-and-exemplar-distinction",
+        "pro-inheritance-without-humanist-substitute",
+        "con-church-organization-does-not-establish-moral-fitness",
+        "pro-criticism-requires-viable-replacement",
+        "pro-affirmative-belief-against-islamist-recruitment",
+        "pro-confident-inheritance-and-active-countermessage",
+        "con-enlightened-rationality-against-ideological-virus"
+      ],
+      "properties": {
+        "pro-experiential-crisis-prayer-recovery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-personal-recovery-does-not-establish-christianity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-chosen-faith-personal-and-civilizational-planes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-inherited-sin-and-vicarious-punishment-objection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-christian-love-redemption-and-distinction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-public-christian-decline-moral-vacuum": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-supernatural-creator-is-universe-defining-claim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-benefit-does-not-make-existential-claims-true": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-abrahamic-similarity-and-christian-doctrinal-decline": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-secular-moral-philosophy-supplies-judgment-standard": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-scriptural-and-exemplar-distinction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-inheritance-without-humanist-substitute": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-church-organization-does-not-establish-moral-fitness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-criticism-requires-viable-replacement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-affirmative-belief-against-islamist-recruitment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-confident-inheritance-and-active-countermessage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-enlightened-rationality-against-ideological-virus": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overallCommentary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiExtension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "aiGenerated",
+        "disclaimer",
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "aiGenerated": {
+          "type": "boolean",
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string",
+          "const": "This section is an AI-generated contribution, not transcript content. Its wording is not attributable to either participant and it does not affect any participant score."
+        },
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-experiential-crisis-prayer-recovery",
+                          "con-personal-recovery-does-not-establish-christianity",
+                          "pro-chosen-faith-personal-and-civilizational-planes",
+                          "con-inherited-sin-and-vicarious-punishment-objection",
+                          "pro-christian-love-redemption-and-distinction",
+                          "pro-public-christian-decline-moral-vacuum",
+                          "con-supernatural-creator-is-universe-defining-claim",
+                          "con-benefit-does-not-make-existential-claims-true",
+                          "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                          "con-secular-moral-philosophy-supplies-judgment-standard",
+                          "pro-scriptural-and-exemplar-distinction",
+                          "pro-inheritance-without-humanist-substitute",
+                          "con-church-organization-does-not-establish-moral-fitness",
+                          "pro-criticism-requires-viable-replacement",
+                          "pro-affirmative-belief-against-islamist-recruitment",
+                          "pro-confident-inheritance-and-active-countermessage",
+                          "con-enlightened-rationality-against-ideological-virus"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-experiential-crisis-prayer-recovery",
+                            "con-personal-recovery-does-not-establish-christianity",
+                            "pro-chosen-faith-personal-and-civilizational-planes",
+                            "con-inherited-sin-and-vicarious-punishment-objection",
+                            "pro-christian-love-redemption-and-distinction",
+                            "pro-public-christian-decline-moral-vacuum",
+                            "con-supernatural-creator-is-universe-defining-claim",
+                            "con-benefit-does-not-make-existential-claims-true",
+                            "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                            "con-secular-moral-philosophy-supplies-judgment-standard",
+                            "pro-scriptural-and-exemplar-distinction",
+                            "pro-inheritance-without-humanist-substitute",
+                            "con-church-organization-does-not-establish-moral-fitness",
+                            "pro-criticism-requires-viable-replacement",
+                            "pro-affirmative-belief-against-islamist-recruitment",
+                            "pro-confident-inheritance-and-active-countermessage",
+                            "con-enlightened-rationality-against-ideological-virus"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-experiential-crisis-prayer-recovery",
+                          "con-personal-recovery-does-not-establish-christianity",
+                          "pro-chosen-faith-personal-and-civilizational-planes",
+                          "con-inherited-sin-and-vicarious-punishment-objection",
+                          "pro-christian-love-redemption-and-distinction",
+                          "pro-public-christian-decline-moral-vacuum",
+                          "con-supernatural-creator-is-universe-defining-claim",
+                          "con-benefit-does-not-make-existential-claims-true",
+                          "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                          "con-secular-moral-philosophy-supplies-judgment-standard",
+                          "pro-scriptural-and-exemplar-distinction",
+                          "pro-inheritance-without-humanist-substitute",
+                          "con-church-organization-does-not-establish-moral-fitness",
+                          "pro-criticism-requires-viable-replacement",
+                          "pro-affirmative-belief-against-islamist-recruitment",
+                          "pro-confident-inheritance-and-active-countermessage",
+                          "con-enlightened-rationality-against-ideological-virus"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-experiential-crisis-prayer-recovery",
+                            "con-personal-recovery-does-not-establish-christianity",
+                            "pro-chosen-faith-personal-and-civilizational-planes",
+                            "con-inherited-sin-and-vicarious-punishment-objection",
+                            "pro-christian-love-redemption-and-distinction",
+                            "pro-public-christian-decline-moral-vacuum",
+                            "con-supernatural-creator-is-universe-defining-claim",
+                            "con-benefit-does-not-make-existential-claims-true",
+                            "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                            "con-secular-moral-philosophy-supplies-judgment-standard",
+                            "pro-scriptural-and-exemplar-distinction",
+                            "pro-inheritance-without-humanist-substitute",
+                            "con-church-organization-does-not-establish-moral-fitness",
+                            "pro-criticism-requires-viable-replacement",
+                            "pro-affirmative-belief-against-islamist-recruitment",
+                            "pro-confident-inheritance-and-active-countermessage",
+                            "con-enlightened-rationality-against-ideological-virus"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-experiential-crisis-prayer-recovery",
+                          "con-personal-recovery-does-not-establish-christianity",
+                          "pro-chosen-faith-personal-and-civilizational-planes",
+                          "con-inherited-sin-and-vicarious-punishment-objection",
+                          "pro-christian-love-redemption-and-distinction",
+                          "pro-public-christian-decline-moral-vacuum",
+                          "con-supernatural-creator-is-universe-defining-claim",
+                          "con-benefit-does-not-make-existential-claims-true",
+                          "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                          "con-secular-moral-philosophy-supplies-judgment-standard",
+                          "pro-scriptural-and-exemplar-distinction",
+                          "pro-inheritance-without-humanist-substitute",
+                          "con-church-organization-does-not-establish-moral-fitness",
+                          "pro-criticism-requires-viable-replacement",
+                          "pro-affirmative-belief-against-islamist-recruitment",
+                          "pro-confident-inheritance-and-active-countermessage",
+                          "con-enlightened-rationality-against-ideological-virus"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-experiential-crisis-prayer-recovery",
+                            "con-personal-recovery-does-not-establish-christianity",
+                            "pro-chosen-faith-personal-and-civilizational-planes",
+                            "con-inherited-sin-and-vicarious-punishment-objection",
+                            "pro-christian-love-redemption-and-distinction",
+                            "pro-public-christian-decline-moral-vacuum",
+                            "con-supernatural-creator-is-universe-defining-claim",
+                            "con-benefit-does-not-make-existential-claims-true",
+                            "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                            "con-secular-moral-philosophy-supplies-judgment-standard",
+                            "pro-scriptural-and-exemplar-distinction",
+                            "pro-inheritance-without-humanist-substitute",
+                            "con-church-organization-does-not-establish-moral-fitness",
+                            "pro-criticism-requires-viable-replacement",
+                            "pro-affirmative-belief-against-islamist-recruitment",
+                            "pro-confident-inheritance-and-active-countermessage",
+                            "con-enlightened-rationality-against-ideological-virus"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-experiential-crisis-prayer-recovery",
+                          "con-personal-recovery-does-not-establish-christianity",
+                          "pro-chosen-faith-personal-and-civilizational-planes",
+                          "con-inherited-sin-and-vicarious-punishment-objection",
+                          "pro-christian-love-redemption-and-distinction",
+                          "pro-public-christian-decline-moral-vacuum",
+                          "con-supernatural-creator-is-universe-defining-claim",
+                          "con-benefit-does-not-make-existential-claims-true",
+                          "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                          "con-secular-moral-philosophy-supplies-judgment-standard",
+                          "pro-scriptural-and-exemplar-distinction",
+                          "pro-inheritance-without-humanist-substitute",
+                          "con-church-organization-does-not-establish-moral-fitness",
+                          "pro-criticism-requires-viable-replacement",
+                          "pro-affirmative-belief-against-islamist-recruitment",
+                          "pro-confident-inheritance-and-active-countermessage",
+                          "con-enlightened-rationality-against-ideological-virus"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-experiential-crisis-prayer-recovery",
+                            "con-personal-recovery-does-not-establish-christianity",
+                            "pro-chosen-faith-personal-and-civilizational-planes",
+                            "con-inherited-sin-and-vicarious-punishment-objection",
+                            "pro-christian-love-redemption-and-distinction",
+                            "pro-public-christian-decline-moral-vacuum",
+                            "con-supernatural-creator-is-universe-defining-claim",
+                            "con-benefit-does-not-make-existential-claims-true",
+                            "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                            "con-secular-moral-philosophy-supplies-judgment-standard",
+                            "pro-scriptural-and-exemplar-distinction",
+                            "pro-inheritance-without-humanist-substitute",
+                            "con-church-organization-does-not-establish-moral-fitness",
+                            "pro-criticism-requires-viable-replacement",
+                            "pro-affirmative-belief-against-islamist-recruitment",
+                            "pro-confident-inheritance-and-active-countermessage",
+                            "con-enlightened-rationality-against-ideological-virus"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "displayContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sectionTitle",
+        "placement",
+        "defaultCollapsed",
+        "visualVariant",
+        "byline",
+        "prohibitedLanguageScanPassed"
+      ],
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "const": "AI Extension"
+        },
+        "placement": {
+          "type": "string",
+          "const": "immediately-after-overall-commentary"
+        },
+        "defaultCollapsed": {
+          "type": "boolean",
+          "const": true
+        },
+        "visualVariant": {
+          "type": "string",
+          "const": "ai-distinct"
+        },
+        "byline": {
+          "type": "string",
+          "const": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+        },
+        "prohibitedLanguageScanPassed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lockedScoresUnchanged",
+        "everyMoveAuthoredOnce",
+        "legacyAssessmentUnavailable",
+        "otherDebatesUnavailable",
+        "aiMaterialExcludedFromScores",
+        "sourceOnlyQuoteSelection"
+      ],
+      "properties": {
+        "lockedScoresUnchanged": {
+          "type": "boolean",
+          "const": true
+        },
+        "everyMoveAuthoredOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "aiMaterialExcludedFromScores": {
+          "type": "boolean",
+          "const": true
+        },
+        "sourceOnlyQuoteSelection": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
