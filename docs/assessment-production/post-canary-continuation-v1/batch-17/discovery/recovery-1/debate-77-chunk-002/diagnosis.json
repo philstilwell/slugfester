@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-discovery-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-17-debate-77-chunk-002-discovery-recovery-1",
+  "status": "single-atomic-chronology-validation-failure-diagnosed-one-fresh-context-required",
+  "diagnosedAt": "2026-08-28T16:00:24.000Z",
+  "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-17/discovery/model-execution.json",
+  "originalExecutionSha256": "380e3e2f8fb53acfafec2aa6447a8debde608db40d4c925386e81b27a312d94b",
+  "failure": {
+    "contextIndex": 1,
+    "debateNumber": "77",
+    "chunkId": "chunk-002",
+    "classification": "complete-schema-conforming-output-rejected-because-final-candidate-start-event-was-not-chronological",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "failedOutputPreserved": true,
+    "failedOutputSha256": "da40955f8a225ac6dab98871d5e886935d8cb10c62012d0e6ec31bbbabd7a6dc",
+    "failedPartialOutputReusable": false
+  },
+  "schedulerStop": {
+    "contextsPlanned": 17,
+    "contextsAttempted": 3,
+    "contextsAccepted": 2,
+    "contextsUnattempted": 14,
+    "unattemptedContextIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "finding": "The source, transport, schema, speaker allowlist, and complete-core review passed. The atomic output failed only because its tenth candidate began earlier than its ninth. One fresh full-context pass with an explicit ascending-start-event instruction is the minimum diagnosed recovery; the fourteen never-attempted contexts retain their original primary attempts.",
+  "nextAuthorizedAction": "freeze-one-fresh-recovery-context-and-fourteen-original-primary-resumptions"
+}
