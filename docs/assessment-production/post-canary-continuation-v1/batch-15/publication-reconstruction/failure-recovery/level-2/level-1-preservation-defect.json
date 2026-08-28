@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-recovery-preservation-defect",
+  "status": "level-1-two-rejected-raw-shard-payloads-unavailable-metadata-and-validation-preserved",
+  "recordedAt": "2026-08-28T02:29:03Z",
+  "affectedContextIndexes": [
+    9,
+    10
+  ],
+  "cause": "The level-one controller deleted each temporary result after runtime validation failed and before copying the rejected raw JSON into the repository.",
+  "preserved": {
+    "executionPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/failure-recovery/level-1/model-execution.json",
+    "executionSha256": "d5e2285c894dd5ab82eafa7b80912dc2e0eaba66ae845cb463e83becf1ce8806",
+    "fieldAssignments": true,
+    "outputHashes": false,
+    "timings": true,
+    "completeValidationErrors": true,
+    "stdoutAndStderrHashes": true
+  },
+  "unrecoverable": {
+    "exactRejectedRawJson": true
+  },
+  "correction": {
+    "levelTwoWritesRawOutputBeforeRuntimeValidation": true,
+    "freshAtomicSingleFieldShards": 4,
+    "rejectedProseReused": false
+  }
+}
