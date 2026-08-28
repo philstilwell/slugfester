@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-15-compatibility-execution-analysis",
   "protocolId": "assessment-production-post-canary-batch-15-production-compatibility",
-  "status": "batch-15-production-compatibility-passed",
+  "status": "batch-15-production-compatibility-failed-closed",
   "analyzedAt": "2026-08-28T02:48:39.471Z",
   "execution": {
     "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/execution.json",
-    "sha256": "1270d7fa3d6466cde2bb630c4a5c99c10c88bccc9dcc0fa2eec1d9d4500f0f3e"
+    "sha256": "a8e47cb0bf986560e3a5e0b259ece3f84a7793cd1df3e81521f708a1a45b3177"
   },
   "decision": {
-    "compatibilityGatePassed": true,
+    "compatibilityGatePassed": false,
     "singleAuthorizedPassAttempted": true,
-    "singleAuthorizedPassCompleted": true,
-    "failedClosed": false,
+    "singleAuthorizedPassCompleted": false,
+    "failedClosed": true,
     "rerunPerformed": false,
     "retryPerformed": false,
-    "automaticRepairPerformed": true,
+    "automaticRepairPerformed": false,
     "modelExecutionPerformed": false,
     "paidServiceUsed": false,
     "productionMutationPerformed": false
@@ -26,7 +26,7 @@
     "checkpointBatch01ThroughBatch14LegacyReferencePassed": true,
     "fullRepositoryPassed": true,
     "diffIntegrityPassed": true,
-    "allowedWritesOnly": true,
+    "allowedWritesOnly": false,
     "productionProtected": true
   },
   "totals": {
@@ -37,10 +37,10 @@
     "stagedAdapters": 10,
     "stagedAdapterBytes": 1140079,
     "compatibilityPassesAttempted": 1,
-    "compatibilityPassesCompleted": 1,
+    "compatibilityPassesCompleted": 0,
     "reruns": 0,
     "retries": 0,
-    "automaticRepairs": 1,
+    "automaticRepairs": 0,
     "modelContexts": 0,
     "modelAuthoredScores": 0,
     "scoreChanges": 0,
@@ -51,7 +51,7 @@
     "directIncrementalCostUsd": 0,
     "productionLedgerPublications": 0,
     "productionMutations": 0,
-    "compatibilityAcceptancePassed": true
+    "compatibilityAcceptancePassed": false
   },
   "authorization": {
     "compatibilityExecution": true,
@@ -65,13 +65,6 @@
     "productionMutation": false,
     "nextBatchSelection": false
   },
-  "recovery": {
-    "level": 1,
-    "type": "exact-deterministic-derived-control-correction",
-    "originalAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/failure-recovery/level-1/original-analysis.json",
-    "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/failure-recovery/level-1/diagnosis-and-correction.json",
-    "passRerun": false,
-    "testsRerun": false
-  },
-  "nextAuthorizedAction": "prepare-batch-15-production-publication-mutation-manifest-under-standing-authorization"
+  "nextAuthorizedAction": "diagnose-batch-15-compatibility-failure-under-failure-recovery-standing-authorization"
 }
+

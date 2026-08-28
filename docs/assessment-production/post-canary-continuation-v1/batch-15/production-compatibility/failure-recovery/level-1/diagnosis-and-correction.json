@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-compatibility-recovery",
+  "status": "diagnosed-level-1-deterministic-write-boundary-correction",
+  "diagnosedAt": "2026-08-28T02:49:50Z",
+  "batchNumber": 15,
+  "originalFailure": {
+    "compatibilityPassAttempted": 1,
+    "functionalTestsPassed": 4,
+    "functionalTestsFailed": 0,
+    "productionProtected": true,
+    "allowedWritesOnly": false,
+    "cause": "Forty rendering screenshots and one Playwright snapshot, created and verified before compatibility activation, remained as untracked files. The runner classified all untracked files outside its own output root as compatibility writes instead of excluding pre-existing untracked artifacts."
+  },
+  "preservedFailures": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/failure-recovery/level-1/original-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/failure-recovery/level-1/original-analysis.json"
+  },
+  "correction": {
+    "type": "exact-deterministic-derived-control-correction",
+    "renderingArtifactsRelocatedTo": "/tmp/slugfester-batch15-rendering-proof",
+    "filesExcludedAsPreExisting": 41,
+    "compatibilityPassRerun": false,
+    "testRerun": false,
+    "validatorRewrite": false,
+    "stagedLedgerRewrite": false,
+    "scorePassRerun": false,
+    "acceptedFieldsChanged": false,
+    "calculatedScoresChanged": false,
+    "productionDataChanged": false,
+    "nextBatchSelected": false
+  },
+  "evidence": {
+    "routeAndScoreControlsPassed": true,
+    "earlierRouteRegressionPassed": true,
+    "fullRepositoryRegressionPassed": true,
+    "diffIntegrityPassed": true,
+    "exactActivatedValidatorApplied": true,
+    "exactStagedAdaptersWritten": 10,
+    "unexpectedTrackedFiles": 0,
+    "unexpectedUntrackedFilesAfterRelocation": 0
+  },
+  "recoveryLevel": 1,
+  "recoveryAttempts": 1,
+  "directIncrementalCostUsd": 0
+}
+
