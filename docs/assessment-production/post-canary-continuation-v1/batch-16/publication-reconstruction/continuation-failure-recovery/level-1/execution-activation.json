@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-continuation-level-1-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-continuation-level-1-one-field-recovery",
+  "status": "frozen-six-one-field-batch-16-publication-continuation-recovery-level-1-authorized",
+  "frozenAt": "2026-08-28T14:22:25Z",
+  "checkpointCommit": "9d880fdc5a04cbafd8a631521a818664f549f8e1",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-108-representative-quote-text-0-recovery-1",
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "kind": "representative-quote-text",
+      "field": "representativeQuotes.con.text",
+      "failure": {
+        "debateNumber": "108",
+        "kind": "representative-quote-text",
+        "field": "representativeQuotes.con.text",
+        "side": "con",
+        "sourceMoveId": "con-shared-mysteries-divergent-interpretations",
+        "failure": "not-an-exact-source-substring",
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-108.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-0.json",
+      "packetSha256": "000eaa92f561dd884154842f1e1f999b66dffd22ed0682fd4ad9a904e0290c31",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-0.schema.json",
+      "schemaSha256": "c2a21ab90e9874e49c4c034867240abba6eb9a615cee14b10d092b869c3e71db",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-0.json"
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-164-critique-1-recovery-1",
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "kind": "critique",
+      "field": "moveProse.pro-abstract-ontology-objection.critique",
+      "failure": {
+        "debateNumber": "164",
+        "kind": "critique",
+        "field": "moveProse.pro-abstract-ontology-objection.critique",
+        "moveId": "pro-abstract-ontology-objection",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 132,
+        "observedCharacters": 1051,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-1.json",
+      "packetSha256": "2a02ea1d08bfbafbb1145896c85f6d1e3ed9b1d627e1e7178c795534ca9ee7c5",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-1.schema.json",
+      "schemaSha256": "eab212ff017d25d97c69500b9e576559619a606d81bf6bf51ee0ecf56b0ebbd8",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-1.json"
+    },
+    {
+      "contextIndex": 2,
+      "shardId": "debate-164-critique-2-recovery-1",
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "kind": "critique",
+      "field": "moveProse.con-irreducible-intrinsic-value.critique",
+      "failure": {
+        "debateNumber": "164",
+        "kind": "critique",
+        "field": "moveProse.con-irreducible-intrinsic-value.critique",
+        "moveId": "con-irreducible-intrinsic-value",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 131,
+        "observedCharacters": 1031,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-2.json",
+      "packetSha256": "f05c0cbf7c5871c528cb4089569d790908520e0269c79b9e57f73602183f493b",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-2.schema.json",
+      "schemaSha256": "98176bc85b1307eb1cff632edba7c46a6c6225c61e3ab92237ab06217baf8ad8",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-2.json"
+    },
+    {
+      "contextIndex": 3,
+      "shardId": "debate-164-critique-3-recovery-1",
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "kind": "critique",
+      "field": "moveProse.con-explanatory-parity.critique",
+      "failure": {
+        "debateNumber": "164",
+        "kind": "critique",
+        "field": "moveProse.con-explanatory-parity.critique",
+        "moveId": "con-explanatory-parity",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 133,
+        "observedCharacters": 1083,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-3.json",
+      "packetSha256": "32fcbd774bdedf05d4021956ba87da86d2c5a8c8258b6081672f0fe81b0a0c50",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-3.schema.json",
+      "schemaSha256": "78490a0355979dea052f1d97281e9ec0f706ea49991c4aba1a644e9e8112f2a4",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-3.json"
+    },
+    {
+      "contextIndex": 4,
+      "shardId": "debate-164-critique-4-recovery-1",
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "kind": "critique",
+      "field": "moveProse.con-mental-causation-under-closure.critique",
+      "failure": {
+        "debateNumber": "164",
+        "kind": "critique",
+        "field": "moveProse.con-mental-causation-under-closure.critique",
+        "moveId": "con-mental-causation-under-closure",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 137,
+        "observedCharacters": 1072,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-4.json",
+      "packetSha256": "613759ac13a82b1608c6dda5efd35a90f87e5721c4e0233480efe57f93699d1b",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-4.schema.json",
+      "schemaSha256": "ac4c14840754f934feaac45174a69dd459ab3fae57af5b37c7dd1f314563e33a",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-4.json"
+    },
+    {
+      "contextIndex": 5,
+      "shardId": "debate-164-critique-5-recovery-1",
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "kind": "critique",
+      "field": "moveProse.con-supererogation-permission.critique",
+      "failure": {
+        "debateNumber": "164",
+        "kind": "critique",
+        "field": "moveProse.con-supererogation-permission.critique",
+        "moveId": "con-supererogation-permission",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 131,
+        "observedCharacters": 1080,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-5.json",
+      "packetSha256": "2c7c19e30fe603e9e6e68c44fb8398e8cfecb5800efdf7889e03cd65debb880c",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-5.schema.json",
+      "schemaSha256": "97f18c89a58adb65d32c8a46aa64c05a4d74e4282b8689391f2ac4abc0093294",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-5.json"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 6,
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsPerPacket": 1,
+    "preserveRawResultBeforeValidation": true,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/diagnosis.json": "049f280998d3ba7173f4e6ffb618ad8ae301213d13ea426cfc331478d8c91e02",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-execution-activation.json": "f9b57f334284d19d0ee9e4819868d429d2b65a54c4c5e5abc411db72354ad9dd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/model-execution-continuation.json": "858fbcfcc16fb3e4a6860f8cb76465ddaeec017375d20a15d6834a8fb358a03a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-analysis.json": "2382aad1c51beb851ea2eff86f6fc9e7fd5ed119abd27748ed84a5b06a44f0a3",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/manual.md": "64e7c1fb4dca9583b86cfde7eeb9ec016066320d2040ff0a8e94e69edbca650e",
+    "scripts/assessment-production-post-canary-batch-16-publication-continuation-level-1-recovery.mjs": "74e51e1471734dbaba964cf12dcbfbb09f0f1acb905310c9ed2f41c076677c43",
+    "scripts/lib/assessment-production-post-canary-batch-16-publication-validation.mjs": "39cd35fc82d3b6c9f501d2b8cb703c2b5e3b3c9005bbf0698274958fbffac0bd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-108.json": "825997f57d4d01e9bebb6137e0c843cc7823e34044bfa240ec7ec24096900831",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-108.json": "98844e9152dcee4aa0358e093ababe5abedfc92f56b1a0a33dab9cab0bfd6141",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-108.json": "3651d869dbe55f046a8532a01fdd94c5d26717bf461d70f869d70ec4451a5606",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-108.json": "6e2c11e445bfbc44989689ab13335f301698f470e4006440ac5d04ef9eae4ea0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-164.json": "cb75352df2fe389f0dcd566169989c08adb0394b27f1a7c9dfb52bfa5f59fb3b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-164.json": "1ccadbbb500c16a25b67ec1a3142521a45481887158e81699a9c0308081105bc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-164.json": "407c75400d720ac27c5a46ed9db0f4626b9654fa197ca497ced14f67211c2096",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-164.json": "d6cfb221971aa404c8f6c5c43194bd504e781a96f764ad015fa27bdaf23b1ecd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-0.json": "000eaa92f561dd884154842f1e1f999b66dffd22ed0682fd4ad9a904e0290c31",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-0.schema.json": "c2a21ab90e9874e49c4c034867240abba6eb9a615cee14b10d092b869c3e71db",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-1.json": "2a02ea1d08bfbafbb1145896c85f6d1e3ed9b1d627e1e7178c795534ca9ee7c5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-1.schema.json": "eab212ff017d25d97c69500b9e576559619a606d81bf6bf51ee0ecf56b0ebbd8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-2.json": "f05c0cbf7c5871c528cb4089569d790908520e0269c79b9e57f73602183f493b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-2.schema.json": "98176bc85b1307eb1cff632edba7c46a6c6225c61e3ab92237ab06217baf8ad8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-3.json": "32fcbd774bdedf05d4021956ba87da86d2c5a8c8258b6081672f0fe81b0a0c50",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-3.schema.json": "78490a0355979dea052f1d97281e9ec0f706ea49991c4aba1a644e9e8112f2a4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-4.json": "613759ac13a82b1608c6dda5efd35a90f87e5721c4e0233480efe57f93699d1b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-4.schema.json": "ac4c14840754f934feaac45174a69dd459ab3fae57af5b37c7dd1f314563e33a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/packets/context-5.json": "2c7c19e30fe603e9e6e68c44fb8398e8cfecb5800efdf7889e03cd65debb880c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/schemas/context-5.schema.json": "97f18c89a58adb65d32c8a46aa64c05a4d74e4282b8689391f2ac4abc0093294"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-1.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-2.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-3.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-4.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/outputs/context-5.json"
+  ],
+  "authorization": {
+    "activation": true,
+    "modelExecution": true,
+    "deterministicMergeAndValidation": true,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-six-fresh-one-field-batch-16-publication-continuation-recovery-level-1-contexts-once",
+  "activatedAt": "2026-08-28T14:22:40Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-failure-recovery/level-1/execution-preparation-manifest.json",
+    "sha256": "2311499c23e1dcd84132bea730ab151b7e87a9bbfde66bf3549d1ae0d1693638"
+  }
+}
