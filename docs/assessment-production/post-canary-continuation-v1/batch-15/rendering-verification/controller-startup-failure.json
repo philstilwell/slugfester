@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-rendering-controller-startup-failure",
+  "status": "preserved-pre-viewport-controller-startup-failure",
+  "failedAt": "2026-08-28T02:43:58Z",
+  "batchNumber": 15,
+  "command": "node scripts/run-assessment-production-post-canary-batch-15-rendering-verification.mjs",
+  "diagnosedCause": "The frozen runner called run-code against the isolated Playwright session before that named session had been opened.",
+  "error": "The browser 'batch15-rendering' is not open, please run open first",
+  "recovery": {
+    "authorizedByStandingRule": true,
+    "minimumCorrection": "Open the already frozen batch15-rendering session at about:blank, then execute the original runner unchanged.",
+    "controllerStarted": false,
+    "previewPageOpened": false,
+    "renderingViewportAttempted": false,
+    "viewportAttemptConsumed": false,
+    "viewportRetryConsumed": false,
+    "runnerChanged": false
+  },
+  "mutations": {
+    "acceptedPublicationFieldsChanged": false,
+    "participantScoresChanged": false,
+    "scorePassRerun": false,
+    "productionDataChanged": false,
+    "nextBatchSelected": false
+  },
+  "directIncrementalCostUsd": 0
+}
+
