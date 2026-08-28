@@ -1,0 +1,1782 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "164",
+  "debateId": "craig-wielenberg-god-morality-2018",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-theistic-grounding-route",
+      "side": "pro",
+      "description": "Establish the nature and commands of God as a unified foundation for objective moral value and obligation, then show that this account explains the relevant moral phenomena with fewer or less serious foundational difficulties than godless normative realism.",
+      "successCriteria": "The route succeeds if divine nature supplies a nonarbitrary standard of goodness, divine authority constitutes universally applicable duties, and the resulting account retains a comparative explanatory advantage over irreducible godless normativity.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-comparative-foundation",
+        "tier": "motion",
+        "description": "Connect God's necessarily good nature and authoritative commands to a comparatively adequate account of both objective moral values and objective duties."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-divine-nature",
+          "tier": "central",
+          "description": "Explain why God's essential nature can constitute the paradigm of moral goodness without appealing to an independent moral standard."
+        },
+        {
+          "bridgeId": "pro-central-divine-command",
+          "tier": "central",
+          "description": "Explain how commands consistent with God's nature generate genuine obligations while allowing derivative principles and morally relevant circumstances to govern particular cases."
+        },
+        {
+          "bridgeId": "pro-central-realist-challenge",
+          "tier": "central",
+          "description": "Show that the rival account's irreducible moral entities and natural-to-moral relations lack sufficient metaphysical or explanatory support."
+        },
+        {
+          "bridgeId": "pro-central-moral-agency-knowledge",
+          "tier": "central",
+          "description": "Preserve responsible agency and moral knowledge under the theistic account while identifying whether the rival naturalistic setting can support both."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-universal-authority",
+          "tier": "subsidiary",
+          "description": "Account for how divine moral requirements bind agents who do not explicitly identify God as their source, including difficult cases of impaired moral understanding."
+        },
+        {
+          "bridgeId": "pro-subsidiary-command-purpose",
+          "tier": "subsidiary",
+          "description": "Explain the role of general divine commands in responsibility, recognition of wrongdoing, and accountability despite anticipated disobedience."
+        }
+      ]
+    },
+    {
+      "routeId": "con-godless-realist-route",
+      "side": "con",
+      "description": "Establish irreducible normative facts and morally relevant nondivine features as sufficient grounds for objective value and obligation, then show that appeals to God neither uniquely explain those facts nor avoid comparable explanatory stopping points.",
+      "successCriteria": "The route succeeds if godless normative realism accounts for objective goodness, duties, agency, and moral knowledge while the proposed theistic foundation proves unnecessary or rests on equally basic normative assumptions.",
+      "motionBridge": {
+        "bridgeId": "con-motion-godless-foundation",
+        "tier": "motion",
+        "description": "Connect irreducible moral facts and morally relevant features of situations to a complete, nondivine account of objective moral values and duties."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-fundamental-normativity",
+          "tier": "central",
+          "description": "Explain how intrinsic values and irreducible normative relations can be basic features of reality and can ground obligations without divine commands."
+        },
+        {
+          "bridgeId": "con-central-command-nonnecessity",
+          "tier": "central",
+          "description": "Show that suffering, promises, capacities, and other morally relevant facts can generate duties without requiring an additional divine order."
+        },
+        {
+          "bridgeId": "con-central-explanatory-parity",
+          "tier": "central",
+          "description": "Establish that theistic grounding also terminates in normative assumptions or unexplained relations, preventing obscurity objections from yielding a comparative advantage."
+        },
+        {
+          "bridgeId": "con-central-agency-epistemology",
+          "tier": "central",
+          "description": "Provide a godless account compatible with responsible mental causation and justified confidence in evolved cognitive and moral faculties."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-command-scope",
+          "tier": "subsidiary",
+          "description": "Test whether commands can bind agents who do not apprehend their source or authority and whether the theory treats impaired agents consistently."
+        },
+        {
+          "bridgeId": "con-subsidiary-command-rationale",
+          "tier": "subsidiary",
+          "description": "Determine whether divine commands add a necessary normative function beyond communicating existing good and evil, especially when disobedience is anticipated."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "ultimate-ground-of-moral-value",
+      "title": "Ultimate Ground of Moral Value",
+      "weightPercent": 20,
+      "rationale": "The competing accounts must identify what makes goodness and badness objective: God's essential nature or irreducible normative features. This issue also tests whether either proposed standard imports an unexplained normative premise."
+    },
+    {
+      "sectionId": "constitution-and-scope-of-duty",
+      "title": "Constitution and Scope of Objective Duty",
+      "weightPercent": 25,
+      "rationale": "The motion expressly includes duties, making the dispute between authoritative divine commands and obligations generated by morally relevant nondivine facts a principal burden for both sides."
+    },
+    {
+      "sectionId": "metaphysical-relations-and-explanatory-ultimates",
+      "title": "Metaphysical Relations and Explanatory Ultimates",
+      "weightPercent": 20,
+      "rationale": "Both routes depend on foundational relations linking their proposed grounds to moral facts. The comparative burden includes ontology, causal or constitutive intelligibility, theoretical economy, and the legitimacy of explanatory stopping points."
+    },
+    {
+      "sectionId": "universality-accountability-and-command-purpose",
+      "title": "Universality, Accountability, and the Purpose of Commands",
+      "weightPercent": 20,
+      "rationale": "An account of duty must explain who is bound, how authority reaches unaware or impaired agents, why commands are needed, and how wrongdoing and accountability arise when commands are violated."
+    },
+    {
+      "sectionId": "moral-agency-and-knowledge",
+      "title": "Moral Agency and Moral Knowledge",
+      "weightPercent": 15,
+      "rationale": "Objective duties require agents capable of responsible action, while objective moral claims require defensible epistemic access. The rival accounts therefore must support freedom, mental efficacy, and reliable moral cognition."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-divine-nature-ground",
+      "sectionId": "ultimate-ground-of-moral-value",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "God's necessarily good character grounds objective moral values, while divine commands consistent with that character constitute objective moral duties.",
+      "sourceSpan": {
+        "startEvent": 248,
+        "endEvent": 290
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person opening speech remains Craig's, with explicit references to the theistic view he is defending.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-comparative-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly states the theistic foundation for both objective value and duty, thereby advancing the complete comparative route rather than answering an earlier move.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it supplies a clear, route-defining account of both principal elements of the motion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The grounding and constitution claims are recoverable, and the consistency-with-divine-character restriction expressly limits the command claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The account is asserted categorically; the nonarbitrariness qualification helps, but the excerpt does not fully defend why nature and will possess the claimed constitutive force."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The division between value grounded in nature and duty constituted by commands is coherent, though the constitutive bridge remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move supplies an articulated model and an anti-arbitrariness restriction, but offers limited independent support for its foundational relations."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level requirement to account for objective moral values and duties through the proposed theistic foundation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents its own foundation and does not materially interpret a live opposing argument."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly grounds values in God's moral character, duties in divine commands, and restricts commands by consistency with that character.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-abstract-ontology-objection",
+      "sectionId": "metaphysical-relations-and-explanatory-ultimates",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Godless normative realism is less plausible than theism because its independently real abstract moral objects add an extravagant ontology without sufficient support.",
+      "sourceSpan": {
+        "startEvent": 308,
+        "endEvent": 398
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig names Wielenberg's view, describes its alleged Platonism, and contrasts it throughout with his own theistic account.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-realist-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive comparative objection to the rival ontology, alleging that independently real abstract moral objects carry an unsupported metaphysical cost.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it clearly advances a central comparative challenge, though its presumption against Platonism is only briefly supported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative objection is clear, while the relevant standard of extravagance and the ceteris-paribus condition remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion of lesser plausibility is stronger than the excerpt's largely asserted presumption against Platonism, though it is comparative rather than conclusive."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Abstract moral entities may be indispensable explanatory posits rather than gratuitous additions.",
+        "decisiveQualification": "Ontological cost matters only after comparing explanatory necessity and theoretical benefits."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "If unsupported abstract ontology counts against a theory, the comparative inference follows, but the governing simplicity premise is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The excerpt identifies a concrete ontological contrast but chiefly asserts the presumption against Platonism without sustained alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central realist-challenge bridge by attacking the metaphysical cost and support for the rival's entities."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The objection identifies the ontology but gives little attention to the rival's indispensability response or its possible explanatory benefit."
+        }
+      },
+      "evidenceBasis": "Craig contrasts a realm of abstract moral objects with a concrete divine ground and infers that the former is metaphysically extravagant and less plausible.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-supervenience-objection",
+      "sectionId": "metaphysical-relations-and-explanatory-ultimates",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The proposed causal connection between physical situations and abstract moral properties is obscure because abstract objects appear unable to enter causal relations with physical reality.",
+      "sourceSpan": {
+        "startEvent": 399,
+        "endEvent": 512
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same uninterrupted Craig speech explicitly attributes the causal-supervenience proposal to Wielenberg and repeatedly evaluates it.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-realist-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive objection attacks the intelligibility of the rival's natural-to-moral relation by asking how causally inert abstract properties connect to physical situations.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it isolates a central explanatory bridge and states a recognizable causal-intelligibility challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The objection is recoverable, but it moves between supervenience, causal connection, and abstract-object causation without fully distinguishing those relations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling the relation unintelligible exceeds what follows unless the rival actually treats supervenience as causal, a qualification absent from the stated objection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Supervenience may be a necessary noncausal dependence relation rather than causal interaction by abstract objects.",
+        "decisiveQualification": "Causal inertness defeats a causal account but does not by itself defeat noncausal metaphysical dependence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The causal-inertness challenge has force against causal interaction, but the unargued identification of supervenience with causation creates a substantial equivocation."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The move articulates a specific metaphysical concern but provides no representative defense that the rival relation is causal or therefore impossible."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It squarely challenges the central bridge concerning the intelligibility and support of the rival's natural-to-moral relations."
+        },
+        "representationalCharity": {
+          "value": 54,
+          "rationale": "The objection materially weakens the strongest rival interpretation by treating the proposed dependence as though it must be ordinary causal interaction."
+        }
+      },
+      "evidenceBasis": "The excerpt labels supervenience unintelligible and asks how abstract goodness or badness could enter a causal connection with physical situations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-decisive-reasons-objection",
+      "sectionId": "constitution-and-scope-of-duty",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Defining obligation by decisive moral reasons mishandles supererogation, tends to require the morally best act, and supplies only a conditional reason to act morally rather than an unconditional duty.",
+      "sourceSpan": {
+        "startEvent": 513,
+        "endEvent": 562
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly labels this his second objection and directly describes and criticizes Wielenberg's account of moral obligation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-command-nonnecessity"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive attack challenges whether decisive moral reasons can constitute unconditional obligation, using supererogation and morally permissible alternatives as tests.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it develops several concrete pressure tests against a central account of duty, despite a compressed conditionality inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction among decisive reasons, best action, permission, and unconditional obligation is clear and illustrated with bounded examples."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples support a serious objection, but the claim that decisive moral reasons yield only a desire-dependent conditional is not fully established."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Decisive moral reasons may themselves be categorical and may coexist with permissions excluding certain maximizing reasons.",
+        "decisiveQualification": "The objection must show that the reasons account entails maximization or desire dependence rather than merely labeling reasons as moral."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The supererogation pressure is coherent, but the step from decisive moral reasons to a merely hypothetical obligation leaves a material bridge undefended."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Concrete doctor and engineer examples support the permission concern, while the unconditional-duty conclusion relies mainly on assertion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the rival's central claim that irreducible moral reasons or relations adequately ground genuine obligations."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move recognizes permissible good alternatives but does not fully address categorical or exclusionary versions of the reasons account."
+        }
+      },
+      "evidenceBasis": "Craig invokes permissible good careers and supererogatory conduct, then argues that decisive moral reasons identify an act only conditional on wanting to act morally.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-enduring-agent-objection",
+      "sectionId": "moral-agency-and-knowledge",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Physical causal closure and a self reduced to successive mental states eliminate free agency and an enduring moral agent, thereby undermining genuine accountability.",
+      "sourceSpan": {
+        "startEvent": 563,
+        "endEvent": 598
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly identifies Wielenberg's commitments and traces their alleged implications for minds, selves, freedom, and accountability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-agency-epistemology"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive objection attacks the rival agency bridge by deriving mental causal impotence, loss of enduring selfhood, and diminished accountability from physical closure.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it reaches a central agency requirement and states a consequential chain, though several premises are disputed and compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The overall inference is recoverable, but physical closure, mental causation, reduction, and enduring agency are joined without specifying the identity assumptions required."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical implication from physical closure to causally impotent mental states requires an additional exclusion or nonidentity premise not acknowledged here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mental states may be realized by or identical with causally efficacious physical states under causal closure.",
+        "decisiveQualification": "Closure excludes additional nonphysical causes, not mental causation described at a physical or realized level."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The conclusion follows only with controversial premises about mind-body nonidentity and enduring selves, leaving substantial gaps in the alleged implication."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The move identifies real philosophical pressure points but supplies assertion rather than evidence or defended warrants for the required metaphysical premises."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central godless agency and epistemology bridge by alleging that the account cannot preserve responsible moral agency."
+        },
+        "representationalCharity": {
+          "value": 50,
+          "rationale": "The move attributes causal impotence without engaging the strongest physicalist identity or realization account, a decisive qualification to the inference."
+        }
+      },
+      "evidenceBasis": "The excerpt states that closure makes mental states causally impotent and connects this claim to loss of free will, enduring agency, and accountability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolutionary-reliability-objection",
+      "sectionId": "moral-agency-and-knowledge",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Naturalism joined to unguided evolution undercuts confidence in reliable moral cognition, whereas theism can ground reliable cognitive faculties through divine supervision of evolution.",
+      "sourceSpan": {
+        "startEvent": 599,
+        "endEvent": 692
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig announces a third objection, invokes Plantinga's evolutionary argument, and applies it explicitly to Wielenberg's naturalistic moral epistemology.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-agency-epistemology"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive objection argues that naturalism plus unguided evolution supplies a defeater for moral cognition, while supervised evolution offers a reliability explanation.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within constructive moves, it addresses the central epistemic burden and supplies a comparative explanation, but compresses the probability argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The defeater claim and theistic alternative are clear, though the conditions under which adaptive cognition is unreliable remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt treats the defeater as established without defending the probability of unreliable cognition or distinguishing general from specifically moral reliability."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Selection for successful behavior may correlate sufficiently with broadly reliable cognition, supplemented by observation and correction.",
+        "decisiveQualification": "A defeater requires showing low or inscrutable reliability conditional on naturalism and evolution, not merely that selection directly favors behavior."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conditional defeater structure is recognizable, but its decisive low-reliability premise and application to moral belief remain materially underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The theistic supervision proposal is a possible explanation, while the comparative probability and reliability claims receive little specific support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It squarely attacks the central rival burden of justified confidence in evolved cognitive and moral faculties."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The move invokes the standard evolutionary challenge but does not engage the strongest correlation and empirical-correction response."
+        }
+      },
+      "evidenceBasis": "Craig says unguided evolution under naturalism defeats confidence in reliable beliefs and contrasts it with divine supervision that could guarantee basic reliability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-irreducible-intrinsic-value",
+      "sectionId": "ultimate-ground-of-moral-value",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "constructive",
+      "proposition": "Suffering is intrinsically bad, while morally relevant features of a situation can generate obligations as irreducible features of reality without dependence on God.",
+      "sourceSpan": {
+        "startEvent": 706,
+        "endEvent": 763
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A new speaker greets Craig, introduces the child-on-fire example, contrasts his view with Craig's, and states his own theory in first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-godless-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move connects intrinsic badness and irreducible obligation-generating relations to a nondivine account of both value and duty.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it directly supplies the rival route's core value and obligation structure with a concrete case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Intrinsic badness, relevant situational features, and irreducibility are clearly distinguished and applied to the child-on-fire example."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The concrete judgment is powerful, but the broader metaphysical conclusion that such features simply lack sources is asserted more than defended."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The example coherently illustrates intrinsic disvalue and situation-generated obligation, although irreducibility functions as an underexplained stopping point."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "A specific and representative moral case supports the view, but the inference from intuitive judgment to irreducible metaphysical structure remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level godless route by offering nondivine grounds for objective moral value and obligation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move primarily states and illustrates its own foundational view rather than interpreting an opposing argument."
+        }
+      },
+      "evidenceBasis": "Wielenberg states that suffering is bad in itself and that suffering, available water, and related facts generate an obligation to extinguish the flames.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-explanatory-parity",
+      "sectionId": "metaphysical-relations-and-explanatory-ultimates",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Objections alleging obscure causal relations and unexplained necessary moral connections have corresponding force against the theistic account and therefore establish no comparative advantage.",
+      "sourceSpan": {
+        "startEvent": 764,
+        "endEvent": 846
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wielenberg states his comparative method and then explicitly mirrors Craig's objections against divine causation, commands, and necessary divine goodness.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-explanatory-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-moral-supervenience-objection",
+          "pro-abstract-ontology-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-explanatory-parity-component-01",
+            "targetMoveId": "pro-moral-supervenience-objection",
+            "text": "The decisive demand is to explain why the rival's allegedly obscure natural-to-moral relation creates a comparative disadvantage.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-explanatory-parity-component-02",
+            "targetMoveId": "pro-abstract-ontology-objection",
+            "text": "A further demand is whether the rival ontology is uniquely more extravagant or unsupported than the theistic stopping point.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the comparative inference by arguing that analogous unexplained relations and necessary normative claims arise within theism, so obscurity alone yields no advantage.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "This partial answer contacts the decisive comparative component and a second ontology component, but the excerpt does not fully establish exact parity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The cancellation thesis is clearly comparative and limited to objections that have genuine corresponding counterparts on the other account."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The language that many objections seem matched appropriately reflects an argued parity claim rather than claiming demonstrated identity in every respect."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theistic causation or necessary divine goodness may have resources unavailable to abstract moral supervenience.",
+        "decisiveQualification": "Parity requires similarity in explanatory burden, not merely the presence of some unexplained relation on each view."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The parity inference is coherent: a matched objection cannot by itself establish comparative advantage, with only the exact-similarity warrant left compressed."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The move supplies corresponding examples involving divine causation, commands, and necessary goodness, while leaving some asymmetry testing incomplete."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central explanatory-parity bridge by denying that the opening metaphysical objections distinguish the two foundations."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly mirrors the challenge and uses it comparatively, though it does not fully examine possible asymmetries between the relations."
+        }
+      },
+      "evidenceBasis": "Wielenberg expressly proposes checking each objection for a theistic counterpart and applies that method to causal relations, commands, and necessary goodness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mental-causation-under-closure",
+      "sectionId": "moral-agency-and-knowledge",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Physical causal closure does not exclude mental causation unless one adds the contentious premise that mental states cannot also be physical states.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 901
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person response explicitly identifies Craig's allegation and develops Wielenberg's physicalist answer to it.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-agency-epistemology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-enduring-agent-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-mental-causation-under-closure-component-01",
+            "targetMoveId": "pro-enduring-agent-objection",
+            "text": "The decisive demand is whether physical causal closure entails that mental states are causally impotent and agency therefore disappears.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-mental-causation-under-closure-component-02",
+            "targetMoveId": "pro-enduring-agent-objection",
+            "text": "A separate component concerns whether successive mental states eliminate an enduring accountable agent.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the missing nonidentity premise in the causal-impotence inference and states that closure alone does not yield Craig's conclusion, but it does not answer enduring selfhood.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "As a partial answer, it decisively defeats the causal-impotence component while leaving the distinct enduring-agent component unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The closure principle, Craig's alleged implication, and the required mental-physical nonidentity premise are expressly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The narrow logical claim is well calibrated: closure by itself cannot secure the conclusion unless the additional nonidentity premise is supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig's objection may presuppose a nonreductive view on which mental states are distinct from physical states.",
+        "decisiveQualification": "That presupposition is contentious and cannot be derived from causal closure itself."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The counterargument explicitly identifies a necessary missing premise and cleanly defeats the claimed entailment from closure alone."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The warrant is conceptual rather than empirical and is specifically defended through the live physicalist identity alternative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central godless agency bridge by preserving the possibility of causally efficacious mental states under closure."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply accurately isolates the strongest required premise and explains precisely why the stated principle alone is insufficient."
+        }
+      },
+      "evidenceBasis": "Wielenberg defines causal closure, notes that it does not itself imply mental impotence, and identifies mental-physical nonidentity as the required further premise.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-supererogation-permission",
+      "sectionId": "constitution-and-scope-of-duty",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Godless normative realism can accommodate supererogatory action through exclusionary permissions, while Christian love commands may render the proposed theistic examples obligatory.",
+      "sourceSpan": {
+        "startEvent": 902,
+        "endEvent": 956
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker names Craig's supererogation objection, answers it in two expressly numbered stages, and closes by denying any comparative advantage.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-command-nonnecessity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-decisive-reasons-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-supererogation-permission-component-01",
+            "targetMoveId": "pro-decisive-reasons-objection",
+            "text": "The decisive demand is whether the reasons-based account can permit genuinely supererogatory conduct rather than requiring every morally best act.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-supererogation-permission-component-02",
+            "targetMoveId": "pro-decisive-reasons-objection",
+            "text": "A second demand is whether decisive moral reasons generate unconditional rather than merely desire-dependent obligations.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts supererogation through exclusionary permissions and challenges whether Craig's Christian commands preserve his examples, but it does not answer the conditional-duty objection.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "This partial answer directly contacts the decisive supererogation component with a theoretical device and comparative challenge, while leaving another major component open."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two-part answer and its limitation to proposed examples and exclusionary permissions are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly says he is not convinced and offers two thoughts, appropriately calibrating the comparative challenge and proposed permission mechanism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Generic divine-command theory might permit supererogation even if some Christian love commands are demanding.",
+        "decisiveQualification": "The Christian-command objection tests Craig's examples but does not establish that every theistic account eliminates supererogation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Exclusionary permissions coherently block certain reasons from becoming decisive, and the comparative Christian-command objection is logically distinct and relevant."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The reply provides a mechanism and applies a concrete command of love, though the status and operation of exclusionary permissions remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central nondivine-duty bridge by showing how the account can distinguish obligation from above-and-beyond action."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply acknowledges Craig spoke of generic theism and limits the counterpressure to his Christian version, preserving the important qualification."
+        }
+      },
+      "evidenceBasis": "Wielenberg invokes exclusionary permissions to accommodate supererogation and argues that Christian commands to love may make Craig's favored examples obligatory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-plural-sources-of-duty",
+      "sectionId": "constitution-and-scope-of-duty",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Divine commands are not the unique source of obligation because promises, preventable suffering, and other morally relevant features can themselves generate genuine duties.",
+      "sourceSpan": {
+        "startEvent": 960,
+        "endEvent": 1014
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wielenberg announces challenges to Craig's account and develops the first through the child-in-flames case and an extended promise-only analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-command-nonnecessity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-nature-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-plural-sources-of-duty-component-01",
+            "targetMoveId": "pro-divine-nature-ground",
+            "text": "The decisive demand is whether divine commands uniquely constitute duties rather than merely accompanying independently obligation-generating facts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies command uniqueness and supports the denial through promises, preventable suffering, and other morally relevant features that appear capable of generating duties.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the constitutive command claim with a clear rival account and multiple representative examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim concerns multiple possible sources of obligation and clearly identifies commands, promises, and preventable suffering as examples."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The examples warrant a strong challenge to uniqueness, while the move does not overclaim that commands can never be morally relevant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Commands may be the ultimate constitutive source while promises and suffering operate as derivative application facts.",
+        "decisiveQualification": "Examples of proximate moral relevance do not alone disprove an ultimate hierarchical command ground."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The analogy and examples coherently undermine a flat uniqueness claim, though they do not conclusively rule out an ultimate hierarchical command source."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Promises and easily preventable suffering are specific representative cases, with one bounded gap concerning ultimate versus derivative grounding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central command-nonnecessity bridge by arguing that nondivine features can themselves generate genuine duties."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply presses uniqueness effectively but gives insufficient attention to the strongest hierarchy distinction between ultimate and derivative sources."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects a single-source model and cites promise-making, needless preventable suffering, divine commands, and other factors as obligation-generating features.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unapprehended-command-scope",
+      "sectionId": "universality-accountability-and-command-purpose",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Commands cannot bind agents who apprehend neither their content nor the commander's authority, leaving divine-command theory unable to ground obligations for unaware nonbelievers.",
+      "sourceSpan": {
+        "startEvent": 1015,
+        "endEvent": 1067
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The expressly introduced second challenge is delivered continuously through parental examples and a direct application to nonbelievers.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-universal-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-nature-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-unapprehended-command-scope-component-01",
+            "targetMoveId": "pro-divine-nature-ground",
+            "text": "The decisive demand is whether commands constitute universal obligations for agents who do not apprehend either their content or divine authority.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly tests the scope of the command account and infers that unaware nonbelievers would not be bound if apprehending content or authority is necessary for command-generated obligation.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts a decisive scope condition and states the alleged consequence for the command theory's universal application."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The target population, epistemic conditions, and alleged consequence are clearly specified, including the distinction between obligation and knowledge of obligation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The implication follows if apprehension is required, but that requirement is supported mainly by analogy and is asserted somewhat more broadly than established."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Agents can recognize moral law's content and authority without identifying the commander, or commands may bind independently of source recognition.",
+        "decisiveQualification": "Failure to identify God does not necessarily entail failure to apprehend authoritative moral requirements."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The conditional inference is coherent, with one important compressed premise that command-generated obligation requires apprehension of content or authority."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Parental command analogies make the concern concrete, but their extension to universal divine authority needs a more defended warrant."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary universal-authority bridge by testing whether divine requirements reach unaware nonbelievers."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The move carefully distinguishes ignorance of obligations from absence of obligations, but underdevelops indirect apprehension of authority."
+        }
+      },
+      "evidenceBasis": "Wielenberg argues that commands fail to impose duties when content and authority are unapprehended, then applies the principle to nonbelievers while distinguishing duty from moral knowledge.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-foreknown-command-rationale",
+      "sectionId": "universality-accountability-and-command-purpose",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "An omniscient God would not prevent foreknown disobedience by issuing a command, but would add the evil of obligation violation, leaving the command's normative purpose unexplained.",
+      "sourceSpan": {
+        "startEvent": 1068,
+        "endEvent": 1104
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wielenberg labels this his third challenge and sustains a single counterfactual argument about foreknown commands through its stated prediction.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-command-purpose"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-nature-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-foreknown-command-rationale-component-01",
+            "targetMoveId": "pro-divine-nature-ground",
+            "text": "The decisive demand is what necessary normative function commands serve when God foreknows that issuing them will not prevent the wrongful act.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts command purpose by arguing that a futile command adds obligation violation and thus additional evil without preventing the foreknown underlying harm.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly contacts the command-purpose issue with a clear counterfactual consequence, though it anticipates only prevention as a possible purpose."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The foreknowledge condition, nonprevention condition, added violation, and resulting reason against issuing the command are all clearly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The argument establishes pressure if prevention is the purpose, but it underqualifies other possible functions such as accountability, warning, or justice."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Commands may establish culpability, public law, warning, or just accountability even when disobedience is foreknown.",
+        "decisiveQualification": "Foreknown failure defeats a purely preventive rationale but not every possible normative or juridical rationale."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The counterfactual is coherent against a preventive rationale, but the broader conclusion leaves the premise that prevention exhausts command purposes undefended."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The child-harm example specifies the added violation and nonprevention, while alternative command purposes receive no serious comparison."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary bridge requiring an explanation of command purpose despite anticipated disobedience."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The reply develops the prevention objection clearly but materially omits several live nonpreventive purposes for general commands."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that the command cannot prevent a foreknown act and instead makes it additionally an obligation violation, producing a reason not to command.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-command-hierarchy-duty",
+      "sectionId": "constitution-and-scope-of-duty",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Divine commands can be the ultimate ground of duty within a hierarchy in which derivative moral principles and relevant circumstances determine obligations in particular cases.",
+      "sourceSpan": {
+        "startEvent": 1159,
+        "endEvent": 1186
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly rejects Wielenberg's first challenge and explains his hierarchical account in a continuous first-person rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-command"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-plural-sources-of-duty"
+        ],
+        "components": [
+          {
+            "componentId": "pro-command-hierarchy-duty-component-01",
+            "targetMoveId": "con-plural-sources-of-duty",
+            "text": "The decisive demand is whether promises, suffering, and circumstances disprove divine commands as the ultimate source of obligation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes ultimate grounding from derivative principles and situational application, allowing plural morally relevant facts within a command-grounded hierarchy.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the uniqueness objection and supplies the missing hierarchy distinction that preserves the legitimate role of the cited facts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Ultimate source, general command, derivative principle, and case-specific application are expressly distinguished and illustrated with promise keeping."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The reply appropriately claims compatibility with derivative facts rather than purporting to prove the entire divine-command foundation from the hierarchy alone."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The relevance of promises and suffering may indicate genuinely independent sources rather than merely derivative application facts.",
+        "decisiveQualification": "A hierarchy is coherent only if the derivation from general commands to those principles is independently explained."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The ultimate-versus-derivative distinction coherently answers the alleged incompatibility, with one bounded bridge concerning how derivative principles arise."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The promise example concretely illustrates hierarchical application, but the claim that all derivative facts ultimately depend on commands remains underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-command bridge by explaining how commands ground duties while circumstances and derivative principles govern cases."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply preserves the rival examples and locates them in a hierarchy, though it leaves their claimed derivation somewhat compressed."
+        }
+      },
+      "evidenceBasis": "Craig describes general commands, case-specific application, and derivative principles such as promise keeping within a hierarchy whose ultimate source is divine command.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-nonbeliever-command-scope",
+      "sectionId": "universality-accountability-and-command-purpose",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Nonbelievers remain subject to divine moral requirements because people can intuitively apprehend the content and authority of moral law without identifying God as its source.",
+      "sourceSpan": {
+        "startEvent": 1191,
+        "endEvent": 1206
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig calls the nonbeliever challenge weak, states the Christian answer, and illustrates it with a complete no-trespassing analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-universal-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unapprehended-command-scope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-nonbeliever-command-scope-component-01",
+            "targetMoveId": "con-unapprehended-command-scope",
+            "text": "The decisive demand is how divine requirements bind nonbelievers who do not identify God as the source or commander.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes identifying God from intuitively apprehending moral law's content and authority, reinforced by the no-trespassing analogy.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the decisive nonbeliever case and supplies a mechanism plus analogy for authority without source identification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between recognizing authoritative content and recognizing its divine source is clear and scoped specifically to nonbelievers."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The analogy supports conceptual possibility and plausibility, but the universal empirical claim that all people possess this apprehension is not established here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some nonbelievers may neither recognize divine authority nor experience moral requirements as commands from any authority.",
+        "decisiveQualification": "An intuitive sense of moral authority must be shown to constitute apprehension sufficient for command-based obligation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction and analogy coherently show how source ignorance can coexist with recognition of an authoritative requirement."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The no-trespassing analogy is specific and apt, but the claimed universal inscription of moral law receives limited evidential support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary universal-authority bridge by explaining how nonbelievers can remain subject to divine requirements."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply squarely handles source ignorance, though it gives limited treatment to agents lacking the posited intuitive apprehension."
+        }
+      },
+      "evidenceBasis": "Craig says moral law's content and authority are intuitively grasped even without recognizing God, illustrated by obeying a posted prohibition without knowing its author.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-command-accountability-purpose",
+      "sectionId": "universality-accountability-and-command-purpose",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "General divine commands establish culpability, retributive responsibility, and divine judgment, while divine-command theory itself does not require the disputed premise that God has middle knowledge.",
+      "sourceSpan": {
+        "startEvent": 1211,
+        "endEvent": 1230
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly addresses the third challenge, identifies its alleged presupposition, and gives responsibility and judgment as his alternative rationale.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-command-purpose"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-foreknown-command-rationale"
+        ],
+        "components": [
+          {
+            "componentId": "pro-command-accountability-purpose-component-01",
+            "targetMoveId": "con-foreknown-command-rationale",
+            "text": "The decisive demand is what purpose a divine command serves when God anticipates that it will not prevent the forbidden act.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a nonpreventive purpose—culpability, retributive responsibility, and judgment—and also denies that disputed middle knowledge is essential to divine-command theory.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the omitted-purpose component and provides a direct alternative rationale for general commands despite anticipated disobedience."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between middle knowledge and divine-command theory is clear, as are the asserted accountability and judgment functions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The reply establishes a coherent possible purpose, but the assertion that justice would be impossible without commands assumes the constitutive theory under dispute."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Agents might be culpable for intrinsic or independently grounded wrongs even without a divine command adding a separate violation.",
+        "decisiveQualification": "Accountability explains command purpose only if commands are independently necessary for culpability rather than merely increasing wrongdoing."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The nonpreventive-purpose response is coherent, though its claim that commands are necessary for responsibility risks circularly relying on divine-command theory."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The reply names concrete juridical functions and a doctrinal distinction, but does not defend why precommand wrongs could not ground culpability."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary command-purpose bridge by identifying responsibility and judgment as functions beyond behavioral prevention."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The reply answers the prevention premise but partly assumes the disputed proposition that only commands make retributive responsibility possible."
+        }
+      },
+      "evidenceBasis": "Craig separates middle knowledge from divine-command theory and argues that general commands enable responsibility, retributive justice, and divine judgment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-faculty-reliability",
+      "sectionId": "moral-agency-and-knowledge",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Observed cognitive reliability can justify confidence in evolved faculties despite speculative arguments that unguided evolution probably produces unreliable cognition.",
+      "sourceSpan": {
+        "startEvent": 1920,
+        "endEvent": 1941
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Wielenberg’s direct discussion of Craig and Plantinga and presents a first-person analogy within his uninterrupted rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-agency-epistemology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolutionary-reliability-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolved-faculty-reliability-component-01",
+            "targetMoveId": "pro-evolutionary-reliability-objection",
+            "text": "The decisive demand is whether naturalism and unguided evolution defeat reasonable confidence in the reliability of evolved cognition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evolved-faculty-reliability-component-02",
+            "targetMoveId": "pro-evolutionary-reliability-objection",
+            "text": "A further component is whether divine supervision provides a comparatively superior reliability explanation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the defeater claim by appealing to observed reliability and a lighter analogy, but it does not comparatively assess the proposed theistic guarantee.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "This partial answer directly contacts the central defeater component with an evidential countermodel while leaving the comparative theistic component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The empirical-reliability response is clear, but it shifts between reliable believers, belief-forming faculties, and specifically moral cognition without fully fixing scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is framed conditionally on reasonable naturalism, but the analogy understates the possibility of a global undercutting defeater affecting the observations themselves."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The evolutionary argument is a higher-order defeater that may undercut trust in the apparent observations used to establish reliability.",
+        "decisiveQualification": "A local track-record analogy answers speculative doubt only if the alleged evolutionary defeater is not global or self-undermining."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Observed success can support reliability despite speculation, but the analogy leaves a material bridge when the alleged defeater concerns all cognition."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The lighter analogy concretely illustrates track-record evidence, though no representative evolutionary evidence or specific moral-reliability support is provided."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central agency-epistemology bridge by resisting the claimed defeater for evolved cognitive reliability."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply presents the strongest ordinary empirical response but insufficiently distinguishes local product doubt from a global reliability challenge."
+        }
+      },
+      "evidenceBasis": "Wielenberg analogizes observed cognitive reliability to a repeatedly reliable lighter and treats armchair predictions of unreliability as insufficient to defeat that evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-abductive-normative-realism",
+      "sectionId": "metaphysical-relations-and-explanatory-ultimates",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "constructive",
+      "proposition": "Godless normative realism is supported as an inference to the best explanation of objective moral facts after competing accounts are comparatively considered.",
+      "sourceSpan": {
+        "startEvent": 2436,
+        "endEvent": 2474
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to Wielenberg, who answers in the first person and explicitly describes the reasoning supporting his own metaethical theory.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-godless-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents godless normative realism as an inference to the best explanation of objective moral facts after comparison with competing accounts.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within constructive moves, it states the proper comparative method and intended conclusion, but offers only a compressed version of the actual explanatory comparison."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The abductive form, explanatory target, and tentative characterization are clear, with the speaker expressly describing the formulation as loose."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The hedged language appropriately matches a brief methodological sketch that does not purport to complete the full abductive case in this span."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Inference to the best explanation is a coherent argumentative form, though the comparative criteria and elimination of rivals remain compressed."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The existence of objective moral facts is invoked as explanatory data, but the excerpt does not provide a developed rival comparison or independent support for the posits."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It expressly advances the motion-level godless route by claiming comparative explanatory support for its fundamental normative entities."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move states its own abductive methodology without materially interpreting a particular opposing argument."
+        }
+      },
+      "evidenceBasis": "Wielenberg asks what best explains objective moral facts, describes his method as inference to the best explanation, and says the required normative entities should be posited.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-god-goodness-paradigm",
+      "sectionId": "ultimate-ground-of-moral-value",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "God's nature is the paradigm and metric of moral goodness because God is conceived as the greatest conceivable and worship-worthy being whose goodness is essential.",
+      "sourceSpan": {
+        "startEvent": 3004,
+        "endEvent": 3039
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the metric question to Craig, whose uninterrupted answer ends when Wielenberg begins commenting on the account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-nature"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-irreducible-intrinsic-value",
+          "con-explanatory-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-god-goodness-paradigm-component-01",
+            "targetMoveId": "con-irreducible-intrinsic-value",
+            "text": "The decisive demand is how God's goodness can function as a foundation rather than merely another unexplained intrinsic normative fact.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-god-goodness-paradigm-component-02",
+            "targetMoveId": "con-explanatory-parity",
+            "text": "A further demand is whether divine goodness avoids the same unexplained normative stopping point alleged against godless realism.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a paradigm-and-metric account grounded in the concept of a greatest conceivable worship-worthy being, but does not fully answer the parity concern about embedded normativity.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "This partial answer directly contacts the foundation demand with a proposed metric while leaving the deeper unexplained-normativity challenge unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The paradigm claim and conceptual route through greatness and worship worthiness are clear, though the normative content of those concepts remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The metric analogy makes the view intelligible, but the asserted entailment from the concept of God to essential moral goodness is not fully defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Calling God the paradigm may label the standard without explaining why God's characteristics are morally good or worship-worthy.",
+        "decisiveQualification": "A paradigm account must avoid covertly using independent normative criteria to identify the paradigm."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The paradigm account is internally intelligible, with one material bridge from greatest conceivable and worship-worthy being to the relevant moral metric."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The meter analogy clarifies constitutive paradigms but does not independently support the normative premise that this being is necessarily morally good."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-nature bridge by explaining how God's nature is proposed to constitute the metric of goodness."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply offers a substantive conceptual answer but does not expressly confront the strongest charge that normativity is built into paradigm selection."
+        }
+      },
+      "evidenceBasis": "Craig compares God's nature to a paradigm meter and derives its status as moral metric from God conceived as greatest conceivable and worthy of worship.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-worship-worthiness-normativity",
+      "sectionId": "ultimate-ground-of-moral-value",
+      "side": "con",
+      "speaker": "Erik Wielenberg",
+      "moveKind": "reply",
+      "proposition": "Defining God as worthy of worship embeds an unexplained normative claim within the theistic foundation, so theism does not eliminate basic normative assumptions.",
+      "sourceSpan": {
+        "startEvent": 3040,
+        "endEvent": 3077
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wielenberg explicitly connects Craig's immediately preceding account to his earlier parity argument and speaks until the moderator resumes control.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-explanatory-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-god-goodness-paradigm",
+          "pro-divine-nature-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-worship-worthiness-normativity-component-01",
+            "targetMoveId": "pro-god-goodness-paradigm",
+            "text": "The decisive demand is whether defining God through worship worthiness explains moral normativity without presupposing a basic normative claim.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-worship-worthiness-normativity-component-02",
+            "targetMoveId": "pro-divine-nature-ground",
+            "text": "A related demand is whether God's nature supplies a nonarbitrary moral foundation that improves explanatorily on irreducible normativity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies worship worthiness as an embedded normative premise and states the defeating comparative consequence: theism also terminates in unexplained normativity.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It expressly isolates the premise in the immediately preceding account and explains why it defeats the claimed escape from basic normative assumptions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection distinguishes falsity from explanatory incompleteness and clearly limits its conclusion to the inability to escape an unexplained normative stopping point."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly disclaims showing theism false and appropriately advances only the comparative conclusion that unexplained normativity remains."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Worship worthiness may analytically follow from maximal greatness and thus need no further external moral explanation.",
+        "decisiveQualification": "Even an analytic entailment may contain normative content, so it does not by itself show that the foundation is normativity-free."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The move cleanly identifies normative content in the proposed explanatory basis and derives the limited parity consequence without claiming falsity."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The immediately preceding appeal to worship worthiness specifically supports the objection, with only a bounded gap concerning analytic conceptual explanation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central explanatory-parity bridge by arguing that the theistic foundation retains a basic normative assumption."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply targets the strongest conceptual formulation and draws a restrained parity conclusion rather than treating the embedded premise as a contradiction."
+        }
+      },
+      "evidenceBasis": "Wielenberg identifies worthiness of worship as a normative claim built into the conception of God and concludes only that theism cannot escape unexplained normativity.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-contact records already supplied.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence survives the exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed adjustment would not change any burden's recorded completion status."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-contact records already supplied.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence survives the exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed adjustment would not change any burden's recorded completion status."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

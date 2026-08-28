@@ -1,0 +1,1959 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "41",
+  "debateId": "huemer-bush-objective-moral-facts-2024",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-realist-intuitionist-route",
+      "side": "pro",
+      "description": "Establish objective moral facts by identifying attitude-independent moral truths, eliminating leading anti-realist interpretations of ordinary moral claims, and defending intellectual appearances as prima facie grounds for realist conclusions.",
+      "successCriteria": "The route succeeds if at least some moral propositions are justified as true independently of attitudes, rival semantic accounts fail to explain the relevant discourse, and ethical intuitions can legitimately support that conclusion.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-objective-facts",
+        "tier": "motion",
+        "description": "Show that at least some justified moral truths retain their validity independently of individual or collective attitudes."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-elimination",
+          "tier": "central",
+          "description": "Reject global error theory, stance-dependent truth conditions, and non-cognitivist treatment as adequate accounts of the relevant moral judgments."
+        },
+        {
+          "bridgeId": "pro-central-intuition",
+          "tier": "central",
+          "description": "Establish that noninferential intellectual appearances receive prima facie epistemic weight and can ground reasoning toward realism."
+        },
+        {
+          "bridgeId": "pro-central-semantic-content",
+          "tier": "central",
+          "description": "Identify contexts in which moral assertions have propositionally structured, truth-apt content that cannot be reduced to expressive or attitude-reporting functions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-common-sense",
+          "tier": "subsidiary",
+          "description": "Explain how familiar first-order judgments can support realism without requiring ordinary speakers to begin with an explicit metaethical theory."
+        },
+        {
+          "bridgeId": "pro-subsidiary-authority",
+          "tier": "subsidiary",
+          "description": "Clarify the distinctive practical authority claimed for objective moral reasons relative to preference-dependent considerations."
+        }
+      ]
+    },
+    {
+      "routeId": "con-quietist-antirealist-route",
+      "side": "con",
+      "description": "Resist the inference to objective moral facts by denying that ordinary discourse or intuitive appearances determine realist commitments, developing a contextual quietist alternative, and challenging the epistemic and metaphilosophical assumptions of the realist argument.",
+      "successCriteria": "The route succeeds if the realist elimination is non-exhaustive, ordinary moral language remains meaningful without determinate realist content, and intuitive appearances lack sufficient shared or theory-neutral force to establish stance-independent facts.",
+      "motionBridge": {
+        "bridgeId": "con-motion-antirealist-quietism",
+        "tier": "motion",
+        "description": "Show that moral practice and discourse need not commit speakers to stance-independent moral facts and do not establish realism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-nonexhaustive-options",
+          "tier": "central",
+          "description": "Demonstrate that contextual, quietist, or indeterminate uses of moral language escape the realist taxonomy of anti-realist alternatives."
+        },
+        {
+          "bridgeId": "con-central-intuition-challenge",
+          "tier": "central",
+          "description": "Show that realist appearances are disputed, interpretation-dependent, or shaped by pragmatic, cultural, linguistic, and philosophical conditions."
+        },
+        {
+          "bridgeId": "con-central-language-use",
+          "tier": "central",
+          "description": "Account for meaningful moral communication through variable use and context without assigning uniform realist or anti-realist semantics."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-folk-methodology",
+          "tier": "subsidiary",
+          "description": "Challenge attempts to infer a determinate folk metaethics from surveys or philosophically trained responses."
+        },
+        {
+          "bridgeId": "con-subsidiary-authority",
+          "tier": "subsidiary",
+          "description": "Explain why practical importance or motivation need not depend on stance-independent reasons or facts."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "objective-truth-and-antirealist-alternatives",
+      "title": "Objective moral truth and the anti-realist alternatives",
+      "weightPercent": 25,
+      "rationale": "This issue contains the motion-level dispute over attitude-independent truth and whether error theory, stance dependence, and non-cognitivism exhaust the alternatives to realism."
+    },
+    {
+      "sectionId": "moral-language-context-and-quietism",
+      "title": "Moral language, contextual use, and quietism",
+      "weightPercent": 22,
+      "rationale": "The semantic clash determines whether ordinary assertions encode stable realist propositions or can remain meaningful through context-sensitive uses without determinate metaethical commitments."
+    },
+    {
+      "sectionId": "intuition-appearances-and-philosophical-method",
+      "title": "Intuition, intellectual appearances, and philosophical method",
+      "weightPercent": 25,
+      "rationale": "Ethical intuitionism depends on the epistemic standing of pre-analytic appearances, while the opposing route challenges their interpretation, reliability, generality, and methodological role."
+    },
+    {
+      "sectionId": "common-sense-and-folk-metaethics",
+      "title": "Common sense, empirical evidence, and folk metaethics",
+      "weightPercent": 16,
+      "rationale": "Claims about common sense affect the dialectical starting point, making the determinacy of ordinary commitments and the methods used to measure them materially burden-relevant."
+    },
+    {
+      "sectionId": "normative-authority-and-practical-significance",
+      "title": "Normative authority, motivation, and practical significance",
+      "weightPercent": 12,
+      "rationale": "The parties dispute whether objectivity supplies distinctive authority or motivation and whether practical consequences can illuminate the difference between realist and preference-based morality."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-objective-attitude-independence",
+      "sectionId": "objective-truth-and-antirealist-alternatives",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Objective moral facts are moral truths whose validity does not depend on observers' attitudes, beliefs, or feelings.",
+      "sourceSpan": {
+        "startEvent": 92,
+        "endEvent": 122
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Huemer the floor at event 88, and the uninterrupted opening statement continues through this window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-objective-facts"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move defines the motion-level realist claim and distinguishes it from error theory, stance dependence, and non-cognitivism; no earlier opposing move exists to answer.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within constructive moves, this directly establishes the principal proposition and cleanly organizes the alternatives relevant to the motion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The proposition clearly identifies objective facts as moral truths whose validity is independent of observers' attitudes, beliefs, and feelings."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical force is appropriate for a stipulative characterization of the position, though it does not itself prove that such facts exist."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinctions are internally consistent and provide a clear taxonomy, while the existence conclusion still depends on later elimination and justification."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual distinctions are specifically stated and usable, but the excerpt supplies limited independent defense for rejecting each alternative."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move directly states the attitude-independence condition at the center of the pro motion-level bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This definitional constructive move does not materially interpret an opposing argument, so no live charity test is presented."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly contrasts falsity, attitude-dependent truth, and lack of truth value with moral truths that do not depend on observers' attitudes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cruelty-attitude-test",
+      "sectionId": "objective-truth-and-antirealist-alternatives",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "The wrongness of gratuitous cruelty does not vary with individual approval, belief, sentiment, or social convention, so it is attitude independent.",
+      "sourceSpan": {
+        "startEvent": 149,
+        "endEvent": 177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer remains the sole speaker throughout this section of his opening statement and explicitly introduces the second alternative.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-objective-facts"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move applies the attitude-independence definition to gratuitous cruelty by varying approval, belief, and social convention; it has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, the repeated counterfactual tests make the intended motion-level support explicit, although they rely on intuitive verdicts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The example and tested attitudes remain stable, with the ordinary implicit qualification that the cruelty is gratuitous or merely for fun."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Persistent seeming across stipulated attitude changes strongly supports the example, but the move slightly compresses the inference from seeming to objective truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An anti-realist may agree that the speaker condemns cruelty under every stipulated attitude while denying stance-independent truth.",
+        "decisiveQualification": "Invariant first-order condemnation does not by itself determine the metaethical truth conditions of that condemnation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The counterfactual pattern coherently challenges simple individual and social dependence, but leaves a material bridge from stable judgment to stance-independent fact."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The vivid repeated example supports the claimed seeming, while representativeness and the independence of the intuition from framing remain unverified."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The example directly advances the motion-level requirement that at least one moral truth retain validity independently of attitudes."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move tests several attitude-dependent readings fairly, but does not fully address an expressivist or quietist explanation of the same stable verdict."
+        }
+      },
+      "evidenceBasis": "The excerpt repeatedly asks whether approval, belief, or a society's convention could make torturing children for fun permissible and answers that it would remain wrong.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-embedding-content",
+      "sectionId": "moral-language-context-and-quietism",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Moral sentences function propositionally in embedded linguistic contexts, creating a serious problem for non-cognitivist accounts of moral discourse.",
+      "sourceSpan": {
+        "startEvent": 178,
+        "endEvent": 285
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous opening-statement context and Huemer's explicit introduction of non-cognitivism securely identify both speaker and argumentative ownership.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-semantic-content"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move adduces embedded uses such as wondering whether a moral proposition is true to support propositionally structured moral content; no earlier opposition is targeted.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within constructive moves, it supplies a concrete linguistic diagnostic bearing directly on the semantic bridge, though the full embedding argument is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The linguistic claim and its target are recoverable, with an implicit restriction to the tested embedded contexts rather than every use of moral language."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The language of appearances and a serious explanatory problem fits the supplied embedding evidence without claiming that every non-cognitivist theory is conclusively refuted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A sophisticated non-cognitivist can preserve the surface grammar and embedded inferential roles without treating atomic moral utterances as ordinary descriptive assertions.",
+        "decisiveQualification": "Preserving compositional and inferential behavior still imposes a substantial explanatory burden even if proposition-like structure is reconstructed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Embedded intelligibility provides a coherent challenge to simple non-cognitivism, with one bounded bridge from proposition-like behavior to genuinely truth-apt content."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "A specific linguistic test is supplied, but the excerpt does not compare representative sophisticated non-cognitivist treatments of embedding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the indispensable semantic-content bridge by identifying propositionally structured moral discourse."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move accurately identifies the strongest linguistic pressure but only briefly engages the sophisticated compositional resources available to its target."
+        }
+      },
+      "evidenceBasis": "The excerpt observes that one can intelligibly wonder whether abortion is wrong and argues that such embedding makes moral statements look like propositions capable of truth or falsity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-folk-indeterminacy",
+      "sectionId": "common-sense-and-folk-metaethics",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Moral realism is not a common-sense position because ordinary people need not possess determinate realist or anti-realist commitments.",
+      "sourceSpan": {
+        "startEvent": 395,
+        "endEvent": 452
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly transfers the floor to Bush, who begins by directly addressing Huemer's final opening argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-common-sense"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-attitude-independence",
+          "pro-cruelty-attitude-test"
+        ],
+        "components": [
+          {
+            "componentId": "con-folk-indeterminacy-component-01",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "The decisive demand contacted is whether ordinary moral commitment supports the realist, attitude-independent interpretation rather than merely defining it.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-folk-indeterminacy-component-02",
+            "targetMoveId": "pro-cruelty-attitude-test",
+            "text": "The cruelty verdict might be widely shared without ordinary speakers possessing a determinate metaethical commitment.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly disputes the common-sense status attributed to realism by denying determinate folk metaethical commitments. It contacts the dialectical use of ordinary judgments, though it does not refute the attitude-independence definition itself.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This is a partial answer that contacts the decisive common-sense inference but leaves the example's direct phenomenology and semantic alternatives substantially untreated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is explicitly limited to whether realism is widely and determinately held among non-philosophers, rather than denying all ordinary moral judgment."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move frames folk commitment as an open empirical and interpretive question and does not claim certainty about every ordinary speaker."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The realist need only claim that familiar first-order intuitions support realism, not that laypeople explicitly formulate a metaethical theory.",
+        "decisiveQualification": "Lack of explicit theory does not show that ordinary judgments lack implicit realist content or support."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The inference from absent determinate folk commitments to denial of realism's common-sense status is coherent, subject to the explicit-versus-implicit commitment distinction."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The methodological concern is plausible, but this span offers little representative empirical detail establishing widespread indeterminacy."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move strongly attacks the subsidiary common-sense bridge while leaving the motion-level truth claim untouched."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move fairly challenges explicit folk realism but initially compresses the stronger inference-from-first-order-judgment version of the realist position."
+        }
+      },
+      "evidenceBasis": "Bush expressly denies that realism is common sense and argues that its alleged common-sense status would require widespread determinate realist commitments among non-philosophers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-folk-survey-methodology",
+      "sectionId": "common-sense-and-folk-metaethics",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Empirical studies do not clearly establish folk realism because responses vary and many participants misunderstand metaethical questions as normative or epistemic questions.",
+      "sourceSpan": {
+        "startEvent": 453,
+        "endEvent": 546
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bush continues his uninterrupted opening statement, explicitly turning to empirical research within his own stated area of specialization.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-folk-methodology"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-attitude-independence",
+          "pro-cruelty-attitude-test"
+        ],
+        "components": [
+          {
+            "componentId": "con-folk-survey-methodology-component-01",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "The contacted component is whether evidence about ordinary responses warrants attributing the attitude-independent metaethical position to respondents.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-folk-survey-methodology-component-02",
+            "targetMoveId": "pro-cruelty-attitude-test",
+            "text": "Responses to concrete normative cases may be mistaken for answers to distinct metaethical questions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move identifies ambiguity between normative, epistemic, and metaethical interpretations of survey answers. That directly contacts the evidential route from ordinary verdicts to folk realism but not the independent philosophical truth of realism.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "The decisive methodological component is contacted explicitly, although the answer remains compressed and refers elsewhere for detailed study-level support."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is limited to what existing empirical studies clearly establish, and it specifies two recurring forms of respondent misunderstanding."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The restrained conclusion that studies do not clearly establish folk realism fits the stated variation and interpretation problems."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Well-designed surveys may distinguish normative, epistemic, and metaethical questions and still find substantial realist responses.",
+        "decisiveQualification": "Methodological defects in some studies do not establish indeterminacy in all studies or respondents."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Misclassification of normative or epistemic answers would directly undermine the intended metaethical inference, and the conclusion remains appropriately limited."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Specific error mechanisms are named, but detailed studies, response distributions, and verification are deferred to an external interview rather than supplied here."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move directly supports the con subsidiary bridge challenging folk-metaethical survey methodology."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move allows that data exist and focuses on interpretation, but does not compare the strongest disambiguated instruments in the excerpt."
+        }
+      },
+      "evidenceBasis": "The excerpt states that respondents may interpret survey prompts as questions about normative standards or knowledge and acknowledges that detailed methodological support is not presented in the debate.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-private-realist-seemings",
+      "sectionId": "intuition-appearances-and-philosophical-method",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Realist seemings can provide at most private initial justification and cannot settle the dispute for people who lack those seemings or require public corroboration.",
+      "sourceSpan": {
+        "startEvent": 547,
+        "endEvent": 651
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bush remains the sole speaker and explicitly frames this section around Huemer's cases and Huemer's phenomenal-conservatist epistemology.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-intuition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cruelty-attitude-test",
+          "pro-objective-attitude-independence"
+        ],
+        "components": [
+          {
+            "componentId": "con-private-realist-seemings-component-01",
+            "targetMoveId": "pro-cruelty-attitude-test",
+            "text": "The decisive component contacted is whether the asserted realist seeming is shared enough to support the metaethical conclusion beyond the person reporting it.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-private-realist-seemings-component-02",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "Private appearances do not by themselves publicly establish that attitude-independent facts exist.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush directly reports lacking the realist seeming and argues that phenomenal conservatism initially yields private justification. This contacts the evidential force of Huemer's intuitive example, although it does not show that private prima facie justification is absent for Huemer.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The reply contacts the decisive shared-warrant problem and supplies a contrasting case, but does not fully address the modest claim of personal prima facie justification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully limits its conclusion to what realist seemings can establish for people who lack them and repeatedly qualifies the private-justification claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is framed as an impasse and an at-best limitation, matching the first-person counterexample and avoiding a universal reliability conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Phenomenal conservatism claims only defeasible prima facie justification for the subject who has the seeming, not compulsory public proof for everyone.",
+        "decisiveQualification": "Private justification can remain genuine even when it fails to rationally compel a dissenter who lacks the appearance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between private initial justification and public dispute-settling evidence is coherent and directly explains the stated impasse."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The first-person absence of a seeming is relevant counterevidence to universality, but broader prevalence and causal explanations remain unsupported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central intuition bridge by challenging the shared and theory-neutral force of realist appearances."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "Bush substantially recognizes the private-justification possibility and accurately confines the objection to dialectical and corroborative limitations."
+        }
+      },
+      "evidenceBasis": "Bush states that he lacks the realist seemings elicited by Huemer's cases and argues that phenomenal conservatism provides mostly private justification unless the parties move beyond those appearances.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-quietism-beyond-trilemma",
+      "sectionId": "objective-truth-and-antirealist-alternatives",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Anti-realist quietism escapes the standard trilemma because moral language can have context-sensitive, empirically determined uses rather than one uniform semantic analysis.",
+      "sourceSpan": {
+        "startEvent": 652,
+        "endEvent": 830
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bush explicitly introduces Huemer's elimination strategy, names his own quietist position, and develops it continuously through the stated conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-nonexhaustive-options"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-attitude-independence",
+          "pro-moral-embedding-content"
+        ],
+        "components": [
+          {
+            "componentId": "con-quietism-beyond-trilemma-component-01",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "The decisive demand is the purported exhaustiveness of falsity, attitude-dependent truth, and non-propositionality as alternatives to objective moral facts.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-quietism-beyond-trilemma-component-02",
+            "targetMoveId": "pro-moral-embedding-content",
+            "text": "Context-sensitive use may preserve proposition-like moral discourse without imposing one uniform semantic analysis.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses Huemer's elimination as dependent on a uniform semantic taxonomy and states the defeating consequence: contextual quietism remains available outside that trilemma. It also addresses propositional surface behavior through variable use rather than denying meaningful discourse.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply explicitly identifies the inference's exhaustiveness premise, offers a replacement account, and states why the realist elimination does not follow."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contextual alternative and target are recoverable, though the label quietism and the precise semantic status assigned in each context remain partly underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Bush presents quietism as his empirically oriented alternative and even qualifies the label, fitting the incomplete but substantive contextual account."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Huemer's trilemma may classify truth conditions of particular moral tokens rather than require one uniform analysis of every use.",
+        "decisiveQualification": "Context sensitivity alone does not show that any token escapes truth, attitude-dependent truth, or non-truth-aptness once its context is fixed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The non-exhaustiveness diagnosis is coherent, but a material bridge is missing from variable contextual use to escape from the trilemma for determinate tokens."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The alternative is developed beyond assertion, yet representative contextual examples and comparison against token-sensitive rival analyses remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move is the clearest direct support for the con central nonexhaustive-options bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move exposes a genuine uniformity assumption but does not fully confront a token-level version of the realist taxonomy."
+        }
+      },
+      "evidenceBasis": "Bush explicitly rejects all three standard positions, diagnoses their shared semantic orientation, and proposes empirically determined, context-sensitive language use under the label anti-realist quietism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-error-theory-entanglement",
+      "sectionId": "objective-truth-and-antirealist-alternatives",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Error theory appears counterintuitive when pragmatic implications about an agent's attitudes are conflated with its narrower denial of stance-independent moral facts.",
+      "sourceSpan": {
+        "startEvent": 889,
+        "endEvent": 930
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted passage remains within Bush's opening statement and develops his previously introduced analysis of error theory.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-elimination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cruelty-attitude-test",
+          "pro-objective-attitude-independence"
+        ],
+        "components": [
+          {
+            "componentId": "con-error-theory-entanglement-component-01",
+            "targetMoveId": "pro-cruelty-attitude-test",
+            "text": "The decisive demand is whether the intuitive cruelty verdict genuinely contradicts error theory rather than importing assumptions about the error theorist's attitudes and conduct.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-error-theory-entanglement-component-02",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "The move distinguishes error theory's denial of objective facts from pragmatic implications about what its adherents approve or do.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses normative entanglement as the source of the example's apparent force and states that separating metaethical denial from attitudes defeats that particular intuitive objection. It does not independently establish error theory.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The decisive conflation is directly named and its consequence stated, though the reply does not answer every attitude-independence test in the constructive sequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Normative entanglement is clearly characterized as conflating a narrow metaethical thesis with attitudes, preferences, and likely behavior."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is limited to explaining why the objections look plausible and does not overstate the diagnosis as a complete defense of error theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Huemer's example may target whether cruelty remains wrong under changed attitudes, not what an error theorist personally approves or would do.",
+        "decisiveQualification": "Separating personal attitudes from metaethical belief does not by itself dissolve the intuition that cruelty is wrong independently of both."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conflation diagnosis is logically coherent, but it only partially reaches the strongest version of the cruelty argument's modal premise."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The mechanism is plausible and specifically described, while evidence that participants or philosophers actually commit the conflation is not supplied."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move materially attacks the pro elimination bridge by defending error theory from a central intuitive objection."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply identifies a real pragmatic conflation but partly redirects a stronger attitude-independence challenge into a claim about theorists' psychology."
+        }
+      },
+      "evidenceBasis": "The excerpt separates error theory from implications about the theorist's attitudes and behavior and attributes the appeal of Huemer's objection to conflating normative and metaethical claims.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-first-order-to-realism",
+      "sectionId": "common-sense-and-folk-metaethics",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Moral realism need not be directly intuitive because reasoning from familiar first-order moral intuitions can support a realist conclusion.",
+      "sourceSpan": {
+        "startEvent": 980,
+        "endEvent": 1011
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the discussion to Huemer, who explicitly clarifies the intended structure of his appeal to common-sense intuitions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-common-sense"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-folk-indeterminacy",
+          "con-folk-survey-methodology"
+        ],
+        "components": [
+          {
+            "componentId": "pro-first-order-to-realism-component-01",
+            "targetMoveId": "con-folk-indeterminacy",
+            "text": "The decisive demand is whether realism must itself be an explicit folk intuition to qualify as supported by common-sense moral judgment.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-first-order-to-realism-component-02",
+            "targetMoveId": "con-folk-survey-methodology",
+            "text": "Difficulty understanding direct metaethical questions does not prevent reasoning from clearer first-order judgments.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Huemer justifies replacing the demand for direct lay metaethical intuition with a demand for reasoning from familiar first-order intuitions. This preserves the legitimate common-sense issue while conceding that ordinary people may not understand the abstract question immediately.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The reframe is explicit, preserves the evidential question, and directly answers the strongest explicit-folk-commitment objection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between direct metaethical intuition and inference from first-order moral intuitions is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Huemer concedes that ordinary people may lack direct intuitions about realism and advances only the more modest inferential route."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "First-order moral agreement may underdetermine metaethics even when ordinary speakers reason carefully from it.",
+        "decisiveQualification": "Replacing direct intuition with inference avoids one objection but still requires a warranted bridge from first-order content to realism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction cleanly answers the direct-intuition objection, with one bounded unresolved bridge from first-order intuitions to the realist conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The observation about abstraction and philosophical unfamiliarity is plausible, but no detailed demonstration of the inference to realism appears in this span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move directly supports the subsidiary common-sense bridge by clarifying how ordinary judgments can contribute without explicit folk theory."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply squarely concedes the strongest folk-indeterminacy point while isolating the remaining inferential dispute rather than caricaturing it."
+        }
+      },
+      "evidenceBasis": "Huemer states that laypeople may not initially understand the realism question and clarifies that his route reasons from familiar first-order intuitions rather than positing a direct intuition of realism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-context-with-realist-content",
+      "sectionId": "moral-language-context-and-quietism",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "A plausible context in which a moral claim has genuinely realist content is enough to defeat a universal anti-realist account of moral language.",
+      "sourceSpan": {
+        "startEvent": 1025,
+        "endEvent": 1090
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer introduces Bush's indeterminacy claim and develops a sustained answer using deliberative ethical discourse as his proposed countercontext.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-language-use"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-quietism-beyond-trilemma",
+          "con-folk-indeterminacy",
+          "con-error-theory-entanglement"
+        ],
+        "components": [
+          {
+            "componentId": "pro-context-with-realist-content-component-01",
+            "targetMoveId": "con-quietism-beyond-trilemma",
+            "text": "The decisive component contacted is whether contextual variation rules out identifiable contexts with genuinely realist moral content.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-context-with-realist-content-component-02",
+            "targetMoveId": "con-folk-indeterminacy",
+            "text": "Determinate realist content may occur in specialized deliberative contexts even if ordinary speakers are often indeterminate.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-context-with-realist-content-component-03",
+            "targetMoveId": "con-error-theory-entanglement",
+            "text": "The academic ethics example aims to distinguish assertion about wrongness from reports of attitudes or attempts at influence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts contextual analysis and offers ethics literature as a countercontext where moral claims appear neither expressive nor attitude-reporting. This contacts a universal or pervasive quietist account, although it does not conclusively establish realist truth conditions.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "The decisive contextual demand is explicitly contacted with a concrete counterexample, but rival pragmatic analyses of that context remain open."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The argument expressly requires only some plausible realist contexts and does not generalize the example to every moral utterance."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The ethics-literature context is strong evidence against simple expressive readings, but calling realist content highly plausible slightly outruns the abbreviated rival comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Academic ethical debate can employ proposition-like discourse while its content remains constructivist, fictionalist, or contextually practical rather than realist.",
+        "decisiveQualification": "Excluding expression, persuasion, and attitude report does not exhaust all non-realist accounts of propositional discourse."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "One genuine realist context would defeat a universal contrary claim, but the inference from excluded simple functions to realist content leaves a material alternatives gap."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "A specific and plausible deliberative context is supplied, while its semantic interpretation is asserted without detailed linguistic verification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con language-use bridge by claiming a determinate realist countercontext."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply fairly accepts context sensitivity but narrows the anti-realist alternatives too quickly within its proposed countercontext."
+        }
+      },
+      "evidenceBasis": "Huemer cites ethics literature discussing whether abortion is wrong and argues that participants are neither merely expressing feelings, influencing action, nor reporting their attitudes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-meaning-without-metaethics",
+      "sectionId": "moral-language-context-and-quietism",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Ordinary moral assertions can be meaningful without determinate realist or anti-realist commitments because communicative use and context holistically fix their meaning.",
+      "sourceSpan": {
+        "startEvent": 1585,
+        "endEvent": 1671
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bush explicitly clarifies his earlier no-fact-of-the-matter formulation and supplies a sustained contextual and pragmatic account of meaning.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-language-use"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-context-with-realist-content",
+          "pro-moral-embedding-content",
+          "pro-first-order-to-realism"
+        ],
+        "components": [
+          {
+            "componentId": "con-meaning-without-metaethics-component-01",
+            "targetMoveId": "pro-context-with-realist-content",
+            "text": "The decisive demand contacted is whether meaningful moral assertion in a context must carry determinate realist or anti-realist semantic commitments.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-meaning-without-metaethics-component-02",
+            "targetMoveId": "pro-moral-embedding-content",
+            "text": "Holistic communicative meaning can preserve meaningful embedded and assertoric use without a uniform metaethical analysis.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-meaning-without-metaethics-component-03",
+            "targetMoveId": "pro-first-order-to-realism",
+            "text": "Meaningful first-order judgments need not settle the metaethical inference drawn from them.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush explicitly rejects the interpretation that indeterminate metaethical commitment entails meaningless speech and replaces it with a holistic contextual account. This directly answers the meaning objection, though the mechanics of how context fixes content remain compressed.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "The reply contacts the decisive meaning-versus-metaethics inference and states a positive alternative, with only the detailed semantic mechanism underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between meaning and determinate metaethical stance is clear, though holistic context and communicative use remain partly underspecified terms."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move confidently rejects an extreme interpretation while offering the contextual account as Bush's view rather than a conclusively demonstrated semantic theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Huemer need not claim that indeterminate speech is meaningless; he may claim that particular deliberative contexts determinately express truth-apt realist propositions.",
+        "decisiveQualification": "Showing that ordinary speech can be meaningful without metaethical theory does not resolve the semantic status of Huemer's strongest selected contexts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between practical communicative meaning and determinate metaethical commitment is coherent, with a bounded missing account of contextual content determination."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The ordinary example makes the distinction plausible, but the holistic theory is not tested against detailed embedded or deliberative cases."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con language-use bridge by explaining how meaningful moral communication can survive indeterminate metaethics."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The clarification fairly defeats a broad meaning objection but only partly addresses the more localized realist-content counterexample."
+        }
+      },
+      "evidenceBasis": "Bush explicitly says that speakers who claim murder is wrong do not thereby mean nothing and proposes that communicative use and context holistically determine meaning without determinate realist commitments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-conceptual-quietism",
+      "sectionId": "moral-language-context-and-quietism",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "There need be no determinate phenomenon corresponding to the English word knowledge, and anti-realism remains available once contested linguistic and metaphilosophical assumptions are rejected.",
+      "sourceSpan": {
+        "startEvent": 1908,
+        "endEvent": 1955
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following Huemer's clarification request, Bush gives a sustained answer about knowledge, concepts, and the process-of-elimination argument until Huemer resumes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-nonexhaustive-options"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-context-with-realist-content",
+          "pro-objective-attitude-independence",
+          "pro-first-order-to-realism"
+        ],
+        "components": [
+          {
+            "componentId": "con-conceptual-quietism-component-01",
+            "targetMoveId": "pro-context-with-realist-content",
+            "text": "The decisive component contacted is whether English conceptual practice must correspond to one determinate underlying phenomenon or semantic structure.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conceptual-quietism-component-02",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "Rejecting a fixed word-to-phenomenon correspondence leaves additional conceptual space outside the elimination argument.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conceptual-quietism-component-03",
+            "targetMoveId": "pro-first-order-to-realism",
+            "text": "First-order or ordinary conceptual use may not determine the metaphilosophical structure required by the realist inference.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush directly contests the metaphilosophical assumption that a term such as knowledge corresponds to one determinate phenomenon and connects that objection to the non-exhaustiveness of Huemer's elimination. The analogy's transfer to moral language remains only partially developed.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "The underlying conceptual assumption is contacted explicitly, but the answer relies on an analogy and does not fully specify the resulting moral semantics."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The anti-correspondence thesis is recoverable, but its range across words, concepts, phenomena, and specifically moral discourse is only partly stabilized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Bush expressly says he could be wrong and uses the metaphilosophical position to preserve an available alternative, which matches the limited warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A realist need not posit one natural-kind essence for every English word; the argument may concern determinate content in particular uses only.",
+        "decisiveQualification": "General conceptual pluralism does not automatically defeat a context-specific realist semantic claim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The conceptual-quietist possibility coherently resists exhaustiveness, but the analogy from knowledge to moral content leaves a material scope bridge."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The metaphilosophical stance is explained but supported mainly by assertion, with no representative linguistic evidence or detailed moral application."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move materially supports the central nonexhaustive-options bridge by challenging the conceptual assumptions behind the realist taxonomy."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move exposes a strong metaphilosophical assumption but applies a broad anti-correspondence view to a more limited realist argument without fully closing the gap."
+        }
+      },
+      "evidenceBasis": "Bush denies that there must be a determinate phenomenon corresponding to the English term knowledge and explicitly connects this metaphilosophy to keeping anti-realism available against elimination.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-trained-pseudo-phenomenology",
+      "sectionId": "intuition-appearances-and-philosophical-method",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Philosophical intuitions may be context-induced pseudo-phenomenology produced by training into an idiosyncratic Anglophone philosophical mode rather than detection of universal truths.",
+      "sourceSpan": {
+        "startEvent": 1965,
+        "endEvent": 2052
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Bush answers Huemer's question about widespread Gettier reactions, develops his own contrasting experience, and concludes with a unified social-training hypothesis.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-intuition-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-first-order-to-realism",
+          "pro-cruelty-attitude-test",
+          "pro-context-with-realist-content"
+        ],
+        "components": [
+          {
+            "componentId": "con-trained-pseudo-phenomenology-component-01",
+            "targetMoveId": "pro-first-order-to-realism",
+            "text": "The decisive demand contacted is whether philosophical and first-order intuitions are sufficiently pre-theoretical and representative to ground the realist inference.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-trained-pseudo-phenomenology-component-02",
+            "targetMoveId": "pro-cruelty-attitude-test",
+            "text": "Seemings elicited through philosophical framing may reflect learned response patterns rather than universal truth detection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-trained-pseudo-phenomenology-component-03",
+            "targetMoveId": "pro-context-with-realist-content",
+            "text": "Specialized philosophical contexts may generate idiosyncratic judgments rather than uniquely reveal realist semantic content.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush proposes a concrete defeater hypothesis: training in contemporary Anglophone philosophy may induce both reports and experiences of intuition. This directly contacts the neutrality and universality of intuitive evidence, though it remains an empirical hypothesis rather than an established diagnosis.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "The decisive reliability component is contacted explicitly, but the training hypothesis is speculative and does not distinguish genuine learning from distortion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The training hypothesis and target population are clear, though pseudo-phenomenology and being taught to have an experience are partly unstable notions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The repeated may-or-may-not formulation appropriately presents social induction as a live possibility rather than a demonstrated universal cause."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Philosophical training may sharpen recognition of pre-existing reasons rather than manufacture pseudo-phenomenology.",
+        "decisiveQualification": "A correlation between training and reported intuitions cannot by itself distinguish improved competence from social induction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Training-induced intuition would undermine theory-neutrality, but the argument leaves a material causal and underdetermination bridge."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The hypothesis is intelligible and tied to a population, yet no comparative, cross-cultural, or longitudinal evidence is supplied in the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con intuition challenge by questioning the origin and representativeness of philosophical seemings."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The move acknowledges uncertainty but does not substantially compare the competence-based explanation of trained convergence."
+        }
+      },
+      "evidenceBasis": "Bush proposes that students are inducted into an idiosyncratic contemporary Anglophone philosophical mode and may be taught to report or experience the relevant intuitions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-shared-thin-normative-concepts",
+      "sectionId": "common-sense-and-folk-metaethics",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Cross-cultural conceptual variation may limit parochial thick concepts without eliminating shared thin normative concepts such as better and worse.",
+      "sourceSpan": {
+        "startEvent": 2234,
+        "endEvent": 2271
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer explicitly addresses Bush's cultural and linguistic observations and carries the response through his distinction between thick and thin concepts.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-intuition-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-trained-pseudo-phenomenology",
+          "con-folk-indeterminacy",
+          "con-conceptual-quietism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-shared-thin-normative-concepts-component-01",
+            "targetMoveId": "con-trained-pseudo-phenomenology",
+            "text": "The decisive component contacted is whether cultural or linguistic variation eliminates shared normative conceptual resources altogether.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-shared-thin-normative-concepts-component-02",
+            "targetMoveId": "con-folk-indeterminacy",
+            "text": "Shared thin concepts may persist even where explicit metaethical commitments and thicker concepts vary.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-shared-thin-normative-concepts-component-03",
+            "targetMoveId": "con-conceptual-quietism",
+            "text": "Conceptual variation in terms such as knowledge need not generalize to all thin normative comparisons.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Huemer concedes possible cultural variation and distinguishes parochial thick concepts from thin notions such as better and worse. This partially answers a broad variability challenge but does not supply cross-cultural evidence that the thin concepts are genuinely shared.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "The decisive universal-elimination component is contacted by a principled distinction, while the empirical existence and realist implications of shared thin concepts remain underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The thick-thin distinction is clear enough to recover the proposition, though the boundary and semantic content of better and worse are not fully defined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Huemer repeatedly concedes uncertainty about other cultures and offers the thin-concept response as a possibility, matching the sparse evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even thin comparative terms may differ in use, inferential role, or normative force across cultures and languages.",
+        "decisiveQualification": "Thinness makes commonality plausible but does not establish shared realist content or universal intuitive verdicts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The thick-thin distinction coherently blocks an unrestricted inference from some conceptual variation to total normative incommensurability."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The proposed shared concepts are plausible examples, but Huemer explicitly lacks supporting cross-cultural evidence in the selected span."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move centrally attacks the claim that cultural or linguistic variation defeats all shared intuition-based normative reasoning."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply fairly accepts substantial variation and narrows its claim, though it does not fully engage variation within supposedly thin concepts."
+        }
+      },
+      "evidenceBasis": "Huemer concedes that other cultures may differ in intuitions or concepts, then suggests that thick concepts can vary while thin normative concepts such as better and worse remain shared.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-subjective-practical-importance",
+      "sectionId": "normative-authority-and-practical-significance",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Subjective preferences need not be less important than stance-independent facts, whose alleged authority supplies no motivation beyond an agent's own goals and desires.",
+      "sourceSpan": {
+        "startEvent": 2575,
+        "endEvent": 2683
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Bush as the addressee, and Bush delivers the uninterrupted response until the moderator solicits Huemer's reaction.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-shared-thin-normative-concepts",
+          "pro-objective-attitude-independence"
+        ],
+        "components": [
+          {
+            "componentId": "con-subjective-practical-importance-component-01",
+            "targetMoveId": "pro-shared-thin-normative-concepts",
+            "text": "The contacted practical component is whether shared normative vocabulary carries stance-independent importance or authority for an agent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-subjective-practical-importance-component-02",
+            "targetMoveId": "pro-objective-attitude-independence",
+            "text": "Even if stance-independent facts existed, their motivational importance would not follow independently of an agent's goals.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush directly argues that importance is intelligible to him only subjectively and that action proceeds from goals and preferences. This addresses practical authority rather than the semantic existence of thin concepts, so the primary target is only partially answered.",
+        "responsivenessWithinClass": {
+          "value": 63,
+          "rationale": "The reply contains issue-bearing contrary material and contacts a practical implication, but it does not answer the main semantic or cross-cultural claim of its nearest target."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The first-person scope is explicit, and importance, motivation, goals, and preferences are used consistently within that restricted practical argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Bush restricts the motivational report to himself and acknowledges uncertainty about what conversion to realism would do, matching the introspective warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective reasons may retain normative authority even for an agent who reports no motivation to comply with them.",
+        "decisiveQualification": "Absence of motivation or caring does not logically show absence of a reason or its stance-independent authority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The preference-based account of motivation is coherent, but the inference from not caring to lack of objective authority would conflate motivational and normative claims."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "First-person motivational evidence supports the limited claim, while broader claims about agents or the intelligibility of importance lack independent support."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move directly supports the subsidiary con authority bridge by explaining practical importance through goals and preferences."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move accurately addresses motivation and subjective importance but risks treating those questions as dispositive of objective normative authority."
+        }
+      },
+      "evidenceBasis": "Bush says he can make sense of importance subjectively, would not expect to care about stance-independent facts, and describes his action as guided by his own goals and preferences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-reasons-authority",
+      "sectionId": "normative-authority-and-practical-significance",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Objective morality is harder to evade than preference-based morality, and moral reasons may outweigh prudential reasons in a way that preference-derived reasons cannot.",
+      "sourceSpan": {
+        "startEvent": 2691,
+        "endEvent": 2725
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly invites Huemer to respond, and the ensuing first-person answer is uninterrupted through its concluding comparison of reasons.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-subjective-practical-importance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-objective-reasons-authority-component-01",
+            "targetMoveId": "con-subjective-practical-importance",
+            "text": "The decisive component contacted is whether objective morality claims a kind of authority that cannot be escaped merely by citing contrary preferences.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Huemer directly proposes two contrasts with preference-based morality: objective demands are harder to evade, and moral reasons may outweigh prudential reasons. The response contacts the authority issue but is tentative and does not defend the ordering principle.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The decisive authority component is contacted, though the answer remains exploratory and leaves its central comparative warrant undeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two proposed authority contrasts are recoverable, but harder to escape and outweigh remain partly undefined and are attributed only to many realists."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Repeated tentative language and attribution to other realists accurately match the absence of a developed defense in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An anti-realist can distinguish normative assessment from motivation while still grounding reasons in preferences or practical commitments.",
+        "decisiveQualification": "Calling objective reasons harder to escape does not explain why they bind an agent or why moral reasons outrank prudential reasons."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The proposed contrasts are mutually consistent, yet a material bridge is missing from objectivity to inescapability and lexical priority over prudence."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move supplies conceptual suggestions and reports what many realists think, but provides little argument or evidence for either authority claim."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move directly supports the pro subsidiary authority bridge, though its tentative development places it below the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 77,
+          "rationale": "The reply identifies the strongest realist authority claim without caricature, but it states rather than resolves the anti-realist demand for an account."
+        }
+      },
+      "evidenceBasis": "Huemer says objective morality is supposed to be harder to escape and adds that many moral realists hold moral reasons to outweigh prudential reasons.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-antirealism-practical-commitment",
+      "sectionId": "normative-authority-and-practical-significance",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Treating moral reasons as mere preference satisfaction may weaken commitment to costly beneficence when self-directed alternatives satisfy an agent's preferences more strongly.",
+      "sourceSpan": {
+        "startEvent": 2968,
+        "endEvent": 3006
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Huemer the question, and Huemer's first-person charitable-giving example forms one continuous answer before Bush is invited to speak.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-subjective-practical-importance",
+          "con-trained-pseudo-phenomenology"
+        ],
+        "components": [
+          {
+            "componentId": "pro-antirealism-practical-commitment-component-01",
+            "targetMoveId": "con-subjective-practical-importance",
+            "text": "The decisive component contacted is whether preference-based motivation can sustain costly moral conduct when stronger self-directed preference satisfaction is available.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-antirealism-practical-commitment-component-02",
+            "targetMoveId": "con-trained-pseudo-phenomenology",
+            "text": "The claim that objectivity affects commitment is behavioral rather than an answer to the training-based epistemic challenge.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Huemer directly challenges the practical sufficiency of preference satisfaction with a charitable-giving comparison. The reply contacts the motivational issue but moves from a conditional personal example toward a broader behavioral expectation without supporting data.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "The decisive motivational component is contacted with a concrete test, but the broader empirical and normative implications remain only partially answered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The charity example is clear, but the scope shifts partly from Huemer's conditional reasoning to a claim about what many people would do under anti-realism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional personal example is calibrated, while the expectation of generally weaker commitment slightly exceeds the anecdotal warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An anti-realist may have stable higher-order preferences, commitments, or social reasons that strongly favor costly beneficence.",
+        "decisiveQualification": "Preference dependence does not imply that immediate self-directed satisfaction always dominates reflective or other-directed commitments."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The conditional concern is coherent, but the move leaves a substantial bridge from one preference comparison to diminished moral commitment generally."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The argument relies on a personal hypothetical and an assertion about many people, with no behavioral evidence or comparison of anti-realist motivations."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move materially attacks the con subsidiary authority bridge by questioning the motivational resilience of subjective reasons."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The example identifies a genuine possible conflict but treats the preference-based account too narrowly by emphasizing immediate comparative satisfaction."
+        }
+      },
+      "evidenceBasis": "Huemer uses his charitable giving as a case where, if preference satisfaction were the only reason, spending on himself might satisfy his preferences more and weaken costly beneficence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-contingent-behavioral-effects",
+      "sectionId": "normative-authority-and-practical-significance",
+      "side": "con",
+      "speaker": "Lance Bush",
+      "moveKind": "reply",
+      "proposition": "Neither anti-realism nor realism entails behavioral consequences; their effects are contingent empirical matters, and realism could itself foster dogmatism or rationalize atrocities.",
+      "sourceSpan": {
+        "startEvent": 3008,
+        "endEvent": 3069
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly asks Bush to respond, and Bush gives the uninterrupted answer through his final qualification that consequences do not indict either position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-antirealism-practical-commitment",
+          "pro-objective-reasons-authority"
+        ],
+        "components": [
+          {
+            "componentId": "con-contingent-behavioral-effects-component-01",
+            "targetMoveId": "pro-antirealism-practical-commitment",
+            "text": "The decisive demand contacted is whether accepting anti-realism predictably weakens moral conduct rather than having contingent empirical effects.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-contingent-behavioral-effects-component-02",
+            "targetMoveId": "pro-objective-reasons-authority",
+            "text": "Realism's alleged authority does not entail beneficial conduct and might coexist with dogmatism or rationalized harm.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Bush directly rejects entailments from either metaethical view to conduct, reframes the matter as empirical, and supplies possible adverse realist effects. This answers the overgeneralized behavioral inference while leaving the actual empirical distribution unresolved.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The decisive entailment-versus-contingency issue is explicitly contacted and the consequence clearly stated, although the empirical prediction remains weakly documented."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between entailment and contingent behavioral effect is explicit, and the adverse-realist examples are presented as possibilities rather than necessities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Treating consequences as empirical and contingent is well calibrated, but predicting very little behavioral effect is stronger than the evidence supplied here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Huemer's claim may be probabilistic—that realist belief tends to strengthen costly commitment—not that anti-realism logically entails misconduct.",
+        "decisiveQualification": "Denying entailment does not by itself answer a probabilistic behavioral hypothesis, which requires comparative empirical evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The separation of metaethical entailment from contingent psychology is sound, with a bounded gap concerning the asserted direction and magnitude of effects."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Plausible counterpossibilities are supplied, but claims about existing folk realism and minimal behavioral change lack presented empirical support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move directly supports the con subsidiary authority bridge by resisting claims that stance independence uniquely sustains motivation."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "Bush fairly recognizes the empirical question but initially emphasizes lack of entailment against a claim that can be read as probabilistic."
+        }
+      },
+      "evidenceBasis": "Bush calls behavioral consequences an empirical question, predicts little practical change, and notes that realism could instead foster dogmatism or rationalizations of atrocity without making that outcome necessary.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-intuition-as-initial-appearance",
+      "sectionId": "intuition-appearances-and-philosophical-method",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Ethical intuitions are initial intellectual appearances in which a proposition seems true through reflection rather than inference from another belief.",
+      "sourceSpan": {
+        "startEvent": 3401,
+        "endEvent": 3434
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Mike's closing statement, and this sustained first-person account presents Huemer's stated theory of intuition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-intuition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-trained-pseudo-phenomenology",
+          "con-private-realist-seemings",
+          "con-contingent-behavioral-effects"
+        ],
+        "components": [
+          {
+            "componentId": "pro-intuition-as-initial-appearance-component-01",
+            "targetMoveId": "con-trained-pseudo-phenomenology",
+            "text": "The decisive component contacted is what an intuition is and whether it is merely an asserted belief produced by philosophical inference or training.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-intuition-as-initial-appearance-component-02",
+            "targetMoveId": "con-private-realist-seemings",
+            "text": "The definition permits different subjects to have different appearances and does not treat an intuition as publicly compulsory proof.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-intuition-as-initial-appearance-component-03",
+            "targetMoveId": "con-contingent-behavioral-effects",
+            "text": "The epistemic definition does not address the later empirical dispute about behavior.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Huemer defines intuition as an initial intellectual appearance and distinguishes it from inference and other seemings. This clarifies the target of the objections and partially answers conflation with belief, but definition alone does not defeat social-induction or disagreement concerns.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "The conceptual component is contacted clearly, while the decisive causal and reliability objections remain substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Appearance, seeming, intellectual appearance, and initial status are carefully distinguished through comparison with sensory and memory appearances."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical force is suitable for Huemer's stated technical definition and classification, without yet claiming that every such appearance is veridical."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Bush's pseudo-phenomenology objection can accept that subjects report noninferential seemings while arguing that training causally produces those seemings.",
+        "decisiveQualification": "Defining intuition as an appearance does not establish that it is pre-cultural, reliable, or independent of philosophical socialization."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The taxonomy of mental states is explicit and internally consistent, though it is primarily definitional rather than a complete epistemic argument."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Clear contrasting examples support the conceptual distinction, with the empirical origin and reliability of intellectual appearances left open."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the pro central intuition bridge by specifying the noninferential state alleged to receive epistemic weight."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The move clarifies rather than caricatures the phenomenon, but it does not directly answer the strongest causal version of the objection."
+        }
+      },
+      "evidenceBasis": "Huemer defines ethical intuitions as initial intellectual appearances in which a proposition seems correct and situates them among sensory, memory, and other varieties of seeming.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-appearances-ground-justification",
+      "sectionId": "intuition-appearances-and-philosophical-method",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Appearances are the basis of plausibly justified belief, and rejecting any presumption that things are as they appear would eliminate justification altogether.",
+      "sourceSpan": {
+        "startEvent": 3435,
+        "endEvent": 3456
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous first-person epistemological argument within Huemer's moderator-introduced closing statement and follows his definition of intuition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-intuition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-private-realist-seemings",
+          "con-trained-pseudo-phenomenology",
+          "con-conceptual-quietism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-appearances-ground-justification-component-01",
+            "targetMoveId": "con-private-realist-seemings",
+            "text": "The decisive component contacted is whether a subject's intellectual appearance can supply initial justification even without public corroboration.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-appearances-ground-justification-component-02",
+            "targetMoveId": "con-trained-pseudo-phenomenology",
+            "text": "The argument supplies a general presumption for appearances but does not specifically defeat the proposed training-based defeater.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-appearances-ground-justification-component-03",
+            "targetMoveId": "con-conceptual-quietism",
+            "text": "The general epistemic argument does not establish that the content of every concept or word is determinate.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Huemer argues that appearances are sources of rational belief and that rejecting any presumption in their favor yields global skepticism. This directly answers the demand for initial justification but not Bush's particular defeater hypotheses concerning training, disagreement, or conceptual indeterminacy.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "The decisive prima facie-justification component is contacted, while several source-specific defeating conditions remain unanswered, making the response partial."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The core presumption is clear, but the phrase source of all rational beliefs and the transition from appearances generally to moral appearances broaden the scope materially."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A presumption favoring appearances is plausibly defended, but the claim that rejecting it eliminates all justified belief slightly exceeds the abbreviated argument and needs defeater qualifications."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "One may grant a general defeasible role to appearances while treating culturally induced or disputed moral appearances as defeated or substantially downgraded.",
+        "decisiveQualification": "A global anti-skeptical presumption does not determine the weight of a particular appearance once specific defeaters are alleged."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The anti-skeptical argument supports some prima facie presumption, but leaves a material bridge from general appearances to undefeated moral-realist justification."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The contrast with wishful thinking and self-deception supports the importance of appearances, while the universal source claim and moral application remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly addresses the indispensable central intuition bridge by arguing that intellectual appearances can ground prima facie justification."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The argument answers wholesale rejection of appearances more strongly than the targeted objections, thereby omitting the decisive distinction between initial entitlement and undefeated justification."
+        }
+      },
+      "evidenceBasis": "Huemer contrasts appearance-based belief with wishful thinking and self-deception, then argues that appearances source rational belief and that abandoning a presumption in their favor would leave no justified belief.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives exclusion from the move ratings, response links, importance judgments, burden relevance, and existing bridge analysis.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified beyond the locked pro bridge requirements.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "All identified pro consequences are already captured at move or response level.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not alter any uncaptured pro burden-completion judgment."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives exclusion from the move ratings, response links, importance judgments, burden relevance, and existing bridge analysis.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified beyond the locked con bridge requirements.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "All identified con consequences are already captured at move or response level.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not alter any uncaptured con burden-completion judgment."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
