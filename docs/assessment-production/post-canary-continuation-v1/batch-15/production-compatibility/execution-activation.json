@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-15-production-compatibility",
+  "status": "post-canary-batch-15-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-28T02:48:14Z",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 15 standing authorization covers activation and exactly one deterministic compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 15 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 15 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/preparation-manifest.json",
+    "sha256": "3b14900176cbad33b501b3241216325abc23a8fa9fd512ee68611618ae9b8a49"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/analysis.json",
+    "sha256": "1fbeff61d551987319cd8dee6085be51bafeedd54e5d64f519f02833446d6df9",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-15-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-15-production-compatibility",
+      "status": "post-canary-batch-15-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 15,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/preparation-manifest.json",
+        "sha256": "3b14900176cbad33b501b3241216325abc23a8fa9fd512ee68611618ae9b8a49"
+      },
+      "finding": {
+        "id": "batch-15-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "batch02RoutePreservationSpecified": true,
+        "batch03RoutePreservationSpecified": true,
+        "batch04RoutePreservationSpecified": true,
+        "batch05RoutePreservationSpecified": true,
+        "batch06RoutePreservationSpecified": true,
+        "batch07RoutePreservationSpecified": true,
+        "batch08RoutePreservationSpecified": true,
+        "batch09RoutePreservationSpecified": true,
+        "batch10RoutePreservationSpecified": true,
+        "batch11RoutePreservationSpecified": true,
+        "batch12RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 51,
+        "moves": 191,
+        "oneSidedDisplayRows": 13,
+        "overallBlunders": 60,
+        "emptyReferenceLinks": 55,
+        "suppliedReferenceLinks": 5,
+        "proposedAdapterBytes": 1140079,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "batch02RouteRegressionBlocks": true,
+        "batch03RouteRegressionBlocks": true,
+        "batch04RouteRegressionBlocks": true,
+        "batch05RouteRegressionBlocks": true,
+        "batch06RouteRegressionBlocks": true,
+        "batch07RouteRegressionBlocks": true,
+        "batch08RouteRegressionBlocks": true,
+        "batch09RouteRegressionBlocks": true,
+        "batch10RouteRegressionBlocks": true,
+        "batch11RouteRegressionBlocks": true,
+        "batch12RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "activate-and-execute-one-batch-15-production-compatibility-pass-under-standing-authorization"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "cd07dd3627b38a8215d0532f0c1413e76b1a58eb723c276df5421782ceb4d2a7",
+    "proposedSha256": "1255d2e1702f653c8bba778215c29c3e0070118dac7ed105de62e22cd7d84611",
+    "proposedBytes": 72029,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-15-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-15-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "39",
+      "debateId": "lambert-jones-christian-faith-skepticism-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-39.json",
+      "sha256": "29a5eb1596cb22f6c0fac1c64773fe389fda109d5cda0ae04e1b83276d653a48",
+      "proposedAdapterSha256": "232672465e80b53a10995f1fbf7559207281c98af1b5c1249ecc08a6e85f5166",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/lambert-jones-christian-faith-skepticism-2021.json",
+      "stagedLedgerSha256": "232672465e80b53a10995f1fbf7559207281c98af1b5c1249ecc08a6e85f5166",
+      "stagedLedgerBytes": 137049,
+      "productionLedgerPath": "docs/assessment-ledgers/lambert-jones-christian-faith-skepticism-2021.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "48",
+      "debateId": "scrivener-folley-hiddenness-evil-moral-narrative-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-48.json",
+      "sha256": "9c531ce2647d45866335f0b632100698581629a10f8679160f3110eacf5a88e9",
+      "proposedAdapterSha256": "bcfe0806f8fdb6d4b3507372429c81d91d9b8f5d65e60b08e78e18f25bca0745",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/scrivener-folley-hiddenness-evil-moral-narrative-2025.json",
+      "stagedLedgerSha256": "bcfe0806f8fdb6d4b3507372429c81d91d9b8f5d65e60b08e78e18f25bca0745",
+      "stagedLedgerBytes": 97622,
+      "productionLedgerPath": "docs/assessment-ledgers/scrivener-folley-hiddenness-evil-moral-narrative-2025.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "23",
+      "debateId": "oconnor-biddle-objective-morality-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-23.json",
+      "sha256": "a528d070a57ae27b39e14458d1e0fe8d1d7de52cd317030353becc9afb19351c",
+      "proposedAdapterSha256": "95415243adbbf72f8746bf3af4f9cbbe0a746a10c453dd487c517e6ba0df1471",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/oconnor-biddle-objective-morality-2024.json",
+      "stagedLedgerSha256": "95415243adbbf72f8746bf3af4f9cbbe0a746a10c453dd487c517e6ba0df1471",
+      "stagedLedgerBytes": 117067,
+      "productionLedgerPath": "docs/assessment-ledgers/oconnor-biddle-objective-morality-2024.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "162",
+      "debateId": "craig-kagan-god-morality-2009",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-162.json",
+      "sha256": "2e67a4acc4c412c15e0264c3be48224cebfc9637715eee3a99312f5d5ce88d11",
+      "proposedAdapterSha256": "32ad8877cf19352e8389dfc5e2aa2ae37de29e3191c79d783a9a7d065a1b1081",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/craig-kagan-god-morality-2009.json",
+      "stagedLedgerSha256": "32ad8877cf19352e8389dfc5e2aa2ae37de29e3191c79d783a9a7d065a1b1081",
+      "stagedLedgerBytes": 114225,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-kagan-god-morality-2009.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "86",
+      "debateId": "egnor-dillahunty-god-existence-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-86.json",
+      "sha256": "72a7eaf11d9c0b2aeeb8f6fbf6ebde0f03921d1f288756defaf3a7f7760ba8b0",
+      "proposedAdapterSha256": "99d215d1b3d4271202b34728217770411f89dd58b75fb4aa98391549528f92a7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/egnor-dillahunty-god-existence-2021.json",
+      "stagedLedgerSha256": "99d215d1b3d4271202b34728217770411f89dd58b75fb4aa98391549528f92a7",
+      "stagedLedgerBytes": 118053,
+      "productionLedgerPath": "docs/assessment-ledgers/egnor-dillahunty-god-existence-2021.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "159",
+      "debateId": "wood-aron-ra-naturalism-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-159.json",
+      "sha256": "c909a3ed4d292be2a6f4f84cf1d24a44d5202811585720c016e9e13b597ed561",
+      "proposedAdapterSha256": "4bbbe950c2078d00e305d73a29c605624cd8cfc45cee5525dfc49a91c25f6e5b",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/wood-aron-ra-naturalism-2023.json",
+      "stagedLedgerSha256": "4bbbe950c2078d00e305d73a29c605624cd8cfc45cee5525dfc49a91c25f6e5b",
+      "stagedLedgerBytes": 112992,
+      "productionLedgerPath": "docs/assessment-ledgers/wood-aron-ra-naturalism-2023.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "128",
+      "debateId": "craig-law-evil-god-challenge-2011",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-128.json",
+      "sha256": "f3768cf65bdf45f8582b81514ec9ca4f4014485398e31c6f82dd12ba08230f1a",
+      "proposedAdapterSha256": "865d55077e588d553f5c0badb2f039634c70af94a6c5a7a73b3302ec1c5fce2f",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/craig-law-evil-god-challenge-2011.json",
+      "stagedLedgerSha256": "865d55077e588d553f5c0badb2f039634c70af94a6c5a7a73b3302ec1c5fce2f",
+      "stagedLedgerBytes": 108193,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-law-evil-god-challenge-2011.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "98",
+      "debateId": "craig-grayling-evil-god-reasonable-2011",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-98.json",
+      "sha256": "b5f8320d7fbde43d8eb8ba250df315e6f83a4597b12650a5a9e76c8d019791f8",
+      "proposedAdapterSha256": "ccffb835a13026f976fe0fbbff79978ddcf1fa5b69c285012a103cd19942aec1",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/craig-grayling-evil-god-reasonable-2011.json",
+      "stagedLedgerSha256": "ccffb835a13026f976fe0fbbff79978ddcf1fa5b69c285012a103cd19942aec1",
+      "stagedLedgerBytes": 116303,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-grayling-evil-god-reasonable-2011.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "155",
+      "debateId": "turek-shermer-morality-god-science-2015",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-155.json",
+      "sha256": "dbc2ba5b5904a08f2a85555ee3d2c7bfa354794d82b1b1a859308df2b236ad89",
+      "proposedAdapterSha256": "05ae4577a50e5777fd5ef2be34c4e937c68c90e2361e9ceb2cb0536034848ae7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/turek-shermer-morality-god-science-2015.json",
+      "stagedLedgerSha256": "05ae4577a50e5777fd5ef2be34c4e937c68c90e2361e9ceb2cb0536034848ae7",
+      "stagedLedgerBytes": 107021,
+      "productionLedgerPath": "docs/assessment-ledgers/turek-shermer-morality-god-science-2015.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    },
+    {
+      "debateNumber": "178",
+      "debateId": "ehrman-licona-who-wrote-gospels-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/packets/debate-178.json",
+      "sha256": "1ecf64014e36e8fbdd91f21df1b30df59720317add61e08c1a946404b9af150a",
+      "proposedAdapterSha256": "fa47920b957de6e55f8021236bf2fbd98cf07adcf68e6c4930f212dda343af41",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-compatibility/output-bundle/staged-ledgers/ehrman-licona-who-wrote-gospels-2025.json",
+      "stagedLedgerSha256": "fa47920b957de6e55f8021236bf2fbd98cf07adcf68e6c4930f212dda343af41",
+      "stagedLedgerBytes": 111554,
+      "productionLedgerPath": "docs/assessment-ledgers/ehrman-licona-who-wrote-gospels-2025.json",
+      "productionLedgerBaseline": {
+        "exists": false,
+        "sha256": null
+      }
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-15-compatibility.mjs": "8fbbe632c966c245a2f38a1c0dd24752242cc7f7f1e6e4751d81c96467056e33",
+    "scripts/lib/assessment-production-post-canary-batch-15-compatibility-execution.mjs": "0a667d247675528ce9ebaa8453d1ca788334a7febf189944ebc6794248b4e44c",
+    "scripts/activate-assessment-production-post-canary-batch-15-compatibility.mjs": "3cc22a5f90d5a086e557081ec55a9189159109dfc94c34664787e5f4130ab4ac",
+    "scripts/test-assessment-production-post-canary-batch-15-compatibility-activation.mjs": "add2facacba4313ddb8292a737bb70d6a4d241034206e9942937b005507947e1",
+    "scripts/run-assessment-production-post-canary-batch-15-compatibility.mjs": "31f566dbc237fdcd273648848ff48a47f04523705954474333735f3dc59ac449",
+    "scripts/test-assessment-production-post-canary-batch-15-compatibility-execution.mjs": "334f7f9632445b76303ba0d110bdba90c0f256d4798aa6efabd60039290b79ae"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "d727d50e6167d2d8162cc0ef0c438b8c20a1d2e5f83b0879a2c8b73e3b896141"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 150,
+      "digest": "b056087dcce88c497ae30294268ee7958810d811867996f5462fa380ac8eaa58"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 15 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "Batch 2 route and score replay",
+    "Batch 3 route and score replay",
+    "Batch 4 route and score replay",
+    "Batch 5 route and score replay",
+    "Batch 6 route and score replay",
+    "Batch 7 route and score replay",
+    "Batch 8 route and score replay",
+    "Batch 9 route and score replay",
+    "Batch 12 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-15-production-compatibility-staging-pass-no-reruns"
+}
