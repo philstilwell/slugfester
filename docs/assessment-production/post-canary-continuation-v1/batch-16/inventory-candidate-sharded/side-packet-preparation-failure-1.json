@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0-batch-16-inventory-side-packet-preparation-failure",
+  "status": "preserved-pre-model-inherited-candidate-count-mismatch-corrected",
+  "occurredAt": "2026-08-28T03:45:32.361Z",
+  "stage": "inventory-side-packet-preparation",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-16-inventory-side-packets.mjs prepare --write --frozen-at <timestamp>",
+  "error": "Batch 16 source preparation boundary drifted",
+  "diagnosis": "The side-packet controller retained Batch 15's pro/con candidate totals of 186 and 192 instead of the frozen Batch 16 totals of 179 and 159.",
+  "correction": {
+    "kind": "exact-deterministic-controller-boundary-correction",
+    "previousProCandidates": 186,
+    "correctedProCandidates": 179,
+    "previousConCandidates": 192,
+    "correctedConCandidates": 159,
+    "totalCandidates": 338,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "acceptedFieldChanged": false,
+    "scorePassRun": false
+  }
+}

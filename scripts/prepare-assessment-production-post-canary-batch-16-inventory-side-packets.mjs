@@ -237,8 +237,8 @@ async function buildArtifacts({ frozenAt, checkpointCommit }) {
       JSON.stringify(sourcePreparation.selectedDebates) === JSON.stringify(DEBATES) &&
       sourcePreparation.contexts.length === 10 &&
       sourcePreparation.totals.candidates === EXPECTED_CANDIDATES &&
-      sourcePreparation.totals.proCandidates === 186 &&
-      sourcePreparation.totals.conCandidates === 192 &&
+      sourcePreparation.totals.proCandidates === 179 &&
+      sourcePreparation.totals.conCandidates === 159 &&
       sourcePreparation.sourceCompatibility.status ===
         "all-source-rows-have-positive-repository-lexical-token-count" &&
       sourcePreparation.sourceCompatibility.sourceRowsInjected === 0 &&
