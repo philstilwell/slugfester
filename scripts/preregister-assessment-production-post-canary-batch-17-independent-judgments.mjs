@@ -310,7 +310,7 @@ const rampPhases = [
   {
     phase: "steady-two",
     maximumParallelContexts: 2,
-    contextIndexes: Array.from({ length: 17 }, (_, index) => index + 3),
+    contextIndexes: Array.from({ length: 5 }, (_, index) => index + 3),
     expansionRequiresAllValid: false,
   },
 ];

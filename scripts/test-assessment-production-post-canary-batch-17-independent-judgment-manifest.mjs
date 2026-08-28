@@ -117,7 +117,7 @@ assert.equal(manifest.executionPolicy.maximumParallelContexts, 2);
 assert.deepEqual(manifest.executionPolicy.schedulerRamp, [1, 2]);
 assert.deepEqual(
   manifest.executionPolicy.rampPhases.map((phase) => phase.contextIndexes),
-  [[0], [1, 2], Array.from({ length: 17 }, (_, index) => index + 3)]
+  [[0], [1, 2], Array.from({ length: 5 }, (_, index) => index + 3)]
 );
 assert.equal(manifest.executionPolicy.firstRealContextOperationalCanary, true);
 assert.equal(manifest.executionPolicy.stopBeforeExpansionOnRampFailure, true);

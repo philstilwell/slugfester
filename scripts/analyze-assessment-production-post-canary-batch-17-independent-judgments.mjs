@@ -24,7 +24,7 @@ assertV4(
       "frozen-eight-post-canary-batch-17-independent-judgment-contexts-authorized" &&
     activation.developmentValidationOnly === false &&
     activation.productionCanary === false &&
-    activation.batchNumber === 13 &&
+    activation.batchNumber === 17 &&
     activation.authorization.deterministicAnalysis === true &&
     activation.authorization.disagreementExtraction === false &&
     activation.authorization.audioVerification === false &&

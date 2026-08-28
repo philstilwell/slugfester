@@ -21,7 +21,7 @@ assertV4(
       "eight-post-canary-batch-17-independent-judgment-contexts-prepared-and-frozen" &&
     preparation.developmentValidationOnly === false &&
     preparation.productionCanary === false &&
-    preparation.batchNumber === 13 &&
+    preparation.batchNumber === 17 &&
     preparation.stagingOnly === true &&
     preparation.model.label === "5.6 Sol" &&
     preparation.model.slug === "gpt-5.6-sol" &&

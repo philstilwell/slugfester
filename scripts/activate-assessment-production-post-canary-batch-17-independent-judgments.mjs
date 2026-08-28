@@ -57,7 +57,7 @@ assertV4(
       "frozen-eight-post-canary-batch-17-independent-judgment-contexts-prepared-not-authorized" &&
     preparation.developmentValidationOnly === false &&
     preparation.productionCanary === false &&
-    preparation.batchNumber === 13 &&
+    preparation.batchNumber === 17 &&
     preparation.stagingOnly === true &&
     preparation.contexts.length === 8 &&
     preparation.model.label === "5.6 Sol" &&
@@ -171,7 +171,7 @@ for (const file of [...new Set(sourceFiles)].sort()) {
 const futureOutputs = preparation.futureOutputPathsExcludedFromSourceHashes.filter(
   (file) => file !== ACTIVATION
 );
-assertV4(futureOutputs.length === 82, "expected 82 post-activation future outputs");
+assertV4(futureOutputs.length === 34, "expected 34 post-activation future outputs");
 for (const file of futureOutputs) {
   assertV4(!(await exists(file)), `future output already exists: ${file}`);
 }

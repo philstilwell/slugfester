@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-independent-judgment-preparation-corrections",
+  "status": "batch-17-independent-judgment-preparation-count-corrections-passed-before-activation",
+  "failures": [
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/independent-judgments/execution-preparation-failure-1.json",
+      "sha256": "3c663ab41fa15fbe8b56b079cd84543d5430341e2b14a00d68e158db8dd3a129",
+      "diagnosis": "The first cloned manifest retained the Batch 16 steady-phase queue indexes 3 through 19 instead of the five remaining Batch 17 indexes 3 through 7."
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/independent-judgments/execution-preparation-failure-2.json",
+      "sha256": "7a03865866c60c71e93f5fabb528ddaa9389347490ee8e252508278fa3712046",
+      "diagnosis": "After the manifest queue was corrected, its hash-locked deterministic manifest test still retained the earlier 17-item queue expectation."
+    }
+  ],
+  "correctedManifest": "docs/assessment-production/post-canary-continuation-v1/batch-17/independent-judgments/execution-preparation-manifest.json",
+  "correctedManifestSha256": "2498f5e21b77f430069b375614c5b424ca3e49fa4e8c0f7568e56220b520bebe",
+  "correctedControls": {
+    "contexts": 8,
+    "steadyPhaseContextIndexes": [3, 4, 5, 6, 7],
+    "postActivationFutureOutputs": 34
+  },
+  "modelContextsStarted": 0,
+  "modelAttemptsConsumed": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}

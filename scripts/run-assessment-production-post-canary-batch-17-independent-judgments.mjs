@@ -39,7 +39,7 @@ assertV4(
       "frozen-eight-post-canary-batch-17-independent-judgment-contexts-authorized" &&
     activation.developmentValidationOnly === false &&
     activation.productionCanary === false &&
-    activation.batchNumber === 13 &&
+    activation.batchNumber === 17 &&
     activation.stagingOnly === true &&
     activation.model.label === "5.6 Sol" &&
     activation.model.slug === "gpt-5.6-sol" &&
