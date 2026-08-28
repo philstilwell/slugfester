@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-17-debate-171-critique-0-recovery-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correction"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-17-publication-continuation-one-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-17-publication-continuation-level-1-one-field-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-171-critique-0-recovery-1"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "171"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hitchens-blair-religion-force-good-2010"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "text"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "const": "moveProse.con-religious-commitments-material-harms.critique"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 880,
+          "maxLength": 1800
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-failure-diagnosis",
+  "status": "batch-17-publication-one-field-failure-diagnosed",
+  "batchNumber": 17,
+  "recoveryLevel": 1,
+  "ordinaryRecoveryLevelsMaximum": 2,
+  "failedDebates": ["171"],
+  "failures": [
+    {
+      "debateNumber": "171",
+      "kind": "critique",
+      "field": "moveProse.con-religious-commitments-material-harms.critique",
+      "moveId": "con-religious-commitments-material-harms",
+      "defects": ["word-count"],
+      "observedWords": 104,
+      "observedCharacters": 908,
+      "observedSentences": 4,
+      "rejectedPriorStringReusable": false
+    }
+  ],
+  "unattemptedContextIndexesAfterContinuation": [],
+  "totals": {
+    "failedDebates": 1,
+    "invalidFields": 1,
+    "invalidCritiques": 1,
+    "otherFieldsDeterministicallyValid": true,
+    "freshOneFieldRecoveryShards": 1
+  },
+  "diagnosisMethod": {
+    "everyCritiqueContractChecked": true,
+    "bothQuoteContractsChecked": true,
+    "nonTargetFieldsReplayedWithInMemoryDiagnosticSubstitution": true,
+    "diagnosticSubstitutionPersisted": false,
+    "originalOutputAltered": false
+  },
+  "preservedEvidence": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/model-execution.json": "bfd087b385fadaaa16688a85f58412af5128d38a35af4bbd14f8956650c2564f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/analysis.json": "19883da7eaa6b74d1d00189565094e6e34be5164f31720dfede6172f0ae4367b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/outputs/debate-171.json": "bc13a2f128769f43f52018225ee9058091156f740974726cc78e6a07d93ace1e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/validations/debate-171.json": "b13a060c107f12fa7aaf8932726a61bf35285ffa2c125a0afb3de0b68374c69b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/provenance/debate-171.json": "ac2a7bade6641f20de5acc57977469ffca9673739ee59c1065634c17b52c820c"
+  },
+  "authorization": {
+    "recoveryLevel1Preparation": true,
+    "minimumFreshFieldDisjointShards": true,
+    "attemptsPerShard": 1,
+    "retries": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-one-fresh-one-field-batch-17-publication-recovery-level-1-shard"
+}
