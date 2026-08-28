@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-15-publication-finalization",
+  "status": "staging-only-batch-15-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "debateNumber": "98",
+  "debateId": "craig-grayling-evil-god-reasonable-2011",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-15/deterministic-publication-compilation/compiled/debate-98.json",
+  "compiledInputSha256": "ac9662aeb9d1099443aaa5673a3cd91358ef244c31276971137918a295bc7942",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Vs7ArUMuQyg/transcript.txt",
+    "transcriptSha256": "65a12e70a66800ec441b5db26ac55eb81a6c6fcb583c77d685819198657ca114",
+    "eventsPath": ".assessment-cache/captions/Vs7ArUMuQyg/events.json",
+    "eventsSha256": "5b256a80e69d20d47b6631fddd7edd8cb53895ef92a1ca0bde1b6059d702e2a8",
+    "localManifestPath": ".assessment-cache/captions/Vs7ArUMuQyg/manifest.json",
+    "localManifestSha256": "c87354b841c0b01aa6b955e8c5c5123a77c2269d5b8dfaf0b1dcb347b73bca06"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 2,
+  "scoreProtocolId": "assessment-production-post-canary-batch-15-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d98-ai-pro-thesis",
+        "text": "AI steelman: The existence of severe suffering can rationally count against theism without making Christian belief unreasonable when compatibility, calibrated epistemic restraint, morally serious divine purposes, and independently supported total evidence are assessed together.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-closing-cumulative-theistic-case",
+            "pro-evil-within-total-evidence",
+            "con-unknown-reasons-insufficient"
+          ],
+          "explanation": "Repairs the cumulative conclusion by conceding adverse evidence and requiring independent support rather than relying on possibility alone."
+        }
+      },
+      "premises": [
+        {
+          "id": "d98-ai-pro-p1",
+          "text": "Significant freedom can explain why God cannot guarantee universally right choices, although it does not by itself explain every magnitude of moral evil or any natural evil.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-significant-freedom-no-guarantee",
+              "con-freedom-better-world"
+            ],
+            "explanation": "Narrows the freedom defense to its demonstrated scope and acknowledges the better-world objection."
+          }
+        },
+        {
+          "id": "d98-ai-pro-p2",
+          "text": "Finite observers should reduce confidence in judgments about comprehensive providential consequences, but ordinary moral knowledge remains reliable for condemning suffering and pursuing prevention.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-epistemic-limits-providence",
+              "con-ordinary-moral-knowledge"
+            ],
+            "explanation": "Reconciles epistemic restraint with the transcript's strongest objection concerning moral paralysis."
+          }
+        },
+        {
+          "id": "d98-ai-pro-p3",
+          "text": "A morally serious providential account must treat every sufferer as possessing noninstrumental value and cannot justify harm merely by citing benefits obtained by others.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "Introduces a victim-centered constraint not explicitly developed in the participant moves."
+          }
+        },
+        {
+          "id": "d98-ai-pro-p4",
+          "text": "Christian purposes and eternal fulfillment can reduce the unexpectedness of suffering only when joined to an account of restoration, consent, justice, and the preservation of personal identity.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-knowledge-god-eternal-recompense",
+              "con-future-recompense-blank-check"
+            ],
+            "explanation": "Repairs the recompense argument so that compensation is not treated as unrestricted permission."
+          }
+        },
+        {
+          "id": "d98-ai-pro-p5",
+          "text": "Any final probability judgment must compare evil with independently defended evidence for God, rather than counting the mere demand for total evidence as evidence favoring theism.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-evil-within-total-evidence",
+              "con-suffering-attributes-inference"
+            ],
+            "explanation": "Repairs the unsupported net-balance step in the total-evidence move."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d98-ai-pro-conclusion",
+        "text": "Accordingly, severe evil supplies genuine adverse evidence, yet Christian belief may remain reasonable if its independent evidence is substantial and its freedom, providence, and restoration claims satisfy these moral and explanatory constraints.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-closing-cumulative-theistic-case",
+            "con-suffering-attributes-inference",
+            "con-future-recompense-blank-check"
+          ],
+          "explanation": "Produces a proportionate cumulative conclusion responsive to the strongest secular objections."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d98-ai-pro-new-1",
+          "title": "Victim-centered providence constraint",
+          "text": "A defensible providential explanation should include a victim-centered constraint: no person's extreme suffering may be treated solely as an instrument for someone else's faith or development. The theist can propose that permission is morally eligible only if the sufferer retains noninstrumental value, eventual restoration is personally continuous, and the relevant good could not be secured by a materially less harmful feasible route. This does not prove that actual suffering satisfies the constraint, but it makes the defense morally discriminating and creates clear conditions against which proposed reasons can be evaluated.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "Adds a new moral admissibility test for providential explanations."
+          }
+        },
+        {
+          "id": "d98-ai-pro-new-2",
+          "title": "Two-level epistemic restraint",
+          "text": "Epistemic restraint can operate at two levels without producing moral paralysis. At the practical level, agents should trust ordinary evidence, condemn apparent harms, aid victims, and prevent suffering because those are the best available responsibilities. At the comprehensive metaphysical level, the same agents may hold lower confidence about whether every permitted harm lacks any sufficient reason within an immense causal history. Separating these levels answers the ordinary-moral-knowledge objection while avoiding the stronger claim that ignorance itself establishes a divine reason.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-epistemic-limits-providence",
+              "con-ordinary-moral-knowledge",
+              "con-unknown-reasons-insufficient"
+            ],
+            "explanation": "Repairs skeptical theism by preserving practical knowledge and denying that ignorance supplies positive evidence."
+          }
+        },
+        {
+          "id": "d98-ai-pro-new-3",
+          "title": "Comparative total-evidence protocol",
+          "text": "The total-evidence argument becomes substantive only through an explicit comparison. Assign evil genuine negative weight; distinguish moral evil from natural evil; state which independent considerations support God; and test whether those considerations predict a morally governed world better than relevant alternatives predict religious experience, moral awareness, contingency, and suffering together. The resulting case may favor, disfavor, or leave theism uncertain. Its advantage is methodological honesty: it transforms an appeal to absent published arguments into a transparent comparative burden that both sides can contest.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-evil-within-total-evidence",
+              "pro-closing-cumulative-theistic-case"
+            ],
+            "explanation": "Turns the transcript's methodological point into an explicit evidential procedure."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d98-ai-con-thesis",
+        "text": "AI steelman: Severe and apparently indiscriminate suffering provides significant evidence against an omnipotent, perfectly good, humanly concerned deity when proposed defenses lack specific predictive content and no feasible-world comparison explains the observed scale.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-suffering-attributes-inference",
+            "con-possibility-feasibility-gap",
+            "pro-epistemic-limits-providence"
+          ],
+          "explanation": "Strengthens the secular case as a comparative evidential argument rather than a claim of contradiction."
+        }
+      },
+      "premises": [
+        {
+          "id": "d98-ai-con-p1",
+          "text": "The argument need not show that God and evil are logically inconsistent; it needs only show that the observed pattern is less expected under the specified divine attributes than under relevant alternatives.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-suffering-attributes-inference",
+              "pro-logical-hidden-premises"
+            ],
+            "explanation": "Repairs the case by conceding logical compatibility and focusing on comparative likelihood."
+          }
+        },
+        {
+          "id": "d98-ai-con-p2",
+          "text": "Ordinary moral knowledge provides defeasible evidence about suffering even when exhaustive remote consequences are unavailable, just as practical reasoning routinely operates under uncertainty.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-ordinary-moral-knowledge"
+            ],
+            "explanation": "Extends the transcript's fallibilist account of experienced moral likelihoods."
+          }
+        },
+        {
+          "id": "d98-ai-con-p3",
+          "text": "A proposed divine reason should receive evidential weight in proportion to its specificity, independent support, and ability to distinguish the actual world from materially less harmful feasible alternatives.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "Introduces an explicit evidential admissibility standard for greater-good explanations."
+          }
+        },
+        {
+          "id": "d98-ai-con-p4",
+          "text": "Freedom explains why choices cannot be guaranteed, but it does not predict the magnitude of wrongdoing and does not directly account for earthquakes, cancers, or other natural harms.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-freedom-better-world",
+              "con-possibility-feasibility-gap",
+              "pro-significant-freedom-no-guarantee"
+            ],
+            "explanation": "Narrows the secular reply to the demonstrated limits of the freedom defense."
+          }
+        },
+        {
+          "id": "d98-ai-con-p5",
+          "text": "Future restoration may compensate victims but cannot alone justify permission; justification requires an independently sufficient reason and a showing that less harmful means were unavailable.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-future-recompense-blank-check",
+              "pro-knowledge-god-eternal-recompense"
+            ],
+            "explanation": "This repairs both mapped moves by distinguishing future compensation from an independently sufficient justification requiring unavailable, less harmful alternatives."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d98-ai-con-conclusion",
+        "text": "Therefore, unless the theistic account supplies independently supported reasons that predict or morally explain this pattern better than less harmful alternatives, severe suffering reasonably lowers confidence in the specified deity.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-suffering-attributes-inference",
+            "con-unknown-reasons-insufficient",
+            "con-possibility-feasibility-gap"
+          ],
+          "explanation": "States a calibrated adverse conclusion conditional on the unresolved explanatory comparison."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d98-ai-con-new-1",
+          "title": "Explanatory specificity test",
+          "text": "Unknown-reason defenses should be evaluated by an explanatory specificity test. A proposed reason gains weight when it predicts recognizable features of the world's suffering, explains why comparable goods could not arise through materially gentler means, and has support independent of the suffering it is invoked to explain. A reason loses weight when it accommodates every possible distribution equally well. This standard does not infer that no reason exists from our failure to identify one; it argues only that an indefinitely flexible possibility contributes little positive evidence to reasonable belief.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "Adds a new criterion distinguishing mere compatibility from evidentially useful explanation."
+          }
+        },
+        {
+          "id": "d98-ai-con-new-2",
+          "title": "Distribution-sensitive evil",
+          "text": "The evidential force of suffering concerns not only aggregate quantity but distribution. Harms fall on infants, nonhuman animals, isolated populations, and people whose agency or capacity for religious development is destroyed by them. A purpose centered on freely formed relationship should therefore explain why suffering frequently removes the very opportunities it is said to advance. Distribution-sensitive analysis strengthens the objection without claiming certainty: patterns that repeatedly frustrate a proposed purpose are less expected under that purpose than patterns carefully limited to preserving agency or preventing greater harm.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "Introduces a distributional likelihood argument beyond the transcript's individual examples."
+          }
+        },
+        {
+          "id": "d98-ai-con-new-3",
+          "title": "Feasible improvement benchmark",
+          "text": "The better-world challenge need not describe a perfect world or prove every creaturely counterfactual. It can begin with modest feasible-improvement candidates: earlier warnings for disasters, biological systems with lower childhood-cancer incidence, or constraints preventing the most extreme consequences of wrongdoing while leaving ordinary choice intact. The theist may contest any candidate's feasibility or hidden costs, but a sequence of limited improvements creates a more tractable comparative burden than an evil-free utopia. The objection gains force when no specific connection between these extreme harms and indispensable goods is supplied.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-freedom-better-world",
+              "con-possibility-feasibility-gap",
+              "pro-significant-freedom-no-guarantee"
+            ],
+            "explanation": "Repairs the feasibility challenge by replacing a perfect-world demand with modest comparative improvements."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-27T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "98",
+    "sections": 5,
+    "moves": 19,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}

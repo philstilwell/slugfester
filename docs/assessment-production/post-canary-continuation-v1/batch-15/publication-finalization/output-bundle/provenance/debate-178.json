@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-15-publication-finalization",
+  "status": "staging-only-batch-15-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "debateNumber": "178",
+  "debateId": "ehrman-licona-who-wrote-gospels-2025",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-15/deterministic-publication-compilation/compiled/debate-178.json",
+  "compiledInputSha256": "c346aa58fa233a19057c1b19111e43c004b568d9e67c86c54d558369865c7cf1",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/xTCPigOQabY/transcript.txt",
+    "transcriptSha256": "fa5c936c4dfaeb55945ec642dd411730c7fd20647b0ee432b0b4620c0642c4dc",
+    "eventsPath": ".assessment-cache/captions/xTCPigOQabY/events.json",
+    "eventsSha256": "261aa1d1a56ecdb7a56bb5bd16a3ab7d88e3d744b31fa75e5e2334a451925dcd",
+    "localManifestPath": ".assessment-cache/captions/xTCPigOQabY/manifest.json",
+    "localManifestSha256": "60db7566cc5831a01a1ea2a25e4ca7b0532d20a97c932746240db2b01c92bb29"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 6,
+  "scoreProtocolId": "assessment-production-post-canary-batch-15-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "ai178-pro-thesis",
+        "text": "The strongest traditional-authorship case is a comparative hypothesis: early attribution, text-specific fit, and historically bounded mediation jointly favor connections to Matthew, Mark, Luke, and John without requiring unaided autograph composition by every namesake.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-convergent-attribution-synthesis",
+            "pro-mediated-matthean-composition",
+            "pro-synoptic-sources-and-assistance"
+          ],
+          "explanation": "This reframes the cumulative case with an explicit comparative standard and a bounded meaning of authorship authority."
+        }
+      },
+      "premises": [
+        {
+          "id": "ai178-pro-premise-1",
+          "text": "External witnesses should contribute weight only to the extent that their chronology, geography, canonical-text identification, and probable information channels are distinguishable rather than merely repetitive.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-external-diverse-early-testimony",
+              "pro-convergent-attribution-synthesis"
+            ],
+            "explanation": "This repairs the insufficient treatment of dependence by making source-channel analysis an explicit condition."
+          }
+        },
+        {
+          "id": "ai178-pro-premise-2",
+          "text": "Internal evidence need not uniquely identify an author to matter, but each feature must be shown more expected under the traditional connection than under an anonymous source, editor, or narrator.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-internal-luke-acts-we-passages",
+              "pro-internal-john-beloved-disciple"
+            ],
+            "explanation": "This converts compatibility claims into comparative likelihood claims while preserving their limited evidential force."
+          }
+        },
+        {
+          "id": "ai178-pro-premise-3",
+          "text": "Mediated authorship should require a stable division of labor specifying whether the traditional figure supplied testimony, selected sources, supervised translation, authorized publication, or performed composition.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-mediated-matthean-composition",
+              "pro-literate-collaborators",
+              "pro-synoptic-sources-and-assistance"
+            ],
+            "explanation": "This resolves the shifting meanings of assistance and authority identified in the participant case."
+          }
+        },
+        {
+          "id": "ai178-pro-premise-4",
+          "text": "Mark and Luke can count against simplistic prestige-maximizing invention only after comparing direct-apostle naming with the rival strategy of representing Peter and Paul through associates.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-obscure-names-against-invention",
+              "con-mark-luke-natural-authority-names"
+            ],
+            "explanation": "This strengthens the counterfactual by expressly incorporating the strongest opposing explanation for those names."
+          }
+        },
+        {
+          "id": "ai178-pro-premise-5",
+          "text": "Formal biographical anonymity is evidentially neutral only when independent attribution information plausibly accompanied circulation; therefore early canonical identification remains indispensable to the traditional hypothesis.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-biographical-anonymity-and-early-names",
+              "con-external-late-secure-attribution"
+            ],
+            "explanation": "This extends the genre response while accepting that convention alone cannot authenticate a later title."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "ai178-pro-conclusion",
+        "text": "If the attribution channels prove partly independent, the internal features supply comparative rather than merely compatible support, and mediated roles are historically specified, traditional connections become a reasonable explanation without claiming certainty about every final composer's identity.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-convergent-attribution-synthesis",
+            "pro-mediated-matthean-composition",
+            "pro-internal-john-beloved-disciple"
+          ],
+          "explanation": "The conclusion narrows the claim to what the repaired cumulative premises could proportionately establish."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "ai178-pro-new-1",
+          "title": "Attribution Network Test",
+          "text": "The traditional case could model each witness as a node in an attribution network and ask what information route best explains the agreement. Geographic separation matters only if communities had partially independent access to titles, teachers, manuscripts, or memories. Evidence of cross-dependence would reduce the multiplication of testimony, while evidence that a canonical text and its name traveled together before later controversies would increase it. This approach turns a loose appeal to diversity into a testable comparison between inherited identification and diffusion of a single later convention.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a formal transmission-network method not articulated in any locked participant move."
+          }
+        },
+        {
+          "id": "ai178-pro-new-2",
+          "title": "Role-Specific Authorship Matrix",
+          "text": "Rather than treating authorship as one undifferentiated act, the case could compare five roles for each Gospel: eyewitness source, oral transmitter, source selector, literary composer, and publication authority. The traditional claim would then succeed only for roles supported by evidence, allowing Mark's Petrine source relationship or a possible Matthean authorization model to be assessed without automatically identifying the final stylist. This matrix answers the identity objection by making the asserted connection precise and prevents assistance from expanding opportunistically whenever a linguistic difficulty appears.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a structured role matrix that clarifies the motion without attributing new claims to Licona."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "ai178-con-thesis",
+        "text": "The strongest anonymous-authorship case is that the available evidence underdetermines the traditional identities: textual anonymity, literary capacity, and later naming are better explained without positing direct composition or demonstrated authorization by the four namesakes.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "con-external-late-secure-attribution",
+            "con-literacy-greek-composition-mismatch",
+            "con-reliability-not-author-identification"
+          ],
+          "explanation": "This combines the central negative routes into a proportionate comparative thesis rather than a claim of demonstrated invention."
+        }
+      },
+      "premises": [
+        {
+          "id": "ai178-con-premise-1",
+          "text": "Narrative anonymity does not prove universal ignorance, but it lowers identification confidence when no securely early paratext, self-reference, or independent community testimony connects a canonical text to its later namesake.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-external-late-secure-attribution"
+            ],
+            "explanation": "This repairs a possible argument from evidential absence by stating a probabilistic and explicitly qualified inference."
+          }
+        },
+        {
+          "id": "ai178-con-premise-2",
+          "text": "First-person travel, privileged access, and disciple rosters can indicate sources or narrators without identifying final composers, so every transition between those roles requires separate evidence.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-internal-matthew-luke-underdetermination",
+              "con-internal-details-do-not-identify"
+            ],
+            "explanation": "This extends the internal underdetermination argument through an explicit separation of literary roles."
+          }
+        },
+        {
+          "id": "ai178-con-premise-3",
+          "text": "Educational mismatch is strongest against personal Greek composition and weaker against authorization; accordingly, the negative case should demand evidence for authorization rather than assuming illiteracy excludes every mediated relationship.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-literacy-greek-composition-mismatch",
+              "con-secretarial-practice-limited"
+            ],
+            "explanation": "This narrows the literacy inference and directly answers the strongest collaboration qualification."
+          }
+        },
+        {
+          "id": "ai178-con-premise-4",
+          "text": "A later naming hypothesis gains credibility from institutional incentives and strategically coherent names, but it should remain a comparative explanation unless direct evidence establishes a coordinated assignment event.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-naming-authority-mechanism",
+              "con-mark-luke-natural-authority-names"
+            ],
+            "explanation": "This corrects the overconfident causal narration while preserving the mechanism's explanatory relevance."
+          }
+        },
+        {
+          "id": "ai178-con-premise-5",
+          "text": "Stable unanimity has evidential value, yet Barnabas and Second Clement demonstrate that conventional attribution can remain stable; chronology and independence must therefore determine how much weight unanimity receives.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-unanimity-not-authenticity",
+              "pro-external-diverse-early-testimony"
+            ],
+            "explanation": "This preserves the counterexamples without treating all unanimous traditions as historically equivalent."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "ai178-con-conclusion",
+        "text": "Unless early attribution channels, internal identity indicators, or historically evidenced mediation connect the namesakes to specific texts, anonymous educated composition followed by conventional attribution remains the more economical explanation, though the precise naming event may remain uncertain.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-reliability-not-author-identification",
+            "con-naming-authority-mechanism",
+            "con-secretarial-practice-limited"
+          ],
+          "explanation": "The conclusion preserves the identity-focused negative case while avoiding certainty about an unevidenced coordinated naming episode."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "ai178-con-new-1",
+          "title": "Evidence-Risk Asymmetry",
+          "text": "The two hypotheses do not incur the same evidential risks. Traditional authority predicts some discoverable identity-specific connection between a namesake and the canonical text, whereas anonymous composition can accommodate reliable traditions, eyewitness sources, and later stable titles without identifying the final author. Consequently, evidence for reliability should be credited equally under both hypotheses unless it specifically favors the named figure. This comparison explains why generally plausible transmission mechanisms do not close the attribution gap while avoiding the stronger assertion that reliable apostolic material is absent.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces an explicit prediction-based asymmetry between reliability evidence and identity evidence."
+          }
+        },
+        {
+          "id": "ai178-con-new-2",
+          "title": "Paratext Survival Comparison",
+          "text": "The negative case could compare how titles, incipits, subscriptions, citations, and catalog entries survive for other ancient works across manuscript families. If author names normally travel early and consistently with known works, their delayed secure appearance for the Gospels becomes more significant; if labels are commonly lost or unstable, the inference weakens. The value lies in establishing an external baseline instead of reasoning from silence alone. Such a comparison would make the anonymity argument empirically discriminating and clarify what surviving evidence each hypothesis should predict.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a comparative paratext baseline not contained in the locked transcript moves."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-27T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "178",
+    "sections": 5,
+    "moves": 19,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
