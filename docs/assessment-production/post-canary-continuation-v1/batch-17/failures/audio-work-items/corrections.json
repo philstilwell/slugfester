@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-audio-work-item-preparation-corrections",
+  "status": "batch-17-one-item-audio-work-preparation-corrections-passed",
+  "diagnoses": [
+    "The cloned test first expected four audio-bearing sources although only Debate 77 is in the frozen audio queue.",
+    "The cloned test then expected four canonical text and metadata chains although only the one audio-bearing debate requires that chain."
+  ],
+  "preservedFailures": [
+    {"path": "docs/assessment-production/post-canary-continuation-v1/batch-17/failures/audio-work-items/audio-work-item-preparation-failure-1.json", "sha256": "b9d8bdd8c343d3f61b769cd754c99db3ee1ae3921a8b91b61dd878e3ac0d2451"},
+    {"path": "docs/assessment-production/post-canary-continuation-v1/batch-17/failures/audio-work-items/audio-work-items-preparation-failure-1.json", "sha256": "21f78a8289b350e8fdc0acd09f359a2cb17ec9a6d8b2098b5a8b24bc2d89a1d4"},
+    {"path": "docs/assessment-production/post-canary-continuation-v1/batch-17/failures/audio-work-items/audio-work-item-preparation-failure-2.json", "sha256": "410798465524b1b8719686ba629628a9289f65b33f1a45d64c3a4223426e81cb"},
+    {"path": "docs/assessment-production/post-canary-continuation-v1/batch-17/failures/audio-work-items/audio-work-items-preparation-failure-2.json", "sha256": "21f78a8289b350e8fdc0acd09f359a2cb17ec9a6d8b2098b5a8b24bc2d89a1d4"}
+  ],
+  "finalWorkItems": 1,
+  "finalAudioBearingDebates": 1,
+  "audioAccessedBeforeCorrection": false,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
