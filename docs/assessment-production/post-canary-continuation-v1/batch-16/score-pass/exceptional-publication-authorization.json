@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-score-stability-exceptional-publication-authorization",
+  "status": "frozen-active-batch-16-debate-144-score-stability-publication-exception",
+  "authorizedAt": "2026-08-28T13:44:50Z",
+  "checkpointCommit": "f01c5f598b3e29e48c4b64531c81dddddd51e2d2",
+  "batchNumber": 16,
+  "userAuthorization": {
+    "instruction": "I grant you permission.",
+    "scopeInterpretation": "Authorize the narrower evidence-preserving option offered at the substantive blocker: retain the single immutable deterministic score pass and every accepted adjudication field, preserve the failed v2.2 stability analysis, waive only the Debate 144 opposite-side-reversal publication stop, and continue the remaining Batch 16 workflow with the existing 83-84 score."
+  },
+  "preservedFailure": {
+    "analysisStatus": "post-canary-batch-16-score-stability-gate-failed",
+    "debateNumber": "144",
+    "initialPassA": { "pro": 83, "con": 82, "winner": "pro" },
+    "initialPassB": { "pro": 83, "con": 82, "winner": "pro" },
+    "final": { "pro": 83, "con": 84, "winner": "con" },
+    "failureClass": "published-opposite-side-reversal-under-active-v2.2-policy",
+    "numericDistanceGatePassed": true,
+    "winnerStabilityGatePassed": false,
+    "erasedOrReclassified": false
+  },
+  "immutableBoundaries": {
+    "scorePassesCompleted": 1,
+    "scoreRerunAllowed": false,
+    "manualScoreChangesAllowed": false,
+    "acceptedAdjudicationFieldChangesAllowed": false,
+    "finalLedgerChangesAllowed": false,
+    "calculatedScoresChangesAllowed": false,
+    "postResultPolicyTuningAllowed": false,
+    "nextBatchSelectionAllowed": false
+  },
+  "exception": {
+    "scope": "publication-readiness-gate-only",
+    "debates": ["144"],
+    "existingScoresMayProceedToPublicationReconstruction": true,
+    "otherV22ControlsRemainActive": true,
+    "publicationReconstruction": true,
+    "boundedFieldLevelPublicationRecovery": true,
+    "compilation": true,
+    "renderingVerification": true,
+    "compatibilityStaging": true,
+    "productionPublication": true,
+    "generatedSeoAndDependentArtifactCorrection": true,
+    "completeRepositoryValidation": true,
+    "commitAndPush": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/calculated-scores.json": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/analysis.json": "272d770e78e0bb47bbcdad9f309448eadc6bb2c869bab4237ff620fd84cb9ed5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/score-pass-manifest.json": "32223a2b42c6b3eb9c6f4ebe8535bbd4bac4f6d5265e370c869588fdb49a4912",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/final-ledger/final-ledger.json": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2"
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-push-batch-16-publication-reconstruction-without-rerunning-or-mutating-scores"
+}
