@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-combined-audio-verification",
+  "protocolId": "assessment-production-post-canary-batch-15-audio-attribution-recovery",
+  "status": "post-canary-batch-15-combined-audio-verification-passed",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "stagingOnly": true,
+  "preservedOriginalDeterministicGate": {
+    "status": "post-canary-batch-15-audio-verification-unresolved",
+    "verified": 1,
+    "unresolved": 2,
+    "erasedOrReclassified": false
+  },
+  "recovery": {
+    "contexts": 2,
+    "decisions": [
+      {
+        "debateNumber": "39",
+        "debateId": "lambert-jones-christian-faith-skepticism-2021",
+        "moveId": "pro-exodus-minimal-migration",
+        "expectedSpeaker": "Michael Jones",
+        "status": "verified",
+        "authoringSpeaker": "Michael Jones",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": false,
+        "identityResolution": "generic-label-dialogue-mapping",
+        "evidenceSegmentIndexes": [
+          18,
+          19,
+          25,
+          27,
+          30,
+          32,
+          34,
+          39
+        ],
+        "confidence": "high",
+        "rationale": "The generic A turn is attributable to Michael Jones at high confidence from the continuous dialogue: it follows Jones's named opening contribution, develops the pro-Exodus position at length, and ends immediately before Derek Lambert's named response. The cited segments express a naturalistic migration from Egypt into Canaan supported by the inherited Exodus account and compatible archaeological evidence."
+      },
+      {
+        "debateNumber": "98",
+        "debateId": "craig-grayling-evil-god-reasonable-2011",
+        "moveId": "con-possibility-feasibility-gap",
+        "expectedSpeaker": "A. C. Grayling",
+        "status": "verified",
+        "authoringSpeaker": "A. C. Grayling",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": false,
+        "identityResolution": "named-label",
+        "evidenceSegmentIndexes": [
+          5,
+          6,
+          10,
+          11
+        ],
+        "confidence": "high",
+        "rationale": "Named A. C. Grayling segments express both components of the locked core proposition: the logical possibility of a world containing human individuals without natural evil and the resulting burden to explain why creating such a world would not be feasible for God."
+      }
+    ],
+    "verified": 2,
+    "unresolved": 0,
+    "rawTranscriptsChanged": false,
+    "thresholdsChanged": false,
+    "rawSpeakerLabelsChanged": false
+  },
+  "totals": {
+    "requiredMoves": 3,
+    "deterministicallyVerified": 1,
+    "attributionAdjudicatedVerified": 2,
+    "verified": 3,
+    "unresolved": 0,
+    "verificationRate": 1,
+    "paidDiarizationCallsCompleted": 3,
+    "paidDiarizationRetries": 0,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalDirectIncrementalCostUsd": 0,
+    "usageDerivedEstimatedPaidDiarizationCostUsd": 0.1002925,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "disputeAdjudicationPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-audio-attribution-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-15-audio-attribution-recovery",
+  "status": "batch-15-audio-attribution-recovery-passed",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "stagingOnly": true,
+  "preservedOriginalGate": {
+    "status": "post-canary-batch-15-audio-verification-unresolved",
+    "passed": false,
+    "verified": 1,
+    "unresolved": 2,
+    "erasedOrReclassified": false
+  },
+  "validation": {
+    "contexts": [
+      {
+        "status": "passed",
+        "debateNumber": "39",
+        "decisions": [
+          {
+            "moveId": "pro-exodus-minimal-migration",
+            "status": "verified",
+            "citedSegments": 8,
+            "namedExpectedSegmentsCited": 0,
+            "genericSegmentsCited": 8,
+            "identityResolution": "generic-label-dialogue-mapping"
+          }
+        ],
+        "verified": 1,
+        "unresolved": 0,
+        "calculatedFields": 0
+      },
+      {
+        "status": "passed",
+        "debateNumber": "98",
+        "decisions": [
+          {
+            "moveId": "con-possibility-feasibility-gap",
+            "status": "verified",
+            "citedSegments": 4,
+            "namedExpectedSegmentsCited": 4,
+            "genericSegmentsCited": 0,
+            "identityResolution": "named-label"
+          }
+        ],
+        "verified": 1,
+        "unresolved": 0,
+        "calculatedFields": 0
+      }
+    ],
+    "verified": 2,
+    "unresolved": 0
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 3,
+    "deterministicallyVerified": 1,
+    "attributionAdjudicatedVerified": 2,
+    "verified": 3,
+    "unresolved": 0,
+    "verificationRate": 1,
+    "paidDiarizationCallsCompleted": 3,
+    "paidDiarizationRetries": 0,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalDirectIncrementalCostUsd": 0,
+    "usageDerivedEstimatedPaidDiarizationCostUsd": 0.1002925,
+    "scoresDerived": 0
+  },
+  "costs": {
+    "originalUsageDerivedEstimatedPaidDiarizationCostUsd": 0.1002925,
+    "originalMaximumAuthorizedUsd": 1,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalDirectIncrementalCostUsd": 0,
+    "modelAuthentication": "ChatGPT subscription"
+  },
+  "scoreBlindness": {
+    "ratingsAccessed": false,
+    "scoresAccessed": false,
+    "legacyAssessmentsAccessed": false,
+    "otherDebatesAccessed": false,
+    "publicationProseAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disputeAdjudicationPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
