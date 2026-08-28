@@ -1,0 +1,719 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "163",
+  "debateId": "craig-draper-existence-of-god-1997",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-christian-theism-cumulative-case",
+      "side": "pro",
+      "description": "Establish that the universe’s origin and order, objective morality, evidence concerning Jesus, and religious experience cumulatively favor Christian theism, while showing that naturalistic evidence from evolution, suffering, and hiddenness does not reverse that comparison.",
+      "successCriteria": "The route succeeds if its independent and mutually reinforcing considerations warrant a transcendent personal God and connect that conclusion to Christian theism, with adequate answers to the principal naturalistic likelihood arguments.",
+      "motionBridge": {
+        "bridgeId": "pro-total-evidence-favors-christian-theism",
+        "tier": "motion",
+        "description": "The total evidence is more expected under Christian theism than under agnostic naturalism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-cosmic-origin-and-design",
+          "tier": "central",
+          "description": "Cosmic beginning and life-permitting order require support for a transcendent personal creator and intelligent design."
+        },
+        {
+          "bridgeId": "pro-objective-moral-ground",
+          "tier": "central",
+          "description": "Objective moral values and duties require an adequate foundation in God rather than an exclusively naturalistic ontology."
+        },
+        {
+          "bridgeId": "pro-jesus-and-divine-revelation",
+          "tier": "central",
+          "description": "The historical case for Jesus’s resurrection must support divine action and authenticate distinctively Christian revelation."
+        },
+        {
+          "bridgeId": "pro-naturalistic-counterevidence-answered",
+          "tier": "central",
+          "description": "Evolution, pain, tragedy, and hiddenness must be reconciled with Christian theism sufficiently to preserve the cumulative comparison."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-causal-and-attribute-inference",
+          "tier": "subsidiary",
+          "description": "The cause of a temporally finite universe must be connected defensibly to timelessness, immateriality, power, and personal agency."
+        },
+        {
+          "bridgeId": "pro-experiential-warrant",
+          "tier": "subsidiary",
+          "description": "Religious experience must provide defeasible warrant that coheres with the route’s independent arguments."
+        }
+      ]
+    },
+    {
+      "routeId": "con-agnostic-naturalism-comparative-case",
+      "side": "con",
+      "description": "Show cumulatively that major features of minds, life, suffering, moral behavior, and religious uncertainty are more probable under agnostic naturalism, while limiting the claimed force of cosmological, moral, resurrection, and experiential arguments for Christian theism.",
+      "successCriteria": "The route succeeds if the comparative likelihood of the total evidence favors agnostic naturalism, or if the pro considerations remain too underdetermined to outweigh the naturalistic evidence without requiring a conclusive proof of naturalism.",
+      "motionBridge": {
+        "bridgeId": "con-total-evidence-favors-agnostic-naturalism",
+        "tier": "motion",
+        "description": "The total evidence is more expected under agnostic naturalism than under Christian theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-comparative-probability-framework",
+          "tier": "central",
+          "description": "Each material fact must be compared by its relative probability under the rival worldviews and then incorporated cumulatively."
+        },
+        {
+          "bridgeId": "con-biological-and-mental-evidence",
+          "tier": "central",
+          "description": "Evolution, mind-brain dependence, and the biological distribution of pain and pleasure must receive stronger expectations under naturalism."
+        },
+        {
+          "bridgeId": "con-suffering-and-hiddenness-evidence",
+          "tier": "central",
+          "description": "Apparently uncompensated tragedy, absent divine comfort, and unclear religious revelation must count as evidence against Christian theism."
+        },
+        {
+          "bridgeId": "con-pro-arguments-limited",
+          "tier": "central",
+          "description": "Cosmological, moral, resurrection, and experiential considerations must fail to supply a sufficient comparative advantage for Christian theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-moral-naturalism",
+          "tier": "subsidiary",
+          "description": "Objective moral truths and value must admit accounts that do not depend on grounding them in God’s nature."
+        },
+        {
+          "bridgeId": "con-theistic-replies-insufficient",
+          "tier": "subsidiary",
+          "description": "Appeals to unknown goods, compensation, or compatibility must address comparative probability rather than mere logical consistency."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "comparative-method-and-cumulative-burden",
+      "title": "Comparative probability and the cumulative burden",
+      "weightPercent": 10,
+      "rationale": "Defines how multiple independent facts bear on the motion, including the distinction between showing evidence more likely on one worldview and conclusively proving that worldview."
+    },
+    {
+      "sectionId": "cosmic-origin-order-and-design",
+      "title": "Cosmic origin, fine-tuning, and design",
+      "weightPercent": 20,
+      "rationale": "Covers the universe’s beginning, causal explanation, inferred divine attributes, life-permitting conditions, and whether these facts favor personal design over naturalistic alternatives."
+    },
+    {
+      "sectionId": "evolution-consciousness-and-biological-order",
+      "title": "Evolution, consciousness, and biological order",
+      "weightPercent": 16,
+      "rationale": "Addresses evolutionary common descent, complex biological systems, mind-brain dependence, and pain-and-pleasure functions as competing evidence for design or naturalistic development."
+    },
+    {
+      "sectionId": "morality-value-and-human-conduct",
+      "title": "Morality, value, and human conduct",
+      "weightPercent": 16,
+      "rationale": "Examines objective moral truth, possible divine and naturalistic grounds of value, moral disagreement, and the evidential significance of comparative moral behavior among believers."
+    },
+    {
+      "sectionId": "jesus-revelation-and-religious-experience",
+      "title": "Jesus, revelation, and religious experience",
+      "weightPercent": 16,
+      "rationale": "Tests the historical and inferential route from resurrection claims to divine authentication alongside experiential warrant, religious disagreement, and alternative interpretations."
+    },
+    {
+      "sectionId": "suffering-comfort-and-divine-hiddenness",
+      "title": "Suffering, divine comfort, and hiddenness",
+      "weightPercent": 22,
+      "rationale": "Evaluates tragedy, biologically structured suffering, absent experiences of divine comfort, and proposed greater-good, doctrinal, compensatory, or epistemic explanations under the rival worldviews."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cosmic-beginning-personal-cause",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "cosmic-origin-order-and-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Because the universe began to exist, its cause is transcendent, uncaused, timeless, immaterial, powerful, and personal.",
+      "sourceSpan": {
+        "startEvent": 95,
+        "endEvent": 203
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Craig, and the uninterrupted opening presentation remains his until Draper begins later.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Transcendent cause of the universe but to its personal Creator isn't it incredible that the Big Bang Theory thus confirms what the Christian theist has always believed that in the beginning God created the heavens and the earth now I simply put it to you which do you think makes more sense that the Christian the was right or that the Universe just popped into being uncaused out",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 617,
+        "endToken": 684,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-fine-tuning-design-inference",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "cosmic-origin-order-and-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe's narrowly life-permitting constants and initial conditions are better explained by intelligent cosmic design than by chance.",
+      "sourceSpan": {
+        "startEvent": 204,
+        "endEvent": 272
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This occurs within Craig's uninterrupted opening case and is explicitly introduced as his second reason for theism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "initial conditions being suitable for later star formation without which planets could not exist is one followed by a thousand billi ion billion zeros at least John Barrow and Frank tippler estimate that a change in the strength of gravity or of the weak Force by even one part in 10 to the 100th power would have prevented a life permitting Universe there are around 50 such quantities and constants present in the Big Bang which must be fine",
+        "characterCount": 443,
+        "tokenCount": 79,
+        "startToken": 140,
+        "endToken": 218,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-morality-requires-god",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "morality-value-and-human-conduct",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values exist, cannot be adequately grounded without God, and therefore support the conclusion that God exists.",
+      "sourceSpan": {
+        "startEvent": 273,
+        "endEvent": 357
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this as his third reason during the same clearly attributed and uninterrupted opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Valu they make the existence of a God more probable than it would have been without them thus we have a defensible argument from morality to the existence of a God but in order to avoid God's existence macki therefore denied that objective moral values exist he wrote it is easy to explain this moral sense as a natural product of biological and social evolution Professor Michael",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 55,
+        "endToken": 121,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-historical-case",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "jesus-revelation-and-religious-experience",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Jesus's empty tomb, postmortem appearances, and the disciples' resurrection belief support his resurrection and thereby divine action.",
+      "sourceSpan": {
+        "startEvent": 358,
+        "endEvent": 443
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Craig, and he explicitly presents the historical case concerning Jesus as his fourth reason.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "if Jesus did rise from the dead then it would seem that we have a Divine Miracle on our hands and thus evidence for the existence of God now there are three established facts recognized by the majority of New Testament Scholars today which support the resurrection of Jesus the empty tomb Jesus postmortem appearances and the origin of the disciples belief in his resurrection let",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 114,
+        "endToken": 179,
+        "weightedOverlap": 46,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-comparative-cumulative-likelihood",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "comparative-method-and-cumulative-burden",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "Multiple facts can cumulatively favor naturalism over theism when each is more probable given naturalism, even without conclusively proving naturalism.",
+      "sourceSpan": {
+        "startEvent": 536,
+        "endEvent": 617
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper identifies his planned naturalistic case after taking the floor, and the jelly-bean analogy is part of his uninterrupted presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "jars is glued shut so you know all the beans came from the same jar now you have a very strong cumulative case uh for the position that the beans are being drawn from the first jar uh for the position that it's the second jar the one on the right that's glued shut okay um the evidence born against naturalism and theism is like the evidence provided by drawing these jelly beans none of it proves either hypothesis conclusively but certain facts",
+        "characterCount": 446,
+        "tokenCount": 83,
+        "startToken": 367,
+        "endToken": 449,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-absence-superior-theist-conduct",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "morality-value-and-human-conduct",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "The absence of noticeably superior moral behavior among theists is more expected on naturalism than on theism.",
+      "sourceSpan": {
+        "startEvent": 618,
+        "endEvent": 711
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper explicitly introduces the first item in his seven-part cumulative case during his uninterrupted opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "theists are not noticeably morally superior to the rest of us then the next question is why is this fact a red be why does it support naturalism over theism because on the assumption that theism is true one has reason to believe that theistic belief would have significant and noticeable moral fruits that worshiping God would be an abundant source of moral strength so the absence of such moral fruits is surprising",
+        "characterCount": 416,
+        "tokenCount": 73,
+        "startToken": 453,
+        "endToken": 525,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-mind-brain-dependence",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "evolution-consciousness-and-biological-order",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "The strong dependence of consciousness and personality on brain processes favors naturalism over theism's expectation of nonphysical minds.",
+      "sourceSpan": {
+        "startEvent": 712,
+        "endEvent": 781
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper explicitly introduces this as his second evidential item, with no speaker transition inside the source window.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "minds or Souls as they're sometimes called in fact fact this evidence is so strong that almost all neuroscientists and philosophers of Mind deny that we have such Souls why is this fact a red being because the existence of souls is exact excuse me because the non-existence of souls is exactly what you would expect if naturalism is true on naturalism everything in our universe including human beings is the product of physical processes",
+        "characterCount": 438,
+        "tokenCount": 76,
+        "startToken": 263,
+        "endToken": 338,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-evolution-comparative-expectation",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "evolution-consciousness-and-biological-order",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "Evolution is more expected on naturalism than on theism because naturalism requires an evolutionary account while theism permits many creation methods.",
+      "sourceSpan": {
+        "startEvent": 782,
+        "endEvent": 832
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper labels evolution as his third evidential item within his continuously attributed opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "evolutionary change within those basic types or he could have created everything by Evolution except for maybe one species like humans or something like that so there's a lot of different possibilities on on theism so while evolution is compatible with theism it doesn't prove that theism is false it is no more likely on theism than a variety of other Alternatives Alternatives that are ruled out by naturalism thus evolution is more to be expected",
+        "characterCount": 449,
+        "tokenCount": 76,
+        "startToken": 229,
+        "endToken": 304,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-uncompensated-tragedy",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "suffering-comfort-and-divine-hiddenness",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "The abundance of apparently uncompensated tragedies is substantially more probable on naturalism than on theism.",
+      "sourceSpan": {
+        "startEvent": 887,
+        "endEvent": 936
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person presentation continues Draper's enumerated naturalistic cumulative case and explicitly contrasts naturalism with theism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "moral character um of course it's possible that there's some good reason perhaps a reason too complicated for human beings to understand for God to permit tragedies so tragedies don't conclusively prove that God does not exist but their existence is clearly much more on naturalism on The View that there are no supernatural beings than on theism after all we know of good reasons to prevent",
+        "characterCount": 391,
+        "tokenCount": 67,
+        "startToken": 207,
+        "endToken": 273,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-absent-divine-comfort",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "suffering-comfort-and-divine-hiddenness",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "Victims' frequent failure to experience God's comforting presence during tragedy is more expected on naturalism than on theism.",
+      "sourceSpan": {
+        "startEvent": 956,
+        "endEvent": 976
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper explicitly introduces this consideration as his sixth item and states its comparative evidential relationship to naturalism and theism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "victims of of tragedies to feel God's presence but this fact notice is surprising on theism once again the theist must settle for showing that the fact in question is compatible with theism once again the theist will point out that there might be some good reason we don't know about for God to let us suffer alone the point remains however that the frequent lack of God spelled presence when tragedy",
+        "characterCount": 400,
+        "tokenCount": 72,
+        "startToken": 36,
+        "endToken": 107,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-unclear-revelation-about-jesus",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "jesus-revelation-and-religious-experience",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "constructive",
+      "proposition": "God's failure to reveal clearly which religious path and claims about Jesus are true favors naturalism over theism.",
+      "sourceSpan": {
+        "startEvent": 977,
+        "endEvent": 1004
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper labels this his seventh item and develops it through explicit references to competing theistic beliefs and the two hypotheses.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "claims about Jesus is true one can find reasonable theists that have all three of those positions about Jesus that I mentioned more generally the fact that God has not clearly revealed his purposes and commands to a great many theists well that's absolutely Stern on the assumption that naturalism is true because if naturalism is true there is no God so there's no clear Revelation but it's somewhat surprising on theism",
+        "characterCount": 421,
+        "tokenCount": 72,
+        "startToken": 91,
+        "endToken": 162,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evolution-intelligent-design",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "evolution-consciousness-and-biological-order",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The limits of mutation and selection and the presence of irreducibly complex systems make intelligent design a better explanation of biological order than naturalism.",
+      "sourceSpan": {
+        "startEvent": 1142,
+        "endEvent": 1216
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig expressly reverses Draper's evolutionary argument, cites proposed biological difficulties, and concludes that evolution supports the existence of God.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "mutation and natural selection with respect to them naturalism has zero explanatory power but according to Professor Bei there is one familiar explanation which will account for irreducibly complex systems namely intelligent design he says life on Earth at its most fundamental level in its most critical components is the product of intelligent activity now if this is correct then it means that naturalism is rendered improbable",
+        "characterCount": 430,
+        "tokenCount": 67,
+        "startToken": 327,
+        "endToken": 393,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-suffering-theistic-reasons",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "suffering-comfort-and-divine-hiddenness",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Pain and tragedy are not demonstrably improbable on Christian theism because their wider consequences may be unknown and Christian doctrines provide morally sufficient reasons for suffering.",
+      "sourceSpan": {
+        "startEvent": 1217,
+        "endEvent": 1295
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig moves to Draper's pain and tragedy considerations by number and answers them using divine aims, causal complexity, human rebellion, and eternal life.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "these sorts of tragedies are improbable given Christian theism in fact there are certain Christian doctrines that increase the probability of God and suffering coexisting let me just list briefly some of these number one the purpose of life is not happiness as such but the knowledge of God the reason we think that suffering and tragedy counts against God is because we think God",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 259,
+        "endToken": 323,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-jesus-unique-revelation",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "jesus-revelation-and-religious-experience",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Jesus's exclusive religious claims, miracles, and resurrection provide historical grounds for treating Christianity as God's uniquely authenticated revelation.",
+      "sourceSpan": {
+        "startEvent": 1304,
+        "endEvent": 1317
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig directly addresses differing religious paths and identifies Jesus' words, miracles, and resurrection as historical authentication of divine revelation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "for religious paths uh being different I would say that God has provided evidence of the uh of the revelation of himself in Jesus Christ Jesus said I am the way the truth and the life no man comes to the father but by me and he authenticated that claim by his miracles and by his resurrection from the dead and I believe through those historical evidences we have good grounds for",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 0,
+        "endToken": 71,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-compatibility-insufficient",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "comparative-method-and-cumulative-burden",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "reply",
+      "proposition": "Evidence favors naturalism whenever it is more likely there, even if the evidence is not extremely unlikely or incompatible with theism.",
+      "sourceSpan": {
+        "startEvent": 1320,
+        "endEvent": 1334
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper explicitly characterizes Craig's preceding responses and restates the comparative probabilistic structure governing his own arguments.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Craig's responses to my arguments first of all he kept saying that he doesn't think my various facts are all that unlikely on theism of course he just pretty much asserts that I me I'll let you be the judge of how unlike you think unlikely on theism you think these facts are but the more important point is that my argument is always essentially comparative right it's always not how unlikely is on theism but it if it's more likely on naturalism",
+        "characterCount": 447,
+        "tokenCount": 83,
+        "startToken": 3,
+        "endToken": 85,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmic-beginning-limited-support",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "cosmic-origin-order-and-design",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "reply",
+      "proposition": "A cosmic beginning offers some support for theism, but neither establishes that the universe began nor requires a timeless cause.",
+      "sourceSpan": {
+        "startEvent": 1502,
+        "endEvent": 1564
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper discusses Craig's beginning-of-the-universe argument, grants it limited theistic force, and challenges both its scientific and causal premises.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Big Bang Theory is through and the universe began with time all right and so we have no reason no past experience to suggest that that anything that begins with time in other words there's no time in which the universe didn't exist so when why does it need a Cause right um so I think that's a little a little blue Beam still because there is some stif EV for a beginning and and I think a beginning of the universe is more likely on theism",
+        "characterCount": 440,
+        "tokenCount": 87,
+        "startToken": 363,
+        "endToken": 449,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-necessary-objective-moral-truths",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "morality-value-and-human-conduct",
+      "side": "con",
+      "speaker": "Paul Draper",
+      "moveKind": "reply",
+      "proposition": "Objective moral truths can be necessary conceptual truths and therefore do not require God to explain their existence.",
+      "sourceSpan": {
+        "startEvent": 1619,
+        "endEvent": 1647
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Draper explicitly accepts objective moral values while denying that theism is needed, then develops an analogy with necessary definitional truths.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "children just for fun I'd say wa a saying I can't be morally permissible the word in their language that you're translating is moreal moral permissibility um that's a mistranslation right it's a part of the concept of of morality that certain things are morally true so but if it's part of the concept then you don't need theism to explain even if God didn't exist there triangles",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 102,
+        "endToken": 169,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-experience-cumulative-confirmation",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-04",
+      "sectionId": "comparative-method-and-cumulative-burden",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Religious experience may be rationally accepted absent a defeater and gains cumulative support when it confirms independent objective arguments for theism.",
+      "sourceSpan": {
+        "startEvent": 1880,
+        "endEvent": 1931
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question explicitly addresses Craig's religious-experience argument, and the first-person conversion account identifies the response as Craig's.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "that Dr Draper talked about tonight to doubt that my experience is a genuine experience of God on the contrary that's why I only shared that last after giving a number of objective evidences that then I shared my subjective experience and I think that the subjective experience simply confirms or or is icing on the cake for a whole series of objective evidences that make theism a",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 291,
+        "endToken": 358,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moral-disagreement-compatible-objectivity",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-05",
+      "sectionId": "morality-value-and-human-conduct",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Cross-cultural moral disagreement can reflect error or different applications of shared values and therefore does not establish that objective moral truths are absent.",
+      "sourceSpan": {
+        "startEvent": 1942,
+        "endEvent": 1999
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question names Craig and challenges his morality argument, while the answer defends objective value using perception and cross-cultural examples.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "own tribe that that would be morally wrong but they don't regard these other people as their neighbors and therefore they don't think that cannibalism of them is is morally wrong but you see that's there there's a root value there that is common but it comes to different expression in different cultures so often the cultural mores of societies may be different and yet there may",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 297,
+        "endToken": 363,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

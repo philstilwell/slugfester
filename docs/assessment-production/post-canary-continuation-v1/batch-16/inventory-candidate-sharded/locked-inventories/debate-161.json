@@ -1,0 +1,839 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "161",
+  "debateId": "craig-millican-does-god-exist-2011",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-cumulative-christian-theism",
+      "side": "pro",
+      "description": "Establish Christian theism as more reasonable than skeptical atheism through a cumulative case from cosmic origins, fine-tuning, objective morality, Jesus' resurrection, and direct religious experience, while addressing proposed defeaters.",
+      "successCriteria": "The route succeeds if the principal evidential strands jointly support a personal, morally perfect creator and the Christian identification of that creator more strongly than the skeptical alternatives undermine those inferences.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-warrant",
+        "tier": "motion",
+        "description": "The combined evidence must make Christian theism more reasonable than skeptical atheism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-cosmological-creator",
+          "tier": "central",
+          "description": "A beginning of the universe and an applicable causal principle must support a transcendent personal creator."
+        },
+        {
+          "bridgeId": "pro-fine-tuning-designer",
+          "tier": "central",
+          "description": "Life-permitting fine-tuning must favor intelligent design over necessity, chance, or selection-based alternatives."
+        },
+        {
+          "bridgeId": "pro-moral-ground",
+          "tier": "central",
+          "description": "Objective moral values and duties must require and receive an adequate foundation in God."
+        },
+        {
+          "bridgeId": "pro-christian-identification",
+          "tier": "central",
+          "description": "Resurrection evidence and religious experience must connect generic theism to the Christian-God hypothesis."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-burden-cumulative-method",
+          "tier": "subsidiary",
+          "description": "The evidential strands must be assessed cumulatively under a burden that also requires justification for skeptical atheism."
+        },
+        {
+          "bridgeId": "pro-defeater-answers",
+          "tier": "subsidiary",
+          "description": "Objections from evil, hiddenness, religious diversity, and naturalistic epistemology must not defeat the cumulative inference."
+        }
+      ]
+    },
+    {
+      "routeId": "con-skeptical-atheist-case",
+      "side": "con",
+      "description": "Show that the specific Christian-God hypothesis lacks sufficient evidential support because its main arguments rely on disputed premises, exceed their conclusions, face natural alternatives, and conflict with evil and hiddenness.",
+      "successCriteria": "The route succeeds if the affirmative evidence does not adequately distinguish Christian theism from rival explanations and the observed world supplies material counterevidence to the claimed divine attributes.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-warrant",
+        "tier": "motion",
+        "description": "The evidence must fail to make Christian theism more reasonable than skeptical atheism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-cosmological-underdetermination",
+          "tier": "central",
+          "description": "Neither an absolute cosmic beginning nor a causal inference to an immaterial personal creator must be treated as established."
+        },
+        {
+          "bridgeId": "con-natural-theology-alternatives",
+          "tier": "central",
+          "description": "Fine-tuning and morality must admit alternatives that prevent their use as distinctive evidence for the Christian God."
+        },
+        {
+          "bridgeId": "con-history-experience-reliability",
+          "tier": "central",
+          "description": "Resurrection reports and religious experience must lack the reliability needed to distinguish Christianity from natural or rival religious accounts."
+        },
+        {
+          "bridgeId": "con-evil-hiddenness-counterevidence",
+          "tier": "central",
+          "description": "Evil, suffering, and sincere nonbelief must count against a perfectly good, omnipotent, relational God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-specific-hypothesis-burden",
+          "tier": "subsidiary",
+          "description": "Christian theism must bear an appropriately demanding burden as one specific supernatural hypothesis among incompatible alternatives."
+        },
+        {
+          "bridgeId": "con-attribute-gap-method",
+          "tier": "subsidiary",
+          "description": "Any limited anomaly or unexplained cause must not be extended beyond the evidence to the full divine attributes."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "burden-religious-epistemology",
+      "title": "Burden, Religious Diversity, and Epistemic Method",
+      "weightPercent": 12,
+      "rationale": "This issue governs how the specific Christian hypothesis is compared with skeptical atheism, rival religions, experiential claims, rational intuition, and empirically grounded inquiry."
+    },
+    {
+      "sectionId": "cosmic-beginning-causation",
+      "title": "Cosmic Beginning, Causation, and a Personal Creator",
+      "weightPercent": 24,
+      "rationale": "This issue contains the principal inference from the universe's alleged beginning through causal premises to a timeless, immaterial, personal cause."
+    },
+    {
+      "sectionId": "fine-tuning-design",
+      "title": "Fine-Tuning, Design, and Alternative Explanations",
+      "weightPercent": 17,
+      "rationale": "This issue tests whether life-permitting conditions favor intelligent design and whether that inference reaches the kind of God specified by the motion."
+    },
+    {
+      "sectionId": "objective-morality",
+      "title": "Objective Morality and Divine Grounding",
+      "weightPercent": 15,
+      "rationale": "This issue addresses whether objective value and obligation exist, whether non-theistic accounts can ground them, and whether a divine lawgiver is required."
+    },
+    {
+      "sectionId": "resurrection-experience",
+      "title": "Resurrection Evidence and Religious Experience",
+      "weightPercent": 18,
+      "rationale": "This issue bears directly on the transition from generic theism to Christianity through historical claims about Jesus and purported immediate awareness of God."
+    },
+    {
+      "sectionId": "evil-hiddenness",
+      "title": "Evil, Suffering, and Divine Hiddenness",
+      "weightPercent": 14,
+      "rationale": "This issue examines whether suffering and sincere nonbelief conflict with the claimed divine attributes and whether the proposed theistic purposes answer that conflict."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cosmic-beginning-personal-cause",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "cosmic-beginning-causation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist and therefore has an uncaused, timeless, immaterial, personal cause beyond space and time.",
+      "sourceSpan": {
+        "startEvent": 113,
+        "endEvent": 257
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Craig, and the uninterrupted opening address presents this as his first argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "began to exist then the universe has a transcendent cause 3 therefore the universe has a transcendent cause given the truth of the two premises the conclusion necessarily follows now from the very nature of the case this cause must be an uncaused change less time less and immaterial being which created the universe it must be uncaused because we've seen there cannot be an infinite regress of causes it must be timeless",
+        "characterCount": 421,
+        "tokenCount": 73,
+        "startToken": 706,
+        "endToken": 778,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-fine-tuning-design-inference",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "fine-tuning-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe's narrowly life-permitting constants and initial conditions are better explained by intelligent design than by physical necessity or chance.",
+      "sourceSpan": {
+        "startEvent": 258,
+        "endEvent": 323
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this as his second argument during the same uninterrupted opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "probable than any life-permitting universe now there are only three possible explanations of this extraordinary fine-tuning physical necessity chance or design now it can't be due to physical necessity because as we've seen the constants and quantities are independent of the laws of nature so maybe the fine-tuning is due to chance after all highly improbable events happen every",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 176,
+        "endToken": 237,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-morality-divine-ground",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "objective-morality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values and duties exist, and their validity and binding force require God as an adequate foundation.",
+      "sourceSpan": {
+        "startEvent": 324,
+        "endEvent": 406
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly announces a third argument and develops both premises and its conclusion in his opening speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "duties in the world our first two arguments give us a creator and designer of the universe but they don't tell us anything about his moral character how can we know that he is good my third argument addresses that question premise one states if God did not exist objective moral values and duties would not exist by objective moral values I mean values which are valid and binding",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 9,
+        "endToken": 77,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-historical-inference",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "resurrection-experience",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Jesus' empty tomb, postmortem appearances, and the disciples' resulting belief are best explained by his resurrection, which entails God's existence.",
+      "sourceSpan": {
+        "startEvent": 407,
+        "endEvent": 472
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig identifies this as his fourth argument and presents it continuously as part of his enumerated opening case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "for the existence of God now most people would probably think that the resurrection of Jesus is something you just believed in by faith or not but there are actually three facts recognized by the majority of historians today which I believe are best explained by the resurrection of Jesus fact number one on the Sunday after his crucifixion Jesus tomb was found empty by a group of",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 113,
+        "endToken": 180,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-immediate-experience-of-god",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "burden-religious-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "A person can know that God exists through immediate personal experience independently of propositional arguments.",
+      "sourceSpan": {
+        "startEvent": 473,
+        "endEvent": 500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly introduces this as his fifth consideration in the uninterrupted conclusion of his opening case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "personal experience of God this isn't really an argument for God's existence rather it's the claim that you can know that God exists wholly apart from arguments simply by immediately experiencing him this was the way people in the Bible knew God as Professor John hick my doctoral supervisor explains God was known to them as a dynamic will interacting with their own wills a sheer given reality",
+        "characterCount": 395,
+        "tokenCount": 68,
+        "startToken": 4,
+        "endToken": 71,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-religious-diversity-unreliability",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "burden-religious-epistemology",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "constructive",
+      "proposition": "Conflicting religions produced through human cognitive tendencies and cultural transmission show that common religious belief-forming methods are unreliable guides to truth.",
+      "sourceSpan": {
+        "startEvent": 573,
+        "endEvent": 711
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican delivers the entire passage continuously in his opening address and expressly distinguishes it from a genetic fallacy.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "of different and conflicting beliefs then that method obviously cannot be relied on now many of the religious belief systems around the world do clearly conflict with each other so they cannot all be true indeed if we focus on those religions that make an exclusive claim to truth such as Judaism Christianity and Islam at most one of these can be true however they could well all",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 685,
+        "endToken": 752,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-specific-christian-burden",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "burden-religious-epistemology",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Because Christianity is one specific hypothesis among numerous incompatible religions and disembodied minds lack solid evidence, it requires an exceptionally strong evidential case.",
+      "sourceSpan": {
+        "startEvent": 712,
+        "endEvent": 790
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican states the burden conclusion in his own opening speech and supports it through a continuous comparison with rival hypotheses.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "specific religious claim that there is just one Omni perfect God uniquely revealed through Jesus of Nazareth has to share that 50% probability with thousands of other conflicting religions this is why I say that the rational attitude is to place a very strong burden of proof on bill unless his case is overwhelmingly strong we should not believe that there is any such God that implies at least agnosticism but I think also atheism",
+        "characterCount": 432,
+        "tokenCount": 75,
+        "startToken": 330,
+        "endToken": 404,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-global-beginning-underdetermined",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "cosmic-beginning-causation",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Neither the beginning of the local universe nor the Borde-Guth-Vilenkin theorem establishes that the global physical universe had an absolute beginning.",
+      "sourceSpan": {
+        "startEvent": 875,
+        "endEvent": 965
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person rebuttal remains within Millican's identified speech and directly addresses Craig by name.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "physical cause within the global universe moreover there is no contradiction in supposing that the global universe is infinite in the past even if the local universe is not bill standardly gives two reasons for thinking otherwise one of them that infinities cannot be real I shall return to that later Bills second standard reason for denying that the universe is infinite in the past appeals to physics and the board Guth and Vilenkin theorem",
+        "characterCount": 443,
+        "tokenCount": 75,
+        "startToken": 123,
+        "endToken": 197,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-immaterial-mind-inference-gap",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "cosmic-beginning-causation",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Even if the physical universe had a nonphysical cause, identifying it as an immaterial personal mind exceeds both the available evidence and human cognitive competence.",
+      "sourceSpan": {
+        "startEvent": 969,
+        "endEvent": 999
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican explicitly introduces Craig's further inference and develops the objection continuously in his own speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "on to argue that if the physical universe has a cause then this must be an immaterial mind recall that we have no evidence whatever that minds can exist in the absence of a physical substrate so the idea that a mind might exist in the absence of the entire physical universe is complete speculation it seems far more plausible to me to say that if despite everything I've said the",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 4,
+        "endToken": 74,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-moral-objectivity-burden",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "objective-morality",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "A moral argument for God must precisely define the relevant sense of objective value and establish both that such values exist and that they require God.",
+      "sourceSpan": {
+        "startEvent": 1000,
+        "endEvent": 1051
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly identifies Craig's moral argument, quotes its definition, and closes his speech by presenting a direct challenge.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "to both specify a precise sense of objective moral values which requires God's existence and give solid evidence that there are indeed objective moral values in that same since I'm very doubtful that this challenge can be met but we'll see and when I've heard what he has to say on the matter I shall also be saying a little about the problem of evil perhaps the strongest argument",
+        "characterCount": 381,
+        "tokenCount": 69,
+        "startToken": 259,
+        "endToken": 327,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-negative-answer-bears-burden",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "burden-religious-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A negative answer to whether God exists requires justification rather than receiving default status, and the case for theism may draw on logic, evidence, and experience.",
+      "sourceSpan": {
+        "startEvent": 1063,
+        "endEvent": 1114
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Craig, after which Craig recapitulates his two contentions and directly answers Millican's opening objections.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "atheism tonight well I think not indeed he said I have the burden of proof because I'm holding that God does exist and that's the proposition under the debate I think that's incorrect the proposition under debate tonight is a question does God exist and if he intends to answer that No then he needs to give some justification for that otherwise we're simply left with agnosticism as a sort of default",
+        "characterCount": 401,
+        "tokenCount": 72,
+        "startToken": 52,
+        "endToken": 123,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-efficient-cause-not-quantum-nothing",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "cosmic-beginning-causation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Something cannot begin without either a material or an efficient cause, and events in a structured quantum vacuum are not counterexamples to that causal principle.",
+      "sourceSpan": {
+        "startEvent": 1235,
+        "endEvent": 1297
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig directly attributes the contrary objections to Millican and answers them continuously with causal distinctions, quantum physics, and metaphysical reasoning.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "experience creation out of nothing that's right but rather we don't experience things coming into being without material causes that's true but if something cannot come into being without a material without an efficient cause it is even doubly impossible for it to come into being without an efficient cause and the material cause this is even more absurd than something come into",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 7,
+        "endToken": 69,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moral-obligation-requires-lawgiver",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "objective-morality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Naturalistic ethical systems do not adequately ground intrinsic human value or binding duties, whereas moral prescriptions are plausibly grounded in a divine lawgiver.",
+      "sourceSpan": {
+        "startEvent": 1336,
+        "endEvent": 1365
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig marks the transition to the moral argument and directly evaluates the secular ethical theories Millican had previously offered.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "there is no one to prohibit or command them as chemists and ethicists alike recognize prescriptions require prescribers and moral prescriptions require a moral prescriber without a moral lawgiver I think moral obligation is unintelligible so if you agree with me that there are objective moral values I think you'll agree with me that it's most plausible that God exists I'll wait",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 110,
+        "endToken": 171,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-fine-tuning-underdetermination",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "fine-tuning-design",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Fine-tuning supplies at most a cautious design consideration and does not establish the morally perfect, omnipotent Christian God rather than natural alternatives or rival designers.",
+      "sourceSpan": {
+        "startEvent": 1382,
+        "endEvent": 1553
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following his introduction by the moderator, Millican explicitly begins his fine-tuning response and sustains it until announcing a new topic.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "physics of a hundred years hence will look the same quite apart from all this the fine-tuning argument seems very ill adapted for proving or even supporting the existence of an Omni perfect Christian God one important point is that it does nothing to favor the existence of a morally perfect God over an equally powerful but supremely evil God a nasty character I have called anti",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 458,
+        "endToken": 525,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-hiddenness-saving-relationship",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-01",
+      "sectionId": "evil-hiddenness",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Divine hiddenness does not establish atheism because greater evidence of God's existence might not bring more people freely into a saving relationship with God.",
+      "sourceSpan": {
+        "startEvent": 1705,
+        "endEvent": 1745
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Craig immediately before this uninterrupted first-person rebuttal, and the following transition remains within his speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "he wants people to come into a saving relationship with him and it may well be the case that God knew that if he were to provide any more evidence it wouldn't do any more good and bringing people into such a relationship if people won't look at the evidence that we have now perhaps they wouldn't have come to know God and find salvation even if the existence of God were as plain",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 174,
+        "endToken": 247,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-fine-tuning-objections-answered",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-03",
+      "sectionId": "fine-tuning-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The narrow life-permitting range and multiple independent instances of cosmic fine-tuning remain evidence for design despite objections about probability, unsettled physics, efficiency, and cosmic scale.",
+      "sourceSpan": {
+        "startEvent": 1830,
+        "endEvent": 1909
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly introduces the fine-tuning argument and sequentially answers the numbered objections attributed to Millican throughout the same speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "fine-tuning supports that now here we have a number of arguments offered in response I count nine of them soundbite of arguments number one we should be cautious about this of course number two the probability claims are problematic I think not you simply compare the possible range that these constants or quantities could take to the life permitting range and you find it as exquisitely narrow",
+        "characterCount": 395,
+        "tokenCount": 68,
+        "startToken": 4,
+        "endToken": 71,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-atheistic-moral-realism",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-04",
+      "sectionId": "objective-morality",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Atheists can affirm intrinsic human worth and objective moral values without treating those values as ontologically dependent on God's existence.",
+      "sourceSpan": {
+        "startEvent": 1941,
+        "endEvent": 2043
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican begins this moral discussion within his introduced final rebuttal, cites survey figures, and directly challenges positions he attributes to Craig.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God's being up there makes no impact at all on the person who is perceiving and responding to the moral value I'm not questioning whether a theist might be comforted by the thought that the moral value puts them in tune with the ruler of the universe sure but I don't understand any whatever why an atheist cannot believe in objective moral values and certainly there's no reason why an atheist has to presuppose that humans have no intrinsic",
+        "characterCount": 442,
+        "tokenCount": 79,
+        "startToken": 444,
+        "endToken": 522,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-gospel-evidence-limitations",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-05",
+      "sectionId": "resurrection-experience",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "The Gospel resurrection narratives provide weak evidence for divine resurrection because they are late, dependent, partisan, discrepant, and unsupported by contemporary sources.",
+      "sourceSpan": {
+        "startEvent": 2044,
+        "endEvent": 2106
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican expressly changes to the resurrection topic and sustains the critique until he announces that he must stop, with no speaker interruption.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "force moreover they signally fail to cohere especially in the passion narratives with non gospel literature so here we have from Matthew's Gospel the claim about the veil of the temple being rent an earthquake darkness over all the earth for three hours and bodies of the Saints being revived and going and walking around Jerusalem none of this is reported in any other contemporary sources are we really supposed to take this seriously as evidence",
+        "characterCount": 448,
+        "tokenCount": 76,
+        "startToken": 295,
+        "endToken": 370,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-naturalism-objection",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-07",
+      "sectionId": "resurrection-experience",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The resurrection best explains the asserted burial, empty tomb, appearances, and origin of the disciples' belief when prior naturalism does not exclude miracles in advance.",
+      "sourceSpan": {
+        "startEvent": 2213,
+        "endEvent": 2253
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly introduces the resurrection, names Millican and skeptical scholars, and concludes the move by stating the proposed divine explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "historical data and so I think we can say that after Jesus death with some certainty that he was buried possibly by this fellow Joseph of Arimathea and the three days later he appeared not to have been in his tomb herman also accepts the appearances and the origin of the disciples believe so why doesn't dear man accept the resurrection of jesus for philosophical reasons he's a naturalist and therefore miracles",
+        "characterCount": 413,
+        "tokenCount": 72,
+        "startToken": 137,
+        "endToken": 208,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-natural-religious-psychology",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-08",
+      "sectionId": "resurrection-experience",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "Religious experiences and resurrection reports require psychological and natural investigation because comparable supernatural claims arise in mutually incompatible traditions.",
+      "sourceSpan": {
+        "startEvent": 2266,
+        "endEvent": 2317
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Millican for his closing statement, and he explicitly identifies religious experience before connecting it to resurrection testimony and rival claims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "experience is an extremely unreliable method of knowledge or alleged knowledge people have religious experiences of all sorts perhaps those disciples after the resurrection were having those too but the appropriate way to check up on those is not biblical scholarship it's actually Experimental Psychology the question we have to ask ourselves is how likely is it that that evidence could have arisen by perfectly natural",
+        "characterCount": 421,
+        "tokenCount": 66,
+        "startToken": 37,
+        "endToken": 102,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-evil-as-discriminating-evidence",
+      "qualifiedCandidateId": "chunk-003:chunk003-candidate-10",
+      "sectionId": "evil-hiddenness",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "The world's evil is empirical evidence against a perfectly good God, while limited supernatural evidence would not establish an omnipotent and omniscient deity.",
+      "sourceSpan": {
+        "startEvent": 2358,
+        "endEvent": 2414
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican announces the problem of evil, anticipates Craig's response, and carries the argument through the explicit conclusion of his closing speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "away I mean think about it if God is an omnipotent omniscient agent he can do whatever he likes okay so what sort of world would you expect him to create what what's the the evidence that would show that one particular divine being has been at work rather than another well it's the goodness isn't it that's the crucial thing so the problem of evil shouldn't be called the problem of evil it should be called the problem of the empirical",
+        "characterCount": 437,
+        "tokenCount": 82,
+        "startToken": 115,
+        "endToken": 196,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-natural-evil-salvific-purpose",
+      "qualifiedCandidateId": "chunk-004:chunk004-candidate-07",
+      "sectionId": "evil-hiddenness",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Natural evil may help maximize freely formed relationships with God, while most animals may experience pain without the higher-order awareness characteristic of human suffering.",
+      "sourceSpan": {
+        "startEvent": 2859,
+        "endEvent": 2909
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question concerns Craig's theistic position, and the Christian first-person answer is continuous until Millican begins his response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "order awareness is only found in the higher primates and human beings it's found in the frontal cortex of the frontal lobe of the cortex of the brain and therefore even though animals at large experience pain they're not aware of it they are literally not aware that they are in pain and therefore this goes a long way toward diminishing the problem of animal suffering I think I think God in His mercy has so created the natural",
+        "characterCount": 429,
+        "tokenCount": 79,
+        "startToken": 241,
+        "endToken": 319,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 10,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-suffering-and-sincere-nonbelief",
+      "qualifiedCandidateId": "chunk-004:chunk004-candidate-08",
+      "sectionId": "evil-hiddenness",
+      "side": "con",
+      "speaker": "Peter Millican",
+      "moveKind": "reply",
+      "proposition": "A God who determines nature's rules could reveal himself clearly without suffering, yet sincere rational inquiry can still terminate in justified unbelief.",
+      "sourceSpan": {
+        "startEvent": 2910,
+        "endEvent": 2964
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Millican explicitly discusses Craig's familiar treatment of evil and narrates his own inquiry until the moderator introduces a new question.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "take him up on and I wanted to see what he had to say I knew what he had to say on the problem of evil I find the idea that God has designed the universe in such a way to maximize those of us vote those who come to relationship with him absolutely absurd and bear in mind God here makes the rules okay he's not like a pair of who with a child has to take as it were a pre-existing",
+        "characterCount": 380,
+        "tokenCount": 84,
+        "startToken": 48,
+        "endToken": 131,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
