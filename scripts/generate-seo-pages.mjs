@@ -38,7 +38,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260828-debate-14-ai-dark-middle";
+const assetVersion = "20260828-ai-editorial-blue-sitewide";
 
 function escapeHtml(value = "") {
   return String(value)
