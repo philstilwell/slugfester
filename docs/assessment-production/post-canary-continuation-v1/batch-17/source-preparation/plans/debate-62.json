@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3420,
+  "ledgerBytes": 200830,
+  "ledgerSha256": "23c81f5f6a768fdb12b1a705efb470a79f462c12e5305a0cc0015e7243744ddb",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51405,
+      "contextSha256": "aef060f7ad3c809f0f5687d3098f6fdda276e77d0f437c15124dc0ca43f3c58b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52903,
+      "contextSha256": "ce0743bc80fc5d99285ff0b005465ad44d69793a73db059e7f743f047a0aeaef"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53276,
+      "contextSha256": "23d3da7688b37d5f1d580a97921ade757139809b851047dcba3266f3d25fccc5"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53822,
+      "contextSha256": "5df7737adfe968d1f896f6b22653171a1ea1060d798e530d43d5809fce9a098f"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3419,
+      "coreEvents": 100,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3419,
+      "contextEvents": 140,
+      "contextBytes": 8204,
+      "contextSha256": "3f8abd3edbe987c1d7d9a892fdceebf5de468a3f765da34896628e9f1c0a5216"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3419,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "62",
+  "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

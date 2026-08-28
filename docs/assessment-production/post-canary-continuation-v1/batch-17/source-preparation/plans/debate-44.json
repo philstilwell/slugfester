@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2968,
+  "ledgerBytes": 164319,
+  "ledgerSha256": "1c46e5d7fac3f8733b0404dee19e1bf2f1d4e0086c3c9150370245c16601c0e3",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48067,
+      "contextSha256": "156f763f42ba3ff6f392c82bf9b60882ed0cfbcadd2e57429b1b9a1d7657e00e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50584,
+      "contextSha256": "69ac312705c51af229362a26a5eb15f05802ce6bd62797cc7480ef345810c41f"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50767,
+      "contextSha256": "6596e4f2a74d08f2b0aaa39a07d7a910fda6c44dd8a1728dd2d01a1f282b4b13"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2967,
+      "coreEvents": 468,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2967,
+      "contextEvents": 508,
+      "contextBytes": 28397,
+      "contextSha256": "3cb92dd2ec451f5bdc8c88aeacf74c3005496eeae6d6a68ec5eda9a0a44552a2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2967,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "44",
+  "debateId": "oconnor-biddle-free-will-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

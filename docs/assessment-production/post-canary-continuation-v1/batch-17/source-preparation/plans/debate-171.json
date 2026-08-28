@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2797,
+  "ledgerBytes": 148229,
+  "ledgerSha256": "e7f6d73a06be0a35cf62b72fee277f5d4866c784a5ef0f48ce4f5951ac96b76b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46602,
+      "contextSha256": "6bde0c81da40261daad1d905154a99cc75089a3d0a3d9c9ceab6c895eb53f32f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48862,
+      "contextSha256": "96554e72f53379a63e197cacd63dedfddfd6036ad91b7dd532e39694684303e7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 48448,
+      "contextSha256": "7246f08cbe5acc88807bf6e753f4952667cdaf55f113c0e6cbc2a35aaf31c6c1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2796,
+      "coreEvents": 297,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2796,
+      "contextEvents": 337,
+      "contextBytes": 17665,
+      "contextSha256": "53c663a59dd50c7e12e886522a0ccbcb5ec13856b383ef37de3980edabc62635"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2796,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "171",
+  "debateId": "hitchens-blair-religion-force-good-2010",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection-analysis",
+  "protocolId": "assessment-production-post-canary-batch-17",
+  "status": "seventeenth-post-canary-final-short-batch-selection-analysis-passed-awaiting-standing-authorization",
+  "analyzedAt": "2026-08-28T15:44:53.000Z",
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/selection.json",
+    "bytes": 19641,
+    "sha256": "387413d32baaa4580907e1afd43c8159a3336f5da88b57bb24fd554b06749de7",
+    "status": "seventeenth-post-canary-final-four-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "priorBatchPublication": {
+    "batchNumber": 16,
+    "atomicCommit": "08f3e18f4841c4191b12a7f85b1f3a284fa71177",
+    "completionExecutionSha256": "4636c56c3df5822d4577314f76cb2a67b193457dc8cc4853381bcc1087941f20",
+    "completionAnalysisSha256": "4aa3d26775fa76ea762d21ffb015eca90f0798c9ed136a118fc721f5ccf61f98",
+    "accepted": true
+  },
+  "selectedDebates": [
+    {
+      "debateNumber": "77",
+      "debateId": "feser-oppy-arguments-for-god-2020",
+      "rankOrdinal": 161,
+      "rankSha256": "fcf3b4b3474bef752236c3ca11d3fde3f0213df9b26e89338c3d20e0787823e6"
+    },
+    {
+      "debateNumber": "44",
+      "debateId": "oconnor-biddle-free-will-2025",
+      "rankOrdinal": 162,
+      "rankSha256": "fd3e5577206a4598370ce1977980269504be2e920397a0d0937f19fc16af1e4f"
+    },
+    {
+      "debateNumber": "171",
+      "debateId": "hitchens-blair-religion-force-good-2010",
+      "rankOrdinal": 163,
+      "rankSha256": "fecd61323c0e9aec6f585338c72b83666c4d7840dbc423cd61f16b52972d7413"
+    },
+    {
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "rankOrdinal": 164,
+      "rankSha256": "ff93f1904b6c4b8af8612c8725a2090edffddc5d7dbc4ad656ecfce05e682bc6"
+    }
+  ],
+  "finding": "Successful Batch 16 production publication was authenticated at the pushed atomic commit. Under the user's explicit final-short-batch authorization, the immutable campaign rank selected all four remaining ordinals 161 through 164 as unique pending dyadic debates; all twelve effective source files and four canonical event chains passed without replacement, exhausting the frozen pool.",
+  "decision": {
+    "priorBatchPublicationPrerequisitePassed": true,
+    "deterministicSelectionPassed": true,
+    "selectedSourceGatePassed": true,
+    "replacementsUsed": 0,
+    "sourcePacketPreparationAttempted": false,
+    "modelExecutionAttempted": false,
+    "paidServiceUsed": false,
+    "productionMutationAttempted": false,
+    "nextBatchSelectionAttempted": false
+  },
+  "nextAuthorizedAction": "prepare-batch-17-standing-authorization-and-source-packets-under-user-authorization"
+}

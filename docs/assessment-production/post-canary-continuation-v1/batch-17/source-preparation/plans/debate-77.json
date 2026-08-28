@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3007,
+  "ledgerBytes": 175389,
+  "ledgerSha256": "cdfb8ad56459d8059d0dba2b4f352b62e0e37f345ec218a9a68894691f748adc",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51392,
+      "contextSha256": "680614a243bcf193e431c8cfeb2a2d195c898a2b861cf47451035b6245a6dacc"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52796,
+      "contextSha256": "5dcf79ba992c20cb45e44b54f3130b4d6fcc6e1bf081196e64e61b973830d1c1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52938,
+      "contextSha256": "124b6522970020e56ab2e33576f14d54e493672401325294749cb419dc6e1cd5"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3006,
+      "coreEvents": 507,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3006,
+      "contextEvents": 547,
+      "contextBytes": 32067,
+      "contextSha256": "831410ab8af9093229e5493cd04a8d875e21a0bfb059647c0374a241168919bc"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3006,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "77",
+  "debateId": "feser-oppy-arguments-for-god-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
