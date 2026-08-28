@@ -1,0 +1,2856 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-adjudicated-calculated-scores",
+  "protocolId": "assessment-production-post-canary-batch-17-adjudicated-consensus",
+  "status": "post-canary-batch-17-single-score-pass-stability-gate-passed",
+  "productionCanary": false,
+  "batchNumber": 17,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "sources": {
+    "finalLedgerSha256": "d2589f68ca78bf81c680bbcd647084a73b5baa516829df3c24716bfe188b14f4",
+    "productionReferenceSha256": "955a72b415cdd36cd6aac6b6b7ebfc6b0fbe960203a04b7600dfdf37fe85c80f",
+    "activePolicySha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666"
+  },
+  "formulaBoundary": {
+    "scoringPasses": 1,
+    "rawJudgmentsScoredInPass": 12,
+    "finalJudgmentsEvaluatedFromPass": 4,
+    "initialPassScoresUsedForPostAdjudicationStabilityDiagnosticsOnly": true,
+    "modelCalculatedScores": false,
+    "scoresDerivedOnlyAfterAdjudicatedLedgerLock": true,
+    "moveFormula": "repository v4.1 deterministic seven-dimension formula",
+    "responseFormula": "repository mapping from adjudicated response class and within-class position",
+    "sectionFormula": "importance-weighted move mean",
+    "overallFormula": "section-weighted mean plus eligible burden-completion adjustment, rounded and bounded 0-100"
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "policyVersion": "v2.2",
+    "policyPath": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialProOrConMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialOppositeSideReversalAllowed": false,
+    "agreedInitialTieDirectionConstraint": "none",
+    "disagreedInitialWinnerDirectionConstraint": "none",
+    "unroundedDirectionDiagnosticOnly": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "debates": [
+    {
+      "debateNumber": "77",
+      "debateId": "feser-oppy-arguments-for-god-2020",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "77",
+        "debateId": "feser-oppy-arguments-for-god-2020",
+        "sections": [
+          {
+            "sectionId": "argument-standards-and-audiences",
+            "title": "Argument Standards, Audiences, and Rational Force",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "pro-audience-relative-rational-force",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-value-of-formal-reconstruction",
+                    "importance": 2,
+                    "score": 91
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-argument-reveals-unnoticed-consequences",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-strongest-naturalist-audience-standard",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "argument-versus-theory-comparison",
+            "title": "Particular Arguments and Global Theory Comparison",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-detailed-argument-scrutiny",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-global-theoretical-virtue-comparison",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "con-disputed-claims-before-formal-properties",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "actualization-and-persistence",
+            "title": "Actualization, Persistence, and Noninterference",
+            "weightPercent": 32,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-persistence-restates-actuality",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "pro-precise-actuality-principle",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-universe-potential-without-actualizer",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-persistence-by-nonintervention",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "contemporaneous-explanation",
+            "title": "Microstructure and Contemporaneous Explanatory Dependence",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "pro-contemporaneous-structural-ground",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-redness-microstructure-dependence",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-coordinated-microstructural-persistence",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-joint-realization-of-property-potentials",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "ultimate-physical-level-or-divine-terminus",
+            "title": "Ultimate Physical Level or Purely Actual Terminus",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "pro-purely-actual-divine-terminus",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-ultimate-physical-constitutional-bottom",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-physical-simples-or-quantum-field",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 87.44,
+            "burdenCompletionAdjustment": 0,
+            "score": 87
+          },
+          "con": {
+            "weightedSectionMean": 81.64,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 5,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "77",
+        "debateId": "feser-oppy-arguments-for-god-2020",
+        "sections": [
+          {
+            "sectionId": "argument-standards-and-audiences",
+            "title": "Argument Standards, Audiences, and Rational Force",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "pro-audience-relative-rational-force",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-value-of-formal-reconstruction",
+                    "importance": 2,
+                    "score": 92
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "con-argument-reveals-unnoticed-consequences",
+                    "importance": 2,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "con-strongest-naturalist-audience-standard",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "argument-versus-theory-comparison",
+            "title": "Particular Arguments and Global Theory Comparison",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-detailed-argument-scrutiny",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-global-theoretical-virtue-comparison",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-disputed-claims-before-formal-properties",
+                    "importance": 2,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "actualization-and-persistence",
+            "title": "Actualization, Persistence, and Noninterference",
+            "weightPercent": 32,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-persistence-restates-actuality",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-precise-actuality-principle",
+                    "importance": 3,
+                    "score": 93
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-universe-potential-without-actualizer",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "con-persistence-by-nonintervention",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "contemporaneous-explanation",
+            "title": "Microstructure and Contemporaneous Explanatory Dependence",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "pro-contemporaneous-structural-ground",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-redness-microstructure-dependence",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-coordinated-microstructural-persistence",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-joint-realization-of-property-potentials",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "ultimate-physical-level-or-divine-terminus",
+            "title": "Ultimate Physical Level or Purely Actual Terminus",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "pro-purely-actual-divine-terminus",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-ultimate-physical-constitutional-bottom",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-physical-simples-or-quantum-field",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 86.52,
+            "burdenCompletionAdjustment": 0,
+            "score": 87
+          },
+          "con": {
+            "weightedSectionMean": 80.08,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 7,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "77",
+        "debateId": "feser-oppy-arguments-for-god-2020",
+        "sections": [
+          {
+            "sectionId": "argument-standards-and-audiences",
+            "title": "Argument Standards, Audiences, and Rational Force",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "pro-audience-relative-rational-force",
+                    "importance": 3,
+                    "score": 91
+                  },
+                  {
+                    "moveId": "pro-value-of-formal-reconstruction",
+                    "importance": 2,
+                    "score": 92
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-argument-reveals-unnoticed-consequences",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-strongest-naturalist-audience-standard",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "argument-versus-theory-comparison",
+            "title": "Particular Arguments and Global Theory Comparison",
+            "weightPercent": 16,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-detailed-argument-scrutiny",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-global-theoretical-virtue-comparison",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-disputed-claims-before-formal-properties",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "actualization-and-persistence",
+            "title": "Actualization, Persistence, and Noninterference",
+            "weightPercent": 32,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-persistence-restates-actuality",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "pro-precise-actuality-principle",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-universe-potential-without-actualizer",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-persistence-by-nonintervention",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "contemporaneous-explanation",
+            "title": "Microstructure and Contemporaneous Explanatory Dependence",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "pro-contemporaneous-structural-ground",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-redness-microstructure-dependence",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-coordinated-microstructural-persistence",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "con-joint-realization-of-property-potentials",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "ultimate-physical-level-or-divine-terminus",
+            "title": "Ultimate Physical Level or Purely Actual Terminus",
+            "weightPercent": 14,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-purely-actual-divine-terminus",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-ultimate-physical-constitutional-bottom",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-physical-simples-or-quantum-field",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 86.34,
+            "burdenCompletionAdjustment": 0,
+            "score": 86
+          },
+          "con": {
+            "weightedSectionMean": 81.16,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 5,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "pro",
+        "finalPreservesActiveV22WinnerRule": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 84,
+          "con": 86
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": 2,
+          "con": -5
+        },
+        "finalWinnerMatches": false,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "44",
+      "debateId": "oconnor-biddle-free-will-2025",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "44",
+        "debateId": "oconnor-biddle-free-will-2025",
+        "sections": [
+          {
+            "sectionId": "scope-of-free-will",
+            "title": "The Scope and Locus of the Claimed Freedom",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-scope-free-will-activates-reason",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "pro-scope-degrees-of-mental-activation",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "con-alternate-possibilities-definition",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "causation-and-authorship",
+            "title": "Causation, Randomness, and Agent Authorship",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-causation-distinguish-cause-necessitation",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-authorship-agent-primary-cause",
+                    "importance": 3,
+                    "score": 70
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-causal-dilemma-ultimate-authorship",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-agent-causation-determined-or-random",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "introspection-and-evidence",
+            "title": "Introspection, Experience, and Evidence of Control",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "pro-introspection-regulated-mental-effort",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-evidence-observable-evasion",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-introspection-interpretation-defeasible",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-introspective-confidence-defeasible",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "reason-desire-and-deliberation",
+            "title": "Reason, Desire, and the Mechanics of Deliberation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-deliberation-method-not-content",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-deliberation-values-shaped-over-time",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-deliberative-content-unselected",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-strongest-unchosen-desire",
+                    "importance": 3,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "mind-constraints-and-application",
+            "title": "Consciousness, Constraints, and Applied Choice",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-mind-consciousness-nonmechanical",
+                    "importance": 2,
+                    "score": 64
+                  },
+                  {
+                    "moveId": "pro-constraints-coercion-limits-exercise",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-theory-independent-incoherence",
+                    "importance": 3,
+                    "score": 73
+                  },
+                  {
+                    "moveId": "con-coercive-conscious-choice",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 76.8,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          },
+          "con": {
+            "weightedSectionMean": 79.75,
+            "burdenCompletionAdjustment": 0,
+            "score": 80
+          }
+        },
+        "winner": "con",
+        "winningMargin": 3,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "44",
+        "debateId": "oconnor-biddle-free-will-2025",
+        "sections": [
+          {
+            "sectionId": "scope-of-free-will",
+            "title": "The Scope and Locus of the Claimed Freedom",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-scope-free-will-activates-reason",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-scope-degrees-of-mental-activation",
+                    "importance": 3,
+                    "score": 86
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "con-alternate-possibilities-definition",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "causation-and-authorship",
+            "title": "Causation, Randomness, and Agent Authorship",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-causation-distinguish-cause-necessitation",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "pro-authorship-agent-primary-cause",
+                    "importance": 3,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "con-causal-dilemma-ultimate-authorship",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-agent-causation-determined-or-random",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "introspection-and-evidence",
+            "title": "Introspection, Experience, and Evidence of Control",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "pro-introspection-regulated-mental-effort",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-evidence-observable-evasion",
+                    "importance": 3,
+                    "score": 65
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-introspection-interpretation-defeasible",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-introspective-confidence-defeasible",
+                    "importance": 2,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "reason-desire-and-deliberation",
+            "title": "Reason, Desire, and the Mechanics of Deliberation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-deliberation-method-not-content",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-deliberation-values-shaped-over-time",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "con-deliberative-content-unselected",
+                    "importance": 3,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "con-strongest-unchosen-desire",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "mind-constraints-and-application",
+            "title": "Consciousness, Constraints, and Applied Choice",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "pro-mind-consciousness-nonmechanical",
+                    "importance": 2,
+                    "score": 62
+                  },
+                  {
+                    "moveId": "pro-constraints-coercion-limits-exercise",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-theory-independent-incoherence",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-coercive-conscious-choice",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.55,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "con": {
+            "weightedSectionMean": 82,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 4,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "44",
+        "debateId": "oconnor-biddle-free-will-2025",
+        "sections": [
+          {
+            "sectionId": "scope-of-free-will",
+            "title": "The Scope and Locus of the Claimed Freedom",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-scope-free-will-activates-reason",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "pro-scope-degrees-of-mental-activation",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-alternate-possibilities-definition",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "causation-and-authorship",
+            "title": "Causation, Randomness, and Agent Authorship",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-causation-distinguish-cause-necessitation",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "pro-authorship-agent-primary-cause",
+                    "importance": 3,
+                    "score": 70
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-causal-dilemma-ultimate-authorship",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "con-agent-causation-determined-or-random",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "introspection-and-evidence",
+            "title": "Introspection, Experience, and Evidence of Control",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-introspection-regulated-mental-effort",
+                    "importance": 3,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-evidence-observable-evasion",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-introspection-interpretation-defeasible",
+                    "importance": 3,
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-introspective-confidence-defeasible",
+                    "importance": 2,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "reason-desire-and-deliberation",
+            "title": "Reason, Desire, and the Mechanics of Deliberation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-deliberation-method-not-content",
+                    "importance": 3,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-deliberation-values-shaped-over-time",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-deliberative-content-unselected",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-strongest-unchosen-desire",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "mind-constraints-and-application",
+            "title": "Consciousness, Constraints, and Applied Choice",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "pro-mind-consciousness-nonmechanical",
+                    "importance": 2,
+                    "score": 62
+                  },
+                  {
+                    "moveId": "pro-constraints-coercion-limits-exercise",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-theory-independent-incoherence",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-coercive-conscious-choice",
+                    "importance": 2,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.4,
+            "burdenCompletionAdjustment": 0,
+            "score": 77
+          },
+          "con": {
+            "weightedSectionMean": 81.9,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 5,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesActiveV22WinnerRule": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 79,
+          "con": 84
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -2,
+          "con": -2
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "171",
+      "debateId": "hitchens-blair-religion-force-good-2010",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "171",
+        "debateId": "hitchens-blair-religion-force-good-2010",
+        "sections": [
+          {
+            "sectionId": "net-balance-causation-counterfactual",
+            "title": "Net Balance, Causal Attribution, and Secular Alternatives",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-net-faith-perversion-counterfactual",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "pro-net-wrongdoing-not-unique",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-benefits-reducible-to-humanism",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-good-adherents-do-not-vindicate-doctrine",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "service-welfare-solidarity",
+            "title": "Service, Welfare, and Human Solidarity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-service-faith-health-relief",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-service-faith-motivates-aid",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-secular-womens-empowerment",
+                    "importance": 2,
+                    "score": 74
+                  },
+                  {
+                    "moveId": "con-charity-does-not-offset-doctrinal-harm",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "conflict-peace-reconciliation",
+            "title": "Conflict, Peace, and Reconciliation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-conflict-authentic-faith-bridges-divides",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-conflict-interfaith-sacred-disputes",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-religious-commitments-material-harms",
+                    "importance": 3,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "con-northern-ireland-sectarian-burden",
+                    "importance": 3,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "authority-freedom-pluralism",
+            "title": "Sacred Authority, Freedom, and Pluralism",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "pro-authority-democratic-religious-participation",
+                    "importance": 2,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "pro-authority-repression-not-unique",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "con-punitive-supernatural-authority",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-separation-enables-pluralism",
+                    "importance": 2,
+                    "score": 74
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-reason-correctability",
+            "title": "Scripture, Reason, and Correctability",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-scripture-historical-interpretation",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "con-credulity-doctrinal-harm",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-revelation-breaches-private-boundary",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "meaning-transcendence-moral-agency",
+            "title": "Meaning, Transcendence, and Moral Agency",
+            "weightPercent": 8,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-meaning-humility-obligation-forgiveness",
+                    "importance": 2,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-meaning-purpose-beyond-process",
+                    "importance": 2,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-transcendence-without-supernaturalism",
+                    "importance": 2,
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 81.96,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          },
+          "con": {
+            "weightedSectionMean": 80.8,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          }
+        },
+        "winner": "pro",
+        "winningMargin": 1,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "171",
+        "debateId": "hitchens-blair-religion-force-good-2010",
+        "sections": [
+          {
+            "sectionId": "net-balance-causation-counterfactual",
+            "title": "Net Balance, Causal Attribution, and Secular Alternatives",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-net-faith-perversion-counterfactual",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "pro-net-wrongdoing-not-unique",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 91,
+                "moves": [
+                  {
+                    "moveId": "con-benefits-reducible-to-humanism",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "con-good-adherents-do-not-vindicate-doctrine",
+                    "importance": 3,
+                    "score": 93
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "service-welfare-solidarity",
+            "title": "Service, Welfare, and Human Solidarity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-service-faith-health-relief",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "pro-service-faith-motivates-aid",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-secular-womens-empowerment",
+                    "importance": 2,
+                    "score": 75
+                  },
+                  {
+                    "moveId": "con-charity-does-not-offset-doctrinal-harm",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "conflict-peace-reconciliation",
+            "title": "Conflict, Peace, and Reconciliation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "pro-conflict-authentic-faith-bridges-divides",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-conflict-interfaith-sacred-disputes",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              },
+              "con": {
+                "score": 86,
+                "moves": [
+                  {
+                    "moveId": "con-religious-commitments-material-harms",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-northern-ireland-sectarian-burden",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "authority-freedom-pluralism",
+            "title": "Sacred Authority, Freedom, and Pluralism",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 89,
+                "moves": [
+                  {
+                    "moveId": "pro-authority-democratic-religious-participation",
+                    "importance": 2,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-authority-repression-not-unique",
+                    "importance": 2,
+                    "score": 90
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-punitive-supernatural-authority",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-separation-enables-pluralism",
+                    "importance": 2,
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-reason-correctability",
+            "title": "Scripture, Reason, and Correctability",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-scripture-historical-interpretation",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-credulity-doctrinal-harm",
+                    "importance": 3,
+                    "score": 81
+                  },
+                  {
+                    "moveId": "con-revelation-breaches-private-boundary",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "meaning-transcendence-moral-agency",
+            "title": "Meaning, Transcendence, and Moral Agency",
+            "weightPercent": 8,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-meaning-humility-obligation-forgiveness",
+                    "importance": 2,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-meaning-purpose-beyond-process",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 88,
+                "moves": [
+                  {
+                    "moveId": "con-transcendence-without-supernaturalism",
+                    "importance": 2,
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 83.44,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          },
+          "con": {
+            "weightedSectionMean": 84.88,
+            "burdenCompletionAdjustment": 0,
+            "score": 85
+          }
+        },
+        "winner": "con",
+        "winningMargin": 2,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "171",
+        "debateId": "hitchens-blair-religion-force-good-2010",
+        "sections": [
+          {
+            "sectionId": "net-balance-causation-counterfactual",
+            "title": "Net Balance, Causal Attribution, and Secular Alternatives",
+            "weightPercent": 24,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-net-faith-perversion-counterfactual",
+                    "importance": 3,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "pro-net-wrongdoing-not-unique",
+                    "importance": 3,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-benefits-reducible-to-humanism",
+                    "importance": 3,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "con-good-adherents-do-not-vindicate-doctrine",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "service-welfare-solidarity",
+            "title": "Service, Welfare, and Human Solidarity",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "pro-service-faith-health-relief",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-service-faith-motivates-aid",
+                    "importance": 3,
+                    "score": 88
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-secular-womens-empowerment",
+                    "importance": 2,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-charity-does-not-offset-doctrinal-harm",
+                    "importance": 3,
+                    "score": 84
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "conflict-peace-reconciliation",
+            "title": "Conflict, Peace, and Reconciliation",
+            "weightPercent": 22,
+            "sides": {
+              "pro": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "pro-conflict-authentic-faith-bridges-divides",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "pro-conflict-interfaith-sacred-disputes",
+                    "importance": 3,
+                    "score": 85
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-religious-commitments-material-harms",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-northern-ireland-sectarian-burden",
+                    "importance": 3,
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "authority-freedom-pluralism",
+            "title": "Sacred Authority, Freedom, and Pluralism",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "pro-authority-democratic-religious-participation",
+                    "importance": 2,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "pro-authority-repression-not-unique",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-punitive-supernatural-authority",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-separation-enables-pluralism",
+                    "importance": 2,
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-reason-correctability",
+            "title": "Scripture, Reason, and Correctability",
+            "weightPercent": 10,
+            "sides": {
+              "pro": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "pro-scripture-historical-interpretation",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-credulity-doctrinal-harm",
+                    "importance": 3,
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-revelation-breaches-private-boundary",
+                    "importance": 3,
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "meaning-transcendence-moral-agency",
+            "title": "Meaning, Transcendence, and Moral Agency",
+            "weightPercent": 8,
+            "sides": {
+              "pro": {
+                "score": 79,
+                "moves": [
+                  {
+                    "moveId": "pro-meaning-humility-obligation-forgiveness",
+                    "importance": 2,
+                    "score": 82
+                  },
+                  {
+                    "moveId": "pro-meaning-purpose-beyond-process",
+                    "importance": 2,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-transcendence-without-supernaturalism",
+                    "importance": 2,
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 83.3,
+            "burdenCompletionAdjustment": 0,
+            "score": 83
+          },
+          "con": {
+            "weightedSectionMean": 84.68,
+            "burdenCompletionAdjustment": 0,
+            "score": 85
+          }
+        },
+        "winner": "con",
+        "winningMargin": 2,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": false,
+        "initialWinner": null,
+        "finalPreservesActiveV22WinnerRule": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 82,
+          "con": 92
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": 1,
+          "con": -7
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    },
+    {
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "passA": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "62",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "sections": [
+          {
+            "sectionId": "section-patterns-wholes-logos",
+            "title": "Patterns, Higher-Order Wholes, and the Inference to Logos",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-patterns-ultimate-unity",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-patterns-downward-constraint",
+                    "importance": 3,
+                    "score": 75
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-formal-unity-does-not-entail-logos",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-persistent-wholes-as-structural-abstractions",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-perception-abstraction-science",
+            "title": "Perception, Abstraction, and the Scope of Scientific Explanation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-perception-priority-of-mind",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "pro-science-evolution-teleology-synthesis",
+                    "importance": 2,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-patterns-as-human-mind-dependent",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-species-cognition-natural-continuum",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-genesis-symbolism-history",
+            "title": "Genesis, Symbolic Truth, and Historical Reference",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-genesis-meaningful-orientation",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "pro-genesis-analogy-history",
+                    "importance": 3,
+                    "score": 79
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-symbolic-value-without-belief",
+                    "importance": 2,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-analogy-history-distinction",
+                    "importance": 3,
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-identity",
+            "title": "Resurrection, Personal Identity, and Pattern Persistence",
+            "weightPercent": 21,
+            "sides": {
+              "pro": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-within-transcendence",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "pro-resurrection-pattern-persistence",
+                    "importance": 3,
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-resurrection-makes-observational-claim",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-symbolic-guidance-without-resurrection",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-worship-values-social-meaning",
+            "title": "Worship, Value Hierarchies, and Social Meaning",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "pro-worship-participatory-formation",
+                    "importance": 3,
+                    "score": 79
+                  },
+                  {
+                    "moveId": "pro-secular-fragmentation-sacred-center",
+                    "importance": 2,
+                    "score": 62
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-values-through-cultural-inheritance",
+                    "importance": 2,
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-social-utility-does-not-establish-god",
+                    "importance": 3,
+                    "score": 94
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 75.49,
+            "burdenCompletionAdjustment": 0,
+            "score": 75
+          },
+          "con": {
+            "weightedSectionMean": 87.75,
+            "burdenCompletionAdjustment": 0,
+            "score": 88
+          }
+        },
+        "winner": "con",
+        "winningMargin": 13,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "passB": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "62",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "sections": [
+          {
+            "sectionId": "section-patterns-wholes-logos",
+            "title": "Patterns, Higher-Order Wholes, and the Inference to Logos",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "pro-patterns-ultimate-unity",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-patterns-downward-constraint",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-formal-unity-does-not-entail-logos",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-persistent-wholes-as-structural-abstractions",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-perception-abstraction-science",
+            "title": "Perception, Abstraction, and the Scope of Scientific Explanation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "pro-perception-priority-of-mind",
+                    "importance": 3,
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-science-evolution-teleology-synthesis",
+                    "importance": 2,
+                    "score": 72
+                  }
+                ]
+              },
+              "con": {
+                "score": 85,
+                "moves": [
+                  {
+                    "moveId": "con-patterns-as-human-mind-dependent",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "con-species-cognition-natural-continuum",
+                    "importance": 2,
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-genesis-symbolism-history",
+            "title": "Genesis, Symbolic Truth, and Historical Reference",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-genesis-meaningful-orientation",
+                    "importance": 2,
+                    "score": 88
+                  },
+                  {
+                    "moveId": "pro-genesis-analogy-history",
+                    "importance": 3,
+                    "score": 77
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-symbolic-value-without-belief",
+                    "importance": 2,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "con-analogy-history-distinction",
+                    "importance": 3,
+                    "score": 92
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-identity",
+            "title": "Resurrection, Personal Identity, and Pattern Persistence",
+            "weightPercent": 21,
+            "sides": {
+              "pro": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-within-transcendence",
+                    "importance": 3,
+                    "score": 89
+                  },
+                  {
+                    "moveId": "pro-resurrection-pattern-persistence",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-resurrection-makes-observational-claim",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-symbolic-guidance-without-resurrection",
+                    "importance": 3,
+                    "score": 90
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-worship-values-social-meaning",
+            "title": "Worship, Value Hierarchies, and Social Meaning",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-worship-participatory-formation",
+                    "importance": 3,
+                    "score": 83
+                  },
+                  {
+                    "moveId": "pro-secular-fragmentation-sacred-center",
+                    "importance": 2,
+                    "score": 70
+                  }
+                ]
+              },
+              "con": {
+                "score": 90,
+                "moves": [
+                  {
+                    "moveId": "con-values-through-cultural-inheritance",
+                    "importance": 2,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "con-social-utility-does-not-establish-god",
+                    "importance": 3,
+                    "score": 93
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 77.84,
+            "burdenCompletionAdjustment": 0,
+            "score": 78
+          },
+          "con": {
+            "weightedSectionMean": 90.13,
+            "burdenCompletionAdjustment": 0,
+            "score": 90
+          }
+        },
+        "winner": "con",
+        "winningMargin": 12,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "final": {
+        "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+        "debateNumber": "62",
+        "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+        "sections": [
+          {
+            "sectionId": "section-patterns-wholes-logos",
+            "title": "Patterns, Higher-Order Wholes, and the Inference to Logos",
+            "weightPercent": 28,
+            "sides": {
+              "pro": {
+                "score": 75,
+                "moves": [
+                  {
+                    "moveId": "pro-patterns-ultimate-unity",
+                    "importance": 3,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-patterns-downward-constraint",
+                    "importance": 3,
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-formal-unity-does-not-entail-logos",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-persistent-wholes-as-structural-abstractions",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-perception-abstraction-science",
+            "title": "Perception, Abstraction, and the Scope of Scientific Explanation",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-perception-priority-of-mind",
+                    "importance": 3,
+                    "score": 71
+                  },
+                  {
+                    "moveId": "pro-science-evolution-teleology-synthesis",
+                    "importance": 2,
+                    "score": 71
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-patterns-as-human-mind-dependent",
+                    "importance": 3,
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-species-cognition-natural-continuum",
+                    "importance": 2,
+                    "score": 78
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-genesis-symbolism-history",
+            "title": "Genesis, Symbolic Truth, and Historical Reference",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "pro-genesis-meaningful-orientation",
+                    "importance": 3,
+                    "score": 85
+                  },
+                  {
+                    "moveId": "pro-genesis-analogy-history",
+                    "importance": 3,
+                    "score": 78
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-symbolic-value-without-belief",
+                    "importance": 2,
+                    "score": 86
+                  },
+                  {
+                    "moveId": "con-analogy-history-distinction",
+                    "importance": 3,
+                    "score": 83
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-resurrection-identity",
+            "title": "Resurrection, Personal Identity, and Pattern Persistence",
+            "weightPercent": 21,
+            "sides": {
+              "pro": {
+                "score": 78,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-within-transcendence",
+                    "importance": 3,
+                    "score": 87
+                  },
+                  {
+                    "moveId": "pro-resurrection-pattern-persistence",
+                    "importance": 3,
+                    "score": 68
+                  }
+                ]
+              },
+              "con": {
+                "score": 92,
+                "moves": [
+                  {
+                    "moveId": "con-resurrection-makes-observational-claim",
+                    "importance": 3,
+                    "score": 93
+                  },
+                  {
+                    "moveId": "con-symbolic-guidance-without-resurrection",
+                    "importance": 3,
+                    "score": 91
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "section-worship-values-social-meaning",
+            "title": "Worship, Value Hierarchies, and Social Meaning",
+            "weightPercent": 17,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "pro-worship-participatory-formation",
+                    "importance": 3,
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-secular-fragmentation-sacred-center",
+                    "importance": 2,
+                    "score": 63
+                  }
+                ]
+              },
+              "con": {
+                "score": 87,
+                "moves": [
+                  {
+                    "moveId": "con-values-through-cultural-inheritance",
+                    "importance": 2,
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-social-utility-does-not-establish-god",
+                    "importance": 3,
+                    "score": 94
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 75.63,
+            "burdenCompletionAdjustment": 0,
+            "score": 76
+          },
+          "con": {
+            "weightedSectionMean": 88.09,
+            "burdenCompletionAdjustment": 0,
+            "score": 88
+          }
+        },
+        "winner": "con",
+        "winningMargin": 12,
+        "scoreProtocolId": "assessment-production-post-canary-batch-17-single-deterministic-score-pass"
+      },
+      "consensus": {
+        "initialWinnersAgree": true,
+        "initialWinner": "con",
+        "finalPreservesActiveV22WinnerRule": true
+      },
+      "productionReferenceDiagnosticOnly": {
+        "scores": {
+          "pro": 82,
+          "con": 83
+        },
+        "winner": "con",
+        "finalDeltas": {
+          "pro": -6,
+          "con": 5
+        },
+        "finalWinnerMatches": true,
+        "acceptanceGateInput": false
+      }
+    }
+  ],
+  "stability": {
+    "sideRows": [
+      {
+        "debateNumber": "77",
+        "side": "pro",
+        "passA": 87,
+        "passB": 87,
+        "final": 86,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 1
+      },
+      {
+        "debateNumber": "77",
+        "side": "con",
+        "passA": 82,
+        "passB": 80,
+        "final": 81,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "44",
+        "side": "pro",
+        "passA": 77,
+        "passB": 78,
+        "final": 77,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 1,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "44",
+        "side": "con",
+        "passA": 80,
+        "passB": 82,
+        "final": 82,
+        "absoluteDistanceFromPassA": 2,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "171",
+        "side": "pro",
+        "passA": 82,
+        "passB": 83,
+        "final": 83,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "171",
+        "side": "con",
+        "passA": 81,
+        "passB": 85,
+        "final": 85,
+        "absoluteDistanceFromPassA": 4,
+        "absoluteDistanceFromPassB": 0,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "62",
+        "side": "pro",
+        "passA": 75,
+        "passB": 78,
+        "final": 76,
+        "absoluteDistanceFromPassA": 1,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      },
+      {
+        "debateNumber": "62",
+        "side": "con",
+        "passA": 88,
+        "passB": 90,
+        "final": 88,
+        "absoluteDistanceFromPassA": 0,
+        "absoluteDistanceFromPassB": 2,
+        "outsideInitialRange": 0
+      }
+    ],
+    "scoreBoundsPassed": true,
+    "meanAbsoluteDistanceToInitialPasses": 1.06,
+    "maximumAbsoluteDistanceToEitherInitialPass": 4,
+    "maximumOutsideInitialRange": 1,
+    "thresholds": {
+      "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "policyVersion": "v2.2",
+    "policyPath": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+    "numericPassed": true,
+    "winnerStability": {
+      "rows": [
+        {
+          "debateNumber": "77",
+          "initialWinnersAgree": true,
+          "initialWinner": "pro",
+          "agreedWinningSide": "pro",
+          "finalRoundedWinner": "pro",
+          "finalAdjustedTotals": {
+            "pro": 86.34,
+            "con": 81.16
+          },
+          "finalUnroundedDirection": "pro",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "44",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 77.4,
+            "con": 81.9
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "171",
+          "initialWinnersAgree": false,
+          "initialWinner": null,
+          "agreedWinningSide": null,
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 83.3,
+            "con": 84.68
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        },
+        {
+          "debateNumber": "62",
+          "initialWinnersAgree": true,
+          "initialWinner": "con",
+          "agreedWinningSide": "con",
+          "finalRoundedWinner": "con",
+          "finalAdjustedTotals": {
+            "pro": 75.63,
+            "con": 88.09
+          },
+          "finalUnroundedDirection": "con",
+          "v21WinnerStabilityPassed": true,
+          "proposedV22WinnerStabilityPassed": true,
+          "allowedIntegerRoundedTieCollapse": false,
+          "allowedAgreedInitialTieDrift": false,
+          "publishedOppositeSideReversal": false,
+          "unroundedOppositeSideDirection": false
+        }
+      ],
+      "agreedWinningSideDebates": 3,
+      "agreedWinningSidesPreserved": 3,
+      "agreedInitialTieDebates": 0,
+      "allowedIntegerRoundedTieCollapses": [],
+      "allowedAgreedInitialTieDrifts": [],
+      "publishedOppositeSideReversals": [],
+      "unroundedOppositeSideDirections": [],
+      "passed": true
+    },
+    "integerRoundedTieCollapseAllowed": true,
+    "agreedInitialTieDirectionUnconstrained": true,
+    "disagreedInitialWinnerDirectionUnconstrained": true,
+    "unroundedDirectionDiagnosticOnly": true,
+    "acceptancePassed": true
+  },
+  "totals": {
+    "debates": 4,
+    "finalSides": 8,
+    "scoringPasses": 1,
+    "modelContexts": 0,
+    "retries": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "acceptancePassed": true
+  },
+  "authorization": {
+    "scoreAnalysis": true,
+    "scoreRerun": false,
+    "publicationPacketPreparation": false,
+    "publicationModelExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
