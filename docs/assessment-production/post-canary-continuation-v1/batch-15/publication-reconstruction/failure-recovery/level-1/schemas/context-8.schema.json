@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b15-debate-155-field-repair-2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-15-publication-level-1-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-15-publication-level-1-field-disjoint-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 8
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-155-field-repair-2"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "155"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "turek-shermer-morality-god-science-2015"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "debateNumber",
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "const": "critique"
+              },
+              "debateNumber": {
+                "type": "string",
+                "const": "155"
+              },
+              "moveId": {
+                "type": "string",
+                "const": "con-scientific-reason-moral-method"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "debateNumber",
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "const": "critique"
+              },
+              "debateNumber": {
+                "type": "string",
+                "const": "155"
+              },
+              "moveId": {
+                "type": "string",
+                "const": "con-oppressed-groups-moral-progress"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

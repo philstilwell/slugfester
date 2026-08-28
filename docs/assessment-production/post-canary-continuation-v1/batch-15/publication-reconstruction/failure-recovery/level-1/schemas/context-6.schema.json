@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-b15-debate-98-field-repair-7",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "corrections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-15-publication-level-1-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-15-publication-level-1-field-disjoint-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 6
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-98-field-repair-7"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "98"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "craig-grayling-evil-god-reasonable-2011"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corrections": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "debateNumber",
+              "moveId",
+              "critique"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "const": "critique"
+              },
+              "debateNumber": {
+                "type": "string",
+                "const": "98"
+              },
+              "moveId": {
+                "type": "string",
+                "const": "pro-significant-freedom-no-guarantee"
+              },
+              "critique": {
+                "type": "string",
+                "minLength": 880,
+                "maxLength": 1800
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "debateNumber",
+              "itemId",
+              "explanation"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "const": "noveltyExplanation"
+              },
+              "debateNumber": {
+                "type": "string",
+                "const": "98"
+              },
+              "itemId": {
+                "type": "string",
+                "const": "d98-ai-con-p5"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 45,
+                "maxLength": 500
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
