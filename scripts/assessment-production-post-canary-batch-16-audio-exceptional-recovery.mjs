@@ -261,6 +261,7 @@ async function activate() {
     preparationManifest: { path: paths.preparation, sha256: sha256(preparationBytes) },
     authorization: { path: paths.authorization, sha256: sha256(authorizationBytes) },
     executionTool: { path: toolPath, sha256: sha256(await readFile(toolPath)) },
+    futureOutputPathsExcludedFromSourceHashes: preparation.futureOutputPathsExcludedFromSourceHashes.filter((file) => file !== paths.activation),
   };
   if (shouldWrite) await writeFile(paths.activation, `${JSON.stringify(activation, null, 2)}\n`);
   console.log(JSON.stringify({ status: shouldWrite ? activation.status : "preview", calls: 4, attemptsMaximumBeforeConditionalFallback: 4, oneFallbackEventMaximum: 1, capUsd, worstCaseCumulativeEstimateUsd, paidExecutionActive: shouldWrite }, null, 2));
