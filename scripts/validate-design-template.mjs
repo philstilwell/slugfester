@@ -247,6 +247,11 @@ requireIncludes(
   styles,
   ".logical-extension.logical-extension-editorial-blue"
 );
+requireIncludes(
+  "Debate 14 AI dark middle tier",
+  styles,
+  "linear-gradient(145deg, #173f4c 0%, #123641 58%, #0f3039 100%)"
+);
 requireIncludes("accessibility", styles, ".skip-link");
 requireIncludes("accessibility", styles, "@media (prefers-reduced-motion: reduce)");
 requireIncludes("performance", styles, "content-visibility: auto;");
