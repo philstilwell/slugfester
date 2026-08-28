@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-calibration-promotion-v1-packet",
+  "protocolId": "assessment-production-calibration-promotion-v1",
+  "status": "frozen-calibration-promotion-packet",
+  "debateNumber": "165",
+  "debateId": "craig-rosenberg-faith-god-reasonable-2013",
+  "sourceLocks": {
+    "finalLedger": {
+      "path": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger.json",
+      "sha256": "f9d14ab8e11ba898d6f3c28419dec9e36266e8105b6ba059b5a60d0e01e09b6f",
+      "bytes": 800737
+    },
+    "finalLedgerManifest": {
+      "path": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger-manifest.json",
+      "sha256": "947a9d134c92b87cfc3afe3e59a32d27fe9cc2235d13e086ba03d74bb1cd2000",
+      "bytes": 14384
+    },
+    "calculatedScores": {
+      "path": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/calculated-scores.json",
+      "sha256": "3da342f2ba4d0d4cbf62db2cdbed5288ebba28a4a6b31d6f2a916f560937aaf2",
+      "bytes": 104947
+    },
+    "mergeAudit": {
+      "path": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/merge-audit.json",
+      "sha256": "9e1c13b1cf901b46d111e7d6d1892ce0ff4f4b0926a4ce61f959e245e769cb81",
+      "bytes": 13032
+    },
+    "historicalRenderingAudit": {
+      "path": "docs/calibration/v4.2.21.17.41/hard-route-publication-readiness/rendering-audit.json",
+      "sha256": "c2e20203a1962fc15c84299d1e22c4961cf049d789dee7e5ac8b7b34dfcaa679",
+      "bytes": 2563
+    },
+    "frozenCompiled": {
+      "path": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/compiled/debate-165.json",
+      "sha256": "a7da60eea783c360bb78f41b88706a9c11a76fa44703a7853092cf8b278eaba9",
+      "bytes": 58457
+    },
+    "originalEvents": {
+      "path": ".assessment-cache/captions/bhfkhq-CM84/events.json",
+      "sha256": "780e7094e4403806469f4abc520cd77fb8e4e15aebb85831f52460df38506aad",
+      "bytes": 264090
+    }
+  },
+  "frozenTransformation": {
+    "operation": "replace-preview-id-with-source-debate-id-and-remove-calibration-metadata",
+    "identityReplacement": {
+      "from": "calibration-v42211732-165",
+      "to": "craig-rosenberg-faith-god-reasonable-2013"
+    },
+    "removedTopLevelKeys": [
+      "calibration"
+    ],
+    "candidateOtherwiseByteSemanticEquivalent": true,
+    "scorePasses": 0,
+    "modelCalls": 0,
+    "paidCalls": 0
+  },
+  "outputs": {
+    "candidate": {
+      "path": "docs/assessment-production/calibration-promotion-v1/staged-candidates/debate-165.json",
+      "sha256": "8ce0fbaf7b38af753be6e0275e4433ac711b9d7250d41fbbac2866ef5812ae85",
+      "bytes": 43995
+    },
+    "stagedLedger": {
+      "path": "docs/assessment-production/calibration-promotion-v1/staged-ledgers/debate-165.json",
+      "sha256": "00ff8994530915a4a334a3c768720604826275e123b9fd874bbf4af2bd97d92e",
+      "bytes": 120007
+    },
+    "productionLedger": "docs/assessment-ledgers/craig-rosenberg-faith-god-reasonable-2013.json"
+  }
+}

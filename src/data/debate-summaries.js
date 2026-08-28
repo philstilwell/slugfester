@@ -2238,11 +2238,11 @@ export const debateSummaries = [
     "number": "51",
     "title": "John Lennox vs Peter Atkins: Duelling Professors on Science and God",
     "label": "Design, DNA, and naturalism",
-    "date": "2026-06-01",
+    "date": "2026-08-08",
     "duration": "2 hr 57 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5gMS7WTHnho",
     "motion": "Do science, design, DNA, natural law, morality, and human experience point toward Christian theism or toward an atheistic naturalist account?",
-    "summary": "Lennox argues science points beyond mechanisms to mind and Christian hope; Atkins argues science progressively removes the need for God.",
+    "summary": "Lennox pressed cumulative explanatory gaps and Christian evidence, while Atkins defended methodological economy, emergent natural processes, evolved morality, and evidential restraint.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -2256,27 +2256,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 73
+      "pro": 79,
+      "con": 72
     },
     "sections": [
       {
-        "title": "Apparent design and science"
+        "title": "Design, mechanism, and explanatory method"
       },
       {
-        "title": "DNA and origins"
+        "title": "Life's origin, evolution, and biological information"
       },
       {
-        "title": "Information and mathematics"
+        "title": "Cosmic origin, laws, and life-permitting conditions"
       },
       {
-        "title": "Evolution and probability"
+        "title": "Morality, responsibility, and ultimate hope"
       },
       {
-        "title": "Laws and resurrection"
-      },
-      {
-        "title": "Morality and mortality"
+        "title": "Historical and experiential grounds for Christian belief"
       }
     ]
   },
@@ -2772,11 +2769,11 @@ export const debateSummaries = [
     "number": "63",
     "title": "Kyle Butt vs Michael Shermer: Does the God of the Bible Exist?",
     "label": "Biblical theism and skeptical evidence",
-    "date": "2026-06-07",
+    "date": "2026-08-08",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Z1TgI3cfeM8",
     "motion": "Does the God of the Bible exist, and do causation, design, morality, Jesus, religious diversity, suffering, and evidential standards support or undermine that claim?",
-    "summary": "Butt presents causation, design, morality, and Jesus as cumulative proof of biblical theism; Shermer argues the evidence is insufficient and better handled through skeptical naturalism.",
+    "summary": "Shermer’s calibrated skepticism and natural alternatives consistently challenged Butt’s ambitious causal, design, moral, historical, and suffering-based case for the biblical God.",
     "sides": {
       "pro": {
         "name": "Biblical theism",
@@ -2790,27 +2787,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 73,
-      "con": 84
+      "pro": 71,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Truth, certainty, and evidence"
+        "title": "Knowledge and Evidential Standards"
       },
       {
-        "title": "Cause and supernatural inference"
+        "title": "Cosmic Causation"
       },
       {
-        "title": "Design, fine-tuning, and biology"
+        "title": "Fine-Tuning and Biological Design"
       },
       {
-        "title": "Objective morality and grounding"
+        "title": "Moral Objectivity and Natural Origins"
       },
       {
-        "title": "Jesus, resurrection, and rival religions"
+        "title": "Jesus, Resurrection, and Religious Diversity"
       },
       {
-        "title": "Evil and supernatural explanation"
+        "title": "Suffering and Divine Goodness"
       }
     ]
   },
@@ -3980,11 +3977,11 @@ export const debateSummaries = [
     "number": "90",
     "title": "Jimmy Akin vs Bart Ehrman: Are the Gospels Historically Reliable?",
     "label": "Gospel reliability and contradictions",
-    "date": "2026-06-25",
+    "date": "2026-08-08",
     "duration": "2 hr 13 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Zn7lmu0pek0",
     "motion": "Are the canonical Gospels historically reliable despite alleged contradictions in the birth narratives, resurrection accounts, and Jesus' self-presentation?",
-    "summary": "Akin defends Gospel reliability by separating gist from inerrancy; Ehrman argues that central narrative conflicts make the Gospels documents of faith rather than dependable historical accounts.",
+    "summary": "Akin defended cumulative Gospel reliability through ancient conventions and possible harmonizations; Ehrman pressed consequential narrative conflicts, compositional reshaping, and discontinuous self-presentation.",
     "sides": {
       "pro": {
         "name": "Gospel reliability",
@@ -3998,27 +3995,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 84
+      "pro": 81,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Reliability Standard"
+        "title": "Standard and cumulative case for reliability"
       },
       {
-        "title": "Birth Narratives"
+        "title": "Historical compatibility of the birth narratives"
       },
       {
-        "title": "Resurrection Accounts"
+        "title": "Compatibility of the resurrection accounts"
       },
       {
-        "title": "Accepted Core Claims"
+        "title": "Jesus' self-presentation and divine identity"
       },
       {
-        "title": "Ancient Composition"
-      },
-      {
-        "title": "Closing Burdens"
+        "title": "Ancient composition and transmission"
       }
     ]
   },
@@ -6819,11 +6813,11 @@ export const debateSummaries = [
     "number": "153",
     "title": "Alex O'Connor vs Dr Alex Carter: Free Will and Determinism",
     "label": "Free will and compatibilism",
-    "date": "2026-07-31",
+    "date": "2026-08-08",
     "duration": "1 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=CRpsJgYVl-8",
     "motion": "Do determinism and unchosen desires eliminate free will, or can determined agents be free when acting voluntarily and without coercion?",
-    "summary": "O'Connor argues that no one ultimately authors their wants and therefore lacks free will; Carter contends that voluntary, self-expressive action remains meaningfully free within a determined world.",
+    "summary": "O'Connor pressed ultimate-source objections and practical compassion; Carter more strongly defended graded, attributable agency while preserving interpersonal and normative dimensions.",
     "sides": {
       "pro": {
         "name": "Determinist critique",
@@ -6837,24 +6831,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 76
+      "pro": 79,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Determinism and the Meaning of Freedom"
+        "title": "Determination, randomness, and ultimate control"
       },
       {
-        "title": "Desire, Reasons, and Voluntary Action"
+        "title": "Unchosen desires and voluntary action"
       },
       {
-        "title": "Responsibility, Punishment, and Persons"
+        "title": "Causal sourcehood and first-person agency"
       },
       {
-        "title": "Consciousness, Explanation, and God"
+        "title": "Responsibility, desert, and interpersonal ethics"
       },
       {
-        "title": "Moral Motivation and Human Formation"
+        "title": "Causal explanation and moral meaning"
       }
     ]
   },
@@ -7365,12 +7359,11 @@ export const debateSummaries = [
     "number": "165",
     "title": "William Lane Craig vs Alex Rosenberg: Is Faith in God Reasonable?",
     "label": "Theism, naturalism, and reasonable belief",
-    "date": "2026-08-01",
+    "date": "2026-08-08",
     "duration": "2 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=bhfkhq-CM84",
     "motion": "Is belief in the personal God of classical theism intellectually reasonable?",
-    "summary": "Craig offers a cumulative explanatory case for theism; Rosenberg challenges its scientific and moral premises while defending a stringent naturalism.",
-    "topicCategory": "god-theism-atheism",
+    "summary": "Craig’s strongest replies preserved several theistic inferences, while Rosenberg effectively separated atheism from eliminativism and exposed unresolved explanatory and moral-grounding assumptions.",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -7384,21 +7377,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 68
+      "pro": 81,
+      "con": 76
     },
     "sections": [
       {
-        "title": "Eight explanations and the burden of reply"
+        "title": "Cosmic Origin and Causal Explanation"
       },
       {
-        "title": "Contingency, causation, and quantum events"
+        "title": "Fine-Tuning and Explanatory Standards"
       },
       {
-        "title": "Scientism, intentionality, and rational inference"
+        "title": "Intentionality and Scientific Naturalism"
       },
       {
-        "title": "Evil, divine reasons, and moral force"
+        "title": "Objective Morality and Divine Grounding"
+      },
+      {
+        "title": "Resurrection and Testimonial Evidence"
+      },
+      {
+        "title": "Divine Goodness, Freedom, and Suffering"
       }
     ]
   },

@@ -98,6 +98,11 @@ import {
   POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION,
   validatePostCanaryBatch13SiteLedgerAdapter
 } from "./lib/assessment-production-post-canary-batch-13-compatibility.mjs";
+import {
+  CALIBRATION_PROMOTION_ROOT,
+  CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION,
+  validateCalibrationPromotionSiteLedgerAdapter
+} from "./lib/assessment-production-calibration-promotion-v1.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -208,7 +213,8 @@ export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
     schemaVersion === POST_CANARY_BATCH_16_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_15_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_14_SITE_LEDGER_ADAPTER_VERSION ||
-    schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION
+    schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION
   );
 }
 
@@ -1602,6 +1608,45 @@ export function validatePostCanaryBatch17LedgerAdapterRoute({
   return validation;
 }
 
+export function validateCalibrationPromotionLedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const manifestPath = `${CALIBRATION_PROMOTION_ROOT}/manifest.json`;
+  const packetPath = `${CALIBRATION_PROMOTION_ROOT}/packets/debate-${debate.number}.json`;
+  const manifestText = readFileSync(new URL(`../${manifestPath}`, import.meta.url), "utf8");
+  const packetText = readFileSync(new URL(`../${packetPath}`, import.meta.url), "utf8");
+  const manifest = JSON.parse(manifestText);
+  const packet = JSON.parse(packetText);
+  const lock = manifest.debates?.find((item) => item.debateNumber === debate.number);
+  if (
+    manifest.status !== "frozen-calibration-promotion-manifest" ||
+    manifest.batch18Selected !== false ||
+    !lock ||
+    lock.debateId !== debate.id ||
+    lock.packet.path !== packetPath ||
+    sha256(packetText) !== lock.packet.sha256 ||
+    packet.status !== "frozen-calibration-promotion-packet" ||
+    packet.debateNumber !== debate.number ||
+    packet.debateId !== debate.id ||
+    packet.outputs.productionLedger !== `docs/assessment-ledgers/${debate.id}.json` ||
+    packet.outputs.stagedLedger.sha256 !== lock.stagedLedger.sha256 ||
+    sha256(ledgerText) !== lock.stagedLedger.sha256
+  ) {
+    throw new Error("calibration-promotion adapter, packet, or manifest differs from its frozen route");
+  }
+  const validation = validateCalibrationPromotionSiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    expectedSourceLocks: packet.sourceLocks
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("calibration-promotion assessments require an AI Extension");
+  }
+  return validation;
+}
+
 function validateReassessmentLedger(debate, path) {
   const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
@@ -1985,6 +2030,24 @@ function validateReassessmentLedger(debate, path) {
       addError(
         [...path, "assessmentRubric"],
         `Batch 17 ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
+  if (
+    ledger.schemaVersion === CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION
+  ) {
+    try {
+      validateCalibrationPromotionLedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `Calibration promotion ledger validation failed: ${error.message}`
       );
     }
     return;

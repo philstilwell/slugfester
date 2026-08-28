@@ -4,6 +4,8 @@
 
 The reassessment campaign closed successfully on `main` at commit `055bd337e35256e532a5c188851f79d0daa7ba09`. It covers 174 unique debates: the 10-debate production checkpoint and all 164 debates in the frozen continuation pool. Batches 1–16 contain ten debates each; Batch 17 contains the final four. The frozen pool is exhausted.
 
+After closure, a separately authorized calibration-promotion release published Debates 51, 63, 90, 153, and 165 from their existing frozen calibration judgments and single score pass. It made no new judgment or score calculation and is not Batch 18. Production now contains 179 authenticated assessment ledgers: the unchanged 174-debate campaign population plus these five supplemental records. Its durable records are the [promotion report](../calibration-promotion-v1/report.md), [manifest](../calibration-promotion-v1/manifest.json), and [validation summary](../calibration-promotion-v1/validation-summary.json).
+
 Do not select Batch 18, create a Batch 18 directory, or treat ordinary site maintenance as another reassessment batch. A future reassessment campaign would require a new, explicitly authorized protocol and a new evidence namespace.
 
 The authoritative closure records are the [report](../campaign-closure-v1/report.md), [manifest](../campaign-closure-v1/manifest.json), and [validation summary](../campaign-closure-v1/validation-summary.json). The frozen production workflow remains documented in [the assessment-production workflow](../../assessment-production-workflow.md).
@@ -28,6 +30,14 @@ The full replay performs every repository-only check and also rehashes the local
 
 `npm run check` runs the normal repository suite and then invokes the repository-only closure replay through the standard `postcheck` step. Some earlier checks in that suite also inspect the local transcript corpus, so use the dedicated repository-only command when testing a truly cache-free checkout.
 
+The same lifecycle also runs the calibration-promotion repository-only check. It can be invoked directly with:
+
+```bash
+npm run assessment:calibration-promotion:repository:check
+```
+
+On the campaign workstation, `npm run assessment:calibration-promotion:check` additionally rehashes the five ignored local event files used to replay the frozen calibration score ledgers.
+
 Neither command calls a model, a transcription service, or any paid service. Never run the closure checker with `--write` during maintenance; that option reconstructs the frozen closure report and manifest and belongs only to the completed closure procedure.
 
 ## Immutable evidence
@@ -36,6 +46,7 @@ Treat these campaign materials as immutable:
 
 - frozen selections, inventories, judgments, disagreements, adjudications, final ledgers, calculated-score artifacts, publication candidates, production locks, and compatibility records under the checkpoint and Batch 1–17 archive;
 - the 174 campaign entries in `src/data/debates.js` and their production ledgers in `docs/assessment-ledgers/`;
+- the five promoted calibration entries, their production ledgers, staged candidates, source locks, rendering evidence, and supplemental promotion records;
 - canonical source transcripts, events, manifests, compact ledgers, and every retained source hash;
 - paid-audio source clips, transcripts, attributions, hashes, usage records, and failure records;
 - rendering audits, evidence JSON, required screenshots, hashes, dimensions, and preserved partial-failure screenshots;

@@ -324,9 +324,22 @@ assert.equal(batch17Selection.eligibility.remainingUnselectedCount, 0);
 assert.equal(batch17Selection.eligibility.frozenPoolExhaustedBySelection, true);
 assert.equal(sha256(serializedJson(rankedPool)), batch17Selection.eligibility.fullRankedCensusSha256);
 
-const productionLedgerFiles = readdirSync(path.join(ROOT, "docs/assessment-ledgers")).filter((file) => file.endsWith(".json")).sort();
-assert.equal(productionLedgerFiles.length, 174, "production-ledger count differs from verified campaign population");
-assert.deepEqual(new Set(productionLedgerFiles.map((file) => file.replace(/\.json$/, ""))), new Set(selectedIds), "production-ledger identities differ from selections");
+const allProductionLedgerFiles = readdirSync(path.join(ROOT, "docs/assessment-ledgers")).filter((file) => file.endsWith(".json")).sort();
+const selectedIdSet = new Set(selectedIds);
+const productionLedgerFiles = allProductionLedgerFiles.filter((file) => selectedIdSet.has(file.replace(/\.json$/, "")));
+const supplementalLedgerFiles = allProductionLedgerFiles.filter((file) => !selectedIdSet.has(file.replace(/\.json$/, "")));
+assert.equal(productionLedgerFiles.length, 174, "campaign production-ledger count differs from verified campaign population");
+assert.deepEqual(new Set(productionLedgerFiles.map((file) => file.replace(/\.json$/, ""))), selectedIdSet, "campaign production-ledger identities differ from selections");
+if (supplementalLedgerFiles.length > 0) {
+  const promotionManifest = json("docs/assessment-production/calibration-promotion-v1/manifest.json");
+  assert.equal(promotionManifest.status, "frozen-calibration-promotion-manifest");
+  assert.equal(promotionManifest.batch18Selected, false);
+  assert.deepEqual(
+    new Set(supplementalLedgerFiles),
+    new Set(promotionManifest.debates.map((item) => `${item.debateId}.json`)),
+    "non-campaign production ledgers are not authenticated by the calibration-promotion supplement"
+  );
+}
 
 const renderingAuditPaths = [
   `${checkpointRoot}/rendering-verification-remedy-v9/rendering-audit.json`,

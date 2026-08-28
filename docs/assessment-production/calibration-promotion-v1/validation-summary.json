@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-assessment-production-calibration-promotion-v1-validation-summary",
+  "protocolId": "assessment-production-calibration-promotion-v1",
+  "status": "passed-complete-calibration-promotion-validation",
+  "scope": {
+    "debates": ["51", "63", "90", "153", "165"],
+    "productionDebates": 195,
+    "campaignProductionLedgers": 174,
+    "supplementalProductionLedgers": 5,
+    "totalProductionLedgers": 179,
+    "batch18Selected": false
+  },
+  "frozenEvidence": {
+    "finalizationMoves": 100,
+    "sourceHashReferencesChecked": 86,
+    "scorePassesBeforePromotion": 1,
+    "scorePassesDuringPromotion": 0,
+    "modelCalls": 0,
+    "paidCalls": 0
+  },
+  "rendering": {
+    "debates": 5,
+    "viewports": 10,
+    "screenshots": 20,
+    "pointerTests": 10,
+    "keyboardEnterTests": 10,
+    "keyboardSpaceTests": 10,
+    "runtimeFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "viewportRetries": 0
+  },
+  "validation": {
+    "productionDebateValidator": "passed-195-debates",
+    "promotionIntegrityAudit": "passed",
+    "campaignClosureFullReplay": "passed",
+    "campaignClosureRepositoryOnlyReplay": "passed",
+    "completeRepositorySuite": "passed",
+    "generatedPageComparison": "passed-380-files",
+    "transcriptValidation": "passed-195-of-195",
+    "designTemplateValidation": "passed",
+    "markdownLinkValidation": "passed-571-files-31-relative-links",
+    "gitDiffCheck": "passed"
+  },
+  "costs": {
+    "directIncrementalCostUsd": 0,
+    "chatgptSubscriptionWorkIncrementalCostUsd": 0
+  },
+  "preservedLimitation": "The historical calibration readiness wrapper locks a pre-campaign stylesheet hash and is intentionally not rewritten; fresh production rendering supplies the current visual gate."
+}

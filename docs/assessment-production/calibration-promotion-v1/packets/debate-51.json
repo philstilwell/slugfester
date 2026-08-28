@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-calibration-promotion-v1-packet",
+  "protocolId": "assessment-production-calibration-promotion-v1",
+  "status": "frozen-calibration-promotion-packet",
+  "debateNumber": "51",
+  "debateId": "lennox-atkins-duelling-professors-2012",
+  "sourceLocks": {
+    "finalLedger": {
+      "path": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger.json",
+      "sha256": "f9d14ab8e11ba898d6f3c28419dec9e36266e8105b6ba059b5a60d0e01e09b6f",
+      "bytes": 800737
+    },
+    "finalLedgerManifest": {
+      "path": "docs/calibration/v4.2.21.17.29/hard-route-final-ledger/final-ledger-manifest.json",
+      "sha256": "947a9d134c92b87cfc3afe3e59a32d27fe9cc2235d13e086ba03d74bb1cd2000",
+      "bytes": 14384
+    },
+    "calculatedScores": {
+      "path": "docs/calibration/v4.2.21.17.30/hard-route-single-score-pass/calculated-scores.json",
+      "sha256": "3da342f2ba4d0d4cbf62db2cdbed5288ebba28a4a6b31d6f2a916f560937aaf2",
+      "bytes": 104947
+    },
+    "mergeAudit": {
+      "path": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/merge-audit.json",
+      "sha256": "9e1c13b1cf901b46d111e7d6d1892ce0ff4f4b0926a4ce61f959e245e769cb81",
+      "bytes": 13032
+    },
+    "historicalRenderingAudit": {
+      "path": "docs/calibration/v4.2.21.17.41/hard-route-publication-readiness/rendering-audit.json",
+      "sha256": "c2e20203a1962fc15c84299d1e22c4961cf049d789dee7e5ac8b7b34dfcaa679",
+      "bytes": 2563
+    },
+    "frozenCompiled": {
+      "path": "docs/calibration/v4.2.21.17.40/hard-route-publication-finalization/compiled/debate-51.json",
+      "sha256": "a33da4453064f7827a4f1a5599040a46082ab82a64fd4d0b7f5f07f823afdeb5",
+      "bytes": 61129
+    },
+    "originalEvents": {
+      "path": ".assessment-cache/captions/5gMS7WTHnho/events.json",
+      "sha256": "ba4e709a457be94b406cb8fb1d5d8aac1579e2b8c0da9c7768efad542bb605d9",
+      "bytes": 403110
+    }
+  },
+  "frozenTransformation": {
+    "operation": "replace-preview-id-with-source-debate-id-and-remove-calibration-metadata",
+    "identityReplacement": {
+      "from": "calibration-v42211732-51",
+      "to": "lennox-atkins-duelling-professors-2012"
+    },
+    "removedTopLevelKeys": [
+      "calibration"
+    ],
+    "candidateOtherwiseByteSemanticEquivalent": true,
+    "scorePasses": 0,
+    "modelCalls": 0,
+    "paidCalls": 0
+  },
+  "outputs": {
+    "candidate": {
+      "path": "docs/assessment-production/calibration-promotion-v1/staged-candidates/debate-51.json",
+      "sha256": "08cf11a6c8256dcafe41510a5198f918592647f58749b25c1466c70e1c7f4e29",
+      "bytes": 44124
+    },
+    "stagedLedger": {
+      "path": "docs/assessment-production/calibration-promotion-v1/staged-ledgers/debate-51.json",
+      "sha256": "8c00d7f175deba3d09e6b10d23b597860e5154be46d1d6fd077c498778b23a3b",
+      "bytes": 114972
+    },
+    "productionLedger": "docs/assessment-ledgers/lennox-atkins-duelling-professors-2012.json"
+  }
+}

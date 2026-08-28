@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0-assessment-production-calibration-promotion-v1-controller-startup-record",
+  "protocolId": "assessment-production-calibration-promotion-v1",
+  "status": "preserved-pre-viewport-controller-startup",
+  "recordedAt": "2026-08-28T21:14:05Z",
+  "message": "The first rendering command attempted to attach to the named Playwright CLI session before opening that session. The controller stopped before creating a measured page, attempting a viewport, or writing a screenshot.",
+  "technicalMessage": "The browser 'calibration-promotion-v1-rendering' is not open, please run open first",
+  "diagnosedCorrection": "Explicitly open the isolated named browser session at about:blank before invoking run-code.",
+  "viewportsAttempted": 0,
+  "screenshotsWritten": 0,
+  "paidCalls": 0,
+  "directIncrementalCostUsd": 0
+}
