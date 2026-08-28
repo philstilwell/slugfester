@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-publication-analysis",
+  "protocolId": "assessment-production-post-canary-batch-15-publication-reconstruction",
+  "status": "post-canary-batch-15-publication-output-gate-failed",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "sources": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/execution-activation.json",
+    "activationSha256": "140d77d80e6184a66ec154e7ff90105c823a6d58fd07abd490db8aec18b1b158",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-15/publication-reconstruction/model-execution.json",
+    "executionSha256": "3d2b587643ab0bdc1123397a63a24c9f429ec177518e4b67b4fda174a8f404b9"
+  },
+  "execution": {
+    "contextsPlanned": 10,
+    "contextsAttempted": 10,
+    "contextsUnattempted": 0,
+    "validContexts": 6,
+    "invalidContexts": 4,
+    "attempts": 10,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 1701575,
+    "aggregateModelElapsedMs": 2852007
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "39",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "a733250bbf73b675894ad1b4a3287f02248c9ae08c41198fe07bee3c8b12c2af",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "39",
+        "moves": 23,
+        "critiques": 23,
+        "minimumCritiqueCharacters": 881,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "48",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "bfbd7c7c8d87a811f96c86dde42b224284433c8b9532ffa17e3d063589c3835c",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "48",
+        "moves": 15,
+        "critiques": 15,
+        "minimumCritiqueCharacters": 973,
+        "tags": 1,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "23",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "b38e41d5fc20beb19fc467a53c3f038eead38656f5291d981e151dcbbb6fca4c",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "23",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 915,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "162",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "53d25850e36cf0cbae23b649e1442f6d36e2865991ef2a2e516b503de9162e7c",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "162",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 927,
+        "tags": 2,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "86",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "d6ef148d61d77d851979357c4e0a0175995e5e618b88ec775bdfe4241a541cfc",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "86",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 981,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "159",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "03315b0b2e07c4523052673912831a1bdd0b0d79107e0b552873cdf4886472ce",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "159",
+        "moves": 18,
+        "critiques": 18,
+        "minimumCritiqueCharacters": 961,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "128",
+      "status": "timed-out",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "98",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "155",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "178",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "totals": {
+    "debates": 10,
+    "lockedMoves": 191,
+    "critiques": 116,
+    "exactSourceQuotes": 12,
+    "overallCommentarySides": 12,
+    "aiExtensionSides": 12,
+    "modelContexts": 10,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "paidServiceCalls": 0,
+    "publicationRepairs": 0,
+    "publicationFinalizations": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "integrity": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRemainedImmutable": true,
+    "everyAcceptedOutputReplayedDeterministically": true,
+    "aiExtensionExcludedFromScores": true,
+    "retriesPerformed": false,
+    "timeoutExtensionsPerformed": false,
+    "correctionContextsPerformed": false,
+    "publicationFinalized": false,
+    "productionMutated": false
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "repairPacketPreparation": false,
+    "repairModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "standing-authorization-permits-batch-15-publication-failure-diagnosis"
+}
