@@ -149,7 +149,11 @@ if (mode === "--run") {
   const activation = await readJson(files.activation);
   assert.equal(activation.status, "frozen-nine-unattempted-batch-16-publication-contexts-authorized");
   for (const [file, digest] of Object.entries(activation.sourceHashes)) assert.equal(sha256(await readFile(path.resolve(file))), digest, `source changed: ${file}`);
-  for (const future of activation.futureOutputs) assert(!(await exists(future)), `future output exists: ${future}`);
+  for (const future of activation.futureOutputs) {
+    if (future !== files.activation) {
+      assert(!(await exists(future)), `future output exists: ${future}`);
+    }
+  }
   const codex = "/Applications/ChatGPT.app/Contents/Resources/codex";
   const authSource = path.join(os.homedir(), ".codex", "auth.json");
   let activeContexts = 0;

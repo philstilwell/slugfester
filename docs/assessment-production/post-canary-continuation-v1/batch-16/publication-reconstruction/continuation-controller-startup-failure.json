@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-continuation-controller-startup-failure",
+  "status": "preserved-corrected-before-any-model-context-attempt",
+  "failedAt": "2026-08-28T14:12:08Z",
+  "checkpointCommit": "61a94a64c8dc23a1485472284b80487f5ee982d7",
+  "failure": {
+    "message": "AssertionError: future output exists: docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/continuation-execution-activation.json",
+    "classification": "controller-future-output-classification-defect",
+    "contextsAttempted": 0,
+    "modelCallsStarted": 0,
+    "attemptsConsumed": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "preservedCommittedSources": {
+    "controllerSha256": "380cb9b3e8c096f07cd467cf7986d7bbd049893cad791f9fb1ff3843cadef7dc",
+    "preparationManifestSha256": "a86b53314a86764fa5e3361b5dbe1f3e70cfe2377b80f4a537bb66febfc25833",
+    "activationSha256": "81adf583172340710c1258392ea9b17ab13a389305a99ec755e7c8f20a77028a"
+  },
+  "deterministicCorrection": {
+    "scope": "exclude the already-required activation record from the run-time future-output absence loop",
+    "controllerSha256": "e62c49d4e154f23edc7defbc8cbd9b0d5d8e484ddc16f76ea2741225d5451f78",
+    "preparationManifestSha256": "4f6ae3478bbccd262b17e29b187d479b444625780da8b80522a01b9769fce29d",
+    "selectionChanged": false,
+    "packetOrSchemaChanged": false,
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "modelExecutionBoundaryChanged": false
+  },
+  "nextAuthorizedAction": "restart-the-same-frozen-nine-context-publication-continuation-gate"
+}
