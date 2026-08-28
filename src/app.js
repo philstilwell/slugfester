@@ -2417,12 +2417,10 @@ function renderSectionScore(label, score) {
 }
 
 function renderArgument(argument, tone, debate, section, sideKey) {
-  if (!argument) {
-    return `<article class="argument empty" aria-hidden="true"></article>`;
-  }
+  if (!argument) return "";
 
   return `
-    <article class="argument ${tone}">
+    <article class="argument ${tone} side-${sideKey}">
       <div class="argument-meta">
         <span>${renderTimestampLink(argument.time, debate.youtubeUrl, `Open YouTube source at ${argument.time}`)}</span>
         <span>${escapeHtml(argument.role)}</span>

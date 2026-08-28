@@ -3246,6 +3246,14 @@ a {
   padding: 14px;
 }
 
+.argument.side-pro {
+  grid-column: 1;
+}
+
+.argument.side-con {
+  grid-column: 2;
+}
+
 .argument::before {
   content: "";
   position: absolute;
@@ -4292,7 +4300,9 @@ a {
     --avatar-size: 44px;
   }
 
-  .argument {
+  .argument.side-pro,
+  .argument.side-con {
+    grid-column: 1;
     min-height: auto;
   }
 

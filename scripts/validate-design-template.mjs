@@ -119,6 +119,8 @@ requireIncludes("app timestamp links", app, 'class="timestamp-link"');
 requireIncludes("app timestamp links", app, "renderTimestampLink(section.timebox");
 requireIncludes("app timestamp links", app, "renderTimestampLink(argument.time");
 requireIncludes("app guide", app, "◉ Deeper critiques");
+requireIncludes("app argument columns", app, "side-${sideKey}");
+requireExcludes("app argument placeholders", app, 'class="argument empty"');
 requireIncludes("app reference route", app, "referencePathRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
@@ -231,6 +233,13 @@ requireIncludes("reference links", styles, ".reference-debate-return");
 requireIncludes("reference anchors", styles, "scroll-margin-top: 92px;");
 requireIncludes("argument grid", styles, ".exchange-grid");
 requireIncludes("argument grid", styles, "align-items: start;");
+requireIncludes("argument columns", styles, ".argument.side-pro");
+requireIncludes("argument columns", styles, ".argument.side-con");
+requireIncludes(
+  "mobile argument columns",
+  styles,
+  ".argument.side-pro,\n  .argument.side-con {\n    grid-column: 1;"
+);
 requireIncludes("argument cards", styles, "min-height: 0;");
 requireIncludes("accessibility", styles, ".skip-link");
 requireIncludes("accessibility", styles, "@media (prefers-reduced-motion: reduce)");
