@@ -1,0 +1,1784 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "98",
+  "debateId": "craig-grayling-evil-god-reasonable-2011",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-theistic-reasonableness",
+      "side": "pro",
+      "description": "Establish that the existence of severe natural and moral evil does not make belief in an omnipotent, perfectly good God unreasonable when logical compatibility, human epistemic limits, theistic purposes, and the wider evidential context are considered together.",
+      "successCriteria": "The route succeeds if it supplies a coherent basis for God and evil to coexist, blocks the inference from apparently gratuitous suffering to divine improbability, and explains why the full evidential and doctrinal context can preserve rational theistic belief.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-reasonableness",
+        "tier": "motion",
+        "description": "Connect the answers to logical and evidential evil with the conclusion that theistic belief remains reasonable on the total evidence."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-logical-compatibility",
+          "tier": "central",
+          "description": "Show that omnipotence and perfect goodness do not logically contradict evil when significant freedom or morally sufficient permission is possible."
+        },
+        {
+          "bridgeId": "pro-central-epistemic-limits",
+          "tier": "central",
+          "description": "Show that limited human knowledge of causal consequences and providential purposes undercuts confident judgments that suffering is gratuitous."
+        },
+        {
+          "bridgeId": "pro-central-theistic-context",
+          "tier": "central",
+          "description": "Show how knowledge of God, freely accepted salvation, eternal life, or other divine purposes can alter the expected significance of earthly suffering."
+        },
+        {
+          "bridgeId": "pro-central-total-evidence",
+          "tier": "central",
+          "description": "Require the probability of God to be assessed against the whole body of relevant evidence rather than the existence of evil in isolation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-objective-morality",
+          "tier": "subsidiary",
+          "description": "Explain how judgments that suffering is objectively evil may contribute to an affirmative moral case for a transcendent foundation."
+        },
+        {
+          "bridgeId": "pro-subsidiary-providential-complexity",
+          "tier": "subsidiary",
+          "description": "Account for how complex contingencies could serve divine purposes while preserving meaningful creaturely freedom."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-secular-objection",
+      "side": "con",
+      "description": "Establish that the scale and character of suffering make belief in an almighty, all-loving, and humanly concerned deity unreasonable because proposed appeals to freedom, unknown goods, salvation, or wider evidence do not reconcile those attributes with the actual world.",
+      "successCriteria": "The route succeeds if observed suffering provides a warranted adverse inference about divine goodness or power, the principal theistic defenses fail to explain a feasible better world or justify extreme harms, and secular accounts preserve moral judgment without God.",
+      "motionBridge": {
+        "bridgeId": "con-motion-unreasonableness",
+        "tier": "motion",
+        "description": "Connect the cumulative force of natural and moral suffering with the conclusion that belief in the relevant deity is unreasonable."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-world-attributes-conflict",
+          "tier": "central",
+          "description": "Show why tsunamis, childhood cancer, and comparable harms conflict evidentially with combined omnipotence, benevolence, and concern for conscious creatures."
+        },
+        {
+          "bridgeId": "con-central-better-world-feasibility",
+          "tier": "central",
+          "description": "Require an explanation of why an omnipotent God could not create significantly free creatures in a world containing substantially less natural and moral evil."
+        },
+        {
+          "bridgeId": "con-central-moral-knowledge",
+          "tier": "central",
+          "description": "Defend ordinary moral knowledge as adequate to judge extreme suffering despite uncertainty about remote causal consequences or alleged unknown goods."
+        },
+        {
+          "bridgeId": "con-central-defense-coherence",
+          "tier": "central",
+          "description": "Test whether appeals to inability, permissive greater goods, salvation, and mystery jointly preserve a coherent account of divine power and goodness."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-secular-morality",
+          "tier": "subsidiary",
+          "description": "Ground moral obligations and humane concern in facts about sentience, needs, suffering, sympathy, and shared human experience without invoking God."
+        },
+        {
+          "bridgeId": "con-subsidiary-religious-pluralism",
+          "tier": "subsidiary",
+          "description": "Address how religious diversity and exclusivist salvation claims affect proposed salvific explanations of indiscriminate suffering."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-logical-compatibility-and-freedom",
+      "title": "Logical Compatibility, Freedom, and Better Possible Worlds",
+      "weightPercent": 22,
+      "rationale": "This issue tests whether God and evil are logically consistent and whether significant freedom or divine feasibility can explain why a world with substantially less evil was not actualized."
+    },
+    {
+      "sectionId": "section-evidential-evil-and-epistemic-limits",
+      "title": "Evidential Evil, Unknown Reasons, and Human Moral Knowledge",
+      "weightPercent": 25,
+      "rationale": "This central clash determines whether apparently gratuitous suffering supports an adverse probability judgment or whether limited knowledge of consequences and divine reasons defeats that inference."
+    },
+    {
+      "sectionId": "section-divine-purposes-and-recompense",
+      "title": "Divine Purposes, Salvation, and Eternal Recompense",
+      "weightPercent": 19,
+      "rationale": "This issue examines whether knowledge of God, salvation, providential purposes, and an afterlife make earthly suffering less surprising, and whether those claims adequately address severe and indiscriminate harms."
+    },
+    {
+      "sectionId": "section-divine-attributes-and-total-evidence",
+      "title": "Divine Attributes, the Actual World, and Total Evidence",
+      "weightPercent": 20,
+      "rationale": "This section connects the character of the observed world and the wider evidential context to the motion-level question of whether belief in an omnipotent, loving, and concerned deity is reasonable."
+    },
+    {
+      "sectionId": "section-objective-morality-without-or-with-god",
+      "title": "Objective Morality and the Foundation of Judgments About Evil",
+      "weightPercent": 14,
+      "rationale": "This issue tests whether calling suffering objectively evil supports a transcendent moral foundation or whether natural facts about sentience, needs, and harm can ground moral obligations independently."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-logical-hidden-premises",
+      "sectionId": "section-logical-compatibility-and-freedom",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The logical problem of evil fails because omnipotence and perfect goodness do not themselves entail the hidden premises required to make God's existence logically inconsistent with evil.",
+      "sourceSpan": {
+        "startEvent": 101,
+        "endEvent": 249
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Craig immediately before this uninterrupted opening address, and Grayling is introduced only after it ends.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-logical-compatibility"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly develops the logical-compatibility bridge by challenging the unstated necessity premises in the logical problem of evil.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it explicitly identifies and attacks the decisive validity assumptions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition, modal scope, and distinction between omnipotence and logical impossibility are explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The asserted defeat is appropriately limited to the logical argument and follows if the alleged necessary premises are not necessary."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The hidden premises might follow from stronger accounts of omnipotence and perfect goodness.",
+        "decisiveQualification": "A logical contradiction requires those stronger premises to be necessary, not merely plausible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The modal inference is explicit and directly resolves the central validity challenge to logical incompatibility."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The warrant is specifically developed through the free-will and logical-impossibility distinction, with only bounded compression."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It occupies the top of the central tier because it directly supplies the logical-compatibility bridge."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move addresses the strongest modal form of the objection and preserves the decisive necessity qualification."
+        }
+      },
+      "evidenceBasis": "Craig states that both hidden assumptions must be necessarily true, then argues free will and logical limits on omnipotence show they are not necessary.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-epistemic-limits-providence",
+      "sectionId": "section-evidential-evil-and-epistemic-limits",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Finite human observers cannot reliably infer that God probably lacks morally sufficient reasons for evil because they cannot survey providential history, remote consequences, or all causally relevant facts.",
+      "sourceSpan": {
+        "startEvent": 250,
+        "endEvent": 321
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Craig's continuous opening address and uses the same first-person argumentative framing established after his introduction.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-epistemic-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly develops the epistemic-limits bridge by denying that finite observers can make the required inductive probability assessment.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly states the epistemic challenge and its consequence for the probabilistic inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable as a limitation on inductive assessment, with stable terms and an explicit probabilistic scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The epistemic limitation is relevant, but calling the probabilistic problem insuperable is stronger than the excerpted warrant establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Finite observers can still make defeasible probability judgments without surveying every remote consequence.",
+        "decisiveQualification": "The move must show unusually severe uncertainty, not merely the ordinary incompleteness present in induction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference is coherent, though the bridge from limited survey capacity to severe probability restraint remains partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The source states the epistemic limitation but compresses the verification that this limitation defeats rather than merely weakens induction."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable epistemic-limits bridge and therefore sits high within the central tier."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "It recognizes the probabilistic form but compresses the strongest reply that limited knowledge can still support defeasible inference."
+        }
+      },
+      "evidenceBasis": "Craig says observers are not positioned to assess inductively whether God lacks morally sufficient reasons for the evils that occur.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-knowledge-god-eternal-recompense",
+      "sectionId": "section-divine-purposes-and-recompense",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Christian doctrines make evil less surprising because earthly happiness is not life's primary purpose, suffering may contribute to knowledge of God, and eternal fulfillment can outweigh temporal suffering.",
+      "sourceSpan": {
+        "startEvent": 322,
+        "endEvent": 377
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig continues without a speaker change, explicitly presenting this material as the second numbered component of his probabilistic response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-theistic-context"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the theistic-context bridge by explaining how knowledge of God, suffering, and eternal life alter the expected significance of earthly harm.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it presents several explicit doctrinal considerations, although their supporting warrants are compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The doctrinally conditional scope is explicit, and the purposes and recompense claims remain distinguishable and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents these doctrines as probability-increasing considerations rather than conclusive demonstrations, matching the offered support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Extreme suffering may remain surprising even if earthly happiness is not life's chief purpose and an afterlife exists.",
+        "decisiveQualification": "Recompense and purpose do not by themselves explain why particular severe harms were permitted."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The conditional inference from Christian doctrine to altered expectations is coherent, with one material purpose-to-permission bridge compressed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The doctrinal claims are stated clearly, but the warrant connecting particular suffering to knowledge of God or recompense is underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central theistic-context bridge through purpose, salvation, and eternal fulfillment."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move fairly changes the doctrinal expectation but does not fully address the strongest particular-harm qualification."
+        }
+      },
+      "evidenceBasis": "Craig argues that Christian theism makes evil less surprising because life's chief purpose is knowledge of God rather than temporal happiness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evil-within-total-evidence",
+      "sectionId": "section-divine-attributes-and-total-evidence",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Even if evil counts against God's existence, whether theistic belief is reasonable must be judged using the full body of relevant evidence rather than evil considered in isolation.",
+      "sourceSpan": {
+        "startEvent": 378,
+        "endEvent": 419
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The numbered transition and uninterrupted delivery identify Craig as the speaker, and the passage closes his opening argument immediately before applause.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-reasonableness"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move explicitly connects the evil debate to the motion by requiring reasonableness to be assessed against the complete relevant evidence.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it states the decisive motion-level evidential rule, though it does not present the wider evidence here."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The concession that evil may count adversely and the total-evidence qualification are both explicit and scope-stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "As a methodological requirement for comparative probability, considering the full relevant evidence matches the warrant offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evil could be sufficiently powerful evidence to dominate the total evidential balance.",
+        "decisiveQualification": "The methodological point does not establish that the unspecified wider evidence actually outweighs evil."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The methodological inference is explicit and consistent, with only the application to the actual evidential balance omitted."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The total-evidence principle is soundly stated, but the claimed supporting evidence is referenced rather than supplied in this move."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly contacts the motion bridge by connecting total evidence to the reasonableness of theistic belief."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move permits evil to count against God but leaves the decisive comparative-weight qualification unresolved."
+        }
+      },
+      "evidenceBasis": "Craig expressly says God's probability must be assessed relative to the full scope of evidence, not evil alone, while referencing other arguments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-pluralism-salvation",
+      "sectionId": "section-divine-purposes-and-recompense",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "The tsunami raises a religious-pluralism problem because its victims held many faiths, while Christian exclusivism appears to deny salvation to many who suffered and died.",
+      "sourceSpan": {
+        "startEvent": 443,
+        "endEvent": 469
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling has just begun the opposing address after Craig's applause, and the moderator's prior introduction plus the uninterrupted first-person delivery fixes attribution.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-religious-pluralism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-knowledge-god-eternal-recompense"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-pluralism-salvation-component-01",
+            "targetMoveId": "pro-knowledge-god-eternal-recompense",
+            "text": "Challenges whether the proposed salvific purpose applies coherently to victims across competing faiths.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the salvation component of the earlier doctrinal argument by raising exclusivism and diverse victims, but it does not answer the separate purpose or eternal-recompense components.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "This is a partial answer contacting a material salvation component while leaving other decisive doctrinal components unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The pluralism objection is recoverable, but its dependence on a specifically exclusivist Christian account remains partly implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker deliberately leaves the concern open rather than claiming decisive refutation, which fits the limited warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian salvation need not require explicit pre-death Christian belief for every tsunami victim.",
+        "decisiveQualification": "The objection depends on the exclusivist account actually being part of the defended theistic context."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The objection coherently identifies a tension, though the bridge from religious diversity to failure of the defended doctrine is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The diversity premise is concrete, but the operative exclusivist salvation premise is asserted with limited doctrinal support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is highly placed within the subsidiary tier because it directly advances the religious-pluralism bridge."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move identifies a live tension but omits the strongest inclusivist qualification to the exclusivist interpretation."
+        }
+      },
+      "evidenceBasis": "Grayling notes the tsunami victims' different faiths and invokes competition among religions and a Christian claim about salvation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-suffering-attributes-inference",
+      "sectionId": "section-divine-attributes-and-total-evidence",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "If an intelligent supernatural agent is interested in humanity, tsunamis and childhood cancers initially indicate that it is either malevolent or less than omnipotent.",
+      "sourceSpan": {
+        "startEvent": 471,
+        "endEvent": 538
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains Grayling's uninterrupted opposing speech, with first-person transitions linking the argument directly to his preceding tsunami discussion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-world-attributes-conflict"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evil-within-total-evidence",
+          "pro-knowledge-god-eternal-recompense"
+        ],
+        "components": [
+          {
+            "componentId": "con-suffering-attributes-inference-component-01",
+            "targetMoveId": "pro-evil-within-total-evidence",
+            "text": "Offers suffering as concrete adverse evidence that must enter the total-evidence assessment of divine attributes.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-suffering-attributes-inference-component-02",
+            "targetMoveId": "pro-knowledge-god-eternal-recompense",
+            "text": "Challenges whether Christian purposes make severe natural suffering unsurprising.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly supplies adverse evidence against an interested, powerful, good agent, contacting the total-evidence demand, but does not examine the earlier doctrinal-purpose warrants.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive evidential component but leaves the separate Christian-context response substantially unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The inference is explicitly framed as a first-blush assessment, with stable divine-attribute terms and bounded scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The first-blush malevolence-or-limited-power inference is presented provisionally, appropriately matching its observational warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A benevolent omnipotent agent might permit suffering for morally sufficient reasons unavailable to observers.",
+        "decisiveQualification": "The move offers initial evidence rather than claiming that every such permission is impossible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The abductive inference is clear and qualified, though the apparent dilemma does not exhaust all combined attribute explanations."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Tsunamis and childhood cancers are specific representative evidence, with a bounded gap in comparing rival explanations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central world-attributes-conflict bridge using the debate's principal examples."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "Its express first-blush limitation fairly preserves the strongest greater-reason alternative while retaining adverse evidential force."
+        }
+      },
+      "evidenceBasis": "Grayling explicitly treats tsunamis and childhood cancers as initial evidence that an interested supernatural agency is malevolent or not omnipotent.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-power-permission-dilemma",
+      "sectionId": "section-divine-attributes-and-total-evidence",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "The proposed defenses create a dilemma: either God lacks the power to prevent suffering in a free world, or God can prevent it but permits it for a proposed greater good.",
+      "sourceSpan": {
+        "startEvent": 539,
+        "endEvent": 623
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling explicitly refers back to the two points in Craig's presentation while continuing the same uninterrupted opposing address.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-defense-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-logical-hidden-premises",
+          "pro-epistemic-limits-providence"
+        ],
+        "components": [
+          {
+            "componentId": "con-power-permission-dilemma-component-01",
+            "targetMoveId": "pro-logical-hidden-premises",
+            "text": "Challenges whether the free-will limitation and permissive-reason defense jointly preserve divine power and goodness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-power-permission-dilemma-component-02",
+            "targetMoveId": "pro-epistemic-limits-providence",
+            "text": "Attacks reliance on unknown greater goods as an unrestricted appeal to mystery.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both the power limitation and unknown-reason components by alleging tension between inability and permissive greater goods, though it does not conclusively establish inconsistency.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "This strong partial answer explicitly contacts two decisive defense components but leaves their possible domain separation unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The dilemma is recoverable, but its scope blurs logical limits on freedom with divine permission of natural suffering."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling the two defenses inconsistent overstates the warrant unless they address the same evils under the same modal conditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Logical inability concerns causally determining free choices, while greater-good permission can concern different evils.",
+        "decisiveQualification": "No inconsistency follows unless the two claims govern the same kind of suffering and explanatory task."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The dilemma is intelligible but risks a false opposition because inability and permissive reasons can apply to different cases."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The criticism identifies concrete defense language, but the claimed inconsistency lacks a developed same-domain demonstration."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central defense-coherence bridge by testing power, permission, and mystery together."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The dilemma exposes a useful coherence test but omits the decisive domain-separation qualification."
+        }
+      },
+      "evidenceBasis": "Grayling contrasts reducing omnipotence with permitting suffering for an unseen greater good and characterizes mystery as overly permissive.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-freedom-better-world",
+      "sectionId": "section-logical-compatibility-and-freedom",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "An omnipotent God should be able to create free creatures in a world with far less suffering, so the claimed necessity of this world's natural evil requires unsupported modal assumptions.",
+      "sourceSpan": {
+        "startEvent": 675,
+        "endEvent": 731
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling continues the same speech and explicitly turns from the benevolence analogy back to the alleged omnipotence of God.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-better-world-feasibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-logical-hidden-premises"
+        ],
+        "components": [
+          {
+            "componentId": "con-freedom-better-world-component-01",
+            "targetMoveId": "pro-logical-hidden-premises",
+            "text": "Demands support for the modal claim that comparable freedom and good require this degree of suffering.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the free-will compatibility argument by distinguishing bare consistency from the stronger claim that a substantially better free world is infeasible.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly targets the decisive modal premise and states what the theist must establish about a better possible world."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The modal demand, comparison class, and distinction between free agency and suffering are clearly recoverable and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move properly poses a feasibility burden rather than asserting that such a world is demonstrably actualizable."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A logically possible description may still be infeasible for God because of counterfactuals of creaturely freedom.",
+        "decisiveQualification": "The theist must support infeasibility rather than rely solely on the abstract value of freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The possibility-versus-necessity challenge is explicit, consistent, and directly isolates the missing modal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual counterexample is relevant, although actual feasibility and comparable-good conditions remain to be defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central better-world-feasibility bridge at the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move accurately targets the stronger modal defense while leaving room for a developed feasibility answer."
+        }
+      },
+      "evidenceBasis": "Grayling asks why God could not create free beings without this suffering and stresses the strong modality required by the theistic response.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unknown-reasons-insufficient",
+      "sectionId": "section-evidential-evil-and-epistemic-limits",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Appealing to unknown morally sufficient reasons for tsunamis and childhood cancer does not make belief in a caring and powerful deity reasonable.",
+      "sourceSpan": {
+        "startEvent": 1198,
+        "endEvent": 1226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling names Craig's morally sufficient reasons claim and tests it against the debate's concrete examples of severe suffering.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-epistemic-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-epistemic-limits-providence"
+        ],
+        "components": [
+          {
+            "componentId": "con-unknown-reasons-insufficient-component-01",
+            "targetMoveId": "pro-epistemic-limits-providence",
+            "text": "Rejects unknown morally sufficient reasons as inadequate support for trusting that severe suffering is justified.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the earlier epistemic defense by arguing that mere ignorance of God's reason cannot justify trust that tsunamis and painful cancer are beneficial.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly addresses the decisive unknown-reasons inference and identifies the gap between ignorance and warranted trust."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection is clearly directed at using unknown reasons to support reasonable belief, not at proving that no reason exists."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims insufficiency of the appeal rather than certainty that no morally sufficient reason exists, fitting the warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Independent evidence of divine goodness could rationally support trust despite ignorance of particular reasons.",
+        "decisiveQualification": "Unknown reasons alone remain insufficient even if a broader cumulative case might support trust."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "It clearly distinguishes the possibility of an unknown reason from having warrant to trust that such a reason exists."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The severe examples concretely test the defense, with one bounded gap concerning possible independent evidence for divine goodness."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the indispensable central epistemic-limits bridge and its claimed defeating consequence."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move fairly targets the standalone epistemic appeal while leaving independent grounds for trust conceptually available."
+        }
+      },
+      "evidenceBasis": "Grayling applies the unknown-reason defense to drowning in a tsunami and painful cancer, arguing that trust in an unseen benefit is unsupported.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ordinary-moral-knowledge",
+      "sectionId": "section-evidential-evil-and-epistemic-limits",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Ordinary moral knowledge remains reliable enough to assess suffering despite uncertainty about remote consequences and chaotic causal effects.",
+      "sourceSpan": {
+        "startEvent": 1287,
+        "endEvent": 1335
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling directly identifies Craig's utilitarian and butterfly-effect argument and answers it with ordinary examples of foreseeable consequences.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-moral-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-epistemic-limits-providence"
+        ],
+        "components": [
+          {
+            "componentId": "con-ordinary-moral-knowledge-component-01",
+            "targetMoveId": "pro-epistemic-limits-providence",
+            "text": "Defends ordinary comparative moral judgment despite incomplete knowledge of remote causal consequences.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the skeptical consequence of the epistemic-limits move by arguing that practical moral judgment uses experienced likelihoods rather than exhaustive causal knowledge.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the decisive inference from causal uncertainty to impaired moral assessment and supplies a replacement standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The best-lights and likely-consequences standard is explicit, stable, and carefully limited to ordinary comparative judgment."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker uses probabilistic and experience-relative language, appropriately acknowledging uncertainty without surrendering judgment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine providential consequences may be far less accessible than consequences in ordinary ice-cream and kicking cases.",
+        "decisiveQualification": "The analogy supports ordinary moral knowledge but does not fully measure uniquely divine long-range consequences."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The inference from ordinary probabilistic practice to retained moral judgment is explicit and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The concrete comparison supports the principle, with a material but bounded analogy gap concerning providential scale."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central moral-knowledge bridge at the top of the central relevance band."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response fairly preserves uncertainty, though its simple analogy underrepresents the strongest providential complexity claim."
+        }
+      },
+      "evidenceBasis": "Grayling contrasts giving ice cream with kicking and argues that moral action proceeds by experience, best lights, and likely consequences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-future-recompense-blank-check",
+      "sectionId": "section-divine-purposes-and-recompense",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Future compensation for earthly suffering functions as a blank check, while the harsh facts of the world diminish the reasonableness of belief in an aware and influential supernatural being.",
+      "sourceSpan": {
+        "startEvent": 1336,
+        "endEvent": 1407
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling identifies the conclusion as his own task and closes the speech immediately before music, applause, and moderator remarks.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-unreasonableness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-knowledge-god-eternal-recompense",
+          "pro-evil-within-total-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-future-recompense-blank-check-component-01",
+            "targetMoveId": "pro-knowledge-god-eternal-recompense",
+            "text": "Challenges future compensation as insufficient to reconcile the harsh world with a caring supernatural agent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-future-recompense-blank-check-component-02",
+            "targetMoveId": "pro-evil-within-total-evidence",
+            "text": "Uses the total scope of evidence to claim that harsh worldly facts diminish reasonableness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts both recompense and total evidence, arguing that compensation cannot operate as unrestricted permission and that worldly facts lower the motion-level reasonableness claim.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It addresses two decisive components, although the excerpt compresses the argument showing why compensation cannot justify permission."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion is expressly about diminishing reasonableness on the total evidence, not demonstrating logical impossibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The comparative claim that belief becomes less reasonable is proportionate to the cited adverse evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compensation is part of a wider account of purpose and consent, not a standalone license to inflict harm.",
+        "decisiveQualification": "The objection must distinguish compensation alone from a morally sufficient permission plus compensation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The adverse total-evidence inference is coherent, but the blank-check characterization leaves a material justification distinction underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The harsh facts provide relevant support, while the critique of future compensation lacks detailed comparison with stronger theistic accounts."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It expressly connects suffering and total evidence to the motion-level conclusion that belief is less reasonable."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "It identifies the blank-check danger but compresses the strongest distinction between recompense and prior justification."
+        }
+      },
+      "evidenceBasis": "Grayling argues that the world's facts are inconsistent with the proposed being and that, across the total evidence, belief becomes less reasonable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-possibility-feasibility-gap",
+      "sectionId": "section-logical-compatibility-and-freedom",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "A world containing free individuals but no natural evil appears logically possible, so the theist must explain why it would be infeasible for God.",
+      "sourceSpan": {
+        "startEvent": 1574,
+        "endEvent": 1595
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The alternating dialogue and direct second-person challenge identify Grayling as responding to Craig's renewed account of classical omnipotence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-better-world-feasibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-logical-hidden-premises"
+        ],
+        "components": [
+          {
+            "componentId": "con-possibility-feasibility-gap-component-01",
+            "targetMoveId": "pro-logical-hidden-premises",
+            "text": "Distinguishes logical possibility of a free natural-evil-free world from its alleged infeasibility for God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the modal core of the logical defense, conceding that possibility and feasibility differ while demanding an account of the latter.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly identifies the decisive possibility-feasibility distinction and states the unresolved demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Logical possibility, divine feasibility, free individuals, and natural evil are clearly separated and scope-stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is limited to apparent logical possibility and does not overclaim actual feasibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A described world can be logically consistent yet infeasible for God because of independent modal constraints.",
+        "decisiveQualification": "The objection expressly asks for, rather than assumes away, an explanation of infeasibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction is explicit and isolates the exact additional premise needed to move from possibility to divine feasibility."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The conceptual example supports the logical possibility claim, though feasibility itself remains deliberately unresolved."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central better-world-feasibility bridge at the highest point of its tier."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move handles the strongest modal alternative accurately and preserves the decisive possibility-feasibility qualification."
+        }
+      },
+      "evidenceBasis": "Grayling says a free world without natural evil appears logically possible and asks why that possibility would nevertheless be infeasible for God.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-objective-evil-moral-argument",
+      "sectionId": "section-objective-morality-without-or-with-god",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The recognition of some suffering as objectively evil supports God's existence if objective moral values exist and cannot exist without God.",
+      "sourceSpan": {
+        "startEvent": 1784,
+        "endEvent": 1836
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-facing transition and explicit restatement of Craig's probabilistic and moral arguments identify Craig as the speaker.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-objective-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-suffering-attributes-inference",
+          "con-ordinary-moral-knowledge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-objective-evil-moral-argument-component-01",
+            "targetMoveId": "con-suffering-attributes-inference",
+            "text": "Reframes objective evil from solely adverse evidence into a premise requiring an objective moral foundation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-objective-evil-moral-argument-component-02",
+            "targetMoveId": "con-ordinary-moral-knowledge",
+            "text": "Accepts that some acts are genuinely wrong while shifting the dispute to their ontological foundation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The move preserves the existence of objective evil but justifies a foundation-level question: whether objective moral values can exist without God. It answers that replacement through a stated syllogism.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "The justified reframe is explicit and issue-preserving, though the crucial no-God-no-objective-values premise is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional premises and conclusion are recoverable, and objective moral value remains stable throughout the syllogism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The deduction is valid conditionally, but confidence in the conclusion exceeds the excerpted defense of the second premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral facts could exist as natural, nonnatural, or brute facts without a divine foundation.",
+        "decisiveQualification": "The conclusion requires an independent defense of the premise that objective values cannot exist without God."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The stated syllogism is valid, with the principal gap lying in premise support rather than inferential form."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Recognition of objective wrong supplies one premise, but the indispensable divine-foundation premise is largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary objective-morality bridge and sits at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The syllogism exposes the foundational question but does not substantially handle the strongest secular realist alternatives."
+        }
+      },
+      "evidenceBasis": "Craig presents premises that objective values require God and that some things are actually evil, then deduces God's existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-human-needs-morality",
+      "sectionId": "section-objective-morality-without-or-with-god",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Objective facts about human needs, interests, sentience, and suffering can ground moral obligations without invoking God.",
+      "sourceSpan": {
+        "startEvent": 1839,
+        "endEvent": 1893
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit acceptance of an invitation to respond is followed by Grayling's characteristic naturalistic account of morality.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-evil-moral-argument"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-human-needs-morality-component-01",
+            "targetMoveId": "pro-objective-evil-moral-argument",
+            "text": "Offers objective human needs, interests, sentience, and suffering as a secular basis for moral demands.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the divine-foundation premise by proposing human-condition facts that generate obligations without invoking God.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly answers the decisive foundation demand with a concrete alternative account, though the norm-generating bridge is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed grounding facts and claimed moral demands are clear, stable, and expressly limited to sentient human needs."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The account is offered as a basis for obligation rather than a conclusively proven metaethical theory, matching the support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Descriptive facts about needs and suffering do not by themselves entail categorical moral obligations.",
+        "decisiveQualification": "A normative bridge from human facts to objective demands remains necessary."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The account is coherent but leaves one material bridge from descriptive human facts to objective obligation implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Specific needs and capacities provide representative support, while the metaethical grounding step remains underdefended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary secular-morality bridge and ranks at the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The move gives a substantive secular basis but does not explicitly resolve the strongest fact-value qualification."
+        }
+      },
+      "evidenceBasis": "Grayling lists relationships, affection, warmth, comfort, security, sentience, and vulnerability to suffering as objective facts creating moral demands.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolutionary-contingency-morality",
+      "sectionId": "section-objective-morality-without-or-with-god",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Human needs and attitudes produced by sociobiological evolution do not furnish objective morality because differently evolved rational creatures could possess radically different species-relative values.",
+      "sourceSpan": {
+        "startEvent": 1894,
+        "endEvent": 1944
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The immediate first-person disagreement with Grayling invokes Craig's cited evolutionary and speciesism examples and continues his prior argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-human-needs-morality"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolutionary-contingency-morality-component-01",
+            "targetMoveId": "con-objective-human-needs-morality",
+            "text": "Argues that evolved human needs and attitudes remain species-relative rather than objectively authoritative.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the secular grounding proposal by presenting differently evolved rational creatures as a test of whether human needs yield objective truth.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly attacks the decisive objectivity inference through a concrete evolutionary-contingency challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Species relativity, sociobiological evolution, and objective foundation are clearly distinguished and consistently used."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Evolutionary contingency pressures objectivity, but it does not alone establish that evolved beliefs cannot track independent moral truths."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution can shape access to objective moral truths without creating or debunking those truths.",
+        "decisiveQualification": "Causal contingency of belief does not by itself prove the believed proposition lacks objective truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The contingency challenge is coherent, but one material bridge from evolutionary origin to lack of objectivity remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The alien-value thought experiment supports contingency, while the further debunking conclusion needs a defended reliability premise."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary secular-morality bridge and sits at the top of the subsidiary range."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move raises a strong debunking concern but compresses the decisive truth-tracking alternative."
+        }
+      },
+      "evidenceBasis": "Craig argues that differently evolved creatures could dismiss human morality as sociobiological speciesism rather than objective truth.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-suffering-constrains-choice",
+      "sectionId": "section-objective-morality-without-or-with-god",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Natural facts about suffering constrain moral choice and provide a strong basis for mutual respect and kindness.",
+      "sourceSpan": {
+        "startEvent": 1945,
+        "endEvent": 2000
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker accepts that humans are animals, corrects Craig's formulation, and resumes Grayling's naturalistic account through a suffering-person example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolutionary-contingency-morality",
+          "pro-objective-evil-moral-argument"
+        ],
+        "components": [
+          {
+            "componentId": "con-suffering-constrains-choice-component-01",
+            "targetMoveId": "pro-evolutionary-contingency-morality",
+            "text": "Argues that facts about another's suffering constrain action despite the evolutionary contingency objection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-suffering-constrains-choice-component-02",
+            "targetMoveId": "pro-objective-evil-moral-argument",
+            "text": "Provides a nondivine experiential basis for respect and kindness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both the evolutionary challenge and divine-foundation claim by arguing that suffering itself constrains choice and grounds humane conduct.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It answers the practical normative demand clearly but only partially addresses the deeper metaethical objectivity challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The practical constraint and kindness conclusion are clear, though the intended strength of objective normativity is implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is presented as a powerful practical basis rather than a complete proof of moral ontology, fitting the example."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The felt constraint of suffering may establish motivation or shared norms without mind-independent obligation.",
+        "decisiveQualification": "Practical salience is not automatically a complete metaethical foundation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The example coherently supports a choice-guiding constraint, with one material bridge to objective obligation left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The help-or-kick case is specific and representative, though it cannot alone settle the full metaethical dispute."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary secular-morality bridge through suffering, respect, and kindness."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move offers a fair practical answer but leaves the strongest distinction between motivation and objectivity unresolved."
+        }
+      },
+      "evidenceBasis": "Grayling contrasts helping a person in pain with kicking them and argues that their condition constrains choice and supports respect and kindness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-providential-natural-disasters",
+      "sectionId": "section-divine-purposes-and-recompense",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Natural disasters may be permitted within a providential plan because an omniscient God could coordinate complex contingencies toward bringing people freely into relationship with himself.",
+      "sourceSpan": {
+        "startEvent": 2160,
+        "endEvent": 2211
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit Christian framing, appeal to divine middle knowledge, and reference to the prior question identify Craig's extended answer.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-providential-complexity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unknown-reasons-insufficient",
+          "con-future-recompense-blank-check",
+          "con-suffering-attributes-inference"
+        ],
+        "components": [
+          {
+            "componentId": "pro-providential-natural-disasters-component-01",
+            "targetMoveId": "con-unknown-reasons-insufficient",
+            "text": "Supplies a proposed providential structure in which disasters may contribute to freely formed relationship with God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-providential-natural-disasters-component-02",
+            "targetMoveId": "con-future-recompense-blank-check",
+            "text": "Invokes a wider kingdom-building purpose rather than compensation alone.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-providential-natural-disasters-component-03",
+            "targetMoveId": "con-suffering-attributes-inference",
+            "text": "Offers a benevolent-purpose alternative to the initial adverse attribute inference.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the demand for a morally sufficient reason by proposing kingdom-building and freely accepted relationship, but it remains speculative about how particular disasters realize that purpose.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive reason demand and two related objections, but the particular-harm explanatory bridge remains materially incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly modal and conditional, using may, permitted, and in some way rather than presenting detailed certainty."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speculative providential proposal is framed as a possibility, matching the limited evidence supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A general aim of maximizing free relationship does not explain why these severe disasters are necessary or proportionate.",
+        "decisiveQualification": "A possible global plan needs a particular connection to the scale, distribution, and victims of natural harms."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The proposal is internally possible, but the bridge from disaster permission to maximized free relationship is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The providential coordination claim is substantially speculative and lacks specific support connecting disasters to the proposed outcome."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary providential-complexity bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 77,
+          "rationale": "The move recognizes the demand for a reason but does not resolve the strongest proportionality and particularity qualifications."
+        }
+      },
+      "evidenceBasis": "Craig says disasters and wars may fit a master plan aimed at bringing the maximum number of people freely into relationship with God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-significant-freedom-no-guarantee",
+      "sectionId": "section-logical-compatibility-and-freedom",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "God may be unable to guarantee an evil-free world containing comparable moral good because causing significantly free agents always to choose rightly would be logically impossible.",
+      "sourceSpan": {
+        "startEvent": 2212,
+        "endEvent": 2230
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly turns to the final feasibility question and presents the familiar free-will limitation on eliminating moral evil.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-better-world-feasibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-freedom-better-world",
+          "con-possibility-feasibility-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-significant-freedom-no-guarantee-component-01",
+            "targetMoveId": "con-freedom-better-world",
+            "text": "Answers that God cannot causally guarantee right choices while preserving significant creaturely freedom.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-significant-freedom-no-guarantee-component-02",
+            "targetMoveId": "con-possibility-feasibility-gap",
+            "text": "Offers a modal reason why an evil-free free world might not be feasible for God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts both better-world and feasibility demands by distinguishing creating free agents from determining their choices, though it mainly addresses moral rather than natural evil.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive freedom component but leaves the natural-evil component of the better-world challenge unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Significant freedom, causal guarantee, moral evil, and logical impossibility are explicitly separated and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conclusion is expressly that such a world may not be feasible, which matches the modal warrant supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God need not cause right choices to actualize a world whose free creatures happen always to choose rightly.",
+        "decisiveQualification": "The argument requires a feasibility premise about available creaturely counterfactuals, not merely the incoherence of caused free choice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The caused-free-choice contradiction is clear, though the inference to no feasible better free world requires an additional modal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The conceptual freedom warrant is developed, but no support is provided for the broader feasibility claim about all comparable worlds."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central better-world-feasibility bridge through the significant-freedom constraint."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move answers direct causal determination but compresses the strongest possible-world alternative involving undetermined right choices."
+        }
+      },
+      "evidenceBasis": "Craig argues that after creating significantly free agents God must allow them to act because making someone freely choose a specified course is impossible.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-closing-cumulative-theistic-case",
+      "sectionId": "section-divine-attributes-and-total-evidence",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Neither logical incompatibility nor confident probabilistic inference from evil defeats Christian theism when epistemic limits, Christian purposes, and the wider evidence for God are considered together.",
+      "sourceSpan": {
+        "startEvent": 2286,
+        "endEvent": 2314
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Craig's summation, and the ensuing first-person recap tracks the principal theistic arguments presented throughout the debate.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-reasonableness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-suffering-attributes-inference",
+          "con-freedom-better-world",
+          "con-unknown-reasons-insufficient",
+          "con-future-recompense-blank-check"
+        ],
+        "components": [
+          {
+            "componentId": "pro-closing-cumulative-theistic-case-component-01",
+            "targetMoveId": "con-suffering-attributes-inference",
+            "text": "Answers the adverse inference by combining logical compatibility, epistemic limits, Christian purposes, and wider evidence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-closing-cumulative-theistic-case-component-02",
+            "targetMoveId": "con-freedom-better-world",
+            "text": "Reasserts a possible free-will explanation establishing compatibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-closing-cumulative-theistic-case-component-03",
+            "targetMoveId": "con-unknown-reasons-insufficient",
+            "text": "Reasserts limits on confident probability judgments about divine reasons.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-closing-cumulative-theistic-case-component-04",
+            "targetMoveId": "con-future-recompense-blank-check",
+            "text": "Places suffering within Christian doctrine and the total evidential context.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The closing directly synthesizes answers to the principal logical and probabilistic objections and reconnects them to motion-level reasonableness, although it mostly summarizes earlier warrants.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts several decisive objections and the motion-level inference, with some compressed treatment of their strongest residual qualifications."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Logical compatibility, probabilistic inference, epistemic restraint, Christian context, and total evidence remain clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cumulative conclusion fits the structure presented, though calling the opposing probability judgments enormously presumptuous exceeds the summarized warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Logical compatibility can be established while severe evil still makes theism evidentially improbable.",
+        "decisiveQualification": "Defeating contradiction does not itself defeat a calibrated adverse probabilistic inference."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The cumulative structure is explicit and consistent, with bounded compression in connecting separate defenses to overall reasonableness."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "It draws on several previously stated warrants, but rival weighting and the wider positive evidence remain incompletely developed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It explicitly completes the motion bridge by connecting the cumulative defenses to the reasonableness of Christian theism."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The closing distinguishes logical and probabilistic versions but understates the strongest moderate evidential inference from suffering."
+        }
+      },
+      "evidenceBasis": "Craig closes by denying demonstrated incompatibility, offering a possible compatibility explanation, criticizing confident probability judgments, and invoking the wider case.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all completion effects are already represented in move judgments and response links.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the locked move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion judgment."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all completion effects are already represented in move judgments and response links.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the locked move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden-completion judgment."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

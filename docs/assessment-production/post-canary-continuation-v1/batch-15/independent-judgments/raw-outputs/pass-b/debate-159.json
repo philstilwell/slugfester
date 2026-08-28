@@ -1,0 +1,1810 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "159",
+  "debateId": "wood-aron-ra-naturalism-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-evolutionary-naturalism-self-defeat",
+      "side": "pro",
+      "description": "Establish that evolutionary naturalism supplies defeaters for rational confidence in the cognitive faculties used to affirm naturalism, without requiring proof that a supernatural alternative is true.",
+      "successCriteria": "The route succeeds if naturalism's account of belief formation leaves no adequate warrant for trusting human cognition about ultimate reality and the objection cannot be answered merely by demanding evidence of the supernatural.",
+      "motionBridge": {
+        "bridgeId": "pro-withhold-rational-affirmation",
+        "tier": "motion",
+        "description": "Show that a worldview which undermines warrant for the cognition affirming it cannot itself be rationally affirmed."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-nonrational-causal-production",
+          "tier": "central",
+          "description": "Establish that physical determination, randomness, or causally idle mental states do not by themselves make beliefs responsive to rational grounds or truth."
+        },
+        {
+          "bridgeId": "pro-fitness-truth-gap",
+          "tier": "central",
+          "description": "Establish that selection for survival and reproduction does not ensure reliable cognition when faculties are extended to comprehensive metaphysical conclusions."
+        },
+        {
+          "bridgeId": "pro-internal-defeat-without-supernatural-proof",
+          "tier": "central",
+          "description": "Establish that naturalism may be rejected or rational confidence withheld because of internal incoherence without first demonstrating a supernatural realm."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-metaphysical-burden",
+          "tier": "subsidiary",
+          "description": "Distinguish metaphysical naturalism from scientific method and require a positive defense of the claim that only nature exists."
+        },
+        {
+          "bridgeId": "pro-evidential-openness-test",
+          "tier": "subsidiary",
+          "description": "Test whether naturalism permits any contrary observation to count against it rather than automatically receiving a natural reinterpretation."
+        }
+      ]
+    },
+    {
+      "routeId": "con-objective-evidence-naturalism",
+      "side": "con",
+      "description": "Defend rational confidence in naturalism through provisional reliance on cognition, evolved capacities for dependable interaction, and publicly testable evidence while assigning the supernatural claimant the burden of demonstrating an addition to the known natural world.",
+      "successCriteria": "The route succeeds if objective inquiry supplies a workable basis for corrigible confidence in natural conclusions, the evolutionary reliability objection does not establish global defeat, and no verified supernatural exception displaces the natural account.",
+      "motionBridge": {
+        "bridgeId": "con-provisional-evidential-warrant",
+        "tier": "motion",
+        "description": "Show that naturalism remains rationally warranted by objective evidence unless its alleged self-defeat is established or a supernatural exception is demonstrated."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-operational-cognitive-reliability",
+          "tier": "central",
+          "description": "Account for sufficiently dependable cognition through unavoidable provisional reliance on experience, evolved social capacities, and correction by shared objective inquiry."
+        },
+        {
+          "bridgeId": "con-challenge-defeater-premises",
+          "tier": "central",
+          "description": "Challenge the asserted connections among naturalism, determinism, survival-directed evolution, and the conclusion that rational thought is unwarranted."
+        },
+        {
+          "bridgeId": "con-supernatural-evidential-burden",
+          "tier": "central",
+          "description": "Require independent, repeatable, objective verification before adding supernatural entities or causes to the accepted natural world."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-method-metaphysics-distinction",
+          "tier": "subsidiary",
+          "description": "Distinguish evidence-governed methodological naturalism and acceptance of the known physical world from an unsupported universal negative about every immaterial possibility."
+        },
+        {
+          "bridgeId": "con-disconfirmation-openness",
+          "tier": "subsidiary",
+          "description": "Specify observable conditions that could support supernatural claims and use repeated testing to preserve revisability rather than immunity from contrary evidence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "worldview-definition-and-burden",
+      "title": "Naturalism's Definition and Burden of Proof",
+      "weightPercent": 15,
+      "rationale": "The dispute over whether naturalism asserts that only nature exists or provisionally accepts the known natural world determines what each side must establish and whether internal critique can resolve the motion."
+    },
+    {
+      "sectionId": "physical-causation-and-rational-agency",
+      "title": "Physical Causation, Determinism, and Rational Agency",
+      "weightPercent": 20,
+      "rationale": "The claimed gap between physical belief production and responsiveness to reasons is a major proposed mechanism of self-defeat, while objections concerning indeterminism, emergence, and rational processes test that inference."
+    },
+    {
+      "sectionId": "evolution-fitness-and-truth",
+      "title": "Evolutionary Fitness and Truth-Tracking Cognition",
+      "weightPercent": 30,
+      "rationale": "Whether selection for survival can produce faculties reliable enough for abstract worldview judgments is the principal substantive clash identified by the motion and the central evolutionary component of both routes."
+    },
+    {
+      "sectionId": "objective-inquiry-and-cognitive-correction",
+      "title": "Objective Evidence, Experience, and Cognitive Correction",
+      "weightPercent": 20,
+      "rationale": "Appeals to testable data, provisional sensory trust, social cooperation, and collaborative checking bear directly on whether naturalism can justify corrigible confidence despite acknowledged cognitive limitations."
+    },
+    {
+      "sectionId": "falsifiability-and-supernatural-evidence",
+      "title": "Falsifiability and Evidence Beyond Nature",
+      "weightPercent": 15,
+      "rationale": "Competing standards for miracles, prophecy, apparent design, and other purported supernatural effects test both naturalism's openness to disconfirmation and whether any alternative has met the proposed evidential threshold."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-known-world-not-universal-negative",
+      "sectionId": "worldview-definition-and-burden",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "constructive",
+      "proposition": "Acceptance of the known physical world does not by itself establish the stronger claim that no immaterial or supernatural reality exists.",
+      "sourceSpan": {
+        "startEvent": 95,
+        "endEvent": 164
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Aron Ra's uninterrupted opening statement after his explicit introduction.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-method-metaphysics-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move distinguishes accepting the observed physical world from asserting a universal negative about every immaterial possibility.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it clearly establishes the definitional and burden distinction relevant to the route."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between the known physical world and a universal metaphysical denial is explicit and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim concerns what acceptance alone entails, and its force matches the stated burden distinction."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The non-entailment inference is explicit, internally consistent, and does not confuse provisional acceptance with universal denial."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual burden distinction supports the conclusion, though the excerpt offers limited defense of the preferred definition."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports the method-versus-metaphysics distinction and its burden consequence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move establishes its own distinction without materially interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the reality known to exist with an uncertain alternative and rejects being assigned proof of that alternative's absence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-metaphysical-naturalism-positive-burden",
+      "sectionId": "worldview-definition-and-burden",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "Metaphysical naturalism claims that only the natural world is real and therefore carries a burden of proof when the debate asks whether naturalism is true.",
+      "sourceSpan": {
+        "startEvent": 415,
+        "endEvent": 443
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly transfers the floor to David Wood, whose uninterrupted opening contains this passage.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-metaphysical-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-known-world-not-universal-negative"
+        ],
+        "components": [
+          {
+            "componentId": "pro-metaphysical-naturalism-positive-burden-component-01",
+            "targetMoveId": "con-known-world-not-universal-negative",
+            "text": "Whether the motion concerns metaphysical naturalism and therefore imposes a positive burden on its defender.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-metaphysical-naturalism-positive-burden-component-02",
+            "targetMoveId": "con-known-world-not-universal-negative",
+            "text": "Whether accepting the known physical world is distinct from denying every supernatural reality.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests the burden framing by defining the debated naturalism as an exclusive metaphysical claim, while acknowledging the contrasting supernatural view.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive burden issue but does not fully resolve the opponent's narrower, provisional formulation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The metaphysical definition is clear, but its application to every defensible meaning of naturalism in the motion remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A positive burden follows under the stated metaphysical definition, but the debate over whether that definition is mandatory remains compressed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism may mean provisional acceptance of the known physical world rather than an exhaustive ontology.",
+        "decisiveQualification": "The motion's truth wording can nevertheless reasonably invite assessment of metaphysical naturalism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The burden conclusion follows under the exclusive metaphysical definition, with one bounded bridge concerning the motion's intended definition."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The contrast with supernaturalism supports the taxonomy, but the claim that this taxonomy governs the motion receives compressed defense."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, the move directly supports the positive metaphysical-burden bridge."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply recognizes the burden dispute and supplies a competing definition, though it does not fully accommodate the provisional alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts naturalism with supernaturalism and expressly argues that a debate about naturalism's truth cannot disclaim a burden of proof.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-nonrational-physical-belief-production",
+      "sectionId": "physical-causation-and-rational-agency",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "constructive",
+      "proposition": "If beliefs result entirely from physical processes governed by natural laws rather than a commitment to truth, naturalism supplies no basis for trusting those beliefs as rationally truth-responsive.",
+      "sourceSpan": {
+        "startEvent": 618,
+        "endEvent": 663
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement remains David Wood's, with no moderator or speaker transition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-nonrational-causal-production"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the causal-production premise of the self-defeat route by contrasting physical mechanisms with commitment to truth.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it squarely develops a central route bridge with a concrete causal description."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, but commitment to truth and physical causation are treated as contrasting categories without clarifying their possible compatibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt moves from physical realization to mindless, non-truth-responsive production without addressing reason-sensitive physical processes."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The argument identifies a genuine explanatory demand but leaves a substantial unsupported conditional from physical causation to nonrationality."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Neural and chemical descriptions illustrate physical realization, but they do not establish that reasoning cannot be truth-sensitive."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supplies the nonrational-causal-production requirement."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive passage states its causal challenge without expressly examining a developed rival physicalist account."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies particles, chemical reactions, and neural firing as belief-producing processes and labels them mechanical and mindless rather than truth-committed.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-selection-fitness-truth-gap",
+      "sectionId": "evolution-fitness-and-truth",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "constructive",
+      "proposition": "Natural selection favors survival and reproduction rather than truth, so faculties adapted for practical behavior lack warrant when extended to abstract conclusions in theology, epistemology, ethics, and metaphysics.",
+      "sourceSpan": {
+        "startEvent": 664,
+        "endEvent": 787
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This extended argument remains within David Wood's clearly introduced and uninterrupted opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-fitness-truth-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move develops the principal evolutionary bridge by contrasting selection for practical fitness with reliability in abstract metaphysical inquiry.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within constructive moves, it directly and extensively develops the debate's central evolutionary challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The practical-versus-abstract contrast is clear, but the conclusion ranges broadly over several disciplines without specifying degrees of reliability."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Selection's direct orientation toward fitness is relevant, but it does not alone establish almost no basis for abstract truth tracking."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The fitness-truth distinction is coherent, but a material bridge from nonselection for abstract truth to inadequate reliability remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Practical adaptive examples and the cited evolutionary observation support the concern, while the extrapolation to broad unreliability is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is direct and extensive support for the fitness-truth-gap bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive argument does not expressly engage a developed account connecting practical success to general cognitive reliability."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts food, combat, and mating functions with theology, epistemology, ethics, and metaphysics, then invokes the priority of survival over truth.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-social-selection-dependable-cognition",
+      "sectionId": "evolution-fitness-and-truth",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "Human social evolution favored empathy, cooperation, trustworthiness, and widening concern, giving selection reasons to preserve dependable social cognition.",
+      "sourceSpan": {
+        "startEvent": 814,
+        "endEvent": 878
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly begins Aron Ra's rebuttal, and this passage continues without a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-fitness-truth-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-selection-fitness-truth-gap",
+          "pro-nonrational-physical-belief-production"
+        ],
+        "components": [
+          {
+            "componentId": "con-social-selection-dependable-cognition-component-01",
+            "targetMoveId": "pro-selection-fitness-truth-gap",
+            "text": "Whether evolutionary selection supplies any reason to expect dependable human cognition rather than merely fitness-producing behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-social-selection-dependable-cognition-component-02",
+            "targetMoveId": "pro-nonrational-physical-belief-production",
+            "text": "Whether naturally produced social cognition can be dependable in practice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-social-selection-dependable-cognition-component-03",
+            "targetMoveId": "pro-selection-fitness-truth-gap",
+            "text": "Whether dependable social cognition extends to comprehensive metaphysical truth.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the evolutionary-reliability demand by identifying selection for dependable social traits, but it does not bridge social dependability to abstract worldview cognition.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive selection premise while leaving the opponent's abstract-domain extension substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Dependability is clear in the social domain, but any extension from trustworthy behavior to general cognition is left only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The social-selection claim fits the examples, though its bearing on broad cognitive reliability requires an unstated scope qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Selection can favor socially useful behavior without producing reliable abstract metaphysical cognition.",
+        "decisiveQualification": "The reply directly supports local social dependability but not comprehensive truth tracking."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Selection for reliable partners coherently explains some dependable cognition, but the bridge to the challenged abstract domain remains material."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The contrast between dependable and selfish group members is relevant, though it is asserted without representative support or domain comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claim that selection provides no reliability-promoting pressures."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly addresses the evolutionary concern at a limited level, while leaving the decisive domain-extension qualification unresolved."
+        }
+      },
+      "evidenceBasis": "The excerpt says dependable, empathetic, cooperative individuals were favored while selfish and unreliable individuals were selected against over generations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cooperation-does-not-entail-cosmic-truth",
+      "sectionId": "evolution-fitness-and-truth",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "Evolutionary explanations of empathy and cooperative herd behavior do not establish that human cognitive faculties reliably discover comprehensive truths about the universe.",
+      "sourceSpan": {
+        "startEvent": 1121,
+        "endEvent": 1141
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "David explicitly summarizes Aron's evolutionary account of ethics, concedes its population-mechanics claims, and identifies the inference he disputes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-fitness-truth-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-social-selection-dependable-cognition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cooperation-does-not-entail-cosmic-truth-component-01",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether selection for empathy and dependable cooperation establishes reliability for comprehensive worldview judgments.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cooperation-does-not-entail-cosmic-truth-component-02",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether local social competence supplies a bridge to discovering truths about the universe.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the missing domain-extension inference and states that cooperative herd behavior does not warrant comprehensive cosmic truth claims.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly diagnoses and states the consequence of the decisive missing inference in the targeted reply."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The local social-versus-comprehensive worldview distinction is explicit, stable, and central to the stated objection."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move claims only non-entailment, and the targeted social-selection evidence does not itself provide the disputed extension."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Social cooperation may be one component of a broader evolved capacity for dependable reasoning.",
+        "decisiveQualification": "The cited social mechanism alone does not establish reliability for comprehensive metaphysical inquiry."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The non-entailment diagnosis is explicit, consistent, and directly resolves the strongest validity problem in the targeted inference."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The target's limited social examples strongly support the scope criticism, though the reply does not compare broader reliability mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the reply directly reinforces the fitness-truth gap by exposing the missing extension."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply accepts the opponent's population-mechanics point and accurately isolates what that point does not yet establish."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly contrasts herd instincts and care for conspecifics with an asserted ability to discover grand truths about the universe.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-determinism-epiphenomenalism-defeaters",
+      "sectionId": "physical-causation-and-rational-agency",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "Evolutionary naturalism supplies potential defeaters for worldview belief through causal determination and mental states that are mere byproducts without a causal role in producing conclusions.",
+      "sourceSpan": {
+        "startEvent": 1142,
+        "endEvent": 1226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same identified speaker develops a connected sequence of naturalism-specific cognitive objections without interruption until shifting to Aron's flat-earth example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-nonrational-causal-production"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-social-selection-dependable-cognition",
+          "con-known-world-not-universal-negative"
+        ],
+        "components": [
+          {
+            "componentId": "pro-determinism-epiphenomenalism-defeaters-component-01",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether evolved social dependability answers the alleged causal exclusion or epiphenomenalism problem for rational thought.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-determinism-epiphenomenalism-defeaters-component-02",
+            "targetMoveId": "con-known-world-not-universal-negative",
+            "text": "Whether accepting only the known world addresses naturalism's account of mental causation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move presents a distinct causal-defeater argument relevant to cognitive reliability, but it does not answer the decisive social-selection mechanism advanced earlier.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "It is issue-bearing contrary material, yet it leaves the selected target's decisive social-selection component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The epiphenomenal train-whistle analogy is recoverable, but its scope across forms of evolutionary naturalism is not fully delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The proposition presents potential defeaters rather than claiming every naturalist must accept epiphenomenalism, fitting the available support."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "If mental states are causally idle, the stated rational-causation concern follows, though applicability to naturalism generally is bounded."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The Huxley analogy clearly illustrates epiphenomenalism, but does not establish that the debated naturalism entails that position."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supports the nonrational-causal-production bridge through a specific possible defeater."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The passage develops a causal possibility without expressly assessing a developed non-epiphenomenalist naturalist alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt compares physical processes to a train and mental states to a whistle that exists but plays no causal role in producing motion.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-natural-reinterpretation-insulation",
+      "sectionId": "falsifiability-and-supernatural-evidence",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "A naturalism that reinterprets every conceivable apparent manifestation of God as aliens or another natural cause becomes insulated from contrary evidence.",
+      "sourceSpan": {
+        "startEvent": 1227,
+        "endEvent": 1273
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "David explicitly takes up Aron's good-faith criterion and develops the Dawkins, powerful-alien, Shermer, and Atkins examples as a continuous rebuttal.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-evidential-openness-test"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-social-selection-dependable-cognition",
+          "con-known-world-not-universal-negative"
+        ],
+        "components": [
+          {
+            "componentId": "pro-natural-reinterpretation-insulation-component-01",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether evolutionary selection for dependable social behavior supports cognitive reliability.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-natural-reinterpretation-insulation-component-02",
+            "targetMoveId": "con-known-world-not-universal-negative",
+            "text": "Whether naturalism remains merely provisional if every apparent exception receives a natural reinterpretation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the earlier provisional-naturalism framing through a falsifiability challenge, but does not address the primary social-selection reliability claim.",
+        "responsivenessWithinClass": {
+          "value": 65,
+          "rationale": "It provides substantial issue-bearing contrary material and contacts a secondary target, while leaving the primary target uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The insulation concern is clear, though 'every conceivable manifestation' depends on examples attributed broadly to naturalists."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional claim that universal reinterpretation would insulate naturalism is proportionate to the examples and explicitly hypothetical."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural explanations may remain preferable without naturalism being immune to all possible contrary evidence.",
+        "decisiveQualification": "The criticism applies only if every conceivable manifestation is rejected in advance regardless of evidential pattern."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The conditional inference from unrestricted reinterpretation to evidential insulation is coherent, with a bounded applicability qualification."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The cited hypothetical reactions make the concern intelligible, but their representativeness and actual commitment remain underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports the evidential-openness test through a falsifiability challenge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The conditional formulation preserves the stronger naturalist alternative, although the examples do not establish that all defenders adopt the policy."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether any apparent divine manifestation would be reclassified as aliens or another natural cause regardless of its form.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-additional-supernatural-burden",
+      "sectionId": "worldview-definition-and-burden",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "Because both sides accept the known natural world, the person adding a supernatural realm bears the burden of justifying that addition through independent, repeatable, objective verification.",
+      "sourceSpan": {
+        "startEvent": 1323,
+        "endEvent": 1357
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Aron the rebuttal, and Aron directly contrasts the shared natural world with Wood's additional supernatural assumption throughout the window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-supernatural-evidential-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-metaphysical-naturalism-positive-burden",
+          "pro-natural-reinterpretation-insulation",
+          "pro-selection-fitness-truth-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-additional-supernatural-burden-component-01",
+            "targetMoveId": "pro-metaphysical-naturalism-positive-burden",
+            "text": "Which side bears a positive burden when one party adds a supernatural realm to the shared natural world.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-additional-supernatural-burden-component-02",
+            "targetMoveId": "pro-natural-reinterpretation-insulation",
+            "text": "Whether independent repeatable verification supplies an evidential condition for supernatural claims.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-additional-supernatural-burden-component-03",
+            "targetMoveId": "pro-selection-fitness-truth-gap",
+            "text": "Whether the cognitive-reliability critique removes the supernatural claimant's evidential burden.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests the burden allocation and gives a verification standard, but it does not answer the independent internal-defeat argument.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive burden component and an evidential-openness component, while leaving the cognitive-defeater component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The shared-world premise, additional supernatural claim, and requested verification standard are explicitly and consistently stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Requiring a claimant to justify an added supernatural assumption is proportionate to the limited burden-allocation conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism as an exclusive metaphysical thesis may itself bear a positive burden in this motion.",
+        "decisiveQualification": "That burden does not eliminate the separate burden for anyone asserting an additional supernatural realm."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The burden inference from an additional asserted realm to a duty of justification is explicit and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The shared-versus-added-claim structure supports the burden conclusion, though the demanded repeatability standard receives limited defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supports the supernatural-evidential-burden bridge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move preserves the distinction between shared natural commitments and the separate evidential burden created by an added ontology."
+        }
+      },
+      "evidenceBasis": "The excerpt says both sides accept the known natural world and requires Wood to justify his additional supernatural assumption rather than shifting that burden.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-personal-debunking-limited-scope",
+      "sectionId": "objective-inquiry-and-cognitive-correction",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "A person's skeptical experiences with failed supernatural claims do not by themselves justify dismissing the wider body of reported miracles, especially if that person's worldview raises doubts about cognitive reliability.",
+      "sourceSpan": {
+        "startEvent": 1564,
+        "endEvent": 1616
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "David takes over after Aron's short reply and directly contrasts Aron's experiences with other reported experiences before returning to the cognitive-reliability objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-operational-cognitive-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-additional-supernatural-burden",
+          "con-social-selection-dependable-cognition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-personal-debunking-limited-scope-component-01",
+            "targetMoveId": "con-additional-supernatural-burden",
+            "text": "Whether failures within one person's examined cases justify dismissing the broader reported evidence for supernatural events.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-personal-debunking-limited-scope-component-02",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether the naturalist can rely on personal cognitive judgments while defending evolved cognitive reliability.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the evidential scope of the opponent's skeptical experience and reconnects that limitation to the cognitive-reliability dispute.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts a material evidential component but does not directly answer the independent-verification standard itself."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The limited-sample criticism is clear, but references to the wider miracle record and omniscience are rhetorically broad and incompletely scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Personal cases plainly do not settle all reports, but the omniscience comparison overstates what the opponent must claim."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Repeated failed checks can rationally lower confidence without claiming exhaustive knowledge of every report.",
+        "decisiveQualification": "Those checks alone still do not dispose of unexamined, independently documented cases."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The sample-to-universal criticism is sound, but the move partly conflates provisional doubt with a claim to know every report is false."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The argument relies on an unspecified wider body of miracle reports and does not provide representative documentation in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it materially attacks the breadth of the operational correction and verification claim."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The core scope criticism is fair, but the omniscience framing materially weakens the opponent's provisional evidential position."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts Aron's own failed experiences with everyone else's reports and argues that limited cognition cannot warrant a universal dismissal.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-repeated-testing-and-disconfirmation",
+      "sectionId": "falsifiability-and-supernatural-evidence",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "Repeated objective failure of supernatural claims, together with explicit conditions that would change his mind, supports naturalism without claiming omniscience or insulating it from evidence.",
+      "sourceSpan": {
+        "startEvent": 1617,
+        "endEvent": 1679
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Aron expressly denies David's characterization and gives a continuous first-person account of failed verification and his evidential conditions through the end of the core.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-provisional-evidential-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-personal-debunking-limited-scope",
+          "pro-natural-reinterpretation-insulation"
+        ],
+        "components": [
+          {
+            "componentId": "con-repeated-testing-and-disconfirmation-component-01",
+            "targetMoveId": "pro-personal-debunking-limited-scope",
+            "text": "Whether the naturalist claims exhaustive knowledge or instead relies provisionally on repeated objective failures and remains corrigible.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-repeated-testing-and-disconfirmation-component-02",
+            "targetMoveId": "pro-natural-reinterpretation-insulation",
+            "text": "Whether any conceivable evidence could change the naturalist's position.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-repeated-testing-and-disconfirmation-component-03",
+            "targetMoveId": "pro-personal-debunking-limited-scope",
+            "text": "Whether the referenced testing is publicly corroborated rather than merely personal.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply denies the omniscience characterization, cites corroborated past testing, and states that verified supernatural evidence would alter the position.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive scope and openness components, although detailed documentation of the tests remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The position is expressly provisional, tied to past verified experience, and distinguished from certainty or omniscience."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The provisional inference fits repeated failures, though 'never been any demonstration' is broader than the excerpt's documented basis establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unexamined supernatural reports may contain stronger evidence than the failures previously investigated.",
+        "decisiveQualification": "The speaker claims provisional warrant from checked failures, not exhaustive disproof of every possible report."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Repeated failed verification coherently supports provisional doubt, and explicit revisability blocks the claimed insulation inference."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move invokes corroborated experience and a verification condition, but supplies no representative test details in the selected evidence."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within the motion tier, it directly supports provisional evidential warrant and rebuts alleged omniscience and insulation."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply accurately narrows its conclusion and preserves openness to verified exceptions while answering the omniscience charge."
+        }
+      },
+      "evidenceBasis": "The excerpt appeals to past objective experience confirmed by others, denies verified supernatural demonstrations, and describes the conclusion as evidence-dependent.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-internal-defeat-without-alternative-proof",
+      "sectionId": "worldview-definition-and-burden",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "Naturalism can be rejected or rational confidence withheld without proving supernaturalism if its own account of nonrational causes and survival-oriented cognition makes affirmation internally incoherent.",
+      "sourceSpan": {
+        "startEvent": 1783,
+        "endEvent": 1853
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wood explicitly identifies his philosophical response, defines metaphysical naturalism, and develops the omnipotent-deceiver and cognitive-faculty analogies.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-internal-defeat-without-supernatural-proof"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-additional-supernatural-burden",
+          "con-repeated-testing-and-disconfirmation",
+          "con-social-selection-dependable-cognition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-internal-defeat-without-alternative-proof-component-01",
+            "targetMoveId": "con-additional-supernatural-burden",
+            "text": "Whether an internal critique of naturalism must first demonstrate that a supernatural alternative exists.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-internal-defeat-without-alternative-proof-component-02",
+            "targetMoveId": "con-repeated-testing-and-disconfirmation",
+            "text": "Whether past failed supernatural tests answer the internal cognitive-defeater argument.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-internal-defeat-without-alternative-proof-component-03",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether survival-oriented faculties are warranted when extended beyond their adaptive domain.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the supernatural-proof demand as irrelevant to an internal-defeat argument and states that rational confidence may be withheld on internal grounds.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly defeats the primary burden demand and also reconnects the consequence to the central cognition dispute."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between internal defeat and proof of an alternative is explicit, and the conclusion is limited to rejection or withholding confidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims that internal incoherence can suffice without claiming that it has conclusively established supernaturalism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A supernatural claimant retains an evidential burden even if naturalism faces an internal challenge.",
+        "decisiveQualification": "That separate burden does not have to be completed before an internal objection to naturalism can be assessed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between defeating a position and proving a rival is explicit and resolves the strongest burden-confusion challenge."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The structural burden point is strong, while the underlying claim that naturalistic faculties are actually defeated remains dependent on earlier compressed warrants."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supplies the internal-defeat-without-supernatural-proof bridge."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply preserves the legitimate supernatural burden while accurately rejecting its use as a prerequisite for internal critique."
+        }
+      },
+      "evidenceBasis": "The excerpt returns to nonrational causes and survival-oriented faculties and argues that their alleged limitations undermine naturalism independently of proving supernaturalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-provisional-sensory-reliance",
+      "sectionId": "objective-inquiry-and-cognitive-correction",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "Humans must provisionally accept sensory experience as reality, while claims of an exception to the natural world still require supporting evidence.",
+      "sourceSpan": {
+        "startEvent": 1854,
+        "endEvent": 1885
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker invokes Hume's claim that humans have no choice but to trust perception, then restates Aron's two formulations of the evidential burden.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-operational-cognitive-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-internal-defeat-without-alternative-proof",
+          "pro-metaphysical-naturalism-positive-burden",
+          "pro-selection-fitness-truth-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-provisional-sensory-reliance-component-01",
+            "targetMoveId": "pro-internal-defeat-without-alternative-proof",
+            "text": "Whether unavoidable provisional reliance on perception supplies a workable response to the proposed global cognitive defeat.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-provisional-sensory-reliance-component-02",
+            "targetMoveId": "pro-metaphysical-naturalism-positive-burden",
+            "text": "Whether either formulation of naturalism eliminates the claimant's burden to show an additional reality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-provisional-sensory-reliance-component-03",
+            "targetMoveId": "pro-selection-fitness-truth-gap",
+            "text": "Whether provisional sensory reliance establishes abstract worldview reliability.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the global-defeat issue through unavoidable provisional reliance and restates the evidential burden, but does not solve the abstract-domain reliability gap.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts a decisive practical component but leaves the central evolutionary extension substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Provisional sensory acceptance is clear, but the excerpt shifts between exclusive naturalism and belief in the known natural world."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The unavoidable practical reliance claim is proportionate and expressly provisional rather than a claim of infallibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unavoidable reliance on perception may be pragmatically necessary without defeating a narrower warrant challenge to metaphysical conclusions.",
+        "decisiveQualification": "The reply establishes a starting point for inquiry, not full reliability in every abstract domain."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Unavoidable provisional reliance provides a coherent anti-skeptical starting point, with one material bridge to worldview-level warrant."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The appeal to unavoidable perception supports practical reliance, though the excerpt does not establish its reliability beyond that necessity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supports operational cognitive reliability through provisional experience."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly answers global skepticism at the practical level while leaving the narrower metaphysical-reliability qualification intact."
+        }
+      },
+      "evidenceBasis": "The excerpt says humans must accept perceived reality provisionally and maintains that evidence is still required for an asserted reality beyond the natural world.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-data-over-experience",
+      "sectionId": "objective-inquiry-and-cognitive-correction",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "Objective data rather than authorities or personal experiences should govern belief, because personal cognition can be unreliable and therefore requires public verification.",
+      "sourceSpan": {
+        "startEvent": 2152,
+        "endEvent": 2168
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person account of formerly trusting personal experience and demanding objective verification is characteristic of Aron's stated evidential position throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-operational-cognitive-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-personal-debunking-limited-scope",
+          "pro-internal-defeat-without-alternative-proof",
+          "pro-selection-fitness-truth-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-data-over-experience-component-01",
+            "targetMoveId": "pro-personal-debunking-limited-scope",
+            "text": "Whether conclusions should rest on personal skeptical experience or on publicly verifiable objective data.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-data-over-experience-component-02",
+            "targetMoveId": "pro-internal-defeat-without-alternative-proof",
+            "text": "Whether acknowledged individual unreliability entails defeat when objective checking remains available.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-data-over-experience-component-03",
+            "targetMoveId": "pro-selection-fitness-truth-gap",
+            "text": "Whether public verification establishes reliable cognition for unverified metaphysical conclusions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly replaces reliance on personal experience with objective verification and uses correction to resist global defeat, while leaving limits beyond verification unresolved.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive correction mechanism but does not fully answer the opponent's challenge about cognition outside testable domains."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The hierarchy between personal experience, authority, data, and objective verification is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Requiring objective checks is well supported, though calling personal experiences meaningless is stronger than their limited evidential status warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Personal experience can provide defeasible evidence even when it falls short of public verification.",
+        "decisiveQualification": "For shared worldview conclusions, objective corroboration properly carries substantially greater evidential weight."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Acknowledging individual error while relying on public correction is coherent and avoids inferring global unreliability from personal fallibility."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The speaker's own corrected experience illustrates the mechanism, but no specific public verification procedure or result is documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supports operational cognitive reliability through shared objective correction."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move preserves the need for correction but rhetorically understates the possible defeasible value of personal experience."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects authority and personal experience as governing standards, acknowledges self-error, and demands objective verification based on data.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-supernatural-causes-natural-effects",
+      "sectionId": "falsifiability-and-supernatural-evidence",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "A supernatural event would produce observable natural effects that remain open to competing natural reinterpretations, so identifying supernatural causation depends on evidential patterns rather than a direct measuring device.",
+      "sourceSpan": {
+        "startEvent": 2476,
+        "endEvent": 2510
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "An audience member addresses David, after which Wood answers in the first person and uses a miraculous cancer-healing example before Aron begins disagreeing.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-supernatural-evidential-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-repeated-testing-and-disconfirmation",
+          "con-objective-data-over-experience",
+          "con-provisional-sensory-reliance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-supernatural-causes-natural-effects-component-01",
+            "targetMoveId": "con-repeated-testing-and-disconfirmation",
+            "text": "How a supernatural event could become objectively available for testing if the supernatural itself is not directly measurable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-supernatural-causes-natural-effects-component-02",
+            "targetMoveId": "con-objective-data-over-experience",
+            "text": "Whether observable natural effects can provide objective evidence of an allegedly supernatural cause.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-supernatural-causes-natural-effects-component-03",
+            "targetMoveId": "con-provisional-sensory-reliance",
+            "text": "Whether an apparent exception still requires evidential discrimination from natural causes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies observable natural effects as the evidential interface for supernatural causation while acknowledging that competing natural explanations remain possible.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "It contacts the verification demand directly, though it leaves the discriminating evidential pattern only broadly described."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between an unmeasured cause and measurable downstream effects is explicit, with rival explanations acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The miraculous-healing example is presented as a possible evidential pattern rather than conclusive proof of supernatural causation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An unexplained recovery may still have an unknown natural cause rather than a supernatural cause.",
+        "decisiveQualification": "Observable timing and medical change can be evidence considered among rivals without automatically identifying the cause."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The cause-effect distinction coherently explains indirect testing, though criteria for selecting supernatural causation remain incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The cancer-healing hypothetical illustrates indirect evidence but supplies no actual documented case, base rate, or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it materially attacks the claim that supernatural causes cannot meet an objective evidential burden."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply explicitly permits natural reinterpretation and limits its claim to how supernatural causation could enter evidential assessment."
+        }
+      },
+      "evidenceBasis": "The excerpt says a supernatural occurrence would produce a natural-world result and illustrates this with an apparent immediate healing while acknowledging measurement difficulty.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-correction-limited-beyond-verification",
+      "sectionId": "objective-inquiry-and-cognitive-correction",
+      "side": "pro",
+      "speaker": "David Wood",
+      "moveKind": "reply",
+      "proposition": "Collaborative checking of measurable cognitive errors does not by itself warrant treating survival-shaped faculties as reliable for naturalistic conclusions that extend beyond verification.",
+      "sourceSpan": {
+        "startEvent": 2723,
+        "endEvent": 2753
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response restates the cognitive-faculty argument advanced by David throughout the debate and directly answers the naturalist questioner.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-operational-cognitive-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-data-over-experience",
+          "con-provisional-sensory-reliance",
+          "con-social-selection-dependable-cognition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-correction-limited-beyond-verification-component-01",
+            "targetMoveId": "con-objective-data-over-experience",
+            "text": "Whether collaborative correction of measurable errors warrants trust in naturalistic conclusions that extend beyond available verification.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-correction-limited-beyond-verification-component-02",
+            "targetMoveId": "con-provisional-sensory-reliance",
+            "text": "Whether unavoidable provisional reliance establishes stronger worldview-level reliability.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-correction-limited-beyond-verification-component-03",
+            "targetMoveId": "con-social-selection-dependable-cognition",
+            "text": "Whether survival-shaped faculties are reliable outside their adaptive and testable domains.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the scope limit in objective correction and states that success within measurable domains does not establish reliability beyond verification.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly diagnoses the decisive scope inference and states the limiting consequence for the opponent's correction mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between measurable correction and conclusions beyond verification is explicit and stably framed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move asserts a limited non-entailment: correction in one domain does not by itself warrant extension beyond that domain."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Collaborative inquiry can extend reliability through indirect tests, models, and converging evidence beyond immediate perception.",
+        "decisiveQualification": "Such extensions still require specified verification links rather than reliability inferred solely from local correction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The scope-limitation inference is explicit and valid, requiring additional warrants before local correction supports remote metaphysical conclusions."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The distinction is conceptually well supported, though the excerpt does not identify particular naturalist conclusions wholly beyond verification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claimed adequacy of operational cognitive correction."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The criticism leaves room for indirect verification and accurately targets only an unsupported extension beyond demonstrated correction."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the acknowledged state and evolutionary origin of cognition with treating those faculties as substantially more reliable than verified performance supports.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-consider-documented-healing",
+      "sectionId": "falsifiability-and-supernatural-evidence",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "A documented apparent healing should be considered rather than dismissed, while prior citation failures justify doubt pending examination of the supporting documentation.",
+      "sourceSpan": {
+        "startEvent": 2779,
+        "endEvent": 2798
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer expresses Aron's evidence-first skepticism and refers to his recurring experience debating creationists and checking their cited papers.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-disconfirmation-openness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-supernatural-causes-natural-effects",
+          "pro-natural-reinterpretation-insulation"
+        ],
+        "components": [
+          {
+            "componentId": "con-consider-documented-healing-component-01",
+            "targetMoveId": "pro-supernatural-causes-natural-effects",
+            "text": "Whether documentation of an apparent miraculous healing would be considered rather than rejected because it conflicts with naturalism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-consider-documented-healing-component-02",
+            "targetMoveId": "pro-natural-reinterpretation-insulation",
+            "text": "Whether the naturalist remains open to contrary documented evidence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-consider-documented-healing-component-03",
+            "targetMoveId": "pro-supernatural-causes-natural-effects",
+            "text": "Whether prior citation failures justify skepticism before examining the new documentation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly promises to consider supporting documentation and explains that prior failed citations affect expectations without foreclosing examination.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts the decisive evidential-openness demand and gives a qualified, revisable response to the proposed case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between considering documentation and predicting that it may fail is explicit and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The skeptical expectation is expressly defeasible, and the speaker states that adequate documentation would require reconsideration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A documented healing could constitute meaningful evidence even if similar citations have previously failed.",
+        "decisiveQualification": "Prior failures justify caution but not dismissal before examining the specific documentation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "Openness to documentation is fully consistent with a skeptical prior based on earlier failures, and no contradiction is present."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Prior citation failures can rationally shape expectation, though the excerpt supplies no representative record of those failures."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supports disconfirmation openness by specifying a kind of evidence that would be considered."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply accurately preserves the live evidential possibility and states the qualification governing its initial skepticism."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects automatic dismissal, says adequate documentation would force consideration, and qualifies the speaker's negative expectation by reference to prior failed citations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-dispute-determinism-rationality-link",
+      "sectionId": "physical-causation-and-rational-agency",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "moveKind": "reply",
+      "proposition": "The descriptions of determinism and rationality used in the critique do not match the naturalist account being defended, so their alleged incompatibility remains unsupported.",
+      "sourceSpan": {
+        "startEvent": 2930,
+        "endEvent": 2945
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person response rejects Wood's definitions from the naturalist side and is followed by Wood directly clarifying his determinism claim.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-challenge-defeater-premises"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-determinism-epiphenomenalism-defeaters",
+          "pro-nonrational-physical-belief-production",
+          "pro-internal-defeat-without-alternative-proof"
+        ],
+        "components": [
+          {
+            "componentId": "con-dispute-determinism-rationality-link-component-01",
+            "targetMoveId": "pro-determinism-epiphenomenalism-defeaters",
+            "text": "Whether the naturalist account being defended entails the determinism and rationality descriptions required by the alleged incompatibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-dispute-determinism-rationality-link-component-02",
+            "targetMoveId": "pro-nonrational-physical-belief-production",
+            "text": "Whether natural physical causation necessarily excludes rational thought.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-dispute-determinism-rationality-link-component-03",
+            "targetMoveId": "pro-internal-defeat-without-alternative-proof",
+            "text": "Whether the internal defeat succeeds if its determinism premise is disputed.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the entailment premise by denying determinism and the offered definitions, but it does not supply a developed alternative account of rational physical causation.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts the decisive premise but supports the denial mostly by assertion, leaving the inferential challenge underanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The disagreement is recoverable, but the speaker does not specify his alternative meanings of determinism and rationality."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker emphasizes limited philosophical study and presents a disagreement rather than a confident demonstration of incompatibility's falsity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The critique may target conditional determinism or epiphenomenalism rather than claim every naturalist endorses strict determinism.",
+        "decisiveQualification": "Denying strict determinism does not by itself answer the separate conditional epiphenomenal or causal-responsiveness argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "Rejecting an unaccepted premise is coherent, but the move leaves its definitions and the reason the incompatibility fails largely unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 53,
+          "rationale": "The excerpt candidly states limited expertise and offers no developed account or evidence supporting the asserted conflict in definitions."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it directly challenges a premise connecting naturalism, determinism, and irrationality."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The response identifies a premise dispute but compresses the opponent's several conditional defeaters into an insufficiently differentiated rejection."
+        }
+      },
+      "evidenceBasis": "The excerpt says the speaker's understanding of determinism and rationality conflicts with Wood's descriptions, denies that reality is deterministic, and asserts that the argument failed.",
+      "assessmentConfidence": "medium"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-contact findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the adjudicated moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion because no separate residual was identified."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-contact findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the adjudicated moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden's completion because no separate residual was identified."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

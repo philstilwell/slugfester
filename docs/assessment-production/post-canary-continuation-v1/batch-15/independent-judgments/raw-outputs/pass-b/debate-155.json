@@ -1,0 +1,1768 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "155",
+  "debateId": "turek-shermer-morality-god-science-2015",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-theistic-grounding-route",
+      "side": "pro",
+      "description": "Establish that objective moral values and duties require a transcendent personal ground, identify God's nature and authority as that ground, and show why evolutionary or material descriptions cannot supply binding normativity.",
+      "successCriteria": "The route succeeds if it connects moral objectivity, obligation, and purpose to an invariant personal source while answering the principal naturalistic, arbitrariness, and moral-knowledge alternatives.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-personal-ground",
+        "tier": "motion",
+        "description": "Show that God, understood as the personal ground of goodness and obligation, explains objective morality more completely than science, evolution, and human flourishing alone."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-standard-authority-purpose",
+          "tier": "central",
+          "description": "Establish that objective moral comparison, binding duties, and human purpose require a standard, authority, and telos beyond individual or social opinion."
+        },
+        {
+          "bridgeId": "pro-central-is-ought-gap",
+          "tier": "central",
+          "description": "Explain why empirical and evolutionary accounts of behavior do not by themselves generate prescriptive duties or an objective hierarchy among competing moral dispositions."
+        },
+        {
+          "bridgeId": "pro-central-divine-nature",
+          "tier": "central",
+          "description": "Defend God's nature as the nonarbitrary moral standard rather than locating goodness outside God or in contingent commands."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-reason-agency",
+          "tier": "subsidiary",
+          "description": "Connect trustworthy reasoning, freedom, and moral agency to a conception of persons not exhausted by blind material processes."
+        },
+        {
+          "bridgeId": "pro-subsidiary-knowledge-grounding",
+          "tier": "subsidiary",
+          "description": "Distinguish questions about knowing or interpreting moral truths from the ontological question of what makes those truths objective."
+        }
+      ]
+    },
+    {
+      "routeId": "con-evolutionary-flourishing-route",
+      "side": "con",
+      "description": "Establish an objective moral framework centered on sentient interests, autonomy, liberty, and flourishing; explain its evolutionary and empirical basis; and challenge the necessity and reliability of divine grounding.",
+      "successCriteria": "The route succeeds if evolved moral capacities and reasoned attention to individual welfare support objective moral judgment while divine-command, scriptural, and theistic accounts face unresolved explanatory or epistemic objections.",
+      "motionBridge": {
+        "bridgeId": "con-motion-naturalistic-ground",
+        "tier": "motion",
+        "description": "Show that science, evolution, and principles of sentient flourishing can explain objective moral capacities and judgments without requiring a supernatural personal ground."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-evolved-capacities",
+          "tier": "central",
+          "description": "Account for empathy, fairness, reciprocity, and cooperation as evolved capacities that make moral understanding and social life possible."
+        },
+        {
+          "bridgeId": "con-central-flourishing-rights",
+          "tier": "central",
+          "description": "Specify survival, flourishing, autonomy, liberty, and equal consideration as standards for judging conduct and constraining aggregate welfare."
+        },
+        {
+          "bridgeId": "con-central-divine-epistemic-challenge",
+          "tier": "central",
+          "description": "Show why rival revelations, interpretive disagreement, historical revision, or contingent commands impede a reliable divine or scriptural moral method."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-moral-progress",
+          "tier": "subsidiary",
+          "description": "Explain moral progress through widening equal consideration, reform led by affected persons, and correction through evidence and reason."
+        },
+        {
+          "bridgeId": "con-subsidiary-theistic-coherence",
+          "tier": "subsidiary",
+          "description": "Test whether suffering and the history of religious moral practice cohere with a perfectly good divine moral ground."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "objective-ground-and-obligation",
+      "title": "The Ground of Objective Standards and Duties",
+      "weightPercent": 30,
+      "rationale": "This section addresses the motion's primary ontological burden: whether objective moral standards and binding obligations require a personal divine source or can exist within a naturalistic account."
+    },
+    {
+      "sectionId": "evolution-description-and-normativity",
+      "title": "Evolution, Flourishing, and the Is–Ought Bridge",
+      "weightPercent": 25,
+      "rationale": "This section tests whether evolved capacities, cooperation, sentient welfare, autonomy, and flourishing can support prescriptive moral judgments rather than merely describe behavior and survival."
+    },
+    {
+      "sectionId": "divine-authority-and-moral-knowledge",
+      "title": "Divine Authority, Revelation, and Moral Knowledge",
+      "weightPercent": 20,
+      "rationale": "This section covers the relationship between moral grounding and moral access, including divine-command arbitrariness, scriptural interpretation, religious diversity, and the distinction between ontology and epistemology."
+    },
+    {
+      "sectionId": "reason-agency-and-materialism",
+      "title": "Reason, Agency, and the Nature of Persons",
+      "weightPercent": 15,
+      "rationale": "This section examines whether material and evolutionary processes can sustain trustworthy reasoning and responsible moral agency, or whether those capacities require an immaterial or theistic basis."
+    },
+    {
+      "sectionId": "moral-progress-and-hard-cases",
+      "title": "Moral Progress, Rights, and Difficult Applications",
+      "weightPercent": 10,
+      "rationale": "This section tests each framework through historical reform and contested cases involving equal rights, liberty, suffering, and conflicts between individual autonomy and collective welfare."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-standard-authority-purpose",
+      "sectionId": "objective-ground-and-obligation",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Objective moral rules require a standard beyond human opinion, an authoritative personal rule-giver, and an objective purpose for human life.",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Turek's uninterrupted opening statement and repeatedly presents the analogy as his own illustration.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-personal-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly states the pro route's standard, authority, and purpose requirements; no earlier opposing target applies.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It clearly develops all three announced components of its constructive claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The three requirements are recoverable and stable, though the claimed necessity is only implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The analogies motivate the requirements but do not establish that each is necessary for objective morality."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The components fit together, but the move leaves a material bridge from rules to a personal rule-giver and telos."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The case rests mainly on the game and map analogies without defending their applicability to morality."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supplies the motion bridge's asserted personal ground and transcendent standard."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing interpretation is examined within this constructive span."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly requires a transcendent standard, authoritative person, and purpose beyond human opinion.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-external-standard",
+      "sectionId": "objective-ground-and-obligation",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Comparative moral judgments presuppose a standard beyond the persons or societies being compared, and God's nature supplies that external moral standard.",
+      "sourceSpan": {
+        "startEvent": 321,
+        "endEvent": 379
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous first-person segment of Turek's opening statement, with no speaker transition or attributed competing speech.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-personal-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move offers comparative moral judgment and God's nature as the pro route's grounding explanation; no target applies.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It clearly connects the comparison analogy to the proposed divine standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claim is recoverable, but external standard shifts from a comparison referent to God's nature without full explanation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A standard beyond compared persons is plausible, but identifying that standard specifically with God remains underwarranted."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The comparison inference is usable, but the bridge from an external criterion to God's nature is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Mother Teresa, Hitler, and map comparisons illustrate the claim but do not independently establish divine grounding."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move directly advances the motion-level claim that God's nature grounds objective comparison."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span advances its own analogy without treating a developed alternative account."
+        }
+      },
+      "evidenceBasis": "The excerpt compares maps, Mother Teresa, and Hitler, then identifies God's nature as the standard.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-description-lacks-authority",
+      "sectionId": "evolution-description-and-normativity",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Evolution describes what happens but lacks the personal authority required to prescribe binding duties about how people ought to behave.",
+      "sourceSpan": {
+        "startEvent": 380,
+        "endEvent": 418
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek remains the sole speaker and explicitly advances the fortune-cookie and legal-authority illustrations in his opening case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-is-ought-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move develops the central is–ought and authority objection to evolution; it has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It expressly distinguishes evolutionary description from authoritative moral prescription."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The descriptive-prescriptive distinction is clear, with the personal-authority premise left as an implicit qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The is–ought challenge is well identified, but only personal authority can supply duties is asserted rather than shown."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution may inform morality without itself being treated as a commanding person.",
+        "decisiveQualification": "An empirical account still needs a normative bridge explaining binding duties."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The descriptive-prescriptive distinction is coherent, with one bounded unsupported bridge to personal authority."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The genetic-code example supports the category distinction, but the exclusive authority claim lacks alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable pro is–ought bridge at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly isolates descriptive evolution, though it compresses naturalistic accounts that add independent normative premises."
+        }
+      },
+      "evidenceBasis": "The excerpt says evolution describes what happens and a mutating genetic code lacks authority to command behavior.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-materialism-undermines-agency",
+      "sectionId": "reason-agency-and-materialism",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Reducing persons to molecular machines undermines free will and trustworthy reasoning, including the rational capacities required for morality and science.",
+      "sourceSpan": {
+        "startEvent": 631,
+        "endEvent": 663
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The argument occurs in Turek's uninterrupted opening statement and includes explicit contrasts between atheism, materialism, and theism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-reason-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the pro subsidiary argument connecting nonmaterial personhood to reason and agency; no target applies.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The causal chain from material mechanism to distrust of reasoning is explicitly presented."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, but material causation, reaction, absence of reason, and unreliability are treated as equivalent."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move asserts that material determination eliminates reasoning and trust without addressing reliable mechanistic cognition."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Material processes can realize reasoning and produce generally reliable beliefs through selection and correction.",
+        "decisiveQualification": "Causal determination alone does not entail absence of inference or epistemic reliability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The conclusion depends on an unsupported transition from physical causation to no reasoning and wholesale unreliability."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "The molecular-machine characterization is asserted without evidence that physical realization defeats rational warrant."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary reason-and-agency bridge and reaches its principal inferential requirement."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "Calling persons mere reacting robots omits the strongest materialist distinction between causal realization and irrationality."
+        }
+      },
+      "evidenceBasis": "The excerpt says molecular machines merely react, lack free will, and therefore cannot trust even atheistic thoughts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-divine-method-contingency",
+      "sectionId": "divine-authority-and-moral-knowledge",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Divine-command and scriptural approaches provide no reliable moral method when commands appear contingent, texts contain conflicting norms, and moral judgments change over time.",
+      "sourceSpan": {
+        "startEvent": 709,
+        "endEvent": 768
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer explicitly identifies Turek's position before presenting this sustained critique during his own uninterrupted opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-divine-epistemic-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-standard-authority-purpose",
+          "pro-divine-external-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-divine-method-contingency-component-01",
+            "targetMoveId": "pro-standard-authority-purpose",
+            "text": "Whether a transcendent personal authority supplies stable and communicable objective moral rules.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-divine-method-contingency-component-02",
+            "targetMoveId": "pro-divine-external-standard",
+            "text": "Whether God's nature can function as a stable external standard despite changing religious judgments.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Changing religious judgments and conflicting norms contact the claimed communicative authority and stability, but do not fully answer the ontological grounding claim.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive authority component but leaves the independent ontological-standard component unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The method objection is clear, but examples of changing believers sometimes broaden into claims about religion generally."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Historical change supports an epistemic challenge, though it cannot alone show that every divine method is unreliable."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Moral truth may remain fixed even when believers misinterpret or slowly recognize it.",
+        "decisiveQualification": "A grounding account still needs a reliable means of identifying commands and resolving conflicting texts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The examples support an epistemic reliability challenge, though changing judgments do not entail a changing ground."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Slavery and marriage supply concrete examples, but the selected evidence does not document the broader textual-conflict claim."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central con bridge challenging reliable divine and scriptural moral access."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The objection preserves the practical epistemic problem but underplays the distinction between truth and changing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt predicts changed religious positions and presents moral change as contrary to a fixed divine-method account.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-sentient-flourishing-ground",
+      "sectionId": "objective-ground-and-obligation",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "constructive",
+      "proposition": "The survival and flourishing of individual sentient beings supplies a basis for objective morality, supported by evolved empathy, reciprocal altruism, and cooperation.",
+      "sourceSpan": {
+        "startEvent": 769,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The entire passage is part of Shermer's uninterrupted opening statement and contains his explicit formulation of an objective moral system.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-naturalistic-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the con route's naturalistic basis in sentient flourishing and evolved social capacities; no target applies.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly identifies both the proposed standard and the capacities supporting it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Sentience and flourishing remain stable, while how conflicts among flourishing interests are resolved is implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move reasonably proposes a moral starting point but overstates the derivation of an objective ought from flourishing."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The proposed foundation is intelligible, but the bridge from evolved concern to objective normative authority remains material."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Empathy, bonding, and cooperation support moral capacity, but they do not alone warrant flourishing as objectively binding."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by proposing a naturalistic objective-morality ground."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive passage does not substantially interpret or answer an opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies empathy and social bonding, then calls sentient survival and flourishing a basis for objective morals.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-fairness-capacities",
+      "sectionId": "evolution-description-and-normativity",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "constructive",
+      "proposition": "Moral emotions and sensitivity to justice and fairness are evolved, innate capacities observable in adults, children, primates, and capuchin monkeys.",
+      "sourceSpan": {
+        "startEvent": 985,
+        "endEvent": 1044
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted presentation remains in Shermer's first-person lecture voice and explains his primate experiment example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evolved-capacities"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies cross-species observations for the con evolved-capacities bridge; no response target applies.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It clearly identifies the capacities, their proposed origin, and the populations in which they appear."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The observed capacities are clear, but innate, evolved, and genetically packaged are asserted across a broad scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Cross-species observation supports evolutionary continuity, but certainty about innateness and genetic specification needs further warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The cross-species pattern coherently supports evolved capacities, with one bounded inference from observation to genetic innateness."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Adults, infants, primates, and capuchins provide representative examples, though experimental details and rival learning accounts are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central evolved-capacities bridge through empathy, fairness, and cross-species continuity."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No meaningful opposing interpretation is developed in this constructive evidentiary span."
+        }
+      },
+      "evidenceBasis": "The excerpt calls justice and fairness evolved and innate and reports their presence in adults, infants, and primates.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scientific-reason-moral-method",
+      "sectionId": "reason-agency-and-materialism",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Science, reason, and Enlightenment humanism offer methods for correcting harmful moral and social beliefs that religious superstition has sustained.",
+      "sourceSpan": {
+        "startEvent": 1105,
+        "endEvent": 1143
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer explicitly labels this his final point and carries the argument continuously through the conclusion of his presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-reason-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-materialism-undermines-agency",
+          "pro-standard-authority-purpose"
+        ],
+        "components": [
+          {
+            "componentId": "con-scientific-reason-moral-method-component-01",
+            "targetMoveId": "pro-materialism-undermines-agency",
+            "text": "Whether material and evolutionary processes can sustain trustworthy reasoning rather than mere reaction.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-scientific-reason-moral-method-component-02",
+            "targetMoveId": "pro-standard-authority-purpose",
+            "text": "Whether science and reason can supply authoritative objective standards rather than only problem-solving methods.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The appeal to successful science and reason bears on rational practice but does not answer the causal argument that materialism allegedly undermines rational warrant.",
+        "responsivenessWithinClass": {
+          "value": 52,
+          "rationale": "It offers relevant contrary practice but leaves the earlier move's decisive materialism-to-unreliability inference untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposed method is recoverable, but religion and superstition are generalized beyond the supplied historical illustration."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Science and reason can correct factual beliefs, but their sufficiency for resolving moral standards is asserted broadly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious moral reasoning can incorporate evidence and reason rather than resting solely on superstition.",
+        "decisiveQualification": "A reliable moral method still requires transparent correction of harmful factual and interpretive claims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The corrective-method conclusion is plausible, but factual problem-solving does not by itself establish moral normativity."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The Enlightenment contrast is historically suggestive but selectively asserted and lacks representative comparison."
+        },
+        "relevanceBurden": {
+          "value": 67,
+          "rationale": "It attacks the subsidiary pro reason bridge, but only indirectly through the demonstrated practice of scientific correction."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The Iron Age and superstition framing materially compresses the strongest intellectually engaged religious alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts earlier Christian superstition with Enlightenment humanism and urges science and reason for moral problems.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-genocide-sentient-rights",
+      "sectionId": "objective-ground-and-obligation",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Genocide is wrong because collectivist extermination destroys sentient individuals' survival, flourishing, rights, and freedom from torture and suffering.",
+      "sourceSpan": {
+        "startEvent": 1161,
+        "endEvent": 1176
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer answers Turek directly in his established vocabulary of sentient beings, survival, flourishing, rights, and collectivism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-naturalistic-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-standard-authority-purpose",
+          "pro-divine-external-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-genocide-sentient-rights-component-01",
+            "targetMoveId": "pro-standard-authority-purpose",
+            "text": "Whether an objective framework can explain why genocide is wrong without a transcendent personal rule-giver.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-genocide-sentient-rights-component-02",
+            "targetMoveId": "pro-divine-external-standard",
+            "text": "Whether comparative condemnation can rest on sentient rights rather than God's nature.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly supplies survival, suffering, rights, and anti-collectivism as grounds for condemnation, while leaving their ultimate authority compressed.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts the decisive demand and offers a concrete rival basis, but does not fully defend that basis's objectivity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The condemnation and protected interests are clear, with the extension of rights beyond humans implicitly bounded by sentience."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Certainty that genocide violates the identified interests fits the direct extermination, suffering, and rights-removal rationale."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Extermination straightforwardly violates survival, bodily security, and rights, though the rights foundation remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The consequences of genocide strongly support the condemnation, but objective rights are invoked rather than independently grounded."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by applying sentient flourishing to a central test case."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The reply supplies its own condemnation rather than interpreting an alternative in a charity-sensitive way."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds genocide's wrongness in extermination, removed rights, torture, suffering, and collectivism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-oppressed-groups-moral-progress",
+      "sectionId": "moral-progress-and-hard-cases",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Moral progress occurs when oppressed people and their allies demand equal rights and societies expand autonomy despite longstanding religious resistance.",
+      "sourceSpan": {
+        "startEvent": 1263,
+        "endEvent": 1284
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer answers the Nazi-values question and continues through linked examples of slavery, women's suffrage, and same-sex marriage.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-moral-progress"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-external-standard",
+          "pro-standard-authority-purpose"
+        ],
+        "components": [
+          {
+            "componentId": "con-oppressed-groups-moral-progress-component-01",
+            "targetMoveId": "pro-divine-external-standard",
+            "text": "Whether God's nature, rather than people or societies, supplies the objective standard for moral comparison.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-oppressed-groups-moral-progress-component-02",
+            "targetMoveId": "pro-standard-authority-purpose",
+            "text": "Whether religious authority reliably communicates and enforces objective moral rules.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Historical religious resistance contacts institutional reliability and moral progress, but does not answer whether God's nature could remain the ontological standard.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "It contacts a secondary authority component while leaving the decisive grounding inference unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The progress mechanism is clear, but claims about Christians opposing reforms are stated without denominational or historical scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Affected-group agency is well illustrated, but universal claims about Christian opposition exceed the selected support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian actors and principles also contributed materially to abolition and other rights reforms.",
+        "decisiveQualification": "Substantial religious resistance can still undermine claims of uniquely reliable scriptural guidance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Oppressed-group advocacy plausibly drives progress, but religious resistance alone does not explain the full causal pattern."
+        },
+        "evidenceWarrant": {
+          "value": 53,
+          "rationale": "Several reforms are named, yet the sweeping historical attribution is selective and insufficiently defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary moral-progress bridge through affected persons, allies, and expanding equal rights."
+        },
+        "representationalCharity": {
+          "value": 54,
+          "rationale": "The assertion that Christians were the objectors omits the decisive mixed history of both religious resistance and reform."
+        }
+      },
+      "evidenceBasis": "The excerpt credits oppressed people and allies while attributing opposition to Christians across several reforms.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rival-gods-evidence",
+      "sectionId": "divine-authority-and-moral-knowledge",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "An outsider requires evidence to distinguish rival claims about the correct God because confidence and monotheistic belief alone cannot adjudicate incompatible authorities.",
+      "sourceSpan": {
+        "startEvent": 1567,
+        "endEvent": 1576
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shermer explicitly restates his point, asks how outsiders can identify the right God, and presses Turek for supporting evidence.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-divine-epistemic-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-external-standard",
+          "pro-standard-authority-purpose"
+        ],
+        "components": [
+          {
+            "componentId": "con-rival-gods-evidence-component-01",
+            "targetMoveId": "pro-divine-external-standard",
+            "text": "Whether God's nature is the actual external moral standard rather than one asserted divine candidate.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rival-gods-evidence-component-02",
+            "targetMoveId": "pro-standard-authority-purpose",
+            "text": "Whether a purported personal authority can be identified reliably among incompatible religious claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The demand for evidence directly challenges identification of the authoritative God, but does not refute the conditional ontological claim about God's nature.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "It contacts the epistemic authority component while leaving the decisive conditional grounding claim intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The outsider-evidence demand and the incompatibility among claimed gods are both clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The interrogative force appropriately requests discriminating evidence rather than claiming rival gods are disproven."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A cumulative philosophical and historical case might distinguish one conception of God from rivals.",
+        "decisiveQualification": "That evidence must be supplied rather than replaced by confidence or monotheistic agreement."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The outsider cannot choose among incompatible authorities from shared confidence alone; discriminating evidence is logically required."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The existence of rival Muslim and Christian claims supports the demand, though their detailed evidential cases are not compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central divine-epistemic bridge by demanding a reliable discriminator among rival revelations."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The challenge leaves open evidential adjudication and accurately focuses on the need to discriminate incompatible authorities."
+        }
+      },
+      "evidenceBasis": "The excerpt asks how outsiders can identify the right God and repeatedly requests evidence beyond asserted belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-biblical-slavery-distinction",
+      "sectionId": "moral-progress-and-hard-cases",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Biblical slavery differed from race-based chattel slavery, condemned slave trading, affirmed equal human dignity, and contained principles directed toward liberation.",
+      "sourceSpan": {
+        "startEvent": 1647,
+        "endEvent": 1664
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek gives an enumerated answer after requesting his presentation slide, and Shermer resumes the challenge only on the next row.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-moral-progress"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-oppressed-groups-moral-progress",
+          "con-divine-method-contingency"
+        ],
+        "components": [
+          {
+            "componentId": "pro-biblical-slavery-distinction-component-01",
+            "targetMoveId": "con-oppressed-groups-moral-progress",
+            "text": "Whether Christianity uniformly resisted abolition and therefore exemplifies unreliable religious moral guidance.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-biblical-slavery-distinction-component-02",
+            "targetMoveId": "con-divine-method-contingency",
+            "text": "Whether biblical texts contain slavery norms that undermine a stable divine moral method.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes forms of slavery and cites anti-trading and equality principles, though it does not resolve every coercive biblical practice.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts both historical and textual components but leaves important coercion and implementation qualifications unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The distinctions are recoverable, but Old Testament slavery is generalized as voluntary despite the acknowledged captive category."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Some distinctions are relevant, but the categorical description of biblical slavery exceeds the selected evidence and its own exceptions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Biblical slavery included debt service alongside coercive captive and inherited forms unlike modern race slavery.",
+        "decisiveQualification": "Rejecting race-based chattel slavery does not by itself answer the moral status of other coercive ownership."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Condemnation of trading and equal dignity support reform, but do not entail that all permitted slavery was voluntary or liberating."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "Several textual propositions are asserted without representative passages or treatment of counterexamples within biblical law."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary con moral-progress bridge through the slavery example and biblical principles."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply identifies real distinctions but materially underrepresents the strongest objection concerning non-racial coercive servitude."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes debt service and captives from racial slavery and invokes anti-trading and equal-dignity teachings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-ontology-epistemology-distinction",
+      "sectionId": "divine-authority-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Disputes about interpreting and knowing moral rules are epistemic questions distinct from the prior ontological question of what grounds objective moral laws.",
+      "sourceSpan": {
+        "startEvent": 1991,
+        "endEvent": 2020
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek explicitly distinguishes metaphysics from epistemology and illustrates ordinary interpretive principles with familiar metaphors.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-knowledge-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rival-gods-evidence",
+          "con-divine-method-contingency"
+        ],
+        "components": [
+          {
+            "componentId": "pro-ontology-epistemology-distinction-component-01",
+            "targetMoveId": "con-rival-gods-evidence",
+            "text": "Whether difficulty identifying the correct God defeats the ontological claim that God grounds objective morality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-ontology-epistemology-distinction-component-02",
+            "targetMoveId": "con-divine-method-contingency",
+            "text": "Whether interpretive disagreement concerns moral truth's ground or access to that truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly distinguishes grounding from knowledge and interpretation, but it does not satisfy the con route's independent demand for reliable access.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive inference and limits its consequence, while leaving the legitimate epistemic challenge unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Ontology, epistemology, linguistics, and hermeneutics are consistently distinguished and their relationship is expressly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that access and grounding are distinct is well matched to the conceptual distinction offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con challenge targets reliable divine moral methodology, not merely the existence of a metaphysical ground.",
+        "decisiveQualification": "An epistemic failure need not refute ontology but can still impair the route's explanatory completeness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between what grounds a truth and how it is known is explicit, valid, and consistently illustrated."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Ordinary interpretation provides relevant support, though it does not establish that difficult revelations are reliably interpretable."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary pro knowledge-grounding bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The distinction is fair and important, though calling the issue a step removed understates its independent route significance."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly contrasts where objective moral laws come from with linguistics, hermeneutics, and ordinary interpretation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-autonomy-constrains-welfare",
+      "sectionId": "moral-progress-and-hard-cases",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "constructive",
+      "proposition": "Individual autonomy, liberty, and bodily integrity can override aggregate welfare, as shown by the impermissibility of killing one healthy person to save five others.",
+      "sourceSpan": {
+        "startEvent": 2579,
+        "endEvent": 2602
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives the floor to Michael Shermer, and the sustained answer is delivered in his first-person argumentative voice.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-flourishing-rights"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies autonomy and bodily integrity as constraints on aggregate flourishing; no earlier target applies.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The transplant case clearly states the conflict, judgment, and autonomy-based constraint."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The constraint is clear, though the conditions under which autonomy overrides welfare remain implicitly rather than exhaustively bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical judgment in the involuntary organ-harvesting case fits the clearly specified violation of bodily autonomy."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The case coherently demonstrates that aggregate benefit is constrained by individual bodily rights and liberty."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The transplant example is probative, though the phrase that society decided the rule leaves its objective status underexplained."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central flourishing-rights bridge by specifying a constraint on aggregate welfare."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops a hard case without engaging a live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects killing one healthy person for five organs because individual sanctity, autonomy, and liberty override group gain.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-dilemmas-presuppose-value",
+      "sectionId": "moral-progress-and-hard-cases",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Hard moral dilemmas presuppose that human lives possess objective value, supporting the existence of objective moral law and a moral lawgiver.",
+      "sourceSpan": {
+        "startEvent": 2612,
+        "endEvent": 2631
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Frank Turek's response, and the ensuing argument directly contrasts his position with Michael Shermer's example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-flourishing-rights"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-autonomy-constrains-welfare",
+          "con-sentient-flourishing-ground"
+        ],
+        "components": [
+          {
+            "componentId": "pro-dilemmas-presuppose-value-component-01",
+            "targetMoveId": "con-autonomy-constrains-welfare",
+            "text": "Whether the transplant dilemma demonstrates objective individual value and a principled constraint on welfare.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-dilemmas-presuppose-value-component-02",
+            "targetMoveId": "con-sentient-flourishing-ground",
+            "text": "Whether an evolutionary worldview can recognize human value and morally significant dilemmas.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly interprets the dilemma as evidence of objective value, but its move from value to a divine lawgiver and its naturalist caricature remain unsupported.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive example and value premise, while failing to answer the autonomy principle on its own terms."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The argument is recoverable, but objective value, objective law, and divine lawgiver are moved between without stable bridging."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A recognized dilemma does not by itself necessitate a divine lawgiver, and the naturalistic alternative is dismissed categorically."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolutionary naturalists can value sentient lives and defend autonomy without treating people as disposable germs.",
+        "decisiveQualification": "Recognizing value does not settle whether its ground is naturalistic, nonnatural, or divine."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 48,
+          "rationale": "The inference from a hard dilemma to objective value is plausible, but the further necessity of a lawgiver is a non sequitur."
+        },
+        "evidenceWarrant": {
+          "value": 43,
+          "rationale": "The transplant dilemma supports perceived value, while the claims about evolutionary indifference and divine grounding lack support."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central con flourishing-rights bridge through the autonomy dilemma's asserted grounding."
+        },
+        "representationalCharity": {
+          "value": 35,
+          "rationale": "The claim that an evolutionary worldview would push everyone treats a live rights-based alternative as if it had no values."
+        }
+      },
+      "evidenceBasis": "The excerpt says the dilemma presupposes valuable life, caricatures evolutionary indifference, and infers a moral lawgiver.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-survival-cannot-prescribe",
+      "sectionId": "evolution-description-and-normativity",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Evolution and material processes describe what survives but cannot prescribe what ought to survive or impose binding duties to cooperate rather than exploit.",
+      "sourceSpan": {
+        "startEvent": 2667,
+        "endEvent": 2706
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted closing statement uses Turek's characteristic first-person references to Michael and develops the pro side's naturalism critique.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-naturalistic-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-sentient-flourishing-ground",
+          "con-evolved-fairness-capacities",
+          "con-autonomy-constrains-welfare"
+        ],
+        "components": [
+          {
+            "componentId": "pro-survival-cannot-prescribe-component-01",
+            "targetMoveId": "con-sentient-flourishing-ground",
+            "text": "Whether survival and flourishing can generate objective prescriptions rather than merely identify evolved outcomes.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-survival-cannot-prescribe-component-02",
+            "targetMoveId": "con-evolved-fairness-capacities",
+            "text": "Whether evolved cooperation has normative priority over evolved exploitation or violence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-survival-cannot-prescribe-component-03",
+            "targetMoveId": "con-autonomy-constrains-welfare",
+            "text": "Whether autonomy supplies an independent normative constraint beyond descriptive survival.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly presses the is–ought and selection-among-dispositions objections, but it does not address autonomy as an independent normative premise.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts the decisive flourishing-ground component and a second evolutionary component, leaving the autonomy constraint unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The descriptive-prescriptive distinction and questions about which beings and behaviors ought to survive are expressly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The is–ought objection is strong against bare evolution, but the move assumes the con case contains no independent normative premises."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con framework adds sentient interests, equal consideration, and autonomy rather than deriving duties from survival alone.",
+        "decisiveQualification": "Those added standards still require a defended account of objective normative authority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The challenge correctly distinguishes what survives from what ought to survive, with a bounded overreach against richer premises."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Contrasting cooperation, exploitation, and Nazi survival concretely exposes underdetermination, though rival normative premises are compressed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the con motion bridge by challenging the prescriptive sufficiency of evolution and flourishing."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move identifies the decisive bridge problem but repeatedly reduces the richer flourishing account to survival alone."
+        }
+      },
+      "evidenceBasis": "The excerpt calls the move from material evolution to moral law a category mistake and asks why some survival strategies ought to prevail.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-irreducible-mind-and-values",
+      "sectionId": "reason-agency-and-materialism",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Minds, logical laws, moral values, love, and justice are immaterial realities that cannot be reduced to matter, so persons are more than physical machines.",
+      "sourceSpan": {
+        "startEvent": 2742,
+        "endEvent": 2790
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted closing statement remains in Turek's voice and explicitly opposes Michael's materialism while advancing a soul-body distinction.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-reason-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scientific-reason-moral-method",
+          "con-evolved-fairness-capacities"
+        ],
+        "components": [
+          {
+            "componentId": "pro-irreducible-mind-and-values-component-01",
+            "targetMoveId": "con-scientific-reason-moral-method",
+            "text": "Whether science and reason provide practical methods for correcting harmful moral beliefs.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-irreducible-mind-and-values-component-02",
+            "targetMoveId": "con-evolved-fairness-capacities",
+            "text": "Whether evolved physical organisms can instantiate moral cognition and fairness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The immateriality claim bears on physical realization of moral cognition but does not answer whether scientific reasoning functions as a corrective method.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "It contacts a secondary physical-realization issue while leaving the primary methodological demand unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "materially-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Immaterial alternates between abstract propositions, descriptive laws, mental states, and values as though they shared one ontology."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Nonphysical description or abstractness does not establish causal substance dualism or the irreducibility of persons."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Abstract truths can be nonmaterial while minds and moral cognition are physically realized.",
+        "decisiveQualification": "Irreducibility of propositions does not entail an immaterial personal substance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 54,
+          "rationale": "The conclusion that persons exceed matter does not follow from grouping abstract laws, values, and mental phenomena as immaterial."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "Gravity's law and moral concepts are illustrative, but no warrant connects their abstract status to a nonphysical mind."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary pro reason-and-agency bridge through an asserted irreducibility of mind."
+        },
+        "representationalCharity": {
+          "value": 52,
+          "rationale": "The move groups distinct categories together and omits the strongest physicalist distinction between representation and represented truth."
+        }
+      },
+      "evidenceBasis": "The excerpt groups minds, logical and natural laws, morality, love, and justice as realities unexplained by molecules.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-euthyphro-divine-nature",
+      "sectionId": "divine-authority-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Goodness is neither external to God nor arbitrarily invented by divine command because God's unchanging nature is itself the objective moral standard.",
+      "sourceSpan": {
+        "startEvent": 2791,
+        "endEvent": 2805
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek explicitly identifies Michael's earlier Euthyphro challenge and answers both alternatives during his uninterrupted closing statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-nature"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-divine-method-contingency",
+          "con-rival-gods-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-euthyphro-divine-nature-component-01",
+            "targetMoveId": "con-divine-method-contingency",
+            "text": "Whether divine morality must be external to God or arbitrarily created by contingent commands.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-euthyphro-divine-nature-component-02",
+            "targetMoveId": "con-rival-gods-evidence",
+            "text": "Whether identifying God's nature as the standard distinguishes the correct divine claimant.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly rejects both Euthyphro horns by locating the standard in God's unchanging nature, but it does not answer the rival-gods evidence demand.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly diagnoses the dilemma's assumed alternatives and states the proposed defeating third account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two horns and the proposed divine-nature alternative are clearly and consistently stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The third-option response defeats the stated dichotomy, though it does not independently prove that divine nature is good."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even if goodness is God's nature, one may ask whether calling that nature good is substantive or stipulative.",
+        "decisiveQualification": "The divine-nature account avoids arbitrary commands but still needs an explanatory account of goodness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Locating goodness in an unchanging nature is a coherent third option, with one bounded explanatory circularity concern."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The conceptual answer is clearly stated, but God's nature and its necessary goodness are asserted rather than defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central divine-nature bridge and answers the principal arbitrariness dilemma."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move accurately states both classic horns but omits the strongest follow-up challenge to the proposed third option."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly states both Euthyphro alternatives and answers that God's nature itself is the objective standard.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-matter-embodies-moral-wisdom",
+      "sectionId": "reason-agency-and-materialism",
+      "side": "con",
+      "speaker": "Michael Shermer",
+      "moveKind": "reply",
+      "proposition": "Sentient beings produced through cosmic and evolutionary processes can embody moral knowledge and wisdom without requiring a supernatural source.",
+      "sourceSpan": {
+        "startEvent": 3016,
+        "endEvent": 3030
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the concluding passage of Shermer's closing statement, marked by his naturalistic cosmic narrative and final thanks before applause.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-reason-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-irreducible-mind-and-values",
+          "pro-materialism-undermines-agency",
+          "pro-description-lacks-authority"
+        ],
+        "components": [
+          {
+            "componentId": "con-matter-embodies-moral-wisdom-component-01",
+            "targetMoveId": "pro-irreducible-mind-and-values",
+            "text": "Whether matter and evolutionary history can produce beings capable of genuine moral knowledge and wisdom.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-matter-embodies-moral-wisdom-component-02",
+            "targetMoveId": "pro-materialism-undermines-agency",
+            "text": "Whether physically constituted persons can reason rather than merely react.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-matter-embodies-moral-wisdom-component-03",
+            "targetMoveId": "pro-description-lacks-authority",
+            "text": "Whether material embodiment itself supplies binding moral authority.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly asserts that carbon-based sentient beings can embody knowledge and wisdom, but it does not explain normative authority or reliable realization.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive realization claim and agency implication, while leaving the authority and mechanism bridges open."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The embodiment claim is recoverable and stable, though the conditions under which matter realizes wisdom remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim that carbon-based beings can embody moral wisdom matches the existence-oriented response offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro claim concerns reduction and explanation, not merely whether carbon-based organisms display moral thought.",
+        "decisiveQualification": "Observed embodiment does not by itself explain consciousness, normativity, or rational warrant."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The existence of sentient carbon beings supports compatibility, but compatibility alone does not explain emergent moral wisdom."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Cosmic and evolutionary continuity supplies a narrative of material composition, not a defended mechanism of moral cognition."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary pro reason-and-agency bridge through the possibility of material moral cognition."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply fairly challenges impossibility but underanswers the stronger explanatory and irreducibility version of the argument."
+        }
+      },
+      "evidenceBasis": "The excerpt traces stellar matter into sentient beings and concludes that carbon atoms can embody moral knowledge and wisdom.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility requirements.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional burden-completion criterion remains outside the locked move judgments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change completion beyond effects already captured."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility requirements.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional burden-completion criterion remains outside the locked move judgments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed residual would not change completion beyond effects already captured."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
