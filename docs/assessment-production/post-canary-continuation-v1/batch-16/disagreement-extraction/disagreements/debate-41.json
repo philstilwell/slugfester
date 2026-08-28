@@ -1,0 +1,2647 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-16-decomposed-consensus",
+  "debateNumber": "41",
+  "debateId": "huemer-bush-objective-moral-facts-2024",
+  "moveDisputes": [
+    {
+      "moveId": "pro-moral-embedding-content",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 81,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 93,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 94
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-folk-indeterminacy",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-folk-indeterminacy-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "The decisive demand contacted is whether ordinary moral commitment supports the realist, attitude-independent interpretation rather than merely defining it.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-folk-indeterminacy-component-02",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "The cruelty verdict might be widely shared without ordinary speakers possessing a determinate metaethical commitment.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-folk-indeterminacy-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Whether familiar first-order reactions establish a widely held determinate realist commitment.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-common-sense"
+              }
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-folk-methodology"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 79,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 80
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-folk-survey-methodology",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-folk-survey-methodology-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "The contacted component is whether evidence about ordinary responses warrants attributing the attitude-independent metaethical position to respondents.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-folk-survey-methodology-component-02",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Responses to concrete normative cases may be mistaken for answers to distinct metaethical questions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-folk-survey-methodology-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Whether ordinary responses to moral cases reliably reveal attitude-independent metaethical commitments.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 68,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-private-realist-seemings",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 19,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-private-realist-seemings-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "The decisive component contacted is whether the asserted realist seeming is shared enough to support the metaethical conclusion beyond the person reporting it.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-private-realist-seemings-component-02",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Private appearances do not by themselves publicly establish that attitude-independent facts exist.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-private-realist-seemings-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Whether the cruelty judgment remains wrong independently of approval, belief, sentiment, or convention.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-quietism-beyond-trilemma",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-moral-embedding-content",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-quietism-beyond-trilemma-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "The decisive demand is the purported exhaustiveness of falsity, attitude-dependent truth, and non-propositionality as alternatives to objective moral facts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-quietism-beyond-trilemma-component-02",
+                  "targetMoveId": "pro-moral-embedding-content",
+                  "text": "Context-sensitive use may preserve proposition-like moral discourse without imposing one uniform semantic analysis.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-moral-embedding-content",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-quietism-beyond-trilemma-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Whether rejecting error theory, stance dependence, and non-cognitivism exhausts the alternatives and yields realism.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-quietism-beyond-trilemma-component-02",
+                  "targetMoveId": "pro-moral-embedding-content",
+                  "text": "Whether propositional behavior forces one uniform realist semantic analysis across moral-language contexts.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 85
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-error-theory-entanglement",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-error-theory-entanglement-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "The decisive demand is whether the intuitive cruelty verdict genuinely contradicts error theory rather than importing assumptions about the error theorist's attitudes and conduct.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-error-theory-entanglement-component-02",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "The move distinguishes error theory's denial of objective facts from pragmatic implications about what its adherents approve or do.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-error-theory-entanglement-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Whether intuitive resistance to cruelty under changed attitudes directly counts against error theory.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-first-order-to-realism",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-folk-indeterminacy",
+                "con-folk-survey-methodology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-first-order-to-realism-component-01",
+                  "targetMoveId": "con-folk-indeterminacy",
+                  "text": "The decisive demand is whether realism must itself be an explicit folk intuition to qualify as supported by common-sense moral judgment.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-first-order-to-realism-component-02",
+                  "targetMoveId": "con-folk-survey-methodology",
+                  "text": "Difficulty understanding direct metaethical questions does not prevent reasoning from clearer first-order judgments.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-folk-indeterminacy",
+                "con-folk-survey-methodology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-first-order-to-realism-component-01",
+                  "targetMoveId": "con-folk-indeterminacy",
+                  "text": "Whether realism must itself be a directly grasped and widely held folk metaethical position.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-first-order-to-realism-component-02",
+                  "targetMoveId": "con-folk-survey-methodology",
+                  "text": "Whether failure to elicit direct metaethical intuitions blocks a common-sense route to realism.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-context-with-realist-content",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-error-theory-entanglement",
+                "con-folk-indeterminacy",
+                "con-quietism-beyond-trilemma"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-context-with-realist-content-component-01",
+                  "targetMoveId": "con-quietism-beyond-trilemma",
+                  "text": "The decisive component contacted is whether contextual variation rules out identifiable contexts with genuinely realist moral content.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-context-with-realist-content-component-02",
+                  "targetMoveId": "con-folk-indeterminacy",
+                  "text": "Determinate realist content may occur in specialized deliberative contexts even if ordinary speakers are often indeterminate.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-context-with-realist-content-component-03",
+                  "targetMoveId": "con-error-theory-entanglement",
+                  "text": "The academic ethics example aims to distinguish assertion about wrongness from reports of attitudes or attempts at influence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-quietism-beyond-trilemma"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-context-with-realist-content-component-01",
+                  "targetMoveId": "con-quietism-beyond-trilemma",
+                  "text": "Whether contextual variability prevents any relevant moral assertion from having genuinely realist content.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 79
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-meaning-without-metaethics",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-context-with-realist-content",
+                "pro-first-order-to-realism",
+                "pro-moral-embedding-content"
+              ],
+              "components": [
+                {
+                  "componentId": "con-meaning-without-metaethics-component-01",
+                  "targetMoveId": "pro-context-with-realist-content",
+                  "text": "The decisive demand contacted is whether meaningful moral assertion in a context must carry determinate realist or anti-realist semantic commitments.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-meaning-without-metaethics-component-02",
+                  "targetMoveId": "pro-moral-embedding-content",
+                  "text": "Holistic communicative meaning can preserve meaningful embedded and assertoric use without a uniform metaethical analysis.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-meaning-without-metaethics-component-03",
+                  "targetMoveId": "pro-first-order-to-realism",
+                  "text": "Meaningful first-order judgments need not settle the metaethical inference drawn from them.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-context-with-realist-content"
+              ],
+              "components": [
+                {
+                  "componentId": "con-meaning-without-metaethics-component-01",
+                  "targetMoveId": "pro-context-with-realist-content",
+                  "text": "Whether meaningful moral assertion requires determinate realist or anti-realist semantic commitments.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 78
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-conceptual-quietism",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-context-with-realist-content",
+                "pro-first-order-to-realism",
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-conceptual-quietism-component-01",
+                  "targetMoveId": "pro-context-with-realist-content",
+                  "text": "The decisive component contacted is whether English conceptual practice must correspond to one determinate underlying phenomenon or semantic structure.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conceptual-quietism-component-02",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Rejecting a fixed word-to-phenomenon correspondence leaves additional conceptual space outside the elimination argument.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conceptual-quietism-component-03",
+                  "targetMoveId": "pro-first-order-to-realism",
+                  "text": "First-order or ordinary conceptual use may not determine the metaphilosophical structure required by the realist inference.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-conceptual-quietism-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Whether the realist elimination remains exhaustive once its linguistic and metaphilosophical assumptions are rejected.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 83
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 67,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-trained-pseudo-phenomenology",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-context-with-realist-content",
+                "pro-cruelty-attitude-test",
+                "pro-first-order-to-realism"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trained-pseudo-phenomenology-component-01",
+                  "targetMoveId": "pro-first-order-to-realism",
+                  "text": "The decisive demand contacted is whether philosophical and first-order intuitions are sufficiently pre-theoretical and representative to ground the realist inference.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trained-pseudo-phenomenology-component-02",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Seemings elicited through philosophical framing may reflect learned response patterns rather than universal truth detection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trained-pseudo-phenomenology-component-03",
+                  "targetMoveId": "pro-context-with-realist-content",
+                  "text": "Specialized philosophical contexts may generate idiosyncratic judgments rather than uniquely reveal realist semantic content.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-cruelty-attitude-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trained-pseudo-phenomenology-component-01",
+                  "targetMoveId": "pro-cruelty-attitude-test",
+                  "text": "Whether the specific cruelty judgment is an attitude-independent intellectual appearance with evidential force.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 59
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 62
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 83
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 78
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-shared-thin-normative-concepts",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-conceptual-quietism",
+                "con-folk-indeterminacy",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-shared-thin-normative-concepts-component-01",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "The decisive component contacted is whether cultural or linguistic variation eliminates shared normative conceptual resources altogether.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-shared-thin-normative-concepts-component-02",
+                  "targetMoveId": "con-folk-indeterminacy",
+                  "text": "Shared thin concepts may persist even where explicit metaethical commitments and thicker concepts vary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-shared-thin-normative-concepts-component-03",
+                  "targetMoveId": "con-conceptual-quietism",
+                  "text": "Conceptual variation in terms such as knowledge need not generalize to all thin normative comparisons.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-conceptual-quietism",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-shared-thin-normative-concepts-component-01",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "Whether cultural and linguistic variation undermines all shared normative concepts or intuitions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-shared-thin-normative-concepts-component-02",
+                  "targetMoveId": "con-conceptual-quietism",
+                  "text": "Whether conceptual variation eliminates cross-context normative continuity altogether.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 80
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-subjective-practical-importance",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-objective-attitude-independence",
+                "pro-shared-thin-normative-concepts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-subjective-practical-importance-component-01",
+                  "targetMoveId": "pro-shared-thin-normative-concepts",
+                  "text": "The contacted practical component is whether shared normative vocabulary carries stance-independent importance or authority for an agent.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-subjective-practical-importance-component-02",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Even if stance-independent facts existed, their motivational importance would not follow independently of an agent's goals.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 63
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-objective-attitude-independence"
+              ],
+              "components": [
+                {
+                  "componentId": "con-subjective-practical-importance-component-01",
+                  "targetMoveId": "pro-objective-attitude-independence",
+                  "text": "Whether at least some moral truths remain valid independently of attitudes.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 54
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 85
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 85
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 68,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-objective-reasons-authority",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-subjective-practical-importance"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-reasons-authority-component-01",
+                  "targetMoveId": "con-subjective-practical-importance",
+                  "text": "The decisive component contacted is whether objective morality claims a kind of authority that cannot be escaped merely by citing contrary preferences.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-subjective-practical-importance"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-reasons-authority-component-01",
+                  "targetMoveId": "con-subjective-practical-importance",
+                  "text": "Whether objective moral reasons possess authority that cannot be reduced to an agent's preferences.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 81
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-authority"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-authority"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 88
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-antirealism-practical-commitment",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-subjective-practical-importance",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-antirealism-practical-commitment-component-01",
+                  "targetMoveId": "con-subjective-practical-importance",
+                  "text": "The decisive component contacted is whether preference-based motivation can sustain costly moral conduct when stronger self-directed preference satisfaction is available.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-antirealism-practical-commitment-component-02",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "The claim that objectivity affects commitment is behavioral rather than an answer to the training-based epistemic challenge.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-subjective-practical-importance"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-antirealism-practical-commitment-component-01",
+                  "targetMoveId": "con-subjective-practical-importance",
+                  "text": "Whether preference-based practical importance can sustain costly moral commitment as strongly as objective moral reasons.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 60
+            },
+            "candidate2": {
+              "value": 69
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-contingent-behavioral-effects",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-antirealism-practical-commitment",
+                "pro-objective-reasons-authority"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingent-behavioral-effects-component-01",
+                  "targetMoveId": "pro-antirealism-practical-commitment",
+                  "text": "The decisive demand contacted is whether accepting anti-realism predictably weakens moral conduct rather than having contingent empirical effects.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingent-behavioral-effects-component-02",
+                  "targetMoveId": "pro-objective-reasons-authority",
+                  "text": "Realism's alleged authority does not entail beneficial conduct and might coexist with dogmatism or rationalized harm.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-antirealism-practical-commitment",
+                "pro-objective-reasons-authority"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingent-behavioral-effects-component-01",
+                  "targetMoveId": "pro-antirealism-practical-commitment",
+                  "text": "Whether anti-realism itself implies weaker moral behavior or reduced costly beneficence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingent-behavioral-effects-component-02",
+                  "targetMoveId": "pro-objective-reasons-authority",
+                  "text": "Whether realism itself reliably supplies beneficial motivational or behavioral authority.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 73
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 83
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-intuition-as-initial-appearance",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingent-behavioral-effects",
+                "con-private-realist-seemings",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-intuition-as-initial-appearance-component-01",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "The decisive component contacted is what an intuition is and whether it is merely an asserted belief produced by philosophical inference or training.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-intuition-as-initial-appearance-component-02",
+                  "targetMoveId": "con-private-realist-seemings",
+                  "text": "The definition permits different subjects to have different appearances and does not treat an intuition as publicly compulsory proof.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-intuition-as-initial-appearance-component-03",
+                  "targetMoveId": "con-contingent-behavioral-effects",
+                  "text": "The epistemic definition does not address the later empirical dispute about behavior.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-private-realist-seemings",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-intuition-as-initial-appearance-component-01",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "Whether ethical intuitions should be treated as trained reports or as a recognizable class of intellectual appearances.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-intuition-as-initial-appearance-component-02",
+                  "targetMoveId": "con-private-realist-seemings",
+                  "text": "What kind of mental state an ethical intuition is before questions of shared public justification arise.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 85
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-intuition"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-intuition-challenge"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "not-needed",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 81,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-appearances-ground-justification",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 18,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-conceptual-quietism",
+                "con-private-realist-seemings",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-appearances-ground-justification-component-01",
+                  "targetMoveId": "con-private-realist-seemings",
+                  "text": "The decisive component contacted is whether a subject's intellectual appearance can supply initial justification even without public corroboration.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-appearances-ground-justification-component-02",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "The argument supplies a general presumption for appearances but does not specifically defeat the proposed training-based defeater.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-appearances-ground-justification-component-03",
+                  "targetMoveId": "con-conceptual-quietism",
+                  "text": "The general epistemic argument does not establish that the content of every concept or word is determinate.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-private-realist-seemings",
+                "con-trained-pseudo-phenomenology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-appearances-ground-justification-component-01",
+                  "targetMoveId": "con-private-realist-seemings",
+                  "text": "Whether the private character of an appearance deprives it of prima facie justificatory standing for the subject.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-appearances-ground-justification-component-02",
+                  "targetMoveId": "con-trained-pseudo-phenomenology",
+                  "text": "Whether possible distortion warrants rejecting any initial presumption in favor of appearances.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 77
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 82
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-objective-attitude-independence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-objective-attitude-independence",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 95,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 95
+    },
+    {
+      "moveId": "pro-cruelty-attitude-test",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-cruelty-attitude-test",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-cruelty-attitude-test",
+      "fieldKey": "representationalCharity",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-moral-embedding-content",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-moral-embedding-content",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 81,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-moral-embedding-content",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-moral-embedding-content",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 93,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 94
+    },
+    {
+      "moveId": "con-folk-indeterminacy",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-folk-indeterminacy",
+      "fieldKey": "representationalCharity",
+      "candidate1": 79,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-folk-survey-methodology",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-folk-survey-methodology",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-folk-survey-methodology",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-private-realist-seemings",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-private-realist-seemings",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-error-theory-entanglement",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-error-theory-entanglement",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-first-order-to-realism",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-context-with-realist-content",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-meaning-without-metaethics",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-meaning-without-metaethics",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-conceptual-quietism",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-conceptual-quietism",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 67,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-trained-pseudo-phenomenology",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-shared-thin-normative-concepts",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-shared-thin-normative-concepts",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "con-subjective-practical-importance",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-subjective-practical-importance",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-objective-reasons-authority",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-contingent-behavioral-effects",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-intuition-as-initial-appearance",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-intuition-as-initial-appearance",
+      "fieldKey": "representationalCharity",
+      "candidate1": 81,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-appearances-ground-justification",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 74
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance and burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance and burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "41",
+      "moves": 20,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 20,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch16IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
