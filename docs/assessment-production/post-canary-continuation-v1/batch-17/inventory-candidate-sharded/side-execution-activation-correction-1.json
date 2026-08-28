@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-side-execution-activation-correction",
+  "status": "batch-17-side-execution-preflight-hash-correction-passed-before-model-execution",
+  "diagnosis": "The first frozen activation hashed the mechanically cloned Batch 17 runner and analyzer before their final four-debate and eight-context count adaptations. The model-free runner gate stopped before starting any selector context.",
+  "preservedOriginalActivation": "docs/assessment-production/post-canary-continuation-v1/batch-17/inventory-candidate-sharded/side-execution-activation-preflight-failure-1.json",
+  "preservedOriginalActivationSha256": "d0f5f9eaa2f1f9afab1ff0637e72bd8720af7702bd9297f9197ad24ac99fb670",
+  "correctedActivation": "docs/assessment-production/post-canary-continuation-v1/batch-17/inventory-candidate-sharded/side-execution-activation.json",
+  "correctedActivationSha256": "183054e60eb13db1a4cdc77c06fb43a252ae71b5e95900d78a8d2289dbe407af",
+  "corrections": [
+    {
+      "field": "sourceHashes.scripts/run-assessment-production-post-canary-batch-17-inventory-side-selectors.mjs",
+      "before": "f65179687ce419641859b8f728db312b23a481a9f8aee96442705f652e719a44",
+      "after": "e49dd31208e02d036c16fa5adf9c39eaf3e61351ff19001f2465ede61602875d"
+    },
+    {
+      "field": "sourceHashes.scripts/analyze-assessment-production-post-canary-batch-17-inventory-side-selectors.mjs",
+      "before": "9be8955dc6827aa7b2ec2f695e5d4fe4b2163dc5a478ba5e565034a8bf11e3f8",
+      "after": "dcfe0a56218b2923dcca6cb2794a3289175f41efa624ad3cff4f574968606405"
+    }
+  ],
+  "modelContextsStartedBeforeCorrection": 0,
+  "modelAttemptsConsumedBeforeCorrection": 0,
+  "recoveryLevelsConsumed": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
