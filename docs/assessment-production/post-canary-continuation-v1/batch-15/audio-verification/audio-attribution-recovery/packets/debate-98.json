@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-audio-attribution-recovery",
+  "debateNumber": "98",
+  "debateId": "craig-grayling-evil-god-reasonable-2011",
+  "speakerRoster": {
+    "pro": "William Lane Craig",
+    "con": "A. C. Grayling",
+    "substantiveSpeakerCount": 2
+  },
+  "moves": [
+    {
+      "moveId": "con-possibility-feasibility-gap",
+      "expectedSpeaker": "A. C. Grayling",
+      "proposition": "A world containing free individuals but no natural evil appears logically possible, so the theist must explain why it would be infeasible for God.",
+      "sourceSpan": {
+        "startEvent": 1574,
+        "endEvent": 1595
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "A. C. Grayling",
+        "fullClipExcerptRecall": 0.7777777777777778,
+        "expectedSpeakerExcerptRecall": 0.7654320987654321,
+        "highestOtherSpeaker": "William Lane Craig",
+        "highestOtherSpeakerExcerptRecall": 0.2345679012345679,
+        "expectedSpeakerRecallMargin": 0.5308641975308641,
+        "expectedSpeakerDurationSeconds": 46.9,
+        "checks": {
+          "fullClipExcerptRecovered": false,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": true,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "A. C. Grayling",
+            "segmentCount": 9,
+            "durationSeconds": 46.9,
+            "wordCount": 141,
+            "excerptRecall": 0.7654320987654321
+          },
+          {
+            "speaker": "William Lane Craig",
+            "segmentCount": 6,
+            "durationSeconds": 17.5,
+            "wordCount": 41,
+            "excerptRecall": 0.2345679012345679
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-98/transcripts/con-possibility-feasibility-gap.transcript.json",
+      "diarizedTranscriptSha256": "6347e19d3244d24e78095883ff3173e1f51eac47ac5d3892174a22bf8092b894",
+      "validationOverlayApplied": false
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptsRequired": true,
+    "lockedPropositionsAndSpansVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "genericLabelsRequireDialogueAndRosterIdentityResolution": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}

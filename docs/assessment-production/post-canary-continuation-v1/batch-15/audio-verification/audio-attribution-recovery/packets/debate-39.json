@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-15-audio-attribution-recovery",
+  "debateNumber": "39",
+  "debateId": "lambert-jones-christian-faith-skepticism-2021",
+  "speakerRoster": {
+    "pro": "Michael Jones",
+    "con": "Derek Lambert",
+    "substantiveSpeakerCount": 2
+  },
+  "moves": [
+    {
+      "moveId": "pro-exodus-minimal-migration",
+      "expectedSpeaker": "Michael Jones",
+      "proposition": "A historically modest, naturalistic Exodus remains plausible where Israel's inherited textual tradition and compatible archaeology support migration from Egypt into Canaan.",
+      "sourceSpan": {
+        "startEvent": 2522,
+        "endEvent": 2608
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "Michael Jones",
+        "fullClipExcerptRecall": 0.9753086419753086,
+        "expectedSpeakerExcerptRecall": 0.14814814814814814,
+        "highestOtherSpeaker": "A",
+        "highestOtherSpeakerExcerptRecall": 0.9753086419753086,
+        "expectedSpeakerRecallMargin": -0.8271604938271605,
+        "expectedSpeakerDurationSeconds": 12.55,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": false,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "A",
+            "segmentCount": 32,
+            "durationSeconds": 128,
+            "wordCount": 536,
+            "excerptRecall": 0.9753086419753086
+          },
+          {
+            "speaker": "Michael Jones",
+            "segmentCount": 4,
+            "durationSeconds": 12.55,
+            "wordCount": 43,
+            "excerptRecall": 0.14814814814814814
+          },
+          {
+            "speaker": "Derek Lambert",
+            "segmentCount": 6,
+            "durationSeconds": 6.7,
+            "wordCount": 30,
+            "excerptRecall": 0.09876543209876543
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-39/transcripts/pro-exodus-minimal-migration.transcript.json",
+      "diarizedTranscriptSha256": "42d8c8be3417de0c93d13fa1d56b0916673813219b6f1ac36164b3c12b50ae7f",
+      "validationOverlayApplied": false
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptsRequired": true,
+    "lockedPropositionsAndSpansVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "genericLabelsRequireDialogueAndRosterIdentityResolution": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}

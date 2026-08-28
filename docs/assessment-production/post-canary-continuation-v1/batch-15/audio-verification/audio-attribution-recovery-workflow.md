@@ -1,0 +1,9 @@
+# Batch 15 audio-attribution recovery workflow
+
+Preserve the completed three-call paid diarization record and the deterministic two-move unresolved gate. Do not retry transcription, change a raw transcript, relax a threshold, rerun either independent judgment, or expose ratings, scores, legacy assessments, other debates, winners, or publication prose.
+
+Recovery level 1 consists of the minimum two fresh debate-isolated 5.6 Sol contexts at low reasoning effort through the ChatGPT subscription: one context for Debate 39's sole unresolved move and one for Debate 98's sole unresolved move. Each context receives only the locked debate identity and speaker roster, its unresolved move, its deterministic evidence, and its immutable raw audio-derived diarized transcript. Each context has one attempt and no retry. Direct incremental cost is zero; no paid service is used.
+
+For each move, decide only whether the expected speaker authored the locked core proposition. Cite exact nonempty diarized transcript segments. A named expected-speaker segment is sufficient identity evidence when it expresses the proposition. A generic diarization label such as `A` or `B` may support verification only when the dialogue and complete two-person speaker roster establish at high confidence which named participant the generic label denotes; the generic label remains unchanged in the raw record. Mark `verified` only with high confidence, the expected speaker as author, the proposition attributed to that speaker, and cited audio-derived segment evidence. Otherwise mark `unresolved`.
+
+The original deterministic gate remains preserved. Only two verified recovery decisions may produce a separate combined three-of-three audio gate and authorize dispute-only adjudication. Any unresolved decision blocks adjudication, ledger assembly, scoring, publication, and production mutation.
