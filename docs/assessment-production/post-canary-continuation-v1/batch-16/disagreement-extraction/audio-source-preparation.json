@@ -1,0 +1,823 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-16-decomposed-consensus",
+  "status": "prepared-ten-post-canary-batch-16-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "56ced1fc0cc03d5e086f218a240711a82340e179",
+  "userAuthorization": {
+    "instruction": "Continue the SLUGFESTER reassessment campaign with Batch 16 in `/Users/philstilwell/Documents/SLUGFESTER.com`.\n\nBatch 15 completed at commit `a6f27248d55f8dea4856ac4234d4b31dcc0c528c`. Begin by confirming the workspace is clean and local `main` matches `origin/main`.\n\nUse the `reassess-slugfester-debates` skill, the repository’s current frozen workflow and controls, and Batch 15 as the latest precedent. Deterministically select and freeze the next ten eligible, previously unpublished dyadic debates. Do not select Batch 17.\n\nThis is standing authorization for the complete Batch 16 workflow: source preparation and bounded recovery; score-blind inventory; two fresh isolated 5.6 Sol/low judgments per debate; disagreement extraction; required audio verification; adjudication; final-ledger assembly; exactly one deterministic score pass; publication reconstruction and bounded field-level repair; compilation; rendering verification; compatibility staging; production publication; generated SEO and dependent-artifact correction; complete repository validation; commits; and pushes to `origin/main`.\n\nAll local and ChatGPT-subscription work is authorized at $0 direct incremental cost. Conditional sequential `gpt-4o-transcribe-diarize` verification is authorized up to $1.00 total. Report the frozen estimate before the first paid call, then continue automatically if it remains within the cap. Use one paid attempt per clip, with no paid retries.\n\nContinue automatically across successful gates without requesting separate approvals. All routine preparation, activation, execution, deterministic correction, production mutation, validation, commit, and push steps within this workflow are authorized.\n\nBounded diagnosed recovery is authorized. Preserve every failure, avoid blind repetition, and use the minimum fresh field-disjoint recovery shards. Allow one attempt per shard and at most two ordinary recovery levels. The standing authorization for an exceptional third level also applies when a failed multi-field shard atomically discards otherwise potentially valid companion fields: recover only the unavailable fields using the minimum fresh field-disjoint shards, one attempt each, no retries, and no fourth level.\n\nExact deterministic correction of stale SEO, summaries, sitemaps, calibration analyses, tests, control labels, compatibility write-boundary classifications, or similar derived files is authorized. Preserve the original failed artifacts before correcting derived records. Never rerun the score pass, manually change calculated scores, reuse rejected prose, or alter accepted fields.\n\nA controller or server startup failure occurring before any rendering viewport is attempted may be diagnosed and corrected without consuming a viewport attempt; preserve the failure record. Commit or otherwise freeze and correctly inventory the 40 rendering screenshots before compatibility execution, and remove or safely relocate temporary Playwright controller files so pre-existing rendering artifacts are not misclassified as compatibility writes.\n\nFetch before every push, never force-push, and verify local `HEAD`, local `main`, and `origin/main` equality after every push. Close temporary browser sessions and servers, remove or safely relocate temporary artifacts, and retain required hashed audio and rendering evidence.\n\nStop only if:\n\n- the paid-service cap would be exceeded;\n- required source identity or evidence cannot be established;\n- an allowed model or recovery gate remains invalid after its authorized attempts;\n- repository history has diverged and cannot be reconciled safely;\n- or another genuinely substantive blocker requires new authority.\n\nOn completion, report the selected debates, final scores, paid and direct costs, recovery use, rendering and repository-validation results, production changes, final commit, local/remote equality, and cleanup status. Stop before selecting Batch 17.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-16/standing-authorization.json",
+    "standingAuthorizationSha256": "1aab170552918972c013ba9357c1b44a0c6aa4d717c4cdb7fa6498af4956baef",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sourceAudioFilesAuthorized": 4,
+    "clipsAuthorized": 10,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/disagreement-extraction/audio-work-item-preparation.json": "522fdbe14f1f54c5baefb65ab5f35cf32d4dee64bf5a055193540d1ba15bfa61",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/disagreement-extraction/audio-work-items.json": "ec835cf6fe1db326d1bf5fa584e3bd99f498bd78ea51ae6fec7f86e57fef97e7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/standing-authorization.json": "1aab170552918972c013ba9357c1b44a0c6aa4d717c4cdb7fa6498af4956baef",
+    "scripts/prepare-assessment-production-post-canary-batch-16-audio-sources.mjs": "554910cbab090813aff67d38aa2fb6a514725f2a7d59ab00edad6851647d37e0",
+    "scripts/test-assessment-production-post-canary-batch-16-audio-sources.mjs": "fe7a0e5b1044e138fc4eb8afa14a299b3b4821112c64cfebc7e87e6c351c1c97",
+    "scripts/prepare-assessment-production-post-canary-batch-16-audio-work-items.mjs": "1a027100faca77232817ff28f5573580ee4b5d924f5aa54659e22c84f45321a0",
+    "scripts/test-assessment-production-post-canary-batch-16-audio-work-items.mjs": "2fc9b2c1df99164d07e0a36200b193c6dfc91da32ee7fc83688199d98873b5aa",
+    "scripts/lib/assessment-production-post-canary-batch-16-audio-work-items.mjs": "ca66e4c2d88d0f367d3bf3b7dd04f77310c64b4df82d226b1b768880d1dcc911",
+    "scripts/lib/assessment-production-post-canary-batch-16-standing-authorization.mjs": "dbeec69a1afe5853c2ca593762cf3c978477af77e9d52e45dbe5242b88429c8d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "workItemSourceHashesReplayed": 84,
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "oneFreshMediaUrlResolutionPerMissingVideo": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "plannedRangesPerVideo": [
+      "bytes=0-"
+    ],
+    "nonOverlappingRangesPerVideo": 1,
+    "repeatedRanges": 0,
+    "redirectPolicy": {
+      "manual": true,
+      "httpsOnly": true,
+      "googleVideoDomainOnly": true,
+      "maximumRedirectsPerRange": 3,
+      "requiredFinalStatusCode": 206
+    },
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormatByVideo": {
+      "nOy29aP7wDc": "bestaudio/best",
+      "f06J2R4MwGA": "bestaudio/best",
+      "8WE1y00bwCU": "bestaudio/best",
+      "uWo9qU2dhpQ": "bestaudio/best"
+    },
+    "diagnosedFailedResolution": null,
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "108",
+      "videoId": "nOy29aP7wDc",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+        },
+        "contentRange": "bytes 0-119706852/119706853",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 119706853
+      }
+    },
+    {
+      "debateNumber": "144",
+      "videoId": "f06J2R4MwGA",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+        },
+        "contentRange": "bytes 0-149186063/149186064",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 149186064
+      }
+    },
+    {
+      "debateNumber": "76",
+      "videoId": "8WE1y00bwCU",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+          "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+            "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+          "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+        },
+        "contentRange": "bytes 0-275805352/275805353",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 275805353
+      }
+    },
+    {
+      "debateNumber": "92",
+      "videoId": "uWo9qU2dhpQ",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+            "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+        },
+        "contentRange": "bytes 0-357812370/357812371",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 357812371
+      }
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "108",
+      "videoId": "nOy29aP7wDc",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "90e6162ead292284b379dde7715f0d1cbc2583325bc6b239e6d5276a22a50816"
+        },
+        "contentRange": "bytes 0-119706852/119706853",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 119706853
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/audio/source.mp3",
+      "sourceAudioSha256": "abcf54dc1e52294606319443d0b53a04a8355be5dd9a87953c6e8223d1fbaf0e",
+      "durationSeconds": 4812.03375,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "144",
+      "videoId": "f06J2R4MwGA",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+            "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr1---sn-45pg2vpou-2fhs.googlevideo.com",
+          "urlSha256": "7e952d86b495ac37182004d859bbfc13a147c000af68dce3f7acb508b1f6d72a"
+        },
+        "contentRange": "bytes 0-149186063/149186064",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 149186064
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-144/audio/source.mp3",
+      "sourceAudioSha256": "cf4456601aada8674c5856e62bf1807d76034d5760811a7b1bb9cb5e97232c06",
+      "durationSeconds": 6441.308313,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "76",
+      "videoId": "8WE1y00bwCU",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+          "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+            "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr3---sn-45pg2vpou-2fhe.googlevideo.com",
+          "urlSha256": "2691a9f7206e68109c49228870ea2795f831023363bf594c8f39a1c5a9320531"
+        },
+        "contentRange": "bytes 0-275805352/275805353",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 275805353
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/audio/source.mp3",
+      "sourceAudioSha256": "10f864815e84403b5a1e5cde662bc01da836a39b56ddd5ff0078c8f43137850d",
+      "durationSeconds": 5502.339813,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "92",
+      "videoId": "uWo9qU2dhpQ",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "transportAudit": {
+        "freshUrlResolutionAttempts": 1,
+        "freshMediaUrlsResolved": 1,
+        "formatSelector": "bestaudio/best",
+        "resolvedUrl": {
+          "protocol": "https:",
+          "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+        },
+        "plannedRange": "bytes=0-",
+        "rangeRepeated": false,
+        "redirectCount": 0,
+        "redirectChain": [
+          {
+            "protocol": "https:",
+            "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+            "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+          }
+        ],
+        "finalStatusCode": 206,
+        "finalResponse": {
+          "protocol": "https:",
+          "hostname": "rr2---sn-45pg2vpou-2fhl.googlevideo.com",
+          "urlSha256": "f4baf05578afa764440ffc5dc80ac6c8770eac5912dec4b9425820b34500bdb4"
+        },
+        "contentRange": "bytes 0-357812370/357812371",
+        "contentType": "video/mp4",
+        "bytesDownloaded": 357812371
+      },
+      "formatSelector": "bestaudio/best",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/audio/source.mp3",
+      "sourceAudioSha256": "0314355e00e3b0e922b9d2a701f768f642621703b59f2a24a86d12677a9e6ec2",
+      "durationSeconds": 7508.474188,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "sourceVideoId": "nOy29aP7wDc",
+      "moveId": "con-explanatory-gap-does-not-support-god",
+      "expectedSpeaker": "Michael Ruse",
+      "proposition": "The explanatory gap between brain and mind remains unbridged, but ignorance about that gap neither defeats naturalism nor shows that invoking God provides explanatory help.",
+      "verificationExcerpt": "churchlands. Having said that, Keith and and and Justin, I don't think it's a question of out of the scientific fire and into the religious uh or out of the scientific frying pan and into the religious fire. I I just don't see that invoking God helps us at all. I mean it that's my position and maybe I'm anticipating again already but uh I don't see anything in my ignorance about the mindbody problem which makes me think that naturalism",
+      "sourceSpan": {
+        "startEvent": 381,
+        "endEvent": 420
+      },
+      "clipWindow": {
+        "startMs": 868699,
+        "endMs": 978019,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-explanatory-gap-does-not-support-god.mp3",
+      "clipSha256": "f20556a5741c55d02ae824a1ce2bc3a43042610a5fab34d12b29ec429abb4bc0",
+      "plannedDurationSeconds": 109.32,
+      "durationSeconds": 109.32,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "sourceVideoId": "nOy29aP7wDc",
+      "moveId": "pro-causal-link-not-mental-identity",
+      "expectedSpeaker": "Keith Ward",
+      "proposition": "A regular causal connection between neural activity and perception does not establish their identity, leaving thoughts without an ordinary brain philosophically possible.",
+      "verificationExcerpt": "get the one X the brain then you get the side of the apple that's why if X then Y but it it's a pretty fundamental principle of David Hume and other philosophers like him that you can always separate the cause from the effect. So you could say you could have why the sight of the red apple without a brain. In other words, there could be philosophically speaking thoughts without",
+      "sourceSpan": {
+        "startEvent": 547,
+        "endEvent": 563
+      },
+      "clipWindow": {
+        "startMs": 1249020,
+        "endMs": 1292900,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/pro-causal-link-not-mental-identity.mp3",
+      "clipSha256": "1434cca22562012f4d6a34ee3ed7e302d3297800d419415e04db1c3b6b603b57",
+      "plannedDurationSeconds": 43.88,
+      "durationSeconds": 43.88,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "sourceVideoId": "nOy29aP7wDc",
+      "moveId": "pro-divine-intelligent-ground",
+      "expectedSpeaker": "Keith Ward",
+      "proposition": "God is best conceived as the conscious, purposive, intelligent ground of the universe itself rather than as an external person who intermittently interferes with it.",
+      "verificationExcerpt": "I what I'm trying to do is to stop get away from the stereotype of God is this person who exists outside the universe and keeps interfering it and say don't think about God like that. Think about God as the conscious mental purpose of intelligent ground of the universe itself as St. Paul says. You see this",
+      "sourceSpan": {
+        "startEvent": 1078,
+        "endEvent": 1085
+      },
+      "clipWindow": {
+        "startMs": 2474859,
+        "endMs": 2500900,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/pro-divine-intelligent-ground.mp3",
+      "clipSha256": "8892f24235a905fadd7fec2186d728619bc5f7c85416acfee304ccb8fe2cd004",
+      "plannedDurationSeconds": 26.041,
+      "durationSeconds": 26.041,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "sourceVideoId": "nOy29aP7wDc",
+      "moveId": "con-naturalized-diverse-religious-experience",
+      "expectedSpeaker": "Michael Ruse",
+      "proposition": "Religious experience can arise from evolved agency sensitivity and imagination, while culturally conflicting forms and lack of repeatable universality weaken its force as evidence of a transcendent object.",
+      "verificationExcerpt": "again, we're getting into territory that Keith and I have gone over and, you know, not just us many, many times. I mean how then do you distinguish say religion from from science? Well the thing is thing about science is it does seem to be repeatable that seems to be universal. And of course the trouble with uh religious experiences Muslims have one kind of religious experience",
+      "sourceSpan": {
+        "startEvent": 1203,
+        "endEvent": 1239
+      },
+      "clipWindow": {
+        "startMs": 2767260,
+        "endMs": 2863220,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-naturalized-diverse-religious-experience.mp3",
+      "clipSha256": "395211ddb090b2aa5b6a030a970c87909e7b086979fcef6bdae677b49fcb449b",
+      "plannedDurationSeconds": 95.96,
+      "durationSeconds": 95.96,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "sourceVideoId": "nOy29aP7wDc",
+      "moveId": "con-evolved-moral-obligation-without-god",
+      "expectedSpeaker": "Michael Ruse",
+      "proposition": "God is unnecessary to explain morality because the experienced authority of moral obligation can be an evolution-produced social illusion rather than an independently grounded ultimate reality.",
+      "verificationExcerpt": "think that God is necessary for morality or anything like that because it's an illusion. I mean what you're trying to say is and we talked about pragmatic. I think you want to say is at some level the only way that we can make it make sense of experience both physical experience and social experience is by assuming you know not the big fellow in the sky but some kind of creative",
+      "sourceSpan": {
+        "startEvent": 1341,
+        "endEvent": 1360
+      },
+      "clipWindow": {
+        "startMs": 3085099,
+        "endMs": 3140980,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-evolved-moral-obligation-without-god.mp3",
+      "clipSha256": "29a81501d457e50d192fddd47e703b441461d113ecef695a5bef4898801e35b0",
+      "plannedDurationSeconds": 55.881,
+      "durationSeconds": 55.881,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "sourceVideoId": "f06J2R4MwGA",
+      "moveId": "pro-guidance-no-added-ontological-cost",
+      "expectedSpeaker": "Alvin Plantinga",
+      "proposition": "Within a theistic framework that already includes God, guided evolution adds no further entity and therefore gains no decisive simplicity disadvantage relative to unguided evolution.",
+      "verificationExcerpt": "to G, it is inferior to G in that the relevant likelihood is lower. But again, the real point lies in a different direction. Theistic noetic structure already, of course, includes the existence of God. Relative to that noetic structure, therefore, there is no additional optimistic cost in the hypothesis of guided evolution. As an analogy, suppose we land a spaceship on a planet",
+      "sourceSpan": {
+        "startEvent": 638,
+        "endEvent": 821
+      },
+      "clipWindow": {
+        "startMs": 1404020,
+        "endMs": 1810380,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-144/clips/pro-guidance-no-added-ontological-cost.mp3",
+      "clipSha256": "e7c84837cb959a533c19a3ac588c06d77f97cf5a170e5e28cba85eaf5b0634ac",
+      "plannedDurationSeconds": 406.36,
+      "durationSeconds": 406.36,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "76",
+      "debateId": "craig-oppy-mathematics-theism-2020",
+      "sourceVideoId": "8WE1y00bwCU",
+      "moveId": "con-failed-predictions-selection-effect",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "Numerous discarded mathematical solutions and failed physical predictions may undermine claims of uncanny effectiveness because attention can selectively preserve rare predictive successes such as the positron.",
+      "verificationExcerpt": "of the many many failed predictions from physical theories right that correspond to the success where there's the positron you might wonder it whether it's really true that there's any uncanny effectiveness here or whether it's what's rather the case is just that we forget about all the successes and remember the one or two successful cases so so so I'm kind of worried about it",
+      "sourceSpan": {
+        "startEvent": 1015,
+        "endEvent": 1084
+      },
+      "clipWindow": {
+        "startMs": 3029529,
+        "endMs": 3235880,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/clips/con-failed-predictions-selection-effect.mp3",
+      "clipSha256": "80c75b61a8e8d6ed115cfe93c5eabdb52a4e854578fd65add59c1df3b88822e6",
+      "plannedDurationSeconds": 206.351,
+      "durationSeconds": 206.351,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "76",
+      "debateId": "craig-oppy-mathematics-theism-2020",
+      "sourceVideoId": "8WE1y00bwCU",
+      "moveId": "con-denial-of-brute-contingency",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "On Oppy's naturalism, mathematics' applicability to the physical world is necessary rather than a brute contingency, so the premise that naturalism leaves applicability as coincidence is false.",
+      "verificationExcerpt": "we disagree about is the first premise if God didn't exist the applicability of mathematics to the physical world suggests a brute contingency obviously I say if naturalism is true the applicability of mathematics in the physical world is not just a very contingency so it so far but not engine it's not a brute contingency right and so they and so that first premise is false and",
+      "sourceSpan": {
+        "startEvent": 1831,
+        "endEvent": 1842
+      },
+      "clipWindow": {
+        "startMs": 5365339,
+        "endMs": 5403169,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/clips/con-denial-of-brute-contingency.mp3",
+      "clipSha256": "639f6df88c1fcdc638ab5cad3266eb5850c9b3d86871a05d5cb2274e7003ccb6",
+      "plannedDurationSeconds": 37.83,
+      "durationSeconds": 37.83,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "sourceVideoId": "uWo9qU2dhpQ",
+      "moveId": "pro-metaphysical-not-logical-impossibility",
+      "expectedSpeaker": "William Lane Craig",
+      "proposition": "Hilbert-style scenarios need not contain a formal contradiction to disclose the metaphysical impossibility of concretely instantiated actual infinities, and quantum phenomena do not supply an adequate counterexample.",
+      "verificationExcerpt": "but there are plenty of good interpretations of quantum mechanics that are fully deterministic that don't involve these sorts of bizarre results and therefore I don't think that's a good counter example so my strategy is that of Ludwig Wittgenstein Vic and Stein in answer to David Hilbert who said no one will drive us from the paradise the Cantor has created for us Stein says I",
+      "sourceSpan": {
+        "startEvent": 514,
+        "endEvent": 579
+      },
+      "clipWindow": {
+        "startMs": 1309600,
+        "endMs": 1510840,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/clips/pro-metaphysical-not-logical-impossibility.mp3",
+      "clipSha256": "61aff1a084cc13b8bc47789c73ef5be844e2107573fd0c1a6370301314d8f51d",
+      "plannedDurationSeconds": 201.24,
+      "durationSeconds": 201.24,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "sourceVideoId": "uWo9qU2dhpQ",
+      "moveId": "con-hotel-finite-creation-constraint",
+      "expectedSpeaker": "Alex Malpass",
+      "proposition": "A beginningless sequence does not entail the possibility of Hilbert's Hotel when only finitely many rooms can be created at any one time.",
+      "verificationExcerpt": "many hotel rooms all in one go otherwise that means that God's existence would entail the possibility of a Hilbert's hotel right so God's omnipotence and surely he can make one hotel ring or two or three bla bla bla but he can't make infinitely many so it must be that God's omnipotence is limited at least to making only finitely many hotel rooms at any one time less an infinite",
+      "sourceSpan": {
+        "startEvent": 2532,
+        "endEvent": 2579
+      },
+      "clipWindow": {
+        "startMs": 6522370,
+        "endMs": 6648250,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/clips/con-hotel-finite-creation-constraint.mp3",
+      "clipSha256": "87c0c5901a5b0393de386e5784071152dc59ca3f250dbccea88d2ca4301a6f65",
+      "plannedDurationSeconds": 125.88,
+      "durationSeconds": 125.88,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 4,
+    "sourceDownloads": 4,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 4,
+    "clips": 10,
+    "clipMinutes": 21.8124,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-16-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
