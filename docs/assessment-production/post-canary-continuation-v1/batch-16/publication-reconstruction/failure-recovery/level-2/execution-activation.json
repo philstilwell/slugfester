@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-publication-level-2-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-16-publication-level-2-one-field-recovery",
+  "status": "frozen-two-one-field-batch-16-publication-recovery-level-2-authorized",
+  "frozenAt": "2026-08-28T14:07:31Z",
+  "checkpointCommit": "48157149270ee80714257a1de0e5e1c4c3add447",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "stagingOnly": true,
+  "recoveryLevel": 2,
+  "recoveryLevelsMaximum": 2,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-16-con-abrahamic-similarity-and-christian-doctrinal-decline-critique-recovery-2",
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "moveId": "con-abrahamic-similarity-and-christian-doctrinal-decline",
+      "writableField": "moveProse.con-abrahamic-similarity-and-christian-doctrinal-decline.critique",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/packets/context-0.json",
+      "packetSha256": "ebb56bdda0160aa33bb019fc987bcd6e4d4d1b5b79f0501adfc6c88b27e446e8",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/schemas/context-0.schema.json",
+      "schemaSha256": "a2bcde9f2851352061482c3d1617466822b8cb46a9edf0fe609895ef5ff0406e",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/outputs/context-0.json"
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "debate-16-con-church-organization-does-not-establish-moral-fitness-critique-recovery-2",
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "moveId": "con-church-organization-does-not-establish-moral-fitness",
+      "writableField": "moveProse.con-church-organization-does-not-establish-moral-fitness.critique",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/packets/context-1.json",
+      "packetSha256": "46ee4ddce4dacc0ceb9d53950c0baf295b27ed035104c516f6fc14b4f6aeaf71",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/schemas/context-1.schema.json",
+      "schemaSha256": "0272b814bcedd4734d92cbe3faeab05df968bcd680fd4fa440fd7b7736b4b06e",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/outputs/context-1.json"
+    }
+  ],
+  "levelOneAcceptedContexts": 7,
+  "executionPolicy": {
+    "contexts": 2,
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsPerPacket": 1,
+    "preserveRawResultBeforeValidation": true,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/diagnosis.json": "673efd1a5f40d4bf23e3e3df3648d41e5c9692ee075a50fbdd974b88f79a2007",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/packets/debate-16.json": "4d3684f345594eb66daf9095b89af94fb8cf95a1befdba86300823950b6e0f46",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/outputs/debate-16.json": "0dce18f13622abf3906990282b9f20aaaef73683037ea3ce47a85ebf3fa8ffbc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/validations/debate-16.json": "930c695ccb793057727a94ec941b6b90fb7a1762e214b105071b1104a2923293",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/provenance/debate-16.json": "3bcfcb6873dbc700632f44735a9e00c7282dfd419793e0d758881c7fc7568401",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/execution-activation.json": "9bb070627ca4e944e1444e4f3aa8a1973d4e8f4cd7219f47392992e58676f131",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/model-execution.json": "6d3cf5b340e959fffb368f1e68c29f66998b0c52d71947b4d11957f0bdc705f6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/analysis.json": "56edb8e8bf5472ab8a950e8dc4101fd0cc34f90f97b279cc7116bf03553da3ad",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-0.json": "6ccfb511cf626257b0a3208c756405faed9936b9e5d8e475bfac80b6f78f2cf4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-1.json": "a89be84a6a717f4c34d9a5fd631d562da8cbc9d8e7986a37dd1f8b0f768c9dbf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-3.json": "f1b5dd6777e19210874af4ea8301743fd909c372f90f6521375cc673cfd92e81",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-5.json": "53ca70cb5e91dfee3c47d07210cd152e872b79752f305a2e90a66d802302aa4a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-6.json": "6ec29c28fa2f3eb94172b99c7f3bad0706afa0d152ff9b17f9b74b612e0d7b4f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-7.json": "5a83b2ff194671e612b0b6e1e1d6dde13405455ae61c1dfea776b36b17b7e01b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-1/outputs/context-8.json": "8d1ab6759226cc7235464772ea195254c28ee0710b7177aad212d2685b748804",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/manual.md": "b3697f2c15dce3aedbbc5582607a8e9410e0a753a884001a2ebb673213c8d788",
+    "scripts/assessment-production-post-canary-batch-16-publication-level-2-recovery.mjs": "e4fe4ee695d6775d7c7e284eb16118942d2372b8abf103a078b7413ed2c532e4",
+    "scripts/lib/assessment-production-post-canary-batch-16-publication-validation.mjs": "39cd35fc82d3b6c9f501d2b8cb703c2b5e3b3c9005bbf0698274958fbffac0bd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/packets/context-0.json": "ebb56bdda0160aa33bb019fc987bcd6e4d4d1b5b79f0501adfc6c88b27e446e8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/schemas/context-0.schema.json": "a2bcde9f2851352061482c3d1617466822b8cb46a9edf0fe609895ef5ff0406e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/packets/context-1.json": "46ee4ddce4dacc0ceb9d53950c0baf295b27ed035104c516f6fc14b4f6aeaf71",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/schemas/context-1.schema.json": "0272b814bcedd4734d92cbe3faeab05df968bcd680fd4fa440fd7b7736b4b06e"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/outputs/context-0.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/outputs/context-1.json"
+  ],
+  "authorization": {
+    "preparation": true,
+    "activation": true,
+    "modelExecution": true,
+    "deterministicMergeAndValidation": true,
+    "retries": false,
+    "furtherOrdinaryRecoveryLevel": false,
+    "exceptionalThirdLevelForAtomicCompanionLossOnly": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-two-fresh-one-field-batch-16-publication-recovery-level-2-contexts-once",
+  "activatedAt": "2026-08-28T14:07:48Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-reconstruction/failure-recovery/level-2/execution-preparation-manifest.json",
+    "sha256": "b289a48bf4b78e9f3b186a9843e7c2e0a2ff11448f3e6813eca00ed64ef1ea10"
+  }
+}
