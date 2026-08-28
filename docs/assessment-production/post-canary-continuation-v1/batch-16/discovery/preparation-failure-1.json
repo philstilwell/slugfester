@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0-batch-16-deterministic-control-record-correction",
+  "status": "preserved-pre-model-preparation-integrity-failure-corrected",
+  "occurredAt": "2026-08-28T03:07:42.000Z",
+  "stage": "discovery-execution-preparation",
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "failedCommand": "node scripts/preregister-assessment-production-post-canary-batch-16-discovery.mjs --write --frozen-at <timestamp>",
+  "error": "scripts/lib/assessment-production-post-canary-batch-16-standing-authorization.mjs: standing-authorization source drifted",
+  "diagnosis": "The standing-authorization record was generated before a trailing blank line was removed from its validator library to satisfy git diff --check. The committed validator was semantically identical but had a different byte hash.",
+  "correction": {
+    "kind": "exact-deterministic-derived-record-hash-correction",
+    "record": "docs/assessment-production/post-canary-continuation-v1/batch-16/standing-authorization.json",
+    "field": "sourceHashes.scripts/lib/assessment-production-post-canary-batch-16-standing-authorization.mjs",
+    "previousSha256": "3fbc813a3226ba26769b78a9d7ed4a0eec850abb0f4c5a4dd24dc1fd6ca65ed7",
+    "correctedSha256": "dbeec69a1afe5853c2ca593762cf3c978477af77e9d52e45dbe5242b88429c8d",
+    "semanticControlChanged": false,
+    "acceptedFieldChanged": false,
+    "scorePassRun": false
+  },
+  "companionCorrection": {
+    "kind": "exact-deterministic-derived-record-hash-correction",
+    "record": "docs/assessment-production/post-canary-continuation-v1/batch-16/standing-authorization.json",
+    "field": "sourceHashes.scripts/test-assessment-production-post-canary-batch-16-standing-authorization.mjs",
+    "previousSha256": "85e305e148ae3e898a4b115d479125862e37412d977db295ef10cc22e1981265",
+    "correctedSha256": "48b482b9073426a596adc8f451e976d40417780edc2b5de2a5c18fcc4974136b",
+    "semanticControlChanged": false,
+    "acceptedFieldChanged": false,
+    "scorePassRun": false
+  },
+  "subsequentPreModelCheck": {
+    "status": "preserved-pre-model-preparation-value-mismatch-corrected",
+    "error": "validated Batch 16 source preparation is not frozen at the required authorization boundary",
+    "diagnosis": "The Batch 15 controller precedent retained its previous maximum copied-input byte assertion of 82209 instead of the frozen Batch 16 value 66002.",
+    "correction": {
+      "kind": "exact-deterministic-controller-boundary-correction",
+      "file": "scripts/preregister-assessment-production-post-canary-batch-16-discovery.mjs",
+      "field": "preparation.totals.maximumCopiedInputBytes",
+      "previousValue": 82209,
+      "correctedValue": 66002,
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "sourceReplayFormattingCheck": {
+    "status": "preserved-pre-model-source-library-hash-mismatch-corrected",
+    "error": "scripts/lib/assessment-production-post-canary-batch-16-source-preparation.mjs: source-preparation input drifted",
+    "diagnosis": "The source-preparation manifest retained the pre-cleanup byte hash for the source-preparation helper after its trailing blank line was removed before the source checkpoint commit.",
+    "correction": {
+      "kind": "exact-deterministic-derived-record-hash-correction",
+      "field": "sourceHashes.scripts/lib/assessment-production-post-canary-batch-16-source-preparation.mjs",
+      "previousSha256": "5eec2bcc8da9ac7d825e2f4411560661e897bf7c555ac1b1db091b158d6dfa98",
+      "correctedSha256": "1883f2f1e785a843ec8aded380a28b6d9105be364aaff368d16cf89302e05f31",
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "sourcePacketBytesChanged": false,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "maximumContextPreModelCheck": {
+    "status": "preserved-pre-model-maximum-context-identity-mismatch-corrected",
+    "error": "maximum copied-input context drifted",
+    "diagnosis": "The Batch 15 controller precedent retained Debate 178 chunk-002 as the previous maximum-input context instead of the replayed Batch 16 maximum, Debate 92 chunk-002.",
+    "correction": {
+      "kind": "exact-deterministic-controller-boundary-correction",
+      "previousDebateNumber": "178",
+      "previousChunkId": "chunk-002",
+      "correctedDebateNumber": "92",
+      "correctedChunkId": "chunk-002",
+      "copiedInputBytes": 66002,
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "validatorPreModelCheck": {
+    "status": "preserved-pre-model-validator-boundary-mismatch-corrected",
+    "error": "Expected values to be strictly equal: 66002 !== 82209",
+    "diagnosis": "The discovery preparation validator retained Batch 15's maximum input byte count and maximum-context identity.",
+    "correction": {
+      "kind": "exact-deterministic-validator-boundary-correction",
+      "previousCopiedInputBytesMaximum": 82209,
+      "correctedCopiedInputBytesMaximum": 66002,
+      "correctedMaximumContext": {
+        "debateNumber": "92",
+        "chunkId": "chunk-002"
+      },
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  }
+}
