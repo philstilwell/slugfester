@@ -216,7 +216,14 @@ if (mode === "--run") {
   const runPool = async (indexes) => {
     const queue = [...indexes];
     const completed = [];
-    const worker = async () => { while (queue.length) completed.push(await execute(activation.contexts.find((item) => item.contextIndex === queue.shift()))); };
+    const worker = async () => {
+      while (queue.length) {
+        const index = queue.shift();
+        const context = activation.contexts.find((item) => item.contextIndex === index);
+        assert(context, `context ${index}: continuation context missing`);
+        completed.push(await execute(context));
+      }
+    };
     await Promise.all(Array.from({ length: Math.min(2, indexes.length) }, worker));
     return completed.sort((left, right) => left.contextIndex - right.contextIndex);
   };

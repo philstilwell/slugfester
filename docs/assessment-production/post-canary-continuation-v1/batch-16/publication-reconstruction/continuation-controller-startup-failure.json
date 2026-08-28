@@ -27,5 +27,25 @@
     "scorePassRerun": false,
     "modelExecutionBoundaryChanged": false
   },
+  "subsequentFailure": {
+    "failedAt": "2026-08-28T14:13:24Z",
+    "checkpointCommit": "3a022fc610377e48d91f1987bec9e6c34fac6a12",
+    "message": "TypeError: Cannot read properties of undefined (reading 'debateNumber')",
+    "classification": "controller-queue-selection-defect",
+    "contextsAttempted": 0,
+    "modelCallsStarted": 0,
+    "attemptsConsumed": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "preservedActivationSha256": "fff7576d6830d879afd711888eb23b8182f631546819f5f85c3f437d66f5deac",
+    "correction": "Remove each queued index exactly once before resolving its frozen context; assert that the context exists before execution.",
+    "correctedControllerSha256": "ba2c28b8f000aa7626824d9912c6e3ff9e6f4d33cde4bf631de2dc12616469dd",
+    "correctedPreparationManifestSha256": "1c4119cd03168d3afa402f927c341d4c1bb262a37a57110b049f1371445086bd",
+    "selectionChanged": false,
+    "packetOrSchemaChanged": false,
+    "scoresChanged": false,
+    "scorePassRerun": false,
+    "modelExecutionBoundaryChanged": false
+  },
   "nextAuthorizedAction": "restart-the-same-frozen-nine-context-publication-continuation-gate"
 }
