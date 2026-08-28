@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-audio-attribution-preparation",
+  "protocolId": "assessment-production-post-canary-batch-17-audio-attribution-recovery",
+  "status": "prepared-one-batch-17-audio-attribution-recovery-context-not-active",
+  "preparedAt": "2026-08-28T17:15:50Z",
+  "checkpointCommit": "cfe78fa9f0d8ab9432c78d30ec0c72669b76e2d9",
+  "productionCanary": false,
+  "batchNumber": 17,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-successor-authorization.json",
+    "sha256": "403ce23f791f0773f395144ae255fd8ba4a0aee28265ef9028f3f2358051bf8b"
+  },
+  "workflow": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery-workflow.md",
+  "manual": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery-manual.md",
+  "contexts": [
+    {
+      "debateNumber": "77",
+      "debateId": "feser-oppy-arguments-for-god-2020",
+      "moveIds": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/packets/debate-77.json",
+      "packetSha256": "9501622b8ee80bc4ad6324bc3bd72e86ed86174f63a9fb1362c1253423bd29e1",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/schemas/debate-77.schema.json",
+      "schemaSha256": "de96c05fcb56490a12a7aae5d84a4e6c03fd7336ff1bb4532d0dfa2f906cb730",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "con-strongest-naturalist-audience-standard",
+          "path": "output/transcribe/assessment-production-post-canary-batch-17-audio-verification/debate-77/transcripts/con-strongest-naturalist-audience-standard.transcript.json",
+          "sha256": "fdff548ce7e8cc60419df4ea5b83f79bf7c8e5cf3dc1b7da87fb8e96dbad5ff0"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/outputs/debate-77.json"
+    }
+  ],
+  "executionPolicy": {
+    "concurrency": 1,
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "APIKeysRemoved": true,
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "modelExecutionAuthorizedThisStage": false,
+  "futureArtifacts": {
+    "executionManifest": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/analysis.json",
+    "combinedAudioGate": "docs/assessment-production/post-canary-continuation-v1/batch-17/audio-verification/audio-attribution-recovery/combined-audio-verification.json"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-17-audio-attribution-recovery",
+  "debateNumber": "77",
+  "debateId": "feser-oppy-arguments-for-god-2020",
+  "speakerRoster": {
+    "pro": "Ed Feser",
+    "con": "Graham Oppy",
+    "substantiveSpeakerCount": 2
+  },
+  "moves": [
+    {
+      "moveId": "con-strongest-naturalist-audience-standard",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "When the relevant audience is the strongest naturalist rather than a sympathetic or unprepared reader, the proposed benefits of formal reconstruction largely disappear apart from reductio uses.",
+      "sourceSpan": {
+        "startEvent": 1589,
+        "endEvent": 1647
+      },
+      "deterministicEvidence": {
+        "status": "unresolved",
+        "expectedSpeaker": "Graham Oppy",
+        "fullClipExcerptRecall": 0.9651162790697675,
+        "expectedSpeakerExcerptRecall": 0.7325581395348837,
+        "highestOtherSpeaker": "Ed Feser",
+        "highestOtherSpeakerExcerptRecall": 0.6744186046511628,
+        "expectedSpeakerRecallMargin": 0.05813953488372092,
+        "expectedSpeakerDurationSeconds": 112.6,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": false,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "Graham Oppy",
+            "segmentCount": 27,
+            "durationSeconds": 112.6,
+            "wordCount": 293,
+            "excerptRecall": 0.7325581395348837
+          },
+          {
+            "speaker": "Ed Feser",
+            "segmentCount": 18,
+            "durationSeconds": 37.1,
+            "wordCount": 116,
+            "excerptRecall": 0.6744186046511628
+          },
+          {
+            "speaker": "A",
+            "segmentCount": 5,
+            "durationSeconds": 1.65,
+            "wordCount": 11,
+            "excerptRecall": 0.046511627906976744
+          }
+        ]
+      },
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-17-audio-verification/debate-77/transcripts/con-strongest-naturalist-audience-standard.transcript.json",
+      "diarizedTranscriptSha256": "fdff548ce7e8cc60419df4ea5b83f79bf7c8e5cf3dc1b7da87fb8e96dbad5ff0",
+      "validationOverlayApplied": false
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptsRequired": true,
+    "lockedPropositionsAndSpansVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "genericLabelsRequireDialogueAndRosterIdentityResolution": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}
