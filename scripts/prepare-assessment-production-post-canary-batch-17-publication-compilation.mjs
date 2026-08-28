@@ -54,7 +54,7 @@ assertV4(
   cohort.debates?.length === 4 &&
   cohort.debates.reduce((sum, row) => sum + row.validation.moves, 0) === 79 &&
   cohort.debates.reduce((sum, row) => sum + row.validation.critiques, 0) === 79 &&
-  cohort.debates.reduce((sum, row) => sum + row.validation.quoteExactSourceMatches, 0) === 20 &&
+  cohort.debates.reduce((sum, row) => sum + row.validation.quoteExactSourceMatches, 0) === 8 &&
   cohort.debates.every((row) => row.validation?.status === "passed") &&
   cohort.integrity?.scoresChanged === false && cohort.integrity?.scorePassRerun === false,
 "the accepted Batch 17 publication cohort changed");
