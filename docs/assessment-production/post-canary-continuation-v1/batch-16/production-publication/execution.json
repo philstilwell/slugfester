@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-production-publication-execution",
+  "protocolId": "assessment-production-post-canary-batch-16-production-publication",
+  "status": "passed-batch-16-production-publication-mutation-awaiting-generated-derivative-correction",
+  "startedAt": "2026-08-28T15:09:27.613Z",
+  "completedAt": "2026-08-28T15:09:28.254Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/production-publication/execution-activation.json",
+    "sha256": "54479ce4effb2cd2909b8bf219eb680496c1c30e0ab97584ba36b60fa73209d3",
+    "bytes": 7804
+  },
+  "productionDebates": {
+    "path": "src/data/debates.js",
+    "beforeSha256": "e9ebab7e251c0d0ffd894489117bb2faf13574858a31f529ed94b5407abe0f3f",
+    "afterSha256": "955a72b415cdd36cd6aac6b6b7ebfc6b0fbe960203a04b7600dfdf37fe85c80f",
+    "afterBytes": 7600403,
+    "debateCount": 195,
+    "changedRecords": 10
+  },
+  "productionLedgers": [
+    {
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "path": "docs/assessment-ledgers/hirsi-ali-dawkins-god-debate-2024.json",
+      "sha256": "e26bad8fa217e868fe66695726cf2e60b26ed16f0f0ed71f459cf12bb14f1306",
+      "bytes": 109012,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "path": "docs/assessment-ledgers/ward-ruse-mind-consciousness-god-2013.json",
+      "sha256": "2fe9deb5ede3903a8ffffd9a5ceaa9dd0f1b6c357aa395adfb677028a7d977af",
+      "bytes": 100106,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "path": "docs/assessment-ledgers/craig-wielenberg-god-morality-2018.json",
+      "sha256": "3d0497dd8c24abd49fb110686bfb0ee889c898cc192eac03bdbb73f1b865e5b2",
+      "bytes": 112112,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "path": "docs/assessment-ledgers/plantinga-dennett-evolution-naturalism-2018.json",
+      "sha256": "bd0669a57020a7a3d5b66e7abcf3edbad81f60c4918388011489b37c93d83785",
+      "bytes": 109250,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "76",
+      "debateId": "craig-oppy-mathematics-theism-2020",
+      "path": "docs/assessment-ledgers/craig-oppy-mathematics-theism-2020.json",
+      "sha256": "49b86164ecbe3b29d20b45ff3062aab44525677b0c4c28906474f5c84878dbc0",
+      "bytes": 118589,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "41",
+      "debateId": "huemer-bush-objective-moral-facts-2024",
+      "path": "docs/assessment-ledgers/huemer-bush-objective-moral-facts-2024.json",
+      "sha256": "54f0587ee7bd763ffb1ff55c444b0b7a00fbef520ad603e0ea22f43b5c63f636",
+      "bytes": 121672,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "path": "docs/assessment-ledgers/craig-malpass-universe-begin-exist-2020.json",
+      "sha256": "1814165814d815f5cb4b115dee18ed15b7e408afa14067acd6e77d392ccc09b0",
+      "bytes": 117314,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "139",
+      "debateId": "adelstein-dillahunty-belief-god-2025",
+      "path": "docs/assessment-ledgers/adelstein-dillahunty-belief-god-2025.json",
+      "sha256": "4533dc603619a9890ecbc304fb15881f688db6f20a9bd936d1a2433dce46c440",
+      "bytes": 116612,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "163",
+      "debateId": "craig-draper-existence-of-god-1997",
+      "path": "docs/assessment-ledgers/craig-draper-existence-of-god-1997.json",
+      "sha256": "f356156044c97debe3b579b9b29f56d07525af0aac7f08173563e11550e47152",
+      "bytes": 104046,
+      "byteIdenticalToStagedLedger": true
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "path": "docs/assessment-ledgers/craig-millican-does-god-exist-2011.json",
+      "sha256": "7677548614a7e4d50895b341f3d1be7d4ca5dd95913cfac933417afb0d9971f0",
+      "bytes": 133671,
+      "byteIdenticalToStagedLedger": true
+    }
+  ],
+  "protected": {
+    "referencesByteIdentical": true,
+    "validatorByteIdentical": true,
+    "candidatesByteIdentical": true,
+    "stagedLedgersByteIdentical": true,
+    "compatibilityEvidenceByteIdentical": true,
+    "unrelatedProductionRecordsByteIdentical": 185,
+    "unrelatedPreexistingProductionLedgersByteIdentical": 160,
+    "preexistingBatchProductionLedgersReplaced": 0,
+    "newBatchProductionLedgersPublished": 10
+  },
+  "validation": {
+    "routeAndScoreCommand": "node scripts/validate-debates.mjs",
+    "routeAndScoreExitCode": 0,
+    "routeAndScoreStdoutSha256": "7b9d8e835d5f81930501da5816db3498e0f1da0a287ad217e0edc872e059dd81",
+    "activeScorePolicyCommand": "node scripts/test-assessment-production-score-stability-policy-active.mjs",
+    "activeScorePolicyExitCode": 0,
+    "completeRepositoryValidationDeferredToGeneratedDerivativePass": true
+  },
+  "totals": {
+    "mutationPasses": 1,
+    "productionDebatesFiles": 1,
+    "productionLedgerFiles": 10,
+    "changedDebateRecords": 10,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbacks": 0,
+    "generatedDerivativeWrites": 0
+  },
+  "nextAuthorizedAction": "prepare-isolated-batch-16-generated-seo-derivative-correction-under-standing-authorization"
+}
