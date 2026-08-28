@@ -109,6 +109,8 @@ requireIncludes("app scorecard", app, "Open YouTube source");
 requireIncludes("app scorecard", app, "GPT 5.5 Extra High");
 requireIncludes("app scorecard", app, "5.6 Terra Extra High");
 requireIncludes("app scorecard", app, "assessmentModelFor");
+requireExcludes("app public source provenance", app, "debate.sourceNote");
+requireExcludes("app public scoring provenance", app, "debate.scoringNote");
 requireIncludes("app overall commentary", app, "Landed");
 requireIncludes("app overall commentary", app, "Whiffed");
 requireIncludes("app scorecard", app, 'class="assessment-model"');

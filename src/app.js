@@ -2243,7 +2243,6 @@ function renderDebateObject(
           <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
-          ${debate.sourceNote ? `<p class="source-note">${escapeHtml(debate.sourceNote)}</p>` : ""}
         </div>
         <figure class="debate-gloves-panel" aria-hidden="true">
           <img src="/assets/debate-gloves.png" alt="" width="444" height="444">
@@ -2336,8 +2335,6 @@ function renderInteractionGuide() {
 }
 
 function renderScoringNote(debate) {
-  if (!debate.scoringNote) return "";
-
   const model = assessmentModelFor(debate);
   const rubric = debate.assessmentRubric
     ? ` — Rubric: ${escapeHtml(debate.assessmentRubric)}.`
@@ -2346,7 +2343,7 @@ function renderScoringNote(debate) {
   return `
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
-      <span>${escapeHtml(debate.scoringNote)}</span>
+      <span>Scores are AI-generated estimates of argumentative performance.</span>
       <span class="assessment-model">Assessments made by ${escapeHtml(model)}.${rubric}</span>
     </section>
   `;
