@@ -1,0 +1,3209 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-17-decomposed-consensus",
+  "debateNumber": "44",
+  "debateId": "oconnor-biddle-free-will-2025",
+  "moveDisputes": [
+    {
+      "moveId": "con-causal-dilemma-ultimate-authorship",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 82
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 89,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-evidence-awareness"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-exhaustive-dilemma"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 71,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 91,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-causation-distinguish-cause-necessitation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-causation-distinguish-cause-necessitation-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Challenges the premise that being caused entails being necessitated or predetermined by prior events.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-causation-distinguish-cause-necessitation-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Does not yet explain how non-necessitated causation supplies control rather than indeterminacy.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-causation-distinguish-cause-necessitation-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The skeptical dilemma allegedly conflates being caused with being necessitated by prior events.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-causation-distinguish-cause-necessitation-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "A complete answer must explain positively how non-necessitating causation supplies control rather than randomness.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-defeat-introspection"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-exhaustive-dilemma"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-introspection-regulated-mental-effort",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-introspection-regulated-mental-effort-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Offers introspective observation of choosing mental activation as evidence for controlled agency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-introspection-regulated-mental-effort-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Does not explain why the observed choice escapes both determination and indeterminacy.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-introspection-regulated-mental-effort-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The relevant capacity is allegedly observable in choosing whether to activate rational attention.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-introspection-regulated-mental-effort-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The observation must distinguish controlled agency from a determined or indeterminate appearance of control.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 66
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 62
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-define-focus"
+              }
+            },
+            "candidate2": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "pro-motion-volitional-agency"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 63
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scope-free-will-activates-reason",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 14,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scope-free-will-activates-reason-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Reframes the motion-relevant freedom as activating rational engagement rather than ultimate authorship of every outcome.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-free-will-activates-reason-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Preserves the control issue by locating it in whether the rational faculty is voluntarily activated.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scope-free-will-activates-reason-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The proper issue is limited voluntary activation of reason rather than authorship of every action or content.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-free-will-activates-reason-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The narrower capacity must still survive the skeptic's determination-or-randomness challenge.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 80
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 63,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 61
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-authorship-agent-primary-cause",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-authorship-agent-primary-cause-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Answers the dilemma by positing the agent as the cause of a choice that is neither causeless nor prior-event necessitated.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-authorship-agent-primary-cause-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Does not provide a mechanism or criterion distinguishing agent causation from unexplained indeterminacy.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-authorship-agent-primary-cause-component-01",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "A choice can be caused by the agent without being causeless or necessitated by prior factors.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-authorship-agent-primary-cause-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "The account must explain how agent causation differs from an unexplained label for indeterminacy.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-define-focus"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-agent-causation"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 67,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 68
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 58,
+          "candidate2": 55,
+          "roundedMeanAfterAdjudication": 57
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-introspection-interpretation-defeasible",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-introspection-regulated-mental-effort"
+              ],
+              "components": [
+                {
+                  "componentId": "con-introspection-interpretation-defeasible-component-01",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Identifies the inference from felt immediacy to the truth of its causal interpretation as invalid.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-introspection-interpretation-defeasible-component-02",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Does not independently resolve whether agent causation is coherent.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-introspection-regulated-mental-effort"
+              ],
+              "components": [
+                {
+                  "componentId": "con-introspection-interpretation-defeasible-component-01",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Feeling or observing an apparent force or agency does not establish the truth of its interpretation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-introspection-interpretation-defeasible-component-02",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "The reply does not independently show that the experienced agency is determined or random.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-exhaustive-dilemma"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-defeat-introspection"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-deliberative-content-unselected",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-introspection-regulated-mental-effort",
+                "pro-scope-free-will-activates-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-deliberative-content-unselected-component-01",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Examines the city exercise and argues that candidate thoughts arise without proactive selection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-deliberative-content-unselected-component-02",
+                  "targetMoveId": "pro-scope-free-will-activates-reason",
+                  "text": "Does not fully address the narrower claim that method or degree of attention, rather than content, is chosen.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-introspection-regulated-mental-effort",
+                "pro-scope-free-will-activates-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-deliberative-content-unselected-component-01",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Observed deliberation contains thoughts and options that arise without proactive selection by a chooser.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-deliberative-content-unselected-component-02",
+                  "targetMoveId": "pro-scope-free-will-activates-reason",
+                  "text": "Unchosen content does not by itself refute voluntary selection of the method or degree of attention.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 80
+            },
+            "candidate2": {
+              "value": 73
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-practical-influence"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-deliberative-compulsion"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 69,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-strongest-unchosen-desire",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-scope-free-will-activates-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-strongest-unchosen-desire-component-01",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Challenges agent authorship by tracing conscious action to desires whose existence and operative strength are unchosen.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-strongest-unchosen-desire-component-02",
+                  "targetMoveId": "pro-scope-free-will-activates-reason",
+                  "text": "Does not exclude the possibility that chosen rational engagement alters which desire becomes operative.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-scope-free-will-activates-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-strongest-unchosen-desire-component-01",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Conscious conduct allegedly follows operative desires whose existence and relative strength were not freely chosen.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-strongest-unchosen-desire-component-02",
+                  "targetMoveId": "pro-scope-free-will-activates-reason",
+                  "text": "The account must explain whether rational attention can revise or reorder desires over time.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 70
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 72,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-causal-pluralism"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-desire-account"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-deliberation-method-not-content",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-deliberative-content-unselected",
+                "con-strongest-unchosen-desire"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-deliberation-method-not-content-component-01",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "Explains that unbidden subconscious content does not answer the distinct claim that conscious method is chosen.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-deliberation-method-not-content-component-02",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "Claims chosen method can affect the governing desire but does not fully explain that causal influence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-deliberative-content-unselected",
+                "con-strongest-unchosen-desire"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-deliberation-method-not-content-component-01",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "The skeptical example concerns unchosen content, while the defended freedom concerns the chosen method of engagement.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-deliberation-method-not-content-component-02",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "Chosen rational method can affect which desire governs action, but the causal independence of that method remains unexplained.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 85
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-defeat-introspection"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-deliberative-compulsion"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 86
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-agent-causation-determined-or-random",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-causation-distinguish-cause-necessitation",
+                "pro-deliberation-method-not-content"
+              ],
+              "components": [
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-01",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Applies the caused-or-causeless dilemma directly to the alleged agent-caused mental event.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-02",
+                  "targetMoveId": "pro-causation-distinguish-cause-necessitation",
+                  "text": "Treats caused events as falling under determining causes without fully answering the cause-versus-necessitation distinction.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-03",
+                  "targetMoveId": "pro-deliberation-method-not-content",
+                  "text": "Extends the dilemma to mental method choice but does not separately analyze attentional regulation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-causation-distinguish-cause-necessitation",
+                "pro-deliberation-method-not-content"
+              ],
+              "components": [
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-01",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Calling the agent a cause does not explain control if the mental event remains caused or causeless.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-02",
+                  "targetMoveId": "pro-causation-distinguish-cause-necessitation",
+                  "text": "The reply treats caused events as determined without fully defending why causation entails necessitation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-agent-causation-determined-or-random-component-03",
+                  "targetMoveId": "pro-deliberation-method-not-content",
+                  "text": "The same dilemma is applied to mental method, though the selected excerpt does not develop that application fully.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-exhaustive-dilemma"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-volitional-agency"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-mind-consciousness-nonmechanical",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random",
+                "con-causal-dilemma-ultimate-authorship"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-mind-consciousness-nonmechanical-component-01",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "Asserts a nonphysical mind but does not show why its choices escape the caused-or-causeless dilemma.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-mind-consciousness-nonmechanical-component-02",
+                  "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+                  "text": "Provides contrary metaphysical material without answering the dilemma's theory-independent structure.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 49
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-mind-consciousness-nonmechanical-component-01",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "The causal dilemma applies to mental events regardless of whether mind reduces to matter.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-mind-consciousness-nonmechanical-component-02",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "The move asserts nonphysical consciousness and choice but does not explain a third control-conferring causal relation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-agent-causation"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-causal-pluralism"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 58
+            },
+            "candidate2": {
+              "value": 68
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 65,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 66
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 52,
+          "candidate2": 54,
+          "roundedMeanAfterAdjudication": 53
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-deliberation-values-shaped-over-time",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random",
+                "con-deliberative-content-unselected",
+                "con-strongest-unchosen-desire"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-deliberation-values-shaped-over-time-component-01",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "Answers the fixed-desire picture by arguing that repeated reasoning revises value judgments and later emotions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-deliberation-values-shaped-over-time-component-02",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "Does not establish that the earlier choices to reason were themselves freely selected.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-deliberation-values-shaped-over-time-component-03",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "Does not resolve the causal status of the self-shaping choices.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random",
+                "con-strongest-unchosen-desire"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-deliberation-values-shaped-over-time-component-01",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "Repeated rational choices can revise value judgments and thereby alter later emotions and operative desires.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-deliberation-values-shaped-over-time-component-02",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "The response does not show that the repeated choices themselves escape determining causes or indeterminacy.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 72,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-alternate-possibilities"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-desire-account"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 84
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-evidence-observable-evasion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random",
+                "con-deliberative-content-unselected",
+                "con-introspection-interpretation-defeasible"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-01",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "Argues that a person can evade recognized considerations rather than being compelled by rational content.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-02",
+                  "targetMoveId": "con-introspection-interpretation-defeasible",
+                  "text": "Reasserts direct introspective evidence without answering why its causal interpretation might be mistaken.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-03",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "Does not explain whether evasion is determined, agent-caused, or indeterminate.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-agent-causation-determined-or-random",
+                "con-deliberative-content-unselected",
+                "con-introspection-interpretation-defeasible"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-01",
+                  "targetMoveId": "con-agent-causation-determined-or-random",
+                  "text": "Observable evasion allegedly demonstrates that recognized evidence does not mechanically compel rational acceptance.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-02",
+                  "targetMoveId": "con-introspection-interpretation-defeasible",
+                  "text": "The move does not answer the objection that introspection may misidentify the causal source of evasion.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-evidence-observable-evasion-component-03",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "It shows apparent resistance to content but not proactive selection of the content that arises.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 65
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 57
+            },
+            "candidate2": {
+              "value": 48
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-define-focus"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-evidence-awareness"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 55
+            },
+            "candidate2": {
+              "value": 65
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 35,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "radically-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 62,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-alternate-possibilities-definition",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 7,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 83
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-scope-constraints"
+              }
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-alternate-possibilities"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-introspective-confidence-defeasible",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-evidence-observable-evasion",
+                "pro-introspection-regulated-mental-effort",
+                "pro-mind-consciousness-nonmechanical"
+              ],
+              "components": [
+                {
+                  "componentId": "con-introspective-confidence-defeasible-component-01",
+                  "targetMoveId": "pro-evidence-observable-evasion",
+                  "text": "Reiterates that introspection alone cannot establish free will when a philosophical defeater is available.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-introspective-confidence-defeasible-component-02",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Preserves ordinary experiential trust while denying that it resolves the special causal question.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-introspective-confidence-defeasible-component-03",
+                  "targetMoveId": "pro-mind-consciousness-nonmechanical",
+                  "text": "Does not depend on rejecting the defender's account of consciousness.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-evidence-observable-evasion",
+                "pro-introspection-regulated-mental-effort"
+              ],
+              "components": [
+                {
+                  "componentId": "con-introspective-confidence-defeasible-component-01",
+                  "targetMoveId": "pro-evidence-observable-evasion",
+                  "text": "Introspection alone cannot establish free will when philosophical arguments support alternative causal explanations.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-introspective-confidence-defeasible-component-02",
+                  "targetMoveId": "pro-introspection-regulated-mental-effort",
+                  "text": "Ordinary trust in experience is preserved while the stronger metaphysical inference is treated as defeasible.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-exhaustive-dilemma"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-defeat-introspection"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 89,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-theory-independent-incoherence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 14,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-deliberation-method-not-content",
+                "pro-mind-consciousness-nonmechanical"
+              ],
+              "components": [
+                {
+                  "componentId": "con-theory-independent-incoherence-component-01",
+                  "targetMoveId": "pro-mind-consciousness-nonmechanical",
+                  "text": "States that the anti-free-will argument does not depend on materialism and therefore survives a nonphysical mind.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-theory-independent-incoherence-component-02",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "Does not independently demonstrate that agent causation is incoherent under every theory of consciousness.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-theory-independent-incoherence-component-03",
+                  "targetMoveId": "pro-deliberation-method-not-content",
+                  "text": "Does not separately analyze whether a theory-neutral focus capacity is coherent.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-authorship-agent-primary-cause",
+                "pro-mind-consciousness-nonmechanical"
+              ],
+              "components": [
+                {
+                  "componentId": "con-theory-independent-incoherence-component-01",
+                  "targetMoveId": "pro-mind-consciousness-nonmechanical",
+                  "text": "Rejecting materialism does not answer a causal objection designed to apply across theories of consciousness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-theory-independent-incoherence-component-02",
+                  "targetMoveId": "pro-authorship-agent-primary-cause",
+                  "text": "The passage asserts theory independence but only compresses the underlying reason agent causation remains incoherent.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 80
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 65
+            },
+            "candidate2": {
+              "value": 72
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-deliberative-compulsion"
+              }
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-theory-independence"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 87
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-constraints-coercion-limits-exercise",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 34,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-alternate-possibilities-definition",
+                "con-strongest-unchosen-desire",
+                "con-theory-independent-incoherence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-constraints-coercion-limits-exercise-component-01",
+                  "targetMoveId": "con-alternate-possibilities-definition",
+                  "text": "Reframes coercion as limiting the exercise and available outputs of a capacity rather than eliminating the capacity itself.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-constraints-coercion-limits-exercise-component-02",
+                  "targetMoveId": "con-theory-independent-incoherence",
+                  "text": "Does not answer the general causal incoherence argument.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-constraints-coercion-limits-exercise-component-03",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "Does not establish that the remaining judgment under coercion escapes desire governance.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-strongest-unchosen-desire",
+                "con-theory-independent-incoherence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-constraints-coercion-limits-exercise-component-01",
+                  "targetMoveId": "con-theory-independent-incoherence",
+                  "text": "External force can restrict the exercise of rational choice without eliminating the underlying faculty.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-constraints-coercion-limits-exercise-component-02",
+                  "targetMoveId": "con-strongest-unchosen-desire",
+                  "text": "The response does not establish that constrained selection is independent of operative desires.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 85,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-evidence-awareness"
+              }
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-scope-constraints"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scope-degrees-of-mental-activation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-alternate-possibilities-definition",
+                "con-deliberative-content-unselected",
+                "con-theory-independent-incoherence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-01",
+                  "targetMoveId": "con-alternate-possibilities-definition",
+                  "text": "Specifies the relevant alternatives as degrees and methods of mental activation rather than arbitrary content selection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-02",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "Directly preserves unbidden content while locating the claimed choice in full-context engagement, drift, or evasion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-03",
+                  "targetMoveId": "con-theory-independent-incoherence",
+                  "text": "Does not explain how graded activation escapes the theory-independent causal dilemma.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-alternate-possibilities-definition",
+                "con-deliberative-content-unselected",
+                "con-theory-independent-incoherence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-01",
+                  "targetMoveId": "con-alternate-possibilities-definition",
+                  "text": "The relevant freedom concerns degrees and methods of mental activation, not unrestricted selection of content or outcome.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-02",
+                  "targetMoveId": "con-theory-independent-incoherence",
+                  "text": "The scope clarification does not explain how graded activation escapes the causal dilemma.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scope-degrees-of-mental-activation-component-03",
+                  "targetMoveId": "con-deliberative-content-unselected",
+                  "text": "It expressly concedes unchosen content while relocating freedom to engagement method.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-volitional-agency"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-define-focus"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-coercive-conscious-choice",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-constraints-coercion-limits-exercise",
+                "pro-scope-degrees-of-mental-activation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-coercive-conscious-choice-component-01",
+                  "targetMoveId": "pro-constraints-coercion-limits-exercise",
+                  "text": "Agrees that coercion restricts meaningful options while maintaining that conscious surrender remains technically a choice.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-coercive-conscious-choice-component-02",
+                  "targetMoveId": "pro-scope-degrees-of-mental-activation",
+                  "text": "Does not determine whether the conscious selection or its degree of engagement is freely authored.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-constraints-coercion-limits-exercise",
+                "pro-scope-degrees-of-mental-activation"
+              ],
+              "components": [
+                {
+                  "componentId": "con-coercive-conscious-choice-component-01",
+                  "targetMoveId": "pro-constraints-coercion-limits-exercise",
+                  "text": "Coercion can leave a conscious selection between alternatives even when ordinary speech calls the conduct forced.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-coercive-conscious-choice-component-02",
+                  "targetMoveId": "pro-scope-degrees-of-mental-activation",
+                  "text": "The reply does not show whether conscious selection includes freely controlled mental activation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-causal-dilemma-ultimate-authorship",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 74,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-causal-dilemma-ultimate-authorship",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 71,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-causal-dilemma-ultimate-authorship",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 91,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "pro-causation-distinguish-cause-necessitation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-causation-distinguish-cause-necessitation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-introspection-regulated-mental-effort",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-introspection-regulated-mental-effort",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "pro-scope-free-will-activates-reason",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "pro-scope-free-will-activates-reason",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 63,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 61
+    },
+    {
+      "moveId": "pro-authorship-agent-primary-cause",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 67,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 68
+    },
+    {
+      "moveId": "pro-authorship-agent-primary-cause",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 58,
+      "candidate2": 55,
+      "roundedMeanAfterAdjudication": 57
+    },
+    {
+      "moveId": "con-introspection-interpretation-defeasible",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-introspection-interpretation-defeasible",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-introspection-interpretation-defeasible",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-deliberative-content-unselected",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-deliberative-content-unselected",
+      "fieldKey": "representationalCharity",
+      "candidate1": 69,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-deliberation-method-not-content",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-agent-causation-determined-or-random",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-agent-causation-determined-or-random",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-mind-consciousness-nonmechanical",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 65,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "pro-mind-consciousness-nonmechanical",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 52,
+      "candidate2": 54,
+      "roundedMeanAfterAdjudication": 53
+    },
+    {
+      "moveId": "pro-deliberation-values-shaped-over-time",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-deliberation-values-shaped-over-time",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-evidence-observable-evasion",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 62,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "con-alternate-possibilities-definition",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-alternate-possibilities-definition",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "con-introspective-confidence-defeasible",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-introspective-confidence-defeasible",
+      "fieldKey": "representationalCharity",
+      "candidate1": 89,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-constraints-coercion-limits-exercise",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-constraints-coercion-limits-exercise",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-scope-degrees-of-mental-activation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-scope-degrees-of-mental-activation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-coercive-conscious-choice",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-coercive-conscious-choice",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-coercive-conscious-choice",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "44",
+      "moves": 19,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 19,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch17IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
