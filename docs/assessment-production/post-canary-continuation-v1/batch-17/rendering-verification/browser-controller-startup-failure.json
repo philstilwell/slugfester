@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-rendering-browser-controller-startup-failure",
+  "status": "preserved-pre-viewport-browser-session-not-open-failure",
+  "stage": "rendering-verification-execution-startup",
+  "observedError": "The browser 'batch17-rendering' is not open, please run open first",
+  "diagnosis": "The frozen execution controller uses the named Playwright CLI session but intentionally does not create that browser session or the local preview server.",
+  "viewportAttemptsStarted": 0,
+  "viewportAttemptsConsumed": 0,
+  "screenshotsWritten": 0,
+  "recovery": {
+    "startLocalPreviewServer": true,
+    "openNamedBrowserSessionBeforeController": true,
+    "executionControllerChanged": false,
+    "viewportRetryConsumed": false
+  },
+  "calculatedScoresChanged": false,
+  "scorePassRerun": false,
+  "nextBatchSelection": false
+}
