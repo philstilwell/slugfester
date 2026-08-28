@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-debate-39-pass-b-judgment-recovery-correction-plan",
+  "status": "minimum-two-field-disjoint-recovery-shards-frozen",
+  "recoveryLevel": 1,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/recovery-1/debate-39-pass-b/diagnosis.json",
+  "diagnosisSha256": "58cda71ce5cf4e58a88b944ac461bcc9eb8a9b8e070ea6007638f3cc1e61657c",
+  "mergeRule": {
+    "ruleId": "batch-15-debate-39-pass-b-judgment-recovery-1-field-disjoint-merge-v1",
+    "repositoryOwnedFields": [
+      "schemaVersion",
+      "protocolId",
+      "debateNumber",
+      "debateId",
+      "reviewerRole",
+      "assessmentModel",
+      "calibrationOnly",
+      "lockedInventorySha256",
+      "isolation",
+      "audit"
+    ],
+    "acceptedModelFields": {
+      "moves-1": [
+        "con-sincere-skeptic-hell",
+        "pro-hell-chosen-separation",
+        "con-postmortem-recognition-present-belief",
+        "pro-hell-present-sanctification",
+        "con-biblical-faith-contrary-evidence",
+        "pro-faith-prior-evidence",
+        "con-competing-scriptures-privilege",
+        "pro-pluralism-worldview-comparison",
+        "con-apostolic-disagreement-reliability",
+        "con-ancient-testimony-resurrection",
+        "pro-resurrection-cumulative-method",
+        "pro-resurrection-comparative-evidence"
+      ],
+      "moves-2-burden": [
+        "con-loving-god-adequate-disclosure",
+        "pro-hiddenness-moral-transformation",
+        "pro-scripture-fallible-authors",
+        "con-naturalistic-religious-experience",
+        "pro-exodus-minimal-migration",
+        "con-exodus-scale-archaeology",
+        "pro-exodus-ancient-numbers",
+        "pro-pluralism-case-specific-comparison",
+        "con-scripture-human-cultural-development",
+        "pro-scripture-meaning-over-exactness",
+        "con-resurrection-ordinary-rival-testimony",
+        "burdenCompletionAdjustment"
+      ]
+    },
+    "acceptedFieldOverlap": [],
+    "originalFailedPartialOutputReusable": false,
+    "originalFailedOutputUsedAsSubstantiveInput": false,
+    "eachOriginalModelWritableFieldAcceptedExactlyOnce": true,
+    "completeMergedJudgmentValidator": "scripts/validate-assessment-production-post-canary-batch-15-independent-judgment.mjs",
+    "completeTwentyContextCohortReplayRequired": true
+  },
+  "mergeRuleCanonicalSha256": "d6ec62495259d8f809649f476e295214cb6f3e040428ab7481577da066d1ab60",
+  "contexts": [
+    {
+      "shardId": "moves-1",
+      "assignedMoveIds": [
+        "con-sincere-skeptic-hell",
+        "pro-hell-chosen-separation",
+        "con-postmortem-recognition-present-belief",
+        "pro-hell-present-sanctification",
+        "con-biblical-faith-contrary-evidence",
+        "pro-faith-prior-evidence",
+        "con-competing-scriptures-privilege",
+        "pro-pluralism-worldview-comparison",
+        "con-apostolic-disagreement-reliability",
+        "con-ancient-testimony-resurrection",
+        "pro-resurrection-cumulative-method",
+        "pro-resurrection-comparative-evidence"
+      ],
+      "burdenCompletionAdjustmentAssigned": false
+    },
+    {
+      "shardId": "moves-2-burden",
+      "assignedMoveIds": [
+        "con-loving-god-adequate-disclosure",
+        "pro-hiddenness-moral-transformation",
+        "pro-scripture-fallible-authors",
+        "con-naturalistic-religious-experience",
+        "pro-exodus-minimal-migration",
+        "con-exodus-scale-archaeology",
+        "pro-exodus-ancient-numbers",
+        "pro-pluralism-case-specific-comparison",
+        "con-scripture-human-cultural-development",
+        "pro-scripture-meaning-over-exactness",
+        "con-resurrection-ordinary-rival-testimony"
+      ],
+      "burdenCompletionAdjustmentAssigned": true
+    }
+  ],
+  "directIncrementalCostUsdMaximum": 0,
+  "attemptsPerShard": 1,
+  "retriesMaximum": 0,
+  "timeoutExtensionsMaximum": 0
+}

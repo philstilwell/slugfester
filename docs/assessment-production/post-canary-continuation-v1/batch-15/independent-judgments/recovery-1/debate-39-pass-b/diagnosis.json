@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-debate-39-pass-b-judgment-timeout-diagnosis",
+  "status": "preserved-debate-39-pass-b-timeout-diagnosed-output-size-time-failure-no-partial-output-accepted",
+  "frozenAt": "2026-08-28T00:00:21Z",
+  "checkpointCommit": "6d2298b87ec949d1ff112924617cd9a19aee2955",
+  "debateNumber": "39",
+  "reviewerPass": "B",
+  "evidence": {
+    "originalPreparation": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/preparation-manifest.json",
+    "originalPreparationSha256": "f18b37a8143dcf9a80a02b5eb9203a7af9192b5b52572d181b6d002350c522cd",
+    "originalActivation": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/execution-activation.json",
+    "originalActivationSha256": "2eb0032f17895bc0e3603b48f0f201a92243d4dc2e89767cce854e5588817c23",
+    "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/model-execution.json",
+    "originalExecutionSha256": "25421f9ceb6ae17be267fefb2e762d52562556e4b473ca3d5eb3e85919ffb28a",
+    "originalPacket": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/judgment-packets/pass-b/debate-39.json",
+    "originalPacketSha256": "9c8cece985c3f4525c184e3a7ae0de9889e525847bf483788d4f626fede35626",
+    "originalSchema": "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/schemas/pass-b/debate-39.schema.json",
+    "originalSchemaSha256": "2222d55c43a851b5ff71d90ee620b4def9665a679d0d6d35600e267d40791c62"
+  },
+  "observedFailure": {
+    "contextIndex": 1,
+    "status": "timed-out",
+    "elapsedMs": 899990,
+    "timeoutMsApplied": 900000,
+    "timedOut": true,
+    "terminationSignal": "SIGTERM",
+    "resultFileProduced": false,
+    "judgmentWritten": false,
+    "accepted": false,
+    "stderrEvidencePresent": true,
+    "failedPartialOutputReusable": false
+  },
+  "deterministicDiagnosis": {
+    "category": "model-context-output-size-timeout-without-result-file",
+    "transportStarted": true,
+    "responseSchemaRejected": false,
+    "deterministicValidatorReached": false,
+    "partialOutputAvailableForAcceptance": false,
+    "ordinaryRetryPermitted": false,
+    "timeoutExtensionPermitted": false,
+    "minimumFieldDisjointShardCount": 2,
+    "shardMoveCounts": [
+      10,
+      10
+    ],
+    "burdenCompletionAdjustmentAssignedExactlyOnce": true,
+    "rationale": "The full 23-move judgment emitted substantial generation evidence but did not produce a result file within 15 minutes after a recorded stream-disconnect recovery. Two fresh 12/11-move shards are the minimum field-disjoint output-size reduction; the debate-wide burden adjustment is assigned only to the second shard."
+  },
+  "schedulerAudit": {
+    "frozenAbortBeforeStartingAdditionalContextOnAnyFailure": true,
+    "postFailureContextsStarted": [],
+    "implementationDefect": null,
+    "postFailureOutputsQuarantinedPendingRecovery": false,
+    "rampStoppedBeforeSteadyPhase": true,
+    "isolationAllowsByteIdenticalPreservationAfterCompleteCohortReplay": true
+  },
+  "preservedAcceptedCohort": {
+    "acceptedJudgments": 2,
+    "protectedOutputHashes": {
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/judgments/pass-a/debate-39.json": "436a945f89f872ce81140225ed338cad92e7c78219763dc8ee0c2f08b7356fab",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/judgments/pass-a/debate-48.json": "4cf3ee8b7e6d42fb2afd5f4e32189d1c30eb6f7c9a4d2c780047015102d73ee6",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/provenance/pass-a/debate-39.json": "187cc5060b03af543472c815c96d24f0b7f7183538b267bf509b00c66d968cb0",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/provenance/pass-a/debate-48.json": "7a3dbbca194f7176228f2611ed9f9214f7921c941c6ec26a69b16afe1905ffe2",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/raw-outputs/pass-a/debate-39.json": "0bff5a18bd24a6fcd001358f35e7486d26eb843552ba8d812a8e49056be89130",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/raw-outputs/pass-a/debate-48.json": "e438baa265db04b35a2fecb7e252a5642ea9530449c83e6764ab941a582e940c",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/validations/pass-a/debate-39.json": "c188b684ee8b598c782f707b5817cb234a4492592fe89b6aad27f2da8c2e1075",
+      "docs/assessment-production/post-canary-continuation-v1/batch-15/independent-judgments/validations/pass-a/debate-48.json": "f5fb52596a0f3028e586c0e2f1379b4caed8d4326d8f742760f4cc05b84783ff"
+    },
+    "acceptedOutputsMustRemainByteIdentical": true
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "freeze-two-minimum-field-disjoint-debate-39-pass-b-recovery-contexts"
+}
