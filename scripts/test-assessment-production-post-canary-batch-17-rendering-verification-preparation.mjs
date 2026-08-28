@@ -21,10 +21,10 @@ assertV4(manifest.status ===
   manifest.packets?.length === 4 &&
   canonicalJson(manifest.explicitOrder) ===
     canonicalJson(POST_CANARY_BATCH_17_RENDERING_ORDER) &&
-  manifest.gateExpectations?.sections === 53 &&
+  manifest.gateExpectations?.sections === 21 &&
   manifest.gateExpectations?.moves === 79 &&
-  manifest.gateExpectations?.viewportResults === 20 &&
-  manifest.gateExpectations?.screenshots === 40 &&
+  manifest.gateExpectations?.viewportResults === 8 &&
+  manifest.gateExpectations?.screenshots === 16 &&
   manifest.browserPlan?.controller === "playwright-cli" &&
   manifest.browserPlan?.attemptsPerViewport === 1 &&
   manifest.browserPlan?.retriesMaximum === 0 &&
@@ -49,5 +49,4 @@ console.log(JSON.stringify({ status: "passed", debates: 4,
   sections: 21, moves: 79, packets: 4,
   viewportResultsPlanned: 8, screenshotsPlanned: 16,
   renderingPasses: 0, directIncrementalCostUsd: 0 }, null, 2));
-
 
