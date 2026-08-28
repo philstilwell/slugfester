@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-analysis-repeat-controller-failure",
+  "status": "preserved-no-effect",
+  "batchNumber": 17,
+  "cause": "The analyzer writes its result without a --write flag; a subsequent invocation with --write therefore found the already-created analysis artifact and stopped.",
+  "effect": {
+    "analysisArtifactChanged": false,
+    "modelContextsExecuted": 0,
+    "publicationFieldsChanged": false,
+    "scoresChanged": false,
+    "recoveryLevelConsumed": false
+  }
+}
