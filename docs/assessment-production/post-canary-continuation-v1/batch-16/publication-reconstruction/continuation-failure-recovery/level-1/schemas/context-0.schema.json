@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-16-debate-108-representative-quote-text-0-recovery-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correction"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-16-publication-continuation-one-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-16-publication-continuation-level-1-one-field-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-108-representative-quote-text-0-recovery-1"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "108"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "ward-ruse-mind-consciousness-god-2013"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "text"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "const": "representativeQuotes.con.text"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      }
+    }
+  }
+}
