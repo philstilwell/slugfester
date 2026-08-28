@@ -13,6 +13,11 @@ const CLOSURE_ROOT = "docs/assessment-production/campaign-closure-v1";
 const MANIFEST_PATH = `${CLOSURE_ROOT}/manifest.json`;
 const REPORT_PATH = `${CLOSURE_ROOT}/report.md`;
 const writeMode = process.argv.includes("--write");
+const repositoryOnlyMode = process.argv.includes("--repository-only");
+const allowedArguments = new Set(["--write", "--repository-only"]);
+
+for (const argument of process.argv.slice(2)) assert.equal(allowedArguments.has(argument), true, `unknown argument: ${argument}`);
+assert.equal(writeMode && repositoryOnlyMode, false, "--write and --repository-only cannot be combined");
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const bytes = (file) => readFileSync(path.join(ROOT, file));
@@ -27,6 +32,22 @@ function assertFileRecord(record, label = record.path) {
   const content = bytes(record.path);
   if (record.bytes !== undefined) assert.equal(content.length, record.bytes, `${label}: byte length changed`);
   assert.equal(sha256(content), record.sha256, `${label}: SHA-256 changed`);
+}
+
+let repositoryOnlyHashLocksChecked = 0;
+
+function assertFrozenSourceHash(file, expectedHash, label) {
+  assert.match(expectedHash, /^[0-9a-f]{64}$/, `${label}: invalid frozen SHA-256`);
+  const isIgnoredCampaignCache = file.startsWith(".assessment-cache/captions/")
+    || file.startsWith(".assessment-cache/compact-ledgers/");
+  const isIgnoredAudioTranscript = /^output\/transcribe\/assessment-production-(?:checkpoint-v2\.2-1|post-canary-batch-\d{2})-audio-verification\/debate-\d+\/transcripts(?:-correction-\d+)?\/[^/]+\.transcript\.json$/.test(file);
+  const isIgnoredLocalEvidence = isIgnoredCampaignCache || isIgnoredAudioTranscript;
+  if (repositoryOnlyMode && isIgnoredLocalEvidence) {
+    repositoryOnlyHashLocksChecked += 1;
+    return;
+  }
+  assert.equal(existsSync(path.join(ROOT, file)), true, `${label}: source file is missing${isIgnoredLocalEvidence ? "; use --repository-only in a clean checkout without the local campaign evidence cache" : ""}`);
+  assert.equal(sha256(bytes(file)), expectedHash, `${label}: frozen source changed`);
 }
 
 function walk(directory, output = []) {
@@ -158,7 +179,7 @@ for (const cohort of cohorts) {
   }
 
   for (const [sourcePath, expectedHash] of Object.entries(finalLedgerManifest.sourceHashes)) {
-    assert.equal(sha256(bytes(sourcePath)), expectedHash, `${cohort.cohort}: frozen source changed: ${sourcePath}`);
+    assertFrozenSourceHash(sourcePath, expectedHash, `${cohort.cohort}: ${sourcePath}`);
     finalLedgerSourceHashReferencesChecked += 1;
   }
 
@@ -179,7 +200,7 @@ for (const cohort of cohorts) {
     assert.equal(item.speakerCount, 2, `${cohort.cohort} debate ${item.debateNumber}: not dyadic`);
     assert.equal(Object.values(item.sourceGate).every(Boolean), true, `${cohort.cohort} debate ${item.debateNumber}: source gate changed`);
     for (const [kind, hashKey] of [["transcript", "transcriptSha256"], ["events", "eventsSha256"], ["manifest", "manifestSha256"]]) {
-      assert.equal(sha256(bytes(item.sourceChain[kind])), item.sourceChain[hashKey], `${cohort.cohort} debate ${item.debateNumber}: ${kind} changed`);
+      assertFrozenSourceHash(item.sourceChain[kind], item.sourceChain[hashKey], `${cohort.cohort} debate ${item.debateNumber}: ${kind}`);
       frozenSourceFilesChecked += 1;
     }
     selectedNumbers.push(item.debateNumber);
@@ -684,4 +705,8 @@ if (writeMode) {
   assert.equal(text(REPORT_PATH), report, `${REPORT_PATH} is stale`);
 }
 
-console.log(`Campaign closure audit passed: ${selectedNumbers.length} reassessments, ${productionLedgerFiles.length} ledgers, ${renderingScreenshots} passing screenshots, ${audioRequired} audio verifications.`);
+const verificationMode = repositoryOnlyMode
+  ? `repository-only replay; ${repositoryOnlyHashLocksChecked} ignored-local-evidence references were verified through their tracked frozen hash locks without reading local bytes`
+  : "full replay including ignored local campaign-evidence bytes";
+if (repositoryOnlyMode) assert.equal(repositoryOnlyHashLocksChecked, 1316, "repository-only ignored-local-evidence coverage changed");
+console.log(`Campaign closure audit passed: ${selectedNumbers.length} reassessments, ${productionLedgerFiles.length} ledgers, ${renderingScreenshots} passing screenshots, ${audioRequired} audio verifications (${verificationMode}).`);

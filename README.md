@@ -16,6 +16,20 @@ Then open `http://localhost:4174`.
 npm run check
 ```
 
+The reassessment campaign is complete through Batch 17. The normal check now finishes with a repository-only replay of the frozen campaign-closure audit. A fresh checkout can run that replay directly:
+
+```bash
+npm run assessment:campaign:closure:repository:check
+```
+
+The stricter local replay also rehashes the ignored transcript, compact-ledger, and paid-audio transcript files when they are present:
+
+```bash
+npm run assessment:campaign:closure:check
+```
+
+See the [post-campaign operator guide](docs/assessment-production/post-campaign-handoff-v1/operator-guide.md) for the immutable-evidence boundary, validation details, historical limitations, and safe maintenance procedure. The frozen continuation pool is exhausted; do not create or select Batch 18.
+
 ## Regenerate SEO pages
 
 ```bash
