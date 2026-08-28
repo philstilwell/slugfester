@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-audio-attribution-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-15-audio-attribution-recovery",
+  "status": "frozen-two-batch-15-audio-attribution-recovery-contexts-active",
+  "activatedAt": "2026-08-28T01:10:57Z",
+  "checkpointCommit": "66aaca59942ec66ee27e4fdf60ea0451728c08c4",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-successor-authorization.json",
+    "sha256": "1bce8eb258faa0a634853daa87816895d6b13f59cc58bc23c7ffc91dfda69d05"
+  },
+  "workflow": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery-workflow.md",
+  "manual": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery-manual.md",
+  "contexts": [
+    {
+      "debateNumber": "39",
+      "debateId": "lambert-jones-christian-faith-skepticism-2021",
+      "moveIds": [
+        "pro-exodus-minimal-migration"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/packets/debate-39.json",
+      "packetSha256": "bbeb73d489331d1a0782bc981705ce276f39d6c254b516425df2e19453721087",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/schemas/debate-39.schema.json",
+      "schemaSha256": "f2ab00f0bb9c2f945d8c2017fbbaa1d4b965ada5f133be64ac9ad8e9785a922a",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "pro-exodus-minimal-migration",
+          "path": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-39/transcripts/pro-exodus-minimal-migration.transcript.json",
+          "sha256": "42d8c8be3417de0c93d13fa1d56b0916673813219b6f1ac36164b3c12b50ae7f"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/outputs/debate-39.json",
+      "copiedInputBytes": 26461
+    },
+    {
+      "debateNumber": "98",
+      "debateId": "craig-grayling-evil-god-reasonable-2011",
+      "moveIds": [
+        "con-possibility-feasibility-gap"
+      ],
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/packets/debate-98.json",
+      "packetSha256": "083a05897d1a8f3b0ed018ddc132ed9e3757780ae4514e84c8c82d1d795329d0",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/schemas/debate-98.schema.json",
+      "schemaSha256": "b82297132a3bcedd531374f9761b4e14a991f44dcfe9d84f8a030c54d8247e4a",
+      "rawDiarizedTranscripts": [
+        {
+          "moveId": "con-possibility-feasibility-gap",
+          "path": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-98/transcripts/con-possibility-feasibility-gap.transcript.json",
+          "sha256": "6347e19d3244d24e78095883ff3173e1f51eac47ac5d3892174a22bf8092b894"
+        }
+      ],
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/outputs/debate-98.json",
+      "copiedInputBytes": 17423
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "concurrency": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "stderrTailRecordedOnFailure": true
+  },
+  "authorizationFlags": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "deterministicAnalysis": true,
+    "retry": false,
+    "paidTranscription": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "artifacts": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/model-execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/analysis.json",
+    "combinedAudioGate": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/combined-audio-verification.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/combined-audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/outputs/debate-39.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/outputs/debate-98.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-successor-authorization.json": "1bce8eb258faa0a634853daa87816895d6b13f59cc58bc23c7ffc91dfda69d05",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/preparation-manifest.json": "deaf29d3d22e6db3e6c8bfe67dfd2efd7b83aa73e98651875c43e1a323f39fef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery-workflow.md": "cb51173d2b2fd94612074c64f7a5fed249bd54530d43a2c03f5abeb7df04014e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery-manual.md": "c84b422bb3e0e243c6769d29d2a131e239f62db9b5695026d20061f8311960fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/packets/debate-39.json": "bbeb73d489331d1a0782bc981705ce276f39d6c254b516425df2e19453721087",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/schemas/debate-39.schema.json": "f2ab00f0bb9c2f945d8c2017fbbaa1d4b965ada5f133be64ac9ad8e9785a922a",
+    "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-39/transcripts/pro-exodus-minimal-migration.transcript.json": "42d8c8be3417de0c93d13fa1d56b0916673813219b6f1ac36164b3c12b50ae7f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/packets/debate-98.json": "083a05897d1a8f3b0ed018ddc132ed9e3757780ae4514e84c8c82d1d795329d0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-attribution-recovery/schemas/debate-98.schema.json": "b82297132a3bcedd531374f9761b4e14a991f44dcfe9d84f8a030c54d8247e4a",
+    "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-98/transcripts/con-possibility-feasibility-gap.transcript.json": "6347e19d3244d24e78095883ff3173e1f51eac47ac5d3892174a22bf8092b894",
+    "scripts/lib/assessment-production-post-canary-batch-15-audio-attribution.mjs": "30d210d908b710242e9ec4fd646133597b69bd2c759637fb43d3de280cb1baee",
+    "scripts/prepare-assessment-production-post-canary-batch-15-audio-attribution.mjs": "2e2dbaf47cc732e18ab57e600d660da6a80a220dca93097f2d941551c95492b9",
+    "scripts/test-assessment-production-post-canary-batch-15-audio-attribution.mjs": "a798ef29cff0b5d869813ff017a631b356ddb92615644ed4a7f2742f340d0c54",
+    "scripts/activate-assessment-production-post-canary-batch-15-audio-attribution.mjs": "8b0832a4566d606a0e5b10f484352257ba7c1a7fa097b39f870040939b3c6f0b",
+    "scripts/run-assessment-production-post-canary-batch-15-audio-attribution.mjs": "b645ff8505f9c3ddec3571e884b6b77f9bfd59676f0a9264ff7ca27a5d9739a4",
+    "scripts/analyze-assessment-production-post-canary-batch-15-audio-attribution.mjs": "f586d6bbf713e6898c40502a023f0fac4a3b108bd002b73741fccb5bab1fef80"
+  }
+}
