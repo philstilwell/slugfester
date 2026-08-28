@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-candidate-sharded-inventory",
+  "debateNumber": "163",
+  "debateId": "craig-draper-existence-of-god-1997",
+  "motion": "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Agnostic naturalism",
+      "speakers": [
+        "Paul Draper"
+      ]
+    }
+  },
+  "durationSeconds": 5343,
+  "eventCount": 2175,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/lK3jVNbG2-s/transcript.txt",
+    "transcriptSha256": "2e3fbd6ad00ad5102eac1a5b8cab3d6bc5dc868a39eefe8f3b85c0f4e6ed0272",
+    "eventsPath": ".assessment-cache/captions/lK3jVNbG2-s/events.json",
+    "eventsSha256": "b114ee182fecd152055f8a38ae4d2b2d6d21d6f4f7b979fd3ef3ea75e2127008",
+    "localManifestPath": ".assessment-cache/captions/lK3jVNbG2-s/manifest.json",
+    "localManifestSha256": "8aa04c0324c094b273203601c1a392e63ab9d6c9e65445109022a6cf2744ee62"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-16/debate-163.jsonl",
+    "sourceLedgerSha256": "9ab0ebc9a09435c154a9a80b6eb4fcf0282e021180e8311ecdc9f1d0832989f2",
+    "sourceLedgerBytes": 126719,
+    "sourceLedgerEventCount": 2175,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-16/source-preparation/plans/debate-163.json",
+    "partitionPlanSha256": "e33b197cc2a04a324e9b14b8fb67743fbd41e06537339225a79b63cf4fccbe0b",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

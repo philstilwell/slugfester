@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-batch-16-inventory-preparation-failure",
+  "status": "preserved-pre-model-missing-batch-local-guide-corrected",
+  "occurredAt": "2026-08-28T03:33:46.934Z",
+  "stage": "candidate-sharded-inventory-preparation",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-16-inventory.mjs freeze --write --frozen-at <timestamp>",
+  "error": "ENOENT: no such file or directory, open 'docs/assessment-production/post-canary-continuation-v1/batch-16/inventory-candidate-sharded/candidate-sharded-inventory-guide.md'",
+  "diagnosis": "The frozen Batch 15 controller expects a batch-local guide as an immutable preparation input. The Batch 16 guide had not yet been materialized.",
+  "correction": {
+    "kind": "exact-precedent-guide-materialization",
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-15/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "destination": "docs/assessment-production/post-canary-continuation-v1/batch-16/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "batchLabelsUpdatedOnly": true,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "acceptedFieldChanged": false,
+    "scorePassRun": false
+  },
+  "subsequentPreModelCheck": {
+    "status": "preserved-pre-model-inherited-boundary-mismatch-corrected",
+    "error": "Batch 16 standing authorization does not cover exact inventory preparation and execution",
+    "diagnosis": "The cloned controller retained Batch 15's multiline debate list and 39-context discovery assertions, so its local boundary did not match the frozen Batch 16 authorization and 36-context discovery result.",
+    "correction": {
+      "kind": "exact-deterministic-controller-boundary-correction",
+      "selectedDebates": [
+        "16",
+        "108",
+        "164",
+        "144",
+        "76",
+        "41",
+        "92",
+        "139",
+        "163",
+        "161"
+      ],
+      "discoveryContexts": 36,
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "discoveryStatusPreModelCheck": {
+    "status": "preserved-pre-model-inherited-status-label-mismatch-corrected",
+    "error": "Batch 16 discovery execution drifted",
+    "diagnosis": "The inventory controller retained the Batch 15 thirty-nine-context status label after the Batch 16 discovery run froze thirty-six contexts.",
+    "correction": {
+      "kind": "exact-deterministic-control-label-correction",
+      "previousStatus": "thirty-nine-post-canary-batch-16-discovery-contexts-passed",
+      "correctedStatus": "thirty-six-post-canary-batch-16-discovery-contexts-passed",
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  },
+  "selectionStatusPreModelCheck": {
+    "status": "preserved-pre-model-inherited-selection-status-mismatch-corrected",
+    "error": "Batch 16 frozen selection drifted",
+    "diagnosis": "The inventory controller retained the Batch 15 ordinal word in its frozen-selection status assertion.",
+    "correction": {
+      "kind": "exact-deterministic-control-label-correction",
+      "previousStatus": "fifteenth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+      "correctedStatus": "sixteenth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+      "modelContextsExecuted": 0,
+      "paidServiceCalls": 0,
+      "acceptedFieldChanged": false,
+      "scorePassRun": false
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-candidate-sharded-inventory",
+  "debateNumber": "164",
+  "debateId": "craig-wielenberg-god-morality-2018",
+  "motion": "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
+  "sides": {
+    "pro": {
+      "label": "Theistic moral grounding",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Godless normative realism",
+      "speakers": [
+        "Erik Wielenberg"
+      ]
+    }
+  },
+  "durationSeconds": 8433,
+  "eventCount": 3173,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/xHhmuqBW6Dw/transcript.txt",
+    "transcriptSha256": "e90834c6ae62fb6f2e2d416a17fbb82a173d1321e71eec816e92be1905729c1c",
+    "eventsPath": ".assessment-cache/captions/xHhmuqBW6Dw/events.json",
+    "eventsSha256": "1313ff95dc13abf44fb375bdb51bc65997555189a74d8c79b7f7f09e955a739e",
+    "localManifestPath": ".assessment-cache/captions/xHhmuqBW6Dw/manifest.json",
+    "localManifestSha256": "6a934bf7429b93199000ab2919606fc9bd1be036a25cf30b1374b8ff3e3cb142"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-16/debate-164.jsonl",
+    "sourceLedgerSha256": "2e7ee8fb1e2d8876a4e882b19187f8d97b4c498de007c046a4344fbdc6c63e7d",
+    "sourceLedgerBytes": 181353,
+    "sourceLedgerEventCount": 3173,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-16/source-preparation/plans/debate-164.json",
+    "partitionPlanSha256": "5bc2f92d7a61d4625978c6ec0d73af4e81607bd4355ae0157becc261aff1ff86",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
