@@ -11,8 +11,6 @@ import {
 const ROOT =
   "docs/assessment-production/post-canary-continuation-v1/batch-17/independent-judgments";
 const ACTIVATION = `${ROOT}/execution-activation.json`;
-const SELF =
-  "scripts/test-assessment-production-post-canary-batch-17-independent-judgment-activation.mjs";
 const EXPECTED_DEBATES = [
   "77",
   "44",
@@ -210,7 +208,6 @@ assert.equal(
   activation.packetPreparationSha256
 );
 for (const [file, digest] of Object.entries(activation.sourceHashes)) {
-  if (file === SELF) continue;
   assert.equal(sha256(await readFile(file)), digest, `${file}: source drift`);
 }
 
@@ -293,7 +290,7 @@ if (!phaseOne.passed) {
 } else {
   assert.deepEqual(
     phaseThree.attemptedContextIndexes,
-    Array.from({ length: 5 }, (_, index) => index + 3)
+    Array.from({ length: 17 }, (_, index) => index + 3)
   );
 }
 for (const result of execution.results) {

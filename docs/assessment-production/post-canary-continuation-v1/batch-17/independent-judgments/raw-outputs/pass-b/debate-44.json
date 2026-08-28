@@ -1,0 +1,1869 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "44",
+  "debateId": "oconnor-biddle-free-will-2025",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-volitional-capacity-route",
+      "side": "pro",
+      "description": "Establish that human beings possess a limited but genuine volitional capacity to regulate conscious attention, activate reason, and thereby influence deliberation and action without claiming unrestricted control over mental content, circumstances, or outcomes.",
+      "successCriteria": "The route succeeds if regulating awareness is directly supportable as an agent-caused, non-necessitated capacity that changes deliberative engagement and cannot be exhaustively redescribed as compelled inference, strongest-desire operation, randomness, or mechanical event causation.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-volitional-agency",
+        "tier": "motion",
+        "description": "Show that voluntary regulation of conscious focus and rational engagement constitutes free will under the motion's volitional-capacity alternative."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-define-focus",
+          "tier": "central",
+          "description": "Precisely distinguish choosing the degree and method of conscious engagement from choosing every thought, desire, conclusion, action, or outcome."
+        },
+        {
+          "bridgeId": "pro-central-agent-causation",
+          "tier": "central",
+          "description": "Explain how a person can cause a choice to focus without that choice being necessitated by prior events or reduced to a causeless random occurrence."
+        },
+        {
+          "bridgeId": "pro-central-evidence-awareness",
+          "tier": "central",
+          "description": "Ground the claimed capacity in awareness of modulating attention, including the ability to sustain focus, broaden context, or evade recognized considerations."
+        },
+        {
+          "bridgeId": "pro-central-practical-influence",
+          "tier": "central",
+          "description": "Connect chosen cognitive engagement to changes in deliberation, value ordering, operative desires, and consequent conduct."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-causal-pluralism",
+          "tier": "subsidiary",
+          "description": "Support a conception of consciousness and causation broad enough to permit volitional agency rather than assuming an exclusively mechanical model."
+        },
+        {
+          "bridgeId": "pro-subsidiary-scope-constraints",
+          "tier": "subsidiary",
+          "description": "Account for coercion, bodily processes, unchosen emotions, and environmental limits while preserving the narrower claimed control over awareness."
+        }
+      ]
+    },
+    {
+      "routeId": "con-causal-skepticism-route",
+      "side": "con",
+      "description": "Deny both ultimate control and the proposed capacity to activate reason by showing that actions, attention, desires, and convictions arise through determining influences or indeterminacy, neither of which makes the person the controlling author.",
+      "successCriteria": "The route succeeds if the proposed act of focusing remains unexplained outside determination or randomness, while introspection, deliberation, evasion, regret, and coercive choice can be accounted for without an independent volitional power.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-controlling-authorship",
+        "tier": "motion",
+        "description": "Show that neither ultimate authorship nor voluntary control of rational focus survives the alternatives of causal determination and indeterminacy."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-exhaustive-dilemma",
+          "tier": "central",
+          "description": "Apply the determined-or-random dilemma to actions and mental events, including the purported agent-caused decision to activate awareness."
+        },
+        {
+          "bridgeId": "con-central-deliberative-compulsion",
+          "tier": "central",
+          "description": "Explain attention, arising considerations, rational conviction, and action through unchosen influences rather than proactive selection by a chooser."
+        },
+        {
+          "bridgeId": "con-central-desire-account",
+          "tier": "central",
+          "description": "Account for conduct, evasion, self-modification, and value-sensitive deliberation through first-order and higher-order desires whose operative strength is not freely chosen."
+        },
+        {
+          "bridgeId": "con-central-defeat-introspection",
+          "tier": "central",
+          "description": "Establish that an immediate experience of agency does not by itself settle whether the apparent control is genuine or instead admits an alternative explanation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-alternate-possibilities",
+          "tier": "subsidiary",
+          "description": "Test libertarian control by asking what could explain divergent choices under otherwise identical relevant conditions."
+        },
+        {
+          "bridgeId": "con-subsidiary-theory-independence",
+          "tier": "subsidiary",
+          "description": "Keep the conceptual objection applicable whether consciousness is characterized as material, immaterial, or emergent."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "scope-of-free-will",
+      "title": "The Scope and Locus of the Claimed Freedom",
+      "weightPercent": 20,
+      "rationale": "The motion permits either ultimate control or a volitional capacity, making the definition of freedom and the distinction between control of attention, mental content, action, and outcome foundational to both burdens."
+    },
+    {
+      "sectionId": "causation-and-authorship",
+      "title": "Causation, Randomness, and Agent Authorship",
+      "weightPercent": 25,
+      "rationale": "The central metaphysical clash concerns whether determination and indeterminacy exhaust the possibilities or whether an agent can cause a non-necessitated choice without converting it into randomness."
+    },
+    {
+      "sectionId": "introspection-and-evidence",
+      "title": "Introspection, Experience, and Evidence of Control",
+      "weightPercent": 20,
+      "rationale": "The positive case relies substantially on awareness of changing one's mental engagement, while the skeptical burden requires explaining why that experience may not establish the interpretation of genuine control."
+    },
+    {
+      "sectionId": "reason-desire-and-deliberation",
+      "title": "Reason, Desire, and the Mechanics of Deliberation",
+      "weightPercent": 25,
+      "rationale": "Whether focus can be voluntarily activated and alter value-sensitive conduct, or whether considerations, convictions, and strongest desires govern the entire process, directly determines the viability of the motion's narrower alternative."
+    },
+    {
+      "sectionId": "mind-constraints-and-application",
+      "title": "Consciousness, Constraints, and Applied Choice",
+      "weightPercent": 10,
+      "rationale": "Accounts of mind, coercion, bodily limits, emotion formation, regret, and evasion test whether the competing causal models remain coherent when applied beyond abstract choice examples."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-causal-dilemma-ultimate-authorship",
+      "sectionId": "causation-and-authorship",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Neither causal determination nor indeterminacy permits a person to be the ultimate author or controller of an action.",
+      "sourceSpan": {
+        "startEvent": 36,
+        "endEvent": 131
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening turn is explicitly assigned to Alex and consistently presents the free-will-skeptical position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-exhaustive-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the skeptic's foundational determined-or-random dilemma and connects both alternatives to the denial of ultimate authorship.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it clearly states the central dilemma and its intended consequence for controlling authorship."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternatives, relevant control, and ultimate-authorship conclusion remain identifiable and stable throughout the selected passage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical dilemma is intelligible, but its exhaustiveness and application to agent causation are not yet fully defended."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The inference is clear, but the exhaustiveness of determination and randomness remains a material implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The causal-chain explanation supports the structure, while the decisive exhaustive premise is mainly philosophically asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the indispensable exhaustive-dilemma bridge, though the narrower focus-capacity application is not yet explicit."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The opening constructive advances its own dilemma without materially interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts randomness with causal chains extending beyond the person and denies ultimate authorship in either case.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-causation-distinguish-cause-necessitation",
+      "sectionId": "causation-and-authorship",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "Causation does not entail necessitation by prior events, so treating every caused occurrence as predetermined improperly collapses two distinct concepts.",
+      "sourceSpan": {
+        "startEvent": 225,
+        "endEvent": 243
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This passage remains within Craig's uninterrupted opening turn and directly characterizes Alex's use of the term determined.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-exhaustive-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-dilemma-ultimate-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-causation-distinguish-cause-necessitation-component-01",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The skeptical dilemma allegedly conflates being caused with being necessitated by prior events.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-causation-distinguish-cause-necessitation-component-02",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "A complete answer must explain positively how non-necessitating causation supplies control rather than randomness.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses an equivocation in the determined horn, but does not yet establish the proposed third causal relation or its control-conferring features.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive exhaustive premise, but the defeating consequence is only partly completed because the alternative remains undeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between causation and necessitation is expressly stated and consistently scoped to prior-event necessitation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conceptual distinction is credible, but asserting universal causation and the failure of the dilemma requires further defense."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Determination may mean any causally settled event rather than only strict necessitation by prior events.",
+        "decisiveQualification": "The skeptic still must show that all caused choices are necessitated or otherwise uncontrolled."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The distinction is coherent and directly relevant, with one bounded missing bridge from distinction to a viable free cause."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The semantic and conceptual contrast is explained, but no representative account of non-necessitating agency is supplied here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central exhaustive-dilemma bridge by separating causation from prior-event necessitation."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply identifies a genuine ambiguity, though it treats the skeptical causal category somewhat more narrowly than necessary."
+        }
+      },
+      "evidenceBasis": "The passage explicitly says everything is caused while denying that everything is necessitated by prior events.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-introspection-regulated-mental-effort",
+      "sectionId": "introspection-and-evidence",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "People can introspectively observe themselves regulating mental effort and choosing whether to activate reason, drift, or evade, evidencing the relevant volitional capacity.",
+      "sourceSpan": {
+        "startEvent": 244,
+        "endEvent": 321
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig retains the floor throughout and identifies the capacity to activate the mind as his account of free will.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-volitional-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-dilemma-ultimate-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-introspection-regulated-mental-effort-component-01",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The relevant capacity is allegedly observable in choosing whether to activate rational attention.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-introspection-regulated-mental-effort-component-02",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The observation must distinguish controlled agency from a determined or indeterminate appearance of control.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers direct introspective evidence for a narrower volitional capacity, but does not answer the dilemma's demand for a causal explanation of that capacity.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "It contacts the control conclusion through contrary evidence, while leaving the decisive causal alternatives substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposed capacity is recoverable, though activating reason, drifting, and evading are not fully operationally distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Introspective accessibility supports an experience of regulation but does not alone establish its libertarian causal interpretation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The inference from observed mental modulation to the specific volitional capacity leaves a material interpretation bridge."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The evidence is introspective and illustrative, but independence from deterministic or illusory explanations is not established."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the motion-level claim that voluntary rational engagement itself constitutes the relevant free-will capacity."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents positive experiential evidence without expressly developing and assessing a rival interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt asks listeners to observe choosing whether to activate the mind, use reason, drift, or evade.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scope-free-will-activates-reason",
+      "sectionId": "scope-of-free-will",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "Free will is the capacity to activate and use the rational faculty, rather than a power to select every mental content, action, or outcome.",
+      "sourceSpan": {
+        "startEvent": 322,
+        "endEvent": 383
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Craig, who develops his announced broad account of rational and emotional faculties without interruption.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-volitional-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-dilemma-ultimate-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scope-free-will-activates-reason-component-01",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The proper issue is limited voluntary activation of reason rather than authorship of every action or content.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scope-free-will-activates-reason-component-02",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The narrower capacity must still survive the skeptic's determination-or-randomness challenge.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies the motion's narrower volitional-capacity demand and defines its locus, but does not establish that activation escapes the original causal dilemma.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It legitimately preserves the motion's narrower issue, yet answers only the scope component rather than the causal challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The scope is expressly narrowed to activating reason, though reason, mind, and rational faculty are sometimes treated interchangeably."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Defining free will this way is permissible, but claiming rational faculty could not exist without such freedom is underwarranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic may grant rational functioning while denying voluntary control over its activation.",
+        "decisiveQualification": "The definition must be paired with evidence that activation is genuinely controlled rather than automatically caused."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The definition is usable, but the claim that an unusable-by-choice faculty would not exist is a substantial unsupported conditional."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The passage chiefly stipulates and asserts the relation between reason and free will without independent support."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly defines the motion's volitional-capacity alternative and identifies rational activation as the claimed locus of freedom."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The narrowed account fairly avoids unlimited authorship, but it does not fully accommodate the skeptic's control distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt repeatedly defines free will as the capacity to activate and use the rational faculty rather than select content.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-authorship-agent-primary-cause",
+      "sectionId": "causation-and-authorship",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "A person can consider broader values and originate a choice caused by the agent without that choice being random or necessitated by prior factors.",
+      "sourceSpan": {
+        "startEvent": 384,
+        "endEvent": 442
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig continues the same turn, applies his account to desires, and concludes expressly with agent causation before Alex resumes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-agent-causation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-dilemma-ultimate-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-authorship-agent-primary-cause-component-01",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "A choice can be caused by the agent without being causeless or necessitated by prior factors.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-authorship-agent-primary-cause-component-02",
+            "targetMoveId": "con-causal-dilemma-ultimate-authorship",
+            "text": "The account must explain how agent causation differs from an unexplained label for indeterminacy.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly proposes agent causation as a third account, contacting both horns, but provides little mechanism or criterion showing why it confers control.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "The decisive dilemma is explicitly contacted, while the explanatory demand separating agency from randomness remains unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Agent, primary cause, non-necessitation, and non-random causation are recoverable, with the causal mechanism left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The passage asserts the key third category as fact without enough warrant to establish its coherence or actuality."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic can regard agent causation as either determined by prior conditions or an unexplained indeterminate event.",
+        "decisiveQualification": "Calling the person the cause must add a control-conferring explanation rather than terminate the regress verbally."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The proposed third category is internally intelligible at a basic level, but its decisive control-conferring bridge is substantially unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The central claim relies on metaphysical assertion and regress termination rather than defended evidence or comparative explanation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It squarely addresses the indispensable pro bridge requiring non-necessitated, non-random agent causation."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply recognizes both skeptical horns but does not fully engage the strongest explanatory version of the objection."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies the person as primary cause and expressly denies both causelessness and necessitation by prior factors.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-introspection-interpretation-defeasible",
+      "sectionId": "introspection-and-evidence",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "The felt immediacy of an experience cannot establish its interpretation, because introspection can present illusory forces or agencies as real.",
+      "sourceSpan": {
+        "startEvent": 444,
+        "endEvent": 553
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex explicitly takes the floor after Craig's opening and directly discusses Craig's perceptual and introspective methodology.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-defeat-introspection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-introspection-regulated-mental-effort",
+          "pro-authorship-agent-primary-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-introspection-interpretation-defeasible-component-01",
+            "targetMoveId": "pro-introspection-regulated-mental-effort",
+            "text": "Feeling or observing an apparent force or agency does not establish the truth of its interpretation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-introspection-interpretation-defeasible-component-02",
+            "targetMoveId": "pro-authorship-agent-primary-cause",
+            "text": "The reply does not independently show that the experienced agency is determined or random.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The centrifugal-force analogy expressly defeats the inference from immediacy to truth, while appropriately stopping short of proving the rival causal theory.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts and diagnoses the decisive evidential inference, stating that introspection alone cannot establish the conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The modest conclusion is clearly limited to insufficiency of felt experience rather than wholesale distrust of introspection."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is carefully limited to what introspection cannot establish by itself, matching the analogy's evidential force."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Introspection may reliably establish that mental regulation occurs even if it does not reveal the regulation's ultimate causal structure.",
+        "decisiveQualification": "Reliable phenomenology still does not independently establish libertarian authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The analogy supports the stated defeasibility conclusion, with only a bounded gap concerning differences between perceptual and agentive experience."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "A specific counterexample supports the warrant, though broader comparison with reliable introspective judgments remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central skeptical bridge defeating introspection as sufficient evidence of genuine control."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply preserves the experience while narrowly challenging the stronger causal interpretation drawn from it."
+        }
+      },
+      "evidenceBasis": "The passage uses illusory centrifugal force to show that a vivid experience can be misinterpreted and limits its conclusion to insufficiency.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-deliberative-content-unselected",
+      "sectionId": "reason-desire-and-deliberation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Attention to deliberation reveals thoughts, options, and rational conclusions presenting themselves rather than being proactively selected by a chooser.",
+      "sourceSpan": {
+        "startEvent": 554,
+        "endEvent": 635
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex remains the sole speaker and explicitly reexamines Craig's city example and the Objectivist account of activating reason.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-deliberative-compulsion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-introspection-regulated-mental-effort",
+          "pro-scope-free-will-activates-reason"
+        ],
+        "components": [
+          {
+            "componentId": "con-deliberative-content-unselected-component-01",
+            "targetMoveId": "pro-introspection-regulated-mental-effort",
+            "text": "Observed deliberation contains thoughts and options that arise without proactive selection by a chooser.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-deliberative-content-unselected-component-02",
+            "targetMoveId": "pro-scope-free-will-activates-reason",
+            "text": "Unchosen content does not by itself refute voluntary selection of the method or degree of attention.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The city example supplies contrary introspective material about arising content, but only partially answers the narrower claim about choosing how to engage with that content.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts the introspective evidence component but leaves the decisive distinction between content and method substantially open."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The unchosen-content claim is clear, though its extension from arising thoughts to all relevant attention is insufficiently bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The example supports unchosen content, but generalizing it toward absence of a chooser requires a further qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may not select which thought arises yet may select whether and how thoroughly to examine it.",
+        "decisiveQualification": "Unchosen content weakens total mental authorship but does not settle control over deliberative method."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The example supports spontaneous content, but the inference to absence of proactive deliberative control leaves a material scope bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The city exercise is specific and accessible, while representativeness across sustained deliberation is not established."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It materially supports the central account of considerations arising through unchosen influences rather than selection."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "The move identifies a real limitation but materially compresses the defender's explicit content-versus-method distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt revisits the city exercise and emphasizes that the city appearing in thought was not itself chosen.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-strongest-unchosen-desire",
+      "sectionId": "reason-desire-and-deliberation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Agent causation does not end the explanatory regress, because conscious actions follow unchosen desires and the strongest operative desire governs behavior.",
+      "sourceSpan": {
+        "startEvent": 636,
+        "endEvent": 786
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex continues uninterrupted, names Craig's agent-causation claim, and develops the desire argument through several connected examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-desire-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-authorship-agent-primary-cause",
+          "pro-scope-free-will-activates-reason"
+        ],
+        "components": [
+          {
+            "componentId": "con-strongest-unchosen-desire-component-01",
+            "targetMoveId": "pro-authorship-agent-primary-cause",
+            "text": "Conscious conduct allegedly follows operative desires whose existence and relative strength were not freely chosen.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-strongest-unchosen-desire-component-02",
+            "targetMoveId": "pro-scope-free-will-activates-reason",
+            "text": "The account must explain whether rational attention can revise or reorder desires over time.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly offers a desire-based explanation of action against agent authorship, but does not fully answer the defender's narrower claim about chosen engagement shaping desires.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the causal explanation of action, while leaving the proposed upstream role of rational focus only partially addressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The operative-desire thesis is recoverable, though strongest desire risks becoming behaviorally defined and overly comprehensive."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Examples make the account plausible, but they do not establish that every conscious action necessarily follows one strongest desire."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Deliberation may alter which consideration becomes motivationally strongest rather than merely execute a fixed desire.",
+        "decisiveQualification": "Any such alteration may itself be explained by higher-order desires that were not ultimately selected."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The hierarchical-desire account is coherent, but its strongest-desire formulation risks circularity and leaves a material explanatory bridge."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Several intuitive examples support the view, but universal scope and independence from post hoc redescriptions remain underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central skeptical desire account for conduct and apparent action against immediate wants."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly anticipates apparent counterexamples such as unwanted exercise, though it compresses deliberative transformation."
+        }
+      },
+      "evidenceBasis": "The passage uses the gym example to recast action against an immediate want as action for a stronger operative desire.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-deliberation-method-not-content",
+      "sectionId": "reason-desire-and-deliberation",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "Free will selects the method of conscious engagement rather than subconscious content, allowing chosen rational focus to affect which desire ultimately governs action.",
+      "sourceSpan": {
+        "startEvent": 877,
+        "endEvent": 942
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-like transition at event 864 is followed by Biddle answering Alex by name and presenting the pro-side account continuously.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-deliberative-compulsion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-deliberative-content-unselected",
+          "con-strongest-unchosen-desire"
+        ],
+        "components": [
+          {
+            "componentId": "pro-deliberation-method-not-content-component-01",
+            "targetMoveId": "con-deliberative-content-unselected",
+            "text": "The skeptical example concerns unchosen content, while the defended freedom concerns the chosen method of engagement.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-deliberation-method-not-content-component-02",
+            "targetMoveId": "con-strongest-unchosen-desire",
+            "text": "Chosen rational method can affect which desire governs action, but the causal independence of that method remains unexplained.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly identifies a scope mismatch and supplies the content-versus-method distinction, while only partially answering how the selected method escapes prior influences.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "It directly diagnoses the decisive mismatch and applies the distinction to deliberation, with one important causal issue unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Conscious awareness, subconscious content, and chosen method are clearly separated with an illustrative example."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The distinction is well supported phenomenologically, but voluntary control of method is asserted more strongly than demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unchosen thoughts may still influence or determine the very method of attention the defender calls chosen.",
+        "decisiveQualification": "Showing content is unchosen does not alone establish that method is unchosen."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction answers the immediate scope objection coherently, with a bounded missing bridge about causal control over method."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The Humpty Dumpty example supports spontaneous content, but evidence for freely chosen method remains primarily introspective."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central deliberative-compulsion bridge by distinguishing arising content from conscious method."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply accurately isolates the skeptic's content evidence while leaving the strongest causal extension available."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes conscious awareness from unsolicited subconscious content and locates free choice in method rather than content.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-agent-causation-determined-or-random",
+      "sectionId": "causation-and-authorship",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Agent causation does not explain control because a mental event either has determining causes beyond the agent's ultimate control or occurs causelessly and randomly.",
+      "sourceSpan": {
+        "startEvent": 1311,
+        "endEvent": 1395
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the topic is identified as agent causation, O'Connor develops the leaf, wind, brain, and materialist cases until Biddle begins his response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-volitional-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-authorship-agent-primary-cause",
+          "pro-causation-distinguish-cause-necessitation",
+          "pro-deliberation-method-not-content"
+        ],
+        "components": [
+          {
+            "componentId": "con-agent-causation-determined-or-random-component-01",
+            "targetMoveId": "pro-authorship-agent-primary-cause",
+            "text": "Calling the agent a cause does not explain control if the mental event remains caused or causeless.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-agent-causation-determined-or-random-component-02",
+            "targetMoveId": "pro-causation-distinguish-cause-necessitation",
+            "text": "The reply treats caused events as determined without fully defending why causation entails necessitation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-agent-causation-determined-or-random-component-03",
+            "targetMoveId": "pro-deliberation-method-not-content",
+            "text": "The same dilemma is applied to mental method, though the selected excerpt does not develop that application fully.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly reapplies the causal dilemma to mental events and explains why the agent-cause label alone does not answer it, though exhaustiveness remains disputed.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the proposed agent-causal escape and states the defeating consequence under each alternative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Mental events, caused events, causeless events, randomness, and control are consistently distinguished in the passage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The dilemma is forcefully and clearly applied, but the equivalence of caused with determined remains a contested premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Agent causation may be a primitive causal relation that is neither prior-event necessitation nor causeless occurrence.",
+        "decisiveQualification": "A primitive label must still explain why the resulting event is controlled rather than merely indeterminate."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The dilemma is consistently applied to mental events, with one bounded but important implicit exhaustiveness premise."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The event analysis supplies a clear warrant, though rival causal pluralism is challenged more than independently excluded."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the motion-level skeptical claim against the defender's precise agent-causal account of rational activation."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply addresses the strongest third-category proposal by pressing its explanatory burden without caricaturing immaterial agency."
+        }
+      },
+      "evidenceBasis": "The excerpt states that mental events either occur without causes and randomly or occur with determining causes beyond control.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-mind-consciousness-nonmechanical",
+      "sectionId": "mind-constraints-and-application",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "Human consciousness is a real nonphysical existent whose rational faculty operates by choice, making a purely material and mechanistic account of human agency incomplete.",
+      "sourceSpan": {
+        "startEvent": 1401,
+        "endEvent": 1468
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Biddle announces that he is not a materialist and then gives a continuous first-person account of consciousness, mind, and chosen reason.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-causal-pluralism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-agent-causation-determined-or-random"
+        ],
+        "components": [
+          {
+            "componentId": "pro-mind-consciousness-nonmechanical-component-01",
+            "targetMoveId": "con-agent-causation-determined-or-random",
+            "text": "The causal dilemma applies to mental events regardless of whether mind reduces to matter.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-mind-consciousness-nonmechanical-component-02",
+            "targetMoveId": "con-agent-causation-determined-or-random",
+            "text": "The move asserts nonphysical consciousness and choice but does not explain a third control-conferring causal relation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The metaphysics is issue-bearing and rejects material mechanism, but the skeptic's dilemma was expressly theory-neutral enough that nonphysicality alone does not contact its decisive inference.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "It is relevant contrary material, yet it does not answer why a nonphysical mental event avoids determination or randomness."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The dual-aspect ontology is clear, but nonphysical, consciousness, mind, and operating by choice remain underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The reality of awareness is evident, but its nonphysical status and operation by libertarian choice are not thereby established."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A nonphysical or emergent mind could still contain events governed by causes or indeterminacy.",
+        "decisiveQualification": "Rejecting materialism does not by itself answer the theory-independent causal dilemma."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The ontology is intelligible, but the inference from real awareness to nonphysical libertarian operation contains substantial unsupported steps."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "First-person awareness supports consciousness, not the stronger claims of nonphysical existence and freely operating reason."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary causal-pluralism bridge while not reaching the central theory-neutral dilemma."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply materially narrows the skeptical challenge to mechanism despite its applicability to nonphysical mental events."
+        }
+      },
+      "evidenceBasis": "The passage distinguishes body from a real nonphysical mind and asserts that the human rational faculty operates by choice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-deliberation-values-shaped-over-time",
+      "sectionId": "reason-desire-and-deliberation",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "Although present emotions are not directly chosen, repeated choices to think can revise value judgments and thereby shape emotional dispositions and operative desires over time.",
+      "sourceSpan": {
+        "startEvent": 1542,
+        "endEvent": 1601
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Biddle explicitly corrects Alex's characterization of his view on desires and develops the distinction between immediate feeling and long-term formation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-desire-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-strongest-unchosen-desire",
+          "con-agent-causation-determined-or-random"
+        ],
+        "components": [
+          {
+            "componentId": "pro-deliberation-values-shaped-over-time-component-01",
+            "targetMoveId": "con-strongest-unchosen-desire",
+            "text": "Repeated rational choices can revise value judgments and thereby alter later emotions and operative desires.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-deliberation-values-shaped-over-time-component-02",
+            "targetMoveId": "con-agent-causation-determined-or-random",
+            "text": "The response does not show that the repeated choices themselves escape determining causes or indeterminacy.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply answers the fixed-desire picture by describing diachronic self-formation, but leaves ultimate selection of the shaping choices causally unexplained.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the desire account's practical mechanism while leaving the skeptic's upstream causal regress unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Immediate emotional limits and longer-term influence through corrected judgments are expressly and consistently distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The temporal qualification is careful, though ultimate control of values is stronger than the described indirect influence establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Higher-order desires and unchosen dispositions may explain why a person undertakes repeated reflective revision.",
+        "decisiveQualification": "Diachronic change shows practical influence but not necessarily ultimate authorship of the changing process."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The diachronic account coherently connects reflection, judgments, and emotions, with one bounded causal-authorship bridge missing."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The psychological sequence is plausible and representative, but the claim of ultimate control lacks independent verification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central desire account by explaining how deliberative engagement can reshape later motivation."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly concedes unchosen present emotions while identifying a meaningful longer-term qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes that feelings are not immediately chosen but says corrected thinking can change value judgments and emotions over time.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evidence-observable-evasion",
+      "sectionId": "introspection-and-evidence",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "The observable capacity to evade recognized facts shows that rational evidence does not compel acceptance and supplies direct introspective evidence of free will.",
+      "sourceSpan": {
+        "startEvent": 1602,
+        "endEvent": 1674
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Biddle frames the passage as an answer to Alex's claim about rational compulsion and continuously presents evasion and introspection as pro-side evidence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evidence-awareness"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-agent-causation-determined-or-random",
+          "con-introspection-interpretation-defeasible",
+          "con-deliberative-content-unselected"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evidence-observable-evasion-component-01",
+            "targetMoveId": "con-agent-causation-determined-or-random",
+            "text": "Observable evasion allegedly demonstrates that recognized evidence does not mechanically compel rational acceptance.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evidence-observable-evasion-component-02",
+            "targetMoveId": "con-introspection-interpretation-defeasible",
+            "text": "The move does not answer the objection that introspection may misidentify the causal source of evasion.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evidence-observable-evasion-component-03",
+            "targetMoveId": "con-deliberative-content-unselected",
+            "text": "It shows apparent resistance to content but not proactive selection of the content that arises.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies direct contrary evidence against rational compulsion, but calls it proof without distinguishing observed evasion from its libertarian interpretation.",
+        "responsivenessWithinClass": {
+          "value": 65,
+          "rationale": "It contacts the practical-compulsion claim, while leaving the decisive causal and interpretive challenges unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Evasion and nonacceptance are identifiable, but direct evidence and proof are used too broadly for the causal conclusion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Observability of evasion does not by itself prove that evasion is freely caused rather than desire-governed or determined."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person can evade recognized evidence because stronger unchosen motives direct attention away from it.",
+        "decisiveQualification": "Observable resistance to evidence establishes noncompulsion by evidence, not libertarian authorship of the resistance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The move coherently identifies noncompulsion by evidence, but the leap from evasion to libertarian free will is substantial."
+        },
+        "evidenceWarrant": {
+          "value": 48,
+          "rationale": "The fact of apparent evasion is accessible, while the claimed proof of its free causal origin remains unsupported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central awareness-evidence bridge by identifying a purportedly observable modulation of rational engagement."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The move substantially omits the strongest alternative explanation and treats phenomenology as causal proof."
+        }
+      },
+      "evidenceBasis": "The excerpt describes knowingly refusing an evident truth and expressly treats the observable capacity to evade as direct proof of free will.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-alternate-possibilities-definition",
+      "sectionId": "scope-of-free-will",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Libertarian free will requires a genuine ability to act differently in physically identical circumstances, for which no differentiating explanation is available.",
+      "sourceSpan": {
+        "startEvent": 1795,
+        "endEvent": 1840
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor explicitly states his definition and directs the resulting identical-worlds challenge to Craig by name.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-alternate-possibilities"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive defines libertarian freedom through divergent action under identical relevant conditions and poses the associated differentiating-explanation challenge.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it clearly states the alternate-possibilities test and frames the explanatory question it generates."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The identical-worlds test is recoverable, though physical identity and identity of all relevant conditions are not fully separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The challenge is forceful, but treating this as the required conception of libertarian freedom needs further defense."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The defender's motion route requires voluntary rational activation without necessarily endorsing identical-world divergence.",
+        "decisiveQualification": "The alternate-possibilities test may therefore assess only one stronger libertarian formulation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The possible-world challenge is coherent, with a bounded ambiguity about which conditions must remain identical."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The thought experiment exposes an explanatory demand, but its definitional necessity is asserted rather than independently defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary alternate-possibilities bridge and tests a stronger form of libertarian control."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move recognizes a common concern about acting otherwise but does not fully preserve the motion's narrower capacity alternative."
+        }
+      },
+      "evidenceBasis": "The passage defines the relevant freedom as ability to act differently and introduces two otherwise identical possible worlds.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-introspective-confidence-defeasible",
+      "sectionId": "introspection-and-evidence",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Introspective confidence in free will is defeasible when philosophical considerations provide alternative explanations of the apparent experience.",
+      "sourceSpan": {
+        "startEvent": 2238,
+        "endEvent": 2290
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer is explicitly addressed to Alex and the responding speaker clarifies his own earlier analogy and skeptical argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-defeat-introspection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evidence-observable-evasion",
+          "pro-introspection-regulated-mental-effort"
+        ],
+        "components": [
+          {
+            "componentId": "con-introspective-confidence-defeasible-component-01",
+            "targetMoveId": "pro-evidence-observable-evasion",
+            "text": "Introspection alone cannot establish free will when philosophical arguments support alternative causal explanations.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-introspective-confidence-defeasible-component-02",
+            "targetMoveId": "pro-introspection-regulated-mental-effort",
+            "text": "Ordinary trust in experience is preserved while the stronger metaphysical inference is treated as defeasible.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly limits the evidential inference rather than denying experience, and explains that philosophical alternatives can defeat confidence in its interpretation.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts the decisive introspection-to-free-will inference and states precisely why the inference is defeasible."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between trusting experience and treating introspection as sufficient metaphysical evidence is explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim of defeasibility matches the support and expressly avoids general skepticism about sense experience."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The defender may claim direct acquaintance with regulating attention rather than a mere theoretical inference.",
+        "decisiveQualification": "Direct acquaintance with the occurrence still may not disclose whether its causal source is libertarian."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The distinction is explicit, consistent, and resolves the strongest charge that the argument entails global experiential skepticism."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The warrant from alternative explanation is clear, though the specific alternatives are referenced rather than fully compared here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bridge that immediate confidence does not settle genuine control."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply preserves the strongest phenomenological claim and targets only the additional causal interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt says introspection alone is insufficient while affirming ordinary experiential beliefs and invoking philosophical counterarguments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-theory-independent-incoherence",
+      "sectionId": "mind-constraints-and-application",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "The alternate-possibilities conception of free will is philosophically incoherent regardless of whether consciousness is material, immaterial, or emergent.",
+      "sourceSpan": {
+        "startEvent": 2391,
+        "endEvent": 2423
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question is directed into the debate and O'Connor identifies his own anti-free-will argument while distinguishing it from scientific approaches.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-theory-independence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-mind-consciousness-nonmechanical",
+          "pro-authorship-agent-primary-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-theory-independent-incoherence-component-01",
+            "targetMoveId": "pro-mind-consciousness-nonmechanical",
+            "text": "Rejecting materialism does not answer a causal objection designed to apply across theories of consciousness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-theory-independent-incoherence-component-02",
+            "targetMoveId": "pro-authorship-agent-primary-cause",
+            "text": "The passage asserts theory independence but only compresses the underlying reason agent causation remains incoherent.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly explains why nonmaterial consciousness is not a sufficient escape, though the excerpt gives limited detail for the broader incoherence conclusion.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly contacts the nonmechanical reply and preserves the causal issue, with the full defeating inference compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Theory independence is clear, though the stronger term incoherent ranges beyond what the selected explanation fully establishes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Ambivalence among mind theories is supported, but categorical incoherence requires fuller restatement of the causal argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A nonphysical agent may instantiate a primitive causal power unavailable to a reductive event ontology.",
+        "decisiveQualification": "The primitive power still requires an account of controlled divergence rather than mere indeterminacy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The theory-independence point is coherent, while the step from independence to universal incoherence remains somewhat compressed."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The passage supplies conceptual scope clarification, but detailed comparison across material, emergent, and immaterial accounts is limited."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly completes the subsidiary theory-independence bridge and links it to the broader causal objection."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply grants suspicion of materialism and targets the causal structure rather than caricaturing the defender as reductive."
+        }
+      },
+      "evidenceBasis": "The excerpt states that the anti-free-will argument is indifferent to consciousness theory while expressly expressing suspicion of materialism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-constraints-coercion-limits-exercise",
+      "sectionId": "mind-constraints-and-application",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "External force can sharply restrict available actions and obstruct a person's exercise of rational judgment and free will without disproving the underlying volitional capacity.",
+      "sourceSpan": {
+        "startEvent": 2591,
+        "endEvent": 2626
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Biddle explicitly takes the first response and develops the answer using his established account of rational faculty and volitional choice.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-scope-constraints"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-theory-independent-incoherence",
+          "con-strongest-unchosen-desire"
+        ],
+        "components": [
+          {
+            "componentId": "pro-constraints-coercion-limits-exercise-component-01",
+            "targetMoveId": "con-theory-independent-incoherence",
+            "text": "External force can restrict the exercise of rational choice without eliminating the underlying faculty.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-constraints-coercion-limits-exercise-component-02",
+            "targetMoveId": "con-strongest-unchosen-desire",
+            "text": "The response does not establish that constrained selection is independent of operative desires.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move is relevant to applying the theory under coercion, but it does not contact the earlier theory-independent incoherence claim or its causal premise.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "It offers issue-bearing application material while leaving the targeted metaphysical objection unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between possessing a capacity and being obstructed from exercising it is clear and properly constrained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limitation claim is plausible and qualified, though saying force stops free will may overstate cases where constrained choice remains."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Coercion can leave conscious alternatives while changing their motivational costs rather than literally stopping choice.",
+        "decisiveQualification": "Severe restriction still demonstrates that exercise and opportunity can vary without settling whether the capacity is libertarian."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The capacity-versus-exercise distinction is coherent, with a bounded ambiguity about whether force limits or entirely stops exercise."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Common coercion cases support practical restriction, though the underlying libertarian faculty is assumed rather than independently evidenced."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary pro bridge accounting for coercion and external limits on exercise."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly emphasizes practical obstruction but somewhat compresses the residual choices available under coercion."
+        }
+      },
+      "evidenceBasis": "The excerpt says physical force limits available choices and obstructs use of rational judgment and free will.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scope-degrees-of-mental-activation",
+      "sectionId": "scope-of-free-will",
+      "side": "pro",
+      "speaker": "Craig Biddle",
+      "moveKind": "reply",
+      "proposition": "The fundamental volitional choice is whether and how fully to activate one's mind, with degrees ranging from full-context awareness to evasion or drift.",
+      "sourceSpan": {
+        "startEvent": 2627,
+        "endEvent": 2665
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same identified respondent marks a conceptual pivot and restates the distinctive focus-versus-evasion account he has defended throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-define-focus"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-alternate-possibilities-definition",
+          "con-theory-independent-incoherence",
+          "con-deliberative-content-unselected"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scope-degrees-of-mental-activation-component-01",
+            "targetMoveId": "con-alternate-possibilities-definition",
+            "text": "The relevant freedom concerns degrees and methods of mental activation, not unrestricted selection of content or outcome.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scope-degrees-of-mental-activation-component-02",
+            "targetMoveId": "con-theory-independent-incoherence",
+            "text": "The scope clarification does not explain how graded activation escapes the causal dilemma.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scope-degrees-of-mental-activation-component-03",
+            "targetMoveId": "con-deliberative-content-unselected",
+            "text": "It expressly concedes unchosen content while relocating freedom to engagement method.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies a narrower motion-relevant locus and clarifies its graded character, though it does not meet the skeptic's causal explanation demand.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It strongly answers the scope and content objections but only partially answers the broader alternate-possibilities challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move expressly distinguishes content from activation and explains the continuum from full-context thought to drift and evasion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conceptual scope is well qualified, but actual voluntary control over each degree remains more asserted than demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic can accept graded attention while denying that the grade is selected independently of prior causes and desires.",
+        "decisiveQualification": "Clarifying what is controlled does not establish that control is libertarian."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The graded scope account is explicit and consistent, with one bounded missing bridge from classification to libertarian control."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The phenomenological distinctions are plausible, while evidence that agents freely originate the degree of activation remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central definitional bridge distinguishing mental engagement from content, action, and outcome."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply fairly narrows its claim and concedes limitations, while leaving the strongest causal qualification intact."
+        }
+      },
+      "evidenceBasis": "The excerpt calls the fundamental choice activation rather than content and describes degrees from full-context thought to evasion or drift.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-coercive-conscious-choice",
+      "sectionId": "mind-constraints-and-application",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Even conscious conduct under coercion remains technically a choice between desire-governed alternatives, although ordinary language reasonably describes it as forced.",
+      "sourceSpan": {
+        "startEvent": 2880,
+        "endEvent": 2934
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor identifies his own preferred terminology, develops the wallet-at-gunpoint example, and connects it to his earlier desire-based skeptical framework.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-desire-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-constraints-coercion-limits-exercise",
+          "pro-scope-degrees-of-mental-activation"
+        ],
+        "components": [
+          {
+            "componentId": "con-coercive-conscious-choice-component-01",
+            "targetMoveId": "pro-constraints-coercion-limits-exercise",
+            "text": "Coercion can leave a conscious selection between alternatives even when ordinary speech calls the conduct forced.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-coercive-conscious-choice-component-02",
+            "targetMoveId": "pro-scope-degrees-of-mental-activation",
+            "text": "The reply does not show whether conscious selection includes freely controlled mental activation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly qualifies the claim that force stops choice and integrates coercion into the desire account, but does not refute the narrower volitional faculty.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the decisive coercion example while leaving the existence of controlled rational engagement unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Ordinary forced conduct and philosophically conscious choice are expressly distinguished, with coercive pressure preserved."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move carefully qualifies its technical terminology and acknowledges that some people choose the costly alternative."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The defender may mean coercion obstructs normal exercise rather than removes every conscious alternative.",
+        "decisiveQualification": "Residual selection under threat supports technical choice but does not establish uncoerced freedom or ultimate authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The ordinary-versus-technical distinction is explicit and consistently applied to the wallet-under-threat example."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The coercion example is specific and representative, with only a bounded gap concerning generalization to all conscious conduct."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It materially supports the central desire account by treating coerced conduct as selection under altered motivational stakes."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply preserves the practical force of coercion while accurately identifying residual alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes ordinary claims of being forced from a technical conscious choice and notes that some select being shot.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives exclusion from the move ratings, response links, relevance judgments, and importance assessments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence remains after ordinary move-level capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed adjustment would not change any independently established burden completion."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives exclusion from the move ratings, response links, relevance judgments, and importance assessments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence remains after ordinary move-level capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the proposed adjustment would not change any independently established burden completion."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

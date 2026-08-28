@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-stale-test-correction",
+  "status": "batch-17-independent-judgment-stale-steady-phase-test-corrected",
+  "failedTest": "scripts/test-assessment-production-post-canary-batch-17-independent-judgment-activation.mjs",
+  "preservedFailure": "docs/assessment-production/post-canary-continuation-v1/batch-17/independent-judgments/test-failures/activation-steady-phase-count-failure-1.mjs",
+  "preservedFailureSha256": "58c7b197d84134c666b7e4181acc6e71ea1bf433173e5045d9480d87599f1cf3",
+  "diagnosis": "The post-execution assertion retained the Batch 16 steady-phase length of 17 even though the frozen Batch 17 manifest and execution correctly used five indexes, 3 through 7.",
+  "correction": {
+    "steadyPhaseLengthBefore": 17,
+    "steadyPhaseLengthAfter": 5,
+    "steadyPhaseContextIndexes": [3, 4, 5, 6, 7],
+    "selfHashReplaySkippedBecauseTestWasCorrectedAfterActivation": true,
+    "allOtherFrozenActivationSourceHashesStillReplayed": true
+  },
+  "judgmentOutputsChanged": 0,
+  "modelAttemptsRepeated": 0,
+  "scoresDerived": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}

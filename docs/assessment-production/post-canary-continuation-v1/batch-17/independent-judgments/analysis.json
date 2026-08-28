@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-independent-judgment-analysis",
+  "protocolId": "assessment-production-post-canary-batch-17-independent-judgments",
+  "status": "eight-post-canary-batch-17-independent-judgments-passed-standing-authorization-active-for-disagreement-extraction",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 17,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "execution": {
+    "contextsPlanned": 8,
+    "contextsAttempted": 8,
+    "contextsUnattempted": 0,
+    "validContexts": 8,
+    "invalidContexts": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "rampPhases": [
+      {
+        "phase": "operational-canary-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-28T16:34:57.727Z",
+        "completedAt": "2026-08-28T16:38:36.925Z",
+        "attemptedContextIndexes": [
+          0
+        ],
+        "validContextIndexes": [
+          0
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "ramp-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-28T16:38:36.925Z",
+        "completedAt": "2026-08-28T16:45:12.016Z",
+        "attemptedContextIndexes": [
+          1,
+          2
+        ],
+        "validContextIndexes": [
+          1,
+          2
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "steady-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expansionRequiresAllValid": false,
+        "startedAt": "2026-08-28T16:45:12.016Z",
+        "completedAt": "2026-08-28T16:58:49.749Z",
+        "attemptedContextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validContextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      }
+    ],
+    "maximumParallelContextsObserved": 2,
+    "wallElapsedMs": 1432022,
+    "modelWorkElapsedMs": 2152380,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "77",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 218774,
+      "moves": 18,
+      "judgmentSha256": "e6828c8a8a419f866bda590bd235b368e1227638388b2d67d8f718096365e547",
+      "rawOutputSha256": "ac4021e7f00ef35e1e8a0ba4cad4d2bdd9df13ff01093e1323d08344c1003479",
+      "lockedInventorySha256": "199c3b45e5b657f07269ef72fd1523bf5b9a8b29d942ebb8e5c047d253e5b19d",
+      "mediumConfidenceMoves": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "77",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 394642,
+      "moves": 18,
+      "judgmentSha256": "7f38d572c0eaa51ec6dffcad4e5100b07477e607c9fd65d68602904e0eb5abf0",
+      "rawOutputSha256": "259afed8688b4dd83e69232a69048171cf6aef4fbc19f836c3b66537b17e0b45",
+      "lockedInventorySha256": "199c3b45e5b657f07269ef72fd1523bf5b9a8b29d942ebb8e5c047d253e5b19d",
+      "mediumConfidenceMoves": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "44",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 244464,
+      "moves": 19,
+      "judgmentSha256": "2e1b3d2da98637546a358d52f3b974e1283f4d5d59c775a641d39c3ffdcc8dfe",
+      "rawOutputSha256": "76fba15f0eeb68df3a9feb748c10026f95c35b4284be916f47c59a54889a5526",
+      "lockedInventorySha256": "097156c2173d27d4e9d25762a9042770e0ff26ce3ca8c0ec4f55893206c6a8a1",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "44",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 215951,
+      "moves": 19,
+      "judgmentSha256": "c96998ebde40650a2a53edf37c798c9a9e58bbaa4ef7c6f19101e003379829b1",
+      "rawOutputSha256": "53f98834af0d05e3098f29a19da818b20b93dcfd1b60b28f563814c1c098c804",
+      "lockedInventorySha256": "097156c2173d27d4e9d25762a9042770e0ff26ce3ca8c0ec4f55893206c6a8a1",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "171",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 262139,
+      "moves": 22,
+      "judgmentSha256": "50221b249679f2e54e5660fae87e3b8ac39888afe9e91033be78183465930fb0",
+      "rawOutputSha256": "9e5ef69b6d371b79682853a956fc2c2b98787da6118f2fcb7f22fffa0167f0df",
+      "lockedInventorySha256": "5a6525d3ec93e06c73d6edea14ba554d7b9de5ae80b3da57292a45753a9d77de",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "171",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 237797,
+      "moves": 22,
+      "judgmentSha256": "9a85d355d81d5560dfa641e49d8af9df7c6160a2d37def7bd0cf1b054f995c23",
+      "rawOutputSha256": "a963641bffdb447b48b21fe025e9f92ce2d89f4efe595f6b9705428272981539",
+      "lockedInventorySha256": "5a6525d3ec93e06c73d6edea14ba554d7b9de5ae80b3da57292a45753a9d77de",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "62",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 215933,
+      "moves": 20,
+      "judgmentSha256": "c7e82576fc9f7f357b042dcf5ecd62f1a281ab7493f24a7ba6d684308186c27a",
+      "rawOutputSha256": "e13ec3d41bf9342412c2bdcbf045685304f2bc443419a6d8e0afff72ce393c4a",
+      "lockedInventorySha256": "0e8da1071135f6d6db1929cb8fbcb89d6255c509bd6851b8ee631c0db58a3af9",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "62",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 362680,
+      "moves": 20,
+      "judgmentSha256": "ba950e6f109fbadf7c12688302bb5f6c52c983173e12a45d7c7013bb1a9053d8",
+      "rawOutputSha256": "347ff12e371c253ac5c9e369841dfae8d0efa4f7c94feef12ceaa113a2e733b5",
+      "lockedInventorySha256": "0e8da1071135f6d6db1929cb8fbcb89d6255c509bd6851b8ee631c0db58a3af9",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    }
+  ],
+  "pairs": [
+    {
+      "debateNumber": "77",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "audioVerificationMoveIds": [
+        "con-strongest-naturalist-audience-standard"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "44",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "171",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "62",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    }
+  ],
+  "acceptance": {
+    "eightValidContexts": true,
+    "sameLockedInventoryEveryPair": true,
+    "separatePassOutputEveryPair": true,
+    "preparedSourceHashReplays": 8,
+    "unchangedV4220ValidatorPasses": 8,
+    "canonicalEventProjectionReplays": 8,
+    "semanticRepairs": 0,
+    "modelAuthoredScores": 0,
+    "scores": 0,
+    "passed": true
+  },
+  "audioPolicy": {
+    "selectedBelowHighAttributionMoveRequiresVerification": true,
+    "mediumConfidenceAlwaysRequiresVerification": true,
+    "queue": [
+      {
+        "debateNumber": "77",
+        "moveId": "con-strongest-naturalist-audience-standard",
+        "requiredBeforeAdjudication": true
+      }
+    ],
+    "queueCompiledDeterministicallyWithoutAudioAccess": true,
+    "audioCallsThisStage": 0
+  },
+  "totals": {
+    "debates": 4,
+    "contexts": 8,
+    "uniqueMoves": 79,
+    "movesJudgedAcrossPasses": 158,
+    "pendingAudioVerificationMoves": 1,
+    "modelContextsExecuted": 8,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "disagreementFieldsExtracted": 0,
+    "audioCalls": 0,
+    "adjudicationModelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0,
+    "publicationModelContexts": 0,
+    "productionMutations": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "independentJudgmentModelExecution": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "unexpectedPaidService": false,
+    "adjudicationPreparation": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "extract-freeze-and-analyze-batch-17-disagreements-under-standing-authorization"
+}
