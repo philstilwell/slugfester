@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-continuation-analysis",
+  "protocolId": "assessment-production-post-canary-batch-17-publication-initial-context-continuation",
+  "status": "batch-17-publication-continuation-gate-passed",
+  "batchNumber": 17,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "execution": {
+    "contextsPlanned": 1,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 0,
+    "validContexts": 1,
+    "invalidContexts": 0,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "maximumObservedConcurrency": 1
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 3,
+      "debateNumber": "62",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "validation": {
+        "status": "passed",
+        "debateNumber": "62",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 968,
+        "tags": 4,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    }
+  ],
+  "totals": {
+    "debates": 1,
+    "critiques": 20,
+    "exactSourceQuotes": 2,
+    "overallCommentarySides": 2,
+    "aiExtensionSides": 2,
+    "modelContexts": 1,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "integrity": {
+    "preservedInitialGateRetained": true,
+    "scoresRemainedImmutable": true,
+    "everyAcceptedOutputReplayedDeterministically": true,
+    "retriesPerformed": false,
+    "timeoutExtensionsPerformed": false,
+    "productionMutated": false
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "recoveryPacketPreparation": true,
+    "deterministicCohortFinalization": false,
+    "scorePass": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "recover-only-the-one-failed-batch-17-publication-critique-field"
+}
