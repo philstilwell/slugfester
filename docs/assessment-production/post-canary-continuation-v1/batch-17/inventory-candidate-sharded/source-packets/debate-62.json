@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-17-candidate-sharded-inventory",
+  "debateNumber": "62",
+  "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+  "motion": "Do patterns, symbolism, Genesis, resurrection, worship, and social meaning point toward God as Logos, or can they be explained by human cognition, pragmatic abstraction, and bottom-up social life?",
+  "sides": {
+    "pro": {
+      "label": "Symbolic theism",
+      "speakers": [
+        "Jonathan Pageau"
+      ]
+    },
+    "con": {
+      "label": "Atheist pragmatism",
+      "speakers": [
+        "Joe Folley"
+      ]
+    }
+  },
+  "durationSeconds": 7078,
+  "eventCount": 3420,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/fJ05WWnyj2g/transcript.txt",
+    "transcriptSha256": "179a89a9d3ffde116ca3baf8bdd0c575df7936cb680700213dfd036b19ab7aa3",
+    "eventsPath": ".assessment-cache/captions/fJ05WWnyj2g/events.json",
+    "eventsSha256": "09cab3056f81e6931c545295ad388a5b88c322b086eddc061f0b40b9290db36e",
+    "localManifestPath": ".assessment-cache/captions/fJ05WWnyj2g/manifest.json",
+    "localManifestSha256": "13cbdd5518d386af0d0d201477eec59992eb8866d9684b080b0b8257fdee307c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-17/debate-62.jsonl",
+    "sourceLedgerSha256": "23c81f5f6a768fdb12b1a705efb470a79f462c12e5305a0cc0015e7243744ddb",
+    "sourceLedgerBytes": 200830,
+    "sourceLedgerEventCount": 3420,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-17/source-preparation/plans/debate-62.json",
+    "partitionPlanSha256": "7c17f6a7efa41c17f1d71e1187edd329f81cceb0fb9071715e2b2ec97443b1b5",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
