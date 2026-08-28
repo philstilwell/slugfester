@@ -1,0 +1,669 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection",
+  "protocolId": "assessment-production-post-canary-batch-16",
+  "status": "sixteenth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+  "frozenAt": "2026-08-28T03:03:48.000Z",
+  "checkpointCommit": "a6f27248d55f8dea4856ac4234d4b31dcc0c528c",
+  "branch": "main",
+  "productionContinuation": true,
+  "developmentValidationOnly": false,
+  "stagingOnly": true,
+  "batchNumber": 16,
+  "productionSequenceOrdinal": 17,
+  "userAuthorization": {
+    "instruction": "Continue the SLUGFESTER reassessment campaign with Batch 16 in /Users/philstilwell/Documents/SLUGFESTER.com.",
+    "scopeInterpretation": "Materialize and source-validate only the deterministic Batch 16 selection under the frozen continuation policy after authenticating successful Batch 15 publication. This selection pass prepares no source packets, executes no models, derives no scores, and performs no production mutation.",
+    "directIncrementalCostEstimateUsd": 0
+  },
+  "policyLocks": {
+    "selectionPolicy": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/selection-policy.json",
+      "bytes": 11599,
+      "sha256": "a7375c3ee116d64df6e0ddfe3c15c598a425be30200e798bbd383cdf83118466",
+      "status": "post-canary-full-campaign-selection-policy-frozen-awaiting-separate-first-batch-selection-decision"
+    },
+    "policyAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/analysis.json",
+      "bytes": 2294,
+      "sha256": "a62a1fb461d1051192c98d234558726fe91eaac99ec034204e9279d02cbb1538",
+      "status": "post-repair-source-overlay-and-full-campaign-selection-policy-analysis-passed"
+    },
+    "effectiveSourceOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/effective-source-overlay.json",
+      "bytes": 8291,
+      "sha256": "d36c2b0a83e624b036525ae6047778c84a0a6456fa30c9c37b05bb6bd8728c14",
+      "status": "three-debate-effective-source-overlay-frozen-and-verified"
+    }
+  },
+  "priorBatchPublicationPrerequisite": {
+    "required": true,
+    "batchNumber": 15,
+    "selection": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/selection.json",
+      "bytes": 32186,
+      "sha256": "0947a5cc1ccd4b6ed54de709101df9825ecfcde5f9c379401a1bcafe33322c8f",
+      "status": "fifteenth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+    },
+    "completionExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/generated-seo-correction/execution.json",
+      "bytes": 6934,
+      "sha256": "a5d451978d725454bf0e72dfddd2141ea961b9876843ee941a23efd409e291da",
+      "status": "passed-complete-batch-15-transaction-ready-for-atomic-commit"
+    },
+    "completionAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/generated-seo-correction/analysis.json",
+      "bytes": 2200,
+      "sha256": "bb101c6eba22b25e196516321fae75f8b52b0fb037e2e5067007e1223d256c15",
+      "status": "batch-15-production-publication-accepted-for-atomic-commit-after-generated-seo-correction"
+    },
+    "mutationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/mutation-manifest.json",
+      "bytes": 56992,
+      "sha256": "ff20f9ef61fcd4454d86722dfbc7ff8ec63d5d5321b57f0cc7032a26d2e58c8e",
+      "status": "frozen-batch-15-production-publication-mutation-manifest-prepared"
+    },
+    "atomicPublicationCommit": "a6f27248d55f8dea4856ac4234d4b31dcc0c528c",
+    "atomicPublicationCommitWasHead": true,
+    "atomicPublicationCommitWasPushedOriginMain": true,
+    "completeTransactionAccepted": true,
+    "fullRepositoryRegressionPassed": true,
+    "preservedPriorDerivedReferenceDiagnosis": {
+      "analysisEmbeddedExecutionSha256": "a5d451978d725454bf0e72dfddd2141ea961b9876843ee941a23efd409e291da",
+      "committedExecutionSha256": "a5d451978d725454bf0e72dfddd2141ea961b9876843ee941a23efd409e291da",
+      "embeddedReferenceMatched": true,
+      "materialToPriorProductionOrValidation": false
+    },
+    "publishedDebates": [
+      "39",
+      "48",
+      "23",
+      "162",
+      "86",
+      "159",
+      "128",
+      "98",
+      "155",
+      "178"
+    ]
+  },
+  "eligibility": {
+    "frozenCensusSize": 164,
+    "rankedCensusSize": 164,
+    "fullRankedCensusSha256": "78b9b19796c9cee48f5fd39c906efe07a06dc2adf76c15ad551f89e276289ec8",
+    "previouslyPublishedAndRemovedCount": 150,
+    "remainingBeforeBatchCount": 14,
+    "remainingBeforeBatchRankedSha256": "385065d4d90bc028784cb616c1228043e4fb835827752f876b6bd2a27bc1cdd8",
+    "selectedCount": 10,
+    "remainingUnselectedCount": 4,
+    "dyadicOnly": true,
+    "acceptedCalibrationExcluded": true,
+    "publishedCanaryExcluded": true,
+    "publishedPriorContinuationBatchesExcluded": true,
+    "multiSpeakerExcluded": true,
+    "priorObservationExcluded": false
+  },
+  "deterministicOrdering": {
+    "rankDomain": "assessment-production-post-canary-continuation-v1",
+    "rankFormula": "SHA-256(rank domain | active v2.2 normative-text hash | v2.2 promotion-record hash | debate number | debate id), ascending; debate number ascending breaks a cryptographic tie",
+    "normativeTextSha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "promotionRecordSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "selectedRankOrdinals": [
+      151,
+      160
+    ],
+    "firstTenRemainingSelectedWithoutReplacement": true,
+    "priorPublishedBatchRemovedWithoutReplacement": true,
+    "replacementsAllowed": false,
+    "resultDependentOrdering": false
+  },
+  "selected": [
+    {
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "videoId": "DBsHdHMvucs",
+      "motion": "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
+      "sides": {
+        "pro": {
+          "label": "Christian renewal",
+          "speakers": [
+            "Ayaan Hirsi Ali"
+          ]
+        },
+        "con": {
+          "label": "Atheist truth test",
+          "speakers": [
+            "Richard Dawkins"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 151,
+      "rankSha256": "e63ce36b32c34b705d5a0a771e56eb8af90ad0095f566ea13713438c1145f587",
+      "eventCount": 1265,
+      "durationSeconds": 4016.2,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/DBsHdHMvucs/transcript.txt",
+        "transcriptSha256": "7426fd84775533c0e67dd0674ac48f4b2e0dbe27392c0118f49a5096eea74af6",
+        "events": ".assessment-cache/captions/DBsHdHMvucs/events.json",
+        "eventsSha256": "7c5637b8fe52a892d553c96a260187ab044706539218e4620666200606ead845",
+        "manifest": ".assessment-cache/captions/DBsHdHMvucs/manifest.json",
+        "manifestSha256": "267271fd297b75c8304d5bfe6ffa53da5dc9076da7590bdb1c39f25a2a677990",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "videoId": "nOy29aP7wDc",
+      "motion": "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
+      "sides": {
+        "pro": {
+          "label": "Mind-first theism",
+          "speakers": [
+            "Keith Ward"
+          ]
+        },
+        "con": {
+          "label": "Agnostic naturalism",
+          "speakers": [
+            "Michael Ruse"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 152,
+      "rankSha256": "e7635a78c755d4d2151f070d425edcda5f662e43602c7b1ee288bcb4c4458939",
+      "eventCount": 2129,
+      "durationSeconds": 4812.8,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/nOy29aP7wDc/transcript.txt",
+        "transcriptSha256": "05db2206d5fa855e9a1ad6671129f2bb0e380e3c7fa7ad4abbf26070636ee78d",
+        "events": ".assessment-cache/captions/nOy29aP7wDc/events.json",
+        "eventsSha256": "cd38361b4a6dd909a49f1eaa4602e4a8e2b282b11e2755adab363d56a048f10d",
+        "manifest": ".assessment-cache/captions/nOy29aP7wDc/manifest.json",
+        "manifestSha256": "48f2da014896374d34b0805aa19427eba92af8fa6f5588e87b85ca0cda9fe791",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "164",
+      "debateId": "craig-wielenberg-god-morality-2018",
+      "videoId": "xHhmuqBW6Dw",
+      "motion": "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
+      "sides": {
+        "pro": {
+          "label": "Theistic moral grounding",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Godless normative realism",
+          "speakers": [
+            "Erik Wielenberg"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 153,
+      "rankSha256": "ed0a42d3fcec20445ca515ed262a1eb2530b07e55f8dc3f9b17f06cbfc30e9f1",
+      "eventCount": 3173,
+      "durationSeconds": 8429.16,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/xHhmuqBW6Dw/transcript.txt",
+        "transcriptSha256": "e90834c6ae62fb6f2e2d416a17fbb82a173d1321e71eec816e92be1905729c1c",
+        "events": ".assessment-cache/captions/xHhmuqBW6Dw/events.json",
+        "eventsSha256": "1313ff95dc13abf44fb375bdb51bc65997555189a74d8c79b7f7f09e955a739e",
+        "manifest": ".assessment-cache/captions/xHhmuqBW6Dw/manifest.json",
+        "manifestSha256": "6a934bf7429b93199000ab2919606fc9bd1be036a25cf30b1374b8ff3e3cb142",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "videoId": "f06J2R4MwGA",
+      "motion": "Are evolutionary science and theistic religion compatible, and does naturalism plus evolution undercut trust in human cognition?",
+      "sides": {
+        "pro": {
+          "label": "Theistic compatibility",
+          "speakers": [
+            "Alvin Plantinga"
+          ]
+        },
+        "con": {
+          "label": "Naturalist explanation",
+          "speakers": [
+            "Daniel Dennett"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 154,
+      "rankSha256": "edd08a2f4f1caf95f8a6920ff39352bab1db0e0a7d8983ab84dbe700bf343e99",
+      "eventCount": 2885,
+      "durationSeconds": 6432.52,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/f06J2R4MwGA/transcript.txt",
+        "transcriptSha256": "09519d0eec83946db3c8acd922d9a836c7bd35e7474c5e367aec8eb3edd465b4",
+        "events": ".assessment-cache/captions/f06J2R4MwGA/events.json",
+        "eventsSha256": "aee6eb72b7be34b2624bacd44b894cece83f5e1b6c65e5bff30dbb1aeca865f2",
+        "manifest": ".assessment-cache/captions/f06J2R4MwGA/manifest.json",
+        "manifestSha256": "a2a9d2883720c0b033aa480d2a580178a6a341245f02609e1de08530bfddc1ab",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "76",
+      "debateId": "craig-oppy-mathematics-theism-2020",
+      "videoId": "8WE1y00bwCU",
+      "motion": "Does the surprising applicability of mathematics to the physical world support theism better than naturalism?",
+      "sides": {
+        "pro": {
+          "label": "Theistic mathematical explanation",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Naturalistic necessity critique",
+          "speakers": [
+            "Graham Oppy"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 155,
+      "rankSha256": "f0ca8503f4adaab3e21eadd61f7d739d6d3e8fe3f15688fd4e7644094a5f5184",
+      "eventCount": 1876,
+      "durationSeconds": 5504.25,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/8WE1y00bwCU/transcript.txt",
+        "transcriptSha256": "1b465ca4362385b921563caf433a7e600173310922fe8631ac15eac3625eef89",
+        "events": ".assessment-cache/captions/8WE1y00bwCU/events.json",
+        "eventsSha256": "d88d17c6b3428974200dcf41b29010cb90f86701abdc51e9d38bd2e93e4c329a",
+        "manifest": ".assessment-cache/captions/8WE1y00bwCU/manifest.json",
+        "manifestSha256": "0c8860d12113d267e01b62c45c0e7cee9728b95c5e217fb1d7d69a6821c462e6",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "41",
+      "debateId": "huemer-bush-objective-moral-facts-2024",
+      "videoId": "Cc16nceSWiU",
+      "motion": "Do objective moral facts exist, and can ethical intuitionism establish moral realism against anti-realist quietism, folk metaethical indeterminacy, and language-use objections?",
+      "sides": {
+        "pro": {
+          "label": "Moral realist",
+          "speakers": [
+            "Michael Huemer"
+          ]
+        },
+        "con": {
+          "label": "Moral anti-realist",
+          "speakers": [
+            "Lance Bush"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 156,
+      "rankSha256": "f0e071d0c10dc6772955f388380d06f14af30aa0c907c7ccb49fcc144a0b578b",
+      "eventCount": 3603,
+      "durationSeconds": 7740.239,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/Cc16nceSWiU/transcript.txt",
+        "transcriptSha256": "ba69580b847ec553ee6b4d2dab0615adb4333b313ebe09eda8018646f37c53fd",
+        "events": ".assessment-cache/captions/Cc16nceSWiU/events.json",
+        "eventsSha256": "7490abd9743207dcc2331a024f6c4566468cb61db63ff6be7f7875d50ed5b99d",
+        "manifest": ".assessment-cache/captions/Cc16nceSWiU/manifest.json",
+        "manifestSha256": "bf4600adfb22ae41149f656245103067e454caf10d2ec7e3064bb8c5695e0e4b",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "videoId": "uWo9qU2dhpQ",
+      "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
+      "sides": {
+        "pro": {
+          "label": "Kalam beginning case",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Infinity critique",
+          "speakers": [
+            "Alex Malpass"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 157,
+      "rankSha256": "f137f143f41970af003a55bfa10b519ff3563ccf51ac5a70f42a9540e6ce21e5",
+      "eventCount": 2927,
+      "durationSeconds": 7505.229,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/uWo9qU2dhpQ/transcript.txt",
+        "transcriptSha256": "865a1d39ff9f96bcb5724cf25ddfa8fb5700437179b10594491342572f9bc334",
+        "events": ".assessment-cache/captions/uWo9qU2dhpQ/events.json",
+        "eventsSha256": "299209959d464c2e166cc5cfd5275a13caa250c6c8e3e154fc96c2fa512fd566",
+        "manifest": ".assessment-cache/captions/uWo9qU2dhpQ/manifest.json",
+        "manifestSha256": "daae736f91861483aa49a56d1f78927bd00c600e5d61c562a90ee08c0ab4fe3f",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "139",
+      "debateId": "adelstein-dillahunty-belief-god-2025",
+      "videoId": "vHxAw5-RXIw",
+      "motion": "Should we believe in an all-knowing, all-powerful, morally perfect being?",
+      "sides": {
+        "pro": {
+          "label": "Theistic evidential case",
+          "speakers": [
+            "Matthew Adelstein"
+          ]
+        },
+        "con": {
+          "label": "Evidential skepticism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 158,
+      "rankSha256": "f30b2e16beb87bdbaf589f8f6b914db2026c6168303c1e5d880b0bbbeafcc51b",
+      "eventCount": 3236,
+      "durationSeconds": 6821.84,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/vHxAw5-RXIw/transcript.txt",
+        "transcriptSha256": "c15db9cb46afed3c4fef0a368baf300e6d2b86d37f13f4a35b918cbce1186a5d",
+        "events": ".assessment-cache/captions/vHxAw5-RXIw/events.json",
+        "eventsSha256": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+        "manifest": ".assessment-cache/captions/vHxAw5-RXIw/manifest.json",
+        "manifestSha256": "e6b9be34970c87d26c9e6c81bd262eebb0de2fe21f8c51f323082b1d6e6d9c99",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "163",
+      "debateId": "craig-draper-existence-of-god-1997",
+      "videoId": "lK3jVNbG2-s",
+      "motion": "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
+      "sides": {
+        "pro": {
+          "label": "Christian theism",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Agnostic naturalism",
+          "speakers": [
+            "Paul Draper"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 159,
+      "rankSha256": "f71b739f07ce62cd4ece3591eac247bdc0b3151921d0f6999888944d5a54ae75",
+      "eventCount": 2175,
+      "durationSeconds": 5344.159,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/lK3jVNbG2-s/transcript.txt",
+        "transcriptSha256": "2e3fbd6ad00ad5102eac1a5b8cab3d6bc5dc868a39eefe8f3b85c0f4e6ed0272",
+        "events": ".assessment-cache/captions/lK3jVNbG2-s/events.json",
+        "eventsSha256": "b114ee182fecd152055f8a38ae4d2b2d6d21d6f4f7b979fd3ef3ea75e2127008",
+        "manifest": ".assessment-cache/captions/lK3jVNbG2-s/manifest.json",
+        "manifestSha256": "8aa04c0324c094b273203601c1a392e63ab9d6c9e65445109022a6cf2744ee62",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "videoId": "9JVRy7bR7zI",
+      "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
+      "sides": {
+        "pro": {
+          "label": "Christian theist",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Skeptical atheist",
+          "speakers": [
+            "Peter Millican"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 160,
+      "rankSha256": "fbbd315242b0f5eedd3faa131099914f94d7d450ee4f8d1c0c21b010c5adc3a4",
+      "eventCount": 3159,
+      "durationSeconds": 8310.878,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt",
+        "transcriptSha256": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+        "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+        "eventsSha256": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+        "manifest": ".assessment-cache/captions/9JVRy7bR7zI/manifest.json",
+        "manifestSha256": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    }
+  ],
+  "sourceGate": {
+    "selectedDebatesChecked": 10,
+    "selectedSourceFilesChecked": 30,
+    "selectedSourceFilesHashMatched": 30,
+    "canonicalEventDebatesPassed": 10,
+    "canonicalEventDebatesFailed": 0,
+    "overlayDebatesSelected": [],
+    "transcriptContentSemanticallyInspected": false,
+    "legacyAssessmentAccessed": false,
+    "scoreAccessed": false,
+    "winnerAccessed": false,
+    "priorModelOutputAccessed": false
+  },
+  "modelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "apiKeysRemovedWhenModelsEventuallyRun": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelContextsExecuted": 0
+  },
+  "stageConcurrency": {
+    "discovery": 4,
+    "inventory": 2,
+    "judgments": 2,
+    "audio": 2,
+    "adjudication": 2,
+    "publication": 2
+  },
+  "stopRules": {
+    "selectionHashMismatchBlocks": true,
+    "policyOrOverlayHashMismatchBlocks": true,
+    "priorBatchPublicationFailureBlocks": true,
+    "priorBatchCommitOrPushMismatchBlocks": true,
+    "stableRankMismatchBlocks": true,
+    "sourceHashMismatchBlocksWholeBatch": true,
+    "canonicalEventFailureBlocksWholeBatch": true,
+    "speakerCountAmbiguityBlocksWholeBatch": true,
+    "replacementSelectionBlocks": true,
+    "sourcePacketPreparationBeforeSeparateDecisionBlocks": true,
+    "modelExecutionBlocks": true,
+    "scoreDerivationBlocks": true,
+    "publicationReconstructionBlocks": true,
+    "acceptedCalibrationPromotionBlocks": true,
+    "productionMutationBlocks": true,
+    "concurrentBatchSelectionBlocks": true,
+    "nextBatchSelectionBlocks": true,
+    "paidServiceUseBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/selection-policy.json": "a7375c3ee116d64df6e0ddfe3c15c598a425be30200e798bbd383cdf83118466",
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/analysis.json": "a62a1fb461d1051192c98d234558726fe91eaac99ec034204e9279d02cbb1538",
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/effective-source-overlay.json": "d36c2b0a83e624b036525ae6047778c84a0a6456fa30c9c37b05bb6bd8728c14",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/score-stability-policy-v2.2-proposal.md": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/selection.json": "0947a5cc1ccd4b6ed54de709101df9825ecfcde5f9c379401a1bcafe33322c8f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/selection-analysis.json": "0cbb88629134b4e244b39256ddeee75b1ab824cf0905ecef6c179c77841490bb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/mutation-manifest.json": "ff20f9ef61fcd4454d86722dfbc7ff8ec63d5d5321b57f0cc7032a26d2e58c8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/generated-seo-correction/execution.json": "a5d451978d725454bf0e72dfddd2141ea961b9876843ee941a23efd409e291da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/production-publication/generated-seo-correction/analysis.json": "bb101c6eba22b25e196516321fae75f8b52b0fb037e2e5067007e1223d256c15",
+    "scripts/select-assessment-production-post-canary-batch-16.mjs": "82c1dac04592327eb7201c37991139703d70eeeb3541170eaaaee89358a164c3",
+    "scripts/test-assessment-production-post-canary-batch-16-selection.mjs": "3619c0dfbf925ba38f25e556b6d8085be70839b72245dab9ecc33e1d78b678ca",
+    ".assessment-cache/captions/DBsHdHMvucs/transcript.txt": "7426fd84775533c0e67dd0674ac48f4b2e0dbe27392c0118f49a5096eea74af6",
+    ".assessment-cache/captions/DBsHdHMvucs/events.json": "7c5637b8fe52a892d553c96a260187ab044706539218e4620666200606ead845",
+    ".assessment-cache/captions/DBsHdHMvucs/manifest.json": "267271fd297b75c8304d5bfe6ffa53da5dc9076da7590bdb1c39f25a2a677990",
+    ".assessment-cache/captions/nOy29aP7wDc/transcript.txt": "05db2206d5fa855e9a1ad6671129f2bb0e380e3c7fa7ad4abbf26070636ee78d",
+    ".assessment-cache/captions/nOy29aP7wDc/events.json": "cd38361b4a6dd909a49f1eaa4602e4a8e2b282b11e2755adab363d56a048f10d",
+    ".assessment-cache/captions/nOy29aP7wDc/manifest.json": "48f2da014896374d34b0805aa19427eba92af8fa6f5588e87b85ca0cda9fe791",
+    ".assessment-cache/captions/xHhmuqBW6Dw/transcript.txt": "e90834c6ae62fb6f2e2d416a17fbb82a173d1321e71eec816e92be1905729c1c",
+    ".assessment-cache/captions/xHhmuqBW6Dw/events.json": "1313ff95dc13abf44fb375bdb51bc65997555189a74d8c79b7f7f09e955a739e",
+    ".assessment-cache/captions/xHhmuqBW6Dw/manifest.json": "6a934bf7429b93199000ab2919606fc9bd1be036a25cf30b1374b8ff3e3cb142",
+    ".assessment-cache/captions/f06J2R4MwGA/transcript.txt": "09519d0eec83946db3c8acd922d9a836c7bd35e7474c5e367aec8eb3edd465b4",
+    ".assessment-cache/captions/f06J2R4MwGA/events.json": "aee6eb72b7be34b2624bacd44b894cece83f5e1b6c65e5bff30dbb1aeca865f2",
+    ".assessment-cache/captions/f06J2R4MwGA/manifest.json": "a2a9d2883720c0b033aa480d2a580178a6a341245f02609e1de08530bfddc1ab",
+    ".assessment-cache/captions/8WE1y00bwCU/transcript.txt": "1b465ca4362385b921563caf433a7e600173310922fe8631ac15eac3625eef89",
+    ".assessment-cache/captions/8WE1y00bwCU/events.json": "d88d17c6b3428974200dcf41b29010cb90f86701abdc51e9d38bd2e93e4c329a",
+    ".assessment-cache/captions/8WE1y00bwCU/manifest.json": "0c8860d12113d267e01b62c45c0e7cee9728b95c5e217fb1d7d69a6821c462e6",
+    ".assessment-cache/captions/Cc16nceSWiU/transcript.txt": "ba69580b847ec553ee6b4d2dab0615adb4333b313ebe09eda8018646f37c53fd",
+    ".assessment-cache/captions/Cc16nceSWiU/events.json": "7490abd9743207dcc2331a024f6c4566468cb61db63ff6be7f7875d50ed5b99d",
+    ".assessment-cache/captions/Cc16nceSWiU/manifest.json": "bf4600adfb22ae41149f656245103067e454caf10d2ec7e3064bb8c5695e0e4b",
+    ".assessment-cache/captions/uWo9qU2dhpQ/transcript.txt": "865a1d39ff9f96bcb5724cf25ddfa8fb5700437179b10594491342572f9bc334",
+    ".assessment-cache/captions/uWo9qU2dhpQ/events.json": "299209959d464c2e166cc5cfd5275a13caa250c6c8e3e154fc96c2fa512fd566",
+    ".assessment-cache/captions/uWo9qU2dhpQ/manifest.json": "daae736f91861483aa49a56d1f78927bd00c600e5d61c562a90ee08c0ab4fe3f",
+    ".assessment-cache/captions/vHxAw5-RXIw/transcript.txt": "c15db9cb46afed3c4fef0a368baf300e6d2b86d37f13f4a35b918cbce1186a5d",
+    ".assessment-cache/captions/vHxAw5-RXIw/events.json": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+    ".assessment-cache/captions/vHxAw5-RXIw/manifest.json": "e6b9be34970c87d26c9e6c81bd262eebb0de2fe21f8c51f323082b1d6e6d9c99",
+    ".assessment-cache/captions/lK3jVNbG2-s/transcript.txt": "2e3fbd6ad00ad5102eac1a5b8cab3d6bc5dc868a39eefe8f3b85c0f4e6ed0272",
+    ".assessment-cache/captions/lK3jVNbG2-s/events.json": "b114ee182fecd152055f8a38ae4d2b2d6d21d6f4f7b979fd3ef3ea75e2127008",
+    ".assessment-cache/captions/lK3jVNbG2-s/manifest.json": "8aa04c0324c094b273203601c1a392e63ab9d6c9e65445109022a6cf2744ee62",
+    ".assessment-cache/captions/9JVRy7bR7zI/transcript.txt": "9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78",
+    ".assessment-cache/captions/9JVRy7bR7zI/events.json": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    ".assessment-cache/captions/9JVRy7bR7zI/manifest.json": "436f3f2be4fd5e84338f6244eae1398dbcb11c56ac514920a80cad440790dc18"
+  },
+  "totals": {
+    "selectedDebates": 10,
+    "eventCount": 26428,
+    "durationHours": 18.033,
+    "sourcePacketsPrepared": 0,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "publicationContexts": 0,
+    "productionMutations": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "batchSelectionPreparation": true,
+    "batchSelection": true,
+    "sourcePacketPreparation": false,
+    "discoveryModelExecution": false,
+    "inventoryModelExecution": false,
+    "independentJudgmentModelExecution": false,
+    "audioModelExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "acceptedCalibrationPromotion": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "futureArtifacts": {
+    "sourcePreparation": "docs/assessment-production/post-canary-continuation-v1/batch-16/source-preparation/preparation-manifest.json"
+  },
+  "nextAuthorizedAction": "prepare-batch-16-standing-authorization-and-source-packets-under-user-authorization"
+}

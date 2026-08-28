@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3173,
+  "ledgerBytes": 181353,
+  "ledgerSha256": "2e7ee8fb1e2d8876a4e882b19187f8d97b4c498de007c046a4344fbdc6c63e7d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50119,
+      "contextSha256": "376cac8668c1573866b08df22dbc6c98de3e5b1be5d9d773e5bb2201757e2ad3"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51540,
+      "contextSha256": "a10f30ce6a021a5066777973d4c73f201525ef0f5a972375aa79e2bb8c2462a2"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51784,
+      "contextSha256": "02f43e4b2420daf01a84ee9badfc17b1c4bec8efb04a9b9d09174aeb0486c209"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3172,
+      "coreEvents": 673,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3172,
+      "contextEvents": 713,
+      "contextBytes": 41710,
+      "contextSha256": "e1411f80236620efa5994ccc2c87b169eaac3b7149f956e66c4a5281677c63cb"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3172,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "164",
+  "debateId": "craig-wielenberg-god-morality-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

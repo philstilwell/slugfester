@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2885,
+  "ledgerBytes": 155495,
+  "ledgerSha256": "722ff37d7178f34a2cd6642325e2a6a96b85bed27705351e43a4d55b151ccff7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48277,
+      "contextSha256": "fc22ff0ebcd9150e72166e307f67d09d7db9051714645947849605349e432c9e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48504,
+      "contextSha256": "97bc37b47405ab266e9d07a9664001b4acb164b7778f7d9587643d563a72cce7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 48590,
+      "contextSha256": "fbda0d3d8678b21d192ef5f55773cc232cca96ab58870df0bfa1c65df9c87264"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2884,
+      "coreEvents": 385,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2884,
+      "contextEvents": 425,
+      "contextBytes": 22974,
+      "contextSha256": "e2477fd82c33cf736f762472f6e17358f45716fbb1358a55754b684430fe67d0"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2884,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "144",
+  "debateId": "plantinga-dennett-evolution-naturalism-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

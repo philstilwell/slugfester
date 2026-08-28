@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-source-preparation-validation",
+  "protocolId": "assessment-production-post-canary-batch-16-source-preparation",
+  "status": "post-canary-batch-16-score-blind-source-packet-validation-passed-frozen-under-standing-authorization",
+  "validatedAt": "2026-08-28T03:04:39.000Z",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-16/source-preparation/preparation-manifest.json",
+    "bytes": 90142,
+    "sha256": "55b24a4c4bf548d5b3948abc93b65740c1a02ed7a215c8b5ac0d1151a46f60a0",
+    "status": "post-canary-batch-16-ten-complete-score-blind-source-packets-prepared-awaiting-validation"
+  },
+  "selectedDebates": [
+    "16",
+    "108",
+    "164",
+    "144",
+    "76",
+    "41",
+    "92",
+    "139",
+    "163",
+    "161"
+  ],
+  "checks": {
+    "frozenSelectionReplayed": true,
+    "allThirtyOriginalSourceHashesReplayed": true,
+    "allTenLocalManifestChainsReplayed": true,
+    "exactCanonicalEventProjectionReplayed": true,
+    "exactPartitionCoverageReplayed": true,
+    "exactChunkLedgersReplayed": true,
+    "exactTokenCountedLedgersReplayed": true,
+    "exactZeroLexicalTokenHandlingReplayed": true,
+    "exactSourceRowsInjectedOmittedOrRewritten": false,
+    "exactChunkSchemasReplayed": true,
+    "frozenDyadicSpeakerAllowlistsReplayed": true,
+    "scoreBlindPacketKeyAuditPassed": true,
+    "modelBoundaryPreserved": true,
+    "passIsolationPreserved": true,
+    "activeV22PolicyAndTieRulePreserved": true,
+    "allInheritedStopRulesPreserved": true
+  },
+  "totals": {
+    "debates": 10,
+    "sourceFiles": 30,
+    "sourceEvents": 26428,
+    "discoveryContexts": 36,
+    "tokenCountedLedgerRows": 28508,
+    "modelContextsExecuted": 0,
+    "judgmentPasses": 0,
+    "scoresDerived": 0,
+    "paidServiceCalls": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "decision": {
+    "sourcePacketPreparationPassed": true,
+    "deterministicValidationPassed": true,
+    "packetsFrozen": true,
+    "modelExecutionAttempted": false,
+    "judgmentModelExecutionAttempted": false,
+    "paidServiceAttempted": false,
+    "scoreDerivationAttempted": false,
+    "publicationReconstructionAttempted": false,
+    "productionMutationAttempted": false
+  },
+  "authorization": {
+    "modelExecution": false,
+    "judgmentModelExecution": false,
+    "unexpectedPaidService": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-freeze-and-activate-batch-16-discovery-execution-under-standing-authorization"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-source-preparation",
+  "debateNumber": "92",
+  "debateId": "craig-malpass-universe-begin-exist-2020",
+  "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
+  "sides": {
+    "pro": {
+      "label": "Kalam beginning case",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Infinity critique",
+      "speakers": [
+        "Alex Malpass"
+      ]
+    }
+  },
+  "durationSeconds": 7509,
+  "eventCount": 2927,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/uWo9qU2dhpQ/transcript.txt",
+    "transcriptSha256": "865a1d39ff9f96bcb5724cf25ddfa8fb5700437179b10594491342572f9bc334",
+    "eventsPath": ".assessment-cache/captions/uWo9qU2dhpQ/events.json",
+    "eventsSha256": "299209959d464c2e166cc5cfd5275a13caa250c6c8e3e154fc96c2fa512fd566",
+    "localManifestPath": ".assessment-cache/captions/uWo9qU2dhpQ/manifest.json",
+    "localManifestSha256": "daae736f91861483aa49a56d1f78927bd00c600e5d61c562a90ee08c0ab4fe3f"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-16/debate-92.jsonl",
+    "sourceLedgerSha256": "a699af2bd50e38598158d79e0dff203f0fc154489006aa36e9860f20c2fcca48",
+    "sourceLedgerBytes": 173011,
+    "sourceLedgerEventCount": 2927,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-16/source-preparation/plans/debate-92.json",
+    "partitionPlanSha256": "2cc9248d6f63b27b53de57c9520e1d0a25f2990ac204b840e171ddde62511617",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

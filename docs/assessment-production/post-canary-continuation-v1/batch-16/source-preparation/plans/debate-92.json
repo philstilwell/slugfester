@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2927,
+  "ledgerBytes": 173011,
+  "ledgerSha256": "a699af2bd50e38598158d79e0dff203f0fc154489006aa36e9860f20c2fcca48",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52150,
+      "contextSha256": "12c6632a45fc2880fec5945b358baf00ac97673e1b946501872976366be63d24"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53711,
+      "contextSha256": "1f846dbd60680e3dab5a4fd0080cce17820cea775d3c5eec2b81b87457d6f1ad"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53653,
+      "contextSha256": "8205bb2a75f1c5cdf70e26c7c811ac588a4a5a33563d2a052fbf5f040fdfcbe1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2926,
+      "coreEvents": 427,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2926,
+      "contextEvents": 467,
+      "contextBytes": 27704,
+      "contextSha256": "8788a9ca5ae37318817cb554f36ac5fcd114a592d1b6d621a51c93afbfe347fb"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2926,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "92",
+  "debateId": "craig-malpass-universe-begin-exist-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

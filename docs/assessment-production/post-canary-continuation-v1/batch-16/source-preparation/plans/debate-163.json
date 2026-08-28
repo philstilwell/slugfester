@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2175,
+  "ledgerBytes": 126719,
+  "ledgerSha256": "9ab0ebc9a09435c154a9a80b6eb4fcf0282e021180e8311ecdc9f1d0832989f2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51354,
+      "contextSha256": "158faef4e22ce1f26176c8731a0a590eabcdf3dc4ee49b36e406940fb1d11d86"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53317,
+      "contextSha256": "d655c57374d945cc209684ebec6cd1928860e9d686e7588befd6717bd8459721"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2174,
+      "coreEvents": 495,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2174,
+      "contextEvents": 535,
+      "contextBytes": 31361,
+      "contextSha256": "c73160da159b671a11efe83f921fcc3927570e5811adf6c4b9633065f474e7c6"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2174,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "163",
+  "debateId": "craig-draper-existence-of-god-1997",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

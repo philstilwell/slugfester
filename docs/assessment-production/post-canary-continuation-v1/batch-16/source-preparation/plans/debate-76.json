@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1876,
+  "ledgerBytes": 109668,
+  "ledgerSha256": "dc5583b71234c811c689807b978069a5d370efcb83b8a96c5da7a2306c62c7f2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51820,
+      "contextSha256": "9cd99ebf56210597f9b89a9f6c4af56b0ba2918cc2ac3168fcbdbc08ea62a6b3"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53371,
+      "contextSha256": "71eb4aef801b8929360df3e7dba49329854ccd1f397a3382bfeb2f49ddb1b949"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1875,
+      "coreEvents": 196,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1875,
+      "contextEvents": 236,
+      "contextBytes": 13873,
+      "contextSha256": "d0baaa0f0d49ed2453735313ffff9548c8d3f4147cae013938c2165ac4771fa0"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1875,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "76",
+  "debateId": "craig-oppy-mathematics-theism-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

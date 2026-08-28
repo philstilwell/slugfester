@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1265,
+  "ledgerBytes": 73176,
+  "ledgerSha256": "d4d012faa5b61e60c11412a404425c8e8192fae3ac1941929765759944150588",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51765,
+      "contextSha256": "8ad873a2836a2f56b1d5e0d5687e2459a7812657684a4e0b74aee87cfd083c9d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1264,
+      "coreEvents": 405,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1264,
+      "contextEvents": 445,
+      "contextBytes": 26109,
+      "contextSha256": "cb4687beffbf8554e6175bea4db2069a9dc5fb1631e72025ed73f9c943bdbba3"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1264,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "16",
+  "debateId": "hirsi-ali-dawkins-god-debate-2024",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3603,
+  "ledgerBytes": 212058,
+  "ledgerSha256": "ee5c5e0ca972a3df6483c524df58286971266178ef3ad7e9fbd31955f9a5d35d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51811,
+      "contextSha256": "da4c9774fc9efd452e7f3ebdcf278e4fede481d8b77e5e0007beb971e15cf3be"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53237,
+      "contextSha256": "5704c5efb1e248ba8decae8c667fe35b5b6c91ccad0fdc14fd07d0a5c0e32de0"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53645,
+      "contextSha256": "58b9cfed0cab5dd3d1e0cb22de525e7842411783278127454023852fdddb2c15"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53224,
+      "contextSha256": "a7c2bd3478a22eb09fa3da0e2bdefb42e0c739e8c8ac417ecf4da2e8fe5ffdb0"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3602,
+      "coreEvents": 283,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3602,
+      "contextEvents": 323,
+      "contextBytes": 19073,
+      "contextSha256": "ed76c8934dbf2c5038792a36852e1eba84c517dc8581a69c288d0fb84c4917bf"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3602,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "41",
+  "debateId": "huemer-bush-objective-moral-facts-2024",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

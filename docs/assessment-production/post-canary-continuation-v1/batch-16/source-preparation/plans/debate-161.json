@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3159,
+  "ledgerBytes": 182365,
+  "ledgerSha256": "6192251e62371bf1a59a9755610d93ea7cd8a638c1aef95d9e8715d857859dd5",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50661,
+      "contextSha256": "f144016cf904aea5711fec53a5fa4d938533cc1c010dc2616b3a555166706dad"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52454,
+      "contextSha256": "8aa53b27709926d94bfcb2fad23b89eea5fcc0e258db580c1e247958b77706bb"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52180,
+      "contextSha256": "9a9634a0921f9bca0db7d3b6e48fd11097c88c9e1a5d4862c54bdddb8f527c13"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3158,
+      "coreEvents": 659,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3158,
+      "contextEvents": 699,
+      "contextBytes": 40933,
+      "contextSha256": "270e0ab671f82ce8b19c035a91362274e4088828250ed7457886893a71cc8a0a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3158,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "161",
+  "debateId": "craig-millican-does-god-exist-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3236,
+  "ledgerBytes": 189654,
+  "ledgerSha256": "6193507fd1c1555c8dbb4f83d61a4291c4ccc1abad6ef59252a17c3c648f4e9b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51868,
+      "contextSha256": "e4899eecd8163d1bd7d80c205ba104360adb49b231a02a8ab6fac8f5a4da192d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52972,
+      "contextSha256": "17f2b8d71b1a515bcfc7b50ab7aa62f728c8d4fb22ce014078a4de154ef0b5ea"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53031,
+      "contextSha256": "8f8ec1ff068e48c0ca97842cc6863c88f14b6f938288c7f1ac0122a21f882155"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3235,
+      "coreEvents": 736,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3235,
+      "contextEvents": 776,
+      "contextBytes": 45789,
+      "contextSha256": "9a33a2162839d141d7bdcf9fbf98106feb2aa6076eea8830f5c7712b5c541158"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3235,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "139",
+  "debateId": "adelstein-dillahunty-belief-god-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
