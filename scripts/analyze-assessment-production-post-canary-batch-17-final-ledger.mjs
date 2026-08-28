@@ -35,7 +35,7 @@ const roundedMeanPopulation =
   validation.roundedMeanMerges + validation.dependencyMeanMergesSuppressed;
 const passed =
   validation.status === "passed" &&
-  validation.debates === 10 &&
+  validation.debates === 4 &&
   validation.finalMoves === 79 &&
   validation.disputedMoves === 77 &&
   validation.candidateSelections === 230 &&

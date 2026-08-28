@@ -68,7 +68,7 @@ const validation = validatePostCanaryBatch17FinalLedger(
   inputs.sourceHashes
 );
 assert.equal(validation.status, "passed");
-assert.equal(storedLedger.debates.length, 10);
+assert.equal(storedLedger.debates.length, 4);
 assert.deepEqual(
   storedLedger.debates.map((debate) => debate.debateNumber),
   ["77", "44", "171", "62"]
@@ -96,7 +96,7 @@ assert.equal(
   storedLedger.debates.filter(
     (debate) => debate.mergeAudit.adjudicationOutputAcceptedWithoutCorrection
   ).length,
-  10
+  4
 );
 
 const mutatedLedger = structuredClone(storedLedger);
@@ -132,11 +132,11 @@ assert.equal(analysis.validation.status, "passed");
 assert.equal(analysis.integrity.rawAdjudicationOutputsPreserved, true);
 assert.equal(analysis.integrity.modelScoresPresent, false);
 assert.equal(analysis.integrity.repositoryScoresPresent, false);
-assert.equal(analysis.totals.debates, 10);
+assert.equal(analysis.totals.debates, 4);
 assert.equal(analysis.totals.finalMoves, 79);
 assert.equal(analysis.totals.disputedMoves, 77);
 assert.equal(analysis.totals.candidateSelections, 230);
-assert.equal(analysis.totals.finalLedgersAssembled, 10);
+assert.equal(analysis.totals.finalLedgersAssembled, 4);
 assert.equal(analysis.totals.modelContextsThisStage, 0);
 assert.equal(analysis.totals.paidServiceCallsThisStage, 0);
 assert.equal(analysis.totals.calculatedScores, 0);
@@ -157,7 +157,7 @@ console.log(
   JSON.stringify(
     {
       status: "passed-frozen",
-      debates: 10,
+      debates: 4,
       finalMoves: storedLedger.audit.finalMoves,
       disputedMoves: storedLedger.audit.disputedMoves,
       candidateSelections: storedLedger.audit.candidateSelections,

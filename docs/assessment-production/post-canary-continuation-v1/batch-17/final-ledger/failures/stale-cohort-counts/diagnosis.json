@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-final-ledger-derived-control-diagnosis",
+  "status": "diagnosed-exact-deterministic-correction-authorized",
+  "batchNumber": 17,
+  "failure": {
+    "ledgerAssemblyValidationPassed": true,
+    "analysisGateFailed": true,
+    "testFailed": true,
+    "cause": "Two derived control assertions retained the ten-debate Batch 16 cohort size after Batch 17 was correctly shortened to four debates."
+  },
+  "preservation": {
+    "failedAnalysis": "analysis.failed.json",
+    "originalManifest": "final-ledger-manifest.original.json",
+    "acceptedAdjudicationFieldsChanged": false,
+    "finalLedgerFieldsChanged": false,
+    "calculatedScoresCreated": false
+  },
+  "correction": {
+    "type": "exact-derived-control-count-repair",
+    "oldCohortSize": 10,
+    "newCohortSize": 4,
+    "scripts": [
+      "scripts/analyze-assessment-production-post-canary-batch-17-final-ledger.mjs",
+      "scripts/test-assessment-production-post-canary-batch-17-final-ledger.mjs"
+    ],
+    "manifestSourceHashesRequireDeterministicRefresh": true
+  }
+}
