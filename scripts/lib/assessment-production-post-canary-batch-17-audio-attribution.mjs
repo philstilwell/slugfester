@@ -83,7 +83,6 @@ export function makeSchema(packet) {
     },
   };
 }
-
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 
 export async function validateOutput(output, packet) {
@@ -133,4 +132,3 @@ export async function validateOutput(output, packet) {
     calculatedFields: 0,
   };
 }
-
