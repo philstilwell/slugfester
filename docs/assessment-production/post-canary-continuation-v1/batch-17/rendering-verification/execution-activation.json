@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-rendering-activation",
+  "protocolId": "assessment-production-post-canary-batch-17-rendering-verification",
+  "status": "frozen-post-canary-batch-17-rendering-verification-authorized",
+  "authorizedAt": "2026-08-28T18:06:39Z",
+  "activationCommit": "583e9907406f5025fadd88d62eb56aa2a2e0da15",
+  "productionCanary": false,
+  "batchNumber": 17,
+  "stagingOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/preparation-manifest.json",
+    "sha256": "3c265a246d4f1d63b96c3aee1fe4a269cdc014da8b7f75bd7958cbe82e979c54"
+  },
+  "executionNavigation": {
+    "algorithm": "sha256-utf8-canonical-json",
+    "input": {
+      "protocolId": "assessment-production-post-canary-batch-17-rendering-verification",
+      "authorizedAt": "2026-08-28T18:06:39Z",
+      "activationCommit": "583e9907406f5025fadd88d62eb56aa2a2e0da15",
+      "preparationSha256": "3c265a246d4f1d63b96c3aee1fe4a269cdc014da8b7f75bd7958cbe82e979c54"
+    },
+    "token": "3f51ab77b6d2b4a2d3fe45e68f99ff168fa8f782550a8ca0b392f62a11a2a0cf",
+    "tokenPattern": "^[a-f0-9]{64}$",
+    "queryKeys": {
+      "token": "renderingExecution",
+      "viewport": "renderingViewport"
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/analysis.json": "c16c4f7f7d4fae99013e48fc466e4ed5137ceb2aba09db56fbb543babcd79c72",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/execution-activation.json": "62fb45ca943fb38d57666bb7d14a8e02d12aea0bcb8dc0d3780dc64d9f8698b1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/execution.json": "dd9ec2df67d2c27abc9fe54e82ea505d8c7aef9b4038c8abc49cf8944cd0e7aa",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/finalization-audit.json": "7a4c5234959e1b5dcee00923b9cb109751b3429fce058d30181672185fad4a04",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/final-candidates/debate-171.json": "9c3131731679f15664f7c287c5687826e909a76df3a68216c3ae8917465136ef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/final-candidates/debate-44.json": "9e286e0b325f7d9bf38584f18c366a3d7ed2b347fa80c558020874e355b5fa31",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/final-candidates/debate-62.json": "58fa0145688d20af7b58733e6f1b99caf5878b603ce483350848b309423504c3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/final-candidates/debate-77.json": "378e70a22c4574d58c21e5142ae0ab7279c990b50f907b817bc2c5d34e49091b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/previews/index.html": "57d6cc2a0aa637891cecdc0b2a30584b676f3c09dba3bc4ed285645f531fda81",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/provenance/debate-171.json": "d4d6ad1406a4b1a3b025dd8b99c51698518ee50fcdd4a2799a8e45a7e7340c70",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/provenance/debate-44.json": "4947c8ad0509dd60b92f024de5b747a0238b7bdac5ee9b11eea5961111aa97ae",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/provenance/debate-62.json": "202d2787aa9434f4c7f87d49ec795292e85837812a4009e40f3b484eaae48587",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/provenance/debate-77.json": "f17fd6caa1c9d1430c4792f44481ebd7907ef7cadab288aab4360ae51d719067",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/preparation-manifest.json": "25cd4722c26939ef05dd4895b13623e48d1eac7239f759e352a34b22c7f6cbf3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/standing-authorization.json": "ab1aec0b0babaf795803d155ccc50093101d049a534918a94683dcd2d97e4054",
+    "scripts/activate-assessment-production-post-canary-batch-17-rendering-verification.mjs": "3fc9af4f44458d20c33b536d7a801da473a992b2e4399379dfc65a623949603d",
+    "scripts/finalize-assessment-production-post-canary-batch-17-rendering-verification.mjs": "86d0cc99af6123aaf71b51bad146db5c4d67ce1315ae2f54ccbda5373c14ea8c",
+    "scripts/lib/assessment-production-post-canary-batch-17-publication-finalization.mjs": "8d6248dc676e1eec828cbf797452f134fbc9d79f9d070315e7ee3250a8a1f4da",
+    "scripts/lib/assessment-production-post-canary-batch-17-rendering-verification.mjs": "45de82c2c3a604c9bcbdcb886d80b572f5b37a6b5a6ca1af45b238671f1e8dfd",
+    "scripts/lib/assessment-production-post-canary-batch-17-standing-authorization.mjs": "ac7e424de27752c325a9a1a0a117a845284c7a72e7afb1c83616f5624851c124",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-post-canary-batch-17-rendering-verification.mjs": "94985f7c6189082a41d6a8fd4053b0a050e7e53ac3d588d624cbe62620a10d93",
+    "scripts/run-assessment-production-post-canary-batch-17-rendering-verification.mjs": "092647600d0644afe2715690c1d4b3d880e388045c1aa2d40e9b2fe8e4bf4156",
+    "scripts/test-assessment-production-post-canary-batch-17-rendering-verification-preparation.mjs": "6c7b2614b2b77f7eae90eb23e2bcb250a47d7a2d7202c2af511f3ee79f825fa5",
+    "src/app.js": "69a73bc72a978e69a314f5bb59d5450246028a819bea313d1783719bdb9905fd",
+    "src/styles.css": "f779986bd1e85019a7d1f7b69622ce517dce85a5bd4d8ed7415d65cff81244cf",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/rendering-preview/index.html": "878c6e717f90899999ff22141680eca8144d3f31ee3151b3d535132d041864cc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/compatibility-analysis.json": "1a0c199a54beb78f672d1794722f9958dee187e487943edba8718b9b8be0d06e"
+  },
+  "toolHashes": {
+    "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh": "aa3fdff5d0e4556177f4dfd5f04117e772aa54f94b6a2e34b6c0edf629c6b9b5",
+    "/opt/homebrew/bin/magick": "3d794ccdf588ebd32a0a48a33b56cd753616341947e52907b5f31c61f47beb78"
+  },
+  "packetHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/packets/debate-77.json": "087908faeb6e2e56dc51114c0b13351e4f301f61aff8cb1a23b84a8659acc07e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/packets/debate-44.json": "f8be27306ad64432ff0b2fc17b979a1f29fd46ae7910c2e218f86d3f65692f43",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/packets/debate-171.json": "9231f55417b0b0a967e7a717af3dd20c93408e530ffaaf09a903afea7af5c131",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/packets/debate-62.json": "154f3861e12be47e7e7638ac2a2484a6417c3823a56549094dd5b171535187a3"
+  },
+  "browserPlan": {
+    "controller": "playwright-cli",
+    "browserFamily": "Chromium",
+    "sessionName": "batch17-rendering",
+    "port": 4212,
+    "explicitViewportOrder": [
+      "desktop",
+      "mobile"
+    ],
+    "oneFreshPagePerViewport": true,
+    "attemptsPerViewport": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000,
+    "initialSnapshotRequired": true
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "explicitOrder": [
+    "77",
+    "44",
+    "171",
+    "62"
+  ],
+  "requiredChecks": [
+    "exactViewport",
+    "noHorizontalOverflow",
+    "bylineExact",
+    "stagingBannerExact",
+    "overallHeadingPresent",
+    "aiExtensionImmediatelyFollowsOverall",
+    "aiContributionIdentified",
+    "prohibitedTextAbsent",
+    "visuallyDistinctAiExtension",
+    "nativeDetailsElement",
+    "defaultCollapsed",
+    "strengthenedFinalArgumentsBothSides",
+    "newArgumentsBothSides",
+    "pointerOpened",
+    "enterOpened",
+    "spaceClosed",
+    "collapsedScreenshotValid",
+    "openScreenshotValid",
+    "collapsedOpenScreenshotsDiffer",
+    "noConsoleErrors",
+    "noPageErrors",
+    "noFailedRequests"
+  ],
+  "gateExpectations": {
+    "debates": 4,
+    "sections": 21,
+    "moves": 79,
+    "viewportResults": 8,
+    "screenshots": 16,
+    "requiredBooleanChecks": 176,
+    "runtimeFailures": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failurePolicy": {
+    "stopOnFirstViewportFailure": true,
+    "preserveOnlyPassingEvidence": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "automaticRepair": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/analysis.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/rendering-audit.json",
+    "evidenceRoot": "docs/assessment-production/post-canary-continuation-v1/batch-17/rendering-verification/evidence",
+    "screenshotRoot": "output/playwright/batch-17-rendering",
+    "preview": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/output-bundle/rendering-preview/index.html",
+    "compatibilityBoundary": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-finalization/compatibility-analysis.json"
+  },
+  "authorization": {
+    "renderingVerification": true,
+    "attemptsPerViewport": 1,
+    "retry": false,
+    "timeoutExtension": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-frozen-batch-17-rendering-verification"
+}
