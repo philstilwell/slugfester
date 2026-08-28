@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-audio-attribution-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-audio-attribution-recovery",
+  "debateNumber": "144",
+  "debateId": "plantinga-dennett-evolution-naturalism-2018",
+  "speakerRoster": {
+    "pro": "Alvin Plantinga",
+    "con": "Daniel Dennett",
+    "substantiveSpeakerCount": 2
+  },
+  "move": {
+    "moveId": "pro-guidance-no-added-ontological-cost",
+    "expectedSpeaker": "Alvin Plantinga",
+    "proposition": "Within a theistic framework that already includes God, guided evolution adds no further entity and therefore gains no decisive simplicity disadvantage relative to unguided evolution.",
+    "sourceSpan": {
+      "startEvent": 638,
+      "endEvent": 821
+    },
+    "deterministicEvidence": {
+      "status": "unresolved",
+      "expectedSpeaker": "Alvin Plantinga",
+      "fullClipExcerptRecall": 1,
+      "expectedSpeakerExcerptRecall": 0.75,
+      "highestOtherSpeaker": "Daniel Dennett",
+      "highestOtherSpeakerExcerptRecall": 0.90625,
+      "expectedSpeakerRecallMargin": -0.15625,
+      "expectedSpeakerDurationSeconds": 166.6,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": false,
+        "expectedSpeakerRecallDistinct": false,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Daniel Dennett",
+          "segmentCount": 48,
+          "durationSeconds": 187.45,
+          "wordCount": 561,
+          "excerptRecall": 0.90625
+        },
+        {
+          "speaker": "Alvin Plantinga",
+          "segmentCount": 40,
+          "durationSeconds": 166.6,
+          "wordCount": 473,
+          "excerptRecall": 0.75
+        }
+      ]
+    },
+    "diarizedTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-144/transcripts/pro-guidance-no-added-ontological-cost.transcript.json",
+    "diarizedTranscriptSha256": "7592d4b458bcfcdf3bf808e1a157f93774a3a43c049ae46f08c1663fd163e96c"
+  },
+  "evidenceBoundary": {
+    "soleUnavailableField": true,
+    "rawAudioDerivedDiarizedTranscriptRequired": true,
+    "lockedPropositionAndSpanVisible": true,
+    "deterministicFailureVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresNonemptyAudioDerivedSegmentEvidence": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "rawSpeakerRelabelingAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "manualOverrideAuthorized": false
+  }
+}

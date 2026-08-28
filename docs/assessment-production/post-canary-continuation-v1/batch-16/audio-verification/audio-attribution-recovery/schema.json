@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-16-audio-attribution-debate-144",
+  "title": "Slugfester Batch 16 isolated audio-attribution recovery for Debate 144",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "isolation",
+    "adjudication",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-16-audio-attribution-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-16-audio-attribution-recovery"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "144"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "plantinga-dennett-evolution-naturalism-2018"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "isolated-audio-attribution-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ratingsUnavailable",
+        "scoresUnavailable",
+        "legacyUnavailable",
+        "otherDebatesUnavailable",
+        "publicationProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "ratingsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "publicationProseUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "moveId",
+        "expectedSpeaker",
+        "status",
+        "authoringSpeaker",
+        "corePropositionAuthoredByExpectedSpeaker",
+        "mixedSpeakerSpan",
+        "identityResolution",
+        "evidenceSegmentIndexes",
+        "confidence",
+        "rationale"
+      ],
+      "properties": {
+        "moveId": {
+          "type": "string",
+          "const": "pro-guidance-no-added-ontological-cost"
+        },
+        "expectedSpeaker": {
+          "type": "string",
+          "const": "Alvin Plantinga"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "unresolved"
+          ]
+        },
+        "authoringSpeaker": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "corePropositionAuthoredByExpectedSpeaker": {
+          "type": "boolean"
+        },
+        "mixedSpeakerSpan": {
+          "type": "boolean"
+        },
+        "identityResolution": {
+          "type": "string",
+          "enum": [
+            "named-label",
+            "generic-label-dialogue-mapping",
+            "unresolved"
+          ]
+        },
+        "evidenceSegmentIndexes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 1600
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "soleUnavailableFieldReviewed",
+        "rawAudioDerivedSegmentsNotAltered",
+        "acceptedAudioFieldsAltered",
+        "calculatedScoreFieldsEmitted",
+        "thresholdRelaxationUsed",
+        "speakerRelabelingUsed",
+        "manualOverrideUsed",
+        "paidTranscriptionUsed"
+      ],
+      "properties": {
+        "soleUnavailableFieldReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "rawAudioDerivedSegmentsNotAltered": {
+          "type": "boolean",
+          "const": true
+        },
+        "acceptedAudioFieldsAltered": {
+          "type": "boolean",
+          "const": false
+        },
+        "calculatedScoreFieldsEmitted": {
+          "type": "boolean",
+          "const": false
+        },
+        "thresholdRelaxationUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "speakerRelabelingUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "manualOverrideUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "paidTranscriptionUsed": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-audio-attribution-recovery-authorization",
+  "protocolId": "assessment-production-post-canary-batch-16-audio-attribution-recovery",
+  "status": "frozen-active-batch-16-debate-144-audio-attribution-recovery-authorization",
+  "authorizedAt": "2026-08-28T11:09:20Z",
+  "checkpointCommit": "0726245428b597369aa7335f20d844c56b3cd90d",
+  "batchNumber": 16,
+  "preservedGate": {
+    "verified": 9,
+    "unresolved": 1,
+    "paidCostUsd": 0.45347,
+    "originalOrRecoveredEvidenceChanged": false
+  },
+  "recovery": {
+    "field": "144:pro-guidance-no-added-ontological-cost",
+    "contextsInitiallyAuthorized": 1,
+    "secondFreshContextOnlyIfFirstInvalidOrUnresolved": true,
+    "contextsMaximum": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "fieldDisjoint": true,
+    "acceptedFieldsMutable": false,
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "directIncrementalCostUsdMaximum": 0
+    },
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "packetPreparation": true,
+    "modelExecutionAfterSeparateActivation": true,
+    "deterministicValidation": true,
+    "combinedAudioGateAssembly": true,
+    "resumeStandingAuthorizationAfterPassingGate": true,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
