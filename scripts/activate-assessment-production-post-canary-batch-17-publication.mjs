@@ -94,7 +94,7 @@ const activation = {
     instruction:
       "The frozen Batch 17 standing authorization permits activation and execution of exactly the four frozen score-locked publication contexts using 5.6 Sol with low reasoning effort through ChatGPT subscription, the frozen 1→2 scheduler, one attempt per context, and no retries.",
     directIncrementalCostUsdMaximum: 0,
-    publicationModelContexts: 10,
+    publicationModelContexts: 4,
     attemptsPerContext: 1,
     retriesMaximum: 0,
     repairPacketPreparation: false,
