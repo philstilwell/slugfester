@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-15-audio-cost-control-analysis",
+  "protocolId": "assessment-production-post-canary-batch-15-decomposed-consensus",
+  "status": "audio-attribution-unresolved-usage-derived-cost-within-approved-cap",
+  "analyzedAt": "2026-08-28T01:07:25.526Z",
+  "productionCanary": false,
+  "batchNumber": 15,
+  "stagingOnly": true,
+  "audioAttributionGate": {
+    "passed": false,
+    "executionComplete": true,
+    "verified": 1,
+    "unresolved": 2,
+    "resultPreserved": true,
+    "resultPath": "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/analysis.json",
+    "resultSha256": "6148aa9385cdf69e95a76129016cfd4b2bdaeef6f5802985dd78a551457d49c4"
+  },
+  "pricing": {
+    "provider": "OpenAI",
+    "model": "gpt-4o-transcribe-diarize",
+    "officialPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricingCheckedAt": "2026-08-26",
+    "inputRatePerMillionUsd": 2.5,
+    "outputRatePerMillionUsd": 10,
+    "billingBasis": "returned-token-usage-times-frozen-official-model-rates",
+    "actualInvoiceChargeAvailable": false,
+    "usageDerivedEstimateNotInvoice": true
+  },
+  "costControl": {
+    "originalDurationOnlyPlanningEstimateUsd": 0.027076,
+    "authorizedDurationOnlyPlanningEstimateUsd": 0.027076,
+    "usageDerivedPlanningEstimateUsd": 0.0988975,
+    "approvedMaximumCostUsd": 1,
+    "usageDerivedEstimatedCostUsd": 0.1002925,
+    "estimateDifferenceUsd": 0.0013950000000000073,
+    "amountAboveApprovedCapUsd": -0.8997075,
+    "approvedCapExceeded": false,
+    "allCompletedUsageRecorded": true,
+    "requestFailure": false,
+    "costCapReachedOrExceededDuringExecution": false,
+    "stopReason": null,
+    "noFurtherPaidCallsAfterExecution": true,
+    "directIncrementalCostCapControlPassed": true
+  },
+  "calls": [
+    {
+      "debateNumber": "39",
+      "moveId": "pro-exodus-minimal-migration",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-39/transcripts/pro-exodus-minimal-migration.transcript.json",
+      "transcriptSha256": "42d8c8be3417de0c93d13fa1d56b0916673813219b6f1ac36164b3c12b50ae7f",
+      "inputTokens": 3589,
+      "audioInputTokens": 3313,
+      "textInputTokens": 276,
+      "outputTokens": 5081,
+      "totalTokens": 8670,
+      "inputCostUsd": 0.008972500000000001,
+      "outputCostUsd": 0.050809999999999994,
+      "usageDerivedEstimatedCostUsd": 0.059782499999999995
+    },
+    {
+      "debateNumber": "159",
+      "moveId": "con-dispute-determinism-rationality-link",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-159/transcripts/con-dispute-determinism-rationality-link.transcript.json",
+      "transcriptSha256": "d172a187afce35803e08fdfbed2d8a6918774ebe94799c26b455fa61ecda2716",
+      "inputTokens": 981,
+      "audioInputTokens": 909,
+      "textInputTokens": 72,
+      "outputTokens": 1400,
+      "totalTokens": 2381,
+      "inputCostUsd": 0.0024525000000000003,
+      "outputCostUsd": 0.014,
+      "usageDerivedEstimatedCostUsd": 0.016452500000000002
+    },
+    {
+      "debateNumber": "98",
+      "moveId": "con-possibility-feasibility-gap",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-98/transcripts/con-possibility-feasibility-gap.transcript.json",
+      "transcriptSha256": "6347e19d3244d24e78095883ff3173e1f51eac47ac5d3892174a22bf8092b894",
+      "inputTokens": 1255,
+      "audioInputTokens": 1180,
+      "textInputTokens": 75,
+      "outputTokens": 2092,
+      "totalTokens": 3347,
+      "inputCostUsd": 0.0031375,
+      "outputCostUsd": 0.02092,
+      "usageDerivedEstimatedCostUsd": 0.024057500000000002
+    }
+  ],
+  "totals": {
+    "inputTokens": 5825,
+    "audioInputTokens": 5402,
+    "textInputTokens": 423,
+    "outputTokens": 8573,
+    "totalTokens": 14398,
+    "usageDerivedEstimatedCostUsd": 0.1002925
+  },
+  "executionBoundary": {
+    "paidCallsAddedByCostAnalysis": 0,
+    "modelCallsAddedByCostAnalysis": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0
+  },
+  "workflowDisposition": {
+    "deterministicAudioAttributionResultInvalidated": false,
+    "downstreamWorkflowBlocked": true,
+    "userReviewRequired": true
+  },
+  "authorization": {
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/execution-preparation-manifest.json": "2b7425ab3350416e7e4b5a65e2ca3bdece4dd2f3b19b4f8b38d36baa30fcde5d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/execution-manifest.json": "76efb0c3f28b45ba56ec0076e2c3fa839050a497536e4a52f9e05f69ac097d83",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/model-execution.json": "33e8e9f21c1d7e34e0bf8274a9c2ba0d9dc18477e961504f026d74d24cfd572f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/audio-verification.json": "15363e16e49b58469410c27e09893037a48358a856149fba92165345fde933b3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-15/audio-verification/analysis.json": "6148aa9385cdf69e95a76129016cfd4b2bdaeef6f5802985dd78a551457d49c4",
+    "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-39/transcripts/pro-exodus-minimal-migration.transcript.json": "42d8c8be3417de0c93d13fa1d56b0916673813219b6f1ac36164b3c12b50ae7f",
+    "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-159/transcripts/con-dispute-determinism-rationality-link.transcript.json": "d172a187afce35803e08fdfbed2d8a6918774ebe94799c26b455fa61ecda2716",
+    "output/transcribe/assessment-production-post-canary-batch-15-audio-verification/debate-98/transcripts/con-possibility-feasibility-gap.transcript.json": "6347e19d3244d24e78095883ff3173e1f51eac47ac5d3892174a22bf8092b894",
+    "scripts/assessment-production-post-canary-batch-15-audio-verification-stage.mjs": "02a7d20c5fc05ea2d952e061b70c18524e53c3ea3596f0ec391d84b7f084684c",
+    "scripts/lib/assessment-production-post-canary-batch-15-standing-authorization.mjs": "406d1ab50ca42de5f0412a96e617dec18c431f235ea5ab858e5383d215399bc1",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  },
+  "nextAuthorizedAction": "standing-authorization-stop-new-approval-required-before-batch-15-audio-verification-failure-diagnosis"
+}
