@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-compatibility-execution",
+  "protocolId": "assessment-production-post-canary-batch-17-production-compatibility",
+  "status": "batch-17-route-score-checkpoint-batch-01-through-batch-16-legacy-reference-validation-passed",
+  "startedAt": "2026-08-28T18:09:16.653Z",
+  "completedAt": "2026-08-28T18:09:23.314Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/execution-activation.json",
+    "sha256": "a180425484f4a9feb7ef95fbdbc56ec0c89f189b524a2976e90d78aa544b848b"
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "c97a37fc34ccdaf708f0a1a040d44c382468e20f278a9df1c7f545bd7802e3b8",
+    "appliedSha256": "052b01cffe2e9e43fb2e8b7ef7a8a3f2a5d165f2e3f8681929125b27fd6278a2",
+    "expectedSha256": "052b01cffe2e9e43fb2e8b7ef7a8a3f2a5d165f2e3f8681929125b27fd6278a2",
+    "exactActivatedOutput": true
+  },
+  "stagedArtifacts": [
+    {
+      "debateNumber": "77",
+      "debateId": "feser-oppy-arguments-for-god-2020",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/feser-oppy-arguments-for-god-2020.json",
+      "bytes": 105746,
+      "sha256": "729ac78bc62930a2ee2b7484e2c00abb3efb3b75b4c0eb0960a034df36975c7f",
+      "sections": 5,
+      "moves": 18
+    },
+    {
+      "debateNumber": "44",
+      "debateId": "oconnor-biddle-free-will-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/oconnor-biddle-free-will-2025.json",
+      "bytes": 115245,
+      "sha256": "fb36aac82682b7209ea84e5784a38dc4180d66249fcd27c28e71150ded5d6655",
+      "sections": 5,
+      "moves": 19
+    },
+    {
+      "debateNumber": "171",
+      "debateId": "hitchens-blair-religion-force-good-2010",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/hitchens-blair-religion-force-good-2010.json",
+      "bytes": 130216,
+      "sha256": "d45ff95f9ad59ed8d8764ebd893c4af18f819b5fb91358509c4beaa1337404d2",
+      "sections": 6,
+      "moves": 22
+    },
+    {
+      "debateNumber": "62",
+      "debateId": "pageau-folley-logos-meaning-resurrection-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/pageau-folley-logos-meaning-resurrection-2026.json",
+      "bytes": 117525,
+      "sha256": "4d799df76b438f99722ef64fd4c54a9e071056e10759e3548f619401b18d45cf",
+      "sections": 5,
+      "moves": 20
+    }
+  ],
+  "tests": [
+    {
+      "name": "batch-17-route-positive-negative-controls",
+      "command": "/opt/homebrew/Cellar/node/25.9.0_3/bin/node scripts/test-assessment-production-post-canary-batch-17-compatibility-execution.mjs",
+      "startedAt": "2026-08-28T18:09:16.685Z",
+      "completedAt": "2026-08-28T18:09:17.192Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdoutBytes": 394,
+      "stdoutSha256": "d0a42e159d07f5f2a053959f84228fd97611592a12e6cc8da2202cbbd88efaf7",
+      "stdoutTail": "Validated 195 debates.\n{\n  \"status\": \"passed\",\n  \"debates\": 4,\n  \"sections\": 21,\n  \"moves\": 79,\n  \"oneSidedDisplayRows\": 5,\n  \"emptyReferenceLinks\": 14,\n  \"suppliedReferenceLinks\": 6,\n  \"positiveRoutes\": 4,\n  \"negativeControls\": 16,\n  \"existingAdapterRoutesPreserved\": 17,\n  \"modelContexts\": 0,\n  \"paidServiceCalls\": 0,\n  \"directIncrementalCostUsd\": 0,\n  \"productionMutationPerformed\": false\n}\n",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrTail": "",
+      "passed": true
+    },
+    {
+      "name": "checkpoint-batch-01-through-batch-16-legacy-reference-regression",
+      "command": "/opt/homebrew/Cellar/node/25.9.0_3/bin/node scripts/validate-debates.mjs",
+      "startedAt": "2026-08-28T18:09:17.192Z",
+      "completedAt": "2026-08-28T18:09:17.535Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdoutBytes": 23,
+      "stdoutSha256": "7b9d8e835d5f81930501da5816db3498e0f1da0a287ad217e0edc872e059dd81",
+      "stdoutTail": "Validated 195 debates.\n",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrTail": "",
+      "passed": true
+    },
+    {
+      "name": "full-repository-regression",
+      "command": "npm run check",
+      "startedAt": "2026-08-28T18:09:17.535Z",
+      "completedAt": "2026-08-28T18:09:23.150Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdoutBytes": 13550,
+      "stdoutSha256": "537e26fdcf032194405aa228f02112cb7a8e8259f6dddf4707a0a49766b41716",
+      "stdoutTail": "ha256\": \"771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699\"\n    },\n    {\n      \"debateId\": \"dennett-caruso-free-will-responsibility-2021\",\n      \"videoId\": \"AxhA7S3q49o\",\n      \"sourceType\": \"auto-captions\",\n      \"wordCount\": 22811,\n      \"eventCount\": 3514,\n      \"transcriptSha256\": \"bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b\",\n      \"eventsSha256\": \"b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e\",\n      \"manifestSha256\": \"566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a\"\n    }\n  ]\n}\n{\n  \"status\": \"passed\",\n  \"caseCount\": 15,\n  \"disputedFieldCount\": 24,\n  \"derivedExampleCount\": 15,\n  \"heldOutContamination\": 0\n}\n{\n  \"status\": \"passed\",\n  \"caseCount\": 15,\n  \"intentionalContactRevisions\": [\n    \"173:173-m11\",\n    \"192:m08\"\n  ],\n  \"sourceSha256\": \"e009e3eb8112ccccc982178ccf565afaa58cb1a6cae1f44fb967be999b6b82e3\",\n  \"examplesSha256\": \"61470975c752fa967c3040e1758c9d18350bc13cceb49e717a06f7fe25eecc95\",\n  \"schemaSha256\": \"9387f7011f5a7bd4de529e186b5fb3b028d1a8ee2d06c63cd2bb1024daa2edb9\"\n}\n{\n  \"status\": \"passed\",\n  \"assertions\": 12\n}\n{\n  \"status\": \"passed\",\n  \"write\": false,\n  \"replayCount\": 3,\n  \"stableMoveCount\": 36,\n  \"burdenDerivationRegressions\": 0,\n  \"reframeDerivationRegressions\": 0\n}\nValidated locked debate page design.\nValidated 380 SEO files.\n{\n  \"status\": \"passed\",\n  \"gateManifestImmutable\": true,\n  \"selectedDebates\": [\n    {\n      \"debateId\": \"woodford-edwards-rational-belief-god-2023\",\n      \"number\": \"103\"\n    },\n    {\n      \"debateId\": \"craig-malpass-kalam-nothing-2026\",\n      \"number\": \"55\"\n    },\n    {\n      \"debateId\": \"craig-millican-does-god-exist-2011\",\n      \"number\": \"161\"\n    }\n  ],\n  \"localTranscriptChainsPresent\": 3,\n  \"sourceAccessAuthorized\": true,\n  \"sourcePreparationAuthorized\": true,\n  \"classificationPassesAuthorized\": false,\n  \"numericalScoringAuthorized\": false,\n  \"assessmentProseAuthorized\": false,\n  \"productionMutationAuthorized\": false,\n  \"maximumMeteredCostUsd\": 0\n}\n",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrTail": "",
+      "passed": true
+    },
+    {
+      "name": "repository-diff-integrity",
+      "command": "git diff --check",
+      "startedAt": "2026-08-28T18:09:23.150Z",
+      "completedAt": "2026-08-28T18:09:23.189Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdoutBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdoutTail": "",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrTail": "",
+      "passed": true
+    }
+  ],
+  "writeAudit": {
+    "changedTracked": [
+      "scripts/validate-debates.mjs"
+    ],
+    "untrackedBeforeExecutionRecords": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/feser-oppy-arguments-for-god-2020.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/hitchens-blair-religion-force-good-2010.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/oconnor-biddle-free-will-2025.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-17/production-compatibility/output-bundle/staged-ledgers/pageau-folley-logos-meaning-resurrection-2026.json"
+    ],
+    "unexpectedTracked": [],
+    "unexpectedUntracked": [],
+    "allowedWritesOnly": true,
+    "productionProtected": true
+  },
+  "regressions": {
+    "batch17RouteControlsPassed": true,
+    "checkpointBatch01ThroughBatch16LegacyReferencePassed": true,
+    "fullRepositoryPassed": true,
+    "diffIntegrityPassed": true
+  },
+  "totals": {
+    "debates": 4,
+    "sections": 21,
+    "moves": 79,
+    "overallScores": 8,
+    "stagedAdapters": 4,
+    "stagedAdapterBytes": 468732,
+    "compatibilityPassesAttempted": 1,
+    "compatibilityPassesCompleted": 1,
+    "reruns": 0,
+    "retries": 0,
+    "automaticRepairs": 0,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionLedgerPublications": 0,
+    "productionMutations": 0,
+    "compatibilityAcceptancePassed": true
+  },
+  "authorization": {
+    "compatibilityExecution": true,
+    "compatibilityRerun": false,
+    "validatorRewrite": false,
+    "packetRewrite": false,
+    "stagedAdapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-17-production-publication-mutation-manifest-under-standing-authorization"
+}
