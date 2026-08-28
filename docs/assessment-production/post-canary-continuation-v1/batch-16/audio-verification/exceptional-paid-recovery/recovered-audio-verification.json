@@ -1,0 +1,687 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-exceptional-recovered-audio-verification",
+  "status": "batch-16-paid-audio-recovery-passed-one-preserved-attribution-decision-pending",
+  "batchNumber": 16,
+  "preservedOriginalVerifiedMoves": 5,
+  "preservedOriginalUnresolvedCompletedMove": 1,
+  "debates": [
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "moves": [
+        {
+          "debateNumber": "108",
+          "debateId": "ward-ruse-mind-consciousness-god-2013",
+          "moveId": "con-explanatory-gap-does-not-support-god",
+          "expectedSpeaker": "Michael Ruse",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Michael Ruse",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-explanatory-gap-does-not-support-god.mp3",
+            "sha256": "f20556a5741c55d02ae824a1ce2bc3a43042610a5fab34d12b29ec429abb4bc0",
+            "durationSeconds": 109.32
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/transcripts/con-explanatory-gap-does-not-support-god.transcript.json",
+            "sha256": "33003e2de410a3e64dea2184dbbf1d10ecd2ca77edab1e8ec375170a741482cb",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michael Ruse",
+            "fullClipExcerptRecall": 0.9382716049382716,
+            "expectedSpeakerExcerptRecall": 0.9382716049382716,
+            "highestOtherSpeaker": "Keith Ward",
+            "highestOtherSpeakerExcerptRecall": 0.08641975308641975,
+            "expectedSpeakerRecallMargin": 0.8518518518518519,
+            "expectedSpeakerDurationSeconds": 97.4,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michael Ruse",
+                "segmentCount": 15,
+                "durationSeconds": 97.4,
+                "wordCount": 270,
+                "excerptRecall": 0.9382716049382716
+              },
+              {
+                "speaker": "Keith Ward",
+                "segmentCount": 2,
+                "durationSeconds": 5.15,
+                "wordCount": 20,
+                "excerptRecall": 0.08641975308641975
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 3.2,
+                "wordCount": 10,
+                "excerptRecall": 0.04938271604938271
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "108",
+          "debateId": "ward-ruse-mind-consciousness-god-2013",
+          "moveId": "pro-causal-link-not-mental-identity",
+          "expectedSpeaker": "Keith Ward",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Keith Ward",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/pro-causal-link-not-mental-identity.mp3",
+            "sha256": "1434cca22562012f4d6a34ee3ed7e302d3297800d419415e04db1c3b6b603b57",
+            "durationSeconds": 43.88
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/transcripts/pro-causal-link-not-mental-identity.transcript.json",
+            "sha256": "a2483a93413822038372e515d50d772c4ffac70398d865a5b1829feae96fd697",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Keith Ward",
+            "fullClipExcerptRecall": 0.9861111111111112,
+            "expectedSpeakerExcerptRecall": 0.9722222222222222,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.125,
+            "expectedSpeakerRecallMargin": 0.8472222222222222,
+            "expectedSpeakerDurationSeconds": 36.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Keith Ward",
+                "segmentCount": 6,
+                "durationSeconds": 36.9,
+                "wordCount": 130,
+                "excerptRecall": 0.9722222222222222
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 6,
+                "durationSeconds": 6.8,
+                "wordCount": 34,
+                "excerptRecall": 0.125
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "108",
+          "debateId": "ward-ruse-mind-consciousness-god-2013",
+          "moveId": "pro-divine-intelligent-ground",
+          "expectedSpeaker": "Keith Ward",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Keith Ward",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/pro-divine-intelligent-ground.mp3",
+            "sha256": "8892f24235a905fadd7fec2186d728619bc5f7c85416acfee304ccb8fe2cd004",
+            "durationSeconds": 26.041
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/transcripts/pro-divine-intelligent-ground.transcript.json",
+            "sha256": "b5b172f877e9aeb167c3baaa41b7fc50c930763d720fecc45f8e07c5eff5b153",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Keith Ward",
+            "fullClipExcerptRecall": 0.9655172413793104,
+            "expectedSpeakerExcerptRecall": 0.896551724137931,
+            "highestOtherSpeaker": "Michael Ruse",
+            "highestOtherSpeakerExcerptRecall": 0.1724137931034483,
+            "expectedSpeakerRecallMargin": 0.7241379310344828,
+            "expectedSpeakerDurationSeconds": 18.3,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Keith Ward",
+                "segmentCount": 4,
+                "durationSeconds": 18.3,
+                "wordCount": 54,
+                "excerptRecall": 0.896551724137931
+              },
+              {
+                "speaker": "Michael Ruse",
+                "segmentCount": 2,
+                "durationSeconds": 6.6,
+                "wordCount": 24,
+                "excerptRecall": 0.1724137931034483
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "108",
+          "debateId": "ward-ruse-mind-consciousness-god-2013",
+          "moveId": "con-naturalized-diverse-religious-experience",
+          "expectedSpeaker": "Michael Ruse",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Michael Ruse",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-naturalized-diverse-religious-experience.mp3",
+            "sha256": "395211ddb090b2aa5b6a030a970c87909e7b086979fcef6bdae677b49fcb449b",
+            "durationSeconds": 95.96
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/transcripts/con-naturalized-diverse-religious-experience.transcript.json",
+            "sha256": "b9c49d7881005fa23fdee6eee8e8d724f68154df2deb1d48134c8a57d7f97708",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michael Ruse",
+            "fullClipExcerptRecall": 0.9558823529411765,
+            "expectedSpeakerExcerptRecall": 0.9558823529411765,
+            "highestOtherSpeaker": "Keith Ward",
+            "highestOtherSpeakerExcerptRecall": 0.08823529411764706,
+            "expectedSpeakerRecallMargin": 0.8676470588235294,
+            "expectedSpeakerDurationSeconds": 82.2,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michael Ruse",
+                "segmentCount": 18,
+                "durationSeconds": 82.2,
+                "wordCount": 243,
+                "excerptRecall": 0.9558823529411765
+              },
+              {
+                "speaker": "Keith Ward",
+                "segmentCount": 2,
+                "durationSeconds": 4,
+                "wordCount": 12,
+                "excerptRecall": 0.08823529411764706
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 3.2,
+                "wordCount": 7,
+                "excerptRecall": 0.014705882352941176
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "108",
+          "debateId": "ward-ruse-mind-consciousness-god-2013",
+          "moveId": "con-evolved-moral-obligation-without-god",
+          "expectedSpeaker": "Michael Ruse",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Michael Ruse",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/clips/con-evolved-moral-obligation-without-god.mp3",
+            "sha256": "29a81501d457e50d192fddd47e703b441461d113ecef695a5bef4898801e35b0",
+            "durationSeconds": 55.881
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-108/transcripts/con-evolved-moral-obligation-without-god.transcript.json",
+            "sha256": "f2bb1824947f83d9109519a6412c9e452dc355d276620fb49a60f40cdb4cc943",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michael Ruse",
+            "fullClipExcerptRecall": 0.9863013698630136,
+            "expectedSpeakerExcerptRecall": 0.9315068493150684,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.1917808219178082,
+            "expectedSpeakerRecallMargin": 0.7397260273972602,
+            "expectedSpeakerDurationSeconds": 43.3,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michael Ruse",
+                "segmentCount": 10,
+                "durationSeconds": 43.3,
+                "wordCount": 142,
+                "excerptRecall": 0.9315068493150684
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 6,
+                "durationSeconds": 7.65,
+                "wordCount": 31,
+                "excerptRecall": 0.1917808219178082
+              },
+              {
+                "speaker": "Keith Ward",
+                "segmentCount": 1,
+                "durationSeconds": 2.25,
+                "wordCount": 8,
+                "excerptRecall": 0.0684931506849315
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "144",
+      "debateId": "plantinga-dennett-evolution-naturalism-2018",
+      "moves": [
+        {
+          "debateNumber": "144",
+          "debateId": "plantinga-dennett-evolution-naturalism-2018",
+          "moveId": "pro-guidance-no-added-ontological-cost",
+          "expectedSpeaker": "Alvin Plantinga",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-144/clips/pro-guidance-no-added-ontological-cost.mp3",
+            "sha256": "e7c84837cb959a533c19a3ac588c06d77f97cf5a170e5e28cba85eaf5b0634ac",
+            "durationSeconds": 406.36
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-144/transcripts/pro-guidance-no-added-ontological-cost.transcript.json",
+            "sha256": "7592d4b458bcfcdf3bf808e1a157f93774a3a43c049ae46f08c1663fd163e96c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "validationOverlayApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Alvin Plantinga",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 0.75,
+            "highestOtherSpeaker": "Daniel Dennett",
+            "highestOtherSpeakerExcerptRecall": 0.90625,
+            "expectedSpeakerRecallMargin": -0.15625,
+            "expectedSpeakerDurationSeconds": 166.6,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Daniel Dennett",
+                "segmentCount": 48,
+                "durationSeconds": 187.45,
+                "wordCount": 561,
+                "excerptRecall": 0.90625
+              },
+              {
+                "speaker": "Alvin Plantinga",
+                "segmentCount": 40,
+                "durationSeconds": 166.6,
+                "wordCount": 473,
+                "excerptRecall": 0.75
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "76",
+      "debateId": "craig-oppy-mathematics-theism-2020",
+      "moves": [
+        {
+          "debateNumber": "76",
+          "debateId": "craig-oppy-mathematics-theism-2020",
+          "moveId": "con-failed-predictions-selection-effect",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Graham Oppy",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/clips/con-failed-predictions-selection-effect.mp3",
+            "sha256": "80c75b61a8e8d6ed115cfe93c5eabdb52a4e854578fd65add59c1df3b88822e6",
+            "durationSeconds": 206.351
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/transcripts/con-failed-predictions-selection-effect.exceptional-recovery.transcript.json",
+            "sha256": "e45c653ae52d95350c8966d9011ba986e1557bdb561d70f6e7e55801d8a0cddb",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "deterministicRecombinationApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "William Lane Craig",
+            "highestOtherSpeakerExcerptRecall": 0.015151515151515152,
+            "expectedSpeakerRecallMargin": 0.9848484848484849,
+            "expectedSpeakerDurationSeconds": 182.5,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 40,
+                "durationSeconds": 182.5,
+                "wordCount": 497,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 6,
+                "durationSeconds": 4.95,
+                "wordCount": 14,
+                "excerptRecall": 0.015151515151515152
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.1,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "76",
+          "debateId": "craig-oppy-mathematics-theism-2020",
+          "moveId": "con-denial-of-brute-contingency",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Graham Oppy",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/clips/con-denial-of-brute-contingency.mp3",
+            "sha256": "639f6df88c1fcdc638ab5cad3266eb5850c9b3d86871a05d5cb2274e7003ccb6",
+            "durationSeconds": 37.83
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-76/transcripts/con-denial-of-brute-contingency.exceptional-recovery.transcript.json",
+            "sha256": "b95892f782e18106a959c187cd10f49c6a5377f6666c7ef75b91cbf2d9c3774f",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "deterministicRecombinationApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.8970588235294118,
+            "expectedSpeakerExcerptRecall": 0.8529411764705882,
+            "highestOtherSpeaker": "William Lane Craig",
+            "highestOtherSpeakerExcerptRecall": 0.11764705882352941,
+            "expectedSpeakerRecallMargin": 0.7352941176470588,
+            "expectedSpeakerDurationSeconds": 27.7,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 6,
+                "durationSeconds": 27.7,
+                "wordCount": 74,
+                "excerptRecall": 0.8529411764705882
+              },
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 4,
+                "durationSeconds": 3,
+                "wordCount": 10,
+                "excerptRecall": 0.11764705882352941
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 3.55,
+                "wordCount": 16,
+                "excerptRecall": 0.058823529411764705
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "moves": [
+        {
+          "debateNumber": "92",
+          "debateId": "craig-malpass-universe-begin-exist-2020",
+          "moveId": "pro-metaphysical-not-logical-impossibility",
+          "expectedSpeaker": "William Lane Craig",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "William Lane Craig",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/clips/pro-metaphysical-not-logical-impossibility.mp3",
+            "sha256": "61aff1a084cc13b8bc47789c73ef5be844e2107573fd0c1a6370301314d8f51d",
+            "durationSeconds": 201.24
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/transcripts/pro-metaphysical-not-logical-impossibility.exceptional-recovery.transcript.json",
+            "sha256": "54d9a22e5f0e3fe88984c300646612f3113ebeb8021d3a8260bd8c0ba5e92d88",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "deterministicRecombinationApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "William Lane Craig",
+            "fullClipExcerptRecall": 0.9402985074626866,
+            "expectedSpeakerExcerptRecall": 0.9402985074626866,
+            "highestOtherSpeaker": "Alex Malpass",
+            "highestOtherSpeakerExcerptRecall": 0.05970149253731343,
+            "expectedSpeakerRecallMargin": 0.8805970149253732,
+            "expectedSpeakerDurationSeconds": 177.4,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "William Lane Craig",
+                "segmentCount": 35,
+                "durationSeconds": 177.4,
+                "wordCount": 447,
+                "excerptRecall": 0.9402985074626866
+              },
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 2,
+                "durationSeconds": 6.3,
+                "wordCount": 21,
+                "excerptRecall": 0.05970149253731343
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "92",
+          "debateId": "craig-malpass-universe-begin-exist-2020",
+          "moveId": "con-hotel-finite-creation-constraint",
+          "expectedSpeaker": "Alex Malpass",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Alex Malpass",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/clips/con-hotel-finite-creation-constraint.mp3",
+            "sha256": "87c0c5901a5b0393de386e5784071152dc59ca3f250dbccea88d2ca4301a6f65",
+            "durationSeconds": 125.88
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-16-audio-verification/debate-92/transcripts/con-hotel-finite-creation-constraint.exceptional-recovery.transcript.json",
+            "sha256": "a892addb4e277408e04acb23ec8c219186bcd748d92cfcde8c8f8a49c588dddd",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "deterministicRecombinationApplied": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex Malpass",
+            "fullClipExcerptRecall": 0.9295774647887324,
+            "expectedSpeakerExcerptRecall": 0.9295774647887324,
+            "highestOtherSpeaker": null,
+            "highestOtherSpeakerExcerptRecall": 0,
+            "expectedSpeakerRecallMargin": 0.9295774647887324,
+            "expectedSpeakerDurationSeconds": 119.1,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex Malpass",
+                "segmentCount": 17,
+                "durationSeconds": 119.1,
+                "wordCount": 375,
+                "excerptRecall": 0.9295774647887324
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "requiredMoves": 10,
+    "verified": 9,
+    "unresolved": 1,
+    "paidPrimaryAttemptsThisRecovery": 4,
+    "paidFallbackAttemptsThisRecovery": 0,
+    "originalUsageDerivedEstimatedCostUsd": 0.25615,
+    "additionalUsageDerivedEstimatedCostUsd": 0.19732,
+    "cumulativeUsageDerivedEstimatedCostUsd": 0.45347,
+    "capUsd": 1,
+    "capPassed": true,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "debate144AttributionRecoveryPreparation": true,
+    "disputeAdjudicationPreparation": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
