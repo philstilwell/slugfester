@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-publication-continuation-level-1-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-17-publication-continuation-level-1-one-field-recovery",
+  "status": "frozen-one-field-batch-17-publication-recovery-level-1-authorized",
+  "frozenAt": "2026-08-28T17:52:57Z",
+  "checkpointCommit": "f7916e53d160bab0a1bfcc1368394ef49d58156c",
+  "productionCanary": false,
+  "batchNumber": 17,
+  "stagingOnly": true,
+  "recoveryLevel": 1,
+  "recoveryLevelsMaximum": 2,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "debate-171-critique-0-recovery-1",
+      "debateNumber": "171",
+      "debateId": "hitchens-blair-religion-force-good-2010",
+      "kind": "critique",
+      "field": "moveProse.con-religious-commitments-material-harms.critique",
+      "failure": {
+        "debateNumber": "171",
+        "kind": "critique",
+        "field": "moveProse.con-religious-commitments-material-harms.critique",
+        "moveId": "con-religious-commitments-material-harms",
+        "defects": [
+          "word-count"
+        ],
+        "observedWords": 104,
+        "observedCharacters": 908,
+        "observedSentences": 4,
+        "rejectedPriorStringReusable": false
+      },
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/packets/debate-171.json",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/packets/context-0.json",
+      "packetSha256": "bbab3071425cc8a52a15ed45bc2f6547b434d5637e24ca48054bd8ce98cf56a0",
+      "schema": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/schemas/context-0.schema.json",
+      "schemaSha256": "f0994651728d1cf15ca2dbb838e0ca54f8777f6919e951209e760400910e8c79",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/outputs/context-0.json"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 1,
+    "maximumParallelContexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "writableFieldsPerPacket": 1,
+    "preserveRawResultBeforeValidation": true,
+    "directIncrementalCostUsdMaximum": 0,
+    "paidServices": false,
+    "separateActivationRequired": true,
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/diagnosis.json": "733769cd61b063fcb822024c2d2a4f5b2f8515df115c47ce100f0e603ccdc1b6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/continuation-execution-activation.json": "7098a60a2e9d1b17808c93fbafc0bb0f03bc7b6f366504977d1029f02459d41a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/model-execution-continuation.json": "dde57f8b7b1718dceacc919efec573db9d5ffcab1420c96e1622324b0e88507c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/continuation-analysis.json": "f6636b7c84dc8b33bdb7c3a8086b9bca973d06215e85b4654c59a7daeb75dcfb",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/manual.md": "eb10422f3ae86e09406acffe4d097f434f550e09f58d6980f85414e62ae9b5cc",
+    "scripts/assessment-production-post-canary-batch-17-publication-level-1-recovery.mjs": "6b7b64ce8df9c6deb6396b56358995bb443f3b97f079ab1f37a8ae4ebd4290c8",
+    "scripts/lib/assessment-production-post-canary-batch-17-publication-validation.mjs": "bfd8d6bc4bf14c49ab99ec40f4ab2169e092b41fc9504718714bb7c2a1c2e45d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/packets/debate-171.json": "5fa54488bf804480325af3bfadc341c65c3055d52ad53075808d5bb3a8eb265a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/outputs/debate-171.json": "bc13a2f128769f43f52018225ee9058091156f740974726cc78e6a07d93ace1e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/validations/debate-171.json": "b13a060c107f12fa7aaf8932726a61bf35285ffa2c125a0afb3de0b68374c69b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/provenance/debate-171.json": "ac2a7bade6641f20de5acc57977469ffca9673739ee59c1065634c17b52c820c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/packets/context-0.json": "bbab3071425cc8a52a15ed45bc2f6547b434d5637e24ca48054bd8ce98cf56a0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/schemas/context-0.schema.json": "f0994651728d1cf15ca2dbb838e0ca54f8777f6919e951209e760400910e8c79"
+  },
+  "futureOutputs": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/execution-activation.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/outputs/context-0.json"
+  ],
+  "authorization": {
+    "activation": true,
+    "modelExecution": true,
+    "deterministicMergeAndValidation": true,
+    "retries": false,
+    "furtherRecoveryLevel": false,
+    "scorePass": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-fresh-one-field-batch-17-publication-recovery-level-1-context-once",
+  "activatedAt": "2026-08-28T17:53:05Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-17/publication-reconstruction/failure-recovery/level-1/execution-preparation-manifest.json",
+    "sha256": "7b5b7eb82ad43eac4dadf17474dffc385a307086da951eabbe6721a5cd72da20"
+  }
+}
