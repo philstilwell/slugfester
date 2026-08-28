@@ -1,0 +1,2512 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+  "status": "frozen-post-canary-batch-16-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "planningOnly": true,
+  "debateNumber": "161",
+  "debateId": "craig-millican-does-god-exist-2011",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/final-candidates/debate-161.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/9JVRy7bR7zI/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+    "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+    "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+    "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+    "finalCandidateSha256": "6491821a34aca51739f0d5883aba950050e875642d9add77ebc9a3ac13334df9",
+    "eventsPath": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+    "eventsSha256": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+    "finalJudgmentSha256": "0e2553ff9b909c7940e7e68946b54333eb9e51f0f9f1a1d920f0ef4ab2554cdc"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/production-compatibility/output-bundle/staged-ledgers/craig-millican-does-god-exist-2011.json",
+    "productionLedger": "docs/assessment-ledgers/craig-millican-does-god-exist-2011.json"
+  },
+  "productionLedgerBaseline": {
+    "exists": false,
+    "sha256": null
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-16-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+    "status": "frozen-post-canary-batch-16-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 16,
+    "debateNumber": "161",
+    "debateId": "craig-millican-does-god-exist-2011",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+      "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+      "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+      "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+      "finalCandidateSha256": "6491821a34aca51739f0d5883aba950050e875642d9add77ebc9a3ac13334df9",
+      "eventsPath": ".assessment-cache/captions/9JVRy7bR7zI/events.json",
+      "eventsSha256": "5dd29c053f0e5da4ed79b6f818fb844a6515552671dbc4014916d18ca1d2cbbc",
+      "finalJudgmentSha256": "0e2553ff9b909c7940e7e68946b54333eb9e51f0f9f1a1d920f0ef4ab2554cdc"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "161",
+      "debateId": "craig-millican-does-god-exist-2011",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-cumulative-christian-theism",
+          "side": "pro",
+          "description": "Establish Christian theism as more reasonable than skeptical atheism through a cumulative case from cosmic origins, fine-tuning, objective morality, Jesus' resurrection, and direct religious experience, while addressing proposed defeaters.",
+          "successCriteria": "The route succeeds if the principal evidential strands jointly support a personal, morally perfect creator and the Christian identification of that creator more strongly than the skeptical alternatives undermine those inferences.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-cumulative-warrant",
+            "tier": "motion",
+            "description": "The combined evidence must make Christian theism more reasonable than skeptical atheism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-cosmological-creator",
+              "tier": "central",
+              "description": "A beginning of the universe and an applicable causal principle must support a transcendent personal creator."
+            },
+            {
+              "bridgeId": "pro-fine-tuning-designer",
+              "tier": "central",
+              "description": "Life-permitting fine-tuning must favor intelligent design over necessity, chance, or selection-based alternatives."
+            },
+            {
+              "bridgeId": "pro-moral-ground",
+              "tier": "central",
+              "description": "Objective moral values and duties must require and receive an adequate foundation in God."
+            },
+            {
+              "bridgeId": "pro-christian-identification",
+              "tier": "central",
+              "description": "Resurrection evidence and religious experience must connect generic theism to the Christian-God hypothesis."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-burden-cumulative-method",
+              "tier": "subsidiary",
+              "description": "The evidential strands must be assessed cumulatively under a burden that also requires justification for skeptical atheism."
+            },
+            {
+              "bridgeId": "pro-defeater-answers",
+              "tier": "subsidiary",
+              "description": "Objections from evil, hiddenness, religious diversity, and naturalistic epistemology must not defeat the cumulative inference."
+            }
+          ]
+        },
+        {
+          "routeId": "con-skeptical-atheist-case",
+          "side": "con",
+          "description": "Show that the specific Christian-God hypothesis lacks sufficient evidential support because its main arguments rely on disputed premises, exceed their conclusions, face natural alternatives, and conflict with evil and hiddenness.",
+          "successCriteria": "The route succeeds if the affirmative evidence does not adequately distinguish Christian theism from rival explanations and the observed world supplies material counterevidence to the claimed divine attributes.",
+          "motionBridge": {
+            "bridgeId": "con-motion-insufficient-warrant",
+            "tier": "motion",
+            "description": "The evidence must fail to make Christian theism more reasonable than skeptical atheism."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-cosmological-underdetermination",
+              "tier": "central",
+              "description": "Neither an absolute cosmic beginning nor a causal inference to an immaterial personal creator must be treated as established."
+            },
+            {
+              "bridgeId": "con-natural-theology-alternatives",
+              "tier": "central",
+              "description": "Fine-tuning and morality must admit alternatives that prevent their use as distinctive evidence for the Christian God."
+            },
+            {
+              "bridgeId": "con-history-experience-reliability",
+              "tier": "central",
+              "description": "Resurrection reports and religious experience must lack the reliability needed to distinguish Christianity from natural or rival religious accounts."
+            },
+            {
+              "bridgeId": "con-evil-hiddenness-counterevidence",
+              "tier": "central",
+              "description": "Evil, suffering, and sincere nonbelief must count against a perfectly good, omnipotent, relational God."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-specific-hypothesis-burden",
+              "tier": "subsidiary",
+              "description": "Christian theism must bear an appropriately demanding burden as one specific supernatural hypothesis among incompatible alternatives."
+            },
+            {
+              "bridgeId": "con-attribute-gap-method",
+              "tier": "subsidiary",
+              "description": "Any limited anomaly or unexplained cause must not be extended beyond the evidence to the full divine attributes."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "burden-religious-epistemology",
+          "title": "Burden, Religious Diversity, and Epistemic Method",
+          "weightPercent": 12,
+          "rationale": "This issue governs how the specific Christian hypothesis is compared with skeptical atheism, rival religions, experiential claims, rational intuition, and empirically grounded inquiry."
+        },
+        {
+          "sectionId": "cosmic-beginning-causation",
+          "title": "Cosmic Beginning, Causation, and a Personal Creator",
+          "weightPercent": 24,
+          "rationale": "This issue contains the principal inference from the universe's alleged beginning through causal premises to a timeless, immaterial, personal cause."
+        },
+        {
+          "sectionId": "fine-tuning-design",
+          "title": "Fine-Tuning, Design, and Alternative Explanations",
+          "weightPercent": 17,
+          "rationale": "This issue tests whether life-permitting conditions favor intelligent design and whether that inference reaches the kind of God specified by the motion."
+        },
+        {
+          "sectionId": "objective-morality",
+          "title": "Objective Morality and Divine Grounding",
+          "weightPercent": 15,
+          "rationale": "This issue addresses whether objective value and obligation exist, whether non-theistic accounts can ground them, and whether a divine lawgiver is required."
+        },
+        {
+          "sectionId": "resurrection-experience",
+          "title": "Resurrection Evidence and Religious Experience",
+          "weightPercent": 18,
+          "rationale": "This issue bears directly on the transition from generic theism to Christianity through historical claims about Jesus and purported immediate awareness of God."
+        },
+        {
+          "sectionId": "evil-hiddenness",
+          "title": "Evil, Suffering, and Divine Hiddenness",
+          "weightPercent": 14,
+          "rationale": "This issue examines whether suffering and sincere nonbelief conflict with the claimed divine attributes and whether the proposed theistic purposes answer that conflict."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-cosmic-beginning-personal-cause",
+          "sectionId": "cosmic-beginning-causation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "The universe began to exist and therefore has an uncaused, timeless, immaterial, personal cause beyond space and time.",
+          "sourceSpan": {
+            "startEvent": 113,
+            "endEvent": 257,
+            "excerpt": "began to exist then the universe has a transcendent cause 3 therefore the universe has a transcendent cause given the truth of the two premises the conclusion necessarily follows now from the very nature of the case this cause must be an uncaused change less time less and immaterial being which created the universe it must be uncaused because we've seen there cannot be an infinite regress of causes it must be timeless and therefore changeless"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly introduces Craig, and the uninterrupted opening address presents this as his first argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-cosmological-creator"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states the principal cosmological route from a beginning and causal premise to a transcendent personal cause."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The syllogism is recoverable, but the transition among universe, transcendent cause, and personal being compresses material scope and attribute qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Necessity follows conditionally from the stated premises, but the evidence excerpt does not warrant comparable certainty about every attributed feature or the premises themselves."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A nonpersonal or differently constituted transcendent cause",
+            "decisiveQualification": "The cause-to-personal-agent bridge requires more than timelessness and immateriality"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly addresses the indispensable cosmological-creator bridge and sits at the top of the central-contact tier."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The move mentions constraints on the cause but does not fully answer the strongest nonpersonal-cause alternative."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly states that the universe began, infers a transcendent cause, and attributes uncaused, timeless, changeless, immaterial features while invoking an infinite-regress objection.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-fine-tuning-design-inference",
+          "sectionId": "fine-tuning-design",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "The universe's narrowly life-permitting constants and initial conditions are better explained by intelligent design than by physical necessity or chance.",
+          "sourceSpan": {
+            "startEvent": 258,
+            "endEvent": 323,
+            "excerpt": "probable than any life-permitting universe now there are only three possible explanations of this extraordinary fine-tuning physical necessity chance or design now it can't be due to physical necessity because as we've seen the constants and quantities are independent of the laws of nature so maybe the fine-tuning is due to chance after all highly improbable events happen every"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig labels this as his second argument during the same uninterrupted opening presentation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-fine-tuning-designer"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move develops the design strand by contrasting physical necessity, chance, and intelligent design."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The comparative design proposition is clear, but the asserted three-option scope and probability basis require qualifications not made explicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The argument presses design strongly while the excerpt leaves probability measures, exhaustive alternatives, and selection effects materially unresolved."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Chance, necessity, or a selection-based natural explanation",
+            "decisiveQualification": "Design must be favored under defensible comparative probabilities rather than merely remain possible"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supplies the affirmative route's indispensable fine-tuning-to-designer step and therefore ranks highly within central contact."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The move names necessity and chance but treats the option set and comparative probabilities too quickly to resolve the strongest alternatives."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt calls fine-tuning extraordinary, identifies necessity, chance, and design, rejects necessity through independence from laws, and begins a probability objection to chance.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-objective-morality-divine-ground",
+          "sectionId": "objective-morality",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Objective moral values and duties exist, and their validity and binding force require God as an adequate foundation.",
+          "sourceSpan": {
+            "startEvent": 324,
+            "endEvent": 406,
+            "excerpt": "duties in the world our first two arguments give us a creator and designer of the universe but they don't tell us anything about his moral character how can we know that he is good my third argument addresses that question premise one states if God did not exist objective moral values and duties would not exist by objective moral values I mean values which are valid and binding"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly announces a third argument and develops both premises and its conclusion in his opening speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-moral-ground"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move advances the moral route by asserting objective values and duties and making God their necessary foundation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The conditional is recoverable, but values, duties, validity, binding force, and grounding are not kept sufficiently distinct for the decisive inference."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The necessity claim exceeds the excerpt's support because rival accounts of value and obligation are not yet excluded."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Objective moral realism without ontological dependence on God",
+            "decisiveQualification": "The argument must show why objectivity or obligation specifically requires a divine foundation"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the indispensable divine-grounding bridge and is therefore near the top of central burden contact."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The move states divine dependence but does not yet engage the strongest non-theistic realist account of objective value or duty."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt announces the third argument, asks how a creator's goodness can be known, and states that without God objective moral values and duties would not exist.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-resurrection-historical-inference",
+          "sectionId": "resurrection-experience",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Jesus' empty tomb, postmortem appearances, and the disciples' resulting belief are best explained by his resurrection, which entails God's existence.",
+          "sourceSpan": {
+            "startEvent": 407,
+            "endEvent": 472,
+            "excerpt": "for the existence of God now most people would probably think that the resurrection of Jesus is something you just believed in by faith or not but there are actually three facts recognized by the majority of historians today which I believe are best explained by the resurrection of Jesus fact number one on the Sunday after his crucifixion Jesus tomb was found empty by a group of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig identifies this as his fourth argument and presents it continuously as part of his enumerated opening case.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-christian-identification"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the principal historical bridge from asserted facts about Jesus to resurrection and Christian identification."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The three-fact inference is clear, but majority recognition, historical fact status, best explanation, and divine entailment need material qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The best-explanation claim is pressed strongly without uncertainty about source dependence, base rates, rival explanations, or the precise consensus."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Natural or legendary explanations of the empty-tomb and appearance traditions",
+            "decisiveQualification": "A resurrection inference requires comparative historical assessment rather than mere enumeration of asserted facts"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The abductive form is coherent, but the bridge from three asserted facts to a divine resurrection is materially underdeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly addresses the indispensable Christian-identification bridge and thus occupies the top of the central-contact band."
+            },
+            "representationalCharity": {
+              "value": 65,
+              "rationale": "The move organizes affirmative facts but the excerpt does not seriously compare the strongest natural, testimonial, or legendary alternatives."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly invokes three allegedly widely recognized facts, begins with the empty tomb, and claims that resurrection best explains them.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-immediate-experience-of-god",
+          "sectionId": "burden-religious-epistemology",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "A person can know that God exists through immediate personal experience independently of propositional arguments.",
+          "sourceSpan": {
+            "startEvent": 473,
+            "endEvent": 500,
+            "excerpt": "the personal experience of God this isn't really an argument for God's existence rather it's the claim that you can know that God exists wholly apart from arguments simply by immediately experiencing him this was the way people in the Bible knew God as Professor John hick my doctoral supervisor explains God was known to them as a dynamic will interacting with their own wills a"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly introduces this as his fifth consideration in the uninterrupted conclusion of his opening case.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-burden-cumulative-method"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move offers immediate experience as an independent epistemic strand within the cumulative method."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The claim is recoverable, but immediate experience, knowledge, and identification of the experienced reality as God are insufficiently distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "As a possibility claim its force is restrained, though its epistemic entitlement still requires a reliability or defeater condition."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "The distinction between inferential and immediate knowledge is coherent, but the reliability bridge remains materially implicit."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It materially supports the cumulative epistemic method, but it does not by itself complete the central Christian-identification requirement."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The span presents a first-person epistemic route and does not evaluate a developed competing account of such experiences."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says this is not an argument, claims God can be known wholly apart from arguments, and illustrates the claim through biblical experience and John Hick's description.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-religious-diversity-unreliability",
+          "sectionId": "burden-religious-epistemology",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "constructive",
+          "proposition": "Conflicting religions produced through human cognitive tendencies and cultural transmission show that common religious belief-forming methods are unreliable guides to truth.",
+          "sourceSpan": {
+            "startEvent": 573,
+            "endEvent": 711,
+            "excerpt": "of different and conflicting beliefs then that method obviously cannot be relied on now many of the religious belief systems around the world do clearly conflict with each other so they cannot all be true indeed if we focus on those religions that make an exclusive claim to truth such as Judaism Christianity and Islam at most one of these can be true however they could well all"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican delivers the entire passage continuously in his opening address and expressly distinguishes it from a genetic fallacy.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-history-experience-reliability"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move attacks the reliability of religious belief formation by appealing to incompatible outputs and cultural-cognitive production."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The argument is clear, though method, religious experience, and reliability risk overgeneralization across distinct belief-forming practices."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Conflict supports a reliability concern, but incompatibility alone does not show that every relevant method or resulting belief is probably false."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "One religious tradition is true despite widespread incompatible error",
+            "decisiveQualification": "Diversity undermines an undiscriminating method but does not directly falsify every tradition-specific evidential case"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly supports the central challenge to religious-experience reliability, though it is less specific to resurrection testimony."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that a method producing conflicting beliefs cannot simply be relied upon and cites Judaism, Christianity, and Islam as mutually exclusive examples.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-specific-christian-burden",
+          "sectionId": "burden-religious-epistemology",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Because Christianity is one specific hypothesis among numerous incompatible religions and disembodied minds lack solid evidence, it requires an exceptionally strong evidential case.",
+          "sourceSpan": {
+            "startEvent": 712,
+            "endEvent": 790,
+            "excerpt": "specific religious claim that there is just one Omni perfect God uniquely revealed through Jesus of Nazareth has to share that 50% probability with thousands of other conflicting religions this is why I say that the rational attitude is to place a very strong burden of proof on bill unless his case is overwhelmingly strong we should not believe that there is any such God that implies at least agnosticism but I think also atheism"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican states the burden conclusion in his own opening speech and supports it through a continuous comparison with rival hypotheses.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-specific-hypothesis-burden"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-immediate-experience-of-god",
+              "pro-resurrection-historical-inference"
+            ],
+            "components": [
+              {
+                "componentId": "con-specific-christian-burden-component-01",
+                "targetMoveId": "pro-immediate-experience-of-god",
+                "text": "Whether immediate religious experience can justify the specific Christian-God hypothesis despite incompatible religious claims.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-specific-christian-burden-component-02",
+                "targetMoveId": "pro-resurrection-historical-inference",
+                "text": "Whether the evidence specifically identifies the Christian God rather than one among many incompatible supernatural hypotheses.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the specific-identification demand by insisting that Christianity compete with many incompatible hypotheses, though its numerical probability allocation is not established."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The burden claim is clear, but 'thousands,' the fifty-percent allocation, and 'overwhelmingly strong' lack stable methodological definitions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "A demanding comparative burden is warranted, but an overwhelming-evidence threshold and equal sharing of prior probability are not established."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christianity could possess evidence that distinguishes it from rival religions",
+            "decisiveQualification": "Multiplicity affects priors only alongside substantive comparison of the rival hypotheses and their evidence"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (66 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly supports the subsidiary specific-hypothesis burden and stands high within that tier."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts the decisive specificity issue but only partially answers the separate reliability and evidential merits of each affirmative route."
+            }
+          },
+          "evidenceBasis": "The excerpt treats Christianity as one claim among thousands, invokes a very strong burden, and says failure of an overwhelming case implies at least agnosticism and perhaps atheism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-global-beginning-underdetermined",
+          "sectionId": "cosmic-beginning-causation",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Neither the beginning of the local universe nor the Borde-Guth-Vilenkin theorem establishes that the global physical universe had an absolute beginning.",
+          "sourceSpan": {
+            "startEvent": 875,
+            "endEvent": 965,
+            "excerpt": "physical cause within the global universe moreover there is no contradiction in supposing that the global universe is infinite in the past even if the local universe is not bill standardly gives two reasons for thinking otherwise one of them that infinities cannot be real I shall return to that later Bills second standard reason for denying that the universe is infinite in the past appeals to physics and the board Guth and Vilenkin theorem"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted first-person rebuttal remains within Millican's identified speech and directly addresses Craig by name.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-cosmological-underdetermination"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-cosmic-beginning-personal-cause"
+            ],
+            "components": [
+              {
+                "componentId": "con-global-beginning-underdetermined-component-01",
+                "targetMoveId": "pro-cosmic-beginning-personal-cause",
+                "text": "Whether the evidence establishes an absolute beginning of the global physical universe.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-global-beginning-underdetermined-component-02",
+                "targetMoveId": "pro-cosmic-beginning-personal-cause",
+                "text": "Whether actual infinities and the Borde-Guth-Vilenkin theorem rule out an infinite global past.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly distinguishes local from global beginnings and challenges both the infinity and physical-theorem supports for the affirmative premise."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The local-versus-global distinction and limited theorem conclusion are stated with stable scope and an express qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move argues underdetermination rather than certainty and appropriately limits its conclusion to what the cited considerations establish."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The global universe also had a finite past despite the theorem's formal limitation",
+            "decisiveQualification": "Failure of this theorem to prove a global beginning does not prove an infinite global past"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the indispensable cosmological-underdetermination bridge and ranks at the top of central contact."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the decisive beginning premise and identifies why the cited routes do not establish the global conclusion."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly permits an infinite global universe despite a local beginning and identifies actual-infinity arguments and the Borde-Guth-Vilenkin theorem as Craig's two supports.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-immaterial-mind-inference-gap",
+          "sectionId": "cosmic-beginning-causation",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Even if the physical universe had a nonphysical cause, identifying it as an immaterial personal mind exceeds both the available evidence and human cognitive competence.",
+          "sourceSpan": {
+            "startEvent": 969,
+            "endEvent": 999,
+            "excerpt": "on to argue that if the physical universe has a cause then this must be an immaterial mind recall that we have no evidence whatever that minds can exist in the absence of a physical substrate so the idea that a mind might exist in the absence of the entire physical universe is complete speculation it seems far more plausible to me to say that if despite everything I've said the"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican explicitly introduces Craig's further inference and develops the objection continuously in his own speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-cosmological-underdetermination"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-cosmic-beginning-personal-cause"
+            ],
+            "components": [
+              {
+                "componentId": "con-immaterial-mind-inference-gap-component-01",
+                "targetMoveId": "pro-cosmic-beginning-personal-cause",
+                "text": "Whether a nonphysical cause may validly be identified as an immaterial personal mind.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move diagnoses the missing evidential bridge from nonphysical cause to mind and states the defeating consequence that the personal-cause conclusion remains speculative."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The limited conclusion concerns evidential insufficiency, and the terms mind, physical substrate, and nonphysical cause remain stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Calling the identification speculative is supported, although saying there is no evidence whatever is somewhat stronger than the excerpt establishes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A timeless origin is better modeled as agent causation than as a mechanistic condition",
+            "decisiveQualification": "That conceptual argument still requires support for a substrate-independent mind"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports central cosmological underdetermination by attacking the personal-cause identification."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly identifies the decisive inference gap and explains why the conclusion exceeds the evidence supplied."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly challenges the move from a physical universe's cause to an immaterial mind and cites the lack of evidence for minds without physical substrates.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-moral-objectivity-burden",
+          "sectionId": "objective-morality",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "A moral argument for God must precisely define the relevant sense of objective value and establish both that such values exist and that they require God.",
+          "sourceSpan": {
+            "startEvent": 1000,
+            "endEvent": 1051,
+            "excerpt": "to both specify a precise sense of objective moral values which requires God's existence and give solid evidence that there are indeed objective moral values in that same since I'm very doubtful that this challenge can be met but we'll see and when I've heard what he has to say on the matter I shall also be saying a little about the problem of evil perhaps the strongest argument"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly identifies Craig's moral argument, quotes its definition, and closes his speech by presenting a direct challenge.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-moral-ground"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "pro-objective-morality-divine-ground"
+            ],
+            "components": [
+              {
+                "componentId": "con-moral-objectivity-burden-component-01",
+                "targetMoveId": "pro-objective-morality-divine-ground",
+                "text": "Whether objective morality is defined consistently and whether both its existence and dependence on God are established.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply justifies replacing the bare conditional with two necessary evidential demands: define the relevant objectivity and prove both existence and divine dependence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The challenge clearly distinguishes defining the relevant objectivity from proving its existence and its dependence on God."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker expresses doubt but leaves the challenge open pending the affirmative answer, matching the limited argumentative posture."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative may define objectivity and then defend both premises consistently",
+            "decisiveQualification": "The challenge does not itself show that no such coherent defense is available"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the indispensable divine-grounding bridge at both of its principal premises."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly preserves the moral argument's legitimate issue while identifying the two propositions that require support."
+            }
+          },
+          "evidenceBasis": "The excerpt demands a precise sense of objective morality that requires God and solid evidence that objective values exist in that same sense.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-negative-answer-bears-burden",
+          "sectionId": "burden-religious-epistemology",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "A negative answer to whether God exists requires justification rather than receiving default status, and the case for theism may draw on logic, evidence, and experience.",
+          "sourceSpan": {
+            "startEvent": 1063,
+            "endEvent": 1114,
+            "excerpt": "atheism tonight well I think not indeed he said I have the burden of proof because I'm holding that God does exist and that's the proposition under the debate I think that's incorrect the proposition under debate tonight is a question does God exist and if he intends to answer that No then he needs to give some justification for that otherwise we're simply left with agnosticism as a sort of default"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Craig, after which Craig recapitulates his two contentions and directly answers Millican's opening objections.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-burden-cumulative-method"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-specific-christian-burden",
+              "con-religious-diversity-unreliability"
+            ],
+            "components": [
+              {
+                "componentId": "pro-negative-answer-bears-burden-component-01",
+                "targetMoveId": "con-specific-christian-burden",
+                "text": "Whether only the affirmative bears a justificatory burden in answering the debate question.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-negative-answer-bears-burden-component-02",
+                "targetMoveId": "con-religious-diversity-unreliability",
+                "text": "Whether skeptical atheism receives default status from religious disagreement alone.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts unilateral burden allocation by distinguishing atheism from agnosticism, but it does not answer the diversity-based reliability objection or the stronger burden for a specific hypothesis."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The atheism-agnosticism distinction is clear, but the move treats every negative answer as if it asserted a comparably substantive contrary thesis."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Positive atheism requires justification, but the burden symmetry claimed is too broad where the opposing stance is merely withholding belief."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Skeptical atheism may withhold belief rather than assert God's nonexistence",
+            "decisiveQualification": "Only a substantive negative conclusion incurs the positive burden identified by the reply"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The distinction between defended atheism and default agnosticism is useful, but the burden inference depends on an unresolved characterization of the negative position."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly supports the subsidiary cumulative-burden method but does not itself complete any substantive evidential strand."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The move distinguishes agnosticism but does not fully accommodate nonbelief framed as evidential withholding rather than a categorical denial."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It is a partial answer that contacts the primary burden component while leaving the comparative specificity argument substantially intact."
+            }
+          },
+          "evidenceBasis": "The excerpt disputes a unilateral burden, frames the motion as a question, and says a negative answer needs justification or else agnosticism remains the default.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-efficient-cause-not-quantum-nothing",
+          "sectionId": "cosmic-beginning-causation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Something cannot begin without either a material or an efficient cause, and events in a structured quantum vacuum are not counterexamples to that causal principle.",
+          "sourceSpan": {
+            "startEvent": 1235,
+            "endEvent": 1297,
+            "excerpt": "without a cause I only maintain that our certainty of the falsehood of that proposition proceeded neither from intuition nor demonstration but from another source even someone like Hume recognized that it's absurd to think that something could pop into being with neither a material nor an efficient cause dr. Millican says but quantum physics posits the origin of things out of nothing not at all as I said in quantum physics the vacuum"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig directly attributes the contrary objections to Millican and answers them continuously with causal distinctions, quantum physics, and metaphysical reasoning.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-cosmological-underdetermination"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-global-beginning-underdetermined"
+            ],
+            "components": [
+              {
+                "componentId": "pro-efficient-cause-not-quantum-nothing-component-01",
+                "targetMoveId": "con-global-beginning-underdetermined",
+                "text": "Whether observed quantum events or the absence of a material cause defeat the efficient-causal principle.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply distinguishes material from efficient causes and expressly explains why events in a structured quantum setting are not beginnings from nothing."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Material and efficient causes are distinguished clearly, though the universal causal scope is not explicitly limited or defended."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Distinguishing a quantum vacuum from nothing is sound, but absolute impossibility of an uncaused beginning is asserted beyond the support shown."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An absolute beginning may not instantiate ordinary intra-universe causal regularities",
+            "decisiveQualification": "Quantum-vacuum examples fail as creation from nothing, but that does not establish universal causation"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The material/efficient-cause distinction coherently blocks the proposed counterexample, with universal applicability still a bounded bridge."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The conceptual analysis is specific, but the empirical characterization of all relevant quantum events is not documented here."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly attacks central cosmological underdetermination on causation, though not on the separate global-beginning premise."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The reply addresses the strongest relevant quantum-vacuum reading while preserving the distinction between determinism and efficient causation."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the causal counterexample directly, though it does not answer the separate local-to-global beginning objection."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes absence of a material cause from absence of an efficient cause and argues that lacking both would be still more problematic.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-moral-obligation-requires-lawgiver",
+          "sectionId": "objective-morality",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Naturalistic ethical systems do not adequately ground intrinsic human value or binding duties, whereas moral prescriptions are plausibly grounded in a divine lawgiver.",
+          "sourceSpan": {
+            "startEvent": 1336,
+            "endEvent": 1365,
+            "excerpt": "we have moral prohibitions and obligations if there is no one to prohibit or command them as chemists and ethicists alike recognize prescriptions require prescribers and moral prescriptions require a moral prescriber without a moral lawgiver I think moral obligation is unintelligible so if you agree with me that there are objective moral values I think you'll agree with me that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig marks the transition to the moral argument and directly evaluates the secular ethical theories Millican had previously offered.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-natural-theology-alternatives"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-moral-objectivity-burden"
+            ],
+            "components": [
+              {
+                "componentId": "pro-moral-obligation-requires-lawgiver-component-01",
+                "targetMoveId": "con-moral-objectivity-burden",
+                "text": "Whether binding moral duties can be intelligibly grounded without a prescriber or moral lawgiver.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-moral-obligation-requires-lawgiver-component-02",
+                "targetMoveId": "con-moral-objectivity-burden",
+                "text": "Whether non-theistic accounts can ground intrinsic human value as distinct from obligation.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly addresses divine dependence for obligations through the prescription-prescriber analogy but does not establish objective values or fully answer non-theistic realism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The lawgiver inference is recoverable, but prescription, obligation, command, and objective value are treated as closer equivalents than established."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling divine grounding most plausible exceeds the excerpt's comparison because non-command accounts of reasons and obligations are not addressed."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Objective obligations are stance-independent reasons rather than commands requiring a commander",
+            "decisiveQualification": "The linguistic prescriber analogy does not by itself settle the ontology of moral obligation"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (65 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly attacks the central natural-theology-alternatives bridge by defending divine moral grounding."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive grounding component while leaving the existence premise and rival realist accounts substantially unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt says prescriptions require prescribers, moral prescriptions require a moral prescriber, and obligation is unintelligible without a moral lawgiver.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-fine-tuning-underdetermination",
+          "sectionId": "fine-tuning-design",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Fine-tuning supplies at most a cautious design consideration and does not establish the morally perfect, omnipotent Christian God rather than natural alternatives or rival designers.",
+          "sourceSpan": {
+            "startEvent": 1382,
+            "endEvent": 1553,
+            "excerpt": "it that the physics of a hundred years hence will look the same quite apart from all this the fine-tuning argument seems very ill adapted for proving or even supporting the existence of an Omni perfect Christian God one important point is that it does nothing to favor the existence of a morally perfect God over an equally powerful but supremely evil God a nasty character I have"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Following his introduction by the moderator, Millican explicitly begins his fine-tuning response and sustains it until announcing a new topic.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-natural-theology-alternatives"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-design-inference",
+              "pro-objective-morality-divine-ground"
+            ],
+            "components": [
+              {
+                "componentId": "con-fine-tuning-underdetermination-component-01",
+                "targetMoveId": "pro-fine-tuning-design-inference",
+                "text": "Whether fine-tuning favors the specific Christian God over natural or rival designer hypotheses.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-fine-tuning-underdetermination-component-02",
+                "targetMoveId": "pro-fine-tuning-design-inference",
+                "text": "Whether current probability and physics claims warrant a confident design inference.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-fine-tuning-underdetermination-component-03",
+                "targetMoveId": "pro-objective-morality-divine-ground",
+                "text": "Whether morally perfect rather than evil agency is distinguished by the evidence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the comparative inference, its physical uncertainty, and the attribute gap by presenting natural alternatives and a rival evil designer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conclusion is carefully limited to cautious support and distinguishes generic design from the full Christian-God hypothesis."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move allows fine-tuning some evidential force while calibrating that force to unresolved physics and underdetermination."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Fine-tuning is evidence for a designer even if it does not establish every divine attribute",
+            "decisiveQualification": "Limited designer evidence may contribute cumulatively without independently proving Christianity"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable central bridge requiring alternatives to block distinctive fine-tuning evidence."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts multiple decisive components, including the inference's force and its failure to identify the morally perfect Christian God."
+            }
+          },
+          "evidenceBasis": "The excerpt urges caution about future physics and argues that fine-tuning fails to distinguish a morally perfect God from an equally powerful evil designer.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-hiddenness-saving-relationship",
+          "sectionId": "evil-hiddenness",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Divine hiddenness does not establish atheism because greater evidence of God's existence might not bring more people freely into a saving relationship with God.",
+          "sourceSpan": {
+            "startEvent": 1705,
+            "endEvent": 1745,
+            "excerpt": "he wants people to come into a saving relationship with him and it may well be the case that God knew that if he were to provide any more evidence it wouldn't do any more good and bringing people into such a relationship if people won't look at the evidence that we have now perhaps they wouldn't have come to know God and find salvation even if the existence of God were as plain"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Craig immediately before this uninterrupted first-person rebuttal, and the following transition remains within his speech.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-specific-hypothesis-burden"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-specific-christian-burden",
+              "con-fine-tuning-underdetermination"
+            ],
+            "components": [
+              {
+                "componentId": "pro-hiddenness-saving-relationship-component-01",
+                "targetMoveId": "con-specific-christian-burden",
+                "text": "Whether a loving God must supply more publicly compelling evidence of his existence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-hiddenness-saving-relationship-component-02",
+                "targetMoveId": "con-fine-tuning-underdetermination",
+                "text": "Whether limited evidence is inconsistent with God's proposed saving purpose.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply offers a reason why greater evidence might not advance God's relational purpose, contacting hiddenness but not establishing the relevant counterfactual."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The possibility claim is clear and expressly qualified, but its scope over sincere nonbelievers is not carefully distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The repeated 'may' and 'perhaps' language appropriately presents a possible compatibility explanation rather than an established fact."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Sincere seekers might freely respond if stronger evidence were available",
+            "decisiveQualification": "A bare possibility about divine foreknowledge does not establish that all nonbelief is resistant"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "No representative evidence is supplied for the claim that stronger evidence would do no more relational good."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "The move materially addresses the subsidiary defeater-answer bridge concerning divine hiddenness."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive purpose-based component but answers with a speculative possibility rather than a developed probability comparison."
+            }
+          },
+          "evidenceBasis": "The excerpt says God's aim is saving relationship and speculates that more evidence might not bring additional people into such a relationship.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-fine-tuning-objections-answered",
+          "sectionId": "fine-tuning-design",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "The narrow life-permitting range and multiple independent instances of cosmic fine-tuning remain evidence for design despite objections about probability, unsettled physics, efficiency, and cosmic scale.",
+          "sourceSpan": {
+            "startEvent": 1830,
+            "endEvent": 1909,
+            "excerpt": "fine-tuning supports that now here we have a number of arguments offered in response I count nine of them soundbite of arguments number one we should be cautious about this of course number two the probability claims are problematic I think not you simply compare the possible range that these constants or quantities could take to the life permitting range and you find it as exquisitely narrow"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly introduces the fine-tuning argument and sequentially answers the numbered objections attributed to Millican throughout the same speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-natural-theology-alternatives"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-fine-tuning-underdetermination"
+            ],
+            "components": [
+              {
+                "componentId": "pro-fine-tuning-objections-answered-component-01",
+                "targetMoveId": "con-fine-tuning-underdetermination",
+                "text": "Whether fine-tuning remains design evidence despite probability and unsettled-physics objections.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-fine-tuning-objections-answered-component-02",
+                "targetMoveId": "con-fine-tuning-underdetermination",
+                "text": "Whether the life-permitting range is sufficiently narrow to sustain the likelihood comparison.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-fine-tuning-objections-answered-component-03",
+                "targetMoveId": "con-fine-tuning-underdetermination",
+                "text": "Whether fine-tuning identifies the Christian God rather than rival designers.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply answers several probability and physical-range objections but leaves the decisive attribute and rival-designer underdetermination substantially unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The defense is clear, though counting several independent instances and comparing possible ranges require scope and measure qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move acknowledges caution but treats range comparison as more straightforward than the unresolved measure and theory issues warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Fine-tuning probabilities are ill-defined and generic design does not identify the Christian God",
+            "decisiveQualification": "Narrow ranges may answer one objection while leaving measure choice and designer identity unresolved"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The reply coherently explains why narrow ranges are relevant, but probability measures and designer identity remain material bridges."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "It cites multiple instances and narrow life-permitting ranges, yet their independence, measures, and full rival comparison remain compressed."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central natural-theology-alternatives bridge on the fine-tuning strand."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the primary evidential component while omitting the specific-God component."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly enumerates Millican's objections, accepts caution, rejects the probability objection, and appeals to comparison between possible and life-permitting ranges.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-atheistic-moral-realism",
+          "sectionId": "objective-morality",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Atheists can affirm intrinsic human worth and objective moral values without treating those values as ontologically dependent on God's existence.",
+          "sourceSpan": {
+            "startEvent": 1941,
+            "endEvent": 2043,
+            "excerpt": "God's being up there makes no impact at all on the person who is perceiving and responding to the moral value I'm not questioning whether a theist might be comforted by the thought that the moral value puts them in tune with the ruler of the universe sure but I don't understand any whatever why an atheist cannot believe in objective moral values and certainly there's no reason why an atheist has to presuppose that humans have no intrinsic"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican begins this moral discussion within his introduced final rebuttal, cites survey figures, and directly challenges positions he attributes to Craig.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-natural-theology-alternatives"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-moral-obligation-requires-lawgiver",
+              "pro-objective-morality-divine-ground"
+            ],
+            "components": [
+              {
+                "componentId": "con-atheistic-moral-realism-component-01",
+                "targetMoveId": "pro-moral-obligation-requires-lawgiver",
+                "text": "Whether atheism precludes belief in objective moral value or intrinsic human worth.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-atheistic-moral-realism-component-02",
+                "targetMoveId": "pro-objective-morality-divine-ground",
+                "text": "Whether objective values ontologically depend on God's existence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly denies the assumed dependence and states that perceiving moral value need not causally or ontologically involve God."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The limited claim that atheists can affirm objective value without presupposing God is clear and appropriately scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The reply need only defeat alleged impossibility, and its modest claim that atheists can hold moral realism matches that burden."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Divine grounding explains binding authority even if atheists recognize moral value",
+            "decisiveQualification": "Epistemic access or sincere belief does not by itself establish ontological independence"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The distinction between perceiving moral value and positing God is coherent, with a bounded gap concerning ultimate ontology."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The conceptual possibility is plausible, while the excerpt provides limited defense of a substantive atheistic realist foundation."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central natural-theology-alternatives bridge by contesting exclusive divine moral grounding."
+            },
+            "representationalCharity": {
+              "value": 77,
+              "rationale": "The reply fairly defeats a belief-level exclusion but only partially addresses the stronger ontological-grounding version."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly contacts the divine-dependence inference, though it does not provide a complete positive ontology of moral facts."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that God's existence makes no difference to perceiving moral value and expressly denies that atheists must reject objective value or intrinsic human worth.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-gospel-evidence-limitations",
+          "sectionId": "resurrection-experience",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "The Gospel resurrection narratives provide weak evidence for divine resurrection because they are late, dependent, partisan, discrepant, and unsupported by contemporary sources.",
+          "sourceSpan": {
+            "startEvent": 2044,
+            "endEvent": 2106,
+            "excerpt": "narratives with non gospel literature so here we have from Matthew's Gospel the claim about the veil of the temple being rent an earthquake darkness over all the earth for three hours and bodies of the Saints being revived and going and walking around Jerusalem none of this is reported in any other contemporary sources are we really supposed to take this seriously as evidence"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican expressly changes to the resurrection topic and sustains the critique until he announces that he must stop, with no speaker interruption.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-history-experience-reliability"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-resurrection-historical-inference"
+            ],
+            "components": [
+              {
+                "componentId": "con-gospel-evidence-limitations-component-01",
+                "targetMoveId": "pro-resurrection-historical-inference",
+                "text": "Whether the Gospel evidence reliably establishes the facts used in the resurrection inference.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-gospel-evidence-limitations-component-02",
+                "targetMoveId": "pro-resurrection-historical-inference",
+                "text": "Whether the narratives are independent, contemporary, coherent, and nonpartisan sources.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move diagnoses source lateness, dependence, partisanship, discrepancies, and missing contemporary corroboration, with the consequence that the resurrection inference lacks a reliable factual base."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The criticism identifies discrete source-quality defects and limits its conclusion to the evidential strength of the narratives."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The identified limitations justify substantial skepticism, although some sweeping claims about absence and dependence need fuller documentation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Core resurrection traditions may be earlier than the final Gospel texts and multiply attested",
+            "decisiveQualification": "Early underlying tradition can retain value despite late, partisan, or discrepant narrative forms"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable history-and-experience reliability bridge at its resurrection component."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly attacks the decisive evidential foundation and states why the asserted historical facts cannot bear the claimed inference."
+            }
+          },
+          "evidenceBasis": "The excerpt cites non-Gospel silence regarding dramatic Matthean events and the move's proposition identifies lateness, dependence, partisanship, and discrepancies as cumulative limitations.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-resurrection-naturalism-objection",
+          "sectionId": "resurrection-experience",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "The resurrection best explains the asserted burial, empty tomb, appearances, and origin of the disciples' belief when prior naturalism does not exclude miracles in advance.",
+          "sourceSpan": {
+            "startEvent": 2213,
+            "endEvent": 2253,
+            "excerpt": "certainty that he was buried possibly by this fellow Joseph of Arimathea and the three days later he appeared not to have been in his tomb herman also accepts the appearances and the origin of the disciples believe so why doesn't dear man accept the resurrection of jesus for philosophical reasons he's a naturalist and therefore miracles are impossible for Eman the skepticism of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig explicitly introduces the resurrection, names Millican and skeptical scholars, and concludes the move by stating the proposed divine explanation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-history-experience-reliability"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-gospel-evidence-limitations"
+            ],
+            "components": [
+              {
+                "componentId": "pro-resurrection-naturalism-objection-component-01",
+                "targetMoveId": "con-gospel-evidence-limitations",
+                "text": "Whether the core burial, empty-tomb, appearance, and belief data remain accepted despite narrative limitations.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-resurrection-naturalism-objection-component-02",
+                "targetMoveId": "con-gospel-evidence-limitations",
+                "text": "Whether rejection of resurrection rests on source criticism or on antecedent naturalism about miracles.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply cites limited concessions by a skeptical scholar and argues that philosophical naturalism drives rejection, but it only partly answers source dependence and discrepancies."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The inference is recoverable and includes uncertainty about burial, but naturalism and exclusion of miracles are generalized too broadly."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Some factual caution is expressed, yet the best-explanation conclusion exceeds the limited comparison and attributes rejection chiefly to naturalism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A historian may reject resurrection because of comparative evidence and base rates without dogmatically excluding miracles",
+            "decisiveQualification": "Methodological caution about miracles is not equivalent to assuming their impossibility"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central history-and-experience reliability bridge on the resurrection evidence."
+            },
+            "representationalCharity": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It contacts the core-data and prior-probability components while leaving several direct source-critical objections unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt cites an historian's acceptance of burial, an apparently empty tomb, appearances, and belief origins, then attributes rejection of resurrection to philosophical naturalism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-natural-religious-psychology",
+          "sectionId": "resurrection-experience",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "Religious experiences and resurrection reports require psychological and natural investigation because comparable supernatural claims arise in mutually incompatible traditions.",
+          "sourceSpan": {
+            "startEvent": 2266,
+            "endEvent": 2317,
+            "excerpt": "experience is an extremely unreliable method of knowledge or alleged knowledge people have religious experiences of all sorts perhaps those disciples after the resurrection were having those too but the appropriate way to check up on those is not biblical scholarship it's actually Experimental Psychology the question we have to ask ourselves is how likely is it that that evidence could have arisen by perfectly natural"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Millican for his closing statement, and he explicitly identifies religious experience before connecting it to resurrection testimony and rival claims.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-history-experience-reliability"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-immediate-experience-of-god",
+              "pro-resurrection-naturalism-objection"
+            ],
+            "components": [
+              {
+                "componentId": "con-natural-religious-psychology-component-01",
+                "targetMoveId": "pro-immediate-experience-of-god",
+                "text": "Whether immediate religious experience is a reliable and discriminating method of knowledge.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-natural-religious-psychology-component-02",
+                "targetMoveId": "pro-resurrection-naturalism-objection",
+                "text": "Whether resurrection appearances and testimony could plausibly arise through natural psychological processes.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move identifies incompatible supernatural outputs and natural psychological production as reasons the experiences cannot simply authenticate their apparent objects."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The investigation demand is clear, but calling religious experience generally extremely unreliable risks overgeneralizing heterogeneous cases."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Natural investigation is well motivated, though the strong general unreliability claim exceeds the limited comparative evidence in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Some religious experiences may have independent corroboration or superior reliability",
+            "decisiveQualification": "Diversity creates a defeater requiring discrimination but does not make every individual experience false"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable history-and-experience reliability bridge across both experiential and resurrection claims."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The reply does not claim that mere causal possibility settles every case and correctly emphasizes comparative empirical testing."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It expressly diagnoses the reliability failure and extends the consequence to both immediate experience and resurrection reports."
+            }
+          },
+          "evidenceBasis": "The excerpt calls religious experience unreliable, connects possible disciple experiences to the same issue, and proposes experimental psychology to test natural production.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-evil-as-discriminating-evidence",
+          "sectionId": "evil-hiddenness",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "The world's evil is empirical evidence against a perfectly good God, while limited supernatural evidence would not establish an omnipotent and omniscient deity.",
+          "sourceSpan": {
+            "startEvent": 2358,
+            "endEvent": 2414,
+            "excerpt": "God is an omnipotent omniscient agent he can do whatever he likes okay so what sort of world would you expect him to create what what's the the evidence that would show that one particular divine being has been at work rather than another well it's the goodness isn't it that's the crucial thing so the problem of evil shouldn't be called the problem of evil it should be called the problem of the empirical"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican announces the problem of evil, anticipates Craig's response, and carries the argument through the explicit conclusion of his closing speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-evil-hiddenness-counterevidence"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-fine-tuning-objections-answered",
+              "pro-hiddenness-saving-relationship"
+            ],
+            "components": [
+              {
+                "componentId": "con-evil-as-discriminating-evidence-component-01",
+                "targetMoveId": "pro-fine-tuning-objections-answered",
+                "text": "Whether fine-tuning or limited supernatural evidence identifies a morally perfect rather than morally indifferent or evil designer.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-evil-as-discriminating-evidence-component-02",
+                "targetMoveId": "pro-hiddenness-saving-relationship",
+                "text": "Whether observed evil and hiddenness fit the expected world of an omnipotent, omniscient, perfectly good God.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move reframes evil as discriminating empirical evidence among divine hypotheses and explicitly challenges the inference to omniperfect attributes."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument clearly distinguishes evidence for some supernatural agency from evidence for omnipotence, omniscience, and perfect goodness."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move frames evil as comparative evidence rather than a strict contradiction and appropriately asks what world each hypothesis predicts."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A perfectly good God may permit evil for morally sufficient purposes",
+            "decisiveQualification": "Compatibility does not remove evidential force unless those purposes improve the comparative likelihood of the observed pattern"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The comparative-expectation structure is explicit and avoids inferring impossibility merely from the presence of evil."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the indispensable central evil-and-hiddenness counterevidence bridge."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly contacts the decisive attribute-identification and empirical-expectation components."
+            }
+          },
+          "evidenceBasis": "The excerpt asks what world an omnipotent and omniscient agent would create and identifies goodness as the crucial empirical discriminator among possible divine beings.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-natural-evil-salvific-purpose",
+          "sectionId": "evil-hiddenness",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Natural evil may help maximize freely formed relationships with God, while most animals may experience pain without the higher-order awareness characteristic of human suffering.",
+          "sourceSpan": {
+            "startEvent": 2859,
+            "endEvent": 2909,
+            "excerpt": "order awareness is only found in the higher primates and human beings it's found in the frontal cortex of the frontal lobe of the cortex of the brain and therefore even though animals at large experience pain they're not aware of it they are literally not aware that they are in pain and therefore this goes a long way toward diminishing the problem of animal suffering I think I think God in His mercy has so created the natural"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator's question concerns Craig's theistic position, and the Christian first-person answer is continuous until Millican begins his response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-evil-hiddenness-counterevidence"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-evil-as-discriminating-evidence",
+              "con-natural-religious-psychology"
+            ],
+            "components": [
+              {
+                "componentId": "pro-natural-evil-salvific-purpose-component-01",
+                "targetMoveId": "con-evil-as-discriminating-evidence",
+                "text": "Whether natural evil can serve a morally sufficient purpose connected to freely formed saving relationships.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-natural-evil-salvific-purpose-component-02",
+                "targetMoveId": "con-evil-as-discriminating-evidence",
+                "text": "Whether animal pain constitutes suffering of the higher-order kind relevant to the evidential problem.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-natural-evil-salvific-purpose-component-03",
+                "targetMoveId": "con-natural-religious-psychology",
+                "text": "Whether natural conditions can be interpreted through a salvific rather than purely psychological account.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts both a proposed purpose for natural evil and the scale of animal suffering, but its empirical animal-consciousness claim and salvific counterfactual are weakly supported."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "materially-unstable",
+            "scopeStability": "materially-unstable",
+            "qualificationExplicitness": "materially-misleading",
+            "rationale": "The distinction between pain and awareness of pain is evaluation-obscuring, and its restriction to higher primates is stated too broadly."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "radically-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical claim that most animals are literally unaware of pain is radically stronger than the selected support and ordinary evidential caution permit."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Animal pain can constitute morally significant suffering without reflective human-style self-awareness",
+            "decisiveQualification": "Absence of higher-order reflection does not imply absence of conscious aversive experience"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 56,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (55 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 40,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (42 and 38); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central evil-and-hiddenness counterevidence bridge on natural and animal suffering."
+            },
+            "representationalCharity": {
+              "value": 42,
+              "rationale": "The response materially weakens the animal-suffering objection by equating limited higher-order awareness with unawareness of pain."
+            },
+            "responsiveness": {
+              "value": 75,
+              "rationale": "It answers two decisive evil components explicitly, although the answers depend on substantial unsupported empirical and modal premises."
+            }
+          },
+          "evidenceBasis": "The excerpt locates higher-order awareness in higher primates and humans, infers that other animals are literally unaware of pain, and links natural order to divine mercy and purpose.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-suffering-and-sincere-nonbelief",
+          "sectionId": "evil-hiddenness",
+          "side": "con",
+          "speaker": "Peter Millican",
+          "moveKind": "reply",
+          "proposition": "A God who determines nature's rules could reveal himself clearly without suffering, yet sincere rational inquiry can still terminate in justified unbelief.",
+          "sourceSpan": {
+            "startEvent": 2910,
+            "endEvent": 2964,
+            "excerpt": "take him up on and I wanted to see what he had to say I knew what he had to say on the problem of evil I find the idea that God has designed the universe in such a way to maximize those of us vote those who come to relationship with him absolutely absurd and bear in mind God here makes the rules okay he's not like a pair of who with a child has to take as it were a pre-existing"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Millican explicitly discusses Craig's familiar treatment of evil and narrates his own inquiry until the moderator introduces a new question.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-evil-hiddenness-counterevidence"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-natural-evil-salvific-purpose",
+              "pro-hiddenness-saving-relationship"
+            ],
+            "components": [
+              {
+                "componentId": "con-suffering-and-sincere-nonbelief-component-01",
+                "targetMoveId": "pro-natural-evil-salvific-purpose",
+                "text": "Whether an omnipotent rule-maker needs suffering to maximize freely formed relationships.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-suffering-and-sincere-nonbelief-component-02",
+                "targetMoveId": "pro-hiddenness-saving-relationship",
+                "text": "Whether sincere rational inquiry can end in justified nonbelief despite the available evidence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-suffering-and-sincere-nonbelief-component-03",
+                "targetMoveId": "pro-natural-evil-salvific-purpose",
+                "text": "Whether the animal-awareness claim diminishes the evidential problem of suffering.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges the salvific-necessity premise and supplies sincere inquiry as a counterexample, but it does not answer the distinct animal-consciousness component."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument consistently concerns an omnipotent rule-maker, avoidability of suffering, and the possibility of sincere justified nonbelief."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The counterexample from sincere inquiry is appropriately personal and qualified, though 'absolutely absurd' overstates the developed warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "God may know that apparently avoidable suffering is necessary for the best feasible salvific outcome",
+            "decisiveQualification": "Appealing to unknown necessity requires an account of why an omnipotent rule-maker lacks better feasible means"
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The rule-maker distinction coherently presses the availability of alternatives and the personal inquiry example directly bears on hiddenness."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The first-person inquiry is relevant but anecdotal, while the broader claim about feasible divine alternatives remains principally conceptual."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable central bridge concerning suffering and sincere nonbelief."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the decisive divine-purpose and sincere-nonbelief components while leaving animal suffering untouched."
+            }
+          },
+          "evidenceBasis": "The excerpt calls the maximizing-relationship proposal absurd, stresses that God determines the rules rather than facing fixed constraints, and describes the speaker's own sustained inquiry.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct pro-side debate-wide consequence survives exclusion from the move ratings, response links, importance judgments, section weights, and burden contacts already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified beyond the locked pro bridges.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any cumulative pro-side effect is already represented by the individual move judgments and locked route structure.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the alleged residual would not change completion of any named pro burden bridge independently of existing judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct con-side debate-wide consequence survives exclusion from the move ratings, response links, importance judgments, section weights, and burden contacts already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified beyond the locked con bridges.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any cumulative con-side effect is already represented by the individual move judgments and locked route structure.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the alleged residual would not change completion of any named con burden bridge independently of existing judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "burden-religious-epistemology",
+          "title": "Burden, Religious Diversity, and Epistemic Method",
+          "weightPercent": 12,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-immediate-experience-of-god",
+                  "importance": 2,
+                  "score": 71
+                },
+                {
+                  "moveId": "pro-negative-answer-bears-burden",
+                  "importance": 2,
+                  "score": 74
+                }
+              ]
+            },
+            "con": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "con-religious-diversity-unreliability",
+                  "importance": 2,
+                  "score": 80
+                },
+                {
+                  "moveId": "con-specific-christian-burden",
+                  "importance": 2,
+                  "score": 72
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "cosmic-beginning-causation",
+          "title": "Cosmic Beginning, Causation, and a Personal Creator",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-cosmic-beginning-personal-cause",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "pro-efficient-cause-not-quantum-nothing",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-global-beginning-underdetermined",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-immaterial-mind-inference-gap",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "fine-tuning-design",
+          "title": "Fine-Tuning, Design, and Alternative Explanations",
+          "weightPercent": 17,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-fine-tuning-design-inference",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-fine-tuning-objections-answered",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "con-fine-tuning-underdetermination",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "objective-morality",
+          "title": "Objective Morality and Divine Grounding",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 72,
+              "moves": [
+                {
+                  "moveId": "pro-objective-morality-divine-ground",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-moral-obligation-requires-lawgiver",
+                  "importance": 3,
+                  "score": 69
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-moral-objectivity-burden",
+                  "importance": 3,
+                  "score": 91
+                },
+                {
+                  "moveId": "con-atheistic-moral-realism",
+                  "importance": 3,
+                  "score": 85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "resurrection-experience",
+          "title": "Resurrection Evidence and Religious Experience",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "pro-resurrection-historical-inference",
+                  "importance": 3,
+                  "score": 76
+                },
+                {
+                  "moveId": "pro-resurrection-naturalism-objection",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "con-gospel-evidence-limitations",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-natural-religious-psychology",
+                  "importance": 3,
+                  "score": 85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "evil-hiddenness",
+          "title": "Evil, Suffering, and Divine Hiddenness",
+          "weightPercent": 14,
+          "sides": {
+            "pro": {
+              "score": 64,
+              "moves": [
+                {
+                  "moveId": "pro-hiddenness-saving-relationship",
+                  "importance": 2,
+                  "score": 71
+                },
+                {
+                  "moveId": "pro-natural-evil-salvific-purpose",
+                  "importance": 3,
+                  "score": 60
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-evil-as-discriminating-evidence",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-suffering-and-sincere-nonbelief",
+                  "importance": 3,
+                  "score": 82
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 75.14,
+          "burdenCompletionAdjustment": 0,
+          "score": 75
+        },
+        "con": {
+          "weightedSectionMean": 86.68,
+          "burdenCompletionAdjustment": 0,
+          "score": 87
+        }
+      },
+      "winner": "con",
+      "winningMargin": 12
+    },
+    "audit": {
+      "sections": 6,
+      "moves": 23,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 133671,
+  "proposedAdapterSha256": "7677548614a7e4d50895b341f3d1be7d4ca5dd95913cfac933417afb0d9971f0",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "161",
+    "sections": 6,
+    "moves": 23,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "adapterSha256": "7677548614a7e4d50895b341f3d1be7d4ca5dd95913cfac933417afb0d9971f0",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

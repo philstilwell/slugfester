@@ -1,0 +1,2015 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+  "status": "frozen-post-canary-batch-16-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "planningOnly": true,
+  "debateNumber": "16",
+  "debateId": "hirsi-ali-dawkins-god-debate-2024",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/final-candidates/debate-16.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/DBsHdHMvucs/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+    "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+    "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+    "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+    "finalCandidateSha256": "2b2fa13ee4e6c4b3901cb3fb1dcf23455284fee1d8976741ce73268e4b5a733b",
+    "eventsPath": ".assessment-cache/captions/DBsHdHMvucs/events.json",
+    "eventsSha256": "7c5637b8fe52a892d553c96a260187ab044706539218e4620666200606ead845",
+    "finalJudgmentSha256": "f41ce257e4b6cfe39972ea99bb3ef26d154effdb7e0f850c8dc1ab76a98da484"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/production-compatibility/output-bundle/staged-ledgers/hirsi-ali-dawkins-god-debate-2024.json",
+    "productionLedger": "docs/assessment-ledgers/hirsi-ali-dawkins-god-debate-2024.json"
+  },
+  "productionLedgerBaseline": {
+    "exists": false,
+    "sha256": null
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-16-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+    "status": "frozen-post-canary-batch-16-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 16,
+    "debateNumber": "16",
+    "debateId": "hirsi-ali-dawkins-god-debate-2024",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+      "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+      "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+      "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+      "finalCandidateSha256": "2b2fa13ee4e6c4b3901cb3fb1dcf23455284fee1d8976741ce73268e4b5a733b",
+      "eventsPath": ".assessment-cache/captions/DBsHdHMvucs/events.json",
+      "eventsSha256": "7c5637b8fe52a892d553c96a260187ab044706539218e4620666200606ead845",
+      "finalJudgmentSha256": "f41ce257e4b6cfe39972ea99bb3ef26d154effdb7e0f850c8dc1ab76a98da484"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "16",
+      "debateId": "hirsi-ali-dawkins-god-debate-2024",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-christian-renewal-route",
+          "side": "pro",
+          "description": "Justify Hirsi Ali's Christian turn by connecting transformative personal experience and chosen faith with Christianity's moral character, inherited institutions, and claimed necessity for Western civilizational renewal.",
+          "successCriteria": "Establish that her experience provides a legitimate personal basis for conversion, that Christianity offers a defensible affirmative moral framework, and that renewing it answers a consequential institutional and ideological vacuum not adequately filled by secular alternatives.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-justification-bridge",
+            "tier": "motion",
+            "description": "Connect personal transformation, Christian truth commitments, and civilizational need into a sufficient justification for Hirsi Ali's Christian turn."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-experiential-bridge",
+              "tier": "central",
+              "description": "Explain how the crisis, prayer, perceived encounter with a higher reality, and recovery can rationally support a personal commitment to Christianity."
+            },
+            {
+              "bridgeId": "pro-moral-distinction-bridge",
+              "tier": "central",
+              "description": "Establish that Christianity's central teachings and exemplar provide an affirmative moral vision materially distinct from the rival religious ideology under discussion."
+            },
+            {
+              "bridgeId": "pro-civilizational-need-bridge",
+              "tier": "central",
+              "description": "Show that the removal of Christian formation created an institutional moral vacuum and that Christian renewal can supply what secular alternatives have not organized or transmitted."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-inheritance-transmission-bridge",
+              "tier": "subsidiary",
+              "description": "Explain why inherited faith, education, organization, and active counter-messaging are needed to transmit the proposed moral framework across generations."
+            },
+            {
+              "bridgeId": "pro-criticism-replacement-bridge",
+              "tier": "subsidiary",
+              "description": "Require criticism of Christian institutions to identify a viable replacement capable of moral formation and resistance to destructive ideological recruitment."
+            }
+          ]
+        },
+        {
+          "routeId": "con-atheist-truth-test-route",
+          "side": "con",
+          "description": "Reject the proposed justification by separating psychological or social benefits from the truth of Christianity's supernatural claims, challenging its asserted moral authority, and identifying rational secular resources for morality and ideological resistance.",
+          "successCriteria": "Establish that personal recovery and civilizational usefulness do not demonstrate Christian truth, that Christianity's doctrines or institutions cannot simply be assumed morally authoritative, and that rational secular alternatives defeat the claim of religious necessity.",
+          "motionBridge": {
+            "bridgeId": "con-motion-truth-test-bridge",
+            "tier": "motion",
+            "description": "Require the Christian turn to satisfy a truth test independent of consolation, meaning, institutional utility, or desirable social consequences."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-supernatural-evidence-bridge",
+              "tier": "central",
+              "description": "Identify Christianity's definite supernatural commitments and require evidence proportionate to their universe-defining factual significance."
+            },
+            {
+              "bridgeId": "con-moral-authority-bridge",
+              "tier": "central",
+              "description": "Test whether Christian doctrines and institutions merit the moral authority assigned to them rather than deriving that authority from their religious status."
+            },
+            {
+              "bridgeId": "con-secular-sufficiency-bridge",
+              "tier": "central",
+              "description": "Show that humanism, rational inquiry, and moral philosophy can supply standards of judgment without adding supernatural beliefs."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-benefit-truth-distinction-bridge",
+              "tier": "subsidiary",
+              "description": "Distinguish the consoling, motivational, or organizational effects of faith from evidence that its existential propositions are true."
+            },
+            {
+              "bridgeId": "con-rational-resistance-bridge",
+              "tier": "subsidiary",
+              "description": "Explain how enlightened rationality can oppose dangerous ideology without using a less extreme religious commitment as a protective instrument."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "personal-experience-and-conversion",
+          "title": "Personal experience and conversion",
+          "weightPercent": 20,
+          "rationale": "The motion expressly places Hirsi Ali's crisis, prayer, recovery, and chosen commitment against the objection that a transformative experience alone cannot establish a particular religion."
+        },
+        {
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "title": "Supernatural truth and practical benefit",
+          "weightPercent": 22,
+          "rationale": "The central truth-test clash asks whether meaning, consolation, and social usefulness can justify belief when Christianity also makes definite factual claims about supernatural reality."
+        },
+        {
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "title": "Christian moral character and religious distinction",
+          "weightPercent": 18,
+          "rationale": "The civilizational case depends on Christianity's moral content and its claimed distinction from Islam, while the opposing route contests both its doctrines and the asserted categorical difference."
+        },
+        {
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "title": "Moral formation and secular alternatives",
+          "weightPercent": 23,
+          "rationale": "The alleged moral vacuum must be tested against secular humanism and moral philosophy, including whether either religious or secular institutions can transmit an effective framework to younger generations."
+        },
+        {
+          "sectionId": "civilizational-defense-and-ideological-resistance",
+          "title": "Civilizational defense and ideological resistance",
+          "weightPercent": 17,
+          "rationale": "The concluding burden concerns whether renewed Christian belief is needed to resist Islamist recruitment and defend Western inheritance or whether rationality can answer the threat without religion."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-experiential-crisis-prayer-recovery",
+          "sectionId": "personal-experience-and-conversion",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "constructive",
+          "proposition": "During a severe crisis that persisted despite evidence-based treatment, prayer produced a perceived connection to a higher reality and a recovery that Hirsi Ali understood as miraculous and life-restoring.",
+          "sourceSpan": {
+            "startEvent": 60,
+            "endEvent": 98,
+            "excerpt": "crisis. I lived for about a decade with intense depression and anxiety and self-loathing. I hit rock bottom, I went to a place where I actually didn't want to live anymore, but wasn't brave enough to take my own life. So I was self medicating. I had over a long period of time seen a psychiatrist, other doctors. I was trying to understand my condition and trying to treat it with the help of pure evidence-based"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly invites Hirsi Ali to explain her conversion, and the first-person account consistently identifies her as the speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-experiential-bridge"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the experiential premise by describing crisis, unsuccessful conventional treatment, prayer, perceived connection, and recovery."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim is recoverable as Hirsi Ali's personal interpretation, with perception and miraculous understanding appropriately attributed to her."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The testimony strongly supports her reported experience and interpretation, but does not independently establish supernatural causation."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supplies the central experiential bridge, although it does not by itself complete the broader motion justification."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The passage principally recounts a first-person experience rather than evaluating a developed competing interpretation."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it directly develops a central experiential bridge with a detailed first-person sequence."
+            }
+          },
+          "evidenceBasis": "The locked excerpt reports prolonged depression, anxiety, self-loathing, medical treatment, prayer, perceived higher connection, and recovery.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-personal-recovery-does-not-establish-christianity",
+          "sectionId": "personal-experience-and-conversion",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "A moving personal recovery does not by itself establish Christianity, because identifying as Christian entails definite supernatural claims about Jesus that require belief.",
+          "sourceSpan": {
+            "startEvent": 100,
+            "endEvent": 110,
+            "excerpt": "moving personal story. But to call yourself a Christian is a bit different. I mean, a Christian has to believe in something. You go to church now. And you listen to the vicar. Do you notice what a lot of nonsense he talks about? I mean, do you really take it seriously that Jesus is the Son of God? That Jesus rose from the dead? Jesus was born of a virgin? That is a part of Christianity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Dawkins's reaction immediately beforehand, and the passage directly addresses Hirsi Ali by name and challenges Christian doctrines.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-truth-test-bridge"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-experiential-crisis-prayer-recovery"
+            ],
+            "components": [
+              {
+                "componentId": "con-personal-recovery-does-not-establish-christianity-component-01",
+                "targetMoveId": "pro-experiential-crisis-prayer-recovery",
+                "text": "Whether the reported recovery rationally identifies Christianity rather than merely recording a powerful personal experience.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-personal-recovery-does-not-establish-christianity-component-02",
+                "targetMoveId": "pro-experiential-crisis-prayer-recovery",
+                "text": "Whether the experience supplies support for Christianity's definite claims about Jesus.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Dawkins expressly separates the moving recovery story from the further requirements of Christian identity, names concrete doctrines, and states the defeating consequence that recovery alone does not establish them."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between personal recovery and Christianity's specific doctrinal commitments is stated clearly and with stable scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Requiring additional support for definite supernatural claims is proportionate to the limited evidential reach of the personal narrative."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The experience may provide a legitimate personal reason without demonstrating Christianity to everyone.",
+            "decisiveQualification": "A personal reason still does not establish the specific doctrines Dawkins enumerates."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "Within the motion tier, it directly advances the independent truth test by denying that recovery alone completes justification of a Christian turn."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The reply acknowledges that the story is moving while preserving the decisive distinction between experience and doctrinal truth."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts the missing identification inference and illustrates the unproved Christian commitments with several definite examples."
+            }
+          },
+          "evidenceBasis": "The excerpt calls the account moving, then asks whether Christianity's claims about divine sonship, resurrection, and virgin birth are seriously believed.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-chosen-faith-personal-and-civilizational-planes",
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Hirsi Ali chooses to accept Christ, his teachings, and God on a personally rewarding plane while separately maintaining that Christianity supplies a historically rooted message needed by Western civilization.",
+          "sourceSpan": {
+            "startEvent": 167,
+            "endEvent": 201,
+            "excerpt": "It is different planes of perception. So I choose to accept Jesus Christ, the teachings of Jesus Christ, the story of Jesus Christ, I choose to accept that. On the personal level, the rewards and I get that this is very subjective again, but mine are through choice, which is separate from where I think that, aside from my personal experience, the history of Western civilization"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer follows a question addressed to Hirsi Ali and uses first-person descriptions of her chosen belief and her civilizational argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-justification-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-personal-recovery-does-not-establish-christianity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-chosen-faith-personal-and-civilizational-planes-component-01",
+                "targetMoveId": "con-personal-recovery-does-not-establish-christianity",
+                "text": "Whether she actually accepts Christianity's specific commitments rather than only valuing recovery.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-chosen-faith-personal-and-civilizational-planes-component-02",
+                "targetMoveId": "con-personal-recovery-does-not-establish-christianity",
+                "text": "Whether choosing acceptance supplies a truth-directed warrant for those commitments.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "She answers that she chooses to accept Christ and his teachings, but does not supply the evidential bridge Dawkins demanded for the claims' truth."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The personal and civilizational planes are expressly separated, though choosing to accept remains ambiguous between commitment and factual belief."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "She labels the personal rewards subjective, but the move gives limited warrant for the stronger civilizational necessity it introduces."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Dawkins's objection asks for truth-directed warrant, not merely an explanation of why belief is personally or socially attractive.",
+            "decisiveQualification": "Separating the planes clarifies the justification offered but does not satisfy the factual truth test on the supernatural claims."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 99,
+              "rationale": "The move directly attempts the motion-level justification by combining personal conversion and civilizational need."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The reply does not caricature the objection and candidly marks subjectivity, but it answers a practical-personal question rather than the strongest epistemic demand."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "This is a partial answer: it contacts acceptance of Christian commitments but not the decisive truth-warrant challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly says she chooses to accept Christ and distinguishes subjective personal rewards from her historical civilizational case.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-inherited-sin-and-vicarious-punishment-objection",
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Christian doctrines of inherited sin and the punishment of Jesus for humanity's sins are nonsensical and morally unpleasant, undermining Christianity's asserted moral authority.",
+          "sourceSpan": {
+            "startEvent": 204,
+            "endEvent": 224,
+            "excerpt": "with semen. That's why he's clear of sin. His mother Mary had to be clear of sin as well. So she had to have an immaculate conception. This is all obvious nonsense. This is all theological bullshit. The idea that humanity is born in sin and has to be cured of sin, by Jesus being crucified, Jesus being punished for all our sin is a morally very unpleasant idea. I'm sure you must"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage begins with Dawkins's characteristic comparison of Islam and Christianity and develops his explicit doctrinal critique before asking Hirsi Ali to agree.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-moral-authority-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-chosen-faith-personal-and-civilizational-planes"
+            ],
+            "components": [
+              {
+                "componentId": "con-inherited-sin-and-vicarious-punishment-objection-component-01",
+                "targetMoveId": "pro-chosen-faith-personal-and-civilizational-planes",
+                "text": "Whether chosen faith and civilizational history provide a sufficient justification on either stated plane.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-inherited-sin-and-vicarious-punishment-objection-component-02",
+                "targetMoveId": "pro-chosen-faith-personal-and-civilizational-planes",
+                "text": "Whether Christianity's doctrines support the moral authority assigned to the chosen framework.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The doctrinal moral objection bears on Christianity's fitness, but it does not address the decisive two-plane justification or show what follows for the personal and civilizational claims as framed."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The objections to inherited sin and vicarious punishment are clear, but the scope sometimes slides from particular doctrinal readings to Christianity generally."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling the doctrines obvious nonsense and morally unpleasant exceeds the defense offered and omits interpretive qualifications."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Inherited sin and atonement can be interpreted nonliterally as accounts of universal moral failure and restorative sacrifice.",
+            "decisiveQualification": "Even nonliteral readings must explain why guilt or punishment is transferred across persons."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con burden of testing Christianity's claimed moral authority."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The objection reaches a serious moral concern but does not engage stronger nonliteral or restorative interpretations before dismissing the doctrines."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it contacts a material moral-authority component but not the decisive personal-choice and civilizational-need components of the target."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies inherited sin, immaculate conception, crucifixion as punishment for human sin, and labels that structure morally unpleasant.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-christian-love-redemption-and-distinction",
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Christianity presents suffering, sin, love, redemption, and rebirth as a powerful account of the human condition and differs morally from Islam in its central teachings and adherents' responses to criticism.",
+          "sourceSpan": {
+            "startEvent": 225,
+            "endEvent": 273,
+            "excerpt": "died and I was born. That story of redemption, and rebirth, I think makes Christianity actually a very, very powerful story for the human condition and human existence. The pain of suffering, but also our internal recognition of what you call sin. But perhaps the character defects of both good and evil are there, but that both good and evil are in us. I think those teachings in"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The first-person reference to being a new Christian and the autobiographical comparison with growing up Muslim clearly attribute the response to Hirsi Ali.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-moral-distinction-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-inherited-sin-and-vicarious-punishment-objection",
+              "con-personal-recovery-does-not-establish-christianity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-christian-love-redemption-and-distinction-component-01",
+                "targetMoveId": "con-inherited-sin-and-vicarious-punishment-objection",
+                "text": "Whether Christianity's treatment of sin and redemption is morally unpleasant or a powerful account of the human condition.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-christian-love-redemption-and-distinction-component-02",
+                "targetMoveId": "con-personal-recovery-does-not-establish-christianity",
+                "text": "Whether the power of Christian teachings supplies evidence for their supernatural truth.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-christian-love-redemption-and-distinction-component-03",
+                "targetMoveId": "con-inherited-sin-and-vicarious-punishment-objection",
+                "text": "Whether Christianity is morally distinct from Islam in teaching and response to criticism.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the moral characterization of sin and redemption by offering an affirmative interpretation and comparative distinction, but it does not answer the separate supernatural truth demand."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The affirmative moral vision is clear, but the move expands from central teachings to Western flourishing without fixing the causal scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The power of the narrative is plausibly defended, while the broader flourishing and religious-distinction claims exceed the supplied support."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Dawkins's objection targets vicarious punishment specifically, not every Christian teaching about love or redemption.",
+            "decisiveQualification": "A powerful broader story does not resolve whether punishing Jesus for others' sins is moral."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central moral-distinction bridge with an affirmative account of Christianity's teachings."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The reply offers a serious positive interpretation but partially substitutes its preferred account for the strongest specific moral objection."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the decisive moral component and adds comparative content, while leaving the earlier factual-truth challenge unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt presents redemption, rebirth, suffering, internal sin, and coexisting good and evil as Christianity's powerful account of human existence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-public-christian-decline-moral-vacuum",
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "constructive",
+          "proposition": "Driving Christianity and its teachings from schools, universities, and public life created a moral vacuum in which destructive movements can claim the allegiance of young people.",
+          "sourceSpan": {
+            "startEvent": 303,
+            "endEvent": 329,
+            "excerpt": "and the teachings of Christianity out of the public space, out of school out of universities, and a vacuum of God. And that vacuum is now being filled, as GK Chesterton said, not because people have come to reason, but because now they'll believe in anything. And there are very awful forces today out there that are claiming the hearts and minds and souls of these young students"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted first-person appeal to Dawkins, Pinker, universities, and the consequences of marginalizing Christianity is identifiable as Hirsi Ali's argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-civilizational-need-bridge"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the civilizational causal claim that removing Christian formation created an institutional vacuum available to destructive movements."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The moral-vacuum thesis is recoverable, but Christianity, public removal, and awful forces are broad categories with unsettled scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The span states a strong causal diagnosis without comparative evidence separating Christian decline from rival social causes."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 55,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (55 and 54); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It squarely advances the central civilizational-need bridge by alleging a formation vacuum after Christian decline."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The constructive claim does not develop or assess a specific competing causal account within the selected span."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt claims Christianity was driven from public institutions and that the resulting God-vacuum is being filled by harmful forces seeking youth allegiance.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-supernatural-creator-is-universe-defining-claim",
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "The existence of a supernatural creator intelligence would be a universe-defining factual claim whose truth matters more than personal comfort, morality, or inspiring stories.",
+          "sourceSpan": {
+            "startEvent": 379,
+            "endEvent": 404,
+            "excerpt": "different universe. That's a big thing. It's bigger than personal comfort and nice stories and these things. The idea that the universe has lurking beneath it an intelligence or supernatural intelligence that invented the laws of physics that invented mathematics is a stupendous idea, if it's true. To me that simply dwarfs all talk of nobility and morality and comfort and that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator addresses Richard immediately before this answer, and the speaker explicitly revises his view of Hirsi Ali while restating a scientific truth test.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-supernatural-evidence-bridge"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-chosen-faith-personal-and-civilizational-planes",
+              "pro-experiential-crisis-prayer-recovery",
+              "pro-christian-love-redemption-and-distinction",
+              "pro-public-christian-decline-moral-vacuum"
+            ],
+            "components": [
+              {
+                "componentId": "con-supernatural-creator-is-universe-defining-claim-component-01",
+                "targetMoveId": "pro-chosen-faith-personal-and-civilizational-planes",
+                "text": "Whether personal reward and civilizational usefulness can displace the factual question of supernatural reality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-supernatural-creator-is-universe-defining-claim-component-02",
+                "targetMoveId": "pro-experiential-crisis-prayer-recovery",
+                "text": "Whether perceived higher reality establishes a supernatural intelligence underlying the universe.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-supernatural-creator-is-universe-defining-claim-component-03",
+                "targetMoveId": "pro-christian-love-redemption-and-distinction",
+                "text": "Whether moral nobility and inspiring narrative establish supernatural truth.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-supernatural-creator-is-universe-defining-claim-component-04",
+                "targetMoveId": "pro-public-christian-decline-moral-vacuum",
+                "text": "Whether claimed social need establishes the existence of a supernatural creator.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses a category error between practical or moral value and universe-defining factual truth, then states that the factual issue dwarfs those considerations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The factual claim, its contrast with practical benefits, and its universe-level scope are all clearly delineated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The conditional significance claim is carefully framed with if true and proportionately distinguishes factual truth from practical value."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christianity's practical and moral fruits may contribute indirect evidence rather than replace factual evidence entirely.",
+            "decisiveQualification": "Indirect practical fruits do not alone resolve whether a supernatural creator exists."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supplies the central supernatural-evidence requirement that anchors the con truth-test route."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The reply preserves the possible practical value of the opposing considerations while accurately identifying the independent factual question they do not settle."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts the decisive inference and clearly states both why the offered considerations fail and what factual demand remains."
+            }
+          },
+          "evidenceBasis": "The excerpt calls supernatural intelligence a stupendous, universe-changing proposition and says it dwarfs comfort, inspiring stories, and moral nobility.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-benefit-does-not-make-existential-claims-true",
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Faith's provision of consolation, meaning, and purpose supplies no reason to regard Christianity's factual claims about the world and universe as true.",
+          "sourceSpan": {
+            "startEvent": 555,
+            "endEvent": 580,
+            "excerpt": "too, but they are a bit different. But I do have a purpose in life, I have a meaning in life. But just simply because something gives you a meaning and a purpose in life. It doesn't make the existential claims true. Christianity, like any other religion, makes claims about the world about the universe, which are either true or not true. And I may be wrong. And you may or may be"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage follows Hirsi Ali's extended defense of faith and uses Dawkins's recurring distinction between psychological benefits and the truth of religious claims.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-truth-test-bridge"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-chosen-faith-personal-and-civilizational-planes",
+              "pro-experiential-crisis-prayer-recovery",
+              "pro-christian-love-redemption-and-distinction",
+              "pro-public-christian-decline-moral-vacuum"
+            ],
+            "components": [
+              {
+                "componentId": "con-benefit-does-not-make-existential-claims-true-component-01",
+                "targetMoveId": "pro-chosen-faith-personal-and-civilizational-planes",
+                "text": "Whether meaning, purpose, and chosen personal reward provide reason to regard Christianity's existential claims as true.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-benefit-does-not-make-existential-claims-true-component-02",
+                "targetMoveId": "pro-experiential-crisis-prayer-recovery",
+                "text": "Whether consolation or recovery makes Christian factual propositions true.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-benefit-does-not-make-existential-claims-true-component-03",
+                "targetMoveId": "pro-christian-love-redemption-and-distinction",
+                "text": "Whether a powerful moral story establishes its existential propositions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-benefit-does-not-make-existential-claims-true-component-04",
+                "targetMoveId": "pro-public-christian-decline-moral-vacuum",
+                "text": "Whether social usefulness establishes Christian claims about reality.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move explicitly identifies the benefit-to-truth inference as invalid, states that existential claims remain independently true or false, and acknowledges that either speaker could be mistaken."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Benefits and existential truth are sharply distinguished, while the possibility that Christianity is true remains expressly acknowledged."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The categorical non-entailment is warranted, and Dawkins expressly allows that he may be wrong and Christianity may be true."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Comfort and meaning might serve as indirect signs within a cumulative case for Christianity.",
+            "decisiveQualification": "Their mere presence cannot entail the factual truth of Christianity's claims."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 97,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (96 and 97); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 91,
+              "rationale": "The conceptual non-entailment is adequately warranted, with explicit uncertainty about the ultimate truth of Christianity."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supports the motion-level con truth test by requiring truth independent of benefit or consolation."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 100,
+              "rationale": "Within diagnostic defeats, it provides exceptionally explicit contact with the decisive inference, its defeating consequence, and a careful acknowledgment of unresolved truth."
+            }
+          },
+          "evidenceBasis": "The excerpt states that meaning and purpose do not make existential claims true and explicitly concedes that either speaker may be mistaken.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-abrahamic-similarity-and-christian-doctrinal-decline",
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Christianity and Islam share objectionable Abrahamic commitments, while Christianity's improved modern condition largely reflects that Christians no longer take those doctrines seriously.",
+          "sourceSpan": {
+            "startEvent": 858,
+            "endEvent": 878,
+            "excerpt": "Abrahamic religions, Judaism, Christianity, and Islam. They share have the same Holy Book, they believe in Hell, they believe in a dictatorial God. They believe in so much that’s similar. The problem with Islam is that it's 700 years out of date, and Christianity has moved on. Thank goodness, and mainly because most Christians don't actually believe it anymore. They don't take it seriously"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The move begins with a direct disagreement and continues through the locked lookahead as Dawkins compares Abrahamic religions and explains their present difference.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-moral-distinction-bridge"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-christian-love-redemption-and-distinction",
+              "pro-public-christian-decline-moral-vacuum"
+            ],
+            "components": [
+              {
+                "componentId": "con-abrahamic-similarity-and-christian-doctrinal-decline-component-01",
+                "targetMoveId": "pro-christian-love-redemption-and-distinction",
+                "text": "Whether Christianity is morally and doctrinally distinct enough from Islam to sustain the claimed categorical contrast.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-abrahamic-similarity-and-christian-doctrinal-decline-component-02",
+                "targetMoveId": "pro-public-christian-decline-moral-vacuum",
+                "text": "Whether contemporary Christianity's moderated condition supports restoring stronger doctrinal commitment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly contests categorical distinction by naming shared Abrahamic commitments and explains the present difference through reduced Christian doctrinal adherence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The general comparison is recoverable, but same holy book and most Christians are broad claims needing denominational and textual qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Shared Abrahamic features support similarity, but sweeping textual equivalence and claims about most Christians exceed the shown evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christianity and Islam can share Abrahamic elements while differing substantially in texts, exemplars, and present institutions.",
+            "decisiveQualification": "Shared elements alone do not establish moral equivalence across the traditions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The secularization explanation is intelligible, but shared features do not by themselves defeat all morally material distinctions."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The move relies on selective commonalities and broad assertions about contemporary belief without representative comparative evidence."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central pro moral-distinction bridge rather than offering merely adjacent religious criticism."
+            },
+            "representationalCharity": {
+              "value": 56,
+              "rationale": "The reply identifies real commonalities but materially compresses the strongest comparative case by approaching broad equivalence."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it explicitly contacts the comparative premise and supplies a concrete alternative explanation for Christianity's improved modern condition."
+            }
+          },
+          "evidenceBasis": "The excerpt lists shared Abrahamic beliefs, says Christianity moved on, and attributes its modern condition mainly to Christians taking doctrine less seriously.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Humanism, rationality, and secular moral philosophy supply the standards by which modern people decide which religious moral teachings to accept or reject.",
+          "sourceSpan": {
+            "startEvent": 885,
+            "endEvent": 900,
+            "excerpt": "humanism, we have rationality, we have moral philosophy. Moral philosophy is how we decide which bits of Christianity we like, and which bits we don't, which bits of the Bible we take as being moral and which ones we don't we cherry pick. And the basis for our cherry picking is modern, secular, moral philosophy, which is a well established philosophical discipline. And it's on"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator addresses Dawkins, and the ensuing first-person answer consistently states his secular account of morality.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-secular-sufficiency-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-public-christian-decline-moral-vacuum",
+              "pro-christian-love-redemption-and-distinction"
+            ],
+            "components": [
+              {
+                "componentId": "con-secular-moral-philosophy-supplies-judgment-standard-component-01",
+                "targetMoveId": "pro-public-christian-decline-moral-vacuum",
+                "text": "Whether secular institutions can organize and transmit moral formation sufficiently to prevent the alleged youth vacuum.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-secular-moral-philosophy-supplies-judgment-standard-component-02",
+                "targetMoveId": "pro-christian-love-redemption-and-distinction",
+                "text": "Whether Christianity itself supplies the independent standard used to judge its moral teachings.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies a secular standard for moral judgment and undermines intrinsic scriptural authority, but it does not answer the target's institutional transmission and recruitment mechanism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The proposed sources of judgment and the cherry-picking inference are clear, with institutional transmission left outside the claim's scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The evaluative-priority argument is strong, though calling the secular discipline well established does not prove social sufficiency."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian traditions may shape the secular intuitions later used to evaluate scripture.",
+            "decisiveQualification": "Historical influence does not show that present judgments derive authority solely from scripture."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supplies the central con secular-sufficiency bridge at the level of moral judgment standards."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within relevant nonanswers, it offers strongly issue-bearing secular resources while leaving the decisive organizational and generational formation demand uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes humanism, rationality, and moral philosophy and argues that modern secular standards guide selection among biblical teachings.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-scriptural-and-exemplar-distinction",
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Christianity and Islam should not be treated as equivalent because their sacred texts differ substantially and the character of Jesus differs radically from the character of Muhammad.",
+          "sourceSpan": {
+            "startEvent": 910,
+            "endEvent": 931,
+            "excerpt": "books of Christianity and Islam being the same is absolutely untrue. In fact, maybe a follow up to this discussion would be to actually read these books to see what's in them and how different they are. Another mega, mega difference is the character of Jesus and the character of Muhammad. Absolutely radically different totally agree with that. That is why the holy books are not"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Hirsi Ali explicitly addresses Richard and develops the position from her ongoing comparative account of the two religions.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-moral-distinction-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-abrahamic-similarity-and-christian-doctrinal-decline",
+              "con-secular-moral-philosophy-supplies-judgment-standard",
+              "con-inherited-sin-and-vicarious-punishment-objection"
+            ],
+            "components": [
+              {
+                "componentId": "pro-scriptural-and-exemplar-distinction-component-01",
+                "targetMoveId": "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                "text": "Whether Christian and Islamic texts and central exemplars are materially different.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-scriptural-and-exemplar-distinction-component-02",
+                "targetMoveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                "text": "Whether those differences establish Christianity's moral authority without an external standard.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-scriptural-and-exemplar-distinction-component-03",
+                "targetMoveId": "con-inherited-sin-and-vicarious-punishment-objection",
+                "text": "Whether objectionable Christian doctrines remain morally defensible.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly rejects textual and exemplar equivalence, but does not show what the differences are or answer the external-standard objection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative proposition is clear, though the relevant dimensions and passages establishing radical difference remain unstated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Absolute and radically different are stronger than the undeveloped comparative support supplied in this span."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Dawkins claims substantial shared Abrahamic commitments, not literal identity in every text or exemplar.",
+            "decisiveQualification": "Material differences can coexist with the common doctrines he identified."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "Textual and exemplar differences could defeat equivalence, but assertion of difference does not establish its moral significance."
+            },
+            "evidenceWarrant": {
+              "value": 53,
+              "rationale": "The move recommends reading the books but supplies no representative textual or biographical comparison within the locked span."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro moral-distinction bridge through texts and founding exemplars."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The reply identifies relevant distinguishing dimensions but overstates their consequence by insufficiently preserving the opponent's narrower similarity claim."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the decisive comparison but provides only asserted distinctions and leaves the moral-authority demand unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt denies that the sacred books are the same and asserts a radical contrast between the characters of Jesus and Muhammad.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-inheritance-without-humanist-substitute",
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Discarding the civilization's Judeo-Christian moral inheritance leaves young people without that inherited framework when no organized humanist alternative has been transmitted to them.",
+          "sourceSpan": {
+            "startEvent": 941,
+            "endEvent": 969,
+            "excerpt": "categories of human beings have reached different answers. I think that if you take the history and the story of the moral of this civilization, if you say, well, it's useless. Let's mark it, let's cast it aside. What emerges is a generation of young people growing up who haven't been provided with their Christian or their Judeo-Christian moral framework. And they also for some"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer resumes Hirsi Ali's first-person account of the moral vacuum and follows her direct exchange with Dawkins.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-secular-sufficiency-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-secular-moral-philosophy-supplies-judgment-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-inheritance-without-humanist-substitute-component-01",
+                "targetMoveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                "text": "Whether secular moral philosophy can supply a justified standard of moral judgment without supernatural belief.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-inheritance-without-humanist-substitute-component-02",
+                "targetMoveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                "text": "Whether that secular standard has been institutionally organized and transmitted to young people.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply challenges transmission and organization rather than the existence or adequacy of secular moral standards, so it contacts a practical component but not the primary justificatory claim."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The transmission thesis is clear, but civilization's moral story and generation of young people remain broadly scoped and underqualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The possibility of a transmission gap is credible, but the generational generalization lacks representative support and rival comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Secular moral philosophy may supply standards even without a single church-like transmission institution.",
+            "decisiveQualification": "A usable standard and an effective mass-formation system are distinct achievements."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (60 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central con secular-sufficiency bridge by challenging effective transmission rather than abstract philosophy."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it materially contacts the institutional-sufficiency issue but leaves the decisive claim that secular philosophy supplies judgment standards unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that discarding Judeo-Christian inheritance leaves young people without that framework and without a provided humanist replacement.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-church-organization-does-not-establish-moral-fitness",
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "Christian institutional reach and organization do not establish moral fitness, as the Roman Catholic Church uses that capacity to promote harmful positions on abortion and contraception.",
+          "sourceSpan": {
+            "startEvent": 1002,
+            "endEvent": 1010,
+            "excerpt": "The largest Christian Church at the moment is the Roman Catholic Church. They are the people who got the organisation going, they've got the whole of South America, they've hit an enormous number of people and what they stand for is total opposition to abortion, contraception. This is not a good organisation for morality"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker shift follows Hirsi Ali's extended statement, and the critique matches Dawkins's established secular opposition in the exchange.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-moral-authority-bridge"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-inheritance-without-humanist-substitute",
+              "pro-public-christian-decline-moral-vacuum"
+            ],
+            "components": [
+              {
+                "componentId": "con-church-organization-does-not-establish-moral-fitness-component-01",
+                "targetMoveId": "pro-inheritance-without-humanist-substitute",
+                "text": "Whether organized religious transmission establishes that the transmitted morality is fit.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-church-organization-does-not-establish-moral-fitness-component-02",
+                "targetMoveId": "pro-public-christian-decline-moral-vacuum",
+                "text": "Whether church reach supplies a desirable answer to the alleged vacuum.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly separates organizational reach from moral fitness and gives Catholic abortion and contraception policy as its defeating example."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The organization-versus-fitness distinction is clear, though Catholic positions are described categorically without internal qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The example warrants rejecting organization as sufficient, but the categorical verdict on moral fitness assumes rather than defends the evaluation of the cited policies."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Catholic organization may transmit valuable norms despite controversial positions on reproduction.",
+            "decisiveQualification": "Institutional reach alone cannot settle the balance of moral merits and harms."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The response uses the institutional premise narrowly and does not claim that the cited policies exhaust Christianity's moral contribution."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly contacts the institutional inference and states why organization alone cannot establish moral suitability."
+            }
+          },
+          "evidenceBasis": "The excerpt cites the Catholic Church's extensive organization and reach, then contrasts these with opposition to abortion and contraception.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-criticism-requires-viable-replacement",
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Criticism of Christian churches is insufficient as a social program when decades of education have failed to establish the expected alternative morality grounded in reason, enlightenment, and humanism.",
+          "sourceSpan": {
+            "startEvent": 1011,
+            "endEvent": 1027,
+            "excerpt": "Church or any of the other Christian churches are either — in terms of your words — either nonsensical or immoral or useless or regardless of however you characterise them, if you don't have an alternative, and I think from the last, at least the last five or so decades, we see that no alternative has been established the assumption was reason and enlightenment and humanism is simply going to emerge from education"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Hirsi Ali directly challenges Dawkins in the second person and continues her established institutional critique of secular humanism.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-criticism-replacement-bridge"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-church-organization-does-not-establish-moral-fitness",
+              "con-secular-moral-philosophy-supplies-judgment-standard",
+              "con-benefit-does-not-make-existential-claims-true"
+            ],
+            "components": [
+              {
+                "componentId": "pro-criticism-requires-viable-replacement-component-01",
+                "targetMoveId": "con-church-organization-does-not-establish-moral-fitness",
+                "text": "Whether identifying church moral defects is sufficient when the practical issue is society-wide moral formation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-criticism-requires-viable-replacement-component-02",
+                "targetMoveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                "text": "Whether reason, enlightenment, and humanism have produced an organized educational replacement.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-criticism-requires-viable-replacement-component-03",
+                "targetMoveId": "con-benefit-does-not-make-existential-claims-true",
+                "text": "Whether practical replacement needs establish Christianity's existential claims as true.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply justifies replacing the isolated fitness question with a social-program demand: criticism must identify a functioning alternative capable of formation, while leaving supernatural truth untouched."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The replacement demand is clear, but the five-decade educational generalization is broad and the success criterion remains partly implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Demanding a workable alternative is reasonable for policy, but claiming none has been established needs broader comparative evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A critic may correctly reject harmful institutions without first supplying a complete replacement.",
+            "decisiveQualification": "That is true for criticism, but a civilizational formation proposal still requires some workable alternative."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary pro criticism-replacement bridge and sits near the top of that burden tier."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The reframe accurately limits the replacement demand to criticism offered as a social program rather than treating all moral criticism as invalid."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within justified reframes, it preserves the legitimate concern about harmful institutions and adds a concrete replacement criterion, though its empirical failure claim is thinly supported."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes Dawkins's church criticisms for argument's sake, then argues that education has not produced an organized rational-humanist alternative.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-affirmative-belief-against-islamist-recruitment",
+          "sectionId": "civilizational-defense-and-ideological-resistance",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "constructive",
+          "proposition": "Radical Islam exploits Western moral confusion and institutions, while atheism cannot effectively resist recruitment when it offers young people only the message that there is nothing to believe in.",
+          "sourceSpan": {
+            "startEvent": 1079,
+            "endEvent": 1122,
+            "excerpt": "anti-war patrons. There is something that is going on there is the mind virus of workism, there is the mind virus of radical Islam and atheism. Atheism is not the answer, I cannot go with all constraints to these young people and say, there is nothing to believe in. Because the more we say there is nothing to believe in there is nothing, then the someone else comes in and fills"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage follows a speaker transition from Dawkins and uses Hirsi Ali's characteristic first-person civilizational and institutional analysis.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-civilizational-need-bridge"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move argues that ideological recruitment exploits a belief vacuum and therefore requires an affirmative inherited message rather than atheistic negation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The recruitment mechanism is recoverable, but mind virus, atheism, and nothing to believe in are broad and unstable characterizations."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The claim that atheism cannot answer recruitment overstates what follows from the asserted need for affirmative meaning."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Atheism can reject supernatural belief while affirming substantive moral, civic, and humanistic commitments.",
+            "decisiveQualification": "A merely negative atheist message may still be motivationally inadequate in some recruitment contexts."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (63 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 51,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (52 and 50); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly connects the alleged moral vacuum to destructive ideological recruitment and the claimed need for Christian renewal."
+            },
+            "representationalCharity": {
+              "value": 56,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (54 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (80 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt claims radical Islam exploits a vacuum and characterizes atheism's message to vulnerable youth as offering nothing affirmative to believe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-confident-inheritance-and-active-countermessage",
+          "sectionId": "civilizational-defense-and-ideological-resistance",
+          "side": "pro",
+          "speaker": "Ayaan Hirsi Ali",
+          "moveKind": "reply",
+          "proposition": "Western civilization should answer an existing ideological clash by confidently embracing its inherited faith, organizing active counter-messaging, and ending institutional denial rather than initiating religious warfare.",
+          "sourceSpan": {
+            "startEvent": 1132,
+            "endEvent": 1175,
+            "excerpt": "take a look at how they responded. where there is an existing faith that is strong. It is very difficult for all of these other mind viruses to encroach upon and take over. That is as far as I'm going. I'm not saying let's start the Crusades, again. I'm just saying, let's stand for what we have. Let's embrace it, and let's defend it. And to defend it, you have to have a counter"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Hirsi Ali answers the moderator's challenge in the first person and sustains the same civilizational-defense position throughout the window.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-inheritance-transmission-bridge"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-church-organization-does-not-establish-moral-fitness",
+              "con-secular-moral-philosophy-supplies-judgment-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-confident-inheritance-and-active-countermessage-component-01",
+                "targetMoveId": "con-church-organization-does-not-establish-moral-fitness",
+                "text": "Whether inherited religious strength and organization are morally fit rather than merely effective at transmission.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-confident-inheritance-and-active-countermessage-component-02",
+                "targetMoveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                "text": "Whether active Christian counter-messaging is superior to organized secular moral education.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply advances inherited faith, defense, and counter-messaging, but it neither answers the church-fitness objection nor comparatively establishes why religious organization is the appropriate vehicle."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposal and anti-crusade limit are clear, though inherited faith and mind viruses remain broad rhetorical categories."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The limited defensive proposal is qualified, but its claim that strong faith prevents ideological encroachment lacks comparative support."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Organized secular or pluralistic counter-messaging could defend Western institutions without embracing inherited supernatural faith.",
+            "decisiveQualification": "Active organization may be necessary while the religious content of that organization remains independently contestable."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 54,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 52); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 63,
+              "rationale": "The move distinguishes defense from crusading aggression but materially omits the strongest nonreligious version of an active affirmative countermessage."
+            },
+            "responsiveness": {
+              "value": 54,
+              "rationale": "Within relevant nonanswers, it develops an adjacent institutional strategy but leaves the decisive moral-fitness and secular-alternative demands uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt advocates standing for, embracing, and defending inherited faith through a countermessage while expressly rejecting renewed crusades.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-enlightened-rationality-against-ideological-virus",
+          "sectionId": "civilizational-defense-and-ideological-resistance",
+          "side": "con",
+          "speaker": "Richard Dawkins",
+          "moveKind": "reply",
+          "proposition": "A dangerous ideological mind virus should be opposed through enlightened rationality rather than by inoculating society with a supposedly milder form of religion.",
+          "sourceSpan": {
+            "startEvent": 1253,
+            "endEvent": 1260,
+            "excerpt": "We have two epidemiological theories here. We have a vicious mind virus. We agree about that, really about your prognostications about that. The question is, do we combat it by vaccination with a mild form of the virus? Do we say no viruses at all and go for enlightened rationality"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly gives Dawkins the final word, and he frames the closing contrast through his own epidemiological analogy.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-rational-resistance-bridge"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-affirmative-belief-against-islamist-recruitment",
+              "pro-confident-inheritance-and-active-countermessage",
+              "pro-criticism-requires-viable-replacement"
+            ],
+            "components": [
+              {
+                "componentId": "con-enlightened-rationality-against-ideological-virus-component-01",
+                "targetMoveId": "pro-affirmative-belief-against-islamist-recruitment",
+                "text": "Whether dangerous ideology must be resisted by affirmative religion rather than enlightened rationality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-enlightened-rationality-against-ideological-virus-component-02",
+                "targetMoveId": "pro-confident-inheritance-and-active-countermessage",
+                "text": "Whether inherited faith is the preferable active countermessage.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-enlightened-rationality-against-ideological-virus-component-03",
+                "targetMoveId": "pro-criticism-requires-viable-replacement",
+                "text": "How enlightened rationality would be institutionally organized and transmitted.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly rejects religious inoculation and proposes enlightened rationality, but does not explain the institutional or motivational mechanism demanded earlier."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The epidemiological analogy consistently distinguishes a vicious ideology, mild religious inoculation, and the proposed no-virus rational alternative."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The closing formulation presents a strategic choice as a question and avoids claiming that rationality's success has been demonstrated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian renewal may function as a protective cultural commitment rather than merely a milder ideological virus.",
+            "decisiveQualification": "Protective utility still requires comparison with a nonreligious affirmative program and does not establish religious truth."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "No evidence is supplied that enlightened rationality alone can motivate, organize, or outperform religious resistance in recruitment settings."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supplies the subsidiary con rational-resistance bridge, though the implementation necessary to complete it remains undeveloped."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The analogy preserves the proposed protective function but prejudges religion as viral and omits the strongest cultural-inheritance interpretation."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "It contacts the decisive strategic choice but supplies a label for the alternative rather than a developed resistance program."
+            }
+          },
+          "evidenceBasis": "The excerpt frames religion as vaccination with a mild virus and contrasts it with rejecting all viruses in favor of enlightened rationality.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings, response records, relevance judgments, importance, and section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence beyond the judged moves was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response components",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any pro burden's recorded completion."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings, response records, relevance judgments, importance, and section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence beyond the judged moves was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response components",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any con burden's recorded completion."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "personal-experience-and-conversion",
+          "title": "Personal experience and conversion",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-experiential-crisis-prayer-recovery",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 94,
+              "moves": [
+                {
+                  "moveId": "con-personal-recovery-does-not-establish-christianity",
+                  "importance": 3,
+                  "score": 94
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "supernatural-truth-and-practical-benefit",
+          "title": "Supernatural truth and practical benefit",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-chosen-faith-personal-and-civilizational-planes",
+                  "importance": 3,
+                  "score": 76
+                },
+                {
+                  "moveId": "pro-criticism-requires-viable-replacement",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 94,
+              "moves": [
+                {
+                  "moveId": "con-supernatural-creator-is-universe-defining-claim",
+                  "importance": 3,
+                  "score": 92
+                },
+                {
+                  "moveId": "con-benefit-does-not-make-existential-claims-true",
+                  "importance": 3,
+                  "score": 96
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "christian-moral-character-and-religious-distinction",
+          "title": "Christian moral character and religious distinction",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-christian-love-redemption-and-distinction",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-scriptural-and-exemplar-distinction",
+                  "importance": 3,
+                  "score": 71
+                }
+              ]
+            },
+            "con": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "con-inherited-sin-and-vicarious-punishment-objection",
+                  "importance": 3,
+                  "score": 72
+                },
+                {
+                  "moveId": "con-abrahamic-similarity-and-christian-doctrinal-decline",
+                  "importance": 3,
+                  "score": 74
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "moral-formation-and-secular-alternatives",
+          "title": "Moral formation and secular alternatives",
+          "weightPercent": 23,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-public-christian-decline-moral-vacuum",
+                  "importance": 3,
+                  "score": 72
+                },
+                {
+                  "moveId": "pro-inheritance-without-humanist-substitute",
+                  "importance": 3,
+                  "score": 74
+                }
+              ]
+            },
+            "con": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "con-secular-moral-philosophy-supplies-judgment-standard",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "con-church-organization-does-not-establish-moral-fitness",
+                  "importance": 2,
+                  "score": 85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "civilizational-defense-and-ideological-resistance",
+          "title": "Civilizational defense and ideological resistance",
+          "weightPercent": 17,
+          "sides": {
+            "pro": {
+              "score": 67,
+              "moves": [
+                {
+                  "moveId": "pro-affirmative-belief-against-islamist-recruitment",
+                  "importance": 3,
+                  "score": 69
+                },
+                {
+                  "moveId": "pro-confident-inheritance-and-active-countermessage",
+                  "importance": 3,
+                  "score": 64
+                }
+              ]
+            },
+            "con": {
+              "score": 74,
+              "moves": [
+                {
+                  "moveId": "con-enlightened-rationality-against-ideological-virus",
+                  "importance": 3,
+                  "score": 74
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 74.46,
+          "burdenCompletionAdjustment": 0,
+          "score": 74
+        },
+        "con": {
+          "weightedSectionMean": 84.29,
+          "burdenCompletionAdjustment": 0,
+          "score": 84
+        }
+      },
+      "winner": "con",
+      "winningMargin": 10
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 17,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 109012,
+  "proposedAdapterSha256": "e26bad8fa217e868fe66695726cf2e60b26ed16f0f0ed71f459cf12bb14f1306",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "16",
+    "sections": 5,
+    "moves": 17,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "adapterSha256": "e26bad8fa217e868fe66695726cf2e60b26ed16f0f0ed71f459cf12bb14f1306",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

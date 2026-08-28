@@ -1,0 +1,2188 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-16-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+  "status": "frozen-post-canary-batch-16-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 16,
+  "planningOnly": true,
+  "debateNumber": "139",
+  "debateId": "adelstein-dillahunty-belief-god-2025",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/output-bundle/final-candidates/debate-139.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-16/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-16/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/vHxAw5-RXIw/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+    "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+    "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+    "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+    "finalCandidateSha256": "ab8a46c37aa589aa0af3543a01a030e18ea4edecfb7c9424f377c32e37f1f83a",
+    "eventsPath": ".assessment-cache/captions/vHxAw5-RXIw/events.json",
+    "eventsSha256": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+    "finalJudgmentSha256": "e0c60f62fa88fa8a4dfbc23072b0b6298b7ab1e5ded60133a75b0b43bec81644"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-16/production-compatibility/output-bundle/staged-ledgers/adelstein-dillahunty-belief-god-2025.json",
+    "productionLedger": "docs/assessment-ledgers/adelstein-dillahunty-belief-god-2025.json"
+  },
+  "productionLedgerBaseline": {
+    "exists": false,
+    "sha256": null
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-16-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-16-production-compatibility",
+    "status": "frozen-post-canary-batch-16-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 16,
+    "debateNumber": "139",
+    "debateId": "adelstein-dillahunty-belief-god-2025",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "9af006badb06b4bd7e76dd3e93100376201bfd2bfd1142d10b92bf2002a716c2",
+      "calculatedScoresSha256": "de0cfd61c7eb3b6b3a6c36049254cf75faf498d3b963b2dde8cb14cd546d8b07",
+      "finalizationAuditSha256": "9a43d286d78b319937054ce6e5e9655f2533fb27f1df7a6fde18409a7faf275a",
+      "renderingAuditSha256": "19a8ebb9c33e3ce8c77c209d95024fbf0ec8d6553e81cf1002bf17ec83c88693",
+      "finalCandidateSha256": "ab8a46c37aa589aa0af3543a01a030e18ea4edecfb7c9424f377c32e37f1f83a",
+      "eventsPath": ".assessment-cache/captions/vHxAw5-RXIw/events.json",
+      "eventsSha256": "203618ed0feccb8327441aa0bff92701075312f93a6832a2f46ba39473eca9e1",
+      "finalJudgmentSha256": "e0c60f62fa88fa8a4dfbc23072b0b6298b7ab1e5ded60133a75b0b43bec81644"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "139",
+      "debateId": "adelstein-dillahunty-belief-god-2025",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-theistic-cumulative-evidence",
+          "side": "pro",
+          "description": "Establish that theism has a defensible prior and that fine-tuning, consciousness, ordered complexity, and observer existence jointly favor a limitless, knowledgeable, and morally perfect creator over relevant alternatives.",
+          "successCriteria": "The route succeeds if the cumulative observations raise the probability of the specified being enough to warrant belief, with an adequate account of why the evidence points beyond an unspecified designer to the all-knowing, all-powerful, morally perfect being in the motion.",
+          "motionBridge": {
+            "bridgeId": "bridge-pro-motion-warrant",
+            "tier": "motion",
+            "description": "Connect the cumulative evidential comparison to rationally warranted belief in the all-knowing, all-powerful, morally perfect being specified by the motion."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-pro-prior",
+              "tier": "central",
+              "description": "Establish a non-negligible prior for theism through simplicity, fundamentality, and the absence of arbitrary limits."
+            },
+            {
+              "bridgeId": "bridge-pro-likelihood-method",
+              "tier": "central",
+              "description": "Show that observations can support theism through likelihood comparisons when assessed together with priors and cumulative evidence."
+            },
+            {
+              "bridgeId": "bridge-pro-fine-tuning",
+              "tier": "central",
+              "description": "Show that life-permitting constants and complexity-generating laws are substantially more expected under purposive creation than under agentless alternatives."
+            },
+            {
+              "bridgeId": "bridge-pro-conscious-observers",
+              "tier": "central",
+              "description": "Show that conscious lives and observer existence are more expected if a morally perfect, unconstrained creator has reason to create valuable lives."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-pro-anthropic-replies",
+              "tier": "subsidiary",
+              "description": "Explain why observer selection, a single observed universe, or unknown alternative constants need not eliminate the evidential force attributed to fine-tuning."
+            },
+            {
+              "bridgeId": "bridge-pro-world-fit",
+              "tier": "subsidiary",
+              "description": "Account for the universe's scale, hostility, development, and divine nonmanifestation insofar as they bear on its fit with purposive creation."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-evidential-skepticism",
+          "side": "con",
+          "description": "Establish that the available observations do not discriminate the specified deity from natural, selection-based, or rival intentional explanations and therefore do not supply sufficient warrant for belief in an omnimax, morally perfect being.",
+          "successCriteria": "The route succeeds if the affirmative's likelihood claims lack adequate priors, comparison classes, causal discrimination, or an attribute-level bridge, or if features such as hiddenness and suffering materially undermine the prediction that this morally perfect being would produce the observed world.",
+          "motionBridge": {
+            "bridgeId": "bridge-con-motion-withhold",
+            "tier": "motion",
+            "description": "Show that the evidence presented does not warrant belief in the all-knowing, all-powerful, morally perfect being named by the motion."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-con-evidence-standard",
+              "tier": "central",
+              "description": "Require evidence to discriminate the proposed deity from competing explanations rather than merely remain consistent with intentional creation."
+            },
+            {
+              "bridgeId": "bridge-con-inference-gap",
+              "tier": "central",
+              "description": "Show that conditional likelihood alone does not identify the actual cause without defensible priors, alternatives, and background causal information."
+            },
+            {
+              "bridgeId": "bridge-con-fine-tuning-alternatives",
+              "tier": "central",
+              "description": "Test whether observer selection, unknown parameter possibilities, and the single-universe setting block the inference from life-permitting conditions to design."
+            },
+            {
+              "bridgeId": "bridge-con-omnimax-identification",
+              "tier": "central",
+              "description": "Require a justified transition from evidence for possible agency or power to maximal knowledge, maximal power, and moral perfection."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-con-divine-motivation",
+              "tier": "subsidiary",
+              "description": "Examine whether moral perfection and self-sufficiency actually predict the creation of conscious, imperfect beings."
+            },
+            {
+              "bridgeId": "bridge-con-hiddenness-world-fit",
+              "tier": "subsidiary",
+              "description": "Assess whether hiddenness, unreliable supernatural expectations, suffering, and cosmic hostility fit the proposed morally perfect creator."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-epistemic-framework",
+          "title": "Evidential Standards and Bayesian Support",
+          "weightPercent": 22,
+          "rationale": "This issue governs when comparative likelihood, prior probability, and cumulative observations count as evidence rather than mere compatibility, determining how every substantive argument connects to warranted belief."
+        },
+        {
+          "sectionId": "section-prior-attributes",
+          "title": "Theistic Prior and the Omnimax Attribute Bridge",
+          "weightPercent": 18,
+          "rationale": "The motion concerns a specifically all-knowing, all-powerful, morally perfect being, so the case must address both the prior plausibility of theism and the transition from a possible designer to those maximal attributes."
+        },
+        {
+          "sectionId": "section-fine-tuning",
+          "title": "Fine-Tuning, Design, and Observer Selection",
+          "weightPercent": 30,
+          "rationale": "Life-permitting constants and ordered complexity form the most sustained evidential clash, encompassing design analogies, comparison classes, possible parameter values, anthropic selection, and rival explanations."
+        },
+        {
+          "sectionId": "section-conscious-observers",
+          "title": "Consciousness, Observer Existence, and Divine Motivation",
+          "weightPercent": 17,
+          "rationale": "The predicted existence of conscious people depends on both their comparative probability under alternative worldviews and whether a morally perfect, unconstrained being would have reason to create them."
+        },
+        {
+          "sectionId": "section-hiddenness-world-fit",
+          "title": "Divine Hiddenness and the Observed World's Fit",
+          "weightPercent": 13,
+          "rationale": "Hiddenness, suffering, cosmic hostility, and unreliable supernatural expectations bear directly on whether the observed world is expected under a morally perfect creator and therefore on the motion-level inference."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-bayesian-priors-likelihoods",
+          "sectionId": "section-epistemic-framework",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "constructive",
+          "proposition": "Hypotheses should be assessed by both their prior probability and how much more strongly the observed evidence is predicted by them than by alternatives.",
+          "sourceSpan": {
+            "startEvent": 98,
+            "endEvent": 169,
+            "excerpt": "hypotheses about the world. First, one should look at the prior probability of a hypothesis, how likely it is before gathering any data. Even though the theory that I'm cheating in poker and the theories that fairies rigged a deck, that I'd get 10 royal flushes both explain the data of me getting 10 royal flushes, it's likelier that I'm cheating because it has a higher prior probability. Next, one should look at the evidence"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly hands the opening statement to Matthew Adelstein, who speaks continuously throughout this window.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-likelihood-method"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states the affirmative's governing evidential method and therefore has no earlier opposing target to answer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Prior probability and comparative predictive likelihood are stated distinctly, with an example clarifying their respective roles."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The methodological claim is presented firmly but appropriately as a general framework rather than a completed theistic inference."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, this directly establishes the likelihood method governing the affirmative route."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move introduces a method and does not materially characterize a live opposing interpretation."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly distinguishes prior probability from evidence and explains the distinction through competing explanations of repeated royal flushes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-limitless-mind-prior",
+          "sectionId": "section-prior-attributes",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "constructive",
+          "proposition": "Theism has a reasonable prior because one fundamental mind without arbitrary limits is comparatively simple and supports maximal power, knowledge, and moral rationality.",
+          "sourceSpan": {
+            "startEvent": 170,
+            "endEvent": 253,
+            "excerpt": "non-physical fundamental entities, a limitless mind is a very simple kind of thing. One category of fundamental reality instantiated without limit. It also is distinctly non-arbit because it's completely without limit. Now, you don't have to think all of this is obviously true. It only needs to be plausible enough for theism to start with a somewhat reasonable prior probability"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew Adelstein remains the uninterrupted opening speaker and explicitly begins applying his stated methodology to God.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-prior"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the affirmative prior argument and has no earlier opposing locked move requiring a response."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conclusion is recoverable and expressly modest, but simplicity and absence of limits carry partly unsettled meanings."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker explicitly says the account need only be plausible enough to yield a somewhat reasonable prior."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The simplicity claim is substantially philosophical assertion, with limited comparison against rival fundamental ontologies or complexity measures."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly addresses the indispensable affirmative prior bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops its own prior and does not materially represent an opposing account."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt describes one nonphysical fundamental reality instantiated without limit as simple and non-arbitrary, while expressly claiming only a reasonable prior.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-constants-likelihood-design",
+          "sectionId": "section-fine-tuning",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "constructive",
+          "proposition": "Life-permitting physical constants favor theism because such values are expected from a good creator seeking valuable life but astronomically improbable under atheism.",
+          "sourceSpan": {
+            "startEvent": 254,
+            "endEvent": 295,
+            "excerpt": "But who's counting? If there was a god of the sort I described, this fine-tuning is probable or at the very least not astronomically improbable. God being good wants valuable stuff to exist. So, we'd set the constants to whatever value is needed for life. In contrast, on atheism, the odds are astronomically tiny. Thus, this is one line of evidence for theism. It's a fact that's"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew Adelstein introduces this explicitly as his first evidential line during his uninterrupted affirmative opening statement.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-fine-tuning"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move presents the principal affirmative fine-tuning comparison and has no earlier opposing locked target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The comparison is clear, but atheism's probability distribution and the relevant range of possible constants remain unspecified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling the atheistic odds astronomically tiny substantially exceeds the supplied support because no probability measure or alternative model is defended."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Agentless alternatives may not supply a known probability distribution over possible constants.",
+            "decisiveQualification": "Absence of a distribution prevents the stated astronomical comparison from being established."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly advances the affirmative's principal fine-tuning bridge."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The move treats atheism as assigning astronomically tiny odds without handling the strongest distributional qualification."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it directly supplies the core likelihood claim for the heavily weighted fine-tuning section."
+            }
+          },
+          "evidenceBasis": "The excerpt says a good God would choose life-permitting constants and contrasts this with allegedly astronomically tiny odds on atheism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-consciousness-likelihood",
+          "sectionId": "section-conscious-observers",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "constructive",
+          "proposition": "Consciousness favors theism because a perfect God has reason to create conscious agents, whereas subjectivity and the laws enabling it are surprising on atheism.",
+          "sourceSpan": {
+            "startEvent": 296,
+            "endEvent": 310,
+            "excerpt": "perfect God, he'd want to create conscious agents, cuz conscious agents are good things. However, if there was no God, then it's a surprise that consciousness exists at all. Why would particles of moving around give rise to subjectivity? This is especially so if you agree with the arguments I gave before showing that the material world alone isn't enough to produce consciousness by itself. Thus, to get consciousness on atheism"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew Adelstein labels consciousness as his second evidential consideration while continuing the affirmative opening without interruption.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-conscious-observers"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states a consciousness-based likelihood comparison and has no earlier opposing locked target to answer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The intended comparison is clear, although atheism and material production of consciousness are treated at a broad scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The evidential direction is plausible as an argument, but the comparative surprise claim exceeds the support reproduced in this move."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Naturalistic theories may treat consciousness as arising lawfully from physical organization rather than as an unexplained accident.",
+            "decisiveQualification": "The move cites earlier arguments but does not compare theism with developed naturalistic consciousness theories here."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly supports the affirmative conscious-observer bridge."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The atheistic alternative is rendered thinly, although the move signals dependence on earlier supporting arguments."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt claims a perfect God would want conscious agents and asks why moving particles would produce subjectivity absent God.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-observer-population-evidence",
+          "sectionId": "section-conscious-observers",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "constructive",
+          "proposition": "An observer's own existence favors theism if existence is likelier in worlds containing more possible people and an unlimited good God would create the maximal population.",
+          "sourceSpan": {
+            "startEvent": 340,
+            "endEvent": 528,
+            "excerpt": "0% of possible people exist, and your existence is infinitely unlikely. So far, we've shown that there's a giant infinity worth of people. Once again, this fits well with theism. A limitless perfect god would want to create a giant infinity worth of people to give a good life to as many people as possible. Thus, he'd be expected to make a huge multiverse containing an enormous"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew Adelstein announces the existence of the listener as his fourth evidential line and develops it continuously through this window.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-conscious-observers"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move develops observer-population evidence and has no earlier opposing locked move requiring contact."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "partial",
+            "termStability": "partly-unstable",
+            "scopeStability": "materially-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The intended population inference is visible, but possible-person probabilities, infinite populations, and maximal creation are insufficiently stabilized."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Claims of infinite improbability and an expected enormous multiverse are much stronger than the supplied population-sampling warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Self-locating evidence may not permit sampling uniformly from all merely possible people.",
+            "decisiveQualification": "Without a justified reference class or sampling rule, population size does not straightforwardly determine the probability of one's existence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 58,
+              "rationale": "The route from possible people to one's probability and then to maximal divine creation contains major unsupported reference-class and infinity transitions."
+            },
+            "evidenceWarrant": {
+              "value": 50,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (48 and 52); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Within central contacts, it materially supports observer existence but is less indispensable than the general consciousness claim."
+            },
+            "representationalCharity": {
+              "value": 55,
+              "rationale": "The move omits the decisive reference-class qualification while treating the population inference as established."
+            },
+            "responsiveness": {
+              "value": 75,
+              "rationale": "Within constructive moves, it supplies a distinctive observer argument but depends on controversial population and infinity assumptions."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes an infinite population, claims this fits a limitless perfect God, and predicts a huge multiverse maximizing lives.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-evidence-proportional-warrant",
+          "sectionId": "section-epistemic-framework",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Belief should track independently testable evidential support, with judgment reserved when a claim lacks sufficient rational warrant.",
+          "sourceSpan": {
+            "startEvent": 553,
+            "endEvent": 638,
+            "excerpt": "a rational belief that someone loves me, even though I can't calculate it, knowing full well I may be wrong. My confidence that they love me is going to be different depending on the actions and the data that supports it. But I can't quantify it. So belief isn't just about data supporting a syllogism though that would be the strongest but it's also about warranted belief which"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly transfers the floor to Matt Dillahunty, who begins and continuously delivers the negative opening statement here.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-evidence-standard"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-bayesian-priors-likelihoods"
+            ],
+            "components": [
+              {
+                "componentId": "con-evidence-proportional-warrant-component-01",
+                "targetMoveId": "pro-bayesian-priors-likelihoods",
+                "text": "Whether probabilistic support is sufficient to produce rationally warranted belief.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response accepts graded evidential confidence but insists that belief requires adequate warrant, directly contacting the affirmative methodological bridge."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between support, quantification, confidence, and warranted belief is recoverable and consistently expressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker expressly acknowledges nonquantifiable confidence and possible error while maintaining a proportional-warrant standard."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Bayesian evidence can rationally raise confidence even when it does not deductively establish a conclusion.",
+            "decisiveQualification": "Raised confidence still must be sufficient relative to alternatives before belief is warranted."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly establishes the negative evidence standard governing the debate."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it directly addresses the threshold from evidential data to warranted confidence."
+            }
+          },
+          "evidenceBasis": "The excerpt relates confidence to actions and supporting data, acknowledges inability to quantify it, and distinguishes data from warranted belief.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-omnimax-verification-limit",
+          "sectionId": "section-prior-attributes",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Humans cannot verify that any being is maximally powerful, maximally knowledgeable, and morally perfect rather than merely far beyond human capacities.",
+          "sourceSpan": {
+            "startEvent": 639,
+            "endEvent": 715,
+            "excerpt": "any sufficiently advanced knowledge and understanding beyond our ability is indistinguishable to us from all knowledge. Could we even think of the question that we would need to ask to stump the thing that is supposedly all knowing to show that it's not. And then we get to the third prong which is the moral perfection and that is the same problem. I did a v video recently on is God perfect"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt Dillahunty remains the sole speaker in his negative opening and directly examines each defining property in the debate proposition.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-omnimax-identification"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-limitless-mind-prior"
+            ],
+            "components": [
+              {
+                "componentId": "con-omnimax-verification-limit-component-01",
+                "targetMoveId": "pro-limitless-mind-prior",
+                "text": "Whether the asserted maximal knowledge, power, and moral perfection could be identified rather than merely approximated by an advanced being.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses an epistemic underdetermination: finite observers cannot devise conclusive tests distinguishing sufficiently advanced capacities from genuine maxima, defeating the identification step."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between maximal and observationally indistinguishable superhuman capacities is clear across the named attributes."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The claim is appropriately confined to human verification limits rather than asserting that maximal attributes are impossible."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An unlimited-being hypothesis might be supported abductively without direct exhaustive testing of every capacity.",
+            "decisiveQualification": "Abductive support still needs a discriminator connecting finite observations specifically to maximal rather than very large attributes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The indistinguishability argument is consistent and directly exposes the finite-evidence-to-maximal-attribute gap."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly advances the indispensable negative omnimax-identification bridge."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly identifies the verification failure and its consequence for the maximal-attribute bridge."
+            }
+          },
+          "evidenceBasis": "The excerpt asks how observers could distinguish all knowledge from sufficiently advanced knowledge and extends the same difficulty to moral perfection.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-powerful-creator-identification-gap",
+          "sectionId": "section-prior-attributes",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Even weakening the thesis to a powerful creator does not provide a method for confirming its capacities, intentions, or status from probabilistic observations.",
+          "sourceSpan": {
+            "startEvent": 716,
+            "endEvent": 788,
+            "excerpt": "some additional tool or method? What types of things definitely wouldn't prove an omnimax god? Almost anything you can think of, statistics, assertions, holy books, none of them give us the requisite understanding or knowledge to confirm that there is a being out there like this. But if we soften it down to, hey, there's a pretty powerful being and then we try to argue for, hey"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt Dillahunty explicitly proposes a softened version of the debate claim and continues developing its epistemic difficulties without a speaker change.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-omnimax-identification"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-limitless-mind-prior",
+              "pro-constants-likelihood-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-powerful-creator-identification-gap-component-01",
+                "targetMoveId": "pro-limitless-mind-prior",
+                "text": "Whether evidence for a creator supplies a warranted transition to the creator's capacities, intentions, and omnimax status.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-powerful-creator-identification-gap-component-02",
+                "targetMoveId": "pro-constants-likelihood-design",
+                "text": "Whether probabilistic fine-tuning observations identify the proposed being rather than an unspecified powerful arranger.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies the missing identification method and states that statistics, assertions, and texts cannot confirm the specified being, even if a powerful creator is entertained."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The softened creator hypothesis and the stronger omnimax thesis are cleanly distinguished, as is the demanded confirmation method."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The force is directed at the presented methods' insufficiency, not at the impossibility of every conceivable identification method."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Statistics might provide some comparative support for purposive agency without proving every divine attribute.",
+            "decisiveQualification": "Support for generic agency does not itself identify unlimited power, knowledge, moral perfection, or specific intentions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The response accurately preserves possible weaker support while isolating the decisive attribute-level gap."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly contacts both the attribute bridge and the limits of the probabilistic design evidence."
+            }
+          },
+          "evidenceBasis": "The excerpt says statistics, assertions, and holy books do not provide the knowledge required to confirm an omnimax being, even after softening to power.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-hiddenness-and-unreliable-manifestation",
+          "sectionId": "section-hiddenness-world-fit",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Divine hiddenness and unreliable supernatural expectations count against belief in a morally perfect God who allegedly wants humans to know and relate to it.",
+          "sourceSpan": {
+            "startEvent": 789,
+            "endEvent": 835,
+            "excerpt": "What morally perfect, all- knowing, all powerful being would place people in a world where rational evaluation of evidence leads to the most accurate models of reality only to seemingly exempt its own existence from that standard, rewarding faith, rewarding intuitive leaps that lack justification. I'd argue that such a god is less powerful, less knowledgeable, and less moral than"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt Dillahunty continues his uninterrupted negative opening, moving from limits on identifying perfection to the observed absence of clear divine disclosure.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-hiddenness-world-fit"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-consciousness-likelihood",
+              "pro-limitless-mind-prior"
+            ],
+            "components": [
+              {
+                "componentId": "con-hiddenness-and-unreliable-manifestation-component-01",
+                "targetMoveId": "pro-consciousness-likelihood",
+                "text": "Whether a morally perfect creator's alleged concern for conscious agents fits unclear and unreliable divine disclosure.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-hiddenness-and-unreliable-manifestation-component-02",
+                "targetMoveId": "pro-limitless-mind-prior",
+                "text": "Whether moral perfection is supported by the observed epistemic arrangement.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response tests predicted divine concern against hiddenness and faith-based ambiguity, directly challenging moral perfection and world fit."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The hiddenness objection is clear, with an implicit condition that the proposed God wants humans rationally to know and relate to it."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Hiddenness supplies a relevant tension, but the sweeping comparative moral judgment is stronger than the developed premise."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A perfect God may have reasons to permit epistemic distance or noncoercive relationship formation.",
+            "decisiveQualification": "Such reasons must explain why rational inquiry often fails to yield clear, reliable awareness of the proposed God."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within subsidiary contacts, it strongly advances the negative hiddenness and world-fit bridge."
+            },
+            "representationalCharity": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it contacts the moral-world-fit premise, though it does not address every consciousness likelihood component."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts rational evidence standards with apparent divine exemption and argues that rewarding unjustified faith conflicts with the proposed attributes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-omnimax-parsimony-bridge",
+          "sectionId": "section-prior-attributes",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "reply",
+          "proposition": "A perfect unlimited mind predicts life and consciousness more parsimoniously than a merely powerful being whose capacities terminate at unexplained arbitrary limits.",
+          "sourceSpan": {
+            "startEvent": 954,
+            "endEvent": 1000,
+            "excerpt": "perfect God, because it's good to create life, there's a positive reason to expect it to create life. a positive reason to expect to do a lot of creating to create consciousness and so on for each of the data points that I've given. Third, one thing that philosophers like Josh Rasmusen have described is that if something has arbitrary limits, that's that's a defect to the theory. So if if thing is just limited"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage remains within Matthew's timed rebuttal and explicitly answers a question attributed to Matt about limited versus unlimited power.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-omnimax-identification"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-powerful-creator-identification-gap",
+              "con-omnimax-verification-limit"
+            ],
+            "components": [
+              {
+                "componentId": "pro-omnimax-parsimony-bridge-component-01",
+                "targetMoveId": "con-powerful-creator-identification-gap",
+                "text": "Why the evidence should favor an unlimited perfect mind rather than a creator with bounded capacities.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-omnimax-parsimony-bridge-component-02",
+                "targetMoveId": "con-omnimax-verification-limit",
+                "text": "Whether arbitrary limits make the bounded alternative less parsimonious despite verification limits.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply answers the limited-versus-unlimited challenge by invoking predictions from perfection and a parsimony cost for unexplained arbitrary limits."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative claim is clear, but arbitrary limit, defect, perfection, and simplicity retain partly unsettled meanings."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The parsimony proposal is plausible, but it does not fully warrant the implied transition to all three maximal attributes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A bounded creator might be ontologically simpler than an unlimited perfect mind even if its exact limits require specification.",
+            "decisiveQualification": "The affirmative must show that eliminating numerical limits offsets the added content of perfection, mentality, and creative motives."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it directly contacts the identification challenge but does not fully resolve verification or moral-perfection concerns."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that perfection predicts extensive creation of life and consciousness and that arbitrary limits constitute a theoretical defect.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-likelihood-causation-gap",
+          "sectionId": "section-fine-tuning",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "An outcome being more probable under intentional arrangement does not by itself justify concluding that this particular outcome was intentionally produced.",
+          "sourceSpan": {
+            "startEvent": 1102,
+            "endEvent": 1177,
+            "excerpt": "every possible permutation becomes likely or similarly probable. Pick up any deck of cards and we assume it's been fairly shuffled. Whatever order those cards are in is by definition more likely if someone intentionally set up that deck in that order. But the existence of that order could never be sufficient to conclude that it was in fact intentional. So it's correct for us to determine this particular"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly starts Matt's rebuttal, after which Matt gives a continuous first-person card, Galton-board, and dice argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-inference-gap"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-constants-likelihood-design",
+              "pro-bayesian-priors-likelihoods"
+            ],
+            "components": [
+              {
+                "componentId": "con-likelihood-causation-gap-component-01",
+                "targetMoveId": "pro-constants-likelihood-design",
+                "text": "Whether an outcome's greater likelihood under intentional arrangement is sufficient to infer that it was intentionally produced.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-likelihood-causation-gap-component-02",
+                "targetMoveId": "pro-bayesian-priors-likelihoods",
+                "text": "Whether likelihood comparison alone can identify the actual cause without priors and alternative causal information.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The card-order example expressly diagnoses the invalid move from intentional likelihood advantage to actual intention and states that the likelihood fact is insufficient."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between an outcome being likelier if arranged and its occurrence being sufficient evidence of arrangement is explicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The move appropriately claims insufficiency of the isolated likelihood fact, not impossibility of an intentional inference with additional evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A Bayesian design argument can use likelihood ratios together with priors and cumulative evidence rather than infer intention from probability alone.",
+            "decisiveQualification": "The challenged fine-tuning claim still needs defended priors and alternative distributions for the likelihood ratio to discriminate causes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly establishes the negative inference-gap bridge."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it targets the precise inference and supplies a clear counterexample showing the missing causal bridge."
+            }
+          },
+          "evidenceBasis": "The excerpt observes that every card order is more probable if intentionally fixed, while its mere occurrence cannot establish intentional arrangement.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-adaptation-not-intended-goal",
+          "sectionId": "section-conscious-observers",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "A primordial message in later human languages would differ categorically from fine-tuning because organisms adapt to existing physics rather than showing that they were its intended goal.",
+          "sourceSpan": {
+            "startEvent": 1334,
+            "endEvent": 1358,
+            "excerpt": "that a message written in every human language is less likely I say let me let me phrase your question correctly. You're saying why is that more acceptable than the fine-tuning that we current that you you see to conclude a god. Yep. Because human languages are our inventions and are the result of our progress. And so to have them written in human language from the beginning of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew's question hands the floor to Matt, whose first-person answer distinguishes invented human languages from evolved life under physical conditions.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-pro-conscious-observers"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-consciousness-likelihood",
+              "pro-constants-likelihood-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-adaptation-not-intended-goal-component-01",
+                "targetMoveId": "pro-consciousness-likelihood",
+                "text": "Whether the existence of adapted conscious organisms establishes that their production was an intended goal of the physical laws.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-adaptation-not-intended-goal-component-02",
+                "targetMoveId": "pro-constants-likelihood-design",
+                "text": "Whether life fitting the constants shows that the constants were selected for life rather than life adapting to them.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply distinguishes a deliberate linguistic message from organisms adapting to existing physics and identifies goal attribution as the unsupported inference."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contrast between adaptation to conditions and evidence independently specifying an intended target is clearly maintained."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The move appropriately challenges goal attribution without claiming that adaptation proves the absence of intention."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Life-permitting constants may be independently narrow enough that adaptation cannot explain why any observers are possible.",
+            "decisiveQualification": "Adaptation explains fit within viable conditions but does not by itself establish the prevalence of viable conditions among alternatives."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The message-versus-adaptation distinction coherently defeats a simple inference from organism-environment fit to intended goal."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "Evolutionary adaptation supports the central distinction, but claims about changed constants and alternative life are not documented."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The reply accurately exposes goal attribution but leaves the strongest parameter-range version of fine-tuning partly untouched."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it explicitly identifies adaptation as the reason the design analogy does not establish intended purpose."
+            }
+          },
+          "evidenceBasis": "The excerpt says organisms adapt to their environment and contrasts that with a primordial message in later human languages that would independently specify intention.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-observer-selection-with-one-viable-universe",
+          "sectionId": "section-fine-tuning",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Even if only one universe among many could sustain life, observing oneself in that universe would not establish that it was intentionally created.",
+          "sourceSpan": {
+            "startEvent": 1425,
+            "endEvent": 1441,
+            "excerpt": "could have been any other way. But even let's imagine that there's a multiversal universe generator and it keeps popping out universes. Even if all the constants lead to disaster immediately and no life other than the one we're in, that does not tell you that it was created intentionally. You are literally still, even if it was accidental, living in the only universe that could"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matt answers Matthew's direct question, reiterates his uncertainty about variable constants, and develops a continuous multiverse and observer-selection response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-fine-tuning-alternatives"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-constants-likelihood-design"
+            ],
+            "components": [
+              {
+                "componentId": "con-observer-selection-with-one-viable-universe-component-01",
+                "targetMoveId": "pro-constants-likelihood-design",
+                "text": "Whether observing the sole life-permitting universe discriminates intentional creation from accidental generation under observer selection.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply explicitly grants the extreme one-viable-universe case yet states that observers would necessarily occupy it under either accident or intention, defeating discrimination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The hypothetical generator, single viable universe, accidental production, and observational consequence are clearly separated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stipulated observer-selection setup, the claim that observation alone does not establish intention is proportionate."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Survival-conditioned observation can still be evidence when viability is much more probable under design than under the generator.",
+            "decisiveQualification": "Observer selection alone does not erase likelihood evidence, so the rival-generating probabilities still require comparison."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The stipulated example validly separates inevitable conditional observation from evidence of intentional production."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The thought experiment supplies a strong conceptual demonstration, with a bounded gap about unconditional generation probabilities."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within central contacts, it directly advances the negative fine-tuning-alternatives bridge."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The reply strongly handles observational selection but does not fully address unconditional existence evidence."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it grants a strong version of the premise and identifies the exact selection-based non-discrimination consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt imagines a universe generator with one viable output and explains that accidental observers would necessarily inhabit that output.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-anthropic-firing-squad",
+          "sectionId": "section-fine-tuning",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "reply",
+          "proposition": "Observer selection does not erase fine-tuning evidence, because an event required for one's observation can still favor intentional explanation when it is otherwise highly improbable.",
+          "sourceSpan": {
+            "startEvent": 1545,
+            "endEvent": 1583,
+            "excerpt": "No, no, no. That improbable happened or if that hadn't happened, I wouldn't have been around to observe it.\" So, you know, I couldn't have been around to observe myself not not surviving it. That would be a bad inference. It would still be evidence for a conspiracy. Similar way, your existence can still be evidence for uh the fine-tuning for the existence of God. I I I love how"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Matthew explicitly turns to Matt's earlier observation objection and gives sustained parental and firing-squad analogies before returning to God.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-fine-tuning-alternatives"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-observer-selection-with-one-viable-universe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-anthropic-firing-squad-component-01",
+                "targetMoveId": "con-observer-selection-with-one-viable-universe",
+                "text": "Whether the necessity of observing survival removes the evidential force of an otherwise improbable survival-compatible outcome.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The firing-squad analogy expressly diagnoses the flaw in treating observation conditioning as sufficient to erase evidence for intentional coordination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The selection principle and intended evidential consequence are clear, with analogy-dependent background conditions left implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The analogy supports residual evidence but does not establish that cosmic fine-tuning shares the firing squad's known mechanism and probabilities."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Observer selection does not deny residual evidence; it changes the conditioning and requires specified design and accident likelihoods.",
+            "decisiveQualification": "The firing-squad analogy has known agents and outcome distributions that the universe case lacks."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The firing-squad case is a strong conceptual counterexample, but the analogy to unknown cosmic probability distributions is incomplete."
+            },
+            "relevanceBurden": {
+              "value": 85,
+              "rationale": "Within subsidiary contacts, it directly attacks the skeptical observer-selection treatment."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The reply fairly targets elimination rather than claiming that selection has no role, though cross-case probability assumptions remain compressed."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it directly contacts the decisive observer-selection inference and states its evidential consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that inability to observe one's own death would not make survival uninformative and analogizes survival to fine-tuning evidence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-cumulative-bayesian-support",
+          "sectionId": "section-epistemic-framework",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "reply",
+          "proposition": "Theism can become warranted when the explanatory force of several observations is combined cumulatively with its prior probability, even if no single observation suffices.",
+          "sourceSpan": {
+            "startEvent": 1685,
+            "endEvent": 1734,
+            "excerpt": "at the prior probability. Right? So if you get um if you get one lucky hand in poker, it's true that the theory that you're cheating explains why you would get that. It's some evidence for that hypothesis, but it's not ultimately reasonable to believe because it's not enough evidence to overcome the low prior. That's why in my opening statement I gave several different lines of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The exchange explicitly identifies this reasoning as Adelstein's opening-statement framework and presents it in his first-person argumentative voice.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion-warrant"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-likelihood-causation-gap",
+              "con-evidence-proportional-warrant"
+            ],
+            "components": [
+              {
+                "componentId": "pro-cumulative-bayesian-support-component-01",
+                "targetMoveId": "con-likelihood-causation-gap",
+                "text": "Whether multiple likelihood contributions combined with a prior can warrant belief despite each item's individual insufficiency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-cumulative-bayesian-support-component-02",
+                "targetMoveId": "con-evidence-proportional-warrant",
+                "text": "Whether the total evidence can cross a rational-warrant threshold.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly answers single-item insufficiency by restoring the prior and cumulative likelihood structure needed for an ultimate belief judgment."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between some evidence, low prior, multiple lines, and ultimate reasonableness is clearly recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move claims that cumulative evidence can overcome a prior, not that the presented evidence has numerically been shown to do so."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Several weak or dependent observations need not cumulatively overcome a low prior.",
+            "decisiveQualification": "The cumulative case requires defensible likelihood ratios and attention to dependence among the evidence lines."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The conceptual warrant is strong, but no combined likelihoods, dependence analysis, or defended posterior threshold are supplied."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "Within motion contacts, it directly connects the affirmative cumulative case to warranted belief."
+            },
+            "representationalCharity": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it explicitly contacts both cumulative sufficiency and the transition to warranted belief."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes one lucky hand from several lines of evidence and explains that evidence must be assessed together with prior probability.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-possible-evidence-and-divine-hiddenness",
+          "sectionId": "section-hiddenness-world-fit",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Being unable to specify evidence that would establish God is not equivalent to claiming that no possible evidence could ever do so.",
+          "sourceSpan": {
+            "startEvent": 1740,
+            "endEvent": 1779,
+            "excerpt": "between a sufficiently advanced technology and magic. But if there's a god, God absolutely knows what would change my mind and should be capable of doing it. And the fact that this hasn't happened means that either that God doesn't exist or that this God doesn't want me to know it exists yet. But in no point does me saying no to can you provide an example of what evidence would convince you of God. At no way is that equivalent"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dillahunty explicitly corrects the characterization of his own answer and restates his longstanding position in sustained first-person language.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-hiddenness-world-fit"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-cumulative-bayesian-support",
+              "pro-omnimax-parsimony-bridge"
+            ],
+            "components": [
+              {
+                "componentId": "con-possible-evidence-and-divine-hiddenness-component-01",
+                "targetMoveId": "pro-cumulative-bayesian-support",
+                "text": "Whether inability to name decisive evidence entails that no possible evidence could establish God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-possible-evidence-and-divine-hiddenness-component-02",
+                "targetMoveId": "pro-omnimax-parsimony-bridge",
+                "text": "Whether an omnimax God could supply personally sufficient disclosure.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The response explicitly identifies the equivocation between lacking an example and denying all possible evidence, then states the hiddenness consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The two modal claims are sharply distinguished, and the subsequent hiddenness disjunction is stated with clear scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The logical non-equivalence is firmly but appropriately stated, while the divine consequence is presented as a disjunction."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A person's inability to specify evidence may still raise concerns about whether their standard is operational or satisfiable.",
+            "decisiveQualification": "That concern does not license attributing the stronger claim that no possible evidence could persuade them."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within subsidiary contacts, it strongly advances hiddenness while also correcting a local evidential characterization."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it expressly corrects the decisive characterization and explains what follows under the God hypothesis."
+            }
+          },
+          "evidenceBasis": "The excerpt states that God would know what could change the speaker's mind and distinguishes inability to provide an example from denying all possible evidence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-perfect-being-creation-motive-gap",
+          "sectionId": "section-conscious-observers",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Calling human creation good does not establish that a perfect, self-sufficient being would create imperfect humans or benefit from their existence.",
+          "sourceSpan": {
+            "startEvent": 1903,
+            "endEvent": 1916,
+            "excerpt": "good. And second of all, you're basically saying you know what a perfect being would do. I don't. How do you know that a perfect being wouldn't conclude that humans that imperfect beings that creating imperfect beings is ultimately a mistake? Because a perfect being has nothing to learn from us, has nothing to benefit from us, is not missing anything, otherwise they would be imperfect. So why would a perfect being create"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dillahunty directly challenges both the unsupported moral premise and Adelstein's claimed knowledge of what a perfect being would choose to do.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-divine-motivation"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-consciousness-likelihood",
+              "pro-observer-population-evidence"
+            ],
+            "components": [
+              {
+                "componentId": "con-perfect-being-creation-motive-gap-component-01",
+                "targetMoveId": "pro-consciousness-likelihood",
+                "text": "Whether moral perfection and self-sufficiency actually make creation of imperfect conscious humans probable.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-perfect-being-creation-motive-gap-component-02",
+                "targetMoveId": "pro-observer-population-evidence",
+                "text": "Whether a perfect being would maximize the number of created people merely because their lives can be good.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the unsupported knowledge claim about divine motivation and explains that a perfect self-sufficient being gains nothing from creating imperfect humans."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The challenge distinguishes lack of need or benefit from a positive prohibition and asks for the omitted reason to create."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker expressly disclaims knowing what a perfect being would do and uses the alternatives to expose an unsupported inference."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A self-sufficient being might create solely to confer benefits on others without gaining anything.",
+            "decisiveQualification": "The affirmative still must show that creating imperfect lives is overall good and predicted rather than merely compatible with perfection."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within subsidiary contacts, it directly establishes the negative divine-motivation bridge."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it directly attacks the decisive motivational premise and states the consequence for both consciousness arguments."
+            }
+          },
+          "evidenceBasis": "The excerpt challenges the unsupported judgment that human creation is good and notes that a perfect being lacks needs, deficits, or benefits from humans.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-consistency-versus-discrimination",
+          "sectionId": "section-epistemic-framework",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Evidence merely consistent with a proposition differs from evidence for it, which must discriminate that proposition from competing explanations.",
+          "sourceSpan": {
+            "startEvent": 2793,
+            "endEvent": 2823,
+            "excerpt": "that proposition are those data that point more to one particular candidate explanation than another. A dead body is evidence that someone has been murdered. And it is evidence consistent perhaps with the butler did it, but the body on its own is not evidence for the proposition that the butler did it. There would be other things there that might be evidence for the proposition"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator presents a criticism addressed to Matt, and the response reiterates his terminology using a murder-investigation example in first person.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-evidence-standard"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-cumulative-bayesian-support",
+              "pro-bayesian-priors-likelihoods"
+            ],
+            "components": [
+              {
+                "componentId": "con-consistency-versus-discrimination-component-01",
+                "targetMoveId": "pro-cumulative-bayesian-support",
+                "text": "Whether the cited observations discriminate theism from competing explanations rather than merely remaining consistent with it.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-consistency-versus-discrimination-component-02",
+                "targetMoveId": "pro-bayesian-priors-likelihoods",
+                "text": "Whether evidence-for requires comparative direction toward one candidate explanation under the proposed method.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses conflation of compatibility with favoring evidence and supplies a murder example to show that evidence-for requires comparative discrimination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Evidence, evidence for, consistency, and comparative explanatory direction are expressly distinguished and consistently used."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The stated discrimination requirement fits the comparative evidential framework and does not overclaim that only unique evidence can support a hypothesis."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Evidence need not uniquely identify one explanation to favor it probabilistically over competitors.",
+            "decisiveQualification": "The response requires comparative pointing rather than uniqueness, so probabilistic nonconclusive support remains available."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it expressly identifies the conceptual error and connects the correction to the affirmative's own comparative method."
+            }
+          },
+          "evidenceBasis": "The excerpt defines evidence for a proposition as data pointing more toward one candidate explanation than another and illustrates this with a dead body.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-cosmic-scale-world-fit",
+          "sectionId": "section-hiddenness-world-fit",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "reply",
+          "proposition": "The universe's scale, hostility, and long development do not exclude purposive creation because a vast system may serve small valuable outcomes and an unlimited God bears no resource cost.",
+          "sourceSpan": {
+            "startEvent": 2836,
+            "endEvent": 2886,
+            "excerpt": "elaborate experiments just to test what happens in certain microscopic bacteria so the fact that something is just small compared to the rest of stuff doesn't tell you that it's unimportant now regarding the question of why space is hostile why so much of the universe is hostile uh well I'd say the reason for that is that um I mean like uh in in so far as you think as I do that God creates lots of different kinds of life"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator directs the scale and inhospitability question to Matthew, whose answer invokes design purposes, separated life, evil, and divine resource independence.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-hiddenness-world-fit"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-hiddenness-and-unreliable-manifestation"
+            ],
+            "components": [
+              {
+                "componentId": "pro-cosmic-scale-world-fit-component-01",
+                "targetMoveId": "con-hiddenness-and-unreliable-manifestation",
+                "text": "Whether the universe's vast scale and hostility are inconsistent with purposive creation by an unlimited God.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the world-fit challenge by arguing that small valuable outcomes can justify vast systems and that divine resources impose no cost."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The scale and resource-cost answers are clear, while the explanation of hostility through separated life remains only partly specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately argues that these observations do not exclude purpose rather than claiming they strongly establish theism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A morally perfect efficient creator might be expected to produce less hostility, waste, suffering, and delay even without resource constraints.",
+            "decisiveQualification": "No resource cost answers efficiency concerns only partly and does not by itself explain moral costs or hiddenness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The small-outcome and no-resource-cost points are coherent, but the transition to an explanation of hostility is underdeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 76,
+              "rationale": "The reply fairly addresses scale but omits decisive qualifications attached to hostility and moral world-fit."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "Within partial answers, it contacts the decisive scale and hostility component but does not resolve hiddenness or suffering broadly."
+            }
+          },
+          "evidenceBasis": "The excerpt compares small valuable outcomes to elaborate experiments, then addresses cosmic hostility by invoking many kinds of separated life and divine abundance.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-life-creation-world-fit",
+          "sectionId": "section-hiddenness-world-fit",
+          "side": "pro",
+          "speaker": "Matthew Adelstein",
+          "moveKind": "reply",
+          "proposition": "The observed existence of life remains comparatively expected under simple theism because creating life is good and the creator hypothesis may gain support from evidence without prior independent proof of possibility.",
+          "sourceSpan": {
+            "startEvent": 3054,
+            "endEvent": 3174,
+            "excerpt": "objections to Beijian epistemology, which is the idea that you should start with the prior probability, which is how likely a theory is before you consider the evidence. And then it goes up in probability if you observe facts that are likely given the hypothesis and given its negation. Um I've given arguments for theism having a high prior probability, for it being simple, for it being parsimmonious, for it being non-arbitrary. Now he says"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator hands the final word to Matthew, and this sustained closing section restates his arguments while explicitly answering Matt's objections.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "motion",
+            "bridgeId": "bridge-con-motion-withhold"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-consistency-versus-discrimination",
+              "con-perfect-being-creation-motive-gap",
+              "con-powerful-creator-identification-gap"
+            ],
+            "components": [
+              {
+                "componentId": "pro-life-creation-world-fit-component-01",
+                "targetMoveId": "con-consistency-versus-discrimination",
+                "text": "Whether life is comparatively more expected under simple theism than under its negation, rather than merely consistent with theism.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-life-creation-world-fit-component-02",
+                "targetMoveId": "con-perfect-being-creation-motive-gap",
+                "text": "Whether creating life is positively good and therefore predicted by the proposed God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-life-creation-world-fit-component-03",
+                "targetMoveId": "con-powerful-creator-identification-gap",
+                "text": "Whether evidence may support a creator hypothesis without prior independent proof of its possibility.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The closing reply restates comparative Bayesian support and directly claims a prior and life-likelihood advantage, while answering several negative objections."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The Bayesian proposition is clear, but simple theism, its negation, and the relevant background evidence remain broadly scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately invokes probability increase, but claiming a high prior and predicted life exceeds the defended detail in the closing span."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Life may be compatible with theism without discriminating it unless divine motives, natural alternatives, and likelihoods are independently specified.",
+            "decisiveQualification": "The closing asserts comparative likelihood but does not resolve the contested motive and alternative-distribution premises."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The closing summarizes several supporting considerations but does not defend comparative magnitudes, independence, or rival explanations in detail."
+            },
+            "relevanceBurden": {
+              "value": 99,
+              "rationale": "Within motion contacts, it directly reconnects the cumulative case to belief in the proposed being."
+            },
+            "representationalCharity": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it contacts the discrimination demand, though divine motivation and attribute identification remain compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt says probability rises when facts are likelier under a hypothesis than its negation and reprises simplicity, parsimony, and non-arbitrariness.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence survives the strict residual exclusion rule for the affirmative side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion exists beyond the locked bridges and move-level assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "All identified affirmative consequences are already represented by locked burdens, responses, relevance, or ratings.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed residual would not change burden completion independently of already assessed moves."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence survives the strict residual exclusion rule for the skeptical side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion exists beyond the locked bridges and move-level assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "All identified skeptical consequences are already represented by locked burdens, responses, relevance, or ratings.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed residual would not change burden completion independently of already assessed moves."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-epistemic-framework",
+          "title": "Evidential Standards and Bayesian Support",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "pro-bayesian-priors-likelihoods",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "pro-cumulative-bayesian-support",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            },
+            "con": {
+              "score": 91,
+              "moves": [
+                {
+                  "moveId": "con-evidence-proportional-warrant",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "con-consistency-versus-discrimination",
+                  "importance": 3,
+                  "score": 93
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-prior-attributes",
+          "title": "Theistic Prior and the Omnimax Attribute Bridge",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-limitless-mind-prior",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-omnimax-parsimony-bridge",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 91,
+              "moves": [
+                {
+                  "moveId": "con-omnimax-verification-limit",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "con-powerful-creator-identification-gap",
+                  "importance": 3,
+                  "score": 91
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-fine-tuning",
+          "title": "Fine-Tuning, Design, and Observer Selection",
+          "weightPercent": 30,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-constants-likelihood-design",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-anthropic-firing-squad",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            },
+            "con": {
+              "score": 91,
+              "moves": [
+                {
+                  "moveId": "con-likelihood-causation-gap",
+                  "importance": 3,
+                  "score": 91
+                },
+                {
+                  "moveId": "con-observer-selection-with-one-viable-universe",
+                  "importance": 3,
+                  "score": 91
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-conscious-observers",
+          "title": "Consciousness, Observer Existence, and Divine Motivation",
+          "weightPercent": 17,
+          "sides": {
+            "pro": {
+              "score": 71,
+              "moves": [
+                {
+                  "moveId": "pro-consciousness-likelihood",
+                  "importance": 3,
+                  "score": 75
+                },
+                {
+                  "moveId": "pro-observer-population-evidence",
+                  "importance": 2,
+                  "score": 64
+                }
+              ]
+            },
+            "con": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "con-adaptation-not-intended-goal",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "con-perfect-being-creation-motive-gap",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-hiddenness-world-fit",
+          "title": "Divine Hiddenness and the Observed World's Fit",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-cosmic-scale-world-fit",
+                  "importance": 2,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-life-creation-world-fit",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-hiddenness-and-unreliable-manifestation",
+                  "importance": 3,
+                  "score": 80
+                },
+                {
+                  "moveId": "con-possible-evidence-and-divine-hiddenness",
+                  "importance": 2,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 80.74,
+          "burdenCompletionAdjustment": 0,
+          "score": 81
+        },
+        "con": {
+          "weightedSectionMean": 89.41,
+          "burdenCompletionAdjustment": 0,
+          "score": 89
+        }
+      },
+      "winner": "con",
+      "winningMargin": 8
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 20,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 116612,
+  "proposedAdapterSha256": "4533dc603619a9890ecbc304fb15881f688db6f20a9bd936d1a2433dce46c440",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "139",
+    "sections": 5,
+    "moves": 20,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-16-single-deterministic-score-pass",
+    "adapterSha256": "4533dc603619a9890ecbc304fb15881f688db6f20a9bd936d1a2433dce46c440",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
