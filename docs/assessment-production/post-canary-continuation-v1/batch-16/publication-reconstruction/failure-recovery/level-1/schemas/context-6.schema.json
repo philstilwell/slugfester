@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-16-debate-16-pro-affirmative-belief-against-islamist-recruitment-critique-recovery-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "shardId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correction"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-16-publication-one-field-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-16-publication-level-1-one-field-recovery"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 6
+    },
+    "shardId": {
+      "type": "string",
+      "const": "debate-16-pro-affirmative-belief-against-islamist-recruitment-critique-recovery-1"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "16"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hirsi-ali-dawkins-god-debate-2024"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "moveId",
+        "critique"
+      ],
+      "properties": {
+        "moveId": {
+          "type": "string",
+          "const": "pro-affirmative-belief-against-islamist-recruitment"
+        },
+        "critique": {
+          "type": "string",
+          "minLength": 880,
+          "maxLength": 1800
+        }
+      }
+    }
+  }
+}
