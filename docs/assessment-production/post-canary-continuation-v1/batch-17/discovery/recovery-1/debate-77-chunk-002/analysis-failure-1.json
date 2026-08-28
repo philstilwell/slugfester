@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-discovery-recovery-analysis-failure",
+  "status": "preserved-stale-recovery-ramp-assertion-failure",
+  "stage": "recovered-cohort-deterministic-analysis",
+  "attempt": 1,
+  "command": "node scripts/recover-and-resume-assessment-production-post-canary-batch-17-discovery.mjs analyze",
+  "exitCode": 1,
+  "error": "all Batch 17 discovery contexts must pass without retry before analysis",
+  "diagnosis": "The recovered cohort correctly preserves the failed original ramp-two phase, followed by three passing recovery/resumption phases. The inherited assertion incorrectly required all five historical phases to be passing and read the original run's parallelism maximum without combining the recovery execution's observed maximum.",
+  "correction": {
+    "type": "exact-deterministic-analysis-control-correction",
+    "originalExecutionController": "scripts/recover-and-resume-assessment-production-post-canary-batch-17-discovery.mjs",
+    "originalExecutionControllerSha256": "0c4cc4bfd2e408098cdb59a061eed109e841249e75c999ac93340a99c4ad965d",
+    "correctedAnalysisController": "scripts/finalize-assessment-production-post-canary-batch-17-discovery-recovery.mjs",
+    "correctedAnalysisControllerSha256": "aaa936adea06fa0b41de472e7cced0ffd8fc582bc54752e4404cb854e5752f6f",
+    "preservedFailedRampRequired": true,
+    "allPostRecoveryPhasesMustPass": true,
+    "effectiveMaximumParallelismUsesBothExecutions": true
+  },
+  "modelOutputsChanged": false,
+  "acceptedOutputsChanged": false,
+  "failedOutputChanged": false,
+  "modelContextsExecutedByAnalysis": 0,
+  "paidServiceCalls": 0,
+  "scorePasses": 0
+}
