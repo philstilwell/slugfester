@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-17-score-pass-activation-controller-failure",
+  "status": "preserved-corrected-before-score-pass",
+  "batchNumber": 17,
+  "cause": "The activation command used --activated-at while the frozen controller requires --authorized-at.",
+  "effect": {
+    "activationArtifactCreated": false,
+    "scorePassStarted": false,
+    "calculatedScoresCreated": false,
+    "scorePassesConsumed": 0,
+    "sourceEvidenceChanged": false
+  },
+  "correction": "Invoke the unchanged frozen controller once with --authorized-at and the same class of ISO timestamp.",
+  "authorization": "Existing Batch 17 standing authorization covers routine activation and exact deterministic controller correction."
+}
