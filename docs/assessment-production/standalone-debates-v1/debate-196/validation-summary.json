@@ -49,11 +49,16 @@
     "publicMotionMatchesFrozenQuestion": true,
     "overallBlundersPerSide": 2,
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "0618a2a5e86bc10b942685984524cef5d6db64e8a0f114b9261b8065f729f62c",
+    "productionLedgerSha256": "68e9abfd755a50a1d29c2abecd46ea1df04c131fb0def73513e59d0ede19b27f",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-196/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
     "critiqueCharacterRange": [896, 944],
-    "critiqueBoilerplateMeanCoveredRatio": 0.012
+    "critiqueBoilerplateMeanCoveredRatio": 0.012,
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-196/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 20,
+    "acceptedRhetoricalTags": 2,
+    "rejectedRhetoricalTagCandidates": 5
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -70,7 +75,9 @@
     "mobileEvidenceSha256": "3f4f9a3e7c9c5633cf98373ca1abcdbd6cd69ff6d3a88f783981f9558a9ad469",
     "postPublicationAudit": "docs/assessment-production/standalone-debates-v1/debate-196/rendering/post-publication-audit-1.json",
     "postPublicationScreenshots": 4,
-    "visibleCorrectionsVerified": 3
+    "visibleCorrectionsVerified": 3,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-196/rendering/post-rhetorical-tag-audit.json",
+    "rhetoricalTagsVisuallyVerified": 2
   },
   "checks": [
     {
@@ -112,6 +119,12 @@
       "name": "standalone full and repository-only replay",
       "command": "npm run assessment:standalone:check and npm run assessment:standalone:repository:check",
       "status": "passed-by-final-replay"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "npm run assessment:standalone:rhetorical-tags:check",
+      "status": "passed",
+      "result": "20 moves reviewed; 2 tags accepted; 5 plausible candidates rejected"
     },
     {
       "name": "patch whitespace check",

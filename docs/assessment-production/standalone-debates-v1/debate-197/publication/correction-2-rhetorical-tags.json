@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T13:18:00Z",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "authorization": "User-requested fallacy and bias rigor audit on 2026-08-29.",
+  "reason": "A transcript-complete post-scoring review found five named defects that satisfy the same conservative materiality standard used elsewhere in the corpus.",
+  "immutableFields": ["identity", "motion", "source spans", "move selection and order", "judgments", "adjudication", "scores", "critique prose"],
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/output.json",
+    "sha256": "84bda0f9481d9fb239196dc785e3c752bb485d24ffd3635543545bfe0aaba39f",
+    "bytes": 57916,
+    "gitCommit": "8d10a243ec9dfa72c96f4e55958b696f5c3a906f",
+    "gitBlob": "4c3b44adce778fb4b29c91d1164236310c196ff4",
+    "note": "The exact prior bytes are retained by the named immutable Git commit and blob."
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/output.json",
+      "sha256": "d4646715c36cc4fff48b2cde5b3e96be2218570ef0ec00aab5e488fe30cfdb09",
+      "bytes": 60286
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-audit.json",
+      "sha256": "77b00be879fd5b4a1399187dc66c6f5e74fd52c303d04a8f678cd12885bb1606",
+      "bytes": 9030
+    }
+  },
+  "acceptedTagChanges": [
+    {"moveId": "wetness-analogy-fails", "label": "Argument from ignorance", "type": "fallacy"},
+    {"moveId": "fundamental-consciousness-avoids-miracle", "label": "Argument from ignorance", "type": "fallacy"},
+    {"moveId": "prehuman-objective-beauty", "label": "Equivocation", "type": "fallacy"},
+    {"moveId": "cosmic-directionality", "label": "Confirmation bias", "type": "bias"},
+    {"moveId": "ritual-embodied-metaphor", "label": "Subjective validation", "type": "bias"}
+  ],
+  "writableShards": [
+    {"shard": 1, "fields": ["candidate.sections.tags.wetness-analogy-fails", "candidate.sections.tags.fundamental-consciousness-avoids-miracle"]},
+    {"shard": 2, "fields": ["candidate.sections.tags.prehuman-objective-beauty", "candidate.sections.tags.cosmic-directionality"]},
+    {"shard": 3, "fields": ["candidate.sections.tags.ritual-embodied-metaphor", "candidate.overall.pro.blunders[1].links"]}
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 5,
+    "overallLinkChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  }
+}

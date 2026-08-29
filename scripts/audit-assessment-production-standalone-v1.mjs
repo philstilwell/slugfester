@@ -75,6 +75,12 @@ const paths = {
   publicationBeforeContentParityRepair:
     selectedRegistryRecord.contentParity?.preservedOutputPath,
   publicationContentParityAudit: selectedRegistryRecord.contentParity?.auditPath,
+  publicationRhetoricalTagCorrection:
+    selectedRegistryRecord.rhetoricalTagReview?.correctionPath,
+  publicationRhetoricalTagAudit:
+    selectedRegistryRecord.rhetoricalTagReview?.auditPath,
+  postRhetoricalTagRendering:
+    selectedRegistryRecord.rhetoricalTagReview?.renderingAuditPath,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
   postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
   validation: `${DEBATE_ROOT}/validation-summary.json`,
@@ -84,6 +90,23 @@ const paths = {
 const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
+const gitBytes = (commit, relative) => {
+  const result = spawnSync("git", ["show", `${commit}:${relative}`], {
+    cwd: ROOT,
+    encoding: null,
+    maxBuffer: 10 * 1024 * 1024
+  });
+  assert.equal(result.status, 0, `cannot read preserved Git object ${commit}:${relative}`);
+  return result.stdout;
+};
+const gitBlob = (commit, relative) => {
+  const result = spawnSync("git", ["rev-parse", `${commit}:${relative}`], {
+    cwd: ROOT,
+    encoding: "utf8"
+  });
+  assert.equal(result.status, 0, `cannot resolve preserved Git blob ${commit}:${relative}`);
+  return result.stdout.trim();
+};
 const publicationComparable = (debate) => {
   const comparable = structuredClone(debate);
   delete comparable.sourceNote;
@@ -309,6 +332,23 @@ function validateFrozenInputBoundary({
           value.startsWith(`${record.root}/publication/`),
           true,
           `Debate ${record.debateNumber}: content-parity evidence is outside its publication directory`
+        );
+      }
+    }
+    if (record.rhetoricalTagReview) {
+      for (const [key, value] of Object.entries(record.rhetoricalTagReview)) {
+        if (key === "priorPublicationGitCommit") {
+          assert.match(value, /^[0-9a-f]{40}$/);
+          continue;
+        }
+        const expectedDirectory =
+          key === "renderingAuditPath"
+            ? `${record.root}/rendering/`
+            : `${record.root}/publication/`;
+        assert.equal(
+          value.startsWith(expectedDirectory),
+          true,
+          `Debate ${record.debateNumber}: rhetorical-tag evidence is outside its allowed directory`
         );
       }
     }
@@ -737,7 +777,10 @@ function buildProductionAdapter() {
   for (const [key, value] of [
     ["publicationContentParityCorrection", paths.publicationContentParityCorrection],
     ["publicationBeforeContentParityRepair", paths.publicationBeforeContentParityRepair],
-    ["publicationContentParityAudit", paths.publicationContentParityAudit]
+    ["publicationContentParityAudit", paths.publicationContentParityAudit],
+    ["publicationRhetoricalTagCorrection", paths.publicationRhetoricalTagCorrection],
+    ["publicationRhetoricalTagAudit", paths.publicationRhetoricalTagAudit],
+    ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering]
   ]) {
     if (value && existsSync(absolute(value))) evidencePaths[key] = value;
   }
@@ -855,16 +898,62 @@ function audit({ repositoryOnly = false } = {}) {
       contentParityCorrection.evidence.before.sha256,
       sha256(bytes(paths.publicationBeforeContentParityRepair))
     );
-    assert.equal(
-      contentParityCorrection.evidence.after.sha256,
-      sha256(bytes(paths.publication))
-    );
+    const expectedContentParityOutputSha = paths.publicationRhetoricalTagCorrection
+      ? json(paths.publicationRhetoricalTagCorrection).preservedPriorOutput.sha256
+      : sha256(bytes(paths.publication));
+    assert.equal(contentParityCorrection.evidence.after.sha256, expectedContentParityOutputSha);
     assert.equal(
       contentParityCorrection.evidence.contentParityAudit.sha256,
       sha256(bytes(paths.publicationContentParityAudit))
     );
     assert.equal(contentParityAudit.status, "passed-content-parity-audit");
     assert.equal(contentParityAudit.debateNumber, DEBATE_NUMBER);
+  }
+  if (paths.publicationRhetoricalTagCorrection) {
+    const correction = json(paths.publicationRhetoricalTagCorrection);
+    const tagAudit = json(paths.publicationRhetoricalTagAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = gitBytes(prior.gitCommit, prior.path);
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges > 0, true);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    assert.equal(
+      prior.gitCommit,
+      selectedRegistryRecord.rhetoricalTagReview.priorPublicationGitCommit
+    );
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
+    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
+    assert.equal(
+      correction.evidence.rhetoricalTagAudit.sha256,
+      sha256(bytes(paths.publicationRhetoricalTagAudit))
+    );
+    assert.equal(
+      correction.evidence.rhetoricalTagAudit.bytes,
+      bytes(paths.publicationRhetoricalTagAudit).length
+    );
+    assert.equal(tagAudit.status, "passed-rhetorical-tag-review");
+    assert.equal(tagAudit.debateNumber, DEBATE_NUMBER);
+    assert.equal(tagAudit.audit.acceptedTagCount, correction.audit.tagChanges);
+    const renderingAudit = json(paths.postRhetoricalTagRendering);
+    assert.equal(
+      renderingAudit.status,
+      "passed-post-rhetorical-tag-rendering-audit"
+    );
+    assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+    assert.equal(
+      renderingAudit.audit.acceptedTagsRendered,
+      correction.audit.tagChanges
+    );
+    assert.equal(renderingAudit.audit.runtimeFailures, 0);
+    assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+    assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
   }
   assert.equal(publication.candidate.motion, inventory.motion);
   assert.equal(publication.candidate.motion, authorization.identity.motion);

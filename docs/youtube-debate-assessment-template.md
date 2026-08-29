@@ -76,7 +76,7 @@ Design constraints:
 12. Save calibration ledgers under `docs/calibration/v2.1/ledgers/`. Publish to `docs/assessment-ledgers/` and set `assessmentRubric: "Slugfester Reassessment Rubric v2.1"` only after a complete reassessment is explicitly promoted.
 13. Run the repository calculator without manual overrides and complete any threshold-triggered adjudications.
 14. Write each critique at 105-130 words.
-15. Review fallacy or bias tags only after scoring; add them only when they explain a material weakness already represented in the dimensions.
+15. Review every selected move for fallacy or bias tags only after scoring; add a tag only when the complete source supports the local catalog definition and it explains a material weakness already represented in the dimensions. Save accepted and plausible rejected candidate decisions, prefer no tag to a forced tag, and never tag to match corpus frequency.
 16. Write Overall Commentary from the locked section-weighted record.
 17. Add the visibly AI-authored accordion and record a novelty map for its strengthened and new arguments.
 18. Run `npm run seo` and `npm run check`.

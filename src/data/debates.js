@@ -76551,7 +76551,14 @@ export const debates = [
               "words": "Unlimited power would permit impossible supertasks such as Thomson's lamp, counting against an unlimited-power being.",
               "score": 72,
               "critique": "Strongest feature: Huemer converts an abstract concern about infinite power into a vivid operational test, asking whether an unlimited agent could complete a paradoxical sequence no finite agent can finish. Principal limitation: The inference assumes omnipotence includes performing logically or metaphysically impossible tasks, whereas traditional formulations usually restrict power to coherent possibilities. Live burden: He must show that the supertask is genuinely possible for any unlimited agent or that inability to perform it conflicts with Rasmussen's actual concept of supremacy. Locked score: The example is memorable and presses for precision, but its force depends heavily on a disputed definition and may confuse failure of a scenario with limitation in an agent, warranting the frozen score of 72 The metaphysical possibility of the proposed supertask remains insufficiently demonstrated.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": fallacy("equivocation"),
+                  "context": "The objection shifts unlimited power from lacking a finite ceiling to power to realize logically incoherent or metaphysically impossible supertasks."
+                }
+              ]
             }
           },
           {
@@ -76640,7 +76647,14 @@ export const debates = [
               "words": "Suffering occurs within developmental narratives where conscious beings gain self-standing, expansion, and other valuable forms of growth.",
               "score": 66,
               "critique": "Strongest feature: Rasmussen does not ignore evil; he proposes a positive connection between risky development, valuable agency, meaningful narrative, and some forms of suffering. Principal limitation: The claim that observed evils generally fit great stories is sweeping, weakly evidenced, and insensitive to suffering that destroys agency, character, or every apparent developmental good. Live burden: He must connect the amount, distribution, intensity, and apparently pointless cases of suffering to benefits a supreme good foundation would reasonably permit. Locked score: The move is relevant and candidly introduced as a sketch, but possibility does most of the work and the broad evidential reversal is poorly supported, making this the pro side's weakest locked move at 66 A distribution-sensitive comparison with naturalistic expectations remains necessary before suffering can support theism.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Confirmation bias",
+                  "type": "bias",
+                  "url": bias("confirmation-bias"),
+                  "context": "The narrative reading selects suffering compatible with growth while discounting severe cases that destroy agency, character, or any apparent developmental good."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "m09",
@@ -76686,7 +76700,12 @@ export const debates = [
         "blunders": [
           {
             "text": "The early claim that suffering generally supports great developmental stories was substantially broader than the evidence supplied.",
-            "links": []
+            "links": [
+              {
+                "label": "Confirmation bias",
+                "url": bias("confirmation-bias")
+              }
+            ]
           },
           {
             "text": "The move from avoiding arbitrary finite limits to a qualitatively supreme foundation was asserted without establishing that such maximality is coherent or uniquely explanatory.",
@@ -76704,7 +76723,12 @@ export const debates = [
         "blunders": [
           {
             "text": "The supertask objection relies too heavily on defining unlimited power as including metaphysically impossible performances.",
-            "links": []
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": fallacy("equivocation")
+              }
+            ]
           },
           {
             "text": "The multiverse defense relied on a suitably life-producing distribution without independently motivating or specifying that distribution and its probability measure.",
@@ -76912,7 +76936,14 @@ export const debates = [
               "words": "Liquidity is structurally predictable from molecules, whereas interior experience is wholly novel unless matter already has an experiential aspect.",
               "score": 84,
               "critique": "Strongest feature: McGilchrist pinpoints why ordinary emergence analogies may be insufficient: liquidity remains structurally characterizable from molecular relations, whereas first-person presence is absent from the public physical vocabulary being invoked. Principal limitation: Present explanatory discontinuity does not prove permanent derivational impossibility or show that experiential properties were already fundamental, and the alternative inherits combination and individuation problems. Live burden: He must establish a principled barrier rather than a temporary research gap, then demonstrate how consciousness-first ontology explains bounded subjects more successfully. Locked score: The 84-point assessment rewards a forceful, precise challenge to the analogy while stopping below very strong because its negative diagnosis does not yet validate the proposed fundamental-consciousness solution The alternative's own causal account remains unfinished.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": fallacy("argument-from-ignorance"),
+                  "context": "The argument treats the present absence of a derivation from matter as support for experience being fundamental, without supplying positive evidence for that conclusion."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "phase-emergence",
@@ -76943,7 +76974,14 @@ export const debates = [
               "words": "Treating consciousness as a basic cosmic element fits observation without the unexplained abracadabra of emergence.",
               "score": 77,
               "critique": "Strongest feature: McGilchrist exposes the explanatory cost of deriving experience from wholly nonexperiential premises and proposes fundamentality as a direct way to avoid an unexplained ontological discontinuity. Principal limitation: Declaring consciousness basic relocates rather than resolves the mystery, especially because bounded, brain-dependent subjects still require combination, localization, and causal-interface accounts. Live burden: The view must compare its unresolved primitives with materialism's, solve individuation, and derive distinctive observations rather than gaining support solely from the rival's incompleteness. Locked score: The 77-point assessment recognizes an important explanatory challenge and coherent alternative, but the replacement theory remains too underspecified and prediction-poor to earn stronger comparative support A secure comparative inference to God also remains unavailable.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": fallacy("argument-from-ignorance"),
+                  "context": "The move treats materialism's incomplete explanation and the lack of disproof of cosmic consciousness as affirmative support for consciousness being fundamental."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "modest-emergent-materialism",
@@ -77054,7 +77092,14 @@ export const debates = [
               "words": "Beauty, truth, and goodness preexist human invention, as shown by beautiful forms that arose before human observers.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist distinguishes the existence of valued forms from human manufacture and uses prehuman natural order to challenge accounts that reduce beauty, truth, and goodness to arbitrary invention. Principal limitation: Forms can predate observers while beauty remains a later evaluative relation shaped by perceivers, so temporal priority does not establish observer-independent value. Live burden: He must define objective beauty, distinguish it from evolved preference or structural regularity, and connect its existence specifically to a divine conscious ground. Locked score: The 69-point mixed assessment credits a clear and relevant value argument but reflects substantial equivocation between prehuman form and prehuman beauty, along with an unsupported theological bridge Evolutionary accounts of aesthetic response also require substantially fuller and more symmetrical comparative treatment.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": fallacy("equivocation"),
+                  "context": "The inference shifts from prehuman forms that later observers call beautiful to beauty itself existing before any observer."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "novel-material-properties",
@@ -77074,7 +77119,14 @@ export const debates = [
               "words": "Biology and the wider cosmos exhibit directionality toward complexity, diversity, value, and purpose that is not merely invented by humans.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist links biological complexity, diversity, value, and wider cosmic development into a cumulative directionality claim, offering more than a single isolated example of apparent purpose. Principal limitation: The pattern selection underweights extinction, simplification, entropy, and observer effects, while increasing complexity in some lineages does not establish a universe-wide goal. Live burden: He must define a measurable directional baseline, include countertrends symmetrically, and show why purposeful explanation predicts the resulting distribution better than selection and retrospective recognition. Locked score: The 69-point mixed assessment reflects broad motion relevance and integrative ambition, offset by selective evidence, ambiguous scale, and an inference to purpose that exceeds the demonstrated trend Its uneven distribution also remains insufficiently explained.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Confirmation bias",
+                  "type": "bias",
+                  "url": bias("confirmation-bias"),
+                  "context": "The directionality claim selects complexity and diversity while discounting extinction, simplification, entropy, and observer-selection effects that cut against a universal trend."
+                }
+              ]
             }
           }
         ]
@@ -77147,7 +77199,14 @@ export const debates = [
               "words": "Nature, music, poetry, and ritual disclose reality through embodied metaphors whose power is lost in explicit reduction.",
               "score": 76,
               "critique": "Strongest feature: McGilchrist explains how nature, music, poetry, and ritual can disclose significance through embodied participation that explicit paraphrase cannot preserve, giving experiential evidence a clear phenomenological role. Principal limitation: Transformative depth and resistance to reduction do not establish mind-independent spiritual disclosure, especially when incompatible traditions generate comparably powerful experiences. Live burden: The case must distinguish revelation from psychological transformation, compare conflicting interpretations, and provide public criteria connecting metaphorical resonance to external reality. Locked score: The 76-point strong assessment credits subtle phenomenology, relevance, and clarity, while evidential privacy, interpretive plurality, and the unproved move from meaning to ontology prevent a higher band No externally verifiable theological conclusion follows from that phenomenology alone.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Subjective validation",
+                  "type": "bias",
+                  "url": bias("subjective-validation"),
+                  "context": "The move treats privately transformative resonance in nature, music, poetry, and ritual as disclosure about external reality without public evidence that distinguishes revelation from projection."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "human-spiritual-need",
@@ -77188,7 +77247,16 @@ export const debates = [
           },
           {
             "text": "The inference from prehuman beauty and selective cosmic directionality to an involved relational God exceeded the observations and underweighted important countertrends.",
-            "links": []
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": fallacy("equivocation")
+              },
+              {
+                "label": "Confirmation bias",
+                "url": bias("confirmation-bias")
+              }
+            ]
           }
         ]
       },

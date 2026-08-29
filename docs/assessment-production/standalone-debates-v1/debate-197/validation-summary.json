@@ -54,11 +54,16 @@
     "overallStrengthsPerSide": 3,
     "overallBlundersPerSide": 2,
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "905b6163d43f94e61187d0e4aa664a7e8c91b23b90a9a3bc4e45ba46c2865fbf",
+    "productionLedgerSha256": "e3ca3813994df9d9e9ba2637d1ac0aa12b4aa83572b96be7664645899616d345",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-197/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
     "critiqueCharacterRange": [895, 979],
-    "critiqueBoilerplateMeanCoveredRatio": 0
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 30,
+    "acceptedRhetoricalTags": 5,
+    "rejectedRhetoricalTagCandidates": 6
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -72,6 +77,8 @@
     "keyboardSpaceTests": 2,
     "profileNavigationTests": 2,
     "mobileCritiquePointerInterceptionFixed": true,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-197/rendering/post-rhetorical-tag-audit.json",
+    "rhetoricalTagsVisuallyVerified": 5,
     "desktopEvidenceSha256": "015b00cde1f0e9cf320aaba3c4947211e3eaa2a6335b61ef539820aadfba563a",
     "mobileEvidenceSha256": "8fa8ed99bbe737b602dc351b3821f922748ebf4ebf5fbcbca325618e79afbc33"
   },
@@ -115,6 +122,12 @@
       "name": "standalone full and repository-only replay",
       "command": "npm run assessment:standalone:check and npm run assessment:standalone:repository:check",
       "status": "passed"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "npm run assessment:standalone:rhetorical-tags:check",
+      "status": "passed",
+      "result": "30 moves reviewed; 5 tags accepted; 6 plausible candidates rejected"
     },
     {
       "name": "complete repository suite",
