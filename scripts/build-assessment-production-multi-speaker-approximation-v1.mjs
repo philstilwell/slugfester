@@ -23,6 +23,10 @@ const PRIMARY_SCHEMA_PATH =
   "docs/assessment-production/multi-speaker-approximation-v1/schemas/primary-judgment.schema.json";
 const ADJUDICATION_SCHEMA_PATH =
   "docs/assessment-production/multi-speaker-approximation-v1/schemas/adjudication.schema.json";
+const INVENTORY_AUDIT_SCHEMA_PATH =
+  "docs/assessment-production/multi-speaker-approximation-v1/schemas/inventory-audit.schema.json";
+const AUDIO_VERIFICATION_SCHEMA_PATH =
+  "docs/assessment-production/multi-speaker-approximation-v1/schemas/audio-verification.schema.json";
 const POLICY_PATH =
   "docs/assessment-production/score-stability-policy-v2.2-promotion.json";
 
@@ -182,6 +186,8 @@ function buildManifest() {
         con: { label: debate.sides.con.name, speakers: item.con }
       },
       substantiveSpeakerCount: item.pro.length + item.con.length,
+      formatFitnessStatus: "required-before-primary-judgment",
+      interlocutorRankingEligible: false,
       source: sourceRecord(videoId),
       legacyAssessmentBoundary: {
         identityFieldsReadDuringPreparation: [
@@ -205,13 +211,15 @@ function buildManifest() {
     .map((item) => item.debateNumber)
     .filter((number) => !checkpoint.includes(number));
   return {
-    schemaVersion: "1.0-multi-speaker-approximation-manifest",
+    schemaVersion: "1.1-multi-speaker-approximation-manifest",
     protocolId: MULTI_SPEAKER_PROTOCOL_ID,
     status: "process-and-source-census-frozen-awaiting-checkpoint-execution",
     frozenOn: "2026-08-28",
     authorization: {
       userInstruction:
         "Let's try again to create a comparable assessment process for these. They do not need to be perfect, but just approximate the assessments and scores.",
+      qualitySafeguardsInstruction:
+        "Implement those recommendations at your discretion.",
       preparationAuthorized: true,
       modelExecutionAuthorizedByThisManifest: false,
       paidTranscriptionAuthorized: false,
@@ -224,12 +232,14 @@ function buildManifest() {
       authentication: "ChatGPT subscription",
       rubric: MULTI_SPEAKER_RUBRIC,
       primaryJudgmentsPerDebate: 2,
+      independentInventoryAuditsPerAcceptedInventory: 1,
+      inventoryAuditCorrectionCyclesMaximum: 1,
       disputeAdjudication: "isolated-existing-option-only",
       sideScoreFormula: "same move, section, and overall aggregation as active v2.1 production",
       speakerContributionScores: "diagnostic-only-not-ranking-eligible",
       directIncrementalModelCostUsd: 0,
       expectedPaidTranscriptionCostUsd: 0,
-      estimatedAggregateModelContextHours: { minimum: 7, maximum: 10 }
+      estimatedAggregateWorkflowHours: { minimum: 12, maximum: 18 }
     },
     controls: {
       scoreBlind: true,
@@ -239,11 +249,21 @@ function buildManifest() {
       actualSpeakerOwnsEveryMove: true,
       teammateCreditTransferProhibited: true,
       explicitAdoptionEvidenceRequired: true,
-      belowHighAttributionRequiresAudio: true,
+      formatFitnessRequired: true,
+      mixedRoleWinnerWithholdingRequired: true,
+      independentScoreBlindInventoryAuditRequired: true,
+      allSelectedMovesRequireAudio: true,
+      allSpeakerHandoffsRequireAudio: true,
+      allQuoteEligibleSpansRequireAudio: true,
       repositoryAuthoredTotalsOnly: true,
       scorePassesMaximumPerDebate: 1,
       ordinaryV2AttributionProhibited: true,
-      approximationDisclosureRequired: true
+      approximationDisclosureRequired: true,
+      primaryScoreRangePublicationRequired: true,
+      equalActiveSpeakerSensitivityRequired: true,
+      leaveOneSpeakerOutSensitivityRequired: true,
+      formatSensitiveCheckpointHoldRequired: true,
+      interlocutorRankingExclusionRequired: true
     },
     scoreStability: {
       meanAbsoluteDistanceAtMost: 4,
@@ -280,8 +300,10 @@ function buildManifest() {
       rubric: fileRecord(RUBRIC_PATH),
       contractLibrary: fileRecord(LIBRARY_PATH),
       contractTest: fileRecord(TEST_PATH),
+      inventoryAuditSchema: fileRecord(INVENTORY_AUDIT_SCHEMA_PATH),
       primaryJudgmentSchema: fileRecord(PRIMARY_SCHEMA_PATH),
       adjudicationSchema: fileRecord(ADJUDICATION_SCHEMA_PATH),
+      audioVerificationSchema: fileRecord(AUDIO_VERIFICATION_SCHEMA_PATH),
       activeScorePolicy: fileRecord(POLICY_PATH)
     },
     debates: selected,

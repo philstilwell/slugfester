@@ -1019,6 +1019,7 @@ function rankingUrl(state) {
 
 function rankingDebates(state) {
   return debates.filter((debate) => {
+    if (debate.interlocutorRankingEligible === false) return false;
     const matchesTopic =
       state.topic === "all" ||
       topicCategoriesForDebate(debate).some((category) => category.id === state.topic);
@@ -1603,7 +1604,7 @@ function renderRankingMethod() {
     <details class="ranking-method">
       <summary>Ranking method</summary>
       <div>
-        <p>Each average uses the published overall score for that speaker's side of every matching debate. A panel's shared side score is assigned to each named participant on that side.</p>
+        <p>Each average uses the published overall score for that speaker's side of every matching ranking-eligible debate. Multi-speaker approximations and any other scorecard explicitly marked ineligible are omitted rather than assigning a shared team score to each participant.</p>
         <p>Topic filters include any debate assigned to the selected category. The Opponents' Avg. sort uses the published overall scores of the opponents each person faced.</p>
         <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
       </div>

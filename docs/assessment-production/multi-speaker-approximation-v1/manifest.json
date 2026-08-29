@@ -1,10 +1,11 @@
 {
-  "schemaVersion": "1.0-multi-speaker-approximation-manifest",
+  "schemaVersion": "1.1-multi-speaker-approximation-manifest",
   "protocolId": "assessment-production-multi-speaker-approximation-v1",
   "status": "process-and-source-census-frozen-awaiting-checkpoint-execution",
   "frozenOn": "2026-08-28",
   "authorization": {
     "userInstruction": "Let's try again to create a comparable assessment process for these. They do not need to be perfect, but just approximate the assessments and scores.",
+    "qualitySafeguardsInstruction": "Implement those recommendations at your discretion.",
     "preparationAuthorized": true,
     "modelExecutionAuthorizedByThisManifest": false,
     "paidTranscriptionAuthorized": false,
@@ -17,14 +18,16 @@
     "authentication": "ChatGPT subscription",
     "rubric": "Slugfester Reassessment Rubric v2 — Multi-Speaker Approximation",
     "primaryJudgmentsPerDebate": 2,
+    "independentInventoryAuditsPerAcceptedInventory": 1,
+    "inventoryAuditCorrectionCyclesMaximum": 1,
     "disputeAdjudication": "isolated-existing-option-only",
     "sideScoreFormula": "same move, section, and overall aggregation as active v2.1 production",
     "speakerContributionScores": "diagnostic-only-not-ranking-eligible",
     "directIncrementalModelCostUsd": 0,
     "expectedPaidTranscriptionCostUsd": 0,
-    "estimatedAggregateModelContextHours": {
-      "minimum": 7,
-      "maximum": 10
+    "estimatedAggregateWorkflowHours": {
+      "minimum": 12,
+      "maximum": 18
     }
   },
   "controls": {
@@ -35,11 +38,21 @@
     "actualSpeakerOwnsEveryMove": true,
     "teammateCreditTransferProhibited": true,
     "explicitAdoptionEvidenceRequired": true,
-    "belowHighAttributionRequiresAudio": true,
+    "formatFitnessRequired": true,
+    "mixedRoleWinnerWithholdingRequired": true,
+    "independentScoreBlindInventoryAuditRequired": true,
+    "allSelectedMovesRequireAudio": true,
+    "allSpeakerHandoffsRequireAudio": true,
+    "allQuoteEligibleSpansRequireAudio": true,
     "repositoryAuthoredTotalsOnly": true,
     "scorePassesMaximumPerDebate": 1,
     "ordinaryV2AttributionProhibited": true,
-    "approximationDisclosureRequired": true
+    "approximationDisclosureRequired": true,
+    "primaryScoreRangePublicationRequired": true,
+    "equalActiveSpeakerSensitivityRequired": true,
+    "leaveOneSpeakerOutSensitivityRequired": true,
+    "formatSensitiveCheckpointHoldRequired": true,
+    "interlocutorRankingExclusionRequired": true
   },
   "scoreStability": {
     "meanAbsoluteDistanceAtMost": 4,
@@ -100,8 +113,8 @@
   "implementationLocks": {
     "workflow": {
       "path": "docs/assessment-multi-speaker-approximation-workflow-v1.md",
-      "bytes": 7835,
-      "sha256": "13db427c331dac999548f91dffc00eef26a8a46b69535f6d3b3d8dbc3de52b2a"
+      "bytes": 11575,
+      "sha256": "7c02ade376555f99441a754c69ad0b668a4ba9550ee3577d666eed54eff9ace1"
     },
     "rubric": {
       "path": "docs/reassessment-rubric-v2.1.md",
@@ -110,23 +123,33 @@
     },
     "contractLibrary": {
       "path": "scripts/lib/assessment-production-multi-speaker-approximation-v1.mjs",
-      "bytes": 35675,
-      "sha256": "607796c082302f40e30d43d7bf938ac4646198dbdaa1131e353c6d28eb4c1c63"
+      "bytes": 63654,
+      "sha256": "31d12ae6941868002f27739426b445f911dae480f1fad33fa47944d65437ebda"
     },
     "contractTest": {
       "path": "scripts/test-assessment-production-multi-speaker-approximation-v1.mjs",
-      "bytes": 10889,
-      "sha256": "6a7f957ec32d387f844f32abf5613f03b66237d21d9d0e6aaf6e3348e5b044bd"
+      "bytes": 18827,
+      "sha256": "d027cc907eb08410a2ceeddbfd4403bdbd3cc146f4c11390d8a68d588c5dea62"
+    },
+    "inventoryAuditSchema": {
+      "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/inventory-audit.schema.json",
+      "bytes": 4903,
+      "sha256": "33f03cbc5d5074c995130ae956be2593ad12f15aae2cb427a67690e1dfbba3cf"
     },
     "primaryJudgmentSchema": {
       "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/primary-judgment.schema.json",
-      "bytes": 4981,
-      "sha256": "f81e94005b2d49845f44785559d2b9e63b4bafa79d413f264b4087a9ab9a3ebd"
+      "bytes": 5088,
+      "sha256": "545d2e2dc692be28772c6bdbdb67ab77f63165b7535ed7b97208ce81bd2e75df"
     },
     "adjudicationSchema": {
       "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/adjudication.schema.json",
       "bytes": 2130,
       "sha256": "71ec1d83d92d67b08908cb9422bc63ae5f36a67f434cda58580f6ec9b9a9b6c7"
+    },
+    "audioVerificationSchema": {
+      "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/audio-verification.schema.json",
+      "bytes": 3066,
+      "sha256": "8ebe1ecaed4a30be6ed2db9b92ce0571908261870363488d3274953414a2626a"
     },
     "activeScorePolicy": {
       "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
@@ -159,6 +182,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -223,6 +248,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -287,6 +314,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -351,6 +380,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -414,6 +445,8 @@
         }
       },
       "substantiveSpeakerCount": 3,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -477,6 +510,8 @@
         }
       },
       "substantiveSpeakerCount": 3,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -541,6 +576,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -605,6 +642,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -669,6 +708,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -733,6 +774,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -796,6 +839,8 @@
         }
       },
       "substantiveSpeakerCount": 3,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -860,6 +905,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -923,6 +970,8 @@
         }
       },
       "substantiveSpeakerCount": 3,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -987,6 +1036,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -1050,6 +1101,8 @@
         }
       },
       "substantiveSpeakerCount": 3,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {
@@ -1114,6 +1167,8 @@
         }
       },
       "substantiveSpeakerCount": 4,
+      "formatFitnessStatus": "required-before-primary-judgment",
+      "interlocutorRankingEligible": false,
       "source": {
         "status": "complete-and-hash-valid",
         "transcript": {

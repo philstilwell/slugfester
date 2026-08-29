@@ -112,6 +112,144 @@ function speakersBySide(inventory) {
   );
 }
 
+function validateFormatFitness(inventory, speakerSide, sectionIds, moveIds) {
+  const fitness = inventory.formatFitness;
+  assertMultiSpeaker(
+    fitness && typeof fitness === "object" && !Array.isArray(fitness),
+    "inventory.formatFitness: expected an object"
+  );
+  assertMultiSpeaker(
+    ["debate", "discussion"].includes(fitness.publicFormat),
+    "inventory.formatFitness.publicFormat: expected debate or discussion"
+  );
+  assertMultiSpeaker(
+    ["clear", "approximate", "not-meaningful"].includes(fitness.twoSidedFit),
+    "inventory.formatFitness.twoSidedFit: invalid classification"
+  );
+  assertMultiSpeaker(
+    typeof fitness.scorecardEligible === "boolean" &&
+      typeof fitness.winnerEligible === "boolean",
+    "inventory.formatFitness: eligibility values must be boolean"
+  );
+  assertString(fitness.rationale, "inventory.formatFitness.rationale", 40);
+  if (fitness.twoSidedFit === "clear") {
+    assertMultiSpeaker(
+      fitness.publicFormat === "debate" && fitness.scorecardEligible,
+      "inventory.formatFitness: clear fit must be an eligible debate"
+    );
+  }
+  if (fitness.twoSidedFit === "not-meaningful") {
+    assertMultiSpeaker(
+      fitness.publicFormat === "discussion" &&
+        !fitness.scorecardEligible &&
+        !fitness.winnerEligible,
+      "inventory.formatFitness: a non-meaningful two-side fit must be a discussion without a scorecard or winner"
+    );
+  }
+  assertMultiSpeaker(
+    !fitness.winnerEligible || fitness.scorecardEligible,
+    "inventory.formatFitness: winner eligibility requires scorecard eligibility"
+  );
+
+  assertMultiSpeaker(
+    Array.isArray(fitness.speakerRoles) &&
+      fitness.speakerRoles.length === speakerSide.size,
+    "inventory.formatFitness.speakerRoles: one record per speaker required"
+  );
+  const roleSpeakers = new Set();
+  let mixedRolePresent = false;
+  for (const [index, record] of fitness.speakerRoles.entries()) {
+    const label = `inventory.formatFitness.speakerRoles[${index}]`;
+    assertMultiSpeaker(
+      speakerSide.has(record.speaker) && !roleSpeakers.has(record.speaker),
+      `${label}: unknown or duplicate speaker`
+    );
+    roleSpeakers.add(record.speaker);
+    assertMultiSpeaker(
+      record.assignedSide === speakerSide.get(record.speaker),
+      `${label}: assigned side does not match the inventory side`
+    );
+    assertMultiSpeaker(
+      ["advocate", "critic", "mixed"].includes(record.role),
+      `${label}: invalid participant role`
+    );
+    assertString(record.rationale, `${label}.rationale`, 30);
+    mixedRolePresent ||= record.role === "mixed";
+  }
+
+  const expectedAlignmentKeys = new Set(
+    [...sectionIds].flatMap((sectionId) =>
+      [...speakerSide.keys()].map((speaker) => `${sectionId}\u0000${speaker}`)
+    )
+  );
+  assertMultiSpeaker(
+    Array.isArray(fitness.sectionAlignments) &&
+      fitness.sectionAlignments.length === expectedAlignmentKeys.size,
+    "inventory.formatFitness.sectionAlignments: one record per section and speaker required"
+  );
+  const alignmentKeys = new Set();
+  let mixedAlignmentPresent = false;
+  let opposingAlignmentPresent = false;
+  for (const [index, record] of fitness.sectionAlignments.entries()) {
+    const label = `inventory.formatFitness.sectionAlignments[${index}]`;
+    const key = `${record.sectionId}\u0000${record.speaker}`;
+    assertMultiSpeaker(
+      expectedAlignmentKeys.has(key) && !alignmentKeys.has(key),
+      `${label}: unknown or duplicate section/speaker pair`
+    );
+    alignmentKeys.add(key);
+    assertMultiSpeaker(
+      [
+        "supports-assigned-side",
+        "opposes-assigned-side",
+        "mixed",
+        "inactive"
+      ].includes(record.alignment),
+      `${label}: invalid alignment`
+    );
+    assertMultiSpeaker(
+      Array.isArray(record.selectedMoveIds) &&
+        record.selectedMoveIds.every((moveId) => moveIds.has(moveId)),
+      `${label}.selectedMoveIds: unknown move`
+    );
+    const actualMoveIds = inventory.moves
+      .filter(
+        (move) =>
+          move.sectionId === record.sectionId && move.speaker === record.speaker
+      )
+      .map((move) => move.moveId);
+    assertMultiSpeaker(
+      canonicalJson(record.selectedMoveIds) === canonicalJson(actualMoveIds),
+      `${label}: selected moves do not match the inventory`
+    );
+    assertMultiSpeaker(
+      actualMoveIds.length === 0
+        ? record.alignment === "inactive"
+        : record.alignment !== "inactive",
+      `${label}: inactive status must match selected-move participation`
+    );
+    assertString(record.rationale, `${label}.rationale`, 20);
+    mixedAlignmentPresent ||= record.alignment === "mixed";
+    opposingAlignmentPresent ||= record.alignment === "opposes-assigned-side";
+  }
+  assertMultiSpeaker(
+    !fitness.scorecardEligible || !opposingAlignmentPresent,
+    "inventory.formatFitness: opposing selected contributions make the two-side scorecard ineligible"
+  );
+  assertMultiSpeaker(
+    !fitness.winnerEligible || (!mixedRolePresent && !mixedAlignmentPresent),
+    "inventory.formatFitness: mixed roles or alignments require winner withholding"
+  );
+  return {
+    publicFormat: fitness.publicFormat,
+    twoSidedFit: fitness.twoSidedFit,
+    scorecardEligible: fitness.scorecardEligible,
+    winnerEligible: fitness.winnerEligible,
+    mixedRolePresent,
+    mixedAlignmentPresent
+  };
+}
+
 export function validateMultiSpeakerInventory(inventory, eventsDocument) {
   const events = normalizeEvents(eventsDocument);
   assertMultiSpeaker(
@@ -340,6 +478,13 @@ export function validateMultiSpeakerInventory(inventory, eventsDocument) {
     }
   }
 
+  const formatFitness = validateFormatFitness(
+    inventory,
+    speakerSide,
+    sectionIds,
+    moveIds
+  );
+
   assertMultiSpeaker(
     Array.isArray(inventory.speakerCoverage) &&
       inventory.speakerCoverage.length === speakerSide.size,
@@ -390,6 +535,8 @@ export function validateMultiSpeakerInventory(inventory, eventsDocument) {
       inventory.audit?.legacyAssessmentsUnavailable === true &&
       inventory.audit?.allSpansSourceExact === true &&
       inventory.audit?.speakerOwnershipExplicit === true &&
+      inventory.audit?.formatFitnessComplete === true &&
+      inventory.audit?.sectionAlignmentsComplete === true &&
       inventory.audit?.calculatedTotalsAbsent === true,
     "inventory.audit: required claims missing"
   );
@@ -400,9 +547,137 @@ export function validateMultiSpeakerInventory(inventory, eventsDocument) {
     speakers: speakerSide.size,
     sections: inventory.sections.length,
     moves: inventory.moves.length,
+    formatFitness,
     belowHighAttributionMoveIds: inventory.moves
       .filter((move) => move.attributionConfidence !== "high")
       .map((move) => move.moveId)
+  };
+}
+
+export function validateMultiSpeakerInventoryAudit(
+  inventoryAudit,
+  inventory,
+  {
+    expectedInventorySha256,
+    expectedTranscriptSha256,
+    expectedEventsSha256
+  }
+) {
+  assertMultiSpeaker(
+    inventoryAudit?.schemaVersion ===
+      "1.0-multi-speaker-independent-inventory-audit" &&
+      inventoryAudit.protocolId === MULTI_SPEAKER_PROTOCOL_ID &&
+      inventoryAudit.status === "complete-and-schema-valid" &&
+      inventoryAudit.debateNumber === inventory.debateNumber &&
+      inventoryAudit.debateId === inventory.debateId &&
+      inventoryAudit.reviewerRole ===
+        "independent-score-blind-inventory-auditor" &&
+      inventoryAudit.assessmentModel === MULTI_SPEAKER_MODEL &&
+      inventoryAudit.reasoningEffort === MULTI_SPEAKER_REASONING &&
+      inventoryAudit.inventorySha256 === expectedInventorySha256,
+    "inventory audit: identity or inventory lock mismatch"
+  );
+  assertMultiSpeaker(
+    inventoryAudit.sourceLocks?.transcriptSha256 === expectedTranscriptSha256 &&
+      inventoryAudit.sourceLocks?.eventsSha256 === expectedEventsSha256,
+    "inventory audit: source lock mismatch"
+  );
+  assertMultiSpeaker(
+    inventoryAudit.isolation?.legacyAssessmentsUnavailable === true &&
+      inventoryAudit.isolation?.calculatedTotalsUnavailable === true &&
+      inventoryAudit.isolation?.winnerLabelsUnavailable === true &&
+      inventoryAudit.isolation?.primaryJudgmentsUnavailable === true &&
+      inventoryAudit.isolation?.publicationProseUnavailable === true &&
+      inventoryAudit.isolation?.otherDebatesUnavailable === true &&
+      inventoryAudit.isolation?.contaminationDetected === false,
+    "inventory audit: isolation boundary mismatch"
+  );
+  assertMultiSpeaker(
+    Array.isArray(inventoryAudit.findings),
+    "inventory audit: findings must be an array"
+  );
+  const findingIds = new Set();
+  const findingCategories = new Set([
+    "omitted-load-bearing-move",
+    "speaker-ownership",
+    "side-assignment",
+    "section-membership",
+    "importance",
+    "response-link",
+    "adoption-link",
+    "opportunity-coverage",
+    "format-fitness"
+  ]);
+  for (const [index, finding] of inventoryAudit.findings.entries()) {
+    const label = `inventoryAudit.findings[${index}]`;
+    assertString(finding.findingId, `${label}.findingId`);
+    assertMultiSpeaker(
+      !findingIds.has(finding.findingId),
+      `${label}: duplicate finding ID`
+    );
+    findingIds.add(finding.findingId);
+    assertMultiSpeaker(
+      findingCategories.has(finding.category),
+      `${label}: invalid category`
+    );
+    assertMultiSpeaker(
+      ["blocking", "material", "minor"].includes(finding.severity),
+      `${label}: invalid severity`
+    );
+    assertString(finding.rationale, `${label}.rationale`, 40);
+    assertMultiSpeaker(
+      Array.isArray(finding.relatedMoveIds) &&
+        finding.relatedMoveIds.every((moveId) => allMoveIds(inventory).has(moveId)),
+      `${label}: unknown related move`
+    );
+    assertMultiSpeaker(
+      typeof finding.correctionRequired === "boolean" &&
+        typeof finding.resolved === "boolean",
+      `${label}: correction and resolution flags must be boolean`
+    );
+    if (finding.severity !== "minor" || finding.correctionRequired) {
+      assertMultiSpeaker(finding.resolved, `${label}: material finding is unresolved`);
+    }
+  }
+  assertMultiSpeaker(
+    Array.isArray(inventoryAudit.correctionHistory) &&
+      inventoryAudit.correctionHistory.length <= 1,
+    "inventory audit: at most one bounded correction cycle is permitted"
+  );
+  for (const [index, correction] of inventoryAudit.correctionHistory.entries()) {
+    const label = `inventoryAudit.correctionHistory[${index}]`;
+    assertString(correction.priorInventorySha256, `${label}.priorInventorySha256`, 64);
+    assertString(correction.summary, `${label}.summary`, 40);
+    assertMultiSpeaker(
+      Array.isArray(correction.resolvedFindingIds) &&
+        correction.resolvedFindingIds.every((findingId) => findingIds.has(findingId)),
+      `${label}: correction references an unknown finding`
+    );
+  }
+  const expectedVerdict = inventory.formatFitness.scorecardEligible
+    ? "accept"
+    : "discussion-only";
+  assertMultiSpeaker(
+    inventoryAudit.verdict === expectedVerdict &&
+      inventoryAudit.approvedForScoring ===
+        inventory.formatFitness.scorecardEligible,
+    "inventory audit: verdict does not match format eligibility"
+  );
+  assertMultiSpeaker(
+    inventoryAudit.audit?.completeTranscriptReviewed === true &&
+      inventoryAudit.audit?.allLoadBearingMovesChecked === true &&
+      inventoryAudit.audit?.speakerOwnershipChecked === true &&
+      inventoryAudit.audit?.opportunityCoverageChecked === true &&
+      inventoryAudit.audit?.formatFitnessChecked === true &&
+      inventoryAudit.audit?.scoreBlind === true,
+    "inventory audit: required claims missing"
+  );
+  return {
+    status: "passed",
+    verdict: inventoryAudit.verdict,
+    approvedForScoring: inventoryAudit.approvedForScoring,
+    findings: inventoryAudit.findings.length,
+    corrections: inventoryAudit.correctionHistory.length
   };
 }
 
@@ -446,7 +721,7 @@ function validateAdjustment(adjustment, inventory, label) {
 export function validateMultiSpeakerPrimaryJudgment(
   judgment,
   inventory,
-  { expectedPass, expectedInventorySha256 }
+  { expectedPass, expectedInventorySha256, expectedInventoryAuditSha256 }
 ) {
   assertMultiSpeaker(
     judgment?.schemaVersion === "1.0-multi-speaker-primary-judgment" &&
@@ -458,8 +733,13 @@ export function validateMultiSpeakerPrimaryJudgment(
       judgment.reviewerRole === "isolated-score-blind-primary-judge" &&
       judgment.assessmentModel === MULTI_SPEAKER_MODEL &&
       judgment.reasoningEffort === MULTI_SPEAKER_REASONING &&
-      judgment.inventorySha256 === expectedInventorySha256,
+      judgment.inventorySha256 === expectedInventorySha256 &&
+      judgment.inventoryAuditSha256 === expectedInventoryAuditSha256,
     `${expectedPass}: judgment identity mismatch`
+  );
+  assertMultiSpeaker(
+    inventory.formatFitness?.scorecardEligible === true,
+    `${expectedPass}: format is not scorecard-eligible`
   );
   assertMultiSpeaker(
     judgment.isolation?.legacyAssessmentsUnavailable === true &&
@@ -671,9 +951,81 @@ function resolutionMap(adjudication) {
   );
 }
 
+export function validateMultiSpeakerAudioVerification(
+  audio,
+  inventory,
+  { expectedInventorySha256 }
+) {
+  assertMultiSpeaker(
+    audio?.schemaVersion === "1.0-multi-speaker-audio-verification" &&
+      audio.protocolId === MULTI_SPEAKER_PROTOCOL_ID &&
+      audio.status === "complete-and-schema-valid" &&
+      audio.debateNumber === inventory.debateNumber &&
+      audio.debateId === inventory.debateId &&
+      audio.inventorySha256 === expectedInventorySha256,
+    "audio: identity or inventory lock mismatch"
+  );
+  assertMultiSpeaker(
+    Array.isArray(audio.verifications) &&
+      canonicalJson(audio.verifications.map((item) => item.moveId)) ===
+        canonicalJson(inventory.moves.map((move) => move.moveId)),
+    "audio: every selected move must be verified in inventory order"
+  );
+  const moveById = new Map(inventory.moves.map((move) => [move.moveId, move]));
+  for (const [index, verification] of audio.verifications.entries()) {
+    const label = `audio.verifications[${index}]`;
+    const move = moveById.get(verification.moveId);
+    assertMultiSpeaker(
+      verification.speaker === move.speaker &&
+        verification.speakerVerified === true &&
+        verification.startBoundaryVerified === true &&
+        verification.endBoundaryVerified === true &&
+        verification.crossTalkResolved === true &&
+        verification.result === "confirmed",
+      `${label}: ownership, boundary, cross-talk, or result is unresolved`
+    );
+    assertMultiSpeaker(
+      canonicalJson(verification.quoteEligibleExactSpansVerified) ===
+        canonicalJson(move.quoteEligibleExactSpans),
+      `${label}: quote verification population differs from the inventory`
+    );
+    assertString(verification.notes, `${label}.notes`, 20);
+  }
+  assertMultiSpeaker(
+    Array.isArray(audio.correctionsApplied) && audio.correctionsApplied.length <= 1,
+    "audio: at most one bounded correction-and-reaudit cycle is permitted"
+  );
+  for (const [index, correction] of audio.correctionsApplied.entries()) {
+    const label = `audio.correctionsApplied[${index}]`;
+    assertString(correction.priorInventorySha256, `${label}.priorInventorySha256`, 64);
+    assertString(correction.summary, `${label}.summary`, 40);
+    assertMultiSpeaker(
+      correction.reaudited === true,
+      `${label}: corrected inventory must be independently re-audited`
+    );
+  }
+  assertMultiSpeaker(
+    audio.audit?.allSelectedMovesVerified === true &&
+      audio.audit?.allSpeakerHandoffsVerified === true &&
+      audio.audit?.allCrossTalkResolved === true &&
+      audio.audit?.allQuoteEligibleSpansVerified === true &&
+      audio.audit?.unresolvedAttributions === 0,
+    "audio.audit: required claims missing"
+  );
+  return {
+    status: "passed",
+    verifiedMoves: audio.verifications.length,
+    corrections: audio.correctionsApplied.length
+  };
+}
+
 export function assembleMultiSpeakerFinalLedger({
   inventory,
   inventorySha256,
+  inventoryAudit,
+  inventoryAuditSha256,
+  expectedTranscriptSha256,
+  expectedEventsSha256,
   passA,
   passASha256,
   passB,
@@ -685,14 +1037,20 @@ export function assembleMultiSpeakerFinalLedger({
   audio,
   audioSha256
 }) {
-  const requiredAudio = inventory.moves
-    .filter((move) => move.attributionConfidence !== "high")
-    .map((move) => move.moveId);
-  assertMultiSpeaker(audio?.status === "complete", "audio: status must be complete");
+  validateMultiSpeakerInventoryAudit(inventoryAudit, inventory, {
+    expectedInventorySha256: inventorySha256,
+    expectedTranscriptSha256,
+    expectedEventsSha256
+  });
   assertMultiSpeaker(
-    canonicalJson(audio.verifiedMoveIds ?? []) === canonicalJson(requiredAudio),
-    "audio: verified move population differs from required attribution checks"
+    sha256(canonicalJson(inventoryAudit)) === inventoryAuditSha256 &&
+      passA.inventoryAuditSha256 === inventoryAuditSha256 &&
+      passB.inventoryAuditSha256 === inventoryAuditSha256,
+    "final ledger: independent inventory audit lock mismatch"
   );
+  validateMultiSpeakerAudioVerification(audio, inventory, {
+    expectedInventorySha256: inventorySha256
+  });
   const a = judgmentMap(passA);
   const b = judgmentMap(passB);
   const resolutions = resolutionMap(adjudication);
@@ -787,6 +1145,7 @@ export function assembleMultiSpeakerFinalLedger({
     rubric: MULTI_SPEAKER_RUBRIC,
     evidenceLocks: {
       inventory: { sha256: inventorySha256 },
+      inventoryAudit: { sha256: inventoryAuditSha256 },
       passA: { sha256: passASha256 },
       passB: { sha256: passBSha256 },
       disagreements: { sha256: disagreementsSha256 },
@@ -797,6 +1156,7 @@ export function assembleMultiSpeakerFinalLedger({
     routes: clone(inventory.routes),
     sections: clone(inventory.sections),
     speakerCoverage: clone(inventory.speakerCoverage),
+    formatFitness: clone(inventory.formatFitness),
     moves,
     burdenCompletionAdjustment,
     audit: {
@@ -804,6 +1164,7 @@ export function assembleMultiSpeakerFinalLedger({
       speakerOwnershipUnchanged: true,
       disputesResolved: disagreements.disputes.length,
       unresolvedDisputes: 0,
+      independentInventoryAuditLocked: true,
       requiredAudioChecksComplete: true,
       calculatedTotalsAbsent: true,
       readyForSingleScorePass: true
@@ -819,13 +1180,36 @@ function scoreFromDimensions(dimensions) {
   );
 }
 
-function scoreLedger(inventory, dimensionsForMove, adjustmentForSide) {
+function weightedMoveMean(moves) {
+  const importanceTotal = moves.reduce(
+    (total, move) => total + move.importance,
+    0
+  );
+  return moves.reduce(
+    (total, move) => total + move.score * move.importance,
+    0
+  ) / importanceTotal;
+}
+
+function scoreLedger(
+  inventory,
+  dimensionsForMove,
+  adjustmentForSide,
+  { speakerWeighting = "contribution", excludedSpeaker = null } = {}
+) {
+  assertMultiSpeaker(
+    ["contribution", "equal-active-speaker"].includes(speakerWeighting),
+    "score ledger: invalid speaker weighting"
+  );
   const sections = inventory.sections.map((section) => {
     const sides = Object.fromEntries(
       SIDES.map((side) => {
         const moves = inventory.moves
           .filter(
-            (move) => move.sectionId === section.sectionId && move.side === side
+            (move) =>
+              move.sectionId === section.sectionId &&
+              move.side === side &&
+              move.speaker !== excludedSpeaker
           )
           .map((move) => ({
             moveId: move.moveId,
@@ -834,19 +1218,26 @@ function scoreLedger(inventory, dimensionsForMove, adjustmentForSide) {
             dimensions: dimensionsForMove(move.moveId),
             score: scoreFromDimensions(dimensionsForMove(move.moveId))
           }));
-        const importanceTotal = moves.reduce(
-          (total, move) => total + move.importance,
-          0
+        assertMultiSpeaker(
+          moves.length > 0,
+          `${section.sectionId}: ${side} has no moves under the requested diagnostic`
         );
+        const activeSpeakers = [...new Set(moves.map((move) => move.speaker))];
+        const score =
+          speakerWeighting === "equal-active-speaker"
+            ? activeSpeakers.reduce((total, speaker) => {
+                const speakerMoves = moves.filter(
+                  (move) => move.speaker === speaker
+                );
+                return total + weightedMoveMean(speakerMoves);
+              }, 0) / activeSpeakers.length
+            : weightedMoveMean(moves);
         return [
           side,
           {
-            score: Math.round(
-              moves.reduce(
-                (total, move) => total + move.score * move.importance,
-                0
-              ) / importanceTotal
-            ),
+            score: Math.round(score),
+            speakerWeighting,
+            activeSpeakers,
             moves
           }
         ];
@@ -903,29 +1294,28 @@ function scoreLedger(inventory, dimensionsForMove, adjustmentForSide) {
             sideImportanceShare: Number(
               (importanceTotal / sideImportanceTotal).toFixed(4)
             ),
-            speakerContributionScore: Math.round(
-              moves.reduce(
-                (total, move) => total + move.score * move.importance,
-                0
-              ) / importanceTotal
-            ),
+            speakerContributionScore:
+              moves.length > 0 ? Math.round(weightedMoveMean(moves)) : null,
             publishedRankingEligible: false
           }
         ];
       })
     )
   );
-  const winner =
+  const scoreLeader =
     overall.pro.score === overall.con.score
       ? "tie"
       : overall.pro.score > overall.con.score
         ? "pro"
         : "con";
+  const winnerEligible = inventory.formatFitness?.winnerEligible !== false;
   return {
     sections,
     overall,
     speakers,
-    winner,
+    scoreLeader,
+    winner: winnerEligible ? scoreLeader : "withheld",
+    winnerEligible,
     winningMargin: Math.abs(overall.pro.score - overall.con.score)
   };
 }
@@ -944,6 +1334,11 @@ export function deriveMultiSpeakerScores(finalLedger) {
     debateNumber: finalLedger.debateNumber,
     debateId: finalLedger.debateId,
     ...scored,
+    rankingPolicy: {
+      debateExcludedFromInterlocutorRankings: true,
+      speakerContributionScoresPublished: false,
+      futurePolicyAuthorizationRequired: true
+    },
     audit: {
       calculator:
         "scripts/lib/assessment-production-multi-speaker-approximation-v1.mjs",
@@ -951,7 +1346,8 @@ export function deriveMultiSpeakerScores(finalLedger) {
       modelAuthoredTotals: 0,
       manualScoreOverrides: 0,
       scorePassOrdinal: 1,
-      speakerContributionScoresDiagnosticOnly: true
+      speakerContributionScoresDiagnosticOnly: true,
+      rankingExclusionLocked: true
     }
   };
 }
@@ -963,6 +1359,222 @@ function derivePassScores(inventory, pass) {
     (moveId) => byId.get(moveId).dimensions,
     (side) => pass.burdenCompletionAdjustment[side].value
   );
+}
+
+export function deriveMultiSpeakerScoreUncertainty({
+  inventory,
+  passA,
+  passB,
+  finalScores
+}) {
+  const a = derivePassScores(inventory, passA);
+  const b = derivePassScores(inventory, passB);
+  const sides = Object.fromEntries(
+    SIDES.map((side) => {
+      const primaryScores = [a.overall[side].score, b.overall[side].score];
+      const minimum = Math.min(...primaryScores);
+      const maximum = Math.max(...primaryScores);
+      return [
+        side,
+        {
+          consensus: finalScores.overall[side].score,
+          passA: primaryScores[0],
+          passB: primaryScores[1],
+          primaryRange: { minimum, maximum },
+          display:
+            `Consensus ${finalScores.overall[side].score}; independent assessments ` +
+            `${primaryScores[0]} and ${primaryScores[1]} (range ${minimum}–${maximum}).`
+        }
+      ];
+    })
+  );
+  const aById = judgmentMap(passA);
+  const bById = judgmentMap(passB);
+  const moveDeltas = inventory.moves.map((move) => ({
+    moveId: move.moveId,
+    speaker: move.speaker,
+    side: move.side,
+    passA: passMoveScore(aById.get(move.moveId)),
+    passB: passMoveScore(bById.get(move.moveId)),
+    delta: Math.abs(
+      passMoveScore(aById.get(move.moveId)) -
+        passMoveScore(bById.get(move.moveId))
+    )
+  }));
+  return {
+    schemaVersion: "1.0-multi-speaker-score-uncertainty",
+    protocolId: MULTI_SPEAKER_PROTOCOL_ID,
+    status: "derived-without-score-mutation",
+    debateNumber: inventory.debateNumber,
+    debateId: inventory.debateId,
+    sides,
+    primaryLeaders: {
+      passA: a.scoreLeader,
+      passB: b.scoreLeader,
+      agree: a.scoreLeader === b.scoreLeader
+    },
+    moveDeltas,
+    metrics: {
+      meanMoveScoreDelta: Number(
+        (
+          moveDeltas.reduce((total, move) => total + move.delta, 0) /
+          moveDeltas.length
+        ).toFixed(2)
+      ),
+      maximumMoveScoreDelta: Math.max(...moveDeltas.map((move) => move.delta))
+    },
+    publicationRequired: true
+  };
+}
+
+function sensitivitySummary(scored) {
+  return {
+    overall: clone(scored.overall),
+    scoreLeader: scored.scoreLeader,
+    winningMargin: scored.winningMargin
+  };
+}
+
+export function analyzeMultiSpeakerFormatSensitivity({
+  finalLedger,
+  finalScores
+}) {
+  const moveById = new Map(finalLedger.moves.map((move) => [move.moveId, move]));
+  const dimensionsForMove = (moveId) => moveById.get(moveId).finalDimensions;
+  const adjustmentForSide = (side) =>
+    finalLedger.burdenCompletionAdjustment[side].value;
+  const equalActiveSpeaker = scoreLedger(
+    finalLedger,
+    dimensionsForMove,
+    adjustmentForSide,
+    { speakerWeighting: "equal-active-speaker" }
+  );
+  const baseline = sensitivitySummary(finalScores);
+  const equalSummary = {
+    ...sensitivitySummary(equalActiveSpeaker),
+    changesLeadingSide:
+      equalActiveSpeaker.scoreLeader !== finalScores.scoreLeader
+  };
+  const leaveOneSpeakerOut = SIDES.flatMap((side) =>
+    finalLedger.sides[side].speakers.map((speaker) => {
+      const wouldLeaveEmptySection = finalLedger.sections.some((section) =>
+        SIDES.some(
+          (sectionSide) =>
+            !finalLedger.moves.some(
+              (move) =>
+                move.sectionId === section.sectionId &&
+                move.side === sectionSide &&
+                move.speaker !== speaker
+            )
+        )
+      );
+      const adjustmentAffected = SIDES.some((adjustmentSide) =>
+        finalLedger.burdenCompletionAdjustment[
+          adjustmentSide
+        ].relatedMoveIds.some(
+          (moveId) => moveById.get(moveId)?.speaker === speaker
+        )
+      );
+      if (wouldLeaveEmptySection || adjustmentAffected) {
+        return {
+          speaker,
+          side,
+          status: "not-computable",
+          reason: wouldLeaveEmptySection
+            ? "Removing this speaker leaves at least one scored section without a move on one side."
+            : "Removing this speaker would also remove evidence supporting a side-level burden adjustment.",
+          changesLeadingSide: null
+        };
+      }
+      const scored = scoreLedger(
+        finalLedger,
+        dimensionsForMove,
+        adjustmentForSide,
+        { excludedSpeaker: speaker }
+      );
+      return {
+        speaker,
+        side,
+        status: "computed",
+        ...sensitivitySummary(scored),
+        changesLeadingSide: scored.scoreLeader !== finalScores.scoreLeader
+      };
+    })
+  );
+  const leaderChangingVariants = [
+    ...(equalSummary.changesLeadingSide
+      ? ["equal-active-speaker"]
+      : []),
+    ...leaveOneSpeakerOut
+      .filter((item) => item.changesLeadingSide)
+      .map((item) => `leave-out:${item.speaker}`)
+  ];
+  return {
+    schemaVersion: "1.0-multi-speaker-format-sensitivity",
+    protocolId: MULTI_SPEAKER_PROTOCOL_ID,
+    status: "derived-without-score-mutation",
+    debateNumber: finalLedger.debateNumber,
+    debateId: finalLedger.debateId,
+    baseline,
+    equalActiveSpeaker: equalSummary,
+    leaveOneSpeakerOut,
+    structuralDependencySpeakers: leaveOneSpeakerOut
+      .filter((item) => item.status === "not-computable")
+      .map((item) => item.speaker),
+    leaderChangingVariants,
+    formatSensitive: leaderChangingVariants.length > 0,
+    officialScoresChanged: false
+  };
+}
+
+export function buildMultiSpeakerPublicationDiagnostics({
+  finalLedger,
+  finalScores,
+  uncertainty,
+  sensitivity
+}) {
+  assertMultiSpeaker(
+    [finalScores, uncertainty, sensitivity].every(
+      (record) =>
+        record?.debateNumber === finalLedger.debateNumber &&
+        record?.debateId === finalLedger.debateId
+    ),
+    "publication diagnostics: debate identity mismatch"
+  );
+  assertMultiSpeaker(
+    uncertainty.status === "derived-without-score-mutation" &&
+      sensitivity.status === "derived-without-score-mutation" &&
+      sensitivity.officialScoresChanged === false,
+    "publication diagnostics: required score diagnostics are incomplete"
+  );
+  for (const side of SIDES) {
+    assertMultiSpeaker(
+      uncertainty.sides[side].consensus === finalScores.overall[side].score,
+      `publication diagnostics: ${side} consensus differs from the official score`
+    );
+  }
+  return {
+    schemaVersion: "1.0-multi-speaker-publication-diagnostics",
+    protocolId: MULTI_SPEAKER_PROTOCOL_ID,
+    status: "ready-for-publication-reconstruction",
+    debateNumber: finalLedger.debateNumber,
+    debateId: finalLedger.debateId,
+    rubric: MULTI_SPEAKER_RUBRIC,
+    disclosure:
+      "The displayed totals assess the two sides collectively under the multi-speaker approximation workflow.",
+    publicFormat: finalLedger.formatFitness.publicFormat,
+    winnerEligible: finalLedger.formatFitness.winnerEligible,
+    winner: finalScores.winner,
+    sides: Object.fromEntries(
+      SIDES.map((side) => [side, clone(uncertainty.sides[side])])
+    ),
+    formatSensitive: sensitivity.formatSensitive,
+    formatSensitivityNotice: sensitivity.formatSensitive
+      ? "Format-sensitive: at least one reasonable speaker-weighting diagnostic changes the leading side."
+      : null,
+    interlocutorRankingEligible: false,
+    speakerContributionScoresPublishable: false
+  };
 }
 
 export function validateMultiSpeakerScoreStability({
@@ -991,9 +1603,12 @@ export function validateMultiSpeakerScoreStability({
   }
   const meanAbsoluteDistance =
     distances.reduce((total, value) => total + value, 0) / distances.length;
-  const sharedWinner = a.winner === b.winner && a.winner !== "tie" ? a.winner : null;
+  const sharedWinner =
+    a.scoreLeader === b.scoreLeader && a.scoreLeader !== "tie"
+      ? a.scoreLeader
+      : null;
   const winnerDirectionPassed =
-    sharedWinner === null || [sharedWinner, "tie"].includes(finalScores.winner);
+    sharedWinner === null || [sharedWinner, "tie"].includes(finalScores.scoreLeader);
   const result = {
     status: "evaluated",
     passScores: {
@@ -1020,4 +1635,127 @@ export function validateMultiSpeakerScoreStability({
   };
   assertMultiSpeaker(result.passed, "score stability: active v2.2 limits failed");
   return result;
+}
+
+export function buildMultiSpeakerCheckpointReliabilityReport({
+  records,
+  expectedDebateNumbers = ["71", "84", "154"]
+}) {
+  assertMultiSpeaker(
+    Array.isArray(records) && records.length === expectedDebateNumbers.length,
+    "checkpoint report: expected one record per checkpoint debate"
+  );
+  assertMultiSpeaker(
+    canonicalJson(records.map((record) => record.debateNumber)) ===
+      canonicalJson(expectedDebateNumbers),
+    "checkpoint report: debate order or population mismatch"
+  );
+  const debates = records.map((record) => {
+    const formatFitness = record.inventory?.formatFitness;
+    const publicationPassed = record.publicationValidation?.passed === true;
+    const renderingPassed =
+      record.renderingValidation?.desktopPassed === true &&
+      record.renderingValidation?.mobilePassed === true &&
+      record.renderingValidation?.accessibilityPassed === true;
+    const inventoryAuditPassed =
+      record.inventoryAudit?.approvedForScoring === true &&
+      record.inventoryAudit?.verdict === "accept";
+    const audioPassed =
+      record.audio?.status === "complete-and-schema-valid" &&
+      record.audio?.audit?.unresolvedAttributions === 0 &&
+      record.audio?.verifications?.length === record.inventory?.moves?.length;
+    const disagreementsPassed =
+      record.disagreements?.status === "complete-and-frozen" &&
+      Array.isArray(record.disagreements?.disputes);
+    const uncertaintyPassed =
+      record.uncertainty?.status === "derived-without-score-mutation" &&
+      SIDES.every(
+        (side) =>
+          Number.isInteger(record.uncertainty?.sides?.[side]?.primaryRange?.minimum) &&
+          Number.isInteger(record.uncertainty?.sides?.[side]?.primaryRange?.maximum)
+      );
+    const sensitivityPassed =
+      record.sensitivity?.status === "derived-without-score-mutation" &&
+      record.sensitivity?.officialScoresChanged === false;
+    const reasons = [];
+    if (!formatFitness?.scorecardEligible) reasons.push("scorecard-ineligible-format");
+    if (!inventoryAuditPassed) reasons.push("inventory-audit-failed");
+    if (!audioPassed) reasons.push("audio-verification-failed");
+    if (!disagreementsPassed) reasons.push("disagreement-extraction-missing");
+    if (!uncertaintyPassed) reasons.push("uncertainty-report-missing");
+    if (!sensitivityPassed) reasons.push("sensitivity-report-missing");
+    if (record.stability?.passed !== true) reasons.push("score-stability-failed");
+    if (record.sensitivity?.formatSensitive === true) {
+      reasons.push("format-sensitive-leading-side");
+    }
+    if (!publicationPassed) reasons.push("publication-validation-failed");
+    if (!renderingPassed) reasons.push("rendering-validation-failed");
+    return {
+      debateNumber: record.debateNumber,
+      format: record.format,
+      publicFormat: formatFitness?.publicFormat,
+      twoSidedFit: formatFitness?.twoSidedFit,
+      winnerWithheld: formatFitness?.winnerEligible === false,
+      inventoryFindings: record.inventoryAudit?.findings?.length ?? 0,
+      inventoryCorrections:
+        record.inventoryAudit?.correctionHistory?.length ?? 0,
+      attributionCorrections: record.audio?.correctionsApplied?.length ?? 0,
+      movesAudioVerified: record.audio?.verifications?.length ?? 0,
+      disputes: record.disagreements?.disputes?.length ?? 0,
+      meanMoveScoreDelta: record.uncertainty?.metrics?.meanMoveScoreDelta,
+      maximumMoveScoreDelta: record.uncertainty?.metrics?.maximumMoveScoreDelta,
+      primaryScoreRanges: Object.fromEntries(
+        SIDES.map((side) => [
+          side,
+          record.uncertainty?.sides?.[side]?.primaryRange
+        ])
+      ),
+      formatSensitive: record.sensitivity?.formatSensitive === true,
+      leaderChangingVariants:
+        record.sensitivity?.leaderChangingVariants ?? [],
+      structuralDependencySpeakers:
+        record.sensitivity?.structuralDependencySpeakers ?? [],
+      scoreStabilityPassed: record.stability?.passed === true,
+      publicationPassed,
+      renderingPassed,
+      passed: reasons.length === 0,
+      holdReasons: reasons
+    };
+  });
+  const holdReasons = debates.flatMap((debate) =>
+    debate.holdReasons.map((reason) => `Debate ${debate.debateNumber}: ${reason}`)
+  );
+  return {
+    schemaVersion: "1.0-multi-speaker-checkpoint-reliability-report",
+    protocolId: MULTI_SPEAKER_PROTOCOL_ID,
+    status: "complete",
+    checkpointDebateNumbers: [...expectedDebateNumbers],
+    debates,
+    aggregate: {
+      debates: debates.length,
+      passed: debates.filter((debate) => debate.passed).length,
+      inventoryFindings: debates.reduce(
+        (total, debate) => total + debate.inventoryFindings,
+        0
+      ),
+      inventoryCorrections: debates.reduce(
+        (total, debate) => total + debate.inventoryCorrections,
+        0
+      ),
+      attributionCorrections: debates.reduce(
+        (total, debate) => total + debate.attributionCorrections,
+        0
+      ),
+      disputes: debates.reduce((total, debate) => total + debate.disputes, 0),
+      formatSensitiveDebates: debates.filter(
+        (debate) => debate.formatSensitive
+      ).length,
+      winnersWithheld: debates.filter((debate) => debate.winnerWithheld).length
+    },
+    decision: {
+      status: holdReasons.length > 0 ? "hold-for-review" : "proceed-to-batches",
+      laterBatchExecutionAuthorized: holdReasons.length === 0,
+      reasons: holdReasons
+    }
+  };
 }
