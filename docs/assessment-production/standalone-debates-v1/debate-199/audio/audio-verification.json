@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "199",
+  "debateId": "crummett-watkins-soul-existence-2020",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-199/inventory/inventory.json",
+    "sha256": "1c80256b5817582bd7ff9351c0505689c01820ba93f53763a95414dfbe43bce1"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=lNaMCEYgKLo",
+    "formatId": "18",
+    "language": "en",
+    "description": "Public YouTube 360p MP4 source containing English audio, acquired once with the existing local yt-dlp runtime; seven exact locked spans were extracted as mono MP3 verification clips.",
+    "sourceAudioVisualSha256": "142f6878c503b24a2743f64c7182cb3fd75ce87432f0b9297390221101ce7503",
+    "sourceAudioVisualBytes": 312040546,
+    "temporarySourceRetained": false
+  },
+  "triggeredMoveIds": [
+    "pro-hemisphere-fission-trilemma",
+    "con-no-self-and-fission-successors",
+    "pro-basic-causation-and-tu-quoque",
+    "pro-contingent-supervenience-conceivability",
+    "pro-contingent-laws-explain-more",
+    "con-closure-genetics-and-animal-souls",
+    "pro-interaction-objection-conceded-and-generalized"
+  ],
+  "checks": [
+    {
+      "moveId": "pro-hemisphere-fission-trilemma",
+      "inventoryEventRange": [620, 734],
+      "clipSha256": "2e5236b1f84efe28213bf22f39e08ac0d8c30c175218e7ff4b2552470e13e8bb",
+      "transcriptSha256": "991ee6f73ea3a8a1f1fc3e1417c51b6f4369b121ab5d6ae15b9139483b7968c4",
+      "result": "confirmed",
+      "confirmedSpeaker": "Dustin Crummett",
+      "evidence": "Diarization assigns the complete hemispherectomy, transplant, and fission trilemma to one dominant voice; a second voice is limited to the moderator's brief clarification about removing half the brain. The dominant voice is Crummett by first-person ownership of the stated argument."
+    },
+    {
+      "moveId": "con-no-self-and-fission-successors",
+      "inventoryEventRange": [1239, 1340],
+      "clipSha256": "d5315b902129c9afff4e09dc0930d28e0e79a05b7404a3c1c38ffc8bfeff429d",
+      "transcriptSha256": "f89710947c019006206fbda917de03767bb943a02b94d7271598de8374a97010",
+      "result": "confirmed",
+      "confirmedSpeaker": "Ben Watkins",
+      "evidence": "One voice delivers Watkins's sustained Parfit-style reductionist account for 264.2 diarized seconds. A distinct voice begins Crummett's interruption only after 284.6 seconds, at the locked span's endpoint."
+    },
+    {
+      "moveId": "pro-basic-causation-and-tu-quoque",
+      "inventoryEventRange": [1499, 1572],
+      "clipSha256": "f1479843c08d592c61d816ef86ee03019086e0117ed8ae71872176df51141b22",
+      "transcriptSha256": "25e63ff158555d97b41832decb6630d9314f58e983469b434f0c86423c4249de",
+      "result": "confirmed",
+      "confirmedSpeaker": "Dustin Crummett",
+      "evidence": "The dominant voice gives the first-person soul–body basic-causation defense and parity objection for 162.1 diarized seconds. Watkins's distinct voice supplies short prompts and restates his earlier empirical case before Crummett resumes."
+    },
+    {
+      "moveId": "pro-contingent-supervenience-conceivability",
+      "inventoryEventRange": [1580, 1656],
+      "clipSha256": "6b215d85349c463951a0a4293b0682a959bdd5e8b754c4df716f3fa0d799c2bf",
+      "transcriptSha256": "0647f539de1f8cdcaa3b2ed5ab5abd032e2bbc60bab44bb479f1ceb526b0bf48",
+      "result": "confirmed",
+      "confirmedSpeaker": "Dustin Crummett",
+      "evidence": "The dominant voice gives the complete contingent-supervenience and conceivability argument for 152.8 diarized seconds. Watkins's answering voice begins only at the final 10.1 seconds, after Crummett expressly asks for his response."
+    },
+    {
+      "moveId": "pro-contingent-laws-explain-more",
+      "inventoryEventRange": [1867, 1906],
+      "clipSha256": "e10cfce0c208d3349eb4ff8699c8bfa2a37b59c6468bb43db8c281c14b67f7e3",
+      "transcriptSha256": "6ab4a65655bb4e5f2a06f70c0c3bd6eb0f201258340a24da1667e535af0dade0",
+      "result": "confirmed",
+      "confirmedSpeaker": "Dustin Crummett",
+      "evidence": "After 2.05 seconds completing Watkins's dependence claim, the second voice gives 82.35 diarized seconds of first-person contingent-law and comparative-explanation argument. Its content and turn position identify that voice as Crummett."
+    },
+    {
+      "moveId": "con-closure-genetics-and-animal-souls",
+      "inventoryEventRange": [1908, 1937],
+      "clipSha256": "173587fc524b8951fef9fb420c7ab036a9e5066261d1ca051aaa8b890f647def",
+      "transcriptSha256": "cf5a53d1d8f3d595a686b75ef5ac6385204e7b76088a0a628704737bb18d2b45",
+      "result": "confirmed",
+      "confirmedSpeaker": "Ben Watkins",
+      "evidence": "Watkins's voice supplies 79.45 diarized seconds of the causal-closure, genetics, and animal-soul objection. Crummett's distinct voice is confined to the 1.75-second cats-have-souls interjection already described in the inventory."
+    },
+    {
+      "moveId": "pro-interaction-objection-conceded-and-generalized",
+      "inventoryEventRange": [1947, 1995],
+      "clipSha256": "175041612093d2e9fe35a5d76a513abeccbce1a64d1afb4f361bea2b9efa3061",
+      "transcriptSha256": "513b7633663843d8d33fcf9af6129044cb994ba41c0b034ec2a9e3d93f09ffcb",
+      "result": "confirmed",
+      "confirmedSpeaker": "Dustin Crummett",
+      "evidence": "Crummett's voice gives 86.2 diarized seconds of the basic-causation defense, explicit empirical concession, and parity generalization. Watkins's distinct voice states the conservation objection and begins pressing back at the end."
+    }
+  ],
+  "transcription": {
+    "model": "gpt-4o-transcribe-diarize",
+    "responseFormat": "diarized_json",
+    "knownSpeakers": [],
+    "speakerResolutionMethod": "Anonymous diarized voices were mapped from first-person argument ownership, explicit names, and verified handoff content in the frozen excerpts.",
+    "combinedVerificationDurationSeconds": 1239.599,
+    "localOutputDirectory": "output/transcribe/debate-199-audio-verification/transcripts",
+    "usage": {
+      "inputTokens": 18493,
+      "outputTokens": 36217,
+      "totalTokens": 54710
+    }
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.15,
+    "paidCallsAttempted": 7,
+    "successfulPaidCalls": 7,
+    "uncertainOrFailedPaidCalls": 0,
+    "knownSuccessfulCallCostUsd": 0.4084025,
+    "estimateExceeded": true,
+    "estimateOverrunUsd": 0.2584025,
+    "pricingBasis": "Recorded project pricing basis for gpt-4o-transcribe-diarize: $2.50 per million input tokens and $10.00 per million output tokens.",
+    "explanation": "The advance estimate incorrectly used a minute-based approximation. The diarized response's substantial labeled-text output made token-based cost materially higher; the measured usage is recorded and no paid call was repeated."
+  },
+  "audit": {
+    "lockedMovesReviewed": 20,
+    "highAttributionConfidenceMoves": 13,
+    "requiredAttributionChecks": 7,
+    "completedAttributionChecks": 7,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0
+  }
+}

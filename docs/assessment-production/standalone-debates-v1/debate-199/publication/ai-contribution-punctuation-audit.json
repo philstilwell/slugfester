@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0-ai-contribution-punctuation-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-ai-contribution-punctuation-audit",
+  "completedAt": "2026-08-29T17:53:25Z",
+  "debatesReviewed": 199,
+  "scope": "Every published AI Contribution in src/data/debates.js",
+  "method": {
+    "textIncluded": "disclosure, thesis, premises, conclusion, reinforcing-argument titles, and reinforcing-argument text",
+    "metric": "commas divided by words across the complete AI Contribution",
+    "outlierRule": "flag an entry below one quarter of the published-corpus median, then inspect its prose directly",
+    "substantiveJudgmentRule": "The density check is a drift detector, not a writing quota; direct review decides whether punctuation is actually missing."
+  },
+  "corpus": {
+    "medianCommaDensity": 0.06924315619967794,
+    "outlierThreshold": 0.017310789049919485,
+    "flagged": []
+  },
+  "debate199": {
+    "debateNumber": "199",
+    "words": 762,
+    "commas": 48,
+    "commaDensity": 0.06299212598425197,
+    "directlyReviewed": true,
+    "punctuationLossDetected": false,
+    "changedLeafFields": 0,
+    "wordTokensChanged": 0,
+    "structureChanged": false,
+    "assessmentSubstanceChanged": false
+  },
+  "result": "Debate 199 falls within the established punctuation profile, and direct review found ordinary punctuation preserved throughout its AI Contribution."
+}

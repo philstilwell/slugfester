@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "199",
+  "debateId": "crummett-watkins-soul-existence-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-hemisphere-fission-trilemma:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-hemisphere-fission-trilemma",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "con-no-self-and-fission-successors:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-no-self-and-fission-successors",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-basic-causation-and-tu-quoque:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-basic-causation-and-tu-quoque",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-contingent-supervenience-conceivability:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-contingent-supervenience-conceivability",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-contingent-laws-explain-more:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-contingent-laws-explain-more",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "con-closure-genetics-and-animal-souls:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-closure-genetics-and-animal-souls",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-interaction-objection-conceded-and-generalized:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-interaction-objection-conceded-and-generalized",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the move ratings; Pro's identity case, modal bridge, interaction replies, explanatory proposal, and concessions were each scored where performed.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require a separate transcript-wide fact that changes completion of a locked Pro bridge without duplicating any rated move-level performance.",
+            "relatedMoveIds": [
+              "pro-simple-subject-thesis",
+              "pro-hemisphere-fission-trilemma",
+              "pro-fixed-physical-facts-modal-argument",
+              "pro-basic-causation-and-tu-quoque",
+              "pro-contingent-supervenience-conceivability",
+              "pro-interaction-objection-conceded-and-generalized"
+            ],
+            "distinctConsequence": "None identified beyond the consequences already expressed through the locked Pro moves and their burden contacts.",
+            "alreadyCapturedBy": [
+              "pro-simple-subject-thesis",
+              "pro-hemisphere-fission-trilemma",
+              "pro-fixed-physical-facts-modal-argument",
+              "pro-basic-causation-and-tu-quoque",
+              "pro-contingent-supervenience-conceivability",
+              "pro-interaction-objection-conceded-and-generalized"
+            ],
+            "counterfactual": "Removing those already-rated moves would impair Pro's burden completion, demonstrating that the consequence is move-level rather than an eligible separate adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains outside the ratings; the affirmative's identity, contingency, interaction, and explanatory work is already captured move by move.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero value would require an unscored debate-wide consequence changing completion of the affirmative motion or central bridges.",
+            "relatedMoveIds": [
+              "pro-simple-subject-thesis",
+              "pro-hemisphere-fission-trilemma",
+              "pro-fixed-physical-facts-modal-argument",
+              "pro-contingent-supervenience-conceivability",
+              "pro-interaction-objection-conceded-and-generalized"
+            ],
+            "distinctConsequence": "None; the residual gaps in establishing subject simplicity, modal possibility, and comparative explanation are local to rated moves.",
+            "alreadyCapturedBy": [
+              "pro-hemisphere-fission-trilemma:relevanceBurden",
+              "pro-fixed-physical-facts-modal-argument:evidenceWarrant",
+              "pro-contingent-supervenience-conceivability:evidenceWarrant",
+              "pro-interaction-objection-conceded-and-generalized:calibrationCharity"
+            ],
+            "counterfactual": "Without those move-level captures, an adjustment might duplicate their effect, but the locked rubric requires zero when the consequence is already scored."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the move ratings; Con's alternative ontology, empirical case, fission reply, closure challenge, and concessions were each scored where performed.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require a separate transcript-wide fact that changes completion of a locked Con bridge without duplicating any rated move-level performance.",
+            "relatedMoveIds": [
+              "con-dual-aspect-monism-synthesis",
+              "con-induction-closure-and-energy",
+              "con-neuroscience-genetics-morphology",
+              "con-no-self-and-fission-successors",
+              "con-necessary-supervenience-explains-pairing"
+            ],
+            "distinctConsequence": "None identified beyond the consequences already expressed through the locked Con moves and their burden contacts.",
+            "alreadyCapturedBy": [
+              "con-dual-aspect-monism-synthesis",
+              "con-induction-closure-and-energy",
+              "con-neuroscience-genetics-morphology",
+              "con-no-self-and-fission-successors",
+              "con-necessary-supervenience-explains-pairing"
+            ],
+            "counterfactual": "Removing those already-rated moves would impair Con's burden completion, demonstrating that the consequence is move-level rather than an eligible separate adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains outside the ratings; the reductionist reply, empirical dependence case, and closure dispute are already captured move by move.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero value would require an unscored debate-wide consequence changing completion of the critical case or its central bridges.",
+            "relatedMoveIds": [
+              "con-no-self-and-fission-successors",
+              "con-neuroscience-genetics-morphology",
+              "con-induction-closure-and-energy",
+              "con-energy-transfer-requires-deviation"
+            ],
+            "distinctConsequence": "None; the integrated no-self reply and the limits of the necessity and energy inferences are reflected in their locked ratings.",
+            "alreadyCapturedBy": [
+              "con-no-self-and-fission-successors:responsiveness",
+              "con-neuroscience-genetics-morphology:logicalCoherence",
+              "con-induction-closure-and-energy:logicalCoherence",
+              "con-energy-transfer-requires-deviation:evidenceWarrant"
+            ],
+            "counterfactual": "Without those move-level captures, an adjustment could double-count global resilience or incompleteness; because they are scored, zero is mandatory."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 20,
+    "disputesExtracted": 9,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0-operational-preflight-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "199",
+  "stage": "inventory",
+  "attemptOrdinal": 2,
+  "assessmentAttemptStarted": false,
+  "failure": "The shell environment options were ordered incorrectly (`env CODEX_HOME=... -u`), so `env` rejected `-u` before Codex or any assessment model started.",
+  "effect": "No assessment output was produced and no source material was read by a model.",
+  "resolution": "Reran the same command with all `-u` options before the CODEX_HOME assignment."
+}

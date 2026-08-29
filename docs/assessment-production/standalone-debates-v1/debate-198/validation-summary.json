@@ -60,7 +60,7 @@
       "con": 3
     },
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "9edbf9102c7e6017c58377fa62bcbf380aa79343eddb4200bd796614c594772e",
+    "productionLedgerSha256": "860f88f6390659cfb8b18300508cfe0bcb2f72a36060264c2b834c14c6e78008",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
     "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-198/publication/card-depth-repair-1/execution.json",
@@ -123,19 +123,19 @@
       "name": "production debate validator",
       "command": "node scripts/validate-debates.mjs",
       "status": "passed",
-      "result": "198 debates; AI Contribution punctuation corpus gate passed"
+      "result": "199 debates; AI Contribution punctuation corpus gate passed"
     },
     {
       "name": "AI Contribution punctuation corpus audit",
       "command": "node scripts/validate-debates.mjs plus preserved before/after publication replay",
       "status": "passed",
-      "result": "198 debates reviewed; Debate 198 was the sole pre-repair outlier; no post-repair outliers; 13 comma-only leaf-field repairs; zero word-token, structure, judgment, or score changes"
+      "result": "199 debates reviewed; Debate 198 was the sole pre-repair outlier; no post-repair outliers; 13 comma-only leaf-field repairs; zero word-token, structure, judgment, or score changes"
     },
     {
       "name": "SEO generation and replay",
       "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
       "status": "passed",
-      "result": "386 files"
+      "result": "388 files"
     },
     {
       "name": "standalone content-parity audit",

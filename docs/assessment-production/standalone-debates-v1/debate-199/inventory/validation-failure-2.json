@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "199",
+  "stage": "score-blind-inventory",
+  "assessmentAttemptOrdinal": 2,
+  "candidateFile": "preserved-invalid-inventory-2.json",
+  "candidateSha256": "25f72dccf97918cea3576f19492a640da4b140d0b7a11c8f04291c27a905911c",
+  "candidateBytes": 68516,
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "sourceIsolation": "Temporary CODEX_HOME containing only a symlink to auth.json; no skills, instructions, history, or unrelated files were available.",
+  "transportNotes": "The same request automatically reconnected once after a transient WebSocket stream disconnect; no second model assessment was started for that reconnect.",
+  "failures": [
+    "The candidate contained 11 pro moves and 9 con moves, but declared 10 pro and 8 con in its balance audit.",
+    "moves[1] and moves[3] each included one quoteEligibleExactSpans value that was not an exact 3–18-word substring of its source excerpt."
+  ],
+  "effect": "Candidate rejected before either primary judgment and before scoring."
+}

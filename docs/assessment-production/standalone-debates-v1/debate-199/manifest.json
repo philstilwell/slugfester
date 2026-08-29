@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "inputs-frozen-before-judgment",
+  "debateNumber": "199",
+  "debateId": "crummett-watkins-soul-existence-2020",
+  "videoId": "lNaMCEYgKLo",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/lNaMCEYgKLo/captions.srv3.xml",
+      "sha256": "9e5f6d115fe0359a9ec55c1e7624f57c47aaea6013a29654cef6dd3fb6053858"
+    },
+    "events": {
+      "path": ".assessment-cache/captions/lNaMCEYgKLo/events.json",
+      "sha256": "cddc67cc0360a8cd434e13789bda6820c85e7b5470c3916affbe6f937945a31b"
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/lNaMCEYgKLo/transcript.txt",
+      "sha256": "9892d0ecf6da700113c9ae07e95f5ce8ebc5a074ab340b87844f705b1bc7a911"
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/lNaMCEYgKLo/manifest.json",
+      "sha256": "8adf20d0d00d9f5928ab1f17f3eb352db91d8c077a8643d6fe4719d35952b47f"
+    }
+  },
+  "controlLocks": {
+    "productionWorkflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    },
+    "publicationReadiness": {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"
+    },
+    "scoreStabilityPolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666"
+    },
+    "scoreCalculator": {
+      "path": "scripts/lib/v4-lean-production.mjs",
+      "sha256": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+    },
+    "scoreDimensions": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d"
+    },
+    "sourceRenderer": {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6"
+    }
+  },
+  "modelSettings": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "scoringControls": {
+    "dimensionDisagreementThreshold": 8,
+    "moveScoreDisagreementThreshold": 4,
+    "burdenAdjustmentDisagreementThreshold": 2,
+    "oneScorePass": true,
+    "scoreProtocolId": "standalone-v1-single-deterministic-score-pass"
+  },
+  "inventoryControls": {
+    "schemaVersion": "1.1-standalone-score-blind-inventory",
+    "uniqueSemanticSectionIdsRequired": true,
+    "selectionBalanceAuditRequired": true,
+    "totalDifferenceRequiringRationale": 3,
+    "sectionDifferenceRequiringRationale": 2
+  },
+  "expectedArtifacts": [
+    "source/source-lock.json",
+    "inventory/inventory.json",
+    "judgments/judgment-packet.json",
+    "judgments/pass-a/output.json",
+    "judgments/pass-b/output.json",
+    "disagreements/disagreements.json",
+    "audio/audio-verification.json",
+    "adjudication/packet.json",
+    "adjudication/output.json",
+    "final-ledger/final-ledger.json",
+    "score-pass/input.json",
+    "score-pass/output.json",
+    "score-pass/attestation.json",
+    "publication/output.json",
+    "rendering/rendering-audit.json",
+    "validation-summary.json",
+    "report.md"
+  ]
+}

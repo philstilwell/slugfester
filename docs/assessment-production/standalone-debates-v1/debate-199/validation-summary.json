@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "199",
+  "debateId": "crummett-watkins-soul-existence-2020",
+  "completedAt": "2026-08-29T17:59:47Z",
+  "source": {
+    "videoId": "lNaMCEYgKLo",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 21819,
+    "events": 2887,
+    "transcriptSha256": "9892d0ecf6da700113c9ae07e95f5ce8ebc5a074ab340b87844f705b1bc7a911",
+    "eventsSha256": "cddc67cc0360a8cd434e13789bda6820c85e7b5470c3916affbe6f937945a31b",
+    "requiredAttributionAudioChecks": 7,
+    "completedAttributionAudioChecks": 7,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 20,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 9,
+    "adjudicatedDisputes": 9,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 82,
+      "con": 81,
+      "winner": "pro",
+      "margin": 1
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "argumentCards": 20,
+    "uniqueLockedMovesMapped": 20,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "cf168be290006cdcabaae96733b4c0ffc831d162ec2c438e8065f569a7ff1377",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-199/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-199/publication/depth-repair-execution-1.json",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 24.3,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 115,
+      "mean": 118.15,
+      "maximum": 124
+    },
+    "critiqueCharacterRange": [
+      901,
+      1017
+    ],
+    "overallItemWords": {
+      "minimum": 25,
+      "mean": 26.79,
+      "maximum": 28
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-199/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 20,
+    "definitionsCheckedPerMove": 13,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 26,
+    "acceptedRhetoricalTags": 4,
+    "rejectedRhetoricalTagCandidates": 22,
+    "overruledOverbroadAdjudicatorAcceptances": 2,
+    "aiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-199/publication/ai-contribution-punctuation-audit.json",
+    "aiContributionPunctuationCorrection": "not-required",
+    "aiContributionWords": 762,
+    "aiContributionCommas": 48,
+    "aiContributionCommaDensity": 0.06299212598425197
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 9,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-199/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 9,
+    "rhetoricalTagsVisuallyVerified": 4,
+    "desktopEvidenceSha256": "5206830db3d5dc558f49494bedd161fce3164838cbc90cd27cf074536b174bd5",
+    "mobileEvidenceSha256": "1d7b7e1c98a50215f1c65867898767c89b214938a0da6cf0dd673a5a655e196f"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "199 debates; AI Contribution punctuation corpus gate passed"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "388 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "command": "node scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "status": "passed",
+      "result": "20 moves; description mean 24.3 words; critique mean 118.15 words; Overall Commentary mean 26.79 words"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "node scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "status": "passed",
+      "result": "20 moves reviewed against 13 definitions in 2 blind passes; 26 candidates adjudicated; 4 tags accepted; 22 rejected"
+    },
+    {
+      "name": "standalone full and repository-only replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 199 with and without --repository-only",
+      "status": "passed"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check && npm run postcheck",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "inventoryOperationalPreflightFailures": 2,
+    "preservedInvalidInventoryAttempts": 2,
+    "critiqueDepthRepairs": 8,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 2,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 11,
+    "con": 9,
+    "disposition": "All 20 frozen moves are mapped exactly once. The asymmetry reflects the transcript's argument structure; no empty placeholder cards were introduced."
+  },
+  "cost": {
+    "paidCalls": 7,
+    "successfulPaidCalls": 7,
+    "uncertainOrFailedPaidCalls": 0,
+    "verifiedAudioDurationSeconds": 1239.599,
+    "directIncrementalCostUsd": 0.4084025,
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.15,
+    "estimateExceeded": true,
+    "estimateOverrunUsd": 0.2584025
+  },
+  "directCostUsd": 0.4084025
+}

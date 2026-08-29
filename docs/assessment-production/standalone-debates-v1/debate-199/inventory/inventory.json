@@ -1,0 +1,886 @@
+{
+  "schemaVersion": "1.1-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "199",
+  "debateId": "crummett-watkins-soul-existence-2020",
+  "motion": "Does the soul exist?",
+  "assessmentModel": "5.6 Sol",
+  "isolation": {
+    "scoreBlind": true,
+    "forbiddenMaterialUnavailable": true,
+    "forbiddenMaterialConsulted": false,
+    "noLegacyAssessmentsScoresPublicationProseRankingsOrJudgmentsSeen": true,
+    "contaminationDetected": false,
+    "allowedInputsExhaustivelyLimitedToAuthorizedPacket": true,
+    "statement": "Analysis was exhaustively limited to the authorization, source lock, complete caption events, and complete transcript specified by the user. No scores, judgments, rankings, critiques, publication prose, or prior inventories were inspected."
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "bridges": [
+        {
+          "bridgeId": "pro-soul-exists",
+          "tier": "motion",
+          "statement": "Persons exist as simple, indivisible, immaterial subjects of experience."
+        },
+        {
+          "bridgeId": "pro-subject-unity",
+          "tier": "central",
+          "statement": "The determinate unity and persistence of a conscious subject cannot be identified with a divisible material object."
+        },
+        {
+          "bridgeId": "pro-contingent-psychophysical-laws",
+          "tier": "central",
+          "statement": "Mental-physical correlations are contingent psychophysical laws rather than necessary supervenience relations."
+        },
+        {
+          "bridgeId": "pro-dualist-explanatory-fit",
+          "tier": "subsidiary",
+          "statement": "Substance dualism accommodates mental causation, conceivability evidence, and personal identity with less unexplained necessity."
+        }
+      ],
+      "position": "The soul exists as a nonphysical aspect of persons"
+    },
+    {
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "bridges": [
+        {
+          "bridgeId": "con-soul-case-unsuccessful",
+          "tier": "motion",
+          "statement": "The case for a nonphysical soul is unsuccessful."
+        },
+        {
+          "bridgeId": "con-physical-dependence",
+          "tier": "central",
+          "statement": "Mental changes and capacities depend upon physical brains through sufficient physical causes and necessary supervenience."
+        },
+        {
+          "bridgeId": "con-reductionist-personhood",
+          "tier": "central",
+          "statement": "Personal persistence is reducible to psychological connectedness rather than an enduring immaterial subject."
+        },
+        {
+          "bridgeId": "con-causal-closure",
+          "tier": "subsidiary",
+          "statement": "Causal closure and conservation of energy count against interaction between physical bodies and nonphysical souls."
+        }
+      ],
+      "position": "The case for a nonphysical soul is unsuccessful"
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "mind-body-foundations",
+      "title": "Mind–Body Foundations and Rival Ontologies",
+      "weightPercent": 15,
+      "rationale": "Establishes the shared hard problem, the rival monist and dualist frameworks, and Crummett's target conception of persons."
+    },
+    {
+      "sectionId": "transplants-and-personal-identity",
+      "title": "Transplants, Fission, and Personal Identity",
+      "weightPercent": 30,
+      "rationale": "Contains the principal affirmative transplant argument and Watkins's direct reductionist treatment of fission."
+    },
+    {
+      "sectionId": "mental-causation-and-closure",
+      "title": "Mental Causation and Physical Closure",
+      "weightPercent": 20,
+      "rationale": "Covers conservation of energy, basic causation, and whether the objection applies equally to anti-reductionist monism."
+    },
+    {
+      "sectionId": "supervenience-and-empirical-dependence",
+      "title": "Supervenience and Empirical Dependence",
+      "weightPercent": 25,
+      "rationale": "Assesses neuroscience, genetics, morphology, conceivability, and the dispute between necessary and contingent psychophysical connections."
+    },
+    {
+      "sectionId": "comparative-explanation-and-concessions",
+      "title": "Comparative Explanation and Concessions",
+      "weightPercent": 10,
+      "rationale": "Collects the parties' comparative explanatory arguments and their important concessions concerning dualism and theism."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-irreducibility-interaction-pairing-baseline",
+      "sectionId": "mind-body-foundations",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 284,
+        "endEvent": 307,
+        "startMs": 708320,
+        "endMs": 775680,
+        "excerpt": "is that minds are real and irreducible. If it consciously seems like we are conscious, then there is consciousness. Because appearance and reality coincide here, the distinction between them disappears. So there is a hard problem of consciousness. Minds are neither identical nor reducible to brains. The second place I want to start is that minds causally interact with the body. We drink water because we are thirsty. The conscious mental state of being thirsty is what causes the body to drink water. So there's good reason to believe there is some solution to the interaction problem. And the third place I want to start is that minds are features of brains. The best explanation of facts about the relation between our minds and brains is that um minds necessarily supervene on physical things like brains of vertebra. So there are good reasons to believe there is a solution to the pairing problem."
+      },
+      "quoteEligibleExactSpans": [
+        "minds are real and irreducible",
+        "minds necessarily supervene on physical things"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Sustained first-person opening presentation by Watkins after the moderator handed him the floor.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-physical-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "A satisfactory theory should preserve irreducible consciousness and mental causation while treating minds as necessarily dependent features of brains.",
+      "inventoryRationale": "This is Watkins's explicit three-part baseline and frames every later empirical and metaphysical argument."
+    },
+    {
+      "moveId": "con-dual-aspect-monism-synthesis",
+      "sectionId": "mind-body-foundations",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 314,
+        "endEvent": 359,
+        "startMs": 793200,
+        "endMs": 921760,
+        "excerpt": "Thank you. Um I these are some anti- reductionist anti-reductionist options that we can put on the table because um that's where I find myself these days. I find myself firmly in the anti-productionist camp. Um so there's the view dual aspect monism that insists there's a single re uh irreducible substance but it is describable in both physical and mental terms. Uh there's property dualism which denies there are two unique substances but insists there are two unique properties in the universe and then epiphenomenalism which conceds minds are a non-physical substance ben denies that minds and brains causally interact. Now I've listed all three of these and it might seem that I think all three of these are on a par but that's not so. Um it's time to whiff uh sift and winnow so to speak. Um, epiphenomenalism already is in tension with one of the things we wanted to conceive. We wanted to in our original mindbody problem to concede that minds causally interact with the body. So we can take epifenomenalism off the table and we're left with this dual aspect monism or a or a form of property dualism. So, um, what do we want to choose? Well, I don't know if I can decide that question today because I haven't decided it myself. I lean more towards dual aspect monism at the current moment. Um and so um that view is going to deny that the mental and the physical are distinct substances. But it's instead going to claim that the mental and physical concepts are two inseparable and mutually irreducible perspectives or aspects of a single substance. This view avoids both the interaction problem and the pairing problem while also insisting the mind and the body are real and irreducible to one another."
+      },
+      "quoteEligibleExactSpans": [
+        "two inseparable and mutually irreducible perspectives"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous opening presentation in Watkins's first-person voice.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-soul-case-unsuccessful",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dual-aspect monism offers one substance under mutually irreducible mental and physical perspectives, preserving consciousness while avoiding substance-dualist interaction and pairing problems.",
+      "inventoryRationale": "This is Watkins's positive alternative to a soul and therefore directly bears on the motion."
+    },
+    {
+      "moveId": "pro-simple-subject-thesis",
+      "sectionId": "mind-body-foundations",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 557,
+        "endEvent": 619,
+        "startMs": 1405760,
+        "endMs": 1558320,
+        "excerpt": "uh so this is an argument from Swinburn. I'm putting my own spin on it. Uh it's an argument for the claim that uh I am a simple indivisible immaterial soul. It's an argument against the claim that I am a material object. Um I'm not actually sure whether Ben thinks that I'm a material object. We can talk about that. But Ben does think that the mental necessarily supervenes upon the physical. Uh and if it works then it also works against that claim. Uh which uh Ben endorses. Um one quick point of clarification when we talk about people or somebody being the same person or something uh people talk about that in different senses. You know you're not the same person I married that sort of thing. Uh when I talk about people, I'm going to be talking about subjects of experience. Uh you have experiences, I have experiences, we are experiencers. This is not I don't think any kind of abstuse philosophical concept. It's just to make clear what I'm talking about. So when I ask do I survive a certain event or am I the same person or the same subject after the event as I was before what I mean is is there continuity of subjective experience um in the way that there is continuity between say me and myself when I was a child even though I've changed in lots of ways um one way to get at this suppose there's another planet twin earth and there I have a twin who is exactly like me has had the exact same experiences all his life uh even though these streams of conscious iousness are qualitatively identical, there's still an important difference between them. Namely, one was experienced by him and one was experienced uh by me. Um now, if I am some sort of material object, uh presumably I'm going to be my brain or my body or perhaps something more exotic, maybe I'm an event, maybe I'm an object that is constituted by but not identical to my brain, etc. Um, I'm going to assume that the materialist thinks that I I am my brain just for ease of expression. Uh, this will not matter though. I think the argument should work against any plausible candidate. Um, what I'm going to argue is that uh subjects of experience are simple and indivisible in a way uh that materialism cannot account for. Um, so it will follow that no subjects of experience are material. uh neither are you, neither are I, neither neither are other human beings, uh neither are my cats, uh etc."
+      },
+      "quoteEligibleExactSpans": [
+        "I am a simple indivisible immaterial soul",
+        "subjects of experience are simple and indivisible"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Moderator explicitly handed the presentation to Crummett, followed by sustained first-person exposition.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-soul-exists",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Subjects are numerically distinct experiencers whose simple, indivisible character cannot be accounted for by any plausible material candidate.",
+      "inventoryRationale": "This explicitly states Crummett's thesis, conception of survival, and intended inference to the soul."
+    },
+    {
+      "moveId": "pro-hemisphere-fission-trilemma",
+      "sectionId": "transplants-and-personal-identity",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 620,
+        "endEvent": 734,
+        "startMs": 1556320,
+        "endMs": 1815760,
+        "excerpt": "Um so to begin the argument, consider the fact that sometimes people have what are called hemispherectomies. Uh so you can have a hemisphere of your brain removed for medical reasons, usually has to do with seizures, I think. Uh it turns out that enough stuff is duplicated between the two hemispheres of your brain uh that you can actually have this done and not change very much. keep your personality, keep your memories, be able to do the same stuff, etc. Uh, this is this is empirically true. Yeah. So, so when you just some clear Okay, you have a slide up here. So, they they take out literally like half of the brain. Mhm. Wow. Yeah. They they remove a hemisphere of your brain uh and leave you with one one hemisphere. Um so uh it seems to me uh that I can survive a successful hemispherectomy not just in the sense that my pulse continues or whatever but in the sense that the subject of experience before will be the same as the subject of experience after the surgery. Um if for whatever reason you're skeptical about that it will be enough for my purposes if we agree that it's metaphysically possible. If we have to get into that, I'll explain why. It's enough for my purposes, but I'll talk as if these judgments are about actual cases. So, here's a second case. Uh, I call this single transplant. So, suppose I have a hemispherectomy. One of my hemispheres is removed and it is destroyed. Thrown in with the medical waste. Uh, sometime later, my body is failing. The scientists decide best way to save me is to uh transplant uh my remaining hemisphere into a new body. my old body dies. Now, if I survived the hemispherectomy, it seems to me that I ought to be able to survive this too in the sense of maintaining continuity of subject. Right? Uh my brain is the thing that is the causal basis of my experiences, my thoughts, my memories, etc. So, I will go with my brain. I will be the subject of the experiences that the person in the new body is having, right? The person in the new body will be me. um or at least that's metaphysically possible. Now consider uh a slight variation called single transplant no weight. This is the same as the last case except both operations happen at the same time. So the doctors take out both hemispheres, they destroy one at the same time they transplant the other one. Um so this is just the same as single transplant except we don't wait. Uh, and I think that if I could survive in single transplant, I ought to be able to survive here, too. Why would waiting to do the transplant make any difference, much less make it metaphysically impossible, right? Uh, but consider yet another variant called double transplant. Uh, here they uh again remove both hemispheres of my brain at the same time, but instead of destroying one, they transplant both of them into new bodies. We can even add that these are clone bodies that are identical to my original body. Right? So, we put the left hemisphere of my brain into [clears throat] a new body and we call that person Mr. Left. We put the right hemisphere simultaneously into a new body and we call that person Mr. Right. Now, uh Mr. Left and Mr. Right are both physically and psychologically continuous with me before the surgery. The person who was there before the surgery, right? Um, in fact, we can even make it so that they're identical if we want. Uh, that would be unrealistic, but we could make it that way. Um, further, they both have the same kind of causal connection to the original person, right? Uh, but it's clear that they're not both me. Uh, they can't both be me because they are not Mr. Left is not the same person as Mr. Right. And so, they can't be numerically identical to me because numerical identity is transitive, right? So, if Mr. Left is not Mr. Right? Then I can't be both of them. Right? So either I am Mr. Left and Mr. Right as a new person or I am Mr. Right and Mr. Left is a new person or I am not having any experiences at all anymore and they are both new people. So the question is will I be having one of these people's sets of experiences when uh the surgery ends or will I not have any more experiences?"
+      },
+      "quoteEligibleExactSpans": [
+        "the subject of experience before will be the same"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Crummett supplies the sustained argument, but the continuous span contains brief moderator clarification and acknowledgments.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subject-unity",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Survival through hemispherectomy and single transplant is possible, but symmetrical double transplantation cannot yield two numerically identical continuers, creating a determinate fission trilemma for material identity.",
+      "inventoryRationale": "This is the core thought experiment from which the affirmative case develops."
+    },
+    {
+      "moveId": "pro-contingent-soul-body-laws",
+      "sectionId": "comparative-explanation-and-concessions",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 735,
+        "endEvent": 765,
+        "startMs": 1813360,
+        "endMs": 1891200,
+        "excerpt": "Now here is my view about what happens in that case. I say that I am a simple unextended immaterial soul which is causally related to a material body and the laws governing this relationship are contingent and we don't know the exact form of these laws. Therefore, we don't know which of these possibilities obtains uh because the laws could have a form that resulted in any of them obtaining right. Um uh furthermore I think because these laws and not just the laws governing what happens in this case but I mean it will be natural from that point to assume that in general the connection between my soul and my body is contingent. Uh so now we have to think about the whole range of laws uh that govern souls coming into existence that govern the huge range of interactions that happen between souls and bodies. Um and uh when we think about that it looks like these psychophysical laws are going to be highly complex, highly arbitrary. It would be implausible to posit them as a brute fact that didn't have any deeper explanation. I say that we should explain this explain them in terms of divine action. And this is why this is an argument for theism. I say um now why"
+      },
+      "quoteEligibleExactSpans": [
+        "I am a simple unextended immaterial soul",
+        "explain them in terms of divine action"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person affirmative presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-contingent-psychophysical-laws",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "An immaterial soul can be contingently related to a body, with complex psychophysical laws receiving a deeper explanation through divine action.",
+      "inventoryRationale": "This gives Crummett's positive account of the fission outcomes and the explanation of soul–body correlations."
+    },
+    {
+      "moveId": "pro-nihilism-and-partial-identity-objections",
+      "sectionId": "transplants-and-personal-identity",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 776,
+        "endEvent": 817,
+        "startMs": 1913120,
+        "endMs": 2014720,
+        "excerpt": "option is just to say uh look my brain never existed to begin with because composite material objects don't exist. This is called neurological nihilism. This is actually what I think. Uh but uh that's not an attractive move for the materialist because if composite physical objects don't exist then of course I'm not a composite physical object. Neither my brain nor anything else uh since I exist and those things don't. So that's what I think is the right thing to say about the physical stuff, but uh not available to the materialist. I say here's a second thing we might say. Maybe we think there's some sort of partial identity relation. Look, we put half of my brain into Mr. Left and we put half of my brain into Mr. Right. So my original brain is 50% identical to Mr. Left's brain and it's 50% identical to Mr. Right's brain. And that seems plausible enough. But if Mr. Left and Mr. Right are also their brains and I'm my brain, then it follows from that that I am partly identical to Mr. Left and partly identical to Mr. Right. And that doesn't seem to me to be something that could be true when we think of ourselves as subjects of experience. So if Mr. Left gets tortured and Mr. right eats ice cream. Uh there is no person who is 50% experiencing torture and 50% experiencing ice cream or who is uh you know 50% of them is experiencing torture and 50% of the it's not even clear that these are coherent because we can see when we reflect on our experience that continuity of subject sameness of subject is a kind of all or nothing thing."
+      },
+      "quoteEligibleExactSpans": [
+        "continuity of subject sameness of subject is a kind of all or nothing thing",
+        "there is no person who is 50% experiencing torture"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person affirmative presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-subject-unity",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Mereological nihilism prevents identifying an existing person with a composite brain, while partial brain identity cannot represent the all-or-nothing unity of conscious experience.",
+      "inventoryRationale": "These are separately stated materialist responses that Crummett treats as unable to identify the subject."
+    },
+    {
+      "moveId": "pro-fixed-physical-facts-modal-argument",
+      "sectionId": "transplants-and-personal-identity",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 851,
+        "endEvent": 917,
+        "startMs": 2094480,
+        "endMs": 2238960,
+        "excerpt": "kind of modal argument. So it seems to me that uh all three of these scenarios are holding the physical facts fixed genuinely metaphysically possible. I really could wake up and be uh Mr. Left or I really could just stop having experiences or whatever. Uh but the identity of a material object cannot change unless something uh else in the physical world changes. The identities of material objects superven upon the fundamental physical facts. So for instance, you can't have two worlds that are exactly identical. The only difference is whether my table is the same table it was yesterday, but nothing changed in the table, right? Uh the table didn't get any new parts or anything. It's just a brute fact that in one world the table survived and the other one didn't. That can't happen. Um so if all of these scenarios are metaphysically possible, even holding the physical facts fixed, there has to be something else that happens that accounts for the differences. either I'm non-physical or I have some non-physical part. Now you might deny and in fact I think then probably will deny that all of these are metaphysically possible. Um the initial reason for thinking that they are is a kind of conceivability argument. I can coherently conceive of any of these playing out. Now you might say but conceivability doesn't entail possibility. And I have two points. One is that conceivability is at least evidence for possibility. uh you know why do you believe that it's possible for a woman to become the president say even though that's never happened well we can coherently imagine it okay um a second point is that uh if the materialist agrees that these are all conceivable then where I am positing a contingent law the materialist is going to be positing a sort of brute non-self-evident necessary connection um uh but whereas my contingent law can be explained by divine action um it's not totally clear to me. I mean, there are some possible proposals that we could get into, but it's not totally clear to me that there's any satisfactory explanation of the supposed necessity here. Um, so I'm going to be able to eliminate a sort of unexplained and arbitrary posit. Um, and I also claim that this holds uh more broadly. Um, the the whole the whole shebang, the whole mental world, uh, the materialist, I think, is probably going to wind up having to posit non-self-evident necessary connections that it's very difficult to explain in terms of anything else."
+      },
+      "quoteEligibleExactSpans": [
+        "holding the physical facts fixed genuinely metaphysically possible",
+        "either I'm non-physical or I have some non-physical part"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person affirmative presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subject-unity",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "If distinct determinate survival outcomes are possible with all physical facts fixed, the difference must be grounded in a nonphysical person or part because material identity supervenes on physical facts.",
+      "inventoryRationale": "This is the explicit modal inference from the transplant case to nonphysicality."
+    },
+    {
+      "moveId": "pro-extrinsic-identity-objection",
+      "sectionId": "transplants-and-personal-identity",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 918,
+        "endEvent": 975,
+        "startMs": 2235200,
+        "endMs": 2378400,
+        "excerpt": "Um final point and then I'll stop. Uh suppose we agree that I survive in single transplant no weight. So this is the case where we take both hemispheres out and destroy one and transplant the other one. Um if that's right uh and uh this view is correct and I'm my brain then uh whether something is identical to me becomes an exttrinsic matter. That means you can change whether something is me without changing that thing. you can change whether something is merely by changing other objects. And I don't think that that is right. Um uh and we can see if we sort of think about it why this is so weird. Um suppose we the materialist says my brain stopped existing. I'm not Mr. Left and I'm not Mr. Right. Uh well if we had destroyed my right hemisphere and implanted my left hemisphere into Mr. Left's body, we agreed earlier that I would have been Mr. Left. Uh so uh whether I am Mr. Left, whether I am Mr. Left's brain, which is supposed to be the same thing, uh in this view is determined by what happens to the other hemisphere in the other room. I have stopped existing if you uh transplant the other hemisphere. Um I whereas uh I become Mr. Left if you destroy it. But Mr. Left and Mr. Left's brain were not changed in any way. It's totally constitutively dependent on what we did with the hemisphere in the other room. That doesn't seem right. Um on the other hand, suppose we say that I am Mr. Left. Uh but we can run a similar argument. Well, by our judgment in single transplant no, if we had destroyed my left hemisphere while implanting my right hemisphere, I would have been Mr. Right. Uh so whether I am Mr. Right's brain is determined by what you do with my left hemisphere in the other room. Uh same thing goes if we say I'm Mr. Right. mutism mutandis. Um, the soul view avoids this because it just says, look, I'm my soul no matter what. Uh, what happens to the brain in the other room might affect which body I am causally related to, but it doesn't affect which object I am numerically identical with. Uh, and the the former thing is not a big problem. Of course, how I causally relate to other things can be changed by things outside myself. Um I'll also note that there's a kind of intrinsicality worry for the partial"
+      },
+      "quoteEligibleExactSpans": [
+        "you can change whether something is me without changing that thing",
+        "I'm my soul no matter what"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person affirmative presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subject-unity",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Brain identity makes whether a continuer is the original person depend extrinsically on what happens to the other hemisphere, whereas soul identity remains intrinsic.",
+      "inventoryRationale": "This is Crummett's second principal inference against brain identity."
+    },
+    {
+      "moveId": "con-induction-closure-and-energy",
+      "sectionId": "mental-causation-and-closure",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1107,
+        "endEvent": 1167,
+        "startMs": 2684240,
+        "endMs": 2845200,
+        "excerpt": "consciousness and personality are correlated with a sufficient physical cause. We could infer from this fact that all changes in mental properties probably have a sufficient physical cause. Such an inference would be as strong as the inference that the next vertebrae we encounter will have a brain because all previously observed vertebrae have been correlated with having a brain. Now admittedly an an inductive sampling um is biased against unobserved causes. Um so that's why I have more than one claim. Um the second claim was that there are no mental differences without a physical difference. And so why do I believe that? Um I believe that because of what's called the causal closure of the physical. And so the causal closure of the physical claims that um primapasi non-physical events that causally interact with the physical world must be physically dependent. Otherwise we could not understand how they have any physical effects. Um the conservation of energy is a fundamental law of nature. Um that's uh the familiar um law of thermodynamics. Energy can be neither created nor destroyed. Rather, it can only change from one form to another. And the net total energy in an isolated system always remains constant over time. This is an empirical observation of the world. And so the energy from physical brains cannot causally interact with non-physical minds to reduce the net total of its own energy and vice versa. According to the interaction problem, physical and non-physical things cannot causally causally interact without implausibly deviating from a law of nature. Similar claims would apply to abstract objects because neither abstract objects have mass, energy or [clears throat] spatial extension. So that's why we consider abstract objects causally um inert. Um so using a simple likelihood evaluation we can say that um the conser conservation of energy um makes it more likely that there are no mental differences without a physical difference and less likely there are any non-physical minds. Um and then the last claim I made um is an inference to the best explanation. Um because it might be objected here that the laws of nature do not apply to non-physical minds or that our um"
+      },
+      "quoteEligibleExactSpans": [
+        "all changes in mental properties probably have a sufficient physical cause",
+        "physical and non-physical things cannot causally causally interact"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Sustained first-person defense by Watkins after taking the floor.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-causal-closure",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Induction supports sufficient physical causes for mental changes, while causal closure and energy conservation make nonphysical causal intervention unlikely.",
+      "inventoryRationale": "This is Watkins's principal empirical interaction argument."
+    },
+    {
+      "moveId": "con-neuroscience-genetics-morphology",
+      "sectionId": "supervenience-and-empirical-dependence",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1168,
+        "endEvent": 1238,
+        "startMs": 2840800,
+        "endMs": 3014720,
+        "excerpt": "um we're somehow still being biased to um or our sampling size isn't sufficiently random enough. There's all sorts of objections that can be raised arguments. And so this last claim is an inference to the best explanation. Um and it's that mental properties necessarily supervene on physical properties. And so an inference to the best explanation conser considers various facts about the relation between minds and brains and infers that the best explanation of why mental experiences are intimately paired with specific physical events and brains is that mental properties necessarily supervene on physical properties. Um so in neuroscience all known mental activity is correlated with a physical difference in embodied brains. Damaging a brain can impair mental functioning and psychological capacities like personality, memory or the capacity to have any conscious experiences at all. Why does this physical damage to a brain have any effect on me mental functioning? Because mental function mental states aren't supposed to be extended in the physical world. Additionally, the impairment of certain psychological capacities is correlated with damage to specific regions of a brain. For example, dementia or Alzheimer's. Why is there such a strong correlation? So, I think it's better explained that mental properties necessarily superven physical physical properties instead that there's this immaterial substance. Um, genetics is another line of evidence. minds that are uh minds and their psychological traits are physically related to one another. The probability of a mind having certain psychological traits like depression is determined by genetics. This makes sense if minds are physically dependent. But this fact is surprising if we suppose minds are independent of anything physical. Why are the psychological traits of some non-physical minds related through physical genetics? And then the last is uh morphology. Minds are realized in embodied brains. The complexity of mental capacities in any animal species is correlated with the complexity of their brain. So nonhuman animals have similar mental properties. This fact makes sense if minds are physically dependent. But it's surprising if we suppose minds are independent of anything physical. Do nonhuman animals also have non-physical minds or immaterial souls? Well, I suppose homo sapiens had non-physical minds or souls, but non-human animals do not. This is the pairing problem that we saw earlier. So, that's my uh case for the three claims that I made for the argument for physical minds. So I take"
+      },
+      "quoteEligibleExactSpans": [
+        "mental properties necessarily supervene on physical properties",
+        "Damaging a brain can impair mental functioning"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person constructive presentation by Watkins.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-physical-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Neuroscience, genetic inheritance, and cross-species morphology are better explained by necessary mental dependence on physical brains than by independent souls.",
+      "inventoryRationale": "These three empirical lines form Watkins's inference to necessary supervenience."
+    },
+    {
+      "moveId": "con-no-self-and-fission-successors",
+      "sectionId": "transplants-and-personal-identity",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1239,
+        "endEvent": 1340,
+        "startMs": 3011920,
+        "endMs": 3319119,
+        "excerpt": "Dustin as having laid out kind of a transcendental argument in the sense that look there's these facts about the world that we could we could all we could agree on all the physical facts but there would still be this further question about personal identity or what would make us the same person through time. Please stop me if I'm misrepresenting your view in any way. Um, and so, um, I think Cameron alluded to this earlier. Um, uh, the third option that Dustin mentioned, um, that would likely be the route that I take in the sense that so I've been, uh, those who know me know that I've been enormously influenced by uh, Derek Parett. In fact, Dustin and I got to uh cross paths at the Derek Parett memorial conference at Rutgers a couple years back and um [clears throat] so Parfett um argues for reductionistic view of personal identity um that I happen to agree with. Um and that this is basically the um traditional Buddhist view that there is no self that um the self is a construct that we read into the world and so the question arises of what makes us the same person through time and there's four broad views and there's the brain you know I am my brain I am my body I am my memories or I am of soul. And so, uh, Dustin pretty sufficiently touched on those options, I think, maybe with the exception of me the memory theory, locks memory theory. Um, but so, um, using, uh, thought experiments like a transplant thought experiment, um, it become it's only in imagined scenarios that these different views begin to [clears throat] disagree. And so I think these types of thought experiments can um be shown to uh uh I think decisively show that um problems arise for views with the soul and that it the the right view of personal identity is that what matters is psychological connectedness through time. And so we have, you know, different events at different moments in time. And as we go through time, the different connection, if you think of our memories and experiences is like chain mail. And so the chain is slowly growing as it moves through time. And as we move through time, other bits of us kind of fall away from previous experiences. Whereas, you know, we might have made a promise to some person when we were a kid, but those bits have now fallen off. and we're a different person or a personite and so we may not have that responsibility or obligation to that person anymore. And so to try to bring this back to Dustin's example of the transplant, we can imagine that we have um two cloned bodies and we but we only have one brain and so this was a person and then we take one half of their brain and put it in the other body and we have a Mr. Right and a Mr. left and they go on living their life saying that they're me or we'll imagine that I'm this person in this scenario and it's my clone. Um and they put my and you know years go by and we lose touch with each other and then we meet up one day and we're playing basketball together and we're you know but that's me over there and I think these thought experiments really strain the notion of a person. I don't think the notion of having two me makes a whole lot of sense. So I do think that the old me died in the the old me died in the procedure and there's now two people that have my memories that go on to be two different persons. And so I par parfet uh uniquely ramps up this thought experiment in what he calls the telet transporter thought experiment. And so um imagine that uh I'll just use me myself as the the example again. and I walk into a cube with a green button and I know that is is it is it is it fair to say Ben that we are in agreement that uh given my conception of myself as a kind of uh enduring sub subjective experience a"
+      },
+      "quoteEligibleExactSpans": [
+        "the self is a construct that we read into the world",
+        "what matters is psychological connectedness through time"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Watkins gives the sustained response, but the continuous endpoint begins Crummett's interruption.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-reductionist-personhood",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "pro-hemisphere-fission-trilemma",
+        "pro-fixed-physical-facts-modal-argument",
+        "pro-extrinsic-identity-objection"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-no-enduring-subject",
+          "targetMoveId": "pro-hemisphere-fission-trilemma",
+          "text": "Rejects an enduring self and treats psychological connectedness, not numerical subject identity, as what matters through time.",
+          "decisive": true
+        },
+        {
+          "componentId": "con-fixed-facts-need-no-extra-subject",
+          "targetMoveId": "pro-fixed-physical-facts-modal-argument",
+          "text": "Denies that the physical facts leave a further irreducible fact about an enduring subject requiring a nonphysical ground.",
+          "decisive": true
+        },
+        {
+          "componentId": "con-fission-creates-two-successors",
+          "targetMoveId": "pro-extrinsic-identity-objection",
+          "text": "Accepts that the old person dies and two psychologically connected successors begin, rather than assigning the original identity extrinsically to either hemisphere.",
+          "decisive": true
+        }
+      ],
+      "proposition": "There is no enduring self beyond psychologically connected stages; after fission the original ceases and two distinct successors inherit its memories.",
+      "inventoryRationale": "This is Watkins's major direct answer to the transplant case and its identity assumptions."
+    },
+    {
+      "moveId": "pro-basic-causation-and-tu-quoque",
+      "sectionId": "mental-causation-and-closure",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1499,
+        "endEvent": 1572,
+        "startMs": 3696880,
+        "endMs": 3892640,
+        "excerpt": "as a question about how um how my soul and my body interact, I think that there's no answer to that. It's just a basic form of causation. Um and everyone has to believe and that some causal relations are just basic. They don't happen through any mechanism. They just happen. Um because at some point mechanisms run out, right? Um how does a a particle interact with a charged field? How does one quark interact with another quark with which it's entangled that is many light years away? Um there may not be any answer to how it may just be well that's just a a basic a basic causal relation. Now when we get to the empirical side, the stuff about having not found empiric or yeah having not not observed immaterial causes or uh the conservation of energy. Uh I think I have two things to say. One is that uh I think this is a problem for an equally severe problem for any anti-reductionist view. uh it's not just a problem for duelists because if you think that there are physical events say and there are uh mental events and these are not the the mental events are not reducible to the physical events not talking about substances just events somehow in order for the mental events to be causally efficacious it looks like they have to change the course of the the physical events and that will be just as much a violation of the laws of nature as anything else. Um so the the first point is a kind of two quickway argument. It seems to me that your view faces this um just as much as as mine. Uh the other point to make is when it comes to having not observed these things or uh you know not having observed uh uh viol or you know trying to extrapolate from having observed conservation of energy in other cases to these cases. I guess I want to say first of all if there were going to be violations of conservation of energy this is the sort of context in which you would expect it to happen where there's mental causation coming in everything else is just purely physical causation. So I don't think that we can sort of uh extrapolate and I don't really think we should particularly expect um neuroscientists to have found uh mental causes breaking in or something at this point just because brains are so complicated and we don't have you know a complete understanding of of uh what all the particles in your brain are doing all the time. Now uh the the third sorry what was the third point? Um the third point was the supervenience thesis. So it was inference to the best. Yeah. Where I appealed to damages to brains. So evidence from neuroscience then uh evidence from morphology and um evidence from genetics. Right. Right. So I guess I mean in in a way you and I both accept some sort of supervenience thesis. I mean we both"
+      },
+      "quoteEligibleExactSpans": [
+        "It's just a basic form of causation",
+        "your view faces this um just as much as as mine"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Crummett supplies the sustained response, with brief Watkins prompts near the end.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-dualist-explanatory-fit",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "con-induction-closure-and-energy"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-basic-causal-relation",
+          "targetMoveId": "con-induction-closure-and-energy",
+          "text": "Argues that soul–body interaction may be a basic causal relation, as every causal theory must terminate in some basic relations.",
+          "decisive": true
+        }
+      ],
+      "proposition": "The demand for an interaction mechanism bottoms out in basic causation, and conservation-based objections burden any causally efficacious anti-reductionist mental ontology, not substance dualism alone.",
+      "inventoryRationale": "This is Crummett's principal reply to both the in-principle and empirical interaction objections."
+    },
+    {
+      "moveId": "pro-contingent-supervenience-conceivability",
+      "sectionId": "supervenience-and-empirical-dependence",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1580,
+        "endEvent": 1656,
+        "startMs": 3902400,
+        "endMs": 4083359,
+        "excerpt": "supervenience contingent or is it necessary? I think it's contingent. You think it's necessary. Um, I'll say in general, uh, it doesn't seem to me that merely observing sort of law-like regularities is sufficient reason to conclude that those are necessary rather than contingent. Um, for instance, in your example about vertebbrates and brains, I mean, I presumably that's it's not necessary that all vertebbrates have brains. um or when we look at say the gravitational constant I mean that we have many more instances of things acting in accordance with the gravitational constant than we have of uh things that have minds yet uh I I doubt that we would conclude just on that basis that the gravitational constant is necessary. Um a second thing to say is that I think that there are independent reasons to reject the necessary supervenience thesis. Um, so my my argument, my transplant argument that I gave would be one reason to accept uh to to reject it. Sorry. Uh, sure. But there are other sort of more uh uh well, I mean, they're still weird, but there are other forms of conceivability arguments um which I think also uh support rejecting it. So um the necessary supervenience thesis rules out even the possibility of disembodied minds. It seems like um it uh or at least there could only be one one disembodied one uh kind of like a disembodied mind could only have one mental state because there couldn't be any differences um beyond that, right? Because there would be no physical differences correlated with it. So it seems like it rules out the possibility of disembodied minds. It rules out the possibility of what philosophers call philosophical zombies, which are things that are sort of structurally identical to us but don't have conscious experience. I think that those are conceivable. Uh and I think that there's a good argument from the conceivability of those to their possibility. We maybe we can talk about that. Um and it rules out um inverted quality of cases. So it rules out even the possibility that all of the physical facts could be the same while our conscious experiences are slightly different. Um the situation where say uh our color quality are a little bit different. Maybe they're shifted slightly uh on the electromagnetic spectrum or something. Um it seems like it rules out the possibility of those because that would also be a violation of the necessary supervenience thesis. Um so you have to say that all of those are impossible it looks like to me. Um I think that uh that's not well I mean maybe first I'll ask uh whether you agree that you have to say that those are impossible and second whether you agree that those are are at least conceivable. Um but yeah, so I would say that they are coherently conceivable, but that and that uh coherent conceivability might be"
+      },
+      "quoteEligibleExactSpans": [
+        "merely observing sort of law-like regularities is sufficient reason",
+        "the necessary supervenience thesis rules out even the possibility"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Crummett presents the sustained argument, but Watkins begins answering at the end of the continuous span.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-contingent-psychophysical-laws",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "con-neuroscience-genetics-morphology"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-regularity-not-necessity",
+          "targetMoveId": "con-neuroscience-genetics-morphology",
+          "text": "Argues that observed lawlike brain–mind correlations do not establish metaphysical necessity, just as extensive physical regularities need not be necessary.",
+          "decisive": true
+        }
+      ],
+      "proposition": "Empirical regularities do not establish necessary supervenience, while conceivable disembodied minds, zombies, and inverted qualia provide independent evidence of contingency.",
+      "inventoryRationale": "This directly attacks the modal strength of Watkins's empirical inference."
+    },
+    {
+      "moveId": "con-necessary-supervenience-explains-pairing",
+      "sectionId": "supervenience-and-empirical-dependence",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1770,
+        "endEvent": 1818,
+        "startMs": 4354159,
+        "endMs": 4489679,
+        "excerpt": "So um it's a inference to the best explanation. So it's an inductive argument. But there's two um explanations on the table. There's one that um if our minds and mental properties are necessarily dependent on physical properties, then non-physical minds do not exist. But if mental properties are not this way um then there become these interesting problems that we we start running into pairing problems and interaction problems. So to use the example with um the Alzheimer's. So if we're imagining an irreducible substance and we're imagining that the properties of this irreducible sub substance harbor things like our personality and our identity and our psychological traits, free will, if we have any of that, when we damage certain parts of the brain or certain parts of the brain get get damaged, why does that have any effect on mental functioning? And if someone recovers from that, why do they not still have memories while they're uh while they were unconscious? Yeah, their their their brains weren't working right in certain ways, but why think that they had any connection to that immaterial substance where all those things would presumably be saying constant? So the idea between with this inference to the best explanation is that it's this supervenience thesis being a necessary truth is what best explains why this brain is paired or why this mind is paired with this brain and not some other or why this psychological capacity is paired with this part of the brain rather than this part of the brain. So it would be similar to it H2O is a necessary connection. Why is water H2O and not something else?"
+      },
+      "quoteEligibleExactSpans": [
+        "this supervenience thesis being a necessary truth",
+        "why this mind is paired with this brain"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Sustained first-person response by Watkins.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-physical-dependence",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "pro-contingent-supervenience-conceivability"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-necessity-best-explains-specific-pairing",
+          "targetMoveId": "pro-contingent-supervenience-conceivability",
+          "text": "Maintains that necessary dependence best explains why particular mental capacities track particular brains and brain regions, whereas a persisting independent substance leaves those effects mysterious.",
+          "decisive": true
+        }
+      ],
+      "proposition": "Necessary supervenience is the better explanation of specific brain–mind pairing and of personality and memory losses following brain damage.",
+      "inventoryRationale": "This is Watkins's direct defense of necessity against Crummett's regularity and conceivability objections."
+    },
+    {
+      "moveId": "pro-contingent-laws-explain-more",
+      "sectionId": "supervenience-and-empirical-dependence",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1867,
+        "endEvent": 1906,
+        "startMs": 4599760,
+        "endMs": 4701360,
+        "excerpt": "then I would just say minds are dependent on brains uh right right there are necessary truths saying when I'm in such and such a a physical state. I'm in such and such a mental state or whatever. Um I I believe in the same laws more or less at least. Um I'll say yeah sure there are uh natural laws saying that when I'm in such and such a mental state or a physical state I'm in such and such a mental state. Um the difference it seems to me is that you think that these laws are necessary uh whereas I think that they are a contingent. Um and two reasons I think my view is better. Well at least two reason well I I think there are a couple reasons at least one is that I think that I can explain these laws why they have the form that they have in terms of divine action whereas I'm not sure that you have any explanation for these necessary truths. So you have to posit more kind of complicated, arbitrary, uh, unexplained stuff. I think another is that um, at least in light of these conceivability arguments, it seems to me that, uh, there there's not a necessary connection. We have at least some reason to think that these are contingent connections because it could be otherwise. So I say my theory makes all the same predictions, but um it uh does justice to the conceivability evidence and it allows us to explain more stuff and leaves less stuff brute and and uh unexplained. And so I say that I have a better explanation."
+      },
+      "quoteEligibleExactSpans": [
+        "these laws are necessary uh whereas I think that they are a contingent",
+        "my theory makes all the same predictions"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "The opening words continue a cross-examination exchange, followed by sustained first-person exposition from Crummett.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-dualist-explanatory-fit",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "con-necessary-supervenience-explains-pairing"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-same-regularities-fewer-brute-necessities",
+          "targetMoveId": "con-necessary-supervenience-explains-pairing",
+          "text": "Claims contingent laws predict the same observed pairings, respect conceivability evidence, and can be explained by divine action instead of remaining brute necessary truths.",
+          "decisive": true
+        }
+      ],
+      "proposition": "Contingent psychophysical laws match the empirical predictions of necessary supervenience while explaining their form and preserving conceivability evidence.",
+      "inventoryRationale": "This supplies Crummett's comparative reply to Watkins's best-explanation claim."
+    },
+    {
+      "moveId": "con-closure-genetics-and-animal-souls",
+      "sectionId": "comparative-explanation-and-concessions",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1908,
+        "endEvent": 1937,
+        "startMs": 4701360,
+        "endMs": 4786800,
+        "excerpt": "Um so I would I would uh try to resist that. So I've I've got three arguments here. So you might say, well, my explanation helps explain these facts better, but then I would then appeal to the previous argument as well. Well, there was the causal closure argument. And so there's the the interaction. And so is your explanation really the best explanation when we have this other datim that counts against it? So that's one thing that I would I would say there. And then I would also appeal to um the explanatory power. How does your uh substance dualist view explain the things like genetics? Why are personality traits and mental traits genetically related with each other? How like that seems completely mysterious. Um we're talking about souls here to explain mental properties. Are we applying these souls to animals? You know, when we looked at the complexity of animal experience, we saw my my cats have souls on my view. Your cat. So, I think that's implausible. So, to to to say that that uh non-human animals have these immaterial souls. I think that's implausible."
+      },
+      "quoteEligibleExactSpans": [
+        "Why are personality traits and mental traits genetically related",
+        "non-human animals have these immaterial souls"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Watkins presents the response, with one brief interjection from Crummett concerning his cats.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-physical-dependence",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "pro-contingent-soul-body-laws",
+        "pro-contingent-laws-explain-more"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-closure-cost-remains",
+          "targetMoveId": "pro-contingent-soul-body-laws",
+          "text": "Argues that divine explanation does not remove the contrary evidence from causal closure and interaction.",
+          "decisive": true
+        },
+        {
+          "componentId": "con-dualism-lacks-empirical-scope",
+          "targetMoveId": "pro-contingent-laws-explain-more",
+          "text": "Challenges dualism to explain genetic transmission of mental traits and the graded mental capacities of animals without multiplying implausible animal souls.",
+          "decisive": true
+        }
+      ],
+      "proposition": "Dualism's proposed deeper explanation remains burdened by causal closure and gives a comparatively mysterious account of genetics and animal mentality.",
+      "inventoryRationale": "This is Watkins's principal comparative-explanatory rebuttal."
+    },
+    {
+      "moveId": "pro-interaction-objection-conceded-and-generalized",
+      "sectionId": "mental-causation-and-closure",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1947,
+        "endEvent": 1995,
+        "startMs": 4800159,
+        "endMs": 4909360,
+        "excerpt": "So, my my response to the interaction problem was just there is no answer to how it's just a basic causal relation. And we all have to believe in basic causal relations in some cases. So, that's not a big cost. What What's the What's the problem with that? Okay. So I would uh so it was a likelihood evaluation. So I would say that it's the fact of the conservation of energy. So the energy from physical brains sorry you were cutting off. So there I I take it that there are supposed to be two problems. One is an inprincipal problem. How does how could a non-physical thing and a physical thing interact? Yes. And the other is an empirical problem. Why why don't we observe this? why how does this fit into the laws of nature and stuff? Um, so I and the the basic causation move is meant to be a response to the in principal problem. In response to the empirical problem, I say first of all, I'm not really sure that we would necessarily I mean it's probably a little bit of evidence against dualism, I think, but I'm not really that sure uh that we would expect to have observed, you know, small changes happening in our brain or something. And I think it's really evidence for reductionist physicalism. I think it's it cuts equally against both of our views because both of us want to say that the mental is not reducible to the physical. And so both of us have to say that there's in some way mental whether a substance or just mental events or mental properties or whatever. Somehow those are are affecting the the physical chain of events. And that would be just as much a violation of conservation of energy. uh whether or not we're talking about substances or non-physical events or whatever, it seems to me."
+      },
+      "quoteEligibleExactSpans": [
+        "it's probably a little bit of evidence against dualism",
+        "it cuts equally against both of our views"
+      ],
+      "attributionConfidence": "medium",
+      "attributionBasis": "Cross-examination contains brief statements from both participants, but Crummett gives the sustained response and explicit concession.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-dualist-explanatory-fit",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "con-induction-closure-and-energy",
+        "con-closure-genetics-and-animal-souls"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-small-evidential-concession",
+          "targetMoveId": "con-induction-closure-and-energy",
+          "text": "Concedes that the absence of observed deviations is some evidence against dualism, but argues the expected deviations may be too small or complex to detect.",
+          "decisive": false
+        },
+        {
+          "componentId": "pro-objection-generalizes",
+          "targetMoveId": "con-closure-genetics-and-animal-souls",
+          "text": "Argues that conservation pressure equally challenges Watkins's causally efficacious anti-reductionist mental properties and therefore does not comparatively favor his view.",
+          "decisive": true
+        }
+      ],
+      "proposition": "The empirical interaction objection supplies limited evidence against dualism but, if successful, applies equally to any causally efficacious anti-reductionist mentality.",
+      "inventoryRationale": "This contains both an important affirmative concession and Crummett's developed tu-quoque response."
+    },
+    {
+      "moveId": "con-energy-transfer-requires-deviation",
+      "sectionId": "mental-causation-and-closure",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1996,
+        "endEvent": 2024,
+        "startMs": 4907199,
+        "endMs": 4999520,
+        "excerpt": "So, I would I would press back on that and say that because what what we're talking about with the conservation of energy is the net total energy of an isolated system. And so, if we're saying that minds that the universe is not causally closed, that there is energy being transferred from a non um physical realm to a physical realm. You then have to account for those transfers of energy. But we know what the total net energy is in the system that is our bodies. When we consume energy, they have certain mental effects and those mental effects don't um you know all of that obeys this law of thermodynamics. And so I think so the the the the real the the the interaction problem at at its heart for this empirical part of it is that um you would have to deviate from this law of conservation of energy. If mental energy or if there's even you know whatever non-physical energy is if it is going to enter the system to change the net total energy it's going to have to do that by deviating from a law of nature."
+      },
+      "quoteEligibleExactSpans": [
+        "You then have to account for those transfers of energy",
+        "deviating from a law of nature"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Sustained first-person reply by Watkins.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-causal-closure",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "pro-basic-causation-and-tu-quoque",
+        "pro-interaction-objection-conceded-and-generalized"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-basic-causation-does-not-save-energy",
+          "targetMoveId": "pro-basic-causation-and-tu-quoque",
+          "text": "Argues that labeling interaction basic does not account for energy entering a physically closed system.",
+          "decisive": true
+        },
+        {
+          "componentId": "con-substance-crossing-distinguishes-dualism",
+          "targetMoveId": "pro-interaction-objection-conceded-and-generalized",
+          "text": "Maintains that substance dualism uniquely posits transfer from a nonphysical realm that would alter the physical system's net energy.",
+          "decisive": true
+        }
+      ],
+      "proposition": "Causal input from a nonphysical realm must alter the body's net physical energy and therefore deviate from conservation, regardless of whether the causal relation is called basic.",
+      "inventoryRationale": "This directly contests Crummett's basic-causation and parity replies."
+    },
+    {
+      "moveId": "con-consciousness-favors-theism-concession",
+      "sectionId": "comparative-explanation-and-concessions",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2707,
+        "endEvent": 2726,
+        "startMs": 6568560,
+        "endMs": 6630880,
+        "excerpt": "Yeah. Um, and I actually in my recent devil's advocate debate with Randall Rouseer, um, that was one of the points that I made was that if there are these, um, irreducible mental substances, it doesn't seem like that would be something that evolution could select us for. Um, there would be a real problem with that. And so I think conscious mental states are certainly predicted on theism because God's a conscious mental being. So um you obviously have we have reason to predict consciousness um on theism but um irreducible conscious states seem surprising on naturalism. There's like there could have been a world without consciousness at all. Um, so I certainly think that conscious states um favor at least primmaashi favor theism over naturalism."
+      },
+      "quoteEligibleExactSpans": [
+        "irreducible conscious states seem surprising on naturalism",
+        "conscious states um favor at least primmaashi favor theism"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Moderator solicited Watkins's view, followed by a sustained first-person answer.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-soul-case-unsuccessful",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "pro-contingent-soul-body-laws"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-conditional-theistic-evidence-concession",
+          "targetMoveId": "pro-contingent-soul-body-laws",
+          "text": "Concedes that irreducible conscious substances, if established, would be surprising on naturalism and would prima facie favor theism, while not conceding that souls have been established.",
+          "decisive": false
+        }
+      ],
+      "proposition": "Irreducible consciousness would prima facie favor theism over naturalism because evolution does not straightforwardly select irreducible mental substances.",
+      "inventoryRationale": "This is an important conditional concession limiting the dispute to whether the dualist ontology has been established."
+    },
+    {
+      "moveId": "pro-dualism-weirdness-calls-for-theism",
+      "sectionId": "comparative-explanation-and-concessions",
+      "side": "pro",
+      "speaker": "Dustin Crummett",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2731,
+        "endEvent": 2753,
+        "startMs": 6637520,
+        "endMs": 6700320,
+        "excerpt": "Yeah. Yeah. I mean, um, yeah, it it seems I mean, there's something sort of inherently weird about dualism. Uh, definitely, right? The the idea that not only is there this physical stuff, but there's also either a soul or some set of non-physical properties or whatever, and they're connected in this reliable way to physical states. There's definitely something very weird about that that seems um I think like it sort of cries out for some sort of explanation. Um and yeah, on on my view that's that's why it uh uh provides evidence for theism because um if theism is true then uh it's yeah it's more likely than it would otherwise be. seems um uh unlikely to just exist on its own without any deeper explanation and it's hard to see what other candidate explanations there can be for it."
+      },
+      "quoteEligibleExactSpans": [
+        "there's something sort of inherently weird about dualism",
+        "it sort of cries out for some sort of explanation"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Moderator explicitly directed the question to Crummett, followed by sustained first-person content.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-dualist-explanatory-fit",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "con-consciousness-favors-theism-concession"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-accepts-weirdness-and-explains-it",
+          "targetMoveId": "con-consciousness-favors-theism-concession",
+          "text": "Agrees that reliable dualist psychophysical connections are unusual and argues that this very feature calls for the theistic explanation already proposed.",
+          "decisive": false
+        }
+      ],
+      "proposition": "The unusual reliable connection between nonphysical mentality and physical states calls for explanation and is more expected on theism.",
+      "inventoryRationale": "This records Crummett's closing comparative explanation and his concession that dualism is intrinsically unusual."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 11,
+      "con": 9,
+      "absoluteDifference": 2
+    },
+    "sections": [
+      {
+        "sectionId": "mind-body-foundations",
+        "pro": 1,
+        "con": 2,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "transplants-and-personal-identity",
+        "pro": 4,
+        "con": 1,
+        "absoluteDifference": 3
+      },
+      {
+        "sectionId": "mental-causation-and-closure",
+        "pro": 2,
+        "con": 2,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "supervenience-and-empirical-dependence",
+        "pro": 2,
+        "con": 2,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "comparative-explanation-and-concessions",
+        "pro": 2,
+        "con": 2,
+        "absoluteDifference": 0
+      }
+    ],
+    "rationaleRequired": true,
+    "rationale": "The identity section is asymmetric because Crummett advances four separately load-bearing inferences: the fission trilemma, the incompatibility of nihilism or partial identity with an existing unified subject, the fixed-physical-facts modal argument, and the extrinsic-identity objection. Watkins gives one integrated reductionist reply that rejects the common enduring-subject premise and treats fission as producing two psychologically connected successors. Splitting that reply further would repeat one inference rather than add distinct burden-bearing content."
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "completeEventsReviewed": true,
+    "allSpansSourceExact": true,
+    "allQuoteSpansSourceExact": true,
+    "movesChronological": true,
+    "responseTargetsEarlierOnly": true,
+    "scoreBlind": true
+  }
+}

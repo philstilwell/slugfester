@@ -8891,5 +8891,50 @@ export const debateSummaries = [
         "title": "Motivation, fairness, and practical application"
       }
     ]
+  },
+  {
+    "id": "crummett-watkins-soul-existence-2020",
+    "number": "199",
+    "title": "Dustin Crummett vs Ben Watkins: Does the Soul Exist?",
+    "label": "Soul and mind–body identity",
+    "date": "2026-08-29",
+    "duration": "1 hr 57 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lNaMCEYgKLo",
+    "motion": "Does the soul exist?",
+    "summary": "Crummett narrowly prevails, pairing fission cases with contingent psychophysical laws, while Watkins offers empirically grounded monism but overstates closure and conservation arguments.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Substance dualism",
+        "speaker": "Dustin Crummett",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Anti-reductionist monism",
+        "speaker": "Ben Watkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 81
+    },
+    "sections": [
+      {
+        "title": "Mind–Body Foundations and Rival Ontologies"
+      },
+      {
+        "title": "Transplants, Fission, and Personal Identity"
+      },
+      {
+        "title": "Mental Causation and Physical Closure"
+      },
+      {
+        "title": "Supervenience and Empirical Dependence"
+      },
+      {
+        "title": "Comparative Explanation and Concessions"
+      }
+    ]
   }
 ];

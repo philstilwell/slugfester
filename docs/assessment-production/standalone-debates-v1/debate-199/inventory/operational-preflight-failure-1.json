@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-operational-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "199",
+  "stage": "score-blind-inventory",
+  "occurredAt": "2026-08-29T16:51:23Z",
+  "attemptReachedModel": false,
+  "assessmentOutputProduced": false,
+  "directIncrementalCostUsd": 0,
+  "errorType": "invalid_json_schema",
+  "errorMessage": "Invalid response schema: constant-valued properties were missing explicit type declarations.",
+  "diagnosis": "The request was rejected during transport validation before the model received the inventory packet. Adding the missing JSON Schema type keywords does not alter the frozen evidence, task, model, reasoning setting, or writable scope.",
+  "retryDisposition": "One corrected preflight relaunch is permitted because no model inference or output occurred."
+}

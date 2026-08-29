@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0-standalone-preserved-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "199",
+  "stage": "score-blind-inventory",
+  "occurredAt": "2026-08-29T16:59:04Z",
+  "attemptReachedModel": true,
+  "assessmentModel": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "directIncrementalCostUsd": 0,
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-199/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "90b47c0c9993fee9255ca3482c421fd911fa48ba631fd21d8cfe9a72c722980c",
+    "bytes": 76825
+  },
+  "failures": [
+    "The candidate contains 24 moves, while selectionBalanceAudit reports only 20 total moves.",
+    "The worker inspected the general reassessment Skill outside the exhaustively frozen four-file evidence packet, so its isolation attestation cannot be accepted."
+  ],
+  "diagnosis": "The semantic scope remains unchanged. A fresh context may rerun the same inventory task only after removing the skills directory from its authentication home and explicitly requiring balance counts to be derived from the emitted moves.",
+  "acceptedForJudgment": false
+}
