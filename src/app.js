@@ -2018,6 +2018,75 @@ function renderBackend() {
         </div>
       </section>
 
+      <section class="backend-objectivity" aria-labelledby="backend-objectivity-heading">
+        <details class="backend-objectivity-accordion">
+          <summary>
+            <span>
+              <span class="backend-objectivity-kicker">Plain-English methodology</span>
+              <strong id="backend-objectivity-heading">How Slugfester works toward a fair assessment</strong>
+              <small>Open the complete scoring, review, and fallacy-or-bias process</small>
+            </span>
+            <i aria-hidden="true"></i>
+          </summary>
+          <div class="backend-objectivity-content">
+            <p class="backend-objectivity-intro"><strong>No procedure can remove judgment entirely.</strong> The aim is to make that judgment consistent, evidence-based, resistant to avoidable influence, and open to checking. The same sequence and standards are applied to both sides.</p>
+            <ol class="backend-objectivity-steps">
+              <li>
+                <h3>Start with the complete source</h3>
+                <p>The full available debate transcript is collected with timestamps and checked against its source. Each passage is tied to the correct speaker. If the speaker cannot be identified confidently from the transcript, the audio must be checked before that passage can affect the result.</p>
+              </li>
+              <li>
+                <h3>Define what each side must establish</h3>
+                <p>Before scoring, the central question, each side's stated position, and the burdens each side actually accepts are written down. A critic is not required to prove the opposite conclusion merely for challenging an argument, unless that critic also takes on a positive claim.</p>
+              </li>
+              <li>
+                <h3>Map the debate before seeing any scores</h3>
+                <p>The transcript is divided into topic sections and individual argumentative moves. Replies are connected to the strongest point they address. Each move receives an importance level from 1 to 3, and every section receives a percentage of the whole debate. Those choices are locked before numerical scoring, and prior scorecards, winners, and critiques are hidden.</p>
+              </li>
+              <li>
+                <h3>Review every move twice and independently</h3>
+                <p>Two separate reviews examine the same locked evidence under the same rubric without seeing each other's work. They judge the argument presented—not the speaker's reputation, confidence, wit, worldview, popularity, or audience reaction.</p>
+                <ul>
+                  <li><strong>25% logical coherence:</strong> Do the premises and conclusion fit together without contradiction or an invalid step?</li>
+                  <li><strong>20% evidence and support:</strong> Are factual claims supported, and is the bridge from evidence to conclusion defended?</li>
+                  <li><strong>20% responsiveness:</strong> Does the move answer the strongest relevant point rather than a weaker substitute?</li>
+                  <li><strong>15% relevance and burden:</strong> Does it advance the position the speaker actually undertook to defend?</li>
+                  <li><strong>10% precision and clarity:</strong> Are the important terms, limits, and level of confidence clear and stable?</li>
+                  <li><strong>10% calibration and charity:</strong> Does confidence match the evidence, and is the opposing position represented fairly?</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Resolve disagreements without quietly averaging them</h3>
+                <p>Fixed comparison rules identify meaningful differences between the two reviews. A separate review then considers only the disputed evidence and anonymized alternatives. Required audio checks and disputes must be resolved before scoring can continue. Failed or invalid attempts are preserved rather than silently replaced until a preferred answer appears.</p>
+              </li>
+              <li>
+                <h3>Calculate each move and section score</h3>
+                <p>Software combines the six ratings using the fixed percentages above to produce each move score. Within a section, every move's score is multiplied by its previously locked importance. Those results are added and divided by the total importance. This lets central arguments count more than minor remarks without allowing anyone to adjust the section after seeing who is ahead.</p>
+              </li>
+              <li>
+                <h3>Calculate the comprehensive score</h3>
+                <p>Each section score is multiplied by the section's previously locked share of the debate, and those weighted results are combined. The default final adjustment is zero. A change from −5 to +5 is allowed only for a debate-wide success or failure that affects a stated burden and has not already influenced any move, section, importance value, or other score. The software calculates the final number; it is never manually nudged to select a winner.</p>
+              </li>
+              <li>
+                <h3>Review fallacies and cognitive biases separately</h3>
+                <p>These labels are checked apart from the numerical totals. Every locked move is reviewed against the available definitions in two blind passes, with old tags and the other review hidden. A separate reviewer considers the anonymized candidates, followed by a conservative source check.</p>
+                <ul>
+                  <li>A <strong>logical fallacy</strong> is mentioned only when a named error is genuinely present in the reasoning and helps explain why the inference is weaker.</li>
+                  <li>A <strong>cognitive bias</strong> is mentioned only when a recognizable tendency materially shapes the selection, framing, or evaluation of evidence. Holding a viewpoint or reaching a disputed conclusion is not enough.</li>
+                  <li>Merely incomplete support, a contestable premise, or a weak analogy does not automatically justify a named label. When uncertain, the label is omitted.</li>
+                  <li>An accepted label receives a transcript-specific explanation and a reference link. It never creates an extra score penalty; the underlying weakness is counted once in the ordinary rubric.</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Lock, reconstruct, and audit the publication</h3>
+                <p>Only after the scores and labels are settled are the reader-facing summaries and critiques assembled. The published result must reproduce the locked calculations exactly. Quotes, speaker attribution, move coverage, links, page behavior, and the full site are checked before release. Later corrections remain possible, but they require a new traceable assessment rather than an invisible rewrite.</p>
+              </li>
+            </ol>
+            <p class="backend-objectivity-limit"><strong>What this achieves:</strong> a repeatable and inspectable estimate of how well each side argued in this particular transcript. It does not establish which worldview is ultimately true, and it does not make an AI-assisted judgment infallible.</p>
+          </div>
+        </details>
+      </section>
+
       <section class="backend-technical" aria-labelledby="backend-technical-heading">
         <div class="section-heading">
           <div>

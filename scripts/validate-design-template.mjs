@@ -104,6 +104,11 @@ requireExcludes("app backend dyadic-coverage card", app, "<span>Current v2 cover
 requireIncludes("app backend compute card", app, "Reassessment compute summary");
 requireExcludes("app backend calibration distinction", app, "promoted calibration debates");
 requireIncludes("app backend technical detail", app, 'class="backend-technical"');
+requireIncludes("app backend objectivity accordion", app, '<details class="backend-objectivity-accordion">');
+requireIncludes("app backend section score explanation", app, "multiplied by its previously locked importance");
+requireIncludes("app backend comprehensive score explanation", app, "The default final adjustment is zero");
+requireIncludes("app backend fallacy and bias explanation", app, "Review fallacies and cognitive biases separately");
+requireExcludes("app backend objectivity accordion default", app, '<details class="backend-objectivity-accordion" open>');
 requireIncludes("app backend current section scoring", app, "importance-weighted mean of the selected moves");
 requireIncludes("app backend current overall scoring", app, "prelocked section-weighted mean + −5…+5 burden adjustment");
 requireExcludes("app backend retired section scoring", app, ".70 move mean + .10 coverage");
@@ -264,6 +269,7 @@ requireIncludes("accessibility", styles, ".skip-link");
 requireIncludes("accessibility", styles, "@media (prefers-reduced-motion: reduce)");
 requireIncludes("performance", styles, "content-visibility: auto;");
 requireIncludes("backend technical detail", styles, ".backend-technical {");
+requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");
 
