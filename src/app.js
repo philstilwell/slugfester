@@ -484,7 +484,7 @@ function renderLanding() {
             <a class="button secondary" href="${searchPath()}">Search the archive</a>
           </div>
           <dl class="landing-stats" aria-label="Slugfester archive summary">
-            <div><dt>Scorecards</dt><dd>${debates.length}</dd></div>
+            <div><dt>Debates/Scorecards</dt><dd>${debates.length}</dd></div>
             <div><dt>Interlocutors</dt><dd>${interlocutorCount}</dd></div>
             <div><dt>Topic clusters</dt><dd>${topicCount}</dd></div>
           </dl>

@@ -46,6 +46,7 @@ requireIncludes("app pagination", app, "const landingPager = paginatedItems");
 requireIncludes("app pagination", app, "pager: landingPager");
 requireIncludes("app landing cards", app, 'class="debate-title-link"');
 requireIncludes("app landing cards", app, 'class="card-interlocutor"');
+requireIncludes("app landing scorecard count", app, "Debates/Scorecards");
 requireIncludes("app search route", app, "renderSearch");
 requireIncludes("app search route", app, "searchPathRoutePattern");
 requireIncludes("app search route", app, "searchSeo");
