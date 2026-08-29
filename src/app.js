@@ -2008,18 +2008,8 @@ function renderBackend() {
             <p>The recent campaign reviewed the complete transcript chain, hid prior scores and prose from new judgments, used two independent reviews, isolated disagreements, verified uncertain audio, calculated totals mechanically, and preserved the evidence needed to audit the result. Failed attempts were retained rather than quietly replaced.</p>
             <p>The intention is to review the full debate catalogue approximately twice a year, when sources and quality controls permit. Future reviews may correct or refine assessments, but they should use a frozen method, preserve earlier records, and never change scores merely to produce a preferred winner.</p>
           </div>
-          <div class="backend-summary-stats" aria-label="Assessment campaign summary">
-            <article>
-              <span>Published catalogue</span>
-              <strong>Growing</strong>
-              <p>new assessments are added as eligible debates are processed</p>
-            </article>
-            <article>
-              <span>Current v2 coverage</span>
-              <strong>Dyadic</strong>
-              <p>the completed campaign covered eligible one-speaker-per-side debates; team and panel formats require separate handling</p>
-            </article>
-            <article>
+          <div class="backend-summary-stats" aria-label="Reassessment compute summary">
+            <article class="backend-summary-stat--compute">
               <span>Recorded model work</span>
               <strong>≈83 hr</strong>
               <p>conservative aggregate compute estimate for the completed reassessment campaign</p>
