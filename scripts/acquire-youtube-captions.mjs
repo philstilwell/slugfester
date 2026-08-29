@@ -125,8 +125,9 @@ const track =
   tracks.find((candidate) => candidate.languageCode === "en" && candidate.kind !== "asr") ||
   tracks.find((candidate) => candidate.languageCode === "en") ||
   tracks[0];
-const separator = track.baseUrl.includes("?") ? "&" : "?";
-const rawXml = await fetchText(`${track.baseUrl}${separator}fmt=srv3`);
+const captionUrl = new URL(track.baseUrl);
+captionUrl.searchParams.set("fmt", "srv3");
+const rawXml = await fetchText(captionUrl);
 const events = parseCaptionXml(rawXml);
 if (!events.length) throw new Error(`Caption XML for ${videoId} contained no readable events`);
 

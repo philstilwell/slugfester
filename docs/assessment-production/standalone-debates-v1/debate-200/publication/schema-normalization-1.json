@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0-standalone-publication-schema-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "200",
+  "status": "deterministic-structure-only-normalization-complete",
+  "failure": "The isolated publication writer serialized candidate.number as numeric 200, while the locked standalone candidate validator requires the score output's string value.",
+  "preserved": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/raw-prose-output-1.json",
+    "sha256": "f0ec5570983f01dce5bf00e7c3e8ffa21bcb273204bd505a52740f190084d9eb",
+    "bytes": 80497
+  },
+  "accepted": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/output.json",
+    "sha256": "2413394329e6f701f470717d2b1f114a3a538410dd4cc9f67121ae7bac12c73a",
+    "bytes": 80499
+  },
+  "changes": [
+    {
+      "path": "candidate.number",
+      "from": 200,
+      "to": "200"
+    }
+  ],
+  "audit": {
+    "changedLeafFields": 1,
+    "proseChanges": 0,
+    "scoreChanges": 0,
+    "moveMappingChanges": 0,
+    "retries": 0,
+    "candidateValidation": "passed"
+  }
+}

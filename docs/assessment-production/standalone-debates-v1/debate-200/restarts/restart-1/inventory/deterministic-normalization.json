@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "status": "applied-once-and-repository-valid",
+  "debateNumber": "200",
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/inventory/preserved-invalid-inventory-2.json",
+    "sha256": "9283542b00fdd2e19402292007bee9a37332e168d682fe19cb0415e0211ea2cc",
+    "bytes": 94087
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/inventory/inventory.json",
+    "sha256": "dc1e9218cb5d56723853017fe31282ff7a8183f558a719ce1cda2fc165d00a4d",
+    "bytes": 100628
+  },
+  "changes": {
+    "semanticMoveRenames": 42,
+    "moveKindEnumNormalizations": 28,
+    "sectionCountBefore": 6,
+    "sectionCountAfter": 7,
+    "sectionAssignmentChanges": 42,
+    "balanceKeyNormalizations": 2,
+    "debateNumberTypeNormalizations": 1,
+    "moveSelectionChanges": 0,
+    "sourceSpanChanges": 0,
+    "quoteSpanChanges": 0,
+    "propositionChanges": 0,
+    "importanceChanges": 0,
+    "burdenContactChanges": 0,
+    "responseSubstanceChanges": 0,
+    "scoresIntroduced": 0
+  },
+  "publicationFeasibility": {
+    "maximumCardsOnEitherSideInAnySection": 4,
+    "balancedFourthRowSection": "cosmic-origin-causation",
+    "balancedFourthRowEvidence": "Four unique pro moves and four unique con moves use distinct source spans, propositions, burden contacts, and response components; merging any pair would collapse an independently scored causal, physical, or temporal inference.",
+    "oneSidedFourthRowSections": [
+      "modal-contingency",
+      "naturalistic-explanatory-reach",
+      "morality-hiddenness-and-evil"
+    ],
+    "generalRuleOnly": true,
+    "debateNumberOrSectionSpecificValidatorExceptionAdded": false
+  },
+  "repositoryValidation": {
+    "validator": "validateStandaloneInventory",
+    "status": "passed",
+    "sections": 7,
+    "moves": 42,
+    "belowHighAttributionMoveIds": []
+  }
+}

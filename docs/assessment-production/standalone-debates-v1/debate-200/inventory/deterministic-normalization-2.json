@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-deterministic-inventory-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "200",
+  "status": "complete",
+  "sourceInventorySha256": "dc1e9218cb5d56723853017fe31282ff7a8183f558a719ce1cda2fc165d00a4d",
+  "outputInventorySha256": "4eaef3b909d09d882ba54ba4261366d9580d703a125c9b35191fe9ac235bd848",
+  "trigger": "The first publication pass identified five con-side moves in one section, which is incompatible with the repository's general maximum of four exchange rows.",
+  "changes": [
+    {
+      "path": "moves[con-natural-complexity-closing].sectionId",
+      "from": "naturalistic-explanatory-reach",
+      "to": "experience-and-proof-burdens",
+      "reason": "The move is Stenger's motion-level closing reply to both Craig's modal response and cumulative closing, so the cumulative-inference and proof-burden section is the more precise home and avoids an impermissible fifth same-side card."
+    },
+    {
+      "path": "selectionBalanceAudit",
+      "from": "Naturalistic 3/5 and experience 1/2",
+      "to": "Naturalistic 3/4 and experience 1/3",
+      "reason": "Counts and the evidence-led rationale were recomputed after the single section-membership correction."
+    }
+  ],
+  "unchanged": [
+    "source spans",
+    "quote-eligible spans",
+    "move IDs",
+    "move propositions",
+    "importance weights",
+    "burden contacts",
+    "response links",
+    "section definitions and weights",
+    "all 42 selected moves"
+  ],
+  "downstreamDisposition": "All judgments, adjudication, final ledger, and scoring from the structurally invalid inventory were preserved under restarts/restart-1 and were not reused."
+}

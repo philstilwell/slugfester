@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-standalone-content-parity-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T20:09:56Z",
+  "debateNumber": "200",
+  "debateId": "craig-stenger-god-existence-2010",
+  "authorization": "The user required Debate 200 to match the style, richness, assessment standards, and content depth of the established debate corpus.",
+  "reason": "The monolithic publication draft met numeric lengths but contained generic route language, repeated padding words, and several inaccurate directional clauses. Forty-two fresh isolated shards rewrote exactly one card description and critique apiece from locked evidence.",
+  "immutableFields": [
+    "identity",
+    "motion",
+    "source spans",
+    "move inventory, order, and section assignment",
+    "primary judgments",
+    "disagreement adjudication",
+    "overall, section, and move scores",
+    "winner",
+    "AI Extension",
+    "rhetorical tags"
+  ],
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/preserved-output-before-card-depth-repair.json",
+      "sha256": "aacafd51b6e6d83102cd2f7cad36ce8bbdfcad413430c0dd9162efb83a6c4616",
+      "bytes": 83262
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "ad8f39e5130f0a13c759ccf42c596303d00b61673cf2bbc99bc8f4bddc21484f",
+      "bytes": 81666
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/content-parity-audit.json",
+      "sha256": "131848277655edccb7050ac0dadab37aa5e06ef26b23ccdbd0a11554f79b8556",
+      "bytes": 5856
+    },
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-200/publication/card-depth-repair-1/execution.json",
+      "sha256": "60faaaa8aca8807abd53e5913843b8abebe50bef17172aafc55eea05d075a4cb",
+      "bytes": 41231
+    }
+  },
+  "results": {
+    "cardsRewritten": 42,
+    "descriptionWordRange": [22, 27],
+    "descriptionWordsMean": 24.3,
+    "critiqueWordRange": [115, 125],
+    "critiqueWordsMean": 122.7,
+    "critiqueCharactersMean": 940.7,
+    "boilerplateMeanCoveredRatio": 0.061,
+    "boilerplateMaximumCoveredRatio": 0.105,
+    "failedShards": 0
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 42,
+    "critiqueChanges": 42,
+    "correctionShards": 42,
+    "maximumWritableFieldsPerShard": 2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "status": "preserved-before-recovery",
+  "debateNumber": "200",
+  "stage": "score-blind-inventory",
+  "failure": "The isolated context returned a 64,148-byte JSON response that ended inside a sourceSpan excerpt before closing the object; JSON parsing failed with an unterminated string at byte 64,053.",
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "9fc0cd225f50219d17d6e8323302c6fd665fed13482462fc4f63e10191ba9811",
+    "bytes": 64148
+  },
+  "substanceAccepted": false,
+  "scoresProduced": false,
+  "recovery": "One fresh isolated score-blind context may reconstruct the complete inventory directly into a workspace file with bounded excerpts and a compact final response."
+}

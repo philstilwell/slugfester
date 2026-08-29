@@ -8936,5 +8936,57 @@ export const debateSummaries = [
         "title": "Comparative Explanation and Concessions"
       }
     ]
+  },
+  {
+    "id": "craig-stenger-god-existence-2010",
+    "number": "200",
+    "title": "William Lane Craig vs Victor Stenger: Does God Exist?",
+    "label": "God and scientific naturalism",
+    "date": "2026-08-29",
+    "duration": "2 hr 12 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=EjOs62PJciI",
+    "motion": "Does God exist?",
+    "summary": "Craig’s stronger modal, cosmological, moral, and cumulative replies outweighed Stenger’s empirical challenges from natural explanation, prayer, neuroscience, hiddenness, suffering, and disputed resurrection history.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Victor Stenger",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 69,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Modal Possibility and Contingent Explanation"
+      },
+      {
+        "title": "Cosmic Origin, Causation, and Temporal Boundaries"
+      },
+      {
+        "title": "Naturalistic Explanatory Reach: Design, Mind, and Time"
+      },
+      {
+        "title": "Morality, Hiddenness, and the Evidential Force of Evil"
+      },
+      {
+        "title": "Resurrection Evidence and Historical Warrant"
+      },
+      {
+        "title": "Public Evidence, Revelation, and Prayer"
+      },
+      {
+        "title": "Personal Experience and Competing Proof Burdens"
+      }
+    ]
   }
 ];

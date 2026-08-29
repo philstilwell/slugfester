@@ -4,7 +4,7 @@
   "status": "passed",
   "debateNumber": "198",
   "debateId": "ferrer-dillahunty-god-morality-2018",
-  "completedAt": "2026-08-29T17:23:03Z",
+  "completedAt": "2026-08-29T20:19:49Z",
   "source": {
     "videoId": "EigYzeXngq4",
     "method": "complete public YouTube auto-caption track normalized locally",
@@ -60,7 +60,7 @@
       "con": 3
     },
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "860f88f6390659cfb8b18300508cfe0bcb2f72a36060264c2b834c14c6e78008",
+    "productionLedgerSha256": "5b5ca834e0debe7d013a11106094b5a1a95ae172ab76304d2a070fa24e57ecde",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
     "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-198/publication/card-depth-repair-1/execution.json",
@@ -123,19 +123,19 @@
       "name": "production debate validator",
       "command": "node scripts/validate-debates.mjs",
       "status": "passed",
-      "result": "199 debates; AI Contribution punctuation corpus gate passed"
+      "result": "200 debates; AI Contribution punctuation corpus gate passed"
     },
     {
       "name": "AI Contribution punctuation corpus audit",
       "command": "node scripts/validate-debates.mjs plus preserved before/after publication replay",
       "status": "passed",
-      "result": "199 debates reviewed; Debate 198 was the sole pre-repair outlier; no post-repair outliers; 13 comma-only leaf-field repairs; zero word-token, structure, judgment, or score changes"
+      "result": "200 debates reviewed; Debate 198 was the sole pre-repair outlier; no post-repair outliers; 13 comma-only leaf-field repairs; zero word-token, structure, judgment, or score changes"
     },
     {
       "name": "SEO generation and replay",
       "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
       "status": "passed",
-      "result": "388 files"
+      "result": "390 files"
     },
     {
       "name": "standalone content-parity audit",

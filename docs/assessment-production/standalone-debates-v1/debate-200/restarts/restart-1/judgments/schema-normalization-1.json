@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-schema-normalization",
+  "status": "deterministic-structure-only-normalization-complete",
+  "debateNumber": "200",
+  "failure": "Both isolated contexts serialized eligibility.alreadyCapturedBy as explanatory strings, while the locked validator requires arrays of move IDs.",
+  "normalization": "Because relatedMoveIds was empty, both adjustments were zero, and both eligibility records denied any distinct consequence, each explanatory string was deterministically replaced with the only schema-consistent empty array.",
+  "passes": [
+    {
+      "pass": "pass-a",
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-200/judgments/pass-a/preserved-invalid-output-1.json",
+        "sha256": "8a8f50e6c41fdfd7307e85df6edc140cfffc6566d61becb552ed9f20253f9fb4",
+        "bytes": 98705
+      },
+      "accepted": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-200/judgments/pass-a/output.json",
+        "sha256": "3ce3d56d2b5cb25a4285a7329f71a0a57b55aa02699b73c222ada32ac537c7c5",
+        "bytes": 98469
+      }
+    },
+    {
+      "pass": "pass-b",
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-200/judgments/pass-b/preserved-invalid-output-1.json",
+        "sha256": "8fba678ebefa8e5d87783fa435eef08be9be2203b7ddbf5727e99baa3f9e8e66",
+        "bytes": 102917
+      },
+      "accepted": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-200/judgments/pass-b/output.json",
+        "sha256": "5818862d6e8c84a0b5dd37555dc1e2a99833aed575d4e2ec11ca9b5654dcbdd9",
+        "bytes": 102715
+      }
+    }
+  ],
+  "audit": {
+    "changedLeafFieldsPerPass": 2,
+    "ratingChanges": 0,
+    "rationaleChanges": 0,
+    "confidenceChanges": 0,
+    "adjustmentValueChanges": 0,
+    "eligibilityBooleanChanges": 0,
+    "moveIdChanges": 0,
+    "judgmentCountChanges": 0,
+    "retries": 0
+  }
+}

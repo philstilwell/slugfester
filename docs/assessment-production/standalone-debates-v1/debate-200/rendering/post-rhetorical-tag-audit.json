@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-standalone-post-rhetorical-tag-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-post-rhetorical-tag-rendering-audit",
+  "debateNumber": "200",
+  "debateId": "craig-stenger-god-existence-2010",
+  "completedAt": "2026-08-29T20:19:49Z",
+  "url": "http://127.0.0.1:4174/debate/craig-stenger-god-existence-2010/",
+  "browser": {
+    "controller": "playwright-cli",
+    "family": "Chromium"
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "referenceLinks": 3,
+      "screenshot": {
+        "path": "output/playwright/standalone-debate-v1/debate-200/desktop-1440x1000.png",
+        "sha256": "42f66ee1beb32f8f4e898bda290b262ba2e823761b316e22957210f860bed5cc",
+        "bytes": 2062096
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "referenceLinks": 3,
+      "screenshot": {
+        "path": "output/playwright/standalone-debate-v1/debate-200/mobile-390x844.png",
+        "sha256": "7f05f1679b1fd57e11d6728cb26ed8785b487aa0f298186a7bf9a1ca4c7eb1dc",
+        "bytes": 1819087
+      }
+    }
+  ],
+  "checks": {
+    "argumentTagLinksVisible": 2,
+    "overallReferenceLinksVisible": 1,
+    "tagPopoversContainDefinitionAndContext": true,
+    "critiquePointerAndKeyboardControlsPassed": true,
+    "aiExtensionPointerAndKeyboardControlsPassed": true,
+    "mobileCritiqueThenDistantTapPassed": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "viewports": 2,
+    "screenshots": 4,
+    "acceptedTagsRendered": 2,
+    "desktopCritiqueOpenScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-200/desktop-critique-open.png",
+      "sha256": "b8e38d674d4c4d69c3a4048ae14897ddac47e996b88ea867862c8fc43118ced3",
+      "bytes": 294034
+    },
+    "mobileAiOpenScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-200/mobile-ai-open.png",
+      "sha256": "48256c495aaf0e4460feaa4f8fd74a6d4074cc6e81c4eafb2dbe3efee54bb861",
+      "bytes": 149715
+    },
+    "runtimeFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "temporaryControllerDirectoriesRemaining": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

@@ -1,0 +1,43 @@
+You are the fresh isolated, score-visible publication writer for one completed SLUGFESTER assessment. Read only packet.json in this directory. It contains the frozen identity, routes, source-exact move evidence, final resolved dimensions, and immutable calculator scores. You cannot see other debates, prior publication prose, legacy assessments, rankings, existing rhetorical tags, or another writer. Do not use the internet or other files.
+
+Create the complete reader-facing record without changing identity, motion, section structure, move selection, source evidence, judgments, scores, or winner. This stage must not assess fallacies or cognitive biases: every card's tags array and every Overall blunder's links array must be empty for the later independent review.
+
+Write the final JSON directly to `publication-output.json`, validate it locally, and return only a short confirmation with section, move, and card-description mean-word counts. Do not print the JSON in your final response.
+
+Top-level output fields are exactly:
+- schemaVersion `1.0-standalone-publication-output`
+- protocolId `assessment-production-standalone-debate-v1`
+- status `complete-and-schema-valid`
+- debateNumber `200`
+- debateId `craig-stenger-god-existence-2010`
+- candidate
+- sourceQuoteAudit
+- noveltyMap
+- audit
+
+Candidate contains exactly: number, id, date, title, label, topicCategory, youtubeUrl, duration, summary, motion, assessmentModel, assessmentRubric, sourceNote, scoringNote, sides, score, quotes, sections, overall, logicalExtension. Copy frozen identity bytes exactly. assessmentModel is `5.6 Sol`; assessmentRubric is `Slugfester Reassessment Rubric v2`. SourceNote must say the assessment uses the complete hash-locked YouTube caption source and that all 42 attributions were high-confidence from formal-round or allocated-question boundaries, so no paid audio verification was triggered. ScoringNote must explicitly say the scores are AI-generated estimates. Summary is 22–35 words, concrete, and score-consistent.
+
+Sides and scores copy packet identity and locked overall scores exactly. Quotes has pro and con objects {text,context}; choose one different representative move per side, use one exact 3–18-word eligible substring, and write a 22–38-word source-grounded context. sourceQuoteAudit records each side as {quote,moveId,exactEligibleSubstring:true,wordCount,attributionVerified:true}.
+
+Candidate sections must appear in packet section order. Each is exactly {title,score,exchanges,sectionId,timebox}. Score copies the locked section scores. Timebox covers the earliest and latest mapped timestamp. Exchanges has one to four rows, each with optional pro and con cards. Map all 42 locked moves exactly once. Within every section, the pro card sequence and con card sequence must each match the packet's locked score-output order, even when semantic pairing leaves a one-sided row. The frozen general fourth-row exceptions are:
+- modal-contingency: four distinct pro moves and one con move;
+- cosmic-origin-causation: four independently scored, non-mergeable moves per side;
+- naturalistic-explanatory-reach: four distinct con moves and three pro moves;
+- morality-hiddenness-and-evil: four distinct con moves and three pro moves.
+All other sections use at most three rows. Do not add placeholders or duplicate cards.
+
+Every card is exactly {ledgerMoveId,time,role,words,score,critique,tags}. Use the locked move ID and score. Format time as M:SS below one hour and H:MM:SS at or above one hour. Role is a concise accurate display label such as Constructive, Direct reply, Diagnostic challenge, Supporting reply, Closing synthesis, or Major direct reply.
+
+For every card, `words` must be 22–28 words. It must state the locked claim, its actual supporting reason or comparison, and the inference, consequence, live target, or burden. Prefer 24–27 words. Do not pad, flatten the move into a slogan, invent premises, or merely say that the speaker responds.
+
+Every critique must be 115–125 words and 900–1100 characters, exactly four sentences in this order and with these labels: `Strongest feature:`, `Principal limitation:`, `Live burden:`, `Locked score:`. Use one sentence per label, terminal punctuation, and no other sentence-ending punctuation, abbreviations with periods, semicolons used as periods, or hidden fragments. Each critique must discuss that move's actual inference, evidence or warrant, principal limitation, and remaining burden, and the locked-score sentence must name the immutable integer and explain its band using the resolved dimensions. Write genuinely move-specific prose; do not repeat stock six-word phrases across many critiques. Ordinary commas are required wherever normal written English needs them. tags is always [].
+
+Candidate overall has pro and con. Each is {score,strengths,blunders}; score is immutable, strengths is exactly four concrete strings, and blunders is exactly three objects {text,links:[]}. Every item is 22–36 words, grounded in specific locked moves or linked exchanges, nonredundant, materially important, and consistent with the section-weighted result. Do not add tag links yet.
+
+Candidate logicalExtension is clearly AI-generated and score-neutral. It contains disclosure plus pro and con. Disclosure must say the extension is AI-generated, not transcript wording, attributable to neither speaker, and has no effect on scores. Each side contains finalArgument and newArguments. finalArgument has a 22–40-word thesis, exactly five premises of 22–40 words each, and a 22–45-word proportionate conclusion. newArguments is exactly two objects {title,text}, each 70–105 words and genuinely strengthening the side beyond merely restating a live move. Do not use `unassailable`, claim immunity from objection, or attribute the wording to either speaker.
+
+noveltyMap has exactly 18 entries: for each side, finalArgument.thesis, five premises, conclusion, and two newArguments. Each entry is {path,classification,relatedMoveIds}; paths begin `candidate.logicalExtension`. classification is transcript-reinforcement, transcript-repair, or genuinely-new-reinforcement. relatedMoveIds contains exact locked IDs, or an empty array only for a genuinely new line whose novelty is obvious from the generated text.
+
+Audit records all immutable and prose validations as true, ordinaryMaximumExchanges 3, conditionalMaximumExchanges 4, conditionalFourthRows with the three one-sided sections and their source-based reasons, balancedFourthRow with cosmic-origin-causation and its eight unique moves rationale, modelAuthoredTotals 0, manualScoreOverrides 0, deterministicCandidateValidation {status:`passed`,sections:7,moves:42}. Do not claim rhetorical-tag review completion.
+
+Before finishing, programmatically verify valid JSON; exact identity and motion; all immutable overall, section, and move scores; seven sections; 42 unique locked move IDs mapped once; per-side move order; only authorized fourth rows; every description 22–28 words; every critique 115–125 words, 900–1100 characters, four ordered labels, and exactly four sentence terminals; two exact quote substrings; four strengths and three blunders per side with 22–36 words; empty tags and links; complete AI disclosure and lengths; 18 valid novelty entries; ordinary punctuation; and no `unassailable` or model-authored totals.

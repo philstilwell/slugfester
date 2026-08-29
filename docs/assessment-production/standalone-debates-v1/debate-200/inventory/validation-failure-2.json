@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "status": "preserved-before-deterministic-normalization",
+  "debateNumber": "200",
+  "stage": "repository-operational-preflight",
+  "failures": [
+    "Move IDs used prohibited generic mNN identifiers instead of semantic lowercase slugs.",
+    "Move kinds used rebuttal and closing instead of the repository's constructive or reply enum.",
+    "selectionBalanceAudit used countedTotals and sectionCounts instead of the repository's totals and sections keys.",
+    "The six-section partition placed five or six moves from one side in a section, making exact one-card-per-move publication impossible under the general four-row rule."
+  ],
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-200/inventory/preserved-invalid-inventory-2.json",
+    "sha256": "9283542b00fdd2e19402292007bee9a37332e168d682fe19cb0415e0211ea2cc",
+    "bytes": 94087
+  },
+  "substanceAccepted": true,
+  "scoresProduced": false,
+  "normalizationBoundary": "Retain all 42 selected moves, exact source spans, propositions, importance values, burden contacts, and response substance; deterministically rename identifiers and enums, split the locked topical structure into seven publication-feasible semantic sections, and recompute only section weights and balance counts before judgment."
+}
