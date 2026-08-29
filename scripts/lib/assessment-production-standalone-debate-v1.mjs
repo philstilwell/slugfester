@@ -19,6 +19,7 @@ export const DIMENSION_KEYS = Object.freeze([
   "precisionClarity",
   "calibrationCharity"
 ]);
+const semanticSectionIdPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 const clone = (value) => structuredClone(value);
 
@@ -116,12 +117,16 @@ export function validateStandaloneInventory(
   { repositoryOnly = false } = {}
 ) {
   const events = repositoryOnly ? null : normalizeEvents(eventsDocument);
+  const inventorySchemaVersions = new Set([
+    "1.0-standalone-score-blind-inventory",
+    "1.1-standalone-score-blind-inventory"
+  ]);
   assertStandalone(
-    inventory?.schemaVersion === "1.0-standalone-score-blind-inventory" &&
+    inventorySchemaVersions.has(inventory?.schemaVersion) &&
       inventory.protocolId === STANDALONE_PROTOCOL_ID &&
       inventory.status === "complete-and-frozen" &&
-      inventory.debateNumber === "196" &&
-      inventory.debateId === "huemer-rasmussen-god-existence-2026" &&
+      /^\d{2,}$/.test(inventory.debateNumber) &&
+      semanticSectionIdPattern.test(inventory.debateId) &&
       inventory.assessmentModel === "5.6 Sol",
     "inventory: identity or status mismatch"
   );
@@ -135,7 +140,15 @@ export function validateStandaloneInventory(
     "inventory: one route per side required"
   );
   const bridgeIds = new Set();
+  const speakerBySide = new Map();
   for (const route of inventory.routes) {
+    assertStandalone(
+      ["pro", "con"].includes(route.side) &&
+        typeof route.speaker === "string" &&
+        route.speaker.trim(),
+      "inventory: each route requires a valid side and speaker"
+    );
+    speakerBySide.set(route.side, route.speaker);
     assertStandalone(
       Array.isArray(route.bridges) &&
         route.bridges.length >= 3 &&
@@ -169,6 +182,13 @@ export function validateStandaloneInventory(
   let weightTotal = 0;
   for (const section of inventory.sections) {
     assertString(section.sectionId, "section.sectionId");
+    if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+      assertStandalone(
+        semanticSectionIdPattern.test(section.sectionId) &&
+          !/^s\d+$/.test(section.sectionId),
+        `${section.sectionId}: section ID must be a semantic lowercase slug`
+      );
+    }
     assertStandalone(
       !sectionIds.has(section.sectionId),
       `inventory: duplicate section ${section.sectionId}`
@@ -193,13 +213,22 @@ export function validateStandaloneInventory(
     moveIds.size === inventory.moves.length,
     "inventory: move IDs must be unique"
   );
+  if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+    assertStandalone(
+      inventory.moves.every(
+        (move) =>
+          semanticSectionIdPattern.test(move.moveId) && !/^m\d+$/.test(move.moveId)
+      ),
+      "inventory: move IDs must be semantic lowercase slugs"
+    );
+  }
   let previousStartEvent = -1;
   for (const [index, move] of inventory.moves.entries()) {
     const label = `moves[${index}]`;
     assertStandalone(sectionIds.has(move.sectionId), `${label}: unknown section`);
     assertStandalone(
-      (move.side === "pro" && move.speaker === "Joshua Rasmussen") ||
-        (move.side === "con" && move.speaker === "Michael Huemer"),
+      ["pro", "con"].includes(move.side) &&
+        move.speaker === speakerBySide.get(move.side),
       `${label}: speaker/side mismatch`
     );
     assertStandalone(
@@ -302,6 +331,62 @@ export function validateStandaloneInventory(
         `${sectionId}: ${side} has no move`
       );
     }
+  }
+  if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+    const balance = inventory.selectionBalanceAudit;
+    const actualTotals = Object.fromEntries(
+      ["pro", "con"].map((side) => [
+        side,
+        inventory.moves.filter((move) => move.side === side).length
+      ])
+    );
+    assertStandalone(
+      balance?.thresholds?.totalAbsoluteDifference === 3 &&
+        balance.thresholds.sectionAbsoluteDifference === 2 &&
+        balance.totals?.pro === actualTotals.pro &&
+        balance.totals?.con === actualTotals.con &&
+        balance.totals?.absoluteDifference ===
+          Math.abs(actualTotals.pro - actualTotals.con),
+      "inventory: selectionBalanceAudit totals or thresholds differ"
+    );
+    assertStandalone(
+      Array.isArray(balance.sections) &&
+        balance.sections.length === inventory.sections.length,
+      "inventory: selectionBalanceAudit sections differ"
+    );
+    const sectionDifferences = inventory.sections.map((section, index) => {
+      const actual = Object.fromEntries(
+        ["pro", "con"].map((side) => [
+          side,
+          inventory.moves.filter(
+            (move) => move.sectionId === section.sectionId && move.side === side
+          ).length
+        ])
+      );
+      const stored = balance.sections[index];
+      const difference = Math.abs(actual.pro - actual.con);
+      assertStandalone(
+        stored?.sectionId === section.sectionId &&
+          stored.pro === actual.pro &&
+          stored.con === actual.con &&
+          stored.absoluteDifference === difference,
+        `${section.sectionId}: selectionBalanceAudit count mismatch`
+      );
+      return difference;
+    });
+    const rationaleRequired =
+      balance.totals.absoluteDifference >=
+        balance.thresholds.totalAbsoluteDifference ||
+      sectionDifferences.some(
+        (difference) =>
+          difference >= balance.thresholds.sectionAbsoluteDifference
+      );
+    assertStandalone(
+      balance.rationaleRequired === rationaleRequired &&
+        typeof balance.rationale === "string" &&
+        (!rationaleRequired || balance.rationale.trim().length >= 40),
+      "inventory: selectionBalanceAudit rationale requirement differs"
+    );
   }
   assertStandalone(
     inventory.audit?.calculatedTotalsAbsent === true &&
@@ -725,7 +810,7 @@ export function assembleStandaloneFinalLedger({
     model: "5.6 Sol",
     rubric: "Slugfester Reassessment Rubric v2",
     sourceManifest:
-      "docs/assessment-production/standalone-debates-v1/debate-196/source/source-lock.json",
+      `${STANDALONE_ROOT}/debate-${inventory.debateNumber}/source/source-lock.json`,
     evidenceLocks: {
       inventory: { sha256: inventorySha256 },
       passA: { sha256: passASha256 },
@@ -955,6 +1040,15 @@ export function validateStandaloneCandidate(candidate, scores) {
     candidate.sections?.length === scores.sections.length,
     "candidate: section count differs from score output"
   );
+  for (const side of ["pro", "con"]) {
+    assertStandalone(
+      Array.isArray(candidate.overall?.[side]?.strengths) &&
+        candidate.overall[side].strengths.length >= 3 &&
+        Array.isArray(candidate.overall?.[side]?.blunders) &&
+        candidate.overall[side].blunders.length >= 2,
+      `candidate.${side}: at least three strengths and two blunders required`
+    );
+  }
   let moves = 0;
   for (const [sectionIndex, scoreSection] of scores.sections.entries()) {
     const published = candidate.sections[sectionIndex];

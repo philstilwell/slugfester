@@ -4495,7 +4495,13 @@ a {
     right: 10px;
     bottom: 18px;
     width: auto;
-    max-height: min(620px, calc(100vh - 96px));
+    max-height: calc(100vh - 36px);
+    pointer-events: none;
+  }
+
+  .critique:hover .critique-popover,
+  .critique:focus-within .critique-popover {
+    pointer-events: none;
   }
 
   .tag-popover {

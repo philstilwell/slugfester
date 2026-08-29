@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-integration-failure-record",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-no-state-change",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "stage": "production-adapter-replay",
+  "message": "A second --build-adapter invocation reached the write-once guard and refused to overwrite the already-created production ledger.",
+  "correction": "Stopped the write attempt, retained the single adapter, updated only its corrected publication evidence record, and validated the frozen ledger through read-only replay.",
+  "adapterWrites": 1,
+  "adapterOverwrites": 0,
+  "frozenScoresChanged": false,
+  "directIncrementalCostUsd": 0
+}

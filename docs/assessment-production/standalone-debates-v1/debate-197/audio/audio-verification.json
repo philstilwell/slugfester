@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-197/inventory/inventory.json",
+    "sha256": "e80a2124f3a0bbb63dd9fb762b36e2fdce482055d8ea48f717bf2fc68c6093a3"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=hdhTpkGggK0",
+    "formatId": "139-19",
+    "language": "en-US",
+    "description": "English (US) original low-bitrate audio, acquired from the public YouTube source with a temporary current yt-dlp runtime and Chrome impersonation.",
+    "sourceAudioSha256": "330591230f322bf046b1588c8a5859be7fb3f6cca333eaa1b7f4384d0fbf82d0",
+    "sourceAudioBytes": 43304144,
+    "temporarySourceRetained": false
+  },
+  "triggeredMoveIds": [
+    "correlation-not-production",
+    "phase-emergence",
+    "science-excludes-subjectivity"
+  ],
+  "checks": [
+    {
+      "moveId": "correlation-not-production",
+      "inventoryEventRange": [
+        1344,
+        1350
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Iain McGilchrist",
+      "evidence": "Known-speaker diarization identifies both sentences, including 'they seem to accompany one another,' as Iain McGilchrist."
+    },
+    {
+      "moveId": "phase-emergence",
+      "inventoryEventRange": [
+        1467,
+        1494
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Anil Seth",
+      "evidence": "Diarization detects the handoff from McGilchrist's 'interiority' to Seth's phase reply, keeps the selected emergence material with Seth, and detects the return to McGilchrist after the selected span."
+    },
+    {
+      "moveId": "science-excludes-subjectivity",
+      "inventoryEventRange": [
+        1940,
+        1950
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Iain McGilchrist",
+      "evidence": "Known-speaker diarization assigns the complete passage about consciousness, love, God, creativity, and the excluded subjective perspective to Iain McGilchrist."
+    }
+  ],
+  "transcription": {
+    "model": "gpt-4o-transcribe-diarize",
+    "responseFormat": "diarized_json",
+    "knownSpeakers": [
+      "Iain McGilchrist",
+      "Anil Seth"
+    ],
+    "combinedVerificationDurationSeconds": 60,
+    "localOutputPath": "output/transcribe/standalone-debate-v1/debate-197/boundary-verification.json",
+    "localOutputSha256": "1acd3c45543f338135524fb2e6152e9b9c3c2a8358c80ca1ea1b17d73ff471c5",
+    "usage": {
+      "inputTokens": 1013,
+      "outputTokens": 1754,
+      "totalTokens": 2767
+    }
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.04,
+    "paidCallsAttempted": 2,
+    "successfulPaidCalls": 1,
+    "uncertainOrFailedPaidCalls": 1,
+    "knownSuccessfulCallCostUsd": 0.0200725,
+    "maximumPotentialCombinedCostUsd": 0.04,
+    "pricingBasis": "Official gpt-4o-transcribe-diarize token pricing: $2.50 per million input tokens and $10.00 per million output tokens."
+  },
+  "audit": {
+    "lockedMovesReviewed": 30,
+    "highAttributionConfidenceMoves": 27,
+    "requiredAttributionChecks": 3,
+    "completedAttributionChecks": 3,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "completedAt": "2026-08-29T05:46:05Z",
+  "source": {
+    "videoId": "hdhTpkGggK0",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 23754,
+    "events": 3330,
+    "transcriptSha256": "da62d18a1b526aa0bd87480468ea56f23c7d1aecee98f767723e5a6ca0c43dd6",
+    "eventsSha256": "18d4744626c0a2aaaaf4dd31f7d2b5fc924bfabde67fc959a1a406bb28c2c047",
+    "requiredAttributionAudioChecks": 3,
+    "completedAttributionAudioChecks": 3,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 30,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 50,
+    "adjudicatedDisputes": 50,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 74,
+      "con": 83,
+      "winner": "con",
+      "margin": 9
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.5,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "argumentCards": 30,
+    "uniqueLockedMovesMapped": 30,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 2,
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "5ac34ed45ad4ee4bdec037155913af6c529878a0383e6d6011319bb13fdbceb0"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 7,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 2,
+    "mobileCritiquePointerInterceptionFixed": true,
+    "desktopEvidenceSha256": "015b00cde1f0e9cf320aaba3c4947211e3eaa2a6335b61ef539820aadfba563a",
+    "mobileEvidenceSha256": "8fa8ed99bbe737b602dc351b3821f922748ebf4ebf5fbcbca325618e79afbc33"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "197 debates"
+    },
+    {
+      "name": "corpus transcript replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "197 of 197 available; 197 local hashes checked"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "384 files"
+    },
+    {
+      "name": "historical campaign closure full and repository-only replay",
+      "command": "npm run assessment:campaign:closure:check and npm run assessment:campaign:closure:repository:check",
+      "status": "passed",
+      "result": "174 historical reassessments remain closed"
+    },
+    {
+      "name": "calibration promotion full and repository-only replay",
+      "command": "npm run assessment:calibration-promotion:check and npm run assessment:calibration-promotion:repository:check",
+      "status": "passed",
+      "result": "179 historical ledgers plus 2 authenticated standalone ledgers"
+    },
+    {
+      "name": "multi-speaker compatibility replay",
+      "command": "npm run assessment:multi-speaker:v1:check",
+      "status": "passed"
+    },
+    {
+      "name": "standalone full and repository-only replay",
+      "command": "npm run assessment:standalone:check and npm run assessment:standalone:repository:check",
+      "status": "passed"
+    },
+    {
+      "name": "complete repository suite",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "publicationReconstructionCorrections": 2,
+    "productionValidatorCorrections": 1,
+    "renderingBehaviorCorrections": 1,
+    "browserControllerCorrections": 2,
+    "adapterOverwriteAttemptsRefused": 1,
+    "failuresPreserved": true,
+    "initialRejectedPublicationBytesPreserved": false,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 15,
+    "con": 15,
+    "maximumSectionDifference": 1,
+    "fourthRowSection": "life-value-and-directionality",
+    "disposition": "Balanced overall; the single fourth row preserves one additional locked pro card without an empty con placeholder."
+  },
+  "cost": {
+    "knownSuccessfulPaidCostUsd": 0.0200725,
+    "uncertainOrFailedPaidCalls": 1,
+    "maximumPotentialCombinedCostUsd": 0.04
+  },
+  "directCostUsd": 0.0200725
+}

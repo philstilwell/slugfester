@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-standalone-rendering-failure-record",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-corrected",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "failures": [
+    {
+      "stage": "artifact-directory-startup",
+      "message": "The first browser command used the artifact directory as its working directory before that directory existed.",
+      "correction": "Created the exact repository-local artifact directory, then started the browser from it."
+    },
+    {
+      "stage": "mobile-critique-pointer-interaction",
+      "message": "A focused mobile critique popover intercepted the pointer event intended for the AI Extension summary, leaving touch users without a direct path to the next control.",
+      "correction": "Made the mobile critique overlay non-interactive while preserving its full readable height, then confirmed that pointer, Enter, and Space interactions reach the underlying controls."
+    },
+    {
+      "stage": "mobile-cache-and-specificity-replay",
+      "message": "The first replay retained the prior stylesheet, and the initial selector did not override the higher-specificity visible-state pointer rule.",
+      "correction": "Started a fresh browser context, applied an explicit visible-state mobile override, and repeated the full interaction sequence successfully."
+    }
+  ],
+  "assessmentDataChanged": false,
+  "frozenScoresChanged": false,
+  "browserChecksWeakened": false,
+  "pageBehaviorCorrected": true,
+  "retriesCharged": 0,
+  "directIncrementalCostUsd": 0
+}

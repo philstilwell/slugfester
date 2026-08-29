@@ -8801,5 +8801,53 @@ export const debateSummaries = [
         "title": "Evil, suffering, and design expectations"
       }
     ]
+  },
+  {
+    "id": "mcgilchrist-seth-consciousness-god-2026",
+    "number": "197",
+    "title": "Iain McGilchrist vs Anil Seth: Does Consciousness Point to God?",
+    "label": "Consciousness, purpose, and God",
+    "date": "2026-08-29",
+    "duration": "1 hr 59 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hdhTpkGggK0",
+    "motion": "Does consciousness fundamentally pervade reality and point toward God?",
+    "summary": "McGilchrist argues that consciousness, value, and directionality indicate a divine relational ground; Seth answers with biological emergence, thermodynamics, and methodological restraint.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Consciousness points toward God",
+        "speaker": "Iain McGilchrist",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Consciousness does not establish God",
+        "speaker": "Anil Seth",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 83
+    },
+    "sections": [
+      {
+        "title": "Mind, matter, and fundamental consciousness"
+      },
+      {
+        "title": "Brain dependence and emergence"
+      },
+      {
+        "title": "Explanatory methods and their limits"
+      },
+      {
+        "title": "Life, value, and cosmic direction"
+      },
+      {
+        "title": "Teleology and the inference to God"
+      },
+      {
+        "title": "Spiritual experience and human meaning"
+      }
+    ]
   }
 ];
