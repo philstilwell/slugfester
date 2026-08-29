@@ -2426,6 +2426,18 @@ a {
   gap: 12px;
 }
 
+.backend-summary-stats::after {
+  content: "";
+  display: block;
+  width: min(100%, 420px);
+  aspect-ratio: 1;
+  justify-self: center;
+  background: #f7f2e6 url("../assets/backend-methodology-illustration.webp") center / cover no-repeat;
+  border: 1px solid rgba(38, 91, 105, 0.18);
+  border-radius: 9px;
+  box-shadow: 0 14px 32px rgba(21, 57, 67, 0.1);
+}
+
 .backend-summary-stats article {
   display: grid;
   gap: 8px;
