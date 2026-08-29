@@ -98,7 +98,7 @@ requireIncludes("app backend route", app, "backendSeo");
 requireIncludes("app backend page", app, "<h1>Backend</h1>");
 requireIncludes("app backend update date", app, "Updated August 28, 2026");
 requireIncludes("app backend review cadence", app, "approximately twice a year");
-requireIncludes("app backend compute disclosure", app, "82.5 aggregate model-compute hours");
+requireIncludes("app backend compute disclosure", app, "What ≈83 hours means.");
 requireExcludes("app backend published-catalogue card", app, "<span>Published catalogue</span>");
 requireExcludes("app backend dyadic-coverage card", app, "<span>Current v2 coverage</span>");
 requireIncludes("app backend compute card", app, "Reassessment compute summary");

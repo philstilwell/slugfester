@@ -2122,7 +2122,7 @@ function renderBackend() {
             <p>Readable summaries and critiques were reconstructed only after scores were locked. Exact-quote rules, field-level repair limits, semantic checks, generated-page comparison, desktop and mobile rendering, keyboard operation, and repository-wide validation all had to pass before publication.</p>
           </article>
         </div>
-        <p class="backend-technical-note"><strong>Compute-accounting note.</strong> The public estimate rounds a directly recoverable lower bound of 82.5 aggregate model-compute hours to about 83 hours. It sums available model-context runtimes across the production checkpoint and Batches 1–17, including retained failed and recovery attempts. It excludes debate-video duration, human waiting, local code and browser runtime, and paid transcription processing; three small recovery records lacked a usable elapsed-time field, so the figure is conservative rather than exact.</p>
+        <p class="backend-technical-note"><strong>What ≈83 hours means.</strong> This is the recorded time spent inside the assessment model across the completed campaign—including failed and recovery attempts—not the length of the videos or time spent waiting. It is a conservative minimum because three brief recovery runs did not retain usable timing data.</p>
       </section>
 
       <section class="assessment-principles" aria-labelledby="assessment-principles-heading">
