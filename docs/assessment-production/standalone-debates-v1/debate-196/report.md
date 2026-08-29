@@ -20,7 +20,7 @@ Publication maps every locked move to one visible evidence card and uses two exa
 
 The live page passed its original Chromium gate and a post-publication replay at 1440×1000 and 390×844. All 20 cards rendered, the corrected motion and both added weaknesses were visible, the page had no horizontal overflow or empty cards, the AI Extension worked with pointer, Enter, and Space controls, both speaker profile pages opened correctly, and there were no console errors or warnings. Four new post-publication screenshots were visually inspected without altering the frozen original rendering evidence.
 
-The production validator, 196-transcript corpus replay, 381-file search-page replay, complete repository suite, historical campaign closure, calibration-promotion replay, and standalone score/evidence replay all passed in both locally complete and clean-checkout-compatible modes.
+With the local evidence cache present, the production validator, 196-transcript corpus replay, 381-file search-page replay, complete repository suite, historical campaign closure, calibration-promotion replay, and standalone score/evidence replay all passed. A separate clean checkout passed the 196-debate validator, 381-file search-page replay, and standalone repository-hash replay without the ignored Debate 196 caption files; the broader historical suite still requires its own ignored v2.2 audio evidence.
 
 ## Preserved corrections
 
